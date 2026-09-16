@@ -39,7 +39,7 @@ function loadState() {
     if (!raw) return defaultState();
     const s = JSON.parse(raw);
     const base = defaultState();
-    return { ...base, ...s, plan: normalizePlan(s.plan), settings: { ...base.settings, ...(s.settings || {}) } };
+    return { ...base, ...s, plan: normalizePlan(s.plan), settings: normalizeSettings({ ...base.settings, ...(s.settings || {}) }) };
   } catch (e) {
     return defaultState();
   }
@@ -51,6 +51,16 @@ function saveState(state) {
   } catch (e) {
     alert("기록을 저장하지 못했습니다. 브라우저의 저장소 설정을 확인해 주세요.");
   }
+}
+
+// 갓피아에서 없어진 역본(예: 쉬운성경)이 저장돼 있으면 창세기 1장으로 튕기므로 지원하는 역본으로 바꿈
+function normalizeSettings(settings) {
+  const valid = (code) => VERSIONS.some((v) => v.code === code);
+  const ver = valid(settings.ver) ? settings.ver : "gae";
+  const ver2 = valid(settings.ver2) && settings.ver2 !== ver
+    ? settings.ver2
+    : ["niv", "saenew", "gae"].find((code) => code !== ver);
+  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2 };
 }
 
 // 예전 형식(range: "rev" | "full")으로 저장된 계획을 끝 장(endIdx) 형식으로 바꿈

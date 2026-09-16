@@ -45,7 +45,7 @@
 | 오늘의 QT | `https://www.godpia.com/qt/qt.asp` |
 | 날짜별 QT | `https://www.godpia.com/qt/qt.asp?D=2026-09-16` |
 
-역본 코드: `gae` 개역개정4판 · `niv` NIV · `han` 개역한글 · `easy` 쉬운성경 · `hyun` 현대인의성경 · `saenew` 새번역 · `hebrew` 히브리어(구약) · `greek` 헬라어(신약)
+역본 코드: `gae` 개역개정4판 · `niv` NIV · `han` 개역한글 · `hyun` 현대인의성경 · `saenew` 새번역 · `hebrew` 히브리어(구약) · `greek` 헬라어(신약)
 권 코드는 [js/bible.js](js/bible.js)에 있습니다.
 
 갓피아 화면은 로그인 버튼이 이 앱 탭 전체를 이동시키지 않도록 `sandbox`로 띄웁니다. 갓피아 로그인이 필요한 기능은 "새 창으로 열기"로 이용하세요.

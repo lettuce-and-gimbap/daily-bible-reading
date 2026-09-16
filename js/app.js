@@ -982,7 +982,7 @@ function renderStats() {
       const data = JSON.parse(await file.text());
       if (typeof data !== "object" || !("read" in data)) throw new Error();
       if (!confirm("현재 기록을 백업 파일 내용으로 바꿀까요?")) return;
-      state = { ...defaultState(), ...data, plan: normalizePlan(data.plan) };
+      state = { ...defaultState(), ...data, plan: normalizePlan(data.plan), settings: normalizeSettings({ ...defaultState().settings, ...(data.settings || {}) }) };
       persist();
       route();
     } catch (err) {

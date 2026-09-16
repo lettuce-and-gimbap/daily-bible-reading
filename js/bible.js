@@ -20,11 +20,12 @@ const BOOKS = [
 ].map(([code, name, chapters], i) => ({ code, name, chapters, index: i, testament: i < 39 ? "OT" : "NT" }));
 
 // 갓피아 성경 읽기에서 제공하는 역본 (순서·이름은 갓피아 화면과 같게)
+// 갓피아가 모르는 코드를 보내면 /read/reading.asp로 리다이렉트되어 창세기 1장이 열린다.
+// 2026-09 갓피아 목록에서 쉬운성경(easy)이 빠졌으므로 넣지 않는다.
 const VERSIONS = [
   { code: "gae", name: "개역개정4판" },
   { code: "niv", name: "NIV" },
   { code: "han", name: "개역한글" },
-  { code: "easy", name: "쉬운성경" },
   { code: "hyun", name: "현대인의성경" },
   { code: "saenew", name: "새번역" },
   { code: "hebrew", name: "히브리어(구약)" },
