@@ -49,15 +49,17 @@ html, body { margin: 0; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: "Noto Sans KR", system-ui, -apple-system, sans-serif;
-  font-size: 15px;
+  font-family: "Gowun Dodum", system-ui, -apple-system, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   word-break: keep-all;
 }
 a { color: var(--accent); }
-h1, h2 { font-family: "Noto Serif KR", serif; margin: 0 0 8px; line-height: 1.35; }
-h1 { font-size: 1.45rem; }
-h2 { font-size: 1.1rem; }
+/* 제목·버튼·숫자는 둥글고 귀여운 주아체 (굵기가 하나뿐이라 font-weight는 400으로 둠) */
+h1, h2, .brand, .tabs a, .btn, .seg button, .chip, .pill, .kpis b, .log-date, .day-meta, .eyebrow b { font-family: "Jua", "Gowun Dodum", sans-serif; font-weight: 400; }
+h1, h2 { margin: 0 0 8px; line-height: 1.35; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; }
 .muted { color: var(--muted); }
 .small { font-size: .85rem; }
 .hidden { display: none !important; }
@@ -72,10 +74,10 @@ h2 { font-size: 1.1rem; }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
-.brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 700; font-family: "Noto Serif KR", serif; }
+.brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-size: 1.15rem; }
 .tabs { display: flex; gap: 4px; }
 .tabs a {
-  padding: 6px 12px; border-radius: 999px; text-decoration: none; color: var(--muted); font-weight: 500; white-space: nowrap;
+  padding: 6px 12px; border-radius: 999px; text-decoration: none; color: var(--muted); white-space: nowrap;
 }
 .tabs a.active { background: var(--accent); color: var(--accent-ink); }
 
@@ -91,7 +93,7 @@ main { max-width: 920px; margin: 0 auto; padding: 16px; display: grid; gap: 14px
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   border: 1px solid transparent; border-radius: 10px; padding: 9px 16px;
-  font: inherit; font-weight: 500; cursor: pointer; text-decoration: none; white-space: nowrap;
+  font-size: inherit; cursor: pointer; text-decoration: none; white-space: nowrap;
 }
 .btn.small { padding: 6px 12px; font-size: .88rem; }
 .btn.primary { background: var(--accent); color: var(--accent-ink); }
@@ -134,10 +136,10 @@ textarea { resize: vertical; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; justify-content: center; }
 .chip {
   border: 1px solid var(--line); background: var(--bg); color: var(--ink);
-  border-radius: 999px; padding: 6px 14px; font: inherit; font-size: .92rem; cursor: pointer;
+  border-radius: 999px; padding: 6px 14px; font-size: .95rem; cursor: pointer;
 }
 .chip.done { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
-.chip.active { outline: 2px solid var(--gold); outline-offset: 1px; font-weight: 700; }
+.chip.active { outline: 2px solid var(--gold); outline-offset: 1px; }
 .done-banner {
   margin-top: 14px; padding: 10px 14px; border-radius: 10px; background: var(--accent-soft);
   display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
@@ -146,7 +148,7 @@ textarea { resize: vertical; }
 .reader { padding: 12px; }
 .reader-bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.seg button { border: 0; background: transparent; color: var(--ink); padding: 7px 14px; font: inherit; cursor: pointer; }
+.seg button { border: 0; background: transparent; color: var(--ink); padding: 7px 14px; font-size: inherit; cursor: pointer; }
 .seg button.on { background: var(--accent); color: var(--accent-ink); }
 .ver { display: flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--muted); }
 .ver select { width: auto; }
@@ -155,6 +157,13 @@ textarea { resize: vertical; }
 .frame-wrap iframe { display: block; width: 100%; height: 72vh; min-height: 480px; border: 0; }
 .frame-wrap.tall iframe { height: 80vh; }
 .reader-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.catchup {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--bg);
+}
+.catchup select { width: auto; }
+.copy-row { display: flex; justify-content: center; margin-top: 10px; }
+.login-note { margin: 8px 2px 0; }
 .qt-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .qt-date { display: flex; gap: 6px; align-items: center; }
 .qt-date input { width: auto; }
@@ -178,8 +187,8 @@ i.l1 { background: var(--heat1); } i.l2 { background: var(--heat2); } i.l3 { bac
 .log { list-style: none; margin: 8px 0 0; padding: 0; }
 .log li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
 .log li:first-child { border-top: 0; }
-.log-date { font-variant-numeric: tabular-nums; font-weight: 500; display: grid; }
-.log-date span { font-size: .78rem; color: var(--muted); font-weight: 400; }
+.log-date { font-variant-numeric: tabular-nums; display: grid; }
+.log-date span { font-size: .78rem; color: var(--muted); font-family: "Gowun Dodum", sans-serif; }
 blockquote { margin: 4px 0 0; padding: 4px 10px; border-left: 3px solid var(--gold); color: var(--muted); white-space: pre-wrap; }
 
 .footer { max-width: 920px; margin: 0 auto; padding: 8px 16px 32px; color: var(--muted); font-size: .8rem; text-align: center; }

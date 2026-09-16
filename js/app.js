@@ -1,4 +1,9 @@
 let state = loadState();
+
+// 갓피아의 로그인 버튼은 top.location을 바꿔 이 앱 탭 전체를 로그인 페이지로 보내 버린다.
+// 최상위 이동만 막고 나머지(스크립트, 새 창, 오디오 등)는 허용한다.
+const GODPIA_SANDBOX =
+  'sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals allow-downloads"';
 const app = document.getElementById("app");
 
 // 현재 읽고 있는 장 (계획 순서 기준 인덱스가 아니라 전체 장 일련번호)
@@ -175,6 +180,7 @@ function renderToday() {
       </div>
       <div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
       <div class="day-meta"><span>전체 ${pr.readCount} / ${pr.total}장 (${pct}%)</span>${status}</div>
+      <div class="copy-row"><button class="btn ghost small" id="d-copy" title="투두메이트 같은 할 일 앱에 붙여넣기">📋 오늘 분량 복사</button></div>
       <div class="chips">
         ${day.map((i) => {
           const c = CHAPTERS[i];
@@ -204,11 +210,17 @@ function renderToday() {
         <strong id="r-title"></strong>
         <button class="btn ghost small" id="r-next">다음 장 ›</button>
       </div>
-      <div class="frame-wrap"><iframe id="r-frame" title="갓피아 성경 본문" loading="lazy"></iframe></div>
+      <div class="frame-wrap"><iframe id="r-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe></div>
       <div class="reader-foot">
         <a class="btn ghost small" id="r-open" target="_blank" rel="noopener">갓피아에서 새 창으로 열기 ↗</a>
         <button class="btn primary" id="r-check"></button>
       </div>
+      <div class="catchup">
+        <span class="muted small">갓피아 안에서 옆으로 넘기며 읽었다면</span>
+        <select id="r-upto"></select>
+        <button class="btn ghost small" id="r-upto-btn">까지 한 번에 읽음 체크</button>
+      </div>
+      <p class="muted small login-note">갓피아 로그인(메모·형광펜 등)은 <b>갓피아에서 새 창으로 열기</b>로 이용해 주세요.</p>
     </section>
 
     <section class="card">
@@ -273,6 +285,42 @@ function renderToday() {
     }
     persist();
     renderToday();
+  });
+
+  // 갓피아 iframe 안의 장 이동은 브라우저 보안(교차 출처 제한)상 감지할 수 없어서,
+  // 읽은 마지막 장을 골라 그 앞의 안 읽은 장을 한 번에 체크하게 한다.
+  const firstUnreadPos = pr.seq.findIndex((i) => !state.read[i]);
+  const upto = app.querySelector("#r-upto");
+  const catchup = app.querySelector(".catchup");
+  if (firstUnreadPos === -1) {
+    catchup.classList.add("hidden");
+  } else {
+    const opts = pr.seq.slice(firstUnreadPos, firstUnreadPos + state.plan.perDay * 3);
+    upto.innerHTML = opts.map((i) => {
+      const ch = CHAPTERS[i];
+      return `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(ch.book.name)} ${ch.chap}장</option>`;
+    }).join("");
+    app.querySelector("#r-upto-btn").addEventListener("click", () => {
+      const endPos = pr.seq.indexOf(Number(upto.value));
+      const targets = pr.seq.slice(firstUnreadPos, endPos + 1).filter((i) => !state.read[i]);
+      if (!confirm(`${describeChapters(targets)}을(를) 오늘 읽은 것으로 체크할까요?`)) return;
+      targets.forEach((i) => { state.read[i] = todayStr(); });
+      persist();
+      currentChapter = null;
+      viewingDay = null;
+      renderToday();
+    });
+  }
+
+  const copyBtn = app.querySelector("#d-copy");
+  copyBtn.addEventListener("click", async () => {
+    const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(day)}`;
+    try {
+      await navigator.clipboard.writeText(text);
+      copyBtn.textContent = "복사됨 ✓";
+    } catch (e) {
+      prompt("아래 내용을 복사하세요", text);
+    }
   });
 
   const note = app.querySelector("#d-note");
@@ -441,7 +489,8 @@ function renderQt() {
         </div>
         <button class="btn ghost small" id="q-next" ${qtDate >= todayStr() ? "disabled" : ""}>다음날 ›</button>
       </div>
-      <div class="frame-wrap tall"><iframe title="갓피아 오늘의 QT" src="${url}" loading="lazy"></iframe></div>
+      <div class="frame-wrap tall"><iframe title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe></div>
+      <p class="muted small login-note">갓피아 로그인이 필요한 기능은 위의 <b>갓피아 QT 바로 열기</b>로 새 창에서 이용해 주세요.</p>
     </section>
 
     <section class="card">
