@@ -66,6 +66,8 @@ function streak(dateSet) {
 
 function route() {
   const r = (location.hash || "#today").slice(1);
+  document.body.classList.remove("full", "sheet-open");
+  sheetTab = null;
   document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === r));
   if (r === "stats") renderStats();
   else if (r === "qt") renderQt();
@@ -149,192 +151,329 @@ function renderSetup(existing) {
   if (cancel) cancel.addEventListener("click", () => { location.hash = "#stats"; });
 }
 
-/* ---------- 오늘 통독 ---------- */
+/* ---------- 오늘 통독 (갓피아 화면을 꽉 채우는 읽기 모드) ---------- */
+
+let sheetTab = null; // 열린 패널 탭: "day" | "table" | "stats" | null
+let toastTimer;
+
+const $ = (s) => app.querySelector(s);
+
+function versionOptions(selected) {
+  return VERSIONS.map((v) => `<option value="${v.code}" ${v.code === selected ? "selected" : ""}>${v.name}</option>`).join("");
+}
+
+function sheetShell(tabs) {
+  return `
+    <div class="sheet-backdrop" id="sheet-bg" hidden></div>
+    <aside class="sheet" id="sheet" hidden>
+      <div class="sheet-head">
+        ${tabs.length > 1
+          ? `<div class="seg sheet-tabs">${tabs.map(([k, label]) => `<button data-tab="${k}">${label}</button>`).join("")}</div>`
+          : `<h2>${tabs[0][1]}</h2>`}
+        <button class="tool" id="sheet-close" aria-label="닫기">✕</button>
+      </div>
+      <div class="sheet-body" id="sheet-body"></div>
+    </aside>
+    <div class="toast" id="toast" hidden></div>`;
+}
+
+function showToast(msg) {
+  const t = $("#toast");
+  t.textContent = msg;
+  t.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.hidden = true; }, 2600);
+}
+
+function openSheet(tab) {
+  sheetTab = tab;
+  $("#sheet").hidden = false;
+  $("#sheet-bg").hidden = false;
+  document.body.classList.add("sheet-open");
+  if (location.hash === "#qt") renderQtSheet();
+  else renderReaderSheet();
+}
+
+function closeSheet() {
+  sheetTab = null;
+  const s = $("#sheet");
+  if (!s) return;
+  s.hidden = true;
+  $("#sheet-bg").hidden = true;
+  document.body.classList.remove("sheet-open");
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && sheetTab) closeSheet();
+});
+
+function bindSheetChrome() {
+  $("#sheet-close").addEventListener("click", closeSheet);
+  $("#sheet-bg").addEventListener("click", closeSheet);
+  app.querySelectorAll(".sheet-tabs button").forEach((b) =>
+    b.addEventListener("click", () => openSheet(b.dataset.tab)));
+}
 
 function renderToday() {
   if (!state.plan) return renderSetup();
-  const pr = progress();
-  if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.currentDay;
-  const day = pr.days[viewingDay];
-  if (currentChapter === null || !day.includes(currentChapter)) {
-    currentChapter = day.find((i) => !state.read[i]) ?? day[0];
-  }
-  const dayDone = day.every((i) => state.read[i]);
-  const plannedDate = addDays(state.plan.startDate, viewingDay);
-  const pct = Math.round((pr.readCount / pr.total) * 100);
+  document.body.classList.add("full");
+  if (!$(".rd.reading")) buildReader();
+  refreshReader();
+}
 
-  let status;
-  if (pr.finished) status = `<span class="pill good">통독 완료!</span>`;
-  else if (pr.diff >= 0) status = `<span class="pill good">계획대로 진행 중${pr.diff > 0 ? ` · ${pr.diff}일 앞섬` : ""}</span>`;
-  else status = `<span class="pill warn">${-pr.diff}일 분량 밀림</span>`;
-
+function buildReader() {
+  sheetTab = null;
   app.innerHTML = `
-    <section class="card day-card">
-      <div class="day-head">
-        <button class="icon-btn" id="d-prev" ${viewingDay === 0 ? "disabled" : ""} aria-label="이전 날 분량">‹</button>
-        <div class="day-title">
-          <div class="eyebrow">Day ${viewingDay + 1} / ${pr.days.length} · 계획일 ${plannedDate}${viewingDay === pr.currentDay ? " · <b>오늘 읽을 차례</b>" : ""}</div>
-          <h1>${esc(describeChapters(day))}</h1>
+    <div class="rd reading">
+      <div class="rd-bar rd-top">
+        <button class="tool labeled" data-open="table">📖<span>통독표</span></button>
+        <button class="rd-info" data-open="day" id="r-info" title="오늘 분량 보기"></button>
+        <div class="rd-ver">
+          <div class="seg" role="group" aria-label="보기 방식">
+            <button data-mode="one">한권</button><button data-mode="two">두권</button>
+          </div>
+          <select id="r-ver" aria-label="역본"></select>
+          <select id="r-ver2" aria-label="비교 역본"></select>
         </div>
-        <button class="icon-btn" id="d-next" ${viewingDay === pr.days.length - 1 ? "disabled" : ""} aria-label="다음 날 분량">›</button>
       </div>
-      <div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
-      <div class="day-meta"><span>전체 ${pr.readCount} / ${pr.total}장 (${pct}%)</span>${status}</div>
-      <div class="copy-row"><button class="btn ghost small" id="d-copy" title="투두메이트 같은 할 일 앱에 붙여넣기">📋 오늘 분량 복사</button></div>
-      <div class="chips">
-        ${day.map((i) => {
-          const c = CHAPTERS[i];
-          return `<button class="chip ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-idx="${i}">
-            ${state.read[i] ? "✓ " : ""}${esc(c.book.name)} ${c.chap}장</button>`;
-        }).join("")}
-      </div>
-      ${dayDone ? `<div class="done-banner">🎉 Day ${viewingDay + 1} 분량을 모두 읽었어요.
-        ${viewingDay < pr.days.length - 1 ? `<button class="btn small primary" id="d-go-next">다음 분량 보기</button>` : ""}</div>` : ""}
-    </section>
-
-    <section class="card reader">
-      <div class="reader-bar">
-        <div class="seg" role="group" aria-label="보기 방식">
-          <button data-mode="one" class="${state.settings.mode === "one" ? "on" : ""}">한권보기</button>
-          <button data-mode="two" class="${state.settings.mode === "two" ? "on" : ""}">두권보기</button>
-        </div>
-        <label class="ver">역본
-          <select id="r-ver">${VERSIONS.map((v) => `<option value="${v.code}" ${v.code === state.settings.ver ? "selected" : ""}>${v.name}</option>`).join("")}</select>
-        </label>
-        <label class="ver ${state.settings.mode === "two" ? "" : "hidden"}" id="r-ver2-wrap">비교
-          <select id="r-ver2">${VERSIONS.map((v) => `<option value="${v.code}" ${v.code === state.settings.ver2 ? "selected" : ""}>${v.name}</option>`).join("")}</select>
-        </label>
-      </div>
-      <div class="reader-nav">
-        <button class="btn ghost small" id="r-prev">‹ 이전 장</button>
-        <strong id="r-title"></strong>
-        <button class="btn ghost small" id="r-next">다음 장 ›</button>
-      </div>
-      <div class="frame-wrap"><iframe id="r-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe></div>
-      <div class="reader-foot">
-        <a class="btn ghost small" id="r-open" target="_blank" rel="noopener">갓피아에서 새 창으로 열기 ↗</a>
+      <iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>
+      <div class="rd-bar rd-bottom">
+        <button class="tool" id="r-prev" aria-label="이전 장">‹</button>
+        <div class="rd-dots" id="r-dots"></div>
+        <button class="tool" id="r-next" aria-label="다음 장">›</button>
         <button class="btn primary" id="r-check"></button>
+        <button class="tool labeled" data-open="stats">📊<span>현황</span></button>
       </div>
-      <div class="catchup">
-        <span class="muted small">갓피아 안에서 옆으로 넘기며 읽었다면</span>
-        <select id="r-upto"></select>
-        <button class="btn ghost small" id="r-upto-btn">까지 한 번에 읽음 체크</button>
-      </div>
-      <p class="muted small login-note">갓피아 로그인(메모·형광펜 등)은 <b>갓피아에서 새 창으로 열기</b>로 이용해 주세요.</p>
-    </section>
+    </div>
+    ${sheetShell([["day", "오늘 분량"], ["table", "통독표"], ["stats", "현황"]])}`;
 
-    <section class="card">
-      <h2>오늘의 통독 메모</h2>
-      <textarea id="d-note" rows="3" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
-      <p class="muted small" id="d-note-status">입력하면 자동 저장됩니다.</p>
-    </section>`;
+  bindSheetChrome();
+  app.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => openSheet(b.dataset.open)));
 
-  app.querySelector("#d-prev").addEventListener("click", () => { viewingDay--; currentChapter = null; renderToday(); });
-  app.querySelector("#d-next").addEventListener("click", () => { viewingDay++; currentChapter = null; renderToday(); });
-  const goNext = app.querySelector("#d-go-next");
-  if (goNext) goNext.addEventListener("click", () => { viewingDay++; currentChapter = null; renderToday(); });
-
-  app.querySelectorAll(".chip").forEach((b) =>
-    b.addEventListener("click", () => { currentChapter = Number(b.dataset.idx); renderToday(); }));
-
-  app.querySelectorAll(".seg button").forEach((b) =>
+  app.querySelectorAll(".rd-ver .seg button").forEach((b) =>
     b.addEventListener("click", () => {
       state.settings.mode = b.dataset.mode;
       if (state.settings.mode === "two" && state.settings.ver2 === state.settings.ver) {
         state.settings.ver2 = VERSIONS.find((v) => v.code !== state.settings.ver).code;
       }
       persist();
-      renderToday();
+      refreshReader();
     }));
-  app.querySelector("#r-ver").addEventListener("change", (e) => { state.settings.ver = e.target.value; persist(); renderToday(); });
-  app.querySelector("#r-ver2").addEventListener("change", (e) => { state.settings.ver2 = e.target.value; persist(); renderToday(); });
+  $("#r-ver").addEventListener("change", (e) => { state.settings.ver = e.target.value; persist(); refreshReader(); });
+  $("#r-ver2").addEventListener("change", (e) => { state.settings.ver2 = e.target.value; persist(); refreshReader(); });
 
-  // 이전/다음 장은 계획 순서를 따라 이동 (날짜 경계를 넘으면 해당 Day로 전환)
-  const seqPos = pr.seq.indexOf(currentChapter);
   const move = (delta) => {
-    const next = pr.seq[seqPos + delta];
-    if (next === undefined) return;
-    currentChapter = next;
-    viewingDay = Math.floor((seqPos + delta) / state.plan.perDay);
-    renderToday();
+    const seq = planSequence(state.plan);
+    const pos = seq.indexOf(currentChapter) + delta;
+    if (pos < 0 || pos >= seq.length) return;
+    currentChapter = seq[pos];
+    viewingDay = Math.floor(pos / state.plan.perDay);
+    refreshReader();
   };
-  app.querySelector("#r-prev").disabled = seqPos <= 0;
-  app.querySelector("#r-next").disabled = seqPos >= pr.seq.length - 1;
-  app.querySelector("#r-prev").addEventListener("click", () => move(-1));
-  app.querySelector("#r-next").addEventListener("click", () => move(1));
+  $("#r-prev").addEventListener("click", () => move(-1));
+  $("#r-next").addEventListener("click", () => move(1));
 
-  const c = CHAPTERS[currentChapter];
-  const ver2 = state.settings.mode === "two" ? state.settings.ver2 : "";
-  const url = godpiaReadUrl(c.book.code, c.chap, state.settings.ver, ver2);
-  app.querySelector("#r-title").textContent = `${c.book.name} ${c.chap}장`;
-  app.querySelector("#r-frame").src = url;
-  app.querySelector("#r-open").href = url;
+  $("#r-dots").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-idx]");
+    if (!b) return;
+    currentChapter = Number(b.dataset.idx);
+    refreshReader();
+  });
 
-  const checkBtn = app.querySelector("#r-check");
-  const isRead = !!state.read[currentChapter];
-  checkBtn.textContent = isRead ? `✓ ${state.read[currentChapter]} 읽음 (취소)` : "읽었어요 · 다음 장으로";
-  checkBtn.classList.toggle("ghost", isRead);
-  checkBtn.classList.toggle("primary", !isRead);
-  checkBtn.addEventListener("click", () => {
+  $("#r-check").addEventListener("click", () => {
+    const pr = progress();
+    const day = pr.days[viewingDay];
     if (state.read[currentChapter]) {
       delete state.read[currentChapter];
     } else {
       state.read[currentChapter] = todayStr();
       const nextUnread = day.find((i) => !state.read[i]);
       if (nextUnread !== undefined) currentChapter = nextUnread;
+      else showToast(`🎉 Day ${viewingDay + 1} 분량을 모두 읽었어요!`);
     }
     persist();
-    renderToday();
+    refreshReader();
   });
 
-  // 갓피아 iframe 안의 장 이동은 브라우저 보안(교차 출처 제한)상 감지할 수 없어서,
-  // 읽은 마지막 장을 골라 그 앞의 안 읽은 장을 한 번에 체크하게 한다.
-  const firstUnreadPos = pr.seq.findIndex((i) => !state.read[i]);
-  const upto = app.querySelector("#r-upto");
-  const catchup = app.querySelector(".catchup");
-  if (firstUnreadPos === -1) {
-    catchup.classList.add("hidden");
-  } else {
-    const opts = pr.seq.slice(firstUnreadPos, firstUnreadPos + state.plan.perDay * 3);
-    upto.innerHTML = opts.map((i) => {
-      const ch = CHAPTERS[i];
-      return `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(ch.book.name)} ${ch.chap}장</option>`;
-    }).join("");
-    app.querySelector("#r-upto-btn").addEventListener("click", () => {
-      const endPos = pr.seq.indexOf(Number(upto.value));
-      const targets = pr.seq.slice(firstUnreadPos, endPos + 1).filter((i) => !state.read[i]);
-      if (!confirm(`${describeChapters(targets)}을(를) 오늘 읽은 것으로 체크할까요?`)) return;
+  // 패널 안의 버튼들 (패널 내용은 다시 그려지므로 위임으로 처리)
+  const body = $("#sheet-body");
+  body.addEventListener("click", async (e) => {
+    const t = e.target.closest("button, [data-day], [data-chap]");
+    if (!t) return;
+    if (t.dataset.chap !== undefined) {
+      const seq = planSequence(state.plan);
+      currentChapter = Number(t.dataset.chap);
+      viewingDay = Math.floor(seq.indexOf(currentChapter) / state.plan.perDay);
+      closeSheet();
+      refreshReader();
+    } else if (t.dataset.day !== undefined) {
+      viewingDay = Number(t.dataset.day);
+      currentChapter = null;
+      if (sheetTab === "table") closeSheet();
+      refreshReader();
+    } else if (t.id === "r-upto-btn") {
+      const pr = progress();
+      const first = pr.seq.findIndex((i) => !state.read[i]);
+      const endPos = pr.seq.indexOf(Number($("#r-upto").value));
+      const targets = pr.seq.slice(first, endPos + 1).filter((i) => !state.read[i]);
+      if (!targets.length || !confirm(`${describeChapters(targets)}을(를) 오늘 읽은 것으로 체크할까요?`)) return;
       targets.forEach((i) => { state.read[i] = todayStr(); });
       persist();
       currentChapter = null;
       viewingDay = null;
-      renderToday();
-    });
-  }
-
-  const copyBtn = app.querySelector("#d-copy");
-  copyBtn.addEventListener("click", async () => {
-    const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(day)}`;
-    try {
-      await navigator.clipboard.writeText(text);
-      copyBtn.textContent = "복사됨 ✓";
-    } catch (e) {
-      prompt("아래 내용을 복사하세요", text);
+      refreshReader();
+      showToast(`${targets.length}장을 읽음으로 체크했어요.`);
+    } else if (t.id === "d-copy") {
+      const day = progress().days[viewingDay];
+      const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(day)}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast("복사했어요. 투두메이트에 붙여넣어 보세요.");
+      } catch (err) {
+        prompt("아래 내용을 복사하세요", text);
+      }
     }
   });
-
-  const note = app.querySelector("#d-note");
-  let t;
-  note.addEventListener("input", () => {
-    clearTimeout(t);
-    t = setTimeout(() => {
-      const v = note.value.trim();
-      if (v) state.dayNotes[todayStr()] = note.value;
+  let noteTimer;
+  body.addEventListener("input", (e) => {
+    if (e.target.id !== "d-note") return;
+    clearTimeout(noteTimer);
+    noteTimer = setTimeout(() => {
+      if (e.target.value.trim()) state.dayNotes[todayStr()] = e.target.value;
       else delete state.dayNotes[todayStr()];
       persist();
-      app.querySelector("#d-note-status").textContent = "저장됨 ✓";
+      const st = $("#d-note-status");
+      if (st) st.textContent = "저장됨 ✓";
     }, 400);
   });
+}
+
+function refreshReader() {
+  const pr = progress();
+  if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.currentDay;
+  const day = pr.days[viewingDay];
+  if (currentChapter === null || !day.includes(currentChapter)) {
+    currentChapter = day.find((i) => !state.read[i]) ?? day[0];
+  }
+  const c = CHAPTERS[currentChapter];
+  const s = state.settings;
+  const url = godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "");
+  const frame = $("#r-frame");
+  if (frame.dataset.url !== url) {
+    frame.dataset.url = url;
+    frame.src = url;
+  }
+
+  const dayDone = day.filter((i) => state.read[i]).length;
+  $("#r-info").innerHTML = `
+    <small>Day ${viewingDay + 1}/${pr.days.length}${viewingDay === pr.currentDay ? " · 오늘 차례" : ""} · ${esc(describeChapters(day))}</small>
+    <b>${esc(c.book.name)} ${c.chap}장</b>
+    <span class="mini-bar"><span style="width:${(dayDone / day.length) * 100}%"></span></span>`;
+
+  app.querySelectorAll(".rd-ver .seg button").forEach((b) => b.classList.toggle("on", b.dataset.mode === s.mode));
+  $("#r-ver").innerHTML = versionOptions(s.ver);
+  $("#r-ver2").innerHTML = versionOptions(s.ver2);
+  $("#r-ver2").hidden = s.mode !== "two";
+
+  $("#r-dots").innerHTML = day.map((i) => {
+    const ch = CHAPTERS[i];
+    return `<button class="dot ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-idx="${i}"
+      title="${esc(ch.book.name)} ${ch.chap}장${state.read[i] ? " (읽음)" : ""}">${ch.chap}</button>`;
+  }).join("");
+
+  const seqPos = pr.seq.indexOf(currentChapter);
+  $("#r-prev").disabled = seqPos <= 0;
+  $("#r-next").disabled = seqPos >= pr.seq.length - 1;
+
+  const check = $("#r-check");
+  const isRead = !!state.read[currentChapter];
+  check.innerHTML = isRead ? "읽음 취소" : "✓ 읽었어요";
+  check.classList.toggle("ghost", isRead);
+  check.classList.toggle("primary", !isRead);
+
+  if (sheetTab) renderReaderSheet();
+}
+
+function kpisHtml(pr) {
+  const dates = new Set(Object.values(state.read));
+  const pct = Math.round((pr.readCount / pr.total) * 100);
+  return `
+    <div class="kpis">
+      <div><b>${pct}%</b><span>진행률</span></div>
+      <div><b>${pr.readCount}</b><span>읽은 장 / ${pr.total}</span></div>
+      <div><b>${pr.doneDays}</b><span>완료한 Day / ${pr.days.length}</span></div>
+      <div><b>${streak(dates)}일</b><span>연속 통독</span></div>
+      <div><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></div>
+      <div><b>${pr.finished ? "완료" : pr.projectedEnd}</b><span>예상 완료일 (계획 ${pr.plannedEnd})</span></div>
+    </div>`;
+}
+
+function renderReaderSheet() {
+  const pr = progress();
+  const body = $("#sheet-body");
+  app.querySelectorAll(".sheet-tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === sheetTab));
+
+  if (sheetTab === "day") {
+    const day = pr.days[viewingDay];
+    const first = pr.seq.findIndex((i) => !state.read[i]);
+    const uptoOpts = first === -1 ? [] : pr.seq.slice(first, first + state.plan.perDay * 3);
+    const c = CHAPTERS[currentChapter];
+    const s = state.settings;
+    body.innerHTML = `
+      <div class="day-head">
+        <button class="icon-btn" data-day="${viewingDay - 1}" ${viewingDay === 0 ? "disabled" : ""} aria-label="이전 날">‹</button>
+        <div class="day-title">
+          <div class="eyebrow">Day ${viewingDay + 1} / ${pr.days.length} · 계획일 ${addDays(state.plan.startDate, viewingDay)}</div>
+          <h2>${esc(describeChapters(day))}</h2>
+        </div>
+        <button class="icon-btn" data-day="${viewingDay + 1}" ${viewingDay === pr.days.length - 1 ? "disabled" : ""} aria-label="다음 날">›</button>
+      </div>
+      <div class="chips">
+        ${day.map((i) => `<button class="chip ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-chap="${i}">
+          ${state.read[i] ? "✓ " : ""}${esc(CHAPTERS[i].book.name)} ${CHAPTERS[i].chap}장</button>`).join("")}
+      </div>
+      ${uptoOpts.length ? `
+      <div class="catchup">
+        <span class="muted small">갓피아에서 옆으로 넘기며 읽었다면</span>
+        <select id="r-upto">${uptoOpts.map((i) => `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(CHAPTERS[i].book.name)} ${CHAPTERS[i].chap}장</option>`).join("")}</select>
+        <button class="btn ghost small" id="r-upto-btn">까지 한 번에 체크</button>
+      </div>` : ""}
+      <div class="actions left">
+        <button class="btn ghost small" id="d-copy">📋 오늘 분량 복사</button>
+        <a class="btn ghost small" target="_blank" rel="noopener"
+          href="${godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "")}">갓피아 새 창으로 열기 ↗</a>
+      </div>
+      <h2 class="sheet-sub">오늘의 통독 메모</h2>
+      <textarea id="d-note" rows="4" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
+      <p class="muted small" id="d-note-status">입력하면 자동 저장됩니다.</p>
+      <p class="muted small">갓피아 로그인(메모·형광펜 등)은 새 창으로 열어서 이용해 주세요.</p>`;
+  } else if (sheetTab === "table") {
+    body.innerHTML = `
+      <p class="muted small">Day를 누르면 그날 분량으로 이동합니다. 하루 ${state.plan.perDay}장 · ${state.plan.startDate} 시작</p>
+      <div class="ttable">
+        ${pr.days.map((d, n) => {
+          const done = d.filter((i) => state.read[i]).length;
+          const cls = [done === d.length ? "done" : done ? "part" : "", n === viewingDay ? "viewing" : "", n === pr.currentDay ? "current" : ""].join(" ");
+          return `<button class="trow ${cls}" data-day="${n}">
+            <span class="t-day">Day ${n + 1}</span>
+            <span class="t-date">${addDays(state.plan.startDate, n).slice(5).replace("-", "/")}</span>
+            <span class="t-range">${esc(describeChapters(d))}</span>
+            <span class="t-st">${done === d.length ? "✓" : done ? `${done}/${d.length}` : n === pr.currentDay ? "오늘" : ""}</span>
+          </button>`;
+        }).join("")}
+      </div>`;
+    const row = body.querySelector(".trow.viewing");
+    if (row) row.scrollIntoView({ block: "center" });
+  } else if (sheetTab === "stats") {
+    const pct = Math.round((pr.readCount / pr.total) * 100);
+    body.innerHTML = `
+      <p class="muted small">${esc(describeChapters([pr.seq[0]]))}부터 ${state.plan.range === "full" ? "성경 전체 1독" : "요한계시록까지"} · 하루 ${state.plan.perDay}장</p>
+      <div class="bar big"><span style="width:${pct}%"></span></div>
+      ${kpisHtml(pr)}
+      <div class="actions left">
+        <a class="btn primary small" href="#stats">달력 · 권별 진행 · 기록 전체 보기</a>
+      </div>`;
+  }
 }
 
 /* ---------- 현황·기록 ---------- */
@@ -370,14 +509,7 @@ function renderStats() {
       <p class="muted">${esc(describeChapters([pr.seq[0]]))}부터 ${state.plan.range === "full" ? "성경 전체 1독" : "요한계시록까지"} ·
         하루 ${state.plan.perDay}장 · ${state.plan.startDate} 시작</p>
       <div class="bar big"><span style="width:${pct}%"></span></div>
-      <div class="kpis">
-        <div><b>${pct}%</b><span>진행률</span></div>
-        <div><b>${pr.readCount}</b><span>읽은 장 / ${pr.total}</span></div>
-        <div><b>${pr.doneDays}</b><span>완료한 Day / ${pr.days.length}</span></div>
-        <div><b>${streak(dates)}일</b><span>연속 통독</span></div>
-        <div><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></div>
-        <div><b>${pr.finished ? "완료" : pr.projectedEnd}</b><span>예상 완료일 (계획 ${pr.plannedEnd})</span></div>
-      </div>
+      ${kpisHtml(pr)}
     </section>
 
     <section class="card">
@@ -460,84 +592,108 @@ function renderStats() {
   });
 }
 
-/* ---------- 오늘의 QT ---------- */
+/* ---------- 오늘의 QT (꽉 찬 화면) ---------- */
 
 let qtDate = todayStr();
 
 function renderQt() {
-  const entry = state.qt[qtDate] || { done: false, note: "" };
+  document.body.classList.add("full");
+  sheetTab = null;
   const url = godpiaQtUrl(qtDate);
-  const qtDates = new Set(Object.keys(state.qt).filter((d) => state.qt[d].done));
-  const history = Object.keys(state.qt).filter((d) => state.qt[d].done || state.qt[d].note).sort().reverse().slice(0, 30);
+  const isToday = qtDate === todayStr();
 
   app.innerHTML = `
-    <section class="card qt-head">
-      <div>
-        <div class="eyebrow">갓피아 · 날마다 솟는 샘물</div>
-        <h1>${qtDate === todayStr() ? "오늘의 QT" : `${qtDate} QT`}</h1>
-        <p class="muted small">QT 연속 ${streak(qtDates)}일 · 누적 ${qtDates.size}일</p>
-      </div>
-      <a class="btn primary" href="${url}" target="_blank" rel="noopener">갓피아 QT 바로 열기 ↗</a>
-    </section>
-
-    <section class="card reader">
-      <div class="reader-nav">
-        <button class="btn ghost small" id="q-prev">‹ 전날</button>
+    <div class="rd qt">
+      <div class="rd-bar rd-top">
+        <button class="tool" id="q-prev" aria-label="전날">‹</button>
         <div class="qt-date">
-          <input type="date" id="q-date" value="${qtDate}" max="${todayStr()}">
-          ${qtDate !== todayStr() ? `<button class="btn ghost small" id="q-today">오늘</button>` : ""}
+          <input type="date" id="q-date" value="${qtDate}" max="${todayStr()}" aria-label="QT 날짜">
+          ${isToday ? `<span class="pill good">오늘</span>` : `<button class="btn ghost small" id="q-today">오늘로</button>`}
         </div>
-        <button class="btn ghost small" id="q-next" ${qtDate >= todayStr() ? "disabled" : ""}>다음날 ›</button>
+        <button class="tool" id="q-next" ${isToday ? "disabled" : ""} aria-label="다음날">›</button>
+        <a class="tool labeled push" href="${url}" target="_blank" rel="noopener">↗<span>새 창</span></a>
       </div>
-      <div class="frame-wrap tall"><iframe title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe></div>
-      <p class="muted small login-note">갓피아 로그인이 필요한 기능은 위의 <b>갓피아 QT 바로 열기</b>로 새 창에서 이용해 주세요.</p>
-    </section>
-
-    <section class="card">
-      <h2>나의 묵상 노트</h2>
-      <textarea id="q-note" rows="5" placeholder="관찰 · 느낌 · 적용 · 기도를 적어 보세요.">${esc(entry.note)}</textarea>
-      <div class="actions">
-        <span class="muted small" id="q-status"></span>
-        <button class="btn ${entry.done ? "ghost" : "primary"}" id="q-done">${entry.done ? "✓ QT 완료 (취소)" : "QT 완료 체크"}</button>
+      <iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe>
+      <div class="rd-bar rd-bottom">
+        <button class="tool labeled" data-open="note">📝<span>묵상 노트</span></button>
+        <span class="muted small qt-streak" id="q-streak"></span>
+        <button class="btn primary push" id="q-done"></button>
       </div>
-    </section>
+    </div>
+    ${sheetShell([["note", "묵상 노트 · QT 기록"]])}`;
 
+  bindSheetChrome();
+  $("[data-open=note]").addEventListener("click", () => openSheet("note"));
+
+  const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
+  $("#q-prev").addEventListener("click", () => setDate(addDays(qtDate, -1)));
+  $("#q-next").addEventListener("click", () => setDate(addDays(qtDate, 1)));
+  $("#q-date").addEventListener("change", (e) => e.target.value && setDate(e.target.value));
+  const todayBtn = $("#q-today");
+  if (todayBtn) todayBtn.addEventListener("click", () => setDate(todayStr()));
+
+  $("#q-done").addEventListener("click", () => {
+    const entry = state.qt[qtDate] || { done: false, note: "" };
+    saveQt({ done: !entry.done });
+    refreshQtBar();
+    if (!entry.done) showToast("오늘의 QT 완료! 🙏");
+  });
+
+  const body = $("#sheet-body");
+  body.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-qt]");
+    if (!a) return;
+    e.preventDefault();
+    closeSheet();
+    setDate(a.dataset.qt);
+  });
+  let t;
+  body.addEventListener("input", (e) => {
+    if (e.target.id !== "q-note") return;
+    clearTimeout(t);
+    t = setTimeout(() => {
+      saveQt({ note: e.target.value });
+      const st = $("#q-status");
+      if (st) st.textContent = "저장됨 ✓";
+    }, 400);
+  });
+
+  refreshQtBar();
+}
+
+function saveQt(patch) {
+  const next = { ...(state.qt[qtDate] || { done: false, note: "" }), ...patch };
+  if (!next.done && !next.note.trim()) delete state.qt[qtDate];
+  else state.qt[qtDate] = next;
+  persist();
+}
+
+function refreshQtBar() {
+  const entry = state.qt[qtDate] || { done: false };
+  const doneDates = new Set(Object.keys(state.qt).filter((d) => state.qt[d].done));
+  const btn = $("#q-done");
+  btn.textContent = entry.done ? "✓ QT 완료 (취소)" : "QT 완료 체크";
+  btn.classList.toggle("ghost", entry.done);
+  btn.classList.toggle("primary", !entry.done);
+  $("#q-streak").textContent = `연속 ${streak(doneDates)}일 · 누적 ${doneDates.size}일`;
+}
+
+function renderQtSheet() {
+  const entry = state.qt[qtDate] || { done: false, note: "" };
+  const history = Object.keys(state.qt).filter((d) => state.qt[d].done || state.qt[d].note).sort().reverse().slice(0, 30);
+  $("#sheet-body").innerHTML = `
+    <h2 class="sheet-sub">${qtDate} 묵상 노트</h2>
+    <textarea id="q-note" rows="7" placeholder="관찰 · 느낌 · 적용 · 기도를 적어 보세요.">${esc(entry.note)}</textarea>
+    <p class="muted small" id="q-status">입력하면 자동 저장됩니다.</p>
     ${history.length ? `
-    <section class="card">
-      <h2>최근 QT 기록</h2>
+      <h2 class="sheet-sub">최근 QT 기록</h2>
       <ul class="log">
         ${history.map((d) => `
           <li>
             <div class="log-date"><a href="#qt" data-qt="${d}">${d}</a><span>${state.qt[d].done ? "완료" : "메모"}</span></div>
             <div>${state.qt[d].note ? `<blockquote>${esc(state.qt[d].note)}</blockquote>` : `<span class="muted">메모 없음</span>`}</div>
           </li>`).join("")}
-      </ul>
-    </section>` : ""}`;
-
-  const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
-  app.querySelector("#q-prev").addEventListener("click", () => setDate(addDays(qtDate, -1)));
-  app.querySelector("#q-next").addEventListener("click", () => setDate(addDays(qtDate, 1)));
-  app.querySelector("#q-date").addEventListener("change", (e) => e.target.value && setDate(e.target.value));
-  const todayBtn = app.querySelector("#q-today");
-  if (todayBtn) todayBtn.addEventListener("click", () => setDate(todayStr()));
-  app.querySelectorAll("[data-qt]").forEach((a) =>
-    a.addEventListener("click", (e) => { e.preventDefault(); setDate(a.dataset.qt); }));
-
-  const save = (patch) => {
-    const next = { ...(state.qt[qtDate] || { done: false, note: "" }), ...patch };
-    if (!next.done && !next.note.trim()) delete state.qt[qtDate];
-    else state.qt[qtDate] = next;
-    persist();
-  };
-  let t;
-  app.querySelector("#q-note").addEventListener("input", (e) => {
-    clearTimeout(t);
-    t = setTimeout(() => { save({ note: e.target.value }); app.querySelector("#q-status").textContent = "저장됨 ✓"; }, 400);
-  });
-  app.querySelector("#q-done").addEventListener("click", () => {
-    save({ done: !entry.done, note: app.querySelector("#q-note").value });
-    renderQt();
-  });
+      </ul>` : ""}`;
 }
 
 route();
