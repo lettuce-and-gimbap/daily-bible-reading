@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "매일 5장 통독",
-  "short_name": "5장 통독",
+  "name": "경건생활",
+  "short_name": "경건생활",
   "description": "갓피아 성경으로 매일 통독하고 오늘의 QT를 챙기는 앱",
   "lang": "ko",
   "start_url": "./#today",

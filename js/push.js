@@ -136,7 +136,7 @@ function reminderCardHtml() {
       <ol class="howto">
         <li>Safari 아래쪽 <b>공유 버튼</b>(□↑)을 눌러요</li>
         <li><b>홈 화면에 추가</b>를 눌러요</li>
-        <li>홈 화면의 <b>5장 통독</b> 아이콘으로 열고, 여기서 알림을 켜요</li>
+        <li>홈 화면의 <b>경건생활</b> 아이콘으로 열고, 여기서 알림을 켜요</li>
       </ol>
       <p class="muted small">홈 화면 앱은 Safari와 기록 저장 공간이 따로예요. 기존 기록은 아래 <b>백업 파일 받기 → 불러오기</b>로 옮겨 주세요.</p>`;
   } else if (status === "denied") {
