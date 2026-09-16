@@ -151,7 +151,9 @@ body.full main { flex: 1; min-height: 0; width: 100%; max-width: none; margin: 0
 body.full .footer { display: none; }
 body.full .topbar { position: static; padding: 6px 12px; }
 .rd { height: 100%; display: flex; flex-direction: column; }
-.rd-frame { flex: 1; min-height: 0; width: 100%; border: 0; display: block; background: #fff; }
+/* 갓피아 웹의 상단 로고 막대(고정, 스크롤 후 60px)를 잘라내 본문이 앱처럼 위까지 차도록 함 */
+.rd-clip { --crop: 60px; flex: 1; min-height: 0; position: relative; overflow: hidden; background: #fff; }
+.rd-frame { position: absolute; left: 0; top: calc(-1 * var(--crop)); width: 100%; height: calc(100% + var(--crop)); border: 0; display: block; }
 .rd-bar {
   display: flex; align-items: center; gap: 8px; padding: 6px 10px;
   background: var(--surface); border-color: var(--line); border-style: solid; border-width: 0;
@@ -254,6 +256,11 @@ i.l1 { background: var(--heat1); } i.l2 { background: var(--heat2); } i.l3 { bac
 blockquote { margin: 4px 0 0; padding: 4px 10px; border-left: 3px solid var(--gold); color: var(--muted); white-space: pre-wrap; }
 
 .footer { max-width: 920px; margin: 0 auto; padding: 8px 16px 32px; color: var(--muted); font-size: .8rem; text-align: center; }
+
+/* 갓피아 모바일 레이아웃: 로고 막대(60px) 아래에 역본·권·장 버튼 줄(99px)이 sticky로 따라다님 → 함께 잘라냄 */
+@media (max-width: 767px) {
+  .rd.reading .rd-clip { --crop: 159px; }
+}
 
 @media (max-width: 560px) {
   h1 { font-size: 1.2rem; }

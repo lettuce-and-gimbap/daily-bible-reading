@@ -236,7 +236,7 @@ function buildReader() {
           <select id="r-ver2" aria-label="비교 역본"></select>
         </div>
       </div>
-      <iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>
+      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe></div>
       <div class="rd-bar rd-bottom">
         <button class="tool" id="r-prev" aria-label="이전 장">‹</button>
         <div class="rd-dots" id="r-dots"></div>
@@ -613,7 +613,7 @@ function renderQt() {
         <button class="tool" id="q-next" ${isToday ? "disabled" : ""} aria-label="다음날">›</button>
         <a class="tool labeled push" href="${url}" target="_blank" rel="noopener">↗<span>새 창</span></a>
       </div>
-      <iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe>
+      <div class="rd-clip"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe></div>
       <div class="rd-bar rd-bottom">
         <button class="tool labeled" data-open="note">📝<span>묵상 노트</span></button>
         <span class="muted small qt-streak" id="q-streak"></span>
