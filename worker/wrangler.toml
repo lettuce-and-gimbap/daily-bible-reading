@@ -1,0 +1,16 @@
+name = "daily-bible-reminder"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# 한국시간 18시, 21시, 23시 (UTC 9시, 12시, 14시)
+[triggers]
+crons = ["0 9,12,14 * * *"]
+
+# npx wrangler kv namespace create SUBS 로 만든 id를 넣으세요
+[[kv_namespaces]]
+binding = "SUBS"
+id = "PUT_KV_NAMESPACE_ID_HERE"
+
+[vars]
+VAPID_SUBJECT = "https://lettuce-and-gimbap.github.io/daily-bible-reading/"
+# VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY는 npx wrangler secret put 으로 등록 (worker/README.md 참고)

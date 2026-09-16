@@ -20,10 +20,6 @@ const WEEK = ["일", "월", "화", "수", "목", "금", "토"];
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-function persist() {
-  saveState(state);
-}
-
 function prettyDate(str) {
   const d = parseDate(str);
   return `${d.getMonth() + 1}월 ${d.getDate()}일 (${WEEK[d.getDay()]})`;
@@ -34,7 +30,19 @@ function chapLabel(i) {
 }
 
 function versionName(code) {
-  return VERSIONS.find((v) => v.code === code).name;
+  return (VERSIONS.find((v) => v.code === code) || VERSIONS[0]).name;
+}
+
+// 설정된 역본으로 해당 장의 갓피아 주소 (원어는 구약/신약에 맞춰 자동 전환)
+function readerUrl(idx) {
+  const { book, chap } = CHAPTERS[idx];
+  const s = state.settings;
+  return godpiaReadUrl(book.code, chap, versionFor(s.ver, book), s.mode === "two" ? versionFor(s.ver2, book) : "");
+}
+
+function persist() {
+  saveState(state);
+  queueReminderSync();
 }
 
 /* ---------- 계산 ---------- */
@@ -56,8 +64,14 @@ function progress() {
   const readToday = seq.filter((i) => state.read[i] === today).length;
   // 오늘 하루 분량을 이미 채웠으면 남은 분량은 내일부터 계산
   const todayQuotaMet = readToday >= plan.perDay;
+  // 통독표 날짜 기준으로 오늘 읽을 Day (시작 전이면 Day 1, 계획이 끝났으면 마지막 Day)
+  const todayDay = Math.min(days.length - 1, Math.max(0, daysBetween(plan.startDate, today)));
+  const dayComplete = (d) => d.every((i) => state.read[i]);
+  const behindDays = days.slice(0, todayDay).filter((d) => !dayComplete(d)).length;
+  // 알림 기준: 오늘 분량(하루 장 수)을 채웠거나, 통독표상 오늘 Day까지 다 읽었으면 완료
+  const dailyDone = finished || todayQuotaMet || (behindDays === 0 && dayComplete(days[todayDay]));
   return {
-    seq, days, readCount, total: seq.length, currentDay, finished, readToday,
+    seq, days, readCount, total: seq.length, currentDay, finished, readToday, todayDay, behindDays, dailyDone,
     doneDays, diff: doneDays - expectedDone,
     pct: Math.round((readCount / seq.length) * 100),
     plannedEnd: addDays(plan.startDate, days.length - 1),
@@ -88,6 +102,21 @@ function streak(dateSet) {
   return n;
 }
 
+// 알림용 오늘 요약: 서버에는 done/paused만, 서비스 워커는 분량·연속 일수로 문구를 채움
+function reminderSnapshot() {
+  const date = todayStr();
+  if (!state.plan) return { date, done: false, paused: true, portion: "", streak: 0 };
+  const pr = progress();
+  const day = pr.days[pr.behindDays > 0 ? pr.currentDay : pr.todayDay];
+  return {
+    date,
+    done: pr.dailyDone,
+    paused: pr.finished,
+    portion: describeChapters(day),
+    streak: streak(new Set(Object.values(state.read))),
+  };
+}
+
 /* ---------- 라우팅 ---------- */
 
 function route() {
@@ -99,6 +128,7 @@ function route() {
   else if (r === "qt") renderQt();
   else renderToday();
   window.scrollTo(0, 0);
+  queueReminderSync();
 }
 window.addEventListener("hashchange", route);
 
@@ -347,9 +377,17 @@ function buildReader() {
   app.querySelectorAll("[data-open]").forEach((b) =>
     b.addEventListener("click", () => openSheet(b.dataset.open, renderReaderSheet)));
 
+  // 장을 직접 고르면 갓피아 안에서 옆으로 넘겨 둔 상태여도 그 장으로 다시 불러옴
   $("#r-steps").addEventListener("click", (e) => {
     const b = e.target.closest("[data-idx]");
-    if (b) { currentChapter = Number(b.dataset.idx); refreshReader(); }
+    if (b) { currentChapter = Number(b.dataset.idx); refreshReader(true); }
+  });
+  $("#r-title").addEventListener("click", (e) => {
+    if (!e.target.closest("#r-behind")) return;
+    const pr = progress();
+    viewingDay = pr.currentDay;
+    currentChapter = null;
+    refreshReader(true);
   });
 
   $("#r-bottom").addEventListener("click", (e) => {
@@ -363,18 +401,19 @@ function buildReader() {
       currentChapter = pr.seq[p];
       viewingDay = Math.floor(p / state.plan.perDay);
     };
+    let reload = true;
     if (b.id === "r-prev") goTo(pos - 1);
     else if (b.id === "r-next") goTo(pos + 1);
     else if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
-    else if (b.id === "r-undo") delete state.read[currentChapter];
+    else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
     else if (b.id === "r-check") {
       state.read[currentChapter] = todayStr();
       const nextUnread = day.find((i) => !state.read[i]);
       if (nextUnread !== undefined) currentChapter = nextUnread;
-      else showToast(`🎉 Day ${viewingDay + 1} 분량을 모두 읽었어요!`);
+      else { reload = false; showToast(`🎉 Day ${viewingDay + 1} 분량을 모두 읽었어요!`); }
     }
     persist();
-    refreshReader();
+    refreshReader(reload);
   });
 
   // 패널 내용은 다시 그려지므로 위임으로 처리
@@ -382,15 +421,22 @@ function buildReader() {
   body.addEventListener("click", async (e) => {
     const t = e.target.closest("button, [data-day], [data-chap]");
     if (!t) return;
+    let reload = false;
     if (t.dataset.chap !== undefined) {
       const seq = planSequence(state.plan);
       currentChapter = Number(t.dataset.chap);
       viewingDay = Math.floor(seq.indexOf(currentChapter) / state.plan.perDay);
       closeSheet();
+      reload = true;
     } else if (t.dataset.day !== undefined) {
+      // 통독표에서 Day를 고르면 그 Day의 (안 읽은 첫) 장으로 갓피아 화면을 옮김
       viewingDay = Number(t.dataset.day);
       currentChapter = null;
       if (sheetTab === "table") closeSheet();
+      reload = true;
+    } else if (t.id === "d-paste") {
+      pasteVerses($("#d-note"), CHAPTERS[currentChapter]);
+      return;
     } else if (t.dataset.mode) {
       state.settings.mode = t.dataset.mode;
       if (state.settings.mode === "two" && state.settings.ver2 === state.settings.ver) {
@@ -424,7 +470,7 @@ function buildReader() {
       return;
     }
     persist();
-    refreshReader();
+    refreshReader(reload);
   });
 
   let noteTimer;
@@ -441,28 +487,32 @@ function buildReader() {
   });
 }
 
-function refreshReader() {
+// reload=true면 주소가 같아도 갓피아 화면을 다시 불러옴 (갓피아 안에서 넘겨 둔 장을 되돌림)
+function refreshReader(reload = false) {
   const pr = progress();
-  if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.currentDay;
+  // 처음 열면 통독표 날짜 기준 오늘 Day를 보여 줌
+  if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.todayDay;
   const day = pr.days[viewingDay];
   if (currentChapter === null || !day.includes(currentChapter)) {
     currentChapter = day.find((i) => !state.read[i]) ?? day[0];
   }
   const c = CHAPTERS[currentChapter];
   const s = state.settings;
-  const url = godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "");
+  const url = readerUrl(currentChapter);
   const frame = $("#r-frame");
-  if (frame.dataset.url !== url) {
+  if (reload || frame.dataset.url !== url) {
     frame.dataset.url = url;
     frame.src = url;
   }
 
   const dayRead = day.filter((i) => state.read[i]).length;
   const dayDone = dayRead === day.length;
-  const isToday = viewingDay === pr.currentDay;
+  const isToday = viewingDay === pr.todayDay;
   $("#r-title").innerHTML = `
     <small>Day ${viewingDay + 1} <span class="dim">/ ${pr.days.length}</span>
-      ${dayDone ? `<em class="badge good">완료</em>` : isToday ? `<em class="badge">오늘</em>` : ""}</small>
+      ${dayDone ? `<em class="badge good">완료</em>` : isToday ? `<em class="badge">오늘</em>` : ""}
+      ${pr.behindDays > 0 && viewingDay !== pr.currentDay
+        ? `<button class="badge warn" id="r-behind" title="가장 먼저 밀린 분량으로 이동">${pr.behindDays}일 밀림 ›</button>` : ""}</small>
     <b>${esc(describeChapters(day))}</b>`;
 
   $("#r-view").innerHTML = `<span>${s.mode === "two" ? `${versionName(s.ver)} · ${versionName(s.ver2)}` : versionName(s.ver)}</span>
@@ -535,10 +585,10 @@ function renderReaderSheet() {
       <div class="ttable">
         ${pr.days.map((d, n) => {
           const done = d.filter((i) => state.read[i]).length;
-          const cls = [done === d.length ? "done" : done ? "part" : "", n === viewingDay ? "viewing" : "", n === pr.currentDay && !pr.finished ? "current" : ""].join(" ");
+          const cls = [done === d.length ? "done" : done ? "part" : "", n === viewingDay ? "viewing" : "", n === pr.todayDay ? "current" : "", n < pr.todayDay && done < d.length ? "late" : ""].join(" ");
           const st = done === d.length
             ? `<svg viewBox="0 0 24 24" aria-label="완료"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
-            : done ? `${done}/${d.length}` : n === pr.currentDay ? "오늘" : "";
+            : done ? `${done}/${d.length}` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
           return `<button class="trow ${cls}" data-day="${n}">
             <span class="t-day">Day ${n + 1}</span>
             <span class="t-range">${esc(describeChapters(d))}<small>${prettyDate(addDays(state.plan.startDate, n))}</small></span>
@@ -568,18 +618,66 @@ function renderReaderSheet() {
     </section>
     <section class="tool-card">
       <h3 class="label">오늘의 통독 메모</h3>
-      <textarea id="d-note" rows="4" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
-      <p class="muted small" id="d-note-status">입력하면 자동 저장돼요.</p>
+      <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
+      <div class="inline between">
+        <button class="btn soft small" id="d-paste">📋 복사한 구절 붙여넣기</button>
+        <span class="muted small" id="d-note-status">자동 저장돼요</span>
+      </div>
+      <p class="muted small hint">갓피아 화면에서 구절을 <b>길게 눌러 선택 → 복사</b>한 뒤 위 버튼을 누르면, ${esc(c.book.name)} ${c.chap}장 몇 절인지 붙여서 메모에 넣어 드려요.</p>
     </section>
     <section class="tool-card">
       <h3 class="label">바로가기</h3>
       <div class="inline wrap">
         <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
         <a class="btn ghost small" target="_blank" rel="noopener"
-          href="${godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "")}">갓피아 새 창으로 ↗</a>
+          href="${readerUrl(currentChapter)}">갓피아 새 창으로 ↗</a>
       </div>
       <p class="muted small">갓피아 로그인(메모·형광펜 등)은 새 창에서 이용해 주세요.</p>
     </section>`;
+}
+
+/* ---------- 구절 붙여넣기 ---------- */
+
+// 갓피아에서 복사한 글을 인용 형태로 메모에 넣음. 줄 앞의 숫자를 절 번호로 보고 "민수기 8:2-3"처럼 출처를 붙임
+function formatVerses(text, chapter) {
+  const lines = text.replace(/\r/g, "").split("\n").map((l) => l.trim()).filter(Boolean);
+  const verses = [];
+  const body = lines.map((l) => {
+    const m = l.match(/^(\d{1,3})\s+(.+)$/);
+    if (m) verses.push(Number(m[1]));
+    return l;
+  }).join("\n");
+  let ref = "";
+  if (chapter) {
+    const lo = Math.min(...verses), hi = Math.max(...verses);
+    ref = verses.length
+      ? `${chapter.book.name} ${chapter.chap}:${lo === hi ? lo : `${lo}-${hi}`}`
+      : `${chapter.book.name} ${chapter.chap}장`;
+  }
+  return `「${body}」${ref ? ` (${ref})` : ""}`;
+}
+
+async function pasteVerses(textarea, chapter) {
+  if (!textarea) return;
+  let text = "";
+  try {
+    text = await navigator.clipboard.readText();
+  } catch (e) { /* 권한 거부·미지원 */ }
+  if (!text.trim()) {
+    textarea.focus();
+    showToast("구절을 길게 눌러 복사한 뒤 다시 눌러 주세요");
+    return;
+  }
+  const quote = formatVerses(text, chapter);
+  const v = textarea.value;
+  const at = textarea.selectionStart ?? v.length;
+  const before = v.slice(0, at), after = v.slice(at);
+  const insert = (before && !before.endsWith("\n") ? "\n" : "") + quote + "\n";
+  textarea.value = before + insert + after;
+  const pos = (before + insert).length;
+  textarea.setSelectionRange(pos, pos);
+  textarea.dispatchEvent(new Event("input", { bubbles: true }));
+  showToast("구절을 붙여 넣었어요");
 }
 
 /* ---------- QT (꽉 찬 화면) ---------- */
@@ -634,6 +732,7 @@ function renderQt() {
 
   const body = $("#sheet-body");
   body.addEventListener("click", (e) => {
+    if (e.target.closest("#q-paste")) return pasteVerses($("#q-note-text"), null);
     const a = e.target.closest("[data-qt]");
     if (!a) return;
     e.preventDefault();
@@ -683,7 +782,11 @@ function renderQtSheet() {
     <section class="tool-card">
       <h3 class="label">${prettyDate(qtDate)}</h3>
       <textarea id="q-note-text" rows="8" placeholder="관찰 · 느낌 · 적용 · 기도를 적어 보세요.">${esc(entry.note)}</textarea>
-      <p class="muted small" id="q-status">입력하면 자동 저장돼요.</p>
+      <div class="inline between">
+        <button class="btn soft small" id="q-paste">📋 복사한 구절 붙여넣기</button>
+        <span class="muted small" id="q-status">자동 저장돼요</span>
+      </div>
+      <p class="muted small hint">QT 본문을 <b>길게 눌러 선택 → 복사</b>한 뒤 버튼을 누르면 인용으로 넣어 드려요.</p>
     </section>
     ${history.length ? `
       <h3 class="label">지난 QT</h3>
@@ -785,6 +888,8 @@ function renderStats() {
   app.innerHTML = `
     <section class="hero-row">${readCard}${qtCard}</section>
 
+    ${reminderCardHtml()}
+
     <section class="card">
       <div class="cal-head">
         <button class="icon-btn" id="cal-prev" aria-label="이전 달">‹</button>
@@ -850,6 +955,8 @@ function renderStats() {
       </div>
       <p class="muted small">기록은 이 기기의 브라우저에만 저장돼요. 기기를 바꾸기 전에 백업 파일을 받아 두세요.</p>
     </section>`;
+
+  bindReminderCard();
 
   const shiftMonth = (n) => {
     const d = new Date(cy, cm - 1 + n, 1);
