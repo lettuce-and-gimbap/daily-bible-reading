@@ -4,17 +4,37 @@ let state = loadState();
 // 최상위 이동만 막고 나머지(스크립트, 새 창, 오디오 등)는 허용한다.
 const GODPIA_SANDBOX =
   'sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals allow-downloads"';
-const app = document.getElementById("app");
 
-// 현재 읽고 있는 장 (계획 순서 기준 인덱스가 아니라 전체 장 일련번호)
-let currentChapter = null;
-let viewingDay = null; // 오늘 통독 화면에서 보고 있는 Day 번호(0부터)
+const app = document.getElementById("app");
+const $ = (s) => app.querySelector(s);
+
+let currentChapter = null; // 지금 보고 있는 장 (전체 장 일련번호)
+let viewingDay = null; // 지금 보고 있는 Day (0부터)
+let sheetTab = null; // 열린 패널: "table" | "tools" | "view" | "note" | null
+let toastTimer;
+let qtDate = todayStr();
+let calMonth = todayStr().slice(0, 7); // 현황 달력에 보이는 달 "YYYY-MM"
+
+const WEEK = ["일", "월", "화", "수", "목", "금", "토"];
 
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 function persist() {
   saveState(state);
+}
+
+function prettyDate(str) {
+  const d = parseDate(str);
+  return `${d.getMonth() + 1}월 ${d.getDate()}일 (${WEEK[d.getDay()]})`;
+}
+
+function chapLabel(i) {
+  return `${CHAPTERS[i].book.name} ${CHAPTERS[i].chap}장`;
+}
+
+function versionName(code) {
+  return VERSIONS.find((v) => v.code === code).name;
 }
 
 /* ---------- 계산 ---------- */
@@ -33,11 +53,13 @@ function progress() {
   const expectedDone = Math.min(days.length, elapsed);
   const doneDays = days.filter((d) => d.every((i) => state.read[i])).length;
   const remainingDays = days.length - doneDays;
+  const readToday = seq.filter((i) => state.read[i] === today).length;
   // 오늘 하루 분량을 이미 채웠으면 남은 분량은 내일부터 계산
-  const todayQuotaMet = seq.filter((i) => state.read[i] === today).length >= plan.perDay;
+  const todayQuotaMet = readToday >= plan.perDay;
   return {
-    seq, days, readCount, total: seq.length, currentDay, finished,
-    expectedDone, doneDays, diff: doneDays - expectedDone,
+    seq, days, readCount, total: seq.length, currentDay, finished, readToday,
+    doneDays, diff: doneDays - expectedDone,
+    pct: Math.round((readCount / seq.length) * 100),
     plannedEnd: addDays(plan.startDate, days.length - 1),
     projectedEnd: finished ? null : addDays(today, remainingDays - (todayQuotaMet ? 0 : 1)),
   };
@@ -49,6 +71,10 @@ function readDates() {
     (byDate[date] = byDate[date] || []).push(Number(idx));
   }
   return byDate;
+}
+
+function qtDoneDates() {
+  return new Set(Object.keys(state.qt).filter((d) => state.qt[d].done));
 }
 
 function streak(dateSet) {
@@ -76,143 +102,221 @@ function route() {
 }
 window.addEventListener("hashchange", route);
 
-/* ---------- 계획 만들기 ---------- */
+/* ---------- 공통: 패널 · 알림 ---------- */
 
-function renderSetup(existing) {
-  const p = existing || { startIdx: 0, perDay: 5, startDate: todayStr(), range: "rev" };
-  const startBook = CHAPTERS[p.startIdx].book;
-  app.innerHTML = `
-    <section class="card setup">
-      <h1>통독 계획 만들기</h1>
-      <p class="muted">시작할 장을 고르면 매일 정해진 분량만큼 나눠 계획을 세워 드립니다.</p>
-      <div class="form-grid">
-        <label>시작 권
-          <select id="s-book">${BOOKS.map((b) => `<option value="${b.code}" ${b === startBook ? "selected" : ""}>${b.name}</option>`).join("")}</select>
-        </label>
-        <label>시작 장
-          <select id="s-chap"></select>
-        </label>
-        <label>하루 분량 (장)
-          <input id="s-per" type="number" min="1" max="30" value="${p.perDay}">
-        </label>
-        <label>시작일
-          <input id="s-date" type="date" value="${p.startDate}">
-        </label>
-      </div>
-      <fieldset class="range">
-        <legend>통독 범위</legend>
-        <label><input type="radio" name="s-range" value="rev" ${p.range === "rev" ? "checked" : ""}> 시작 장부터 요한계시록 22장까지</label>
-        <label><input type="radio" name="s-range" value="full" ${p.range === "full" ? "checked" : ""}> 성경 전체 1독 (끝나면 창세기부터 이어서 시작 장 전까지)</label>
-      </fieldset>
-      <p class="preview" id="s-preview"></p>
-      <div class="actions">
-        ${existing ? `<button class="btn ghost" id="s-cancel">취소</button>` : ""}
-        <button class="btn primary" id="s-save">${existing ? "계획 변경하기" : "통독 시작하기"}</button>
-      </div>
-      ${existing ? `<p class="muted small">계획을 바꿔도 이미 읽은 장의 기록은 그대로 유지됩니다.</p>` : ""}
-    </section>`;
-
-  const bookSel = app.querySelector("#s-book");
-  const chapSel = app.querySelector("#s-chap");
-  const fillChaps = (selected) => {
-    const b = BOOKS.find((x) => x.code === bookSel.value);
-    chapSel.innerHTML = Array.from({ length: b.chapters }, (_, i) =>
-      `<option value="${i + 1}" ${i + 1 === selected ? "selected" : ""}>${i + 1}장</option>`).join("");
-  };
-  const read = () => ({
-    startIdx: chapterIndex(bookSel.value, Number(chapSel.value)),
-    perDay: Math.min(30, Math.max(1, Number(app.querySelector("#s-per").value) || 5)),
-    startDate: app.querySelector("#s-date").value || todayStr(),
-    range: app.querySelector("input[name=s-range]:checked").value,
-  });
-  const preview = () => {
-    const plan = read();
-    const days = planDays(plan);
-    const seq = planSequence(plan);
-    const last = CHAPTERS[seq[seq.length - 1]];
-    app.querySelector("#s-preview").innerHTML =
-      `총 <b>${seq.length}장</b>을 하루 ${plan.perDay}장씩 <b>${days.length}일</b> 동안 읽습니다. ` +
-      `마지막 분량은 ${esc(last.book.name)} ${last.chap}장, 예상 완료일은 <b>${addDays(plan.startDate, days.length - 1)}</b>입니다.`;
-  };
-  fillChaps(CHAPTERS[p.startIdx].chap);
-  bookSel.addEventListener("change", () => { fillChaps(1); preview(); });
-  app.querySelectorAll("select, input").forEach((el) => el.addEventListener("input", preview));
-  preview();
-
-  app.querySelector("#s-save").addEventListener("click", () => {
-    state.plan = read();
-    viewingDay = null;
-    currentChapter = null;
-    persist();
-    location.hash = "#today";
-    route();
-  });
-  const cancel = app.querySelector("#s-cancel");
-  if (cancel) cancel.addEventListener("click", () => { location.hash = "#stats"; });
-}
-
-/* ---------- 오늘 통독 (갓피아 화면을 꽉 채우는 읽기 모드) ---------- */
-
-let sheetTab = null; // 열린 패널 탭: "day" | "table" | "stats" | null
-let toastTimer;
-
-const $ = (s) => app.querySelector(s);
-
-function versionOptions(selected) {
-  return VERSIONS.map((v) => `<option value="${v.code}" ${v.code === selected ? "selected" : ""}>${v.name}</option>`).join("");
-}
-
-function sheetShell(tabs) {
+function sheetShell() {
   return `
     <div class="sheet-backdrop" id="sheet-bg" hidden></div>
     <aside class="sheet" id="sheet" hidden>
+      <div class="sheet-grip"></div>
       <div class="sheet-head">
-        ${tabs.length > 1
-          ? `<div class="seg sheet-tabs">${tabs.map(([k, label]) => `<button data-tab="${k}">${label}</button>`).join("")}</div>`
-          : `<h2>${tabs[0][1]}</h2>`}
-        <button class="tool" id="sheet-close" aria-label="닫기">✕</button>
+        <div id="sheet-title"></div>
+        <button class="icon-btn" id="sheet-close" aria-label="닫기">✕</button>
       </div>
       <div class="sheet-body" id="sheet-body"></div>
     </aside>
     <div class="toast" id="toast" hidden></div>`;
 }
 
-function showToast(msg) {
-  const t = $("#toast");
-  t.textContent = msg;
-  t.hidden = false;
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { t.hidden = true; }, 2600);
+function bindSheetChrome(renderFn) {
+  $("#sheet-close").addEventListener("click", closeSheet);
+  $("#sheet-bg").addEventListener("click", closeSheet);
+  $("#sheet-title").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-tab]");
+    if (b) openSheet(b.dataset.tab, renderFn);
+  });
 }
 
-function openSheet(tab) {
+function openSheet(tab, renderFn) {
   sheetTab = tab;
   $("#sheet").hidden = false;
   $("#sheet-bg").hidden = false;
   document.body.classList.add("sheet-open");
-  if (location.hash === "#qt") renderQtSheet();
-  else renderReaderSheet();
+  renderFn();
 }
 
 function closeSheet() {
   sheetTab = null;
-  const s = $("#sheet");
-  if (!s) return;
-  s.hidden = true;
+  if (!$("#sheet")) return;
+  $("#sheet").hidden = true;
   $("#sheet-bg").hidden = true;
   document.body.classList.remove("sheet-open");
+}
+
+function setSheetTitle(tabs, title) {
+  $("#sheet-title").innerHTML = tabs
+    ? `<div class="seg">${tabs.map(([k, label]) => `<button data-tab="${k}" class="${k === sheetTab ? "on" : ""}">${label}</button>`).join("")}</div>`
+    : `<h2>${title}</h2>`;
 }
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && sheetTab) closeSheet();
 });
 
-function bindSheetChrome() {
-  $("#sheet-close").addEventListener("click", closeSheet);
-  $("#sheet-bg").addEventListener("click", closeSheet);
-  app.querySelectorAll(".sheet-tabs button").forEach((b) =>
-    b.addEventListener("click", () => openSheet(b.dataset.tab)));
+function showToast(msg) {
+  const t = $("#toast");
+  if (!t) return;
+  t.textContent = msg;
+  t.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.hidden = true; }, 2600);
 }
+
+/* ---------- 계획 만들기 ---------- */
+
+function renderSetup(existing) {
+  document.body.classList.remove("full");
+  const last = TOTAL_CHAPTERS - 1;
+  const p = existing || { startIdx: 0, endIdx: last, perDay: 5, startDate: todayStr(), pace: "perDay" };
+  const bookOptions = (sel) => BOOKS.map((b) => `<option value="${b.code}" ${b === sel ? "selected" : ""}>${b.name}</option>`).join("");
+
+  app.innerHTML = `
+    <section class="card setup">
+      <h1>${existing ? "통독 계획 바꾸기" : "통독 계획 만들기"}</h1>
+      <p class="muted">어디서 시작해 어디까지, 어떤 속도로 읽을지 정해 주세요.</p>
+
+      <div class="step">
+        <span class="step-no">1</span>
+        <div class="step-body">
+          <h3>어디서 시작할까요?</h3>
+          <div class="pick">
+            <select id="s-book" aria-label="시작 권">${bookOptions(CHAPTERS[p.startIdx].book)}</select>
+            <select id="s-chap" aria-label="시작 장"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-no">2</span>
+        <div class="step-body">
+          <h3>어디까지 읽을까요?</h3>
+          <div class="presets" id="e-presets">
+            <button data-preset="book">이 권 끝까지</button>
+            <button data-preset="ot">구약 끝 (말라기)</button>
+            <button data-preset="rev">요한계시록까지</button>
+            <button data-preset="whole">성경 전체 1독</button>
+          </div>
+          <div class="pick">
+            <select id="e-book" aria-label="끝 권">${bookOptions(CHAPTERS[p.endIdx].book)}</select>
+            <select id="e-chap" aria-label="끝 장"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-no">3</span>
+        <div class="step-body">
+          <h3>어떤 속도로 읽을까요?</h3>
+          <div class="seg wide" id="s-pace">
+            <button data-pace="perDay" class="${p.pace !== "date" ? "on" : ""}">하루 분량으로 정하기</button>
+            <button data-pace="date" class="${p.pace === "date" ? "on" : ""}">마칠 날짜로 정하기</button>
+          </div>
+          <div class="pace-row">
+            <label>시작일 <input id="s-date" type="date" value="${p.startDate}"></label>
+            <label id="per-wrap">하루 <input id="s-per" type="number" min="1" max="150" value="${p.perDay}"> 장</label>
+            <label id="date-wrap">마칠 날짜 <input id="s-target" type="date" value="${p.targetDate || addDays(p.startDate, 99)}"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview" id="s-preview"></div>
+      <div class="actions">
+        ${existing ? `<button class="btn ghost" id="s-cancel">취소</button>` : ""}
+        <button class="btn primary" id="s-save">${existing ? "계획 바꾸기" : "통독 시작하기"}</button>
+      </div>
+      ${existing ? `<p class="muted small center">계획을 바꿔도 이미 읽은 장의 기록은 그대로 남아요.</p>` : ""}
+    </section>`;
+
+  const sBook = $("#s-book"), sChap = $("#s-chap"), eBook = $("#e-book"), eChap = $("#e-chap");
+  let pace = p.pace === "date" ? "date" : "perDay";
+
+  const fillChaps = (bookSel, chapSel, selected) => {
+    const b = BOOKS.find((x) => x.code === bookSel.value);
+    chapSel.innerHTML = Array.from({ length: b.chapters }, (_, i) =>
+      `<option value="${i + 1}" ${i + 1 === selected ? "selected" : ""}>${i + 1}장</option>`).join("");
+  };
+  const setEnd = (idx) => {
+    eBook.value = CHAPTERS[idx].book.code;
+    fillChaps(eBook, eChap, CHAPTERS[idx].chap);
+  };
+  const startIdx = () => chapterIndex(sBook.value, Number(sChap.value));
+  const endIdx = () => chapterIndex(eBook.value, Number(eChap.value));
+  const presetIdx = {
+    book: () => { const b = CHAPTERS[startIdx()].book; return chapterIndex(b.code, b.chapters); },
+    ot: () => 928,
+    rev: () => last,
+    whole: () => (startIdx() === 0 ? last : startIdx() - 1),
+  };
+
+  const read = () => {
+    const plan = { startIdx: startIdx(), endIdx: endIdx(), startDate: $("#s-date").value || todayStr(), pace };
+    const total = planSequence(plan).length;
+    if (pace === "date") {
+      plan.targetDate = $("#s-target").value || plan.startDate;
+      const days = Math.max(1, daysBetween(plan.startDate, plan.targetDate) + 1);
+      plan.perDay = Math.max(1, Math.ceil(total / days));
+    } else {
+      plan.perDay = Math.min(150, Math.max(1, Number($("#s-per").value) || 5));
+    }
+    return plan;
+  };
+
+  const update = () => {
+    const plan = read();
+    const seq = planSequence(plan);
+    const days = planDays(plan);
+    app.querySelectorAll("#s-pace button").forEach((b) => b.classList.toggle("on", b.dataset.pace === pace));
+    $("#per-wrap").hidden = pace !== "perDay";
+    $("#date-wrap").hidden = pace !== "date";
+    app.querySelectorAll("#e-presets button").forEach((b) =>
+      b.classList.toggle("on", presetIdx[b.dataset.preset]() === plan.endIdx));
+    const wraps = plan.endIdx < plan.startIdx;
+    const badDate = pace === "date" && plan.targetDate < plan.startDate;
+    $("#s-preview").innerHTML = `
+      <div class="route"><b>${esc(chapLabel(plan.startIdx))}</b><span>→</span><b>${esc(chapLabel(plan.endIdx))}</b></div>
+      <div class="preview-grid">
+        <div><strong>${seq.length}</strong><span>장</span></div>
+        <div><strong>${plan.perDay}</strong><span>장 / 하루</span></div>
+        <div><strong>${days.length}</strong><span>일</span></div>
+      </div>
+      <p>${prettyDate(plan.startDate)} 시작 → <b>${prettyDate(addDays(plan.startDate, days.length - 1))}</b>에 마쳐요.</p>
+      ${wraps ? `<p class="muted small">요한계시록 22장 다음에 창세기 1장으로 이어서 읽어요.</p>` : ""}
+      ${badDate ? `<p class="warn-text small">마칠 날짜가 시작일보다 앞이에요.</p>` : ""}`;
+    $("#s-save").disabled = badDate;
+  };
+
+  fillChaps(sBook, sChap, CHAPTERS[p.startIdx].chap);
+  fillChaps(eBook, eChap, CHAPTERS[p.endIdx].chap);
+  sBook.addEventListener("change", () => { fillChaps(sBook, sChap, 1); update(); });
+  eBook.addEventListener("change", () => { fillChaps(eBook, eChap, BOOKS.find((b) => b.code === eBook.value).chapters); update(); });
+  app.querySelectorAll(".setup select, .setup input").forEach((el) => el.addEventListener("input", update));
+  $("#e-presets").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-preset]");
+    if (!b) return;
+    setEnd(presetIdx[b.dataset.preset]());
+    update();
+  });
+  $("#s-pace").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-pace]");
+    if (!b) return;
+    pace = b.dataset.pace;
+    update();
+  });
+  update();
+
+  const cancel = $("#s-cancel");
+  if (cancel) cancel.addEventListener("click", route);
+  $("#s-save").addEventListener("click", () => {
+    state.plan = read();
+    viewingDay = null;
+    currentChapter = null;
+    persist();
+    if (location.hash === "#today" || !location.hash) route();
+    else location.hash = "#today";
+  });
+}
+
+/* ---------- 통독 (갓피아 화면을 꽉 채우는 읽기 모드) ---------- */
 
 function renderToday() {
   if (!state.plan) return renderSetup();
@@ -222,70 +326,48 @@ function renderToday() {
 }
 
 function buildReader() {
-  sheetTab = null;
   app.innerHTML = `
     <div class="rd reading">
-      <div class="rd-bar rd-top">
-        <button class="tool labeled" data-open="table">📖<span>통독표</span></button>
-        <button class="rd-info" data-open="day" id="r-info" title="오늘 분량 보기"></button>
-        <div class="rd-ver">
-          <div class="seg" role="group" aria-label="보기 방식">
-            <button data-mode="one">한권</button><button data-mode="two">두권</button>
-          </div>
-          <select id="r-ver" aria-label="역본"></select>
-          <select id="r-ver2" aria-label="비교 역본"></select>
+      <div class="rd-top">
+        <div class="rd-row">
+          <button class="chip-btn" data-open="table" aria-label="통독표 열기">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>통독표
+          </button>
+          <div class="rd-title" id="r-title"></div>
+          <button class="chip-btn" data-open="view" id="r-view" aria-label="역본·보기 설정"></button>
         </div>
+        <div class="steps" id="r-steps"></div>
       </div>
       <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe></div>
-      <div class="rd-bar rd-bottom">
-        <button class="tool" id="r-prev" aria-label="이전 장">‹</button>
-        <div class="rd-dots" id="r-dots"></div>
-        <button class="tool" id="r-next" aria-label="다음 장">›</button>
-        <button class="btn primary" id="r-check"></button>
-        <button class="tool labeled" data-open="stats">📊<span>현황</span></button>
-      </div>
+      <div class="rd-bottom" id="r-bottom"></div>
     </div>
-    ${sheetShell([["day", "오늘 분량"], ["table", "통독표"], ["stats", "현황"]])}`;
+    ${sheetShell()}`;
 
-  bindSheetChrome();
-  app.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => openSheet(b.dataset.open)));
+  bindSheetChrome(renderReaderSheet);
+  app.querySelectorAll("[data-open]").forEach((b) =>
+    b.addEventListener("click", () => openSheet(b.dataset.open, renderReaderSheet)));
 
-  app.querySelectorAll(".rd-ver .seg button").forEach((b) =>
-    b.addEventListener("click", () => {
-      state.settings.mode = b.dataset.mode;
-      if (state.settings.mode === "two" && state.settings.ver2 === state.settings.ver) {
-        state.settings.ver2 = VERSIONS.find((v) => v.code !== state.settings.ver).code;
-      }
-      persist();
-      refreshReader();
-    }));
-  $("#r-ver").addEventListener("change", (e) => { state.settings.ver = e.target.value; persist(); refreshReader(); });
-  $("#r-ver2").addEventListener("change", (e) => { state.settings.ver2 = e.target.value; persist(); refreshReader(); });
-
-  const move = (delta) => {
-    const seq = planSequence(state.plan);
-    const pos = seq.indexOf(currentChapter) + delta;
-    if (pos < 0 || pos >= seq.length) return;
-    currentChapter = seq[pos];
-    viewingDay = Math.floor(pos / state.plan.perDay);
-    refreshReader();
-  };
-  $("#r-prev").addEventListener("click", () => move(-1));
-  $("#r-next").addEventListener("click", () => move(1));
-
-  $("#r-dots").addEventListener("click", (e) => {
+  $("#r-steps").addEventListener("click", (e) => {
     const b = e.target.closest("[data-idx]");
-    if (!b) return;
-    currentChapter = Number(b.dataset.idx);
-    refreshReader();
+    if (b) { currentChapter = Number(b.dataset.idx); refreshReader(); }
   });
 
-  $("#r-check").addEventListener("click", () => {
+  $("#r-bottom").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
     const pr = progress();
     const day = pr.days[viewingDay];
-    if (state.read[currentChapter]) {
-      delete state.read[currentChapter];
-    } else {
+    const pos = pr.seq.indexOf(currentChapter);
+    const goTo = (p) => {
+      if (p < 0 || p >= pr.seq.length) return;
+      currentChapter = pr.seq[p];
+      viewingDay = Math.floor(p / state.plan.perDay);
+    };
+    if (b.id === "r-prev") goTo(pos - 1);
+    else if (b.id === "r-next") goTo(pos + 1);
+    else if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
+    else if (b.id === "r-undo") delete state.read[currentChapter];
+    else if (b.id === "r-check") {
       state.read[currentChapter] = todayStr();
       const nextUnread = day.find((i) => !state.read[i]);
       if (nextUnread !== undefined) currentChapter = nextUnread;
@@ -295,7 +377,7 @@ function buildReader() {
     refreshReader();
   });
 
-  // 패널 안의 버튼들 (패널 내용은 다시 그려지므로 위임으로 처리)
+  // 패널 내용은 다시 그려지므로 위임으로 처리
   const body = $("#sheet-body");
   body.addEventListener("click", async (e) => {
     const t = e.target.closest("button, [data-day], [data-chap]");
@@ -305,12 +387,20 @@ function buildReader() {
       currentChapter = Number(t.dataset.chap);
       viewingDay = Math.floor(seq.indexOf(currentChapter) / state.plan.perDay);
       closeSheet();
-      refreshReader();
     } else if (t.dataset.day !== undefined) {
       viewingDay = Number(t.dataset.day);
       currentChapter = null;
       if (sheetTab === "table") closeSheet();
-      refreshReader();
+    } else if (t.dataset.mode) {
+      state.settings.mode = t.dataset.mode;
+      if (state.settings.mode === "two" && state.settings.ver2 === state.settings.ver) {
+        state.settings.ver2 = VERSIONS.find((v) => v.code !== state.settings.ver).code;
+      }
+    } else if (t.dataset.ver) {
+      state.settings.ver = t.dataset.ver;
+      if (state.settings.ver2 === t.dataset.ver) state.settings.ver2 = VERSIONS.find((v) => v.code !== t.dataset.ver).code;
+    } else if (t.dataset.ver2) {
+      state.settings.ver2 = t.dataset.ver2;
     } else if (t.id === "r-upto-btn") {
       const pr = progress();
       const first = pr.seq.findIndex((i) => !state.read[i]);
@@ -318,22 +408,25 @@ function buildReader() {
       const targets = pr.seq.slice(first, endPos + 1).filter((i) => !state.read[i]);
       if (!targets.length || !confirm(`${describeChapters(targets)}을(를) 오늘 읽은 것으로 체크할까요?`)) return;
       targets.forEach((i) => { state.read[i] = todayStr(); });
-      persist();
       currentChapter = null;
       viewingDay = null;
-      refreshReader();
       showToast(`${targets.length}장을 읽음으로 체크했어요.`);
     } else if (t.id === "d-copy") {
-      const day = progress().days[viewingDay];
-      const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(day)}`;
+      const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(progress().days[viewingDay])}`;
       try {
         await navigator.clipboard.writeText(text);
         showToast("복사했어요. 투두메이트에 붙여넣어 보세요.");
       } catch (err) {
         prompt("아래 내용을 복사하세요", text);
       }
+      return;
+    } else {
+      return;
     }
+    persist();
+    refreshReader();
   });
+
   let noteTimer;
   body.addEventListener("input", (e) => {
     if (e.target.id !== "d-note") return;
@@ -364,279 +457,179 @@ function refreshReader() {
     frame.src = url;
   }
 
-  const dayDone = day.filter((i) => state.read[i]).length;
-  $("#r-info").innerHTML = `
-    <small>Day ${viewingDay + 1}/${pr.days.length}${viewingDay === pr.currentDay ? " · 오늘 차례" : ""} · ${esc(describeChapters(day))}</small>
-    <b>${esc(c.book.name)} ${c.chap}장</b>
-    <span class="mini-bar"><span style="width:${(dayDone / day.length) * 100}%"></span></span>`;
+  const dayRead = day.filter((i) => state.read[i]).length;
+  const dayDone = dayRead === day.length;
+  const isToday = viewingDay === pr.currentDay;
+  $("#r-title").innerHTML = `
+    <small>Day ${viewingDay + 1} <span class="dim">/ ${pr.days.length}</span>
+      ${dayDone ? `<em class="badge good">완료</em>` : isToday ? `<em class="badge">오늘</em>` : ""}</small>
+    <b>${esc(describeChapters(day))}</b>`;
 
-  app.querySelectorAll(".rd-ver .seg button").forEach((b) => b.classList.toggle("on", b.dataset.mode === s.mode));
-  $("#r-ver").innerHTML = versionOptions(s.ver);
-  $("#r-ver2").innerHTML = versionOptions(s.ver2);
-  $("#r-ver2").hidden = s.mode !== "two";
+  $("#r-view").innerHTML = `<span>${s.mode === "two" ? `${versionName(s.ver)} · ${versionName(s.ver2)}` : versionName(s.ver)}</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 
-  $("#r-dots").innerHTML = day.map((i) => {
-    const ch = CHAPTERS[i];
-    return `<button class="dot ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-idx="${i}"
-      title="${esc(ch.book.name)} ${ch.chap}장${state.read[i] ? " (읽음)" : ""}">${ch.chap}</button>`;
-  }).join("");
+  let prevBook = null;
+  $("#r-steps").innerHTML = `
+    <div class="steps-track">
+      ${day.map((i) => {
+        const ch = CHAPTERS[i];
+        const showBook = ch.book !== prevBook;
+        prevBook = ch.book;
+        return `<button class="step-pill ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-idx="${i}"
+          aria-label="${esc(chapLabel(i))}${state.read[i] ? " 읽음" : ""}">
+          ${state.read[i] ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>` : ""}
+          ${showBook && day.some((j) => CHAPTERS[j].book !== ch.book) ? `<span class="bk">${esc(ch.book.name)}</span>` : ""}${ch.chap}</button>`;
+      }).join("")}
+    </div>
+    <span class="steps-count"><b>${dayRead}</b>/${day.length}</span>`;
 
-  const seqPos = pr.seq.indexOf(currentChapter);
-  $("#r-prev").disabled = seqPos <= 0;
-  $("#r-next").disabled = seqPos >= pr.seq.length - 1;
-
-  const check = $("#r-check");
+  const pos = pr.seq.indexOf(currentChapter);
   const isRead = !!state.read[currentChapter];
-  check.innerHTML = isRead ? "읽음 취소" : "✓ 읽었어요";
-  check.classList.toggle("ghost", isRead);
-  check.classList.toggle("primary", !isRead);
+  let main;
+  if (!isRead) {
+    main = `<button class="btn primary big" id="r-check">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>${c.chap}장 읽었어요</button>`;
+  } else if (dayDone && viewingDay < pr.days.length - 1) {
+    main = `<button class="btn primary big" id="r-nextday">🎉 완료! 다음 분량 읽기</button>
+      <button class="btn text" id="r-undo">취소</button>`;
+  } else {
+    main = `<button class="btn soft big" id="r-undo">✓ 읽음 · 취소하기</button>`;
+  }
+  $("#r-bottom").innerHTML = `
+    <button class="icon-btn" id="r-prev" ${pos <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
+    <div class="rd-main">${main}</div>
+    <button class="icon-btn" id="r-next" ${pos >= pr.seq.length - 1 ? "disabled" : ""} aria-label="다음 장">›</button>`;
 
   if (sheetTab) renderReaderSheet();
-}
-
-function kpisHtml(pr) {
-  const dates = new Set(Object.values(state.read));
-  const pct = Math.round((pr.readCount / pr.total) * 100);
-  return `
-    <div class="kpis">
-      <div><b>${pct}%</b><span>진행률</span></div>
-      <div><b>${pr.readCount}</b><span>읽은 장 / ${pr.total}</span></div>
-      <div><b>${pr.doneDays}</b><span>완료한 Day / ${pr.days.length}</span></div>
-      <div><b>${streak(dates)}일</b><span>연속 통독</span></div>
-      <div><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></div>
-      <div><b>${pr.finished ? "완료" : pr.projectedEnd}</b><span>예상 완료일 (계획 ${pr.plannedEnd})</span></div>
-    </div>`;
 }
 
 function renderReaderSheet() {
   const pr = progress();
   const body = $("#sheet-body");
-  app.querySelectorAll(".sheet-tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === sheetTab));
+  const s = state.settings;
 
-  if (sheetTab === "day") {
-    const day = pr.days[viewingDay];
-    const first = pr.seq.findIndex((i) => !state.read[i]);
-    const uptoOpts = first === -1 ? [] : pr.seq.slice(first, first + state.plan.perDay * 3);
-    const c = CHAPTERS[currentChapter];
-    const s = state.settings;
+  if (sheetTab === "view") {
+    setSheetTitle(null, "보기 설정");
+    const chips = (attr, selected, disabled) => VERSIONS.map((v) =>
+      `<button class="opt ${v.code === selected ? "on" : ""}" data-${attr}="${v.code}" ${v.code === disabled ? "disabled" : ""}>${v.name}</button>`).join("");
     body.innerHTML = `
-      <div class="day-head">
-        <button class="icon-btn" data-day="${viewingDay - 1}" ${viewingDay === 0 ? "disabled" : ""} aria-label="이전 날">‹</button>
-        <div class="day-title">
-          <div class="eyebrow">Day ${viewingDay + 1} / ${pr.days.length} · 계획일 ${addDays(state.plan.startDate, viewingDay)}</div>
-          <h2>${esc(describeChapters(day))}</h2>
-        </div>
-        <button class="icon-btn" data-day="${viewingDay + 1}" ${viewingDay === pr.days.length - 1 ? "disabled" : ""} aria-label="다음 날">›</button>
+      <h3 class="label">보기 방식</h3>
+      <div class="opts two">
+        <button class="opt big ${s.mode === "one" ? "on" : ""}" data-mode="one"><b>한권 보기</b><span>한 역본만 읽어요</span></button>
+        <button class="opt big ${s.mode === "two" ? "on" : ""}" data-mode="two"><b>두권 보기</b><span>두 역본을 나란히 읽어요</span></button>
       </div>
-      <div class="chips">
-        ${day.map((i) => `<button class="chip ${state.read[i] ? "done" : ""} ${i === currentChapter ? "active" : ""}" data-chap="${i}">
-          ${state.read[i] ? "✓ " : ""}${esc(CHAPTERS[i].book.name)} ${CHAPTERS[i].chap}장</button>`).join("")}
-      </div>
-      ${uptoOpts.length ? `
-      <div class="catchup">
-        <span class="muted small">갓피아에서 옆으로 넘기며 읽었다면</span>
-        <select id="r-upto">${uptoOpts.map((i) => `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(CHAPTERS[i].book.name)} ${CHAPTERS[i].chap}장</option>`).join("")}</select>
-        <button class="btn ghost small" id="r-upto-btn">까지 한 번에 체크</button>
-      </div>` : ""}
-      <div class="actions left">
-        <button class="btn ghost small" id="d-copy">📋 오늘 분량 복사</button>
-        <a class="btn ghost small" target="_blank" rel="noopener"
-          href="${godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "")}">갓피아 새 창으로 열기 ↗</a>
-      </div>
-      <h2 class="sheet-sub">오늘의 통독 메모</h2>
-      <textarea id="d-note" rows="4" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
-      <p class="muted small" id="d-note-status">입력하면 자동 저장됩니다.</p>
-      <p class="muted small">갓피아 로그인(메모·형광펜 등)은 새 창으로 열어서 이용해 주세요.</p>`;
-  } else if (sheetTab === "table") {
+      <h3 class="label">${s.mode === "two" ? "첫 번째 역본" : "역본"}</h3>
+      <div class="opts">${chips("ver", s.ver)}</div>
+      ${s.mode === "two" ? `<h3 class="label">함께 볼 역본</h3><div class="opts">${chips("ver2", s.ver2, s.ver)}</div>` : ""}`;
+    return;
+  }
+
+  setSheetTitle([["table", "통독표"], ["tools", "메모 · 도구"]]);
+
+  if (sheetTab === "table") {
     body.innerHTML = `
-      <p class="muted small">Day를 누르면 그날 분량으로 이동합니다. 하루 ${state.plan.perDay}장 · ${state.plan.startDate} 시작</p>
+      <div class="table-sum">
+        <div class="bar"><span style="width:${pr.pct}%"></span></div>
+        <p><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</p>
+      </div>
       <div class="ttable">
         ${pr.days.map((d, n) => {
           const done = d.filter((i) => state.read[i]).length;
-          const cls = [done === d.length ? "done" : done ? "part" : "", n === viewingDay ? "viewing" : "", n === pr.currentDay ? "current" : ""].join(" ");
+          const cls = [done === d.length ? "done" : done ? "part" : "", n === viewingDay ? "viewing" : "", n === pr.currentDay && !pr.finished ? "current" : ""].join(" ");
+          const st = done === d.length
+            ? `<svg viewBox="0 0 24 24" aria-label="완료"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
+            : done ? `${done}/${d.length}` : n === pr.currentDay ? "오늘" : "";
           return `<button class="trow ${cls}" data-day="${n}">
             <span class="t-day">Day ${n + 1}</span>
-            <span class="t-date">${addDays(state.plan.startDate, n).slice(5).replace("-", "/")}</span>
-            <span class="t-range">${esc(describeChapters(d))}</span>
-            <span class="t-st">${done === d.length ? "✓" : done ? `${done}/${d.length}` : n === pr.currentDay ? "오늘" : ""}</span>
+            <span class="t-range">${esc(describeChapters(d))}<small>${prettyDate(addDays(state.plan.startDate, n))}</small></span>
+            <span class="t-st">${st}</span>
           </button>`;
         }).join("")}
       </div>`;
     const row = body.querySelector(".trow.viewing");
     if (row) row.scrollIntoView({ block: "center" });
-  } else if (sheetTab === "stats") {
-    const pct = Math.round((pr.readCount / pr.total) * 100);
-    body.innerHTML = `
-      <p class="muted small">${esc(describeChapters([pr.seq[0]]))}부터 ${state.plan.range === "full" ? "성경 전체 1독" : "요한계시록까지"} · 하루 ${state.plan.perDay}장</p>
-      <div class="bar big"><span style="width:${pct}%"></span></div>
-      ${kpisHtml(pr)}
-      <div class="actions left">
-        <a class="btn primary small" href="#stats">달력 · 권별 진행 · 기록 전체 보기</a>
-      </div>`;
-  }
-}
-
-/* ---------- 현황·기록 ---------- */
-
-function renderStats() {
-  if (!state.plan) return renderSetup();
-  const pr = progress();
-  const byDate = readDates();
-  const dates = new Set(Object.keys(byDate));
-  const pct = Math.round((pr.readCount / pr.total) * 100);
-  const inPlan = new Set(pr.seq);
-
-  // 최근 20주 달력 (일요일 시작)
-  const today = parseDate(todayStr());
-  const gridStart = new Date(today);
-  gridStart.setDate(gridStart.getDate() - today.getDay() - 7 * 19);
-  const cells = [];
-  for (let d = new Date(gridStart); d <= today; d.setDate(d.getDate() + 1)) {
-    const ds = todayStr(d);
-    const n = (byDate[ds] || []).length;
-    const lvl = n === 0 ? 0 : n < state.plan.perDay ? 1 : n < state.plan.perDay * 2 ? 2 : 3;
-    cells.push(`<i class="l${lvl}" title="${ds} · ${n}장"></i>`);
+    return;
   }
 
-  const logDates = [...new Set([...dates, ...Object.keys(state.dayNotes)])].sort().reverse();
-
-  app.innerHTML = `
-    <section class="card">
-      <div class="stats-head">
-        <h1>나의 통독 현황</h1>
-        <button class="btn ghost small" id="st-edit">계획 변경</button>
+  // 메모 · 도구
+  const day = pr.days[viewingDay];
+  const first = pr.seq.findIndex((i) => !state.read[i]);
+  const uptoOpts = first === -1 ? [] : pr.seq.slice(first, first + state.plan.perDay * 3);
+  const c = CHAPTERS[currentChapter];
+  body.innerHTML = `
+    <section class="tool-card">
+      <h3 class="label">몰아서 체크</h3>
+      ${uptoOpts.length ? `
+        <p class="muted small">갓피아 화면에서 옆으로 넘기며 읽었다면, 마지막으로 읽은 장을 골라 주세요.</p>
+        <div class="inline">
+          <select id="r-upto">${uptoOpts.map((i) => `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(chapLabel(i))}</option>`).join("")}</select>
+          <button class="btn primary small" id="r-upto-btn">까지 읽음</button>
+        </div>` : `<p class="muted small">모든 장을 읽었어요.</p>`}
+    </section>
+    <section class="tool-card">
+      <h3 class="label">오늘의 통독 메모</h3>
+      <textarea id="d-note" rows="4" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
+      <p class="muted small" id="d-note-status">입력하면 자동 저장돼요.</p>
+    </section>
+    <section class="tool-card">
+      <h3 class="label">바로가기</h3>
+      <div class="inline wrap">
+        <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
+        <a class="btn ghost small" target="_blank" rel="noopener"
+          href="${godpiaReadUrl(c.book.code, c.chap, s.ver, s.mode === "two" ? s.ver2 : "")}">갓피아 새 창으로 ↗</a>
       </div>
-      <p class="muted">${esc(describeChapters([pr.seq[0]]))}부터 ${state.plan.range === "full" ? "성경 전체 1독" : "요한계시록까지"} ·
-        하루 ${state.plan.perDay}장 · ${state.plan.startDate} 시작</p>
-      <div class="bar big"><span style="width:${pct}%"></span></div>
-      ${kpisHtml(pr)}
-    </section>
-
-    <section class="card">
-      <h2>통독 달력 <span class="muted small">최근 20주</span></h2>
-      <div class="heat">${cells.join("")}</div>
-      <div class="legend muted small">적음 <i class="l1"></i><i class="l2"></i><i class="l3"></i> 많음</div>
-    </section>
-
-    <section class="card">
-      <h2>권별 진행</h2>
-      <div class="books">
-        ${BOOKS.map((b) => {
-          const start = chapterIndex(b.code, 1);
-          let inP = 0, done = 0;
-          for (let i = start; i < start + b.chapters; i++) {
-            if (inPlan.has(i)) { inP++; if (state.read[i]) done++; }
-          }
-          if (!inP) return "";
-          const p = Math.round((done / inP) * 100);
-          return `<div class="book ${p === 100 ? "full" : ""}" title="${b.name} ${done}/${inP}장">
-            <span>${b.name}</span><em>${done}/${inP}</em><div class="bar thin"><span style="width:${p}%"></span></div></div>`;
-        }).join("")}
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>날짜별 기록</h2>
-      ${logDates.length === 0 ? `<p class="muted">아직 기록이 없습니다. <a href="#today">오늘 통독</a>에서 첫 장을 읽어 보세요.</p>` : `
-      <ul class="log">
-        ${logDates.map((d) => `
-          <li>
-            <div class="log-date">${d}<span>${(byDate[d] || []).length}장</span></div>
-            <div>
-              ${byDate[d] ? `<div>${esc(describeChapters(byDate[d]))}</div>` : ""}
-              ${state.dayNotes[d] ? `<blockquote>${esc(state.dayNotes[d])}</blockquote>` : ""}
-            </div>
-          </li>`).join("")}
-      </ul>`}
-    </section>
-
-    <section class="card">
-      <h2>백업 · 초기화</h2>
-      <p class="muted small">기록은 이 기기의 브라우저에만 저장됩니다. 기기를 바꾸거나 브라우저 데이터를 지우기 전에 백업 파일을 받아 두세요.</p>
-      <div class="actions left">
-        <button class="btn ghost small" id="st-export">백업 파일 받기</button>
-        <label class="btn ghost small">백업 파일 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
-        <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
-      </div>
+      <p class="muted small">갓피아 로그인(메모·형광펜 등)은 새 창에서 이용해 주세요.</p>
     </section>`;
-
-  app.querySelector("#st-edit").addEventListener("click", () => renderSetup(state.plan));
-  app.querySelector("#st-export").addEventListener("click", () => {
-    const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `통독기록-${todayStr()}.json`;
-    a.click();
-    URL.revokeObjectURL(a.href);
-  });
-  app.querySelector("#st-import").addEventListener("change", async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    try {
-      const data = JSON.parse(await file.text());
-      if (typeof data !== "object" || !("read" in data)) throw new Error();
-      if (!confirm("현재 기록을 백업 파일 내용으로 바꿀까요?")) return;
-      state = { ...defaultState(), ...data };
-      persist();
-      route();
-    } catch (err) {
-      alert("올바른 백업 파일이 아닙니다.");
-    }
-  });
-  app.querySelector("#st-reset").addEventListener("click", () => {
-    if (!confirm("통독 계획과 모든 기록(QT 노트 포함)을 삭제할까요? 되돌릴 수 없습니다.")) return;
-    state = defaultState();
-    persist();
-    location.hash = "#today";
-    route();
-  });
 }
 
-/* ---------- 오늘의 QT (꽉 찬 화면) ---------- */
-
-let qtDate = todayStr();
+/* ---------- QT (꽉 찬 화면) ---------- */
 
 function renderQt() {
   document.body.classList.add("full");
-  sheetTab = null;
   const url = godpiaQtUrl(qtDate);
   const isToday = qtDate === todayStr();
 
   app.innerHTML = `
     <div class="rd qt">
-      <div class="rd-bar rd-top">
-        <button class="tool" id="q-prev" aria-label="전날">‹</button>
-        <div class="qt-date">
-          <input type="date" id="q-date" value="${qtDate}" max="${todayStr()}" aria-label="QT 날짜">
-          ${isToday ? `<span class="pill good">오늘</span>` : `<button class="btn ghost small" id="q-today">오늘로</button>`}
+      <div class="rd-top">
+        <div class="rd-row">
+          <button class="icon-btn" id="q-prev" aria-label="전날">‹</button>
+          <label class="rd-title qt-title">
+            <small>날마다 솟는 샘물 ${isToday ? `<em class="badge">오늘</em>` : ""}</small>
+            <b>${prettyDate(qtDate)}
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></b>
+            <input type="date" id="q-date" value="${qtDate}" max="${todayStr()}" aria-label="QT 날짜 고르기">
+          </label>
+          <button class="icon-btn" id="q-next" ${isToday ? "disabled" : ""} aria-label="다음날">›</button>
+          ${isToday ? "" : `<button class="chip-btn" id="q-today">오늘</button>`}
+          <a class="chip-btn" href="${url}" target="_blank" rel="noopener" aria-label="갓피아 새 창으로 열기">↗</a>
         </div>
-        <button class="tool" id="q-next" ${isToday ? "disabled" : ""} aria-label="다음날">›</button>
-        <a class="tool labeled push" href="${url}" target="_blank" rel="noopener">↗<span>새 창</span></a>
       </div>
       <div class="rd-clip"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe></div>
-      <div class="rd-bar rd-bottom">
-        <button class="tool labeled" data-open="note">📝<span>묵상 노트</span></button>
-        <span class="muted small qt-streak" id="q-streak"></span>
-        <button class="btn primary push" id="q-done"></button>
-      </div>
+      <div class="rd-bottom" id="q-bottom"></div>
     </div>
-    ${sheetShell([["note", "묵상 노트 · QT 기록"]])}`;
+    ${sheetShell()}`;
 
-  bindSheetChrome();
-  $("[data-open=note]").addEventListener("click", () => openSheet("note"));
+  bindSheetChrome(renderQtSheet);
 
   const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
   $("#q-prev").addEventListener("click", () => setDate(addDays(qtDate, -1)));
   $("#q-next").addEventListener("click", () => setDate(addDays(qtDate, 1)));
   $("#q-date").addEventListener("change", (e) => e.target.value && setDate(e.target.value));
+  $("#q-date").addEventListener("click", (e) => { try { e.target.showPicker(); } catch (err) { /* 지원 안 하면 기본 동작 */ } });
   const todayBtn = $("#q-today");
   if (todayBtn) todayBtn.addEventListener("click", () => setDate(todayStr()));
 
-  $("#q-done").addEventListener("click", () => {
-    const entry = state.qt[qtDate] || { done: false, note: "" };
-    saveQt({ done: !entry.done });
-    refreshQtBar();
-    if (!entry.done) showToast("오늘의 QT 완료! 🙏");
+  $("#q-bottom").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.id === "q-note") return openSheet("note", renderQtSheet);
+    if (b.id === "q-done") {
+      const wasDone = !!(state.qt[qtDate] && state.qt[qtDate].done);
+      saveQt({ done: !wasDone });
+      if (!wasDone) showToast("QT 완료! 오늘도 말씀과 함께 🙏");
+      refreshQtBar();
+    }
   });
 
   const body = $("#sheet-body");
@@ -649,12 +642,13 @@ function renderQt() {
   });
   let t;
   body.addEventListener("input", (e) => {
-    if (e.target.id !== "q-note") return;
+    if (e.target.id !== "q-note-text") return;
     clearTimeout(t);
     t = setTimeout(() => {
       saveQt({ note: e.target.value });
       const st = $("#q-status");
       if (st) st.textContent = "저장됨 ✓";
+      refreshQtBar();
     }, 400);
   });
 
@@ -669,31 +663,232 @@ function saveQt(patch) {
 }
 
 function refreshQtBar() {
-  const entry = state.qt[qtDate] || { done: false };
-  const doneDates = new Set(Object.keys(state.qt).filter((d) => state.qt[d].done));
-  const btn = $("#q-done");
-  btn.textContent = entry.done ? "✓ QT 완료 (취소)" : "QT 완료 체크";
-  btn.classList.toggle("ghost", entry.done);
-  btn.classList.toggle("primary", !entry.done);
-  $("#q-streak").textContent = `연속 ${streak(doneDates)}일 · 누적 ${doneDates.size}일`;
+  const entry = state.qt[qtDate] || { done: false, note: "" };
+  const s = streak(qtDoneDates());
+  $("#q-bottom").innerHTML = `
+    <button class="chip-btn tall" id="q-note">📝 묵상 노트${entry.note.trim() ? `<i class="dot-mark"></i>` : ""}</button>
+    <div class="rd-main">
+      ${entry.done
+        ? `<button class="btn soft big" id="q-done">✓ QT 완료 · 취소하기</button>`
+        : `<button class="btn primary big" id="q-done">🙏 QT 완료하기</button>`}
+    </div>
+    <span class="streak" title="QT 연속 일수">🔥 <b>${s}</b>일</span>`;
 }
 
 function renderQtSheet() {
+  setSheetTitle(null, "묵상 노트");
   const entry = state.qt[qtDate] || { done: false, note: "" };
-  const history = Object.keys(state.qt).filter((d) => state.qt[d].done || state.qt[d].note).sort().reverse().slice(0, 30);
+  const history = Object.keys(state.qt).filter((d) => d !== qtDate && (state.qt[d].done || state.qt[d].note)).sort().reverse().slice(0, 20);
   $("#sheet-body").innerHTML = `
-    <h2 class="sheet-sub">${qtDate} 묵상 노트</h2>
-    <textarea id="q-note" rows="7" placeholder="관찰 · 느낌 · 적용 · 기도를 적어 보세요.">${esc(entry.note)}</textarea>
-    <p class="muted small" id="q-status">입력하면 자동 저장됩니다.</p>
+    <section class="tool-card">
+      <h3 class="label">${prettyDate(qtDate)}</h3>
+      <textarea id="q-note-text" rows="8" placeholder="관찰 · 느낌 · 적용 · 기도를 적어 보세요.">${esc(entry.note)}</textarea>
+      <p class="muted small" id="q-status">입력하면 자동 저장돼요.</p>
+    </section>
     ${history.length ? `
-      <h2 class="sheet-sub">최근 QT 기록</h2>
-      <ul class="log">
+      <h3 class="label">지난 QT</h3>
+      <ul class="timeline">
         ${history.map((d) => `
           <li>
-            <div class="log-date"><a href="#qt" data-qt="${d}">${d}</a><span>${state.qt[d].done ? "완료" : "메모"}</span></div>
-            <div>${state.qt[d].note ? `<blockquote>${esc(state.qt[d].note)}</blockquote>` : `<span class="muted">메모 없음</span>`}</div>
+            <a href="#qt" data-qt="${d}" class="tl-date">${prettyDate(d)}</a>
+            ${state.qt[d].done ? `<span class="badge good">완료</span>` : ""}
+            ${state.qt[d].note ? `<p class="note">${esc(state.qt[d].note)}</p>` : ""}
           </li>`).join("")}
       </ul>` : ""}`;
+}
+
+/* ---------- 현황 (통독 + QT 한눈에) ---------- */
+
+function ring(pct) {
+  const r = 34, c = 2 * Math.PI * r;
+  return `<svg class="ring" viewBox="0 0 80 80" aria-hidden="true">
+    <circle cx="40" cy="40" r="${r}" class="ring-bg"/>
+    <circle cx="40" cy="40" r="${r}" class="ring-fg" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - pct / 100)}"/>
+  </svg>`;
+}
+
+function renderStats() {
+  const today = todayStr();
+  const byDate = readDates();
+  const qtDates = qtDoneDates();
+  const pr = state.plan ? progress() : null;
+  const perDay = state.plan ? state.plan.perDay : 5;
+  const thisMonth = today.slice(0, 7);
+  const qtMonth = [...qtDates].filter((d) => d.startsWith(thisMonth)).length;
+  const todayQt = !!(state.qt[today] && state.qt[today].done);
+
+  const readCard = pr ? `
+    <article class="card hero read">
+      <header><span class="tag">📖 통독</span><a class="link" href="#today">이어 읽기 ›</a></header>
+      <div class="hero-main">
+        <div class="ring-wrap">${ring(pr.pct)}<span><b>${pr.pct}</b>%</span></div>
+        <div>
+          <p class="hero-status">${pr.finished ? "통독을 마쳤어요 🎉" : pr.readToday >= perDay ? "오늘 분량 완료 ✓" : `오늘 <b>${pr.readToday}</b>/${perDay}장`}</p>
+          <p class="muted small">${esc(chapLabel(state.plan.startIdx))} → ${esc(chapLabel(state.plan.endIdx))}</p>
+          <p class="muted small">${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length}</p>
+        </div>
+      </div>
+      <ul class="mini">
+        <li><b>${streak(new Set(Object.keys(byDate)))}일</b><span>연속</span></li>
+        <li><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></li>
+        <li><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>마칠 예정</span></li>
+      </ul>
+    </article>` : `
+    <article class="card hero read empty">
+      <header><span class="tag">📖 통독</span></header>
+      <p class="hero-status">아직 통독 계획이 없어요</p>
+      <a class="btn primary small" href="#today">계획 만들기</a>
+    </article>`;
+
+  const qtCard = `
+    <article class="card hero qt">
+      <header><span class="tag">🙏 QT</span><a class="link" href="#qt">QT 하기 ›</a></header>
+      <div class="hero-main">
+        <div class="qt-today ${todayQt ? "done" : ""}">${todayQt
+          ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
+          : `<span>🙏</span>`}</div>
+        <div>
+          <p class="hero-status">${todayQt ? "오늘 QT 완료 ✓" : "오늘 QT를 아직 안 했어요"}</p>
+          <p class="muted small">${prettyDate(today)}</p>
+        </div>
+      </div>
+      <ul class="mini">
+        <li><b>${streak(qtDates)}일</b><span>연속</span></li>
+        <li><b>${qtMonth}일</b><span>이번 달</span></li>
+        <li><b>${qtDates.size}일</b><span>누적</span></li>
+      </ul>
+    </article>`;
+
+  // 달력
+  const [cy, cm] = calMonth.split("-").map(Number);
+  const firstDay = new Date(cy, cm - 1, 1);
+  const daysInMonth = new Date(cy, cm, 0).getDate();
+  let cells = "";
+  for (let i = 0; i < firstDay.getDay(); i++) cells += `<div class="cell blank"></div>`;
+  let monthRead = 0, monthQt = 0;
+  for (let d = 1; d <= daysInMonth; d++) {
+    const ds = `${calMonth}-${String(d).padStart(2, "0")}`;
+    const n = (byDate[ds] || []).length;
+    const q = qtDates.has(ds);
+    if (n) monthRead++;
+    if (q) monthQt++;
+    const readCls = n === 0 ? "" : n >= perDay ? "full" : "part";
+    cells += `<div class="cell ${ds === today ? "today" : ""} ${ds > today ? "future" : ""}" title="${ds}${n ? ` · 통독 ${n}장` : ""}${q ? " · QT 완료" : ""}">
+      <span class="d">${d}</span>
+      <span class="marks"><i class="m-read ${readCls}"></i><i class="m-qt ${q ? "on" : ""}"></i></span>
+    </div>`;
+  }
+
+  // 날짜별 기록 (통독 + 메모 + QT)
+  const logDates = [...new Set([...Object.keys(byDate), ...Object.keys(state.dayNotes), ...Object.keys(state.qt)])].sort().reverse().slice(0, 40);
+
+  app.innerHTML = `
+    <section class="hero-row">${readCard}${qtCard}</section>
+
+    <section class="card">
+      <div class="cal-head">
+        <button class="icon-btn" id="cal-prev" aria-label="이전 달">‹</button>
+        <h2>${cy}년 ${cm}월</h2>
+        <button class="icon-btn" id="cal-next" aria-label="다음 달" ${calMonth >= thisMonth ? "disabled" : ""}>›</button>
+      </div>
+      <div class="cal">
+        ${WEEK.map((w) => `<div class="wk">${w}</div>`).join("")}
+        ${cells}
+      </div>
+      <div class="cal-foot">
+        <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
+        <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>최근 기록</h2>
+      ${logDates.length === 0 ? `<p class="muted">아직 기록이 없어요. 오늘 첫 장을 읽거나 QT를 해 보세요.</p>` : `
+      <ul class="timeline">
+        ${logDates.map((d) => `
+          <li>
+            <span class="tl-date">${prettyDate(d)}</span>
+            ${byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : ""}
+            ${state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : ""}
+            ${state.qt[d] ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${state.qt[d].done ? "QT 완료" : "QT 메모"}</p>` : ""}
+            ${state.qt[d] && state.qt[d].note ? `<p class="note qt">${esc(state.qt[d].note)}</p>` : ""}
+          </li>`).join("")}
+      </ul>`}
+    </section>
+
+    ${pr ? `
+    <section class="card">
+      <details>
+        <summary><h2>권별 진행</h2></summary>
+        <div class="books">
+          ${(() => {
+            const inPlan = new Set(pr.seq);
+            return BOOKS.map((b) => {
+              const start = chapterIndex(b.code, 1);
+              let inP = 0, done = 0;
+              for (let i = start; i < start + b.chapters; i++) {
+                if (inPlan.has(i)) { inP++; if (state.read[i]) done++; }
+              }
+              if (!inP) return "";
+              const p = Math.round((done / inP) * 100);
+              return `<div class="book ${p === 100 ? "full" : ""}"><span>${b.name}</span><em>${done}/${inP}</em>
+                <div class="bar thin"><span style="width:${p}%"></span></div></div>`;
+            }).join("");
+          })()}
+        </div>
+      </details>
+    </section>` : ""}
+
+    <section class="card">
+      <h2>계획 · 데이터</h2>
+      ${state.plan ? `<p class="muted small">${esc(chapLabel(state.plan.startIdx))} → ${esc(chapLabel(state.plan.endIdx))} · 하루 ${state.plan.perDay}장 · ${prettyDate(state.plan.startDate)} 시작</p>` : ""}
+      <div class="inline wrap">
+        ${state.plan ? `<button class="btn ghost small" id="st-edit">계획 바꾸기</button>` : ""}
+        <button class="btn ghost small" id="st-export">백업 파일 받기</button>
+        <label class="btn ghost small">백업 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
+        <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
+      </div>
+      <p class="muted small">기록은 이 기기의 브라우저에만 저장돼요. 기기를 바꾸기 전에 백업 파일을 받아 두세요.</p>
+    </section>`;
+
+  const shiftMonth = (n) => {
+    const d = new Date(cy, cm - 1 + n, 1);
+    calMonth = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    renderStats();
+  };
+  $("#cal-prev").addEventListener("click", () => shiftMonth(-1));
+  $("#cal-next").addEventListener("click", () => shiftMonth(1));
+  const edit = $("#st-edit");
+  if (edit) edit.addEventListener("click", () => renderSetup(state.plan));
+  $("#st-export").addEventListener("click", () => {
+    const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `통독기록-${todayStr()}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  $("#st-import").addEventListener("change", async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      if (typeof data !== "object" || !("read" in data)) throw new Error();
+      if (!confirm("현재 기록을 백업 파일 내용으로 바꿀까요?")) return;
+      state = { ...defaultState(), ...data, plan: normalizePlan(data.plan) };
+      persist();
+      route();
+    } catch (err) {
+      alert("올바른 백업 파일이 아니에요.");
+    }
+  });
+  $("#st-reset").addEventListener("click", () => {
+    if (!confirm("통독 계획과 모든 기록(QT 노트 포함)을 삭제할까요? 되돌릴 수 없어요.")) return;
+    state = defaultState();
+    persist();
+    location.hash = "#today";
+    route();
+  });
 }
 
 route();

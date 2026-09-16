@@ -25,7 +25,7 @@ function daysBetween(a, b) {
 
 function defaultState() {
   return {
-    plan: null, // { startIdx, perDay, startDate, range: "rev" | "full" }
+    plan: null, // { startIdx, endIdx, perDay, startDate, pace: "perDay" | "date", targetDate }
     read: {}, // { 장일련번호: "YYYY-MM-DD" }
     dayNotes: {}, // { "YYYY-MM-DD": "통독 메모" }
     qt: {}, // { "YYYY-MM-DD": { done: bool, note: string } }
@@ -39,7 +39,7 @@ function loadState() {
     if (!raw) return defaultState();
     const s = JSON.parse(raw);
     const base = defaultState();
-    return { ...base, ...s, settings: { ...base.settings, ...(s.settings || {}) } };
+    return { ...base, ...s, plan: normalizePlan(s.plan), settings: { ...base.settings, ...(s.settings || {}) } };
   } catch (e) {
     return defaultState();
   }
@@ -53,12 +53,24 @@ function saveState(state) {
   }
 }
 
-// 계획에 포함되는 장 일련번호 순서
+// 예전 형식(range: "rev" | "full")으로 저장된 계획을 끝 장(endIdx) 형식으로 바꿈
+function normalizePlan(plan) {
+  if (!plan || plan.endIdx !== undefined) return plan;
+  const last = TOTAL_CHAPTERS - 1;
+  const endIdx = plan.range === "full" && plan.startIdx > 0 ? plan.startIdx - 1 : last;
+  const { range, ...rest } = plan;
+  return { ...rest, endIdx, pace: "perDay" };
+}
+
+// 계획에 포함되는 장 일련번호 순서. 끝 장이 시작 장보다 앞이면 요한계시록 다음 창세기로 이어 읽음
 function planSequence(plan) {
   const seq = [];
-  const end = TOTAL_CHAPTERS;
-  for (let i = plan.startIdx; i < end; i++) seq.push(i);
-  if (plan.range === "full") for (let i = 0; i < plan.startIdx; i++) seq.push(i);
+  if (plan.endIdx >= plan.startIdx) {
+    for (let i = plan.startIdx; i <= plan.endIdx; i++) seq.push(i);
+  } else {
+    for (let i = plan.startIdx; i < TOTAL_CHAPTERS; i++) seq.push(i);
+    for (let i = 0; i <= plan.endIdx; i++) seq.push(i);
+  }
   return seq;
 }
 
