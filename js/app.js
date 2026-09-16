@@ -625,14 +625,19 @@ function renderReaderSheet() {
       </div>
       <p class="muted small hint">갓피아 화면에서 구절을 <b>길게 눌러 선택 → 복사</b>한 뒤 위 버튼을 누르면, ${esc(c.book.name)} ${c.chap}장 몇 절인지 붙여서 메모에 넣어 드려요.</p>
     </section>
+    <section class="tool-card godpia-card">
+      <h3 class="label">갓피아 형광펜 · 메모 · 좋아요</h3>
+      <p class="muted small">이 기능은 <b>갓피아 계정</b>에 저장돼서, 앱 안의 갓피아 화면에서는 로그인이 되지 않아 눌러도 반응이 없어요.
+        아래 버튼으로 <b>갓피아를 새 창에서 열고 로그인</b>하면 같은 장에서 바로 쓸 수 있어요.</p>
+      <a class="btn soft small" target="_blank" rel="noopener" href="${readerUrl(currentChapter)}">✍️ ${esc(chapLabel(currentChapter))} 갓피아에서 열기 ↗</a>
+    </section>
     <section class="tool-card">
       <h3 class="label">바로가기</h3>
       <div class="inline wrap">
         <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
-        <a class="btn ghost small" target="_blank" rel="noopener"
-          href="${readerUrl(currentChapter)}">갓피아 새 창으로 ↗</a>
+        <a class="btn ghost small" href="#stats">📥 기록 내보내기</a>
       </div>
-      <p class="muted small">갓피아 로그인(메모·형광펜 등)은 새 창에서 이용해 주세요.</p>
+      <p class="muted small">이 메모는 이 기기에 저장되고, 현황 → 기록 내보내기에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>`;
 }
 
@@ -786,7 +791,8 @@ function renderQtSheet() {
         <button class="btn soft small" id="q-paste">📋 복사한 구절 붙여넣기</button>
         <span class="muted small" id="q-status">자동 저장돼요</span>
       </div>
-      <p class="muted small hint">QT 본문을 <b>길게 눌러 선택 → 복사</b>한 뒤 버튼을 누르면 인용으로 넣어 드려요.</p>
+      <p class="muted small hint">QT 본문을 <b>길게 눌러 선택 → 복사</b>한 뒤 버튼을 누르면 인용으로 넣어 드려요.
+        노트는 이 기기에 저장되고, <a href="#stats">현황 → 기록 내보내기</a>에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>
     ${history.length ? `
       <h3 class="label">지난 QT</h3>
@@ -944,6 +950,8 @@ function renderStats() {
       </details>
     </section>` : ""}
 
+    ${exportCardHtml()}
+
     <section class="card">
       <h2>계획 · 데이터</h2>
       ${state.plan ? `<p class="muted small">${esc(chapLabel(state.plan.startIdx))} → ${esc(chapLabel(state.plan.endIdx))} · 하루 ${state.plan.perDay}장 · ${prettyDate(state.plan.startDate)} 시작</p>` : ""}
@@ -953,10 +961,11 @@ function renderStats() {
         <label class="btn ghost small">백업 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
         <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
       </div>
-      <p class="muted small">기록은 이 기기의 브라우저에만 저장돼요. 기기를 바꾸기 전에 백업 파일을 받아 두세요.</p>
+      <p class="muted small">통독 메모·묵상 노트를 포함한 모든 기록은 <b>이 기기의 이 브라우저(또는 홈 화면 앱)</b>에만 저장돼요. 서버나 갓피아 계정으로는 보내지 않아요. 기기를 바꾸기 전에 백업 파일을 받아 두세요.</p>
     </section>`;
 
   bindReminderCard();
+  bindExportCard();
 
   const shiftMonth = (n) => {
     const d = new Date(cy, cm - 1 + n, 1);

@@ -268,6 +268,15 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .badge.warn { background: var(--warn-soft); color: var(--warn); border: 0; cursor: pointer; font-family: inherit; }
 .trow.late:not(.part) .t-st { color: var(--warn); }
 
+/* ---------- 기록 내보내기 ---------- */
+.export { display: grid; gap: 10px; }
+.export h2 { margin: 0; }
+.export-range { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.export-range select { width: auto; }
+.custom-range { display: inline-flex; gap: 6px; align-items: center; }
+.custom-range input { width: auto; }
+.godpia-card .btn { justify-self: start; }
+
 /* ---------- 리마인드 알림 ---------- */
 .remind { display: grid; gap: 10px; }
 .remind-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
