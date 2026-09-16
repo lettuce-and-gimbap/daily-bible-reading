@@ -67,6 +67,7 @@ button svg, a svg, .step-pill svg, .t-st svg, .qt-today svg {
   padding: 8px 16px; background: var(--surface); border-bottom: 1px solid var(--line);
 }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.03em; }
+.brand img { border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
 .tabs { display: flex; gap: 2px; background: var(--surface-2); padding: 3px; border-radius: 12px; }
 .tabs a {
   padding: 6px 16px; border-radius: 9px; text-decoration: none; color: var(--muted);
