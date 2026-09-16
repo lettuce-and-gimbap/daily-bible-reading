@@ -1,0 +1,9 @@
+{
+  "name": "매일 5장 통독",
+  "short_name": "5장 통독",
+  "start_url": "./index.html#today",
+  "display": "standalone",
+  "background_color": "#f6f3ec",
+  "theme_color": "#2f5d50",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
