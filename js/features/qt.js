@@ -23,12 +23,13 @@ function renderQt() {
           <a class="chip-btn" href="${url}" target="_blank" rel="noopener" aria-label="갓피아 새 창으로 열기">↗</a>
         </div>
       </div>
-      <div class="rd-clip"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe></div>
+      <div class="rd-clip"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${url}" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}</div>
       <div class="rd-bottom" id="q-bottom"></div>
     </div>
     ${sheetShell()}`;
 
   bindSheetChrome(renderQtSheet);
+  $("#paste-fab").addEventListener("click", () => quickPasteVerses("qt"));
 
   const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
   $("#q-prev").addEventListener("click", () => setDate(addDays(qtDate, -1)));

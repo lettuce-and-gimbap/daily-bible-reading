@@ -52,11 +52,24 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && sheetTab) closeSheet();
 });
 
-function showToast(msg) {
+// action을 주면 알림 옆에 버튼(예: "메모 보기")이 붙고, 누를 시간을 주려고 조금 더 오래 보여 줌
+function showToast(msg, action) {
   const t = $("#toast");
   if (!t) return;
   t.textContent = msg;
+  if (action) {
+    const b = document.createElement("button");
+    b.className = "toast-action";
+    b.textContent = action.label;
+    b.addEventListener("click", () => { t.hidden = true; action.onClick(); });
+    t.append(b);
+  }
   t.hidden = false;
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { t.hidden = true; }, 2600);
+  toastTimer = setTimeout(() => { t.hidden = true; }, action ? 4500 : 2600);
+}
+
+// 읽기 화면(갓피아 위)에 떠 있는 붙여넣기 버튼
+function pasteFabHtml() {
+  return `<button class="paste-fab" id="paste-fab" aria-label="복사한 구절을 메모에 붙여넣기">📋 붙여넣기</button>`;
 }

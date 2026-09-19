@@ -23,12 +23,13 @@ function buildReader() {
         </div>
         <div class="steps" id="r-steps"></div>
       </div>
-      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe></div>
+      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}</div>
       <div class="rd-bottom" id="r-bottom"></div>
     </div>
     ${sheetShell()}`;
 
   bindSheetChrome(renderReaderSheet);
+  $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
   app.querySelectorAll("[data-open]").forEach((b) =>
     b.addEventListener("click", () => openSheet(b.dataset.open, renderReaderSheet)));
 
