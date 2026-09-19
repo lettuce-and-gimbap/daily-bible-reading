@@ -142,7 +142,7 @@ function reminderCardHtml() {
   } else if (status === "denied") {
     body = `<p class="muted small">알림이 차단돼 있어요. 휴대폰 <b>설정 → 알림</b>(안드로이드는 브라우저 사이트 설정)에서 이 앱의 알림을 허용한 뒤 다시 열어 주세요.</p>`;
   } else if (status === "no-server") {
-    body = `<p class="muted small">알림 서버가 아직 연결되지 않았어요. 저장소의 <b>worker/README.md</b> 순서대로 서버를 배포하고 <b>js/config.js</b>에 주소를 넣으면 켤 수 있어요.</p>`;
+    body = `<p class="muted small">알림 서버가 아직 연결되지 않았어요. 저장소의 <b>worker/README.md</b> 순서대로 서버를 배포하고 <b>js/core/config.js</b>에 주소를 넣으면 켤 수 있어요.</p>`;
   } else {
     body = `<p class="muted small">이 브라우저는 웹 알림을 지원하지 않아요. 크롬(안드로이드)이나 홈 화면에 추가한 Safari 앱(아이폰)에서 열어 주세요.</p>`;
   }

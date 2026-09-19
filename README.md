@@ -31,7 +31,7 @@
 - 오늘 통독을 마치지 않았으면 **18시 · 21시 · 23시**에 푸시 알림이 옵니다. 다 읽으면 그날은 오지 않습니다.
 - 문구는 시간대마다 8가지씩, 개혁주의·장로교 맥락(소요리문답, 칼뱅, 도르트 총회, 성경 인물·구절)으로 재치 있게 바뀝니다. `sw.js`의 `MESSAGES`에서 고칠 수 있습니다.
 - 휴대폰 홈 화면에 추가한 뒤 **현황 → 🔔 저녁 리마인드 → 알림 켜기**. 아이폰은 iOS 16.4 이상, 홈 화면 앱에서만 됩니다.
-- 정해진 시간에 보내려면 작은 알림 서버가 필요합니다. [worker/README.md](worker/README.md) 순서대로 Cloudflare에 배포하고 `js/config.js`에 주소를 넣으세요.
+- 정해진 시간에 보내려면 작은 알림 서버가 필요합니다. [worker/README.md](worker/README.md) 순서대로 Cloudflare에 배포하고 `js/core/config.js`에 주소를 넣으세요.
 
 ### 구절 붙여넣기
 갓피아 화면에서 구절을 길게 눌러 선택 → 복사한 뒤, 통독 메모나 QT 묵상 노트의 **📋 복사한 구절 붙여넣기**를 누르면 아래 양식으로 들어갑니다. 첫 줄은 `권 장:절`(여러 절이면 `18:10-11`), 다음 줄부터 `절 번호 + 공백 한 칸 + 구절`입니다. 권·장은 지금 보고 있는 장 기준이고, QT 노트에는 첫 줄 없이 구절만 들어갑니다.
@@ -39,6 +39,18 @@
 ```
 민수기 18:10
 10 지극히 거룩하게 여김으로 먹으라 이는 네게 성물인즉 남자들이 다 먹을지니라
+```
+
+**두권 보기에서 여러 절을 복사한 경우**: 갓피아는 절마다 두 역본을 번갈아 보여 주지만(1 개역 → 1 새번역 → 2 개역 …), 붙여넣을 때는 **역본별로 절을 이어서** 씁니다. 같은 절 번호가 n번째로 나온 줄을 n번째 역본으로 봅니다.
+
+```
+민수기 18:1-3
+1 (개역개정 1절)
+2 (개역개정 2절)
+3 (개역개정 3절)
+1 (새번역 1절)
+2 (새번역 2절)
+3 (새번역 3절)
 ```
 
 ### 기록 내보내기
@@ -61,7 +73,7 @@
 | 날짜별 QT | `https://www.godpia.com/qt/qt.asp?D=2026-09-16` |
 
 역본 코드: `gae` 개역개정4판 · `niv` NIV · `han` 개역한글 · `hyun` 현대인의성경 · `saenew` 새번역 · `hebrew` 히브리어(구약) · `greek` 헬라어(신약)
-권 코드는 [js/bible.js](js/bible.js)에 있습니다.
+권 코드는 [js/core/bible.js](js/core/bible.js)에 있습니다.
 
 갓피아 화면은 로그인 버튼이 이 앱 탭 전체를 이동시키지 않도록 `sandbox`로 띄웁니다. 갓피아 로그인이 필요한 기능은 "새 창으로 열기"로 이용하세요.
 
@@ -89,17 +101,53 @@ python -m http.server 8000
 브라우저에서 http://localhost:8000 을 엽니다.
 
 ## 파일 구조
+기능(화면)별로 나눠 두었습니다. 고치고 싶은 기능이 있으면 아래 표에서 해당 파일만 열면 됩니다.
+
 ```
-index.html            화면 틀과 메뉴
-qt.html               갓피아 오늘의 QT 바로가기
-css/style.css         스타일 (라이트/다크 모드)
-js/bible.js           66권 데이터, 갓피아 주소 생성
-js/store.js           localStorage 저장, 계획 계산
-js/config.js          알림 서버 주소
-js/push.js            리마인드 알림 켜기/끄기, 완료 여부 동기화
-js/app.js             화면(통독 / QT / 현황)
-sw.js                 서비스 워커: 푸시를 받아 시간대별 문구로 알림
-icons/                홈 화면·알림 아이콘
-manifest.webmanifest  홈 화면 추가용
-worker/               리마인드 알림 서버 (Cloudflare Worker)
+index.html              화면 틀·메뉴, 스크립트 불러오는 순서
+qt.html                 갓피아 오늘의 QT 바로가기
+sw.js                   서비스 워커: 푸시를 받아 시간대별 문구로 알림 (알림 문구 MESSAGES)
+manifest.webmanifest    홈 화면 추가용 (앱 이름·아이콘)
+icons/                  홈 화면·알림 아이콘
+
+css/
+  base.css              공통: 색(라이트/다크), 글꼴, 상단 메뉴, 카드, 버튼
+  setup.css             통독 계획 만들기 화면
+  reader.css            통독·QT 읽기 화면(갓피아 꽉 채우기), 아래/옆 패널
+  stats.css             현황 화면, 리마인드 알림 카드, 기록 내보내기 카드
+
+js/
+  core/                 화면과 상관없는 바탕
+    bible.js            66권·장 수, 역본 목록, 갓피아 주소 만들기
+    store.js            기록 저장(localStorage), 통독 계획 계산
+    config.js           알림 서버 주소
+  shared/               여러 화면이 함께 쓰는 것
+    state.js            앱 상태, 날짜·이름 도우미, 진행률·연속 일수 계산
+    godpia.js           갓피아 화면 띄우기 설정(로그인 이탈 방지), 읽기 주소
+    ui.js               아래/옆에서 열리는 패널, 토스트 알림
+  features/             기능별 화면
+    setup.js            통독 계획 만들기·바꾸기
+    reader.js           통독 화면: 장 이동, 읽음 체크, 통독표, 보기 설정, 메모·도구
+    verses.js           복사한 구절 붙여넣기 양식
+    qt.js               QT 화면: 날짜 이동, QT 완료, 묵상 노트
+    stats.js            현황 화면: 요약 카드, 달력, 최근 기록, 권별 진행, 백업
+    export.js           기록 내보내기 (엑셀·텍스트)
+    reminder.js         저녁 리마인드 알림 켜기/끄기, 완료 여부 서버 동기화
+  main.js               시작점: #today / #qt / #stats 에 맞는 화면 그리기
+
+worker/                 리마인드 알림 서버 (Cloudflare Worker)
 ```
+
+| 이런 걸 바꾸고 싶다면 | 열어 볼 파일 |
+| --- | --- |
+| 역본 목록 | `js/core/bible.js` |
+| 통독 화면의 버튼·동작 | `js/features/reader.js`, `css/reader.css` |
+| 구절 붙여넣기 양식 | `js/features/verses.js` |
+| QT 화면 | `js/features/qt.js` |
+| 현황·달력 | `js/features/stats.js`, `css/stats.css` |
+| 엑셀·텍스트 내보내기 | `js/features/export.js` |
+| 알림 시간 | `worker/wrangler.toml` |
+| 알림 문구 | `sw.js` |
+| 색·글꼴 | `css/base.css` |
+
+스크립트는 빌드 도구 없이 `index.html`에서 순서대로 불러옵니다(core → shared → features → main). 새 파일을 추가하면 `index.html`의 목록에도 넣어 주세요.

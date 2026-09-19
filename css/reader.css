@@ -1,0 +1,124 @@
+/* 통독 · QT 읽기 화면(갓피아 꽉 채우기, 위아래 도구 막대)과 패널 */
+
+/* ---------- 읽기 모드 (통독 · QT) ---------- */
+body.full { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+body.full main { flex: 1; min-height: 0; width: 100%; max-width: none; margin: 0; padding: 0; display: block; }
+body.full .footer { display: none; }
+body.full .topbar { position: static; padding: 6px 12px; }
+.rd { height: 100%; display: flex; flex-direction: column; }
+.rd-top { background: var(--surface); border-bottom: 1px solid var(--line); padding: 8px 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.rd-row { display: flex; align-items: center; gap: 8px; }
+.rd-title { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.rd-title small { font-size: .74rem; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 5px; white-space: nowrap; overflow: hidden; }
+.rd-title .dim { font-weight: 400; }
+.rd-title b { font-size: 1.02rem; font-weight: 700; letter-spacing: -0.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#r-view span { max-width: 130px; overflow: hidden; text-overflow: ellipsis; }
+
+.steps { display: flex; align-items: center; gap: 10px; }
+.steps-track { flex: 1; min-width: 0; display: flex; justify-content: center; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.steps-track::-webkit-scrollbar { display: none; }
+.step-pill {
+  flex: 1 0 auto; min-width: 44px; max-width: 160px; height: 34px; padding: 0 10px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--ink);
+  font-weight: 700; font-size: .92rem; font-variant-numeric: tabular-nums; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 3px;
+}
+.step-pill .bk { font-size: .72rem; font-weight: 600; color: var(--muted); margin-right: 2px; }
+.step-pill.done { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+.step-pill.done .bk { color: inherit; }
+.step-pill.active { border: 2px solid var(--accent); background: var(--surface); color: var(--accent); }
+.step-pill.done.active { background: var(--accent-soft); }
+.steps-count { flex: none; font-size: .84rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.steps-count b { color: var(--accent); font-size: 1rem; }
+
+/* 갓피아 웹의 상단 로고 막대(고정, 스크롤 후 60px)를 잘라내 본문이 위까지 차도록 함 */
+.rd-clip { --crop: 60px; flex: 1; min-height: 0; position: relative; overflow: hidden; background: #fff; }
+.rd-frame { position: absolute; left: 0; top: calc(-1 * var(--crop)); width: 100%; height: calc(100% + var(--crop)); border: 0; display: block; }
+
+.rd-bottom {
+  display: flex; align-items: center; gap: 8px; background: var(--surface); border-top: 1px solid var(--line);
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+}
+.rd-bottom .icon-btn { width: 46px; height: 46px; }
+.rd-main { flex: 1; min-width: 0; display: flex; gap: 4px; max-width: 520px; margin: 0 auto; }
+.streak { flex: none; font-size: .86rem; color: var(--qt); background: var(--qt-soft); padding: 6px 10px; border-radius: 99px; white-space: nowrap; }
+.dot-mark { position: absolute; top: 8px; right: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--qt); }
+
+.rd.qt .btn.primary { background: var(--qt); color: #fff; }
+.rd.qt .btn.soft { background: var(--qt-soft); color: var(--qt); }
+.qt-title { position: relative; cursor: pointer; text-align: center; }
+.qt-title small { justify-content: center; }
+.qt-title b { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
+.qt-title b svg { color: var(--muted); width: .95em; height: .95em; }
+.qt-title input { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; padding: 0; border: 0; }
+
+/* ---------- 패널 ---------- */
+.sheet-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / .32); z-index: 30; }
+.sheet {
+  position: fixed; z-index: 31; top: 0; right: 0; bottom: 0; width: min(420px, 100%);
+  background: var(--bg); border-left: 1px solid var(--line);
+  display: flex; flex-direction: column; box-shadow: -10px 0 40px rgb(0 0 0 / .18);
+}
+.sheet-grip { display: none; }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 14px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.sheet-head h2 { margin: 0; }
+.sheet-body { flex: 1; overflow-y: auto; padding: 14px; overscroll-behavior: contain; display: grid; gap: 12px; align-content: start; }
+.label { font-size: .8rem; font-weight: 700; color: var(--muted); margin: 4px 0 0; letter-spacing: 0; }
+.opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.opt {
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 12px;
+  padding: 11px 10px; font-weight: 600; cursor: pointer; text-align: center;
+}
+.opt.big { display: grid; gap: 2px; padding: 14px 10px; }
+.opt.big span { font-size: .76rem; color: var(--muted); font-weight: 500; }
+.opt.on { border: 2px solid var(--accent); background: var(--accent-soft); color: var(--accent); }
+.opt:disabled { opacity: .35; cursor: default; }
+.tool-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 8px; }
+.tool-card .label { margin: 0; }
+.table-sum { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; display: grid; gap: 8px; }
+.table-sum p { margin: 0; font-size: .86rem; color: var(--muted); }
+.table-sum b { color: var(--accent); }
+.ttable { display: grid; gap: 6px; }
+.trow {
+  display: grid; grid-template-columns: 58px 1fr 40px; gap: 8px; align-items: center;
+  width: 100%; text-align: left; padding: 10px 12px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.t-day { font-weight: 700; font-size: .84rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.t-range { font-weight: 600; font-size: .92rem; min-width: 0; }
+.t-range small { display: block; font-weight: 400; font-size: .74rem; color: var(--muted); }
+.t-st { justify-self: end; font-size: .78rem; font-weight: 700; color: var(--accent); display: flex; }
+.t-st svg { width: 20px; height: 20px; }
+.trow.done { background: var(--accent-soft); border-color: transparent; }
+.trow.done .t-range { color: var(--muted); }
+.trow.current:not(.done) .t-st { color: var(--qt); }
+.trow.current:not(.done) { border-color: var(--qt); }
+.trow.viewing { box-shadow: inset 0 0 0 2px var(--accent); }
+
+.toast {
+  position: fixed; z-index: 40; left: 50%; bottom: 90px; transform: translateX(-50%);
+  background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 99px;
+  font-weight: 600; font-size: .9rem; box-shadow: 0 6px 24px rgb(0 0 0 / .22); white-space: nowrap;
+}
+
+.inline.between { justify-content: space-between; }
+.hint { margin: 0; line-height: 1.5; }
+.badge.warn { background: var(--warn-soft); color: var(--warn); border: 0; cursor: pointer; font-family: inherit; }
+.trow.late:not(.part) .t-st { color: var(--warn); }
+
+/* 갓피아 모바일 레이아웃: 로고 막대(60px) 아래에 역본·권·장 버튼 줄(99px)이 sticky로 따라다님 → 함께 잘라냄 */
+@media (max-width: 767px) {
+  .rd.reading .rd-clip { --crop: 159px; }
+}
+
+@media (max-width: 560px) {
+  .rd-top { padding: 6px 8px; gap: 6px; }
+  .rd-row { gap: 6px; }
+  .chip-btn { padding: 0 10px; font-size: .82rem; height: 36px; }
+  #r-view span { max-width: 92px; }
+  .step-pill { min-width: 40px; height: 32px; padding: 0 6px; font-size: .88rem; }
+  .rd-bottom { padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); gap: 6px; }
+  .rd-bottom .icon-btn { width: 42px; height: 42px; }
+  .sheet { top: auto; left: 0; width: 100%; height: 84dvh; border-left: 0; border-radius: 20px 20px 0 0; overflow: hidden; }
+  .sheet-grip { display: block; width: 40px; height: 4px; border-radius: 4px; background: var(--line); position: absolute; top: 6px; left: 50%; transform: translateX(-50%); }
+}

@@ -37,7 +37,7 @@ Cloudflare 무료 플랜으로 충분합니다.
    ```bash
    npx wrangler deploy
    ```
-7. 저장소 루트의 `js/config.js`에 그 주소를 넣고 커밋·푸시합니다.
+7. 저장소 루트의 `js/core/config.js`에 그 주소를 넣고 커밋·푸시합니다.
    ```js
    const PUSH_SERVER = "https://daily-bible-reminder.<아이디>.workers.dev";
    ```
