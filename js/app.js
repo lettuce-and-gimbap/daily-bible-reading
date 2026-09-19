@@ -643,23 +643,35 @@ function renderReaderSheet() {
 
 /* ---------- 구절 붙여넣기 ---------- */
 
-// 갓피아에서 복사한 글을 인용 형태로 메모에 넣음. 줄 앞의 숫자를 절 번호로 보고 "민수기 8:2-3"처럼 출처를 붙임
+// 갓피아에서 복사한 구절을 메모 양식으로 바꿈
+//   민수기 18:10          ← 첫 줄: 권 장:절 (여러 절이면 18:10-11)
+//   10 지극히 거룩하게…   ← 다음 줄부터: 절 번호 + 공백 한 칸 + 구절
+// 복사할 때 절 번호와 본문 사이가 붙거나(10지극히), 여러 칸·탭이거나, 줄이 나뉘어도(10↵지극히) 한 칸으로 맞춤
 function formatVerses(text, chapter) {
-  const lines = text.replace(/\r/g, "").split("\n").map((l) => l.trim()).filter(Boolean);
+  const raw = text.replace(/\r/g, "").replace(/ /g, " ").split("\n").map((l) => l.trim()).filter(Boolean);
+  const lines = [];
+  for (let i = 0; i < raw.length; i++) {
+    // 절 번호만 있는 줄은 다음 줄 본문과 합침
+    if (/^\d{1,3}$/.test(raw[i]) && raw[i + 1] && !/^\d/.test(raw[i + 1])) {
+      lines.push(`${raw[i]} ${raw[i + 1]}`);
+      i++;
+    } else {
+      lines.push(raw[i]);
+    }
+  }
   const verses = [];
   const body = lines.map((l) => {
-    const m = l.match(/^(\d{1,3})\s+(.+)$/);
-    if (m) verses.push(Number(m[1]));
-    return l;
-  }).join("\n");
-  let ref = "";
-  if (chapter) {
-    const lo = Math.min(...verses), hi = Math.max(...verses);
-    ref = verses.length
-      ? `${chapter.book.name} ${chapter.chap}:${lo === hi ? lo : `${lo}-${hi}`}`
-      : `${chapter.book.name} ${chapter.chap}장`;
-  }
-  return `「${body}」${ref ? ` (${ref})` : ""}`;
+    const m = l.match(/^(\d{1,3})\s*(?=[^\d\s])(.*)$/);
+    if (!m) return l.replace(/\s+/g, " ");
+    verses.push(Number(m[1]));
+    return `${m[1]} ${m[2].trim().replace(/\s+/g, " ")}`;
+  });
+  if (!chapter) return body.join("\n");
+  const lo = Math.min(...verses), hi = Math.max(...verses);
+  const ref = verses.length
+    ? `${chapter.book.name} ${chapter.chap}:${lo === hi ? lo : `${lo}-${hi}`}`
+    : `${chapter.book.name} ${chapter.chap}장`;
+  return `${ref}\n${body.join("\n")}`;
 }
 
 async function pasteVerses(textarea, chapter) {
