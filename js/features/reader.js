@@ -90,8 +90,8 @@ function buildReader() {
       currentChapter = null;
       if (sheetTab === "table") closeSheet();
       reload = true;
-    } else if (t.id === "d-paste") {
-      pasteVerses($("#d-note"), CHAPTERS[currentChapter]);
+    } else if (t.id === "d-copy-note") {
+      copyText($("#d-note").value, "오늘의 통독 메모를 복사했어요");
       return;
     } else if (t.dataset.mode) {
       state.settings.mode = t.dataset.mode;
@@ -115,12 +115,7 @@ function buildReader() {
       showToast(`${targets.length}장을 읽음으로 체크했어요.`);
     } else if (t.id === "d-copy") {
       const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(progress().days[viewingDay])}`;
-      try {
-        await navigator.clipboard.writeText(text);
-        showToast("복사했어요. 투두메이트에 붙여넣어 보세요.");
-      } catch (err) {
-        prompt("아래 내용을 복사하세요", text);
-      }
+      copyText(text, "복사했어요. 투두메이트에 붙여넣어 보세요.");
       return;
     } else {
       return;
@@ -276,10 +271,10 @@ function renderReaderSheet() {
       <h3 class="label">오늘의 통독 메모</h3>
       <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
       <div class="inline between">
-        <button class="btn soft small" id="d-paste">📋 복사한 구절 붙여넣기</button>
+        <button class="btn soft small" id="d-copy-note">📋 메모 전체 복사</button>
         <span class="muted small" id="d-note-status">자동 저장돼요</span>
       </div>
-      <p class="muted small hint">갓피아 화면에서 구절을 <b>길게 눌러 선택 → 복사</b>한 뒤 위 버튼을 누르면, ${esc(c.book.name)} ${c.chap}장 몇 절인지 붙여서 메모에 넣어 드려요.</p>
+      <p class="muted small hint">갓피아 화면 위의 <b>📋 붙여넣기</b> 버튼으로 구절을 바로 넣을 수 있어요. 다 쓰면 여기서 <b>메모 전체 복사</b>로 다른 곳에 옮겨 보세요.</p>
     </section>
     <section class="tool-card godpia-card">
       <h3 class="label">갓피아 형광펜 · 메모 · 좋아요</h3>

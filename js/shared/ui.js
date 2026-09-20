@@ -73,3 +73,17 @@ function showToast(msg, action) {
 function pasteFabHtml() {
   return `<button class="paste-fab" id="paste-fab" aria-label="복사한 구절을 메모에 붙여넣기">📋 붙여넣기</button>`;
 }
+
+// 클립보드로 복사. 실패(권한 없음 등)하면 직접 복사할 수 있게 내용을 보여 줌
+async function copyText(text, successMsg) {
+  if (!text.trim()) {
+    showToast("복사할 내용이 없어요");
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(text);
+    showToast(successMsg);
+  } catch (e) {
+    prompt("아래 내용을 복사하세요", text);
+  }
+}

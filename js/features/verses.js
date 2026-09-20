@@ -87,27 +87,6 @@ function appendQuote(note, quote) {
   return (base ? `${base}\n\n` : "") + quote + "\n";
 }
 
-// 메모 패널 안의 "복사한 구절 붙여넣기" 버튼: 커서 위치에 넣음
-async function pasteVerses(textarea, chapter) {
-  if (!textarea) return;
-  const text = await readClipboardText();
-  if (!text.trim()) {
-    textarea.focus();
-    showToast("구절을 길게 눌러 복사한 뒤 다시 눌러 주세요");
-    return;
-  }
-  const quote = formatVerses(text, chapter, chapter ? state.settings.mode === "two" : false);
-  const v = textarea.value;
-  const at = textarea.selectionStart ?? v.length;
-  const before = v.slice(0, at), after = v.slice(at);
-  const insert = (before && !before.endsWith("\n") ? "\n" : "") + quote + "\n";
-  textarea.value = before + insert + after;
-  const pos = (before + insert).length;
-  textarea.setSelectionRange(pos, pos);
-  textarea.dispatchEvent(new Event("input", { bubbles: true }));
-  showToast("구절을 붙여 넣었어요");
-}
-
 // 읽기 화면에 떠 있는 "📋 붙여넣기" 버튼: 패널을 열지 않고 바로 오늘 메모 끝에 붙임
 // (갓피아 화면은 다른 사이트라 복사한 순간을 앱이 알 수 없어서, 버튼을 항상 띄워 둔다)
 async function quickPasteVerses(target) {
