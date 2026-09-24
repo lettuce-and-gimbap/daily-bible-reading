@@ -269,7 +269,7 @@ function renderReaderSheet() {
     </section>
     <section class="tool-card">
       <h3 class="label">오늘의 통독 메모</h3>
-      <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(state.dayNotes[todayStr()] || "")}</textarea>
+      <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(dayNoteBase(state.dayNotes[todayStr()]))}</textarea>
       <div class="inline between">
         <button class="btn soft small" id="d-copy-note">📋 메모 전체 복사</button>
         <span class="muted small" id="d-note-status">자동 저장돼요</span>
