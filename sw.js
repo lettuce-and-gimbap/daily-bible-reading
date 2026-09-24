@@ -84,7 +84,9 @@ async function buildMessage() {
 
   const portion = fresh && snap.portion ? snap.portion : "오늘 분량";
   const fill = (s) => s.replace(/\{portion\}/g, portion).replace(/\{streak\}/g, String(streak));
-  return { title: fill(pool[idx][0]), body: fill(pool[idx][1]) };
+  // 메시지마다 양(🐑) 그림: icons/notify/<시간대>-<원래 순서>.jpg (안드로이드·PC 크롬/엣지에서 크게 보임, 아이폰은 표시 안 함)
+  const image = `icons/notify/${tier}-${MESSAGES[tier].indexOf(pool[idx])}.jpg`;
+  return { title: fill(pool[idx][0]), body: fill(pool[idx][1]), image };
 }
 
 self.addEventListener("install", () => self.skipWaiting());
@@ -92,9 +94,10 @@ self.addEventListener("activate", (event) => event.waitUntil(self.clients.claim(
 
 self.addEventListener("push", (event) => {
   event.waitUntil((async () => {
-    const { title, body } = await buildMessage();
+    const { title, body, image } = await buildMessage();
     await self.registration.showNotification(title, {
       body,
+      image,
       icon: "icons/icon-192.png",
       badge: "icons/badge-96.png",
       tag: "daily-reading",
