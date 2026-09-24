@@ -26,6 +26,7 @@ export default {
 
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
+      if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (request.method !== "POST") return json({ error: "not found" }, 404);
       const body = await request.json();
 
@@ -68,6 +69,31 @@ export default {
     ctx.waitUntil(remindAll(env));
   },
 };
+
+// 갓피아 한 장 본문(HTML)을 대신 받아 줌
+// 갓피아는 다른 사이트에서 읽는 걸 막아 두어서(CORS 헤더 없음) 앱이 직접 못 가져옴.
+// 앱은 이걸로 복사한 조각이 어느 절인지 찾아, 일부만 복사해도 온전한 절로 붙여넣는다.
+const BIBLE_VERSIONS = ["gae", "niv", "han", "hyun", "saenew", "hebrew", "greek"];
+
+async function bibleChapter(q, cors, json) {
+  const ver = q.get("ver") || "";
+  const ver2 = q.get("ver2") || "";
+  const vol = q.get("vol") || "";
+  const chap = Number(q.get("chap"));
+  if (!BIBLE_VERSIONS.includes(ver) || (ver2 && !BIBLE_VERSIONS.includes(ver2))
+    || !/^[0-9a-z]{2,6}$/.test(vol) || !Number.isInteger(chap) || chap < 1 || chap > 150) {
+    return json({ error: "잘못된 요청" }, 400);
+  }
+  const p = new URLSearchParams({ ver, vol, chap: String(chap) });
+  if (ver2) p.set("ver2", ver2);
+  const res = await fetch("https://www.godpia.com/read/reading_body.asp?" + p, {
+    cf: { cacheTtl: 604800, cacheEverything: true },
+  });
+  if (!res.ok) return json({ error: `갓피아 응답 ${res.status}` }, 502);
+  return new Response(await res.text(), {
+    headers: { ...cors, "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=86400" },
+  });
+}
 
 export async function remindAll(env, now = new Date()) {
   const today = kstDate(now);

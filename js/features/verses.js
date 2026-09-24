@@ -82,6 +82,84 @@ function formatVerses(text, chapter, twoVersions = false) {
   return `${ref}\n${body.join("\n")}`;
 }
 
+// ── 일부만 복사해도 온전한 절로 ──
+// 갓피아 장 본문을 서버(worker/의 /bible)로 받아, 복사한 글이 본문의 어디에 있는지 찾고
+// 걸친 절을 통째로 돌려줌. 예) " 행하지 아니하리라↵13그러면 누구나 다 이 일에 관" → 13절(개역) + 13절(새번역) 전체
+// 서버가 없거나, 못 찾거나, 여러 곳에 똑같이 나오면 null → 복사한 그대로 붙임
+const chapterVerseCache = {};
+
+async function chapterVerses(idx) {
+  const qs = readerUrl(idx).split("?")[1]; // 지금 보기 설정(역본·두권)과 같은 본문
+  if (!chapterVerseCache[qs]) {
+    chapterVerseCache[qs] = fetch(`${PUSH_SERVER}/bible?${qs}`)
+      .then((res) => (res.ok ? res.text() : Promise.reject(new Error(`HTTP ${res.status}`))))
+      .then((html) => [...new DOMParser().parseFromString(html, "text/html").querySelectorAll("li[datasec]")]
+        .map((li) => ({
+          label: ((li.querySelector(".bible-read-no") || {}).textContent || "").trim(),
+          text: ((li.querySelector(".bible-read-cont") || {}).textContent || "").replace(/\s+/g, " ").trim(),
+        }))
+        .filter((v) => /^\d/.test(v.label) && v.text))
+      .catch((e) => { delete chapterVerseCache[qs]; throw e; });
+  }
+  return chapterVerseCache[qs];
+}
+
+// 본문 순서(두권 보기면 개역 1 → 새번역 1 → 개역 2 …) 그대로 이어 붙인 글에서 복사한 범위를 찾아 걸친 절들을 돌려줌
+// 공백·줄바꿈은 복사 방식마다 달라서 모두 빼고 비교함
+function findCopiedVerses(verses, text) {
+  const squash = (s) => s.replace(/\s+/g, "");
+  let stream = "";
+  const starts = [], ends = [];
+  verses.forEach((v) => {
+    starts.push(stream.length);
+    stream += squash(v.label + v.text);
+    ends.push(stream.length);
+  });
+  const lines = text.replace(/ /g, " ").split("\n").map((l) => l.trim()).filter(Boolean)
+    .filter((l) => !/^\S+ \d{1,3}장$/.test(l));
+  const whole = squash(lines.join(""));
+  if (!whole) return null;
+
+  let from = stream.indexOf(whole), to;
+  if (from >= 0) {
+    if (stream.indexOf(whole, from + 1) >= 0) return null; // 같은 글이 여러 곳 → 어느 절인지 모름
+    to = from + whole.length;
+  } else {
+    // 통째로 안 맞으면(다른 글자가 섞여 복사된 경우) 줄마다 차례로 찾아 처음~끝을 잡음
+    let cursor = 0;
+    lines.map(squash).filter((q) => q.length >= 4).forEach((q) => {
+      const i = stream.indexOf(q, cursor);
+      if (i < 0) return;
+      if (from < 0) from = i;
+      to = cursor = i + q.length;
+    });
+    if (from < 0) return null;
+  }
+  const first = ends.findIndex((e) => e > from);
+  let last = ends.findIndex((e) => e >= to);
+  // 끝에 다음 절 번호만 딸려 왔으면("…아니하리라↵14") 그 절은 뺌
+  if (last > first && to - starts[last] <= squash(verses[last].label).length) last--;
+  return verses.slice(first, last + 1);
+}
+
+// 지금 장에서 먼저 찾고, 갓피아 안에서 옆으로 넘겨 읽는 중일 수 있어 앞뒤 장도 찾아봄
+async function expandToFullVerses(text) {
+  if (!PUSH_SERVER || currentChapter === null) return null;
+  for (const d of [0, 1, -1, 2, -2]) {
+    const idx = currentChapter + d;
+    if (idx < 0 || idx >= TOTAL_CHAPTERS) continue;
+    let verses;
+    try {
+      verses = await chapterVerses(idx);
+    } catch (e) {
+      return null; // 서버·네트워크 문제면 더 찾지 않음
+    }
+    const hit = findCopiedVerses(verses, text);
+    if (hit) return { idx, text: hit.map((v) => `${v.label} ${v.text}`).join("\n") };
+  }
+  return null;
+}
+
 async function readClipboardText() {
   try {
     return (await navigator.clipboard.readText()) || "";
@@ -120,8 +198,9 @@ async function quickPasteVerses(target) {
     showToast("📝 묵상 노트에 붙였어요", { label: "노트 보기", onClick: () => openSheet("note", renderQtSheet) });
     return;
   }
-  const chapter = CHAPTERS[currentChapter];
-  const quote = formatVerses(text, chapter, state.settings.mode === "two");
+  const two = state.settings.mode === "two";
+  const full = await expandToFullVerses(text);
+  const quote = full ? formatVerses(full.text, CHAPTERS[full.idx], two) : formatVerses(text, CHAPTERS[currentChapter], two);
   const today = todayStr();
   state.dayNotes[today] = appendQuote(dayNoteBase(state.dayNotes[today]), quote);
   persist();
