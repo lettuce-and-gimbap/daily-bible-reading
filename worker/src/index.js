@@ -27,6 +27,7 @@ export default {
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
+      if (pathname === "/search") return await searchVerses(new URL(request.url), json);
       if (request.method !== "POST") return json({ error: "not found" }, 404);
       const body = await request.json();
 
@@ -73,7 +74,8 @@ export default {
 // 갓피아 한 장 본문(HTML)을 대신 받아 줌
 // 갓피아는 다른 사이트에서 읽는 걸 막아 두어서(CORS 헤더 없음) 앱이 직접 못 가져옴.
 // 앱은 이걸로 복사한 조각이 어느 절인지 찾아, 일부만 복사해도 온전한 절로 붙여넣는다.
-const BIBLE_VERSIONS = ["gae", "niv", "han", "hyun", "saenew", "hebrew", "greek"];
+// 쉬운성경(easy)은 갓피아 읽기 화면 목록에선 빠졌지만 이 본문 주소로는 받아진다(2026-09 확인).
+const BIBLE_VERSIONS = ["gae", "easy", "niv", "han", "hyun", "saenew", "hebrew", "greek"];
 
 async function bibleChapter(q, cors, json) {
   const ver = q.get("ver") || "";
@@ -93,6 +95,35 @@ async function bibleChapter(q, cors, json) {
   return new Response(await res.text(), {
     headers: { ...cors, "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=86400" },
   });
+}
+
+// 복사한 글 조각이 성경 어디인지 찾음 (다른 사이트에서 복사한 구절용)
+// 다국어성경 홀리바이블(holybible.or.kr)의 본문 검색을 씀: 낱말을 모두 포함한 절을 관련도 순으로 10개까지 돌려준다.
+// 어느 역본에서 복사했는지 모르므로 역본을 차례로 검색해 처음 나온 결과를 돌려줌.
+// 쉬운성경은 이 사이트에 없음 — 쉬운성경 줄은 앱이 같이 복사한 다른 줄로 장을 찾은 뒤 갓피아 본문과 대조한다.
+// 이 사이트는 검색어를 EUC-KR(CP949)로만 알아듣는데 워커에는 그 인코더가 없어서,
+// 앱이 검색어를 CP949 퍼센트 인코딩("%B9%AB%B9%FD+…")으로 만들어 q에 넣어 보내고 여기선 그대로 넘긴다.
+// 결과 페이지도 EUC-KR이지만 필요한 건 링크의 숫자(VL=권&CN=장&PN=절)뿐이라 디코딩하지 않는다.
+const SEARCH_VERSIONS_KO = ["GAE", "SAENEW", "HDB", "RHV", "COGNEW"];
+const SEARCH_VERSIONS_EN = ["NIV", "KJV", "NASB"];
+
+async function searchVerses(url, json) {
+  const query = (url.search.match(/[?&]q=([^&]*)/) || [])[1] || ""; // searchParams는 %XX를 풀어 버리므로 그대로 꺼냄
+  if (!/^(?:%[0-9A-F]{2}|[A-Za-z0-9+])+$/.test(query) || query.length > 400) return json({ error: "잘못된 검색어" }, 400);
+  const list = url.searchParams.get("lang") === "en" ? SEARCH_VERSIONS_EN : SEARCH_VERSIONS_KO;
+  for (const vr of list) {
+    const res = await fetch(`http://www.holybible.or.kr/B_${vr}/cgi/biblesrch.php?VR=${vr}&QR=${query}`, {
+      cf: { cacheTtl: 604800, cacheEverything: true },
+    });
+    if (!res.ok) continue;
+    const seen = new Set();
+    const hits = [...(await res.text()).matchAll(/VL=(\d+)&amp;CN=(\d+)&amp;PN=(\d+)/g)]
+      .map((m) => [Number(m[1]), Number(m[2]), Number(m[3])])
+      .filter(([vl]) => vl >= 1 && vl <= 66) // 공동번역의 외경(67~)은 뺌
+      .filter((h) => !seen.has(String(h)) && seen.add(String(h)));
+    if (hits.length) return json({ ver: vr, hits });
+  }
+  return json({ ver: null, hits: [] });
 }
 
 export async function remindAll(env, now = new Date()) {
