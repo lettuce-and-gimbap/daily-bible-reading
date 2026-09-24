@@ -9,7 +9,7 @@ crons = ["0 9,12,14 * * *"]
 # npx wrangler kv namespace create SUBS 로 만든 id를 넣으세요
 [[kv_namespaces]]
 binding = "SUBS"
-id = "PUT_KV_NAMESPACE_ID_HERE"
+id = "0fc4e393b78f43b6af8af3c5a1bd6d39"
 
 [vars]
 VAPID_SUBJECT = "https://lettuce-and-gimbap.github.io/daily-bible-reading/"
