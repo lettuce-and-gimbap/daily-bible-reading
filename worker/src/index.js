@@ -27,6 +27,7 @@ export default {
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
+      if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
       if (pathname === "/search") return await searchVerses(new URL(request.url), json);
       if (request.method !== "POST") return json({ error: "not found" }, 404);
       const body = await request.json();
@@ -99,7 +100,7 @@ async function bibleChapter(q, cors, json) {
 
 // 복사한 글 조각이 성경 어디인지 찾음 (다른 사이트에서 복사한 구절용)
 // 다국어성경 홀리바이블(holybible.or.kr)의 본문 검색을 씀: 낱말을 모두 포함한 절을 관련도 순으로 10개까지 돌려준다.
-// 어느 역본에서 복사했는지 모르므로 역본을 차례로 검색해 처음 나온 결과를 돌려줌.
+// 어느 역본에서 복사했는지 모르므로 여러 역본을 검색해 앞 순서 역본의 결과를 돌려줌.
 // 쉬운성경은 이 사이트에 없음 — 쉬운성경 줄은 앱이 같이 복사한 다른 줄로 장을 찾은 뒤 갓피아 본문과 대조한다.
 // 이 사이트는 검색어를 EUC-KR(CP949)로만 알아듣는데 워커에는 그 인코더가 없어서,
 // 앱이 검색어를 CP949 퍼센트 인코딩("%B9%AB%B9%FD+…")으로 만들어 q에 넣어 보내고 여기선 그대로 넘긴다.
@@ -111,19 +112,33 @@ async function searchVerses(url, json) {
   const query = (url.search.match(/[?&]q=([^&]*)/) || [])[1] || ""; // searchParams는 %XX를 풀어 버리므로 그대로 꺼냄
   if (!/^(?:%[0-9A-F]{2}|[A-Za-z0-9+])+$/.test(query) || query.length > 400) return json({ error: "잘못된 검색어" }, 400);
   const list = url.searchParams.get("lang") === "en" ? SEARCH_VERSIONS_EN : SEARCH_VERSIONS_KO;
-  for (const vr of list) {
-    const res = await fetch(`http://www.holybible.or.kr/B_${vr}/cgi/biblesrch.php?VR=${vr}&QR=${query}`, {
-      cf: { cacheTtl: 604800, cacheEverything: true },
-    });
-    if (!res.ok) continue;
-    const seen = new Set();
-    const hits = [...(await res.text()).matchAll(/VL=(\d+)&amp;CN=(\d+)&amp;PN=(\d+)/g)]
-      .map((m) => [Number(m[1]), Number(m[2]), Number(m[3])])
-      .filter(([vl]) => vl >= 1 && vl <= 66) // 공동번역의 외경(67~)은 뺌
-      .filter((h) => !seen.has(String(h)) && seen.add(String(h)));
-    if (hits.length) return json({ ver: vr, hits });
-  }
-  return json({ ver: null, hits: [] });
+  // 느린 사이트라 역본을 한꺼번에 검색하고, 앞 순서 역본의 결과를 씀
+  const results = await Promise.all(list.map(async (vr) => {
+    try {
+      const res = await fetch(`http://www.holybible.or.kr/B_${vr}/cgi/biblesrch.php?VR=${vr}&QR=${query}`, {
+        cf: { cacheTtl: 604800, cacheEverything: true },
+      });
+      if (!res.ok) return [];
+      const seen = new Set();
+      return [...(await res.text()).matchAll(/VL=(\d+)&amp;CN=(\d+)&amp;PN=(\d+)/g)]
+        .map((m) => [Number(m[1]), Number(m[2]), Number(m[3])])
+        .filter(([vl]) => vl >= 1 && vl <= 66) // 공동번역의 외경(67~)은 뺌
+        .filter((h) => !seen.has(String(h)) && seen.add(String(h)));
+    } catch (e) {
+      return [];
+    }
+  }));
+  const i = results.findIndex((hits) => hits.length);
+  return json(i < 0 ? { ver: null, hits: [] } : { ver: list[i], hits: results[i] });
+}
+
+// 그날 갓피아 QT 본문 범위("열왕기상 11:1~8") — 앱이 QT 화면에서 구절 찾을 장을 바로 알 수 있게
+async function qtPassage(q, json) {
+  const d = q.get("d") || "";
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return json({ error: "잘못된 날짜" }, 400);
+  const res = await fetch(`https://www.godpia.com/qt/qt.asp?D=${d}`, { cf: { cacheTtl: 3600, cacheEverything: true } });
+  const m = res.ok && (await res.text()).match(/fnc_qtBibleContents\("([^"]+)"/);
+  return json({ ref: m ? m[1] : null });
 }
 
 export async function remindAll(env, now = new Date()) {

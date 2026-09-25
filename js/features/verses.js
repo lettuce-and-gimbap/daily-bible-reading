@@ -209,7 +209,50 @@ async function searchLine(line) {
   }
 }
 
-async function locateCopied(text, nearIdx) {
+// 그날 QT 본문 범위("열왕기상 11:1~8")를 갓피아 QT 화면에서 읽어 옴 (worker/의 /qt)
+const qtRefCache = {};
+function qtPassageRef(date) {
+  if (!qtRefCache[date]) {
+    qtRefCache[date] = fetch(`${PUSH_SERVER}/qt?d=${date}`).then((r) => r.json()).then((d) => d.ref || "")
+      .catch(() => { delete qtRefCache[date]; return ""; });
+  }
+  return qtRefCache[date];
+}
+
+// 복사한 구절이 있을 법한 장들과, 각 장을 맞대어 볼 역본 쌍
+//   통독: 보고 있는 장(그 화면 역본으로도) + 오늘·보고 있는 Day의 장들 / QT: 그날 QT 본문의 장
+async function hintChapters(target) {
+  const quotePair = [QUOTE_VERSIONS[0], QUOTE_VERSIONS[1]];
+  const hints = [];
+  const add = (idx, pairs = [quotePair]) => {
+    if (idx === null || idx === undefined || idx < 0 || hints.some((h) => h.idx === idx)) return;
+    hints.push({ idx, pairs });
+  };
+  if (target === "qt") {
+    const ref = await qtPassageRef(qtDate);
+    const r = refsInText(ref)[0];
+    if (r) {
+      add(r.idx);
+      if ((ref.match(/:/g) || []).length > 1) add(r.idx + 1); // "11:40~12:5"처럼 장을 넘는 본문
+    }
+  } else if (state.plan) {
+    const s = state.settings;
+    add(currentChapter, [quotePair, [s.ver, s.mode === "two" ? s.ver2 : ""]]);
+    const pr = progress();
+    [...(pr.days[viewingDay] || []), ...(pr.days[pr.todayDay] || [])].forEach((idx) => add(idx));
+  }
+  return hints;
+}
+
+// 화면을 열 때 짐작 가는 장의 본문을 미리 받아 둠 → 📋 붙여넣기를 누르면 네트워크를 기다리지 않고 바로 붙음
+async function prefetchVerses(target) {
+  if (!PUSH_SERVER) return;
+  try {
+    (await hintChapters(target)).forEach((h) => h.pairs.forEach(([a, b]) => chapterVerses(h.idx, a, b).catch(() => {})));
+  } catch (e) { /* 미리 받기는 실패해도 그만 */ }
+}
+
+async function locateCopied(text, hints) {
   const refs = refsInText(text);
   const exact = refs.find((r) => r.lo);
   if (exact) return exact;
@@ -226,14 +269,11 @@ async function locateCopied(text, nearIdx) {
   };
   const quotePair = [QUOTE_VERSIONS[0], QUOTE_VERSIONS[1]];
 
-  // 짐작 가는 장부터: 제목 줄의 장, 통독 화면에서 보고 있는 장(그 화면의 역본으로도 대조)
-  const s = state.settings;
-  const guesses = refs.map((r) => [r.idx, [quotePair]]);
-  if (nearIdx !== null && nearIdx !== undefined) {
-    guesses.push([nearIdx, [quotePair, [s.ver, s.mode === "two" ? s.ver2 : ""]]]);
-  }
-  for (const [idx, pairs] of guesses) {
-    const loc = await matchIn(idx, pairs);
+  // 짐작 가는 장부터 (보통 미리 받아 둔 본문이라 바로 끝남): 제목 줄의 장, 화면별 힌트 장
+  const guesses = [...refs.map((r) => ({ idx: r.idx, pairs: [quotePair] })), ...hints];
+  guesses.forEach((g) => g.pairs.forEach(([a, b]) => chapterVerses(g.idx, a, b).catch(() => {}))); // 한꺼번에 받기 시작
+  for (const g of guesses) {
+    const loc = await matchIn(g.idx, g.pairs).catch(() => null);
     if (loc) return loc;
   }
 
@@ -266,10 +306,10 @@ async function locateCopied(text, nearIdx) {
 }
 
 // 복사한 글 → 붙일 역본으로 된 온전한 절 (못 찾으면 null)
-async function expandToFullVerses(text, nearIdx) {
+async function expandToFullVerses(text, target) {
   if (!PUSH_SERVER) return null;
   try {
-    const loc = await locateCopied(text, nearIdx);
+    const loc = await locateCopied(text, await hintChapters(target));
     if (!loc) return null;
     const picked = (await chapterVerses(loc.idx, QUOTE_VERSIONS[0], QUOTE_VERSIONS[1])).filter((v) => {
       const [a, b] = labelSpan(v.label);
@@ -313,7 +353,7 @@ async function quickPasteVerses(target) {
     return;
   }
   if (PUSH_SERVER) showToast("🔎 구절 찾는 중…");
-  const full = await expandToFullVerses(text, target === "qt" ? null : currentChapter);
+  const full = await expandToFullVerses(text, target);
   if (target === "qt") {
     const quote = full || formatVerses(text, null);
     saveQt({ note: appendQuote((state.qt[qtDate] || {}).note, quote) });

@@ -30,6 +30,7 @@ function renderQt() {
 
   bindSheetChrome(renderQtSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("qt"));
+  prefetchVerses("qt"); // 그날 QT 본문 장을 미리 받아 둠
 
   const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
   $("#q-prev").addEventListener("click", () => setDate(addDays(qtDate, -1)));

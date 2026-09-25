@@ -154,6 +154,7 @@ function refreshReader(reload = false) {
   if (reload || frame.dataset.url !== url) {
     frame.dataset.url = url;
     frame.src = url;
+    prefetchVerses("reading"); // 붙여넣기용 본문 미리 받기
   }
 
   const dayRead = day.filter((i) => state.read[i]).length;
