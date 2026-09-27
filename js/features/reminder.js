@@ -1,9 +1,9 @@
-// 저녁 리마인드 알림 (18시 · 21시 · 23시, 오늘 통독을 마치지 않았을 때만)
+// 통독 리마인드 알림 (9~12시·15~18시 중 랜덤 한 번씩, 18시 · 21시 · 23시 — 오늘 통독을 마치지 않았을 때만)
 // 휴대폰은 앱이 꺼져 있으면 스스로 시간 맞춰 깨어날 수 없어서, 알림 서버(worker/)가 정해진 시간에 푸시를 보낸다.
 // 앱은 서버에 "오늘 통독 완료 여부"만 알려 주고, 서비스 워커(sw.js)가 받아서 문구를 골라 보여 준다.
 
 const PUSH_KEY = "daily5-push-v1";
-const REMINDER_TIMES = ["18:00", "21:00", "23:00"];
+const REMINDER_TIMES = ["9~12시 랜덤", "15~18시 랜덤", "18:00", "21:00", "23:00"];
 let reminderTimer;
 
 function pushInfo() {
@@ -120,7 +120,7 @@ function reminderCardHtml() {
     body = `
       <p class="remind-state on">✓ 알림이 켜져 있어요</p>
       <p class="muted small">${snap.paused ? "통독 계획이 없거나 끝나서 지금은 알림이 가지 않아요."
-        : snap.done ? "오늘 통독을 마쳐서 오늘 저녁엔 알림이 가지 않아요. 👏"
+        : snap.done ? "오늘 통독을 마쳐서 오늘은 더 이상 알림이 가지 않아요. 👏"
         : "오늘 통독을 아직 마치지 않았어요. 위 시간에 알림이 가요."}</p>
       <div class="inline wrap">
         <button class="btn ghost small" id="rm-test">테스트 알림 받기</button>
@@ -149,7 +149,7 @@ function reminderCardHtml() {
   return `
     <section class="card remind">
       <div class="remind-head">
-        <h2>🔔 저녁 리마인드</h2>
+        <h2>🔔 통독 리마인드</h2>
         <div class="times">${times}</div>
       </div>
       ${body}
@@ -163,14 +163,14 @@ function bindReminderCard() {
     on.textContent = "켜는 중…";
     try {
       await enableReminders();
-      showStatsToast("알림을 켰어요. 오늘 저녁에 만나요 🙏");
+      showStatsToast("알림을 켰어요. 양이 곧 찾아갈게요 🐑");
     } catch (e) {
       alert(`알림을 켜지 못했어요.\n${e.message}`);
     }
     renderStats();
   });
   if (off) off.addEventListener("click", async () => {
-    if (!confirm("저녁 리마인드 알림을 끌까요?")) return;
+    if (!confirm("통독 리마인드 알림을 끌까요?")) return;
     await disableReminders();
     renderStats();
   });

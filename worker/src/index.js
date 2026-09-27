@@ -1,6 +1,7 @@
 // 경건생활 리마인드 알림 서버 (Cloudflare Worker)
 // - 앱이 푸시 구독과 "오늘 통독 완료 날짜"를 등록/갱신
 // - 크론(한국시간 18·21·23시)마다 오늘 완료하지 않은 구독에만 내용 없는 푸시를 보냄
+// - 9~12시·15~18시에는 5분마다 깨어나, 구독마다 그날 뽑힌 랜덤 시각인 구독에만 보냄
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
 const ALLOWED_ORIGINS = [
@@ -68,7 +69,8 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(remindAll(env));
+    const at = new Date(event.scheduledTime);
+    ctx.waitUntil(event.cron.startsWith("*/5") ? remindRandom(env, at) : remindAll(env, at));
   },
 };
 
@@ -141,13 +143,37 @@ async function qtPassage(q, json) {
   return json({ ref: m ? m[1] : null });
 }
 
-export async function remindAll(env, now = new Date()) {
+// 랜덤 알림 구간(한국시간 시작 시, 끝 시). 구간의 5분 칸 중 하나를 구독·날짜마다 골라 한 번 보냄
+const RANDOM_WINDOWS = [[9, 12], [15, 18]];
+
+// 5분 크론: 지금이 랜덤 구간의 몇 번째 칸인지 보고, 그 칸이 뽑힌 구독에만 보냄
+export async function remindRandom(env, now = new Date()) {
+  const kst = new Date(now.getTime() + 9 * 3600 * 1000);
+  const minutes = kst.getUTCHours() * 60 + kst.getUTCMinutes();
+  const w = RANDOM_WINDOWS.findIndex(([s, e]) => minutes >= s * 60 && minutes < e * 60);
+  if (w < 0) return null;
+  const [s, e] = RANDOM_WINDOWS[w];
+  const slot = Math.floor((minutes - s * 60) / 5);
+  const today = kstDate(now);
+  return remindAll(env, now, (id) => randomSlot(id, today, w) === slot, `random${w}#${slot}`);
+}
+
+// 구독·날짜·구간마다 정해지는 랜덤 칸 (같은 날엔 몇 번 물어도 같은 칸)
+export function randomSlot(id, date, w) {
+  const [s, e] = RANDOM_WINDOWS[w];
+  let h = 0x811c9dc5; // FNV-1a
+  for (const ch of `${id}|${date}|${w}`) h = Math.imul(h ^ ch.charCodeAt(0), 0x01000193);
+  return (h >>> 0) % ((e - s) * 12);
+}
+
+export async function remindAll(env, now = new Date(), pick = () => true, label = "fixed") {
   const today = kstDate(now);
   const result = { sent: 0, skipped: 0, removed: 0, failed: 0 };
   let cursor;
   do {
     const page = await env.SUBS.list({ prefix: "sub:", cursor });
     for (const key of page.keys) {
+      if (!pick(key.name.slice(4))) continue;
       const meta = key.metadata || {};
       if (meta.paused || meta.doneDate === today) { result.skipped++; continue; }
       const rec = await env.SUBS.get(key.name, "json");
@@ -168,7 +194,7 @@ export async function remindAll(env, now = new Date()) {
     }
     cursor = page.list_complete ? undefined : page.cursor;
   } while (cursor);
-  console.log(`remind ${today}`, JSON.stringify(result));
+  console.log(`remind ${today} ${label}`, JSON.stringify(result));
   return result;
 }
 

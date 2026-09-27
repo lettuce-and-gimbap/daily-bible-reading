@@ -3,8 +3,9 @@ main = "src/index.js"
 compatibility_date = "2026-09-01"
 
 # 한국시간 18시, 21시, 23시 (UTC 9시, 12시, 14시)
+# + 한국시간 9~12시·15~18시(UTC 0~2시, 6~8시)에 5분마다 깨어나, 구독마다 그날 뽑힌 랜덤 시각에만 보냄
 [triggers]
-crons = ["0 9,12,14 * * *"]
+crons = ["0 9,12,14 * * *", "*/5 0-2,6-8 * * *"]
 
 # npx wrangler kv namespace create SUBS 로 만든 id를 넣으세요
 [[kv_namespaces]]
