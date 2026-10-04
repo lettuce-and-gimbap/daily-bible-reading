@@ -28,6 +28,7 @@ function buildReader() {
     </div>
     ${sheetShell()}`;
 
+  guardReaderFrame($("#r-frame"));
   bindSheetChrome(renderReaderSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
   app.querySelectorAll("[data-open]").forEach((b) =>
@@ -138,6 +139,46 @@ function buildReader() {
   });
 }
 
+// ── 갓피아 안에서 장이 저절로 넘어가는 것 막기 ──
+// 갓피아 화면은 다른 사이트라 안쪽의 좌우 스와이프를 직접 끌 수는 없다.
+// 대신 앱이 부르지 않은 이동(스와이프로 다음 장, 뒤로 가기 제스처 등)이 일어나면 iframe의 load로 알아채고
+// 보던 장으로 곧바로 되돌린다. 상하 스크롤은 페이지 이동이 아니라서 그대로 된다.
+let frameLoads = 0;      // 앱이 주소를 넣은 뒤 iframe load가 몇 번 일어났는지 (1번째 = 앱이 부른 것)
+let frameLastLoad = 0;   // 직전 load 시각
+let frameReverts = 0;    // 지금 장에서 되돌린 횟수 (혹시 모를 무한 되돌리기 방지)
+let frameNavFree = false; // 토스트의 '잠시 풀기'를 누르면 다음 장 이동 전까지 갓피아 안 이동 허용
+
+function loadReaderFrame(frame, url, isRevert = false) {
+  frameLoads = 0;
+  if (!isRevert) { frameReverts = 0; frameNavFree = false; }
+  frame.dataset.url = url;
+  // 처음엔 src로, 그다음부터는 replace로 넣어 iframe 방문 기록이 쌓이지 않게 함
+  // (기록이 쌓이면 화면 가장자리 뒤로 가기 스와이프에 이전 장이 튀어나옴)
+  try {
+    if (frame.getAttribute("src")) frame.contentWindow.location.replace(url);
+    else frame.src = url;
+  } catch { frame.src = url; }
+}
+
+function guardReaderFrame(frame) {
+  frame.addEventListener("load", () => {
+    const now = Date.now();
+    const sinceLast = now - frameLastLoad;
+    frameLastLoad = now;
+    frameLoads += 1;
+    if (frameLoads === 1 || frameNavFree) return;
+    // 갓피아가 열리자마자 스스로 주소를 바꾸는 경우(리디렉트)는 사람이 넘긴 게 아니므로 둠
+    if (sinceLast < 1500) return;
+    if (frameReverts >= 3) return;
+    frameReverts += 1;
+    loadReaderFrame(frame, frame.dataset.url, true);
+    showToast(`📖 ${chapLabel(currentChapter)}을 끝까지 읽도록 옆 넘기기를 막았어요`, {
+      label: "잠시 풀기",
+      onClick: () => { frameNavFree = true; },
+    });
+  });
+}
+
 // reload=true면 주소가 같아도 갓피아 화면을 다시 불러옴 (갓피아 안에서 넘겨 둔 장을 되돌림)
 function refreshReader(reload = false) {
   const pr = progress();
@@ -152,8 +193,7 @@ function refreshReader(reload = false) {
   const url = readerUrl(currentChapter);
   const frame = $("#r-frame");
   if (reload || frame.dataset.url !== url) {
-    frame.dataset.url = url;
-    frame.src = url;
+    loadReaderFrame(frame, url);
     prefetchVerses("reading"); // 붙여넣기용 본문 미리 받기
   }
 
