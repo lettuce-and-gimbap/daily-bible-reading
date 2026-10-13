@@ -40,14 +40,14 @@ async function loadSummary(key, refresh = false) {
       signal: window.AbortSignal && AbortSignal.timeout ? AbortSignal.timeout(120000) : undefined,
     });
     const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw Object.assign(new Error(data.error || `HTTP ${res.status}`), { code: data.code });
+    if (!res.ok) throw Object.assign(new Error(data.error || `HTTP ${res.status}`), { code: data.code, detail: data.detail });
     writeSummaryStore(key, { people: data.people, relations: data.relations || [], places: data.places || [], story: data.story, songs: data.songs });
     delete summaryMem[key];
   } catch (e) {
     failed = e.name === "TimeoutError" ? "시간이 너무 오래 걸렸어요." : e.message || "불러오지 못했어요.";
     // 새로 만들기가 실패하면 보던 요약은 그대로 두고 알려만 줌
     if (refresh) { delete summaryMem[key]; showToast(`요약을 새로 만들지 못했어요. ${failed}`); }
-    else summaryMem[key] = { status: "error", error: failed, code: e.code };
+    else summaryMem[key] = { status: "error", error: failed, code: e.code, detail: e.detail };
   }
   if (sheetTab === "summary") renderReaderSheet(); // 그 사이 다른 탭으로 옮겼으면 건드리지 않음
 }
@@ -231,6 +231,7 @@ function renderSummaryTab(body, day) {
     body.innerHTML = `${head}
       <div class="sum-state">
         <p>${esc(st.error)}</p>
+        ${st.detail ? `<p class="muted small sum-detail">${esc(st.detail)}</p>` : ""}
         ${st.code === "not_configured" ? "" : `<button class="btn soft small" data-sum-retry="${esc(key)}">다시 시도</button>`}
       </div>`;
     return;

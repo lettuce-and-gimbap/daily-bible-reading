@@ -2,7 +2,7 @@
 // - 주요 등장 인물 · 인물 관계도 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양 / 주요 지역
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
 // - 필요한 설정: npx wrangler secret put GEMINI_API_KEY (worker/README.md 참고) — Google AI Studio 무료 키로 됨
-//   선택: SUMMARY_MODEL(기본 gemini-3.8-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 200)
+//   선택: SUMMARY_MODEL(기본 gemini-3.8-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 500)
 
 // 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
 const BOOK_TABLE = (
@@ -130,11 +130,13 @@ async function askModel(env, label, count, feedback) {
   // 2.5 flash는 생각 시간을 끌 수 있어 끄고 시도. 모델이 그 설정을 받지 않으면(400) 설정 없이 다시 보냄
   let res = /2\.5.*flash/.test(model) ? await call({ ...generationConfig, thinkingConfig: { thinkingBudget: 0 } }) : await call(generationConfig);
   if (res.status === 400 && /2\.5.*flash/.test(model)) res = await call(generationConfig);
-  if (res.status === 429 || res.status === 503) throw new SummaryError("요약 서버가 바빠요. 잠시 뒤 다시 시도해 주세요.", 503);
-  if (!res.ok) {
-    console.log("gemini error", res.status, (await res.text()).slice(0, 300));
-    throw new SummaryError("요약을 만들지 못했어요.", 502);
+  if (res.status === 503) { // 일시적으로 혼잡하면 잠깐 쉬고 한 번 더
+    await new Promise((r) => setTimeout(r, 2500));
+    res = /2\.5.*flash/.test(model) ? await call({ ...generationConfig, thinkingConfig: { thinkingBudget: 0 } }) : await call(generationConfig);
   }
+  if (res.status === 429) throw new SummaryError("Google 무료 사용 한도에 걸렸어요. 잠시 뒤 다시 시도해 주세요.", 503, await googleDetail(res));
+  if (res.status === 503) throw new SummaryError("Gemini 서버가 혼잡해요. 잠시 뒤 다시 시도해 주세요.", 503, await googleDetail(res));
+  if (!res.ok) throw new SummaryError("요약을 만들지 못했어요.", 502, await googleDetail(res));
   const data = await res.json();
   const text = ((data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [])
     .map((p) => p.text || "").join("");
@@ -151,7 +153,14 @@ async function askModel(env, label, count, feedback) {
 }
 
 class SummaryError extends Error {
-  constructor(message, status) { super(message); this.status = status; }
+  constructor(message, status, detail = "") { super(message); this.status = status; this.detail = detail; }
+}
+
+// Google 오류 본문에서 사람이 읽을 부분만 (키 같은 비밀 값은 들어 있지 않음)
+async function googleDetail(res) {
+  const text = await res.text();
+  console.log("gemini error", res.status, text.slice(0, 600));
+  try { return clip(JSON.parse(text).error.message, 220); } catch { return clip(text, 220); }
 }
 
 export async function generate(env, label, count) {
@@ -185,7 +194,7 @@ export async function dailySummary(url, env, json, originOk, today) {
   // 하루에 새로 만들 수 있는 개수 제한 (비용 보호)
   const capKey = `sumcap:${today}`;
   const used = Number(await env.SUBS.get(capKey)) || 0;
-  if (used >= (Number(env.SUMMARY_DAILY_CAP) || 200)) return json({ error: "오늘 새로 만들 수 있는 요약을 다 썼어요. 내일 다시 시도해 주세요.", code: "cap" }, 429);
+  if (used >= (Number(env.SUMMARY_DAILY_CAP) || 500)) return json({ error: "오늘 새로 만들 수 있는 요약을 다 썼어요. 내일 다시 시도해 주세요.", code: "cap" }, 429);
   await env.SUBS.put(capKey, String(used + 1), { expirationTtl: 172800 });
 
   try {
@@ -194,7 +203,7 @@ export async function dailySummary(url, env, json, originOk, today) {
     if (refresh) await env.SUBS.put(freshKey, "1", { expirationTtl: 60 });
     return json({ ...summary, label: parsed.label, cached: false });
   } catch (e) {
-    if (e instanceof SummaryError) return json({ error: e.message }, e.status);
+    if (e instanceof SummaryError) return json({ error: e.message, detail: e.detail }, e.status);
     console.log("summary failed", String(e && e.message || e));
     return json({ error: "요약을 만들지 못했어요." }, 502);
   }
