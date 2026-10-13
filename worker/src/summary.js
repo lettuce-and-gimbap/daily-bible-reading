@@ -2,7 +2,7 @@
 // - 주요 등장 인물 · 인물 관계도 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양 / 주요 지역
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
 // - 필요한 설정: npx wrangler secret put GEMINI_API_KEY (worker/README.md 참고) — Google AI Studio 무료 키로 됨
-//   선택: SUMMARY_MODEL(기본 gemini-3.8-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 500)
+//   선택: SUMMARY_MODEL(쉼표로 여러 개, 앞에서부터 시도. 기본 gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 500)
 
 // 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
 const BOOK_TABLE = (
@@ -20,7 +20,8 @@ const BOOK_BY_CODE = Object.fromEntries(BOOK_TABLE.map((b) => [b.code, b]));
 
 const MAX_CHAPTERS = 30; // 한 번에 요약할 최대 장 수
 const STORY_LIMIT = 600;
-const DEFAULT_MODEL = "gemini-3.8-flash";
+// 모델마다 무료 하루 한도가 따로라서, 앞 모델이 한도·혼잡·미지원이면 다음 모델로 넘어감 (쉼표로 여러 개)
+const DEFAULT_MODELS = "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite";
 
 // "num.12-16,num.17" → { key, label, count } (잘못된 값이면 null)
 export function parseRanges(raw) {
@@ -111,33 +112,22 @@ export function cleanSummary(raw) {
 }
 
 const storyLength = (story) => story.reduce((n, p) => n + p.length, 0);
-const storyOk = (r) => r.story.length === 2 && storyLength(r.story) <= STORY_LIMIT;
 
-async function askModel(env, label, count, feedback) {
-  const model = env.SUMMARY_MODEL || DEFAULT_MODEL;
-  const generationConfig = { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 8000, temperature: 0.7 };
-  const body = (config) => JSON.stringify({
-    systemInstruction: { parts: [{ text: SYSTEM }] },
-    contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
-    generationConfig: config,
-  });
-  const call = (config) => fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
+// 한 모델에 요청 한 번 (재시도 없음: 무료 하루 한도가 호출 횟수라서 같은 모델에 되풀이하지 않음)
+function requestModel(env, model, label, count, feedback) {
+  return fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
     headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-    body: body(config),
-    signal: AbortSignal.timeout(90000),
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM }] },
+      contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
+      generationConfig: { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 8000, temperature: 0.7 },
+    }),
+    signal: AbortSignal.timeout(60000),
   });
-  // 2.5 flash는 생각 시간을 끌 수 있어 끄고 시도. 모델이 그 설정을 받지 않으면(400) 설정 없이 다시 보냄
-  let res = /2\.5.*flash/.test(model) ? await call({ ...generationConfig, thinkingConfig: { thinkingBudget: 0 } }) : await call(generationConfig);
-  if (res.status === 400 && /2\.5.*flash/.test(model)) res = await call(generationConfig);
-  if (res.status === 503) { // 일시적으로 혼잡하면 잠깐 쉬고 한 번 더
-    await new Promise((r) => setTimeout(r, 2500));
-    res = /2\.5.*flash/.test(model) ? await call({ ...generationConfig, thinkingConfig: { thinkingBudget: 0 } }) : await call(generationConfig);
-  }
-  if (res.status === 429) throw new SummaryError("Google 무료 사용 한도에 걸렸어요. 잠시 뒤 다시 시도해 주세요.", 503, await googleDetail(res));
-  if (res.status === 503) throw new SummaryError("Gemini 서버가 혼잡해요. 잠시 뒤 다시 시도해 주세요.", 503, await googleDetail(res));
-  if (!res.ok) throw new SummaryError("요약을 만들지 못했어요.", 502, await googleDetail(res));
-  const data = await res.json();
+}
+
+function parseModelText(data) {
   const text = ((data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [])
     .map((p) => p.text || "").join("");
   if (!text) {
@@ -152,25 +142,64 @@ async function askModel(env, label, count, feedback) {
   }
 }
 
+// 모델을 차례로 시도해 처음 성공한 요약과 모델 이름을 돌려줌. prefer를 주면 그 모델을 맨 앞에 둠
+// 한도(429)에 걸린 모델은 5분, 쓸 수 없는 모델(404)은 1시간 동안 건너뜀
+async function askModels(env, label, count, feedback, prefer) {
+  const all = (env.SUMMARY_MODEL || DEFAULT_MODELS).split(",").map((m) => m.trim()).filter(Boolean);
+  const order = prefer ? [prefer, ...all.filter((m) => m !== prefer)] : all;
+  let limited = false, busy = false, detail = "";
+  for (const model of order) {
+    const cool = await env.SUBS.get(`sumcool:${model}`);
+    if (cool) { if (cool === "429") limited = true; continue; }
+    let res;
+    try {
+      res = await requestModel(env, model, label, count, feedback);
+    } catch (e) {
+      console.log("gemini request failed", model, String(e && e.message || e));
+      busy = true;
+      continue;
+    }
+    if (res.status === 429) {
+      limited = true;
+      detail = detail || await googleDetail(res, model);
+      await env.SUBS.put(`sumcool:${model}`, "429", { expirationTtl: 300 });
+      continue;
+    }
+    if (res.status === 404) {
+      await googleDetail(res, model);
+      await env.SUBS.put(`sumcool:${model}`, "404", { expirationTtl: 3600 });
+      continue;
+    }
+    if (res.status === 503 || res.status >= 500) { busy = true; detail = detail || await googleDetail(res, model); continue; }
+    if (!res.ok) { detail = detail || await googleDetail(res, model); continue; }
+    const summary = parseModelText(await res.json());
+    if (summary) return { summary, model };
+  }
+  if (limited) throw new SummaryError("Google 무료 사용 한도에 걸렸어요. 한국 시간 오후 4~5시(Google 하루 기준 초기화) 뒤에 다시 시도해 주세요.", 503, detail);
+  if (busy) throw new SummaryError("Gemini 서버가 혼잡해요. 잠시 뒤 다시 시도해 주세요.", 503, detail);
+  throw new SummaryError("요약을 만들지 못했어요.", 502, detail);
+}
+
 class SummaryError extends Error {
   constructor(message, status, detail = "") { super(message); this.status = status; this.detail = detail; }
 }
 
 // Google 오류 본문에서 사람이 읽을 부분만 (키 같은 비밀 값은 들어 있지 않음)
-async function googleDetail(res) {
+async function googleDetail(res, model) {
   const text = await res.text();
-  console.log("gemini error", res.status, text.slice(0, 600));
-  try { return clip(JSON.parse(text).error.message, 220); } catch { return clip(text, 220); }
+  console.log("gemini error", model, res.status, text.slice(0, 600));
+  try { return `${model}: ${clip(JSON.parse(text).error.message, 200)}`; } catch { return `${model}: ${clip(text, 200)}`; }
 }
 
 export async function generate(env, label, count) {
-  let r = await askModel(env, label, count);
-  if (!r || !storyOk(r)) {
-    const why = !r ? "형식이 맞지 않았어" : r.story.length !== 2 ? "story가 2문단이 아니었어" : `story가 ${storyLength(r.story)}자로 600자를 넘었어`;
-    const retry = await askModel(env, label, count, `지난 답은 ${why}. 규칙을 다시 지켜서 처음부터 다시 써 줘.`);
-    if (retry) r = retry;
+  let { summary: r, model } = await askModels(env, label, count);
+  // 이야기가 너무 길면(700자 초과) 한 번만 다시 쓰게 함. 조금 넘치는 정도는 문장 단위로 잘라 호출을 아낌
+  if (storyLength(r.story) > 700) {
+    try {
+      const again = await askModels(env, label, count, `지난 답은 story가 ${storyLength(r.story)}자로 600자를 넘었어. 520자 안쪽으로 줄여서 처음부터 다시 써 줘.`, model);
+      r = again.summary;
+    } catch (e) { /* 다시 쓰기가 막혀도 처음 답을 잘라서 씀 */ }
   }
-  if (!r) throw new SummaryError("요약을 만들지 못했어요.", 502);
   if (r.story.length > 2) r.story = [r.story[0], r.story.slice(1).join(" ")];
   if (storyLength(r.story) > STORY_LIMIT) r.story = fitStory(r.story);
   if (!r.story.length) throw new SummaryError("요약을 만들지 못했어요.", 502);
