@@ -14,6 +14,9 @@ const dataDir = join(root, "data/summary");
 const require = createRequire(import.meta.url);
 const { composeDay } = require("../../js/features/summary-data.js");
 const { aliases } = JSON.parse(readFileSync(join(here, "names.json"), "utf8"));
+// 대표 이름 → 본문에 나올 수 있는 다른 이름들 (아브라함 → 아브람)
+const otherNames = {};
+for (const [alt, main] of Object.entries(aliases)) (otherNames[main] = otherNames[main] || []).push(alt.replace(/(.*)/, "").trim());
 
 const TYPES = ["story", "law", "list", "poem", "wisdom", "prophecy", "letter", "vision"];
 const KINDS = ["family", "ally", "conflict", "other"];
@@ -107,7 +110,7 @@ for (const f of files) {
       const lookups = [...people.map((p) => ["인물", p.name]), ...(c.places || []).map((p) => ["지역", p.name])];
       for (const [kind, name] of lookups) {
         if (SKIP_LOOKUP.has(name)) continue;
-        const hit = findName(hay, name);
+        const hit = [name, ...(otherNames[name] || [])].map((n) => findName(hay, n)).sort((a, b) => (a === "exact" ? -1 : b === "exact" ? 1 : a ? -1 : 1))[0];
         if (hit === "exact") continue;
         if (hit === "fuzzy") { warn(at, `${kind} "${name}" 주석에 비슷한 글자만 있음(OCR 오타일 수 있음)`); continue; }
         warn(at, findName(bookText, name) ? `${kind} "${name}" 이 장 쪽엔 없고 같은 권 다른 쪽에 있음` : `${kind} "${name}" 주석에 없음`);
