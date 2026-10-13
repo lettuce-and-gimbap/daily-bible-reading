@@ -44,6 +44,7 @@ export function parseRanges(raw) {
 const SYSTEM = `너는 성경 통독 앱의 도우미야. 오늘 읽을 성경 분량을 읽기 전에 훑어볼 수 있게 요약해 준다.
 
 규칙
+- 해석의 관점: 대한예수교장로회(합동) 측 교단의 입장에서, 칼뱅주의 개혁신학의 틀로 본문을 이해하고 설명한다. 본문에 없는 신학적 주장은 덧붙이지 않고, 개혁신학과 어긋나는 해석(예: 번영신학식 적용)은 피한다. 교파마다 해석이 갈리는 부분은 개혁신학의 일반적인 이해를 따르되, 다른 교파를 비판하거나 논쟁하는 말투는 쓰지 않는다. 학자·책 이름이나 인용문은 지어내지 않는다.
 - 성경에 실제로 나오는 내용만 쓴다. 확실하지 않은 내용은 지어내지 말고 뺀다. 여러 장이면 분량 전체를 한 번에 요약한다.
 - people: 이번 분량에 실제로 나오는 주요 인물 3~8명. name은 개역개정 표기(같은 사람을 두 번 쓰지 않는다), role은 20자 안쪽으로 이번 분량에서 한 일.
 - relations: people끼리의 관계도에 쓸 관계 4~10개. 성경에 실제로 나오는 관계만 쓴다. from과 to는 people의 name과 글자까지 똑같아야 한다. label은 10자 안쪽으로 "from은 to의 ○○"처럼 읽히게 쓴다(예: from 아론, to 모세, label 형 → "아론은 모세의 형"). kind는 family(가족·친척), ally(돕거나 함께함·스승과 제자), conflict(대립·반역·갈등), other 중 하나. 위 문장처럼 방향이 있는 관계면 directed를 true, 서로 같은 관계(형제, 동역자, 갈등)면 false.
@@ -171,7 +172,7 @@ export async function generate(env, label, count) {
 export async function dailySummary(url, env, json, originOk, today) {
   const parsed = parseRanges(url.searchParams.get("r"));
   if (!parsed) return json({ error: "잘못된 분량" }, 400);
-  const cacheKey = `sum:v2:${parsed.key}`;
+  const cacheKey = `sum:v3:${parsed.key}`;
   const hit = await env.SUBS.get(cacheKey, "json");
   if (hit) return json({ ...hit, label: parsed.label, cached: true });
 

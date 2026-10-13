@@ -60,6 +60,8 @@ const BOOK_EN = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Jo
 const COMMENTARY_SOURCES = [
   { name: "한글 주석·해설 (구글)", url: (c) => `https://www.google.com/search?q=${encodeURIComponent(`${c.book.name} ${c.chap}장 주석`)}` },
   { name: "한글 주석·해설 (네이버)", url: (c) => `https://search.naver.com/search.naver?query=${encodeURIComponent(`${c.book.name} ${c.chap}장 주석 해설`)}` },
+  { name: "호크마 주석", url: (c) => `https://www.google.com/search?q=${encodeURIComponent(`호크마 주석 ${c.book.name} ${c.chap}장`)}` },
+  { name: "매튜 헨리 주석", url: (c) => `https://www.google.com/search?q=${encodeURIComponent(`매튜 헨리 주석 ${c.book.name} ${c.chap}장`)}` },
   { name: "영문 주석 (Enduring Word)", url: (c) => `https://www.google.com/search?q=${encodeURIComponent(`site:enduringword.com ${BOOK_EN[c.book.index]} ${c.chap}`)}` },
 ];
 
