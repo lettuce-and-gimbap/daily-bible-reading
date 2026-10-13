@@ -37,7 +37,7 @@ async function loadSummary(key, refresh = false) {
   let failed = "";
   try {
     const res = await fetch(`${PUSH_SERVER}/summary?r=${encodeURIComponent(key)}${refresh ? "&refresh=1" : ""}`, {
-      signal: window.AbortSignal && AbortSignal.timeout ? AbortSignal.timeout(120000) : undefined,
+      signal: window.AbortSignal && AbortSignal.timeout ? AbortSignal.timeout(75000) : undefined,
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok) throw Object.assign(new Error(data.error || `HTTP ${res.status}`), { code: data.code, detail: data.detail });

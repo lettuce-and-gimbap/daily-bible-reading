@@ -123,7 +123,7 @@ function requestModel(env, model, label, count, feedback) {
       contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
       generationConfig: { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 8000, temperature: 0.7 },
     }),
-    signal: AbortSignal.timeout(60000),
+    signal: AbortSignal.timeout(25000),
   });
 }
 
@@ -143,20 +143,23 @@ function parseModelText(data) {
 }
 
 // 모델을 차례로 시도해 처음 성공한 요약과 모델 이름을 돌려줌. prefer를 주면 그 모델을 맨 앞에 둠
-// 한도(429)에 걸린 모델은 5분, 쓸 수 없는 모델(404)은 1시간 동안 건너뜀
+// 한도(429)에 걸린 모델은 5분, 쓸 수 없는 모델(404)은 1시간, 혼잡·시간 초과(503 등)는 1분 동안 건너뜀
 async function askModels(env, label, count, feedback, prefer) {
   const all = (env.SUMMARY_MODEL || DEFAULT_MODELS).split(",").map((m) => m.trim()).filter(Boolean);
   const order = prefer ? [prefer, ...all.filter((m) => m !== prefer)] : all;
   let limited = false, busy = false, detail = "";
+  const started = Date.now();
   for (const model of order) {
+    if (Date.now() - started > 55000) { busy = true; break; } // 앱이 기다려 주는 시간 안에 끝내려고 새 모델 시도는 중단
     const cool = await env.SUBS.get(`sumcool:${model}`);
-    if (cool) { if (cool === "429") limited = true; continue; }
+    if (cool) { if (cool === "429") limited = true; if (cool === "503") busy = true; continue; }
     let res;
     try {
       res = await requestModel(env, model, label, count, feedback);
-    } catch (e) {
+    } catch (e) { // 시간 초과 등: 1분 동안 같은 모델로 연달아 보내지 않음 ("다시 시도" 연타가 한도를 갉아먹지 않게)
       console.log("gemini request failed", model, String(e && e.message || e));
       busy = true;
+      await env.SUBS.put(`sumcool:${model}`, "503", { expirationTtl: 60 });
       continue;
     }
     if (res.status === 429) {
@@ -170,7 +173,12 @@ async function askModels(env, label, count, feedback, prefer) {
       await env.SUBS.put(`sumcool:${model}`, "404", { expirationTtl: 3600 });
       continue;
     }
-    if (res.status === 503 || res.status >= 500) { busy = true; detail = detail || await googleDetail(res, model); continue; }
+    if (res.status >= 500) {
+      busy = true;
+      detail = detail || await googleDetail(res, model);
+      await env.SUBS.put(`sumcool:${model}`, "503", { expirationTtl: 60 });
+      continue;
+    }
     if (!res.ok) { detail = detail || await googleDetail(res, model); continue; }
     const summary = parseModelText(await res.json());
     if (summary) return { summary, model };
