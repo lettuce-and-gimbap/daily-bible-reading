@@ -294,12 +294,15 @@
         {"name":"다른 정탐꾼들","role":"두려움과 나쁜 소문을 퍼뜨림","weight":2},
         {"name":"아낙 자손","role":"헤브론에 살던 거인 족속","weight":1}
       ],
+      "renames": [
+        {"from":"호세아","to":"여호수아","verses":"16","why":"모세가 이름을 줌"}
+      ],
       "rels": [
         {"from":"갈렙","to":"다른 정탐꾼들","label":"엇갈린 보고","kind":"conflict","directed":false,"weight":3},
         {"from":"모세","to":"갈렙","label":"보낸 지도자","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"여호수아","label":"새 이름 준 이","kind":"ally","directed":true,"weight":2},
         {"from":"여호수아","to":"갈렙","label":"함께 정탐","kind":"ally","directed":false,"weight":1},
-        {"from":"다른 정탐꾼들","to":"아낙 자손","label":"두려워함","kind":"other","directed":true,"weight":2}
+        {"from":"다른 정탐꾼들","to":"아낙 자손","label":"두려워함","kind":"other","directed":true,"weight":2},
+        {"from":"모세","to":"여호수아","label":"보낸 지도자","kind":"ally","directed":true,"weight":1}
       ],
       "places": [
         {"name":"가데스","where":"가나안 남쪽 바란 광야","what":"정탐꾼이 사십 일 만에 돌아와 보고한 진","weight":2},

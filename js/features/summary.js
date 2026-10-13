@@ -81,8 +81,8 @@ function commentaryHtml(day) {
 }
 
 // ── 인물 관계도 (SVG) ──
-const REL_COLOR = { family: "var(--accent)", ally: "#3b82c4", conflict: "var(--warn)", other: "var(--muted)" };
-const REL_NAME = { family: "가족", ally: "동역·도움", conflict: "대립", other: "기타" };
+const REL_COLOR = { family: "var(--accent)", ally: "#3b82c4", conflict: "var(--warn)", other: "var(--muted)", rename: "#c48a1e" };
+const REL_NAME = { family: "가족", ally: "동역·도움", conflict: "대립", other: "기타", rename: "이름이 바뀜" };
 
 // 이름 상자 크기 (13px 굵은 글씨 기준)
 const rgBox = (name) => ({ hw: Math.max(26, (name.length * 13 + 16) / 2), hh: 14 });
@@ -354,13 +354,13 @@ function staticSummaryHtml(s) {
     ${events}
     <section class="tool-card sum-card">
       <h3 class="label">주요 등장 인물</h3>
-      ${s.people.length ? `<ul class="sum-people">${s.people.map((p) => `<li><b>${esc(p.name)}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`
+      ${s.people.length ? `<ul class="sum-people">${s.people.map((p) => `<li><b>${esc(p.display)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`
         : `<p class="muted small">이번 분량에는 이야기 속 인물이 따로 나오지 않아요.</p>`}
     </section>
     ${s.people.length ? `
     <section class="tool-card sum-card">
       <h3 class="label">등장 인물 관계도</h3>
-      ${relationGraphHtml(s.people, s.rels)}
+      ${relationGraphHtml(s.graphPeople, s.rels)}
     </section>` : ""}
     ${places}
     ${songs}`;

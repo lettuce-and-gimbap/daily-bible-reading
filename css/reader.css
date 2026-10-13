@@ -221,3 +221,4 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .sum-places p { margin: 2px 0 0; font-size: .86rem; line-height: 1.55; }
 .sum-places p small { font-size: .72rem; font-weight: 700; color: var(--accent); margin-right: 6px; }
 .ai-note { text-align: center; }
+.sum-people b small { font-size: .7rem; font-weight: 600; color: var(--muted); margin-left: 5px; }

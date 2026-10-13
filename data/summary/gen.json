@@ -275,15 +275,15 @@
       "people": [
         {"name":"하나님","role":"언어를 흩으심","weight":3},
         {"name":"데라","role":"가족을 데리고 우르를 떠남","weight":2},
-        {"name":"아브라함","role":"데라의 아들, 아내는 사래","weight":2},
-        {"name":"사라","role":"아이를 낳지 못하던 아내","weight":2},
+        {"name":"아브람","role":"데라의 아들, 아내는 사래","weight":2},
+        {"name":"사래","role":"아이를 낳지 못하던 아내","weight":2},
         {"name":"롯","role":"데라의 손자","weight":1},
         {"name":"셈","role":"족보의 시작","weight":1}
       ],
       "rels": [
-        {"from":"아브라함","to":"데라","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"아브람","to":"데라","label":"아들","kind":"family","directed":true,"weight":2},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
+        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"바벨","where":"시날 평지","what":"교만한 탑을 쌓다 언어가 흩어진 곳","weight":3},
@@ -302,17 +302,17 @@
         {"title":"사래를 지키신 하나님","verses":"17-20","text":"하나님이 바로의 집에 재앙을 내리시고, 바로가 사래를 돌려보내요."}
       ],
       "people": [
-        {"name":"아브라함","role":"부르심을 따라 가나안으로 감","weight":3},
-        {"name":"사라","role":"바로의 궁에 끌려갔다 돌아옴","weight":2},
+        {"name":"아브람","role":"부르심을 따라 가나안으로 감","weight":3},
+        {"name":"사래","role":"바로의 궁에 끌려갔다 돌아옴","weight":2},
         {"name":"롯","role":"아브람과 함께 떠난 조카","weight":1},
         {"name":"바로","role":"사래를 데려갔다 재앙을 받음","weight":2},
         {"name":"하나님","role":"아브람을 부르고 지키심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"아브라함","label":"부르신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1},
-        {"from":"바로","to":"아브라함","label":"속은 왕","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"아브람","label":"부르신 분","kind":"ally","directed":true,"weight":3},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
+        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1},
+        {"from":"바로","to":"아브람","label":"속은 왕","kind":"conflict","directed":true,"weight":2}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"아브람이 부르심을 받고 떠난 곳","weight":2},
@@ -332,14 +332,14 @@
         {"title":"다시 주신 약속","verses":"14-18","text":"하나님이 사방의 땅과 티끌 같은 자손을 약속하시고 아브람은 헤브론에 제단을 쌓아요."}
       ],
       "people": [
-        {"name":"아브라함","role":"양보하고 약속을 다시 받음","weight":3},
+        {"name":"아브람","role":"양보하고 약속을 다시 받음","weight":3},
         {"name":"롯","role":"좋아 보이는 요단 들판을 택함","weight":3},
         {"name":"하나님","role":"땅과 자손을 약속하심","weight":2}
       ],
       "rels": [
-        {"from":"아브라함","to":"롯","label":"삼촌과 조카","kind":"family","directed":false,"weight":3},
-        {"from":"아브라함","to":"롯","label":"먼저 양보함","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"아브라함","label":"약속하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"아브람","to":"롯","label":"삼촌과 조카","kind":"family","directed":false,"weight":3},
+        {"from":"아브람","to":"롯","label":"먼저 양보함","kind":"ally","directed":true,"weight":2},
+        {"from":"하나님","to":"아브람","label":"약속하신 분","kind":"ally","directed":true,"weight":2}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km","what":"처음 제단으로 돌아와 다시 예배함","weight":1},
@@ -358,16 +358,16 @@
         {"title":"거절한 재물","verses":"21-24","text":"소돔 왕이 재물을 주려 하자 아브람은 하나님만 의지하겠다며 거절해요."}
       ],
       "people": [
-        {"name":"아브라함","role":"318명으로 롯을 구함","weight":3},
+        {"name":"아브람","role":"318명으로 롯을 구함","weight":3},
         {"name":"롯","role":"포로로 잡혀갔다 풀려남","weight":2},
         {"name":"멜기세덱","role":"살렘 왕, 지극히 높으신 하나님의 제사장","weight":3},
         {"name":"소돔 왕","role":"재물을 주려 했던 왕","weight":2},
         {"name":"그돌라오멜","role":"동방 연합군의 우두머리 왕","weight":2}
       ],
       "rels": [
-        {"from":"아브라함","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3},
-        {"from":"멜기세덱","to":"아브라함","label":"축복한 제사장","kind":"ally","directed":true,"weight":3},
-        {"from":"소돔 왕","to":"아브라함","label":"거절당한 왕","kind":"other","directed":true,"weight":2},
+        {"from":"아브람","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3},
+        {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3},
+        {"from":"소돔 왕","to":"아브람","label":"거절당한 왕","kind":"other","directed":true,"weight":2},
         {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2}
       ],
       "places": [
@@ -387,14 +387,14 @@
         {"title":"약속의 땅","verses":"18-21","text":"애굽 강부터 유브라데 강까지 땅을 자손에게 주리라 하세요."}
       ],
       "people": [
-        {"name":"아브라함","role":"약속을 믿어 의롭다 여겨짐","weight":3},
+        {"name":"아브람","role":"약속을 믿어 의롭다 여겨짐","weight":3},
         {"name":"하나님","role":"언약을 맺으신 분","weight":3},
         {"name":"엘리에셀","role":"상속자가 될 뻔한 종","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"아브라함","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"아브라함","to":"하나님","label":"믿은 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"엘리에셀","to":"아브라함","label":"집안 종","kind":"other","directed":true,"weight":1}
+        {"from":"하나님","to":"아브람","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3},
+        {"from":"아브람","to":"하나님","label":"믿은 사람","kind":"ally","directed":true,"weight":3},
+        {"from":"엘리에셀","to":"아브람","label":"집안 종","kind":"other","directed":true,"weight":1}
       ],
       "places": [
         {"name":"애굽 강","where":"가나안 남서쪽 경계","what":"약속하신 땅의 남쪽 끝","weight":1},
@@ -412,17 +412,17 @@
         {"title":"이스마엘의 탄생","verses":"15-16","text":"아브람이 여든여섯 살에 하갈이 이스마엘을 낳아요."}
       ],
       "people": [
-        {"name":"사라","role":"하갈을 주었다가 학대함","weight":3},
+        {"name":"사래","role":"하갈을 주었다가 학대함","weight":3},
         {"name":"하갈","role":"도망쳤다가 하나님을 만남","weight":3},
-        {"name":"아브라함","role":"사래의 말을 들음","weight":2},
+        {"name":"아브람","role":"사래의 말을 들음","weight":2},
         {"name":"여호와의 사자","role":"광야에서 하갈을 찾아옴","weight":2},
         {"name":"이스마엘","role":"하갈이 낳은 아들","weight":1}
       ],
       "rels": [
-        {"from":"하갈","to":"사라","label":"여종이자 갈등","kind":"conflict","directed":true,"weight":3},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
+        {"from":"하갈","to":"사래","label":"여종이자 갈등","kind":"conflict","directed":true,"weight":3},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
         {"from":"여호와의 사자","to":"하갈","label":"찾아온 이","kind":"ally","directed":true,"weight":3},
-        {"from":"이스마엘","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"이스마엘","to":"아브람","label":"아들","kind":"family","directed":true,"weight":2}
       ],
       "places": [
         {"name":"술 길","where":"가나안 남쪽에서 애굽 가는 광야 길","what":"도망친 하갈을 하나님이 만나신 샘이 있던 곳","weight":2},
@@ -445,6 +445,10 @@
         {"name":"사라","role":"새 이름을 받고 아들을 약속받음","weight":2},
         {"name":"이스마엘","role":"축복받고 할례를 받음","weight":1},
         {"name":"이삭","role":"언약을 이을 아들로 약속됨","weight":2}
+      ],
+      "renames": [
+        {"from":"아브람","to":"아브라함","verses":"5","why":"언약을 세우시며"},
+        {"from":"사래","to":"사라","verses":"15","why":"아들을 약속하시며"}
       ],
       "rels": [
         {"from":"하나님","to":"아브라함","label":"언약을 세우신 분","kind":"ally","directed":true,"weight":3},
@@ -862,7 +866,11 @@
       "people": [
         {"name":"야곱","role":"기도하고 밤새 씨름함","weight":3},
         {"name":"에서","role":"사백 명과 다가오는 형","weight":2},
-        {"name":"하나님","role":"씨름하고 새 이름을 주심","weight":3}
+        {"name":"하나님","role":"씨름하고 새 이름을 주심","weight":3},
+        {"name":"이스라엘","role":"씨름 뒤 받은 야곱의 새 이름","weight":2}
+      ],
+      "renames": [
+        {"from":"야곱","to":"이스라엘","verses":"28","why":"얍복 강 씨름 뒤"}
       ],
       "rels": [
         {"from":"야곱","to":"에서","label":"두려워한 동생","kind":"conflict","directed":true,"weight":3},

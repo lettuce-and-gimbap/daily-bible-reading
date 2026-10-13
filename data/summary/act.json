@@ -45,7 +45,7 @@
         {"title":"베드로의 기적","verses":"32-43","text":"베드로가 룻다에서 애니아를 고치고, 욥바에서 죽은 다비다를 살려요."}
       ],
       "people": [
-        {"name":"바울","role":"이때 이름은 사울. 박해자에서 전도자로","weight":3},
+        {"name":"사울","role":"박해자에서 전도자로","weight":3},
         {"name":"예수","role":"다메섹 길에서 사울을 부르심","weight":3},
         {"name":"아나니아","role":"두려워도 사울에게 안수함","weight":2},
         {"name":"바나바","role":"사울을 사도들에게 소개","weight":2},
@@ -53,10 +53,10 @@
         {"name":"다비다","role":"선행이 많던 욥바의 제자","weight":1}
       ],
       "rels": [
-        {"from":"바울","to":"예수","label":"박해하던 이","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"바울","label":"택하신 그릇","kind":"ally","directed":true,"weight":3},
-        {"from":"아나니아","to":"바울","label":"안수한 제자","kind":"ally","directed":true,"weight":2},
-        {"from":"바나바","to":"바울","label":"보증해 준 이","kind":"ally","directed":true,"weight":2},
+        {"from":"사울","to":"예수","label":"박해하던 이","kind":"conflict","directed":true,"weight":3},
+        {"from":"예수","to":"사울","label":"택하신 그릇","kind":"ally","directed":true,"weight":3},
+        {"from":"아나니아","to":"사울","label":"안수한 제자","kind":"ally","directed":true,"weight":2},
+        {"from":"바나바","to":"사울","label":"보증해 준 이","kind":"ally","directed":true,"weight":2},
         {"from":"베드로","to":"다비다","label":"살려 준 사도","kind":"ally","directed":true,"weight":1}
       ],
       "places": [

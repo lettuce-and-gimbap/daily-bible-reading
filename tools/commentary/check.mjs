@@ -95,6 +95,13 @@ for (const f of files) {
       if (typeof r.directed !== "boolean") err(w, "directed는 true/false");
       if (![1, 2, 3].includes(r.weight)) err(w, `weight ${r.weight}`);
     });
+    (c.renames || []).forEach((r) => {
+      const w = `${at} 이름 바뀜 ${r.from}→${r.to}`;
+      if (!r.from || !r.to || r.from === r.to) err(w, "from/to가 없거나 같음");
+      if (!names.has(r.to)) err(w, "새 이름이 people에 없음");
+      if (!r.why || len(r.why) > 12) err(w, `why ${len(r.why)}자 (1~12)`);
+      if (!/^\d{1,3}(-\d{1,3})?$/.test(r.verses || "")) err(w, `verses "${r.verses}"`);
+    });
     (c.places || []).forEach((p) => {
       const w = `${at} 지역 ${p.name}`;
       if (!p.name) return err(at, "이름 없는 지역");

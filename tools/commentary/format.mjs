@@ -6,7 +6,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const dataDir = join(dirname(fileURLToPath(import.meta.url)), "../../data/summary");
-const ORDER = ["type", "line", "story", "events", "people", "rels", "places"];
+const ORDER = ["type", "line", "story", "events", "people", "renames", "rels", "places"];
 
 export function formatBook(d) {
   const J = JSON.stringify;

@@ -151,7 +151,11 @@
         {"name":"요아스","role":"아들을 변호한 기드온의 아버지","weight":2},
         {"name":"미디안 사람들","role":"곡식을 약탈한 족속","weight":2},
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2},
-        {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2}
+        {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2},
+        {"name":"여룹바알","role":"바알 제단을 헌 기드온의 새 이름","weight":2}
+      ],
+      "renames": [
+        {"from":"기드온","to":"여룹바알","verses":"32","why":"바알 제단을 헐어"}
       ],
       "rels": [
         {"from":"여호와의 사자","to":"기드온","label":"부른 이","kind":"ally","directed":true,"weight":3},
