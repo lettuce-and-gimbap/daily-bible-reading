@@ -2,7 +2,7 @@
 // - 주요 등장 인물 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
 // - 필요한 설정: npx wrangler secret put GEMINI_API_KEY (worker/README.md 참고) — Google AI Studio 무료 키로 됨
-//   선택: SUMMARY_MODEL(기본 gemini-2.5-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 200)
+//   선택: SUMMARY_MODEL(기본 gemini-3.8-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 200)
 
 // 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
 const BOOK_TABLE = (
@@ -20,7 +20,7 @@ const BOOK_BY_CODE = Object.fromEntries(BOOK_TABLE.map((b) => [b.code, b]));
 
 const MAX_CHAPTERS = 30; // 한 번에 요약할 최대 장 수
 const STORY_LIMIT = 600;
-const DEFAULT_MODEL = "gemini-2.5-flash";
+const DEFAULT_MODEL = "gemini-3.8-flash";
 
 // "num.12-16,num.17" → { key, label, count } (잘못된 값이면 null)
 export function parseRanges(raw) {
@@ -98,18 +98,21 @@ const storyOk = (r) => r.story.length === 2 && storyLength(r.story) <= STORY_LIM
 
 async function askModel(env, label, count, feedback) {
   const model = env.SUMMARY_MODEL || DEFAULT_MODEL;
-  const generationConfig = { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 4000, temperature: 0.7 };
-  if (/flash/.test(model)) generationConfig.thinkingConfig = { thinkingBudget: 0 }; // 짧은 요약이라 생각 시간 없이 바로 씀
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
+  const generationConfig = { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 8000, temperature: 0.7 };
+  const body = (config) => JSON.stringify({
+    systemInstruction: { parts: [{ text: SYSTEM }] },
+    contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
+    generationConfig: config,
+  });
+  const call = (config) => fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
     headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: SYSTEM }] },
-      contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
-      generationConfig,
-    }),
+    body: body(config),
     signal: AbortSignal.timeout(90000),
   });
+  // 2.5 flash는 생각 시간을 끌 수 있어 끄고 시도. 모델이 그 설정을 받지 않으면(400) 설정 없이 다시 보냄
+  let res = /2\.5.*flash/.test(model) ? await call({ ...generationConfig, thinkingConfig: { thinkingBudget: 0 } }) : await call(generationConfig);
+  if (res.status === 400 && /2\.5.*flash/.test(model)) res = await call(generationConfig);
   if (res.status === 429 || res.status === 503) throw new SummaryError("요약 서버가 바빠요. 잠시 뒤 다시 시도해 주세요.", 503);
   if (!res.ok) {
     console.log("gemini error", res.status, (await res.text()).slice(0, 300));
