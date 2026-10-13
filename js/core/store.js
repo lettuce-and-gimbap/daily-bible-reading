@@ -84,9 +84,27 @@ function planSequence(plan) {
   return seq;
 }
 
+// 시편 119편(176절)은 길어서 그날은 이 한 편만 읽음. 바로 앞날은 하루 장 수보다 짧을 수 있음
+const SOLO_CHAPTERS = new Set([chapterIndex("psa", 119)]);
+
 function planDays(plan) {
-  const seq = planSequence(plan);
   const days = [];
-  for (let i = 0; i < seq.length; i += plan.perDay) days.push(seq.slice(i, i + plan.perDay));
+  let cur = [];
+  for (const i of planSequence(plan)) {
+    if (SOLO_CHAPTERS.has(i)) {
+      if (cur.length) days.push(cur);
+      days.push([i]);
+      cur = [];
+      continue;
+    }
+    cur.push(i);
+    if (cur.length === plan.perDay) { days.push(cur); cur = []; }
+  }
+  if (cur.length) days.push(cur);
   return days;
+}
+
+// 장이 들어 있는 Day 번호(0부터). 하루 장 수로 나누면 시편 119편처럼 혼자 읽는 날에서 어긋나서 직접 찾음
+function dayOfChapter(days, idx) {
+  return Math.max(0, days.findIndex((d) => d.includes(idx)));
 }

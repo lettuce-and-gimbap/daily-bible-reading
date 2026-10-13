@@ -17,7 +17,7 @@ function prettyDate(str) {
 }
 
 function chapLabel(i) {
-  return `${CHAPTERS[i].book.name} ${CHAPTERS[i].chap}장`;
+  return `${CHAPTERS[i].book.name} ${CHAPTERS[i].chap}${chapUnit(CHAPTERS[i].book)}`;
 }
 
 function versionName(code) {

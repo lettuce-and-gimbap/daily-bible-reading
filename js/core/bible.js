@@ -66,6 +66,11 @@ function godpiaQtUrl(dateStr) {
   return "https://www.godpia.com/qt/qt.asp" + (dateStr ? "?D=" + dateStr : "");
 }
 
+// 시편은 '편'으로 셈 (시편 23편)
+function chapUnit(book) {
+  return book.code === "psa" ? "편" : "장";
+}
+
 // 장 번호 목록을 "창세기 1–5장, 출애굽기 1장" 형태로 압축
 function describeChapters(indices) {
   const sorted = [...indices].sort((a, b) => a - b);
@@ -82,8 +87,8 @@ function describeChapters(indices) {
     const end = CHAPTERS[sorted[j]];
     parts.push(
       start.chap === end.chap
-        ? `${start.book.name} ${start.chap}장`
-        : `${start.book.name} ${start.chap}–${end.chap}장`
+        ? `${start.book.name} ${start.chap}${chapUnit(start.book)}`
+        : `${start.book.name} ${start.chap}–${end.chap}${chapUnit(start.book)}`
     );
     i = j + 1;
   }
@@ -91,5 +96,5 @@ function describeChapters(indices) {
 }
 
 if (typeof module !== "undefined") {
-  module.exports = { BOOKS, VERSIONS, versionFor, CHAPTERS, TOTAL_CHAPTERS, chapterIndex, godpiaReadUrl, godpiaQtUrl, describeChapters };
+  module.exports = { BOOKS, VERSIONS, versionFor, CHAPTERS, TOTAL_CHAPTERS, chapterIndex, chapUnit, godpiaReadUrl, godpiaQtUrl, describeChapters };
 }

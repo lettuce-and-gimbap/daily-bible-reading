@@ -66,7 +66,7 @@ function buildReader() {
     const goTo = (p) => {
       if (p < 0 || p >= pr.seq.length) return;
       currentChapter = pr.seq[p];
-      viewingDay = Math.floor(p / state.plan.perDay);
+      viewingDay = dayOfChapter(pr.days, currentChapter);
     };
     let reload = true;
     if (b.id === "r-prev") goTo(pos - 1);
@@ -95,9 +95,8 @@ function buildReader() {
     if (t.dataset.sumRetry) { delete summaryMem[t.dataset.sumRetry]; renderReaderSheet(); return; }
     let reload = false;
     if (t.dataset.chap !== undefined) {
-      const seq = planSequence(state.plan);
       currentChapter = Number(t.dataset.chap);
-      viewingDay = Math.floor(seq.indexOf(currentChapter) / state.plan.perDay);
+      viewingDay = dayOfChapter(planDays(state.plan), currentChapter);
       closeSheet();
       reload = true;
     } else if (t.dataset.day !== undefined) {
@@ -239,7 +238,7 @@ function refreshReader(reload = false) {
   let main;
   if (!isRead) {
     main = `<button class="btn primary big" id="r-check">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>${c.chap}장 읽었어요</button>`;
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>${c.chap}${chapUnit(c.book)} 읽었어요</button>`;
   } else if (dayDone && viewingDay < pr.days.length - 1) {
     main = `<button class="btn primary big" id="r-nextday">🎉 완료! 다음 분량 읽기</button>
       <button class="btn text" id="r-undo">취소</button>`;
