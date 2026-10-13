@@ -1,8 +1,8 @@
-// 오늘 분량 미리 보기: 통독할 장들을 Claude에게 요약시켜 앱에 돌려줌
+// 오늘 분량 미리 보기: 통독할 장들을 Google Gemini에게 요약시켜 앱에 돌려줌
 // - 주요 등장 인물 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
-// - 필요한 설정: npx wrangler secret put ANTHROPIC_API_KEY (worker/README.md 참고)
-//   선택: SUMMARY_MODEL(기본 claude-sonnet-5-5), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 300)
+// - 필요한 설정: npx wrangler secret put GEMINI_API_KEY (worker/README.md 참고) — Google AI Studio 무료 키로 됨
+//   선택: SUMMARY_MODEL(기본 gemini-2.5-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 200)
 
 // 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
 const BOOK_TABLE = (
@@ -20,7 +20,7 @@ const BOOK_BY_CODE = Object.fromEntries(BOOK_TABLE.map((b) => [b.code, b]));
 
 const MAX_CHAPTERS = 30; // 한 번에 요약할 최대 장 수
 const STORY_LIMIT = 600;
-const DEFAULT_MODEL = "claude-sonnet-5-5";
+const DEFAULT_MODEL = "gemini-2.5-flash";
 
 // "num.12-16,num.17" → { key, label, count } (잘못된 값이면 null)
 export function parseRanges(raw) {
@@ -50,15 +50,15 @@ const SYSTEM = `너는 성경 통독 앱의 도우미야. 오늘 읽을 성경 �
 - songs: 이 분량의 분위기·주제와 어울리는 찬양 2곡. 새찬송가·통일찬송가 곡은 빼고, 한국 교회에서 실제로 널리 불리는 CCM·워십 곡(예수전도단, 마커스, 어노인팅, 제이어스, 소망, 이천 등)만 고른다. 제목과 아티스트가 확실하지 않은 곡은 쓰지 말고 확실한 다른 곡을 고른다. why는 40자 안쪽으로 왜 어울리는지.
 - 이모지와 마크다운 기호는 쓰지 않는다.`;
 
+// Gemini 응답 스키마 (OpenAPI 형식 일부만 지원해서 additionalProperties는 쓰지 않음)
 const SCHEMA = {
-  type: "object",
+  type: "OBJECT",
   properties: {
-    people: { type: "array", items: { type: "object", properties: { name: { type: "string" }, role: { type: "string" } }, required: ["name", "role"], additionalProperties: false } },
-    story: { type: "array", items: { type: "string" } },
-    songs: { type: "array", items: { type: "object", properties: { title: { type: "string" }, artist: { type: "string" }, why: { type: "string" } }, required: ["title", "artist", "why"], additionalProperties: false } },
+    people: { type: "ARRAY", items: { type: "OBJECT", properties: { name: { type: "STRING" }, role: { type: "STRING" } }, required: ["name", "role"] } },
+    story: { type: "ARRAY", items: { type: "STRING" } },
+    songs: { type: "ARRAY", items: { type: "OBJECT", properties: { title: { type: "STRING" }, artist: { type: "STRING" }, why: { type: "STRING" } }, required: ["title", "artist", "why"] } },
   },
   required: ["people", "story", "songs"],
-  additionalProperties: false,
 };
 
 const clip = (v, n) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim().slice(0, n) : "");
@@ -96,28 +96,32 @@ export function cleanSummary(raw) {
 const storyLength = (story) => story.reduce((n, p) => n + p.length, 0);
 const storyOk = (r) => r.story.length === 2 && storyLength(r.story) <= STORY_LIMIT;
 
-async function askClaude(env, label, count, feedback) {
-  const messages = [{ role: "user", content: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }];
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+async function askModel(env, label, count, feedback) {
+  const model = env.SUMMARY_MODEL || DEFAULT_MODEL;
+  const generationConfig = { responseMimeType: "application/json", responseSchema: SCHEMA, maxOutputTokens: 4000, temperature: 0.7 };
+  if (/flash/.test(model)) generationConfig.thinkingConfig = { thinkingBudget: 0 }; // 짧은 요약이라 생각 시간 없이 바로 씀
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
-    headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+    headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
     body: JSON.stringify({
-      model: env.SUMMARY_MODEL || DEFAULT_MODEL,
-      max_tokens: 6000,
-      system: SYSTEM,
-      messages,
-      output_config: { effort: "low", format: { type: "json_schema", schema: SCHEMA } },
+      systemInstruction: { parts: [{ text: SYSTEM }] },
+      contents: [{ role: "user", parts: [{ text: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }] }],
+      generationConfig,
     }),
     signal: AbortSignal.timeout(90000),
   });
-  if (res.status === 429 || res.status === 529 || res.status === 503) throw new SummaryError("요약 서버가 바빠요. 잠시 뒤 다시 시도해 주세요.", 503);
+  if (res.status === 429 || res.status === 503) throw new SummaryError("요약 서버가 바빠요. 잠시 뒤 다시 시도해 주세요.", 503);
   if (!res.ok) {
-    console.log("anthropic error", res.status, (await res.text()).slice(0, 300));
+    console.log("gemini error", res.status, (await res.text()).slice(0, 300));
     throw new SummaryError("요약을 만들지 못했어요.", 502);
   }
   const data = await res.json();
-  if (data.stop_reason === "refusal") throw new SummaryError("이 분량은 요약을 만들지 못했어요.", 502);
-  const text = (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("");
+  const text = ((data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [])
+    .map((p) => p.text || "").join("");
+  if (!text) {
+    console.log("gemini empty", JSON.stringify({ finish: data.candidates && data.candidates[0] && data.candidates[0].finishReason, block: data.promptFeedback }));
+    return null;
+  }
   try {
     return cleanSummary(JSON.parse(text));
   } catch {
@@ -131,10 +135,10 @@ class SummaryError extends Error {
 }
 
 export async function generate(env, label, count) {
-  let r = await askClaude(env, label, count);
+  let r = await askModel(env, label, count);
   if (!r || !storyOk(r)) {
     const why = !r ? "형식이 맞지 않았어" : r.story.length !== 2 ? "story가 2문단이 아니었어" : `story가 ${storyLength(r.story)}자로 600자를 넘었어`;
-    const retry = await askClaude(env, label, count, `지난 답은 ${why}. 규칙을 다시 지켜서 처음부터 다시 써 줘.`);
+    const retry = await askModel(env, label, count, `지난 답은 ${why}. 규칙을 다시 지켜서 처음부터 다시 써 줘.`);
     if (retry) r = retry;
   }
   if (!r) throw new SummaryError("요약을 만들지 못했어요.", 502);
@@ -152,13 +156,13 @@ export async function dailySummary(url, env, json, originOk, today) {
   const hit = await env.SUBS.get(cacheKey, "json");
   if (hit) return json({ ...hit, label: parsed.label, cached: true });
 
-  if (!env.ANTHROPIC_API_KEY) return json({ error: "요약 기능이 아직 켜지지 않았어요. (서버에 ANTHROPIC_API_KEY 등록 필요)", code: "not_configured" }, 503);
+  if (!env.GEMINI_API_KEY) return json({ error: "요약 기능이 아직 켜지지 않았어요. (서버에 GEMINI_API_KEY 등록 필요)", code: "not_configured" }, 503);
   if (!originOk) return json({ error: "허용되지 않은 주소" }, 403);
 
   // 하루에 새로 만들 수 있는 개수 제한 (비용 보호)
   const capKey = `sumcap:${today}`;
   const used = Number(await env.SUBS.get(capKey)) || 0;
-  if (used >= (Number(env.SUMMARY_DAILY_CAP) || 300)) return json({ error: "오늘 새로 만들 수 있는 요약을 다 썼어요. 내일 다시 시도해 주세요.", code: "cap" }, 429);
+  if (used >= (Number(env.SUMMARY_DAILY_CAP) || 200)) return json({ error: "오늘 새로 만들 수 있는 요약을 다 썼어요. 내일 다시 시도해 주세요.", code: "cap" }, 429);
   await env.SUBS.put(capKey, String(used + 1), { expirationTtl: 172800 });
 
   try {
