@@ -749,8 +749,7 @@
       ],
       "rels": [
         {"from":"사울","to":"엔돌의 신접한 여인","label":"찾아간 왕","kind":"other","directed":true,"weight":3},
-        {"from":"사무엘","to":"사울","label":"죽음을 예고한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"아기스","to":"다윗","label":"함께 가자는 왕","kind":"ally","directed":true,"weight":1}
+        {"from":"사무엘","to":"사울","label":"죽음을 알린 이","kind":"conflict","directed":true,"weight":3}
       ],
       "places": [
         {"name":"엔돌","where":"이스르엘 골짜기 북쪽","what":"신접한 여인을 찾아간 곳","weight":3},
