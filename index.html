@@ -14,10 +14,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="css/base.css?v=24">
-  <link rel="stylesheet" href="css/setup.css?v=24">
-  <link rel="stylesheet" href="css/reader.css?v=24">
-  <link rel="stylesheet" href="css/stats.css?v=24">
+  <link rel="stylesheet" href="css/base.css?v=25">
+  <link rel="stylesheet" href="css/setup.css?v=25">
+  <link rel="stylesheet" href="css/reader.css?v=25">
+  <link rel="stylesheet" href="css/stats.css?v=25">
 </head>
 <body>
   <header class="topbar">
@@ -25,11 +25,14 @@
       <img src="icons/icon-192.png" alt="" width="30" height="30">
       <span>경건생활</span>
     </a>
-    <nav class="tabs" aria-label="메뉴">
-      <a href="#today" data-route="today">통독</a>
-      <a href="#qt" data-route="qt">QT</a>
-      <a href="#stats" data-route="stats">현황</a>
-    </nav>
+    <div class="topbar-right">
+      <nav class="tabs" aria-label="메뉴">
+        <a href="#today" data-route="today">통독</a>
+        <a href="#qt" data-route="qt">QT</a>
+        <a href="#stats" data-route="stats">현황</a>
+      </nav>
+      <button class="reload-btn" id="app-reload" aria-label="앱 새로 불러오기" title="앱 새로 불러오기">↻</button>
+    </div>
   </header>
 
   <main id="app"></main>
@@ -40,21 +43,21 @@
   </footer>
 
   <!-- 순서가 중요: core(데이터·저장) → shared(공통) → features(화면별 기능) → main(시작) -->
-  <script src="js/core/bible.js?v=24"></script>
-  <script src="js/core/store.js?v=24"></script>
-  <script src="js/core/config.js?v=24"></script>
-  <script src="js/shared/state.js?v=24"></script>
-  <script src="js/shared/godpia.js?v=24"></script>
-  <script src="js/shared/ui.js?v=24"></script>
-  <script src="js/features/setup.js?v=24"></script>
-  <script src="js/features/reader.js?v=24"></script>
-  <script src="js/features/verses.js?v=24"></script>
-  <script src="js/features/memopick.js?v=24"></script>
-  <script src="js/features/summary.js?v=24"></script>
-  <script src="js/features/qt.js?v=24"></script>
-  <script src="js/features/stats.js?v=24"></script>
-  <script src="js/features/export.js?v=24"></script>
-  <script src="js/features/reminder.js?v=24"></script>
-  <script src="js/main.js?v=24"></script>
+  <script src="js/core/bible.js?v=25"></script>
+  <script src="js/core/store.js?v=25"></script>
+  <script src="js/core/config.js?v=25"></script>
+  <script src="js/shared/state.js?v=25"></script>
+  <script src="js/shared/godpia.js?v=25"></script>
+  <script src="js/shared/ui.js?v=25"></script>
+  <script src="js/features/setup.js?v=25"></script>
+  <script src="js/features/reader.js?v=25"></script>
+  <script src="js/features/verses.js?v=25"></script>
+  <script src="js/features/memopick.js?v=25"></script>
+  <script src="js/features/summary.js?v=25"></script>
+  <script src="js/features/qt.js?v=25"></script>
+  <script src="js/features/stats.js?v=25"></script>
+  <script src="js/features/export.js?v=25"></script>
+  <script src="js/features/reminder.js?v=25"></script>
+  <script src="js/main.js?v=25"></script>
 </body>
 </html>

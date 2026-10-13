@@ -70,6 +70,14 @@ button svg, a svg, .step-pill svg, .t-st svg, .qt-today svg {
 }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.03em; }
 .brand img { border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
+.topbar-right { display: flex; align-items: center; gap: 8px; }
+.reload-btn {
+  flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--surface); color: var(--muted); font-size: 1.05rem; line-height: 1; cursor: pointer; padding: 0;
+}
+.reload-btn:active { transform: scale(.94); }
+.reload-btn.spin { animation: reload-spin 0.9s linear infinite; opacity: .6; }
+@keyframes reload-spin { to { transform: rotate(360deg); } }
 .tabs { display: flex; gap: 2px; background: var(--surface-2); padding: 3px; border-radius: 12px; }
 .tabs a {
   padding: 6px 16px; border-radius: 9px; text-decoration: none; color: var(--muted);

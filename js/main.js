@@ -15,3 +15,16 @@ function route() {
 window.addEventListener("hashchange", route);
 
 route();
+
+// 앱 새로 불러오기: 브라우저에 남은 예전 화면 파일까지 다시 받은 뒤 새로고침 (기록은 이 기기에 그대로 있음)
+document.getElementById("app-reload").addEventListener("click", async (e) => {
+  const btn = e.currentTarget;
+  if (btn.classList.contains("spin")) return;
+  btn.classList.add("spin");
+  const urls = [location.href.split("#")[0], ...[...document.querySelectorAll("script[src], link[rel=stylesheet]")].map((el) => el.src || el.href)];
+  await Promise.all([
+    ...urls.map((u) => fetch(u, { cache: "reload" }).catch(() => {})),
+    new Promise((r) => setTimeout(r, 450)), // 방금 쓴 메모가 저장될 시간
+  ]);
+  location.reload();
+});
