@@ -197,3 +197,9 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .sum-links b { font-size: .84rem; }
 .sum-links span { display: flex; flex-wrap: wrap; gap: 6px; }
 .sum-chip { text-decoration: none; font-size: .82rem; font-weight: 600; padding: 5px 11px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--accent); }
+
+/* 요약 새로 만들기 버튼 */
+.sum-headrow { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sum-refresh { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 1rem; line-height: 1; cursor: pointer; padding: 0; }
+.sum-refresh:active { transform: scale(.94); }
+.sum-refresh.spin { animation: sum-spin 0.9s linear infinite; opacity: .6; cursor: default; }

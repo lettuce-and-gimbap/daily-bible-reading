@@ -88,6 +88,10 @@ function buildReader() {
   body.addEventListener("click", async (e) => {
     const t = e.target.closest("button, [data-day], [data-chap]");
     if (!t) return;
+    if (t.dataset.sumRefresh) {
+      if (!summaryMem[t.dataset.sumRefresh]) { loadSummary(t.dataset.sumRefresh, true); renderReaderSheet(); }
+      return;
+    }
     if (t.dataset.sumRetry) { delete summaryMem[t.dataset.sumRetry]; renderReaderSheet(); return; }
     let reload = false;
     if (t.dataset.chap !== undefined) {

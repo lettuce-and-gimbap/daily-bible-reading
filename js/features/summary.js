@@ -32,10 +32,11 @@ function summaryRanges(day) {
   return segs.map((s) => `${s.code}.${s.lo}-${s.hi}`).join(",");
 }
 
-async function loadSummary(key) {
-  summaryMem[key] = { status: "loading" };
+async function loadSummary(key, refresh = false) {
+  summaryMem[key] = { status: "loading", refresh };
+  let failed = "";
   try {
-    const res = await fetch(`${PUSH_SERVER}/summary?r=${encodeURIComponent(key)}`, {
+    const res = await fetch(`${PUSH_SERVER}/summary?r=${encodeURIComponent(key)}${refresh ? "&refresh=1" : ""}`, {
       signal: window.AbortSignal && AbortSignal.timeout ? AbortSignal.timeout(120000) : undefined,
     });
     const data = await res.json().catch(() => ({}));
@@ -43,7 +44,10 @@ async function loadSummary(key) {
     writeSummaryStore(key, { people: data.people, relations: data.relations || [], places: data.places || [], story: data.story, songs: data.songs });
     delete summaryMem[key];
   } catch (e) {
-    summaryMem[key] = { status: "error", error: e.name === "TimeoutError" ? "시간이 너무 오래 걸렸어요." : e.message || "불러오지 못했어요.", code: e.code };
+    failed = e.name === "TimeoutError" ? "시간이 너무 오래 걸렸어요." : e.message || "불러오지 못했어요.";
+    // 새로 만들기가 실패하면 보던 요약은 그대로 두고 알려만 줌
+    if (refresh) { delete summaryMem[key]; showToast(`요약을 새로 만들지 못했어요. ${failed}`); }
+    else summaryMem[key] = { status: "error", error: failed, code: e.code };
   }
   if (sheetTab === "summary") renderReaderSheet(); // 그 사이 다른 탭으로 옮겼으면 건드리지 않음
 }
@@ -169,7 +173,11 @@ function songLink(s) {
 // 요약 탭 그리기 (reader.js의 renderReaderSheet에서 부름)
 function renderSummaryTab(body, day) {
   setSheetTitle(READER_TABS);
-  const head = `<div class="sum-head"><small>Day ${viewingDay + 1}</small><b>${esc(describeChapters(day))}</b></div>`;
+  const key0 = summaryRanges(day);
+  const busy = (summaryMem[key0] || {}).refresh;
+  const head = `<div class="sum-headrow"><div class="sum-head"><small>Day ${viewingDay + 1}</small><b>${esc(describeChapters(day))}</b></div>
+    ${day.length <= SUMMARY_MAX_CHAPTERS && PUSH_SERVER && readSummaryStore()[key0]
+      ? `<button class="sum-refresh ${busy ? "spin" : ""}" data-sum-refresh="${esc(key0)}" ${busy ? "disabled" : ""} aria-label="요약 새로 만들기" title="요약 새로 만들기">↻</button>` : ""}</div>`;
   if (day.length > SUMMARY_MAX_CHAPTERS) {
     body.innerHTML = `${head}<p class="muted small">하루 분량이 ${SUMMARY_MAX_CHAPTERS}장을 넘어서 요약을 만들 수 없어요.</p>`;
     return;

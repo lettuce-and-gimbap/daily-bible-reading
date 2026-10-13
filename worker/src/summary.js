@@ -174,7 +174,10 @@ export async function dailySummary(url, env, json, originOk, today) {
   if (!parsed) return json({ error: "잘못된 분량" }, 400);
   const cacheKey = `sum:v3:${parsed.key}`;
   const hit = await env.SUBS.get(cacheKey, "json");
-  if (hit) return json({ ...hit, label: parsed.label, cached: true });
+  // refresh=1: 저장된 요약을 버리고 새로 만듦. 연타로 비용이 새지 않게 1분 안에 다시 요청하면 저장본을 돌려줌
+  const freshKey = `sumfresh:${parsed.key}`;
+  const refresh = url.searchParams.get("refresh") === "1";
+  if (hit && (!refresh || await env.SUBS.get(freshKey))) return json({ ...hit, label: parsed.label, cached: true });
 
   if (!env.GEMINI_API_KEY) return json({ error: "요약 기능이 아직 켜지지 않았어요. (서버에 GEMINI_API_KEY 등록 필요)", code: "not_configured" }, 503);
   if (!originOk) return json({ error: "허용되지 않은 주소" }, 403);
@@ -188,6 +191,7 @@ export async function dailySummary(url, env, json, originOk, today) {
   try {
     const summary = await generate(env, parsed.label, parsed.count);
     await env.SUBS.put(cacheKey, JSON.stringify(summary));
+    if (refresh) await env.SUBS.put(freshKey, "1", { expirationTtl: 60 });
     return json({ ...summary, label: parsed.label, cached: false });
   } catch (e) {
     if (e instanceof SummaryError) return json({ error: e.message }, e.status);
