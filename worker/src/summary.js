@@ -1,5 +1,5 @@
 // 오늘 분량 미리 보기: 통독할 장들을 Google Gemini에게 요약시켜 앱에 돌려줌
-// - 주요 등장 인물 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양
+// - 주요 등장 인물 · 인물 관계도 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양 / 주요 지역
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
 // - 필요한 설정: npx wrangler secret put GEMINI_API_KEY (worker/README.md 참고) — Google AI Studio 무료 키로 됨
 //   선택: SUMMARY_MODEL(기본 gemini-3.8-flash), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 200)
@@ -45,7 +45,9 @@ const SYSTEM = `너는 성경 통독 앱의 도우미야. 오늘 읽을 성경 �
 
 규칙
 - 성경에 실제로 나오는 내용만 쓴다. 확실하지 않은 내용은 지어내지 말고 뺀다. 여러 장이면 분량 전체를 한 번에 요약한다.
-- people: 이번 분량에 실제로 나오는 주요 인물 3~6명. name은 개역개정 표기, role은 20자 안쪽으로 이번 분량에서 한 일.
+- people: 이번 분량에 실제로 나오는 주요 인물 3~8명. name은 개역개정 표기(같은 사람을 두 번 쓰지 않는다), role은 20자 안쪽으로 이번 분량에서 한 일.
+- relations: people끼리의 관계도에 쓸 관계 4~10개. 성경에 실제로 나오는 관계만 쓴다. from과 to는 people의 name과 글자까지 똑같아야 한다. label은 10자 안쪽으로 "from은 to의 ○○"처럼 읽히게 쓴다(예: from 아론, to 모세, label 형 → "아론은 모세의 형"). kind는 family(가족·친척), ally(돕거나 함께함·스승과 제자), conflict(대립·반역·갈등), other 중 하나. 위 문장처럼 방향이 있는 관계면 directed를 true, 서로 같은 관계(형제, 동역자, 갈등)면 false.
+- places: 이번 분량의 주요 지역 2~5곳. name은 개역개정 표기, note는 25자 안쪽으로 이곳에서 일어난 일이나 위치 설명.
 - story: 정확히 2문단. 두 문단을 합쳐 공백 포함 520자 안쪽(절대 600자를 넘지 않는다). 중학교 2학년에게 이야기해 주듯 쉬운 입말(해요체)로 쓴다. 어려운 한자어는 풀어 쓴다(예: 언약 → 하나님과 한 약속, 성막 → 하나님을 만나는 천막, 제사장 → 하나님 앞에서 사람들을 대신하는 사람). 1문단은 무슨 일이 있었는지 흐름, 2문단은 이 분량에서 하나님은 어떤 분이고 사람들은 어떻게 반응했는지. 훈계하거나 설교하는 말투는 피한다.
 - songs: 이 분량의 분위기·주제와 어울리는 찬양 2곡. 새찬송가·통일찬송가 곡은 빼고, 한국 교회에서 실제로 널리 불리는 CCM·워십 곡(예수전도단, 마커스, 어노인팅, 제이어스, 소망, 이천 등)만 고른다. 제목과 아티스트가 확실하지 않은 곡은 쓰지 말고 확실한 다른 곡을 고른다. why는 40자 안쪽으로 왜 어울리는지.
 - 이모지와 마크다운 기호는 쓰지 않는다.`;
@@ -55,10 +57,12 @@ const SCHEMA = {
   type: "OBJECT",
   properties: {
     people: { type: "ARRAY", items: { type: "OBJECT", properties: { name: { type: "STRING" }, role: { type: "STRING" } }, required: ["name", "role"] } },
+    relations: { type: "ARRAY", items: { type: "OBJECT", properties: { from: { type: "STRING" }, to: { type: "STRING" }, label: { type: "STRING" }, kind: { type: "STRING", enum: ["family", "ally", "conflict", "other"] }, directed: { type: "BOOLEAN" } }, required: ["from", "to", "label", "kind", "directed"] } },
+    places: { type: "ARRAY", items: { type: "OBJECT", properties: { name: { type: "STRING" }, note: { type: "STRING" } }, required: ["name", "note"] } },
     story: { type: "ARRAY", items: { type: "STRING" } },
     songs: { type: "ARRAY", items: { type: "OBJECT", properties: { title: { type: "STRING" }, artist: { type: "STRING" }, why: { type: "STRING" } }, required: ["title", "artist", "why"] } },
   },
-  required: ["people", "story", "songs"],
+  required: ["people", "relations", "places", "story", "songs"],
 };
 
 const clip = (v, n) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim().slice(0, n) : "");
@@ -83,14 +87,26 @@ export function fitStory(paras, limit = STORY_LIMIT) {
 // 모델이 돌려준 값을 앱이 쓰는 모양으로 정리. 쓸 수 없으면 null
 export function cleanSummary(raw) {
   if (!raw || typeof raw !== "object") return null;
+  const seenName = new Set();
   const people = (Array.isArray(raw.people) ? raw.people : [])
-    .map((p) => ({ name: clip(p && p.name, 20), role: clip(p && p.role, 40) })).filter((p) => p.name).slice(0, 8);
+    .map((p) => ({ name: clip(p && p.name, 20), role: clip(p && p.role, 40) }))
+    .filter((p) => p.name && !seenName.has(p.name) && seenName.add(p.name)).slice(0, 8);
+  // 관계는 people에 있는 이름끼리만 (그래야 관계도에 그릴 수 있음)
+  const KINDS = ["family", "ally", "conflict", "other"];
+  const seenRel = new Set();
+  const relations = (Array.isArray(raw.relations) ? raw.relations : [])
+    .map((r) => ({ from: clip(r && r.from, 20), to: clip(r && r.to, 20), label: clip(r && r.label, 14),
+      kind: KINDS.includes(r && r.kind) ? r.kind : "other", directed: !!(r && r.directed) }))
+    .filter((r) => r.label && r.from !== r.to && seenName.has(r.from) && seenName.has(r.to)
+      && !seenRel.has(`${r.from}|${r.to}|${r.label}`) && seenRel.add(`${r.from}|${r.to}|${r.label}`)).slice(0, 12);
+  const places = (Array.isArray(raw.places) ? raw.places : [])
+    .map((p) => ({ name: clip(p && p.name, 20), note: clip(p && p.note, 50) })).filter((p) => p.name).slice(0, 6);
   const story = (Array.isArray(raw.story) ? raw.story : []).map((s) => clip(s, 700)).filter(Boolean);
   const songs = (Array.isArray(raw.songs) ? raw.songs : [])
     .map((s) => ({ title: clip(s && s.title, 60), artist: clip(s && s.artist, 40), why: clip(s && s.why, 80) }))
     .filter((s) => s.title && s.artist).slice(0, 3);
   if (people.length < 1 || story.length < 1 || songs.length < 1) return null;
-  return { people, story, songs };
+  return { people, relations, places, story, songs };
 }
 
 const storyLength = (story) => story.reduce((n, p) => n + p.length, 0);
@@ -155,7 +171,7 @@ export async function generate(env, label, count) {
 export async function dailySummary(url, env, json, originOk, today) {
   const parsed = parseRanges(url.searchParams.get("r"));
   if (!parsed) return json({ error: "잘못된 분량" }, 400);
-  const cacheKey = `sum:v1:${parsed.key}`;
+  const cacheKey = `sum:v2:${parsed.key}`;
   const hit = await env.SUBS.get(cacheKey, "json");
   if (hit) return json({ ...hit, label: parsed.label, cached: true });
 

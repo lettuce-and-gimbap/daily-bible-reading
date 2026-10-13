@@ -179,3 +179,21 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .mp-item.mp-note .mp-body b { font-weight: 600; }
 .mp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .mp-actions .btn.text { margin-left: auto; }
+
+/* 인물 관계도 · 주요 지역 · 주석 링크 */
+.rg { width: 100%; height: auto; display: block; }
+.rg-node rect { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.rg-node text { fill: var(--ink); font-size: 13px; font-weight: 700; }
+.rg-label { font-size: 11.5px; font-weight: 700; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
+.rg-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font-size: .76rem; color: var(--muted); }
+.rg-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.rg-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.rg-legend em { font-style: normal; flex-basis: 100%; }
+.sum-places { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sum-places li { display: grid; gap: 1px; }
+.sum-places b { font-size: .92rem; }
+.sum-places span { font-size: .84rem; color: var(--muted); line-height: 1.45; }
+.sum-links { display: grid; gap: 6px; }
+.sum-links b { font-size: .84rem; }
+.sum-links span { display: flex; flex-wrap: wrap; gap: 6px; }
+.sum-chip { text-decoration: none; font-size: .82rem; font-weight: 600; padding: 5px 11px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--accent); }
