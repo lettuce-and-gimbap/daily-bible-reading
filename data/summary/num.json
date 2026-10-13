@@ -61,7 +61,9 @@
         {"name":"아론","role":"레위인의 도움을 받는 제사장","weight":2},
         {"name":"엘르아살","role":"제사장, 레위인의 지휘자","weight":2},
         {"name":"이다말","role":"제사장","weight":1},
-        {"name":"레위 지파","role":"처음 난 자 대신 하나님의 것","weight":3}
+        {"name":"레위 지파","role":"처음 난 자 대신 하나님의 것","weight":3},
+        {"name":"나답","role":"다른 불로 죽은 아론의 아들","weight":1},
+        {"name":"아비후","role":"다른 불로 죽은 아론의 아들","weight":1}
       ],
       "rels": [
         {"from":"레위 지파","to":"아론","label":"돕는 지파","kind":"ally","directed":true,"weight":3},
@@ -211,11 +213,13 @@
       "people": [
         {"name":"모세","role":"행진을 이끌고 기도함","weight":3},
         {"name":"호밥","role":"길잡이로 부탁받은 처남","weight":2},
-        {"name":"나손","role":"앞장선 유다 진영의 지휘관","weight":1}
+        {"name":"나손","role":"앞장선 유다 진영의 지휘관","weight":1},
+        {"name":"르우엘","role":"호밥의 아버지, 모세의 장인","weight":1}
       ],
       "rels": [
         {"from":"모세","to":"호밥","label":"부탁한 매부","kind":"ally","directed":true,"weight":2},
-        {"from":"나손","to":"모세","label":"앞장선 지휘관","kind":"ally","directed":true,"weight":1}
+        {"from":"나손","to":"모세","label":"앞장선 지휘관","kind":"ally","directed":true,"weight":1},
+        {"from":"호밥","to":"르우엘","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"시내 광야","where":"시내 산 앞","what":"약 일 년 머물다 떠난 곳","weight":2},
@@ -265,13 +269,15 @@
         {"name":"미리암","role":"모세를 비방하다 나병에 걸림","weight":3},
         {"name":"아론","role":"함께 비방하고 용서를 구함","weight":2},
         {"name":"모세","role":"온유하게 누이를 위해 기도함","weight":3},
-        {"name":"하나님","role":"모세를 변호하심","weight":2}
+        {"name":"하나님","role":"모세를 변호하심","weight":2},
+        {"name":"구스 여인","role":"모세가 맞은 아내","weight":1}
       ],
       "rels": [
         {"from":"미리암","to":"모세","label":"비방한 누나","kind":"conflict","directed":true,"weight":3},
         {"from":"아론","to":"미리암","label":"함께 비방함","kind":"ally","directed":false,"weight":2},
         {"from":"모세","to":"미리암","label":"기도해 준 동생","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"모세","label":"변호하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"모세","label":"변호하신 분","kind":"ally","directed":true,"weight":2},
+        {"from":"구스 여인","to":"모세","label":"아내","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"하세롯","where":"바란 광야 가는 길","what":"미리암과 아론이 비방한 곳","weight":2}
@@ -377,7 +383,8 @@
         {"name":"아비람","role":"고라와 반역한 르우벤 자손","weight":2},
         {"name":"모세","role":"엎드려 하나님께 판단을 맡김","weight":3},
         {"name":"아론","role":"향로로 속죄해 염병을 멈춤","weight":3},
-        {"name":"엘르아살","role":"향로들을 모아 제단을 쌈","weight":1}
+        {"name":"엘르아살","role":"향로들을 모아 제단을 쌈","weight":1},
+        {"name":"온","role":"처음 고라와 함께한 르우벤 자손","weight":1}
       ],
       "rels": [
         {"from":"고라","to":"모세","label":"반역자","kind":"conflict","directed":true,"weight":3},
@@ -531,7 +538,8 @@
         {"name":"발락","role":"이스라엘을 저주하려 한 모압 왕","weight":3},
         {"name":"발람","role":"보상에 끌려 길을 나선 점술가","weight":3},
         {"name":"발람의 나귀","role":"사자를 보고 말을 한 나귀","weight":2},
-        {"name":"여호와의 사자","role":"칼 들고 길을 막은 이","weight":2}
+        {"name":"여호와의 사자","role":"칼 들고 길을 막은 이","weight":2},
+        {"name":"모압 고관들","role":"발람을 데리러 간 사신들","weight":1}
       ],
       "rels": [
         {"from":"발락","to":"발람","label":"부른 왕","kind":"other","directed":true,"weight":3},
@@ -601,12 +609,14 @@
         {"name":"고스비","role":"미디안 족장의 딸","weight":1},
         {"name":"이스라엘 자손","role":"바알브올을 섬김","weight":2},
         {"name":"모세","role":"재판장들에게 명령함","weight":1},
-        {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2}
+        {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2},
+        {"name":"엘르아살","role":"비느하스의 아버지","weight":1}
       ],
       "rels": [
         {"from":"비느하스","to":"시므리","label":"찌른 제사장","kind":"conflict","directed":true,"weight":3},
         {"from":"시므리","to":"고스비","label":"함께 죄지음","kind":"other","directed":false,"weight":2},
-        {"from":"하나님","to":"비느하스","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"비느하스","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3},
+        {"from":"비느하스","to":"엘르아살","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"싯딤","where":"모압 평지, 요단 동편","what":"백성이 바알브올을 섬긴 곳","weight":3}
@@ -651,7 +661,11 @@
         {"name":"슬로브핫","role":"아들 없이 죽은 아버지","weight":1},
         {"name":"모세","role":"하나님께 묻고 후계자를 세움","weight":3},
         {"name":"여호수아","role":"모세의 후계자로 세워짐","weight":3},
-        {"name":"엘르아살","role":"여호수아 앞에 선 제사장","weight":1}
+        {"name":"엘르아살","role":"여호수아 앞에 선 제사장","weight":1},
+        {"name":"노아","role":"슬로브핫의 딸","weight":1},
+        {"name":"호글라","role":"슬로브핫의 딸","weight":1},
+        {"name":"밀가","role":"슬로브핫의 딸","weight":1},
+        {"name":"디르사","role":"슬로브핫의 딸","weight":1}
       ],
       "rels": [
         {"from":"말라","to":"슬로브핫","label":"딸","kind":"family","directed":true,"weight":2},
@@ -738,7 +752,8 @@
         {"name":"비느하스","role":"성물과 나팔을 들고 출전한 제사장","weight":2},
         {"name":"발람","role":"미디안에서 죽은 점술가","weight":2},
         {"name":"엘르아살","role":"정결과 분배를 맡은 제사장","weight":2},
-        {"name":"이스라엘 자손","role":"한 사람도 잃지 않고 이김","weight":1}
+        {"name":"이스라엘 자손","role":"한 사람도 잃지 않고 이김","weight":1},
+        {"name":"미디안 다섯 왕","role":"에위·레겜·수르·후르·레바","weight":1}
       ],
       "rels": [
         {"from":"모세","to":"비느하스","label":"보낸 지도자","kind":"ally","directed":true,"weight":2},
@@ -764,7 +779,10 @@
         {"name":"르우벤 자손","role":"요단 동편 땅을 원함","weight":3},
         {"name":"갓 자손","role":"요단 동편 땅을 원함","weight":3},
         {"name":"모세","role":"꾸짖고 조건부로 허락함","weight":3},
-        {"name":"므낫세 반 지파","role":"길르앗 땅을 받음","weight":1}
+        {"name":"므낫세 반 지파","role":"길르앗 땅을 받음","weight":1},
+        {"name":"마길","role":"길르앗을 차지한 므낫세의 아들","weight":1},
+        {"name":"야일","role":"하봇야일을 세운 므낫세 자손","weight":1},
+        {"name":"노바","role":"그낫을 차지한 사람","weight":1}
       ],
       "rels": [
         {"from":"르우벤 자손","to":"갓 자손","label":"함께 청한 지파","kind":"ally","directed":false,"weight":2},

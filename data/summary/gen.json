@@ -91,13 +91,23 @@
         {"name":"하나님","role":"경고하고 벌하시며 보호하심","weight":2},
         {"name":"아담","role":"셋을 새로 얻은 아버지","weight":1},
         {"name":"셋","role":"아벨 대신 주신 아들","weight":1},
-        {"name":"라멕","role":"보복을 자랑한 가인의 후손","weight":1}
+        {"name":"라멕","role":"보복을 자랑한 가인의 후손","weight":1},
+        {"name":"하와","role":"가인과 아벨, 셋을 낳은 어머니","weight":2},
+        {"name":"에녹(가인의 아들)","role":"가인이 쌓은 성의 이름이 된 아들","weight":1},
+        {"name":"아다","role":"라멕의 아내","weight":1},
+        {"name":"씰라","role":"라멕의 아내","weight":1},
+        {"name":"야발","role":"장막에 살며 가축 치는 이의 조상","weight":1},
+        {"name":"유발","role":"수금과 퉁소 부는 이의 조상","weight":1},
+        {"name":"두발가인","role":"구리와 쇠를 다루는 이","weight":1}
       ],
       "rels": [
         {"from":"가인","to":"아벨","label":"죽인 형","kind":"conflict","directed":true,"weight":3},
         {"from":"가인","to":"아담","label":"맏아들","kind":"family","directed":true,"weight":2},
         {"from":"셋","to":"아담","label":"셋째 아들","kind":"family","directed":true,"weight":1},
-        {"from":"하나님","to":"가인","label":"경고하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"가인","label":"경고하신 분","kind":"ally","directed":true,"weight":2},
+        {"from":"가인","to":"하와","label":"맏아들","kind":"family","directed":true,"weight":1},
+        {"from":"라멕","to":"가인","label":"후손","kind":"family","directed":true,"weight":1},
+        {"from":"야발","to":"라멕","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"놋 땅","where":"에덴의 동쪽","what":"가인이 쫓겨나 살며 성을 쌓은 곳","weight":2}
@@ -119,13 +129,21 @@
         {"name":"에녹","role":"하나님과 동행하다 들려 감","weight":3},
         {"name":"므두셀라","role":"가장 오래 산 사람","weight":2},
         {"name":"라멕","role":"노아의 아버지","weight":1},
-        {"name":"노아","role":"위로를 기대하며 태어남","weight":2}
+        {"name":"노아","role":"위로를 기대하며 태어남","weight":2},
+        {"name":"에노스","role":"셋의 아들","weight":1},
+        {"name":"게난","role":"에노스의 아들","weight":1},
+        {"name":"마할랄렐","role":"게난의 아들","weight":1},
+        {"name":"야렛","role":"에녹의 아버지","weight":1},
+        {"name":"셈","role":"노아의 아들","weight":1},
+        {"name":"함","role":"노아의 아들","weight":1},
+        {"name":"야벳","role":"노아의 아들","weight":1}
       ],
       "rels": [
         {"from":"셋","to":"아담","label":"아들","kind":"family","directed":true,"weight":1},
         {"from":"므두셀라","to":"에녹","label":"아들","kind":"family","directed":true,"weight":2},
         {"from":"라멕","to":"므두셀라","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"노아","to":"라멕","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"노아","to":"라멕","label":"아들","kind":"family","directed":true,"weight":2},
+        {"from":"에녹","to":"야렛","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
 
@@ -278,12 +296,17 @@
         {"name":"아브람","role":"데라의 아들, 아내는 사래","weight":2},
         {"name":"사래","role":"아이를 낳지 못하던 아내","weight":2},
         {"name":"롯","role":"데라의 손자","weight":1},
-        {"name":"셈","role":"족보의 시작","weight":1}
+        {"name":"셈","role":"족보의 시작","weight":1},
+        {"name":"나홀","role":"아브람의 형제","weight":1},
+        {"name":"하란","role":"롯의 아버지, 우르에서 죽음","weight":1},
+        {"name":"밀가","role":"나홀의 아내, 하란의 딸","weight":1}
       ],
       "rels": [
         {"from":"아브람","to":"데라","label":"아들","kind":"family","directed":true,"weight":2},
         {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1},
+        {"from":"롯","to":"하란","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"나홀","to":"아브람","label":"형제","kind":"family","directed":false,"weight":1}
       ],
       "places": [
         {"name":"바벨","where":"시날 평지","what":"교만한 탑을 쌓다 언어가 흩어진 곳","weight":3},
@@ -362,13 +385,19 @@
         {"name":"롯","role":"포로로 잡혀갔다 풀려남","weight":2},
         {"name":"멜기세덱","role":"살렘 왕, 지극히 높으신 하나님의 제사장","weight":3},
         {"name":"소돔 왕","role":"재물을 주려 했던 왕","weight":2},
-        {"name":"그돌라오멜","role":"동방 연합군의 우두머리 왕","weight":2}
+        {"name":"그돌라오멜","role":"동방 연합군의 우두머리 왕","weight":2},
+        {"name":"아므라벨","role":"동방 연합군의 시날 왕","weight":1},
+        {"name":"베라","role":"포로를 되찾은 소돔 왕","weight":1},
+        {"name":"마므레","role":"아브람과 동맹한 아모리 사람","weight":1},
+        {"name":"에스골","role":"아브람과 동맹한 형제","weight":1},
+        {"name":"아넬","role":"아브람과 동맹한 형제","weight":1}
       ],
       "rels": [
         {"from":"아브람","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3},
         {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3},
         {"from":"소돔 왕","to":"아브람","label":"거절당한 왕","kind":"other","directed":true,"weight":2},
-        {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2}
+        {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2},
+        {"from":"마므레","to":"아브람","label":"동맹","kind":"ally","directed":false,"weight":1}
       ],
       "places": [
         {"name":"단","where":"가나안 북쪽 끝","what":"아브람이 적을 쫓아간 곳","weight":1},
@@ -502,13 +531,17 @@
         {"name":"두 천사","role":"롯의 가족을 성 밖으로 이끎","weight":3},
         {"name":"롯의 아내","role":"뒤돌아보다 소금 기둥이 됨","weight":2},
         {"name":"롯의 딸들","role":"모압과 암몬 족속의 어머니","weight":1},
-        {"name":"아브라함","role":"멀리서 연기를 바라봄","weight":1}
+        {"name":"아브라함","role":"멀리서 연기를 바라봄","weight":1},
+        {"name":"롯의 사위들","role":"경고를 농담으로 여김","weight":1},
+        {"name":"모압","role":"롯의 맏딸이 낳은 아들","weight":1},
+        {"name":"벤암미","role":"롯의 작은딸이 낳은 아들","weight":1}
       ],
       "rels": [
         {"from":"두 천사","to":"롯","label":"구해 낸 이들","kind":"ally","directed":true,"weight":3},
         {"from":"롯의 아내","to":"롯","label":"아내","kind":"family","directed":true,"weight":2},
         {"from":"롯의 딸들","to":"롯","label":"딸들","kind":"family","directed":true,"weight":1},
-        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1},
+        {"from":"모압","to":"롯의 딸들","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"소돔","where":"요단 들판, 사해 남쪽으로 봄","what":"악이 가득해 유황불로 심판받은 성","weight":3},
@@ -557,14 +590,16 @@
         {"name":"아브라함","role":"백 살에 아들을 얻음","weight":3},
         {"name":"하갈","role":"아들과 광야로 떠남","weight":2},
         {"name":"이스마엘","role":"광야에서 자라 활 쏘는 자가 됨","weight":2},
-        {"name":"아비멜렉","role":"아브라함과 언약을 맺은 그랄 왕","weight":1}
+        {"name":"아비멜렉","role":"아브라함과 언약을 맺은 그랄 왕","weight":1},
+        {"name":"비골","role":"아비멜렉의 군대 장관","weight":1}
       ],
       "rels": [
         {"from":"이삭","to":"사라","label":"약속의 아들","kind":"family","directed":true,"weight":3},
         {"from":"이스마엘","to":"이삭","label":"놀린 형","kind":"conflict","directed":true,"weight":2},
         {"from":"사라","to":"하갈","label":"내보낸 여주인","kind":"conflict","directed":true,"weight":2},
         {"from":"이스마엘","to":"하갈","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"아비멜렉","to":"아브라함","label":"언약을 맺음","kind":"ally","directed":false,"weight":1}
+        {"from":"아비멜렉","to":"아브라함","label":"언약을 맺음","kind":"ally","directed":false,"weight":1},
+        {"from":"비골","to":"아비멜렉","label":"군대 장관","kind":"ally","directed":true,"weight":1}
       ],
       "places": [
         {"name":"브엘세바","where":"가나안 남쪽 끝","what":"우물을 두고 맹세하고 에셀 나무를 심음","weight":3},
@@ -585,13 +620,19 @@
         {"name":"아브라함","role":"외아들을 바치려 한 믿음","weight":3},
         {"name":"이삭","role":"제물이 될 뻔한 약속의 아들","weight":3},
         {"name":"하나님","role":"시험하시고 숫양을 준비하심","weight":2},
-        {"name":"여호와의 사자","role":"하늘에서 불러 손을 멈추게 함","weight":2}
+        {"name":"여호와의 사자","role":"하늘에서 불러 손을 멈추게 함","weight":2},
+        {"name":"나홀","role":"아브라함의 형제","weight":1},
+        {"name":"밀가","role":"나홀의 아내","weight":1},
+        {"name":"브두엘","role":"나홀의 아들","weight":1},
+        {"name":"리브가","role":"브두엘의 딸, 이삭의 신붓감","weight":1}
       ],
       "rels": [
         {"from":"이삭","to":"아브라함","label":"외아들","kind":"family","directed":true,"weight":3},
         {"from":"하나님","to":"아브라함","label":"시험하신 분","kind":"other","directed":true,"weight":3},
         {"from":"아브라함","to":"하나님","label":"순종한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2}
+        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2},
+        {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1},
+        {"from":"나홀","to":"아브라함","label":"형제","kind":"family","directed":false,"weight":1}
       ],
       "places": [
         {"name":"모리아","where":"브엘세바에서 약 72km, 사흘 길","what":"이삭을 바치려 한 산. 훗날 솔로몬이 성전을 지은 곳","weight":3},
@@ -640,7 +681,10 @@
         {"name":"이삭","role":"리브가를 아내로 맞음","weight":2},
         {"name":"라반","role":"리브가의 오빠","weight":2},
         {"name":"아브라함","role":"아들의 아내를 찾게 함","weight":2},
-        {"name":"브두엘","role":"리브가의 아버지","weight":1}
+        {"name":"브두엘","role":"리브가의 아버지","weight":1},
+        {"name":"밀가","role":"리브가의 할머니","weight":1},
+        {"name":"리브가의 어머니","role":"리브가를 보낸 어머니","weight":1},
+        {"name":"리브가의 유모","role":"리브가와 함께 간 유모","weight":1}
       ],
       "rels": [
         {"from":"아브라함의 종","to":"아브라함","label":"충성된 종","kind":"ally","directed":true,"weight":3},
@@ -670,14 +714,17 @@
         {"name":"이삭","role":"기도해 쌍둥이를 얻음","weight":2},
         {"name":"리브가","role":"쌍둥이를 낳은 어머니","weight":2},
         {"name":"아브라함","role":"175세에 죽음","weight":2},
-        {"name":"이스마엘","role":"열두 족장의 아버지","weight":1}
+        {"name":"이스마엘","role":"열두 족장의 아버지","weight":1},
+        {"name":"그두라","role":"아브라함의 후처","weight":1},
+        {"name":"미디안","role":"그두라가 낳은 아들","weight":1}
       ],
       "rels": [
         {"from":"야곱","to":"에서","label":"장자권을 산 동생","kind":"conflict","directed":true,"weight":3},
         {"from":"에서","to":"이삭","label":"사랑받는 맏아들","kind":"family","directed":true,"weight":2},
         {"from":"야곱","to":"리브가","label":"사랑받는 아들","kind":"family","directed":true,"weight":2},
         {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2},
+        {"from":"그두라","to":"아브라함","label":"후처","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"막벨라 굴","where":"헤브론의 가족 무덤","what":"이삭과 이스마엘이 아브라함을 장사함","weight":2},
@@ -699,14 +746,19 @@
         {"name":"리브가","role":"누이라 불린 아내","weight":2},
         {"name":"아비멜렉","role":"이삭을 내보냈다가 언약을 맺음","weight":2},
         {"name":"하나님","role":"이삭에게 약속을 이어 주심","weight":2},
-        {"name":"에서","role":"헷 여인들과 결혼함","weight":1}
+        {"name":"에서","role":"헷 여인들과 결혼함","weight":1},
+        {"name":"비골","role":"아비멜렉의 군대 장관","weight":1},
+        {"name":"아훗삿","role":"아비멜렉의 친구","weight":1},
+        {"name":"유딧","role":"에서의 헷 족속 아내","weight":1},
+        {"name":"바스맛","role":"에서의 헷 족속 아내","weight":1}
       ],
       "rels": [
         {"from":"하나님","to":"이삭","label":"약속하신 분","kind":"ally","directed":true,"weight":3},
         {"from":"아비멜렉","to":"이삭","label":"시기한 이웃 왕","kind":"conflict","directed":true,"weight":2},
         {"from":"아비멜렉","to":"이삭","label":"평화 언약","kind":"ally","directed":false,"weight":2},
         {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"에서","to":"이삭","label":"근심 준 아들","kind":"family","directed":true,"weight":1}
+        {"from":"에서","to":"이삭","label":"근심 준 아들","kind":"family","directed":true,"weight":1},
+        {"from":"유딧","to":"에서","label":"아내","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"그랄","where":"가나안 남서쪽 블레셋 땅","what":"흉년에 머물며 백 배를 거둔 곳","weight":3},
@@ -755,12 +807,15 @@
         {"name":"야곱","role":"꿈에 하나님을 만나 서원함","weight":3},
         {"name":"하나님","role":"야곱과 함께하겠다 약속하심","weight":3},
         {"name":"이삭","role":"야곱을 축복해 보냄","weight":2},
-        {"name":"에서","role":"이스마엘의 딸과 결혼함","weight":1}
+        {"name":"에서","role":"이스마엘의 딸과 결혼함","weight":1},
+        {"name":"라반","role":"야곱이 찾아갈 외삼촌","weight":1},
+        {"name":"마할랏","role":"이스마엘의 딸, 에서의 아내","weight":1}
       ],
       "rels": [
         {"from":"하나님","to":"야곱","label":"지키시는 분","kind":"ally","directed":true,"weight":3},
         {"from":"이삭","to":"야곱","label":"축복한 아버지","kind":"family","directed":true,"weight":2},
-        {"from":"에서","to":"야곱","label":"갈라선 형제","kind":"conflict","directed":false,"weight":1}
+        {"from":"에서","to":"야곱","label":"갈라선 형제","kind":"conflict","directed":false,"weight":1},
+        {"from":"마할랏","to":"에서","label":"아내","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km, 옛 이름 루스","what":"사닥다리 꿈을 꾸고 '하나님의 집'이라 부른 곳","weight":3},
@@ -782,14 +837,21 @@
         {"name":"라헬","role":"야곱이 사랑한 아내","weight":3},
         {"name":"레아","role":"속임수로 먼저 아내가 됨","weight":3},
         {"name":"라반","role":"조카를 속인 외삼촌","weight":3},
-        {"name":"유다","role":"레아의 넷째 아들","weight":1}
+        {"name":"유다","role":"레아의 넷째 아들","weight":1},
+        {"name":"르우벤","role":"레아의 맏아들","weight":1},
+        {"name":"시므온","role":"레아의 둘째 아들","weight":1},
+        {"name":"레위","role":"레아의 셋째 아들","weight":1},
+        {"name":"실바","role":"레아의 여종","weight":1},
+        {"name":"빌하","role":"라헬의 여종","weight":1}
       ],
       "rels": [
         {"from":"라반","to":"야곱","label":"속인 외삼촌","kind":"conflict","directed":true,"weight":3},
         {"from":"라헬","to":"야곱","label":"사랑받는 아내","kind":"family","directed":true,"weight":3},
         {"from":"레아","to":"야곱","label":"사랑받지 못한 아내","kind":"family","directed":true,"weight":3},
         {"from":"레아","to":"라헬","label":"언니","kind":"family","directed":true,"weight":2},
-        {"from":"라헬","to":"라반","label":"딸","kind":"family","directed":true,"weight":1}
+        {"from":"라헬","to":"라반","label":"딸","kind":"family","directed":true,"weight":1},
+        {"from":"르우벤","to":"레아","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"유다","to":"레아","label":"아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"야곱이 라반 집에서 이십 년을 지낸 곳","weight":3}
@@ -812,14 +874,25 @@
         {"name":"라반","role":"야곱을 붙잡으려 함","weight":2},
         {"name":"요셉","role":"라헬이 낳은 첫아들","weight":2},
         {"name":"빌하","role":"라헬의 여종","weight":1},
-        {"name":"실바","role":"레아의 여종","weight":1}
+        {"name":"실바","role":"레아의 여종","weight":1},
+        {"name":"단","role":"빌하가 낳은 아들","weight":1},
+        {"name":"납달리","role":"빌하가 낳은 아들","weight":1},
+        {"name":"갓","role":"실바가 낳은 아들","weight":1},
+        {"name":"아셀","role":"실바가 낳은 아들","weight":1},
+        {"name":"잇사갈","role":"레아의 다섯째 아들","weight":1},
+        {"name":"스불론","role":"레아의 여섯째 아들","weight":1},
+        {"name":"디나","role":"레아가 낳은 딸","weight":1},
+        {"name":"르우벤","role":"합환채를 구해 온 아들","weight":1}
       ],
       "rels": [
         {"from":"라헬","to":"레아","label":"시기하는 자매","kind":"conflict","directed":false,"weight":3},
         {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":2},
         {"from":"빌하","to":"라헬","label":"여종","kind":"other","directed":true,"weight":1},
         {"from":"실바","to":"레아","label":"여종","kind":"other","directed":true,"weight":1},
-        {"from":"라반","to":"야곱","label":"품삯을 다툰 외삼촌","kind":"conflict","directed":true,"weight":2}
+        {"from":"라반","to":"야곱","label":"품삯을 다툰 외삼촌","kind":"conflict","directed":true,"weight":2},
+        {"from":"단","to":"빌하","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"갓","to":"실바","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"디나","to":"레아","label":"딸","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"야곱의 아들들이 태어나고 떼가 늘어난 곳","weight":2}
@@ -840,7 +913,8 @@
         {"name":"라반","role":"뒤쫓아 와 언약을 맺음","weight":3},
         {"name":"라헬","role":"아버지의 드라빔을 훔침","weight":2},
         {"name":"레아","role":"야곱을 따라 떠남","weight":1},
-        {"name":"하나님","role":"꿈으로 라반을 막으심","weight":2}
+        {"name":"하나님","role":"꿈으로 라반을 막으심","weight":2},
+        {"name":"라반의 아들들","role":"야곱을 시기한 처남들","weight":1}
       ],
       "rels": [
         {"from":"라반","to":"야곱","label":"뒤쫓은 외삼촌","kind":"conflict","directed":true,"weight":3},
@@ -897,12 +971,17 @@
         {"name":"야곱","role":"엎드려 형과 화해함","weight":3},
         {"name":"에서","role":"달려와 동생을 끌어안음","weight":3},
         {"name":"라헬","role":"맨 뒤에 선 사랑받는 아내","weight":1},
-        {"name":"요셉","role":"라헬과 함께 맨 뒤에 섬","weight":1}
+        {"name":"요셉","role":"라헬과 함께 맨 뒤에 섬","weight":1},
+        {"name":"레아","role":"자식들과 함께 엎드림","weight":1},
+        {"name":"빌하","role":"여종과 자식들","weight":1},
+        {"name":"실바","role":"여종과 자식들","weight":1},
+        {"name":"하몰","role":"세겜의 아버지, 땅을 판 사람","weight":1}
       ],
       "rels": [
         {"from":"에서","to":"야곱","label":"화해한 형제","kind":"ally","directed":false,"weight":3},
         {"from":"라헬","to":"야곱","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"하몰","to":"야곱","label":"땅을 판 이","kind":"other","directed":true,"weight":1}
       ],
       "places": [
         {"name":"숙곳","where":"요단 동편, 얍복 강 근처","what":"야곱이 집과 가축 우리를 지은 곳","weight":1},
@@ -957,14 +1036,17 @@
         {"name":"르우벤","role":"빌하와 동침한 맏아들","weight":2},
         {"name":"이삭","role":"180세에 죽음","weight":2},
         {"name":"에서","role":"야곱과 함께 아버지를 장사함","weight":1},
-        {"name":"하나님","role":"벧엘에서 약속을 확인하심","weight":2}
+        {"name":"하나님","role":"벧엘에서 약속을 확인하심","weight":2},
+        {"name":"드보라","role":"리브가의 유모, 벧엘 아래 묻힘","weight":1},
+        {"name":"빌하","role":"르우벤이 범한 첩","weight":1}
       ],
       "rels": [
         {"from":"하나님","to":"야곱","label":"약속을 확인하신 분","kind":"ally","directed":true,"weight":3},
         {"from":"베냐민","to":"라헬","label":"아들","kind":"family","directed":true,"weight":3},
         {"from":"르우벤","to":"야곱","label":"죄지은 맏아들","kind":"conflict","directed":true,"weight":2},
         {"from":"에서","to":"야곱","label":"함께 장사한 형제","kind":"ally","directed":false,"weight":1},
-        {"from":"야곱","to":"이삭","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"야곱","to":"이삭","label":"아들","kind":"family","directed":true,"weight":1},
+        {"from":"르우벤","to":"빌하","label":"범한 죄","kind":"conflict","directed":true,"weight":1}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km","what":"다시 제단을 쌓고 약속을 확인받음","weight":3},
@@ -1012,14 +1094,18 @@
         {"name":"야곱","role":"요셉을 편애하다 속고 애통","weight":3},
         {"name":"르우벤","role":"요셉을 살려 보내려 한 맏형","weight":2},
         {"name":"유다","role":"죽이지 말고 팔자고 제안","weight":2},
-        {"name":"보디발","role":"요셉을 산 바로의 친위대장","weight":1}
+        {"name":"보디발","role":"요셉을 산 바로의 친위대장","weight":1},
+        {"name":"이스마엘 상인들","role":"요셉을 산 상인들","weight":1},
+        {"name":"미디안 상인들","role":"요셉을 끌어올린 상인들","weight":1},
+        {"name":"시므온","role":"요셉을 판 형","weight":1}
       ],
       "rels": [
         {"from":"요셉","to":"야곱","label":"편애받는 아들","kind":"family","directed":true,"weight":3},
         {"from":"유다","to":"요셉","label":"팔아넘긴 형","kind":"conflict","directed":true,"weight":3},
         {"from":"르우벤","to":"요셉","label":"살리려 한 형","kind":"ally","directed":true,"weight":2},
         {"from":"르우벤","to":"야곱","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":1}
+        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":1},
+        {"from":"이스마엘 상인들","to":"요셉","label":"산 상인들","kind":"other","directed":true,"weight":1}
       ],
       "places": [
         {"name":"헤브론","where":"가나안 남부 산지","what":"야곱이 살던 곳. 요셉을 형들에게 심부름 보냄","weight":1},
@@ -1044,14 +1130,19 @@
         {"name":"엘","role":"악해서 죽은 맏아들","weight":1},
         {"name":"오난","role":"형의 대를 잇지 않아 죽음","weight":1},
         {"name":"셀라","role":"약속하고 주지 않은 셋째","weight":1},
-        {"name":"베레스","role":"다말이 낳은 쌍둥이 형","weight":2}
+        {"name":"베레스","role":"다말이 낳은 쌍둥이 형","weight":2},
+        {"name":"히라","role":"유다의 아둘람 친구","weight":1},
+        {"name":"수아","role":"유다의 장인, 가나안 사람","weight":1},
+        {"name":"세라","role":"다말이 낳은 쌍둥이 동생","weight":1}
       ],
       "rels": [
         {"from":"다말","to":"유다","label":"며느리","kind":"family","directed":true,"weight":3},
         {"from":"유다","to":"다말","label":"약속 어긴 시부","kind":"conflict","directed":true,"weight":2},
         {"from":"베레스","to":"유다","label":"아들","kind":"family","directed":true,"weight":2},
         {"from":"엘","to":"다말","label":"남편","kind":"family","directed":true,"weight":1},
-        {"from":"오난","to":"엘","label":"동생","kind":"family","directed":true,"weight":1}
+        {"from":"오난","to":"엘","label":"동생","kind":"family","directed":true,"weight":1},
+        {"from":"히라","to":"유다","label":"친구","kind":"ally","directed":true,"weight":1},
+        {"from":"세라","to":"베레스","label":"쌍둥이","kind":"family","directed":false,"weight":1}
       ],
       "places": [
         {"name":"아둘람","where":"유다 산지 서쪽 평지","what":"유다가 형제들을 떠나 머문 곳","weight":1},
@@ -1128,14 +1219,16 @@
         {"name":"술 맡은 관원장","role":"이 년 만에 요셉을 기억함","weight":2},
         {"name":"아스낫","role":"요셉의 아내","weight":1},
         {"name":"므낫세","role":"요셉의 맏아들","weight":1},
-        {"name":"에브라임","role":"요셉의 둘째 아들","weight":1}
+        {"name":"에브라임","role":"요셉의 둘째 아들","weight":1},
+        {"name":"보디베라","role":"온의 제사장, 요셉의 장인","weight":1}
       ],
       "rels": [
         {"from":"바로","to":"요셉","label":"총리로 세운 왕","kind":"ally","directed":true,"weight":3},
         {"from":"술 맡은 관원장","to":"요셉","label":"왕에게 추천함","kind":"ally","directed":true,"weight":2},
         {"from":"아스낫","to":"요셉","label":"아내","kind":"family","directed":true,"weight":1},
         {"from":"므낫세","to":"요셉","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1}
+        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1},
+        {"from":"아스낫","to":"보디베라","label":"딸","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"애굽","where":"가나안 남서쪽 나일 강의 나라","what":"요셉이 총리가 되어 곡식을 모은 곳","weight":3},
@@ -1185,7 +1278,9 @@
         {"name":"야곱","role":"베냐민을 보내기로 함","weight":2},
         {"name":"베냐민","role":"형들과 애굽에 감","weight":2},
         {"name":"요셉","role":"잔치를 베풀고 몰래 울음","weight":3},
-        {"name":"시므온","role":"풀려나 형제들과 만남","weight":1}
+        {"name":"시므온","role":"풀려나 형제들과 만남","weight":1},
+        {"name":"청지기","role":"형제들을 안심시킨 요셉의 종","weight":1},
+        {"name":"르우벤","role":"아들 둘을 걸겠다 했던 형","weight":1}
       ],
       "rels": [
         {"from":"유다","to":"베냐민","label":"보증 선 형","kind":"ally","directed":true,"weight":3},
@@ -1266,12 +1361,16 @@
         {"name":"야곱","role":"가족과 애굽으로 내려감","weight":3},
         {"name":"요셉","role":"아버지를 안고 오래 울음","weight":3},
         {"name":"유다","role":"앞서 길을 안내함","weight":1},
-        {"name":"하나님","role":"두려워 말라 약속하심","weight":2}
+        {"name":"하나님","role":"두려워 말라 약속하심","weight":2},
+        {"name":"르우벤","role":"야곱의 맏아들","weight":1},
+        {"name":"베냐민","role":"라헬의 아들","weight":1},
+        {"name":"바로","role":"곧 만날 애굽 왕","weight":1}
       ],
       "rels": [
         {"from":"요셉","to":"야곱","label":"다시 만난 아들","kind":"family","directed":true,"weight":3},
         {"from":"하나님","to":"야곱","label":"약속하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"유다","to":"야곱","label":"앞서 보낸 아들","kind":"ally","directed":true,"weight":1}
+        {"from":"유다","to":"야곱","label":"앞서 보낸 아들","kind":"ally","directed":true,"weight":1},
+        {"from":"베냐민","to":"야곱","label":"막내아들","kind":"family","directed":true,"weight":1}
       ],
       "places": [
         {"name":"브엘세바","where":"가나안 남쪽 끝","what":"내려가기 전 제사하고 약속을 들은 곳","weight":2},
@@ -1292,7 +1391,8 @@
         {"name":"요셉","role":"흉년에 백성을 살린 총리","weight":3},
         {"name":"야곱","role":"바로를 축복함","weight":3},
         {"name":"바로","role":"고센 땅을 준 왕","weight":2},
-        {"name":"애굽 백성","role":"곡식을 얻으려 땅을 팖","weight":2}
+        {"name":"애굽 백성","role":"곡식을 얻으려 땅을 팖","weight":2},
+        {"name":"요셉의 형제 다섯","role":"바로 앞에 선 형제들","weight":1}
       ],
       "rels": [
         {"from":"야곱","to":"바로","label":"축복한 노인","kind":"ally","directed":true,"weight":3},
@@ -1373,7 +1473,9 @@
         {"name":"요셉","role":"형들을 끝까지 용서함","weight":3},
         {"name":"야곱","role":"가나안에 묻힘","weight":2},
         {"name":"형들","role":"보복을 두려워해 엎드림","weight":2},
-        {"name":"하나님","role":"악을 선으로 바꾸심","weight":2}
+        {"name":"하나님","role":"악을 선으로 바꾸심","weight":2},
+        {"name":"애굽 사람들","role":"칠십 일 동안 곡한 이들","weight":1},
+        {"name":"요셉의 손자들","role":"요셉이 무릎에 안은 후손","weight":1}
       ],
       "rels": [
         {"from":"요셉","to":"형들","label":"용서한 동생","kind":"ally","directed":true,"weight":3},

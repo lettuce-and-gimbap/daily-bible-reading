@@ -208,14 +208,17 @@
         {"name":"아론","role":"아들을 잃고 잠잠함","weight":3},
         {"name":"모세","role":"하나님의 말씀을 전함","weight":2},
         {"name":"엘르아살","role":"남은 아들, 제사장","weight":1},
-        {"name":"이다말","role":"남은 아들, 제사장","weight":1}
+        {"name":"이다말","role":"남은 아들, 제사장","weight":1},
+        {"name":"미사엘","role":"시신을 옮긴 아론의 사촌","weight":1},
+        {"name":"엘사반","role":"시신을 옮긴 아론의 사촌","weight":1}
       ],
       "rels": [
         {"from":"나답","to":"아론","label":"아들","kind":"family","directed":true,"weight":3},
         {"from":"아비후","to":"나답","label":"형제","kind":"family","directed":false,"weight":2},
         {"from":"모세","to":"아론","label":"말씀을 전한 동생","kind":"ally","directed":true,"weight":2},
         {"from":"엘르아살","to":"아론","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"모세","to":"엘르아살","label":"꾸짖은 삼촌","kind":"conflict","directed":true,"weight":1}
+        {"from":"모세","to":"엘르아살","label":"꾸짖은 삼촌","kind":"conflict","directed":true,"weight":1},
+        {"from":"미사엘","to":"엘사반","label":"형제","kind":"family","directed":false,"weight":1}
       ],
       "places": [
         {"name":"회막","where":"성막","what":"다른 불을 드리다 심판받은 곳","weight":3}

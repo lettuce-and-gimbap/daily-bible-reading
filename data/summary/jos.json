@@ -248,13 +248,15 @@
         {"name":"여호수아","role":"해와 달을 멈추라 외친 장수","weight":3},
         {"name":"아도니세덱","role":"연합군을 이끈 예루살렘 왕","weight":3},
         {"name":"기브온 사람들","role":"도움을 청한 동맹","weight":2},
-        {"name":"하나님","role":"우박과 해로 싸우심","weight":3}
+        {"name":"하나님","role":"우박과 해로 싸우심","weight":3},
+        {"name":"다섯 아모리 왕","role":"헤브론·야르뭇·라기스·에글론 왕","weight":1}
       ],
       "rels": [
         {"from":"아도니세덱","to":"기브온 사람들","label":"공격한 왕","kind":"conflict","directed":true,"weight":2},
         {"from":"여호수아","to":"아도니세덱","label":"이긴 장수","kind":"conflict","directed":true,"weight":3},
         {"from":"여호수아","to":"기브온 사람들","label":"구하러 간 동맹","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"여호수아","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"여호수아","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":3},
+        {"from":"다섯 아모리 왕","to":"아도니세덱","label":"연합한 왕들","kind":"ally","directed":false,"weight":1}
       ],
       "places": [
         {"name":"기브온","where":"예루살렘 북서쪽","what":"해가 머문 싸움터","weight":3},
@@ -370,12 +372,14 @@
       "people": [
         {"name":"갈렙","role":"드빌을 칠 사람에게 딸을 약속함","weight":2},
         {"name":"옷니엘","role":"드빌을 차지한 조카","weight":2},
-        {"name":"악사","role":"샘물을 구한 갈렙의 딸","weight":2}
+        {"name":"악사","role":"샘물을 구한 갈렙의 딸","weight":2},
+        {"name":"아낙의 세 아들","role":"갈렙이 쫓아낸 세새·아히만·달매","weight":1}
       ],
       "rels": [
         {"from":"악사","to":"갈렙","label":"딸","kind":"family","directed":true,"weight":2},
         {"from":"옷니엘","to":"악사","label":"남편","kind":"family","directed":true,"weight":2},
-        {"from":"옷니엘","to":"갈렙","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"옷니엘","to":"갈렙","label":"조카","kind":"family","directed":true,"weight":1},
+        {"from":"갈렙","to":"아낙의 세 아들","label":"쫓아낸 이","kind":"conflict","directed":true,"weight":1}
       ],
       "places": [
         {"name":"드빌","where":"헤브론 남서쪽","what":"옷니엘이 차지한 성","weight":2},
@@ -415,7 +419,8 @@
         {"name":"여호수아","role":"불평하는 요셉 자손을 격려함","weight":3},
         {"name":"슬로브핫의 딸들","role":"약속대로 기업을 받음","weight":2},
         {"name":"요셉 자손","role":"땅이 좁다고 불평함","weight":2},
-        {"name":"엘르아살","role":"기업을 준 제사장","weight":1}
+        {"name":"엘르아살","role":"기업을 준 제사장","weight":1},
+        {"name":"마길","role":"길르앗을 받은 므낫세의 맏아들","weight":1}
       ],
       "rels": [
         {"from":"요셉 자손","to":"여호수아","label":"불평한 지파","kind":"conflict","directed":true,"weight":2},
@@ -530,7 +535,8 @@
         {"name":"비느하스","role":"따지러 간 제사장","weight":3},
         {"name":"르우벤 자손","role":"증거의 제단을 쌓음","weight":3},
         {"name":"갓 자손","role":"함께 제단을 쌓음","weight":2},
-        {"name":"므낫세 반 지파","role":"함께 제단을 쌓음","weight":1}
+        {"name":"므낫세 반 지파","role":"함께 제단을 쌓음","weight":1},
+        {"name":"엘르아살","role":"비느하스의 아버지","weight":1}
       ],
       "rels": [
         {"from":"비느하스","to":"르우벤 자손","label":"따진 제사장","kind":"conflict","directed":true,"weight":3},
