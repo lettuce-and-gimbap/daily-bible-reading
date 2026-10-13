@@ -141,3 +141,41 @@ body.full .topbar { position: static; padding: 6px 12px; }
   .sheet { top: auto; left: 0; width: 100%; height: 84dvh; border-left: 0; border-radius: 20px 20px 0 0; overflow: hidden; }
   .sheet-grip { display: block; width: 40px; height: 4px; border-radius: 4px; background: var(--line); position: absolute; top: 6px; left: 50%; transform: translateX(-50%); }
 }
+
+/* ---------- 오늘 분량 요약 ---------- */
+.sum-head { display: grid; gap: 1px; }
+.sum-head small { font-size: .74rem; color: var(--muted); font-weight: 600; }
+.sum-head b { font-size: 1.05rem; letter-spacing: -0.03em; }
+.sum-card { gap: 10px; }
+.sum-people { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.sum-people li { display: inline-flex; flex-direction: column; gap: 1px; background: var(--accent-soft); border-radius: 12px; padding: 7px 11px; min-width: 0; }
+.sum-people b { color: var(--accent); font-size: .92rem; }
+.sum-people span { font-size: .76rem; color: var(--muted); }
+.sum-story { margin: 0; line-height: 1.75; font-size: .96rem; }
+.sum-songs { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.sum-songs li { display: grid; gap: 6px; justify-items: start; padding-top: 12px; border-top: 1px solid var(--line); }
+.sum-songs li:first-child { padding-top: 0; border-top: 0; }
+.sum-songs li div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.sum-songs li span { font-size: .82rem; color: var(--muted); }
+.sum-songs li p { margin: 0; font-size: .86rem; color: var(--muted); }
+.sum-state { display: grid; justify-items: center; gap: 6px; text-align: center; padding: 28px 8px; }
+.sum-state p { margin: 0; }
+.sum-spin { width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--line); border-top-color: var(--accent); animation: sum-spin 0.9s linear infinite; }
+@keyframes sum-spin { to { transform: rotate(360deg); } }
+
+/* ---------- 메모 구절 고르기 ---------- */
+.mp-panel { display: grid; gap: 8px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); }
+.mp-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: .84rem; color: var(--muted); }
+.mp-bar b { color: var(--ink); }
+.mp-bar-btns { display: inline-flex; }
+.mp-panel .btn.text { padding: 6px 8px; }
+.mp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 38dvh; overflow-y: auto; overscroll-behavior: contain; }
+.mp-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.mp-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.mp-item input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); }
+.mp-body { min-width: 0; display: grid; gap: 2px; }
+.mp-body b { font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mp-body small { color: var(--muted); font-size: .8rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.mp-item.mp-note .mp-body b { font-weight: 600; }
+.mp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.mp-actions .btn.text { margin-left: auto; }

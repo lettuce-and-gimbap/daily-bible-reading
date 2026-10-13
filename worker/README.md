@@ -43,6 +43,22 @@ Cloudflare 무료 플랜으로 충분합니다.
    const PUSH_SERVER = "https://daily-bible-reminder.<아이디>.workers.dev";
    ```
 
+## 오늘 분량 요약 켜기 (선택)
+앱의 ✨ 요약 패널(주요 등장 인물 · 쉬운 이야기 · 추천 찬양)은 이 서버가 Claude API로 만들어 줍니다. 이 기능만 별도 설정이 필요합니다.
+
+1. [Anthropic Console](https://console.anthropic.com/)에서 API 키를 만듭니다.
+2. 비밀 값으로 등록하고 다시 배포합니다.
+   ```bash
+   npx wrangler secret put ANTHROPIC_API_KEY
+   npx wrangler deploy
+   ```
+3. 앱에서 ✨를 누르면 처음 한 번 10~30초쯤 걸려 요약이 만들어집니다. 같은 분량은 KV(`sum:v1:…`)에 저장돼 모든 사용자가 나눠 쓰므로 비용은 처음 한 번만 듭니다.
+
+- 키를 등록하지 않으면 요약 패널에 "요약 기능이 아직 켜지지 않았어요"가 나오고, 다른 기능에는 영향이 없습니다.
+- 모델은 기본 `claude-opus-5-5`입니다. 바꾸려면 `wrangler.toml`의 `[vars]`에 `SUMMARY_MODEL = "…"`을 넣습니다.
+- 비용 보호: 하루에 새로 만드는 요약은 최대 300개(`SUMMARY_DAILY_CAP`으로 조절)이고, 허용된 사이트 주소에서 온 요청만 새로 만듭니다.
+- 한 번에 요약하는 분량은 최대 30장입니다.
+
 ## 휴대폰에서 켜기
 - **아이폰(iOS 16.4 이상)**: Safari로 사이트 열기 → 공유 버튼 → **홈 화면에 추가** → 홈 화면 아이콘으로 열기 → 현황 → **알림 켜기**.
   홈 화면 앱은 Safari와 저장 공간이 따로라서, 기존 기록은 백업 파일로 옮겨야 합니다.

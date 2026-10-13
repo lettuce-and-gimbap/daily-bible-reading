@@ -1,0 +1,173 @@
+// 오늘 분량 미리 보기: 통독할 장들을 Claude에게 요약시켜 앱에 돌려줌
+// - 주요 등장 인물 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양
+// - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
+// - 필요한 설정: npx wrangler secret put ANTHROPIC_API_KEY (worker/README.md 참고)
+//   선택: SUMMARY_MODEL(기본 claude-opus-5-5), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 300)
+
+// 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
+const BOOK_TABLE = (
+  "gen:창세기:50 exo:출애굽기:40 lev:레위기:27 num:민수기:36 deu:신명기:34 jos:여호수아:24 jdg:사사기:21 " +
+  "rut:룻기:4 1sa:사무엘상:31 2sa:사무엘하:24 1ki:열왕기상:22 2ki:열왕기하:25 1ch:역대상:29 2ch:역대하:36 " +
+  "ezr:에스라:10 neh:느헤미야:13 est:에스더:10 job:욥기:42 psa:시편:150 pro:잠언:31 ecc:전도서:12 sng:아가:8 " +
+  "isa:이사야:66 jer:예레미야:52 lam:예레미야애가:5 ezk:에스겔:48 dan:다니엘:12 hos:호세아:14 jol:요엘:3 " +
+  "amo:아모스:9 oba:오바댜:1 jnh:요나:4 mic:미가:7 nam:나훔:3 hab:하박국:3 zep:스바냐:3 hag:학개:2 zec:스가랴:14 " +
+  "mal:말라기:4 mat:마태복음:28 mrk:마가복음:16 luk:누가복음:24 jhn:요한복음:21 act:사도행전:28 rom:로마서:16 " +
+  "1co:고린도전서:16 2co:고린도후서:13 gal:갈라디아서:6 eph:에베소서:6 php:빌립보서:4 col:골로새서:4 1th:데살로니가전서:5 " +
+  "2th:데살로니가후서:3 1ti:디모데전서:6 2ti:디모데후서:4 tit:디도서:3 phm:빌레몬서:1 heb:히브리서:13 jas:야고보서:5 " +
+  "1pe:베드로전서:5 2pe:베드로후서:3 1jn:요한일서:5 2jn:요한이서:1 3jn:요한삼서:1 jud:유다서:1 rev:요한계시록:22")
+  .split(" ").filter(Boolean).map((s) => { const [code, name, n] = s.split(":"); return { code, name, chapters: Number(n) }; });
+const BOOK_BY_CODE = Object.fromEntries(BOOK_TABLE.map((b) => [b.code, b]));
+
+const MAX_CHAPTERS = 30; // 한 번에 요약할 최대 장 수
+const STORY_LIMIT = 600;
+const DEFAULT_MODEL = "claude-opus-5-5";
+
+// "num.12-16,num.17" → { key, label, count } (잘못된 값이면 null)
+export function parseRanges(raw) {
+  if (typeof raw !== "string" || raw.length > 300) return null;
+  const segs = [];
+  let count = 0;
+  for (const part of raw.split(",")) {
+    const m = part.match(/^([0-9a-z]{3})\.(\d{1,3})(?:-(\d{1,3}))?$/);
+    const book = m && BOOK_BY_CODE[m[1]];
+    if (!book) return null;
+    const lo = Number(m[2]), hi = Number(m[3] || m[2]);
+    if (lo < 1 || hi < lo || hi > book.chapters) return null;
+    count += hi - lo + 1;
+    segs.push({ code: book.code, name: book.name, lo, hi });
+  }
+  if (!segs.length || count > MAX_CHAPTERS) return null;
+  const label = segs.map((s) => `${s.name} ${s.lo === s.hi ? s.lo : `${s.lo}–${s.hi}`}장`).join(", ");
+  return { key: segs.map((s) => `${s.code}.${s.lo}-${s.hi}`).join(","), label, count };
+}
+
+const SYSTEM = `너는 성경 통독 앱의 도우미야. 오늘 읽을 성경 분량을 읽기 전에 훑어볼 수 있게 요약해 준다.
+
+규칙
+- 성경에 실제로 나오는 내용만 쓴다. 확실하지 않은 내용은 지어내지 말고 뺀다. 여러 장이면 분량 전체를 한 번에 요약한다.
+- people: 이번 분량에 실제로 나오는 주요 인물 3~6명. name은 개역개정 표기, role은 20자 안쪽으로 이번 분량에서 한 일.
+- story: 정확히 2문단. 두 문단을 합쳐 공백 포함 520자 안쪽(절대 600자를 넘지 않는다). 중학교 2학년에게 이야기해 주듯 쉬운 입말(해요체)로 쓴다. 어려운 한자어는 풀어 쓴다(예: 언약 → 하나님과 한 약속, 성막 → 하나님을 만나는 천막, 제사장 → 하나님 앞에서 사람들을 대신하는 사람). 1문단은 무슨 일이 있었는지 흐름, 2문단은 이 분량에서 하나님은 어떤 분이고 사람들은 어떻게 반응했는지. 훈계하거나 설교하는 말투는 피한다.
+- songs: 이 분량의 분위기·주제와 어울리는 찬양 2곡. 새찬송가·통일찬송가 곡은 빼고, 한국 교회에서 실제로 널리 불리는 CCM·워십 곡(예수전도단, 마커스, 어노인팅, 제이어스, 소망, 이천 등)만 고른다. 제목과 아티스트가 확실하지 않은 곡은 쓰지 말고 확실한 다른 곡을 고른다. why는 40자 안쪽으로 왜 어울리는지.
+- 이모지와 마크다운 기호는 쓰지 않는다.`;
+
+const SCHEMA = {
+  type: "object",
+  properties: {
+    people: { type: "array", items: { type: "object", properties: { name: { type: "string" }, role: { type: "string" } }, required: ["name", "role"], additionalProperties: false } },
+    story: { type: "array", items: { type: "string" } },
+    songs: { type: "array", items: { type: "object", properties: { title: { type: "string" }, artist: { type: "string" }, why: { type: "string" } }, required: ["title", "artist", "why"], additionalProperties: false } },
+  },
+  required: ["people", "story", "songs"],
+  additionalProperties: false,
+};
+
+const clip = (v, n) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim().slice(0, n) : "");
+
+// 문단 합계가 limit자를 넘으면 문장 단위로 잘라 맞춤
+export function fitStory(paras, limit = STORY_LIMIT) {
+  const out = [];
+  let used = 0;
+  for (const p of paras) {
+    let text = p.trim();
+    if (used + text.length > limit) {
+      const room = limit - used;
+      const cut = text.slice(0, Math.max(0, room));
+      const end = Math.max(cut.lastIndexOf("."), cut.lastIndexOf("요."), cut.lastIndexOf("다."));
+      text = end > 0 ? cut.slice(0, end + 1) : "";
+    }
+    if (text) { out.push(text); used += text.length; }
+  }
+  return out;
+}
+
+// 모델이 돌려준 값을 앱이 쓰는 모양으로 정리. 쓸 수 없으면 null
+export function cleanSummary(raw) {
+  if (!raw || typeof raw !== "object") return null;
+  const people = (Array.isArray(raw.people) ? raw.people : [])
+    .map((p) => ({ name: clip(p && p.name, 20), role: clip(p && p.role, 40) })).filter((p) => p.name).slice(0, 8);
+  const story = (Array.isArray(raw.story) ? raw.story : []).map((s) => clip(s, 700)).filter(Boolean);
+  const songs = (Array.isArray(raw.songs) ? raw.songs : [])
+    .map((s) => ({ title: clip(s && s.title, 60), artist: clip(s && s.artist, 40), why: clip(s && s.why, 80) }))
+    .filter((s) => s.title && s.artist).slice(0, 3);
+  if (people.length < 1 || story.length < 1 || songs.length < 1) return null;
+  return { people, story, songs };
+}
+
+const storyLength = (story) => story.reduce((n, p) => n + p.length, 0);
+const storyOk = (r) => r.story.length === 2 && storyLength(r.story) <= STORY_LIMIT;
+
+async function askClaude(env, label, count, feedback) {
+  const messages = [{ role: "user", content: `이번 분량: ${label} (총 ${count}장)` + (feedback ? `\n\n${feedback}` : "") }];
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+    body: JSON.stringify({
+      model: env.SUMMARY_MODEL || DEFAULT_MODEL,
+      max_tokens: 6000,
+      system: SYSTEM,
+      messages,
+      output_config: { effort: "low", format: { type: "json_schema", schema: SCHEMA } },
+    }),
+    signal: AbortSignal.timeout(90000),
+  });
+  if (res.status === 429 || res.status === 529 || res.status === 503) throw new SummaryError("요약 서버가 바빠요. 잠시 뒤 다시 시도해 주세요.", 503);
+  if (!res.ok) {
+    console.log("anthropic error", res.status, (await res.text()).slice(0, 300));
+    throw new SummaryError("요약을 만들지 못했어요.", 502);
+  }
+  const data = await res.json();
+  if (data.stop_reason === "refusal") throw new SummaryError("이 분량은 요약을 만들지 못했어요.", 502);
+  const text = (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("");
+  try {
+    return cleanSummary(JSON.parse(text));
+  } catch {
+    const m = text.match(/\{[\s\S]*\}/);
+    try { return m ? cleanSummary(JSON.parse(m[0])) : null; } catch { return null; }
+  }
+}
+
+class SummaryError extends Error {
+  constructor(message, status) { super(message); this.status = status; }
+}
+
+export async function generate(env, label, count) {
+  let r = await askClaude(env, label, count);
+  if (!r || !storyOk(r)) {
+    const why = !r ? "형식이 맞지 않았어" : r.story.length !== 2 ? "story가 2문단이 아니었어" : `story가 ${storyLength(r.story)}자로 600자를 넘었어`;
+    const retry = await askClaude(env, label, count, `지난 답은 ${why}. 규칙을 다시 지켜서 처음부터 다시 써 줘.`);
+    if (retry) r = retry;
+  }
+  if (!r) throw new SummaryError("요약을 만들지 못했어요.", 502);
+  if (r.story.length > 2) r.story = [r.story[0], r.story.slice(1).join(" ")];
+  if (storyLength(r.story) > STORY_LIMIT) r.story = fitStory(r.story);
+  if (!r.story.length) throw new SummaryError("요약을 만들지 못했어요.", 502);
+  return r;
+}
+
+// GET /summary?r=num.12-16
+export async function dailySummary(url, env, json, originOk, today) {
+  const parsed = parseRanges(url.searchParams.get("r"));
+  if (!parsed) return json({ error: "잘못된 분량" }, 400);
+  const cacheKey = `sum:v1:${parsed.key}`;
+  const hit = await env.SUBS.get(cacheKey, "json");
+  if (hit) return json({ ...hit, label: parsed.label, cached: true });
+
+  if (!env.ANTHROPIC_API_KEY) return json({ error: "요약 기능이 아직 켜지지 않았어요. (서버에 ANTHROPIC_API_KEY 등록 필요)", code: "not_configured" }, 503);
+  if (!originOk) return json({ error: "허용되지 않은 주소" }, 403);
+
+  // 하루에 새로 만들 수 있는 개수 제한 (비용 보호)
+  const capKey = `sumcap:${today}`;
+  const used = Number(await env.SUBS.get(capKey)) || 0;
+  if (used >= (Number(env.SUMMARY_DAILY_CAP) || 300)) return json({ error: "오늘 새로 만들 수 있는 요약을 다 썼어요. 내일 다시 시도해 주세요.", code: "cap" }, 429);
+  await env.SUBS.put(capKey, String(used + 1), { expirationTtl: 172800 });
+
+  try {
+    const summary = await generate(env, parsed.label, parsed.count);
+    await env.SUBS.put(cacheKey, JSON.stringify(summary));
+    return json({ ...summary, label: parsed.label, cached: false });
+  } catch (e) {
+    if (e instanceof SummaryError) return json({ error: e.message }, e.status);
+    console.log("summary failed", String(e && e.message || e));
+    return json({ error: "요약을 만들지 못했어요." }, 502);
+  }
+}

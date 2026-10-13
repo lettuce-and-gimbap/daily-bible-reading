@@ -4,6 +4,8 @@
 // - 9~12시·15~18시에는 5분마다 깨어나, 구독마다 그날 뽑힌 랜덤 시각인 구독에만 보냄
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
+import { dailySummary } from "./summary.js";
+
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
   "http://localhost:8000",
@@ -30,6 +32,7 @@ export default {
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
       if (pathname === "/search") return await searchVerses(new URL(request.url), json);
+      if (pathname === "/summary") return await dailySummary(new URL(request.url), env, json, !origin || ALLOWED_ORIGINS.includes(origin), kstDate(new Date()));
       if (request.method !== "POST") return json({ error: "not found" }, 404);
       const body = await request.json();
 

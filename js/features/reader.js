@@ -10,6 +10,15 @@ function renderToday() {
   refreshReader();
 }
 
+// 오늘의 통독 메모 저장 (직접 쓸 때와 구절을 지울 때 함께 씀)
+function saveDayNote(value) {
+  if (value.trim()) state.dayNotes[todayStr()] = value;
+  else delete state.dayNotes[todayStr()];
+  persist();
+  const st = $("#d-note-status");
+  if (st) st.textContent = "저장됨 ✓";
+}
+
 function buildReader() {
   app.innerHTML = `
     <div class="rd reading">
@@ -18,6 +27,7 @@ function buildReader() {
           <button class="chip-btn" data-open="table" aria-label="통독표 열기">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>통독표
           </button>
+          <button class="chip-btn" data-open="summary" aria-label="오늘 분량 미리 보기">✨</button>
           <div class="rd-title" id="r-title"></div>
           <button class="chip-btn" data-open="view" id="r-view" aria-label="역본·보기 설정"></button>
         </div>
@@ -78,6 +88,7 @@ function buildReader() {
   body.addEventListener("click", async (e) => {
     const t = e.target.closest("button, [data-day], [data-chap]");
     if (!t) return;
+    if (t.dataset.sumRetry) { delete summaryMem[t.dataset.sumRetry]; renderReaderSheet(); return; }
     let reload = false;
     if (t.dataset.chap !== undefined) {
       const seq = planSequence(state.plan);
@@ -129,13 +140,7 @@ function buildReader() {
   body.addEventListener("input", (e) => {
     if (e.target.id !== "d-note") return;
     clearTimeout(noteTimer);
-    noteTimer = setTimeout(() => {
-      if (e.target.value.trim()) state.dayNotes[todayStr()] = e.target.value;
-      else delete state.dayNotes[todayStr()];
-      persist();
-      const st = $("#d-note-status");
-      if (st) st.textContent = "저장됨 ✓";
-    }, 400);
+    noteTimer = setTimeout(() => saveDayNote(e.target.value), 400);
   });
 }
 
@@ -245,6 +250,8 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
+const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["tools", "메모 · 도구"]];
+
 function renderReaderSheet() {
   const pr = progress();
   const body = $("#sheet-body");
@@ -266,7 +273,8 @@ function renderReaderSheet() {
     return;
   }
 
-  setSheetTitle([["table", "통독표"], ["tools", "메모 · 도구"]]);
+  if (sheetTab === "summary") return renderSummaryTab(body, pr.days[viewingDay]);
+  setSheetTitle(READER_TABS);
 
   if (sheetTab === "table") {
     body.innerHTML = `
@@ -315,6 +323,7 @@ function renderReaderSheet() {
         <button class="btn soft small" id="d-copy-note">📋 메모 전체 복사</button>
         <span class="muted small" id="d-note-status">자동 저장돼요</span>
       </div>
+      <div class="mp" id="d-note-picker"></div>
       <p class="muted small hint">갓피아 화면 위의 <b>📋 붙여넣기</b> 버튼으로 구절을 바로 넣을 수 있어요. 다 쓰면 여기서 <b>메모 전체 복사</b>로 다른 곳에 옮겨 보세요.</p>
     </section>
     <section class="tool-card godpia-card">
@@ -331,4 +340,5 @@ function renderReaderSheet() {
       </div>
       <p class="muted small">이 메모는 이 기기에 저장되고, 현황 → 기록 내보내기에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>`;
+  memoPickMount($("#d-note-picker"), $("#d-note"), saveDayNote, renderReaderSheet);
 }
