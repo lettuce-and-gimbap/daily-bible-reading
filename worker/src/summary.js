@@ -2,7 +2,7 @@
 // - 주요 등장 인물 / 중학생에게 말하듯 쉬운 이야기(2문단, 600자 이내) / 어울리는 찬양
 // - 같은 분량은 KV에 저장해 두고 모든 사람이 나눠 쓰므로, 처음 한 번만 API 비용이 든다.
 // - 필요한 설정: npx wrangler secret put ANTHROPIC_API_KEY (worker/README.md 참고)
-//   선택: SUMMARY_MODEL(기본 claude-opus-5-5), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 300)
+//   선택: SUMMARY_MODEL(기본 claude-sonnet-5-5), SUMMARY_DAILY_CAP(하루에 새로 만드는 최대 개수, 기본 300)
 
 // 앱의 js/core/bible.js 와 같은 순서·장 수 ("코드:이름:장 수")
 const BOOK_TABLE = (
@@ -20,7 +20,7 @@ const BOOK_BY_CODE = Object.fromEntries(BOOK_TABLE.map((b) => [b.code, b]));
 
 const MAX_CHAPTERS = 30; // 한 번에 요약할 최대 장 수
 const STORY_LIMIT = 600;
-const DEFAULT_MODEL = "claude-opus-5-5";
+const DEFAULT_MODEL = "claude-sonnet-5-5";
 
 // "num.12-16,num.17" → { key, label, count } (잘못된 값이면 null)
 export function parseRanges(raw) {
