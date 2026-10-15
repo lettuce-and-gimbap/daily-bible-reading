@@ -22,7 +22,7 @@ const TYPES = ["story", "law", "list", "poem", "wisdom", "prophecy", "letter", "
 const KINDS = ["family", "ally", "conflict", "other"];
 // 하나님은 본문에 "여호와"·"하나님"·"주" 등으로 나와 글자 대조에서 뺀다
 const SKIP_LOOKUP = new Set(["하나님", "예수", "성령"]);
-const LIMIT = { line: 120, story: 500, role: 24, label: 10, eventTitle: 18, eventText: 70, where: 30, what: 50, why: 40, note: 90 };
+const LIMIT = { line: 120, story: 750, role: 24, label: 10, eventTitle: 18, eventText: 120, where: 30, what: 60, why: 40, note: 140 };
 
 const only = process.argv.slice(2);
 const files = existsSync(dataDir) ? readdirSync(dataDir).filter((f) => f.endsWith(".json")) : [];
