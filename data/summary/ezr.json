@@ -24,7 +24,7 @@
         {"name":"세스바살","role":"그릇을 넘겨받은 유다 지도자","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"고레스","label":"감동시키신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님이 예레미야의 말씀을 이루시려고 바사 왕 고레스의 마음을 감동시키시자, 그가 예루살렘 성전을 지으라고 공포했어요."},
+        {"from":"하나님","to":"고레스","label":"감동시키신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님이 예레미야를 통한 약속대로 고레스 왕의 마음을 움직이시자, 그는 예루살렘 성전을 다시 지으라고 했어요."},
         {"from":"하나님","to":"유다와 베냐민 족장들","label":"감동시키신 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"유다와 베냐민 족장들과 제사장과 레위인들 가운데 하나님께 감동받은 사람들이 성전을 지으러 일어났어요."},
         {"from":"미드르닷","to":"세스바살","label":"그릇 넘겨준 이","kind":"other","directed":true,"weight":2,"verses":"8","note":"고레스가 창고지기 미드르닷에게 성전 그릇을 꺼내 유다 지도자 세스바살에게 세어 주게 했어요."},
         {"from":"이웃들","to":"유다와 베냐민 족장들","label":"도운 이웃","kind":"ally","directed":true,"weight":1,"verses":"6","note":"주변 사람들이 은그릇과 금과 물품과 짐승과 보물로 그들을 도왔어요."},
@@ -59,7 +59,7 @@
       "rels": [
         {"from":"예수아","to":"스룹바벨","label":"함께 이끈 이","kind":"ally","directed":false,"weight":3,"verses":"2","note":"포로에서 돌아온 사람들은 스룹바벨과 예수아를 따라 예루살렘과 유다로 돌아왔어요."},
         {"from":"온 회중","to":"스룹바벨","label":"따라온 백성","kind":"ally","directed":true,"weight":2,"verses":"64-65","note":"돌아온 온 회중은 사만 이천삼백육십 명이었어요."},
-        {"from":"총독","to":"족보 없는 제사장들","label":"판단을 미룬 이","kind":"other","directed":true,"weight":1,"verses":"62-63","note":"족보를 찾지 못한 제사장들에게 총독이 우림과 둠밈을 가진 제사장이 일어나기까지 거룩한 것을 먹지 말라고 했어요."},
+        {"from":"총독","to":"족보 없는 제사장들","label":"판단을 미룬 이","kind":"other","directed":true,"weight":1,"verses":"62-63","note":"족보를 못 찾은 제사장들에게 총독은 하나님 뜻을 물을 제사장이 설 때까지 거룩한 음식을 먹지 말라 했어요."},
         {"from":"족장들","to":"온 회중","label":"앞장선 이들","kind":"ally","directed":true,"weight":1,"verses":"68-69","note":"족장들이 하나님의 전 터에 이르러 성전을 다시 세우려고 힘대로 예물을 드렸어요."}
       ],
       "places": [
@@ -307,7 +307,7 @@
       "rels": [
         {"from":"스가냐","to":"에스라","label":"일어나라 권한 이","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"스가냐가 그래도 소망이 있으니 이방 아내들을 내보내는 언약을 세우자며 일어나 행하라, 우리가 함께하겠다고 했어요."},
         {"from":"에스라","to":"지도자들","label":"맹세시킨 학자","kind":"ally","directed":true,"weight":2,"verses":"5","note":"에스라가 일어나 제사장과 레위인과 온 이스라엘 지도자들에게 그 말대로 하겠다고 맹세하게 했어요."},
-        {"from":"백성","to":"에스라","label":"따른 회중","kind":"ally","directed":true,"weight":2,"verses":"12","note":"온 회중이 큰 소리로 당신의 말씀대로 우리가 마땅히 행하겠다고 대답했어요."},
+        {"from":"백성","to":"에스라","label":"따른 회중","kind":"ally","directed":true,"weight":2,"verses":"12","note":"모인 백성이 모두 큰 소리로 에스라의 말대로 하겠다고 답했어요."},
         {"from":"요나단(아사헬의 아들)","to":"에스라","label":"반대한 사람","kind":"conflict","directed":true,"weight":1,"verses":"15","note":"아사헬의 아들 요나단과 야스야만 이 일을 반대했어요."},
         {"from":"야스야","to":"요나단(아사헬의 아들)","label":"함께 반대","kind":"ally","directed":false,"weight":1,"verses":"15","note":"야스야는 요나단과 함께 반대했어요."}
       ],

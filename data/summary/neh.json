@@ -243,7 +243,7 @@
         {"name":"하나님","role":"백성의 힘이신 분","weight":2}
       ],
       "rels": [
-        {"from":"에스라","to":"모든 백성","label":"말씀 읽은 학사","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"학사 에스라가 수문 앞 광장에서 새벽부터 정오까지 율법책을 백성에게 읽어 주었어요."},
+        {"from":"에스라","to":"모든 백성","label":"말씀 읽은 학사","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"학자 에스라는 수문 앞 광장에서 새벽부터 한낮까지 백성에게 율법책을 읽어 줬어요."},
         {"from":"레위인들","to":"모든 백성","label":"깨닫게 한 이들","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"레위인들이 율법책을 낭독하고 뜻을 해석해 백성이 깨닫게 했어요."},
         {"from":"느헤미야","to":"에스라","label":"함께 위로함","kind":"ally","directed":false,"weight":2,"verses":"9-10","note":"말씀을 듣고 우는 백성에게 느헤미야와 에스라가 여호와로 인해 기뻐하는 것이 너희의 힘이라며 위로했어요."},
         {"from":"족장들","to":"에스라","label":"배우러 온 이들","kind":"ally","directed":true,"weight":1,"verses":"13","note":"이튿날 족장들과 제사장과 레위인들이 율법을 더 밝히 알고자 에스라에게 모였어요."},
@@ -369,7 +369,7 @@
         {"from":"에스라","to":"두 찬양대","label":"앞장선 학사","kind":"ally","directed":true,"weight":2,"verses":"36","note":"성벽 봉헌 때 학사 에스라가 한 찬양대 앞에서 행진했어요."},
         {"from":"느헤미야","to":"두 찬양대","label":"세운 총독","kind":"ally","directed":true,"weight":3,"verses":"31, 38","note":"느헤미야가 유다 지도자들을 성벽 위로 올려 큰 찬양대 둘을 세워 양쪽으로 행진하게 했어요."},
         {"from":"레위인들","to":"제사장들","label":"함께 정결","kind":"ally","directed":false,"weight":2,"verses":"30","note":"제사장과 레위인들이 몸을 정결하게 하고 백성과 성문과 성벽도 정결하게 했어요."},
-        {"from":"하나님","to":"백성","label":"즐겁게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"43","note":"하나님이 크게 즐거워하게 하셔서 예루살렘의 즐거워하는 소리가 멀리까지 들렸어요."},
+        {"from":"하나님","to":"백성","label":"즐겁게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"43","note":"하나님이 큰 기쁨을 주셔서 예루살렘의 기쁜 소리가 멀리까지 퍼졌어요."},
         {"from":"예수아","to":"스룹바벨","label":"함께 돌아온 이","kind":"ally","directed":false,"weight":1,"verses":"1","note":"스룹바벨과 예수아와 함께 돌아온 제사장과 레위인의 명단이 기록되어 있어요."}
       ],
       "places": [
@@ -404,7 +404,7 @@
         {"from":"느헤미야","to":"도비야","label":"쫓아낸 총독","kind":"conflict","directed":true,"weight":3,"verses":"7-9","note":"돌아온 느헤미야가 몹시 근심하여 도비야의 세간을 방 밖으로 다 내던지고 그 방을 정결하게 했어요."},
         {"from":"느헤미야","to":"민장들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2,"verses":"10-11","note":"레위인들이 몫을 받지 못해 밭으로 돌아가자 느헤미야가 민장들에게 어찌하여 성전을 버렸냐고 꾸짖었어요."},
         {"from":"느헤미야","to":"유다 귀인들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2,"verses":"15-18","note":"느헤미야가 안식일에 장사하는 것을 보고 귀인들에게 안식일을 범하는 악을 행한다고 꾸짖었어요."},
-        {"from":"느헤미야","to":"하나님","label":"기억을 구한 종","kind":"ally","directed":true,"weight":2,"verses":"14, 31","note":"느헤미야가 내 하나님이여 나를 기억하사 복을 주옵소서 하고 기도했어요."},
+        {"from":"느헤미야","to":"하나님","label":"기억을 구한 종","kind":"ally","directed":true,"weight":2,"verses":"14, 31","note":"느헤미야는 하나님께 자기를 기억하시고 은혜를 베풀어 달라고 기도했어요."},
         {"from":"산발랏","to":"엘리아십","label":"손자의 장인","kind":"family","directed":true,"weight":1,"verses":"28","note":"대제사장 엘리아십의 손자 하나가 산발랏의 사위가 되자 느헤미야가 그를 쫓아냈어요."}
       ],
       "places": [

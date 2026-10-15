@@ -59,7 +59,7 @@
         {"from":"선지자의 제자들","to":"엘리사","label":"따르게 된 무리","kind":"ally","directed":true,"weight":2,"verses":"15","note":"여리고의 선지자 제자들이 엘리야의 영이 엘리사 위에 머물렀다며 엘리사 앞에 엎드렸어요."},
         {"from":"벧엘의 아이들","to":"엘리사","label":"조롱한 무리","kind":"conflict","directed":true,"weight":1,"verses":"23-24","note":"벧엘로 가는 길에 아이들이 대머리여 올라가라고 엘리사를 조롱했어요."},
         {"from":"엘리사","to":"여리고 사람들","label":"물을 고쳐 준 이","kind":"ally","directed":true,"weight":1,"verses":"19-22","note":"여리고 사람들이 물이 나빠 땅이 열매를 맺지 못한다 하자 엘리사가 소금을 넣어 물을 고쳐 주었어요."},
-        {"from":"하나님","to":"엘리야","label":"데려가신 분","kind":"ally","directed":true,"weight":2,"verses":"11","note":"불 수레와 불 말이 두 사람을 갈라놓았고 엘리야가 회오리바람으로 하늘로 올라갔어요."}
+        {"from":"하나님","to":"엘리야","label":"데려가신 분","kind":"ally","directed":true,"weight":2,"verses":"11","note":"불 말이 끄는 불 수레가 둘 사이를 가르더니 엘리야가 회오리바람을 타고 하늘로 올라갔어요."}
       ],
       "places": [
         {"name":"요단 강","where":"여리고 동쪽을 흐르는 강","what":"겉옷으로 두 번 갈라진 물","weight":3},
@@ -418,7 +418,7 @@
         {"name":"하나님","role":"언약 때문에 긍휼히 여기심","weight":2}
       ],
       "rels": [
-        {"from":"요아스(여호아하스의 아들)","to":"엘리사","label":"아버지라 부른 왕","kind":"ally","directed":true,"weight":3,"verses":"14","note":"엘리사가 죽을병에 들자 요아스 왕이 찾아와 울며 내 아버지여 이스라엘의 병거와 마병이여 하고 불렀어요."},
+        {"from":"요아스(여호아하스의 아들)","to":"엘리사","label":"아버지라 부른 왕","kind":"ally","directed":true,"weight":3,"verses":"14","note":"엘리사가 죽게 되자 요아스 왕이 찾아와 울며 그를 이스라엘을 지켜 준 군대 같은 아버지라 불렀어요."},
         {"from":"엘리사","to":"요아스(여호아하스의 아들)","label":"꾸짖은 선지자","kind":"conflict","directed":true,"weight":2,"verses":"18-19","note":"엘리사가 화살로 땅을 치라 했는데 왕이 세 번만 치자, 대여섯 번 쳤으면 아람을 진멸했을 거라고 꾸짖었어요."},
         {"from":"하사엘","to":"여호아하스","label":"괴롭힌 왕","kind":"conflict","directed":true,"weight":2,"verses":"3, 22","note":"하나님이 노하셔서 여호아하스 시대 내내 이스라엘을 아람 왕 하사엘의 손에 넘기셨어요."},
         {"from":"요아스(여호아하스의 아들)","to":"벤하닷(하사엘의 아들)","label":"이긴 왕","kind":"conflict","directed":true,"weight":2,"verses":"25","note":"요아스가 하사엘의 아들 벤하닷을 세 번 쳐서 빼앗겼던 성읍들을 되찾았어요."},
@@ -827,7 +827,7 @@
       ],
       "rels": [
         {"from":"느부갓네살","to":"시드기야","label":"눈을 뽑은 왕","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"느부갓네살이 도망하던 시드기야를 잡아 그 앞에서 아들들을 죽이고 그의 두 눈을 뽑았어요."},
-        {"from":"느부사라단","to":"느부갓네살","label":"시위대장","kind":"ally","directed":true,"weight":2,"verses":"8-10","note":"느부갓네살의 시위대장 느부사라단이 와서 성전과 왕궁을 불사르고 예루살렘 성벽을 헐었어요."},
+        {"from":"느부사라단","to":"느부갓네살","label":"시위대장","kind":"ally","directed":true,"weight":2,"verses":"8-10","note":"바벨론 경호대장 느부사라단이 성전과 왕궁을 불태우고 예루살렘 성벽을 무너뜨렸어요."},
         {"from":"이스마엘","to":"그달리야","label":"죽인 왕족","kind":"conflict","directed":true,"weight":2,"verses":"25","note":"왕족 이스마엘이 사람들과 함께 와서 총독 그달리야를 쳐 죽였어요."},
         {"from":"에윌므로닥","to":"여호야긴","label":"풀어 준 왕","kind":"ally","directed":true,"weight":3,"verses":"27-30","note":"바벨론 왕 에윌므로닥이 옥에 갇힌 여호야긴을 풀어 주고 평생 왕의 상에서 먹게 했어요."},
         {"from":"느부갓네살","to":"그달리야","label":"총독 세운 왕","kind":"other","directed":true,"weight":1,"verses":"22","note":"느부갓네살이 유다 땅에 남은 백성을 다스리도록 그달리야를 총독으로 세웠어요."},

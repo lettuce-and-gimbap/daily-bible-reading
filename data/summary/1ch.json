@@ -421,7 +421,7 @@
         {"from":"웃사","to":"아히오","label":"형제","kind":"family","directed":false,"weight":1,"verses":"7","note":"웃사와 아히오가 새 수레를 몰아 하나님의 궤를 옮겼어요."},
         {"from":"이스라엘 지도자들","to":"다윗","label":"의논한 이들","kind":"ally","directed":true,"weight":1,"verses":"1-4","note":"다윗이 천부장과 백부장과 모든 지도자와 의논했고 온 회중이 궤를 옮기자는 말을 옳게 여겼어요."},
         {"from":"하나님","to":"오벧에돔","label":"복 주신 분","kind":"ally","directed":true,"weight":2,"verses":"14","note":"궤가 오벧에돔의 집에 석 달 머무는 동안 하나님이 그 집과 소유에 복을 주셨어요."},
-        {"from":"다윗","to":"하나님","label":"두려워한 왕","kind":"other","directed":true,"weight":2,"verses":"12","note":"그날 다윗이 하나님을 두려워하여 내가 어떻게 하나님의 궤를 모셔 오겠느냐고 했어요."}
+        {"from":"다윗","to":"하나님","label":"두려워한 왕","kind":"other","directed":true,"weight":2,"verses":"12","note":"웃사가 죽은 날 다윗은 하나님이 두려워져 언약궤를 어떻게 모셔 오겠냐며 멈췄어요."}
       ],
       "places": [
         {"name":"기럇여아림","where":"예루살렘 서쪽 약 13km","what":"궤가 머물던 아비나답의 집","weight":2},
@@ -514,7 +514,7 @@
       ],
       "rels": [
         {"from":"다윗","to":"아삽","label":"찬송 맡긴 왕","kind":"ally","directed":true,"weight":3,"verses":"4-7","note":"다윗이 레위 사람들을 궤 앞에 세워 찬송하게 하고, 그날 처음으로 아삽에게 감사 찬송을 맡겼어요."},
-        {"from":"다윗","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"다윗이 번제를 마치고 여호와의 이름으로 백성에게 축복하고 떡과 고기와 건포도를 나눠 주었어요."},
+        {"from":"다윗","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"다윗은 제사를 마치고 주님 이름으로 백성을 축복한 뒤 모두에게 빵과 고기와 건포도를 나눠 줬어요."},
         {"from":"사독","to":"다윗","label":"성막 맡은 제사장","kind":"ally","directed":true,"weight":2,"verses":"39-40","note":"다윗은 기브온 산당의 성막 앞에 제사장 사독을 두어 아침저녁으로 번제를 드리게 했어요."},
         {"from":"헤만","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1,"verses":"41-42","note":"헤만과 여두둔도 함께 나팔과 제금으로 하나님을 찬송했어요."},
         {"from":"다윗","to":"하나님","label":"감사한 왕","kind":"ally","directed":true,"weight":3,"verses":"8-36","note":"다윗이 여호와께 감사하고 그의 이름을 부르며 행하신 일을 만민 중에 알리라는 노래를 지었어요."}
@@ -674,7 +674,7 @@
         {"name":"하나님","role":"불로 응답하신 분","weight":3}
       ],
       "rels": [
-        {"from":"사탄","to":"다윗","label":"충동한 자","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"사탄이 일어나 이스라엘을 대적하고 다윗을 충동해 인구를 세게 했어요."},
+        {"from":"사탄","to":"다윗","label":"충동한 자","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"사탄이 이스라엘을 해치려고 다윗을 부추겨 백성 수를 세게 했어요."},
         {"from":"요압","to":"다윗","label":"말린 장관","kind":"other","directed":true,"weight":2,"verses":"3","note":"요압이 내 주 왕이여 어찌 이 일을 하려 하시냐, 이스라엘에 죄가 되게 하시냐며 말렸어요."},
         {"from":"갓","to":"다윗","label":"말씀 전한 선견자","kind":"ally","directed":true,"weight":2,"verses":"9-12","note":"선견자 갓이 하나님의 말씀을 받아 세 가지 벌 가운데 하나를 택하라고 다윗에게 전했어요."},
         {"from":"오르난","to":"다윗","label":"땅을 판 사람","kind":"ally","directed":true,"weight":3,"verses":"22-25","note":"오르난이 타작마당을 거저 드리겠다 했지만 다윗은 값을 다 치르겠다며 금 육백 세겔을 주었어요."},
@@ -795,7 +795,7 @@
       "rels": [
         {"from":"다윗","to":"아삽","label":"세운 왕","kind":"ally","directed":true,"weight":2,"verses":"1","note":"다윗과 군대 지휘관들이 아삽과 헤만과 여두둔의 자손을 구별해 수금과 비파로 신령한 노래를 하게 했어요."},
         {"from":"헤만","to":"다윗","label":"왕의 선견자","kind":"ally","directed":true,"weight":2,"verses":"5","note":"헤만은 하나님의 말씀을 받드는 왕의 선견자였어요."},
-        {"from":"헤만의 자녀들","to":"헤만","label":"자녀","kind":"family","directed":true,"weight":1,"verses":"5-6","note":"하나님이 헤만에게 열네 아들과 세 딸을 주셨고 그들이 아버지의 지휘 아래 성전에서 노래했어요."},
+        {"from":"헤만의 자녀들","to":"헤만","label":"자녀","kind":"family","directed":true,"weight":1,"verses":"5-6","note":"하나님은 헤만에게 아들 열넷과 딸 셋을 주셨고, 그들은 아버지 지휘로 성전에서 노래했어요."},
         {"from":"여두둔","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1,"verses":"1, 3","note":"여두둔도 아삽과 함께 성전 찬양을 맡았어요."},
         {"from":"군대 지휘관들","to":"다윗","label":"함께 구별함","kind":"ally","directed":true,"weight":1,"verses":"1","note":"군대 지휘관들도 다윗과 함께 찬양할 사람들을 구별했어요."}
       ],

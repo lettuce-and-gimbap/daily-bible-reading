@@ -356,7 +356,7 @@
       ],
       "rels": [
         {"from":"르호보암","to":"여로보암","label":"갈라선 두 왕","kind":"conflict","directed":false,"weight":3,"verses":"16-20","note":"르호보암이 백성의 짐을 더 무겁게 하겠다 하자 열 지파가 떠나 여로보암을 왕으로 세워 나라가 둘로 갈라졌어요."},
-        {"from":"노인들","to":"르호보암","label":"조언한 원로","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"솔로몬을 섬기던 노인들이 백성을 섬기고 좋은 말로 대답하면 그들이 영원히 왕의 종이 되리라고 조언했어요."},
+        {"from":"노인들","to":"르호보암","label":"조언한 원로","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"솔로몬의 원로 신하들은 백성을 섬기고 부드럽게 답하면 백성이 평생 따를 거라고 르호보암에게 조언했어요."},
         {"from":"젊은이들","to":"르호보암","label":"부추긴 친구","kind":"other","directed":true,"weight":2,"verses":"10-11","note":"함께 자란 젊은이들은 내 새끼손가락이 아버지 허리보다 굵다고 말하라며 르호보암을 부추겼어요."},
         {"from":"이스라엘 자손","to":"르호보암","label":"떠난 백성","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"백성이 우리가 다윗과 무슨 상관이 있느냐며 장막으로 돌아가 르호보암을 떠났어요."},
         {"from":"스마야","to":"르호보암","label":"전쟁 막은 선지자","kind":"ally","directed":true,"weight":2,"verses":"22-24","note":"르호보암이 북쪽과 싸우려 하자 하나님의 사람 스마야가 형제와 싸우지 말라는 말씀을 전해 전쟁을 막았어요."},
@@ -688,7 +688,7 @@
       ],
       "rels": [
         {"from":"미가야","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"17-23","note":"미가야가 이스라엘이 목자 없는 양처럼 흩어졌다는 환상을 전하며 거짓 영이 선지자들의 입에 있다고 책망했어요."},
-        {"from":"시드기야(그나아나의 아들)","to":"미가야","label":"뺨을 친 선지자","kind":"conflict","directed":true,"weight":2,"verses":"24","note":"시드기야가 미가야의 뺨을 치며 여호와의 영이 나를 떠나 어디로 너에게 갔느냐고 했어요."},
+        {"from":"시드기야(그나아나의 아들)","to":"미가야","label":"뺨을 친 선지자","kind":"conflict","directed":true,"weight":2,"verses":"24","note":"거짓 예언자 시드기야는 미가야의 뺨을 때리며 주님의 영이 언제 나를 떠나 너에게 갔느냐고 비아냥댔어요."},
         {"from":"여호사밧","to":"아합","label":"동맹한 왕","kind":"ally","directed":false,"weight":3,"verses":"4-5","note":"유다 왕 여호사밧이 아합과 함께 길르앗 라못으로 싸우러 가겠다며 먼저 하나님께 물어보자고 했어요."},
         {"from":"사백 선지자","to":"아합","label":"듣기 좋은 예언","kind":"other","directed":true,"weight":2,"verses":"6, 12","note":"선지자 사백 명이 올라가소서, 하나님이 그 성을 왕의 손에 넘기시리라고 듣기 좋은 말만 했어요."},
         {"from":"아람 왕","to":"아합","label":"노린 적","kind":"conflict","directed":true,"weight":1,"verses":"31, 34-35","note":"아람 왕은 오직 이스라엘 왕과만 싸우라 했고, 한 사람이 무심코 쏜 화살이 변장한 아합의 갑옷 솔기를 맞혔어요."},

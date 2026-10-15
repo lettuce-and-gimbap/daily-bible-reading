@@ -60,7 +60,7 @@
       "rels": [
         {"from":"홉니","to":"엘리","label":"악한 아들","kind":"family","directed":true,"weight":3,"verses":"12, 22-25","note":"엘리의 아들들은 하나님을 알지 못하고 제물을 멸시했으며, 엘리가 타일러도 듣지 않았어요."},
         {"from":"비느하스","to":"홉니","label":"형제","kind":"family","directed":false,"weight":1,"verses":"12-17","note":"비느하스는 형 홉니와 함께 제물의 고기를 억지로 빼앗는 악을 저질렀어요."},
-        {"from":"하나님의 사람","to":"엘리","label":"경고한 이","kind":"conflict","directed":true,"weight":2,"verses":"27-34","note":"하나님의 사람이 엘리에게 와서 네가 아들들을 나보다 더 중히 여겼으니 두 아들이 한날에 죽으리라고 경고했어요."},
+        {"from":"하나님의 사람","to":"엘리","label":"경고한 이","kind":"conflict","directed":true,"weight":2,"verses":"27-34","note":"하나님의 사람이 엘리에게 아들들을 하나님보다 더 아꼈으니 두 아들이 같은 날 죽을 거라고 전했어요."},
         {"from":"사무엘","to":"한나","label":"아들","kind":"family","directed":true,"weight":2,"verses":"19","note":"한나는 해마다 작은 겉옷을 지어 제사 드리러 올 때 어린 사무엘에게 가져다주었어요."},
         {"from":"사무엘","to":"엘리","label":"섬긴 아이","kind":"ally","directed":true,"weight":2,"verses":"11, 18","note":"어린 사무엘은 세마포 에봇을 입고 제사장 엘리 앞에서 여호와를 섬겼어요."}
       ],
@@ -273,7 +273,7 @@
       "rels": [
         {"from":"사무엘","to":"사울","label":"기름 부은 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"사무엘이 기름병을 가져다 사울의 머리에 붓고 입 맞추며 하나님이 너를 지도자로 세우셨다고 했어요."},
         {"from":"이스라엘 자손","to":"사울","label":"환영한 백성","kind":"ally","directed":true,"weight":2,"verses":"24","note":"미스바에서 제비 뽑혀 사울이 세워지자 백성이 왕 만세를 외쳤어요."},
-        {"from":"불량배들","to":"사울","label":"업신여긴 자들","kind":"conflict","directed":true,"weight":1,"verses":"27","note":"어떤 불량배들은 이 사람이 어떻게 우리를 구원하겠냐며 업신여기고 예물을 드리지 않았어요."}
+        {"from":"불량배들","to":"사울","label":"업신여긴 자들","kind":"conflict","directed":true,"weight":1,"verses":"27","note":"몇몇 건달들은 이런 사람이 우리를 어떻게 구하겠냐며 사울을 깔보고 선물도 가져오지 않았어요."}
       ],
       "places": [
         {"name":"미스바","where":"베냐민 땅","what":"제비뽑기로 사울이 뽑힌 곳","weight":3},
@@ -406,7 +406,7 @@
         {"name":"겐 사람들","role":"사울이 미리 피하게 한 족속","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"사무엘이 순종이 제사보다 낫고 듣는 것이 숫양의 기름보다 나으니, 왕이 말씀을 버려 하나님도 왕을 버리셨다고 책망했어요."},
+        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"사무엘은 제물보다 말씀을 따르는 게 낫다며, 사울이 말씀을 버렸으니 하나님도 그를 왕에서 버리셨다고 했어요."},
         {"from":"사울","to":"하나님","label":"말씀을 버린 왕","kind":"conflict","directed":true,"weight":3,"verses":"9, 24","note":"사울은 아말렉을 다 진멸하라는 명령을 어기고 좋은 것을 남겼고, 백성을 두려워해서 그랬다고 했어요."},
         {"from":"사울","to":"아각","label":"살려 둔 왕","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"사울과 백성이 아말렉 왕 아각과 좋은 양과 소를 아껴 죽이지 않았어요."},
         {"from":"사무엘","to":"아각","label":"처형한 선지자","kind":"conflict","directed":true,"weight":1,"verses":"32-33","note":"사무엘이 네 칼이 여인들을 자식 없게 했듯 네 어미도 자식이 없으리라 하며 아각을 찍어 쪼갰어요."}

@@ -56,7 +56,7 @@
       ],
       "rels": [
         {"from":"모르드개","to":"에스더","label":"길러 준 사촌","kind":"family","directed":true,"weight":3,"verses":"7","note":"모르드개는 부모를 잃은 삼촌의 딸 에스더를 자기 딸처럼 길렀어요."},
-        {"from":"아하수에로","to":"에스더","label":"남편","kind":"family","directed":true,"weight":3,"verses":"17","note":"왕이 모든 여자보다 에스더를 더 사랑하여 왕관을 씌우고 와스디 대신 왕후로 삼았어요."},
+        {"from":"아하수에로","to":"에스더","label":"남편","kind":"family","directed":true,"weight":3,"verses":"17","note":"왕은 누구보다 에스더를 아껴 왕관을 씌우고 와스디 대신 왕비로 삼았어요."},
         {"from":"헤개","to":"에스더","label":"돌본 내시","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"궁녀를 맡은 내시 헤개가 에스더를 좋게 여겨 몸단장할 물품과 시녀를 주었어요."},
         {"from":"빅단","to":"아하수에로","label":"해하려 한 내시","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"문을 지키던 내시 빅단과 데레스가 원한을 품고 왕을 죽이려 꾀했어요."},
         {"from":"모르드개","to":"빅단","label":"음모를 알린 이","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"모르드개가 그 음모를 알고 에스더에게 알려 왕에게 전하게 했고, 그 일이 궁중 일기에 기록되었어요."},
@@ -232,7 +232,7 @@
         {"name":"본토 백성","role":"유다인이 된 사람들","weight":1}
       ],
       "rels": [
-        {"from":"아하수에로","to":"모르드개","label":"반지 준 왕","kind":"ally","directed":true,"weight":3,"verses":"2","note":"왕이 하만에게서 거둔 반지를 빼어 모르드개에게 주었고 에스더는 모르드개에게 하만의 집을 맡겼어요."},
+        {"from":"아하수에로","to":"모르드개","label":"반지 준 왕","kind":"ally","directed":true,"weight":3,"verses":"2","note":"왕은 하만에게서 되찾은 반지를 모르드개에게 주었고, 에스더는 하만의 집을 그에게 맡겼어요."},
         {"from":"에스더","to":"아하수에로","label":"간청한 왕후","kind":"ally","directed":true,"weight":3,"verses":"3-6","note":"에스더가 왕의 발아래 엎드려 울며 하만이 꾸민 유다인을 진멸하는 조서를 거두어 달라고 간청했어요."},
         {"from":"모르드개","to":"서기관들","label":"명한 대신","kind":"ally","directed":true,"weight":1,"verses":"9-10","note":"모르드개가 서기관들을 불러 유다인이 스스로 생명을 보호하게 하는 조서를 각 지방에 쓰게 했어요."},
         {"from":"본토 백성","to":"유다인","label":"유다인이 된 이들","kind":"ally","directed":true,"weight":1,"verses":"17","note":"유다인을 두려워하여 본토 백성 중 많은 사람이 유다인이 되었어요."},

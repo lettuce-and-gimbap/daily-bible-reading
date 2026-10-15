@@ -57,7 +57,7 @@
         {"from":"아사헬","to":"요압","label":"동생","kind":"family","directed":true,"weight":2,"verses":"18","note":"요압과 아비새와 아사헬은 스루야의 세 아들이에요. 아사헬은 들노루처럼 발이 빨랐어요."},
         {"from":"아비새","to":"요압","label":"동생","kind":"family","directed":true,"weight":1,"verses":"18, 24","note":"아비새는 형 요압과 함께 아브넬을 뒤쫓았어요."},
         {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2,"verses":"13","note":"다윗의 신하 요압이 군대를 이끌고 나가 기브온 못 가에서 아브넬의 군대와 마주쳤어요."},
-        {"from":"아브넬","to":"요압","label":"맞선 장군","kind":"conflict","directed":false,"weight":2,"verses":"26-28","note":"아브넬이 요압에게 칼이 영원히 사람을 상하겠느냐 형제를 쫓지 말라 하자 요압이 나팔을 불어 추격을 멈췄어요."}
+        {"from":"아브넬","to":"요압","label":"맞선 장군","kind":"conflict","directed":false,"weight":2,"verses":"26-28","note":"아브넬이 언제까지 형제끼리 칼부림하겠냐고 외치자 요압이 나팔을 불어 추격을 멈췄어요."}
       ],
       "places": [
         {"name":"헤브론","where":"유다 산지","what":"다윗이 유다 왕이 된 곳","weight":3},

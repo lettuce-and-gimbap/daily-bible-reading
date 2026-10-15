@@ -305,7 +305,7 @@
         {"name":"아비야","role":"세자가 된 아들","weight":1}
       ],
       "rels": [
-        {"from":"스마야","to":"르호보암","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"하나님의 사람 스마야가 형제와 싸우지 말고 각기 집으로 돌아가라는 말씀을 전해 전쟁을 막았어요."},
+        {"from":"스마야","to":"르호보암","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"예언자 스마야가 형제와 싸우지 말고 집으로 돌아가라는 말씀을 전해 전쟁을 막았어요."},
         {"from":"여로보암","to":"레위인들","label":"쫓아낸 왕","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"여로보암과 아들들이 레위 사람을 제사장 직분에서 쫓아내자 레위인들이 유다로 왔어요."},
         {"from":"레위인들","to":"르호보암","label":"힘이 된 이들","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"하나님을 찾는 사람들이 레위인을 따라 예루살렘에 와서 삼 년 동안 유다를 강하게 했어요."},
         {"from":"마아가","to":"르호보암","label":"아내","kind":"family","directed":true,"weight":1,"verses":"20-21","note":"르호보암은 압살롬의 딸 마아가를 모든 아내보다 더 사랑했어요."},
@@ -336,8 +336,8 @@
       ],
       "rels": [
         {"from":"시삭","to":"르호보암","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":3,"verses":"2-4, 9","note":"르호보암이 율법을 버리자 애굽 왕 시삭이 쳐들어와 성읍을 빼앗고 성전과 왕궁의 보물을 가져갔어요."},
-        {"from":"스마야","to":"르호보암","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"5","note":"스마야가 너희가 나를 버렸으므로 나도 너희를 시삭의 손에 버렸다는 말씀을 전했어요."},
-        {"from":"유다 지도자들","to":"르호보암","label":"함께 낮춘 신하","kind":"ally","directed":true,"weight":2,"verses":"6","note":"지도자들과 왕이 스스로 겸비하여 여호와는 의로우시다고 고백했어요."},
+        {"from":"스마야","to":"르호보암","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"5","note":"스마야는 너희가 하나님을 버렸으니 하나님도 너희를 이집트 왕 시삭에게 넘기셨다고 전했어요."},
+        {"from":"유다 지도자들","to":"르호보암","label":"함께 낮춘 신하","kind":"ally","directed":true,"weight":2,"verses":"6","note":"그러자 지도자들과 왕은 스스로 낮추며 주님이 옳으시다고 인정했어요."},
         {"from":"하나님","to":"르호보암","label":"멸하지 않으신 분","kind":"ally","directed":true,"weight":2,"verses":"7, 12","note":"그들이 겸비하자 하나님이 멸하지 않고 조금 구원해 주시겠다고 하셨어요."},
         {"from":"아비야","to":"르호보암","label":"아들","kind":"family","directed":true,"weight":1,"verses":"16","note":"르호보암이 죽고 아들 아비야가 왕이 되었어요."}
       ],
@@ -546,7 +546,7 @@
         {"name":"레위인과 제사장","role":"예루살렘에서 재판한 이들","weight":1}
       ],
       "rels": [
-        {"from":"예후(하나니의 아들)","to":"여호사밧","label":"책망한 선견자","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"선견자 예후가 악한 자를 돕고 여호와를 미워하는 자를 사랑하느냐고 여호사밧을 책망했어요."},
+        {"from":"예후(하나니의 아들)","to":"여호사밧","label":"책망한 선견자","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"예언자 예후는 악한 왕을 돕고 주님을 미워하는 자와 친하게 지낸 여호사밧을 꾸짖었어요."},
         {"from":"여호사밧","to":"재판관들","label":"당부한 왕","kind":"ally","directed":true,"weight":2,"verses":"5-7","note":"여호사밧이 재판관들을 세우며 사람을 위하지 말고 하나님을 위해 재판하라, 하나님께는 불의가 없다고 당부했어요."},
         {"from":"아마랴","to":"여호사밧","label":"맡은 대제사장","kind":"ally","directed":true,"weight":1,"verses":"11","note":"대제사장 아마랴가 하나님의 모든 일을 맡아 다스리게 되었어요."},
         {"from":"스바댜","to":"여호사밧","label":"맡은 지도자","kind":"ally","directed":true,"weight":1,"verses":"11","note":"유다 지파의 어른 스바댜는 왕의 모든 일을 맡았어요."}
@@ -580,7 +580,7 @@
       "rels": [
         {"from":"모압과 암몬 연합군","to":"여호사밧","label":"쳐들어온 적","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"모압과 암몬과 마온 사람들이 큰 무리로 여호사밧을 치러 왔어요."},
         {"from":"여호사밧","to":"하나님","label":"바라본 왕","kind":"ally","directed":true,"weight":3,"verses":"3, 12","note":"여호사밧이 두려워 금식을 선포하고 우리는 어찌할 줄 모르고 오직 주만 바라본다고 기도했어요."},
-        {"from":"야하시엘","to":"여호사밧","label":"말씀 전한 레위인","kind":"ally","directed":true,"weight":2,"verses":"14-17","note":"레위 사람 야하시엘에게 영이 임해 이 전쟁은 너희에게 속한 것이 아니요 하나님께 속한 것이라고 전했어요."},
+        {"from":"야하시엘","to":"여호사밧","label":"말씀 전한 레위인","kind":"ally","directed":true,"weight":2,"verses":"14-17","note":"레위 사람 야하시엘이 성령에 감동되어 이 싸움은 너희 것이 아니라 하나님의 싸움이라고 외쳤어요."},
         {"from":"노래하는 이들","to":"여호사밧","label":"앞세운 찬양대","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"여호사밧이 노래하는 사람들을 군대 앞에 세워 찬양하게 했고, 찬양을 시작할 때 하나님이 복병을 두셨어요."},
         {"from":"하나님","to":"모압과 암몬 연합군","label":"치신 분","kind":"conflict","directed":true,"weight":3,"verses":"22-24","note":"하나님이 그들끼리 서로 쳐 죽이게 하셔서 유다는 싸우지 않고 시체만 보았어요."},
         {"from":"엘리에셀","to":"여호사밧","label":"책망한 선지자","kind":"conflict","directed":true,"weight":1,"verses":"37","note":"선지자 엘리에셀이 여호사밧이 악한 아하시야와 교제하여 배를 만들었으니 그 배가 파선하리라고 책망했어요."}
@@ -775,7 +775,7 @@
         {"name":"하나님","role":"찾을 때 형통하게 하심","weight":2}
       ],
       "rels": [
-        {"from":"스가랴","to":"웃시야","label":"가르친 이","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님의 묵시를 밝히 아는 스가랴가 사는 동안 웃시야가 하나님을 찾았고 하나님이 형통하게 하셨어요."},
+        {"from":"스가랴","to":"웃시야","label":"가르친 이","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님 뜻을 잘 가르친 스가랴가 살아 있는 동안 웃시야는 하나님을 찾았고 하나님은 그를 잘되게 하셨어요."},
         {"from":"아사랴(제사장)","to":"웃시야","label":"막아선 제사장","kind":"conflict","directed":true,"weight":3,"verses":"17-18","note":"웃시야가 성전에서 분향하려 하자 제사장 아사랴가 분향은 제사장의 일이니 나가라고 막아섰어요."},
         {"from":"용감한 제사장 팔십 명","to":"아사랴(제사장)","label":"함께한 이들","kind":"ally","directed":true,"weight":1,"verses":"17","note":"용감한 여호와의 제사장 팔십 명이 아사랴와 함께 들어가 왕을 막았어요."},
         {"from":"하나님","to":"웃시야","label":"치신 분","kind":"conflict","directed":true,"weight":2,"verses":"19-21","note":"제사장들에게 화를 내던 웃시야의 이마에 나병이 생겨 죽는 날까지 별궁에 살았어요."},
@@ -967,7 +967,7 @@
       "rels": [
         {"from":"산헤립","to":"히스기야","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"히스기야가 충성을 다한 뒤 앗수르 왕 산헤립이 유다에 쳐들어와 견고한 성읍들을 치려 했어요."},
         {"from":"이사야","to":"히스기야","label":"함께 기도","kind":"ally","directed":false,"weight":2,"verses":"20","note":"히스기야 왕과 선지자 이사야가 하늘을 향해 함께 부르짖어 기도했어요."},
-        {"from":"히스기야","to":"백성","label":"격려한 왕","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"히스기야가 백성에게 강하고 담대하라, 그들과 함께하는 것은 육신의 팔이요 우리와 함께하시는 이는 하나님이라고 격려했어요."},
+        {"from":"히스기야","to":"백성","label":"격려한 왕","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"히스기야는 적에게는 사람의 힘뿐이지만 우리에겐 주님이 계시니 용기를 내라고 백성을 격려했어요."},
         {"from":"천사","to":"산헤립","label":"친 천사","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"하나님이 천사를 보내 앗수르 진영의 용사와 지휘관을 멸하시니 산헤립이 부끄러워 돌아갔어요."},
         {"from":"산헤립의 아들들","to":"산헤립","label":"죽인 아들들","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"산헤립이 자기 신의 전에 들어갔을 때 아들들이 칼로 그를 죽였어요."},
         {"from":"산헤립의 신하들","to":"하나님","label":"비방한 이들","kind":"conflict","directed":true,"weight":2,"verses":"16-19","note":"산헤립의 신하들은 하나님을 세상 신들처럼 여기며 더 비방했어요."}
