@@ -23,8 +23,8 @@
         {"name":"하나님","role":"모태 전부터 아신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예레미야","label":"부르신 분","kind":"ally","directed":true,"weight":3,"verses":"5-9","note":"내가 너를 모태에 짓기 전에 너를 알았고 열방의 선지자로 세웠다 하시며, 아이라고 말하지 말라 하고 손을 내밀어 그의 입에 말씀을 두셨어요."},
-        {"from":"예레미야","to":"힐기야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"예레미야는 베냐민 땅 아나돗의 제사장 중 힐기야의 아들이에요."},
+        {"from":"하나님","to":"예레미야","label":"부르신 분","kind":"ally","directed":true,"weight":3,"verses":"5-9","note":"하나님은 태어나기 전부터 예레미야를 알고 예언자로 세우셨다며, 어리다고 핑계 대지 말라 하셨어요."},
+        {"from":"예레미야","to":"힐기야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"예레미야는 아나돗의 제사장 힐기야의 아들이에요."},
         {"from":"유다 백성","to":"예레미야","label":"대적할 백성","kind":"conflict","directed":true,"weight":2,"verses":"18-19","note":"유다 왕들과 제사장과 백성이 너를 칠지라도 이기지 못하리니 내가 너와 함께하여 구원하리라고 하셨어요."},
         {"from":"하나님","to":"유다 백성","label":"재앙을 내리실 분","kind":"conflict","directed":true,"weight":2,"verses":"14-16","note":"재앙이 북방에서 일어나리니 이는 그들이 나를 버리고 다른 신들에게 분향했기 때문이라고 하셨어요."}
       ],
@@ -52,9 +52,9 @@
       ],
       "rels": [
         {"from":"이스라엘","to":"하나님","label":"떠난 신부","kind":"conflict","directed":true,"weight":3,"verses":"11-13","note":"내 백성이 두 가지 악을 행하였으니 생수의 근원인 나를 버린 것과 물을 저축하지 못할 터진 웅덩이를 판 것이라고 하셨어요."},
-        {"from":"하나님","to":"이스라엘","label":"기억하시는 신랑","kind":"family","directed":true,"weight":2,"verses":"2","note":"내가 너를 위하여 네 청년 때의 인애와 네 신혼 때의 사랑을 기억하노라고 하셨어요."},
-        {"from":"이스라엘","to":"애굽과 앗수르","label":"의지한 나라","kind":"other","directed":true,"weight":2,"verses":"18, 36","note":"네가 시홀 물을 마시려고 애굽으로 가는 길에 있음은 어찌 됨이냐, 앗수르로도 부끄러움을 당하리라고 하셨어요."},
-        {"from":"제사장과 선지자","to":"하나님","label":"찾지 않은 이들","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"제사장들은 여호와께서 어디 계시냐 말하지 아니하였고 선지자들은 바알의 이름으로 예언했다고 하셨어요."}
+        {"from":"하나님","to":"이스라엘","label":"기억하시는 신랑","kind":"family","directed":true,"weight":2,"verses":"2","note":"하나님은 이스라엘이 젊은 신부처럼 광야까지 따라오던 첫사랑을 기억하신대요."},
+        {"from":"이스라엘","to":"애굽과 앗수르","label":"의지한 나라","kind":"other","directed":true,"weight":2,"verses":"18, 36","note":"이스라엘은 하나님 대신 이집트와 앗시리아의 강물을 마시러 갔다가 창피만 당할 거래요."},
+        {"from":"제사장과 선지자","to":"하나님","label":"찾지 않은 이들","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"제사장들은 하나님을 찾지 않았고 예언자들은 바알 이름으로 예언했대요."}
       ],
       "places": [
         {"name":"광야","where":"출애굽 때의 길","what":"신부처럼 따르던 곳","weight":2},
@@ -80,9 +80,9 @@
       ],
       "rels": [
         {"from":"배역한 이스라엘","to":"반역한 유다","label":"자매","kind":"family","directed":false,"weight":2,"verses":"6-8","note":"배역한 이스라엘이 행음하여 쫓겨난 것을 그 자매 반역한 유다가 보고도 두려워하지 않고 행음했다고 하셨어요."},
-        {"from":"반역한 유다","to":"하나님","label":"거짓으로 돌아옴","kind":"conflict","directed":true,"weight":3,"verses":"10","note":"반역한 자매 유다가 진심으로 내게 돌아오지 아니하고 거짓으로 할 뿐이라고 하셨어요."},
-        {"from":"하나님","to":"배역한 이스라엘","label":"돌아오라 부르심","kind":"ally","directed":true,"weight":3,"verses":"12, 14","note":"배역한 이스라엘아 돌아오라 나는 긍휼이 있는 자라, 나는 너희 남편임이라고 하셨어요."},
-        {"from":"하나님","to":"마음에 합한 목자","label":"주실 분","kind":"ally","directed":true,"weight":2,"verses":"15","note":"내가 내 마음에 합한 목자들을 너희에게 주리니 그들이 지식과 명철로 너희를 양육하리라고 하셨어요."}
+        {"from":"반역한 유다","to":"하나님","label":"거짓으로 돌아옴","kind":"conflict","directed":true,"weight":3,"verses":"10","note":"유다는 진심이 아니라 겉으로만 하나님께 돌아오는 척했대요."},
+        {"from":"하나님","to":"배역한 이스라엘","label":"돌아오라 부르심","kind":"ally","directed":true,"weight":3,"verses":"12, 14","note":"하나님은 떠난 이스라엘에게 돌아오라, 나는 자비롭고 너의 남편이라고 하셨어요."},
+        {"from":"하나님","to":"마음에 합한 목자","label":"주실 분","kind":"ally","directed":true,"weight":2,"verses":"15","note":"하나님 마음에 맞는 목자들을 보내 지식과 지혜로 백성을 기르게 하시겠대요."}
       ],
       "places": [
         {"name":"예루살렘","where":"여호와의 보좌라 불릴 성","what":"민족들이 모일 곳","weight":2},
@@ -107,9 +107,9 @@
         {"name":"하나님","role":"진멸하지는 않으실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"유다와 예루살렘","label":"돌아오라 하신 분","kind":"ally","directed":true,"weight":3,"verses":"1, 3-4","note":"이스라엘아 돌아오려거든 내게로 돌아오라, 묵은 땅을 갈고 마음 가죽을 베라고 하셨어요."},
-        {"from":"북방의 사자","to":"유다와 예루살렘","label":"치러 오는 자","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"내가 북방에서 재난과 큰 멸망을 가져오리니 사자가 수풀에서 올라왔다고 하셨어요."},
-        {"from":"예레미야","to":"딸 시온","label":"함께 아파함","kind":"ally","directed":true,"weight":2,"verses":"19","note":"슬프고 아프다 내 마음속이 아프고 내 마음이 답답하다, 전쟁의 경보를 들음이라고 예레미야가 탄식해요."}
+        {"from":"하나님","to":"유다와 예루살렘","label":"돌아오라 하신 분","kind":"ally","directed":true,"weight":3,"verses":"1, 3-4","note":"돌아오려면 진짜로 돌아오라, 굳은 땅을 갈아엎듯 마음을 새롭게 하라고 하셨어요."},
+        {"from":"북방의 사자","to":"유다와 예루살렘","label":"치러 오는 자","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"하나님은 북쪽에서 사자 같은 적을 일으켜 큰 재앙을 가져오시겠대요."},
+        {"from":"예레미야","to":"딸 시온","label":"함께 아파함","kind":"ally","directed":true,"weight":2,"verses":"19","note":"전쟁 나팔 소리를 들은 예레미야는 가슴이 찢어질 듯 아파했어요."}
       ],
       "places": [
         {"name":"북방","where":"유다 북쪽","what":"사자 같은 군대가 오는 쪽","weight":2},
@@ -135,10 +135,10 @@
         {"name":"하나님","role":"한 사람을 찾으신 분","weight":3}
       ],
       "rels": [
-        {"from":"예루살렘 백성","to":"하나님","label":"부인한 백성","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"그들이 여호와를 부인하며 이르기를 여호와께서는 계시지 아니하니 재앙이 우리에게 임하지 아니할 것이라 한다고 해요."},
-        {"from":"거짓 선지자와 제사장","to":"예루살렘 백성","label":"속이는 지도자","kind":"conflict","directed":true,"weight":2,"verses":"31","note":"선지자들은 거짓을 예언하며 제사장들은 자기 권력으로 다스리며 내 백성은 그것을 좋게 여긴다고 해요."},
+        {"from":"예루살렘 백성","to":"하나님","label":"부인한 백성","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"백성은 하나님이 아무것도 안 하실 거라며 재앙은 오지 않는다고 큰소리쳤대요."},
+        {"from":"거짓 선지자와 제사장","to":"예루살렘 백성","label":"속이는 지도자","kind":"conflict","directed":true,"weight":2,"verses":"31","note":"예언자는 거짓말하고 제사장은 제멋대로 다스리는데 백성은 그걸 좋아했대요."},
         {"from":"먼 나라","to":"예루살렘 백성","label":"침략할 민족","kind":"conflict","directed":true,"weight":2,"verses":"15-17","note":"내가 먼 나라를 너희에게로 오게 하리니 그 민족이 네 추수 곡물과 양식을 먹으리라고 하셨어요."},
-        {"from":"예레미야","to":"예루살렘 백성","label":"찾아다닌 선지자","kind":"other","directed":true,"weight":2,"verses":"1","note":"너희는 예루살렘 거리로 빨리 다니며 정의를 행하고 진리를 구하는 자를 한 사람이라도 찾으면 용서하리라고 하셨어요."}
+        {"from":"예레미야","to":"예루살렘 백성","label":"찾아다닌 선지자","kind":"other","directed":true,"weight":2,"verses":"1","note":"예루살렘 거리에서 정직한 사람을 하나만 찾아도 성을 용서하겠다고 하셨어요."}
       ],
       "places": [
         {"name":"예루살렘 거리","where":"성의 넓은 거리","what":"정의로운 한 사람을 찾은 곳","weight":3}
@@ -163,10 +163,10 @@
         {"name":"하나님","role":"옛적 길을 가리키신 분","weight":3}
       ],
       "rels": [
-        {"from":"예루살렘 백성","to":"하나님","label":"길을 거절한 백성","kind":"conflict","directed":true,"weight":3,"verses":"16-17","note":"옛적 길 곧 선한 길로 가라 하였으나 그들의 대답이 우리는 그리로 가지 않겠노라 했다고 하셨어요."},
-        {"from":"거짓 선지자와 제사장","to":"예루살렘 백성","label":"속인 지도자","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"그들이 내 백성의 상처를 가볍게 여기면서 평강하다 평강하다 하나 평강이 없다고 하셨어요."},
-        {"from":"북방 민족","to":"예루살렘 백성","label":"에워쌀 군대","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"한 민족이 북방에서 오며 큰 나라가 땅끝에서부터 떨쳐 일어나 딸 시온을 치려 한다고 해요."},
-        {"from":"하나님","to":"예레미야","label":"시험하는 자로 세움","kind":"ally","directed":true,"weight":2,"verses":"27","note":"내가 이미 너를 내 백성 중에 망대와 요새로 삼아 그들의 길을 알고 살피게 하였다고 하셨어요."}
+        {"from":"예루살렘 백성","to":"하나님","label":"길을 거절한 백성","kind":"conflict","directed":true,"weight":3,"verses":"16-17","note":"옛날의 좋은 길로 걸으라 하셨지만 백성은 싫다고 거절했대요."},
+        {"from":"거짓 선지자와 제사장","to":"예루살렘 백성","label":"속인 지도자","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"지도자들은 백성의 깊은 상처를 대충 덮고 괜찮다, 괜찮다만 되풀이했대요."},
+        {"from":"북방 민족","to":"예루살렘 백성","label":"에워쌀 군대","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"북쪽 먼 땅에서 큰 나라가 일어나 시온을 치러 온대요."},
+        {"from":"하나님","to":"예레미야","label":"시험하는 자로 세움","kind":"ally","directed":true,"weight":2,"verses":"27","note":"하나님은 예레미야를 백성의 행실을 시험하고 살피는 사람으로 세우셨대요."}
       ],
       "places": [
         {"name":"드고아와 벧학게렘","where":"예루살렘 남쪽 고지","what":"나팔과 봉화를 올릴 곳","weight":2},
@@ -191,10 +191,10 @@
         {"name":"하나님","role":"순종을 원하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예레미야","label":"성전 문에 세움","kind":"ally","directed":true,"weight":3,"verses":"2","note":"너는 여호와의 집 문에 서서 이 말을 선포하라고 하셨어요."},
-        {"from":"유다 백성","to":"하나님","label":"거짓으로 기댄 백성","kind":"conflict","directed":true,"weight":3,"verses":"4, 9-10","note":"이것이 여호와의 성전이라 하는 거짓말을 믿고, 도둑질하고 살인하고 다른 신을 따르고도 성전에 와서 구원을 받았다 한다고 하셨어요."},
+        {"from":"하나님","to":"예레미야","label":"성전 문에 세움","kind":"ally","directed":true,"weight":3,"verses":"2","note":"하나님은 예레미야에게 성전 문 앞에 서서 말씀을 외치라고 하셨어요."},
+        {"from":"유다 백성","to":"하나님","label":"거짓으로 기댄 백성","kind":"conflict","directed":true,"weight":3,"verses":"4, 9-10","note":"백성은 성전만 있으면 안전하다 믿으며 온갖 악을 저지르고도 성전에 왔대요."},
         {"from":"유다 백성","to":"나그네와 고아와 과부","label":"압제한 자","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"나그네와 고아와 과부를 압제하지 말고 무죄한 자의 피를 흘리지 말라고 하셨어요."},
-        {"from":"유다 백성","to":"하늘 여왕","label":"섬긴 우상","kind":"other","directed":true,"weight":1,"verses":"18","note":"자식들은 나무를 줍고 아버지들은 불을 피우며 부녀들은 가루를 반죽하여 하늘 여왕을 위해 과자를 만든다고 해요."}
+        {"from":"유다 백성","to":"하늘 여왕","label":"섬긴 우상","kind":"other","directed":true,"weight":1,"verses":"18","note":"온 가족이 힘을 모아 하늘 여왕이라는 우상에게 바칠 과자를 구웠대요."}
       ],
       "places": [
         {"name":"성전 문","where":"예루살렘 성전 입구","what":"예레미야가 말씀을 선포한 곳","weight":3},
@@ -220,9 +220,9 @@
         {"name":"하나님","role":"돌아오기를 기다리시는 분","weight":3}
       ],
       "rels": [
-        {"from":"유다 백성","to":"하나님","label":"규례를 모르는 백성","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"공중의 학은 그 정한 시기를 알지만 내 백성은 여호와의 규례를 알지 못한다고 하셨어요."},
-        {"from":"서기관","to":"유다 백성","label":"속인 서기관","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"서기관의 거짓의 붓이 거짓되게 하였나니 너희가 어찌 우리는 지혜가 있고 율법이 있다 하겠느냐고 하셨어요."},
-        {"from":"예레미야","to":"유다 백성","label":"함께 아파한 선지자","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"딸 내 백성이 상하였으므로 나도 상하여 슬퍼하며, 길르앗에는 유향이 있지 아니한가 하고 탄식해요."}
+        {"from":"유다 백성","to":"하나님","label":"규례를 모르는 백성","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"철새도 오갈 때를 아는데 하나님 백성은 주님의 법을 모른대요."},
+        {"from":"서기관","to":"유다 백성","label":"속인 서기관","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"율법 학자들이 말씀을 거짓으로 고쳐 써 놓고 자기들이 지혜롭다고 했대요."},
+        {"from":"예레미야","to":"유다 백성","label":"함께 아파한 선지자","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"백성이 다치니 예레미야도 아파하며 길르앗에 약이 없냐고 탄식했어요."}
       ],
       "places": [
         {"name":"길르앗","where":"요단 동쪽 유향 산지","what":"치료의 유향이 나던 곳","weight":2}
@@ -246,9 +246,9 @@
         {"name":"하나님","role":"사랑과 정의를 행하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"유다 백성","label":"우는 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"어찌하면 내 머리는 물이 되고 내 눈은 눈물 근원이 될꼬, 죽임을 당한 딸 내 백성을 위하여 주야로 울리로다 하고 해요."},
-        {"from":"하나님","to":"지혜자와 용사와 부자","label":"자랑을 바로잡으심","kind":"ally","directed":true,"weight":2,"verses":"23-24","note":"지혜로운 자는 지혜를, 용사는 용맹을, 부자는 부함을 자랑하지 말라, 자랑하는 자는 나를 아는 것을 자랑하라고 하셨어요."},
-        {"from":"하나님","to":"유다 백성","label":"연단하실 분","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"보라 내가 내 딸 백성을 녹이고 연단하리라고 하셨어요."}
+        {"from":"예레미야","to":"유다 백성","label":"우는 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"예레미야는 죽은 백성을 위해 밤낮 울 수 있게 눈물샘이 마르지 않기를 바랐어요."},
+        {"from":"하나님","to":"지혜자와 용사와 부자","label":"자랑을 바로잡으심","kind":"ally","directed":true,"weight":2,"verses":"23-24","note":"지혜나 힘이나 돈을 자랑하지 말고, 하나님을 아는 걸 자랑하라고 하셨어요."},
+        {"from":"하나님","to":"유다 백성","label":"연단하실 분","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"하나님은 쇠를 녹이듯 백성을 단련하시겠대요."}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"무더기와 승냥이 굴이 될 성","weight":2},
@@ -273,9 +273,9 @@
         {"name":"하나님","role":"참 하나님, 영원한 왕","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"하나님","label":"걸음을 맡긴 이","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"여호와여 사람의 길이 자신에게 있지 아니하니 걸음을 지도함이 걷는 자에게 있지 아니하다, 나를 징계하시되 너그럽게 하소서 하고 해요."},
+        {"from":"예레미야","to":"하나님","label":"걸음을 맡긴 이","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"예레미야는 사람이 자기 길을 스스로 정할 수 없음을 고백해요."},
         {"from":"하나님","to":"우상 만드는 장인","label":"헛됨을 드러내심","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"우상은 장인의 손이 도끼로 만든 것이라 둥근 기둥 같아서 말도 못하고 걷지도 못하니 두려워 말라고 하셨어요."},
-        {"from":"목자들","to":"하나님","label":"찾지 않은 지도자","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"목자들은 어리석어 여호와를 찾지 아니하므로 형통하지 못하고 양 떼는 다 흩어졌다고 해요."}
+        {"from":"목자들","to":"하나님","label":"찾지 않은 지도자","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"지도자들이 어리석어 하나님을 찾지 않으니 양 떼가 다 흩어졌대요."}
       ],
       "places": [
 
@@ -299,10 +299,10 @@
         {"name":"하나님","role":"공의로 판단하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"아나돗 사람들","to":"예레미야","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"19, 21","note":"예레미야는 끌려가는 순한 어린 양 같았고, 아나돗 사람들은 여호와의 이름으로 예언하지 말라 그렇지 않으면 죽이리라고 했어요."},
-        {"from":"하나님","to":"예레미야","label":"음모를 알리신 분","kind":"ally","directed":true,"weight":3,"verses":"18","note":"여호와께서 내게 알게 하셨으므로 내가 그것을 알았나이다, 그때에 주께서 그들의 행위를 내게 보이셨다고 해요."},
-        {"from":"유다 백성","to":"하나님","label":"언약 깨뜨린 백성","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"이스라엘 집과 유다 집이 내가 그들의 조상과 맺은 언약을 깨뜨렸다고 하셨어요."},
-        {"from":"하나님","to":"아나돗 사람들","label":"벌하실 분","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"내가 그들을 벌하리니 청년들은 칼에 죽고 남은 자가 없으리라고 하셨어요."}
+        {"from":"아나돗 사람들","to":"예레미야","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"19, 21","note":"예레미야는 고향 아나돗 사람들이 자기를 죽이려는 줄도 모르고 순한 어린 양처럼 있었대요."},
+        {"from":"하나님","to":"예레미야","label":"음모를 알리신 분","kind":"ally","directed":true,"weight":3,"verses":"18","note":"하나님이 알려 주셔서 예레미야는 그들의 음모를 알게 됐어요."},
+        {"from":"유다 백성","to":"하나님","label":"언약 깨뜨린 백성","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"이스라엘과 유다는 조상과 맺은 하나님 언약을 깨뜨렸대요."},
+        {"from":"하나님","to":"아나돗 사람들","label":"벌하실 분","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"하나님은 예레미야를 죽이려던 아나돗 사람들을 벌하시겠대요."}
       ],
       "places": [
         {"name":"아나돗","where":"예루살렘 북동쪽 고향 마을","what":"예레미야를 해하려 한 곳","weight":3}
@@ -327,9 +327,9 @@
         {"name":"하나님","role":"더 큰 시련을 대비시키시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"하나님","label":"따져 물은 선지자","kind":"other","directed":true,"weight":3,"verses":"1","note":"여호와여 내가 주와 변론할 때에는 주께서 의로우시니이다, 그러나 악한 자의 길이 형통하며 반역한 자가 다 평안함은 무슨 까닭이니이까 하고 물어요."},
-        {"from":"예레미야의 형제와 아버지 집","to":"예레미야","label":"속인 가족","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"네 형제와 아버지의 집이라도 너를 속이며 크게 외치나니 좋은 말을 할지라도 믿지 말라고 하셨어요."},
-        {"from":"하나님","to":"예레미야","label":"단련시키시는 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"네가 보행자와 함께 달려도 피곤하면 어찌 능히 말과 경주하겠느냐고 하셨어요."},
+        {"from":"예레미야","to":"하나님","label":"따져 물은 선지자","kind":"other","directed":true,"weight":3,"verses":"1","note":"예레미야는 주님이 의로우신 줄 알면서도 왜 악인이 잘되냐고 따져 물어요."},
+        {"from":"예레미야의 형제와 아버지 집","to":"예레미야","label":"속인 가족","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"친형제와 아버지 집안마저 예레미야를 배신했으니 다정한 말도 믿지 말래요."},
+        {"from":"하나님","to":"예레미야","label":"단련시키시는 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"사람과 달리기에도 지치면 말과 어떻게 겨루겠냐며 더 큰 일을 각오하라 하셨어요."},
         {"from":"하나님","to":"이웃 나라들","label":"뽑고 다시 세우심","kind":"other","directed":true,"weight":1,"verses":"14-15","note":"내 백성의 기업을 다친 이웃들을 그 땅에서 뽑아 버리고, 그 후에 다시 긍휼히 여겨 각기 기업으로 돌아오게 하리라고 하셨어요."}
       ],
       "places": [
@@ -355,9 +355,9 @@
       ],
       "rels": [
         {"from":"하나님","to":"예레미야","label":"징조를 명하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-7","note":"하나님이 베띠를 사서 허리에 띠고 유브라데 바위틈에 감추었다가 다시 찾게 하시니 띠가 썩어 쓸 데가 없게 되었어요."},
-        {"from":"하나님","to":"유다와 예루살렘","label":"붙어 있게 하신 분","kind":"ally","directed":true,"weight":2,"verses":"11","note":"띠가 사람의 허리에 붙음같이 내가 이스라엘 온 집과 유다 온 집을 내게 붙게 하였다고 하셨어요."},
-        {"from":"유다와 예루살렘","to":"하나님","label":"듣지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"10","note":"이 악한 백성이 내 말 듣기를 거절하고 마음의 완악함대로 행한다고 하셨어요."},
-        {"from":"예레미야","to":"왕과 왕후","label":"경고한 선지자","kind":"conflict","directed":true,"weight":1,"verses":"18","note":"너는 왕과 왕후에게 스스로 낮추어 앉으라, 관 곧 영광의 면류관이 내려졌다고 전하라 하셨어요."}
+        {"from":"하나님","to":"유다와 예루살렘","label":"붙어 있게 하신 분","kind":"ally","directed":true,"weight":2,"verses":"11","note":"허리띠가 몸에 붙듯 하나님은 이스라엘을 자기에게 꼭 붙게 하셨대요."},
+        {"from":"유다와 예루살렘","to":"하나님","label":"듣지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"10","note":"그런데 백성은 말씀을 듣지 않고 고집대로 살았대요."},
+        {"from":"예레미야","to":"왕과 왕후","label":"경고한 선지자","kind":"conflict","directed":true,"weight":1,"verses":"18","note":"왕과 왕비에게 영광의 관이 떨어졌으니 낮은 자리에 앉으라고 전하래요."}
       ],
       "places": [
         {"name":"유브라데","where":"메소보다미아의 큰 강","what":"베 띠를 감춘 곳","weight":3}
@@ -381,10 +381,10 @@
         {"name":"하나님","role":"비를 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"하나님","label":"중보한 선지자","kind":"ally","directed":true,"weight":3,"verses":"7-9","note":"여호와여 우리의 죄악이 우리에게 대항하여 증언할지라도 주는 주의 이름을 위하여 일하소서 하고 중보해요."},
-        {"from":"하나님","to":"예레미야","label":"기도 말라 하심","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"너는 이 백성을 위하여 복을 구하지 말라고 하셨어요."},
+        {"from":"예레미야","to":"하나님","label":"중보한 선지자","kind":"ally","directed":true,"weight":3,"verses":"7-9","note":"우리 죄가 커도 주님 이름을 위해 움직여 달라고 예레미야가 빌어요."},
+        {"from":"하나님","to":"예레미야","label":"기도 말라 하심","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"하나님은 이제 이 백성을 위해 복을 빌지 말라고 하셨어요."},
         {"from":"거짓 선지자들","to":"유다 백성","label":"속인 선지자","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"선지자들이 너희가 칼을 보지 않겠고 기근도 없으리라 하며 거짓을 예언한다고 해요."},
-        {"from":"하나님","to":"거짓 선지자들","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"나는 그들을 보내지 아니하였고 명령하지 아니하였으니 그 선지자들은 칼과 기근에 멸망하리라고 하셨어요."}
+        {"from":"하나님","to":"거짓 선지자들","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"하나님이 보내지 않은 거짓 예언자들은 칼과 굶주림으로 망할 거래요."}
       ],
       "places": [
         {"name":"유다 땅","where":"가뭄 든 남쪽 나라","what":"땅이 갈라진 곳","weight":2}
@@ -408,10 +408,10 @@
         {"name":"하나님","role":"선지자를 다시 세우시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"하나님","label":"탄식한 선지자","kind":"other","directed":true,"weight":3,"verses":"10, 18","note":"내 어머니여 나는 온 세계에 다투는 자를 낳으셨도다, 나의 고통이 계속하며 상처가 낫지 않음은 어찌 됨이니이까 하고 탄식해요."},
-        {"from":"하나님","to":"예레미야","label":"놋 성벽으로 세우심","kind":"ally","directed":true,"weight":3,"verses":"19-20","note":"네가 돌아오면 너를 다시 이끌어 내 앞에 세울 것이며, 너로 견고한 놋 성벽이 되게 하리라고 하셨어요."},
-        {"from":"유다 백성","to":"예레미야","label":"다투는 이들","kind":"conflict","directed":true,"weight":2,"verses":"10, 20","note":"그들이 너를 칠지라도 이기지 못하리니 내가 너와 함께하여 너를 구원하리라고 하셨어요."},
-        {"from":"하나님","to":"유다 백성","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"모세와 사무엘이 내 앞에 섰다 할지라도 내 마음은 이 백성을 향할 수 없다고 하셨어요."}
+        {"from":"예레미야","to":"하나님","label":"탄식한 선지자","kind":"other","directed":true,"weight":3,"verses":"10, 18","note":"예레미야는 왜 다툼만 겪는 나를 낳으셨냐며 낫지 않는 상처를 하소연해요."},
+        {"from":"하나님","to":"예레미야","label":"놋 성벽으로 세우심","kind":"ally","directed":true,"weight":3,"verses":"19-20","note":"돌아오면 다시 세워 튼튼한 놋 성벽처럼 만들겠다고 하나님이 약속하셨어요."},
+        {"from":"유다 백성","to":"예레미야","label":"다투는 이들","kind":"conflict","directed":true,"weight":2,"verses":"10, 20","note":"사람들이 덤벼도 이기지 못할 거래요, 하나님이 함께하시니까요."},
+        {"from":"하나님","to":"유다 백성","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"모세와 사무엘이 빌어도 이 백성에게 마음을 돌리지 않겠다고 하셨어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"므낫세가 죄를 행한 성","what":"심판이 정해진 곳","weight":2}
@@ -435,10 +435,10 @@
         {"name":"하나님","role":"환난 날의 피난처","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예레미야","label":"징조로 세우신 분","kind":"ally","directed":true,"weight":3,"verses":"2, 5, 8","note":"너는 이 땅에서 아내를 맞이하지 말며 초상집과 잔칫집에도 들어가지 말라 하시며 예레미야의 삶을 징조로 삼으셨어요."},
-        {"from":"유다 백성","to":"하나님","label":"버린 백성","kind":"conflict","directed":true,"weight":3,"verses":"11-12","note":"너희 조상들이 나를 버리고 다른 신들을 따랐고 너희는 조상들보다 더욱 악을 행하였다고 하셨어요."},
-        {"from":"하나님","to":"유다 백성","label":"돌아오게 하실 분","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"이스라엘 자손을 북방 땅과 쫓겨났던 모든 나라에서 인도하여 내신 여호와의 사심으로 맹세할 날이 오리라고 하셨어요."},
-        {"from":"예레미야","to":"하나님","label":"요새라 고백함","kind":"ally","directed":true,"weight":2,"verses":"19","note":"여호와 나의 힘, 나의 요새, 환난 날의 피난처시여 하고 고백해요."}
+        {"from":"하나님","to":"예레미야","label":"징조로 세우신 분","kind":"ally","directed":true,"weight":3,"verses":"2, 5, 8","note":"하나님은 곧 닥칠 재앙의 표시로 예레미야에게 결혼도 잔치도 장례도 피하라 하셨어요."},
+        {"from":"유다 백성","to":"하나님","label":"버린 백성","kind":"conflict","directed":true,"weight":3,"verses":"11-12","note":"조상들도 하나님을 버렸지만 지금 세대는 더 악하대요."},
+        {"from":"하나님","to":"유다 백성","label":"돌아오게 하실 분","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"언젠가 사람들은 흩어진 백성을 북쪽 땅에서 데려오신 하나님을 두고 맹세할 거래요."},
+        {"from":"예레미야","to":"하나님","label":"요새라 고백함","kind":"ally","directed":true,"weight":2,"verses":"19","note":"예레미야는 하나님을 힘이요 요새요 어려울 때 피할 곳이라고 고백해요."}
       ],
       "places": [
         {"name":"북방 땅","where":"이스라엘이 쫓겨난 나라들","what":"백성을 돌아오게 하실 곳","weight":2}
@@ -463,10 +463,10 @@
         {"name":"하나님","role":"마음을 살피시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"여호와를 의지하는 자","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"여호와를 의지하며 여호와를 의뢰하는 그 사람은 복을 받을 것이라, 물가에 심어진 나무가 그 뿌리를 강변에 뻗침 같다고 하셨어요."},
-        {"from":"하나님","to":"사람을 믿는 자","label":"저주하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"무릇 사람을 믿으며 육신으로 그의 힘을 삼고 마음이 여호와에게서 떠난 그 사람은 저주를 받으리라고 하셨어요."},
-        {"from":"예레미야","to":"하나님","label":"고침을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"14","note":"여호와여 주는 나의 찬송이시오니 나를 고치소서 그리하시면 내가 낫겠나이다 하고 구해요."},
-        {"from":"하나님","to":"유다 백성","label":"안식일을 명하심","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"너희는 스스로 삼가서 안식일에 짐을 지고 예루살렘 문으로 들어오지 말며 안식일을 거룩히 하라고 하셨어요."}
+        {"from":"하나님","to":"여호와를 의지하는 자","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"주님을 믿는 사람은 물가에 심은 나무처럼 가물어도 열매를 맺는대요."},
+        {"from":"하나님","to":"사람을 믿는 자","label":"저주하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"사람의 힘만 믿고 주님을 떠난 사람은 메마른 땅의 덤불 같대요."},
+        {"from":"예레미야","to":"하나님","label":"고침을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"14","note":"예레미야는 주님이 고쳐 주시면 낫겠다고 기도해요."},
+        {"from":"하나님","to":"유다 백성","label":"안식일을 명하심","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"안식일에 짐을 지고 성문을 드나들지 말고 그날을 거룩히 지키라고 하셨어요."}
       ],
       "places": [
         {"name":"물가","where":"강변","what":"의지하는 자를 비유한 나무 자리","weight":2},
@@ -491,9 +491,9 @@
         {"name":"하나님","role":"토기장이 같은 주권자","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 족속","label":"토기장이 같은 분","kind":"other","directed":true,"weight":3,"verses":"6","note":"이스라엘 족속아 이 토기장이가 하는 것같이 내가 능히 너희에게 행하지 못하겠느냐, 진흙이 토기장이의 손에 있음같이 너희가 내 손에 있다고 하셨어요."},
-        {"from":"음모자들","to":"예레미야","label":"해치려는 자","kind":"conflict","directed":true,"weight":3,"verses":"18","note":"그들이 말하기를 오라 우리가 꾀를 내어 예레미야를 치자, 혀로 그를 치고 그의 어떤 말에도 주의하지 말자 했어요."},
-        {"from":"이스라엘 족속","to":"하나님","label":"계획대로 하겠다 함","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"그들이 말하기를 이는 헛되니 우리는 우리의 계획대로 행하며 악한 마음이 완악한 대로 행하리라 한다고 해요."},
+        {"from":"하나님","to":"이스라엘 족속","label":"토기장이 같은 분","kind":"other","directed":true,"weight":3,"verses":"6","note":"토기장이가 진흙을 마음대로 빚듯 하나님도 이스라엘을 다시 빚으실 수 있대요."},
+        {"from":"음모자들","to":"예레미야","label":"해치려는 자","kind":"conflict","directed":true,"weight":3,"verses":"18","note":"사람들이 예레미야를 혀로 공격하고 말을 듣지 말자며 음모를 꾸몄어요."},
+        {"from":"이스라엘 족속","to":"하나님","label":"계획대로 하겠다 함","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"백성은 소용없다며 자기 계획대로, 악한 마음대로 살겠다고 했대요."},
         {"from":"예레미야","to":"하나님","label":"갚아 달라 기도함","kind":"ally","directed":true,"weight":2,"verses":"19-23","note":"여호와여 나를 돌아보사 나와 다투는 그들의 목소리를 들어 보소서 하고 기도해요."}
       ],
       "places": [
@@ -519,7 +519,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"예레미야","label":"징조를 명하신 분","kind":"ally","directed":true,"weight":3,"verses":"1, 10-11","note":"토기장이의 옹기를 사서 백성의 어른들 앞에서 깨뜨리며, 내가 이 백성과 성을 이처럼 무너뜨리리라 하라고 하셨어요."},
-        {"from":"예레미야","to":"백성과 제사장의 어른들","label":"경고한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"예레미야가 백성의 어른들과 제사장의 어른들을 데리고 힌놈의 아들의 골짜기로 가서 말씀을 선포했어요."},
+        {"from":"예레미야","to":"백성과 제사장의 어른들","label":"경고한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"예레미야는 백성과 제사장의 원로들을 데리고 힌놈 골짜기로 가서 심판의 말씀을 전했어요."},
         {"from":"유다 왕들","to":"하나님","label":"버린 왕들","kind":"conflict","directed":true,"weight":2,"verses":"4-5","note":"그들이 나를 버리고 이곳을 더럽혔으며 바알의 산당을 세우고 자기 아들들을 불살랐다고 하셨어요."}
       ],
       "places": [
@@ -546,7 +546,7 @@
       ],
       "rels": [
         {"from":"바스훌(임멜의 아들)","to":"예레미야","label":"때리고 가둔 자","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"성전의 총감독 바스훌이 예레미야의 예언을 듣고 그를 때리고 성전 문의 목에 씌우는 나무 고랑에 채웠어요."},
-        {"from":"예레미야","to":"바스훌(임멜의 아들)","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"3-6","note":"예레미야가 여호와께서 네 이름을 바스훌이라 하지 않고 마골밋사빕이라 하시리니 너는 바벨론에서 죽으리라고 했어요."},
+        {"from":"예레미야","to":"바스훌(임멜의 아들)","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"3-6","note":"예레미야는 자기를 때린 바스훌에게 이제 '사방이 두려움'이라 불릴 거고 바벨론에서 죽을 거라 했어요."},
         {"from":"친한 벗들","to":"예레미야","label":"배신한 벗","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"나의 친한 벗도 다 나의 실족하기를 기다리며 그를 이기어 원수를 갚자 한다고 해요."},
         {"from":"하나님","to":"예레미야","label":"함께하신 용사","kind":"ally","directed":true,"weight":3,"verses":"9, 11","note":"그의 말씀이 내 마음이 불붙는 것 같아서 견딜 수 없으며, 여호와는 두려운 용사같이 나와 함께하신다고 해요."}
       ],
@@ -605,8 +605,8 @@
       "rels": [
         {"from":"여호야김","to":"요시야","label":"아들","kind":"family","directed":true,"weight":2,"verses":"18","note":"요시야의 아들 유다 왕 여호야김에 대하여 하나님이 말씀하셨어요."},
         {"from":"하나님","to":"여호야김","label":"화를 선포하심","kind":"conflict","directed":true,"weight":3,"verses":"13, 18-19","note":"불의로 집을 짓고 이웃을 고용하고 품삯을 주지 않는 자에게 화 있을진저, 그는 나귀 같이 매장되리라고 하셨어요."},
-        {"from":"요시야","to":"가난한 자","label":"변호한 왕","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"네 아버지는 정의와 공의를 행하였고 가난한 자와 궁핍한 자를 변호하였으니 이것이 나를 앎이 아니냐고 하셨어요."},
-        {"from":"하나님","to":"고니야","label":"빼어 던지실 분","kind":"conflict","directed":true,"weight":3,"verses":"24-28","note":"고니야가 내 오른손의 인장반지라 할지라도 내가 빼어 너를 바벨론 왕의 손에 넘기리라고 하셨어요."},
+        {"from":"요시야","to":"가난한 자","label":"변호한 왕","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"요시야 왕은 정의롭게 살며 가난한 사람의 편을 들었고, 그게 하나님을 아는 거래요."},
+        {"from":"하나님","to":"고니야","label":"빼어 던지실 분","kind":"conflict","directed":true,"weight":3,"verses":"24-28","note":"고니야가 하나님 손의 도장 반지라 해도 빼서 바벨론 왕에게 넘기시겠대요."},
         {"from":"살룸","to":"요시야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"11","note":"요시야의 아들 살룸은 사로잡혀 간 곳에서 죽고 다시 이 땅을 보지 못하리라고 하셨어요."}
       ],
       "places": [
@@ -634,10 +634,10 @@
         {"name":"하나님","role":"가까운 데와 먼 데의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"악한 목자들","to":"남은 양 떼","label":"흩어지게 한 목자","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"내 목장의 양 떼를 멸하며 흩어지게 하는 목자에게 화 있으리라 너희가 내 양 떼를 흩어 몰아냈다고 하셨어요."},
-        {"from":"하나님","to":"의로운 가지","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"내가 다윗에게 한 의로운 가지를 일으킬 것이라, 그의 이름은 여호와 우리의 공의라 일컬음을 받으리라고 하셨어요."},
-        {"from":"하나님","to":"거짓 선지자들","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":3,"verses":"21, 32","note":"이 선지자들은 내가 보내지 아니하였어도 달음질하며 거짓 꿈으로 내 백성을 미혹한다고 하셨어요."},
-        {"from":"하나님","to":"남은 양 떼","label":"친히 모으실 분","kind":"ally","directed":true,"weight":2,"verses":"3","note":"내가 내 양 떼의 남은 것을 그 몰려 갔던 모든 지방에서 모아 다시 그 우리로 돌아오게 하리라고 하셨어요."}
+        {"from":"악한 목자들","to":"남은 양 떼","label":"흩어지게 한 목자","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"하나님 양 떼를 흩어 버린 나쁜 목자들은 불행할 거래요."},
+        {"from":"하나님","to":"의로운 가지","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"하나님은 다윗 집안에 의로운 가지를 일으키시고, 그 이름은 '주님은 우리의 의'래요."},
+        {"from":"하나님","to":"거짓 선지자들","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":3,"verses":"21, 32","note":"하나님이 보내지도 않은 예언자들이 제멋대로 뛰어다니며 거짓 꿈으로 백성을 속인대요."},
+        {"from":"하나님","to":"남은 양 떼","label":"친히 모으실 분","kind":"ally","directed":true,"weight":2,"verses":"3","note":"하나님은 흩어진 양 떼를 모든 땅에서 모아 우리로 돌아오게 하시겠대요."}
       ],
       "places": [
         {"name":"사마리아와 예루살렘","where":"북과 남의 도성","what":"거짓 선지자들이 있던 곳","weight":1},
@@ -664,7 +664,7 @@
       "rels": [
         {"from":"하나님","to":"포로 된 자들","label":"돌보실 분","kind":"ally","directed":true,"weight":3,"verses":"5-7","note":"이곳에서 갈대아로 보낸 유다 포로를 좋은 무화과같이 잘 돌보아 다시 이 땅으로 인도하고, 나를 아는 마음을 주리라고 하셨어요."},
         {"from":"하나님","to":"시드기야","label":"버리실 분","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"유다 왕 시드기야와 남은 자들은 먹을 수 없는 나쁜 무화과같이 버리리라고 하셨어요."},
-        {"from":"느부갓네살","to":"여고냐","label":"끌고 간 왕","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"바벨론 왕 느부갓네살이 여고냐와 고관들과 기술자들을 예루살렘에서 바벨론으로 옮긴 후의 일이에요."}
+        {"from":"느부갓네살","to":"여고냐","label":"끌고 간 왕","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"느부갓네살이 여고냐 왕과 지도자들과 기술자들을 바벨론으로 끌고 간 뒤의 일이에요."}
       ],
       "places": [
         {"name":"성전 앞","where":"예루살렘 하나님의 집 앞","what":"두 광주리가 놓인 곳","weight":2},
@@ -690,10 +690,10 @@
         {"name":"하나님","role":"온 땅을 심판하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예레미야","to":"유다 백성","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"3","note":"요시야 십삼 년부터 이십삼 년 동안 여호와의 말씀이 내게 임하므로 내가 너희에게 꾸준히 일렀다고 해요."},
-        {"from":"유다 백성","to":"하나님","label":"듣지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"4-7","note":"여호와께서 선지자들을 끊임없이 보내셨으나 너희가 순종하지 아니하였다고 해요."},
-        {"from":"하나님","to":"느부갓네살","label":"종으로 쓰시는 분","kind":"other","directed":true,"weight":3,"verses":"9","note":"내가 북쪽 모든 종족과 내 종 바벨론의 느부갓네살을 불러 이 땅을 치게 하리라고 하셨어요."},
-        {"from":"하나님","to":"열방","label":"잔을 마시게 하심","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"너는 내 손에서 이 진노의 술잔을 받아 내가 너를 보내는 바 그 모든 나라로 하여금 마시게 하라고 하셨어요."}
+        {"from":"예레미야","to":"유다 백성","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"3","note":"예레미야는 이십삼 년 동안 쉬지 않고 말씀을 전했지만 백성은 듣지 않았어요."},
+        {"from":"유다 백성","to":"하나님","label":"듣지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"4-7","note":"하나님이 예언자들을 계속 보내셨는데도 백성은 귀를 막았대요."},
+        {"from":"하나님","to":"느부갓네살","label":"종으로 쓰시는 분","kind":"other","directed":true,"weight":3,"verses":"9","note":"하나님은 북쪽 민족들과 '내 종' 느부갓네살을 불러 이 땅을 치게 하시겠대요."},
+        {"from":"하나님","to":"열방","label":"잔을 마시게 하심","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"예레미야는 하나님의 진노가 담긴 잔을 받아 여러 나라에 마시게 해야 했어요."}
       ],
       "places": [
         {"name":"바벨론","where":"갈대아의 제국","what":"칠십 년 섬길 나라","weight":3},
@@ -723,7 +723,7 @@
       "rels": [
         {"from":"제사장과 선지자들","to":"예레미야","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"8, 11","note":"예레미야가 말씀을 마치자 제사장들과 선지자들이 너는 반드시 죽어야 하리라 하고 그를 붙잡았어요."},
         {"from":"장로들","to":"예레미야","label":"변호한 이들","kind":"ally","directed":true,"weight":2,"verses":"17-19","note":"장로 중 몇 사람이 일어나 히스기야가 미가의 예언을 듣고 죽이지 않고 여호와를 경외했다며 그를 변호했어요."},
-        {"from":"아히감","to":"예레미야","label":"보호한 이","kind":"ally","directed":true,"weight":3,"verses":"24","note":"사반의 아들 아히감의 손이 예레미야를 도와 그를 백성의 손에 내주어 죽이지 못하게 했어요."},
+        {"from":"아히감","to":"예레미야","label":"보호한 이","kind":"ally","directed":true,"weight":3,"verses":"24","note":"아히감이 예레미야를 감싸 줘서 백성 손에 죽지 않았어요."},
         {"from":"여호야김","to":"우리야","label":"죽인 왕","kind":"conflict","directed":true,"weight":2,"verses":"20-23","note":"같은 말을 예언한 선지자 우리야는 여호야김을 피해 애굽으로 도망했다가 잡혀 와 칼에 죽었어요."},
         {"from":"고관들","to":"예레미야","label":"무죄 판단","kind":"ally","directed":true,"weight":2,"verses":"16","note":"고관들과 백성이 이 사람은 하나님의 이름으로 말했으니 죽일 만한 이유가 없다고 했어요."}
       ],
@@ -753,7 +753,7 @@
       "rels": [
         {"from":"예레미야","to":"이웃 나라 사신들","label":"멍에를 전한 이","kind":"ally","directed":true,"weight":2,"verses":"2-4","note":"예레미야가 줄과 멍에를 목에 걸고 예루살렘에 온 사신들 편에 이웃 왕들에게 보내 바벨론 왕을 섬기라고 전했어요."},
         {"from":"예레미야","to":"시드기야","label":"권면한 선지자","kind":"ally","directed":true,"weight":3,"verses":"12","note":"예레미야가 시드기야에게 왕의 목에 바벨론 왕의 멍에를 메고 그와 그 백성을 섬기소서 그리하면 살리이다 하고 권했어요."},
-        {"from":"하나님","to":"느부갓네살","label":"땅을 주신 분","kind":"other","directed":true,"weight":2,"verses":"5-6","note":"내가 땅을 만들었고 내가 보기에 옳은 사람에게 그것을 주었노라, 이제 이 모든 땅을 내 종 느부갓네살에게 주었다고 하셨어요."},
+        {"from":"하나님","to":"느부갓네살","label":"땅을 주신 분","kind":"other","directed":true,"weight":2,"verses":"5-6","note":"땅을 만드신 하나님이 원하는 이에게 주시는데, 이제 그 땅을 느부갓네살에게 맡기셨대요."},
         {"from":"거짓 선지자들","to":"시드기야","label":"속인 자","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"너희는 바벨론 왕을 섬기지 아니하리라 하는 선지자들의 말을 듣지 말라, 그것은 거짓이라고 해요."}
       ],
       "places": [
@@ -779,10 +779,10 @@
         {"name":"하나님","role":"쇠 멍에를 말씀하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나냐","to":"예레미야","label":"멍에를 꺾은 이","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"선지자 하나냐가 예레미야의 목에서 멍에를 빼앗아 꺾으며 이년 안에 느부갓네살의 멍에를 꺾으리라고 했어요."},
-        {"from":"예레미야","to":"하나냐","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"15-17","note":"예레미야가 여호와께서 너를 보내지 않으셨는데 네가 이 백성에게 거짓을 믿게 한다며 네가 금년에 죽으리라 했고 그대로 되었어요."},
-        {"from":"하나님","to":"하나냐","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"여호와께서 너를 보내지 아니하셨으니 내가 너를 지면에서 제하리라고 하셨어요."},
-        {"from":"하나님","to":"예레미야","label":"말씀 주신 분","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"하나냐가 멍에를 꺾은 후 여호와의 말씀이 예레미야에게 임하여 나무 멍에 대신 쇠 멍에를 만들리라고 하셨어요."}
+        {"from":"하나냐","to":"예레미야","label":"멍에를 꺾은 이","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"하나냐는 예레미야 목의 나무 멍에를 꺾으며 이 년 안에 바벨론이 망한다고 거짓 예언했어요."},
+        {"from":"예레미야","to":"하나냐","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"15-17","note":"예레미야는 하나님이 보내지도 않았는데 거짓을 믿게 했으니 올해 죽을 거라 했어요."},
+        {"from":"하나님","to":"하나냐","label":"보내지 않으신 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"하나님은 하나냐를 땅에서 없애시겠다고 하셨어요."},
+        {"from":"하나님","to":"예레미야","label":"말씀 주신 분","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"하나냐가 나무 멍에를 꺾자 하나님은 이제 쇠 멍에를 씌우겠다고 하셨어요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 하나님의 집","what":"두 선지자가 맞선 곳","weight":2},
@@ -811,10 +811,10 @@
       ],
       "rels": [
         {"from":"예레미야","to":"바벨론 포로들","label":"편지 보낸 선지자","kind":"ally","directed":true,"weight":3,"verses":"1, 5-7","note":"예레미야가 바벨론 포로들에게 편지를 보내 집을 짓고 정착하며 그 성읍의 평안을 구하라고 했어요."},
-        {"from":"하나님","to":"바벨론 포로들","label":"미래를 약속하심","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"바벨론에서 칠십 년이 차면 너희를 돌보리라, 너희를 향한 나의 생각은 평안이요 미래와 희망을 주는 것이라고 하셨어요."},
+        {"from":"하나님","to":"바벨론 포로들","label":"미래를 약속하심","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"칠십 년이 지나면 돌보시겠다며, 하나님 계획은 해치려는 게 아니라 희망을 주려는 거래요."},
         {"from":"스마야(느헬람 사람)","to":"예레미야","label":"가두라 한 자","kind":"conflict","directed":true,"weight":2,"verses":"24-27","note":"느헬람 사람 스마야가 제사장에게 편지해 미친 예레미야를 왜 목에 칼을 씌워 가두지 않느냐고 했어요."},
-        {"from":"엘라사와 그마랴","to":"예레미야","label":"편지를 전함","kind":"ally","directed":true,"weight":1,"verses":"3","note":"예레미야의 편지는 사반의 아들 엘라사와 힐기야의 아들 그마랴 편에 바벨론으로 보내졌어요."},
-        {"from":"하나님","to":"아합(골라야의 아들)","label":"벌하실 분","kind":"conflict","directed":true,"weight":1,"verses":"21-22","note":"거짓을 예언한 아합과 시드기야를 느부갓네살의 손에 넘기리니 그가 그들을 죽이리라고 하셨어요."}
+        {"from":"엘라사와 그마랴","to":"예레미야","label":"편지를 전함","kind":"ally","directed":true,"weight":1,"verses":"3","note":"예레미야는 엘라사와 그마랴 편에 바벨론 포로들에게 편지를 보냈어요."},
+        {"from":"하나님","to":"아합(골라야의 아들)","label":"벌하실 분","kind":"conflict","directed":true,"weight":1,"verses":"21-22","note":"거짓 예언한 아합과 시드기야는 느부갓네살 손에 죽을 거래요."}
       ],
       "places": [
         {"name":"바벨론","where":"포로들이 사는 성","what":"평안을 구하라 한 곳","weight":3},
@@ -840,8 +840,8 @@
       ],
       "rels": [
         {"from":"하나님","to":"야곱","label":"구원하시는 분","kind":"ally","directed":true,"weight":3,"verses":"7, 10-11","note":"그날은 야곱의 환난의 때라 그러나 그가 거기서 구하여 냄을 얻으리라, 내가 너와 함께하여 너를 구원하리라고 하셨어요."},
-        {"from":"야곱","to":"다윗 왕","label":"섬길 백성","kind":"ally","directed":true,"weight":2,"verses":"9","note":"그들은 여호와 그들의 하나님과 내가 그들을 위해 세울 그들의 왕 다윗을 섬기리라고 해요."},
-        {"from":"하나님","to":"예레미야","label":"기록을 명하심","kind":"ally","directed":true,"weight":1,"verses":"2","note":"내가 네게 일러 준 모든 말을 책에 기록하라고 하셨어요."}
+        {"from":"야곱","to":"다윗 왕","label":"섬길 백성","kind":"ally","directed":true,"weight":2,"verses":"9","note":"백성은 하나님과 그분이 세워 주실 다윗 같은 왕을 섬기게 될 거래요."},
+        {"from":"하나님","to":"예레미야","label":"기록을 명하심","kind":"ally","directed":true,"weight":1,"verses":"2","note":"하나님은 예레미야에게 받은 말씀을 모두 책에 적으라고 하셨어요."}
       ],
       "places": [
         {"name":"예루살렘 언덕","where":"회복될 성읍","what":"다시 건축될 곳","weight":2}
@@ -865,10 +865,10 @@
         {"name":"하나님","role":"새 언약을 맺으실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"영원히 사랑하신 분","kind":"ally","directed":true,"weight":3,"verses":"3","note":"내가 영원한 사랑으로 너를 사랑하기에 인자함으로 너를 이끌었다고 하셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"영원히 사랑하신 분","kind":"ally","directed":true,"weight":3,"verses":"3","note":"하나님은 끝없는 사랑으로 이스라엘을 사랑하셔서 다정하게 이끄셨대요."},
         {"from":"하나님","to":"라헬","label":"눈물을 위로하심","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"라헬이 자식 때문에 애곡하며 위로받기를 거절하지만, 울음소리를 멈추라 그들이 대적의 땅에서 돌아오리라고 하셨어요."},
-        {"from":"하나님","to":"에브라임","label":"아버지","kind":"family","directed":true,"weight":2,"verses":"9, 20","note":"나는 이스라엘의 아버지요 에브라임은 나의 장자니라, 에브라임은 나의 사랑하는 아들이라고 하셨어요."},
-        {"from":"하나님","to":"유다 집","label":"새 언약 맺으실 분","kind":"ally","directed":true,"weight":3,"verses":"31-33","note":"내가 이스라엘 집과 유다 집에 새 언약을 맺으리니 내 법을 그들의 마음에 기록하리라고 하셨어요."}
+        {"from":"하나님","to":"에브라임","label":"아버지","kind":"family","directed":true,"weight":2,"verses":"9, 20","note":"하나님은 자신을 이스라엘의 아버지라 하시며 에브라임을 사랑하는 맏아들이라 부르셨어요."},
+        {"from":"하나님","to":"유다 집","label":"새 언약 맺으실 분","kind":"ally","directed":true,"weight":3,"verses":"31-33","note":"하나님은 새 언약을 맺어 법을 돌판이 아니라 마음에 새기시겠대요."}
       ],
       "places": [
         {"name":"라마","where":"예루살렘 북쪽 베냐민 땅","what":"라헬의 울음이 들린 곳","weight":2},
@@ -897,8 +897,8 @@
         {"from":"하나멜","to":"예레미야","label":"사촌","kind":"family","directed":true,"weight":2,"verses":"7-9","note":"예레미야의 숙부의 아들 하나멜이 아나돗의 밭을 사라고 했고 예레미야가 은 십칠 세겔을 달아 주었어요."},
         {"from":"바룩","to":"예레미야","label":"증서를 맡은 이","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"예레미야가 매매 증서를 바룩에게 주며 토기에 담아 오래 보존하게 하라고 했어요."},
         {"from":"시드기야","to":"예레미야","label":"가둔 왕","kind":"conflict","directed":true,"weight":2,"verses":"2-3","note":"시드기야가 예레미야가 바벨론에 넘겨지리라 예언한다며 그를 시위대 뜰에 가두었어요."},
-        {"from":"예레미야","to":"하나님","label":"기도한 선지자","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"예레미야가 슬프도소이다 주 여호와여 주께서 큰 능력으로 천지를 지으셨사오니 주에게는 할 수 없는 일이 없다고 기도했어요."},
-        {"from":"하나님","to":"예레미야","label":"소망을 주신 분","kind":"ally","directed":true,"weight":2,"verses":"27, 42-44","note":"나는 모든 육체의 하나님이라 내게 할 수 없는 일이 있겠느냐, 사람들이 이 땅에서 밭을 다시 사리라고 하셨어요."}
+        {"from":"예레미야","to":"하나님","label":"기도한 선지자","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"예레미야는 하늘과 땅을 지으신 주님께는 못 하실 일이 없다고 기도했어요."},
+        {"from":"하나님","to":"예레미야","label":"소망을 주신 분","kind":"ally","directed":true,"weight":2,"verses":"27, 42-44","note":"하나님은 내게 못 할 일이 있겠냐며, 이 땅에서 다시 밭을 사고팔 날이 온다고 하셨어요."}
       ],
       "places": [
         {"name":"아나돗","where":"예레미야의 고향","what":"밭을 산 곳","weight":3},
@@ -922,8 +922,8 @@
         {"name":"하나님","role":"일을 행하시는 여호와","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예레미야","label":"응답하실 분","kind":"ally","directed":true,"weight":3,"verses":"3","note":"너는 내게 부르짖으라 내가 네게 응답하겠고 네가 알지 못하는 크고 은밀한 일을 네게 보이리라고 하셨어요."},
-        {"from":"하나님","to":"다윗의 의로운 가지","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"15","note":"그날 그때에 내가 다윗에게서 한 공의로운 가지가 나게 하리니 그가 이 땅에 정의와 공의를 실행하리라고 하셨어요."},
+        {"from":"하나님","to":"예레미야","label":"응답하실 분","kind":"ally","directed":true,"weight":3,"verses":"3","note":"부르짖으면 대답하고, 네가 모르는 크고 놀라운 일을 알려 주겠다고 하셨어요."},
+        {"from":"하나님","to":"다윗의 의로운 가지","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"15","note":"그날 다윗 집안에서 의로운 가지가 나와 이 땅에 정의를 세울 거래요."},
         {"from":"하나님","to":"레위인 제사장","label":"언약 지키실 분","kind":"ally","directed":true,"weight":1,"verses":"18, 21","note":"레위 사람 제사장들도 내 앞에서 번제를 드리는 사람이 끊어지지 않으리니 그들과 맺은 언약도 파할 수 없다고 하셨어요."}
       ],
       "places": [
@@ -950,7 +950,7 @@
       ],
       "rels": [
         {"from":"예루살렘 고관과 백성","to":"히브리 종들","label":"다시 잡은 주인","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"그들이 히브리 종들을 놓아 주기로 계약하고 놓았다가 후에 마음이 변하여 다시 끌어다가 종으로 삼았어요."},
-        {"from":"하나님","to":"예루살렘 고관과 백성","label":"심판하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"17","note":"너희가 나에게 순종하지 아니하고 자유를 선포하지 아니하였은즉 내가 너희를 위하여 칼과 기근의 자유를 선포하리라고 하셨어요."},
+        {"from":"하나님","to":"예루살렘 고관과 백성","label":"심판하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"17","note":"종들을 풀어 주겠다는 약속을 어겼으니, 그들에게 칼과 질병과 굶주림의 '자유'를 주시겠대요."},
         {"from":"예레미야","to":"시드기야","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"2-5","note":"예레미야가 시드기야에게 너는 바벨론 왕의 손에 붙잡혀 넘겨지겠으나 평안히 죽으리라고 전했어요."},
         {"from":"느부갓네살","to":"시드기야","label":"잡아갈 왕","kind":"conflict","directed":true,"weight":1,"verses":"3, 21","note":"시드기야는 바벨론 왕의 손에 붙잡혀 그의 눈을 보고 그와 대면하여 말하리라고 해요."}
       ],
@@ -979,7 +979,7 @@
       "rels": [
         {"from":"레갑 족속","to":"요나답","label":"순종한 후손","kind":"family","directed":true,"weight":3,"verses":"6-8","note":"레갑 족속은 조상 요나답이 포도주를 마시지 말라 명한 것을 지켜 그 자손이 오늘까지 마시지 않았어요."},
         {"from":"예레미야","to":"레갑 족속","label":"시험한 선지자","kind":"other","directed":true,"weight":2,"verses":"2, 5","note":"예레미야가 레갑 사람들을 성전 방으로 데려가 포도주를 놓고 마시라 했지만 그들은 거절했어요."},
-        {"from":"하나님","to":"레갑 족속","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"18-19","note":"너희가 조상 요나답의 명령을 순종하였으니 레갑의 아들 요나답에게서 내 앞에 설 사람이 영원히 끊어지지 않으리라고 하셨어요."},
+        {"from":"하나님","to":"레갑 족속","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"18-19","note":"조상 명령을 끝까지 지킨 레갑 집안에게 하나님은 대대로 섬길 사람이 끊이지 않게 하시겠대요."},
         {"from":"유다 백성","to":"하나님","label":"듣지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"14-16","note":"레갑 자손은 조상의 명령을 지켰는데 너희는 나의 말을 듣지 아니하였다고 하셨어요."}
       ],
       "places": [
@@ -1007,9 +1007,9 @@
         {"name":"하나님","role":"다시 쓰게 하신 분","weight":3}
       ],
       "rels": [
-        {"from":"바룩","to":"예레미야","label":"받아 적은 서기관","kind":"ally","directed":true,"weight":3,"verses":"4","note":"예레미야가 바룩을 부르매 바룩이 예레미야가 불러 주는 여호와의 말씀을 두루마리 책에 기록했어요."},
+        {"from":"바룩","to":"예레미야","label":"받아 적은 서기관","kind":"ally","directed":true,"weight":3,"verses":"4","note":"예레미야가 불러 주는 하나님 말씀을 서기관 바룩이 두루마리에 받아 적었어요."},
         {"from":"여호야김","to":"예레미야","label":"말씀을 태운 왕","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"여호야김 왕이 두루마리를 서너 쪽 읽을 때마다 칼로 베어 화로 불에 던져 다 태웠어요."},
-        {"from":"고관들","to":"바룩","label":"숨으라 한 이들","kind":"ally","directed":true,"weight":2,"verses":"19","note":"고관들이 바룩에게 너는 가서 예레미야와 함께 숨고 너희가 있는 곳을 사람에게 알리지 말라고 했어요."},
+        {"from":"고관들","to":"바룩","label":"숨으라 한 이들","kind":"ally","directed":true,"weight":2,"verses":"19","note":"고관들은 바룩에게 예레미야와 함께 몸을 숨기고 아무에게도 알리지 말라고 했어요."},
         {"from":"그마랴","to":"여호야김","label":"말린 신하","kind":"ally","directed":true,"weight":1,"verses":"25","note":"그마랴가 두루마리를 불사르지 말라고 왕께 아뢰었으나 왕이 듣지 않았어요."},
         {"from":"하나님","to":"예레미야","label":"숨기신 분","kind":"ally","directed":true,"weight":2,"verses":"26, 28","note":"여호와께서 그들을 숨기셨고, 다른 두루마리를 가져다가 처음 말을 모두 다시 기록하라고 하셨어요."}
       ],
@@ -1038,9 +1038,9 @@
       ],
       "rels": [
         {"from":"이리야","to":"예레미야","label":"붙잡은 문지기","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"예레미야가 베냐민 땅으로 가려 할 때 문지기 이리야가 네가 갈대아인에게 항복하려 한다며 그를 붙잡았어요."},
-        {"from":"고관들","to":"예레미야","label":"때리고 가둔 이들","kind":"conflict","directed":true,"weight":3,"verses":"15","note":"고관들이 노하여 예레미야를 때리고 서기관 요나단의 집에 가두었어요."},
-        {"from":"시드기야","to":"예레미야","label":"몰래 부른 왕","kind":"other","directed":true,"weight":3,"verses":"17","note":"시드기야 왕이 사람을 보내 예레미야를 이끌어 내고 궁중에서 은밀히 여호와께로부터 받은 말씀이 있느냐 물었어요."},
-        {"from":"예레미야","to":"시드기야","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"17","note":"예레미야가 있나이다 왕이 바벨론의 왕의 손에 넘겨지리이다 하고 대답했어요."}
+        {"from":"고관들","to":"예레미야","label":"때리고 가둔 이들","kind":"conflict","directed":true,"weight":3,"verses":"15","note":"화난 고관들이 예레미야를 때리고 서기관 요나단 집 감옥에 가뒀어요."},
+        {"from":"시드기야","to":"예레미야","label":"몰래 부른 왕","kind":"other","directed":true,"weight":3,"verses":"17","note":"시드기야 왕은 몰래 예레미야를 불러 하나님 말씀이 있냐고 물었어요."},
+        {"from":"예레미야","to":"시드기야","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"17","note":"예레미야는 왕이 바벨론 왕 손에 넘겨질 거라고 솔직히 답했어요."}
       ],
       "places": [
         {"name":"베냐민 문","where":"예루살렘 북쪽 성문","what":"예레미야가 붙잡힌 곳","weight":2},
@@ -1098,11 +1098,11 @@
         {"name":"하나님","role":"말씀대로 이루신 분","weight":2}
       ],
       "rels": [
-        {"from":"느부갓네살","to":"시드기야","label":"눈을 뺀 왕","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"바벨론 왕이 립나에서 시드기야의 눈앞에서 그의 아들들을 죽이고 시드기야의 눈을 빼고 사슬로 결박했어요."},
-        {"from":"느부사라단","to":"느부갓네살","label":"시위대장","kind":"ally","directed":true,"weight":2,"verses":"9","note":"시위대장 느부사라단이 성 중에 남아 있는 백성을 바벨론으로 잡아 옮겼어요."},
+        {"from":"느부갓네살","to":"시드기야","label":"눈을 뺀 왕","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"바벨론 왕은 시드기야 앞에서 아들들을 죽이고 그의 눈을 뽑아 사슬로 묶었어요."},
+        {"from":"느부사라단","to":"느부갓네살","label":"시위대장","kind":"ally","directed":true,"weight":2,"verses":"9","note":"경호대장 느부사라단이 성에 남은 백성을 바벨론으로 끌고 갔어요."},
         {"from":"느부갓네살","to":"예레미야","label":"선대하라 한 왕","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"느부갓네살이 느부사라단에게 예레미야를 잘 보살피고 해하지 말며 그가 말하는 대로 하라고 명령했어요."},
         {"from":"그달리야","to":"예레미야","label":"맡아 돌본 이","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그들이 예레미야를 시위대 뜰에서 데려다가 그달리야에게 넘겨 집으로 데려가게 했어요."},
-        {"from":"하나님","to":"에벳멜렉","label":"생명을 지키실 분","kind":"ally","directed":true,"weight":2,"verses":"16-18","note":"에벳멜렉에게 네가 나를 믿었으니 그날에 내가 너를 구원하리니 네가 칼에 죽지 아니하리라고 하셨어요."}
+        {"from":"하나님","to":"에벳멜렉","label":"생명을 지키실 분","kind":"ally","directed":true,"weight":2,"verses":"16-18","note":"예레미야를 구해 준 에벳멜렉에게 하나님은 너는 나를 믿었으니 살려 주겠다고 하셨어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"함락된 유다의 수도","what":"성벽이 뚫리고 불탄 곳","weight":3},
@@ -1129,7 +1129,7 @@
       ],
       "rels": [
         {"from":"느부사라단","to":"예레미야","label":"풀어 준 장관","kind":"ally","directed":true,"weight":2,"verses":"2-4","note":"시위대장이 사슬에 묶인 예레미야를 풀어 주며 바벨론으로 가든 남든 네가 좋은 대로 하라고 했어요."},
-        {"from":"그달리야","to":"예레미야","label":"받아 준 총독","kind":"ally","directed":true,"weight":2,"verses":"6","note":"예레미야가 미스바로 가서 그달리야에게 나아가 그 땅에 남아 있는 백성 가운데 거주했어요."},
+        {"from":"그달리야","to":"예레미야","label":"받아 준 총독","kind":"ally","directed":true,"weight":2,"verses":"6","note":"예레미야는 미스바의 총독 그달리야에게 가서 남은 백성과 함께 살았어요."},
         {"from":"요하난","to":"그달리야","label":"경고한 지휘관","kind":"ally","directed":true,"weight":2,"verses":"13-16","note":"요하난이 암몬 왕이 이스마엘을 보내 당신을 죽이려 한다고 경고했지만 그달리야는 믿지 않았어요."},
         {"from":"바알리스","to":"이스마엘","label":"보낸 왕","kind":"ally","directed":true,"weight":1,"verses":"14","note":"암몬 자손의 왕 바알리스가 이스마엘을 보내 그달리야를 죽이려 했어요."},
         {"from":"이스마엘","to":"그달리야","label":"노린 자","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"이스마엘은 그달리야의 목숨을 노리고 있었어요."}
@@ -1188,7 +1188,7 @@
       ],
       "rels": [
         {"from":"요하난","to":"예레미야","label":"기도 부탁한 이","kind":"other","directed":true,"weight":3,"verses":"1-3","note":"요하난과 백성이 예레미야에게 우리를 위해 하나님께 기도하여 우리가 갈 길을 보여 달라고 부탁했어요."},
-        {"from":"하나님","to":"남은 백성","label":"머물면 세우실 분","kind":"ally","directed":true,"weight":3,"verses":"10-12","note":"너희가 이 땅에 그대로 머물면 내가 너희를 세우고 헐지 아니하리라, 바벨론 왕을 두려워하지 말라고 하셨어요."},
+        {"from":"하나님","to":"남은 백성","label":"머물면 세우실 분","kind":"ally","directed":true,"weight":3,"verses":"10-12","note":"이 땅에 머물면 지켜 주겠다, 바벨론 왕을 두려워 말라고 하나님이 남은 백성에게 말씀하셨어요."},
         {"from":"예레미야","to":"요하난","label":"속마음을 드러냄","kind":"conflict","directed":true,"weight":2,"verses":"19-21","note":"예레미야가 너희가 마음을 속였다, 애굽으로 가지 말라고 하셨는데 너희가 순종하지 않는다고 드러냈어요."},
         {"from":"여사냐","to":"요하난","label":"함께한 지휘관","kind":"ally","directed":false,"weight":1,"verses":"1","note":"호사야의 아들 여사냐도 요하난과 함께 예레미야를 찾아왔어요."}
       ],
@@ -1245,9 +1245,9 @@
         {"name":"하나님","role":"분향을 기억하신 분","weight":3}
       ],
       "rels": [
-        {"from":"애굽의 유다인들","to":"예레미야","label":"듣지 않은 이들","kind":"conflict","directed":true,"weight":3,"verses":"16-17","note":"애굽의 유다 사람들이 네가 여호와의 이름으로 우리에게 말하는 것을 우리가 듣지 아니하겠다고 했어요."},
+        {"from":"애굽의 유다인들","to":"예레미야","label":"듣지 않은 이들","kind":"conflict","directed":true,"weight":3,"verses":"16-17","note":"이집트로 간 유다 사람들은 주님 이름으로 한 말이라도 듣지 않겠다며 예레미야에게 대들었어요."},
         {"from":"애굽의 유다인들","to":"하늘 여왕","label":"섬긴 우상","kind":"other","directed":true,"weight":2,"verses":"17-19","note":"그들은 우리가 하늘 여왕에게 분향하던 때에는 양식이 풍부하고 복을 누렸다며 다시 섬기겠다고 했어요."},
-        {"from":"하나님","to":"애굽의 유다인들","label":"심판하실 분","kind":"conflict","directed":true,"weight":3,"verses":"27","note":"내가 그들에게 경계하여 재난을 내리고 복을 내리지 아니하리니 애굽 땅의 유다 사람들이 망하리라고 하셨어요."},
+        {"from":"하나님","to":"애굽의 유다인들","label":"심판하실 분","kind":"conflict","directed":true,"weight":3,"verses":"27","note":"하나님은 이집트의 유다 사람들에게 복이 아니라 재앙을 지켜보겠다고 하셨어요."},
         {"from":"하나님","to":"바로 호브라","label":"넘기실 분","kind":"conflict","directed":true,"weight":1,"verses":"30","note":"내가 시드기야를 느부갓네살에게 넘긴 것같이 애굽 왕 바로 호브라를 그 원수들에게 넘기리라고 하셨어요."}
       ],
       "places": [
@@ -1269,8 +1269,8 @@
         {"name":"하나님","role":"생명을 지켜 주실 분","weight":3}
       ],
       "rels": [
-        {"from":"바룩","to":"예레미야","label":"받아 적은 서기관","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"바룩이 예레미야의 말을 책에 기록할 때 화로다 여호와께서 나의 고통에 슬픔을 더하셨다고 탄식했어요."},
-        {"from":"하나님","to":"바룩","label":"생명을 약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"5","note":"네가 너를 위하여 큰일을 찾느냐 그것을 찾지 말라, 그러나 네가 가는 모든 곳에서 네 생명을 노략물 주듯 하리라고 하셨어요."}
+        {"from":"바룩","to":"예레미야","label":"받아 적은 서기관","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"바룩은 말씀을 받아 적으며 하나님이 내 고통에 슬픔까지 더하셨다고 한탄했어요."},
+        {"from":"하나님","to":"바룩","label":"생명을 약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"5","note":"하나님은 바룩에게 큰 것을 바라지 말라, 대신 어디를 가든 목숨은 지켜 주겠다고 하셨어요."}
       ],
       "places": [
 
@@ -1294,8 +1294,8 @@
       ],
       "rels": [
         {"from":"느부갓네살","to":"바로 느고","label":"이긴 왕","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"유다 왕 여호야김 사 년에 바벨론 왕 느부갓네살이 갈그미스에서 애굽 왕 바로 느고의 군대를 쳤어요."},
-        {"from":"하나님","to":"애굽 군대","label":"치시는 분","kind":"conflict","directed":true,"weight":2,"verses":"10, 15","note":"그날은 주 여호와께서 대적에게 원수 갚는 보복일이라, 너희 장사들이 쓰러짐은 여호와께서 몰아내셨음이라고 해요."},
-        {"from":"하나님","to":"야곱","label":"멸하지 않으실 분","kind":"ally","directed":true,"weight":2,"verses":"27-28","note":"내 종 야곱아 두려워하지 말라, 내가 너를 쫓아낸 나라들은 멸할지라도 너는 멸하지 아니하리라고 하셨어요."}
+        {"from":"하나님","to":"애굽 군대","label":"치시는 분","kind":"conflict","directed":true,"weight":2,"verses":"10, 15","note":"그날은 하나님이 이집트 군대에게 갚으시는 날이라 그 용사들이 넘어질 거래요."},
+        {"from":"하나님","to":"야곱","label":"멸하지 않으실 분","kind":"ally","directed":true,"weight":2,"verses":"27-28","note":"야곱아 두려워 말라, 다른 나라는 끝장나도 너는 끝까지 지키겠다고 하셨어요."}
       ],
       "places": [
         {"name":"갈그미스","where":"유브라데 강가 성읍","what":"애굽 군대가 패한 곳","weight":3},
@@ -1319,9 +1319,9 @@
         {"name":"하나님","role":"칼을 명하신 분","weight":3}
       ],
       "rels": [
-        {"from":"북쪽 군대","to":"블레셋","label":"덮칠 군대","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"물이 북쪽에서 일어나 물결치는 시내를 이루어 블레셋 땅과 성읍과 거주민을 휩쓸리라고 해요."},
-        {"from":"하나님","to":"블레셋","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"여호와께서 갑돌 섬에 남아 있는 블레셋 사람을 유린하시리라고 해요."},
-        {"from":"예레미야","to":"하나님","label":"쉬기를 구한 이","kind":"other","directed":true,"weight":1,"verses":"6","note":"여호와의 칼이여 네가 언제까지 쉬지 않겠느냐 네 칼집에 들어가서 가만히 쉴지어다 하고 해요."}
+        {"from":"북쪽 군대","to":"블레셋","label":"덮칠 군대","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"북쪽에서 밀려오는 큰물 같은 군대가 블레셋 땅을 휩쓸 거래요."},
+        {"from":"하나님","to":"블레셋","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"하나님은 갑돌 섬에서 온 블레셋 사람들까지 무너뜨리실 거래요."},
+        {"from":"예레미야","to":"하나님","label":"쉬기를 구한 이","kind":"other","directed":true,"weight":1,"verses":"6","note":"예레미야는 주님의 칼에게 언제 그치겠냐며 이제 칼집에 들어가 쉬라고 외쳤어요."}
       ],
       "places": [
         {"name":"가사와 아스글론","where":"블레셋 해안 성읍","what":"대머리가 되고 잠잠해질 곳","weight":3},
@@ -1346,10 +1346,10 @@
         {"name":"하나님","role":"심판하시되 회복하실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"모압","label":"교만을 쏟으실 분","kind":"conflict","directed":true,"weight":3,"verses":"29-30, 42","note":"우리가 모압의 교만을 들었나니 심히 교만하도다, 모압이 여호와를 거슬러 자만하였으므로 멸망하리라고 하셨어요."},
-        {"from":"모압","to":"그모스","label":"의지한 우상","kind":"other","directed":true,"weight":2,"verses":"7, 13","note":"네가 네 업적과 보물을 의뢰하므로 너도 정복을 당하고 그모스는 포로가 되어 끌려가리라고 해요."},
-        {"from":"예레미야","to":"모압","label":"슬퍼한 선지자","kind":"ally","directed":true,"weight":2,"verses":"31-32","note":"그러므로 내가 모압을 위하여 울며 온 모압을 위하여 부르짖으리라고 해요."},
-        {"from":"하나님","to":"모압","label":"말일에 돌려보내심","kind":"ally","directed":true,"weight":1,"verses":"47","note":"그러나 내가 마지막 날에 모압의 포로를 돌려보내리라고 하셨어요."}
+        {"from":"하나님","to":"모압","label":"교만을 쏟으실 분","kind":"conflict","directed":true,"weight":3,"verses":"29-30, 42","note":"모압은 몹시 교만해 하나님께 맞섰으니 술 취한 사람처럼 비틀거릴 거래요."},
+        {"from":"모압","to":"그모스","label":"의지한 우상","kind":"other","directed":true,"weight":2,"verses":"7, 13","note":"모압이 자기 재주와 재물을 믿었으니 정복당하고 신 그모스도 포로로 끌려갈 거래요."},
+        {"from":"예레미야","to":"모압","label":"슬퍼한 선지자","kind":"ally","directed":true,"weight":2,"verses":"31-32","note":"예레미야는 망하는 모압을 위해 울며 부르짖었어요."},
+        {"from":"하나님","to":"모압","label":"말일에 돌려보내심","kind":"ally","directed":true,"weight":1,"verses":"47","note":"그래도 하나님은 마지막 날에 모압을 회복시키시겠대요."}
       ],
       "places": [
         {"name":"모압","where":"사해 동쪽 고원","what":"무너질 나라","weight":3},
@@ -1378,10 +1378,10 @@
         {"name":"하나님","role":"열방을 다스리시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"에돔","label":"끌어내리실 분","kind":"conflict","directed":true,"weight":3,"verses":"16","note":"바위틈에 살며 산꼭대기를 점령한 자여 네가 독수리같이 보금자리를 높은 데 지었을지라도 내가 거기서 끌어내리리라고 하셨어요."},
-        {"from":"하나님","to":"암몬","label":"포로를 돌려보내심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"그러나 그 후에 내가 암몬 자손의 포로를 돌아가게 하리라고 하셨어요."},
+        {"from":"하나님","to":"에돔","label":"끌어내리실 분","kind":"conflict","directed":true,"weight":3,"verses":"16","note":"높은 바위 꼭대기에 둥지 튼 독수리 같아도 에돔을 끌어내리시겠대요."},
+        {"from":"하나님","to":"암몬","label":"포로를 돌려보내심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"그 후에 하나님은 암몬을 다시 회복시키시겠대요."},
         {"from":"느부갓네살","to":"게달과 하솔","label":"칠 왕","kind":"conflict","directed":true,"weight":1,"verses":"28-30","note":"바벨론 왕 느부갓네살이 게달과 하솔 나라들을 치려고 계략을 세웠다고 해요."},
-        {"from":"하나님","to":"엘람","label":"말일에 회복하심","kind":"ally","directed":true,"weight":2,"verses":"39","note":"그러나 말일에 내가 엘람의 포로를 돌아가게 하리라고 하셨어요."}
+        {"from":"하나님","to":"엘람","label":"말일에 회복하심","kind":"ally","directed":true,"weight":2,"verses":"39","note":"마지막 날에는 엘람도 회복시키시겠대요."}
       ],
       "places": [
         {"name":"랍바","where":"암몬의 도성","what":"전쟁 소리가 들릴 곳","weight":2},
@@ -1409,10 +1409,10 @@
         {"name":"하나님","role":"강한 구속자","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"바벨론","label":"벌하실 분","kind":"conflict","directed":true,"weight":3,"verses":"18","note":"보라 내가 앗수르 왕을 벌한 것같이 바벨론 왕과 그 땅을 벌하리라고 하셨어요."},
-        {"from":"하나님","to":"이스라엘과 유다","label":"구속자","kind":"ally","directed":true,"weight":3,"verses":"33-34","note":"이스라엘과 유다 자손이 학대를 받았으나 그들의 구원자는 강하니 반드시 그들 때문에 싸우시리라고 해요."},
-        {"from":"북쪽 나라","to":"바벨론","label":"칠 군대","kind":"conflict","directed":true,"weight":2,"verses":"3, 9","note":"한 나라가 북쪽에서 나와서 그를 쳐서 그 땅으로 황폐하게 하리라고 해요."},
-        {"from":"느부갓네살","to":"이스라엘과 유다","label":"뼈를 꺾은 왕","kind":"conflict","directed":true,"weight":1,"verses":"17","note":"처음에는 앗수르 왕이 먹었고 다음에는 바벨론 왕 느부갓네살이 그 뼈를 꺾었다고 해요."}
+        {"from":"하나님","to":"바벨론","label":"벌하실 분","kind":"conflict","directed":true,"weight":3,"verses":"18","note":"앗시리아 왕을 벌하셨듯 바벨론 왕과 그 땅도 벌하시겠대요."},
+        {"from":"하나님","to":"이스라엘과 유다","label":"구속자","kind":"ally","directed":true,"weight":3,"verses":"33-34","note":"짓눌린 이스라엘과 유다의 구원자는 강하셔서 반드시 그들 편에서 싸우실 거래요."},
+        {"from":"북쪽 나라","to":"바벨론","label":"칠 군대","kind":"conflict","directed":true,"weight":2,"verses":"3, 9","note":"북쪽에서 한 나라가 일어나 바벨론을 황무지로 만들 거래요."},
+        {"from":"느부갓네살","to":"이스라엘과 유다","label":"뼈를 꺾은 왕","kind":"conflict","directed":true,"weight":1,"verses":"17","note":"이스라엘은 먼저 앗시리아에게 먹히고 다음엔 느부갓네살에게 뼈까지 꺾였대요."}
       ],
       "places": [
         {"name":"바벨론","where":"갈대아의 수도","what":"함락될 곳","weight":3},
@@ -1439,11 +1439,11 @@
         {"name":"하나님","role":"지혜로 세상을 지으신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"메대 왕들","label":"부추기신 분","kind":"other","directed":true,"weight":2,"verses":"11","note":"여호와께서 메대 왕들의 마음을 부추기사 바벨론을 멸하기로 뜻하시나니 이는 여호와의 원수 갚는 것이라고 해요."},
+        {"from":"하나님","to":"메대 왕들","label":"부추기신 분","kind":"other","directed":true,"weight":2,"verses":"11","note":"하나님이 메대 왕들의 마음을 움직여 성전을 더럽힌 바벨론을 멸하게 하시겠대요."},
         {"from":"메대 왕들","to":"바벨론","label":"칠 왕들","kind":"conflict","directed":true,"weight":3,"verses":"28-29","note":"메대 왕들과 그 모든 땅의 백성을 준비시켜 그를 치게 하라, 바벨론 땅을 황폐하게 하리라고 해요."},
         {"from":"예레미야","to":"스라야","label":"책을 맡긴 선지자","kind":"ally","directed":true,"weight":2,"verses":"59-64","note":"예레미야가 바벨론에 내릴 재앙을 책에 써서 스라야에게 주며 읽은 뒤 돌을 매어 유브라데 속에 던지라고 했어요."},
         {"from":"스라야","to":"시드기야","label":"동행한 병참감","kind":"ally","directed":true,"weight":1,"verses":"59","note":"스라야는 시드기야와 함께 바벨론으로 가던 병참감이었어요."},
-        {"from":"하나님","to":"이스라엘","label":"나오라 부르심","kind":"ally","directed":true,"weight":2,"verses":"45","note":"나의 백성아 너희는 그중에서 나와 각기 여호와의 진노를 피하라고 하셨어요."}
+        {"from":"하나님","to":"이스라엘","label":"나오라 부르심","kind":"ally","directed":true,"weight":2,"verses":"45","note":"하나님 백성은 바벨론에서 빠져나와 심판을 피하라고 하셨어요."}
       ],
       "places": [
         {"name":"바벨론","where":"갈대아의 수도","what":"불탄 산이 될 곳","weight":3},
@@ -1469,8 +1469,8 @@
         {"name":"에윌므로닥","role":"여호야긴을 풀어 준 바벨론 왕","weight":2}
       ],
       "rels": [
-        {"from":"시드기야","to":"느부갓네살","label":"배반한 왕","kind":"conflict","directed":true,"weight":3,"verses":"3","note":"시드기야가 바벨론 왕을 배반했어요."},
-        {"from":"느부갓네살","to":"시드기야","label":"눈을 뺀 왕","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"바벨론 왕이 시드기야의 아들들을 그의 눈앞에서 죽이고 시드기야의 눈을 빼고 놋 사슬로 결박했어요."},
+        {"from":"시드기야","to":"느부갓네살","label":"배반한 왕","kind":"conflict","directed":true,"weight":3,"verses":"3","note":"시드기야는 바벨론 왕에게 등을 돌려 반란을 일으켰어요."},
+        {"from":"느부갓네살","to":"시드기야","label":"눈을 뺀 왕","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"바벨론 왕은 시드기야 앞에서 아들들을 죽이고 그의 눈을 뽑아 사슬로 묶어 끌고 갔어요."},
         {"from":"느부사라단","to":"느부갓네살","label":"시위대장","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"바벨론 왕의 시위대장 느부사라단이 예루살렘에 와서 성전과 왕궁을 불살랐어요."},
         {"from":"에윌므로닥","to":"여호야긴","label":"풀어 준 왕","kind":"ally","directed":true,"weight":3,"verses":"31-34","note":"바벨론 왕 에윌므로닥이 여호야긴을 옥에서 풀어 주고 평생 왕 앞에서 먹게 했어요."}
       ],
