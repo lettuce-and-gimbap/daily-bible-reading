@@ -23,10 +23,10 @@
         {"name":"하나님","role":"마음을 감동시키신 분","weight":3}
       ],
       "rels": [
-        {"from":"학개","to":"스룹바벨","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"다리오 왕 이 년 여섯째 달에 여호와의 말씀이 선지자 학개로 말미암아 총독 스룹바벨과 대제사장 여호수아에게 임했어요."},
-        {"from":"하나님","to":"남은 백성","label":"행위를 살피라 하심","kind":"conflict","directed":true,"weight":2,"verses":"4-7","note":"이 성전이 황폐하였거늘 너희가 이때에 판벽한 집에 거주하는 것이 옳으냐, 너희는 자신의 행위를 살필지니라고 하셨어요."},
-        {"from":"하나님","to":"스룹바벨","label":"감동시키신 분","kind":"ally","directed":true,"weight":3,"verses":"14","note":"여호와께서 스룹바벨의 마음과 여호수아의 마음과 남은 백성의 마음을 감동시키시매 그들이 와서 성전 공사를 했어요."},
-        {"from":"여호수아","to":"스룹바벨","label":"함께 이끈 지도자","kind":"ally","directed":false,"weight":2,"verses":"12","note":"스룹바벨과 여호수아와 남은 모든 백성이 하나님의 목소리와 학개의 말을 청종했어요."}
+        {"from":"학개","to":"스룹바벨","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"다리오 왕 이 년에 학개가 총독 스룹바벨과 대제사장 여호수아에게 하나님 말씀을 전했어요."},
+        {"from":"하나님","to":"남은 백성","label":"행위를 살피라 하심","kind":"conflict","directed":true,"weight":2,"verses":"4-7","note":"성전은 무너져 있는데 너희 집만 꾸미는 게 옳으냐, 자기 삶을 돌아보라 하셨어요."},
+        {"from":"하나님","to":"스룹바벨","label":"감동시키신 분","kind":"ally","directed":true,"weight":3,"verses":"14","note":"하나님이 지도자들과 백성의 마음을 움직이시자 그들이 성전을 다시 짓기 시작했어요."},
+        {"from":"여호수아","to":"스룹바벨","label":"함께 이끈 지도자","kind":"ally","directed":false,"weight":2,"verses":"12","note":"스룹바벨과 여호수아와 백성 모두 하나님 말씀과 학개의 말을 따랐어요."}
       ],
       "places": [
         {"name":"여호와의 전","where":"예루살렘의 무너진 성전","what":"다시 지을 곳","weight":3},
@@ -52,10 +52,10 @@
         {"name":"하나님","role":"함께하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"스룹바벨","label":"인장으로 택하심","kind":"ally","directed":true,"weight":3,"verses":"23","note":"그날에 내가 너를 세우고 너를 인장으로 삼으리니 이는 내가 너를 택하였음이라고 하셨어요."},
-        {"from":"하나님","to":"이 땅 모든 백성","label":"함께하시는 분","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"스룹바벨아 굳세게 할지어다 이 땅 모든 백성아 스스로 굳세게 하여 일할지어다 내가 너희와 함께하노라고 하셨어요."},
+        {"from":"하나님","to":"스룹바벨","label":"인장으로 택하심","kind":"ally","directed":true,"weight":3,"verses":"23","note":"하나님은 스룹바벨을 골라 도장 반지처럼 소중히 여기시겠대요."},
+        {"from":"하나님","to":"이 땅 모든 백성","label":"함께하시는 분","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"스룹바벨과 백성에게 힘을 내 일하라, 내가 함께한다고 하셨어요."},
         {"from":"학개","to":"제사장들","label":"질문한 선지자","kind":"other","directed":true,"weight":1,"verses":"11-13","note":"학개가 제사장들에게 율법에 대해 묻고, 부정한 것이 거룩한 것을 더럽힌다는 대답으로 백성의 상태를 가르쳤어요."},
-        {"from":"여호수아","to":"스룹바벨","label":"함께 일한 지도자","kind":"ally","directed":false,"weight":2,"verses":"2, 4","note":"하나님이 스룹바벨과 대제사장 여호수아와 남은 백성에게 함께 굳세게 하라 하셨어요."}
+        {"from":"여호수아","to":"스룹바벨","label":"함께 일한 지도자","kind":"ally","directed":false,"weight":2,"verses":"2, 4","note":"하나님은 스룹바벨과 대제사장 여호수아와 백성 모두에게 힘을 내라고 하셨어요."}
       ],
       "places": [
         {"name":"여호와의 전","where":"다시 짓는 성전","what":"나중 영광이 클 곳","weight":3}

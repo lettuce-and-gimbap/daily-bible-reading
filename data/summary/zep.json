@@ -23,10 +23,10 @@
         {"name":"하나님","role":"등불로 찾으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"우상 숭배자들","label":"끊으실 분","kind":"conflict","directed":true,"weight":3,"verses":"4-5","note":"내가 유다와 예루살렘 모든 주민 위에 손을 펴서 남아 있는 바알을 그곳에서 멸절하리라고 하셨어요."},
-        {"from":"하나님","to":"안주하는 자들","label":"벌하실 분","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"그때에 내가 예루살렘에서 찌꺼기같이 가라앉아서 마음속에 여호와는 복도 화도 내리지 아니하신다 하는 자를 벌하리라고 하셨어요."},
-        {"from":"스바냐","to":"요시야","label":"같은 시대 사람","kind":"other","directed":true,"weight":1,"verses":"1","note":"요시야 시대에 스바냐에게 임한 여호와의 말씀이라고 해요."},
-        {"from":"하나님","to":"스바냐","label":"말씀 주신 분","kind":"ally","directed":true,"weight":2,"verses":"1","note":"히스기야의 현손 스바냐에게 여호와의 말씀이 임했어요."}
+        {"from":"하나님","to":"우상 숭배자들","label":"끊으실 분","kind":"conflict","directed":true,"weight":3,"verses":"4-5","note":"하나님은 유다와 예루살렘에 남은 바알 숭배를 뿌리째 없애시겠대요."},
+        {"from":"하나님","to":"안주하는 자들","label":"벌하실 분","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"하나님은 복도 화도 안 주실 거라며 무관심하게 사는 자들을 등불 들고 찾아내시겠대요."},
+        {"from":"스바냐","to":"요시야","label":"같은 시대 사람","kind":"other","directed":true,"weight":1,"verses":"1","note":"스바냐는 요시야 왕 때 하나님 말씀을 받았어요."},
+        {"from":"하나님","to":"스바냐","label":"말씀 주신 분","kind":"ally","directed":true,"weight":2,"verses":"1","note":"스바냐는 히스기야 왕의 고손자였어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"등불로 찾아 벌하실 곳","weight":3},
@@ -52,10 +52,10 @@
         {"name":"하나님","role":"신들을 쇠약케 하실 분","weight":3}
       ],
       "rels": [
-        {"from":"스바냐","to":"겸손한 자들","label":"권면한 선지자","kind":"ally","directed":true,"weight":3,"verses":"3","note":"여호와의 규례를 지키는 세상의 모든 겸손한 자들아 공의와 겸손을 구하라, 너희가 혹시 여호와의 분노의 날에 숨김을 얻으리라고 해요."},
-        {"from":"모압과 암몬","to":"유다의 남은 자","label":"비방한 나라","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"내가 모압의 비방과 암몬 자손이 조롱하는 말을 들었나니 그들이 내 백성을 비방하고 자기들의 경계에 대하여 교만하였다고 하셨어요."},
-        {"from":"하나님","to":"니느웨(앗수르)","label":"황폐케 하실 분","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"여호와가 북쪽을 향하여 손을 펴서 앗수르를 멸하며 니느웨를 황폐하게 하여 사막 같이 메마르게 하리라고 해요."},
-        {"from":"하나님","to":"유다의 남은 자","label":"땅을 주실 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"그 지경은 유다 족속의 남은 자에게로 돌아갈지라, 그들의 하나님 여호와가 그들을 보살피사 사로잡힘을 돌이킬 것이라고 해요."}
+        {"from":"스바냐","to":"겸손한 자들","label":"권면한 선지자","kind":"ally","directed":true,"weight":3,"verses":"3","note":"주님 법을 지키는 겸손한 사람들에게 정의와 겸손을 구하면 그날 숨겨질지 모른대요."},
+        {"from":"모압과 암몬","to":"유다의 남은 자","label":"비방한 나라","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"모압과 암몬은 하나님 백성을 조롱하고 그 땅을 넘봤대요."},
+        {"from":"하나님","to":"니느웨(앗수르)","label":"황폐케 하실 분","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"하나님은 앗시리아를 치시고 니느웨를 사막처럼 만드시겠대요."},
+        {"from":"하나님","to":"유다의 남은 자","label":"땅을 주실 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"그 땅은 하나님이 돌보시는 유다의 남은 사람들 몫이 될 거래요."}
       ],
       "places": [
         {"name":"가사와 아스글론","where":"블레셋 해안 성읍","what":"버려질 곳","weight":2},
@@ -82,10 +82,10 @@
         {"name":"하나님","role":"기쁨으로 노래하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"방백과 재판장","to":"예루살렘","label":"부패시킨 지도자","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"그 가운데 방백들은 부르짖는 사자요 재판장들은 이튿날까지 남겨 두는 것이 없는 저녁 이리라고 해요."},
-        {"from":"하나님","to":"곤고한 남은 자","label":"남겨 두시는 분","kind":"ally","directed":true,"weight":3,"verses":"12","note":"내가 곤고하고 가난한 백성을 너희 가운데에 남겨 두리니 그들이 여호와의 이름을 의탁하여 보호를 받을지라고 하셨어요."},
-        {"from":"하나님","to":"딸 시온","label":"기뻐 노래하시는 분","kind":"ally","directed":true,"weight":3,"verses":"17","note":"너의 하나님 여호와가 너의 가운데에 계시니 그는 구원을 베푸실 전능자이시라, 너로 말미암아 기쁨을 이기지 못하시며 즐거이 부르며 기뻐하시리라고 해요."},
-        {"from":"하나님","to":"예루살렘","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"패역하고 더러운 곳, 포학한 그 성읍이 화 있을진저 그가 명령을 듣지 아니하며 교훈을 받지 아니하였다고 해요."}
+        {"from":"방백과 재판장","to":"예루살렘","label":"부패시킨 지도자","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"예루살렘 지도자들은 으르렁대는 사자, 재판관들은 굶주린 늑대 같았대요."},
+        {"from":"하나님","to":"곤고한 남은 자","label":"남겨 두시는 분","kind":"ally","directed":true,"weight":3,"verses":"12","note":"하나님은 겸손하고 가난한 백성을 남겨 두시고 그들은 주님 이름을 의지할 거래요."},
+        {"from":"하나님","to":"딸 시온","label":"기뻐 노래하시는 분","kind":"ally","directed":true,"weight":3,"verses":"17","note":"하나님이 시온 가운데 계신 용사로서 기뻐하며 노래하실 거래요."},
+        {"from":"하나님","to":"예루살렘","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"말 안 듣고 더러운 예루살렘은 불행할 거래요."}
       ],
       "places": [
         {"name":"예루살렘(시온)","where":"하나님이 가운데 계신 성","what":"기쁨의 노래가 울릴 곳","weight":3},

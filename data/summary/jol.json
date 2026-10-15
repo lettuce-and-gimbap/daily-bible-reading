@@ -23,9 +23,9 @@
         {"name":"하나님","role":"여호와의 날의 주인","weight":3}
       ],
       "rels": [
-        {"from":"메뚜기 떼","to":"유다 백성","label":"휩쓴 군대","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"팥중이가 남긴 것을 메뚜기가 먹고 메뚜기가 남긴 것을 느치가 먹었다고 해요."},
-        {"from":"요엘","to":"제사장들","label":"금식을 권한 선지자","kind":"ally","directed":true,"weight":2,"verses":"13-14","note":"제사장들아 너희는 굵은 베로 동이고 슬피 울지어다, 금식일을 정하고 성회를 소집하라고 해요."},
-        {"from":"요엘","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":2,"verses":"19","note":"여호와여 내가 주께 부르짖으오니 불이 목장의 풀을 먹었다고 해요."}
+        {"from":"메뚜기 떼","to":"유다 백성","label":"휩쓴 군대","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"메뚜기 떼가 차례로 몰려와 남은 곡식까지 모조리 먹어 치웠대요."},
+        {"from":"요엘","to":"제사장들","label":"금식을 권한 선지자","kind":"ally","directed":true,"weight":2,"verses":"13-14","note":"요엘은 제사장들에게 베옷을 입고 울며 금식하고 사람들을 모으라고 했어요."},
+        {"from":"요엘","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":2,"verses":"19","note":"요엘은 불타 버린 들판을 보며 주님께 부르짖었어요."}
       ],
       "places": [
         {"name":"여호와의 성전","where":"예루살렘 성전","what":"제사가 끊어진 곳","weight":2},
@@ -51,9 +51,9 @@
         {"name":"하나님","role":"은혜롭고 노하기를 더디 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"유다 백성","label":"돌아오라 하신 분","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"이제라도 너희는 금식하고 울며 마음을 다하여 내게로 돌아오라, 옷을 찢지 말고 마음을 찢으라고 하셨어요."},
-        {"from":"제사장들","to":"하나님","label":"아끼소서 기도함","kind":"ally","directed":true,"weight":2,"verses":"17","note":"제사장들이 낭실과 제단 사이에서 울며 여호와여 주의 백성을 불쌍히 여기소서 하라고 해요."},
-        {"from":"하나님","to":"만민","label":"영을 부으실 분","kind":"ally","directed":true,"weight":3,"verses":"28-29","note":"그 후에 내가 내 영을 만민에게 부어 주리니 너희 자녀들이 장래 일을 말할 것이라고 하셨어요."},
+        {"from":"하나님","to":"유다 백성","label":"돌아오라 하신 분","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"지금이라도 진심으로 돌아오라, 옷이 아니라 마음을 찢으라고 하셨어요."},
+        {"from":"제사장들","to":"하나님","label":"아끼소서 기도함","kind":"ally","directed":true,"weight":2,"verses":"17","note":"제사장들은 성전에서 울며 주님 백성을 불쌍히 여겨 달라고 빌어야 했어요."},
+        {"from":"하나님","to":"만민","label":"영을 부으실 분","kind":"ally","directed":true,"weight":3,"verses":"28-29","note":"그 뒤에 하나님은 모든 사람에게 영을 부어 주셔서 자녀들이 예언하게 하시겠대요."},
         {"from":"큰 군대","to":"유다 백성","label":"황폐케 한 군대","kind":"conflict","directed":true,"weight":2,"verses":"2-3, 25","note":"많고 강한 백성이 산 꼭대기에 퍼진 새벽빛 같으니, 이는 내가 보낸 큰 군대라고 하셨어요."}
       ],
       "places": [
@@ -79,8 +79,8 @@
       "rels": [
         {"from":"열국","to":"유다와 예루살렘","label":"흩어 버린 나라","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"그들이 나의 백성 이스라엘을 나라들 가운데 흩어 버리고 나의 땅을 나누었으며 제비 뽑아 내 백성을 팔았다고 하셨어요."},
         {"from":"하나님","to":"열국","label":"심판하실 분","kind":"conflict","directed":true,"weight":3,"verses":"2, 12","note":"내가 만국을 모아 여호사밧 골짜기에 이르러 거기서 심판하리라고 하셨어요."},
-        {"from":"하나님","to":"유다와 예루살렘","label":"피난처","kind":"ally","directed":true,"weight":3,"verses":"16","note":"여호와께서 시온에서 부르짖으시나 그의 백성의 피난처, 이스라엘 자손의 산성이 되시리로다 하고 해요."},
-        {"from":"두로와 시돈과 블레셋","to":"유다와 예루살렘","label":"약탈한 나라","kind":"conflict","directed":true,"weight":1,"verses":"4-6","note":"두로와 시돈과 블레셋 사방아 너희가 내 은과 금을 빼앗고 유다 자손을 헬라 족속에게 팔았다고 하셨어요."}
+        {"from":"하나님","to":"유다와 예루살렘","label":"피난처","kind":"ally","directed":true,"weight":3,"verses":"16","note":"주님이 시온에서 크게 외치시지만 자기 백성에게는 피난처요 요새가 되신대요."},
+        {"from":"두로와 시돈과 블레셋","to":"유다와 예루살렘","label":"약탈한 나라","kind":"conflict","directed":true,"weight":1,"verses":"4-6","note":"두로와 시돈과 블레셋은 성전의 금은을 빼앗고 유다 사람들을 노예로 팔았대요."}
       ],
       "places": [
         {"name":"여호사밧 골짜기","where":"심판의 골짜기","what":"열국이 모일 곳","weight":3},

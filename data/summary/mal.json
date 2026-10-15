@@ -23,10 +23,10 @@
         {"name":"하나님","role":"큰 임금이신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 백성","label":"사랑하신 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"내가 너희를 사랑하였노라 하나 너희는 이르기를 주께서 어떻게 우리를 사랑하셨나이까 하는도다 하셨어요."},
-        {"from":"이스라엘 백성","to":"하나님","label":"의심한 백성","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"백성은 주께서 어떻게 우리를 사랑하셨냐고 의심했어요."},
-        {"from":"제사장들","to":"하나님","label":"이름을 멸시한 이","kind":"conflict","directed":true,"weight":3,"verses":"6-8","note":"내 이름을 멸시하는 제사장들아, 너희가 눈먼 희생제물과 병든 것을 드리면서 그것이 어찌 악하지 아니하냐고 하셨어요."},
-        {"from":"야곱","to":"에서(에돔)","label":"형제","kind":"family","directed":false,"weight":1,"verses":"2-3","note":"에서는 야곱의 형이 아니냐 그러나 내가 야곱을 사랑하였다고 하셨어요."}
+        {"from":"하나님","to":"이스라엘 백성","label":"사랑하신 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"하나님이 너희를 사랑했다 하시자 백성은 어떻게 사랑하셨냐고 되물었어요."},
+        {"from":"이스라엘 백성","to":"하나님","label":"의심한 백성","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"백성은 하나님의 사랑을 의심했어요."},
+        {"from":"제사장들","to":"하나님","label":"이름을 멸시한 이","kind":"conflict","directed":true,"weight":3,"verses":"6-8","note":"제사장들은 눈멀고 병든 짐승을 바치며 하나님 이름을 업신여겼대요."},
+        {"from":"야곱","to":"에서(에돔)","label":"형제","kind":"family","directed":false,"weight":1,"verses":"2-3","note":"하나님은 에서가 형이지만 야곱을 택해 사랑하셨다고 하셨어요."}
       ],
       "places": [
         {"name":"에돔","where":"사해 남동쪽 산지","what":"무너질 형제 나라","weight":1},
@@ -53,10 +53,10 @@
         {"name":"하나님","role":"이혼을 미워하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"레위","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":2,"verses":"4-6","note":"레위와 세운 나의 언약은 생명과 평강의 언약이라, 그의 입에는 진리의 법이 있었다고 하셨어요."},
-        {"from":"제사장들","to":"하나님","label":"언약을 깨뜨림","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"너희는 옳은 길에서 떠나 많은 사람을 율법에 거스르게 하여 레위의 언약을 깨뜨렸다고 하셨어요."},
-        {"from":"남편들","to":"어려서 맞은 아내","label":"거짓을 행한 남편","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"너와 네가 어려서 맞이한 아내 사이에 여호와께서 증인이 되시나니 그는 네 짝이요 언약의 아내로되 네가 그에게 거짓을 행하였다고 하셨어요."},
-        {"from":"하나님","to":"남편들","label":"책망하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"네 심령을 삼가 지켜 어려서 맞이한 아내에게 거짓을 행하지 말라, 나는 이혼하는 것을 미워한다고 하셨어요."}
+        {"from":"하나님","to":"레위","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":2,"verses":"4-6","note":"레위와 맺은 언약은 생명과 평화의 언약이었고 그 입엔 참된 가르침이 있었대요."},
+        {"from":"제사장들","to":"하나님","label":"언약을 깨뜨림","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"지금 제사장들은 바른길을 떠나 많은 사람을 넘어지게 하고 레위의 언약을 깨뜨렸대요."},
+        {"from":"남편들","to":"어려서 맞은 아내","label":"거짓을 행한 남편","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"하나님은 젊을 때 맞은 아내와의 약속에 증인이 되셨으니 그 아내는 언약의 짝이래요."},
+        {"from":"하나님","to":"남편들","label":"책망하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"젊어서 맞은 아내를 배신하지 말라, 하나님은 이혼을 미워하신대요."}
       ],
       "places": [
         {"name":"성소","where":"하나님의 거룩한 곳","what":"유다가 더럽힌 곳","weight":1},
@@ -83,11 +83,11 @@
         {"name":"하나님","role":"변하지 않으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"내 사자","to":"언약의 사자","label":"길을 준비할 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"보라 내가 내 사자를 보내리니 그가 내 앞에서 길을 준비할 것이요, 너희가 구하는 바 주가 갑자기 그의 성전에 임하리라고 하셨어요."},
-        {"from":"언약의 사자","to":"레위 자손","label":"연단하실 분","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"그가 은을 연단하여 깨끗하게 하는 자같이 앉아서 레위 자손을 깨끗하게 하되 금은같이 연단하리라고 하셨어요."},
-        {"from":"야곱의 자손","to":"하나님","label":"도둑질한 백성","kind":"conflict","directed":true,"weight":3,"verses":"8-10","note":"사람이 어찌 하나님의 것을 도둑질하겠느냐 그러나 너희는 십일조와 봉헌물을 도둑질하였다고 하셨어요."},
+        {"from":"내 사자","to":"언약의 사자","label":"길을 준비할 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"하나님이 사자를 보내 길을 닦게 하시고, 너희가 찾던 언약의 사자가 갑자기 성전에 오실 거래요."},
+        {"from":"언약의 사자","to":"레위 자손","label":"연단하실 분","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"그분은 은을 녹여 깨끗하게 하듯 레위 자손을 정결하게 하실 거래요."},
+        {"from":"야곱의 자손","to":"하나님","label":"도둑질한 백성","kind":"conflict","directed":true,"weight":3,"verses":"8-10","note":"백성은 십일조와 예물을 떼먹어 하나님 것을 훔쳤대요."},
         {"from":"하나님","to":"여호와를 경외하는 자들","label":"기념하시는 분","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"여호와를 경외하는 자들이 서로 말하매 여호와께서 들으시고 그 앞에 기념책을 기록하셨다고 해요."},
-        {"from":"하나님","to":"과부와 고아와 품꾼","label":"억울함을 증언하심","kind":"ally","directed":true,"weight":1,"verses":"5","note":"품꾼의 삯을 억울하게 하며 과부와 고아를 압제하는 자들을 내가 증언하리라고 하셨어요."}
+        {"from":"하나님","to":"과부와 고아와 품꾼","label":"억울함을 증언하심","kind":"ally","directed":true,"weight":1,"verses":"5","note":"일꾼 품삯을 떼먹고 과부와 고아를 괴롭히는 자들을 하나님이 증언하시겠대요."}
       ],
       "places": [
         {"name":"성전","where":"하나님의 집","what":"주께서 갑자기 임하실 곳","weight":2},
@@ -112,10 +112,10 @@
         {"name":"하나님","role":"공의로운 해를 띄우실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이름을 경외하는 자들","label":"치료하시는 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"내 이름을 경외하는 너희에게는 공의로운 해가 떠올라서 치료하는 광선을 비추리니 송아지같이 뛰리라고 하셨어요."},
-        {"from":"하나님","to":"교만한 자와 악인","label":"사르실 분","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"보라 용광로 불 같은 날이 이르리니 교만한 자와 악을 행하는 자는 지푸라기 같을 것이라고 하셨어요."},
-        {"from":"하나님","to":"엘리야","label":"보내실 분","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"여호와의 크고 두려운 날이 이르기 전에 내가 선지자 엘리야를 너희에게 보내리니 아버지의 마음을 자녀에게 돌이키게 하리라고 하셨어요."},
-        {"from":"하나님","to":"모세","label":"율법을 주신 분","kind":"ally","directed":true,"weight":1,"verses":"4","note":"너희는 내가 호렙에서 온 이스라엘을 위하여 내 종 모세에게 명령한 법을 기억하라고 하셨어요."}
+        {"from":"하나님","to":"이름을 경외하는 자들","label":"치료하시는 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"주님을 두려워하는 사람에게는 의로운 해가 떠올라 낫게 하고, 송아지처럼 뛰놀게 하신대요."},
+        {"from":"하나님","to":"교만한 자와 악인","label":"사르실 분","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"교만하고 악한 자들은 용광로 같은 그날에 지푸라기처럼 타 버릴 거래요."},
+        {"from":"하나님","to":"엘리야","label":"보내실 분","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"주님의 큰 날이 오기 전에 예언자 엘리야를 보내 부모와 자녀의 마음을 돌이키시겠대요."},
+        {"from":"하나님","to":"모세","label":"율법을 주신 분","kind":"ally","directed":true,"weight":1,"verses":"4","note":"호렙산에서 모세를 통해 주신 법을 기억하라고 하셨어요."}
       ],
       "places": [
         {"name":"호렙산","where":"시내산","what":"율법을 주신 곳","weight":1}

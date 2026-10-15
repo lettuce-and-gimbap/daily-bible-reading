@@ -24,9 +24,9 @@
         {"name":"하나님","role":"시온에서 부르짖으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"아모스","label":"말씀을 주신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"드고아 목자 중 아모스가 이스라엘에 대해 본 말씀이라, 여호와께서 시온에서 부르짖으신다고 해요."},
-        {"from":"하나님","to":"다메섹","label":"벌하실 분","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"다메섹의 서너 가지 죄로 말미암아 내가 그 벌을 돌이키지 아니하리니 그들이 철 타작기로 길르앗을 압박했음이라고 하셨어요."},
-        {"from":"에돔","to":"하나님","label":"벌받을 나라","kind":"conflict","directed":false,"weight":1,"verses":"11-12","note":"에돔이 칼로 그의 형제를 쫓아가며 긍휼을 버리고 노가 항상 맹렬하였다고 하셨어요."}
+        {"from":"하나님","to":"아모스","label":"말씀을 주신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"드고아의 목자 아모스가 받은 말씀이에요, 주님이 시온에서 사자처럼 외치신대요."},
+        {"from":"하나님","to":"다메섹","label":"벌하실 분","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"다메섹은 쇠 타작기로 짓밟듯 사람들을 잔인하게 괴롭혀 벌을 피할 수 없대요."},
+        {"from":"에돔","to":"하나님","label":"벌받을 나라","kind":"conflict","directed":false,"weight":1,"verses":"11-12","note":"에돔은 형제 이스라엘을 칼로 쫓으며 끝없이 분노를 품었대요."}
       ],
       "places": [
         {"name":"드고아","where":"베들레헴 남쪽 목초지","what":"아모스의 고향","weight":2},
@@ -54,10 +54,10 @@
         {"name":"하나님","role":"이스라엘을 이끄셨던 분","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘","to":"가난한 자","label":"팔아넘긴 자","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"그들이 은을 받고 의인을 팔며 신 한 켤레를 받고 가난한 자를 팔며 힘없는 자의 머리를 짓밟는다고 하셨어요."},
-        {"from":"하나님","to":"이스라엘","label":"누르실 분","kind":"conflict","directed":true,"weight":3,"verses":"13","note":"보라 곡식단을 가득히 실은 수레가 흙을 누름같이 내가 너희를 누르리라고 하셨어요."},
-        {"from":"이스라엘","to":"나실인과 선지자","label":"막은 백성","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"너희가 나실 사람으로 포도주를 마시게 하며 선지자에게 명령하여 예언하지 말라 하였다고 하셨어요."},
-        {"from":"하나님","to":"유다","label":"벌하실 분","kind":"conflict","directed":true,"weight":1,"verses":"4-5","note":"유다가 여호와의 율법을 멸시하며 그 율례를 지키지 아니하였으므로 내가 유다에 불을 보내리라고 하셨어요."}
+        {"from":"이스라엘","to":"가난한 자","label":"팔아넘긴 자","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"이스라엘은 돈 때문에 의인을 팔고 신발 한 켤레 값에 가난한 사람을 팔았대요."},
+        {"from":"하나님","to":"이스라엘","label":"누르실 분","kind":"conflict","directed":true,"weight":3,"verses":"13","note":"하나님은 짐 실은 수레가 땅을 누르듯 그들을 짓누르시겠대요."},
+        {"from":"이스라엘","to":"나실인과 선지자","label":"막은 백성","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"그들은 하나님께 헌신한 사람에게 술을 먹이고 예언자에게 입을 다물라 했대요."},
+        {"from":"하나님","to":"유다","label":"벌하실 분","kind":"conflict","directed":true,"weight":1,"verses":"4-5","note":"유다도 하나님 법을 업신여겼으니 불을 보내시겠대요."}
       ],
       "places": [
         {"name":"제단 옆과 신전","where":"이스라엘의 성소","what":"전당 옷 위에 누운 곳","weight":1},
@@ -81,8 +81,8 @@
         {"name":"하나님","role":"비밀을 보이시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 족속","label":"보응하실 분","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"내가 땅의 모든 족속 가운데 너희만 알았나니 그러므로 내가 너희 모든 죄악을 너희에게 보응하리라고 하셨어요."},
-        {"from":"하나님","to":"아모스","label":"비밀을 보이신 분","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"주 여호와께서는 자기의 비밀을 그 종 선지자들에게 보이지 아니하시고는 결코 행하심이 없으시리라고 해요."},
+        {"from":"하나님","to":"이스라엘 족속","label":"보응하실 분","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"하나님은 모든 민족 중 이스라엘만 특별히 아셨기에 그 죄를 더 엄하게 물으신대요."},
+        {"from":"하나님","to":"아모스","label":"비밀을 보이신 분","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"하나님은 일을 하시기 전에 꼭 예언자들에게 먼저 알려 주신대요."},
         {"from":"사마리아의 부자들","to":"이스라엘 족속","label":"학대한 자","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"그들이 포학과 겁탈을 그들의 궁궐에 쌓는도다 하셨어요."}
       ],
       "places": [
@@ -107,9 +107,9 @@
         {"name":"하나님","role":"만나기를 준비할 분","weight":3}
       ],
       "rels": [
-        {"from":"바산의 암소들","to":"가난한 자","label":"학대한 여인들","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"사마리아의 산에 있는 바산의 암소들아 너희는 힘없는 자를 학대하며 가난한 자를 압제한다고 하셨어요."},
-        {"from":"하나님","to":"이스라엘","label":"경고하신 분","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"이스라엘아 네 하나님 만나기를 준비하라고 하셨어요."},
-        {"from":"이스라엘","to":"하나님","label":"돌아오지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"6-11","note":"내가 기근과 가뭄과 재앙을 보냈으나 너희가 내게로 돌아오지 아니하였다고 다섯 번 거듭 말씀하셨어요."}
+        {"from":"바산의 암소들","to":"가난한 자","label":"학대한 여인들","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"사마리아의 부유한 여인들은 살진 암소처럼 가난한 사람을 짓밟았대요."},
+        {"from":"하나님","to":"이스라엘","label":"경고하신 분","kind":"conflict","directed":true,"weight":3,"verses":"12","note":"이스라엘아, 네 하나님 만날 준비를 하라고 하셨어요."},
+        {"from":"이스라엘","to":"하나님","label":"돌아오지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"6-11","note":"하나님이 여러 번 경고하셨는데도 그들은 돌아오지 않았대요."}
       ],
       "places": [
         {"name":"사마리아의 산","where":"북이스라엘 도성","what":"바산 암소들이 사는 곳","weight":2},
@@ -134,10 +134,10 @@
         {"name":"하나님","role":"정의를 원하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 족속","label":"찾으라 부르신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"너희는 나를 찾으라 그리하면 살리라, 벧엘을 찾지 말라고 하셨어요."},
-        {"from":"이스라엘 족속","to":"가난한 자","label":"밟은 자","kind":"conflict","directed":true,"weight":3,"verses":"11-12","note":"너희가 힘없는 자를 밟고 그에게서 밀의 부당한 세를 거두며 뇌물을 받고 성문에서 가난한 자를 억울하게 한다고 하셨어요."},
-        {"from":"이스라엘 족속","to":"성문에서 책망하는 자","label":"미워한 자","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"무리가 성문에서 책망하는 자를 미워하며 정직히 말하는 자를 싫어한다고 하셨어요."},
-        {"from":"하나님","to":"이스라엘 족속","label":"절기를 미워하심","kind":"conflict","directed":true,"weight":2,"verses":"21-24","note":"내가 너희 절기들을 미워하노라, 오직 정의를 물같이 공의를 마르지 않는 강같이 흐르게 할지어다 하셨어요."}
+        {"from":"하나님","to":"이스라엘 족속","label":"찾으라 부르신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"벧엘의 제단 말고 하나님을 찾아야 산다고 하셨어요."},
+        {"from":"이스라엘 족속","to":"가난한 자","label":"밟은 자","kind":"conflict","directed":true,"weight":3,"verses":"11-12","note":"그들은 가난한 사람을 짓밟고 곡식을 뜯어 가며 뇌물을 받고 법정에서 억울하게 했대요."},
+        {"from":"이스라엘 족속","to":"성문에서 책망하는 자","label":"미워한 자","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"사람들은 바른 소리 하는 사람과 정직하게 말하는 사람을 미워했대요."},
+        {"from":"하나님","to":"이스라엘 족속","label":"절기를 미워하심","kind":"conflict","directed":true,"weight":2,"verses":"21-24","note":"하나님은 겉치레 절기는 싫으시고 정의와 의가 강물처럼 쉬지 않고 흐르길 원하셨어요."}
       ],
       "places": [
         {"name":"성문","where":"재판이 열리는 곳","what":"정의를 세워야 할 곳","weight":3},
@@ -160,9 +160,9 @@
         {"name":"하나님","role":"교만을 미워하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"시온과 사마리아의 지도자","to":"요셉(이스라엘)","label":"근심하지 않은 자","kind":"conflict","directed":true,"weight":3,"verses":"1, 6","note":"시온에서 교만한 자들과 사마리아 산에서 마음이 든든한 자들은 화 있을진저, 요셉의 환난에 대해 근심하지 않는다고 해요."},
-        {"from":"하나님","to":"시온과 사마리아의 지도자","label":"화를 선포하심","kind":"conflict","directed":true,"weight":3,"verses":"1, 7","note":"그들이 이제는 사로잡히는 자 중에 앞서 사로잡히리니 기지개 켜는 자의 떠드는 소리가 그치리라고 해요."},
-        {"from":"일으키실 나라","to":"요셉(이스라엘)","label":"학대할 나라","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"내가 한 나라를 일으켜 너희를 치리니 그들이 하맛 어귀에서부터 아라바 시내까지 너희를 학대하리라고 하셨어요."}
+        {"from":"시온과 사마리아의 지도자","to":"요셉(이스라엘)","label":"근심하지 않은 자","kind":"conflict","directed":true,"weight":3,"verses":"1, 6","note":"편히 놀며 백성의 고통에는 관심 없는 시온과 사마리아의 지도자들은 불행할 거래요."},
+        {"from":"하나님","to":"시온과 사마리아의 지도자","label":"화를 선포하심","kind":"conflict","directed":true,"weight":3,"verses":"1, 7","note":"그렇게 흥청대던 자들이 가장 먼저 포로로 끌려갈 거래요."},
+        {"from":"일으키실 나라","to":"요셉(이스라엘)","label":"학대할 나라","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"하나님은 한 나라를 일으켜 이스라엘 땅 끝에서 끝까지 괴롭히게 하시겠대요."}
       ],
       "places": [
         {"name":"시온과 사마리아","where":"남과 북의 도성","what":"교만한 자들이 사는 곳","weight":2},
@@ -188,9 +188,9 @@
         {"name":"하나님","role":"뜻을 돌이키셨다 다림줄을 두신 분","weight":3}
       ],
       "rels": [
-        {"from":"아모스","to":"하나님","label":"중보한 선지자","kind":"ally","directed":true,"weight":3,"verses":"2, 5","note":"메뚜기와 불 환상에 아모스가 주 여호와여 청하건대 사하소서 야곱이 미약하오니 어떻게 서리이까 하고 중보했어요."},
-        {"from":"하나님","to":"아모스","label":"뜻을 돌이키신 분","kind":"ally","directed":true,"weight":2,"verses":"3, 6","note":"여호와께서 이에 대하여 뜻을 돌이키시고 이것이 이루어지지 아니하리라 하셨어요."},
-        {"from":"아마샤","to":"아모스","label":"쫓아내려 한 제사장","kind":"conflict","directed":true,"weight":3,"verses":"12-13","note":"제사장 아마샤가 선견자야 너는 유다 땅으로 도망하라, 다시는 벧엘에서 예언하지 말라고 했어요."},
+        {"from":"아모스","to":"하나님","label":"중보한 선지자","kind":"ally","directed":true,"weight":3,"verses":"2, 5","note":"메뚜기와 불 환상을 본 아모스는 이스라엘이 너무 작다며 용서해 달라고 빌었어요."},
+        {"from":"하나님","to":"아모스","label":"뜻을 돌이키신 분","kind":"ally","directed":true,"weight":2,"verses":"3, 6","note":"하나님은 그 기도를 듣고 마음을 돌려 그 재앙을 거두셨어요."},
+        {"from":"아마샤","to":"아모스","label":"쫓아내려 한 제사장","kind":"conflict","directed":true,"weight":3,"verses":"12-13","note":"벧엘 제사장 아마샤는 아모스에게 유다로 돌아가 다시는 여기서 예언하지 말라고 했어요."},
         {"from":"아마샤","to":"여로보암","label":"고발한 제사장","kind":"ally","directed":true,"weight":2,"verses":"10-11","note":"아마샤가 여로보암 왕에게 아모스가 왕을 모반한다고 고발했어요."},
         {"from":"아모스","to":"아마샤","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"14-17","note":"아모스가 나는 선지자의 아들도 아니요 목자라, 여호와께서 나를 데려다가 예언하라 하셨다며 아마샤에게 심판을 전했어요."}
       ],
@@ -218,8 +218,8 @@
       ],
       "rels": [
         {"from":"탐욕스러운 상인들","to":"가난한 자와 궁핍한 자","label":"사고판 자","kind":"conflict","directed":true,"weight":3,"verses":"4-6","note":"에바를 작게 하고 세겔을 크게 하며 은으로 가난한 자를 사고 신 한 켤레로 궁핍한 자를 사자 하는 자들이라고 해요."},
-        {"from":"하나님","to":"탐욕스러운 상인들","label":"잊지 않으실 분","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"여호와께서 내가 그들의 모든 행위를 절대로 잊지 아니하리라고 하셨어요."},
-        {"from":"하나님","to":"이스라엘","label":"기근을 보내심","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"내가 기근을 땅에 보내리니 양식이 없어 주림이 아니며 여호와의 말씀을 듣지 못한 기갈이라고 하셨어요."}
+        {"from":"하나님","to":"탐욕스러운 상인들","label":"잊지 않으실 분","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"하나님은 가난한 이를 속인 상인들의 짓을 절대 잊지 않겠다고 하셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"기근을 보내심","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"하나님은 빵이 아니라 하나님 말씀을 들을 수 없는 굶주림을 보내시겠대요."}
       ],
       "places": [
         {"name":"이 바다에서 저 바다까지","where":"온 땅","what":"말씀을 찾아 헤맬 범위","weight":1}
@@ -243,10 +243,10 @@
         {"name":"하나님","role":"무너진 장막을 일으키실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"체로 치시는 분","kind":"conflict","directed":true,"weight":3,"verses":"9","note":"내가 명령하여 이스라엘 족속을 만국 중에서 체질하기를 체로 체질함같이 하려니와 그 낟알 하나도 땅에 떨어지지 아니하리라고 하셨어요."},
-        {"from":"하나님","to":"다윗의 장막","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"11","note":"그날에 내가 다윗의 무너진 장막을 일으키고 그것의 틈을 막으며 옛적과 같이 세우리라고 하셨어요."},
-        {"from":"하나님","to":"이스라엘","label":"다시 심으실 분","kind":"ally","directed":true,"weight":3,"verses":"14-15","note":"내가 내 백성 이스라엘의 사로잡힌 것을 돌이키리니 내가 그들을 그들의 땅에 심으리니 다시 뽑히지 아니하리라고 하셨어요."},
-        {"from":"하나님","to":"구스와 블레셋과 아람","label":"다스리시는 분","kind":"other","directed":true,"weight":1,"verses":"7","note":"내가 이스라엘을 애굽에서, 블레셋 사람을 갑돌에서, 아람 사람을 기르에서 올라오게 하지 아니하였느냐고 하셨어요."}
+        {"from":"하나님","to":"이스라엘","label":"체로 치시는 분","kind":"conflict","directed":true,"weight":3,"verses":"9","note":"하나님은 체로 곡식을 거르듯 이스라엘을 흔드시되 알곡 하나도 땅에 떨어지지 않게 하시겠대요."},
+        {"from":"하나님","to":"다윗의 장막","label":"일으키실 분","kind":"ally","directed":true,"weight":3,"verses":"11","note":"그날 하나님은 무너진 다윗의 집을 다시 세워 옛날처럼 만드시겠대요."},
+        {"from":"하나님","to":"이스라엘","label":"다시 심으실 분","kind":"ally","directed":true,"weight":3,"verses":"14-15","note":"하나님은 포로들을 돌아오게 해 땅에 심고 다시는 뽑히지 않게 하시겠대요."},
+        {"from":"하나님","to":"구스와 블레셋과 아람","label":"다스리시는 분","kind":"other","directed":true,"weight":1,"verses":"7","note":"이스라엘을 이집트에서 이끄셨듯 다른 민족들의 이동도 하나님이 하셨대요."}
       ],
       "places": [
         {"name":"제단 곁","where":"벧엘의 성소","what":"주께서 서신 곳","weight":2},
