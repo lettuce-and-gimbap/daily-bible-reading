@@ -24,10 +24,10 @@
         {"name":"하나님","role":"모든 위로의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"바울","label":"위로하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"고린도 교회","label":"아끼는 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"디모데","label":"함께 쓴 형제","kind":"ally","directed":false,"weight":1},
-        {"from":"성령","to":"고린도 교회","label":"보증하신 영","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"바울","label":"위로하신 분","kind":"ally","directed":true,"weight":3,"verses":"3-4","note":"모든 위로의 하나님이 우리의 모든 환난 중에서 우리를 위로하사 환난 중에 있는 자들을 위로하게 하신다고 해요."},
+        {"from":"바울","to":"고린도 교회","label":"아끼는 사도","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"내가 다시 고린도에 가지 아니한 것은 너희를 아끼려 함이라, 우리는 너희 기쁨을 돕는 자가 된다고 해요."},
+        {"from":"바울","to":"디모데","label":"함께 쓴 형제","kind":"ally","directed":false,"weight":1,"verses":"1","note":"하나님의 뜻으로 사도 된 바울과 형제 디모데가 함께 편지했어요."},
+        {"from":"성령","to":"고린도 교회","label":"보증하신 영","kind":"ally","directed":true,"weight":2,"verses":"22","note":"그가 우리에게 인치시고 보증으로 우리 마음에 성령을 주셨다고 해요."}
       ],
       "places": [
         {"name":"아시아","where":"소아시아","what":"살 소망이 끊어진 곳","weight":2},
@@ -53,11 +53,11 @@
         {"name":"하나님","role":"이기게 하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"고린도 성도","label":"넘치는 사랑","kind":"ally","directed":true,"weight":3},
-        {"from":"고린도 성도","to":"근심하게 한 자","label":"용서할 대상","kind":"ally","directed":true,"weight":2},
-        {"from":"사탄","to":"고린도 성도","label":"속이려는 자","kind":"conflict","directed":true,"weight":1},
-        {"from":"바울","to":"디도","label":"기다린 동역자","kind":"ally","directed":false,"weight":2},
-        {"from":"하나님","to":"바울","label":"이기게 하심","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"고린도 성도","label":"넘치는 사랑","kind":"ally","directed":true,"weight":3,"verses":"4","note":"내가 큰 환난과 애통한 마음이 있어 많은 눈물로 너희에게 썼노니 이는 너희를 향하여 넘치는 사랑이 있음을 알게 하려 함이라고 해요."},
+        {"from":"고린도 성도","to":"근심하게 한 자","label":"용서할 대상","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"너희는 차라리 그를 용서하고 위로할 것이니 너희가 사랑을 그들에게 나타내라고 해요."},
+        {"from":"사탄","to":"고린도 성도","label":"속이려는 자","kind":"conflict","directed":true,"weight":1,"verses":"11","note":"이는 우리로 사탄에게 속지 않게 하려 함이라 우리가 그 계책을 알지 못하는 바가 아니라고 해요."},
+        {"from":"바울","to":"디도","label":"기다린 동역자","kind":"ally","directed":false,"weight":2,"verses":"12-13","note":"드로아에 이르매 내 형제 디도를 만나지 못하므로 내 심령이 편하지 못하여 마게도냐로 갔다고 해요."},
+        {"from":"하나님","to":"바울","label":"이기게 하심","kind":"ally","directed":true,"weight":2,"verses":"14","note":"항상 우리를 그리스도 안에서 이기게 하시고 우리로 말미암아 그리스도를 아는 냄새를 나타내시는 하나님께 감사한다고 해요."}
       ],
       "places": [
         {"name":"드로아","where":"소아시아 서쪽 항구","what":"디도를 못 만난 곳","weight":2},
@@ -83,10 +83,10 @@
         {"name":"하나님","role":"만족을 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"고린도 성도","to":"바울","label":"추천서가 된 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"고린도 성도","label":"마음에 쓰심","kind":"ally","directed":true,"weight":3},
-        {"from":"모세","to":"이스라엘 자손","label":"수건을 쓴 인도자","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"바울","label":"일꾼 삼으심","kind":"ally","directed":true,"weight":2}
+        {"from":"고린도 성도","to":"바울","label":"추천서가 된 이들","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"너희는 우리의 편지라, 먹으로 쓴 것이 아니요 살아 계신 하나님의 영으로 쓴 그리스도의 편지라고 해요."},
+        {"from":"성령","to":"고린도 성도","label":"마음에 쓰심","kind":"ally","directed":true,"weight":3,"verses":"3, 18","note":"돌판이 아니라 육의 마음판에 쓰셨고, 주의 영으로 말미암아 영광에서 영광에 이르게 하신다고 해요."},
+        {"from":"모세","to":"이스라엘 자손","label":"수건을 쓴 인도자","kind":"ally","directed":true,"weight":2,"verses":"13","note":"모세가 수건을 자기 얼굴에 쓴 것처럼 이스라엘 자손이 없어질 것의 결국을 주목하지 못하게 하였다고 해요."},
+        {"from":"하나님","to":"바울","label":"일꾼 삼으심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"그가 또한 우리를 새 언약의 일꾼이 되기에 만족하게 하셨으니 율법 조문으로 하지 아니하고 영으로 함이라고 해요."}
       ],
       "places": [
         {"name":"돌판","where":"시내 산 율법","what":"조문을 새긴 곳","weight":1}
@@ -110,10 +110,10 @@
         {"name":"하나님","role":"빛을 비추신 분","weight":3}
       ],
       "rels": [
-        {"from":"이 세상의 신","to":"믿지 않는 자들","label":"혼미하게 함","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"바울","label":"마음에 빛을 비춤","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"고린도 성도","label":"생명을 전함","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"예수","label":"죽음을 짊어짐","kind":"ally","directed":true,"weight":2}
+        {"from":"이 세상의 신","to":"믿지 않는 자들","label":"혼미하게 함","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"이 세상의 신이 믿지 아니하는 자들의 마음을 혼미하게 하여 그리스도의 영광의 복음의 광채가 비치지 못하게 했다고 해요."},
+        {"from":"하나님","to":"바울","label":"마음에 빛을 비춤","kind":"ally","directed":true,"weight":3,"verses":"6","note":"어두운 데에 빛이 비치라 말씀하셨던 그 하나님께서 우리 마음에 비추셨다고 해요."},
+        {"from":"바울","to":"고린도 성도","label":"생명을 전함","kind":"ally","directed":true,"weight":2,"verses":"12, 15","note":"사망은 우리 안에서 역사하고 생명은 너희 안에서 역사하나니, 모든 것은 너희를 위함이라고 해요."},
+        {"from":"바울","to":"예수","label":"죽음을 짊어짐","kind":"ally","directed":true,"weight":2,"verses":"10","note":"우리가 항상 예수의 죽음을 몸에 짊어짐은 예수의 생명도 우리 몸에 나타나게 하려 함이라고 해요."}
       ],
       "places": [
         {"name":"질그릇","where":"흙으로 빚은 그릇","what":"연약한 몸의 비유","weight":1}
@@ -136,10 +136,10 @@
         {"name":"하나님","role":"화목하게 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"고린도 성도","label":"화목하게 하심","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"고린도 성도","label":"화목을 간청","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"바울","label":"사랑으로 강권","kind":"ally","directed":true,"weight":2},
-        {"from":"성령","to":"바울","label":"보증하신 영","kind":"ally","directed":true,"weight":1}
+        {"from":"하나님","to":"고린도 성도","label":"화목하게 하심","kind":"ally","directed":true,"weight":3,"verses":"18-19","note":"하나님이 그리스도로 말미암아 우리를 자기와 화목하게 하시고 우리에게 화목하게 하는 직분을 주셨다고 해요."},
+        {"from":"바울","to":"고린도 성도","label":"화목을 간청","kind":"ally","directed":true,"weight":3,"verses":"20","note":"우리가 그리스도를 대신하여 간청하노니 너희는 하나님과 화목하라고 해요."},
+        {"from":"예수","to":"바울","label":"사랑으로 강권","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그리스도의 사랑이 우리를 강권하시는도다 하고 해요."},
+        {"from":"성령","to":"바울","label":"보증하신 영","kind":"ally","directed":true,"weight":1,"verses":"5","note":"곧 이것을 우리에게 이루게 하시고 보증으로 성령을 우리에게 주신 이는 하나님이시라고 해요."}
       ],
       "places": [
         {"name":"하늘의 집","where":"하나님이 지으신 처소","what":"영원한 집","weight":2}
@@ -164,10 +164,10 @@
         {"name":"하나님","role":"아버지가 되실 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"고린도 성도","label":"마음을 엶","kind":"ally","directed":true,"weight":3},
-        {"from":"고린도 성도","to":"믿지 않는 자","label":"멍에를 메지 말 것","kind":"conflict","directed":false,"weight":2},
-        {"from":"하나님","to":"고린도 성도","label":"아버지","kind":"family","directed":true,"weight":3},
-        {"from":"예수","to":"벨리알","label":"조화 없음","kind":"conflict","directed":false,"weight":1}
+        {"from":"바울","to":"고린도 성도","label":"마음을 엶","kind":"ally","directed":true,"weight":3,"verses":"11-13","note":"고린도인들이여 너희를 향하여 우리의 입이 열리고 우리의 마음이 넓어졌으니 너희도 마음을 넓히라고 해요."},
+        {"from":"고린도 성도","to":"믿지 않는 자","label":"멍에를 메지 말 것","kind":"conflict","directed":false,"weight":2,"verses":"14","note":"너희는 믿지 않는 자와 멍에를 함께 메지 말라 의와 불법이 어찌 함께하며 빛과 어둠이 어찌 사귀겠느냐고 해요."},
+        {"from":"하나님","to":"고린도 성도","label":"아버지","kind":"family","directed":true,"weight":3,"verses":"18","note":"나는 너희에게 아버지가 되고 너희는 내게 자녀가 되리라 하셨다고 해요."},
+        {"from":"예수","to":"벨리알","label":"조화 없음","kind":"conflict","directed":false,"weight":1,"verses":"15","note":"그리스도와 벨리알이 어찌 조화되겠느냐고 해요."}
       ],
       "places": [
         {"name":"하나님의 성전","where":"성도들","what":"살아 계신 하나님이 거하시는 곳","weight":2}
@@ -189,10 +189,10 @@
         {"name":"하나님","role":"낙심한 자를 위로하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"디도","to":"바울","label":"위로를 전함","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"바울","label":"위로하신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"고린도 성도","to":"디도","label":"떨며 영접함","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"고린도 성도","label":"신뢰하게 됨","kind":"ally","directed":true,"weight":3}
+        {"from":"디도","to":"바울","label":"위로를 전함","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"낙심한 자들을 위로하시는 하나님이 디도가 옴으로 우리를 위로하셨고, 그가 너희의 사모함과 열심을 전했다고 해요."},
+        {"from":"하나님","to":"바울","label":"위로하신 분","kind":"ally","directed":true,"weight":2,"verses":"6","note":"하나님이 낙심한 자들을 위로하셨다고 해요."},
+        {"from":"고린도 성도","to":"디도","label":"떨며 영접함","kind":"ally","directed":true,"weight":2,"verses":"15","note":"디도는 너희가 두려움과 떨림으로 자기를 영접하여 순종한 것을 생각하고 너희를 향한 심정이 더욱 깊어졌다고 해요."},
+        {"from":"바울","to":"고린도 성도","label":"신뢰하게 됨","kind":"ally","directed":true,"weight":3,"verses":"16","note":"내가 모든 일에 너희를 신뢰하게 된 것을 기뻐한다고 해요."}
       ],
       "places": [
         {"name":"마게도냐","where":"북쪽 지방","what":"디도를 만난 곳","weight":2}
@@ -217,11 +217,11 @@
         {"name":"예수","role":"가난하게 되신 주","weight":3}
       ],
       "rels": [
-        {"from":"마게도냐 교회들","to":"예루살렘 성도","label":"연보한 교회","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"고린도 성도","label":"연보를 권함","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"디도","label":"보낸 동역자","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"고린도 성도","label":"부요하게 하심","kind":"ally","directed":true,"weight":3},
-        {"from":"디도","to":"칭찬받는 형제","label":"함께 간 이","kind":"ally","directed":false,"weight":1}
+        {"from":"마게도냐 교회들","to":"예루살렘 성도","label":"연보한 교회","kind":"ally","directed":true,"weight":3,"verses":"1-4","note":"마게도냐 교회들이 환난의 많은 시련 가운데서 극심한 가난 중에도 넘치도록 연보하여 성도 섬기는 일에 참여하기를 간청했어요."},
+        {"from":"바울","to":"고린도 성도","label":"연보를 권함","kind":"ally","directed":true,"weight":3,"verses":"7, 11","note":"너희가 믿음과 말과 지식에 풍성한 것같이 이 은혜에도 풍성하게 하라, 이제는 하던 일을 성취하라고 해요."},
+        {"from":"바울","to":"디도","label":"보낸 동역자","kind":"ally","directed":true,"weight":2,"verses":"6, 16-17","note":"우리가 디도를 권하여 너희 중에서 이 은혜를 성취하게 하였고 그는 자원하여 너희에게 갔다고 해요."},
+        {"from":"예수","to":"고린도 성도","label":"부요하게 하심","kind":"ally","directed":true,"weight":3,"verses":"9","note":"부요하신 이로서 너희를 위하여 가난하게 되심은 그의 가난함으로 너희를 부요하게 하려 하심이라고 해요."},
+        {"from":"디도","to":"칭찬받는 형제","label":"함께 간 이","kind":"ally","directed":false,"weight":1,"verses":"18","note":"복음으로써 모든 교회에서 칭찬을 받는 형제를 디도와 함께 보내었다고 해요."}
       ],
       "places": [
         {"name":"마게도냐","where":"북쪽 지방","what":"풍성한 연보의 교회들","weight":2},
@@ -246,10 +246,10 @@
         {"name":"하나님","role":"즐겨 내는 자를 사랑하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"고린도 성도","label":"자랑한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"고린도 성도","label":"은혜를 넘치게","kind":"ally","directed":true,"weight":3},
-        {"from":"예루살렘 성도","to":"고린도 성도","label":"위해 간구함","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"마게도냐인들","label":"자랑한 대상","kind":"ally","directed":true,"weight":1}
+        {"from":"바울","to":"고린도 성도","label":"자랑한 사도","kind":"ally","directed":true,"weight":3,"verses":"2","note":"너희가 일 년 전부터 준비하였다고 내가 마게도냐인들에게 너희를 자랑하였다고 해요."},
+        {"from":"하나님","to":"고린도 성도","label":"은혜를 넘치게","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"하나님은 즐겨 내는 자를 사랑하시며 모든 은혜를 너희에게 넘치게 하실 수 있다고 해요."},
+        {"from":"예루살렘 성도","to":"고린도 성도","label":"위해 간구함","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그들도 너희를 위하여 간구하며 너희에게 주신 지극한 은혜로 말미암아 너희를 사모한다고 해요."},
+        {"from":"바울","to":"마게도냐인들","label":"자랑한 대상","kind":"ally","directed":true,"weight":1,"verses":"2-4","note":"바울은 마게도냐인들에게 아가야 교회를 자랑했으니 부끄럽지 않게 준비하라고 해요."}
       ],
       "places": [
         {"name":"아가야","where":"고린도가 있는 지방","what":"일 년 전부터 준비한 곳","weight":2},
@@ -274,10 +274,10 @@
         {"name":"하나님","role":"한계를 정하신 분","weight":2}
       ],
       "rels": [
-        {"from":"어떤 사람들","to":"바울","label":"약하다 비난함","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"자기를 칭찬하는 자","label":"비교를 거부함","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"고린도 성도","label":"권한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"바울","label":"칭찬하실 주","kind":"ally","directed":true,"weight":1}
+        {"from":"어떤 사람들","to":"바울","label":"약하다 비난함","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"그들의 말이 그의 편지들은 무게 있고 힘이 있으나 그가 몸으로 대할 때는 약하고 그 말도 시원하지 않다 한다고 해요."},
+        {"from":"바울","to":"자기를 칭찬하는 자","label":"비교를 거부함","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"우리는 자기를 칭찬하는 어떤 자와 더불어 감히 짝하며 비교할 수 없노라고 해요."},
+        {"from":"바울","to":"고린도 성도","label":"권한 사도","kind":"ally","directed":true,"weight":3,"verses":"1","note":"그리스도의 온유와 관용으로 친히 너희를 권하고 해요."},
+        {"from":"예수","to":"바울","label":"칭찬하실 주","kind":"ally","directed":true,"weight":1,"verses":"18","note":"옳다 인정함을 받는 자는 자기를 칭찬하는 자가 아니요 오직 주께서 칭찬하는 자라고 해요."}
       ],
       "places": [
         {"name":"고린도","where":"아가야의 도시","what":"바울의 한계 안에 든 곳","weight":1}
@@ -302,11 +302,11 @@
         {"name":"예수","role":"남편이신 그리스도","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"고린도 성도","label":"그리스도께 중매","kind":"ally","directed":true,"weight":3},
-        {"from":"거짓 사도들","to":"고린도 성도","label":"미혹하는 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"사탄","to":"거짓 사도들","label":"가장의 본","kind":"other","directed":true,"weight":2},
-        {"from":"아레다 왕의 고관","to":"바울","label":"잡으려 함","kind":"conflict","directed":true,"weight":1},
-        {"from":"예수","to":"고린도 성도","label":"신랑","kind":"family","directed":true,"weight":2}
+        {"from":"바울","to":"고린도 성도","label":"그리스도께 중매","kind":"ally","directed":true,"weight":3,"verses":"2","note":"내가 너희를 정결한 처녀로 한 남편인 그리스도께 드리려고 중매함이로다 하고 해요."},
+        {"from":"거짓 사도들","to":"고린도 성도","label":"미혹하는 자","kind":"conflict","directed":true,"weight":3,"verses":"4, 13","note":"저런 사람들은 거짓 사도요 속이는 일꾼이니 자기를 그리스도의 사도로 가장하는 자들이라고 해요."},
+        {"from":"사탄","to":"거짓 사도들","label":"가장의 본","kind":"other","directed":true,"weight":2,"verses":"14-15","note":"사탄도 자기를 광명의 천사로 가장하나니 그 일꾼들도 의의 일꾼으로 가장한다고 해요."},
+        {"from":"아레다 왕의 고관","to":"바울","label":"잡으려 함","kind":"conflict","directed":true,"weight":1,"verses":"32-33","note":"다메섹에서 아레다 왕의 고관이 나를 잡으려고 성을 지켰으나 내가 광주리를 타고 들창문으로 내려가 피했다고 해요."},
+        {"from":"예수","to":"고린도 성도","label":"신랑","kind":"family","directed":true,"weight":2,"verses":"2","note":"그리스도는 성도들의 한 남편이라고 해요."}
       ],
       "places": [
         {"name":"다메섹","where":"수리아의 도시","what":"광주리로 도망한 곳","weight":2},
@@ -331,10 +331,10 @@
         {"name":"예수","role":"은혜가 족하다 하신 주","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"바울","label":"은혜가 족하다","kind":"ally","directed":true,"weight":3},
-        {"from":"사탄의 사자","to":"바울","label":"괴롭히는 가시","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"고린도 성도","label":"너희를 구함","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"디도","label":"보낸 동역자","kind":"ally","directed":true,"weight":1}
+        {"from":"예수","to":"바울","label":"은혜가 족하다","kind":"ally","directed":true,"weight":3,"verses":"9","note":"주께서 내 은혜가 네게 족하도다 이는 내 능력이 약한 데서 온전하여짐이라 하셨다고 해요."},
+        {"from":"사탄의 사자","to":"바울","label":"괴롭히는 가시","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"여러 계시를 받은 것이 지극히 크므로 너무 자만하지 않게 하시려고 내 육체에 가시 곧 사탄의 사자를 주셨다고 해요."},
+        {"from":"바울","to":"고린도 성도","label":"너희를 구함","kind":"ally","directed":true,"weight":3,"verses":"14-15","note":"내가 구하는 것은 너희의 재물이 아니요 오직 너희라, 너희 영혼을 위하여 재물을 사용하고 내 자신까지도 내어 주리라고 해요."},
+        {"from":"바울","to":"디도","label":"보낸 동역자","kind":"ally","directed":true,"weight":1,"verses":"18","note":"내가 디도를 권하고 함께 한 형제를 보내었노니 디도가 너희의 이득을 취하더냐고 물어요."}
       ],
       "places": [
         {"name":"셋째 하늘","where":"낙원","what":"이끌려 간 곳","weight":2}
@@ -357,10 +357,10 @@
         {"name":"하나님","role":"사랑의 하나님","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"고린도 성도","label":"세우려는 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"고린도 성도","label":"안에 계신 주","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"고린도 성도","label":"교통하심","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"살리신 능력","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"고린도 성도","label":"세우려는 사도","kind":"ally","directed":true,"weight":3,"verses":"10","note":"주께서 너희를 무너뜨리려 하지 않고 세우려 하여 내게 주신 권한을 따라 엄하게 대하지 않으려 한다고 해요."},
+        {"from":"예수","to":"고린도 성도","label":"안에 계신 주","kind":"ally","directed":true,"weight":3,"verses":"5","note":"예수 그리스도께서 너희 안에 계신 줄을 너희가 스스로 알지 못하느냐고 해요."},
+        {"from":"성령","to":"고린도 성도","label":"교통하심","kind":"ally","directed":true,"weight":2,"verses":"13","note":"주 예수 그리스도의 은혜와 하나님의 사랑과 성령의 교통하심이 너희 무리와 함께 있을지어다 하고 축복해요."},
+        {"from":"하나님","to":"예수","label":"살리신 능력","kind":"ally","directed":true,"weight":2,"verses":"4","note":"그리스도께서 약하심으로 십자가에 못 박히셨으나 하나님의 능력으로 살아 계신다고 해요."}
       ],
       "places": [
         {"name":"고린도","where":"아가야의 도시","what":"세 번째로 갈 교회","weight":2}
