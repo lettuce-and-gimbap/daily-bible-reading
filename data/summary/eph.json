@@ -22,11 +22,11 @@
         {"name":"하나님","role":"영광의 아버지","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"에베소 성도들","label":"창세 전에 택하심","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"에베소 성도들","label":"피로 속량하심","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"에베소 성도들","label":"인치신 영","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"에베소 성도들","label":"위해 기도함","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"오른편에 앉히심","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"에베소 성도들","label":"창세 전에 택하심","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"하나님은 세상을 만드시기 전부터 그리스도 안에서 그들을 골라, 사랑으로 자녀 삼기로 정하셨어요."},
+        {"from":"예수","to":"에베소 성도들","label":"피로 속량하심","kind":"ally","directed":true,"weight":3,"verses":"7","note":"그리스도의 피로 그들은 죄를 용서받고 값을 치르고 풀려났어요."},
+        {"from":"성령","to":"에베소 성도들","label":"인치신 영","kind":"ally","directed":true,"weight":2,"verses":"13-14","note":"복음을 믿었을 때 약속된 성령으로 도장 찍히셨고, 성령은 받을 유산의 보증이 되셨어요."},
+        {"from":"바울","to":"에베소 성도들","label":"위해 기도함","kind":"ally","directed":true,"weight":2,"verses":"16-18","note":"바울은 쉬지 않고 감사하며, 그들이 하나님을 더 깊이 알고 소망을 깨닫도록 기도했어요."},
+        {"from":"하나님","to":"예수","label":"오른편에 앉히심","kind":"ally","directed":true,"weight":2,"verses":"20","note":"하나님은 그리스도를 죽은 사람들 가운데서 살리시고 하늘에서 자기 오른편에 앉히셨어요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"편지를 받는 교회","weight":3},
@@ -53,11 +53,11 @@
         {"name":"하나님","role":"긍휼이 풍성하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"에베소 성도들","label":"함께 살리심","kind":"ally","directed":true,"weight":3},
-        {"from":"공중의 권세 잡은 자","to":"에베소 성도들","label":"따르게 한 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"이방인들","label":"막힌 담을 허심","kind":"ally","directed":true,"weight":3},
-        {"from":"이방인들","to":"이스라엘","label":"한 몸이 됨","kind":"ally","directed":false,"weight":2},
-        {"from":"성령","to":"에베소 성도들","label":"처소로 지으심","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"에베소 성도들","label":"함께 살리심","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"허물로 죽었던 그들을 하나님은 큰 사랑으로 그리스도와 함께 살리시고 함께 하늘에 앉히셨어요."},
+        {"from":"공중의 권세 잡은 자","to":"에베소 성도들","label":"따르게 한 자","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"예전에 그들은 세상 풍조와 공중의 권세 잡은 자, 곧 불순종하는 자들 속에서 일하는 영을 따랐어요."},
+        {"from":"예수","to":"이방인들","label":"막힌 담을 허심","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"멀리 있던 이방인들이 그리스도의 피로 가까워졌고, 그분이 둘 사이의 막힌 담을 허무셨어요."},
+        {"from":"이방인들","to":"이스라엘","label":"한 몸이 됨","kind":"ally","directed":false,"weight":2,"verses":"15-16","note":"그리스도는 두 무리를 자기 안에서 하나의 새 사람으로 만들어 한 몸으로 하나님과 화해시키셨어요."},
+        {"from":"성령","to":"에베소 성도들","label":"처소로 지으심","kind":"ally","directed":true,"weight":2,"verses":"22","note":"그들도 함께 지어져 성령 안에서 하나님이 머무실 집이 되어 간다고 해요."}
       ],
       "places": [
         {"name":"하나님의 처소","where":"성도들로 지어진 성전","what":"함께 지어져 가는 곳","weight":2}
@@ -82,10 +82,10 @@
         {"name":"하나님","role":"이름을 주신 아버지","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"이방인들","label":"비밀을 전함","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"하나님","label":"무릎 꿇고 기도","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"에베소 성도들","label":"강건케 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"에베소 성도들","label":"마음에 계심","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"이방인들","label":"비밀을 전함","kind":"ally","directed":true,"weight":3,"verses":"6, 8","note":"이방인도 함께 상속자가 된다는 감춰진 비밀을 전하는 일이 가장 작은 자인 바울에게 맡겨졌어요."},
+        {"from":"바울","to":"하나님","label":"무릎 꿇고 기도","kind":"ally","directed":true,"weight":3,"verses":"14","note":"이 때문에 바울은 아버지 앞에 무릎을 꿇고 기도한다고 해요."},
+        {"from":"성령","to":"에베소 성도들","label":"강건케 하심","kind":"ally","directed":true,"weight":2,"verses":"16","note":"하나님이 성령으로 그들의 속사람을 능력 있게 강하게 해 주시기를 바울이 구했어요."},
+        {"from":"예수","to":"에베소 성도들","label":"마음에 계심","kind":"ally","directed":true,"weight":2,"verses":"17","note":"그리스도가 믿음으로 그들 마음에 머무시고, 그들이 사랑에 뿌리내리기를 바랐어요."}
       ],
       "places": [
         {"name":"하늘에 있는 곳","where":"하늘의 영역","what":"권세들이 지혜를 보는 곳","weight":1}
@@ -111,11 +111,11 @@
         {"name":"하나님","role":"한 분이신 아버지","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"에베소 성도들","label":"권한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"사도와 선지자와 목사와 교사","label":"직분을 주심","kind":"ally","directed":true,"weight":2},
-        {"from":"사도와 선지자와 목사와 교사","to":"에베소 성도들","label":"온전케 함","kind":"ally","directed":true,"weight":2},
-        {"from":"성령","to":"에베소 성도들","label":"하나 되게 하심","kind":"ally","directed":true,"weight":3},
-        {"from":"마귀","to":"에베소 성도들","label":"틈을 노림","kind":"conflict","directed":true,"weight":1}
+        {"from":"바울","to":"에베소 성도들","label":"권한 사도","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"갇힌 바울은 부르심에 걸맞게 겸손하고 온유하게, 서로 참아 주며 하나 됨을 지키라고 권했어요."},
+        {"from":"예수","to":"사도와 선지자와 목사와 교사","label":"직분을 주심","kind":"ally","directed":true,"weight":2,"verses":"11","note":"그리스도께서 어떤 사람은 사도로, 어떤 사람은 선지자, 복음 전하는 자, 목사와 교사로 세우셨어요."},
+        {"from":"사도와 선지자와 목사와 교사","to":"에베소 성도들","label":"온전케 함","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"그들의 일은 성도들을 준비시켜 섬기게 하고 그리스도의 몸을 세워 가는 거예요."},
+        {"from":"성령","to":"에베소 성도들","label":"하나 되게 하심","kind":"ally","directed":true,"weight":3,"verses":"3-4, 30","note":"성령이 이루신 하나 됨을 지키고, 구원의 날을 위해 도장 찍어 주신 성령을 슬프게 하지 말라고 해요."},
+        {"from":"마귀","to":"에베소 성도들","label":"틈을 노림","kind":"conflict","directed":true,"weight":1,"verses":"26-27","note":"화가 나도 죄짓지 말고 해 지기 전에 풀어서, 마귀에게 틈을 주지 말라고 해요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"편지를 받는 교회","weight":1}
@@ -142,11 +142,11 @@
         {"name":"하나님","role":"본받을 아버지","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"교회","label":"자신을 주심","kind":"ally","directed":true,"weight":3},
-        {"from":"남편들","to":"아내들","label":"부부","kind":"family","directed":false,"weight":2},
-        {"from":"성령","to":"에베소 성도들","label":"충만케 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"에베소 성도들","to":"하나님","label":"사랑받는 자녀","kind":"family","directed":true,"weight":2},
-        {"from":"바울","to":"에베소 성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"교회","label":"자신을 주심","kind":"ally","directed":true,"weight":3,"verses":"25-27","note":"그리스도는 교회를 사랑해 자신을 내주셨고, 말씀으로 깨끗하게 씻어 거룩하게 하셨어요."},
+        {"from":"남편들","to":"아내들","label":"부부","kind":"family","directed":false,"weight":2,"verses":"22, 25, 33","note":"아내는 남편을 주님께 하듯 존중하고, 남편은 그리스도가 교회를 사랑하듯 아내를 사랑하라고 해요."},
+        {"from":"성령","to":"에베소 성도들","label":"충만케 하심","kind":"ally","directed":true,"weight":2,"verses":"18","note":"술 취해 방탕하지 말고 오직 성령으로 가득 채움을 받으라고 해요."},
+        {"from":"에베소 성도들","to":"하나님","label":"사랑받는 자녀","kind":"family","directed":true,"weight":2,"verses":"1","note":"사랑받는 자녀답게 하나님을 본받는 사람이 되라고 해요."},
+        {"from":"바울","to":"에베소 성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"8, 15","note":"전에는 어둠이었지만 이제 주 안에서 빛이니, 빛의 자녀답게 지혜롭게 살라고 권했어요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"편지를 받는 교회","weight":1}
@@ -174,11 +174,11 @@
         {"name":"하나님","role":"전신 갑주를 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"자녀들","to":"아비들","label":"순종할 자녀","kind":"family","directed":true,"weight":2},
-        {"from":"종들","to":"상전들","label":"섬기는 관계","kind":"other","directed":true,"weight":1},
-        {"from":"마귀","to":"바울","label":"간계로 대적","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"바울","label":"전신 갑주를 주심","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"두기고","label":"보낸 동역자","kind":"ally","directed":true,"weight":2}
+        {"from":"자녀들","to":"아비들","label":"순종할 자녀","kind":"family","directed":true,"weight":2,"verses":"1, 4","note":"자녀는 주 안에서 부모에게 순종하고, 부모는 자녀를 화나게 하지 말고 주님의 교훈으로 기르라고 해요."},
+        {"from":"종들","to":"상전들","label":"섬기는 관계","kind":"other","directed":true,"weight":1,"verses":"5, 9","note":"종은 그리스도께 하듯 진심으로 섬기고, 상전도 하늘에 같은 주인이 계심을 알고 위협하지 말라고 해요."},
+        {"from":"마귀","to":"바울","label":"간계로 대적","kind":"conflict","directed":true,"weight":3,"verses":"11-12","note":"우리의 싸움은 사람과의 싸움이 아니라 마귀의 꾀와 악한 영들과의 싸움이라고 해요."},
+        {"from":"하나님","to":"바울","label":"전신 갑주를 주심","kind":"ally","directed":true,"weight":2,"verses":"13-17","note":"그래서 하나님이 주시는 전신 갑주, 곧 진리와 의와 믿음과 말씀으로 무장하라고 해요."},
+        {"from":"바울","to":"두기고","label":"보낸 동역자","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"바울은 사랑하는 형제이자 신실한 일꾼 두기고를 보내 자기 형편을 알리고 그들을 위로하게 했어요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"두기고를 보낸 교회","weight":1}

@@ -27,11 +27,11 @@
         {"name":"하나님","role":"능력과 사랑의 마음을 주신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"사랑하는 아들","kind":"family","directed":true,"weight":3},
-        {"from":"유니게","to":"디모데","label":"어머니","kind":"family","directed":true,"weight":2},
-        {"from":"로이스","to":"유니게","label":"어머니","kind":"family","directed":true,"weight":1},
-        {"from":"부겔로","to":"바울","label":"버린 이","kind":"conflict","directed":true,"weight":1},
-        {"from":"오네시보로","to":"바울","label":"부지런히 찾음","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"디모데","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"2-4","note":"바울은 사랑하는 아들 디모데를 밤낮 기억하며, 그의 눈물을 떠올리고 다시 보기를 원했어요."},
+        {"from":"유니게","to":"디모데","label":"어머니","kind":"family","directed":true,"weight":2,"verses":"5","note":"디모데의 거짓 없는 믿음은 어머니 유니게에게서 이어진 것이에요."},
+        {"from":"로이스","to":"유니게","label":"어머니","kind":"family","directed":true,"weight":1,"verses":"5","note":"그 믿음은 먼저 외할머니 로이스에게 있었고 어머니 유니게에게 있었어요."},
+        {"from":"부겔로","to":"바울","label":"버린 이","kind":"conflict","directed":true,"weight":1,"verses":"15","note":"아시아에 있는 모든 사람이 바울을 떠났는데, 부겔로와 허모게네도 그중에 있었어요."},
+        {"from":"오네시보로","to":"바울","label":"부지런히 찾음","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"오네시보로는 갇힌 바울을 부끄러워하지 않고 로마에서 애써 찾아와 자주 위로했어요."}
       ],
       "places": [
         {"name":"아시아","where":"소아시아","what":"바울을 버린 사람들","weight":1},
@@ -61,11 +61,11 @@
         {"name":"하나님","role":"미쁘신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"내 아들","kind":"family","directed":true,"weight":3},
-        {"from":"디모데","to":"충성된 사람들","label":"부탁할 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1},
-        {"from":"후메내오","to":"디모데","label":"믿음을 무너뜨림","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1}
+        {"from":"바울","to":"디모데","label":"내 아들","kind":"family","directed":true,"weight":3,"verses":"1, 3","note":"내 아들아, 그리스도 안의 은혜로 강해지고 좋은 군사처럼 함께 고난을 견디라고 해요."},
+        {"from":"디모데","to":"충성된 사람들","label":"부탁할 이들","kind":"ally","directed":true,"weight":2,"verses":"2","note":"바울에게 들은 것을 다른 사람도 가르칠 수 있는 신실한 사람들에게 맡기라고 해요."},
+        {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1,"verses":"17-18","note":"후메내오와 빌레도는 부활이 이미 지나갔다고 하며 진리에서 벗어났어요."},
+        {"from":"후메내오","to":"디모데","label":"믿음을 무너뜨림","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"그들의 말은 독처럼 퍼져 어떤 사람들의 믿음을 무너뜨렸으니 디모데가 경계해야 했어요."},
+        {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1,"verses":"8","note":"다윗의 자손으로 오셔서 죽은 자 가운데서 살아나신 예수 그리스도를 기억하라고 해요."}
       ],
       "places": [
         {"name":"큰 집","where":"비유 속 집","what":"그릇들의 비유","weight":1}
@@ -90,10 +90,10 @@
         {"name":"하나님","role":"성경을 감동하신 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"본을 보인 스승","kind":"ally","directed":true,"weight":3},
-        {"from":"말세의 사람들","to":"하나님","label":"능력을 부인함","kind":"conflict","directed":true,"weight":2},
-        {"from":"얀네와 얌브레","to":"모세","label":"대적한 이들","kind":"conflict","directed":true,"weight":1},
-        {"from":"하나님","to":"디모데","label":"성경으로 온전케 함","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"디모데","label":"본을 보인 스승","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"디모데는 바울의 가르침과 삶, 믿음과 사랑, 박해받은 일까지 가까이서 보고 따랐어요."},
+        {"from":"말세의 사람들","to":"하나님","label":"능력을 부인함","kind":"conflict","directed":true,"weight":2,"verses":"1-5","note":"마지막 때 사람들은 하나님보다 쾌락을 사랑하고, 경건의 모양은 있어도 능력은 부인한대요."},
+        {"from":"얀네와 얌브레","to":"모세","label":"대적한 이들","kind":"conflict","directed":true,"weight":1,"verses":"8","note":"얀네와 얌브레가 모세를 거슬렀던 것처럼 이런 사람들도 진리를 거스른다고 해요."},
+        {"from":"하나님","to":"디모데","label":"성경으로 온전케 함","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"성경은 하나님의 숨결로 된 것이어서 하나님의 사람을 온전하게 하고 선한 일을 준비하게 해요."}
       ],
       "places": [
         {"name":"안디옥·이고니온·루스드라","where":"소아시아 도시들","what":"바울이 고난당한 곳","weight":2}
@@ -122,12 +122,12 @@
         {"name":"예수","role":"의의 재판장이신 주","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"엄히 명함","kind":"ally","directed":true,"weight":3},
-        {"from":"데마","to":"바울","label":"버리고 떠남","kind":"conflict","directed":true,"weight":2},
-        {"from":"누가","to":"바울","label":"함께 있음","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"마가","label":"데려오라 함","kind":"ally","directed":true,"weight":2},
-        {"from":"알렉산더","to":"바울","label":"해를 입힘","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3}
+        {"from":"바울","to":"디모데","label":"엄히 명함","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님과 그리스도 앞에서 엄숙히 부탁하니, 때가 좋든 나쁘든 말씀을 전하라고 했어요."},
+        {"from":"데마","to":"바울","label":"버리고 떠남","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"데마는 이 세상을 사랑해서 바울을 버리고 데살로니가로 떠났어요."},
+        {"from":"누가","to":"바울","label":"함께 있음","kind":"ally","directed":true,"weight":2,"verses":"11","note":"다들 떠나고 누가만 바울 곁에 남아 있었어요."},
+        {"from":"바울","to":"마가","label":"데려오라 함","kind":"ally","directed":true,"weight":2,"verses":"11","note":"마가는 일에 쓸모가 있으니 데리고 오라고 바울이 부탁했어요."},
+        {"from":"알렉산더","to":"바울","label":"해를 입힘","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"구리 세공업자 알렉산더가 바울에게 해를 많이 끼치고 그 말을 심하게 반대했어요."},
+        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3,"verses":"17","note":"처음 변명할 때 아무도 함께하지 않았지만 주님이 곁에 서서 힘을 주셨어요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"데마가 간 곳","weight":1},

@@ -24,11 +24,11 @@
         {"name":"하나님","role":"구주 하나님","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"믿음의 아들","kind":"family","directed":true,"weight":3},
-        {"from":"예수","to":"바울","label":"직분을 맡기심","kind":"ally","directed":true,"weight":3},
-        {"from":"디모데","to":"다른 교훈 가르치는 자들","label":"막아야 할 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"후메내오","label":"사탄에게 내줌","kind":"conflict","directed":true,"weight":1},
-        {"from":"후메내오","to":"알렉산더","label":"함께 파선","kind":"ally","directed":false,"weight":1}
+        {"from":"바울","to":"디모데","label":"믿음의 아들","kind":"family","directed":true,"weight":3,"verses":"2","note":"바울은 믿음 안에서 참된 아들인 디모데에게 이 편지를 썼어요."},
+        {"from":"예수","to":"바울","label":"직분을 맡기심","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"전에 비방하고 박해하던 바울을 예수님이 신실하게 여겨 직분을 맡기셨어요."},
+        {"from":"디모데","to":"다른 교훈 가르치는 자들","label":"막아야 할 이들","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"바울은 디모데를 에베소에 남겨, 다른 교리를 가르치는 사람들을 막게 했어요."},
+        {"from":"바울","to":"후메내오","label":"사탄에게 내줌","kind":"conflict","directed":true,"weight":1,"verses":"20","note":"믿음을 버린 후메내오와 알렉산더를 바울은 사탄에게 넘겨 신성모독을 하지 않도록 배우게 했어요."},
+        {"from":"후메내오","to":"알렉산더","label":"함께 파선","kind":"ally","directed":false,"weight":1,"verses":"19-20","note":"두 사람은 양심을 버리고 믿음이 배가 부서지듯 무너진 사람들이에요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"디모데가 머문 곳","weight":3},
@@ -56,10 +56,10 @@
         {"name":"하나님","role":"모든 사람의 구원을 원하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"하나님","label":"유일한 중보","kind":"other","directed":false,"weight":3},
-        {"from":"하나님","to":"임금들과 높은 사람들","label":"구원을 원하심","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"디모데","label":"권면한 스승","kind":"ally","directed":true,"weight":2},
-        {"from":"아담","to":"하와","label":"첫 부부","kind":"family","directed":false,"weight":1}
+        {"from":"예수","to":"하나님","label":"유일한 중보","kind":"other","directed":false,"weight":3,"verses":"5-6","note":"하나님은 한 분이시고, 하나님과 사람 사이를 잇는 중보자도 그리스도 예수 한 분이세요."},
+        {"from":"하나님","to":"임금들과 높은 사람들","label":"구원을 원하심","kind":"ally","directed":true,"weight":2,"verses":"1-4","note":"왕과 높은 사람들을 위해서도 기도하라, 하나님은 모든 사람이 구원받기를 원하신대요."},
+        {"from":"바울","to":"디모데","label":"권면한 스승","kind":"ally","directed":true,"weight":2,"verses":"8","note":"바울은 남자들이 화내거나 다투지 말고 어디서나 깨끗한 손을 들고 기도하기를 원했어요."},
+        {"from":"아담","to":"하와","label":"첫 부부","kind":"family","directed":false,"weight":1,"verses":"13-14","note":"아담이 먼저 지음받았고 하와가 그다음이며, 속아 죄에 빠진 것은 하와였다고 해요."}
       ],
       "places": [
         {"name":"각처","where":"교회가 모이는 곳","what":"기도할 곳","weight":1}
@@ -85,10 +85,10 @@
         {"name":"하나님","role":"살아 계신 하나님","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"가르친 스승","kind":"ally","directed":true,"weight":2},
-        {"from":"감독","to":"집사","label":"함께 섬기는 직분","kind":"ally","directed":false,"weight":2},
-        {"from":"마귀","to":"감독","label":"올무를 놓는 자","kind":"conflict","directed":true,"weight":1},
-        {"from":"하나님","to":"예수","label":"영광 중에 올리심","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"디모데","label":"가르친 스승","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"곧 가기를 바라지만 늦어질 경우, 하나님의 집에서 어떻게 행해야 할지 알게 하려고 썼어요."},
+        {"from":"감독","to":"집사","label":"함께 섬기는 직분","kind":"ally","directed":false,"weight":2,"verses":"2, 8","note":"감독도 집사도 흠잡을 데 없고 정직하며 자기 집안을 잘 돌보는 사람이어야 해요."},
+        {"from":"마귀","to":"감독","label":"올무를 놓는 자","kind":"conflict","directed":true,"weight":1,"verses":"6-7","note":"새로 믿은 사람이 감독이 되면 교만해져 마귀의 덫에 걸릴 수 있다고 해요."},
+        {"from":"하나님","to":"예수","label":"영광 중에 올리심","kind":"ally","directed":true,"weight":2,"verses":"16","note":"그리스도는 육신으로 나타나시고 영으로 의롭다 인정받으시고 영광 가운데 올라가셨어요."}
       ],
       "places": [
         {"name":"하나님의 집","where":"교회","what":"진리의 기둥과 터","weight":2}
@@ -113,11 +113,11 @@
         {"name":"하나님","role":"모든 것을 선하게 지으신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"연단하라 권함","kind":"ally","directed":true,"weight":3},
-        {"from":"미혹하는 자들","to":"디모데","label":"대적할 가르침","kind":"conflict","directed":true,"weight":2},
-        {"from":"장로의 회","to":"디모데","label":"안수한 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"귀신","to":"미혹하는 자들","label":"가르침의 배후","kind":"conflict","directed":true,"weight":1},
-        {"from":"성령","to":"디모데","label":"미리 알리심","kind":"ally","directed":true,"weight":1}
+        {"from":"바울","to":"디모데","label":"연단하라 권함","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"헛된 이야기를 버리고 경건에 이르도록 자신을 훈련하라, 경건은 모든 일에 유익하대요."},
+        {"from":"미혹하는 자들","to":"디모데","label":"대적할 가르침","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"마지막 때에 결혼을 금하고 음식을 끊으라고 가르치며 믿음을 떠나게 하는 자들이 나타난대요."},
+        {"from":"장로의 회","to":"디모데","label":"안수한 이들","kind":"ally","directed":true,"weight":1,"verses":"14","note":"장로들이 안수할 때 예언으로 받은 은사를 소홀히 하지 말라고 해요."},
+        {"from":"귀신","to":"미혹하는 자들","label":"가르침의 배후","kind":"conflict","directed":true,"weight":1,"verses":"1","note":"그들은 속이는 영과 귀신의 가르침을 따르는 사람들이에요."},
+        {"from":"성령","to":"디모데","label":"미리 알리심","kind":"ally","directed":true,"weight":1,"verses":"1","note":"성령께서 분명히 말씀하시기를, 마지막 때에 어떤 이들이 믿음을 떠날 거라 하셨어요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"디모데가 가르치는 곳","weight":1}
@@ -141,10 +141,10 @@
         {"name":"범죄한 자들","role":"공개적으로 꾸짖을 이들","weight":1}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"가르친 스승","kind":"ally","directed":true,"weight":3},
-        {"from":"디모데","to":"참 과부","label":"존대할 이","kind":"ally","directed":true,"weight":2},
-        {"from":"디모데","to":"장로들","label":"존경할 이","kind":"ally","directed":true,"weight":2},
-        {"from":"디모데","to":"범죄한 자들","label":"꾸짖을 이","kind":"conflict","directed":true,"weight":1}
+        {"from":"바울","to":"디모데","label":"가르친 스승","kind":"ally","directed":true,"weight":3,"verses":"21","note":"바울은 하나님과 그리스도와 천사들 앞에서 치우침 없이 이 일들을 지키라고 엄히 말했어요."},
+        {"from":"디모데","to":"참 과부","label":"존대할 이","kind":"ally","directed":true,"weight":2,"verses":"3, 5","note":"정말 홀로 남아 하나님께만 소망을 둔 과부들은 존중하고 돌보라고 해요."},
+        {"from":"디모데","to":"장로들","label":"존경할 이","kind":"ally","directed":true,"weight":2,"verses":"17, 19","note":"잘 이끄는 장로, 특히 말씀과 가르침에 수고하는 이는 두 배로 존경하라고 해요."},
+        {"from":"디모데","to":"범죄한 자들","label":"꾸짖을 이","kind":"conflict","directed":true,"weight":1,"verses":"20","note":"죄를 지은 사람은 모두 앞에서 꾸짖어 다른 사람들도 두려워하게 하라고 해요."}
       ],
       "places": [
         {"name":"교회","where":"에베소의 교회","what":"돌봄의 자리","weight":1}
@@ -171,11 +171,11 @@
         {"name":"하나님","role":"후히 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"하나님의 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"다른 교훈 하는 자","to":"디모데","label":"피할 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"디모데","to":"부한 자들","label":"명할 대상","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"본디오 빌라도","label":"선한 증언","kind":"other","directed":true,"weight":1},
-        {"from":"하나님","to":"부한 자들","label":"후히 주심","kind":"ally","directed":true,"weight":1}
+        {"from":"바울","to":"디모데","label":"하나님의 사람","kind":"ally","directed":true,"weight":3,"verses":"11-12","note":"하나님의 사람인 디모데에게 이런 것을 피하고 믿음의 선한 싸움을 싸우라고 했어요."},
+        {"from":"다른 교훈 하는 자","to":"디모데","label":"피할 자","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"경건을 돈벌이로 여기며 다른 가르침을 퍼뜨리는 자들과는 거리를 두라고 해요."},
+        {"from":"디모데","to":"부한 자들","label":"명할 대상","kind":"ally","directed":true,"weight":2,"verses":"17-18","note":"부자들에게는 교만하지 말고 하나님께 소망을 두며 선한 일에 넉넉히 나누라고 명하래요."},
+        {"from":"예수","to":"본디오 빌라도","label":"선한 증언","kind":"other","directed":true,"weight":1,"verses":"13","note":"그리스도 예수께서 본디오 빌라도 앞에서 선한 고백으로 증언하셨어요."},
+        {"from":"하나님","to":"부한 자들","label":"후히 주심","kind":"ally","directed":true,"weight":1,"verses":"17","note":"하나님은 모든 것을 넉넉히 주셔서 누리게 하시는 분이니 그분께 소망을 두래요."}
       ],
       "places": [
         {"name":"에베소","where":"소아시아의 큰 도시","what":"디모데가 지킬 교회","weight":1}

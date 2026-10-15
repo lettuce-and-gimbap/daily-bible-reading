@@ -25,11 +25,11 @@
         {"name":"하나님","role":"바울을 택정하신 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"갈라디아 교회들","label":"놀라 꾸짖음","kind":"conflict","directed":true,"weight":3},
-        {"from":"다른 복음을 전하는 자들","to":"갈라디아 교회들","label":"교란한 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"바울","label":"택정하고 부르심","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"게바","label":"방문한 사도","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"야고보","label":"만난 이","kind":"ally","directed":true,"weight":1}
+        {"from":"바울","to":"갈라디아 교회들","label":"놀라 꾸짖음","kind":"conflict","directed":true,"weight":3,"verses":"6-7","note":"갈라디아 교회들이 그렇게 빨리 다른 복음으로 돌아선 것에 바울은 깜짝 놀라 엄하게 꾸짖었어요."},
+        {"from":"다른 복음을 전하는 자들","to":"갈라디아 교회들","label":"교란한 이들","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"어떤 사람들이 그리스도의 복음을 뒤틀어 교회를 혼란에 빠뜨리고 있었어요."},
+        {"from":"하나님","to":"바울","label":"택정하고 부르심","kind":"ally","directed":true,"weight":3,"verses":"15-16","note":"하나님은 바울을 태어나기 전부터 골라 두셨고, 은혜로 불러 이방인에게 아들을 전하게 하셨어요."},
+        {"from":"바울","to":"게바","label":"방문한 사도","kind":"ally","directed":true,"weight":2,"verses":"18","note":"회심하고 삼 년 뒤 바울은 게바를 만나러 예루살렘에 올라가 보름 동안 함께 지냈어요."},
+        {"from":"바울","to":"야고보","label":"만난 이","kind":"ally","directed":true,"weight":1,"verses":"19","note":"그때 바울은 다른 사도는 만나지 않았고 주님의 동생 야고보만 만났어요."}
       ],
       "places": [
         {"name":"갈라디아","where":"소아시아 내륙","what":"편지를 받은 교회들","weight":3},
@@ -58,12 +58,12 @@
         {"name":"예수","role":"내 안에 사시는 그리스도","weight":3}
       ],
       "rels": [
-        {"from":"야고보","to":"바울","label":"친교의 악수","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"게바","label":"면책한 사도","kind":"conflict","directed":true,"weight":3},
-        {"from":"바나바","to":"게바","label":"외식에 유혹됨","kind":"other","directed":true,"weight":2},
-        {"from":"거짓 형제들","to":"디도","label":"할례를 강요","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"디도","label":"데려간 동역자","kind":"ally","directed":true,"weight":1},
-        {"from":"예수","to":"바울","label":"안에 사심","kind":"ally","directed":true,"weight":3}
+        {"from":"야고보","to":"바울","label":"친교의 악수","kind":"ally","directed":true,"weight":2,"verses":"9","note":"교회의 기둥으로 여겨지던 야고보와 게바와 요한이 바울과 바나바에게 손을 내밀어 한편임을 인정했어요."},
+        {"from":"바울","to":"게바","label":"면책한 사도","kind":"conflict","directed":true,"weight":3,"verses":"11-14","note":"게바가 안디옥에서 이방인과 먹다가 유대인들이 오자 슬쩍 물러나니, 바울이 모두 앞에서 그를 바로잡았어요."},
+        {"from":"바나바","to":"게바","label":"외식에 유혹됨","kind":"other","directed":true,"weight":2,"verses":"13","note":"게바가 자리를 피하자 다른 유대인들뿐 아니라 바나바까지 그 위선에 휩쓸렸어요."},
+        {"from":"거짓 형제들","to":"디도","label":"할례를 강요","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"몰래 끼어든 거짓 형제들이 헬라인 디도에게 할례를 받게 하려 했지만 억지로 받게 하지 못했어요."},
+        {"from":"바울","to":"디도","label":"데려간 동역자","kind":"ally","directed":true,"weight":1,"verses":"1","note":"바울은 십사 년 뒤 바나바와 함께 디도를 데리고 예루살렘에 올라갔어요."},
+        {"from":"예수","to":"바울","label":"안에 사심","kind":"ally","directed":true,"weight":3,"verses":"20","note":"바울은 이제 자기가 사는 게 아니라 자기를 사랑해 몸을 내주신 그리스도가 자기 안에서 사신다고 고백해요."}
       ],
       "places": [
         {"name":"예루살렘","where":"유대의 수도","what":"친교의 악수를 한 곳","weight":2},
@@ -89,11 +89,11 @@
         {"name":"하나님","role":"아브라함에게 약속하신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"갈라디아 사람들","label":"어리석다 함","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"아브라함","label":"의로 정하심","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"갈라디아 사람들","label":"속량하심","kind":"ally","directed":true,"weight":3},
-        {"from":"갈라디아 사람들","to":"아브라함","label":"믿음의 자손","kind":"family","directed":true,"weight":2},
-        {"from":"성령","to":"갈라디아 사람들","label":"받은 영","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"갈라디아 사람들","label":"어리석다 함","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"성령으로 시작해 놓고 이제 육체로 마치려 하느냐며, 바울은 갈라디아 사람들을 어리석다고 나무랐어요."},
+        {"from":"하나님","to":"아브라함","label":"의로 정하심","kind":"ally","directed":true,"weight":3,"verses":"6","note":"아브라함이 하나님을 믿자 하나님은 그 믿음을 의로 인정해 주셨어요."},
+        {"from":"예수","to":"갈라디아 사람들","label":"속량하심","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"그리스도께서 우리 대신 저주를 받아 율법의 저주에서 건져 주시고, 아브라함의 복이 이방인에게 가게 하셨어요."},
+        {"from":"갈라디아 사람들","to":"아브라함","label":"믿음의 자손","kind":"family","directed":true,"weight":2,"verses":"7, 29","note":"믿음으로 사는 사람이 아브라함의 자손이고, 그리스도께 속하면 약속을 이어받는다고 해요."},
+        {"from":"성령","to":"갈라디아 사람들","label":"받은 영","kind":"ally","directed":true,"weight":2,"verses":"2, 5","note":"그들이 성령을 받은 건 율법을 지켜서가 아니라 복음을 듣고 믿어서였다고 일깨워요."}
       ],
       "places": [
         {"name":"갈라디아","where":"소아시아 내륙","what":"편지를 받은 교회들","weight":1}
@@ -122,12 +122,12 @@
         {"name":"하나님","role":"아빠 아버지","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"보내신 아들","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"갈라디아 사람들","label":"아빠 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"바울","to":"갈라디아 사람들","label":"해산하는 수고","kind":"family","directed":true,"weight":3},
-        {"from":"하갈","to":"아브라함","label":"여종","kind":"family","directed":false,"weight":1},
-        {"from":"사라","to":"아브라함","label":"부부","kind":"family","directed":false,"weight":2},
-        {"from":"이스마엘","to":"이삭","label":"박해한 형","kind":"conflict","directed":true,"weight":1}
+        {"from":"하나님","to":"예수","label":"보내신 아들","kind":"family","directed":true,"weight":3,"verses":"4","note":"때가 차자 하나님은 아들을 여자에게서 나게 하시고 율법 아래 나게 하셔서 보내셨어요."},
+        {"from":"하나님","to":"갈라디아 사람들","label":"아빠 아버지","kind":"family","directed":true,"weight":3,"verses":"6-7","note":"하나님은 아들의 영을 보내 '아빠, 아버지' 하고 부르게 하셨으니, 이제 그들은 종이 아니라 자녀예요."},
+        {"from":"바울","to":"갈라디아 사람들","label":"해산하는 수고","kind":"family","directed":true,"weight":3,"verses":"19","note":"그리스도가 그들 안에 모양을 갖추기까지, 바울은 아이를 낳는 고통을 다시 겪는다고 말해요."},
+        {"from":"하갈","to":"아브라함","label":"여종","kind":"family","directed":false,"weight":1,"verses":"22-24","note":"아브라함의 두 아들 중 하나는 여종 하갈에게서 났고, 하갈은 시내산 옛 언약을 가리킨다고 풀어요."},
+        {"from":"사라","to":"아브라함","label":"부부","kind":"family","directed":false,"weight":2,"verses":"23, 26","note":"다른 아들은 자유로운 여자 사라에게서 약속을 따라 났고, 사라는 위에 있는 예루살렘을 가리켜요."},
+        {"from":"이스마엘","to":"이삭","label":"박해한 형","kind":"conflict","directed":true,"weight":1,"verses":"29","note":"그때 육체를 따라 난 아들이 성령을 따라 난 아들을 괴롭혔듯, 지금도 그렇다고 말해요."}
       ],
       "places": [
         {"name":"시내 산","where":"아라비아에 있는 산","what":"종을 낳는 언약의 비유","weight":1},
@@ -151,10 +151,10 @@
         {"name":"성령","role":"열매 맺게 하시는 영","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"갈라디아 사람들","label":"자유를 주심","kind":"ally","directed":true,"weight":3},
-        {"from":"교란하는 자","to":"갈라디아 사람들","label":"진리를 막음","kind":"conflict","directed":true,"weight":2},
-        {"from":"성령","to":"갈라디아 사람들","label":"열매 맺게 함","kind":"ally","directed":true,"weight":3},
-        {"from":"바울","to":"교란하는 자","label":"경고한 사도","kind":"conflict","directed":true,"weight":2}
+        {"from":"예수","to":"갈라디아 사람들","label":"자유를 주심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"그리스도께서 우리를 자유롭게 하셨으니, 다시는 종의 멍에를 메지 말고 굳게 서라고 해요."},
+        {"from":"교란하는 자","to":"갈라디아 사람들","label":"진리를 막음","kind":"conflict","directed":true,"weight":2,"verses":"7-10","note":"잘 달리던 그들을 누가 막아 진리를 따르지 못하게 했느냐며, 흔드는 자는 심판을 받을 거라 해요."},
+        {"from":"성령","to":"갈라디아 사람들","label":"열매 맺게 함","kind":"ally","directed":true,"weight":3,"verses":"16, 22-23","note":"성령을 따라 살면 육체의 욕심을 이루지 않고, 사랑과 기쁨과 화평 같은 열매가 맺힌다고 해요."},
+        {"from":"바울","to":"교란하는 자","label":"경고한 사도","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"할례를 강요하며 교회를 흔드는 자들을 향해 바울은 아주 날카롭게 경고했어요."}
       ],
       "places": [
         {"name":"갈라디아","where":"소아시아 내륙","what":"자유를 위해 부르신 교회","weight":1}
@@ -179,10 +179,10 @@
         {"name":"하나님","role":"업신여김받지 않으시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"갈라디아 사람들","label":"권면한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"갈라디아 사람들","to":"범죄한 사람","label":"온유하게 바로잡음","kind":"ally","directed":true,"weight":2},
-        {"from":"할례를 강요하는 자들","to":"갈라디아 사람들","label":"억지로 할례","kind":"conflict","directed":true,"weight":2},
-        {"from":"바울","to":"예수","label":"흔적을 지님","kind":"ally","directed":true,"weight":3}
+        {"from":"바울","to":"갈라디아 사람들","label":"권면한 사도","kind":"ally","directed":true,"weight":3,"verses":"2, 9","note":"서로 짐을 나누어 지고, 선한 일을 하다가 지치지 말라고 바울이 권했어요."},
+        {"from":"갈라디아 사람들","to":"범죄한 사람","label":"온유하게 바로잡음","kind":"ally","directed":true,"weight":2,"verses":"1","note":"누가 잘못에 빠지면 성령의 사람답게 부드러운 마음으로 바로잡아 주라고 해요."},
+        {"from":"할례를 강요하는 자들","to":"갈라디아 사람들","label":"억지로 할례","kind":"conflict","directed":true,"weight":2,"verses":"12-13","note":"그들은 십자가 때문에 박해받기 싫어서, 겉모양을 자랑하려고 할례를 억지로 시키려 했어요."},
+        {"from":"바울","to":"예수","label":"흔적을 지님","kind":"ally","directed":true,"weight":3,"verses":"17","note":"바울은 자기 몸에 예수님의 흔적을 지니고 있으니 아무도 자기를 괴롭히지 말라고 해요."}
       ],
       "places": [
         {"name":"갈라디아","where":"소아시아 내륙","what":"편지를 받은 교회들","weight":1}

@@ -25,11 +25,11 @@
         {"name":"하나님","role":"참되신 하나님","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 교회","label":"감사하는 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"데살로니가 교회","to":"마게도냐와 아가야 신자들","label":"본이 됨","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"실루아노","label":"동역자","kind":"ally","directed":false,"weight":1},
-        {"from":"성령","to":"데살로니가 교회","label":"기쁨을 주심","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"데살로니가 교회","label":"감사하는 사도","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"바울은 그들의 믿음의 일과 사랑의 수고와 소망의 인내를 기억하며 늘 감사했어요."},
+        {"from":"데살로니가 교회","to":"마게도냐와 아가야 신자들","label":"본이 됨","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"그들은 마게도냐와 아가야의 모든 믿는 사람들에게 본이 되었고, 그들의 믿음 소문이 퍼졌어요."},
+        {"from":"바울","to":"실루아노","label":"동역자","kind":"ally","directed":false,"weight":1,"verses":"1","note":"바울과 실루아노와 디모데가 함께 이 편지를 보냈어요."},
+        {"from":"성령","to":"데살로니가 교회","label":"기쁨을 주심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"큰 고난 속에서도 그들은 성령이 주시는 기쁨으로 말씀을 받았어요."},
+        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"10","note":"하나님은 예수님을 죽은 자들 가운데서 살리셨고, 그들은 하늘에서 오실 그 아들을 기다려요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 항구 도시","what":"편지를 받는 교회","weight":3},
@@ -55,10 +55,10 @@
         {"name":"하나님","role":"마음을 감찰하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 성도들","label":"유모 같이 기름","kind":"family","directed":true,"weight":3},
-        {"from":"유대인들","to":"바울","label":"쫓아낸 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"사탄","to":"바울","label":"길을 막음","kind":"conflict","directed":true,"weight":2},
-        {"from":"데살로니가 성도들","to":"하나님","label":"말씀으로 받음","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"데살로니가 성도들","label":"유모 같이 기름","kind":"family","directed":true,"weight":3,"verses":"7-8","note":"바울은 유모가 자기 아이를 돌보듯 그들을 아꼈고, 복음뿐 아니라 목숨까지 주기를 원했어요."},
+        {"from":"유대인들","to":"바울","label":"쫓아낸 이들","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"유대인들은 주 예수와 선지자들을 죽이고 바울 일행도 쫓아내며 이방인 전도를 막았어요."},
+        {"from":"사탄","to":"바울","label":"길을 막음","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"바울이 한두 번 그들에게 가려 했지만 사탄이 길을 막았어요."},
+        {"from":"데살로니가 성도들","to":"하나님","label":"말씀으로 받음","kind":"ally","directed":true,"weight":2,"verses":"13","note":"그들은 바울이 전한 말씀을 사람의 말이 아니라 하나님의 말씀으로 받았어요."}
       ],
       "places": [
         {"name":"빌립보","where":"마게도냐의 도시","what":"능욕을 당한 곳","weight":2},
@@ -83,11 +83,11 @@
         {"name":"하나님","role":"굳게 하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디모데","label":"보낸 일꾼","kind":"ally","directed":true,"weight":3},
-        {"from":"디모데","to":"데살로니가 성도들","label":"굳건하게 함","kind":"ally","directed":true,"weight":2},
-        {"from":"디모데","to":"바울","label":"기쁜 소식 전함","kind":"ally","directed":true,"weight":2},
-        {"from":"시험하는 자","to":"데살로니가 성도들","label":"시험하는 자","kind":"conflict","directed":true,"weight":1},
-        {"from":"바울","to":"데살로니가 성도들","label":"위해 간구함","kind":"ally","directed":true,"weight":3}
+        {"from":"바울","to":"디모데","label":"보낸 일꾼","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"바울은 더 참을 수 없어 아덴에 홀로 남고, 동역자 디모데를 데살로니가로 보냈어요."},
+        {"from":"디모데","to":"데살로니가 성도들","label":"굳건하게 함","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"디모데는 그들의 믿음을 굳세게 하고 위로해서 환난 중에 흔들리지 않게 했어요."},
+        {"from":"디모데","to":"바울","label":"기쁜 소식 전함","kind":"ally","directed":true,"weight":2,"verses":"6","note":"디모데가 돌아와 그들의 믿음과 사랑, 바울을 보고 싶어 한다는 반가운 소식을 전했어요."},
+        {"from":"시험하는 자","to":"데살로니가 성도들","label":"시험하는 자","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"바울은 시험하는 자가 그들을 넘어뜨려 수고가 헛될까 봐 걱정했어요."},
+        {"from":"바울","to":"데살로니가 성도들","label":"위해 간구함","kind":"ally","directed":true,"weight":3,"verses":"10-12","note":"바울은 밤낮 그들을 다시 보기를 간구하고, 그들의 사랑이 넘치게 되기를 기도했어요."}
       ],
       "places": [
         {"name":"아테네","where":"아가야의 도시","what":"바울이 홀로 남은 곳","weight":2},
@@ -113,10 +113,10 @@
         {"name":"하나님","role":"거룩하게 부르신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 성도들","label":"위로한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"자는 자들","label":"일으키실 주","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 부르심","kind":"ally","directed":true,"weight":2},
-        {"from":"천사장","to":"예수","label":"강림을 알림","kind":"ally","directed":true,"weight":1}
+        {"from":"바울","to":"데살로니가 성도들","label":"위로한 사도","kind":"ally","directed":true,"weight":3,"verses":"13, 18","note":"먼저 잠든 사람들 일로 소망 없는 사람처럼 슬퍼하지 말고 이 말로 서로 위로하라고 했어요."},
+        {"from":"예수","to":"자는 자들","label":"일으키실 주","kind":"ally","directed":true,"weight":3,"verses":"14, 16","note":"예수님이 다시 사셨듯, 하나님은 예수 안에서 잠든 사람들도 그분과 함께 데려오실 거래요."},
+        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 부르심","kind":"ally","directed":true,"weight":2,"verses":"7","note":"하나님이 그들을 부르신 건 더럽게 살라는 게 아니라 거룩하게 살라는 거예요."},
+        {"from":"천사장","to":"예수","label":"강림을 알림","kind":"ally","directed":true,"weight":1,"verses":"16","note":"주님이 호령과 천사장의 소리와 하나님의 나팔 소리와 함께 하늘에서 내려오실 거라 해요."}
       ],
       "places": [
         {"name":"공중","where":"구름 속","what":"주를 영접할 곳","weight":2}
@@ -142,10 +142,10 @@
         {"name":"하나님","role":"평강의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"데살로니가 성도들","to":"다스리는 자들","label":"귀히 여김","kind":"ally","directed":true,"weight":2},
-        {"from":"데살로니가 성도들","to":"게으른 자들","label":"권계함","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 하심","kind":"ally","directed":true,"weight":3}
+        {"from":"바울","to":"데살로니가 성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":3,"verses":"16-18","note":"늘 기뻐하고 쉬지 말고 기도하며 모든 일에 감사하라고 권했어요."},
+        {"from":"데살로니가 성도들","to":"다스리는 자들","label":"귀히 여김","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"그들 가운데서 수고하며 이끄는 지도자들을 알아주고 사랑으로 귀하게 여기라고 해요."},
+        {"from":"데살로니가 성도들","to":"게으른 자들","label":"권계함","kind":"ally","directed":true,"weight":1,"verses":"14","note":"게으른 사람은 타이르고, 마음 약한 사람은 격려하고, 힘없는 사람은 붙들어 주라고 해요."},
+        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 하심","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"평화의 하나님이 그들을 온전히 거룩하게 하시고, 부르신 분이 신실하시니 이루실 거래요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"편지를 받는 교회","weight":1}

@@ -24,10 +24,10 @@
         {"name":"하나님","role":"거짓이 없으신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"디도","label":"참 아들","kind":"family","directed":true,"weight":3},
-        {"from":"디도","to":"장로","label":"세울 이","kind":"ally","directed":true,"weight":2},
-        {"from":"할례파","to":"그레데인들","label":"집을 무너뜨림","kind":"conflict","directed":true,"weight":2},
-        {"from":"디도","to":"할례파","label":"엄히 꾸짖음","kind":"conflict","directed":true,"weight":2}
+        {"from":"바울","to":"디도","label":"참 아들","kind":"family","directed":true,"weight":3,"verses":"4","note":"바울은 같은 믿음을 따라 참아들 된 디도에게 이 편지를 썼어요."},
+        {"from":"디도","to":"장로","label":"세울 이","kind":"ally","directed":true,"weight":2,"verses":"5","note":"바울은 디도를 그레데에 남겨 남은 일을 정리하고 성마다 장로를 세우게 했어요."},
+        {"from":"할례파","to":"그레데인들","label":"집을 무너뜨림","kind":"conflict","directed":true,"weight":2,"verses":"10-11","note":"할례파 사람들은 더러운 이득을 위해 잘못된 것을 가르쳐 온 집안을 뒤엎고 있었어요."},
+        {"from":"디도","to":"할례파","label":"엄히 꾸짖음","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"디도는 그들이 믿음 안에서 건강해지도록 엄하게 꾸짖어야 했어요."}
       ],
       "places": [
         {"name":"그레데","where":"지중해의 섬","what":"디도가 남아 일한 곳","weight":3}
@@ -52,11 +52,11 @@
         {"name":"하나님","role":"은혜를 나타내신 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"디도","label":"권면한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"디도","to":"늙은 남자와 여자","label":"가르칠 대상","kind":"ally","directed":true,"weight":2},
-        {"from":"늙은 남자와 여자","to":"젊은이들","label":"교훈하는 이","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"디도","label":"속량하신 주","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"젊은이들","label":"은혜로 양육","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"디도","label":"권면한 사도","kind":"ally","directed":true,"weight":3,"verses":"1, 15","note":"디도는 바른 교훈에 맞는 것을 말하고, 권위 있게 권하고 꾸짖되 아무에게도 업신여김받지 말래요."},
+        {"from":"디도","to":"늙은 남자와 여자","label":"가르칠 대상","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"나이 든 남자는 절제하고 믿음이 건강하게, 나이 든 여자는 행실이 거룩하게 살도록 가르치래요."},
+        {"from":"늙은 남자와 여자","to":"젊은이들","label":"교훈하는 이","kind":"ally","directed":true,"weight":2,"verses":"4","note":"나이 든 여자들은 젊은 여자들이 남편과 자녀를 사랑하도록 가르치는 사람이 되래요."},
+        {"from":"예수","to":"디도","label":"속량하신 주","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그리스도는 우리를 모든 불법에서 건지시려고 자기 몸을 내주셨어요."},
+        {"from":"하나님","to":"젊은이들","label":"은혜로 양육","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"모든 사람에게 구원을 주는 하나님의 은혜가 나타나 경건하지 않은 것을 버리도록 가르쳐요."}
       ],
       "places": [
         {"name":"그레데","where":"지중해의 섬","what":"교회를 세우는 곳","weight":1}
@@ -86,12 +86,12 @@
         {"name":"하나님","role":"긍휼하신 구주","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"디도","label":"긍휼로 구원","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"디도","label":"새롭게 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"바울","to":"디도","label":"오라 부탁함","kind":"ally","directed":true,"weight":3},
-        {"from":"디도","to":"이단에 속한 사람","label":"멀리할 대상","kind":"conflict","directed":true,"weight":2},
-        {"from":"디도","to":"세나","label":"도울 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"세나","to":"아볼로","label":"함께 보냄","kind":"ally","directed":false,"weight":1}
+        {"from":"하나님","to":"디도","label":"긍휼로 구원","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"우리가 한 의로운 일 때문이 아니라 하나님의 자비로 우리를 구원하셨어요."},
+        {"from":"성령","to":"디도","label":"새롭게 하심","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"하나님은 다시 태어나게 씻으시고 성령으로 새롭게 하셔서, 성령을 넉넉히 부어 주셨어요."},
+        {"from":"바울","to":"디도","label":"오라 부탁함","kind":"ally","directed":true,"weight":3,"verses":"12","note":"아데마나 두기고를 보내면 서둘러 니고볼리로 와 달라고 바울이 부탁했어요."},
+        {"from":"디도","to":"이단에 속한 사람","label":"멀리할 대상","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"분열을 일으키는 사람은 한두 번 타이른 뒤 멀리하라고 해요."},
+        {"from":"디도","to":"세나","label":"도울 이들","kind":"ally","directed":true,"weight":1,"verses":"13","note":"율법 교사 세나와 아볼로가 떠날 때 부족함이 없도록 정성껏 도와 보내래요."},
+        {"from":"세나","to":"아볼로","label":"함께 보냄","kind":"ally","directed":false,"weight":1,"verses":"13","note":"세나와 아볼로는 함께 길을 떠나는 사람들이었어요."}
       ],
       "places": [
         {"name":"니고볼리","where":"그리스 서부 도시","what":"바울이 겨울을 날 곳","weight":2},

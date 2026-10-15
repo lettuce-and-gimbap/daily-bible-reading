@@ -26,11 +26,11 @@
         {"name":"예수","role":"갇힘의 이유가 된 주","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"오네시모","label":"옥중에서 낳은 아들","kind":"family","directed":true,"weight":3},
-        {"from":"오네시모","to":"빌레몬","label":"돌아가는 종","kind":"other","directed":true,"weight":3},
-        {"from":"바울","to":"빌레몬","label":"간구한 동역자","kind":"ally","directed":true,"weight":3},
-        {"from":"빌레몬","to":"압비아","label":"가족","kind":"family","directed":false,"weight":1},
-        {"from":"바울","to":"디모데","label":"함께 쓴 형제","kind":"ally","directed":false,"weight":1}
+        {"from":"바울","to":"오네시모","label":"옥중에서 낳은 아들","kind":"family","directed":true,"weight":3,"verses":"10","note":"바울은 갇혀 있으면서 복음으로 오네시모를 낳은 아들처럼 여겼어요."},
+        {"from":"오네시모","to":"빌레몬","label":"돌아가는 종","kind":"other","directed":true,"weight":3,"verses":"15-16","note":"오네시모는 빌레몬의 종이었는데, 이제 종 이상인 사랑받는 형제로 돌아가게 됐어요."},
+        {"from":"바울","to":"빌레몬","label":"간구한 동역자","kind":"ally","directed":true,"weight":3,"verses":"8-10, 17","note":"바울은 명령할 수도 있었지만 사랑으로 부탁했어요, 자기를 맞듯 오네시모를 맞아 달라고요."},
+        {"from":"빌레몬","to":"압비아","label":"가족","kind":"family","directed":false,"weight":1,"verses":"2","note":"편지는 빌레몬과 자매 압비아와 아킵보와 그 집에 모이는 교회에 보내졌어요."},
+        {"from":"바울","to":"디모데","label":"함께 쓴 형제","kind":"ally","directed":false,"weight":1,"verses":"1","note":"갇힌 바울과 형제 디모데가 함께 이 편지를 썼어요."}
       ],
       "places": [
         {"name":"빌레몬의 집","where":"골로새","what":"교회가 모이는 집","weight":2},

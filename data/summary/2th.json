@@ -25,11 +25,11 @@
         {"name":"하나님","role":"공의로 심판하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 교회","label":"자랑하는 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"환난 주는 자들","to":"데살로니가 교회","label":"박해한 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"환난 주는 자들","label":"갚으실 주","kind":"conflict","directed":true,"weight":2},
-        {"from":"능력의 천사들","to":"예수","label":"함께 올 천사","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"데살로니가 교회","label":"합당히 여기심","kind":"ally","directed":true,"weight":2}
+        {"from":"바울","to":"데살로니가 교회","label":"자랑하는 사도","kind":"ally","directed":true,"weight":3,"verses":"4","note":"바울은 박해 속에서도 참고 믿는 그들을 여러 교회 앞에서 자랑했어요."},
+        {"from":"환난 주는 자들","to":"데살로니가 교회","label":"박해한 이들","kind":"conflict","directed":true,"weight":3,"verses":"4, 6","note":"데살로니가 성도들은 여러 박해와 환난을 견디고 있었어요."},
+        {"from":"예수","to":"환난 주는 자들","label":"갚으실 주","kind":"conflict","directed":true,"weight":2,"verses":"6-8","note":"주 예수께서 하늘에서 나타나실 때 그들을 괴롭힌 자들에게 공정하게 갚으실 거래요."},
+        {"from":"능력의 천사들","to":"예수","label":"함께 올 천사","kind":"ally","directed":true,"weight":1,"verses":"7","note":"주님은 능력의 천사들과 함께 불꽃 가운데 하늘에서 나타나실 거래요."},
+        {"from":"하나님","to":"데살로니가 교회","label":"합당히 여기심","kind":"ally","directed":true,"weight":2,"verses":"5, 11","note":"그들의 고난은 하나님 나라에 합당한 사람으로 여기시려는 하나님의 공정한 판단의 표래요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"박해받는 교회","weight":2}
@@ -56,11 +56,11 @@
         {"name":"하나님","role":"처음부터 택하신 분","weight":2}
       ],
       "rels": [
-        {"from":"불법의 사람","to":"하나님","label":"대적하는 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"불법의 사람","label":"죽이실 주","kind":"conflict","directed":true,"weight":3},
-        {"from":"사탄","to":"불법의 사람","label":"활동의 배후","kind":"other","directed":true,"weight":2},
-        {"from":"불법의 사람","to":"멸망하는 자들","label":"속이는 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"데살로니가 성도들","label":"택하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"불법의 사람","to":"하나님","label":"대적하는 자","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"주의 날 전에 불법의 사람이 나타나 모든 신 위에 자기를 높이고 하나님 성전에 앉아 하나님인 척할 거래요."},
+        {"from":"예수","to":"불법의 사람","label":"죽이실 주","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"주 예수께서 오실 때 입김으로 그를 죽이시고 나타나심의 빛으로 멸하실 거래요."},
+        {"from":"사탄","to":"불법의 사람","label":"활동의 배후","kind":"other","directed":true,"weight":2,"verses":"9","note":"불법의 사람은 사탄이 일하는 대로 거짓 표적과 기적을 일으키며 나타날 거래요."},
+        {"from":"불법의 사람","to":"멸망하는 자들","label":"속이는 자","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"진리를 사랑하지 않아 멸망하는 사람들을 그가 온갖 악한 속임수로 속일 거래요."},
+        {"from":"하나님","to":"데살로니가 성도들","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"13","note":"하나님은 처음부터 그들을 골라 성령으로 거룩하게 하시고 진리를 믿게 해 구원하셨어요."}
       ],
       "places": [
         {"name":"하나님의 성전","where":"성전","what":"불법의 사람이 앉을 곳","weight":2}
@@ -85,10 +85,10 @@
         {"name":"하나님","role":"사랑의 하나님","weight":1}
       ],
       "rels": [
-        {"from":"바울","to":"게으른 자들","label":"권계한 사도","kind":"conflict","directed":true,"weight":3},
-        {"from":"바울","to":"데살로니가 성도들","label":"본을 보임","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"데살로니가 성도들","label":"지키시는 주","kind":"ally","directed":true,"weight":2},
-        {"from":"악한 사람들","to":"바울","label":"해치려는 자","kind":"conflict","directed":true,"weight":1}
+        {"from":"바울","to":"게으른 자들","label":"권계한 사도","kind":"conflict","directed":true,"weight":3,"verses":"10-12","note":"일하기 싫어하는 사람은 먹지도 말라며, 조용히 일해서 자기 양식을 먹으라고 명했어요."},
+        {"from":"바울","to":"데살로니가 성도들","label":"본을 보임","kind":"ally","directed":true,"weight":2,"verses":"7-9","note":"바울은 밤낮 일하며 누구에게도 짐이 되지 않아, 그들이 따라 할 본을 보였어요."},
+        {"from":"예수","to":"데살로니가 성도들","label":"지키시는 주","kind":"ally","directed":true,"weight":2,"verses":"3","note":"주님은 신실하셔서 그들을 굳세게 하시고 악한 자에게서 지켜 주실 거래요."},
+        {"from":"악한 사람들","to":"바울","label":"해치려는 자","kind":"conflict","directed":true,"weight":1,"verses":"2","note":"바울은 비뚤어지고 악한 사람들에게서 건져지도록 기도해 달라고 부탁했어요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"편지를 받는 교회","weight":1}
