@@ -23,7 +23,7 @@
         {"name":"갈렙","role":"딸을 상으로 건 장수","weight":1}
       ],
       "rels": [
-        {"from":"유다 지파","to":"아도니베섹","label":"잡은 지파","kind":"conflict","directed":true,"weight":3,"verses":"4-7","note":"유다 지파가 베섹에서 아도니베섹을 잡아 엄지손가락과 엄지발가락을 자르자, 그는 자기가 한 대로 갚으셨다고 했어요."},
+        {"from":"유다 지파","to":"아도니베섹","label":"잡은 지파","kind":"conflict","directed":true,"weight":3,"verses":"4-7","note":"유다 지파는 아도니베섹의 엄지손발가락을 잘랐고, 그는 자기가 남에게 한 짓을 그대로 돌려받았다고 했어요."},
         {"from":"옷니엘","to":"악사","label":"남편","kind":"family","directed":true,"weight":1,"verses":"13","note":"옷니엘이 드빌을 점령해 갈렙의 딸 악사를 아내로 맞았어요."},
         {"from":"악사","to":"갈렙","label":"딸","kind":"family","directed":true,"weight":1,"verses":"14-15","note":"악사가 아버지 갈렙에게 남쪽 땅에 샘물도 달라고 청해 받았어요."}
       ],

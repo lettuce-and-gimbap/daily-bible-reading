@@ -130,7 +130,7 @@
         {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2}
       ],
       "rels": [
-        {"from":"아론","to":"하나님","label":"축복을 전할 이","kind":"ally","directed":true,"weight":1,"verses":"23-27","note":"하나님이 아론에게 여호와는 네게 복을 주시고 너를 지키시기를 원하노라 하며 백성을 축복하라고 하셨어요."}
+        {"from":"아론","to":"하나님","label":"축복을 전할 이","kind":"ally","directed":true,"weight":1,"verses":"23-27","note":"하나님은 아론에게 주님이 복 주시고 지켜 주시기를 비는 축복 기도로 백성을 축복하라고 하셨어요."}
       ],
       "places": [
 

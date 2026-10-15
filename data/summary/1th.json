@@ -116,7 +116,7 @@
         {"from":"바울","to":"데살로니가 성도들","label":"위로한 사도","kind":"ally","directed":true,"weight":3,"verses":"13, 18","note":"먼저 잠든 사람들 일로 소망 없는 사람처럼 슬퍼하지 말고 이 말로 서로 위로하라고 했어요."},
         {"from":"예수","to":"자는 자들","label":"일으키실 주","kind":"ally","directed":true,"weight":3,"verses":"14, 16","note":"예수님이 다시 사셨듯, 하나님은 예수 안에서 잠든 사람들도 그분과 함께 데려오실 거래요."},
         {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 부르심","kind":"ally","directed":true,"weight":2,"verses":"7","note":"하나님이 그들을 부르신 건 더럽게 살라는 게 아니라 거룩하게 살라는 거예요."},
-        {"from":"천사장","to":"예수","label":"강림을 알림","kind":"ally","directed":true,"weight":1,"verses":"16","note":"주님이 호령과 천사장의 소리와 하나님의 나팔 소리와 함께 하늘에서 내려오실 거라 해요."}
+        {"from":"천사장","to":"예수","label":"강림을 알림","kind":"ally","directed":true,"weight":1,"verses":"16","note":"주님이 다시 오실 때 천사장의 외침과 하나님의 나팔이 울리며 하늘에서 내려오실 거래요."}
       ],
       "places": [
         {"name":"공중","where":"구름 속","what":"주를 영접할 곳","weight":2}

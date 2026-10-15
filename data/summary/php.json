@@ -122,7 +122,7 @@
         {"from":"빌립보 성도들","to":"바울","label":"선물을 보냄","kind":"ally","directed":true,"weight":3,"verses":"15-16","note":"처음 복음을 전할 때부터 빌립보 교회만 바울과 주고받는 일에 함께했고 여러 번 도움을 보냈어요."},
         {"from":"에바브로디도","to":"바울","label":"선물을 전함","kind":"ally","directed":true,"weight":2,"verses":"18","note":"바울은 에바브로디도 편에 보낸 선물을 받아 넉넉해졌고, 그것은 하나님이 기뻐하시는 제물이라 해요."},
         {"from":"예수","to":"바울","label":"능력 주심","kind":"ally","directed":true,"weight":3,"verses":"13","note":"바울은 자기에게 힘 주시는 분 안에서 어떤 형편에서도 다 견딜 수 있다고 고백해요."},
-        {"from":"하나님","to":"빌립보 성도들","label":"채우시는 분","kind":"ally","directed":true,"weight":3,"verses":"19","note":"하나님이 그리스도 예수 안에서 영광의 풍성함으로 그들의 모든 필요를 채워 주실 거라 해요."}
+        {"from":"하나님","to":"빌립보 성도들","label":"채우시는 분","kind":"ally","directed":true,"weight":3,"verses":"19","note":"하나님은 그리스도 안에서 넉넉하신 분이니 그들에게 필요한 걸 다 채워 주실 거래요."}
       ],
       "places": [
         {"name":"빌립보","where":"마게도냐의 도시","what":"선물을 보낸 교회","weight":2},

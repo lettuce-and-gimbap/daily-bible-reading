@@ -673,7 +673,7 @@
       ],
       "rels": [
         {"from":"모세","to":"여호수아","label":"격려한 스승","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"모세가 온 이스라엘 앞에서 여호수아에게 강하고 담대하라, 하나님이 너보다 앞서 가시며 함께하시리라고 했어요."},
-        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":2,"verses":"23","note":"하나님이 여호수아에게 직접 강하고 담대하라, 내가 너와 함께하리라고 하셨어요."},
+        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":2,"verses":"23","note":"하나님은 여호수아에게 직접 힘을 내고 용기를 가지라, 내가 함께하겠다고 약속하셨어요."},
         {"from":"레위 지파","to":"모세","label":"율법을 맡은 지파","kind":"ally","directed":true,"weight":1,"verses":"9, 24-26","note":"모세가 율법을 써서 언약궤를 멘 레위 사람들에게 주고 언약궤 곁에 두게 했어요."}
       ],
       "places": [

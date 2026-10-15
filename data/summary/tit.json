@@ -56,7 +56,7 @@
         {"from":"디도","to":"늙은 남자와 여자","label":"가르칠 대상","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"나이 든 남자는 절제하고 믿음이 건강하게, 나이 든 여자는 행실이 거룩하게 살도록 가르치래요."},
         {"from":"늙은 남자와 여자","to":"젊은이들","label":"교훈하는 이","kind":"ally","directed":true,"weight":2,"verses":"4","note":"나이 든 여자들은 젊은 여자들이 남편과 자녀를 사랑하도록 가르치는 사람이 되래요."},
         {"from":"예수","to":"디도","label":"속량하신 주","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그리스도는 우리를 모든 불법에서 건지시려고 자기 몸을 내주셨어요."},
-        {"from":"하나님","to":"젊은이들","label":"은혜로 양육","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"모든 사람에게 구원을 주는 하나님의 은혜가 나타나 경건하지 않은 것을 버리도록 가르쳐요."}
+        {"from":"하나님","to":"젊은이들","label":"은혜로 양육","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"하나님의 은혜가 나타나 모든 사람을 구원하고, 나쁜 길을 버리고 바르게 살도록 가르쳐요."}
       ],
       "places": [
         {"name":"그레데","where":"지중해의 섬","what":"교회를 세우는 곳","weight":1}

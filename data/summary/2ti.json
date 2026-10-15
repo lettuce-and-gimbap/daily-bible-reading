@@ -65,7 +65,7 @@
         {"from":"디모데","to":"충성된 사람들","label":"부탁할 이들","kind":"ally","directed":true,"weight":2,"verses":"2","note":"바울에게 들은 것을 다른 사람도 가르칠 수 있는 신실한 사람들에게 맡기라고 해요."},
         {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1,"verses":"17-18","note":"후메내오와 빌레도는 부활이 이미 지나갔다고 하며 진리에서 벗어났어요."},
         {"from":"후메내오","to":"디모데","label":"믿음을 무너뜨림","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"그들의 말은 독처럼 퍼져 어떤 사람들의 믿음을 무너뜨렸으니 디모데가 경계해야 했어요."},
-        {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1,"verses":"8","note":"다윗의 자손으로 오셔서 죽은 자 가운데서 살아나신 예수 그리스도를 기억하라고 해요."}
+        {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1,"verses":"8","note":"다윗 집안에서 나시고 죽음에서 살아나신 예수님을 늘 기억하라고 해요."}
       ],
       "places": [
         {"name":"큰 집","where":"비유 속 집","what":"그릇들의 비유","weight":1}

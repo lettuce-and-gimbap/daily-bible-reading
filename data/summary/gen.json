@@ -394,7 +394,7 @@
       ],
       "rels": [
         {"from":"아브람","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3,"verses":"14-16","note":"롯이 사로잡혔다는 소식에 아브람이 집에서 길러 낸 사람 삼백십팔 명을 이끌고 쫓아가 롯을 되찾았어요."},
-        {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3,"verses":"18-20","note":"살렘 왕이자 제사장 멜기세덱이 떡과 포도주를 가지고 나와 아브람을 축복했고, 아브람은 십분의 일을 주었어요."},
+        {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3,"verses":"18-20","note":"살렘의 왕이자 제사장인 멜기세덱이 빵과 포도주를 들고 나와 아브람을 축복했고, 아브람은 얻은 것의 십분의 일을 줬어요."},
         {"from":"소돔 왕","to":"아브람","label":"거절당한 왕","kind":"other","directed":true,"weight":2,"verses":"21-23","note":"소돔 왕이 물건은 가지라 했지만 아브람은 실 한 오라기도 받지 않겠다며 거절했어요."},
         {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"그돌라오멜 연합군이 소돔을 치고 그곳에 살던 롯과 재산을 빼앗아 갔어요."},
         {"from":"마므레","to":"아브람","label":"동맹","kind":"ally","directed":false,"weight":1,"verses":"13","note":"아모리 사람 마므레는 아브람과 동맹을 맺은 사이였어요."}
@@ -630,7 +630,7 @@
         {"from":"이삭","to":"아브라함","label":"외아들","kind":"family","directed":true,"weight":3,"verses":"2","note":"하나님이 아브라함에게 네 아들, 네 사랑하는 외아들 이삭을 데리고 모리아 땅으로 가라고 하셨어요."},
         {"from":"하나님","to":"아브라함","label":"시험하신 분","kind":"other","directed":true,"weight":3,"verses":"1-2","note":"하나님이 아브라함을 시험하시려고 이삭을 번제로 바치라고 하셨어요."},
         {"from":"아브라함","to":"하나님","label":"순종한 종","kind":"ally","directed":true,"weight":3,"verses":"3, 9-10","note":"아브라함은 아침 일찍 일어나 떠났고, 제단 위에 이삭을 올려놓고 칼을 들었어요."},
-        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"여호와의 사자가 하늘에서 아브라함을 부르며 아이에게 손대지 말라, 네가 하나님을 경외하는 줄 안다고 했어요."},
+        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"칼을 든 아브라함을 천사가 급히 불러 아이를 해치지 말라, 이제 네가 하나님을 두려워하는 줄 안다고 했어요."},
         {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1,"verses":"23","note":"아브라함의 형제 나홀의 아들 브두엘이 리브가를 낳았어요. 훗날 이삭의 아내가 될 사람이에요."},
         {"from":"나홀","to":"아브라함","label":"형제","kind":"family","directed":false,"weight":1,"verses":"20","note":"아브라함은 형제 나홀이 많은 자녀를 낳았다는 소식을 들었어요."}
       ],
@@ -1368,7 +1368,7 @@
       ],
       "rels": [
         {"from":"요셉","to":"야곱","label":"다시 만난 아들","kind":"family","directed":true,"weight":3,"verses":"29-30","note":"요셉이 고센에서 아버지를 만나 목을 안고 한참 울었고, 야곱은 이제 죽어도 좋다고 했어요."},
-        {"from":"하나님","to":"야곱","label":"약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"밤에 하나님이 야곱에게 애굽으로 내려가기를 두려워하지 말라, 내가 너와 함께 내려가고 다시 올라오게 하겠다고 하셨어요."},
+        {"from":"하나님","to":"야곱","label":"약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"하나님은 밤에 야곱에게 이집트로 가는 걸 겁내지 말라, 내가 함께 가서 큰 민족을 이루겠다고 하셨어요."},
         {"from":"유다","to":"야곱","label":"앞서 보낸 아들","kind":"ally","directed":true,"weight":1,"verses":"28","note":"야곱이 유다를 요셉에게 먼저 보내 고센 길을 안내받게 했어요."},
         {"from":"베냐민","to":"야곱","label":"막내아들","kind":"family","directed":true,"weight":1,"verses":"19, 21","note":"라헬이 낳은 아들 요셉과 베냐민 가운데 베냐민도 아버지와 함께 애굽으로 내려갔어요."}
       ],

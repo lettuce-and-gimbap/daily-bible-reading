@@ -122,7 +122,7 @@
         {"name":"하나님","role":"아빠 아버지","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"보내신 아들","kind":"family","directed":true,"weight":3,"verses":"4","note":"때가 차자 하나님은 아들을 여자에게서 나게 하시고 율법 아래 나게 하셔서 보내셨어요."},
+        {"from":"하나님","to":"예수","label":"보내신 아들","kind":"family","directed":true,"weight":3,"verses":"4","note":"하나님은 정하신 때가 되자 아들을 사람으로, 율법을 지키는 유대인으로 태어나게 해 보내셨어요."},
         {"from":"하나님","to":"갈라디아 사람들","label":"아빠 아버지","kind":"family","directed":true,"weight":3,"verses":"6-7","note":"하나님은 아들의 영을 보내 '아빠, 아버지' 하고 부르게 하셨으니, 이제 그들은 종이 아니라 자녀예요."},
         {"from":"바울","to":"갈라디아 사람들","label":"해산하는 수고","kind":"family","directed":true,"weight":3,"verses":"19","note":"그리스도가 그들 안에 모양을 갖추기까지, 바울은 아이를 낳는 고통을 다시 겪는다고 말해요."},
         {"from":"하갈","to":"아브라함","label":"여종","kind":"family","directed":false,"weight":1,"verses":"22-24","note":"아브라함의 두 아들 중 하나는 여종 하갈에게서 났고, 하갈은 시내산 옛 언약을 가리킨다고 풀어요."},
@@ -151,7 +151,7 @@
         {"name":"성령","role":"열매 맺게 하시는 영","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"갈라디아 사람들","label":"자유를 주심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"그리스도께서 우리를 자유롭게 하셨으니, 다시는 종의 멍에를 메지 말고 굳게 서라고 해요."},
+        {"from":"예수","to":"갈라디아 사람들","label":"자유를 주심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"그리스도가 우리를 풀어 주셨으니 다시 율법의 종살이로 돌아가지 말고 버티라고 해요."},
         {"from":"교란하는 자","to":"갈라디아 사람들","label":"진리를 막음","kind":"conflict","directed":true,"weight":2,"verses":"7-10","note":"잘 달리던 그들을 누가 막아 진리를 따르지 못하게 했느냐며, 흔드는 자는 심판을 받을 거라 해요."},
         {"from":"성령","to":"갈라디아 사람들","label":"열매 맺게 함","kind":"ally","directed":true,"weight":3,"verses":"16, 22-23","note":"성령을 따라 살면 육체의 욕심을 이루지 않고, 사랑과 기쁨과 화평 같은 열매가 맺힌다고 해요."},
         {"from":"바울","to":"교란하는 자","label":"경고한 사도","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"할례를 강요하며 교회를 흔드는 자들을 향해 바울은 아주 날카롭게 경고했어요."}

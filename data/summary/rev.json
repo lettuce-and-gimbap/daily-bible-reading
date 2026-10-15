@@ -446,10 +446,10 @@
         {"name":"하나님","role":"전능하신 만국의 왕","weight":3}
       ],
       "rels": [
-        {"from":"짐승을 이긴 자들","to":"하나님","label":"노래로 찬양","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"짐승을 이긴 사람들이 유리 바다 가에 서서 하나님의 하프를 들고 찬양했어요."},
+        {"from":"짐승을 이긴 자들","to":"하나님","label":"노래로 찬양","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"짐승을 이긴 사람들이 불이 섞인 유리 바다 곁에서 하프를 들고 하나님을 찬양했어요."},
         {"from":"네 생물 중 하나","to":"일곱 천사","label":"금 대접을 줌","kind":"ally","directed":true,"weight":2,"verses":"7","note":"네 생물 중 하나가 하나님의 진노가 가득 담긴 금 대접 일곱 개를 일곱 천사에게 주었어요."},
         {"from":"하나님","to":"일곱 천사","label":"진노를 맡기심","kind":"ally","directed":true,"weight":2,"verses":"1","note":"하나님의 진노가 마지막 일곱 재앙으로 끝나니, 일곱 천사가 그 재앙을 맡았어요."},
-        {"from":"짐승을 이긴 자들","to":"모세","label":"노래를 부름","kind":"other","directed":true,"weight":1,"verses":"3","note":"그들은 하나님의 종 모세의 노래와 어린 양의 노래를 불렀어요."}
+        {"from":"짐승을 이긴 자들","to":"모세","label":"노래를 부름","kind":"other","directed":true,"weight":1,"verses":"3","note":"그들은 옛날 모세가 부른 구원의 노래처럼 어린 양을 높이는 노래를 불렀어요."}
       ],
       "places": [
         {"name":"유리 바다","where":"불이 섞인 하늘의 바다","what":"이긴 자들이 선 곳","weight":2},

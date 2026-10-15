@@ -193,9 +193,9 @@
         {"name":"애굽 술객들","role":"요술로 흉내 냄","weight":2}
       ],
       "rels": [
-        {"from":"아론","to":"모세","label":"대언자","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님이 내가 너를 바로에게 신같이 되게 하였고 네 형 아론은 네 대언자가 되리라고 하셨어요."},
+        {"from":"아론","to":"모세","label":"대언자","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님은 말이 서툰 모세 대신 형 아론이 바로 앞에서 말을 전하게 하셨어요."},
         {"from":"바로","to":"모세","label":"완강한 왕","kind":"conflict","directed":true,"weight":3,"verses":"13-14, 22","note":"지팡이가 뱀이 되고 물이 피가 되어도 바로는 마음이 완강하여 모세의 말을 듣지 않았어요."},
-        {"from":"애굽 술객들","to":"아론","label":"흉내 낸 술객","kind":"conflict","directed":true,"weight":2,"verses":"11-12, 22","note":"애굽 술객들도 요술로 지팡이를 뱀으로 만들었지만 아론의 지팡이가 그들의 지팡이를 삼켰어요."}
+        {"from":"애굽 술객들","to":"아론","label":"흉내 낸 술객","kind":"conflict","directed":true,"weight":2,"verses":"11-12, 22","note":"이집트 마술사들도 지팡이를 뱀으로 만들었지만 아론의 지팡이가 그것들을 다 삼켜 버렸어요."}
       ],
       "places": [
         {"name":"나일 강","where":"애굽의 생명줄 큰 강","what":"첫째 재앙으로 피가 된 강","weight":3}
@@ -345,7 +345,7 @@
         {"name":"이스라엘 자손","role":"광야 길로 나아감","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"앞서 인도하심","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"하나님이 낮에는 구름 기둥, 밤에는 불기둥으로 백성 앞에서 길을 인도하셨어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"앞서 인도하심","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"하나님은 낮엔 구름 기둥, 밤엔 불기둥으로 백성 앞에 서서 길을 이끄셨어요."},
         {"from":"모세","to":"요셉","label":"약속을 지킴","kind":"ally","directed":true,"weight":2,"verses":"19","note":"모세는 요셉의 유언대로 요셉의 유골을 가지고 나왔어요."},
         {"from":"모세","to":"이스라엘 자손","label":"지도자","kind":"ally","directed":true,"weight":2,"verses":"3","note":"모세가 백성에게 종 되었던 애굽에서 나온 이날을 기억하라고 했어요."}
       ],
@@ -509,7 +509,7 @@
         {"name":"아론","role":"모세와 함께 올라오라 부름받음","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"업어 오신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"하나님이 내가 독수리 날개로 너희를 업어 내게로 인도했으니, 내 언약을 지키면 내 소유가 되리라고 하셨어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"업어 오신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"하나님은 독수리가 새끼를 업듯 백성을 이끌어 오셨으니, 언약을 지키면 소중한 내 백성이 될 거라 하셨어요."},
         {"from":"모세","to":"하나님","label":"중보자","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"모세가 하나님의 말씀을 백성에게 전하고 백성의 대답을 다시 하나님께 아뢰었어요."},
         {"from":"이스라엘 자손","to":"하나님","label":"순종을 다짐함","kind":"ally","directed":true,"weight":2,"verses":"8","note":"백성이 함께 하나님이 말씀하신 것을 우리가 다 행하겠다고 대답했어요."},
         {"from":"아론","to":"모세","label":"함께 오를 형","kind":"ally","directed":false,"weight":1,"verses":"24","note":"하나님이 모세에게 내려가서 아론과 함께 올라오라고 하셨어요."}
@@ -813,7 +813,7 @@
         {"from":"이스라엘 자손","to":"아론","label":"우상을 요구함","kind":"conflict","directed":true,"weight":3,"verses":"1-4","note":"모세가 더디 내려오자 백성이 아론에게 우리를 인도할 신을 만들라 했고, 아론은 금송아지를 만들었어요."},
         {"from":"모세","to":"하나님","label":"중보한 종","kind":"ally","directed":true,"weight":3,"verses":"11-14, 31-32","note":"모세가 백성의 죄를 용서해 주시고, 아니면 주의 책에서 내 이름을 지워 달라며 간절히 중보했어요."},
         {"from":"모세","to":"아론","label":"꾸짖은 동생","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"모세가 아론에게 이 백성이 무엇을 했기에 큰 죄에 빠지게 했느냐고 꾸짖었어요."},
-        {"from":"레위 자손","to":"모세","label":"편에 선 지파","kind":"ally","directed":true,"weight":2,"verses":"26","note":"모세가 여호와의 편에 있는 자는 내게로 나아오라 하자 레위 자손이 다 모였어요."},
+        {"from":"레위 자손","to":"모세","label":"편에 선 지파","kind":"ally","directed":true,"weight":2,"verses":"26","note":"금송아지 사건 뒤 모세가 주님 편에 설 사람은 나오라 하자 레위 지파가 모두 모여들었어요."},
         {"from":"여호수아","to":"모세","label":"부하","kind":"ally","directed":true,"weight":1,"verses":"17","note":"산에서 내려올 때 여호수아가 진에서 싸우는 소리가 난다고 모세에게 말했어요."}
       ],
       "places": [

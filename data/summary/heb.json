@@ -159,7 +159,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"아브라함","label":"맹세로 약속","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"하나님은 자기보다 큰 이가 없어 자기 이름으로 맹세하며 아브라함에게 복을 약속하셨어요."},
-        {"from":"타락한 자들","to":"예수","label":"다시 못 박음","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"은혜를 맛보고도 떠난 사람은 하나님의 아들을 다시 십자가에 못 박고 욕보이는 셈이래요."},
+        {"from":"타락한 자들","to":"예수","label":"다시 못 박음","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"은혜를 다 맛보고 등을 돌리는 건 하나님의 아들을 또다시 못 박고 망신 주는 거나 같대요."},
         {"from":"하나님","to":"사랑하는 자들","label":"섬김을 기억함","kind":"ally","directed":true,"weight":2,"verses":"10","note":"하나님은 그들이 성도를 섬기며 보인 사랑을 잊지 않으세요."},
         {"from":"예수","to":"사랑하는 자들","label":"앞서 들어가심","kind":"ally","directed":true,"weight":2,"verses":"19-20","note":"예수님이 우리보다 먼저 휘장 안으로 들어가셔서 우리 소망의 닻이 되셨어요."}
       ],
@@ -307,7 +307,7 @@
         {"name":"하나님","role":"상 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"아벨","to":"가인","label":"형제","kind":"family","directed":false,"weight":1,"verses":"4","note":"믿음으로 아벨은 가인보다 더 나은 제물을 드려 의롭다는 인정을 받았어요."},
+        {"from":"아벨","to":"가인","label":"형제","kind":"family","directed":false,"weight":1,"verses":"4","note":"아벨은 믿음으로 가인보다 나은 예물을 바쳤고, 하나님은 그를 옳다고 인정하셨어요."},
         {"from":"아브라함","to":"사라","label":"부부","kind":"family","directed":false,"weight":2,"verses":"11","note":"믿음으로 사라도 나이가 많았지만 약속하신 분을 믿어 아이를 가질 힘을 얻었어요."},
         {"from":"아브라함","to":"이삭","label":"드린 아버지","kind":"family","directed":true,"weight":2,"verses":"17-19","note":"아브라함은 하나님이 죽은 사람도 살리실 줄 믿고 외아들 이삭을 바쳤어요."},
         {"from":"모세","to":"하나님","label":"백성과 고난 택함","kind":"ally","directed":true,"weight":3,"verses":"24-26","note":"모세는 바로의 공주 아들로 누릴 즐거움보다 하나님 백성과 함께 고난받는 길을 골랐어요."},
@@ -373,7 +373,7 @@
         {"name":"하나님","role":"평강의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"성도들","label":"피로 거룩케 함","kind":"ally","directed":true,"weight":3,"verses":"12","note":"예수님은 자기 피로 백성을 거룩하게 하시려고 성문 밖에서 고난을 받으셨어요."},
+        {"from":"예수","to":"성도들","label":"피로 거룩케 함","kind":"ally","directed":true,"weight":3,"verses":"12","note":"예수님은 자기 피로 백성을 깨끗하게 하시려고 성 밖에서 고난당하셨어요."},
         {"from":"성도들","to":"인도하는 자들","label":"순종할 대상","kind":"ally","directed":true,"weight":2,"verses":"7, 17","note":"말씀을 전해 준 지도자들을 기억하고, 그들을 따르고 존중해서 기쁨으로 일하게 하래요."},
         {"from":"하나님","to":"예수","label":"이끌어 내심","kind":"ally","directed":true,"weight":2,"verses":"20","note":"평화의 하나님이 영원한 언약의 피로 큰 목자이신 예수님을 죽은 자들 가운데서 이끌어 내셨어요."},
         {"from":"성도들","to":"갇힌 자들","label":"돌볼 이들","kind":"ally","directed":true,"weight":1,"verses":"3","note":"갇힌 사람들을 자기도 함께 갇힌 것처럼 기억하고 돌보래요."},
