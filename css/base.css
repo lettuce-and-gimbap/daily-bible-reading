@@ -151,3 +151,8 @@ textarea { resize: vertical; line-height: 1.6; }
   main { padding: 12px 10px; }
   .card { padding: 15px; }
 }
+
+/* 오른쪽 위 버전 · 만든 사람 */
+.app-sign { display: grid; justify-items: end; line-height: 1.1; color: var(--muted); font-size: .64rem; white-space: nowrap; }
+.app-sign b { font-weight: 700; color: var(--ink); }
+.app-sign small { display: inline-flex; align-items: center; gap: 2px; font-size: .6rem; }
