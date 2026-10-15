@@ -247,3 +247,10 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .rd-clip:has(.sheet:not([hidden])) .paste-fab { display: none; }
 .vp-vers { display: flex; overflow-x: auto; gap: 6px; scrollbar-width: none; flex: none; }
 .vp-vers .opt { flex: none; padding: 6px 11px; font-size: .8rem; }
+
+/* 구절 패널이 화면 폭을 넘지 않게: 그리드 칸이 글 길이만큼 늘어나지 않도록 하고 긴 글은 줄바꿈 */
+.sheet-body { grid-template-columns: minmax(0, 1fr); }
+.vp { display: grid; gap: 12px; min-width: 0; }
+.vp-list { min-width: 0; }
+.vp-row { grid-template-columns: auto auto minmax(0, 1fr); min-width: 0; }
+.vp-txt { min-width: 0; overflow-wrap: anywhere; word-break: keep-all; }
