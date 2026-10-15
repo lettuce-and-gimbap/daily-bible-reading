@@ -383,6 +383,7 @@ function goToChapter(idx) {
   if (pr.seq.includes(idx)) { freeChapter = null; viewingDay = dayOfChapter(pr.days, idx); }
   else freeChapter = idx;
   refreshReader(true);
+  openSheet("verses", renderReaderSheet); // 장을 옮기면 늘 본문 탭으로
 }
 
 function renderGotoSheet(body) {
