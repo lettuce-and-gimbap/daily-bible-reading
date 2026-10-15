@@ -19,7 +19,7 @@
         {"name":"하나님","role":"사람에게 수고를 주신 분","weight":1}
       ],
       "rels": [
-        {"from":"전도자","to":"하나님","label":"인생을 묻는 이","kind":"other","directed":true,"weight":2}
+        {"from":"전도자","to":"하나님","label":"인생을 묻는 이","kind":"other","directed":true,"weight":2,"verses":"2-3, 13","note":"전도자가 헛되고 헛되며 모든 것이 헛되다, 해 아래서 수고하는 것이 무엇이 유익한가 하고 물어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"이스라엘의 수도","what":"전도자가 왕으로 다스린 곳","weight":1}
@@ -41,8 +41,8 @@
         {"name":"하나님","role":"낙을 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"전도자","to":"뒤에 올 사람","label":"물려줄 이","kind":"other","directed":true,"weight":1},
-        {"from":"하나님","to":"전도자","label":"낙을 주시는 분","kind":"ally","directed":true,"weight":2}
+        {"from":"전도자","to":"뒤에 올 사람","label":"물려줄 이","kind":"other","directed":true,"weight":1,"verses":"18-19","note":"내가 수고한 모든 것을 뒤에 올 사람에게 남겨 주게 되리니 그가 지혜자일지 우매자일지 누가 알랴 하고 해요."},
+        {"from":"하나님","to":"전도자","label":"낙을 주시는 분","kind":"ally","directed":true,"weight":2,"verses":"24-26","note":"사람이 먹고 마시며 수고하는 중에 낙을 누리는 것도 하나님의 손에서 나오는 것이라고 해요."}
       ],
       "places": [
         {"name":"포도원과 동산","where":"왕이 일군 땅","what":"전도자가 큰 사업을 벌인 곳","weight":1}
@@ -63,9 +63,9 @@
         {"name":"하나님","role":"때를 따라 아름답게 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"사람","label":"영원을 심으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"사람","to":"하나님","label":"경외할 이","kind":"ally","directed":true,"weight":2},
-        {"from":"전도자","to":"하나님","label":"고백한 이","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"사람","label":"영원을 심으신 분","kind":"ally","directed":true,"weight":3,"verses":"11","note":"하나님이 모든 것을 때를 따라 아름답게 하셨고 사람들에게는 영원을 사모하는 마음을 주셨다고 해요."},
+        {"from":"사람","to":"하나님","label":"경외할 이","kind":"ally","directed":true,"weight":2,"verses":"14","note":"하나님이 행하시는 모든 것은 영원히 있으니 사람이 그 앞에서 경외하게 하려 하심이라고 해요."},
+        {"from":"전도자","to":"하나님","label":"고백한 이","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"사람들이 사는 동안 기뻐하며 선을 행하는 것보다 나은 것이 없고 그것이 하나님의 선물인 줄을 안다고 해요."}
       ],
       "places": [
 
@@ -90,8 +90,8 @@
         {"name":"늙고 둔한 왕","role":"충고를 듣지 않는 왕","weight":1}
       ],
       "rels": [
-        {"from":"학대하는 자","to":"학대받는 자","label":"억누르는 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"지혜로운 소년","to":"늙고 둔한 왕","label":"대조","kind":"conflict","directed":false,"weight":1}
+        {"from":"학대하는 자","to":"학대받는 자","label":"억누르는 자","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"학대받는 자들의 눈물을 보니 그들에게 위로자가 없고 학대하는 자들의 손에는 권세가 있다고 해요."},
+        {"from":"지혜로운 소년","to":"늙고 둔한 왕","label":"대조","kind":"conflict","directed":false,"weight":1,"verses":"13","note":"가난하나 지혜로운 소년이 늙고 둔하여 경고를 더 받을 줄 모르는 왕보다 낫다고 해요."}
       ],
       "places": [
 
@@ -115,9 +115,9 @@
         {"name":"하나님","role":"하늘에 계신 분","weight":3}
       ],
       "rels": [
-        {"from":"전도자","to":"우매한 자","label":"경계한 왕","kind":"conflict","directed":true,"weight":1},
-        {"from":"하나님","to":"부자","label":"몫을 주신 분","kind":"other","directed":true,"weight":2},
-        {"from":"부자","to":"가난한 자","label":"학대하는 자","kind":"conflict","directed":true,"weight":1}
+        {"from":"전도자","to":"우매한 자","label":"경계한 왕","kind":"conflict","directed":true,"weight":1,"verses":"1-2","note":"너는 하나님의 집에 들어갈 때 네 발을 삼가라, 우매한 자들처럼 제물 드리기보다 말씀을 들으라고 해요."},
+        {"from":"하나님","to":"부자","label":"몫을 주신 분","kind":"other","directed":true,"weight":2,"verses":"19","note":"하나님께서 재물과 부요를 주시고 그것을 누리게 하시는 것은 하나님의 선물이라고 해요."},
+        {"from":"부자","to":"가난한 자","label":"학대하는 자","kind":"conflict","directed":true,"weight":1,"verses":"8","note":"가난한 자를 학대하는 것을 보아도 이상히 여기지 말라, 높은 자보다 더 높은 자가 감찰한다고 해요."}
       ],
       "places": [
         {"name":"하나님의 집","where":"성전","what":"발을 삼가고 들어갈 곳","weight":2}
@@ -139,8 +139,8 @@
         {"name":"하나님","role":"재물을 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"낯선 사람","to":"누리지 못한 부자","label":"대신 누리는 자","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"누리지 못한 부자","label":"재물 주신 분","kind":"other","directed":true,"weight":2}
+        {"from":"낯선 사람","to":"누리지 못한 부자","label":"대신 누리는 자","kind":"other","directed":true,"weight":2,"verses":"2","note":"하나님이 재물을 주셨으나 그것을 누리게 하지 않으셔서 다른 사람이 누리니 이것도 헛되다고 해요."},
+        {"from":"하나님","to":"누리지 못한 부자","label":"재물 주신 분","kind":"other","directed":true,"weight":2,"verses":"2","note":"하나님이 어떤 사람에게 부와 존귀를 주셨지만 그것을 누릴 능력은 주지 않으셨다고 해요."}
       ],
       "places": [
 
@@ -164,9 +164,9 @@
         {"name":"하나님","role":"두 날을 함께 두신 분","weight":3}
       ],
       "rels": [
-        {"from":"지혜자","to":"우매자","label":"대조","kind":"conflict","directed":false,"weight":2},
-        {"from":"하나님","to":"사람","label":"정직하게 지으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"사람","to":"하나님","label":"많은 꾀를 낸 이","kind":"conflict","directed":true,"weight":2}
+        {"from":"지혜자","to":"우매자","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"4-5","note":"지혜자의 마음은 초상집에 있고 우매한 자의 마음은 혼인집에 있으며, 우매자의 노래보다 지혜자의 책망이 낫다고 해요."},
+        {"from":"하나님","to":"사람","label":"정직하게 지으신 분","kind":"ally","directed":true,"weight":3,"verses":"29","note":"하나님은 사람을 정직하게 지으셨으나 사람이 많은 꾀들을 낸 것이라고 해요."},
+        {"from":"사람","to":"하나님","label":"많은 꾀를 낸 이","kind":"conflict","directed":true,"weight":2,"verses":"29","note":"전도자가 깨달은 것은 사람이 스스로 많은 꾀를 낸다는 것이었어요."}
       ],
       "places": [
 
@@ -190,9 +190,9 @@
         {"name":"하나님","role":"모든 일을 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님을 경외하는 자","to":"하나님","label":"경외하는 이","kind":"ally","directed":true,"weight":3},
-        {"from":"악인","to":"하나님을 경외하는 자","label":"대조","kind":"conflict","directed":false,"weight":2},
-        {"from":"전도자","to":"왕","label":"명령을 지킬 이","kind":"ally","directed":true,"weight":1}
+        {"from":"하나님을 경외하는 자","to":"하나님","label":"경외하는 이","kind":"ally","directed":true,"weight":3,"verses":"12","note":"죄인이 백 번이나 악을 행하고 장수해도 하나님을 경외하는 자들이 잘될 것을 내가 안다고 해요."},
+        {"from":"악인","to":"하나님을 경외하는 자","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"13","note":"악인은 잘되지 못하며 그림자와 같은 그 날이 길지 못하리라고 해요."},
+        {"from":"전도자","to":"왕","label":"명령을 지킬 이","kind":"ally","directed":true,"weight":1,"verses":"2","note":"내가 권하노니 왕의 명령을 지키라, 이미 하나님 앞에서 맹세했음이라고 해요."}
       ],
       "places": [
 
@@ -216,9 +216,9 @@
         {"name":"하나님","role":"의인을 손에 두신 분","weight":2}
       ],
       "rels": [
-        {"from":"큰 왕","to":"가난한 지혜자","label":"에워싼 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"사랑하는 아내","to":"전도자","label":"함께 살 아내","kind":"family","directed":true,"weight":1},
-        {"from":"하나님","to":"가난한 지혜자","label":"손에 두신 분","kind":"ally","directed":true,"weight":1}
+        {"from":"큰 왕","to":"가난한 지혜자","label":"에워싼 왕","kind":"conflict","directed":true,"weight":3,"verses":"14-15","note":"큰 왕이 작은 성을 에워쌌는데 가난한 지혜자가 지혜로 성을 건졌으나 아무도 그를 기억하지 않았다고 해요."},
+        {"from":"사랑하는 아내","to":"전도자","label":"함께 살 아내","kind":"family","directed":true,"weight":1,"verses":"9","note":"너의 헛된 평생에 하나님이 주신 모든 날에 너의 사랑하는 아내와 함께 즐겁게 살지어다 하고 해요."},
+        {"from":"하나님","to":"가난한 지혜자","label":"손에 두신 분","kind":"ally","directed":true,"weight":1,"verses":"1","note":"의인들과 지혜자들과 그들의 행위가 다 하나님의 손안에 있다고 해요."}
       ],
       "places": [
         {"name":"작은 성","where":"사람이 적은 성읍","what":"가난한 지혜자가 건진 곳","weight":2}
@@ -242,9 +242,9 @@
         {"name":"왕","role":"함부로 저주하면 안 될 이","weight":1}
       ],
       "rels": [
-        {"from":"지혜자","to":"우매자","label":"대조","kind":"conflict","directed":false,"weight":3},
-        {"from":"지혜자","to":"주권자","label":"공손히 섬김","kind":"ally","directed":true,"weight":1},
-        {"from":"게으른 자","to":"우매자","label":"닮은 사람","kind":"ally","directed":false,"weight":1}
+        {"from":"지혜자","to":"우매자","label":"대조","kind":"conflict","directed":false,"weight":3,"verses":"2, 12","note":"지혜자의 마음은 오른쪽에 있고 우매자의 마음은 왼쪽에 있으며, 지혜자의 입의 말은 은혜롭다고 해요."},
+        {"from":"지혜자","to":"주권자","label":"공손히 섬김","kind":"ally","directed":true,"weight":1,"verses":"4","note":"주권자가 네게 분을 일으키거든 너는 네 자리를 떠나지 말라, 공손함이 큰 허물을 그치게 한다고 해요."},
+        {"from":"게으른 자","to":"우매자","label":"닮은 사람","kind":"ally","directed":false,"weight":1,"verses":"18","note":"게으름으로 서까래가 내려앉고 손을 놓으면 집이 샌다고 해요."}
       ],
       "places": [
 
@@ -266,9 +266,9 @@
         {"name":"하나님","role":"만사를 이루시는 분","weight":2}
       ],
       "rels": [
-        {"from":"전도자","to":"젊은이","label":"권면한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"젊은이","label":"심판하실 분","kind":"other","directed":true,"weight":2},
-        {"from":"전도자","to":"농부","label":"씨 뿌리라 권함","kind":"ally","directed":true,"weight":1}
+        {"from":"전도자","to":"젊은이","label":"권면한 왕","kind":"ally","directed":true,"weight":3,"verses":"9","note":"청년이여 네 어린 때를 즐거워하라, 그러나 하나님이 이 모든 일로 심판하실 줄 알라고 해요."},
+        {"from":"하나님","to":"젊은이","label":"심판하실 분","kind":"other","directed":true,"weight":2,"verses":"9","note":"하나님이 네 모든 행위를 심판하실 줄 알라고 해요."},
+        {"from":"전도자","to":"농부","label":"씨 뿌리라 권함","kind":"ally","directed":true,"weight":1,"verses":"1, 6","note":"너는 네 떡을 물 위에 던지라, 아침에 씨를 뿌리고 저녁에도 손을 놓지 말라고 권해요."}
       ],
       "places": [
 
@@ -291,9 +291,9 @@
         {"name":"하나님","role":"영을 주시고 심판하시는 창조주","weight":3}
       ],
       "rels": [
-        {"from":"전도자","to":"청년","label":"권면한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"청년","to":"하나님","label":"기억할 창조주","kind":"ally","directed":true,"weight":3},
-        {"from":"한 목자","to":"전도자","label":"말씀 주신 이","kind":"ally","directed":true,"weight":1}
+        {"from":"전도자","to":"청년","label":"권면한 왕","kind":"ally","directed":true,"weight":3,"verses":"1","note":"너는 청년의 때에 너의 창조주를 기억하라, 곤고한 날이 이르기 전에 하라고 권해요."},
+        {"from":"청년","to":"하나님","label":"기억할 창조주","kind":"ally","directed":true,"weight":3,"verses":"13","note":"일의 결국을 다 들었으니 하나님을 경외하고 그의 명령들을 지킬지어다 이것이 사람의 본분이라고 해요."},
+        {"from":"한 목자","to":"전도자","label":"말씀 주신 이","kind":"ally","directed":true,"weight":1,"verses":"11","note":"지혜자들의 말씀은 잘 박힌 못 같으니 다 한 목자가 주신 바라고 해요."}
       ],
       "places": [
 
