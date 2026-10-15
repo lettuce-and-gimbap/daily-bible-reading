@@ -22,11 +22,11 @@
         {"name":"데메드리오","role":"증거를 받은 이","weight":2}
       ],
       "rels": [
-        {"from":"장로","to":"가이오","label":"사랑하는 이","kind":"ally","directed":true,"weight":3},
-        {"from":"가이오","to":"나그네 된 형제들","label":"신실히 대접함","kind":"ally","directed":true,"weight":2},
-        {"from":"디오드레베","to":"장로","label":"비방하는 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"디오드레베","to":"나그네 된 형제들","label":"맞아들이지 않음","kind":"conflict","directed":true,"weight":2},
-        {"from":"장로","to":"데메드리오","label":"추천함","kind":"ally","directed":true,"weight":2}
+        {"from":"장로","to":"가이오","label":"사랑하는 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"장로는 사랑하는 가이오가 영혼이 잘되듯 모든 일이 잘되고 건강하기를 빌었어요."},
+        {"from":"가이오","to":"나그네 된 형제들","label":"신실히 대접함","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"가이오는 낯선 순회 전도자들까지 신실하게 대접해 교회 앞에서 칭찬받았어요."},
+        {"from":"디오드레베","to":"장로","label":"비방하는 자","kind":"conflict","directed":true,"weight":3,"verses":"9-10","note":"으뜸 되기를 좋아하는 디오드레베는 장로를 받아들이지 않고 나쁜 말로 헐뜯었어요."},
+        {"from":"디오드레베","to":"나그네 된 형제들","label":"맞아들이지 않음","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"그는 형제들을 맞아들이지 않을 뿐 아니라 맞으려는 사람들까지 교회에서 내쫓았어요."},
+        {"from":"장로","to":"데메드리오","label":"추천함","kind":"ally","directed":true,"weight":2,"verses":"12","note":"데메드리오는 모든 사람과 진리 자체에게 좋은 평을 받는다고 장로가 추천했어요."}
       ],
       "places": [
         {"name":"교회","where":"가이오가 속한 교회","what":"디오드레베가 내쫓는 곳","weight":1}

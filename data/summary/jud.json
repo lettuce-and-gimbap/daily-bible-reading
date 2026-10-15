@@ -29,12 +29,12 @@
         {"name":"하나님","role":"능히 보호하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"유다","to":"야고보","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"가만히 들어온 자들","to":"예수","label":"주를 부인함","kind":"conflict","directed":true,"weight":3},
-        {"from":"미가엘","to":"마귀","label":"다툰 천사장","kind":"conflict","directed":true,"weight":2},
-        {"from":"가만히 들어온 자들","to":"가인·발람·고라","label":"길을 따름","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"부르심을 받은 자들","label":"보호하시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"유다","to":"부르심을 받은 자들","label":"싸우라 권함","kind":"ally","directed":true,"weight":2}
+        {"from":"유다","to":"야고보","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1","note":"편지를 쓴 유다는 자신을 예수 그리스도의 종이요 야고보의 형제라고 소개해요."},
+        {"from":"가만히 들어온 자들","to":"예수","label":"주를 부인함","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"몰래 끼어든 경건하지 않은 자들이 은혜를 방탕으로 바꾸고 유일한 주인 예수님을 부인했어요."},
+        {"from":"미가엘","to":"마귀","label":"다툰 천사장","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"천사장 미가엘도 모세의 시체로 마귀와 다툴 때 스스로 정죄하지 않고 '주님이 꾸짖으시기를' 했어요."},
+        {"from":"가만히 들어온 자들","to":"가인·발람·고라","label":"길을 따름","kind":"other","directed":true,"weight":2,"verses":"11","note":"그들은 가인의 길을 걷고 삯을 위해 발람처럼 빠지고 고라처럼 거역하다 망했어요."},
+        {"from":"하나님","to":"부르심을 받은 자들","label":"보호하시는 분","kind":"ally","directed":true,"weight":3,"verses":"24","note":"넘어지지 않게 지키시고 기쁨으로 영광 앞에 흠 없이 서게 하실 분이 하나님이래요."},
+        {"from":"유다","to":"부르심을 받은 자들","label":"싸우라 권함","kind":"ally","directed":true,"weight":2,"verses":"3","note":"유다는 성도에게 단번에 주신 믿음을 위해 힘써 싸우라고 권했어요."}
       ],
       "places": [
         {"name":"애굽","where":"출애굽의 땅","what":"백성을 구원해 내신 곳","weight":1},

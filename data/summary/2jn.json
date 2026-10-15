@@ -23,10 +23,10 @@
         {"name":"하나님","role":"아버지","weight":2}
       ],
       "rels": [
-        {"from":"장로","to":"택하심을 받은 부녀","label":"사랑하는 이","kind":"ally","directed":true,"weight":3},
-        {"from":"부녀의 자녀들","to":"택하심을 받은 부녀","label":"자녀들","kind":"family","directed":true,"weight":2},
-        {"from":"미혹하는 자","to":"예수","label":"오심을 부인함","kind":"conflict","directed":true,"weight":3},
-        {"from":"장로","to":"미혹하는 자","label":"들이지 말라 함","kind":"conflict","directed":true,"weight":2}
+        {"from":"장로","to":"택하심을 받은 부녀","label":"사랑하는 이","kind":"ally","directed":true,"weight":3,"verses":"1, 5","note":"장로는 진리 안에서 사랑하는 택함받은 부인에게 서로 사랑하자고 부탁했어요."},
+        {"from":"부녀의 자녀들","to":"택하심을 받은 부녀","label":"자녀들","kind":"family","directed":true,"weight":2,"verses":"4","note":"그 부인의 자녀들 가운데 진리 안에서 사는 이들이 있어 장로가 크게 기뻐했어요."},
+        {"from":"미혹하는 자","to":"예수","label":"오심을 부인함","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"예수 그리스도가 육신으로 오신 것을 인정하지 않는 사람들이 세상에 많이 나왔어요."},
+        {"from":"장로","to":"미혹하는 자","label":"들이지 말라 함","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"그런 가르침을 가지고 오는 사람은 집에 들이지도 인사하지도 말라고 했어요."}
       ],
       "places": [
         {"name":"부녀의 집","where":"교회가 모이는 집","what":"미혹하는 자를 들이지 말 곳","weight":1}

@@ -23,10 +23,10 @@
         {"name":"하나님","role":"사랑하는 아들이라 하신 분","weight":2}
       ],
       "rels": [
-        {"from":"시몬 베드로","to":"성도들","label":"생각나게 함","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"예수","label":"기뻐하는 아들","kind":"family","directed":true,"weight":3},
-        {"from":"시몬 베드로","to":"예수","label":"위엄을 본 증인","kind":"ally","directed":true,"weight":2},
-        {"from":"성령","to":"성도들","label":"예언을 주심","kind":"ally","directed":true,"weight":1}
+        {"from":"시몬 베드로","to":"성도들","label":"생각나게 함","kind":"ally","directed":true,"weight":3,"verses":"12-15","note":"베드로는 곧 떠날 줄 알기에, 그들이 이미 아는 진리를 거듭 일깨워 두려 했어요."},
+        {"from":"하나님","to":"예수","label":"기뻐하는 아들","kind":"family","directed":true,"weight":3,"verses":"17","note":"하나님이 예수님께 '이는 내 사랑하는 아들, 내가 기뻐하는 자'라고 하셨어요."},
+        {"from":"시몬 베드로","to":"예수","label":"위엄을 본 증인","kind":"ally","directed":true,"weight":2,"verses":"16, 18","note":"베드로는 꾸며 낸 이야기가 아니라, 거룩한 산에서 그분의 위엄을 직접 본 증인이에요."},
+        {"from":"성령","to":"성도들","label":"예언을 주심","kind":"ally","directed":true,"weight":1,"verses":"21","note":"예언은 사람의 뜻이 아니라 성령에 이끌린 사람들이 하나님께 받아 말한 거래요."}
       ],
       "places": [
         {"name":"거룩한 산","where":"변화산","what":"음성을 들은 곳","weight":2}
@@ -52,11 +52,11 @@
         {"name":"하나님","role":"경건한 자를 건지시는 분","weight":3}
       ],
       "rels": [
-        {"from":"거짓 선생들","to":"베드로","label":"교회를 미혹함","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"노아","label":"보존하심","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"롯","label":"건지심","kind":"ally","directed":true,"weight":2},
-        {"from":"거짓 선생들","to":"발람","label":"길을 따름","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"범죄한 천사들","label":"심판하심","kind":"conflict","directed":true,"weight":1}
+        {"from":"거짓 선생들","to":"베드로","label":"교회를 미혹함","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"백성 가운데 거짓 선지자가 있었듯 교회에도 거짓 선생들이 몰래 들어와 사람들을 속일 거래요."},
+        {"from":"하나님","to":"노아","label":"보존하심","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님은 옛 세상을 홍수로 심판하셨지만 의를 전하던 노아와 일곱 식구는 지키셨어요."},
+        {"from":"하나님","to":"롯","label":"건지심","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"하나님은 악한 사람들 사이에서 괴로워하던 의로운 롯을 건져 내셨어요."},
+        {"from":"거짓 선생들","to":"발람","label":"길을 따름","kind":"other","directed":true,"weight":2,"verses":"15","note":"거짓 선생들은 불의한 삯을 사랑한 발람의 길을 따라갔어요."},
+        {"from":"하나님","to":"범죄한 천사들","label":"심판하심","kind":"conflict","directed":true,"weight":1,"verses":"4","note":"하나님은 죄지은 천사들도 봐주지 않고 심판 때까지 어둠에 가두셨어요."}
       ],
       "places": [
         {"name":"소돔과 고모라","where":"사해 근처 성","what":"멸망한 성","weight":2}
@@ -80,10 +80,10 @@
         {"name":"하나님","role":"오래 참으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"조롱하는 자들","to":"하나님","label":"약속을 조롱함","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"사랑하는 자들","label":"오래 참으심","kind":"ally","directed":true,"weight":3},
-        {"from":"베드로","to":"바울","label":"사랑하는 형제","kind":"ally","directed":false,"weight":2},
-        {"from":"베드로","to":"사랑하는 자들","label":"권면한 사도","kind":"ally","directed":true,"weight":2}
+        {"from":"조롱하는 자들","to":"하나님","label":"약속을 조롱함","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"마지막 때에 조롱하는 자들이 '주님이 오신다더니 어디 있느냐' 하며 비웃을 거래요."},
+        {"from":"하나님","to":"사랑하는 자들","label":"오래 참으심","kind":"ally","directed":true,"weight":3,"verses":"9","note":"주님이 늦으시는 게 아니라, 아무도 망하지 않고 다 회개하기를 바라며 오래 참으시는 거래요."},
+        {"from":"베드로","to":"바울","label":"사랑하는 형제","kind":"ally","directed":false,"weight":2,"verses":"15-16","note":"베드로는 사랑하는 형제 바울이 받은 지혜로 쓴 편지들을 언급해요."},
+        {"from":"베드로","to":"사랑하는 자들","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"17-18","note":"미혹되어 흔들리지 말고 은혜와 지식에서 자라 가라고 권했어요."}
       ],
       "places": [
         {"name":"새 하늘과 새 땅","where":"의가 있는 곳","what":"약속된 세상","weight":2}

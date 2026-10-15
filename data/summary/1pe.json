@@ -23,10 +23,10 @@
         {"name":"하나님","role":"거듭나게 하신 아버지","weight":3}
       ],
       "rels": [
-        {"from":"베드로","to":"흩어진 나그네들","label":"편지한 사도","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"흩어진 나그네들","label":"거듭나게 하심","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"흩어진 나그네들","label":"피로 대속함","kind":"ally","directed":true,"weight":3},
-        {"from":"선지자들","to":"흩어진 나그네들","label":"은혜를 예언함","kind":"ally","directed":true,"weight":1}
+        {"from":"베드로","to":"흩어진 나그네들","label":"편지한 사도","kind":"ally","directed":true,"weight":3,"verses":"1","note":"사도 베드로는 여러 지방에 흩어져 나그네로 사는 택함받은 사람들에게 편지했어요."},
+        {"from":"하나님","to":"흩어진 나그네들","label":"거듭나게 하심","kind":"ally","directed":true,"weight":3,"verses":"3","note":"하나님은 큰 자비로 예수님의 부활을 통해 그들을 다시 태어나게 해 살아 있는 소망을 주셨어요."},
+        {"from":"예수","to":"흩어진 나그네들","label":"피로 대속함","kind":"ally","directed":true,"weight":3,"verses":"18-19","note":"그들이 헛된 삶에서 풀려난 건 은이나 금이 아니라 흠 없는 어린 양 같은 그리스도의 피 덕분이에요."},
+        {"from":"선지자들","to":"흩어진 나그네들","label":"은혜를 예언함","kind":"ally","directed":true,"weight":1,"verses":"10-12","note":"옛 선지자들은 그들에게 올 은혜를 미리 말하고 애써 살폈어요."}
       ],
       "places": [
         {"name":"본도·갈라디아·갑바도기아·아시아·비두니아","where":"소아시아 여러 지방","what":"나그네들이 흩어진 곳","weight":3},
@@ -53,11 +53,11 @@
         {"name":"하나님","role":"빛으로 부르신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"성도들","label":"본을 끼침","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"성도들","label":"빛으로 부르심","kind":"ally","directed":true,"weight":3},
-        {"from":"성도들","to":"왕과 총독","label":"순종할 이들","kind":"other","directed":true,"weight":1},
-        {"from":"사환들","to":"주인들","label":"순종하는 관계","kind":"other","directed":true,"weight":1},
-        {"from":"베드로","to":"성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"성도들","label":"본을 끼침","kind":"ally","directed":true,"weight":3,"verses":"21-23","note":"예수님은 고난받으며 욕을 갚지 않으셨고, 우리가 그 발자취를 따르도록 본을 남기셨어요."},
+        {"from":"하나님","to":"성도들","label":"빛으로 부르심","kind":"ally","directed":true,"weight":3,"verses":"9","note":"하나님은 그들을 어둠에서 불러내 놀라운 빛으로 들어오게 하셨어요."},
+        {"from":"성도들","to":"왕과 총독","label":"순종할 이들","kind":"other","directed":true,"weight":1,"verses":"13-14","note":"주님을 위해 왕이나 총독 같은 사람이 세운 모든 제도에 따르라고 해요."},
+        {"from":"사환들","to":"주인들","label":"순종하는 관계","kind":"other","directed":true,"weight":1,"verses":"18","note":"종들은 착한 주인뿐 아니라 까다로운 주인에게도 두려운 마음으로 따르라고 해요."},
+        {"from":"베드로","to":"성도들","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"11","note":"나그네 같은 그들에게 영혼을 해치는 육체의 욕심을 멀리하라고 베드로가 권했어요."}
       ],
       "places": [
         {"name":"신령한 집","where":"성도로 세워지는 성전","what":"산 돌들로 지어지는 곳","weight":2}
@@ -84,10 +84,10 @@
         {"name":"하나님","role":"인도하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"남편들","to":"아내들","label":"부부","kind":"family","directed":false,"weight":3},
-        {"from":"사라","to":"아브라함","label":"순종한 아내","kind":"family","directed":false,"weight":2},
-        {"from":"예수","to":"하나님","label":"우리를 인도함","kind":"ally","directed":true,"weight":3},
-        {"from":"베드로","to":"아내들","label":"권면한 사도","kind":"ally","directed":true,"weight":1}
+        {"from":"남편들","to":"아내들","label":"부부","kind":"family","directed":false,"weight":3,"verses":"1, 7","note":"아내는 남편에게 순종해 말없이도 남편을 얻고, 남편은 아내를 이해하며 귀하게 여기래요."},
+        {"from":"사라","to":"아브라함","label":"순종한 아내","kind":"family","directed":false,"weight":2,"verses":"6","note":"사라는 아브라함을 주인이라 부르며 따랐다고 해요."},
+        {"from":"예수","to":"하나님","label":"우리를 인도함","kind":"ally","directed":true,"weight":3,"verses":"18","note":"의로우신 그리스도가 불의한 우리를 위해 단번에 죽으셔서 우리를 하나님께로 이끄셨어요."},
+        {"from":"베드로","to":"아내들","label":"권면한 사도","kind":"ally","directed":true,"weight":1,"verses":"3-4","note":"겉치장보다 온유하고 고요한 마음으로 속사람을 단장하라고 권했어요."}
       ],
       "places": [
         {"name":"방주","where":"노아의 배","what":"여덟 명이 구원받은 곳","weight":2}
@@ -110,10 +110,10 @@
         {"name":"하나님","role":"미쁘신 창조주","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"사랑하는 자들","label":"고난의 본","kind":"ally","directed":true,"weight":3},
-        {"from":"이방인들","to":"사랑하는 자들","label":"비방하는 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"사랑하는 자들","to":"하나님","label":"영혼을 의탁함","kind":"ally","directed":true,"weight":2},
-        {"from":"베드로","to":"사랑하는 자들","label":"권면한 사도","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"사랑하는 자들","label":"고난의 본","kind":"ally","directed":true,"weight":3,"verses":"1, 13","note":"그리스도가 몸으로 고난받으셨으니, 그들도 같은 마음으로 무장하고 고난에 함께하는 걸 기뻐하래요."},
+        {"from":"이방인들","to":"사랑하는 자들","label":"비방하는 자","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"예전처럼 함께 방탕하게 살지 않자 이방인들이 이상히 여기며 그들을 헐뜯었어요."},
+        {"from":"사랑하는 자들","to":"하나님","label":"영혼을 의탁함","kind":"ally","directed":true,"weight":2,"verses":"19","note":"하나님 뜻대로 고난받는 사람은 선을 행하며 신실하신 창조주께 자기 영혼을 맡기래요."},
+        {"from":"베드로","to":"사랑하는 자들","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"8","note":"무엇보다 서로 뜨겁게 사랑하라, 사랑은 많은 죄를 덮는다고 권했어요."}
       ],
       "places": [
         {"name":"하나님의 집","where":"교회","what":"심판이 시작될 곳","weight":1}
@@ -141,12 +141,12 @@
         {"name":"하나님","role":"모든 은혜의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"베드로","to":"장로들","label":"함께 장로 됨","kind":"ally","directed":false,"weight":3},
-        {"from":"장로들","to":"젊은 자들","label":"본이 될 이","kind":"ally","directed":true,"weight":2},
-        {"from":"마귀","to":"장로들","label":"삼키려는 대적","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"장로들","label":"돌보시는 분","kind":"ally","directed":true,"weight":2},
-        {"from":"베드로","to":"마가","label":"아들이라 부름","kind":"family","directed":true,"weight":1},
-        {"from":"예수","to":"장로들","label":"관을 주실 목자장","kind":"ally","directed":true,"weight":2}
+        {"from":"베드로","to":"장로들","label":"함께 장로 됨","kind":"ally","directed":false,"weight":3,"verses":"1-2","note":"베드로는 함께 장로 된 사람으로서, 억지가 아니라 기쁜 마음으로 하나님의 양 떼를 돌보라고 했어요."},
+        {"from":"장로들","to":"젊은 자들","label":"본이 될 이","kind":"ally","directed":true,"weight":2,"verses":"3, 5","note":"장로들은 군림하지 말고 본이 되며, 젊은이들은 장로들에게 순종하래요."},
+        {"from":"마귀","to":"장로들","label":"삼키려는 대적","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"대적 마귀가 우는 사자처럼 삼킬 자를 찾아다니니 정신 차리고 깨어 있으래요."},
+        {"from":"하나님","to":"장로들","label":"돌보시는 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"모든 걱정을 하나님께 맡기라, 그분이 그들을 돌보신대요."},
+        {"from":"베드로","to":"마가","label":"아들이라 부름","kind":"family","directed":true,"weight":1,"verses":"13","note":"베드로는 함께 있는 마가를 '내 아들'이라 부르며 문안을 전했어요."},
+        {"from":"예수","to":"장로들","label":"관을 주실 목자장","kind":"ally","directed":true,"weight":2,"verses":"4","note":"목자장이신 그리스도가 나타나실 때 시들지 않는 영광의 관을 주실 거래요."}
       ],
       "places": [
         {"name":"바벨론","where":"로마를 가리킨 말로 보이는 곳","what":"문안한 교회","weight":1}

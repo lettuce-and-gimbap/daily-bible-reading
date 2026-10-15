@@ -22,10 +22,10 @@
         {"name":"하나님","role":"빛들의 아버지","weight":3}
       ],
       "rels": [
-        {"from":"야고보","to":"흩어진 열두 지파","label":"권면한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"흩어진 열두 지파","label":"좋은 선물을 주심","kind":"ally","directed":true,"weight":3},
-        {"from":"흩어진 열두 지파","to":"고아와 과부","label":"돌볼 대상","kind":"ally","directed":true,"weight":2},
-        {"from":"야고보","to":"예수","label":"주의 종","kind":"ally","directed":true,"weight":1}
+        {"from":"야고보","to":"흩어진 열두 지파","label":"권면한 종","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"야고보는 흩어져 사는 성도들에게 여러 시련을 만나면 오히려 기쁘게 여기라고 권했어요."},
+        {"from":"하나님","to":"흩어진 열두 지파","label":"좋은 선물을 주심","kind":"ally","directed":true,"weight":3,"verses":"5, 17","note":"하나님은 구하는 이에게 꾸짖지 않고 넉넉히 주시며, 모든 좋은 선물이 그분에게서 와요."},
+        {"from":"흩어진 열두 지파","to":"고아와 과부","label":"돌볼 대상","kind":"ally","directed":true,"weight":2,"verses":"27","note":"하나님 앞에서 참된 경건은 어려움에 빠진 고아와 과부를 돌보는 거래요."},
+        {"from":"야고보","to":"예수","label":"주의 종","kind":"ally","directed":true,"weight":1,"verses":"1","note":"야고보는 자신을 하나님과 주 예수 그리스도의 종이라고 소개해요."}
       ],
       "places": [
         {"name":"흩어진 곳","where":"여러 나라","what":"열두 지파가 사는 곳","weight":2}
@@ -52,11 +52,11 @@
         {"name":"하나님","role":"가난한 자를 택하신 분","weight":2}
       ],
       "rels": [
-        {"from":"형제들","to":"가난한 사람","label":"업신여김","kind":"conflict","directed":true,"weight":2},
-        {"from":"형제들","to":"부자","label":"높여 준 이","kind":"other","directed":true,"weight":1},
-        {"from":"하나님","to":"가난한 사람","label":"택하신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"아브라함","to":"이삭","label":"바친 아버지","kind":"family","directed":true,"weight":2},
-        {"from":"야고보","to":"형제들","label":"꾸짖음","kind":"conflict","directed":true,"weight":2}
+        {"from":"형제들","to":"가난한 사람","label":"업신여김","kind":"conflict","directed":true,"weight":2,"verses":"2-3, 6","note":"해진 옷을 입은 가난한 사람에겐 '거기 서 있어라' 하며 업신여겼어요."},
+        {"from":"형제들","to":"부자","label":"높여 준 이","kind":"other","directed":true,"weight":1,"verses":"2-3","note":"금반지를 끼고 좋은 옷을 입은 사람에겐 좋은 자리를 내주며 높여 주었어요."},
+        {"from":"하나님","to":"가난한 사람","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님은 세상에서 가난한 이들을 골라 믿음에 부요하게 하시고 나라를 물려주셨어요."},
+        {"from":"아브라함","to":"이삭","label":"바친 아버지","kind":"family","directed":true,"weight":2,"verses":"21-22","note":"아브라함은 이삭을 제단에 바침으로 믿음이 행함과 함께 일한다는 걸 보여 줬어요."},
+        {"from":"야고보","to":"형제들","label":"꾸짖음","kind":"conflict","directed":true,"weight":2,"verses":"14, 17","note":"행함 없이 믿음만 있다고 말하는 것은 죽은 믿음이라고 야고보가 꾸짖었어요."}
       ],
       "places": [
         {"name":"회당","where":"성도들의 모임","what":"차별이 일어난 곳","weight":1}
@@ -79,9 +79,9 @@
         {"name":"하나님","role":"주 아버지","weight":2}
       ],
       "rels": [
-        {"from":"야고보","to":"형제들","label":"권면한 이","kind":"ally","directed":true,"weight":3},
-        {"from":"야고보","to":"선생들","label":"경계함","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"화평하게 하는 자들","label":"지혜를 주심","kind":"ally","directed":true,"weight":2}
+        {"from":"야고보","to":"형제들","label":"권면한 이","kind":"ally","directed":true,"weight":3,"verses":"5-6, 10","note":"혀는 작아도 큰 숲을 태우는 불 같으니, 한 입으로 찬송과 저주가 나오면 안 된다고 해요."},
+        {"from":"야고보","to":"선생들","label":"경계함","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"가르치는 사람은 더 엄한 심판을 받으니 너무 많이 선생이 되려 하지 말라고 경고했어요."},
+        {"from":"하나님","to":"화평하게 하는 자들","label":"지혜를 주심","kind":"ally","directed":true,"weight":2,"verses":"17-18","note":"위에서 오는 지혜는 깨끗하고 평화로우며, 평화를 이루는 사람들은 의의 열매를 거둬요."}
       ],
       "places": [
         {"name":"큰 배와 숲","where":"비유 속 장면","what":"혀를 비유한 것","weight":1}
@@ -104,10 +104,10 @@
         {"name":"하나님","role":"겸손한 자에게 은혜 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"형제들","to":"하나님","label":"가까이할 분","kind":"ally","directed":true,"weight":3},
-        {"from":"형제들","to":"마귀","label":"대적할 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"형제들","label":"높이시는 분","kind":"ally","directed":true,"weight":2},
-        {"from":"야고보","to":"장사하려는 자들","label":"자랑을 꾸짖음","kind":"conflict","directed":true,"weight":2}
+        {"from":"형제들","to":"하나님","label":"가까이할 분","kind":"ally","directed":true,"weight":3,"verses":"8","note":"하나님을 가까이하면 하나님도 그들을 가까이하실 거래요."},
+        {"from":"형제들","to":"마귀","label":"대적할 자","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"하나님께 순종하고 마귀를 대적하면 마귀가 그들에게서 달아날 거래요."},
+        {"from":"하나님","to":"형제들","label":"높이시는 분","kind":"ally","directed":true,"weight":2,"verses":"6, 10","note":"하나님은 교만한 자를 물리치시고, 주님 앞에서 낮추는 사람을 높여 주세요."},
+        {"from":"야고보","to":"장사하려는 자들","label":"자랑을 꾸짖음","kind":"conflict","directed":true,"weight":2,"verses":"13-16","note":"내일 무슨 일이 생길지 모르면서 큰소리치는 사람들에게 '주님 뜻이면' 하고 말하라고 했어요."}
       ],
       "places": [
         {"name":"어떤 도시","where":"장사하러 갈 곳","what":"내일을 자랑한 곳","weight":1}
@@ -133,11 +133,11 @@
         {"name":"하나님","role":"자비하신 주","weight":2}
       ],
       "rels": [
-        {"from":"부한 자들","to":"품꾼들","label":"삯을 갈취함","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"품꾼들","label":"울음을 들으심","kind":"ally","directed":true,"weight":2},
-        {"from":"야고보","to":"부한 자들","label":"화를 선언","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"욥","label":"결말을 주심","kind":"ally","directed":true,"weight":2},
-        {"from":"장로들","to":"형제들","label":"기도해 줄 이","kind":"ally","directed":true,"weight":1}
+        {"from":"부한 자들","to":"품꾼들","label":"삯을 갈취함","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"부자들은 밭에서 일한 일꾼들의 품삯을 주지 않고 가로챘어요."},
+        {"from":"하나님","to":"품꾼들","label":"울음을 들으심","kind":"ally","directed":true,"weight":2,"verses":"4","note":"삯을 떼인 일꾼들의 울부짖음이 만군의 주님 귀에 들렸어요."},
+        {"from":"야고보","to":"부한 자들","label":"화를 선언","kind":"conflict","directed":true,"weight":2,"verses":"1, 5","note":"사치하며 자기 배만 채운 부자들에게 닥칠 비참한 일을 생각하고 울라고 했어요."},
+        {"from":"하나님","to":"욥","label":"결말을 주심","kind":"ally","directed":true,"weight":2,"verses":"11","note":"욥이 끝까지 참은 것과 주님이 주신 결말을 보면 주님은 자비로우신 분이래요."},
+        {"from":"장로들","to":"형제들","label":"기도해 줄 이","kind":"ally","directed":true,"weight":1,"verses":"14-15","note":"아픈 사람은 교회 장로들을 불러 기도받으면, 믿음의 기도가 그를 일으킬 거래요."}
       ],
       "places": [
         {"name":"밭","where":"부자의 밭","what":"품꾼이 추수한 곳","weight":1}

@@ -21,10 +21,10 @@
         {"name":"하나님","role":"아들로 말씀하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"만유의 상속자","kind":"family","directed":true,"weight":3},
-        {"from":"천사들","to":"예수","label":"경배하는 영","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"선지자들","label":"옛적에 말씀하심","kind":"ally","directed":true,"weight":1},
-        {"from":"예수","to":"천사들","label":"뛰어나신 분","kind":"other","directed":true,"weight":2}
+        {"from":"하나님","to":"예수","label":"만유의 상속자","kind":"family","directed":true,"weight":3,"verses":"2","note":"마지막 날에 하나님은 아들을 통해 말씀하셨고, 그 아들을 모든 것의 상속자로 세우셨어요."},
+        {"from":"천사들","to":"예수","label":"경배하는 영","kind":"ally","directed":true,"weight":2,"verses":"6","note":"하나님은 맏아들을 세상에 보내실 때 모든 천사가 그분께 경배하라고 하셨어요."},
+        {"from":"하나님","to":"선지자들","label":"옛적에 말씀하심","kind":"ally","directed":true,"weight":1,"verses":"1","note":"옛날에 하나님은 선지자들을 통해 여러 번 여러 방식으로 조상들에게 말씀하셨어요."},
+        {"from":"예수","to":"천사들","label":"뛰어나신 분","kind":"other","directed":true,"weight":2,"verses":"4, 13-14","note":"아들은 천사들보다 훨씬 뛰어나시고, 천사들은 구원받을 사람들을 섬기라고 보내진 영이에요."}
       ],
       "places": [
         {"name":"높은 곳의 우편","where":"하늘 보좌","what":"아들이 앉으신 곳","weight":2}
@@ -48,10 +48,10 @@
         {"name":"하나님","role":"은혜로 죽음을 맛보게 하신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"형제들","label":"형제라 부르심","kind":"family","directed":false,"weight":3},
-        {"from":"예수","to":"마귀","label":"멸하신 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"마귀","to":"형제들","label":"종노릇 시킨 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"영광의 관을 씌움","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"형제들","label":"형제라 부르심","kind":"family","directed":false,"weight":3,"verses":"11-12","note":"거룩하게 하시는 분과 거룩해지는 사람들이 한 아버지에게서 났기에, 예수님은 그들을 형제라 부르기를 부끄러워하지 않으셨어요."},
+        {"from":"예수","to":"마귀","label":"멸하신 분","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"예수님은 사람과 같은 몸을 입고 죽으셔서, 죽음의 힘을 쥔 마귀를 무력하게 하셨어요."},
+        {"from":"마귀","to":"형제들","label":"종노릇 시킨 자","kind":"conflict","directed":true,"weight":2,"verses":"15","note":"사람들은 평생 죽음이 무서워 종처럼 매여 살았는데, 예수님이 그들을 풀어 주셨어요."},
+        {"from":"하나님","to":"예수","label":"영광의 관을 씌움","kind":"ally","directed":true,"weight":2,"verses":"9","note":"잠시 천사보다 낮아지셨던 예수님은 죽음의 고난을 겪으시고 영광과 존귀의 관을 받으셨어요."}
       ],
       "places": [
         {"name":"장차 올 세상","where":"다가올 나라","what":"아들에게 복종하게 하신 곳","weight":1}
@@ -75,10 +75,10 @@
         {"name":"하나님","role":"집 지으신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"모세","label":"더 영광받을 분","kind":"other","directed":true,"weight":3},
-        {"from":"모세","to":"광야의 조상들","label":"이끈 종","kind":"ally","directed":true,"weight":2},
-        {"from":"광야의 조상들","to":"하나님","label":"격노하게 함","kind":"conflict","directed":true,"weight":2},
-        {"from":"성령","to":"거룩한 형제들","label":"경고하신 영","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"모세","label":"더 영광받을 분","kind":"other","directed":true,"weight":3,"verses":"3, 5-6","note":"모세는 하나님 집의 신실한 종이었지만, 예수님은 그 집을 다스리는 아들로 더 큰 영광을 받으세요."},
+        {"from":"모세","to":"광야의 조상들","label":"이끈 종","kind":"ally","directed":true,"weight":2,"verses":"16","note":"이집트에서 모세를 따라 나온 바로 그 사람들이 하나님 말씀을 듣고도 거역했어요."},
+        {"from":"광야의 조상들","to":"하나님","label":"격노하게 함","kind":"conflict","directed":true,"weight":2,"verses":"8-10","note":"광야에서 조상들은 사십 년 동안 하나님을 시험하고 마음을 굳게 해 하나님을 노하시게 했어요."},
+        {"from":"성령","to":"거룩한 형제들","label":"경고하신 영","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"성령께서 오늘 하나님 음성을 듣거든 마음을 굳게 하지 말라고 경고하세요."}
       ],
       "places": [
         {"name":"광야","where":"출애굽 후 사십 년 길","what":"조상들이 거역한 곳","weight":2},
@@ -103,10 +103,10 @@
         {"name":"하나님","role":"안식을 약속하신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"하나님의 백성","label":"동정하시는 제사장","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"하나님의 백성","label":"안식을 약속","kind":"ally","directed":true,"weight":2},
-        {"from":"여호수아","to":"광야의 조상들","label":"이끈 지도자","kind":"other","directed":true,"weight":1},
-        {"from":"예수","to":"하나님","label":"하나님의 아들","kind":"family","directed":true,"weight":2}
+        {"from":"예수","to":"하나님의 백성","label":"동정하시는 제사장","kind":"ally","directed":true,"weight":3,"verses":"15-16","note":"우리 대제사장은 모든 일에 시험받으셨지만 죄는 없으셔서 우리 약함을 함께 아파하세요."},
+        {"from":"하나님","to":"하나님의 백성","label":"안식을 약속","kind":"ally","directed":true,"weight":2,"verses":"1, 9","note":"하나님이 쉼에 들어갈 약속을 남겨 두셨으니, 하나님의 백성에게는 아직 안식이 남아 있어요."},
+        {"from":"여호수아","to":"광야의 조상들","label":"이끈 지도자","kind":"other","directed":true,"weight":1,"verses":"8","note":"여호수아가 백성을 가나안에 들였어도 그것이 참 안식은 아니었다고 해요."},
+        {"from":"예수","to":"하나님","label":"하나님의 아들","kind":"family","directed":true,"weight":2,"verses":"14","note":"하늘에 올라가신 큰 대제사장, 하나님의 아들 예수님을 굳게 붙들라고 해요."}
       ],
       "places": [
         {"name":"하나님의 안식","where":"약속된 쉼","what":"들어가기를 힘쓸 곳","weight":2},
@@ -130,10 +130,10 @@
         {"name":"하나님","role":"부르시고 들으시는 분","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"오늘 낳은 아들","kind":"family","directed":true,"weight":3},
-        {"from":"예수","to":"멜기세덱","label":"반차를 따름","kind":"other","directed":true,"weight":3},
-        {"from":"하나님","to":"아론","label":"부르신 분","kind":"ally","directed":true,"weight":1},
-        {"from":"예수","to":"하나님","label":"눈물로 간구함","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"예수","label":"오늘 낳은 아들","kind":"family","directed":true,"weight":3,"verses":"5","note":"그리스도도 스스로 대제사장이 되신 게 아니라, 하나님이 '너는 내 아들이다' 하며 세우셨어요."},
+        {"from":"예수","to":"멜기세덱","label":"반차를 따름","kind":"other","directed":true,"weight":3,"verses":"6, 10","note":"하나님은 예수님을 멜기세덱의 계열을 따르는 영원한 제사장으로 부르셨어요."},
+        {"from":"하나님","to":"아론","label":"부르신 분","kind":"ally","directed":true,"weight":1,"verses":"4","note":"대제사장 자리는 스스로 차지하는 게 아니라 아론처럼 하나님이 부르셔야 해요."},
+        {"from":"예수","to":"하나님","label":"눈물로 간구함","kind":"ally","directed":true,"weight":2,"verses":"7","note":"예수님은 이 땅에 계실 때 큰 울음과 눈물로 기도하셨고, 경건하셔서 들으심을 얻으셨어요."}
       ],
       "places": [
         {"name":"성소","where":"제사장이 섬기는 곳","what":"예물을 드리는 자리","weight":1}
@@ -158,10 +158,10 @@
         {"name":"하나님","role":"자기를 가리켜 맹세하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"아브라함","label":"맹세로 약속","kind":"ally","directed":true,"weight":3},
-        {"from":"타락한 자들","to":"예수","label":"다시 못 박음","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"사랑하는 자들","label":"섬김을 기억함","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"사랑하는 자들","label":"앞서 들어가심","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"아브라함","label":"맹세로 약속","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"하나님은 자기보다 큰 이가 없어 자기 이름으로 맹세하며 아브라함에게 복을 약속하셨어요."},
+        {"from":"타락한 자들","to":"예수","label":"다시 못 박음","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"은혜를 맛보고도 떠난 사람은 하나님의 아들을 다시 십자가에 못 박고 욕보이는 셈이래요."},
+        {"from":"하나님","to":"사랑하는 자들","label":"섬김을 기억함","kind":"ally","directed":true,"weight":2,"verses":"10","note":"하나님은 그들이 성도를 섬기며 보인 사랑을 잊지 않으세요."},
+        {"from":"예수","to":"사랑하는 자들","label":"앞서 들어가심","kind":"ally","directed":true,"weight":2,"verses":"19-20","note":"예수님이 우리보다 먼저 휘장 안으로 들어가셔서 우리 소망의 닻이 되셨어요."}
       ],
       "places": [
         {"name":"휘장 안","where":"지성소","what":"소망이 들어가는 곳","weight":2}
@@ -185,11 +185,11 @@
         {"name":"하나님","role":"맹세로 세우신 분","weight":2}
       ],
       "rels": [
-        {"from":"아브라함","to":"멜기세덱","label":"십분의 일을 드림","kind":"ally","directed":true,"weight":3},
-        {"from":"멜기세덱","to":"아브라함","label":"복을 빎","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"멜기세덱","label":"반차를 따름","kind":"other","directed":true,"weight":3},
-        {"from":"레위","to":"아브라함","label":"자손","kind":"family","directed":true,"weight":1},
-        {"from":"예수","to":"아론","label":"뛰어난 제사장","kind":"other","directed":true,"weight":2}
+        {"from":"아브라함","to":"멜기세덱","label":"십분의 일을 드림","kind":"ally","directed":true,"weight":3,"verses":"2, 4","note":"아브라함은 전쟁에서 얻은 것의 십분의 일을 살렘 왕 멜기세덱에게 드렸어요."},
+        {"from":"멜기세덱","to":"아브라함","label":"복을 빎","kind":"ally","directed":true,"weight":2,"verses":"1, 7","note":"멜기세덱은 돌아오는 아브라함을 맞아 복을 빌었고, 복을 비는 쪽이 더 높은 사람이래요."},
+        {"from":"예수","to":"멜기세덱","label":"반차를 따름","kind":"other","directed":true,"weight":3,"verses":"15-17","note":"예수님은 혈통이 아니라 끝없는 생명의 능력으로 멜기세덱 같은 제사장이 되셨어요."},
+        {"from":"레위","to":"아브라함","label":"자손","kind":"family","directed":true,"weight":1,"verses":"9-10","note":"레위는 아브라함의 허리에 있었으니 아브라함을 통해 멜기세덱에게 십분의 일을 바친 셈이래요."},
+        {"from":"예수","to":"아론","label":"뛰어난 제사장","kind":"other","directed":true,"weight":2,"verses":"11, 26-27","note":"아론 계열 제사장은 날마다 제사를 드렸지만, 예수님은 자기를 단번에 드리신 더 나은 제사장이세요."}
       ],
       "places": [
         {"name":"살렘","where":"평강의 성","what":"멜기세덱이 다스린 곳","weight":2}
@@ -212,10 +212,10 @@
         {"name":"하나님","role":"새 언약을 세우신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 집과 유다 집","label":"새 언약을 맺음","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"땅의 제사장들","label":"더 나은 직분","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"모세","label":"본을 보이심","kind":"ally","directed":true,"weight":1},
-        {"from":"조상들","to":"하나님","label":"언약을 어김","kind":"conflict","directed":true,"weight":1}
+        {"from":"하나님","to":"이스라엘 집과 유다 집","label":"새 언약을 맺음","kind":"ally","directed":true,"weight":3,"verses":"8, 10","note":"하나님은 새 언약을 맺어 법을 그들 마음에 새기고 그들의 하나님이 되겠다고 하셨어요."},
+        {"from":"예수","to":"땅의 제사장들","label":"더 나은 직분","kind":"other","directed":true,"weight":2,"verses":"4-6","note":"땅의 제사장들은 하늘 것의 그림자를 섬기지만, 예수님은 더 좋은 언약의 중보자로 더 나은 직분을 맡으셨어요."},
+        {"from":"하나님","to":"모세","label":"본을 보이심","kind":"ally","directed":true,"weight":1,"verses":"5","note":"하나님은 모세에게 산에서 보여 준 모양대로 장막을 지으라고 하셨어요."},
+        {"from":"조상들","to":"하나님","label":"언약을 어김","kind":"conflict","directed":true,"weight":1,"verses":"9","note":"이집트에서 이끌어 낸 조상들은 하나님의 언약을 지키지 않았어요."}
       ],
       "places": [
         {"name":"하늘의 참 장막","where":"하나님이 세우신 성소","what":"대제사장이 섬기시는 곳","weight":3},
@@ -241,10 +241,10 @@
         {"name":"하나님","role":"제물을 받으신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"하나님","label":"자기를 드림","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"대제사장","label":"더 나은 제사장","kind":"other","directed":true,"weight":2},
-        {"from":"성령","to":"예수","label":"드리게 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"제사장들","label":"피를 뿌림","kind":"ally","directed":true,"weight":1}
+        {"from":"예수","to":"하나님","label":"자기를 드림","kind":"ally","directed":true,"weight":3,"verses":"14","note":"그리스도는 영원한 성령으로 흠 없는 자기 몸을 하나님께 드려 우리 양심을 깨끗하게 하셨어요."},
+        {"from":"예수","to":"대제사장","label":"더 나은 제사장","kind":"other","directed":true,"weight":2,"verses":"7, 11-12","note":"대제사장은 해마다 짐승의 피를 들고 들어갔지만, 예수님은 자기 피로 단번에 성소에 들어가셨어요."},
+        {"from":"성령","to":"예수","label":"드리게 하심","kind":"ally","directed":true,"weight":2,"verses":"14","note":"예수님은 영원한 성령을 통해 자신을 제물로 드리셨어요."},
+        {"from":"모세","to":"제사장들","label":"피를 뿌림","kind":"ally","directed":true,"weight":1,"verses":"19-21","note":"모세는 율법을 다 전한 뒤 언약의 피를 책과 백성과 장막과 그릇들에 뿌렸어요."}
       ],
       "places": [
         {"name":"성소","where":"첫 장막","what":"제사장들이 섬긴 곳","weight":2},
@@ -271,10 +271,10 @@
         {"name":"하나님","role":"뜻을 이루시는 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"하나님","label":"뜻을 행하러 옴","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"형제들","label":"새 길을 여심","kind":"ally","directed":true,"weight":3},
-        {"from":"짐짓 죄를 범하는 자","to":"예수","label":"아들을 짓밟음","kind":"conflict","directed":true,"weight":2},
-        {"from":"성령","to":"형제들","label":"증언하심","kind":"ally","directed":true,"weight":1}
+        {"from":"예수","to":"하나님","label":"뜻을 행하러 옴","kind":"ally","directed":true,"weight":3,"verses":"7, 10","note":"예수님은 하나님의 뜻을 행하러 왔다고 하셨고, 그 뜻대로 자기 몸을 단번에 드리셨어요."},
+        {"from":"예수","to":"형제들","label":"새 길을 여심","kind":"ally","directed":true,"weight":3,"verses":"19-20","note":"예수님의 피 덕분에, 그분이 휘장인 자기 몸으로 열어 주신 새 길로 성소에 들어갈 수 있어요."},
+        {"from":"짐짓 죄를 범하는 자","to":"예수","label":"아들을 짓밟음","kind":"conflict","directed":true,"weight":2,"verses":"26, 29","note":"진리를 알고도 일부러 죄를 이어 가는 것은 하나님의 아들을 짓밟는 일이래요."},
+        {"from":"성령","to":"형제들","label":"증언하심","kind":"ally","directed":true,"weight":1,"verses":"15-17","note":"성령께서도 하나님이 그들의 죄를 다시 기억하지 않으시겠다고 증언하세요."}
       ],
       "places": [
         {"name":"성소","where":"휘장 안","what":"담력을 얻어 들어갈 곳","weight":2}
@@ -307,12 +307,12 @@
         {"name":"하나님","role":"상 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"아벨","to":"가인","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"아브라함","to":"사라","label":"부부","kind":"family","directed":false,"weight":2},
-        {"from":"아브라함","to":"이삭","label":"드린 아버지","kind":"family","directed":true,"weight":2},
-        {"from":"모세","to":"하나님","label":"백성과 고난 택함","kind":"ally","directed":true,"weight":3},
-        {"from":"라합","to":"하나님","label":"정탐꾼을 영접","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"에녹","label":"옮기신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"아벨","to":"가인","label":"형제","kind":"family","directed":false,"weight":1,"verses":"4","note":"믿음으로 아벨은 가인보다 더 나은 제물을 드려 의롭다는 인정을 받았어요."},
+        {"from":"아브라함","to":"사라","label":"부부","kind":"family","directed":false,"weight":2,"verses":"11","note":"믿음으로 사라도 나이가 많았지만 약속하신 분을 믿어 아이를 가질 힘을 얻었어요."},
+        {"from":"아브라함","to":"이삭","label":"드린 아버지","kind":"family","directed":true,"weight":2,"verses":"17-19","note":"아브라함은 하나님이 죽은 사람도 살리실 줄 믿고 외아들 이삭을 바쳤어요."},
+        {"from":"모세","to":"하나님","label":"백성과 고난 택함","kind":"ally","directed":true,"weight":3,"verses":"24-26","note":"모세는 바로의 공주 아들로 누릴 즐거움보다 하나님 백성과 함께 고난받는 길을 골랐어요."},
+        {"from":"라합","to":"하나님","label":"정탐꾼을 영접","kind":"ally","directed":true,"weight":2,"verses":"31","note":"라합은 믿음으로 정탐꾼들을 평안히 맞아들여 순종하지 않은 사람들과 함께 망하지 않았어요."},
+        {"from":"하나님","to":"에녹","label":"옮기신 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"에녹은 하나님을 기쁘시게 해서 죽음을 보지 않고 하나님께 옮겨졌어요."}
       ],
       "places": [
         {"name":"약속의 땅","where":"가나안","what":"아브라함이 나그네로 산 곳","weight":2},
@@ -342,11 +342,11 @@
         {"name":"하나님","role":"징계하시는 아버지","weight":3}
       ],
       "rels": [
-        {"from":"성도들","to":"예수","label":"바라보는 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"성도들","label":"아들로 징계","kind":"family","directed":true,"weight":3},
-        {"from":"허다한 증인들","to":"성도들","label":"둘러싼 증인","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"아벨","label":"더 나은 피","kind":"other","directed":true,"weight":1},
-        {"from":"에서","to":"하나님","label":"명분을 업신여김","kind":"conflict","directed":true,"weight":1}
+        {"from":"성도들","to":"예수","label":"바라보는 이들","kind":"ally","directed":true,"weight":3,"verses":"2","note":"믿음을 시작하고 완성하시는 예수님을 바라보며 우리 앞의 경주를 끝까지 달리자고 해요."},
+        {"from":"하나님","to":"성도들","label":"아들로 징계","kind":"family","directed":true,"weight":3,"verses":"5-7","note":"주님은 사랑하는 자녀를 바로잡으시니, 그분의 훈계는 우리가 참 자녀라는 증거래요."},
+        {"from":"허다한 증인들","to":"성도들","label":"둘러싼 증인","kind":"ally","directed":true,"weight":2,"verses":"1","note":"믿음의 선배들이 구름처럼 우리를 둘러싸고 있으니 무거운 짐을 벗고 달리래요."},
+        {"from":"예수","to":"아벨","label":"더 나은 피","kind":"other","directed":true,"weight":1,"verses":"24","note":"예수님이 뿌리신 피는 아벨의 피보다 더 좋은 것을 말해 준대요."},
+        {"from":"에서","to":"하나님","label":"명분을 업신여김","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"에서는 음식 한 그릇에 장자의 권리를 팔았고 나중에 눈물로 구해도 돌이킬 수 없었어요."}
       ],
       "places": [
         {"name":"시온 산","where":"하늘의 예루살렘","what":"성도가 이른 곳","weight":3},
@@ -373,11 +373,11 @@
         {"name":"하나님","role":"평강의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"성도들","label":"피로 거룩케 함","kind":"ally","directed":true,"weight":3},
-        {"from":"성도들","to":"인도하는 자들","label":"순종할 대상","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"이끌어 내심","kind":"ally","directed":true,"weight":2},
-        {"from":"성도들","to":"갇힌 자들","label":"돌볼 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"성도들","label":"돕는 이","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"성도들","label":"피로 거룩케 함","kind":"ally","directed":true,"weight":3,"verses":"12","note":"예수님은 자기 피로 백성을 거룩하게 하시려고 성문 밖에서 고난을 받으셨어요."},
+        {"from":"성도들","to":"인도하는 자들","label":"순종할 대상","kind":"ally","directed":true,"weight":2,"verses":"7, 17","note":"말씀을 전해 준 지도자들을 기억하고, 그들을 따르고 존중해서 기쁨으로 일하게 하래요."},
+        {"from":"하나님","to":"예수","label":"이끌어 내심","kind":"ally","directed":true,"weight":2,"verses":"20","note":"평화의 하나님이 영원한 언약의 피로 큰 목자이신 예수님을 죽은 자들 가운데서 이끌어 내셨어요."},
+        {"from":"성도들","to":"갇힌 자들","label":"돌볼 이들","kind":"ally","directed":true,"weight":1,"verses":"3","note":"갇힌 사람들을 자기도 함께 갇힌 것처럼 기억하고 돌보래요."},
+        {"from":"하나님","to":"성도들","label":"돕는 이","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"주님이 결코 떠나지 않겠다고 하셨으니, 주님이 우리를 도우신다고 담대히 말하래요."}
       ],
       "places": [
         {"name":"성문 밖","where":"예루살렘 성문 밖","what":"예수께서 고난받으신 곳","weight":2},
