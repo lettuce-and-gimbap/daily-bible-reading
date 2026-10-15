@@ -393,7 +393,7 @@ function rgOpen(id) {
 
   const noteList = (r) => (r.notes || []).length
     ? `<ul class="rg-notes">${r.notes.map((n, k) => `<li>${n.src && n.src.verses
-      ? `<button type="button" class="rg-src" data-src="${k}" aria-expanded="false">${esc(n.ref)} <span>원문 보기 (개역개정·새번역) ▾</span></button>`
+      ? `<button type="button" class="rg-src" data-src="${k}" aria-expanded="false">${esc(n.ref)} <span>원문 보기 (개역개정·쉬운성경) ▾</span></button>`
       : `<small>${esc(n.ref)}</small>`}<p>${esc(n.text)}</p><div class="rg-orig" hidden></div></li>`).join("")}</ul>`
     : `<p class="muted small">이 관계를 풀어 줄 구절 설명은 아직 준비 중이에요.</p>`;
   const relLine = (r) => `<b>${esc(r.from)}</b><span class="rg-arrow">${r.directed ? "→" : "↔"}</span><b>${esc(r.to)}</b>
@@ -509,12 +509,12 @@ function rgOpen(id) {
   el.querySelector(".rg-close").focus();
 }
 
-// 구절 풀이의 장·절 버튼 → 그 절의 개역개정4판·새번역 원문을 풀이 아래에 펼침 (다시 누르면 접힘)
+// 구절 풀이의 장·절 버튼 → 그 절의 개역개정4판·쉬운성경 원문을 풀이 아래에 펼침 (다시 누르면 접힘)
 async function rgShowOrig(btn, src) {
   const box = btn.parentElement.querySelector(".rg-orig");
   const open = btn.getAttribute("aria-expanded") === "true";
   btn.setAttribute("aria-expanded", String(!open));
-  btn.querySelector("span").textContent = open ? "원문 보기 (개역개정·새번역) ▾" : "원문 접기 ▴";
+  btn.querySelector("span").textContent = open ? "원문 보기 (개역개정·쉬운성경) ▾" : "원문 접기 ▴";
   box.hidden = open;
   if (open || box.dataset.done) return;
   box.innerHTML = `<p class="muted small">본문 불러오는 중…</p>`;
@@ -523,9 +523,9 @@ async function rgShowOrig(btn, src) {
   String(src.verses).split(/,s*/).forEach((p) => { const [a, b] = p.split("-").map(Number); for (let n = a; n <= (b || a); n++) want.add(n); });
   try {
     if (!PUSH_SERVER || idx < 0) throw new Error("no-server");
-    const rows = await versePairs(idx, (n) => want.has(n), ["gae", "saenew"]);
+    const rows = await versePairs(idx, (n) => want.has(n), ["gae", "easy"]);
     if (!rows.length) throw new Error("empty");
-    box.innerHTML = versePairsHtml(rows, ["개역개정4판", "새번역"]);
+    box.innerHTML = versePairsHtml(rows, ["개역개정4판", "쉬운성경"]);
     box.dataset.done = "1";
   } catch (e) {
     box.innerHTML = `<p class="muted small">원문을 불러오지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.</p>`;
