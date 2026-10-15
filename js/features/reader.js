@@ -69,7 +69,7 @@ function buildReader() {
   // 장을 직접 고르면 갓피아 안에서 옆으로 넘겨 둔 상태여도 그 장으로 다시 불러옴
   $("#r-steps").addEventListener("click", (e) => {
     const b = e.target.closest("[data-idx]");
-    if (b) { currentChapter = Number(b.dataset.idx); refreshReader(true); }
+    if (b) { currentChapter = Number(b.dataset.idx); refreshReader(true); openSheet("verses", renderReaderSheet); }
   });
   $("#r-title").addEventListener("click", (e) => {
     if (!e.target.closest("#r-behind")) return;
