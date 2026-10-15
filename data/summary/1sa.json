@@ -25,14 +25,14 @@
         {"name":"비느하스","role":"엘리의 아들, 실로의 제사장","weight":1}
       ],
       "rels": [
-        {"from":"엘가나","to":"한나","label":"남편","kind":"family","directed":true,"weight":3},
-        {"from":"브닌나","to":"한나","label":"적수","kind":"conflict","directed":false,"weight":3},
-        {"from":"사무엘","to":"한나","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"엘리","to":"한나","label":"축복한 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"엘가나","to":"브닌나","label":"남편","kind":"family","directed":true,"weight":1},
-        {"from":"엘리","to":"사무엘","label":"맡아 기른 이","kind":"ally","directed":true,"weight":2},
-        {"from":"홉니","to":"엘리","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"비느하스","to":"엘리","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"엘가나","to":"한나","label":"남편","kind":"family","directed":true,"weight":3,"verses":"8","note":"울며 먹지 않는 한나에게 엘가나가 내가 당신에게 열 아들보다 낫지 않냐며 위로했어요."},
+        {"from":"브닌나","to":"한나","label":"적수","kind":"conflict","directed":false,"weight":3,"verses":"6-7","note":"자식이 있는 브닌나가 해마다 한나를 몹시 격분시켜 괴롭혔고 한나는 울며 먹지 않았어요."},
+        {"from":"사무엘","to":"한나","label":"아들","kind":"family","directed":true,"weight":3,"verses":"20, 27-28","note":"한나가 아들을 낳아 하나님께 구했다는 뜻으로 사무엘이라 했고, 젖을 뗀 뒤 평생 여호와께 드렸어요."},
+        {"from":"엘리","to":"한나","label":"축복한 제사장","kind":"ally","directed":true,"weight":2,"verses":"17","note":"술 취한 줄 오해했던 엘리가 사정을 듣고 평안히 가라, 하나님이 네 기도를 들어주시기를 원한다고 축복했어요."},
+        {"from":"엘가나","to":"브닌나","label":"남편","kind":"family","directed":true,"weight":1,"verses":"2","note":"엘가나에게는 두 아내가 있었는데 브닌나에게는 자식이 있고 한나에게는 없었어요."},
+        {"from":"엘리","to":"사무엘","label":"맡아 기른 이","kind":"ally","directed":true,"weight":2,"verses":"24-28","note":"한나가 어린 사무엘을 실로의 엘리에게 데려가 맡겼어요."},
+        {"from":"홉니","to":"엘리","label":"아들","kind":"family","directed":true,"weight":1,"verses":"3","note":"실로에서는 엘리의 두 아들 홉니와 비느하스가 제사장으로 있었어요."},
+        {"from":"비느하스","to":"엘리","label":"아들","kind":"family","directed":true,"weight":1,"verses":"3","note":"비느하스는 엘리의 둘째 아들로 형 홉니와 함께 제사장이었어요."}
       ],
       "places": [
         {"name":"실로","where":"예루살렘 북쪽 약 32km, 성막이 있던 곳","what":"해마다 예배하러 간 곳. 한나가 기도하고 사무엘을 드림","weight":3},
@@ -58,11 +58,11 @@
         {"name":"하나님의 사람","role":"엘리 집안의 심판을 전함","weight":2}
       ],
       "rels": [
-        {"from":"홉니","to":"엘리","label":"악한 아들","kind":"family","directed":true,"weight":3},
-        {"from":"비느하스","to":"홉니","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"하나님의 사람","to":"엘리","label":"경고한 이","kind":"conflict","directed":true,"weight":2},
-        {"from":"사무엘","to":"한나","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"사무엘","to":"엘리","label":"섬긴 아이","kind":"ally","directed":true,"weight":2}
+        {"from":"홉니","to":"엘리","label":"악한 아들","kind":"family","directed":true,"weight":3,"verses":"12, 22-25","note":"엘리의 아들들은 하나님을 알지 못하고 제물을 멸시했으며, 엘리가 타일러도 듣지 않았어요."},
+        {"from":"비느하스","to":"홉니","label":"형제","kind":"family","directed":false,"weight":1,"verses":"12-17","note":"비느하스는 형 홉니와 함께 제물의 고기를 억지로 빼앗는 악을 저질렀어요."},
+        {"from":"하나님의 사람","to":"엘리","label":"경고한 이","kind":"conflict","directed":true,"weight":2,"verses":"27-34","note":"하나님의 사람이 엘리에게 와서 네가 아들들을 나보다 더 중히 여겼으니 두 아들이 한날에 죽으리라고 경고했어요."},
+        {"from":"사무엘","to":"한나","label":"아들","kind":"family","directed":true,"weight":2,"verses":"19","note":"한나는 해마다 작은 겉옷을 지어 제사 드리러 올 때 어린 사무엘에게 가져다주었어요."},
+        {"from":"사무엘","to":"엘리","label":"섬긴 아이","kind":"ally","directed":true,"weight":2,"verses":"11, 18","note":"어린 사무엘은 세마포 에봇을 입고 제사장 엘리 앞에서 여호와를 섬겼어요."}
       ],
       "places": [
         {"name":"실로","where":"예루살렘 북쪽 약 32km","what":"성막이 있던 곳, 사무엘이 자란 곳","weight":3}
@@ -84,9 +84,9 @@
         {"name":"하나님","role":"사무엘을 부르신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"사무엘","label":"부르신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"엘리","to":"사무엘","label":"가르친 스승","kind":"ally","directed":true,"weight":3},
-        {"from":"사무엘","to":"엘리","label":"심판을 전한 소년","kind":"other","directed":true,"weight":2}
+        {"from":"하나님","to":"사무엘","label":"부르신 분","kind":"ally","directed":true,"weight":3,"verses":"4-10","note":"하나님이 밤에 사무엘을 세 번 부르셨고, 네 번째에 사무엘이 말씀하소서 주의 종이 듣겠나이다 했어요."},
+        {"from":"엘리","to":"사무엘","label":"가르친 스승","kind":"ally","directed":true,"weight":3,"verses":"8-9","note":"엘리가 하나님이 부르시는 줄 깨닫고 다시 부르시면 말씀하소서 주의 종이 듣겠다고 하라고 가르쳤어요."},
+        {"from":"사무엘","to":"엘리","label":"심판을 전한 소년","kind":"other","directed":true,"weight":2,"verses":"15-18","note":"사무엘이 두려워했지만 엘리가 숨기지 말라 하여 엘리 집에 내릴 심판을 다 전했어요."}
       ],
       "places": [
         {"name":"실로","where":"에브라임 산지","what":"사무엘이 부름받은 성전","weight":3}
@@ -112,10 +112,10 @@
         {"name":"이가봇","role":"영광이 떠났다는 이름의 아이","weight":1}
       ],
       "rels": [
-        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"이긴 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"홉니","to":"엘리","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"비느하스의 아내","to":"비느하스","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"이가봇","to":"비느하스의 아내","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"이긴 원수","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"블레셋이 이스라엘을 크게 이겨 삼만 명이 죽고 하나님의 궤마저 빼앗겼어요."},
+        {"from":"홉니","to":"엘리","label":"아들","kind":"family","directed":true,"weight":2,"verses":"11, 17-18","note":"전쟁에서 홉니와 비느하스가 죽고 궤를 빼앗겼다는 소식에 엘리가 의자에서 넘어져 목이 부러져 죽었어요."},
+        {"from":"비느하스의 아내","to":"비느하스","label":"아내","kind":"family","directed":true,"weight":2,"verses":"19-20","note":"비느하스의 아내는 남편과 시아버지가 죽었다는 소식에 갑자기 아이를 낳다가 죽어 갔어요."},
+        {"from":"이가봇","to":"비느하스의 아내","label":"아들","kind":"family","directed":true,"weight":1,"verses":"21-22","note":"죽어 가던 비느하스의 아내가 영광이 이스라엘에서 떠났다며 아들 이름을 이가봇이라 했어요."}
       ],
       "places": [
         {"name":"에벤에셀","where":"아벡 맞은편","what":"이스라엘이 진 친 곳","weight":1},
@@ -138,8 +138,8 @@
         {"name":"하나님","role":"친히 자기 영광을 지키심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"블레셋 사람들","label":"치신 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"다곤","label":"무너뜨리신 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"블레셋 사람들","label":"치신 분","kind":"conflict","directed":true,"weight":3,"verses":"6, 9","note":"하나님의 궤가 가는 성마다 하나님이 그 백성을 독한 종기로 치셨어요."},
+        {"from":"하나님","to":"다곤","label":"무너뜨리신 분","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"궤를 둔 다곤 신전에서 다곤 신상이 궤 앞에 엎어졌고, 다음 날은 머리와 두 손이 잘려 있었어요."}
       ],
       "places": [
         {"name":"아스돗","where":"블레셋 해안 성","what":"다곤 신전이 있던 곳","weight":3},
@@ -164,8 +164,8 @@
         {"name":"블레셋 방백들","role":"수레를 따라간 지도자들","weight":1}
       ],
       "rels": [
-        {"from":"블레셋 사람들","to":"벧세메스 사람들","label":"궤를 돌려보낸 이들","kind":"other","directed":true,"weight":2},
-        {"from":"블레셋 제사장들","to":"블레셋 사람들","label":"조언한 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"블레셋 사람들","to":"벧세메스 사람들","label":"궤를 돌려보낸 이들","kind":"other","directed":true,"weight":2,"verses":"10-14","note":"블레셋 사람들이 새끼 둔 암소 두 마리가 끄는 수레에 궤를 실어 보내자 소들이 곧장 벧세메스로 갔어요."},
+        {"from":"블레셋 제사장들","to":"블레셋 사람들","label":"조언한 이들","kind":"ally","directed":true,"weight":1,"verses":"2-9","note":"블레셋 제사장들이 궤를 그냥 보내지 말고 금 종기와 금 쥐를 속건제물로 함께 보내라고 조언했어요."}
       ],
       "places": [
         {"name":"벧세메스","where":"유다 서쪽 경계 성","what":"암소가 궤를 싣고 온 곳","weight":3},
@@ -191,10 +191,10 @@
         {"name":"엘르아살(아비나답의 아들)","role":"궤를 지킨 사람","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"이스라엘 자손","label":"회개시킨 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"사무엘","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"쳐들어온 원수","kind":"conflict","directed":true,"weight":2},
-        {"from":"엘르아살(아비나답의 아들)","to":"아비나답","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"사무엘","to":"이스라엘 자손","label":"회개시킨 지도자","kind":"ally","directed":true,"weight":3,"verses":"3-6","note":"사무엘이 이방 신들을 버리고 마음을 다해 하나님께 돌아오라 하자 백성이 미스바에 모여 금식하며 회개했어요."},
+        {"from":"사무엘","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":3,"verses":"9","note":"블레셋이 쳐들어오자 사무엘이 어린 양을 드리고 이스라엘을 위해 하나님께 부르짖었고 하나님이 응답하셨어요."},
+        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"쳐들어온 원수","kind":"conflict","directed":true,"weight":2,"verses":"7, 10","note":"백성이 미스바에 모였다는 말을 듣고 블레셋이 쳐들어왔지만 하나님이 큰 우레로 그들을 어지럽게 하셨어요."},
+        {"from":"엘르아살(아비나답의 아들)","to":"아비나답","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"기럇여아림 사람들이 궤를 아비나답의 집에 들이고 그 아들 엘르아살을 구별해 궤를 지키게 했어요."}
       ],
       "places": [
         {"name":"미스바","where":"예루살렘 북쪽 베냐민 땅","what":"회개하고 블레셋을 이긴 곳","weight":3},
@@ -219,10 +219,10 @@
         {"name":"하나님","role":"백성에게 버림받으신 왕","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘 장로들","to":"사무엘","label":"왕을 요구한 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"이스라엘 장로들","to":"하나님","label":"왕을 버린 백성","kind":"conflict","directed":true,"weight":3},
-        {"from":"요엘","to":"사무엘","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"아비야","to":"요엘","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"이스라엘 장로들","to":"사무엘","label":"왕을 요구한 이들","kind":"conflict","directed":true,"weight":3,"verses":"4-5","note":"장로들이 사무엘에게 당신은 늙었고 아들들은 당신 길로 행하지 않으니 다른 나라처럼 왕을 세워 달라고 했어요."},
+        {"from":"이스라엘 장로들","to":"하나님","label":"왕을 버린 백성","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"하나님이 사무엘에게 그들이 너를 버린 것이 아니라 나를 버려 내가 그들의 왕이 되지 못하게 함이라고 하셨어요."},
+        {"from":"요엘","to":"사무엘","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1-3","note":"사무엘이 아들 요엘과 아비야를 사사로 세웠지만 그들은 뇌물을 받고 판결을 굽게 했어요."},
+        {"from":"아비야","to":"요엘","label":"형제","kind":"family","directed":false,"weight":1,"verses":"2","note":"아비야는 요엘의 동생으로 함께 브엘세바에서 사사가 되었어요."}
       ],
       "places": [
         {"name":"라마","where":"에브라임 산지","what":"장로들이 사무엘을 찾아간 곳","weight":2}
@@ -245,9 +245,9 @@
         {"name":"사환","role":"선견자를 찾자고 한 종","weight":2}
       ],
       "rels": [
-        {"from":"사울","to":"기스","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"사환","to":"사울","label":"길잡이 종","kind":"ally","directed":true,"weight":2},
-        {"from":"사무엘","to":"사울","label":"맞아 준 선견자","kind":"ally","directed":true,"weight":3}
+        {"from":"사울","to":"기스","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1-3","note":"베냐민 사람 기스의 아들 사울은 준수하고 키가 컸으며, 아버지의 잃어버린 암나귀를 찾으러 나섰어요."},
+        {"from":"사환","to":"사울","label":"길잡이 종","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"나귀를 찾지 못해 돌아가려 할 때 사환이 이 성에 하나님의 사람이 있으니 물어보자고 했어요."},
+        {"from":"사무엘","to":"사울","label":"맞아 준 선견자","kind":"ally","directed":true,"weight":3,"verses":"19-24","note":"사무엘이 사울을 맞아 산당에서 함께 먹게 하고 귀한 자리와 넓적다리 고기를 내주었어요."}
       ],
       "places": [
         {"name":"숩 땅","where":"에브라임 산지","what":"사무엘이 있던 성의 땅","weight":1},
@@ -271,9 +271,9 @@
         {"name":"불량배들","role":"사울을 업신여긴 자들","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"사울","label":"기름 부은 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"사울","label":"환영한 백성","kind":"ally","directed":true,"weight":2},
-        {"from":"불량배들","to":"사울","label":"업신여긴 자들","kind":"conflict","directed":true,"weight":1}
+        {"from":"사무엘","to":"사울","label":"기름 부은 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"사무엘이 기름병을 가져다 사울의 머리에 붓고 입 맞추며 하나님이 너를 지도자로 세우셨다고 했어요."},
+        {"from":"이스라엘 자손","to":"사울","label":"환영한 백성","kind":"ally","directed":true,"weight":2,"verses":"24","note":"미스바에서 제비 뽑혀 사울이 세워지자 백성이 왕 만세를 외쳤어요."},
+        {"from":"불량배들","to":"사울","label":"업신여긴 자들","kind":"conflict","directed":true,"weight":1,"verses":"27","note":"어떤 불량배들은 이 사람이 어떻게 우리를 구원하겠냐며 업신여기고 예물을 드리지 않았어요."}
       ],
       "places": [
         {"name":"미스바","where":"베냐민 땅","what":"제비뽑기로 사울이 뽑힌 곳","weight":3},
@@ -297,10 +297,10 @@
         {"name":"사무엘","role":"길갈로 가자고 한 선지자","weight":1}
       ],
       "rels": [
-        {"from":"나하스","to":"야베스 길르앗 사람들","label":"포위한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"사울","to":"야베스 길르앗 사람들","label":"구한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"사울","to":"나하스","label":"물리친 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"사무엘","to":"사울","label":"세운 선지자","kind":"ally","directed":true,"weight":1}
+        {"from":"나하스","to":"야베스 길르앗 사람들","label":"포위한 왕","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"암몬 사람 나하스가 야베스 길르앗을 포위하고 너희 오른 눈을 다 빼야 언약을 맺겠다고 했어요."},
+        {"from":"사울","to":"야베스 길르앗 사람들","label":"구한 왕","kind":"ally","directed":true,"weight":3,"verses":"9-11","note":"사울이 군대를 셋으로 나누어 새벽에 암몬 진을 쳐서 야베스 길르앗 사람들을 구했어요."},
+        {"from":"사울","to":"나하스","label":"물리친 왕","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"사울의 군대가 해가 뜨거워질 때까지 암몬 사람들을 쳐서 흩어 버렸어요."},
+        {"from":"사무엘","to":"사울","label":"세운 선지자","kind":"ally","directed":true,"weight":1,"verses":"14-15","note":"사무엘이 백성을 길갈로 모아 거기서 사울을 다시 왕으로 세우고 함께 크게 기뻐했어요."}
       ],
       "places": [
         {"name":"야베스 길르앗","where":"요단 동편 길르앗","what":"사울이 구한 성","weight":3},
@@ -323,9 +323,9 @@
         {"name":"사울","role":"새로 세운 왕","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"이스라엘 자손","label":"기도할 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"사무엘","label":"증언한 백성","kind":"ally","directed":true,"weight":2},
-        {"from":"사울","to":"사무엘","label":"새 왕","kind":"other","directed":true,"weight":1}
+        {"from":"사무엘","to":"이스라엘 자손","label":"기도할 선지자","kind":"ally","directed":true,"weight":3,"verses":"23","note":"사무엘이 너희를 위해 기도하기를 쉬는 죄를 결코 짓지 않겠다고 했어요."},
+        {"from":"이스라엘 자손","to":"사무엘","label":"증언한 백성","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"사무엘이 내가 누구를 속였느냐 묻자 백성이 당신은 우리를 속이거나 해친 적이 없다고 증언했어요."},
+        {"from":"사울","to":"사무엘","label":"새 왕","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"사무엘이 이제 너희 앞에 왕이 다니게 되었고 나는 늙었다며 왕을 백성 앞에 세웠어요."}
       ],
       "places": [
         {"name":"길갈","where":"여리고 동쪽","what":"고별 설교를 한 곳","weight":2}
@@ -349,9 +349,9 @@
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2}
       ],
       "rels": [
-        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"압박한 원수","kind":"conflict","directed":true,"weight":2}
+        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"13-14","note":"사울이 사무엘을 기다리지 못하고 직접 번제를 드리자, 사무엘이 망령되이 행했으니 나라가 길지 못하리라고 책망했어요."},
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":2,"verses":"3","note":"사울의 아들 요나단이 게바에 있는 블레셋 수비대를 쳤어요."},
+        {"from":"블레셋 사람들","to":"이스라엘 자손","label":"압박한 원수","kind":"conflict","directed":true,"weight":2,"verses":"5-6, 19","note":"블레셋이 병거 삼만과 많은 군대로 모이자 백성은 굴과 수풀에 숨었고, 이스라엘에는 대장장이도 없었어요."}
       ],
       "places": [
         {"name":"믹마스","where":"예루살렘 북쪽 베냐민 땅","what":"블레셋 대군이 진 친 곳","weight":2},
@@ -377,11 +377,11 @@
         {"name":"아브넬","role":"사울의 군대 장관","weight":1}
       ],
       "rels": [
-        {"from":"무기 든 소년","to":"요나단","label":"함께 싸운 소년","kind":"ally","directed":true,"weight":3},
-        {"from":"사울","to":"요나단","label":"죽이려 한 아버지","kind":"conflict","directed":true,"weight":3},
-        {"from":"이스라엘 백성","to":"요나단","label":"구해 낸 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1}
+        {"from":"무기 든 소년","to":"요나단","label":"함께 싸운 소년","kind":"ally","directed":true,"weight":3,"verses":"6-7, 13","note":"요나단이 하나님의 구원은 사람의 많고 적음에 달려 있지 않다 하자, 무기 든 소년이 마음대로 하라 제가 따르겠다고 했어요."},
+        {"from":"사울","to":"요나단","label":"죽이려 한 아버지","kind":"conflict","directed":true,"weight":3,"verses":"43-44","note":"사울이 금식 명령을 어기고 꿀을 맛본 요나단에게 네가 반드시 죽으리라고 했어요."},
+        {"from":"이스라엘 백성","to":"요나단","label":"구해 낸 이들","kind":"ally","directed":true,"weight":2,"verses":"45","note":"백성이 큰 구원을 이룬 요나단이 죽어서는 안 된다며 그를 구해 냈어요."},
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1, 49","note":"요나단은 사울의 아들로, 아버지께 알리지 않고 블레셋 진으로 건너갔어요."},
+        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"50","note":"사울의 군대 장관은 사울의 삼촌 넬의 아들 아브넬이에요."}
       ],
       "places": [
         {"name":"믹마스","where":"베냐민 땅","what":"요나단이 절벽을 올라 친 곳","weight":3},
@@ -406,10 +406,10 @@
         {"name":"겐 사람들","role":"사울이 미리 피하게 한 족속","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"사울","to":"하나님","label":"말씀을 버린 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"사울","to":"아각","label":"살려 둔 왕","kind":"other","directed":true,"weight":2},
-        {"from":"사무엘","to":"아각","label":"처형한 선지자","kind":"conflict","directed":true,"weight":1}
+        {"from":"사무엘","to":"사울","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"사무엘이 순종이 제사보다 낫고 듣는 것이 숫양의 기름보다 나으니, 왕이 말씀을 버려 하나님도 왕을 버리셨다고 책망했어요."},
+        {"from":"사울","to":"하나님","label":"말씀을 버린 왕","kind":"conflict","directed":true,"weight":3,"verses":"9, 24","note":"사울은 아말렉을 다 진멸하라는 명령을 어기고 좋은 것을 남겼고, 백성을 두려워해서 그랬다고 했어요."},
+        {"from":"사울","to":"아각","label":"살려 둔 왕","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"사울과 백성이 아말렉 왕 아각과 좋은 양과 소를 아껴 죽이지 않았어요."},
+        {"from":"사무엘","to":"아각","label":"처형한 선지자","kind":"conflict","directed":true,"weight":1,"verses":"32-33","note":"사무엘이 네 칼이 여인들을 자식 없게 했듯 네 어미도 자식이 없으리라 하며 아각을 찍어 쪼갰어요."}
       ],
       "places": [
         {"name":"갈멜","where":"유다 남쪽 산지","what":"사울이 자기 기념비를 세운 곳","weight":1},
@@ -437,12 +437,12 @@
         {"name":"삼마","role":"이새의 셋째 아들","weight":1}
       ],
       "rels": [
-        {"from":"사무엘","to":"다윗","label":"기름 부은 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"다윗","to":"이새","label":"막내아들","kind":"family","directed":true,"weight":2},
-        {"from":"엘리압","to":"다윗","label":"큰형","kind":"family","directed":true,"weight":1},
-        {"from":"다윗","to":"사울","label":"수금으로 섬긴 신하","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"다윗","label":"택하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"아비나답","to":"이새","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"사무엘","to":"다윗","label":"기름 부은 선지자","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"사무엘이 들에서 양 치다 온 막내 다윗에게 기름을 부으니 그날부터 여호와의 영이 다윗에게 크게 임했어요."},
+        {"from":"다윗","to":"이새","label":"막내아들","kind":"family","directed":true,"weight":2,"verses":"10-11","note":"이새의 아들 일곱이 지나간 뒤, 사무엘이 묻자 이새가 막내가 남았는데 양을 지킨다고 했어요."},
+        {"from":"엘리압","to":"다윗","label":"큰형","kind":"family","directed":true,"weight":1,"verses":"6-7","note":"사무엘은 키 큰 맏아들 엘리압을 보고 그가 기름 부을 자라 생각했지만 하나님은 중심을 보신다고 하셨어요."},
+        {"from":"다윗","to":"사울","label":"수금으로 섬긴 신하","kind":"ally","directed":true,"weight":2,"verses":"21-23","note":"다윗이 사울 앞에서 수금을 타면 악령이 떠나 사울이 상쾌해졌고, 사울은 다윗을 크게 사랑했어요."},
+        {"from":"하나님","to":"다윗","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"7, 12","note":"하나님은 사람은 외모를 보나 나는 중심을 본다 하시고 다윗을 택하셨어요."},
+        {"from":"아비나답","to":"이새","label":"아들","kind":"family","directed":true,"weight":1,"verses":"8","note":"이새가 둘째 아비나답을 사무엘 앞으로 지나가게 했지만 그도 택하지 않으셨어요."}
       ],
       "places": [
         {"name":"베들레헴","where":"유다 땅, 예루살렘 남쪽 약 9km","what":"다윗이 기름 부음 받은 곳","weight":3}
@@ -469,11 +469,11 @@
         {"name":"삼마","role":"전쟁에 나간 셋째 형","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"골리앗","label":"맞선 상대","kind":"conflict","directed":false,"weight":3},
-        {"from":"사울","to":"다윗","label":"싸움을 맡긴 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"엘리압","to":"다윗","label":"꾸짖은 큰형","kind":"conflict","directed":true,"weight":2},
-        {"from":"다윗","to":"이새","label":"막내아들","kind":"family","directed":true,"weight":1},
-        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1}
+        {"from":"다윗","to":"골리앗","label":"맞선 상대","kind":"conflict","directed":false,"weight":3,"verses":"45-49","note":"다윗이 너는 칼과 창으로 오지만 나는 만군의 여호와의 이름으로 간다며 물매 돌 하나로 골리앗을 쓰러뜨렸어요."},
+        {"from":"사울","to":"다윗","label":"싸움을 맡긴 왕","kind":"ally","directed":true,"weight":2,"verses":"33, 37-38","note":"사울은 너는 소년이라 했지만 사자와 곰에서 건지신 하나님 이야기에 가라, 여호와께서 함께하시기를 하며 보냈어요."},
+        {"from":"엘리압","to":"다윗","label":"꾸짖은 큰형","kind":"conflict","directed":true,"weight":2,"verses":"28","note":"전쟁터에 온 다윗이 묻고 다니자 큰형 엘리압이 네 교만함을 안다며 화를 냈어요."},
+        {"from":"다윗","to":"이새","label":"막내아들","kind":"family","directed":true,"weight":1,"verses":"17-20","note":"이새가 막내 다윗에게 볶은 곡식과 떡을 주며 전쟁터의 형들 안부를 알아 오라고 보냈어요."},
+        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"55-57","note":"사울이 군대 장관 아브넬에게 저 소년이 누구의 아들이냐 물었고, 아브넬이 승리한 다윗을 사울 앞에 데려왔어요."}
       ],
       "places": [
         {"name":"엘라 골짜기","where":"베들레헴 서쪽, 유다 평지의 골짜기","what":"이스라엘과 블레셋이 마주 보고 진 친 싸움터","weight":3},
@@ -499,12 +499,12 @@
         {"name":"메랍","role":"주겠다 하고 다른 이에게 준 사울의 큰딸","weight":1}
       ],
       "rels": [
-        {"from":"요나단","to":"다윗","label":"생명 같은 친구","kind":"ally","directed":false,"weight":3},
-        {"from":"사울","to":"다윗","label":"질투한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"미갈","to":"다윗","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"미갈","to":"사울","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"메랍","to":"사울","label":"큰딸","kind":"family","directed":true,"weight":1}
+        {"from":"요나단","to":"다윗","label":"생명 같은 친구","kind":"ally","directed":false,"weight":3,"verses":"1-4","note":"요나단의 마음이 다윗과 하나가 되어 자기 생명처럼 사랑했고, 겉옷과 칼과 활과 띠를 다윗에게 주었어요."},
+        {"from":"사울","to":"다윗","label":"질투한 왕","kind":"conflict","directed":true,"weight":3,"verses":"7-9, 11","note":"사울은 천천이요 다윗은 만만이라는 여인들의 노래에 화가 나 그날부터 다윗을 주목하고 창을 던졌어요."},
+        {"from":"미갈","to":"다윗","label":"아내","kind":"family","directed":true,"weight":2,"verses":"20, 27","note":"사울의 딸 미갈이 다윗을 사랑했고, 다윗은 블레셋 사람을 쳐서 미갈을 아내로 맞았어요."},
+        {"from":"미갈","to":"사울","label":"딸","kind":"family","directed":true,"weight":1,"verses":"20-21","note":"사울은 미갈이 다윗을 사랑한다는 말에 딸을 올무로 삼아 다윗을 블레셋 손에 죽게 하려 했어요."},
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"요나단은 사울의 아들이지만 다윗을 자기 생명처럼 아꼈어요."},
+        {"from":"메랍","to":"사울","label":"큰딸","kind":"family","directed":true,"weight":1,"verses":"17-19","note":"사울이 큰딸 메랍을 주겠다 했지만 정작 줄 때가 되자 다른 사람에게 주었어요."}
       ],
       "places": [
         {"name":"기브아","where":"베냐민 땅, 사울의 궁","what":"사울이 창을 던진 곳","weight":2}
@@ -529,11 +529,11 @@
         {"name":"사울의 사자들","role":"다윗을 잡으러 가 예언함","weight":1}
       ],
       "rels": [
-        {"from":"사울","to":"다윗","label":"죽이려 한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"요나단","to":"다윗","label":"변호한 친구","kind":"ally","directed":true,"weight":2},
-        {"from":"미갈","to":"다윗","label":"살려 준 아내","kind":"ally","directed":true,"weight":3},
-        {"from":"미갈","to":"사울","label":"속인 딸","kind":"conflict","directed":true,"weight":2},
-        {"from":"사무엘","to":"다윗","label":"품어 준 선지자","kind":"ally","directed":true,"weight":1}
+        {"from":"사울","to":"다윗","label":"죽이려 한 왕","kind":"conflict","directed":true,"weight":3,"verses":"1, 10-11","note":"사울이 아들과 신하들에게 다윗을 죽이라 하고, 수금 타는 다윗에게 창을 던지고 집까지 사람을 보냈어요."},
+        {"from":"요나단","to":"다윗","label":"변호한 친구","kind":"ally","directed":true,"weight":2,"verses":"4-6","note":"요나단이 아버지께 다윗은 왕께 죄를 짓지 않았다고 변호했고 사울이 그를 죽이지 않겠다고 맹세했어요."},
+        {"from":"미갈","to":"다윗","label":"살려 준 아내","kind":"ally","directed":true,"weight":3,"verses":"11-13","note":"미갈이 다윗을 창문으로 달아 내려 도망하게 하고 침대에 우상을 눕혀 사람들을 속였어요."},
+        {"from":"미갈","to":"사울","label":"속인 딸","kind":"conflict","directed":true,"weight":2,"verses":"17","note":"사울이 왜 나를 속였냐고 하자 미갈은 다윗이 나를 죽이겠다고 해서 그랬다고 둘러댔어요."},
+        {"from":"사무엘","to":"다윗","label":"품어 준 선지자","kind":"ally","directed":true,"weight":1,"verses":"18-24","note":"도망친 다윗이 라마의 사무엘에게 가서 모든 일을 말했고 사무엘이 다윗과 함께 나욧에 머물렀어요."}
       ],
       "places": [
         {"name":"라마","where":"에브라임 산지","what":"다윗이 사무엘에게 피한 곳","weight":2},
@@ -557,9 +557,9 @@
         {"name":"화살 줍는 아이","role":"신호를 모른 채 따라간 아이","weight":1}
       ],
       "rels": [
-        {"from":"요나단","to":"다윗","label":"언약한 친구","kind":"ally","directed":false,"weight":3},
-        {"from":"사울","to":"요나단","label":"창을 던진 아버지","kind":"conflict","directed":true,"weight":3},
-        {"from":"사울","to":"다윗","label":"죽이려는 왕","kind":"conflict","directed":true,"weight":2}
+        {"from":"요나단","to":"다윗","label":"언약한 친구","kind":"ally","directed":false,"weight":3,"verses":"16-17, 42","note":"요나단과 다윗이 여호와 앞에서 대대로 서로 지키자고 언약하고 울며 헤어졌어요."},
+        {"from":"사울","to":"요나단","label":"창을 던진 아버지","kind":"conflict","directed":true,"weight":3,"verses":"30-33","note":"요나단이 다윗을 변호하자 사울이 크게 노하여 아들에게까지 창을 던졌어요."},
+        {"from":"사울","to":"다윗","label":"죽이려는 왕","kind":"conflict","directed":true,"weight":2,"verses":"31","note":"사울은 이새의 아들이 살아 있는 한 너와 네 나라가 든든하지 못하다며 다윗을 죽이려 했어요."}
       ],
       "places": [
         {"name":"에셀 바위","where":"기브아 근처 들","what":"다윗이 숨어 화살 신호를 기다린 곳","weight":2}
@@ -582,9 +582,9 @@
         {"name":"아기스","role":"가드 왕","weight":2}
       ],
       "rels": [
-        {"from":"아히멜렉","to":"다윗","label":"떡을 준 제사장","kind":"ally","directed":true,"weight":3},
-        {"from":"도엑","to":"다윗","label":"지켜본 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"아기스","to":"다윗","label":"쫓아낸 왕","kind":"other","directed":true,"weight":2}
+        {"from":"아히멜렉","to":"다윗","label":"떡을 준 제사장","kind":"ally","directed":true,"weight":3,"verses":"1-6","note":"도망 중인 다윗에게 제사장 아히멜렉이 성소에서 물려 낸 거룩한 떡과 골리앗의 칼을 주었어요."},
+        {"from":"도엑","to":"다윗","label":"지켜본 자","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"그날 사울의 목자장인 에돔 사람 도엑이 거기 있어 그 일을 지켜보았어요."},
+        {"from":"아기스","to":"다윗","label":"쫓아낸 왕","kind":"other","directed":true,"weight":2,"verses":"10-15","note":"다윗이 가드 왕 아기스에게 갔다가 두려워 미친 척을 했고, 아기스는 미친 자를 왜 데려왔냐며 쫓아냈어요."}
       ],
       "places": [
         {"name":"놉","where":"예루살렘 북동쪽 제사장 성","what":"거룩한 떡과 골리앗의 칼을 얻은 곳","weight":3},
@@ -611,11 +611,11 @@
         {"name":"갓","role":"유다 땅으로 가라 한 선지자","weight":1}
       ],
       "rels": [
-        {"from":"도엑","to":"아히멜렉","label":"죽인 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"사울","to":"아히멜렉","label":"죽이라 명한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"아비아달","to":"아히멜렉","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"다윗","to":"아비아달","label":"품어 준 이","kind":"ally","directed":true,"weight":2},
-        {"from":"갓","to":"다윗","label":"조언한 선지자","kind":"ally","directed":true,"weight":1}
+        {"from":"도엑","to":"아히멜렉","label":"죽인 자","kind":"conflict","directed":true,"weight":3,"verses":"18-19","note":"다른 신하들이 거절하자 도엑이 사울의 명령대로 아히멜렉과 제사장 팔십오 명을 죽였어요."},
+        {"from":"사울","to":"아히멜렉","label":"죽이라 명한 왕","kind":"conflict","directed":true,"weight":3,"verses":"13, 16","note":"사울이 아히멜렉에게 어찌 이새의 아들과 공모했느냐며 너와 네 집이 반드시 죽으리라고 했어요."},
+        {"from":"아비아달","to":"아히멜렉","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20","note":"아히멜렉의 아들 중 아비아달 한 사람만 피하여 다윗에게 도망쳤어요."},
+        {"from":"다윗","to":"아비아달","label":"품어 준 이","kind":"ally","directed":true,"weight":2,"verses":"22-23","note":"다윗이 아비아달에게 네 아버지 집이 죽은 것은 나 때문이니 나와 함께 있으면 안전하리라고 했어요."},
+        {"from":"갓","to":"다윗","label":"조언한 선지자","kind":"ally","directed":true,"weight":1,"verses":"5","note":"선지자 갓이 다윗에게 요새에 머물지 말고 유다 땅으로 가라고 조언했어요."}
       ],
       "places": [
         {"name":"아둘람 굴","where":"유다 평지의 굴","what":"원통한 자들이 다윗에게 모인 곳","weight":3},
@@ -640,10 +640,10 @@
         {"name":"아비아달","role":"에봇을 가져온 제사장","weight":1}
       ],
       "rels": [
-        {"from":"요나단","to":"다윗","label":"격려한 친구","kind":"ally","directed":true,"weight":3},
-        {"from":"사울","to":"다윗","label":"추격한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"십 사람들","to":"사울","label":"밀고한 자들","kind":"ally","directed":true,"weight":2},
-        {"from":"아비아달","to":"다윗","label":"에봇을 맡은 제사장","kind":"ally","directed":true,"weight":1}
+        {"from":"요나단","to":"다윗","label":"격려한 친구","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"요나단이 광야의 다윗을 찾아와 두려워 말라, 너는 이스라엘의 왕이 되고 나는 네 다음이 되리라고 격려했어요."},
+        {"from":"사울","to":"다윗","label":"추격한 왕","kind":"conflict","directed":true,"weight":3,"verses":"14, 25-26","note":"사울이 날마다 다윗을 찾았고 마온 광야에서는 산 이쪽저쪽으로 바짝 쫓아왔어요."},
+        {"from":"십 사람들","to":"사울","label":"밀고한 자들","kind":"ally","directed":true,"weight":2,"verses":"19-20","note":"십 사람들이 기브아로 사울을 찾아가 다윗이 우리 곁에 숨어 있다고 밀고했어요."},
+        {"from":"아비아달","to":"다윗","label":"에봇을 맡은 제사장","kind":"ally","directed":true,"weight":1,"verses":"6, 9-12","note":"에봇을 가지고 온 아비아달을 통해 다윗이 그일라 사람들이 자기를 넘길지 하나님께 물었어요."}
       ],
       "places": [
         {"name":"그일라","where":"유다 평지의 성","what":"다윗이 구했으나 배반하려 한 성","weight":3},
@@ -667,9 +667,9 @@
         {"name":"다윗의 부하들","role":"원수를 치자고 한 이들","weight":2}
       ],
       "rels": [
-        {"from":"다윗","to":"사울","label":"살려 준 신하","kind":"ally","directed":true,"weight":3},
-        {"from":"사울","to":"다윗","label":"쫓던 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"다윗의 부하들","to":"다윗","label":"따르는 부하들","kind":"ally","directed":true,"weight":2}
+        {"from":"다윗","to":"사울","label":"살려 준 신하","kind":"ally","directed":true,"weight":3,"verses":"4-7","note":"엔게디 굴에서 사울을 죽일 기회가 왔지만 다윗은 하나님이 기름 부으신 자를 칠 수 없다며 옷자락만 베었어요."},
+        {"from":"사울","to":"다윗","label":"쫓던 왕","kind":"conflict","directed":true,"weight":3,"verses":"17-20","note":"사울이 다윗의 말을 듣고 소리 높여 울며 너는 나보다 의롭다, 네가 반드시 왕이 되리라고 했어요."},
+        {"from":"다윗의 부하들","to":"다윗","label":"따르는 부하들","kind":"ally","directed":true,"weight":2,"verses":"4, 7","note":"부하들이 하나님이 원수를 넘겨주신 날이라 했지만 다윗은 그들을 말려 사울을 해치지 못하게 했어요."}
       ],
       "places": [
         {"name":"엔게디","where":"사해 서쪽 가의 오아시스","what":"굴에서 사울을 살려 준 곳","weight":3}
@@ -694,11 +694,11 @@
         {"name":"발디","role":"미갈을 아내로 받은 사람","weight":1}
       ],
       "rels": [
-        {"from":"나발","to":"다윗","label":"모욕한 부자","kind":"conflict","directed":true,"weight":3},
-        {"from":"아비가일","to":"나발","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"아비가일","to":"다윗","label":"막아 준 여인","kind":"ally","directed":true,"weight":3},
-        {"from":"아비가일","to":"다윗","label":"새 아내","kind":"family","directed":true,"weight":2},
-        {"from":"아히노암","to":"다윗","label":"아내","kind":"family","directed":true,"weight":1}
+        {"from":"나발","to":"다윗","label":"모욕한 부자","kind":"conflict","directed":true,"weight":3,"verses":"10-11","note":"부자 나발이 다윗이 누구냐, 요즘 주인에게서 도망친 종이 많다며 다윗의 부하들을 모욕하고 빈손으로 돌려보냈어요."},
+        {"from":"아비가일","to":"나발","label":"아내","kind":"family","directed":true,"weight":2,"verses":"3","note":"나발의 아내 아비가일은 총명하고 아름다웠지만 남편 나발은 완고하고 행실이 악했어요."},
+        {"from":"아비가일","to":"다윗","label":"막아 준 여인","kind":"ally","directed":true,"weight":3,"verses":"23-33","note":"아비가일이 음식을 가지고 서둘러 나가 다윗 앞에 엎드려 피를 흘리지 말라고 막았고, 다윗은 그 지혜를 축복했어요."},
+        {"from":"아비가일","to":"다윗","label":"새 아내","kind":"family","directed":true,"weight":2,"verses":"39-42","note":"나발이 죽은 뒤 다윗이 청혼하자 아비가일이 일어나 다윗의 아내가 되었어요."},
+        {"from":"아히노암","to":"다윗","label":"아내","kind":"family","directed":true,"weight":1,"verses":"43","note":"다윗은 이스르엘의 아히노암도 아내로 맞았어요."}
       ],
       "places": [
         {"name":"마온","where":"유다 남쪽","what":"나발이 살던 곳","weight":2},
@@ -724,10 +724,10 @@
         {"name":"아히멜렉(헷 사람)","role":"다윗의 부하","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"사울","label":"또 살려 준 이","kind":"ally","directed":true,"weight":3},
-        {"from":"아비새","to":"다윗","label":"부하","kind":"ally","directed":true,"weight":2},
-        {"from":"다윗","to":"아브넬","label":"꾸짖은 이","kind":"conflict","directed":true,"weight":2},
-        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1}
+        {"from":"다윗","to":"사울","label":"또 살려 준 이","kind":"ally","directed":true,"weight":3,"verses":"9-12","note":"다윗이 잠든 사울의 창과 물병만 가져오고, 하나님이 기름 부으신 자에게 손대지 않겠다고 했어요."},
+        {"from":"아비새","to":"다윗","label":"부하","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"아비새가 사울의 진영에 함께 들어가 내가 창으로 한 번에 찌르겠다 했지만 다윗이 말렸어요."},
+        {"from":"다윗","to":"아브넬","label":"꾸짖은 이","kind":"conflict","directed":true,"weight":2,"verses":"14-16","note":"다윗이 건너편에서 아브넬에게 너는 왕을 지키지 않았으니 죽어 마땅하다고 꾸짖었어요."},
+        {"from":"아브넬","to":"사울","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"5, 7","note":"사울은 진 가운데 누웠고 군대 장관 아브넬이 둘러 누워 있었어요."}
       ],
       "places": [
         {"name":"하길라 산","where":"십 광야","what":"사울이 진을 친 곳","weight":2}
@@ -750,9 +750,9 @@
         {"name":"아비가일","role":"다윗의 아내","weight":1}
       ],
       "rels": [
-        {"from":"아기스","to":"다윗","label":"의탁받은 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"다윗","to":"아기스","label":"속인 신하","kind":"conflict","directed":true,"weight":2},
-        {"from":"사울","to":"다윗","label":"추격을 멈춘 왕","kind":"conflict","directed":true,"weight":1}
+        {"from":"아기스","to":"다윗","label":"의탁받은 왕","kind":"ally","directed":true,"weight":3,"verses":"5-6, 12","note":"아기스가 다윗에게 시글락을 주었고, 다윗을 믿어 그가 영원히 내 종이 되리라 생각했어요."},
+        {"from":"다윗","to":"아기스","label":"속인 신하","kind":"conflict","directed":true,"weight":2,"verses":"8-11","note":"다윗은 아말렉 등을 치고도 아기스에게는 유다를 쳤다고 둘러대 속였어요."},
+        {"from":"사울","to":"다윗","label":"추격을 멈춘 왕","kind":"conflict","directed":true,"weight":1,"verses":"4","note":"다윗이 가드로 도망했다는 말을 듣고 사울은 다시는 그를 찾지 않았어요."}
       ],
       "places": [
         {"name":"가드","where":"블레셋 성","what":"다윗이 아기스에게 의탁한 곳","weight":2},
@@ -777,9 +777,9 @@
         {"name":"다윗","role":"아기스의 경호대장이 됨","weight":1}
       ],
       "rels": [
-        {"from":"사울","to":"엔돌의 신접한 여인","label":"찾아간 왕","kind":"other","directed":true,"weight":3},
-        {"from":"사무엘","to":"사울","label":"죽음을 알린 이","kind":"conflict","directed":true,"weight":3},
-        {"from":"아기스","to":"다윗","label":"경호대장 삼은 왕","kind":"ally","directed":true,"weight":1}
+        {"from":"사울","to":"엔돌의 신접한 여인","label":"찾아간 왕","kind":"other","directed":true,"weight":3,"verses":"7-11","note":"하나님이 응답하지 않으시자 사울이 변장하고 밤에 엔돌의 신접한 여인을 찾아가 사무엘을 불러 달라고 했어요."},
+        {"from":"사무엘","to":"사울","label":"죽음을 알린 이","kind":"conflict","directed":true,"weight":3,"verses":"16-19","note":"나타난 사무엘이 하나님이 나라를 다윗에게 주셨으니 내일 너와 아들들이 나와 함께 있으리라고 죽음을 알렸어요."},
+        {"from":"아기스","to":"다윗","label":"경호대장 삼은 왕","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"아기스가 다윗에게 함께 전쟁에 나가자 하며 너를 영원히 내 머리 지키는 자로 삼겠다고 했어요."}
       ],
       "places": [
         {"name":"엔돌","where":"이스르엘 골짜기 북쪽","what":"신접한 여인을 찾아간 곳","weight":3},
@@ -802,9 +802,9 @@
         {"name":"블레셋 방백들","role":"다윗을 믿지 못한 지도자들","weight":2}
       ],
       "rels": [
-        {"from":"블레셋 방백들","to":"다윗","label":"의심한 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"아기스","to":"다윗","label":"칭찬한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"블레셋 방백들","to":"아기스","label":"반대한 동료","kind":"conflict","directed":true,"weight":2}
+        {"from":"블레셋 방백들","to":"다윗","label":"의심한 이들","kind":"conflict","directed":true,"weight":3,"verses":"3-5","note":"블레셋 방백들이 저 히브리 사람이 싸움 중에 우리를 배반할 수 있다며 다윗을 돌려보내라고 했어요."},
+        {"from":"아기스","to":"다윗","label":"칭찬한 왕","kind":"ally","directed":true,"weight":3,"verses":"6, 9","note":"아기스는 다윗에게 너는 하나님의 천사처럼 선하지만 방백들이 원하지 않는다며 돌아가라 했어요."},
+        {"from":"블레셋 방백들","to":"아기스","label":"반대한 동료","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"방백들이 아기스에게 노하여 그를 함께 싸움에 내려가지 못하게 하라고 반대했어요."}
       ],
       "places": [
         {"name":"아벡","where":"해안 평야","what":"블레셋 군대가 모인 곳","weight":2}
@@ -830,11 +830,11 @@
         {"name":"아비가일","role":"사로잡혔다 돌아온 아내","weight":1}
       ],
       "rels": [
-        {"from":"아말렉 사람들","to":"다윗","label":"약탈한 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"애굽 소년","to":"다윗","label":"안내한 소년","kind":"ally","directed":true,"weight":2},
-        {"from":"다윗의 부하들","to":"다윗","label":"원망한 부하들","kind":"conflict","directed":true,"weight":2},
-        {"from":"아비아달","to":"다윗","label":"에봇을 맡은 제사장","kind":"ally","directed":true,"weight":1},
-        {"from":"아비가일","to":"다윗","label":"아내","kind":"family","directed":true,"weight":1}
+        {"from":"아말렉 사람들","to":"다윗","label":"약탈한 원수","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"아말렉이 시글락을 불사르고 다윗과 부하들의 아내와 자녀들을 사로잡아 갔어요."},
+        {"from":"애굽 소년","to":"다윗","label":"안내한 소년","kind":"ally","directed":true,"weight":2,"verses":"11-15","note":"들에서 쓰러진 애굽 소년을 먹여 살리자 그가 아말렉 군대 있는 곳으로 다윗을 안내했어요."},
+        {"from":"다윗의 부하들","to":"다윗","label":"원망한 부하들","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"가족을 잃은 부하들이 슬퍼서 다윗을 돌로 치자 했지만 다윗은 하나님으로 힘을 얻었어요."},
+        {"from":"아비아달","to":"다윗","label":"에봇을 맡은 제사장","kind":"ally","directed":true,"weight":1,"verses":"7-8","note":"다윗이 제사장 아비아달에게 에봇을 가져오게 하여 추격할지 하나님께 물었어요."},
+        {"from":"아비가일","to":"다윗","label":"아내","kind":"family","directed":true,"weight":1,"verses":"5, 18","note":"다윗의 두 아내 아히노암과 아비가일도 사로잡혔지만 다윗이 다 되찾았어요."}
       ],
       "places": [
         {"name":"시글락","where":"유다 남쪽 경계","what":"아말렉이 불사른 성","weight":3},
@@ -861,11 +861,11 @@
         {"name":"말기수아","role":"함께 죽은 왕자","weight":1}
       ],
       "rels": [
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"블레셋 사람들","to":"사울","label":"쓰러뜨린 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"야베스 길르앗 사람들","to":"사울","label":"은혜를 갚은 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"무기 든 자","to":"사울","label":"따라 죽은 부하","kind":"ally","directed":true,"weight":1},
-        {"from":"말기수아","to":"사울","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":3,"verses":"2","note":"블레셋이 길보아산에서 사울의 아들 요나단과 아비나답과 말기수아를 죽였어요."},
+        {"from":"블레셋 사람들","to":"사울","label":"쓰러뜨린 원수","kind":"conflict","directed":true,"weight":3,"verses":"3-4, 9","note":"활 쏘는 자들에게 중상을 입은 사울이 자기 칼에 엎드려 죽었고, 블레셋은 그 시신을 성벽에 못 박았어요."},
+        {"from":"야베스 길르앗 사람들","to":"사울","label":"은혜를 갚은 이들","kind":"ally","directed":true,"weight":2,"verses":"11-13","note":"야베스 길르앗 용사들이 밤새 가서 사울과 아들들의 시신을 거두어 장사하고 칠 일을 금식했어요."},
+        {"from":"무기 든 자","to":"사울","label":"따라 죽은 부하","kind":"ally","directed":true,"weight":1,"verses":"4-5","note":"사울의 무기 든 자는 사울을 찔러 달라는 명령을 따르지 못했고, 사울이 죽자 자기도 칼에 엎드려 죽었어요."},
+        {"from":"말기수아","to":"사울","label":"아들","kind":"family","directed":true,"weight":1,"verses":"2","note":"말기수아도 사울의 아들로 같은 날 전사했어요."}
       ],
       "places": [
         {"name":"길보아 산","where":"이스르엘 골짜기 남동쪽 산","what":"사울과 아들들이 죽은 곳","weight":3},
