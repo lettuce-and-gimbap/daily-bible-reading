@@ -90,3 +90,28 @@ async function copyText(text, successMsg) {
     prompt("아래 내용을 복사하세요", text);
   }
 }
+
+// ── 구절 목록 글씨 크기 (50%~200%, 구절 선택 패널과 메모 구절 고르기에 함께 씀) ──
+function fzScale() {
+  const v = Number(state.settings.fz);
+  return v >= 0.5 && v <= 2 ? v : 1;
+}
+function fzControl() {
+  return `<span class="fz" role="group" aria-label="글씨 크기">
+    <button type="button" class="fz-btn" data-fz="-1" aria-label="글씨 작게" ${fzScale() <= 0.5 ? "disabled" : ""}>가<small>−</small></button>
+    <b>${Math.round(fzScale() * 100)}%</b>
+    <button type="button" class="fz-btn" data-fz="1" aria-label="글씨 크게" ${fzScale() >= 2 ? "disabled" : ""}>가<small>+</small></button>
+  </span>`;
+}
+// 다시 그리지 않고 그 자리에서 크기만 바꿈 (스크롤 위치 유지)
+function fzStep(root, dir) {
+  const v = Math.min(2, Math.max(0.5, Math.round((fzScale() + dir * 0.1) * 10) / 10));
+  state.settings.fz = v;
+  persist();
+  root.style.setProperty("--fz", v);
+  root.querySelectorAll(".fz").forEach((g) => {
+    g.querySelector("b").textContent = `${Math.round(v * 100)}%`;
+    g.querySelector('[data-fz="-1"]').disabled = v <= 0.5;
+    g.querySelector('[data-fz="1"]').disabled = v >= 2;
+  });
+}

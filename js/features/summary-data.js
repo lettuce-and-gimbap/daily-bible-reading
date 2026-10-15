@@ -43,7 +43,7 @@ function composeDay(chapters, books) {
   }));
 
   // 이름이 바뀐 사람: 그날 분량 안에서 바뀐 경우만 (장의 renames)
-  const renames = chapters.flatMap((c) => (c.data.renames || []).map((r) => ({ ...r, ref: ref(c, r.verses) })));
+  const renames = chapters.flatMap((c) => (c.data.renames || []).map((r) => ({ ...r, ref: ref(c, r.verses), src: { book: c.book.code, chap: c.chap, verses: r.verses } })));
   renames.forEach((r) => {
     if (!people.has(r.from)) {
       const to = people.get(r.to);
@@ -79,7 +79,7 @@ function composeDay(chapters, books) {
   chapters.forEach((c, ci) => (c.data.rels || []).forEach((r, ri) => {
     if (!shown.has(r.from) || !shown.has(r.to)) return;
     const key = `${r.from}|${r.to}|${r.label}`;
-    const note = r.note ? { ref: ref(c, r.verses), text: r.note } : null;
+    const note = r.note ? { ref: ref(c, r.verses), text: r.note, src: { book: c.book.code, chap: c.chap, verses: r.verses } } : null;
     const cur = rels.get(key);
     if (cur) {
       cur.score += r.weight || 1;
@@ -96,7 +96,7 @@ function composeDay(chapters, books) {
     }).slice(0, SUMMARY_LIMITS.rels);
   // 이름이 바뀐 화살표는 늘 그림 (옛 이름 → 새 이름, 이름표는 바뀐 계기)
   renames.forEach((r) => topRels.unshift({ from: r.from, to: r.to, label: r.why, kind: "rename", directed: true, score: 99, order: -1,
-    notes: [{ ref: r.ref, text: r.note || `${r.from}의 이름이 ${r.to}(으)로 바뀌었어요. 계기: ${r.why}.` }] }));
+    notes: [{ ref: r.ref, src: r.src, text: r.note || `${r.from}의 이름이 ${r.to}(으)로 바뀌었어요. 계기: ${r.why}.` }] }));
 
   // 지역: 이름이 같으면 하나로. 위치 설명은 처음 것, 일어난 일은 장마다 다르면 이어 붙임(2개까지)
   const places = new Map();

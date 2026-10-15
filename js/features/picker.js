@@ -1,4 +1,4 @@
-// 구절 선택 패널: 갓피아 화면 대신 우리 앱이 본문을 받아 절마다 체크박스를 달고,
+// 구절 선택 패널: 갓피아 화면 대신 우리 앱이 본문을 받아 절마다 눌러 고르게 하고(절 상자를 누르면 선택),
 // 고른 절을 보기 설정의 역본(한권/두권) 모두로 메모·노트에 붙이거나 복사함 (드래그로 복사할 필요 없음)
 // 갓피아는 다른 사이트라 그 화면 안에 체크박스를 넣을 수 없어서 worker/의 /bible로 받은 본문을 따로 보여 준다.
 
@@ -25,16 +25,19 @@ async function renderVersePicker(body, target, idx) {
   const ver2 = picked[1] && versionFor(picked[1], book) !== ver1 ? versionFor(picked[1], book) : "";
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
 
-  body.innerHTML = `<div class="vp"><div class="vp-head">
+  body.innerHTML = `<div class="vp" style="--fz:${fzScale()}"><div class="vp-head">
       <button class="icon-btn" data-go="-1" ${idx0 <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
       <b>${esc(book.name)} ${chap}장</b>
       <button class="icon-btn" data-go="1" ${idx0 >= TOTAL_CHAPTERS - 1 ? "disabled" : ""} aria-label="다음 장">›</button>
     </div>
+    <div class="vp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
     <div class="opts vp-vers">${VERSIONS.map((v) => `<button class="opt ${picked.includes(v.code) ? "on" : ""}" data-pv="${v.code}">${v.name}</button>`).join("")}</div>
     <p class="muted small vp-msg">본문 불러오는 중…</p></div>`;
   const root = body.firstElementChild;
   root.addEventListener("click", (e) => { // 패널 바깥(통독 화면 등)의 클릭 처리로 새어 나가지 않게
     e.stopPropagation();
+    const fz = e.target.closest("[data-fz]");
+    if (fz) return fzStep(root, Number(fz.dataset.fz));
     const go = e.target.closest("[data-go]");
     if (go) return renderVersePicker(body, target, idx0 + Number(go.dataset.go));
     const pv = e.target.closest("[data-pv]");
@@ -78,7 +81,7 @@ async function renderVersePicker(body, target, idx) {
   root.insertAdjacentHTML("beforeend", `
     <div class="vp-list">${rows.map((r) => `
       <label class="vp-row">
-        <input type="checkbox" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
+        <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
         <span class="vp-num">${esc(r.v.label)}</span>
         <span class="vp-txt">${esc(r.v.text)}${r.also.map((w) =>
           `<small><i>${esc(vname(ver2))}</i> ${esc(w.text)}</small>`).join("")}</span>

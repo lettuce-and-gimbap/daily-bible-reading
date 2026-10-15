@@ -392,7 +392,9 @@ function rgOpen(id) {
   const fitAll = () => frame(m.names, 24);
 
   const noteList = (r) => (r.notes || []).length
-    ? `<ul class="rg-notes">${r.notes.map((n) => `<li><small>${esc(n.ref)}</small><p>${esc(n.text)}</p></li>`).join("")}</ul>`
+    ? `<ul class="rg-notes">${r.notes.map((n, k) => `<li>${n.src && n.src.verses
+      ? `<button type="button" class="rg-src" data-src="${k}" aria-expanded="false">${esc(n.ref)} <span>개역개정 원문 보기 ▾</span></button>`
+      : `<small>${esc(n.ref)}</small>`}<p>${esc(n.text)}</p><div class="rg-orig" hidden></div></li>`).join("")}</ul>`
     : `<p class="muted small">이 관계를 풀어 줄 구절 설명은 아직 준비 중이에요.</p>`;
   const relLine = (r) => `<b>${esc(r.from)}</b><span class="rg-arrow">${r.directed ? "→" : "↔"}</span><b>${esc(r.to)}</b>
     <em style="color:${REL_COLOR[r.kind] || REL_COLOR.other}">${esc(r.label)}</em><span class="rg-kind">${REL_NAME[r.kind] || ""}</span>`;
@@ -497,12 +499,38 @@ function rgOpen(id) {
       return flyTo({ w: view.w * k, h: view.h * k, x: cx - view.w * k / 2, y: cy - view.h * k / 2 });
     }
     const pick = e.target.closest("[data-pick]");
-    if (pick) showEdge(+pick.dataset.pick);
+    if (pick) return showEdge(+pick.dataset.pick);
+    const src = e.target.closest("[data-src]");
+    if (src && sel && sel.edge !== undefined) rgShowOrig(src, m.rels[sel.edge].notes[+src.dataset.src].src);
   });
 
   clearSel();
   view = fitAll(); setView();
   el.querySelector(".rg-close").focus();
+}
+
+// 구절 풀이의 장·절 버튼 → 그 절의 개역개정4판 원문을 풀이 아래에 펼침 (다시 누르면 접힘)
+async function rgShowOrig(btn, src) {
+  const box = btn.parentElement.querySelector(".rg-orig");
+  const open = btn.getAttribute("aria-expanded") === "true";
+  btn.setAttribute("aria-expanded", String(!open));
+  btn.querySelector("span").textContent = open ? "개역개정 원문 보기 ▾" : "원문 접기 ▴";
+  box.hidden = open;
+  if (open || box.dataset.done) return;
+  box.innerHTML = `<p class="muted small">본문 불러오는 중…</p>`;
+  const idx = CHAPTERS.findIndex((c) => c.book.code === src.book && c.chap === src.chap);
+  const want = new Set();
+  String(src.verses).split(/,s*/).forEach((p) => { const [a, b] = p.split("-").map(Number); for (let n = a; n <= (b || a); n++) want.add(n); });
+  try {
+    if (!PUSH_SERVER || idx < 0) throw new Error("no-server");
+    const list = (await chapterVerses(idx, "gae")).filter((v) => { const [a, b] = labelSpan(v.label); for (let n = a; n <= b; n++) if (want.has(n)) return true; return false; });
+    if (!list.length) throw new Error("empty");
+    box.innerHTML = list.map((v) => `<p><b>${esc(v.label)}</b> ${esc(v.text)}</p>`).join("") + `<small class="muted">개역개정4판</small>`;
+    box.dataset.done = "1";
+  } catch (e) {
+    box.innerHTML = `<p class="muted small">원문을 불러오지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.</p>`;
+    btn.setAttribute("aria-expanded", "true");
+  }
 }
 
 // 작은 관계도를 꾹 누르면(1.5초) 상세 창. 누르는 동안 테두리가 차오름. 손가락이 움직이면(스크롤) 취소

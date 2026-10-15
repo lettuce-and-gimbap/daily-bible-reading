@@ -170,12 +170,15 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .mp-bar-btns { display: inline-flex; }
 .mp-panel .btn.text { padding: 6px 8px; }
 .mp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 38dvh; overflow-y: auto; overscroll-behavior: contain; }
-.mp-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.mp-item { position: relative; display: flex; align-items: flex-start; gap: 10px; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
 .mp-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
-.mp-item input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); }
-.mp-body { min-width: 0; display: grid; gap: 2px; }
-.mp-body b { font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.mp-body small { color: var(--muted); font-size: .8rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+/* 체크박스는 숨기고 상자 전체를 눌러 고름(선택되면 테두리·바탕 색과 ✓) */
+.mp-item input, .vp-row input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; pointer-events: none; }
+.mp-item:has(input:focus-visible), .vp-row:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mp-item:has(input:checked)::after, .vp-row:has(input:checked)::after { content: "✓"; position: absolute; top: 6px; right: 9px; color: var(--accent); font-weight: 800; font-size: calc(.9rem * var(--fz, 1)); }
+.mp-body { min-width: 0; padding-right: 14px; display: grid; gap: 2px; }
+.mp-body b { font-size: calc(.9rem * var(--fz, 1)); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mp-body small { color: var(--muted); font-size: calc(.8rem * var(--fz, 1)); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .mp-item.mp-note .mp-body b { font-weight: 600; }
 .mp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .mp-actions .btn.text { margin-left: auto; }
@@ -227,7 +230,7 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rg-kind { font-size: .72rem; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 1px 7px; }
 .rg-notes { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .rg-notes li { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; display: grid; gap: 2px; }
-.rg-notes small { color: var(--accent); font-weight: 700; font-size: .78rem; }
+.rg-notes small, .rg-src { color: var(--accent); font-weight: 700; font-size: .78rem; }
 .rg-notes p { font-size: .9rem; line-height: 1.55; }
 .rg-person { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
 .rg-person span { font-size: .84rem; color: var(--muted); }
@@ -270,12 +273,11 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 /* 구절 선택 패널 */
 .vp-head { display: flex; align-items: center; justify-content: center; gap: 14px; }
 .vp-list { display: grid; gap: 6px; }
-.vp-row { display: grid; grid-template-columns: auto auto 1fr; gap: 8px; align-items: start; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer; }
+.vp-row { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: start; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer; }
 .vp-row:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
-.vp-row input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); }
-.vp-num { min-width: 1.6em; font-weight: 700; color: var(--accent); font-size: .86rem; padding-top: 2px; }
-.vp-txt { font-weight: 400; font-size: .92rem; line-height: 1.6; }
-.vp-txt small { display: block; margin-top: 4px; font-size: .84rem; color: var(--muted); }
+.vp-num { min-width: 1.6em; font-weight: 700; color: var(--accent); font-size: calc(.86rem * var(--fz, 1)); padding-top: 2px; }
+.vp-txt { padding-right: 12px; font-weight: 400; font-size: calc(.92rem * var(--fz, 1)); line-height: 1.6; }
+.vp-txt small { display: block; margin-top: 4px; font-size: calc(.84rem * var(--fz, 1)); color: var(--muted); }
 .vp-txt small i { font-style: normal; font-weight: 700; margin-right: 4px; }
 .vp-bar { position: sticky; bottom: -14px; display: flex; align-items: center; gap: 6px; padding: 10px 0 14px; margin-top: 8px; background: var(--bg); }
 .vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }
@@ -296,5 +298,23 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .sheet-body { grid-template-columns: minmax(0, 1fr); }
 .vp { display: grid; gap: 12px; min-width: 0; }
 .vp-list { min-width: 0; }
-.vp-row { grid-template-columns: auto auto minmax(0, 1fr); min-width: 0; }
+.vp-row { grid-template-columns: auto minmax(0, 1fr); min-width: 0; }
 .vp-txt { min-width: 0; overflow-wrap: anywhere; word-break: keep-all; }
+
+/* 글씨 크기 조절 (50%~200%) */
+.vp-zoom, .mp-zoom { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.fz { display: inline-flex; align-items: center; gap: 4px; }
+.fz b { min-width: 3.2em; text-align: center; font-size: .82rem; font-variant-numeric: tabular-nums; }
+.fz-btn { display: inline-flex; align-items: baseline; gap: 1px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
+.fz-btn small { font-size: .7rem; }
+.fz-btn:disabled { opacity: .4; cursor: default; }
+.mp-item, .vp-row { overflow-wrap: anywhere; word-break: keep-all; }
+.mp-body b { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+/* 관계도 구절 풀이의 장·절 → 개역개정 원문 펼치기 */
+.rg-src { justify-self: start; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; }
+.rg-src span { margin-left: 4px; color: var(--muted); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.rg-orig { border-left: 3px solid var(--accent-soft); padding: 2px 0 2px 8px; display: grid; gap: 4px; }
+.rg-orig p { font-size: .86rem; line-height: 1.6; color: var(--ink); overflow-wrap: anywhere; word-break: keep-all; }
+.rg-orig b { color: var(--accent); margin-right: 2px; }
+.rg-orig > small { font-size: .72rem; }

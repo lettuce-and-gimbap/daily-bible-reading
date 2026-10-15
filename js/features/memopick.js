@@ -1,5 +1,5 @@
 // 메모 안의 붙여넣은 구절을 골라서 복사하거나 한꺼번에 지우기 (통독 메모 · QT 묵상 노트 공통)
-// 메모를 빈 줄 기준 덩어리로 나눠 체크 목록으로 보여 줌. 덩어리 하나 = 붙여넣은 구절 하나(또는 직접 쓴 글 한 단락)
+// 메모를 빈 줄 기준 덩어리로 나눠 목록으로 보여 줌(상자를 누르면 선택). 덩어리 하나 = 붙여넣은 구절 하나(또는 직접 쓴 글 한 단락)
 //   "민수기 18:10\n10 지극히 거룩하게…"  ← 첫 줄이 "권 장:절"이면 구절, 나머지는 직접 쓴 글
 
 const memoPick = { open: false, picked: new Set(), box: null, area: null, save: null, rerender: null };
@@ -56,9 +56,24 @@ function memoPickMount(box, area, save, rerender) {
   memoPickDraw();
 }
 
+// 다시 그려도 목록·화면이 맨 위로 튀지 않게 스크롤 위치를 기억했다가 되돌림
 function memoPickDraw() {
-  const { box, area } = memoPick;
+  const { box } = memoPick;
   if (!box || !box.isConnected) return;
+  const list = box.querySelector(".mp-list");
+  const listTop = list ? list.scrollTop : 0;
+  const scrollers = [];
+  for (let p = box.parentElement; p; p = p.parentElement) if (p.scrollTop) scrollers.push([p, p.scrollTop]);
+  const winY = window.scrollY;
+  memoPickPaint();
+  const list2 = box.querySelector(".mp-list");
+  if (list2) list2.scrollTop = listTop;
+  scrollers.forEach(([p, t]) => { p.scrollTop = t; });
+  if (window.scrollY !== winY) window.scrollTo(0, winY);
+}
+
+function memoPickPaint() {
+  const { box, area } = memoPick;
   if (!memoPick.open) {
     box.innerHTML = `<button class="btn ghost small" data-mp="toggle">☑️ 구절 골라 복사 · 지우기</button>`;
     return;
@@ -68,7 +83,7 @@ function memoPickDraw() {
   memoPick.picked.forEach((k) => { if (!keys.has(k)) memoPick.picked.delete(k); }); // 사라진 글의 선택은 정리
   const n = memoPick.picked.size;
   box.innerHTML = `
-    <div class="mp-panel">
+    <div class="mp-panel" style="--fz:${fzScale()}">
       <div class="mp-bar">
         <span><b>${blocks.length}</b>개 중 <b>${n}</b>개 선택</span>
         <span class="mp-bar-btns">
@@ -76,11 +91,12 @@ function memoPickDraw() {
           <button class="btn text small" data-mp="none" ${n ? "" : "disabled"}>선택해제</button>
         </span>
       </div>
+      <div class="mp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
       ${blocks.length ? `
         <ul class="mp-list">
           ${blocks.map((b, i) => `
             <li><label class="mp-item mp-${b.kind}">
-              <input type="checkbox" data-k="${i}" ${memoPick.picked.has(b.key) ? "checked" : ""}>
+              <input type="checkbox" class="sr-only" data-k="${i}" ${memoPick.picked.has(b.key) ? "checked" : ""}>
               <span class="mp-body"><b>${b.kind === "quote" ? "📖 " : "✏️ "}${esc(b.label)}</b>${b.preview ? `<small>${esc(b.preview)}</small>` : ""}</span>
             </label></li>`).join("")}
         </ul>` : `<p class="muted small">아직 메모가 비어 있어요.</p>`}
@@ -93,6 +109,8 @@ function memoPickDraw() {
 }
 
 function memoPickClick(e) {
+  const fz = e.target.closest("[data-fz]");
+  if (fz) return fzStep(memoPick.box.querySelector(".mp-panel"), Number(fz.dataset.fz));
   const b = e.target.closest("[data-mp]");
   if (!b) return;
   const { area, save } = memoPick;
