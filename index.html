@@ -14,10 +14,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="css/base.css?v=40">
-  <link rel="stylesheet" href="css/setup.css?v=40">
-  <link rel="stylesheet" href="css/reader.css?v=40">
-  <link rel="stylesheet" href="css/stats.css?v=40">
+  <link rel="stylesheet" href="css/base.css?v=41">
+  <link rel="stylesheet" href="css/setup.css?v=41">
+  <link rel="stylesheet" href="css/reader.css?v=41">
+  <link rel="stylesheet" href="css/stats.css?v=41">
 </head>
 <body>
   <header class="topbar">
@@ -28,9 +28,8 @@
     <div class="topbar-right">
       <nav class="tabs" aria-label="메뉴">
         <a href="#today" data-route="today">통독</a>
-        <a href="#table" data-route="table">통독표</a>
         <a href="#qt" data-route="qt">QT</a>
-        <a href="#stats" data-route="stats">현황</a>
+        <a href="#stats" data-route="stats">관리</a>
       </nav>
       <button class="reload-btn" id="app-reload" aria-label="앱 새로 불러오기" title="앱 새로 불러오기">↻</button>
       <span class="app-sign" title="만든 사람: 벅수">
@@ -44,29 +43,31 @@
 
   <footer class="footer">
     성경 본문과 QT는 <a href="https://www.godpia.com/" target="_blank" rel="noopener">갓피아(GODpia)</a>에서 제공됩니다.
-    기록은 이 브라우저에만 저장되니 <a href="#stats">현황</a>에서 백업해 두세요.
+    기록은 이 브라우저에만 저장되니 <a href="#stats">관리</a>에서 로그인하거나 백업해 두세요.
   </footer>
 
   <!-- 순서가 중요: core(데이터·저장) → shared(공통) → features(화면별 기능) → main(시작) -->
-  <script src="js/core/bible.js?v=40"></script>
-  <script src="js/core/store.js?v=40"></script>
-  <script src="js/core/config.js?v=40"></script>
-  <script src="js/shared/state.js?v=40"></script>
-  <script src="js/shared/godpia.js?v=40"></script>
-  <script src="js/shared/ui.js?v=40"></script>
-  <script src="js/features/setup.js?v=40"></script>
-  <script src="js/features/reader.js?v=40"></script>
-  <script src="js/features/verses.js?v=40"></script>
-  <script src="js/features/picker.js?v=40"></script>
-  <script src="js/features/memopick.js?v=40"></script>
-  <script src="js/features/summary-data.js?v=40"></script>
-  <script src="js/features/summary.js?v=40"></script>
-  <script src="js/features/qt.js?v=40"></script>
-  <script src="js/features/stats.js?v=40"></script>
-  <script src="js/features/export.js?v=40"></script>
-  <script src="js/features/reminder.js?v=40"></script>
-  <script src="js/features/account.js?v=40"></script>
-  <script src="js/main.js?v=40"></script>
+  <script src="js/core/bible.js?v=41"></script>
+  <script src="js/core/store.js?v=41"></script>
+  <script src="js/core/config.js?v=41"></script>
+  <script src="js/core/versecounts.js?v=41"></script>
+  <script src="js/shared/state.js?v=41"></script>
+  <script src="js/shared/godpia.js?v=41"></script>
+  <script src="js/shared/ui.js?v=41"></script>
+  <script src="js/features/setup.js?v=41"></script>
+  <script src="js/features/reader.js?v=41"></script>
+  <script src="js/features/verses.js?v=41"></script>
+  <script src="js/features/picker.js?v=41"></script>
+  <script src="js/features/memopick.js?v=41"></script>
+  <script src="js/features/summary-data.js?v=41"></script>
+  <script src="js/features/summary.js?v=41"></script>
+  <script src="js/features/qt.js?v=41"></script>
+  <script src="js/features/stats.js?v=41"></script>
+  <script src="js/features/export.js?v=41"></script>
+  <script src="js/features/reminder.js?v=41"></script>
+  <script src="js/features/account.js?v=41"></script>
+  <script src="js/features/celebrate.js?v=41"></script>
+  <script src="js/main.js?v=41"></script>
   <script>document.getElementById("app-ver").textContent = "v" + (document.querySelector('script[src*="main.js"]').src.match(/v=(\d+)/) || [, "?"])[1];</script>
 </body>
 </html>

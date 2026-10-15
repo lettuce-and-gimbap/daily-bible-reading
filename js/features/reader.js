@@ -2,6 +2,8 @@
 
 let currentChapter = null; // 지금 보고 있는 장 (전체 장 일련번호)
 let viewingDay = null; // 지금 보고 있는 Day (0부터)
+let freeChapter = null; // 통독 계획 밖의 장을 직접 골라 읽는 중이면 그 장 (권·장 고르기)
+let gotoBook = null; // 권·장 고르기 패널에서 고른 권 코드
 
 // tab: "table"이면 통독표 패널을 연 채로 (위 메뉴의 통독표)
 function renderToday(tab) {
@@ -43,16 +45,17 @@ function buildReader() {
   guardReaderFrame($("#r-frame"));
   bindSheetChrome(renderReaderSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
-  // ← 사무엘하 3장 → : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감)
+  // ‹ 사무엘하 3장 › : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감). 가운데 장 이름을 누르면 권·장 고르기
   $("#r-chap").addEventListener("click", (e) => {
+    if (e.target.closest("#r-goto")) { gotoBook = CHAPTERS[currentChapter].book.code; return openSheet("goto", renderReaderSheet); }
     const b = e.target.closest("[data-step]");
     if (!b) return;
     const pr = progress();
-    const p = pr.seq.indexOf(currentChapter) + Number(b.dataset.step);
+    const step = Number(b.dataset.step);
+    if (freeChapter !== null) return goToChapter(currentChapter + step); // 계획 밖에선 성경 순서대로
+    const p = pr.seq.indexOf(currentChapter) + step;
     if (p < 0 || p >= pr.seq.length) return;
-    currentChapter = pr.seq[p];
-    viewingDay = dayOfChapter(pr.days, currentChapter);
-    refreshReader(true);
+    goToChapter(pr.seq[p]);
   });
   // 통독표·요약·구절·메모·도구는 화면 위에 늘 보이는 탭으로, 갓피아 원문은 마지막 탭(= 패널을 닫은 상태)으로
   $("#r-tabs").addEventListener("click", (e) => {
@@ -85,11 +88,12 @@ function buildReader() {
     let reload = true;
     if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
     else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
+    else if (b.id === "r-check" && freeChapter !== null) { state.read[currentChapter] = todayStr(); reload = false; }
     else if (b.id === "r-check") {
       state.read[currentChapter] = todayStr();
       const nextUnread = day.find((i) => !state.read[i]);
       if (nextUnread !== undefined) currentChapter = nextUnread;
-      else { reload = false; showToast(`🎉 Day ${viewingDay + 1} 분량을 모두 읽었어요!`); }
+      else { reload = false; celebrateDay(viewingDay); }
     }
     persist();
     refreshReader(reload);
@@ -211,7 +215,8 @@ function refreshReader(reload = false) {
   // 처음 열면 통독표 날짜 기준 오늘 Day를 보여 줌
   if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.todayDay;
   const day = pr.days[viewingDay];
-  if (currentChapter === null || !day.includes(currentChapter)) {
+  if (freeChapter !== null && currentChapter !== freeChapter) freeChapter = null; // 다른 데서 장을 옮기면 계획 모드로
+  if (freeChapter === null && (currentChapter === null || !day.includes(currentChapter))) {
     currentChapter = day.find((i) => !state.read[i]) ?? day[0];
   }
   const c = CHAPTERS[currentChapter];
@@ -234,9 +239,11 @@ function refreshReader(reload = false) {
   $("#r-title").title = describeChapters(day);
 
   const seqPos = pr.seq.indexOf(currentChapter);
-  $("#r-chap").innerHTML = `<button class="icon-btn" data-step="-1" ${seqPos <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
-    <b>${esc(chapLabel(currentChapter))}</b>
-    <button class="icon-btn" data-step="1" ${seqPos >= pr.seq.length - 1 ? "disabled" : ""} aria-label="다음 장">›</button>`;
+  const atStart = freeChapter !== null ? currentChapter <= 0 : seqPos <= 0;
+  const atEnd = freeChapter !== null ? currentChapter >= TOTAL_CHAPTERS - 1 : seqPos >= pr.seq.length - 1;
+  $("#r-chap").innerHTML = `<button class="chap-arrow" data-step="-1" ${atStart ? "disabled" : ""} aria-label="이전 장">‹</button>
+    <button class="chap-name" id="r-goto" aria-label="권·장 골라 이동">${esc(chapLabel(currentChapter))}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+    <button class="chap-arrow" data-step="1" ${atEnd ? "disabled" : ""} aria-label="다음 장">›</button>`;
 
   const isRead = !!state.read[currentChapter];
   const stepCheck = !isRead
@@ -294,6 +301,7 @@ function renderReaderSheet() {
     return;
   }
 
+  if (sheetTab === "goto") return renderGotoSheet(body);
   if (sheetTab === "summary") return renderSummaryTab(body, pr.days[viewingDay]);
   setSheetTitle(READER_TABS);
   if (sheetTab === "verses") return mountVersePicker(body, "reading", "reading" + currentChapter, currentChapter);
@@ -362,7 +370,48 @@ function renderReaderSheet() {
         <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
         <a class="btn ghost small" href="#stats">📥 기록 내보내기</a>
       </div>
-      <p class="muted small">이 메모는 이 기기에 저장되고, 현황 → 기록 내보내기에서 엑셀·텍스트로 받을 수 있어요.</p>
+      <p class="muted small">이 메모는 이 기기에 저장되고, 관리 → 기록 내보내기에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>`;
   memoPickMount($("#d-note-picker"), $("#d-note"), saveDayNote, renderReaderSheet);
+}
+
+// 권·장 골라 이동: 계획 안의 장이면 그 Day로, 밖이면 계획과 따로 그 장만 읽음
+function goToChapter(idx) {
+  if (idx < 0 || idx >= TOTAL_CHAPTERS) return;
+  const pr = progress();
+  currentChapter = idx;
+  if (pr.seq.includes(idx)) { freeChapter = null; viewingDay = dayOfChapter(pr.days, idx); }
+  else freeChapter = idx;
+  refreshReader(true);
+}
+
+function renderGotoSheet(body) {
+  setSheetTitle(null, "권 · 장 고르기");
+  const pr = progress();
+  const inPlan = new Set(pr.seq);
+  const book = BOOKS.find((b) => b.code === gotoBook) || CHAPTERS[currentChapter].book;
+  const group = (from, to, label) => `<h3 class="label">${label}</h3><div class="goto-books">${BOOKS.slice(from, to).map((b) =>
+    `<button class="${b.code === book.code ? "on" : ""}" data-gbook="${b.code}">${esc(b.name)}</button>`).join("")}</div>`;
+  const start = chapterIndex(book.code, 1);
+  body.innerHTML = `
+    <div class="goto-chaps-wrap">
+      <h3 class="label">${esc(book.name)} <span class="muted small">장을 고르세요 · 초록 테두리는 통독 계획 안 · 채운 칸은 읽은 장</span></h3>
+      <div class="goto-chaps">${Array.from({ length: book.chapters }, (_, k) => {
+        const i = start + k;
+        return `<button class="${state.read[i] ? "read" : ""} ${inPlan.has(i) ? "plan" : ""} ${i === currentChapter ? "on" : ""}" data-gchap="${i}">${k + 1}</button>`;
+      }).join("")}</div>
+    </div>
+    ${group(0, 39, "구약")}${group(39, 66, "신약")}`;
+  body.onclick = null;
+  body.querySelectorAll("[data-gbook]").forEach((b) => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    gotoBook = b.dataset.gbook;
+    renderGotoSheet(body);
+    body.scrollTop = 0;
+  }));
+  body.querySelectorAll("[data-gchap]").forEach((b) => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeSheet();
+    goToChapter(Number(b.dataset.gchap));
+  }));
 }

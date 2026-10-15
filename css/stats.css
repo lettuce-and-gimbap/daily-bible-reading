@@ -115,3 +115,30 @@ details summary h2 { margin: 0; }
 .acct-qr-img svg { width: 100%; height: 100%; display: block; }
 .acct-qr p { margin: 0 0 6px; }
 .acct-code { font-size: 1.6rem; font-weight: 800; letter-spacing: .12em; font-variant-numeric: tabular-nums; color: var(--accent); }
+
+/* 달력 날짜 누르면 그날 기록 */
+button.cell { border: 0; font: inherit; color: inherit; cursor: pointer; }
+button.cell:disabled { cursor: default; }
+.cell.sel { box-shadow: inset 0 0 0 2px var(--accent); background: var(--accent-soft); }
+.day-detail { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); display: grid; gap: 6px; }
+.day-detail h3 { margin: 0; font-size: 1rem; }
+.day-detail .note { white-space: pre-wrap; margin: 0; padding: 8px 10px; background: var(--surface-2); border-radius: 10px; font-size: .9rem; max-height: 220px; overflow-y: auto; }
+.day-detail .note.qt { background: var(--qt-soft); }
+.day-detail .tl-row { margin: 0; overflow-wrap: anywhere; }
+
+/* 관리 안의 통독표 */
+.ptable-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.ptable-head h2 { margin: 0; }
+#ptable-card .bar { margin: 8px 0 10px; }
+#ptable { max-height: 52vh; overflow-y: auto; overscroll-behavior: contain; padding-right: 2px; position: relative; }
+
+/* 권별 진행: 누르면 자세히 */
+button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.book.sel { box-shadow: inset 0 0 0 2px var(--accent); background: var(--accent-soft); }
+.book-detail { margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; display: grid; gap: 10px; }
+.book-detail h3 { margin: 0; }
+.book-detail h4 { margin: 4px 0 0; font-size: .92rem; }
+.bd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.bd-grid > div { display: grid; gap: 3px; background: var(--surface-2); border-radius: 10px; padding: 10px; }
+.bd-list { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; font-size: .9rem; overflow-wrap: anywhere; }
+.bd-list b { margin-right: 4px; }

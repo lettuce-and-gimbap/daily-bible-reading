@@ -123,7 +123,7 @@ async function renderVersePicker(body, target, idx) {
     }
     if (!count()) return;
     const quote = buildQuote();
-    if (act.act === "copy") return copyText(quote, `${quote.split("\n")[0]} 복사했어요`);
+    if (act.act === "copy") { logCopied(idx0, quote.split("\n")[0]); return copyText(quote, `${quote.split("\n")[0]} 복사했어요`); }
     pickSel = new Set();
     insertQuote(target, quote);
     renderVersePicker(body, target, idx0);
@@ -143,4 +143,12 @@ async function mountQtPicker(body) {
   const r = refsInText(await qtPassageRef(qtDate))[0];
   if (sheetTab !== "verses") return;
   mountVersePicker(body, "qt", `qt:${qtDate}`, r ? r.idx : (pickIdx ?? chapterIndex("psa", 1)));
+}
+
+// 구절 패널에서 복사한 절을 날짜와 함께 남김 (관리 → 권별 진행의 "복사한 구절"). 메모에 붙인 구절은 메모에서 따로 읽음
+function logCopied(idx, ref) {
+  const v = (ref.match(/:([\d,\- ]+)$/) || [])[1];
+  if (!v) return;
+  state.copies = [...(state.copies || []), { d: todayStr(), i: idx, v }].slice(-3000);
+  persist();
 }

@@ -55,6 +55,7 @@ function mergeStates(local, remote) {
   const useLocalPlan = local.plan && (!remote.plan || (local.planAt || 0) >= (remote.planAt || 0));
   return {
     ...remote, ...local, read, dayNotes, qt,
+    copies: [...new Map([...(remote.copies || []), ...(local.copies || [])].map((c) => [`${c.d}|${c.i}|${c.v}`, c])).values()],
     plan: useLocalPlan ? local.plan : remote.plan,
     planAt: useLocalPlan ? local.planAt : remote.planAt,
   };
@@ -133,7 +134,7 @@ async function claimLinkFromHash() {
   return true;
 }
 
-// ── 현황 화면의 카드 ──
+// ── 관리 화면의 카드 ──
 function accountCardHtml() {
   return `<section class="card" id="acct-card">${accountCardInner()}</section>`;
 }
@@ -234,7 +235,7 @@ async function showLinkQr(box) {
   } catch (e) { /* QR을 못 그려도 코드로 연결 가능 */ }
   box.innerHTML = `<div class="acct-qr">
     ${svg ? `<div class="acct-qr-img">${svg}</div>` : ""}
-    <div><p>새 기기 카메라로 QR을 찍거나,<br>새 기기의 <b>현황 → 연결 코드</b>에 입력하세요.</p>
+    <div><p>새 기기 카메라로 QR을 찍거나,<br>새 기기의 <b>관리 → 연결 코드</b>에 입력하세요.</p>
       <p class="acct-code">${code.slice(0, 4)} ${code.slice(4)}</p>
       <p class="muted small">10분 동안 한 번만 쓸 수 있어요.</p></div></div>`;
 }

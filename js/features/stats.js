@@ -1,6 +1,8 @@
-// 현황 화면: 통독·QT 요약 카드, 월간 달력, 최근 기록, 권별 진행, 계획·백업
+// 관리 화면: 통독·QT 요약 카드, 달력(날짜를 누르면 그날 기록), 통독표, 권별 진행(누르면 읽은 기간·복사한 구절), 계정·알림·백업
 
-let calMonth = todayStr().slice(0, 7); // 현황 달력에 보이는 달 "YYYY-MM"
+let calMonth = todayStr().slice(0, 7); // 달력에 보이는 달 "YYYY-MM"
+let calSel = todayStr(); // 달력에서 고른 날
+let bookSel = null; // 권별 진행에서 고른 권 코드
 
 function ring(pct) {
   const r = 34, c = 2 * Math.PI * r;
@@ -76,20 +78,17 @@ function renderStats() {
     if (n) monthRead++;
     if (q) monthQt++;
     const readCls = n === 0 ? "" : n >= perDay ? "full" : "part";
-    cells += `<div class="cell ${ds === today ? "today" : ""} ${ds > today ? "future" : ""}" title="${ds}${n ? ` · 통독 ${n}장` : ""}${q ? " · QT 완료" : ""}">
+    cells += `<button class="cell ${ds === today ? "today" : ""} ${ds > today ? "future" : ""} ${ds === calSel ? "sel" : ""}" data-date="${ds}" ${ds > today ? "disabled" : ""}
+      title="${ds}${n ? ` · 통독 ${n}장` : ""}${q ? " · QT 완료" : ""}">
       <span class="d">${d}</span>
       <span class="marks"><i class="m-read ${readCls}"></i><i class="m-qt ${q ? "on" : ""}"></i></span>
-    </div>`;
+    </button>`;
   }
 
-  // 날짜별 기록 (통독 + 메모 + QT)
-  const logDates = [...new Set([...Object.keys(byDate), ...Object.keys(state.dayNotes), ...Object.keys(state.qt)])].sort().reverse().slice(0, 40);
+  const copied = copiedByDate();
 
   app.innerHTML = `
     <section class="hero-row">${readCard}${qtCard}</section>
-
-    ${accountCardHtml()}
-    ${reminderCardHtml()}
 
     <section class="card">
       <div class="cal-head">
@@ -105,45 +104,20 @@ function renderStats() {
         <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
         <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
       </div>
+      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copied)}</div>
     </section>
 
-    <section class="card">
-      <h2>최근 기록</h2>
-      ${logDates.length === 0 ? `<p class="muted">아직 기록이 없어요. 오늘 첫 장을 읽거나 QT를 해 보세요.</p>` : `
-      <ul class="timeline">
-        ${logDates.map((d) => `
-          <li>
-            <span class="tl-date">${prettyDate(d)}</span>
-            ${byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : ""}
-            ${state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : ""}
-            ${state.qt[d] ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${state.qt[d].done ? "QT 완료" : "QT 메모"}</p>` : ""}
-            ${state.qt[d] && state.qt[d].note ? `<p class="note qt">${esc(state.qt[d].note)}</p>` : ""}
-          </li>`).join("")}
-      </ul>`}
-    </section>
+    ${pr ? planTableCardHtml(pr) : ""}
 
     ${pr ? `
-    <section class="card">
-      <details>
-        <summary><h2>권별 진행</h2></summary>
-        <div class="books">
-          ${(() => {
-            const inPlan = new Set(pr.seq);
-            return BOOKS.map((b) => {
-              const start = chapterIndex(b.code, 1);
-              let inP = 0, done = 0;
-              for (let i = start; i < start + b.chapters; i++) {
-                if (inPlan.has(i)) { inP++; if (state.read[i]) done++; }
-              }
-              if (!inP) return "";
-              const p = Math.round((done / inP) * 100);
-              return `<div class="book ${p === 100 ? "full" : ""}"><span>${b.name}</span><em>${done}/${inP}</em>
-                <div class="bar thin"><span style="width:${p}%"></span></div></div>`;
-            }).join("");
-          })()}
-        </div>
-      </details>
+    <section class="card" id="books-card">
+      <h2>권별 진행 <span class="muted small">권을 누르면 읽은 기간과 복사한 구절이 나와요</span></h2>
+      <div class="books">${booksGridHtml(pr, copied)}</div>
+      <div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copied) : ""}</div>
     </section>` : ""}
+
+    ${accountCardHtml()}
+    ${reminderCardHtml()}
 
     ${exportCardHtml()}
 
@@ -170,6 +144,35 @@ function renderStats() {
   };
   $("#cal-prev").addEventListener("click", () => shiftMonth(-1));
   $("#cal-next").addEventListener("click", () => shiftMonth(1));
+  $(".cal").addEventListener("click", (e) => {
+    const c = e.target.closest("[data-date]");
+    if (!c || c.disabled) return;
+    calSel = c.dataset.date;
+    app.querySelectorAll(".cal .cell.sel").forEach((x) => x.classList.remove("sel"));
+    c.classList.add("sel");
+    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied);
+  });
+  const books = $("#books-card");
+  if (books) books.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-book]");
+    if (!b) return;
+    bookSel = bookSel === b.dataset.book ? null : b.dataset.book;
+    books.querySelectorAll(".book").forEach((x) => x.classList.toggle("sel", x.dataset.book === bookSel));
+    $("#book-detail").innerHTML = bookSel ? bookDetailHtml(bookSel, copied) : "";
+  });
+  const table = $("#ptable");
+  if (table) {
+    table.addEventListener("click", (e) => {
+      const r = e.target.closest("[data-day]");
+      if (!r) return;
+      viewingDay = Number(r.dataset.day);
+      currentChapter = null;
+      freeChapter = null;
+      location.hash = "#today";
+    });
+    const cur = table.querySelector(".trow.current");
+    if (cur) table.scrollTop = cur.offsetTop - table.offsetTop - table.clientHeight / 2;
+  }
   const edit = $("#st-edit");
   if (edit) edit.addEventListener("click", () => renderSetup(state.plan));
   $("#st-export").addEventListener("click", () => {
@@ -201,4 +204,132 @@ function renderStats() {
     location.hash = "#today";
     route();
   });
+}
+
+// ── 통독표 (예전엔 통독 화면 패널, 이제 관리 화면 카드) ──
+function planTableCardHtml(pr) {
+  return `<section class="card" id="ptable-card">
+    <div class="ptable-head"><h2>통독표</h2>
+      <span class="muted small"><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</span></div>
+    <div class="bar thin"><span style="width:${pr.pct}%"></span></div>
+    <div class="ttable" id="ptable">
+      ${pr.days.map((d, n) => {
+        const done = d.filter((i) => state.read[i]).length;
+        const cls = [done === d.length ? "done" : done ? "part" : "", n === pr.todayDay ? "current" : "", n < pr.todayDay && done < d.length ? "late" : ""].join(" ");
+        const st = done === d.length
+          ? `<svg viewBox="0 0 24 24" aria-label="완료"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
+          : done ? `${done}/${d.length}` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
+        return `<button class="trow ${cls}" data-day="${n}">
+          <span class="t-day">Day ${n + 1}</span>
+          <span class="t-range">${esc(describeChapters(d))}<small>${prettyDate(addDays(state.plan.startDate, n))}</small></span>
+          <span class="t-st">${st}</span>
+        </button>`;
+      }).join("")}
+    </div>
+    <p class="muted small">Day를 누르면 그 분량으로 바로 가요.</p>
+  </section>`;
+}
+
+// ── 복사·붙여 넣은 구절 모으기 ──
+// 구절 패널의 '복사'는 state.copies에 남기고, 메모·노트에 붙인 구절은 메모 안의 "권 장:절" 줄에서 읽어 냄
+// → { "YYYY-MM-DD": { 장일련번호: Set(절) } }
+const COPY_REF_LINE = new RegExp(`^(${BOOKS.map((b) => b.name).join("|")}) (\\d{1,3}):([\\d,\\- ]+)$`);
+function parseVerseList(v) {
+  const out = [];
+  String(v).split(",").forEach((p) => {
+    const [a, b] = p.trim().split("-").map(Number);
+    if (a) for (let n = a; n <= (b || a) && n < a + 200; n++) out.push(n);
+  });
+  return out;
+}
+function copiedByDate() {
+  const out = {};
+  const add = (d, idx, nums) => {
+    const day = (out[d] = out[d] || {});
+    const set = (day[idx] = day[idx] || new Set());
+    nums.forEach((n) => set.add(n));
+  };
+  (state.copies || []).forEach((c) => add(c.d, c.i, parseVerseList(c.v)));
+  const scan = (d, text) => String(text || "").split("\n").forEach((line) => {
+    const m = line.trim().match(COPY_REF_LINE);
+    if (!m) return;
+    const b = BOOKS.find((x) => x.name === m[1]);
+    if (b && +m[2] >= 1 && +m[2] <= b.chapters) add(d, chapterIndex(b.code, +m[2]), parseVerseList(m[3]));
+  });
+  Object.entries(state.dayNotes).forEach(([d, t]) => scan(d, t));
+  Object.entries(state.qt).forEach(([d, q]) => scan(d, q && q.note));
+  return out;
+}
+// { 장일련번호: Set } → ["창세기 1:1-3,5 · 2:4"]
+function copiedText(map) {
+  const byBook = {};
+  Object.entries(map).sort((a, b) => a[0] - b[0]).forEach(([i, set]) => {
+    if (!set.size) return;
+    const c = CHAPTERS[i];
+    (byBook[c.book.name] = byBook[c.book.name] || []).push(versesRef(c, [...set]).replace(`${c.book.name} `, ""));
+  });
+  return Object.entries(byBook).map(([name, parts]) => `${name} ${parts.join(" · ")}`);
+}
+
+// ── 달력에서 고른 날 ──
+function dayDetailHtml(d, byDate, copied) {
+  const q = state.qt[d];
+  const cp = copied[d] ? copiedText(copied[d]) : [];
+  const rows = [
+    byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
+    state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
+    q ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${q.done ? "QT 완료" : "QT 메모"}</p>` : "",
+    q && q.note ? `<p class="note qt">${esc(q.note)}</p>` : "",
+    cp.length ? `<p class="tl-row"><span class="tag sm">📋</span>복사한 구절: ${cp.map(esc).join(", ")}</p>` : "",
+  ].join("");
+  return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 기록이 없어요.</p>`}`;
+}
+
+// ── 권별 진행 ──
+function booksGridHtml(pr, copied) {
+  const inPlan = new Set(pr.seq);
+  const copiedBooks = new Set(Object.values(copied).flatMap((m) => Object.keys(m).map((i) => CHAPTERS[i].book.code)));
+  return BOOKS.map((b) => {
+    const start = chapterIndex(b.code, 1);
+    let inP = 0, done = 0;
+    for (let i = start; i < start + b.chapters; i++) {
+      if (inPlan.has(i)) { inP++; if (state.read[i]) done++; }
+    }
+    if (!inP && !copiedBooks.has(b.code)) return "";
+    const p = inP ? Math.round((done / inP) * 100) : 0;
+    return `<button class="book ${p === 100 ? "full" : ""} ${b.code === bookSel ? "sel" : ""}" data-book="${b.code}"><span>${b.name}</span><em>${done}/${inP}</em>
+      <div class="bar thin"><span style="width:${p}%"></span></div></button>`;
+  }).join("");
+}
+
+function bookDetailHtml(code, copied) {
+  const b = BOOKS.find((x) => x.code === code);
+  const start = chapterIndex(code, 1), end = start + b.chapters;
+  const days = {};
+  for (let i = start; i < end; i++) if (state.read[i]) (days[state.read[i]] = days[state.read[i]] || []).push(i);
+  const dates = Object.keys(days).sort();
+  const readN = dates.reduce((n, d) => n + days[d].length, 0);
+  const span = dates.length ? daysBetween(dates[0], dates[dates.length - 1]) + 1 : 0;
+  const total = VERSE_COUNTS.slice(start, end).reduce((a, c) => a + c, 0);
+  const all = new Set();
+  const copyRows = Object.keys(copied).sort().map((d) => {
+    const mine = {};
+    Object.entries(copied[d]).forEach(([i, set]) => {
+      if (i >= start && i < end && set.size) { mine[i] = set; set.forEach((n) => all.add(`${i}:${n}`)); }
+    });
+    return Object.keys(mine).length
+      ? `<li><b>${prettyDate(d)}</b> ${copiedText(mine).map((t) => esc(t.replace(`${b.name} `, ""))).join(", ")}</li>` : "";
+  }).join("");
+  const ratio = total ? (all.size / total) * 100 : 0;
+  return `<div class="book-detail">
+    <h3>${b.name} <span class="muted small">${b.chapters}${chapUnit(b)} · ${total.toLocaleString()}절</span></h3>
+    <div class="bd-grid">
+      <div><span class="muted small">읽은 기간</span><b>${dates.length ? `${prettyDate(dates[0])} ~ ${prettyDate(dates[dates.length - 1])}` : "아직 안 읽었어요"}</b>
+        ${dates.length ? `<small class="muted">${span}일 동안 ${readN}${chapUnit(b)} 읽음</small>` : ""}</div>
+      <div><span class="muted small">복사한 절</span><b>${all.size.toLocaleString()} / ${total.toLocaleString()}절 (${ratio > 0 && ratio < 10 ? ratio.toFixed(1) : Math.round(ratio)}%)</b>
+        <div class="bar thin"><span style="width:${Math.min(100, ratio)}%"></span></div></div>
+    </div>
+    ${dates.length ? `<details><summary>날짜별로 읽은 장</summary><ul class="bd-list">${dates.map((d) => `<li><b>${prettyDate(d)}</b> ${esc(describeChapters(days[d]))}</li>`).join("")}</ul></details>` : ""}
+    ${copyRows ? `<h4>날짜별 복사한 구절</h4><ul class="bd-list">${copyRows}</ul>` : `<p class="muted small">이 권에서 복사한 구절이 아직 없어요.</p>`}
+  </div>`;
 }

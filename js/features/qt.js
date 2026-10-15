@@ -178,7 +178,7 @@ function renderQtSheet() {
       </div>
       <div class="mp" id="q-note-picker"></div>
       <p class="muted small hint">갓피아 화면 위의 <b>📋 붙여넣기</b> 버튼으로 구절을 바로 넣을 수 있어요. 다 쓰면 여기서 <b>노트 전체 복사</b>로 다른 곳에 옮겨 보세요.
-        노트는 이 기기에 저장되고, <a href="#stats">현황 → 기록 내보내기</a>에서 엑셀·텍스트로 받을 수 있어요.</p>
+        노트는 이 기기에 저장되고, <a href="#stats">관리 → 기록 내보내기</a>에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>
     ${history.length ? `
       <h3 class="label">지난 QT</h3>
