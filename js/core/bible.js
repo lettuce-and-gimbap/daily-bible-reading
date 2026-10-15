@@ -21,12 +21,12 @@ const BOOKS = [
 
 // 갓피아 성경 읽기에서 제공하는 역본 (순서·이름은 갓피아 화면과 같게)
 // 갓피아가 모르는 코드를 보내면 /read/reading.asp로 리다이렉트되어 창세기 1장이 열린다.
-// 쉬운성경(easy)은 주소 화면(button 라벨)엔 그대로 나오지만 실제 본문은 로드되지 않고
-// 창세기 1장으로 튕기므로(2026-09 재확인) 넣지 않는다.
+// 쉬운성경(easy): 갓피아 본문 주소(reading_body.asp)로는 받아져서 넣는다 (2026-10 확인).
 const VERSIONS = [
   { code: "gae", name: "개역개정4판" },
   { code: "niv", name: "NIV" },
   { code: "han", name: "개역한글" },
+  { code: "easy", name: "쉬운성경" },
   { code: "hyun", name: "현대인의성경" },
   { code: "saenew", name: "새번역" },
   { code: "hebrew", name: "히브리어(구약)" },
