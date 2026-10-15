@@ -142,8 +142,26 @@ async function qtPassage(q, json) {
   const d = q.get("d") || "";
   if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return json({ error: "잘못된 날짜" }, 400);
   const res = await fetch(`https://www.godpia.com/qt/qt.asp?D=${d}`, { cf: { cacheTtl: 3600, cacheEverything: true } });
-  const m = res.ok && (await res.text()).match(/fnc_qtBibleContents\("([^"]+)"/);
-  return json({ ref: m ? m[1] : null });
+  const html = res.ok ? await res.text() : "";
+  const m = html.match(/fnc_qtBibleContents\("([^"]+)"/);
+  return json({ ref: m ? m[1] : null, ...qtParts(html) });
+}
+
+// 갓피아 QT 화면에서 제목·탭별 질문·길잡이·기도를 뽑음 (앱이 본문과 함께 직접 보여 줌)
+function qtParts(html) {
+  const text = (s) => s.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, "\"").replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
+    .replace(/[ \t]+/g, " ").replace(/\n\s*/g, "\n").trim();
+  const title = (html.match(/<div class="title-h5-a">\s*<h5>([\s\S]*?)<\/h5>/) || [])[1];
+  const names = {};
+  for (const t of html.matchAll(/data-bs-target="#(nav-\d+)"[^>]*>([^<]+)<\/button>/g)) names[t[1]] = t[2].trim();
+  const sections = [];
+  for (const p of html.matchAll(/<div class="tab-pane[^"]*" id="(nav-\d+)"[^>]*>([\s\S]*?)(?=<div class="tab-pane|<\/div><!--\s*\/\/tab-content)/g)) {
+    const qs = [...p[2].matchAll(/<h6[^>]*>([\s\S]*?)<\/h6>/g)].map((h) => text(h[1])).filter(Boolean);
+    const body = qs.length ? "" : [...p[2].matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)].map((x) => text(x[1])).filter(Boolean).join("\n");
+    if (qs.length || body) sections.push({ name: names[p[1]] || "", qs, text: body });
+  }
+  return { title: title ? text(title) : null, sections };
 }
 
 // 랜덤 알림 구간(한국시간 시작 시, 끝 시). 구간의 5분 칸 중 하나를 구독·날짜마다 골라 한 번 보냄

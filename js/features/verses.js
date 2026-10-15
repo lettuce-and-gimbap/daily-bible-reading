@@ -228,13 +228,37 @@ async function searchLine(line) {
 }
 
 // 그날 QT 본문 범위("열왕기상 11:1~8")를 갓피아 QT 화면에서 읽어 옴 (worker/의 /qt)
-const qtRefCache = {};
-function qtPassageRef(date) {
-  if (!qtRefCache[date]) {
-    qtRefCache[date] = fetch(`${PUSH_SERVER}/qt?d=${date}`).then((r) => r.json()).then((d) => d.ref || "")
-      .catch(() => { delete qtRefCache[date]; return ""; });
+// 제목·질문·길잡이·기도도 함께 받음 { ref, title, sections: [{ name, qs, text }] }
+const qtCache = {};
+function qtInfo(date) {
+  if (!qtCache[date]) {
+    qtCache[date] = fetch(`${PUSH_SERVER}/qt?d=${date}`).then((r) => r.json())
+      .catch((e) => { delete qtCache[date]; throw e; });
   }
-  return qtRefCache[date];
+  return qtCache[date];
+}
+function qtPassageRef(date) {
+  return qtInfo(date).then((d) => d.ref || "", () => "");
+}
+
+// 한 장에서 want(절 번호)에 드는 절을 역본 1~2개로 나란히: [{ label, texts: [역본1, 역본2] }]
+async function versePairs(idx, want, vers) {
+  const book = CHAPTERS[idx].book;
+  const v1 = versionFor(vers[0], book);
+  const v2 = vers[1] && versionFor(vers[1], book) !== v1 ? versionFor(vers[1], book) : "";
+  const list = await chapterVerses(idx, v1, v2);
+  const of = (v) => v.ver || v1;
+  const hit = (v) => { const [a, b] = labelSpan(v.label); for (let n = a; n <= b; n++) if (want(n)) return true; return false; };
+  const second = list.filter((v) => v2 && of(v) === v2);
+  return list.filter((v) => of(v) === v1 && hit(v)).map((v) => {
+    const [a, b] = labelSpan(v.label);
+    return { label: v.label, texts: [v.text, ...second.filter((w) => { const s = labelSpan(w.label)[0]; return s >= a && s <= b; }).map((w) => w.text).slice(0, 1)] };
+  });
+}
+function versePairsHtml(rows, names) {
+  return rows.map((r) => `<p class="vpair"><b>${esc(r.label)}</b> ${esc(r.texts[0])}${r.texts[1]
+    ? `<small><i>${esc(names[1] || "")}</i> ${esc(r.texts[1])}</small>` : ""}</p>`).join("")
+    + `<small class="vpair-src">${names.filter(Boolean).map(esc).join(" · ")}</small>`;
 }
 
 // 복사한 구절이 있을 법한 장들과, 각 장을 맞대어 볼 역본 쌍

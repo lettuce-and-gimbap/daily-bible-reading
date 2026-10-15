@@ -147,7 +147,8 @@ textarea { resize: vertical; line-height: 1.6; }
   h1 { font-size: 1.3rem; }
   .topbar { padding: 6px 10px; }
   .brand span { display: none; }
-  .tabs a { padding: 6px 14px; }
+  .tabs a { padding: 6px 10px; }
+  .topbar-right { gap: 6px; }
   main { padding: 12px 10px; }
   .card { padding: 15px; }
 }

@@ -10,12 +10,13 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .rd-top { background: var(--surface); border-bottom: 1px solid var(--line); padding: 8px 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
 .rd-row { display: flex; align-items: center; gap: 8px; }
 .rd-title { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.rd.reading .rd-title { flex: none; }
 .rd-title small { font-size: .74rem; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 5px; white-space: nowrap; overflow: hidden; }
 .rd-title .dim { font-weight: 400; }
 .rd-title b { font-size: 1.02rem; font-weight: 700; letter-spacing: -0.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 #r-view span { max-width: 130px; overflow: hidden; text-overflow: ellipsis; }
 
-.steps { display: flex; align-items: center; gap: 10px; }
+.steps { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; }
 .steps-track { flex: 1; min-width: 0; display: flex; justify-content: center; gap: 6px; overflow-x: auto; scrollbar-width: none; }
 .steps-track::-webkit-scrollbar { display: none; }
 .step-pill {
@@ -29,6 +30,13 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .step-pill.done .bk { color: inherit; }
 .step-pill.active { border: 2px solid var(--accent); background: var(--surface); color: var(--accent); }
 .step-pill.done.active { background: var(--accent-soft); }
+.step-check {
+  flex: none; height: 34px; padding: 0 12px; border-radius: 10px; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: .88rem;
+  background: var(--accent); color: #fff; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;
+}
+.step-check svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.step-check.on { background: var(--accent-soft); color: var(--accent); }
+.step-check.next { background: var(--accent); }
 .steps-count { flex: none; font-size: .84rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .steps-count b { color: var(--accent); font-size: 1rem; }
 
@@ -134,8 +142,12 @@ body.full .topbar { position: static; padding: 6px 12px; }
   .rd-top { padding: 6px 8px; gap: 6px; }
   .rd-row { gap: 6px; }
   .chip-btn { padding: 0 10px; font-size: .82rem; height: 36px; }
-  #r-view span { max-width: 92px; }
-  .step-pill { min-width: 40px; height: 32px; padding: 0 6px; font-size: .88rem; }
+  #r-view span { max-width: 58px; }
+  .rd.reading .rd-title .dim { display: none; }
+  .step-pill { min-width: 34px; height: 32px; padding: 0 6px; font-size: .86rem; flex: 0 0 auto; }
+  .step-check { height: 32px; padding: 0 9px; font-size: .82rem; }
+  .rd.reading .rd-title small { font-size: .7rem; }
+  .steps-track { justify-content: flex-start; }
   .rd-bottom { padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); gap: 6px; }
   .rd-bottom .icon-btn { width: 42px; height: 42px; }
   .sheet { top: auto; left: 0; width: 100%; height: 84dvh; border-left: 0; border-radius: 20px 20px 0 0; overflow: hidden; }
@@ -318,3 +330,27 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rg-orig p { font-size: .86rem; line-height: 1.6; color: var(--ink); overflow-wrap: anywhere; word-break: keep-all; }
 .rg-orig b { color: var(--accent); margin-right: 2px; }
 .rg-orig > small { font-size: .72rem; }
+
+/* ---------- QT: 앱이 직접 그리는 본문·묵상 ---------- */
+.rd.qt .rd-clip { background: var(--bg); }
+.qt-read { position: absolute; inset: 0; overflow-y: auto; padding: 16px 16px 40px; display: grid; gap: 14px; align-content: start; max-width: 720px; margin: 0 auto; overscroll-behavior: contain; }
+.qt-head small { color: var(--qt); font-weight: 700; font-size: .84rem; }
+.qt-head h2 { margin: 2px 0 0; font-size: 1.2rem; letter-spacing: -0.03em; }
+.qt-passage { display: grid; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.qt-sec { display: grid; gap: 6px; }
+.qt-sec h3 { margin: 0; font-size: .92rem; color: var(--qt); }
+.qt-sec ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.qt-sec p, .qt-sec li { margin: 0; line-height: 1.7; font-size: .95rem; overflow-wrap: anywhere; word-break: keep-all; }
+.qt-src { margin: 4px 0 0; }
+.rd-tabs button.has::after { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--qt); margin-left: 4px; vertical-align: middle; }
+.sheet-frame { position: relative; height: 100%; min-height: 70dvh; margin: -14px; overflow: hidden; background: #fff; }
+.sheet-frame .rd-frame { --crop: 60px; }
+#sheet-title h2 { display: flex; align-items: center; gap: 8px; }
+
+/* 구절 두 역본 나란히 (QT 본문, 관계도 원문) */
+.vpair { margin: 0; line-height: 1.7; font-size: .95rem; overflow-wrap: anywhere; word-break: keep-all; }
+.vpair b { color: var(--accent); margin-right: 3px; font-size: .84em; }
+.vpair small { display: block; margin-top: 2px; color: var(--muted); font-size: .88em; line-height: 1.6; }
+.vpair small i { font-style: normal; font-weight: 700; margin-right: 4px; }
+.vpair-src { color: var(--muted); font-size: .72rem; }
+.rd.qt .vpair b { color: var(--qt); }

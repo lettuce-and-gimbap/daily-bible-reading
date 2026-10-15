@@ -1,13 +1,16 @@
-// 통독 화면: 갓피아 성경을 꽉 채워 띄우고, 장 이동·읽음 체크·통독표·보기 설정·메모 패널을 붙임
+// 통독 화면: 갓피아 성경을 꽉 채워 띄우고, 위 한 줄(장 칸 + 읽음 버튼)로 장 이동·읽음 체크, 통독표·보기 설정·메모 패널을 붙임
 
 let currentChapter = null; // 지금 보고 있는 장 (전체 장 일련번호)
 let viewingDay = null; // 지금 보고 있는 Day (0부터)
 
-function renderToday() {
+// tab: "table"이면 통독표 패널을 연 채로 (위 메뉴의 통독표)
+function renderToday(tab) {
   if (!state.plan) return renderSetup();
   document.body.classList.add("full");
   if (!$(".rd.reading")) buildReader();
   refreshReader();
+  if (tab) openSheet(tab, renderReaderSheet);
+  else if ($("#sheet-body .ttable")) closeSheet();
 }
 
 // 오늘의 통독 메모 저장 (직접 쓸 때와 구절을 지울 때 함께 씀)
@@ -20,18 +23,19 @@ function saveDayNote(value) {
 }
 
 function buildReader() {
+  sheetTab = null;
+  onSheetChange = syncReaderTabs;
   app.innerHTML = `
     <div class="rd reading">
       <div class="rd-top">
         <div class="rd-row">
           <div class="rd-title" id="r-title"></div>
+          <div class="steps" id="r-steps"></div>
           <button class="chip-btn" data-open="view" id="r-view" aria-label="역본·보기 설정"></button>
         </div>
-        <div class="steps" id="r-steps"></div>
         <div class="rd-tabs" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
       </div>
       <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
-      <div class="rd-bottom" id="r-bottom"></div>
     </div>`;
 
   guardReaderFrame($("#r-frame"));
@@ -61,21 +65,14 @@ function buildReader() {
     refreshReader(true);
   });
 
-  $("#r-bottom").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
+  // 장 칸 옆 버튼 하나로 읽음 체크(→ 다음 안 읽은 장) · 취소 · 다음 Day
+  $("#r-steps").addEventListener("click", (e) => {
+    const b = e.target.closest("button[id]");
     if (!b) return;
     const pr = progress();
     const day = pr.days[viewingDay];
-    const pos = pr.seq.indexOf(currentChapter);
-    const goTo = (p) => {
-      if (p < 0 || p >= pr.seq.length) return;
-      currentChapter = pr.seq[p];
-      viewingDay = dayOfChapter(pr.days, currentChapter);
-    };
     let reload = true;
-    if (b.id === "r-prev") goTo(pos - 1);
-    else if (b.id === "r-next") goTo(pos + 1);
-    else if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
+    if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
     else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
     else if (b.id === "r-check") {
       state.read[currentChapter] = todayStr();
@@ -107,7 +104,11 @@ function buildReader() {
       // 통독표에서 Day를 고르면 그 Day의 (안 읽은 첫) 장으로 갓피아 화면을 옮김
       viewingDay = Number(t.dataset.day);
       currentChapter = null;
-      if (sheetTab === "table") closeSheet();
+      if (sheetTab === "table") {
+        closeSheet();
+        history.replaceState(null, "", "#today"); // 위 메뉴 표시도 통독으로
+        document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === "today"));
+      }
       reload = true;
     } else if (t.id === "d-copy-note") {
       copyText($("#d-note").value, "오늘의 통독 메모를 복사했어요");
@@ -216,12 +217,18 @@ function refreshReader(reload = false) {
     <small>Day ${viewingDay + 1} <span class="dim">/ ${pr.days.length}</span>
       ${dayDone ? `<em class="badge good">완료</em>` : isToday ? `<em class="badge">오늘</em>` : ""}
       ${pr.behindDays > 0 && viewingDay !== pr.currentDay
-        ? `<button class="badge warn" id="r-behind" title="가장 먼저 밀린 분량으로 이동">${pr.behindDays}일 밀림 ›</button>` : ""}</small>
-    <b>${esc(describeChapters(day))}</b>`;
+        ? `<button class="badge warn" id="r-behind" title="가장 먼저 밀린 분량으로 이동">${pr.behindDays}일 밀림 ›</button>` : ""}</small>`;
+  $("#r-title").title = describeChapters(day);
 
   $("#r-view").innerHTML = `<span>${s.mode === "two" ? `${versionName(s.ver)} · ${versionName(s.ver2)}` : versionName(s.ver)}</span>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 
+  const isRead = !!state.read[currentChapter];
+  const stepCheck = !isRead
+    ? `<button class="step-check" id="r-check" title="${esc(chapLabel(currentChapter))} 읽음으로 체크하고 다음 장으로"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>읽음</button>`
+    : dayDone && viewingDay < pr.days.length - 1
+      ? `<button class="step-check next" id="r-nextday">다음 Day ›</button>`
+      : `<button class="step-check on" id="r-undo" title="읽음 취소">읽음 ✓</button>`;
   let prevBook = null;
   $("#r-steps").innerHTML = `
     <div class="steps-track">
@@ -235,29 +242,12 @@ function refreshReader(reload = false) {
           ${showBook && day.some((j) => CHAPTERS[j].book !== ch.book) ? `<span class="bk">${esc(ch.book.name)}</span>` : ""}${ch.chap}</button>`;
       }).join("")}
     </div>
-    <span class="steps-count"><b>${dayRead}</b>/${day.length}</span>`;
-
-  const pos = pr.seq.indexOf(currentChapter);
-  const isRead = !!state.read[currentChapter];
-  let main;
-  if (!isRead) {
-    main = `<button class="btn primary big" id="r-check">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>${c.chap}${chapUnit(c.book)} 읽었어요</button>`;
-  } else if (dayDone && viewingDay < pr.days.length - 1) {
-    main = `<button class="btn primary big" id="r-nextday">🎉 완료! 다음 분량 읽기</button>
-      <button class="btn text" id="r-undo">취소</button>`;
-  } else {
-    main = `<button class="btn soft big" id="r-undo">✓ 읽음 · 취소하기</button>`;
-  }
-  $("#r-bottom").innerHTML = `
-    <button class="icon-btn" id="r-prev" ${pos <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
-    <div class="rd-main">${main}</div>
-    <button class="icon-btn" id="r-next" ${pos >= pr.seq.length - 1 ? "disabled" : ""} aria-label="다음 장">›</button>`;
+    ${stepCheck}`;
 
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"], ["godpia", "갓피아 원문"]];
+const READER_TABS = [["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"], ["godpia", "갓피아 원문"]];
 
 // 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
 function syncReaderTabs() {
@@ -294,6 +284,7 @@ function renderReaderSheet() {
   if (sheetTab === "verses") return mountVersePicker(body, "reading", "reading" + currentChapter, currentChapter);
 
   if (sheetTab === "table") {
+    setSheetTitle(null, "통독표");
     body.innerHTML = `
       <div class="table-sum">
         <div class="bar"><span style="width:${pr.pct}%"></span></div>
