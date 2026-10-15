@@ -21,9 +21,9 @@
         {"name":"여인의 오빠들","role":"포도원을 지키게 한 이들","weight":1}
       ],
       "rels": [
-        {"from":"술람미 여인","to":"솔로몬","label":"서로 사랑하는 이","kind":"family","directed":false,"weight":3,"verses":"2-4","note":"여인이 그가 내게 입 맞추기를 원하니 네 사랑이 포도주보다 낫다, 왕이 나를 그의 방으로 이끄셨다고 노래해요."},
-        {"from":"여인의 오빠들","to":"술람미 여인","label":"노한 오빠들","kind":"family","directed":true,"weight":2,"verses":"6","note":"내 어머니의 아들들이 나에게 노하여 포도원지기로 삼았기에 내가 햇볕에 그을렸다고 해요."},
-        {"from":"예루살렘 딸들","to":"술람미 여인","label":"곁의 친구들","kind":"ally","directed":true,"weight":1,"verses":"5","note":"예루살렘 딸들아 내가 비록 검으나 아름답다고 여인이 말해요."}
+        {"from":"술람미 여인","to":"솔로몬","label":"서로 사랑하는 이","kind":"family","directed":false,"weight":3,"verses":"2-4","note":"여인은 왕의 사랑이 포도주보다 달콤하다며 그와 함께하고 싶어 해요."},
+        {"from":"여인의 오빠들","to":"술람미 여인","label":"노한 오빠들","kind":"family","directed":true,"weight":2,"verses":"6","note":"오빠들이 화가 나서 포도원 일을 시키는 바람에 여인은 햇볕에 그을렸대요."},
+        {"from":"예루살렘 딸들","to":"술람미 여인","label":"곁의 친구들","kind":"ally","directed":true,"weight":1,"verses":"5","note":"여인은 예루살렘 여자들에게 피부는 검어도 자기는 아름답다고 말해요."}
       ],
       "places": [
         {"name":"게달의 장막","where":"아라비아 광야 족속의 검은 천막","what":"여인이 자기를 비유한 것","weight":1},
@@ -45,8 +45,8 @@
         {"name":"예루살렘 딸들","role":"사랑을 깨우지 말라 당부받은 이들","weight":2}
       ],
       "rels": [
-        {"from":"술람미 여인","to":"솔로몬","label":"서로에게 속함","kind":"family","directed":false,"weight":3,"verses":"16","note":"내 사랑하는 자는 내게 속하였고 나는 그에게 속하였도다 하고 노래해요."},
-        {"from":"술람미 여인","to":"예루살렘 딸들","label":"당부한 신부","kind":"ally","directed":true,"weight":2,"verses":"7","note":"예루살렘 딸들아 사랑하는 자가 원하기 전에는 흔들지 말고 깨우지 말라고 당부해요."}
+        {"from":"술람미 여인","to":"솔로몬","label":"서로에게 속함","kind":"family","directed":false,"weight":3,"verses":"16","note":"여인은 사랑하는 이는 내 것이고 나는 그의 것이라고 노래해요."},
+        {"from":"술람미 여인","to":"예루살렘 딸들","label":"당부한 신부","kind":"ally","directed":true,"weight":2,"verses":"7","note":"사랑이 스스로 원할 때까지 억지로 깨우지 말라고 여인이 당부해요."}
       ],
       "places": [
         {"name":"샤론","where":"지중해 해안의 기름진 평야","what":"여인이 자기를 수선화에 비유한 곳","weight":2},
@@ -71,10 +71,10 @@
         {"name":"솔로몬의 어머니","role":"혼인날 면류관을 씌운 이","weight":1}
       ],
       "rels": [
-        {"from":"술람미 여인","to":"솔로몬","label":"신랑과 신부","kind":"family","directed":false,"weight":3,"verses":"1-4","note":"밤에 침상에서 마음으로 사랑하는 자를 찾다가 만나서 붙잡고 놓지 않았다고 해요."},
+        {"from":"술람미 여인","to":"솔로몬","label":"신랑과 신부","kind":"family","directed":false,"weight":3,"verses":"1-4","note":"여인은 밤새 사랑하는 이를 찾아 헤매다 만나서 꼭 붙잡고 놓지 않았대요."},
         {"from":"이스라엘 용사 육십 명","to":"솔로몬","label":"호위하는 용사","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"솔로몬의 가마 주위에는 이스라엘 용사 육십 명이 칼을 잡고 둘러 있었어요."},
-        {"from":"솔로몬의 어머니","to":"솔로몬","label":"면류관 씌운 어머니","kind":"family","directed":true,"weight":1,"verses":"11","note":"혼인날 마음이 기쁠 때에 그의 어머니가 씌운 면류관이 솔로몬 왕의 머리에 있다고 해요."},
-        {"from":"술람미 여인","to":"파수꾼들","label":"길을 물은 이","kind":"other","directed":true,"weight":1,"verses":"3","note":"성 안을 순찰하는 파수꾼들을 만나 내 마음으로 사랑하는 자를 너희가 보았느냐고 물었어요."}
+        {"from":"솔로몬의 어머니","to":"솔로몬","label":"면류관 씌운 어머니","kind":"family","directed":true,"weight":1,"verses":"11","note":"결혼식 날 솔로몬은 어머니가 씌워 준 관을 쓰고 있었대요."},
+        {"from":"술람미 여인","to":"파수꾼들","label":"길을 물은 이","kind":"other","directed":true,"weight":1,"verses":"3","note":"여인은 성을 도는 경비병들에게 사랑하는 이를 못 봤느냐고 물었어요."}
       ],
       "places": [
         {"name":"성안 거리와 광장","where":"예루살렘 성","what":"여인이 밤에 사랑하는 이를 찾은 곳","weight":2},
@@ -97,8 +97,8 @@
         {"name":"솔로몬","role":"신부를 노래하는 신랑","weight":3}
       ],
       "rels": [
-        {"from":"솔로몬","to":"술람미 여인","label":"찬미하는 신랑","kind":"family","directed":true,"weight":3,"verses":"1, 7","note":"나의 사랑 너는 어여쁘고도 어여쁘다, 너는 아무 흠이 없다고 신랑이 찬미해요."},
-        {"from":"술람미 여인","to":"솔로몬","label":"초대하는 신부","kind":"family","directed":true,"weight":3,"verses":"16","note":"북풍아 일어나라 남풍아 오라, 나의 사랑하는 자가 그 동산에 들어가 아름다운 열매를 먹기를 원한다고 해요."}
+        {"from":"솔로몬","to":"술람미 여인","label":"찬미하는 신랑","kind":"family","directed":true,"weight":3,"verses":"1, 7","note":"신랑은 신부가 너무 아름답고 흠 하나 없다고 감탄해요."},
+        {"from":"술람미 여인","to":"솔로몬","label":"초대하는 신부","kind":"family","directed":true,"weight":3,"verses":"16","note":"신부는 바람을 불러 자기 동산에 사랑하는 이가 와서 열매를 누리기를 바라요."}
       ],
       "places": [
         {"name":"길르앗","where":"요단 동쪽 산지","what":"머리털을 염소 떼에 비유한 곳","weight":1},
@@ -150,7 +150,7 @@
         {"name":"왕비와 후궁들","role":"신부를 칭찬한 여인들","weight":1}
       ],
       "rels": [
-        {"from":"술람미 여인","to":"솔로몬","label":"서로에게 속함","kind":"family","directed":false,"weight":3,"verses":"3","note":"나는 내 사랑하는 자에게 속하였고 내 사랑하는 자는 내게 속하였다고 노래해요."},
+        {"from":"술람미 여인","to":"솔로몬","label":"서로에게 속함","kind":"family","directed":false,"weight":3,"verses":"3","note":"여인은 나는 그의 것이고 그는 나의 것이라고 다시 노래해요."},
         {"from":"왕비와 후궁들","to":"술람미 여인","label":"칭찬한 여인들","kind":"ally","directed":true,"weight":1,"verses":"8-9","note":"왕비들과 후궁들도 그를 보고 칭찬하였다고 해요."},
         {"from":"예루살렘 딸들","to":"술람미 여인","label":"물은 친구들","kind":"ally","directed":true,"weight":1,"verses":"1","note":"예루살렘 딸들이 네 사랑하는 자가 어디로 갔는지 함께 찾자고 물어요."}
       ],
@@ -173,8 +173,8 @@
         {"name":"솔로몬","role":"신부에게 매인 왕","weight":3}
       ],
       "rels": [
-        {"from":"솔로몬","to":"술람미 여인","label":"사모하는 신랑","kind":"family","directed":true,"weight":3,"verses":"6","note":"사랑아 네가 어찌 그리 아름다운지, 어찌 그리 화창한지 즐겁게 한다고 신랑이 노래해요."},
-        {"from":"술람미 여인","to":"솔로몬","label":"속한 신부","kind":"family","directed":true,"weight":3,"verses":"10","note":"나는 내 사랑하는 자에게 속하였도다 그가 나를 사모하는구나 하고 해요."}
+        {"from":"솔로몬","to":"술람미 여인","label":"사모하는 신랑","kind":"family","directed":true,"weight":3,"verses":"6","note":"신랑은 사랑하는 이가 얼마나 아름답고 기쁨을 주는지 노래해요."},
+        {"from":"술람미 여인","to":"솔로몬","label":"속한 신부","kind":"family","directed":true,"weight":3,"verses":"10","note":"여인은 자기가 그의 것이고 그가 자기를 몹시 그리워한다고 해요."}
       ],
       "places": [
         {"name":"헤스본","where":"요단 동쪽 모압 평원의 성읍","what":"눈을 비유한 연못이 있는 곳","weight":1},
@@ -201,9 +201,9 @@
         {"name":"하나님","role":"불길 같은 사랑의 근원","weight":1}
       ],
       "rels": [
-        {"from":"술람미 여인","to":"솔로몬","label":"도장처럼 품은 사랑","kind":"family","directed":false,"weight":3,"verses":"6-7","note":"나를 도장같이 마음에 품고 팔에 두라, 사랑은 죽음같이 강하고 많은 물도 이 사랑을 끄지 못한다고 해요."},
+        {"from":"술람미 여인","to":"솔로몬","label":"도장처럼 품은 사랑","kind":"family","directed":false,"weight":3,"verses":"6-7","note":"나를 도장처럼 마음에 새겨 달라, 사랑은 죽음처럼 강해서 큰물도 끄지 못한대요."},
         {"from":"신부의 오빠들","to":"어린 누이","label":"지키는 오빠들","kind":"family","directed":true,"weight":2,"verses":"8-9","note":"우리에게 있는 작은 누이를 위하여 그가 성벽이면 은 망대를 세우겠다고 오빠들이 말해요."},
-        {"from":"술람미 여인","to":"예루살렘 딸들","label":"당부한 신부","kind":"ally","directed":true,"weight":1,"verses":"4","note":"예루살렘 딸들아 사랑하는 자가 원하기 전에는 흔들지 말고 깨우지 말라고 당부해요."}
+        {"from":"술람미 여인","to":"예루살렘 딸들","label":"당부한 신부","kind":"ally","directed":true,"weight":1,"verses":"4","note":"여인은 다시 사랑이 원할 때까지 억지로 깨우지 말라고 당부해요."}
       ],
       "places": [
         {"name":"거친 들","where":"광야","what":"신부가 사랑하는 이를 의지하고 올라온 곳","weight":1},
