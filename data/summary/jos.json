@@ -22,9 +22,9 @@
         {"name":"갓 자손","role":"형제와 함께 싸우겠다 함","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":3},
-        {"from":"르우벤 자손","to":"여호수아","label":"따르겠다는 지파","kind":"ally","directed":true,"weight":1},
-        {"from":"갓 자손","to":"르우벤 자손","label":"함께 약속한 지파","kind":"ally","directed":false,"weight":1}
+        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":3,"verses":"5-9","note":"하나님이 내가 모세와 함께한 것처럼 너와 함께하리니 강하고 담대하라고 여호수아에게 말씀하셨어요."},
+        {"from":"르우벤 자손","to":"여호수아","label":"따르겠다는 지파","kind":"ally","directed":true,"weight":1,"verses":"16-17","note":"요단 동쪽 지파들이 당신이 명령하는 것은 다 행하고 보내는 곳으로 가겠다고 여호수아에게 대답했어요."},
+        {"from":"갓 자손","to":"르우벤 자손","label":"함께 약속한 지파","kind":"ally","directed":false,"weight":1,"verses":"12-15","note":"여호수아가 르우벤과 갓과 므낫세 반 지파에게 형제들보다 앞서 건너가 싸우라는 모세의 명령을 일깨웠어요."}
       ],
       "places": [
         {"name":"요단 강","where":"가나안 동쪽 경계의 강","what":"건너야 할 강","weight":3},
@@ -48,10 +48,10 @@
         {"name":"여호수아","role":"정탐꾼을 보낸 지도자","weight":2}
       ],
       "rels": [
-        {"from":"라합","to":"두 정탐꾼","label":"숨겨 준 이","kind":"ally","directed":true,"weight":3},
-        {"from":"여리고 왕","to":"두 정탐꾼","label":"쫓은 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"두 정탐꾼","to":"라합","label":"구원을 약속함","kind":"ally","directed":true,"weight":3},
-        {"from":"여호수아","to":"두 정탐꾼","label":"보낸 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"라합","to":"두 정탐꾼","label":"숨겨 준 이","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"기생 라합이 정탐꾼들을 지붕의 삼대 속에 숨기고 찾아온 왕의 사람들에게 이미 떠났다고 말했어요."},
+        {"from":"여리고 왕","to":"두 정탐꾼","label":"쫓은 왕","kind":"conflict","directed":true,"weight":2,"verses":"2-3, 7","note":"여리고 왕이 정탐꾼이 들어왔다는 말을 듣고 라합에게 사람을 보내 내놓으라 했고, 추격대가 뒤쫓았어요."},
+        {"from":"두 정탐꾼","to":"라합","label":"구원을 약속함","kind":"ally","directed":true,"weight":3,"verses":"12-14, 18","note":"정탐꾼들은 창문에 붉은 줄을 매달아 두면 라합의 온 가족을 살려 주겠다고 맹세했어요."},
+        {"from":"여호수아","to":"두 정탐꾼","label":"보낸 지도자","kind":"ally","directed":true,"weight":2,"verses":"1","note":"여호수아가 싯딤에서 두 사람을 몰래 보내 여리고 땅을 엿보게 했어요."}
       ],
       "places": [
         {"name":"여리고","where":"요단 강 서쪽, 사해 북쪽","what":"라합이 살던 견고한 성","weight":3},
@@ -74,9 +74,9 @@
         {"name":"하나님","role":"물을 멈추게 하심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"여호수아","label":"높여 주신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"제사장들","to":"이스라엘 자손","label":"앞서간 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"여호수아","to":"이스라엘 자손","label":"지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"여호수아","label":"높여 주신 분","kind":"ally","directed":true,"weight":3,"verses":"7","note":"하나님이 오늘부터 너를 온 이스라엘 앞에서 크게 하여 내가 모세와 함께했듯 너와 함께함을 알게 하리라고 하셨어요."},
+        {"from":"제사장들","to":"이스라엘 자손","label":"앞서간 이들","kind":"ally","directed":true,"weight":2,"verses":"15-17","note":"언약궤를 멘 제사장들의 발이 요단 물에 닿자 물이 멈추었고, 그들이 서 있는 동안 백성이 마른 땅으로 건넜어요."},
+        {"from":"여호수아","to":"이스라엘 자손","label":"지도자","kind":"ally","directed":true,"weight":2,"verses":"5, 9-10","note":"여호수아가 백성에게 스스로 거룩하게 하라, 내일 하나님이 너희 가운데 기적을 행하시리라고 했어요."}
       ],
       "places": [
         {"name":"요단 강","where":"가나안 동쪽 경계의 강","what":"물이 멈추고 마른 땅으로 건넌 곳","weight":3},
@@ -100,8 +100,8 @@
         {"name":"이스라엘 자손","role":"길갈에 진을 침","weight":1}
       ],
       "rels": [
-        {"from":"열두 사람","to":"여호수아","label":"명령을 따른 대표들","kind":"ally","directed":true,"weight":2},
-        {"from":"이스라엘 자손","to":"여호수아","label":"경외한 백성","kind":"ally","directed":true,"weight":2}
+        {"from":"열두 사람","to":"여호수아","label":"명령을 따른 대표들","kind":"ally","directed":true,"weight":2,"verses":"4-8","note":"지파마다 뽑힌 열두 사람이 여호수아의 명령대로 요단 가운데서 돌 열두 개를 메고 나왔어요."},
+        {"from":"이스라엘 자손","to":"여호수아","label":"경외한 백성","kind":"ally","directed":true,"weight":2,"verses":"14","note":"그날 하나님이 여호수아를 크게 하시니 백성이 모세를 두려워한 것처럼 평생 여호수아를 경외했어요."}
       ],
       "places": [
         {"name":"길갈","where":"여리고 동쪽, 요단 서편","what":"열두 돌을 세우고 진을 친 곳","weight":3}
@@ -122,9 +122,9 @@
         {"name":"이스라엘 자손","role":"할례를 받고 유월절을 지킴","weight":2}
       ],
       "rels": [
-        {"from":"여호와의 군대 장관","to":"여호수아","label":"앞서 싸우실 이","kind":"ally","directed":true,"weight":3},
-        {"from":"여호수아","to":"여호와의 군대 장관","label":"엎드린 종","kind":"ally","directed":true,"weight":2},
-        {"from":"여호수아","to":"이스라엘 자손","label":"지도자","kind":"ally","directed":true,"weight":1}
+        {"from":"여호와의 군대 장관","to":"여호수아","label":"앞서 싸우실 이","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"여리고 가까이에서 칼을 든 사람이 나타나 나는 여호와의 군대 장관으로 왔다고 했어요."},
+        {"from":"여호수아","to":"여호와의 군대 장관","label":"엎드린 종","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"여호수아가 땅에 엎드려 절하며 내 주께서 무슨 말씀을 하시려느냐 물었고, 신을 벗으라는 말에 그대로 했어요."},
+        {"from":"여호수아","to":"이스라엘 자손","label":"지도자","kind":"ally","directed":true,"weight":1,"verses":"2-3","note":"여호수아가 하나님 명령대로 광야에서 태어난 백성에게 길갈에서 할례를 행했어요."}
       ],
       "places": [
         {"name":"길갈","where":"여리고 동쪽","what":"할례를 받고 유월절을 지킨 곳","weight":3},
@@ -149,9 +149,9 @@
         {"name":"하나님","role":"성벽을 무너뜨리심","weight":3}
       ],
       "rels": [
-        {"from":"두 정탐꾼","to":"라합","label":"약속을 지킨 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"여호수아","label":"작전을 주신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"제사장들","to":"여호수아","label":"따른 제사장들","kind":"ally","directed":true,"weight":2}
+        {"from":"두 정탐꾼","to":"라합","label":"약속을 지킨 이들","kind":"ally","directed":true,"weight":3,"verses":"22-23","note":"성이 무너진 뒤 두 정탐꾼이 들어가 맹세대로 라합과 그의 가족을 모두 데리고 나왔어요."},
+        {"from":"하나님","to":"여호수아","label":"작전을 주신 분","kind":"ally","directed":true,"weight":3,"verses":"2-5","note":"하나님이 여호수아에게 엿새 동안 성을 하루 한 번 돌고 일곱째 날 일곱 번 돈 뒤 크게 외치면 성벽이 무너지리라고 하셨어요."},
+        {"from":"제사장들","to":"여호수아","label":"따른 제사장들","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"일곱 제사장이 일곱 양각 나팔을 불며 언약궤 앞에서 여호수아의 명령대로 나아갔어요."}
       ],
       "places": [
         {"name":"여리고","where":"요단 서쪽, 사해 북쪽","what":"순종으로 성벽이 무너진 성","weight":3}
@@ -174,9 +174,9 @@
         {"name":"이스라엘 자손","role":"아이에서 패한 백성","weight":2}
       ],
       "rels": [
-        {"from":"아간","to":"이스라엘 자손","label":"죄를 끌어들인 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"여호수아","to":"아간","label":"자백하게 한 지도자","kind":"conflict","directed":true,"weight":3},
-        {"from":"여호수아","to":"하나님","label":"부르짖은 종","kind":"ally","directed":true,"weight":2}
+        {"from":"아간","to":"이스라엘 자손","label":"죄를 끌어들인 자","kind":"conflict","directed":true,"weight":3,"verses":"1, 11-12","note":"아간이 바쳐야 할 물건을 몰래 가져가 그 죄 때문에 이스라엘 전체가 아이 성에서 패했어요."},
+        {"from":"여호수아","to":"아간","label":"자백하게 한 지도자","kind":"conflict","directed":true,"weight":3,"verses":"19-21","note":"여호수아가 내 아들아 하나님께 영광을 돌리고 숨기지 말라 하자, 아간이 외투와 은과 금덩이를 숨겼다고 자백했어요."},
+        {"from":"여호수아","to":"하나님","label":"부르짖은 종","kind":"ally","directed":true,"weight":2,"verses":"6-9","note":"아이에서 패한 뒤 여호수아가 옷을 찢고 언약궤 앞에 엎드려 저녁까지 하나님께 부르짖었어요."}
       ],
       "places": [
         {"name":"아이","where":"벧엘 동쪽 작은 성","what":"작은 성에 패한 곳","weight":3},
@@ -200,9 +200,9 @@
         {"name":"이스라엘 자손","role":"에발 산 앞에 선 회중","weight":2}
       ],
       "rels": [
-        {"from":"여호수아","to":"아이 왕","label":"이긴 장수","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"여호수아","label":"작전을 주신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"여호수아","to":"이스라엘 자손","label":"율법을 읽어 준 이","kind":"ally","directed":true,"weight":2}
+        {"from":"여호수아","to":"아이 왕","label":"이긴 장수","kind":"conflict","directed":true,"weight":3,"verses":"18-23","note":"여호수아가 단창을 들자 매복한 군사가 성을 점령했고 아이 왕을 사로잡았어요."},
+        {"from":"하나님","to":"여호수아","label":"작전을 주신 분","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"하나님이 두려워하지 말라 하시며 성 뒤에 복병을 두는 작전을 여호수아에게 주셨어요."},
+        {"from":"여호수아","to":"이스라엘 자손","label":"율법을 읽어 준 이","kind":"ally","directed":true,"weight":2,"verses":"34-35","note":"여호수아가 에발산에서 율법의 축복과 저주를 온 회중 앞에서 한 마디도 빠짐없이 읽어 주었어요."}
       ],
       "places": [
         {"name":"아이","where":"벧엘 동쪽 성","what":"매복 작전으로 차지한 성","weight":3},
@@ -225,9 +225,9 @@
         {"name":"이스라엘 족장들","role":"양식만 보고 맹세함","weight":2}
       ],
       "rels": [
-        {"from":"기브온 사람들","to":"여호수아","label":"속인 이웃","kind":"conflict","directed":true,"weight":3},
-        {"from":"여호수아","to":"기브온 사람들","label":"살려 둔 지도자","kind":"ally","directed":true,"weight":2},
-        {"from":"이스라엘 족장들","to":"여호수아","label":"함께 맹세함","kind":"ally","directed":false,"weight":1}
+        {"from":"기브온 사람들","to":"여호수아","label":"속인 이웃","kind":"conflict","directed":true,"weight":3,"verses":"3-6","note":"기브온 사람들이 낡은 옷과 곰팡이 난 떡을 들고 먼 나라에서 왔다고 속여 여호수아와 화친을 맺었어요."},
+        {"from":"여호수아","to":"기브온 사람들","label":"살려 둔 지도자","kind":"ally","directed":true,"weight":2,"verses":"26-27","note":"속은 것을 알았지만 맹세 때문에 여호수아는 그들을 죽이지 않고 나무 패고 물 긷는 사람으로 삼았어요."},
+        {"from":"이스라엘 족장들","to":"여호수아","label":"함께 맹세함","kind":"ally","directed":false,"weight":1,"verses":"14-15, 18-19","note":"족장들은 하나님께 묻지 않고 그들과 맹세했고, 나중에는 맹세했으니 그들을 해칠 수 없다고 했어요."}
       ],
       "places": [
         {"name":"기브온","where":"예루살렘 북서쪽 약 9km","what":"속임수로 화친한 큰 성","weight":3},
@@ -252,11 +252,11 @@
         {"name":"다섯 아모리 왕","role":"헤브론·야르뭇·라기스·에글론 왕","weight":1}
       ],
       "rels": [
-        {"from":"아도니세덱","to":"기브온 사람들","label":"공격한 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"여호수아","to":"아도니세덱","label":"이긴 장수","kind":"conflict","directed":true,"weight":3},
-        {"from":"여호수아","to":"기브온 사람들","label":"구하러 간 동맹","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"여호수아","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"다섯 아모리 왕","to":"아도니세덱","label":"연합한 왕들","kind":"ally","directed":false,"weight":1}
+        {"from":"아도니세덱","to":"기브온 사람들","label":"공격한 왕","kind":"conflict","directed":true,"weight":2,"verses":"1-5","note":"예루살렘 왕 아도니세덱이 기브온이 이스라엘과 화친했다는 소식에 다른 왕들과 연합해 기브온을 쳤어요."},
+        {"from":"여호수아","to":"아도니세덱","label":"이긴 장수","kind":"conflict","directed":true,"weight":3,"verses":"16-26","note":"다섯 왕이 막게다 굴에 숨었다가 붙잡혔고 여호수아가 그들을 쳐 죽였어요."},
+        {"from":"여호수아","to":"기브온 사람들","label":"구하러 간 동맹","kind":"ally","directed":true,"weight":2,"verses":"6-9","note":"기브온 사람들이 우리를 버리지 말고 속히 와서 구해 달라 하자 여호수아가 밤새 올라가 도왔어요."},
+        {"from":"하나님","to":"여호수아","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":3,"verses":"11-14","note":"하나님이 하늘에서 큰 우박을 내리시고, 여호수아의 기도대로 해와 달을 멈추게 하시며 이스라엘을 위해 싸우셨어요."},
+        {"from":"다섯 아모리 왕","to":"아도니세덱","label":"연합한 왕들","kind":"ally","directed":false,"weight":1,"verses":"3-5","note":"헤브론, 야르뭇, 라기스, 에글론의 왕들이 아도니세덱의 부름에 모여 연합군을 이루었어요."}
       ],
       "places": [
         {"name":"기브온","where":"예루살렘 북서쪽","what":"해가 머문 싸움터","weight":3},
@@ -281,9 +281,9 @@
         {"name":"하나님","role":"두려워 말라 하신 분","weight":2}
       ],
       "rels": [
-        {"from":"야빈","to":"여호수아","label":"맞선 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"여호수아","label":"넘겨주신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"여호수아","to":"아낙 사람","label":"물리친 장수","kind":"conflict","directed":true,"weight":1}
+        {"from":"야빈","to":"여호수아","label":"맞선 왕","kind":"conflict","directed":true,"weight":3,"verses":"1-5","note":"하솔 왕 야빈이 북쪽 왕들을 불러 바닷가 모래처럼 많은 군대로 이스라엘과 싸우려 모였어요."},
+        {"from":"하나님","to":"여호수아","label":"넘겨주신 분","kind":"ally","directed":true,"weight":3,"verses":"6-8","note":"하나님이 두려워하지 말라, 내일 이맘때 그들을 다 넘겨주리라 하셨고 그대로 이루어졌어요."},
+        {"from":"여호수아","to":"아낙 사람","label":"물리친 장수","kind":"conflict","directed":true,"weight":1,"verses":"21-22","note":"여호수아가 산지에 사는 거인 아낙 사람들을 쳐서 이스라엘 땅에서 없앴어요."}
       ],
       "places": [
         {"name":"메롬 물가","where":"갈릴리 북쪽","what":"북쪽 연합군을 이긴 곳","weight":3},
@@ -306,7 +306,7 @@
         {"name":"옥","role":"바산 왕","weight":1}
       ],
       "rels": [
-        {"from":"여호수아","to":"모세","label":"뒤를 이은 후계자","kind":"ally","directed":true,"weight":2}
+        {"from":"여호수아","to":"모세","label":"뒤를 이은 후계자","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"요단 동쪽은 모세가 정복해 나누었고, 요단 서쪽 서른한 왕은 여호수아가 쳐서 이긴 왕들이에요."}
       ],
       "places": [
         {"name":"요단 강","where":"동편과 서편을 나누는 강","what":"정복한 땅의 기준선","weight":1}
@@ -349,10 +349,10 @@
         {"name":"모세","role":"갈렙에게 맹세했던 지도자","weight":1}
       ],
       "rels": [
-        {"from":"갈렙","to":"여호수아","label":"옛 정탐 동지","kind":"ally","directed":false,"weight":3},
-        {"from":"여호수아","to":"갈렙","label":"축복한 지도자","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"갈렙","label":"약속한 이","kind":"ally","directed":true,"weight":1},
-        {"from":"엘르아살","to":"여호수아","label":"함께 나눈 이","kind":"ally","directed":false,"weight":1}
+        {"from":"갈렙","to":"여호수아","label":"옛 정탐 동지","kind":"ally","directed":false,"weight":3,"verses":"6-12","note":"갈렙이 여호수아에게 가데스에서 함께 정탐하던 일을 말하며 여든다섯 살인 지금도 힘이 있으니 이 산지를 달라고 했어요."},
+        {"from":"여호수아","to":"갈렙","label":"축복한 지도자","kind":"ally","directed":true,"weight":2,"verses":"13","note":"여호수아가 갈렙을 축복하고 헤브론을 그의 기업으로 주었어요."},
+        {"from":"모세","to":"갈렙","label":"약속한 이","kind":"ally","directed":true,"weight":1,"verses":"9","note":"모세가 그날 갈렙이 온전히 하나님을 따랐으니 밟은 땅이 그와 자손의 기업이 되리라고 맹세했었어요."},
+        {"from":"엘르아살","to":"여호수아","label":"함께 나눈 이","kind":"ally","directed":false,"weight":1,"verses":"1","note":"제사장 엘르아살과 여호수아와 족장들이 가나안 땅을 지파들에게 나누어 주었어요."}
       ],
       "places": [
         {"name":"헤브론","where":"유다 산지, 예루살렘 남쪽 약 30km","what":"갈렙이 받은 아낙 사람의 성","weight":3},
@@ -376,10 +376,10 @@
         {"name":"아낙의 세 아들","role":"갈렙이 쫓아낸 세새·아히만·달매","weight":1}
       ],
       "rels": [
-        {"from":"악사","to":"갈렙","label":"딸","kind":"family","directed":true,"weight":2},
-        {"from":"옷니엘","to":"악사","label":"남편","kind":"family","directed":true,"weight":2},
-        {"from":"옷니엘","to":"갈렙","label":"조카","kind":"family","directed":true,"weight":1},
-        {"from":"갈렙","to":"아낙의 세 아들","label":"쫓아낸 이","kind":"conflict","directed":true,"weight":1}
+        {"from":"악사","to":"갈렙","label":"딸","kind":"family","directed":true,"weight":2,"verses":"16-19","note":"갈렙의 딸 악사가 아버지께 남쪽 땅을 받았으니 샘물도 달라고 청해 윗샘과 아랫샘을 받았어요."},
+        {"from":"옷니엘","to":"악사","label":"남편","kind":"family","directed":true,"weight":2,"verses":"17","note":"옷니엘이 기럇 세벨을 점령해 갈렙의 약속대로 악사를 아내로 맞았어요."},
+        {"from":"옷니엘","to":"갈렙","label":"조카","kind":"family","directed":true,"weight":1,"verses":"17","note":"옷니엘은 갈렙의 아우 그나스의 아들이에요."},
+        {"from":"갈렙","to":"아낙의 세 아들","label":"쫓아낸 이","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"갈렙이 헤브론에서 아낙의 세 아들 세새와 아히만과 달매를 쫓아냈어요."}
       ],
       "places": [
         {"name":"드빌","where":"헤브론 남서쪽","what":"옷니엘이 차지한 성","weight":2},
@@ -423,9 +423,9 @@
         {"name":"마길","role":"길르앗을 받은 므낫세의 맏아들","weight":1}
       ],
       "rels": [
-        {"from":"요셉 자손","to":"여호수아","label":"불평한 지파","kind":"conflict","directed":true,"weight":2},
-        {"from":"여호수아","to":"요셉 자손","label":"격려한 지도자","kind":"ally","directed":true,"weight":2},
-        {"from":"슬로브핫의 딸들","to":"엘르아살","label":"청한 이들","kind":"other","directed":true,"weight":1}
+        {"from":"요셉 자손","to":"여호수아","label":"불평한 지파","kind":"conflict","directed":true,"weight":2,"verses":"14-16","note":"요셉 자손이 우리는 큰 민족인데 왜 한 몫만 주느냐고 여호수아에게 불평했어요."},
+        {"from":"여호수아","to":"요셉 자손","label":"격려한 지도자","kind":"ally","directed":true,"weight":2,"verses":"17-18","note":"여호수아가 너희는 큰 민족이니 산림을 개간하라, 철 병거가 있어도 가나안 사람을 쫓아낼 수 있다고 격려했어요."},
+        {"from":"슬로브핫의 딸들","to":"엘르아살","label":"청한 이들","kind":"other","directed":true,"weight":1,"verses":"3-4","note":"슬로브핫의 딸들이 엘르아살과 여호수아에게 모세가 약속한 우리 몫의 기업을 달라고 청했어요."}
       ],
       "places": [
         {"name":"세겜","where":"므낫세 땅의 중심","what":"므낫세가 받은 땅의 성","weight":1}
@@ -446,7 +446,7 @@
         {"name":"베냐민 지파","role":"유다와 요셉 사이 땅을 받음","weight":2}
       ],
       "rels": [
-        {"from":"여호수아","to":"베냐민 지파","label":"땅을 나눈 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"여호수아","to":"베냐민 지파","label":"땅을 나눈 지도자","kind":"ally","directed":true,"weight":2,"verses":"10-11","note":"여호수아가 실로에서 제비를 뽑아 남은 일곱 지파에게 땅을 나누었고, 첫 제비가 베냐민 지파에게 나왔어요."}
       ],
       "places": [
         {"name":"실로","where":"예루살렘 북쪽 약 32km","what":"회막을 세우고 제비 뽑은 곳","weight":3},
@@ -469,7 +469,7 @@
         {"name":"엘르아살","role":"땅 나누기를 마친 제사장","weight":1}
       ],
       "rels": [
-        {"from":"엘르아살","to":"여호수아","label":"함께 나눈 이","kind":"ally","directed":false,"weight":1}
+        {"from":"엘르아살","to":"여호수아","label":"함께 나눈 이","kind":"ally","directed":false,"weight":1,"verses":"51","note":"제사장 엘르아살과 여호수아가 실로 회막 문 앞에서 제비 뽑아 땅 나누기를 마쳤어요."}
       ],
       "places": [
         {"name":"딤낫 세라","where":"에브라임 산지","what":"여호수아가 받은 작은 성","weight":3},
@@ -513,8 +513,8 @@
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"약속을 이루신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"레위 지파","to":"엘르아살","label":"성읍을 청한 지파","kind":"other","directed":true,"weight":1}
+        {"from":"하나님","to":"이스라엘 자손","label":"약속을 이루신 분","kind":"ally","directed":true,"weight":3,"verses":"43-45","note":"하나님이 조상들에게 맹세하신 땅을 다 주셨으니 하신 선한 말씀이 하나도 빠짐없이 다 이루어졌어요."},
+        {"from":"레위 지파","to":"엘르아살","label":"성읍을 청한 지파","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"레위 족장들이 엘르아살과 여호수아에게 와서 모세를 통해 약속하신 살 성읍을 달라고 청했어요."}
       ],
       "places": [
         {"name":"실로","where":"에브라임 산지의 회막","what":"레위인이 성읍을 청한 곳","weight":1}
@@ -539,10 +539,10 @@
         {"name":"엘르아살","role":"비느하스의 아버지","weight":1}
       ],
       "rels": [
-        {"from":"비느하스","to":"르우벤 자손","label":"따진 제사장","kind":"conflict","directed":true,"weight":3},
-        {"from":"르우벤 자손","to":"갓 자손","label":"함께한 지파","kind":"ally","directed":false,"weight":2},
-        {"from":"여호수아","to":"르우벤 자손","label":"축복한 지도자","kind":"ally","directed":true,"weight":2},
-        {"from":"비느하스","to":"르우벤 자손","label":"화해한 제사장","kind":"ally","directed":true,"weight":2}
+        {"from":"비느하스","to":"르우벤 자손","label":"따진 제사장","kind":"conflict","directed":true,"weight":3,"verses":"13-20","note":"요단 가에 큰 제단을 쌓았다는 말에 비느하스와 족장들이 와서 어찌 하나님을 거역하느냐고 따졌어요."},
+        {"from":"르우벤 자손","to":"갓 자손","label":"함께한 지파","kind":"ally","directed":false,"weight":2,"verses":"21-29","note":"르우벤과 갓 자손이 그 제단은 제사용이 아니라 후손도 하나님께 속했다는 증거라고 함께 대답했어요."},
+        {"from":"여호수아","to":"르우벤 자손","label":"축복한 지도자","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"여호수아가 동쪽 지파들을 축복하며 많은 재물을 가지고 집으로 돌아가 형제들과 나누라고 했어요."},
+        {"from":"비느하스","to":"르우벤 자손","label":"화해한 제사장","kind":"ally","directed":true,"weight":2,"verses":"30-31","note":"설명을 들은 비느하스가 기뻐하며 하나님이 우리 가운데 계신 줄 안다고 화해했어요."}
       ],
       "places": [
         {"name":"요단 가","where":"요단 강 서쪽 언덕","what":"증거의 제단을 쌓은 곳","weight":3},
@@ -565,8 +565,8 @@
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2}
       ],
       "rels": [
-        {"from":"여호수아","to":"이스라엘 장로들","label":"당부한 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"여호수아","to":"이스라엘 장로들","label":"당부한 지도자","kind":"ally","directed":true,"weight":3,"verses":"6-8, 11","note":"늙은 여호수아가 장로들을 불러 율법을 지키고 그 민족들과 섞이지 말며 하나님을 사랑하라고 당부했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"대신 싸우신 분","kind":"ally","directed":true,"weight":2,"verses":"3, 10","note":"하나님이 너희를 위해 친히 싸우셨으니 너희 한 사람이 천 명을 쫓았다고 했어요."}
       ],
       "places": [
 
@@ -590,9 +590,9 @@
         {"name":"하나님","role":"조상 때부터 이끄신 분","weight":2}
       ],
       "rels": [
-        {"from":"여호수아","to":"이스라엘 자손","label":"언약을 세운 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"하나님","label":"섬기기로 한 백성","kind":"ally","directed":true,"weight":3},
-        {"from":"엘르아살","to":"여호수아","label":"함께 섬긴 이","kind":"ally","directed":false,"weight":1}
+        {"from":"여호수아","to":"이스라엘 자손","label":"언약을 세운 지도자","kind":"ally","directed":true,"weight":3,"verses":"15, 25","note":"여호수아가 너희가 섬길 자를 오늘 택하라, 나와 내 집은 여호와를 섬기겠다 하고 세겜에서 언약을 세웠어요."},
+        {"from":"이스라엘 자손","to":"하나님","label":"섬기기로 한 백성","kind":"ally","directed":true,"weight":3,"verses":"16-18, 24","note":"백성이 우리가 결코 하나님을 버리지 않고 그분만 섬기며 그 목소리를 듣겠다고 대답했어요."},
+        {"from":"엘르아살","to":"여호수아","label":"함께 섬긴 이","kind":"ally","directed":false,"weight":1,"verses":"33","note":"여호수아가 죽은 뒤 함께 섬기던 아론의 아들 엘르아살도 죽어 아들 비느하스의 산에 장사되었어요."}
       ],
       "places": [
         {"name":"세겜","where":"에브라임 산지, 그리심과 에발 사이","what":"언약을 새롭게 하고 요셉의 뼈를 묻은 곳","weight":3},
