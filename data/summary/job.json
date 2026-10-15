@@ -25,12 +25,12 @@
         {"name":"살아남은 종들","role":"재앙 소식을 전한 이들","weight":1}
       ],
       "rels": [
-        {"from":"사탄","to":"욥","label":"고발하고 침","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"경외하는 종","kind":"ally","directed":true,"weight":3},
-        {"from":"사탄","to":"하나님","label":"허락을 구함","kind":"other","directed":true,"weight":2},
-        {"from":"욥","to":"욥의 자녀들","label":"아버지","kind":"family","directed":true,"weight":1},
-        {"from":"스바 사람","to":"욥","label":"약탈한 무리","kind":"conflict","directed":true,"weight":1},
-        {"from":"살아남은 종들","to":"욥","label":"소식 전한 종","kind":"ally","directed":true,"weight":1}
+        {"from":"사탄","to":"욥","label":"고발하고 침","kind":"conflict","directed":true,"weight":3,"verses":"9-11","note":"사탄이 욥이 어찌 까닭 없이 하나님을 경외하겠느냐, 가진 것을 치시면 주를 욕하리라고 고발했어요."},
+        {"from":"욥","to":"하나님","label":"경외하는 종","kind":"ally","directed":true,"weight":3,"verses":"1, 20-22","note":"욥은 온전하고 정직하여 하나님을 경외했고, 모든 것을 잃고도 주신 이도 여호와시요 거두신 이도 여호와시라며 경배했어요."},
+        {"from":"사탄","to":"하나님","label":"허락을 구함","kind":"other","directed":true,"weight":2,"verses":"12","note":"하나님이 그의 소유를 네 손에 맡기되 그의 몸에는 손대지 말라고 허락하셨어요."},
+        {"from":"욥","to":"욥의 자녀들","label":"아버지","kind":"family","directed":true,"weight":1,"verses":"5","note":"욥은 자녀들이 잔치한 뒤 혹시 마음으로 죄를 지었을까 하여 아침마다 번제를 드렸어요."},
+        {"from":"스바 사람","to":"욥","label":"약탈한 무리","kind":"conflict","directed":true,"weight":1,"verses":"15","note":"스바 사람들이 소와 나귀를 빼앗고 종들을 죽였어요."},
+        {"from":"살아남은 종들","to":"욥","label":"소식 전한 종","kind":"ally","directed":true,"weight":1,"verses":"14-19","note":"종들이 잇달아 달려와 가축과 자녀들을 잃었다는 소식을 전했어요."}
       ],
       "places": [
         {"name":"우스","where":"가나안 동쪽, 에돔이나 하우란 쪽으로 봄","what":"욥이 살던 땅","weight":2}
@@ -55,12 +55,12 @@
         {"name":"소발","role":"나아마 사람 친구","weight":2}
       ],
       "rels": [
-        {"from":"사탄","to":"욥","label":"몸을 친 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥의 아내","to":"욥","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"엘리바스","to":"욥","label":"위로하러 온 친구","kind":"ally","directed":true,"weight":2},
-        {"from":"빌닷","to":"엘리바스","label":"함께 온 친구","kind":"ally","directed":false,"weight":1},
-        {"from":"소발","to":"엘리바스","label":"함께 온 친구","kind":"ally","directed":false,"weight":1},
-        {"from":"하나님","to":"사탄","label":"한계 정하신 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"사탄","to":"욥","label":"몸을 친 자","kind":"conflict","directed":true,"weight":3,"verses":"7","note":"사탄이 욥을 쳐서 발바닥부터 정수리까지 악성 종기가 나게 했어요."},
+        {"from":"욥의 아내","to":"욥","label":"아내","kind":"family","directed":true,"weight":2,"verses":"9-10","note":"아내가 하나님을 욕하고 죽으라 하자 욥은 우리가 하나님께 복을 받았으니 화도 받지 않겠느냐고 했어요."},
+        {"from":"엘리바스","to":"욥","label":"위로하러 온 친구","kind":"ally","directed":true,"weight":2,"verses":"11-13","note":"욥의 세 친구가 위로하러 와서 그 고통을 보고 칠 일 밤낮을 아무 말도 못 하고 함께 앉아 있었어요."},
+        {"from":"빌닷","to":"엘리바스","label":"함께 온 친구","kind":"ally","directed":false,"weight":1,"verses":"11","note":"수아 사람 빌닷은 엘리바스와 약속하고 함께 욥을 찾아왔어요."},
+        {"from":"소발","to":"엘리바스","label":"함께 온 친구","kind":"ally","directed":false,"weight":1,"verses":"11","note":"나아마 사람 소발도 함께 위로하러 왔어요."},
+        {"from":"하나님","to":"사탄","label":"한계 정하신 분","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"하나님이 그를 네 손에 맡기되 그의 생명은 해하지 말라고 한계를 정하셨어요."}
       ],
       "places": [
         {"name":"재 가운데","where":"성 밖 잿더미","what":"욥이 질그릇 조각으로 몸을 긁은 곳","weight":2},
@@ -81,7 +81,7 @@
         {"name":"하나님","role":"욥이 질문을 던진 분","weight":2}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"탄식하며 물음","kind":"other","directed":true,"weight":3}
+        {"from":"욥","to":"하나님","label":"탄식하며 물음","kind":"other","directed":true,"weight":3,"verses":"1, 11, 20-23","note":"욥이 입을 열어 자기 생일을 저주하며 어찌하여 고난당하는 자에게 빛을 주셨냐고 탄식했어요."}
       ],
       "places": [
 
@@ -103,8 +103,8 @@
         {"name":"하나님","role":"사람보다 의로우신 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리바스","to":"욥","label":"책망한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"영","to":"엘리바스","label":"말을 들려준 이","kind":"other","directed":true,"weight":1}
+        {"from":"엘리바스","to":"욥","label":"책망한 친구","kind":"conflict","directed":true,"weight":3,"verses":"7-8","note":"엘리바스가 죄 없이 망한 자가 누구냐, 악을 심는 자가 그대로 거둔다며 욥을 은근히 책망했어요."},
+        {"from":"영","to":"엘리바스","label":"말을 들려준 이","kind":"other","directed":true,"weight":1,"verses":"12-17","note":"엘리바스는 밤에 한 영이 지나가며 사람이 어찌 하나님보다 의롭겠느냐고 속삭였다고 했어요."}
       ],
       "places": [
 
@@ -124,8 +124,8 @@
         {"name":"하나님","role":"아프게 하시다 싸매시는 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리바스","to":"욥","label":"권면한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"욥","label":"징계하신다 함","kind":"other","directed":true,"weight":2}
+        {"from":"엘리바스","to":"욥","label":"권면한 친구","kind":"conflict","directed":true,"weight":3,"verses":"8, 17","note":"엘리바스는 나라면 하나님께 구하겠다며 하나님께 징계받는 자는 복이 있다고 권면했어요."},
+        {"from":"하나님","to":"욥","label":"징계하신다 함","kind":"other","directed":true,"weight":2,"verses":"17-18","note":"엘리바스는 하나님이 아프게 하시다가 싸매시고 상하게 하시다가 고치신다고 했어요."}
       ],
       "places": [
 
@@ -147,8 +147,8 @@
         {"name":"하나님","role":"화살을 쏘셨다고 느낀 분","weight":2}
       ],
       "rels": [
-        {"from":"욥","to":"엘리바스","label":"서운한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"끊어 주길 구함","kind":"other","directed":true,"weight":2}
+        {"from":"욥","to":"엘리바스","label":"서운한 친구","kind":"conflict","directed":true,"weight":3,"verses":"14-15, 24","note":"욥은 친구들이 시냇물처럼 변덕스럽다며, 내가 무엇을 잘못했는지 가르쳐 주면 잠잠하겠다고 서운해했어요."},
+        {"from":"욥","to":"하나님","label":"끊어 주길 구함","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"욥은 하나님이 나를 멸하시기를 기뻐하여 손을 들어 끊어 주시기를 구했어요."}
       ],
       "places": [
         {"name":"데마와 스바","where":"아라비아 사막의 대상 길","what":"물을 찾던 대상들이 실망한 길","weight":1}
@@ -168,7 +168,7 @@
         {"name":"하나님","role":"사람을 감찰하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"따져 물은 이","kind":"other","directed":true,"weight":3}
+        {"from":"욥","to":"하나님","label":"따져 물은 이","kind":"other","directed":true,"weight":3,"verses":"17-21","note":"욥이 사람이 무엇이기에 크게 여기시고 아침마다 시험하시나요, 어찌 내 허물을 사하지 않으시나요 하고 따져 물었어요."}
       ],
       "places": [
 
@@ -190,8 +190,8 @@
         {"name":"하나님","role":"정의를 굽게 하지 않으시는 분","weight":2}
       ],
       "rels": [
-        {"from":"빌닷","to":"욥","label":"책망한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥의 자녀들","to":"욥","label":"자녀","kind":"family","directed":true,"weight":1}
+        {"from":"빌닷","to":"욥","label":"책망한 친구","kind":"conflict","directed":true,"weight":3,"verses":"2-6","note":"빌닷이 하나님이 어찌 정의를 굽게 하시겠냐며, 네가 청결하고 정직하면 반드시 너를 돌보시리라고 책망했어요."},
+        {"from":"욥의 자녀들","to":"욥","label":"자녀","kind":"family","directed":true,"weight":1,"verses":"4","note":"빌닷은 네 자녀들이 죄를 지었기에 그 죄에 버려두신 것이라고 상처 주는 말을 했어요."}
       ],
       "places": [
 
@@ -212,8 +212,8 @@
         {"name":"하나님","role":"산과 별을 지으신 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"다툴 수 없는 이","kind":"other","directed":true,"weight":3},
-        {"from":"욥","to":"빌닷","label":"답한 친구","kind":"other","directed":true,"weight":1}
+        {"from":"욥","to":"하나님","label":"다툴 수 없는 이","kind":"other","directed":true,"weight":3,"verses":"2-3, 32-33","note":"욥은 사람이 어찌 하나님 앞에서 의로우랴, 우리 사이에 손을 얹을 판결자가 없다고 했어요."},
+        {"from":"욥","to":"빌닷","label":"답한 친구","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"욥이 빌닷에게 그 말이 옳은 줄 나도 알지만 사람이 하나님과 다툴 수 없다고 대답했어요."}
       ],
       "places": [
 
@@ -233,8 +233,8 @@
         {"name":"하나님","role":"욥을 빚으신 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"호소한 피조물","kind":"other","directed":true,"weight":3},
-        {"from":"하나님","to":"욥","label":"빚으신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"욥","to":"하나님","label":"호소한 피조물","kind":"other","directed":true,"weight":3,"verses":"2-3","note":"욥이 나를 정죄하지 마시고 무슨 까닭으로 나와 다투시는지 알게 해 달라고 호소했어요."},
+        {"from":"하나님","to":"욥","label":"빚으신 분","kind":"ally","directed":true,"weight":2,"verses":"8-12","note":"욥은 주의 손이 나를 빚으시고 생명과 은혜를 주셨는데 이제 나를 멸하시냐고 했어요."}
       ],
       "places": [
 
@@ -255,7 +255,7 @@
         {"name":"하나님","role":"측량할 수 없는 분","weight":2}
       ],
       "rels": [
-        {"from":"소발","to":"욥","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3}
+        {"from":"소발","to":"욥","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3,"verses":"2-6","note":"소발이 말이 많은 자가 어찌 의롭겠냐며, 하나님이 네 죄보다 가볍게 벌하신 줄 알라고 꾸짖었어요."}
       ],
       "places": [
 
@@ -276,8 +276,8 @@
         {"name":"하나님","role":"지혜와 권능을 가지신 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"반박한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"주권을 인정함","kind":"other","directed":true,"weight":2}
+        {"from":"욥","to":"세 친구","label":"반박한 친구","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"욥이 너희만 참으로 백성이냐, 나도 너희만 못하지 않다고 반박했어요."},
+        {"from":"욥","to":"하나님","label":"주권을 인정함","kind":"other","directed":true,"weight":2,"verses":"9-10","note":"욥은 모든 생물의 생명과 사람의 영이 다 하나님의 손에 있다고 인정했어요."}
       ],
       "places": [
 
@@ -298,8 +298,8 @@
         {"name":"하나님","role":"욥이 변론하기 원한 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"변론하려는 이","kind":"other","directed":true,"weight":3}
+        {"from":"욥","to":"세 친구","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3,"verses":"4-5","note":"욥이 너희는 거짓말을 지어내는 자요 쓸모없는 의원이니 차라리 잠잠하라고 꾸짖었어요."},
+        {"from":"욥","to":"하나님","label":"변론하려는 이","kind":"other","directed":true,"weight":3,"verses":"3, 15","note":"욥은 전능자에게 말하고 하나님과 변론하기를 원한다며 그가 나를 죽이셔도 그를 의지하겠다고 했어요."}
       ],
       "places": [
 
@@ -320,7 +320,7 @@
         {"name":"하나님","role":"사람의 날을 정하신 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"기억해 달라 함","kind":"other","directed":true,"weight":3}
+        {"from":"욥","to":"하나님","label":"기억해 달라 함","kind":"other","directed":true,"weight":3,"verses":"13-15","note":"욥이 주의 진노가 지나기까지 나를 숨기셨다가 기한을 정해 나를 기억해 달라고 했어요."}
       ],
       "places": [
 
@@ -341,7 +341,7 @@
         {"name":"하나님","role":"하늘보다 거룩하신 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리바스","to":"욥","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3}
+        {"from":"엘리바스","to":"욥","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":3,"verses":"4-6","note":"엘리바스가 네 입이 네 죄를 드러낸다며 너는 하나님 경외하는 일을 그치게 한다고 꾸짖었어요."}
       ],
       "places": [
 
@@ -362,8 +362,8 @@
         {"name":"하나님","role":"욥이 고통 중에 바라본 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":2},
-        {"from":"욥","to":"하나님","label":"증인을 바람","kind":"other","directed":true,"weight":3}
+        {"from":"욥","to":"세 친구","label":"꾸짖은 친구","kind":"conflict","directed":true,"weight":2,"verses":"2-4","note":"욥이 너희는 다 번뇌하게 하는 위로자라며 내가 너희 처지였다면 그렇게 하지 않았으리라고 했어요."},
+        {"from":"욥","to":"하나님","label":"증인을 바람","kind":"other","directed":true,"weight":3,"verses":"19","note":"욥은 지금 나의 증인이 하늘에 계시고 나의 보증이 높은 데 계신다고 했어요."}
       ],
       "places": [
 
@@ -384,8 +384,8 @@
         {"name":"하나님","role":"보증이 되어 주실 분","weight":2}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"보증을 구함","kind":"other","directed":true,"weight":3},
-        {"from":"욥","to":"세 친구","label":"실망한 친구","kind":"conflict","directed":true,"weight":2}
+        {"from":"욥","to":"하나님","label":"보증을 구함","kind":"other","directed":true,"weight":3,"verses":"3","note":"욥이 주께서 나를 위해 친히 보증이 되어 주소서, 누가 나와 손을 잡겠느냐고 했어요."},
+        {"from":"욥","to":"세 친구","label":"실망한 친구","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"욥은 너희 중에 지혜자가 하나도 없다며 실망했어요."}
       ],
       "places": [
 
@@ -405,7 +405,7 @@
         {"name":"욥","role":"악인처럼 묘사된 사람","weight":2}
       ],
       "rels": [
-        {"from":"빌닷","to":"욥","label":"겨냥한 친구","kind":"conflict","directed":true,"weight":3}
+        {"from":"빌닷","to":"욥","label":"겨냥한 친구","kind":"conflict","directed":true,"weight":3,"verses":"4-5, 21","note":"빌닷이 악인의 빛은 꺼지고 하나님을 알지 못하는 자의 처소가 이러하다며 욥을 겨냥했어요."}
       ],
       "places": [
 
@@ -429,10 +429,10 @@
         {"name":"하나님","role":"욥이 보게 될 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"호소한 친구","kind":"conflict","directed":true,"weight":2},
-        {"from":"욥의 아내","to":"욥","label":"멀어진 아내","kind":"family","directed":true,"weight":1},
-        {"from":"대속자","to":"욥","label":"살아 계신 구원자","kind":"ally","directed":true,"weight":3},
-        {"from":"형제와 친척","to":"욥","label":"떠난 가족","kind":"family","directed":true,"weight":1}
+        {"from":"욥","to":"세 친구","label":"호소한 친구","kind":"conflict","directed":true,"weight":2,"verses":"21-22","note":"욥이 나의 친구야 나를 불쌍히 여기라, 하나님의 손이 나를 치셨다고 호소했어요."},
+        {"from":"욥의 아내","to":"욥","label":"멀어진 아내","kind":"family","directed":true,"weight":1,"verses":"17","note":"욥은 내 아내도 내 숨결을 싫어한다고 했어요."},
+        {"from":"대속자","to":"욥","label":"살아 계신 구원자","kind":"ally","directed":true,"weight":3,"verses":"25-27","note":"욥이 나의 대속자가 살아 계시니 마침내 그가 땅 위에 서실 것이며 내 눈으로 하나님을 보리라고 고백했어요."},
+        {"from":"형제와 친척","to":"욥","label":"떠난 가족","kind":"family","directed":true,"weight":1,"verses":"13-14","note":"형제들은 멀리 떠나고 친척들은 나를 버렸다고 했어요."}
       ],
       "places": [
 
@@ -453,7 +453,7 @@
         {"name":"하나님","role":"악인에게 진노하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"소발","to":"욥","label":"겨냥한 친구","kind":"conflict","directed":true,"weight":3}
+        {"from":"소발","to":"욥","label":"겨냥한 친구","kind":"conflict","directed":true,"weight":3,"verses":"4-5, 29","note":"소발이 악인의 이김은 잠깐이요 경건하지 않은 자의 즐거움은 잠시라며 욥을 겨냥했어요."}
       ],
       "places": [
 
@@ -476,8 +476,8 @@
         {"name":"하나님","role":"악인도 살려 두시는 분","weight":1}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"반박한 친구","kind":"conflict","directed":true,"weight":3},
-        {"from":"악인","to":"하나님","label":"떠나라 한 자","kind":"conflict","directed":true,"weight":2}
+        {"from":"욥","to":"세 친구","label":"반박한 친구","kind":"conflict","directed":true,"weight":3,"verses":"7, 34","note":"욥은 어찌하여 악인이 생존하고 번성하냐며, 너희의 대답은 거짓일 뿐이라고 반박했어요."},
+        {"from":"악인","to":"하나님","label":"떠나라 한 자","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"악인은 하나님께 우리를 떠나소서, 전능자가 누구이기에 섬기겠느냐고 말한다고 했어요."}
       ],
       "places": [
 
@@ -498,7 +498,7 @@
         {"name":"하나님","role":"모두 보시는 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리바스","to":"욥","label":"고발한 친구","kind":"conflict","directed":true,"weight":3}
+        {"from":"엘리바스","to":"욥","label":"고발한 친구","kind":"conflict","directed":true,"weight":3,"verses":"5-9","note":"엘리바스가 네 악이 크지 않으냐며 헐벗은 자의 옷을 벗기고 과부를 빈손으로 보냈다고 근거 없이 고발했어요."}
       ],
       "places": [
 
@@ -518,8 +518,8 @@
         {"name":"하나님","role":"욥의 길을 아시는 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"찾아 붙든 이","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"욥","label":"단련하시는 분","kind":"ally","directed":true,"weight":2}
+        {"from":"욥","to":"하나님","label":"찾아 붙든 이","kind":"ally","directed":true,"weight":3,"verses":"3, 8-9","note":"욥은 하나님을 만날 곳을 알면 좋겠다며 앞으로 가도 뒤로 가도 뵐 수 없다고 했어요."},
+        {"from":"하나님","to":"욥","label":"단련하시는 분","kind":"ally","directed":true,"weight":2,"verses":"10","note":"욥은 그러나 내가 가는 길을 그가 아시나니 그가 나를 단련하신 후에는 순금같이 되리라고 했어요."}
       ],
       "places": [
 
@@ -541,8 +541,8 @@
         {"name":"하나님","role":"때를 정하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"악인","to":"가난한 자들","label":"짓밟는 자들","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"따져 물은 이","kind":"other","directed":true,"weight":2}
+        {"from":"악인","to":"가난한 자들","label":"짓밟는 자들","kind":"conflict","directed":true,"weight":3,"verses":"3-4, 9","note":"악인들은 고아의 나귀를 빼앗고 과부의 소를 잡으며 가난한 자를 길에서 밀어낸다고 했어요."},
+        {"from":"욥","to":"하나님","label":"따져 물은 이","kind":"other","directed":true,"weight":2,"verses":"1, 12","note":"욥은 전능자께서는 어찌하여 때를 정하지 않으시며, 억울한 자의 부르짖음에도 잠잠하시냐고 물었어요."}
       ],
       "places": [
 
@@ -562,7 +562,7 @@
         {"name":"하나님","role":"권세와 위엄의 주","weight":3}
       ],
       "rels": [
-        {"from":"빌닷","to":"욥","label":"답한 친구","kind":"conflict","directed":true,"weight":2}
+        {"from":"빌닷","to":"욥","label":"답한 친구","kind":"conflict","directed":true,"weight":2,"verses":"4-6","note":"빌닷이 사람이 어찌 하나님 앞에서 의롭겠느냐, 구더기 같은 사람이라며 짧게 대답했어요."}
       ],
       "places": [
 
@@ -583,8 +583,8 @@
         {"name":"하나님","role":"땅을 허공에 다신 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"빌닷","label":"비꼰 친구","kind":"conflict","directed":true,"weight":2},
-        {"from":"욥","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2}
+        {"from":"욥","to":"빌닷","label":"비꼰 친구","kind":"conflict","directed":true,"weight":2,"verses":"2-4","note":"욥이 힘없는 자를 참 잘도 도왔구나 하며 빌닷의 말을 비꼬았어요."},
+        {"from":"욥","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2,"verses":"7, 14","note":"욥은 땅을 허공에 매다시는 하나님의 능력을 찬양하며 이것은 그의 길의 작은 부분일 뿐이라고 했어요."}
       ],
       "places": [
 
@@ -606,9 +606,9 @@
         {"name":"하나님","role":"욥이 맹세한 분","weight":2}
       ],
       "rels": [
-        {"from":"욥","to":"세 친구","label":"인정하지 않은 친구","kind":"conflict","directed":true,"weight":2},
-        {"from":"욥","to":"하나님","label":"맹세한 이","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"악인","label":"몫을 정하신 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"욥","to":"세 친구","label":"인정하지 않은 친구","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"욥은 나는 결코 너희를 옳다 하지 않겠고 죽기 전에는 온전함을 버리지 않겠다고 했어요."},
+        {"from":"욥","to":"하나님","label":"맹세한 이","kind":"other","directed":true,"weight":2,"verses":"2-4","note":"욥은 살아 계신 하나님을 두고 내 입술이 불의를 말하지 않겠다고 맹세했어요."},
+        {"from":"하나님","to":"악인","label":"몫을 정하신 분","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"욥은 악인이 하나님께 받을 분깃과 포악자가 받을 산업이 따로 있다고 했어요."}
       ],
       "places": [
 
@@ -628,7 +628,7 @@
         {"name":"하나님","role":"지혜의 길을 아시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"사람","label":"지혜를 알려 주심","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"사람","label":"지혜를 알려 주심","kind":"ally","directed":true,"weight":3,"verses":"23, 28","note":"하나님만이 지혜의 길을 아시고, 사람에게 주를 경외함이 지혜요 악을 떠남이 명철이라고 하셨어요."}
       ],
       "places": [
         {"name":"광산","where":"땅속 깊은 곳","what":"사람이 은과 금을 캐는 곳","weight":1},
@@ -652,9 +652,9 @@
         {"name":"성문의 사람들","role":"욥을 존중한 이들","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"욥","label":"보호하시던 분","kind":"ally","directed":true,"weight":3},
-        {"from":"욥","to":"가난한 자와 고아","label":"도와준 이","kind":"ally","directed":true,"weight":2},
-        {"from":"성문의 사람들","to":"욥","label":"존중한 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"하나님","to":"욥","label":"보호하시던 분","kind":"ally","directed":true,"weight":3,"verses":"2-5","note":"욥은 하나님이 나를 지키시고 그 등불이 내 머리에 비치던 지난날을 그리워했어요."},
+        {"from":"욥","to":"가난한 자와 고아","label":"도와준 이","kind":"ally","directed":true,"weight":2,"verses":"12-16","note":"욥은 부르짖는 가난한 자와 도울 자 없는 고아를 건졌고 맹인의 눈과 다리 저는 자의 발이 되었다고 했어요."},
+        {"from":"성문의 사람들","to":"욥","label":"존중한 이들","kind":"ally","directed":true,"weight":1,"verses":"7-10","note":"예전에 욥이 성문에 나가면 젊은이들은 숨고 노인들은 일어서며 지도자들은 말을 멈췄다고 했어요."}
       ],
       "places": [
         {"name":"성문","where":"성읍의 재판과 모임 자리","what":"욥이 존경받던 곳","weight":2}
@@ -675,8 +675,8 @@
         {"name":"하나님","role":"응답하지 않으시는 듯한 분","weight":2}
       ],
       "rels": [
-        {"from":"조롱하는 젊은이들","to":"욥","label":"조롱한 자들","kind":"conflict","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"부르짖은 이","kind":"other","directed":true,"weight":2}
+        {"from":"조롱하는 젊은이들","to":"욥","label":"조롱한 자들","kind":"conflict","directed":true,"weight":3,"verses":"1, 9","note":"이제는 나보다 젊은 자들, 그 아비들도 업신여기던 자들이 나를 비웃고 노래로 조롱한다고 했어요."},
+        {"from":"욥","to":"하나님","label":"부르짖은 이","kind":"other","directed":true,"weight":2,"verses":"20","note":"욥이 주께 부르짖어도 대답하지 않으시고 서 있어도 굽어보지 않으신다고 탄식했어요."}
       ],
       "places": [
 
@@ -699,9 +699,9 @@
         {"name":"하나님","role":"욥이 대답을 구한 분","weight":3}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"대답을 구한 이","kind":"other","directed":true,"weight":3},
-        {"from":"욥","to":"종들","label":"존중한 주인","kind":"ally","directed":true,"weight":1},
-        {"from":"욥","to":"가난한 자와 과부","label":"돌본 이","kind":"ally","directed":true,"weight":1}
+        {"from":"욥","to":"하나님","label":"대답을 구한 이","kind":"other","directed":true,"weight":3,"verses":"35","note":"욥은 나의 변명을 들어 줄 자가 있었으면 좋겠다며 전능자가 대답하시기를 원한다고 했어요."},
+        {"from":"욥","to":"종들","label":"존중한 주인","kind":"ally","directed":true,"weight":1,"verses":"13-15","note":"욥은 종들이 내게 원망할 때 그들의 권리를 무시하지 않았으니 같은 분이 우리를 지으셨다고 했어요."},
+        {"from":"욥","to":"가난한 자와 과부","label":"돌본 이","kind":"ally","directed":true,"weight":1,"verses":"16-20","note":"욥은 가난한 자의 소원을 막지 않고 과부의 눈을 실망시키지 않았다고 했어요."}
       ],
       "places": [
 
@@ -723,9 +723,9 @@
         {"name":"바라겔","role":"엘리후의 아버지","weight":1}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"화가 난 젊은이","kind":"conflict","directed":true,"weight":3},
-        {"from":"엘리후","to":"세 친구","label":"화가 난 젊은이","kind":"conflict","directed":true,"weight":2},
-        {"from":"엘리후","to":"바라겔","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"엘리후","to":"욥","label":"화가 난 젊은이","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"엘리후는 욥이 하나님보다 자기가 의롭다 하므로 화를 냈어요."},
+        {"from":"엘리후","to":"세 친구","label":"화가 난 젊은이","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"엘리후는 세 친구가 대답할 말을 찾지 못하면서 욥을 정죄했으므로 그들에게도 화를 냈어요."},
+        {"from":"엘리후","to":"바라겔","label":"아들","kind":"family","directed":true,"weight":1,"verses":"2","note":"엘리후는 부스 사람 바라겔의 아들이에요."}
       ],
       "places": [
 
@@ -747,9 +747,9 @@
         {"name":"하나님","role":"여러 방법으로 말씀하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"깨우치려 한 이","kind":"conflict","directed":true,"weight":3},
-        {"from":"중보자","to":"욥","label":"변호할 이","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"욥","label":"깨우치시는 분","kind":"ally","directed":true,"weight":2}
+        {"from":"엘리후","to":"욥","label":"깨우치려 한 이","kind":"conflict","directed":true,"weight":3,"verses":"8-12","note":"엘리후가 욥에게 나는 깨끗하다는 당신의 말은 옳지 않다며 하나님은 사람보다 크시다고 깨우치려 했어요."},
+        {"from":"중보자","to":"욥","label":"변호할 이","kind":"ally","directed":true,"weight":2,"verses":"23-24","note":"엘리후는 천사 가운데 한 중보자가 있어 그를 구덩이에서 건지라 하시면 하나님이 은혜를 베푸신다고 했어요."},
+        {"from":"하나님","to":"욥","label":"깨우치시는 분","kind":"ally","directed":true,"weight":2,"verses":"14-17","note":"엘리후는 하나님이 꿈과 환상으로 사람의 귀를 여시고 교만을 막으신다고 했어요."}
       ],
       "places": [
 
@@ -772,8 +772,8 @@
         {"name":"하나님","role":"결코 악을 행치 않으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"꾸짖은 젊은이","kind":"conflict","directed":true,"weight":3},
-        {"from":"엘리후","to":"지혜 있는 자들","label":"판단을 청함","kind":"other","directed":true,"weight":1}
+        {"from":"엘리후","to":"욥","label":"꾸짖은 젊은이","kind":"conflict","directed":true,"weight":3,"verses":"5-9, 35","note":"엘리후는 욥이 하나님이 내 의를 빼앗으셨다 했지만 지식 없이 말한다고 꾸짖었어요."},
+        {"from":"엘리후","to":"지혜 있는 자들","label":"판단을 청함","kind":"other","directed":true,"weight":1,"verses":"2, 10","note":"엘리후가 지혜 있는 자들아 내 말을 들으라며 하나님은 결코 악을 행하지 않으신다고 판단을 청했어요."}
       ],
       "places": [
 
@@ -795,8 +795,8 @@
         {"name":"하나님","role":"하늘보다 높으신 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"꾸짖은 젊은이","kind":"conflict","directed":true,"weight":3},
-        {"from":"압제받는 사람들","to":"하나님","label":"찾지 않은 이들","kind":"other","directed":true,"weight":1}
+        {"from":"엘리후","to":"욥","label":"꾸짖은 젊은이","kind":"conflict","directed":true,"weight":3,"verses":"2-3, 16","note":"엘리후는 욥이 내 의가 하나님보다 낫다 한다며 헛되이 입을 열어 지식 없는 말을 한다고 했어요."},
+        {"from":"압제받는 사람들","to":"하나님","label":"찾지 않은 이들","kind":"other","directed":true,"weight":1,"verses":"9-10","note":"압제받는 사람들이 부르짖으면서도 나를 지으신 하나님은 어디 계시냐고 묻지 않는다고 했어요."}
       ],
       "places": [
 
@@ -818,8 +818,8 @@
         {"name":"하나님","role":"고난으로 가르치시는 분","weight":3}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"권면한 젊은이","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"욥","label":"귀를 여시는 분","kind":"ally","directed":true,"weight":2}
+        {"from":"엘리후","to":"욥","label":"권면한 젊은이","kind":"ally","directed":true,"weight":2,"verses":"2, 21","note":"엘리후가 조금만 참으라 하나님을 위해 할 말이 있다며 악을 돌아보지 말라고 권면했어요."},
+        {"from":"하나님","to":"욥","label":"귀를 여시는 분","kind":"ally","directed":true,"weight":2,"verses":"15","note":"하나님은 곤고한 자를 그 곤고 가운데서 구원하시며 학대받을 때 그의 귀를 여신다고 했어요."}
       ],
       "places": [
 
@@ -841,8 +841,8 @@
         {"name":"하나님","role":"천둥과 눈을 다스리시는 분","weight":3}
       ],
       "rels": [
-        {"from":"엘리후","to":"욥","label":"권면한 젊은이","kind":"ally","directed":true,"weight":2},
-        {"from":"엘리후","to":"하나님","label":"경외한 이","kind":"ally","directed":true,"weight":2}
+        {"from":"엘리후","to":"욥","label":"권면한 젊은이","kind":"ally","directed":true,"weight":2,"verses":"14","note":"엘리후가 욥이여 가만히 서서 하나님의 오묘한 일을 깨달으라고 권면했어요."},
+        {"from":"엘리후","to":"하나님","label":"경외한 이","kind":"ally","directed":true,"weight":2,"verses":"23-24","note":"엘리후는 전능자는 권능이 지극히 크시니 사람들은 그를 경외할 수밖에 없다고 했어요."}
       ],
       "places": [
 
@@ -863,7 +863,7 @@
         {"name":"욥","role":"질문 앞에 선 사람","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"욥","label":"질문하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"욥","label":"질문하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-4","note":"하나님이 폭풍 가운데서 욥에게 내가 땅의 기초를 놓을 때 네가 어디 있었느냐고 물으셨어요."}
       ],
       "places": [
         {"name":"폭풍우","where":"하나님이 말씀하신 자리","what":"하나님이 욥에게 나타나신 곳","weight":2},
@@ -885,7 +885,7 @@
         {"name":"욥","role":"질문을 들은 사람","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"욥","label":"질문하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"욥","label":"질문하신 분","kind":"ally","directed":true,"weight":3,"verses":"1, 19, 26","note":"하나님은 산 염소의 새끼 낳는 때와 말의 힘과 매가 나는 것을 네가 아느냐고 계속 물으셨어요."}
       ],
       "places": [
 
@@ -906,9 +906,9 @@
         {"name":"베헤못","role":"하나님이 지으신 강한 짐승","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"욥","label":"다시 물으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"욥","to":"하나님","label":"입을 가린 이","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"베헤못","label":"지으신 분","kind":"other","directed":true,"weight":1}
+        {"from":"하나님","to":"욥","label":"다시 물으신 분","kind":"ally","directed":true,"weight":3,"verses":"2, 8","note":"하나님이 트집 잡는 자가 전능자와 다투겠느냐, 네가 내 공의를 부인하려느냐고 다시 물으셨어요."},
+        {"from":"욥","to":"하나님","label":"입을 가린 이","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"욥이 나는 비천하오니 무엇이라 대답하리이까 손으로 내 입을 가릴 뿐이라고 했어요."},
+        {"from":"하나님","to":"베헤못","label":"지으신 분","kind":"other","directed":true,"weight":1,"verses":"15-19","note":"하나님은 너를 지은 것처럼 내가 베헤못도 지었다 하시며 그 큰 힘을 보여 주셨어요."}
       ],
       "places": [
 
@@ -929,8 +929,8 @@
         {"name":"리워야단","role":"누구도 길들일 수 없는 짐승","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"욥","label":"물으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"리워야단","label":"지으신 분","kind":"other","directed":true,"weight":2}
+        {"from":"하나님","to":"욥","label":"물으신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2, 11","note":"하나님이 네가 낚시로 리워야단을 끌어낼 수 있겠느냐, 천하에 있는 것이 다 내 것이라고 하셨어요."},
+        {"from":"하나님","to":"리워야단","label":"지으신 분","kind":"other","directed":true,"weight":2,"verses":"1, 33-34","note":"하나님은 아무도 당할 수 없는 리워야단을 지으셨고 그는 모든 교만한 자의 왕이라고 하셨어요."}
       ],
       "places": [
 
@@ -957,12 +957,12 @@
         {"name":"형제와 자매들","role":"찾아와 위로한 가족","weight":1}
       ],
       "rels": [
-        {"from":"욥","to":"하나님","label":"회개한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"엘리바스","label":"책망하신 분","kind":"conflict","directed":true,"weight":2},
-        {"from":"욥","to":"엘리바스","label":"기도해 준 친구","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"욥","label":"회복시키신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"여미마","to":"욥","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"형제와 자매들","to":"욥","label":"위로한 가족","kind":"family","directed":true,"weight":1}
+        {"from":"욥","to":"하나님","label":"회개한 종","kind":"ally","directed":true,"weight":3,"verses":"2-6","note":"욥이 내가 귀로만 듣던 주를 이제는 눈으로 뵙니다, 스스로 거두어들이고 티끌과 재 가운데서 회개한다고 했어요."},
+        {"from":"하나님","to":"엘리바스","label":"책망하신 분","kind":"conflict","directed":true,"weight":2,"verses":"7","note":"하나님이 엘리바스에게 너희가 나에 대해 말한 것이 내 종 욥의 말처럼 옳지 못하다고 노하셨어요."},
+        {"from":"욥","to":"엘리바스","label":"기도해 준 친구","kind":"ally","directed":true,"weight":3,"verses":"8-10","note":"욥이 친구들을 위해 기도하자 하나님이 욥의 기도를 받으시고 욥의 곤경을 돌이키셨어요."},
+        {"from":"하나님","to":"욥","label":"회복시키신 분","kind":"ally","directed":true,"weight":3,"verses":"10, 12","note":"하나님이 욥에게 이전 소유보다 갑절을 주시고 처음보다 나중에 더 복을 주셨어요."},
+        {"from":"여미마","to":"욥","label":"딸","kind":"family","directed":true,"weight":1,"verses":"14-15","note":"욥은 딸들의 이름을 여미마, 긋시아, 게렌합북이라 했고 그들처럼 아름다운 여자가 없었어요."},
+        {"from":"형제와 자매들","to":"욥","label":"위로한 가족","kind":"family","directed":true,"weight":1,"verses":"11","note":"형제자매와 이전에 알던 이들이 와서 함께 먹으며 그를 위로하고 금과 돈을 주었어요."}
       ],
       "places": [
         {"name":"우스","where":"욥이 살던 동방의 땅","what":"욥이 회복된 곳","weight":1}
