@@ -30,13 +30,13 @@
         {"from":"시몬","to":"게바","verses":"42","why":"예수께서 이름을 주심","note":"예수께서 시몬에게 게바라는 이름을 주셨으니 번역하면 베드로, 곧 반석이에요."}
       ],
       "rels": [
-        {"from":"요한","to":"예수","label":"어린 양이라 증언","kind":"ally","directed":true,"weight":3,"verses":"29, 34","note":"요한이 예수께서 오시는 것을 보고 보라 세상 죄를 지고 가는 하나님의 어린 양이로다 하며 이는 하나님의 아들이라고 증언했어요."},
-        {"from":"안드레","to":"게바","label":"형제","kind":"family","directed":false,"weight":2,"verses":"40-42","note":"안드레가 먼저 자기 형제 시몬을 찾아 우리가 메시야를 만났다 하고 예수께로 데려왔어요."},
+        {"from":"요한","to":"예수","label":"어린 양이라 증언","kind":"ally","directed":true,"weight":3,"verses":"29, 34","note":"요한은 다가오시는 예수님을 보고 세상 죄를 짊어지실 하나님의 어린 양이라고 소개했어요."},
+        {"from":"안드레","to":"게바","label":"형제","kind":"family","directed":false,"weight":2,"verses":"40-42","note":"안드레는 형 시몬을 찾아가 메시아를 만났다며 예수님께 데려왔어요."},
         {"from":"안드레","to":"예수","label":"따른 제자","kind":"ally","directed":true,"weight":2,"verses":"37-40","note":"요한의 두 제자가 그 말을 듣고 예수를 따라가 함께 거했는데 그중 하나가 안드레였어요."},
-        {"from":"예수","to":"게바","label":"이름을 주심","kind":"ally","directed":true,"weight":2,"verses":"42","note":"예수께서 시몬을 보시고 너는 요한의 아들 시몬이니 장차 게바라 하리라 하셨어요."},
+        {"from":"예수","to":"게바","label":"이름을 주심","kind":"ally","directed":true,"weight":2,"verses":"42","note":"예수님은 시몬을 보시고 앞으로 게바, 곧 반석이라 불릴 거라고 하셨어요."},
         {"from":"빌립","to":"나다나엘","label":"데려온 친구","kind":"ally","directed":true,"weight":2,"verses":"45-46","note":"빌립이 나다나엘에게 모세와 선지자들이 기록한 그이를 만났으니 나사렛 예수라 하고 와서 보라 했어요."},
-        {"from":"나다나엘","to":"예수","label":"임금이라 고백","kind":"ally","directed":true,"weight":2,"verses":"48-49","note":"무화과나무 아래 있을 때 보았다는 말씀에 나다나엘이 랍비여 당신은 하나님의 아들이시요 이스라엘의 임금이로소이다 했어요."},
-        {"from":"예수","to":"하나님","label":"독생자","kind":"family","directed":true,"weight":3,"verses":"14, 18","note":"말씀이 육신이 되어 거하셨고, 아버지 품속에 있는 독생하신 하나님이 그를 나타내셨어요."}
+        {"from":"나다나엘","to":"예수","label":"임금이라 고백","kind":"ally","directed":true,"weight":2,"verses":"48-49","note":"무화과나무 아래 있던 걸 보셨다는 말에 나다나엘은 하나님의 아들이시라고 고백했어요."},
+        {"from":"예수","to":"하나님","label":"독생자","kind":"family","directed":true,"weight":3,"verses":"14, 18","note":"말씀이신 예수님이 사람이 되어 우리 가운데 사시며 보이지 않는 아버지를 보여 주셨어요."}
       ],
       "places": [
         {"name":"베다니","where":"요단강 건너편","what":"요한이 세례를 준 곳","weight":2},
@@ -63,11 +63,11 @@
         {"name":"유대인들","role":"표적을 요구한 이들","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"예수의 어머니","label":"아들","kind":"family","directed":true,"weight":2,"verses":"3-4","note":"포도주가 떨어지자 어머니가 알리니 예수께서 여자여 나와 무슨 상관이 있나이까 내 때가 아직 이르지 아니하였나이다 하셨어요."},
-        {"from":"예수의 어머니","to":"하인들","label":"그대로 하라 함","kind":"ally","directed":true,"weight":2,"verses":"5","note":"예수의 어머니가 하인들에게 너희에게 무슨 말씀을 하시든지 그대로 하라 했어요."},
-        {"from":"제자들","to":"예수","label":"믿은 이들","kind":"ally","directed":true,"weight":2,"verses":"11","note":"예수께서 이 처음 표적을 갈릴리 가나에서 행하여 영광을 나타내시매 제자들이 그를 믿었어요."},
-        {"from":"예수","to":"장사하는 사람들","label":"내쫓으신 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"노끈으로 채찍을 만드사 양과 소를 성전에서 내쫓으시며 내 아버지의 집으로 장사하는 집을 만들지 말라 하셨어요."},
-        {"from":"유대인들","to":"예수","label":"표적을 요구","kind":"conflict","directed":true,"weight":2,"verses":"18-20","note":"유대인들이 네가 이런 일을 행하니 무슨 표적을 우리에게 보이겠느냐 하자 이 성전을 헐라 사흘 동안에 일으키리라 하셨어요."}
+        {"from":"예수","to":"예수의 어머니","label":"아들","kind":"family","directed":true,"weight":2,"verses":"3-4","note":"혼인 잔치에 포도주가 떨어졌다는 어머니 말에 예수님은 아직 내 때가 오지 않았다고 하셨어요."},
+        {"from":"예수의 어머니","to":"하인들","label":"그대로 하라 함","kind":"ally","directed":true,"weight":2,"verses":"5","note":"어머니 마리아는 하인들에게 그분이 시키는 대로 하라고 일렀어요."},
+        {"from":"제자들","to":"예수","label":"믿은 이들","kind":"ally","directed":true,"weight":2,"verses":"11","note":"가나에서 물을 포도주로 바꾼 첫 표적으로 영광을 드러내시자 제자들이 믿었어요."},
+        {"from":"예수","to":"장사하는 사람들","label":"내쫓으신 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"예수님은 끈으로 채찍을 만들어 장사꾼들을 쫓아내시며 아버지 집을 시장으로 만들지 말라 하셨어요."},
+        {"from":"유대인들","to":"예수","label":"표적을 요구","kind":"conflict","directed":true,"weight":2,"verses":"18-20","note":"무슨 권한이냐고 따지자 예수님은 이 성전을 헐면 사흘 만에 다시 세우겠다고 하셨어요."}
       ],
       "places": [
         {"name":"갈릴리 가나","where":"나사렛 북쪽 마을","what":"물이 포도주가 된 곳","weight":3},
@@ -95,11 +95,11 @@
         {"name":"하나님","role":"세상을 사랑하신 분","weight":3}
       ],
       "rels": [
-        {"from":"니고데모","to":"예수","label":"밤에 찾아옴","kind":"other","directed":true,"weight":3,"verses":"1-4","note":"바리새인 니고데모가 밤에 예수께 와서 질문했고 사람이 거듭나지 아니하면 하나님의 나라를 볼 수 없다는 말씀을 들었어요."},
-        {"from":"하나님","to":"예수","label":"독생자를 주심","kind":"family","directed":true,"weight":3,"verses":"16","note":"하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라고 해요."},
-        {"from":"요한","to":"예수","label":"신랑의 친구","kind":"ally","directed":true,"weight":2,"verses":"29-30","note":"신부를 취하는 자는 신랑이나 서서 신랑의 음성을 듣는 친구가 크게 기뻐하나니, 그는 흥하여야 하겠고 나는 쇠하여야 하리라 했어요."},
-        {"from":"요한의 제자들","to":"요한","label":"제자","kind":"ally","directed":true,"weight":1,"verses":"25-26","note":"요한의 제자들이 와서 랍비여 당신이 증언하던 이가 세례를 베풀매 사람이 다 그에게로 가더이다 했어요."},
-        {"from":"예수","to":"모세","label":"뱀처럼 들림","kind":"other","directed":true,"weight":1,"verses":"14","note":"모세가 광야에서 뱀을 든 것같이 인자도 들려야 하리니 그를 믿는 자마다 영생을 얻게 하려 하심이라고 하셨어요."}
+        {"from":"니고데모","to":"예수","label":"밤에 찾아옴","kind":"other","directed":true,"weight":3,"verses":"1-4","note":"밤에 찾아온 니고데모에게 예수님은 새로 태어나지 않으면 하나님 나라를 볼 수 없다고 하셨어요."},
+        {"from":"하나님","to":"예수","label":"독생자를 주심","kind":"family","directed":true,"weight":3,"verses":"16","note":"하나님은 세상을 너무 사랑하셔서 외아들을 주셨고, 그를 믿는 사람은 영원한 생명을 얻어요."},
+        {"from":"요한","to":"예수","label":"신랑의 친구","kind":"ally","directed":true,"weight":2,"verses":"29-30","note":"요한은 자신을 신랑의 친구에 빗대며, 그분은 커지고 자기는 작아져야 한다고 기뻐했어요."},
+        {"from":"요한의 제자들","to":"요한","label":"제자","kind":"ally","directed":true,"weight":1,"verses":"25-26","note":"요한의 제자들은 사람들이 다 예수님께 몰려간다며 서운해하며 알렸어요."},
+        {"from":"예수","to":"모세","label":"뱀처럼 들림","kind":"other","directed":true,"weight":1,"verses":"14","note":"모세가 광야에서 뱀을 높이 들었듯 예수님도 들려야 믿는 사람이 영생을 얻는대요."}
       ],
       "places": [
         {"name":"예루살렘","where":"유대의 수도","what":"니고데모가 찾아온 곳","weight":2},
@@ -127,10 +127,10 @@
         {"name":"하나님","role":"영이신 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"사마리아 여자","label":"생수를 주심","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"이 물을 마시는 자마다 다시 목마르려니와 내가 주는 물을 마시는 자는 영원히 목마르지 아니하리라고 하셨어요."},
-        {"from":"사마리아 여자","to":"사마리아인들","label":"와서 보라 함","kind":"ally","directed":true,"weight":2,"verses":"28-29","note":"여자가 물동이를 버려두고 동네에 들어가서 내가 행한 모든 일을 내게 말한 사람을 와서 보라 그는 그리스도가 아니냐 했어요."},
-        {"from":"사마리아인들","to":"예수","label":"구주로 믿음","kind":"ally","directed":true,"weight":2,"verses":"42","note":"그들이 여자에게 이제 우리가 믿는 것은 우리가 친히 듣고 그가 참으로 세상의 구주신 줄 앎이라 했어요."},
-        {"from":"왕의 신하","to":"예수","label":"간구한 아버지","kind":"ally","directed":true,"weight":2,"verses":"46-50","note":"왕의 신하가 내 아이가 죽기 전에 내려오소서 하자 가라 네 아들이 살아 있다 하시니 그가 말씀을 믿고 갔어요."},
+        {"from":"예수","to":"사마리아 여자","label":"생수를 주심","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"우물물은 마셔도 또 목마르지만 예수님이 주시는 물은 영원히 목마르지 않게 한대요."},
+        {"from":"사마리아 여자","to":"사마리아인들","label":"와서 보라 함","kind":"ally","directed":true,"weight":2,"verses":"28-29","note":"여인은 물동이도 두고 마을로 달려가 내 과거를 다 아는 분을 와서 보라고 외쳤어요."},
+        {"from":"사마리아인들","to":"예수","label":"구주로 믿음","kind":"ally","directed":true,"weight":2,"verses":"42","note":"마을 사람들은 직접 말씀을 듣고 나서 이분이 정말 세상의 구주시라고 믿었어요."},
+        {"from":"왕의 신하","to":"예수","label":"간구한 아버지","kind":"ally","directed":true,"weight":2,"verses":"46-50","note":"신하가 아들이 죽기 전에 와 달라 하자 예수님은 가라, 아들이 살았다 하셨고 그는 그 말씀을 믿었어요."},
         {"from":"신하의 아들","to":"왕의 신하","label":"아들","kind":"family","directed":true,"weight":1,"verses":"51-53","note":"아들이 살아 있다 하신 그때에 열기가 떨어졌음을 알고 그와 온 집안이 믿었어요."}
       ],
       "places": [
@@ -158,12 +158,12 @@
         {"name":"하나님","role":"일하시는 아버지","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"서른여덟 해 된 병자","label":"고치신 분","kind":"ally","directed":true,"weight":3,"verses":"6-9","note":"예수께서 네가 낫고자 하느냐 물으시고 일어나 네 자리를 들고 걸어가라 하시니 그 사람이 곧 나아서 걸어갔어요."},
-        {"from":"유대인들","to":"예수","label":"죽이려 함","kind":"conflict","directed":true,"weight":3,"verses":"16-18","note":"유대인들은 안식일을 범할 뿐 아니라 하나님을 자기의 친아버지라 하여 자기를 하나님과 동등으로 삼는다며 더욱 죽이고자 했어요."},
-        {"from":"하나님","to":"예수","label":"아버지","kind":"family","directed":true,"weight":3,"verses":"17, 20","note":"내 아버지께서 이제까지 일하시니 나도 일한다, 아버지께서 아들을 사랑하사 자기가 행하시는 것을 다 보이신다고 하셨어요."},
-        {"from":"요한","to":"예수","label":"증언한 이","kind":"ally","directed":true,"weight":1,"verses":"33-35","note":"너희가 요한에게 사람을 보내매 요한이 진리에 대하여 증언하였느니라, 요한은 켜서 비추이는 등불이었다고 하셨어요."},
-        {"from":"모세","to":"예수","label":"기록한 이","kind":"ally","directed":true,"weight":1,"verses":"46","note":"모세를 믿었더라면 또 나를 믿었으리니 이는 그가 내게 대하여 기록하였음이라고 하셨어요."},
-        {"from":"유대인들","to":"서른여덟 해 된 병자","label":"자리를 문제 삼음","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"유대인들이 병 나은 사람에게 안식일인데 네가 자리를 들고 가는 것이 옳지 아니하다고 했어요."}
+        {"from":"예수","to":"서른여덟 해 된 병자","label":"고치신 분","kind":"ally","directed":true,"weight":3,"verses":"6-9","note":"삼십팔 년 앓던 사람에게 낫고 싶으냐 물으시고 일어나 걸으라 하시자 곧 나았어요."},
+        {"from":"유대인들","to":"예수","label":"죽이려 함","kind":"conflict","directed":true,"weight":3,"verses":"16-18","note":"유대인들은 안식일을 어기고 하나님을 아버지라 부르며 자기를 하나님과 같게 한다고 예수님을 죽이려 했어요."},
+        {"from":"하나님","to":"예수","label":"아버지","kind":"family","directed":true,"weight":3,"verses":"17, 20","note":"아버지가 지금도 일하시니 나도 일한다 하시며, 아버지는 아들을 사랑해 모든 걸 보여 주신다고 하셨어요."},
+        {"from":"요한","to":"예수","label":"증언한 이","kind":"ally","directed":true,"weight":1,"verses":"33-35","note":"요한은 진리를 증언한 밝은 등불이었지만, 예수님께는 그보다 큰 증거가 있다고 하셨어요."},
+        {"from":"모세","to":"예수","label":"기록한 이","kind":"ally","directed":true,"weight":1,"verses":"46","note":"모세가 예수님에 대해 썼으니 모세를 믿었다면 예수님도 믿었을 거라고 하셨어요."},
+        {"from":"유대인들","to":"서른여덟 해 된 병자","label":"자리를 문제 삼음","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"유대인들은 나은 사람에게 안식일에 자리를 들고 다니면 안 된다고 나무랐어요."}
       ],
       "places": [
         {"name":"베데스다 못","where":"예루살렘 양문 곁","what":"병자가 나은 곳","weight":3},
@@ -192,12 +192,12 @@
         {"name":"하나님","role":"생명의 떡을 주시는 아버지","weight":2}
       ],
       "rels": [
-        {"from":"안드레","to":"아이","label":"데려온 제자","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"안드레가 여기 한 아이가 있어 보리떡 다섯 개와 물고기 두 마리를 가지고 있나이다 그러나 그것이 얼마나 되겠삽나이까 했어요."},
-        {"from":"예수","to":"빌립","label":"시험하여 물음","kind":"other","directed":true,"weight":1,"verses":"5-6","note":"예수께서 빌립에게 우리가 어디서 떡을 사서 이 사람들을 먹이겠느냐 하셨으니 이는 친히 어떻게 하실지를 아시고 시험하고자 하심이었어요."},
-        {"from":"무리","to":"예수","label":"임금 삼으려 함","kind":"other","directed":true,"weight":2,"verses":"14-15","note":"사람들이 그 표적을 보고 이는 참으로 세상에 오실 그 선지자라 하고 억지로 붙들어 임금으로 삼으려 했어요."},
-        {"from":"떠난 제자들","to":"예수","label":"떠나간 이들","kind":"conflict","directed":true,"weight":2,"verses":"60, 66","note":"제자 중 여럿이 이 말씀은 어렵도다 누가 들을 수 있느냐 하고 그때부터 물러가서 다시 함께 다니지 아니했어요."},
-        {"from":"시몬 베드로","to":"예수","label":"고백한 제자","kind":"ally","directed":true,"weight":3,"verses":"68-69","note":"시몬 베드로가 주여 영생의 말씀이 주께 있사오니 우리가 누구에게로 가오리이까 고백했어요."},
-        {"from":"가룟 유다","to":"예수","label":"팔 자","kind":"conflict","directed":true,"weight":2,"verses":"70-71","note":"예수께서 너희 중 한 사람은 마귀니라 하셨으니 가룟 시몬의 아들 유다를 가리키심이라 그는 예수를 팔 자였어요."}
+        {"from":"안드레","to":"아이","label":"데려온 제자","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"안드레는 보리빵 다섯 개와 물고기 두 마리를 가진 아이를 데려왔지만 이걸로 뭐가 되겠냐고 했어요."},
+        {"from":"예수","to":"빌립","label":"시험하여 물음","kind":"other","directed":true,"weight":1,"verses":"5-6","note":"예수님은 빌립을 시험해 보시려고 어디서 빵을 사서 이 사람들을 먹이겠느냐고 물으셨어요."},
+        {"from":"무리","to":"예수","label":"임금 삼으려 함","kind":"other","directed":true,"weight":2,"verses":"14-15","note":"배불리 먹은 사람들이 예수님을 억지로 왕으로 세우려 하자 예수님은 산으로 피하셨어요."},
+        {"from":"떠난 제자들","to":"예수","label":"떠나간 이들","kind":"conflict","directed":true,"weight":2,"verses":"60, 66","note":"말씀이 너무 어렵다며 많은 제자가 그때부터 예수님을 떠났어요."},
+        {"from":"시몬 베드로","to":"예수","label":"고백한 제자","kind":"ally","directed":true,"weight":3,"verses":"68-69","note":"베드로는 영생의 말씀이 주님께 있는데 우리가 누구에게 가겠냐고 고백했어요."},
+        {"from":"가룟 유다","to":"예수","label":"팔 자","kind":"conflict","directed":true,"weight":2,"verses":"70-71","note":"예수님은 너희 중 하나는 마귀라 하셨는데, 그건 장차 자기를 넘길 유다를 두고 하신 말이에요."}
       ],
       "places": [
         {"name":"디베랴 바다 건너편 산","where":"갈릴리 바다 동쪽","what":"오천 명을 먹이신 곳","weight":3},
@@ -226,12 +226,12 @@
         {"name":"성령","role":"생수의 강","weight":2}
       ],
       "rels": [
-        {"from":"예수의 형제들","to":"예수","label":"믿지 않음","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"형제들이 당신이 하는 일을 세상에 나타내라 했으니 이는 그 형제들까지도 예수를 믿지 아니함이었어요."},
-        {"from":"바리새인과 대제사장","to":"아랫사람들","label":"보낸 이들","kind":"other","directed":true,"weight":2,"verses":"32","note":"바리새인들과 대제사장들이 예수를 잡으려고 아랫사람들을 보냈어요."},
-        {"from":"바리새인과 대제사장","to":"예수","label":"잡으려 함","kind":"conflict","directed":true,"weight":3,"verses":"30, 32","note":"그들이 예수를 잡고자 하나 손을 대는 자가 없었으니 이는 그의 때가 아직 이르지 아니하였음이었어요."},
-        {"from":"아랫사람들","to":"예수","label":"감탄한 이들","kind":"ally","directed":true,"weight":1,"verses":"45-46","note":"아랫사람들이 돌아와서 그 사람이 말하는 것처럼 말한 사람은 이때까지 없었나이다 했어요."},
-        {"from":"니고데모","to":"예수","label":"변호한 이","kind":"ally","directed":true,"weight":2,"verses":"50-51","note":"니고데모가 우리 율법은 사람의 말을 듣고 그 행한 것을 알기 전에 심판하느냐 하고 변호했어요."},
-        {"from":"니고데모","to":"바리새인과 대제사장","label":"반대한 이","kind":"conflict","directed":true,"weight":1,"verses":"50-52","note":"니고데모가 반대하자 그들이 너도 갈릴리에서 왔느냐 찾아보라고 했어요."}
+        {"from":"예수의 형제들","to":"예수","label":"믿지 않음","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"예수님 동생들도 아직 믿지 않아서, 세상에 나가 자신을 드러내 보라며 비꼬았어요."},
+        {"from":"바리새인과 대제사장","to":"아랫사람들","label":"보낸 이들","kind":"other","directed":true,"weight":2,"verses":"32","note":"바리새인과 대제사장들은 예수님을 잡으라고 성전 경비병들을 보냈어요."},
+        {"from":"바리새인과 대제사장","to":"예수","label":"잡으려 함","kind":"conflict","directed":true,"weight":3,"verses":"30, 32","note":"그들이 잡으려 했지만 아직 때가 되지 않아 아무도 손대지 못했어요."},
+        {"from":"아랫사람들","to":"예수","label":"감탄한 이들","kind":"ally","directed":true,"weight":1,"verses":"45-46","note":"경비병들은 빈손으로 돌아와 그분처럼 말하는 사람은 처음 봤다고 했어요."},
+        {"from":"니고데모","to":"예수","label":"변호한 이","kind":"ally","directed":true,"weight":2,"verses":"50-51","note":"니고데모는 본인 말도 안 듣고 심판하는 게 율법에 맞느냐며 예수님 편을 들었어요."},
+        {"from":"니고데모","to":"바리새인과 대제사장","label":"반대한 이","kind":"conflict","directed":true,"weight":1,"verses":"50-52","note":"그러자 그들은 니고데모에게 너도 갈릴리 사람이냐며 핀잔을 줬어요."}
       ],
       "places": [
         {"name":"갈릴리","where":"예수께서 다니신 곳","what":"머무신 곳","weight":1},
@@ -258,12 +258,12 @@
         {"name":"하나님","role":"예수를 보내신 아버지","weight":2}
       ],
       "rels": [
-        {"from":"서기관과 바리새인","to":"간음 중에 잡힌 여자","label":"끌고 온 이들","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"서기관들과 바리새인들이 간음 중에 잡힌 여자를 끌고 와서 가운데 세우고 모세는 돌로 치라 명했다고 했어요."},
-        {"from":"서기관과 바리새인","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"그들이 이렇게 말함은 고발할 조건을 얻고자 하여 예수를 시험함이었어요."},
-        {"from":"예수","to":"간음 중에 잡힌 여자","label":"정죄하지 않음","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"나도 너를 정죄하지 아니하노니 가서 이제부터 다시는 죄를 범하지 말라 하셨어요."},
-        {"from":"유대인들","to":"예수","label":"돌로 치려 함","kind":"conflict","directed":true,"weight":2,"verses":"58-59","note":"아브라함이 나기 전부터 내가 있느니라 하시니 그들이 돌을 들어 치려 하거늘 예수께서 숨어 성전에서 나가셨어요."},
-        {"from":"유대인들","to":"아브라함","label":"자손이라 함","kind":"family","directed":true,"weight":1,"verses":"33, 39","note":"그들이 우리는 아브라함의 자손이라 하자 너희가 아브라함의 자손이면 아브라함이 행한 일들을 할 것이라 하셨어요."},
-        {"from":"하나님","to":"예수","label":"보내신 아버지","kind":"family","directed":true,"weight":2,"verses":"16, 29","note":"나를 보내신 이가 나와 함께하시도다 그가 나를 혼자 두지 아니하셨으니 하셨어요."}
+        {"from":"서기관과 바리새인","to":"간음 중에 잡힌 여자","label":"끌고 온 이들","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"율법 학자와 바리새인들은 간음하다 잡힌 여자를 가운데 세우고 돌로 쳐야 하지 않느냐고 물었어요."},
+        {"from":"서기관과 바리새인","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"그건 예수님을 고발할 꼬투리를 잡으려는 시험이었어요."},
+        {"from":"예수","to":"간음 중에 잡힌 여자","label":"정죄하지 않음","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"모두 떠나자 예수님은 나도 너를 정죄하지 않으니 다시는 죄짓지 말라고 하셨어요."},
+        {"from":"유대인들","to":"예수","label":"돌로 치려 함","kind":"conflict","directed":true,"weight":2,"verses":"58-59","note":"아브라함보다 먼저 내가 있다 하시자 그들이 돌을 들었고, 예수님은 몸을 피하셨어요."},
+        {"from":"유대인들","to":"아브라함","label":"자손이라 함","kind":"family","directed":true,"weight":1,"verses":"33, 39","note":"아브라함 자손이라 자랑하는 그들에게, 진짜 자손이면 아브라함처럼 행동할 거라고 하셨어요."},
+        {"from":"하나님","to":"예수","label":"보내신 아버지","kind":"family","directed":true,"weight":2,"verses":"16, 29","note":"예수님은 보내신 아버지가 늘 함께 계시고 자기를 혼자 두지 않으신다고 하셨어요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 성전 헌금함 앞","what":"여자를 살리고 빛을 말씀하신 곳","weight":3},
@@ -290,11 +290,11 @@
         {"name":"하나님","role":"일을 나타내시는 분","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"날 때부터 맹인 된 사람","label":"눈을 뜨게 함","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"예수께서 침으로 진흙을 이겨 그의 눈에 바르시고 실로암 못에 가서 씻으라 하시니 씻고 밝은 눈으로 왔어요."},
-        {"from":"바리새인","to":"날 때부터 맹인 된 사람","label":"쫓아낸 이들","kind":"conflict","directed":true,"weight":3,"verses":"34","note":"그들이 네가 온전히 죄 가운데서 나서 우리를 가르치느냐 하고 이에 쫓아내어 보냈어요."},
-        {"from":"날 때부터 맹인 된 사람","to":"맹인의 부모","label":"아들","kind":"family","directed":true,"weight":2,"verses":"18-23","note":"부모는 출교당할까 두려워 그가 장성하였으니 그에게 물어보라고 했어요."},
-        {"from":"날 때부터 맹인 된 사람","to":"예수","label":"믿고 절함","kind":"ally","directed":true,"weight":3,"verses":"35-38","note":"예수께서 그를 만나 네가 인자를 믿느냐 하시니 그가 주여 내가 믿나이다 하고 절했어요."},
-        {"from":"바리새인","to":"예수","label":"죄인이라 함","kind":"conflict","directed":true,"weight":2,"verses":"16, 24","note":"바리새인 중 어떤 사람은 이 사람이 안식일을 지키지 아니하니 하나님께로부터 온 자가 아니라 하고 죄인이라 했어요."}
+        {"from":"예수","to":"날 때부터 맹인 된 사람","label":"눈을 뜨게 함","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"예수님은 진흙을 눈에 바르시고 실로암 못에 가서 씻으라 하셨고, 그가 씻자 보게 됐어요."},
+        {"from":"바리새인","to":"날 때부터 맹인 된 사람","label":"쫓아낸 이들","kind":"conflict","directed":true,"weight":3,"verses":"34","note":"바리새인들은 죄 덩어리가 감히 우리를 가르치냐며 그를 회당에서 쫓아냈어요."},
+        {"from":"날 때부터 맹인 된 사람","to":"맹인의 부모","label":"아들","kind":"family","directed":true,"weight":2,"verses":"18-23","note":"부모는 회당에서 쫓겨날까 무서워 다 큰 아들에게 직접 물어보라고 발을 뺐어요."},
+        {"from":"날 때부터 맹인 된 사람","to":"예수","label":"믿고 절함","kind":"ally","directed":true,"weight":3,"verses":"35-38","note":"예수님이 다시 찾아가 인자를 믿느냐 물으시자 그는 믿는다며 엎드려 경배했어요."},
+        {"from":"바리새인","to":"예수","label":"죄인이라 함","kind":"conflict","directed":true,"weight":2,"verses":"16, 24","note":"어떤 바리새인들은 안식일을 안 지키니 하나님께로부터 온 사람이 아니라고 했어요."}
       ],
       "places": [
         {"name":"실로암 못","where":"예루살렘 남쪽 못","what":"맹인이 씻고 본 곳","weight":3}
@@ -320,11 +320,11 @@
         {"name":"하나님","role":"예수와 하나이신 아버지","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"양들","label":"목숨을 버림","kind":"ally","directed":true,"weight":3,"verses":"11","note":"나는 선한 목자라 선한 목자는 양들을 위하여 목숨을 버리거니와 하셨어요."},
-        {"from":"삯꾼","to":"양들","label":"버리고 달아남","kind":"conflict","directed":true,"weight":1,"verses":"12-13","note":"삯꾼은 목자가 아니요 양도 제 양이 아니라 이리가 오는 것을 보면 양을 버리고 달아난다고 하셨어요."},
-        {"from":"도둑","to":"양들","label":"해치는 자","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"도둑이 오는 것은 도둑질하고 죽이고 멸망시키려는 것뿐이요 내가 온 것은 양으로 생명을 얻게 하려 함이라고 하셨어요."},
-        {"from":"유대인들","to":"예수","label":"돌로 치려 함","kind":"conflict","directed":true,"weight":3,"verses":"31-33","note":"유대인들이 다시 돌을 들어 치려 하며 네가 사람이 되어 자칭 하나님이라 함이로라 했어요."},
-        {"from":"예수","to":"하나님","label":"하나이심","kind":"family","directed":false,"weight":3,"verses":"30","note":"나와 아버지는 하나이니라 하셨어요."}
+        {"from":"예수","to":"양들","label":"목숨을 버림","kind":"ally","directed":true,"weight":3,"verses":"11","note":"예수님은 자신을 양들을 위해 목숨까지 내놓는 좋은 목자라고 하셨어요."},
+        {"from":"삯꾼","to":"양들","label":"버리고 달아남","kind":"conflict","directed":true,"weight":1,"verses":"12-13","note":"돈 받고 일하는 사람은 늑대가 오면 양을 버리고 도망간대요."},
+        {"from":"도둑","to":"양들","label":"해치는 자","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"도둑은 훔치고 죽이려 오지만, 예수님은 양들이 넘치는 생명을 얻게 하려고 오셨대요."},
+        {"from":"유대인들","to":"예수","label":"돌로 치려 함","kind":"conflict","directed":true,"weight":3,"verses":"31-33","note":"사람이면서 하나님이라 한다며 유대인들이 다시 돌을 들었어요."},
+        {"from":"예수","to":"하나님","label":"하나이심","kind":"family","directed":false,"weight":3,"verses":"30","note":"예수님은 나와 아버지는 하나라고 하셨어요."}
       ],
       "places": [
         {"name":"솔로몬 행각","where":"예루살렘 성전","what":"수전절에 말씀하신 곳","weight":2},
@@ -351,11 +351,11 @@
         {"name":"가야바","role":"한 사람이 죽는 게 낫다던 대제사장","weight":2}
       ],
       "rels": [
-        {"from":"마르다","to":"나사로","label":"누이","kind":"family","directed":true,"weight":2,"verses":"1-3, 21","note":"마르다와 마리아 자매가 오라버니 나사로가 병들자 주여 보시옵소서 사랑하시는 자가 병들었나이다 하고 예수께 사람을 보냈어요."},
-        {"from":"마리아","to":"나사로","label":"누이","kind":"family","directed":true,"weight":2,"verses":"32-33","note":"마리아가 예수의 발아래 엎드려 주께서 여기 계셨더라면 내 오라버니가 죽지 아니하였겠나이다 하며 울었어요."},
-        {"from":"예수","to":"나사로","label":"사랑하신 친구","kind":"ally","directed":true,"weight":3,"verses":"35, 43-44","note":"예수께서 눈물을 흘리시고, 무덤 앞에서 나사로야 나오라 큰 소리로 부르시니 죽은 자가 수족을 베로 동인 채 나왔어요."},
-        {"from":"가야바","to":"예수","label":"죽이려 한 자","kind":"conflict","directed":true,"weight":3,"verses":"49-53","note":"대제사장 가야바가 한 사람이 백성을 위하여 죽어서 온 민족이 망하지 않게 되는 것이 유익하다 하니 그날부터 예수를 죽이려 모의했어요."},
-        {"from":"도마","to":"예수","label":"따르는 제자","kind":"ally","directed":true,"weight":1,"verses":"16","note":"디두모라 하는 도마가 다른 제자들에게 우리도 주와 함께 죽으러 가자 했어요."}
+        {"from":"마르다","to":"나사로","label":"누이","kind":"family","directed":true,"weight":2,"verses":"1-3, 21","note":"나사로가 병들자 자매는 주님이 사랑하시는 이가 아프다고 예수님께 소식을 보냈어요."},
+        {"from":"마리아","to":"나사로","label":"누이","kind":"family","directed":true,"weight":2,"verses":"32-33","note":"마리아는 예수님 발 앞에 엎드려 주님이 계셨으면 오빠가 죽지 않았을 거라며 울었어요."},
+        {"from":"예수","to":"나사로","label":"사랑하신 친구","kind":"ally","directed":true,"weight":3,"verses":"35, 43-44","note":"예수님은 함께 우시고, 무덤 앞에서 나사로야 나오라 외치시자 죽었던 그가 걸어 나왔어요."},
+        {"from":"가야바","to":"예수","label":"죽이려 한 자","kind":"conflict","directed":true,"weight":3,"verses":"49-53","note":"가야바는 한 사람이 죽어 온 민족이 망하지 않는 게 낫다며 예수님을 죽일 명분을 만들었어요."},
+        {"from":"도마","to":"예수","label":"따르는 제자","kind":"ally","directed":true,"weight":1,"verses":"16","note":"도마는 다른 제자들에게 우리도 주님과 함께 죽으러 가자고 했어요."}
       ],
       "places": [
         {"name":"베다니","where":"예루살렘 동쪽 약 3km, 감람산 너머","what":"나사로와 두 누이의 집. 나사로가 살아난 곳","weight":3},
@@ -385,14 +385,14 @@
         {"name":"하나님","role":"하늘에서 말씀하신 아버지","weight":2}
       ],
       "rels": [
-        {"from":"마리아","to":"예수","label":"향유를 부음","kind":"ally","directed":true,"weight":3,"verses":"3","note":"마리아가 지극히 비싼 향유 나드 한 근을 가져다가 예수의 발에 붓고 자기 머리털로 그의 발을 닦으니 향유 냄새가 집에 가득했어요."},
-        {"from":"가룟 유다","to":"마리아","label":"트집 잡음","kind":"conflict","directed":true,"weight":2,"verses":"4-6","note":"가룟 유다가 이 향유를 어찌하여 삼백 데나리온에 팔아 가난한 자들에게 주지 아니하였느냐 했으니 그는 도둑이었어요."},
+        {"from":"마리아","to":"예수","label":"향유를 부음","kind":"ally","directed":true,"weight":3,"verses":"3","note":"마리아는 아주 비싼 향유를 예수님 발에 붓고 자기 머리카락으로 닦아 드렸어요."},
+        {"from":"가룟 유다","to":"마리아","label":"트집 잡음","kind":"conflict","directed":true,"weight":2,"verses":"4-6","note":"유다는 그 향유를 팔아 가난한 사람을 돕지 않았다고 투덜댔지만, 사실 돈주머니를 노렸어요."},
         {"from":"마리아","to":"마르다","label":"자매","kind":"family","directed":false,"weight":1,"verses":"2-3","note":"마르다는 일을 하고 마리아는 향유를 부었어요."},
-        {"from":"나사로","to":"마리아","label":"남매","kind":"family","directed":false,"weight":1,"verses":"1-2","note":"예수께서 죽은 자 가운데서 살리신 나사로도 그 잔치에 함께 앉았어요."},
-        {"from":"대제사장들","to":"나사로","label":"죽이려 함","kind":"conflict","directed":true,"weight":2,"verses":"10-11","note":"대제사장들이 나사로까지 죽이려고 모의했으니 나사로 때문에 많은 유대인이 예수를 믿었기 때문이에요."},
-        {"from":"무리","to":"예수","label":"왕이라 맞음","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"큰 무리가 종려나무 가지를 가지고 맞으러 나가 호산나 찬송하리로다 주의 이름으로 오시는 이 곧 이스라엘의 왕이시여 했어요."},
-        {"from":"헬라인들","to":"빌립","label":"부탁한 이들","kind":"other","directed":true,"weight":1,"verses":"20-21","note":"예배하러 올라온 헬라인 몇이 빌립에게 가서 선생이여 우리가 예수를 뵈옵고자 하나이다 했어요."},
-        {"from":"하나님","to":"예수","label":"응답하신 아버지","kind":"family","directed":true,"weight":2,"verses":"28","note":"아버지여 아버지의 이름을 영광스럽게 하옵소서 하시니 하늘에서 소리가 나서 내가 이미 영광스럽게 하였고 또다시 하리라 했어요."}
+        {"from":"나사로","to":"마리아","label":"남매","kind":"family","directed":false,"weight":1,"verses":"1-2","note":"죽었다 살아난 나사로도 그 잔치 자리에 함께 앉아 있었어요."},
+        {"from":"대제사장들","to":"나사로","label":"죽이려 함","kind":"conflict","directed":true,"weight":2,"verses":"10-11","note":"나사로 때문에 많은 사람이 예수님을 믿자 대제사장들은 나사로까지 죽이려 했어요."},
+        {"from":"무리","to":"예수","label":"왕이라 맞음","kind":"ally","directed":true,"weight":2,"verses":"12-13","note":"큰 무리가 종려나무 가지를 들고 주님 이름으로 오시는 이스라엘의 왕을 찬양하며 맞았어요."},
+        {"from":"헬라인들","to":"빌립","label":"부탁한 이들","kind":"other","directed":true,"weight":1,"verses":"20-21","note":"예배하러 온 그리스 사람 몇이 빌립에게 예수님을 뵙고 싶다고 부탁했어요."},
+        {"from":"하나님","to":"예수","label":"응답하신 아버지","kind":"family","directed":true,"weight":2,"verses":"28","note":"예수님이 아버지 이름을 영광스럽게 해 달라 기도하시자 하늘에서 그렇게 하겠다는 음성이 들렸어요."}
       ],
       "places": [
         {"name":"베다니","where":"예루살렘 동쪽 마을","what":"향유를 부은 곳","weight":3},
@@ -419,12 +419,12 @@
         {"name":"제자들","role":"발을 씻김받은 이들","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"제자들","label":"발을 씻기심","kind":"ally","directed":true,"weight":3,"verses":"4-5, 14-15","note":"예수께서 수건을 허리에 두르시고 제자들의 발을 씻기시며 너희도 서로 발을 씻어 주는 것이 옳으니라 하셨어요."},
-        {"from":"예수","to":"시몬 베드로","label":"상관을 말씀함","kind":"ally","directed":true,"weight":3,"verses":"8","note":"베드로가 내 발을 절대로 씻기지 못하시리이다 하자 내가 너를 씻기지 아니하면 네가 나와 상관이 없느니라 하셨어요."},
-        {"from":"가룟 유다","to":"예수","label":"팔려고 나감","kind":"conflict","directed":true,"weight":3,"verses":"26-30","note":"예수께서 떡 한 조각을 적셔 가룟 유다에게 주시니 그가 조각을 받고 곧 나가니 밤이었어요."},
-        {"from":"사탄","to":"가룟 유다","label":"들어간 자","kind":"conflict","directed":true,"weight":2,"verses":"2, 27","note":"마귀가 벌써 유다의 마음에 예수를 팔려는 생각을 넣었고 조각을 받은 후 사탄이 그 속에 들어갔어요."},
+        {"from":"예수","to":"제자들","label":"발을 씻기심","kind":"ally","directed":true,"weight":3,"verses":"4-5, 14-15","note":"예수님은 수건을 두르고 제자들 발을 씻기시며 너희도 서로 이렇게 섬기라고 하셨어요."},
+        {"from":"예수","to":"시몬 베드로","label":"상관을 말씀함","kind":"ally","directed":true,"weight":3,"verses":"8","note":"베드로가 발을 못 씻기게 하자 예수님은 내가 씻기지 않으면 너는 나와 상관없다고 하셨어요."},
+        {"from":"가룟 유다","to":"예수","label":"팔려고 나감","kind":"conflict","directed":true,"weight":3,"verses":"26-30","note":"예수님이 빵 조각을 적셔 유다에게 주시자 그는 받자마자 밖으로 나갔고, 때는 밤이었어요."},
+        {"from":"사탄","to":"가룟 유다","label":"들어간 자","kind":"conflict","directed":true,"weight":2,"verses":"2, 27","note":"마귀가 이미 유다 마음에 배신할 생각을 넣었고, 빵을 받은 뒤 사탄이 그에게 들어갔어요."},
         {"from":"가룟 유다","to":"가룟 시몬","label":"아들","kind":"family","directed":true,"weight":1,"verses":"26","note":"유다는 가룟 시몬의 아들이에요."},
-        {"from":"예수의 사랑하시는 제자","to":"예수","label":"품에 의지함","kind":"ally","directed":true,"weight":2,"verses":"23-25","note":"제자 중 하나 곧 예수께서 사랑하시는 자가 예수의 품에 의지하여 누웠다가 주여 누구니이까 하고 물었어요."}
+        {"from":"예수의 사랑하시는 제자","to":"예수","label":"품에 의지함","kind":"ally","directed":true,"weight":2,"verses":"23-25","note":"예수님이 사랑하시던 제자가 예수님 품에 기대어 배신자가 누구냐고 여쭸어요."}
       ],
       "places": [
         {"name":"만찬 자리","where":"예루살렘의 방","what":"발을 씻기신 곳","weight":3}
@@ -450,11 +450,11 @@
         {"name":"제자들","role":"근심하던 이들","weight":2}
       ],
       "rels": [
-        {"from":"도마","to":"예수","label":"길을 물음","kind":"other","directed":true,"weight":2,"verses":"5-6","note":"도마가 주여 주께서 어디로 가시는지 우리가 알지 못하거늘 그 길을 어찌 알겠사옵나이까 묻자 내가 곧 길이요 진리요 생명이라 하셨어요."},
-        {"from":"빌립","to":"예수","label":"아버지를 구함","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"빌립이 아버지를 우리에게 보여 주옵소서 하자 나를 본 자는 아버지를 보았거늘 하셨어요."},
-        {"from":"예수","to":"하나님","label":"서로 안에 계심","kind":"family","directed":false,"weight":3,"verses":"10-11","note":"내가 아버지 안에 있고 아버지는 내 안에 계신 것을 믿으라고 하셨어요."},
-        {"from":"성령","to":"제자들","label":"함께하실 보혜사","kind":"ally","directed":true,"weight":3,"verses":"16-17, 26","note":"내가 아버지께 구하겠으니 그가 또 다른 보혜사를 너희에게 주사 영원토록 함께 있게 하시리니 그는 진리의 영이라고 하셨어요."},
-        {"from":"예수","to":"제자들","label":"평안을 주심","kind":"ally","directed":true,"weight":2,"verses":"27","note":"평안을 너희에게 끼치노니 곧 나의 평안을 너희에게 주노라 하셨어요."}
+        {"from":"도마","to":"예수","label":"길을 물음","kind":"other","directed":true,"weight":2,"verses":"5-6","note":"도마가 어디로 가시는지 모르는데 길을 어떻게 아냐 묻자, 예수님은 내가 곧 길이라 하셨어요."},
+        {"from":"빌립","to":"예수","label":"아버지를 구함","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"아버지를 보여 달라는 빌립에게 예수님은 나를 본 사람은 아버지를 본 거라고 하셨어요."},
+        {"from":"예수","to":"하나님","label":"서로 안에 계심","kind":"family","directed":false,"weight":3,"verses":"10-11","note":"예수님은 자기가 아버지 안에, 아버지가 자기 안에 계심을 믿으라고 하셨어요."},
+        {"from":"성령","to":"제자들","label":"함께하실 보혜사","kind":"ally","directed":true,"weight":3,"verses":"16-17, 26","note":"예수님은 아버지께 구해 또 다른 돕는 분, 성령을 보내 영원히 함께하게 하겠다고 하셨어요."},
+        {"from":"예수","to":"제자들","label":"평안을 주심","kind":"ally","directed":true,"weight":2,"verses":"27","note":"예수님은 세상이 주는 것과 다른 자기의 평안을 제자들에게 남겨 주셨어요."}
       ],
       "places": [
         {"name":"아버지 집","where":"하늘","what":"거할 곳이 많은 곳","weight":2}
@@ -478,11 +478,11 @@
         {"name":"하나님","role":"농부이신 아버지","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"제자들","label":"포도나무와 가지","kind":"ally","directed":false,"weight":3,"verses":"5","note":"나는 포도나무요 너희는 가지라 그가 내 안에, 내가 그 안에 거하면 열매를 많이 맺는다고 하셨어요."},
-        {"from":"하나님","to":"예수","label":"사랑하신 아버지","kind":"family","directed":true,"weight":3,"verses":"9","note":"아버지께서 나를 사랑하신 것같이 나도 너희를 사랑하였으니 나의 사랑 안에 거하라 하셨어요."},
-        {"from":"세상","to":"제자들","label":"미워할 자","kind":"conflict","directed":true,"weight":2,"verses":"18-19","note":"세상이 너희를 미워하면 너희보다 먼저 나를 미워한 줄을 알라고 하셨어요."},
-        {"from":"성령","to":"예수","label":"증언하실 영","kind":"ally","directed":true,"weight":2,"verses":"26","note":"아버지께로부터 나오시는 진리의 성령이 오실 때에 그가 나를 증언하실 것이라고 하셨어요."},
-        {"from":"예수","to":"제자들","label":"친구라 부르심","kind":"ally","directed":true,"weight":2,"verses":"13-15","note":"이제부터는 너희를 종이라 하지 아니하리니 너희를 친구라 하였노니 하셨어요."}
+        {"from":"예수","to":"제자들","label":"포도나무와 가지","kind":"ally","directed":false,"weight":3,"verses":"5","note":"예수님은 자신은 포도나무, 제자들은 가지라 하시며 붙어 있어야 열매를 많이 맺는다고 하셨어요."},
+        {"from":"하나님","to":"예수","label":"사랑하신 아버지","kind":"family","directed":true,"weight":3,"verses":"9","note":"아버지가 예수님을 사랑하신 것처럼 예수님도 제자들을 사랑하셨으니 그 사랑 안에 머물래요."},
+        {"from":"세상","to":"제자들","label":"미워할 자","kind":"conflict","directed":true,"weight":2,"verses":"18-19","note":"세상이 제자들을 미워해도, 먼저 예수님을 미워했음을 기억하라고 하셨어요."},
+        {"from":"성령","to":"예수","label":"증언하실 영","kind":"ally","directed":true,"weight":2,"verses":"26","note":"아버지께로부터 오시는 진리의 성령이 예수님에 대해 증언하실 거래요."},
+        {"from":"예수","to":"제자들","label":"친구라 부르심","kind":"ally","directed":true,"weight":2,"verses":"13-15","note":"예수님은 이제 제자들을 종이 아니라 친구라 부르겠다고 하셨어요."}
       ],
       "places": [
         {"name":"포도원","where":"비유 속 밭","what":"포도나무와 가지 비유의 자리","weight":1}
@@ -506,11 +506,11 @@
         {"name":"하나님","role":"제자들을 사랑하시는 아버지","weight":2}
       ],
       "rels": [
-        {"from":"성령","to":"세상","label":"책망하실 영","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"그가 와서 죄에 대하여, 의에 대하여, 심판에 대하여 세상을 책망하시리라고 하셨어요."},
-        {"from":"성령","to":"제자들","label":"진리로 인도","kind":"ally","directed":true,"weight":3,"verses":"13","note":"진리의 성령이 오시면 그가 너희를 모든 진리 가운데로 인도하시리라고 하셨어요."},
-        {"from":"예수","to":"제자들","label":"담대하라 하심","kind":"ally","directed":true,"weight":3,"verses":"33","note":"세상에서는 너희가 환난을 당하나 담대하라 내가 세상을 이기었노라 하셨어요."},
-        {"from":"하나님","to":"제자들","label":"사랑하시는 아버지","kind":"family","directed":true,"weight":2,"verses":"27","note":"너희가 나를 사랑하고 또 내가 하나님께로부터 온 줄 믿었으므로 아버지께서 친히 너희를 사랑하신다고 하셨어요."},
-        {"from":"하나님","to":"예수","label":"함께 계심","kind":"ally","directed":false,"weight":2,"verses":"32","note":"너희가 나를 혼자 둘 때가 오나니 그러나 내가 혼자 있는 것이 아니라 아버지께서 나와 함께 계시느니라 하셨어요."}
+        {"from":"성령","to":"세상","label":"책망하실 영","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"성령이 오시면 죄와 의와 심판에 대해 세상이 잘못 알고 있음을 깨우치실 거래요."},
+        {"from":"성령","to":"제자들","label":"진리로 인도","kind":"ally","directed":true,"weight":3,"verses":"13","note":"진리의 성령이 오시면 제자들을 모든 진리로 이끄실 거래요."},
+        {"from":"예수","to":"제자들","label":"담대하라 하심","kind":"ally","directed":true,"weight":3,"verses":"33","note":"세상에서 고난을 겪겠지만 용기를 내라, 예수님이 이미 세상을 이기셨대요."},
+        {"from":"하나님","to":"제자들","label":"사랑하시는 아버지","kind":"family","directed":true,"weight":2,"verses":"27","note":"제자들이 예수님을 사랑하고 믿었기에 아버지도 친히 그들을 사랑하신대요."},
+        {"from":"하나님","to":"예수","label":"함께 계심","kind":"ally","directed":false,"weight":2,"verses":"32","note":"제자들이 다 흩어져도 예수님은 혼자가 아니래요, 아버지가 함께 계시니까요."}
       ],
       "places": [
         {"name":"예루살렘","where":"만찬 후 가시는 길","what":"고별 말씀을 하신 곳","weight":1}
@@ -534,10 +534,10 @@
         {"name":"세상","role":"제자들을 미워하는 곳","weight":1}
       ],
       "rels": [
-        {"from":"예수","to":"하나님","label":"기도하는 아들","kind":"family","directed":true,"weight":3,"verses":"1","note":"예수께서 눈을 들어 하늘을 우러러 아버지여 때가 이르렀사오니 아들을 영화롭게 하사 아들로 아버지를 영화롭게 하게 하옵소서 기도하셨어요."},
-        {"from":"예수","to":"제자들","label":"위해 기도함","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"그들을 세상에서 데려가시기를 위함이 아니요 악에 빠지지 않게 보전하시기를, 진리로 거룩하게 하옵소서 하고 기도하셨어요."},
-        {"from":"예수","to":"믿을 사람들","label":"하나 되기를 구함","kind":"ally","directed":true,"weight":2,"verses":"20-21","note":"그들의 말로 말미암아 나를 믿는 사람들도 위하여 비오니 다 하나가 되어 세상이 믿게 하옵소서 하셨어요."},
-        {"from":"세상","to":"제자들","label":"미워하는 자","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"내가 아버지의 말씀을 그들에게 주었사오매 세상이 그들을 미워하였사오니 하셨어요."}
+        {"from":"예수","to":"하나님","label":"기도하는 아들","kind":"family","directed":true,"weight":3,"verses":"1","note":"예수님은 하늘을 우러러 때가 왔으니 아들을 영광스럽게 해 달라고 기도하셨어요."},
+        {"from":"예수","to":"제자들","label":"위해 기도함","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"예수님은 제자들을 세상에서 빼내 달라는 게 아니라 악에서 지키고 진리로 거룩하게 해 달라고 비셨어요."},
+        {"from":"예수","to":"믿을 사람들","label":"하나 되기를 구함","kind":"ally","directed":true,"weight":2,"verses":"20-21","note":"제자들 말을 듣고 믿게 될 사람들도 하나 되어 세상이 믿게 해 달라고 기도하셨어요."},
+        {"from":"세상","to":"제자들","label":"미워하는 자","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"아버지 말씀을 받았기에 세상이 제자들을 미워한다고 예수님이 기도 중에 말씀하셨어요."}
       ],
       "places": [
         {"name":"하늘","where":"우러러본 곳","what":"기도의 방향","weight":1}
@@ -567,13 +567,13 @@
         {"name":"유대인들","role":"바라바를 택한 이들","weight":2}
       ],
       "rels": [
-        {"from":"유다","to":"예수","label":"잡으러 온 배반자","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"예수를 파는 유다가 그곳을 알므로 군대와 대제사장들의 아랫사람들을 데리고 등과 횃불과 무기를 가지고 왔어요."},
-        {"from":"시몬 베드로","to":"말고","label":"귀를 벤 이","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"시몬 베드로가 칼을 가졌는데 그것을 빼어 대제사장의 종 말고를 쳐서 오른편 귀를 베어 버렸어요."},
+        {"from":"유다","to":"예수","label":"잡으러 온 배반자","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"그 동산을 알던 유다는 군인들과 성전 경비병들을 데리고 등불과 무기를 들고 왔어요."},
+        {"from":"시몬 베드로","to":"말고","label":"귀를 벤 이","kind":"conflict","directed":true,"weight":1,"verses":"10","note":"베드로가 칼을 빼서 대제사장의 종 말고의 오른쪽 귀를 베었어요."},
         {"from":"시몬 베드로","to":"예수","label":"세 번 부인","kind":"conflict","directed":true,"weight":3,"verses":"17, 25-27","note":"베드로가 문 지키는 여종과 사람들 앞에서 세 번 나는 아니라 부인하자 곧 닭이 울었어요."},
-        {"from":"안나스","to":"가야바","label":"장인","kind":"family","directed":true,"weight":2,"verses":"13","note":"무리가 예수를 먼저 안나스에게로 끌고 가니 안나스는 그해의 대제사장인 가야바의 장인이었어요."},
-        {"from":"안나스","to":"예수","label":"심문한 이","kind":"conflict","directed":true,"weight":2,"verses":"19, 24","note":"대제사장이 예수에게 그의 제자들과 교훈에 대하여 물었고, 안나스가 예수를 결박한 그대로 가야바에게 보냈어요."},
-        {"from":"빌라도","to":"예수","label":"심문한 총독","kind":"other","directed":true,"weight":3,"verses":"33-38","note":"빌라도가 네가 유대인의 왕이냐 묻자 내 나라는 이 세상에 속한 것이 아니라 하셨고 빌라도는 진리가 무엇이냐 했어요."},
-        {"from":"유대인들","to":"바라바","label":"놓아 달라 함","kind":"ally","directed":true,"weight":2,"verses":"40","note":"그들이 또 소리 질러 이 사람이 아니라 바라바라 하니 바라바는 강도였어요."}
+        {"from":"안나스","to":"가야바","label":"장인","kind":"family","directed":true,"weight":2,"verses":"13","note":"사람들은 예수님을 먼저 그해 대제사장 가야바의 장인 안나스에게 끌고 갔어요."},
+        {"from":"안나스","to":"예수","label":"심문한 이","kind":"conflict","directed":true,"weight":2,"verses":"19, 24","note":"안나스는 제자와 가르침에 대해 캐묻다가 예수님을 묶은 채 가야바에게 보냈어요."},
+        {"from":"빌라도","to":"예수","label":"심문한 총독","kind":"other","directed":true,"weight":3,"verses":"33-38","note":"유대인의 왕이냐는 물음에 예수님은 내 나라는 이 세상 것이 아니라 하셨고, 빌라도는 죄를 찾지 못했어요."},
+        {"from":"유대인들","to":"바라바","label":"놓아 달라 함","kind":"ally","directed":true,"weight":2,"verses":"40","note":"군중은 예수님 말고 강도 바라바를 풀어 달라고 소리쳤어요."}
       ],
       "places": [
         {"name":"기드론 건너편 동산","where":"예루살렘 동쪽","what":"잡히신 곳","weight":3},
@@ -604,12 +604,12 @@
       ],
       "rels": [
         {"from":"빌라도","to":"예수","label":"넘겨준 총독","kind":"conflict","directed":true,"weight":3,"verses":"16","note":"이에 빌라도가 예수를 십자가에 못 박히게 그들에게 넘겨주었어요."},
-        {"from":"대제사장들","to":"예수","label":"십자가를 외침","kind":"conflict","directed":true,"weight":2,"verses":"6, 15","note":"대제사장들과 아랫사람들이 예수를 보고 소리 질러 십자가에 못 박으소서 십자가에 못 박으소서 했어요."},
-        {"from":"예수","to":"예수의 어머니","label":"아들","kind":"family","directed":true,"weight":2,"verses":"25-26","note":"예수께서 자기의 어머니와 사랑하시는 제자가 곁에 서 있는 것을 보시고 여자여 보소서 아들이니이다 하셨어요."},
-        {"from":"예수의 사랑하시는 제자","to":"예수의 어머니","label":"모신 제자","kind":"ally","directed":true,"weight":2,"verses":"27","note":"제자에게 보라 네 어머니라 하시니 그때부터 그 제자가 자기 집에 모셨어요."},
-        {"from":"아리마대 사람 요셉","to":"예수","label":"장사한 이","kind":"ally","directed":true,"weight":2,"verses":"38","note":"아리마대 사람 요셉이 유대인이 두려워 숨겼던 제자였는데 빌라도에게 예수의 시체를 가져가기를 구했어요."},
-        {"from":"니고데모","to":"아리마대 사람 요셉","label":"함께 장사함","kind":"ally","directed":false,"weight":2,"verses":"39-40","note":"니고데모가 몰약과 침향 섞은 것을 백 리트라쯤 가지고 와서 요셉과 함께 예수의 시체를 세마포로 쌌어요."},
-        {"from":"군인들","to":"예수","label":"조롱한 이들","kind":"conflict","directed":true,"weight":1,"verses":"2-3","note":"군인들이 가시나무로 관을 엮어 그의 머리에 씌우고 자색 옷을 입히고 유대인의 왕이여 평안할지어다 하며 손바닥으로 때렸어요."}
+        {"from":"대제사장들","to":"예수","label":"십자가를 외침","kind":"conflict","directed":true,"weight":2,"verses":"6, 15","note":"대제사장과 경비병들은 예수님을 보자 십자가에 못 박으라고 거듭 외쳤어요."},
+        {"from":"예수","to":"예수의 어머니","label":"아들","kind":"family","directed":true,"weight":2,"verses":"25-26","note":"예수님은 십자가 위에서 어머니에게 사랑하는 제자를 가리키며 이제 그가 아들이라고 하셨어요."},
+        {"from":"예수의 사랑하시는 제자","to":"예수의 어머니","label":"모신 제자","kind":"ally","directed":true,"weight":2,"verses":"27","note":"제자에게는 이분이 네 어머니라 하셨고, 그 제자는 그때부터 마리아를 집에 모셨어요."},
+        {"from":"아리마대 사람 요셉","to":"예수","label":"장사한 이","kind":"ally","directed":true,"weight":2,"verses":"38","note":"남몰래 제자였던 아리마대 요셉이 빌라도에게 청해 예수님 시신을 모셔 갔어요."},
+        {"from":"니고데모","to":"아리마대 사람 요셉","label":"함께 장사함","kind":"ally","directed":false,"weight":2,"verses":"39-40","note":"니고데모도 많은 향료를 가져와 요셉과 함께 예수님 시신을 베로 쌌어요."},
+        {"from":"군인들","to":"예수","label":"조롱한 이들","kind":"conflict","directed":true,"weight":1,"verses":"2-3","note":"군인들은 가시관을 씌우고 자주색 옷을 입히며 유대인의 왕 만세라고 조롱했어요."}
       ],
       "places": [
         {"name":"가바다","where":"돌을 깐 뜰","what":"빌라도가 재판한 자리","weight":1},
@@ -640,10 +640,10 @@
       ],
       "rels": [
         {"from":"예수","to":"막달라 마리아","label":"이름을 부르심","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"예수께서 마리아야 하고 부르시니 마리아가 돌이켜 랍오니 하였고, 내 형제들에게 가서 전하라고 하셨어요."},
-        {"from":"막달라 마리아","to":"시몬 베드로","label":"알린 이","kind":"ally","directed":true,"weight":2,"verses":"2","note":"막달라 마리아가 달려가 시몬 베드로와 예수께서 사랑하시는 다른 제자에게 사람들이 주님을 무덤에서 가져갔다고 알렸어요."},
+        {"from":"막달라 마리아","to":"시몬 베드로","label":"알린 이","kind":"ally","directed":true,"weight":2,"verses":"2","note":"빈 무덤을 본 막달라 마리아는 베드로와 사랑받는 제자에게 달려가 누가 주님을 가져갔다고 알렸어요."},
         {"from":"시몬 베드로","to":"예수의 사랑하시는 제자","label":"함께 달려감","kind":"ally","directed":false,"weight":2,"verses":"3-8","note":"베드로와 그 다른 제자가 함께 무덤으로 달려갔는데 다른 제자가 먼저 이르렀고 들어가 보고 믿었어요."},
-        {"from":"예수","to":"제자들","label":"성령을 주심","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"너희에게 평강이 있을지어다 하시고 숨을 내쉬며 성령을 받으라 하셨어요."},
-        {"from":"도마","to":"예수","label":"주님이라 고백","kind":"ally","directed":true,"weight":3,"verses":"27-28","note":"예수께서 네 손가락을 이리 내밀어 내 손을 보라 하시니 도마가 나의 주님이시요 나의 하나님이시니이다 고백했어요."}
+        {"from":"예수","to":"제자들","label":"성령을 주심","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"예수님은 제자들에게 평화를 빌어 주시고 숨을 내쉬며 성령을 받으라 하셨어요."},
+        {"from":"도마","to":"예수","label":"주님이라 고백","kind":"ally","directed":true,"weight":3,"verses":"27-28","note":"손의 못 자국을 만져 보라 하시자 도마는 나의 주님, 나의 하나님이라고 고백했어요."}
       ],
       "places": [
         {"name":"무덤","where":"예루살렘 근처 동산","what":"빈 무덤이 된 곳","weight":3},
@@ -668,10 +668,10 @@
         {"name":"세베대의 아들들","role":"함께 고기 잡은 이들","weight":1}
       ],
       "rels": [
-        {"from":"예수","to":"시몬 베드로","label":"양을 맡기심","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"예수께서 세 번이나 요한의 아들 시몬아 네가 나를 사랑하느냐 물으시고 내 양을 먹이라 하셨어요."},
-        {"from":"시몬 베드로","to":"예수","label":"사랑을 고백","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"베드로가 주님 그러하나이다 내가 주님을 사랑하는 줄 주님께서 아시나이다, 세 번째에는 근심하며 대답했어요."},
-        {"from":"예수의 사랑하시는 제자","to":"시몬 베드로","label":"주님이라 알림","kind":"ally","directed":true,"weight":2,"verses":"7","note":"예수께서 사랑하시는 그 제자가 베드로에게 주님이시라 하니 베드로가 겉옷을 두르고 바다로 뛰어내렸어요."},
-        {"from":"시몬 베드로","to":"도마","label":"함께 고기 잡음","kind":"ally","directed":false,"weight":1,"verses":"2-3","note":"시몬 베드로와 디두모라 하는 도마와 나다나엘 등이 함께 있다가 베드로가 물고기 잡으러 가자 하니 함께 나갔어요."}
+        {"from":"예수","to":"시몬 베드로","label":"양을 맡기심","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"예수님은 베드로에게 세 번이나 나를 사랑하느냐 물으시고 내 양을 먹이라고 맡기셨어요."},
+        {"from":"시몬 베드로","to":"예수","label":"사랑을 고백","kind":"ally","directed":true,"weight":3,"verses":"15-17","note":"베드로는 주님이 다 아신다며 사랑한다고 답했고, 세 번째엔 마음이 아팠어요."},
+        {"from":"예수의 사랑하시는 제자","to":"시몬 베드로","label":"주님이라 알림","kind":"ally","directed":true,"weight":2,"verses":"7","note":"사랑받는 제자가 저분은 주님이라 하자 베드로는 겉옷을 걸치고 바다로 뛰어들었어요."},
+        {"from":"시몬 베드로","to":"도마","label":"함께 고기 잡음","kind":"ally","directed":false,"weight":1,"verses":"2-3","note":"베드로가 고기 잡으러 가겠다 하자 도마와 나다나엘 등 다른 제자들도 함께 나섰어요."}
       ],
       "places": [
         {"name":"디베랴 호수","where":"갈릴리 바다","what":"그물을 던지고 조반을 먹은 곳","weight":3}
