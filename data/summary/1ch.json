@@ -30,13 +30,13 @@
         {"name":"이스라엘","role":"이삭의 아들","weight":1}
       ],
       "rels": [
-        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"이스마엘","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"에서","to":"이삭","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"아브라함","to":"노아","label":"셈을 통한 후손","kind":"family","directed":true,"weight":1},
-        {"from":"노아","to":"아담","label":"열 대 후손","kind":"family","directed":true,"weight":1},
-        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"이스라엘","to":"에서","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":3,"verses":"28, 34","note":"아브라함의 아들은 이삭과 이스마엘이에요. 아브라함이 이삭을 낳았어요."},
+        {"from":"이스마엘","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2,"verses":"28-31","note":"이스마엘은 아브라함의 아들이며 열두 아들을 두었어요."},
+        {"from":"에서","to":"이삭","label":"아들","kind":"family","directed":true,"weight":2,"verses":"34","note":"이삭의 아들은 에서와 이스라엘이에요."},
+        {"from":"아브라함","to":"노아","label":"셈을 통한 후손","kind":"family","directed":true,"weight":1,"verses":"4, 24-27","note":"족보는 노아의 아들 셈에서 아르박삿과 에벨을 지나 아브람 곧 아브라함까지 이어져요."},
+        {"from":"노아","to":"아담","label":"열 대 후손","kind":"family","directed":true,"weight":1,"verses":"1-4","note":"족보는 아담, 셋, 에노스로 시작해 열 대째 노아에 이르러요."},
+        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"노아의 아들은 셈과 함과 야벳이에요."},
+        {"from":"이스라엘","to":"에서","label":"형제","kind":"family","directed":false,"weight":1,"verses":"34","note":"에서와 이스라엘은 이삭이 낳은 형제예요."}
       ],
       "places": [
         {"name":"에돔","where":"사해 남쪽과 동쪽의 산악 지대","what":"에서의 자손이 살고 일찍 왕을 세운 땅","weight":2}
@@ -66,12 +66,12 @@
         {"name":"갈렙(헤스론의 아들)","role":"큰 집안을 이룬 헤스론의 아들","weight":1}
       ],
       "rels": [
-        {"from":"베레스","to":"유다","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"다윗","to":"이새","label":"일곱째 아들","kind":"family","directed":true,"weight":3},
-        {"from":"이새","to":"보아스","label":"손자","kind":"family","directed":true,"weight":2},
-        {"from":"스루야","to":"다윗","label":"누이","kind":"family","directed":true,"weight":1},
-        {"from":"아비가일","to":"다윗","label":"누이","kind":"family","directed":true,"weight":1},
-        {"from":"베레스","to":"다말","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"베레스","to":"유다","label":"아들","kind":"family","directed":true,"weight":2,"verses":"4","note":"유다의 며느리 다말이 베레스와 세라를 낳았어요."},
+        {"from":"다윗","to":"이새","label":"일곱째 아들","kind":"family","directed":true,"weight":3,"verses":"13-15","note":"이새는 맏아들 엘리압부터 일곱째 다윗까지 아들들을 낳았어요."},
+        {"from":"이새","to":"보아스","label":"손자","kind":"family","directed":true,"weight":2,"verses":"11-12","note":"보아스가 오벳을 낳고 오벳이 이새를 낳았어요."},
+        {"from":"스루야","to":"다윗","label":"누이","kind":"family","directed":true,"weight":1,"verses":"16","note":"다윗의 누이는 스루야와 아비가일이에요. 스루야의 아들이 아비새, 요압, 아사헬이에요."},
+        {"from":"아비가일","to":"다윗","label":"누이","kind":"family","directed":true,"weight":1,"verses":"16-17","note":"아비가일도 다윗의 누이로 아마사를 낳았어요."},
+        {"from":"베레스","to":"다말","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"다말은 시아버지 유다에게서 베레스와 세라를 낳았어요."}
       ],
       "places": [
         {"name":"베들레헴","where":"예루살렘 남쪽 약 9km","what":"살마를 조상으로 한 다윗의 고향","weight":2},
@@ -101,11 +101,11 @@
         {"name":"스룹바벨","role":"포로 뒤 왕가를 이은 사람","weight":2}
       ],
       "rels": [
-        {"from":"솔로몬","to":"다윗","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"솔로몬","to":"밧수아","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"암논","to":"다윗","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"여고냐","to":"요시야","label":"손자","kind":"family","directed":true,"weight":1},
-        {"from":"스룹바벨","to":"여고냐","label":"손자","kind":"family","directed":true,"weight":2}
+        {"from":"솔로몬","to":"다윗","label":"아들","kind":"family","directed":true,"weight":3,"verses":"5","note":"다윗이 예루살렘에서 낳은 아들 가운데 솔로몬이 있어요."},
+        {"from":"솔로몬","to":"밧수아","label":"아들","kind":"family","directed":true,"weight":2,"verses":"5","note":"솔로몬은 암미엘의 딸 밧수아에게서 났어요. 사무엘하의 밧세바와 같은 사람이에요."},
+        {"from":"암논","to":"다윗","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"다윗이 헤브론에서 낳은 맏아들은 아히노암이 낳은 암논이에요."},
+        {"from":"여고냐","to":"요시야","label":"손자","kind":"family","directed":true,"weight":1,"verses":"15-16","note":"요시야의 아들 여호야김이 여고냐를 낳았어요."},
+        {"from":"스룹바벨","to":"여고냐","label":"손자","kind":"family","directed":true,"weight":2,"verses":"17-19","note":"사로잡혀 간 여고냐의 자손 가운데 스룹바벨이 나왔어요."}
       ],
       "places": [
         {"name":"헤브론","where":"예루살렘 남쪽 약 30km","what":"다윗이 칠 년 반 다스린 곳","weight":2},
@@ -130,9 +130,9 @@
         {"name":"하나님","role":"야베스의 기도를 들으심","weight":3}
       ],
       "rels": [
-        {"from":"야베스","to":"하나님","label":"기도한 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"야베스","to":"야베스의 어머니","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"시므온 자손","to":"하나님","label":"땅을 얻은 지파","kind":"other","directed":true,"weight":1}
+        {"from":"야베스","to":"하나님","label":"기도한 사람","kind":"ally","directed":true,"weight":3,"verses":"10","note":"야베스가 하나님께 복을 주시고 지경을 넓히시며 환난을 벗어나게 해 달라고 기도했고 하나님이 허락하셨어요."},
+        {"from":"야베스","to":"야베스의 어머니","label":"아들","kind":"family","directed":true,"weight":1,"verses":"9","note":"어머니가 내가 수고로이 낳았다며 이름을 야베스라 했어요. 그는 형제들보다 존귀했어요."},
+        {"from":"시므온 자손","to":"하나님","label":"땅을 얻은 지파","kind":"other","directed":true,"weight":1,"verses":"39-43","note":"시므온 자손들이 그돌 어귀와 세일 산으로 가서 좋은 목초지를 얻었어요."}
       ],
       "places": [
         {"name":"그돌","where":"유다 남쪽 골짜기 목초지","what":"시므온 자손이 차지한 땅","weight":2},
@@ -161,10 +161,10 @@
         {"name":"하나님","role":"부르짖음에 응답하신 분","weight":3}
       ],
       "rels": [
-        {"from":"요단 동쪽 지파들","to":"하갈 사람","label":"싸운 상대","kind":"conflict","directed":false,"weight":3},
-        {"from":"하나님","to":"요단 동쪽 지파들","label":"응답하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"디글랏 빌레셀","to":"요단 동쪽 지파들","label":"끌고 간 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"르우벤","to":"요셉","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"요단 동쪽 지파들","to":"하갈 사람","label":"싸운 상대","kind":"conflict","directed":false,"weight":3,"verses":"18-20","note":"르우벤과 갓과 므낫세 반 지파가 하갈 사람과 싸울 때 하나님께 부르짖어 이겼어요."},
+        {"from":"하나님","to":"요단 동쪽 지파들","label":"응답하신 분","kind":"ally","directed":true,"weight":3,"verses":"20","note":"그들이 싸울 때 하나님께 의뢰하자 하나님이 그 기도를 들어주셨어요."},
+        {"from":"디글랏 빌레셀","to":"요단 동쪽 지파들","label":"끌고 간 왕","kind":"conflict","directed":true,"weight":2,"verses":"25-26","note":"그들이 조상의 하나님께 범죄하자 하나님이 앗수르 왕을 일으켜 그들을 사로잡아 가게 하셨어요."},
+        {"from":"르우벤","to":"요셉","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1-2","note":"르우벤은 맏아들이지만 아버지의 침상을 더럽혀 장자의 명분이 요셉의 아들들에게 돌아갔어요."}
       ],
       "places": [
         {"name":"길르앗과 바산","where":"요단 동쪽 고원과 목초지","what":"르우벤·갓·므낫세 반 지파가 산 땅","weight":2},
@@ -192,11 +192,11 @@
         {"name":"다윗","role":"찬양 맡을 사람을 세운 왕","weight":2}
       ],
       "rels": [
-        {"from":"아론","to":"레위","label":"후손","kind":"family","directed":true,"weight":2},
-        {"from":"사독","to":"아론","label":"후손","kind":"family","directed":true,"weight":2},
-        {"from":"헤만","to":"다윗","label":"세움 받은 찬양대","kind":"ally","directed":true,"weight":2},
-        {"from":"아삽","to":"헤만","label":"동역한 찬양대","kind":"ally","directed":false,"weight":1},
-        {"from":"에단","to":"헤만","label":"동역한 찬양대","kind":"ally","directed":false,"weight":1}
+        {"from":"아론","to":"레위","label":"후손","kind":"family","directed":true,"weight":2,"verses":"1-3","note":"레위의 아들 고핫의 손자 아므람이 아론과 모세와 미리암을 낳았어요."},
+        {"from":"사독","to":"아론","label":"후손","kind":"family","directed":true,"weight":2,"verses":"3-8","note":"아론의 아들 엘르아살에서 대제사장 계보가 이어져 사독에 이르렀어요."},
+        {"from":"헤만","to":"다윗","label":"세움 받은 찬양대","kind":"ally","directed":true,"weight":2,"verses":"31-33","note":"다윗이 언약궤를 둔 뒤 노래를 맡을 사람들을 세웠는데 고핫 자손 헤만이 그 우두머리였어요."},
+        {"from":"아삽","to":"헤만","label":"동역한 찬양대","kind":"ally","directed":false,"weight":1,"verses":"39","note":"헤만의 형제 아삽은 그의 오른쪽에 서서 찬양했어요."},
+        {"from":"에단","to":"헤만","label":"동역한 찬양대","kind":"ally","directed":false,"weight":1,"verses":"44","note":"므라리 자손 에단은 헤만의 왼쪽에 서서 함께 찬양했어요."}
       ],
       "places": [
         {"name":"예루살렘 성막","where":"다윗이 궤를 둔 곳","what":"찬양하는 이들이 섬긴 곳","weight":2},
@@ -223,11 +223,11 @@
         {"name":"에브라임의 형제들","role":"와서 위로한 이들","weight":1}
       ],
       "rels": [
-        {"from":"가드 사람","to":"에셀과 엘르앗","label":"죽인 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"브리아","to":"에브라임","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"세에라","to":"에브라임","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"여호수아","to":"에브라임","label":"후손","kind":"family","directed":true,"weight":1},
-        {"from":"에브라임의 형제들","to":"에브라임","label":"위로한 형제","kind":"ally","directed":true,"weight":1}
+        {"from":"가드 사람","to":"에셀과 엘르앗","label":"죽인 이들","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"에브라임의 아들 에셀과 엘르앗이 가드 사람의 가축을 빼앗으러 내려갔다가 그들에게 죽임을 당했어요."},
+        {"from":"브리아","to":"에브라임","label":"아들","kind":"family","directed":true,"weight":2,"verses":"23","note":"아들들을 잃은 뒤 에브라임이 다시 아들을 낳고 집에 재앙이 있었다며 이름을 브리아라 했어요."},
+        {"from":"세에라","to":"에브라임","label":"딸","kind":"family","directed":true,"weight":1,"verses":"24","note":"에브라임의 딸 세에라는 아래 벧호론과 위 벧호론을 건축했어요."},
+        {"from":"여호수아","to":"에브라임","label":"후손","kind":"family","directed":true,"weight":1,"verses":"26-27","note":"에브라임의 후손 가운데 눈의 아들 여호수아가 있어요."},
+        {"from":"에브라임의 형제들","to":"에브라임","label":"위로한 형제","kind":"ally","directed":true,"weight":1,"verses":"22","note":"에브라임이 아들들 때문에 여러 날 슬퍼하자 형제들이 와서 위로했어요."}
       ],
       "places": [
         {"name":"가드","where":"블레셋의 성읍","what":"에브라임 아들들이 죽은 곳","weight":1},
@@ -253,11 +253,11 @@
         {"name":"미가","role":"므립바알의 아들","weight":1}
       ],
       "rels": [
-        {"from":"사울","to":"기스","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"에스바알","to":"사울","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"므립바알","to":"요나단","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"미가","to":"므립바알","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"사울","to":"기스","label":"아들","kind":"family","directed":true,"weight":2,"verses":"33","note":"넬이 기스를 낳고 기스가 사울을 낳았어요."},
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":3,"verses":"33","note":"사울은 요나단과 말기수아와 아비나답과 에스바알을 낳았어요."},
+        {"from":"에스바알","to":"사울","label":"아들","kind":"family","directed":true,"weight":1,"verses":"33","note":"에스바알은 사울의 아들이에요. 사무엘하에서는 이스보셋으로 불려요."},
+        {"from":"므립바알","to":"요나단","label":"아들","kind":"family","directed":true,"weight":2,"verses":"34","note":"요나단의 아들은 므립바알이에요. 사무엘하의 므비보셋과 같은 사람이에요."},
+        {"from":"미가","to":"므립바알","label":"아들","kind":"family","directed":true,"weight":1,"verses":"34","note":"므립바알이 미가를 낳았어요."}
       ],
       "places": [
         {"name":"기브온","where":"예루살렘 북서쪽 약 10km","what":"사울 집안 조상이 산 곳","weight":2},
@@ -285,10 +285,10 @@
         {"name":"사울","role":"족보가 다시 나온 왕","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"문지기들","label":"세운 왕","kind":"ally","directed":true,"weight":1},
-        {"from":"사무엘","to":"문지기들","label":"세운 선견자","kind":"ally","directed":true,"weight":1},
-        {"from":"살룸","to":"문지기들","label":"우두머리","kind":"ally","directed":true,"weight":1},
-        {"from":"찬양하는 이들","to":"제사장들","label":"함께 섬긴 이들","kind":"ally","directed":false,"weight":1}
+        {"from":"다윗","to":"문지기들","label":"세운 왕","kind":"ally","directed":true,"weight":1,"verses":"22","note":"문지기로 택함받은 사람은 이백십이 명인데 다윗과 선견자 사무엘이 그들을 세워 직분을 맡겼어요."},
+        {"from":"사무엘","to":"문지기들","label":"세운 선견자","kind":"ally","directed":true,"weight":1,"verses":"22","note":"선견자 사무엘도 다윗과 함께 문지기의 직분을 정했어요."},
+        {"from":"살룸","to":"문지기들","label":"우두머리","kind":"ally","directed":true,"weight":1,"verses":"17","note":"문지기의 우두머리는 살룸이었어요."},
+        {"from":"찬양하는 이들","to":"제사장들","label":"함께 섬긴 이들","kind":"ally","directed":false,"weight":1,"verses":"33","note":"찬양하는 레위 족장들은 밤낮으로 그 일에 힘써서 다른 일을 면제받았어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"돌아온 백성의 중심","what":"다시 성전을 섬긴 곳","weight":3},
@@ -317,11 +317,11 @@
         {"name":"하나님","role":"나라를 다윗에게 넘기심","weight":2}
       ],
       "rels": [
-        {"from":"블레셋 사람","to":"사울","label":"죽게 한 적","kind":"conflict","directed":true,"weight":3},
-        {"from":"무기 든 자","to":"사울","label":"끝까지 따른 부하","kind":"ally","directed":true,"weight":2},
-        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"야베스 길르앗 용사들","to":"사울","label":"장사한 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"다윗","label":"나라를 주신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"블레셋 사람","to":"사울","label":"죽게 한 적","kind":"conflict","directed":true,"weight":3,"verses":"2-4","note":"블레셋 사람들이 사울과 그 아들들을 추격해 요나단을 죽이고 사울에게 중상을 입혔어요."},
+        {"from":"무기 든 자","to":"사울","label":"끝까지 따른 부하","kind":"ally","directed":true,"weight":2,"verses":"4-5","note":"무기 든 자는 사울을 찌르라는 명령을 따르지 못했고, 사울이 죽자 자기도 칼에 엎드려 죽었어요."},
+        {"from":"요나단","to":"사울","label":"아들","kind":"family","directed":true,"weight":2,"verses":"2","note":"블레셋이 사울의 아들 요나단과 아비나답과 말기수아를 죽였어요."},
+        {"from":"야베스 길르앗 용사들","to":"사울","label":"장사한 이들","kind":"ally","directed":true,"weight":2,"verses":"12","note":"야베스 길르앗 용사들이 사울과 아들들의 시신을 거두어 상수리나무 아래 장사했어요."},
+        {"from":"하나님","to":"다윗","label":"나라를 주신 분","kind":"ally","directed":true,"weight":2,"verses":"13-14","note":"사울이 하나님께 범죄하고 묻지 않았기에 하나님이 그를 죽이시고 나라를 이새의 아들 다윗에게 넘기셨어요."}
       ],
       "places": [
         {"name":"길보아산","where":"이스르엘 골짜기 동쪽 산","what":"사울과 아들들이 죽은 곳","weight":3},
@@ -352,12 +352,12 @@
         {"name":"이스라엘 장로들","role":"헤브론에서 언약한 지도자","weight":2}
       ],
       "rels": [
-        {"from":"이스라엘 장로들","to":"다윗","label":"왕으로 세운 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"요압","to":"다윗","label":"군대 우두머리","kind":"ally","directed":true,"weight":2},
-        {"from":"세 용사","to":"다윗","label":"목숨 건 용사","kind":"ally","directed":true,"weight":3},
-        {"from":"다윗","to":"여부스 사람","label":"성을 빼앗은 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"아비새","to":"요압","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"브나야","to":"다윗","label":"용사","kind":"ally","directed":true,"weight":1}
+        {"from":"이스라엘 장로들","to":"다윗","label":"왕으로 세운 이들","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"온 이스라엘이 헤브론에 모여 우리는 왕의 골육이라며 다윗과 언약하고 기름 부어 왕으로 세웠어요."},
+        {"from":"요압","to":"다윗","label":"군대 우두머리","kind":"ally","directed":true,"weight":2,"verses":"6","note":"다윗이 여부스를 먼저 치는 자를 우두머리로 삼겠다 했고 요압이 먼저 올라가 우두머리가 되었어요."},
+        {"from":"세 용사","to":"다윗","label":"목숨 건 용사","kind":"ally","directed":true,"weight":3,"verses":"17-19","note":"다윗이 베들레헴 우물물을 그리워하자 세 용사가 블레셋 진을 뚫고 길어 왔고, 다윗은 그 물을 하나님께 부어 드렸어요."},
+        {"from":"다윗","to":"여부스 사람","label":"성을 빼앗은 왕","kind":"conflict","directed":true,"weight":2,"verses":"4-7","note":"다윗이 여부스를 쳐서 시온 산성을 빼앗아 다윗성이라 했어요."},
+        {"from":"아비새","to":"요압","label":"형제","kind":"family","directed":false,"weight":1,"verses":"20","note":"요압의 아우 아비새는 세 용사의 우두머리였어요."},
+        {"from":"브나야","to":"다윗","label":"용사","kind":"ally","directed":true,"weight":1,"verses":"22-25","note":"브나야는 사자를 죽이고 애굽 사람을 쓰러뜨린 용사로 다윗이 호위대장으로 삼았어요."}
       ],
       "places": [
         {"name":"헤브론","where":"예루살렘 남쪽 약 30km","what":"다윗이 왕으로 기름 부음 받은 곳","weight":2},
@@ -386,11 +386,11 @@
         {"name":"성령","role":"아마새에게 임하심","weight":2}
       ],
       "rels": [
-        {"from":"아마새","to":"다윗","label":"충성 고백한 장수","kind":"ally","directed":true,"weight":3},
-        {"from":"베냐민 용사들","to":"다윗","label":"찾아온 용사","kind":"ally","directed":true,"weight":2},
-        {"from":"갓 용사들","to":"다윗","label":"찾아온 용사","kind":"ally","directed":true,"weight":2},
-        {"from":"온 이스라엘 군대","to":"다윗","label":"왕으로 세운 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"성령","to":"아마새","label":"임하신 영","kind":"ally","directed":true,"weight":2}
+        {"from":"아마새","to":"다윗","label":"충성 고백한 장수","kind":"ally","directed":true,"weight":3,"verses":"18","note":"성령이 아마새에게 임하자 그가 다윗이여 우리는 당신의 편이니 평강이 있을지어다라고 고백했어요."},
+        {"from":"베냐민 용사들","to":"다윗","label":"찾아온 용사","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"사울의 친족인 베냐민 용사들도 시글락의 다윗에게 찾아와 도왔어요."},
+        {"from":"갓 용사들","to":"다윗","label":"찾아온 용사","kind":"ally","directed":true,"weight":2,"verses":"8","note":"사자 같은 얼굴에 노루처럼 빠른 갓 용사들이 광야 요새의 다윗에게 왔어요."},
+        {"from":"온 이스라엘 군대","to":"다윗","label":"왕으로 세운 이들","kind":"ally","directed":true,"weight":3,"verses":"38","note":"싸움에 익숙한 군사들이 한마음으로 헤브론에 와서 다윗을 온 이스라엘 왕으로 세웠어요."},
+        {"from":"성령","to":"아마새","label":"임하신 영","kind":"ally","directed":true,"weight":2,"verses":"18","note":"그때 성령이 삼십 명의 우두머리 아마새에게 임했어요."}
       ],
       "places": [
         {"name":"시글락","where":"유다 남쪽 블레셋 경계 성읍","what":"용사들이 다윗에게 모여든 곳","weight":2},
@@ -417,11 +417,11 @@
         {"name":"하나님","role":"거룩함을 드러내신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"웃사","label":"진노하신 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"웃사","to":"아히오","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"이스라엘 지도자들","to":"다윗","label":"의논한 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"오벧에돔","label":"복 주신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"다윗","to":"하나님","label":"두려워한 왕","kind":"other","directed":true,"weight":2}
+        {"from":"하나님","to":"웃사","label":"진노하신 분","kind":"conflict","directed":true,"weight":3,"verses":"9-10","note":"소들이 뛰어 궤가 흔들리자 웃사가 손을 내밀어 붙들었고 하나님이 진노하여 그를 치셨어요."},
+        {"from":"웃사","to":"아히오","label":"형제","kind":"family","directed":false,"weight":1,"verses":"7","note":"웃사와 아히오가 새 수레를 몰아 하나님의 궤를 옮겼어요."},
+        {"from":"이스라엘 지도자들","to":"다윗","label":"의논한 이들","kind":"ally","directed":true,"weight":1,"verses":"1-4","note":"다윗이 천부장과 백부장과 모든 지도자와 의논했고 온 회중이 궤를 옮기자는 말을 옳게 여겼어요."},
+        {"from":"하나님","to":"오벧에돔","label":"복 주신 분","kind":"ally","directed":true,"weight":2,"verses":"14","note":"궤가 오벧에돔의 집에 석 달 머무는 동안 하나님이 그 집과 소유에 복을 주셨어요."},
+        {"from":"다윗","to":"하나님","label":"두려워한 왕","kind":"other","directed":true,"weight":2,"verses":"12","note":"그날 다윗이 하나님을 두려워하여 내가 어떻게 하나님의 궤를 모셔 오겠느냐고 했어요."}
       ],
       "places": [
         {"name":"기럇여아림","where":"예루살렘 서쪽 약 13km","what":"궤가 머물던 아비나답의 집","weight":2},
@@ -446,10 +446,10 @@
         {"name":"하나님","role":"싸움의 길을 알려 주심","weight":3}
       ],
       "rels": [
-        {"from":"히람","to":"다윗","label":"도운 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"다윗","to":"하나님","label":"물은 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"블레셋 사람","to":"다윗","label":"쳐들어온 적","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"블레셋 사람","label":"치신 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"히람","to":"다윗","label":"도운 왕","kind":"ally","directed":true,"weight":2,"verses":"1","note":"두로 왕 히람이 백향목과 석수와 목수를 보내 다윗의 궁을 지어 주었어요."},
+        {"from":"다윗","to":"하나님","label":"물은 왕","kind":"ally","directed":true,"weight":3,"verses":"10, 14","note":"블레셋이 쳐들어오자 다윗이 올라가도 되겠느냐고 하나님께 먼저 물었어요."},
+        {"from":"블레셋 사람","to":"다윗","label":"쳐들어온 적","kind":"conflict","directed":true,"weight":2,"verses":"8-9","note":"다윗이 왕이 되었다는 소식에 블레셋 사람들이 다윗을 찾으러 르바임 골짜기로 몰려왔어요."},
+        {"from":"하나님","to":"블레셋 사람","label":"치신 분","kind":"conflict","directed":true,"weight":2,"verses":"11, 15-16","note":"하나님이 물을 흩음같이 적을 흩으시고 뽕나무 꼭대기의 걸음 소리로 앞서 나가 블레셋 군대를 치셨어요."}
       ],
       "places": [
         {"name":"르바임 골짜기","where":"예루살렘 남서쪽 골짜기","what":"블레셋이 두 번 진 친 곳","weight":2},
@@ -480,11 +480,11 @@
         {"name":"미갈","role":"춤추는 다윗을 업신여긴 아내","weight":2}
       ],
       "rels": [
-        {"from":"레위인들","to":"다윗","label":"궤를 멘 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"사독","to":"레위인들","label":"이끈 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"그나냐","to":"레위인들","label":"노래 지휘자","kind":"ally","directed":true,"weight":1},
-        {"from":"미갈","to":"다윗","label":"업신여긴 아내","kind":"conflict","directed":true,"weight":2},
-        {"from":"헤만","to":"그나냐","label":"함께한 찬양대","kind":"ally","directed":true,"weight":1}
+        {"from":"레위인들","to":"다윗","label":"궤를 멘 이들","kind":"ally","directed":true,"weight":3,"verses":"2, 15","note":"다윗이 레위 사람 외에는 궤를 멜 수 없다 했고, 레위 자손이 모세의 명령대로 채에 꿰어 어깨에 메었어요."},
+        {"from":"사독","to":"레위인들","label":"이끈 제사장","kind":"ally","directed":true,"weight":2,"verses":"11-14","note":"다윗이 사독과 아비아달과 레위 족장들을 불러 스스로 성결하게 하고 궤를 메어 오게 했어요."},
+        {"from":"그나냐","to":"레위인들","label":"노래 지휘자","kind":"ally","directed":true,"weight":1,"verses":"22","note":"레위 사람의 우두머리 그나냐는 노래에 익숙해서 찬양을 지휘했어요."},
+        {"from":"미갈","to":"다윗","label":"업신여긴 아내","kind":"conflict","directed":true,"weight":2,"verses":"29","note":"궤가 다윗성에 들어올 때 미갈이 창으로 춤추는 다윗을 보고 마음으로 업신여겼어요."},
+        {"from":"헤만","to":"그나냐","label":"함께한 찬양대","kind":"ally","directed":true,"weight":1,"verses":"19, 22","note":"노래하는 헤만과 아삽과 에단이 놋 제금을 크게 울렸고 그나냐가 노래를 이끌었어요."}
       ],
       "places": [
         {"name":"다윗 성","where":"예루살렘 시온 언덕","what":"궤를 둘 장막을 친 곳","weight":3},
@@ -513,11 +513,11 @@
         {"name":"하나님","role":"언약을 기억하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"아삽","label":"찬송 맡긴 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"다윗","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"사독","to":"다윗","label":"성막 맡은 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"헤만","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1},
-        {"from":"다윗","to":"하나님","label":"감사한 왕","kind":"ally","directed":true,"weight":3}
+        {"from":"다윗","to":"아삽","label":"찬송 맡긴 왕","kind":"ally","directed":true,"weight":3,"verses":"4-7","note":"다윗이 레위 사람들을 궤 앞에 세워 찬송하게 하고, 그날 처음으로 아삽에게 감사 찬송을 맡겼어요."},
+        {"from":"다윗","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"다윗이 번제를 마치고 여호와의 이름으로 백성에게 축복하고 떡과 고기와 건포도를 나눠 주었어요."},
+        {"from":"사독","to":"다윗","label":"성막 맡은 제사장","kind":"ally","directed":true,"weight":2,"verses":"39-40","note":"다윗은 기브온 산당의 성막 앞에 제사장 사독을 두어 아침저녁으로 번제를 드리게 했어요."},
+        {"from":"헤만","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1,"verses":"41-42","note":"헤만과 여두둔도 함께 나팔과 제금으로 하나님을 찬송했어요."},
+        {"from":"다윗","to":"하나님","label":"감사한 왕","kind":"ally","directed":true,"weight":3,"verses":"8-36","note":"다윗이 여호와께 감사하고 그의 이름을 부르며 행하신 일을 만민 중에 알리라는 노래를 지었어요."}
       ],
       "places": [
         {"name":"다윗 성 장막","where":"예루살렘 시온 언덕","what":"궤를 모시고 찬양한 곳","weight":3},
@@ -540,10 +540,10 @@
         {"name":"하나님","role":"다윗의 집을 세우겠다 하심","weight":3}
       ],
       "rels": [
-        {"from":"나단","to":"다윗","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"다윗","label":"약속하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"다윗의 아들","label":"아버지 되실 분","kind":"family","directed":true,"weight":2},
-        {"from":"다윗","to":"하나님","label":"감사한 왕","kind":"ally","directed":true,"weight":2}
+        {"from":"나단","to":"다윗","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"1-4, 15","note":"다윗이 성전을 짓고 싶어 하자 나단이 하나님의 말씀을 받아 너는 집을 짓지 말라고 전했어요."},
+        {"from":"하나님","to":"다윗","label":"약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"10-14","note":"하나님은 오히려 내가 너를 위해 집을 세우고 네 아들의 나라를 영원히 견고하게 하리라고 약속하셨어요."},
+        {"from":"하나님","to":"다윗의 아들","label":"아버지 되실 분","kind":"family","directed":true,"weight":2,"verses":"13","note":"하나님이 나는 그의 아버지가 되고 그는 내 아들이 되리라고 하셨어요."},
+        {"from":"다윗","to":"하나님","label":"감사한 왕","kind":"ally","directed":true,"weight":2,"verses":"16-20","note":"다윗이 여호와 앞에 앉아 내가 누구이기에 여기까지 이르게 하셨느냐며 감사했어요."}
       ],
       "places": [
         {"name":"백향목 궁","where":"예루살렘의 다윗 왕궁","what":"다윗이 성전을 생각한 곳","weight":2},
@@ -573,12 +573,12 @@
         {"name":"하나님","role":"가는 곳마다 이기게 하심","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하닷에셀","label":"이긴 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"도우","to":"다윗","label":"축하한 왕","kind":"ally","directed":true,"weight":1},
-        {"from":"하도람","to":"도우","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"아비새","to":"다윗","label":"에돔 친 장수","kind":"ally","directed":true,"weight":2},
-        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"다윗","label":"이기게 하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"다윗","to":"하닷에셀","label":"이긴 왕","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"다윗이 유브라데 강가로 가던 소바 왕 하닷에셀을 쳐서 병거와 기병과 보병을 빼앗았어요."},
+        {"from":"도우","to":"다윗","label":"축하한 왕","kind":"ally","directed":true,"weight":1,"verses":"9-10","note":"하맛 왕 도우가 다윗이 하닷에셀을 이겼다는 말을 듣고 아들을 보내 축하했어요."},
+        {"from":"하도람","to":"도우","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10","note":"도우가 아들 하도람을 보내 다윗에게 문안하고 금은 그릇을 드렸어요."},
+        {"from":"아비새","to":"다윗","label":"에돔 친 장수","kind":"ally","directed":true,"weight":2,"verses":"12","note":"스루야의 아들 아비새가 소금 골짜기에서 에돔 사람 만 팔천 명을 쳤어요."},
+        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"15","note":"스루야의 아들 요압이 다윗의 군대 장관이었어요."},
+        {"from":"하나님","to":"다윗","label":"이기게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"6, 13","note":"다윗이 어디로 가든지 하나님이 이기게 하셨어요."}
       ],
       "places": [
         {"name":"가드","where":"블레셋의 성읍","what":"다윗이 빼앗은 곳","weight":1},
@@ -608,12 +608,12 @@
         {"name":"나하스","role":"죽은 암몬 왕","weight":1}
       ],
       "rels": [
-        {"from":"하눈","to":"다윗의 사절들","label":"모욕한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"암몬 방백들","to":"하눈","label":"부추긴 신하","kind":"other","directed":true,"weight":1},
-        {"from":"요압","to":"아비새","label":"서로 도운 형제","kind":"ally","directed":false,"weight":3},
-        {"from":"다윗","to":"하눈","label":"싸운 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"다윗","to":"소박","label":"죽인 왕","kind":"conflict","directed":true,"weight":1},
-        {"from":"하눈","to":"나하스","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"하눈","to":"다윗의 사절들","label":"모욕한 왕","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"하눈이 위로하러 온 다윗의 신하들을 정탐꾼이라 하여 수염을 깎고 옷을 잘라 돌려보냈어요."},
+        {"from":"암몬 방백들","to":"하눈","label":"부추긴 신하","kind":"other","directed":true,"weight":1,"verses":"3","note":"암몬 방백들이 하눈에게 다윗이 왕의 부친을 존경해서가 아니라 땅을 엿보려고 보낸 것이라고 부추겼어요."},
+        {"from":"요압","to":"아비새","label":"서로 도운 형제","kind":"ally","directed":false,"weight":3,"verses":"10-13","note":"요압이 아비새에게 아람이 나보다 강하면 네가 돕고 암몬이 너보다 강하면 내가 도우리라고 했어요."},
+        {"from":"다윗","to":"하눈","label":"싸운 왕","kind":"conflict","directed":true,"weight":2,"verses":"17-19","note":"다윗이 온 이스라엘을 모아 아람을 치자 아람이 더는 암몬을 돕지 않았어요."},
+        {"from":"다윗","to":"소박","label":"죽인 왕","kind":"conflict","directed":true,"weight":1,"verses":"18","note":"다윗이 아람 군대 장관 소박을 죽였어요."},
+        {"from":"하눈","to":"나하스","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1-2","note":"암몬 왕 나하스가 죽고 아들 하눈이 왕이 되자, 다윗은 나하스의 은혜를 생각해 조문단을 보냈어요."}
       ],
       "places": [
         {"name":"여리고","where":"요단 서쪽 성읍","what":"사절들이 수염이 자랄 때까지 머문 곳","weight":2},
@@ -640,11 +640,11 @@
         {"name":"여섯 손가락 거인","role":"이스라엘을 모욕한 가드 사람","weight":1}
       ],
       "rels": [
-        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2},
-        {"from":"십브개","to":"다윗","label":"용사","kind":"ally","directed":true,"weight":1},
-        {"from":"엘하난","to":"라흐미","label":"죽인 용사","kind":"conflict","directed":true,"weight":2},
-        {"from":"요나단(시므아의 아들)","to":"여섯 손가락 거인","label":"죽인 용사","kind":"conflict","directed":true,"weight":2},
-        {"from":"요나단(시므아의 아들)","to":"다윗","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"요압이 군대를 이끌고 암몬 랍바를 쳐서 무너뜨렸고, 다윗은 그 왕관을 가져다 썼어요."},
+        {"from":"십브개","to":"다윗","label":"용사","kind":"ally","directed":true,"weight":1,"verses":"4","note":"후사 사람 십브개가 게셀에서 거인족 십배를 쳐 죽였어요."},
+        {"from":"엘하난","to":"라흐미","label":"죽인 용사","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"야일의 아들 엘하난이 가드 사람 골리앗의 아우 라흐미를 죽였어요."},
+        {"from":"요나단(시므아의 아들)","to":"여섯 손가락 거인","label":"죽인 용사","kind":"conflict","directed":true,"weight":2,"verses":"6-7","note":"가드에 손가락과 발가락이 여섯씩인 거인이 이스라엘을 능욕하자 요나단이 그를 죽였어요."},
+        {"from":"요나단(시므아의 아들)","to":"다윗","label":"조카","kind":"family","directed":true,"weight":1,"verses":"7","note":"요나단은 다윗의 형 시므아의 아들이에요."}
       ],
       "places": [
         {"name":"랍바","where":"암몬의 도성","what":"요압이 무너뜨린 성","weight":3},
@@ -674,12 +674,12 @@
         {"name":"하나님","role":"불로 응답하신 분","weight":3}
       ],
       "rels": [
-        {"from":"사탄","to":"다윗","label":"충동한 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"요압","to":"다윗","label":"말린 장관","kind":"other","directed":true,"weight":2},
-        {"from":"갓","to":"다윗","label":"말씀 전한 선견자","kind":"ally","directed":true,"weight":2},
-        {"from":"오르난","to":"다윗","label":"땅을 판 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"다윗","label":"응답하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"여호와의 천사","to":"오르난","label":"보인 천사","kind":"other","directed":true,"weight":1}
+        {"from":"사탄","to":"다윗","label":"충동한 자","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"사탄이 일어나 이스라엘을 대적하고 다윗을 충동해 인구를 세게 했어요."},
+        {"from":"요압","to":"다윗","label":"말린 장관","kind":"other","directed":true,"weight":2,"verses":"3","note":"요압이 내 주 왕이여 어찌 이 일을 하려 하시냐, 이스라엘에 죄가 되게 하시냐며 말렸어요."},
+        {"from":"갓","to":"다윗","label":"말씀 전한 선견자","kind":"ally","directed":true,"weight":2,"verses":"9-12","note":"선견자 갓이 하나님의 말씀을 받아 세 가지 벌 가운데 하나를 택하라고 다윗에게 전했어요."},
+        {"from":"오르난","to":"다윗","label":"땅을 판 사람","kind":"ally","directed":true,"weight":3,"verses":"22-25","note":"오르난이 타작마당을 거저 드리겠다 했지만 다윗은 값을 다 치르겠다며 금 육백 세겔을 주었어요."},
+        {"from":"하나님","to":"다윗","label":"응답하신 분","kind":"ally","directed":true,"weight":3,"verses":"26","note":"다윗이 제단을 쌓고 부르짖자 하나님이 하늘에서 번제단 위에 불을 내려 응답하셨어요."},
+        {"from":"여호와의 천사","to":"오르난","label":"보인 천사","kind":"other","directed":true,"weight":1,"verses":"20","note":"타작하던 오르난이 돌이켜 천사를 보고 네 아들과 함께 숨었어요."}
       ],
       "places": [
         {"name":"오르난의 타작마당","where":"예루살렘 모리아산 위","what":"제단을 쌓고 불로 응답받은 곳","weight":3},
@@ -704,10 +704,10 @@
         {"name":"하나님","role":"솔로몬에게 평강을 주실 분","weight":2}
       ],
       "rels": [
-        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"이스라엘 지도자들","to":"솔로몬","label":"도울 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"석수들","to":"다윗","label":"일꾼","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"솔로몬","label":"택하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3,"verses":"6-13","note":"다윗이 솔로몬을 불러 내가 성전을 지으려 했으나 피를 많이 흘렸기에 네가 지으라 하며 강하고 담대하라고 당부했어요."},
+        {"from":"이스라엘 지도자들","to":"솔로몬","label":"도울 이들","kind":"ally","directed":true,"weight":2,"verses":"17-19","note":"다윗이 모든 지도자들에게 내 아들 솔로몬을 도와 성전을 건축하라고 명령했어요."},
+        {"from":"석수들","to":"다윗","label":"일꾼","kind":"ally","directed":true,"weight":1,"verses":"2","note":"다윗이 이방 사람들을 모아 석수로 삼아 성전 지을 돌을 다듬게 했어요."},
+        {"from":"하나님","to":"솔로몬","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"9-10","note":"하나님이 다윗에게 네 아들은 평강의 사람이니 그가 내 이름을 위해 집을 지으리라고 하셨어요."}
       ],
       "places": [
         {"name":"성전 터","where":"오르난의 타작마당","what":"성전과 번제단 자리로 정한 곳","weight":3},
@@ -735,10 +735,10 @@
         {"name":"므라리","role":"레위의 한 집안","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"솔로몬","label":"왕위 넘긴 아버지","kind":"family","directed":true,"weight":2},
-        {"from":"다윗","to":"레위인들","label":"직무 정한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"아론","to":"레위인들","label":"제사장 집안","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"아론","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"다윗","to":"솔로몬","label":"왕위 넘긴 아버지","kind":"family","directed":true,"weight":2,"verses":"1","note":"다윗이 나이 많아 늙자 아들 솔로몬을 이스라엘 왕으로 세웠어요."},
+        {"from":"다윗","to":"레위인들","label":"직무 정한 왕","kind":"ally","directed":true,"weight":3,"verses":"3-6, 24-32","note":"다윗이 삼십 세 이상 레위인을 세어 성전 일과 관원과 문지기와 찬양으로 직무를 나누었어요."},
+        {"from":"아론","to":"레위인들","label":"제사장 집안","kind":"ally","directed":true,"weight":2,"verses":"13, 28","note":"아론은 구별되어 지성소를 거룩하게 하고 레위인들은 아론 자손을 도왔어요."},
+        {"from":"모세","to":"아론","label":"형제","kind":"family","directed":false,"weight":1,"verses":"13-14","note":"아므람의 아들은 아론과 모세예요. 하나님의 사람 모세의 아들들은 레위 지파 중에 기록되었어요."}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"하나님이 영원히 거하실 집","what":"레위인이 맡아 섬길 곳","weight":3}
@@ -765,11 +765,11 @@
         {"name":"아비야","role":"여덟째 반열","weight":1}
       ],
       "rels": [
-        {"from":"사독","to":"엘르아살","label":"후손","kind":"family","directed":true,"weight":2},
-        {"from":"아히멜렉","to":"이다말","label":"후손","kind":"family","directed":true,"weight":2},
-        {"from":"엘르아살","to":"이다말","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"사독","to":"다윗","label":"함께 나눈 제사장","kind":"ally","directed":true,"weight":1},
-        {"from":"스마야","to":"다윗","label":"기록한 서기관","kind":"ally","directed":true,"weight":1}
+        {"from":"사독","to":"엘르아살","label":"후손","kind":"family","directed":true,"weight":2,"verses":"3","note":"다윗이 엘르아살 자손 사독과 이다말 자손 아히멜렉과 함께 제사장 직무를 나누었어요."},
+        {"from":"아히멜렉","to":"이다말","label":"후손","kind":"family","directed":true,"weight":2,"verses":"3","note":"아히멜렉은 이다말의 자손이에요."},
+        {"from":"엘르아살","to":"이다말","label":"형제","kind":"family","directed":false,"weight":2,"verses":"2","note":"나답과 아비후가 아들 없이 죽어 엘르아살과 이다말이 제사장 직분을 행했어요."},
+        {"from":"사독","to":"다윗","label":"함께 나눈 제사장","kind":"ally","directed":true,"weight":1,"verses":"3, 31","note":"제사장 반열을 제비 뽑을 때 다윗과 사독과 아히멜렉이 함께했어요."},
+        {"from":"스마야","to":"다윗","label":"기록한 서기관","kind":"ally","directed":true,"weight":1,"verses":"6","note":"레위 사람 서기관 스마야가 왕과 지도자들 앞에서 제비 뽑은 반열을 기록했어요."}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"하나님의 집","what":"제사장이 반열대로 섬긴 곳","weight":2}
@@ -793,11 +793,11 @@
         {"name":"헤만의 자녀들","role":"찬양을 맡은 열넷 아들과 세 딸","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"아삽","label":"세운 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"헤만","to":"다윗","label":"왕의 선견자","kind":"ally","directed":true,"weight":2},
-        {"from":"헤만의 자녀들","to":"헤만","label":"자녀","kind":"family","directed":true,"weight":1},
-        {"from":"여두둔","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1},
-        {"from":"군대 지휘관들","to":"다윗","label":"함께 구별함","kind":"ally","directed":true,"weight":1}
+        {"from":"다윗","to":"아삽","label":"세운 왕","kind":"ally","directed":true,"weight":2,"verses":"1","note":"다윗과 군대 지휘관들이 아삽과 헤만과 여두둔의 자손을 구별해 수금과 비파로 신령한 노래를 하게 했어요."},
+        {"from":"헤만","to":"다윗","label":"왕의 선견자","kind":"ally","directed":true,"weight":2,"verses":"5","note":"헤만은 하나님의 말씀을 받드는 왕의 선견자였어요."},
+        {"from":"헤만의 자녀들","to":"헤만","label":"자녀","kind":"family","directed":true,"weight":1,"verses":"5-6","note":"하나님이 헤만에게 열네 아들과 세 딸을 주셨고 그들이 아버지의 지휘 아래 성전에서 노래했어요."},
+        {"from":"여두둔","to":"아삽","label":"함께 찬양","kind":"ally","directed":false,"weight":1,"verses":"1, 3","note":"여두둔도 아삽과 함께 성전 찬양을 맡았어요."},
+        {"from":"군대 지휘관들","to":"다윗","label":"함께 구별함","kind":"ally","directed":true,"weight":1,"verses":"1","note":"군대 지휘관들도 다윗과 함께 찬양할 사람들을 구별했어요."}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"하나님의 집","what":"악기로 신령한 노래를 한 곳","weight":2}
@@ -827,9 +827,9 @@
         {"name":"하나님","role":"오벧에돔에게 복 주심","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"오벧에돔","label":"복 주신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"슬로못","to":"다윗","label":"곳간 맡은 이","kind":"ally","directed":true,"weight":1},
-        {"from":"하사뱌","to":"여리야","label":"나눠 맡은 이","kind":"ally","directed":false,"weight":1}
+        {"from":"하나님","to":"오벧에돔","label":"복 주신 분","kind":"ally","directed":true,"weight":2,"verses":"4-5","note":"하나님이 오벧에돔에게 복을 주셔서 여덟 아들이 있었고 그 자손이 문지기가 되었어요."},
+        {"from":"슬로못","to":"다윗","label":"곳간 맡은 이","kind":"ally","directed":true,"weight":1,"verses":"26-28","note":"슬로못과 그 형제들이 다윗과 지도자들이 바친 성물의 곳간을 맡았어요."},
+        {"from":"하사뱌","to":"여리야","label":"나눠 맡은 이","kind":"ally","directed":false,"weight":1,"verses":"30-32","note":"요단 서쪽은 하사뱌가, 동쪽은 여리야가 맡아 하나님의 일과 왕의 일을 다스렸어요."}
       ],
       "places": [
         {"name":"성전 동쪽 문","where":"해 뜨는 쪽 정문","what":"셀레먀가 맡은 문","weight":1},
@@ -859,11 +859,11 @@
         {"name":"여호야다","role":"아히도벨 뒤를 이은 모사","weight":1}
       ],
       "rels": [
-        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2},
-        {"from":"아사헬","to":"요압","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"요나단(다윗의 숙부)","to":"다윗","label":"숙부","kind":"family","directed":true,"weight":1},
-        {"from":"후새","to":"다윗","label":"왕의 벗","kind":"ally","directed":true,"weight":1},
-        {"from":"아히도벨","to":"다윗","label":"모사","kind":"ally","directed":true,"weight":1}
+        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2,"verses":"34","note":"요압은 왕의 군대 장관이었어요."},
+        {"from":"아사헬","to":"요압","label":"형제","kind":"family","directed":false,"weight":1,"verses":"7","note":"넷째 달 지휘관은 요압의 아우 아사헬이었어요."},
+        {"from":"요나단(다윗의 숙부)","to":"다윗","label":"숙부","kind":"family","directed":true,"weight":1,"verses":"32","note":"다윗의 숙부 요나단은 지혜 있는 모사요 서기관이었어요."},
+        {"from":"후새","to":"다윗","label":"왕의 벗","kind":"ally","directed":true,"weight":1,"verses":"33","note":"아렉 사람 후새는 왕의 벗이었어요."},
+        {"from":"아히도벨","to":"다윗","label":"모사","kind":"ally","directed":true,"weight":1,"verses":"33","note":"아히도벨은 왕의 모사였어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"다윗의 도성","what":"달마다 반열이 왕을 섬긴 곳","weight":1}
@@ -887,10 +887,10 @@
         {"name":"하나님","role":"솔로몬을 택하신 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"솔로몬","label":"택하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 지도자들","to":"다윗","label":"모인 신하","kind":"ally","directed":true,"weight":2},
-        {"from":"제사장과 레위인","to":"솔로몬","label":"도울 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3,"verses":"9-10, 20","note":"다윗이 솔로몬에게 온전한 마음으로 하나님을 섬기라, 강하고 담대하여 성전 짓는 일을 하라고 당부했어요."},
+        {"from":"하나님","to":"솔로몬","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"하나님이 다윗의 많은 아들 가운데 솔로몬을 택해 왕좌에 앉히시고 성전을 짓게 하셨어요."},
+        {"from":"이스라엘 지도자들","to":"다윗","label":"모인 신하","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"다윗이 지도자와 지휘관과 용사들을 예루살렘에 모으고 일어서서 말했어요."},
+        {"from":"제사장과 레위인","to":"솔로몬","label":"도울 이들","kind":"ally","directed":true,"weight":1,"verses":"21","note":"다윗이 제사장과 레위인의 반열이 솔로몬을 도와 하나님의 전을 섬기리라고 했어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"다윗의 도성","what":"지도자들이 모인 곳","weight":2},
@@ -917,11 +917,11 @@
         {"name":"하나님","role":"모든 것을 주신 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"찬양한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 지도자들","to":"다윗","label":"함께 드린 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"솔로몬","to":"다윗","label":"뒤를 이은 아들","kind":"family","directed":true,"weight":3},
-        {"from":"백성","to":"솔로몬","label":"왕으로 세운 백성","kind":"ally","directed":true,"weight":2},
-        {"from":"사독","to":"솔로몬","label":"제사장","kind":"ally","directed":true,"weight":1}
+        {"from":"다윗","to":"하나님","label":"찬양한 왕","kind":"ally","directed":true,"weight":3,"verses":"10-14","note":"다윗이 회중 앞에서 위대함과 권능과 영광이 다 주께 속하며 우리가 드린 것도 주께 받은 것이라고 찬양했어요."},
+        {"from":"이스라엘 지도자들","to":"다윗","label":"함께 드린 이들","kind":"ally","directed":true,"weight":2,"verses":"6-9","note":"지도자들이 기쁨으로 성전을 위해 금과 은과 보석을 드리자 다윗도 크게 기뻐했어요."},
+        {"from":"솔로몬","to":"다윗","label":"뒤를 이은 아들","kind":"family","directed":true,"weight":3,"verses":"28","note":"다윗이 늙어 수가 다하여 죽고 아들 솔로몬이 뒤를 이었어요."},
+        {"from":"백성","to":"솔로몬","label":"왕으로 세운 백성","kind":"ally","directed":true,"weight":2,"verses":"22-24","note":"온 회중이 솔로몬을 다시 왕으로 삼아 기름 붓고 모든 지도자와 왕자들이 그에게 순종했어요."},
+        {"from":"사독","to":"솔로몬","label":"제사장","kind":"ally","directed":true,"weight":1,"verses":"22","note":"백성은 사독에게 기름 부어 제사장으로 삼았어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"다윗의 도성","what":"예물을 드리고 솔로몬이 즉위한 곳","weight":3},
