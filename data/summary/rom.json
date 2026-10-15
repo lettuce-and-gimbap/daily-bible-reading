@@ -25,11 +25,11 @@
         {"name":"성령","role":"성결의 영","weight":1}
       ],
       "rels": [
-        {"from":"바울","to":"로마 성도들","label":"편지한 사도","kind":"ally","directed":true,"weight":3,"verses":"7","note":"바울이 로마에 있어 하나님의 사랑하심을 받고 성도로 부르심을 받은 모든 자에게 편지했어요."},
-        {"from":"예수","to":"다윗","label":"혈통의 자손","kind":"family","directed":true,"weight":1,"verses":"3","note":"그 아들로 말하면 육신으로는 다윗의 혈통에서 나셨다고 해요."},
-        {"from":"하나님","to":"불의한 사람들","label":"진노하심","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"하나님의 진노가 불의로 진리를 막는 사람들의 모든 경건하지 않음과 불의에 대하여 하늘로부터 나타난다고 해요."},
-        {"from":"하나님","to":"로마 성도들","label":"사랑하시는 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"로마에 있는 이들은 하나님의 사랑하심을 받고 성도로 부르심을 받은 사람들이에요."},
-        {"from":"바울","to":"예수","label":"종","kind":"ally","directed":true,"weight":2,"verses":"1","note":"예수 그리스도의 종 바울은 사도로 부르심을 받아 하나님의 복음을 위하여 택정함을 입었다고 해요."}
+        {"from":"바울","to":"로마 성도들","label":"편지한 사도","kind":"ally","directed":true,"weight":3,"verses":"7","note":"바울은 하나님께 사랑받고 성도로 불린 로마의 모든 사람에게 이 편지를 보냈어요."},
+        {"from":"예수","to":"다윗","label":"혈통의 자손","kind":"family","directed":true,"weight":1,"verses":"3","note":"하나님의 아들은 사람으로는 다윗 집안에서 태어나셨어요."},
+        {"from":"하나님","to":"불의한 사람들","label":"진노하심","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"진리를 알면서도 억누르고 악하게 사는 사람들에게 하나님의 분노가 하늘에서 드러난대요."},
+        {"from":"하나님","to":"로마 성도들","label":"사랑하시는 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"로마 교회 사람들은 하나님이 사랑하셔서 거룩한 백성으로 불러 주신 이들이에요."},
+        {"from":"바울","to":"예수","label":"종","kind":"ally","directed":true,"weight":2,"verses":"1","note":"바울은 자신을 예수님의 종이요, 복음을 전하라고 따로 세움받은 사도라고 소개해요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":3}
@@ -54,11 +54,11 @@
         {"name":"예수","role":"심판을 맡으신 그리스도","weight":1}
       ],
       "rels": [
-        {"from":"바울","to":"판단하는 사람","label":"경고한 사도","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"남을 판단하는 사람아 네가 판단하는 것으로 네가 너를 정죄함은 판단하는 네가 같은 일을 행함이라고 해요."},
-        {"from":"바울","to":"유대인","label":"책망한 사도","kind":"conflict","directed":true,"weight":3,"verses":"17-23","note":"유대인이라 불리는 네가 남은 가르치면서 네 자신은 가르치지 아니하느냐, 율법을 범하여 하나님을 욕되게 하느냐고 해요."},
-        {"from":"하나님","to":"유대인","label":"외모로 보지 않음","kind":"other","directed":true,"weight":2,"verses":"11","note":"이는 하나님께서 외모로 사람을 취하지 아니하심이라고 해요."},
-        {"from":"하나님","to":"이방인","label":"행한 대로 보응","kind":"other","directed":true,"weight":2,"verses":"14-16","note":"율법 없는 이방인이 본성으로 율법의 일을 행할 때 양심이 증거가 되어 하나님이 판단하신다고 해요."},
-        {"from":"유대인","to":"이방인","label":"율법 유무로 나뉨","kind":"conflict","directed":false,"weight":1,"verses":"12","note":"율법 없이 범죄한 자는 율법 없이 망하고 율법이 있고 범죄한 자는 율법으로 심판을 받는다고 해요."}
+        {"from":"바울","to":"판단하는 사람","label":"경고한 사도","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"남을 손가락질하는 사람도 똑같은 잘못을 하고 있으니, 결국 자기 자신을 정죄하는 셈이래요."},
+        {"from":"바울","to":"유대인","label":"책망한 사도","kind":"conflict","directed":true,"weight":3,"verses":"17-23","note":"율법을 자랑하며 남을 가르치는 유대인이 정작 자기는 율법을 어겨 하나님 이름을 욕되게 한다고 꼬집어요."},
+        {"from":"하나님","to":"유대인","label":"외모로 보지 않음","kind":"other","directed":true,"weight":2,"verses":"11","note":"하나님은 사람의 겉모습이나 출신을 보고 편들지 않으세요."},
+        {"from":"하나님","to":"이방인","label":"행한 대로 보응","kind":"other","directed":true,"weight":2,"verses":"14-16","note":"율법이 없는 이방인도 양심에 새겨진 법이 있어서, 하나님은 그 마음속까지 공정하게 판단하신대요."},
+        {"from":"유대인","to":"이방인","label":"율법 유무로 나뉨","kind":"conflict","directed":false,"weight":1,"verses":"12","note":"율법을 몰랐든 알았든, 죄를 지으면 누구나 그에 맞게 심판받는대요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -83,10 +83,10 @@
         {"name":"하나님","role":"의롭다 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"화목제물로 세움","kind":"ally","directed":true,"weight":3,"verses":"25","note":"이 예수를 하나님이 그의 피로써 믿음으로 말미암는 화목제물로 세우셨으니 하고 해요."},
-        {"from":"하나님","to":"모든 사람","label":"값없이 의롭게","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"모든 사람이 죄를 범하였으매 하나님의 영광에 이르지 못하더니 그리스도 예수 안에 있는 속량으로 값없이 의롭다 하심을 얻었다고 해요."},
-        {"from":"유대인","to":"헬라인","label":"함께 죄 아래","kind":"ally","directed":false,"weight":2,"verses":"9","note":"유대인이나 헬라인이나 다 죄 아래에 있다고 우리가 이미 선언하였다고 해요."},
-        {"from":"바울","to":"유대인","label":"나음을 물음","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"그러면 유대인의 나음이 무엇이냐, 범사에 많으니 하나님의 말씀을 맡았음이라고 해요."}
+        {"from":"하나님","to":"예수","label":"화목제물로 세움","kind":"ally","directed":true,"weight":3,"verses":"25","note":"하나님은 예수님을 세우셔서, 그분의 피로 우리 죄를 덮는 제물이 되게 하셨어요."},
+        {"from":"하나님","to":"모든 사람","label":"값없이 의롭게","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"모든 사람이 죄를 지어 하나님 영광에 못 미치지만, 예수님 덕분에 공짜로 의롭다는 인정을 받아요."},
+        {"from":"유대인","to":"헬라인","label":"함께 죄 아래","kind":"ally","directed":false,"weight":2,"verses":"9","note":"유대인이든 이방인이든 누구도 예외 없이 다 죄의 힘 아래 있대요."},
+        {"from":"바울","to":"유대인","label":"나음을 물음","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"유대인이 나은 점은 무엇보다 하나님 말씀을 맡았다는 거래요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -111,11 +111,11 @@
         {"name":"하나님","role":"경건하지 않은 자를 의롭다 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"아브라함","to":"하나님","label":"믿은 조상","kind":"ally","directed":true,"weight":3,"verses":"3","note":"아브라함이 하나님을 믿으매 그것이 그에게 의로 여겨진 바 되었다고 해요."},
+        {"from":"아브라함","to":"하나님","label":"믿은 조상","kind":"ally","directed":true,"weight":3,"verses":"3","note":"아브라함은 하나님 약속을 믿었고, 하나님은 그 믿음을 보시고 의롭다고 인정하셨어요."},
         {"from":"하나님","to":"아브라함","label":"의로 여기심","kind":"ally","directed":true,"weight":3,"verses":"9-11","note":"이 복은 할례받기 전에 아브라함에게 믿음을 의로 여기셨음이라 하며 그는 믿는 모든 자의 조상이 되었다고 해요."},
-        {"from":"아브라함","to":"사라","label":"부부","kind":"family","directed":false,"weight":1,"verses":"19","note":"아브라함은 백 세나 되어 자기 몸과 사라의 태가 죽은 것 같음을 알고도 믿음이 약하여지지 아니했어요."},
-        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"24-25","note":"예수는 우리가 범죄한 것 때문에 내줌이 되고 또한 우리를 의롭다 하시기 위하여 살아나셨다고 해요."},
-        {"from":"다윗","to":"아브라함","label":"함께 증인","kind":"other","directed":false,"weight":1,"verses":"6-8","note":"다윗도 일한 것이 없이 의로 여기심을 받는 사람의 복에 대하여 말했다고 해요."}
+        {"from":"아브라함","to":"사라","label":"부부","kind":"family","directed":false,"weight":1,"verses":"19","note":"아브라함은 백 살 가까이 되어 자기 몸도 사라의 몸도 아이를 가질 수 없음을 알았지만 믿음을 놓지 않았어요."},
+        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"24-25","note":"예수님은 우리 죄 때문에 죽으셨고, 우리를 의롭게 하시려고 다시 살아나셨어요."},
+        {"from":"다윗","to":"아브라함","label":"함께 증인","kind":"other","directed":false,"weight":1,"verses":"6-8","note":"다윗도 착한 일을 해서가 아니라 하나님이 죄를 덮어 주셔서 복받은 사람의 기쁨을 노래했어요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -140,10 +140,10 @@
         {"name":"하나님","role":"사랑을 확증하신 분","weight":3}
       ],
       "rels": [
-        {"from":"예수","to":"우리","label":"위해 죽으심","kind":"ally","directed":true,"weight":3,"verses":"6, 8","note":"우리가 아직 죄인 되었을 때에 그리스도께서 우리를 위하여 죽으셨다고 해요."},
-        {"from":"하나님","to":"우리","label":"사랑을 확증","kind":"ally","directed":true,"weight":3,"verses":"8","note":"하나님께서 이로써 우리에 대한 자기의 사랑을 확증하셨다고 해요."},
-        {"from":"성령","to":"우리","label":"사랑을 부으심","kind":"ally","directed":true,"weight":2,"verses":"5","note":"우리에게 주신 성령으로 말미암아 하나님의 사랑이 우리 마음에 부은 바 되었다고 해요."},
-        {"from":"아담","to":"예수","label":"대조된 두 사람","kind":"conflict","directed":false,"weight":2,"verses":"18-19","note":"한 사람이 순종하지 아니함으로 많은 사람이 죄인 된 것같이 한 사람이 순종하심으로 많은 사람이 의인이 되리라고 해요."}
+        {"from":"예수","to":"우리","label":"위해 죽으심","kind":"ally","directed":true,"weight":3,"verses":"6, 8","note":"우리가 아직 하나님을 등지고 있을 때 그리스도께서 우리를 위해 죽으셨어요."},
+        {"from":"하나님","to":"우리","label":"사랑을 확증","kind":"ally","directed":true,"weight":3,"verses":"8","note":"그 죽음이 바로 하나님이 우리를 얼마나 사랑하시는지 보여 주는 증거래요."},
+        {"from":"성령","to":"우리","label":"사랑을 부으심","kind":"ally","directed":true,"weight":2,"verses":"5","note":"성령께서 우리 마음에 하나님의 사랑을 넘치도록 부어 주셨어요."},
+        {"from":"아담","to":"예수","label":"대조된 두 사람","kind":"conflict","directed":false,"weight":2,"verses":"18-19","note":"아담 한 사람의 불순종으로 모두 죄인이 되었듯, 예수님 한 분의 순종으로 많은 사람이 의롭게 돼요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -166,10 +166,10 @@
         {"name":"하나님","role":"영생을 주시는 분","weight":3}
       ],
       "rels": [
-        {"from":"성도들","to":"예수","label":"함께 죽고 삶","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"우리가 그리스도와 함께 장사되었나니 그와 같은 죽음으로 연합한 자가 되었으면 부활과 같은 모양으로도 되리라고 해요."},
-        {"from":"죄","to":"성도들","label":"옛 주인","kind":"conflict","directed":true,"weight":2,"verses":"17-18","note":"너희가 본래 죄의 종이더니 마음으로 순종하여 죄로부터 해방되어 의에게 종이 되었다고 해요."},
-        {"from":"하나님","to":"성도들","label":"영생을 주심","kind":"ally","directed":true,"weight":3,"verses":"23","note":"죄의 삯은 사망이요 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생이라고 해요."},
-        {"from":"바울","to":"성도들","label":"가르친 사도","kind":"ally","directed":true,"weight":2,"verses":"11-13","note":"너희도 너희 자신을 죄에 대하여는 죽은 자요 하나님에 대하여는 살아 있는 자로 여기라고 가르쳤어요."}
+        {"from":"성도들","to":"예수","label":"함께 죽고 삶","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"세례로 그리스도와 함께 죽고 묻혔으니, 그분처럼 새 생명으로 살아나게 된대요."},
+        {"from":"죄","to":"성도들","label":"옛 주인","kind":"conflict","directed":true,"weight":2,"verses":"17-18","note":"전에는 죄에 매인 종이었지만, 이제 복음에 마음으로 순종해 풀려나 옳은 일을 섬기게 됐어요."},
+        {"from":"하나님","to":"성도들","label":"영생을 주심","kind":"ally","directed":true,"weight":3,"verses":"23","note":"죄가 주는 대가는 죽음이지만, 하나님은 예수님 안에서 영원한 생명을 선물로 주세요."},
+        {"from":"바울","to":"성도들","label":"가르친 사도","kind":"ally","directed":true,"weight":2,"verses":"11-13","note":"바울은 죄에 대해서는 이미 죽은 사람으로, 하나님을 위해서는 살아 있는 사람으로 여기라고 가르쳤어요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -193,10 +193,10 @@
         {"name":"하나님","role":"감사받으시는 분","weight":2}
       ],
       "rels": [
-        {"from":"죄","to":"나","label":"사로잡는 것","kind":"conflict","directed":true,"weight":3,"verses":"20, 23","note":"내가 원하지 아니하는 그것을 하면 그것을 행하는 자는 내가 아니요 내 속에 거하는 죄라, 죄의 법으로 나를 사로잡는다고 해요."},
-        {"from":"예수","to":"나","label":"건져 주심","kind":"ally","directed":true,"weight":3,"verses":"24-25","note":"오호라 나는 곤고한 사람이로다 누가 나를 건져 내랴, 우리 주 예수 그리스도로 말미암아 하나님께 감사한다고 해요."},
-        {"from":"바울","to":"형제들","label":"가르친 사도","kind":"ally","directed":true,"weight":2,"verses":"1, 4","note":"형제들아 너희도 그리스도의 몸으로 말미암아 율법에 대하여 죽임을 당하였으니 하고 가르쳐요."},
-        {"from":"나","to":"하나님","label":"감사함","kind":"ally","directed":true,"weight":2,"verses":"25","note":"우리 주 예수 그리스도로 말미암아 하나님께 감사하리로다 하고 해요."}
+        {"from":"죄","to":"나","label":"사로잡는 것","kind":"conflict","directed":true,"weight":3,"verses":"20, 23","note":"하고 싶지 않은 일을 자꾸 하게 되는 건 내 안에 자리 잡은 죄가 나를 붙잡고 있어서래요."},
+        {"from":"예수","to":"나","label":"건져 주심","kind":"ally","directed":true,"weight":3,"verses":"24-25","note":"바울은 이 비참한 나를 누가 건져 줄까 탄식하다가, 예수님이 건지신다며 감사해요."},
+        {"from":"바울","to":"형제들","label":"가르친 사도","kind":"ally","directed":true,"weight":2,"verses":"1, 4","note":"그리스도의 몸과 함께 죽었으니, 이제 율법이 아니라 살아나신 그리스도께 속했다고 가르쳐요."},
+        {"from":"나","to":"하나님","label":"감사함","kind":"ally","directed":true,"weight":2,"verses":"25","note":"죄와 씨름하던 나는 결국 예수님 덕분에 하나님께 감사하게 돼요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -219,9 +219,9 @@
         {"name":"성령","role":"자녀임을 증언하고 도우심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"아들을 내어 주심","kind":"family","directed":true,"weight":3,"verses":"32","note":"자기 아들을 아끼지 아니하시고 우리 모든 사람을 위하여 내주신 이가 어찌 모든 것을 우리에게 주시지 아니하겠느냐고 해요."},
-        {"from":"성령","to":"바울","label":"아바라 부르게 하심","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"너희는 양자의 영을 받았으므로 아빠 아버지라고 부르짖으며, 성령이 친히 우리가 하나님의 자녀인 것을 증언하신다고 해요."},
-        {"from":"예수","to":"바울","label":"간구하시는 분","kind":"ally","directed":true,"weight":2,"verses":"34","note":"죽으실 뿐 아니라 다시 살아나신 이는 그리스도 예수시니 하나님 우편에 계신 자요 우리를 위하여 간구하신다고 해요."}
+        {"from":"하나님","to":"예수","label":"아들을 내어 주심","kind":"family","directed":true,"weight":3,"verses":"32","note":"하나님은 아들까지 아끼지 않고 내주셨으니, 다른 좋은 것도 다 주시지 않겠느냐고 해요."},
+        {"from":"성령","to":"바울","label":"아바라 부르게 하심","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"성령은 우리를 하나님의 자녀로 삼으시고, 아빠라고 부르게 하시며, 자녀임을 마음에 확인시켜 주세요."},
+        {"from":"예수","to":"바울","label":"간구하시는 분","kind":"ally","directed":true,"weight":2,"verses":"34","note":"죽었다가 살아나 하나님 오른편에 계신 예수님이 지금도 우리를 위해 기도하고 계세요."}
       ],
       "places": [
 
@@ -251,12 +251,12 @@
         {"name":"하나님","role":"긍휼히 여기시는 주권자","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"이스라엘","label":"골육의 친척","kind":"family","directed":true,"weight":3,"verses":"2-3","note":"나의 형제 곧 골육의 친척을 위하여 내 자신이 저주를 받아 그리스도에게서 끊어질지라도 원하는 바라고 해요."},
-        {"from":"야곱","to":"에서","label":"쌍둥이 형제","kind":"family","directed":false,"weight":2,"verses":"10-13","note":"리브가가 쌍둥이를 잉태했을 때 큰 자가 어린 자를 섬기리라 하셨으니 야곱은 사랑하고 에서는 미워하였다고 해요."},
-        {"from":"이삭","to":"리브가","label":"부부","kind":"family","directed":false,"weight":1,"verses":"10","note":"리브가가 우리 조상 이삭 한 사람으로 말미암아 잉태하였다고 해요."},
-        {"from":"하나님","to":"야곱","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"택하심을 따라 되는 하나님의 뜻이 행위로 말미암지 않고 부르시는 이로 말미암아 서게 하려 하심이라고 해요."},
-        {"from":"하나님","to":"바로","label":"세우신 분","kind":"other","directed":true,"weight":1,"verses":"17","note":"내가 이 일을 위하여 너를 세웠으니 곧 너로 말미암아 나의 능력을 보이고 내 이름이 온 땅에 전파되게 하려 함이라 하셨어요."},
-        {"from":"이방인들","to":"이스라엘","label":"의를 얻음 대조","kind":"conflict","directed":false,"weight":2,"verses":"30-31","note":"의를 따르지 아니한 이방인들이 믿음에서 난 의를 얻었고 의의 법을 따라간 이스라엘은 율법에 이르지 못하였다고 해요."}
+        {"from":"바울","to":"이스라엘","label":"골육의 친척","kind":"family","directed":true,"weight":3,"verses":"2-3","note":"바울은 동족 이스라엘이 구원받을 수만 있다면 자기가 저주를 받아도 좋겠다고 할 만큼 아파했어요."},
+        {"from":"야곱","to":"에서","label":"쌍둥이 형제","kind":"family","directed":false,"weight":2,"verses":"10-13","note":"쌍둥이가 태어나기도 전에, 형이 동생을 섬길 거라고 하나님이 말씀하셨어요."},
+        {"from":"이삭","to":"리브가","label":"부부","kind":"family","directed":false,"weight":1,"verses":"10","note":"리브가는 이삭의 아내로 그에게서 쌍둥이를 가졌어요."},
+        {"from":"하나님","to":"야곱","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"하나님의 선택은 사람이 한 일이 아니라 부르시는 하나님의 뜻에 달려 있음을 보여 주신 거래요."},
+        {"from":"하나님","to":"바로","label":"세우신 분","kind":"other","directed":true,"weight":1,"verses":"17","note":"하나님은 바로를 세우신 것도 그를 통해 능력을 보이고 이름을 온 땅에 알리시려는 거라고 하셨어요."},
+        {"from":"이방인들","to":"이스라엘","label":"의를 얻음 대조","kind":"conflict","directed":false,"weight":2,"verses":"30-31","note":"의를 구하지도 않던 이방인은 믿음으로 의를 얻었는데, 율법을 붙든 이스라엘은 오히려 놓쳤어요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"부딪칠 돌을 두신 곳","weight":1}
@@ -283,11 +283,11 @@
         {"name":"하나님","role":"손을 벌리신 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"이스라엘","label":"구원을 구함","kind":"ally","directed":true,"weight":3,"verses":"1","note":"형제들아 내 마음에 원하는 바와 하나님께 구하는 바는 이스라엘을 위함이니 곧 그들로 구원을 받게 함이라고 해요."},
-        {"from":"이스라엘","to":"하나님","label":"의에 불복종","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"하나님의 의를 모르고 자기 의를 세우려고 힘써 하나님의 의에 복종하지 아니하였다고 해요."},
-        {"from":"전하는 자들","to":"이스라엘","label":"말씀을 전함","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"전파하는 자가 없이 어찌 들으리요, 아름답도다 좋은 소식을 전하는 자들의 발이여 하고 해요."},
-        {"from":"하나님","to":"이스라엘","label":"손을 벌리심","kind":"ally","directed":true,"weight":2,"verses":"21","note":"내가 순종하지 아니하고 거슬러 말하는 백성에게 종일 내 손을 벌렸노라 하셨다고 해요."},
-        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"9","note":"하나님께서 그를 죽은 자 가운데서 살리신 것을 네 마음에 믿으면 구원을 받으리라고 해요."}
+        {"from":"바울","to":"이스라엘","label":"구원을 구함","kind":"ally","directed":true,"weight":3,"verses":"1","note":"바울이 마음 깊이 바라고 하나님께 비는 건 이스라엘이 구원받는 거예요."},
+        {"from":"이스라엘","to":"하나님","label":"의에 불복종","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"이스라엘은 하나님이 주시는 의를 모른 채 제 힘으로 의로워지려다 하나님 뜻을 따르지 못했어요."},
+        {"from":"전하는 자들","to":"이스라엘","label":"말씀을 전함","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"전하는 사람이 없으면 들을 수 없으니, 기쁜 소식을 전하러 가는 발걸음이 참 아름답대요."},
+        {"from":"하나님","to":"이스라엘","label":"손을 벌리심","kind":"ally","directed":true,"weight":2,"verses":"21","note":"말을 안 듣고 대드는 백성에게도 하나님은 하루 종일 손을 벌리고 기다리셨대요."},
+        {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"9","note":"하나님이 예수님을 살리셨다고 마음으로 믿고 입으로 고백하면 구원받는대요."}
       ],
       "places": [
         {"name":"땅끝","where":"온 세상","what":"소리가 퍼진 곳","weight":1}
@@ -314,11 +314,11 @@
         {"name":"하나님","role":"후회하심 없이 부르시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"버리지 않으심","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님이 자기 백성을 버리셨느냐 그럴 수 없느니라, 하나님이 미리 아신 자기 백성을 버리지 아니하셨다고 해요."},
-        {"from":"이방인들","to":"이스라엘","label":"접붙여진 가지","kind":"other","directed":true,"weight":3,"verses":"17","note":"돌감람나무인 네가 그들 중에 접붙임이 되어 참감람나무 뿌리의 진액을 함께 받는 자가 되었다고 해요."},
-        {"from":"바울","to":"이방인들","label":"자랑하지 말라","kind":"conflict","directed":true,"weight":2,"verses":"18, 20","note":"그 가지들을 향하여 자랑하지 말라, 높은 마음을 품지 말고 도리어 두려워하라고 해요."},
-        {"from":"하나님","to":"칠천 명","label":"남겨 두심","kind":"ally","directed":true,"weight":1,"verses":"4","note":"내가 나를 위하여 바알에게 무릎을 꿇지 아니한 사람 칠천 명을 남겨 두었다 하셨다고 해요."},
-        {"from":"엘리야","to":"하나님","label":"호소한 선지자","kind":"other","directed":true,"weight":1,"verses":"2-3","note":"엘리야가 이스라엘을 하나님께 고발하여 주여 그들이 주의 선지자들을 죽였고 나만 남았다고 호소했어요."}
+        {"from":"하나님","to":"이스라엘","label":"버리지 않으심","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님이 이스라엘을 버리셨냐고요? 절대 아니래요. 미리 아신 백성을 끝까지 붙드세요."},
+        {"from":"이방인들","to":"이스라엘","label":"접붙여진 가지","kind":"other","directed":true,"weight":3,"verses":"17","note":"들 올리브 가지 같은 이방인이 참올리브 나무에 접붙여져 그 뿌리의 양분을 함께 받게 됐어요."},
+        {"from":"바울","to":"이방인들","label":"자랑하지 말라","kind":"conflict","directed":true,"weight":2,"verses":"18, 20","note":"그러니 이방인은 잘려 나간 가지 앞에서 우쭐대지 말고 겸손히 두려워하라고 해요."},
+        {"from":"하나님","to":"칠천 명","label":"남겨 두심","kind":"ally","directed":true,"weight":1,"verses":"4","note":"엘리야 때도 하나님은 바알에게 절하지 않은 칠천 명을 남겨 두셨어요."},
+        {"from":"엘리야","to":"하나님","label":"호소한 선지자","kind":"other","directed":true,"weight":1,"verses":"2-3","note":"엘리야는 하나님께 이스라엘이 선지자들을 죽였고 자기만 남았다며 하소연했어요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"구원자가 오실 곳","weight":1}
@@ -342,10 +342,10 @@
         {"name":"하나님","role":"선하신 뜻의 주인","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"형제들","label":"권면한 사도","kind":"ally","directed":true,"weight":3,"verses":"1","note":"형제들아 내가 하나님의 모든 자비하심으로 너희를 권하노니 너희 몸을 거룩한 산 제물로 드리라고 해요."},
-        {"from":"형제들","to":"하나님","label":"몸을 드림","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"이는 너희가 드릴 영적 예배니라, 이 세대를 본받지 말고 마음을 새롭게 함으로 변화를 받으라고 해요."},
-        {"from":"형제들","to":"원수","label":"선으로 대함","kind":"ally","directed":true,"weight":2,"verses":"20-21","note":"네 원수가 주리거든 먹이고 목마르거든 마시게 하라, 악에게 지지 말고 선으로 악을 이기라고 해요."},
-        {"from":"형제들","to":"예수","label":"한 몸 된 지체","kind":"ally","directed":true,"weight":2,"verses":"5","note":"우리 많은 사람이 그리스도 안에서 한 몸이 되어 서로 지체가 되었다고 해요."}
+        {"from":"바울","to":"형제들","label":"권면한 사도","kind":"ally","directed":true,"weight":3,"verses":"1","note":"하나님의 자비를 생각해서 몸을 거룩한 산 제물로 드리라고 바울이 간곡히 권해요."},
+        {"from":"형제들","to":"하나님","label":"몸을 드림","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"그게 참된 예배래요. 세상 흐름을 따르지 말고 생각을 새롭게 해서 달라지라고 해요."},
+        {"from":"형제들","to":"원수","label":"선으로 대함","kind":"ally","directed":true,"weight":2,"verses":"20-21","note":"원수가 배고프면 먹이고 목마르면 마시게 하라, 악을 선으로 이기라고 해요."},
+        {"from":"형제들","to":"예수","label":"한 몸 된 지체","kind":"ally","directed":true,"weight":2,"verses":"5","note":"많은 사람이 그리스도 안에서 한 몸을 이루고 서로 지체가 되었대요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -369,10 +369,10 @@
         {"name":"하나님","role":"권세를 정하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"다스리는 자들","label":"권세를 정하심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"권세는 하나님으로부터 나지 않음이 없나니 모든 권세는 다 하나님께서 정하신 바라고 해요."},
-        {"from":"성도들","to":"다스리는 자들","label":"복종할 이들","kind":"other","directed":true,"weight":2,"verses":"1, 7","note":"각 사람은 위에 있는 권세들에게 복종하고 조세를 받을 자에게 조세를 바치라고 해요."},
-        {"from":"성도들","to":"이웃","label":"사랑의 빚","kind":"ally","directed":true,"weight":3,"verses":"8","note":"피차 사랑의 빚 외에는 아무에게든지 아무 빚도 지지 말라 남을 사랑하는 자는 율법을 다 이루었다고 해요."},
-        {"from":"성도들","to":"예수","label":"옷 입을 주","kind":"ally","directed":true,"weight":2,"verses":"14","note":"오직 주 예수 그리스도로 옷 입고 정욕을 위하여 육신의 일을 도모하지 말라고 해요."}
+        {"from":"하나님","to":"다스리는 자들","label":"권세를 정하심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"세상의 모든 권위도 하나님이 허락하신 것이래요."},
+        {"from":"성도들","to":"다스리는 자들","label":"복종할 이들","kind":"other","directed":true,"weight":2,"verses":"1, 7","note":"그러니 나라의 권위를 존중하고, 낼 세금은 내라고 해요."},
+        {"from":"성도들","to":"이웃","label":"사랑의 빚","kind":"ally","directed":true,"weight":3,"verses":"8","note":"서로 사랑하는 것 말고는 아무 빚도 지지 말라, 사랑하면 율법을 다 지키는 거래요."},
+        {"from":"성도들","to":"예수","label":"옷 입을 주","kind":"ally","directed":true,"weight":2,"verses":"14","note":"예수 그리스도를 옷처럼 입고, 몸의 욕심을 채울 궁리는 하지 말라고 해요."}
       ],
       "places": [
         {"name":"로마","where":"제국의 수도","what":"편지를 받는 교회","weight":1}
@@ -397,10 +397,10 @@
         {"name":"하나님","role":"심판하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"믿음이 강한 자","to":"믿음이 연약한 자","label":"비판하지 말라","kind":"conflict","directed":false,"weight":3,"verses":"3","note":"먹는 자는 먹지 않는 자를 업신여기지 말고 먹지 않는 자는 먹는 자를 비판하지 말라고 해요."},
-        {"from":"하나님","to":"믿음이 연약한 자","label":"받으신 분","kind":"ally","directed":true,"weight":2,"verses":"3","note":"이는 하나님이 그를 받으셨음이라고 해요."},
-        {"from":"예수","to":"믿음이 연약한 자","label":"대신 죽으심","kind":"ally","directed":true,"weight":2,"verses":"15","note":"그리스도께서 대신하여 죽으신 형제를 네 음식으로 망하게 하지 말라고 해요."},
-        {"from":"바울","to":"믿음이 강한 자","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"13, 19","note":"형제 앞에 부딪칠 것이나 거칠 것을 두지 말고 화평의 일과 서로 덕을 세우는 일을 힘쓰라고 권해요."}
+        {"from":"믿음이 강한 자","to":"믿음이 연약한 자","label":"비판하지 말라","kind":"conflict","directed":false,"weight":3,"verses":"3","note":"고기를 먹는 사람과 안 먹는 사람이 서로 깔보거나 판단하지 말라고 해요."},
+        {"from":"하나님","to":"믿음이 연약한 자","label":"받으신 분","kind":"ally","directed":true,"weight":2,"verses":"3","note":"하나님이 그 사람도 받아 주셨기 때문이래요."},
+        {"from":"예수","to":"믿음이 연약한 자","label":"대신 죽으심","kind":"ally","directed":true,"weight":2,"verses":"15","note":"그리스도께서 그를 위해서도 죽으셨으니, 내 음식 때문에 그를 넘어지게 하지 말라고 해요."},
+        {"from":"바울","to":"믿음이 강한 자","label":"권면한 사도","kind":"ally","directed":true,"weight":2,"verses":"13, 19","note":"형제가 걸려 넘어질 일을 만들지 말고, 서로 평화롭게 세워 주라고 권해요."}
       ],
       "places": [
         {"name":"하나님의 심판대","where":"마지막 날","what":"모두가 설 자리","weight":1}
@@ -429,12 +429,12 @@
         {"name":"하나님","role":"소망의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"강한 자","to":"연약한 자","label":"약점을 담당","kind":"ally","directed":true,"weight":2,"verses":"1","note":"우리 강한 자는 마땅히 연약한 자의 약점을 담당하고 자기를 기쁘게 하지 아니할 것이라고 해요."},
-        {"from":"예수","to":"이방인들","label":"받아 주심","kind":"ally","directed":true,"weight":2,"verses":"7-9","note":"그리스도께서 우리를 받아 하나님께 영광을 돌리심과 같이 너희도 서로 받으라, 이방인들도 긍휼하심으로 영광을 돌리게 하려 하심이라고 해요."},
-        {"from":"바울","to":"이방인들","label":"복음의 제사장","kind":"ally","directed":true,"weight":3,"verses":"16","note":"나는 이방인을 위하여 그리스도 예수의 일꾼이 되어 하나님의 복음의 제사장 직분을 한다고 해요."},
-        {"from":"마게도냐와 아가야 성도","to":"예루살렘 성도","label":"연보를 보냄","kind":"ally","directed":true,"weight":2,"verses":"26","note":"마게도냐와 아가야 사람들이 예루살렘 성도 중 가난한 자들을 위하여 기쁘게 연보했다고 해요."},
-        {"from":"바울","to":"예루살렘 성도","label":"섬기러 감","kind":"ally","directed":true,"weight":2,"verses":"25","note":"이제는 내가 성도를 섬기는 일로 예루살렘에 가노니 하고 해요."},
-        {"from":"예수","to":"이새","label":"뿌리에서 나신 이","kind":"family","directed":true,"weight":1,"verses":"12","note":"이새의 뿌리 곧 열방을 다스리기 위하여 일어나시는 이가 있으리니 열방이 그에게 소망을 두리라 하였다고 해요."}
+        {"from":"강한 자","to":"연약한 자","label":"약점을 담당","kind":"ally","directed":true,"weight":2,"verses":"1","note":"믿음이 강한 사람은 약한 사람의 짐을 함께 지고, 자기만 좋자고 살지 말라고 해요."},
+        {"from":"예수","to":"이방인들","label":"받아 주심","kind":"ally","directed":true,"weight":2,"verses":"7-9","note":"그리스도께서 우리를 받아 주셨듯 서로 받아 주라, 그래야 이방인도 하나님을 찬양한대요."},
+        {"from":"바울","to":"이방인들","label":"복음의 제사장","kind":"ally","directed":true,"weight":3,"verses":"16","note":"바울은 이방인에게 복음을 전하는 일을 제사장 일처럼 섬긴다고 말해요."},
+        {"from":"마게도냐와 아가야 성도","to":"예루살렘 성도","label":"연보를 보냄","kind":"ally","directed":true,"weight":2,"verses":"26","note":"마게도냐와 아가야 교회가 예루살렘의 가난한 성도들을 위해 기쁘게 헌금을 모았어요."},
+        {"from":"바울","to":"예루살렘 성도","label":"섬기러 감","kind":"ally","directed":true,"weight":2,"verses":"25","note":"바울은 그 헌금을 전하며 성도를 섬기려고 예루살렘으로 간다고 했어요."},
+        {"from":"예수","to":"이새","label":"뿌리에서 나신 이","kind":"family","directed":true,"weight":1,"verses":"12","note":"이새 집안에서 한 분이 나와 온 나라를 다스리고, 모든 민족이 그분께 소망을 둘 거래요."}
       ],
       "places": [
         {"name":"일루리곤","where":"마게도냐 북서쪽","what":"복음을 전한 끝","weight":2},
@@ -470,14 +470,14 @@
         {"name":"하나님","role":"견고하게 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"바울","to":"뵈뵈","label":"추천한 사도","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"내가 겐그레아 교회의 일꾼으로 있는 우리 자매 뵈뵈를 너희에게 추천하노니 주 안에서 영접하고 도와주라고 해요."},
-        {"from":"브리스가","to":"아굴라","label":"부부","kind":"family","directed":false,"weight":2,"verses":"3","note":"너희는 그리스도 예수 안에서 나의 동역자들인 브리스가와 아굴라에게 문안하라고 해요."},
-        {"from":"브리스가","to":"바울","label":"목을 내놓음","kind":"ally","directed":true,"weight":3,"verses":"4","note":"그들은 내 목숨을 위하여 자기들의 목까지도 내놓았나니 나와 이방인의 모든 교회가 감사한다고 해요."},
-        {"from":"안드로니고와 유니아","to":"바울","label":"함께 갇힌 친척","kind":"family","directed":false,"weight":2,"verses":"7","note":"나의 친척이요 나와 함께 갇혔던 안드로니고와 유니아에게 문안하라고 해요."},
-        {"from":"디모데","to":"바울","label":"동역자","kind":"ally","directed":false,"weight":2,"verses":"21","note":"나의 동역자 디모데와 나의 친척 누기오와 야손과 소시바더가 너희에게 문안한다고 해요."},
-        {"from":"더디오","to":"바울","label":"대필한 이","kind":"ally","directed":true,"weight":2,"verses":"22","note":"이 편지를 기록하는 나 더디오도 주 안에서 너희에게 문안한다고 해요."},
-        {"from":"분쟁을 일으키는 자들","to":"바울","label":"교훈을 거스름","kind":"conflict","directed":true,"weight":2,"verses":"17","note":"너희가 배운 교훈을 거슬러 분쟁을 일으키거나 거치게 하는 자들을 살피고 그들에게서 떠나라고 해요."},
-        {"from":"하나님","to":"사탄","label":"발아래 상하게","kind":"conflict","directed":true,"weight":1,"verses":"20","note":"평강의 하나님께서 속히 사탄을 너희 발아래에서 상하게 하시리라고 해요."}
+        {"from":"바울","to":"뵈뵈","label":"추천한 사도","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"바울은 겐그레아 교회를 섬기는 자매 뵈뵈를 소개하며 잘 맞아 도와 달라고 부탁했어요."},
+        {"from":"브리스가","to":"아굴라","label":"부부","kind":"family","directed":false,"weight":2,"verses":"3","note":"브리스가와 아굴라 부부는 바울과 함께 일한 동역자예요."},
+        {"from":"브리스가","to":"바울","label":"목을 내놓음","kind":"ally","directed":true,"weight":3,"verses":"4","note":"그 부부는 바울을 살리려고 목숨까지 걸었기에 모든 이방인 교회가 고마워했어요."},
+        {"from":"안드로니고와 유니아","to":"바울","label":"함께 갇힌 친척","kind":"family","directed":false,"weight":2,"verses":"7","note":"안드로니고와 유니아는 바울의 친척이고 함께 감옥에 갇혔던 사람들이에요."},
+        {"from":"디모데","to":"바울","label":"동역자","kind":"ally","directed":false,"weight":2,"verses":"21","note":"동역자 디모데도 바울 곁에서 로마 교회에 안부를 전했어요."},
+        {"from":"더디오","to":"바울","label":"대필한 이","kind":"ally","directed":true,"weight":2,"verses":"22","note":"바울이 부르는 대로 편지를 받아 적은 사람은 더디오였어요."},
+        {"from":"분쟁을 일으키는 자들","to":"바울","label":"교훈을 거스름","kind":"conflict","directed":true,"weight":2,"verses":"17","note":"배운 가르침과 어긋나게 다툼을 일으키는 사람들을 조심하고 멀리하라고 해요."},
+        {"from":"하나님","to":"사탄","label":"발아래 상하게","kind":"conflict","directed":true,"weight":1,"verses":"20","note":"평화의 하나님이 곧 사탄을 성도들 발아래 짓밟히게 하실 거래요."}
       ],
       "places": [
         {"name":"겐그레아","where":"고린도 동쪽 항구","what":"뵈뵈가 섬긴 교회","weight":2},
