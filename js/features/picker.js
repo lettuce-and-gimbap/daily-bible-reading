@@ -5,6 +5,14 @@
 let pickIdx = null; // 지금 보여 주는 장 (전체 장 일련번호)
 let pickSel = new Set(); // 고른 절 번호
 
+// 구절 패널에서 볼 역본(1~2개): 직접 고른 게 있으면 그것, 없으면 보기 설정을 따름
+function pickVersions() {
+  const s = state.settings;
+  const ok = (c) => VERSIONS.some((v) => v.code === c);
+  const own = Array.isArray(s.pick) ? s.pick.filter(ok).slice(0, 2) : [];
+  return own.length ? own : [s.ver, ...(s.mode === "two" ? [s.ver2] : [])];
+}
+
 // 패널 본문에 그림. target: "reading"(통독 메모) | "qt"(묵상 노트), idx: 처음 보여 줄 장
 async function renderVersePicker(body, target, idx) {
   if (idx !== undefined && idx !== null && idx !== pickIdx) { pickIdx = idx; pickSel = new Set(); }
@@ -12,20 +20,31 @@ async function renderVersePicker(body, target, idx) {
   const idx0 = pickIdx;
   const { book, chap } = CHAPTERS[idx0];
   const s = state.settings;
-  const ver1 = versionFor(s.ver, book);
-  const ver2 = s.mode === "two" ? versionFor(s.ver2, book) : "";
+  const picked = pickVersions();
+  const ver1 = versionFor(picked[0], book);
+  const ver2 = picked[1] && versionFor(picked[1], book) !== ver1 ? versionFor(picked[1], book) : "";
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
 
   body.innerHTML = `<div class="vp"><div class="vp-head">
       <button class="icon-btn" data-go="-1" ${idx0 <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
       <b>${esc(book.name)} ${chap}장</b>
       <button class="icon-btn" data-go="1" ${idx0 >= TOTAL_CHAPTERS - 1 ? "disabled" : ""} aria-label="다음 장">›</button>
-    </div><p class="muted small vp-msg">본문 불러오는 중…</p></div>`;
+    </div>
+    <div class="opts vp-vers">${VERSIONS.map((v) => `<button class="opt ${picked.includes(v.code) ? "on" : ""}" data-pv="${v.code}">${v.name}</button>`).join("")}</div>
+    <p class="muted small vp-msg">본문 불러오는 중…</p></div>`;
   const root = body.firstElementChild;
   root.addEventListener("click", (e) => { // 패널 바깥(통독 화면 등)의 클릭 처리로 새어 나가지 않게
     e.stopPropagation();
     const go = e.target.closest("[data-go]");
-    if (go) renderVersePicker(body, target, idx0 + Number(go.dataset.go));
+    if (go) return renderVersePicker(body, target, idx0 + Number(go.dataset.go));
+    const pv = e.target.closest("[data-pv]");
+    if (pv) { // 역본 고르기: 최대 2개, 먼저 고른 게 위에 나옴
+      let next = picked.includes(pv.dataset.pv) ? picked.filter((c) => c !== pv.dataset.pv) : [...picked, pv.dataset.pv].slice(-2);
+      if (!next.length) return;
+      state.settings.pick = next;
+      persist();
+      renderVersePicker(body, target);
+    }
   });
 
   let verses;

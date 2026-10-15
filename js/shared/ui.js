@@ -2,6 +2,7 @@
 
 let sheetTab = null; // 열린 패널: "table" | "tools" | "view" | "note" | null
 let toastTimer;
+let onSheetChange = null; // 패널이 열리거나 닫힐 때 화면이 따로 할 일 (통독 화면의 탭 표시)
 
 function sheetShell() {
   return `
@@ -32,6 +33,7 @@ function openSheet(tab, renderFn) {
   $("#sheet-bg").hidden = false;
   document.body.classList.add("sheet-open");
   renderFn();
+  if (onSheetChange) onSheetChange();
 }
 
 function closeSheet() {
@@ -40,6 +42,7 @@ function closeSheet() {
   $("#sheet").hidden = true;
   $("#sheet-bg").hidden = true;
   document.body.classList.remove("sheet-open");
+  if (onSheetChange) onSheetChange();
 }
 
 function setSheetTitle(tabs, title) {

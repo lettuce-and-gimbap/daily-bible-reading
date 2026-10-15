@@ -235,3 +235,15 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .vp-txt small i { font-style: normal; font-weight: 700; margin-right: 4px; }
 .vp-bar { position: sticky; bottom: -14px; display: flex; align-items: center; gap: 6px; padding: 10px 0 14px; margin-top: 8px; background: var(--bg); }
 .vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }
+
+/* 통독 화면: 탭(통독표·요약·구절·메모·도구·갓피아 원문)을 위에 늘 보여 주고, 패널은 본문 자리에 붙여 띄움 */
+.rd-tabs { display: flex; gap: 6px; padding: 8px 10px 0; overflow-x: auto; scrollbar-width: none; }
+.rd-tabs::-webkit-scrollbar { display: none; }
+.rd-tabs button { flex: none; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; }
+.rd-tabs button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.rd-clip .sheet { position: absolute; inset: 0; width: auto; height: auto; border: 0; border-radius: 0; box-shadow: none; z-index: 5; }
+.rd-clip .sheet-grip, .rd-clip .sheet-backdrop { display: none; }
+.rd-clip .sheet-head:has(.seg) { display: none; }
+.rd-clip:has(.sheet:not([hidden])) .paste-fab { display: none; }
+.vp-vers { display: flex; overflow-x: auto; gap: 6px; scrollbar-width: none; flex: none; }
+.vp-vers .opt { flex: none; padding: 6px 11px; font-size: .8rem; }

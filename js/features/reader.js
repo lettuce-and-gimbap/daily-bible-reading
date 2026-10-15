@@ -24,25 +24,29 @@ function buildReader() {
     <div class="rd reading">
       <div class="rd-top">
         <div class="rd-row">
-          <button class="chip-btn" data-open="table" aria-label="통독표 열기">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>통독표
-          </button>
-          <button class="chip-btn" data-open="summary" aria-label="오늘 분량 미리 보기">✨</button>
           <div class="rd-title" id="r-title"></div>
           <button class="chip-btn" data-open="view" id="r-view" aria-label="역본·보기 설정"></button>
         </div>
         <div class="steps" id="r-steps"></div>
+        <div class="rd-tabs" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
       </div>
-      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}</div>
+      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
       <div class="rd-bottom" id="r-bottom"></div>
-    </div>
-    ${sheetShell()}`;
+    </div>`;
 
   guardReaderFrame($("#r-frame"));
   bindSheetChrome(renderReaderSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
   app.querySelectorAll("[data-open]").forEach((b) =>
     b.addEventListener("click", () => openSheet(b.dataset.open, renderReaderSheet)));
+  // 통독표·요약·구절·메모·도구는 화면 위에 늘 보이는 탭으로, 갓피아 원문은 마지막 탭(= 패널을 닫은 상태)으로
+  $("#r-tabs").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-rtab]");
+    if (!b) return;
+    if (b.dataset.rtab === "godpia") closeSheet();
+    else openSheet(b.dataset.rtab, renderReaderSheet);
+  });
+  openSheet("verses", renderReaderSheet); // 처음엔 구절 탭
 
   // 장을 직접 고르면 갓피아 안에서 옆으로 넘겨 둔 상태여도 그 장으로 다시 불러옴
   $("#r-steps").addEventListener("click", (e) => {
@@ -253,9 +257,18 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"]];
+const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"], ["godpia", "갓피아 원문"]];
+
+// 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
+function syncReaderTabs() {
+  document.querySelectorAll("#r-tabs [data-rtab]").forEach((b) => {
+    b.classList.toggle("on", b.dataset.rtab === (sheetTab || "godpia"));
+  });
+}
+onSheetChange = syncReaderTabs;
 
 function renderReaderSheet() {
+  if (sheetTab === "godpia") return closeSheet();
   const pr = progress();
   const body = $("#sheet-body");
   const s = state.settings;
