@@ -19,7 +19,7 @@
         {"name":"하나님","role":"예물 드리는 길을 알려 주심","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"모세","label":"부르신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"모세","label":"부르신 분","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"하나님이 회막에서 모세를 부르시고 백성이 예물을 드리는 법을 전하라고 하셨어요."}
       ],
       "places": [
         {"name":"회막","where":"이스라엘 진 한가운데 성막","what":"하나님이 모세를 부르신 곳","weight":2}
@@ -160,9 +160,9 @@
         {"name":"아론의 아들들","role":"제사장으로 세워짐","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"아론","label":"기름 부은 이","kind":"ally","directed":true,"weight":3},
-        {"from":"아론의 아들들","to":"아론","label":"아들들","kind":"family","directed":true,"weight":2},
-        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1}
+        {"from":"모세","to":"아론","label":"기름 부은 이","kind":"ally","directed":true,"weight":3,"verses":"12","note":"모세가 관유를 아론의 머리에 부어 거룩하게 하고 대제사장으로 세웠어요."},
+        {"from":"아론의 아들들","to":"아론","label":"아들들","kind":"family","directed":true,"weight":2,"verses":"13, 30","note":"모세가 아론의 아들들에게도 옷을 입히고 피와 관유를 뿌려 아버지와 함께 거룩하게 했어요."},
+        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1,"verses":"2, 36","note":"하나님이 모세에게 아론과 그 아들들을 데려오라 하셨고, 아론은 모세를 통해 받은 명령을 다 행했어요."}
       ],
       "places": [
         {"name":"회막","where":"성막 문 앞","what":"온 회중 앞에서 제사장을 세운 곳","weight":3}
@@ -184,9 +184,9 @@
         {"name":"하나님","role":"불로 제사를 받으심","weight":2}
       ],
       "rels": [
-        {"from":"아론","to":"이스라엘 자손","label":"축복한 제사장","kind":"ally","directed":true,"weight":3},
-        {"from":"모세","to":"아론","label":"지시한 동생","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"아론","label":"제사를 받으신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"아론","to":"이스라엘 자손","label":"축복한 제사장","kind":"ally","directed":true,"weight":3,"verses":"22-23","note":"아론이 제사를 마치고 백성을 향해 손을 들어 축복했고 여호와의 영광이 모든 백성에게 나타났어요."},
+        {"from":"모세","to":"아론","label":"지시한 동생","kind":"ally","directed":true,"weight":2,"verses":"7","note":"모세가 아론에게 제단에 나아가 네 속죄제와 백성의 예물을 드리라고 일렀어요."},
+        {"from":"하나님","to":"아론","label":"제사를 받으신 분","kind":"ally","directed":true,"weight":2,"verses":"24","note":"하나님 앞에서 불이 나와 제단 위의 번제물을 사르자 백성이 소리 지르며 엎드렸어요."}
       ],
       "places": [
         {"name":"회막","where":"성막 문 앞","what":"하나님의 영광이 나타나 불이 내린 곳","weight":3}
@@ -213,12 +213,12 @@
         {"name":"엘사반","role":"시신을 옮긴 아론의 사촌","weight":1}
       ],
       "rels": [
-        {"from":"나답","to":"아론","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"아비후","to":"나답","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"모세","to":"아론","label":"말씀을 전한 동생","kind":"ally","directed":true,"weight":2},
-        {"from":"엘르아살","to":"아론","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"모세","to":"엘르아살","label":"꾸짖은 삼촌","kind":"conflict","directed":true,"weight":1},
-        {"from":"미사엘","to":"엘사반","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"나답","to":"아론","label":"아들","kind":"family","directed":true,"weight":3,"verses":"1-2","note":"아론의 아들 나답과 아비후가 하나님이 명하지 않은 다른 불을 드리다가 불에 타 죽었어요."},
+        {"from":"아비후","to":"나답","label":"형제","kind":"family","directed":false,"weight":2,"verses":"1","note":"아비후는 형 나답과 함께 각자 향로에 다른 불을 담아 드렸어요."},
+        {"from":"모세","to":"아론","label":"말씀을 전한 동생","kind":"ally","directed":true,"weight":2,"verses":"3","note":"모세가 아론에게 하나님은 가까이 나아오는 자 중에 거룩함을 나타내시겠다고 하셨다고 전했어요."},
+        {"from":"엘르아살","to":"아론","label":"아들","kind":"family","directed":true,"weight":1,"verses":"12","note":"슬픔 속에서도 남은 아들 엘르아살과 이다말이 아버지와 함께 제사장 일을 계속했어요."},
+        {"from":"모세","to":"엘르아살","label":"꾸짖은 삼촌","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"속죄제 숫염소를 먹지 않고 다 태운 것을 알고 모세가 엘르아살과 이다말에게 화를 냈어요."},
+        {"from":"미사엘","to":"엘사반","label":"형제","kind":"family","directed":false,"weight":1,"verses":"4","note":"모세가 아론의 삼촌의 아들들인 미사엘과 엘사반을 불러 죽은 형제들을 진 밖으로 옮기게 했어요."}
       ],
       "places": [
         {"name":"회막","where":"성막","what":"다른 불을 드리다 심판받은 곳","weight":3}
@@ -338,9 +338,9 @@
         {"name":"하나님","role":"죄를 덮는 길을 정해 주심","weight":2}
       ],
       "rels": [
-        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1},
-        {"from":"모세","to":"하나님","label":"말씀 받은 종","kind":"ally","directed":true,"weight":2},
-        {"from":"아론","to":"하나님","label":"섬기는 제사장","kind":"ally","directed":true,"weight":2}
+        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1,"verses":"2","note":"하나님이 모세를 통해 아론에게 아무 때나 지성소 휘장 안에 들어오지 말라고 하셨어요."},
+        {"from":"모세","to":"하나님","label":"말씀 받은 종","kind":"ally","directed":true,"weight":2,"verses":"1","note":"아론의 두 아들이 죽은 뒤 하나님이 모세에게 속죄일 규례를 말씀하셨어요."},
+        {"from":"아론","to":"하나님","label":"섬기는 제사장","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"아론이 숫염소 머리에 두 손을 얹고 백성의 모든 죄를 고백한 뒤 광야로 보냈어요."}
       ],
       "places": [
         {"name":"지성소","where":"성막 맨 안쪽, 언약궤가 있는 방","what":"대제사장이 해마다 한 번 들어가 피를 뿌림","weight":3},
@@ -501,8 +501,8 @@
         {"name":"모세","role":"하나님의 뜻을 물음","weight":2}
       ],
       "rels": [
-        {"from":"모독한 사람","to":"슬로밋","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"모세","to":"모독한 사람","label":"판결을 전한 이","kind":"conflict","directed":true,"weight":2}
+        {"from":"모독한 사람","to":"슬로밋","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10-11","note":"이스라엘 여인 슬로밋과 애굽 남자 사이에 난 아들이 싸우다가 하나님의 이름을 모독했어요."},
+        {"from":"모세","to":"모독한 사람","label":"판결을 전한 이","kind":"conflict","directed":true,"weight":2,"verses":"13-14, 23","note":"모세가 하나님께 여쭌 뒤 그 사람을 진 밖으로 끌어내 돌로 치라는 판결을 백성에게 전했어요."}
       ],
       "places": [
         {"name":"진 밖","where":"이스라엘 진 바깥","what":"모독한 사람을 돌로 친 곳","weight":2}
@@ -543,7 +543,7 @@
         {"name":"이스라엘 자손","role":"언약 앞에 선 백성","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"함께 행하실 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"이스라엘 자손","label":"함께 행하실 분","kind":"ally","directed":true,"weight":3,"verses":"11-12","note":"하나님이 내 규례를 지키면 내가 너희 가운데 거하고 너희와 함께 다니며 너희 하나님이 되리라고 하셨어요."}
       ],
       "places": [
 

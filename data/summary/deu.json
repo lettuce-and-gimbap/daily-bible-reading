@@ -22,8 +22,8 @@
         {"name":"여호수아","role":"땅을 차지하게 할 지도자","weight":1}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"설교한 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"갈렙","to":"여호수아","label":"들어갈 두 사람","kind":"ally","directed":false,"weight":1}
+        {"from":"모세","to":"이스라엘 자손","label":"설교한 지도자","kind":"ally","directed":true,"weight":3,"verses":"1-5","note":"요단 건너편 모압 땅에서 모세가 온 이스라엘에게 지난 광야 길과 하나님의 율법을 풀어 설명하기 시작했어요."},
+        {"from":"갈렙","to":"여호수아","label":"들어갈 두 사람","kind":"ally","directed":false,"weight":1,"verses":"36-38","note":"하나님은 정탐 때 온전히 따른 갈렙과, 모세를 시중드는 여호수아만 약속의 땅에 들어가리라고 하셨어요."}
       ],
       "places": [
         {"name":"모압 평지","where":"요단 동편, 여리고 맞은편","what":"모세가 설교한 곳","weight":2},
@@ -47,8 +47,8 @@
         {"name":"이스라엘 자손","role":"형제 나라를 지나 시혼을 이김","weight":2}
       ],
       "rels": [
-        {"from":"시혼","to":"이스라엘 자손","label":"길을 막은 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"모세","to":"시혼","label":"평화를 청한 이","kind":"other","directed":true,"weight":2}
+        {"from":"시혼","to":"이스라엘 자손","label":"길을 막은 왕","kind":"conflict","directed":true,"weight":3,"verses":"30-32","note":"헤스본 왕 시혼은 지나가게 해 달라는 청을 거절하고 백성을 이끌고 야하스에서 싸우러 나왔어요."},
+        {"from":"모세","to":"시혼","label":"평화를 청한 이","kind":"other","directed":true,"weight":2,"verses":"26-28","note":"모세가 시혼에게 평화의 말로 사신을 보내 길로만 지나가고 먹고 마신 것은 값을 치르겠다고 했어요."}
       ],
       "places": [
         {"name":"세렛 시내","where":"사해 남동쪽, 에돔과 모압 경계","what":"건너기까지 옛 세대가 다 죽은 곳","weight":2},
@@ -72,9 +72,9 @@
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2}
       ],
       "rels": [
-        {"from":"옥","to":"이스라엘 자손","label":"맞선 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"모세","to":"여호수아","label":"격려한 스승","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"하나님","label":"간청한 종","kind":"other","directed":true,"weight":2}
+        {"from":"옥","to":"이스라엘 자손","label":"맞선 왕","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"바산 왕 옥이 에드레이에서 싸우러 나왔지만 하나님이 그와 그 땅을 이스라엘 손에 넘기셨어요."},
+        {"from":"모세","to":"여호수아","label":"격려한 스승","kind":"ally","directed":true,"weight":2,"verses":"21-22, 28","note":"모세가 여호수아에게 하나님이 두 왕에게 하신 일을 네 눈으로 보았으니 두려워하지 말라고 격려했어요."},
+        {"from":"모세","to":"하나님","label":"간청한 종","kind":"other","directed":true,"weight":2,"verses":"23-26","note":"모세가 요단을 건너 좋은 땅을 보게 해 달라고 간청했지만 하나님은 이 일로 다시 말하지 말라고 하셨어요."}
       ],
       "places": [
         {"name":"바산","where":"갈릴리 호수 동쪽 고원","what":"옥의 나라, 므낫세 반 지파가 받음","weight":2},
@@ -97,8 +97,8 @@
         {"name":"하나님","role":"형상 없이 음성으로 말씀하심","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"택하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":3,"verses":"1-2, 9","note":"모세가 내가 가르치는 규례를 듣고 지켜 살라, 더하거나 빼지 말고 본 것을 잊지 말고 자손에게 알리라고 했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"37","note":"하나님이 너희 조상을 사랑하셔서 그 후손을 택하시고 큰 권능으로 애굽에서 인도해 내셨어요."}
       ],
       "places": [
         {"name":"호렙","where":"시내 산","what":"형상 없이 음성만 들은 곳","weight":2},
@@ -120,8 +120,8 @@
         {"name":"하나님","role":"불 가운데서 말씀하심","weight":3}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"중보자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"언약하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"모세","to":"이스라엘 자손","label":"중보자","kind":"ally","directed":true,"weight":3,"verses":"5","note":"백성이 불을 두려워해 산에 오르지 못하자 모세가 하나님과 백성 사이에 서서 말씀을 전했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"언약하신 분","kind":"ally","directed":true,"weight":3,"verses":"2-3, 6","note":"하나님이 호렙산에서 오늘 살아 있는 우리와 언약을 세우시고 십계명을 주셨어요."}
       ],
       "places": [
         {"name":"호렙","where":"시내 산","what":"언약을 세우신 곳","weight":2}
@@ -143,8 +143,8 @@
         {"name":"하나님","role":"오직 유일하신 분","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘 자손","to":"하나님","label":"사랑할 백성","kind":"ally","directed":true,"weight":3},
-        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"이스라엘 자손","to":"하나님","label":"사랑할 백성","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"이스라엘아 들으라, 우리 하나님은 오직 한 분이니 마음과 뜻과 힘을 다해 하나님을 사랑하라고 했어요."},
+        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"모세가 이 말씀을 마음에 새기고 자녀에게 부지런히 가르치며 앉을 때나 길을 갈 때나 이야기하라고 했어요."}
       ],
       "places": [
 
@@ -166,8 +166,8 @@
         {"name":"하나님","role":"사랑하시고 맹세를 지키심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"사랑으로 택하심","kind":"ally","directed":true,"weight":3},
-        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘 자손","label":"사랑으로 택하심","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"하나님이 너희를 택하신 것은 수가 많아서가 아니라 너희를 사랑하시고 조상과의 맹세를 지키려 하심이에요."},
+        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2,"verses":"1-5","note":"모세가 가나안 민족들과 언약하지 말고 그들의 제단과 우상을 부수라고 가르쳤어요."}
       ],
       "places": [
         {"name":"가나안","where":"요단 서쪽 약속의 땅","what":"일곱 족속을 쫓아낼 땅","weight":2}
@@ -188,8 +188,8 @@
         {"name":"하나님","role":"아버지처럼 징계하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"징계하는 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘 자손","label":"징계하는 아버지","kind":"family","directed":true,"weight":3,"verses":"2-5","note":"하나님이 광야 사십 년 동안 만나로 먹이시며 사람이 떡으로만 사는 게 아님을 알게 하셨고, 아버지가 아들을 징계하듯 훈련하셨어요."},
+        {"from":"모세","to":"이스라엘 자손","label":"가르친 지도자","kind":"ally","directed":true,"weight":2,"verses":"11-14, 17-18","note":"모세가 배부르고 부유해져도 교만하여 하나님을 잊지 말라, 재물 얻을 능력도 하나님이 주셨다고 했어요."}
       ],
       "places": [
         {"name":"광야","where":"시내 반도와 네겝","what":"사십 년 동안 훈련받은 곳","weight":3}
@@ -212,9 +212,9 @@
         {"name":"하나님","role":"말씀하시고 이끄시는 분","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"하나님","label":"중보한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"하나님","label":"거역한 백성","kind":"conflict","directed":true,"weight":3},
-        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1}
+        {"from":"모세","to":"하나님","label":"중보한 종","kind":"ally","directed":true,"weight":3,"verses":"18-19, 25-26","note":"백성이 금송아지를 만들자 모세가 사십 주야를 엎드려 먹지도 마시지도 않고 그들을 멸하지 말아 달라고 기도했어요."},
+        {"from":"이스라엘 자손","to":"하나님","label":"거역한 백성","kind":"conflict","directed":true,"weight":3,"verses":"6-7, 12","note":"모세는 너희가 의로워서 땅을 얻는 게 아니라며, 광야에서부터 늘 하나님을 거역한 목이 곧은 백성이라고 했어요."},
+        {"from":"아론","to":"모세","label":"형","kind":"family","directed":true,"weight":1,"verses":"20","note":"하나님이 아론에게도 크게 진노하셔서 멸하려 하셨지만 모세가 아론을 위해서도 기도했어요."}
       ],
       "places": [
         {"name":"호렙","where":"시내 산","what":"금송아지를 만든 곳","weight":3},
@@ -238,8 +238,8 @@
         {"name":"하나님","role":"경외와 사랑을 요구하심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"요구하시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"레위 지파","to":"하나님","label":"섬기는 지파","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘 자손","label":"요구하시는 분","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"하나님이 너희에게 요구하시는 것은 그분을 경외하고 그 길로 행하며 사랑하고 마음을 다해 섬기는 것이라고 했어요."},
+        {"from":"레위 지파","to":"하나님","label":"섬기는 지파","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"하나님이 레위 지파를 구별해 언약궤를 메고 섬기며 그의 이름으로 축복하게 하셨고, 하나님이 그들의 기업이 되셨어요."}
       ],
       "places": [
 
@@ -261,7 +261,7 @@
         {"name":"하나님","role":"땅을 돌보시는 분","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"비를 주시는 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"이스라엘 자손","label":"비를 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"너희가 하나님을 사랑하고 섬기면 하나님이 때를 따라 이른 비와 늦은 비를 주시겠다고 하셨어요."}
       ],
       "places": [
         {"name":"그리심 산","where":"세겜 남쪽 산","what":"복을 선포할 산","weight":2},
@@ -584,7 +584,7 @@
         {"name":"이스라엘 자손","role":"아멘으로 응답할 백성","weight":2}
       ],
       "rels": [
-        {"from":"레위 지파","to":"이스라엘 자손","label":"선포하는 지파","kind":"other","directed":true,"weight":2}
+        {"from":"레위 지파","to":"이스라엘 자손","label":"선포하는 지파","kind":"other","directed":true,"weight":2,"verses":"14-26","note":"레위 사람들이 큰 소리로 율법을 어기는 자는 저주를 받으리라 선포하고 백성은 아멘으로 답했어요."}
       ],
       "places": [
         {"name":"에발 산","where":"세겜 북쪽 산","what":"율법 돌비와 제단을 세우고 저주를 선포할 곳","weight":3},
@@ -606,7 +606,7 @@
         {"name":"이스라엘 자손","role":"복과 저주 앞에 선 백성","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"경고한 지도자","kind":"ally","directed":true,"weight":2}
+        {"from":"모세","to":"이스라엘 자손","label":"경고한 지도자","kind":"ally","directed":true,"weight":2,"verses":"1-2, 15","note":"모세가 말씀을 지키면 복이 따르고 지키지 않으면 저주가 임하리라고 엄히 경고했어요."}
       ],
       "places": [
 
@@ -627,7 +627,7 @@
         {"name":"이스라엘 자손","role":"언약에 들어간 새 세대","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"언약을 세운 지도자","kind":"ally","directed":true,"weight":3}
+        {"from":"모세","to":"이스라엘 자손","label":"언약을 세운 지도자","kind":"ally","directed":true,"weight":3,"verses":"10-13","note":"모세가 오늘 너희가 다 하나님 앞에 서서 하나님과 언약을 맺어 그의 백성이 되게 하려 한다고 했어요."}
       ],
       "places": [
         {"name":"모압","where":"요단 동편 평지","what":"새 세대와 언약을 세운 곳","weight":2}
@@ -648,8 +648,8 @@
         {"name":"하나님","role":"돌아오는 자를 회복하심","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"호소한 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"회복하실 분","kind":"ally","directed":true,"weight":2}
+        {"from":"모세","to":"이스라엘 자손","label":"호소한 지도자","kind":"ally","directed":true,"weight":3,"verses":"15, 19","note":"모세가 내가 생명과 복과 사망과 화를 너희 앞에 두었으니 생명을 택하라고 간절히 호소했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"회복하실 분","kind":"ally","directed":true,"weight":2,"verses":"1-3","note":"흩어진 뒤에라도 너희가 돌아와 하나님 말씀을 들으면 하나님이 긍휼히 여겨 다시 모으시겠다고 했어요."}
       ],
       "places": [
 
@@ -672,9 +672,9 @@
         {"name":"하나님","role":"장차 배반을 아시는 분","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"여호수아","label":"격려한 스승","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":2},
-        {"from":"레위 지파","to":"모세","label":"율법을 맡은 지파","kind":"ally","directed":true,"weight":1}
+        {"from":"모세","to":"여호수아","label":"격려한 스승","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"모세가 온 이스라엘 앞에서 여호수아에게 강하고 담대하라, 하나님이 너보다 앞서 가시며 함께하시리라고 했어요."},
+        {"from":"하나님","to":"여호수아","label":"함께하실 분","kind":"ally","directed":true,"weight":2,"verses":"23","note":"하나님이 여호수아에게 직접 강하고 담대하라, 내가 너와 함께하리라고 하셨어요."},
+        {"from":"레위 지파","to":"모세","label":"율법을 맡은 지파","kind":"ally","directed":true,"weight":1,"verses":"9, 24-26","note":"모세가 율법을 써서 언약궤를 멘 레위 사람들에게 주고 언약궤 곁에 두게 했어요."}
       ],
       "places": [
         {"name":"요단 강","where":"가나안 동쪽 경계","what":"모세가 건너지 못할 강","weight":2}
@@ -697,9 +697,9 @@
         {"name":"여호수아","role":"모세와 함께 노래를 전함","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 자손","label":"업어 기른 분","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"하나님","label":"반석을 버린 백성","kind":"conflict","directed":true,"weight":2},
-        {"from":"여호수아","to":"모세","label":"함께 노래한 후계자","kind":"ally","directed":true,"weight":1}
+        {"from":"하나님","to":"이스라엘 자손","label":"업어 기른 분","kind":"ally","directed":true,"weight":3,"verses":"10-11","note":"하나님이 광야에서 이스라엘을 찾아 눈동자같이 지키시고, 독수리가 새끼를 날개에 업듯 길러 주셨어요."},
+        {"from":"이스라엘 자손","to":"하나님","label":"반석을 버린 백성","kind":"conflict","directed":true,"weight":2,"verses":"15, 18","note":"배부른 이스라엘이 자기를 지으신 하나님을 버리고 구원의 반석을 업신여겼다고 노래했어요."},
+        {"from":"여호수아","to":"모세","label":"함께 노래한 후계자","kind":"ally","directed":true,"weight":1,"verses":"44","note":"모세가 눈의 아들 여호수아와 함께 이 노래를 백성에게 들려주었어요."}
       ],
       "places": [
         {"name":"느보 산","where":"모압 평지 위, 여리고 맞은편","what":"모세가 땅을 바라보고 죽을 곳","weight":3}
@@ -723,8 +723,8 @@
         {"name":"이스라엘 자손","role":"하나님의 언약 백성","weight":2}
       ],
       "rels": [
-        {"from":"모세","to":"이스라엘 자손","label":"축복한 하나님의 종","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"붙드시는 팔","kind":"ally","directed":true,"weight":3}
+        {"from":"모세","to":"이스라엘 자손","label":"축복한 하나님의 종","kind":"ally","directed":true,"weight":3,"verses":"1","note":"하나님의 사람 모세가 죽기 전에 이스라엘 자손을 지파마다 축복했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"붙드시는 팔","kind":"ally","directed":true,"weight":3,"verses":"27","note":"영원하신 하나님이 너의 처소가 되시고 그 영원한 팔이 너를 붙드신다고 했어요."}
       ],
       "places": [
         {"name":"시내 산","where":"시내 반도 남쪽","what":"하나님이 오셔서 율법을 주신 곳","weight":1}
@@ -747,9 +747,9 @@
         {"name":"이스라엘 자손","role":"삼십 일 동안 애곡함","weight":1}
       ],
       "rels": [
-        {"from":"여호수아","to":"모세","label":"뒤를 이은 제자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"모세","label":"대면하여 아신 분","kind":"ally","directed":false,"weight":3},
-        {"from":"이스라엘 자손","to":"모세","label":"애곡한 백성","kind":"ally","directed":true,"weight":1}
+        {"from":"여호수아","to":"모세","label":"뒤를 이은 제자","kind":"ally","directed":true,"weight":3,"verses":"9","note":"모세가 안수했으므로 여호수아에게 지혜의 영이 충만했고 백성이 그의 말을 들었어요."},
+        {"from":"하나님","to":"모세","label":"대면하여 아신 분","kind":"ally","directed":false,"weight":3,"verses":"10","note":"그 후 이스라엘에는 모세처럼 하나님이 얼굴을 마주하여 아시던 선지자가 다시 일어나지 않았어요."},
+        {"from":"이스라엘 자손","to":"모세","label":"애곡한 백성","kind":"ally","directed":true,"weight":1,"verses":"8","note":"모세가 죽자 이스라엘 자손이 모압 평지에서 삼십 일 동안 애곡했어요."}
       ],
       "places": [
         {"name":"느보 산","where":"모압 평지 위, 여리고 맞은편","what":"모세가 약속의 땅을 바라본 비스가 꼭대기","weight":3},
