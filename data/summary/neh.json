@@ -23,10 +23,10 @@
         {"name":"하나님","role":"언약을 지키시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나니","to":"느헤미야","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"느헤미야","to":"하나님","label":"기도한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"느헤미야","to":"아닥사스다","label":"술 맡은 관원","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"모세","label":"약속하신 분","kind":"ally","directed":true,"weight":1}
+        {"from":"하나니","to":"느헤미야","label":"형제","kind":"family","directed":false,"weight":2,"verses":"2-3","note":"형제 하나니가 와서 예루살렘 성벽이 무너지고 성문은 불탔다고 전했어요."},
+        {"from":"느헤미야","to":"하나님","label":"기도한 종","kind":"ally","directed":true,"weight":3,"verses":"4-11","note":"느헤미야가 앉아 울고 여러 날 금식하며 하나님께 이스라엘의 죄를 고백하고 왕 앞에서 은혜를 입게 해 달라고 기도했어요."},
+        {"from":"느헤미야","to":"아닥사스다","label":"술 맡은 관원","kind":"ally","directed":true,"weight":2,"verses":"11","note":"느헤미야는 아닥사스다 왕의 술 맡은 관원이었어요."},
+        {"from":"하나님","to":"모세","label":"약속하신 분","kind":"ally","directed":true,"weight":1,"verses":"8-9","note":"느헤미야는 하나님이 모세에게 너희가 돌아오면 다시 모으시겠다고 하신 약속을 기억해 달라고 했어요."}
       ],
       "places": [
         {"name":"수산 궁","where":"바사 제국의 왕궁 도시","what":"느헤미야가 소식을 들은 곳","weight":2},
@@ -55,12 +55,12 @@
         {"name":"하나님","role":"선한 손으로 도우신 분","weight":3}
       ],
       "rels": [
-        {"from":"아닥사스다","to":"느헤미야","label":"보내 준 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"산발랏","to":"느헤미야","label":"비웃은 대적","kind":"conflict","directed":true,"weight":3},
-        {"from":"도비야","to":"산발랏","label":"함께한 대적","kind":"ally","directed":false,"weight":2},
-        {"from":"유다 지도자들","to":"느헤미야","label":"함께 일어난 이","kind":"ally","directed":true,"weight":2},
-        {"from":"게셈","to":"느헤미야","label":"비웃은 이","kind":"conflict","directed":true,"weight":1},
-        {"from":"하나님","to":"느헤미야","label":"도우신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"아닥사스다","to":"느헤미야","label":"보내 준 왕","kind":"ally","directed":true,"weight":3,"verses":"4-8","note":"왕이 수심 가득한 느헤미야에게 무엇을 원하냐 물었고, 그가 묵도한 뒤 청하자 조서와 목재를 주어 보내 주었어요."},
+        {"from":"산발랏","to":"느헤미야","label":"비웃은 대적","kind":"conflict","directed":true,"weight":3,"verses":"10, 19","note":"호론 사람 산발랏이 이스라엘을 도우러 온 사람이 있다는 말에 심히 근심했고 성벽 일을 비웃었어요."},
+        {"from":"도비야","to":"산발랏","label":"함께한 대적","kind":"ally","directed":false,"weight":2,"verses":"10, 19","note":"암몬 사람 종 도비야도 산발랏과 함께 비웃으며 왕을 배반하려 하느냐고 했어요."},
+        {"from":"유다 지도자들","to":"느헤미야","label":"함께 일어난 이","kind":"ally","directed":true,"weight":2,"verses":"17-18","note":"느헤미야가 하나님의 선한 손을 이야기하자 사람들이 일어나 건축하자며 힘을 냈어요."},
+        {"from":"게셈","to":"느헤미야","label":"비웃은 이","kind":"conflict","directed":true,"weight":1,"verses":"19","note":"아라비아 사람 게셈도 그들을 업신여기며 비웃었어요."},
+        {"from":"하나님","to":"느헤미야","label":"도우신 분","kind":"ally","directed":true,"weight":3,"verses":"8, 18","note":"하나님의 선한 손이 느헤미야를 도우셨기에 왕이 그 청을 허락했어요."}
       ],
       "places": [
         {"name":"수산 궁","where":"바사의 왕궁 도시","what":"느헤미야가 왕에게 청한 곳","weight":2},
@@ -89,10 +89,10 @@
         {"name":"레위인들","role":"샘문 쪽을 쌓은 이들","weight":1}
       ],
       "rels": [
-        {"from":"제사장들","to":"엘리아십","label":"함께한 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"살룸의 딸들","to":"살룸","label":"딸들","kind":"family","directed":true,"weight":2},
-        {"from":"드고아 귀족들","to":"드고아 사람들","label":"돕지 않은 이들","kind":"conflict","directed":false,"weight":1},
-        {"from":"금장색과 상인","to":"제사장들","label":"함께 쌓음","kind":"ally","directed":false,"weight":1}
+        {"from":"제사장들","to":"엘리아십","label":"함께한 이들","kind":"ally","directed":true,"weight":2,"verses":"1","note":"대제사장 엘리아십과 형제 제사장들이 일어나 양문을 건축하고 거룩하게 했어요."},
+        {"from":"살룸의 딸들","to":"살룸","label":"딸들","kind":"family","directed":true,"weight":2,"verses":"12","note":"예루살렘 절반을 다스리는 살룸과 그 딸들도 성벽을 중수했어요."},
+        {"from":"드고아 귀족들","to":"드고아 사람들","label":"돕지 않은 이들","kind":"conflict","directed":false,"weight":1,"verses":"5","note":"드고아 사람들은 성벽을 중수했지만 그 귀족들은 주의 일에 목을 내밀지 않았어요."},
+        {"from":"금장색과 상인","to":"제사장들","label":"함께 쌓음","kind":"ally","directed":false,"weight":1,"verses":"31-32","note":"금장색과 상인들도 양문까지 성벽을 함께 쌓았어요."}
       ],
       "places": [
         {"name":"양 문","where":"예루살렘 성전 북쪽 문","what":"대제사장이 세워 거룩하게 한 문","weight":3},
@@ -120,12 +120,12 @@
         {"name":"하나님","role":"백성을 위해 싸우시는 분","weight":3}
       ],
       "rels": [
-        {"from":"산발랏","to":"느헤미야","label":"비웃은 대적","kind":"conflict","directed":true,"weight":3},
-        {"from":"도비야","to":"산발랏","label":"함께 조롱","kind":"ally","directed":false,"weight":2},
-        {"from":"느헤미야","to":"유다 백성","label":"격려한 지도자","kind":"ally","directed":true,"weight":3},
-        {"from":"아라비아·암몬·아스돗 사람","to":"유다 백성","label":"공격 꾀한 무리","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"유다 백성","label":"싸우시는 분","kind":"ally","directed":true,"weight":2},
-        {"from":"나팔 부는 자","to":"느헤미야","label":"곁에 선 이","kind":"ally","directed":true,"weight":1}
+        {"from":"산발랏","to":"느헤미야","label":"비웃은 대적","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"산발랏이 성벽 쌓는 것을 듣고 크게 분노하며 이 미약한 유다 사람들이 무엇을 하느냐고 비웃었어요."},
+        {"from":"도비야","to":"산발랏","label":"함께 조롱","kind":"ally","directed":false,"weight":2,"verses":"3","note":"도비야는 그들이 쌓는 돌 성벽은 여우가 올라가도 무너지리라고 함께 조롱했어요."},
+        {"from":"느헤미야","to":"유다 백성","label":"격려한 지도자","kind":"ally","directed":true,"weight":3,"verses":"14","note":"느헤미야가 그들을 두려워하지 말고 크고 두려우신 주를 기억하며 형제와 자녀를 위해 싸우라고 격려했어요."},
+        {"from":"아라비아·암몬·아스돗 사람","to":"유다 백성","label":"공격 꾀한 무리","kind":"conflict","directed":true,"weight":2,"verses":"7-8","note":"성벽이 이어진다는 말에 이웃 민족들이 함께 와서 예루살렘을 치고 혼란에 빠뜨리려 꾀했어요."},
+        {"from":"하나님","to":"유다 백성","label":"싸우시는 분","kind":"ally","directed":true,"weight":2,"verses":"15, 20","note":"하나님이 대적의 꾀를 폐하셨고 느헤미야는 우리 하나님이 우리를 위해 싸우시리라고 했어요."},
+        {"from":"나팔 부는 자","to":"느헤미야","label":"곁에 선 이","kind":"ally","directed":true,"weight":1,"verses":"18","note":"나팔 부는 자는 느헤미야 곁에 서서 모일 신호를 맡았어요."}
       ],
       "places": [
         {"name":"예루살렘 성벽","where":"다시 쌓는 성벽","what":"절반 높이까지 연결된 곳","weight":3},
@@ -151,11 +151,11 @@
         {"name":"하나님","role":"경외할 분","weight":2}
       ],
       "rels": [
-        {"from":"가난한 백성","to":"느헤미야","label":"호소한 백성","kind":"ally","directed":true,"weight":2},
-        {"from":"느헤미야","to":"귀족과 민장들","label":"책망한 총독","kind":"conflict","directed":true,"weight":3},
-        {"from":"귀족과 민장들","to":"가난한 백성","label":"이자 받은 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"느헤미야","to":"이전 총독들","label":"다르게 산 총독","kind":"other","directed":true,"weight":1},
-        {"from":"느헤미야","to":"하나님","label":"경외한 종","kind":"ally","directed":true,"weight":2}
+        {"from":"가난한 백성","to":"느헤미야","label":"호소한 백성","kind":"ally","directed":true,"weight":2,"verses":"1-5","note":"가난한 백성이 곡식을 얻으려 밭과 자녀를 저당 잡혔다며 크게 부르짖었어요."},
+        {"from":"느헤미야","to":"귀족과 민장들","label":"책망한 총독","kind":"conflict","directed":true,"weight":3,"verses":"6-11","note":"느헤미야가 크게 노하여 귀족과 민장들에게 형제에게 이자를 받지 말고 밭과 이자를 돌려주라고 책망했어요."},
+        {"from":"귀족과 민장들","to":"가난한 백성","label":"이자 받은 이들","kind":"conflict","directed":true,"weight":3,"verses":"7, 12","note":"귀족들은 형제에게 높은 이자를 받았지만 책망을 듣고 다 돌려주겠다고 맹세했어요."},
+        {"from":"느헤미야","to":"이전 총독들","label":"다르게 산 총독","kind":"other","directed":true,"weight":1,"verses":"14-15","note":"이전 총독들은 백성에게 무거운 짐을 지웠지만 느헤미야는 하나님을 경외하여 총독의 녹을 받지 않았어요."},
+        {"from":"느헤미야","to":"하나님","label":"경외한 종","kind":"ally","directed":true,"weight":2,"verses":"19","note":"느헤미야가 내가 이 백성을 위해 행한 모든 일을 기억하사 은혜를 베풀어 달라고 기도했어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"성벽을 쌓던 성","what":"느헤미야가 대회를 연 곳","weight":2},
@@ -183,12 +183,12 @@
         {"name":"하나님","role":"이 일을 이루신 분","weight":3}
       ],
       "rels": [
-        {"from":"산발랏","to":"느헤미야","label":"해치려 한 대적","kind":"conflict","directed":true,"weight":3},
-        {"from":"게셈","to":"산발랏","label":"함께 꾀함","kind":"ally","directed":false,"weight":2},
-        {"from":"스마야(들라야의 아들)","to":"느헤미야","label":"속이려 한 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"도비야","to":"스마야(들라야의 아들)","label":"뇌물 준 이","kind":"other","directed":true,"weight":2},
-        {"from":"유다 귀족들","to":"도비야","label":"편지한 귀족","kind":"ally","directed":true,"weight":1},
-        {"from":"노아댜","to":"느헤미야","label":"두렵게 한 이","kind":"conflict","directed":true,"weight":1}
+        {"from":"산발랏","to":"느헤미야","label":"해치려 한 대적","kind":"conflict","directed":true,"weight":3,"verses":"1-4","note":"산발랏과 게셈이 오노 평지에서 만나자며 네 번이나 불렀지만 느헤미야는 해하려는 줄 알고 큰 역사를 하고 있다며 거절했어요."},
+        {"from":"게셈","to":"산발랏","label":"함께 꾀함","kind":"ally","directed":false,"weight":2,"verses":"2, 6","note":"게셈은 산발랏과 함께 느헤미야를 불러내 해치려 꾀했어요."},
+        {"from":"스마야(들라야의 아들)","to":"느헤미야","label":"속이려 한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"10-13","note":"스마야가 성전에 숨자며 느헤미야를 꾀었지만 그는 도비야와 산발랏에게 뇌물 받은 거짓 예언자였어요."},
+        {"from":"도비야","to":"스마야(들라야의 아들)","label":"뇌물 준 이","kind":"other","directed":true,"weight":2,"verses":"12","note":"도비야와 산발랏이 뇌물을 주어 스마야가 느헤미야를 두렵게 하려 했어요."},
+        {"from":"유다 귀족들","to":"도비야","label":"편지한 귀족","kind":"ally","directed":true,"weight":1,"verses":"17-19","note":"유다 귀족들이 도비야와 편지를 주고받으며 그의 선행을 느헤미야에게 말했어요."},
+        {"from":"노아댜","to":"느헤미야","label":"두렵게 한 이","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"여선지자 노아댜와 다른 선지자들도 느헤미야를 두렵게 하려 했어요."}
       ],
       "places": [
         {"name":"오노 평지","where":"예루살렘 북서쪽 평야","what":"대적들이 만나자고 한 곳","weight":2},
@@ -215,10 +215,10 @@
         {"name":"하나님","role":"백성을 모을 마음을 주심","weight":2}
       ],
       "rels": [
-        {"from":"느헤미야","to":"하나니","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"느헤미야","to":"하나냐","label":"성을 맡긴 총독","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"느헤미야","label":"마음을 주신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"족장들","to":"느헤미야","label":"함께 드린 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"느헤미야","to":"하나니","label":"형제","kind":"family","directed":false,"weight":2,"verses":"2","note":"느헤미야가 형제 하나니에게 예루살렘을 다스리게 했어요."},
+        {"from":"느헤미야","to":"하나냐","label":"성을 맡긴 총독","kind":"ally","directed":true,"weight":2,"verses":"2","note":"영문의 관원 하나냐는 충성되고 하나님을 경외하는 사람이라 예루살렘을 함께 맡겼어요."},
+        {"from":"하나님","to":"느헤미야","label":"마음을 주신 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님이 느헤미야의 마음을 감동하셔서 귀족과 백성을 모아 계보대로 등록하게 하셨어요."},
+        {"from":"족장들","to":"느헤미야","label":"함께 드린 이들","kind":"ally","directed":true,"weight":1,"verses":"70-72","note":"족장 몇이 성전 공사를 위해 금과 은과 제사장 옷을 드렸어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"성벽이 완성된 성","what":"백성이 적어 비어 있던 곳","weight":3}
@@ -243,11 +243,11 @@
         {"name":"하나님","role":"백성의 힘이신 분","weight":2}
       ],
       "rels": [
-        {"from":"에스라","to":"모든 백성","label":"말씀 읽은 학사","kind":"ally","directed":true,"weight":3},
-        {"from":"레위인들","to":"모든 백성","label":"깨닫게 한 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"느헤미야","to":"에스라","label":"함께 위로함","kind":"ally","directed":false,"weight":2},
-        {"from":"족장들","to":"에스라","label":"배우러 온 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"모든 백성","to":"하나님","label":"경배한 회중","kind":"ally","directed":true,"weight":2}
+        {"from":"에스라","to":"모든 백성","label":"말씀 읽은 학사","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"학사 에스라가 수문 앞 광장에서 새벽부터 정오까지 율법책을 백성에게 읽어 주었어요."},
+        {"from":"레위인들","to":"모든 백성","label":"깨닫게 한 이들","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"레위인들이 율법책을 낭독하고 뜻을 해석해 백성이 깨닫게 했어요."},
+        {"from":"느헤미야","to":"에스라","label":"함께 위로함","kind":"ally","directed":false,"weight":2,"verses":"9-10","note":"말씀을 듣고 우는 백성에게 느헤미야와 에스라가 여호와로 인해 기뻐하는 것이 너희의 힘이라며 위로했어요."},
+        {"from":"족장들","to":"에스라","label":"배우러 온 이들","kind":"ally","directed":true,"weight":1,"verses":"13","note":"이튿날 족장들과 제사장과 레위인들이 율법을 더 밝히 알고자 에스라에게 모였어요."},
+        {"from":"모든 백성","to":"하나님","label":"경배한 회중","kind":"ally","directed":true,"weight":2,"verses":"6","note":"에스라가 하나님을 송축하자 백성이 손을 들고 아멘 아멘 하며 얼굴을 땅에 대고 경배했어요."}
       ],
       "places": [
         {"name":"수문 앞 광장","where":"예루살렘 성전 동남쪽 광장","what":"율법을 읽고 들은 곳","weight":3},
@@ -274,11 +274,11 @@
         {"name":"하나님","role":"긍휼로 버리지 않으신 분","weight":3}
       ],
       "rels": [
-        {"from":"레위인들","to":"이스라엘 자손","label":"기도 이끈 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"아브라함","label":"택하신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"조상들","to":"하나님","label":"반역한 이들","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"조상들","label":"버리지 않으신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"조상들","to":"선지자들","label":"죽인 이들","kind":"conflict","directed":true,"weight":1}
+        {"from":"레위인들","to":"이스라엘 자손","label":"기도 이끈 이들","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"레위인들이 단에 서서 일어나 영원부터 영원까지 하나님을 송축하라며 기도를 이끌었어요."},
+        {"from":"하나님","to":"아브라함","label":"택하신 분","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"레위인들은 아브람을 택하여 아브라함이라 하시고 그 마음이 충성됨을 보신 하나님을 고백했어요."},
+        {"from":"조상들","to":"하나님","label":"반역한 이들","kind":"conflict","directed":true,"weight":3,"verses":"16-17, 26","note":"조상들은 교만하고 목을 굳게 하여 명령을 듣지 않고 하나님께 반역했어요."},
+        {"from":"하나님","to":"조상들","label":"버리지 않으신 분","kind":"ally","directed":true,"weight":2,"verses":"17, 19","note":"그래도 하나님은 용서하시는 분이시라 광야에서 그들을 버리지 않으셨어요."},
+        {"from":"조상들","to":"선지자들","label":"죽인 이들","kind":"conflict","directed":true,"weight":1,"verses":"26","note":"조상들은 돌아오라고 경고한 선지자들을 죽였어요."}
       ],
       "places": [
         {"name":"홍해","where":"애굽과 시내 광야 사이 바다","what":"갈라진 바다로 건너게 하신 곳","weight":1},
@@ -305,10 +305,10 @@
         {"name":"하나님","role":"언약의 주인","weight":2}
       ],
       "rels": [
-        {"from":"느헤미야","to":"온 백성","label":"앞장선 총독","kind":"ally","directed":true,"weight":3},
-        {"from":"제사장들","to":"느헤미야","label":"함께 인봉","kind":"ally","directed":true,"weight":2},
-        {"from":"온 백성","to":"하나님","label":"맹세한 백성","kind":"ally","directed":true,"weight":3},
-        {"from":"온 백성","to":"레위인들","label":"십일조 드릴 이","kind":"ally","directed":true,"weight":2}
+        {"from":"느헤미야","to":"온 백성","label":"앞장선 총독","kind":"ally","directed":true,"weight":3,"verses":"1","note":"인봉한 사람 가운데 첫 번째는 총독 느헤미야였어요."},
+        {"from":"제사장들","to":"느헤미야","label":"함께 인봉","kind":"ally","directed":true,"weight":2,"verses":"1-8","note":"제사장들도 느헤미야와 함께 언약에 인봉했어요."},
+        {"from":"온 백성","to":"하나님","label":"맹세한 백성","kind":"ally","directed":true,"weight":3,"verses":"28-29","note":"남은 백성이 하나님의 율법을 따르겠다고 저주로 맹세했어요."},
+        {"from":"온 백성","to":"레위인들","label":"십일조 드릴 이","kind":"ally","directed":true,"weight":2,"verses":"37","note":"백성은 땅의 소산의 십일조를 레위인들에게 드리기로 했어요."}
       ],
       "places": [
         {"name":"하나님의 전","where":"예루살렘 성전","what":"버려두지 않겠다고 한 곳","weight":3},
@@ -334,10 +334,10 @@
         {"name":"노래하는 이들","role":"날마다 찬양한 아삽 자손","weight":1}
       ],
       "rels": [
-        {"from":"제비 뽑힌 백성","to":"백성의 지도자들","label":"함께 산 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"자원한 사람들","to":"백성의 지도자들","label":"축복받은 이들","kind":"ally","directed":true,"weight":2},
-        {"from":"노래하는 이들","to":"제사장과 레위인","label":"함께 섬김","kind":"ally","directed":false,"weight":1},
-        {"from":"문지기들","to":"제사장과 레위인","label":"함께 섬김","kind":"ally","directed":false,"weight":1}
+        {"from":"제비 뽑힌 백성","to":"백성의 지도자들","label":"함께 산 이들","kind":"ally","directed":true,"weight":2,"verses":"1","note":"지도자들은 예루살렘에 살고 나머지 백성은 제비 뽑아 십분의 일을 예루살렘에 살게 했어요."},
+        {"from":"자원한 사람들","to":"백성의 지도자들","label":"축복받은 이들","kind":"ally","directed":true,"weight":2,"verses":"2","note":"예루살렘에 자원하여 살겠다는 사람들은 백성이 축복했어요."},
+        {"from":"노래하는 이들","to":"제사장과 레위인","label":"함께 섬김","kind":"ally","directed":false,"weight":1,"verses":"22-23","note":"노래하는 아삽 자손은 성전 일을 맡아 날마다 할 일이 정해져 있었어요."},
+        {"from":"문지기들","to":"제사장과 레위인","label":"함께 섬김","kind":"ally","directed":false,"weight":1,"verses":"19","note":"문지기 악굽과 달몬과 형제들이 성문을 지켰어요."}
       ],
       "places": [
         {"name":"예루살렘","where":"거룩한 성","what":"열에 하나가 살게 된 곳","weight":3},
@@ -366,11 +366,11 @@
         {"name":"하나님","role":"크게 즐겁게 하신 분","weight":3}
       ],
       "rels": [
-        {"from":"에스라","to":"두 찬양대","label":"앞장선 학사","kind":"ally","directed":true,"weight":2},
-        {"from":"느헤미야","to":"두 찬양대","label":"세운 총독","kind":"ally","directed":true,"weight":3},
-        {"from":"레위인들","to":"제사장들","label":"함께 정결","kind":"ally","directed":false,"weight":2},
-        {"from":"하나님","to":"백성","label":"즐겁게 하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"예수아","to":"스룹바벨","label":"함께 돌아온 이","kind":"ally","directed":false,"weight":1}
+        {"from":"에스라","to":"두 찬양대","label":"앞장선 학사","kind":"ally","directed":true,"weight":2,"verses":"36","note":"성벽 봉헌 때 학사 에스라가 한 찬양대 앞에서 행진했어요."},
+        {"from":"느헤미야","to":"두 찬양대","label":"세운 총독","kind":"ally","directed":true,"weight":3,"verses":"31, 38","note":"느헤미야가 유다 지도자들을 성벽 위로 올려 큰 찬양대 둘을 세워 양쪽으로 행진하게 했어요."},
+        {"from":"레위인들","to":"제사장들","label":"함께 정결","kind":"ally","directed":false,"weight":2,"verses":"30","note":"제사장과 레위인들이 몸을 정결하게 하고 백성과 성문과 성벽도 정결하게 했어요."},
+        {"from":"하나님","to":"백성","label":"즐겁게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"43","note":"하나님이 크게 즐거워하게 하셔서 예루살렘의 즐거워하는 소리가 멀리까지 들렸어요."},
+        {"from":"예수아","to":"스룹바벨","label":"함께 돌아온 이","kind":"ally","directed":false,"weight":1,"verses":"1","note":"스룹바벨과 예수아와 함께 돌아온 제사장과 레위인의 명단이 기록되어 있어요."}
       ],
       "places": [
         {"name":"예루살렘 성벽 위","where":"완성된 성벽","what":"두 찬양대가 행진한 길","weight":3},
@@ -400,12 +400,12 @@
         {"name":"하나님","role":"기억해 달라 기도한 분","weight":2}
       ],
       "rels": [
-        {"from":"엘리아십","to":"도비야","label":"방 내준 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"느헤미야","to":"도비야","label":"쫓아낸 총독","kind":"conflict","directed":true,"weight":3},
-        {"from":"느헤미야","to":"민장들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2},
-        {"from":"느헤미야","to":"유다 귀인들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2},
-        {"from":"느헤미야","to":"하나님","label":"기억을 구한 종","kind":"ally","directed":true,"weight":2},
-        {"from":"산발랏","to":"엘리아십","label":"손자의 장인","kind":"family","directed":true,"weight":1}
+        {"from":"엘리아십","to":"도비야","label":"방 내준 제사장","kind":"ally","directed":true,"weight":2,"verses":"4-5","note":"제사장 엘리아십이 도비야와 친해서 성전 곳간에 그를 위한 큰 방을 마련해 주었어요."},
+        {"from":"느헤미야","to":"도비야","label":"쫓아낸 총독","kind":"conflict","directed":true,"weight":3,"verses":"7-9","note":"돌아온 느헤미야가 몹시 근심하여 도비야의 세간을 방 밖으로 다 내던지고 그 방을 정결하게 했어요."},
+        {"from":"느헤미야","to":"민장들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2,"verses":"10-11","note":"레위인들이 몫을 받지 못해 밭으로 돌아가자 느헤미야가 민장들에게 어찌하여 성전을 버렸냐고 꾸짖었어요."},
+        {"from":"느헤미야","to":"유다 귀인들","label":"꾸짖은 총독","kind":"conflict","directed":true,"weight":2,"verses":"15-18","note":"느헤미야가 안식일에 장사하는 것을 보고 귀인들에게 안식일을 범하는 악을 행한다고 꾸짖었어요."},
+        {"from":"느헤미야","to":"하나님","label":"기억을 구한 종","kind":"ally","directed":true,"weight":2,"verses":"14, 31","note":"느헤미야가 내 하나님이여 나를 기억하사 복을 주옵소서 하고 기도했어요."},
+        {"from":"산발랏","to":"엘리아십","label":"손자의 장인","kind":"family","directed":true,"weight":1,"verses":"28","note":"대제사장 엘리아십의 손자 하나가 산발랏의 사위가 되자 느헤미야가 그를 쫓아냈어요."}
       ],
       "places": [
         {"name":"성전 곳간 큰 방","where":"하나님의 전 곁 창고","what":"도비야가 쓰다 쫓겨난 곳","weight":3},

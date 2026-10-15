@@ -23,10 +23,10 @@
         {"name":"일곱 방백","role":"왕이 의논한 신하들","weight":1}
       ],
       "rels": [
-        {"from":"와스디","to":"아하수에로","label":"부름을 거절한 왕후","kind":"conflict","directed":true,"weight":3},
-        {"from":"므무간","to":"아하수에로","label":"조언한 신하","kind":"ally","directed":true,"weight":2},
-        {"from":"일곱 내시","to":"아하수에로","label":"심부름한 내시","kind":"ally","directed":true,"weight":1},
-        {"from":"일곱 방백","to":"아하수에로","label":"의논한 신하","kind":"ally","directed":true,"weight":1}
+        {"from":"와스디","to":"아하수에로","label":"부름을 거절한 왕후","kind":"conflict","directed":true,"weight":3,"verses":"10-12","note":"잔치 일곱째 날 왕이 왕후 와스디를 불렀지만 와스디는 오기를 거절했고 왕이 몹시 진노했어요."},
+        {"from":"므무간","to":"아하수에로","label":"조언한 신하","kind":"ally","directed":true,"weight":2,"verses":"16-21","note":"므무간이 와스디가 모든 남편을 업신여기게 만들었다며 다른 왕후를 세우자고 조언했어요."},
+        {"from":"일곱 내시","to":"아하수에로","label":"심부름한 내시","kind":"ally","directed":true,"weight":1,"verses":"10-11","note":"왕이 일곱 내시에게 와스디를 왕관을 씌워 데려오라고 명령했어요."},
+        {"from":"일곱 방백","to":"아하수에로","label":"의논한 신하","kind":"ally","directed":true,"weight":1,"verses":"13-15","note":"왕은 규례를 아는 일곱 방백에게 와스디를 어떻게 처리할지 물었어요."}
       ],
       "places": [
         {"name":"수산 궁","where":"바사 제국의 왕궁 도시","what":"큰 잔치가 열린 곳","weight":3},
@@ -52,15 +52,15 @@
         {"name":"데레스","role":"왕을 해하려 한 내시","weight":1}
       ],
       "renames": [
-        {"from":"하닷사","to":"에스더","verses":"7","why":"두 이름을 가짐"}
+        {"from":"하닷사","to":"에스더","verses":"7","why":"두 이름을 가짐","note":"모르드개가 기른 하닷사는 곧 에스더예요. 히브리 이름과 바사식 이름 두 가지를 가졌어요."}
       ],
       "rels": [
-        {"from":"모르드개","to":"에스더","label":"길러 준 사촌","kind":"family","directed":true,"weight":3},
-        {"from":"아하수에로","to":"에스더","label":"남편","kind":"family","directed":true,"weight":3},
-        {"from":"헤개","to":"에스더","label":"돌본 내시","kind":"ally","directed":true,"weight":2},
-        {"from":"빅단","to":"아하수에로","label":"해하려 한 내시","kind":"conflict","directed":true,"weight":1},
-        {"from":"모르드개","to":"빅단","label":"음모를 알린 이","kind":"conflict","directed":true,"weight":2},
-        {"from":"데레스","to":"빅단","label":"함께 꾀함","kind":"ally","directed":false,"weight":1}
+        {"from":"모르드개","to":"에스더","label":"길러 준 사촌","kind":"family","directed":true,"weight":3,"verses":"7","note":"모르드개는 부모를 잃은 삼촌의 딸 에스더를 자기 딸처럼 길렀어요."},
+        {"from":"아하수에로","to":"에스더","label":"남편","kind":"family","directed":true,"weight":3,"verses":"17","note":"왕이 모든 여자보다 에스더를 더 사랑하여 왕관을 씌우고 와스디 대신 왕후로 삼았어요."},
+        {"from":"헤개","to":"에스더","label":"돌본 내시","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"궁녀를 맡은 내시 헤개가 에스더를 좋게 여겨 몸단장할 물품과 시녀를 주었어요."},
+        {"from":"빅단","to":"아하수에로","label":"해하려 한 내시","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"문을 지키던 내시 빅단과 데레스가 원한을 품고 왕을 죽이려 꾀했어요."},
+        {"from":"모르드개","to":"빅단","label":"음모를 알린 이","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"모르드개가 그 음모를 알고 에스더에게 알려 왕에게 전하게 했고, 그 일이 궁중 일기에 기록되었어요."},
+        {"from":"데레스","to":"빅단","label":"함께 꾀함","kind":"ally","directed":false,"weight":1,"verses":"21","note":"데레스는 빅단과 함께 왕을 해하려 했어요."}
       ],
       "places": [
         {"name":"수산 궁","where":"바사의 왕궁 도시","what":"에스더가 왕후가 된 곳","weight":3},
@@ -85,10 +85,10 @@
         {"name":"유다인","role":"진멸 위기에 놓인 민족","weight":2}
       ],
       "rels": [
-        {"from":"모르드개","to":"하만","label":"절하지 않은 이","kind":"conflict","directed":true,"weight":3},
-        {"from":"하만","to":"유다인","label":"없애려 한 대신","kind":"conflict","directed":true,"weight":3},
-        {"from":"아하수에로","to":"하만","label":"높인 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"왕의 신하들","to":"모르드개","label":"고자질한 신하","kind":"other","directed":true,"weight":1}
+        {"from":"모르드개","to":"하만","label":"절하지 않은 이","kind":"conflict","directed":true,"weight":3,"verses":"2-4","note":"모든 신하가 하만에게 꿇어 절했지만 모르드개는 자기가 유다인이라며 절하지 않았어요."},
+        {"from":"하만","to":"유다인","label":"없애려 한 대신","kind":"conflict","directed":true,"weight":3,"verses":"5-6, 8-9","note":"하만은 모르드개 한 사람만이 아니라 그의 민족 유다인을 모두 없애려고 왕에게 은 만 달란트를 바치겠다고 했어요."},
+        {"from":"아하수에로","to":"하만","label":"높인 왕","kind":"ally","directed":true,"weight":2,"verses":"1, 10","note":"왕이 하만을 높여 모든 대신 위에 두고 반지를 빼어 주었어요."},
+        {"from":"왕의 신하들","to":"모르드개","label":"고자질한 신하","kind":"other","directed":true,"weight":1,"verses":"3-4","note":"신하들이 날마다 왜 절하지 않느냐 하다가 듣지 않자 하만에게 고했어요."}
       ],
       "places": [
         {"name":"수산 궁","where":"바사의 왕궁 도시","what":"하만이 조서를 꾸민 곳","weight":2},
@@ -113,10 +113,10 @@
         {"name":"시녀들","role":"함께 금식한 이들","weight":1}
       ],
       "rels": [
-        {"from":"모르드개","to":"에스더","label":"일깨운 사촌","kind":"family","directed":true,"weight":3},
-        {"from":"하닥","to":"에스더","label":"말을 전한 내시","kind":"ally","directed":true,"weight":2},
-        {"from":"유다인","to":"에스더","label":"함께 금식한 민족","kind":"ally","directed":true,"weight":2},
-        {"from":"시녀들","to":"에스더","label":"함께 금식","kind":"ally","directed":true,"weight":1}
+        {"from":"모르드개","to":"에스더","label":"일깨운 사촌","kind":"family","directed":true,"weight":3,"verses":"13-14","note":"모르드개가 네가 왕궁에 있다고 홀로 살 줄 생각하지 말라, 이때를 위해 왕후가 된 것이 아니냐며 일깨웠어요."},
+        {"from":"하닥","to":"에스더","label":"말을 전한 내시","kind":"ally","directed":true,"weight":2,"verses":"5-10","note":"왕후의 내시 하닥이 에스더와 모르드개 사이를 오가며 말을 전했어요."},
+        {"from":"유다인","to":"에스더","label":"함께 금식한 민족","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"에스더가 수산의 유다인을 모아 나를 위해 사흘 금식하라 하고 죽으면 죽으리라며 왕에게 나아가기로 했어요."},
+        {"from":"시녀들","to":"에스더","label":"함께 금식","kind":"ally","directed":true,"weight":1,"verses":"16","note":"에스더와 시녀들도 함께 금식했어요."}
       ],
       "places": [
         {"name":"수산 성","where":"바사의 도성","what":"모르드개가 통곡한 곳","weight":2},
@@ -142,11 +142,11 @@
         {"name":"하만의 친구들","role":"함께 부추긴 이들","weight":1}
       ],
       "rels": [
-        {"from":"아하수에로","to":"에스더","label":"금 규 내민 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"에스더","to":"하만","label":"잔치에 부른 왕후","kind":"other","directed":true,"weight":2},
-        {"from":"모르드개","to":"하만","label":"절하지 않은 이","kind":"conflict","directed":true,"weight":2},
-        {"from":"세레스","to":"하만","label":"부추긴 아내","kind":"family","directed":true,"weight":2},
-        {"from":"하만의 친구들","to":"하만","label":"부추긴 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"아하수에로","to":"에스더","label":"금 규 내민 왕","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"부르지 않았는데 뜰에 선 에스더를 보고 왕이 금 규를 내밀며 나라의 절반이라도 주겠다고 했어요."},
+        {"from":"에스더","to":"하만","label":"잔치에 부른 왕후","kind":"other","directed":true,"weight":2,"verses":"4, 8","note":"에스더가 왕과 하만을 자기가 베푼 잔치에 초대했어요."},
+        {"from":"모르드개","to":"하만","label":"절하지 않은 이","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"잔치에서 기뻐 나오던 하만은 대궐 문에서 일어나지도 않는 모르드개를 보고 분노했어요."},
+        {"from":"세레스","to":"하만","label":"부추긴 아내","kind":"family","directed":true,"weight":2,"verses":"14","note":"아내 세레스가 높은 나무를 세우고 모르드개를 매달라고 부추겼어요."},
+        {"from":"하만의 친구들","to":"하만","label":"부추긴 이들","kind":"ally","directed":true,"weight":1,"verses":"14","note":"하만의 친구들도 오십 규빗 나무를 세우자고 함께 부추겼어요."}
       ],
       "places": [
         {"name":"왕궁 안뜰","where":"왕의 전 맞은편 뜰","what":"에스더가 목숨 걸고 선 곳","weight":3},
@@ -172,11 +172,11 @@
         {"name":"시종들","role":"궁중 일기를 읽은 이들","weight":1}
       ],
       "rels": [
-        {"from":"아하수에로","to":"모르드개","label":"높인 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"하만","to":"모르드개","label":"매달려다 높인 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"세레스","to":"하만","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"시종들","to":"아하수에로","label":"일기 읽은 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"하만의 지혜자들","to":"하만","label":"경고한 이들","kind":"other","directed":true,"weight":1}
+        {"from":"아하수에로","to":"모르드개","label":"높인 왕","kind":"ally","directed":true,"weight":3,"verses":"1-3, 10","note":"잠이 오지 않던 왕이 궁중 일기를 읽다가 모르드개가 자기 목숨을 구한 일을 알고 높이기로 했어요."},
+        {"from":"하만","to":"모르드개","label":"매달려다 높인 원수","kind":"conflict","directed":true,"weight":3,"verses":"6-11","note":"하만이 왕이 높이려는 사람이 자기인 줄 알고 방법을 말했는데, 그대로 모르드개를 말에 태워 외치게 되었어요."},
+        {"from":"세레스","to":"하만","label":"아내","kind":"family","directed":true,"weight":2,"verses":"13","note":"하만이 집에 돌아와 아내 세레스에게 모든 일을 말했어요."},
+        {"from":"시종들","to":"아하수에로","label":"일기 읽은 이들","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"시종들이 왕 앞에서 궁중 일기를 읽어 드렸어요."},
+        {"from":"하만의 지혜자들","to":"하만","label":"경고한 이들","kind":"other","directed":true,"weight":1,"verses":"13","note":"지혜자들과 세레스는 모르드개가 유다 사람이면 당신이 반드시 그 앞에 엎드러지리라고 경고했어요."}
       ],
       "places": [
         {"name":"왕의 침소","where":"수산 궁 안","what":"잠 못 이룬 왕이 일기를 읽은 곳","weight":2},
@@ -201,11 +201,11 @@
         {"name":"유다인","role":"살 길을 구한 민족","weight":1}
       ],
       "rels": [
-        {"from":"에스더","to":"하만","label":"고발한 왕후","kind":"conflict","directed":true,"weight":3},
-        {"from":"아하수에로","to":"하만","label":"심판한 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"에스더","to":"아하수에로","label":"간구한 아내","kind":"family","directed":true,"weight":2},
-        {"from":"하르보나","to":"아하수에로","label":"알린 내시","kind":"ally","directed":true,"weight":2},
-        {"from":"에스더","to":"유다인","label":"구한 왕후","kind":"ally","directed":true,"weight":1}
+        {"from":"에스더","to":"하만","label":"고발한 왕후","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"에스더가 그 대적과 원수는 이 악한 하만이라고 고발했어요."},
+        {"from":"아하수에로","to":"하만","label":"심판한 왕","kind":"conflict","directed":true,"weight":3,"verses":"8-10","note":"왕이 크게 분노하여 하만이 모르드개를 매달려고 세운 나무에 하만을 매달게 했어요."},
+        {"from":"에스더","to":"아하수에로","label":"간구한 아내","kind":"family","directed":true,"weight":2,"verses":"3-4","note":"에스더가 왕께 내 생명과 내 민족을 살려 달라고 간구했어요."},
+        {"from":"하르보나","to":"아하수에로","label":"알린 내시","kind":"ally","directed":true,"weight":2,"verses":"9","note":"내시 하르보나가 하만이 모르드개를 위해 세운 나무가 그 집에 있다고 왕에게 알렸어요."},
+        {"from":"에스더","to":"유다인","label":"구한 왕후","kind":"ally","directed":true,"weight":1,"verses":"3-4","note":"에스더는 자기 목숨을 걸고 죽게 된 민족 유다인을 구했어요."}
       ],
       "places": [
         {"name":"왕후의 잔치 자리","where":"수산 궁","what":"에스더가 하만을 고발한 곳","weight":3},
@@ -232,11 +232,11 @@
         {"name":"본토 백성","role":"유다인이 된 사람들","weight":1}
       ],
       "rels": [
-        {"from":"아하수에로","to":"모르드개","label":"반지 준 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"에스더","to":"아하수에로","label":"간청한 왕후","kind":"ally","directed":true,"weight":3},
-        {"from":"모르드개","to":"서기관들","label":"명한 대신","kind":"ally","directed":true,"weight":1},
-        {"from":"본토 백성","to":"유다인","label":"유다인이 된 이들","kind":"ally","directed":true,"weight":1},
-        {"from":"에스더","to":"모르드개","label":"사촌","kind":"family","directed":false,"weight":2}
+        {"from":"아하수에로","to":"모르드개","label":"반지 준 왕","kind":"ally","directed":true,"weight":3,"verses":"2","note":"왕이 하만에게서 거둔 반지를 빼어 모르드개에게 주었고 에스더는 모르드개에게 하만의 집을 맡겼어요."},
+        {"from":"에스더","to":"아하수에로","label":"간청한 왕후","kind":"ally","directed":true,"weight":3,"verses":"3-6","note":"에스더가 왕의 발아래 엎드려 울며 하만이 꾸민 유다인을 진멸하는 조서를 거두어 달라고 간청했어요."},
+        {"from":"모르드개","to":"서기관들","label":"명한 대신","kind":"ally","directed":true,"weight":1,"verses":"9-10","note":"모르드개가 서기관들을 불러 유다인이 스스로 생명을 보호하게 하는 조서를 각 지방에 쓰게 했어요."},
+        {"from":"본토 백성","to":"유다인","label":"유다인이 된 이들","kind":"ally","directed":true,"weight":1,"verses":"17","note":"유다인을 두려워하여 본토 백성 중 많은 사람이 유다인이 되었어요."},
+        {"from":"에스더","to":"모르드개","label":"사촌","kind":"family","directed":false,"weight":2,"verses":"1","note":"에스더는 모르드개가 자기에게 어떤 관계인지 왕에게 알렸어요."}
       ],
       "places": [
         {"name":"수산 성","where":"바사의 도성","what":"모르드개의 등장에 즐거워한 곳","weight":3},
@@ -263,12 +263,12 @@
         {"name":"원수들","role":"유다인을 미워한 이들","weight":2}
       ],
       "rels": [
-        {"from":"유다인","to":"원수들","label":"이긴 민족","kind":"conflict","directed":true,"weight":3},
-        {"from":"관리들","to":"유다인","label":"도운 관원","kind":"ally","directed":true,"weight":1},
-        {"from":"모르드개","to":"유다인","label":"편지 보낸 대신","kind":"ally","directed":true,"weight":3},
-        {"from":"에스더","to":"모르드개","label":"함께 정함","kind":"ally","directed":false,"weight":2},
-        {"from":"아하수에로","to":"에스더","label":"들어준 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"하만의 열 아들","to":"유다인","label":"원수","kind":"conflict","directed":true,"weight":1}
+        {"from":"유다인","to":"원수들","label":"이긴 민족","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 5","note":"유다인을 죽이려던 날, 오히려 유다인이 자기를 미워하는 자들을 이겼어요."},
+        {"from":"관리들","to":"유다인","label":"도운 관원","kind":"ally","directed":true,"weight":1,"verses":"3","note":"각 지방 관리들이 모르드개를 두려워하여 유다인을 도왔어요."},
+        {"from":"모르드개","to":"유다인","label":"편지 보낸 대신","kind":"ally","directed":true,"weight":3,"verses":"20-22","note":"모르드개가 각 지방 유다인에게 편지를 보내 부림절을 지키며 서로 선물하고 가난한 자를 구제하라고 했어요."},
+        {"from":"에스더","to":"모르드개","label":"함께 정함","kind":"ally","directed":false,"weight":2,"verses":"29-31","note":"에스더와 모르드개가 함께 부림절을 확정하는 편지를 썼어요."},
+        {"from":"아하수에로","to":"에스더","label":"들어준 왕","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"왕이 에스더의 청을 듣고 수산에서 하루를 더 허락했어요."},
+        {"from":"하만의 열 아들","to":"유다인","label":"원수","kind":"conflict","directed":true,"weight":1,"verses":"10, 13-14","note":"하만의 열 아들도 유다인의 원수로서 죽임을 당했어요."}
       ],
       "places": [
         {"name":"수산","where":"바사의 도성","what":"이틀 동안 원수를 친 곳","weight":2},
@@ -289,8 +289,8 @@
         {"name":"유다인","role":"모르드개를 존경한 민족","weight":2}
       ],
       "rels": [
-        {"from":"아하수에로","to":"모르드개","label":"높인 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"모르드개","to":"유다인","label":"평안을 구한 이","kind":"ally","directed":true,"weight":2}
+        {"from":"아하수에로","to":"모르드개","label":"높인 왕","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"왕이 모르드개를 높여 왕 다음 자리에 두었어요."},
+        {"from":"모르드개","to":"유다인","label":"평안을 구한 이","kind":"ally","directed":true,"weight":2,"verses":"3","note":"모르드개는 백성의 이익을 구하고 모든 종족의 평안을 말하여 많은 사람에게 사랑받았어요."}
       ],
       "places": [
         {"name":"메대와 바사","where":"바사 제국","what":"왕들의 일기에 기록된 나라","weight":1}
