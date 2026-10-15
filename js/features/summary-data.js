@@ -74,13 +74,17 @@ function composeDay(chapters, books) {
   const graphPeople = [...people.values()].filter((p) => shown.has(p.name)).sort((a, b) => a.order - b.order);
 
   // 관계: 그릴 인물끼리만. 같은 두 사람·같은 이름표면 하나로 합치고 비중을 더함
+  // 관계마다 그 관계가 드러난 구절 풀이(note)를 장마다 모음(관계도 상세 창에서 보여 줌)
   const rels = new Map();
   chapters.forEach((c, ci) => (c.data.rels || []).forEach((r, ri) => {
     if (!shown.has(r.from) || !shown.has(r.to)) return;
     const key = `${r.from}|${r.to}|${r.label}`;
+    const note = r.note ? { ref: ref(c, r.verses), text: r.note } : null;
     const cur = rels.get(key);
-    if (cur) cur.score += r.weight || 1;
-    else rels.set(key, { from: r.from, to: r.to, label: r.label, kind: r.kind, directed: !!r.directed, score: r.weight || 1, order: ci * 100 + ri });
+    if (cur) {
+      cur.score += r.weight || 1;
+      if (note && cur.notes.length < 3 && !cur.notes.some((x) => x.text === note.text)) cur.notes.push(note);
+    } else rels.set(key, { from: r.from, to: r.to, label: r.label, kind: r.kind, directed: !!r.directed, score: r.weight || 1, order: ci * 100 + ri, notes: note ? [note] : [] });
   }));
   // 같은 두 사람 사이는 2개까지(여러 장에 걸쳐 관계가 바뀌면 선이 겹쳐서 읽기 어려움). 나중 장의 관계가 앞서면 뒤를 남김
   const perPair = {};
@@ -91,7 +95,8 @@ function composeDay(chapters, books) {
       return perPair[k] <= 2;
     }).slice(0, SUMMARY_LIMITS.rels);
   // 이름이 바뀐 화살표는 늘 그림 (옛 이름 → 새 이름, 이름표는 바뀐 계기)
-  renames.forEach((r) => topRels.unshift({ from: r.from, to: r.to, label: r.why, kind: "rename", directed: true, score: 99, order: -1 }));
+  renames.forEach((r) => topRels.unshift({ from: r.from, to: r.to, label: r.why, kind: "rename", directed: true, score: 99, order: -1,
+    notes: [{ ref: r.ref, text: r.note || `${r.from}의 이름이 ${r.to}(으)로 바뀌었어요. 계기: ${r.why}.` }] }));
 
   // 지역: 이름이 같으면 하나로. 위치 설명은 처음 것, 일어난 일은 장마다 다르면 이어 붙임(2개까지)
   const places = new Map();

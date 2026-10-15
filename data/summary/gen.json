@@ -20,7 +20,7 @@
         {"name":"사람","role":"하나님의 형상대로 지음받음","weight":2}
       ],
       "rels": [
-        {"from":"사람","to":"하나님","label":"형상을 닮은 이","kind":"ally","directed":true,"weight":3}
+        {"from":"사람","to":"하나님","label":"형상을 닮은 이","kind":"ally","directed":true,"weight":3,"verses":"27","note":"하나님이 사람을 하나님의 모습을 닮게 남자와 여자로 지으셨어요. 그래서 사람은 하나님을 닮은 존재예요."}
       ],
       "places": [
 
@@ -42,8 +42,8 @@
         {"name":"여자","role":"아담의 갈빗대로 지음받음","weight":2}
       ],
       "rels": [
-        {"from":"여자","to":"아담","label":"돕는 배필","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"아담","label":"지으신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"여자","to":"아담","label":"돕는 배필","kind":"family","directed":true,"weight":3,"verses":"18-22","note":"하나님이 사람이 혼자 있는 것이 좋지 않다 하시고, 아담의 갈빗대로 그를 도울 짝인 여자를 지어 데려오셨어요."},
+        {"from":"하나님","to":"아담","label":"지으신 분","kind":"ally","directed":true,"weight":2,"verses":"7","note":"하나님이 흙으로 사람을 빚으시고 코에 생명의 숨을 불어넣으시자 사람이 살아 있는 존재가 되었어요."}
       ],
       "places": [
         {"name":"에덴","where":"동쪽, 네 강이 갈라져 흐르던 곳","what":"하나님이 동산을 만들어 사람을 두신 곳","weight":3}
@@ -66,10 +66,10 @@
         {"name":"하나님","role":"벌하시고 구원을 약속하심","weight":3}
       ],
       "rels": [
-        {"from":"뱀","to":"하와","label":"꾀어낸 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"하와","to":"아담","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"아담","to":"하와","label":"탓한 남편","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"아담","label":"찾아오신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"뱀","to":"하와","label":"꾀어낸 원수","kind":"conflict","directed":true,"weight":3,"verses":"1-5","note":"뱀이 여자에게 \"정말 하나님이 먹지 말라고 하셨어?\" 하며, 먹어도 죽지 않고 하나님처럼 된다고 꾀었어요."},
+        {"from":"하와","to":"아담","label":"아내","kind":"family","directed":true,"weight":2,"verses":"6","note":"여자가 열매를 따 먹고, 함께 있던 남편에게도 주어 그도 먹었어요."},
+        {"from":"아담","to":"하와","label":"탓한 남편","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"하나님이 물으시자 아담은 \"하나님이 주신 저 여자가 줘서 먹었어요\" 하며 아내 탓을 했어요."},
+        {"from":"하나님","to":"아담","label":"찾아오신 분","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"죄를 짓고 숨은 아담을 하나님이 찾아오셔서 \"네가 어디 있느냐\" 하고 부르셨어요."}
       ],
       "places": [
         {"name":"에덴","where":"동쪽의 동산","what":"죄를 지은 두 사람이 쫓겨난 곳","weight":3}
@@ -101,13 +101,13 @@
         {"name":"두발가인","role":"구리와 쇠를 다루는 이","weight":1}
       ],
       "rels": [
-        {"from":"가인","to":"아벨","label":"죽인 형","kind":"conflict","directed":true,"weight":3},
-        {"from":"가인","to":"아담","label":"맏아들","kind":"family","directed":true,"weight":2},
-        {"from":"셋","to":"아담","label":"셋째 아들","kind":"family","directed":true,"weight":1},
-        {"from":"하나님","to":"가인","label":"경고하신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"가인","to":"하와","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"라멕","to":"가인","label":"후손","kind":"family","directed":true,"weight":1},
-        {"from":"야발","to":"라멕","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"가인","to":"아벨","label":"죽인 형","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"가인이 들에서 동생 아벨에게 덤벼들어 죽였어요. 하나님이 아벨의 제물만 받으신 것을 시기했기 때문이에요."},
+        {"from":"가인","to":"아담","label":"맏아들","kind":"family","directed":true,"weight":2,"verses":"1","note":"아담과 하와가 처음 낳은 아들이 가인이에요. 하와는 하나님의 도우심으로 아들을 얻었다고 했어요."},
+        {"from":"셋","to":"아담","label":"셋째 아들","kind":"family","directed":true,"weight":1,"verses":"25","note":"아벨이 죽은 뒤 아담과 하와가 다시 아들을 낳아 셋이라 했어요. 아벨 대신 주신 아들이라는 뜻이에요."},
+        {"from":"하나님","to":"가인","label":"경고하신 분","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"화가 난 가인에게 하나님이 죄가 문 앞에 엎드려 너를 노리니 너는 그것을 다스려야 한다고 미리 경고하셨어요."},
+        {"from":"가인","to":"하와","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"하와가 낳은 첫아들이 가인이에요."},
+        {"from":"라멕","to":"가인","label":"후손","kind":"family","directed":true,"weight":1,"verses":"18-24","note":"가인의 후손 라멕은 자기를 다치게 한 사람을 죽였다고 자랑하며 칠십칠 배로 갚겠다고 했어요."},
+        {"from":"야발","to":"라멕","label":"아들","kind":"family","directed":true,"weight":1,"verses":"20","note":"라멕의 아들 야발은 장막에 살며 가축을 치는 사람들의 조상이 되었어요."}
       ],
       "places": [
         {"name":"놋 땅","where":"에덴의 동쪽","what":"가인이 쫓겨나 살며 성을 쌓은 곳","weight":2}
@@ -139,11 +139,11 @@
         {"name":"야벳","role":"노아의 아들","weight":1}
       ],
       "rels": [
-        {"from":"셋","to":"아담","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"므두셀라","to":"에녹","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"라멕","to":"므두셀라","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"노아","to":"라멕","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"에녹","to":"야렛","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"셋","to":"아담","label":"아들","kind":"family","directed":true,"weight":1,"verses":"3","note":"아담이 백삼십 세에 자기 모습을 닮은 아들을 낳고 이름을 셋이라 했어요."},
+        {"from":"므두셀라","to":"에녹","label":"아들","kind":"family","directed":true,"weight":2,"verses":"21","note":"에녹이 육십오 세에 므두셀라를 낳았어요. 므두셀라는 성경에서 가장 오래 산 사람이에요."},
+        {"from":"라멕","to":"므두셀라","label":"아들","kind":"family","directed":true,"weight":1,"verses":"25","note":"므두셀라가 백팔십칠 세에 라멕을 낳았어요."},
+        {"from":"노아","to":"라멕","label":"아들","kind":"family","directed":true,"weight":2,"verses":"28-29","note":"라멕이 아들을 낳고 이 아이가 우리의 수고를 위로하리라 하며 이름을 노아라 했어요."},
+        {"from":"에녹","to":"야렛","label":"아들","kind":"family","directed":true,"weight":1,"verses":"18","note":"야렛이 백육십이 세에 에녹을 낳았어요. 에녹은 하나님과 동행하다 하나님이 데려가셨어요."}
       ],
       "places": [
 
@@ -167,10 +167,10 @@
         {"name":"야벳","role":"노아의 아들","weight":1}
       ],
       "rels": [
-        {"from":"노아","to":"하나님","label":"동행한 의인","kind":"ally","directed":true,"weight":3},
-        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"노아","to":"하나님","label":"동행한 의인","kind":"ally","directed":true,"weight":3,"verses":"8-9","note":"온 땅이 악했지만 노아는 하나님께 은혜를 입은 의인이었고 하나님과 함께 걸었어요."},
+        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10","note":"노아는 셈과 함과 야벳 세 아들을 낳았어요."},
+        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10","note":"함은 노아의 세 아들 중 하나예요."},
+        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10","note":"야벳은 노아의 세 아들 중 하나예요."}
       ],
       "places": [
 
@@ -193,10 +193,10 @@
         {"name":"야벳","role":"방주에 탄 노아의 아들","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"노아","label":"지키신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"노아","label":"지키신 분","kind":"ally","directed":true,"weight":3,"verses":"1, 16","note":"하나님이 노아에게 온 가족과 함께 방주에 들어가라 하시고, 들어간 뒤 친히 문을 닫아 지켜 주셨어요."},
+        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"13","note":"홍수가 시작된 날 셈은 아버지 노아와 함께 방주에 들어갔어요."},
+        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"13","note":"함도 아버지 노아와 함께 방주에 들어갔어요."},
+        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"13","note":"야벳도 아버지 노아와 함께 방주에 들어갔어요."}
       ],
       "places": [
 
@@ -217,7 +217,7 @@
         {"name":"하나님","role":"노아를 기억하고 약속하심","weight":3}
       ],
       "rels": [
-        {"from":"노아","to":"하나님","label":"예배한 사람","kind":"ally","directed":true,"weight":3}
+        {"from":"노아","to":"하나님","label":"예배한 사람","kind":"ally","directed":true,"weight":3,"verses":"20","note":"방주에서 나온 노아는 먼저 제단을 쌓고 하나님께 번제를 드렸어요."}
       ],
       "places": [
         {"name":"아라랏 산","where":"지금의 튀르키예 동쪽 산지","what":"물이 줄 때 방주가 머문 곳","weight":3}
@@ -242,10 +242,10 @@
         {"name":"가나안","role":"함의 아들, 저주받음","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"노아","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"함","to":"노아","label":"허물을 알린 아들","kind":"conflict","directed":true,"weight":2},
-        {"from":"셈","to":"야벳","label":"함께 덮어 줌","kind":"ally","directed":false,"weight":2},
-        {"from":"가나안","to":"함","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"노아","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3,"verses":"9-13","note":"하나님이 노아와 언약을 세우시고 다시는 홍수로 세상을 멸하지 않겠다며 그 표로 무지개를 주셨어요."},
+        {"from":"함","to":"노아","label":"허물을 알린 아들","kind":"conflict","directed":true,"weight":2,"verses":"22","note":"노아가 포도주에 취해 벗고 누웠을 때 함이 그것을 보고 밖에 나가 형제들에게 알렸어요."},
+        {"from":"셈","to":"야벳","label":"함께 덮어 줌","kind":"ally","directed":false,"weight":2,"verses":"23","note":"셈과 야벳은 옷을 어깨에 메고 뒷걸음쳐 들어가 아버지의 몸을 보지 않고 덮어 드렸어요."},
+        {"from":"가나안","to":"함","label":"아들","kind":"family","directed":true,"weight":1,"verses":"18","note":"가나안은 함의 아들이에요. 노아는 이 일로 가나안이 형제들의 종이 되리라 했어요."}
       ],
       "places": [
 
@@ -269,11 +269,11 @@
         {"name":"에벨","role":"셈의 후손, 히브리의 이름","weight":1}
       ],
       "rels": [
-        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"니므롯","to":"함","label":"후손","kind":"family","directed":true,"weight":2},
-        {"from":"에벨","to":"셈","label":"후손","kind":"family","directed":true,"weight":1}
+        {"from":"야벳","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"2","note":"야벳의 자손은 바닷가 여러 나라로 퍼져 나갔어요."},
+        {"from":"함","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"6","note":"함의 자손에는 구스와 애굽과 가나안이 있어요."},
+        {"from":"셈","to":"노아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"21","note":"셈은 에벨 온 자손의 조상이에요."},
+        {"from":"니므롯","to":"함","label":"후손","kind":"family","directed":true,"weight":2,"verses":"8-10","note":"함의 손자 니므롯은 세상의 첫 용사요 사냥꾼이 되어 바벨과 여러 성을 다스렸어요."},
+        {"from":"에벨","to":"셈","label":"후손","kind":"family","directed":true,"weight":1,"verses":"21-25","note":"에벨은 셈의 후손이에요. 히브리라는 이름이 여기서 나왔다고 보기도 해요."}
       ],
       "places": [
         {"name":"시날","where":"티그리스·유브라데 강 남쪽 평지","what":"니므롯이 바벨 등 첫 나라를 세운 땅","weight":2},
@@ -302,11 +302,11 @@
         {"name":"밀가","role":"나홀의 아내, 하란의 딸","weight":1}
       ],
       "rels": [
-        {"from":"아브람","to":"데라","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1},
-        {"from":"롯","to":"하란","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"나홀","to":"아브람","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"아브람","to":"데라","label":"아들","kind":"family","directed":true,"weight":2,"verses":"26-27","note":"데라가 아브람과 나홀과 하란을 낳았어요."},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2,"verses":"29-30","note":"아브람의 아내는 사래인데 아이를 낳지 못했어요."},
+        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1,"verses":"31","note":"데라가 아들 아브람과 손자 롯과 며느리 사래를 데리고 갈대아 우르를 떠났어요."},
+        {"from":"롯","to":"하란","label":"아들","kind":"family","directed":true,"weight":1,"verses":"27","note":"하란이 롯을 낳았는데, 하란은 아버지보다 먼저 고향에서 죽었어요."},
+        {"from":"나홀","to":"아브람","label":"형제","kind":"family","directed":false,"weight":1,"verses":"27","note":"나홀은 아브람의 형제예요."}
       ],
       "places": [
         {"name":"바벨","where":"시날 평지","what":"교만한 탑을 쌓다 언어가 흩어진 곳","weight":3},
@@ -332,10 +332,10 @@
         {"name":"하나님","role":"아브람을 부르고 지키심","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"아브람","label":"부르신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1},
-        {"from":"바로","to":"아브람","label":"속은 왕","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"아브람","label":"부르신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님이 아브람에게 고향과 친척과 아버지 집을 떠나 보여 줄 땅으로 가라 하시며 복을 약속하셨어요."},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2,"verses":"11-13","note":"애굽에 들어갈 때 아브람은 아내 사래에게 내 누이라고 말해 달라고 했어요."},
+        {"from":"롯","to":"아브람","label":"조카","kind":"family","directed":true,"weight":1,"verses":"4","note":"아브람이 하나님 말씀대로 떠날 때 조카 롯도 함께 갔어요."},
+        {"from":"바로","to":"아브람","label":"속은 왕","kind":"conflict","directed":true,"weight":2,"verses":"15-19","note":"바로가 사래를 왕궁으로 데려갔다가 재앙을 받고서야 그가 아브람의 아내인 줄 알고 꾸짖었어요."}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"아브람이 부르심을 받고 떠난 곳","weight":2},
@@ -360,9 +360,9 @@
         {"name":"하나님","role":"땅과 자손을 약속하심","weight":2}
       ],
       "rels": [
-        {"from":"아브람","to":"롯","label":"삼촌과 조카","kind":"family","directed":false,"weight":3},
-        {"from":"아브람","to":"롯","label":"먼저 양보함","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"아브람","label":"약속하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"아브람","to":"롯","label":"삼촌과 조카","kind":"family","directed":false,"weight":3,"verses":"8","note":"가축이 많아 목자들이 다투자 아브람이 롯에게 우리는 한 친족이니 다투지 말자고 했어요."},
+        {"from":"아브람","to":"롯","label":"먼저 양보함","kind":"ally","directed":true,"weight":2,"verses":"9","note":"아브람이 롯에게 네가 왼쪽으로 가면 나는 오른쪽으로 가겠다며 먼저 땅을 고르게 양보했어요."},
+        {"from":"하나님","to":"아브람","label":"약속하신 분","kind":"ally","directed":true,"weight":2,"verses":"14-17","note":"롯이 떠난 뒤 하나님이 아브람에게 눈에 보이는 땅을 다 주고 자손을 땅의 티끌처럼 많게 하겠다고 하셨어요."}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km","what":"처음 제단으로 돌아와 다시 예배함","weight":1},
@@ -393,11 +393,11 @@
         {"name":"아넬","role":"아브람과 동맹한 형제","weight":1}
       ],
       "rels": [
-        {"from":"아브람","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3},
-        {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3},
-        {"from":"소돔 왕","to":"아브람","label":"거절당한 왕","kind":"other","directed":true,"weight":2},
-        {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"마므레","to":"아브람","label":"동맹","kind":"ally","directed":false,"weight":1}
+        {"from":"아브람","to":"롯","label":"구해 준 삼촌","kind":"ally","directed":true,"weight":3,"verses":"14-16","note":"롯이 사로잡혔다는 소식에 아브람이 집에서 길러 낸 사람 삼백십팔 명을 이끌고 쫓아가 롯을 되찾았어요."},
+        {"from":"멜기세덱","to":"아브람","label":"축복한 제사장","kind":"ally","directed":true,"weight":3,"verses":"18-20","note":"살렘 왕이자 제사장 멜기세덱이 떡과 포도주를 가지고 나와 아브람을 축복했고, 아브람은 십분의 일을 주었어요."},
+        {"from":"소돔 왕","to":"아브람","label":"거절당한 왕","kind":"other","directed":true,"weight":2,"verses":"21-23","note":"소돔 왕이 물건은 가지라 했지만 아브람은 실 한 오라기도 받지 않겠다며 거절했어요."},
+        {"from":"그돌라오멜","to":"롯","label":"사로잡은 왕","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"그돌라오멜 연합군이 소돔을 치고 그곳에 살던 롯과 재산을 빼앗아 갔어요."},
+        {"from":"마므레","to":"아브람","label":"동맹","kind":"ally","directed":false,"weight":1,"verses":"13","note":"아모리 사람 마므레는 아브람과 동맹을 맺은 사이였어요."}
       ],
       "places": [
         {"name":"단","where":"가나안 북쪽 끝","what":"아브람이 적을 쫓아간 곳","weight":1},
@@ -421,9 +421,9 @@
         {"name":"엘리에셀","role":"상속자가 될 뻔한 종","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"아브람","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"아브람","to":"하나님","label":"믿은 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"엘리에셀","to":"아브람","label":"집안 종","kind":"other","directed":true,"weight":1}
+        {"from":"하나님","to":"아브람","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":3,"verses":"18","note":"하나님이 쪼갠 짐승 사이로 지나가시며 아브람과 언약을 맺고 자손에게 땅을 주겠다고 하셨어요."},
+        {"from":"아브람","to":"하나님","label":"믿은 사람","kind":"ally","directed":true,"weight":3,"verses":"5-6","note":"하늘의 별을 세어 보라, 네 자손이 이렇게 많으리라 하시자 아브람이 믿었고 하나님은 그것을 의로 여기셨어요."},
+        {"from":"엘리에셀","to":"아브람","label":"집안 종","kind":"other","directed":true,"weight":1,"verses":"2","note":"자식이 없던 아브람은 집안 종 다메섹 사람 엘리에셀이 상속자가 되겠다고 걱정했어요."}
       ],
       "places": [
         {"name":"애굽 강","where":"가나안 남서쪽 경계","what":"약속하신 땅의 남쪽 끝","weight":1},
@@ -448,10 +448,10 @@
         {"name":"이스마엘","role":"하갈이 낳은 아들","weight":1}
       ],
       "rels": [
-        {"from":"하갈","to":"사래","label":"여종이자 갈등","kind":"conflict","directed":true,"weight":3},
-        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"여호와의 사자","to":"하갈","label":"찾아온 이","kind":"ally","directed":true,"weight":3},
-        {"from":"이스마엘","to":"아브람","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"하갈","to":"사래","label":"여종이자 갈등","kind":"conflict","directed":true,"weight":3,"verses":"4-6","note":"하갈이 임신하자 사래를 무시했고, 사래가 하갈을 학대하자 하갈이 도망쳤어요."},
+        {"from":"사래","to":"아브람","label":"아내","kind":"family","directed":true,"weight":2,"verses":"2","note":"아이가 없던 사래가 남편에게 내 여종 하갈을 통해 자녀를 얻자고 했어요."},
+        {"from":"여호와의 사자","to":"하갈","label":"찾아온 이","kind":"ally","directed":true,"weight":3,"verses":"7-11","note":"광야 샘 곁에서 여호와의 사자가 하갈을 찾아와 돌아가라 하고 아들을 낳으리라 알려 주었어요."},
+        {"from":"이스마엘","to":"아브람","label":"아들","kind":"family","directed":true,"weight":2,"verses":"15-16","note":"하갈이 아브람에게 아들을 낳으니 이름을 이스마엘이라 했어요. 아브람이 여든여섯 살 때였어요."}
       ],
       "places": [
         {"name":"술 길","where":"가나안 남쪽에서 애굽 가는 광야 길","what":"도망친 하갈을 하나님이 만나신 샘이 있던 곳","weight":2},
@@ -476,14 +476,14 @@
         {"name":"이삭","role":"언약을 이을 아들로 약속됨","weight":2}
       ],
       "renames": [
-        {"from":"아브람","to":"아브라함","verses":"5","why":"언약을 세우시며"},
-        {"from":"사래","to":"사라","verses":"15","why":"아들을 약속하시며"}
+        {"from":"아브람","to":"아브라함","verses":"5","why":"언약을 세우시며","note":"하나님이 이제 네 이름은 아브람이 아니라 많은 민족의 아버지라는 뜻의 아브라함이라고 하셨어요."},
+        {"from":"사래","to":"사라","verses":"15","why":"아들을 약속하시며","note":"하나님이 사래를 이제 사라라 부르라 하셨어요. 사라는 왕비, 여러 민족의 어머니라는 뜻이에요."}
       ],
       "rels": [
-        {"from":"하나님","to":"아브라함","label":"언약을 세우신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"이삭","to":"사라","label":"약속된 아들","kind":"family","directed":true,"weight":2},
-        {"from":"이스마엘","to":"아브라함","label":"맏아들","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"아브라함","label":"언약을 세우신 분","kind":"ally","directed":true,"weight":3,"verses":"1-8","note":"하나님이 아브람에게 나타나 영원한 언약을 세우시고 많은 민족의 아버지가 되게 하겠다고 하셨어요."},
+        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2,"verses":"15-16","note":"하나님이 아브라함의 아내 사래의 이름을 사라로 바꾸시고 그에게서 아들을 주겠다고 하셨어요."},
+        {"from":"이삭","to":"사라","label":"약속된 아들","kind":"family","directed":true,"weight":2,"verses":"19","note":"하나님이 사라가 아들을 낳으리니 이름을 이삭이라 하라 하시고, 그와 언약을 세우겠다고 하셨어요."},
+        {"from":"이스마엘","to":"아브라함","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"18, 23","note":"아브라함이 이스마엘이나 잘 살기를 구했고, 그날 열세 살 이스마엘도 할례를 받았어요."}
       ],
       "places": [
 
@@ -506,10 +506,10 @@
         {"name":"롯","role":"소돔에 사는 조카","weight":1}
       ],
       "rels": [
-        {"from":"아브라함","to":"하나님","label":"간구한 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"하나님","to":"사라","label":"약속하신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1}
+        {"from":"아브라함","to":"하나님","label":"간구한 사람","kind":"ally","directed":true,"weight":3,"verses":"23-32","note":"소돔을 멸하시려 할 때 아브라함이 의인 오십 명, 마흔다섯 명... 열 명이 있어도 멸하시겠냐며 간절히 구했어요."},
+        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2,"verses":"9-12","note":"장막 안에서 아들을 낳으리라는 말을 들은 사라가 늙은 내가 어떻게 하며 속으로 웃었어요."},
+        {"from":"하나님","to":"사라","label":"약속하신 분","kind":"ally","directed":true,"weight":2,"verses":"13-14","note":"하나님이 사라가 왜 웃느냐 하시며 여호와께 너무 어려운 일이 있겠느냐, 내년 이때 아들이 있으리라 하셨어요."},
+        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1,"verses":"22-23","note":"아브라함이 소돔을 위해 간구한 것은 그곳에 사는 조카 롯 때문이기도 했어요."}
       ],
       "places": [
         {"name":"마므레","where":"헤브론 근처 상수리 숲","what":"세 나그네를 대접하고 약속을 들은 곳","weight":2},
@@ -537,11 +537,11 @@
         {"name":"벤암미","role":"롯의 작은딸이 낳은 아들","weight":1}
       ],
       "rels": [
-        {"from":"두 천사","to":"롯","label":"구해 낸 이들","kind":"ally","directed":true,"weight":3},
-        {"from":"롯의 아내","to":"롯","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"롯의 딸들","to":"롯","label":"딸들","kind":"family","directed":true,"weight":1},
-        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1},
-        {"from":"모압","to":"롯의 딸들","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"두 천사","to":"롯","label":"구해 낸 이들","kind":"ally","directed":true,"weight":3,"verses":"15-16","note":"천사들이 망설이는 롯과 아내와 두 딸의 손을 잡아 이끌어 성 밖으로 데려냈어요. 하나님이 불쌍히 여기셨기 때문이에요."},
+        {"from":"롯의 아내","to":"롯","label":"아내","kind":"family","directed":true,"weight":2,"verses":"26","note":"롯의 아내는 뒤를 돌아보지 말라는 말을 어기고 뒤돌아보다 소금 기둥이 되었어요."},
+        {"from":"롯의 딸들","to":"롯","label":"딸들","kind":"family","directed":true,"weight":1,"verses":"30-36","note":"굴에 숨어 살던 롯의 두 딸이 아버지를 술에 취하게 해 자식을 얻었어요."},
+        {"from":"롯","to":"아브라함","label":"조카","kind":"family","directed":true,"weight":1,"verses":"29","note":"하나님이 아브라함을 기억하셔서 소돔을 멸하실 때 조카 롯을 그 가운데서 건져 내셨어요."},
+        {"from":"모압","to":"롯의 딸들","label":"아들","kind":"family","directed":true,"weight":1,"verses":"37","note":"큰딸이 낳은 아들이 모압이에요. 그는 모압 족속의 조상이 되었어요."}
       ],
       "places": [
         {"name":"소돔","where":"요단 들판, 사해 남쪽으로 봄","what":"악이 가득해 유황불로 심판받은 성","weight":3},
@@ -566,9 +566,9 @@
         {"name":"하나님","role":"꿈으로 사라를 지키심","weight":2}
       ],
       "rels": [
-        {"from":"아비멜렉","to":"아브라함","label":"속은 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"하나님","to":"아비멜렉","label":"꿈에 경고하심","kind":"other","directed":true,"weight":2}
+        {"from":"아비멜렉","to":"아브라함","label":"속은 왕","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"아브라함이 사라를 누이라 하자 그랄 왕 아비멜렉이 사라를 데려갔어요."},
+        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":2,"verses":"12","note":"아브라함은 사라가 실제로 아버지는 같고 어머니가 다른 누이이면서 아내라고 변명했어요."},
+        {"from":"하나님","to":"아비멜렉","label":"꿈에 경고하심","kind":"other","directed":true,"weight":2,"verses":"3-7","note":"하나님이 밤에 꿈에 아비멜렉에게 나타나 남의 아내를 데려갔으니 죽으리라, 돌려보내라 하셨어요."}
       ],
       "places": [
         {"name":"그랄","where":"가나안 남서쪽, 가사 남동쪽","what":"아브라함이 또 아내를 누이라 속인 곳","weight":3}
@@ -594,12 +594,12 @@
         {"name":"비골","role":"아비멜렉의 군대 장관","weight":1}
       ],
       "rels": [
-        {"from":"이삭","to":"사라","label":"약속의 아들","kind":"family","directed":true,"weight":3},
-        {"from":"이스마엘","to":"이삭","label":"놀린 형","kind":"conflict","directed":true,"weight":2},
-        {"from":"사라","to":"하갈","label":"내보낸 여주인","kind":"conflict","directed":true,"weight":2},
-        {"from":"이스마엘","to":"하갈","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"아비멜렉","to":"아브라함","label":"언약을 맺음","kind":"ally","directed":false,"weight":1},
-        {"from":"비골","to":"아비멜렉","label":"군대 장관","kind":"ally","directed":true,"weight":1}
+        {"from":"이삭","to":"사라","label":"약속의 아들","kind":"family","directed":true,"weight":3,"verses":"1-3","note":"하나님이 말씀하신 때에 사라가 늙은 나이에 아들을 낳았고 아브라함이 이름을 이삭이라 했어요."},
+        {"from":"이스마엘","to":"이삭","label":"놀린 형","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"이삭이 젖을 뗀 날 잔치에서 이스마엘이 이삭을 놀리는 것을 사라가 보았어요."},
+        {"from":"사라","to":"하갈","label":"내보낸 여주인","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"사라가 이 여종과 그 아들을 내쫓으라고 아브라함에게 말했어요."},
+        {"from":"이스마엘","to":"하갈","label":"아들","kind":"family","directed":true,"weight":2,"verses":"14-19","note":"광야에서 물이 떨어지자 하갈이 아들이 죽는 것을 볼 수 없다며 울었고, 하나님이 샘을 보여 주셨어요."},
+        {"from":"아비멜렉","to":"아브라함","label":"언약을 맺음","kind":"ally","directed":false,"weight":1,"verses":"27-31","note":"아비멜렉과 아브라함이 브엘세바에서 서로 해치지 않기로 맹세하고 언약을 맺었어요."},
+        {"from":"비골","to":"아비멜렉","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"22","note":"비골은 아비멜렉의 군대 장관으로 함께 아브라함을 찾아왔어요."}
       ],
       "places": [
         {"name":"브엘세바","where":"가나안 남쪽 끝","what":"우물을 두고 맹세하고 에셀 나무를 심음","weight":3},
@@ -627,12 +627,12 @@
         {"name":"리브가","role":"브두엘의 딸, 이삭의 신붓감","weight":1}
       ],
       "rels": [
-        {"from":"이삭","to":"아브라함","label":"외아들","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"아브라함","label":"시험하신 분","kind":"other","directed":true,"weight":3},
-        {"from":"아브라함","to":"하나님","label":"순종한 종","kind":"ally","directed":true,"weight":3},
-        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2},
-        {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"나홀","to":"아브라함","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"이삭","to":"아브라함","label":"외아들","kind":"family","directed":true,"weight":3,"verses":"2","note":"하나님이 아브라함에게 네 아들, 네 사랑하는 외아들 이삭을 데리고 모리아 땅으로 가라고 하셨어요."},
+        {"from":"하나님","to":"아브라함","label":"시험하신 분","kind":"other","directed":true,"weight":3,"verses":"1-2","note":"하나님이 아브라함을 시험하시려고 이삭을 번제로 바치라고 하셨어요."},
+        {"from":"아브라함","to":"하나님","label":"순종한 종","kind":"ally","directed":true,"weight":3,"verses":"3, 9-10","note":"아브라함은 아침 일찍 일어나 떠났고, 제단 위에 이삭을 올려놓고 칼을 들었어요."},
+        {"from":"여호와의 사자","to":"아브라함","label":"손을 멈춘 이","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"여호와의 사자가 하늘에서 아브라함을 부르며 아이에게 손대지 말라, 네가 하나님을 경외하는 줄 안다고 했어요."},
+        {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1,"verses":"23","note":"아브라함의 형제 나홀의 아들 브두엘이 리브가를 낳았어요. 훗날 이삭의 아내가 될 사람이에요."},
+        {"from":"나홀","to":"아브라함","label":"형제","kind":"family","directed":false,"weight":1,"verses":"20","note":"아브라함은 형제 나홀이 많은 자녀를 낳았다는 소식을 들었어요."}
       ],
       "places": [
         {"name":"모리아","where":"브엘세바에서 약 72km, 사흘 길","what":"이삭을 바치려 한 산. 훗날 솔로몬이 성전을 지은 곳","weight":3},
@@ -656,9 +656,9 @@
         {"name":"헷 족속","role":"성문에서 거래를 지켜봄","weight":1}
       ],
       "rels": [
-        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":3},
-        {"from":"에브론","to":"아브라함","label":"땅을 판 사람","kind":"other","directed":true,"weight":2},
-        {"from":"헷 족속","to":"아브라함","label":"존중한 이웃","kind":"ally","directed":true,"weight":1}
+        {"from":"사라","to":"아브라함","label":"아내","kind":"family","directed":true,"weight":3,"verses":"2","note":"사라가 백이십칠 세에 헤브론에서 죽자 아브라함이 슬피 울었어요."},
+        {"from":"에브론","to":"아브라함","label":"땅을 판 사람","kind":"other","directed":true,"weight":2,"verses":"14-16","note":"헷 사람 에브론이 막벨라 굴이 있는 밭을 은 사백 세겔에 아브라함에게 팔았어요."},
+        {"from":"헷 족속","to":"아브라함","label":"존중한 이웃","kind":"ally","directed":true,"weight":1,"verses":"6","note":"헷 족속이 아브라함을 하나님이 세우신 지도자라 부르며 원하는 묘지를 쓰라고 했어요."}
       ],
       "places": [
         {"name":"헤브론","where":"예루살렘 남쪽 약 30km","what":"사라가 죽은 곳","weight":2},
@@ -687,11 +687,11 @@
         {"name":"리브가의 유모","role":"리브가와 함께 간 유모","weight":1}
       ],
       "rels": [
-        {"from":"아브라함의 종","to":"아브라함","label":"충성된 종","kind":"ally","directed":true,"weight":3},
-        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":3},
-        {"from":"라반","to":"리브가","label":"오빠","kind":"family","directed":true,"weight":2},
-        {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"아브라함의 종","to":"아브라함","label":"충성된 종","kind":"ally","directed":true,"weight":3,"verses":"12-14","note":"종은 주인 아브라함을 위해 기도하며 물을 주는 여인을 이삭의 아내로 알게 해 달라고 구했어요."},
+        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":3,"verses":"67","note":"이삭이 리브가를 어머니 사라의 장막으로 데려가 아내로 맞고 사랑하며 위로를 얻었어요."},
+        {"from":"라반","to":"리브가","label":"오빠","kind":"family","directed":true,"weight":2,"verses":"29-31","note":"리브가의 오빠 라반이 우물로 달려 나가 아브라함의 종을 집으로 맞아들였어요."},
+        {"from":"리브가","to":"브두엘","label":"딸","kind":"family","directed":true,"weight":1,"verses":"15","note":"리브가는 브두엘의 딸이에요. 종의 기도가 끝나기도 전에 물동이를 메고 나왔어요."},
+        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"아브라함은 아들 이삭의 아내를 가나안이 아닌 고향 친족에게서 데려오라고 했어요."}
       ],
       "places": [
         {"name":"나홀의 성","where":"메소포타미아, 하란 근처","what":"종이 우물가에서 리브가를 만난 곳","weight":3},
@@ -719,12 +719,12 @@
         {"name":"미디안","role":"그두라가 낳은 아들","weight":1}
       ],
       "rels": [
-        {"from":"야곱","to":"에서","label":"장자권을 산 동생","kind":"conflict","directed":true,"weight":3},
-        {"from":"에서","to":"이삭","label":"사랑받는 맏아들","kind":"family","directed":true,"weight":2},
-        {"from":"야곱","to":"리브가","label":"사랑받는 아들","kind":"family","directed":true,"weight":2},
-        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"그두라","to":"아브라함","label":"후처","kind":"family","directed":true,"weight":1}
+        {"from":"야곱","to":"에서","label":"장자권을 산 동생","kind":"conflict","directed":true,"weight":3,"verses":"29-34","note":"배고픈 에서가 팥죽 한 그릇에 장자권을 야곱에게 팔았어요. 에서는 장자권을 가볍게 여겼어요."},
+        {"from":"에서","to":"이삭","label":"사랑받는 맏아들","kind":"family","directed":true,"weight":2,"verses":"28","note":"이삭은 사냥한 고기를 좋아해서 맏아들 에서를 사랑했어요."},
+        {"from":"야곱","to":"리브가","label":"사랑받는 아들","kind":"family","directed":true,"weight":2,"verses":"28","note":"리브가는 장막에 머무는 조용한 아들 야곱을 사랑했어요."},
+        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2,"verses":"21","note":"아내 리브가가 아이를 낳지 못하자 이삭이 간구했고 하나님이 들으셔서 쌍둥이를 갖게 되었어요."},
+        {"from":"이삭","to":"아브라함","label":"아들","kind":"family","directed":true,"weight":2,"verses":"5","note":"아브라함은 자기 모든 재산을 아들 이삭에게 주었어요."},
+        {"from":"그두라","to":"아브라함","label":"후처","kind":"family","directed":true,"weight":1,"verses":"1-2","note":"아브라함이 후처 그두라를 맞아 여섯 아들을 낳았어요."}
       ],
       "places": [
         {"name":"막벨라 굴","where":"헤브론의 가족 무덤","what":"이삭과 이스마엘이 아브라함을 장사함","weight":2},
@@ -753,12 +753,12 @@
         {"name":"바스맛","role":"에서의 헷 족속 아내","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"이삭","label":"약속하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"아비멜렉","to":"이삭","label":"시기한 이웃 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"아비멜렉","to":"이삭","label":"평화 언약","kind":"ally","directed":false,"weight":2},
-        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"에서","to":"이삭","label":"근심 준 아들","kind":"family","directed":true,"weight":1},
-        {"from":"유딧","to":"에서","label":"아내","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"이삭","label":"약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"흉년에 하나님이 이삭에게 애굽으로 내려가지 말고 이 땅에 머물라 하시며 아브라함에게 한 약속을 지키겠다고 하셨어요."},
+        {"from":"아비멜렉","to":"이삭","label":"시기한 이웃 왕","kind":"conflict","directed":true,"weight":2,"verses":"14-16","note":"이삭이 크게 부자가 되자 블레셋 사람들이 시기해 우물을 메웠고, 아비멜렉은 이삭에게 우리를 떠나라고 했어요."},
+        {"from":"아비멜렉","to":"이삭","label":"평화 언약","kind":"ally","directed":false,"weight":2,"verses":"26-31","note":"하나님이 이삭과 함께하심을 본 아비멜렉이 찾아와 서로 해치지 말자고 맹세하고 화평하게 돌아갔어요."},
+        {"from":"리브가","to":"이삭","label":"아내","kind":"family","directed":true,"weight":2,"verses":"7","note":"그랄 사람들이 아내에 대해 묻자 이삭은 리브가가 아름다워 해를 당할까 봐 누이라고 말했어요."},
+        {"from":"에서","to":"이삭","label":"근심 준 아들","kind":"family","directed":true,"weight":1,"verses":"34-35","note":"에서가 헷 족속 여인들을 아내로 맞자 그 일이 이삭과 리브가의 마음에 근심이 되었어요."},
+        {"from":"유딧","to":"에서","label":"아내","kind":"family","directed":true,"weight":1,"verses":"34","note":"에서는 마흔 살에 헷 사람의 딸 유딧을 아내로 맞았어요."}
       ],
       "places": [
         {"name":"그랄","where":"가나안 남서쪽 블레셋 땅","what":"흉년에 머물며 백 배를 거둔 곳","weight":3},
@@ -783,10 +783,10 @@
         {"name":"에서","role":"축복을 빼앗기고 분노함","weight":3}
       ],
       "rels": [
-        {"from":"야곱","to":"에서","label":"축복을 가로챈 동생","kind":"conflict","directed":true,"weight":3},
-        {"from":"리브가","to":"야곱","label":"계획을 짠 어머니","kind":"ally","directed":true,"weight":3},
-        {"from":"야곱","to":"이삭","label":"속인 아들","kind":"conflict","directed":true,"weight":2},
-        {"from":"에서","to":"이삭","label":"맏아들","kind":"family","directed":true,"weight":2}
+        {"from":"야곱","to":"에서","label":"축복을 가로챈 동생","kind":"conflict","directed":true,"weight":3,"verses":"19, 35-36","note":"야곱이 에서인 척하여 아버지의 축복을 받았어요. 에서는 동생이 두 번이나 내 것을 빼앗았다고 울부짖었어요."},
+        {"from":"리브가","to":"야곱","label":"계획을 짠 어머니","kind":"ally","directed":true,"weight":3,"verses":"6-10","note":"리브가가 이삭의 말을 엿듣고 야곱에게 염소 새끼로 별미를 만들 테니 아버지께 가져가 축복을 받으라고 했어요."},
+        {"from":"야곱","to":"이삭","label":"속인 아들","kind":"conflict","directed":true,"weight":2,"verses":"18-24","note":"눈이 어두운 이삭이 누구냐 묻자 야곱은 맏아들 에서라고 거짓말하고 털 덮인 손을 만지게 했어요."},
+        {"from":"에서","to":"이삭","label":"맏아들","kind":"family","directed":true,"weight":2,"verses":"34","note":"속은 것을 안 에서가 아버지께 저에게도 축복해 주세요 하며 크게 울었어요."}
       ],
       "places": [
         {"name":"브엘세바","where":"가나안 남쪽 끝","what":"이삭 집안이 살던 곳, 축복을 둘러싼 일","weight":2},
@@ -812,10 +812,10 @@
         {"name":"마할랏","role":"이스마엘의 딸, 에서의 아내","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱","label":"지키시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"이삭","to":"야곱","label":"축복한 아버지","kind":"family","directed":true,"weight":2},
-        {"from":"에서","to":"야곱","label":"갈라선 형제","kind":"conflict","directed":false,"weight":1},
-        {"from":"마할랏","to":"에서","label":"아내","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"야곱","label":"지키시는 분","kind":"ally","directed":true,"weight":3,"verses":"13-15","note":"벧엘에서 꿈에 하나님이 나타나 내가 너와 함께 있어 어디로 가든지 너를 지키고 이 땅으로 돌아오게 하겠다고 하셨어요."},
+        {"from":"이삭","to":"야곱","label":"축복한 아버지","kind":"family","directed":true,"weight":2,"verses":"1-4","note":"이삭이 야곱을 불러 축복하고 가나안 여자가 아닌 외삼촌 라반의 딸 중에서 아내를 얻으라고 보냈어요."},
+        {"from":"에서","to":"야곱","label":"갈라선 형제","kind":"conflict","directed":false,"weight":1,"verses":"6-9","note":"야곱이 떠난 뒤 에서는 아버지가 가나안 여자를 싫어하는 것을 보고 이스마엘의 딸을 아내로 더 맞았어요."},
+        {"from":"마할랏","to":"에서","label":"아내","kind":"family","directed":true,"weight":1,"verses":"9","note":"에서가 이스마엘의 딸 마할랏을 또 아내로 맞았어요."}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km, 옛 이름 루스","what":"사닥다리 꿈을 꾸고 '하나님의 집'이라 부른 곳","weight":3},
@@ -845,13 +845,13 @@
         {"name":"빌하","role":"라헬의 여종","weight":1}
       ],
       "rels": [
-        {"from":"라반","to":"야곱","label":"속인 외삼촌","kind":"conflict","directed":true,"weight":3},
-        {"from":"라헬","to":"야곱","label":"사랑받는 아내","kind":"family","directed":true,"weight":3},
-        {"from":"레아","to":"야곱","label":"사랑받지 못한 아내","kind":"family","directed":true,"weight":3},
-        {"from":"레아","to":"라헬","label":"언니","kind":"family","directed":true,"weight":2},
-        {"from":"라헬","to":"라반","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"르우벤","to":"레아","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"유다","to":"레아","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"라반","to":"야곱","label":"속인 외삼촌","kind":"conflict","directed":true,"weight":3,"verses":"23-25","note":"라반이 결혼 첫날밤 라헬 대신 언니 레아를 야곱에게 들여보냈어요. 야곱이 왜 나를 속였느냐고 따졌어요."},
+        {"from":"라헬","to":"야곱","label":"사랑받는 아내","kind":"family","directed":true,"weight":3,"verses":"18-20","note":"야곱이 라헬을 사랑해서 칠 년을 일했는데 그를 사랑하니 칠 년이 며칠처럼 느껴졌어요."},
+        {"from":"레아","to":"야곱","label":"사랑받지 못한 아내","kind":"family","directed":true,"weight":3,"verses":"30-31","note":"야곱이 레아보다 라헬을 더 사랑하자, 하나님이 사랑받지 못하는 레아를 보시고 아이를 낳게 하셨어요."},
+        {"from":"레아","to":"라헬","label":"언니","kind":"family","directed":true,"weight":2,"verses":"16","note":"라반에게 두 딸이 있었는데 언니는 레아, 동생은 라헬이었어요."},
+        {"from":"라헬","to":"라반","label":"딸","kind":"family","directed":true,"weight":1,"verses":"9-10","note":"라헬이 아버지 라반의 양 떼를 몰고 우물로 오다가 야곱을 처음 만났어요."},
+        {"from":"르우벤","to":"레아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"32","note":"레아가 첫아들을 낳고 하나님이 내 괴로움을 보셨다며 이름을 르우벤이라 했어요."},
+        {"from":"유다","to":"레아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"35","note":"레아가 넷째 아들을 낳고 이번에는 하나님을 찬양하겠다며 이름을 유다라 했어요."}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"야곱이 라반 집에서 이십 년을 지낸 곳","weight":3}
@@ -885,14 +885,14 @@
         {"name":"르우벤","role":"합환채를 구해 온 아들","weight":1}
       ],
       "rels": [
-        {"from":"라헬","to":"레아","label":"시기하는 자매","kind":"conflict","directed":false,"weight":3},
-        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"빌하","to":"라헬","label":"여종","kind":"other","directed":true,"weight":1},
-        {"from":"실바","to":"레아","label":"여종","kind":"other","directed":true,"weight":1},
-        {"from":"라반","to":"야곱","label":"품삯을 다툰 외삼촌","kind":"conflict","directed":true,"weight":2},
-        {"from":"단","to":"빌하","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"갓","to":"실바","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"디나","to":"레아","label":"딸","kind":"family","directed":true,"weight":1}
+        {"from":"라헬","to":"레아","label":"시기하는 자매","kind":"conflict","directed":false,"weight":3,"verses":"1","note":"아이를 낳지 못한 라헬이 언니를 시기하며 야곱에게 나도 자식을 달라, 아니면 죽겠다고 했어요."},
+        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":2,"verses":"22-24","note":"하나님이 라헬을 기억하시고 태를 여시니 라헬이 아들을 낳아 이름을 요셉이라 했어요."},
+        {"from":"빌하","to":"라헬","label":"여종","kind":"other","directed":true,"weight":1,"verses":"3-4","note":"라헬이 자기 여종 빌하를 야곱에게 주어 자기 대신 아이를 얻게 했어요."},
+        {"from":"실바","to":"레아","label":"여종","kind":"other","directed":true,"weight":1,"verses":"9","note":"레아도 자기 여종 실바를 야곱에게 아내로 주었어요."},
+        {"from":"라반","to":"야곱","label":"품삯을 다툰 외삼촌","kind":"conflict","directed":true,"weight":2,"verses":"28-33","note":"라반이 품삯을 정하라 하자 야곱은 얼룩지고 점 있는 양과 염소를 자기 몫으로 달라고 했어요."},
+        {"from":"단","to":"빌하","label":"아들","kind":"family","directed":true,"weight":1,"verses":"5-6","note":"빌하가 아들을 낳자 라헬이 하나님이 내 억울함을 풀어 주셨다며 단이라 했어요."},
+        {"from":"갓","to":"실바","label":"아들","kind":"family","directed":true,"weight":1,"verses":"10-11","note":"실바가 아들을 낳자 레아가 복되다며 이름을 갓이라 했어요."},
+        {"from":"디나","to":"레아","label":"딸","kind":"family","directed":true,"weight":1,"verses":"21","note":"레아가 그 후에 딸을 낳아 이름을 디나라 했어요."}
       ],
       "places": [
         {"name":"하란","where":"메소포타미아 북쪽","what":"야곱의 아들들이 태어나고 떼가 늘어난 곳","weight":2}
@@ -917,10 +917,10 @@
         {"name":"라반의 아들들","role":"야곱을 시기한 처남들","weight":1}
       ],
       "rels": [
-        {"from":"라반","to":"야곱","label":"뒤쫓은 외삼촌","kind":"conflict","directed":true,"weight":3},
-        {"from":"라반","to":"야곱","label":"돌무더기 언약","kind":"ally","directed":false,"weight":2},
-        {"from":"라헬","to":"라반","label":"드라빔 훔친 딸","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"라반","label":"꿈에 경고하심","kind":"other","directed":true,"weight":2}
+        {"from":"라반","to":"야곱","label":"뒤쫓은 외삼촌","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"야곱이 몰래 떠난 지 사흘 만에 라반이 알고 친척들을 이끌고 칠 일 길을 뒤쫓아 왔어요."},
+        {"from":"라반","to":"야곱","label":"돌무더기 언약","kind":"ally","directed":false,"weight":2,"verses":"44-49","note":"라반과 야곱이 돌무더기를 쌓고 서로 해치지 않기로 언약하며 하나님이 우리 사이를 지켜보시라고 했어요."},
+        {"from":"라헬","to":"라반","label":"드라빔 훔친 딸","kind":"conflict","directed":true,"weight":2,"verses":"19, 34-35","note":"라헬이 아버지의 집 수호신 드라빔을 훔쳐 낙타 안장 밑에 숨기고 그 위에 앉아 들키지 않았어요."},
+        {"from":"하나님","to":"라반","label":"꿈에 경고하심","kind":"other","directed":true,"weight":2,"verses":"24","note":"밤에 하나님이 꿈에 라반에게 나타나 야곱에게 좋은 말이든 나쁜 말이든 하지 말라고 경고하셨어요."}
       ],
       "places": [
         {"name":"길르앗","where":"요단 강 동쪽 산지","what":"라반이 야곱을 따라잡은 곳","weight":2},
@@ -944,12 +944,12 @@
         {"name":"이스라엘","role":"씨름 뒤 받은 야곱의 새 이름","weight":2}
       ],
       "renames": [
-        {"from":"야곱","to":"이스라엘","verses":"28","why":"얍복 강 씨름 뒤"}
+        {"from":"야곱","to":"이스라엘","verses":"28","why":"얍복 강 씨름 뒤","note":"씨름 끝에 하나님이 야곱의 이름을 이스라엘로 바꾸어 주셨어요. 하나님과 겨루어 이겼다는 뜻이에요."}
       ],
       "rels": [
-        {"from":"야곱","to":"에서","label":"두려워한 동생","kind":"conflict","directed":true,"weight":3},
-        {"from":"야곱","to":"하나님","label":"매달린 사람","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"야곱","label":"새 이름 주신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"야곱","to":"에서","label":"두려워한 동생","kind":"conflict","directed":true,"weight":3,"verses":"6-11","note":"에서가 사백 명을 거느리고 온다는 소식에 야곱은 몹시 두려워 하나님께 형의 손에서 건져 달라고 기도했어요."},
+        {"from":"야곱","to":"하나님","label":"매달린 사람","kind":"ally","directed":true,"weight":3,"verses":"24-26","note":"얍복 나루에서 어떤 사람이 밤새 야곱과 씨름했고, 야곱은 축복해 주시지 않으면 놓지 않겠다고 매달렸어요."},
+        {"from":"하나님","to":"야곱","label":"새 이름 주신 분","kind":"ally","directed":true,"weight":2,"verses":"28","note":"그분이 이제 네 이름을 야곱이 아니라 이스라엘이라 하리니 네가 하나님과 사람과 겨루어 이겼다고 하셨어요."}
       ],
       "places": [
         {"name":"마하나임","where":"얍복 강 북쪽, 요단 동편","what":"하나님의 군대를 만나 '두 진'이라 부름","weight":1},
@@ -978,10 +978,10 @@
         {"name":"하몰","role":"세겜의 아버지, 땅을 판 사람","weight":1}
       ],
       "rels": [
-        {"from":"에서","to":"야곱","label":"화해한 형제","kind":"ally","directed":false,"weight":3},
-        {"from":"라헬","to":"야곱","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"하몰","to":"야곱","label":"땅을 판 이","kind":"other","directed":true,"weight":1}
+        {"from":"에서","to":"야곱","label":"화해한 형제","kind":"ally","directed":false,"weight":3,"verses":"4","note":"에서가 달려와 야곱을 끌어안고 목을 어긋맞춰 입 맞추며 둘이 함께 울었어요."},
+        {"from":"라헬","to":"야곱","label":"아내","kind":"family","directed":true,"weight":1,"verses":"2, 7","note":"야곱은 형을 만날 때 가장 사랑하는 라헬과 요셉을 맨 뒤에 세웠어요."},
+        {"from":"요셉","to":"라헬","label":"아들","kind":"family","directed":true,"weight":1,"verses":"7","note":"라헬과 어린 요셉이 마지막으로 나아와 에서에게 절했어요."},
+        {"from":"하몰","to":"야곱","label":"땅을 판 이","kind":"other","directed":true,"weight":1,"verses":"19","note":"야곱이 세겜 성 앞의 밭을 세겜의 아버지 하몰의 아들들에게서 은 백 개에 샀어요."}
       ],
       "places": [
         {"name":"숙곳","where":"요단 동편, 얍복 강 근처","what":"야곱이 집과 가축 우리를 지은 곳","weight":1},
@@ -1008,12 +1008,12 @@
         {"name":"야곱","role":"아들들을 꾸짖음","weight":2}
       ],
       "rels": [
-        {"from":"세겜","to":"디나","label":"욕보인 사람","kind":"conflict","directed":true,"weight":3},
-        {"from":"시므온","to":"세겜","label":"복수한 오빠","kind":"conflict","directed":true,"weight":3},
-        {"from":"레위","to":"시므온","label":"함께 복수함","kind":"ally","directed":false,"weight":2},
-        {"from":"디나","to":"야곱","label":"딸","kind":"family","directed":true,"weight":2},
-        {"from":"야곱","to":"시므온","label":"꾸짖은 아버지","kind":"conflict","directed":true,"weight":2},
-        {"from":"세겜","to":"하몰","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"세겜","to":"디나","label":"욕보인 사람","kind":"conflict","directed":true,"weight":3,"verses":"2","note":"그 땅의 추장 세겜이 디나를 보고 붙들어 욕보였어요."},
+        {"from":"시므온","to":"세겜","label":"복수한 오빠","kind":"conflict","directed":true,"weight":3,"verses":"25-26","note":"시므온과 레위가 칼을 들고 성을 기습해 세겜과 남자들을 죽이고 디나를 데려왔어요."},
+        {"from":"레위","to":"시므온","label":"함께 복수함","kind":"ally","directed":false,"weight":2,"verses":"25","note":"레위는 형 시므온과 함께 칼을 들고 세겜 성을 쳤어요."},
+        {"from":"디나","to":"야곱","label":"딸","kind":"family","directed":true,"weight":2,"verses":"1","note":"디나는 레아가 야곱에게 낳은 딸이에요."},
+        {"from":"야곱","to":"시므온","label":"꾸짖은 아버지","kind":"conflict","directed":true,"weight":2,"verses":"30","note":"야곱이 시므온과 레위에게 너희가 나를 이 땅 사람들에게 미움받게 했다고 꾸짖었어요."},
+        {"from":"세겜","to":"하몰","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"세겜이 아버지 하몰에게 디나를 아내로 얻게 해 달라고 했어요."}
       ],
       "places": [
         {"name":"세겜","where":"가나안 중부 산지의 성","what":"디나가 욕을 당하고 복수가 벌어진 곳","weight":3}
@@ -1041,12 +1041,12 @@
         {"name":"빌하","role":"르우벤이 범한 첩","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱","label":"약속을 확인하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"베냐민","to":"라헬","label":"아들","kind":"family","directed":true,"weight":3},
-        {"from":"르우벤","to":"야곱","label":"죄지은 맏아들","kind":"conflict","directed":true,"weight":2},
-        {"from":"에서","to":"야곱","label":"함께 장사한 형제","kind":"ally","directed":false,"weight":1},
-        {"from":"야곱","to":"이삭","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"르우벤","to":"빌하","label":"범한 죄","kind":"conflict","directed":true,"weight":1}
+        {"from":"하나님","to":"야곱","label":"약속을 확인하신 분","kind":"ally","directed":true,"weight":3,"verses":"10-12","note":"벧엘에서 하나님이 다시 나타나 야곱을 이스라엘이라 부르시고 땅과 많은 자손을 약속하셨어요."},
+        {"from":"베냐민","to":"라헬","label":"아들","kind":"family","directed":true,"weight":3,"verses":"16-18","note":"라헬이 길에서 아들을 낳다 죽으며 슬픔의 아들이라 했지만 야곱은 오른손의 아들이라는 뜻의 베냐민이라 했어요."},
+        {"from":"르우벤","to":"야곱","label":"죄지은 맏아들","kind":"conflict","directed":true,"weight":2,"verses":"22","note":"르우벤이 아버지의 첩 빌하와 동침했고, 이스라엘이 그 일을 들었어요."},
+        {"from":"에서","to":"야곱","label":"함께 장사한 형제","kind":"ally","directed":false,"weight":1,"verses":"29","note":"이삭이 죽자 에서와 야곱 두 아들이 함께 아버지를 장사했어요."},
+        {"from":"야곱","to":"이삭","label":"아들","kind":"family","directed":true,"weight":1,"verses":"27","note":"야곱이 헤브론 마므레에 있는 아버지 이삭에게 돌아왔어요."},
+        {"from":"르우벤","to":"빌하","label":"범한 죄","kind":"conflict","directed":true,"weight":1,"verses":"22","note":"르우벤이 아버지의 첩 빌하와 동침하는 죄를 지었어요."}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 19km","what":"다시 제단을 쌓고 약속을 확인받음","weight":3},
@@ -1071,9 +1071,9 @@
         {"name":"아말렉","role":"엘리바스의 아들","weight":1}
       ],
       "rels": [
-        {"from":"엘리바스","to":"에서","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"르우엘","to":"에서","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"아말렉","to":"엘리바스","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"엘리바스","to":"에서","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"에서의 아내 아다가 엘리바스를 낳았어요."},
+        {"from":"르우엘","to":"에서","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"바스맛이 에서에게 르우엘을 낳았어요."},
+        {"from":"아말렉","to":"엘리바스","label":"아들","kind":"family","directed":true,"weight":1,"verses":"12","note":"엘리바스의 첩 딤나가 아말렉을 낳았어요. 훗날 이스라엘과 싸우는 아말렉 족속의 조상이에요."}
       ],
       "places": [
         {"name":"세일 산","where":"사해 남동쪽 산지","what":"에서가 옮겨 가 에돔을 이룬 땅","weight":3}
@@ -1100,12 +1100,12 @@
         {"name":"시므온","role":"요셉을 판 형","weight":1}
       ],
       "rels": [
-        {"from":"요셉","to":"야곱","label":"편애받는 아들","kind":"family","directed":true,"weight":3},
-        {"from":"유다","to":"요셉","label":"팔아넘긴 형","kind":"conflict","directed":true,"weight":3},
-        {"from":"르우벤","to":"요셉","label":"살리려 한 형","kind":"ally","directed":true,"weight":2},
-        {"from":"르우벤","to":"야곱","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":1},
-        {"from":"이스마엘 상인들","to":"요셉","label":"산 상인들","kind":"other","directed":true,"weight":1}
+        {"from":"요셉","to":"야곱","label":"편애받는 아들","kind":"family","directed":true,"weight":3,"verses":"3-4","note":"야곱은 늘그막에 얻은 요셉을 다른 아들들보다 더 사랑해 채색옷을 지어 입혔고, 형들은 요셉을 미워했어요."},
+        {"from":"유다","to":"요셉","label":"팔아넘긴 형","kind":"conflict","directed":true,"weight":3,"verses":"26-28","note":"유다가 동생을 죽여서 무슨 유익이 있느냐며 이스마엘 상인들에게 팔자고 해서 은 이십에 팔았어요."},
+        {"from":"르우벤","to":"요셉","label":"살리려 한 형","kind":"ally","directed":true,"weight":2,"verses":"21-22","note":"형들이 요셉을 죽이려 하자 르우벤이 피를 흘리지 말고 구덩이에 던지자고 했어요. 나중에 구하려는 생각이었어요."},
+        {"from":"르우벤","to":"야곱","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"29-30","note":"돌아온 르우벤이 구덩이에 요셉이 없자 옷을 찢으며 이제 나는 어디로 가나 하고 괴로워했어요."},
+        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":1,"verses":"36","note":"미디안 사람들이 요셉을 애굽으로 데려가 바로의 경호대장 보디발에게 팔았어요."},
+        {"from":"이스마엘 상인들","to":"요셉","label":"산 상인들","kind":"other","directed":true,"weight":1,"verses":"28","note":"형들이 요셉을 구덩이에서 끌어내 이스마엘 상인들에게 은 이십에 팔았어요."}
       ],
       "places": [
         {"name":"헤브론","where":"가나안 남부 산지","what":"야곱이 살던 곳. 요셉을 형들에게 심부름 보냄","weight":1},
@@ -1136,13 +1136,13 @@
         {"name":"세라","role":"다말이 낳은 쌍둥이 동생","weight":1}
       ],
       "rels": [
-        {"from":"다말","to":"유다","label":"며느리","kind":"family","directed":true,"weight":3},
-        {"from":"유다","to":"다말","label":"약속 어긴 시부","kind":"conflict","directed":true,"weight":2},
-        {"from":"베레스","to":"유다","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"엘","to":"다말","label":"남편","kind":"family","directed":true,"weight":1},
-        {"from":"오난","to":"엘","label":"동생","kind":"family","directed":true,"weight":1},
-        {"from":"히라","to":"유다","label":"친구","kind":"ally","directed":true,"weight":1},
-        {"from":"세라","to":"베레스","label":"쌍둥이","kind":"family","directed":false,"weight":1}
+        {"from":"다말","to":"유다","label":"며느리","kind":"family","directed":true,"weight":3,"verses":"11","note":"유다가 며느리 다말에게 막내 셀라가 클 때까지 친정에서 과부로 지내라고 했어요."},
+        {"from":"유다","to":"다말","label":"약속 어긴 시부","kind":"conflict","directed":true,"weight":2,"verses":"14, 26","note":"셀라가 자랐는데도 아내로 주지 않자 다말이 꾀를 냈고, 유다는 그가 나보다 옳다고 인정했어요."},
+        {"from":"베레스","to":"유다","label":"아들","kind":"family","directed":true,"weight":2,"verses":"29","note":"다말이 쌍둥이를 낳았는데 먼저 나온 아이가 베레스예요. 다윗과 예수님의 족보로 이어져요."},
+        {"from":"엘","to":"다말","label":"남편","kind":"family","directed":true,"weight":1,"verses":"6-7","note":"유다가 맏아들 엘을 다말과 결혼시켰지만 엘이 악하여 하나님이 죽게 하셨어요."},
+        {"from":"오난","to":"엘","label":"동생","kind":"family","directed":true,"weight":1,"verses":"8-10","note":"오난은 형 엘의 대를 이어 주어야 했지만 일부러 피했고, 그 일이 악하여 죽었어요."},
+        {"from":"히라","to":"유다","label":"친구","kind":"ally","directed":true,"weight":1,"verses":"1, 20","note":"아둘람 사람 히라는 유다의 친구로, 유다의 심부름으로 약속한 염소를 가져갔어요."},
+        {"from":"세라","to":"베레스","label":"쌍둥이","kind":"family","directed":false,"weight":1,"verses":"30","note":"세라는 손에 홍색 실을 맨 쌍둥이 동생인데 베레스가 먼저 나왔어요."}
       ],
       "places": [
         {"name":"아둘람","where":"유다 산지 서쪽 평지","what":"유다가 형제들을 떠나 머문 곳","weight":1},
@@ -1167,11 +1167,11 @@
         {"name":"하나님","role":"요셉과 늘 함께하심","weight":3}
       ],
       "rels": [
-        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":2},
-        {"from":"보디발의 아내","to":"요셉","label":"모함한 여인","kind":"conflict","directed":true,"weight":3},
-        {"from":"보디발의 아내","to":"보디발","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"간수장","to":"요셉","label":"신임한 사람","kind":"ally","directed":true,"weight":1},
-        {"from":"하나님","to":"요셉","label":"함께하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"보디발","to":"요셉","label":"주인","kind":"other","directed":true,"weight":2,"verses":"3-4","note":"보디발은 하나님이 요셉과 함께하심을 보고 요셉에게 집안일과 모든 재산을 맡겼어요."},
+        {"from":"보디발의 아내","to":"요셉","label":"모함한 여인","kind":"conflict","directed":true,"weight":3,"verses":"7-18","note":"보디발의 아내가 요셉을 유혹했으나 요셉이 거절하자, 옷을 증거로 삼아 요셉이 자기를 범하려 했다고 모함했어요."},
+        {"from":"보디발의 아내","to":"보디발","label":"아내","kind":"family","directed":true,"weight":1,"verses":"19","note":"보디발은 아내의 말을 듣고 몹시 화가 나서 요셉을 왕의 죄수들이 갇힌 옥에 넣었어요."},
+        {"from":"간수장","to":"요셉","label":"신임한 사람","kind":"ally","directed":true,"weight":1,"verses":"22-23","note":"간수장은 옥에 있는 모든 죄수를 요셉에게 맡기고 아무것도 살피지 않았어요."},
+        {"from":"하나님","to":"요셉","label":"함께하신 분","kind":"ally","directed":true,"weight":3,"verses":"2, 21","note":"하나님이 요셉과 함께하셔서 보디발의 집에서도, 감옥에서도 그가 하는 일이 잘되게 하셨어요."}
       ],
       "places": [
         {"name":"애굽","where":"가나안 남서쪽 나일 강의 나라","what":"요셉이 종으로 일하다 옥에 갇힌 곳","weight":3}
@@ -1194,10 +1194,10 @@
         {"name":"바로","role":"두 관원장을 심판한 왕","weight":1}
       ],
       "rels": [
-        {"from":"요셉","to":"술 맡은 관원장","label":"꿈을 풀어 준 이","kind":"ally","directed":true,"weight":3},
-        {"from":"술 맡은 관원장","to":"요셉","label":"잊어버린 사람","kind":"conflict","directed":true,"weight":2},
-        {"from":"요셉","to":"떡 굽는 관원장","label":"꿈을 풀어 준 이","kind":"other","directed":true,"weight":2},
-        {"from":"술 맡은 관원장","to":"바로","label":"신하","kind":"other","directed":true,"weight":1}
+        {"from":"요셉","to":"술 맡은 관원장","label":"꿈을 풀어 준 이","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"요셉이 술 맡은 관원장의 꿈을 듣고 사흘 안에 바로가 그를 다시 자리에 세우리라고 풀어 주었어요."},
+        {"from":"술 맡은 관원장","to":"요셉","label":"잊어버린 사람","kind":"conflict","directed":true,"weight":2,"verses":"23","note":"술 맡은 관원장은 자리를 되찾았지만 요셉을 기억하지 않고 잊어버렸어요."},
+        {"from":"요셉","to":"떡 굽는 관원장","label":"꿈을 풀어 준 이","kind":"other","directed":true,"weight":2,"verses":"18-19","note":"요셉은 떡 굽는 관원장의 꿈을 사흘 안에 바로가 그를 나무에 달리라라고 풀었어요."},
+        {"from":"술 맡은 관원장","to":"바로","label":"신하","kind":"other","directed":true,"weight":1,"verses":"1-2, 21","note":"술 맡은 관원장은 바로에게 죄를 지어 갇혔다가 바로의 생일에 다시 술잔을 올리게 되었어요."}
       ],
       "places": [
         {"name":"애굽","where":"친위대장 집의 옥","what":"두 관원장과 요셉이 함께 갇힌 곳","weight":2}
@@ -1223,12 +1223,12 @@
         {"name":"보디베라","role":"온의 제사장, 요셉의 장인","weight":1}
       ],
       "rels": [
-        {"from":"바로","to":"요셉","label":"총리로 세운 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"술 맡은 관원장","to":"요셉","label":"왕에게 추천함","kind":"ally","directed":true,"weight":2},
-        {"from":"아스낫","to":"요셉","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"므낫세","to":"요셉","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1},
-        {"from":"아스낫","to":"보디베라","label":"딸","kind":"family","directed":true,"weight":1}
+        {"from":"바로","to":"요셉","label":"총리로 세운 왕","kind":"ally","directed":true,"weight":3,"verses":"39-41","note":"바로가 하나님의 영이 함께하는 요셉만 한 사람이 없다며 요셉을 애굽 온 땅을 다스리는 총리로 세웠어요."},
+        {"from":"술 맡은 관원장","to":"요셉","label":"왕에게 추천함","kind":"ally","directed":true,"weight":2,"verses":"9-13","note":"바로의 꿈을 풀 사람이 없자 술 맡은 관원장이 그제야 감옥에서 꿈을 풀어 준 히브리 청년을 기억해 말했어요."},
+        {"from":"아스낫","to":"요셉","label":"아내","kind":"family","directed":true,"weight":1,"verses":"45","note":"바로가 요셉에게 온의 제사장 보디베라의 딸 아스낫을 아내로 주었어요."},
+        {"from":"므낫세","to":"요셉","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"51","note":"요셉이 맏아들을 낳고 하나님이 내 모든 고난을 잊게 하셨다며 므낫세라 했어요."},
+        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1,"verses":"52","note":"둘째를 낳고 하나님이 고난의 땅에서 열매를 맺게 하셨다며 에브라임이라 했어요."},
+        {"from":"아스낫","to":"보디베라","label":"딸","kind":"family","directed":true,"weight":1,"verses":"45","note":"아스낫은 온의 제사장 보디베라의 딸이에요."}
       ],
       "places": [
         {"name":"애굽","where":"가나안 남서쪽 나일 강의 나라","what":"요셉이 총리가 되어 곡식을 모은 곳","weight":3},
@@ -1253,10 +1253,10 @@
         {"name":"베냐민","role":"집에 남은 막내","weight":1}
       ],
       "rels": [
-        {"from":"요셉","to":"르우벤","label":"시험하는 동생","kind":"conflict","directed":true,"weight":3},
-        {"from":"시므온","to":"요셉","label":"갇힌 형","kind":"conflict","directed":true,"weight":2},
-        {"from":"르우벤","to":"야곱","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"베냐민","to":"야곱","label":"아끼는 막내","kind":"family","directed":true,"weight":2}
+        {"from":"요셉","to":"르우벤","label":"시험하는 동생","kind":"conflict","directed":true,"weight":3,"verses":"7-9","note":"요셉은 곡식을 사러 온 형들을 알아보았지만 모르는 척하고 너희는 정탐꾼이라며 엄하게 대했어요."},
+        {"from":"시므온","to":"요셉","label":"갇힌 형","kind":"conflict","directed":true,"weight":2,"verses":"24","note":"요셉은 형들 가운데 시므온을 붙잡아 그들 눈앞에서 결박해 가두었어요."},
+        {"from":"르우벤","to":"야곱","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"37","note":"르우벤이 베냐민을 데려가게 해 주시면 꼭 데려오겠다며 제 두 아들을 걸겠다고 아버지께 말했어요."},
+        {"from":"베냐민","to":"야곱","label":"아끼는 막내","kind":"family","directed":true,"weight":2,"verses":"4, 38","note":"야곱은 요셉을 잃은 뒤라 막내 베냐민만은 해를 당할까 봐 형들과 함께 보내지 않았어요."}
       ],
       "places": [
         {"name":"애굽","where":"곡식이 있던 나라","what":"형들이 곡식을 사러 와서 요셉에게 절함","weight":3},
@@ -1283,10 +1283,10 @@
         {"name":"르우벤","role":"아들 둘을 걸겠다 했던 형","weight":1}
       ],
       "rels": [
-        {"from":"유다","to":"베냐민","label":"보증 선 형","kind":"ally","directed":true,"weight":3},
-        {"from":"유다","to":"야곱","label":"설득한 아들","kind":"family","directed":true,"weight":2},
-        {"from":"요셉","to":"베냐민","label":"친형","kind":"family","directed":true,"weight":3},
-        {"from":"시므온","to":"요셉","label":"풀려난 형","kind":"other","directed":true,"weight":1}
+        {"from":"유다","to":"베냐민","label":"보증 선 형","kind":"ally","directed":true,"weight":3,"verses":"9","note":"유다가 베냐민을 위해 내가 담보가 되겠으니 데려오지 못하면 평생 죄를 지겠다고 했어요."},
+        {"from":"유다","to":"야곱","label":"설득한 아들","kind":"family","directed":true,"weight":2,"verses":"8-10","note":"유다가 아이를 함께 보내 주셔야 우리 모두가 살 수 있다며 아버지 야곱을 설득했어요."},
+        {"from":"요셉","to":"베냐민","label":"친형","kind":"family","directed":true,"weight":3,"verses":"29-30","note":"요셉이 어머니가 같은 동생 베냐민을 보자 마음이 북받쳐 방에 들어가 울었어요."},
+        {"from":"시므온","to":"요셉","label":"풀려난 형","kind":"other","directed":true,"weight":1,"verses":"23","note":"형들이 다시 오자 청지기가 갇혀 있던 시므온을 그들에게 데려왔어요."}
       ],
       "places": [
         {"name":"애굽","where":"요셉의 집","what":"형제들이 요셉의 잔치에 초대받음","weight":3}
@@ -1308,10 +1308,10 @@
         {"name":"청지기","role":"형제들을 뒤쫓은 종","weight":1}
       ],
       "rels": [
-        {"from":"유다","to":"베냐민","label":"대신 종이 될 형","kind":"ally","directed":true,"weight":3},
-        {"from":"요셉","to":"유다","label":"시험하는 총리","kind":"conflict","directed":true,"weight":2},
-        {"from":"청지기","to":"요셉","label":"집안 종","kind":"other","directed":true,"weight":1},
-        {"from":"베냐민","to":"요셉","label":"친동생","kind":"family","directed":true,"weight":2}
+        {"from":"유다","to":"베냐민","label":"대신 종이 될 형","kind":"ally","directed":true,"weight":3,"verses":"33","note":"유다가 아이 대신 내가 남아 종이 되겠으니 베냐민은 형들과 함께 돌려보내 달라고 간청했어요."},
+        {"from":"요셉","to":"유다","label":"시험하는 총리","kind":"conflict","directed":true,"weight":2,"verses":"17","note":"요셉이 잔이 발견된 사람만 내 종이 되고 나머지는 평안히 돌아가라 하며 형들을 시험했어요."},
+        {"from":"청지기","to":"요셉","label":"집안 종","kind":"other","directed":true,"weight":1,"verses":"1-2","note":"요셉이 청지기에게 명해 베냐민의 자루에 자기 은잔을 넣게 했어요."},
+        {"from":"베냐민","to":"요셉","label":"친동생","kind":"family","directed":true,"weight":2,"verses":"12","note":"청지기가 자루를 뒤지니 은잔이 베냐민의 자루에서 나왔어요."}
       ],
       "places": [
         {"name":"애굽","where":"요셉의 성","what":"형제들이 은잔 때문에 돌아온 곳","weight":2}
@@ -1336,11 +1336,11 @@
         {"name":"하나님","role":"생명을 구하려 요셉을 보내심","weight":2}
       ],
       "rels": [
-        {"from":"요셉","to":"유다","label":"화해한 형제","kind":"ally","directed":false,"weight":3},
-        {"from":"요셉","to":"베냐민","label":"친형제","kind":"family","directed":false,"weight":2},
-        {"from":"하나님","to":"요셉","label":"먼저 보내신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"바로","to":"요셉","label":"돕는 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"요셉","to":"야곱","label":"살아 있던 아들","kind":"family","directed":true,"weight":2}
+        {"from":"요셉","to":"유다","label":"화해한 형제","kind":"ally","directed":false,"weight":3,"verses":"1-5","note":"요셉이 더는 참지 못하고 내가 요셉이라 밝히며, 나를 판 것으로 근심하지 말라 하나님이 생명을 구하려 먼저 보내셨다고 했어요."},
+        {"from":"요셉","to":"베냐민","label":"친형제","kind":"family","directed":false,"weight":2,"verses":"14","note":"요셉이 동생 베냐민의 목을 안고 울었고 베냐민도 요셉의 목을 안고 울었어요."},
+        {"from":"하나님","to":"요셉","label":"먼저 보내신 분","kind":"ally","directed":true,"weight":3,"verses":"7-8","note":"요셉은 나를 여기 보낸 이는 형들이 아니라 하나님이시며 큰 구원으로 생명을 보존하려 하셨다고 했어요."},
+        {"from":"바로","to":"요셉","label":"돕는 왕","kind":"ally","directed":true,"weight":2,"verses":"17-20","note":"바로가 요셉의 아버지와 가족을 애굽으로 데려오라며 수레를 내주고 좋은 땅을 주겠다고 했어요."},
+        {"from":"요셉","to":"야곱","label":"살아 있던 아들","kind":"family","directed":true,"weight":2,"verses":"26-28","note":"요셉이 살아서 애굽 총리가 되었다는 말에 야곱은 믿지 못하다가 수레를 보고 기운을 되찾았어요."}
       ],
       "places": [
         {"name":"고센","where":"나일 강 동쪽 삼각주","what":"요셉이 가족에게 살라고 한 땅","weight":3},
@@ -1367,10 +1367,10 @@
         {"name":"바로","role":"곧 만날 애굽 왕","weight":1}
       ],
       "rels": [
-        {"from":"요셉","to":"야곱","label":"다시 만난 아들","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"야곱","label":"약속하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"유다","to":"야곱","label":"앞서 보낸 아들","kind":"ally","directed":true,"weight":1},
-        {"from":"베냐민","to":"야곱","label":"막내아들","kind":"family","directed":true,"weight":1}
+        {"from":"요셉","to":"야곱","label":"다시 만난 아들","kind":"family","directed":true,"weight":3,"verses":"29-30","note":"요셉이 고센에서 아버지를 만나 목을 안고 한참 울었고, 야곱은 이제 죽어도 좋다고 했어요."},
+        {"from":"하나님","to":"야곱","label":"약속하신 분","kind":"ally","directed":true,"weight":3,"verses":"2-4","note":"밤에 하나님이 야곱에게 애굽으로 내려가기를 두려워하지 말라, 내가 너와 함께 내려가고 다시 올라오게 하겠다고 하셨어요."},
+        {"from":"유다","to":"야곱","label":"앞서 보낸 아들","kind":"ally","directed":true,"weight":1,"verses":"28","note":"야곱이 유다를 요셉에게 먼저 보내 고센 길을 안내받게 했어요."},
+        {"from":"베냐민","to":"야곱","label":"막내아들","kind":"family","directed":true,"weight":1,"verses":"19, 21","note":"라헬이 낳은 아들 요셉과 베냐민 가운데 베냐민도 아버지와 함께 애굽으로 내려갔어요."}
       ],
       "places": [
         {"name":"브엘세바","where":"가나안 남쪽 끝","what":"내려가기 전 제사하고 약속을 들은 곳","weight":2},
@@ -1395,10 +1395,10 @@
         {"name":"요셉의 형제 다섯","role":"바로 앞에 선 형제들","weight":1}
       ],
       "rels": [
-        {"from":"야곱","to":"바로","label":"축복한 노인","kind":"ally","directed":true,"weight":3},
-        {"from":"바로","to":"요셉","label":"믿고 맡긴 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"애굽 백성","to":"요셉","label":"살려 준 이","kind":"ally","directed":true,"weight":2},
-        {"from":"요셉","to":"야곱","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"야곱","to":"바로","label":"축복한 노인","kind":"ally","directed":true,"weight":3,"verses":"7-10","note":"요셉이 아버지를 바로 앞에 세우자 야곱이 바로를 축복했어요."},
+        {"from":"바로","to":"요셉","label":"믿고 맡긴 왕","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"바로가 요셉에게 애굽 땅의 가장 좋은 곳에 가족을 살게 하고 유능한 사람에게 내 가축을 맡기라고 했어요."},
+        {"from":"애굽 백성","to":"요셉","label":"살려 준 이","kind":"ally","directed":true,"weight":2,"verses":"25","note":"흉년에 곡식을 얻은 애굽 사람들이 당신이 우리를 살리셨다며 요셉에게 감사했어요."},
+        {"from":"요셉","to":"야곱","label":"아들","kind":"family","directed":true,"weight":2,"verses":"29-31","note":"야곱이 죽을 때가 되자 요셉에게 나를 애굽에 묻지 말고 조상의 묘지에 묻어 달라고 맹세하게 했어요."}
       ],
       "places": [
         {"name":"고센","where":"나일 강 동쪽 삼각주, 라암셋 지역","what":"야곱 가족이 받은 좋은 땅","weight":3}
@@ -1420,11 +1420,11 @@
         {"name":"므낫세","role":"요셉의 맏아들","weight":2}
       ],
       "rels": [
-        {"from":"에브라임","to":"므낫세","label":"앞세워진 동생","kind":"family","directed":true,"weight":3},
-        {"from":"야곱","to":"에브라임","label":"축복한 할아버지","kind":"ally","directed":true,"weight":3},
-        {"from":"므낫세","to":"요셉","label":"맏아들","kind":"family","directed":true,"weight":1},
-        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1},
-        {"from":"요셉","to":"야곱","label":"아들","kind":"family","directed":true,"weight":2}
+        {"from":"에브라임","to":"므낫세","label":"앞세워진 동생","kind":"family","directed":true,"weight":3,"verses":"13-20","note":"야곱이 팔을 엇갈려 오른손을 동생 에브라임의 머리에 얹고, 동생이 형보다 크게 되리라고 축복했어요."},
+        {"from":"야곱","to":"에브라임","label":"축복한 할아버지","kind":"ally","directed":true,"weight":3,"verses":"14-16","note":"야곱이 손자들에게 나를 기르신 하나님이 이 아이들에게 복을 주시기를 하며 축복했어요."},
+        {"from":"므낫세","to":"요셉","label":"맏아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"요셉이 아버지가 병들었다는 말을 듣고 두 아들 므낫세와 에브라임을 데리고 갔어요."},
+        {"from":"에브라임","to":"요셉","label":"둘째 아들","kind":"family","directed":true,"weight":1,"verses":"5","note":"야곱이 요셉의 두 아들 에브라임과 므낫세를 르우벤과 시므온처럼 내 아들로 삼겠다고 했어요."},
+        {"from":"요셉","to":"야곱","label":"아들","kind":"family","directed":true,"weight":2,"verses":"17-18","note":"요셉이 아버지의 오른손이 동생에게 얹힌 것을 보고 바꾸려 했지만 야곱이 나도 안다며 거절했어요."}
       ],
       "places": [
         {"name":"벧엘","where":"옛 이름 루스","what":"하나님이 야곱에게 나타나 약속하신 곳","weight":1}
@@ -1450,10 +1450,10 @@
         {"name":"베냐민","role":"이리에 비유된 막내","weight":1}
       ],
       "rels": [
-        {"from":"유다","to":"야곱","label":"왕을 낼 아들","kind":"family","directed":true,"weight":3},
-        {"from":"요셉","to":"야곱","label":"축복받은 아들","kind":"family","directed":true,"weight":2},
-        {"from":"르우벤","to":"야곱","label":"으뜸 잃은 맏아들","kind":"conflict","directed":true,"weight":2},
-        {"from":"시므온","to":"레위","label":"혈기의 형제","kind":"ally","directed":false,"weight":1}
+        {"from":"유다","to":"야곱","label":"왕을 낼 아들","kind":"family","directed":true,"weight":3,"verses":"8-10","note":"야곱이 유다는 형제들의 찬송이 되고 왕의 지팡이가 유다를 떠나지 않으리라고 축복했어요."},
+        {"from":"요셉","to":"야곱","label":"축복받은 아들","kind":"family","directed":true,"weight":2,"verses":"22-26","note":"야곱이 요셉은 샘 곁의 무성한 가지 같다며 하늘의 복과 깊은 샘의 복이 그에게 있으리라고 축복했어요."},
+        {"from":"르우벤","to":"야곱","label":"으뜸 잃은 맏아들","kind":"conflict","directed":true,"weight":2,"verses":"3-4","note":"야곱은 르우벤이 맏아들이지만 아버지의 침상을 더럽혔기에 으뜸이 되지 못하리라고 했어요."},
+        {"from":"시므온","to":"레위","label":"혈기의 형제","kind":"ally","directed":false,"weight":1,"verses":"5-7","note":"야곱은 시므온과 레위가 분노로 사람을 죽인 형제라며 그들의 혈기를 저주했어요."}
       ],
       "places": [
         {"name":"막벨라 굴","where":"헤브론 마므레 앞","what":"야곱이 묻히기를 원한 조상의 묘","weight":2}
@@ -1478,10 +1478,10 @@
         {"name":"요셉의 손자들","role":"요셉이 무릎에 안은 후손","weight":1}
       ],
       "rels": [
-        {"from":"요셉","to":"형들","label":"용서한 동생","kind":"ally","directed":true,"weight":3},
-        {"from":"형들","to":"요셉","label":"두려워한 형들","kind":"conflict","directed":true,"weight":2},
-        {"from":"요셉","to":"야곱","label":"장사한 아들","kind":"family","directed":true,"weight":2},
-        {"from":"하나님","to":"요셉","label":"선으로 바꾸신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"요셉","to":"형들","label":"용서한 동생","kind":"ally","directed":true,"weight":3,"verses":"19-21","note":"요셉이 형들에게 두려워하지 마세요, 형들은 나를 해하려 했지만 하나님은 그것을 선으로 바꾸셨다며 안심시켰어요."},
+        {"from":"형들","to":"요셉","label":"두려워한 형들","kind":"conflict","directed":true,"weight":2,"verses":"15-18","note":"아버지가 죽자 형들은 요셉이 원수를 갚을까 두려워 그 앞에 엎드려 우리는 당신의 종이라고 했어요."},
+        {"from":"요셉","to":"야곱","label":"장사한 아들","kind":"family","directed":true,"weight":2,"verses":"1-2, 13","note":"요셉이 아버지 얼굴에 엎드려 울고, 가나안 막벨라 굴에 아버지를 장사했어요."},
+        {"from":"하나님","to":"요셉","label":"선으로 바꾸신 분","kind":"ally","directed":true,"weight":2,"verses":"20","note":"요셉은 하나님이 형들의 악한 뜻을 선으로 바꾸셔서 많은 백성의 생명을 구하게 하셨다고 고백했어요."}
       ],
       "places": [
         {"name":"막벨라 굴","where":"헤브론 마므레 앞","what":"야곱을 조상 곁에 장사함","weight":3},

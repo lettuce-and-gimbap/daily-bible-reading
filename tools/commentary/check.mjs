@@ -22,11 +22,11 @@ const TYPES = ["story", "law", "list", "poem", "wisdom", "prophecy", "letter", "
 const KINDS = ["family", "ally", "conflict", "other"];
 // 하나님은 본문에 "여호와"·"하나님"·"주" 등으로 나와 글자 대조에서 뺀다
 const SKIP_LOOKUP = new Set(["하나님", "예수", "성령"]);
-const LIMIT = { line: 120, story: 500, role: 24, label: 10, eventTitle: 18, eventText: 70, where: 30, what: 50, why: 40 };
+const LIMIT = { line: 120, story: 500, role: 24, label: 10, eventTitle: 18, eventText: 70, where: 30, what: 50, why: 40, note: 90 };
 
 const only = process.argv.slice(2);
 const files = existsSync(dataDir) ? readdirSync(dataDir).filter((f) => f.endsWith(".json")) : [];
-let errors = 0, warns = 0, chapters = 0;
+let errors = 0, warns = 0, chapters = 0, noNote = 0;
 const out = [];
 const err = (where, msg) => { errors++; out.push(`  ✗ ${where} ${msg}`); };
 const warn = (where, msg) => { warns++; out.push(`  △ ${where} ${msg}`); };
@@ -94,6 +94,12 @@ for (const f of files) {
       if (!KINDS.includes(r.kind)) err(w, `kind "${r.kind}"`);
       if (typeof r.directed !== "boolean") err(w, "directed는 true/false");
       if (![1, 2, 3].includes(r.weight)) err(w, `weight ${r.weight}`);
+      // 구절 풀이(관계도 상세 창): 이 관계가 드러난 절과 쉬운 말 풀이
+      if (r.note == null) noNote++;
+      else {
+        if (!r.note || len(r.note) > LIMIT.note) err(w, `note ${len(r.note)}자 (1~${LIMIT.note})`);
+        if (!/^\d{1,3}(-\d{1,3})?(, \d{1,3}(-\d{1,3})?)*$/.test(r.verses || "")) err(w, `note의 verses "${r.verses}" ("2", "1-3", "1, 16")`);
+      }
     });
     (c.renames || []).forEach((r) => {
       const w = `${at} 이름 바뀜 ${r.from}→${r.to}`;
@@ -101,6 +107,7 @@ for (const f of files) {
       if (!names.has(r.to)) err(w, "새 이름이 people에 없음");
       if (!r.why || len(r.why) > 12) err(w, `why ${len(r.why)}자 (1~12)`);
       if (!/^\d{1,3}(-\d{1,3})?$/.test(r.verses || "")) err(w, `verses "${r.verses}"`);
+      if (r.note != null && (!r.note || len(r.note) > LIMIT.note)) err(w, `note ${len(r.note)}자`);
     });
     (c.places || []).forEach((p) => {
       const w = `${at} 지역 ${p.name}`;
@@ -141,5 +148,5 @@ for (const f of files) {
 }
 
 console.log(out.join("\n"));
-console.log(`\n${chapters}장 검사 · 오류 ${errors} · 경고 ${warns}  (전체 ${BOOKS.reduce((n, b) => n + b.chapters, 0)}장 중)`);
+console.log(`\n${chapters}장 검사 · 오류 ${errors} · 경고 ${warns} · 구절 풀이 없는 관계 ${noNote}  (전체 ${BOOKS.reduce((n, b) => n + b.chapters, 0)}장 중)`);
 process.exit(errors ? 1 : 0);

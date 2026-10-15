@@ -26,7 +26,8 @@
       "events": [ { "title": "사건 이름", "verses": "1-5", "text": "무슨 일이 있었는지" } ],
       "people": [ { "name": "나오미", "role": "이번 장에서 한 일", "weight": 3 } ],
       "renames": [ { "from": "아브람", "to": "아브라함", "verses": "5", "why": "언약을 세우시며" } ],
-      "rels": [ { "from": "룻", "to": "나오미", "label": "며느리", "kind": "family", "directed": true, "weight": 3 } ],
+      "rels": [ { "from": "룻", "to": "나오미", "label": "며느리", "kind": "family", "directed": true, "weight": 3,
+                  "verses": "16", "note": "룻이 어머니가 가시는 곳에 나도 가겠다며 나오미를 떠나지 않았어요." } ],
       "places": [ { "name": "모압", "where": "어디에 있는 곳인지", "what": "여기서 일어난 일", "weight": 3 } ]
     }
   }
@@ -42,6 +43,7 @@
 | `people` | 이 장에 이름이 나오고 **말하거나 행동하는 인물은 모두**(무리 포함, 많으면 12명까지). 비중 순서. `role` 24자 이내. `weight` 3=중심, 2=주요, 1=잠깐 |
 | `renames` | (있을 때만) 이 장 안에서 이름이 바뀐 사람. `to`는 people에 있어야 함. `why` 12자 이내로 바뀐 계기("언약을 세우시며", "얍복 강 씨름 뒤"). 하루 분량에 이 장이 들어 있으면 관계도에 "옛 이름 → 새 이름" 화살표가 그려짐 |
 | `rels` | `from`·`to`는 같은 장 `people`의 `name`과 글자까지 같아야 함. `label` 10자 이내, "from은 to의 label"로 읽히게(예: 룻 → 나오미 "며느리"). `kind`: `family`(가족·친척) `ally`(돕기·스승과 제자·동역) `conflict`(대립·반역) `other`. 서로 같은 관계(형제, 동역자, 원수)면 `directed: false` |
+| `rels`의 `verses`·`note` | 관계도 상세 창(꾹 누르기)에서 그 관계를 누르면 나오는 **구절 풀이**. `verses`는 그 관계가 드러난 절(`"16"`, `"1-3"`, `"1, 16"`), `note`는 90자 이내. 새번역의 뜻을 따라 **쉬운 말로 풀어 쓰고 문장을 그대로 옮기지 않는다**. 누가 누구에게 무엇을 했는지(왜) 한두 문장. `renames`에도 `note`를 쓸 수 있음 |
 | `places` | `where` 30자 이내(위치·어떤 곳), `what` 50자 이내(이 장에서 여기서 일어난 일). 2~4곳 |
 
 하루 분량으로 합칠 때(장 수와 상관없이):
@@ -71,6 +73,10 @@ node tools/commentary/ocr.mjs
 
 # 2) 쓸 장의 주석 본문 보기 (해당 장 쪽만 뽑아 줌)
 node tools/commentary/chapter.mjs rut 1
+
+# 2-1) 관계마다 구절 풀이 붙이기: 관계 목록 보기 → 묶음 파일 작성 → 붙이기
+node tools/commentary/rels.cjs gen 1 25
+node tools/commentary/addnote.cjs 묶음.json   # { "gen 22": [[from, to, 절, 풀이, (label)]] }
 
 # 3) data/summary/<책>.json 작성 후 검사 (서식·글자 수·이름 대조)
 node tools/commentary/check.mjs rut

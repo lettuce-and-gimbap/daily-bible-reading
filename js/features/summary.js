@@ -168,6 +168,83 @@ function layoutGroup(names, rels) {
   return pos;
 }
 
+// 관계선 그리기 자리: 상자 가장자리에서 시작해 끝나는 곡선, 이름표 자리. iters만큼 이름표 겹침을 밀어냄
+function rgEdgeGeom(rels, pos, iters) {
+  // 중심에서 상대 방향으로 상자 가장자리까지 나온 점
+  const edgePoint = (from, to) => {
+    const dx = to.x - from.x, dy = to.y - from.y;
+    const t = Math.min(dx ? from.hw / Math.abs(dx) : Infinity, dy ? from.hh / Math.abs(dy) : Infinity);
+    return { x: from.x + dx * t, y: from.y + dy * t };
+  };
+  const pairTotal = {}, pairCount = {};
+  rels.forEach((r) => { const k = [r.from, r.to].sort().join("|"); pairTotal[k] = (pairTotal[k] || 0) + 1; });
+  const edges = rels.map((r, i) => {
+    const k = [r.from, r.to].sort().join("|");
+    const idx = pairCount[k] = (pairCount[k] || 0) + 1;
+    const a = pos[r.from], b = pos[r.to];
+    const p1 = edgePoint(a, b), p2 = edgePoint(b, a);
+    const mx = (p1.x + p2.x) / 2, my = (p1.y + p2.y) / 2;
+    const len = Math.hypot(p2.x - p1.x, p2.y - p1.y) || 1;
+    // 같은 두 사람 사이에 관계가 둘이면 양쪽으로 휘어 나눔
+    const bend = pairTotal[k] > 1 ? (idx === 1 ? -1 : 1) * 22 * (r.from < r.to ? 1 : -1) : 0;
+    const nx = -(p2.y - p1.y) / len, ny = (p2.x - p1.x) / len;
+    const qx = mx + nx * bend * 2, qy = my + ny * bend * 2;
+    const lx = 0.25 * p1.x + 0.5 * qx + 0.25 * p2.x, ly = 0.25 * p1.y + 0.5 * qy + 0.25 * p2.y;
+    return { i, r, p1, p2, qx, qy, lx, ly, ax: lx, ay: ly, w: rgLabelW(r.label), h: 15 };
+  });
+  // 이름표끼리, 이름표와 이름 상자가 겹치면 조금씩 밀어냄(원래 자리에서 40px 넘게는 안 감)
+  for (let it = 0; it < iters; it++) {
+    for (let i = 0; i < edges.length; i++) {
+      const A = edges[i];
+      for (let j = i + 1; j < edges.length; j++) {
+        const B = edges[j];
+        const ox = (A.w + B.w) / 2 + 6 - Math.abs(B.lx - A.lx), oy = (A.h + B.h) / 2 + 3 - Math.abs(B.ly - A.ly);
+        if (ox > 0 && oy > 0) {
+          if (oy <= ox) { const s = (B.ly >= A.ly ? 1 : -1) * oy / 2; A.ly -= s; B.ly += s; }
+          else { const s = (B.lx >= A.lx ? 1 : -1) * ox / 2; A.lx -= s; B.lx += s; }
+        }
+      }
+      Object.values(pos).forEach((P) => {
+        const ox = A.w / 2 + P.hw + 2 - Math.abs(A.lx - P.x), oy = A.h / 2 + P.hh + 2 - Math.abs(A.ly - P.y);
+        if (ox > 0 && oy > 0) {
+          if (oy <= ox) A.ly += (A.ly >= P.y ? 1 : -1) * oy;
+          else A.lx += (A.lx >= P.x ? 1 : -1) * ox;
+        }
+      });
+      const dx = A.lx - A.ax, dy = A.ly - A.ay, d = Math.hypot(dx, dy);
+      if (d > 40) { A.lx = A.ax + (dx / d) * 40; A.ly = A.ay + (dy / d) * 40; }
+    }
+  }
+  return edges;
+}
+
+// 관계도 SVG 안쪽(선·상자·이름표). 상세 창에서는 선과 상자에 번호를 달아 누를 수 있게 함
+function rgSvgInner(names, pos, edges, live) {
+  const lines = edges.map((e) => {
+    const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
+    const d = `M${e.p1.x.toFixed(1)} ${e.p1.y.toFixed(1)} Q${e.qx.toFixed(1)} ${e.qy.toFixed(1)} ${e.p2.x.toFixed(1)} ${e.p2.y.toFixed(1)}`;
+    return `<g class="rg-edge" ${live ? `data-edge="${e.i}"` : ""}>${live ? `<path class="rg-hit" d="${d}"/>` : ""}<path class="rg-line" d="${d}"
+      fill="none" stroke="${color}" stroke-width="2" ${e.r.kind === "conflict" ? 'stroke-dasharray="5 4"' : ""}
+      ${e.r.directed ? `marker-end="url(#rg-arrow-${e.r.kind in REL_COLOR ? e.r.kind : "other"})"` : ""}/></g>`;
+  }).join("");
+  const labels = edges.map((e) => {
+    const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
+    return `<text ${live ? `data-edge="${e.i}"` : ""} x="${e.lx.toFixed(1)}" y="${(e.ly + 4).toFixed(1)}" text-anchor="middle" class="rg-label" fill="${color}">${esc(e.r.label)}</text>`;
+  }).join("");
+  const nodes = names.map((name) => {
+    const p = pos[name];
+    return `<g class="rg-node" ${live ? `data-node="${esc(name)}"` : ""}><rect x="${(p.x - p.hw).toFixed(1)}" y="${(p.y - p.hh).toFixed(1)}" width="${(p.hw * 2).toFixed(1)}" height="${p.hh * 2}" rx="10"/>
+      <text x="${p.x.toFixed(1)}" y="${(p.y + 5).toFixed(1)}" text-anchor="middle">${esc(name)}</text></g>`;
+  }).join("");
+  const markers = Object.keys(REL_COLOR).map((k) => `<marker id="rg-arrow-${k}${live ? "-live" : ""}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${REL_COLOR[k]}"/></marker>`).join("");
+  const body = `<defs>${markers}</defs>${lines}${nodes}${labels}`;
+  return live ? body.replace(/url\(#rg-arrow-(\w+)\)/g, "url(#rg-arrow-$1-live)") : body;
+}
+
+// 화면에 그린 관계도 정보. 꾹 누르면 이걸로 상세 창을 다시 그림
+const rgModels = {};
+let rgSeq = 0;
+
 function relationGraphHtml(people, relations) {
   const used = new Set();
   relations.forEach((r) => { used.add(r.from); used.add(r.to); });
@@ -216,75 +293,242 @@ function relationGraphHtml(people, relations) {
     y += r.h + GAP;
   });
   const VW = W, VH = y - GAP + PAD;
+  const edges = rgEdgeGeom(rels, pos, 150);
 
-  // 중심에서 상대 방향으로 상자 가장자리까지 나온 점
-  const edgePoint = (from, to) => {
-    const dx = to.x - from.x, dy = to.y - from.y;
-    const t = Math.min(dx ? from.hw / Math.abs(dx) : Infinity, dy ? from.hh / Math.abs(dy) : Infinity);
-    return { x: from.x + dx * t, y: from.y + dy * t };
-  };
-  const pairTotal = {}, pairCount = {};
-  rels.forEach((r) => { const k = [r.from, r.to].sort().join("|"); pairTotal[k] = (pairTotal[k] || 0) + 1; });
-  const edges = rels.map((r) => {
-    const k = [r.from, r.to].sort().join("|");
-    const idx = pairCount[k] = (pairCount[k] || 0) + 1;
-    const a = pos[r.from], b = pos[r.to];
-    const p1 = edgePoint(a, b), p2 = edgePoint(b, a);
-    const mx = (p1.x + p2.x) / 2, my = (p1.y + p2.y) / 2;
-    const len = Math.hypot(p2.x - p1.x, p2.y - p1.y) || 1;
-    // 같은 두 사람 사이에 관계가 둘이면 양쪽으로 휘어 나눔
-    const bend = pairTotal[k] > 1 ? (idx === 1 ? -1 : 1) * 22 * (r.from < r.to ? 1 : -1) : 0;
-    const nx = -(p2.y - p1.y) / len, ny = (p2.x - p1.x) / len;
-    const qx = mx + nx * bend * 2, qy = my + ny * bend * 2;
-    const lx = 0.25 * p1.x + 0.5 * qx + 0.25 * p2.x, ly = 0.25 * p1.y + 0.5 * qy + 0.25 * p2.y;
-    return { r, p1, p2, qx, qy, lx, ly, ax: lx, ay: ly, w: rgLabelW(r.label), h: 15 };
-  });
-  // 이름표끼리, 이름표와 이름 상자가 겹치면 조금씩 밀어냄(원래 자리에서 40px 넘게는 안 감)
-  for (let it = 0; it < 150; it++) {
-    for (let i = 0; i < edges.length; i++) {
-      const A = edges[i];
-      for (let j = i + 1; j < edges.length; j++) {
-        const B = edges[j];
-        const ox = (A.w + B.w) / 2 + 6 - Math.abs(B.lx - A.lx), oy = (A.h + B.h) / 2 + 3 - Math.abs(B.ly - A.ly);
-        if (ox > 0 && oy > 0) {
-          if (oy <= ox) { const s = (B.ly >= A.ly ? 1 : -1) * oy / 2; A.ly -= s; B.ly += s; }
-          else { const s = (B.lx >= A.lx ? 1 : -1) * ox / 2; A.lx -= s; B.lx += s; }
-        }
-      }
-      Object.values(pos).forEach((P) => {
-        const ox = A.w / 2 + P.hw + 2 - Math.abs(A.lx - P.x), oy = A.h / 2 + P.hh + 2 - Math.abs(A.ly - P.y);
-        if (ox > 0 && oy > 0) {
-          if (oy <= ox) A.ly += (A.ly >= P.y ? 1 : -1) * oy;
-          else A.lx += (A.lx >= P.x ? 1 : -1) * ox;
-        }
-      });
-      const dx = A.lx - A.ax, dy = A.ly - A.ay, d = Math.hypot(dx, dy);
-      if (d > 40) { A.lx = A.ax + (dx / d) * 40; A.ly = A.ay + (dy / d) * 40; }
-    }
-  }
-  const lines = edges.map((e) => {
-    const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
-    return `<path d="M${e.p1.x.toFixed(1)} ${e.p1.y.toFixed(1)} Q${e.qx.toFixed(1)} ${e.qy.toFixed(1)} ${e.p2.x.toFixed(1)} ${e.p2.y.toFixed(1)}"
-      fill="none" stroke="${color}" stroke-width="2" ${e.r.kind === "conflict" ? 'stroke-dasharray="5 4"' : ""}
-      ${e.r.directed ? `marker-end="url(#rg-arrow-${e.r.kind in REL_COLOR ? e.r.kind : "other"})"` : ""}/>`;
-  }).join("");
-  const labels = edges.map((e) => {
-    const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
-    return `<text x="${e.lx.toFixed(1)}" y="${(e.ly + 4).toFixed(1)}" text-anchor="middle" class="rg-label" fill="${color}">${esc(e.r.label)}</text>`;
-  }).join("");
-  const nodes = names.map((name) => {
-    const p = pos[name];
-    return `<g class="rg-node"><rect x="${(p.x - p.hw).toFixed(1)}" y="${(p.y - p.hh).toFixed(1)}" width="${(p.hw * 2).toFixed(1)}" height="${p.hh * 2}" rx="10"/>
-      <text x="${p.x.toFixed(1)}" y="${(p.y + 5).toFixed(1)}" text-anchor="middle">${esc(name)}</text></g>`;
-  }).join("");
-  const markers = Object.keys(REL_COLOR).map((k) => `<marker id="rg-arrow-${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${REL_COLOR[k]}"/></marker>`).join("");
+  const id = `rg${++rgSeq}`;
+  rgModels[id] = { names, rels, pos, roles: Object.fromEntries(people.map((p) => [p.name, p.role || ""])), VW, VH };
+  Object.keys(rgModels).slice(0, -20).forEach((k) => delete rgModels[k]); // 오래된 것은 버림
   const kinds = [...new Set(rels.map((r) => r.kind))].filter((k) => REL_COLOR[k]);
   return `
-    <svg class="rg" viewBox="0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}" role="img" aria-label="등장 인물 관계도: ${esc(rels.map((r) => `${r.from}은(는) ${r.to}의 ${r.label}`).join(", "))}">
-      <defs>${markers}</defs>${lines}${nodes}${labels}
-    </svg>
+    <p class="rg-hint">꾹 눌러서 자세한 내용을 확인해보아요</p>
+    <div class="rg-wrap" data-rg="${id}" tabindex="0" aria-label="관계도를 꾹 누르면 자세히 볼 수 있어요">
+      <svg class="rg" viewBox="0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}" role="img" aria-label="등장 인물 관계도: ${esc(rels.map((r) => `${r.from}은(는) ${r.to}의 ${r.label}`).join(", "))}">
+        ${rgSvgInner(names, pos, edges, false)}
+      </svg>
+      <span class="rg-press" aria-hidden="true"></span>
+    </div>
     <p class="rg-legend">${kinds.map((k) => `<span><i style="background:${REL_COLOR[k]}"></i>${REL_NAME[k]}</span>`).join("")}<em>화살표는 "A는 B의 ○○"에서 B를 가리켜요</em></p>`;
 }
+
+// ── 관계도 자세히 보기 (꾹 눌러서 여는 창) ──
+// 이름 상자를 끌어 옮기고, 선이나 관계 이름을 누르면 두 사람 쪽으로 확대하며 그 관계가 생긴 구절 풀이를 보여 줌.
+// 이름 상자를 누르면 그 사람의 관계를 모아 보여 줌. 빈 곳을 끌면 화면 이동, 두 손가락이나 휠로 확대·축소.
+const RG_HOLD_MS = 1500;
+
+function rgOpen(id) {
+  const m = rgModels[id];
+  if (!m) return;
+  const pos = JSON.parse(JSON.stringify(m.pos)); // 창에서 옮겨도 작은 관계도는 그대로
+  const full = { x: -10, y: -6, w: m.VW + 20, h: m.VH + 12 };
+  let view = { ...full }, sel = null, anim = 0;
+
+  const el = document.createElement("div");
+  el.className = "rg-modal";
+  el.setAttribute("role", "dialog");
+  el.setAttribute("aria-modal", "true");
+  el.setAttribute("aria-label", "관계도 자세히 보기");
+  el.innerHTML = `
+    <div class="rg-sheet">
+      <div class="rg-top">
+        <b>관계도 자세히 보기</b>
+        <span class="rg-zoom">
+          <button type="button" data-z="out" aria-label="작게">−</button>
+          <button type="button" data-z="fit" aria-label="전체 보기">전체</button>
+          <button type="button" data-z="in" aria-label="크게">+</button>
+        </span>
+        <button type="button" class="rg-close" aria-label="닫기">✕</button>
+      </div>
+      <p class="rg-tip">이름을 끌어서 옮기고, 선이나 관계 이름을 누르면 두 사람 사이의 이야기가 나와요.</p>
+      <svg class="rg rg-live"></svg>
+      <div class="rg-detail" aria-live="polite"></div>
+    </div>`;
+  document.body.appendChild(el);
+  document.documentElement.classList.add("rg-open");
+  const svg = el.querySelector("svg");
+  const detail = el.querySelector(".rg-detail");
+
+  const setView = () => svg.setAttribute("viewBox", `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
+  const draw = () => {
+    svg.innerHTML = rgSvgInner(m.names, pos, rgEdgeGeom(m.rels, pos, 40), true);
+    if (sel) {
+      svg.classList.add("rg-dim");
+      if (sel.edge != null) {
+        const r = m.rels[sel.edge];
+        svg.querySelectorAll(`[data-edge="${sel.edge}"]`).forEach((x) => x.classList.add("on"));
+        [r.from, r.to].forEach((n) => { const g = svg.querySelector(`[data-node="${CSS.escape(n)}"]`); if (g) g.classList.add("on"); });
+      } else {
+        const g = svg.querySelector(`[data-node="${CSS.escape(sel.node)}"]`); if (g) g.classList.add("on");
+        m.rels.forEach((r, i) => {
+          if (r.from !== sel.node && r.to !== sel.node) return;
+          svg.querySelectorAll(`[data-edge="${i}"]`).forEach((x) => x.classList.add("on"));
+          const o = svg.querySelector(`[data-node="${CSS.escape(r.from === sel.node ? r.to : r.from)}"]`); if (o) o.classList.add("on");
+        });
+      }
+    } else svg.classList.remove("rg-dim");
+  };
+  // 부드럽게 확대·이동
+  const flyTo = (target) => {
+    cancelAnimationFrame(anim);
+    const from = { ...view }, t0 = performance.now();
+    const step = (now) => {
+      const t = Math.min(1, (now - t0) / 320), e = 1 - Math.pow(1 - t, 3);
+      ["x", "y", "w", "h"].forEach((k) => { view[k] = from[k] + (target[k] - from[k]) * e; });
+      setView();
+      if (t < 1) anim = requestAnimationFrame(step);
+    };
+    anim = requestAnimationFrame(step);
+  };
+  // 상자들이 다 들어오는 화면(가로세로 비율은 창에 맞춤)
+  const frame = (list, pad) => {
+    const xs = list.flatMap((n) => [pos[n].x - pos[n].hw, pos[n].x + pos[n].hw]);
+    const ys = list.flatMap((n) => [pos[n].y - pos[n].hh, pos[n].y + pos[n].hh]);
+    let x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad, y1 = Math.max(...ys) + pad;
+    const box = svg.getBoundingClientRect(), ratio = box.height / Math.max(1, box.width);
+    let w = Math.max(x1 - x0, 230), h = Math.max(y1 - y0, w * ratio);
+    w = Math.max(w, h / ratio);
+    const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+    return { x: cx - w / 2, y: cy - h / 2, w, h };
+  };
+  const fitAll = () => frame(m.names, 24);
+
+  const noteList = (r) => (r.notes || []).length
+    ? `<ul class="rg-notes">${r.notes.map((n) => `<li><small>${esc(n.ref)}</small><p>${esc(n.text)}</p></li>`).join("")}</ul>`
+    : `<p class="muted small">이 관계를 풀어 줄 구절 설명은 아직 준비 중이에요.</p>`;
+  const relLine = (r) => `<b>${esc(r.from)}</b><span class="rg-arrow">${r.directed ? "→" : "↔"}</span><b>${esc(r.to)}</b>
+    <em style="color:${REL_COLOR[r.kind] || REL_COLOR.other}">${esc(r.label)}</em><span class="rg-kind">${REL_NAME[r.kind] || ""}</span>`;
+  const showEdge = (i) => {
+    sel = { edge: i };
+    const r = m.rels[i];
+    detail.innerHTML = `<div class="rg-rel">${relLine(r)}</div>${noteList(r)}`;
+    draw();
+    flyTo(frame([r.from, r.to], 36));
+  };
+  const showNode = (name) => {
+    sel = { node: name };
+    const mine = m.rels.map((r, i) => ({ r, i })).filter(({ r }) => r.from === name || r.to === name);
+    detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}</div>
+      <ul class="rg-rels">${mine.map(({ r, i }) => `<li><button type="button" data-pick="${i}">${relLine(r)}</button></li>`).join("")}</ul>
+      <p class="muted small">관계를 누르면 그 장면의 구절 풀이가 나와요.</p>`;
+    draw();
+    const others = [...new Set(mine.flatMap(({ r }) => [r.from, r.to]))];
+    flyTo(frame(others.length ? others : [name], 30));
+  };
+  const clearSel = () => {
+    sel = null;
+    detail.innerHTML = `<p class="muted small">선이나 관계 이름을 누르면 그 관계가 생긴 장면과 구절 풀이가 나와요. 이름을 누르면 그 사람의 관계를 모아 볼 수 있어요.</p>`;
+    draw();
+  };
+
+  // 화면 좌표 → 관계도 좌표
+  const toSvg = (cx, cy) => { const p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(svg.getScreenCTM().inverse()); };
+  const pointers = new Map();
+  let drag = null; // { node, dx, dy, moved } 또는 { pan, sx, sy, view } 또는 { pinch, d0, view, mid }
+  svg.addEventListener("pointerdown", (e) => {
+    try { svg.setPointerCapture(e.pointerId); } catch (err) { /* 캡처가 안 되는 환경이면 그냥 진행 */ }
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      drag = { pinch: true, d0: Math.hypot(a.x - b.x, a.y - b.y), view: { ...view }, mid: toSvg((a.x + b.x) / 2, (a.y + b.y) / 2) };
+      return;
+    }
+    const nodeEl = e.target.closest("[data-node]"), edgeEl = e.target.closest("[data-edge]");
+    const p = toSvg(e.clientX, e.clientY);
+    if (nodeEl) { const n = nodeEl.dataset.node; drag = { node: n, dx: pos[n].x - p.x, dy: pos[n].y - p.y, sx: e.clientX, sy: e.clientY, moved: false }; }
+    else drag = { pan: true, edge: edgeEl ? +edgeEl.dataset.edge : null, sx: e.clientX, sy: e.clientY, view: { ...view }, moved: false };
+  });
+  svg.addEventListener("pointermove", (e) => {
+    if (!pointers.has(e.pointerId)) return;
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (!drag) return;
+    if (drag.pinch && pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      const k = Math.min(4, Math.max(0.25, drag.d0 / Math.max(1, Math.hypot(a.x - b.x, a.y - b.y))));
+      const v = drag.view;
+      view = { w: v.w * k, h: v.h * k, x: drag.mid.x - (drag.mid.x - v.x) * k, y: drag.mid.y - (drag.mid.y - v.y) * k };
+      setView();
+      return;
+    }
+    if (Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 5) drag.moved = true;
+    if (!drag.moved) return;
+    if (drag.node) {
+      const p = toSvg(e.clientX, e.clientY);
+      pos[drag.node].x = p.x + drag.dx; pos[drag.node].y = p.y + drag.dy;
+      draw();
+    } else if (drag.pan) {
+      const box = svg.getBoundingClientRect(), s = drag.view.w / box.width;
+      view.x = drag.view.x - (e.clientX - drag.sx) * s; view.y = drag.view.y - (e.clientY - drag.sy) * s;
+      setView();
+    }
+  });
+  const up = (e) => {
+    pointers.delete(e.pointerId);
+    if (!drag) return;
+    if (drag.pinch) { if (!pointers.size) drag = null; return; }
+    if (!drag.moved && e.type === "pointerup") {
+      if (drag.node) showNode(drag.node);
+      else if (drag.edge != null) showEdge(drag.edge);
+      else if (sel) { clearSel(); flyTo(fitAll()); }
+    }
+    drag = null;
+  };
+  svg.addEventListener("pointerup", up);
+  svg.addEventListener("pointercancel", up);
+  svg.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    const k = e.deltaY > 0 ? 1.12 : 1 / 1.12, c = toSvg(e.clientX, e.clientY);
+    view = { w: view.w * k, h: view.h * k, x: c.x - (c.x - view.x) * k, y: c.y - (c.y - view.y) * k };
+    setView();
+  }, { passive: false });
+
+  const close = () => {
+    cancelAnimationFrame(anim);
+    document.removeEventListener("keydown", onKey);
+    document.documentElement.classList.remove("rg-open");
+    el.remove();
+  };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  document.addEventListener("keydown", onKey);
+  el.addEventListener("click", (e) => {
+    if (e.target === el || e.target.closest(".rg-close")) return close();
+    const z = e.target.closest("[data-z]");
+    if (z) {
+      if (z.dataset.z === "fit") { sel = null; clearSel(); return flyTo(fitAll()); }
+      const k = z.dataset.z === "in" ? 0.75 : 1 / 0.75, cx = view.x + view.w / 2, cy = view.y + view.h / 2;
+      return flyTo({ w: view.w * k, h: view.h * k, x: cx - view.w * k / 2, y: cy - view.h * k / 2 });
+    }
+    const pick = e.target.closest("[data-pick]");
+    if (pick) showEdge(+pick.dataset.pick);
+  });
+
+  clearSel();
+  view = fitAll(); setView();
+  el.querySelector(".rg-close").focus();
+}
+
+// 작은 관계도를 꾹 누르면(1.5초) 상세 창. 누르는 동안 테두리가 차오름. 손가락이 움직이면(스크롤) 취소
+(function rgHoldSetup() {
+  let hold = null;
+  const cancel = () => {
+    if (!hold) return;
+    clearTimeout(hold.timer);
+    hold.wrap.classList.remove("rg-pressing");
+    hold = null;
+  };
+  document.addEventListener("pointerdown", (e) => {
+    const wrap = e.target.closest && e.target.closest(".rg-wrap");
+    if (!wrap || (e.button && e.button !== 0)) return;
+    cancel();
+    hold = { wrap, x: e.clientX, y: e.clientY, timer: setTimeout(() => { const id = wrap.dataset.rg; cancel(); rgOpen(id); }, RG_HOLD_MS) };
+    wrap.classList.add("rg-pressing");
+  });
+  document.addEventListener("pointermove", (e) => { if (hold && Math.hypot(e.clientX - hold.x, e.clientY - hold.y) > 10) cancel(); });
+  ["pointerup", "pointercancel", "scroll"].forEach((t) => document.addEventListener(t, cancel, true));
+  document.addEventListener("contextmenu", (e) => { if (e.target.closest && e.target.closest(".rg-wrap")) e.preventDefault(); });
+  document.addEventListener("keydown", (e) => {
+    const wrap = e.target.closest && e.target.closest(".rg-wrap");
+    if (wrap && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); rgOpen(wrap.dataset.rg); }
+  });
+})();
 
 function songLink(s) {
   return `https://www.youtube.com/results?search_query=${encodeURIComponent(`${s.title} ${s.artist}`)}`;
