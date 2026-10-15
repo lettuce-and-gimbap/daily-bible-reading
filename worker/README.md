@@ -71,3 +71,13 @@ Cloudflare 무료 플랜으로 충분합니다.
 - 알림 문구는 저장소 루트 `sw.js`의 `MESSAGES`에서 바꿉니다. 서버를 다시 배포할 필요는 없습니다.
 - 크론 실행 기록은 Cloudflare 대시보드 → Workers → daily-bible-reminder → Logs에서 볼 수 있습니다.
 - 만료된 구독(앱 삭제, 알림 해제 등)은 보내는 중에 자동으로 지워집니다.
+
+## 계정 · 기록 동기화 (D1)
+
+```bash
+npx wrangler d1 create daily-bible-users   # 만든 id를 wrangler.toml의 [[d1_databases]]에
+npx wrangler d1 execute daily-bible-users --remote --file=schema.sql
+npx wrangler deploy
+```
+
+앱 사용법은 저장소 루트의 `help.html`.

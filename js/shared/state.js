@@ -28,6 +28,7 @@ function versionName(code) {
 function persist() {
   saveState(state);
   queueReminderSync();
+  if (typeof queueAccountSync === "function") queueAccountSync(); // 로그인했으면 서버에도 (features/account.js)
 }
 
 /* ---------- 진행 계산 ---------- */

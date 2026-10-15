@@ -15,3 +15,9 @@ id = "0fc4e393b78f43b6af8af3c5a1bd6d39"
 [vars]
 VAPID_SUBJECT = "https://lettuce-and-gimbap.github.io/daily-bible-reading/"
 # VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY는 npx wrangler secret put 으로 등록 (worker/README.md 참고)
+
+# 사용자 계정 · 기록 동기화 (npx wrangler d1 create daily-bible-users 로 만듦, 표는 schema.sql)
+[[d1_databases]]
+binding = "DB"
+database_name = "daily-bible-users"
+database_id = "a19b9c65-c404-4f7c-a3c0-022e3c762b8a"

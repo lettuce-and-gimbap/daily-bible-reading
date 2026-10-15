@@ -88,6 +88,7 @@ function renderStats() {
   app.innerHTML = `
     <section class="hero-row">${readCard}${qtCard}</section>
 
+    ${accountCardHtml()}
     ${reminderCardHtml()}
 
     <section class="card">
@@ -155,9 +156,10 @@ function renderStats() {
         <label class="btn ghost small">백업 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
         <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
       </div>
-      <p class="muted small">통독 메모·묵상 노트를 포함한 모든 기록은 <b>이 기기의 이 브라우저(또는 홈 화면 앱)</b>에만 저장돼요. 서버나 갓피아 계정으로는 보내지 않아요. 기기를 바꾸기 전에 백업 파일을 받아 두세요.</p>
+      <p class="muted small">로그인하지 않으면 모든 기록은 <b>이 기기의 이 브라우저(또는 홈 화면 앱)</b>에만 저장돼요. 위 <b>계정</b>으로 로그인하면 서버에도 저장돼서 다른 기기에서 이어 할 수 있어요. 백업 파일은 언제든 받아 둘 수 있어요.</p>
     </section>`;
 
+  bindAccountCard();
   bindReminderCard();
   bindExportCard();
 

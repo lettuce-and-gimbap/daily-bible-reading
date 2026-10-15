@@ -13,9 +13,10 @@ function route() {
   window.scrollTo(0, 0);
   queueReminderSync();
 }
-window.addEventListener("hashchange", route);
+window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#link=")) route(); });
 
-route();
+// QR(#link=코드)로 열었으면 먼저 그 코드로 로그인, 로그인돼 있으면 서버 기록과 맞춘 뒤 그림
+claimLinkFromHash().then((linked) => { route(); if (!linked) syncAccount(); });
 
 // 앱 새로 불러오기: 브라우저에 남은 예전 화면 파일까지 다시 받은 뒤 새로고침 (기록은 이 기기에 그대로 있음)
 document.getElementById("app-reload").addEventListener("click", async (e) => {

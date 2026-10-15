@@ -5,6 +5,7 @@
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
 import { dailySummary } from "./summary.js";
+import { account } from "./account.js";
 
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
@@ -18,7 +19,7 @@ export default {
     const cors = {
       "Access-Control-Allow-Origin": ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0],
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      "Access-Control-Allow-Headers": "content-type",
+      "Access-Control-Allow-Headers": "content-type, authorization",
       Vary: "Origin",
     };
     const json = (data, status = 200) =>
@@ -32,6 +33,7 @@ export default {
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
       if (pathname === "/search") return await searchVerses(new URL(request.url), json);
+      if (pathname.startsWith("/account/")) return await account(pathname, request, env, json);
       if (pathname === "/summary") return await dailySummary(new URL(request.url), env, json, !origin || ALLOWED_ORIGINS.includes(origin), kstDate(new Date()));
       if (request.method !== "POST") return json({ error: "not found" }, 404);
       const body = await request.json();

@@ -102,3 +102,16 @@ details summary h2 { margin: 0; }
   .m-read { width: 10px; height: 5px; }
   .m-qt { width: 5px; height: 5px; }
 }
+
+/* 계정 · 여러 기기 */
+.acct-form { display: grid; gap: 8px; max-width: 360px; }
+.acct-form input, .acct-more input { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font: inherit; }
+.acct-more { margin-top: 10px; }
+.acct-more summary { cursor: pointer; color: var(--muted); font-size: .88rem; }
+.acct-more .inline { margin-top: 8px; }
+.acct-who { margin: 0 0 10px; }
+.acct-qr { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); }
+.acct-qr-img { width: 160px; height: 160px; background: #fff; border-radius: 10px; padding: 6px; }
+.acct-qr-img svg { width: 100%; height: 100%; display: block; }
+.acct-qr p { margin: 0 0 6px; }
+.acct-code { font-size: 1.6rem; font-weight: 800; letter-spacing: .12em; font-variant-numeric: tabular-nums; color: var(--accent); }

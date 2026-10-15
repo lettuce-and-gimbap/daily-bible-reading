@@ -144,6 +144,7 @@ function renderSetup(existing) {
   if (cancel) cancel.addEventListener("click", route);
   $("#s-save").addEventListener("click", () => {
     state.plan = read();
+    state.planAt = Date.now(); // 여러 기기에서 계획이 다르면 나중에 바꾼 쪽을 따름 (features/account.js)
     viewingDay = null;
     currentChapter = null;
     persist();
