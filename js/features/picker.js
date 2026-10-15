@@ -25,7 +25,7 @@ async function renderVersePicker(body, target, idx) {
   const ver2 = picked[1] && versionFor(picked[1], book) !== ver1 ? versionFor(picked[1], book) : "";
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
 
-  body.innerHTML = `<div class="vp" style="--fz:${fzScale()}"><div class="vp-head">
+  body.innerHTML = `<div class="vp" style="--fz:${fzScale()}"><div class="vp-head" ${target === "reading" ? "hidden" : ""}>
       <button class="icon-btn" data-go="-1" ${idx0 <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
       <b>${esc(book.name)} ${chap}장</b>
       <button class="icon-btn" data-go="1" ${idx0 >= TOTAL_CHAPTERS - 1 ? "disabled" : ""} aria-label="다음 장">›</button>

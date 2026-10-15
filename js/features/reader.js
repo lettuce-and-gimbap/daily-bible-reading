@@ -31,9 +31,11 @@ function buildReader() {
         <div class="rd-row">
           <div class="rd-title" id="r-title"></div>
           <div class="steps" id="r-steps"></div>
-          <button class="chip-btn" data-open="view" id="r-view" aria-label="역본·보기 설정"></button>
         </div>
-        <div class="rd-tabs" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
+        <div class="rd-nav">
+          <div class="seg rd-seg" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
+          <div class="rd-chap" id="r-chap"></div>
+        </div>
       </div>
       <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
     </div>`;
@@ -41,8 +43,17 @@ function buildReader() {
   guardReaderFrame($("#r-frame"));
   bindSheetChrome(renderReaderSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
-  app.querySelectorAll("[data-open]").forEach((b) =>
-    b.addEventListener("click", () => openSheet(b.dataset.open, renderReaderSheet)));
+  // ← 사무엘하 3장 → : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감)
+  $("#r-chap").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-step]");
+    if (!b) return;
+    const pr = progress();
+    const p = pr.seq.indexOf(currentChapter) + Number(b.dataset.step);
+    if (p < 0 || p >= pr.seq.length) return;
+    currentChapter = pr.seq[p];
+    viewingDay = dayOfChapter(pr.days, currentChapter);
+    refreshReader(true);
+  });
   // 통독표·요약·구절·메모·도구는 화면 위에 늘 보이는 탭으로, 갓피아 원문은 마지막 탭(= 패널을 닫은 상태)으로
   $("#r-tabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-rtab]");
@@ -110,6 +121,8 @@ function buildReader() {
         document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === "today"));
       }
       reload = true;
+    } else if (t.id === "d-view") {
+      return openSheet("view", renderReaderSheet);
     } else if (t.id === "d-copy-note") {
       copyText($("#d-note").value, "오늘의 통독 메모를 복사했어요");
       return;
@@ -220,8 +233,10 @@ function refreshReader(reload = false) {
         ? `<button class="badge warn" id="r-behind" title="가장 먼저 밀린 분량으로 이동">${pr.behindDays}일 밀림 ›</button>` : ""}</small>`;
   $("#r-title").title = describeChapters(day);
 
-  $("#r-view").innerHTML = `<span>${s.mode === "two" ? `${versionName(s.ver)} · ${versionName(s.ver2)}` : versionName(s.ver)}</span>
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+  const seqPos = pr.seq.indexOf(currentChapter);
+  $("#r-chap").innerHTML = `<button class="icon-btn" data-step="-1" ${seqPos <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
+    <b>${esc(chapLabel(currentChapter))}</b>
+    <button class="icon-btn" data-step="1" ${seqPos >= pr.seq.length - 1 ? "disabled" : ""} aria-label="다음 장">›</button>`;
 
   const isRead = !!state.read[currentChapter];
   const stepCheck = !isRead
@@ -247,7 +262,7 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"], ["godpia", "갓피아 원문"]];
+const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "메모·도구"], ["godpia", "갓피아"]];
 
 // 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
 function syncReaderTabs() {
@@ -343,6 +358,7 @@ function renderReaderSheet() {
     <section class="tool-card">
       <h3 class="label">바로가기</h3>
       <div class="inline wrap">
+        <button class="btn ghost small" id="d-view">📖 갓피아 화면 역본</button>
         <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
         <a class="btn ghost small" href="#stats">📥 기록 내보내기</a>
       </div>

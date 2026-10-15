@@ -142,7 +142,6 @@ body.full .topbar { position: static; padding: 6px 12px; }
   .rd-top { padding: 6px 8px; gap: 6px; }
   .rd-row { gap: 6px; }
   .chip-btn { padding: 0 10px; font-size: .82rem; height: 36px; }
-  #r-view span { max-width: 58px; }
   .rd.reading .rd-title .dim { display: none; }
   .step-pill { min-width: 34px; height: 32px; padding: 0 6px; font-size: .86rem; flex: 0 0 auto; }
   .step-check { height: 32px; padding: 0 9px; font-size: .82rem; }
@@ -295,6 +294,12 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }
 
 /* 통독 화면: 탭(통독표·요약·구절·메모·도구·갓피아 원문)을 위에 늘 보여 주고, 패널은 본문 자리에 붙여 띄움 */
+.rd-nav { display: flex; align-items: center; gap: 8px; }
+.rd-seg { flex: none; }
+.rd-seg button { padding: 6px 11px; font-size: .86rem; white-space: nowrap; }
+.rd-chap { flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center; gap: 2px; }
+.rd-chap b { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: .95rem; letter-spacing: -0.02em; }
+.rd-chap .icon-btn { width: 32px; height: 32px; flex: none; }
 .rd-tabs { display: flex; gap: 6px; padding: 8px 10px 0; overflow-x: auto; scrollbar-width: none; }
 .rd-tabs::-webkit-scrollbar { display: none; }
 .rd-tabs button { flex: none; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; }
@@ -354,3 +359,13 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .vpair small i { font-style: normal; font-weight: 700; margin-right: 4px; }
 .vpair-src { color: var(--muted); font-size: .72rem; }
 .rd.qt .vpair b { color: var(--qt); }
+
+/* 통독 위 둘째 줄(토글 + ‹ 장 ›) 휴대폰 크기 */
+@media (max-width: 560px) {
+  .rd-nav { gap: 4px; }
+  .rd-seg { padding: 2px; }
+  .rd-seg button { padding: 6px 7px; font-size: .78rem; }
+  .rd-chap { gap: 0; }
+  .rd-chap b { font-size: .84rem; }
+  .rd-chap .icon-btn { width: 24px; height: 30px; background: transparent; border: 0; font-size: 1.1rem; }
+}
