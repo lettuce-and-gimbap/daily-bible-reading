@@ -29,13 +29,13 @@
         {"name":"요나단(아비아달의 아들)","role":"잔치에 소식을 전한 제사장 아들","weight":1}
       ],
       "rels": [
-        {"from":"아도니야","to":"솔로몬","label":"왕위를 다툰 형제","kind":"conflict","directed":false,"weight":3},
-        {"from":"나단","to":"다윗","label":"일깨운 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"밧세바","to":"솔로몬","label":"어머니","kind":"family","directed":true,"weight":2},
-        {"from":"사독","to":"솔로몬","label":"기름 부은 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"요압","to":"아도니야","label":"편든 장관","kind":"ally","directed":true,"weight":2},
-        {"from":"아비아달","to":"아도니야","label":"편든 제사장","kind":"ally","directed":true,"weight":2},
-        {"from":"솔로몬","to":"다윗","label":"후계자 아들","kind":"family","directed":true,"weight":3}
+        {"from":"아도니야","to":"솔로몬","label":"왕위를 다툰 형제","kind":"conflict","directed":false,"weight":3,"verses":"5, 9-10","note":"다윗이 늙자 아도니야가 내가 왕이 되리라 하며 잔치를 열었지만 솔로몬은 그 자리에 부르지 않았어요."},
+        {"from":"나단","to":"다윗","label":"일깨운 선지자","kind":"ally","directed":true,"weight":3,"verses":"11-14, 22-27","note":"나단이 밧세바와 함께 다윗에게 가서 아도니야가 왕이 되었는데 솔로몬을 세우신다던 약속은 어찌 되었냐고 일깨웠어요."},
+        {"from":"밧세바","to":"솔로몬","label":"어머니","kind":"family","directed":true,"weight":2,"verses":"15-21","note":"밧세바가 다윗에게 내 아들 솔로몬이 왕이 되리라고 맹세하지 않으셨냐며 아들을 위해 아뢰었어요."},
+        {"from":"사독","to":"솔로몬","label":"기름 부은 제사장","kind":"ally","directed":true,"weight":2,"verses":"38-39","note":"제사장 사독이 기혼에서 장막의 기름 뿔을 가져다 솔로몬에게 부었고 백성이 왕 만세를 외쳤어요."},
+        {"from":"요압","to":"아도니야","label":"편든 장관","kind":"ally","directed":true,"weight":2,"verses":"7","note":"군대 장관 요압이 아도니야와 의논하고 그를 따르며 도왔어요."},
+        {"from":"아비아달","to":"아도니야","label":"편든 제사장","kind":"ally","directed":true,"weight":2,"verses":"7","note":"제사장 아비아달도 아도니야 편에 서서 그를 도왔어요."},
+        {"from":"솔로몬","to":"다윗","label":"후계자 아들","kind":"family","directed":true,"weight":3,"verses":"30, 35","note":"다윗이 솔로몬이 나를 이어 왕이 되어 내 왕좌에 앉으리라고 맹세했어요."}
       ],
       "places": [
         {"name":"에느로겔","where":"예루살렘 남동쪽 기드론 골짜기 샘","what":"아도니야가 스스로 왕이라 하며 잔치한 곳","weight":2},
@@ -66,13 +66,13 @@
         {"name":"아기스","role":"시므이의 종이 도망간 가드 왕","weight":1}
       ],
       "rels": [
-        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"아도니야","to":"솔로몬","label":"왕위 노린 형","kind":"conflict","directed":true,"weight":2},
-        {"from":"브나야","to":"솔로몬","label":"명을 따른 장수","kind":"ally","directed":true,"weight":2},
-        {"from":"솔로몬","to":"요압","label":"처단한 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"솔로몬","to":"시므이","label":"맹세 지키게 한 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"솔로몬","to":"아비아달","label":"쫓아낸 왕","kind":"conflict","directed":true,"weight":1},
-        {"from":"밧세바","to":"솔로몬","label":"어머니","kind":"family","directed":true,"weight":2}
+        {"from":"다윗","to":"솔로몬","label":"당부한 아버지","kind":"family","directed":true,"weight":3,"verses":"1-4","note":"죽음이 가까운 다윗이 솔로몬에게 대장부가 되어 하나님의 길로 행하고 율법을 지키라고 당부했어요."},
+        {"from":"아도니야","to":"솔로몬","label":"왕위 노린 형","kind":"conflict","directed":true,"weight":2,"verses":"13-25","note":"아도니야가 밧세바를 통해 다윗의 시중들던 아비삭을 달라 하자, 솔로몬은 왕위를 노리는 것이라며 그를 죽였어요."},
+        {"from":"브나야","to":"솔로몬","label":"명을 따른 장수","kind":"ally","directed":true,"weight":2,"verses":"25, 34, 46","note":"브나야가 솔로몬의 명령에 따라 아도니야와 요압과 시므이를 처단했어요."},
+        {"from":"솔로몬","to":"요압","label":"처단한 왕","kind":"conflict","directed":true,"weight":2,"verses":"28-34","note":"요압이 제단 뿔을 잡고 버텼지만 솔로몬은 무고한 피를 흘린 죄를 물어 그를 처단하게 했어요."},
+        {"from":"솔로몬","to":"시므이","label":"맹세 지키게 한 왕","kind":"conflict","directed":true,"weight":2,"verses":"36-46","note":"솔로몬이 시므이에게 예루살렘을 떠나지 말라 맹세하게 했는데, 시므이가 어기자 처형했어요."},
+        {"from":"솔로몬","to":"아비아달","label":"쫓아낸 왕","kind":"conflict","directed":true,"weight":1,"verses":"26-27","note":"솔로몬이 아비아달을 아나돗으로 쫓아내 제사장 직분에서 물러나게 했어요."},
+        {"from":"밧세바","to":"솔로몬","label":"어머니","kind":"family","directed":true,"weight":2,"verses":"19-20","note":"밧세바가 들어오자 솔로몬이 일어나 절하고 어머니를 오른편 자리에 앉혔어요."}
       ],
       "places": [
         {"name":"아나돗","where":"예루살렘 북동쪽 약 5km 제사장 마을","what":"쫓겨난 아비아달이 돌아간 고향","weight":2},
@@ -96,9 +96,9 @@
         {"name":"바로의 딸","role":"솔로몬과 혼인한 애굽 공주","weight":1}
       ],
       "rels": [
-        {"from":"솔로몬","to":"하나님","label":"지혜를 구한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"솔로몬","to":"두 여인","label":"재판한 왕","kind":"other","directed":true,"weight":2},
-        {"from":"바로의 딸","to":"솔로몬","label":"아내","kind":"family","directed":true,"weight":1}
+        {"from":"솔로몬","to":"하나님","label":"지혜를 구한 왕","kind":"ally","directed":true,"weight":3,"verses":"5-12","note":"기브온에서 하나님이 무엇을 줄까 물으시자 솔로몬이 백성을 재판할 듣는 마음을 구했고 하나님이 기뻐하셨어요."},
+        {"from":"솔로몬","to":"두 여인","label":"재판한 왕","kind":"other","directed":true,"weight":2,"verses":"16-27","note":"두 여인이 한 아기를 두고 다투자 솔로몬이 아이를 나누라 했고, 아이를 살려 달라는 여인을 진짜 어머니로 판결했어요."},
+        {"from":"바로의 딸","to":"솔로몬","label":"아내","kind":"family","directed":true,"weight":1,"verses":"1","note":"솔로몬이 애굽 왕 바로와 혼인 관계를 맺고 그 딸을 아내로 맞았어요."}
       ],
       "places": [
         {"name":"기브온","where":"예루살렘 북서쪽 약 10km","what":"일천 번제를 드리고 꿈에 지혜를 받은 곳","weight":3},
@@ -125,9 +125,9 @@
         {"name":"열두 관장","role":"한 달씩 왕궁 양식을 맡은 이들","weight":2}
       ],
       "rels": [
-        {"from":"열두 관장","to":"솔로몬","label":"양식 댄 관리","kind":"ally","directed":true,"weight":2},
-        {"from":"브나야","to":"솔로몬","label":"군대 장관","kind":"ally","directed":true,"weight":1},
-        {"from":"솔로몬","to":"하나님","label":"지혜를 받은 왕","kind":"ally","directed":true,"weight":2}
+        {"from":"열두 관장","to":"솔로몬","label":"양식 댄 관리","kind":"ally","directed":true,"weight":2,"verses":"7","note":"솔로몬이 온 이스라엘에 관장 열둘을 두어 각각 한 달씩 왕실의 양식을 대게 했어요."},
+        {"from":"브나야","to":"솔로몬","label":"군대 장관","kind":"ally","directed":true,"weight":1,"verses":"4","note":"여호야다의 아들 브나야가 솔로몬의 군대 장관이었어요."},
+        {"from":"솔로몬","to":"하나님","label":"지혜를 받은 왕","kind":"ally","directed":true,"weight":2,"verses":"29-34","note":"하나님이 솔로몬에게 바닷가 모래처럼 넓은 지혜와 총명을 주셔서 잠언 삼천 개와 노래 천다섯 편을 지었어요."}
       ],
       "places": [
         {"name":"단에서 브엘세바까지","where":"이스라엘 북쪽 끝부터 남쪽 끝까지","what":"온 백성이 평안히 산 땅","weight":2},
@@ -150,9 +150,9 @@
         {"name":"다윗","role":"전쟁 때문에 성전을 못 지은 아버지","weight":1}
       ],
       "rels": [
-        {"from":"히람","to":"솔로몬","label":"조약 맺은 왕","kind":"ally","directed":false,"weight":3},
-        {"from":"히람","to":"다윗","label":"오랜 벗","kind":"ally","directed":true,"weight":1},
-        {"from":"아도니람","to":"솔로몬","label":"역군 감독","kind":"ally","directed":true,"weight":1}
+        {"from":"히람","to":"솔로몬","label":"조약 맺은 왕","kind":"ally","directed":false,"weight":3,"verses":"8-12","note":"두로 왕 히람이 솔로몬의 청을 기뻐하며 백향목과 잣나무를 보내 주고 둘이 조약을 맺었어요."},
+        {"from":"히람","to":"다윗","label":"오랜 벗","kind":"ally","directed":true,"weight":1,"verses":"1","note":"히람은 평생 다윗을 사랑한 친구여서 솔로몬이 왕이 되자 신하를 보냈어요."},
+        {"from":"아도니람","to":"솔로몬","label":"역군 감독","kind":"ally","directed":true,"weight":1,"verses":"14","note":"아도니람이 레바논에 번갈아 보내는 역군 삼만 명을 감독했어요."}
       ],
       "places": [
         {"name":"두로","where":"지중해 해안의 페니키아 항구 도시","what":"나무를 보낸 히람 왕의 나라","weight":2},
@@ -174,7 +174,7 @@
         {"name":"하나님","role":"백성 가운데 거하겠다 약속하심","weight":3}
       ],
       "rels": [
-        {"from":"솔로몬","to":"하나님","label":"성전 지은 왕","kind":"ally","directed":true,"weight":3}
+        {"from":"솔로몬","to":"하나님","label":"성전 지은 왕","kind":"ally","directed":true,"weight":3,"verses":"11-14, 38","note":"솔로몬이 성전을 칠 년 만에 완성했고, 하나님은 내 법도를 지키면 이스라엘 가운데 거하겠다고 하셨어요."}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"모리아산 위 하나님의 집","what":"칠 년에 걸쳐 지어진 곳","weight":3},
@@ -198,9 +198,9 @@
         {"name":"다윗","role":"성전에 쓸 물건을 드린 아버지","weight":1}
       ],
       "rels": [
-        {"from":"히람(놋 장인)","to":"솔로몬","label":"불러온 장인","kind":"ally","directed":true,"weight":3},
-        {"from":"바로의 딸","to":"솔로몬","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"솔로몬","to":"다윗","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"히람(놋 장인)","to":"솔로몬","label":"불러온 장인","kind":"ally","directed":true,"weight":3,"verses":"13-14","note":"솔로몬이 두로에서 놋 쇠 일에 지혜롭고 총명한 장인 히람을 불러와 성전 기구를 만들게 했어요."},
+        {"from":"바로의 딸","to":"솔로몬","label":"아내","kind":"family","directed":true,"weight":1,"verses":"8","note":"솔로몬은 아내로 맞은 바로의 딸을 위해서도 궁 같은 집을 지었어요."},
+        {"from":"솔로몬","to":"다윗","label":"아들","kind":"family","directed":true,"weight":1,"verses":"51","note":"솔로몬이 아버지 다윗이 바친 은과 금과 기구들을 성전 곳간에 두었어요."}
       ],
       "places": [
         {"name":"레바논 나무 궁","where":"예루살렘 왕궁의 큰 건물","what":"백향목 기둥이 늘어선 솔로몬의 궁","weight":2},
@@ -227,9 +227,9 @@
         {"name":"다윗","role":"성전을 마음에 품었던 아버지","weight":1}
       ],
       "rels": [
-        {"from":"솔로몬","to":"하나님","label":"기도한 왕","kind":"ally","directed":true,"weight":3},
-        {"from":"솔로몬","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"제사장들","to":"솔로몬","label":"궤를 멘 이들","kind":"ally","directed":true,"weight":1}
+        {"from":"솔로몬","to":"하나님","label":"기도한 왕","kind":"ally","directed":true,"weight":3,"verses":"22-30","note":"솔로몬이 제단 앞에서 손을 펴고 이 성전을 향해 기도하는 자의 기도를 들으시고 사하여 주시기를 구했어요."},
+        {"from":"솔로몬","to":"이스라엘 자손","label":"축복한 왕","kind":"ally","directed":true,"weight":2,"verses":"14, 55-56","note":"솔로몬이 일어나 온 회중을 축복하며 약속을 하나도 어기지 않으신 하나님을 찬송했어요."},
+        {"from":"제사장들","to":"솔로몬","label":"궤를 멘 이들","kind":"ally","directed":true,"weight":1,"verses":"6-11","note":"제사장들이 언약궤를 지성소에 들이자 구름이 성전에 가득하여 섬기지 못할 정도였어요."}
       ],
       "places": [
         {"name":"지성소","where":"성전 가장 안쪽 방","what":"언약궤를 그룹 날개 아래 모신 곳","weight":3},
@@ -255,9 +255,9 @@
         {"name":"바로의 딸","role":"새 궁으로 옮긴 왕비","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"솔로몬","label":"경고하신 하나님","kind":"ally","directed":true,"weight":3},
-        {"from":"히람","to":"솔로몬","label":"교역한 왕","kind":"ally","directed":false,"weight":2},
-        {"from":"바로","to":"솔로몬","label":"장인","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"솔로몬","label":"경고하신 하나님","kind":"ally","directed":true,"weight":3,"verses":"3-9","note":"하나님이 두 번째 나타나 네가 바르게 행하면 왕위를 견고하게 하겠지만 다른 신을 섬기면 성전도 버리리라고 경고하셨어요."},
+        {"from":"히람","to":"솔로몬","label":"교역한 왕","kind":"ally","directed":false,"weight":2,"verses":"11-14, 27","note":"솔로몬이 히람에게 갈릴리 성읍 스무 개를 주었고, 히람은 배와 선원을 보내 함께 교역했어요."},
+        {"from":"바로","to":"솔로몬","label":"장인","kind":"family","directed":true,"weight":1,"verses":"16","note":"바로가 게셀을 점령해 딸의 혼인 선물로 솔로몬에게 주었어요."}
       ],
       "places": [
         {"name":"가불","where":"갈릴리 서쪽 성읍들","what":"히람이 시시하다 여긴 땅","weight":2},
@@ -283,9 +283,9 @@
         {"name":"하나님","role":"솔로몬을 세우신 분","weight":2}
       ],
       "rels": [
-        {"from":"스바 여왕","to":"솔로몬","label":"시험하러 온 손님","kind":"other","directed":true,"weight":3},
-        {"from":"스바 여왕","to":"하나님","label":"찬송한 여왕","kind":"other","directed":true,"weight":2},
-        {"from":"히람","to":"솔로몬","label":"무역한 왕","kind":"ally","directed":true,"weight":1}
+        {"from":"스바 여왕","to":"솔로몬","label":"시험하러 온 손님","kind":"other","directed":true,"weight":3,"verses":"1-7","note":"스바 여왕이 어려운 질문으로 시험하러 왔다가 솔로몬의 지혜와 궁전을 보고 들은 것보다 더하다며 감탄했어요."},
+        {"from":"스바 여왕","to":"하나님","label":"찬송한 여왕","kind":"other","directed":true,"weight":2,"verses":"9","note":"스바 여왕이 당신을 기뻐하셔서 이스라엘의 왕으로 세우신 하나님을 찬송한다고 했어요."},
+        {"from":"히람","to":"솔로몬","label":"무역한 왕","kind":"ally","directed":true,"weight":1,"verses":"11, 22","note":"히람의 배들이 오빌에서 금과 보석과 백단목을 실어 왔어요."}
       ],
       "places": [
         {"name":"스바","where":"아라비아 남쪽 향품의 나라","what":"금과 향품을 싣고 여왕이 온 곳","weight":3},
@@ -318,14 +318,14 @@
         {"name":"르호보암","role":"뒤를 이은 솔로몬의 아들","weight":1}
       ],
       "rels": [
-        {"from":"하나님","to":"솔로몬","label":"노하신 하나님","kind":"conflict","directed":true,"weight":3},
-        {"from":"아히야","to":"여로보암","label":"왕위 전한 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"솔로몬","to":"여로보암","label":"죽이려 한 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"하닷","to":"솔로몬","label":"대적","kind":"conflict","directed":true,"weight":2},
-        {"from":"르손","to":"솔로몬","label":"대적","kind":"conflict","directed":true,"weight":2},
-        {"from":"바로","to":"하닷","label":"품어 준 왕","kind":"ally","directed":true,"weight":1},
-        {"from":"시삭","to":"여로보암","label":"숨겨 준 왕","kind":"ally","directed":true,"weight":1},
-        {"from":"르호보암","to":"솔로몬","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"하나님","to":"솔로몬","label":"노하신 하나님","kind":"conflict","directed":true,"weight":3,"verses":"9-11","note":"솔로몬이 늙어 이방 아내들을 따라 다른 신을 섬기자 하나님이 노하셔서 나라를 빼앗아 신하에게 주겠다고 하셨어요."},
+        {"from":"아히야","to":"여로보암","label":"왕위 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"29-31","note":"선지자 아히야가 새 옷을 열두 조각으로 찢어 열 조각을 여로보암에게 주며 열 지파를 주시리라고 전했어요."},
+        {"from":"솔로몬","to":"여로보암","label":"죽이려 한 왕","kind":"conflict","directed":true,"weight":2,"verses":"40","note":"솔로몬이 여로보암을 죽이려 하자 여로보암은 애굽으로 도망했어요."},
+        {"from":"하닷","to":"솔로몬","label":"대적","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"하나님이 에돔 사람 하닷을 일으켜 솔로몬의 대적이 되게 하셨어요."},
+        {"from":"르손","to":"솔로몬","label":"대적","kind":"conflict","directed":true,"weight":2,"verses":"23-25","note":"르손은 다메섹에서 왕이 되어 솔로몬 평생에 이스라엘의 대적이었어요."},
+        {"from":"바로","to":"하닷","label":"품어 준 왕","kind":"ally","directed":true,"weight":1,"verses":"19-20","note":"하닷이 애굽으로 피하자 바로가 그를 크게 대접하고 처제를 아내로 주었어요."},
+        {"from":"시삭","to":"여로보암","label":"숨겨 준 왕","kind":"ally","directed":true,"weight":1,"verses":"40","note":"애굽 왕 시삭이 도망 온 여로보암을 솔로몬이 죽을 때까지 머물게 했어요."},
+        {"from":"르호보암","to":"솔로몬","label":"아들","kind":"family","directed":true,"weight":1,"verses":"43","note":"솔로몬이 죽자 그의 아들 르호보암이 뒤를 이어 왕이 되었어요."}
       ],
       "places": [
         {"name":"실로","where":"예루살렘 북쪽 에브라임 땅","what":"아히야 선지자의 고향","weight":1},
@@ -355,12 +355,12 @@
         {"name":"하나님","role":"이 일이 내게서 났다 하심","weight":1}
       ],
       "rels": [
-        {"from":"르호보암","to":"여로보암","label":"갈라선 두 왕","kind":"conflict","directed":false,"weight":3},
-        {"from":"노인들","to":"르호보암","label":"조언한 원로","kind":"ally","directed":true,"weight":2},
-        {"from":"젊은이들","to":"르호보암","label":"부추긴 친구","kind":"other","directed":true,"weight":2},
-        {"from":"이스라엘 자손","to":"르호보암","label":"떠난 백성","kind":"conflict","directed":true,"weight":2},
-        {"from":"스마야","to":"르호보암","label":"전쟁 막은 선지자","kind":"ally","directed":true,"weight":2},
-        {"from":"이스라엘 자손","to":"여로보암","label":"왕으로 세운 백성","kind":"ally","directed":true,"weight":2}
+        {"from":"르호보암","to":"여로보암","label":"갈라선 두 왕","kind":"conflict","directed":false,"weight":3,"verses":"16-20","note":"르호보암이 백성의 짐을 더 무겁게 하겠다 하자 열 지파가 떠나 여로보암을 왕으로 세워 나라가 둘로 갈라졌어요."},
+        {"from":"노인들","to":"르호보암","label":"조언한 원로","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"솔로몬을 섬기던 노인들이 백성을 섬기고 좋은 말로 대답하면 그들이 영원히 왕의 종이 되리라고 조언했어요."},
+        {"from":"젊은이들","to":"르호보암","label":"부추긴 친구","kind":"other","directed":true,"weight":2,"verses":"10-11","note":"함께 자란 젊은이들은 내 새끼손가락이 아버지 허리보다 굵다고 말하라며 르호보암을 부추겼어요."},
+        {"from":"이스라엘 자손","to":"르호보암","label":"떠난 백성","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"백성이 우리가 다윗과 무슨 상관이 있느냐며 장막으로 돌아가 르호보암을 떠났어요."},
+        {"from":"스마야","to":"르호보암","label":"전쟁 막은 선지자","kind":"ally","directed":true,"weight":2,"verses":"22-24","note":"르호보암이 북쪽과 싸우려 하자 하나님의 사람 스마야가 형제와 싸우지 말라는 말씀을 전해 전쟁을 막았어요."},
+        {"from":"이스라엘 자손","to":"여로보암","label":"왕으로 세운 백성","kind":"ally","directed":true,"weight":2,"verses":"20","note":"온 이스라엘이 여로보암이 돌아왔다는 말을 듣고 그를 불러 왕으로 삼았어요."}
       ],
       "places": [
         {"name":"세겜","where":"에브라임 산지 중앙 성읍","what":"르호보암이 백성과 만났다가 나라가 갈라진 곳","weight":3},
@@ -387,10 +387,10 @@
         {"name":"하나님","role":"명령을 어긴 것을 심판하심","weight":2}
       ],
       "rels": [
-        {"from":"하나님의 사람","to":"여로보암","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"늙은 선지자","to":"하나님의 사람","label":"속인 선지자","kind":"other","directed":true,"weight":3},
-        {"from":"하나님","to":"하나님의 사람","label":"보내신 하나님","kind":"ally","directed":true,"weight":2},
-        {"from":"늙은 선지자의 아들들","to":"늙은 선지자","label":"아들들","kind":"family","directed":true,"weight":1}
+        {"from":"하나님의 사람","to":"여로보암","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"1-5","note":"유다에서 온 하나님의 사람이 벧엘 제단을 향해 외치자, 그를 잡으라고 뻗은 여로보암의 손이 말랐어요."},
+        {"from":"늙은 선지자","to":"하나님의 사람","label":"속인 선지자","kind":"other","directed":true,"weight":3,"verses":"18-19","note":"벧엘의 늙은 선지자가 천사가 말했다고 거짓말을 해서 하나님의 사람을 자기 집으로 데려가 먹게 했어요."},
+        {"from":"하나님","to":"하나님의 사람","label":"보내신 하나님","kind":"ally","directed":true,"weight":2,"verses":"9, 21-24","note":"하나님은 그곳에서 먹지도 마시지도 말라 하셨는데 말씀을 어긴 하나님의 사람은 돌아가다 사자에게 죽었어요."},
+        {"from":"늙은 선지자의 아들들","to":"늙은 선지자","label":"아들들","kind":"family","directed":true,"weight":1,"verses":"11","note":"늙은 선지자의 아들들이 벧엘에서 하나님의 사람이 한 일을 아버지에게 전했어요."}
       ],
       "places": [
         {"name":"벧엘","where":"예루살렘 북쪽 약 18km","what":"제단이 갈라지고 늙은 선지자가 살던 곳","weight":3},
@@ -419,12 +419,12 @@
         {"name":"아비얌","role":"르호보암 뒤를 이은 아들","weight":1}
       ],
       "rels": [
-        {"from":"여로보암의 아내","to":"여로보암","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"아히야","to":"여로보암","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"아비야(여로보암의 아들)","to":"여로보암","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"시삭","to":"르호보암","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":2},
-        {"from":"르호보암","to":"여로보암","label":"늘 싸운 상대","kind":"conflict","directed":false,"weight":1},
-        {"from":"르호보암","to":"나아마","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"여로보암의 아내","to":"여로보암","label":"아내","kind":"family","directed":true,"weight":2,"verses":"2-4","note":"아들이 병들자 여로보암이 아내를 변장시켜 실로의 선지자 아히야에게 보냈어요."},
+        {"from":"아히야","to":"여로보암","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"7-11","note":"눈이 먼 아히야가 변장한 왕비를 알아보고 여로보암의 집에 재앙이 내리리라는 심판을 전했어요."},
+        {"from":"아비야(여로보암의 아들)","to":"여로보암","label":"아들","kind":"family","directed":true,"weight":2,"verses":"12-13, 17","note":"왕비가 집 문지방에 들어설 때 아들 아비야가 죽었어요. 여로보암 집에서 선한 것이 보인 아이였어요."},
+        {"from":"시삭","to":"르호보암","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":2,"verses":"25-26","note":"르호보암 오 년에 애굽 왕 시삭이 예루살렘을 쳐서 성전과 왕궁의 보물을 빼앗아 갔어요."},
+        {"from":"르호보암","to":"여로보암","label":"늘 싸운 상대","kind":"conflict","directed":false,"weight":1,"verses":"30","note":"르호보암과 여로보암 사이에는 평생 전쟁이 끊이지 않았어요."},
+        {"from":"르호보암","to":"나아마","label":"아들","kind":"family","directed":true,"weight":1,"verses":"21","note":"르호보암의 어머니는 암몬 사람 나아마예요."}
       ],
       "places": [
         {"name":"실로","where":"예루살렘 북쪽 에브라임 땅","what":"왕비가 아히야를 찾아간 곳","weight":2},
@@ -452,12 +452,12 @@
         {"name":"여호사밧","role":"아사 뒤를 이은 아들","weight":1}
       ],
       "rels": [
-        {"from":"아사","to":"바아사","label":"늘 싸운 상대","kind":"conflict","directed":false,"weight":3},
-        {"from":"아사","to":"마아가","label":"폐위시킨 손자","kind":"conflict","directed":true,"weight":2},
-        {"from":"벤하닷","to":"아사","label":"동맹한 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"바아사","to":"나답","label":"죽인 신하","kind":"conflict","directed":true,"weight":3},
-        {"from":"아사","to":"아비얌","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"여호사밧","to":"아사","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"아사","to":"바아사","label":"늘 싸운 상대","kind":"conflict","directed":false,"weight":3,"verses":"16","note":"아사와 이스라엘 왕 바아사 사이에는 평생 전쟁이 있었어요."},
+        {"from":"아사","to":"마아가","label":"폐위시킨 손자","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"아사는 할머니 마아가가 아세라 우상을 만들자 태후의 자리에서 폐위시켰어요."},
+        {"from":"벤하닷","to":"아사","label":"동맹한 왕","kind":"ally","directed":true,"weight":2,"verses":"18-20","note":"아사가 성전의 은금을 아람 왕 벤하닷에게 보내 동맹을 청했고, 벤하닷이 이스라엘을 쳤어요."},
+        {"from":"바아사","to":"나답","label":"죽인 신하","kind":"conflict","directed":true,"weight":3,"verses":"27-28","note":"바아사가 반역하여 여로보암의 아들 나답 왕을 깁브돈에서 죽이고 왕이 되었어요."},
+        {"from":"아사","to":"아비얌","label":"아들","kind":"family","directed":true,"weight":1,"verses":"8","note":"아비얌이 죽자 그의 아들 아사가 뒤를 이어 유다 왕이 되었어요."},
+        {"from":"여호사밧","to":"아사","label":"아들","kind":"family","directed":true,"weight":1,"verses":"24","note":"아사가 죽고 아들 여호사밧이 왕이 되었어요."}
       ],
       "places": [
         {"name":"라마","where":"예루살렘 북쪽 약 8km","what":"바아사가 성을 쌓아 유다 길을 막은 곳","weight":2},
@@ -489,14 +489,14 @@
         {"name":"히엘","role":"여리고를 다시 쌓은 벧엘 사람","weight":1}
       ],
       "rels": [
-        {"from":"시므리","to":"엘라","label":"죽인 신하","kind":"conflict","directed":true,"weight":3},
-        {"from":"오므리","to":"시므리","label":"쫓아낸 장관","kind":"conflict","directed":true,"weight":2},
-        {"from":"오므리","to":"디브니","label":"왕위 다툰 상대","kind":"conflict","directed":false,"weight":1},
-        {"from":"예후(하나니의 아들)","to":"바아사","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":3},
-        {"from":"아합","to":"오므리","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"이세벨","to":"엣바알","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"엘라","to":"바아사","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"시므리","to":"엘라","label":"죽인 신하","kind":"conflict","directed":true,"weight":3,"verses":"9-10","note":"병거 지휘관 시므리가 술 취한 엘라 왕을 죽이고 왕이 되었어요."},
+        {"from":"오므리","to":"시므리","label":"쫓아낸 장관","kind":"conflict","directed":true,"weight":2,"verses":"16-18","note":"군대가 오므리를 왕으로 세워 디르사를 에워싸자 시므리는 왕궁에 불을 놓고 죽었어요."},
+        {"from":"오므리","to":"디브니","label":"왕위 다툰 상대","kind":"conflict","directed":false,"weight":1,"verses":"21-22","note":"백성이 둘로 나뉘어 디브니를 따르는 무리와 오므리를 따르는 무리가 다투었고 오므리가 이겼어요."},
+        {"from":"예후(하나니의 아들)","to":"바아사","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"1-4","note":"선지자 예후가 바아사에게 여로보암의 길로 행했으니 네 집도 여로보암 집처럼 되리라는 심판을 전했어요."},
+        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":3,"verses":"31","note":"아합이 시돈 왕 엣바알의 딸 이세벨을 아내로 맞고 바알을 섬겼어요."},
+        {"from":"아합","to":"오므리","label":"아들","kind":"family","directed":true,"weight":2,"verses":"28-30","note":"오므리의 아들 아합이 왕이 되어 이전 모든 왕보다 더 악을 행했어요."},
+        {"from":"이세벨","to":"엣바알","label":"딸","kind":"family","directed":true,"weight":1,"verses":"31","note":"이세벨은 시돈 사람의 왕 엣바알의 딸이에요."},
+        {"from":"엘라","to":"바아사","label":"아들","kind":"family","directed":true,"weight":1,"verses":"6, 8","note":"바아사가 죽고 아들 엘라가 왕이 되었어요."}
       ],
       "places": [
         {"name":"디르사","where":"세겜 북동쪽, 이스라엘의 옛 도성","what":"엘라가 죽고 시므리가 불타 죽은 곳","weight":2},
@@ -522,11 +522,11 @@
         {"name":"하나님","role":"까마귀와 과부로 먹이심","weight":2}
       ],
       "rels": [
-        {"from":"엘리야","to":"아합","label":"가뭄 선포한 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"사르밧 과부","to":"엘리야","label":"먹여 준 과부","kind":"ally","directed":true,"weight":3},
-        {"from":"과부의 아들","to":"사르밧 과부","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"엘리야","to":"과부의 아들","label":"살려 낸 선지자","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"엘리야","label":"먹이신 하나님","kind":"ally","directed":true,"weight":2}
+        {"from":"엘리야","to":"아합","label":"가뭄 선포한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"디셉 사람 엘리야가 아합에게 내 말이 없으면 몇 해 동안 비도 이슬도 없으리라고 선포했어요."},
+        {"from":"사르밧 과부","to":"엘리야","label":"먹여 준 과부","kind":"ally","directed":true,"weight":3,"verses":"12-16","note":"마지막 가루와 기름으로 먹고 죽으려던 과부가 엘리야를 먼저 대접하자 가루와 기름이 떨어지지 않았어요."},
+        {"from":"과부의 아들","to":"사르밧 과부","label":"아들","kind":"family","directed":true,"weight":2,"verses":"17","note":"그 후 과부의 아들이 병들어 숨이 끊어졌어요."},
+        {"from":"엘리야","to":"과부의 아들","label":"살려 낸 선지자","kind":"ally","directed":true,"weight":2,"verses":"19-23","note":"엘리야가 아이를 다락에 눕히고 세 번 몸을 펴서 엎드려 기도하자 아이가 살아났어요."},
+        {"from":"하나님","to":"엘리야","label":"먹이신 하나님","kind":"ally","directed":true,"weight":2,"verses":"4-6","note":"하나님이 그릿 시냇가에서 까마귀들에게 아침저녁으로 떡과 고기를 가져오게 해 엘리야를 먹이셨어요."}
       ],
       "places": [
         {"name":"그릿 시내","where":"요단 동쪽 골짜기 시내","what":"까마귀가 엘리야를 먹인 곳","weight":3},
@@ -556,13 +556,13 @@
         {"name":"엘리야의 사환","role":"구름을 보러 일곱 번 오른 아이","weight":1}
       ],
       "rels": [
-        {"from":"엘리야","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"엘리야","to":"바알의 선지자","label":"맞선 상대","kind":"conflict","directed":false,"weight":3},
-        {"from":"오바댜","to":"아합","label":"궁내대신","kind":"other","directed":true,"weight":2},
-        {"from":"오바댜","to":"엘리야","label":"만나 도운 이","kind":"ally","directed":true,"weight":2},
-        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":1},
-        {"from":"엘리야","to":"하나님","label":"기도한 종","kind":"ally","directed":true,"weight":2},
-        {"from":"엘리야","to":"이스라엘 백성","label":"돌이키게 한 선지자","kind":"ally","directed":true,"weight":2}
+        {"from":"엘리야","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"17-18","note":"아합이 너가 이스라엘을 괴롭게 하는 자냐 하자, 엘리야는 바알을 따른 왕과 왕의 집이 괴롭게 했다고 맞섰어요."},
+        {"from":"엘리야","to":"바알의 선지자","label":"맞선 상대","kind":"conflict","directed":false,"weight":3,"verses":"22-29","note":"엘리야가 갈멜산에서 바알 선지자 사백오십 명에게 불로 응답하는 신이 참 하나님이라며 대결을 청했어요."},
+        {"from":"오바댜","to":"아합","label":"궁내대신","kind":"other","directed":true,"weight":2,"verses":"3","note":"오바댜는 아합의 왕궁을 맡은 신하였지만 하나님을 크게 경외했어요."},
+        {"from":"오바댜","to":"엘리야","label":"만나 도운 이","kind":"ally","directed":true,"weight":2,"verses":"4, 7-16","note":"오바댜는 이세벨이 선지자들을 죽일 때 백 명을 굴에 숨겨 먹였고, 엘리야를 만나 아합에게 알렸어요."},
+        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":1,"verses":"4, 19","note":"아합의 아내 이세벨은 하나님의 선지자들을 죽이고 바알 선지자들을 자기 상에서 먹였어요."},
+        {"from":"엘리야","to":"하나님","label":"기도한 종","kind":"ally","directed":true,"weight":2,"verses":"36-38","note":"엘리야가 주께서 하나님이심을 알게 해 달라고 기도하자 하늘에서 불이 내려 제물과 물까지 태웠어요."},
+        {"from":"엘리야","to":"이스라엘 백성","label":"돌이키게 한 선지자","kind":"ally","directed":true,"weight":2,"verses":"21, 39","note":"엘리야가 언제까지 둘 사이에서 머뭇거리겠느냐고 외쳤고, 불을 본 백성이 여호와는 하나님이시라고 엎드렸어요."}
       ],
       "places": [
         {"name":"갈멜산","where":"지중해 가까이 뻗은 이스라엘 북부 산줄기","what":"불로 응답하신 대결과 비를 구한 기도의 자리","weight":3},
@@ -591,11 +591,11 @@
         {"name":"예후(님시의 아들)","role":"이스라엘 왕으로 기름 부을 사람","weight":1}
       ],
       "rels": [
-        {"from":"이세벨","to":"엘리야","label":"죽이려 한 왕비","kind":"conflict","directed":true,"weight":3},
-        {"from":"천사","to":"엘리야","label":"먹여 준 천사","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"엘리야","label":"다시 보내신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"엘리사","to":"엘리야","label":"따른 제자","kind":"ally","directed":true,"weight":3},
-        {"from":"아합","to":"이세벨","label":"남편","kind":"family","directed":true,"weight":1}
+        {"from":"이세벨","to":"엘리야","label":"죽이려 한 왕비","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"이세벨이 내일 이맘때 네 목숨을 선지자들처럼 하겠다고 사람을 보내자 엘리야가 두려워 도망했어요."},
+        {"from":"천사","to":"엘리야","label":"먹여 준 천사","kind":"ally","directed":true,"weight":2,"verses":"5-8","note":"로뎀나무 아래 죽기를 구하며 잠든 엘리야를 천사가 깨워 떡과 물을 먹이고 일어나 먹으라고 했어요."},
+        {"from":"하나님","to":"엘리야","label":"다시 보내신 분","kind":"ally","directed":true,"weight":3,"verses":"11-18","note":"호렙산에서 하나님이 세미한 소리로 엘리야를 만나시고 하사엘과 예후와 엘리사에게 기름 부으라며 다시 보내셨어요."},
+        {"from":"엘리사","to":"엘리야","label":"따른 제자","kind":"ally","directed":true,"weight":3,"verses":"19-21","note":"엘리야가 밭 갈던 엘리사에게 겉옷을 던지자, 엘리사가 소를 잡아 대접하고 일어나 엘리야를 따랐어요."},
+        {"from":"아합","to":"이세벨","label":"남편","kind":"family","directed":true,"weight":1,"verses":"1","note":"아합이 엘리야가 한 모든 일과 선지자들을 죽인 일을 아내 이세벨에게 말했어요."}
       ],
       "places": [
         {"name":"브엘세바","where":"유다 남쪽 끝 성읍","what":"엘리야가 사환을 두고 광야로 간 곳","weight":1},
@@ -624,11 +624,11 @@
         {"name":"하나님","role":"평지에서도 이기게 하심","weight":2}
       ],
       "rels": [
-        {"from":"벤하닷","to":"아합","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"한 선지자","to":"아합","label":"승리 알린 선지자","kind":"ally","directed":true,"weight":2},
-        {"from":"아합","to":"벤하닷","label":"살려 준 왕","kind":"other","directed":true,"weight":3},
-        {"from":"선지자의 무리 중 한 사람","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"지방 고관의 청년들","to":"아합","label":"앞장선 군사","kind":"ally","directed":true,"weight":1}
+        {"from":"벤하닷","to":"아합","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":3,"verses":"1-6","note":"아람 왕 벤하닷이 사마리아를 포위하고 은금과 처자와 귀한 것을 다 내놓으라고 했어요."},
+        {"from":"한 선지자","to":"아합","label":"승리 알린 선지자","kind":"ally","directed":true,"weight":2,"verses":"13-14, 28","note":"한 선지자가 아합에게 와서 하나님이 이 큰 무리를 네 손에 넘기시리라고 승리를 알렸어요."},
+        {"from":"아합","to":"벤하닷","label":"살려 준 왕","kind":"other","directed":true,"weight":3,"verses":"32-34","note":"패한 벤하닷이 목숨을 구걸하자 아합은 그는 내 형제라며 조약을 맺고 살려 보냈어요."},
+        {"from":"선지자의 무리 중 한 사람","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":2,"verses":"38-42","note":"한 선지자가 변장하고 와서 아합이 멸할 자를 놓아주었으니 네 목숨으로 대신하리라고 책망했어요."},
+        {"from":"지방 고관의 청년들","to":"아합","label":"앞장선 군사","kind":"ally","directed":true,"weight":1,"verses":"15-20","note":"지방 고관들의 청년 이백삼십이 명이 앞장서 나가 아람 군대를 쳤어요."}
       ],
       "places": [
         {"name":"사마리아","where":"이스라엘의 도성","what":"벤하닷이 에워싼 곳","weight":2},
@@ -655,12 +655,12 @@
         {"name":"하나님","role":"겸비한 아합에게 재앙을 미루심","weight":2}
       ],
       "rels": [
-        {"from":"아합","to":"나봇","label":"포도원 탐낸 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"이세벨","to":"나봇","label":"죽음에 몬 왕비","kind":"conflict","directed":true,"weight":3},
-        {"from":"엘리야","to":"아합","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":2},
-        {"from":"불량자 둘","to":"나봇","label":"거짓 증인","kind":"conflict","directed":true,"weight":2},
-        {"from":"이스르엘 장로들","to":"이세벨","label":"명을 따른 이들","kind":"other","directed":true,"weight":1}
+        {"from":"아합","to":"나봇","label":"포도원 탐낸 왕","kind":"conflict","directed":true,"weight":3,"verses":"1-4","note":"아합이 나봇의 포도원을 달라 했지만 나봇이 조상의 유산을 줄 수 없다 하자 아합이 근심하며 누웠어요."},
+        {"from":"이세벨","to":"나봇","label":"죽음에 몬 왕비","kind":"conflict","directed":true,"weight":3,"verses":"7-14","note":"이세벨이 아합의 이름으로 편지를 써서 거짓 증인을 세워 나봇을 돌로 쳐 죽게 했어요."},
+        {"from":"엘리야","to":"아합","label":"심판 전한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"17-24","note":"엘리야가 포도원에 내려간 아합에게 개들이 나봇의 피를 핥던 곳에서 네 피도 핥으리라고 전했어요."},
+        {"from":"이세벨","to":"아합","label":"아내","kind":"family","directed":true,"weight":2,"verses":"5-7","note":"이세벨이 근심하는 아합에게 왕이 이스라엘을 다스리지 않느냐며 내가 포도원을 주겠다고 했어요."},
+        {"from":"불량자 둘","to":"나봇","label":"거짓 증인","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"불량자 두 사람이 나봇이 하나님과 왕을 저주했다고 거짓 증언했어요."},
+        {"from":"이스르엘 장로들","to":"이세벨","label":"명을 따른 이들","kind":"other","directed":true,"weight":1,"verses":"11","note":"이스르엘의 장로들은 이세벨의 편지대로 금식을 선포하고 나봇을 높은 자리에 앉혔다가 죽였어요."}
       ],
       "places": [
         {"name":"이스르엘","where":"갈멜산 동쪽, 아합의 별궁","what":"나봇의 포도원이 있던 곳","weight":3}
@@ -687,12 +687,12 @@
         {"name":"하나님","role":"거짓말하는 영을 허락하심","weight":2}
       ],
       "rels": [
-        {"from":"미가야","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"시드기야(그나아나의 아들)","to":"미가야","label":"뺨을 친 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"여호사밧","to":"아합","label":"동맹한 왕","kind":"ally","directed":false,"weight":3},
-        {"from":"사백 선지자","to":"아합","label":"듣기 좋은 예언","kind":"other","directed":true,"weight":2},
-        {"from":"아람 왕","to":"아합","label":"노린 적","kind":"conflict","directed":true,"weight":1},
-        {"from":"아하시야(아합의 아들)","to":"아합","label":"아들","kind":"family","directed":true,"weight":1}
+        {"from":"미가야","to":"아합","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"17-23","note":"미가야가 이스라엘이 목자 없는 양처럼 흩어졌다는 환상을 전하며 거짓 영이 선지자들의 입에 있다고 책망했어요."},
+        {"from":"시드기야(그나아나의 아들)","to":"미가야","label":"뺨을 친 선지자","kind":"conflict","directed":true,"weight":2,"verses":"24","note":"시드기야가 미가야의 뺨을 치며 여호와의 영이 나를 떠나 어디로 너에게 갔느냐고 했어요."},
+        {"from":"여호사밧","to":"아합","label":"동맹한 왕","kind":"ally","directed":false,"weight":3,"verses":"4-5","note":"유다 왕 여호사밧이 아합과 함께 길르앗 라못으로 싸우러 가겠다며 먼저 하나님께 물어보자고 했어요."},
+        {"from":"사백 선지자","to":"아합","label":"듣기 좋은 예언","kind":"other","directed":true,"weight":2,"verses":"6, 12","note":"선지자 사백 명이 올라가소서, 하나님이 그 성을 왕의 손에 넘기시리라고 듣기 좋은 말만 했어요."},
+        {"from":"아람 왕","to":"아합","label":"노린 적","kind":"conflict","directed":true,"weight":1,"verses":"31, 34-35","note":"아람 왕은 오직 이스라엘 왕과만 싸우라 했고, 한 사람이 무심코 쏜 화살이 변장한 아합의 갑옷 솔기를 맞혔어요."},
+        {"from":"아하시야(아합의 아들)","to":"아합","label":"아들","kind":"family","directed":true,"weight":1,"verses":"40","note":"아합이 죽자 그의 아들 아하시야가 뒤를 이어 왕이 되었어요."}
       ],
       "places": [
         {"name":"길르앗 라못","where":"요단 동쪽 길르앗의 성읍","what":"아합이 화살을 맞은 싸움터","weight":3},
