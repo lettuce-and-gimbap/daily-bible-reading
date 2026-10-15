@@ -24,10 +24,10 @@
         {"name":"하나님","role":"나라의 주인","weight":3}
       ],
       "rels": [
-        {"from":"에돔(에서)","to":"야곱 족속","label":"배신한 형제","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"에돔(에서)","label":"끌어내리실 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"야곱 족속","to":"에돔(에서)","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"하나님","to":"야곱 족속","label":"기업을 회복시키심","kind":"ally","directed":true,"weight":2}
+        {"from":"에돔(에서)","to":"야곱 족속","label":"배신한 형제","kind":"conflict","directed":true,"weight":3,"verses":"10-14","note":"네가 네 형제 야곱에게 행한 포학으로 부끄러움을 당하리라, 그들이 환난 당하는 날에 너는 방관하고 그 도망하는 자를 막았다고 해요."},
+        {"from":"하나님","to":"에돔(에서)","label":"끌어내리실 분","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"네가 독수리처럼 높이 오르며 별 사이에 깃들일지라도 내가 거기에서 끌어내리리라고 하셨어요."},
+        {"from":"야곱 족속","to":"에돔(에서)","label":"형제","kind":"family","directed":false,"weight":2,"verses":"10, 12","note":"에돔과 야곱은 형제지만 에돔은 형제의 날을 방관했어요."},
+        {"from":"하나님","to":"야곱 족속","label":"기업을 회복시키심","kind":"ally","directed":true,"weight":2,"verses":"17","note":"오직 시온 산에서 피할 자가 있으리니 야곱 족속은 자기 기업을 누릴 것이라고 해요."}
       ],
       "places": [
         {"name":"에돔","where":"사해 남동쪽 바위 산지","what":"교만하게 높이 산 나라","weight":3},

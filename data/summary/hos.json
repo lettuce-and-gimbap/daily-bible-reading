@@ -23,11 +23,11 @@
         {"name":"하나님","role":"떠난 백성을 사랑하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"고멜","to":"호세아","label":"아내","kind":"family","directed":true,"weight":3},
-        {"from":"이스르엘","to":"호세아","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"로루하마","to":"고멜","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"로암미","to":"고멜","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"하나님","to":"호세아","label":"명하신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"고멜","to":"호세아","label":"아내","kind":"family","directed":true,"weight":3,"verses":"2-3","note":"하나님이 호세아에게 음란한 여자를 맞이하라 하시니 그가 디블라임의 딸 고멜을 아내로 맞았어요."},
+        {"from":"이스르엘","to":"호세아","label":"아들","kind":"family","directed":true,"weight":2,"verses":"4","note":"하나님이 첫아들의 이름을 이스르엘이라 하라, 이스르엘의 피를 예후의 집에 갚으리라고 하셨어요."},
+        {"from":"로루하마","to":"고멜","label":"딸","kind":"family","directed":true,"weight":1,"verses":"6","note":"고멜이 딸을 낳자 이름을 로루하마라 하라, 내가 다시는 이스라엘을 긍휼히 여기지 않으리라고 하셨어요."},
+        {"from":"로암미","to":"고멜","label":"아들","kind":"family","directed":true,"weight":1,"verses":"8-9","note":"고멜이 아들을 낳자 이름을 로암미라 하라, 너희는 내 백성이 아니라고 하셨어요."},
+        {"from":"하나님","to":"호세아","label":"명하신 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"하나님이 호세아에게 가서 음란한 여자를 맞이하라, 이 나라가 여호와를 떠나 크게 음란함이라고 하셨어요."}
       ],
       "places": [
         {"name":"이스르엘","where":"북이스라엘의 골짜기","what":"예후가 피를 흘린 곳","weight":2}
@@ -51,14 +51,14 @@
         {"name":"하나님","role":"다시 장가 드실 남편","weight":3}
       ],
       "renames": [
-        {"from":"로암미","to":"암미","verses":"1","why":"회복을 약속하며"},
-        {"from":"로루하마","to":"루하마","verses":"1","why":"긍휼을 약속하며"}
+        {"from":"로암미","to":"암미","verses":"1","why":"회복을 약속하며","note":"하나님이 내 백성이 아니라던 로암미를 너는 내 백성이라는 암미로 부르겠다고 약속하셨어요."},
+        {"from":"로루하마","to":"루하마","verses":"1","why":"긍휼을 약속하며","note":"긍휼히 여김을 받지 못한다던 로루하마를 긍휼히 여김을 받는 루하마로 부르겠다고 하셨어요."}
       ],
       "rels": [
-        {"from":"이스라엘","to":"바알","label":"따라간 우상","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"이스라엘","label":"다시 맞을 남편","kind":"family","directed":true,"weight":3},
-        {"from":"이스라엘","to":"하나님","label":"떠난 아내","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"암미","label":"내 백성이라 하심","kind":"ally","directed":true,"weight":2}
+        {"from":"이스라엘","to":"바알","label":"따라간 우상","kind":"other","directed":true,"weight":2,"verses":"8, 13","note":"그는 곡식과 포도주를 준 이가 나인 줄을 알지 못하고 바알을 위해 쓰며 나를 잊어버렸다고 하셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"다시 맞을 남편","kind":"family","directed":true,"weight":3,"verses":"14, 19-20","note":"내가 그를 타일러 거친 들로 데리고 가서 말로 위로하고, 공의와 은총과 긍휼히 여김으로 네게 장가들리라고 하셨어요."},
+        {"from":"이스라엘","to":"하나님","label":"떠난 아내","kind":"conflict","directed":true,"weight":2,"verses":"2, 5","note":"그는 내 아내가 아니요 나는 그의 남편이 아니라, 그 어미가 나는 나를 사랑하는 자들을 따르리라 하였다고 하셨어요."},
+        {"from":"하나님","to":"암미","label":"내 백성이라 하심","kind":"ally","directed":true,"weight":2,"verses":"23","note":"내가 내 백성 아닌 자에게 향하여 이르기를 너는 내 백성이라 하리니 그들은 이르기를 주는 내 하나님이시라 하리라고 하셨어요."}
       ],
       "places": [
         {"name":"거친 들","where":"광야","what":"하나님이 다정히 말씀하실 곳","weight":2},
@@ -81,9 +81,9 @@
         {"name":"하나님","role":"끝까지 사랑하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"호세아","to":"고멜","label":"다시 사 온 남편","kind":"family","directed":true,"weight":3},
-        {"from":"하나님","to":"이스라엘 자손","label":"사랑하시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘 자손","to":"다윗","label":"찾을 왕","kind":"ally","directed":true,"weight":1}
+        {"from":"호세아","to":"고멜","label":"다시 사 온 남편","kind":"family","directed":true,"weight":3,"verses":"1-3","note":"하나님 말씀대로 호세아가 은 열다섯 개와 보리 한 호멜 반으로 그 여자를 다시 사 와서 함께 지내자고 했어요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"사랑하시는 분","kind":"ally","directed":true,"weight":3,"verses":"1","note":"이스라엘 자손이 다른 신을 섬길지라도 여호와가 그들을 사랑하는 것같이 너도 그 여자를 사랑하라고 하셨어요."},
+        {"from":"이스라엘 자손","to":"다윗","label":"찾을 왕","kind":"ally","directed":true,"weight":1,"verses":"5","note":"그 후에 이스라엘 자손이 돌아와서 여호와와 그들의 왕 다윗을 찾고 마지막 날에 여호와의 은총을 받으리라고 해요."}
       ],
       "places": [
 
@@ -105,9 +105,9 @@
         {"name":"하나님","role":"백성과 논쟁하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 백성","label":"논쟁하시는 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"제사장","to":"이스라엘 백성","label":"죄를 바란 지도자","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"제사장","label":"버리실 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘 백성","label":"논쟁하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"여호와께서 이 땅 주민과 논쟁하시나니 이 땅에는 진실도 없고 인애도 없고 하나님을 아는 지식도 없다고 하셨어요."},
+        {"from":"제사장","to":"이스라엘 백성","label":"죄를 바란 지도자","kind":"conflict","directed":true,"weight":3,"verses":"6, 8","note":"내 백성이 지식이 없으므로 망하는도다, 제사장들은 내 백성의 속죄제물을 먹고 그들의 죄악을 바란다고 하셨어요."},
+        {"from":"하나님","to":"제사장","label":"버리실 분","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"네가 지식을 버렸으니 나도 너를 버려 내 제사장이 되지 못하게 하리라고 하셨어요."}
       ],
       "places": [
         {"name":"산꼭대기","where":"산당이 있는 곳","what":"백성이 제사한 곳","weight":1},
@@ -131,10 +131,10 @@
         {"name":"하나님","role":"사자처럼 찢고 기다리시는 분","weight":3}
       ],
       "rels": [
-        {"from":"에브라임","to":"야렙 왕","label":"도움 청한 나라","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"에브라임","label":"찢으시는 사자","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"유다","label":"찢으시는 사자","kind":"conflict","directed":true,"weight":2},
-        {"from":"제사장과 왕족","to":"에브라임","label":"올무가 된 지도자","kind":"conflict","directed":true,"weight":1}
+        {"from":"에브라임","to":"야렙 왕","label":"도움 청한 나라","kind":"other","directed":true,"weight":2,"verses":"13","note":"에브라임이 자기의 병을 깨달았을 때에 앗수르로 가서 야렙 왕에게 사람을 보냈지만 그가 고치지 못하리라고 해요."},
+        {"from":"하나님","to":"에브라임","label":"찢으시는 사자","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"내가 에브라임에게는 사자 같고 유다 족속에게는 젊은 사자 같으니 내가 찢고 갈지라고 하셨어요."},
+        {"from":"하나님","to":"유다","label":"찢으시는 사자","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"유다 족속에게도 젊은 사자 같아서 찢고 가리라고 하셨어요."},
+        {"from":"제사장과 왕족","to":"에브라임","label":"올무가 된 지도자","kind":"conflict","directed":true,"weight":1,"verses":"1","note":"제사장들아 왕족들아 너희가 미스바에 대하여 올무가 되었다고 하셨어요."}
       ],
       "places": [
         {"name":"미스바와 다볼","where":"북쪽 산지의 성소","what":"올무와 그물이 된 곳","weight":1},
@@ -158,9 +158,9 @@
         {"name":"하나님","role":"인애를 원하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘 백성","to":"하나님","label":"돌아가자 한 백성","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"에브라임","label":"안타까워하시는 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"에브라임","to":"하나님","label":"언약을 어긴 백성","kind":"conflict","directed":true,"weight":2}
+        {"from":"이스라엘 백성","to":"하나님","label":"돌아가자 한 백성","kind":"ally","directed":true,"weight":2,"verses":"1-3","note":"오라 우리가 여호와께로 돌아가자 그가 찢으셨으나 낫게 하실 것이요, 여호와를 알자 힘써 여호와를 알자 하고 말해요."},
+        {"from":"하나님","to":"에브라임","label":"안타까워하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"에브라임아 내가 너에게 어떻게 하랴, 너희의 인애가 아침 구름이나 쉬 없어지는 이슬 같다고 하셨어요."},
+        {"from":"에브라임","to":"하나님","label":"언약을 어긴 백성","kind":"conflict","directed":true,"weight":2,"verses":"6-7","note":"나는 인애를 원하고 제사를 원하지 아니하며, 그들은 아담처럼 언약을 어겼다고 하셨어요."}
       ],
       "places": [
         {"name":"길르앗","where":"요단 동쪽 땅","what":"피 묻은 고을","weight":1},
@@ -184,9 +184,9 @@
         {"name":"하나님","role":"속량하려 하신 분","weight":3}
       ],
       "rels": [
-        {"from":"에브라임","to":"애굽과 앗수르","label":"찾아간 나라","kind":"other","directed":true,"weight":3},
-        {"from":"에브라임","to":"하나님","label":"부르짖지 않은 백성","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"에브라임","label":"속량하려 하신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"에브라임","to":"애굽과 앗수르","label":"찾아간 나라","kind":"other","directed":true,"weight":3,"verses":"11","note":"에브라임은 어리석은 비둘기 같이 지혜가 없어서 애굽을 향해 부르짖으며 앗수르로 가는도다 하셨어요."},
+        {"from":"에브라임","to":"하나님","label":"부르짖지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"그들이 침상에서 슬피 부르짖으나 성심으로 나를 부르지 아니하였다고 하셨어요."},
+        {"from":"하나님","to":"에브라임","label":"속량하려 하신 분","kind":"ally","directed":true,"weight":2,"verses":"13","note":"내가 그들을 속량하려 하나 그들이 나를 거슬러 거짓을 말한다고 하셨어요."}
       ],
       "places": [
         {"name":"사마리아","where":"북이스라엘 도성","what":"악이 드러난 곳","weight":1},
@@ -211,9 +211,9 @@
         {"name":"하나님","role":"이스라엘을 지으신 분","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘","to":"하나님","label":"잊어버린 백성","kind":"conflict","directed":true,"weight":3},
-        {"from":"에브라임","to":"사마리아의 송아지","label":"만든 우상","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"이스라엘","label":"불을 보내실 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"이스라엘","to":"하나님","label":"잊어버린 백성","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"이스라엘은 자기를 지으신 이를 잊어버리고 왕궁들을 세웠다고 하셨어요."},
+        {"from":"에브라임","to":"사마리아의 송아지","label":"만든 우상","kind":"other","directed":true,"weight":2,"verses":"5-6","note":"사마리아여 네 송아지는 내버려졌느니라, 이것은 장인이 만든 것이라 신이 아니라고 하셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"불을 보내실 분","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"내가 그 성읍들에 불을 보내어 성들을 삼키게 하리라고 하셨어요."}
       ],
       "places": [
         {"name":"사마리아","where":"북이스라엘 도성","what":"송아지가 버려진 곳","weight":2},
@@ -238,10 +238,10 @@
         {"name":"하나님","role":"첫 열매처럼 보셨던 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"포도처럼 만나신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘","to":"바알","label":"몸을 바친 우상","kind":"other","directed":true,"weight":2},
-        {"from":"이스라엘","to":"선지자","label":"미쳤다 한 백성","kind":"conflict","directed":true,"weight":1},
-        {"from":"하나님","to":"에브라임","label":"영광을 거두실 분","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘","label":"포도처럼 만나신 분","kind":"ally","directed":true,"weight":3,"verses":"10","note":"옛적에 내가 이스라엘을 만나기를 광야에서 포도를 만남같이 하였다고 하셨어요."},
+        {"from":"이스라엘","to":"바알","label":"몸을 바친 우상","kind":"other","directed":true,"weight":2,"verses":"10","note":"그들이 바알브올에 가서 부끄러운 우상에게 몸을 바쳤다고 하셨어요."},
+        {"from":"이스라엘","to":"선지자","label":"미쳤다 한 백성","kind":"conflict","directed":true,"weight":1,"verses":"7","note":"이스라엘이 선지자를 어리석다 하며 신에 감동하는 자를 미쳤다 한다고 해요."},
+        {"from":"하나님","to":"에브라임","label":"영광을 거두실 분","kind":"conflict","directed":true,"weight":2,"verses":"11-12","note":"에브라임의 영광이 새같이 날아가리니 해산하는 것이나 임신하는 것이 없으리라고 하셨어요."}
       ],
       "places": [
         {"name":"바알브올","where":"모압 평지","what":"우상에게 몸을 바친 곳","weight":2},
@@ -268,10 +268,10 @@
         {"name":"하나님","role":"공의를 비처럼 내리실 분","weight":3}
       ],
       "rels": [
-        {"from":"이스라엘","to":"벧아웬의 송아지","label":"섬긴 우상","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"이스라엘","label":"공의를 심으라","kind":"ally","directed":true,"weight":3},
-        {"from":"야렙 왕","to":"벧아웬의 송아지","label":"예물로 받을 왕","kind":"other","directed":true,"weight":1},
-        {"from":"하나님","to":"에브라임","label":"멍에를 메우실 분","kind":"other","directed":true,"weight":2}
+        {"from":"이스라엘","to":"벧아웬의 송아지","label":"섬긴 우상","kind":"other","directed":true,"weight":2,"verses":"5","note":"사마리아 주민이 벧아웬의 송아지로 말미암아 두려워할 것이라고 해요."},
+        {"from":"하나님","to":"이스라엘","label":"공의를 심으라","kind":"ally","directed":true,"weight":3,"verses":"12","note":"너희가 자기를 위하여 공의를 심고 긍휼을 거두라, 지금이 곧 여호와를 찾을 때라고 하셨어요."},
+        {"from":"야렙 왕","to":"벧아웬의 송아지","label":"예물로 받을 왕","kind":"other","directed":true,"weight":1,"verses":"6","note":"그 송아지는 앗수르로 옮겨져서 예물로 야렙 왕에게 드리리라고 해요."},
+        {"from":"하나님","to":"에브라임","label":"멍에를 메우실 분","kind":"other","directed":true,"weight":2,"verses":"11","note":"에브라임은 길들인 암소처럼 타작하기를 좋아하나 내가 그 목에 멍에를 메우리라고 하셨어요."}
       ],
       "places": [
         {"name":"벧아웬(벧엘)","where":"송아지 우상의 성소","what":"송아지가 끌려갈 곳","weight":2},
@@ -296,10 +296,10 @@
         {"name":"하나님","role":"놓지 못하시는 아버지","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"사랑하신 아버지","kind":"family","directed":true,"weight":3},
-        {"from":"이스라엘","to":"바알","label":"섬긴 우상","kind":"other","directed":true,"weight":2},
-        {"from":"하나님","to":"에브라임","label":"놓지 못하시는 분","kind":"family","directed":true,"weight":3},
-        {"from":"앗수르","to":"이스라엘","label":"다스릴 나라","kind":"conflict","directed":true,"weight":1}
+        {"from":"하나님","to":"이스라엘","label":"사랑하신 아버지","kind":"family","directed":true,"weight":3,"verses":"1, 3-4","note":"이스라엘이 어렸을 때에 내가 사랑하여 애굽에서 내 아들을 불러냈고, 사랑의 줄로 이끌었다고 하셨어요."},
+        {"from":"이스라엘","to":"바알","label":"섬긴 우상","kind":"other","directed":true,"weight":2,"verses":"2","note":"선지자들이 이스라엘을 부를수록 그들이 점점 멀리하고 바알들에게 제사하였다고 하셨어요."},
+        {"from":"하나님","to":"에브라임","label":"놓지 못하시는 분","kind":"family","directed":true,"weight":3,"verses":"8-9","note":"에브라임이여 내가 어찌 너를 놓겠느냐, 내 마음이 내 속에서 돌이키어 나의 긍휼이 온전히 불붙듯 한다고 하셨어요."},
+        {"from":"앗수르","to":"이스라엘","label":"다스릴 나라","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"그들은 애굽 땅으로 되돌아가지 못하겠거늘 내게 돌아오기를 싫어하니 앗수르 사람이 그 임금이 될 것이라고 하셨어요."}
       ],
       "places": [
         {"name":"애굽","where":"남서쪽 나라","what":"아들을 불러내신 곳","weight":2},
@@ -325,10 +325,10 @@
         {"name":"하나님","role":"돌아오라 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"야곱","to":"에서","label":"쌍둥이 형제","kind":"family","directed":false,"weight":2},
-        {"from":"야곱","to":"천사","label":"겨룬 상대","kind":"other","directed":false,"weight":2},
-        {"from":"하나님","to":"에브라임","label":"돌아오라 하심","kind":"ally","directed":true,"weight":3},
-        {"from":"에브라임","to":"하나님","label":"격노케 한 백성","kind":"conflict","directed":true,"weight":2}
+        {"from":"야곱","to":"에서","label":"쌍둥이 형제","kind":"family","directed":false,"weight":2,"verses":"3","note":"야곱은 모태에서 그의 형의 발뒤꿈치를 잡았다고 해요."},
+        {"from":"야곱","to":"천사","label":"겨룬 상대","kind":"other","directed":false,"weight":2,"verses":"4","note":"야곱이 힘으로는 하나님과 겨루되 천사와 겨루어 이기고 울며 그에게 간구했다고 해요."},
+        {"from":"하나님","to":"에브라임","label":"돌아오라 하심","kind":"ally","directed":true,"weight":3,"verses":"6","note":"너의 하나님께로 돌아와서 인애와 정의를 지키며 항상 너의 하나님을 바랄지니라고 하셨어요."},
+        {"from":"에브라임","to":"하나님","label":"격노케 한 백성","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"에브라임이 격노하게 함이 극심하였으니 주께서 그의 피로 그 위에 머물러 있게 하시리라고 해요."}
       ],
       "places": [
         {"name":"벧엘","where":"야곱이 하나님을 만난 곳","what":"만남의 장소","weight":2},
@@ -352,10 +352,10 @@
         {"name":"하나님","role":"유일한 구원자","weight":3}
       ],
       "rels": [
-        {"from":"에브라임","to":"하나님","label":"잊어버린 백성","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"에브라임","label":"사자처럼 임하실 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"에브라임","label":"속량하실 분","kind":"ally","directed":true,"weight":2},
-        {"from":"사마리아","to":"하나님","label":"배반한 도성","kind":"conflict","directed":true,"weight":2}
+        {"from":"에브라임","to":"하나님","label":"잊어버린 백성","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"그들이 먹여 준 대로 배가 불렀고 배가 부르니 그들의 마음이 교만하여 이로 말미암아 나를 잊었느니라고 하셨어요."},
+        {"from":"하나님","to":"에브라임","label":"사자처럼 임하실 분","kind":"conflict","directed":true,"weight":3,"verses":"7-8","note":"그러므로 내가 그들에게 사자 같고 길가에서 기다리는 표범 같으며 새끼 잃은 곰같이 임하리라고 하셨어요."},
+        {"from":"하나님","to":"에브라임","label":"속량하실 분","kind":"ally","directed":true,"weight":2,"verses":"14","note":"내가 그들을 스올의 권세에서 속량하며 사망에서 구속하리니 사망아 네 재앙이 어디 있느냐고 하셨어요."},
+        {"from":"사마리아","to":"하나님","label":"배반한 도성","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"사마리아가 그들의 하나님을 배반하였으므로 형벌을 당하리라고 해요."}
       ],
       "places": [
         {"name":"광야","where":"출애굽의 메마른 땅","what":"백성을 먹이신 곳","weight":1},
@@ -379,10 +379,10 @@
         {"name":"하나님","role":"반역을 고치시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"돌아오라 부르심","kind":"ally","directed":true,"weight":3},
-        {"from":"이스라엘","to":"하나님","label":"돌아올 백성","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"에브라임","label":"열매를 주실 분","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"고아","label":"긍휼을 베푸심","kind":"ally","directed":true,"weight":1}
+        {"from":"하나님","to":"이스라엘","label":"돌아오라 부르심","kind":"ally","directed":true,"weight":3,"verses":"1","note":"이스라엘아 네 하나님 여호와께 돌아오라 네가 불의함으로 말미암아 엎드러졌느니라고 해요."},
+        {"from":"이스라엘","to":"하나님","label":"돌아올 백성","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"너는 말씀을 가지고 여호와께 돌아와서 모든 불의를 제거하시고 선한 바를 받으소서 하라고 해요."},
+        {"from":"하나님","to":"에브라임","label":"열매를 주실 분","kind":"ally","directed":true,"weight":2,"verses":"8","note":"에브라임의 말이 내가 다시 우상과 무슨 상관이 있으리요, 너는 나로 말미암아 열매를 얻으리라고 하셨어요."},
+        {"from":"하나님","to":"고아","label":"긍휼을 베푸심","kind":"ally","directed":true,"weight":1,"verses":"3","note":"고아가 주께로 말미암아 긍휼을 얻음이니이다 하고 고백해요."}
       ],
       "places": [
         {"name":"레바논","where":"백향목 산지","what":"이스라엘이 뿌리 내릴 모습","weight":2}

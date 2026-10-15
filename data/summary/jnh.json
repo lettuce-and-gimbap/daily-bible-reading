@@ -22,10 +22,10 @@
         {"name":"하나님","role":"바람과 큰 물고기를 보내심","weight":3}
       ],
       "rels": [
-        {"from":"요나","to":"하나님","label":"피해 도망친 종","kind":"conflict","directed":true,"weight":3},
-        {"from":"사공들","to":"요나","label":"바다에 던짐","kind":"other","directed":true,"weight":2},
-        {"from":"선장","to":"요나","label":"깨운 사람","kind":"other","directed":true,"weight":1},
-        {"from":"사공들","to":"하나님","label":"두려워한 이들","kind":"ally","directed":true,"weight":2}
+        {"from":"요나","to":"하나님","label":"피해 도망친 종","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"하나님이 니느웨로 가서 외치라 하셨지만 요나는 여호와의 얼굴을 피하려고 다시스로 가는 배를 탔어요."},
+        {"from":"사공들","to":"요나","label":"바다에 던짐","kind":"other","directed":true,"weight":2,"verses":"12-15","note":"요나가 나를 바다에 던지라 하자 사공들이 힘써 노를 젓다가 결국 요나를 들어 바다에 던지니 바다가 잔잔해졌어요."},
+        {"from":"선장","to":"요나","label":"깨운 사람","kind":"other","directed":true,"weight":1,"verses":"6","note":"선장이 배 밑층에서 자던 요나에게 자는 자여 어찌함이냐 일어나 네 하나님께 구하라고 했어요."},
+        {"from":"사공들","to":"하나님","label":"두려워한 이들","kind":"ally","directed":true,"weight":2,"verses":"14, 16","note":"사공들이 여호와를 크게 두려워하여 제물을 드리고 서원했어요."}
       ],
       "places": [
         {"name":"니느웨","where":"티그리스 강가, 앗수르의 큰 도시","what":"하나님이 가서 외치라 하신 악한 도시","weight":2},
@@ -49,9 +49,9 @@
         {"name":"하나님","role":"구원의 주","weight":3}
       ],
       "rels": [
-        {"from":"요나","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"요나","label":"건지신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"큰 물고기","label":"명하신 분","kind":"other","directed":true,"weight":1}
+        {"from":"요나","to":"하나님","label":"부르짖은 선지자","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"요나가 물고기 뱃속에서 하나님께 기도하며 내가 받는 고난 때문에 여호와께 불러 아뢰었더니 대답하셨다고 했어요."},
+        {"from":"하나님","to":"요나","label":"건지신 분","kind":"ally","directed":true,"weight":3,"verses":"6, 10","note":"주께서 내 생명을 구덩이에서 건지셨다 하였고, 여호와께서 물고기에게 말씀하시니 요나를 육지에 토해 냈어요."},
+        {"from":"하나님","to":"큰 물고기","label":"명하신 분","kind":"other","directed":true,"weight":1,"verses":"10","note":"여호와께서 큰 물고기를 예비하사 요나를 삼키게 하셨고 사흘 뒤 육지에 토해 내게 하셨어요."}
       ],
       "places": [
         {"name":"바다 깊은 곳","where":"산의 뿌리까지 내려간 깊음","what":"요나가 빠진 곳","weight":2},
@@ -74,10 +74,10 @@
         {"name":"하나님","role":"뜻을 돌이키신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"요나","label":"다시 보내신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"요나","to":"니느웨 사람들","label":"경고한 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"니느웨 왕","to":"니느웨 사람들","label":"금식을 명한 왕","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"니느웨 사람들","label":"재앙을 거두신 분","kind":"ally","directed":true,"weight":3}
+        {"from":"하나님","to":"요나","label":"다시 보내신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"여호와의 말씀이 두 번째로 요나에게 임하여 일어나 니느웨로 가서 내가 네게 명한 바를 선포하라 하셨어요."},
+        {"from":"요나","to":"니느웨 사람들","label":"경고한 선지자","kind":"ally","directed":true,"weight":3,"verses":"4","note":"요나가 성읍에 들어가며 사십 일이 지나면 니느웨가 무너지리라고 외쳤어요."},
+        {"from":"니느웨 왕","to":"니느웨 사람들","label":"금식을 명한 왕","kind":"ally","directed":true,"weight":2,"verses":"6-9","note":"니느웨 왕이 굵은 베옷을 입고 재 위에 앉아 사람과 짐승 모두 금식하고 악한 길에서 떠나라고 명했어요."},
+        {"from":"하나님","to":"니느웨 사람들","label":"재앙을 거두신 분","kind":"ally","directed":true,"weight":3,"verses":"10","note":"하나님이 그들이 악한 길에서 돌이켜 떠난 것을 보시고 뜻을 돌이켜 재앙을 내리지 아니하셨어요."}
       ],
       "places": [
         {"name":"니느웨","where":"티그리스 강가 앗수르의 큰 성","what":"온 성이 회개한 곳","weight":3}
@@ -99,10 +99,10 @@
         {"name":"하나님","role":"은혜롭고 자비로우신 분","weight":3}
       ],
       "rels": [
-        {"from":"요나","to":"하나님","label":"성낸 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"요나","label":"질문으로 가르침","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"니느웨 사람들","label":"아끼시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"요나","to":"니느웨 사람들","label":"멸망을 바란 이","kind":"conflict","directed":true,"weight":2}
+        {"from":"요나","to":"하나님","label":"성낸 선지자","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"요나가 매우 싫어하고 성내며 주는 은혜로우시고 자비로우신 줄 알았기에 도망했다, 내 생명을 거두어 달라고 했어요."},
+        {"from":"하나님","to":"요나","label":"질문으로 가르침","kind":"ally","directed":true,"weight":3,"verses":"4, 9-10","note":"하나님이 박넝쿨로 요나를 가르치시며 네가 이 박넝쿨을 아꼈거든 하고 물으셨어요."},
+        {"from":"하나님","to":"니느웨 사람들","label":"아끼시는 분","kind":"ally","directed":true,"weight":3,"verses":"11","note":"좌우를 분변하지 못하는 자가 십이만여 명이요 가축도 많은 이 큰 성읍 니느웨를 내가 어찌 아끼지 아니하겠느냐고 하셨어요."},
+        {"from":"요나","to":"니느웨 사람들","label":"멸망을 바란 이","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"요나는 성읍 동쪽에 초막을 짓고 그 성읍이 어떻게 되는지 보려고 앉아 있었어요."}
       ],
       "places": [
         {"name":"니느웨 동쪽","where":"성읍 밖 언덕","what":"요나가 초막을 지은 곳","weight":2}

@@ -24,9 +24,9 @@
         {"name":"하나님","role":"처소에서 나오시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"사마리아","label":"무더기로 만드실 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"미가","to":"유다 성읍들","label":"애곡한 선지자","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"미가","label":"말씀을 주신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"사마리아","label":"무더기로 만드실 분","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"내가 사마리아를 들의 무더기 같게 하고 포도 심을 동산 같게 하리라고 하셨어요."},
+        {"from":"미가","to":"유다 성읍들","label":"애곡한 선지자","kind":"ally","directed":true,"weight":2,"verses":"8","note":"이러므로 내가 애통하며 애곡하고 벌거벗은 몸으로 행하며 들개같이 애곡하리라고 해요."},
+        {"from":"하나님","to":"미가","label":"말씀을 주신 분","kind":"ally","directed":true,"weight":2,"verses":"1","note":"모레셋 사람 미가에게 임한 여호와의 말씀이라고 해요."}
       ],
       "places": [
         {"name":"사마리아","where":"북이스라엘 도성","what":"무더기가 될 곳","weight":3},
@@ -52,10 +52,10 @@
         {"name":"하나님","role":"선두로 가실 왕","weight":3}
       ],
       "rels": [
-        {"from":"탐욕스러운 자들","to":"부녀와 어린 자녀","label":"쫓아낸 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"탐욕스러운 자들","label":"재앙을 계획하심","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"야곱의 남은 자","label":"모으실 목자","kind":"ally","directed":true,"weight":3},
-        {"from":"거짓 선지자","to":"야곱의 남은 자","label":"속이는 자","kind":"conflict","directed":true,"weight":1}
+        {"from":"탐욕스러운 자들","to":"부녀와 어린 자녀","label":"쫓아낸 자","kind":"conflict","directed":true,"weight":3,"verses":"2, 9","note":"밭들을 탐하여 빼앗고 너희가 내 백성의 부녀들을 그들의 즐거운 집에서 쫓아냈다고 하셨어요."},
+        {"from":"하나님","to":"탐욕스러운 자들","label":"재앙을 계획하심","kind":"conflict","directed":true,"weight":3,"verses":"3","note":"내가 이 족속에게 재앙을 계획하나니 너희의 목이 이에서 벗어나지 못할 것이라고 하셨어요."},
+        {"from":"하나님","to":"야곱의 남은 자","label":"모으실 목자","kind":"ally","directed":true,"weight":3,"verses":"12","note":"야곱아 내가 반드시 너희 무리를 모으며 이스라엘의 남은 자를 모으고 양 떼같이 한 처소에 두리라고 하셨어요."},
+        {"from":"거짓 선지자","to":"야곱의 남은 자","label":"속이는 자","kind":"conflict","directed":true,"weight":1,"verses":"11","note":"사람이 거짓말로 포도주와 독주에 대해 예언하면 그가 이 백성의 선지자가 되리라고 꼬집으셨어요."}
       ],
       "places": [
         {"name":"보스라","where":"에돔의 양 치는 고장","what":"양 떼를 모으는 비유","weight":1}
@@ -80,10 +80,10 @@
         {"name":"하나님","role":"응답하지 않으실 분","weight":2}
       ],
       "rels": [
-        {"from":"야곱의 우두머리들","to":"백성","label":"착취한 지도자","kind":"conflict","directed":true,"weight":3},
-        {"from":"미가","to":"야곱의 우두머리들","label":"고발한 선지자","kind":"conflict","directed":true,"weight":3},
-        {"from":"거짓 선지자들","to":"백성","label":"속인 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"제사장들","to":"야곱의 우두머리들","label":"함께 부패함","kind":"ally","directed":false,"weight":1}
+        {"from":"야곱의 우두머리들","to":"백성","label":"착취한 지도자","kind":"conflict","directed":true,"weight":3,"verses":"2-3","note":"너희가 선을 미워하고 악을 기뻐하여 내 백성의 가죽을 벗기고 뼈에서 살을 뜯는다고 해요."},
+        {"from":"미가","to":"야곱의 우두머리들","label":"고발한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"나는 여호와의 영으로 말미암아 능력과 정의와 용기로 채움을 받고 야곱의 허물과 이스라엘의 죄를 그들에게 보이리라고 해요."},
+        {"from":"거짓 선지자들","to":"백성","label":"속인 자","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"내 백성을 유혹하는 선지자들은 이로 씹을 것이 있으면 평강을 외치나 그 입에 무엇을 채워 주지 아니하면 전쟁을 준비한다고 해요."},
+        {"from":"제사장들","to":"야곱의 우두머리들","label":"함께 부패함","kind":"ally","directed":false,"weight":1,"verses":"11","note":"그들의 우두머리는 뇌물을 위하여 재판하며 제사장은 삯을 위하여 교훈한다고 해요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"갈아엎은 밭이 될 곳","weight":3},
@@ -108,10 +108,10 @@
         {"name":"하나님","role":"시온에서 영원히 다스리실 분","weight":3}
       ],
       "rels": [
-        {"from":"민족들","to":"하나님","label":"배우러 올 민족","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"저는 자와 쫓겨난 자","label":"모으실 분","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"딸 시온","label":"바벨론에서 구원하심","kind":"ally","directed":true,"weight":3},
-        {"from":"많은 이방","to":"딸 시온","label":"더럽히려 한 나라","kind":"conflict","directed":true,"weight":2}
+        {"from":"민족들","to":"하나님","label":"배우러 올 민족","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"끝날에 많은 이방 사람들이 가며 이르기를 오라 우리가 여호와의 산에 올라가서 그의 길을 배우자 하리라고 해요."},
+        {"from":"하나님","to":"저는 자와 쫓겨난 자","label":"모으실 분","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"그날에는 내가 저는 자를 모으며 쫓겨난 자와 환난받게 한 자를 모아 남은 백성이 되게 하리라고 하셨어요."},
+        {"from":"하나님","to":"딸 시온","label":"바벨론에서 구원하심","kind":"ally","directed":true,"weight":3,"verses":"10","note":"딸 시온이여 해산하는 여인처럼 힘들여 낳을지어다, 네가 바벨론까지 이르러 거기서 구원을 얻으리라고 하셨어요."},
+        {"from":"많은 이방","to":"딸 시온","label":"더럽히려 한 나라","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"이제 많은 이방 사람들이 모여서 너를 쳐서 이르기를 시온이 더럽게 되기를 원한다 한다고 해요."}
       ],
       "places": [
         {"name":"여호와의 산","where":"시온","what":"만민이 모일 곳","weight":3},
@@ -136,9 +136,9 @@
         {"name":"하나님","role":"다스릴 자를 보내실 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"다스릴 자","label":"보내실 분","kind":"ally","directed":true,"weight":3},
-        {"from":"다스릴 자","to":"야곱의 남은 자","label":"먹이는 목자","kind":"ally","directed":true,"weight":3},
-        {"from":"앗수르","to":"야곱의 남은 자","label":"쳐들어올 나라","kind":"conflict","directed":true,"weight":1}
+        {"from":"하나님","to":"다스릴 자","label":"보내실 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"베들레헴 에브라다야 너는 유다 족속 중에 작을지라도 이스라엘을 다스릴 자가 네게서 내게로 나올 것이라고 하셨어요."},
+        {"from":"다스릴 자","to":"야곱의 남은 자","label":"먹이는 목자","kind":"ally","directed":true,"weight":3,"verses":"4","note":"그가 여호와의 능력과 그의 하나님 여호와의 이름의 위엄을 의지하고 서서 목축하리라고 해요."},
+        {"from":"앗수르","to":"야곱의 남은 자","label":"쳐들어올 나라","kind":"conflict","directed":true,"weight":1,"verses":"5-6","note":"앗수르 사람이 우리 땅에 들어와서 우리 궁들을 밟을 때 우리가 일곱 목자와 여덟 군왕을 일으켜 그를 치리라고 해요."}
       ],
       "places": [
         {"name":"베들레헴 에브라다","where":"예루살렘 남쪽 작은 마을","what":"다스릴 자가 나올 곳","weight":3},
@@ -163,10 +163,10 @@
         {"name":"하나님","role":"선한 것을 보이신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘 백성","label":"변론하시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"발락","to":"발람","label":"저주를 부탁한 왕","kind":"other","directed":true,"weight":1},
-        {"from":"하나님","to":"모세와 아론과 미리암","label":"보내신 분","kind":"ally","directed":true,"weight":1},
-        {"from":"부자들","to":"이스라엘 백성","label":"강포한 자","kind":"conflict","directed":true,"weight":2}
+        {"from":"하나님","to":"이스라엘 백성","label":"변론하시는 분","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"여호와께서 자기 백성과 변론하시며 내 백성아 내가 무엇을 행하였으며 무슨 일로 너를 괴롭게 하였느냐고 하셨어요."},
+        {"from":"발락","to":"발람","label":"저주를 부탁한 왕","kind":"other","directed":true,"weight":1,"verses":"5","note":"모압 왕 발락이 꾀한 것과 브올의 아들 발람이 그에게 대답한 것을 기억하라고 하셨어요."},
+        {"from":"하나님","to":"모세와 아론과 미리암","label":"보내신 분","kind":"ally","directed":true,"weight":1,"verses":"4","note":"내가 너를 애굽 땅에서 인도하여 종노릇 하는 집에서 속량하였고 모세와 아론과 미리암을 보내어 네 앞에 행하게 하였다고 하셨어요."},
+        {"from":"부자들","to":"이스라엘 백성","label":"강포한 자","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"그 부자들은 강포가 가득하였고 그 주민들은 거짓을 말하니 그 혀가 거짓되다고 하셨어요."}
       ],
       "places": [
         {"name":"싯딤에서 길갈까지","where":"요단 동쪽에서 서쪽으로 건넌 길","what":"공의를 기억할 여정","weight":1},
@@ -191,11 +191,11 @@
         {"name":"하나님","role":"죄를 바다에 던지시는 분","weight":3}
       ],
       "rels": [
-        {"from":"미가","to":"하나님","label":"우러러본 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"원수","to":"미가","label":"조롱한 대적","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"미가","label":"빛이 되실 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"아브라함과 야곱","label":"맹세하신 분","kind":"ally","directed":true,"weight":1},
-        {"from":"지도자와 재판관","to":"미가","label":"부패한 이웃","kind":"conflict","directed":true,"weight":1}
+        {"from":"미가","to":"하나님","label":"우러러본 선지자","kind":"ally","directed":true,"weight":3,"verses":"7","note":"오직 나는 여호와를 우러러보며 나를 구원하시는 하나님을 바라보나니 나의 하나님이 나에게 귀를 기울이시리라고 해요."},
+        {"from":"원수","to":"미가","label":"조롱한 대적","kind":"conflict","directed":true,"weight":2,"verses":"8, 10","note":"나의 대적이여 나로 말미암아 기뻐하지 말지어다 나는 엎드러질지라도 일어날 것이라고 해요."},
+        {"from":"하나님","to":"미가","label":"빛이 되실 분","kind":"ally","directed":true,"weight":3,"verses":"8","note":"어두운 데에 앉을지라도 여호와께서 나의 빛이 되실 것임이라고 해요."},
+        {"from":"하나님","to":"아브라함과 야곱","label":"맹세하신 분","kind":"ally","directed":true,"weight":1,"verses":"20","note":"주께서 옛적에 우리 조상들에게 맹세하신 대로 야곱에게 성실을 베푸시며 아브라함에게 인애를 더하시리이다 하고 해요."},
+        {"from":"지도자와 재판관","to":"미가","label":"부패한 이웃","kind":"conflict","directed":true,"weight":1,"verses":"3","note":"지도자와 재판관은 뇌물을 구하며 권세자는 자기 마음의 욕심을 말하며 그들이 서로 결합한다고 해요."}
       ],
       "places": [
         {"name":"깊은 바다","where":"가장 깊은 곳","what":"죄를 던지시는 곳","weight":2},

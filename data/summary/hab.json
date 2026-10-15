@@ -21,10 +21,10 @@
         {"name":"하나님","role":"놀라운 일을 행하실 분","weight":3}
       ],
       "rels": [
-        {"from":"하박국","to":"하나님","label":"따져 물은 선지자","kind":"other","directed":true,"weight":3},
-        {"from":"하나님","to":"갈대아 사람","label":"일으키실 분","kind":"other","directed":true,"weight":3},
-        {"from":"갈대아 사람","to":"유다의 악인","label":"삼킬 침략자","kind":"conflict","directed":true,"weight":2},
-        {"from":"유다의 악인","to":"하박국","label":"굽게 한 자","kind":"conflict","directed":true,"weight":1}
+        {"from":"하박국","to":"하나님","label":"따져 물은 선지자","kind":"other","directed":true,"weight":3,"verses":"2-3","note":"여호와여 내가 부르짖어도 주께서 듣지 아니하시니 어느 때까지리이까, 어찌하여 내게 죄악을 보게 하시나이까 하고 따져 물어요."},
+        {"from":"하나님","to":"갈대아 사람","label":"일으키실 분","kind":"other","directed":true,"weight":3,"verses":"5-6","note":"보라 내가 사납고 성급한 백성 곧 땅의 넓은 곳으로 다니며 거처를 점령하는 갈대아 사람을 일으켰나니 하셨어요."},
+        {"from":"갈대아 사람","to":"유다의 악인","label":"삼킬 침략자","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"어찌하여 악인이 자기보다 의로운 사람을 삼키는데도 잠잠하시나이까 하고 물어요."},
+        {"from":"유다의 악인","to":"하박국","label":"굽게 한 자","kind":"conflict","directed":true,"weight":1,"verses":"4","note":"율법이 해이하고 정의가 시행되지 못하니 이는 악인이 의인을 에워쌌으므로 정의가 굽게 행하여짐이라고 해요."}
       ],
       "places": [
         {"name":"유다","where":"강포가 가득한 땅","what":"정의가 굽은 곳","weight":2},
@@ -49,10 +49,10 @@
         {"name":"하나님","role":"성전에 계신 분","weight":3}
       ],
       "rels": [
-        {"from":"하박국","to":"하나님","label":"기다린 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"의인","label":"살게 하시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"교만한 자(갈대아)","label":"화를 선포하심","kind":"conflict","directed":true,"weight":3},
-        {"from":"교만한 자(갈대아)","to":"열방","label":"약탈한 자","kind":"conflict","directed":true,"weight":2}
+        {"from":"하박국","to":"하나님","label":"기다린 선지자","kind":"ally","directed":true,"weight":3,"verses":"1","note":"내가 내 파수하는 곳에 서며 성루에 서리라, 그가 내게 무엇이라 말씀하실는지 기다리며 바라보리라고 해요."},
+        {"from":"하나님","to":"의인","label":"살게 하시는 분","kind":"ally","directed":true,"weight":3,"verses":"3-4","note":"묵시는 정한 때가 있나니 비록 더딜지라도 기다리라, 의인은 그의 믿음으로 말미암아 살리라고 하셨어요."},
+        {"from":"하나님","to":"교만한 자(갈대아)","label":"화를 선포하심","kind":"conflict","directed":true,"weight":3,"verses":"6-8","note":"자기 소유 아닌 것을 모으는 자여 화 있을진저, 네가 여러 나라를 노략하였으므로 모든 민족의 남은 자가 너를 노략하리라고 하셨어요."},
+        {"from":"교만한 자(갈대아)","to":"열방","label":"약탈한 자","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"그가 여러 나라를 모으며 여러 백성을 모으나니 스올처럼 욕심을 넓히며 사망 같아서 족한 줄을 모른다고 해요."}
       ],
       "places": [
         {"name":"성루","where":"파수하는 곳","what":"하박국이 응답을 기다린 곳","weight":2},
@@ -76,10 +76,10 @@
         {"name":"하나님","role":"구원의 하나님, 나의 힘","weight":3}
       ],
       "rels": [
-        {"from":"하박국","to":"하나님","label":"즐거워하는 선지자","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"하나님의 백성","label":"구원하러 나오신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"하박국","label":"힘이 되시는 분","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"기름 부은 자","label":"구원하신 분","kind":"ally","directed":true,"weight":1}
+        {"from":"하박국","to":"하나님","label":"즐거워하는 선지자","kind":"ally","directed":true,"weight":3,"verses":"17-18","note":"비록 무화과나무가 무성하지 못하며 포도나무에 열매가 없을지라도 나는 여호와로 말미암아 즐거워하리라고 노래해요."},
+        {"from":"하나님","to":"하나님의 백성","label":"구원하러 나오신 분","kind":"ally","directed":true,"weight":3,"verses":"13","note":"주께서 주의 백성을 구원하시려고, 기름 부음받은 자를 구원하시려고 나오사 악인의 집의 머리를 치셨다고 해요."},
+        {"from":"하나님","to":"하박국","label":"힘이 되시는 분","kind":"ally","directed":true,"weight":3,"verses":"19","note":"주 여호와는 나의 힘이시라 나의 발을 사슴과 같게 하사 나를 나의 높은 곳으로 다니게 하시리로다 하고 해요."},
+        {"from":"하나님","to":"기름 부은 자","label":"구원하신 분","kind":"ally","directed":true,"weight":1,"verses":"13","note":"주께서 기름 부음받은 자를 구원하시려고 나오셨다고 해요."}
       ],
       "places": [
         {"name":"데만과 바란 산","where":"에돔과 시내 광야 쪽 산지","what":"하나님이 오시는 곳","weight":2},
