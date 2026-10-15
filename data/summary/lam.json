@@ -21,10 +21,10 @@
         {"name":"하나님","role":"의로우신 분","weight":3}
       ],
       "rels": [
-        {"from":"예루살렘(시온)","to":"하나님","label":"거역했던 성","kind":"conflict","directed":true,"weight":2},
-        {"from":"친구들","to":"예루살렘(시온)","label":"배반한 친구","kind":"conflict","directed":true,"weight":2},
-        {"from":"원수들","to":"예루살렘(시온)","label":"짓밟은 원수","kind":"conflict","directed":true,"weight":3},
-        {"from":"예루살렘(시온)","to":"하나님","label":"탄원하는 성","kind":"ally","directed":true,"weight":2}
+        {"from":"예루살렘(시온)","to":"하나님","label":"거역했던 성","kind":"conflict","directed":true,"weight":2,"verses":"8, 18","note":"예루살렘이 크게 범죄하므로 조롱거리가 되었으니, 여호와는 의로우시도다 내가 그의 명령을 거역하였다고 고백해요."},
+        {"from":"친구들","to":"예루살렘(시온)","label":"배반한 친구","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"밤새도록 슬피 우니 사랑하던 자들 중에 위로하는 자가 없고 친구들도 다 배반하여 원수들이 되었다고 해요."},
+        {"from":"원수들","to":"예루살렘(시온)","label":"짓밟은 원수","kind":"conflict","directed":true,"weight":3,"verses":"5, 10","note":"대적들이 머리가 되고 원수들이 형통하며, 대적이 손을 펴서 보물을 빼앗았다고 해요."},
+        {"from":"예루살렘(시온)","to":"하나님","label":"탄원하는 성","kind":"ally","directed":true,"weight":2,"verses":"20","note":"여호와여 보시옵소서 내가 환난 중에 있어 내 애를 다 태우고 마음이 상하였다고 탄원해요."}
       ],
       "places": [
         {"name":"예루살렘","where":"무너진 유다의 수도","what":"과부처럼 홀로 앉은 성","weight":3},
@@ -48,10 +48,10 @@
         {"name":"하나님","role":"정하신 일을 이루신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"딸 시온","label":"진노하신 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"거짓 선지자들","to":"딸 시온","label":"속인 선지자","kind":"conflict","directed":true,"weight":2},
-        {"from":"원수들","to":"딸 시온","label":"조롱한 원수","kind":"conflict","directed":true,"weight":2},
-        {"from":"딸 시온","to":"하나님","label":"마음을 쏟을 성","kind":"ally","directed":true,"weight":2}
+        {"from":"하나님","to":"딸 시온","label":"진노하신 분","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 5","note":"주께서 어찌 그리 진노하사 딸 시온을 구름으로 덮으셨는고, 주께서 원수같이 되어 이스라엘을 삼키셨다고 해요."},
+        {"from":"거짓 선지자들","to":"딸 시온","label":"속인 선지자","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"네 선지자들이 헛되고 어리석은 묵시를 보았으며 네 죄악을 드러내어 사로잡힘을 돌이키지 못하였다고 해요."},
+        {"from":"원수들","to":"딸 시온","label":"조롱한 원수","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"지나가는 자들이 손뼉을 치고 원수들이 입을 벌려 이를 갈며 우리가 그를 삼켰다고 한다고 해요."},
+        {"from":"딸 시온","to":"하나님","label":"마음을 쏟을 성","kind":"ally","directed":true,"weight":2,"verses":"18-19","note":"밤 초경에 일어나 부르짖을지어다 네 마음을 주의 얼굴 앞에 물 쏟듯 할지어다 하고 권해요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"주께서 무너뜨리신 성","weight":3},
@@ -74,9 +74,9 @@
         {"name":"하나님","role":"인자와 긍휼이 무궁하신 분","weight":3}
       ],
       "rels": [
-        {"from":"고난 당한 사람","to":"하나님","label":"소망을 둔 이","kind":"ally","directed":true,"weight":3},
-        {"from":"하나님","to":"고난 당한 사람","label":"새 인자를 주심","kind":"ally","directed":true,"weight":3},
-        {"from":"원수들","to":"고난 당한 사람","label":"해치는 자","kind":"conflict","directed":true,"weight":2}
+        {"from":"고난 당한 사람","to":"하나님","label":"소망을 둔 이","kind":"ally","directed":true,"weight":3,"verses":"21-24","note":"이것을 내가 마음에 담아 두었더니 그것이 오히려 나의 소망이 되었사옴은, 여호와는 나의 기업이시니 그를 바라리라고 해요."},
+        {"from":"하나님","to":"고난 당한 사람","label":"새 인자를 주심","kind":"ally","directed":true,"weight":3,"verses":"22-23","note":"여호와의 인자와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다, 이것들이 아침마다 새롭다고 고백해요."},
+        {"from":"원수들","to":"고난 당한 사람","label":"해치는 자","kind":"conflict","directed":true,"weight":2,"verses":"46, 52-53","note":"우리의 모든 원수들이 우리를 향해 입을 크게 벌렸으며 까닭 없이 새처럼 나를 사냥하여 구덩이에 넣었다고 해요."}
       ],
       "places": [
         {"name":"깊은 구덩이","where":"고난의 자리","what":"주의 이름을 부른 곳","weight":1}
@@ -100,10 +100,10 @@
         {"name":"하나님","role":"진노를 다 쏟으신 분","weight":3}
       ],
       "rels": [
-        {"from":"선지자와 제사장들","to":"시온의 아들들","label":"죄로 망하게 한 자","kind":"conflict","directed":true,"weight":3},
-        {"from":"하나님","to":"시온의 아들들","label":"진노하신 분","kind":"conflict","directed":true,"weight":2},
-        {"from":"에돔","to":"시온의 아들들","label":"즐거워한 원수","kind":"conflict","directed":true,"weight":2},
-        {"from":"하나님","to":"에돔","label":"죄를 드러내실 분","kind":"conflict","directed":true,"weight":1}
+        {"from":"선지자와 제사장들","to":"시온의 아들들","label":"죄로 망하게 한 자","kind":"conflict","directed":true,"weight":3,"verses":"13","note":"그의 선지자들의 죄들과 제사장들의 죄악들 때문이니 그들이 성읍 안에서 의인들의 피를 흘렸다고 해요."},
+        {"from":"하나님","to":"시온의 아들들","label":"진노하신 분","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"여호와께서 분을 내시며 맹렬한 진노를 쏟으심이여 시온에 불을 지르사 그 터를 사르셨다고 해요."},
+        {"from":"에돔","to":"시온의 아들들","label":"즐거워한 원수","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"우스 땅에 사는 딸 에돔아 즐거워하며 기뻐하라, 잔이 네게도 이를지니 네가 취하리라고 해요."},
+        {"from":"하나님","to":"에돔","label":"죄를 드러내실 분","kind":"conflict","directed":true,"weight":1,"verses":"22","note":"딸 에돔아 그가 네 죄악을 벌하시며 네 허물을 드러내시리로다 하고 해요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"금이 빛을 잃은 성","weight":3},
@@ -126,9 +126,9 @@
         {"name":"하나님","role":"영원한 보좌의 주","weight":3}
       ],
       "rels": [
-        {"from":"유다 백성","to":"하나님","label":"돌이켜 달라는 백성","kind":"ally","directed":true,"weight":3},
-        {"from":"다스리는 종들","to":"유다 백성","label":"억누른 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"유다 백성","to":"조상들","label":"죄를 짊어진 후손","kind":"family","directed":true,"weight":1}
+        {"from":"유다 백성","to":"하나님","label":"돌이켜 달라는 백성","kind":"ally","directed":true,"weight":3,"verses":"1, 21","note":"여호와여 우리가 당한 것을 기억하시고 우리를 주께로 돌이키소서 그리하시면 우리가 돌아가겠사오니 하고 구해요."},
+        {"from":"다스리는 종들","to":"유다 백성","label":"억누른 자","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"종들이 우리를 지배함이여 그들의 손에서 우리를 건질 자가 없다고 해요."},
+        {"from":"유다 백성","to":"조상들","label":"죄를 짊어진 후손","kind":"family","directed":true,"weight":1,"verses":"7","note":"우리의 조상들은 범죄하고 없어졌으며 우리는 그들의 죄악을 담당하였다고 해요."}
       ],
       "places": [
         {"name":"시온 산","where":"예루살렘","what":"황폐해 여우가 다니는 곳","weight":2}
