@@ -30,13 +30,13 @@
         {"name":"하나님","role":"사랑하는 아들이라 하신 분","weight":2}
       ],
       "rels": [
-        {"from":"세례 요한","to":"예수","label":"세례를 베푼 이","kind":"ally","directed":true,"weight":2},
-        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3},
-        {"from":"사탄","to":"예수","label":"시험한 자","kind":"conflict","directed":true,"weight":2},
-        {"from":"시몬","to":"예수","label":"따른 제자","kind":"ally","directed":true,"weight":2},
-        {"from":"시몬","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"야고보","to":"세베대","label":"아들","kind":"family","directed":true,"weight":1},
-        {"from":"예수","to":"나병환자","label":"깨끗하게 하심","kind":"ally","directed":true,"weight":2}
+        {"from":"세례 요한","to":"예수","label":"세례를 베푼 이","kind":"ally","directed":true,"weight":2,"verses":"9","note":"예수께서 갈릴리 나사렛으로부터 와서 요단강에서 요한에게 세례를 받으셨어요."},
+        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"11","note":"하늘로부터 너는 내 사랑하는 아들이요 내가 너를 기뻐하노라 하는 소리가 났어요."},
+        {"from":"사탄","to":"예수","label":"시험한 자","kind":"conflict","directed":true,"weight":2,"verses":"12-13","note":"성령이 곧 예수를 광야로 몰아내셨고 사십 일 동안 사탄에게 시험을 받으셨어요."},
+        {"from":"시몬","to":"예수","label":"따른 제자","kind":"ally","directed":true,"weight":2,"verses":"16-18","note":"나를 따라오라 내가 너희를 사람을 낚는 어부가 되게 하리라 하시니 시몬과 안드레가 곧 그물을 버려두고 따랐어요."},
+        {"from":"시몬","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1,"verses":"16","note":"갈릴리 해변에서 시몬과 그 형제 안드레가 바다에 그물을 던지고 있었어요."},
+        {"from":"야고보","to":"세베대","label":"아들","kind":"family","directed":true,"weight":1,"verses":"19-20","note":"세베대의 아들 야고보와 요한이 아버지 세베대를 품꾼들과 함께 배에 버려두고 예수를 따랐어요."},
+        {"from":"예수","to":"나병환자","label":"깨끗하게 하심","kind":"ally","directed":true,"weight":2,"verses":"40-42","note":"나병환자가 원하시면 깨끗하게 하실 수 있다 하자 예수께서 불쌍히 여겨 손을 대시며 깨끗함을 받으라 하셨어요."}
       ],
       "places": [
         {"name":"요단강","where":"유대 광야 동쪽","what":"세례받으신 곳","weight":2},
@@ -65,11 +65,11 @@
         {"name":"다윗","role":"진설병을 먹은 왕","weight":1}
       ],
       "rels": [
-        {"from":"네 사람","to":"중풍병자","label":"메고 온 친구","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"중풍병자","label":"죄를 사하심","kind":"ally","directed":true,"weight":3},
-        {"from":"서기관","to":"예수","label":"비난한 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"레위","to":"예수","label":"따른 세리","kind":"ally","directed":true,"weight":3},
-        {"from":"바리새인","to":"예수","label":"따진 이들","kind":"conflict","directed":true,"weight":2}
+        {"from":"네 사람","to":"중풍병자","label":"메고 온 친구","kind":"ally","directed":true,"weight":2,"verses":"3-4","note":"네 사람이 중풍병자를 메고 왔다가 무리 때문에 갈 수 없자 지붕을 뜯어 구멍을 내고 상을 달아 내렸어요."},
+        {"from":"예수","to":"중풍병자","label":"죄를 사하심","kind":"ally","directed":true,"weight":3,"verses":"5, 11","note":"예수께서 그들의 믿음을 보시고 작은 자야 네 죄 사함을 받았느니라, 일어나 상을 가지고 집으로 가라 하셨어요."},
+        {"from":"서기관","to":"예수","label":"비난한 이들","kind":"conflict","directed":true,"weight":2,"verses":"6-7","note":"서기관들이 속으로 이 사람이 어찌 이렇게 말하는가 신성모독이로다 오직 하나님 한 분 외에는 누가 죄를 사하겠느냐 했어요."},
+        {"from":"레위","to":"예수","label":"따른 세리","kind":"ally","directed":true,"weight":3,"verses":"14","note":"예수께서 세관에 앉아 있는 알패오의 아들 레위에게 나를 따르라 하시니 일어나 따랐어요."},
+        {"from":"바리새인","to":"예수","label":"따진 이들","kind":"conflict","directed":true,"weight":2,"verses":"16, 24","note":"바리새인들이 죄인과 함께 먹는 것과 안식일에 이삭을 자르는 것을 두고 예수께 따졌어요."}
       ],
       "places": [
         {"name":"가버나움","where":"예수께서 머무신 집","what":"지붕이 뚫린 곳","weight":2},
@@ -102,13 +102,13 @@
         {"name":"마리아","role":"찾아온 어머니","weight":1}
       ],
       "rels": [
-        {"from":"바리새인","to":"헤롯당","label":"모의한 이들","kind":"ally","directed":false,"weight":2},
-        {"from":"바리새인","to":"예수","label":"죽이려 함","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"손 마른 사람","label":"회복시키심","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"시몬","label":"이름을 더하심","kind":"ally","directed":true,"weight":2},
-        {"from":"서기관","to":"예수","label":"귀신 들렸다 함","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수의 친족","to":"예수","label":"미쳤다 함","kind":"conflict","directed":true,"weight":1},
-        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"바리새인","to":"헤롯당","label":"모의한 이들","kind":"ally","directed":false,"weight":2,"verses":"6","note":"바리새인들이 나가서 곧 헤롯당과 함께 어떻게 하여 예수를 죽일까 의논했어요."},
+        {"from":"바리새인","to":"예수","label":"죽이려 함","kind":"conflict","directed":true,"weight":3,"verses":"2, 6","note":"그들이 예수를 고발하려고 안식일에 손 마른 사람을 고치시는지 엿보았어요."},
+        {"from":"예수","to":"손 마른 사람","label":"회복시키심","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"예수께서 손 마른 사람에게 한가운데 일어서라 하시고 손을 내밀라 하시니 그 손이 회복되었어요."},
+        {"from":"예수","to":"시몬","label":"이름을 더하심","kind":"ally","directed":true,"weight":2,"verses":"16","note":"예수께서 열둘을 세우셨는데 시몬에게는 베드로라는 이름을 더하셨어요."},
+        {"from":"서기관","to":"예수","label":"귀신 들렸다 함","kind":"conflict","directed":true,"weight":2,"verses":"22","note":"예루살렘에서 내려온 서기관들이 그가 바알세불이 지폈다, 귀신의 왕을 힘입어 귀신을 쫓아낸다 했어요."},
+        {"from":"예수의 친족","to":"예수","label":"미쳤다 함","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"예수의 친족들이 그가 미쳤다 하여 붙들러 나왔어요."},
+        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"17","note":"세베대의 아들 야고보와 그 형제 요한에게는 우레의 아들이라는 뜻의 보아너게라는 이름을 더하셨어요."}
       ],
       "places": [
         {"name":"회당","where":"가버나움 회당","what":"손 마른 사람이 나은 곳","weight":2},
@@ -132,9 +132,9 @@
         {"name":"씨 뿌리는 자","role":"비유 속 농부","weight":1}
       ],
       "rels": [
-        {"from":"예수","to":"제자들","label":"비밀을 알려 주심","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"무리","label":"비유로 가르치심","kind":"ally","directed":true,"weight":2},
-        {"from":"제자들","to":"예수","label":"돌보지 않냐 함","kind":"conflict","directed":true,"weight":1}
+        {"from":"예수","to":"제자들","label":"비밀을 알려 주심","kind":"ally","directed":true,"weight":3,"verses":"10-11, 34","note":"혼자 계실 때에 제자들에게 하나님 나라의 비밀을 너희에게는 주었다 하시고 모든 것을 풀어 주셨어요."},
+        {"from":"예수","to":"무리","label":"비유로 가르치심","kind":"ally","directed":true,"weight":2,"verses":"1-2, 33","note":"큰 무리가 모이자 배에 오르시고 무리는 해변에 있었는데 여러 가지를 비유로 가르치셨어요."},
+        {"from":"제자들","to":"예수","label":"돌보지 않냐 함","kind":"conflict","directed":true,"weight":1,"verses":"37-38","note":"큰 광풍이 일어나 물이 배에 가득하자 제자들이 선생님이여 우리가 죽게 된 것을 돌보지 아니하시나이까 했어요."}
       ],
       "places": [
         {"name":"갈릴리 바다","where":"호수","what":"배에서 가르치시고 풍랑을 잔잔케 하신 곳","weight":3}
@@ -160,12 +160,12 @@
         {"name":"베드로","role":"방에 들어간 제자","weight":1}
       ],
       "rels": [
-        {"from":"예수","to":"군대 귀신","label":"쫓아내신 분","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"군대 귀신 들린 사람","label":"보내신 분","kind":"ally","directed":true,"weight":2},
-        {"from":"야이로","to":"예수","label":"간구한 아버지","kind":"ally","directed":true,"weight":3},
-        {"from":"야이로의 딸","to":"야이로","label":"딸","kind":"family","directed":true,"weight":2},
-        {"from":"예수","to":"혈루증 여인","label":"딸이라 부르심","kind":"ally","directed":true,"weight":3},
-        {"from":"거라사 사람들","to":"예수","label":"떠나시라 함","kind":"conflict","directed":true,"weight":1}
+        {"from":"예수","to":"군대 귀신","label":"쫓아내신 분","kind":"conflict","directed":true,"weight":3,"verses":"8-13","note":"예수께서 더러운 귀신아 그 사람에게서 나오라 하시고 귀신들을 돼지 떼에 들어가게 허락하셨어요."},
+        {"from":"예수","to":"군대 귀신 들린 사람","label":"보내신 분","kind":"ally","directed":true,"weight":2,"verses":"18-19","note":"나은 사람이 함께 있기를 간구하자 예수께서 집으로 가서 주께서 네게 어떻게 큰일을 행하셨는지 알리라고 보내셨어요."},
+        {"from":"야이로","to":"예수","label":"간구한 아버지","kind":"ally","directed":true,"weight":3,"verses":"22-23","note":"회당장 야이로가 예수의 발아래 엎드려 내 어린 딸이 죽게 되었사오니 오셔서 손을 얹어 주소서 하고 간구했어요."},
+        {"from":"야이로의 딸","to":"야이로","label":"딸","kind":"family","directed":true,"weight":2,"verses":"41-42","note":"예수께서 아이의 손을 잡고 달리다굼 하시니 소녀가 곧 일어나서 걸었어요. 나이가 열두 살이었어요."},
+        {"from":"예수","to":"혈루증 여인","label":"딸이라 부르심","kind":"ally","directed":true,"weight":3,"verses":"34","note":"딸아 네 믿음이 너를 구원하였으니 평안히 가라 네 병에서 놓여 건강할지어다 하셨어요."},
+        {"from":"거라사 사람들","to":"예수","label":"떠나시라 함","kind":"conflict","directed":true,"weight":1,"verses":"15-17","note":"사람들이 와서 귀신 들렸던 사람이 온전해진 것을 보고 두려워하여 예수께 그 지방에서 떠나시기를 간구했어요."}
       ],
       "places": [
         {"name":"거라사인의 지방","where":"갈릴리 바다 동쪽","what":"군대 귀신이 나간 곳","weight":3},
@@ -196,12 +196,12 @@
         {"name":"무리","role":"오천 명","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"열두 제자","label":"보내신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"헤롯","to":"세례 요한","label":"목 벤 왕","kind":"conflict","directed":true,"weight":3},
-        {"from":"헤로디아","to":"세례 요한","label":"원한을 품음","kind":"conflict","directed":true,"weight":2},
-        {"from":"헤로디아의 딸","to":"헤로디아","label":"딸","kind":"family","directed":true,"weight":2},
-        {"from":"고향 사람들","to":"예수","label":"배척한 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"무리","label":"먹이신 목자","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"열두 제자","label":"보내신 분","kind":"ally","directed":true,"weight":3,"verses":"7-12","note":"예수께서 열두 제자를 둘씩 보내시며 더러운 귀신을 제어하는 권능을 주시니 그들이 나가서 회개하라 전파했어요."},
+        {"from":"헤롯","to":"세례 요한","label":"목 벤 왕","kind":"conflict","directed":true,"weight":3,"verses":"16, 27","note":"헤롯은 내가 목 벤 요한 그가 살아났다 했으며, 실제로 시위병을 보내 요한의 머리를 가져오게 했어요."},
+        {"from":"헤로디아","to":"세례 요한","label":"원한을 품음","kind":"conflict","directed":true,"weight":2,"verses":"19","note":"헤로디아가 요한을 원수로 여겨 죽이고자 하였으나 하지 못했어요."},
+        {"from":"헤로디아의 딸","to":"헤로디아","label":"딸","kind":"family","directed":true,"weight":2,"verses":"22-24","note":"헤로디아의 딸이 춤을 추어 왕을 기쁘게 하고 어머니에게 무엇을 구할지 물었어요."},
+        {"from":"고향 사람들","to":"예수","label":"배척한 이들","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"고향 사람들이 이 사람은 마리아의 아들 목수가 아니냐 하며 예수를 배척했어요."},
+        {"from":"예수","to":"무리","label":"먹이신 목자","kind":"ally","directed":true,"weight":2,"verses":"34, 41-44","note":"예수께서 목자 없는 양 같은 무리를 불쌍히 여겨 가르치시고 떡 다섯 개와 물고기 두 마리로 오천 명을 먹이셨어요."}
       ],
       "places": [
         {"name":"나사렛","where":"예수의 고향","what":"배척당하신 곳","weight":2},
@@ -229,10 +229,10 @@
         {"name":"이사야","role":"외식을 예언한 선지자","weight":1}
       ],
       "rels": [
-        {"from":"바리새인과 서기관","to":"예수","label":"트집 잡은 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"수로보니게 여인","to":"예수","label":"간구한 여인","kind":"ally","directed":true,"weight":3},
-        {"from":"여인의 딸","to":"수로보니게 여인","label":"딸","kind":"family","directed":true,"weight":1},
-        {"from":"예수","to":"귀먹은 사람","label":"고치신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"바리새인과 서기관","to":"예수","label":"트집 잡은 이들","kind":"conflict","directed":true,"weight":2,"verses":"1-5","note":"바리새인들과 서기관들이 어찌하여 당신의 제자들은 장로들의 전통을 준행하지 않고 부정한 손으로 떡을 먹느냐고 했어요."},
+        {"from":"수로보니게 여인","to":"예수","label":"간구한 여인","kind":"ally","directed":true,"weight":3,"verses":"25-29","note":"헬라인 수로보니게 여인이 상 아래 개들도 아이들이 먹던 부스러기를 먹나이다 하자 이 말을 하였으니 돌아가라 하셨어요."},
+        {"from":"여인의 딸","to":"수로보니게 여인","label":"딸","kind":"family","directed":true,"weight":1,"verses":"30","note":"여자가 집에 돌아가 보니 아이가 침상에 누웠고 귀신이 나갔더라고 해요."},
+        {"from":"예수","to":"귀먹은 사람","label":"고치신 분","kind":"ally","directed":true,"weight":2,"verses":"33-35","note":"예수께서 그를 따로 데리고 가셔서 귀에 손가락을 넣고 에바다 하시니 귀가 열리고 혀가 맺힌 것이 풀렸어요."}
       ],
       "places": [
         {"name":"두로 지방","where":"갈릴리 북서쪽 이방 땅","what":"수로보니게 여인을 만나신 곳","weight":2},
@@ -261,11 +261,11 @@
         {"name":"사탄","role":"하나님의 일을 막는 자","weight":1}
       ],
       "rels": [
-        {"from":"베드로","to":"예수","label":"그리스도라 고백","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"베드로","label":"사탄아 꾸짖음","kind":"conflict","directed":true,"weight":2},
-        {"from":"바리새인","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"벳새다 맹인","label":"보게 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"무리","label":"먹이신 분","kind":"ally","directed":true,"weight":2}
+        {"from":"베드로","to":"예수","label":"그리스도라 고백","kind":"ally","directed":true,"weight":3,"verses":"29","note":"예수께서 너희는 나를 누구라 하느냐 물으시니 베드로가 주는 그리스도시니이다 대답했어요."},
+        {"from":"예수","to":"베드로","label":"사탄아 꾸짖음","kind":"conflict","directed":true,"weight":2,"verses":"32-33","note":"베드로가 예수를 붙들고 항변하자 예수께서 사탄아 내 뒤로 물러가라 네가 하나님의 일을 생각하지 않는다고 꾸짖으셨어요."},
+        {"from":"바리새인","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"바리새인들이 나와서 예수를 시험하여 하늘로부터 오는 표적을 구했어요."},
+        {"from":"예수","to":"벳새다 맹인","label":"보게 하심","kind":"ally","directed":true,"weight":2,"verses":"22-25","note":"예수께서 맹인을 마을 밖으로 데리고 가서 두 번 안수하시니 그가 모든 것을 밝히 보았어요."},
+        {"from":"예수","to":"무리","label":"먹이신 분","kind":"ally","directed":true,"weight":2,"verses":"1-9","note":"예수께서 사흘 동안 함께 있어 먹을 것이 없는 무리를 불쌍히 여겨 떡 일곱 개로 사천 명을 먹이셨어요."}
       ],
       "places": [
         {"name":"벳새다","where":"갈릴리 바다 북쪽","what":"맹인이 두 번 만에 본 곳","weight":2},
@@ -296,11 +296,11 @@
         {"name":"하나님","role":"구름 속 음성","weight":2}
       ],
       "rels": [
-        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3},
-        {"from":"아이의 아버지","to":"예수","label":"도움을 구함","kind":"ally","directed":true,"weight":3},
-        {"from":"귀신 들린 아이","to":"아이의 아버지","label":"아들","kind":"family","directed":true,"weight":2},
-        {"from":"예수","to":"제자들","label":"섬김을 가르침","kind":"ally","directed":true,"weight":2},
-        {"from":"모세","to":"예수","label":"함께 말함","kind":"ally","directed":false,"weight":1}
+        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"7","note":"구름 속에서 이는 내 사랑하는 아들이니 너희는 그의 말을 들으라 하는 소리가 났어요."},
+        {"from":"아이의 아버지","to":"예수","label":"도움을 구함","kind":"ally","directed":true,"weight":3,"verses":"22-24","note":"아버지가 할 수 있거든 도와주옵소서 하자 믿는 자에게는 능히 하지 못할 일이 없다 하시니 내가 믿나이다 나의 믿음 없는 것을 도와주소서 했어요."},
+        {"from":"귀신 들린 아이","to":"아이의 아버지","label":"아들","kind":"family","directed":true,"weight":2,"verses":"17-18, 26-27","note":"아버지가 말 못하게 귀신 들린 아들을 데려왔고, 예수께서 손을 잡아 일으키시니 아이가 일어섰어요."},
+        {"from":"예수","to":"제자들","label":"섬김을 가르침","kind":"ally","directed":true,"weight":2,"verses":"33-35","note":"길에서 누가 크냐 다툰 제자들에게 누구든지 첫째가 되고자 하면 뭇 사람의 끝이 되며 섬기는 자가 되라고 하셨어요."},
+        {"from":"모세","to":"예수","label":"함께 말함","kind":"ally","directed":false,"weight":1,"verses":"4","note":"변화산에서 엘리야가 모세와 함께 그들에게 나타나 예수와 더불어 말했어요."}
       ],
       "places": [
         {"name":"높은 산","where":"갈릴리 지역의 산","what":"변형되신 곳","weight":3},
@@ -329,12 +329,12 @@
         {"name":"베드로","role":"버리고 따른 제자","weight":1}
       ],
       "rels": [
-        {"from":"예수","to":"재물이 많은 사람","label":"사랑하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":2},
-        {"from":"야고보","to":"예수","label":"자리를 구함","kind":"other","directed":true,"weight":2},
-        {"from":"열 제자","to":"야고보","label":"화를 냄","kind":"conflict","directed":true,"weight":1},
-        {"from":"바디매오","to":"예수","label":"부르짖은 맹인","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"어린아이들","label":"축복하심","kind":"ally","directed":true,"weight":2}
+        {"from":"예수","to":"재물이 많은 사람","label":"사랑하신 분","kind":"ally","directed":true,"weight":3,"verses":"21-22","note":"예수께서 그를 보시고 사랑하사 가서 네 있는 것을 다 팔아 가난한 자들에게 주라 하셨으나 그는 재물이 많아 근심하며 갔어요."},
+        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":2,"verses":"35","note":"세베대의 아들 야고보와 요한이 함께 나아와 예수께 구했어요."},
+        {"from":"야고보","to":"예수","label":"자리를 구함","kind":"other","directed":true,"weight":2,"verses":"37","note":"주의 영광 중에서 하나는 주의 우편에, 하나는 좌편에 앉게 하여 주옵소서 하고 구했어요."},
+        {"from":"열 제자","to":"야고보","label":"화를 냄","kind":"conflict","directed":true,"weight":1,"verses":"41","note":"열 제자가 듣고 야고보와 요한에 대하여 화를 내기 시작했어요."},
+        {"from":"바디매오","to":"예수","label":"부르짖은 맹인","kind":"ally","directed":true,"weight":3,"verses":"46-52","note":"맹인 거지 바디매오가 다윗의 자손 예수여 나를 불쌍히 여기소서 외쳤고, 가라 네 믿음이 너를 구원하였다 하시니 곧 보게 되었어요."},
+        {"from":"예수","to":"어린아이들","label":"축복하심","kind":"ally","directed":true,"weight":2,"verses":"14-16","note":"예수께서 노하시며 어린아이들이 내게 오는 것을 용납하라 하시고 안고 안수하며 축복하셨어요."}
       ],
       "places": [
         {"name":"요단강 건너편","where":"유대 지경","what":"가르치신 곳","weight":1},
@@ -362,10 +362,10 @@
         {"name":"세례 요한","role":"하늘의 세례를 준 이","weight":1}
       ],
       "rels": [
-        {"from":"무리","to":"예수","label":"호산나 외침","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"매매하는 자들","label":"내쫓으신 분","kind":"conflict","directed":true,"weight":2},
-        {"from":"대제사장과 서기관","to":"예수","label":"죽이려 꾀함","kind":"conflict","directed":true,"weight":3},
-        {"from":"예수","to":"베드로","label":"믿음을 가르침","kind":"ally","directed":true,"weight":1}
+        {"from":"무리","to":"예수","label":"호산나 외침","kind":"ally","directed":true,"weight":3,"verses":"8-10","note":"많은 사람들이 겉옷과 나뭇가지를 길에 펴고 호산나 찬송하리로다 주의 이름으로 오시는 이여 외쳤어요."},
+        {"from":"예수","to":"매매하는 자들","label":"내쫓으신 분","kind":"conflict","directed":true,"weight":2,"verses":"15-17","note":"예수께서 성전에서 매매하는 자들을 내쫓으시며 내 집은 만민이 기도하는 집이라 일컬음을 받으리라 하셨어요."},
+        {"from":"대제사장과 서기관","to":"예수","label":"죽이려 꾀함","kind":"conflict","directed":true,"weight":3,"verses":"18","note":"대제사장들과 서기관들이 듣고 예수를 어떻게 죽일까 하고 꾀했어요."},
+        {"from":"예수","to":"베드로","label":"믿음을 가르침","kind":"ally","directed":true,"weight":1,"verses":"21-24","note":"말라 버린 무화과나무를 본 베드로에게 하나님을 믿으라, 무엇이든지 기도하고 구하는 것은 받은 줄로 믿으라 하셨어요."}
       ],
       "places": [
         {"name":"벳바게와 베다니","where":"감람산 기슭 마을","what":"나귀를 가져온 곳","weight":1},
@@ -394,11 +394,11 @@
         {"name":"다윗","role":"그리스도를 주라 부른 왕","weight":1}
       ],
       "rels": [
-        {"from":"바리새인과 헤롯당","to":"예수","label":"책잡으려 함","kind":"conflict","directed":true,"weight":2},
-        {"from":"사두개인","to":"예수","label":"부활로 시험","kind":"conflict","directed":true,"weight":2},
-        {"from":"예수","to":"서기관","label":"멀지 않다 하심","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"가난한 과부","label":"칭찬하신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"악한 농부들","to":"예수","label":"빗댄 아들 죽임","kind":"conflict","directed":true,"weight":1}
+        {"from":"바리새인과 헤롯당","to":"예수","label":"책잡으려 함","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"그들이 예수의 말씀을 책잡으려고 바리새인과 헤롯당 중에서 사람을 보내 가이사에게 세금을 바치는 것이 옳으냐고 물었어요."},
+        {"from":"사두개인","to":"예수","label":"부활로 시험","kind":"conflict","directed":true,"weight":2,"verses":"18-23","note":"부활이 없다 하는 사두개인들이 일곱 형제와 결혼한 여자는 부활 때 누구의 아내가 되겠냐고 물었어요."},
+        {"from":"예수","to":"서기관","label":"멀지 않다 하심","kind":"ally","directed":true,"weight":2,"verses":"32-34","note":"서기관이 하나님 사랑과 이웃 사랑이 제사보다 낫다고 하자 예수께서 네가 하나님의 나라에서 멀지 않도다 하셨어요."},
+        {"from":"예수","to":"가난한 과부","label":"칭찬하신 분","kind":"ally","directed":true,"weight":3,"verses":"43-44","note":"가난한 과부가 두 렙돈을 넣자 이 과부는 가난한 중에서 생활비 전부를 넣었으니 누구보다 많이 넣었다 하셨어요."},
+        {"from":"악한 농부들","to":"예수","label":"빗댄 아들 죽임","kind":"conflict","directed":true,"weight":1,"verses":"6-8","note":"주인이 사랑하는 아들을 보냈으나 농부들이 그를 잡아 죽였다는 비유로 자신의 죽음을 빗대셨어요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 성전 뜰","what":"논쟁하고 가르치신 곳","weight":2},
@@ -427,11 +427,11 @@
         {"name":"하나님","role":"그날을 아시는 아버지","weight":2}
       ],
       "rels": [
-        {"from":"예수","to":"베드로","label":"알려 주심","kind":"ally","directed":true,"weight":2},
-        {"from":"거짓 그리스도","to":"베드로","label":"미혹하는 자","kind":"conflict","directed":true,"weight":1},
-        {"from":"성령","to":"베드로","label":"말하게 하심","kind":"ally","directed":true,"weight":1},
-        {"from":"베드로","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1},
-        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1}
+        {"from":"예수","to":"베드로","label":"알려 주심","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"감람산에서 베드로와 야고보와 요한과 안드레가 조용히 묻자 너희가 사람의 미혹을 받지 않도록 주의하라 하셨어요."},
+        {"from":"거짓 그리스도","to":"베드로","label":"미혹하는 자","kind":"conflict","directed":true,"weight":1,"verses":"6, 22","note":"많은 사람이 내 이름으로 와서 내가 그라 하여 많은 사람을 미혹하리라고 하셨어요."},
+        {"from":"성령","to":"베드로","label":"말하게 하심","kind":"ally","directed":true,"weight":1,"verses":"11","note":"너희를 끌어다가 넘겨줄 때 무엇을 말할까 염려하지 말라, 말하는 이는 너희가 아니요 성령이시라고 하셨어요."},
+        {"from":"베드로","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"베드로와 안드레는 형제로 함께 예수께 물었어요."},
+        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"야고보와 요한도 함께 물었어요."}
       ],
       "places": [
         {"name":"감람산","where":"성전 맞은편 산","what":"마지막 때를 가르치신 곳","weight":3},
@@ -461,12 +461,12 @@
         {"name":"하나님","role":"아빠 아버지","weight":2}
       ],
       "rels": [
-        {"from":"가룟 유다","to":"예수","label":"입맞춤으로 넘김","kind":"conflict","directed":true,"weight":3},
-        {"from":"대제사장","to":"예수","label":"정죄한 이","kind":"conflict","directed":true,"weight":3},
-        {"from":"베드로","to":"예수","label":"세 번 부인","kind":"conflict","directed":true,"weight":3},
-        {"from":"향유를 부은 여자","to":"예수","label":"장례를 준비","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"하나님","label":"아빠라 부름","kind":"family","directed":true,"weight":2},
-        {"from":"가룟 유다","to":"대제사장","label":"돈을 약속받음","kind":"ally","directed":false,"weight":2}
+        {"from":"가룟 유다","to":"예수","label":"입맞춤으로 넘김","kind":"conflict","directed":true,"weight":3,"verses":"44-45","note":"유다가 내가 입 맞추는 자가 그이니 그를 잡으라 신호를 정하고 와서 랍비여 하고 입을 맞췄어요."},
+        {"from":"대제사장","to":"예수","label":"정죄한 이","kind":"conflict","directed":true,"weight":3,"verses":"61-64","note":"대제사장이 네가 찬송받을 이의 아들 그리스도냐 묻자 내가 그니라 하시니 신성모독이라며 사형으로 정죄했어요."},
+        {"from":"베드로","to":"예수","label":"세 번 부인","kind":"conflict","directed":true,"weight":3,"verses":"66-72","note":"베드로가 대제사장의 뜰에서 세 번 예수를 모른다 했고 닭이 두 번째 울자 생각나서 울었어요."},
+        {"from":"향유를 부은 여자","to":"예수","label":"장례를 준비","kind":"ally","directed":true,"weight":2,"verses":"3, 8","note":"한 여자가 나드 향유 옥합을 깨뜨려 예수의 머리에 부으니 내 몸에 향유를 부어 장례를 미리 준비하였다 하셨어요."},
+        {"from":"예수","to":"하나님","label":"아빠라 부름","kind":"family","directed":true,"weight":2,"verses":"36","note":"아빠 아버지여 아버지께는 모든 것이 가능하오니 이 잔을 내게서 옮기시옵소서 그러나 아버지의 원대로 하옵소서 기도하셨어요."},
+        {"from":"가룟 유다","to":"대제사장","label":"돈을 약속받음","kind":"ally","directed":false,"weight":2,"verses":"10-11","note":"가룟 유다가 대제사장들에게 가서 예수를 넘겨주려 하자 그들이 기뻐하여 돈을 주기로 약속했어요."}
       ],
       "places": [
         {"name":"베다니","where":"예루살렘 동쪽 마을","what":"향유를 부은 곳","weight":2},
@@ -498,13 +498,13 @@
         {"name":"군인들","role":"조롱한 이들","weight":1}
       ],
       "rels": [
-        {"from":"빌라도","to":"예수","label":"넘겨준 총독","kind":"conflict","directed":true,"weight":3},
-        {"from":"대제사장","to":"무리","label":"충동한 이","kind":"other","directed":true,"weight":2},
-        {"from":"무리","to":"예수","label":"십자가를 외침","kind":"conflict","directed":true,"weight":2},
-        {"from":"구레네 사람 시몬","to":"예수","label":"십자가를 짐","kind":"ally","directed":true,"weight":2},
-        {"from":"백부장","to":"예수","label":"고백한 군인","kind":"ally","directed":true,"weight":2},
-        {"from":"아리마대 요셉","to":"예수","label":"장사한 이","kind":"ally","directed":true,"weight":2},
-        {"from":"막달라 마리아","to":"예수","label":"지켜본 여인","kind":"ally","directed":true,"weight":2}
+        {"from":"빌라도","to":"예수","label":"넘겨준 총독","kind":"conflict","directed":true,"weight":3,"verses":"15","note":"빌라도가 무리에게 만족을 주고자 하여 바라바를 놓아 주고 예수를 채찍질하고 십자가에 못 박히게 넘겨주었어요."},
+        {"from":"대제사장","to":"무리","label":"충동한 이","kind":"other","directed":true,"weight":2,"verses":"11","note":"대제사장들이 무리를 충동하여 도리어 바라바를 놓아 달라 하게 했어요."},
+        {"from":"무리","to":"예수","label":"십자가를 외침","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"무리가 다시 소리 지르되 그를 십자가에 못 박게 하소서 했어요."},
+        {"from":"구레네 사람 시몬","to":"예수","label":"십자가를 짐","kind":"ally","directed":true,"weight":2,"verses":"21","note":"군인들이 알렉산더와 루포의 아버지 구레네 사람 시몬에게 억지로 예수의 십자가를 지게 했어요."},
+        {"from":"백부장","to":"예수","label":"고백한 군인","kind":"ally","directed":true,"weight":2,"verses":"39","note":"예수를 향하여 섰던 백부장이 숨지심을 보고 이 사람은 진실로 하나님의 아들이었도다 했어요."},
+        {"from":"아리마대 요셉","to":"예수","label":"장사한 이","kind":"ally","directed":true,"weight":2,"verses":"43-46","note":"존경받는 공회원 아리마대 사람 요셉이 당돌히 빌라도에게 시체를 달라 하여 세마포로 싸서 무덤에 넣었어요."},
+        {"from":"막달라 마리아","to":"예수","label":"지켜본 여인","kind":"ally","directed":true,"weight":2,"verses":"40, 47","note":"막달라 마리아와 여자들이 멀리서 바라보았고 예수를 둔 곳도 보았어요."}
       ],
       "places": [
         {"name":"빌라도의 관정","where":"예루살렘 브라이도리온","what":"재판받으신 곳","weight":2},
@@ -532,11 +532,11 @@
         {"name":"하나님","role":"우편에 앉히신 분","weight":2}
       ],
       "rels": [
-        {"from":"흰옷 입은 청년","to":"막달라 마리아","label":"부활을 알림","kind":"ally","directed":true,"weight":2},
-        {"from":"예수","to":"막달라 마리아","label":"처음 보이심","kind":"ally","directed":true,"weight":3},
-        {"from":"예수","to":"열한 제자","label":"보내신 분","kind":"ally","directed":true,"weight":3},
-        {"from":"막달라 마리아","to":"살로메","label":"함께 간 여인","kind":"ally","directed":false,"weight":1},
-        {"from":"하나님","to":"예수","label":"우편에 앉히심","kind":"ally","directed":true,"weight":2}
+        {"from":"흰옷 입은 청년","to":"막달라 마리아","label":"부활을 알림","kind":"ally","directed":true,"weight":2,"verses":"5-7","note":"흰옷 입은 청년이 놀라지 말라 너희가 십자가에 못 박히신 나사렛 예수를 찾는구나 그가 살아나셨다고 했어요."},
+        {"from":"예수","to":"막달라 마리아","label":"처음 보이심","kind":"ally","directed":true,"weight":3,"verses":"9","note":"예수께서 안식 후 첫날 이른 아침에 살아나신 후 먼저 막달라 마리아에게 보이셨어요."},
+        {"from":"예수","to":"열한 제자","label":"보내신 분","kind":"ally","directed":true,"weight":3,"verses":"14-15","note":"열한 제자에게 나타나 믿지 않음을 꾸짖으시고 너희는 온 천하에 다니며 만민에게 복음을 전파하라 하셨어요."},
+        {"from":"막달라 마리아","to":"살로메","label":"함께 간 여인","kind":"ally","directed":false,"weight":1,"verses":"1","note":"막달라 마리아와 야고보의 어머니 마리아와 살로메가 함께 향품을 사서 무덤에 갔어요."},
+        {"from":"하나님","to":"예수","label":"우편에 앉히심","kind":"ally","directed":true,"weight":2,"verses":"19","note":"주 예수께서 말씀을 마치신 후에 하늘로 올려지사 하나님 우편에 앉으셨어요."}
       ],
       "places": [
         {"name":"무덤","where":"예루살렘 근처 바위 무덤","what":"빈 무덤이 된 곳","weight":3},
