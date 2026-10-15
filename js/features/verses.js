@@ -73,13 +73,30 @@ function formatVerses(text, chapter, twoVersions = false) {
     }
   });
 
-  const body = groups.filter(Boolean).flat();
-  if (!chapter) return body.join("\n");
+  // 역본 사이에는 구분선을 넣음
+  const body = groups.filter(Boolean).map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`);
+  if (!chapter) return body;
   const lo = Math.min(...verses), hi = Math.max(...verses);
   const ref = verses.length
     ? `${chapter.book.name} ${chapter.chap}:${lo === hi ? lo : `${lo}-${hi}`}`
     : `${chapter.book.name} ${chapter.chap}장`;
-  return `${ref}\n${body.join("\n")}`;
+  return `${ref}\n${body}`;
+}
+
+// 두 역본을 이어 붙일 때 사이에 넣는 줄
+const VERSION_DIVIDER = "---";
+
+// 고른 절 번호들을 "신명기 17:3-5,7"처럼
+function versesRef(chapter, nums) {
+  const sorted = [...new Set(nums)].sort((a, b) => a - b);
+  const parts = [];
+  for (let i = 0; i < sorted.length; i++) {
+    let j = i;
+    while (sorted[j + 1] === sorted[j] + 1) j++;
+    parts.push(j > i ? `${sorted[i]}-${sorted[j]}` : String(sorted[i]));
+    i = j;
+  }
+  return `${chapter.book.name} ${chapter.chap}:${parts.join(",")}`;
 }
 
 // ── 일부만 복사해도 온전한 절로 (어디서 복사했든 붙일 역본으로) ──
@@ -102,6 +119,7 @@ async function chapterVerses(idx, ver, ver2) {
       .then((res) => (res.ok ? res.text() : Promise.reject(new Error(`HTTP ${res.status}`))))
       .then((html) => [...new DOMParser().parseFromString(html, "text/html").querySelectorAll("li[datasec]")]
         .map((li) => ({
+          ver: li.getAttribute("datavver") || li.getAttribute("dataVer") || "",
           label: ((li.querySelector(".bible-read-no") || {}).textContent || "").trim(),
           text: ((li.querySelector(".bible-read-cont") || {}).textContent || "").replace(/\s+/g, " ").trim(),
         }))
@@ -354,18 +372,23 @@ async function quickPasteVerses(target) {
   }
   if (PUSH_SERVER) showToast("🔎 구절 찾는 중…");
   const full = await expandToFullVerses(text, target);
+  insertQuote(target, full || (target === "qt"
+    ? formatVerses(text, null)
+    : formatVerses(text, CHAPTERS[currentChapter], state.settings.mode === "two")));
+}
+
+// 만든 구절을 오늘 통독 메모(reading) 또는 묵상 노트(qt) 끝에 붙임
+function insertQuote(target, quote) {
   if (target === "qt") {
-    const quote = full || formatVerses(text, null);
     saveQt({ note: appendQuote((state.qt[qtDate] || {}).note, quote) });
     refreshQtBar();
-    if (sheetTab) renderQtSheet();
+    if (sheetTab && sheetTab !== "verses") renderQtSheet();
     showToast("📝 묵상 노트에 붙였어요", { label: "노트 보기", onClick: () => openSheet("note", renderQtSheet) });
     return;
   }
-  const quote = full || formatVerses(text, CHAPTERS[currentChapter], state.settings.mode === "two");
   const today = todayStr();
   state.dayNotes[today] = appendQuote(dayNoteBase(state.dayNotes[today]), quote);
   persist();
-  if (sheetTab) renderReaderSheet();
+  if (sheetTab && sheetTab !== "verses") renderReaderSheet();
   showToast(`📝 ${quote.split("\n")[0]} · 오늘 메모에 붙였어요`, { label: "메모 보기", onClick: () => openSheet("tools", renderReaderSheet) });
 }

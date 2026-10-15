@@ -44,6 +44,7 @@ function renderQt() {
     const b = e.target.closest("button");
     if (!b) return;
     if (b.id === "q-note") return openSheet("note", renderQtSheet);
+    if (b.id === "q-verses") return openSheet("verses", renderQtSheet);
     if (b.id === "q-done") {
       const wasDone = !!(state.qt[qtDate] && state.qt[qtDate].done);
       saveQt({ done: !wasDone });
@@ -90,6 +91,7 @@ function refreshQtBar() {
   const entry = state.qt[qtDate] || { done: false, note: "" };
   const s = streak(qtDoneDates());
   $("#q-bottom").innerHTML = `
+    <button class="chip-btn tall" id="q-verses">☑️ 구절</button>
     <button class="chip-btn tall" id="q-note">📝 묵상 노트${entry.note.trim() ? `<i class="dot-mark"></i>` : ""}</button>
     <div class="rd-main">
       ${entry.done
@@ -100,6 +102,10 @@ function refreshQtBar() {
 }
 
 function renderQtSheet() {
+  if (sheetTab === "verses") {
+    setSheetTitle(null, "구절 선택");
+    return mountQtPicker($("#sheet-body"));
+  }
   setSheetTitle(null, "묵상 노트");
   const entry = state.qt[qtDate] || { done: false, note: "" };
   const history = Object.keys(state.qt).filter((d) => d !== qtDate && (state.qt[d].done || state.qt[d].note)).sort().reverse().slice(0, 20);

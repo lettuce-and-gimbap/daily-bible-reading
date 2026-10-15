@@ -222,3 +222,16 @@ body.full .topbar { position: static; padding: 6px 12px; }
 .sum-places p small { font-size: .72rem; font-weight: 700; color: var(--accent); margin-right: 6px; }
 .ai-note { text-align: center; }
 .sum-people b small { font-size: .7rem; font-weight: 600; color: var(--muted); margin-left: 5px; }
+
+/* 구절 선택 패널 */
+.vp-head { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.vp-list { display: grid; gap: 6px; }
+.vp-row { display: grid; grid-template-columns: auto auto 1fr; gap: 8px; align-items: start; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer; }
+.vp-row:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.vp-row input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); }
+.vp-num { min-width: 1.6em; font-weight: 700; color: var(--accent); font-size: .86rem; padding-top: 2px; }
+.vp-txt { font-weight: 400; font-size: .92rem; line-height: 1.6; }
+.vp-txt small { display: block; margin-top: 4px; font-size: .84rem; color: var(--muted); }
+.vp-txt small i { font-style: normal; font-weight: 700; margin-right: 4px; }
+.vp-bar { position: sticky; bottom: -14px; display: flex; align-items: center; gap: 6px; padding: 10px 0 14px; margin-top: 8px; background: var(--bg); }
+.vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }

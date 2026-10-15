@@ -253,7 +253,7 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["tools", "메모 · 도구"]];
+const READER_TABS = [["table", "통독표"], ["summary", "요약"], ["verses", "구절"], ["tools", "메모 · 도구"]];
 
 function renderReaderSheet() {
   const pr = progress();
@@ -278,6 +278,7 @@ function renderReaderSheet() {
 
   if (sheetTab === "summary") return renderSummaryTab(body, pr.days[viewingDay]);
   setSheetTitle(READER_TABS);
+  if (sheetTab === "verses") return mountVersePicker(body, "reading", "reading" + currentChapter, currentChapter);
 
   if (sheetTab === "table") {
     body.innerHTML = `
