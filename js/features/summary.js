@@ -588,7 +588,7 @@ function staticDaySummary(day) {
   });
   if (chapters.some((c) => !c)) return null;
   const books = Object.fromEntries(codes.map((code) => [code, staticBooks[code].data]));
-  return composeDay(chapters, books);
+  return composeDay(chapters, books, { all: !!state.settings.graphAll });
 }
 
 function staticSummaryHtml(s) {
@@ -631,7 +631,13 @@ function staticSummaryHtml(s) {
     </section>
     ${s.people.length ? `
     <section class="tool-card sum-card">
-      <h3 class="label">등장 인물 관계도</h3>
+      <div class="rg-head">
+        <h3 class="label">등장 인물 관계도</h3>
+        <div class="seg rg-detail-seg" role="group" aria-label="관계도 자세한 정도">
+          <button data-gdetail="main" class="${state.settings.graphAll ? "" : "on"}">주요 인물</button>
+          <button data-gdetail="all" class="${state.settings.graphAll ? "on" : ""}">전체 인물</button>
+        </div>
+      </div>
       ${relationGraphHtml(s.graphPeople, s.rels)}
     </section>` : ""}
     ${places}

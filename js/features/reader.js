@@ -148,6 +148,8 @@ function buildReader() {
       if (state.settings.ver2 === t.dataset.ver) state.settings.ver2 = VERSIONS.find((v) => v.code !== t.dataset.ver).code;
     } else if (t.dataset.ver2) {
       state.settings.ver2 = t.dataset.ver2;
+    } else if (t.dataset.gdetail) { // 관계도: 주요 인물 ↔ 전체 인물
+      state.settings.graphAll = t.dataset.gdetail === "all";
     } else if (t.id === "d-copy") {
       const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(progress().days[viewingDay])}`;
       copyText(text, "복사했어요. 투두메이트에 붙여넣어 보세요.");

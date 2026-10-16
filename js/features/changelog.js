@@ -1,0 +1,78 @@
+// 업데이트 기록: 정해진 계정에서만 새 버전이 나올 때 바뀐 점을 알려 주고, 관리 탭에서 지난 기록도 보여 줌
+// 기록 내용은 data/changelog.json (새 버전마다 맨 앞에 한 덩어리를 추가). 버전은 index.html의 ?v= 값과 같게 맞춘다.
+// 번호 규칙: 큰 내용 수정(권 단위 보강, 새 기능 묶음)은 정수가 오르고(9 → 10), 간단한 UI·한두 장 수정은 소수(9.1 → 9.2)로 올림
+
+const CHANGELOG_USERS = ["muels0213"];
+const CHANGELOG_SEEN_KEY = "daily5-seen-version";
+let changelogData = null;
+
+function appVersion() {
+  const el = document.querySelector('script[src*="main.js"]');
+  const m = el && el.src.match(/v=([\d.]+)/);
+  return m ? m[1] : "";
+}
+const verParts = (v) => String(v).split(".").map((n) => Number(n) || 0);
+function verCompare(a, b) { // a가 더 새 버전이면 1
+  const x = verParts(a), y = verParts(b);
+  for (let i = 0; i < Math.max(x.length, y.length); i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d > 0 ? 1 : -1; }
+  return 0;
+}
+function changelogEnabled() {
+  return typeof account !== "undefined" && !!account && CHANGELOG_USERS.includes(String(account.id).toLowerCase());
+}
+async function loadChangelog() {
+  if (changelogData) return changelogData;
+  try {
+    const res = await fetch("data/changelog.json", { cache: "no-cache" });
+    changelogData = res.ok ? await res.json() : [];
+  } catch (e) { changelogData = []; }
+  return changelogData;
+}
+
+function changelogEntryHtml(en) {
+  return `<article class="cl-entry ${en.major ? "major" : ""}">
+    <h4><b>v${esc(en.ver)}</b><span>${esc(en.title)}</span><time>${esc(en.date.slice(5).replace("-", "/"))}</time></h4>
+    <ul>${en.items.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+  </article>`;
+}
+
+// since가 있으면 그 뒤에 새로 바뀐 것을 위에 크게, 나머지는 접어서 보여 줌
+async function openChangelog(since) {
+  const log = await loadChangelog();
+  document.querySelector(".cl-pop")?.remove();
+  const cur = appVersion();
+  const fresh = since ? log.filter((e) => verCompare(e.ver, since) > 0 && verCompare(e.ver, cur) <= 0) : log.slice(0, 1);
+  const rest = log.filter((e) => !fresh.includes(e));
+  const pop = document.createElement("div");
+  pop.className = "cl-pop";
+  pop.setAttribute("role", "dialog");
+  pop.setAttribute("aria-label", "업데이트 기록");
+  pop.innerHTML = `<div class="cl-card">
+    <div class="cl-head"><h3>🆕 ${fresh.length ? "새로 바뀐 점" : "업데이트 기록"} <small>현재 v${esc(cur)}</small></h3><button class="icon-btn" data-cl="close" aria-label="닫기">✕</button></div>
+    <div class="cl-body">
+      ${fresh.length ? fresh.map(changelogEntryHtml).join("") : ""}
+      ${rest.length ? `<details ${fresh.length ? "" : "open"}><summary>지난 업데이트 ${rest.length}개</summary>${rest.map(changelogEntryHtml).join("")}</details>` : ""}
+      ${log.length ? "" : `<p class="muted small">기록을 불러오지 못했어요.</p>`}
+    </div></div>`;
+  pop.addEventListener("click", (e) => { if (e.target === pop || e.target.closest("[data-cl=close]")) pop.remove(); });
+  document.body.append(pop);
+}
+
+// 앱을 열 때: 이 계정이 마지막으로 본 버전과 다르면 바뀐 점을 한 번 보여 줌
+async function maybeShowChangelog() {
+  if (!changelogEnabled()) return;
+  const cur = appVersion();
+  let seen = "";
+  try { seen = localStorage.getItem(CHANGELOG_SEEN_KEY) || ""; } catch (e) { /* 저장소를 못 쓰면 매번 보임 */ }
+  if (!cur || seen === cur) return;
+  try { localStorage.setItem(CHANGELOG_SEEN_KEY, cur); } catch (e) { /* 무시 */ }
+  openChangelog(seen || null);
+}
+
+function changelogCardHtml() {
+  if (!changelogEnabled()) return "";
+  return `<section class="card">
+    <button class="btn ghost" id="cl-open">🆕 업데이트 기록 보기 <small class="muted">(현재 v${esc(appVersion())})</small></button>
+  </section>`;
+}
+document.addEventListener("click", (e) => { if (e.target.closest && e.target.closest("#cl-open")) openChangelog(null); });

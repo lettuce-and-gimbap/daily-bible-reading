@@ -4,7 +4,9 @@
 // 인물 이름은 그 장 본문이 부르는 대로 쓰고(아브람/아브라함, 사울/바울), 이름이 바뀌는 장이 그날 분량에 있으면
 // 장의 renames로 두 이름을 잇는다(관계도에 "사울 → 바울" 화살표와 바뀐 계기).
 
-const SUMMARY_LIMITS = { graphPeople: 16, rels: 30, places: 6, events: 12 };
+const SUMMARY_LIMITS = { graphPeople: 10, rels: 14, perPair: 2, places: 6, events: 12 };
+// 관계도의 "전체 인물" 보기: 그날 나오는 인물과 관계를 거의 다 그림 (주요 인물 보기는 위 한도)
+const SUMMARY_LIMITS_ALL = { graphPeople: 40, rels: 100, perPair: 4 };
 
 // 하루 장 수에 따라 장마다 보여 줄 사건 수
 function eventsPerChapter(n) {
@@ -13,7 +15,8 @@ function eventsPerChapter(n) {
 
 // chapters: [{ book: {code, name}, chap, data }] (data = 그 장의 요약 한 덩어리)
 // books: { 책 코드: 책 파일 전체 } (찬양을 권마다 고르므로)
-function composeDay(chapters, books) {
+function composeDay(chapters, books, opts = {}) {
+  const L = opts.all ? { ...SUMMARY_LIMITS, ...SUMMARY_LIMITS_ALL } : SUMMARY_LIMITS;
   const n = chapters.length;
   const multiBook = new Set(chapters.map((c) => c.book.code)).size > 1;
   const unit = (c) => (c.book.code === "psa" ? "편" : "장");
@@ -67,7 +70,7 @@ function composeDay(chapters, books) {
   const ranked = [...people.values()].sort((a, b) => b.score - a.score || a.order - b.order);
   const shown = new Set();
   for (const p of ranked) {
-    if (shown.size >= SUMMARY_LIMITS.graphPeople) break;
+    if (shown.size >= L.graphPeople) break;
     shown.add(p.name);
     renames.forEach((r) => { if (r.from === p.name) shown.add(r.to); if (r.to === p.name) shown.add(r.from); });
   }
@@ -86,14 +89,14 @@ function composeDay(chapters, books) {
       if (note && cur.notes.length < 3 && !cur.notes.some((x) => x.text === note.text)) cur.notes.push(note);
     } else rels.set(key, { from: r.from, to: r.to, label: r.label, kind: r.kind, directed: !!r.directed, score: r.weight || 1, order: ci * 100 + ri, notes: note ? [note] : [] });
   }));
-  // 같은 두 사람 사이는 3개까지(여러 장에 걸쳐 관계가 바뀌면 선이 겹쳐서 읽기 어려움). 나중 장의 관계가 앞서면 뒤를 남김
+  // 같은 두 사람 사이는 몇 개까지(여러 장에 걸쳐 관계가 바뀌면 선이 겹쳐서 읽기 어려움). 나중 장의 관계가 앞서면 뒤를 남김
   const perPair = {};
   const topRels = [...rels.values()].sort((a, b) => b.score - a.score || b.order - a.order)
     .filter((r) => {
       const k = [r.from, r.to].sort().join("|");
       perPair[k] = (perPair[k] || 0) + 1;
-      return perPair[k] <= 3;
-    }).slice(0, SUMMARY_LIMITS.rels);
+      return perPair[k] <= L.perPair;
+    }).slice(0, L.rels);
   // 이름이 바뀐 화살표는 늘 그림 (옛 이름 → 새 이름, 이름표는 바뀐 계기)
   renames.forEach((r) => topRels.unshift({ from: r.from, to: r.to, label: r.why, kind: "rename", directed: true, score: 99, order: -1,
     notes: [{ ref: r.ref, src: r.src, text: r.note || `${r.from}의 이름이 ${r.to}(으)로 바뀌었어요. 계기: ${r.why}.` }] }));
@@ -126,4 +129,4 @@ function composeDay(chapters, books) {
   };
 }
 
-if (typeof module !== "undefined") module.exports = { composeDay, eventsPerChapter, SUMMARY_LIMITS };
+if (typeof module !== "undefined") module.exports = { composeDay, eventsPerChapter, SUMMARY_LIMITS, SUMMARY_LIMITS_ALL };
