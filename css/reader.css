@@ -487,3 +487,11 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rg-grp.two button + button { border-top: 1px dashed var(--line); border-radius: 0 0 10px 10px; }
 .rg-dir + .rg-dir { margin-top: 10px; padding-top: 10px; border-top: 2px dashed var(--line); }
 .rg-dir.cur .rg-rel { font-weight: 700; }
+
+/* 탭 전환 슬라이드 */
+@keyframes slide-in-r { from { transform: translateX(46px); opacity: .25; } to { transform: none; opacity: 1; } }
+@keyframes slide-in-l { from { transform: translateX(-46px); opacity: .25; } to { transform: none; opacity: 1; } }
+.sheet-body.slide-l { animation: slide-in-r .28s ease-out; }
+.sheet-body.slide-r { animation: slide-in-l .28s ease-out; }
+/* QT 탭 묶음이 가로로 늘어나지 않게 */
+#q-tabs { justify-self: start; align-self: flex-start; width: max-content; max-width: 100%; }

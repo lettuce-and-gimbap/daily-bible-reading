@@ -58,14 +58,40 @@ document.addEventListener("scroll", (e) => {
   if (e.target && e.target.id === "sheet-body" && sheetScrollOn && sheetTab) sheetScroll[sheetKeyOf(sheetTab)] = e.target.scrollTop;
 }, true);
 
+// 탭 전환 슬라이드: 통독·QT 탭 순서에 따라 내용이 좌우에서 밀려 들어옴 (닫히는 탭은 그 자리에서 기억만 함)
+const TAB_ORDER = { reader: ["summary", "verses", "tools", "godpia"], qt: ["read", "note", "godpia"] };
+const lastTabBy = { reader: "verses", qt: "read" };
+function rememberTab(group, tab) {
+  const order = TAB_ORDER[group];
+  if (!order || !order.includes(tab)) return;
+  const prev = lastTabBy[group];
+  lastTabBy[group] = tab;
+  if (prev && prev !== tab) lastSlide = order.indexOf(tab) > order.indexOf(prev) ? "slide-l" : "slide-r";
+}
+let lastSlide = "";
+function slideGroupOf(renderFn) {
+  if (typeof renderReaderSheet === "function" && renderFn === renderReaderSheet) return "reader";
+  if (typeof renderQtSheet === "function" && renderFn === renderQtSheet) return "qt";
+  return null;
+}
+
 function openSheet(tab, renderFn) {
   const key = sheetKeyOf(tab);
   sheetScrollOn = false;
+  const group = slideGroupOf(renderFn);
+  const dir = group ? (rememberTab(group, tab), lastSlide) : "";
+  lastSlide = "";
   sheetTab = tab;
   $("#sheet").hidden = false;
   $("#sheet-bg").hidden = false;
   document.body.classList.add("sheet-open");
   renderFn();
+  if (dir) {
+    const body = $("#sheet-body");
+    body.classList.remove("slide-l", "slide-r");
+    void body.offsetWidth;
+    body.classList.add(dir);
+  }
   restoreSheetScroll(key);
   if (onSheetChange) onSheetChange();
 }
