@@ -61,10 +61,8 @@ async function maybeShowChangelog() {
   let seen = "";
   try { seen = localStorage.getItem(CHANGELOG_SEEN_KEY) || ""; } catch (e) { /* 저장소를 못 쓰면 매번 보임 */ }
   if (!cur || seen === cur) return;
-  if (seen && verCompare(cur, seen) <= 0) { // 예전에 본 버전보다 새 것이 아니면(되돌린 버전) 팝업 없이 기록만 맞춤
-    try { localStorage.setItem(CHANGELOG_SEEN_KEY, cur); } catch (e) { /* 무시 */ }
-    return;
-  }
+  // 예전 화면(브라우저가 남겨 둔 옛 버전)이 열렸을 때는 팝업도, 기록 바꿈도 하지 않음 (기록을 낮추면 새 버전에서 또 뜸)
+  if (seen && verCompare(cur, seen) <= 0) return;
   try { localStorage.setItem(CHANGELOG_SEEN_KEY, cur); } catch (e) { /* 무시 */ }
   openChangelog(seen || null);
 }
