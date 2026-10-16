@@ -119,6 +119,7 @@ function renderStats() {
     </section>` : ""}
 
     ${accountCardHtml()}
+    ${changelogCardHtml()}
     ${reminderCardHtml()}
 
     ${exportCardHtml()}

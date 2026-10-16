@@ -1,2 +1,3 @@
-.claude/
 data/summary/.patch.lock
+tools/commentary/.bible-cache/
+.claude/

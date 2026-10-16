@@ -74,6 +74,9 @@ node tools/commentary/ocr.mjs
 # 2) 쓸 장의 주석 본문 보기 (해당 장 쪽만 뽑아 줌)
 node tools/commentary/chapter.mjs rut 1
 
+# 2-0) 성경 본문을 글자로 뽑기 (캡처 이미지보다 토큰이 적게 듦. 갓피아 본문, 저장소에 커밋 금지)
+node tools/commentary/bibletext.mjs 2sa 15-17 han,easy   # --plain(본문만) --save(.bible-cache에 저장)
+
 # 2-1) 관계마다 구절 풀이 붙이기: 관계 목록 보기 → 묶음 파일 작성 → 붙이기
 node tools/commentary/rels.cjs gen 1 25
 node tools/commentary/addnote.cjs 묶음.json   # { "gen 22": [[from, to, 절, 풀이, (label)]] }
