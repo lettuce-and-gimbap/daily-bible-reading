@@ -2,7 +2,7 @@
 // 기록 내용은 data/changelog.json (새 버전마다 맨 앞에 한 덩어리를 추가). 버전은 index.html의 ?v= 값과 같게 맞춘다.
 // 번호 규칙: 큰 내용 수정(권 단위 보강, 새 기능 묶음)은 정수가 오르고(9 → 10), 간단한 UI·한두 장 수정은 소수(9.1 → 9.2)로 올림
 
-const CHANGELOG_USERS = ["muels0213"];
+const CHANGELOG_USERS = ["buucksoo"];
 const CHANGELOG_SEEN_KEY = "daily5-seen-version";
 let changelogData = null;
 
