@@ -22,9 +22,11 @@ function memoBlocks(text) {
     const first = lines[0];
     const isRef = MEMO_REF.test(first);
     const kind = isRef || MEMO_VERSE_LINE.test(first) ? "quote" : "note";
-    const shorten = (s, n) => (s.length > n ? s.slice(0, n) + "…" : s);
-    const label = isRef ? first : shorten(first, 26);
-    const preview = lines.slice(1).join(" ");
+    // 글은 줄여 보여 주지 않고 전부 보임: 첫 줄은 제목처럼, 나머지는 줄바꿈 그대로 아래에
+    // (QT 노트처럼 "권 장:절" 줄 없이 붙은 구절은 제목만 달고 모든 줄을 아래에)
+    const bare = kind === "quote" && !isRef;
+    const label = bare ? "붙여넣은 구절" : first;
+    const preview = (bare ? lines : lines.slice(1)).join("\n");
     const n = seen[block] = (seen[block] || 0) + 1; // 똑같은 글이 두 번 있어도 따로 고를 수 있게
     blocks.push({ text: block, sep: pieces[i + 1] !== undefined ? pieces[i + 1] : m[2], kind, label, preview, key: `${n}#${block}` });
   }
