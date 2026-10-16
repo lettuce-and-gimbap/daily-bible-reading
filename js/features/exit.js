@@ -6,8 +6,11 @@ const EXIT_FIRST = "appEntry";
 const EXIT_GUARD = "appGuard";
 let exitOpen = false;
 
+// 첫 화면에 있을 때만 guard를 쌓음 (이미 guard 위라면 그대로)
 function armExitGuard() {
-  try { history.pushState({ [EXIT_GUARD]: 1 }, "", location.href); } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
+  try {
+    if (history.state && history.state[EXIT_FIRST]) history.pushState({ [EXIT_GUARD]: 1 }, "", location.href);
+  } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
 }
 
 function showExitSheep() {
@@ -46,3 +49,7 @@ try {
 window.addEventListener("popstate", (e) => {
   if (e.state && e.state[EXIT_FIRST]) showExitSheep();
 });
+// 브라우저는 사용자가 누르지 않은 상태에서 쌓은 기록을 뒤로가기에서 건너뛰기도 해서,
+// 첫 화면에 있을 때 사용자가 누르는 순간마다 guard를 다시 쌓아 둠 (매 뒤로가기마다 양이 나오게)
+document.addEventListener("pointerdown", armExitGuard, true);
+document.addEventListener("keydown", armExitGuard, true);
