@@ -1,5 +1,5 @@
 // QT 화면: 갓피아 "날마다 솟는 샘물"의 본문·질문·해설·기도를 받아 앱이 직접 보여 주고(worker/의 /qt + /bible),
-// 갓피아 화면은 "갓피아 원문" 탭을 누를 때만 팝업으로 띄움. 날짜 이동·QT 완료·묵상 노트
+// 갓피아 화면은 "갓피아" 탭을 누를 때만 팝업으로 띄움. 날짜 이동·QT 완료·묵상 노트
 
 let qtDate = todayStr();
 
@@ -23,7 +23,7 @@ function renderQt() {
           ${isToday ? "" : `<button class="chip-btn" id="q-today">오늘</button>`}
           <span class="q-check" id="q-check"></span>
         </div>
-        <div class="rd-tabs" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
+        <div class="seg rd-seg" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
       </div>
       <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>
         <div class="qp-fixed" id="q-selbar" hidden>
@@ -177,7 +177,7 @@ function refreshQtBar() {
   if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
-const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["godpia", "갓피아 원문"]];
+const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["godpia", "갓피아"]];
 
 function syncQtTabs() {
   refreshQtAnswerBoxes();
@@ -193,7 +193,7 @@ async function fillQtRead(date) {
   try { d = await qtInfo(date); } catch (e) { d = null; }
   if (date !== qtDate || !box.isConnected) return;
   if (!d || !d.ref) {
-    box.innerHTML = `<p class="muted small">QT를 불러오지 못했어요. 인터넷 연결을 확인하거나 <b>갓피아 원문</b> 탭에서 보세요.</p>`;
+    box.innerHTML = `<p class="muted small">QT를 불러오지 못했어요. 인터넷 연결을 확인하거나 <b>갓피아</b> 탭에서 보세요.</p>`;
     return;
   }
   const answers = (state.qt[qtDate] || {}).answers || {};
@@ -241,7 +241,7 @@ async function paintQtPassage(date, d) {
     qtPassageCount();
   } catch (e) {
     if ($("#q-selbar")) $("#q-selbar").hidden = true;
-    box.querySelector(".qp-body").innerHTML = `<p class="muted small">본문을 불러오지 못했어요. <b>갓피아 원문</b> 탭에서 볼 수 있어요.</p>`;
+    box.querySelector(".qp-body").innerHTML = `<p class="muted small">본문을 불러오지 못했어요. <b>갓피아</b> 탭에서 볼 수 있어요.</p>`;
   }
 }
 
@@ -328,7 +328,7 @@ function qtRanges(ref) {
 
 function renderQtSheet() {
   if (sheetTab === "godpia") { // 갓피아 화면은 필요할 때만 팝업으로
-    setSheetTitle(null, `갓피아 원문 <a class="chip-btn" href="${godpiaQtUrl(qtDate)}" target="_blank" rel="noopener" aria-label="새 창으로 열기">↗</a>`);
+    setSheetTitle(null, `갓피아 <a class="chip-btn" href="${godpiaQtUrl(qtDate)}" target="_blank" rel="noopener" aria-label="새 창으로 열기">↗</a>`);
     $("#sheet-body").innerHTML = `<div class="sheet-frame"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${godpiaQtUrl(qtDate)}" ${GODPIA_SANDBOX}></iframe></div>`;
     return;
   }

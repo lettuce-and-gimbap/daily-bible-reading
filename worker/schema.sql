@@ -27,3 +27,9 @@ CREATE TABLE IF NOT EXISTS login_fails (
   count INTEGER NOT NULL,
   until INTEGER NOT NULL
 );
+-- 벅수의 계획(관리자 메모) 한 장: key = 'plan' (worker/src/plan.js)
+CREATE TABLE IF NOT EXISTS site_notes (
+  key TEXT PRIMARY KEY,
+  body TEXT NOT NULL,
+  updated INTEGER NOT NULL
+);
