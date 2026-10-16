@@ -13,6 +13,7 @@ function route() {
   window.scrollTo(0, 0);
   queueReminderSync();
   updateStreakChip();
+  updateAdminBadge();
 }
 window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#link=")) route(); });
 

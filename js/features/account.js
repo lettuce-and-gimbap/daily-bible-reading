@@ -114,11 +114,23 @@ function queueAccountSync() {
   }, 3000);
 }
 
+// 관리자 계정: 아래 아이디로 로그인하면 관리자 권한이 켜짐 (권한은 여기에 하나씩 추가)
+const ADMIN_IDS = ["bucksoo"];
+function isAdmin() {
+  return !!account && ADMIN_IDS.includes(String(account.id).toLowerCase());
+}
+// 관리자 표시: 좌상단 빈 공간에 성경과 펜을 합친 작은 그림
+function updateAdminBadge() {
+  const el = document.getElementById("admin-badge");
+  if (el) el.hidden = !isAdmin();
+}
+
 async function signInWith(path, body) {
   const r = await accountApi(path, body);
   account = { id: r.id, token: r.token, syncedAt: 0, dirty: false };
   saveAccount();
   await syncAccount({ first: true });
+  updateAdminBadge();
   showToast(`👋 ${r.id} 계정으로 로그인했어요`);
 }
 
