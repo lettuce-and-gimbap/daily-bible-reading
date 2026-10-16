@@ -669,7 +669,28 @@ function staticDaySummary(day) {
   });
   if (chapters.some((c) => !c)) return null;
   const books = Object.fromEntries(codes.map((code) => [code, staticBooks[code].data]));
-  return composeDay(chapters, books, { all: !!state.settings.graphAll });
+  const opts = { all: !!state.settings.graphAll };
+  const out = composeDay(chapters, books, opts);
+  // 관계도는 장마다 따로도 그릴 수 있게: 장별 결과와, 지금 읽는 장이 이 분량의 몇 번째인지
+  out.byChap = chapters.length > 1 ? chapters.map((c) => composeDay([c], books, opts)) : null;
+  out.autoIdx = day.indexOf(currentChapter);
+  return out;
+}
+
+// 관계도에 그릴 장: 장을 골랐으면 그 장, 골라 둔 게 없으면 지금 읽는 장(분량 안에 있을 때), "전체"면 분량 전체
+function graphSource(s) {
+  const pick = state.settings.graphChap;
+  const idx = pick === "all" ? -1 : typeof pick === "number" ? pick : s.autoIdx;
+  if (!s.byChap || idx == null || idx < 0 || idx >= s.byChap.length) return s;
+  return s.byChap[idx];
+}
+function chapChipsHtml(s) {
+  if (!s.byChap) return "";
+  const cur = graphSource(s) === s ? -1 : s.byChap.indexOf(graphSource(s));
+  return `<div class="rg-chips rg-chap" role="group" aria-label="관계도로 볼 장">
+    <button type="button" data-gchap="all" class="${cur < 0 ? "on" : ""}">분량 전체</button>
+    ${s.flow.map((f, i) => `<button type="button" data-gchap="${i}" class="${cur === i ? "on" : ""}">${esc(f.ref)}</button>`).join("")}
+  </div>`;
 }
 
 function staticSummaryHtml(s) {
@@ -719,7 +740,8 @@ function staticSummaryHtml(s) {
           <button data-gdetail="all" class="${state.settings.graphAll ? "on" : ""}">전체 인물</button>
         </div>
       </div>
-      ${relationGraphHtml(s.graphPeople, s.rels)}
+      ${chapChipsHtml(s)}
+      ${(() => { const g = graphSource(s); return relationGraphHtml(g.graphPeople, g.rels); })()}
     </section>` : ""}
     ${places}
     ${songs}`;
