@@ -468,3 +468,12 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .qp-fixed .vp-n { min-width: 0; font-size: .8rem; overflow: hidden; text-overflow: ellipsis; }
 .qp-fixed .btn { flex: none; padding: 6px 9px; font-size: .82rem; white-space: nowrap; }
 .qp-fixed .btn.text { padding: 6px 6px; }
+
+/* 관계도 자세히 보기: 인물 찾기 */
+.rg-find { display: grid; gap: 6px; }
+.rg-find-row { display: flex; gap: 6px; }
+.rg-q { flex: 1; min-width: 0; height: 34px; border: 1px solid var(--line); border-radius: 10px; padding: 0 10px; font-size: .9rem; background: var(--surface); color: var(--ink); }
+.rg-sort { height: 34px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 0 10px; font-size: .82rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.rg-chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; }
+.rg-chips button { flex: none; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); border-radius: 99px; padding: 4px 11px; font-size: .82rem; cursor: pointer; }
+.rg-chips button.on { background: var(--primary, #2f6f55); border-color: transparent; color: #fff; }
