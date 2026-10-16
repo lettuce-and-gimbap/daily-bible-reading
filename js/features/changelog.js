@@ -1,4 +1,4 @@
-// 업데이트 기록: 새 버전을 처음 열 때 바뀐 점을 한 번 알려 주고, 관리 탭에서 지난 기록도 볼 수 있음 (모든 사용자)
+// 업데이트 기록: 새 버전을 처음 열 때 바뀐 점을 한 번 알려 주는 팝업은 관리자만, 관리 탭의 기록 보기는 모든 사용자
 // 기록 내용은 data/changelog.json (새 버전마다 맨 앞에 한 덩어리를 추가). 버전은 index.html의 ?v= 값과 같게 맞춘다.
 // 번호 규칙: 큰 내용 수정(권 단위 보강, 새 기능 묶음)은 정수가 오르고(9 → 10), 간단한 UI·한두 장 수정은 소수(9.1 → 9.2)로 올림
 
@@ -57,6 +57,7 @@ async function openChangelog(since) {
 
 // 앱을 열 때: 이 기기가 마지막으로 본 버전과 다르면 바뀐 점을 한 번 보여 줌
 async function maybeShowChangelog() {
+  if (!isAdmin()) return; // 첫 접속 팝업은 관리자에게만
   const cur = appVersion();
   let seen = "";
   try { seen = localStorage.getItem(CHANGELOG_SEEN_KEY) || ""; } catch (e) { /* 저장소를 못 쓰면 매번 보임 */ }
