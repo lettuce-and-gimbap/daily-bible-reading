@@ -32,3 +32,15 @@ document.getElementById("app-reload").addEventListener("click", async (e) => {
   ]);
   location.reload();
 });
+
+// 나갔다 돌아오면 브라우저가 예전 화면(예전 버전)을 그대로 보여 줄 수 있어서, 새 버전이 올라왔으면 새로 불러옴
+async function refreshIfNewVersion() {
+  try {
+    const html = await (await fetch(`index.html?check=${Date.now()}`, { cache: "no-store" })).text();
+    const latest = (html.match(/js\/main\.js\?v=([\d.]+)/) || [])[1];
+    const current = (document.querySelector('script[src*="main.js"]').src.match(/v=([\d.]+)/) || [])[1];
+    if (latest && current && latest !== current) location.replace(`${location.pathname}?r=${Date.now()}${location.hash}`);
+  } catch (e) { /* 오프라인이면 그대로 둠 */ }
+}
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshIfNewVersion(); });
+window.addEventListener("pageshow", refreshIfNewVersion);
