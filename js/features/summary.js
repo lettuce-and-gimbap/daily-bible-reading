@@ -486,6 +486,12 @@ function rgOpen(id) {
   // 화면 좌표 → 관계도 좌표
   const toSvg = (cx, cy) => { const p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(svg.getScreenCTM().inverse()); };
   const pointers = new Map();
+  // 한 인물(또는 한 관계)에 집중해 본 상태에서 "움직일 수 있는" 인물: 본인과 직접 연결된 인물. 집중한 게 없으면 모두
+  const rgActive = (n) => {
+    if (!sel) return true;
+    if (sel.edge != null) return m.rels[sel.edge].from === n || m.rels[sel.edge].to === n;
+    return n === sel.node || m.rels.some((r) => (r.from === sel.node && r.to === n) || (r.to === sel.node && r.from === n));
+  };
   let drag = null; // { node, dx, dy, moved } 또는 { pan, sx, sy, view } 또는 { pinch, d0, view, mid }
   svg.addEventListener("pointerdown", (e) => {
     try { svg.setPointerCapture(e.pointerId); } catch (err) { /* 캡처가 안 되는 환경이면 그냥 진행 */ }
@@ -497,7 +503,7 @@ function rgOpen(id) {
     }
     const nodeEl = e.target.closest("[data-node]"), edgeEl = e.target.closest("[data-edge]");
     const p = toSvg(e.clientX, e.clientY);
-    if (nodeEl) { const n = nodeEl.dataset.node; drag = { node: n, dx: pos[n].x - p.x, dy: pos[n].y - p.y, sx: e.clientX, sy: e.clientY, moved: false }; }
+    if (nodeEl) { const n = nodeEl.dataset.node; drag = { node: n, locked: !rgActive(n), dx: pos[n].x - p.x, dy: pos[n].y - p.y, sx: e.clientX, sy: e.clientY, moved: false }; }
     else drag = { pan: true, edge: edgeEl ? +edgeEl.dataset.edge : null, sx: e.clientX, sy: e.clientY, view: { ...view }, moved: false };
   });
   svg.addEventListener("pointermove", (e) => {
@@ -514,6 +520,7 @@ function rgOpen(id) {
     }
     if (Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 5) drag.moved = true;
     if (!drag.moved) return;
+    if (drag.node && drag.locked) return; // 집중해 본 인물과 그 직접 연결 인물이 아니면 끌어도 안 움직임(누르면 그 인물로 이동)
     if (drag.node) {
       const p = toSvg(e.clientX, e.clientY);
       pos[drag.node].x = p.x + drag.dx; pos[drag.node].y = p.y + drag.dy;
