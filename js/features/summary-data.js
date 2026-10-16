@@ -4,7 +4,7 @@
 // 인물 이름은 그 장 본문이 부르는 대로 쓰고(아브람/아브라함, 사울/바울), 이름이 바뀌는 장이 그날 분량에 있으면
 // 장의 renames로 두 이름을 잇는다(관계도에 "사울 → 바울" 화살표와 바뀐 계기).
 
-const SUMMARY_LIMITS = { graphPeople: 9, rels: 11, places: 6, events: 12 };
+const SUMMARY_LIMITS = { graphPeople: 16, rels: 30, places: 6, events: 12 };
 
 // 하루 장 수에 따라 장마다 보여 줄 사건 수
 function eventsPerChapter(n) {
@@ -86,13 +86,13 @@ function composeDay(chapters, books) {
       if (note && cur.notes.length < 3 && !cur.notes.some((x) => x.text === note.text)) cur.notes.push(note);
     } else rels.set(key, { from: r.from, to: r.to, label: r.label, kind: r.kind, directed: !!r.directed, score: r.weight || 1, order: ci * 100 + ri, notes: note ? [note] : [] });
   }));
-  // 같은 두 사람 사이는 2개까지(여러 장에 걸쳐 관계가 바뀌면 선이 겹쳐서 읽기 어려움). 나중 장의 관계가 앞서면 뒤를 남김
+  // 같은 두 사람 사이는 3개까지(여러 장에 걸쳐 관계가 바뀌면 선이 겹쳐서 읽기 어려움). 나중 장의 관계가 앞서면 뒤를 남김
   const perPair = {};
   const topRels = [...rels.values()].sort((a, b) => b.score - a.score || b.order - a.order)
     .filter((r) => {
       const k = [r.from, r.to].sort().join("|");
       perPair[k] = (perPair[k] || 0) + 1;
-      return perPair[k] <= 2;
+      return perPair[k] <= 3;
     }).slice(0, SUMMARY_LIMITS.rels);
   // 이름이 바뀐 화살표는 늘 그림 (옛 이름 → 새 이름, 이름표는 바뀐 계기)
   renames.forEach((r) => topRels.unshift({ from: r.from, to: r.to, label: r.why, kind: "rename", directed: true, score: 99, order: -1,
