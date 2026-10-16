@@ -55,14 +55,25 @@ async function openChangelog(since) {
   document.body.append(pop);
 }
 
-// 앱을 열 때: 이 기기가 마지막으로 본 버전과 다르면 바뀐 점을 한 번 보여 줌
+// 지금 서버에 올라간 최신 버전 (브라우저가 남겨 둔 옛 화면인지 확인하려고)
+async function latestVersion() {
+  try {
+    const html = await (await fetch(`index.html?check=${Date.now()}`, { cache: "no-store" })).text();
+    return (html.match(/js\/main\.js\?v=([\d.]+)/) || [])[1] || "";
+  } catch (e) { return ""; }
+}
+
+// 앱을 열 때: 최신 화면이고, 이 기기가 본 버전보다 새 버전일 때만 한 번 보여 줌
+// 옛 화면(최신이 아님)이면 아무것도 하지 않음 → 새 화면이 다시 불러와질 때 판단
 async function maybeShowChangelog() {
   const cur = appVersion();
+  if (!cur) return;
+  const latest = await latestVersion();
+  if (latest && latest !== cur) return;
   let seen = "";
   try { seen = localStorage.getItem(CHANGELOG_SEEN_KEY) || ""; } catch (e) { /* 저장소를 못 쓰면 매번 보임 */ }
-  if (!cur || seen === cur) return;
-  // 예전 화면(브라우저가 남겨 둔 옛 버전)이 열렸을 때는 팝업도, 기록 바꿈도 하지 않음 (기록을 낮추면 새 버전에서 또 뜸)
-  if (seen && verCompare(cur, seen) <= 0) return;
+  if (seen === cur) return;
+  if (seen && verCompare(cur, seen) <= 0) return; // 본 버전보다 낮으면 기록을 낮추지 않음
   try { localStorage.setItem(CHANGELOG_SEEN_KEY, cur); } catch (e) { /* 무시 */ }
   openChangelog(seen || null);
 }
