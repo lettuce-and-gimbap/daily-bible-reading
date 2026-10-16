@@ -14,17 +14,20 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="css/base.css?v=49">
-  <link rel="stylesheet" href="css/setup.css?v=49">
-  <link rel="stylesheet" href="css/reader.css?v=49">
-  <link rel="stylesheet" href="css/stats.css?v=49">
+  <link rel="stylesheet" href="css/base.css?v=50">
+  <link rel="stylesheet" href="css/setup.css?v=50">
+  <link rel="stylesheet" href="css/reader.css?v=50">
+  <link rel="stylesheet" href="css/stats.css?v=50">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#today">
-      <img src="icons/icon-192.png" alt="" width="30" height="30">
-      <span>경건생활</span>
-    </a>
+    <div class="topbar-left">
+      <a class="brand" href="#today">
+        <img src="icons/icon-192.png" alt="" width="30" height="30">
+        <span>경건생활</span>
+      </a>
+      <span class="streak-chip" id="streak-chip" hidden>🔥 <b>0</b>일</span>
+    </div>
     <div class="topbar-right">
       <nav class="tabs" aria-label="메뉴">
         <a href="#today" data-route="today">통독</a>
@@ -47,27 +50,27 @@
   </footer>
 
   <!-- 순서가 중요: core(데이터·저장) → shared(공통) → features(화면별 기능) → main(시작) -->
-  <script src="js/core/bible.js?v=49"></script>
-  <script src="js/core/store.js?v=49"></script>
-  <script src="js/core/config.js?v=49"></script>
-  <script src="js/core/versecounts.js?v=49"></script>
-  <script src="js/shared/state.js?v=49"></script>
-  <script src="js/shared/godpia.js?v=49"></script>
-  <script src="js/shared/ui.js?v=49"></script>
-  <script src="js/features/setup.js?v=49"></script>
-  <script src="js/features/reader.js?v=49"></script>
-  <script src="js/features/verses.js?v=49"></script>
-  <script src="js/features/picker.js?v=49"></script>
-  <script src="js/features/memopick.js?v=49"></script>
-  <script src="js/features/summary-data.js?v=49"></script>
-  <script src="js/features/summary.js?v=49"></script>
-  <script src="js/features/qt.js?v=49"></script>
-  <script src="js/features/stats.js?v=49"></script>
-  <script src="js/features/export.js?v=49"></script>
-  <script src="js/features/reminder.js?v=49"></script>
-  <script src="js/features/account.js?v=49"></script>
-  <script src="js/features/celebrate.js?v=49"></script>
-  <script src="js/main.js?v=49"></script>
+  <script src="js/core/bible.js?v=50"></script>
+  <script src="js/core/store.js?v=50"></script>
+  <script src="js/core/config.js?v=50"></script>
+  <script src="js/core/versecounts.js?v=50"></script>
+  <script src="js/shared/state.js?v=50"></script>
+  <script src="js/shared/godpia.js?v=50"></script>
+  <script src="js/shared/ui.js?v=50"></script>
+  <script src="js/features/setup.js?v=50"></script>
+  <script src="js/features/reader.js?v=50"></script>
+  <script src="js/features/verses.js?v=50"></script>
+  <script src="js/features/picker.js?v=50"></script>
+  <script src="js/features/memopick.js?v=50"></script>
+  <script src="js/features/summary-data.js?v=50"></script>
+  <script src="js/features/summary.js?v=50"></script>
+  <script src="js/features/qt.js?v=50"></script>
+  <script src="js/features/stats.js?v=50"></script>
+  <script src="js/features/export.js?v=50"></script>
+  <script src="js/features/reminder.js?v=50"></script>
+  <script src="js/features/account.js?v=50"></script>
+  <script src="js/features/celebrate.js?v=50"></script>
+  <script src="js/main.js?v=50"></script>
   <script>document.getElementById("app-ver").textContent = "v" + (document.querySelector('script[src*="main.js"]').src.match(/v=(\d+)/) || [, "?"])[1];</script>
 </body>
 </html>

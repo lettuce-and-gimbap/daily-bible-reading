@@ -29,6 +29,7 @@ function persist() {
   saveState(state);
   queueReminderSync();
   if (typeof queueAccountSync === "function") queueAccountSync(); // 로그인했으면 서버에도 (features/account.js)
+  if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
 /* ---------- 진행 계산 ---------- */
@@ -66,6 +67,23 @@ function progress() {
     plannedEnd: addDays(plan.startDate, planDays(plan).length - 1),
     projectedEnd: finished ? null : addDays(today, remainingDays - (todayQuotaMet ? 0 : 1)),
   };
+}
+
+// 통독 목표를 채운 날짜들 (연속 읽은 일 수에 셈)
+// 그날 읽은 장 수가 그날의 목표 분량 이상이어야 함. 목표는 계획을 세울 때 정한 하루 장 수이고,
+// 시편 119편처럼 혼자 읽는 날이나 계획 끝의 남은 분량처럼 짧게 나뉜 Day는 그 Day의 크기가 목표임.
+// 목표보다 더 읽은 날은 괜찮고, 덜 읽은 날은 세지 않음. 계획이 없으면 읽은 날을 모두 셈
+function readGoalDates() {
+  const byDate = readDates();
+  if (!state.plan) return new Set(Object.keys(byDate));
+  const out = new Set();
+  Object.entries(byDate).forEach(([d, list]) => {
+    // 그 날짜 아침 기준으로 짠 Day 중 첫 Day(= 그날 읽기로 한 분량)의 크기
+    const { days, headCount } = planDaysFor(state.plan, state.read, d);
+    const goal = (days[headCount] || []).length || 1;
+    if (list.length >= goal) out.add(d);
+  });
+  return out;
 }
 
 function readDates() {

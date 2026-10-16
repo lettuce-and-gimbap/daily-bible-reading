@@ -21,11 +21,18 @@ function renderQt() {
           </label>
           <button class="icon-btn" id="q-next" ${isToday ? "disabled" : ""} aria-label="다음날">›</button>
           ${isToday ? "" : `<button class="chip-btn" id="q-today">오늘</button>`}
+          <span class="q-check" id="q-check"></span>
         </div>
         <div class="rd-tabs" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
       </div>
-      <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>${pasteFabHtml()}${sheetShell()}</div>
-      <div class="rd-bottom" id="q-bottom"></div>
+      <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>
+        <div class="qp-fixed" id="q-selbar" hidden>
+          <span class="vp-n">절을 눌러 고르세요</span>
+          <button class="btn text small" data-qa="all">전체</button>
+          <button class="btn text small" data-qa="clear">해제</button>
+          <button class="btn soft small" data-qa="copy">📋 복사</button>
+          <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
+        </div>${pasteFabHtml()}${sheetShell()}</div>
     </div>`;
   onSheetChange = syncQtTabs;
   $("#q-tabs").addEventListener("click", (e) => {
@@ -50,15 +57,19 @@ function renderQt() {
   const todayBtn = $("#q-today");
   if (todayBtn) todayBtn.addEventListener("click", () => setDate(todayStr()));
 
-  $("#q-bottom").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    if (b.id === "q-done") {
-      const wasDone = !!(state.qt[qtDate] && state.qt[qtDate].done);
+  // 우상단 읽음 스위치 (통독과 같은 모양): 켜면 QT 완료, 끄면 취소
+  $("#q-check").addEventListener("click", (e) => {
+    const b = e.target.closest("#q-done");
+    if (!b || b.disabled) return;
+    const wasDone = !!(state.qt[qtDate] && state.qt[qtDate].done);
+    b.classList.toggle("on");
+    b.setAttribute("aria-checked", String(b.classList.contains("on")));
+    b.disabled = true;
+    setTimeout(() => {
       saveQt({ done: !wasDone });
       if (!wasDone) showToast("QT 완료! 오늘도 말씀과 함께 🙏");
       refreshQtBar();
-    }
+    }, 170);
   });
 
   const body = $("#sheet-body");
@@ -156,15 +167,14 @@ function saveQt(patch) {
 
 function refreshQtBar() {
   syncQtTabs();
-  const entry = state.qt[qtDate] || qtEmpty();
-  const s = streak(qtDoneDates());
-  $("#q-bottom").innerHTML = `
-    <div class="rd-main">
-      ${entry.done
-        ? `<button class="btn soft big" id="q-done">✓ QT 완료 · 취소하기</button>`
-        : `<button class="btn primary big" id="q-done">🙏 QT 완료하기</button>`}
-    </div>
-    <span class="streak" title="QT 연속 일수">🔥 <b>${s}</b>일</span>`;
+  const done = !!(state.qt[qtDate] || {}).done;
+  const box = $("#q-check");
+  if (box) box.innerHTML = `<button class="read-switch ${done ? "on" : ""}" id="q-done" role="switch" aria-checked="${done}"
+      title="${done ? "QT 완료 취소" : "QT를 마쳤어요"}">
+      <span class="rs-label">${done ? "더 읽을래요" : "읽었어요"}</span>
+      <span class="rs-track" aria-hidden="true"><span class="rs-knob"></span></span>
+    </button>`;
+  if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
 const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["godpia", "갓피아 원문"]];
@@ -212,6 +222,8 @@ async function paintQtPassage(date, d) {
     <div class="opts vp-vers">${VERSIONS.map((v) => `<button class="opt ${vers.includes(v.code) ? "on" : ""}" data-pv="${v.code}">${v.name}</button>`).join("")}</div>
     <div class="qp-body"><p class="muted small">본문 불러오는 중…</p></div>`;
   qtPassage = { rows: [], d };
+  const bar = $("#q-selbar");
+  if (bar) bar.hidden = true;
   try {
     const ranges = qtRanges(d.ref);
     const parts = await Promise.all(ranges.map((r) => versePairs(r.idx, (n) => n >= r.lo && n <= r.hi, vers)));
@@ -224,26 +236,21 @@ async function paintQtPassage(date, d) {
           <input type="checkbox" class="sr-only" data-ri="${i}">
           <span class="vp-num">${esc(r.label)}</span>
           <span class="vp-txt">${esc(r.texts[0])}${r.texts[1] ? `<small><i>${esc(names[1] || "")}</i> ${esc(r.texts[1])}</small>` : ""}</span>
-        </label>`).join("")}</div>
-      <div class="vp-bar qp-bar">
-        <span class="vp-n">절을 눌러 고르세요</span>
-        <button class="btn text small" data-qa="all">전체</button>
-        <button class="btn text small" data-qa="clear">해제</button>
-        <button class="btn soft small" data-qa="copy">📋 복사</button>
-        <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
-      </div>`;
+        </label>`).join("")}</div>`;
+    $("#q-selbar").hidden = false;
     qtPassageCount();
   } catch (e) {
+    if ($("#q-selbar")) $("#q-selbar").hidden = true;
     box.querySelector(".qp-body").innerHTML = `<p class="muted small">본문을 불러오지 못했어요. <b>갓피아 원문</b> 탭에서 볼 수 있어요.</p>`;
   }
 }
 
 function qtPassageCount() {
-  const box = $("#q-passage");
-  const n = box.querySelectorAll("input[data-ri]:checked").length;
-  const label = box.querySelector(".vp-n");
-  if (label) label.textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
-  box.querySelectorAll('[data-qa="copy"], [data-qa="paste"]').forEach((b) => { b.disabled = !n; });
+  const bar = $("#q-selbar");
+  if (!bar) return;
+  const n = $("#q-passage").querySelectorAll("input[data-ri]:checked").length;
+  bar.querySelector(".vp-n").textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
+  bar.querySelectorAll('[data-qa="copy"], [data-qa="paste"]').forEach((b) => { b.disabled = !n; });
 }
 
 // 고른 절 → 장마다 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식 (장이 둘이면 빈 줄로 나눔)
@@ -262,9 +269,11 @@ function qtPassageQuote() {
 // 본문 · 묵상 화면(#q-content) 안의 눌림·입력을 모아 처리 (화면 안쪽만 바뀌어도 한 번만 연결)
 function bindQtContent() {
   const content = $("#q-content");
-  content.addEventListener("change", (e) => { if (e.target.closest("input[data-ri]")) qtPassageCount(); });
-  content.addEventListener("click", (e) => {
+  const clip = $(".rd-clip"); // 본문 · 묵상 화면과 아래에 고정된 절 선택 막대가 모두 들어 있음
+  clip.addEventListener("change", (e) => { if (e.target.closest("input[data-ri]")) qtPassageCount(); });
+  clip.addEventListener("click", (e) => {
     const box = $("#q-passage");
+    if (!box) return;
     const fz = e.target.closest("[data-fz]");
     if (fz) return fzStep(box, Number(fz.dataset.fz));
     const pv = e.target.closest("[data-pv]");

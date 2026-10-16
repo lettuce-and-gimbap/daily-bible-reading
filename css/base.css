@@ -157,3 +157,14 @@ textarea { resize: vertical; line-height: 1.6; }
 .app-sign { display: grid; justify-items: end; line-height: 1.1; color: var(--muted); font-size: .64rem; white-space: nowrap; }
 .app-sign b { font-weight: 700; color: var(--ink); }
 .app-sign small { display: inline-flex; align-items: center; gap: 2px; font-size: .6rem; }
+
+/* 로고 옆 연속 일수 */
+.topbar-left { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.streak-chip {
+  flex: none; display: inline-flex; align-items: center; gap: 3px; padding: 4px 9px; border-radius: 99px;
+  font-size: .8rem; font-weight: 700; white-space: nowrap; background: var(--surface-2); color: var(--muted);
+  font-variant-numeric: tabular-nums; filter: grayscale(.9);
+}
+.streak-chip b { font-size: .95rem; }
+.streak-chip.on { background: var(--accent-soft); color: var(--accent); filter: none; }
+.streak-chip.qt.on { background: var(--qt-soft); color: var(--qt); }

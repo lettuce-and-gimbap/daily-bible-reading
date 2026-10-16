@@ -12,6 +12,7 @@ function route() {
   else renderToday();
   window.scrollTo(0, 0);
   queueReminderSync();
+  updateStreakChip();
 }
 window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#link=")) route(); });
 

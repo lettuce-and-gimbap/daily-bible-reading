@@ -439,17 +439,32 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .qt-ans { width: 100%; min-height: 4.6em; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: .94rem; line-height: 1.6; }
 .qt-ans:focus { outline: 2px solid color-mix(in srgb, var(--qt) 45%, transparent); outline-offset: 0; }
 .qt-passage .vp-list { min-width: 0; }
-.qp-bar { position: sticky; bottom: 58px; z-index: 2; margin-top: 6px; padding: 8px 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 4px 14px rgb(0 0 0 / .14); }
 .rd.qt .vp-row:has(input:checked) { border-color: var(--qt); background: var(--qt-soft); }
 .rd.qt .vp-row:has(input:checked)::after { color: var(--qt); }
 .rd.qt .vp-num { color: var(--qt); }
 .rd.qt .vp-vers .opt.on { border-color: var(--qt); background: var(--qt-soft); color: var(--qt); }
-.rd.qt .vp-bar .btn.primary { background: var(--qt); color: #fff; }
-.rd.qt .vp-bar .btn.soft { background: var(--qt-soft); color: var(--qt); }
+.rd.qt .qp-fixed .btn.primary { background: var(--qt); color: #fff; }
+.rd.qt .qp-fixed .btn.soft { background: var(--qt-soft); color: var(--qt); }
 .qt-read { grid-template-columns: minmax(0, 1fr); }
 #q-content, .qt-passage, .qp-body { min-width: 0; max-width: 100%; }
 .qt-passage .vp-vers { max-width: 100%; }
-.qp-bar { flex-wrap: wrap; row-gap: 4px; }
-.qp-bar .vp-n { flex: 1 1 100%; white-space: nowrap; }
-.qp-bar .btn.text { margin-left: auto; }
-.qp-bar [data-qa="clear"] { margin-left: 0; }
+
+/* QT 화면: 통독과 같은 위쪽 한 줄(날짜 이동 + 우상단 읽음 스위치), 절 선택 막대는 맨 아래에 고정 */
+.q-check { flex: none; margin-left: auto; display: inline-flex; }
+.rd.qt .read-switch.on { color: var(--qt); }
+.rd.qt .read-switch.on .rs-track { background: var(--qt); }
+.rd.qt .read-switch.on .rs-knob::after { color: var(--qt); }
+.qp-fixed {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 8; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px;
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line);
+  box-shadow: 0 -4px 14px rgb(0 0 0 / .08);
+}
+.qp-fixed .vp-n { flex: 1 1 auto; min-width: 5.5em; font-size: .86rem; color: var(--muted); white-space: nowrap; }
+.qp-fixed .btn.text { padding: 6px 8px; }
+.rd-clip:has(.sheet:not([hidden])) .qp-fixed { display: none; }
+.rd.qt .qt-read { padding-bottom: 130px; }
+.rd.qt .paste-fab { bottom: 84px; }
+.qp-fixed { flex-wrap: nowrap; gap: 4px; padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); }
+.qp-fixed .vp-n { min-width: 0; font-size: .8rem; overflow: hidden; text-overflow: ellipsis; }
+.qp-fixed .btn { flex: none; padding: 6px 9px; font-size: .82rem; white-space: nowrap; }
+.qp-fixed .btn.text { padding: 6px 6px; }

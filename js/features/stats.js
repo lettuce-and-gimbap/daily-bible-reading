@@ -34,7 +34,7 @@ function renderStats() {
         </div>
       </div>
       <ul class="mini">
-        <li><b>${streak(new Set(Object.keys(byDate)))}일</b><span>연속</span></li>
+        <li><b>${streak(readGoalDates())}일</b><span>연속(목표 채운 날)</span></li>
         <li><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></li>
         <li><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>마칠 예정</span></li>
       </ul>

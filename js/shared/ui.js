@@ -115,3 +115,27 @@ function fzStep(root, dir) {
     g.querySelector('[data-fz="1"]').disabled = v >= 2;
   });
 }
+
+// 위 로고 옆의 연속 일수: 통독 화면에서는 "목표를 채운 날" 연속, QT 화면에서는 QT를 마친 날 연속
+// (통독 목표를 못 채운 날은 끊김. 오늘 아직 안 읽었어도 어제까지 이어졌으면 그대로 보임)
+function updateStreakChip() {
+  const el = document.getElementById("streak-chip");
+  if (!el) return;
+  const r = (location.hash || "#today").slice(1);
+  let n = null, today = false, tip = "";
+  if (r === "qt") {
+    const days = qtDoneDates();
+    n = streak(days); today = days.has(todayStr());
+    tip = `QT 연속 ${n}일`;
+  } else if (r !== "stats" && r !== "table" && state.plan) {
+    const days = readGoalDates();
+    n = streak(days); today = days.has(todayStr());
+    tip = `통독 연속 ${n}일 (하루 목표 분량을 채운 날만 셈)`;
+  }
+  el.hidden = n === null;
+  if (n === null) return;
+  el.classList.toggle("on", today);
+  el.classList.toggle("qt", r === "qt");
+  el.title = tip;
+  el.querySelector("b").textContent = n;
+}
