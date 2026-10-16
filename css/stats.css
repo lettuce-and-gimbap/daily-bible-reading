@@ -202,3 +202,13 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .cl-body details summary { cursor: pointer; font-weight: 600; font-size: 13.5px; color: var(--muted); padding: 6px 2px; }
 .cl-body details[open] > summary { margin-bottom: 8px; }
 .cl-body details > .cl-entry { margin-bottom: 8px; }
+
+/* 업데이트 기록 · 벅수의 계획 */
+.cl-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.cl-row .btn { flex: 1; min-width: 150px; }
+.plan-card { width: min(560px, 100%); }
+.plan-time { font-weight: 500; color: var(--muted); font-size: 12px; margin-left: 6px; }
+.plan-body { gap: 8px; }
+.plan-text { white-space: pre-wrap; line-height: 1.6; font-size: 14px; }
+.plan-edit { width: 100%; min-height: 260px; border: 1px solid var(--line); border-radius: 12px; padding: 10px; font: inherit; font-size: 14px; line-height: 1.55; background: var(--surface-2); color: var(--ink); resize: vertical; box-sizing: border-box; }
+.plan-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; }

@@ -6,6 +6,7 @@
 
 import { dailySummary } from "./summary.js";
 import { account } from "./account.js";
+import { planNote } from "./plan.js";
 
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
@@ -18,7 +19,7 @@ export default {
     const origin = request.headers.get("Origin") || "";
     const cors = {
       "Access-Control-Allow-Origin": ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0],
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, OPTIONS",
       "Access-Control-Allow-Headers": "content-type, authorization",
       Vary: "Origin",
     };
@@ -30,6 +31,7 @@ export default {
 
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
+      if (pathname === "/plan") return await planNote(request, env, json);
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
       if (pathname === "/search") return await searchVerses(new URL(request.url), json);
