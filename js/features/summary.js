@@ -339,6 +339,13 @@ function rgOpen(id) {
         <button type="button" class="rg-close" aria-label="닫기">✕</button>
       </div>
       <p class="rg-tip">이름을 끌어서 옮기고, 선이나 관계 이름을 누르면 두 사람 사이의 이야기가 나와요.</p>
+      <div class="rg-find">
+        <div class="rg-find-row">
+          <input type="search" class="rg-q" placeholder="인물 이름 찾기" aria-label="인물 이름 찾기" autocomplete="off">
+          <button type="button" class="rg-sort" aria-label="가나다 순서 바꾸기">가나다 ▲</button>
+        </div>
+        <div class="rg-chips" role="listbox" aria-label="인물 목록"></div>
+      </div>
       <svg class="rg rg-live"></svg>
       <div class="rg-detail" aria-live="polite"></div>
     </div>`;
@@ -405,7 +412,7 @@ function rgOpen(id) {
     draw();
     flyTo(frame([r.from, r.to], 36));
   };
-  const showNode = (name) => {
+  const showNode = (name, center) => {
     sel = { node: name };
     const mine = m.rels.map((r, i) => ({ r, i })).filter(({ r }) => r.from === name || r.to === name);
     detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}</div>
@@ -413,8 +420,23 @@ function rgOpen(id) {
       <p class="muted small">관계를 누르면 그 장면의 구절 풀이가 나와요.</p>`;
     draw();
     const others = [...new Set(mine.flatMap(({ r }) => [r.from, r.to]))];
-    flyTo(frame(others.length ? others : [name], 30));
+    flyTo(center ? frame([name], 60) : frame(others.length ? others : [name], 30)); // 찾기로 고르면 그 사람이 한가운데 크게
   };
+  // 찾기: 가나다 오름·내림차순 목록 또는 입력으로 거른 목록에서 고르면 그 인물을 중심으로 확대
+  const q = el.querySelector(".rg-q"), chips = el.querySelector(".rg-chips"), sortBtn = el.querySelector(".rg-sort");
+  let asc = true;
+  const matches = () => {
+    const t = q.value.trim().replace(/\s+/g, "");
+    return m.names.filter((n) => !t || n.replace(/\s+/g, "").includes(t)).sort((a, b) => (asc ? 1 : -1) * a.localeCompare(b, "ko"));
+  };
+  const drawChips = () => {
+    const list = matches();
+    chips.innerHTML = list.length ? list.map((n) => `<button type="button" role="option" data-find="${esc(n)}" class="${sel && sel.node === n ? "on" : ""}">${esc(n)}</button>`).join("") : `<span class="muted small">찾는 인물이 없어요</span>`;
+  };
+  const findPerson = (n) => { showNode(n, true); drawChips(); };
+  q.addEventListener("input", drawChips);
+  q.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); const l = matches(); if (l.length) findPerson(l[0]); } });
+  sortBtn.addEventListener("click", () => { asc = !asc; sortBtn.textContent = `가나다 ${asc ? "▲" : "▼"}`; drawChips(); });
   const clearSel = () => {
     sel = null;
     detail.innerHTML = `<p class="muted small">선이나 관계 이름을 누르면 그 관계가 생긴 장면과 구절 풀이가 나와요. 이름을 누르면 그 사람의 관계를 모아 볼 수 있어요.</p>`;
@@ -498,13 +520,15 @@ function rgOpen(id) {
       const k = z.dataset.z === "in" ? 0.75 : 1 / 0.75, cx = view.x + view.w / 2, cy = view.y + view.h / 2;
       return flyTo({ w: view.w * k, h: view.h * k, x: cx - view.w * k / 2, y: cy - view.h * k / 2 });
     }
+    const find = e.target.closest("[data-find]");
+    if (find) return findPerson(find.dataset.find);
     const pick = e.target.closest("[data-pick]");
     if (pick) return showEdge(+pick.dataset.pick);
     const src = e.target.closest("[data-src]");
     if (src && sel && sel.edge !== undefined) rgShowOrig(src, m.rels[sel.edge].notes[+src.dataset.src].src);
   });
 
-  clearSel();
+  clearSel(); drawChips();
   view = fitAll(); setView();
   el.querySelector(".rg-close").focus();
 }
