@@ -38,7 +38,7 @@ function renderQt() {
   $("#q-tabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-qtab]");
     if (!b) return;
-    if (b.dataset.qtab === "read") closeSheet();
+    if (b.dataset.qtab === "read") { rememberTab("qt", "read"); closeSheet(); }
     else openSheet(b.dataset.qtab, renderQtSheet);
   });
   syncQtTabs();

@@ -61,7 +61,7 @@ function buildReader() {
   $("#r-tabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-rtab]");
     if (!b) return;
-    if (b.dataset.rtab === "godpia") closeSheet();
+    if (b.dataset.rtab === "godpia") { rememberTab("reader", "godpia"); closeSheet(); }
     else openSheet(b.dataset.rtab, renderReaderSheet);
   });
   openSheet("verses", renderReaderSheet); // 처음엔 구절 탭
