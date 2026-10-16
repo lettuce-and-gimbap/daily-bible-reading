@@ -27,12 +27,46 @@ function bindSheetChrome(renderFn) {
   });
 }
 
+// 패널(본문·요약·메모 등)별로 마지막에 머문 스크롤 위치를 기억해, 다른 탭·화면에 갔다 와도 그 자리로 돌아옴
+const sheetScroll = {};
+let sheetScrollOn = false; // 복원하는 동안은 끄고, 끝나면 켜서 이후 스크롤을 기록
+let sheetScrollRun = 0;
+
+function sheetKeyOf(tab) {
+  const where = location.hash === "#qt"
+    ? "qt:" + (typeof qtDate !== "undefined" ? qtDate : "")
+    : "r:" + (typeof currentChapter !== "undefined" ? currentChapter : "") + ":" + (typeof viewingDay !== "undefined" ? viewingDay : "");
+  return where + "|" + tab;
+}
+
+// 본문은 서버에서 받아 와 늦게 그려지므로, 내용이 충분히 길어질 때까지 잠깐 기다리며 위치를 맞춤
+function restoreSheetScroll(key) {
+  const body = $("#sheet-body");
+  const want = sheetScroll[key] || 0;
+  const run = ++sheetScrollRun;
+  let tries = 0;
+  const tick = () => {
+    if (run !== sheetScrollRun) return;
+    body.scrollTop = want;
+    if (!want || Math.abs(body.scrollTop - want) < 2 || ++tries > 40) { sheetScrollOn = true; return; }
+    setTimeout(tick, 100);
+  };
+  tick();
+}
+
+document.addEventListener("scroll", (e) => {
+  if (e.target && e.target.id === "sheet-body" && sheetScrollOn && sheetTab) sheetScroll[sheetKeyOf(sheetTab)] = e.target.scrollTop;
+}, true);
+
 function openSheet(tab, renderFn) {
+  const key = sheetKeyOf(tab);
+  sheetScrollOn = false;
   sheetTab = tab;
   $("#sheet").hidden = false;
   $("#sheet-bg").hidden = false;
   document.body.classList.add("sheet-open");
   renderFn();
+  restoreSheetScroll(key);
   if (onSheetChange) onSheetChange();
 }
 
