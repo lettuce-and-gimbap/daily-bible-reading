@@ -36,31 +36,34 @@ function persist() {
 function progress() {
   const plan = state.plan;
   const seq = planSequence(plan);
-  const days = planDays(plan);
+  const today = todayStr();
+  // 읽은 기록에 맞춰 다시 짠 Day (core/store.js planDaysFor)
+  const { days, dates: dayDates, headCount } = planDaysFor(plan, state.read, today);
   const readCount = seq.filter((i) => state.read[i]).length;
   let currentDay = days.findIndex((d) => d.some((i) => !state.read[i]));
   const finished = currentDay === -1;
   if (finished) currentDay = days.length - 1;
-  const today = todayStr();
-  const elapsed = Math.max(0, daysBetween(plan.startDate, today));
-  // 어제까지 끝냈어야 하는 Day 수 (오늘 분량은 오늘 안에만 읽으면 밀린 것이 아님)
-  const expectedDone = Math.min(days.length, elapsed);
   const doneDays = days.filter((d) => d.every((i) => state.read[i])).length;
   const remainingDays = days.length - doneDays;
   const readToday = seq.filter((i) => state.read[i] === today).length;
   // 오늘 하루 분량을 이미 채웠으면 남은 분량은 내일부터 계산
   const todayQuotaMet = readToday >= plan.perDay;
-  // 통독표 날짜 기준으로 오늘 읽을 Day (시작 전이면 Day 1, 계획이 끝났으면 마지막 Day)
-  const todayDay = Math.min(days.length - 1, Math.max(0, daysBetween(plan.startDate, today)));
+  // 오늘 읽을 Day = 어제까지 읽은 곳 다음의 첫 Day (계획이 끝났으면 마지막 Day)
+  const todayDay = Math.min(days.length - 1, headCount);
   const dayComplete = (d) => d.every((i) => state.read[i]);
+  // 밀림 = 건너뛰어 안 읽고 지나간 장이 있는 Day
   const behindDays = days.slice(0, todayDay).filter((d) => !dayComplete(d)).length;
-  // 알림 기준: 오늘 분량(하루 장 수)을 채웠거나, 통독표상 오늘 Day까지 다 읽었으면 완료
+  // 알림 기준: 오늘 분량(하루 장 수)을 채웠거나, 오늘 Day까지 다 읽었으면 완료
   const dailyDone = finished || todayQuotaMet || (behindDays === 0 && dayComplete(days[todayDay]));
+  // 계획 대비: 처음 계획대로 어제까지 읽었어야 할 장 수와 실제로 읽은 장 수의 차이를 하루 분량으로 환산
+  const elapsed = Math.max(0, daysBetween(plan.startDate, today));
+  const expected = Math.min(seq.length, elapsed * plan.perDay);
+  const readBefore = seq.filter((i) => state.read[i] && state.read[i] < today).length;
   return {
-    seq, days, readCount, total: seq.length, currentDay, finished, readToday, todayDay, behindDays, dailyDone,
-    doneDays, diff: doneDays - expectedDone,
+    seq, days, dayDates, readCount, total: seq.length, currentDay, finished, readToday, todayDay, behindDays, dailyDone,
+    doneDays, diff: Math.floor((readBefore - expected) / plan.perDay),
     pct: Math.round((readCount / seq.length) * 100),
-    plannedEnd: addDays(plan.startDate, days.length - 1),
+    plannedEnd: addDays(plan.startDate, planDays(plan).length - 1),
     projectedEnd: finished ? null : addDays(today, remainingDays - (todayQuotaMet ? 0 : 1)),
   };
 }

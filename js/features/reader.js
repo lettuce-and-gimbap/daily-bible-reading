@@ -79,24 +79,32 @@ function buildReader() {
     refreshReader(true);
   });
 
-  // 장 칸 옆 버튼 하나로 읽음 체크(→ 다음 안 읽은 장) · 취소 · 다음 Day
+  // 장 칸 옆 스위치로 읽음 체크(→ 다음 안 읽은 장) · 취소 · 다음 Day
   $("#r-steps").addEventListener("click", (e) => {
     const b = e.target.closest("button[id]");
     if (!b) return;
-    const pr = progress();
-    const day = pr.days[viewingDay];
-    let reload = true;
-    if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
-    else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
-    else if (b.id === "r-check" && freeChapter !== null) { state.read[currentChapter] = todayStr(); reload = false; }
-    else if (b.id === "r-check") {
-      state.read[currentChapter] = todayStr();
-      const nextUnread = day.find((i) => !state.read[i]);
-      if (nextUnread !== undefined) currentChapter = nextUnread;
-      else { reload = false; celebrateDay(viewingDay); }
-    }
-    persist();
-    refreshReader(reload);
+    const apply = () => {
+      const pr = progress();
+      const day = pr.days[viewingDay];
+      let reload = true;
+      if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
+      else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
+      else if (b.id === "r-check" && freeChapter !== null) { state.read[currentChapter] = todayStr(); reload = false; }
+      else if (b.id === "r-check") {
+        state.read[currentChapter] = todayStr();
+        const nextUnread = day.find((i) => !state.read[i]);
+        if (nextUnread !== undefined) currentChapter = nextUnread;
+        else { reload = false; celebrateDay(viewingDay); }
+      }
+      persist();
+      refreshReader(reload);
+    };
+    if (b.classList.contains("read-switch")) { // 스위치가 옆으로 미끄러지는 모습을 보여 준 뒤 반영
+      b.classList.toggle("on");
+      b.setAttribute("aria-checked", String(b.classList.contains("on")));
+      b.disabled = true;
+      setTimeout(apply, 170);
+    } else apply();
   });
 
   // 패널 내용은 다시 그려지므로 위임으로 처리
@@ -112,7 +120,7 @@ function buildReader() {
     let reload = false;
     if (t.dataset.chap !== undefined) {
       currentChapter = Number(t.dataset.chap);
-      viewingDay = dayOfChapter(planDays(state.plan), currentChapter);
+      viewingDay = dayOfChapter(progress().days, currentChapter);
       closeSheet();
       reload = true;
     } else if (t.dataset.day !== undefined) {
@@ -140,16 +148,6 @@ function buildReader() {
       if (state.settings.ver2 === t.dataset.ver) state.settings.ver2 = VERSIONS.find((v) => v.code !== t.dataset.ver).code;
     } else if (t.dataset.ver2) {
       state.settings.ver2 = t.dataset.ver2;
-    } else if (t.id === "r-upto-btn") {
-      const pr = progress();
-      const first = pr.seq.findIndex((i) => !state.read[i]);
-      const endPos = pr.seq.indexOf(Number($("#r-upto").value));
-      const targets = pr.seq.slice(first, endPos + 1).filter((i) => !state.read[i]);
-      if (!targets.length || !confirm(`${describeChapters(targets)}을(를) 오늘 읽은 것으로 체크할까요?`)) return;
-      targets.forEach((i) => { state.read[i] = todayStr(); });
-      currentChapter = null;
-      viewingDay = null;
-      showToast(`${targets.length}장을 읽음으로 체크했어요.`);
     } else if (t.id === "d-copy") {
       const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(progress().days[viewingDay])}`;
       copyText(text, "복사했어요. 투두메이트에 붙여넣어 보세요.");
@@ -214,6 +212,10 @@ function refreshReader(reload = false) {
   const pr = progress();
   // 처음 열면 통독표 날짜 기준 오늘 Day를 보여 줌
   if (viewingDay === null || viewingDay >= pr.days.length) viewingDay = pr.todayDay;
+  // 날짜가 바뀌어 Day가 다시 짜였으면 보던 장이 든 Day로 따라감
+  else if (freeChapter === null && currentChapter !== null && !pr.days[viewingDay].includes(currentChapter) && pr.seq.includes(currentChapter)) {
+    viewingDay = dayOfChapter(pr.days, currentChapter);
+  }
   const day = pr.days[viewingDay];
   if (freeChapter !== null && currentChapter !== freeChapter) freeChapter = null; // 다른 데서 장을 옮기면 계획 모드로
   if (freeChapter === null && (currentChapter === null || !day.includes(currentChapter))) {
@@ -246,11 +248,13 @@ function refreshReader(reload = false) {
     <button class="chap-arrow" data-step="1" ${atEnd ? "disabled" : ""} aria-label="다음 장">›</button>`;
 
   const isRead = !!state.read[currentChapter];
-  const stepCheck = !isRead
-    ? `<button class="step-check" id="r-check" title="${esc(chapLabel(currentChapter))} 읽음으로 체크하고 다음 장으로"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>읽음</button>`
-    : dayDone && viewingDay < pr.days.length - 1
-      ? `<button class="step-check next" id="r-nextday">다음 Day ›</button>`
-      : `<button class="step-check on" id="r-undo" title="읽음 취소">읽음 ✓</button>`;
+  // 읽음 스위치: 안 읽었으면 "읽었어요"(꺼짐), 읽었으면 "더 읽을래요"(켜짐). 누르면 옆으로 미끄러지며 바뀜
+  const stepCheck = `${dayDone && viewingDay < pr.days.length - 1 ? `<button class="step-check next" id="r-nextday">다음 ›</button>` : ""}
+    <button class="read-switch ${isRead ? "on" : ""}" id="${isRead ? "r-undo" : "r-check"}" role="switch" aria-checked="${isRead}"
+      title="${esc(chapLabel(currentChapter))} ${isRead ? "읽음 취소" : "읽음으로 체크하고 다음 장으로"}">
+      <span class="rs-label">${isRead ? "더 읽을래요" : "읽었어요"}</span>
+      <span class="rs-track" aria-hidden="true"><span class="rs-knob"></span></span>
+    </button>`;
   let prevBook = null;
   $("#r-steps").innerHTML = `
     <div class="steps-track">
@@ -322,7 +326,7 @@ function renderReaderSheet() {
             : done ? `${done}/${d.length}` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
           return `<button class="trow ${cls}" data-day="${n}">
             <span class="t-day">Day ${n + 1}</span>
-            <span class="t-range">${esc(describeChapters(d))}<small>${prettyDate(addDays(state.plan.startDate, n))}</small></span>
+            <span class="t-range">${esc(describeChapters(d))}<small>${pr.dayDates[n] ? prettyDate(pr.dayDates[n]) : "건너뜀"}</small></span>
             <span class="t-st">${st}</span>
           </button>`;
         }).join("")}
@@ -334,19 +338,7 @@ function renderReaderSheet() {
 
   // 메모 · 도구
   const day = pr.days[viewingDay];
-  const first = pr.seq.findIndex((i) => !state.read[i]);
-  const uptoOpts = first === -1 ? [] : pr.seq.slice(first, first + state.plan.perDay * 3);
-  const c = CHAPTERS[currentChapter];
   body.innerHTML = `
-    <section class="tool-card">
-      <h3 class="label">몰아서 체크</h3>
-      ${uptoOpts.length ? `
-        <p class="muted small">갓피아 화면에서 옆으로 넘기며 읽었다면, 마지막으로 읽은 장을 골라 주세요.</p>
-        <div class="inline">
-          <select id="r-upto">${uptoOpts.map((i) => `<option value="${i}" ${i === currentChapter ? "selected" : ""}>${esc(chapLabel(i))}</option>`).join("")}</select>
-          <button class="btn primary small" id="r-upto-btn">까지 읽음</button>
-        </div>` : `<p class="muted small">모든 장을 읽었어요.</p>`}
-    </section>
     <section class="tool-card">
       <h3 class="label">오늘의 통독 메모</h3>
       <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(dayNoteBase(state.dayNotes[todayStr()]))}</textarea>

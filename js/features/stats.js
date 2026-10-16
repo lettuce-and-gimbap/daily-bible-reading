@@ -221,7 +221,7 @@ function planTableCardHtml(pr) {
           : done ? `${done}/${d.length}` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
         return `<button class="trow ${cls}" data-day="${n}">
           <span class="t-day">Day ${n + 1}</span>
-          <span class="t-range">${esc(describeChapters(d))}<small>${prettyDate(addDays(state.plan.startDate, n))}</small></span>
+          <span class="t-range">${esc(describeChapters(d))}<small>${pr.dayDates[n] ? prettyDate(pr.dayDates[n]) : "건너뜀"}</small></span>
           <span class="t-st">${st}</span>
         </button>`;
       }).join("")}
@@ -279,7 +279,7 @@ function dayDetailHtml(d, byDate, copied) {
     byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
     state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
     q ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${q.done ? "QT 완료" : "QT 메모"}</p>` : "",
-    q && q.note ? `<p class="note qt">${esc(q.note)}</p>` : "",
+    qtHasText(q) ? `<p class="note qt">${esc(qtTextOf(q))}</p>` : "",
     cp.length ? `<p class="tl-row"><span class="tag sm">📋</span>복사한 구절: ${cp.map(esc).join(", ")}</p>` : "",
   ].join("");
   return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 기록이 없어요.</p>`}`;

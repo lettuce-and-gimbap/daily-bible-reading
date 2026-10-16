@@ -104,6 +104,51 @@ function planDays(plan) {
   return days;
 }
 
+// 읽은 기록에 맞춰 다시 짠 Day 목록 (덜 읽거나 더 읽은 날이 있어도 그다음부터 하루 장 수씩 새로 나눔)
+//   · 어제까지 읽은 마지막 장까지는 "지난 Day": 같은 날 읽은 장끼리 한 Day, 건너뛰어 안 읽은 장은 따로(밀림)
+//   · 그다음 장부터는 하루 장 수씩 앞으로 나눈 Day. 첫 Day가 오늘 읽을 분량이고 날짜는 오늘부터 하루씩
+//   · 오늘 읽은 장은 지난 Day로 치지 않음 → 오늘 안에 분량이 갑자기 바뀌지 않음
+// → { days, dates(Day마다 날짜, 건너뛴 Day는 null), headCount(지난 Day 수) }
+function planDaysFor(plan, read, today) {
+  const seq = planSequence(plan);
+  let pastLast = -1;
+  seq.forEach((i, p) => { if (read[i] && read[i] < today) pastLast = p; });
+
+  const days = [], dates = [];
+  let cur = [], curKey = null;
+  const flush = () => {
+    if (cur.length) { days.push(cur); dates.push(curKey === "skip" ? null : curKey); }
+    cur = []; curKey = null;
+  };
+  for (let p = 0; p <= pastLast; p++) {
+    const i = seq[p];
+    const key = read[i] || "skip";
+    if (SOLO_CHAPTERS.has(i)) { flush(); cur = [i]; curKey = key; flush(); continue; }
+    if (key !== curKey || (key === "skip" && cur.length === plan.perDay)) flush();
+    curKey = key;
+    cur.push(i);
+  }
+  flush();
+  const headCount = days.length;
+
+  const base = today > plan.startDate ? today : plan.startDate;
+  cur = [];
+  const tailDays = [];
+  for (const i of seq.slice(pastLast + 1)) {
+    if (SOLO_CHAPTERS.has(i)) {
+      if (cur.length) tailDays.push(cur);
+      tailDays.push([i]);
+      cur = [];
+      continue;
+    }
+    cur.push(i);
+    if (cur.length === plan.perDay) { tailDays.push(cur); cur = []; }
+  }
+  if (cur.length) tailDays.push(cur);
+  tailDays.forEach((d, k) => { days.push(d); dates.push(addDays(base, k)); });
+  return { days, dates, headCount };
+}
+
 // 장이 들어 있는 Day 번호(0부터). 하루 장 수로 나누면 시편 119편처럼 혼자 읽는 날에서 어긋나서 직접 찾음
 function dayOfChapter(days, idx) {
   return Math.max(0, days.findIndex((d) => d.includes(idx)));
