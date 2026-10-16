@@ -90,6 +90,8 @@ function renderStats() {
   app.innerHTML = `
     <section class="hero-row">${readCard}${qtCard}</section>
 
+    ${glanceCardHtml()}
+
     <section class="card">
       <div class="cal-head">
         <button class="icon-btn" id="cal-prev" aria-label="이전 달">‹</button>
@@ -152,6 +154,7 @@ function renderStats() {
     c.classList.add("sel");
     $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied);
   });
+  bindGlanceCard();
   const books = $("#books-card");
   if (books) books.addEventListener("click", (e) => {
     const b = e.target.closest("[data-book]");
@@ -332,4 +335,109 @@ function bookDetailHtml(code, copied) {
     ${dates.length ? `<details><summary>날짜별로 읽은 장</summary><ul class="bd-list">${dates.map((d) => `<li><b>${prettyDate(d)}</b> ${esc(describeChapters(days[d]))}</li>`).join("")}</ul></details>` : ""}
     ${copyRows ? `<h4>날짜별 복사한 구절</h4><ul class="bd-list">${copyRows}</ul>` : `<p class="muted small">이 권에서 복사한 구절이 아직 없어요.</p>`}
   </div>`;
+}
+
+
+// ── 통독 현황 한눈에 보기 (토글) ──
+// 위: 성경 전체(1,189장) 중 읽은 비율을 고리 하나로(구약·신약 색을 나눔)
+// 아래: 66권을 구약·신약 순서대로, 권마다 "장 칸 띠"(읽은 장은 색칠) + 읽은 기간(처음 읽은 날 ~ 마지막 읽은 날)
+// 띠는 어느 장을 읽었는지 · 건너뛴 곳이 있는지가 한눈에 보이고, 고리는 전체 진도가 한눈에 보임
+let glanceOpen = false;
+
+function glanceStats() {
+  const perBook = BOOKS.map((b) => {
+    const start = chapterIndex(b.code, 1);
+    let n = 0, first = null, last = null;
+    const cells = [];
+    for (let i = start; i < start + b.chapters; i++) {
+      const d = state.read[i];
+      cells.push(!!d);
+      if (d) { n++; if (!first || d < first) first = d; if (!last || d > last) last = d; }
+    }
+    return { b, n, first, last, cells };
+  });
+  const sum = (list, f) => list.reduce((a, x) => a + f(x), 0);
+  const ot = perBook.filter((x) => x.b.testament === "OT"), nt = perBook.filter((x) => x.b.testament === "NT");
+  return {
+    perBook, ot, nt,
+    otRead: sum(ot, (x) => x.n), ntRead: sum(nt, (x) => x.n),
+    otTotal: sum(ot, (x) => x.b.chapters), ntTotal: sum(nt, (x) => x.b.chapters),
+  };
+}
+
+// "2026-10-03" → "10.3" (올해가 아니거나 withYear면 "2025.12.30"처럼 연도도 붙임)
+function shortDate(d, withYear = false) {
+  const [y, m, day] = d.split("-").map(Number);
+  return `${withYear || y !== Number(todayStr().slice(0, 4)) ? `${y}.` : ""}${m}.${day}`;
+}
+
+function glancePct(n, total) {
+  const p = total ? (n / total) * 100 : 0;
+  return p > 0 && p < 10 ? p.toFixed(1) : String(Math.round(p));
+}
+
+function glanceCardHtml() {
+  const g = glanceStats();
+  const read = g.otRead + g.ntRead;
+  return `<section class="card glance" id="glance-card">
+    <button class="glance-head" id="glance-toggle" aria-expanded="${glanceOpen}" aria-controls="glance-body">
+      <span><b>📊 통독 현황 한눈에 보기</b><small>성경 전체 ${TOTAL_CHAPTERS.toLocaleString()}장 중 <b>${read.toLocaleString()}장 (${glancePct(read, TOTAL_CHAPTERS)}%)</b></small></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="glance-body" id="glance-body" ${glanceOpen ? "" : "hidden"}>${glanceOpen ? glanceBodyHtml(g) : ""}</div>
+  </section>`;
+}
+
+function glanceBodyHtml(g = glanceStats()) {
+  const r = 52, c = 2 * Math.PI * r;
+  const read = g.otRead + g.ntRead;
+  const lenOt = (g.otRead / TOTAL_CHAPTERS) * c, lenNt = (g.ntRead / TOTAL_CHAPTERS) * c;
+  const donut = `<svg class="gring" viewBox="0 0 140 140" role="img" aria-label="성경 전체 ${TOTAL_CHAPTERS}장 중 ${read}장 읽음">
+      <circle class="gring-bg" cx="70" cy="70" r="${r}"/>
+      <circle class="gring-ot" cx="70" cy="70" r="${r}" stroke-dasharray="${lenOt} ${c - lenOt}"/>
+      <circle class="gring-nt" cx="70" cy="70" r="${r}" stroke-dasharray="${lenNt} ${c - lenNt}" stroke-dashoffset="${-lenOt}"/>
+      <text x="70" y="68" text-anchor="middle" class="gring-pct">${glancePct(read, TOTAL_CHAPTERS)}%</text>
+      <text x="70" y="88" text-anchor="middle" class="gring-sub">${read.toLocaleString()} / ${TOTAL_CHAPTERS.toLocaleString()}장</text>
+    </svg>`;
+  const side = (cls, label, n, total) => `<li><i class="${cls}"></i><span><b>${label}</b> ${n.toLocaleString()} / ${total.toLocaleString()}장</span><em>${glancePct(n, total)}%</em></li>`;
+
+  const row = (x) => {
+    const { b, n, first, last, cells } = x;
+    const unit = chapUnit(b);
+    const done = n === b.chapters;
+    const period = n === 0 ? "아직 안 읽었어요"
+      : first === last ? shortDate(first) : (() => { const y = first.slice(0, 4) !== last.slice(0, 4); return `${shortDate(first, y)} ~ ${shortDate(last, y)}`; })();
+    const days = n && first !== last ? ` · ${daysBetween(first, last) + 1}일` : "";
+    return `<li class="gl-row ${n === 0 ? "none" : done ? "full" : ""}">
+      <div class="gl-top"><b>${b.name}</b>${done ? `<span class="gl-done">완독</span>` : ""}<em>${n}/${b.chapters}${unit} · ${glancePct(n, b.chapters)}%</em></div>
+      <div class="gl-strip" aria-hidden="true">${cells.map((on) => `<i class="${on ? "on" : ""}"></i>`).join("")}</div>
+      <div class="gl-period">${period}${days}</div>
+    </li>`;
+  };
+  const group = (label, list, n, total) => `<h3 class="gl-group">${label} <span class="muted small">${n.toLocaleString()} / ${total.toLocaleString()}장 · ${glancePct(n, total)}%</span></h3>
+    <ul class="gl-list">${list.map(row).join("")}</ul>`;
+
+  return `<div class="glance-top">
+      <div class="gring-wrap">${donut}</div>
+      <ul class="gring-legend">
+        ${side("ot", "구약", g.otRead, g.otTotal)}
+        ${side("nt", "신약", g.ntRead, g.ntTotal)}
+        ${side("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
+      </ul>
+    </div>
+    ${group("구약", g.ot, g.otRead, g.otTotal)}
+    ${group("신약", g.nt, g.ntRead, g.ntTotal)}
+    <p class="muted small">칸 하나가 한 장(시편은 한 편)이고, 색칠된 칸이 읽은 곳이에요. 읽은 기간은 그 권의 장을 처음 읽은 날부터 마지막으로 읽은 날까지예요.</p>`;
+}
+
+function bindGlanceCard() {
+  const t = $("#glance-toggle");
+  if (!t) return;
+  t.addEventListener("click", () => {
+    glanceOpen = !glanceOpen;
+    t.setAttribute("aria-expanded", String(glanceOpen));
+    const body = $("#glance-body");
+    body.hidden = !glanceOpen;
+    if (glanceOpen && !body.innerHTML.trim()) body.innerHTML = glanceBodyHtml(); // 열 때만 그림(장 칸이 1,189개라서)
+  });
 }

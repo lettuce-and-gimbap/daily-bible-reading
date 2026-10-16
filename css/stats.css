@@ -142,3 +142,43 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .bd-grid > div { display: grid; gap: 3px; background: var(--surface-2); border-radius: 10px; padding: 10px; }
 .bd-list { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; font-size: .9rem; overflow-wrap: anywhere; }
 .bd-list b { margin-right: 4px; }
+
+/* 통독 현황 한눈에 보기 */
+.glance { padding: 0; overflow: hidden; }
+.glance-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.glance-head > span { display: grid; gap: 2px; min-width: 0; }
+.glance-head b { font-size: 1.02rem; }
+.glance-head small { color: var(--muted); font-size: .84rem; }
+.glance-head small b { font-size: inherit; color: var(--accent); }
+.glance-head svg { flex: none; width: 20px; height: 20px; fill: none; stroke: var(--muted); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s; }
+.glance-head[aria-expanded="true"] svg { transform: rotate(180deg); }
+.glance-body { padding: 4px 16px 16px; display: grid; gap: 12px; border-top: 1px solid var(--line); }
+.glance-top { display: flex; align-items: center; gap: 16px; padding-top: 12px; flex-wrap: wrap; }
+.gring-wrap { flex: none; width: 140px; height: 140px; }
+.gring { width: 100%; height: 100%; }
+.gring circle { fill: none; stroke-width: 14; transform: rotate(-90deg); transform-origin: 70px 70px; }
+.gring-bg { stroke: var(--surface-2); }
+.gring-ot { stroke: var(--accent); }
+.gring-nt { stroke: var(--qt); }
+.gring-pct { font-size: 28px; font-weight: 800; fill: var(--ink); letter-spacing: -0.04em; }
+.gring-sub { font-size: 11px; fill: var(--muted); }
+.gring-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; flex: 1; min-width: 160px; }
+.gring-legend li { display: grid; grid-template-columns: 12px 1fr auto; align-items: center; gap: 8px; font-size: .88rem; }
+.gring-legend i { width: 12px; height: 12px; border-radius: 4px; }
+.gring-legend i.ot { background: var(--accent); }
+.gring-legend i.nt { background: var(--qt); }
+.gring-legend i.rest { background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
+.gring-legend em { font-style: normal; font-weight: 700; font-variant-numeric: tabular-nums; }
+.gl-group { margin: 6px 0 0; font-size: .98rem; }
+.gl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.gl-row { display: grid; gap: 4px; }
+.gl-top { display: flex; align-items: baseline; gap: 6px; }
+.gl-top b { font-size: .92rem; }
+.gl-top em { margin-left: auto; font-style: normal; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.gl-done { font-size: .7rem; font-weight: 700; padding: 1px 7px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); }
+.gl-strip { display: flex; gap: 1px; height: 12px; }
+.gl-strip i { flex: 1 1 0; min-width: 0; border-radius: 2px; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
+.gl-strip i.on { background: var(--accent); box-shadow: none; }
+.gl-row.full .gl-strip i.on { background: var(--accent); }
+.gl-period { font-size: .78rem; color: var(--muted); }
+.gl-row.none .gl-top b { color: var(--muted); font-weight: 600; }

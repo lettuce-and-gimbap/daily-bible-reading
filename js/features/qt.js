@@ -24,7 +24,7 @@ function renderQt() {
         </div>
         <div class="rd-tabs" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
       </div>
-      <div class="rd-clip"><div class="qt-read" id="q-read"><p class="muted small">본문 불러오는 중…</p></div>${pasteFabHtml()}${sheetShell()}</div>
+      <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div><div id="q-write">${qtWriteHtml()}</div></div>${pasteFabHtml()}${sheetShell()}</div>
       <div class="rd-bottom" id="q-bottom"></div>
     </div>`;
   onSheetChange = syncQtTabs;
@@ -36,6 +36,14 @@ function renderQt() {
   });
   syncQtTabs();
   fillQtRead(qtDate);
+  // 본문 아래 칸에서 쓴 내용도 같은 기록(내용 관찰·연구 / 묵상·느낀 점)이라 묵상 노트 탭에서 그대로 보임
+  const readTimers = {};
+  $("#q-write").addEventListener("input", (e) => {
+    const f = e.target.dataset && e.target.dataset.qf;
+    if (!f) return;
+    clearTimeout(readTimers[f]);
+    readTimers[f] = setTimeout(() => saveQtField(f, e.target.value), 400);
+  });
 
   bindSheetChrome(renderQtSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("qt"));
@@ -92,6 +100,29 @@ const QT_FIELDS = [
 const qtEmpty = () => ({ done: false, note: "", observe: "", reflect: "" });
 const qtHasText = (q) => !!q && QT_FIELDS.some(([k]) => String(q[k] || "").trim());
 
+// 본문 · 묵상 화면 아래의 쓰기 칸 (내용 관찰 · 연구 / 묵상 · 느낀 점). 묵상 노트 탭과 같은 기록을 같이 씀
+function qtWriteHtml() {
+  const entry = state.qt[qtDate] || qtEmpty();
+  return `<section class="qt-sec qt-write">
+    <h3>나의 묵상 기록</h3>
+    ${QT_FIELDS.slice(0, 2).map(([k, label, hint]) => `
+      <label class="qt-field">
+        <b>${label}</b><small>${hint}</small>
+        <textarea id="qr-${k}" data-qf="${k}" rows="5">${esc(entry[k] || "")}</textarea>
+      </label>`).join("")}
+    <p class="muted small"><span id="qr-status">자동 저장돼요</span> · 쓴 내용은 <b>묵상 노트</b> 탭에서 구절·기도 메모와 함께 모아 볼 수 있어요.</p>
+  </section>`;
+}
+
+// 묵상 노트 탭에서 고친 내용을 본문 아래 칸에도 반영 (쓰는 중인 칸은 건드리지 않음)
+function refreshQtWriteFields() {
+  const entry = state.qt[qtDate] || qtEmpty();
+  QT_FIELDS.slice(0, 2).forEach(([k]) => {
+    const el = $(`#qr-${k}`);
+    if (el && document.activeElement !== el && el.value !== (entry[k] || "")) el.value = entry[k] || "";
+  });
+}
+
 // 칸 이름을 붙여 하나로 합친 글 (복사·내보내기·기록 보기용). 빈 칸은 뺌
 function qtTextOf(q) {
   if (!q) return "";
@@ -104,8 +135,7 @@ function saveQtNote(value) { saveQtField("note", value); }
 
 function saveQtField(field, value) {
   saveQt({ [field]: value });
-  const st = $("#q-status");
-  if (st) st.textContent = "저장됨 ✓";
+  ["#q-status", "#qr-status"].forEach((id) => { const st = $(id); if (st) st.textContent = "저장됨 ✓"; });
   refreshQtBar();
 }
 
@@ -132,15 +162,15 @@ function refreshQtBar() {
 const QT_TABS = [["read", "본문 · 묵상"], ["verses", "구절"], ["note", "묵상 노트"], ["godpia", "갓피아 원문"]];
 
 function syncQtTabs() {
+  refreshQtWriteFields();
   document.querySelectorAll("#q-tabs [data-qtab]").forEach((b) => {
     b.classList.toggle("on", b.dataset.qtab === (sheetTab || "read"));
-    if (b.dataset.qtab === "note") b.classList.toggle("has", qtHasText(state.qt[qtDate]));
   });
 }
 
 // 본문(보기 설정 역본 1~2개 나란히) + 갓피아의 질문·길잡이·기도
 async function fillQtRead(date) {
-  const box = $("#q-read");
+  const box = $("#q-content");
   let d;
   try { d = await qtInfo(date); } catch (e) { d = null; }
   if (date !== qtDate || !box.isConnected) return;
