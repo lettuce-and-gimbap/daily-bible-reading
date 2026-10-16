@@ -115,7 +115,7 @@ function queueAccountSync() {
 }
 
 // 관리자 계정: 아래 아이디로 로그인하면 관리자 권한이 켜짐 (권한은 여기에 하나씩 추가)
-const ADMIN_IDS = ["bucksoo"];
+const ADMIN_IDS = ["buucksoo"];
 function isAdmin() {
   return !!account && ADMIN_IDS.includes(String(account.id).toLowerCase());
 }
