@@ -315,6 +315,45 @@ function relationGraphHtml(people, relations) {
 // 이름 상자를 누르면 그 사람의 관계를 모아 보여 줌. 빈 곳을 끌면 화면 이동, 두 손가락이나 휠로 확대·축소.
 const RG_HOLD_MS = 1500;
 
+// 관계도 자세히 보기용 배치: 위아래로만 길게 놓인 배치를 버리고, 화면 비율(ratio=가로/세로) 전체에 인물이 퍼지도록
+// 끌어당김(관계가 있는 쌍)과 밀어냄(모든 쌍)으로 다시 놓은 뒤 겹친 상자를 떼어 놓음. 인물이 적으면 그대로 둠
+function rgSpread(names, rels, pos, ratio) {
+  const n = names.length;
+  if (n < 6) return;
+  const WW = Math.sqrt(n * 150 * 80 * 2.6 * ratio), HH = WW / ratio;
+  const k = 0.9 * Math.sqrt(1 / n);
+  const P = {};
+  names.forEach((nm, i) => { const a = (i / n) * Math.PI * 2; P[nm] = { x: 0.5 + Math.cos(a) * 0.38, y: 0.5 + Math.sin(a) * 0.38 }; });
+  const pairs = rels.map((r) => [r.from, r.to]);
+  for (let it = 0; it < 320; it++) {
+    const t = 0.08 * (1 - it / 320) + 0.002, D = {};
+    names.forEach((nm) => { D[nm] = { x: 0, y: 0 }; });
+    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+      const a = P[names[i]], b = P[names[j]];
+      let dx = a.x - b.x, dy = a.y - b.y; const d = Math.max(Math.hypot(dx, dy), 0.001), f = (k * k) / d;
+      dx /= d; dy /= d;
+      D[names[i]].x += dx * f; D[names[i]].y += dy * f; D[names[j]].x -= dx * f; D[names[j]].y -= dy * f;
+    }
+    pairs.forEach(([u, v]) => {
+      const a = P[u], b = P[v]; let dx = a.x - b.x, dy = a.y - b.y; const d = Math.max(Math.hypot(dx, dy), 0.001), f = (d * d) / k * 0.7;
+      dx /= d; dy /= d; D[u].x -= dx * f; D[u].y -= dy * f; D[v].x += dx * f; D[v].y += dy * f;
+    });
+    names.forEach((nm) => {
+      const d = Math.max(Math.hypot(D[nm].x, D[nm].y), 0.0001), m = Math.min(d, t);
+      P[nm].x = Math.min(0.97, Math.max(0.03, P[nm].x + (D[nm].x / d) * m + (0.5 - P[nm].x) * 0.004));
+      P[nm].y = Math.min(0.97, Math.max(0.03, P[nm].y + (D[nm].y / d) * m + (0.5 - P[nm].y) * 0.004));
+    });
+  }
+  names.forEach((nm) => { pos[nm].x = P[nm].x * WW; pos[nm].y = P[nm].y * HH; });
+  for (let it = 0; it < 120; it++) for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+    const A = pos[names[i]], B = pos[names[j]];
+    const ox = A.hw + B.hw + 10 - Math.abs(B.x - A.x), oy = A.hh + B.hh + 14 - Math.abs(B.y - A.y);
+    if (ox <= 0 || oy <= 0) continue;
+    if (oy < ox) { const s = (B.y >= A.y ? 1 : -1) * oy / 2; A.y -= s; B.y += s; }
+    else { const s = (B.x >= A.x ? 1 : -1) * ox / 2; A.x -= s; B.x += s; }
+  }
+}
+
 function rgOpen(id) {
   const m = rgModels[id];
   if (!m) return;
@@ -353,6 +392,7 @@ function rgOpen(id) {
   document.documentElement.classList.add("rg-open");
   const svg = el.querySelector("svg");
   const detail = el.querySelector(".rg-detail");
+  { const b = svg.getBoundingClientRect(); rgSpread(m.names, m.rels, pos, b.width / Math.max(1, b.height)); }
 
   const setView = () => svg.setAttribute("viewBox", `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
   const draw = () => {
