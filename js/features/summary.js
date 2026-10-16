@@ -448,17 +448,26 @@ function rgOpen(id) {
   const showEdge = (i) => {
     sel = { edge: i };
     const r = m.rels[i];
-    detail.innerHTML = `<div class="rg-rel">${relLine(r)}</div>${noteList(r)}`;
+    // 같은 두 사람 사이의 다른 방향·다른 이름표 관계(쌍방)도 구분선을 두고 이어서 보여 줌
+    const pair = m.rels.map((x, k) => ({ x, k })).filter(({ x, k }) => k === i || (x.from === r.from && x.to === r.to) || (x.from === r.to && x.to === r.from));
+    detail.innerHTML = pair.map(({ x, k }) => `<section class="rg-dir ${k === i ? "cur" : ""}"><div class="rg-rel">${relLine(x)}</div>${noteList(x)}</section>`).join("");
     draw();
     flyTo(frame([r.from, r.to], 36));
   };
-  const showNode = (name, center) => {
+  let nodeAsc = true; // 한 인물의 관계 목록: 연결된 사람 가나다 오름(▲)·내림(▼)차순
+  const showNode = (name, center, stay) => {
     sel = { node: name };
     const mine = m.rels.map((r, i) => ({ r, i })).filter(({ r }) => r.from === name || r.to === name);
-    detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}</div>
-      <ul class="rg-rels">${mine.map(({ r, i }) => `<li><button type="button" data-pick="${i}">${relLine(r)}</button></li>`).join("")}</ul>
+    // 연결된 사람마다 한 묶음: 쌍방 관계(A→B, B→A)는 한 묶음 안에 구분선으로 나눠 보여 줌
+    const groups = new Map();
+    mine.forEach((x) => { const o = x.r.from === name ? x.r.to : x.r.from; if (!groups.has(o)) groups.set(o, []); groups.get(o).push(x); });
+    const ordered = [...groups.entries()].sort((a, b) => (nodeAsc ? 1 : -1) * a[0].localeCompare(b[0], "ko"));
+    detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}
+        ${groups.size > 1 ? `<button type="button" class="rg-nsort" data-nsort aria-label="연결된 사람 순서 바꾸기">연결된 사람 가나다 ${nodeAsc ? "▲" : "▼"}</button>` : ""}</div>
+      <ul class="rg-rels">${ordered.map(([o, xs]) => `<li class="rg-grp${xs.length > 1 ? " two" : ""}">${xs.length > 1 ? `<small class="rg-grp-h">${esc(o)}와(과) 서로 이어진 관계 ${xs.length}개</small>` : ""}${xs.map(({ r, i }) => `<button type="button" data-pick="${i}">${relLine(r)}</button>`).join("")}</li>`).join("")}</ul>
       <p class="muted small">관계를 누르면 그 장면의 구절 풀이가 나와요.</p>`;
     draw();
+    if (stay) return;
     const others = [...new Set(mine.flatMap(({ r }) => [r.from, r.to]))];
     flyTo(center ? frame([name], 60) : frame(others.length ? others : [name], 30)); // 찾기로 고르면 그 사람이 한가운데 크게
   };
@@ -567,6 +576,7 @@ function rgOpen(id) {
       const k = z.dataset.z === "in" ? 0.75 : 1 / 0.75, cx = view.x + view.w / 2, cy = view.y + view.h / 2;
       return flyTo({ w: view.w * k, h: view.h * k, x: cx - view.w * k / 2, y: cy - view.h * k / 2 });
     }
+    if (e.target.closest("[data-nsort]") && sel && sel.node) { nodeAsc = !nodeAsc; return showNode(sel.node, false, true); }
     const find = e.target.closest("[data-find]");
     if (find) return findPerson(find.dataset.find);
     const pick = e.target.closest("[data-pick]");

@@ -477,3 +477,13 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rg-chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; }
 .rg-chips button { flex: none; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); border-radius: 99px; padding: 4px 11px; font-size: .82rem; cursor: pointer; }
 .rg-chips button.on { background: var(--primary, #2f6f55); border-color: transparent; color: #fff; }
+
+/* 관계도 자세히 보기: 인물별 관계 묶음 · 쌍방 관계 구분 */
+.rg-person { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.rg-nsort { margin-left: auto; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 3px 9px; font-size: .78rem; font-weight: 700; cursor: pointer; }
+.rg-rels { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.rg-grp.two { border: 1px solid var(--line); border-radius: 12px; padding: 4px; background: var(--surface-2); display: grid; gap: 0; }
+.rg-grp.two .rg-grp-h { padding: 2px 8px 4px; color: var(--muted); font-size: .72rem; }
+.rg-grp.two button + button { border-top: 1px dashed var(--line); border-radius: 0 0 10px 10px; }
+.rg-dir + .rg-dir { margin-top: 10px; padding-top: 10px; border-top: 2px dashed var(--line); }
+.rg-dir.cur .rg-rel { font-weight: 700; }
