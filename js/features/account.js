@@ -138,7 +138,7 @@ async function signInWith(path, body) {
 async function claimLinkFromHash() {
   const m = location.hash.match(/^#link=([A-Za-z0-9]{6,12})$/);
   if (!m) return false;
-  history.replaceState(null, "", "#stats");
+  history.replaceState(history.state, "", "#stats");
   try {
     if (account) showToast("이미 로그인돼 있어요");
     else await signInWith("claim", { code: m[1] });

@@ -129,7 +129,7 @@ function buildReader() {
       currentChapter = null;
       if (sheetTab === "table") {
         closeSheet();
-        history.replaceState(null, "", "#today"); // 위 메뉴 표시도 통독으로
+        history.replaceState(history.state, "", "#today"); // 위 메뉴 표시도 통독으로
         document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === "today"));
       }
       reload = true;

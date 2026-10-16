@@ -8,7 +8,7 @@ function route() {
   document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === r));
   if (r === "stats") renderStats();
   else if (r === "qt") renderQt();
-  else if (r === "table") { location.replace("#stats"); return; } // 통독표는 관리 화면 안으로 옮김
+  else if (r === "table") { history.replaceState(history.state, "", "#stats"); return route(); } // 통독표는 관리 화면 안으로 옮김
   else renderToday();
   window.scrollTo(0, 0);
   queueReminderSync();
