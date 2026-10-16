@@ -50,7 +50,9 @@ function mergeStates(local, remote) {
   const qt = { ...remote.qt };
   Object.entries(local.qt || {}).forEach(([k, v]) => {
     const r = qt[k] || { done: false, note: "" };
-    qt[k] = { done: !!(v.done || r.done), note: text(v.note, r.note), observe: text(v.observe, r.observe), reflect: text(v.reflect, r.reflect) };
+    const answers = { ...(r.answers || {}) };
+    Object.entries(v.answers || {}).forEach(([ak, av]) => { answers[ak] = { ...av, a: text(av.a, (answers[ak] || {}).a) }; });
+    qt[k] = { done: !!(v.done || r.done), note: text(v.note, r.note), observe: text(v.observe, r.observe), reflect: text(v.reflect, r.reflect), answers };
   });
   const useLocalPlan = local.plan && (!remote.plan || (local.planAt || 0) >= (remote.planAt || 0));
   return {

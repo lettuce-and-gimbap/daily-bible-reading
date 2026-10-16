@@ -428,8 +428,28 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .qt-field { display: grid; gap: 4px; }
 .qt-field b { font-size: .9rem; }
 .qt-field small { color: var(--muted); font-size: .78rem; line-height: 1.4; }
-.qt-write { margin-top: 6px; padding-top: 14px; border-top: 1px solid var(--line); gap: 10px; }
 
 /* 메모 고르기 칸이 화면 밖으로 밀리지 않게: 안쪽 칸이 모두 줄어들 수 있게 함 */
 .mp, .mp-panel, .mp-list, .mp-list li { min-width: 0; max-width: 100%; }
 .mp-item { min-width: 0; }
+
+/* QT 질문 아래 내 답 칸 · 본문 절 고르기 */
+.qt-sec ol li { display: grid; gap: 6px; }
+.qt-q { font-weight: 600; }
+.qt-ans { width: 100%; min-height: 4.6em; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: .94rem; line-height: 1.6; }
+.qt-ans:focus { outline: 2px solid color-mix(in srgb, var(--qt) 45%, transparent); outline-offset: 0; }
+.qt-passage .vp-list { min-width: 0; }
+.qp-bar { position: sticky; bottom: 58px; z-index: 2; margin-top: 6px; padding: 8px 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 4px 14px rgb(0 0 0 / .14); }
+.rd.qt .vp-row:has(input:checked) { border-color: var(--qt); background: var(--qt-soft); }
+.rd.qt .vp-row:has(input:checked)::after { color: var(--qt); }
+.rd.qt .vp-num { color: var(--qt); }
+.rd.qt .vp-vers .opt.on { border-color: var(--qt); background: var(--qt-soft); color: var(--qt); }
+.rd.qt .vp-bar .btn.primary { background: var(--qt); color: #fff; }
+.rd.qt .vp-bar .btn.soft { background: var(--qt-soft); color: var(--qt); }
+.qt-read { grid-template-columns: minmax(0, 1fr); }
+#q-content, .qt-passage, .qp-body { min-width: 0; max-width: 100%; }
+.qt-passage .vp-vers { max-width: 100%; }
+.qp-bar { flex-wrap: wrap; row-gap: 4px; }
+.qp-bar .vp-n { flex: 1 1 100%; white-space: nowrap; }
+.qp-bar .btn.text { margin-left: auto; }
+.qp-bar [data-qa="clear"] { margin-left: 0; }

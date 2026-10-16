@@ -138,13 +138,6 @@ function mountVersePicker(body, target, hintKey, hintIdx) {
   renderVersePicker(body, target, moved ? hintIdx : undefined);
 }
 
-// QT 화면: 그날 QT 본문의 첫 장으로 열기
-async function mountQtPicker(body) {
-  const r = refsInText(await qtPassageRef(qtDate))[0];
-  if (sheetTab !== "verses") return;
-  mountVersePicker(body, "qt", `qt:${qtDate}`, r ? r.idx : (pickIdx ?? chapterIndex("psa", 1)));
-}
-
 // 구절 패널에서 복사한 절을 날짜와 함께 남김 (관리 → 권별 진행의 "복사한 구절"). 메모에 붙인 구절은 메모에서 따로 읽음
 function logCopied(idx, ref) {
   const v = (ref.match(/:([\d,\- ]+)$/) || [])[1];

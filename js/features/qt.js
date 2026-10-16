@@ -24,7 +24,7 @@ function renderQt() {
         </div>
         <div class="rd-tabs" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
       </div>
-      <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div><div id="q-write">${qtWriteHtml()}</div></div>${pasteFabHtml()}${sheetShell()}</div>
+      <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>${pasteFabHtml()}${sheetShell()}</div>
       <div class="rd-bottom" id="q-bottom"></div>
     </div>`;
   onSheetChange = syncQtTabs;
@@ -36,14 +36,7 @@ function renderQt() {
   });
   syncQtTabs();
   fillQtRead(qtDate);
-  // 본문 아래 칸에서 쓴 내용도 같은 기록(내용 관찰·연구 / 묵상·느낀 점)이라 묵상 노트 탭에서 그대로 보임
-  const readTimers = {};
-  $("#q-write").addEventListener("input", (e) => {
-    const f = e.target.dataset && e.target.dataset.qf;
-    if (!f) return;
-    clearTimeout(readTimers[f]);
-    readTimers[f] = setTimeout(() => saveQtField(f, e.target.value), 400);
-  });
+  bindQtContent();
 
   bindSheetChrome(renderQtSheet);
   $("#paste-fab").addEventListener("click", () => quickPasteVerses("qt"));
@@ -70,10 +63,7 @@ function renderQt() {
 
   const body = $("#sheet-body");
   body.addEventListener("click", (e) => {
-    if (e.target.closest("#q-copy-note")) {
-      const cur = Object.fromEntries(QT_FIELDS.map(([k]) => [k, ($(`#q-${k}`) || {}).value || ""]));
-      return copyText(qtTextOf(cur), "묵상 노트를 복사했어요");
-    }
+    if (e.target.closest("#q-copy-note")) return copyText(qtTextOf(qtCurrentFromDom()), "묵상 노트를 복사했어요");
     const a = e.target.closest("[data-qt]");
     if (!a) return;
     e.preventDefault();
@@ -82,52 +72,71 @@ function renderQt() {
   });
   const timers = {};
   body.addEventListener("input", (e) => {
-    const m = e.target.id && e.target.id.match(/^q-(observe|reflect|note)$/);
-    if (!m) return;
-    clearTimeout(timers[m[1]]);
-    timers[m[1]] = setTimeout(() => saveQtField(m[1], e.target.value), 400);
+    const el = e.target;
+    const key = el.dataset && el.dataset.akey !== undefined ? `a${el.dataset.akey}` : (el.id.match(/^q-(observe|reflect|note)$/) || [])[0];
+    if (!key) return;
+    clearTimeout(timers[key]);
+    timers[key] = setTimeout(() => saveQtFromTextarea(el), 400);
   });
 
   refreshQtBar();
 }
 
-// QT 기록은 세 칸: 내용 관찰·연구(observe) · 묵상·느낀 점(reflect) · 구절·기도 메모(note)
-const QT_FIELDS = [
-  ["observe", "내용 관찰 · 연구", "본문을 꼼꼼히 살핀 것: 누가·언제·어디서·무엇을, 반복되는 말, 앞뒤 흐름, 궁금한 점"],
-  ["reflect", "묵상 · 느낀 점", "이 말씀이 오늘 나에게 하시는 말씀, 느낀 점, 삶에서 실천할 한 가지"],
-  ["note", "구절 · 기도 메모", "붙여넣은 구절과 기도제목을 적어 두세요"],
-];
-const qtEmpty = () => ({ done: false, note: "", observe: "", reflect: "" });
-const qtHasText = (q) => !!q && QT_FIELDS.some(([k]) => String(q[k] || "").trim());
-
-// 본문 · 묵상 화면 아래의 쓰기 칸 (내용 관찰 · 연구 / 묵상 · 느낀 점). 묵상 노트 탭과 같은 기록을 같이 씀
-function qtWriteHtml() {
-  const entry = state.qt[qtDate] || qtEmpty();
-  return `<section class="qt-sec qt-write">
-    <h3>나의 묵상 기록</h3>
-    ${QT_FIELDS.slice(0, 2).map(([k, label, hint]) => `
-      <label class="qt-field">
-        <b>${label}</b><small>${hint}</small>
-        <textarea id="qr-${k}" data-qf="${k}" rows="5">${esc(entry[k] || "")}</textarea>
-      </label>`).join("")}
-    <p class="muted small"><span id="qr-status">자동 저장돼요</span> · 쓴 내용은 <b>묵상 노트</b> 탭에서 구절·기도 메모와 함께 모아 볼 수 있어요.</p>
-  </section>`;
-}
-
-// 묵상 노트 탭에서 고친 내용을 본문 아래 칸에도 반영 (쓰는 중인 칸은 건드리지 않음)
-function refreshQtWriteFields() {
-  const entry = state.qt[qtDate] || qtEmpty();
-  QT_FIELDS.slice(0, 2).forEach(([k]) => {
-    const el = $(`#qr-${k}`);
-    if (el && document.activeElement !== el && el.value !== (entry[k] || "")) el.value = entry[k] || "";
-  });
-}
+// QT 기록: 질문마다 쓴 답(answers) + 구절·기도 메모(note).
+// 예전에 쓴 "내용 관찰·연구"(observe) · "묵상·느낀 점"(reflect) 칸은 글이 있으면 그대로 보여 줌
+const QT_LEGACY = [["observe", "내용 관찰 · 연구"], ["reflect", "묵상 · 느낀 점"]];
+const qtEmpty = () => ({ done: false, note: "", observe: "", reflect: "", answers: {} });
+const keyOrder = (a, b) => { const [a1, a2] = a.split(".").map(Number), [b1, b2] = b.split(".").map(Number); return a1 - b1 || a2 - b2; };
+// 글이 있는 답만 질문 순서대로: [[키, { s: 섹션 이름, q: 질문, a: 내 답 }]]
+const qtAnswers = (q) => Object.entries((q && q.answers) || {}).filter(([, v]) => v && String(v.a || "").trim()).sort((x, y) => keyOrder(x[0], y[0]));
+const qtHasText = (q) => !!q && (["note", "observe", "reflect"].some((k) => String(q[k] || "").trim()) || qtAnswers(q).length > 0);
 
 // 칸 이름을 붙여 하나로 합친 글 (복사·내보내기·기록 보기용). 빈 칸은 뺌
 function qtTextOf(q) {
   if (!q) return "";
-  return QT_FIELDS.filter(([k]) => String(q[k] || "").trim())
-    .map(([k, label]) => `[${label}]\n${String(q[k]).trim()}`).join("\n\n");
+  const parts = qtAnswers(q).map(([, v]) => `[${v.s || "묵상"}] ${v.q}\n${String(v.a).trim()}`);
+  QT_LEGACY.forEach(([k, label]) => { if (String(q[k] || "").trim()) parts.push(`[${label}]\n${String(q[k]).trim()}`); });
+  if (String(q.note || "").trim()) parts.push(`[구절 · 기도 메모]\n${String(q.note).trim()}`);
+  return parts.join("\n\n");
+}
+
+// 화면에 쓰고 있는 내용까지 반영한 기록 (아직 저장 전인 마지막 글자도 복사되게)
+function qtCurrentFromDom() {
+  const cur = { ...qtEmpty(), ...(state.qt[qtDate] || {}) };
+  const answers = { ...(cur.answers || {}) };
+  document.querySelectorAll("textarea[data-akey]").forEach((el) => {
+    if (el.value.trim()) answers[el.dataset.akey] = { s: el.dataset.s, q: el.dataset.q, a: el.value };
+    else delete answers[el.dataset.akey];
+  });
+  ["observe", "reflect", "note"].forEach((k) => { const el = $(`#q-${k}`); if (el) cur[k] = el.value; });
+  return { ...cur, answers };
+}
+
+// 칸 하나 저장 (질문 아래 칸 · 묵상 노트 탭의 칸 공통)
+function saveQtFromTextarea(el) {
+  if (el.dataset.akey !== undefined) saveQtAnswer(el.dataset.akey, el.dataset.s, el.dataset.q, el.value);
+  else saveQtField(el.id.replace(/^q-/, ""), el.value);
+}
+
+function saveQtAnswer(key, s, q, a) {
+  const answers = { ...((state.qt[qtDate] || {}).answers || {}) };
+  if (a.trim()) answers[key] = { s, q, a }; else delete answers[key];
+  saveQt({ answers });
+  qtSaved();
+}
+
+// 다른 탭에서 고친 답을 본문 · 묵상 화면의 질문 아래 칸에도 반영 (쓰는 중인 칸은 건드리지 않음)
+function refreshQtAnswerBoxes() {
+  const answers = (state.qt[qtDate] || {}).answers || {};
+  document.querySelectorAll("#q-content textarea[data-akey]").forEach((el) => {
+    const v = answers[el.dataset.akey] ? answers[el.dataset.akey].a : "";
+    if (document.activeElement !== el && el.value !== v) el.value = v;
+  });
+}
+
+function qtSaved() {
+  ["#q-status", "#qr-status"].forEach((id) => { const st = $(id); if (st) st.textContent = "저장됨 ✓"; });
+  refreshQtBar();
 }
 
 // 묵상 노트 저장 (직접 쓸 때와 구절을 지울 때 함께 씀)
@@ -135,8 +144,7 @@ function saveQtNote(value) { saveQtField("note", value); }
 
 function saveQtField(field, value) {
   saveQt({ [field]: value });
-  ["#q-status", "#qr-status"].forEach((id) => { const st = $(id); if (st) st.textContent = "저장됨 ✓"; });
-  refreshQtBar();
+  qtSaved();
 }
 
 function saveQt(patch) {
@@ -159,16 +167,16 @@ function refreshQtBar() {
     <span class="streak" title="QT 연속 일수">🔥 <b>${s}</b>일</span>`;
 }
 
-const QT_TABS = [["read", "본문 · 묵상"], ["verses", "구절"], ["note", "묵상 노트"], ["godpia", "갓피아 원문"]];
+const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["godpia", "갓피아 원문"]];
 
 function syncQtTabs() {
-  refreshQtWriteFields();
+  refreshQtAnswerBoxes();
   document.querySelectorAll("#q-tabs [data-qtab]").forEach((b) => {
     b.classList.toggle("on", b.dataset.qtab === (sheetTab || "read"));
   });
 }
 
-// 본문(보기 설정 역본 1~2개 나란히) + 갓피아의 질문·길잡이·기도
+// 본문(역본 1~2개, 절을 눌러 골라 노트에 붙임) + 갓피아의 질문(질문마다 바로 아래에 내 답 칸) · 길잡이 · 기도
 async function fillQtRead(date) {
   const box = $("#q-content");
   let d;
@@ -178,21 +186,123 @@ async function fillQtRead(date) {
     box.innerHTML = `<p class="muted small">QT를 불러오지 못했어요. 인터넷 연결을 확인하거나 <b>갓피아 원문</b> 탭에서 보세요.</p>`;
     return;
   }
+  const answers = (state.qt[qtDate] || {}).answers || {};
+  box.innerHTML = `<header class="qt-head"><small>${esc(d.ref)}</small><h2>${esc(d.title || "")}</h2></header>
+    <div class="qt-passage" id="q-passage"></div>
+    ${(d.sections || []).map((s, si) => `<section class="qt-sec"><h3>${esc(s.name)}</h3>
+      ${s.qs.length ? `<ol>${s.qs.map((q, qi) => {
+        const text = q.replace(/^\d+\.\s*/, "");
+        return `<li><span class="qt-q">${esc(text)}</span>
+          <textarea class="qt-ans" data-akey="${si}.${qi}" data-s="${esc(s.name)}" data-q="${esc(text)}" rows="3" placeholder="여기에 적어 보세요">${esc((answers[`${si}.${qi}`] || {}).a || "")}</textarea></li>`;
+      }).join("")}</ol>` : ""}
+      ${s.text ? s.text.split("\n").map((p) => `<p>${esc(p)}</p>`).join("") : ""}</section>`).join("")}
+    <p class="muted small qt-src">본문·묵상 자료: 갓피아 날마다 솟는 샘물 · <span id="qr-status">질문 아래에 쓴 글은 자동 저장되고 묵상 노트 탭에 모여요</span></p>`;
+  paintQtPassage(date, d);
+}
+
+// 본문 칸: 그날 QT 범위의 절만 보여 주고, 절을 눌러 골라서 복사하거나 묵상 노트에 붙임
+let qtPassage = { rows: [] };
+async function paintQtPassage(date, d) {
+  const box = $("#q-passage");
+  if (!box) return;
   const vers = pickVersions();
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
-  box.innerHTML = `<header class="qt-head"><small>${esc(d.ref)}</small><h2>${esc(d.title || "")}</h2></header>
-    <div class="qt-passage" id="q-passage"><p class="muted small">본문 불러오는 중…</p></div>
-    ${(d.sections || []).map((s) => `<section class="qt-sec"><h3>${esc(s.name)}</h3>
-      ${s.qs.length ? `<ol>${s.qs.map((q) => `<li>${esc(q.replace(/^\d+\.\s*/, ""))}</li>`).join("")}</ol>` : ""}
-      ${s.text ? s.text.split("\n").map((p) => `<p>${esc(p)}</p>`).join("") : ""}</section>`).join("")}
-    <p class="muted small qt-src">본문·묵상 자료: 갓피아 날마다 솟는 샘물</p>`;
+  box.style.setProperty("--fz", fzScale());
+  box.innerHTML = `<div class="vp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
+    <div class="opts vp-vers">${VERSIONS.map((v) => `<button class="opt ${vers.includes(v.code) ? "on" : ""}" data-pv="${v.code}">${v.name}</button>`).join("")}</div>
+    <div class="qp-body"><p class="muted small">본문 불러오는 중…</p></div>`;
+  qtPassage = { rows: [], d };
   try {
-    const parts = await Promise.all(qtRanges(d.ref).map((r) => versePairs(r.idx, (n) => n >= r.lo && n <= r.hi, vers)));
-    if (date !== qtDate) return;
-    $("#q-passage").innerHTML = versePairsHtml(parts.flat(), vers.map(vname));
+    const ranges = qtRanges(d.ref);
+    const parts = await Promise.all(ranges.map((r) => versePairs(r.idx, (n) => n >= r.lo && n <= r.hi, vers)));
+    if (date !== qtDate || !box.isConnected) return;
+    const rows = parts.flatMap((p, k) => p.map((r) => ({ idx: ranges[k].idx, ...r })));
+    qtPassage = { rows, d };
+    const names = vers.map(vname);
+    box.querySelector(".qp-body").innerHTML = `<div class="vp-list">${rows.map((r, i) => `
+        <label class="vp-row">
+          <input type="checkbox" class="sr-only" data-ri="${i}">
+          <span class="vp-num">${esc(r.label)}</span>
+          <span class="vp-txt">${esc(r.texts[0])}${r.texts[1] ? `<small><i>${esc(names[1] || "")}</i> ${esc(r.texts[1])}</small>` : ""}</span>
+        </label>`).join("")}</div>
+      <div class="vp-bar qp-bar">
+        <span class="vp-n">절을 눌러 고르세요</span>
+        <button class="btn text small" data-qa="all">전체</button>
+        <button class="btn text small" data-qa="clear">해제</button>
+        <button class="btn soft small" data-qa="copy">📋 복사</button>
+        <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
+      </div>`;
+    qtPassageCount();
   } catch (e) {
-    $("#q-passage").innerHTML = `<p class="muted small">본문을 불러오지 못했어요. <b>갓피아 원문</b> 탭에서 볼 수 있어요.</p>`;
+    box.querySelector(".qp-body").innerHTML = `<p class="muted small">본문을 불러오지 못했어요. <b>갓피아 원문</b> 탭에서 볼 수 있어요.</p>`;
   }
+}
+
+function qtPassageCount() {
+  const box = $("#q-passage");
+  const n = box.querySelectorAll("input[data-ri]:checked").length;
+  const label = box.querySelector(".vp-n");
+  if (label) label.textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
+  box.querySelectorAll('[data-qa="copy"], [data-qa="paste"]').forEach((b) => { b.disabled = !n; });
+}
+
+// 고른 절 → 장마다 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식 (장이 둘이면 빈 줄로 나눔)
+function qtPassageQuote() {
+  const picked = [...$("#q-passage").querySelectorAll("input[data-ri]:checked")].map((c) => qtPassage.rows[Number(c.dataset.ri)]);
+  const byChap = new Map();
+  picked.forEach((r) => byChap.set(r.idx, [...(byChap.get(r.idx) || []), r]));
+  return [...byChap].map(([idx, rows]) => {
+    const nums = rows.flatMap((r) => { const [a, b] = labelSpan(r.label); return Array.from({ length: b - a + 1 }, (_, k) => a + k); });
+    const g1 = rows.map((r) => `${r.label} ${r.texts[0]}`);
+    const g2 = rows.filter((r) => r.texts[1]).map((r) => `${r.label} ${r.texts[1]}`);
+    return { idx, text: `${versesRef(CHAPTERS[idx], nums)}\n${g1.join("\n")}${g2.length ? `\n${VERSION_DIVIDER}\n${g2.join("\n")}` : ""}` };
+  });
+}
+
+// 본문 · 묵상 화면(#q-content) 안의 눌림·입력을 모아 처리 (화면 안쪽만 바뀌어도 한 번만 연결)
+function bindQtContent() {
+  const content = $("#q-content");
+  content.addEventListener("change", (e) => { if (e.target.closest("input[data-ri]")) qtPassageCount(); });
+  content.addEventListener("click", (e) => {
+    const box = $("#q-passage");
+    const fz = e.target.closest("[data-fz]");
+    if (fz) return fzStep(box, Number(fz.dataset.fz));
+    const pv = e.target.closest("[data-pv]");
+    if (pv) { // 역본 고르기: 최대 2개, 먼저 고른 게 위에 나옴
+      const now = pickVersions();
+      const next = now.includes(pv.dataset.pv) ? now.filter((c) => c !== pv.dataset.pv) : [...now, pv.dataset.pv].slice(-2);
+      if (!next.length) return;
+      state.settings.pick = next;
+      persist();
+      return paintQtPassage(qtDate, qtPassage.d);
+    }
+    const act = (e.target.closest("[data-qa]") || {}).dataset;
+    if (!act) return;
+    if (act.qa === "all" || act.qa === "clear") {
+      box.querySelectorAll("input[data-ri]").forEach((c) => { c.checked = act.qa === "all"; });
+      return qtPassageCount();
+    }
+    const quotes = qtPassageQuote();
+    if (!quotes.length) return;
+    if (act.qa === "copy") {
+      quotes.forEach((q) => logCopied(q.idx, q.text.split("\n")[0]));
+      return copyText(quotes.map((q) => q.text).join("\n\n"), `${quotes[0].text.split("\n")[0]} 복사했어요`);
+    }
+    insertQuote("qt", quotes.map((q) => q.text).join("\n\n"));
+    box.querySelectorAll("input[data-ri]").forEach((c) => { c.checked = false; });
+    qtPassageCount();
+  });
+  const timers = {};
+  content.addEventListener("input", (e) => {
+    const el = e.target;
+    if (!el.matches || !el.matches("textarea[data-akey]")) {
+      return;
+    }
+    el.style.height = "auto"; // 쓴 만큼 칸이 늘어남
+    el.style.height = `${Math.min(el.scrollHeight + 2, 420)}px`;
+    clearTimeout(timers[el.dataset.akey]);
+    timers[el.dataset.akey] = setTimeout(() => saveQtAnswer(el.dataset.akey, el.dataset.s, el.dataset.q, el.value), 400);
+  });
 }
 
 // "열왕기상 15:25~32", "창세기 1:26~2:3" → [{ idx, lo, hi }] (장이 넘어가면 장마다)
@@ -213,27 +323,33 @@ function renderQtSheet() {
     $("#sheet-body").innerHTML = `<div class="sheet-frame"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${godpiaQtUrl(qtDate)}" ${GODPIA_SANDBOX}></iframe></div>`;
     return;
   }
-  if (sheetTab === "verses") {
-    setSheetTitle(null, "구절 선택");
-    return mountQtPicker($("#sheet-body"));
-  }
   setSheetTitle(null, "묵상 노트");
   const entry = state.qt[qtDate] || qtEmpty();
   const history = Object.keys(state.qt).filter((d) => d !== qtDate && (state.qt[d].done || qtHasText(state.qt[d]))).sort().reverse().slice(0, 20);
+  const answers = qtAnswers(entry);
   $("#sheet-body").innerHTML = `
     <section class="tool-card">
       <h3 class="label">${prettyDate(qtDate)}</h3>
-      ${QT_FIELDS.map(([k, label, hint], n) => `
+      ${answers.length ? answers.map(([k, v]) => `
         <label class="qt-field">
-          <b>${label}</b><small>${hint}</small>
-          <textarea id="q-${k}" rows="${k === "note" ? 5 : 6}" placeholder="${n === 0 ? "예) 누가 무엇을 했나? 같은 말이 몇 번 나오나?" : n === 1 ? "예) 오늘 말씀이 나에게 말하는 것은…" : "구절과 기도제목"}">${esc(entry[k] || "")}</textarea>
-        </label>
-        ${k === "note" ? `<div class="mp" id="q-note-picker"></div>` : ""}`).join("")}
+          <b>${esc(v.q)}</b><small>${esc(v.s || "")}</small>
+          <textarea class="qt-ans" data-akey="${k}" data-s="${esc(v.s || "")}" data-q="${esc(v.q)}" rows="4">${esc(v.a)}</textarea>
+        </label>`).join("") : `<p class="muted small">본문 · 묵상 화면의 질문 아래 칸에 쓴 글이 여기에 모여요.</p>`}
+      ${QT_LEGACY.filter(([k]) => String(entry[k] || "").trim()).map(([k, label]) => `
+        <label class="qt-field">
+          <b>${label}</b><small>예전에 쓴 글</small>
+          <textarea id="q-${k}" rows="5">${esc(entry[k])}</textarea>
+        </label>`).join("")}
+      <label class="qt-field">
+        <b>구절 · 기도 메모</b><small>붙여넣은 구절과 기도제목을 적어 두세요</small>
+        <textarea id="q-note" rows="5" placeholder="구절과 기도제목">${esc(entry.note || "")}</textarea>
+      </label>
+      <div class="mp" id="q-note-picker"></div>
       <div class="inline between">
         <button class="btn soft small" id="q-copy-note">📋 노트 전체 복사</button>
         <span class="muted small" id="q-status">자동 저장돼요</span>
       </div>
-      <p class="muted small hint">갓피아 화면 위의 <b>📋 붙여넣기</b> 버튼으로 구절을 바로 넣을 수 있어요(구절 · 기도 메모 칸에 붙어요). 다 쓰면 여기서 <b>노트 전체 복사</b>로 세 칸을 한꺼번에 다른 곳에 옮겨 보세요.
+      <p class="muted small hint">본문 · 묵상 화면에서 <b>절을 눌러 골라 "노트에 붙이기"</b>를 하면 위 구절 · 기도 메모 칸에 붙어요. 다 쓰면 <b>노트 전체 복사</b>로 질문별 답과 메모를 한꺼번에 다른 곳에 옮겨 보세요.
         노트는 이 기기에 저장되고, <a href="#stats">관리 → 기록 내보내기</a>에서 엑셀·텍스트로 받을 수 있어요.</p>
     </section>
     ${history.length ? `
