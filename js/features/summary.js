@@ -687,7 +687,7 @@ function graphSource(s) {
 function chapChipsHtml(s) {
   if (!s.byChap) return "";
   const cur = graphSource(s) === s ? -1 : s.byChap.indexOf(graphSource(s));
-  return `<div class="rg-chips rg-chap" role="group" aria-label="관계도로 볼 장">
+  return `<div class="seg rg-chap" role="group" aria-label="관계도로 볼 장">
     <button type="button" data-gchap="all" class="${cur < 0 ? "on" : ""}">분량 전체</button>
     ${s.flow.map((f, i) => `<button type="button" data-gchap="${i}" class="${cur === i ? "on" : ""}">${esc(f.ref)}</button>`).join("")}
   </div>`;
@@ -735,10 +735,10 @@ function staticSummaryHtml(s) {
     <section class="tool-card sum-card">
       <div class="rg-head">
         <h3 class="label">등장 인물 관계도</h3>
-        <div class="seg rg-detail-seg" role="group" aria-label="관계도 자세한 정도">
-          <button data-gdetail="main" class="${state.settings.graphAll ? "" : "on"}">주요 인물</button>
-          <button data-gdetail="all" class="${state.settings.graphAll ? "on" : ""}">전체 인물</button>
-        </div>
+        <button type="button" class="read-switch rg-switch ${state.settings.graphAll ? "on" : ""}" data-gdetail="${state.settings.graphAll ? "main" : "all"}" role="switch" aria-checked="${!!state.settings.graphAll}">
+          <span class="rs-label">${state.settings.graphAll ? "전체 인물" : "주요 인물"}</span>
+          <span class="rs-track" aria-hidden="true"><span class="rs-knob"></span></span>
+        </button>
       </div>
       ${chapChipsHtml(s)}
       ${(() => { const g = graphSource(s); return relationGraphHtml(g.graphPeople, g.rels); })()}
