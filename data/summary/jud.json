@@ -29,7 +29,7 @@
         {"name":"하나님","role":"능히 보호하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"유다","to":"야고보","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1","note":"유다는 자신을 야고보의 형제라고 소개해요. 예수님의 육신의 형제들이지만 자랑하지 않고 예수 그리스도의 종이라 불러요."},
+        {"from":"유다","to":"야고보","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1","note":"유다는 자신을 예수 그리스도의 종이며 야고보의 형제라고 소개해요."},
         {"from":"가만히 들어온 자들","to":"예수","label":"주를 부인함","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"몰래 끼어든 이들은 하나님의 은혜를 방탕한 삶의 구실로 삼고 유일한 주인이신 예수 그리스도를 부인해요."},
         {"from":"미가엘","to":"마귀","label":"다툰 천사장","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"천사장 미가엘도 모세의 시체를 두고 마귀와 다툴 때 감히 모욕하지 않고 주께서 꾸짖으시길 바란다고 했어요. 권위를 업신여기는 이들과 대조돼요."},
         {"from":"가만히 들어온 자들","to":"가인·발람·고라","label":"길을 따름","kind":"other","directed":true,"weight":2,"verses":"11","note":"이들은 가인의 길을 가고 삯을 위해 발람의 잘못에 빠지고 고라처럼 거역하다 멸망해요. 모두 구약에서 심판받은 이들이에요."},
