@@ -24,6 +24,13 @@ function versionName(code) {
   return (VERSIONS.find((v) => v.code === code) || VERSIONS[0]).name;
 }
 
+// 화면 모드(관리 탭에서 고름): auto면 기기 설정을 따르고, light/dark면 css의 data-theme으로 강제
+function applyTheme() {
+  const t = (state.settings || {}).theme;
+  if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+  else delete document.documentElement.dataset.theme;
+}
+
 // 저장할 때마다 알림 서버에도 오늘 완료 여부를 알림 (features/reminder.js)
 function persist() {
   saveState(state);

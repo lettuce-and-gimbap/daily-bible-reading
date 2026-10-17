@@ -60,7 +60,8 @@ function normalizeSettings(settings) {
   const ver2 = valid(settings.ver2) && settings.ver2 !== ver
     ? settings.ver2
     : ["niv", "saenew", "gae"].find((code) => code !== ver);
-  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2 };
+  const theme = ["light", "dark"].includes(settings.theme) ? settings.theme : "auto"; // 화면 모드: 기기 설정 따르기 / 밝게 / 어둡게
+  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2, theme };
 }
 
 // 예전 형식(range: "rev" | "full")으로 저장된 계획을 끝 장(endIdx) 형식으로 바꿈

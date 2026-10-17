@@ -87,7 +87,14 @@ function renderStats() {
 
   const copied = copiedByDate();
 
+  const themeNow = state.settings.theme || "auto";
   app.innerHTML = `
+    <section class="card theme-card">
+      <h3 class="label">화면 모드</h3>
+      <div class="opts">
+        ${[["auto", "기기 설정 따르기"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="opt ${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
+      </div>
+    </section>
     <section class="hero-row">${readCard}${qtCard}</section>
 
     ${glanceCardHtml()}
@@ -139,6 +146,13 @@ function renderStats() {
   bindAccountCard();
   bindReminderCard();
   bindExportCard();
+
+  document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
+    state.settings.theme = b.dataset.themeSet;
+    applyTheme();
+    persist();
+    renderStats();
+  }));
 
   const shiftMonth = (n) => {
     const d = new Date(cy, cm - 1 + n, 1);

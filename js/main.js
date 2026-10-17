@@ -17,6 +17,7 @@ function route() {
 }
 window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#link=")) route(); });
 
+applyTheme();
 // QR(#link=코드)로 열었으면 먼저 그 코드로 로그인, 로그인돼 있으면 서버 기록과 맞춘 뒤 그림
 claimLinkFromHash().then((linked) => { route(); if (!linked) syncAccount(); maybeShowChangelog(); });
 
