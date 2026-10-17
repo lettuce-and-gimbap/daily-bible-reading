@@ -32,7 +32,7 @@ function renderQt() {
           <button class="btn text small" data-qa="clear">해제</button>
           <button class="btn soft small" data-qa="copy">📋 복사</button>
           <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
-        </div>${pasteFabHtml()}${sheetShell()}</div>
+        </div>${sheetShell()}</div>
     </div>`;
   onSheetChange = syncQtTabs;
   $("#q-tabs").addEventListener("click", (e) => {
@@ -46,7 +46,6 @@ function renderQt() {
   bindQtContent();
 
   bindSheetChrome(renderQtSheet);
-  $("#paste-fab").addEventListener("click", () => quickPasteVerses("qt"));
   prefetchVerses("qt"); // 그날 QT 본문 장을 미리 받아 둠
 
   const setDate = (d) => { qtDate = d > todayStr() ? todayStr() : d; renderQt(); };
