@@ -313,3 +313,13 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .exit-quit { position: absolute; min-width: 110px; padding: 12px 18px; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 800; font-size: 1rem; box-shadow: 0 6px 18px rgb(0 0 0 / .3); cursor: pointer; z-index: 1; }
 .exit-card { padding-top: 26px; }
 .exit-closing { position: fixed; inset: 0; z-index: 90; display: grid; place-content: center; gap: 8px; text-align: center; background: var(--bg); font-size: 1.05rem; font-weight: 700; }
+
+/* 관리 화면의 통독·QT 숫자: 박스 없이 한 줄 가로 글 (예: 🔥 27일 연속 · ✅ 계획대로 · 🏁 4월 18일) */
+.mini, .kpis { display: block; line-height: 1.8; }
+.mini li, .kpis li { display: inline; background: none; border-radius: 0; padding: 0; text-align: left; }
+.mini li + li::before, .kpis li + li::before { content: " · "; color: var(--muted); }
+.mini li b, .kpis li b { font-size: .95rem; margin-right: 3px; }
+.mini li span, .kpis li span { font-size: .8rem; color: var(--muted); }
+.kpis li i { font-style: normal; margin-right: 3px; }
+.kpi-plan.behind b { color: var(--warn); }
+.kpi-plan.ahead b { color: var(--accent); }
