@@ -3,8 +3,9 @@ let planCache = null; // { body, updated }
 
 async function fetchPlan() {
   const res = await fetch(`${PUSH_SERVER}/plan`, { cache: "no-cache" });
-  if (!res.ok) throw new Error(`서버 응답 ${res.status}`);
-  return res.json();
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `서버 응답 ${res.status}`);
+  return data;
 }
 
 function planTime(t) {
@@ -57,6 +58,6 @@ async function openPlan() {
   try {
     show(await fetchPlan());
   } catch (err) {
-    body.innerHTML = `<p class="muted small">계획을 불러오지 못했어요. 인터넷 연결을 확인해 주세요.</p>`;
+    body.innerHTML = `<p class="muted small">계획을 불러오지 못했어요 (${esc(err.message)}).</p>`;
   }
 }

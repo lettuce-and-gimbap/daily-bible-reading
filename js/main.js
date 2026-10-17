@@ -39,7 +39,7 @@ async function refreshIfNewVersion() {
     const html = await (await fetch(`index.html?check=${Date.now()}`, { cache: "no-store" })).text();
     const latest = (html.match(/js\/main\.js\?v=([\d.]+)/) || [])[1];
     const current = (document.querySelector('script[src*="main.js"]').src.match(/v=([\d.]+)/) || [])[1];
-    if (latest && current && latest !== current) location.replace(`${location.pathname}?r=${Date.now()}${location.hash}`);
+    if (latest && current && latest !== current) location.reload(); // 기록을 바꾸지 않고 같은 자리에서 새로 불러옴
   } catch (e) { /* 오프라인이면 그대로 둠 */ }
 }
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshIfNewVersion(); });
