@@ -82,6 +82,7 @@ function changelogCardHtml() {
   return `<section class="card cl-row">
     <button class="btn ghost" id="cl-open">🆕 업데이트 기록 보기<small class="muted">현재 v${esc(appVersion())}</small></button>
     <button class="btn ghost" id="plan-open">📋 벅수의 계획</button>
+    <button class="btn ghost" id="app-exit">🚪 앱 나가기</button>
   </section>`;
 }
 document.addEventListener("click", (e) => { if (e.target.closest && e.target.closest("#cl-open")) openChangelog(null); });

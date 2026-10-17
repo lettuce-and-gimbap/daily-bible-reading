@@ -230,3 +230,4 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .exit-art { width: 100%; aspect-ratio: 2 / 1; display: grid; place-items: center; }
 .exit-msg { margin: 6px 0 0; font-size: 14.5px; line-height: 1.5; }
 .exit-fallback { font-size: 40px; margin: 0; }
+.exit-actions { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
