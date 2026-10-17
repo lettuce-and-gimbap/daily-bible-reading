@@ -99,7 +99,7 @@ const qtEmpty = () => ({ done: false, note: "", observe: "", reflect: "", answer
 const keyOrder = (a, b) => { const [a1, a2] = a.split(".").map(Number), [b1, b2] = b.split(".").map(Number); return a1 - b1 || a2 - b2; };
 // 글이 있는 답만 질문 순서대로: [[키, { s: 섹션 이름, q: 질문, a: 내 답 }]]
 const qtAnswers = (q) => Object.entries((q && q.answers) || {}).filter(([, v]) => v && String(v.a || "").trim()).sort((x, y) => keyOrder(x[0], y[0]));
-const qtHasText = (q) => !!q && (["note", "observe", "reflect"].some((k) => String(q[k] || "").trim()) || qtAnswers(q).length > 0);
+const qtHasText = (q) => !!q && (["note", "observe", "reflect"].some((k) => String(q[k] || "").trim()) || qtAnswers(q).length > 0 || Object.values(q.relNotes || {}).some((v) => String(v).trim()));
 
 // 칸 이름을 붙여 하나로 합친 글 (복사·내보내기·기록 보기용). 빈 칸은 뺌
 function qtTextOf(q) {
@@ -176,7 +176,7 @@ function refreshQtBar() {
   if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
-const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["godpia", "갓피아"]];
+const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["relations", "관계도"], ["godpia", "갓피아"]];
 
 function syncQtTabs() {
   refreshQtAnswerBoxes();
@@ -326,6 +326,7 @@ function qtRanges(ref) {
 }
 
 function renderQtSheet() {
+  if (sheetTab === "relations") return renderQtRelations(); // qtgraph.js
   if (sheetTab === "godpia") { // 갓피아 화면은 필요할 때만 팝업으로
     setSheetTitle(null, `갓피아 <a class="chip-btn" href="${godpiaQtUrl(qtDate)}" target="_blank" rel="noopener" aria-label="새 창으로 열기">↗</a>`);
     $("#sheet-body").innerHTML = `<div class="sheet-frame"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${godpiaQtUrl(qtDate)}" ${GODPIA_SANDBOX}></iframe></div>`;
