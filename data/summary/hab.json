@@ -22,7 +22,7 @@
       ],
       "rels": [
         {"from":"하박국","to":"하나님","label":"따져 물은 선지자","kind":"other","directed":true,"weight":3,"verses":"2-3","note":"하박국은 사람들에게 불평하지 않고 하나님께 직접 따져 물었어요. 어느 때까지냐고 부르짖었어요."},
-        {"from":"하나님","to":"갈대아 사람","label":"일으키실 분","kind":"other","directed":true,"weight":3,"verses":"5-6","note":"하나님은 사납고 성급한 바빌론을 일으켜 유다를 벌하게 하세요. 바빌론은 주전 626년에 앗수르에게서 독립해 새 강대국이 되었어요."},
+        {"from":"하나님","to":"갈대아 사람","label":"일으키실 분","kind":"other","directed":true,"weight":3,"verses":"5-6","note":"하나님은 사납고 성급한 갈대아 사람을 일으켜 유다를 벌하게 하세요."},
         {"from":"갈대아 사람","to":"유다의 악인","label":"삼킬 침략자","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"하박국은 유다보다 더 악한 바빌론이 덜 악한 사람을 삼키는데 왜 가만히 두시냐고 물었어요. 정의로우신 하나님이 이럴 수 있느냐는 오래된 질문이에요."},
         {"from":"유다의 악인","to":"하박국","label":"굽게 한 자","kind":"conflict","directed":true,"weight":1,"verses":"4","note":"유다에서는 율법이 힘을 잃고 악인이 의인을 둘러싸 정의가 굽었어요."}
       ],
