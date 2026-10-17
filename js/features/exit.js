@@ -40,10 +40,14 @@ function showExitSheep() {
   }).catch(() => { pop.querySelector(".exit-art").innerHTML = `<p class="exit-fallback">😭 ㄱ..가게..?</p>`; });
 }
 
-// 첫 화면 표시 후 guard 쌓기 (새로 열 때 한 번)
+// 앱을 열 때 한 번: 지금 화면을 첫 화면으로 표시하고 그 위에 guard를 쌓음.
+// 이미 guard 위에 있으면(새로고침·다시 불러오기) 기록을 건드리지 않음 → 기록이 겹쳐 쌓이지 않게
 try {
-  history.replaceState({ ...(history.state || {}), [EXIT_FIRST]: 1 }, "", location.href);
-  armExitGuard();
+  const st = history.state || {};
+  if (!st[EXIT_GUARD]) {
+    history.replaceState({ ...st, [EXIT_FIRST]: 1 }, "", location.href);
+    armExitGuard();
+  }
 } catch (e) { /* 무시 */ }
 
 window.addEventListener("popstate", (e) => {

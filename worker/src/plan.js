@@ -3,7 +3,11 @@
 const PLAN_ADMIN = "buucksoo";
 const PLAN_MAX = 20000; // 글자 수 상한
 
+// 표가 아직 없어도 첫 요청에서 스스로 만듦 (IF NOT EXISTS라 여러 번 실행해도 안전)
+const PLAN_TABLE = "CREATE TABLE IF NOT EXISTS site_notes (key TEXT PRIMARY KEY, body TEXT NOT NULL, updated INTEGER NOT NULL)";
+
 export async function planNote(request, env, json) {
+  await env.DB.prepare(PLAN_TABLE).run();
   if (request.method === "GET") {
     const row = await env.DB.prepare("SELECT body, updated FROM site_notes WHERE key = 'plan'").first();
     return json({ body: row ? row.body : "", updated: row ? row.updated : 0 });
