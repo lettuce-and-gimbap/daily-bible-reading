@@ -55,6 +55,9 @@ function goHome() {
 }
 
 // 종료 버튼: 화면 전체에서 매번 다른 위치
+// 앱 화면을 바로 비움: 이 자리를 빈 페이지로 바꿔 두면 뒤로 가기 한 번이면 앱 밖으로 나감
+function leaveNow() { try { location.replace("about:blank"); } catch (e) { /* 무시 */ } }
+
 function placeQuit(btn) {
   const w = window.innerWidth, h = window.innerHeight;
   const bw = btn.offsetWidth || 110, bh = btn.offsetHeight || 46;
@@ -83,8 +86,9 @@ function showExitSheep() {
     exiting = true;
     // 안내를 먼저 띄우고, 바닥 칸으로 내려간 뒤 창을 닫음 (설치한 앱 창은 닫히고, 일반 브라우저 탭은 닫히지 않을 수 있음)
     document.body.insertAdjacentHTML("beforeend", `<div class="exit-closing"><p>앱을 닫고 있어요…</p><p class="muted small">창이 그대로 있으면 직접 닫아 주세요</p></div>`);
-    history.go(-(exitDepth + 1)); // 바닥 칸 밖(앱 밖)까지 한 번에 — 뒤로 가기를 한 번 더 누를 필요가 없음
-    setTimeout(() => { try { window.close(); } catch (e) { /* 무시 */ } }, 200);
+    try { window.close(); } catch (e) { /* 설치 앱이 아니면 무시 */ }
+    // 바닥 칸으로 내려간 뒤 앱 화면을 빈 페이지로 바꿈 (뒤로 가기를 한 번 더 누를 필요 없이 바로 나감)
+    if (exitDepth > 0) { history.go(-exitDepth); setTimeout(leaveNow, 400); } else leaveNow();
   };
   const pop = document.createElement("div");
   pop.className = "exit-pop";
@@ -137,7 +141,7 @@ try {
 } catch (err) { /* 무시 */ }
 
 window.addEventListener("popstate", (e) => {
-  if (exiting) { history.back(); return; } // 바닥 칸에 닿으면 앱 밖으로 나감
+  if (exiting) { leaveNow(); return; } // 바닥 칸에 닿으면 앱 화면을 비움
   // 종료 창이 떠 있으면 뒤로 가기는 아무것도 못 하게 함: 빠진 칸을 앞으로 되돌려 놓음 (나가기는 종료 버튼으로만)
   if (exitOpen) { history.forward(); return; }
   const st = e.state || {};
