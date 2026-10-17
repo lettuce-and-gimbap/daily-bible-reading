@@ -81,8 +81,10 @@ function showExitSheep() {
     pop.remove();
     exitOpen = false;
     exiting = true;
+    // 안내를 먼저 띄우고, 바닥 칸으로 내려간 뒤 창을 닫음 (설치한 앱 창은 닫히고, 일반 브라우저 탭은 닫히지 않을 수 있음)
+    document.body.insertAdjacentHTML("beforeend", `<div class="exit-closing"><p>앱을 닫고 있어요…</p><p class="muted small">창이 그대로 있으면 직접 닫아 주세요</p></div>`);
     if (exitDepth > 0) history.go(-exitDepth); // 바닥 칸으로 — 그 아래는 앱 밖이다
-    try { window.close(); } catch (e) { /* 설치 앱이 아니면 무시 */ }
+    setTimeout(() => { try { window.close(); } catch (e) { /* 무시 */ } }, 200);
   };
   const pop = document.createElement("div");
   pop.className = "exit-pop";
@@ -121,7 +123,7 @@ function showExitSheep() {
 }
 
 // 화면을 누를 때마다 칸 채우기 (popstate 안에서는 하지 않음)
-window.addEventListener("pointerup", topUp, { passive: true });
+["pointerdown", "pointerup", "touchstart", "touchend", "mousedown", "keydown"].forEach((t) => window.addEventListener(t, topUp, { passive: true }));
 window.addEventListener("click", (e) => {
   const a = e.target.closest && e.target.closest("a[href^='#']");
   if (a) { navClickAt = Date.now(); awayFromHome = a.getAttribute("href") !== HOME; }
@@ -131,10 +133,11 @@ window.addEventListener("click", (e) => {
 // 처음 열면 통독 본문이 보이도록 (주소가 QT·관리여도 본문으로). 연결 코드(#link=)는 그대로 둠
 try {
   if (!location.hash.startsWith("#link=") && location.hash !== HOME) history.replaceState(history.state, "", HOME);
+  topUp();
 } catch (err) { /* 무시 */ }
 
 window.addEventListener("popstate", (e) => {
-  if (exiting) { if (exitDepth > 0) history.back(); return; }
+  if (exiting) { history.back(); return; } // 바닥 칸에 닿으면 앱 밖으로 나감
   if (exitOpen) return; // 종료 창이 떠 있는 동안은 그대로 둠
   const st = e.state || {};
   // 메뉴 링크로 새로 옮겨 간 기록은 뒤로 가기가 아니므로 그대로 둠

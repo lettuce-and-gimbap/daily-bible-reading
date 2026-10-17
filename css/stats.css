@@ -312,3 +312,4 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 @keyframes exit-poke { 0%, 100% { transform: translateX(0) rotate(-12deg); } 50% { transform: translateX(-9px) rotate(-12deg); } }
 .exit-quit { position: absolute; min-width: 110px; padding: 12px 18px; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 800; font-size: 1rem; box-shadow: 0 6px 18px rgb(0 0 0 / .3); cursor: pointer; z-index: 1; }
 .exit-card { padding-top: 26px; }
+.exit-closing { position: fixed; inset: 0; z-index: 90; display: grid; place-content: center; gap: 8px; text-align: center; background: var(--bg); font-size: 1.05rem; font-weight: 700; }
