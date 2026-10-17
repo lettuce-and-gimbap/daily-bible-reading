@@ -26,7 +26,8 @@ function syncSlide(box) {
   const on = ons[0], b = box.getBoundingClientRect(), r = on.getBoundingClientRect();
   thumb.style.width = `${r.width}px`;
   thumb.style.height = `${r.height}px`;
-  thumb.style.transform = `translate(${r.left - b.left - box.clientLeft}px, ${r.top - b.top - box.clientTop}px)`;
+  // 가로로 밀리는 줄(예: 관계도 장 고르기)에서도 맞도록 스크롤 위치를 더함
+  thumb.style.transform = `translate(${r.left - b.left + box.scrollLeft - box.clientLeft}px, ${r.top - b.top + box.scrollTop - box.clientTop}px)`;
   if (thumb.style.transition === "none") { void thumb.offsetWidth; thumb.style.transition = ""; }
 }
 
