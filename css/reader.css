@@ -504,3 +504,9 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .sum-people li:last-child { border-bottom: 0; }
 .sum-people b { color: var(--ink); font-size: .95rem; font-weight: 700; }
 .sum-people span { color: var(--muted); font-size: .84rem; text-align: right; }
+
+/* 주요 등장 인물: 여러 열로 압축 (이름 · 역할을 한 칸에) */
+.sum-people { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px 14px; }
+.sum-people li { display: block; border-bottom: 0; padding: 2px 0; min-width: 0; }
+.sum-people b { display: block; overflow-wrap: anywhere; }
+.sum-people span { display: block; text-align: left; font-size: .78rem; line-height: 1.35; }

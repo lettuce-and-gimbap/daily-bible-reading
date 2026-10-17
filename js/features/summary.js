@@ -752,11 +752,6 @@ function staticSummaryHtml(s) {
       ${flow}
     </section>
     ${events}
-    <section class="tool-card sum-card">
-      <h3 class="label">주요 등장 인물</h3>
-      ${s.people.length ? `<ul class="sum-people">${[...s.people].sort((x, y) => String(y.display).localeCompare(String(x.display), "ko")).map((p) => `<li><b>${esc(p.display)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`
-        : `<p class="muted small">이번 분량에는 이야기 속 인물이 따로 나오지 않아요.</p>`}
-    </section>
     ${s.people.length ? `
     <section class="tool-card sum-card">
       <div class="rg-head">
@@ -769,6 +764,12 @@ function staticSummaryHtml(s) {
       ${chapChipsHtml(s)}
       ${(() => { const g = graphSource(s); return relationGraphHtml(g.graphPeople, g.rels); })()}
     </section>` : ""}
+    <section class="tool-card sum-card">
+      <h3 class="label">주요 등장 인물</h3>
+      ${s.people.length ? `<ul class="sum-people">${[...s.people].sort((x, y) => String(x.display).localeCompare(String(y.display), "ko")).map((p) => `<li><b>${esc(p.display)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`
+        : `<p class="muted small">이번 분량에는 이야기 속 인물이 따로 나오지 않아요.</p>`}
+    </section>
+
     ${places}
     ${songs}`;
 }
@@ -813,7 +814,7 @@ function renderSummaryTab(body, day) {
     body.innerHTML = `${head}
       <section class="tool-card sum-card">
         <h3 class="label">주요 등장 인물</h3>
-        <ul class="sum-people">${[...data.people].sort((x, y) => String(y.name).localeCompare(String(x.name), "ko")).map((p) => `<li><b>${esc(p.name)}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>
+        <ul class="sum-people">${[...data.people].sort((x, y) => String(x.name).localeCompare(String(y.name), "ko")).map((p) => `<li><b>${esc(p.name)}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">등장 인물 관계도</h3>
