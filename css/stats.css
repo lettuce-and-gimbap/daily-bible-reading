@@ -261,3 +261,47 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 
 /* 통독표는 7일씩 넘겨 보므로 안쪽 스크롤을 두지 않음 */
 #ptable { max-height: none; overflow: visible; }
+
+/* 통독·QT 카드는 항상 두 열 (좁은 화면은 글자와 간격만 줄임) */
+.hero-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 480px) {
+  .hero-main { gap: 10px; }
+  .hero-status { font-size: .92rem; }
+  .hero-main p { font-size: .78rem; }
+  .hero { padding: 14px; }
+}
+
+/* 통독 현황 숫자 카드: 아이콘 + 큰 숫자 + 설명 */
+.kpis { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.kpis li { background: var(--surface-2); border-radius: 12px; padding: 9px 6px; display: grid; justify-items: center; text-align: center; gap: 1px; }
+.kpis i { font-style: normal; font-size: 1.15rem; line-height: 1.2; }
+.kpis b { font-size: .92rem; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+.kpis span { font-size: .7rem; color: var(--muted); line-height: 1.3; }
+.kpi-plan.behind b { color: var(--warn); }
+.kpi-plan.ahead b { color: var(--accent); }
+.pbar { height: 6px; background: var(--line); border-radius: 6px; overflow: hidden; margin-top: 2px; }
+.pbar span { display: block; height: 100%; background: var(--accent); border-radius: 6px; transition: width .4s ease; }
+
+/* 통독표 지도: Day를 칸으로 늘어놓음. 칸 색이 상태, 칸을 누르면 아래에 그 날 */
+.tlegend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .74rem; color: var(--muted); margin: 8px 0 10px; }
+.tlegend span { display: inline-flex; align-items: center; gap: 5px; }
+.tlegend i, .tcell { display: inline-block; }
+.tlegend i { width: 12px; height: 12px; border-radius: 4px; background: var(--line); }
+.tlegend i.done { background: var(--accent); }
+.tlegend i.part { background: var(--qt); }
+.tlegend i.late { background: var(--warn); }
+.tlegend i.today { background: transparent; box-shadow: inset 0 0 0 2px var(--accent); }
+.tgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; }
+.tcell { aspect-ratio: 1; border: 0; border-radius: 10px; background: var(--surface-2); color: var(--muted); font: inherit; font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums; cursor: pointer; padding: 0; }
+.tcell.done { background: var(--accent); color: var(--accent-ink); }
+.tcell.part { background: var(--qt-soft); color: var(--qt); }
+.tcell.late { background: var(--warn-soft); color: var(--warn); }
+.tcell.today { box-shadow: inset 0 0 0 2px var(--accent); color: var(--ink); }
+.tcell.sel { outline: 2px solid var(--ink); outline-offset: 2px; }
+.tdetail { margin-top: 12px; background: var(--surface-2); border-radius: 12px; padding: 12px 14px; display: grid; gap: 6px; justify-items: start; }
+.td-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.td-head b { font-size: 1rem; }
+.td-head em { font-style: normal; margin-left: auto; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.td-range { margin: 0; font-size: .9rem; line-height: 1.5; }
+.tgrid { grid-template-columns: repeat(auto-fill, minmax(30px, 1fr)); gap: 5px; }
+.tcell { font-size: .72rem; border-radius: 8px; }

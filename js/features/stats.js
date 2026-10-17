@@ -33,11 +33,12 @@ function renderStats() {
           <p class="muted small">${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length}</p>
         </div>
       </div>
-      <ul class="mini">
-        <li><b>${streak(readGoalDates())}일</b><span>연속(목표 채운 날)</span></li>
-        <li><b class="${pr.diff < 0 ? "warn-text" : ""}">${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `+${pr.diff}일` : `${pr.diff}일`}</b><span>계획 대비</span></li>
-        <li><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>마칠 예정</span></li>
+      <ul class="kpis">
+        <li><i>🔥</i><b>${streak(readGoalDates())}일</b><span>연속으로 채운 날</span></li>
+        <li class="kpi-plan ${pr.diff < 0 ? "behind" : pr.diff > 0 ? "ahead" : ""}"><i>${pr.diff < 0 ? "⚠️" : pr.diff > 0 ? "⚡" : "✅"}</i><b>${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `${pr.diff}일 앞섬` : `${-pr.diff}일 밀림`}</b><span>계획 대비</span></li>
+        <li><i>🏁</i><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>${pr.finished ? "통독을 마침" : `마칠 예정 · D-${Math.max(0, daysBetween(todayStr(), pr.projectedEnd))}`}</span></li>
       </ul>
+      <div class="pbar" aria-label="통독 진행 ${pr.pct}%"><span style="width:${pr.pct}%"></span></div>
     </article>` : `
     <article class="card hero read empty">
       <header><span class="tag">📖 통독</span></header>
@@ -207,60 +208,45 @@ function renderStats() {
 }
 
 // ── 통독표 (예전엔 통독 화면 패널, 이제 관리 화면 카드) ──
-// 통독표: 하루씩 줄로 늘어놓지 않고 7일씩 넘겨 봄. 날짜를 크게, 칸 하나가 한 장이라 분량이 한눈에 보임
-let planPage = null; // 지금 보는 주(0부터). 처음엔 오늘이 있는 주
-const PLAN_WEEK = 7;
-const DOW = ["일", "월", "화", "수", "목", "금", "토"];
+// 통독표: Day를 칸으로 늘어놓은 지도. 칸 색이 상태를 보여 주고, 칸을 누르면 아래에 그 날 분량이 나옴
+let planSel = null; // 아래에 보여 줄 Day(0부터)
 function planTableCardHtml(pr) {
-  const weeks = Math.max(1, Math.ceil(pr.days.length / PLAN_WEEK));
-  if (planPage === null) planPage = Math.floor(Math.max(0, pr.todayDay) / PLAN_WEEK);
-  planPage = Math.min(Math.max(0, planPage), weeks - 1);
-  const start = planPage * PLAN_WEEK, end = Math.min(start + PLAN_WEEK, pr.days.length);
-  const tile = (d, n) => {
+  if (planSel === null || planSel >= pr.days.length) planSel = Math.min(Math.max(0, pr.todayDay), pr.days.length - 1);
+  const cells = pr.days.map((d, n) => {
     const done = d.filter((i) => state.read[i]).length;
-    const cls = [done === d.length ? "done" : done ? "part" : "", n === pr.todayDay ? "current" : "", n < pr.todayDay && done < d.length ? "late" : ""].join(" ");
-    const date = pr.dayDates[n];
-    const dt = date ? new Date(date.replace(/-/g, "/")) : null;
-    const dateHtml = dt
-      ? `<span class="td-dow">${DOW[dt.getDay()]}</span><span class="td-date">${dt.getMonth() + 1}/${dt.getDate()}</span>`
-      : `<span class="td-dow">건너뜀</span><span class="td-date">–</span>`;
-    const st = done === d.length ? "완료" : done ? `${done}/${d.length}장` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
-    return `<button class="tday ${cls}" data-day="${n}">
-      <span class="td-left">${dateHtml}</span>
-      <span class="td-main">
-        <span class="td-top"><b>Day ${n + 1}</b><em>${st}</em></span>
-        <span class="td-cells" aria-label="${d.length}장 중 ${done}장 읽음">${d.map((i) => `<i class="${state.read[i] ? "on" : ""}"></i>`).join("")}</span>
-        <span class="td-range">${esc(describeChapters(d))} <small>${d.length}장</small></span>
-      </span>
-    </button>`;
-  };
-  const days = pr.days.slice(start, end).map((d, i) => tile(d, start + i)).join("");
+    const st = done === d.length ? "done" : done ? "part" : n < pr.todayDay ? "late" : n === pr.todayDay ? "today" : "";
+    return `<button class="tcell ${st} ${n === planSel ? "sel" : ""}" data-tcell="${n}" aria-label="Day ${n + 1}">${n + 1}</button>`;
+  }).join("");
   return `<section class="card" id="ptable-card">
     <div class="ptable-head"><h2>통독표</h2>
       <span class="muted small"><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</span></div>
-    <div class="bar thin"><span style="width:${pr.pct}%"></span></div>
-    <div class="tweek-nav">
-      <button class="icon-btn" data-pweek="-1" aria-label="이전 주" ${planPage === 0 ? "disabled" : ""}>‹</button>
-      <b>Day ${start + 1} – ${end}</b>
-      <button class="icon-btn" data-pweek="1" aria-label="다음 주" ${planPage >= weeks - 1 ? "disabled" : ""}>›</button>
-    </div>
-    <div class="ttable" id="ptable">${days}</div>
-    <p class="muted small">날짜 칸을 누르면 그 분량으로 바로 가요. 칸 하나가 한 장이에요.</p>
+    <div class="tlegend"><span><i class="done"></i>다 읽음</span><span><i class="part"></i>일부</span><span><i class="late"></i>밀림</span><span><i class="today"></i>오늘</span><span><i></i>남은 날</span></div>
+    <div class="tgrid" id="tgrid">${cells}</div>
+    <div class="tdetail" id="tdetail">${planDetailHtml(pr, planSel)}</div>
   </section>`;
 }
+function planDetailHtml(pr, n) {
+  const d = pr.days[n];
+  if (!d) return "";
+  const done = d.filter((i) => state.read[i]).length;
+  const date = pr.dayDates[n];
+  return `<div class="td-head"><b>Day ${n + 1}</b><span class="muted small">${date ? prettyDate(date) : "건너뜀"}</span><em>${done}/${d.length}장</em></div>
+    <p class="td-range">${esc(describeChapters(d))}</p>
+    <button class="btn small" data-tgo="${n}">이 날 읽으러 가기</button>`;
+}
 
-// 통독표 주 넘김·Day 누르기: 카드가 다시 그려져도 동작하도록 문서에서 받음
+// 칸을 고르면 아래 내용만 바꾸고, 읽으러 가기는 그 Day로 이동
 document.addEventListener("click", (e) => {
-  const w = e.target.closest && e.target.closest("#ptable-card [data-pweek]");
-  if (w && !w.disabled) {
-    planPage = (planPage || 0) + Number(w.dataset.pweek);
-    const card = document.querySelector("#ptable-card");
-    if (card && state.plan) card.outerHTML = planTableCardHtml(progress()); // 통독표 카드만 바꿔서 화면 위치 유지
+  const c = e.target.closest && e.target.closest("#ptable-card [data-tcell]");
+  if (c && state.plan) {
+    planSel = Number(c.dataset.tcell);
+    document.querySelectorAll("#tgrid .tcell").forEach((x) => x.classList.toggle("sel", x === c));
+    document.querySelector("#tdetail").innerHTML = planDetailHtml(progress(), planSel);
     return;
   }
-  const r = e.target.closest && e.target.closest("#ptable [data-day]");
-  if (!r) return;
-  viewingDay = Number(r.dataset.day);
+  const go = e.target.closest && e.target.closest("#tdetail [data-tgo]");
+  if (!go) return;
+  viewingDay = Number(go.dataset.tgo);
   currentChapter = null;
   freeChapter = null;
   location.hash = "#today";
