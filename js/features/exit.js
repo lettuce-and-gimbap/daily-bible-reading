@@ -5,6 +5,8 @@
 //  · 본문이 아닌 화면에서 뒤로 가기 → 본문으로. 본문에서 뒤로 가기 → 종료 확인 창
 //    (종료 버튼은 화면 어디든 매번 랜덤 위치, ✕ 는 크게. 양이 ✕ 를 가리키며 붙잡음)
 const EXIT_KEEP = 2;
+// 종료 버튼 사용 여부 (false면 버튼이 비활성화되어 눌러도 아무 일도 없음. 코드는 그대로 둠)
+const EXIT_QUIT_ENABLED = false;
 const HOME = "#today";
 let exitDepth = 0; // 우리가 쌓은 칸 수 (바닥 위)
 let exitOpen = false;
@@ -80,6 +82,7 @@ function showExitSheep() {
     topUp(); // 계속 쓰는 중이므로 칸을 다시 채움 (화면 누름 = 사용자 동작)
   };
   const quit = () => {
+    if (!EXIT_QUIT_ENABLED) return;
     clearInterval(timer);
     pop.remove();
     exitOpen = false;
@@ -100,7 +103,7 @@ function showExitSheep() {
       <div class="exit-art"><p class="muted small">🐑 …</p></div>
       <p class="exit-msg">그냥 종료하시겠습니까?</p>
     </div>
-    <button class="exit-quit">종료</button>`;
+    <button class="exit-quit" ${EXIT_QUIT_ENABLED ? "" : "disabled"}>종료</button>`;
   pop.addEventListener("click", (e) => {
     if (e.target.closest(".exit-x") || e.target === pop) close();
     else if (e.target.closest(".exit-quit")) quit();

@@ -323,3 +323,6 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .kpis li i { font-style: normal; margin-right: 3px; }
 .kpi-plan.behind b { color: var(--warn); }
 .kpi-plan.ahead b { color: var(--accent); }
+
+/* 종료 버튼 비활성화 상태 (EXIT_QUIT_ENABLED=false) */
+.exit-quit:disabled { opacity: .4; cursor: default; }
