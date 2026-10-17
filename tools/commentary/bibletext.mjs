@@ -28,7 +28,7 @@ export function parseVerses(html) {
   return html.split(/<li\b/i).slice(1).map((chunk) => {
     const ver = (chunk.match(/data(?:vver|ver)="([^"]*)"/i) || [])[1] || "";
     const no = ((chunk.match(/class="bible-read-no"[^>]*>([\s\S]*?)<\/span>/) || [])[1] || "").replace(/<[^>]*>/g, "").trim();
-    const text = ((chunk.match(/class="bible-read-cont"[^>]*>([\s\S]*?)<\/span>\s*(?:<\/li>|$)/) || [])[1] || "").replace(/<[^>]*>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+    const text = ((chunk.match(/class="bible-read-cont[^"]*"[^>]*>([\s\S]*?)<\/span>\s*(?:<\/li>|$)/) || [])[1] || "").replace(/<[^>]*>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
     return { ver, no, text };
   }).filter((v) => /^\d/.test(v.no) && v.text);
 }
