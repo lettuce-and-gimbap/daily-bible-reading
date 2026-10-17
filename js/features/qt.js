@@ -336,6 +336,11 @@ function qtRanges(ref) {
 }
 
 function renderQtSheet() {
+  if (isQtSunday(qtDate)) { // 일요일에는 묵상 노트·관계도·갓피아 모두 같은 안내
+    setSheetTitle(null, "QT");
+    $("#sheet-body").innerHTML = `<p class="muted small">주일에는 QT가 없어요. 은혜로운 하루 되세요 :)</p>`;
+    return;
+  }
   if (sheetTab === "relations") return renderQtRelations(); // qtgraph.js
   if (sheetTab === "godpia") { // 갓피아 화면은 필요할 때만 팝업으로
     setSheetTitle(null, `갓피아 <a class="chip-btn" href="${godpiaQtUrl(qtDate)}" target="_blank" rel="noopener" aria-label="새 창으로 열기">↗</a>`);
