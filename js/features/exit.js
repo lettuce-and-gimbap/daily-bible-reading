@@ -83,7 +83,7 @@ function showExitSheep() {
     exiting = true;
     // 안내를 먼저 띄우고, 바닥 칸으로 내려간 뒤 창을 닫음 (설치한 앱 창은 닫히고, 일반 브라우저 탭은 닫히지 않을 수 있음)
     document.body.insertAdjacentHTML("beforeend", `<div class="exit-closing"><p>앱을 닫고 있어요…</p><p class="muted small">창이 그대로 있으면 직접 닫아 주세요</p></div>`);
-    if (exitDepth > 0) history.go(-exitDepth); // 바닥 칸으로 — 그 아래는 앱 밖이다
+    history.go(-(exitDepth + 1)); // 바닥 칸 밖(앱 밖)까지 한 번에 — 뒤로 가기를 한 번 더 누를 필요가 없음
     setTimeout(() => { try { window.close(); } catch (e) { /* 무시 */ } }, 200);
   };
   const pop = document.createElement("div");

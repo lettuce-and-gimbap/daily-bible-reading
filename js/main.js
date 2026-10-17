@@ -43,5 +43,7 @@ async function refreshIfNewVersion() {
     if (latest && current && latest !== current) location.reload(); // 기록을 바꾸지 않고 같은 자리에서 새로 불러옴
   } catch (e) { /* 오프라인이면 그대로 둠 */ }
 }
-document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshIfNewVersion(); });
-window.addEventListener("pageshow", refreshIfNewVersion);
+document.addEventListener("visibilitychange", () => { if (!document.hidden && document.visibilityState === "visible" && window.__appLoadedAt && Date.now() - window.__appLoadedAt > 3000) refreshIfNewVersion(); });
+window.__appLoadedAt = Date.now();
+// 처음 여는 순간에는 확인하지 않음(열자마자 새로고침되면 뒤로 가기 칸이 다시 쌓여야 해서). 나갔다가 돌아올 때만 확인
+window.addEventListener("pageshow", (e) => { if (e.persisted) refreshIfNewVersion(); });
