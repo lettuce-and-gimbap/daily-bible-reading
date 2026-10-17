@@ -181,3 +181,9 @@ textarea { resize: vertical; line-height: 1.6; }
 .admin-badge { position: absolute; left: -6px; top: -9px; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 24px; border-radius: 8px; background: var(--surface); box-shadow: 0 1px 3px rgb(0 0 0 / .18), inset 0 0 0 1px var(--line); pointer-events: none; }
 .admin-badge svg { width: 24px; height: 19px; }
 .admin-badge[hidden] { display: none; }
+
+/* 상단 메뉴(통독·QT·관리)도 슬라이드 막대로 움직임 (js/shared/slide.js) */
+.tabs.sl-active > a.active { background: transparent; box-shadow: none; }
+.tabs.sl-active > a { position: relative; z-index: 1; }
+.tabs > .slide-thumb { background: var(--surface); box-shadow: 0 1px 3px rgb(0 0 0 / .1); border-radius: 9px; }
+.tabs { position: relative; }

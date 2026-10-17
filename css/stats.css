@@ -238,3 +238,26 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .qt-rels .qt-rel small { color: var(--muted); font-size: .76rem; }
 .qt-rels .qt-rel-note { margin: 0; font-size: .86rem; line-height: 1.55; }
 .qt-rel-mine { width: 100%; box-sizing: border-box; border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: .9rem; line-height: 1.5; background: var(--surface-2); color: var(--ink); resize: vertical; }
+
+/* 통독표: 7일씩 넘겨 보기. 날짜를 크게, 칸 하나가 한 장 */
+.tweek-nav { display: flex; align-items: center; justify-content: space-between; margin: 12px 0 8px; font-variant-numeric: tabular-nums; }
+.tweek-nav b { font-size: .92rem; }
+.tday { display: flex; gap: 12px; width: 100%; align-items: stretch; text-align: left; border: 0; background: var(--surface-2); color: inherit; font: inherit; border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; }
+.tday.current { outline: 2px solid var(--accent); outline-offset: 1px; }
+.tday.late .td-top em { color: var(--warn); }
+.td-left { flex: 0 0 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: var(--surface); border-radius: 10px; padding: 6px 0; }
+.td-dow { font-size: .72rem; color: var(--muted); }
+.td-date { font-size: 1.2rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.tday.done .td-date { color: var(--accent); }
+.td-main { flex: 1; min-width: 0; display: grid; gap: 6px; align-content: center; }
+.td-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.td-top em { font-style: normal; font-size: .78rem; color: var(--muted); }
+.td-cells { display: flex; flex-wrap: wrap; gap: 3px; }
+.td-cells i { width: 14px; height: 10px; border-radius: 3px; background: var(--line); }
+.td-cells i.on { background: var(--accent); }
+.tday.part .td-cells i.on { background: var(--qt); }
+.td-range { font-size: .82rem; color: var(--muted); line-height: 1.4; }
+.td-range small { margin-left: 4px; font-size: .74rem; }
+
+/* 통독표는 7일씩 넘겨 보므로 안쪽 스크롤을 두지 않음 */
+#ptable { max-height: none; overflow: visible; }

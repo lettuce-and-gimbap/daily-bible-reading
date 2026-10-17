@@ -89,6 +89,7 @@ function renderStats() {
 
   const themeNow = state.settings.theme || "auto";
   app.innerHTML = `
+    ${changelogCardHtml()}
     <section class="card theme-card">
       <h3 class="label">화면 모드</h3>
       <div class="seg wide">
@@ -118,15 +119,8 @@ function renderStats() {
 
     ${pr ? planTableCardHtml(pr) : ""}
 
-    ${pr ? `
-    <section class="card" id="books-card">
-      <h2>권별 진행 <span class="muted small">권을 누르면 읽은 기간과 복사한 구절이 나와요</span></h2>
-      <div class="books">${booksGridHtml(pr, copied)}</div>
-      <div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copied) : ""}</div>
-    </section>` : ""}
-
     ${accountCardHtml()}
-    ${changelogCardHtml()}
+
     ${reminderCardHtml()}
 
     ${exportCardHtml()}
@@ -171,7 +165,7 @@ function renderStats() {
     $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied);
   });
   bindGlanceCard();
-  const books = $("#books-card");
+  const books = $("#glance-card");
   if (books) books.addEventListener("click", (e) => {
     const b = e.target.closest("[data-book]");
     if (!b) return;
@@ -179,19 +173,6 @@ function renderStats() {
     books.querySelectorAll(".book").forEach((x) => x.classList.toggle("sel", x.dataset.book === bookSel));
     $("#book-detail").innerHTML = bookSel ? bookDetailHtml(bookSel, copied) : "";
   });
-  const table = $("#ptable");
-  if (table) {
-    table.addEventListener("click", (e) => {
-      const r = e.target.closest("[data-day]");
-      if (!r) return;
-      viewingDay = Number(r.dataset.day);
-      currentChapter = null;
-      freeChapter = null;
-      location.hash = "#today";
-    });
-    const cur = table.querySelector(".trow.current");
-    if (cur) table.scrollTop = cur.offsetTop - table.offsetTop - table.clientHeight / 2;
-  }
   const edit = $("#st-edit");
   if (edit) edit.addEventListener("click", () => renderSetup(state.plan));
   $("#st-export").addEventListener("click", () => {
@@ -226,28 +207,64 @@ function renderStats() {
 }
 
 // ── 통독표 (예전엔 통독 화면 패널, 이제 관리 화면 카드) ──
+// 통독표: 하루씩 줄로 늘어놓지 않고 7일씩 넘겨 봄. 날짜를 크게, 칸 하나가 한 장이라 분량이 한눈에 보임
+let planPage = null; // 지금 보는 주(0부터). 처음엔 오늘이 있는 주
+const PLAN_WEEK = 7;
+const DOW = ["일", "월", "화", "수", "목", "금", "토"];
 function planTableCardHtml(pr) {
+  const weeks = Math.max(1, Math.ceil(pr.days.length / PLAN_WEEK));
+  if (planPage === null) planPage = Math.floor(Math.max(0, pr.todayDay) / PLAN_WEEK);
+  planPage = Math.min(Math.max(0, planPage), weeks - 1);
+  const start = planPage * PLAN_WEEK, end = Math.min(start + PLAN_WEEK, pr.days.length);
+  const tile = (d, n) => {
+    const done = d.filter((i) => state.read[i]).length;
+    const cls = [done === d.length ? "done" : done ? "part" : "", n === pr.todayDay ? "current" : "", n < pr.todayDay && done < d.length ? "late" : ""].join(" ");
+    const date = pr.dayDates[n];
+    const dt = date ? new Date(date.replace(/-/g, "/")) : null;
+    const dateHtml = dt
+      ? `<span class="td-dow">${DOW[dt.getDay()]}</span><span class="td-date">${dt.getMonth() + 1}/${dt.getDate()}</span>`
+      : `<span class="td-dow">건너뜀</span><span class="td-date">–</span>`;
+    const st = done === d.length ? "완료" : done ? `${done}/${d.length}장` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
+    return `<button class="tday ${cls}" data-day="${n}">
+      <span class="td-left">${dateHtml}</span>
+      <span class="td-main">
+        <span class="td-top"><b>Day ${n + 1}</b><em>${st}</em></span>
+        <span class="td-cells" aria-label="${d.length}장 중 ${done}장 읽음">${d.map((i) => `<i class="${state.read[i] ? "on" : ""}"></i>`).join("")}</span>
+        <span class="td-range">${esc(describeChapters(d))} <small>${d.length}장</small></span>
+      </span>
+    </button>`;
+  };
+  const days = pr.days.slice(start, end).map((d, i) => tile(d, start + i)).join("");
   return `<section class="card" id="ptable-card">
     <div class="ptable-head"><h2>통독표</h2>
       <span class="muted small"><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</span></div>
     <div class="bar thin"><span style="width:${pr.pct}%"></span></div>
-    <div class="ttable" id="ptable">
-      ${pr.days.map((d, n) => {
-        const done = d.filter((i) => state.read[i]).length;
-        const cls = [done === d.length ? "done" : done ? "part" : "", n === pr.todayDay ? "current" : "", n < pr.todayDay && done < d.length ? "late" : ""].join(" ");
-        const st = done === d.length
-          ? `<svg viewBox="0 0 24 24" aria-label="완료"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
-          : done ? `${done}/${d.length}` : n === pr.todayDay ? "오늘" : n < pr.todayDay ? "밀림" : "";
-        return `<button class="trow ${cls}" data-day="${n}">
-          <span class="t-day">Day ${n + 1}</span>
-          <span class="t-range">${esc(describeChapters(d))}<small>${pr.dayDates[n] ? prettyDate(pr.dayDates[n]) : "건너뜀"}</small></span>
-          <span class="t-st">${st}</span>
-        </button>`;
-      }).join("")}
+    <div class="tweek-nav">
+      <button class="icon-btn" data-pweek="-1" aria-label="이전 주" ${planPage === 0 ? "disabled" : ""}>‹</button>
+      <b>Day ${start + 1} – ${end}</b>
+      <button class="icon-btn" data-pweek="1" aria-label="다음 주" ${planPage >= weeks - 1 ? "disabled" : ""}>›</button>
     </div>
-    <p class="muted small">Day를 누르면 그 분량으로 바로 가요.</p>
+    <div class="ttable" id="ptable">${days}</div>
+    <p class="muted small">날짜 칸을 누르면 그 분량으로 바로 가요. 칸 하나가 한 장이에요.</p>
   </section>`;
 }
+
+// 통독표 주 넘김·Day 누르기: 카드가 다시 그려져도 동작하도록 문서에서 받음
+document.addEventListener("click", (e) => {
+  const w = e.target.closest && e.target.closest("#ptable-card [data-pweek]");
+  if (w && !w.disabled) {
+    planPage = (planPage || 0) + Number(w.dataset.pweek);
+    const card = document.querySelector("#ptable-card");
+    if (card && state.plan) card.outerHTML = planTableCardHtml(progress()); // 통독표 카드만 바꿔서 화면 위치 유지
+    return;
+  }
+  const r = e.target.closest && e.target.closest("#ptable [data-day]");
+  if (!r) return;
+  viewingDay = Number(r.dataset.day);
+  currentChapter = null;
+  freeChapter = null;
+  location.hash = "#today";
+});
 
 // ── 복사·붙여 넣은 구절 모으기 ──
 // 구절 패널의 '복사'는 state.copies에 남기고, 메모·노트에 붙인 구절은 메모 안의 "권 장:절" 줄에서 읽어 냄
@@ -358,7 +375,7 @@ function bookDetailHtml(code, copied) {
 // 위: 성경 전체(1,189장) 중 읽은 비율을 고리 하나로(구약·신약 색을 나눔)
 // 아래: 66권을 구약·신약 순서대로, 권마다 "장 칸 띠"(읽은 장은 색칠) + 읽은 기간(처음 읽은 날 ~ 마지막 읽은 날)
 // 띠는 어느 장을 읽었는지 · 건너뛴 곳이 있는지가 한눈에 보이고, 고리는 전체 진도가 한눈에 보임
-let glanceOpen = false;
+let glanceOpen = true;
 
 function glanceStats() {
   const perBook = BOOKS.map((b) => {
@@ -405,6 +422,7 @@ function glanceCardHtml() {
 }
 
 function glanceBodyHtml(g = glanceStats()) {
+  const pr = state.plan ? progress() : null;
   const r = 52, c = 2 * Math.PI * r;
   const read = g.otRead + g.ntRead;
   const lenOt = (g.otRead / TOTAL_CHAPTERS) * c, lenNt = (g.ntRead / TOTAL_CHAPTERS) * c;
@@ -417,22 +435,6 @@ function glanceBodyHtml(g = glanceStats()) {
     </svg>`;
   const side = (cls, label, n, total) => `<li><i class="${cls}"></i><span><b>${label}</b> ${n.toLocaleString()} / ${total.toLocaleString()}장</span><em>${glancePct(n, total)}%</em></li>`;
 
-  const row = (x) => {
-    const { b, n, first, last, cells } = x;
-    const unit = chapUnit(b);
-    const done = n === b.chapters;
-    const period = n === 0 ? "아직 안 읽었어요"
-      : first === last ? shortDate(first) : (() => { const y = first.slice(0, 4) !== last.slice(0, 4); return `${shortDate(first, y)} ~ ${shortDate(last, y)}`; })();
-    const days = n && first !== last ? ` · ${daysBetween(first, last) + 1}일` : "";
-    return `<li class="gl-row ${n === 0 ? "none" : done ? "full" : ""}">
-      <div class="gl-top"><b>${b.name}</b>${done ? `<span class="gl-done">완독</span>` : ""}<em>${n}/${b.chapters}${unit} · ${glancePct(n, b.chapters)}%</em></div>
-      <div class="gl-strip" aria-hidden="true">${cells.map((on) => `<i class="${on ? "on" : ""}"></i>`).join("")}</div>
-      <div class="gl-period">${period}${days}</div>
-    </li>`;
-  };
-  const group = (label, list, n, total) => `<h3 class="gl-group">${label} <span class="muted small">${n.toLocaleString()} / ${total.toLocaleString()}장 · ${glancePct(n, total)}%</span></h3>
-    <ul class="gl-list">${list.map(row).join("")}</ul>`;
-
   return `<div class="glance-top">
       <div class="gring-wrap">${donut}</div>
       <ul class="gring-legend">
@@ -441,9 +443,10 @@ function glanceBodyHtml(g = glanceStats()) {
         ${side("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
       </ul>
     </div>
-    ${group("구약", g.ot, g.otRead, g.otTotal)}
-    ${group("신약", g.nt, g.ntRead, g.ntTotal)}
-    <p class="muted small">칸 하나가 한 장(시편은 한 편)이고, 색칠된 칸이 읽은 곳이에요. 읽은 기간은 그 권의 장을 처음 읽은 날부터 마지막으로 읽은 날까지예요.</p>`;
+    ${pr ? `<h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 읽은 기간과 복사한 구절이 나와요</span></h3>
+    <div class="books">${booksGridHtml(pr, copiedByDate())}</div>
+    <div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedByDate()) : ""}</div>` : ""}
+    <p class="muted small">원 전체가 성경 전체예요. 구약과 신약을 색으로 나눠 보여 줘요.</p>`;
 }
 
 function bindGlanceCard() {
