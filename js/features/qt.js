@@ -3,6 +3,12 @@
 
 let qtDate = todayStr();
 
+// 일요일(0)에는 QT를 열지 않아요
+function isQtSunday(date) {
+  const [y, m, d] = date.split("-").map(Number);
+  return new Date(y, m - 1, d).getDay() === 0;
+}
+
 function renderQt() {
   sheetTab = null;
   document.body.classList.add("full");
@@ -168,7 +174,7 @@ function refreshQtBar() {
   syncQtTabs();
   const done = !!(state.qt[qtDate] || {}).done;
   const box = $("#q-check");
-  if (box) box.innerHTML = `<button class="read-switch ${done ? "on" : ""}" id="q-done" role="switch" aria-checked="${done}"
+  if (box && !isQtSunday(qtDate)) box.innerHTML = `<button class="read-switch ${done ? "on" : ""}" id="q-done" role="switch" aria-checked="${done}"
       title="${done ? "QT 완료 취소" : "QT를 마쳤어요"}">
       <span class="rs-label">${done ? "더 읽을래요" : "읽었어요"}</span>
       <span class="rs-track" aria-hidden="true"><span class="rs-knob"></span></span>
@@ -188,6 +194,10 @@ function syncQtTabs() {
 // 본문(역본 1~2개, 절을 눌러 골라 노트에 붙임) + 갓피아의 질문(질문마다 바로 아래에 내 답 칸) · 길잡이 · 기도
 async function fillQtRead(date) {
   const box = $("#q-content");
+  if (isQtSunday(date)) {
+    box.innerHTML = `<p class="muted small">주일에는 QT가 없어요. 은혜로운 하루 되세요 :)</p>`;
+    return;
+  }
   let d;
   try { d = await qtInfo(date); } catch (e) { d = null; }
   if (date !== qtDate || !box.isConnected) return;
