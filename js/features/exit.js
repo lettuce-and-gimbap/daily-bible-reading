@@ -1,15 +1,45 @@
-// 뒤로가기 흐름. 기록은 [처음 페이지(GUARD)] → [본문(ROOT)] → [다른 화면(APPSUB)] 순으로 쌓임
-//  · 다른 화면(QT·관리·통독 안의 요약·메모·갓피아)에서 뒤로 가기 → 본문으로 돌아옴
-//  · 본문에서 뒤로 가기 → 항상 양이 울상으로 붙잡음(GUARD로 돌아가는 순간). 한 번 더 누르면 종료, ✕로 닫으면 계속 사용
-const EXIT_GUARD = "appGuard";
-const EXIT_ROOT = "appRoot";
-const EXIT_SUB = "appSub";
+// 뒤로 가기 · 양 창 (참고: dailymath 의 dashboard.js 방식)
+//  · 크롬은 화면을 누르지 않은 채 pushState 하면 그 칸을 뒤로 가기에서 건너뛴다.
+//    그래서 칸은 화면을 누르는 순간(pointerup·click)에만 쌓고, 바닥 위로 EXIT_KEEP 칸을 미리 채워 둔다.
+//  · popstate 안에서는 절대 쌓지 않는다. 칸 번호는 history.state.appIdx 로 안다.
+//  · 본문이 아닌 화면에서 뒤로 가기 → 본문으로. 본문에서 뒤로 가기 → 양 창 (✕ 는 계속, 한 번 더 뒤로 가면 종료)
+const EXIT_KEEP = 2;
 const HOME = "#today";
+let exitDepth = 0; // 우리가 쌓은 칸 수 (바닥 위)
 let exitOpen = false;
+let navClickAt = 0;
+let awayFromHome = false; // 본문이 아닌 화면으로 링크를 눌러 옮겨 갔는지 (뒤로 가면 양이 아니라 본문으로)
 
-// 본문을 기록의 맨 위에 다시 올림 (양 창을 닫은 뒤 등)
-function pushRoot() {
-  try { history.pushState({ [EXIT_ROOT]: 1 }, "", HOME); } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
+// 처음 열면 통독 본문이 보이도록 (주소가 QT·관리여도 본문으로). 연결 코드(#link=)는 그대로 둠
+try {
+  if (!location.hash.startsWith("#link=") && location.hash !== HOME) history.replaceState(history.state, "", HOME);
+} catch (err) { /* 무시 */ } // 메뉴 링크를 누른 시각(링크로 옮겨 가는 기록과 뒤로 가기를 구분)
+
+// 화면을 누를 때만 칸을 채움 (크롬이 사용자 동작으로 인정하는 순간)
+function topUp() {
+  try {
+    while (exitDepth < EXIT_KEEP) {
+      exitDepth++;
+      history.pushState({ appIdx: exitDepth }, "", location.href);
+    }
+  } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
+}
+
+// 지금 화면이 본문(통독 본문)인지
+function isHome() {
+  if (location.hash !== HOME) return false;
+  const reader = document.querySelector(".rd.reading");
+  return !reader || sheetTab === "verses";
+}
+
+// 본문이 아니면 본문으로. 열린 다른 시트는 본문 탭으로
+function goHome() {
+  if (location.hash !== HOME) {
+    history.replaceState(history.state, "", HOME);
+    route();
+    return;
+  }
+  if (document.querySelector(".rd.reading") && sheetTab !== "verses") openSheet("verses", renderReaderSheet);
 }
 
 function showExitSheep() {
@@ -19,7 +49,7 @@ function showExitSheep() {
     pop.classList.add("bye");
     setTimeout(() => pop.remove(), 300);
     exitOpen = false;
-    pushRoot(); // 계속 쓰는 중이므로 본문을 다시 쌓아 둠
+    topUp(); // 계속 쓰는 중이므로 칸을 다시 채움 (화면 누름 = 사용자 동작)
   };
   const pop = document.createElement("div");
   pop.className = "exit-pop";
@@ -39,33 +69,24 @@ function showExitSheep() {
   }).catch(() => { pop.querySelector(".exit-art").innerHTML = `<p class="exit-fallback">😭 ㄱ..가게..?</p>`; });
 }
 
-// 본문으로 돌아옴: 통독 안의 다른 화면이 열려 있으면 본문 탭으로 바꿈
-function goHome() {
-  if (location.hash !== HOME) { history.replaceState(history.state, "", HOME); route(); return; }
-  if (document.querySelector(".rd.reading") && sheetTab !== "verses") openSheet("verses", renderReaderSheet);
-}
-
-// 처음 열 때: 지금 페이지를 양이 붙잡는 자리로 두고, 그 위에 본문을 쌓음
-// (이미 쌓여 있으면, 즉 새로고침이면 건드리지 않음)
-try {
-  const st = history.state || {};
-  if (!st[EXIT_GUARD] && !st[EXIT_ROOT]) {
-    const link = location.hash.startsWith("#link=");
-    if (!link && location.hash !== HOME) history.replaceState(history.state, "", HOME);
-    history.replaceState({ [EXIT_GUARD]: 1 }, "", location.href);
-    history.pushState({ [EXIT_ROOT]: 1 }, "", location.href);
-  }
-} catch (e) { /* 무시 */ }
+// 화면을 누를 때마다 칸 채우기 (popstate 안에서는 하지 않음)
+window.addEventListener("pointerup", topUp, { passive: true });
+window.addEventListener("click", (e) => {
+  const a = e.target.closest && e.target.closest("a[href^='#']");
+  if (a) { navClickAt = Date.now(); awayFromHome = a.getAttribute("href") !== HOME; }
+  topUp();
+}, { passive: true });
 
 window.addEventListener("popstate", (e) => {
   const st = e.state || {};
-  if (st[EXIT_GUARD]) { showExitSheep(); return; }   // 본문에서 뒤로 → 양
-  if (st[EXIT_ROOT]) { goHome(); return; }            // 다른 화면에서 뒤로 → 본문
-  if (st[EXIT_SUB]) {                                 // 본문이 아닌 기록으로 돌아옴 → 본문으로
-    history.replaceState({ [EXIT_ROOT]: 1 }, "", HOME);
-    route();
-    return;
-  }
-  // 메뉴 링크로 새로 옮겨 간 기록: 다음 뒤로 가기에서 본문으로 돌아오도록 표시만 함
-  try { history.replaceState({ [EXIT_SUB]: 1 }, "", location.href); } catch (err) { /* 무시 */ }
+  // 메뉴 링크로 새로 옮겨 간 기록은 뒤로 가기가 아니므로 그대로 둠
+  if (st.appIdx === undefined && Date.now() - navClickAt < 800) return;
+  // 화면이 바뀐 뒤에 판단해야 하므로 잠시 뒤에 봄
+  setTimeout(() => {
+    if (st.appIdx !== undefined) exitDepth = st.appIdx;
+    const away = awayFromHome;
+    awayFromHome = false;
+    if (away || !isHome()) { goHome(); return; }   // 다른 화면 → 본문
+    showExitSheep();                               // 본문에서 뒤로 → 양
+  }, 30);
 });
