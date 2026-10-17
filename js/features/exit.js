@@ -7,6 +7,8 @@
 const EXIT_KEEP = 2;
 // 종료 버튼 사용 여부 (false면 버튼이 비활성화되어 눌러도 아무 일도 없음. 코드는 그대로 둠)
 const EXIT_QUIT_ENABLED = false;
+// 뒤로 가기 종료 확인 기능 전체 사용 여부 (false면 뒤로 가기가 기본 동작대로 나감. 코드는 그대로 둠)
+const EXIT_ENABLED = false;
 const HOME = "#today";
 let exitDepth = 0; // 우리가 쌓은 칸 수 (바닥 위)
 let exitOpen = false;
@@ -30,7 +32,7 @@ const EXIT_LINES = [
 
 // 화면을 누를 때만 칸을 채움 (크롬이 사용자 동작으로 인정하는 순간)
 function topUp() {
-  if (exiting) return;
+  if (!EXIT_ENABLED || exiting) return;
   try {
     while (exitDepth < EXIT_KEEP) {
       exitDepth++;
@@ -144,6 +146,7 @@ try {
 } catch (err) { /* 무시 */ }
 
 window.addEventListener("popstate", (e) => {
+  if (!EXIT_ENABLED) return; // 기능이 꺼져 있으면 뒤로 가기는 기본 동작
   if (exiting) { leaveNow(); return; } // 바닥 칸에 닿으면 앱 화면을 비움
   // 종료 창이 떠 있으면 뒤로 가기는 아무것도 못 하게 함: 빠진 칸을 앞으로 되돌려 놓음 (나가기는 종료 버튼으로만)
   if (exitOpen) { history.forward(); return; }
