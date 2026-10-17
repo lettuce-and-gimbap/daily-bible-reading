@@ -766,13 +766,31 @@ function staticSummaryHtml(s) {
     </section>` : ""}
     <section class="tool-card sum-card">
       <h3 class="label">주요 등장 인물</h3>
-      ${s.people.length ? `<ul class="sum-people">${[...s.people].sort((x, y) => String(x.display).localeCompare(String(y.display), "ko")).map((p) => `<li><b>${esc(p.display)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`
+      ${s.people.length ? `${peopleBlockHtml(s.people)}`
         : `<p class="muted small">이번 분량에는 이야기 속 인물이 따로 나오지 않아요.</p>`}
     </section>
 
     ${places}
     ${songs}`;
 }
+
+// 주요 등장 인물: 중요도(비중 점수) 순으로 보여 주고, 찾기 칸으로 이름을 바로 걸러 냄
+function peopleBlockHtml(people, labelOf) {
+  const sorted = [...people].sort((a, b) => (b.score || 0) - (a.score || 0) || (a.order || 0) - (b.order || 0));
+  return `<input type="search" class="sum-find" placeholder="인물 찾기" aria-label="인물 찾기" autocomplete="off">
+    <ul class="sum-people">${sorted.map((p) => {
+      const nm = labelOf ? labelOf(p) : (p.display || p.name);
+      return `<li data-name="${esc(nm)}"><b>${esc(nm)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`;
+    }).join("")}</ul>`;
+}
+// 찾기 칸에 적으면 이름이 들어간 인물만 남김
+document.addEventListener("input", (e) => {
+  if (!e.target.matches || !e.target.matches(".sum-find")) return;
+  const q = e.target.value.trim().toLowerCase();
+  e.target.closest(".tool-card").querySelectorAll(".sum-people li").forEach((li) => {
+    li.hidden = !!q && !li.dataset.name.toLowerCase().includes(q);
+  });
+});
 
 // 요약 탭 그리기 (reader.js의 renderReaderSheet에서 부름)
 function renderSummaryTab(body, day) {
@@ -814,7 +832,7 @@ function renderSummaryTab(body, day) {
     body.innerHTML = `${head}
       <section class="tool-card sum-card">
         <h3 class="label">주요 등장 인물</h3>
-        <ul class="sum-people">${[...data.people].sort((x, y) => String(x.name).localeCompare(String(y.name), "ko")).map((p) => `<li><b>${esc(p.name)}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>
+        ${peopleBlockHtml(data.people, (p) => p.name)}
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">등장 인물 관계도</h3>
