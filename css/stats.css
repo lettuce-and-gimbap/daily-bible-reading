@@ -305,3 +305,10 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .td-range { margin: 0; font-size: .9rem; line-height: 1.5; }
 .tgrid { grid-template-columns: repeat(auto-fill, minmax(30px, 1fr)); gap: 5px; }
 .tcell { font-size: .72rem; border-radius: 8px; }
+
+/* 종료 확인: X는 크게 강조, 종료 버튼은 화면 어디든 랜덤 위치, 양이 ✕ 를 가리킴 */
+.exit-x { position: absolute; top: 10px; right: 10px; width: 52px; height: 52px; border-radius: 50%; border: 0; background: var(--accent); color: var(--accent-ink); font-size: 26px; font-weight: 800; line-height: 1; box-shadow: 0 6px 18px rgb(0 0 0 / .25); cursor: pointer; padding: 0; }
+.exit-finger { position: absolute; top: 16px; right: 72px; font-size: 34px; line-height: 1; pointer-events: none; animation: exit-poke .9s ease-in-out infinite; }
+@keyframes exit-poke { 0%, 100% { transform: translateX(0) rotate(-12deg); } 50% { transform: translateX(-9px) rotate(-12deg); } }
+.exit-quit { position: absolute; min-width: 110px; padding: 12px 18px; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 800; font-size: 1rem; box-shadow: 0 6px 18px rgb(0 0 0 / .3); cursor: pointer; z-index: 1; }
+.exit-card { padding-top: 26px; }

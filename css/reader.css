@@ -497,3 +497,18 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .sheet-body.slide-r { animation: slide-in-l .28s ease-out; }
 /* QT 탭 묶음이 가로로 늘어나지 않게 */
 #q-tabs { justify-self: start; align-self: flex-start; width: max-content; max-width: 100%; }
+
+/* 구절·QT 본문: 박스를 없애고 가로로 이어 쓰는 글 (단어 중간에서 끊기지 않게) */
+.vp-list { display: block; line-height: 1.95; text-align: left; }
+.vp-row { position: relative; display: inline; padding: 0; border: 0; background: none; cursor: pointer; }
+.vp-row:has(input:checked) { background: var(--accent-soft); border-radius: 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.rd.qt .vp-row:has(input:checked) { background: var(--qt-soft); }
+.vp-row:has(input:checked)::after { content: none; }
+.vp-num { display: inline; min-width: 0; padding: 0; margin-right: 4px; font-size: calc(.74em * var(--fz, 1)); vertical-align: super; line-height: 0; }
+.vp-txt { display: inline; padding: 0; overflow-wrap: break-word; word-break: keep-all; }
+.vp-txt small { display: inline; margin: 0 0 0 6px; font-size: calc(.82em * var(--fz, 1)); color: var(--muted); }
+.vp-txt small::before { content: "· "; }
+.vp-txt small i { margin-right: 3px; }
+.qt-passage { background: none; border: 0; border-radius: 0; padding: 0; }
+.qt-ans { border: 0; border-bottom: 1px dashed var(--line); border-radius: 0; background: transparent; padding: 6px 2px; }
+.qt-ans:focus { border-bottom-color: var(--qt); outline: none; }
