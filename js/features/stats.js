@@ -91,8 +91,8 @@ function renderStats() {
   app.innerHTML = `
     <section class="card theme-card">
       <h3 class="label">화면 모드</h3>
-      <div class="opts">
-        ${[["auto", "기기 설정 따르기"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="opt ${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
+      <div class="seg wide">
+        ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
       </div>
     </section>
     <section class="hero-row">${readCard}${qtCard}</section>
@@ -151,7 +151,8 @@ function renderStats() {
     state.settings.theme = b.dataset.themeSet;
     applyTheme();
     persist();
-    renderStats();
+    // 다시 그리지 않고 .on만 바꿔서 슬라이드 막대가 밀려 가게 함
+    b.parentElement.querySelectorAll("[data-theme-set]").forEach((x) => x.classList.toggle("on", x === b));
   }));
 
   const shiftMonth = (n) => {

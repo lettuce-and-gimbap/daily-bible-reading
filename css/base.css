@@ -123,6 +123,13 @@ main { max-width: 880px; margin: 0 auto; padding: 18px 16px; display: grid; gap:
 .seg button.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgb(0 0 0 / .1); }
 .seg.wide { display: flex; }
 .seg.wide button { flex: 1; }
+/* 슬라이드 막대: 한 가지만 고르는 묶음에서 .on 자리를 막대가 밀려 가며 보여 줌 (js/shared/slide.js) */
+.seg, .opts { position: relative; }
+.slide-thumb { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; border-radius: 9px; background: var(--surface); box-shadow: 0 1px 3px rgb(0 0 0 / .1); transition: transform .32s cubic-bezier(.2, .8, .2, 1), width .32s cubic-bezier(.2, .8, .2, 1), height .32s cubic-bezier(.2, .8, .2, 1); }
+.opts > .slide-thumb { border-radius: 12px; background: var(--accent-soft); border: 2px solid var(--accent); box-sizing: border-box; box-shadow: none; }
+.sl-active > button { position: relative; z-index: 1; }
+.seg.sl-active > button.on { background: transparent; box-shadow: none; }
+.opts.sl-active > .opt.on { background: transparent; border-color: transparent; }
 select, input[type=number], input[type=date], textarea {
   font: inherit; color: var(--ink); background: var(--surface);
   border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; width: 100%;
