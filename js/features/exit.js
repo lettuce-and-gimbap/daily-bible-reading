@@ -1,16 +1,15 @@
-// 뒤로가기로 앱을 나갈 때: 바로 나가지 않고 양이 울상으로 붙잡음. 한 번 더 누르면 종료, X로 닫으면 계속 사용
-// 방법: 앱을 처음 열 때 지금 화면을 "첫 화면"으로 표시하고, 그 위에 가짜 한 칸(guard)을 쌓아 둠.
-//   뒤로가기 → guard에서 첫 화면으로 돌아오는 순간 울상 창을 띄움. 그 상태에서 한 번 더 누르면 브라우저가 앱을 나감.
-//   X로 닫으면 다시 guard를 쌓아 둠.
-const EXIT_FIRST = "appEntry";
+// 뒤로가기 흐름. 기록은 [처음 페이지(GUARD)] → [본문(ROOT)] → [다른 화면(APPSUB)] 순으로 쌓임
+//  · 다른 화면(QT·관리·통독 안의 요약·메모·갓피아)에서 뒤로 가기 → 본문으로 돌아옴
+//  · 본문에서 뒤로 가기 → 항상 양이 울상으로 붙잡음(GUARD로 돌아가는 순간). 한 번 더 누르면 종료, ✕로 닫으면 계속 사용
 const EXIT_GUARD = "appGuard";
+const EXIT_ROOT = "appRoot";
+const EXIT_SUB = "appSub";
+const HOME = "#today";
 let exitOpen = false;
 
-// 첫 화면에 있을 때만 guard를 쌓음 (이미 guard 위라면 그대로)
-function armExitGuard() {
-  try {
-    if (history.state && history.state[EXIT_FIRST]) history.pushState({ [EXIT_GUARD]: 1 }, "", location.href);
-  } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
+// 본문을 기록의 맨 위에 다시 올림 (양 창을 닫은 뒤 등)
+function pushRoot() {
+  try { history.pushState({ [EXIT_ROOT]: 1 }, "", HOME); } catch (e) { /* 기록을 못 쓰면 그냥 둠 */ }
 }
 
 function showExitSheep() {
@@ -20,7 +19,7 @@ function showExitSheep() {
     pop.classList.add("bye");
     setTimeout(() => pop.remove(), 300);
     exitOpen = false;
-    armExitGuard(); // 계속 쓰는 중이므로 다음 뒤로가기도 다시 붙잡음
+    pushRoot(); // 계속 쓰는 중이므로 본문을 다시 쌓아 둠
   };
   const pop = document.createElement("div");
   pop.className = "exit-pop";
@@ -40,20 +39,33 @@ function showExitSheep() {
   }).catch(() => { pop.querySelector(".exit-art").innerHTML = `<p class="exit-fallback">😭 ㄱ..가게..?</p>`; });
 }
 
-// 앱을 열 때 한 번: 지금 화면을 첫 화면으로 표시하고 그 위에 guard를 쌓음.
-// 이미 guard 위에 있으면(새로고침·다시 불러오기) 기록을 건드리지 않음 → 기록이 겹쳐 쌓이지 않게
+// 본문으로 돌아옴: 통독 안의 다른 화면이 열려 있으면 본문 탭으로 바꿈
+function goHome() {
+  if (location.hash !== HOME) { history.replaceState(history.state, "", HOME); route(); return; }
+  if (document.querySelector(".rd.reading") && sheetTab !== "verses") openSheet("verses", renderReaderSheet);
+}
+
+// 처음 열 때: 지금 페이지를 양이 붙잡는 자리로 두고, 그 위에 본문을 쌓음
+// (이미 쌓여 있으면, 즉 새로고침이면 건드리지 않음)
 try {
   const st = history.state || {};
-  if (!st[EXIT_GUARD]) {
-    history.replaceState({ ...st, [EXIT_FIRST]: 1 }, "", location.href);
-    armExitGuard();
+  if (!st[EXIT_GUARD] && !st[EXIT_ROOT]) {
+    const link = location.hash.startsWith("#link=");
+    if (!link && location.hash !== HOME) history.replaceState(history.state, "", HOME);
+    history.replaceState({ [EXIT_GUARD]: 1 }, "", location.href);
+    history.pushState({ [EXIT_ROOT]: 1 }, "", location.href);
   }
 } catch (e) { /* 무시 */ }
 
 window.addEventListener("popstate", (e) => {
-  if (e.state && e.state[EXIT_FIRST]) showExitSheep();
+  const st = e.state || {};
+  if (st[EXIT_GUARD]) { showExitSheep(); return; }   // 본문에서 뒤로 → 양
+  if (st[EXIT_ROOT]) { goHome(); return; }            // 다른 화면에서 뒤로 → 본문
+  if (st[EXIT_SUB]) {                                 // 본문이 아닌 기록으로 돌아옴 → 본문으로
+    history.replaceState({ [EXIT_ROOT]: 1 }, "", HOME);
+    route();
+    return;
+  }
+  // 메뉴 링크로 새로 옮겨 간 기록: 다음 뒤로 가기에서 본문으로 돌아오도록 표시만 함
+  try { history.replaceState({ [EXIT_SUB]: 1 }, "", location.href); } catch (err) { /* 무시 */ }
 });
-// 브라우저는 사용자가 누르지 않은 상태에서 쌓은 기록을 뒤로가기에서 건너뛰기도 해서,
-// 첫 화면에 있을 때 사용자가 누르는 순간마다 guard를 다시 쌓아 둠 (매 뒤로가기마다 양이 나오게)
-document.addEventListener("pointerdown", armExitGuard, true);
-document.addEventListener("keydown", armExitGuard, true);

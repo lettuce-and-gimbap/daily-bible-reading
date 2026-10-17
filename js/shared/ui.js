@@ -81,6 +81,14 @@ function openSheet(tab, renderFn) {
   const group = slideGroupOf(renderFn);
   const dir = group ? (rememberTab(group, tab), lastSlide) : "";
   lastSlide = "";
+  // 통독 안의 다른 화면을 열면 뒤로 가기 기록을 하나 쌓아, 뒤로 가기가 본문으로 돌아오게 함 (js/features/exit.js)
+  if (renderFn === renderReaderSheet && tab !== "verses" && !(history.state && history.state.appSub)) {
+    try { history.pushState({ appSub: 1 }, "", location.href); } catch (e) { /* 무시 */ }
+  }
+  // 본문 탭으로 돌아갈 때는 쌓아 둔 기록을 되돌림 (뒤로 가기와 같은 결과)
+  if (renderFn === renderReaderSheet && tab === "verses" && history.state && history.state.appSub) {
+    try { history.back(); } catch (e) { /* 무시 */ }
+  }
   sheetTab = tab;
   $("#sheet").hidden = false;
   $("#sheet-bg").hidden = false;
