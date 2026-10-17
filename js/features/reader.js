@@ -118,6 +118,9 @@ function buildReader() {
     }
     if (t.dataset.sumRetry) { delete summaryMem[t.dataset.sumRetry]; renderReaderSheet(); return; }
     let reload = false;
+    // 장 고르기 줄을 다시 그려도 옆으로 밀어 둔 자리는 그대로 두기
+    const chapRow = t.closest(".rg-chap");
+    const chapX = chapRow ? chapRow.scrollLeft : null;
     if (t.dataset.chap !== undefined) {
       currentChapter = Number(t.dataset.chap);
       viewingDay = dayOfChapter(progress().days, currentChapter);
@@ -150,6 +153,11 @@ function buildReader() {
       state.settings.ver2 = t.dataset.ver2;
     } else if (t.dataset.gchap !== undefined) { // 관계도: 장별로 보기 (all = 분량 전체)
       state.settings.graphChap = t.dataset.gchap === "all" ? "all" : Number(t.dataset.gchap);
+      persist();
+      renderReaderSheet();
+      const row = document.querySelector(".rg-chap");
+      if (row && chapX != null) row.scrollLeft = chapX;
+      return;
     } else if (t.dataset.gdetail) { // 관계도: 주요 인물 ↔ 전체 인물
       state.settings.graphAll = t.dataset.gdetail === "all";
     } else if (t.id === "d-copy") {
