@@ -292,7 +292,13 @@ function relationGraphHtml(people, relations) {
     });
     y += r.h + GAP;
   });
-  const VW = W, VH = y - GAP + PAD;
+  let VW = W, VH = y - GAP + PAD;
+  if (names.length >= 6) { // 인물이 많으면 상하좌우에 고루 퍼지게 다시 놓고, 화면 폭에 맞춰 줄임
+    rgPreviewLayout(names, rels, pos, 360);
+    const b = rgBounds(names, pos);
+    names.forEach((nm) => { pos[nm].x += PAD - b.x0; pos[nm].y += PAD - b.y0; });
+    VW = b.x1 - b.x0 + PAD * 2; VH = b.y1 - b.y0 + PAD * 2;
+  }
   const edges = rgEdgeGeom(rels, pos, 150);
 
   const id = `rg${++rgSeq}`;
@@ -345,6 +351,26 @@ function rgSpread(names, rels, pos, ratio) {
     });
   }
   names.forEach((nm) => { pos[nm].x = P[nm].x * WW; pos[nm].y = P[nm].y * HH; });
+  for (let it = 0; it < 120; it++) for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+    const A = pos[names[i]], B = pos[names[j]];
+    const ox = A.hw + B.hw + 10 - Math.abs(B.x - A.x), oy = A.hh + B.hh + 14 - Math.abs(B.y - A.y);
+    if (ox <= 0 || oy <= 0) continue;
+    if (oy < ox) { const s = (B.y >= A.y ? 1 : -1) * oy / 2; A.y -= s; B.y += s; }
+    else { const s = (B.x >= A.x ? 1 : -1) * ox / 2; A.x -= s; B.x += s; }
+  }
+}
+
+// 꾹 누르기 전 미리보기용: 화면 비율 전체에 퍼지게 놓은 뒤, 가로 targetW로 줄이고 겹침을 다시 뗌
+function rgBounds(names, pos) {
+  const xs = names.flatMap((nm) => [pos[nm].x - pos[nm].hw, pos[nm].x + pos[nm].hw]);
+  const ys = names.flatMap((nm) => [pos[nm].y - pos[nm].hh, pos[nm].y + pos[nm].hh]);
+  return { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
+}
+function rgPreviewLayout(names, rels, pos, targetW) {
+  rgSpread(names, rels, pos, 1.3);
+  const b = rgBounds(names, pos), k = targetW / Math.max(1, b.x1 - b.x0);
+  names.forEach((nm) => { pos[nm].x *= k; pos[nm].y *= k; });
+  const n = names.length;
   for (let it = 0; it < 120; it++) for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
     const A = pos[names[i]], B = pos[names[j]];
     const ox = A.hw + B.hw + 10 - Math.abs(B.x - A.x), oy = A.hh + B.hh + 14 - Math.abs(B.y - A.y);
