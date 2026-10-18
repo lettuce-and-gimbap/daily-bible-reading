@@ -346,3 +346,12 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .cv-row { margin-bottom: 12px; }
 .cv-row small { display: block; color: var(--muted); font-weight: 600; font-size: .78rem; }
 .cv-row p { margin: 3px 0 0; line-height: 1.6; font-size: .95rem; }
+
+/* 읽은 기록: 통독·QT 따로 보기 */
+.read-mode { margin-bottom: 8px; }
+.cal.mode-read .m-qt { display: none; }
+.cal.mode-qt .m-read { display: none; }
+.qt-places { margin-top: 12px; display: grid; gap: 8px; }
+.qt-places .label { margin: 0; }
+.qt-book b { font-size: .95rem; }
+.qt-ref { font-weight: 600; }

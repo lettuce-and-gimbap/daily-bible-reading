@@ -2,6 +2,7 @@
 
 let calMonth = todayStr().slice(0, 7); // 달력에 보이는 달 "YYYY-MM"
 let calSel = todayStr(); // 달력에서 고른 날
+let readMode = "read"; // 읽은 기록 보기: "read" 통독 · "qt" QT (섞지 않고 따로)
 let bookSel = null; // 권별 진행에서 고른 권 코드
 
 function ring(pct) {
@@ -107,7 +108,10 @@ function renderStats() {
         <h2>${cy}년 ${cm}월</h2>
         <button class="icon-btn" id="cal-next" aria-label="다음 달" ${calMonth >= thisMonth ? "disabled" : ""}>›</button>
       </div>
-      <div class="cal">
+      <div class="seg wide read-mode" role="group" aria-label="읽은 기록 보기">
+        ${[["read", "📖 통독"], ["qt", "🙏 QT"]].map(([v, l]) => `<button class="${readMode === v ? "on" : ""}" data-rmode="${v}">${l}</button>`).join("")}
+      </div>
+      <div class="cal mode-${readMode}">
         ${WEEK.map((w) => `<div class="wk">${w}</div>`).join("")}
         ${cells}
       </div>
@@ -115,7 +119,8 @@ function renderStats() {
         <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
         <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
       </div>
-      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copied)}</div>
+      ${readMode === "qt" ? `<div class="qt-places" id="qt-places"><p class="muted small">QT 본문 기준으로 모으는 중…</p></div>` : ""}
+      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copied, readMode)}</div>
     </section>
 
     ${pr ? planTableCardHtml(pr) : ""}
@@ -163,8 +168,13 @@ function renderStats() {
     calSel = c.dataset.date;
     app.querySelectorAll(".cal .cell.sel").forEach((x) => x.classList.remove("sel"));
     c.classList.add("sel");
-    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied);
+    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied, readMode);
   });
+  app.querySelectorAll("[data-rmode]").forEach((b) => b.addEventListener("click", () => {
+    readMode = b.dataset.rmode;
+    renderStats();
+  }));
+  if (readMode === "qt") fillQtPlaces(qtDates);
   bindGlanceCard();
   const books = $("#glance-card");
   if (books) books.addEventListener("click", (e) => {
@@ -336,17 +346,49 @@ document.addEventListener("click", (e) => {
 });
 
 // ── 달력에서 고른 날 ──
-function dayDetailHtml(d, byDate, copied) {
+function dayDetailHtml(d, byDate, copied, mode = "read") {
   const q = state.qt[d];
   const cp = copied[d] ? copyChipsHtml(copied[d]) : "";
-  const rows = [
-    byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
-    state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
+  const rows = mode === "qt" ? [
     q ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${q.done ? "QT 완료" : "QT 메모"}</p>` : "",
     qtHasText(q) ? `<p class="note qt">${esc(qtTextOf(q))}</p>` : "",
+  ].join("") : [
+    byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
+    state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
     cp ? `<p class="tl-row"><span class="tag sm">📋</span>복사한 구절</p><div class="cv-chips">${cp}</div>` : "",
   ].join("");
-  return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 기록이 없어요.</p>`}`;
+  return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 ${mode === "qt" ? "QT" : "통독"} 기록이 없어요.</p>`}`;
+}
+
+// QT 기록을 "어디를 읽는지"(QT 본문 범위) 기준으로 권·장별로 모아 보여 줌
+async function fillQtPlaces(dates) {
+  const box = $("#qt-places");
+  if (!box) return;
+  const list = [...dates].sort().reverse();
+  const refs = await Promise.all(list.map((d) => qtPassageRef(d)));
+  if (!$("#qt-places") || readMode !== "qt") return;
+  const byRef = new Map();
+  list.forEach((d, i) => {
+    const ref = refs[i] || "본문 정보 없음";
+    if (!byRef.has(ref)) byRef.set(ref, []);
+    byRef.get(ref).push(d);
+  });
+  const bookOf = (ref) => {
+    const m = ref.match(/^(.+?)\s+\d/);
+    const b = m && BOOKS.find((x) => x.name === m[1]);
+    return b ? BOOKS.indexOf(b) : 999;
+  };
+  const groups = new Map();
+  [...byRef.entries()].sort((a, b) => bookOf(a[0]) - bookOf(b[0]) || a[0].localeCompare(b[0], "ko")).forEach(([ref, ds]) => {
+    const m = ref.match(/^(.+?)\s+(.*)$/);
+    const book = m ? m[1] : "기타";
+    const rest = m ? m[2] : ref;
+    if (!groups.has(book)) groups.set(book, []);
+    groups.get(book).push({ rest, ds });
+  });
+  box.innerHTML = `<h3 class="label">어디를 읽었나 <span class="muted small">QT 본문 기준 · ${byRef.size}곳 · ${list.length}일</span></h3>
+    ${[...groups.entries()].map(([book, rows]) => `<div class="qt-book"><b>${esc(book)}</b>
+      <ul class="bd-list">${rows.map((r) => `<li><span class="qt-ref">${esc(r.rest)}</span> <span class="muted small">${r.ds.map((d) => prettyDate(d)).join(" · ")}</span></li>`).join("")}</ul></div>`).join("") || `<p class="muted small">아직 QT 기록이 없어요.</p>`}`;
 }
 
 // ── 권별 진행 ──
