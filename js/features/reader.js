@@ -136,8 +136,6 @@ function buildReader() {
         document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === "today"));
       }
       reload = true;
-    } else if (t.id === "d-view") {
-      return openSheet("view", renderReaderSheet);
     } else if (t.id === "d-copy-note") {
       copyText($("#d-note").value, "오늘의 통독 메모를 복사했어요");
       return;
@@ -160,10 +158,6 @@ function buildReader() {
       return;
     } else if (t.dataset.gdetail) { // 관계도: 주요 인물 ↔ 전체 인물
       state.settings.graphAll = t.dataset.gdetail === "all";
-    } else if (t.id === "d-copy") {
-      const text = `성경 통독 Day ${viewingDay + 1}: ${describeChapters(progress().days[viewingDay])}`;
-      copyText(text, "복사했어요. 투두메이트에 붙여넣어 보세요.");
-      return;
     } else {
       return;
     }
@@ -367,15 +361,7 @@ function renderReaderSheet() {
         아래 버튼으로 <b>갓피아를 새 창에서 열고 로그인</b>하면 같은 장에서 바로 쓸 수 있어요.</p>
       <a class="btn soft small" target="_blank" rel="noopener" href="${readerUrl(currentChapter)}">✍️ ${esc(chapLabel(currentChapter))} 갓피아에서 열기 ↗</a>
     </section>
-    <section class="tool-card">
-      <h3 class="label">바로가기</h3>
-      <div class="inline wrap">
-        <button class="btn ghost small" id="d-view">📖 갓피아 화면 역본</button>
-        <button class="btn ghost small" id="d-copy">📋 Day ${viewingDay + 1} 분량 복사</button>
-        <a class="btn ghost small" href="#stats">📥 기록 내보내기</a>
-      </div>
-      <p class="muted small">이 메모는 이 기기에 저장되고, 관리 → 기록 내보내기에서 엑셀·텍스트로 받을 수 있어요.</p>
-    </section>`;
+`;
   memoPickMount($("#d-note-picker"), $("#d-note"), saveDayNote, renderReaderSheet);
 }
 
