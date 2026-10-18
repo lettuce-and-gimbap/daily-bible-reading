@@ -28,7 +28,7 @@ async function loadChangelog() {
 
 function changelogEntryHtml(en) {
   return `<article class="cl-entry ${en.major ? "major" : ""}">
-    <h4><b>v${esc(en.ver)}</b><span>${esc(en.title)}</span><time>${esc(en.date.slice(5).replace("-", "/"))}</time></h4>
+    <h4><b>v${esc(en.ver)}</b><span>${esc(en.title)}</span>${en.date ? `<time>${esc(en.date.slice(5).replace("-", "/"))}</time>` : ""}</h4>
     <ul>${en.items.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
   </article>`;
 }
