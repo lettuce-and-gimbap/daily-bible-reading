@@ -4,6 +4,9 @@ let calMonth = todayStr().slice(0, 7); // 달력에 보이는 달 "YYYY-MM"
 let calSel = todayStr(); // 달력에서 고른 날
 let readMode = "read"; // 읽은 기록 보기: "read" 통독 · "qt" QT (섞지 않고 따로)
 let bookSel = null; // 권별 진행에서 고른 권 코드
+let glanceMode = "read"; // 통독 현황 한눈에 보기: "read" 통독 · "qt" QT 본문 범위 (따로 전환)
+let qtBookSel = null; // QT 모드에서 고른 권 코드
+const qtCoverMap = {}; // QT 날짜 → { ref: 본문 범위, idx: 다룬 장 번호들 } (한 번 받으면 다시 받지 않음)
 
 function ring(pct) {
   const r = 34, c = 2 * Math.PI * r;
@@ -119,7 +122,6 @@ function renderStats() {
         <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
         <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
       </div>
-      ${readMode === "qt" ? `<div class="qt-places" id="qt-places"><p class="muted small">QT 본문 기준으로 모으는 중…</p></div>` : ""}
       <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copied, readMode)}</div>
     </section>
 
@@ -174,7 +176,6 @@ function renderStats() {
     readMode = b.dataset.rmode;
     renderStats();
   }));
-  if (readMode === "qt") fillQtPlaces(qtDates);
   bindGlanceCard();
   const books = $("#glance-card");
   if (books) books.addEventListener("click", (e) => {
@@ -360,37 +361,6 @@ function dayDetailHtml(d, byDate, copied, mode = "read") {
   return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 ${mode === "qt" ? "QT" : "통독"} 기록이 없어요.</p>`}`;
 }
 
-// QT 기록을 "어디를 읽는지"(QT 본문 범위) 기준으로 권·장별로 모아 보여 줌
-async function fillQtPlaces(dates) {
-  const box = $("#qt-places");
-  if (!box) return;
-  const list = [...dates].sort().reverse();
-  const refs = await Promise.all(list.map((d) => qtPassageRef(d)));
-  if (!$("#qt-places") || readMode !== "qt") return;
-  const byRef = new Map();
-  list.forEach((d, i) => {
-    const ref = refs[i] || "본문 정보 없음";
-    if (!byRef.has(ref)) byRef.set(ref, []);
-    byRef.get(ref).push(d);
-  });
-  const bookOf = (ref) => {
-    const m = ref.match(/^(.+?)\s+\d/);
-    const b = m && BOOKS.find((x) => x.name === m[1]);
-    return b ? BOOKS.indexOf(b) : 999;
-  };
-  const groups = new Map();
-  [...byRef.entries()].sort((a, b) => bookOf(a[0]) - bookOf(b[0]) || a[0].localeCompare(b[0], "ko")).forEach(([ref, ds]) => {
-    const m = ref.match(/^(.+?)\s+(.*)$/);
-    const book = m ? m[1] : "기타";
-    const rest = m ? m[2] : ref;
-    if (!groups.has(book)) groups.set(book, []);
-    groups.get(book).push({ rest, ds });
-  });
-  box.innerHTML = `<h3 class="label">어디를 읽었나 <span class="muted small">QT 본문 기준 · ${byRef.size}곳 · ${list.length}일</span></h3>
-    ${[...groups.entries()].map(([book, rows]) => `<div class="qt-book"><b>${esc(book)}</b>
-      <ul class="bd-list">${rows.map((r) => `<li><span class="qt-ref">${esc(r.rest)}</span> <span class="muted small">${r.ds.map((d) => prettyDate(d)).join(" · ")}</span></li>`).join("")}</ul></div>`).join("") || `<p class="muted small">아직 QT 기록이 없어요.</p>`}`;
-}
-
 // ── 권별 진행 ──
 function booksGridHtml(pr, copied) {
   const inPlan = new Set(pr.seq);
@@ -491,32 +461,109 @@ function glanceCardHtml() {
   </section>`;
 }
 
-function glanceBodyHtml(g = glanceStats()) {
-  const pr = state.plan ? progress() : null;
+// 성경 전체 고리 그래프: 구약(색 1)·신약(색 2)을 나눠 읽은 장 수를 보여 줌
+function glanceRingHtml(otN, ntN, read) {
   const r = 52, c = 2 * Math.PI * r;
-  const read = g.otRead + g.ntRead;
-  const lenOt = (g.otRead / TOTAL_CHAPTERS) * c, lenNt = (g.ntRead / TOTAL_CHAPTERS) * c;
-  const donut = `<svg class="gring" viewBox="0 0 140 140" role="img" aria-label="성경 전체 ${TOTAL_CHAPTERS}장 중 ${read}장 읽음">
+  const lenOt = (otN / TOTAL_CHAPTERS) * c, lenNt = (ntN / TOTAL_CHAPTERS) * c;
+  return `<svg class="gring" viewBox="0 0 140 140" role="img" aria-label="성경 전체 ${TOTAL_CHAPTERS}장 중 ${read}장">
       <circle class="gring-bg" cx="70" cy="70" r="${r}"/>
       <circle class="gring-ot" cx="70" cy="70" r="${r}" stroke-dasharray="${lenOt} ${c - lenOt}"/>
       <circle class="gring-nt" cx="70" cy="70" r="${r}" stroke-dasharray="${lenNt} ${c - lenNt}" stroke-dashoffset="${-lenOt}"/>
       <text x="70" y="68" text-anchor="middle" class="gring-pct">${glancePct(read, TOTAL_CHAPTERS)}%</text>
       <text x="70" y="88" text-anchor="middle" class="gring-sub">${read.toLocaleString()} / ${TOTAL_CHAPTERS.toLocaleString()}장</text>
     </svg>`;
-  const side = (cls, label, n, total) => `<li><i class="${cls}"></i><span><b>${label}</b> ${n.toLocaleString()} / ${total.toLocaleString()}장</span><em>${glancePct(n, total)}%</em></li>`;
+}
 
+function glanceSideHtml(cls, label, n, total) {
+  return `<li><i class="${cls}"></i><span><b>${label}</b> ${n.toLocaleString()} / ${total.toLocaleString()}장</span><em>${glancePct(n, total)}%</em></li>`;
+}
+
+// 통독 · QT 전환 막대. 누른 쪽만 다시 그림
+function glanceSwitchHtml() {
+  return `<div class="seg wide" role="group" aria-label="통독 현황 보기 방식">
+    ${[["read", "📖 통독"], ["qt", "🙏 QT"]].map(([v, l]) => `<button class="${glanceMode === v ? "on" : ""}" data-gmode="${v}">${l}</button>`).join("")}
+  </div>`;
+}
+
+function glanceBodyHtml(g = glanceStats()) {
+  return `${glanceSwitchHtml()}${glanceMode === "qt" ? `<div id="glance-qt"><p class="muted small">QT 본문 범위를 모으는 중…</p></div>` : glanceReadHtml(g)}`;
+}
+
+function glanceReadHtml(g) {
+  const pr = state.plan ? progress() : null;
+  const read = g.otRead + g.ntRead;
   return `<div class="glance-top">
-      <div class="gring-wrap">${donut}</div>
+      <div class="gring-wrap">${glanceRingHtml(g.otRead, g.ntRead, read)}</div>
       <ul class="gring-legend">
-        ${side("ot", "구약", g.otRead, g.otTotal)}
-        ${side("nt", "신약", g.ntRead, g.ntTotal)}
-        ${side("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
+        ${glanceSideHtml("ot", "구약", g.otRead, g.otTotal)}
+        ${glanceSideHtml("nt", "신약", g.ntRead, g.ntTotal)}
+        ${glanceSideHtml("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
       </ul>
     </div>
     ${pr ? `<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedByDate()) : ""}</div>
     <h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 위에 읽은 기간과 복사한 구절이 나와요</span></h3>
     <div class="books">${booksGridHtml(pr, copiedByDate())}</div>` : ""}
     <p class="muted small">원 전체가 성경 전체예요. 구약과 신약을 색으로 나눠 보여 줘요.</p>`;
+}
+
+// QT 날짜마다 본문 범위(ref)와 그 범위가 걸치는 장 번호를 한 번만 받아 둠
+async function loadQtCover(dates) {
+  await Promise.all(dates.filter((d) => !qtCoverMap[d]).map(async (d) => {
+    const ref = await qtPassageRef(d);
+    if (ref) qtCoverMap[d] = { ref, idx: qtRanges(ref).map((r) => r.idx) };
+  }));
+}
+
+async function fillGlanceQt() {
+  const dates = [...qtCountDates()];
+  await loadQtCover(dates);
+  renderGlanceQt();
+}
+
+// 통독 표와 같은 모양: 위에 고리·구약/신약 합계, 아래에 권별 칸. 권을 누르면 날짜별 본문 범위
+function renderGlanceQt() {
+  const box = $("#glance-qt");
+  if (!box || glanceMode !== "qt") return;
+  const dates = [...qtCountDates()].sort();
+  const covered = new Set(dates.flatMap((d) => qtCoverMap[d]?.idx || []));
+  const perBook = BOOKS.map((b) => {
+    const start = chapterIndex(b.code, 1);
+    let n = 0;
+    for (let i = start; i < start + b.chapters; i++) if (covered.has(i)) n++;
+    const ds = dates.filter((d) => (qtCoverMap[d]?.idx || []).some((i) => i >= start && i < start + b.chapters));
+    return { b, n, ds };
+  }).filter((x) => x.n);
+  const sumOf = (test) => perBook.filter((x) => x.b.testament === test).reduce((a, x) => a + x.n, 0);
+  const otN = sumOf("OT"), ntN = sumOf("NT"), read = otN + ntN;
+  const otTotal = BOOKS.filter((b) => b.testament === "OT").reduce((a, b) => a + b.chapters, 0);
+  const ntTotal = TOTAL_CHAPTERS - otTotal;
+  const monthPrefix = todayStr().slice(0, 7);
+  const monthQt = dates.filter((d) => d.startsWith(monthPrefix)).length;
+  const sel = perBook.find((x) => x.b.code === qtBookSel);
+  box.innerHTML = `<p class="muted small">QT 본문 범위에 한 번이라도 든 장을 세어요. 전체 ${dates.length}일 · 이 달 ${monthQt}일 · 연속 ${qtStreak(qtCountDates())}일</p>
+    <div class="glance-top">
+      <div class="gring-wrap">${glanceRingHtml(otN, ntN, read)}</div>
+      <ul class="gring-legend">
+        ${glanceSideHtml("ot", "구약", otN, otTotal)}
+        ${glanceSideHtml("nt", "신약", ntN, ntTotal)}
+        ${glanceSideHtml("rest", "아직 안 다룸", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
+      </ul>
+    </div>
+    <div id="qt-book-detail">${sel ? `<div class="book-detail"><h3>${sel.b.name} <span class="muted small">QT ${sel.ds.length}일 · ${sel.n}${chapUnit(sel.b)}</span></h3>
+      <ul class="bd-list">${sel.ds.map((d) => `<li><b>${prettyDate(d)}</b> <span class="qt-ref">${esc(qtCoverMap[d].ref)}</span></li>`).join("")}</ul></div>` : ""}</div>
+    <h3 class="gl-group">권별 QT <span class="muted small">권을 누르면 날짜별 QT 본문이 나와요</span></h3>
+    ${perBook.length ? `<div class="books">${perBook.map((x) => {
+      const p = Math.round((x.n / x.b.chapters) * 100);
+      return `<button class="book qbook ${p === 100 ? "full" : ""} ${x.b.code === qtBookSel ? "sel" : ""}" data-qbook="${x.b.code}"><span>${x.b.name}</span><em>${x.n}/${x.b.chapters}</em>
+        <div class="bar thin"><span style="width:${p}%"></span></div></button>`;
+    }).join("")}</div>` : `<p class="muted small">아직 QT 본문 범위가 모이지 않았어요.</p>`}`;
+}
+
+function redrawGlanceBody() {
+  const body = $("#glance-body");
+  if (!body || body.hidden) return;
+  body.innerHTML = glanceBodyHtml(); // 열 때만 그림(장 칸이 1,189개라서)
+  if (glanceMode === "qt") fillGlanceQt();
 }
 
 function bindGlanceCard() {
@@ -527,6 +574,19 @@ function bindGlanceCard() {
     t.setAttribute("aria-expanded", String(glanceOpen));
     const body = $("#glance-body");
     body.hidden = !glanceOpen;
-    if (glanceOpen && !body.innerHTML.trim()) body.innerHTML = glanceBodyHtml(); // 열 때만 그림(장 칸이 1,189개라서)
+    if (glanceOpen && !body.innerHTML.trim()) redrawGlanceBody();
+  });
+  if (glanceOpen && glanceMode === "qt") fillGlanceQt();
+  $("#glance-card").addEventListener("click", (e) => {
+    const m = e.target.closest("[data-gmode]");
+    if (m) {
+      glanceMode = m.dataset.gmode;
+      redrawGlanceBody();
+      return;
+    }
+    const q = e.target.closest("[data-qbook]");
+    if (!q) return;
+    qtBookSel = qtBookSel === q.dataset.qbook ? null : q.dataset.qbook;
+    renderGlanceQt();
   });
 }

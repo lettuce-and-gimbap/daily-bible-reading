@@ -351,7 +351,4 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .read-mode { margin-bottom: 8px; }
 .cal.mode-read .m-qt { display: none; }
 .cal.mode-qt .m-read { display: none; }
-.qt-places { margin-top: 12px; display: grid; gap: 8px; }
-.qt-places .label { margin: 0; }
-.qt-book b { font-size: .95rem; }
 .qt-ref { font-weight: 600; }
