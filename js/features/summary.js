@@ -318,20 +318,27 @@ function relationGraphCore(people, relations) {
 }
 
 // 관계도: 관리자 테스트(열왕기상)에서는 사건 관계와 가족 관계를 두 층으로 나눠 보여 줌
+const KIN_GROUPS_MAIN = [["사건", (r) => r.kind !== "family"], ["가족", (r) => r.kind === "family"]];
+const KIN_GROUPS_ALL = [
+  ["가족·혼인", (r) => r.kind === "family"],
+  ["싸움·죽음", (r) => r.kind === "conflict"],
+  ["동맹·아는 사이", (r) => r.kind === "ally" || r.kind === "other"],
+];
 function relationGraphHtml(people, relations, opts = {}) {
   if (!opts.kin) return relationGraphCore(people, relations);
-  const ev = relationGraphCore(people, relations.filter((r) => r.kind !== "family"));
-  const fa = relationGraphCore(people, relations.filter((r) => r.kind === "family"));
+  const groups = opts.all ? KIN_GROUPS_ALL : KIN_GROUPS_MAIN;
+  const panes = groups.map(([label, keep], i) =>
+    `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${relationGraphCore(people, relations.filter(keep))}</div>`).join("");
   return `<div class="kin-wrap">
-    <div class="seg wide kin-seg" role="group" aria-label="관계 층">
-      <button type="button" class="on" data-kinbtn="event">사건</button>
-      <button type="button" data-kinbtn="family">가족</button>
+    <div class="seg wide kin-seg" role="group" aria-label="관계 묶음">
+      ${groups.map(([label], i) => `<button type="button" class="${i ? "" : "on"}" data-kinbtn="${i}">${label}</button>`).join("")}
     </div>
-    <div class="kin-pane" data-kinpane="event">${ev}</div>
-    <div class="kin-pane" data-kinpane="family" hidden>${fa}</div>
+    ${panes}
   </div>`;
 }
-function kinOpts() { return { kin: typeof isAdmin === "function" && isAdmin() && summaryBook === "1ki" }; }
+function kinOpts() {
+  return { kin: typeof isAdmin === "function" && isAdmin() && summaryBook === "1ki", all: !!state.settings.graphAll };
+}
 document.addEventListener("click", (e) => {
   const b = e.target.closest && e.target.closest("[data-kinbtn]");
   if (!b) return;
