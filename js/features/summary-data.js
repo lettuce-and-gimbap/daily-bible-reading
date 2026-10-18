@@ -6,7 +6,8 @@
 
 const SUMMARY_LIMITS = { graphPeople: 10, rels: 14, perPair: 2, places: 6, events: 12 };
 // 관계도의 "전체 인물" 보기: 그날 나오는 인물과 관계를 거의 다 그림 (주요 인물 보기는 위 한도)
-const SUMMARY_LIMITS_ALL = { graphPeople: 40, rels: 100, perPair: 4 };
+// 전체 보기("전체 인물")는 제한 없이 전부. 요약 보기("주요 인물")만 SUMMARY_LIMITS로 줄임
+const SUMMARY_LIMITS_ALL = { graphPeople: Infinity, rels: Infinity, perPair: Infinity };
 
 // 하루 장 수에 따라 장마다 보여 줄 사건 수
 function eventsPerChapter(n) {
