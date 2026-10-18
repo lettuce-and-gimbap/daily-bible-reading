@@ -54,7 +54,7 @@ function renderStats() {
           ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
           : `<span>🙏</span>`}</div>
         <div>
-          <p class="hero-status">${todayQt ? "오늘 QT 완료 ✓" : "오늘 QT를 아직 안 했어요"}</p>
+          <p class="hero-status">${isQtSunday(today) ? "주일에는 QT가 없어요. 은혜로운 주일 되세요 😊" : todayQt ? "오늘 QT 완료 ✓" : "오늘 QT를 아직 안 했어요"}</p>
           <p class="muted small">${prettyDate(today)}</p>
         </div>
       </div>
