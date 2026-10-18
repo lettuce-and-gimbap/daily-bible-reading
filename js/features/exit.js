@@ -5,8 +5,9 @@
 //  · 본문이 아닌 화면에서 뒤로 가기 → 본문으로. 본문에서 뒤로 가기 → 종료 확인 창
 //    (종료 버튼은 화면 어디든 매번 랜덤 위치, ✕ 는 크게. 양이 ✕ 를 가리키며 붙잡음)
 const EXIT_KEEP = 2;
-// 임시: 뒤로 가기 종료 확인은 관리자 계정(벅수)에서만 켜짐
-function exitOn() { return typeof isAdmin === "function" && isAdmin(); }
+// 뒤로 가기 종료 확인 기능 보류 중: 끄기 상태(false). 다시 쓰려면 아래 줄을 관리자 조건으로 바꾸면 됨
+// function exitOn() { return typeof isAdmin === "function" && isAdmin(); }
+function exitOn() { return false; }
 const HOME = "#today";
 let exitDepth = 0; // 우리가 쌓은 칸 수 (바닥 위)
 let exitOpen = false;
