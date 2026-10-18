@@ -706,7 +706,7 @@ function staticDaySummary(day) {
 // 관계도에 그릴 장: 장을 골랐으면 그 장, 골라 둔 게 없으면 지금 읽는 장(분량 안에 있을 때), "전체"면 분량 전체
 function graphSource(s) {
   const pick = state.settings.graphChap;
-  const idx = pick === "all" ? -1 : typeof pick === "number" ? pick : s.autoIdx;
+  const idx = pick === "all" || pick == null ? -1 : typeof pick === "number" ? pick : s.autoIdx; // 처음엔 분량 전체
   if (!s.byChap || idx == null || idx < 0 || idx >= s.byChap.length) return s;
   return s.byChap[idx];
 }
