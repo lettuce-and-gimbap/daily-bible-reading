@@ -304,7 +304,7 @@ function bindQtContent() {
     const quotes = qtPassageQuote();
     if (!quotes.length) return;
     if (act.qa === "copy") {
-      quotes.forEach((q) => logCopied(q.idx, q.text.split("\n")[0]));
+      quotes.forEach((q) => logCopied(q.idx, q.text.split("\n")[0], "qt"));
       return copyText(quotes.map((q) => q.text).join("\n\n"), `${quotes[0].text.split("\n")[0]} 복사했어요`);
     }
     insertQuote("qt", quotes.map((q) => q.text).join("\n\n"));

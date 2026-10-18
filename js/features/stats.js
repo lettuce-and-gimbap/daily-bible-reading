@@ -122,7 +122,7 @@ function renderStats() {
         <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
         <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
       </div>
-      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copied, readMode)}</div>
+      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copiedBySource(readMode), readMode)}</div>
     </section>
 
     ${pr ? planTableCardHtml(pr) : ""}
@@ -170,7 +170,7 @@ function renderStats() {
     calSel = c.dataset.date;
     app.querySelectorAll(".cal .cell.sel").forEach((x) => x.classList.remove("sel"));
     c.classList.add("sel");
-    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copied, readMode);
+    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copiedBySource(readMode), readMode);
   });
   app.querySelectorAll("[data-rmode]").forEach((b) => b.addEventListener("click", () => {
     readMode = b.dataset.rmode;
@@ -183,7 +183,7 @@ function renderStats() {
     if (!b) return;
     bookSel = bookSel === b.dataset.book ? null : b.dataset.book;
     books.querySelectorAll(".book").forEach((x) => x.classList.toggle("sel", x.dataset.book === bookSel));
-    $("#book-detail").innerHTML = bookSel ? bookDetailHtml(bookSel, copied) : "";
+    $("#book-detail").innerHTML = bookSel ? bookDetailHtml(bookSel, copiedBySource(glanceMode)) : "";
   });
   const edit = $("#st-edit");
   if (edit) edit.addEventListener("click", () => renderSetup(state.plan));
@@ -275,24 +275,27 @@ function parseVerseList(v) {
   });
   return out;
 }
-function copiedByDate() {
+// src: "reading" | "qt" 이면 그 출처만, 없으면 전부. 출처 없는 옛 기록은 통독으로 봄
+function copiedByDate(src) {
   const out = {};
   const add = (d, idx, nums) => {
     const day = (out[d] = out[d] || {});
     const set = (day[idx] = day[idx] || new Set());
     nums.forEach((n) => set.add(n));
   };
-  (state.copies || []).forEach((c) => add(c.d, c.i, parseVerseList(c.v)));
+  const want = (x) => !src || (x || "reading") === src;
+  (state.copies || []).forEach((c) => { if (want(c.src)) add(c.d, c.i, parseVerseList(c.v)); });
   const scan = (d, text) => String(text || "").split("\n").forEach((line) => {
     const m = line.trim().match(COPY_REF_LINE);
     if (!m) return;
     const b = BOOKS.find((x) => x.name === m[1]);
     if (b && +m[2] >= 1 && +m[2] <= b.chapters) add(d, chapterIndex(b.code, +m[2]), parseVerseList(m[3]));
   });
-  Object.entries(state.dayNotes).forEach(([d, t]) => scan(d, t));
-  Object.entries(state.qt).forEach(([d, q]) => scan(d, q && q.note));
+  if (!src || src === "reading") Object.entries(state.dayNotes).forEach(([d, t]) => scan(d, t));
+  if (!src || src === "qt") Object.entries(state.qt).forEach(([d, q]) => scan(d, q && q.note));
   return out;
 }
+function copiedBySource(mode) { return copiedByDate(mode === "qt" ? "qt" : "reading"); }
 // { 장일련번호: Set } → ["창세기 1:1-3,5 · 2:4"]
 function copiedText(map) {
   const byBook = {};
@@ -500,7 +503,7 @@ function glanceReadHtml(g) {
         ${glanceSideHtml("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
       </ul>
     </div>
-    ${pr ? `<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedByDate()) : ""}</div>
+    ${pr ? `<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedBySource(glanceMode)) : ""}</div>
     <h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 위에 읽은 기간과 복사한 구절이 나와요</span></h3>
     <div class="books">${booksGridHtml(pr, copiedByDate())}</div>` : ""}
     <p class="muted small">원 전체가 성경 전체예요. 구약과 신약을 색으로 나눠 보여 줘요.</p>`;
