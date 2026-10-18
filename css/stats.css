@@ -338,3 +338,11 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .cl-major > .cl-entry { background: var(--surface); margin-bottom: 8px; }
 .cl-subs { margin: -2px 0 8px 14px; display: grid; gap: 6px; border-left: 2px solid var(--line); padding-left: 10px; }
 .cl-subs .cl-entry { background: var(--surface); }
+
+/* 복사한 절 칩 · 절 팝업 */
+.cv-chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 6px; }
+.cv-chip { border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); border-radius: 99px; padding: 3px 10px; font: inherit; font-size: .8rem; cursor: pointer; }
+.cv-card { width: min(420px, 100%); }
+.cv-row { margin-bottom: 12px; }
+.cv-row small { display: block; color: var(--muted); font-weight: 600; font-size: .78rem; }
+.cv-row p { margin: 3px 0 0; line-height: 1.6; font-size: .95rem; }

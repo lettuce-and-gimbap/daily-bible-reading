@@ -293,16 +293,58 @@ function copiedText(map) {
   return Object.entries(byBook).map(([name, parts]) => `${name} ${parts.join(" · ")}`);
 }
 
+// 복사한 절 칩 (누르면 그 절을 개역개정4판·쉬운성경으로 보여 줌)
+function copyChipsHtml(map) {
+  return Object.entries(map).sort((a, b) => a[0] - b[0]).flatMap(([i, set]) => {
+    const c = CHAPTERS[i];
+    return [...set].sort((a, b) => a - b).map((n) =>
+      `<button type="button" class="cv-chip" data-vref="${i}:${n}">${esc(c.book.name)} ${c.chap}:${n}</button>`);
+  }).join("");
+}
+
+// 절 팝업: 개역개정4판과 쉬운성경을 나란히
+async function showVersePop(i, n) {
+  document.querySelector(".cv-pop")?.remove();
+  const c = CHAPTERS[i];
+  const pop = document.createElement("div");
+  pop.className = "cl-pop cv-pop";
+  pop.setAttribute("role", "dialog");
+  pop.setAttribute("aria-label", "복사한 절");
+  pop.innerHTML = `<div class="cl-card cv-card">
+    <div class="cl-head"><h3>${esc(c.book.name)} ${c.chap}${c.book.code === "psa" ? "편" : "장"}:${n}</h3><button class="icon-btn" data-vclose aria-label="닫기">✕</button></div>
+    <div class="cl-body cv-body"><p class="muted small">본문을 불러오는 중…</p></div></div>`;
+  pop.addEventListener("click", (e) => { if (e.target === pop || e.target.closest("[data-vclose]")) pop.remove(); });
+  document.body.append(pop);
+  const body = pop.querySelector(".cv-body");
+  try {
+    const hit = (await chapterVerses(i, "gae", "easy")).filter((v) => v.label === String(n));
+    if (!hit.length) { body.innerHTML = `<p class="muted small">이 절을 본문에서 찾지 못했어요.</p>`; return; }
+    body.innerHTML = ["gae", "easy"].map((code) => {
+      const v = hit.find((x) => x.ver === versionFor(code, c.book)) || (hit.length === 2 ? hit[code === "gae" ? 0 : 1] : null);
+      const name = (VERSIONS.find((x) => x.code === code) || {}).name || code;
+      return `<div class="cv-row"><small>${esc(name)}</small><p>${v ? esc(v.text) : "이 역본에는 이 절이 없어요."}</p></div>`;
+    }).join("");
+  } catch (e) {
+    body.innerHTML = `<p class="muted small">본문을 불러오지 못했어요. 인터넷 연결을 확인해 주세요.</p>`;
+  }
+}
+document.addEventListener("click", (e) => {
+  const t = e.target.closest && e.target.closest("[data-vref]");
+  if (!t) return;
+  const [i, n] = t.dataset.vref.split(":").map(Number);
+  showVersePop(i, n);
+});
+
 // ── 달력에서 고른 날 ──
 function dayDetailHtml(d, byDate, copied) {
   const q = state.qt[d];
-  const cp = copied[d] ? copiedText(copied[d]) : [];
+  const cp = copied[d] ? copyChipsHtml(copied[d]) : "";
   const rows = [
     byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
     state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
     q ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${q.done ? "QT 완료" : "QT 메모"}</p>` : "",
     qtHasText(q) ? `<p class="note qt">${esc(qtTextOf(q))}</p>` : "",
-    cp.length ? `<p class="tl-row"><span class="tag sm">📋</span>복사한 구절: ${cp.map(esc).join(", ")}</p>` : "",
+    cp ? `<p class="tl-row"><span class="tag sm">📋</span>복사한 구절</p><div class="cv-chips">${cp}</div>` : "",
   ].join("");
   return `<h3>${prettyDate(d)}</h3>${rows || `<p class="muted small">이 날은 기록이 없어요.</p>`}`;
 }
@@ -340,7 +382,7 @@ function bookDetailHtml(code, copied) {
       if (i >= start && i < end && set.size) { mine[i] = set; set.forEach((n) => all.add(`${i}:${n}`)); }
     });
     return Object.keys(mine).length
-      ? `<li><b>${prettyDate(d)}</b> ${copiedText(mine).map((t) => esc(t.replace(`${b.name} `, ""))).join(", ")}</li>` : "";
+      ? `<li><b>${prettyDate(d)}</b><div class="cv-chips">${copyChipsHtml(mine)}</div></li>` : "";
   }).join("");
   const ratio = total ? (all.size / total) * 100 : 0;
   return `<div class="book-detail">
@@ -429,9 +471,9 @@ function glanceBodyHtml(g = glanceStats()) {
         ${side("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
       </ul>
     </div>
-    ${pr ? `<h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 읽은 기간과 복사한 구절이 나와요</span></h3>
-    <div class="books">${booksGridHtml(pr, copiedByDate())}</div>
-    <div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedByDate()) : ""}</div>` : ""}
+    ${pr ? `<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedByDate()) : ""}</div>
+    <h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 위에 읽은 기간과 복사한 구절이 나와요</span></h3>
+    <div class="books">${booksGridHtml(pr, copiedByDate())}</div>` : ""}
     <p class="muted small">원 전체가 성경 전체예요. 구약과 신약을 색으로 나눠 보여 줘요.</p>`;
 }
 
