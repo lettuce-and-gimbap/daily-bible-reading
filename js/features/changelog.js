@@ -33,12 +33,36 @@ function changelogEntryHtml(en) {
   </article>`;
 }
 
-// since가 있으면 그 뒤에 새로 바뀐 것을 위에 크게, 나머지는 접어서 보여 줌
+// 버전을 메이저(Ver.9) → 마이너(9.7) → 소단위(9.7.1) 순으로 묶음. 메이저 묶음은 기본으로 접혀 있음
+function changelogGroupsHtml(entries) {
+  const majors = [];
+  entries.forEach((e) => {
+    const parts = e.ver.split(".");
+    const major = parts[0];
+    let mj = majors.find((x) => x.major === major);
+    if (!mj) { mj = { major, minors: [] }; majors.push(mj); }
+    const minor = parts.slice(0, 2).join(".");
+    let mn = mj.minors.find((x) => x.minor === minor);
+    if (!mn) { mn = { minor, main: null, subs: [] }; mj.minors.push(mn); }
+    if (e.ver === minor || (!mn.main && parts.length <= 2)) mn.main = e; else mn.subs.push(e);
+  });
+  return majors.map((mj) => {
+    const count = mj.minors.reduce((n, mn) => n + (mn.main ? 1 : 0) + mn.subs.length, 0);
+    const inner = mj.minors.map((mn) => {
+      const head = mn.main ? changelogEntryHtml(mn.main) : "";
+      const subs = mn.subs.length ? `<div class="cl-subs">${mn.subs.map(changelogEntryHtml).join("")}</div>` : "";
+      return head + subs;
+    }).join("");
+    return `<details class="cl-major"><summary>Ver.${esc(mj.major)} <small>업데이트 ${count}개</small></summary>${inner}</details>`;
+  }).join("");
+}
+
+// since가 있으면 그 뒤에 새로 바뀐 것을 위에 크게, 나머지는 메이저 묶음으로 접어서 보여 줌
 async function openChangelog(since) {
   const log = await loadChangelog();
   document.querySelector(".cl-pop")?.remove();
   const cur = appVersion();
-  const fresh = since ? log.filter((e) => verCompare(e.ver, since) > 0 && verCompare(e.ver, cur) <= 0) : log.slice(0, 1);
+  const fresh = since ? log.filter((e) => verCompare(e.ver, since) > 0 && verCompare(e.ver, cur) <= 0) : [];
   const rest = log.filter((e) => !fresh.includes(e));
   const pop = document.createElement("div");
   pop.className = "cl-pop";
@@ -48,7 +72,7 @@ async function openChangelog(since) {
     <div class="cl-head"><h3>🆕 ${fresh.length ? "새로 바뀐 점" : "업데이트 기록"} <small>현재 v${esc(cur)}</small></h3><button class="icon-btn" data-cl="close" aria-label="닫기">✕</button></div>
     <div class="cl-body">
       ${fresh.length ? fresh.map(changelogEntryHtml).join("") : ""}
-      ${rest.length ? `<details ${fresh.length ? "" : "open"}><summary>지난 업데이트 ${rest.length}개</summary>${rest.map(changelogEntryHtml).join("")}</details>` : ""}
+      ${rest.length ? changelogGroupsHtml(rest) : ""}
       ${log.length ? "" : `<p class="muted small">기록을 불러오지 못했어요.</p>`}
     </div></div>`;
   pop.addEventListener("click", (e) => { if (e.target === pop || e.target.closest("[data-cl=close]")) pop.remove(); });

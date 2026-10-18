@@ -326,3 +326,15 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 
 /* 종료 버튼 비활성화 상태 (EXIT_QUIT_ENABLED=false) */
 .exit-quit:disabled { opacity: .4; cursor: default; }
+
+/* 업데이트 기록: 메이저 묶음(접힘) > 마이너 > 소단위 */
+.cl-major { border-radius: 12px; background: var(--surface-2); padding: 8px 12px; }
+.cl-major > summary { cursor: pointer; font-weight: 700; font-size: 14.5px; list-style: none; }
+.cl-major > summary::-webkit-details-marker { display: none; }
+.cl-major > summary::before { content: "▸ "; color: var(--muted); }
+.cl-major[open] > summary::before { content: "▾ "; }
+.cl-major > summary small { font-weight: 500; color: var(--muted); font-size: 12.5px; margin-left: 6px; }
+.cl-major[open] > summary { margin-bottom: 8px; }
+.cl-major > .cl-entry { background: var(--surface); margin-bottom: 8px; }
+.cl-subs { margin: -2px 0 8px 14px; display: grid; gap: 6px; border-left: 2px solid var(--line); padding-left: 10px; }
+.cl-subs .cl-entry { background: var(--surface); }
