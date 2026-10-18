@@ -105,6 +105,23 @@ function qtDoneDates() {
   return new Set(Object.keys(state.qt).filter((d) => state.qt[d].done));
 }
 
+// QT는 월~토(주 6일) 기준: 일요일은 세지 않고, 연속 계산도 일요일을 건너뜀
+function isSundayStr(str) {
+  const [y, m, d] = str.split("-").map(Number);
+  return new Date(y, m - 1, d).getDay() === 0;
+}
+function qtCountDates() {
+  return new Set([...qtDoneDates()].filter((d) => !isSundayStr(d)));
+}
+function qtStreak(dateSet) {
+  const prev = (x) => { let y = addDays(x, -1); while (isSundayStr(y)) y = addDays(y, -1); return y; };
+  let d = todayStr();
+  if (isSundayStr(d) || !dateSet.has(d)) d = prev(d);
+  let n = 0;
+  while (dateSet.has(d)) { n++; d = prev(d); }
+  return n;
+}
+
 function streak(dateSet) {
   let d = todayStr();
   if (!dateSet.has(d)) d = addDays(d, -1);

@@ -15,7 +15,7 @@ function ring(pct) {
 function renderStats() {
   const today = todayStr();
   const byDate = readDates();
-  const qtDates = qtDoneDates();
+  const qtDates = qtCountDates();
   const pr = state.plan ? progress() : null;
   const perDay = state.plan ? state.plan.perDay : 5;
   const thisMonth = today.slice(0, 7);
@@ -50,7 +50,7 @@ function renderStats() {
     <article class="card hero qt">
       <header><span class="tag">🙏 QT</span><a class="link" href="#qt">QT 하기 ›</a></header>
       <div class="hero-main">
-        <div class="qt-today ${todayQt ? "done" : ""}">${todayQt
+        <div class="qt-today ${todayQt && !isSundayStr(today) ? "done" : ""}">${todayQt && !isSundayStr(today)
           ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
           : `<span>🙏</span>`}</div>
         <div>
@@ -59,7 +59,7 @@ function renderStats() {
         </div>
       </div>
       <ul class="mini">
-        <li><b>${streak(qtDates)}일</b><span>연속</span></li>
+        <li><b>${qtStreak(qtDates)}일</b><span>연속</span></li>
         <li><b>${qtMonth}일</b><span>이번 달</span></li>
         <li><b>${qtDates.size}일</b><span>누적</span></li>
       </ul>

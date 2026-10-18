@@ -10,6 +10,7 @@ function isQtSunday(date) {
 }
 
 function renderQt() {
+  if (qtDate > todayStr()) qtDate = todayStr(); // 오늘보다 뒤 날짜는 열지 않음
   sheetTab = null;
   document.body.classList.add("full");
   const isToday = qtDate === todayStr();

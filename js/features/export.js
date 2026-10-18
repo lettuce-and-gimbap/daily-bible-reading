@@ -102,8 +102,8 @@ function collectRecords(period) {
       plan: state.plan ? `${chapLabel(state.plan.startIdx)} → ${chapLabel(state.plan.endIdx)} · 하루 ${state.plan.perDay}장 · ${state.plan.startDate} 시작` : "계획 없음",
       progress: pr ? `${pr.pct}% (${pr.readCount}/${pr.total}장), Day ${pr.doneDays}/${pr.days.length} 완료` : "-",
       readStreak: streak(readGoalDates()),
-      qtTotal: qtDoneDates().size,
-      qtStreak: streak(qtDoneDates()),
+      qtTotal: qtCountDates().size,
+      qtStreak: qtStreak(qtCountDates()),
       inPeriod: {
         readDays: days.filter((d) => d.chapters.length).length,
         chapters: days.reduce((n, d) => n + d.chapters.length, 0),

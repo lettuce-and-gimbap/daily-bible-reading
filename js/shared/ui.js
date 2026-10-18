@@ -184,8 +184,8 @@ function updateStreakChip() {
   const r = (location.hash || "#today").slice(1);
   let n = null, today = false, tip = "";
   if (r === "qt") {
-    const days = qtDoneDates();
-    n = streak(days); today = days.has(todayStr());
+    const days = qtCountDates();
+    n = qtStreak(days); today = days.has(todayStr());
     tip = `QT 연속 ${n}일`;
   } else if (r !== "stats" && r !== "table" && state.plan) {
     const days = readGoalDates();
