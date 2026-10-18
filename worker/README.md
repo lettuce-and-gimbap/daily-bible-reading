@@ -67,7 +67,7 @@ Cloudflare 무료 플랜으로 충분합니다.
 - 켠 뒤 **테스트 알림 받기**로 바로 확인할 수 있습니다.
 
 ## 운영 메모
-- 알림 시간은 `wrangler.toml`의 `crons`(UTC 기준)에서 바꿉니다. 랜덤 구간을 바꾸면 `src/index.js`의 `RANDOM_WINDOWS`도 같이 맞춰 주세요.
+- 알림은 5분마다 확인하며, 구독마다 하루 7번(`src/index.js`의 `PUSHES_PER_DAY`)을 24시간 중 무작위로 고릅니다. 횟수를 바꾸면 `PUSHES_PER_DAY`만 고치면 돼요.
 - 알림 문구는 저장소 루트 `sw.js`의 `MESSAGES`에서 바꿉니다. 서버를 다시 배포할 필요는 없습니다.
 - 크론 실행 기록은 Cloudflare 대시보드 → Workers → daily-bible-reminder → Logs에서 볼 수 있습니다.
 - 만료된 구독(앱 삭제, 알림 해제 등)은 보내는 중에 자동으로 지워집니다.

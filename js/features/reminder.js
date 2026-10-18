@@ -1,9 +1,8 @@
-// 통독 리마인드 알림 (9~12시·15~18시 중 랜덤 한 번씩, 18시 · 21시 · 23시 — 오늘 통독을 마치지 않았을 때만)
+// 통독 리마인드 알림 (하루 7번, 24시간 중 무작위 시각 — 오늘 통독을 마치지 않았을 때만)
 // 휴대폰은 앱이 꺼져 있으면 스스로 시간 맞춰 깨어날 수 없어서, 알림 서버(worker/)가 정해진 시간에 푸시를 보낸다.
 // 앱은 서버에 "오늘 통독 완료 여부"만 알려 주고, 서비스 워커(sw.js)가 받아서 문구를 골라 보여 준다.
 
 const PUSH_KEY = "daily5-push-v1";
-const REMINDER_TIMES = ["9~12시 랜덤", "15~18시 랜덤", "18:00", "21:00", "23:00"];
 let reminderTimer;
 
 function pushInfo() {
@@ -114,21 +113,20 @@ async function disableReminders() {
 function reminderCardHtml() {
   const status = pushStatus();
   const snap = reminderSnapshot();
-  const times = REMINDER_TIMES.map((t) => `<span class="time-chip">${t}</span>`).join("");
   let body;
   if (status === "on") {
     body = `
       <p class="remind-state on">✓ 알림이 켜져 있어요</p>
       <p class="muted small">${snap.paused ? "통독 계획이 없거나 끝나서 지금은 알림이 가지 않아요."
         : snap.done ? "오늘 통독을 마쳐서 오늘은 더 이상 알림이 가지 않아요. 👏"
-        : "오늘 통독을 아직 마치지 않았어요. 위 시간에 알림이 가요."}</p>
+        : "오늘 통독을 아직 마치지 않았어요. 하루 7번, 정해지지 않은 시각에 알림이 가요."}</p>
       <div class="inline wrap">
         <button class="btn ghost small" id="rm-test">테스트 알림 받기</button>
         <button class="btn text small" id="rm-off">알림 끄기</button>
       </div>`;
   } else if (status === "off") {
     body = `
-      <p class="muted small">오늘 통독을 마치지 않았을 때만 위 시간에 재치 있는 알림으로 챙겨 드려요. 다 읽으면 알림이 가지 않아요.</p>
+      <p class="muted small">하루 7번, 24시간 중 아무 때나 재치 있는 알림으로 챙겨 드려요. 오늘 통독을 마치지 않았을 때만 가요. 다 읽으면 알림이 가지 않아요.</p>
       <button class="btn primary" id="rm-on">🔔 알림 켜기</button>`;
   } else if (status === "need-install") {
     body = `

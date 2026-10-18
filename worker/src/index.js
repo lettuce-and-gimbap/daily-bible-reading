@@ -77,7 +77,7 @@ export default {
 
   async scheduled(event, env, ctx) {
     const at = new Date(event.scheduledTime);
-    ctx.waitUntil(event.cron.startsWith("*/5") ? remindRandom(env, at) : remindAll(env, at));
+    ctx.waitUntil(remindRandom(env, at));
   },
 };
 
@@ -168,27 +168,34 @@ function qtParts(html) {
   return { title: title ? text(title) : null, sections };
 }
 
-// 랜덤 알림 구간(한국시간 시작 시, 끝 시). 구간의 5분 칸 중 하나를 구독·날짜마다 골라 한 번 보냄
-const RANDOM_WINDOWS = [[9, 12], [15, 18]];
+// 하루 알림 횟수와 칸: 한국시간 하루를 5분 칸 288개로 나누고, 구독·날짜마다 서로 다른 7칸을 정함 (같은 날엔 같은 칸)
+const PUSHES_PER_DAY = 7;
+const SLOTS_PER_DAY = 288;
 
-// 5분 크론: 지금이 랜덤 구간의 몇 번째 칸인지 보고, 그 칸이 뽑힌 구독에만 보냄
-export async function remindRandom(env, now = new Date()) {
-  const kst = new Date(now.getTime() + 9 * 3600 * 1000);
-  const minutes = kst.getUTCHours() * 60 + kst.getUTCMinutes();
-  const w = RANDOM_WINDOWS.findIndex(([s, e]) => minutes >= s * 60 && minutes < e * 60);
-  if (w < 0) return null;
-  const [s, e] = RANDOM_WINDOWS[w];
-  const slot = Math.floor((minutes - s * 60) / 5);
-  const today = kstDate(now);
-  return remindAll(env, now, (id) => randomSlot(id, today, w) === slot, `random${w}#${slot}`);
+export function daySlots(id, date) {
+  const used = new Set();
+  const out = [];
+  for (let k = 0; out.length < PUSHES_PER_DAY; k++) {
+    let s = fnv1a(`${id}|${date}|${k}`) % SLOTS_PER_DAY;
+    while (used.has(s)) s = (s + 1) % SLOTS_PER_DAY;
+    used.add(s);
+    out.push(s);
+  }
+  return out;
 }
 
-// 구독·날짜·구간마다 정해지는 랜덤 칸 (같은 날엔 몇 번 물어도 같은 칸)
-export function randomSlot(id, date, w) {
-  const [s, e] = RANDOM_WINDOWS[w];
-  let h = 0x811c9dc5; // FNV-1a
-  for (const ch of `${id}|${date}|${w}`) h = Math.imul(h ^ ch.charCodeAt(0), 0x01000193);
-  return (h >>> 0) % ((e - s) * 12);
+function fnv1a(text) {
+  let h = 0x811c9dc5;
+  for (const ch of text) h = Math.imul(h ^ ch.charCodeAt(0), 0x01000193);
+  return h >>> 0;
+}
+
+// 5분마다 호출: 지금 칸이 그 구독의 오늘 칸에 들어 있으면 보냄
+export async function remindRandom(env, now = new Date()) {
+  const kst = new Date(now.getTime() + 9 * 3600 * 1000);
+  const slot = Math.floor((kst.getUTCHours() * 60 + kst.getUTCMinutes()) / 5);
+  const today = kstDate(now);
+  return remindAll(env, now, (id) => daySlots(id, today).includes(slot), `slot#${slot}`);
 }
 
 export async function remindAll(env, now = new Date(), pick = () => true, label = "fixed") {
