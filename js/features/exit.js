@@ -141,7 +141,8 @@ window.addEventListener("click", (e) => {
 
 // 처음 열면 통독 본문이 보이도록 (주소가 QT·관리여도 본문으로). 연결 코드(#link=)는 그대로 둠
 try {
-  if (!location.hash.startsWith("#link=") && location.hash !== HOME) history.replaceState(history.state, "", HOME);
+  const KNOWN = ["#today", "#qt", "#stats"]; // 관리·QT 주소로 열었으면 그대로 둠 (새로고침해도 같은 화면)
+  if (!location.hash.startsWith("#link=") && !KNOWN.includes(location.hash)) history.replaceState(history.state, "", HOME);
   topUp();
 } catch (err) { /* 무시 */ }
 

@@ -148,7 +148,6 @@ function reminderCardHtml() {
     <section class="card remind">
       <div class="remind-head">
         <h2>🔔 통독 리마인드</h2>
-        <div class="times">${times}</div>
       </div>
       ${body}
     </section>`;
