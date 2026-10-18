@@ -82,6 +82,7 @@ function commentaryHtml(day) {
 
 // ── 인물 관계도 (SVG) ──
 const REL_COLOR = { family: "var(--accent)", ally: "#3b82c4", conflict: "var(--warn)", other: "var(--muted)", rename: "#c48a1e" };
+let summaryBook = ""; // 지금 보는 요약의 권 코드
 const REL_NAME = { family: "가족", ally: "동역·도움", conflict: "대립", other: "기타", rename: "이름이 바뀜" };
 
 // 이름 상자 크기 (13px 굵은 글씨 기준)
@@ -245,7 +246,7 @@ function rgSvgInner(names, pos, edges, live) {
 const rgModels = {};
 let rgSeq = 0;
 
-function relationGraphHtml(people, relations) {
+function relationGraphCore(people, relations) {
   const used = new Set();
   relations.forEach((r) => { used.add(r.from); used.add(r.to); });
   const names = people.map((p) => p.name).filter((n) => used.has(n));
@@ -315,6 +316,29 @@ function relationGraphHtml(people, relations) {
     </div>
     <p class="rg-legend">${kinds.map((k) => `<span><i style="background:${REL_COLOR[k]}"></i>${REL_NAME[k]}</span>`).join("")}<em>화살표는 "A는 B의 ○○"에서 B를 가리켜요</em></p>`;
 }
+
+// 관계도: 관리자 테스트(열왕기상)에서는 사건 관계와 가족 관계를 두 층으로 나눠 보여 줌
+function relationGraphHtml(people, relations, opts = {}) {
+  if (!opts.kin) return relationGraphCore(people, relations);
+  const ev = relationGraphCore(people, relations.filter((r) => r.kind !== "family"));
+  const fa = relationGraphCore(people, relations.filter((r) => r.kind === "family"));
+  return `<div class="kin-wrap">
+    <div class="seg wide kin-seg" role="group" aria-label="관계 층">
+      <button type="button" class="on" data-kinbtn="event">사건</button>
+      <button type="button" data-kinbtn="family">가족</button>
+    </div>
+    <div class="kin-pane" data-kinpane="event">${ev}</div>
+    <div class="kin-pane" data-kinpane="family" hidden>${fa}</div>
+  </div>`;
+}
+function kinOpts() { return { kin: typeof isAdmin === "function" && isAdmin() && summaryBook === "1ki" }; }
+document.addEventListener("click", (e) => {
+  const b = e.target.closest && e.target.closest("[data-kinbtn]");
+  if (!b) return;
+  const wrap = b.closest(".kin-wrap");
+  wrap.querySelectorAll("[data-kinbtn]").forEach((x) => x.classList.toggle("on", x === b));
+  wrap.querySelectorAll("[data-kinpane]").forEach((x) => { x.hidden = x.dataset.kinpane !== b.dataset.kinbtn; });
+});
 
 // ── 관계도 자세히 보기 (꾹 눌러서 여는 창) ──
 // 이름 상자를 끌어 옮기고, 선이나 관계 이름을 누르면 두 사람 쪽으로 확대하며 그 관계가 생긴 구절 풀이를 보여 줌.
@@ -762,7 +786,7 @@ function staticSummaryHtml(s) {
         </button>
       </div>
       ${chapChipsHtml(s)}
-      ${(() => { const g = graphSource(s); return relationGraphHtml(g.graphPeople, g.rels); })()}
+      ${(() => { const g = graphSource(s); return relationGraphHtml(g.graphPeople, g.rels, kinOpts()); })()}
     </section>` : ""}
     <section class="tool-card sum-card">
       <h3 class="label">주요 등장 인물</h3>
@@ -794,6 +818,7 @@ document.addEventListener("input", (e) => {
 
 // 요약 탭 그리기 (reader.js의 renderReaderSheet에서 부름)
 function renderSummaryTab(body, day) {
+  summaryBook = day && day.length ? CHAPTERS[day[0]].book.code : "";
   setSheetTitle(READER_TABS);
   const pre = staticDaySummary(day);
   if (pre === "loading") {
@@ -836,7 +861,7 @@ function renderSummaryTab(body, day) {
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">등장 인물 관계도</h3>
-        ${relationGraphHtml(data.people, data.relations || [])}
+        ${relationGraphHtml(data.people, data.relations || [], kinOpts())}
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">오늘의 이야기</h3>
