@@ -687,7 +687,10 @@ function rgOpen(id) {
     if (e.target.closest("[data-nsort]") && sel && sel.node) { nodeAsc = !nodeAsc; return showNode(sel.node, false, true); }
     const familyNode = e.target.closest("[data-family-node]");
     if (familyNode && m.familyDetail) {
-      e.target.closest(".rg-detail").insertAdjacentHTML("beforeend", familyMini(familyNode.dataset.familyNode));
+      const detailBox = e.target.closest(".rg-detail");
+      detailBox.querySelector(".rg-mini-pop")?.remove();
+      const familyBox = detailBox.querySelector(".rg-family");
+      if (familyBox) familyBox.insertAdjacentHTML("afterend", familyMini(familyNode.dataset.familyNode));
       return;
     }
     if (e.target.closest("[data-family-close]")) return e.target.closest(".rg-mini-pop").remove();
