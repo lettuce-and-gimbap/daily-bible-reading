@@ -351,7 +351,9 @@ function kinOpts() {
   const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam", "ezk", "dan", "hos", "jol", "amo", "oba", "jnh", "mic", "nam", "hab", "zep", "hag", "zec", "mal"]);
   const admin = typeof isAdmin === "function" && isAdmin();
   const kin = admin && kinBooks.has(summaryBook);
-  return { kin, all: !!state.settings.graphAll, familyDetail: kin && new Set(["1sa", "2sa", "1ki", "2ki", "1ch", "2ch"]).has(summaryBook) };
+  // 혈연 설명과 가까운 관계 팝업은 모든 권에서 공통으로 보여 준다.
+  // 관계 데이터에 family 관계가 있을 때만 실제 내용이 생기므로, 신약에도 같은 UI를 적용할 수 있다.
+  return { kin, all: !!state.settings.graphAll, familyDetail: true };
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest && e.target.closest("[data-kinbtn]");
