@@ -351,7 +351,7 @@ function kinOpts() {
   const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam", "ezk", "dan", "hos", "jol", "amo", "oba", "jnh", "mic", "nam", "hab", "zep", "hag", "zec", "mal"]);
   const admin = typeof isAdmin === "function" && isAdmin();
   const kin = admin && kinBooks.has(summaryBook);
-  return { kin, all: !!state.settings.graphAll, familyDetail: kin && new Set(["1sa", "2sa", "1ki", "2ki"]).has(summaryBook) };
+  return { kin, all: !!state.settings.graphAll, familyDetail: kin && new Set(["1sa", "2sa", "1ki", "2ki", "1ch", "2ch"]).has(summaryBook) };
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest && e.target.closest("[data-kinbtn]");
@@ -520,7 +520,15 @@ function rgOpen(id) {
     if (!m.familyDetail) return "";
     const direct = m.rels.map((r, i) => ({ r, i })).filter(({ r }) => r.kind === "family" && (r.from === name || r.to === name));
     if (!direct.length) return "";
-    return `<section class="rg-family"><b>혈연 관계</b><div class="rg-family-links">${direct.map(({ r, i }) => {
+    const parentOf = (r) => r.from === name && /^(?:맏|첫|첫째|둘째|셋째|넷째|막내|아들|딸|자녀)/.test(r.label || "");
+    const parents = direct.filter(({ r }) => parentOf(r)).map(({ r }) => {
+      const other = r.to;
+      const mother = /어머니|모친|엄마/.test(r.note || "") || /학깃|밧세바|아비가일|아히노암|마아가/.test(other);
+      return `${other}(${mother ? "모" : "부"})`;
+    });
+    const childWord = direct.find(({ r }) => parentOf(r))?.r.label || "자녀";
+    const summary = parents.length > 1 ? `<p class="rg-family-summary">${parents.join("과 ")}의 ${esc(childWord)}이에요.</p>` : "";
+    return `<section class="rg-family"><b>혈연 관계</b>${summary}<div class="rg-family-links">${direct.map(({ r, i }) => {
       const other = r.from === name ? r.to : r.from;
       return `<button type="button" data-family-node="${esc(other)}" data-family-edge="${i}">${esc(other)} <span>${esc(r.label || "가족")}</span></button>`;
     }).join("")}</div><small>이름을 누르면 가까운 혈연 관계를 간단히 볼 수 있어요.</small></section>`;
@@ -538,7 +546,11 @@ function rgOpen(id) {
       });
     }
     const edges = family.filter((r) => links.has(r.from) && links.has(r.to) && Math.max(links.get(r.from), links.get(r.to)) <= 2);
-    return `<div class="rg-mini-pop" role="dialog" aria-label="${esc(name)}의 가까운 혈연 관계"><button type="button" class="rg-mini-close" data-family-close aria-label="닫기">✕</button><b>${esc(name)}의 가까운 혈연 관계</b><div class="rg-mini-graph"><span class="rg-mini-node focus">${esc(name)}</span>${edges.slice(0, 8).map((r) => `<span class="rg-mini-edge"><i>${esc(r.from)}</i><em>${esc(r.label || "가족")}</em><i>${esc(r.to)}</i></span>`).join("")}</div></div>`;
+    const people = [...links.keys()].filter((n) => n !== name).slice(0, 5);
+    const bioRel = family.find((r) => r.from === name || r.to === name);
+    const bioText = [m.roles[name], bioRel && bioRel.note].filter(Boolean).join(" ").replace(/\s+/g, " ");
+    const bio = bioText ? `<p>${esc(bioText.length > 150 ? `${bioText.slice(0, 147)}…` : bioText)}</p>` : "";
+    return `<div class="rg-mini-pop" role="dialog" aria-label="${esc(name)}의 가까운 혈연 관계"><button type="button" class="rg-mini-close" data-family-close aria-label="닫기">✕</button><b>${esc(name)}의 가까운 혈연 관계</b>${bio}<div class="rg-mini-graph"><span class="rg-mini-node focus">${esc(name)}</span>${edges.slice(0, 8).map((r) => `<span class="rg-mini-edge"><i>${esc(r.from)}</i><em>${esc(r.label || "가족")}</em><i>${esc(r.to)}</i></span>`).join("")}</div>${people.length ? `<small>연결 인물: ${people.map((n) => esc(n)).join(", ")}</small>` : ""}</div>`;
   };
   const showEdge = (i) => {
     sel = { edge: i };
