@@ -108,89 +108,9 @@ function relationGroups(names, rels) {
   return groups.sort((a, b) => b.length - a.length);
 }
 
-// 명확한 친족 호칭만 부모-자녀 세대로 배치. 아들/딸 표기는 자녀→부모,
-// 아버지/어머니 표기는 부모→자녀로 기록된 기존 관계 데이터를 따른다.
-const FAMILY_PARENT_LABELS = new Set(["아버지", "어머니", "부모"]);
-const FAMILY_CHILD_LABEL = /^(?:(?:맏|첫|첫째|둘째|셋째|넷째|막내|외동|외|작은|큰)\s*)?(?:아들|딸|자녀|자식)(?:들)?$/;
-function familyGenerationLayout(names, rels, targetW) {
-  const nameSet = new Set(names), lineage = [], seen = new Set();
-  rels.forEach((r) => {
-    if (r.kind !== "family" || !nameSet.has(r.from) || !nameSet.has(r.to) || r.from === r.to) return;
-    let parent, child;
-    if (FAMILY_PARENT_LABELS.has(r.label)) { parent = r.from; child = r.to; }
-    else if (FAMILY_CHILD_LABEL.test(r.label || "")) { parent = r.to; child = r.from; }
-    if (!parent || !child) return;
-    const key = `${parent}\u0000${child}`;
-    if (seen.has(key)) return;
-    seen.add(key);
-    lineage.push({ parent, child });
-  });
-  if (!lineage.length) return null;
-
-  const levels = new Map(names.map((name) => [name, 0]));
-  const indegree = new Map(names.map((name) => [name, 0]));
-  const children = new Map(names.map((name) => [name, []]));
-  lineage.forEach(({ parent, child }) => {
-    children.get(parent).push(child);
-    indegree.set(child, indegree.get(child) + 1);
-  });
-  const queue = names.filter((name) => indegree.get(name) === 0);
-  let visited = 0;
-  while (queue.length) {
-    const parent = queue.shift();
-    visited++;
-    children.get(parent).forEach((child) => {
-      levels.set(child, Math.max(levels.get(child), levels.get(parent) + 1));
-      indegree.set(child, indegree.get(child) - 1);
-      if (indegree.get(child) === 0) queue.push(child);
-    });
-  }
-  // 순환하는 관계는 세대의 위아래가 모호하므로 기존 자동 배치로 맡긴다.
-  if (visited !== names.length) return null;
-
-  const width = Math.max(targetW, ...names.map((name) => rgBox(name).hw * 2 + 24));
-  const rows = new Map();
-  names.forEach((name) => {
-    const level = levels.get(name);
-    if (!rows.has(level)) rows.set(level, []);
-    rows.get(level).push(name);
-  });
-  const pos = {};
-  let y = 18;
-  [...rows.keys()].sort((a, b) => a - b).forEach((level) => {
-    const chunks = [];
-    let chunk = [], used = 0;
-    // 한 세대가 넓은 화면을 한 줄로 모두 차지하지 않도록, 인물 수에 맞는
-    // 적당한 열 수로 나눈다. 부모·자녀 세대는 수직 흐름이 먼저 보이게 한다.
-    const rowMax = Math.min(width - 24, Math.max(220, 180 + Math.sqrt(rows.get(level).length) * 110));
-    rows.get(level).forEach((name) => {
-      const nodeW = rgBox(name).hw * 2;
-      const next = used + (chunk.length ? 20 : 0) + nodeW;
-      if (chunk.length && next > rowMax) { chunks.push(chunk); chunk = []; used = 0; }
-      used += (chunk.length ? 20 : 0) + nodeW;
-      chunk.push(name);
-    });
-    if (chunk.length) chunks.push(chunk);
-    chunks.forEach((row) => {
-      const rowW = row.reduce((sum, name) => sum + rgBox(name).hw * 2, 0) + 20 * (row.length - 1);
-      let x = (width - rowW) / 2;
-      row.forEach((name) => {
-        const box = rgBox(name);
-        pos[name] = { x: x + box.hw, y, ...box };
-        x += box.hw * 2 + 20;
-      });
-      y += 46;
-    });
-    y += 22; // 세대 사이 여백
-  });
-  return pos;
-}
-
 // 한 묶음 배치: 이어진 사람끼리 당기고(용수철) 모두 서로 밀어내는(반발) 방식을 몇백 번 되풀이. 무작위 없이 늘 같은 결과
 function layoutGroup(names, rels) {
   const n = names.length;
-  const familyLayout = familyGenerationLayout(names, rels, 336);
-  if (familyLayout) return familyLayout;
   const pos = {};
   if (n === 1) { pos[names[0]] = { x: 0, y: 0 }; return pos; }
   const r0 = 50 + 22 * n;
@@ -450,8 +370,6 @@ function rgSpread(names, rels, pos, ratio) {
   const n = names.length;
   if (n < 6) return;
   const WW = Math.sqrt(n * 150 * 80 * 2.6 * ratio), HH = WW / ratio;
-  const familyLayout = familyGenerationLayout(names, rels, WW);
-  if (familyLayout) { Object.assign(pos, familyLayout); return; }
   const k = 0.9 * Math.sqrt(1 / n);
   const P = {};
   names.forEach((nm, i) => { const a = (i / n) * Math.PI * 2; P[nm] = { x: 0.5 + Math.cos(a) * 0.38, y: 0.5 + Math.sin(a) * 0.38 }; });
@@ -492,8 +410,6 @@ function rgBounds(names, pos) {
   return { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
 }
 function rgPreviewLayout(names, rels, pos, targetW) {
-  const familyLayout = familyGenerationLayout(names, rels, targetW);
-  if (familyLayout) { Object.assign(pos, familyLayout); return; }
   rgSpread(names, rels, pos, 1.3);
   const b = rgBounds(names, pos), k = targetW / Math.max(1, b.x1 - b.x0);
   names.forEach((nm) => { pos[nm].x *= k; pos[nm].y *= k; });
