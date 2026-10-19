@@ -33,13 +33,66 @@ function defaultState() {
   };
 }
 
+function isRecord(value) {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
+function isValidDateString(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = parseDate(value);
+  return todayStr(date) === value;
+}
+
+function normalizePlan(plan) {
+  if (!isRecord(plan)) return null;
+  // 예전 형식(range: "rev" | "full")으로 저장된 계획을 끝 장(endIdx) 형식으로 바꿈
+  if (plan.endIdx === undefined) {
+    const last = TOTAL_CHAPTERS - 1;
+    const endIdx = plan.range === "full" && plan.startIdx > 0 ? plan.startIdx - 1 : last;
+    const { range, ...rest } = plan;
+    plan = { ...rest, endIdx, pace: "perDay" };
+  }
+  const validIndex = (n) => Number.isInteger(n) && n >= 0 && n < TOTAL_CHAPTERS;
+  if (!validIndex(plan.startIdx) || !validIndex(plan.endIdx)
+    || !Number.isInteger(plan.perDay) || plan.perDay < 1 || plan.perDay > TOTAL_CHAPTERS
+    || !isValidDateString(plan.startDate)
+    || !["perDay", "date"].includes(plan.pace)) return null;
+  if (plan.pace === "date" && (!isValidDateString(plan.targetDate) || plan.targetDate < plan.startDate)) return null;
+  return plan;
+}
+
+function normalizeReadMap(value) {
+  if (!isRecord(value)) return {};
+  return Object.fromEntries(Object.entries(value).filter(([idx, date]) =>
+    /^\d+$/.test(idx) && Number(idx) < TOTAL_CHAPTERS && isValidDateString(date)));
+}
+
+function normalizeStringMap(value) {
+  if (!isRecord(value)) return {};
+  return Object.fromEntries(Object.entries(value).filter(([, item]) => typeof item === "string"));
+}
+
+function normalizeRecordMap(value) {
+  if (!isRecord(value)) return {};
+  return Object.fromEntries(Object.entries(value).filter(([, item]) => isRecord(item)));
+}
+
 function loadState() {
   try {
     const raw = localStorage.getItem(STORE_KEY);
     if (!raw) return defaultState();
     const s = JSON.parse(raw);
+    if (!isRecord(s)) return defaultState();
     const base = defaultState();
-    return { ...base, ...s, plan: normalizePlan(s.plan), settings: normalizeSettings({ ...base.settings, ...(s.settings || {}) }) };
+    return {
+      ...base,
+      ...s,
+      plan: normalizePlan(s.plan),
+      read: normalizeReadMap(s.read),
+      dayNotes: normalizeStringMap(s.dayNotes),
+      qt: normalizeRecordMap(s.qt),
+      settings: normalizeSettings({ ...base.settings, ...(isRecord(s.settings) ? s.settings : {}) }),
+    };
   } catch (e) {
     return defaultState();
   }
@@ -62,15 +115,6 @@ function normalizeSettings(settings) {
     : ["niv", "saenew", "gae"].find((code) => code !== ver);
   const theme = ["light", "dark"].includes(settings.theme) ? settings.theme : "auto"; // 화면 모드: 기기 설정 따르기 / 밝게 / 어둡게
   return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2, theme };
-}
-
-// 예전 형식(range: "rev" | "full")으로 저장된 계획을 끝 장(endIdx) 형식으로 바꿈
-function normalizePlan(plan) {
-  if (!plan || plan.endIdx !== undefined) return plan;
-  const last = TOTAL_CHAPTERS - 1;
-  const endIdx = plan.range === "full" && plan.startIdx > 0 ? plan.startIdx - 1 : last;
-  const { range, ...rest } = plan;
-  return { ...rest, endIdx, pace: "perDay" };
 }
 
 // 계획에 포함되는 장 일련번호 순서. 끝 장이 시작 장보다 앞이면 요한계시록 다음 창세기로 이어 읽음

@@ -99,7 +99,7 @@ for (const f of files) {
       if (r.note == null) noNote++;
       else {
         if (!r.note || len(r.note) > LIMIT.note) err(w, `note ${len(r.note)}자 (1~${LIMIT.note})`);
-        if (!/^\d{1,3}(-\d{1,3})?(, \d{1,3}(-\d{1,3})?)*$/.test(r.verses || "")) err(w, `note의 verses "${r.verses}" ("2", "1-3", "1, 16")`);
+        if (r.verses !== "표제" && !/^\d{1,3}(-\d{1,3})?(, \d{1,3}(-\d{1,3})?)*$/.test(r.verses || "")) err(w, `note의 verses "${r.verses}" ("2", "1-3", "1, 16" 또는 "표제")`);
       }
     });
     (c.renames || []).forEach((r) => {

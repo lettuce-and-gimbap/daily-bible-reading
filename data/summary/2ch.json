@@ -427,7 +427,7 @@
         {"from":"아사","to":"유다 백성","label":"언약 세운 왕","kind":"ally","directed":true,"weight":2,"verses":"12-15","note":"아사와 백성은 예루살렘에 모여 마음과 뜻을 다해 조상의 하나님을 찾기로 언약했어요. 그들은 큰 소리로 맹세하고 나팔을 불며 기뻐했고, 하나님은 평안을 주셨어요. 온 백성의 결단이에요."},
         {"from":"아사","to":"마아가","label":"왕대비와 손자","kind":"family","directed":false,"weight":2,"verses":"16","note":"마아가는 아사의 아버지 아비야의 어머니이므로 아사에게는 할머니가 돼요. 성경은 왕실의 어른인 마아가를 왕의 어머니 곧 왕대비라는 호칭으로 불러요.","adminOnly":true},
         {"from":"이스라엘에서 온 사람들","to":"아사","label":"따라온 이들","kind":"ally","directed":true,"weight":1,"verses":"9","note":"하나님이 아사와 함께하시는 것을 본 에브라임과 므낫세와 시므온 사람들이 많이 유다로 넘어왔어요. 그들도 함께 예루살렘에서 하나님을 찾는 언약에 참여했어요. 믿음이 사람을 모았어요."},
-        {"from":"아사","to":"마아가","label":"왕대비 자리에서 폐함","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"아사는 마아가가 아세라 우상을 만들자 왕대비 자리에서 물러나게 하고 그 우상을 찍어 불살랐어요.","adminOnly":true}
+        {"from":"아사","to":"마아가","label":"왕대비 폐위","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"아사는 마아가가 아세라 우상을 만들자 왕대비 자리에서 물러나게 하고 그 우상을 찍어 불살랐어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"온 백성이 언약한 곳","weight":3},
@@ -515,7 +515,7 @@
         {"name":"사백 선지자","role":"올라가라 한 아합의 선지자들","weight":2},
         {"name":"아람 왕","role":"왕만 노리라 한 적장","weight":1},
         {"name":"하나님","role":"여호사밧을 도우심","weight":2},
-        {"name":"이름 없는 병사","role":"무심코 쏜 화살로 아합에게 치명상을 입힌 병사","weight":1}
+        {"name":"이름 없는 병사","role":"무심코 쏜 화살로 아합을 맞힌 병사","weight":1}
       ],
       "rels": [
         {"from":"여호사밧","to":"아합","label":"사돈 맺은 왕","kind":"family","directed":false,"weight":3,"verses":"1-3","note":"여호사밧은 결혼으로 아합과 동맹을 맺었고, 그래서 아합의 싸움에 함께 나가게 되었어요."},
@@ -686,7 +686,7 @@
         {"from":"백부장들","to":"여호야다","label":"언약한 이들","kind":"ally","directed":true,"weight":2,"verses":"1","note":"여호야다가 백부장 다섯 사람과 언약을 맺었어요. 백부장들이 함께 나서 왕을 세우는 일이 이루어졌어요."},
         {"from":"레위인들","to":"요아스","label":"지킨 이들","kind":"ally","directed":true,"weight":2,"verses":"7","note":"성전에서 일하던 레위인들이 이날은 무기를 들고 어린 왕 곁을 지키는 호위대가 되었어요."},
         {"from":"백성","to":"요아스","label":"환호한 백성","kind":"ally","directed":true,"weight":2,"verses":"13, 21","note":"나라 사람들이 즐거워하며 나팔을 불고 왕 만세를 외쳤어요. 아달랴의 악한 통치가 여섯 해 만에 끝나자 모두 기뻐했어요."},
-        {"from":"백부장들","to":"아달랴","label":"끌어내 죽인 지휘관들","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"여호야다의 명령을 받은 백부장들이 아달랴를 성전 밖으로 끌어내 왕궁 말 문 어귀에서 죽였어요.","adminOnly":true}
+        {"from":"백부장들","to":"아달랴","label":"처형한 지휘관들","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"여호야다의 명령을 받은 백부장들이 아달랴를 성전 밖으로 끌어내 왕궁 말 문 어귀에서 죽였어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"하나님의 집","what":"요아스가 왕관을 쓴 곳","weight":3},
