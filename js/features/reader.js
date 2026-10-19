@@ -91,7 +91,7 @@ function buildReader() {
       else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
       else if (b.id === "r-check" && freeChapter !== null) { markChapterRead(currentChapter); reload = false; }
       else if (b.id === "r-check") {
-        markChapterRead(currentChapter);
+        markChapterRead(currentChapter, new Date(), day);
         const nextUnread = day.find((i) => !state.read[i]);
         if (nextUnread !== undefined) currentChapter = nextUnread;
         else { reload = false; celebrateDay(viewingDay); }

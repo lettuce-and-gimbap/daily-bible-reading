@@ -45,17 +45,27 @@ function readingHabitCounts(now = new Date()) {
   const sinceDate = todayStr(since);
   return {
     late: habits.lateDays.filter((d) => d >= sinceDate).length,
-    changes: habits.cutoffChanges.filter((x) => new Date(x) >= since).length,
+    uses: habits.cutoffUses.filter((d) => d >= sinceDate).length,
   };
 }
 
-function markChapterRead(idx, now = new Date()) {
-  state.read[idx] = readingDateStr(now);
+function markChapterRead(idx, now = new Date(), day = null) {
+  const readingDate = readingDateStr(now);
+  state.read[idx] = readingDate;
   state.readingHabits = normalizeReadingHabits(state.readingHabits);
   if (now.getHours() < 6) {
     const actualDate = todayStr(now);
     if (!state.readingHabits.lateDays.includes(actualDate)) state.readingHabits.lateDays.push(actualDate);
   }
+  const pending = state.readingHabits.pending;
+  const completedDay = Array.isArray(day) && day.length > 0 && day.every((chapter) => state.read[chapter]);
+  if (pending && pending.date === readingDate && completedDay && now.getHours() < pending.hour) {
+    if (!state.readingHabits.cutoffUses.includes(readingDate)) state.readingHabits.cutoffUses.push(readingDate);
+    state.readingHabits.pending = null; // 다음 카운트에는 마감 시간을 다시 바꿔야 함
+  } else if (pending && pending.date !== readingDate) {
+    state.readingHabits.pending = null; // 변경한 통독 날짜가 지나면 사용하지 않은 변경도 만료
+  }
+  state.readingHabits = normalizeReadingHabits(state.readingHabits);
 }
 
 function changeReadingCutoff(hour, now = new Date()) {
@@ -63,8 +73,7 @@ function changeReadingCutoff(hour, now = new Date()) {
   if (next === Number(state.settings.readingCutoff || 0)) return false;
   state.settings.readingCutoff = next;
   state.readingHabits = normalizeReadingHabits(state.readingHabits);
-  state.readingHabits.cutoffChanges.push(now.toISOString());
-  state.readingHabits = normalizeReadingHabits(state.readingHabits);
+  state.readingHabits.pending = next > 0 ? { date: readingDateStr(now), hour: next } : null;
   return true;
 }
 

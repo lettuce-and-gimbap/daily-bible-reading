@@ -28,7 +28,7 @@ function renderStats() {
   const cutoff = Number(state.settings.readingCutoff || 0);
   const cutoffText = cutoff === 0 ? "자정" : `새벽 ${cutoff}시`;
   const habits = readingHabitCounts();
-  const habitAdvice = habits.late >= 4 || habits.changes >= 4;
+  const habitAdvice = habits.late >= 4 || habits.uses >= 4;
 
   const readCard = pr ? `
     <article class="card hero read">
@@ -110,7 +110,8 @@ function renderStats() {
       <input type="range" id="reading-cutoff" min="0" max="5" step="1" value="${cutoff}" aria-label="통독 하루 마감 시간">
       <div class="cutoff-ticks" aria-hidden="true">${["자정", "1시", "2시", "3시", "4시", "5시"].map((x) => `<span>${x}</span>`).join("")}</div>
       <p class="muted small" id="cutoff-preview">현재 기준으로 통독 날짜는 <b>${prettyDate(readingDateStr())}</b>예요. 과거 기록은 바뀌지 않아요.</p>
-      ${habitAdvice ? `<p class="cutoff-advice">🌙 최근 30일 동안 새벽 통독 ${habits.late}일 · 마감 조정 ${habits.changes}회였어요. 가능하다면 몸과 말씀 묵상을 위해 조금 일찍 읽어 보아도 좋아요.</p>` : ""}
+      <p class="muted small">마감 활용은 시간을 바꾼 그 통독 날짜에, 하루 분량을 자정부터 선택한 새벽 시각 사이에 모두 읽었을 때만 1회로 세요. 다음 회차는 마감 시간을 다시 바꾼 뒤에 셀 수 있어요.</p>
+      ${habitAdvice ? `<p class="cutoff-advice">🌙 최근 30일 동안 새벽 통독 ${habits.late}일 · 새벽 마감 활용 ${habits.uses}일이었어요. 가능하다면 몸과 말씀 묵상을 위해 조금 일찍 읽어 보아도 좋아요.</p>` : ""}
     </section>
     <section class="hero-row">${readCard}${qtCard}</section>
 

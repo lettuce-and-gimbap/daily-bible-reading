@@ -30,7 +30,7 @@ function defaultState() {
     dayNotes: {}, // { "YYYY-MM-DD": "통독 메모" }
     qt: {}, // { "YYYY-MM-DD": { done: bool, note: string } }
     settings: { mode: "one", ver: "gae", ver2: "niv", readingCutoff: 0 },
-    readingHabits: { lateDays: [], cutoffChanges: [] },
+    readingHabits: { rule: 2, lateDays: [], cutoffUses: [], pending: null },
   };
 }
 
@@ -80,10 +80,18 @@ function normalizeRecordMap(value) {
 
 function normalizeReadingHabits(value) {
   const v = isRecord(value) ? value : {};
+  // rule 2부터는 설정 변경 횟수가 아니라, 바꾼 마감 시간 안에 실제로 읽은 날만 센다.
+  // 이전 규칙의 기록은 새 기준과 섞지 않고 한 번 모두 초기화한다.
+  if (v.rule !== 2) return { rule: 2, lateDays: [], cutoffUses: [], pending: null };
+  const pending = isRecord(v.pending) && isValidDateString(v.pending.date)
+    && Number.isInteger(v.pending.hour) && v.pending.hour >= 1 && v.pending.hour <= 5
+    ? { date: v.pending.date, hour: v.pending.hour }
+    : null;
   return {
+    rule: 2,
     lateDays: [...new Set((Array.isArray(v.lateDays) ? v.lateDays : []).filter(isValidDateString))].slice(-60),
-    cutoffChanges: [...new Set((Array.isArray(v.cutoffChanges) ? v.cutoffChanges : [])
-      .filter((x) => typeof x === "string" && !Number.isNaN(Date.parse(x))))].slice(-60),
+    cutoffUses: [...new Set((Array.isArray(v.cutoffUses) ? v.cutoffUses : []).filter(isValidDateString))].slice(-60),
+    pending,
   };
 }
 

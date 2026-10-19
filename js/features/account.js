@@ -60,8 +60,10 @@ function mergeStates(local, remote) {
   return {
     ...remote, ...local, read, dayNotes, qt,
     readingHabits: normalizeReadingHabits({
+      rule: 2,
       lateDays: [...remoteHabits.lateDays, ...localHabits.lateDays],
-      cutoffChanges: [...remoteHabits.cutoffChanges, ...localHabits.cutoffChanges],
+      cutoffUses: [...remoteHabits.cutoffUses, ...localHabits.cutoffUses],
+      pending: localHabits.pending || remoteHabits.pending,
     }),
     copies: [...new Map([...(remote.copies || []), ...(local.copies || [])].map((c) => [`${c.d}|${c.i}|${c.v}`, c])).values()],
     plan: useLocalPlan ? local.plan : remote.plan,
