@@ -317,7 +317,7 @@ function relationGraphCore(people, relations) {
     <p class="rg-legend">${kinds.map((k) => `<span><i style="background:${REL_COLOR[k]}"></i>${REL_NAME[k]}</span>`).join("")}<em>화살표는 "A는 B의 ○○"에서 B를 가리켜요</em></p>`;
 }
 
-// 관계도: 관리자 테스트(열왕기상)에서는 사건 관계와 가족 관계를 두 층으로 나눠 보여 줌
+// 관계도: 관리자용 왕정 역사서 시험에서는 사건 관계와 가족 관계를 층별로 나눠 보여 줌
 const KIN_GROUPS_MAIN = [["사건", (r) => r.kind !== "family"], ["가족", (r) => r.kind === "family"]];
 const KIN_GROUPS_ALL = [
   ["가족·혼인", (r) => r.kind === "family"],
@@ -337,7 +337,8 @@ function relationGraphHtml(people, relations, opts = {}) {
   </div>`;
 }
 function kinOpts() {
-  return { kin: typeof isAdmin === "function" && isAdmin() && summaryBook === "1ki", all: !!state.settings.graphAll };
+  const kinBooks = new Set(["1ki", "2ki", "1ch", "2ch"]);
+  return { kin: typeof isAdmin === "function" && isAdmin() && kinBooks.has(summaryBook), all: !!state.settings.graphAll };
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest && e.target.closest("[data-kinbtn]");
