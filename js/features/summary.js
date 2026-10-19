@@ -253,7 +253,7 @@ function rgSvgInner(names, pos, edges, live) {
 const rgModels = {};
 let rgSeq = 0;
 
-function relationGraphCore(people, relations) {
+function relationGraphCore(people, relations, opts = {}) {
   const used = new Set();
   relations.forEach((r) => { used.add(r.from); used.add(r.to); });
   const names = people.map((p) => p.name).filter((n) => used.has(n));
@@ -310,7 +310,7 @@ function relationGraphCore(people, relations) {
   const edges = rgEdgeGeom(rels, pos, 150);
 
   const id = `rg${++rgSeq}`;
-  rgModels[id] = { names, rels, pos, roles: Object.fromEntries(people.map((p) => [p.name, p.role || ""])), VW, VH };
+  rgModels[id] = { names, rels, pos, roles: Object.fromEntries(people.map((p) => [p.name, p.role || ""])), familyDetail: !!opts.familyDetail, VW, VH };
   Object.keys(rgModels).slice(0, -20).forEach((k) => delete rgModels[k]); // 오래된 것은 버림
   const kinds = [...new Set(rels.map((r) => r.kind))].filter((k) => REL_COLOR[k]);
   return `
@@ -334,11 +334,11 @@ const KIN_GROUPS_ALL = [
 ];
 function relationGraphHtml(people, relations, opts = {}) {
   const visibleRelations = opts.kin ? relations : relations.filter((r) => !r.adminOnly);
-  if (!opts.kin) return relationGraphCore(people, visibleRelations);
+  if (!opts.kin) return relationGraphCore(people, visibleRelations, opts);
   const groups = opts.all ? KIN_GROUPS_ALL : KIN_GROUPS_MAIN;
   const panes = groups.map(([label, keep], i) => {
     const selected = relations.filter(keep);
-    return `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${selected.length ? relationGraphCore(people, selected) : `<p class="muted small kin-empty">이 분량에는 ‘${esc(label)}’ 관계가 없어요.</p>`}</div>`;
+    return `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${selected.length ? relationGraphCore(people, selected, opts) : `<p class="muted small kin-empty">이 분량에는 ‘${esc(label)}’ 관계가 없어요.</p>`}</div>`;
   }).join("");
   return `<div class="kin-wrap">
     <div class="seg wide kin-seg" role="group" aria-label="관계 묶음">
@@ -349,7 +349,9 @@ function relationGraphHtml(people, relations, opts = {}) {
 }
 function kinOpts() {
   const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam", "ezk", "dan", "hos", "jol", "amo", "oba", "jnh", "mic", "nam", "hab", "zep", "hag", "zec", "mal"]);
-  return { kin: typeof isAdmin === "function" && isAdmin() && kinBooks.has(summaryBook), all: !!state.settings.graphAll };
+  const admin = typeof isAdmin === "function" && isAdmin();
+  const kin = admin && kinBooks.has(summaryBook);
+  return { kin, all: !!state.settings.graphAll, familyDetail: kin && new Set(["1sa", "2sa", "1ki", "2ki"]).has(summaryBook) };
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest && e.target.closest("[data-kinbtn]");
@@ -514,6 +516,30 @@ function rgOpen(id) {
     : `<p class="muted small">이 관계를 풀어 줄 구절 설명은 아직 준비 중이에요.</p>`;
   const relLine = (r) => `<b>${esc(r.from)}</b><span class="rg-arrow">${r.directed ? "→" : "↔"}</span><b>${esc(r.to)}</b>
     <em style="color:${REL_COLOR[r.kind] || REL_COLOR.other}">${esc(r.label)}</em><span class="rg-kind">${REL_NAME[r.kind] || ""}</span>`;
+  const familyLinksHtml = (name) => {
+    if (!m.familyDetail) return "";
+    const direct = m.rels.map((r, i) => ({ r, i })).filter(({ r }) => r.kind === "family" && (r.from === name || r.to === name));
+    if (!direct.length) return "";
+    return `<section class="rg-family"><b>혈연 관계</b><div class="rg-family-links">${direct.map(({ r, i }) => {
+      const other = r.from === name ? r.to : r.from;
+      return `<button type="button" data-family-node="${esc(other)}" data-family-edge="${i}">${esc(other)} <span>${esc(r.label || "가족")}</span></button>`;
+    }).join("")}</div><small>이름을 누르면 가까운 혈연 관계를 간단히 볼 수 있어요.</small></section>`;
+  };
+  const familyMini = (name) => {
+    const family = m.rels.filter((r) => r.kind === "family");
+    const links = new Map([[name, 0]]), queue = [name];
+    while (queue.length) {
+      const cur = queue.shift(), depth = links.get(cur);
+      if (depth >= 2) continue;
+      family.forEach((r) => {
+        if (r.from !== cur && r.to !== cur) return;
+        const other = r.from === cur ? r.to : r.from;
+        if (!links.has(other)) { links.set(other, depth + 1); queue.push(other); }
+      });
+    }
+    const edges = family.filter((r) => links.has(r.from) && links.has(r.to) && Math.max(links.get(r.from), links.get(r.to)) <= 2);
+    return `<div class="rg-mini-pop" role="dialog" aria-label="${esc(name)}의 가까운 혈연 관계"><button type="button" class="rg-mini-close" data-family-close aria-label="닫기">✕</button><b>${esc(name)}의 가까운 혈연 관계</b><div class="rg-mini-graph"><span class="rg-mini-node focus">${esc(name)}</span>${edges.slice(0, 8).map((r) => `<span class="rg-mini-edge"><i>${esc(r.from)}</i><em>${esc(r.label || "가족")}</em><i>${esc(r.to)}</i></span>`).join("")}</div></div>`;
+  };
   const showEdge = (i) => {
     sel = { edge: i };
     const r = m.rels[i];
@@ -533,6 +559,7 @@ function rgOpen(id) {
     const ordered = [...groups.entries()].sort((a, b) => (nodeAsc ? 1 : -1) * a[0].localeCompare(b[0], "ko"));
     detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}
         ${groups.size > 1 ? `<button type="button" class="rg-nsort" data-nsort aria-label="연결된 사람 순서 바꾸기">연결된 사람 가나다 ${nodeAsc ? "▲" : "▼"}</button>` : ""}</div>
+      ${familyLinksHtml(name)}
       <ul class="rg-rels">${ordered.map(([o, xs]) => `<li class="rg-grp${xs.length > 1 ? " two" : ""}">${xs.length > 1 ? `<small class="rg-grp-h">${esc(o)}와(과) 서로 이어진 관계 ${xs.length}개</small>` : ""}${xs.map(({ r, i }) => `<button type="button" data-pick="${i}">${relLine(r)}</button>`).join("")}</li>`).join("")}</ul>
       <p class="muted small">관계를 누르면 그 장면의 구절 풀이가 나와요.</p>`;
     draw();
@@ -646,6 +673,12 @@ function rgOpen(id) {
       return flyTo({ w: view.w * k, h: view.h * k, x: cx - view.w * k / 2, y: cy - view.h * k / 2 });
     }
     if (e.target.closest("[data-nsort]") && sel && sel.node) { nodeAsc = !nodeAsc; return showNode(sel.node, false, true); }
+    const familyNode = e.target.closest("[data-family-node]");
+    if (familyNode && m.familyDetail) {
+      e.target.closest(".rg-detail").insertAdjacentHTML("beforeend", familyMini(familyNode.dataset.familyNode));
+      return;
+    }
+    if (e.target.closest("[data-family-close]")) return e.target.closest(".rg-mini-pop").remove();
     const find = e.target.closest("[data-find]");
     if (find) return findPerson(find.dataset.find);
     const pick = e.target.closest("[data-pick]");

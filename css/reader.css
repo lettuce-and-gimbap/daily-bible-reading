@@ -491,6 +491,19 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rg-grp.two button + button { border-top: 1px dashed var(--line); border-radius: 0 0 10px 10px; }
 .rg-dir + .rg-dir { margin-top: 10px; padding-top: 10px; border-top: 2px dashed var(--line); }
 .rg-dir.cur .rg-rel { font-weight: 700; }
+.rg-family { margin: 10px 0; padding: 9px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); }
+.rg-family > b { display: block; margin-bottom: 6px; }
+.rg-family-links { display: flex; flex-wrap: wrap; gap: 5px; }
+.rg-family-links button { border: 1px solid var(--line); border-radius: 999px; padding: 5px 9px; background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; }
+.rg-family-links button span { color: var(--muted); font-size: .78rem; }
+.rg-family > small { display: block; margin-top: 6px; color: var(--muted); }
+.rg-mini-pop { position: relative; margin: 10px 0; padding: 12px 34px 12px 12px; border: 2px solid var(--accent); border-radius: 14px; background: var(--surface); box-shadow: 0 8px 24px rgb(0 0 0 / .16); }
+.rg-mini-close { position: absolute; top: 7px; right: 8px; border: 0; background: transparent; color: var(--muted); font-size: 1rem; cursor: pointer; }
+.rg-mini-graph { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 9px; }
+.rg-mini-node, .rg-mini-edge { border-radius: 8px; padding: 4px 7px; background: var(--accent-soft); color: var(--ink); font-size: .78rem; }
+.rg-mini-node.focus { font-weight: 800; outline: 2px solid var(--accent); }
+.rg-mini-edge { display: inline-flex; align-items: center; gap: 5px; background: var(--surface-2); }
+.rg-mini-edge em { color: var(--muted); font-style: normal; }
 
 /* 탭 전환 슬라이드 */
 @keyframes slide-in-r { from { transform: translateX(46px); opacity: .25; } to { transform: none; opacity: 1; } }
