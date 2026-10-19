@@ -160,10 +160,13 @@ function familyGenerationLayout(names, rels, targetW) {
   [...rows.keys()].sort((a, b) => a - b).forEach((level) => {
     const chunks = [];
     let chunk = [], used = 0;
+    // 한 세대가 넓은 화면을 한 줄로 모두 차지하지 않도록, 인물 수에 맞는
+    // 적당한 열 수로 나눈다. 부모·자녀 세대는 수직 흐름이 먼저 보이게 한다.
+    const rowMax = Math.min(width - 24, Math.max(220, 180 + Math.sqrt(rows.get(level).length) * 110));
     rows.get(level).forEach((name) => {
       const nodeW = rgBox(name).hw * 2;
       const next = used + (chunk.length ? 20 : 0) + nodeW;
-      if (chunk.length && next > width - 24) { chunks.push(chunk); chunk = []; used = 0; }
+      if (chunk.length && next > rowMax) { chunks.push(chunk); chunk = []; used = 0; }
       used += (chunk.length ? 20 : 0) + nodeW;
       chunk.push(name);
     });
