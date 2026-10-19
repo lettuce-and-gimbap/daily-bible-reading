@@ -108,9 +108,86 @@ function relationGroups(names, rels) {
   return groups.sort((a, b) => b.length - a.length);
 }
 
+// 명확한 친족 호칭만 부모-자녀 세대로 배치. 아들/딸 표기는 자녀→부모,
+// 아버지/어머니 표기는 부모→자녀로 기록된 기존 관계 데이터를 따른다.
+const FAMILY_PARENT_LABELS = new Set(["아버지", "어머니", "부모"]);
+const FAMILY_CHILD_LABEL = /^(?:(?:맏|첫|첫째|둘째|셋째|넷째|막내|외동|외|작은|큰)\s*)?(?:아들|딸|자녀|자식)(?:들)?$/;
+function familyGenerationLayout(names, rels, targetW) {
+  const nameSet = new Set(names), lineage = [], seen = new Set();
+  rels.forEach((r) => {
+    if (r.kind !== "family" || !nameSet.has(r.from) || !nameSet.has(r.to) || r.from === r.to) return;
+    let parent, child;
+    if (FAMILY_PARENT_LABELS.has(r.label)) { parent = r.from; child = r.to; }
+    else if (FAMILY_CHILD_LABEL.test(r.label || "")) { parent = r.to; child = r.from; }
+    if (!parent || !child) return;
+    const key = `${parent}\u0000${child}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    lineage.push({ parent, child });
+  });
+  if (!lineage.length) return null;
+
+  const levels = new Map(names.map((name) => [name, 0]));
+  const indegree = new Map(names.map((name) => [name, 0]));
+  const children = new Map(names.map((name) => [name, []]));
+  lineage.forEach(({ parent, child }) => {
+    children.get(parent).push(child);
+    indegree.set(child, indegree.get(child) + 1);
+  });
+  const queue = names.filter((name) => indegree.get(name) === 0);
+  let visited = 0;
+  while (queue.length) {
+    const parent = queue.shift();
+    visited++;
+    children.get(parent).forEach((child) => {
+      levels.set(child, Math.max(levels.get(child), levels.get(parent) + 1));
+      indegree.set(child, indegree.get(child) - 1);
+      if (indegree.get(child) === 0) queue.push(child);
+    });
+  }
+  // 순환하는 관계는 세대의 위아래가 모호하므로 기존 자동 배치로 맡긴다.
+  if (visited !== names.length) return null;
+
+  const width = Math.max(targetW, ...names.map((name) => rgBox(name).hw * 2 + 24));
+  const rows = new Map();
+  names.forEach((name) => {
+    const level = levels.get(name);
+    if (!rows.has(level)) rows.set(level, []);
+    rows.get(level).push(name);
+  });
+  const pos = {};
+  let y = 18;
+  [...rows.keys()].sort((a, b) => a - b).forEach((level) => {
+    const chunks = [];
+    let chunk = [], used = 0;
+    rows.get(level).forEach((name) => {
+      const nodeW = rgBox(name).hw * 2;
+      const next = used + (chunk.length ? 20 : 0) + nodeW;
+      if (chunk.length && next > width - 24) { chunks.push(chunk); chunk = []; used = 0; }
+      used += (chunk.length ? 20 : 0) + nodeW;
+      chunk.push(name);
+    });
+    if (chunk.length) chunks.push(chunk);
+    chunks.forEach((row) => {
+      const rowW = row.reduce((sum, name) => sum + rgBox(name).hw * 2, 0) + 20 * (row.length - 1);
+      let x = (width - rowW) / 2;
+      row.forEach((name) => {
+        const box = rgBox(name);
+        pos[name] = { x: x + box.hw, y, ...box };
+        x += box.hw * 2 + 20;
+      });
+      y += 46;
+    });
+    y += 22; // 세대 사이 여백
+  });
+  return pos;
+}
+
 // 한 묶음 배치: 이어진 사람끼리 당기고(용수철) 모두 서로 밀어내는(반발) 방식을 몇백 번 되풀이. 무작위 없이 늘 같은 결과
 function layoutGroup(names, rels) {
   const n = names.length;
+  const familyLayout = familyGenerationLayout(names, rels, 336);
+  if (familyLayout) return familyLayout;
   const pos = {};
   if (n === 1) { pos[names[0]] = { x: 0, y: 0 }; return pos; }
   const r0 = 50 + 22 * n;
@@ -221,6 +298,11 @@ function rgEdgeGeom(rels, pos, iters) {
 
 // 관계도 SVG 안쪽(선·상자·이름표). 상세 창에서는 선과 상자에 번호를 달아 누를 수 있게 함
 function rgSvgInner(names, pos, edges, live) {
+  const neighbors = new Map(names.map((name) => [name, new Set()]));
+  edges.forEach(({ r }) => { neighbors.get(r.from)?.add(r.to); neighbors.get(r.to)?.add(r.from); });
+  const degrees = new Map([...neighbors].map(([name, set]) => [name, set.size]));
+  const maxDegree = Math.max(0, ...degrees.values());
+  const hubThreshold = maxDegree >= 4 ? Math.max(4, maxDegree - 1) : Infinity;
   const lines = edges.map((e) => {
     const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
     const d = `M${e.p1.x.toFixed(1)} ${e.p1.y.toFixed(1)} Q${e.qx.toFixed(1)} ${e.qy.toFixed(1)} ${e.p2.x.toFixed(1)} ${e.p2.y.toFixed(1)}`;
@@ -234,7 +316,9 @@ function rgSvgInner(names, pos, edges, live) {
   }).join("");
   const nodes = names.map((name) => {
     const p = pos[name];
-    return `<g class="rg-node" ${live ? `data-node="${esc(name)}"` : ""}><rect x="${(p.x - p.hw).toFixed(1)}" y="${(p.y - p.hh).toFixed(1)}" width="${(p.hw * 2).toFixed(1)}" height="${p.hh * 2}" rx="10"/>
+    const degree = degrees.get(name) || 0;
+    const hub = degree >= hubThreshold;
+    return `<g class="rg-node${hub ? " hub" : ""}" ${live ? `data-node="${esc(name)}"` : ""}><title>${esc(name)} · 연결 인물 ${degree}명</title><rect x="${(p.x - p.hw).toFixed(1)}" y="${(p.y - p.hh).toFixed(1)}" width="${(p.hw * 2).toFixed(1)}" height="${p.hh * 2}" rx="10"/>
       <text x="${p.x.toFixed(1)}" y="${(p.y + 5).toFixed(1)}" text-anchor="middle">${esc(name)}</text></g>`;
   }).join("");
   const markers = Object.keys(REL_COLOR).map((k) => `<marker id="rg-arrow-${k}${live ? "-live" : ""}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${REL_COLOR[k]}"/></marker>`).join("");
@@ -363,6 +447,8 @@ function rgSpread(names, rels, pos, ratio) {
   const n = names.length;
   if (n < 6) return;
   const WW = Math.sqrt(n * 150 * 80 * 2.6 * ratio), HH = WW / ratio;
+  const familyLayout = familyGenerationLayout(names, rels, WW);
+  if (familyLayout) { Object.assign(pos, familyLayout); return; }
   const k = 0.9 * Math.sqrt(1 / n);
   const P = {};
   names.forEach((nm, i) => { const a = (i / n) * Math.PI * 2; P[nm] = { x: 0.5 + Math.cos(a) * 0.38, y: 0.5 + Math.sin(a) * 0.38 }; });
@@ -403,6 +489,8 @@ function rgBounds(names, pos) {
   return { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
 }
 function rgPreviewLayout(names, rels, pos, targetW) {
+  const familyLayout = familyGenerationLayout(names, rels, targetW);
+  if (familyLayout) { Object.assign(pos, familyLayout); return; }
   rgSpread(names, rels, pos, 1.3);
   const b = rgBounds(names, pos), k = targetW / Math.max(1, b.x1 - b.x0);
   names.forEach((nm) => { pos[nm].x *= k; pos[nm].y *= k; });
