@@ -260,7 +260,8 @@
         {"name":"하만의 열 아들","role":"죽임당한 원수의 아들들","weight":2},
         {"name":"관리들","role":"유다인을 도운 지방 관원","weight":1},
         {"name":"아하수에로","role":"에스더의 청을 들은 왕","weight":2},
-        {"name":"원수들","role":"유다인을 미워한 이들","weight":2}
+        {"name":"원수들","role":"유다인을 미워한 이들","weight":2},
+        {"name":"하만","role":"유다인을 죽이려 한 대신","weight":2}
       ],
       "rels": [
         {"from":"유다인","to":"원수들","label":"이긴 민족","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 5","note":"유다인을 죽이려던 날, 오히려 유다인이 자기를 미워하는 자들을 이겼어요."},
@@ -268,7 +269,8 @@
         {"from":"모르드개","to":"유다인","label":"편지 보낸 대신","kind":"ally","directed":true,"weight":3,"verses":"20-22","note":"모르드개가 각 지방 유다인에게 편지를 보내 부림절을 지키며 서로 선물하고 가난한 자를 구제하라고 했어요."},
         {"from":"에스더","to":"모르드개","label":"함께 정함","kind":"ally","directed":false,"weight":2,"verses":"29-31","note":"에스더와 모르드개가 함께 부림절을 확정하는 편지를 썼어요."},
         {"from":"아하수에로","to":"에스더","label":"들어준 왕","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"왕이 에스더의 청을 듣고 수산에서 하루를 더 허락했어요."},
-        {"from":"하만의 열 아들","to":"유다인","label":"원수","kind":"conflict","directed":true,"weight":1,"verses":"10, 13-14","note":"하만의 열 아들도 유다인의 원수로서 죽임을 당했어요."}
+        {"from":"하만의 열 아들","to":"유다인","label":"원수","kind":"conflict","directed":true,"weight":1,"verses":"10, 13-14","note":"하만의 열 아들도 유다인의 원수로서 죽임을 당했어요."},
+        {"from":"하만의 열 아들","to":"하만","label":"아들들","kind":"family","directed":false,"weight":2,"verses":"7-10","note":"하만의 열 아들이 처형된 일은 하만 집안의 몰락을 보여 줘요. 본문은 이들을 하만의 아들들이라고 밝혀요.","adminOnly":true}
       ],
       "places": [
         {"name":"수산","where":"바사의 도성","what":"이틀 동안 원수를 친 곳","weight":2},

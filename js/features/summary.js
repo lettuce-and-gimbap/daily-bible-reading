@@ -320,6 +320,7 @@ function relationGraphCore(people, relations) {
 // 관계도: 관리자용 왕정 역사서 시험에서는 사건 관계와 가족 관계를 층별로 나눠 보여 줌
 const KIN_GROUPS_MAIN = [["사건", (r) => r.kind !== "family"], ["가족", (r) => r.kind === "family"]];
 const KIN_GROUPS_ALL = [
+  ["전체", () => true],
   ["가족·혼인", (r) => r.kind === "family"],
   ["싸움·죽음", (r) => r.kind === "conflict"],
   ["동맹·아는 사이", (r) => r.kind === "ally" || r.kind === "other"],
@@ -328,8 +329,10 @@ function relationGraphHtml(people, relations, opts = {}) {
   const visibleRelations = opts.kin ? relations : relations.filter((r) => !r.adminOnly);
   if (!opts.kin) return relationGraphCore(people, visibleRelations);
   const groups = opts.all ? KIN_GROUPS_ALL : KIN_GROUPS_MAIN;
-  const panes = groups.map(([label, keep], i) =>
-    `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${relationGraphCore(people, relations.filter(keep))}</div>`).join("");
+  const panes = groups.map(([label, keep], i) => {
+    const selected = relations.filter(keep);
+    return `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${selected.length ? relationGraphCore(people, selected) : `<p class="muted small kin-empty">이 분량에는 ‘${esc(label)}’ 관계가 없어요.</p>`}</div>`;
+  }).join("");
   return `<div class="kin-wrap">
     <div class="seg wide kin-seg" role="group" aria-label="관계 묶음">
       ${groups.map(([label], i) => `<button type="button" class="${i ? "" : "on"}" data-kinbtn="${i}">${label}</button>`).join("")}
@@ -338,7 +341,7 @@ function relationGraphHtml(people, relations, opts = {}) {
   </div>`;
 }
 function kinOpts() {
-  const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch"]);
+  const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam", "ezk", "dan", "hos", "jol", "amo", "oba", "jnh", "mic", "nam", "hab", "zep", "hag", "zec", "mal"]);
   return { kin: typeof isAdmin === "function" && isAdmin() && kinBooks.has(summaryBook), all: !!state.settings.graphAll };
 }
 document.addEventListener("click", (e) => {

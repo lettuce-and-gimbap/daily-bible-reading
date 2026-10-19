@@ -56,7 +56,8 @@
         {"from":"하나님","to":"레위","label":"언약을 맺으신 분","kind":"ally","directed":true,"weight":2,"verses":"4-6","note":"하나님은 레위와 생명과 평화의 언약을 맺으셨어요. 레위는 참된 가르침을 입에 두고 평안과 정직으로 하나님과 함께 걸었어요."},
         {"from":"제사장들","to":"하나님","label":"언약을 깨뜨림","kind":"conflict","directed":true,"weight":3,"verses":"8","note":"지금의 제사장들은 바른길을 떠나 사람들을 넘어지게 했어요. 가르쳐야 할 입술이 오히려 사람들을 율법에서 멀어지게 했어요."},
         {"from":"남편들","to":"어려서 맞은 아내","label":"거짓을 행한 남편","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"남편들은 젊어서 맞은 아내에게 거짓을 행했어요. 결혼은 하나님이 증인이 되시는 언약이라서 그 배신은 하나님께 대한 불성실이에요."},
-        {"from":"하나님","to":"남편들","label":"책망하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"하나님은 이혼하는 것과 옷으로 학대를 가리는 자를 미워하세요. 부부를 하나로 만드신 건 경건한 자손을 얻으려는 뜻이에요."}
+        {"from":"하나님","to":"남편들","label":"책망하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"하나님은 이혼하는 것과 옷으로 학대를 가리는 자를 미워하세요. 부부를 하나로 만드신 건 경건한 자손을 얻으려는 뜻이에요."},
+        {"from":"남편들","to":"어려서 맞은 아내","label":"부부","kind":"family","directed":false,"weight":2,"verses":"14-16","note":"말라기는 젊어서 맞은 아내를 언약의 짝이라고 부르며 남편들에게 아내를 배신하지 말라고 꾸짖어요.","adminOnly":true}
       ],
       "places": [
         {"name":"성소","where":"하나님의 거룩한 곳","what":"유다가 더럽힌 곳","weight":1},

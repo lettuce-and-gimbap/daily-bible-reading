@@ -718,14 +718,16 @@
         {"name":"미가","role":"히스기야 때의 선지자","weight":1},
         {"name":"우리야","role":"여호야김에게 죽은 선지자","weight":2},
         {"name":"여호야김","role":"우리야를 죽인 왕","weight":2},
-        {"name":"아히감","role":"예레미야를 보호한 사반의 아들","weight":2}
+        {"name":"아히감","role":"예레미야를 보호한 사반의 아들","weight":2},
+        {"name":"사반","role":"아히감의 아버지","weight":1}
       ],
       "rels": [
         {"from":"제사장과 선지자들","to":"예레미야","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"8, 11","note":"예레미야가 말을 마치자 제사장들과 예언자들이 그를 붙잡고 너는 반드시 죽어야 한다고 했어요."},
         {"from":"장로들","to":"예레미야","label":"변호한 이들","kind":"ally","directed":true,"weight":2,"verses":"17-19","note":"장로 몇 사람이 히스기야가 예언자 미가를 죽이지 않고 하나님께 간구하여 재앙을 거둔 일을 들어 예레미야를 변호했어요."},
         {"from":"아히감","to":"예레미야","label":"보호한 이","kind":"ally","directed":true,"weight":3,"verses":"24","note":"사반의 아들 아히감이 예레미야를 감싸 백성의 손에 넘기지 않아 죽음을 면했어요."},
         {"from":"여호야김","to":"우리야","label":"죽인 왕","kind":"conflict","directed":true,"weight":2,"verses":"20-23","note":"같은 말을 예언한 우리야는 이집트로 도망갔지만 여호야김이 사람을 보내 붙잡아 와 칼로 죽였어요."},
-        {"from":"고관들","to":"예레미야","label":"무죄 판단","kind":"ally","directed":true,"weight":2,"verses":"16","note":"고관들과 백성은 예레미야가 하나님의 이름으로 말했으니 죽일 이유가 없다고 판단했어요."}
+        {"from":"고관들","to":"예레미야","label":"무죄 판단","kind":"ally","directed":true,"weight":2,"verses":"16","note":"고관들과 백성은 예레미야가 하나님의 이름으로 말했으니 죽일 이유가 없다고 판단했어요."},
+        {"from":"아히감","to":"사반","label":"아들","kind":"family","directed":false,"weight":2,"verses":"24","note":"아히감은 사반의 아들이었어요. 그는 예레미야를 보호해 처형되지 않게 했고, 사반 집안은 요시야 시대부터 왕실과 성전에서 중요한 역할을 했어요.","adminOnly":true}
       ],
       "places": [
         {"name":"성전 뜰","where":"예루살렘 하나님의 집","what":"예레미야가 설교한 여호와의 집 뜰이에요.","weight":3},
@@ -1004,14 +1006,16 @@
         {"name":"미가야(그마랴의 아들)","role":"고관들에게 알린 이","weight":1},
         {"name":"여후디","role":"왕 앞에서 읽은 신하","weight":1},
         {"name":"고관들","role":"두려워한 신하들","weight":2},
-        {"name":"하나님","role":"다시 쓰게 하신 분","weight":3}
+        {"name":"하나님","role":"다시 쓰게 하신 분","weight":3},
+        {"name":"사반","role":"그마랴의 아버지","weight":1}
       ],
       "rels": [
         {"from":"바룩","to":"예레미야","label":"받아 적은 서기관","kind":"ally","directed":true,"weight":3,"verses":"4","note":"예레미야가 불러 주는 하나님의 말씀을 서기관 바룩이 두루마리에 받아 적고 대신 성전에서 읽었어요."},
         {"from":"여호야김","to":"예레미야","label":"말씀을 태운 왕","kind":"conflict","directed":true,"weight":3,"verses":"22-23","note":"여호야김 왕은 서너 쪽을 읽을 때마다 칼로 베어 화로 불에 던져 두루마리를 다 태웠어요. 말씀을 두려워하지 않았어요."},
         {"from":"고관들","to":"바룩","label":"숨으라 한 이들","kind":"ally","directed":true,"weight":2,"verses":"19","note":"고관들은 바룩에게 예레미야와 함께 몸을 숨기고 어디 있는지 아무에게도 알리지 말라고 했어요."},
         {"from":"그마랴","to":"여호야김","label":"말린 신하","kind":"ally","directed":true,"weight":1,"verses":"25","note":"그마랴가 두루마리를 불사르지 말라고 왕께 간청했지만 왕이 듣지 않았어요."},
-        {"from":"하나님","to":"예레미야","label":"숨기신 분","kind":"ally","directed":true,"weight":2,"verses":"26, 28","note":"하나님이 바룩과 예레미야를 숨기셨고 다른 두루마리에 처음 말씀을 다시 쓰게 하셨어요."}
+        {"from":"하나님","to":"예레미야","label":"숨기신 분","kind":"ally","directed":true,"weight":2,"verses":"26, 28","note":"하나님이 바룩과 예레미야를 숨기셨고 다른 두루마리에 처음 말씀을 다시 쓰게 하셨어요."},
+        {"from":"그마랴","to":"사반","label":"아들","kind":"family","directed":false,"weight":2,"verses":"10","note":"그마랴는 서기관 사반의 아들이며, 예레미야의 두루마리를 낭독하도록 자기 방을 내주었어요.","adminOnly":true}
       ],
       "places": [
         {"name":"그마랴의 방","where":"성전 윗뜰 새 문 어귀","what":"바룩이 두루마리를 읽은 여호와의 집 윗뜰 새 문 어귀 곁 방이에요.","weight":2},

@@ -222,6 +222,12 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .rg-chap::-webkit-scrollbar { display: none; }
 .rg-chap button { white-space: nowrap; flex: none; }
 
+/* 관계도 분류 선택: 짧은 버튼으로 한 줄에 배치 */
+.seg.wide.kin-seg { width: fit-content; max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 2px; gap: 1px; border-radius: 10px; }
+.kin-seg::-webkit-scrollbar { display: none; }
+.seg.wide.kin-seg button { flex: 0 0 auto; white-space: nowrap; padding: 5px 9px; border-radius: 8px; font-size: 12px; line-height: 1.2; }
+.kin-empty { margin: 10px 2px; }
+
 /* 뒤로가기 종료 확인 (양이 울상) */
 .exit-pop { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: rgb(0 0 0 / .4); padding: 18px; animation: cheer-in .3s ease-out; }
 .exit-pop.bye { animation: cheer-out .3s ease-in forwards; }

@@ -962,7 +962,9 @@
         {"from":"욥","to":"엘리바스","label":"기도해 준 친구","kind":"ally","directed":true,"weight":3,"verses":"8-10","note":"욥은 자기를 아프게 한 친구들을 위해 기도했어요. 하나님은 욥의 기도를 받으셨고, 그때 욥의 형편을 되돌려 주셨어요."},
         {"from":"하나님","to":"욥","label":"회복시키신 분","kind":"ally","directed":true,"weight":3,"verses":"10, 12","note":"하나님은 친구들을 위해 기도한 욥에게 전보다 두 배의 재산을 주시고 아들 일곱과 딸 셋을 다시 주셨어요. 욥은 백사십 년을 살며 손자의 손자까지 보았어요."},
         {"from":"여미마","to":"욥","label":"딸","kind":"family","directed":true,"weight":1,"verses":"14-15","note":"욥은 새로 얻은 딸들의 이름을 여미마, 긋시아, 게렌합북이라 지었어요. 온 땅에서 가장 아름다웠고, 욥은 딸들에게도 아들들과 같이 재산을 나누어 주었어요."},
-        {"from":"형제와 자매들","to":"욥","label":"위로한 가족","kind":"family","directed":true,"weight":1,"verses":"11","note":"형제자매와 이전에 알던 사람들이 찾아와 욥과 함께 음식을 먹었어요. 그들은 욥을 위로하며 돈 한 닢과 금고리 하나씩을 선물했어요."}
+        {"from":"형제와 자매들","to":"욥","label":"위로한 가족","kind":"family","directed":true,"weight":1,"verses":"11","note":"형제자매와 이전에 알던 사람들이 찾아와 욥과 함께 음식을 먹었어요. 그들은 욥을 위로하며 돈 한 닢과 금고리 하나씩을 선물했어요."},
+        {"from":"긋시아","to":"욥","label":"둘째 딸","kind":"family","directed":false,"weight":2,"verses":"14","note":"욥에게는 여미마뿐 아니라 둘째 딸 긋시아와 셋째 딸 게렌합북도 태어났어요. 세 딸의 이름이 본문에 기록돼 있어요.","adminOnly":true},
+        {"from":"게렌합북","to":"욥","label":"셋째 딸","kind":"family","directed":false,"weight":2,"verses":"14","note":"욥에게는 여미마뿐 아니라 둘째 딸 긋시아와 셋째 딸 게렌합북도 태어났어요. 세 딸의 이름이 본문에 기록돼 있어요.","adminOnly":true}
       ],
       "places": [
         {"name":"우스","where":"욥이 살던 동방의 땅","what":"동방 우스 땅. 욥이 갑절의 복을 받고 오래 산 곳","weight":1}

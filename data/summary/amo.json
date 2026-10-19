@@ -21,12 +21,14 @@
         {"name":"에돔","role":"형제를 칼로 쫓은 나라","weight":2},
         {"name":"암몬","role":"아이 밴 여인을 해친 나라","weight":2},
         {"name":"웃시야와 여로보암","role":"당시 유다와 이스라엘 왕","weight":1},
-        {"name":"하나님","role":"시온에서 부르짖으시는 분","weight":3}
+        {"name":"하나님","role":"시온에서 부르짖으시는 분","weight":3},
+        {"name":"이스라엘","role":"야곱의 자손, 에돔의 형제 나라","weight":1}
       ],
       "rels": [
         {"from":"하나님","to":"아모스","label":"말씀을 주신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"드고아의 목자 아모스가 받은 말씀이에요, 주님이 시온에서 사자처럼 외치신대요."},
         {"from":"하나님","to":"다메섹","label":"벌하실 분","kind":"conflict","directed":true,"weight":2,"verses":"3-5","note":"아람의 다메섹은 곡식 낟알을 떠는 쇠 타작기로 길르앗 사람을 짓밟듯 괴롭혔어요. 그래서 하나님은 왕궁과 성문을 부수고 백성을 멀리 끌려가게 하세요."},
-        {"from":"에돔","to":"하나님","label":"벌받을 나라","kind":"conflict","directed":false,"weight":1,"verses":"11-12","note":"에돔은 이스라엘과 야곱·에서 형제 사이인데도 칼로 쫓고 분노를 거두지 않았어요. 이 죄 때문에 하나님이 데만과 보스라에 불을 보내세요."}
+        {"from":"에돔","to":"하나님","label":"벌받을 나라","kind":"conflict","directed":false,"weight":1,"verses":"11-12","note":"에돔은 이스라엘과 야곱·에서 형제 사이인데도 칼로 쫓고 분노를 거두지 않았어요. 이 죄 때문에 하나님이 데만과 보스라에 불을 보내세요."},
+        {"from":"에돔","to":"이스라엘","label":"형제 나라","kind":"family","directed":false,"weight":2,"verses":"11","note":"에돔은 에서의 자손이고 이스라엘은 야곱의 자손이어서 형제 나라로 묘사돼요(창 25:23; 옵 1:10). 아모스는 에돔이 형제를 칼로 쫓았다고 책망해요.","adminOnly":true}
       ],
       "places": [
         {"name":"드고아","where":"드고아","what":"아모스의 고향","weight":2},
