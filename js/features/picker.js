@@ -142,6 +142,7 @@ function mountVersePicker(body, target, hintKey, hintIdx) {
 function logCopied(idx, ref, src = "reading") {
   const v = (ref.match(/:([\d,\- ]+)$/) || [])[1];
   if (!v) return;
-  state.copies = [...(state.copies || []), { d: todayStr(), i: idx, v, src }].slice(-3000);
+  const d = src === "reading" ? readingDateStr() : todayStr();
+  state.copies = [...(state.copies || []), { d, i: idx, v, src }].slice(-3000);
   persist();
 }

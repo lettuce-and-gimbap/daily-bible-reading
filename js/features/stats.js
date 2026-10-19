@@ -25,6 +25,10 @@ function renderStats() {
   const thisMonth = today.slice(0, 7);
   const qtMonth = [...qtDates].filter((d) => d.startsWith(thisMonth)).length;
   const todayQt = !!(state.qt[today] && state.qt[today].done);
+  const cutoff = Number(state.settings.readingCutoff || 0);
+  const cutoffText = cutoff === 0 ? "자정" : `새벽 ${cutoff}시`;
+  const habits = readingHabitCounts();
+  const habitAdvice = habits.late >= 4 || habits.changes >= 4;
 
   const readCard = pr ? `
     <article class="card hero read">
@@ -40,7 +44,7 @@ function renderStats() {
       <ul class="kpis">
         <li><i>🔥</i><b>${streak(readGoalDates())}일</b><span>연속으로 채운 날</span></li>
         <li class="kpi-plan ${pr.diff < 0 ? "behind" : pr.diff > 0 ? "ahead" : ""}"><i>${pr.diff < 0 ? "⚠️" : pr.diff > 0 ? "⚡" : "✅"}</i><b>${pr.diff === 0 ? "계획대로" : pr.diff > 0 ? `${pr.diff}일 앞섬` : `${-pr.diff}일 밀림`}</b><span>계획 대비</span></li>
-        <li><i>🏁</i><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>${pr.finished ? "통독을 마침" : `마칠 예정 · D-${Math.max(0, daysBetween(todayStr(), pr.projectedEnd))}`}</span></li>
+        <li><i>🏁</i><b>${pr.finished ? "완료" : prettyDate(pr.projectedEnd).replace(/ \(.\)/, "")}</b><span>${pr.finished ? "통독을 마침" : `마칠 예정 · D-${Math.max(0, daysBetween(readingDateStr(), pr.projectedEnd))}`}</span></li>
       </ul>
       <div class="pbar" aria-label="통독 진행 ${pr.pct}%"><span style="width:${pr.pct}%"></span></div>
     </article>` : `
@@ -101,6 +105,13 @@ function renderStats() {
         ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
       </div>
     </section>
+    <section class="card cutoff-card">
+      <div class="cutoff-head"><div><h3 class="label">통독 하루 마감</h3><p class="muted small">마감 전 새벽에 읽으면 전날 통독으로 기록해요.</p></div><b id="cutoff-value">${cutoffText}</b></div>
+      <input type="range" id="reading-cutoff" min="0" max="5" step="1" value="${cutoff}" aria-label="통독 하루 마감 시간">
+      <div class="cutoff-ticks" aria-hidden="true">${["자정", "1시", "2시", "3시", "4시", "5시"].map((x) => `<span>${x}</span>`).join("")}</div>
+      <p class="muted small" id="cutoff-preview">현재 기준으로 통독 날짜는 <b>${prettyDate(readingDateStr())}</b>예요. 과거 기록은 바뀌지 않아요.</p>
+      ${habitAdvice ? `<p class="cutoff-advice">🌙 최근 30일 동안 새벽 통독 ${habits.late}일 · 마감 조정 ${habits.changes}회였어요. 가능하다면 몸과 말씀 묵상을 위해 조금 일찍 읽어 보아도 좋아요.</p>` : ""}
+    </section>
     <section class="hero-row">${readCard}${qtCard}</section>
 
     ${glanceCardHtml()}
@@ -157,6 +168,16 @@ function renderStats() {
     b.parentElement.querySelectorAll("[data-theme-set]").forEach((x) => x.classList.toggle("on", x === b));
   }));
 
+  const cutoffInput = $("#reading-cutoff");
+  cutoffInput.addEventListener("input", () => {
+    const h = Number(cutoffInput.value);
+    $("#cutoff-value").textContent = h === 0 ? "자정" : `새벽 ${h}시`;
+  });
+  cutoffInput.addEventListener("change", () => {
+    if (changeReadingCutoff(cutoffInput.value)) persist();
+    renderStats();
+  });
+
   const shiftMonth = (n) => {
     const d = new Date(cy, cm - 1 + n, 1);
     calMonth = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
@@ -202,7 +223,7 @@ function renderStats() {
       const data = JSON.parse(await file.text());
       if (typeof data !== "object" || !("read" in data)) throw new Error();
       if (!confirm("현재 기록을 백업 파일 내용으로 바꿀까요?")) return;
-      state = { ...defaultState(), ...data, plan: normalizePlan(data.plan), settings: normalizeSettings({ ...defaultState().settings, ...(data.settings || {}) }) };
+      state = { ...defaultState(), ...data, plan: normalizePlan(data.plan), readingHabits: normalizeReadingHabits(data.readingHabits), settings: normalizeSettings({ ...defaultState().settings, ...(data.settings || {}) }) };
       persist();
       route();
     } catch (err) {

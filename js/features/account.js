@@ -55,8 +55,14 @@ function mergeStates(local, remote) {
     qt[k] = { done: !!(v.done || r.done), note: text(v.note, r.note), observe: text(v.observe, r.observe), reflect: text(v.reflect, r.reflect), answers };
   });
   const useLocalPlan = local.plan && (!remote.plan || (local.planAt || 0) >= (remote.planAt || 0));
+  const localHabits = normalizeReadingHabits(local.readingHabits);
+  const remoteHabits = normalizeReadingHabits(remote.readingHabits);
   return {
     ...remote, ...local, read, dayNotes, qt,
+    readingHabits: normalizeReadingHabits({
+      lateDays: [...remoteHabits.lateDays, ...localHabits.lateDays],
+      cutoffChanges: [...remoteHabits.cutoffChanges, ...localHabits.cutoffChanges],
+    }),
     copies: [...new Map([...(remote.copies || []), ...(local.copies || [])].map((c) => [`${c.d}|${c.i}|${c.v}`, c])).values()],
     plan: useLocalPlan ? local.plan : remote.plan,
     planAt: useLocalPlan ? local.planAt : remote.planAt,
@@ -65,7 +71,7 @@ function mergeStates(local, remote) {
 
 function applyRemoteState(next) {
   const base = defaultState();
-  state = { ...base, ...next, plan: normalizePlan(next.plan), settings: normalizeSettings({ ...base.settings, ...(next.settings || {}) }) };
+  state = { ...base, ...next, plan: normalizePlan(next.plan), readingHabits: normalizeReadingHabits(next.readingHabits), settings: normalizeSettings({ ...base.settings, ...(next.settings || {}) }) };
   saveState(state);
 }
 

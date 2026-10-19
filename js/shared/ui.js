@@ -189,7 +189,7 @@ function updateStreakChip() {
     tip = `QT 연속 ${n}일`;
   } else if (r !== "stats" && r !== "table" && state.plan) {
     const days = readGoalDates();
-    n = streak(days); today = days.has(todayStr());
+    n = streak(days); today = days.has(readingDateStr());
     tip = `통독 연속 ${n}일 (하루 목표 분량을 채운 날만 셈)`;
   }
   el.hidden = n === null;

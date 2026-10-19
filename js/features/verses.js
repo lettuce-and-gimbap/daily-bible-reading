@@ -410,7 +410,7 @@ function insertQuote(target, quote) {
     showToast("📝 묵상 노트에 붙였어요", { label: "노트 보기", onClick: () => openSheet("note", renderQtSheet) });
     return;
   }
-  const today = todayStr();
+  const today = readingDateStr();
   state.dayNotes[today] = appendQuote(dayNoteBase(state.dayNotes[today]), quote);
   persist();
   if (sheetTab && sheetTab !== "verses") renderReaderSheet();

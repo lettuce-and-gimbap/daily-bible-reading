@@ -17,8 +17,8 @@ function renderToday(tab) {
 
 // 오늘의 통독 메모 저장 (직접 쓸 때와 구절을 지울 때 함께 씀)
 function saveDayNote(value) {
-  if (value.trim()) state.dayNotes[todayStr()] = value;
-  else delete state.dayNotes[todayStr()];
+  if (value.trim()) state.dayNotes[readingDateStr()] = value;
+  else delete state.dayNotes[readingDateStr()];
   persist();
   const st = $("#d-note-status");
   if (st) st.textContent = "저장됨 ✓";
@@ -89,9 +89,9 @@ function buildReader() {
       let reload = true;
       if (b.id === "r-nextday") { viewingDay = Math.min(viewingDay + 1, pr.days.length - 1); currentChapter = null; }
       else if (b.id === "r-undo") { delete state.read[currentChapter]; reload = false; }
-      else if (b.id === "r-check" && freeChapter !== null) { state.read[currentChapter] = todayStr(); reload = false; }
+      else if (b.id === "r-check" && freeChapter !== null) { markChapterRead(currentChapter); reload = false; }
       else if (b.id === "r-check") {
-        state.read[currentChapter] = todayStr();
+        markChapterRead(currentChapter);
         const nextUnread = day.find((i) => !state.read[i]);
         if (nextUnread !== undefined) currentChapter = nextUnread;
         else { reload = false; celebrateDay(viewingDay); }
@@ -347,7 +347,7 @@ function renderReaderSheet() {
   body.innerHTML = `
     <section class="tool-card">
       <h3 class="label">오늘의 통독 메모</h3>
-      <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(dayNoteBase(state.dayNotes[todayStr()]))}</textarea>
+      <textarea id="d-note" rows="5" placeholder="마음에 남은 말씀이나 기도제목을 적어 보세요.">${esc(dayNoteBase(state.dayNotes[readingDateStr()]))}</textarea>
       <div class="inline between">
         <button class="btn soft small" id="d-copy-note">📋 메모 전체 복사</button>
         <span class="muted small" id="d-note-status">자동 저장돼요</span>

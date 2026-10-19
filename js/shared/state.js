@@ -31,6 +31,43 @@ function applyTheme() {
   else delete document.documentElement.dataset.theme;
 }
 
+// 통독 날짜는 사용자가 정한 새벽 마감 시각 전까지 전날로 본다. 기본값 0은 자정 마감이다.
+function readingDateStr(now = new Date()) {
+  const cutoff = Number((state.settings || {}).readingCutoff) || 0;
+  const d = new Date(now);
+  if (cutoff > 0 && d.getHours() < cutoff) d.setDate(d.getDate() - 1);
+  return todayStr(d);
+}
+
+function readingHabitCounts(now = new Date()) {
+  const habits = normalizeReadingHabits(state.readingHabits);
+  const since = new Date(now.getTime() - 30 * 86400000);
+  const sinceDate = todayStr(since);
+  return {
+    late: habits.lateDays.filter((d) => d >= sinceDate).length,
+    changes: habits.cutoffChanges.filter((x) => new Date(x) >= since).length,
+  };
+}
+
+function markChapterRead(idx, now = new Date()) {
+  state.read[idx] = readingDateStr(now);
+  state.readingHabits = normalizeReadingHabits(state.readingHabits);
+  if (now.getHours() < 6) {
+    const actualDate = todayStr(now);
+    if (!state.readingHabits.lateDays.includes(actualDate)) state.readingHabits.lateDays.push(actualDate);
+  }
+}
+
+function changeReadingCutoff(hour, now = new Date()) {
+  const next = Math.max(0, Math.min(5, Number(hour) || 0));
+  if (next === Number(state.settings.readingCutoff || 0)) return false;
+  state.settings.readingCutoff = next;
+  state.readingHabits = normalizeReadingHabits(state.readingHabits);
+  state.readingHabits.cutoffChanges.push(now.toISOString());
+  state.readingHabits = normalizeReadingHabits(state.readingHabits);
+  return true;
+}
+
 // 저장할 때마다 알림 서버에도 오늘 완료 여부를 알림 (features/reminder.js)
 function persist() {
   saveState(state);
@@ -44,7 +81,7 @@ function persist() {
 function progress() {
   const plan = state.plan;
   const seq = planSequence(plan);
-  const today = todayStr();
+  const today = readingDateStr();
   // 읽은 기록에 맞춰 다시 짠 Day (core/store.js planDaysFor)
   const { days, dates: dayDates, headCount } = planDaysFor(plan, state.read, today);
   const readCount = seq.filter((i) => state.read[i]).length;
@@ -123,7 +160,7 @@ function qtStreak(dateSet) {
 }
 
 function streak(dateSet) {
-  let d = todayStr();
+  let d = readingDateStr();
   if (!dateSet.has(d)) d = addDays(d, -1);
   let n = 0;
   while (dateSet.has(d)) {
@@ -135,7 +172,7 @@ function streak(dateSet) {
 
 // 알림용 오늘 요약: 서버에는 done/paused만, 서비스 워커는 분량·연속 일수로 문구를 채움
 function reminderSnapshot() {
-  const date = todayStr();
+  const date = readingDateStr();
   if (!state.plan) return { date, done: false, paused: true, portion: "", streak: 0 };
   const pr = progress();
   const day = pr.days[pr.behindDays > 0 ? pr.currentDay : pr.todayDay];

@@ -9,6 +9,18 @@
 .custom-range input { width: auto; }
 .godpia-card .btn { justify-self: start; }
 
+/* ---------- 통독 하루 마감 ---------- */
+.cutoff-card { display: grid; gap: 9px; }
+.cutoff-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.cutoff-head h3, .cutoff-head p { margin: 0; }
+.cutoff-head > b { flex: none; color: var(--accent); font-size: 1rem; }
+#reading-cutoff { width: 100%; accent-color: var(--accent); cursor: pointer; }
+.cutoff-ticks { display: grid; grid-template-columns: repeat(6, 1fr); color: var(--muted); font-size: .7rem; text-align: center; }
+.cutoff-ticks span:first-child { text-align: left; }
+.cutoff-ticks span:last-child { text-align: right; }
+.cutoff-card > p { margin: 0; }
+.cutoff-advice { padding: 9px 11px; border-radius: 11px; background: var(--qt-soft); color: var(--ink); font-size: .84rem; line-height: 1.5; }
+
 /* ---------- 리마인드 알림 ---------- */
 .remind { display: grid; gap: 10px; }
 .remind-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }

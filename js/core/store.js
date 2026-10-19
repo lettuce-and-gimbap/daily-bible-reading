@@ -29,7 +29,8 @@ function defaultState() {
     read: {}, // { 장일련번호: "YYYY-MM-DD" }
     dayNotes: {}, // { "YYYY-MM-DD": "통독 메모" }
     qt: {}, // { "YYYY-MM-DD": { done: bool, note: string } }
-    settings: { mode: "one", ver: "gae", ver2: "niv" },
+    settings: { mode: "one", ver: "gae", ver2: "niv", readingCutoff: 0 },
+    readingHabits: { lateDays: [], cutoffChanges: [] },
   };
 }
 
@@ -77,6 +78,15 @@ function normalizeRecordMap(value) {
   return Object.fromEntries(Object.entries(value).filter(([, item]) => isRecord(item)));
 }
 
+function normalizeReadingHabits(value) {
+  const v = isRecord(value) ? value : {};
+  return {
+    lateDays: [...new Set((Array.isArray(v.lateDays) ? v.lateDays : []).filter(isValidDateString))].slice(-60),
+    cutoffChanges: [...new Set((Array.isArray(v.cutoffChanges) ? v.cutoffChanges : [])
+      .filter((x) => typeof x === "string" && !Number.isNaN(Date.parse(x))))].slice(-60),
+  };
+}
+
 function loadState() {
   try {
     const raw = localStorage.getItem(STORE_KEY);
@@ -91,6 +101,7 @@ function loadState() {
       read: normalizeReadMap(s.read),
       dayNotes: normalizeStringMap(s.dayNotes),
       qt: normalizeRecordMap(s.qt),
+      readingHabits: normalizeReadingHabits(s.readingHabits),
       settings: normalizeSettings({ ...base.settings, ...(isRecord(s.settings) ? s.settings : {}) }),
     };
   } catch (e) {
@@ -114,7 +125,9 @@ function normalizeSettings(settings) {
     ? settings.ver2
     : ["niv", "saenew", "gae"].find((code) => code !== ver);
   const theme = ["light", "dark"].includes(settings.theme) ? settings.theme : "auto"; // 화면 모드: 기기 설정 따르기 / 밝게 / 어둡게
-  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2, theme };
+  const cutoff = Number(settings.readingCutoff);
+  const readingCutoff = Number.isInteger(cutoff) && cutoff >= 0 && cutoff <= 5 ? cutoff : 0;
+  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2, theme, readingCutoff };
 }
 
 // 계획에 포함되는 장 일련번호 순서. 끝 장이 시작 장보다 앞이면 요한계시록 다음 창세기로 이어 읽음
