@@ -325,7 +325,8 @@ const KIN_GROUPS_ALL = [
   ["동맹·아는 사이", (r) => r.kind === "ally" || r.kind === "other"],
 ];
 function relationGraphHtml(people, relations, opts = {}) {
-  if (!opts.kin) return relationGraphCore(people, relations);
+  const visibleRelations = opts.kin ? relations : relations.filter((r) => !r.adminOnly);
+  if (!opts.kin) return relationGraphCore(people, visibleRelations);
   const groups = opts.all ? KIN_GROUPS_ALL : KIN_GROUPS_MAIN;
   const panes = groups.map(([label, keep], i) =>
     `<div class="kin-pane" data-kinpane="${i}"${i ? " hidden" : ""}>${relationGraphCore(people, relations.filter(keep))}</div>`).join("");
@@ -337,7 +338,7 @@ function relationGraphHtml(people, relations, opts = {}) {
   </div>`;
 }
 function kinOpts() {
-  const kinBooks = new Set(["1ki", "2ki", "1ch", "2ch"]);
+  const kinBooks = new Set(["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch"]);
   return { kin: typeof isAdmin === "function" && isAdmin() && kinBooks.has(summaryBook), all: !!state.settings.graphAll };
 }
 document.addEventListener("click", (e) => {

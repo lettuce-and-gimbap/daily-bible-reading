@@ -310,7 +310,7 @@
         {"from":"레위인들","to":"르호보암","label":"힘이 된 이들","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"레위 사람들을 따라 하나님을 찾는 사람들이 이스라엘 모든 지파에서 예루살렘으로 왔어요. 그들 덕분에 삼 년 동안 유다가 강해졌고 르호보암의 나라도 든든해졌어요. 믿음이 나라를 강하게 했어요."},
         {"from":"마아가","to":"르호보암","label":"아내","kind":"family","directed":true,"weight":1,"verses":"20-21","note":"르호보암은 아내와 첩 가운데 마아가를 가장 사랑했어요. 그녀가 낳은 아들 아비야를 형제들의 우두머리로 세웠어요."},
         {"from":"아비야","to":"마아가","label":"아들","kind":"family","directed":true,"weight":1,"verses":"20, 22","note":"마아가가 아비야를 낳았고, 르호보암은 아비야를 형제들 가운데 우두머리로 세웠어요. 그를 왕으로 삼으려는 뜻이었고, 실제로 아비야가 르호보암의 뒤를 이었어요. 왕이 될 아들이에요."},
-        {"from":"아비야","to":"르호보암","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20-22","note":"아비야는 르호보암과 마아가 사이에서 난 아들이에요. 르호보암은 그를 여러 형제 가운데 우두머리로 삼고 왕으로 세우려 했어요."}
+        {"from":"아비야","to":"르호보암","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20-22","note":"아비야는 르호보암과 마아가 사이에서 난 아들이에요. 르호보암은 그를 여러 형제 가운데 우두머리로 삼고 왕으로 세우려 했어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"레위인과 신실한 이들이 모인 곳","weight":2},
@@ -425,9 +425,9 @@
       "rels": [
         {"from":"아사랴(오뎃의 아들)","to":"아사","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"1-7","note":"하나님의 영이 임한 아사랴는 아사에게 하나님을 찾으면 만나 주시고 버리면 버리신다고 전했어요. 그리고 강하게 하고 손을 약하게 하지 말라고 격려해 개혁을 이끌었어요."},
         {"from":"아사","to":"유다 백성","label":"언약 세운 왕","kind":"ally","directed":true,"weight":2,"verses":"12-15","note":"아사와 백성은 예루살렘에 모여 마음과 뜻을 다해 조상의 하나님을 찾기로 언약했어요. 그들은 큰 소리로 맹세하고 나팔을 불며 기뻐했고, 하나님은 평안을 주셨어요. 온 백성의 결단이에요."},
-        {"from":"아사","to":"마아가","label":"왕대비와 손자","kind":"family","directed":false,"weight":2,"verses":"16","note":"마아가는 아사의 아버지 아비야의 어머니이므로 아사에게는 할머니가 돼요. 성경은 왕실의 어른인 마아가를 왕의 어머니 곧 왕대비라는 호칭으로 불러요."},
+        {"from":"아사","to":"마아가","label":"왕대비와 손자","kind":"family","directed":false,"weight":2,"verses":"16","note":"마아가는 아사의 아버지 아비야의 어머니이므로 아사에게는 할머니가 돼요. 성경은 왕실의 어른인 마아가를 왕의 어머니 곧 왕대비라는 호칭으로 불러요.","adminOnly":true},
         {"from":"이스라엘에서 온 사람들","to":"아사","label":"따라온 이들","kind":"ally","directed":true,"weight":1,"verses":"9","note":"하나님이 아사와 함께하시는 것을 본 에브라임과 므낫세와 시므온 사람들이 많이 유다로 넘어왔어요. 그들도 함께 예루살렘에서 하나님을 찾는 언약에 참여했어요. 믿음이 사람을 모았어요."},
-        {"from":"아사","to":"마아가","label":"왕대비 자리에서 폐함","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"아사는 마아가가 아세라 우상을 만들자 왕대비 자리에서 물러나게 하고 그 우상을 찍어 불살랐어요."}
+        {"from":"아사","to":"마아가","label":"왕대비 자리에서 폐함","kind":"conflict","directed":true,"weight":2,"verses":"16","note":"아사는 마아가가 아세라 우상을 만들자 왕대비 자리에서 물러나게 하고 그 우상을 찍어 불살랐어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"온 백성이 언약한 곳","weight":3},
@@ -524,7 +524,7 @@
         {"from":"아람 왕","to":"아합","label":"노린 적","kind":"conflict","directed":true,"weight":1,"verses":"30, 33","note":"아람 왕은 병거 지휘관들에게 다른 사람은 말고 이스라엘 왕만 치라고 명했어요. 아합은 변장해서 피하려 했지만 한 사람이 무심코 쏜 화살이 그의 갑옷 틈을 맞혔어요."},
         {"from":"하나님","to":"여호사밧","label":"도우신 분","kind":"ally","directed":true,"weight":2,"verses":"31","note":"왕의 옷을 입은 여호사밧을 아람 병거들이 아합으로 알고 에워쌌어요. 그가 부르짖자 하나님이 도우셔서, 적들이 아합이 아니라는 것을 알고 뒤쫓지 않았어요."},
         {"from":"사백 선지자","to":"아합","label":"듣기 좋은 예언","kind":"other","directed":true,"weight":1,"verses":"5, 11","note":"아합이 모은 선지자 사백 명은 올라가면 하나님이 성을 넘겨주실 거라고 왕이 듣고 싶은 말만 했어요. 하나님의 뜻이 아니라 왕의 뜻을 따른 거짓 예언이었어요."},
-        {"from":"이름 없는 병사","to":"아합","label":"화살로 치명상 입힘","kind":"conflict","directed":true,"weight":2,"verses":"33-34","note":"한 병사가 특별히 아합을 겨냥하지 않고 활을 당겼는데 화살이 갑옷 솔기 사이에 맞았어요. 아합은 그 상처로 해 질 무렵 죽었어요."}
+        {"from":"이름 없는 병사","to":"아합","label":"화살로 치명상 입힘","kind":"conflict","directed":true,"weight":2,"verses":"33-34","note":"한 병사가 특별히 아합을 겨냥하지 않고 활을 당겼는데 화살이 갑옷 솔기 사이에 맞았어요. 아합은 그 상처로 해 질 무렵 죽었어요.","adminOnly":true}
       ],
       "places": [
         {"name":"사마리아","where":"이스라엘의 도성","what":"두 왕이 보좌에 앉아 예언을 들은 곳","weight":2},
@@ -686,7 +686,7 @@
         {"from":"백부장들","to":"여호야다","label":"언약한 이들","kind":"ally","directed":true,"weight":2,"verses":"1","note":"여호야다가 백부장 다섯 사람과 언약을 맺었어요. 백부장들이 함께 나서 왕을 세우는 일이 이루어졌어요."},
         {"from":"레위인들","to":"요아스","label":"지킨 이들","kind":"ally","directed":true,"weight":2,"verses":"7","note":"성전에서 일하던 레위인들이 이날은 무기를 들고 어린 왕 곁을 지키는 호위대가 되었어요."},
         {"from":"백성","to":"요아스","label":"환호한 백성","kind":"ally","directed":true,"weight":2,"verses":"13, 21","note":"나라 사람들이 즐거워하며 나팔을 불고 왕 만세를 외쳤어요. 아달랴의 악한 통치가 여섯 해 만에 끝나자 모두 기뻐했어요."},
-        {"from":"백부장들","to":"아달랴","label":"끌어내 죽인 지휘관들","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"여호야다의 명령을 받은 백부장들이 아달랴를 성전 밖으로 끌어내 왕궁 말 문 어귀에서 죽였어요."}
+        {"from":"백부장들","to":"아달랴","label":"끌어내 죽인 지휘관들","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"여호야다의 명령을 받은 백부장들이 아달랴를 성전 밖으로 끌어내 왕궁 말 문 어귀에서 죽였어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘 성전","where":"하나님의 집","what":"요아스가 왕관을 쓴 곳","weight":3},
@@ -717,12 +717,12 @@
       ],
       "rels": [
         {"from":"여호야다","to":"요아스","label":"이끈 제사장","kind":"ally","directed":true,"weight":3,"verses":"2, 15-16","note":"여호야다는 요아스를 구해 길러 왕으로 세운 어른이에요. 그가 사는 동안 요아스는 바르게 행했지만, 죽은 뒤에는 곧 흔들렸어요."},
-        {"from":"요아스","to":"스가랴(여호야다의 아들)","label":"돌로 치라 명한 왕","kind":"conflict","directed":true,"weight":3,"verses":"20-22","note":"스가랴가 하나님을 버렸다고 책망하자 요아스는 신하들에게 명령해 성전 뜰에서 그를 돌로 쳐 죽이게 했어요. 요아스가 직접 돌을 던진 것으로 단정하지 않도록 본문의 명령 구조를 그대로 반영했어요."},
+        {"from":"요아스","to":"스가랴(여호야다의 아들)","label":"돌로 치라 명한 왕","kind":"conflict","directed":true,"weight":3,"verses":"20-22","note":"스가랴가 하나님을 버렸다고 책망하자 요아스는 신하들에게 명령해 성전 뜰에서 그를 돌로 쳐 죽이게 했어요. 요아스가 직접 돌을 던진 것으로 단정하지 않도록 본문의 명령 구조를 그대로 반영했어요.","adminOnly":true},
         {"from":"스가랴(여호야다의 아들)","to":"여호야다","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20, 22","note":"스가랴는 요아스를 살린 여호야다의 아들이에요. 요아스는 아버지에게 받은 은혜를 잊고 그 아들을 죽여, 은혜를 원수로 갚은 셈이에요."},
         {"from":"유다 지도자들","to":"요아스","label":"꾄 신하","kind":"other","directed":true,"weight":2,"verses":"17-18","note":"여호야다가 죽자 지도자들이 와서 절하며 왕을 부추겼어요. 왕이 그 말을 듣고 성전을 버려 아세라와 우상을 섬기자 나라 위에 진노가 임했어요."},
         {"from":"아람 군대","to":"요아스","label":"이긴 적","kind":"conflict","directed":true,"weight":2,"verses":"23-24","note":"아람 군대는 수가 적었는데도 큰 유다 군대를 이겼어요. 유다가 조상의 하나님을 버렸기 때문에 하나님이 그들 손에 넘기셨어요."},
         {"from":"사밧","to":"요아스","label":"죽인 신하","kind":"conflict","directed":true,"weight":1,"verses":"25-26","note":"암몬 여인의 아들 사밧과 모압 여인의 아들 여호사밧이 스가랴의 피 때문에 병든 요아스를 침상에서 죽였어요."},
-        {"from":"여호사밧(시므릿의 아들)","to":"요아스","label":"죽인 신하","kind":"conflict","directed":true,"weight":1,"verses":"25-26","note":"여호사밧은 사밧과 함께 병든 요아스를 침상에서 죽였어요. 두 신하는 여호야다의 아들들이 흘린 피 때문에 반역했어요."}
+        {"from":"여호사밧(시므릿의 아들)","to":"요아스","label":"죽인 신하","kind":"conflict","directed":true,"weight":1,"verses":"25-26","note":"여호사밧은 사밧과 함께 병든 요아스를 침상에서 죽였어요. 두 신하는 여호야다의 아들들이 흘린 피 때문에 반역했어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘 성전 뜰","where":"하나님의 집 마당","what":"스가랴가 돌에 맞아 죽은 곳","weight":3},
@@ -977,7 +977,7 @@
         {"from":"천사","to":"산헤립","label":"친 천사","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"하나님이 천사를 보내 앗수르 진영의 용사와 지휘관을 멸하시니 산헤립이 부끄러워 돌아갔어요."},
         {"from":"산헤립의 아들들","to":"산헤립","label":"죽인 아들들","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"산헤립이 자기 신의 전에 들어갔을 때 아들들이 칼로 그를 죽였어요."},
         {"from":"산헤립의 신하들","to":"하나님","label":"비방한 이들","kind":"conflict","directed":true,"weight":2,"verses":"16-19","note":"산헤립의 신하들은 하나님을 세상 나라들의 신처럼 깎아내렸어요. 다른 나라 신들도 구하지 못했으니 유다 하나님도 못 한다고 비웃었어요."},
-        {"from":"산헤립의 아들들","to":"산헤립","label":"아들들","kind":"family","directed":true,"weight":1,"verses":"21","note":"산헤립을 신전에서 칼로 죽인 사람들은 그의 친아들들이었어요. 같은 두 사람 사이의 혈연과 살해 사건을 각각 볼 수 있어요."}
+        {"from":"산헤립의 아들들","to":"산헤립","label":"아들들","kind":"family","directed":true,"weight":1,"verses":"21","note":"산헤립을 신전에서 칼로 죽인 사람들은 그의 친아들들이었어요. 같은 두 사람 사이의 혈연과 살해 사건을 각각 볼 수 있어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"앗수르에 포위된 성","weight":3},
@@ -1010,7 +1010,7 @@
         {"from":"하나님","to":"므낫세","label":"돌아오게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"13","note":"하나님이 그 간구를 들으시고 므낫세를 예루살렘으로 돌려보내셨어요. 그때 므낫세는 여호와가 참 하나님이신 것을 깨달았어요."},
         {"from":"아몬","to":"므낫세","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20-22","note":"므낫세가 죽고 아몬이 왕이 되었는데, 아버지가 만든 우상에게 제사하며 겸손하지 않았어요."},
         {"from":"아몬의 신하들","to":"아몬","label":"죽인 신하","kind":"conflict","directed":true,"weight":1,"verses":"24","note":"신하들이 반역해 궁중에서 아몬을 죽였어요. 그러나 땅의 백성이 그 반역자들을 죽이고 어린 요시야를 왕으로 세웠어요."},
-        {"from":"요시야","to":"아몬","label":"아들","kind":"family","directed":true,"weight":2,"verses":"25","note":"요시야는 아몬의 아들이에요. 백성은 아몬을 죽인 반역자들을 처단하고 요시야를 왕으로 세웠어요."}
+        {"from":"요시야","to":"아몬","label":"아들","kind":"family","directed":true,"weight":2,"verses":"25","note":"요시야는 아몬의 아들이에요. 백성은 아몬을 죽인 반역자들을 처단하고 요시야를 왕으로 세웠어요.","adminOnly":true}
       ],
       "places": [
         {"name":"바벨론","where":"바벨론","what":"므낫세가 끌려가 기도한 곳","weight":3},
@@ -1118,11 +1118,11 @@
         {"from":"하나님","to":"하나님의 사신들","label":"보내신 분","kind":"ally","directed":true,"weight":2,"verses":"15-16","note":"하나님이 백성을 아끼셔서 부지런히 사신들을 보내셨지만 백성은 그들을 비웃고 선지자들을 욕했어요."},
         {"from":"하나님","to":"고레스","label":"마음을 움직이심","kind":"ally","directed":true,"weight":3,"verses":"22-23","note":"하나님이 바사 왕 고레스의 마음을 감동하시자 고레스가 예루살렘에 성전을 지으라고 온 나라에 공포했어요."},
         {"from":"애굽 왕","to":"여호아하스","label":"폐위한 왕","kind":"conflict","directed":true,"weight":1,"verses":"3","note":"애굽 왕이 예루살렘에서 여호아하스를 폐위하고 은과 금을 벌금으로 물렸어요."},
-        {"from":"여호아하스","to":"요시야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"여호아하스는 요시야의 아들이며, 백성이 그를 아버지 뒤를 이을 왕으로 세웠어요."},
-        {"from":"여호야김","to":"요시야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"여호야김의 본래 이름은 엘리아김이며 요시야의 아들이에요. 애굽 왕이 이름을 바꾸고 왕으로 세웠어요."},
-        {"from":"여호야긴","to":"여호야김","label":"아들","kind":"family","directed":true,"weight":1,"verses":"8-9","note":"여호야긴은 여호야김의 아들이며 아버지 뒤를 이어 왕이 되었어요."},
-        {"from":"시드기야","to":"여호야긴","label":"숙부","kind":"family","directed":true,"weight":1,"verses":"10","note":"시드기야는 여호야긴의 숙부예요. 느부갓네살이 여호야긴을 바벨론으로 끌고 간 뒤 시드기야를 왕으로 세웠어요."},
-        {"from":"여호아하스","to":"여호야김","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1-4","note":"여호아하스와 여호야김은 모두 요시야의 아들이에요. 여호아하스가 폐위된 뒤 형제 여호야김이 왕이 되었어요."}
+        {"from":"여호아하스","to":"요시야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"1","note":"여호아하스는 요시야의 아들이며, 백성이 그를 아버지 뒤를 이을 왕으로 세웠어요.","adminOnly":true},
+        {"from":"여호야김","to":"요시야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"4","note":"여호야김의 본래 이름은 엘리아김이며 요시야의 아들이에요. 애굽 왕이 이름을 바꾸고 왕으로 세웠어요.","adminOnly":true},
+        {"from":"여호야긴","to":"여호야김","label":"아들","kind":"family","directed":true,"weight":1,"verses":"8-9","note":"여호야긴은 여호야김의 아들이며 아버지 뒤를 이어 왕이 되었어요.","adminOnly":true},
+        {"from":"시드기야","to":"여호야긴","label":"숙부","kind":"family","directed":true,"weight":1,"verses":"10","note":"시드기야는 여호야긴의 숙부예요. 느부갓네살이 여호야긴을 바벨론으로 끌고 간 뒤 시드기야를 왕으로 세웠어요.","adminOnly":true},
+        {"from":"여호아하스","to":"여호야김","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1-4","note":"여호아하스와 여호야김은 모두 요시야의 아들이에요. 여호아하스가 폐위된 뒤 형제 여호야김이 왕이 되었어요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"성전과 성벽이 불타고 헐린 곳","weight":3},
