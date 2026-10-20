@@ -140,6 +140,7 @@ function renderStats() {
     ${pr ? planTableCardHtml(pr) : ""}
 
     ${accountCardHtml()}
+    ${feedbackCardHtml()}
 
     ${reminderCardHtml()}
 
@@ -158,6 +159,7 @@ function renderStats() {
     </section>`;
 
   bindAccountCard();
+  bindFeedbackCard();
   bindReminderCard();
   bindExportCard();
 

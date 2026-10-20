@@ -233,7 +233,7 @@ function bindAccountCard() {
         await accountApi("logout", {}).catch(() => {});
         account = null;
         saveAccount();
-        refreshAccountCard();
+        renderStats();
       }
     } catch (err) {
       showToast(err.message);

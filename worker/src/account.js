@@ -3,6 +3,8 @@
 // - 기록(state JSON)은 사용자마다 한 덩어리로 저장. 합치기(merge)는 앱이 하고 서버는 마지막 것을 보관
 // - 연결 코드(QR): 로그인한 기기가 10분짜리 일회용 코드를 만들면 새 기기는 비밀번호 없이 그 코드로 로그인
 
+import { feedback } from './feedback.js';
+
 const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA = 1_000_000; // 기록 JSON 최대 1MB (보통 수십 KB)
 const LINK_MS = 10 * 60 * 1000;
@@ -50,6 +52,7 @@ export async function account(pathname, request, env, json) {
   const session = token && await db.prepare("SELECT user_id, last FROM sessions WHERE token_hash = ?").bind(await sha(token)).first();
   if (!session) return json({ error: "로그인이 필요해요" }, 401);
   const uid = session.user_id;
+  if (pathname === '/account/feedback' || pathname === '/account/feedback/audio' || pathname === '/account/feedback/read') return feedback(pathname, request, db, uid, body, json);
   if (now - session.last > 3600_000) await db.prepare("UPDATE sessions SET last = ? WHERE token_hash = ?").bind(now, await sha(token)).run();
 
   if (pathname === "/account/data" && request.method === "GET") {

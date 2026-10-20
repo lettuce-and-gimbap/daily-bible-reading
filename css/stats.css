@@ -370,3 +370,10 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 .cal.mode-read .m-qt { display: none; }
 .cal.mode-qt .m-read { display: none; }
 .qt-ref { font-weight: 600; }
+
+#feedback-text { width:100%; box-sizing:border-box; margin:10px 0; }
+#feedback-card audio { display:block; max-width:100%; margin:10px 0; }
+#feedback-card audio[hidden] { display:none; }
+#feedback-inbox { margin-top:20px; }
+.feedback-item { padding:14px 0; border-bottom:1px solid var(--line, #ddd); }
+.feedback-message { white-space:pre-wrap; overflow-wrap:anywhere; }
