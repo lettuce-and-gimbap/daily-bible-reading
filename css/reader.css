@@ -544,4 +544,14 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .graph-pdf small { color: #536357; }
 .graph-pdf .pdf-item { padding: 10px 0; border-bottom: 1px solid #dce5df; break-inside: avoid; }
 .graph-pdf .pdf-diagram { break-inside: avoid; }
-.graph-pdf img { display: block; margin: 16px auto; max-width: 100%; width: 100%; height: auto; max-height: 680px; object-fit: contain; }
+.graph-pdf img { display: block; margin: 16px auto; max-width: 100%; width: 100%; height: auto; max-height: 420px; object-fit: contain; }
+
+.sum-pdf-download { display: block; margin: 0 0 14px; }
+.graph-pdf .pdf-people { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.graph-pdf .pdf-person { width: calc(50% - 10px); box-sizing: border-box; padding: 5px 0; break-inside: avoid; border-bottom: 1px solid #dce5df; }
+.graph-pdf .pdf-person h3 { margin: 0; font-size: 15px; line-height: 1.5; }
+.graph-pdf .pdf-person p { margin: 0; font-size: 13px; line-height: 1.5; }
+.graph-pdf .pdf-person-heading { margin: 14px 0 0; padding: 5px 9px; background: #edf5ef; color: #2d6a55; }
+.graph-pdf h4 { margin: 0 0 3px; font-size: 14px; }
+.graph-pdf .pdf-item { padding: 7px 0; }
+.graph-pdf .pdf-item p { margin: 0; font-size: 14px; }

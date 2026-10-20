@@ -905,6 +905,7 @@ function renderSummaryTab(body, day) {
         <p class="muted small hint">검색 결과로 연결돼요. 본문을 읽은 뒤 궁금한 장의 해설을 찾아볼 때 쓰세요.</p>
       </section>
       <p class="muted small hint ai-note">🤖 AI 작성 · 연구용 성경 해설과 인물·지명을 대조했지만, 틀린 곳이 있을 수 있어요. 본문을 읽기 전에 흐름을 잡는 용도로 봐 주세요.</p>`;
+    moveSummaryPdfButton(body);
     return;
   }
   const key0 = summaryRanges(day);
@@ -957,6 +958,7 @@ function renderSummaryTab(body, day) {
         <p class="muted small hint">검색 결과로 연결돼요. 본문을 읽은 뒤 궁금한 장의 해설을 찾아볼 때 쓰세요.</p>
       </section>
       <p class="muted small hint">AI가 정리한 요약이에요. 본문을 읽기 전에 흐름을 잡는 용도로만 봐 주세요. 찬양은 제목이 다를 수 있어 검색으로 연결해요.</p>`;
+    moveSummaryPdfButton(body);
     return;
   }
 
