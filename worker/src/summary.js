@@ -52,14 +52,15 @@ const SYSTEM = `너는 성경 통독 앱의 도우미야. 오늘 읽을 성경 �
 - places: 이번 분량의 주요 지역 2~5곳. name은 개역개정 표기, note는 25자 안쪽으로 이곳에서 일어난 일이나 위치 설명.
 - story: 정확히 2문단. 두 문단을 합쳐 공백 포함 520자 안쪽(절대 600자를 넘지 않는다). 중학교 2학년에게 이야기해 주듯 쉬운 입말(해요체)로 쓴다. 어려운 한자어는 풀어 쓴다(예: 언약 → 하나님과 한 약속, 성막 → 하나님을 만나는 천막, 제사장 → 하나님 앞에서 사람들을 대신하는 사람). 1문단은 무슨 일이 있었는지 흐름, 2문단은 이 분량에서 하나님은 어떤 분이고 사람들은 어떻게 반응했는지. 훈계하거나 설교하는 말투는 피한다.
 - songs: 이 분량의 분위기·주제와 어울리는 찬양 2곡. 새찬송가·통일찬송가 곡은 빼고, 한국 교회에서 실제로 널리 불리는 CCM·워십 곡(예수전도단, 마커스, 어노인팅, 제이어스, 소망, 이천 등)만 고른다. 제목과 아티스트가 확실하지 않은 곡은 쓰지 말고 확실한 다른 곡을 고른다. why는 40자 안쪽으로 왜 어울리는지.
-- 이모지와 마크다운 기호는 쓰지 않는다.`;
+- 인물 설명과 관계 설명은 처음 읽는 사람도 이해하도록 누가 누구에게 무엇을 했는지 쉬운 해요체로 쓴다. 중요한 말만 **굵게** 표시할 수 있다. 이름과 관계 label에는 마크다운을 넣지 않는다. HTML과 이모지는 쓰지 않는다.
+- relations의 note에는 그 관계가 드러난 사건과 이유를 쉬운 말로 1~2문장으로 설명하고, ref에는 해당 성경 장·절을 쓴다.`;
 
 // Gemini 응답 스키마 (OpenAPI 형식 일부만 지원해서 additionalProperties는 쓰지 않음)
 const SCHEMA = {
   type: "OBJECT",
   properties: {
     people: { type: "ARRAY", items: { type: "OBJECT", properties: { name: { type: "STRING" }, role: { type: "STRING" } }, required: ["name", "role"] } },
-    relations: { type: "ARRAY", items: { type: "OBJECT", properties: { from: { type: "STRING" }, to: { type: "STRING" }, label: { type: "STRING" }, kind: { type: "STRING", enum: ["family", "ally", "conflict", "other"] }, directed: { type: "BOOLEAN" } }, required: ["from", "to", "label", "kind", "directed"] } },
+    relations: { type: "ARRAY", items: { type: "OBJECT", properties: { from: { type: "STRING" }, to: { type: "STRING" }, label: { type: "STRING" }, kind: { type: "STRING", enum: ["family", "ally", "conflict", "other"] }, directed: { type: "BOOLEAN" }, note: { type: "STRING" }, ref: { type: "STRING" } }, required: ["from", "to", "label", "kind", "directed", "note", "ref"] } },
     places: { type: "ARRAY", items: { type: "OBJECT", properties: { name: { type: "STRING" }, note: { type: "STRING" } }, required: ["name", "note"] } },
     story: { type: "ARRAY", items: { type: "STRING" } },
     songs: { type: "ARRAY", items: { type: "OBJECT", properties: { title: { type: "STRING" }, artist: { type: "STRING" }, why: { type: "STRING" } }, required: ["title", "artist", "why"] } },
@@ -98,7 +99,7 @@ export function cleanSummary(raw) {
   const seenRel = new Set();
   const relations = (Array.isArray(raw.relations) ? raw.relations : [])
     .map((r) => ({ from: clip(r && r.from, 20), to: clip(r && r.to, 20), label: clip(r && r.label, 14),
-      kind: KINDS.includes(r && r.kind) ? r.kind : "other", directed: !!(r && r.directed) }))
+      kind: KINDS.includes(r && r.kind) ? r.kind : "other", directed: !!(r && r.directed), notes: r && r.note ? [{ text: clip(r.note, 400), ref: clip(r.ref, 60) }] : [] }))
     .filter((r) => r.label && r.from !== r.to && seenName.has(r.from) && seenName.has(r.to)
       && !seenRel.has(`${r.from}|${r.to}|${r.label}`) && seenRel.add(`${r.from}|${r.to}|${r.label}`)).slice(0, 12);
   const places = (Array.isArray(raw.places) ? raw.places : [])

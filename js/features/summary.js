@@ -310,10 +310,11 @@ function relationGraphCore(people, relations, opts = {}) {
   const edges = rgEdgeGeom(rels, pos, 150);
 
   const id = `rg${++rgSeq}`;
-  rgModels[id] = { names, rels, pos, roles: Object.fromEntries(people.map((p) => [p.name, p.role || ""])), familyDetail: !!opts.familyDetail, VW, VH };
+  rgModels[id] = { names, rels, pos, roles: Object.fromEntries(people.map((p) => [p.name, p.role || ""])), people, familyDetail: !!opts.familyDetail, VW, VH };
   Object.keys(rgModels).slice(0, -20).forEach((k) => delete rgModels[k]); // 오래된 것은 버림
   const kinds = [...new Set(rels.map((r) => r.kind))].filter((k) => REL_COLOR[k]);
   return `
+    <button type="button" class="btn ghost small" data-rg-pdf="${id}">관계도 · 설명 PDF 다운로드</button>
     <p class="rg-hint">꾹 눌러서 자세한 내용을 확인해보아요</p>
     <div class="rg-wrap" data-rg="${id}" tabindex="0" aria-label="관계도를 꾹 누르면 자세히 볼 수 있어요">
       <svg class="rg" viewBox="0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}" role="img" aria-label="등장 인물 관계도: ${esc(rels.map((r) => `${r.from}은(는) ${r.to}의 ${r.label}`).join(", "))}">
@@ -514,7 +515,7 @@ function rgOpen(id) {
   const noteList = (r) => (r.notes || []).length
     ? `<ul class="rg-notes">${r.notes.map((n, k) => `<li>${n.src && n.src.verses
       ? `<button type="button" class="rg-src" data-src="${k}" aria-expanded="false">${esc(n.ref)} <span>원문 보기 (개역개정·쉬운성경) ▾</span></button>`
-      : `<small>${esc(n.ref)}</small>`}<p>${esc(n.text)}</p><div class="rg-orig" hidden></div></li>`).join("")}</ul>`
+      : `<small>${esc(n.ref)}</small>`}<p>${summaryMarkdown(n.text)}</p><div class="rg-orig" hidden></div></li>`).join("")}</ul>`
     : `<p class="muted small">이 관계를 풀어 줄 구절 설명은 아직 준비 중이에요.</p>`;
   const relLine = (r) => `<b>${esc(r.from)}</b><span class="rg-arrow">${r.directed ? "→" : "↔"}</span><b>${esc(r.to)}</b>
     <em style="color:${REL_COLOR[r.kind] || REL_COLOR.other}">${esc(r.label)}</em><span class="rg-kind">${REL_NAME[r.kind] || ""}</span>`;
@@ -571,7 +572,7 @@ function rgOpen(id) {
     const groups = new Map();
     mine.forEach((x) => { const o = x.r.from === name ? x.r.to : x.r.from; if (!groups.has(o)) groups.set(o, []); groups.get(o).push(x); });
     const ordered = [...groups.entries()].sort((a, b) => (nodeAsc ? 1 : -1) * a[0].localeCompare(b[0], "ko"));
-    detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${esc(m.roles[name])}</span>` : ""}
+    detail.innerHTML = `<div class="rg-person"><b>${esc(name)}</b>${m.roles[name] ? `<span>${summaryMarkdown(m.roles[name])}</span>` : ""}
         ${groups.size > 1 ? `<button type="button" class="rg-nsort" data-nsort aria-label="연결된 사람 순서 바꾸기">연결된 사람 가나다 ${nodeAsc ? "▲" : "▼"}</button>` : ""}</div>
       ${familyLinksHtml(name)}
       <ul class="rg-rels">${ordered.map(([o, xs]) => `<li class="rg-grp${xs.length > 1 ? " two" : ""}">${xs.length > 1 ? `<small class="rg-grp-h">${esc(o)}와(과) 서로 이어진 관계 ${xs.length}개</small>` : ""}${xs.map(({ r, i }) => `<button type="button" data-pick="${i}">${relLine(r)}</button>`).join("")}</li>`).join("")}</ul>
@@ -814,13 +815,13 @@ function chapChipsHtml(s) {
 
 function staticSummaryHtml(s) {
   const flow = s.flowMode === "story"
-    ? s.flow.map((f) => `${s.flow.length > 1 ? `<p class="sum-ref">${esc(f.ref)}</p>` : ""}<p class="sum-story">${esc(f.text)}</p>`).join("")
-    : `<ol class="sum-lines">${s.flow.map((f) => `<li><b>${esc(f.ref)}</b><span>${esc(f.text)}</span></li>`).join("")}</ol>`;
+    ? s.flow.map((f) => `${s.flow.length > 1 ? `<p class="sum-ref">${esc(f.ref)}</p>` : ""}<p class="sum-story">${summaryMarkdown(f.text)}</p>`).join("")
+    : `<ol class="sum-lines">${s.flow.map((f) => `<li><b>${esc(f.ref)}</b><span>${summaryMarkdown(f.text)}</span></li>`).join("")}</ol>`;
   const events = s.events.length ? `
     <section class="tool-card sum-card">
       <h3 class="label">${s.eventsTitle}</h3>
       <ol class="sum-events">${s.events.map((e) => `
-        <li><div><b>${esc(e.title)}</b><small>${esc(e.ref)}</small></div><p>${esc(e.text)}</p></li>`).join("")}</ol>
+        <li><div><b>${esc(e.title)}</b><small>${esc(e.ref)}</small></div><p>${summaryMarkdown(e.text)}</p></li>`).join("")}</ol>
     </section>` : "";
   const places = s.places.length ? `
     <section class="tool-card sum-card">
@@ -873,7 +874,7 @@ function peopleBlockHtml(people, labelOf) {
   return `<input type="search" class="sum-find" placeholder="인물 찾기" aria-label="인물 찾기" autocomplete="off">
     <ul class="sum-people">${sorted.map((p) => {
       const nm = labelOf ? labelOf(p) : (p.display || p.name);
-      return `<li data-name="${esc(nm)}"><b>${esc(nm)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${esc(p.role)}</span>` : ""}</li>`;
+      return `<li data-name="${esc(nm)}"><b>${esc(nm)}${p.where ? `<small>${esc(p.where)}</small>` : ""}</b>${p.role ? `<span>${summaryMarkdown(p.role)}</span>` : ""}</li>`;
     }).join("")}</ul>`;
 }
 // 찾기 칸에 적으면 이름이 들어간 인물만 남김
@@ -934,7 +935,7 @@ function renderSummaryTab(body, day) {
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">오늘의 이야기</h3>
-        ${data.story.map((p) => `<p class="sum-story">${esc(p)}</p>`).join("")}
+        ${data.story.map((p) => `<p class="sum-story">${summaryMarkdown(p)}</p>`).join("")}
       </section>
       <section class="tool-card sum-card">
         <h3 class="label">오늘 말씀과 어울리는 찬양</h3>

@@ -533,3 +533,15 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .sum-find { width: 100%; box-sizing: border-box; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: .9rem; padding: 6px 2px; outline: none; margin-bottom: 8px; }
 .sum-find:focus { border-bottom-color: var(--accent); }
 .sum-people li[hidden] { display: none; }
+
+/* PDF uses a fixed A4 content width, independent of the phone viewport. */
+.graph-pdf-host { position: fixed; top: 0; left: -10000px; width: 700px; }
+.graph-pdf { width: 700px; padding: 8px; box-sizing: border-box; background: white; color: #17251d; font: 15px/1.75 sans-serif; }
+.graph-pdf h1 { font-size: 27px; margin: 0 0 8px; }
+.graph-pdf h2 { font-size: 21px; margin: 24px 0 12px; color: #2d6a55; }
+.graph-pdf h3 { font-size: 16px; margin: 0 0 5px; }
+.graph-pdf p { margin: 0 0 10px; overflow-wrap: anywhere; }
+.graph-pdf small { color: #536357; }
+.graph-pdf .pdf-item { padding: 10px 0; border-bottom: 1px solid #dce5df; break-inside: avoid; }
+.graph-pdf .pdf-diagram { break-inside: avoid; }
+.graph-pdf img { display: block; margin: 16px auto; max-width: 100%; width: 100%; height: auto; max-height: 680px; object-fit: contain; }

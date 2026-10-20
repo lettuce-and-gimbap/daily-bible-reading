@@ -64,7 +64,7 @@ async function renderQtRelations() {
       ${g.rels.map((r) => `
         <div class="qt-rel">
           <b>${esc(r.from)} ${r.directed ? "→" : "↔"} ${esc(r.to)} <em>${esc(r.label)}</em></b>
-          ${(r.notes || []).map((n) => `<small>${esc(n.ref)}</small><p class="qt-rel-note">${esc(n.text)}</p>`).join("")}
+          ${(r.notes || []).map((n) => `<small>${esc(n.ref)}</small><p class="qt-rel-note">${summaryMarkdown(n.text)}</p>`).join("")}
           <textarea class="qt-rel-mine" data-rkey="${esc(keyOf(r))}" rows="4" placeholder="이 관계에서 내가 느낀 점을 자세히 적어 보세요">${esc(notes[keyOf(r)] || "")}</textarea>
         </div>`).join("")}
     </section>` : ""}`;
