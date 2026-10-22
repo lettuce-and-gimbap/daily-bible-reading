@@ -137,7 +137,7 @@ export async function mountPixelWorld(shell, options) {
   function select(i) {
     selected = i;
     shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) === i));
-    const n=npcs[i], style=characterStyle(n.name,i,n.role);
+    const n=npcs[i], style=characterStyle(n.name,i,n.role,n.refs);
     shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 걸어가요.</p>`;
     renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 이동해요.`);
   }
@@ -429,7 +429,7 @@ function drawObject(c,o) { drawWorldObject(c,o); }
 function drawNpc(c,n,index,time,selected,acting) {
   const x=Math.round(n.x*TILE),y=Math.round(n.y*TILE);
   if(selected){c.strokeStyle="#ffe7a2";c.lineWidth=2;c.strokeRect(x-39,y-119,78,132);}
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walk:n.path.length||acting?Math.sin(time*12):0,action:n.action,time,facing:n.facing||1});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walk:n.path.length||acting?Math.sin(time*12):0,action:n.action,time,facing:n.facing||1});
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
@@ -439,6 +439,6 @@ function drawLifted(c,drag,time) {
   const groundY=Math.max(5,Math.min(15,Math.round(drag.p.y+3)))*TILE;
   c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
   c.save();c.translate(x,y-96);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+96);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role),x,y,{scale:2,hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5});
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }

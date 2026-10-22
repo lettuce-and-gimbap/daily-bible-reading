@@ -1,6 +1,6 @@
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
-export const CHARACTER_STYLES = Object.fromEntries(['elijah','elisha','jezebel','ahab','naboth','micaiah','jehoshaphat','benhadad','ahaziah','angel','ruth','boaz'].map(k=>[k,APPEARANCES[k]]));
+export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
 export const characterStyle = appearanceFor;
 export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
@@ -32,16 +32,26 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.fur){for(let i=0;i<5;i++){r(7+i*2,22+i%2,1,2,'#614f39');r(8+i*2,29-i%2,1,2,'#d4b68b');}}
   if(style.trim){r(7,21,1,5,style.trim);r(16,21,1,5,style.trim);r(7,31,10,1,style.trim);}
   if(style.pattern){for(let i=0;i<3;i++)r(8+i*3,23,1,8,['#7b8d7c','#b96c75','#cfac68'][i]);}
+  if(style.collar===1){r(9,21,1,2,style.accent);r(14,21,1,2,style.accent);}
+  if(style.collar===2)r(10,22,4,1,style.accent);
+  if(style.hem===1)r(8,31,8,1,style.accent);
+  if(style.hem===2){r(8,29,1,3,style.accent);r(15,29,1,3,style.accent);}
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
   ctx.save();ctx.translate(0,4);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
   r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
   r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);
+  if(style.longHair){r(4,12,3,7,outline);r(17,12,3,7,outline);r(5,12,2,6,hair);r(17,12,2,6,hair);}
   r(7,6,10,7,outline);r(8,13,8,1,outline);r(9,14,6,1,outline);
   r(8,6,8,1,skin);r(7,7,10,5,skin);r(8,12,8,2,skin);r(10,14,4,1,skin);
   // 눈 옆에는 피부 한 칸을 남겨 옆머리와 눈이 붙지 않게 한다.
   r(7,6,3,1,hair);r(7,7,1,1,hair);r(15,6,2,1,hair);r(6,7,1,5,hair);r(17,7,1,5,hair);
   r(8,4,4,1,"#ffffff33");
+  if(!style.bald&&!style.hood){
+    if(style.fringe===1)r(10,6,2,1,hair);
+    if(style.fringe===2){r(13,6,2,1,hair);r(15,7,1,1,hair);}
+    if(style.fringe===3)r(10,5,4,1,"#ffffff22");
+  }
   if(style.bald){r(8,3,8,3,skin);r(7,5,10,2,skin);r(7,7,1,1,skin);}
   r(9+look,9,1,2,outline);r(14+look,9,1,2,outline);
   r(8,11,1,1,blush);r(15,11,1,1,blush);r(11,12,2,1,"#a37363");
@@ -56,6 +66,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");}
   ctx.restore();
   if(style.jewels)r(10,22,4,1,'#e0ba67');
+  if(style.tambourine){r(18,24,6,7,outline);r(19,25,4,5,'#c4a068');r(20,26,2,3,'#f1dbad');r(19,24,1,1,'#e6c376');r(22,30,1,1,'#e6c376');}
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
   if(style.scroll){r(18,25,5,7,outline);r(19,26,3,5,'#eee0ad');r(18,25,5,1,'#b39362');r(18,31,5,1,'#b39362');}
   if(style.grapes){r(-2,27,6,6,'#745e40');r(-1,26,4,1,'#68a06b');r(-1,27,2,2,'#80679e');r(1,28,2,2,'#937db0');r(0,30,2,1,'#80679e');}
@@ -108,7 +119,8 @@ export function drawWorldBackground(c) {
 }
 
 export function drawDesignBoard(c) {
-  const W=1200,H=1380;c.canvas.width=W;c.canvas.height=H;c.imageSmoothingEnabled=false;
+  const rows=Math.ceil(Object.keys(CHARACTER_STYLES).length/6);
+  const W=1200,H=860+rows*260;c.canvas.width=W;c.canvas.height=H;c.imageSmoothingEnabled=false;
   c.fillStyle="#f3ecdb";c.fillRect(0,0,W,H);
   c.fillStyle="#16343c";c.fillRect(0,0,W,108);
   c.fillStyle="#f6d894";c.font="bold 30px monospace";c.fillText("PIXEL BIBLE / DESIGN BOARD",38,48);
@@ -122,7 +134,7 @@ export function drawDesignBoard(c) {
     c.fillStyle="#263e3d";c.textAlign="center";c.font="bold 18px sans-serif";c.fillText(style.name,x+85,350);
     c.font="11px monospace";c.fillText("24 × 38 / 4x preview",x+85,368);c.restore();
   });
-  c.save();c.translate(0,300);
+  c.save();c.translate(0,rows*260-220);
   c.textAlign="left";c.fillStyle="#294842";c.font="bold 20px sans-serif";c.fillText("오브제 · 캐릭터와 같은 굵기의 도트",36,416);
   const obs=[["field","보리밭 / 이삭 줍기"],["water","물항아리 / 물 마시기"],["bench","쉬는 자리 / 휴식"],["tree","나무 / 길 막기"]];
   obs.forEach(([kind,label],i)=>{

@@ -62,3 +62,21 @@ test('로뎀나무 장면은 엘리야의 해당 본문에서만 열린다',()=>
   assert.equal(buildWorldModel([{...c,chap:20}]).scenes.length,0);
   assert.equal(buildWorldModel([{...c,chap:19}]).scenes[0].id,'rest-elijah');
 });
+
+test('확장 외형은 근거와 창작 설명이 있고 이름별 미세 차이가 안정적이다',async()=>{
+  const {APPEARANCES,appearanceFor}=await import('../js/features/pixel-bible/appearance.js');
+  assert.equal(Object.keys(APPEARANCES).length,50);
+  for(const p of Object.values(APPEARANCES)){
+    const a=appearanceFor(p.name);assert.ok(a.evidence&&a.design);assert.deepEqual(a,appearanceFor(p.name,99));
+  }
+  assert.equal(appearanceFor('미리암').tambourine,true);
+  assert.equal(appearanceFor('삼손').longHair,true);
+  const signatures=new Set(Array.from({length:100},(_,i)=>{const {coat,hair,fringe,collar,hem,accent}=appearanceFor(`미등록 인물 ${i}`);return JSON.stringify([coat,hair,fringe,collar,hem,accent]);}));
+  assert.ok(signatures.size>80);
+});
+
+test('신약 요셉에게 족장 요셉의 무늬 옷을 자동 적용하지 않는다',async()=>{
+ const {appearanceFor}=await import('../js/features/pixel-bible/appearance.js');
+ assert.equal(appearanceFor('요셉',0,'', ['창세기 37장']).pattern,true);
+ assert.equal(appearanceFor('요셉',0,'마리아의 남편',['마태복음 1장']).pattern,undefined);
+});
