@@ -440,5 +440,5 @@ function drawLifted(c,drag,time) {
   c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
   c.save();c.translate(x,y-72);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+72);
   drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role),x,y,{hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5});
-  c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(`${drag.n.name} · 대롱대롱`,x,y+28);
+  c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }
