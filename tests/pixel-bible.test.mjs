@@ -65,7 +65,7 @@ test('로뎀나무 장면은 엘리야의 해당 본문에서만 열린다',()=>
 
 test('확장 외형은 근거와 창작 설명이 있고 이름별 미세 차이가 안정적이다',async()=>{
   const {APPEARANCES,appearanceFor}=await import('../js/features/pixel-bible/appearance.js');
-  assert.equal(Object.keys(APPEARANCES).length,50);
+  assert.equal(Object.keys(APPEARANCES).length,100);
   for(const p of Object.values(APPEARANCES)){
     const a=appearanceFor(p.name);assert.ok(a.evidence&&a.design);assert.deepEqual(a,appearanceFor(p.name,99));
   }
@@ -79,4 +79,26 @@ test('신약 요셉에게 족장 요셉의 무늬 옷을 자동 적용하지 않
  const {appearanceFor}=await import('../js/features/pixel-bible/appearance.js');
  assert.equal(appearanceFor('요셉',0,'', ['창세기 37장']).pattern,true);
  assert.equal(appearanceFor('요셉',0,'마리아의 남편',['마태복음 1장']).pattern,undefined);
+});
+
+
+test('집단과 신적 존재를 분류하고 사울·요셉·빌립의 신원을 문맥으로 구분한다',async()=>{
+ const {resolveIdentity:r}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(r('이스라엘 자손').kind,'group');assert.equal(r('하나님').kind,'spiritual');
+ assert.equal(r('사울',{code:'act'}).id,r('바울').id);
+ assert.notEqual(r('사울',{code:'1sa'}).id,r('바울').id);
+ assert.notEqual(r('요셉',{code:'gen'}).id,r('요셉',{code:'mat',role:'마리아의 남편'}).id);
+ assert.equal(r('바로',{code:'exo'}).kind,'unresolved');assert.equal(r('마리아').kind,'unresolved');assert.equal(r('요한').status,'ambiguous');
+ assert.notEqual(r('빌립',{code:'act',chapter:8}).id,r('빌립',{code:'jhn'}).id);
+});
+
+test('같은 이름의 다른 신원을 한 월드 인물로 합치지 않는다',()=>{
+ const model=buildWorldModel([{code:'gen',name:'창세기',chap:37,data:{people:[{name:'요셉',role:'야곱의 아들'}]}},{code:'mat',name:'마태복음',chap:1,data:{people:[{name:'요셉',role:'마리아의 남편'}]}}]);
+ assert.equal(model.cast.length,2);assert.notEqual(model.cast[0].identity.id,model.cast[1].identity.id);
+});
+
+test('배경 6종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
+ const {BACKGROUNDS,backgroundFor}=await import('../js/features/pixel-bible/backgrounds.js');
+ assert.equal(Object.keys(BACKGROUNDS).length,6);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
+ for(const p of Object.values(BACKGROUNDS)){assert.ok(p.name);assert.equal(p.tile.length,2);for(const k of ['ground','water','path','hill'])assert.match(p[k],/^#[0-9a-f]{6}$/);}
 });

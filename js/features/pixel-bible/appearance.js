@@ -1,7 +1,9 @@
+import { EXTRA_APPEARANCES } from './extra-appearances.js';
 // 원문 OCR은 이 클라우드에 없다. 확인 가능한 본문과 기존 장별 해설을 근거로 삼고,
 // 정확히 기록되지 않은 색/장식/소품은 창작 구분을 유지한다. 주석 대조 시 이 목록에 근거를 추가한다.
 const profile = (coat, hair, extra, evidence, design) => ({ coat, hair, ...extra, evidence, design });
 export const APPEARANCES = {
+  ...EXTRA_APPEARANCES,
   jesus: profile('#f6e9c4','#76503b',{name:'예수님',beard:'#76503b',halo:true,sash:'#c97f75'},'요한복음 19:23 · 통으로 짠 속옷.','후광과 붉은 띠는 인물을 알아보기 위한 상징 표현이에요.'),
   moses: profile('#83aebe','#eee9d1',{name:'모세',beard:'#eee9d1',staff:true,mantle:true},'출애굽기 4:2 · 손에 든 지팡이.','흰 수염과 푸른 겉옷 색은 창작 디자인이에요.'),
   elijah: profile('#a98458','#604938',{name:'엘리야',beard:'#604938',fur:true,belt:true,chariot:true},'열왕기하 1:8 · 털옷과 가죽 허리띠. 열왕기상 19:13, 19 · 겉옷.','털 질감과 허리띠를 살렸어요. 색과 머리 모양은 창작이에요.'),
@@ -58,6 +60,11 @@ export function appearanceFor(name, index=0, role='', refs=[]) {
   let key=NAMES[name] || Object.keys(APPEARANCES).find(k=>APPEARANCES[k].name===name) || (name.startsWith('아하시야(')?'ahaziah':null);
   // 같은 이름이라는 이유로 신약의 요셉에게 창세기의 옷을 입히지 않는다.
   if(key==='joseph' && ((refs.length && !refs.some(r=>r.startsWith('창세기 '))) || /마리아|아리마대/.test(role)))key=null;
+  if(name==='사울' && (refs.some(r=>r.startsWith('사도행전 '))||/바울/.test(role)))key='paul';
+  if(name==='사울' && key!=='paul' && refs.length && !refs.some(r=>/^(사무엘상|사무엘하|역대상) /.test(r)))key=null;
+  if(name==='빌립' && !refs.some(r=>/^사도행전 8[장:]/.test(r)) && !/전도자|일곱.*집사/.test(role) && (refs.length||role))key=null;
+  if(name==='스가랴' && refs.length && !refs.some(r=>r.startsWith('스가랴 ')))key=null;
+  if(name.startsWith('아하시야(') && /여호람/.test(name))key=null;
   if(key) return {...visualVariation(name),...APPEARANCES[key],key,design:APPEARANCES[key].design+' 기록되지 않은 머리·수염·색과 작은 옷깃 무늬는 창작이에요.'};
   // 기록이 없는 인물은 역할에 맞는 실루엣을 쓰고 창작임을 명시한다.
   const seed=[...name].reduce((h,c)=>(Math.imul(h,31)+c.codePointAt(0))>>>0,0);

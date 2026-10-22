@@ -1,3 +1,5 @@
+import { resolveIdentity } from './identity.js';
+import { BACKGROUNDS } from './backgrounds.js';
 import { drawPixelCharacter, characterStyle, drawWorldObject, drawWorldBackground, drawDesignBoard } from "./art.js";
 // 관리자 개발 체험: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
 // 이 모듈과 본문 JSON은 입장 시에만 로드된다. 본문 장 이동에는 연결하지 않는다.
@@ -42,15 +44,17 @@ export function buildWorldModel(chapters) {
     for (const person of data.people || []) {
       // 하나님/성령을 무작위 인간 NPC로 그리지 않는다.
       if (/^(하나님|여호와|성령|주님)$/.test(person.name)) continue;
-      if (!people.has(person.name)) people.set(person.name, { ...person, refs: [] });
-      const p = people.get(person.name);
+      const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
+      const personKey=`${person.name}:${identity.id}`;
+      if (!people.has(personKey)) people.set(personKey, { ...person, identity, refs: [] });
+      const p = people.get(personKey);
       p.refs.push(reference); p.weight = Math.max(p.weight || 1, person.weight || 1);
     }
     for (const r of data.rels || []) relations.push({ ...r, ref: `${name} ${chap}:${r.verses || ""}` });
     for (const e of data.events || []) events.push({ ...e, ref: `${name} ${chap}:${e.verses || ""}` });
   }
   const ruth = chapters.some((c) => c.code === "rut" && c.chap === 2 && c.data);
-  if (ruth && !people.has("일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
+  if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1)).slice(0, 10);
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
   return { cast, relations, events, scenes: [...(ruth ? RUTH_SCENES : []), ...(chapters.some(c=>c.code==="1ki" && c.chap===19 && c.data)?ELIJAH_SCENES:[])], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
@@ -91,6 +95,7 @@ export async function mountPixelWorld(shell, options) {
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>함께 있는 인물</h3><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-person="${i}" aria-pressed="${i===0}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':'오늘 분량 · '}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
+    <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
     <h3>오브제 놓기</h3><div class="pb-world-toolbar">${Object.entries(OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}<button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="reset">배치 초기화</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브제 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
@@ -138,7 +143,7 @@ export async function mountPixelWorld(shell, options) {
     selected = i;
     shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) === i));
     const n=npcs[i], style=characterStyle(n.name,i,n.role,n.refs);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 걸어가요.</p>`;
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 걸어가요.</p>`;
     renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 이동해요.`);
   }
   function move(n, goal, task = null) {
@@ -281,6 +286,11 @@ export async function mountPixelWorld(shell, options) {
     const b=e.target.closest("button"); if(!b) return;
     if (b.dataset.recipe!==undefined) { const scene=model.scenes[Number(b.dataset.recipe)],o=objects.find(o=>o.kind===scene.object);if(o&&!activeEvent)queueScene(scene,o);return; }
     if (b.dataset.commonRecipe) {const o=objects.find(o=>o.kind===b.dataset.commonRecipe);if(o&&!activeEvent){pendingEvent=null;if(toObject(npcs[selected],o))say(`${npcs[selected].name} · ${OBJECTS[o.kind]} 사용 (창작 일상 동작)`);}return;}
+    if (b.dataset.background && Object.hasOwn(BACKGROUNDS,b.dataset.background)) {
+      backgroundKey=b.dataset.background;drawWorldBackground(background.getContext('2d'),backgroundKey);syncBackground();draw();
+      try{localStorage.setItem('pixel-bible-background',backgroundKey);}catch(_){}
+      say(`${BACKGROUNDS[backgroundKey].name} · 상상 지형`);return;
+    }
     if (b.dataset.person!==undefined) { select(Number(b.dataset.person)); return; }
     if (b.dataset.place) {
       if(activeEvent) return;
@@ -289,7 +299,7 @@ export async function mountPixelWorld(shell, options) {
     const action=b.dataset.action;
     if(action==="design" && !shell.querySelector(".pb-design")) {
       const board=document.createElement("section");board.className="pb-design";board.setAttribute("aria-label","픽셀 캐릭터와 지형 디자인 도안");
-      board.innerHTML='<header><b>실제 캐릭터 · 지형 도안</b><button class="pb-button" data-action="close-design">도안 닫기 ✕</button></header><canvas aria-label="예수님, 모세, 엘리야, 룻, 보아스, 일꾼과 보리밭, 물항아리, 쉬는 자리, 나무"></canvas>';
+      board.innerHTML='<header><b>실제 캐릭터 · 지형 도안</b><button class="pb-button" data-action="close-design">도안 닫기 ✕</button></header><canvas aria-label="전용 캐릭터 100종과 보리밭, 물항아리, 쉬는 자리, 나무"></canvas>';
       shell.append(board);drawDesignBoard(board.querySelector("canvas").getContext("2d"));board.querySelector("button").focus();
     }
     if(action==="close-design") {shell.querySelector(".pb-design")?.remove();shell.querySelector('[data-action="design"]').focus();}
@@ -372,7 +382,10 @@ export async function mountPixelWorld(shell, options) {
   }
   // 배경은 한 번 그리고 매 프레임 재사용한다.
   const background=document.createElement("canvas");background.width=WIDTH;background.height=HEIGHT;
-  drawWorldBackground(background.getContext("2d"));
+  let backgroundKey='meadow';
+  try{const saved=localStorage.getItem('pixel-bible-background');if(Object.hasOwn(BACKGROUNDS,saved))backgroundKey=saved;}catch(_){}
+  function syncBackground(){shell.querySelectorAll('[data-background]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.background===backgroundKey));}
+  drawWorldBackground(background.getContext("2d"),backgroundKey);syncBackground();
   function draw() {
     ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);
     const v=worldViewport(canvas.width,canvas.height);

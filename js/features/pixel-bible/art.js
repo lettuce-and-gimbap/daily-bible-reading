@@ -1,3 +1,4 @@
+import { backgroundFor } from './backgrounds.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
@@ -101,20 +102,28 @@ export function drawWorldObject(c,o,tile=24) {
   c.restore();
 }
 
-export function drawWorldBackground(c) {
+export function drawWorldBackground(c, key="meadow") {
+  const palette=backgroundFor(key);
   const TILE = 24;
-  c.fillStyle="#6f995f";c.fillRect(0,0,960,480);
+  c.fillStyle=palette.ground;c.fillRect(0,0,960,480);
   for(let y=0;y<20;y++)for(let x=0;x<40;x++) {
-    const h=(x*37+y*83)%19;c.fillStyle=h<8?"#759f62":"#6c955b";c.fillRect(x*TILE,y*TILE,TILE,TILE);
-    if(h<5){c.fillStyle="#9ab56d";c.fillRect(x*TILE+7,y*TILE+14,3,3);}
+    const h=(x*37+y*83)%19;c.fillStyle=h<8?palette.tile[0]:palette.tile[1];c.fillRect(x*TILE,y*TILE,TILE,TILE);
+    if(h<5){c.fillStyle=palette.speck;c.fillRect(x*TILE+7,y*TILE+14,3,3);}
   }
-  c.fillStyle="#b9b082";c.fillRect(0,216,960,48);c.fillRect(408,100,48,300);
-  c.fillStyle="#c9bc8b";for(let x=0;x<960;x+=35)c.fillRect(x,229,18,6);
-  c.fillStyle="#467f8e";c.fillRect(0,420,960,60);c.fillStyle="#71a9a6";for(let x=12;x<960;x+=56)c.fillRect(x,440+(x%3)*6,26,3);
-  c.fillStyle="#8c9570";c.fillRect(0,408,960,12);
+  c.fillStyle=palette.path;c.fillRect(0,216,960,48);c.fillRect(408,100,48,300);
+  c.fillStyle=palette.pathLight;for(let x=0;x<960;x+=35)c.fillRect(x,229,18,6);
+  c.fillStyle=palette.water;c.fillRect(0,420,960,60);c.fillStyle=palette.wave;for(let x=12;x<960;x+=56)c.fillRect(x,440+(x%3)*6,26,3);
+  c.fillStyle=palette.bank;c.fillRect(0,408,960,12);
   // 먼 언덕과 돌집
-  c.fillStyle="#4a7758";c.fillRect(0,0,960,48);c.fillRect(0,48,300,24);c.fillRect(750,48,210,24);
-  for(const x of [110,700,800]){c.fillStyle="#d0bd8a";c.fillRect(x,50,78,55);c.fillStyle="#b09e70";c.fillRect(x-6,44,90,12);c.fillStyle="#4a4e3b";c.fillRect(x+29,74,20,31);c.fillRect(x+8,65,12,12);}
+  c.fillStyle=palette.hill;c.fillRect(0,0,960,48);c.fillRect(0,48,300,24);c.fillRect(750,48,210,24);
+  // 장식은 이동 가능한 y>=120 영역 밖에 둬 충돌 그리드와 일치시킨다.
+  if(['mountains','dunes','sunset','lake'].includes(palette.motif)){
+    for(let i=0;i<8;i++){const x=i*144-40,top=palette.motif==='mountains'?8+(i%3)*14:38+(i%2)*12;c.fillStyle=i%2?palette.roof:palette.hill;for(let y=top;y<96;y+=6){const half=Math.min(90,(y-top)*(palette.motif==='mountains'?1:2)+8);c.fillRect(x-half,y,half*2,6);}}
+    if(palette.motif==='sunset'){c.fillStyle='#edd09b';c.fillRect(620,10,42,30);c.fillRect(614,16,54,18);}
+    if(palette.motif==='lake'){c.fillStyle=palette.water;c.fillRect(0,48,300,36);c.fillStyle=palette.wave;for(let x=12;x<300;x+=48)c.fillRect(x,65,24,2);}
+  }
+  if(palette.motif==='stars'){c.fillStyle='#e1d7ab';for(let i=0;i<28;i++)c.fillRect((i*131+17)%960,(i*17)%45,2,2);c.fillRect(620,10,18,18);c.fillStyle=palette.hill;c.fillRect(626,7,15,15);}
+  for(const x of (['village','stars'].includes(palette.motif)?[110,700,800]:[800])){c.fillStyle=palette.house;c.fillRect(x,50,78,55);c.fillStyle=palette.roof;c.fillRect(x-6,44,90,12);c.fillStyle="#4a4e3b";c.fillRect(x+29,74,20,31);c.fillRect(x+8,65,12,12);}
   c.fillStyle="#e6c789";c.fillRect(65,100,4,40);c.fillRect(55,100,28,14);
 }
 
