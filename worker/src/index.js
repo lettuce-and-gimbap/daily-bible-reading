@@ -1,7 +1,7 @@
 // 경건생활 리마인드 알림 서버 (Cloudflare Worker)
 // - 앱이 푸시 구독과 "오늘 통독 완료 날짜"를 등록/갱신
-// - 크론(한국시간 18·21·23시)마다 오늘 완료하지 않은 구독에만 내용 없는 푸시를 보냄
-// - 9~12시·15~18시에는 5분마다 깨어나, 구독마다 그날 뽑힌 랜덤 시각인 구독에만 보냄
+// - 크론이 5분마다 확인하고, 한국시간 07:00~자정 전 구독별 무작위 시각에 미완료 알림을 보냄
+// - 00:00~06:59에는 발송하지 않음
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
 import { dailySummary } from "./summary.js";
@@ -168,16 +168,18 @@ function qtParts(html) {
   return { title: title ? text(title) : null, sections };
 }
 
-// 하루 알림 횟수와 칸: 한국시간 하루를 5분 칸 288개로 나누고, 구독·날짜마다 서로 다른 7칸을 정함 (같은 날엔 같은 칸)
+// 하루 알림 횟수와 칸: 한국시간 07:00~24:00의 5분 칸에서 구독·날짜마다 서로 다른 7칸을 정함
 const PUSHES_PER_DAY = 7;
 const SLOTS_PER_DAY = 288;
+const QUIET_HOURS_END_SLOT = (7 * 60) / 5;
+const ACTIVE_SLOTS_PER_DAY = SLOTS_PER_DAY - QUIET_HOURS_END_SLOT;
 
 export function daySlots(id, date) {
   const used = new Set();
   const out = [];
   for (let k = 0; out.length < PUSHES_PER_DAY; k++) {
-    let s = fnv1a(`${id}|${date}|${k}`) % SLOTS_PER_DAY;
-    while (used.has(s)) s = (s + 1) % SLOTS_PER_DAY;
+    let s = QUIET_HOURS_END_SLOT + fnv1a(`${id}|${date}|${k}`) % ACTIVE_SLOTS_PER_DAY;
+    while (used.has(s)) s = QUIET_HOURS_END_SLOT + (s - QUIET_HOURS_END_SLOT + 1) % ACTIVE_SLOTS_PER_DAY;
     used.add(s);
     out.push(s);
   }
@@ -195,6 +197,7 @@ export async function remindRandom(env, now = new Date()) {
   const kst = new Date(now.getTime() + 9 * 3600 * 1000);
   const slot = Math.floor((kst.getUTCHours() * 60 + kst.getUTCMinutes()) / 5);
   const today = kstDate(now);
+  if (slot < QUIET_HOURS_END_SLOT) return { sent: 0, skipped: 0, removed: 0, failed: 0 };
   return remindAll(env, now, (id) => daySlots(id, today).includes(slot), `slot#${slot}`);
 }
 
