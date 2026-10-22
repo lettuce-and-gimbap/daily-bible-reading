@@ -3,47 +3,49 @@ import { APPEARANCES, appearanceFor } from "./appearance.js";
 export const CHARACTER_STYLES = Object.fromEntries(['elijah','elisha','jezebel','ahab','naboth','micaiah','jehoshaphat','benhadad','ahaziah','angel','ruth','boaz'].map(k=>[k,APPEARANCES[k]]));
 export const characterStyle = appearanceFor;
 export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false } = {}) {
-  // 24×38 base sprite: head occupies 20×17; neck and longer torso remain visible.
+  // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
   ctx.save();ctx.translate(Math.round(x-12*scale),Math.round(y-36*scale));ctx.scale(scale,scale);
   if(hanging){ctx.translate(12,1);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-12,-1);}
   const r=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h);};
   const outline="#302f35", skin="#f2d5af", blush="#eb9da2", hair=style.hood?style.coat:style.hair;
   const resting = action === "bench";
-  // 작은 그림자와 짧은 발
-  r(3,37,18,1,"#183a3933");
-  r(resting?4:6,36+Math.round(walk),5,2,outline);r(13,36-Math.round(walk),5,2,outline);
-  r(6,35+Math.round(walk),4,1,"#8c6952");r(13,35-Math.round(walk),4,1,"#8c6952");
-  if(style.mantle||style.royal||style.shawl){r(3,22,18,13,outline);r(4,23,16,11,style.coat);}
-  r(5,22,14,13,outline);r(6,22,12,12,style.coat);r(8,24,8,9,"#f4e7c5");r(6,25,2,7,"#ffffff22");r(16,25,2,8,"#302f3522");
-  // 턱 바로 아래 한 줄만 드러나는 목. 머리와 옷깃 사이를 빈 도트 없이 잇는다.
-  r(9,20,6,3,outline);r(10,20,4,2,skin);
-  r(2,24,5,5,outline);r(3,24,4,4,skin);r(17,24,5,5,outline);r(17,24,4,4,skin);
-  if(style.apron){r(8,25,8,9,'#e9d4aa');r(6,24,12,1,'#705642');}
-  if(style.vest){r(6,24,4,9,'#69583f');r(16,24,3,9,'#69583f');}
-  if(style.sash){r(16,25,3,9,style.sash);}
-  if(style.belt){r(5,29,14,2,'#58412d');r(11,29,3,2,'#c4a768');}
-  if(style.fur){for(let i=0;i<6;i++){r(6+i*2,25+i%2,2,2,'#614f39');r(7+i*2,30-i%2,1,2,'#d4b68b');}r(4,23,3,2,style.coat);r(17,23,3,2,style.coat);}
-  if(style.trim){r(5,24,1,10,style.trim);r(18,24,1,10,style.trim);r(6,34,12,1,style.trim);}
-  if(style.pattern){for(let i=0;i<4;i++)r(6+i*3,25,1,8,['#7b8d7c','#b96c75','#cfac68','#788ca5'][i]);}
-  // 머리를 세 도트 내려 턱과 짧은 목을 붙인다.
-  ctx.save();ctx.translate(0,3);
-  r(7,0,10,1,outline);r(5,1,14,1,outline);r(3,2,18,1,outline);r(2,3,20,2,outline);r(1,5,22,9,outline);r(2,14,20,2,outline);r(4,16,16,2,outline);
-  r(7,1,10,1,hair);r(5,2,14,2,hair);r(3,4,18,10,hair);r(4,14,16,2,hair);
-  r(5,6,14,8,skin);r(6,5,12,1,skin);
-  if(style.bald){r(6,2,12,5,skin);r(5,4,14,3,skin);}r(6,14,12,1,skin);
-  r(4,7,2,2,hair);r(18,7,2,2,hair);
-  const look = facing < 0 ? -1 : 0;
-  r(7,8,2,3,outline);r(15,8,2,3,outline);
-  if(style.eyeliner){r(6,7,4,1,outline);r(14,7,4,1,outline);r(6,8,1,1,outline);r(17,8,1,1,outline);}
-  r(5,11,3,2,blush);r(16,11,3,2,blush);r(11,12,3,1,"#77534c");
-  r(6,3,4,1,"#ffffff33");
-  if(style.updo){r(7,-3,10,3,outline);r(8,-2,8,2,style.hair);r(11,-3,3,2,'#d8b66a');}
-  if(style.crown){r(5,-2,14,3,outline);r(6,-1,12,2,style.trim||'#d9b568');r(5,-4,2,3,'#d9b568');r(11,-5,2,4,'#d9b568');r(17,-4,2,3,'#d9b568');r(11,-1,2,2,'#a95e64');}
-  if(style.turban){r(5,0,14,4,style.coat);r(4,3,16,2,'#e4d9ba');r(6,1,12,1,'#b0b8c4');r(11,0,2,6,style.trim||'#c4a768');}
-  if(style.headband){r(4,4,16,2,'#e7d7b7');r(18,5,3,5,'#e7d7b7');}
-  if(style.jewels){r(3,12,2,3,'#e0ba67');r(19,12,2,3,'#e0ba67');r(10,24,5,1,'#e0ba67');}
-  if(style.beard){r(8,13,8,2,style.beard);r(9,15,6,2,style.beard);r(11,12,3,1,"#77534c");if(style.staff)r(10,23,4,2,style.beard);}
-  if(style.halo){r(7,-4,10,1,"#f4c65c");r(5,-3,2,2,"#f4c65c");r(17,-3,2,2,"#f4c65c");r(7,-1,10,1,"#f4c65c");r(16,23,3,8,"#c97f75");}
+  const step=Math.round(walk*1.5), look=facing<0?-1:0;
+  r(5,37,14,1,"#183a3933");
+  // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
+  const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,"#a77d57");};
+  leg(7,step);leg(14,-step);
+  if(style.mantle||style.royal||style.shawl){r(6,18,12,3,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
+  // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
+  r(8,18,8,2,outline);r(6,20,12,4,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
+  r(8,20,8,4,style.coat);r(8,24,8,5,style.coat);r(7,29,10,3,style.coat);
+  r(9,20,6,3,"#f4e7c5");r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
+  r(10,16,4,4,outline);r(11,16,2,3,skin);
+  const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
+  arm(4,hanging?2:-step);arm(17,hanging?2:step);
+  if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
+  if(style.vest){r(7,20,3,5,'#69583f');r(14,20,3,5,'#69583f');}
+  if(style.sash){r(14,21,2,11,style.sash);r(13,23,1,3,style.sash);}
+  if(style.belt){r(7,26,10,2,'#58412d');r(11,26,2,2,'#c4a768');}
+  if(style.fur){for(let i=0;i<5;i++){r(7+i*2,22+i%2,1,2,'#614f39');r(8+i*2,29-i%2,1,2,'#d4b68b');}}
+  if(style.trim){r(7,21,1,5,style.trim);r(16,21,1,5,style.trim);r(7,31,10,1,style.trim);}
+  if(style.pattern){for(let i=0;i<3;i++)r(8+i*3,23,1,8,['#7b8d7c','#b96c75','#cfac68'][i]);}
+  // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
+  ctx.save();ctx.translate(0,2);
+  r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(7,15,10,1,outline);
+  r(8,3,8,1,hair);r(6,4,12,3,hair);r(5,7,14,5,hair);r(6,12,12,2,hair);
+  r(7,7,10,6,skin);r(8,6,8,1,skin);r(8,13,8,2,skin);r(10,15,4,1,skin);
+  r(7,7,2,2,hair);r(16,7,1,3,hair);r(8,4,4,1,"#ffffff33");
+  if(style.bald){r(8,3,8,4,skin);r(7,5,10,3,skin);}
+  r(8+look,9,1,2,outline);r(14+look,9,1,2,outline);
+  r(7,11,2,1,blush);r(15,11,2,1,blush);r(11,13,2,1,"#a37363");
+  if(style.eyeliner){r(8+look,8,2,1,outline);r(14+look,8,2,1,outline);}
+  if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}
+  if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}
+  if(style.turban){r(7,2,10,3,style.coat);r(6,5,12,1,'#e4d9ba');r(8,3,8,1,'#b0b8c4');r(11,2,2,4,style.trim||'#c4a768');}
+  if(style.headband){r(6,5,12,1,'#e7d7b7');r(17,6,2,4,'#e7d7b7');}
+  if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');r(10,21,4,1,'#e0ba67');}
+  if(style.beard){r(9,13,6,2,style.beard);r(10,15,4,1,style.beard);}
+  if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");r(14,21,2,10,"#c97f75");}
   ctx.restore();
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
   if(style.scroll){r(18,25,5,7,outline);r(19,26,3,5,'#eee0ad');r(18,25,5,1,'#b39362');r(18,31,5,1,'#b39362');}
@@ -52,7 +54,6 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.net){for(let i=0;i<3;i++){r(18+i*2,25,1,9,'#b9b49c');r(18,26+i*3,6,1,'#b9b49c');}}
   if(style.lyre){r(18,25,1,8,'#c09b61');r(23,25,1,8,'#c09b61');r(18,32,6,2,'#c09b61');r(19,25,4,1,'#c09b61');r(20,26,1,5,'#e1d3a3');r(22,26,1,5,'#e1d3a3');}
   if(style.glow){r(-1,6,2,2,'#f8dc85');r(25,3,2,2,'#f8dc85');r(0,26,1,3,'#f8dc85');r(26,25,1,3,'#f8dc85');}
-  if(hanging){r(3,25,2,4,skin);r(19,25,2,4,skin);r(7,37,2,2,outline);r(15,37,2,2,outline);}
   if(action==="field"){r(20,22,1,9,"#b78a5a");r(19,21,3,3,"#f5d371");r(18,23,2,2,"#e1b95f");}
   if(action==="water"){r(19,20,3,5,outline);r(19,20,3,1,"#87bfd1");r(19,21,2,3,"#bf8767");}
   if(style.chariot && action==="ascend") {
