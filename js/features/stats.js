@@ -98,6 +98,7 @@ function renderStats() {
 
   const themeNow = state.settings.theme || "auto";
   app.innerHTML = `
+    ${pixelBibleBannerHtml()}
     ${changelogCardHtml()}
     <section class="card theme-card">
       <h3 class="label">화면 모드</h3>

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/setup.css?v=9.19.2">
   <link rel="stylesheet" href="css/reader.css?v=9.19.2">
   <link rel="stylesheet" href="css/stats.css?v=9.19.2">
+  <link rel="stylesheet" href="css/pixel-bible.css">
 </head>
 <body>
   <header class="topbar">
@@ -35,6 +36,7 @@
         <a href="#qt" data-route="qt">QT</a>
         <a href="#stats" data-route="stats">관리</a>
       </nav>
+      <button class="pb-entry" id="pixel-bible-entry" data-pixel-bible hidden aria-label="PIXEL BIBLE 입장"><span>PIXEL</span><span>BIBLE</span></button>
       <button class="reload-btn" id="app-reload" aria-label="앱 새로 불러오기" title="앱 새로 불러오기">↻</button>
       <span class="app-sign" title="만든 사람: 벅수">
         <b id="app-ver">v</b>
@@ -78,6 +80,7 @@
   <script src="js/features/exit.js?v=9.19.2"></script>
   <script src="js/features/changelog.js?v=9.19.2"></script>
   <script src="js/features/plan.js?v=9.19.2"></script>
+  <script src="js/features/pixel-bible.js"></script>
   <script src="js/main.js?v=9.19.2"></script>
   <script>document.getElementById("app-ver").textContent = "v" + (document.querySelector('script[src*="main.js"]').src.match(/v=([\d.]+)/) || [, "?"])[1];</script>
 </body>

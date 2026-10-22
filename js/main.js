@@ -14,6 +14,7 @@ function route() {
   queueReminderSync();
   updateStreakChip();
   updateAdminBadge();
+  updatePixelBibleEntry();
 }
 window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#link=")) route(); });
 
