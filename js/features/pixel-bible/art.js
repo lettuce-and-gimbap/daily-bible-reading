@@ -20,11 +20,9 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   r(10,19,4,1,style.coat);
   r(8,20,8,4,style.coat);r(8,24,8,5,style.coat);r(7,29,10,3,style.coat);
   r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
-  // 턱의 가로선 아래 좁은 목과 양옆의 빈 공간으로 머리/몸을 구분한다.
-  // 피부색 가슴판 대신 V자 옷깃을 써서 목이 넓어 보이지 않게 한다.
-  r(10,17,1,2,outline);r(13,17,1,2,outline);
-  r(11,16,2,2,skin);r(11,18,2,1,"#c49476");
-  r(10,19,1,1,"#f4e7c5");r(13,19,1,1,"#f4e7c5");r(11,20,2,1,"#f4e7c5");
+  // 독립된 목 기둥 없이 턱선이 어깨 윗부분에 바로 닿는다.
+  // 옷깃 중앙의 한 줄 피부만 남겨 얼굴과 옷의 경계를 표현한다.
+  r(10,20,4,1,skin);r(10,21,1,1,"#f4e7c5");r(13,21,1,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   arm(4,hanging?2:-step);arm(17,hanging?2:step);
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
@@ -35,7 +33,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.trim){r(7,21,1,5,style.trim);r(16,21,1,5,style.trim);r(7,31,10,1,style.trim);}
   if(style.pattern){for(let i=0;i<3;i++)r(8+i*3,23,1,8,['#7b8d7c','#b96c75','#cfac68'][i]);}
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
-  ctx.save();ctx.translate(0,1);
+  ctx.save();ctx.translate(0,4);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
   r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
   r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);
@@ -52,11 +50,12 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}
   if(style.turban){r(7,2,10,3,style.coat);r(6,5,12,1,'#e4d9ba');r(8,3,8,1,'#b0b8c4');r(11,2,2,4,style.trim||'#c4a768');}
   if(style.headband){r(6,5,12,1,'#e7d7b7');r(17,6,2,4,'#e7d7b7');}
-  if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');r(10,21,4,1,'#e0ba67');}
+  if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');}
   // 수염은 입 아래와 턱 끝에만 둔다. 가로로 입을 덮는 띠를 만들지 않는다.
   if(style.beard){r(8,13,1,1,style.beard);r(15,13,1,1,style.beard);r(10,14,4,1,style.beard);}
-  if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");r(14,21,2,10,"#c97f75");}
+  if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");}
   ctx.restore();
+  if(style.jewels)r(10,22,4,1,'#e0ba67');
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
   if(style.scroll){r(18,25,5,7,outline);r(19,26,3,5,'#eee0ad');r(18,25,5,1,'#b39362');r(18,31,5,1,'#b39362');}
   if(style.grapes){r(-2,27,6,6,'#745e40');r(-1,26,4,1,'#68a06b');r(-1,27,2,2,'#80679e');r(1,28,2,2,'#937db0');r(0,30,2,1,'#80679e');}
