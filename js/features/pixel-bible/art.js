@@ -16,12 +16,15 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   leg(7,step);leg(14,-step);
   if(style.mantle||style.royal||style.shawl){r(7,19,10,2,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
   // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
-  r(10,18,4,1,outline);r(8,19,8,1,outline);r(6,20,12,4,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
+  r(9,19,6,1,outline);r(7,20,10,1,outline);r(6,21,12,3,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
   r(10,19,4,1,style.coat);
   r(8,20,8,4,style.coat);r(8,24,8,5,style.coat);r(7,29,10,3,style.coat);
-  r(9,20,6,3,"#f4e7c5");r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
-  // 턱 중앙에서 두 도트 폭으로 내려와 옷깃에 닿는 짧은 목.
-  r(11,16,2,3,skin);r(10,19,4,1,"#f4e7c5");
+  r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
+  // 턱의 가로선 아래 좁은 목과 양옆의 빈 공간으로 머리/몸을 구분한다.
+  // 피부색 가슴판 대신 V자 옷깃을 써서 목이 넓어 보이지 않게 한다.
+  r(10,17,1,2,outline);r(13,17,1,2,outline);
+  r(11,16,2,2,skin);r(11,18,2,1,"#c49476");
+  r(10,19,1,1,"#f4e7c5");r(13,19,1,1,"#f4e7c5");r(11,20,2,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   arm(4,hanging?2:-step);arm(17,hanging?2:step);
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
@@ -32,7 +35,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.trim){r(7,21,1,5,style.trim);r(16,21,1,5,style.trim);r(7,31,10,1,style.trim);}
   if(style.pattern){for(let i=0;i<3;i++)r(8+i*3,23,1,8,['#7b8d7c','#b96c75','#cfac68'][i]);}
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
-  ctx.save();ctx.translate(0,2);
+  ctx.save();ctx.translate(0,1);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
   r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
   r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);
