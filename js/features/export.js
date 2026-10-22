@@ -91,7 +91,7 @@ function collectRecords(period) {
       chapters,
       readNote: (state.dayNotes[date] || "").trim(),
       qtDone: !!(qt && qt.done),
-      qtNote: qt ? qtTextOf(qt) : "",
+      qtNote: qt ? qtTextOf(qt, date) : "",
     };
   });
   const pr = state.plan ? progress() : null;
