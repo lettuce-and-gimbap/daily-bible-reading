@@ -31,20 +31,24 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.pattern){for(let i=0;i<3;i++)r(8+i*3,23,1,8,['#7b8d7c','#b96c75','#cfac68'][i]);}
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
   ctx.save();ctx.translate(0,2);
-  r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(7,15,10,1,outline);
-  r(8,3,8,1,hair);r(6,4,12,3,hair);r(5,7,14,5,hair);r(6,12,12,2,hair);
-  r(7,7,10,6,skin);r(8,6,8,1,skin);r(8,13,8,2,skin);r(10,15,4,1,skin);
-  r(7,7,2,2,hair);r(16,7,1,3,hair);r(8,4,4,1,"#ffffff33");
-  if(style.bald){r(8,3,8,4,skin);r(7,5,10,3,skin);}
-  r(8+look,9,1,2,outline);r(14+look,9,1,2,outline);
-  r(7,11,2,1,blush);r(15,11,2,1,blush);r(11,13,2,1,"#a37363");
-  if(style.eyeliner){r(8+look,8,2,1,outline);r(14+look,8,2,1,outline);}
+  // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
+  r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
+  r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);
+  r(7,6,10,7,outline);r(8,13,8,1,outline);r(9,14,6,1,outline);
+  r(8,6,8,1,skin);r(7,7,10,5,skin);r(8,12,8,1,skin);r(9,13,6,1,skin);
+  // 눈 옆에는 피부 한 칸을 남겨 옆머리와 눈이 붙지 않게 한다.
+  r(7,6,3,1,hair);r(7,7,1,1,hair);r(15,6,2,1,hair);r(6,7,1,5,hair);r(17,7,1,5,hair);
+  r(8,4,4,1,"#ffffff33");
+  if(style.bald){r(8,3,8,3,skin);r(7,5,10,2,skin);r(7,7,1,1,skin);}
+  r(9+look,9,1,2,outline);r(14+look,9,1,2,outline);
+  r(8,11,1,1,blush);r(15,11,1,1,blush);r(11,12,2,1,"#a37363");
+  if(style.eyeliner){r(9+look,8,2,1,outline);r(14+look,8,2,1,outline);}
   if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}
   if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}
   if(style.turban){r(7,2,10,3,style.coat);r(6,5,12,1,'#e4d9ba');r(8,3,8,1,'#b0b8c4');r(11,2,2,4,style.trim||'#c4a768');}
   if(style.headband){r(6,5,12,1,'#e7d7b7');r(17,6,2,4,'#e7d7b7');}
   if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');r(10,21,4,1,'#e0ba67');}
-  if(style.beard){r(9,13,6,2,style.beard);r(10,15,4,1,style.beard);}
+  if(style.beard){r(9,12,6,1,style.beard);r(10,13,4,1,style.beard);r(11,12,2,1,"#a37363");}
   if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");r(14,21,2,10,"#c97f75");}
   ctx.restore();
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
