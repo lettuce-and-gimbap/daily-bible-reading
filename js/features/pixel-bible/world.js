@@ -198,7 +198,7 @@ export async function mountPixelWorld(shell, options) {
     return {x:((e.clientX-r.left)*canvas.width/r.width-v.x)/v.scale/TILE,y:((e.clientY-r.top)*canvas.height/r.height-v.y)/v.scale/TILE};
   }
   function hitPerson(p) {
-    return npcs.map((n,i)=>({n,i})).filter(({n})=>Math.abs(n.x-p.x)<1.3&&p.y-n.y<.6&&p.y-n.y>-3.8).sort((a,b)=>b.n.y-a.n.y)[0]?.i??-1;
+    return npcs.map((n,i)=>({n,i})).filter(({n})=>Math.abs(n.x-p.x)<1.5&&p.y-n.y<.8&&p.y-n.y>-5.2).sort((a,b)=>b.n.y-a.n.y)[0]?.i??-1;
   }
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag) return;
@@ -428,17 +428,17 @@ export async function mountPixelWorld(shell, options) {
 function drawObject(c,o) { drawWorldObject(c,o); }
 function drawNpc(c,n,index,time,selected,acting) {
   const x=Math.round(n.x*TILE),y=Math.round(n.y*TILE);
-  if(selected){c.strokeStyle="#ffe7a2";c.lineWidth=2;c.strokeRect(x-35,y-75,70,88);}
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{walk:n.path.length||acting?Math.sin(time*12):0,action:n.action,time,facing:n.facing||1});
-  if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-87,4,7);c.fillRect(x-2,y-78,4,3);}
+  if(selected){c.strokeStyle="#ffe7a2";c.lineWidth=2;c.strokeRect(x-39,y-119,78,132);}
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walk:n.path.length||acting?Math.sin(time*12):0,action:n.action,time,facing:n.facing||1});
+  if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
 
 function drawLifted(c,drag,time) {
-  const x=drag.p.x*TILE,y=drag.p.y*TILE+72;
+  const x=drag.p.x*TILE,y=drag.p.y*TILE+96;
   const groundY=Math.max(5,Math.min(15,Math.round(drag.p.y+3)))*TILE;
   c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
-  c.save();c.translate(x,y-72);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+72);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role),x,y,{hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5});
+  c.save();c.translate(x,y-96);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+96);
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role),x,y,{scale:2,hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }
