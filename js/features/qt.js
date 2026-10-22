@@ -108,12 +108,22 @@ const keyOrder = (a, b) => { const [a1, a2] = a.split(".").map(Number), [b1, b2]
 const qtAnswers = (q) => Object.entries((q && q.answers) || {}).filter(([, v]) => v && String(v.a || "").trim()).sort((x, y) => keyOrder(x[0], y[0]));
 const qtHasText = (q) => !!q && (["note", "observe", "reflect"].some((k) => String(q[k] || "").trim()) || qtAnswers(q).length > 0 || Object.values(q.relNotes || {}).some((v) => String(v).trim()));
 
+// 그날 QT 본문 범위(예: 열왕기상 16:12-17). 한 번 받으면 기억해 둠
+const qtRefs = {};
+async function qtRefFor(d) {
+  if (!qtRefs[d]) {
+    const ref = await qtPassageRef(d);
+    if (ref) qtRefs[d] = ref.replace(/~/g, "-");
+  }
+  return qtRefs[d] || "";
+}
+
 // 칸 이름을 붙여 하나로 합친 글 (복사·내보내기·기록 보기용). 빈 칸은 뺌
-function qtTextOf(q) {
+function qtTextOf(q, d = qtDate) {
   if (!q) return "";
   const parts = qtAnswers(q).map(([, v]) => `[${v.s || "묵상"}] ${v.q}\n${String(v.a).trim()}`);
   QT_LEGACY.forEach(([k, label]) => { if (String(q[k] || "").trim()) parts.push(`[${label}]\n${String(q[k]).trim()}`); });
-  if (String(q.note || "").trim()) parts.push(`[구절 · 기도 메모]\n${String(q.note).trim()}`);
+  if (String(q.note || "").trim()) parts.push(`[${qtRefs[d] || "구절 · 기도 메모"}]\n${String(q.note).trim()}`);
   return parts.join("\n\n");
 }
 
@@ -366,7 +376,7 @@ function renderQtSheet() {
           <textarea id="q-${k}" rows="5">${esc(entry[k])}</textarea>
         </label>`).join("")}
       <label class="qt-field">
-        <b>구절 · 기도 메모</b><small>붙여넣은 구절과 기도제목을 적어 두세요</small>
+        <b id="q-note-title">${qtRefs[qtDate] ? `[${esc(qtRefs[qtDate])}]` : "구절 · 기도 메모"}</b><small>붙여넣은 구절과 기도제목을 적어 두세요</small>
         <textarea id="q-note" rows="5" placeholder="구절과 기도제목">${esc(entry.note || "")}</textarea>
       </label>
       <div class="mp" id="q-note-picker"></div>
@@ -384,8 +394,12 @@ function renderQtSheet() {
           <li>
             <a href="#qt" data-qt="${d}" class="tl-date">${prettyDate(d)}</a>
             ${state.qt[d].done ? `<span class="badge good">완료</span>` : ""}
-            ${qtHasText(state.qt[d]) ? `<p class="note">${esc(qtTextOf(state.qt[d]))}</p>` : ""}
+            ${qtHasText(state.qt[d]) ? `<p class="note">${esc(qtTextOf(state.qt[d], d))}</p>` : ""}
           </li>`).join("")}
       </ul>` : ""}`;
   memoPickMount($("#q-note-picker"), $("#q-note"), saveQtNote, renderQtSheet);
+  const before = Object.keys(qtRefs).length;
+  Promise.all([qtRefFor(qtDate), ...history.map(qtRefFor)]).then(() => { // 범위를 새로 받았으면 한 번 다시 그림
+    if (sheetTab === "note" && Object.keys(qtRefs).length > before) renderQtSheet();
+  });
 }

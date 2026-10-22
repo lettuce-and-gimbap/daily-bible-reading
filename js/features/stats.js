@@ -352,7 +352,7 @@ function dayDetailHtml(d, byDate, copied, mode = "read") {
   const cp = copied[d] ? copyChipsHtml(copied[d]) : "";
   const rows = mode === "qt" ? [
     q ? `<p class="tl-row"><span class="tag sm qt">🙏</span>${q.done ? "QT 완료" : "QT 메모"}</p>` : "",
-    qtHasText(q) ? `<p class="note qt">${esc(qtTextOf(q))}</p>` : "",
+    qtHasText(q) ? `<p class="note qt">${esc(qtTextOf(q, d))}</p>` : "",
   ].join("") : [
     byDate[d] ? `<p class="tl-row"><span class="tag sm">📖</span>${esc(describeChapters(byDate[d]))} <span class="muted">(${byDate[d].length}장)</span></p>` : "",
     state.dayNotes[d] ? `<p class="note">${esc(state.dayNotes[d])}</p>` : "",
