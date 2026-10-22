@@ -15,8 +15,8 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   r(6,35+Math.round(walk),4,1,"#8c6952");r(13,35-Math.round(walk),4,1,"#8c6952");
   if(style.mantle||style.royal||style.shawl){r(3,22,18,13,outline);r(4,23,16,11,style.coat);}
   r(5,22,14,13,outline);r(6,22,12,12,style.coat);r(8,24,8,9,"#f4e7c5");r(6,25,2,7,"#ffffff22");r(16,25,2,8,"#302f3522");
-  // 목은 얼굴 아래에서 옷깃 위까지 분명히 보인다.
-  r(10,19,4,4,skin);r(9,21,6,2,outline);r(10,21,4,1,skin);
+  // 턱 바로 아래 한 줄만 드러나는 목. 머리와 옷깃 사이를 빈 도트 없이 잇는다.
+  r(9,20,6,3,outline);r(10,20,4,2,skin);
   r(2,24,5,5,outline);r(3,24,4,4,skin);r(17,24,5,5,outline);r(17,24,4,4,skin);
   if(style.apron){r(8,25,8,9,'#e9d4aa');r(6,24,12,1,'#705642');}
   if(style.vest){r(6,24,4,9,'#69583f');r(16,24,3,9,'#69583f');}
@@ -25,7 +25,8 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.fur){for(let i=0;i<6;i++){r(6+i*2,25+i%2,2,2,'#614f39');r(7+i*2,30-i%2,1,2,'#d4b68b');}r(4,23,3,2,style.coat);r(17,23,3,2,style.coat);}
   if(style.trim){r(5,24,1,10,style.trim);r(18,24,1,10,style.trim);r(6,34,12,1,style.trim);}
   if(style.pattern){for(let i=0;i<4;i++)r(6+i*3,25,1,8,['#7b8d7c','#b96c75','#cfac68','#788ca5'][i]);}
-  // 얼굴 폭은 유지하되 전체 키를 늘려、頭身을整える.
+  // 머리를 세 도트 내려 턱과 짧은 목을 붙인다.
+  ctx.save();ctx.translate(0,3);
   r(7,0,10,1,outline);r(5,1,14,1,outline);r(3,2,18,1,outline);r(2,3,20,2,outline);r(1,5,22,9,outline);r(2,14,20,2,outline);r(4,16,16,2,outline);
   r(7,1,10,1,hair);r(5,2,14,2,hair);r(3,4,18,10,hair);r(4,14,16,2,hair);
   r(5,6,14,8,skin);r(6,5,12,1,skin);
@@ -43,6 +44,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.jewels){r(3,12,2,3,'#e0ba67');r(19,12,2,3,'#e0ba67');r(10,24,5,1,'#e0ba67');}
   if(style.beard){r(8,13,8,2,style.beard);r(9,15,6,2,style.beard);r(11,12,3,1,"#77534c");if(style.staff)r(10,23,4,2,style.beard);}
   if(style.halo){r(7,-4,10,1,"#f4c65c");r(5,-3,2,2,"#f4c65c");r(17,-3,2,2,"#f4c65c");r(7,-1,10,1,"#f4c65c");r(16,23,3,8,"#c97f75");}
+  ctx.restore();
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
   if(style.scroll){r(18,25,5,7,outline);r(19,26,3,5,'#eee0ad');r(18,25,5,1,'#b39362');r(18,31,5,1,'#b39362');}
   if(style.grapes){r(-2,27,6,6,'#745e40');r(-1,26,4,1,'#68a06b');r(-1,27,2,2,'#80679e');r(1,28,2,2,'#937db0');r(0,30,2,1,'#80679e');}
