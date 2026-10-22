@@ -55,9 +55,9 @@ function pixelBibleTodayChapters() {
   return (p.days[p.todayDay] || []).map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
 }
 
-async function pixelBibleLandscape(shell) {
+async function pixelBibleLandscape(shell, nativeFullscreen = true) {
   try {
-    if (!document.fullscreenElement && shell.requestFullscreen) await shell.requestFullscreen();
+    if (nativeFullscreen && !document.fullscreenElement && shell.requestFullscreen) await shell.requestFullscreen();
     if (!shell.isConnected) return;
     if (screen.orientation?.lock) await screen.orientation.lock("landscape");
   } catch (_) { /* iOS 등 회전 잠금 미지원 기기는 실제 가로 회전을 안내한다. */ }
@@ -69,7 +69,7 @@ async function openPixelBible() {
   pixelBibleOpening = true;
   const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>관리자 개발 체험</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">오늘의 월드를 준비하고 있어요…</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
-  pixelBibleLandscape(shell);
+  pixelBibleLandscape(shell, false);
   try {
     // 로컬 아이디 표시만 믿지 않고 기존 로그인 API가 확인한 계정으로 입장을 결정한다.
     const identity = await accountApi("data");
