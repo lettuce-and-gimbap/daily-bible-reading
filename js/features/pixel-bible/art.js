@@ -14,12 +14,14 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
   const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,"#a77d57");};
   leg(7,step);leg(14,-step);
-  if(style.mantle||style.royal||style.shawl){r(6,18,12,3,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
+  if(style.mantle||style.royal||style.shawl){r(7,19,10,2,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
   // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
-  r(8,18,8,2,outline);r(6,20,12,4,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
+  r(10,18,4,1,outline);r(8,19,8,1,outline);r(6,20,12,4,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
+  r(10,19,4,1,style.coat);
   r(8,20,8,4,style.coat);r(8,24,8,5,style.coat);r(7,29,10,3,style.coat);
   r(9,20,6,3,"#f4e7c5");r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
-  r(10,16,4,4,skin);
+  // 턱 중앙에서 두 도트 폭으로 내려와 옷깃에 닿는 짧은 목.
+  r(11,16,2,3,skin);r(10,19,4,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   arm(4,hanging?2:-step);arm(17,hanging?2:step);
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
