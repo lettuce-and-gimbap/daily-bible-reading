@@ -19,7 +19,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   r(8,18,8,2,outline);r(6,20,12,4,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
   r(8,20,8,4,style.coat);r(8,24,8,5,style.coat);r(7,29,10,3,style.coat);
   r(9,20,6,3,"#f4e7c5");r(9,23,2,6,"#ffffff22");r(15,24,1,7,"#302f3522");
-  r(10,16,4,4,outline);r(11,16,2,3,skin);
+  r(10,16,4,4,skin);
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   arm(4,hanging?2:-step);arm(17,hanging?2:step);
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
@@ -35,7 +35,7 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
   r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);
   r(7,6,10,7,outline);r(8,13,8,1,outline);r(9,14,6,1,outline);
-  r(8,6,8,1,skin);r(7,7,10,5,skin);r(8,12,8,1,skin);r(9,13,6,1,skin);
+  r(8,6,8,1,skin);r(7,7,10,5,skin);r(8,12,8,2,skin);r(10,14,4,1,skin);
   // 눈 옆에는 피부 한 칸을 남겨 옆머리와 눈이 붙지 않게 한다.
   r(7,6,3,1,hair);r(7,7,1,1,hair);r(15,6,2,1,hair);r(6,7,1,5,hair);r(17,7,1,5,hair);
   r(8,4,4,1,"#ffffff33");
@@ -48,7 +48,8 @@ export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, acti
   if(style.turban){r(7,2,10,3,style.coat);r(6,5,12,1,'#e4d9ba');r(8,3,8,1,'#b0b8c4');r(11,2,2,4,style.trim||'#c4a768');}
   if(style.headband){r(6,5,12,1,'#e7d7b7');r(17,6,2,4,'#e7d7b7');}
   if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');r(10,21,4,1,'#e0ba67');}
-  if(style.beard){r(9,12,6,1,style.beard);r(10,13,4,1,style.beard);r(11,12,2,1,"#a37363");}
+  // 수염은 입 아래와 턱 끝에만 둔다. 가로로 입을 덮는 띠를 만들지 않는다.
+  if(style.beard){r(8,13,1,1,style.beard);r(15,13,1,1,style.beard);r(10,14,4,1,style.beard);}
   if(style.halo){r(8,-2,8,1,"#f4c65c");r(6,-1,2,1,"#f4c65c");r(16,-1,2,1,"#f4c65c");r(14,21,2,10,"#c97f75");}
   ctx.restore();
   if(style.staff){for(let i=0;i<16;i++)r(-2+Math.floor(i/3),-7+i*2,2,3,outline);for(let i=0;i<15;i++)r(-1+Math.floor(i/3),-6+i*2,1,2,"#b78a5a");r(-4,-9,5,2,outline);r(-3,-8,3,1,"#b78a5a");}
