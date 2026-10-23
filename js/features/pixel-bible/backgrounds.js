@@ -8,3 +8,14 @@ export const BACKGROUNDS = {
  night:{name:'별빛 마을',ground:'#536f70',tile:['#597778','#4e696c'],speck:'#7c9790',path:'#8b8e86',pathLight:'#ada994',water:'#405d80',wave:'#7c94b0',bank:'#667b83',hill:'#344b64',house:'#9aaba6',roof:'#70888b',motif:'stars'},
 };
 export const backgroundFor=key=>Object.hasOwn(BACKGROUNDS,key)?BACKGROUNDS[key]:BACKGROUNDS.meadow;
+
+// 분량별로 고정된 상상 배경. 실제 성경 지리를 확정하는 용도가 아니다.
+export function defaultBackground(chapters) {
+ const first=chapters[0];
+ if(!first)return 'meadow';
+ const themes=['meadow','mountain','lake','evening','desert','night'];
+ // 같은 분량에는 같은 배경을 쓰고 시작 권·장이 바뀌면 다시 선택한다.
+ const seed=[...first.code].reduce((n,c)=>n+c.charCodeAt(0),0)+first.chap-1;
+ return themes[seed%themes.length];
+}
+export const backgroundStorageKey=key=>`pixel-bible-background:${key}`;

@@ -196,3 +196,26 @@ test('말풍선 성경구절은 장과 절 범위를 안전하게 해석한다',
  assert.deepEqual(p('느헤미야 3장'),{code:'neh',chapter:3,verses:null});
  assert.equal(p('열왕기상 99:1'),null);assert.equal(p('본문 없음'),null);assert.equal(p('열왕기상 21:8-3'),null);
 });
+
+test('통독에서 보고 있는 Day와 계획 밖 본문을 달력상 오늘보다 우선한다', async () => {
+ const {readFile}=await import('node:fs/promises');
+ const {runInNewContext}=await import('node:vm');
+ const source=await readFile(new URL('../js/features/pixel-bible.js',import.meta.url),'utf8');
+ const ctx={document:{addEventListener(){}},state:{plan:{}},freeChapter:null,viewingDay:1,
+  CHAPTERS:[{book:{code:'1ki',name:'열왕기상'},chap:19},{book:{code:'2ki',name:'열왕기하'},chap:2},{book:{code:'jhn',name:'요한복음'},chap:3}],
+  progress:()=>({days:[[0],[1]],todayDay:0})};
+ runInNewContext(source,ctx);
+ assert.equal(ctx.pixelBibleTodayChapters()[0].code,'2ki');
+ ctx.freeChapter=2;assert.equal(ctx.pixelBibleTodayChapters()[0].code,'jhn');
+ ctx.freeChapter=null;ctx.viewingDay=null;assert.equal(ctx.pixelBibleTodayChapters()[0].code,'1ki');
+ ctx.state.plan=null;assert.equal(ctx.pixelBibleTodayChapters().length,0);
+});
+
+test('다른 통독 분량은 배경 기본값을 다시 선택하고 수동 배경 저장도 분리한다', async () => {
+ const {defaultBackground,backgroundStorageKey,BACKGROUNDS}=await import('../js/features/pixel-bible/backgrounds.js');
+ const a=[{code:'1ki',chap:19}],b=[{code:'2ki',chap:2}];
+ assert.notEqual(defaultBackground(a),defaultBackground(b));
+ assert.ok(BACKGROUNDS[defaultBackground(a)]);
+ assert.equal(defaultBackground(a),defaultBackground([...a]));
+ assert.notEqual(backgroundStorageKey('1ki.19'),backgroundStorageKey('2ki.2'));
+});

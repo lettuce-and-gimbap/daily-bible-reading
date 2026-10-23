@@ -50,9 +50,15 @@ function showPixelBibleNotice() {
 }
 
 function pixelBibleTodayChapters() {
+  // 계획 밖에서 고른 장도 통독 화면과 같은 본문을 사용한다.
+  if (freeChapter !== null && CHAPTERS[freeChapter]) {
+    const c = CHAPTERS[freeChapter];
+    return [{ code: c.book.code, name: c.book.name, chap: c.chap }];
+  }
   if (!state.plan) return [];
   const p = progress();
-  return (p.days[p.todayDay] || []).map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
+  const day = p.days[viewingDay] || p.days[p.todayDay] || [];
+  return day.map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
 }
 
 async function pixelBibleLandscape(shell, nativeFullscreen = true) {
