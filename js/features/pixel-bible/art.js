@@ -1,3 +1,4 @@
+import { drawFaceExpression } from './expression.js';
 import { objectPresentation } from './object-response.js';
 import { drawCatalogDetail } from './catalog-art.js';
 import { OBJECT_CATALOG } from './object-catalog.js';
@@ -17,12 +18,13 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const pose=options.interaction||null;
  const renderAction=OBJECT_CATALOG[action]?.action||action;
  const activeStyle=pose?{...style,staff:false,scroll:false,grain:false,grapes:false,net:false,lyre:false,tambourine:false}:style;
- const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose]);let sprite=spriteCache.get(key);
+ const expression=options.expression||'neutral';
+ const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose,expression]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
-  if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose});
-  else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose});
+  if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
+  else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }
  ctx.save();ctx.imageSmoothingEnabled=false;
@@ -50,7 +52,7 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  }
  ctx.drawImage(sprite.canvas,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.restore();
 }
-function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false, pose=null } = {}) {
+function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false, pose=null, expression="neutral" } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
   ctx.save();ctx.translate(Math.round(x-12*scale),Math.round(y-36*scale));ctx.scale(scale,scale);
   if(hanging){ctx.translate(12,1);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-12,-1);}
@@ -77,6 +79,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   if(pose?.hand){
     const dy=pose.handY-24;
+    r(5,Math.min(23,pose.handY),2,Math.abs(pose.handY-23)+2,outline);
+    r(18,Math.min(23,pose.handY),2,Math.abs(pose.handY-23)+2,outline);
     r(4,21,4,4,outline);r(5,22,2,2,style.coat);r(5,24+dy,5,3,outline);r(7,24+dy,3,2,skin);
     r(17,21,4,4,outline);r(18,22,2,2,style.coat);r(14,24+dy,6,3,outline);r(14,24+dy,3,2,skin);
   }else{arm(4,hanging?2:-step);arm(17,hanging?2:step);}
@@ -108,8 +112,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
     if(style.fringe===3)r(10,5,4,1,"#ffffff22");
   }
   if(style.bald){r(8,3,8,3,skin);r(7,5,10,2,skin);r(7,7,1,1,skin);}
-  r(9+look,9,1,2,outline);r(14+look,9,1,2,outline);
-  r(8,11,1,1,blush);r(15,11,1,1,blush);r(11,12,2,1,"#a37363");
+  drawFaceExpression(r,expression,{look});
+  r(8,11,1,1,blush);r(15,11,1,1,blush);
   if(style.eyeliner){r(9+look,8,2,1,outline);r(14+look,8,2,1,outline);}
   if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}
   if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}
@@ -139,8 +143,9 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(!pose&&action==='scroll'){r(6,21,13,8,outline);r(7,22,11,6,'#eee0b2');r(9,23,7,1,'#94805a');r(9,25,6,1,'#94805a');}
   if(!pose&&action==='stone'){r(19,23,4,4,outline);r(20,23,2,3,'#a5aaa2');}
   if(!pose&&action==='bush'){r(1,24,3,2,skin);r(20,24,3,2,skin);}
-  if(pose?.hand){
+  if(pose?.hand&&!pose.heldObject){
     if(['water','well','oil'].includes(pose.prop)){const yy=pose.handY-1;r(15,yy,4,5,outline);r(16,yy+1,2,3,pose.prop==='oil'?'#d9bd58':'#8abbd0');}
+    if(pose.prop==='cooking'){r(18,pose.handY-3,1,9,'#b99a6f');r(17,pose.handY+4,3,2,'#b99a6f');}
     if(pose.prop==='field'){r(12,pose.bend?29:24,1,8,'#987c48');r(10,pose.bend?29:24,5,3,'#e5c574');}
     if(pose.prop==='scroll'){const width=pose.gesture==='unroll'?(pose.phase===1?8:14):12;r(7,23,width,7,outline);r(8,24,width-2,5,'#eee0b2');r(10,25,width-6,1,'#94805a');if(pose.gesture==='write')r(16,21+pose.phase,1,6,'#70563e');}
     if(pose.prop==='stone'){r(14,27,5,4,outline);r(15,27,3,3,'#a5aaa2');}
@@ -158,8 +163,9 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
   if(descriptor&&!['field','water','bench','tree','well','stone','bush','boat','scroll','oil'].includes(o.kind))o={...o,kind:['plant','crop'].includes(family)?(family==='crop'?'field':'tree'):['vessel'].includes(family)?descriptor.action:['book'].includes(family)?'scroll':family==='boat'?'boat':family==='stone'?'stone':family==='seat'?'bench':'catalog'};
   const x=o.x*tile,y=o.y*tile;
   c.save();c.translate(Math.round(x+(frame?.dx||0)),Math.round(y+(frame?.dy||0)));c.rotate(frame?.tilt||0);const size=frame?.scale||objectPresentation(originalKind).scale;c.scale(size*(1+(frame?.open||0)),size*(1-(frame?.squash||0)));
-  const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};const O="#393e3c";
-  r(-7,4,15,2,"#193b3533");
+  if(frame?.bite){c.beginPath();c.rect(-30,-40,60,40);c.clip();}
+  const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);};const O="#393e3c";
+  if(!frame?.held)r(-7,4,15,2,"#193b3533");
   if(descriptor&&drawCatalogDetail(r,originalKind,family,O)){c.restore();return;}
   if(o.kind==="field") {
     r(-12,-3,25,10,O);r(-11,-2,23,8,"#a68258");

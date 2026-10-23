@@ -174,7 +174,7 @@ test('다른 본문의 인물과 관계도 현재 장에 맞는 창작 대사와
  const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
  const chapters=[{code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'하눈',role:'성문을 수리한 사람'},{name:'살룬',role:'문과 성벽을 수리한 사람'}],rels:[{from:'하눈',to:'살룬',label:'함께 재건',verses:'13-15',note:'두 사람이 각자 맡은 문과 성벽을 수리했어요.'}]}}];
  const npcs=[{name:'하눈',x:10,y:8,path:[]},{name:'살룬',x:11,y:9,path:[]}],context=buildChapterDialogue(chapters),lines=dialogueCandidates(npcs,chapters,context);
- assert.ok(lines.some(c=>c.origin==='context-variation'&&c.ref==='느헤미야 3장'));
+ assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref==='느헤미야 3장'));
  assert.equal(lines.filter(c=>c.origin==='chapter-relation').length,2);
  assert.ok(!lines.some(c=>c.kind==='ordinary'));
  npcs[1].x=30;assert.ok(!dialogueCandidates(npcs,chapters,context).some(c=>c.target));
@@ -308,7 +308,7 @@ test('오브제 색인은 장·구절 범위를 보존하고 돌아가다/불순
 test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다른 자세를 사용한다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {interactionRoutine,interactionPose,INTERACTION_MOTION_COUNT}=await import('../js/features/pixel-bible/interaction-motion.js');
- assert.equal(INTERACTION_MOTION_COUNT,80);
+ assert.equal(INTERACTION_MOTION_COUNT,116);
  const n={name:'룻'};
  for(const key of Object.keys(OBJECT_CATALOG)){
   const routine=interactionRoutine(n,key);assert.ok(routine.id&&routine.label);
@@ -435,4 +435,57 @@ test('관련 인물이 방문한 물건도 다른 인물이 다음에 사용하�
  const pairs=[{n:a,o,evidence:{},distance:2},{n:b,o,distance:3}];assert.equal(rankObjectVisits(pairs,0,objectCooldown,visitors)[0].n,a);
  visitors.set(objectVisitKey(a,o),0);objectCooldown.set(o,0);assert.equal(rankObjectVisits(pairs,4,objectCooldown,visitors).length,0);
  assert.equal(rankObjectVisits(pairs,10,objectCooldown,visitors)[0].n,b);
+});
+
+test('큰 나무는 뒤쪽 접근을 막고 수관 밖에서 상호작용한다',async()=>{
+ const {interactionApproaches,interactionAnchor}=await import('../js/features/pixel-bible/object-response.js');
+ const o={kind:'tree',x:10,y:10};
+ assert.deepEqual(interactionApproaches(o),[{x:9,y:10},{x:11,y:10},{x:10,y:11}]);
+ const n={x:9,y:10,usingObject:o,interaction:{category:'tree'}};
+ const left=interactionAnchor(n);assert.ok(left.x<o.x*24-60);assert.ok(left.y>o.y*24);
+ n.x=10;n.y=11;assert.ok(interactionAnchor(n).y>=o.y*24+24);
+});
+
+test('물병은 손으로 들고 입 높이에서 기울인 뒤 다시 내려놓는다',async()=>{
+ const {heldObject}=await import('../js/features/pixel-bible/object-response.js');
+ const n={x:9,y:10,direction:'right',usingObject:{kind:'water',x:10,y:10},interactionStart:0,interaction:{category:'water',gesture:'drink',variant:0,phase:0,period:4}};
+ assert.equal(heldObject(n,.1),null);
+ const lift=heldObject(n,1.1),drink=heldObject(n,2.1);
+ assert.equal(lift.kind,'water');assert.ok(drink.y<lift.y);assert.ok(Math.abs(drink.frame.tilt)>.5);
+ assert.equal(heldObject(n,3.1),null);
+});
+
+test('겹쳐 선 인물도 대화할 때만 서로 다른 축 좌표에 자리를 잡는다',async()=>{
+ const {planConversation,opposedDirections}=await import('../js/features/pixel-bible/conversation.js');
+ const {findPath}=await import('../js/features/pixel-bible/world.js');
+ const a={x:5,y:5},b={x:5,y:5},other={x:6,y:6,path:[{x:6,y:5},{x:7,y:5}]};
+ const blocked=(x,y)=>x<0||x>10||y<0||y>10;
+ const p=planConversation(a,b,[a,b,other],blocked,findPath);
+ assert.ok(p);assert.ok(p.route.length);assert.ok(opposedDirections(p.anchor,p.destination));
+});
+
+test('현재 장의 사건 대사는 구체적인 물건·행동과 감정을 갖고 다른 장에 섞이지 않는다',async()=>{
+ const {chapterMonologues}=await import('../js/features/pixel-bible/context-monologues.js');
+ const {speechEmotion}=await import('../js/features/pixel-bible/expression.js');
+ const lines=chapterMonologues({name:'엘리야'},[{code:'1ki',chap:19}]);
+ assert.equal(lines.length,3);assert.ok(lines.some(l=>l.text.includes('로뎀나무')));
+ assert.equal(speechEmotion(lines[0]),'sad');assert.equal(speechEmotion(lines[2]),'surprised');
+ assert.equal(chapterMonologues({name:'엘리야'},[{code:'1ki',chap:21}]).length,0);
+ assert.equal(speechEmotion({text:'전혀 다른 문장',emotion:'joy'}),'joy');
+});
+
+test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 규칙을 갖는다',async()=>{
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ const {objectBehavior}=await import('../js/features/pixel-bible/object-behavior.js');
+ const {INTERACTION_MOTIONS,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const {interactionApproaches,heldObject}=await import('../js/features/pixel-bible/object-response.js');
+ for(const kind of Object.keys(OBJECT_CATALOG)){
+  const behavior=objectBehavior(kind),routine=interactionRoutine({name:'룻'},kind),o={kind,x:10,y:10};
+  assert.ok(INTERACTION_MOTIONS[behavior.category],kind);assert.equal(routine.category,kind==='ark-covenant'?'bush':behavior.category,kind);
+  if(behavior.frontOnly)assert.ok(interactionApproaches(o).every(p=>p.y>=o.y),kind);
+  const n={name:'룻',x:9,y:10,direction:'right',usingObject:o,interaction:{...routine,phase:0},interactionStart:0};
+  assert.equal(!!heldObject(n,routine.period*.3),behavior.carry,kind);
+ }
+ for(const [kind,category]of Object.entries({table:'table',bed:'bed',temple:'building',tent:'building',crown:'wear',lamp:'lamp',rainbow:'symbol',chariot:'cart',basket:'basket',book:'scroll',trumpet:'instrument'}))assert.equal(objectBehavior(kind).category,category,kind);
+ assert.equal(objectBehavior('ark-covenant').carry,false);
 });

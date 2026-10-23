@@ -1,4 +1,4 @@
-import {OBJECT_CATALOG} from './object-catalog.js';
+import {objectBehavior} from './object-behavior.js';
 // 네 단계(준비→사용→사용→복귀)의 동작 원형. 이름별 변형은 원형과 별도로 계산한다.
 export const INTERACTION_MOTIONS={
  bench:[['sit','바로 앉아 쉬기'],['feet','앉아 발 흔들기'],['rest','몸 기대 쉬기'],['lap','무릎에 손 모으기']],
@@ -21,10 +21,18 @@ export const INTERACTION_MOTIONS={
  treasure:[['count','차례로 세기'],['inspect','빛에 비추어 살피기'],['hold','두 손으로 받치기'],['place','조심히 내려놓기']],
  net:[['spread','그물 펴기'],['mend','그물 손질하기'],['fold','그물 접기'],['cast','그물 뻗기']],
  tool:[['inspect','도구 살피기'],['use','천천히 작업하기'],['wipe','도구 닦기'],['place','도구 내려놓기']],
+ cooking:[['stir','솥 안을 천천히 젓기'],['warm','불기운 살피기'],['serve','음식 떠내기'],['inspect','익는 상태 살피기']],
+ table:[['arrange','상 위 정리하기'],['serve','상에 양식 놓기'],['wipe','상 닦기'],['inspect','상 위 살펴보기']],
+ bed:[['sit','침상 가장자리 앉기'],['rest','침상 곁에서 쉬기'],['smooth','자리 펴기'],['kneel','자리 곁에 무릎 굽히기']],
+ chest:[['open','뚜껑 열어 살피기'],['inspect','함 살펴보기'],['place','함 곁 정리하기'],['close','뚜껑 닫기']],
+ lamp:[['tend','등불 살피기'],['shield','손으로 바람 가리기'],['inspect','등잔 심지 살피기'],['hold','불빛 곁에 손 모으기']],
+ wear:[['inspect','의복과 장식 살피기'],['smooth','의복 매무새 정리하기'],['hold','두 손으로 받치기'],['polish','장식 닦기']],
+ cart:[['reins','고삐 잡기'],['inspect','바퀴 살피기'],['sit','병거에 앉기'],['balance','발판 딛고 균형 잡기']],
+ basket:[['fill','바구니에 담기'],['inspect','내용물 살피기'],['hold','바구니 받치기'],['place','바구니 내려놓기']],
+ symbol:[['look','표징 바라보기'],['point','손 들어 가리키기'],['observe','조용히 살펴보기'],['hands','두 손 모아 바라보기']],
 };
-const definition=(kind)=>OBJECT_CATALOG[kind]||{action:kind,family:''};
 export function interactionRoutine(n,kind){
- const def=definition(kind),category=INTERACTION_MOTIONS[def.family]?def.family:def.action;
+ const category=objectBehavior(kind).category;
  const variants=INTERACTION_MOTIONS[category]||INTERACTION_MOTIONS.tool;
  const key=(n.identity?.id||n.name||'reader')+':'+kind;
  const seed=[...key].reduce((s,c)=>s*31+c.codePointAt(0),7)>>>0;
@@ -33,7 +41,10 @@ export function interactionRoutine(n,kind){
  if(n.objectAction==='zacchaeus-tree')return {id:'tree:climb',category:'tree',gesture:'climb',label:'나무에 올라 바라보기',variant:seed%3,period:2.4,phase:0};
  const special={'widow-oil':'pour','david-stones':'pick','baruch-scroll':'write','josiah-scroll':'read','aaron-manna':'pour','ethiopian-scroll':'point'}[n.objectAction];
  if(special){const match=variants.findIndex(v=>v[0]===special);if(match>=0)index=match;}
+ if(['cup','flask'].includes(kind)&&category==='water')index=1;
  if(kind==='pen')index=2;
+ if(['basin','laver'].includes(kind))index=3;
+ if(kind==='table')index=seed%4;
  if(category==='instrument')index=['trumpet','flute'].includes(kind)?2:['tambourine','cymbal'].includes(kind)?1:0;
  return {id:`${category}:${variants[index][0]}`,category,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:2.4+(seed%4)*.2,phase:(seed%4)/4};
 }
@@ -41,10 +52,10 @@ export function interactionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;
  const use=phase===1||phase===2,reach=phase===1?1:phase===2?2:0;
  const {category,gesture,variant}=routine;
- const sit=category==='bench'||category==='boat'||gesture==='write';
- const bend=['gather','pick','place','kneel','care','prepare','bow'].includes(gesture)?reach:['bundle','harvest','stack'].includes(gesture)?reach*.5:0;
- const handY=gesture==='drink'?(phase===2?18:24):gesture==='scoop'?(phase===2?24:29):gesture==='wash'?(phase===2?27:29):gesture==='pour'?(phase===2?28:23):gesture==='fill'?29:gesture==='cap'?(phase===2?22:25):gesture==='blow'?17:gesture==='lap'?27:gesture==='inspect'?21:gesture==='bundle'?26:gesture==='hold'?25:bend?28:24;
- return {phase,sit,bend,handY,hand:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:bend?reach*2:gesture==='rest'&&use?1:0,bodyX:bend?reach:gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):0,climb:gesture==='climb'?reach*3:0};
+ const sit=category==='bench'||category==='boat'||(category==='bed'&&['sit','rest'].includes(gesture))||(category==='cart'&&gesture==='sit')||gesture==='write';
+ const bend=['gather','pick','place','kneel','care','prepare','bow','fill'].includes(gesture)?reach:['bundle','harvest','stack'].includes(gesture)?reach*.5:0;
+ const handY=['point','shield','tend'].includes(gesture)?(use?18:24):['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)?(phase===1?24:26):gesture==='eat'?(phase===2?18:25):gesture==='drink'?(phase===2?18:24):gesture==='scoop'?(phase===2?24:29):gesture==='wash'?(phase===2?27:29):gesture==='pour'?(phase===2?28:23):gesture==='fill'?29:gesture==='cap'?(phase===2?22:25):['leaves','fruit','trunk'].includes(gesture)?(use?19:24):gesture==='blow'?17:['arrange','serve','smooth','fill','reins'].includes(gesture)?(phase===2?27:25):gesture==='lap'?27:gesture==='inspect'?21:gesture==='bundle'?26:gesture==='hold'?25:bend?28:24;
+ return {phase,sit,bend,handY,hand:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:bend?reach*2:gesture==='rest'&&use?1:0,bodyX:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):0,climb:gesture==='climb'?reach*3:0};
 }
 // 한글 안내는 도안/문서 검토용이며 월드 하단 설명으로 띄우지 않는다.
 export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce((s,v)=>s+v.length,0);

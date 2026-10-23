@@ -1,5 +1,6 @@
+import { drawFaceExpression } from './expression.js';
 // 정면은 기존 도안, 측면/후면은 별도의 도트 실루엣. 좌측은 측면 원화의 반전.
-export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,action='',pose=null}={}) {
+export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,action='',pose=null,expression='neutral'}={}) {
  c.save();c.translate(Math.round(x-12*scale),Math.round(y-36*scale));c.scale(scale,scale);
  if(direction==='left'){c.translate(24,0);c.scale(-1,1);}
  const r=(x,y,w,h,color)=>{c.fillStyle=color;const upper=pose&&y<31;c.fillRect(x+(upper?pose.bodyX:0),y+(upper?pose.bodyY:0),w,h);};
@@ -25,13 +26,14 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.sash)r(14,22,2,9,s.sash);
   if(s.pattern)r(15,23,1,7,s.accent||'#cfac68');
   if(pose?.hand){const yy=pose.handY;
+   r(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);
    r(12,22,4,4,O);r(13,23,2,2,s.coat);r(14,yy,6,3,O);r(16,yy,4,2,skin);
   }else{r(11+step,22,4,4,O);r(12+step,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}
   // 뒤통수에서 코끝으로 이어지고 눈 하나와 귀를 구분한다.
   r(8,5,8,1,O);r(6,6,12,2,O);r(5,8,14,8,O);r(7,16,11,3,O);r(10,19,5,1,O);
   r(8,6,8,1,hair);r(7,7,10,3,hair);r(6,10,11,6,hair);r(8,16,5,2,hair);
   r(13,10,5,6,skin);r(14,16,3,2,skin);r(18,12,2,2,O);r(18,12,1,1,skin);
-  r(12,12,2,2,skin);r(16,12,1,2,O);r(16,15,1,1,'#eb9da2');
+  r(12,12,2,2,skin);drawFaceExpression(r,expression,{side:true});r(17,15,1,1,'#eb9da2');
   if(s.beard)r(15,17,2,1,s.beard);
   if(s.eyeliner)r(16,11,2,1,O);
   if(s.bald){r(9,6,7,2,skin);r(8,8,9,3,skin);}
@@ -66,9 +68,10 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  if(s.glow){r(2,13,1,2,'#f8dc85');r(22,17,1,2,'#f8dc85');}
  if(!pose&&action==='water'){r(17,16,3,4,O);r(17,16,2,1,'#87bfd1');}
  if(!pose&&action==='field'){r(19,24,1,8,'#b78a5a');r(18,23,3,3,'#e5c574');}
- if(pose?.hand){
+ if(pose?.hand&&!pose.heldObject){
   const px=side?19:14,py=pose.handY-1;
   if(['water','well','oil'].includes(pose.prop)){r(px,py,4,5,O);r(px+1,py+1,2,3,pose.prop==='oil'?'#d9bd58':'#8abbd0');}
+    if(pose.prop==='cooking'){r(18,pose.handY-3,1,9,'#b99a6f');r(17,pose.handY+4,3,2,'#b99a6f');}
   if(pose.prop==='field'){r(px,py,1,8,'#987c48');r(px-2,py,5,3,'#e5c574');}
   if(pose.prop==='scroll'){r(px-3,py,7,7,O);r(px-2,py+1,5,5,'#eee0b2');r(px-1,py+2,3,1,'#94805a');}
   if(pose.prop==='stone'){r(px-2,py,5,4,O);r(px-1,py,3,3,'#a5aaa2');}

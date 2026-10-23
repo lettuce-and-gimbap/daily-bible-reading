@@ -1,7 +1,8 @@
+import { interactionAnchor } from './object-response.js';
 // 매 프레임 현재 위치로 머리 위 연결점을 계산한다. 드래그 좌표도 동일하게 반영한다.
 export function relationshipLinks(relations,npcs,drag=null) {
  const links=[],seen=new Set();
- const head=n=>drag?.active&&drag.n===n?{x:drag.p.x*24,y:drag.p.y*24+16}:{x:n.x*24,y:n.y*24-80};
+ const head=n=>drag?.active&&drag.n===n?{x:drag.p.x*24,y:drag.p.y*24+16}:{x:interactionAnchor(n).x,y:interactionAnchor(n).y-80};
  for(const r of relations){
   const a=npcs.find(n=>n.name===r.from&&(!r.sourceRef||n.refs.includes(r.sourceRef)));
   const b=npcs.find(n=>n.name===r.to&&(!r.sourceRef||n.refs.includes(r.sourceRef)));

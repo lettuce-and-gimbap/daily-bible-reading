@@ -1,6 +1,7 @@
+import { speechEmotion } from './expression.js';
 import { WORLD, BOUNDS, cameraView, constrainCamera, toWorld, zoomAt, pinchCamera, edgePan } from './camera.js';
 import { canMoveObject } from './object-drag.js';
-import { objectPresentation, interactionAnchor, objectInteractionFrame, drawObjectResponse } from './object-response.js';
+import { objectPresentation, interactionApproaches, heldObject, interactionAnchor, objectInteractionFrame, drawObjectResponse } from './object-response.js';
 import { castKey, reconcileCast, findSpawnCell } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
@@ -130,7 +131,7 @@ export async function mountPixelWorld(shell, options) {
   const speechElement=shell.querySelector('.pb-speech');
   const speech=new SpeechDirector({now:performance.now()-3000});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
-  function hideSpeech(){cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
   function updateSpeech(now){
     const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!objectHold?.active&&!placing&&!removing&&!shell.querySelector('.pb-design,.pb-scripture');
@@ -152,14 +153,22 @@ export async function mountPixelWorld(shell, options) {
       if(current?.target&&current!==shownSpeech){
         const plan=planConversation(current.speaker,current.target,npcs,blocked,findPath);
         if(!plan){speech.dismiss(now);current=null;}
-        else if(plan.route.length){
-          pendingTalk={choice:current,plan,deadline:now+6000};speech.current=null;
-          plan.mover.path=plan.route;plan.anchor.idle=8;plan.mover.idle=8;current=null;
-        }else if(!faceEachOther(current.speaker,current.target)){speech.dismiss(now);current=null;}
+        else {
+          // 오브제에 붙여 그리던 자세를 해제한 뒤 실제 대화 좌표로 이동한다.
+          for(const actor of [current.speaker,current.target]){
+            actor.usingObject=null;actor.interaction=null;actor.task=null;actor.action='';actor.objectScene=null;actor.objectAction=null;actor.objectEvidence=null;
+          }
+          if(plan.route.length){
+            pendingTalk={choice:current,plan,deadline:now+6000};speech.current=null;
+            plan.mover.path=plan.route;plan.anchor.idle=8;plan.mover.idle=8;current=null;
+          }else if(!faceEachOther(current.speaker,current.target)){speech.dismiss(now);current=null;}
+        }
       }
     }
     if(current!==shownSpeech){
+      if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';
       shownSpeech=current;speechElement.hidden=!current;
+      if(current)current.speaker.expression=speechEmotion(current);
       if(current){
         speechElement.querySelector('p').textContent=current.text;
         const link=speechElement.querySelector('.pb-speech-reference');
@@ -179,13 +188,13 @@ export async function mountPixelWorld(shell, options) {
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
-    const r=canvas.getBoundingClientRect(),v=view(),n=shownSpeech.speaker;
-    const x=(n.x*TILE*v.scale+v.x)*r.width/canvas.width,y=((n.y*TILE-72)*v.scale+v.y)*r.height/canvas.height;
+    const r=canvas.getBoundingClientRect(),v=view(),n=shownSpeech.speaker,anchor=interactionAnchor(n,TILE);
+    const x=(anchor.x*v.scale+v.x)*r.width/canvas.width,y=((anchor.y-72)*v.scale+v.y)*r.height/canvas.height;
     let left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
     const topLimit=Math.max(48,shell.querySelector('.pb-world-head').offsetHeight+10),above=y-speechHeight-10;
     speechElement.style.visibility=x<0||x>r.width||y<-80||y>r.height?'hidden':'';
     const below=above<topLimit;
-    const proposed=below?((n.y*TILE+42)*v.scale+v.y)*r.height/canvas.height:above;
+    const proposed=below?((anchor.y+42)*v.scale+v.y)*r.height/canvas.height:above;
     speechElement.dataset.below=String(below);
     let top=Math.max(topLimit,Math.min(r.height-speechHeight-12,proposed));
     if(shownSpeech.target&&shownSpeech.target.x===n.x){
@@ -223,7 +232,7 @@ export async function mountPixelWorld(shell, options) {
   const clearInfo=()=>{clearTimeout(toastTimer);info.hidden=true;};
   const save = () => { indexObjects();try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
   const cell = (p) => ({ x: Math.round(p.x), y: Math.round(p.y) });
-  const adjacent = (o, n) => (objectPresentation(o.kind).portable?[[o.x-1,o.y],[o.x+1,o.y]]:[[o.x-1,o.y],[o.x+1,o.y],[o.x,o.y+1],[o.x,o.y-1]]).map(([x,y]) => ({x,y})).filter((p) => !blocked(p.x,p.y)).sort((a,b) => Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
+  const adjacent = (o,n) => interactionApproaches(o).filter(p=>!blocked(p.x,p.y)).sort((a,b)=>Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
   function togglePanel(side,open) {
     const panel=shell.querySelector(`#pb-${side}-panel`), button=shell.querySelector(`[data-action="toggle-${side}"]`);
     const show=open??panel.hidden;panel.hidden=!show;button.setAttribute('aria-expanded',show);
@@ -252,7 +261,7 @@ export async function mountPixelWorld(shell, options) {
     const n=npcs[i];
     if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();return;}
     if(speakOnSelect){
-      const v=view(),sx=n.x*TILE*v.scale+v.x,sy=n.y*TILE*v.scale+v.y;
+      const v=view(),anchor=interactionAnchor(n,TILE),sx=anchor.x*v.scale+v.x,sy=anchor.y*v.scale+v.y;
       if(sx<60||sx>canvas.width-60||sy<100||sy>canvas.height-60){camera.x=n.x*TILE;camera.y=n.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
       requestPersonal(n);
     }
@@ -319,7 +328,7 @@ export async function mountPixelWorld(shell, options) {
     return {x:((e.clientX-r.left)*canvas.width/r.width-v.x)/v.scale/TILE,y:((e.clientY-r.top)*canvas.height/r.height-v.y)/v.scale/TILE};
   }
   function hitPerson(p) {
-    return npcs.map((n,i)=>({n,i})).filter(({n})=>Math.abs(n.x-p.x)<1.5&&p.y-n.y<.8&&p.y-n.y>-5.2).sort((a,b)=>b.n.y-a.n.y)[0]?.i??-1;
+    return npcs.map((n,i)=>({n,i})).filter(({n})=>Math.abs(interactionAnchor(n,TILE).x/TILE-p.x)<1.5&&p.y-interactionAnchor(n,TILE).y/TILE<.8&&p.y-interactionAnchor(n,TILE).y/TILE>-5.2).sort((a,b)=>b.n.y-a.n.y)[0]?.i??-1;
   }
   function hitPlacedObject(p) {
     return [...objects].sort((a,b)=>b.y-a.y).find(o=>{
@@ -406,7 +415,7 @@ export async function mountPixelWorld(shell, options) {
   };
   canvas.addEventListener('pointerup',endGesture,{capture:true,signal});canvas.addEventListener('pointercancel',endGesture,{capture:true,signal});
   function keepInView(n){
-    const v=view(),px=n.x*TILE*v.scale+v.x,py=n.y*TILE*v.scale+v.y;
+    const v=view(),anchor=interactionAnchor(n,TILE),px=anchor.x*v.scale+v.x,py=anchor.y*v.scale+v.y;
     const mx=Math.min(100,canvas.width/4),top=Math.min(150,canvas.height/3),bottom=canvas.height-100;
     camera.x+=(px<mx?px-mx:px>canvas.width-mx?px-(canvas.width-mx):0)/v.scale;
     camera.y+=(py<top?py-top:py>bottom?py-bottom:0)/v.scale;
@@ -452,11 +461,11 @@ export async function mountPixelWorld(shell, options) {
     const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(p.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(p.y+3)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
     if(obj){
-      const spot=adjacent(obj,landing).find(s=>!npcs.some(other=>other!==n&&Math.hypot(other.x-s.x,other.y-s.y)<.6));
+      const spot=adjacent(obj,landing)[0];
       if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);draw();return;}
     }
-    if(blocked(landing.x,landing.y)||npcs.some(other=>other!==n&&Math.hypot(other.x-landing.x,other.y-landing.y)<.6)){
-      n.x=held.from.x;n.y=held.from.y;say('여기는 다른 인물이나 오브제와 겹쳐요. 빈 땅에 내려놓아 주세요.');
+    if(blocked(landing.x,landing.y)){
+      n.x=held.from.x;n.y=held.from.y;say('여기는 오브제가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
     keepInView(n);draw();
   }
@@ -693,7 +702,7 @@ export async function mountPixelWorld(shell, options) {
     ctx.imageSmoothingEnabled=false;ctx.save();ctx.setTransform(v.scale,0,0,v.scale,v.x,v.y);ctx.save();
     ctx.drawImage(background,0,0);
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
-    const items=[...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:n.y,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
+    const items=[...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,selected);
     if(objectHold?.active){
@@ -748,6 +757,7 @@ export async function mountPixelWorld(shell, options) {
 }
 
 function drawObject(c,o,response) {
+  if(response?.actor&&heldObject(response.actor,response.time,response.reduced))return;
   drawWorldObject(c,o,TILE,response);
   drawObjectResponse(c,o,response,TILE);
   if(!Object.hasOwn(WORLD_OBJECTS,o.kind)&&OBJECT_CATALOG[o.kind]){
@@ -757,12 +767,15 @@ function drawObject(c,o,response) {
 }
 function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
-  const actionPose=n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
+  let actionPose=n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
+  const held=heldObject(n,time,reduced,TILE);
+  if(held&&actionPose)actionPose={...actionPose,heldObject:true};
   const rise=n.objectAction==='zacchaeus-tree'&&n.usingObject?36:0;
   const anchor=interactionAnchor(n,TILE);
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",selected});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",selected});
+  if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);

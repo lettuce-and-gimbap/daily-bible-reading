@@ -2,6 +2,34 @@
 export function drawCatalogDetail(r,id,family,O){
  const wood='#a78255',gold='#d8b75f',metal='#aab6b4',paper='#eee0b3',dark='#5d665f';
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
+
+ if(['table','bed','throne','footstool'].includes(id)){
+  if(id==='table'){
+   line(-13,-8,26,4,O);line(-12,-7,24,2,wood);line(-11,-4,3,10,wood);line(8,-4,3,10,wood);line(-10,-7,20,1,paper);
+  }else if(id==='bed'){
+   line(-14,-9,28,11,O);line(-13,-8,26,8,paper);line(-5,-7,17,7,'#839d9a');line(-13,-11,6,5,'#f3ebd0');
+   line(-15,-14,2,19,wood);line(13,-7,2,12,wood);line(-13,1,26,2,wood);
+  }else if(id==='throne'){
+   line(-10,-25,20,25,O);line(-8,-23,16,21,gold);line(-6,-20,12,15,'#94707e');line(-12,-7,24,7,gold);line(-10,0,3,6,wood);line(7,0,3,6,wood);line(-2,-28,4,5,gold);
+  }else {line(-8,-3,16,4,wood);line(-6,1,2,4,O);line(4,1,2,4,O);}
+  return true;
+ }
+ if(['lamp','lampstand','torch','candle','censer','pot','pitcher'].includes(id)){
+  if(id==='pot'){
+   line(-9,-7,18,11,O);line(-8,-6,16,9,dark);line(-11,-6,3,4,O);line(8,-6,3,4,O);line(-8,-9,16,2,metal);line(-2,-11,4,2,O);
+  }else if(id==='pitcher'){
+   line(-5,-15,8,4,wood);line(-6,-11,12,15,wood);line(-4,-9,2,10,paper);line(5,-10,5,9,O);line(6,-8,2,5,'#f3efdf');line(-7,-15,4,2,paper);
+  }else if(id==='censer'){
+   line(-7,-7,14,10,gold);line(-5,-11,10,4,gold);line(-2,-15,4,4,metal);for(const x of [-6,5])line(x,-21,1,15,metal);
+  }else{
+   if(id==='lampstand'){line(-1,-24,2,28,gold);line(-8,3,16,2,gold);for(const x of [-9,-5,4,8]){line(x,-20,1,16,gold);line(Math.min(x,0),-5,Math.abs(x)+1,1,gold);line(x-1,-25,3,5,'#e9bd58');}}
+   else if(id==='torch'){line(-1,-14,2,19,wood);line(-4,-21,8,9,'#cf8c47');}
+   else if(id==='candle'){line(-2,-15,4,19,paper);line(-5,3,10,2,gold);}
+   else{line(-7,-4,14,7,wood);line(-4,-7,11,4,gold);line(5,-9,5,5,gold);}
+   line(id==='lamp'?6:-1,id==='lamp'?-14:-23,3,7,'#edb65b');line(id==='lamp'?7:0,id==='lamp'?-16:-25,1,6,'#fff0a6');
+  }
+  return true;
+ }
  if(['bow','arrow','sword','spear','javelin','staff','rod','cross','bronze-snake','pen','oar'].includes(id)){
   if(id==='bow'){for(let i=0;i<6;i++){line(-6+Math.floor(i/2),-23+i*4,2,5);line(6-Math.floor(i/2),-23+i*4,1,5,'#d8cba3');}line(-4,-3,3,3);}
   else if(id==='arrow'){line(-1,-24,2,28);line(-3,-24,6,3,metal);line(-4,0,4,4,paper);}

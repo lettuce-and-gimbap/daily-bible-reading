@@ -1,0 +1,29 @@
+// 명시된 감정이 우선이다. 대사 밖으로 장식을 그리지 않아 머리/관 장식과 충돌하지 않는다.
+export const EXPRESSIONS=['neutral','joy','sad','worried','angry','surprised','determined','gentle'];
+export function speechEmotion(line){
+ if(EXPRESSIONS.includes(line.emotion))return line.emotion;
+ const text=line.text||'';
+ if(/죽이|멸하|내 뜻대로|빼앗|도장|분노|어찌 감히/.test(text))return 'angry';
+ if(/울|눈물|슬프|죽었|잃었|통곡|불쌍/.test(text))return 'sad';
+ if(/두렵|도망|죽겠|근심|무섭|혼자 남|갈급/.test(text))return 'worried';
+ if(/어찌|놀랍|살아났|일어났|비었/.test(text))return 'surprised';
+ if(/기쁘|감사|찬양|구원|노래|나았|살리셨/.test(text))return 'joy';
+ if(/돌보|먹이|사랑|쉬|안아|내게로/.test(text))return 'gentle';
+ if(/따르|전하|여호와|말씀|명하신|섬기/.test(text))return 'determined';
+ return 'neutral';
+}
+export function drawFaceExpression(r,emotion='neutral',{side=false,look=0}={}){
+ const ink='#302f35',mouth='#a37363';
+ const xs=side?[16]:[9+look,14+look],ey=side?12:9,my=side?16:12,mx=side?16:11;
+ for(const x of xs){
+  if(['joy','gentle'].includes(emotion)){r(x,ey+1,2,1,ink);if(emotion==='joy')r(x,ey,1,1,ink);}
+  else {r(x,ey,1,2,ink);if(emotion==='surprised')r(x,ey,2,2,ink);}
+ }
+ if(emotion==='angry'||emotion==='determined'){
+  xs.forEach((x,i)=>{r(x+(i?-1:0),ey-1,2,1,ink);if(emotion==='angry')r(x+(i?-1:1),ey,1,1,ink);});
+ }else if(emotion==='worried'||emotion==='sad')xs.forEach((x,i)=>r(x+(i?0:-1),ey-1,2,1,mouth));
+ if(emotion==='surprised')r(mx,my,side?1:2,2,mouth);
+ else if(emotion==='joy'){r(mx-1,my,side?2:4,1,mouth);if(!side)r(mx,my+1,2,1,mouth);}
+ else if(emotion==='sad'||emotion==='worried'){r(mx,my,side?1:2,1,mouth);if(!side)r(mx-1,my+1,1,1,mouth);if(emotion==='sad')r(xs[0],ey+3,1,1,'#88becb');}
+ else r(mx,my,side?1:2,1,mouth);
+}
