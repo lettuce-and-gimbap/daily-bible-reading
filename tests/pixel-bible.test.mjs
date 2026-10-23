@@ -1,6 +1,39 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildWorldModel, findPath } from '../js/features/pixel-bible/world.js';
+import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
+
+test('오브제 근거가 장 전체 요약이어도 발화로 사용하지 않는다',()=>{
+ const evidence={text:'아람과 이스라엘의 전쟁을 설명하는 장 요약. '.repeat(80),ref:'열왕기상 22장'};
+ const line=objectContextSpeech('물항아리',evidence);
+ assert.equal(line.text,'물항아리를 살펴보자.');
+ assert.equal(line.detailText,evidence.text);
+ assert.equal(line.ref,evidence.ref);
+ assert.equal(speechView(line).detailText,evidence.text);
+});
+
+test('긴 해설은 짧은 첫 문장만 말풍선에 표시하고 원문 맥락은 별도로 보존한다',()=>{
+ const full='출전 전에 먼저 뜻을 물어봅시다. '+ '긴 사건 설명이 이어집니다. '.repeat(100);
+ const view=speechView({text:full,ref:'열왕기상 22:5'});
+ assert.equal(view.text,'출전 전에 먼저 뜻을 물어봅시다.');
+ assert.equal(view.detailText,full.trim());
+ assert.equal(view.ref,'열왕기상 22:5');
+ const unbroken='아'.repeat(200);
+ assert.ok([...speechView({text:unbroken}).text].length<=BUBBLE_LIMIT);
+ assert.equal(speechView({text:unbroken}).detailText,unbroken);
+});
+
+test('자동 대사와 클릭 대사 모두 길이 제한과 5초 표시 후 3초 공백을 지킨다',async()=>{
+ const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
+ const director=new SpeechDirector({now:0,random:()=>0});
+ const line={id:'long',speaker:{},text:'장 설명 '.repeat(300)};
+ assert.ok(director.tick(3000,[line]).text.length<=BUBBLE_LIMIT);
+ assert.equal(director.tick(8000,[line]),null);
+ assert.equal(director.tick(10999,[line]),null);
+ assert.ok(director.tick(11000,[line]));
+ assert.ok(director.interrupt(line,11001).text.length<=BUBBLE_LIMIT);
+ assert.equal(director.current.detailText,line.text.trim());
+});
 
 test('인물을 함께 모아도 본문 출처를 보존하고 하나님은 인간 NPC로 만들지 않는다', () => {
   const base = { name: '창세기', code: 'gen' };
@@ -402,13 +435,15 @@ test('오브제 옮기기는 원래 물건은 제외하고 다른 물건·인물
  assert.deepEqual(o,{kind:'water',x:8,y:9});
 });
 
-test('모호한 관계 독백 대신 본문의 구체적 관계 설명과 출처를 사용한다',async()=>{
+test('짧은 고유 대사를 우선하고 구체적 관계 설명은 펼칠 맥락으로 보존한다',async()=>{
  const {personalLines}=await import('../js/features/pixel-bible/personal-lines.js');
  const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
  const chapters=[{code:'rut',name:'룻기',chap:2,data:{people:[{name:'룻',role:'이삭을 줍는 며느리'},{name:'보아스',role:'밭 주인'}],rels:[{from:'보아스',to:'룻',label:'보호',verses:'8-9',note:'보아스는 룻에게 같은 밭에서 일하고 일꾼들이 길어 온 물을 마시도록 허락했습니다.'}]}}];
  const context=buildChapterDialogue(chapters),p=context.people.find(p=>p.name==='룻');
  const lines=personalLines({...p,refs:[p.ref]},chapters,context);
- assert.ok(lines.some(l=>l.text===context.relations[0].text&&l.ref==='룻기 2:8-9'));
+ assert.ok(lines.every(l=>l.origin==='authored'));
+ assert.ok(lines.some(l=>l.detailText===context.relations[0].text));
+ assert.ok(lines.every(l=>l.ref.startsWith('룻기 2:')));
  assert.ok(lines.every(l=>!l.text.includes('얽힌 일')));
 
 });

@@ -1,4 +1,5 @@
 import {drawInteractionEffects} from './interaction-effects.js';
+import {objectContextSpeech} from './speech-view.js';
 import {grabOffset,grabbedOrigin} from './grab.js';
 import { majorCast, recommendedCast, exposureStorageKey } from './exposure.js';
 import { fitLayout } from './layout.js';
@@ -117,7 +118,7 @@ export async function mountPixelWorld(shell, options) {
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>분량 전체 인물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -179,20 +180,39 @@ export async function mountPixelWorld(shell, options) {
       if(current)current.speaker.expression=speechEmotion(current);
       if(current){
         speechElement.querySelector('p').textContent=current.text;
-        const link=speechElement.querySelector('.pb-speech-reference');
+        const link=speechElement.querySelector('[data-action="passage"]');
         link.textContent=current.ref||'';link.hidden=!parseReference(current.ref);link.setAttribute('aria-label',`${current.ref||''} 성경 본문 보기`);
         speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
       }
     }
   }
-  async function openSpeechPassage(){
-    const reference=shownSpeech?.ref,parsed=parseReference(reference);if(!parsed)return;
+  async function openSpeechPassage(reference=shownSpeech?.ref){
+    const parsed=parseReference(reference);if(!parsed)return;
+    shell.querySelector('.pb-scripture')?.remove();
     hideSpeech();
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label',reference);
     panel.innerHTML='<header><b></b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body" aria-live="polite">본문을 불러오는 중…</div>';
     panel.querySelector('b').textContent=reference;shell.append(panel);panel.querySelector('button').focus();
     try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;}
     catch(_){if(panel.isConnected)panel.querySelector('.pb-scripture-body').textContent='본문을 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 눌러 주세요.';}
+  }
+  function openSpeechDetails(){
+    if(!shownSpeech)return;
+    const choice=shownSpeech,reference=choice.ref,parsed=parseReference(reference);
+    const chapter=chapterData.find(c=>c.code===parsed?.code&&Number(c.chap)===parsed?.chapter);
+    hideSpeech();
+    const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사와 본문 해설');
+    panel.innerHTML='<header><b>대사와 본문 해설</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>본문 맥락</h3><p></p></section><section class="pb-detail-summary"><h3>장 해설</h3><p></p></section><button class="pb-button" data-action="detail-passage">근거 본문 보기</button></div>';
+    panel.querySelector('.pb-detail-line').textContent=choice.text;
+    const context=panel.querySelector('.pb-detail-context');context.hidden=!choice.detailText;context.querySelector('p').textContent=choice.detailText||'';
+    const summary=panel.querySelector('.pb-detail-summary'),story=chapter?.data?.story||chapter?.data?.line||'';
+    summary.hidden=!story||story===choice.detailText;summary.querySelector('p').textContent=story;
+    if(chapter?.code==='1ki'&&Number(chapter.chap)===22){
+      const note=document.createElement('p');note.textContent='해설 · 여호사밧은 출전 전에 하나님의 뜻을 묻자고 요청해요. 왕이 듣기 원하는 말과 하나님의 말씀을 구별하는 것이 이 장의 중요한 갈등이에요. (열왕기상 22:5–8, 업로드 호크마 정리 참고)';
+      panel.querySelector('.pb-scripture-body').append(note);
+    }
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed;link.dataset.reference=reference||'';link.textContent=reference?reference+' · 본문 보기':'본문 보기';
+    shell.append(panel);panel.querySelector('button').focus();
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
@@ -626,6 +646,8 @@ export async function mountPixelWorld(shell, options) {
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }
+    if(action==='speech-details'){openSpeechDetails();return;}
+    if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference);return;}
     if(action==='passage'){await openSpeechPassage();return;}
     if(action==='close-scripture'){shell.querySelector('.pb-scripture')?.remove();canvas.focus();return;}
     if(action==="design" && !shell.querySelector(".pb-design")) {
@@ -729,7 +751,7 @@ export async function mountPixelWorld(shell, options) {
         n.action=target.kind;n.task=null;n.usingObject=target;n.objectAction=n.objectScene?.id||null;
         n.objectVisits??=Object.create(null);const visit=n.objectVisits[target.kind]||0;n.objectVisits[target.kind]=visit+1;
         n.interaction=interactionRoutine(n,target.kind,visit);n.interactionStart=time;n.idle=8;
-        if(n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,text:n.objectEvidence.text,ref:n.objectEvidence.ref,kind:'context',object:target};}
+        if(n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,...objectContextSpeech(OBJECTS[target.kind],n.objectEvidence),kind:'context',object:target};}
         n.objectEvidence=null;
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
           objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,kind:'context',object:target};

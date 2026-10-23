@@ -96,3 +96,9 @@
 @media(max-width:700px){.pb-camera-controls{gap:3px;padding:3px 5px;}.pb-camera-controls .pb-button{font-size:10px;min-width:36px;}.pb-side-toggle{padding:8px 12px;}.pb-toggle-right{min-width:142px;}}
 .pb-roster-row{display:flex;gap:6px;align-items:stretch;width:100%}.pb-roster-row>[data-cast-person]{flex:1;text-align:left}.pb-roster-row>.pb-person-toggle{flex:0 0 66px;font-size:12px}.pb-person-toggle[aria-pressed=false]{opacity:.65}.pb-recommendations{border:1px solid #b4aa78;padding:8px;margin:8px 0}.pb-recommendations h4{margin:0 0 8px;font-size:13px}.pb-recommendations button{margin:3px}.pb-recommendations small{display:block;font-size:10px}.pb-cast-count{font-size:12px;color:#e3d9b0}
 .pb-recommendations{width:100%;box-sizing:border-box}
+
+/* Bubble stays compact; complete context lives in the opt-in reading panel. */
+.pb-speech p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;max-height:4.35em;}
+.pb-speech [data-action="speech-details"]{display:inline-block;min-height:32px;margin:4px 10px 0 0;}
+.pb-detail-line{font-weight:bold;}
+.pb-scripture-body p{white-space:pre-line;overflow-wrap:anywhere;}

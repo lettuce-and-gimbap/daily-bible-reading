@@ -1,4 +1,5 @@
 import { personalLines } from './personal-lines.js';
+import { speechView } from './speech-view.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { SOLO_DIALOGUE } from './solo-dialogue.js';
 import { PAIR_DIALOGUE } from './pair-dialogue.js';
@@ -37,7 +38,7 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
 export class SpeechDirector {
  constructor({now=0,random=Math.random,duration=5000,gap=3000}={}){this.random=random;this.duration=duration;this.gap=gap;this.nextAt=now+gap;this.current=null;this.lastId=null;this.lastSpeaker=null;}
  interrupt(choice,now){return this.start(choice,now);}
- start(choice,now){this.current={...choice,started:now,until:now+this.duration};this.lastId=choice.id;this.lastSpeaker=choice.speaker;return this.current;}
+ start(choice,now){this.current={...speechView(choice),started:now,until:now+this.duration};this.lastId=choice.id;this.lastSpeaker=choice.speaker;return this.current;}
  dismiss(now){this.current=null;this.nextAt=now+this.gap;}
  tick(now,candidates,enabled=true){
   if(!enabled){this.dismiss(now);return null;}

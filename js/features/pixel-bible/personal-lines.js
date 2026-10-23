@@ -30,5 +30,6 @@ export function personalLines(n,chapters,context){
  }
  if(lines.length<3)add(`${ref}에 ${n.name}의 이름이 기록되어 있다.`,ref,'chapter-role');
  if(lines.length<3)add(`${n.name}의 행적은 ${ref}에서 살펴볼 수 있다.`,ref,'chapter-role');
- return lines.slice(0,5).map((line,i)=>({...line,id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:line.origin==='authored'?'solo':'context'}));
+ const authoredLines=lines.filter(line=>line.origin==='authored');
+ return (authoredLines.length?authoredLines:lines).slice(0,5).map((line,i)=>({...line,detailText:line.origin==='authored'?(relation?.text||''):'',id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:line.origin==='authored'?'solo':'context'}));
 }
