@@ -62,7 +62,7 @@ async function openChangelog(since) {
   const log = await loadChangelog();
   document.querySelector(".cl-pop")?.remove();
   const cur = appVersion();
-  const fresh = since ? log.filter((e) => verCompare(e.ver, since) > 0 && verCompare(e.ver, cur) <= 0) : [];
+  const fresh = since ? log.filter((e) => verCompare(e.ver, since) > 0 && verCompare(e.ver, cur) <= 0) : log.filter((e) => e.ver === cur);
   const rest = log.filter((e) => !fresh.includes(e));
   const pop = document.createElement("div");
   pop.className = "cl-pop";
@@ -71,7 +71,7 @@ async function openChangelog(since) {
   pop.innerHTML = `<div class="cl-card">
     <div class="cl-head"><h3>🆕 ${fresh.length ? "새로 바뀐 점" : "업데이트 기록"} <small>현재 v${esc(cur)}</small></h3><button class="icon-btn" data-cl="close" aria-label="닫기">✕</button></div>
     <div class="cl-body">
-      ${verCompare(cur, "10.0.0") >= 0 ? `<section class="pb-release-guide"><h3>사용설명서</h3>${pixelBibleBannerHtml()}<p>통독 탭 왼쪽의 <b>PIXEL BIBLE</b>을 눌러 가로 화면으로 입장하세요.</p><ul><li>인물을 누르면 선택 표시와 대사가 나와요. 빈 땅을 누르면 선택이 해제돼요. 집어 옮기거나 선택 후 방향키로 이동할 수 있어요.</li><li>좌우 도구 패널에서 배경을 바꾸고 오브제를 놓아 보세요. 조합식에서 이벤트 조건을 확인할 수 있어요.</li><li>가까운 인물들은 서로 마주 보고 이야기해요. 말풍선의 성경구절을 누르면 본문을 볼 수 있어요.</li><li>두 손가락이나 아래 배율 조절로 확대·축소하고, 빈 땅을 끌어 시점을 옮기세요. 캐릭터를 화면 가장자리로 끌면 시점이 따라가요.</li><li>오브제를 고르면 도구 창이 닫혀요. 같은 버튼을 다시 누르거나 아래 배치 취소로 선택을 풀 수 있어요.</li></ul><p class="muted small">대사는 본문을 참고해 새로 구성했어요. 실제 성경 문장은 참고 구절에서 확인해 주세요.</p></section>` : ""}
+      ${verCompare(cur, "10.0.0") >= 0 ? `<section class="pb-release-guide"><h3>사용설명서</h3>${pixelBibleBannerHtml()}<p>통독 탭 왼쪽의 <b>PIXEL BIBLE</b>을 눌러 가로 화면으로 입장하세요.</p><ul><li>인물을 누르면 선택 표시와 대사가 나와요. 빈 땅을 누르면 선택이 해제돼요. 집어 옮기거나 선택 후 방향키로 이동할 수 있어요.</li><li>좌우 도구 패널에서 배경을 바꾸고 오브제를 놓아 보세요. 조합식에서 이벤트 조건을 확인할 수 있어요.</li><li>관계가 있는 인물들이 옆 칸에서 만나면 서로 마주 보고 이야기해요. 긴 설명은 말풍선의 ‘자세히’로, 성경 본문은 참고 구절로 열어 보세요.</li><li>모바일에서는 두 손가락, PC에서는 마우스 휠로 확대·축소하고, 빈 땅을 끌어 시점을 옮기세요. 캐릭터를 화면 가장자리로 끌면 시점이 따라가요.</li><li>오브제를 고르면 도구 창이 닫혀요. 같은 버튼을 다시 누르거나 아래 배치 취소로 선택을 풀 수 있어요.</li></ul><p class="muted small">대사는 본문을 참고해 새로 구성했어요. 실제 성경 문장은 참고 구절에서 확인해 주세요.</p></section>` : ""}
       ${fresh.length ? fresh.map(changelogEntryHtml).join("") : ""}
       ${rest.length ? changelogGroupsHtml(rest) : ""}
       ${log.length ? "" : `<p class="muted small">기록을 불러오지 못했어요.</p>`}

@@ -102,3 +102,6 @@
 .pb-speech [data-action="speech-details"]{display:inline-block;min-height:32px;margin:4px 10px 0 0;}
 .pb-detail-line{font-weight:bold;}
 .pb-scripture-body p{white-space:pre-line;overflow-wrap:anywhere;}
+
+.pb-encounter{z-index:4;max-width:min(230px,calc(50% - 20px));border-color:#8b6e32;background:#fff4c9;}
+.pb-encounter::after{background:#fff4c9;}

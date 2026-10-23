@@ -21,3 +21,14 @@ export function motionPose(profile,stride=0,moving=false){
  if(profile.limp){const loaded=Math.sin(phase)>0;return {x:loaded?1:0,y:loaded?2:0,tilt:loaded?.045:-.015,speed:loaded?.52:1};}
  return {x:0,y:profile.bounce?Math.round(-Math.abs(Math.sin(phase))*profile.bounce):0,tilt:0,speed:1};
 }
+
+// Six discrete poses: dangling legs, alternating kicks and reaching hands.
+// Limb asymmetry stays character-specific; an impaired leg is not forced to kick.
+export function hangingPose(profile,time=0,velocity=0,reduced=false){
+ const beat=reduced?0:Math.floor(time*profile.frequency+profile.phase)%6;
+ const lively=['lively','climber','runner','dance'].includes(profile.key);
+ const left=[1,0,-2,0,2,1][beat],right=[-1,2,1,0,-2,0][beat];
+ return {direction:'down',angle:reduced?0:Math.max(-.24,Math.min(.24,velocity*.004+Math.sin(beat*Math.PI/3)*Math.max(.08,profile.swing))),
+  pose:{dangling:true,bodyX:0,bodyY:0,leftLeg:profile.limp?1:left,rightLeg:profile.limp?0:right,leftArm:(lively?[0,-2,-4,-1,1,-2]:[1,0,-1,1,2,0])[beat],rightArm:(lively?[-3,0,1,-2,-4,0]:[0,1,2,0,-1,1])[beat]},
+  expression:lively&&beat%3===0?'surprised':'worried'};
+}

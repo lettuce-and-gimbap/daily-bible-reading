@@ -146,12 +146,12 @@ test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
  assert.equal(d(0,-1),'up');assert.equal(d(0,1),'down');assert.equal(d(-1,0),'left');assert.equal(d(1,0),'right');assert.equal(d(0,0,'up'),'up');
 });
 
-test('100종의 독백 200개와 관계 대사 106개를 직접 작성해 출처와 구분한다',async()=>{
+test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한다',async()=>{
  const {APPEARANCES}=await import('../js/features/pixel-bible/appearance.js');
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,53);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,61);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 

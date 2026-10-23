@@ -75,7 +75,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   r(5,37,14,1,"#183a3933");
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
   const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,pose?.barefeet?skin:style.sandal?"#d2b47d":"#a77d57");};
-  if(pose?.sit){
+  if(pose?.dangling){leg(7,pose.leftLeg);leg(14,pose.rightLeg);}
+  else if(pose?.sit){
     r(7,31,11,3,outline);r(8,31,9,1,style.coat);r(8,33,3,3,outline);r(15,33+pose.legSwing,3,3,outline);r(8,35,5,2,outline);r(15,35+pose.legSwing,5,2,outline);
   }else if(pose?.bend){r(6,32,5,3,outline);r(14,32,5,3,outline);r(5,35,6,2,outline);r(14,35,6,2,outline);}
   else{leg(7,step);leg(14,pose?.kick?-3:-step);if(pose?.kick){r(17,32,5,2,outline);r(18,32,3,1,skin);}}
@@ -89,7 +90,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   // 옷깃 중앙의 한 줄 피부만 남겨 얼굴과 옷의 경계를 표현한다.
   r(10,20,4,1,skin);r(10,21,1,1,"#f4e7c5");r(13,21,1,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
-  if(pose?.hand){
+  if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
+  else if(pose?.hand){
     const dy=pose.handY-24;
     r(5,Math.min(23,pose.handY),2,Math.abs(pose.handY-23)+2,outline);
     r(18,Math.min(23,pose.handY),2,Math.abs(pose.handY-23)+2,outline);

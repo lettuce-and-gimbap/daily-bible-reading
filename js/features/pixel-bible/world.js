@@ -1,3 +1,4 @@
+import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
 import {objectContextSpeech} from './speech-view.js';
 import {grabOffset,grabbedOrigin} from './grab.js';
@@ -13,7 +14,7 @@ import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { personalLines } from './personal-lines.js';
-import { characterMotion, motionPose } from './motion.js';
+import { characterMotion, motionPose, hangingPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
@@ -139,6 +140,7 @@ export async function mountPixelWorld(shell, options) {
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
   const speech=new SpeechDirector({now:performance.now()-3000});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
+  const encounters=new EncounterDirector(chapterData,dialogueContext);let encounterLines=[];const encounterBubbles=new Map();
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
@@ -156,7 +158,7 @@ export async function mountPixelWorld(shell, options) {
         else speech.dismiss(now);
       }
     }else{
-      const candidates=ready?(objectSpeech?[objectSpeech]:dialogueCandidates(npcs,chapterData,dialogueContext)):[];
+      const candidates=ready?(objectSpeech?[objectSpeech]:dialogueCandidates(npcs.filter(n=>!n.encounter),chapterData,dialogueContext)):[];
       if(ready&&objectSpeech)objectSpeech=null;
       current=speech.tick(now,candidates,true);
       if(current?.target&&current!==shownSpeech){
@@ -196,9 +198,9 @@ export async function mountPixelWorld(shell, options) {
     try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;}
     catch(_){if(panel.isConnected)panel.querySelector('.pb-scripture-body').textContent='본문을 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 눌러 주세요.';}
   }
-  function openSpeechDetails(){
-    if(!shownSpeech)return;
-    const choice=shownSpeech,reference=choice.ref,parsed=parseReference(reference);
+  function openSpeechDetails(choice=shownSpeech){
+    if(!choice)return;
+    const reference=choice.ref,parsed=parseReference(reference);
     const chapter=chapterData.find(c=>c.code===parsed?.code&&Number(c.chap)===parsed?.chapter);
     hideSpeech();
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사와 본문 해설');
@@ -213,6 +215,44 @@ export async function mountPixelWorld(shell, options) {
     }
     const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed;link.dataset.reference=reference||'';link.textContent=reference?reference+' · 본문 보기':'본문 보기';
     shell.append(panel);panel.querySelector('button').focus();
+  }
+  function updateEncounters(now){
+    const enabled=!paused&&!activeEvent&&!pendingEvent&&!shell.querySelector('.pb-design,.pb-scripture')&&!document.hidden;
+    const excluded=[drag?.active?drag.n:null];
+    encounterLines=encounters.tick(now,npcs,{enabled,excluded});
+    if(pendingTalk&&[pendingTalk.choice.speaker,pendingTalk.choice.target].some(n=>n.encounter))cancelTalk();
+    const ids=new Set(encounterLines.map(l=>l.session+':'+l.slot));
+    for(const [id,el]of encounterBubbles)if(!ids.has(id)){el.remove();encounterBubbles.delete(id);}
+    for(const line of encounterLines){
+      const id=line.session+':'+line.slot;let el=encounterBubbles.get(id);
+      if(!el){
+        el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
+        el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
+        el.dataset.encounter=id;el.querySelector('p').textContent=line.text;
+        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref);link.dataset.reference=line.ref||'';
+        shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
+      }
+    }
+  }
+  function positionEncounters(){
+    const r=canvas.getBoundingClientRect(),v=view(),ratio=canvas.width/r.width,occupied=[];
+    if(!speechElement.hidden&&speechElement.style.visibility!=='hidden'){
+      occupied.push({left:parseFloat(speechElement.style.left)||0,top:parseFloat(speechElement.style.top)||0,width:speechElement.offsetWidth,height:speechElement.offsetHeight});
+    }
+    for(const line of encounterLines){
+      const el=encounterBubbles.get(line.session+':'+line.slot);if(!el)continue;
+      const x=(line.speaker.x*TILE*v.scale+v.x)/ratio,y=((line.speaker.y*TILE-76)*v.scale+v.y)/ratio;
+      const width=el.offsetWidth,height=el.offsetHeight;
+      const targetX=(line.target.x*TILE*v.scale+v.x)/ratio;
+      const right=x>targetX||x===targetX&&line.slot===1;
+      const left=Math.max(8,Math.min(r.width-width-8,right?x+18:x-width-18));
+      const preferred=y-height-12+(line.slot?height+24:0);
+      const candidates=[preferred,y-height-12,y+14,y-2*height-24,y+height+28,...occupied.flatMap(o=>[o.top-height-12,o.top+o.height+12])].map(t=>Math.max(60,Math.min(r.height-height-12,t)));
+      const top=candidates.find(t=>occupied.every(o=>left+width+8<=o.left||left>=o.left+o.width+8||t+height+8<=o.top||t>=o.top+o.height+8))??candidates[0];
+      occupied.push({left,top,width,height});
+      el.style.left=`${Math.round(left)}px`;el.style.top=`${Math.round(top)}px`;el.style.setProperty('--pb-tail',`${Math.max(14,Math.min(width-14,x-left))}px`);
+      el.dataset.below=String(top>=y);el.style.visibility=x<0||x>r.width||y<-100||y>r.height?'hidden':'';
+    }
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
@@ -348,6 +388,7 @@ export async function mountPixelWorld(shell, options) {
     renderRecipes();clearInfo();
   }
   function move(n, goal, task = null) {
+    encounters.cancel(n);
     if(pendingTalk||speech.current?.speaker===n||speech.current?.target===n)hideSpeech();
     const path = findPath(cell(n), goal, blocked);
     if (!path) return false;
@@ -554,12 +595,12 @@ export async function mountPixelWorld(shell, options) {
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
     if(obj){
       const spot=adjacent(obj,landing)[0];
-      if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);draw();return;}
+      if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);updateEncounters(performance.now());draw();return;}
     }
     if(blocked(landing.x,landing.y)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 오브제가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
-    keepInView(n);draw();
+    keepInView(n);updateEncounters(performance.now());draw();
   }
   canvas.addEventListener('pointerup',e=>{finishObjectHold(e);finishDrag(e);},{signal});
   canvas.addEventListener('pointercancel',e=>{finishObjectHold(e,true);finishDrag(e,true);},{signal});
@@ -646,6 +687,8 @@ export async function mountPixelWorld(shell, options) {
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }
+    if(action==='encounter-details'){const id=b.closest('[data-encounter]').dataset.encounter;openSpeechDetails(encounterLines.find(l=>l.session+':'+l.slot===id));return;}
+    if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference);return;}
     if(action==='speech-details'){openSpeechDetails();return;}
     if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference);return;}
     if(action==='passage'){await openSpeechPassage();return;}
@@ -718,7 +761,7 @@ export async function mountPixelWorld(shell, options) {
   function autoObjects(){
     if(time<autoObjectAt||pendingEvent||pendingTalk||activeEvent||drag||objectHold||placing||removing)return;
     autoObjectAt=time+3;
-    const idle=npcs.filter(n=>!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
+    const idle=npcs.filter(n=>!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
     const pairs=objects.filter(o=>!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
       const specific=model.scenes.filter(s=>s.object===o.kind&&sceneActors(s).every(Boolean));
       return idle.map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
@@ -734,6 +777,7 @@ export async function mountPixelWorld(shell, options) {
     time+=dt;autoObjects();
     for(const n of npcs) {
       if(drag?.active && drag.n===n)continue;
+      if(n.encounter){n.idle=6;continue;}
       const talk=pendingTalk?.choice||speech.current;
       if(talk?.target&&(n===talk.speaker||n===talk.target)&&!n.path.length){n.idle=6;continue;}
       if(talk?.speaker===n&&!n.path.length){n.idle=1;continue;}
@@ -781,7 +825,7 @@ export async function mountPixelWorld(shell, options) {
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
     const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
-    if(drag?.active)drawLifted(ctx,drag,time,selected);
+    if(drag?.active)drawLifted(ctx,drag,time,reduced);
     if(objectHold?.active){
       const p=objectLanding(objectHold),valid=canMoveObject(objectHold.o,p,[...objects,...terrain],npcs);
       ctx.fillStyle=valid?'#79c99566':'#e17e7866';ctx.fillRect((p.x-.6)*TILE,(p.y-.4)*TILE,1.2*TILE,.8*TILE);
@@ -790,7 +834,7 @@ export async function mountPixelWorld(shell, options) {
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
     ctx.restore();
     if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px sans-serif`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
-    ctx.restore();positionSpeech();
+    ctx.restore();positionSpeech();positionEncounters();
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
     const scripture=shell.querySelector('.pb-scripture');if(scripture){e.preventDefault();scripture.remove();canvas.focus();return;}
@@ -814,16 +858,16 @@ export async function mountPixelWorld(shell, options) {
       }
     }
     followDraggedCharacter(dt);
-    updateSpeech(performance.now());draw();
+    updateEncounters(performance.now());updateSpeech(performance.now());draw();
     if(canRun())frame=requestAnimationFrame(tick);
   }
   function resume() {
     cancelAnimationFrame(frame);last=0;
-    if(document.hidden || window.innerWidth<=window.innerHeight) {hideSpeech();if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:0,clientY:0},true);if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
+    if(document.hidden || window.innerWidth<=window.innerHeight) {hideSpeech();encounters.clear();updateEncounters(performance.now());if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:0,clientY:0},true);if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   function syncRelationships(){
     const button=shell.querySelector('[data-action="relationships"]');
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
@@ -866,13 +910,12 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
 
-function drawLifted(c,drag,time) {
+function drawLifted(c,drag,time,reduced=false) {
   const origin=grabbedOrigin(drag),x=origin.x*TILE,y=origin.y*TILE;
-  const motion=drag.n.motion,angle=Math.max(-.22,Math.min(.22,drag.vx*.004+Math.sin(time*motion.frequency+motion.phase)*motion.swing*.35));
+  const lift=hangingPose(drag.n.motion,time,drag.vx,reduced),angle=lift.angle;
   c.fillStyle='#18352b55';c.fillRect(x-19,y+8,38,8);
   // 집은 픽셀 자체를 회전 중심으로 삼아 대롱거려도 커서와 떨어지지 않는다.
   c.save();c.translate(drag.p.x*TILE,drag.p.y*TILE);c.rotate(angle);c.translate(-drag.p.x*TILE,-drag.p.y*TILE);
-  c.translate(x,y-28);c.rotate(drag.captureAngle||0);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,direction:drag.direction||'down',walkFrame:drag.walkFrame,interaction:drag.snapshot,expression:drag.expression,selected:true});
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,direction:'down',walkFrame:0,interaction:lift.pose,expression:lift.expression,selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }
