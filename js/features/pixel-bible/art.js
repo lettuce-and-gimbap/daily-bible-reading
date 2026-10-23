@@ -1,3 +1,4 @@
+import { objectPresentation } from './object-response.js';
 import { drawCatalogDetail } from './catalog-art.js';
 import { OBJECT_CATALOG } from './object-catalog.js';
 import { drawDirectionalCharacter } from './directions.js';
@@ -150,13 +151,13 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(pose?.hand&&['bucket','rope'].includes(pose.gesture)){r(18,21,1,12,'#b9945d');r(16,31,5,4,'#9c774a');}
   ctx.restore();
 }
-export function drawWorldObject(c,o,tile=24) {
+export function drawWorldObject(c,o,tile=24,frame=null) {
   const descriptor=OBJECT_CATALOG[o.kind];
   const family=descriptor?.family;
   const originalKind=o.kind;
   if(descriptor&&!['field','water','bench','tree','well','stone','bush','boat','scroll','oil'].includes(o.kind))o={...o,kind:['plant','crop'].includes(family)?(family==='crop'?'field':'tree'):['vessel'].includes(family)?descriptor.action:['book'].includes(family)?'scroll':family==='boat'?'boat':family==='stone'?'stone':family==='seat'?'bench':'catalog'};
   const x=o.x*tile,y=o.y*tile;
-  c.save();c.translate(Math.round(x),Math.round(y));c.scale(3,3);
+  c.save();c.translate(Math.round(x+(frame?.dx||0)),Math.round(y+(frame?.dy||0)));c.rotate(frame?.tilt||0);const size=frame?.scale||objectPresentation(originalKind).scale;c.scale(size*(1+(frame?.open||0)),size*(1-(frame?.squash||0)));
   const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};const O="#393e3c";
   r(-7,4,15,2,"#193b3533");
   if(descriptor&&drawCatalogDetail(r,originalKind,family,O)){c.restore();return;}

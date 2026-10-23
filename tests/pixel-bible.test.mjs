@@ -363,3 +363,31 @@ test('표시 인물이 바뀌어도 기존 인물의 위치·경로·방향·오
  assert.ok(spawn);assert.ok(Math.hypot(spawn.x-2,spawn.y-5)>=2);assert.notDeepEqual(spawn,{x:4,y:5});assert.notDeepEqual(spawn,{x:5,y:5});
  assert.equal(findSpawnCell([],()=>true),null);
 });
+
+test('오브제 크기와 반응은 인물 동작에 맞추고 접근 표현은 저장된 위치를 바꾸지 않는다',async()=>{
+ const {objectPresentation,interactionAnchor,objectInteractionFrame,drawObjectResponse}=await import('../js/features/pixel-bible/object-response.js');
+ const {interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ const {drawWorldObject}=await import('../js/features/pixel-bible/art.js');
+ assert.ok(objectPresentation('oil').scale*18<72);
+ assert.ok(objectPresentation('tree').scale*27>72);
+ assert.ok(objectPresentation('cup').scale<objectPresentation('well').scale);
+ const o={kind:'oil',x:12,y:9},path=[{x:11,y:9}],n={name:'선지자 제자의 아내',x:11,y:9,path,usingObject:o,objectAction:'widow-oil',interactionStart:0};
+ n.interaction=interactionRoutine(n,'oil');n.interaction.phase=0;
+ const anchor=interactionAnchor(n);assert.ok(Math.abs(anchor.x-o.x*24)<24);
+ assert.equal(n.x,11);assert.equal(n.y,9);assert.equal(n.path,path);
+ const frames=[0,.25,.5,.75].map(t=>objectInteractionFrame(o,[n],t*n.interaction.period));
+ assert.equal(new Set(frames.map(f=>f.phase)).size,4);
+ assert.ok(frames.some(f=>f.tilt!==0));
+ assert.equal(objectInteractionFrame(o,[],0).active,false);
+ const still=[0,1,5].map(t=>objectInteractionFrame(o,[n],t,true));
+ assert.equal(new Set(still.map(f=>f.phase)).size,1);
+ const calls=[];const c={save(){},restore(){},translate(){},rotate(){},scale(x,y){calls.push(['scale',x,y]);},fillRect(...args){calls.push(['rect',...args]);}};
+ for(const kind of [...Object.keys(OBJECT_CATALOG),'well','oil','tree','field','bench']){
+  const object={kind,x:8,y:9};const npc={name:'룻',x:7,y:9,usingObject:object,interactionStart:0};npc.interaction=interactionRoutine(npc,kind);
+  const frame=objectInteractionFrame(object,[npc],1);
+  assert.ok(Number.isFinite(frame.scale)&&frame.scale>0);
+  drawWorldObject(c,object,24,frame);drawObjectResponse(c,object,frame);
+ }
+ assert.ok(calls.some(c=>c[0]==='rect'));
+});

@@ -1,3 +1,4 @@
+import { objectPresentation, interactionAnchor, objectInteractionFrame, drawObjectResponse } from './object-response.js';
 import { castKey, reconcileCast, findSpawnCell } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
@@ -213,7 +214,7 @@ export async function mountPixelWorld(shell, options) {
   const clearInfo=()=>{clearTimeout(toastTimer);info.hidden=true;};
   const save = () => { try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
   const cell = (p) => ({ x: Math.round(p.x), y: Math.round(p.y) });
-  const adjacent = (o, n) => [[o.x-1,o.y],[o.x+1,o.y],[o.x,o.y+1],[o.x,o.y-1]].map(([x,y]) => ({x,y})).filter((p) => !blocked(p.x,p.y)).sort((a,b) => Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
+  const adjacent = (o, n) => (objectPresentation(o.kind).portable?[[o.x-1,o.y],[o.x+1,o.y]]:[[o.x-1,o.y],[o.x+1,o.y],[o.x,o.y+1],[o.x,o.y-1]]).map(([x,y]) => ({x,y})).filter((p) => !blocked(p.x,p.y)).sort((a,b) => Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
   function togglePanel(side,open) {
     const panel=shell.querySelector(`#pb-${side}-panel`), button=shell.querySelector(`[data-action="toggle-${side}"]`);
     const show=open??panel.hidden;panel.hidden=!show;button.setAttribute('aria-expanded',show);
@@ -569,7 +570,7 @@ export async function mountPixelWorld(shell, options) {
       ctx.translate(WIDTH/2,HEIGHT/2);ctx.scale(zoom,zoom);ctx.translate(-Math.max(400,Math.min(560,x)),-Math.max(220,Math.min(260,y)));
     }
     ctx.drawImage(background,0,0);
-    const items=[...objects.map((o)=>({y:o.y,draw:()=>drawObject(ctx,o)})),...npcs.filter(n=>!drag?.active||drag.n!==n).map((n)=>({y:n.y,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
+    const items=[...objects.map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>!drag?.active||drag.n!==n).map((n)=>({y:n.y,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,selected);
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
@@ -617,8 +618,9 @@ export async function mountPixelWorld(shell, options) {
   return ()=>{cleanup();replacement?.();};
 }
 
-function drawObject(c,o) {
-  drawWorldObject(c,o);
+function drawObject(c,o,response) {
+  drawWorldObject(c,o,TILE,response);
+  drawObjectResponse(c,o,response,TILE);
   if(!Object.hasOwn(WORLD_OBJECTS,o.kind)&&OBJECT_CATALOG[o.kind]){
     c.save();c.font='10px sans-serif';c.textAlign='center';const name=OBJECT_CATALOG[o.kind].name,w=c.measureText(name).width+8;
     c.fillStyle='#12303bd9';c.fillRect(o.x*TILE-w/2,o.y*TILE+15,w,15);c.fillStyle='#fff1c9';c.fillText(name,o.x*TILE,o.y*TILE+26);c.restore();
@@ -628,7 +630,8 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
   const actionPose=n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
   const rise=n.objectAction==='zacchaeus-tree'&&n.usingObject?36:0;
-  const x=Math.round(n.x*TILE)+pose.x,y=Math.round(n.y*TILE)+pose.y-rise;
+  const anchor=interactionAnchor(n,TILE);
+  const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
   drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",selected});
   c.restore();
