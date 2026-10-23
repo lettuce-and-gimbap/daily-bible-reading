@@ -16,7 +16,7 @@ export class EncounterDirector {
  clear(){for(const s of this.active)for(const n of s.people)n.encounter=false;this.active=[];}
  cancel(person){this.active=this.active.filter(s=>{if(!s.people.includes(person))return true;for(const n of s.people)n.encounter=false;return false;});}
  lines(a,b,relation){
-  const chapterLines=new Map([a,b].map(n=>[key(n),personalLines(n,this.chapters,this.context).filter(line=>line.origin==='authored')]));
+  const chapterLines=new Map([a,b].map(n=>[key(n),personalLines(n,this.chapters,this.context).filter(line=>['authored','chapter-role'].includes(line.origin))]));
   return relationshipLines(a,b,relation,chapterLines,{random:this.random});
  }
  tick(now,npcs,{enabled=true,excluded=[]}={}){

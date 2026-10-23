@@ -5,8 +5,8 @@ import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-
 
 test('오브제 근거가 장 전체 요약이어도 발화로 사용하지 않는다',()=>{
  const evidence={text:'아람과 이스라엘의 전쟁을 설명하는 장 요약. '.repeat(80),ref:'열왕기상 22장'};
- const line=objectContextSpeech('물항아리',evidence);
- assert.equal(line.text,'물항아리를 살펴보자.');
+ const line=objectContextSpeech('물항아리',evidence,{random:()=>0});
+ assert.match(line.text,/갈증|물/);assert.ok(!line.text.includes('살펴보자'));assert.ok(line.text.length<65);
  assert.equal(line.detailText,evidence.text);
  assert.equal(line.ref,evidence.ref);
  assert.equal(speechView(line).detailText,evidence.text);
@@ -207,7 +207,7 @@ test('다른 본문의 인물과 관계도 현재 장에 맞는 창작 대사와
  const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
  const chapters=[{code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'하눈',role:'성문을 수리한 사람'},{name:'살룬',role:'문과 성벽을 수리한 사람'}],rels:[{from:'하눈',to:'살룬',label:'함께 재건',verses:'13-15',note:'두 사람이 각자 맡은 문과 성벽을 수리했어요.'}]}}];
  const npcs=[{name:'하눈',x:10,y:8,path:[]},{name:'살룬',x:11,y:9,path:[]}],context=buildChapterDialogue(chapters),lines=dialogueCandidates(npcs,chapters,context);
- assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref==='느헤미야 3장'));
+ assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref.startsWith('느헤미야 3')));
  assert.equal(lines.filter(c=>c.origin==='chapter-relation').length,2);
  assert.ok(!lines.some(c=>c.kind==='ordinary'));
  npcs[1].x=30;assert.ok(!dialogueCandidates(npcs,chapters,context).some(c=>c.target));

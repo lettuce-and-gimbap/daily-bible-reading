@@ -1,3 +1,4 @@
+import {roleMonologues} from './role-monologues.js';
 import {creatureSpeech} from './creatures.js';
 import { chapterMonologues } from './context-monologues.js';
 import {majorFor,occurrenceMatches} from './chapter-dialogue.js';
@@ -19,19 +20,7 @@ export function personalLines(n,chapters,context){
  const ref=occurrences[0]?.ref||n.refs?.[0]||'';
  // 현재 장의 실제 역할과 관계를 독백 옆 참고 구절로 연결한다.
  const relation=context.relations.find(r=>occurrenceMatches(n,r.from)||occurrenceMatches(n,r.to));
- if(relation?.text) add(relation.text,relation.ref,'relationship-context');
- for(const p of occurrences){
-  if(p.role)add(`${n.name}: ${p.role.replace(/[.。]$/,'')}.`,p.ref,'chapter-role');
- }
- for(const r of context.relations.filter(r=>occurrenceMatches(n,r.from)||occurrenceMatches(n,r.to)))add(r.text,r.ref,'relationship-context');
- // 이름만 기록된 인물은 허구의 업적이나 내면을 만들어 넣지 않는다.
- const detail=occurrences[0]?.role?.replace(/[.。]$/,'');
- if(lines.length<3&&detail){
-  add(`${ref}에 기록된 ${n.name}의 역할: ${detail}.`,ref,'chapter-role');
-  add(`${n.name}에 관한 기록: ${detail}.`,ref,'chapter-role');
- }
- if(lines.length<3)add(`${ref}에 ${n.name}의 이름이 기록되어 있다.`,ref,'chapter-role');
- if(lines.length<3)add(`${n.name}의 행적은 ${ref}에서 살펴볼 수 있다.`,ref,'chapter-role');
+ if(!lines.length)for(const line of roleMonologues(n,occurrences,relation))add(line.text,line.ref,line.origin,line.emotion);
  const authoredLines=lines.filter(line=>line.origin==='authored');
- return (authoredLines.length?authoredLines:lines).slice(0,5).map((line,i)=>({...line,detailText:line.origin==='authored'?(relation?.text||''):'',id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:line.origin==='authored'?'solo':'context'}));
+ return (authoredLines.length?authoredLines:lines).slice(0,5).map((line,i)=>({...line,detailText:line.origin==='authored'?(relation?.text||''):[relation?.text,...occurrences.map(p=>p.role)].filter(Boolean).join(' '),id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:'solo'}));
 }

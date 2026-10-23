@@ -819,10 +819,13 @@ export async function mountPixelWorld(shell, options) {
         n.action=target.kind;n.task=null;n.usingObject=target;n.objectAction=n.objectScene?.id||null;
         n.objectVisits??=Object.create(null);const visit=n.objectVisits[target.kind]||0;n.objectVisits[target.kind]=visit+1;
         n.interaction=interactionRoutine(n,target.kind,visit);n.interactionStart=time;n.idle=8;
-        if(!n.creature&&n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,...objectContextSpeech(OBJECTS[target.kind],n.objectEvidence),kind:'context',object:target};}
+        if(!n.creature&&!n.objectScene){
+          const evidence=n.objectEvidence||{text:n.role||'',ref:n.refs[0]||''};
+          objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,...objectContextSpeech(OBJECTS[target.kind],evidence,{speaker:n,kind:target.kind,chapters:chapterData}),kind:'solo',object:target};
+        }
         n.objectEvidence=null;
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
-          objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,kind:'context',object:target};
+          objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,detailText:scene.study||scene.lines.join(' '),kind:'solo',object:target};
         }
         if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="right"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {

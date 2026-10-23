@@ -3,8 +3,8 @@ export const EXPRESSIONS=['neutral','joy','sad','worried','angry','surprised','d
 export function speechEmotion(line){
  if(EXPRESSIONS.includes(line.emotion))return line.emotion;
  const text=line.text||'';
- if(/죽이|멸하|내 뜻대로|빼앗|도장|분노|어찌 감히/.test(text))return 'angry';
- if(/울|눈물|슬프|죽었|잃었|통곡|불쌍/.test(text))return 'sad';
+ if(/죽이|죽게|없애|거짓 증|멸하|내 뜻대로|빼앗|도장|분노|분해서|어찌 감히/.test(text))return 'angry';
+ if(/울|눈물|슬프|죽었|잃었|통곡|불쌍|무너지는|서러|더 버틸 힘|지친 마음/.test(text))return 'sad';
  if(/두렵|도망|죽겠|근심|무섭|혼자 남|갈급/.test(text))return 'worried';
  if(/어찌|놀랍|살아났|일어났|비었/.test(text))return 'surprised';
  if(/기쁘|감사|찬양|구원|노래|나았|살리셨/.test(text))return 'joy';

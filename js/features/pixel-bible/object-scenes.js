@@ -1,3 +1,4 @@
+import {OBJECT_MONOLOGUES,objectMonologue} from './object-monologues.js';
 export const WORLD_OBJECTS={field:'보리밭',water:'물항아리',bench:'쉬는 자리',tree:'나무',well:'우물',stone:'돌',bush:'떨기나무',boat:'배',scroll:'두루마리',oil:'기름병'};
 export const OBJECT_SCENES=[
  {id:'jacob-stone',code:'gen',chapter:28,title:'베개 삼은 돌',actors:['야곱'],object:'stone',ref:'창세기 28:11–18',lines:['야곱은 돌을 베개 삼아 누웠다가 꿈을 꿉니다.','아침에 그 돌을 기둥으로 세우고 기름을 붓습니다.']},
@@ -26,7 +27,7 @@ export function removeObjects(objects,npcs,shouldRemove){
 
 // 자동 상호작용용 창작 발화. 위 장면 설명·성경의 직접 인용과 구분해 관리한다.
 export const OBJECT_LINES={
- 'jacob-stone':['오늘 밤은 이 돌을 베고 쉬어야겠구나.','내가 베었던 이 돌을 세워 이곳을 기억하자.'],
+ 'jacob-stone':['집을 떠나 홀로 밤을 맞으니 두렵구나. 이 돌을 베고 잠시 누워야겠어.','내가 베었던 이 돌을 세워 이곳을 기억하자.'],
  'rebekah-well':['낙타들을 위해서도 물을 길어 줘야겠어.','물을 충분히 마실 때까지 다시 다녀오자.'],
  'isaac-well':['다툼이 없는 이 우물 곁에서 자리를 넓힐 수 있겠구나.','다시 물을 얻었으니 이곳에서 머물러 보자.'],
  'moses-bush':['불이 붙었는데도 나무가 타 없어지지 않는구나.','거룩한 곳이라 하셨으니 신을 벗어야겠어.'],
@@ -34,16 +35,19 @@ export const OBJECT_LINES={
  'david-stones':['매끄러운 돌 다섯 개를 골라 주머니에 넣자.','손에 익은 물매와 이 돌들을 가지고 나아가자.'],
  'widow-water':['물과 떡을 구하는 이가 내 앞에 서 있구나.','말씀대로 준비하며 오늘의 양식을 나누자.'],
  'widow-oil':['빈 그릇들을 모았으니 기름을 부어 보자.','아들들이 가져오는 그릇마다 기름을 채워야겠어.'],
- 'josiah-scroll':['이 책의 말씀을 듣고도 그대로 있을 수는 없겠구나.','우리가 듣게 된 이 말씀에 관해 여호와께 물어야겠어.'],
+ 'josiah-scroll':['이 말씀을 어기며 살아왔다니 두렵구나. 주님 앞에서 옷을 찢고 엎드리고 싶어.','우리가 듣게 된 이 말씀에 관해 여호와께 물어야겠어.'],
  'baruch-scroll':['불러 주시는 말씀을 두루마리에 차례로 적어 두자.','이 말씀을 백성이 들을 수 있도록 읽어야겠어.'],
  'jesus-boat':['바람과 파도가 거세져 배에 물이 들어오는구나.','우리를 두렵게 하던 바다가 잔잔해졌구나.'],
  'zacchaeus-tree':['여기 올라가면 지나가시는 예수님을 볼 수 있겠어.','나를 부르시네. 서둘러 내려가 맞이해야겠어.'],
- 'samaritan-well':['이 우물물보다 더 깊은 이야기를 듣고 있구나.','다시 목마르지 않을 물이라니, 더 듣고 싶어.'],
- 'ethiopian-scroll':['이 말씀을 함께 읽으며 뜻을 살펴보자.','읽고 있는 이 구절에서 예수님 이야기를 전하자.'],
+ 'samaritan-well':['이 우물물보다 더 깊은 이야기를 듣고 있구나.','목마르지 않을 물이라면 내게도 주셨으면. 날마다 물 길으러 오는 수고가 끝날까.'],
+ 'ethiopian-scroll':['이 말씀을 함께 읽으며 뜻을 살펴보자.','이 구절이 누구를 말하는지 궁금해하시는구나. 예수님 이야기를 전해 드리자.'],
 };
 
 // 두 사람이 등장하는 장면은 화자별 문장을 구분한다.
 const ACTOR_OBJECT_LINES = {
+ 'rest-elijah': {
+  '천사':['지쳐 누워 있구나. 일어나 먹어라, 아직 가야 할 길이 멀다.'],
+ },
  'widow-water': {
   '엘리야': ['그릇에 물을 조금 가져다 주시오. 떡 한 조각도 부탁하오.', '두려워하지 말고 말씀대로 준비하시오. 비가 올 때까지 가루와 기름이 떨어지지 않으리라고 여호와께서 말씀하셨소.'],
   '사르밧 과부': ['남은 가루와 기름은 조금뿐이지만, 엘리야가 전한 말씀대로 준비하자.', '여호와의 말씀대로 가루와 기름이 떨어지지 않는구나.']
@@ -51,7 +55,7 @@ const ACTOR_OBJECT_LINES = {
  'jesus-boat': {
   '예수': ['어찌하여 이렇게 두려워하느냐? 아직도 믿음이 없느냐?', '바람아 멎어라. 바다야 잠잠하여라.'],
   '예수님': ['어찌하여 이렇게 두려워하느냐? 아직도 믿음이 없느냐?', '바람아 멎어라. 바다야 잠잠하여라.'],
-  '제자들': ['선생님, 우리가 죽게 되었는데 돌보지 않으십니까?', '이분이 누구시기에 바람과 바다까지 순종하는가?']
+  '제자들': ['선생님, 배에 물이 들어와 죽을 것 같습니다. 저희를 돌봐 주십시오.', '이분이 누구시기에 바람과 바다까지 순종하는가?']
  },
  'samaritan-well': {
   '예수': ['물을 좀 주시오.', '내가 주는 물은 그 사람 안에서 영생에 이르는 샘물이 될 것이오.'],
@@ -64,7 +68,9 @@ const ACTOR_OBJECT_LINES = {
  }
 };
 export function objectLinesFor(scene, name) {
- return ACTOR_OBJECT_LINES[scene.id]?.[name] || (scene.actors.length === 1 ? OBJECT_LINES[scene.id] : null) || scene.lines;
+ const specific=OBJECT_MONOLOGUES.find(([actor,code,chapter,kinds])=>actor===name&&code===scene.code&&chapter===scene.chapter&&kinds.includes(scene.object));
+ if(specific)return specific[6];
+ return ACTOR_OBJECT_LINES[scene.id]?.[name] || (scene.actors.length === 1 ? OBJECT_LINES[scene.id] : null) || [objectMonologue({name},scene.object,[{code:scene.code,chap:scene.chapter}]).text];
 
 }
 

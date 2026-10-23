@@ -20,6 +20,6 @@ export function relationshipLines(a,b,relation,chapterLines,{random=Math.random}
   const text=authored?authored.lines[Math.floor(random()*authored.lines.length)]:ownLine?.text||shortFallback(speaker,target,relation);
   return speechView({id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,
    ref:authored?.ref||ownLine?.ref||relation.ref,
-   detailText:`${relation.text} (${relation.ref})`,kind:'pair'});
+   detailText:[relation.text,authored?.detail].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair'});
  });
 }
