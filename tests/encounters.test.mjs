@@ -4,6 +4,7 @@ import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
+import {relationshipLines} from '../js/features/pixel-bible/relationship-lines.js';
 
 function fixture(){
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:[{name:'아합',role:'포도원을 원한 왕'},{name:'나봇',role:'유산을 지킨 포도원 주인'}],rels:[{from:'아합',to:'나봇',label:'포도원 요구',verses:'1-4',note:'아합이 포도원을 원했지만 나봇은 조상의 유산을 넘기지 않았어요.'}]}}];
@@ -37,6 +38,19 @@ test('상하 조우·드래그 배제·다시 놓기와 인물 숨기기를 처�
  director.tick(2,[npcs[0]]);assert.ok(npcs.every(n=>!n.encounter));
  assert.equal(beside({x:0,y:0},{x:1,y:1}),false);
  assert.equal(beside({x:0,y:0},{x:0,y:0}),false);
+});
+
+test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기용으로 남긴다',()=>{
+ const a={name:'하눈',identity:{id:'neh3-hanun'}},b={name:'살룬',identity:{id:'neh3-shallun'}};
+ const relation={label:'함께 재건',from:{code:'neh',chap:3},to:{code:'neh',chap:3},text:'하눈은 골짜기 문을 세웠고 살룬은 샘문을 수리했습니다.',ref:'느헤미야 3:13-15'};
+ const lines=relationshipLines(a,b,relation,new Map(),{random:()=>0});
+ assert.equal(lines.length,2);
+ for(const line of lines){
+  assert.ok(line.text.length<=64);assert.doesNotMatch(line.text,/이 일의 말씀을 함께 살펴보자/);
+  assert.equal(line.detailText,`${relation.text} (${relation.ref})`);
+  assert.equal(line.ref,relation.ref);
+  assert.ok(!line.text.includes(relation.text));
+ }
 });
 
 test('관계 없는 근접 인물은 대화하지 않고 랜덤 말풍선은 독립적으로 유지한다',()=>{

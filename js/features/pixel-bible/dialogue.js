@@ -4,6 +4,7 @@ import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { SOLO_DIALOGUE } from './solo-dialogue.js';
 import { PAIR_DIALOGUE } from './pair-dialogue.js';
 import { characterStyle } from './art.js';
+import { relationshipLines } from './relationship-lines.js';
 
 export { SOLO_DIALOGUE, PAIR_DIALOGUE };
 export const DIALOGUE_SOURCE_STATUS = { bible:'existing-summary-and-verse-references', hokma:'partially-reviewed-uploaded-hokma-notes', wording:'original-imagined-dialogue' };
@@ -14,6 +15,7 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
  const profiles=new Map(available.map(n=>[n,characterStyle(n.name,0,n.role||'',n.refs||[])]));
  const candidates=[];
  for(const n of available)candidates.push(...personalLines(n,chapters,contexts));
+ const chapterLines=new Map(available.map(n=>[`${n.name}:${n.identity?.id||''}`,candidates.filter(c=>c.speaker===n&&c.origin==='authored')]));
 
  for(const entry of PAIR_DIALOGUE){
   if(!sources.has(entry.chapter))continue;
@@ -22,14 +24,12 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
    if(b)entry.lines.forEach((text,i)=>candidates.push({id:`${entry.id}:${i}`,speaker:a,target:b,text,ref:entry.ref,kind:'pair'}));
   }
  }
- // 개인 전용 대사가 없는 관계도 현재 본문 해설로 연결한다. 역방향은 같은 해설이며 실제 발언이 아니다.
+ // 인물별 현재 본문 대사 또는 짧은 질문으로 관계 대화를 만든다. 전문 해설은 펼쳐서 본다.
  for(const r of contexts.relations){
-  for(const [from,to] of [[r.from,r.to],[r.to,r.from]]){
-   const a=available.find(n=>occurrenceMatches(n,from)),b=available.find(n=>occurrenceMatches(n,to));
-   if(!a||!b||a===b||Math.hypot(a.x-b.x,a.y-b.y)>3)continue;
-   if(candidates.some(c=>c.kind==='pair'&&c.speaker===a&&c.target===b))continue;
-   candidates.push({id:`relation:${from.code}.${from.chap}:${from.identity.id}:${to.identity.id}`,speaker:a,target:b,text:r.text,ref:r.ref,kind:'pair',origin:'chapter-relation'});
-  }
+  const a=available.find(n=>occurrenceMatches(n,r.from)),b=available.find(n=>occurrenceMatches(n,r.to));
+  if(!a||!b||a===b||Math.hypot(a.x-b.x,a.y-b.y)>3)continue;
+  const lines=relationshipLines(a,b,r,chapterLines);
+  for(const line of lines)if(!candidates.some(c=>c.kind==='pair'&&c.speaker===line.speaker&&c.target===line.target))candidates.push({...line,origin:'chapter-relation'});
  }
  return candidates;
 }

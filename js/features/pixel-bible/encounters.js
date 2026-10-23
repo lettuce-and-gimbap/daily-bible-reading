@@ -1,10 +1,7 @@
-import {PAIR_DIALOGUE} from './pair-dialogue.js';
 import {personalLines} from './personal-lines.js';
-import {speechView} from './speech-view.js';
 import {opposedDirections} from './conversation.js';
-import {parseReference} from './references.js';
+import {relationshipLines} from './relationship-lines.js';
 
-const sameName=(a,b)=>a===b||['예수','예수님'].includes(a)&&['예수','예수님'].includes(b);
 const key=n=>`${n.name}:${n.identity?.id||''}`;
 export function beside(a,b){
  const dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y);
@@ -19,14 +16,8 @@ export class EncounterDirector {
  clear(){for(const s of this.active)for(const n of s.people)n.encounter=false;this.active=[];}
  cancel(person){this.active=this.active.filter(s=>{if(!s.people.includes(person))return true;for(const n of s.people)n.encounter=false;return false;});}
  lines(a,b,relation){
-  return [a,b].map((speaker,i)=>{
-   const target=i?a:b,chapter=`${relation.from.code}.${relation.from.chap}`;
-   const authored=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&sameName(p.speaker,speaker.name)&&sameName(p.target,target.name));
-   const own=personalLines(speaker,this.chapters,this.context).filter(l=>{const ref=parseReference(l.ref);return l.origin==='authored'&&ref?.code===relation.from.code&&ref.chapter===relation.from.chap;});
-   const ownLine=own.length?own[Math.floor(this.random()*own.length)]:null;
-   const text=authored?authored.lines[Math.floor(this.random()*authored.lines.length)]:ownLine?.text||`${target.name}, 이 일의 말씀을 함께 살펴보자.`;
-   return speechView({id:`encounter:${key(speaker)}:${chapter}`,speaker,target,text,ref:authored?.ref||ownLine?.ref||relation.ref,detailText:`${relation.text} (${relation.ref})`,kind:'pair'});
-  });
+  const chapterLines=new Map([a,b].map(n=>[key(n),personalLines(n,this.chapters,this.context).filter(line=>line.origin==='authored')]));
+  return relationshipLines(a,b,relation,chapterLines,{random:this.random});
  }
  tick(now,npcs,{enabled=true,excluded=[]}={}){
   const deny=new Set(excluded.filter(Boolean));
