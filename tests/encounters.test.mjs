@@ -30,6 +30,21 @@ test('옆 칸 조우 즉시 서로 마주보고 각자 사건에 맞는 대사�
  assert.equal(director.tick(5902,npcs).length,1,'떠났다가 다시 만나면 시작');
 });
 
+test('동시 조우는 한 쌍만 진행해 자동 말풍선 슬롯과 합쳐 대화 세트를 두 개로 제한한다',()=>{
+ const people=['아합','나봇','엘리야','엘리사','모세','아론'];
+ const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:people.map(name=>({name,role:'본문 인물'})),rels:[
+  {from:'아합',to:'나봇',label:'포도원',verses:'1-4',note:'아합과 나봇의 포도원 이야기.'},
+  {from:'엘리야',to:'엘리사',label:'선지자',verses:'19-21',note:'엘리야가 엘리사를 부릅니다.'},
+  {from:'모세',to:'아론',label:'형제',verses:'1-5',note:'모세와 아론이 함께합니다.'},
+ ]}}];
+ const context=buildChapterDialogue(chapters),npcs=context.people.slice(0,6).map((p,i)=>({...p,refs:['열왕기상 21장'],x:10+i,y:10,path:[]}));
+ const director=new EncounterDirector(chapters,context,{random:()=>0});
+ director.tick(0,npcs);
+ assert.equal(director.active.length,1);
+ assert.equal(npcs.filter(n=>n.encounter).length,2);
+ assert.equal(director.tick(800,npcs).length,2,'한 쌍의 맞대화만 동시에 표시');
+});
+
 test('상하 조우·드래그 배제·다시 놓기와 인물 숨기기를 처리한다',()=>{
  const {director,npcs}=fixture();npcs[1].x=10;npcs[1].y=11;
  assert.equal(director.tick(0,npcs,{excluded:[npcs[1]]}).length,0);

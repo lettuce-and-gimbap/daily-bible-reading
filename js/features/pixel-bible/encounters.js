@@ -7,11 +7,11 @@ export function beside(a,b){
  const dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y);
  return Math.abs(dx-1)<.18&&dy<.12||Math.abs(dy-1)<.18&&dx<.12;
 }
-// Each participant owns a five-second bubble. Replies may overlap ambient speech.
+// Keep one paired exchange active at a time; it can coexist with one ambient speech slot.
 // One encounter per arrival; staying beside someone must not restart it every frame.
 export class EncounterDirector {
- constructor(chapters,context,{random=Math.random}={}){
-  this.chapters=chapters;this.context=context;this.random=random;this.active=[];this.contacts=new Map();
+ constructor(chapters,context,{random=Math.random,maxActive=1}={}){
+  this.chapters=chapters;this.context=context;this.random=random;this.maxActive=Math.max(1,Math.floor(maxActive)||1);this.active=[];this.contacts=new Map();
  }
  clear(){for(const s of this.active)for(const n of s.people)n.encounter=false;this.active=[];}
  cancel(person){this.active=this.active.filter(s=>{if(!s.people.includes(person))return true;for(const n of s.people)n.encounter=false;return false;});}
@@ -36,7 +36,7 @@ export class EncounterDirector {
    const state=this.contacts.get(id)||{touching:false};this.contacts.set(id,state);
    const touching=beside(a,b)&&!deny.has(a)&&!deny.has(b);
    if(!touching){state.touching=false;continue;}
-   if(state.touching||busy.has(a)||busy.has(b))continue;
+   if(state.touching||busy.has(a)||busy.has(b)||this.active.length>=this.maxActive)continue;
    state.touching=true;
    // Tiny walking interpolation differences are aligned on the shared axis.
    if(Math.abs(a.y-b.y)<.12){b.y=a.y;b.x=a.x+Math.sign(b.x-a.x);}else{b.x=a.x;b.y=a.y+Math.sign(b.y-a.y);}
