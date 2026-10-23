@@ -21,7 +21,7 @@ export function interactionApproaches(o){
 }
 // 그리는 위치만 가까이 맞춘다. 저장된 좌표와 이동 경로는 바꾸지 않는다.
 export function interactionAnchor(n,tile=24){
- if(!n.usingObject||!n.interaction)return {x:n.x*tile,y:n.y*tile};
+ if(n.creature?.kind==='plant'||!n.usingObject||!n.interaction)return {x:n.x*tile,y:n.y*tile};
  const o=n.usingObject,dx=n.x-o.x,dy=n.y-o.y;
  if(n.interaction.category==='bed')return {x:o.x*tile,y:o.y*tile+14};
  if(n.interaction.gesture==='lie-stone')return {x:o.x*tile-38,y:o.y*tile+16};
@@ -52,7 +52,7 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
 }
 // 배치된 휴대 소품 자체를 집어 든다. 내려놓는 단계에서는 바닥에 다시 표시한다.
 export function heldObject(n,time,reduced=false,tile=24){
- const o=n.usingObject;if(!o||!n.interaction)return null;
+ const o=n.usingObject;if(n.creature||!o||!n.interaction)return null;
  const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);
  if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||!p.hand||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;

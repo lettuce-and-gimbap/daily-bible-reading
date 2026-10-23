@@ -8,10 +8,12 @@
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2589,
+      "unresolved": 2580,
       "group": 244,
       "person": 97,
-      "spiritual": 6
+      "animal": 8,
+      "spiritual": 6,
+      "plant": 1
     }
   },
   "entries": [
@@ -1698,9 +1700,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:개미:pro",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:ant",
+          "status": "reviewed-rule",
           "refs": [
             "pro.6"
           ]
@@ -11462,9 +11464,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:독수리:rev",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:eagle",
+          "status": "reviewed-rule",
           "refs": [
             "rev.8"
           ]
@@ -20938,9 +20940,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:박넝쿨:jnh",
-          "status": "needs-review",
+          "kind": "plant",
+          "id": "plant:gourd",
+          "status": "reviewed-rule",
           "refs": [
             "jnh.4"
           ]
@@ -21150,9 +21152,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:발람의 나귀:num",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:donkey",
+          "status": "reviewed-rule",
           "refs": [
             "num.22"
           ]
@@ -21638,9 +21640,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:뱀:gen",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:snake",
+          "status": "reviewed-rule",
           "refs": [
             "gen.3"
           ]
@@ -29571,9 +29573,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:소:2ki",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:ox",
+          "status": "reviewed-rule",
           "refs": [
             "2ki.17"
           ]
@@ -30472,9 +30474,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:숫염소:dan",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:goat",
+          "status": "reviewed-rule",
           "refs": [
             "dan.8"
           ]
@@ -40165,9 +40167,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:양 떼:ezk",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:sheep",
+          "status": "reviewed-rule",
           "refs": [
             "ezk.34"
           ]
@@ -58942,9 +58944,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:큰 물고기:jnh",
-          "status": "needs-review",
+          "kind": "animal",
+          "id": "animal:great-fish",
+          "status": "reviewed-rule",
           "refs": [
             "jnh.2"
           ]

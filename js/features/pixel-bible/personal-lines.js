@@ -1,3 +1,4 @@
+import {creatureSpeech} from './creatures.js';
 import { chapterMonologues } from './context-monologues.js';
 import {majorFor,occurrenceMatches} from './chapter-dialogue.js';
 import {SOLO_DIALOGUE} from './solo-dialogue.js';
@@ -5,6 +6,7 @@ import {characterStyle} from './art.js';
 const scopes={'바로':'exo.5','다리오':'dan.6','벤하닷':'1ki.20','요나단':'1sa.18','스가랴':'zec.4','아하시야':'2ki.1'};
 // 본문 밖의 추상적인 공통 교훈을 덧붙이지 않고 현재 장의 역할·관계를 사용한다.
 export function personalLines(n,chapters,context){
+ if(n.creature)return creatureSpeech(n,chapters);
  const occurrences=context.people.filter(p=>occurrenceMatches(n,p));
  const style=characterStyle(n.name,0,n.role||'',n.refs||[]);
  const sources=new Set(chapters.map(c=>`${c.code}.${c.chap}`));

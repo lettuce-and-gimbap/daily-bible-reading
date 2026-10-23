@@ -1,3 +1,4 @@
+import {creatureForName} from './creatures.js';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
 const spiritual=/^(하나님|여호와|성령|주님|천사|사탄|마귀|어린 양)$/;
@@ -5,6 +6,7 @@ const group=/자손|백성|사람들|성도|제자들|무리|장로들|제사장
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
+  const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(spiritual.test(name))return id('spiritual',name);
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');

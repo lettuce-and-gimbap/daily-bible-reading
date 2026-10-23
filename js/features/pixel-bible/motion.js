@@ -1,5 +1,6 @@
 // 외형 리듬은 창작. 신체 상태는 이름만으로 추정하지 않고 권·장·역할을 함께 확인한다.
 export function characterMotion(n,chapters=[]) {
+ if(n.creature)return {key:n.creature.kind==='plant'?'rooted':n.creature.body,speed:n.creature.kind==='plant'?0:n.creature.body==='snake'?1.3:n.creature.body==='bird'?3.4:2.2,swing:.08,frequency:4,phase:0,limp:false,bounce:n.creature.body==='bird'?1:0,evidence:n.creature.kind==='plant'?'뿌리내린 식물 · 자동 이동하지 않으며 바람에 흔들림':'종의 신체에 맞춘 창작 걷기·휴식·먹이 행동'};
  const own=chapters.filter(c=>n.refs?.includes(`${c.name} ${c.chap}${c.code==='psa'?'편':'장'}`));
  const has=(code,from,to=from)=>own.some(c=>c.code===code&&c.chap>=from&&c.chap<=to);
  const seed=[...(n.identity?.id||n.name)].reduce((s,c)=>s+c.codePointAt(0),0);

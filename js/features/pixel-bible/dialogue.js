@@ -15,18 +15,19 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
  const profiles=new Map(available.map(n=>[n,characterStyle(n.name,0,n.role||'',n.refs||[])]));
  const candidates=[];
  for(const n of available)candidates.push(...personalLines(n,chapters,contexts));
+ const humans=available.filter(n=>!n.creature);
  const chapterLines=new Map(available.map(n=>[`${n.name}:${n.identity?.id||''}`,candidates.filter(c=>c.speaker===n&&c.origin==='authored')]));
 
  for(const entry of PAIR_DIALOGUE){
   if(!sources.has(entry.chapter))continue;
-  for(const a of available.filter(n=>profiles.get(n).name===entry.speaker&&profiles.get(n).key!=='generic')){
-   const b=available.find(n=>n!==a&&profiles.get(n).name===entry.target&&profiles.get(n).key!=='generic'&&Math.hypot(n.x-a.x,n.y-a.y)<=3);
+  for(const a of humans.filter(n=>profiles.get(n).name===entry.speaker&&profiles.get(n).key!=='generic')){
+   const b=humans.find(n=>n!==a&&profiles.get(n).name===entry.target&&profiles.get(n).key!=='generic'&&Math.hypot(n.x-a.x,n.y-a.y)<=3);
    if(b)entry.lines.forEach((text,i)=>candidates.push({id:`${entry.id}:${i}`,speaker:a,target:b,text,ref:entry.ref,kind:'pair'}));
   }
  }
  // 인물별 현재 본문 대사 또는 짧은 질문으로 관계 대화를 만든다. 전문 해설은 펼쳐서 본다.
  for(const r of contexts.relations){
-  const a=available.find(n=>occurrenceMatches(n,r.from)),b=available.find(n=>occurrenceMatches(n,r.to));
+  const a=humans.find(n=>occurrenceMatches(n,r.from)),b=humans.find(n=>occurrenceMatches(n,r.to));
   if(!a||!b||a===b||Math.hypot(a.x-b.x,a.y-b.y)>3)continue;
   const lines=relationshipLines(a,b,r,chapterLines);
   for(const line of lines)if(!candidates.some(c=>c.kind==='pair'&&c.speaker===line.speaker&&c.target===line.target))candidates.push({...line,origin:'chapter-relation'});

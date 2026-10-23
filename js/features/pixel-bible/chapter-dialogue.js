@@ -11,7 +11,7 @@ export function buildChapterDialogue(chapters) {
  const people=[],relations=[];
  for(const c of chapters){
   const ref=`${c.name||c.code} ${c.chap}${c.code==='psa'?'편':'장'}`;
-  for(const p of chapterPeople(c.data)){
+  for(const p of chapterPeople(c.data,c)){
    if(/^(하나님|여호와|성령|주님)$/.test(p.name))continue;
    const identity=resolveIdentity(p.name,{code:c.code,chapter:c.chap,role:p.role||''});
    people.push({name:p.name,code:c.code,chap:c.chap,identity,role:p.role||'',ref,text:p.role?`이 장의 ${p.name}: ${p.role.replace(/[.。]$/,'')}.`:''});

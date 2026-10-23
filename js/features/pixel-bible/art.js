@@ -1,3 +1,5 @@
+import {drawCreature} from './creature-art.js';
+import {creatureForName} from './creatures.js';
 import {garmentColor} from './garments.js';
 import { drawFaceExpression } from './expression.js';
 import { objectPresentation } from './object-response.js';
@@ -8,7 +10,7 @@ import { backgroundFor } from './backgrounds.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
-export const characterStyle = appearanceFor;
+export const characterStyle = (name,index,role,refs,creature=null)=>{const d=creature===false?null:creature||creatureForName(name,role);return d?{...appearanceFor(name,index,role,refs),creature:d,evidence:'현재 본문에 언급된 '+d.name,design:'생물의 신체 특징에 맞춘 창작 픽셀 도안'}:appearanceFor(name,index,role,refs);};
 // 네 방향·네 걷기 프레임을 원본 도트로 캐시한다. 실루엣 테두리도 같은 알파에서 만든다.
 const spriteCache=new Map();
 export function drawPixelCharacter(ctx,style,x,y,options={}) {
@@ -30,7 +32,8 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
   if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2);c.translate(-32,-37);}
-  if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
+  if(activeStyle.creature)drawCreature(c,activeStyle.creature,32,52,{frame:pose?.dangling?Math.abs((pose.leftLeg||0)+(pose.rightArm||0))%4:frame,direction,pose,time,hanging:hanging||pose?.dangling});
+  else if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
   else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }

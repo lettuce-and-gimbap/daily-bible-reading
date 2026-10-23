@@ -1,3 +1,4 @@
+import {creatureCanUse} from './creatures.js';
 import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
 import {objectContextSpeech} from './speech-view.js';
@@ -58,7 +59,7 @@ export function buildWorldModel(chapters) {
   for (const { name, code, chap, data } of chapters) {
     if (!data) continue;
     const reference = `${name} ${chap}${code === "psa" ? "편" : "장"}`;
-    for (const person of chapterPeople(data)) {
+    for (const person of chapterPeople(data,{name,code,chap})) {
       // 하나님/성령을 무작위 인간 NPC로 그리지 않는다.
       if (/^(하나님|여호와|성령|주님)$/.test(person.name)) continue;
       const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
@@ -121,7 +122,7 @@ export async function mountPixelWorld(shell, options) {
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
   shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
-    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>분량 전체 인물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
+    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':'통독 분량 · '}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
@@ -288,7 +289,16 @@ export async function mountPixelWorld(shell, options) {
   const npcs = visibleCast.map((p, i) => ({ ...p, readingChapters:dialogueContext.people.filter(o=>occurrenceMatches(p,o)).map(o=>({code:o.code,chap:o.chap})), ...positions[i], path: [], direction:"down", stride:0, idle: Math.random()*.4, motion:characterMotion(p,chapterData), action: "", task: null }));
   const castCache = new Map(npcs.map(n => [castKey(n), n]));
   let exposed=new Set(model.cast.map(castKey));
-  try{const saved=JSON.parse(localStorage.getItem(exposureStorageKey(model.key)));if(Array.isArray(saved)&&saved.every(k=>typeof k==='string'))exposed=new Set(saved);}catch(_){}
+  try{
+    const saved=JSON.parse(localStorage.getItem(exposureStorageKey(model.key)));
+    if(Array.isArray(saved)&&saved.every(k=>typeof k==='string'))exposed=new Set(saved);
+    const creatureMigration=`pixel-bible-creatures:${model.key}:v1`;
+    if(!localStorage.getItem(creatureMigration)){
+      for(const p of model.cast.filter(p=>p.creature))exposed.add(castKey(p));
+      localStorage.setItem(creatureMigration,'done');
+      localStorage.setItem(exposureStorageKey(model.key),JSON.stringify([...exposed]));
+    }
+  }catch(_){}
   reconcileCast(npcs,model.cast.filter(p=>exposed.has(castKey(p))),castCache,()=>null);
   let drag=null, objectHold=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
@@ -336,7 +346,7 @@ export async function mountPixelWorld(shell, options) {
     });
     shell.querySelectorAll('[data-toggle-person]').forEach(b=>{const on=exposed.has(castKey(model.cast[Number(b.dataset.togglePerson)]));b.setAttribute('aria-pressed',on);b.textContent=on?'표시 중':'숨김';});
     for(const b of shell.querySelectorAll('[data-cast-mode]')){
-      const list=b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):[];
+      const list=b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[];
       b.setAttribute('aria-pressed',list.length===npcs.length&&list.every(p=>exposed.has(castKey(p))));
     }
   }
@@ -369,6 +379,7 @@ export async function mountPixelWorld(shell, options) {
   function requestPersonal(n){
     if(!n)return;
     const lines=personalLines(n,chapterData,dialogueContext);
+    if(!lines.length){hideSpeech();return;}
     // 클릭 요청은 같은 대사가 연달아 나와도 허용한다.
     cancelTalk();
     speech.interrupt(lines[Math.floor(Math.random()*lines.length)],performance.now());
@@ -385,11 +396,12 @@ export async function mountPixelWorld(shell, options) {
       requestPersonal(n);
     }
     renderRecommendations(n);
-    const style=characterStyle(n.name,i,n.role,n.refs);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
     renderRecipes();clearInfo();
   }
   function move(n, goal, task = null) {
+    if(n.creature?.kind==='plant')return false;
     encounters.cancel(n);
     if(pendingTalk||speech.current?.speaker===n||speech.current?.target===n)hideSpeech();
     const path = findPath(cell(n), goal, blocked);
@@ -398,6 +410,7 @@ export async function mountPixelWorld(shell, options) {
     return true;
   }
   function toObject(n, o) {
+    if(n.creature&&!creatureCanUse(n,o.kind))return false;
     for (const p of adjacent(o,n)) if (move(n,p,o)) {n.objectEvidence=propEvidence(n,o.kind);return true;}
     return false;
   }
@@ -439,6 +452,7 @@ export async function mountPixelWorld(shell, options) {
     clearInfo();
   }
   function interact(n,o) {
+    if(n.creature&&!creatureCanUse(n,o.kind)){clearInfo();return;}
     const scene = model.scenes.find((s) => s.object === o.kind && s.actors.includes(n.name) && sceneActors(s).every(Boolean));
     if (scene) return queueScene(scene,o);
     clearInfo();
@@ -458,7 +472,7 @@ export async function mountPixelWorld(shell, options) {
       const dx=point.x-x,dy=point.y-(y-28),angle=-pose.tilt-(ip?.actual==='lie-stone'&&[1,2].includes(ip.phase)?Math.PI/2:0);
       const local={x:x+dx*Math.cos(angle)-dy*Math.sin(angle),y:y-28+dx*Math.sin(angle)+dy*Math.cos(angle)};
       if(ip&&(heldObject(n,time,reduced)||ip.wearing))ip={...ip,heldObject:true};
-      return drawPixelCharacter(null,characterStyle(n.name,i,n.role,n.refs),x,y,{scale:2,direction:n.direction||'down',walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,interaction:ip,expression:n.expression,hitTest:local});
+      return drawPixelCharacter(null,characterStyle(n.name,i,n.role,n.refs,n.creature||false),x,y,{scale:2,direction:n.direction||'down',walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,interaction:ip,expression:n.expression,hitTest:local});
     })?.i??-1;
   }
   function hitPlacedObject(p) {
@@ -664,7 +678,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if(b.dataset.castMode){
       if(drag||objectHold)return;
-      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):[]).map(castKey));applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
+      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[]).map(castKey));applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
     }
     if(b.dataset.togglePerson!==undefined||b.dataset.addPerson!==undefined){
       if(drag||objectHold)return;
@@ -766,10 +780,14 @@ export async function mountPixelWorld(shell, options) {
   function autoObjects(){
     if(time<autoObjectAt||pendingEvent||pendingTalk||activeEvent||drag||objectHold||placing||removing)return;
     autoObjectAt=time+3;
-    const idle=npcs.filter(n=>!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
+    for(const plant of npcs.filter(n=>n.creature?.kind==='plant')){
+      const water=objects.find(o=>['water','well','water-supply','basin'].includes(o.kind)&&Math.hypot(o.x-plant.x,o.y-plant.y)<=3);
+      plant.usingObject=water||null;plant.interaction=water?{id:'plant:water',category:'water',kind:water.kind,gesture:'absorb',creatureAction:'absorb',variant:0,period:3,phase:0}:null;
+    }
+    const idle=npcs.filter(n=>n.creature?.kind!=='plant'&&!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
     const pairs=objects.filter(o=>!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
       const specific=model.scenes.filter(s=>s.object===o.kind&&sceneActors(s).every(Boolean));
-      return idle.map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
+      return idle.filter(n=>!n.creature||creatureCanUse(n,o.kind)).map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
     });
     const chosen=rankObjectVisits(pairs,time,objectCooldown,visitorCooldown)[0];if(!chosen)return;
     if(toObject(chosen.n,chosen.o)){
@@ -781,6 +799,7 @@ export async function mountPixelWorld(shell, options) {
   function update(dt) {
     time+=dt;autoObjects();
     for(const n of npcs) {
+      if(n.creature?.kind==='plant'){n.path=[];n.task=null;continue;}
       if(drag?.active && drag.n===n)continue;
       if(n.encounter){n.idle=6;continue;}
       const talk=pendingTalk?.choice||speech.current;
@@ -800,7 +819,7 @@ export async function mountPixelWorld(shell, options) {
         n.action=target.kind;n.task=null;n.usingObject=target;n.objectAction=n.objectScene?.id||null;
         n.objectVisits??=Object.create(null);const visit=n.objectVisits[target.kind]||0;n.objectVisits[target.kind]=visit+1;
         n.interaction=interactionRoutine(n,target.kind,visit);n.interactionStart=time;n.idle=8;
-        if(n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,...objectContextSpeech(OBJECTS[target.kind],n.objectEvidence),kind:'context',object:target};}
+        if(!n.creature&&n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,...objectContextSpeech(OBJECTS[target.kind],n.objectEvidence),kind:'context',object:target};}
         n.objectEvidence=null;
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
           objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,kind:'context',object:target};
@@ -808,7 +827,7 @@ export async function mountPixelWorld(shell, options) {
         if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="right"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
         n.action="";n.usingObject=null;n.interaction=null;n.idle=3+Math.random()*5;
-        if(!reduced&&!pendingTalk) {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
+        if(!reduced&&!pendingTalk&&n.creature?.body!=='fish') {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
       }
     }
     if(pendingEvent && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)) beginEvent(pendingEvent.scene);
@@ -879,6 +898,7 @@ export async function mountPixelWorld(shell, options) {
     canvas.dataset.relationships=String(showRelationships);
   }
   if(!reduced)for(const n of npcs){
+    if(n.creature?.kind==='plant'||n.creature?.body==='fish')continue;
     for(let attempt=0;attempt<4;attempt++){
       const goal={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*12))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*10)))};
       if(blocked(goal.x,goal.y))continue;const path=findPath(cell(n),goal,blocked);if(path?.length){n.path=path;n.stride=Math.random()*4;n.direction=movementDirection(path[0].x-n.x,path[0].y-n.y,n.direction);break;}
@@ -900,13 +920,14 @@ function drawObject(c,o,response) {
 function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
   let actionPose=n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
+  if(n.creature?.kind==='plant'&&!actionPose)actionPose={phase:reduced?0:Math.floor(time*1.5)%4,bodyX:0,bodyY:0,hand:0,creatureAction:'sway'};
   const held=heldObject(n,time,reduced,TILE);
   if((held||actionPose?.wearing)&&actionPose)actionPose={...actionPose,heldObject:true};
   const rise=(n.objectAction==='zacchaeus-tree'||actionPose?.actual==='climb')&&n.usingObject?36+(actionPose?.climb||0):0;
   const anchor=interactionAnchor(n,TILE);
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   drawInteractionEffects(c,n,actionPose,x,y,time);
   c.restore();
@@ -920,6 +941,6 @@ function drawLifted(c,drag,time,reduced=false) {
   c.fillStyle='#18352b55';c.fillRect(x-19,y+8,38,8);
   // 집은 픽셀 자체를 회전 중심으로 삼아 대롱거려도 커서와 떨어지지 않는다.
   c.save();c.translate(drag.p.x*TILE,drag.p.y*TILE);c.rotate(angle);c.translate(-drag.p.x*TILE,-drag.p.y*TILE);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,direction:'down',walkFrame:0,interaction:lift.pose,expression:lift.expression,selected:true});
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,direction:'down',walkFrame:0,interaction:lift.pose,expression:lift.expression,selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }

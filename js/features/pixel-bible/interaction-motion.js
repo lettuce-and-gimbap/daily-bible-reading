@@ -1,3 +1,4 @@
+import {creatureRoutine} from './creatures.js';
 import {OBJECT_USAGE} from './object-usage.js';
 import {uniqueInteraction} from './unique-interactions.js';
 import {objectBehavior} from './object-behavior.js';
@@ -80,6 +81,7 @@ export function interactionOptions(kind){
  return INTERACTION_MOTIONS[objectBehavior(kind).category]||INTERACTION_MOTIONS.tool;
 }
 export function interactionRoutine(n,kind,visit=0){
+ if(n.creature)return creatureRoutine(n,kind,visit);
  const category=objectBehavior(kind).category;
  const variants=interactionOptions(kind);
  const key=(n.identity?.id||n.name||'reader')+':'+kind;
@@ -101,6 +103,7 @@ export function interactionRoutine(n,kind,visit=0){
 export function interactionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;
  const use=phase===1||phase===2,reach=phase===1?1:phase===2?2:0;
+ if(routine.creatureAction)return {phase,within:0,actual:routine.gesture,gesture:routine.gesture,creatureAction:routine.creatureAction,prop:routine.category,hand:0,bodyX:0,bodyY:0,bend:0,handY:26};
  const {category,variant,outcome=0}=routine;
  const actual=routine.gesture;
  const aliases={'five-stones':'pick','glean-bundle':'gather','fill-vessels':'pour','fill-manna':'fill','offer-water':'pour','write-scroll':'write','read-prophet':'read','explain-scroll':'point','soothe-lyre':'strum','instruct-reapers':'point','unshoe':'kneel','staff-snake':'place','strike-water':'use','cast-mantle':'cast','mantle-water':'use','tear-garment':'stretch','calm-waves':'hands','water-wine':'point','break-share':'break','wear-pattern':'wear','three-arrows':'shoot','long-blow':'blow','rehearse':'blow','pluck':'strum'};

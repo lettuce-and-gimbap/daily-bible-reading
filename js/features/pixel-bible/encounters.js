@@ -31,7 +31,7 @@ export class EncounterDirector {
   const busy=new Set(this.active.flatMap(s=>s.people));
   for(const relation of this.context.relations){
    const a=map.get(key(relation.from)),b=map.get(key(relation.to));
-   if(!a||!b||a===b)continue;
+   if(!a||!b||a===b||a.creature||b.creature)continue;
    const id=[key(a),key(b)].sort().join('|');if(seen.has(id))continue;seen.add(id);
    const state=this.contacts.get(id)||{touching:false};this.contacts.set(id,state);
    const touching=beside(a,b)&&!deny.has(a)&&!deny.has(b);
