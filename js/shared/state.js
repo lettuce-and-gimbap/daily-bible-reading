@@ -185,11 +185,13 @@ function reminderSnapshot() {
   if (!state.plan) return { date, done: false, paused: true, portion: "", streak: 0 };
   const pr = progress();
   const day = pr.days[pr.behindDays > 0 ? pr.currentDay : pr.todayDay];
+  // 이미 읽은 장은 빼고 남은 분량만 알림에 씀 (예: 31~35장 중 31~32장을 읽었으면 "33–35장")
+  const left = day.filter((i) => !state.read[i]);
   return {
     date,
     done: pr.dailyDone,
     paused: pr.finished,
-    portion: describeChapters(day),
+    portion: describeChapters(left.length ? left : day),
     streak: streak(new Set(Object.values(state.read))),
   };
 }
