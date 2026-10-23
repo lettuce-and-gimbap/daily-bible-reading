@@ -1,3 +1,4 @@
+import {garmentColor} from './garments.js';
 import { drawFaceExpression } from './expression.js';
 import { objectPresentation } from './object-response.js';
 import { drawCatalogDetail } from './catalog-art.js';
@@ -17,15 +18,26 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const step=[0,1,0,-1][frame%4];
  const pose=options.interaction||null;
  const renderAction=OBJECT_CATALOG[action]?.action||action;
- const activeStyle=pose?{...style,staff:false,scroll:false,grain:false,grapes:false,net:false,lyre:false,tambourine:false}:style;
+ let activeStyle=pose?{...style,staff:false,scroll:false,grain:false,grapes:false,net:false,lyre:false,tambourine:false}:style;
+ if(pose?.wearing){
+  const kind=pose.outfit,headgear=['crown','helmet','sandal','belt','breastplate'].includes(kind);
+  activeStyle={...activeStyle,...(!headgear?{coat:garmentColor(kind),mantle:kind==='cloak',pattern:pose.actual==='wear-pattern',trim:'#dacb96'}:{}),
+   crown:kind==='helmet'?false:kind==='crown'||activeStyle.crown,turban:['helmet','crown'].includes(kind)?false:activeStyle.turban,helmet:kind==='helmet',belt:kind==='belt'||activeStyle.belt,apron:kind==='ephod'||activeStyle.apron,plate:['armor','breastplate'].includes(kind),fur:kind==='sackcloth'||activeStyle.fur,sandal:kind==='sandal'};
+ }
  const expression=options.expression||'neutral';
- const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose,expression]);let sprite=spriteCache.get(key);
+ const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose?{...pose,within:0}:null,expression]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
   if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
   else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
+ }
+ if(options.hitTest){
+  const px=Math.floor((options.hitTest.x-x)/scale+32),py=Math.floor((options.hitTest.y-y)/scale+52);
+  if(px<0||py<0||px>=64||py>=64)return false;
+  if(!sprite.pixels)sprite.pixels=sprite.canvas.getContext('2d').getImageData(0,0,64,64).data;
+  return sprite.pixels[(py*64+px)*4+3]>128;
  }
  ctx.save();ctx.imageSmoothingEnabled=false;
  if(hanging){
@@ -62,11 +74,11 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   const step=Math.sign(walk), look=facing<0?-1:0;
   r(5,37,14,1,"#183a3933");
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
-  const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,"#a77d57");};
+  const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,pose?.barefeet?skin:style.sandal?"#d2b47d":"#a77d57");};
   if(pose?.sit){
     r(7,31,11,3,outline);r(8,31,9,1,style.coat);r(8,33,3,3,outline);r(15,33+pose.legSwing,3,3,outline);r(8,35,5,2,outline);r(15,35+pose.legSwing,5,2,outline);
   }else if(pose?.bend){r(6,32,5,3,outline);r(14,32,5,3,outline);r(5,35,6,2,outline);r(14,35,6,2,outline);}
-  else{leg(7,step);leg(14,-step);}
+  else{leg(7,step);leg(14,pose?.kick?-3:-step);if(pose?.kick){r(17,32,5,2,outline);r(18,32,3,1,skin);}}
   if(style.mantle||style.royal||style.shawl){r(7,19,10,2,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
   // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
   r(9,19,6,1,outline);r(7,20,10,1,outline);r(6,21,12,3,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
@@ -84,6 +96,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
     r(4,21,4,4,outline);r(5,22,2,2,style.coat);r(5,24+dy,5,3,outline);r(7,24+dy,3,2,skin);
     r(17,21,4,4,outline);r(18,22,2,2,style.coat);r(14,24+dy,6,3,outline);r(14,24+dy,3,2,skin);
   }else{arm(4,hanging?2:-step);arm(17,hanging?2:step);}
+  if(style.plate){r(8,22,8,6,'#a6b6b5');r(9,23,2,4,'#d1dcd1');r(14,23,1,4,'#728d90');}
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
   if(style.vest){r(7,20,3,5,'#69583f');r(14,20,3,5,'#69583f');}
   if(style.sash){r(14,21,2,11,style.sash);r(13,23,1,3,style.sash);}
@@ -117,6 +130,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(style.eyeliner){r(9+look,8,2,1,outline);r(14+look,8,2,1,outline);}
   if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}
   if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}
+  if(style.helmet){r(6,3,12,3,'#9bacae');r(5,6,2,5,'#9bacae');r(17,6,2,5,'#7b9099');r(8,3,6,1,'#d4dbca');}
   if(style.turban){r(7,2,10,3,style.coat);r(6,5,12,1,'#e4d9ba');r(8,3,8,1,'#b0b8c4');r(11,2,2,4,style.trim||'#c4a768');}
   if(style.headband){r(6,5,12,1,'#e7d7b7');r(17,6,2,4,'#e7d7b7');}
   if(style.jewels){r(5,12,1,2,'#e0ba67');r(18,12,1,2,'#e0ba67');}
@@ -143,7 +157,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(!pose&&action==='scroll'){r(6,21,13,8,outline);r(7,22,11,6,'#eee0b2');r(9,23,7,1,'#94805a');r(9,25,6,1,'#94805a');}
   if(!pose&&action==='stone'){r(19,23,4,4,outline);r(20,23,2,3,'#a5aaa2');}
   if(!pose&&action==='bush'){r(1,24,3,2,skin);r(20,24,3,2,skin);}
-  if(pose?.hand&&!pose.heldObject){
+  if(pose?.hand&&!pose.heldObject&&!['tear-garment','water-wine','staff-snake','five-stones','glean-bundle'].includes(pose.actual)){
     if(['water','well','oil'].includes(pose.prop)){const yy=pose.handY-1;r(15,yy,4,5,outline);r(16,yy+1,2,3,pose.prop==='oil'?'#d9bd58':'#8abbd0');}
     if(pose.prop==='cooking'){r(18,pose.handY-3,1,9,'#b99a6f');r(17,pose.handY+4,3,2,'#b99a6f');}
     if(pose.prop==='field'){r(12,pose.bend?29:24,1,8,'#987c48');r(10,pose.bend?29:24,5,3,'#e5c574');}
@@ -181,7 +195,7 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
       r(-wide,-6,wide*2,8,O);r(-wide+1,-5,wide*2-2,6,'#be886b');r(-wide,-7,wide*2,2,'#84bdce');
       if(originalKind==='cup'){r(6,-5,3,5,O);r(6,-4,2,3,'#be886b');}
       if(originalKind==='pot'){r(-11,-4,3,3,O);r(8,-4,3,3,O);}
-    }else{r(-3,-11,6,2,O);r(-4,-9,8,2,O);r(-5,-7,10,10,O);r(-3,3,6,1,O);r(-3,-8,6,1,"#729fb5");r(-4,-6,8,8,"#be886b");r(-3,-5,2,5,"#e5af86");r(-2,-10,4,1,"#84bdce");}
+    }else{r(-3,-11,6,2,O);r(-4,-9,8,2,O);r(-5,-7,10,10,O);r(-3,3,6,1,O);r(-3,-8,6,1,"#729fb5");r(-4,-6,8,8,"#be886b");r(-3,-5,2,5,"#e5af86");r(-2,-10,4,1,frame?.liquidColor||'#84bdce');}
   }  if(o.kind==='well'){
     r(-10,-4,20,10,O);r(-9,-3,18,8,'#a9a28a');r(-7,-2,14,4,'#467f8e');r(-11,-6,22,3,'#c5bba0');
     r(-8,-19,2,14,'#78583e');r(6,-19,2,14,'#78583e');r(-10,-20,20,3,'#a58154');r(0,-17,1,13,'#d8c08b');r(-2,-8,5,5,'#805e46');
@@ -280,4 +294,13 @@ export function drawDesignBoard(c) {
   c.drawImage(bg,450,728,720,240);
   c.font="14px sans-serif";c.fillText("풀밭 · 흙길 · 물가 · 돌집 (상상 공간)",450,995);
   c.font="12px sans-serif";c.fillStyle="#5d6d61";c.fillText("본문 근거와 창작 복식을 구분합니다. 관리자 개발 체험 · 정식 버전 유지.",36,1020);c.restore();
+}
+
+const objectHitCache=new Map();
+export function hitWorldObject(o,point,frame=null){
+ const key=JSON.stringify([o.kind,frame?.scale,frame?.tilt,frame?.open,frame?.squash,frame?.dx,frame?.dy,frame?.lid]);
+ let pixels=objectHitCache.get(key);
+ if(!pixels){const c=document.createElement('canvas');c.width=c.height=384;drawWorldObject(c.getContext('2d'),{...o,x:192,y:192},1,frame);pixels=c.getContext('2d').getImageData(0,0,384,384).data;if(objectHitCache.size>256)objectHitCache.clear();objectHitCache.set(key,pixels);}
+ const x=Math.floor(point.x-o.x*24+192),y=Math.floor(point.y-o.y*24+192);
+ return x>=0&&x<384&&y>=0&&y<384&&pixels[(y*384+x)*4+3]>128;
 }

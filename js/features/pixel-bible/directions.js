@@ -7,12 +7,12 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  const O='#302f35',skin='#f2d5af',hair=s.hood?s.coat:s.hair;
  const side=direction!=='up',bob=step?1:0;
  r(5,37,14,1,'#183a3933');
- const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,'#a77d57');};
+ const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};
  if(pose?.sit){
   if(side){r(9,30,12,3,O);r(10,31,10,1,s.coat);r(18,32,3,4+pose.legSwing,O);r(18,35+pose.legSwing,6,2,O);r(19,35+pose.legSwing,4,1,'#a77d57');}
   else{r(7,31,11,3,O);r(8,33,3,3,O);r(15,33+pose.legSwing,3,3,O);r(7,35,5,2,O);r(14,35+pose.legSwing,5,2,O);}
  }else if(pose?.bend){r(7,32,6,3,O);r(14,32,5,3,O);r(7,35,6,2,O);r(15,35,6,2,O);}
- else if(side){leg(9,-step*2,true);leg(12,step*2,false);}else{leg(7,step,false);leg(14,-step,false);}
+ else if(side){leg(9,-step*2,true);leg(12,pose?.kick?4:step*2,false);}else{leg(7,step,false);leg(14,-step,false);}
  // 얼굴/옷 부분의 1도트 상하 이동, 발은 바닥을 딛는 별도 좌표.
  c.save();c.translate(0,-bob);
  if(side){
@@ -20,6 +20,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   r(8-step,22,3,7,O);r(9-step,24,1,4,skin);
   r(9,19,7,2,O);r(8,21,10,10,O);r(9,22,8,8,s.coat);r(8,30,10,3,O);r(9,30,8,2,s.coat);
   if(s.mantle||s.royal||s.shawl){r(7,21,3,11,O);r(8,22,2,9,s.coat);}
+  if(s.plate){r(14,23,3,6,'#a6b6b5');r(15,23,1,5,'#d1dcd1');}
   if(s.apron)r(16,24,1,7,'#e9d4aa');
   if(s.vest)r(14,22,2,4,'#69583f');
   if(s.belt)r(10,27,7,1,'#58412d');
@@ -53,6 +54,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  // 방향에 맞춘 장식: 얼굴을 덮지 않고 머리의 윗부분에만 둔다.
  if(s.updo){r(9,2,6,3,O);r(10,3,4,2,hair);r(13,4,2,1,'#d8b66a');}
  if(s.crown){r(7,5,10,2,O);r(8,5,8,1,s.trim||'#d9b568');for(const x of [7,11,15])r(x,3,2,2,'#d9b568');}
+ if(s.helmet){r(7,7,12,3,'#9bacae');r(6,10,2,6,'#7b9099');r(9,7,6,1,'#d4dbca');}
  if(s.turban){r(7,6,10,3,s.coat);r(6,9,12,1,'#e4d9ba');r(8,7,8,1,'#b0b8c4');}
  if(s.headband){r(6,9,12,1,'#e7d7b7');r(side?7:15,10,2,4,'#e7d7b7');}
  if(s.jewels){r(side?12:5,16,1,2,'#e0ba67');if(!side)r(18,16,1,2,'#e0ba67');}
@@ -68,7 +70,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  if(s.glow){r(2,13,1,2,'#f8dc85');r(22,17,1,2,'#f8dc85');}
  if(!pose&&action==='water'){r(17,16,3,4,O);r(17,16,2,1,'#87bfd1');}
  if(!pose&&action==='field'){r(19,24,1,8,'#b78a5a');r(18,23,3,3,'#e5c574');}
- if(pose?.hand&&!pose.heldObject){
+ if(pose?.hand&&!pose.heldObject&&!['tear-garment','water-wine','staff-snake','five-stones','glean-bundle'].includes(pose.actual)){
   const px=side?19:14,py=pose.handY-1;
   if(['water','well','oil'].includes(pose.prop)){r(px,py,4,5,O);r(px+1,py+1,2,3,pose.prop==='oil'?'#d9bd58':'#8abbd0');}
     if(pose.prop==='cooking'){r(18,pose.handY-3,1,9,'#b99a6f');r(17,pose.handY+4,3,2,'#b99a6f');}

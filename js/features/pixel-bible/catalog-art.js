@@ -1,8 +1,29 @@
+import {garmentColor} from './garments.js';
 // 계열별 재사용 도안 안에서도 형태가 다른 물건은 별도 실루엣으로 그린다.
 export function drawCatalogDetail(r,id,family,O){
  const wood='#a78255',gold='#d8b75f',metal='#aab6b4',paper='#eee0b3',dark='#5d665f';
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
 
+
+ if(['cloak','robe','linen','sackcloth','ephod','armor','helmet','sandal','breastplate'].includes(id)){
+  const cloth=garmentColor(id);
+  if(id==='cloak'){
+   line(-5,-22,10,5,O);line(-9,-17,18,8,O);line(-12,-9,24,14,O);
+   line(-4,-21,8,4,cloth);line(-8,-16,16,8,cloth);line(-11,-8,22,12,cloth);line(-1,-16,2,20,paper);line(-4,-19,8,2,dark);
+  }else if(id==='helmet'){
+   line(-6,-18,12,2,O);line(-10,-16,20,14,O);line(-9,-15,18,11,metal);line(-6,-14,11,2,paper);line(-9,-4,4,9,metal);line(5,-4,4,9,metal);line(-2,-23,4,6,gold);
+  }else if(id==='sandal'){
+   for(const x of [-9,2]){line(x,-9,7,14,wood);line(x,-7,7,2,gold);line(x+2,-6,2,10,gold);}
+  }else if(id==='breastplate'){
+   line(-9,-17,18,20,O);line(-8,-16,16,18,gold);for(let y=0;y<4;y++)for(let x=0;x<3;x++)line(-6+x*4,-13+y*4,3,3,['#9b6e78','#87a19e','#d4bf74'][(x+y)%3]);
+  }else{
+   line(-5,-22,10,3,O);line(-13,-19,26,8,O);line(-9,-11,18,16,O);
+   line(-4,-21,8,3,cloth);line(-12,-18,24,6,cloth);line(-8,-12,16,16,cloth);line(-3,-21,6,4,paper);line(-6,-10,1,13,'#ffffff33');line(-8,1,16,2,paper);
+   if(id==='sackcloth')for(let y=-14;y<2;y+=4)line(-7,y,14,1,wood);
+   if(id==='armor')for(let y=-12;y<2;y+=4)line(-6,y,12,1,metal);
+  }
+  return true;
+ }
  if(['table','bed','throne','footstool'].includes(id)){
   if(id==='table'){
    line(-13,-8,26,4,O);line(-12,-7,24,2,wood);line(-11,-4,3,10,wood);line(8,-4,3,10,wood);line(-10,-7,20,1,paper);

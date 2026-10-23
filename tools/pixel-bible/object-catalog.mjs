@@ -1,4 +1,5 @@
-import {INTERACTION_MOTIONS,interactionRoutine} from '../../js/features/pixel-bible/interaction-motion.js';
+import {UNIQUE_INTERACTIONS} from '../../js/features/pixel-bible/unique-interactions.js';
+import {INTERACTION_MOTIONS,INTERACTION_MOTION_COUNT,interactionOptions,interactionRoutine} from '../../js/features/pixel-bible/interaction-motion.js';
 import {APPEARANCES} from '../../js/features/pixel-bible/appearance.js';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
@@ -18,4 +19,4 @@ write('catalog.json',{schema:1,scope:'Candidates extracted from existing public 
 console.log(JSON.stringify({books:66,chapters:count,definitions:Object.keys(OBJECT_CATALOG).length,matchedDefinitions:kinds.size,chaptersWithObjects:withObjects,occurrences:events}));
 
 const bindings=Object.fromEntries(Object.values(APPEARANCES).map(p=>[p.key||p.name,{name:p.name,objects:Object.fromEntries(Object.keys(OBJECT_CATALOG).map(kind=>{const r=interactionRoutine({name:p.name},kind);return [kind,{routine:r.id,variant:r.variant,period:r.period,phase:r.phase}];}))}]));
-write('../interaction-motions.json',{schema:1,scope:'116 reusable motion prototypes, four time phases; name-specific bindings for 100 appearance profiles on all 156 catalog objects. Object behavior determines actual props, safe approaches and fixed structures. Motion variants are creative unless a scoped biblical action overrides them.',prototypes:INTERACTION_MOTIONS,characters:bindings});
+write('../interaction-motions.json',{schema:1,scope:`${INTERACTION_MOTION_COUNT} reusable motion prototypes; at least six outcomes per catalog object, selected across repeated visits. 100 appearance profiles on 156 objects. Explicit biblical actions are chapter- and identity-scoped. Daily motions are creative.`,prototypes:INTERACTION_MOTIONS,options:Object.fromEntries(Object.keys(OBJECT_CATALOG).map(kind=>[kind,interactionOptions(kind)])),unique:UNIQUE_INTERACTIONS,characters:bindings});

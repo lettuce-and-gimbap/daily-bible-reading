@@ -1,10 +1,12 @@
+import {drawInteractionEffects} from './interaction-effects.js';
+import {grabOffset,grabbedOrigin} from './grab.js';
 import { majorCast, recommendedCast, exposureStorageKey } from './exposure.js';
 import { fitLayout } from './layout.js';
 import { drawWholeBackground, sceneDecorations } from './landscape.js';
 import { speechEmotion } from './expression.js';
 import { WORLD, BOUNDS, homeCamera, cameraView, constrainCamera, toWorld, zoomAt, pinchCamera, edgePan } from './camera.js';
 import { canMoveObject } from './object-drag.js';
-import { objectPresentation, interactionApproaches, heldObject, interactionAnchor, objectInteractionFrame, drawObjectResponse } from './object-response.js';
+import { objectPresentation, interactionApproaches, heldObject, interactionAnchor, objectWorn, objectInteractionFrame, drawObjectResponse } from './object-response.js';
 import { castKey, reconcileCast } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
@@ -15,12 +17,12 @@ import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
-import { buildChapterDialogue } from './chapter-dialogue.js';
+import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
-import { drawPixelCharacter, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
+import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
 import { RUTH_SCENES, ELIJAH_SCENES, ALL_SCENES as REVIEWED_SCENES, scenesForChapters } from './scenes.js';
 export { RUTH_SCENES, ELIJAH_SCENES } from './scenes.js';
 // 공개 픽셀 월드: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
@@ -79,7 +81,7 @@ export function castPositions(count){
  const columns=Math.max(1,Math.ceil(Math.sqrt(count*1.7))),rows=Math.ceil(count/columns);
  const dx=Math.min(4,(BOUNDS.maxX-BOUNDS.minX-2)/Math.max(1,columns-1));
  const dy=Math.min(3,(BOUNDS.maxY-BOUNDS.minY-2)/Math.max(1,rows-1));
- return Array.from({length:count},(_,i)=>({x:Math.round(WORLD.width/48+(i%columns-(columns-1)/2)*dx),y:Math.round(WORLD.height/48+(Math.floor(i/columns)-(rows-1)/2)*dy)}));
+ return Array.from({length:count},(_,i)=>({x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(WORLD.width/48+(i%columns-(columns-1)/2)*dx+(Math.random()-.5)*3))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(WORLD.height/48+(Math.floor(i/columns)-(rows-1)/2)*dy+(Math.random()-.5)*3)))}));
 }
 
 export function findPath(start, goal, blocked) {
@@ -223,7 +225,7 @@ export async function mountPixelWorld(shell, options) {
   } catch (_) {}
   terrain=terrain.filter(o=>!objects.some(p=>Math.hypot(p.x-o.x,p.y-o.y)<2.5));
   const positions=castPositions(visibleCast.length);
-  const npcs = visibleCast.map((p, i) => ({ ...p, ...positions[i], path: [], direction:"down", stride:0, idle: 1 + i * .4, motion:characterMotion(p,chapterData), action: "", task: null }));
+  const npcs = visibleCast.map((p, i) => ({ ...p, readingChapters:dialogueContext.people.filter(o=>occurrenceMatches(p,o)).map(o=>({code:o.code,chap:o.chap})), ...positions[i], path: [], direction:"down", stride:0, idle: Math.random()*.4, motion:characterMotion(p,chapterData), action: "", task: null }));
   const castCache = new Map(npcs.map(n => [castKey(n), n]));
   let exposed=new Set(model.cast.map(castKey));
   try{const saved=JSON.parse(localStorage.getItem(exposureStorageKey(model.key)));if(Array.isArray(saved)&&saved.every(k=>typeof k==='string'))exposed=new Set(saved);}catch(_){}
@@ -384,17 +386,29 @@ export async function mountPixelWorld(shell, options) {
     return {x:((e.clientX-r.left)*canvas.width/r.width-v.x)/v.scale/TILE,y:((e.clientY-r.top)*canvas.height/r.height-v.y)/v.scale/TILE};
   }
   function hitPerson(p) {
-    return npcs.map((n,i)=>({n,i})).filter(({n})=>Math.abs(interactionAnchor(n,TILE).x/TILE-p.x)<1.5&&p.y-interactionAnchor(n,TILE).y/TILE<.8&&p.y-interactionAnchor(n,TILE).y/TILE>-5.2).sort((a,b)=>b.n.y-a.n.y)[0]?.i??-1;
+    const point={x:p.x*TILE,y:p.y*TILE};
+    return npcs.map((n,i)=>({n,i,anchor:interactionAnchor(n,TILE)})).sort((a,b)=>b.anchor.y-a.anchor.y).find(({n,i,anchor})=>{
+      if(Math.abs(anchor.x-point.x)>90||Math.abs(anchor.y-point.y)>150)return false;
+      let ip=n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
+      const rise=(n.objectAction==='zacchaeus-tree'||ip?.actual==='climb')?36+(ip?.climb||0):0;
+      const pose=motionPose(n.motion,n.stride,!!n.path.length,time),x=anchor.x+pose.x,y=anchor.y+pose.y-rise;
+      const dx=point.x-x,dy=point.y-(y-28),angle=-pose.tilt-(ip?.actual==='lie-stone'&&[1,2].includes(ip.phase)?Math.PI/2:0);
+      const local={x:x+dx*Math.cos(angle)-dy*Math.sin(angle),y:y-28+dx*Math.sin(angle)+dy*Math.cos(angle)};
+      if(ip&&(heldObject(n,time,reduced)||ip.wearing))ip={...ip,heldObject:true};
+      return drawPixelCharacter(null,characterStyle(n.name,i,n.role,n.refs),x,y,{scale:2,direction:n.direction||'down',walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,interaction:ip,expression:n.expression,hitTest:local});
+    })?.i??-1;
   }
   function hitPlacedObject(p) {
+    const point={x:p.x*TILE,y:p.y*TILE};
     return [...objects].sort((a,b)=>b.y-a.y).find(o=>{
-      const profile=objectPresentation(o.kind),scale=profile.scale;
-      const height=o.kind==='tree'?27:profile.category==='building'?34:18;
-      return Math.abs((p.x-o.x)*TILE)<12*scale && (p.y-o.y)*TILE<6*scale && (p.y-o.y)*TILE>-height*scale;
+      const frame=objectInteractionFrame(o,npcs,time+cinematicTime,reduced);if(frame.actor&&objectWorn(frame.actor,time+cinematicTime,reduced))return false;const held=frame.actor&&heldObject(frame.actor,time+cinematicTime,reduced);
+      return hitWorldObject(held||o,point,held?.frame||frame);
     });
   }
   function beginObjectHold(o,e,p) {
-    const held={o,id:e.pointerId,startX:e.clientX,startY:e.clientY,p,offset:{x:p.x-o.x,y:p.y-o.y},client:{x:e.clientX,y:e.clientY},active:false};
+    const actor=npcs.find(n=>n.usingObject===o),visual=actor&&heldObject(actor,time+cinematicTime,reduced);
+    const origin=visual||o;
+    const held={o,frame:visual?.frame,grab:grabOffset(p,origin),id:e.pointerId,startX:e.clientX,startY:e.clientY,p,client:{x:e.clientX,y:e.clientY},active:false};
     objectHold=held;canvas.setPointerCapture(e.pointerId);
     held.timer=setTimeout(()=>{
       if(objectHold!==held||disposed||!options.allowed()||activeEvent||document.hidden||window.innerWidth<=window.innerHeight)return;
@@ -408,7 +422,7 @@ export async function mountPixelWorld(shell, options) {
     },1000);
   }
   function objectLanding(held) {
-    return {x:Math.round(held.p.x-held.offset.x),y:Math.round(held.p.y-held.offset.y)};
+    const origin=grabbedOrigin(held);return {x:Math.round(origin.x),y:Math.round(origin.y)};
   }
   function finishObjectHold(e,cancel=false) {
     if(!objectHold||objectHold.id!==e.pointerId)return;
@@ -488,11 +502,14 @@ export async function mountPixelWorld(shell, options) {
     suppressClick=false;
     if(!options.allowed()||activeEvent||placing||removing||e.button!==0||window.innerHeight>=window.innerWidth)return;
     const point=coordinates(e),index=hitPerson(point),object=hitPlacedObject(point);
-    if(object&&(index<0||Math.hypot(object.x-point.x,object.y-point.y)<1)){beginObjectHold(object,e,point);return;}
+    if(object&&(index<0||npcs.some(n=>n.usingObject===object&&heldObject(n,time,reduced))||object.y*TILE>interactionAnchor(npcs[index],TILE).y)){beginObjectHold(object,e,point);return;}
     if(index<0)return;
     select(index);const n=npcs[index];
 
-    drag={n,index,id:e.pointerId,active:false,startX:e.clientX,startY:e.clientY,p:coordinates(e),from:{x:n.x,y:n.y},fromCamera:{...camera},client:{x:e.clientX,y:e.clientY},vx:0,lastX:e.clientX};
+    const anchor=interactionAnchor(n,TILE),pose=motionPose(n.motion,n.stride,!!n.path.length,time);
+    const snapshot=n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
+    const rise=(n.objectAction==='zacchaeus-tree'||snapshot?.actual==='climb')?36+(snapshot?.climb||0):0;
+    drag={snapshot,captureAngle:pose.tilt+(snapshot?.actual==='lie-stone'&&[1,2].includes(snapshot.phase)?Math.PI/2:0),expression:n.expression,walkFrame:n.path.length?Math.floor(n.stride*2)%4:0,grab:grabOffset(point,{x:(anchor.x+pose.x)/TILE,y:(anchor.y+pose.y-rise)/TILE}),direction:n.direction,n,index,id:e.pointerId,active:false,startX:e.clientX,startY:e.clientY,p:coordinates(e),from:{x:n.x,y:n.y},fromCamera:{...camera},client:{x:e.clientX,y:e.clientY},vx:0,lastX:e.clientX};
     canvas.setPointerCapture(e.pointerId);
   },{signal});
   canvas.addEventListener('pointermove',(e)=>{
@@ -501,7 +518,7 @@ export async function mountPixelWorld(shell, options) {
       if(objectHold.active){e.preventDefault();objectHold.p=coordinates(e);draw();}return;
     }
     if(!drag||e.pointerId!==drag.id)return;
-    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브제에 내려놓아 보세요.`);}
+    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';drag.n.usingObject=null;drag.n.interaction=null;canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브제에 내려놓아 보세요.`);}
     if(drag.active){e.preventDefault();drag.vx=drag.vx*.65+(e.clientX-drag.lastX)*.35;drag.lastX=e.clientX;drag.p=coordinates(e);draw();}
   },{signal});
   function finishDrag(e,cancel=false) {
@@ -512,7 +529,8 @@ export async function mountPixelWorld(shell, options) {
     suppressClick=true;
     const n=held.n,p=coordinates(e),under=document.elementFromPoint(e.clientX,e.clientY);
     if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle,.pb-camera-controls')){n.x=held.from.x;n.y=held.from.y;n.idle=5;Object.assign(camera,held.fromCamera);syncCamera();draw();return;}
-    const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(p.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(p.y+3)))};
+    held.p=p;const origin=grabbedOrigin(held);
+    const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(origin.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(origin.y)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
     if(obj){
       const spot=adjacent(obj,landing)[0];
@@ -709,7 +727,8 @@ export async function mountPixelWorld(shell, options) {
         if(!objects.includes(target)){n.task=null;continue;}
         n.direction=movementDirection(target.x-n.x,target.y-n.y,n.direction);
         n.action=target.kind;n.task=null;n.usingObject=target;n.objectAction=n.objectScene?.id||null;
-        n.interaction=interactionRoutine(n,target.kind);n.interactionStart=time;n.idle=8;
+        n.objectVisits??=Object.create(null);const visit=n.objectVisits[target.kind]||0;n.objectVisits[target.kind]=visit+1;
+        n.interaction=interactionRoutine(n,target.kind,visit);n.interactionStart=time;n.idle=8;
         if(n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,text:n.objectEvidence.text,ref:n.objectEvidence.ref,kind:'context',object:target};}
         n.objectEvidence=null;
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
@@ -744,7 +763,7 @@ export async function mountPixelWorld(shell, options) {
     if(objectHold?.active){
       const p=objectLanding(objectHold),valid=canMoveObject(objectHold.o,p,[...objects,...terrain],npcs);
       ctx.fillStyle=valid?'#79c99566':'#e17e7866';ctx.fillRect((p.x-.6)*TILE,(p.y-.4)*TILE,1.2*TILE,.8*TILE);
-      ctx.save();ctx.globalAlpha=.8;drawWorldObject(ctx,{...objectHold.o,x:objectHold.p.x-objectHold.offset.x,y:objectHold.p.y-objectHold.offset.y});ctx.restore();
+      ctx.save();ctx.globalAlpha=.8;drawWorldObject(ctx,{...objectHold.o,...grabbedOrigin(objectHold)},TILE,objectHold.frame);ctx.restore();
     }
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
     ctx.restore();
@@ -788,12 +807,18 @@ export async function mountPixelWorld(shell, options) {
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
     canvas.dataset.relationships=String(showRelationships);
   }
+  if(!reduced)for(const n of npcs){
+    for(let attempt=0;attempt<4;attempt++){
+      const goal={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*12))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*10)))};
+      if(blocked(goal.x,goal.y))continue;const path=findPath(cell(n),goal,blocked);if(path?.length){n.path=path;n.stride=Math.random()*4;n.direction=movementDirection(path[0].x-n.x,path[0].y-n.y,n.direction);break;}
+    }
+  }
   syncExposure();syncCamera();syncRelationships();select(options.speakOnOpen?0:-1,!!options.speakOnOpen);fitCanvas();resume();say('두 손가락 또는 마우스 휠로 확대·축소해요. 양옆에서 인물과 조합식을 고를 수 있어요.');
   return ()=>{cleanup();replacement?.();};
 }
 
 function drawObject(c,o,response) {
-  if(response?.actor&&heldObject(response.actor,response.time,response.reduced))return;
+  if(response?.actor&&(heldObject(response.actor,response.time,response.reduced)||objectWorn(response.actor,response.time,response.reduced)))return;
   drawWorldObject(c,o,TILE,response);
   drawObjectResponse(c,o,response,TILE);
   if(!Object.hasOwn(WORLD_OBJECTS,o.kind)&&OBJECT_CATALOG[o.kind]){
@@ -805,23 +830,27 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
   let actionPose=n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
   const held=heldObject(n,time,reduced,TILE);
-  if(held&&actionPose)actionPose={...actionPose,heldObject:true};
-  const rise=n.objectAction==='zacchaeus-tree'&&n.usingObject?36:0;
+  if((held||actionPose?.wearing)&&actionPose)actionPose={...actionPose,heldObject:true};
+  const rise=(n.objectAction==='zacchaeus-tree'||actionPose?.actual==='climb')&&n.usingObject?36+(actionPose?.climb||0):0;
   const anchor=interactionAnchor(n,TILE);
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",selected});
+  if(actionPose?.actual==='lie-stone'&&[1,2].includes(actionPose.phase)){c.translate(x,y-28);c.rotate(Math.PI/2);c.translate(-x,-y+28);}
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
+  drawInteractionEffects(c,n,actionPose,x,y,time);
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
 
 function drawLifted(c,drag,time) {
-  const x=drag.p.x*TILE,y=drag.p.y*TILE+96;
-  const groundY=Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(drag.p.y+3)))*TILE;
-  c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
-  c.save();c.translate(x,y-96);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+96);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,hanging:true,time:performance.now()/1000,motion:drag.n.motion,walkFrame:Math.floor(performance.now()/1000*(drag.n.motion.frequency/3)+drag.n.motion.phase)%4,selected:true});
+  const origin=grabbedOrigin(drag),x=origin.x*TILE,y=origin.y*TILE;
+  const motion=drag.n.motion,angle=Math.max(-.22,Math.min(.22,drag.vx*.004+Math.sin(time*motion.frequency+motion.phase)*motion.swing*.35));
+  c.fillStyle='#18352b55';c.fillRect(x-19,y+8,38,8);
+  // 집은 픽셀 자체를 회전 중심으로 삼아 대롱거려도 커서와 떨어지지 않는다.
+  c.save();c.translate(drag.p.x*TILE,drag.p.y*TILE);c.rotate(angle);c.translate(-drag.p.x*TILE,-drag.p.y*TILE);
+  c.translate(x,y-28);c.rotate(drag.captureAngle||0);c.translate(-x,-y+28);
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,direction:drag.direction||'down',walkFrame:drag.walkFrame,interaction:drag.snapshot,expression:drag.expression,selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }

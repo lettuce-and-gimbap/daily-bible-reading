@@ -246,7 +246,7 @@ test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다�
  const relations=[{from:'갑',to:'을',label:'가족',sourceRef:'창세기 1장'},{from:'갑',to:'을',label:'다른 사람',sourceRef:'창세기 2장'}];
  let links=relationshipLinks(relations,[a,b]);assert.equal(links.length,1);assert.deepEqual(links[0].a,{x:240,y:112});
  a.x=11;links=relationshipLinks(relations,[a,b]);assert.equal(links[0].a.x,264);
- links=relationshipLinks(relations,[a,b],{active:true,n:a,p:{x:15,y:7}});assert.deepEqual(links[0].a,{x:360,y:184});
+ links=relationshipLinks(relations,[a,b],{active:true,n:a,p:{x:15,y:7}});assert.deepEqual(links[0].a,{x:360,y:88});
  assert.equal(relationshipLinks(relations,[a]).length,0);
 });
 
@@ -308,7 +308,7 @@ test('오브제 색인은 장·구절 범위를 보존하고 돌아가다/불순
 test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다른 자세를 사용한다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {interactionRoutine,interactionPose,INTERACTION_MOTION_COUNT}=await import('../js/features/pixel-bible/interaction-motion.js');
- assert.equal(INTERACTION_MOTION_COUNT,116);
+ assert.equal(INTERACTION_MOTION_COUNT,175);
  const n={name:'룻'};
  for(const key of Object.keys(OBJECT_CATALOG)){
   const routine=interactionRoutine(n,key);assert.ok(routine.id&&routine.label);
@@ -316,7 +316,7 @@ test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다
  }
  assert.equal(interactionPose(interactionRoutine(n,'bench'),1).sit,true);
  const sip=interactionRoutine({name:'룻'},'water');assert.notEqual(sip.category,interactionRoutine(n,'field').category);
- assert.equal(interactionRoutine(n,'trumpet').gesture,'blow');assert.equal(interactionRoutine(n,'lyre').gesture,'strum');
+ const {interactionOptions}=await import('../js/features/pixel-bible/interaction-motion.js');assert.ok(interactionOptions('trumpet').some(v=>v[0]==='blow'));assert.ok(interactionOptions('lyre').some(v=>v[0]==='strum'));
  assert.equal(interactionRoutine({name:'바룩',objectAction:'baruch-scroll'},'scroll').gesture,'write');
 });
 
@@ -478,13 +478,13 @@ test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 �
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {objectBehavior}=await import('../js/features/pixel-bible/object-behavior.js');
  const {INTERACTION_MOTIONS,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
- const {interactionApproaches,heldObject}=await import('../js/features/pixel-bible/object-response.js');
+ const {interactionApproaches,heldObject,objectWorn}=await import('../js/features/pixel-bible/object-response.js');
  for(const kind of Object.keys(OBJECT_CATALOG)){
   const behavior=objectBehavior(kind),routine=interactionRoutine({name:'룻'},kind),o={kind,x:10,y:10};
   assert.ok(INTERACTION_MOTIONS[behavior.category],kind);assert.equal(routine.category,kind==='ark-covenant'?'bush':behavior.category,kind);
   if(behavior.frontOnly)assert.ok(interactionApproaches(o).every(p=>p.y>=o.y),kind);
   const n={name:'룻',x:9,y:10,direction:'right',usingObject:o,interaction:{...routine,phase:0},interactionStart:0};
-  assert.equal(!!heldObject(n,routine.period*.3),behavior.carry,kind);
+  assert.equal(!!heldObject(n,routine.period*.3)||objectWorn(n,routine.period*.3),behavior.carry,kind);
  }
  for(const [kind,category]of Object.entries({table:'table',bed:'bed',temple:'building',tent:'building',crown:'wear',lamp:'lamp',rainbow:'symbol',chariot:'cart',basket:'basket',book:'scroll',trumpet:'instrument'}))assert.equal(objectBehavior(kind).category,category,kind);
  assert.equal(objectBehavior('ark-covenant').carry,false);
@@ -519,4 +519,39 @@ test('많은 인물의 초기 위치와 옛 월드의 물건도 새 범위 안�
 test('명시한 본문만 묘사 기반 배경을 고르고 다른 본문은 기본 지형을 쓴다',async()=>{
  const {defaultBackground}=await import('../js/features/pixel-bible/backgrounds.js');
  for(const [code,chap,expected]of [['gen',2,'garden'],['rut',2,'harvest'],['mat',4,'galilee'],['rev',22,'newcity'],['rom',8,'meadow']])assert.equal(defaultBackground([{code,chap}]),expected);
+});
+
+test('커서가 잡은 지점은 이동·배율 변환 뒤에도 같은 상대 좌표를 유지한다',async()=>{
+ const {grabOffset,grabbedOrigin}=await import('../js/features/pixel-bible/grab.js');
+ const start={x:12.2,y:8.6},origin={x:13,y:11},grab=grabOffset(start,origin);
+ const held={p:{x:40.5,y:21.3},grab},after=grabbedOrigin(held);
+ assert.ok(Math.abs(after.x-held.p.x-(origin.x-start.x))<1e-9);assert.ok(Math.abs(after.y-held.p.y-(origin.y-start.y))<1e-9);
+});
+
+test('전체 오브제는 같은 인물이 여섯 번 방문하면 여섯 결과를 선택한다',async()=>{
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ const {interactionOptions,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
+ for(const kind of Object.keys(OBJECT_CATALOG)){
+  assert.ok(interactionOptions(kind).length>=6,kind);
+  assert.equal(new Set(Array.from({length:6},(_,i)=>interactionRoutine({name:'읽는 사람'},kind,i).id)).size,6,kind);
+ }
+});
+
+test('옷 입기와 화살 발사는 실제 착용·손 소품·발사 상태가 달라진다',async()=>{
+ const {interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const {heldObject,objectWorn}=await import('../js/features/pixel-bible/object-response.js');
+ const n={x:10,y:10,direction:'right',usingObject:{kind:'cloak',x:11,y:10},interaction:{kind:'cloak',category:'cloth',gesture:'wear',variant:0,phase:0,period:4},interactionStart:0};
+ assert.equal(interactionPose(n.interaction,0).wearing,false);assert.equal(objectWorn(n,1.1),true);assert.equal(heldObject(n,1.1),null);assert.equal(objectWorn(n,3.1),false);
+ n.usingObject.kind='arrow';n.interaction={kind:'arrow',category:'weapon',gesture:'shoot',variant:0,phase:0,period:4};
+ assert.equal(heldObject(n,1.1),null);assert.equal(objectWorn(n,1.1),true);assert.equal(heldObject(n,2.1),null);assert.equal(objectWorn(n,2.1),true);
+});
+
+test('성경 전용 동작은 화자 신원과 해당 장의 물건에만 적용한다',async()=>{
+ const {uniqueInteraction}=await import('../js/features/pixel-bible/unique-interactions.js');
+ const {interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const n={name:'요나단',readingChapters:[{code:'1sa',chap:20}]};
+ assert.equal(uniqueInteraction(n,'arrow').gesture,'three-arrows');assert.equal(interactionRoutine(n,'arrow').unique,true);
+ assert.equal(uniqueInteraction({...n,readingChapters:[{code:'1sa',chap:18}]},'arrow'),null);
+ assert.equal(uniqueInteraction({...n,name:'다윗'},'arrow'),null);
+ assert.equal(uniqueInteraction({name:'요셉',readingChapters:[{code:'mat',chap:1}]},'cloak'),null);
 });

@@ -20,6 +20,7 @@ export function interactionApproaches(o){
 export function interactionAnchor(n,tile=24){
  if(!n.usingObject||!n.interaction)return {x:n.x*tile,y:n.y*tile};
  const o=n.usingObject,dx=n.x-o.x,dy=n.y-o.y;
+ if(n.interaction.gesture==='lie-stone')return {x:o.x*tile-38,y:o.y*tile+16};
  if(['bench','boat'].includes(n.interaction.category))return {x:o.x*tile+(dx?Math.sign(dx)*8:0),y:o.y*tile+5};
  if(n.objectAction==='zacchaeus-tree')return {x:o.x*tile+12,y:o.y*tile-12};
  const profile=objectPresentation(o.kind);
@@ -38,10 +39,10 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
  const pose=interactionPose(n.interaction,time-(n.interactionStart||0),reduced),use=pose.phase===1||pose.phase===2;
  const direction=n.x<o.x?-1:1,beat=reduced?0:pose.phase===1?-1:pose.phase===2?1:0;
  const portable=base.portable;
- return {...base,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,pose,actor:n,direction,
+ return {...base,liquidColor:pose.actual==='water-wine'&&use?'#965e83':null,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,pose,actor:n,direction,
   dx:portable&&use?direction*3:0,dy:portable&&use?-3:pose.prop==='boat'?beat:0,
   squash:['bench','bed'].includes(pose.prop)&&use?.035:0,
-  tilt:pose.gesture==='pour'&&use?direction*.32:pose.prop==='animal'?beat*.025:portable?beat*.045:0,
+  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use?direction*.32:pose.prop==='animal'?beat*.025:portable?beat*.045:0,
   open:['read','unroll','spread','mend','fold'].includes(pose.gesture)&&use?.22:0,
   lid:pose.prop==='chest'&&pose.gesture==='open'&&use?1:0,beat,use};
 }
@@ -49,7 +50,7 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
 export function heldObject(n,time,reduced=false,tile=24){
  const o=n.usingObject;if(!o||!n.interaction)return null;
  const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);
- if(!objectBehavior(o.kind).carry||!p.hand)return null;
+ if(!objectBehavior(o.kind).carry||!p.hand||p.wearing||(['arrow','bow'].includes(o.kind)&&['nock','aim','draw','shoot','three-arrows'].includes(p.actual))||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;
  const side=n.direction==='left'||n.direction==='right';
  const beat=p.phase===1?-1:1;
@@ -61,6 +62,7 @@ export function heldObject(n,time,reduced=false,tile=24){
    open:['read','unroll','spread'].includes(p.gesture)?(p.phase===2?.25:.1):0,
    squash:['fold','smooth','wrap'].includes(p.gesture)&&p.phase===2?.3:0,bite:p.gesture==='eat'&&p.phase===2},pose:p};
 }
+export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&['nock','aim','draw','shoot','three-arrows'].includes(p.actual))||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
 export function drawObjectResponse(c,o,frame,tile=24){
  if(!frame?.active)return;
  const held=heldObject(frame.actor,frame.time,frame.reduced,tile);
