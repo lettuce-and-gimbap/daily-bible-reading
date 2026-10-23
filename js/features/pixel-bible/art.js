@@ -1,16 +1,49 @@
+import { drawDirectionalCharacter } from './directions.js';
 import { backgroundFor } from './backgrounds.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
 export const characterStyle = appearanceFor;
-export function drawPixelCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false } = {}) {
+// 네 방향·네 걷기 프레임을 원본 도트로 캐시한다. 실루엣 테두리도 같은 알파에서 만든다.
+const spriteCache=new Map();
+export function drawPixelCharacter(ctx,style,x,y,options={}) {
+ const {scale=3,walk=0,action='',time=0,hanging=false,selected=false}=options;
+ const direction=hanging?'down':(options.direction||'down');
+ const frame=options.walkFrame??(walk>.35?1:walk<-.35?3:0);
+ const step=[0,1,0,-1][frame%4];
+ const key=JSON.stringify([style,direction,frame,action]);let sprite=spriteCache.get(key);
+ if(!sprite){
+  const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
+  const c=canvas.getContext('2d');
+  if(direction==='down')drawFrontCharacter(c,style,32,52,{scale:1,walk:step,action,facing:1});
+  else drawDirectionalCharacter(c,style,32,52,{scale:1,step,action,direction});
+  sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
+ }
+ ctx.save();ctx.imageSmoothingEnabled=false;
+ if(hanging){ctx.translate(x,y-33*scale);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-x,-y+33*scale);}
+ if(selected){
+  if(!sprite.outline){
+   const mask=document.createElement('canvas');mask.width=64;mask.height=64;const m=mask.getContext('2d');
+   const original=sprite.canvas.getContext('2d').getImageData(0,0,64,64), pixels=m.createImageData(64,64);
+   for(let y=1;y<63;y++)for(let x=1;x<63;x++){
+    if(original.data[(y*64+x)*4+3]>=128)continue;
+    let near=false;for(const [dx,dy] of [[-1,0],[1,0],[0,-1],[0,1],[-1,-1],[1,1],[-1,1],[1,-1]])if(original.data[((y+dy)*64+x+dx)*4+3]>=128)near=true;
+    if(near){const i=(y*64+x)*4;pixels.data[i]=255;pixels.data[i+1]=226;pixels.data[i+2]=135;pixels.data[i+3]=255;}
+   }
+   m.putImageData(pixels,0,0);sprite.outline=mask;
+  }
+  const alpha=ctx.globalAlpha;ctx.globalAlpha*=.8+.2*Math.sin(time*4);ctx.drawImage(sprite.outline,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.globalAlpha=alpha;
+ }
+ ctx.drawImage(sprite.canvas,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.restore();
+}
+function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
   ctx.save();ctx.translate(Math.round(x-12*scale),Math.round(y-36*scale));ctx.scale(scale,scale);
   if(hanging){ctx.translate(12,1);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-12,-1);}
   const r=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h);};
   const outline="#302f35", skin="#f2d5af", blush="#eb9da2", hair=style.hood?style.coat:style.hair;
   const resting = action === "bench";
-  const step=Math.round(walk*1.5), look=facing<0?-1:0;
+  const step=Math.sign(walk), look=facing<0?-1:0;
   r(5,37,14,1,"#183a3933");
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
   const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,"#a77d57");};
@@ -152,11 +185,11 @@ export function drawDesignBoard(c) {
     c.fillStyle="#294842";c.textAlign="center";c.font="16px sans-serif";c.fillText(label,x+132,632);
   });
   c.textAlign="left";c.font="bold 20px sans-serif";c.fillText("걷기 원화와 지형 조합",36,700);
-  for(let i=0;i<3;i++){
-    const x=40+i*124;c.fillStyle="#e3ddcc";c.fillRect(x,728,110,160);
-    drawPixelCharacter(c,CHARACTER_STYLES.ruth,x+55,856,{scale:3,walk:[-1,0,1][i]});
+  for(let i=0;i<4;i++){
+    const x=30+i*104;c.fillStyle="#e3ddcc";c.fillRect(x,728,98,160);
+    drawPixelCharacter(c,CHARACTER_STYLES.ruth,x+49,856,{scale:3,direction:["down","left","right","up"][i],walkFrame:1});
   }
-  c.font="14px sans-serif";c.fillStyle="#294842";c.fillText("왼발 → 대기 → 오른발",54,916);
+  c.font="14px sans-serif";c.fillStyle="#294842";c.fillText("정면 · 왼쪽 · 오른쪽 · 후면",54,916);
   const bg=document.createElement("canvas");bg.width=960;bg.height=480;drawWorldBackground(bg.getContext("2d"));
   c.drawImage(bg,450,728,720,240);
   c.font="14px sans-serif";c.fillText("풀밭 · 흙길 · 물가 · 돌집 (상상 공간)",450,995);

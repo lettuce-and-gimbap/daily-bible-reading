@@ -102,3 +102,13 @@ test('배경 6종에 공통 이동 영역과 유효한 팔레트가 있다',asyn
  assert.equal(Object.keys(BACKGROUNDS).length,6);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
  for(const p of Object.values(BACKGROUNDS)){assert.ok(p.name);assert.equal(p.tile.length,2);for(const k of ['ground','water','path','hill'])assert.match(p[k],/^#[0-9a-f]{6}$/);}
 });
+
+test('픽셀월드 목적격 조사는 받침과 괄호 설명을 구분한다',async()=>{
+ const {objectPhrase}=await import('../js/features/pixel-bible/language.js');
+ for(const [name,expected] of [['천사','천사를'],['엘리야','엘리야를'],['룻','룻을'],['엘리사','엘리사를'],['보아스','보아스를'],['물항아리','물항아리를'],['보리밭','보리밭을'],['아하시야(아합의 아들)','아하시야(아합의 아들)를']])assert.equal(objectPhrase(name),expected);
+});
+
+test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
+ const {movementDirection:d}=await import('../js/features/pixel-bible/language.js');
+ assert.equal(d(0,-1),'up');assert.equal(d(0,1),'down');assert.equal(d(-1,0),'left');assert.equal(d(1,0),'right');assert.equal(d(0,0,'up'),'up');
+});
