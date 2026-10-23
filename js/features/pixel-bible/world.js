@@ -1,6 +1,6 @@
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
-import { WORLD_OBJECTS, OBJECT_SCENES, OBJECT_LINES, removeObjects } from './object-scenes.js';
+import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects } from './object-scenes.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
@@ -13,22 +13,15 @@ import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, characterStyle, drawWorldObject, drawWorldBackground, drawDesignBoard } from "./art.js";
+import { RUTH_SCENES, ELIJAH_SCENES, ALL_SCENES as REVIEWED_SCENES, scenesForChapters } from './scenes.js';
+export { RUTH_SCENES, ELIJAH_SCENES } from './scenes.js';
 // 공개 픽셀 월드: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
 // 이 모듈과 본문 JSON은 입장 시에만 로드된다. 본문 장 이동에는 연결하지 않는다.
 const books = new Map();
 const TILE = 24, WIDTH = 960, HEIGHT = 480;
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const OBJECTS = {...WORLD_OBJECTS,...Object.fromEntries(Object.values(OBJECT_CATALOG).map(o=>[o.id,o.name]))};
-export const RUTH_SCENES = [
-  { id: "glean", title: "룻의 이삭 줍기", actors: ["룻"], object: "field", ref: "룻기 2:2–3", lines: ["룻이 밭으로 나가 추수하는 사람들 뒤에서 이삭을 줍습니다.", "그곳은 보아스에게 속한 밭이었습니다."] },
-  { id: "greet", title: "보아스와 일꾼들의 인사", actors: ["보아스", "일꾼"], object: "field", ref: "룻기 2:4", lines: ["보아스가 추수하는 일꾼들에게 여호와께서 함께하시기를 빕니다.", "일꾼들도 여호와께서 보아스에게 복 주시기를 빕니다."] },
-  { id: "water", title: "룻을 돌보는 보아스", actors: ["룻", "보아스"], object: "water", ref: "룻기 2:8–9", lines: ["보아스는 룻에게 다른 밭으로 가지 말고 이곳에 머물라고 말합니다.", "목이 마르면 일꾼들이 길어 온 물을 마셔도 된다고 배려합니다."] },
-];
-
-export const ELIJAH_SCENES = [
-  {id:'rest-elijah',title:'로뎀나무 아래의 쉼',actors:['엘리야','천사'],object:'tree',ref:'열왕기상 19:4–8',lines:['지친 엘리야가 로뎀나무 아래에 눕습니다. 천사가 그를 깨워 먹으라고 말합니다.','천사는 다시 엘리야를 깨웁니다. 엘리야는 먹고 마신 뒤 먼 길을 갈 힘을 얻습니다.']},
-];
-const ALL_SCENES=[...RUTH_SCENES,...ELIJAH_SCENES,...OBJECT_SCENES];
+const ALL_SCENES=[...REVIEWED_SCENES,...OBJECT_SCENES];
 export function worldViewport(width,height) {
   const scale=Math.max(width/WIDTH,height/HEIGHT);
   return {scale,x:(width-WIDTH*scale)/2,y:(height-HEIGHT*scale)/2};
@@ -69,7 +62,7 @@ export function buildWorldModel(chapters) {
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
-  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...(ruth ? RUTH_SCENES : []), ...(chapters.some(c=>c.code==="1ki" && c.chap===19 && c.data)?ELIJAH_SCENES:[])], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...scenesForChapters(chapters)], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 전체 명단을 보존하고 선택 인물과 관계가 있는 인물을 같은 화면에 우선 배치한다.
@@ -230,7 +223,7 @@ export async function mountPixelWorld(shell, options) {
       const missing=scene.actors.filter(name=>!npcs.some(n=>n.name===name));
       const object=objects.find(o=>o.kind===scene.object);
       const ready=!missing.length&&!!object;
-      return `<article class="pb-recipe"><b>${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)}</small><p>${ready?'✓ 조합 가능':missing.length?`필요 인물: ${esc(missing.join(', '))}`:`${objectPhrase(OBJECTS[scene.object])} 먼저 놓아 주세요.`}</p><button class="pb-button" data-recipe="${i}" ${ready?'':'disabled'}>이 조합으로 모으기</button></article>`;
+      return `<article class="pb-recipe"><b>${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)}</small><p class="pb-help">${esc(scene.objectNote || "")}</p><p>${ready?'✓ 조합 가능':missing.length?`필요 인물: ${esc(missing.join(', '))}`:`${objectPhrase(OBJECTS[scene.object])} 먼저 놓아 주세요.`}</p><button class="pb-button" data-recipe="${i}" ${ready?'':'disabled'}>이 조합으로 모으기</button></article>`;
     }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브제 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>`<button class="pb-button" data-common-recipe="${kind}" ${npcs[selected]&&objects.some(o=>o.kind===kind)?'':'disabled'}>${OBJECTS[kind]} · ${label}</button>`).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.includes(scene)).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
   }
   function requestPersonal(n){
@@ -271,15 +264,15 @@ export async function mountPixelWorld(shell, options) {
   function showLine() {
     const ev = activeEvent;
     ev.elapsed = 0;
-    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문을 풀어 쓴 해설</small><div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="skip">건너뛰기</button></div>`;
+    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="skip">건너뛰기</button></div>`;
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
     activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
-    sceneActors(scene).forEach((n) => { n.action=scene.object;n.usingObject=activeEvent.object;n.objectAction=scene.id;n.interaction=interactionRoutine(n,scene.object);n.interactionStart=time; });
+    sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?activeEvent.object:null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
     clearInfo();overlay.hidden = false; showLine();
   }
-  function endEvent() { activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
+  function endEvent() { if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function sceneActors(scene) { return scene.actors.map((name) => npcs.find((n) => n.name === name)); }
   function queueScene(scene, o) {
     const actors = sceneActors(scene);
@@ -530,7 +523,7 @@ export async function mountPixelWorld(shell, options) {
         if(n.objectEvidence&&!n.objectScene){objectSpeech={id:`object-ref:${target.kind}:${n.name}`,speaker:n,text:n.objectEvidence.text,ref:n.objectEvidence.ref,kind:'context',object:target};}
         n.objectEvidence=null;
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
-          objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:(OBJECT_LINES[scene.id]||scene.lines)[Math.floor(Math.random()*(OBJECT_LINES[scene.id]||scene.lines).length)],ref:scene.ref,kind:'context',object:target};
+          objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,kind:'context',object:target};
         }
         if((OBJECT_CATALOG[target.kind]?.action||target.kind)==="bench") { n.x=target.x;n.y=target.y;n.direction="right"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
@@ -583,7 +576,7 @@ export async function mountPixelWorld(shell, options) {
       if(!activeEvent) update(dt);
       else {
         cinematicTime+=dt;activeEvent.elapsed+=dt;
-        if(activeEvent.elapsed>4.5 && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>12)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        if(activeEvent.elapsed>Math.max(4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
     updateSpeech(performance.now());draw();

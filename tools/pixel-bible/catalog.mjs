@@ -18,5 +18,5 @@ const counts={};for(const p of entries)for(const identity of p.identities)counts
 const stats={books:files.length,chapters,sourceLabels:entries.length,dedicatedProfiles:Object.keys(APPEARANCES).length,labelsWithProfile:entries.filter(e=>e.appearance!=='generic').length,identityRecordsByKind:counts};
 const catalog={schema:2,scope:'Summary labels, not a full biblical census. Identity classification is conservative, rule-based and incomplete. Unresolved records are not confirmed people. Profile links are symbolic defaults; runtime uses chapter/role context.',stats,entries};
 const output=path.join(root,'data/pixel-bible/people-catalog.json');
-if(process.argv.includes('--check')){if(fs.readFileSync(output,'utf8')!==JSON.stringify(catalog,null,2)+'\n')throw Error('Catalog is stale; run node tools/pixel-bible/catalog.mjs');}else fs.writeFileSync(output,JSON.stringify(catalog,null,2)+'\n');
+if(process.argv.includes('--check')){if(fs.readFileSync(output,'utf8').replace(/\r\n/g,'\n')!==JSON.stringify(catalog,null,2)+'\n')throw Error('Catalog is stale; run node tools/pixel-bible/catalog.mjs');}else fs.writeFileSync(output,JSON.stringify(catalog,null,2)+'\n');
 console.log(JSON.stringify(stats));

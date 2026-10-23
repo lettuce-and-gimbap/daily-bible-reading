@@ -23,7 +23,8 @@ export function personalLines(n,chapters,context){
  const sources=new Set(chapters.map(c=>`${c.code}.${c.chap}`));
  const authored=majorFor(n,context)||(style.key!=='generic'&&(!scopes[style.name]||sources.has(scopes[style.name]))?SOLO_DIALOGUE[style.name]:null);
  const role=occurrences.map(p=>p.role).join(' ');
- const voice=(voices.find(([pattern])=>pattern.test(role))||[null,neutral])[1];
+ // 행위의 대상(치유받은 사람/제자 등)을 언급한 역할 문구를 예수님의 상태로 오인하지 않는다.
+ const voice=style.key==='jesus' ? ['수고하고 짐 진 이들을 내게로 부르자.','내게 와서 나의 멍에를 메고 배우도록 이끌자.','온유하고 겸손한 마음으로 쉼을 주자.'] : (voices.find(([pattern])=>pattern.test(role))||[null,neutral])[1];
  const lines=[];
  const add=(text,ref,origin)=>{if(text&&!lines.some(l=>l.text===text))lines.push({text,ref,origin});};
  if(authored)authored.lines.forEach(text=>add(text,authored.ref,'authored'));
@@ -32,6 +33,6 @@ export function personalLines(n,chapters,context){
  const relation=context.relations.find(r=>occurrenceMatches(n,r.from)||occurrenceMatches(n,r.to));
  if(relation){const other=occurrenceMatches(n,relation.from)?relation.to:relation.from;
   add(`${other.name}… 서로 얽힌 일을 다시 생각하게 되는구나.`,relation.ref,'relationship-variation');}
- for(const text of voice)add(text,ref,'context-variation');
+ for(const text of voice)add(text,style.key==='jesus'?'마태복음 11:28–30':ref,'context-variation');
  return lines.slice(0,5).map((line,i)=>({...line,id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:line.origin==='authored'?'solo':'context'}));
 }

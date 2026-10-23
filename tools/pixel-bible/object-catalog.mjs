@@ -5,7 +5,7 @@ import {createRequire} from 'node:module';
 import {OBJECT_CATALOG,chapterObjects} from '../../js/features/pixel-bible/object-catalog.js';
 const {BOOKS}=createRequire(import.meta.url)('../../js/core/bible.js');
 const root=new URL('../../data/pixel-bible/objects/',import.meta.url);let count=0,events=0,withObjects=0;const kinds=new Set();
-const write=(name,data)=>{const text=JSON.stringify(data,null,2)+'\n';if(process.argv.includes('--check')){if(fs.readFileSync(new URL(name,root),'utf8')!==text)throw Error('Stale '+name);}else fs.writeFileSync(new URL(name,root),text);};
+const write=(name,data)=>{const text=JSON.stringify(data,null,2)+'\n';if(process.argv.includes('--check')){if(fs.readFileSync(new URL(name,root),'utf8').replace(/\r\n/g,'\n')!==text)throw Error('Stale '+name);}else fs.writeFileSync(new URL(name,root),text);};
 for(const book of BOOKS){
  const raw=JSON.parse(fs.readFileSync(new URL(`../../data/summary/${book.code}.json`,import.meta.url))),chapters={};
  for(const [chap,data] of Object.entries(raw.chapters)){

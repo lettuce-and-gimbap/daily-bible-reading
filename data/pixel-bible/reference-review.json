@@ -1,0 +1,5473 @@
+{
+  "date": "2026-10-23",
+  "scope": "Reference availability and hashes only, not a machine judgment of theological correctness. Semantic corrections and remaining limits are documented in docs/pixel-bible-content-review.md. No source text is embedded.",
+  "counts": {
+    "solo": 100,
+    "major": 100,
+    "pair": 53,
+    "object": 14,
+    "scene": 6
+  },
+  "entries": [
+    {
+      "group": "solo",
+      "id": "예수님",
+      "ref": "마태복음 11:28–30",
+      "bible": [
+        {
+          "file": "개역개정_mat_마태복음.md",
+          "sha256": "9558b9b34d14f1c8f9ccdd81834b3a993ce93357431c68d33cc581397db77301"
+        },
+        {
+          "file": "쉬운성경_mat_마태복음.md",
+          "sha256": "56bc7d7965f1dc6cb8560b521f342b08a7a25e25ab70abb36536a0392129e351"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_40_마태복음.md",
+        "chapter": 11,
+        "sha256": "d4df64ae80590b8f53e833c89e55d85c3e609ce6a12cdac92a92e31836b095b7"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "모세",
+      "ref": "출애굽기 4:10–12",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "85a1cd03431df2e47da5f04d85911e7bb0cd19b2aa1e6852c92495800f26b065"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "188fb56fcbdd1b878fc42f983dac2903c34ca401c1dc3ebe40d5601bd1e87a35"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 4,
+        "sha256": "9b0c7d2325122b61c32aaa93ca477127c38bc3d572f5cf148eb40199dce04b9a"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "엘리야",
+      "ref": "열왕기상 19:4–18",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "0cd925c4788750fb9634638a919a5712556ca9c4bd3af896927cb3755285e9f2"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "340761a113cff0fbfc04356e9cfb6d18ecd1bfafc525adb3fe289be87f7e174f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "엘리사",
+      "ref": "열왕기하 2:9–14",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "00904374fa016be2f5708bdee3319e7bfaa81531715b22a5e0ad97bb18f367fa"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "44009a45bd44cc93ca810b6a6e56b6071ff84dc320fc005b6f56a2dafb47b8aa"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 2,
+        "sha256": "1e93679e1ed29ba5303e9f5801035171dd486df5d27bc158e8f3efec652b55e2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "이세벨",
+      "ref": "열왕기상 21:5–10",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "cbd366098dd9b718aef509e71bc27cc8ab4ac6c2e7735859ee4a0ba151760801"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "4813632b09c2c9554f2fc8278ffb231cc2cdc9110e066f7ec2a9a4d0e9173322"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아합",
+      "ref": "열왕기상 21:1–4",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "e9e63074f1a52327229c539f9264874d74923221bfca529010d98e2bcb4eb73a"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b45be5dbe77ee8535ed8cf0713606e5c0536f458c5563a8ca1a6c3daa916b76a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "여호사밧",
+      "ref": "열왕기상 22:5–7",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "3cc92b53a766de50f5d672e3b1f54ecb94233b45555db9595a196b6bdaabec28"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "e8463b38aeaf6e2fdbcc0246d783440d49848f62efd52dc356dedaad58ea87ea"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "벤하닷",
+      "ref": "열왕기상 20:1–6",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "a7941a8aa98489128bd56077e526956a630def18e963079b357e75f11efcafbc"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "44f0db392feacf1c315e39e39a9dec57764a3cd778971c2210436e0d6ee158bb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 20,
+        "sha256": "c7cc61176c16e5532b6d1a32ff1386a4969580aab4e19d8ca05a6d5265dc31f3"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "나봇",
+      "ref": "열왕기상 21:1–3",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "ebcd8ec1cab3a052b702fabd108670591259ca70c4e46f3dae76cbec99b49b7a"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "27c3fc37253fe49795ccd10b93cc7a1081908bd51202ee10fd2fc402f0745ebd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "미가야",
+      "ref": "열왕기상 22:13–14",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "044c74db14d926c8193b308c0b8fb65ed02a7cd0c395382cf8c3882689b8e560"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "422295b22c57794fdf684009557a3631fcba09076eb369b549c81b5e844510a8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아하시야",
+      "ref": "열왕기하 1:2",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "f7332f9163f9a76857aee88ef06891f018deed59d51d59da4e284e25a95e0ffc"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "a660a05569202f8a4f84246fbd25dfd13f9d1cb37a674656f0b9d2cf66edf271"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 1,
+        "sha256": "24f77336a86db7c8f50014d004a4b89253299db25d923ba6bf0932f66167326e"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "천사",
+      "ref": "열왕기상 19:5–8",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "622681b8292f86df228a61a3203a482d7cf31e550b5d447f06d740afbc707bc9"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b6968f8c6539ad0b1605319b30bf662ea62b112d1d30bbcfe92115ec04233dab"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "룻",
+      "ref": "룻기 2:2–3",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "259fdd7ab029c137c8077d0be6394c33c798293f029e61fa650cf33eee5ee2f5"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "373380527d279aa88e10ea2fabd3a0ed6e745bbe5fc81a970426c5b3c68af87b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "보아스",
+      "ref": "룻기 2:8–16",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "ffa4573bba9748e5aa38f207e0612dfc0965ba5ef1f11b7efaba3047bf4322fe"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "4d5c6d7777d5349f4509408564486752a93b4797bf393c8f524018f299f64210"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "나오미",
+      "ref": "룻기 2:19–20",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "2e0e9c5e68bd9e466456ad2e0b82bf700c418c907502dd20af21f6740e8bf56d"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "80aa8b8c960271997472fe183e731714bf73f2fda88f7f64464680ad23382b55"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "세례 요한",
+      "ref": "요한복음 3:28–30",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "235cbd951f43521c1256b668f9b44ef5c06427e93e3092628b457252d6704749"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "dbc23b9a9583245250dd11717c9ac67f2167784dd91b87c0eae344c7f9dbd73d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 3,
+        "sha256": "046a0ba8cc1508e6a0158ba1886e0cefcf6460a52ab2f072ff22b29d29483f71"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "요셉",
+      "ref": "창세기 39:7–9",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "3e2ada177bc6c18bee9a35fe792632ac7b209da48f78b1e04cd041626056009b"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "167a25af6ca1d862419728e6300e5ef2606a0201a137927de1bd3247a250d99d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 39,
+        "sha256": "0500390875ec62650f69df150cfb7d236b0b00dc29bc09db0b6ced45e5a2d358"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "다윗",
+      "ref": "사무엘상 16:23",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "b752cb8f55e5951c58dd467f7cb7c846fc095ac4f432d25ce2ada1e0b9743e68"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "af83263ee7eb19f6c2a2339f21e09c5ad142e90ce91da98a7c0b1344d6c956aa"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 16,
+        "sha256": "fc7e974c749c720fd3319cb6a453c0225cd24232ebf65e7c9a17a6e3342f91fa"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "베드로",
+      "ref": "누가복음 5:4–11",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "adf5bc398440d685eeb92bb9836631d58deaf1527796e9af4e78b853d602e2ed"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "b6a27c0d9953837f69f1d0fe57ed47a45781fc9ac14b98b7df5ce6baa51559f2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 5,
+        "sha256": "caa44fc5cc816541ddd2c573b0f1a0320f72bdd4fca05787ba693910f33e36aa"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "일꾼",
+      "ref": "룻기 2:4–9",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "c526aa64af3a60626ff005e2ae3c2f04d75acabcecb51423d82b88329ab5ba1a"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "c7fea290e84c43d02add764c27ea297ca1c67266b39c65803aaf75a8287fea83"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아론",
+      "ref": "출애굽기 28:1–4",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "304342f41c5582153c8709919a46ab833345e753e0d41f18b90cdae8f8da7327"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "5eae0f1689abeed21c1ca490ffd0e79abe33f4f6b69231916051e2f5ed14230d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 28,
+        "sha256": "e056ddd164315b6c40b81d569c225850bb9a875e4247328aab2e65eb88ecb044"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "미리암",
+      "ref": "출애굽기 15:20–21",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "b987dec513f5eff2f7bafa23b9b194c9d1ba4c0943d8b77dfcd14ef485de35b1"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "ed30e5dac972a2d9e862d1efdacd9df0e8253ef5e351f2e86cf0b547f78799ab"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 15,
+        "sha256": "1229b6bc2c0705b3f0ab2d39fe477dfe1c5047f3de82d5afa519d7991761ef14"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "여호수아",
+      "ref": "여호수아 1:1–9",
+      "bible": [
+        {
+          "file": "개역개정_jos_여호수아.md",
+          "sha256": "4001e4ffd79a02ec3f7062c16fa73825984e40d9cbc95a99458bf211fea77ba6"
+        },
+        {
+          "file": "쉬운성경_jos_여호수아.md",
+          "sha256": "cc2942695b3da2a8b96ca467f655397728f6bee3cf5d4b02e649a5379e05c217"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_06_여호수아.md",
+        "chapter": 1,
+        "sha256": "a8e8db8ebe120dea20a81dc428165c3a2acba757af484e143da26ee100accf0b"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "사무엘",
+      "ref": "사무엘상 3:1–10",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "d8118cc178548726467a889114bf3368cb1fc16347a6ccaf20b2529850a4fe39"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "55821717d9518ebf5e1f797045d1407ff7433c0473d5c1ef7af088b05a38dc4b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 3,
+        "sha256": "8048cd36d746e404e9c336df25fcf48c5e9749aadf1351059fba287a10a32dc2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "솔로몬",
+      "ref": "열왕기상 3:7–9",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "1e80a4f5a9edca30552d1cbe4e71aeeab02b0d6467aa6d53ce7d3492c1aff570"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "365e6c69e0e6658b0450d988c8b4d8e2b98fdb000b7216431ab8989ee20d9b5d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 3,
+        "sha256": "661affbe3e24a6bcd7cbfb70918ae960b975325c2bd5d7cda60f9d706dfe0014"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "에스더",
+      "ref": "에스더 4:13–16",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "cb74addeafe77adaf666f5659c7ced720177c80e99683d7cd5bdf2ec95375e8d"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "fce41196728418963b00563e95d944d5997ba668088df11eab457815fb772416"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 4,
+        "sha256": "4d771d5d7b087cfc7cc14aa0160f98b930c7bffe54e4a6ee1827e0f1dd58b4d2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "모르드개",
+      "ref": "에스더 4:13–14",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "27e3d1b9a46f720f7a43ff2c689e03342cbf72f783f0d873f6267743bdd5c4b6"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "7234556b911e708efb92478625f1ffccd45a77ac502e51cf632296b69d6ccecd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 4,
+        "sha256": "4d771d5d7b087cfc7cc14aa0160f98b930c7bffe54e4a6ee1827e0f1dd58b4d2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "다니엘",
+      "ref": "다니엘 6:10",
+      "bible": [
+        {
+          "file": "개역개정_dan_다니엘.md",
+          "sha256": "db7b51841722dcf68f8bcd8348de0c5f03b60dcc3890d7abe3758de9f03515bb"
+        },
+        {
+          "file": "쉬운성경_dan_다니엘.md",
+          "sha256": "f599f8fb0b520668bbe02a67914d02d034bc47134f15888a395ce1db20df99ff"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_27_다니엘.md",
+        "chapter": 6,
+        "sha256": "8fb71125bbe08da77bfb9f45639317ae0ea8c82f30e1fa2807bfa70f17aa39c4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "에스겔",
+      "ref": "에스겔 3:1–4",
+      "bible": [
+        {
+          "file": "개역개정_ezk_에스겔.md",
+          "sha256": "6a5acc5272b20f9c4f1c12570f73af313c34c18edd86c619c1d8e08eef4dec30"
+        },
+        {
+          "file": "쉬운성경_ezk_에스겔.md",
+          "sha256": "6797a7c422529fad85b6c15b131be131c714f56783d783ebc4727f2b53cda9ce"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_26_에스겔.md",
+        "chapter": 3,
+        "sha256": "4191e41cda96db0933217006b30eb7d611afa40b894bd8727ef1830731945ff2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "예레미야",
+      "ref": "예레미야 20:7–9",
+      "bible": [
+        {
+          "file": "개역개정_jer_예레미야.md",
+          "sha256": "d95fbb03d0a6d0585709ce6fadd74fbd17f777ad0298b2e399456df89f453ba9"
+        },
+        {
+          "file": "쉬운성경_jer_예레미야.md",
+          "sha256": "4328356f70b71f1a2a73422461f449c423b5f33dc0c876685f452aacdd46feec"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_24_예레미야.md",
+        "chapter": 20,
+        "sha256": "760d03b4bac25d34b66b5df3f6285df5c3aa22558bf109e4ba89e92f6cc650ff"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "이사야",
+      "ref": "이사야 6:5–8",
+      "bible": [
+        {
+          "file": "개역개정_isa_이사야.md",
+          "sha256": "f83385ca197e6246df158e76eb680a35f8f22bd27af546f13e87d431ed47c676"
+        },
+        {
+          "file": "쉬운성경_isa_이사야.md",
+          "sha256": "ea1e18aa8e8dbdc410c6ab43275e8123745140e1607d350adf7f91f0bae7c8e2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_23_이사야.md",
+        "chapter": 6,
+        "sha256": "fee684e7a5dc0e667407553473dd939c4f56e4ff5c2896c4e342115d28cbf745"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "에스라",
+      "ref": "느헤미야 8:1–8",
+      "bible": [
+        {
+          "file": "개역개정_neh_느헤미야.md",
+          "sha256": "957b67a3eea8c346156ddfdc8ef13a3b8d6a178d4721aba55dff190c4dbb6e7f"
+        },
+        {
+          "file": "쉬운성경_neh_느헤미야.md",
+          "sha256": "1ccc0b8672367c08ef7c64442078890496eab73505f79156a4475b15844c24d2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_16_느헤미야.md",
+        "chapter": 8,
+        "sha256": "6aa7f2369a8c8e8960986365303367921591b4f6d9131bac7b1a19ae1250a5c2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "느헤미야",
+      "ref": "느헤미야 2:11–18",
+      "bible": [
+        {
+          "file": "개역개정_neh_느헤미야.md",
+          "sha256": "b2d7b5eb78707a4302398d305deee90554cda4a981d1b199c56a6c4d5a4df05b"
+        },
+        {
+          "file": "쉬운성경_neh_느헤미야.md",
+          "sha256": "2f942708f7d15a75ae8ca1757071c5de139061740b39dd555319fd308934706b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_16_느헤미야.md",
+        "chapter": 2,
+        "sha256": "6cfe81297f35e64e027a106ed76395b0021fbbf704e42e5c15befb7d3684ddb4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "바울",
+      "ref": "빌립보서 1:12–14",
+      "bible": [
+        {
+          "file": "개역개정_php_빌립보서.md",
+          "sha256": "9c566098620b85c6cde35aef8e95f2c9b9537496bcb068b12f09d51c2d5c6483"
+        },
+        {
+          "file": "쉬운성경_php_빌립보서.md",
+          "sha256": "11a74375b639f2647ce3e0e1c558686f110dc370d56f0bbd18ec0b05470c7f26"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_50_빌립보서.md",
+        "chapter": 1,
+        "sha256": "50fe3c84fee8df3973cc442d878e22a110c39319cb557016e565f43464930a2d"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "바나바",
+      "ref": "사도행전 11:22–26",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "5ba1832850391aedefa3c33eacdf65ed2e45442bb58e0ea670c850c5313a2850"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "1a22f402721e69fa64866186db78664d411c4c8a204497cdfbb8837ae5b41849"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 11,
+        "sha256": "a06c92192364fcbef024d726bf8e4ade8bcafc920af6cd34c31627351be317f0"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "디모데",
+      "ref": "디모데전서 4:12–16",
+      "bible": [
+        {
+          "file": "개역개정_1ti_디모데전서.md",
+          "sha256": "f66566bee05208abf38ab76462e85db797279828d8b353222e650dadc65ad23d"
+        },
+        {
+          "file": "쉬운성경_1ti_디모데전서.md",
+          "sha256": "f097054b8ef260feb406b536d92e4efb97b19db044e6cbe6b84e7b16235993ba"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_54_디모데전서.md",
+        "chapter": 4,
+        "sha256": "8c690aaac9cfe5388ad949bbf8e33d43901bee9a26578d6f2b1bd79876bc332f"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "루디아",
+      "ref": "사도행전 16:14–15",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "9a09fa790bce6701a521019a9485f51e8534d3f17d098f0cdbd270137169871a"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "4bd9f4db7d9dc434cdf3551eb0c1dfdabcaa34786f630669cb2ce4a3f5104ba5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 16,
+        "sha256": "5abf4d06616543422d6fb2ed25825ed89ad5dbd973d1a43822ffc1db070306cf"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "다비다",
+      "ref": "사도행전 9:36–39",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "1e1ed763ae640ef96afdc9853a3b52c37c8de066d2de07aab30b6893d3f03ba8"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "b18b400f9bbdeea399b1b677b74afb28b01128d81029aacfd53e3eb555fcebfb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 9,
+        "sha256": "65a793218ad6ae72a81db1832a90f7bd29610bb5f26330f9ba151076e088a03c"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "노아",
+      "ref": "창세기 6:13–22",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "31ca1cfb2af7a0a982c8539cde3787ff10ca452eaad754daf41b250a37ece9cd"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "d76cadcbd87b1a774fe568d2b725dbc7b030302969d74cb41053236919da4ef4"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 6,
+        "sha256": "f36423d5201b566d098e6664bf1b03a56336cc123719df7d4fa1a105c331e6cc"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아브라함",
+      "ref": "창세기 12:1–4",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "aba056328efe95d41825a2a37053573df0c16a6063b48fbf67a888879fdd16ad"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "6a522b7d9c290eb1208a6632d8ffe29c50d39a3aaef846684d51ba7369a2c108"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 12,
+        "sha256": "0908cf552d70e893842c12aa22064c6fa3f7420e6669864ac81545726b6cb9aa"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "사라",
+      "ref": "창세기 18:9–15",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "f234b3846b2706d2a9e2f6f7ea0cfeee2faf4130f4649b89bd4b7f8d4247b199"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "2fa26936370be26c494ee020bf5fc9a0914b1093a4eb3913605787e9099b9d5b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 18,
+        "sha256": "f8d0a22b8d5d1f2f135ba203a121028fabb21fcc7874aac9147a6ec3dd5d35c3"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "이삭",
+      "ref": "창세기 26:18–22",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "3c7bda3413b874748239032f36e879fba1af8bc90c3b9421c3c03bc0da88e879"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "0ecc4be6ddf95b176eefe7157d82c71a3888a991193504803a48adceb7b04776"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 26,
+        "sha256": "ea2747aaea74cde98d4c077ac893a3fde3d80210fe82d403f7a32ffdce2489d2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "리브가",
+      "ref": "창세기 24:15–20",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "ff7aec9f5221edf938e7a7c05caa96f120bc4670a3b1891600808ba44f338def"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "71f8ab5a352d49fe128506030d93e7145093572338f7cc7747fdc39306634966"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 24,
+        "sha256": "26581d2ba3b496ccbeb507f2c7278e3da15bda68bbcd50dcfb22bc0bc6e32507"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "야곱",
+      "ref": "창세기 32:9–12",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "5b877f73416cf60400070ba69440d8722bf542e25bcba18beb7d0af455f241d8"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "36248222a3059aa64a440394c3683c722d373ae82b8f756b011b93f4c69746f2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 32,
+        "sha256": "a1fbdfa25e5c12c20ed272323a9b6efceec8891fcc471a465664e6c81d9964fd"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "에서",
+      "ref": "창세기 25:29–34",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "70ceb26b2187539c2f327c02a4eeef8801d851fcd1900ce39e5204df26efca87"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "1120011ac4ae5d4e199f185b39f1361fe6d82febb84fde076c155729ae01418f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 25,
+        "sha256": "459e218f1eb17267ba205588128d0b984fc2ee4b3fce5678aa882b45ca618ad9"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "삼손",
+      "ref": "사사기 16:15–17",
+      "bible": [
+        {
+          "file": "개역개정_jdg_사사기.md",
+          "sha256": "1fa4515a48e50a7772845985ddba40635e886460fed355cfea3cc56ca6050fbc"
+        },
+        {
+          "file": "쉬운성경_jdg_사사기.md",
+          "sha256": "370c87141fcf683d14527539a4b465c3ed7a3dfb76426a4775f6b84113e7c7c6"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_07_사사기.md",
+        "chapter": 16,
+        "sha256": "1ec761e7dd3988ff07ca69102bb11e428ec1ec2e79a180b9f4dfdff7013f2102"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "한나",
+      "ref": "사무엘상 1:9–18",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "d9fc2a1ef0a5effc4fd39c8b802742469eb7957a3cf9a5d1878f6c03be33f4e7"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "70ab16ca2296dc2f9e33d98412c69860c1c5acfe363ba6a39fc381c02d093d3b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 1,
+        "sha256": "acb33f5e84039cdaa5194822772668847fcd8d24619b33dd97cd5a7894123a1a"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "드보라",
+      "ref": "사사기 4:4–9",
+      "bible": [
+        {
+          "file": "개역개정_jdg_사사기.md",
+          "sha256": "e503ab0b173959b085daa8f450cc78e7b3bea93d00c0fd9e33a6f9255d51fa3f"
+        },
+        {
+          "file": "쉬운성경_jdg_사사기.md",
+          "sha256": "fe65c11d21c463abe8385f634d975eaf3932c73bb9bc31024719b77d64067e23"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_07_사사기.md",
+        "chapter": 4,
+        "sha256": "66ca2c3da6c493d25fe64fa09becc35e9b25ad6a16f26b679ebe8f6fae6b2e32"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "기드온",
+      "ref": "사사기 6:11–16",
+      "bible": [
+        {
+          "file": "개역개정_jdg_사사기.md",
+          "sha256": "1a1b17027fc926ee247ae71e191b7e9d816c0d345b85076e20b37577cbc9a9ce"
+        },
+        {
+          "file": "쉬운성경_jdg_사사기.md",
+          "sha256": "3f36dcf6485ae3c84e05d72a641fb2948fc5d0353891bf0d6fb6d0e35ebbc2cf"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_07_사사기.md",
+        "chapter": 6,
+        "sha256": "82be45f1ed12d6767728c4d034c7996b86910bc6487d25d703e12f2fd43a459b"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "욥",
+      "ref": "욥기 2:11–13",
+      "bible": [
+        {
+          "file": "개역개정_job_욥기.md",
+          "sha256": "fb146dac4b71ef513a216d47c99dfcbc3276cb00ba8de371c240b1fbfaa1eb67"
+        },
+        {
+          "file": "쉬운성경_job_욥기.md",
+          "sha256": "309e77d8012a0344e0d0ae0e451f593e2334657a2629ff4fa677ba8cd1bc8f88"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_18_욥기.md",
+        "chapter": 2,
+        "sha256": "5b783cfc8f309e7186bc1ebf4578a4837a64555528a39bf002da584e578590aa"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "사울",
+      "ref": "사무엘상 15:20–30",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "bc0c9181d027c3822f21936a9e42490eb64f9aa6aed546890854b81c9f50ea84"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "597ceb28d386c0ffde908677e32d20668303d68dac3b3ecfdb34d7cbc05aaeea"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 15,
+        "sha256": "03d91d37a8ed811d6f45bdc728210774e1f1197308ff4dd7343ade4902a01137"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "요나단",
+      "ref": "사무엘상 18:1–4",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "52130224e9383e4bda7fdbd39571dee682b7e206fa9d76824d01175064c886e8"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "5ff8583f4ceeb00662903157be8cc2c1d56d32c0911d4ba5099d60c27fa0eed0"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 18,
+        "sha256": "8c29533d28fa14aab9a81c74a1e3845441ad5acc8173e31e7492dc98d98a4290"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "요압",
+      "ref": "사무엘하 18:5–14",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "5fa96a949952d166b4555ccf1449b246b749269b6064ce9da6400be94e7059af"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "e81db6b5931599555f49640735f80fb1534d22343dc9810b8570fd4afdf8b86c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 18,
+        "sha256": "333b97a35d55fadee3db495e41b53e849f22ce089bcf76fe8b6b20e0e60e5595"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "압살롬",
+      "ref": "사무엘하 15:1–6",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "a0ea8c19c6171a146d72a7bc451c12ebe43cc229a60dd25bc12da621b1f630f2"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "a03bacb4147b65a5cb9da16a054edf35ce6d57abd5e77108b4effd02753ce8db"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 15,
+        "sha256": "3d3c56c2805f31922d513a490c74ed97120b4737dcd850df7a449c60a6c4cc85"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "히스기야",
+      "ref": "열왕기하 19:14–19",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "d617ee3776f34e0d18cdf6c098552281c0f039a0dfd9fc7fc4be3136b63c4d56"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "a8c076fe2240973b81c6ae16f45acced928e717a3971bebb0f0c9e7bb587dd43"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 19,
+        "sha256": "c0498147d35950ccfbbab37e5a89dcf360aa63b72388ef5539d15e9c540b3319"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "요시야",
+      "ref": "열왕기하 22:8–13",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "5c310e9deb769e56d2e24ddf33c884f9a0e88c32615d95b4ce986843fa216dab"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "ec86b89dc49f9acfe69e8f8db0ece212503356f373f7287ff30209da24d2a1c1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 22,
+        "sha256": "354821df7865392c2286ef4fd0d35e1752a9894fdc363286d62af582207c90b4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "시드기야",
+      "ref": "예레미야 38:19–20",
+      "bible": [
+        {
+          "file": "개역개정_jer_예레미야.md",
+          "sha256": "b065f4e9f86a4cb1905219510c667962c567eb92e94b111aee3895fdd48faef5"
+        },
+        {
+          "file": "쉬운성경_jer_예레미야.md",
+          "sha256": "e64d0e9e6aee1815d521f2ae77452be19c21f9c7d9e5ef17a2de52f89a927d0e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_24_예레미야.md",
+        "chapter": 38,
+        "sha256": "6f19ed8e0319dd9f234a9f59591178180a44800cbfda6a3d9e2b81d6bf6c2209"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "느부갓네살",
+      "ref": "다니엘 4:28–30",
+      "bible": [
+        {
+          "file": "개역개정_dan_다니엘.md",
+          "sha256": "b8fa241fe8357e22b2c04a19cab2eace2b08162071e7dbcda8ec2e95cd1855dd"
+        },
+        {
+          "file": "쉬운성경_dan_다니엘.md",
+          "sha256": "00bb6733cda396f4837317529c472edba17ddc170d8b8eaa28b50e1957a0da4a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_27_다니엘.md",
+        "chapter": 4,
+        "sha256": "a5b3307d41bec1baadc40add8cb410ec0a5d04261b5575d2bc90cef8ac1f425b"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "고레스",
+      "ref": "에스라 1:1–4",
+      "bible": [
+        {
+          "file": "개역개정_ezr_에스라.md",
+          "sha256": "fb90bbcf3a3323fe65343f9c1a742c6c36782063fc444ff8660dcc82b9e51a22"
+        },
+        {
+          "file": "쉬운성경_ezr_에스라.md",
+          "sha256": "5e9902f26184a9b117466bc2489f556719b044d7ab4fee08fd39c34bd9c6bfc5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_15_에스라.md",
+        "chapter": 1,
+        "sha256": "99004e5340e3608196d4a5c7f6a4df4ccef164c129684cc16db123416185c835"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "다리오",
+      "ref": "다니엘 6:14–18",
+      "bible": [
+        {
+          "file": "개역개정_dan_다니엘.md",
+          "sha256": "0d9a310e89079cb504def6c90dc74485df52fbb7fa1b40c0fe27aa926c54d82e"
+        },
+        {
+          "file": "쉬운성경_dan_다니엘.md",
+          "sha256": "e00ba58d00e9ad1957b49baac283c0dbdc94201555126cac7103d6c5e9b5fac9"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_27_다니엘.md",
+        "chapter": 6,
+        "sha256": "8fb71125bbe08da77bfb9f45639317ae0ea8c82f30e1fa2807bfa70f17aa39c4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "벨사살",
+      "ref": "다니엘 5:1–6",
+      "bible": [
+        {
+          "file": "개역개정_dan_다니엘.md",
+          "sha256": "fe060c5cf0547e9803c03687f4155c06355299f3a7a65335a90883ec3d0051f3"
+        },
+        {
+          "file": "쉬운성경_dan_다니엘.md",
+          "sha256": "b53cda0977ebeebcdcb0d20b7b6f2e0b57daa1da2ddc0781e8b8637a56cee1b3"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_27_다니엘.md",
+        "chapter": 5,
+        "sha256": "1e0190b1496a2ce1e38fb544a79c5f43200692bd7bc6ec7e7165d1307b5bf246"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "하만",
+      "ref": "에스더 5:9–13",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "0fe106158378be5bb920acdbbb92e913a1a300f57c04b29fecbacc9cc65eaeda"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "825de4fd4ae229bf39f4b912eb7a33e19b32db8c579502d816b1dfef6fdc11b4"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 5,
+        "sha256": "c6ec2c7bf908c9ed32429574b38b7a597b94575ac85b65c67f4a4b219b9e2ab2"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "바로",
+      "ref": "출애굽기 5:1–9",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "c3466a4031e12686fb37cc3aa94bd4838bc597331568582ed9bca8d8e17cc176"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "954e3db3228c4a308de890da77dd2443e53f669ac8b3540572675564ee66bb24"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 5,
+        "sha256": "c7d2325fb276688e81579be783aa3bc5e0f15405334786310d9e26c95a32d8a3"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "엘르아살",
+      "ref": "민수기 20:25–28",
+      "bible": [
+        {
+          "file": "개역개정_num_민수기.md",
+          "sha256": "039a8ba292c191434c9e330dff94823c4906c369fb7ecc6f532d3e587a10ccf8"
+        },
+        {
+          "file": "쉬운성경_num_민수기.md",
+          "sha256": "3045736cb230c7c078fce36469e534e6fafd601228040f3016a23726437e34a2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_04_민수기.md",
+        "chapter": 20,
+        "sha256": "c05e80221f42397802f22900b302e56129af4e3da12229c901bbb3626eff7d82"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "비느하스",
+      "ref": "민수기 25:10–13",
+      "bible": [
+        {
+          "file": "개역개정_num_민수기.md",
+          "sha256": "79e330cd8b05747851dbe95eb9e8720b95e82b69a0a641a6560e7039f97e0dd9"
+        },
+        {
+          "file": "쉬운성경_num_민수기.md",
+          "sha256": "9f10927837e8fba7fabac9e3963d597149fe1af0266b2972fb533e3d5e60c7fb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_04_민수기.md",
+        "chapter": 25,
+        "sha256": "3a371633f108718471ab84a399f37a0eb55dc67328428a5c0ad3dc93f37d673a"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "사독",
+      "ref": "열왕기상 1:38–40",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "8b7395f31fedccf28a7cf44022e0e9e47273b3b0e3bb71b8e23304a37e8d91b5"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b54b9ffb8affeabfcb80f0917c08f0e49908e81754b0e759d1412947307a042b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 1,
+        "sha256": "87628e4be788509a5b17b5c261e9dfe1f4a3fd2fabc3df5a45d3df0e3c7a9cf4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아비아달",
+      "ref": "사무엘상 23:6–9",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "f3d33be68505e491821c0612e69947c5dae549724dd6fcb420dc048d89a72f08"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "e5976c6be5051712a3c27ca09c87922dcc881646b6022ca2d1491ae757daa926"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 23,
+        "sha256": "1f4123f209b780170860bf2c3a185af9ce24450f12027ce05f7726cab20dd843"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "엘리",
+      "ref": "사무엘상 1:12–17",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "a57e3e0514ec370c015b63762d8ff1639b6dd4184d7f0bd11d916e5b8337c140"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "18f950a743102366afb68a73a170e8b215c8f3489d19a54dac99a9000dd1b68a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 1,
+        "sha256": "acb33f5e84039cdaa5194822772668847fcd8d24619b33dd97cd5a7894123a1a"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "나단",
+      "ref": "사무엘하 12:1–7",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "6154a7b744942632d3a51b153f631b60e6e30c75594b6a19e3e3dc9afe22cf25"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "f2ca7217949a8771934c5cedc4b1c3026508e24094aceb3ea778452a806aa25e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 12,
+        "sha256": "28228a9ef17b18e432dc8d332a3ff2b404d469e727197cefa421feefb0ad16a3"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "갓",
+      "ref": "사무엘하 24:11–14",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "49578d035f6389e319c6098a83a4653701e0d106445e1edc226478536225b02d"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "26cf9e678270585f60aef05c4336f01fc0bc176a08bc840e04808472717cc9e2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 24,
+        "sha256": "966f514cd87bdd955c686a5dca148ac1bcb267887b57435968ce2417a247b087"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아히야",
+      "ref": "열왕기상 11:29–31",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "881ce6f2464e103e13e0513c8d2f6d5cfa0fcc58f44704c84330ca933a41a896"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "fd3694a3ad60d2d54e3ce1cb692a3792e78803eabfc3d0f4c7a48c38d81e62eb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 11,
+        "sha256": "1fa1cda90fc631e7d67ad6e151783e6bed3e2331a8ad8504b466f47c94ab9f53"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "훌다",
+      "ref": "열왕기하 22:14–20",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "fda8c62aa42e743ac94717f51387e88f5b4bee623a53f2e4fe6d35b761e91902"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "0b8dee713d99c19a0e035806a17affd21145daaeee77f197794e775f21f2a6d5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 22,
+        "sha256": "354821df7865392c2286ef4fd0d35e1752a9894fdc363286d62af582207c90b4"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "요나",
+      "ref": "요나 4:1–11",
+      "bible": [
+        {
+          "file": "개역개정_jnh_요나.md",
+          "sha256": "75735528cb72d25a86c70c7acdd44f82e187c43755eec2c2001c3cb14a219ca7"
+        },
+        {
+          "file": "쉬운성경_jnh_요나.md",
+          "sha256": "7232d8c712554a4da8cdfa1d9719c234712f0b3561def72c69fd3f7410ea88d7"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_32_요나.md",
+        "chapter": 4,
+        "sha256": "3b9ccfa658d3462df449f2067a5e50ad1d8453a46ef08c5566db498adbdfe215"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "호세아",
+      "ref": "호세아 6:1–3",
+      "bible": [
+        {
+          "file": "개역개정_hos_호세아.md",
+          "sha256": "c1805d907042b229a747ea5f9fc1be3244871fc43f54d96ebc2975d8cb2eb5b0"
+        },
+        {
+          "file": "쉬운성경_hos_호세아.md",
+          "sha256": "657e4e4e6d3ef747f08eb86b69561d06c1118b8a1f347e235f40cff435f74f79"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_28_호세아.md",
+        "chapter": 6,
+        "sha256": "24a4f6cc305a7c386c007177403a5d744bb5d94155b744c52c750f781af5e051"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아모스",
+      "ref": "아모스 7:14–15",
+      "bible": [
+        {
+          "file": "개역개정_amo_아모스.md",
+          "sha256": "46a0f5a395032c29331e84b900ee632dde3adfd64d002d8129e0afd039ae3d85"
+        },
+        {
+          "file": "쉬운성경_amo_아모스.md",
+          "sha256": "7bba014456b5549c2653738853111773ad1e8144be9547b3474f3c07c5000dee"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_30_아모스.md",
+        "chapter": 7,
+        "sha256": "8b805eddee58e0b88dc97215d865b4bda55bd9916194d1a2a267c0b1278d7acf"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "미가",
+      "ref": "미가 6:6–8",
+      "bible": [
+        {
+          "file": "개역개정_mic_미가.md",
+          "sha256": "0428841d9087e42ed3bf3d07018186f7f455275a25b1520342967cb097c37125"
+        },
+        {
+          "file": "쉬운성경_mic_미가.md",
+          "sha256": "be7c07652df600fd1ff4ed7eb3edbbd2f0b56636de1cae1472499344816bf233"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_33_미가.md",
+        "chapter": 6,
+        "sha256": "344eaccb852ab1989dadb409e957fbacd06f9651b725f00b619870668391de33"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "하박국",
+      "ref": "하박국 2:1",
+      "bible": [
+        {
+          "file": "개역개정_hab_하박국.md",
+          "sha256": "a98a3ae7e89944dd785d2e505abd92259668e07a57c39c7eb295ab9497c85584"
+        },
+        {
+          "file": "쉬운성경_hab_하박국.md",
+          "sha256": "d9eb3629b7609b1dd508b1c1494d6031709d592885a5d4503cdf4c553be02e30"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_35_하박국.md",
+        "chapter": 2,
+        "sha256": "d0ec41d66e6cb636c3b4a0d5e0d06c0f16399ac6898038076508926264e53d75"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "학개",
+      "ref": "학개 1:2–8",
+      "bible": [
+        {
+          "file": "개역개정_hag_학개.md",
+          "sha256": "cb6ef24662c188eb1d50f58a1e52b55f6b44e66948794bc7c55223a11e4f8c95"
+        },
+        {
+          "file": "쉬운성경_hag_학개.md",
+          "sha256": "84ec0973411f656d6a67efd8ac817d679a7ad68ac1f43a28782b4ec655ac1376"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_37_학개.md",
+        "chapter": 1,
+        "sha256": "b3fa1f3e7254b3ac42eca219cd28c3c57b17a13b8e30ebe522dc01cd48943251"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "스가랴",
+      "ref": "스가랴 4:6–10",
+      "bible": [
+        {
+          "file": "개역개정_zec_스가랴.md",
+          "sha256": "72359ce09dca8ee30fbf2cc29547ae85801d522aca5a1abbec02c1f90c2900d9"
+        },
+        {
+          "file": "쉬운성경_zec_스가랴.md",
+          "sha256": "37241b60f8e0fda4c857b92c14e9179bf8008663665977d916f502dfadbc7dd2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_38_스가랴.md",
+        "chapter": 4,
+        "sha256": "ce362888dac320ac28867f6d87b0edc1996bec1bbc2e869e396620bee10a613d"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "말라기",
+      "ref": "말라기 1:6–8",
+      "bible": [
+        {
+          "file": "개역개정_mal_말라기.md",
+          "sha256": "c5ebdefa7c39b779b88c31b819987c0e24ab0a38720644c8a48a548e4ee14625"
+        },
+        {
+          "file": "쉬운성경_mal_말라기.md",
+          "sha256": "46961c85160b0a55e1e203b7d8f10a859e282c6a6d5b37acb33fa82d8c560083"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_39_말라기.md",
+        "chapter": 1,
+        "sha256": "94d116b5d6a86db0af6fb24a5a2b15a010c7262a440a1d437bacc72f6a75ed14"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아담",
+      "ref": "창세기 3:8–13",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "70e02f93e2ccfe92ba9e8aec4a18009b8468a797f62d4e49a9e3a7e6728b17a5"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "b63da158ea72dbbd0bc35fd0331288ec6591547db252034f592b2ea9cf08ca73"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 3,
+        "sha256": "07b35fe85c36401caf5b31c08604b7b3ed6734a90ae831cf231b7429cb249706"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "하와",
+      "ref": "창세기 3:1–6",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "a75ccbc9f0dcc8078874f26e7b0040245b151fb152ff2405325e6a7a143ac3cc"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "c9e7881ce6e84fe60d39c8f5dbc09f4237911b376285640842a3797c47890e68"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 3,
+        "sha256": "07b35fe85c36401caf5b31c08604b7b3ed6734a90ae831cf231b7429cb249706"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아벨",
+      "ref": "창세기 4:2–4",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "d177643c7ba211e0cccc1291354c0a439a11f9c66cd183262aaa87b56df4507c"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "6fefb177b3f1e2b5732d049f544a58f1c678bf3cc9bf009186d857550a4a90a1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 4,
+        "sha256": "07f911ad6fbf5ddf01acd7a89497141efef9493a153c7d41db534bb85c7715d7"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "가인",
+      "ref": "창세기 4:5–7",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "341da42418ad8ff5bea79ed8cf604d64912351097d319fe1482aa5831a244e8b"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "c86af55ed277f448786e009b9c500f699fadbeb53c501e2bdd4a56447afa5133"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 4,
+        "sha256": "07f911ad6fbf5ddf01acd7a89497141efef9493a153c7d41db534bb85c7715d7"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "롯",
+      "ref": "창세기 13:10–13",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "f37c1f32e57c0d1f7d0d7f904ed6833365906e838f9be01b3e9e64df0045c1ca"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "fd0c9a30024f0b7b8ed68ece9937ec10b14ae450e004e7bcc8c81ca645b1a783"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 13,
+        "sha256": "01ca2c888c045f44a70018dfebea4517ffa82dde2469af174bcd2f6555355f11"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "라헬",
+      "ref": "창세기 29:9–12",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "c04fe5c9612d6209059e9854dc2bbc309bb185530d2d9c22528a748256f7a5b1"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "e9db36446c32b609518ac1f525e81ae3f296ba92b7ea9e503572e7ad03f3fbf3"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 29,
+        "sha256": "2d95216b450c8d88f83be62b4c775bf75c1fca54a0d0ffc8839a48e3b2f9b84f"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "레아",
+      "ref": "창세기 29:31–35",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "cb5d1725220a527dee1d4c8d4d0d96557875f952e42a9881c34d1cda9d814b15"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "cc48f03aecc55b1b6ed355bc4e98154fc8f9aadff2a6b37b7973366b523336c5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 29,
+        "sha256": "2d95216b450c8d88f83be62b4c775bf75c1fca54a0d0ffc8839a48e3b2f9b84f"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "라합",
+      "ref": "여호수아 2:8–21",
+      "bible": [
+        {
+          "file": "개역개정_jos_여호수아.md",
+          "sha256": "7b7aa077bc4d7fc164248636384a388d64cb33c3ee6d1cd43148e1b9758a5c97"
+        },
+        {
+          "file": "쉬운성경_jos_여호수아.md",
+          "sha256": "1c608d467284f72f35cfb2b53fca6cdc8fe3aa9dd21263626bc76267f480e6f6"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_06_여호수아.md",
+        "chapter": 2,
+        "sha256": "b043315e38ea43ebec3d15ee8c83e1b49de60a3cf264ce68fe756b4ac6929c0a"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "갈렙",
+      "ref": "여호수아 14:6–12",
+      "bible": [
+        {
+          "file": "개역개정_jos_여호수아.md",
+          "sha256": "2c8d45e46f1fba18aab38bc15c3d76e79f0facecc9bccfe335156e83a1a1336c"
+        },
+        {
+          "file": "쉬운성경_jos_여호수아.md",
+          "sha256": "1aa018a43e2a1b1c01f0b8924d918ad65c2e856cb5db3823ee020b3ffcc4b655"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_06_여호수아.md",
+        "chapter": 14,
+        "sha256": "c9ec7dbfd60db03630158a9760e4f48fc6e1c38ecaf0d5795f89e619bf6ac14c"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "보디발",
+      "ref": "창세기 39:1–6",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "c6ca60d3ec04e1c4c102c0c9edf4a2b69c77fffb8c8d56ca037ca85a66bb277b"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "b1697102962a9ef40e0c0e1946edb15dd9d20c88cd671a58ca100df318208d95"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 39,
+        "sha256": "0500390875ec62650f69df150cfb7d236b0b00dc29bc09db0b6ced45e5a2d358"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "빌립",
+      "ref": "사도행전 8:26–35",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "1ecb152670d2080291ea8d32a9acdc3490201437c1b223fe77233401624c83ea"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "717b8af36435e5213ec23e184ebf2565a0cd2973f007206d9fcacf317c95e08f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 8,
+        "sha256": "b688e0a853da8b236c2b3ce8134a4bf786f1152f759a655f43beef8a646b7b4f"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "스데반",
+      "ref": "사도행전 6:8–10",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "913003e465f7cf034ab68847a95b5f58ae36b124f78486fba133464663ef9013"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "aa21927d31fbfff57d0ff514acb95f2dc0a3144a37bc005b115c62bf5143358a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 6,
+        "sha256": "1beb7bab0b10f9d76347f0a054ced4cd93ece4d0bc7dc03561fc7cf9330267bf"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "실라",
+      "ref": "사도행전 16:22–25",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "b175198b226d3f712f8a13369af5393548c0930d82c7d115866b83108fe3d0bd"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "2291bd91891caea5c37efeba4b576a07776feaaf7d92688f6092a474395d65d1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 16,
+        "sha256": "5abf4d06616543422d6fb2ed25825ed89ad5dbd973d1a43822ffc1db070306cf"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "디도",
+      "ref": "디도서 1:4–5",
+      "bible": [
+        {
+          "file": "개역개정_tit_디도서.md",
+          "sha256": "257971f466e24fb3b4da37cd84f717d8d1c2d80430873c33a076786b00166d15"
+        },
+        {
+          "file": "쉬운성경_tit_디도서.md",
+          "sha256": "f771e25a07a419f8d6297429ee7ceb22ec5c2d7fa70b7fe8da303f0deb20ffe2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_56_디도서.md",
+        "chapter": 1,
+        "sha256": "3cec831559ea389d57e15fca382a1c8144f17718299cf59d8799fad19f647980"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "누가",
+      "ref": "골로새서 4:14",
+      "bible": [
+        {
+          "file": "개역개정_col_골로새서.md",
+          "sha256": "0db8a615c50edd1ce3c20f5da3fab13a98160fdf6394bc7a3fc91c6c92121bf0"
+        },
+        {
+          "file": "쉬운성경_col_골로새서.md",
+          "sha256": "88d5f510db173607309e6e59158c44ff0599c2accea766bc67478dc142f93401"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_51_골로새서.md",
+        "chapter": 4,
+        "sha256": "7a31855cbe29ae5622ca768acfd8fd92bae972288df4aedcb082031b296a3d40"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "마가",
+      "ref": "사도행전 15:37–39",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "130378160f9880c1bcbbf44547d824f39563388537b65179659e17526f30c919"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "bd2a48871eab516a6a14ad0a460f326acffd81a074567bb5420db3265de01a85"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 15,
+        "sha256": "9385830eec8ee95b82fc9708574085cb4ae2f77ebfed93875f656e12af43f5b3"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "아굴라",
+      "ref": "사도행전 18:2–3",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "cf8b6c6273df707e535be2be608158bdb04789ce61c792317360d1d5406eed70"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "f4318a9d35ebab79eafb0e535260ea054c910ec5dc7354b7b670f330b958c729"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 18,
+        "sha256": "fae4c5655504d36ac2abafb44a83de002e4b2b8a251c5242e9d49455780ecedd"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "브리스길라",
+      "ref": "사도행전 18:24–26",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "3e854ed23bbb0368db045af8fc2ac7381aac246956ee85f62e8866e61baeb2f2"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "907f9dd5184ede5a5445105e5d111d9270c0f8bb9deb281c87ca285985491152"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 18,
+        "sha256": "fae4c5655504d36ac2abafb44a83de002e4b2b8a251c5242e9d49455780ecedd"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "오네시모",
+      "ref": "빌레몬서 1:10–16",
+      "bible": [
+        {
+          "file": "개역개정_phm_빌레몬서.md",
+          "sha256": "a64654a5dc0a33e79f995a782f96fcb91ec42fe2239b7ebd97c26e8fe536e023"
+        },
+        {
+          "file": "쉬운성경_phm_빌레몬서.md",
+          "sha256": "86204576b0b64e2431231512829efe6e5e24154934cad27ee718b9f8e919bcc1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_57_빌레몬서.md",
+        "chapter": 1,
+        "sha256": "a5e6fe350344578579615773e0d9c228cd378ae592a54d0d88dff107d5fbfa35"
+      }
+    },
+    {
+      "group": "solo",
+      "id": "빌레몬",
+      "ref": "빌레몬서 1:15–17",
+      "bible": [
+        {
+          "file": "개역개정_phm_빌레몬서.md",
+          "sha256": "9d9acb092ee0b5affbe232cf96c9c79656c6e413432c9a9059a324cd626f1de4"
+        },
+        {
+          "file": "쉬운성경_phm_빌레몬서.md",
+          "sha256": "ddbb0abe673ce9d3931f0d369d3f61770e1a0b93f2858964a573d4296bec6694"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_57_빌레몬서.md",
+        "chapter": 1,
+        "sha256": "a5e6fe350344578579615773e0d9c228cd378ae592a54d0d88dff107d5fbfa35"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-1",
+      "ref": "요한복음 13:23–25",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "2b5d56ba74b4e3a296f2f1cd8c18d7d422a9c0d3b826f174948d54e2a38aaf6d"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "be24d63b811441463a291faddca15ec32a47285db73c1bc25810fd63b681d481"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 13,
+        "sha256": "a5f79e4b4e12b0bbc3a5b740336efb23106239e3e3f9382536f9ff49b263ae9c"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-2",
+      "ref": "마가복음 10:35–45",
+      "bible": [
+        {
+          "file": "개역개정_mrk_마가복음.md",
+          "sha256": "1698300d6515ccfbac57a9b712cdfb9dd7c1504c50a32aba5bd7bf13ccdba88f"
+        },
+        {
+          "file": "쉬운성경_mrk_마가복음.md",
+          "sha256": "821939f8fd2c9f945b6c72ac45a6ec5f6f47929e6d82c57d3c742cfd487ea02e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_41_마가복음.md",
+        "chapter": 10,
+        "sha256": "4b35651c92b49d3a2d7476e9793cf9d21abe390cec909f13ac9613309f1e5122"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-3",
+      "ref": "사도행전 15:13–21",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "9b666226647a2875f0bccf376169804849a9c6e49aea2de1c9e40b605ac9e7ec"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "c3c259765fb114e3938eb4f3871307d15c070b07916e306b7f0d721dc7670c59"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 15,
+        "sha256": "9385830eec8ee95b82fc9708574085cb4ae2f77ebfed93875f656e12af43f5b3"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-4",
+      "ref": "창세기 44:18–34",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "f5bc47dd2085165db60c8f10083b436ab4899c5e74f4e6885735c34319179381"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "1b56c8585843710e1a42f638199742f7f0172829bfa82539462f69af18df6211"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 44,
+        "sha256": "9e397f1873231fc608637bf80f80f3dca6e9b87dc2f9a8c3a1942e66cdf0c652"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-5",
+      "ref": "요한복음 12:4–6",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "1125ea3ae2b158a99df116e3588a9610f95d8d36b4769618e437fee2be99f9ce"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "8d8def27036281f4fd47d3bde75e78b4bae3b5c7c8129aac550fee44b8240623"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 12,
+        "sha256": "83230345d241120f5de54d3045ab9c34724a7bb23df2e5172d4bbbe007c1e38a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-6",
+      "ref": "누가복음 2:19",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "24202b3b8cde4a6bd00658bfca413d271ab7d9466fff4326eb0336e3283e99bf"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "774a94520af54866f60ad1d4167929244a6a2d01b6ba10c3f0829621b048e26f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 2,
+        "sha256": "7dea700858908028da6a3960002c6017dbb265b456d3d15edb2c371267716109"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-7",
+      "ref": "요한복음 20:11–18",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "6a722d15727b602eecf77187b4196acfe9304ae26c6a6b4d61f074f38691aac7"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "6773a1483b491c38fc6aa8bb625036461748b30a927a838fa2777b0efe7a940d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 20,
+        "sha256": "176a310d21036a7dd59ba66dbbe2999ae335d2d4adc87c709bdbc9e30dc03f02"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-8",
+      "ref": "요한복음 12:1–3",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "3b5c43f58bf143e4cb278ce451089f4a579263eb6d41f2e9cea08c68bf1ed040"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "6b11c963260a63cbe545b51d738b2fdd0340ac06d88388a6c0393621716b39ad"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 12,
+        "sha256": "83230345d241120f5de54d3045ab9c34724a7bb23df2e5172d4bbbe007c1e38a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-9",
+      "ref": "사도행전 12:12",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "516ce5d9bb1c54f274265ab2ca466d83b242aa0a99e42f87e8988f74360ef92c"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "fca6ab6e913c34ab632cc0541fe9401f883e906e51bb2a068c70939b1a7fef59"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 12,
+        "sha256": "41169b61637e0be621a226ea2de3fbf5db7485dba19de2cd4e3617609dc39bb8"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-10",
+      "ref": "시편 73:16–17",
+      "bible": [
+        {
+          "file": "개역개정_psa_시편.md",
+          "sha256": "d5e95ee6a442959b6a736b9675f35885c0bff74d0572d13859c6731658ea2ee0"
+        },
+        {
+          "file": "쉬운성경_psa_시편.md",
+          "sha256": "9a3c0af723d3add8a6700dbb8ce5a9b45eeac065cbbb33a1630dac79992e5cb7"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_19_시편_1-75.md",
+        "chapter": 73,
+        "sha256": "a5f70adc424607c3d1c05b0009b56b482cbc49588cc0e1f81801633864a8223d"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-11",
+      "ref": "사무엘상 26:8–11",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "746b2b499a728297e4ae50fda88bbd30f8879e4a7c44e6aa729b6096c0e4cb89"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "166f5619c6e511ddc5f0166d8bbb15c5eb9382901fca133c09380e661904d5eb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 26,
+        "sha256": "a4ce8d7a404acb67d9a1edb9b9e113d52116e430cb2a62a342ad60379fde74ce"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-12",
+      "ref": "학개 2:4",
+      "bible": [
+        {
+          "file": "개역개정_hag_학개.md",
+          "sha256": "3e4d9c1a876984879e5896b30b876fbb877cea8e6262ab121785c3ca5a995164"
+        },
+        {
+          "file": "쉬운성경_hag_학개.md",
+          "sha256": "296e9e126cc07c4fc7d5c9fc0384039996cfd520b01a1ec5cb6ec6b97974954a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_37_학개.md",
+        "chapter": 2,
+        "sha256": "0501ff6c068504fdabbb9ddbbb285514633025af7932e6155db70eebcd8d8e9f"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-13",
+      "ref": "창세기 37:21–22",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "e11efdc0276950e027a94e0c78a9e01dab91c48fd79d486ab32ab0daf409718d"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "f525080cdc67274ecf0bf62bdff85f40c0ef599f52f775e954c8889c71c5edca"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 37,
+        "sha256": "3b6cec2f8d9327f0805f0830b494d96679eba3e332fbab55f3c71ed66da2cad8"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-14",
+      "ref": "사무엘하 23:20–23",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "12623a4ee9f5adf0650441b396f8acaa7b2fa9099cce0c6e033bcabb168335c5"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "566b3de6b3203644ab4a784fa048d60f6ce01e8bc752645a7fd766422c2d093b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 23,
+        "sha256": "d5c645b8173418d4455010d24086d5df01a4dfe1701b4e7b18f1f19a64aaa1e9"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-15",
+      "ref": "에스더 6:1–3",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "f268f721f6d3e1d45e208f8d124c40df9f6163b065064f0d5e956581fef39cee"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "7d15afa88a446c5eaf4cdea0c1ab680f3551ea0d4a17284a62fd2cafe82b015f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 6,
+        "sha256": "966b23b93d3d169718858629e5f276de8cf8a645fad47f2bd3ba8e7cc7a100f0"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-16",
+      "ref": "창세기 21:17–20",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "6b79a5289a69d7d0b0eeeeee6ccde3bf041a48417c615057bdd6aff155670dad"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "6dda49ab257f5a13bd758ce12411129a6b2606021f452ab695bcdb839b5a08b6"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 21,
+        "sha256": "6888decdb0df16df3599710ff3031490995c79836f4343d907dcacd275ded242"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-17",
+      "ref": "예레미야 41:1–3",
+      "bible": [
+        {
+          "file": "개역개정_jer_예레미야.md",
+          "sha256": "f29cdba22991d9f7951bc9a52caca454be69779e21c74bd602ce58f86d22e221"
+        },
+        {
+          "file": "쉬운성경_jer_예레미야.md",
+          "sha256": "64857a993333ed4e9ba6c8d441a39bcaaab4bae0937e550e3b0d4dacc39bccf2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_24_예레미야.md",
+        "chapter": 41,
+        "sha256": "d632fa8c1fff2385a2e0197acdbf76112b3b80fbf8e872b733138b298da38a3a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-18",
+      "ref": "마태복음 2:1–8",
+      "bible": [
+        {
+          "file": "개역개정_mat_마태복음.md",
+          "sha256": "4f8fff0a248c10c11f3399b2d6c73ddeb6f5e2c85dd4375a49e2f8b7dca4c19a"
+        },
+        {
+          "file": "쉬운성경_mat_마태복음.md",
+          "sha256": "df0566d290c663fec7eba2ef3b6b9aecdd5f9a8890f1bcd07a9380fc82854a32"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_40_마태복음.md",
+        "chapter": 2,
+        "sha256": "fa32f8b63c9e88530a02747af1e68aabbff9234806823a427478b936a55a081e"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-19",
+      "ref": "마가복음 6:17–26",
+      "bible": [
+        {
+          "file": "개역개정_mrk_마가복음.md",
+          "sha256": "96e542fd606b1f1d322307c07527873e1cff045bb51b267ffec82256bf704b87"
+        },
+        {
+          "file": "쉬운성경_mrk_마가복음.md",
+          "sha256": "70a0ebfac96d354a9b704fa21646f0f538935dbda40d5e1c0d5b790c5dc65969"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_41_마가복음.md",
+        "chapter": 6,
+        "sha256": "d83c716ccb023e06258d1be331753c1643361d6eb240f4e11e04f9d45492a580"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-20",
+      "ref": "사도행전 12:1–3",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "d3451f007f81cd16ef4b0ab4ced93ece357b999cdd3374f407c22164fae7893a"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "0563e5db2d0da2e2e7b75d775e9ffb7f07531c262f6fe4a53fc97e44b0cbea72"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 12,
+        "sha256": "41169b61637e0be621a226ea2de3fbf5db7485dba19de2cd4e3617609dc39bb8"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-21",
+      "ref": "창세기 34:25–30",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "d68709042d1c3672da877c0a6448da1ebb1319f738991c7e482c3d887924964c"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "78cda77eeb9ee290e3dca75890b12104a29ec67db3cb5ebd0397f7b0af53e5d5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 34,
+        "sha256": "2d9f8c475c4ee61a793c1487ac6e7e41e9b6600e731c262bae61ead11629c340"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-22",
+      "ref": "민수기 22:18–20",
+      "bible": [
+        {
+          "file": "개역개정_num_민수기.md",
+          "sha256": "d327ac65c060597137fe5fb855825f2905b291ed1cb302ca3313e7bf2457f95a"
+        },
+        {
+          "file": "쉬운성경_num_민수기.md",
+          "sha256": "782147602dd1a07c4cc1f6725baea26024deaa8db9bbc3e5922b34d1a93a1ce9"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_04_민수기.md",
+        "chapter": 22,
+        "sha256": "fab992b6c54d6907934de3b2c919ceb42ab9b5b3f53f33e611a22c17496356a4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-23",
+      "ref": "누가복음 2:25–32",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "53b3d64e58a55be2d1c1b354ea0403a000e8c5d20773f845b361adfcaed04bef"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "c2a08aef43383a5ab7f68c07b5d2b56751322176aac1ba95eb9171bb3e1fa1c1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 2,
+        "sha256": "7dea700858908028da6a3960002c6017dbb265b456d3d15edb2c371267716109"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-24",
+      "ref": "창세기 42:24",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "b3cc50fbb80ba8161616ba8a37e4ae9fcc8c9b962138c0553a1cae2a97073561"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "870fc1a478a929a286a6121141daa9bec48c64dbb7c2da7e964a5d6213347a9f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 42,
+        "sha256": "b8a1b3b359ce1794efcafcbdd91d5963871bf8ff0f614f1faaf4489998640783"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-25",
+      "ref": "욥기 4:1–8",
+      "bible": [
+        {
+          "file": "개역개정_job_욥기.md",
+          "sha256": "bcd51cc81056a6a8773764f92b42616ef06365bd4ef270cdc2b8f497fb0f44d4"
+        },
+        {
+          "file": "쉬운성경_job_욥기.md",
+          "sha256": "932f873d2275ca712dc0a97cb63586752e04e1089e896bb4d9506dc955e41fd8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_18_욥기.md",
+        "chapter": 4,
+        "sha256": "384fd5293128894324a0438a27d77da30edb5d58ae62ac624a6d5756dc41d3e9"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-26",
+      "ref": "열왕기상 12:26–30",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "fe91e94bc96b5cb8eaa8a17c2625ddd13db3bd004168b0b67120fe8632eba962"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "34bc9d0e4bac2a42fcb80c080e6979d5f670269b3c5899ed3ba35caf58608a91"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 12,
+        "sha256": "35bbd6d02bbf58c5dc84364d297680b7a6adb75e2d567a1448cd9af94f652e45"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-27",
+      "ref": "예레미야 36:20–26",
+      "bible": [
+        {
+          "file": "개역개정_jer_예레미야.md",
+          "sha256": "83c145088578462117899d8a7e993aeb754135fe8b0259f60574768e2085e0a8"
+        },
+        {
+          "file": "쉬운성경_jer_예레미야.md",
+          "sha256": "a174f8835bd4a2f668358f3c962062f9b28499cd055733da9a8ce4b529fded72"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_24_예레미야.md",
+        "chapter": 36,
+        "sha256": "ba47e59965df8cbe55b28171a89af24f3b9bbb55024499fcf175cff61f68f8bc"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-28",
+      "ref": "열왕기상 12:6–14",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "8074821c1bb7f7fe99bd91b419d322feb7d85b1ccf5953ac74863846aac8dcee"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "0055a9d1169ebf0e5e740d348018fe72911aad9dbdfe21493a379d82fb2645f1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 12,
+        "sha256": "35bbd6d02bbf58c5dc84364d297680b7a6adb75e2d567a1448cd9af94f652e45"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-29",
+      "ref": "사무엘상 19:11–17",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "740a5b57265bf90e0ef98f34d0dc975c87538d410c7b19c345909e04751bb0a7"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "eb4c9041dc361dc0d63a7631d98de9e2bbc1a9b7a056fdee0d41934c12311053"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 19,
+        "sha256": "6359a94b49ba0383e126884958b4a16ab92d1f92e36224d95e5944c37015b0b3"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-30",
+      "ref": "창세기 43:29–34",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "0753624cffaa004303325dd8ebb857c6f2e5f6adc930bb2cb815a4d95f77e448"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "bb208b078d5de6f762e77fcd279d7369a762a849c8e95dc90b4849bca26aa3b1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 43,
+        "sha256": "daed93bfc321882cc09f96dea13fb7888924df74b3964b257a0dc59f000175fe"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-31",
+      "ref": "욥기 8:1–7",
+      "bible": [
+        {
+          "file": "개역개정_job_욥기.md",
+          "sha256": "a7385085b0ed0e01968449ec283e95141c1df9833e641d2687bd89826d364b2a"
+        },
+        {
+          "file": "쉬운성경_job_욥기.md",
+          "sha256": "d4186b76517f2efb4c6838f27de32a9375948d7ee6ac6b1378f35313093a6cf3"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_18_욥기.md",
+        "chapter": 8,
+        "sha256": "8f3740d63b3927d5c6c25204dbbb937d12fcaf9bed4548eba651d5b753cc42ff"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-32",
+      "ref": "요한복음 19:4–16",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "f677a424e1761172e111cf9adaf7865145253657410fecfc17a19114eb5bb29f"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "7a4d1579bee2877d09b73c1c7ed031e88ce7e198f41244e6f32e8a95af65401c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 19,
+        "sha256": "1053d44dcd1bc3d35c47a12d87a4e7f07c0ca7ac580459d78dac93aba428b411"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-33",
+      "ref": "창세기 9:23",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "b1eecc7f682c2c81fa24274c8864ae13aa9252b47fd9c0dbfb85f1a50e87298c"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "97953100b80aa461a2b7f6e367f66e4e77297fb3ac5cf29a48689fa3ed255073"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 9,
+        "sha256": "bcc8563a819dc579279d265360af170d73157554a157d38d44361d0eabe9c945"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-34",
+      "ref": "사무엘하 3:17–21",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "c7b7f292bbe97776225364affb890e25eb7f693ee22989eb91cfc67ffaf811a1"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "d730e79e631149c3b7302be902df4b682a245fd5ae04330ff9448f5d6eb12d1c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 3,
+        "sha256": "44799c4f3e8bc8dcd705cb76aeaf27437d107f203b25ad31efe2b2c094c7bf09"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-35",
+      "ref": "사무엘상 16:10–12",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "09bbb2e15f632290503bbbdb2f120c9cd0bf902e08929a7c4620fdfe342da7be"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "19d934cfaa3b4eb450c7edb2dc1d83598426b7ed43bb62deccd72fa6d885c027"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 16,
+        "sha256": "fc7e974c749c720fd3319cb6a453c0225cd24232ebf65e7c9a17a6e3342f91fa"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-36",
+      "ref": "레위기 10:1–2",
+      "bible": [
+        {
+          "file": "개역개정_lev_레위기.md",
+          "sha256": "74f7862dda1564de0aa2d5820272b9385b8a9e2c294b3a0b5f5baebabac9e28c"
+        },
+        {
+          "file": "쉬운성경_lev_레위기.md",
+          "sha256": "73659412b9ba2859aec0af66eb862897d83c0949f709d8c45c896df886b96254"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_03_레위기.md",
+        "chapter": 10,
+        "sha256": "7e0da5aeff5627c0d9ff2a30020153b00bf54ad123d2cdfc37403a446eee094b"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-37",
+      "ref": "열왕기상 15:25–26",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "fc99ccf04baeab6725120948d902eb1d22524327a9001b6e81558139141b328d"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "71c7446978c4bcc175d4d27f210f7f97c533e2e93fb2038d659be267c11acdf0"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 15,
+        "sha256": "d9eaebc55d0c54bcd3776f50160b390ae31e1c7c17f5a8035459bca781fecd20"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-38",
+      "ref": "역대하 33:10–13",
+      "bible": [
+        {
+          "file": "개역개정_2ch_역대하.md",
+          "sha256": "b1f0394e4d4c854435d2a9604f2e49824aea4c5968d4d54d48d663ec26249616"
+        },
+        {
+          "file": "쉬운성경_2ch_역대하.md",
+          "sha256": "678ccd72009cd1f330c13cf67e585c785f93449b03a5c01d193c3504598de20b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_14_역대하.md",
+        "chapter": 33,
+        "sha256": "942e35d09fe9d973411a864409562761d97dcd738b3dbe28996d92e83a1465aa"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-39",
+      "ref": "출애굽기 35:30–35",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "2ec8440e01b66c25ecf5308a6b3462796219dbda3dee5bae06430eb67398403b"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "7d3a3b69b86b63a5dce79f143b895244025aeaa9ca7a2faac7d9c7e74dc40cea"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 35,
+        "sha256": "15695569c9e55499c580961befb20053ed7fe430a2c77614928a83fa29cbe599"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-40",
+      "ref": "사도행전 8:18–24",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "f4b5ffcb6cfc47aabc82899178592defb4b4d014d3ff3d8185531c6bc755404a"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "95611789db4ca405eb066092617fa25bc18d5d430ad10ca918ba3191bb362653"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 8,
+        "sha256": "b688e0a853da8b236c2b3ce8134a4bf786f1152f759a655f43beef8a646b7b4f"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-41",
+      "ref": "사도행전 18:24–28",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "494f4793331b2293b8be68a94acd4c588076ca9bcbc8c0bb0b83f01d774e5b89"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "e62ea1db3af3ebca41ed2a23e313a39e946bea73f05c882a08ad0acfc66d0590"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 18,
+        "sha256": "fae4c5655504d36ac2abafb44a83de002e4b2b8a251c5242e9d49455780ecedd"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-42",
+      "ref": "창세기 12:1–4",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "aba056328efe95d41825a2a37053573df0c16a6063b48fbf67a888879fdd16ad"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "6a522b7d9c290eb1208a6632d8ffe29c50d39a3aaef846684d51ba7369a2c108"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 12,
+        "sha256": "0908cf552d70e893842c12aa22064c6fa3f7420e6669864ac81545726b6cb9aa"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-43",
+      "ref": "요한복음 1:40–42",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "3cbc1bf309b45d721c1a0ded2e0c04ff99b28af8301104d99d6b24db1178df35"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "0e4122adb6f7d645c4689f2cd2a527b6e4f93823d839d804af26fce34fae1478"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 1,
+        "sha256": "05cd1ac76b1152a06c4430318bc1d5b2f2a0a78864ec5d3753be7e8046d01d9e"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-44",
+      "ref": "창세기 9:23",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "b1eecc7f682c2c81fa24274c8864ae13aa9252b47fd9c0dbfb85f1a50e87298c"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "97953100b80aa461a2b7f6e367f66e4e77297fb3ac5cf29a48689fa3ed255073"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 9,
+        "sha256": "bcc8563a819dc579279d265360af170d73157554a157d38d44361d0eabe9c945"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-45",
+      "ref": "욥기 32:6–10",
+      "bible": [
+        {
+          "file": "개역개정_job_욥기.md",
+          "sha256": "4563df76f0fd70b124658ab1120f7fe14ecb5fbf8b8e673a6116c6612110be98"
+        },
+        {
+          "file": "쉬운성경_job_욥기.md",
+          "sha256": "26f16107c664309c56854b58deb4d037329ef849a5f6f7cae71f67d653eda04c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_18_욥기.md",
+        "chapter": 32,
+        "sha256": "06a1b200a381bf9122673e3439e5367a29866696a5f7d4c60a7361f53a1107cc"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-46",
+      "ref": "열왕기하 25:27–30",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "b5f623d224d5e843ebc19defd912f4fdc93e21e58c57be3eb7fd763cba94bf68"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "acdf484ffb758279338628e96f0960380b4dbe320c9c59e15467121ff28a3d60"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 25,
+        "sha256": "096363f313578d5a423e53f12dc9282ffae72a0e12ab6fe410f0c966b6aaa10a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-47",
+      "ref": "열왕기하 11:4–12",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "a8bdf5087709dbbc2a56333785ce341d03a7eb3336e765a8186b1c8daa2fc5af"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "90dabda6a1fcb51d4dda8c5a44f04ae53e16d4ed51e311960c898b6f70442b47"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 11,
+        "sha256": "294c750979cb82e75d2f7a224f860ae5ab50313ca6e8a58c64c83bcc96a6e51a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-48",
+      "ref": "열왕기하 12:4–8",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "306374f45809ba24b18640fd152072ff2f24901085270d3b27858274254e61a5"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "be9c15641205f927a177f2f9d290dfb9c8d9f0c3466c19f6d3e0a28feb5a7e37"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 12,
+        "sha256": "df38ba55352ceb250bd4fd28b4b75971ca31447e0473f64777a21c6a2c3373c4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-49",
+      "ref": "출애굽기 38:21",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "b889e4e46e72e48b854a9d822c150264d2261e2243937d55bf95ac72f83fd443"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "64432c7b10b08bfe8e1ad9255e5da4acc0b33eaeba2038e9c65034fda8083716"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 38,
+        "sha256": "064494a9e2e15f1d083b041593df7dfbc5068aab3cb9f32b2b738855a694b2af"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-50",
+      "ref": "열왕기하 8:12–15",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "9ff7b3c5116cf863f26feb98712e9bd2c7f97d6ce7af4f6b11f0142a3ae5ad57"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "b140cf66956f71db108fd5a7702e71cd1432de18ca27c2f0da3966ed809ddde8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 8,
+        "sha256": "aab1a3036b158d6eb18252b20583dbe77ec9024a8723237796e8e04a7c6b5aad"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-51",
+      "ref": "창세기 9:22–23",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "00a1e492fdb8fd7d2dc7464d15177fa2f313891afca7d9791cbd7dde59c177f8"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "25f3585d13616f41e173a70c497e4cc9c1067d706f63af607c166ba76de677ae"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 9,
+        "sha256": "bcc8563a819dc579279d265360af170d73157554a157d38d44361d0eabe9c945"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-52",
+      "ref": "역대상 25:1–6",
+      "bible": [
+        {
+          "file": "개역개정_1ch_역대상.md",
+          "sha256": "546802467526b20571c286c0f842f6ff3c3e27a044a049061f1118a85d92803e"
+        },
+        {
+          "file": "쉬운성경_1ch_역대상.md",
+          "sha256": "03d6781b0c0bc4b3bcf44a688d48510fbb3a5b109ba9107c279b2a9bfc61a593"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_13_역대상.md",
+        "chapter": 25,
+        "sha256": "d0319694ec2de0211538ecb017d4a7676eb6d8508c2299c6efc3ec531bd0dd94"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-53",
+      "ref": "열왕기하 22:8–10",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "5a2c158db1f683ce8770a26e6b344fd5c6a6a51106c4a3e73ac673951ac72f53"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "61fde4daf417eb4bef1027e868a7002886936607ba2cc43ac2906d9619d89d94"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 22,
+        "sha256": "354821df7865392c2286ef4fd0d35e1752a9894fdc363286d62af582207c90b4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-54",
+      "ref": "창세기 29:21–27",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "be4f77ef39021e7059c0fec73b0f988dfe321fb03eec2c54bb55f8bbe5cb803a"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "d0f1b8ece8f40fa9c16410a12c3501babbce8ed203d7193a59626153f5f4a151"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 29,
+        "sha256": "2d95216b450c8d88f83be62b4c775bf75c1fca54a0d0ffc8839a48e3b2f9b84f"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-55",
+      "ref": "창세기 14:18–20",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "8e1fc1f48e438535c442a4bd32d971814970783a764a921540a7da5387bb2c78"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "3f00c10f930280e7f5dfee4ed0bdfa807cf02e3508860e9fdf5bb3c17fb20ccb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 14,
+        "sha256": "8c5a92ae20ecd897acefe3888d51704fd88faaaa72dbc3870faa285ca4ab2e39"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-56",
+      "ref": "사무엘하 9:6–13",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "91a9ec6ef2f8ad177f1441b110e2a51c62ec8a038c2bb3f05bc29745e944b344"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "268035096c8043535f70e04ba88143c857e8f4cf1e707994a8163b6c2484ffb4"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 9,
+        "sha256": "3b96ef9684d7356332e3baff94887a78878ca9ca6b0326f353eee0262b7925a5"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-57",
+      "ref": "출애굽기 2:5–10",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "805e7597075a7c4ff3a0cc478c1f0c88de7bf1c05f7c597b7b64c682e3b44621"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "ed89dd9730cfc9eb69d528e12af39d25ddb7500a967ca217abdc4ac82579234b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 2,
+        "sha256": "1c462c9f21deed70ae62daa09f0858a6204b6bec9594f453fc64f49b4bd2f941"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-58",
+      "ref": "열왕기상 1:15–21",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "82d34da9b321001344ab640f74d5a6cdfeb5c321b448730b993002ce3b7a23b5"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "2592b83c7c76ca7e27b1956d0afc06fef0bf9a38cc10fb12d8873b6b1c7c6e8e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 1,
+        "sha256": "87628e4be788509a5b17b5c261e9dfe1f4a3fd2fabc3df5a45d3df0e3c7a9cf4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-59",
+      "ref": "열왕기하 18:17–35",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "39bf01c11e1c07f0a40d71f34fd7b0dd95974490110c0bfe635108d93c4958c3"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "01d5406de3282957c06a4da707f2f8bd3d11db019d8619c7cffbf332802187b8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 18,
+        "sha256": "b43e1823f077738c5e61515159276bddeced4159c9ee3e9c2d537d9e017c8635"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-60",
+      "ref": "스바냐 2:1–3",
+      "bible": [
+        {
+          "file": "개역개정_zep_스바냐.md",
+          "sha256": "f4ca1b36bb572b20f1d3d4805cb2238f0a5d621a7658f36331dfaf0ea5285d4b"
+        },
+        {
+          "file": "쉬운성경_zep_스바냐.md",
+          "sha256": "b6e3675ebee78549696c873420fcb08d4565a395c626dd8b5913052faea61cd7"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_36_스바냐.md",
+        "chapter": 2,
+        "sha256": "7d8a3bf02c7d7bd284f25aab60c1e561a18e5846a994fa8b600c3f3c03fe6d04"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-61",
+      "ref": "사무엘상 29:6–11",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "022f6e5ac39e28457f60ae4feca2cd2b04671fedd65c8fb134bc72630df37d0e"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "626a80319300f241ef42f9d18dcd21e233f12349a6c88e59ee43c899bbcf8b00"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 29,
+        "sha256": "2e117ecec7bbbfb91a67c4bd015c435767d9d1b97dfdaaeb109216b65966730c"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-62",
+      "ref": "사도행전 9:10–17",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "8644aa2b78d6068e91b5ecc945774ba5514d4e1010d41675af9bd7c933521b75"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "b7cb803fe50e54d53c09a4a962a795c3080f62d44a998bd495f743b8b7994f15"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 9,
+        "sha256": "65a793218ad6ae72a81db1832a90f7bd29610bb5f26330f9ba151076e088a03c"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-63",
+      "ref": "사도행전 5:1–4",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "d0f563bf670ea2149e5608647a609644ea184212e6e75d707aa1bd8ff5c7a123"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "87ef9689a6791a09aee6196b4900f3a9c11a99951d1f7e22b30e7ada4f658b68"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 5,
+        "sha256": "a4d93f0c7fc6273a083e84b153c2c8390936821a04aeea1cc18bed4f1b90e551"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-64",
+      "ref": "사무엘상 25:18–31",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "7afaf39541fa8e0fe657d35e1530431d56e6328a7e1fae3ca04ed3d144a834ea"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "a73a794bca358a710768c2b2532b4e15ecbb9d9a035a024e0cceb14981b9bbc4"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 25,
+        "sha256": "aeb7993d97d183bd714bddf7ce61a45fba4e793ac1812611ae5c10047f27290c"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-65",
+      "ref": "사무엘상 7:1",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "b5fc937a4cf46bee31de026f9ce7b8d4896e8e21489f316d9e9e822a9a662ade"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "0d5223c5f8d2de8773c635dc118981b29afd2d951731777fe8f49f624ef91935"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 7,
+        "sha256": "73e29a126c3d970905c1767a271b93a916fb4e4615423e428ca1104c2b4d169b"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-66",
+      "ref": "역대하 13:4–12",
+      "bible": [
+        {
+          "file": "개역개정_2ch_역대하.md",
+          "sha256": "c057e3e0774cde3546ed51a371200b0a95b96c9f49e800ba57b67c7ba20cf5d3"
+        },
+        {
+          "file": "쉬운성경_2ch_역대하.md",
+          "sha256": "9b0db436ba4a34e20b4ed07ebdc4a4a999f991ef97317d1fb60425d02c86d5dc"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_14_역대하.md",
+        "chapter": 13,
+        "sha256": "2205730ebaa7b07ad6e0dcc63ada3b85ee8c86289028e87ac42dbc6eb59e4cac"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-67",
+      "ref": "열왕기하 16:7–11",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "5b180c92abb7867066eceb1e84ed5a256a9f092523970cdd8c8af5ff01afc5e2"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "a2aa06c1513b2a16ff2eb92c16554bfffe42ad70fcde5d2f61c48ac8c007285f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 16,
+        "sha256": "0a9d76fb18892e3d5826c9a2d7d728fcb5c215497685198b9647bd0a240ca6c4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-68",
+      "ref": "사무엘상 25:43",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "a80a2c4cac36d122e2faf241df294f58cf4025e6a326f9db081e0158db49d65f"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "5686ce7a3729fc39e979c0b8b925e2986567b1b38e9031ec534ce18f3ee552bc"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 25,
+        "sha256": "aeb7993d97d183bd714bddf7ce61a45fba4e793ac1812611ae5c10047f27290c"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-69",
+      "ref": "사무엘하 17:1–7",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "24d50e1854fd7181118b73e3e98774f18741a53c19ef81ff0c3f85e5d8fc67d8"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "849b3b4773cbc98ca3202fb9f22dc6d94d69b52cfc9a2b2cb5f6133701a6a9cc"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 17,
+        "sha256": "6fd12bc6c88cc57ff5931d4ef3c0a4966a9e2d83cbdb7c1283d03e0ad9011248"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-70",
+      "ref": "사무엘상 21:1–9",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "2f8da4e599698c89be7d164c6d68444e7e98afcfa3703bc52eccbe5b32d54fb0"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "9a4840fdb57e17074cfdfd6fb24dd33f295ac4deae1b07edf8401b9dd3fa32f6"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 21,
+        "sha256": "57cd3abd627965af2d9e044924592a201cec8aafa7bc905851a96d80addc6fea"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-71",
+      "ref": "에스라 3:1–3",
+      "bible": [
+        {
+          "file": "개역개정_ezr_에스라.md",
+          "sha256": "79fa2b5727b30543dbed1d82f8a9e8de1093cf5e261a040d46faf975d888fe71"
+        },
+        {
+          "file": "쉬운성경_ezr_에스라.md",
+          "sha256": "fa7eefc7478822a2bce34301cd9eadeaefe6f713c9ba9907399deb49b0b76961"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_15_에스라.md",
+        "chapter": 3,
+        "sha256": "a3ff513b15e28a812bbeb55979b76a4bf8088c789f53c04338d7b916fc0268d6"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-72",
+      "ref": "사무엘하 6:10–12",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "bb5331fc7cdc18567b478de2b71c0797b84f13970908487a34b611ec184c3db4"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "c3a1b4333c66ab25514afbf0f9d69adc0099a21a1201ec2b4e9fdffe2ec7411f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 6,
+        "sha256": "33e6714f1cb7d003e6cecb7c9a5e4728b6ba2dd696b06a8476669f7e1b64907d"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-73",
+      "ref": "열왕기상 5:1–10",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "802d5219e449745ca1191e1925a58a4fb7dcde8addbf59e9a80505acf634d309"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "022cfcba6f6bbf67c9d9b3f2ad29d7fd2a17a76b86c65fc48c3dc743379a612e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 5,
+        "sha256": "2cd54761b551a484269f4d863bf2d97d1f7273320c8e063a34423fa0b131e5ec"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-74",
+      "ref": "요한복음 11:47–53",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "97e93a98d04aea751f065d49eb7681a823bfd4a223c8ef5c46f17f631f7a414a"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "4a6f91021757cac5288ce31bc2cb0bdcf26f8b5ddd8099960a6b134a71a86875"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 11,
+        "sha256": "d9e89b89fcbceb0ff18caba27878d769db2bc7dc6d959d60d0cfaca60280cd66"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-75",
+      "ref": "창세기 16:1–6",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "84d72d78eac4f73d4564eed747460527679a6f8372afa9f366541eb1c422a7a2"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "44b4e0a042831021eae0425cde7e5120e8f135d0034df7dcd9a3158e2af65ad3"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 16,
+        "sha256": "e2913fd9ab8754ad957dceb950be85014a564e2366a023c7b1470478c6f82777"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-76",
+      "ref": "창세기 16:7–13",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "4749b887a943e83b1d7c268668984b3975074672c736c73ad82e332f94d5f7b9"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "b5d10f1f44ae2ffd9ef8dc5541268f0a6c78fbf09090849744a9d46c093ace2d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 16,
+        "sha256": "e2913fd9ab8754ad957dceb950be85014a564e2366a023c7b1470478c6f82777"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-77",
+      "ref": "창세기 34:1–7",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "feb9002244f6378ce25b5917e338914807c2fcd5ab2406308adf98022cad3d7b"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "144d57afcc0ccffd7bfd4597edc6874c136a7e8478805aae1133096ccfdb0ad2"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 34,
+        "sha256": "2d9f8c475c4ee61a793c1487ac6e7e41e9b6600e731c262bae61ead11629c340"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-78",
+      "ref": "요한복음 20:24–29",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "fe0a682755e327ab128bdc63445d08f757a8b1b75da30518cc3e23eb92369746"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "eba47a04350ea8e1ca679dd10e5a4029d081e9df90aae6adaeb1a846455cf1bb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 20,
+        "sha256": "176a310d21036a7dd59ba66dbbe2999ae335d2d4adc87c709bdbc9e30dc03f02"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-79",
+      "ref": "요한복음 1:45–49",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "e0b2ad22d77ac037f672bd4e6047d71554df09bd3ce030c7d2c0dc35852b239a"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "bdf2ca13c4e4ce8bf1948bcfa4afe4f08b0c3b1dcdc32cf3ded18f55947cfe2d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 1,
+        "sha256": "05cd1ac76b1152a06c4430318bc1d5b2f2a0a78864ec5d3753be7e8046d01d9e"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-80",
+      "ref": "요한복음 3:1–10",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "058fd46927b925b55f9803954cbfea1b7b7f56ca475315af3fb19b879d509816"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "fd1565494734840df235d1d93f0e3ac4d731bebd8b7527734751e557657dd462"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 3,
+        "sha256": "046a0ba8cc1508e6a0158ba1886e0cefcf6460a52ab2f072ff22b29d29483f71"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-81",
+      "ref": "누가복음 10:38–42",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "444724cc27f41baa9e39d3493c2cd35d68a5453b4c16bd2ca33ebd6bc6fd6555"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "30161ca737fed776260332705ef4f9951ec4a0aced7950bf877c36df34697d09"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 10,
+        "sha256": "edbd29cfc1cbacb1f6101c4b38704248bfece65d93f183a8c206971e3960f9b4"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-82",
+      "ref": "요한복음 12:1–2",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "76bbd86637b7295a4fb07d03866c5afa7d653e5a5657f3f731b6142bc101f849"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "af213f4645e47ec6bba333c8b17d86674a214ed795a83c2e47842644ad27a959"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 12,
+        "sha256": "83230345d241120f5de54d3045ab9c34724a7bb23df2e5172d4bbbe007c1e38a"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-83",
+      "ref": "누가복음 19:1–10",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "ffb9dac6d70cb122821341f93a11287092fed5e098f496fee701b92d7bd88c82"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "09f42f40c868353b05ada9bee947551bf55c99e9d9eca361c62712758035e4c8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 19,
+        "sha256": "198d75c67bde586f176d89383b6ed68b003b525e6393cce35ba01e225ba64b9e"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-84",
+      "ref": "마가복음 10:46–52",
+      "bible": [
+        {
+          "file": "개역개정_mrk_마가복음.md",
+          "sha256": "811f48d07a0eab54023806653a69b1aceca35e5f6c368c0b958fd32157d3521f"
+        },
+        {
+          "file": "쉬운성경_mrk_마가복음.md",
+          "sha256": "821bf20ed749e59c92d6a2df5c6f6c65f0e3d34c3a1e8a0be1b50cf1e3e17f5d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_41_마가복음.md",
+        "chapter": 10,
+        "sha256": "4b35651c92b49d3a2d7476e9793cf9d21abe390cec909f13ac9613309f1e5122"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-85",
+      "ref": "사도행전 10:24–33",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "084f494ffa8dcf65aabc3bc842cdd464aca932cdeee732e40f7a2d1f8631f34b"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "4f4d23b120765f65a6f35a3fa6b760273a20c9d0d7145918e24793ad3656fdcb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 10,
+        "sha256": "54bb0d6312e543bf6fbe9c0c9b4c792c88625f5a45f606a67be253ad07617ecd"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-86",
+      "ref": "고린도전서 1:1–3",
+      "bible": [
+        {
+          "file": "개역개정_1co_고린도전서.md",
+          "sha256": "b9c741cb46db5af33f4a947d1c31c789f721a87ce8c70496b52513198efa177f"
+        },
+        {
+          "file": "쉬운성경_1co_고린도전서.md",
+          "sha256": "6e6484c438700c1ed98e4d1bd9ac7c6e15df7befc185cb0ae707d359ccf5c6a5"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_46_고린도전서.md",
+        "chapter": 1,
+        "sha256": "a042038df7df0720458f08daa4229661b7ae744b556f164c186943ed5d705564"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-87",
+      "ref": "빌립보서 2:25–30",
+      "bible": [
+        {
+          "file": "개역개정_php_빌립보서.md",
+          "sha256": "282f9b098c29abf347969d1dffa2dc2616bd5c3c65dc5cafebdb1603b761e544"
+        },
+        {
+          "file": "쉬운성경_php_빌립보서.md",
+          "sha256": "fd9bc7bb6aa79b122d560416152043af095e9b7b1745a84233ece7a81e45ed68"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_50_빌립보서.md",
+        "chapter": 2,
+        "sha256": "90e6868df03fd61fd0d78aab0f09d249b20209a8f78637cc4c58afbf53fa7e1e"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-88",
+      "ref": "골로새서 4:12–13",
+      "bible": [
+        {
+          "file": "개역개정_col_골로새서.md",
+          "sha256": "4d226e0394b8f3cf7c42c3cbfbb68c6f53f319b1f6c09b8977b4f508763e714f"
+        },
+        {
+          "file": "쉬운성경_col_골로새서.md",
+          "sha256": "ee8a3ba08ccdf6039cd46b7a83b12a0ac22beb482504f1e43f470a437bf53b75"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_51_골로새서.md",
+        "chapter": 4,
+        "sha256": "7a31855cbe29ae5622ca768acfd8fd92bae972288df4aedcb082031b296a3d40"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-89",
+      "ref": "디모데후서 1:16–18",
+      "bible": [
+        {
+          "file": "개역개정_2ti_디모데후서.md",
+          "sha256": "df226c6d261fb1d1ac0acd5a1859ca714fab79fe97dc164e487881ccaee276ae"
+        },
+        {
+          "file": "쉬운성경_2ti_디모데후서.md",
+          "sha256": "7cb53187778629c812520887c464840fd40d82e24ef42787b6b6a435bb32cd2c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_55_디모데후서.md",
+        "chapter": 1,
+        "sha256": "03fe3c9eadeaa0ee0ba65864cdd51b2f93d5a77322bc814aceb3dc5414957bc6"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-90",
+      "ref": "에베소서 6:21–22",
+      "bible": [
+        {
+          "file": "개역개정_eph_에베소서.md",
+          "sha256": "07d7033abdaec2c841a8aea117a08f70d832a232899cfd5681e01ddb4bd651a8"
+        },
+        {
+          "file": "쉬운성경_eph_에베소서.md",
+          "sha256": "e7dc012152d43ab0234c00828f9f5c5756a100c82928dd04ba765bea6d33fe8b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_49_에베소서.md",
+        "chapter": 6,
+        "sha256": "ac20ecd1fbe0539a87b8cf77381220c92f748dd305fdfc7c6575d9f5e92c1e14"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-91",
+      "ref": "사도행전 19:21–22",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "39b8dabf50aa26880a44ecd81af16d5b6ca9668e00fdfd4aa5e95b3263f8df3a"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "2ee4bd32aa6a513bad65e1db876803a3f85a3d24268b9278a99bc66c4adcba06"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 19,
+        "sha256": "f332c0f671b8fa501d6848734a33c4df9c45d063455634555223b932841bae13"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-92",
+      "ref": "요한삼서 1:5–8",
+      "bible": [
+        {
+          "file": "개역개정_3jn_요한삼서.md",
+          "sha256": "d83edea2e26e6ecef3b99990741ca4797dd16e1dd652c3e087bc3a7ff43726d3"
+        },
+        {
+          "file": "쉬운성경_3jn_요한삼서.md",
+          "sha256": "fa179e16fcbbdc87b80f68e885f378ca2e0ab33e3304572e670841600bb96000"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_64_요한삼서.md",
+        "chapter": 1,
+        "sha256": "03e8ed963f7e3efe9a577d0ea1bb302432566758d5c7ae4d6536c31faaf68a70"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-93",
+      "ref": "요한삼서 1:9–10",
+      "bible": [
+        {
+          "file": "개역개정_3jn_요한삼서.md",
+          "sha256": "2d40a0f1f88e4431879746c706c62cf1d45fe7d27815c03c0d14592b9d073895"
+        },
+        {
+          "file": "쉬운성경_3jn_요한삼서.md",
+          "sha256": "cf59c0521290e5a62a209c8d00ced480843f5481e8508206f648f4e03fd448e4"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_64_요한삼서.md",
+        "chapter": 1,
+        "sha256": "03e8ed963f7e3efe9a577d0ea1bb302432566758d5c7ae4d6536c31faaf68a70"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-94",
+      "ref": "요한삼서 1:12",
+      "bible": [
+        {
+          "file": "개역개정_3jn_요한삼서.md",
+          "sha256": "6b0301364d5a198d221d872bfb0e5c91bc77f9e87ba166a38e1e72902ef1661e"
+        },
+        {
+          "file": "쉬운성경_3jn_요한삼서.md",
+          "sha256": "dff75dee95cccf1368ac99e8c37cb326d1843bd2f93f52de2b9c66867028bfa7"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_64_요한삼서.md",
+        "chapter": 1,
+        "sha256": "03e8ed963f7e3efe9a577d0ea1bb302432566758d5c7ae4d6536c31faaf68a70"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-95",
+      "ref": "사도행전 12:13–16",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "fd36f19c16fdd17c6b707ae0933cdd594da2f28a4735496ffab37b2d421a301c"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "ddb447d46ffa18fc4a8c54b096691fcf71f9feb1526aede45a54034699bbc09e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 12,
+        "sha256": "41169b61637e0be621a226ea2de3fbf5db7485dba19de2cd4e3617609dc39bb8"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-96",
+      "ref": "사도행전 20:7–12",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "ce93074f07e28bdf95074565bda4febff97d17687448c7d49014e1e3bf2f59c0"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "66a253bbea6cf144f8c653643265004587539ce25e30a3f4b92416600344efb9"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 20,
+        "sha256": "96b726363e0882317f374ac4cc39f090743a794e72931570b751cf39edc4a477"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-97",
+      "ref": "요한복음 6:5–7",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "d0582e93dcddc83e68d8d32995f745c4de1d53f05294f2bd043df47f5638ed54"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "4db167052786aa2cbc284dc0f547f2a127869501ddce3dc8bda84311881eae7d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 6,
+        "sha256": "fb19d681917cc01b9a76031b76037eece8f997ffdadacea4e7a6ace945c190b2"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-98",
+      "ref": "사도행전 27:1–2",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "f94dd7179044f6e6600a02afc7a4baa6258b8cac4c67169a5a6efa4301b0b4da"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "dffc65794ff860a840fb278c94384f21a5bdee12622cdf646d5a86d31bef23e6"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 27,
+        "sha256": "686cc2db9c465dfa608ecc15bc485086a31016869ebd427cbe995dfd51049aff"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-99",
+      "ref": "디모데후서 4:10",
+      "bible": [
+        {
+          "file": "개역개정_2ti_디모데후서.md",
+          "sha256": "36f6d0d3f5e6018a3dc93320c4ca414044e33ebe7a5145a2fccf4b3f17d9c3c8"
+        },
+        {
+          "file": "쉬운성경_2ti_디모데후서.md",
+          "sha256": "cbae467ccfe1d5ad6652712f23bafb3ee4c7772b7b4e9f3e05e74b4842773ba1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_55_디모데후서.md",
+        "chapter": 4,
+        "sha256": "693c5cf8b830e6ef83c2d03ecc37f8c3a8e2d5d1b34ddb2338e9243368d04e26"
+      }
+    },
+    {
+      "group": "major",
+      "id": "major-100",
+      "ref": "유다서 1:3–4",
+      "bible": [
+        {
+          "file": "개역개정_jud_유다서.md",
+          "sha256": "6d3e98d9daaad63eb29ff9bcf1f5463f2560e98f29858544c304478a65431400"
+        },
+        {
+          "file": "쉬운성경_jud_유다서.md",
+          "sha256": "6fabb5bce5ad67a4f5142af4503b7706a0fde924b1de6d38622345656122d50d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_65_유다서.md",
+        "chapter": 1,
+        "sha256": "54682159b709efa4ed9a12421c12d8cce9f1a7b3f9917a70b7227e3cbc7f6b11"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-1",
+      "ref": "열왕기상 21:5–7",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "10ec8636afed87fcf55cd85b0bc500beaa235f68ac48a05d8a7f258b081bda8e"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "8ea7599860fa7fe7108b532e78f5c3284e9fcef7f7a646df474de9a99116306d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-2",
+      "ref": "열왕기상 21:4–7",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "a3758c3465da62c70acf91f3ab66ec9bfc67c7873cfda1230139ebb6af309166"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "ac9a0607c80eef9e5e799337f22189d9d6d4e688d3029213ed72b02c8b416a84"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-3",
+      "ref": "열왕기상 21:7–14",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "46203d91f7c2cf2b26fe560fe783e953468af1e4de8b37a7db58c6fc11cccbff"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "e563d1e3a382fef971f59dfa6cdf81255455989f923b13ea0e93984ea4b468d1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-4",
+      "ref": "열왕기상 21:1–3",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "ebcd8ec1cab3a052b702fabd108670591259ca70c4e46f3dae76cbec99b49b7a"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "27c3fc37253fe49795ccd10b93cc7a1081908bd51202ee10fd2fc402f0745ebd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-5",
+      "ref": "열왕기상 21:1–3",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "ebcd8ec1cab3a052b702fabd108670591259ca70c4e46f3dae76cbec99b49b7a"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "27c3fc37253fe49795ccd10b93cc7a1081908bd51202ee10fd2fc402f0745ebd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-6",
+      "ref": "열왕기상 21:1–3",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "ebcd8ec1cab3a052b702fabd108670591259ca70c4e46f3dae76cbec99b49b7a"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "27c3fc37253fe49795ccd10b93cc7a1081908bd51202ee10fd2fc402f0745ebd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-7",
+      "ref": "열왕기상 21:17–24",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "a3813d71537873bc60f1d4f55bfc0c87d594632ea1edfbf547db845397c72e55"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b9fb3f2fa3a5aa5518ee03f8e43c3d15f839ff2c7869a4cc12a9502c09ad798a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-8",
+      "ref": "열왕기상 21:20",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "648d4e5b17c9e65cc9d4c4f0c4b6281b05a0fecf464d644699b6ea5915965441"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "28541e42a495b9c01e91e7f3ef31ae6172ae24e5a59e072433e1acfaa03ec65e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 21,
+        "sha256": "412692929a9253670f3d80107acb7213d9ead6de12cfd3eafd317278c696ab45"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-9",
+      "ref": "열왕기상 19:1–2",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "7ae9bbe155bb9de33b798d37cae2ba50b6c818cac42baba34ed6fc7d3aa598f4"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "85ab2c54a5c668fe4a0d82002df599db20ab3afc747b701e3d6e9490b30b3faf"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-10",
+      "ref": "열왕기상 19:1–4",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "63cd0bef0f859fb4e69ee5a8b5c7e510e6dc8a0a75c6d16476d4b974f2431edc"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "a5171160bc672a4a980986123ad2e1fdb8fe05b2ba2fa7b89a732e2a058382fe"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-11",
+      "ref": "열왕기상 19:1",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "19809b9bcc035975fd129a62ab139194fc67a62073f75f6705a755dafc0845d3"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "af6f5ec600e587a23e702bab764113757a262899b1507210d3fa02f69a7d1b56"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-12",
+      "ref": "열왕기상 19:5–8",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "622681b8292f86df228a61a3203a482d7cf31e550b5d447f06d740afbc707bc9"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b6968f8c6539ad0b1605319b30bf662ea62b112d1d30bbcfe92115ec04233dab"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-13",
+      "ref": "열왕기상 19:5–8",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "622681b8292f86df228a61a3203a482d7cf31e550b5d447f06d740afbc707bc9"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "b6968f8c6539ad0b1605319b30bf662ea62b112d1d30bbcfe92115ec04233dab"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-14",
+      "ref": "열왕기상 19:19–21",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "5f28e2e47b327267b180860e226ef9e48a5c74d7d722d05c2873457d885a2d16"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "c19fca920c2fdac54a147468813ea1f3fa198afc27b83d996b9f5896616b5873"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-15",
+      "ref": "열왕기상 19:19–21",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "5f28e2e47b327267b180860e226ef9e48a5c74d7d722d05c2873457d885a2d16"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "c19fca920c2fdac54a147468813ea1f3fa198afc27b83d996b9f5896616b5873"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-16",
+      "ref": "열왕기하 2:1–12",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "ddce97991a79303e09345a98e9a6905c0d89ce4219db0919a776ea4d8cbf1f1e"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "af1d43a223a7d4579a072e2d6faea32868428c6dfe9e02aeace68a8f1a1e121a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 2,
+        "sha256": "1e93679e1ed29ba5303e9f5801035171dd486df5d27bc158e8f3efec652b55e2"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-17",
+      "ref": "열왕기상 20:1–6",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "a7941a8aa98489128bd56077e526956a630def18e963079b357e75f11efcafbc"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "44f0db392feacf1c315e39e39a9dec57764a3cd778971c2210436e0d6ee158bb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 20,
+        "sha256": "c7cc61176c16e5532b6d1a32ff1386a4969580aab4e19d8ca05a6d5265dc31f3"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-18",
+      "ref": "열왕기상 20:7–9",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "2547b63999e25057f3a9519ba2a859c07777004f0f54e9a7da1a73a29a617bf7"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "1a5f79cfd0fa6bbb3576c29e6c3aed39e305563ac3e9eeb62f6dd90e1c60792d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 20,
+        "sha256": "c7cc61176c16e5532b6d1a32ff1386a4969580aab4e19d8ca05a6d5265dc31f3"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-19",
+      "ref": "열왕기상 22:5–7",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "3cc92b53a766de50f5d672e3b1f54ecb94233b45555db9595a196b6bdaabec28"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "e8463b38aeaf6e2fdbcc0246d783440d49848f62efd52dc356dedaad58ea87ea"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-20",
+      "ref": "열왕기상 22:7–8",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "5e236c9cdcff3af3c86ac04567f45b85a1dcbdc40be248f118be9470894fe587"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "893e466f2b3bb095082795bcaa81bba9c5d9b6f6b71d66a6da7349ad0a626615"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-21",
+      "ref": "열왕기상 22:14–23",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "1c90f85654697275b2d935fcff7fe1963bb35ba03901b439b2030c7b15831301"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "0c65049b58a0b03bcc1b36bc63121959e910e845116b0eca461c73727884cf5b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-22",
+      "ref": "열왕기상 22:16–18",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "489eea21a798890de03d895f2d73971f80e388aa1f05cae459d2cdf52b979e13"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "0ba4068d32e784c3dec2c9f7bc4ce41a163a1dbd33764b135ed66c965492ad46"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 22,
+        "sha256": "c9c1da106a8f93acdd09d755f7bc5a7e0abfe91a10a8272d1e507d16e9af4fc7"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-23",
+      "ref": "열왕기하 1:15–16",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "78105892cb3d304404cc602c51a2aa90b4c50714ea44f1ecdb87cc25498b750d"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "d2370ec9b62dee79003c2f6cba04ed4584f366570e998dd105348062d0e25b09"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 1,
+        "sha256": "24f77336a86db7c8f50014d004a4b89253299db25d923ba6bf0932f66167326e"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-24",
+      "ref": "룻기 2:8–13",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "3adc58a39f0296610d9925dd1af541add3659c36d74e07a91a4569efe03ee289"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "499d8def7eabfb7eb8af1ade6070743a68298871abe5dcd0a8aadea913ec4333"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-25",
+      "ref": "룻기 2:8–16",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "ffa4573bba9748e5aa38f207e0612dfc0965ba5ef1f11b7efaba3047bf4322fe"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "4d5c6d7777d5349f4509408564486752a93b4797bf393c8f524018f299f64210"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-26",
+      "ref": "룻기 2:17–19",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "5192214d76585ca06556efec58ddc1fb060b924bdc74b3a28b122950f747456c"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "f103e46c503666d22c9583fc6461b27e392622f205d6c378d878dd5d06815f2b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-27",
+      "ref": "룻기 2:19–20",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "2e0e9c5e68bd9e466456ad2e0b82bf700c418c907502dd20af21f6740e8bf56d"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "80aa8b8c960271997472fe183e731714bf73f2fda88f7f64464680ad23382b55"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-28",
+      "ref": "룻기 2:4, 15–16",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "82601abcab7b78896134722dc1453da5e8d9ee7226c609ca083664a5409b1c66"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "9e71a494f54d67dfb0987c773b9bfcc74a8d25030e1561652ad9eb94227e675c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-29",
+      "ref": "룻기 2:4–7",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "d1a86004ed5511d24f2622ef6925b7ded092057d96e568f37469f2306000ce4c"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "ce12afc3f32d3b7081edd55af19beb0a91136a79ff386e1569dbf565a3e1f7fa"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-30",
+      "ref": "룻기 1:16–18",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "684fcc168575fbe64cb7cb05a5987c7869164004baf5deeb36594859e5af2f65"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "fb100b724ede6c09f9eab3d068bac641d6c6253dbc3c69791cf9cba8a1e4d6c1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 1,
+        "sha256": "cdb4cdb4af29b373c38a186621564241fce44b615928d2cdab7bc4ff7b95a909"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-31",
+      "ref": "출애굽기 4:14–16, 27–30",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "897546f1dddd867254cc3e1fd1ee1e197e4e0ad6de395f7250768ba68810fc16"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "f93657bee7f1ab4f244ccdeb8296b69179aa2fc31784519fe28e9b29f8903f6d"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 4,
+        "sha256": "9b0c7d2325122b61c32aaa93ca477127c38bc3d572f5cf148eb40199dce04b9a"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-32",
+      "ref": "출애굽기 4:27–30",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "c0901683d46452ef586c5f8c7d19ddd0db1a8fad2e4049a00db27d245ba1b9e8"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "e05adcf2f67de45299ce3f81fcbf69957f0c3513d30ab272e9016af4bbeb434c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 4,
+        "sha256": "9b0c7d2325122b61c32aaa93ca477127c38bc3d572f5cf148eb40199dce04b9a"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-33",
+      "ref": "신명기 31:7–8",
+      "bible": [
+        {
+          "file": "개역개정_deu_신명기.md",
+          "sha256": "433605f3e20f6921d0b39575e45a495660494915ebb2b49ea2ca767688c1bbfb"
+        },
+        {
+          "file": "쉬운성경_deu_신명기.md",
+          "sha256": "2c5a3e9cb85a6aef9d6d88a0dd739f5c7dbb70fb4380841b6a4a3acbd437cf6c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_05_신명기.md",
+        "chapter": 31,
+        "sha256": "26029a6601c7307fef496a9674e7c1924eab5ca3951d81ba62218663448213ff"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-34",
+      "ref": "여호수아 14:6–14",
+      "bible": [
+        {
+          "file": "개역개정_jos_여호수아.md",
+          "sha256": "c03ce0794c06328be5af57f0aba41e6d70a316075f11055317d886a5819864ae"
+        },
+        {
+          "file": "쉬운성경_jos_여호수아.md",
+          "sha256": "c7b1d88946d5b333ff04162d8e10440484451a15e86bfdc32a93943609ea49fc"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_06_여호수아.md",
+        "chapter": 14,
+        "sha256": "c9ec7dbfd60db03630158a9760e4f48fc6e1c38ecaf0d5795f89e619bf6ac14c"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-35",
+      "ref": "여호수아 14:6–12",
+      "bible": [
+        {
+          "file": "개역개정_jos_여호수아.md",
+          "sha256": "2c8d45e46f1fba18aab38bc15c3d76e79f0facecc9bccfe335156e83a1a1336c"
+        },
+        {
+          "file": "쉬운성경_jos_여호수아.md",
+          "sha256": "1aa018a43e2a1b1c01f0b8924d918ad65c2e856cb5db3823ee020b3ffcc4b655"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_06_여호수아.md",
+        "chapter": 14,
+        "sha256": "c9ec7dbfd60db03630158a9760e4f48fc6e1c38ecaf0d5795f89e619bf6ac14c"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-36",
+      "ref": "사무엘상 18:1–4",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "52130224e9383e4bda7fdbd39571dee682b7e206fa9d76824d01175064c886e8"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "5ff8583f4ceeb00662903157be8cc2c1d56d32c0911d4ba5099d60c27fa0eed0"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 18,
+        "sha256": "8c29533d28fa14aab9a81c74a1e3845441ad5acc8173e31e7492dc98d98a4290"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-37",
+      "ref": "사무엘상 18:1–4",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "52130224e9383e4bda7fdbd39571dee682b7e206fa9d76824d01175064c886e8"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "5ff8583f4ceeb00662903157be8cc2c1d56d32c0911d4ba5099d60c27fa0eed0"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 18,
+        "sha256": "8c29533d28fa14aab9a81c74a1e3845441ad5acc8173e31e7492dc98d98a4290"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-38",
+      "ref": "사무엘상 15:17–23",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "ccfd1bc1253da8edf651be991220c65c15cc5b7e2580b7d0e2a82a362dbb8da0"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "cb9c902842b4a8ba7a210e9cc9d02b987ce6f164a3418f735cb1fadc171a53dd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 15,
+        "sha256": "03d91d37a8ed811d6f45bdc728210774e1f1197308ff4dd7343ade4902a01137"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-39",
+      "ref": "사무엘상 15:20–24",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "f166c249d6ca86ef5ff17d1e979e08c1a82687e11cf32cd18b431c383462fe8d"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "b562e5c57ba4c9c39e6107cb6eb2aa6a1d42b9edcbe7a6ef4aafe9d8f4d63d33"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 15,
+        "sha256": "03d91d37a8ed811d6f45bdc728210774e1f1197308ff4dd7343ade4902a01137"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-40",
+      "ref": "사무엘하 12:1–7",
+      "bible": [
+        {
+          "file": "개역개정_2sa_사무엘하.md",
+          "sha256": "6154a7b744942632d3a51b153f631b60e6e30c75594b6a19e3e3dc9afe22cf25"
+        },
+        {
+          "file": "쉬운성경_2sa_사무엘하.md",
+          "sha256": "f2ca7217949a8771934c5cedc4b1c3026508e24094aceb3ea778452a806aa25e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_10_사무엘하.md",
+        "chapter": 12,
+        "sha256": "28228a9ef17b18e432dc8d332a3ff2b404d469e727197cefa421feefb0ad16a3"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-41",
+      "ref": "에스더 4:10–16",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "e0f415a606e8e867bf2289ebe661c1de7b87c42e7389824289360430dbe21f6c"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "17f1a332fd7b4d04c0e67953fab3e1a86b8ce2234eb959f0bc0a87e2b77038ce"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 4,
+        "sha256": "4d771d5d7b087cfc7cc14aa0160f98b930c7bffe54e4a6ee1827e0f1dd58b4d2"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-42",
+      "ref": "에스더 4:13–14",
+      "bible": [
+        {
+          "file": "개역개정_est_에스더.md",
+          "sha256": "27e3d1b9a46f720f7a43ff2c689e03342cbf72f783f0d873f6267743bdd5c4b6"
+        },
+        {
+          "file": "쉬운성경_est_에스더.md",
+          "sha256": "7234556b911e708efb92478625f1ffccd45a77ac502e51cf632296b69d6ccecd"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_17_에스더.md",
+        "chapter": 4,
+        "sha256": "4d771d5d7b087cfc7cc14aa0160f98b930c7bffe54e4a6ee1827e0f1dd58b4d2"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-43",
+      "ref": "사도행전 15:36–40",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "f70be14b1b98568b333ca36821969adc067de983eaa9fe1ab9a5e5c6bba4c321"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "fcccce03b782ec98a3c7a04622b731e9b2dbd5b34fc17b03afdc52db87af14dc"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 15,
+        "sha256": "9385830eec8ee95b82fc9708574085cb4ae2f77ebfed93875f656e12af43f5b3"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-44",
+      "ref": "사도행전 15:37–39",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "130378160f9880c1bcbbf44547d824f39563388537b65179659e17526f30c919"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "bd2a48871eab516a6a14ad0a460f326acffd81a074567bb5420db3265de01a85"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 15,
+        "sha256": "9385830eec8ee95b82fc9708574085cb4ae2f77ebfed93875f656e12af43f5b3"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-45",
+      "ref": "사도행전 16:22–25",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "b175198b226d3f712f8a13369af5393548c0930d82c7d115866b83108fe3d0bd"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "2291bd91891caea5c37efeba4b576a07776feaaf7d92688f6092a474395d65d1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 16,
+        "sha256": "5abf4d06616543422d6fb2ed25825ed89ad5dbd973d1a43822ffc1db070306cf"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-46",
+      "ref": "사도행전 16:22–25",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "b175198b226d3f712f8a13369af5393548c0930d82c7d115866b83108fe3d0bd"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "2291bd91891caea5c37efeba4b576a07776feaaf7d92688f6092a474395d65d1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 16,
+        "sha256": "5abf4d06616543422d6fb2ed25825ed89ad5dbd973d1a43822ffc1db070306cf"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-47",
+      "ref": "디모데전서 4:12–16",
+      "bible": [
+        {
+          "file": "개역개정_1ti_디모데전서.md",
+          "sha256": "f66566bee05208abf38ab76462e85db797279828d8b353222e650dadc65ad23d"
+        },
+        {
+          "file": "쉬운성경_1ti_디모데전서.md",
+          "sha256": "f097054b8ef260feb406b536d92e4efb97b19db044e6cbe6b84e7b16235993ba"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_54_디모데전서.md",
+        "chapter": 4,
+        "sha256": "8c690aaac9cfe5388ad949bbf8e33d43901bee9a26578d6f2b1bd79876bc332f"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-48",
+      "ref": "사도행전 18:24–26",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "3e854ed23bbb0368db045af8fc2ac7381aac246956ee85f62e8866e61baeb2f2"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "907f9dd5184ede5a5445105e5d111d9270c0f8bb9deb281c87ca285985491152"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 18,
+        "sha256": "fae4c5655504d36ac2abafb44a83de002e4b2b8a251c5242e9d49455780ecedd"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-49",
+      "ref": "사도행전 18:24–26",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "3e854ed23bbb0368db045af8fc2ac7381aac246956ee85f62e8866e61baeb2f2"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "907f9dd5184ede5a5445105e5d111d9270c0f8bb9deb281c87ca285985491152"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 18,
+        "sha256": "fae4c5655504d36ac2abafb44a83de002e4b2b8a251c5242e9d49455780ecedd"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-50",
+      "ref": "창세기 24:61–67",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "ec1266f748389591df6e3b5f34748664210a11f872385130d7f1c6806c668703"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "8c7c1e1aa227582e44835125f6e4afadf210265a764cdf1d859f96bb7e3cb514"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 24,
+        "sha256": "26581d2ba3b496ccbeb507f2c7278e3da15bda68bbcd50dcfb22bc0bc6e32507"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-51",
+      "ref": "창세기 39:1–6",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "c6ca60d3ec04e1c4c102c0c9edf4a2b69c77fffb8c8d56ca037ca85a66bb277b"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "b1697102962a9ef40e0c0e1946edb15dd9d20c88cd671a58ca100df318208d95"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 39,
+        "sha256": "0500390875ec62650f69df150cfb7d236b0b00dc29bc09db0b6ced45e5a2d358"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-52",
+      "ref": "사무엘상 1:12–17",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "a57e3e0514ec370c015b63762d8ff1639b6dd4184d7f0bd11d916e5b8337c140"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "18f950a743102366afb68a73a170e8b215c8f3489d19a54dac99a9000dd1b68a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 1,
+        "sha256": "acb33f5e84039cdaa5194822772668847fcd8d24619b33dd97cd5a7894123a1a"
+      }
+    },
+    {
+      "group": "pair",
+      "id": "pair-53",
+      "ref": "사무엘상 1:15–16",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "e200eeae4e163d5ce4f3fcac62d02076357edf72b5ff78fa8b7c11db587d62fe"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "68946ca717cff512a8788887d19e113ff8d49520ab715db65b61c6ab818a05ce"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 1,
+        "sha256": "acb33f5e84039cdaa5194822772668847fcd8d24619b33dd97cd5a7894123a1a"
+      }
+    },
+    {
+      "group": "object",
+      "id": "jacob-stone",
+      "ref": "창세기 28:11–18",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "008c97d7de2e91221bede218e45e52662fd159bd4cee578321353d18a13fe8c2"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "ec082972bc907787dd0b7e76cecae38c71005aee9985db968ee2e9648cbab94f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 28,
+        "sha256": "87e034083638c8110dcece50a9b52edbfda1787702636756a42699f23cb9206f"
+      }
+    },
+    {
+      "group": "object",
+      "id": "rebekah-well",
+      "ref": "창세기 24:18–20",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "38e2bfbc03ae24c530f248bcc52d0c7c5c1d22b483d92f9a31fb0740dd1909ea"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "b07f395b9b6332f7d202087d7e1b8cf572b59c00db47b90757362ea082fe79cb"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 24,
+        "sha256": "26581d2ba3b496ccbeb507f2c7278e3da15bda68bbcd50dcfb22bc0bc6e32507"
+      }
+    },
+    {
+      "group": "object",
+      "id": "isaac-well",
+      "ref": "창세기 26:18–22",
+      "bible": [
+        {
+          "file": "개역개정_gen_창세기.md",
+          "sha256": "3c7bda3413b874748239032f36e879fba1af8bc90c3b9421c3c03bc0da88e879"
+        },
+        {
+          "file": "쉬운성경_gen_창세기.md",
+          "sha256": "0ecc4be6ddf95b176eefe7157d82c71a3888a991193504803a48adceb7b04776"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_01_창세기.md",
+        "chapter": 26,
+        "sha256": "ea2747aaea74cde98d4c077ac893a3fde3d80210fe82d403f7a32ffdce2489d2"
+      }
+    },
+    {
+      "group": "object",
+      "id": "moses-bush",
+      "ref": "출애굽기 3:2–5",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "e0f21cb9dbed0244c7e3d692d9a20fdf4136fb25b10aca429bbc56c2b5a4c173"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "a1d7da4d59476fbccee12c85c7b50247ee295379e0dd5b396e7c3ab7da26b96c"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 3,
+        "sha256": "cb9adf8c7b2808520562fb41781e8e9913b7e9a20cfb248cbddc78d7af26d44e"
+      }
+    },
+    {
+      "group": "object",
+      "id": "aaron-manna",
+      "ref": "출애굽기 16:32–34",
+      "bible": [
+        {
+          "file": "개역개정_exo_출애굽기.md",
+          "sha256": "6326f3f4903771ee349d0fce9026db1713a242aaf56780eacdc89e7fef63b018"
+        },
+        {
+          "file": "쉬운성경_exo_출애굽기.md",
+          "sha256": "976a11905a6b520ef6272d8e57b17f44a71563bbb5ed585651cf0192067daf90"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_02_출애굽기.md",
+        "chapter": 16,
+        "sha256": "9b2d378e1b0a44d090d0044f22f1c16a304349e1380731d9cc2df9d66b237832"
+      }
+    },
+    {
+      "group": "object",
+      "id": "david-stones",
+      "ref": "사무엘상 17:40",
+      "bible": [
+        {
+          "file": "개역개정_1sa_사무엘상.md",
+          "sha256": "db75dfb5d14c0e8ff30ced3179d5a95e97f9a875d700315f8fd8d7dc6ad9cd98"
+        },
+        {
+          "file": "쉬운성경_1sa_사무엘상.md",
+          "sha256": "bc623eae0f784c210552ece34dcf76f637472c270f73977192ee3c31b09b5b65"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_09_사무엘상.md",
+        "chapter": 17,
+        "sha256": "ff71fc7042c0585de612946524cefe3c81e28faf7f33562dc811705fc068fdf7"
+      }
+    },
+    {
+      "group": "object",
+      "id": "widow-water",
+      "ref": "열왕기상 17:10–16",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "2080a310c00f9fe4bda00fe1c10907a8bb851f3b1d784c311388023464d9113c"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "a4200f2377db565e111c1798aadb7ba8525190e96d81e72c5b4e62e658d420c1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 17,
+        "sha256": "0def219803403fd1040dfb1bf18f42b0c14cd24605f0b87efa183bec3293f897"
+      }
+    },
+    {
+      "group": "object",
+      "id": "widow-oil",
+      "ref": "열왕기하 4:1–7",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "a151fe4211bd5de9d882e8ba2adc3e477e866c84b306f40077652c4e1a6139a4"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "46486403309521a09fa496c1b37a76e904e9e7e1ac6708c1fa527ddac11a524e"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 4,
+        "sha256": "05d51ba013ddc7a437bfa97e268f001becfef8edffe0ba5a34d28a3d60df1730"
+      }
+    },
+    {
+      "group": "object",
+      "id": "josiah-scroll",
+      "ref": "열왕기하 22:8–13",
+      "bible": [
+        {
+          "file": "개역개정_2ki_열왕기하.md",
+          "sha256": "5c310e9deb769e56d2e24ddf33c884f9a0e88c32615d95b4ce986843fa216dab"
+        },
+        {
+          "file": "쉬운성경_2ki_열왕기하.md",
+          "sha256": "ec86b89dc49f9acfe69e8f8db0ece212503356f373f7287ff30209da24d2a1c1"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_12_열왕기하.md",
+        "chapter": 22,
+        "sha256": "354821df7865392c2286ef4fd0d35e1752a9894fdc363286d62af582207c90b4"
+      }
+    },
+    {
+      "group": "object",
+      "id": "baruch-scroll",
+      "ref": "예레미야 36:4–8",
+      "bible": [
+        {
+          "file": "개역개정_jer_예레미야.md",
+          "sha256": "7e4a31321cac0a71a898bf8bdfe73b97bfe5b6cd88162257d273ff6e06b6604f"
+        },
+        {
+          "file": "쉬운성경_jer_예레미야.md",
+          "sha256": "e2169d8c90004fffcf703706926392c329a26f0bfe218c526ce4d160451f956f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_24_예레미야.md",
+        "chapter": 36,
+        "sha256": "ba47e59965df8cbe55b28171a89af24f3b9bbb55024499fcf175cff61f68f8bc"
+      }
+    },
+    {
+      "group": "object",
+      "id": "jesus-boat",
+      "ref": "마가복음 4:35–41",
+      "bible": [
+        {
+          "file": "개역개정_mrk_마가복음.md",
+          "sha256": "1cd5ab7d17a475d2bf29bba8f9596a6091daae107a93fcdf17b993816cf572ea"
+        },
+        {
+          "file": "쉬운성경_mrk_마가복음.md",
+          "sha256": "edb3334f282b60f9dcdc9ed628dadc5481ba28a524d8079d37b90c9d72478cd8"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_41_마가복음.md",
+        "chapter": 4,
+        "sha256": "83cd19cd05b9de0028e82c02fcca6ffc5827676a4d69e265d6fe4d4b89bfcb13"
+      }
+    },
+    {
+      "group": "object",
+      "id": "zacchaeus-tree",
+      "ref": "누가복음 19:3–6",
+      "bible": [
+        {
+          "file": "개역개정_luk_누가복음.md",
+          "sha256": "a11ce30241ec4320f09c1590d4c1a7f183ddfaa7c0e566bb64d24e0c06c0ee6b"
+        },
+        {
+          "file": "쉬운성경_luk_누가복음.md",
+          "sha256": "e454df7bf131be5b261f99b8e724846da87fb9ce099408ef420a14409eec13ff"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_42_누가복음.md",
+        "chapter": 19,
+        "sha256": "198d75c67bde586f176d89383b6ed68b003b525e6393cce35ba01e225ba64b9e"
+      }
+    },
+    {
+      "group": "object",
+      "id": "samaritan-well",
+      "ref": "요한복음 4:6–15",
+      "bible": [
+        {
+          "file": "개역개정_jhn_요한복음.md",
+          "sha256": "437502d774e04e6a304eeb05549c8484d30b62b24abe945fe8d3471859220868"
+        },
+        {
+          "file": "쉬운성경_jhn_요한복음.md",
+          "sha256": "c82ddf2492b024c87b4b293b1f9a5f26eb8078752981d8224184d30a67c0034f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_43_요한복음.md",
+        "chapter": 4,
+        "sha256": "159825a1026e7efffd1709245f0db9a1d7bbeff394572d8dc606db6383d4d939"
+      }
+    },
+    {
+      "group": "object",
+      "id": "ethiopian-scroll",
+      "ref": "사도행전 8:28–35",
+      "bible": [
+        {
+          "file": "개역개정_act_사도행전.md",
+          "sha256": "d389c33fea762589803b63159df0e52cdba972f74cd111fc15c295b21572fa65"
+        },
+        {
+          "file": "쉬운성경_act_사도행전.md",
+          "sha256": "535604ebb762f360b3579ebea406c1aac43dee1b57b84c028bd9b2b7ea261a0f"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_44_사도행전.md",
+        "chapter": 8,
+        "sha256": "b688e0a853da8b236c2b3ce8134a4bf786f1152f759a655f43beef8a646b7b4f"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "glean",
+      "ref": "룻기 2:2–3",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "259fdd7ab029c137c8077d0be6394c33c798293f029e61fa650cf33eee5ee2f5"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "373380527d279aa88e10ea2fabd3a0ed6e745bbe5fc81a970426c5b3c68af87b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "greet",
+      "ref": "룻기 2:4",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "0f11ea87ece76598d139c547887a56ee02f1e99afffbf36b230192993b00af23"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "daa9496cac5d4ef9d3d60137b4b18f671db88cf1d7ff9f30f5cd6fdd8b5fb6ac"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "water",
+      "ref": "룻기 2:8–13",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "3adc58a39f0296610d9925dd1af541add3659c36d74e07a91a4569efe03ee289"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "499d8def7eabfb7eb8af1ade6070743a68298871abe5dcd0a8aadea913ec4333"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "meal",
+      "ref": "룻기 2:14–16",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "f0c21c05f569b55b9912686635570a3fb566e31bf1a25f6ab62cf86e6be39458"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "077bcd66f87e095b9b46a9616a0bc035efc350891bb0214e937696cab2a8221a"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "return-naomi",
+      "ref": "룻기 2:17–23",
+      "bible": [
+        {
+          "file": "개역개정_rut_룻기.md",
+          "sha256": "16906a7bf2ad8cb080cb5a814e8c8af789198f032e331b690b7fb878402ce045"
+        },
+        {
+          "file": "쉬운성경_rut_룻기.md",
+          "sha256": "44f01cb4ba16b92b53685b30f6aa8c44812b0cb105cc08635576c0794d125889"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_08_룻기.md",
+        "chapter": 2,
+        "sha256": "c9d45cc00e3e555188eafd6fcf812caea3cd1b10c896e0c867dec0ae58382e36"
+      }
+    },
+    {
+      "group": "scene",
+      "id": "rest-elijah",
+      "ref": "열왕기상 19:4–8",
+      "bible": [
+        {
+          "file": "개역개정_1ki_열왕기상.md",
+          "sha256": "4b981cc552012688d7bc3272385cd79eb6d02e165acb5e0404e8e0ab281bec70"
+        },
+        {
+          "file": "쉬운성경_1ki_열왕기상.md",
+          "sha256": "c68788aba0b4435dbcaf4cd44cc26fd601cafa665b82af386d1c1b1fa857c11b"
+        }
+      ],
+      "hokma": {
+        "file": "호크마_11_열왕기상.md",
+        "chapter": 19,
+        "sha256": "93b6c9f01e66e880c37b760385fc54a28e4022c63daeeedb6c05f462e79d81f0"
+      }
+    }
+  ]
+}

@@ -18,7 +18,7 @@ test('본문에 없는 룻기 사건을 다른 장의 사건으로 재생하지 
   const chapter = { name: '룻기', code: 'rut', data: { people: [{ name: '룻' }, { name: '보아스' }] } };
   assert.equal(buildWorldModel([{ ...chapter, chap: 1 }]).scenes.length, 0);
   const model = buildWorldModel([{ ...chapter, chap: 2 }]);
-  assert.equal(model.scenes.length, 3);
+  assert.equal(model.scenes.length, 5);
   assert.ok(model.cast.some((p) => p.name === '일꾼'));
 });
 
@@ -318,4 +318,25 @@ test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다
  const sip=interactionRoutine({name:'룻'},'water');assert.notEqual(sip.category,interactionRoutine(n,'field').category);
  assert.equal(interactionRoutine(n,'trumpet').gesture,'blow');assert.equal(interactionRoutine(n,'lyre').gesture,'strum');
  assert.equal(interactionRoutine({name:'바룩',objectAction:'baruch-scroll'},'scroll').gesture,'write');
+});
+
+test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘못된 오브제 동작을 하지 않는다', async () => {
+ const {ALL_SCENES,RUTH_SCENES}=await import('../js/features/pixel-bible/scenes.js');
+ const {OBJECT_SCENES,objectLinesFor}=await import('../js/features/pixel-bible/object-scenes.js');
+ const fs=await import('node:fs/promises');
+ for(const scene of [...ALL_SCENES,...OBJECT_SCENES]){
+  const book=JSON.parse(await fs.readFile(new URL(`../data/summary/${scene.code}.json`,import.meta.url)));
+  const model=buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter,data:book.chapters[scene.chapter]}]);
+  for(const name of scene.actors)assert.ok(model.cast.some(p=>p.name===name),`${scene.id}: ${name}`);
+  assert.ok(scene.lines.length>=2&&scene.ref);
+  assert.ok(model.scenes.includes(scene));
+ }
+ assert.deepEqual(RUTH_SCENES.find(s=>s.id==='greet').actions,{});
+ const boat=OBJECT_SCENES.find(s=>s.id==='jesus-boat');
+ assert.notDeepEqual(objectLinesFor(boat,'예수'),objectLinesFor(boat,'제자들'));
+ assert.ok(objectLinesFor(boat,'예수').every(s=>!s.includes('우리가 죽게')));
+ const well=OBJECT_SCENES.find(s=>s.id==='samaritan-well');
+ assert.notDeepEqual(objectLinesFor(well,'예수'),objectLinesFor(well,'사마리아 여자'));
+ const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
+ assert.ok(PAIR_DIALOGUE.find(s=>s.id==='pair-32').lines.every(s=>!s.includes('형님')));
 });
