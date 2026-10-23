@@ -1,3 +1,4 @@
+import { castKey, reconcileCast, findSpawnCell } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects } from './object-scenes.js';
@@ -196,6 +197,7 @@ export async function mountPixelWorld(shell, options) {
     if (Array.isArray(saved) && saved.length <= 16 && saved.every((o) => OBJECTS[o.kind] && Number.isInteger(o.x) && Number.isInteger(o.y) && o.x >= 2 && o.x <= 37 && o.y >= 5 && o.y <= 15) && new Set(saved.map((o) => `${o.x},${o.y}`)).size === saved.length) objects = saved;
   } catch (_) {}
   const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, motion:characterMotion(p,chapterData), action: "", task: null }));
+  const castCache = new Map(npcs.map(n => [castKey(n), n]));
   let drag=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
   let removing=false,objectSpeech=null,autoObjectAt=2;
@@ -400,11 +402,28 @@ export async function mountPixelWorld(shell, options) {
       const index=Number(b.dataset.person);
       if(index>=0){select(index,true);return;}
       if(activeEvent)return;
-      cleanup();
-      shell.querySelectorAll(":scope > :not(.pb-world-head)").forEach(el=>el.remove());
-      shell.insertAdjacentHTML('beforeend','<div class="pb-load" role="status">관련 인물들을 불러오고 있어요…</div>');
-      try{replacement=await mountPixelWorld(shell,{...options,focusPerson:Number(b.dataset.castPerson),showRelationships,speakOnOpen:true});}
-      catch(_){if(shell.isConnected)shell.querySelector('.pb-load').textContent='불러오지 못했어요. 닫고 다시 입장해 주세요.';}
+      if(drag?.active)return;
+      const desired=visibleWorldCast(model,Number(b.dataset.castPerson));
+      const newcomers=desired.filter(p=>!castCache.has(castKey(p)));
+      // 새 인물만 빈 칸에 추가한다. 기존 인물은 경로·방향·동작까지 그대로 둔다.
+      for(const person of newcomers){
+        const position=findSpawnCell([...castCache.values()],blocked);
+        if(!position){say('새 인물이 들어올 빈자리가 부족해요. 오브제 주변을 비워 주세요.');return;}
+        castCache.set(castKey(person),{...person,...position,path:[],direction:'down',stride:0,idle:1,motion:characterMotion(person,chapterData),action:'',task:null});
+      }
+      const visibleKeys=new Set(desired.map(castKey));
+      if((speech.current&&[speech.current.speaker,speech.current.target].filter(Boolean).some(n=>!visibleKeys.has(castKey(n))))||
+         (pendingTalk&&[pendingTalk.choice.speaker,pendingTalk.choice.target].some(n=>!visibleKeys.has(castKey(n)))))hideSpeech();
+      if(pendingEvent?.actors.some(n=>!visibleKeys.has(castKey(n))))pendingEvent=null;
+      if(objectSpeech&&!visibleKeys.has(castKey(objectSpeech.speaker)))objectSpeech=null;
+      reconcileCast(npcs,desired,castCache,()=>{throw Error('missing prepared character');});
+      // 숨겨진 동안 철거된 오브제에 연결된 작업만 정리한다.
+      for(const n of npcs)removeObjects([n.task,n.usingObject].filter(o=>o&&!objects.includes(o)),[n],()=>true);
+      shell.querySelectorAll('[data-cast-person]').forEach(button=>{
+        const person=model.cast[Number(button.dataset.castPerson)];
+        button.dataset.person=String(npcs.findIndex(n=>castKey(n)===castKey(person)));
+      });
+      select(0,true);
       return;
     }
     if (b.dataset.place) {

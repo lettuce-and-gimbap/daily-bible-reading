@@ -340,3 +340,26 @@ test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘�
  const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
  assert.ok(PAIR_DIALOGUE.find(s=>s.id==='pair-32').lines.every(s=>!s.includes('형님')));
 });
+
+test('표시 인물이 바뀌어도 기존 인물의 위치·경로·방향·오브제 동작과 재등장 상태를 보존한다',async()=>{
+ const {castKey,reconcileCast,findSpawnCell}=await import('../js/features/pixel-bible/cast-state.js');
+ const path=[{x:14,y:8}],object={kind:'well',x:8,y:9};
+ const a={name:'다윗',identity:{id:'person:david'},x:13.4,y:8,path,direction:'left',stride:5,action:'well',usingObject:object,task:null};
+ const b={name:'사울',identity:{id:'person:saul-king'},x:16,y:9,path:[],direction:'up'};
+ const c={name:'요나단',identity:{id:'person:jonathan'}};
+ const current=[a,b],cache=new Map();
+ let created=0;
+ const create=p=>{created++;return {...p,x:24,y:10,path:[]};};
+ const originalArray=current;
+ reconcileCast(current,[c,a],cache,create);
+ assert.equal(current,originalArray);assert.equal(current[1],a);assert.equal(created,1);
+ assert.equal(a.x,13.4);assert.equal(a.path,path);assert.equal(a.direction,'left');assert.equal(a.stride,5);assert.equal(a.usingObject,object);
+ reconcileCast(current,[b,a],cache,create);
+ assert.equal(current[0],b);assert.equal(b.x,16);assert.equal(b.direction,'up');assert.equal(created,1);
+ reconcileCast(current,[c,a],cache,create);assert.equal(created,1);
+ assert.notEqual(castKey({name:'사울',identity:{id:'person:paul'}}),castKey(b));
+ const occupied=[{x:2,y:5,path:[{x:5,y:5}]}];
+ const spawn=findSpawnCell(occupied,(x,y)=>x===4&&y===5,()=>0);
+ assert.ok(spawn);assert.ok(Math.hypot(spawn.x-2,spawn.y-5)>=2);assert.notDeepEqual(spawn,{x:4,y:5});assert.notDeepEqual(spawn,{x:5,y:5});
+ assert.equal(findSpawnCell([],()=>true),null);
+});
