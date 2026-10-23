@@ -65,4 +65,12 @@ const ACTOR_OBJECT_LINES = {
 };
 export function objectLinesFor(scene, name) {
  return ACTOR_OBJECT_LINES[scene.id]?.[name] || (scene.actors.length === 1 ? OBJECT_LINES[scene.id] : null) || scene.lines;
+
+}
+
+export const objectVisitKey=(n,o)=>`${n.identity?.id||n.name}:${o.kind}:${o.x}:${o.y}`;
+// 본문 관련 인물을 우선하되, 한 인물이 같은 물건을 연달아 독점하지 않는다.
+export function rankObjectVisits(pairs,time,objectCooldown,visitorCooldown){
+ return pairs.filter(p=>time-(objectCooldown.get(p.o)??-100)>=5&&time-(visitorCooldown.get(objectVisitKey(p.n,p.o))??-100)>=40)
+  .sort((a,b)=>(b.scene?2:b.evidence?1:0)-(a.scene?2:a.evidence?1:0)||a.distance-b.distance);
 }

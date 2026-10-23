@@ -398,7 +398,7 @@ test('오브제 옮기기는 원래 물건은 제외하고 다른 물건·인물
  const n={x:15,y:9,path:[{x:16,y:9}]};
  assert.equal(canMoveObject(o,{x:8,y:9},objects,[n]),true);
  assert.equal(canMoveObject(o,{x:9,y:8},objects,[n]),true);
- for(const p of [{x:12,y:9},{x:15,y:9},{x:16,y:9},{x:1,y:9},{x:9,y:16},{x:9.5,y:8}])assert.equal(canMoveObject(o,p,objects,[n]),false);
+ for(const p of [{x:12,y:9},{x:15,y:9},{x:16,y:9},{x:1,y:9},{x:9,y:70},{x:9.5,y:8}])assert.equal(canMoveObject(o,p,objects,[n]),false);
  assert.deepEqual(o,{kind:'water',x:8,y:9});
 });
 
@@ -410,4 +410,29 @@ test('모호한 관계 독백 대신 본문의 구체적 관계 설명과 출처
  const lines=personalLines({...p,refs:[p.ref]},chapters,context);
  assert.ok(lines.some(l=>l.text===context.relations[0].text&&l.ref==='룻기 2:8-9'));
  assert.ok(lines.every(l=>!l.text.includes('얽힌 일')));
+
+});
+
+test('카메라는 확대 지점을 보존하고 확대·축소한 화면 좌표를 같은 월드 좌표로 되돌린다',async()=>{
+ const {cameraView,toWorld,zoomAt,constrainCamera,WORLD}=await import('../js/features/pixel-bible/camera.js');
+ const cam={x:1200,y:800,zoom:1},point={x:640,y:220},width=1280,height=700;
+ const anchor=toWorld(point,width,height,cam);zoomAt(cam,1.8,point,width,height);
+ const after=toWorld(point,width,height,cam);assert.ok(Math.abs(anchor.x-after.x)<.001&&Math.abs(anchor.y-after.y)<.001);
+ const v=cameraView(width,height,cam);const projected={x:anchor.x*v.scale+v.x,y:anchor.y*v.scale+v.y};assert.ok(Math.abs(projected.x-point.x)<.001);
+ Object.assign(cam,{x:-1000,y:1e6,zoom:.01});constrainCamera(cam,width,height);assert.ok(cam.x>0&&cam.y<WORLD.height&&cam.zoom>=.4);
+});
+
+test('핀치 중심 이동과 가장자리 스크롤은 상하좌우 방향을 반영한다',async()=>{
+ const {pinchCamera,toWorld,edgePan}=await import('../js/features/pixel-bible/camera.js');
+ const cam={x:1400,y:800,zoom:1},anchor=toWorld({x:600,y:300},1280,700,cam);
+ pinchCamera(cam,anchor,2,{x:700,y:400},1280,700);const current=toWorld({x:700,y:400},1280,700,cam);assert.ok(Math.abs(current.x-anchor.x)<.001&&Math.abs(current.y-anchor.y)<.001);
+ const rect={left:0,top:0,width:1280,height:700};assert.ok(edgePan({x:1275,y:695},rect,.05,1).x>0);assert.ok(edgePan({x:5,y:5},rect,.05,1).y<0);assert.deepEqual(edgePan({x:640,y:350},rect,.05,1),{x:0,y:0});
+});
+
+test('관련 인물이 방문한 물건도 다른 인물이 다음에 사용하도록 차례를 준다',async()=>{
+ const {rankObjectVisits,objectVisitKey}=await import('../js/features/pixel-bible/object-scenes.js');
+ const o={kind:'ark-covenant',x:11,y:8},a={name:'사무엘'},b={name:'엘리'},objectCooldown=new Map(),visitors=new Map();
+ const pairs=[{n:a,o,evidence:{},distance:2},{n:b,o,distance:3}];assert.equal(rankObjectVisits(pairs,0,objectCooldown,visitors)[0].n,a);
+ visitors.set(objectVisitKey(a,o),0);objectCooldown.set(o,0);assert.equal(rankObjectVisits(pairs,4,objectCooldown,visitors).length,0);
+ assert.equal(rankObjectVisits(pairs,10,objectCooldown,visitors)[0].n,b);
 });

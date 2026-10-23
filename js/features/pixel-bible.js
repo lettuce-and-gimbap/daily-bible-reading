@@ -77,7 +77,7 @@ async function openPixelBible() {
   pixelBibleLandscape(shell, false);
   try {
     const chapters = pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js");
+    const world = await import("./pixel-bible/world.js?v=10.1.0");
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, allowed: () => true, landscape: () => pixelBibleLandscape(shell),

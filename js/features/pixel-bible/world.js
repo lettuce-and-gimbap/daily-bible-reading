@@ -1,9 +1,10 @@
+import { WORLD, BOUNDS, cameraView, constrainCamera, toWorld, zoomAt, pinchCamera, edgePan } from './camera.js';
 import { canMoveObject } from './object-drag.js';
 import { objectPresentation, interactionAnchor, objectInteractionFrame, drawObjectResponse } from './object-response.js';
 import { castKey, reconcileCast, findSpawnCell } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
-import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects } from './object-scenes.js';
+import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
@@ -117,10 +118,13 @@ export async function mountPixelWorld(shell, options) {
     <h3>본문 오브제</h3><p class="pb-help">놓은 오브제는 1초 꾹 누른 뒤 끌어서 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브제로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar">${chapterProps.map(item=>`<button class="pb-button" data-place="${item.id}" title="${esc(item.evidence[0]?.text||'')}">＋ ${esc(item.name)}<small>${esc(item.refs.slice(0,2).join(' · '))}</small></button>`).join('')}</div><details><summary>공통 오브제</summary><div class="pb-world-toolbar">${Object.entries(WORLD_OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}</div></details><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브제 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브제 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
+    <div class="pb-camera-controls" aria-label="월드 시점과 배율"><button class="pb-button" data-action="zoom-out" aria-label="축소">−</button><input type="range" min="0.4" max="2.5" step="0.05" value="1" data-camera-zoom aria-label="월드 배율"><output data-camera-scale>100%</output><button class="pb-button" data-action="zoom-in" aria-label="확대">＋</button><button class="pb-button" data-action="camera-home">처음 시점</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
     <div class="pb-rotate"><span class="pb-phone" aria-hidden="true">▯ ↻ ▭</span><strong>가로로 펼치는<br>PIXEL BIBLE</strong><p>기기를 가로로 돌려 주세요.<br>화면 회전 잠금이 켜져 있다면 해제해 주세요.</p><button class="pb-button" data-action="fullscreen">가로 화면으로 입장</button></div>`);
   const abort = new AbortController(), signal = abort.signal;
   const canvas = shell.querySelector("canvas"), ctx = canvas.getContext("2d");
+  const camera={x:480,y:240,zoom:1,...options.camera};
+  const view=()=>cameraView(canvas.width,canvas.height,camera);
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
@@ -175,10 +179,11 @@ export async function mountPixelWorld(shell, options) {
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
-    const r=canvas.getBoundingClientRect(),v=worldViewport(canvas.width,canvas.height),n=shownSpeech.speaker;
+    const r=canvas.getBoundingClientRect(),v=view(),n=shownSpeech.speaker;
     const x=(n.x*TILE*v.scale+v.x)*r.width/canvas.width,y=((n.y*TILE-72)*v.scale+v.y)*r.height/canvas.height;
     let left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
     const topLimit=Math.max(48,shell.querySelector('.pb-world-head').offsetHeight+10),above=y-speechHeight-10;
+    speechElement.style.visibility=x<0||x>r.width||y<-80||y>r.height?'hidden':'';
     const below=above<topLimit;
     const proposed=below?((n.y*TILE+42)*v.scale+v.y)*r.height/canvas.height:above;
     speechElement.dataset.below=String(below);
@@ -196,24 +201,27 @@ export async function mountPixelWorld(shell, options) {
   let objects = defaults();
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey));
-    if (Array.isArray(saved) && saved.length <= 16 && saved.every((o) => OBJECTS[o.kind] && Number.isInteger(o.x) && Number.isInteger(o.y) && o.x >= 2 && o.x <= 37 && o.y >= 5 && o.y <= 15) && new Set(saved.map((o) => `${o.x},${o.y}`)).size === saved.length) objects = saved;
+    if (Array.isArray(saved) && saved.every((o) => Object.hasOwn(OBJECTS,o.kind) && Number.isInteger(o.x) && Number.isInteger(o.y) && o.x >= BOUNDS.minX && o.x <= BOUNDS.maxX && o.y >= BOUNDS.minY && o.y <= BOUNDS.maxY) && new Set(saved.map((o) => `${o.x},${o.y}`)).size === saved.length) objects = saved;
   } catch (_) {}
   const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, motion:characterMotion(p,chapterData), action: "", task: null }));
   const castCache = new Map(npcs.map(n => [castKey(n), n]));
   let drag=null, objectHold=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
   let removing=false,objectSpeech=null,autoObjectAt=2;
-  const objectCooldown=new Map();
+  const objectCooldown=new Map(),visitorCooldown=new Map();
   let selected = -1, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
   let activeEvent = null, pendingEvent = null, eventIndex = 0, cinematicTime = 0;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const blocked = (x, y) => x < 2 || x > 37 || y < 5 || y > 15 || objects.some((o) => (OBJECT_CATALOG[o.kind]?.action||o.kind) !== "field" && o.x === x && o.y === y);
+  let blockedCells=new Set();
+  const indexObjects=()=>{blockedCells=new Set(objects.filter(o=>(OBJECT_CATALOG[o.kind]?.action||o.kind)!=='field').map(o=>`${o.x},${o.y}`));};
+  indexObjects();
+  const blocked = (x,y)=>x<BOUNDS.minX||x>BOUNDS.maxX||y<BOUNDS.minY||y>BOUNDS.maxY||blockedCells.has(`${x},${y}`);
   const say = (text) => {
     clearTimeout(toastTimer);info.innerHTML=`<p>${esc(text)}</p>`;info.hidden=false;
     toastTimer=setTimeout(()=>{info.hidden=true;},2000);
   };
   const clearInfo=()=>{clearTimeout(toastTimer);info.hidden=true;};
-  const save = () => { try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
+  const save = () => { indexObjects();try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
   const cell = (p) => ({ x: Math.round(p.x), y: Math.round(p.y) });
   const adjacent = (o, n) => (objectPresentation(o.kind).portable?[[o.x-1,o.y],[o.x+1,o.y]]:[[o.x-1,o.y],[o.x+1,o.y],[o.x,o.y+1],[o.x,o.y-1]]).map(([x,y]) => ({x,y})).filter((p) => !blocked(p.x,p.y)).sort((a,b) => Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
   function togglePanel(side,open) {
@@ -243,7 +251,11 @@ export async function mountPixelWorld(shell, options) {
     shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) >= 0 && Number(b.dataset.person) === i));
     const n=npcs[i];
     if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();return;}
-    if(speakOnSelect)requestPersonal(n);
+    if(speakOnSelect){
+      const v=view(),sx=n.x*TILE*v.scale+v.x,sy=n.y*TILE*v.scale+v.y;
+      if(sx<60||sx>canvas.width-60||sy<100||sy>canvas.height-60){camera.x=n.x*TILE;camera.y=n.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
+      requestPersonal(n);
+    }
     const style=characterStyle(n.name,i,n.role,n.refs);
     shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
     renderRecipes();clearInfo();
@@ -274,6 +286,7 @@ export async function mountPixelWorld(shell, options) {
   function beginEvent(scene) {
     activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
     sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?activeEvent.object:null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
+    if(activeEvent.object){camera.x=activeEvent.object.x*TILE;camera.y=activeEvent.object.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
     clearInfo();overlay.hidden = false; showLine();
   }
   function endEvent() { if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
@@ -302,7 +315,7 @@ export async function mountPixelWorld(shell, options) {
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브제나 빈 곳을 선택해 주세요.");
   }
   function coordinates(e) {
-    const r=canvas.getBoundingClientRect(),v=worldViewport(canvas.width,canvas.height);
+    const r=canvas.getBoundingClientRect(),v=view();
     return {x:((e.clientX-r.left)*canvas.width/r.width-v.x)/v.scale/TILE,y:((e.clientY-r.top)*canvas.height/r.height-v.y)/v.scale/TILE};
   }
   function hitPerson(p) {
@@ -316,7 +329,7 @@ export async function mountPixelWorld(shell, options) {
     });
   }
   function beginObjectHold(o,e,p) {
-    const held={o,id:e.pointerId,startX:e.clientX,startY:e.clientY,p,offset:{x:p.x-o.x,y:p.y-o.y},active:false};
+    const held={o,id:e.pointerId,startX:e.clientX,startY:e.clientY,p,offset:{x:p.x-o.x,y:p.y-o.y},client:{x:e.clientX,y:e.clientY},active:false};
     objectHold=held;canvas.setPointerCapture(e.pointerId);
     held.timer=setTimeout(()=>{
       if(objectHold!==held||disposed||!options.allowed()||activeEvent||document.hidden||window.innerWidth<=window.innerHeight)return;
@@ -344,6 +357,69 @@ export async function mountPixelWorld(shell, options) {
     }else if(!cancel)say('다른 물건·인물·이동 경로와 겹치지 않는 빈 땅에 놓아 주세요.');
     draw();
   }
+  const pointers=new Map();let pinch=null,pan=null,gestureActive=false;
+  const pixelPoint=e=>{const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height};};
+  const pair=()=>[...pointers.values()].slice(0,2);
+  const midpoint=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2});
+  function syncCamera(){
+    const slider=shell.querySelector('[data-camera-zoom]');slider.value=String(camera.zoom);
+    shell.querySelector('[data-camera-scale]').textContent=`${Math.round(camera.zoom*100)}%`;
+    canvas.dataset.cameraX=String(Math.round(camera.x));canvas.dataset.cameraY=String(Math.round(camera.y));canvas.dataset.zoom=String(camera.zoom);
+  }
+  shell.addEventListener('input',e=>{if(!e.target.matches('[data-camera-zoom]'))return;zoomAt(camera,Number(e.target.value),{x:canvas.width/2,y:canvas.height/2},canvas.width,canvas.height);syncCamera();draw();},{signal});
+  canvas.addEventListener('wheel',e=>{e.preventDefault();zoomAt(camera,camera.zoom*Math.exp(-e.deltaY*.0015),pixelPoint(e),canvas.width,canvas.height);syncCamera();draw();},{signal,passive:false});
+  canvas.addEventListener('pointerdown',e=>{
+    if(e.button!==0||!options.allowed())return;
+    const point=pixelPoint(e);pointers.set(e.pointerId,point);canvas.setPointerCapture(e.pointerId);
+    if(pointers.size>=2){
+      if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:e.clientX,clientY:e.clientY},true);
+      if(drag)finishDrag({pointerId:drag.id,clientX:e.clientX,clientY:e.clientY},true);
+      pan=null;gestureActive=true;suppressClick=true;
+      const [a,b]=pair(),mid=midpoint(a,b);
+      pinch={distance:Math.max(1,Math.hypot(a.x-b.x,a.y-b.y)),zoom:camera.zoom,anchor:toWorld(mid,canvas.width,canvas.height,camera)};
+      e.preventDefault();e.stopImmediatePropagation();return;
+    }
+    if(!placing&&!removing&&!activeEvent&&hitPerson(coordinates(e))<0&&!hitPlacedObject(coordinates(e)))pan={id:e.pointerId,start:point,last:point,active:false};
+  },{capture:true,signal});
+  canvas.addEventListener('pointermove',e=>{
+    if(!pointers.has(e.pointerId))return;
+    const point=pixelPoint(e);pointers.set(e.pointerId,point);
+    if(pinch&&pointers.size>=2){
+      const [a,b]=pair(),mid=midpoint(a,b),ratio=Math.hypot(a.x-b.x,a.y-b.y)/pinch.distance;
+      pinchCamera(camera,pinch.anchor,pinch.zoom*ratio,mid,canvas.width,canvas.height);syncCamera();draw();e.preventDefault();e.stopImmediatePropagation();return;
+    }
+    if(gestureActive){e.stopImmediatePropagation();return;}
+    if(pan?.id===e.pointerId){
+      if(Math.hypot(point.x-pan.start.x,point.y-pan.start.y)>6)pan.active=true;
+      if(pan.active){const v=view();camera.x-=(point.x-pan.last.x)/v.scale;camera.y-=(point.y-pan.last.y)/v.scale;constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();e.preventDefault();}
+      pan.last=point;
+    }
+    if(drag)drag.client={x:e.clientX,y:e.clientY};
+    if(objectHold)objectHold.client={x:e.clientX,y:e.clientY};
+  },{capture:true,signal});
+  const endGesture=e=>{
+    pointers.delete(e.pointerId);const consume=gestureActive||pan?.active;
+    if(pointers.size<2)pinch=null;
+    if(pan?.id===e.pointerId)pan=null;
+    if(!pointers.size)gestureActive=false;
+    if(consume){suppressClick=false;e.preventDefault();e.stopImmediatePropagation();if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);}
+  };
+  canvas.addEventListener('pointerup',endGesture,{capture:true,signal});canvas.addEventListener('pointercancel',endGesture,{capture:true,signal});
+  function keepInView(n){
+    const v=view(),px=n.x*TILE*v.scale+v.x,py=n.y*TILE*v.scale+v.y;
+    const mx=Math.min(100,canvas.width/4),top=Math.min(150,canvas.height/3),bottom=canvas.height-100;
+    camera.x+=(px<mx?px-mx:px>canvas.width-mx?px-(canvas.width-mx):0)/v.scale;
+    camera.y+=(py<top?py-top:py>bottom?py-bottom:0)/v.scale;
+    constrainCamera(camera,canvas.width,canvas.height);syncCamera();
+  }
+  function followDraggedCharacter(dt){
+    const held=drag?.active?drag:objectHold?.active?objectHold:null;
+    if(!held?.client)return;
+    const rect=canvas.getBoundingClientRect(),scale=view().scale*rect.width/canvas.width;
+    const delta=edgePan(held.client,rect,dt,scale);
+    if(!delta.x&&!delta.y)return;
+    camera.x+=delta.x;camera.y+=delta.y;constrainCamera(camera,canvas.width,canvas.height);held.p=coordinates({clientX:held.client.x,clientY:held.client.y});syncCamera();
+  }
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag||objectHold) return;
     suppressClick=false;
@@ -353,7 +429,7 @@ export async function mountPixelWorld(shell, options) {
     if(index<0)return;
     select(index);const n=npcs[index];
 
-    drag={n,index,id:e.pointerId,active:false,startX:e.clientX,startY:e.clientY,p:coordinates(e),from:{x:n.x,y:n.y},vx:0,lastX:e.clientX};
+    drag={n,index,id:e.pointerId,active:false,startX:e.clientX,startY:e.clientY,p:coordinates(e),from:{x:n.x,y:n.y},fromCamera:{...camera},client:{x:e.clientX,y:e.clientY},vx:0,lastX:e.clientX};
     canvas.setPointerCapture(e.pointerId);
   },{signal});
   canvas.addEventListener('pointermove',(e)=>{
@@ -372,17 +448,17 @@ export async function mountPixelWorld(shell, options) {
     if(!held.active){if(!cancel)requestPersonal(held.n);suppressClick=true;return;}
     suppressClick=true;
     const n=held.n,p=coordinates(e),under=document.elementFromPoint(e.clientX,e.clientY);
-    if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle')){n.x=held.from.x;n.y=held.from.y;n.idle=5;draw();return;}
-    const landing={x:Math.max(2,Math.min(37,Math.round(p.x))),y:Math.max(5,Math.min(15,Math.round(p.y+3)))};
+    if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle,.pb-camera-controls')){n.x=held.from.x;n.y=held.from.y;n.idle=5;Object.assign(camera,held.fromCamera);syncCamera();draw();return;}
+    const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(p.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(p.y+3)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
     if(obj){
       const spot=adjacent(obj,landing).find(s=>!npcs.some(other=>other!==n&&Math.hypot(other.x-s.x,other.y-s.y)<.6));
-      if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;interact(n,obj);draw();return;}
+      if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);draw();return;}
     }
     if(blocked(landing.x,landing.y)||npcs.some(other=>other!==n&&Math.hypot(other.x-landing.x,other.y-landing.y)<.6)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 다른 인물이나 오브제와 겹쳐요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
-    draw();
+    keepInView(n);draw();
   }
   canvas.addEventListener('pointerup',e=>{finishObjectHold(e);finishDrag(e);},{signal});
   canvas.addEventListener('pointercancel',e=>{finishObjectHold(e,true);finishDrag(e,true);},{signal});
@@ -400,7 +476,6 @@ export async function mountPixelWorld(shell, options) {
     }
     if (placing) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
-      if (objects.length >= 16) return say("이번 월드에는 오브제를 16개까지 놓을 수 있어요.");
       objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브제를 놓았어요. 1초 꾹 누르면 위치를 옮길 수 있어요."); return;
     }
     const hit=hitPerson(p);
@@ -430,7 +505,7 @@ export async function mountPixelWorld(shell, options) {
   }, {signal});
   function syncPlacement() {
     shell.querySelectorAll("[data-place]").forEach((b)=>b.setAttribute("aria-pressed",b.dataset.place===placing));
-    shell.querySelector('[data-action="cancel-place"]').hidden=!placing;
+    shell.querySelectorAll('[data-action="cancel-place"]').forEach(b=>b.hidden=!placing);
   }
   shell.addEventListener("click", async (e) => {
     if (drag?.active||objectHold?.active) return;
@@ -439,7 +514,7 @@ export async function mountPixelWorld(shell, options) {
     if (b.dataset.recipe!==undefined) { const scene=model.scenes[Number(b.dataset.recipe)],o=objects.find(o=>o.kind===scene.object);if(o&&!activeEvent)queueScene(scene,o);return; }
     if (b.dataset.commonRecipe) {const o=objects.find(o=>o.kind===b.dataset.commonRecipe);if(o&&!activeEvent&&npcs[selected]){pendingEvent=null;clearInfo();toObject(npcs[selected],o);}return;}
     if (b.dataset.background && Object.hasOwn(BACKGROUNDS,b.dataset.background)) {
-      backgroundKey=b.dataset.background;drawWorldBackground(background.getContext('2d'),backgroundKey);syncBackground();draw();
+      backgroundKey=b.dataset.background;paintBackground();syncBackground();draw();
       try{localStorage.setItem(backgroundStorageKey(model.key),backgroundKey);}catch(_){}
       say(`${BACKGROUNDS[backgroundKey].name} · 상상 지형`);return;
     }
@@ -474,9 +549,15 @@ export async function mountPixelWorld(shell, options) {
     if (b.dataset.place) {
       if(activeEvent) return;
       removing=false;const removeButton=shell.querySelector('[data-action="remove-object"]');removeButton.setAttribute('aria-pressed','false');removeButton.textContent='개별 철거';
-      placing=b.dataset.place; syncPlacement(); say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`); return;
+      placing=placing===b.dataset.place?null:b.dataset.place;syncPlacement();
+      if(placing){togglePanel('right',false);say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`);}else clearInfo();
+      return;
     }
     const action=b.dataset.action;
+    if(action==='zoom-in'||action==='zoom-out'){
+      zoomAt(camera,camera.zoom*(action==='zoom-in'?1.2:1/1.2),{x:canvas.width/2,y:canvas.height/2},canvas.width,canvas.height);syncCamera();draw();return;
+    }
+    if(action==='camera-home'){Object.assign(camera,{x:480,y:240,zoom:1});constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }
@@ -551,15 +632,13 @@ export async function mountPixelWorld(shell, options) {
     if(time<autoObjectAt||pendingEvent||pendingTalk||activeEvent||drag||objectHold||placing||removing)return;
     autoObjectAt=time+3;
     const idle=npcs.filter(n=>!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
-    const pairs=objects.flatMap(o=>{
+    const pairs=objects.filter(o=>!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
       const specific=model.scenes.filter(s=>s.object===o.kind&&sceneActors(s).every(Boolean));
-      return idle.map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}))
-        .filter(p=>!specific.length||p.scene);
-    })
-      .filter(p=>time-(objectCooldown.get(p.o)||-100)>=18)
-      .sort((a,b)=>(b.scene?2:b.evidence?1:0)-(a.scene?2:a.evidence?1:0)||a.distance-b.distance);
-    const chosen=pairs[0];if(!chosen)return;
+      return idle.map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
+    });
+    const chosen=rankObjectVisits(pairs,time,objectCooldown,visitorCooldown)[0];if(!chosen)return;
     if(toObject(chosen.n,chosen.o)){
+      visitorCooldown.set(objectVisitKey(chosen.n,chosen.o),time);
       chosen.n.objectScene=chosen.scene||null;
       chosen.n.objectEvidence=chosen.evidence||null;objectCooldown.set(chosen.o,time);
     }
@@ -592,29 +671,29 @@ export async function mountPixelWorld(shell, options) {
         if((OBJECT_CATALOG[target.kind]?.action||target.kind)==="bench") { n.x=target.x;n.y=target.y;n.direction="right"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
         n.action="";n.usingObject=null;n.interaction=null;n.idle=3+Math.random()*5;
-        if(!reduced&&!pendingTalk) {const p={x:Math.max(2,Math.min(37,Math.round(n.x+(Math.random()-.5)*10))),y:Math.max(5,Math.min(15,Math.round(n.y+(Math.random()-.5)*6)))};if(!blocked(p.x,p.y))move(n,p);}
+        if(!reduced&&!pendingTalk) {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
       }
     }
     if(pendingEvent && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)) beginEvent(pendingEvent.scene);
   }
 
   // 배경은 한 번 그리고 매 프레임 재사용한다.
-  const background=document.createElement("canvas");background.width=WIDTH;background.height=HEIGHT;
+  const background=document.createElement("canvas");background.width=WORLD.width;background.height=WORLD.height;
   let backgroundKey=defaultBackground(requested);
   try{const saved=localStorage.getItem(backgroundStorageKey(model.key));if(Object.hasOwn(BACKGROUNDS,saved))backgroundKey=saved;}catch(_){}
   function syncBackground(){shell.querySelectorAll('[data-background]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.background===backgroundKey));}
-  drawWorldBackground(background.getContext("2d"),backgroundKey);syncBackground();
+  function paintBackground(){
+    const c=background.getContext('2d');
+    for(let y=0;y<WORLD.height;y+=HEIGHT)for(let x=0;x<WORLD.width;x+=WIDTH){c.save();c.translate(x,y);drawWorldBackground(c,backgroundKey);c.restore();}
+  }
+  paintBackground();syncBackground();
   function draw() {
     ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);
-    const v=worldViewport(canvas.width,canvas.height);
+    const v=view();
     ctx.imageSmoothingEnabled=false;ctx.save();ctx.setTransform(v.scale,0,0,v.scale,v.x,v.y);ctx.save();
-    if(activeEvent && !reduced) {
-      const actors=sceneActors(activeEvent.scene),zoom=1+Math.min(.2,cinematicTime*.07);
-      const x=actors.reduce((s,n)=>s+n.x*TILE,0)/actors.length,y=actors.reduce((s,n)=>s+n.y*TILE,0)/actors.length;
-      ctx.translate(WIDTH/2,HEIGHT/2);ctx.scale(zoom,zoom);ctx.translate(-Math.max(400,Math.min(560,x)),-Math.max(220,Math.min(260,y)));
-    }
     ctx.drawImage(background,0,0);
-    const items=[...objects.filter(o=>!objectHold?.active||objectHold.o!==o).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>!drag?.active||drag.n!==n).map((n)=>({y:n.y,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
+    const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
+    const items=[...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:n.y,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,selected);
     if(objectHold?.active){
@@ -624,7 +703,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
     ctx.restore();
-    if(placing) {ctx.fillStyle="#102e38d9";ctx.fillRect(300,410,360,28);ctx.fillStyle="#ffe5a2";ctx.font="14px sans-serif";ctx.textAlign="center";ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,480,430);}
+    if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px sans-serif`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
     ctx.restore();positionSpeech();
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
@@ -633,7 +712,7 @@ export async function mountPixelWorld(shell, options) {
   },{signal});
   const fitCanvas=()=>{
     const r=canvas.getBoundingClientRect(),ratio=Math.min(window.devicePixelRatio||1,2);
-    canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));if(shownSpeech){speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}draw();
+    canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));constrainCamera(camera,canvas.width,canvas.height);syncCamera();if(shownSpeech){speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}draw();
   };
   const resizeObserver=new ResizeObserver(fitCanvas);resizeObserver.observe(canvas);
   const canRun=()=>!disposed&&!document.hidden&&window.innerWidth>window.innerHeight&&options.allowed();
@@ -648,6 +727,7 @@ export async function mountPixelWorld(shell, options) {
         if(activeEvent.elapsed>Math.max(4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
+    followDraggedCharacter(dt);
     updateSpeech(performance.now());draw();
     if(canRun())frame=requestAnimationFrame(tick);
   }
@@ -663,7 +743,7 @@ export async function mountPixelWorld(shell, options) {
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
     canvas.dataset.relationships=String(showRelationships);
   }
-  syncRelationships();select(options.speakOnOpen?0:-1,!!options.speakOnOpen);fitCanvas();resume();say('캐릭터를 누르고 끌어 옮겨 보세요. 양옆 버튼에서 인물과 조합식을 볼 수 있어요.');
+  syncCamera();syncRelationships();select(options.speakOnOpen?0:-1,!!options.speakOnOpen);fitCanvas();resume();say('캐릭터를 누르고 끌어 옮겨 보세요. 양옆 버튼에서 인물과 조합식을 볼 수 있어요.');
   return ()=>{cleanup();replacement?.();};
 }
 
@@ -690,7 +770,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
 
 function drawLifted(c,drag,time) {
   const x=drag.p.x*TILE,y=drag.p.y*TILE+96;
-  const groundY=Math.max(5,Math.min(15,Math.round(drag.p.y+3)))*TILE;
+  const groundY=Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(drag.p.y+3)))*TILE;
   c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
   c.save();c.translate(x,y-96);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+96);
   drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,hanging:true,time:performance.now()/1000,motion:drag.n.motion,walkFrame:Math.floor(performance.now()/1000*(drag.n.motion.frequency/3)+drag.n.motion.phase)%4,selected:true});

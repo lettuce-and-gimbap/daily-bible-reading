@@ -29,6 +29,7 @@ export function interactionRoutine(n,kind){
  const key=(n.identity?.id||n.name||'reader')+':'+kind;
  const seed=[...key].reduce((s,c)=>s*31+c.codePointAt(0),7)>>>0;
  let index=seed%variants.length;
+ if(kind==='ark-covenant')return {id:'bush:observe',category:'bush',gesture:'observe',label:'곁에서 바라보기',variant:seed%3,period:2.8,phase:0};
  if(n.objectAction==='zacchaeus-tree')return {id:'tree:climb',category:'tree',gesture:'climb',label:'나무에 올라 바라보기',variant:seed%3,period:2.4,phase:0};
  const special={'widow-oil':'pour','david-stones':'pick','baruch-scroll':'write','josiah-scroll':'read','aaron-manna':'pour','ethiopian-scroll':'point'}[n.objectAction];
  if(special){const match=variants.findIndex(v=>v[0]===special);if(match>=0)index=match;}
