@@ -5,7 +5,7 @@ import {objectPresentation,interactionAnchor,heldObject} from '../js/features/pi
 import {objectBehavior} from '../js/features/pixel-bible/object-behavior.js';
 import {drawFaceExpression,EXPRESSIONS} from '../js/features/pixel-bible/expression.js';
 
-test('침상은 베개 쪽에 머리를 놓고 눕고, 화살의 모든 변형은 당기기·발사 자세를 사용한다',()=>{
+test('침상 동작은 눕고, 활 동작은 장전·겨냥·발사·회수 단계가 구분된다',()=>{
  for(const kind of ['bed','mat']){
   assert.equal(objectBehavior(kind).carry,false);
   const routine={...interactionRoutine({name:'일꾼'},kind),gesture:'sleep',phase:0};
@@ -16,8 +16,18 @@ test('침상은 베개 쪽에 머리를 놓고 눕고, 화살의 모든 변형�
  }
  for(const kind of ['arrow','bow'])for(const [gesture]of interactionOptions(kind)){
   const routine={category:'weapon',kind,gesture,period:4,phase:0,variant:0};
-  for(const time of [1.2,2.2]){const p=interactionPose(routine,time);assert.ok(p.archery);assert.equal(p.gesture,'shoot');assert.equal(p.handY,24);}
+  const prep=interactionPose(routine,1.2),active=interactionPose(routine,2.2);
+  const bowAction=['nock','aim','draw','shoot','retrieve'].includes(gesture);
+  assert.equal(prep.archery,bowAction);assert.equal(prep.gesture,bowAction?'shoot':gesture);
+  if(bowAction)assert.equal(prep.archeryAction,gesture);
+  assert.ok(prep.handY>=13&&prep.handY<=30);assert.ok(active.handY>=13&&active.handY<=30);
+  if(gesture==='shoot')assert.equal(active.shot,true);
+  if(gesture==='retrieve')assert.equal(active.kneel,true);
  }
+ const ladder=interactionPose({category:'tool',kind:'ladder',gesture:'climb-ladder',period:4,phase:0},2.2);
+ assert.equal(ladder.climb,4);assert.equal(ladder.bodyY,-3);
+ assert.notDeepEqual(interactionOptions('well'),interactionOptions('cup'));
+ assert.ok(interactionOptions('oven').some(([id])=>id==='take-bread'));
  assert.ok(objectPresentation('cloak').scale*27<64,'땅의 겉옷도 인물 전체 높이보다 작다');
 });
 

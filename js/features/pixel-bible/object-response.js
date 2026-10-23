@@ -41,12 +41,12 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
  const base=objectPresentation(o.kind),n=npcs.find(n=>n.usingObject===o&&n.interaction);
  if(!n)return {...base,active:false,dx:0,dy:0,tilt:0,open:0};
  const pose=interactionPose(n.interaction,time-(n.interactionStart||0),reduced),use=pose.phase===1||pose.phase===2;
- const direction=n.x<o.x?-1:1,beat=reduced?0:pose.phase===1?-1:pose.phase===2?1:0;
+ const direction=n.direction==='left'?-1:n.direction==='right'?1:n.x<o.x?-1:1,beat=reduced?0:pose.phase===1?-1:pose.phase===2?1:0;
  const portable=base.portable;
- return {...base,liquidColor:pose.actual==='water-wine'&&use?'#965e83':null,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,pose,actor:n,direction,
+ return {...base,kind:o.kind,liquidColor:pose.actual==='water-wine'&&use?'#965e83':null,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,actual:pose.actual,pose,actor:n,direction,
   dx:portable&&use?direction*3:0,dy:portable&&use?-3:pose.prop==='boat'?beat:0,
   squash:['bench','bed'].includes(pose.prop)&&use?.035:0,
-  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use?direction*.32:pose.prop==='animal'?beat*.025:portable?beat*.045:0,
+  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use?beat*.08:portable?beat*.045:0,
   open:['read','unroll','spread','mend','fold'].includes(pose.gesture)&&use?.22:0,
   lid:pose.prop==='chest'&&pose.gesture==='open'&&use?1:0,beat,use};
 }
@@ -91,6 +91,8 @@ export function drawObjectResponse(c,o,frame,tile=24){
   rect((frame.direction*8+b)*s,-5*s,2*s,6*s,'#cfab62');rect((frame.direction*8-2)*s,-6*s,6*s,2*s,'#f0d087');
  } else if(category==='tree'){
   if(frame.use){rect((5+b)*s,-18*s,2*s,s,'#a0c087');rect((-6-b)*s,-14*s,s,2*s,'#8db276');}
+  if(frame.actual==='bonk'&&frame.phase===2){rect(7*s,(-12+frame.phase)*s,3*s,3*s,'#d99b53');rect(10*s,(-6+frame.phase)*s,2*s,2*s,'#d99b53');}
+  if(frame.gesture==='fruit'&&frame.use){rect((frame.direction*8+b)*s,-11*s,3*s,4*s,'#d99b53');rect((frame.direction*8+1+b)*s,-13*s,1,2,'#71945e');}
  } else if(category==='scroll'||category==='book'){
   if(frame.use){rect(-4*s,-8*s,8*s,1,'#a7905e');if(frame.gesture==='write')rect((frame.phase-2)*s,-6*s,3*s,1,'#70563e');}
  } else if(category==='boat'){
@@ -98,13 +100,18 @@ export function drawObjectResponse(c,o,frame,tile=24){
  } else if(category==='instrument'&&frame.use){
   for(let i=0;i<2;i++)rect((7+i*4)*s,(-15-i*3+b)*s,2,3,'#f5df91');
  } else if(category==='food'&&frame.use){
-  for(let i=0;i<3;i++)rect((-3+i*3+b)*s,(-4-i%2)*s,2,2,'#ecd59a');
+  if(['break','share','offer'].includes(frame.gesture)){
+   for(let i=0;i<3;i++)rect((frame.direction*(3+i*3)+b)*s,(-5-i%2)*s,2,2,'#ecd59a');
+  }else if(frame.gesture==='eat'){
+   rect((-2+b)*s,-4*s,5*s,4*s,'#ecd59a');
+   if(frame.phase===2)rect((frame.direction>0?-2:1)*s,-4*s,2*s,2*s,'#806b53');
+  }else for(let i=0;i<3;i++)rect((-3+i*3+b)*s,(-4-i%2)*s,2,2,'#ecd59a');
  } else if(category==='animal'&&frame.use){
   rect((7+b)*s,-7*s,2,4,'#dfc593');
   if(frame.gesture==='feed'){rect(frame.direction*8*s,-4*s,3,2,'#d9c47c');rect(frame.direction*7*s,-2*s,2,2,'#d9c47c');}
   if(['care','guide'].includes(frame.gesture))rect((frame.direction*5+b)*s,-10*s,4,2,'#f2d5af');
  } else if(category==='lamp'){
-  if(frame.use){rect(-s,(-13+b)*s,2*s,3*s,'#f3d877');rect(0,-12*s,s,2*s,'#e89e54');}
+  if(frame.use){const flare=frame.kind==='fire'&&['fan','tend'].includes(frame.gesture)?2:0;rect((-s-flare)*1,(-13+b-flare)*s,(2+flare)*s,(3+flare)*s,'#f3d877');rect(0,(-12-flare)*s,s,(2+flare)*s,'#e89e54');if(frame.kind==='fire'&&frame.gesture==='shield')rect(-5*s,-15*s,2*s,6*s,'#d7c69f');}
  } else if(category==='chest'&&frame.use){
   rect(-8*s,-14*s,16*s,2*s,'#c4a46f');rect(-7*s,-11*s,14*s,2*s,'#463b32');
  } else if(category==='cloth'||category==='wear'){
@@ -114,15 +121,47 @@ export function drawObjectResponse(c,o,frame,tile=24){
  } else if(['tool','weapon','treasure','basket'].includes(category)&&frame.use){
   rect((frame.direction*3+b)*s,-8*s,2,2,'#f6e3b2');rect((frame.direction*3-b)*s,-3*s,2,1,'#d4bd8e');
  } else if(category==='cooking'&&frame.use){
-  // 솥과 화덕은 들어 마시지 않는다. 손의 젓기와 증기를 같은 박자로 그린다.
-  rect((b*3)*s,-10*s,1.5,9*s,'#b99a6f');
-  for(let i=0;i<2;i++)rect((-3+i*5+b)*s,(-13-i*4-frame.phase)*s,2,3,'#eee2c9');
+  // 솥 젓기와 화덕 돌보기·빵 꺼내기를 분리해 물건 쓰임에 맞춘다.
+  if(frame.kind==='oven'&&frame.gesture==='fan'){
+   for(let i=0;i<3;i++)rect((-7+i*4+b*2)*s,(-12+i*2)*s,3*s,1,'#e5bd70');
+   rect(-s,-15*s,2*s,4*s,'#f3d877');
+  }else if(frame.kind==='oven'&&frame.gesture==='take-bread'){
+   rect((frame.direction*4+b)*s,-9*s,6*s,3*s,'#d49b57');rect((frame.direction*5+b)*s,-10*s,3*s,1,'#f0ca83');
+  }else if(frame.gesture==='tend'){
+   rect((frame.direction*3+b)*s,-13*s,1.5,12*s,'#b99a6f');
+  }else if(frame.gesture==='inspect'){
+   for(let i=0;i<2;i++)rect((-3+i*5+b)*s,(-13-i*4-frame.phase)*s,2,3,'#eee2c9');
+  }else{
+   rect((b*3)*s,-10*s,1.5,9*s,'#b99a6f');
+   for(let i=0;i<2;i++)rect((-3+i*5+b)*s,(-13-i*4-frame.phase)*s,2,3,'#eee2c9');
+  }
  } else if(category==='table'&&frame.use){
   // 닦을 때는 천, 차릴 때는 상 위 그릇/양식이 손을 따라 움직인다.
   if(frame.gesture==='wipe')rect((-4+b*3)*s,-5*s,7*s,2,'#e9dbc0');
   else {rect((-5+b)*s,-6*s,5*s,2*s,'#d9bf83');rect((3-b)*s,-6*s,4*s,2,'#eee2bd');}
  } else if(category==='bed'&&frame.use){
-  rect((-7+b)*s,-3*s,14*s,2,'#c6ceb2');rect((-6+b)*s,-2*s,12*s,1,'#edf0d3');
+  if(frame.pose.lie){rect((-8+b)*s,-5*s,7*s,3*s,'#efe5c5');rect((2-b)*s,-4*s,7*s,4*s,'#b4c5bd');}
+  else {rect((-7+b)*s,-3*s,14*s,2,'#c6ceb2');rect((-6+b)*s,-2*s,12*s,1,'#edf0d3');}
+ } else if(category==='rope'&&frame.use){
+  if(['coil','uncoil'].includes(frame.gesture)){
+   for(let i=0;i<3;i++)rect((-4+i*3+b)*s,(i%2?2:0)*s,4*s,1,'#c5a16b');
+  }else if(['tie','untie'].includes(frame.gesture)){
+   rect(-2*s,-7*s,1,10*s,'#b9915c');rect(1*s,-6*s,1,9*s,'#d0ae79');rect(-3*s,-2*s,7*s,1,'#b9915c');
+  }else{
+   const length=frame.actual==='lower-rope'?20+frame.phase*5:frame.gesture==='pull'?15-frame.phase*2:13;
+   rect(-1,-12*s,1,Math.round(length*s),'#b9915c');
+   if(frame.actual==='lower-rope'||frame.gesture==='pull')rect(-3*s,(-12+length)*s,5*s,3*s,'#98744d');
+  }
+ } else if(category==='weapon'&&frame.use){
+  if(frame.pose.archery){
+   if(frame.phase===1){rect(frame.direction*5*s,-10*s,2*s,8*s,'#d5b776');rect(frame.direction*4*s,-9*s,1,6*s,'#eee0b2');}
+   if(frame.pose.shot){
+    const rise=frame.actual==='high-shot'?-9:frame.actual==='low-shot'?3:0;
+    rect(frame.direction*(9+b*2)*s,(-8+rise)*s,8*s,1,'#d8c38d');rect(frame.direction*(16+b*2)*s,(-9+rise)*s,2*s,1,'#eee4c4');
+   }
+  }else if(['swing','thrust','practice'].includes(frame.gesture)){
+   rect(frame.direction*6*s,-11*s,2*s,8*s,'#c3a56d');rect(frame.direction*5*s,-11*s,4*s,1,'#e4d2a5');
+  }else rect(frame.direction*5*s,-6*s,2*s,2,'#f6e3b2');
  } else if(category==='cart'&&frame.use){
   rect((-5+b)*s,-6*s,10*s,1,'#c3a77b');
   rect(-8*s,2*s,2*s,1,'#e0c793');rect(6*s,(1+b)*s,2*s,1,'#e0c793');

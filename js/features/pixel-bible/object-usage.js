@@ -4,7 +4,9 @@ export const OBJECT_USAGE={};
 function bind(kinds,rows){for(const kind of kinds.split(' '))OBJECT_USAGE[kind]=rows;}
 bind('bed mat',options(['lie','반듯이 눕기'],['sleep','누워 잠들기'],['side-rest','옆으로 누워 쉬기'],['tuck','이불 여미고 눕기'],['sit','가장자리에 앉기'],['rise','누웠다가 일어나기']));
 bind('rope',options(['coil','밧줄을 둥글게 감기'],['uncoil','감긴 밧줄 풀기'],['tie','매듭 묶기'],['untie','매듭 풀기'],['pull','양손으로 줄 당기기'],['lower-rope','줄을 아래로 내려 주기']));
-bind('bow arrow',options(['shoot','겨냥하고 화살 쏘기'],['high-shot','위쪽으로 화살 쏘기'],['low-shot','낮게 겨냥해 쏘기'],['steady-shot','한쪽 무릎 굽혀 쏘기'],['quick-shot','짧게 당겨 쏘기'],['draw','시위를 당겼다가 쏘기']));
+bind('bow arrow',options(['nock','활에 화살 메기기'],['aim','안전한 빈 쪽 겨누기'],['draw','시위를 당겨 겨냥하기'],['shoot','화살 쏘기'],['retrieve','쏜 화살 거두기'],['fletch','화살 깃 살펴보기']));
+OBJECT_USAGE.bow=options(['nock','화살을 활에 메기기'],['aim','빈 쪽으로 활 겨누기'],['draw','활시위를 당겨 버티기'],['shoot','화살 쏘기'],['unstring','활시위 풀어 정리하기'],['inspect','활대와 시위 살피기']);
+OBJECT_USAGE.arrow=options(['nock','화살을 활에 메기기'],['aim','화살 끝을 안전한 빈 쪽에 두기'],['shoot','활에 메운 화살 쏘기'],['retrieve','쏜 화살 거두기'],['fletch','화살 깃 살펴보기'],['count','화살 수 세기']);
 bind('chain fetter',options(['lift-chain','양손으로 들어 무게 재기'],['pull','연결 고리 당겨 보기'],['coil','사슬 가지런히 모으기'],['unlock','잠금장치 열어 보기'],['inspect','고리 살피기'],['place','조심히 내려놓기']));
 bind('sword spear javelin',options(['guard','무기를 세워 자세 잡기'],['thrust','빈 쪽으로 찌르기 연습'],['swing','빈 쪽으로 휘두르기'],['polish','날을 천으로 닦기'],['draw-weapon','무기를 빼 들어 보기'],['lower','무기 낮춰 쉬기']));
 bind('shield',options(['guard','방패 들어 몸 가리기'],['brace','방패 뒤에서 버티기'],['raise','방패 높이 들기'],['polish','방패 표면 닦기'],['turn','방패 방향 돌리기'],['lower','방패 내려 쉬기']));
@@ -25,6 +27,15 @@ bind('honey milk wine',options(['drink','잔에 담아 마시기'],['pour','잔�
 bind('incense myrrh perfume censer',options(['waft','향을 가볍게 맡기'],['pour','조금 덜어 내기'],['cap','뚜껑 여닫기'],['offer','두 손으로 받쳐 내밀기'],['wipe','그릇 닦기'],['inspect','내용물 살피기']));
 bind('fire oven',options(['warm','안전한 거리에서 손 녹이기'],['fan','가볍게 부채질하기'],['tend','긴 막대로 불 살피기'],['step-back','열기에서 물러서기'],['observe','불길 지켜보기'],['shield','손으로 얼굴 앞 열 가리기']));
 bind('water well water-supply jar pitcher basin bowl cup',options(['scoop','그릇으로 물 떠 올리기'],['drink','잔을 입에 대고 물 마시기'],['sip','두 손으로 잔을 받쳐 천천히 마시기'],['pour','잔에 물 따르기'],['wash','물을 떠 손 씻기'],['fill','빈 그릇에 물 채우기']));
+// 물은 담는 그릇과 길어 올리는 시설의 쓰임이 다르므로 실제 동작을 나눈다.
+OBJECT_USAGE.well=options(['bucket','두레박을 우물에 내리기'],['rope','줄을 당겨 두레박 올리기'],['scoop','길어 온 물을 그릇에 받기'],['pour','물동이에 물 옮기기'],['inspect','우물 안을 들여다보기'],['lower-rope','두레박을 천천히 내려 주기']);
+OBJECT_USAGE.basin=options(['wash','대야 물로 손 씻기'],['rinse','손에 물을 끼얹어 헹구기'],['fill','대야에 물 붓기'],['pour','사용한 물 비우기'],['scoop','손으로 물 떠 보기'],['wipe','대야 가장자리 닦기']);
+OBJECT_USAGE.bowl=options(['drink','그릇을 들어 마시기'],['sip','두 손으로 받쳐 조금씩 마시기'],['scoop','물을 떠 옮기기'],['pour','다른 그릇에 나누어 붓기'],['wash','손끝을 씻기'],['fill','그릇에 물 채우기']);
+OBJECT_USAGE.cup=options(['drink','잔을 들어 물 마시기'],['sip','잔을 두 손으로 받쳐 마시기'],['offer','잔을 다른 이에게 내밀기'],['pour','잔에 물 따르기'],['fill','빈 잔 채우기'],['wipe','잔 가장자리 닦기']);
+OBJECT_USAGE.jar=options(['fill','항아리에 물 담기'],['pour','항아리 물을 그릇에 붓기'],['hold','항아리를 두 손으로 받치기'],['carry','항아리를 옮기기'],['cap','항아리 입구 덮기'],['wipe','항아리 겉면 닦기']);
+OBJECT_USAGE.pitcher=options(['pour','주전자 물을 잔에 따르기'],['fill','주전자에 물 채우기'],['hold','손잡이를 잡고 받치기'],['offer','물을 담아 내밀기'],['cap','주전자 입구 덮기'],['wipe','주전자 입구 닦기']);
+OBJECT_USAGE['water-supply']=options(['fill','그릇에 물을 담기'],['pour','물을 필요한 곳에 붓기'],['offer','물을 건네기'],['hold','물그릇을 받쳐 들기'],['drink','물을 마시기'],['wash','물로 손을 씻기']);
+OBJECT_USAGE.oven=options(['tend','긴 도구로 화덕 살피기'],['fan','불길에 바람 보내기'],['place','빵을 화덕에 넣기'],['take-bread','익은 빵 꺼내기'],['warm','불 가까이 손 녹이기'],['inspect','화덕 안 열기 살피기']);
 bind('sandal',options(['wear','발을 굽혀 신발 신기'],['remove','발을 굽혀 신발 벗기'],['tie','신 끈 묶기'],['wipe','신발 밑창 닦기'],['inspect','밑창 살피기'],['place','신발 가지런히 놓기']));
 bind('crown helmet',options(['wear','머리에 맞춰 쓰기'],['remove','머리에서 벗기'],['smooth','머리에 고쳐 쓰기'],['polish','겉면 닦기'],['hold','두 손으로 받쳐 들기'],['offer','두 손으로 내밀기']));
 bind('belt breastplate',options(['wear','몸에 맞춰 매기'],['remove','매듭 풀어 벗기'],['smooth','위치 고쳐 매기'],['polish','겉면 닦기'],['hold','두 손으로 받치기'],['offer','건네기']));
