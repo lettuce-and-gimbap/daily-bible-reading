@@ -70,3 +70,10 @@
   .topbar-right { gap: 4px; }
   .pb-world-head small { display: none; }
 }
+
+.pb-speech{position:absolute;z-index:3;box-sizing:border-box;width:max-content;max-width:min(270px,calc(100% - 24px));padding:10px 12px;border:3px solid #594b39;background:#fff5d8;color:#302f35;box-shadow:3px 3px 0 #17362f55;pointer-events:none;font-family:monospace;image-rendering:pixelated;}
+.pb-speech[hidden]{display:none;}
+.pb-speech::after{content:"";position:absolute;left:var(--pb-tail,50%);bottom:-9px;width:9px;height:9px;background:#fff5d8;border-right:3px solid #594b39;border-bottom:3px solid #594b39;transform:translateX(-50%) rotate(45deg);}
+.pb-speech p{margin:0;font-size:14px;line-height:1.45;word-break:keep-all;overflow-wrap:anywhere;}
+.pb-speech small{display:block;margin-top:6px;font-size:10px;line-height:1.35;color:#76634c;}
+.pb-speech[data-below="true"]::after{top:-9px;bottom:auto;border-right:0;border-bottom:0;border-left:3px solid #594b39;border-top:3px solid #594b39;}

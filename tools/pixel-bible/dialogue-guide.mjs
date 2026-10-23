@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {SOLO_DIALOGUE} from '../../js/features/pixel-bible/solo-dialogue.js';
+import {PAIR_DIALOGUE} from '../../js/features/pixel-bible/pair-dialogue.js';
+const lines=['# PIXEL BIBLE 대사 검토본','','총 306문장: 100종 독백 각 2문장(200개), 방향이 구분된 관계 상황 53개 각 2문장(106개).','','성경 본문과 저장소 장별 자료를 바탕으로 새로 쓴 상상 대사다. 실제 발언·직접 인용·당시 내면의 확정이 아니다. **호크마 원문은 현재 환경에 없어 미검토 상태다.** 호크마를 읽었다거나 신학 주석 검토가 완료되었다고 표시하지 않는다. 저작권 주석 원문은 이 파일/저장소에 넣지 않는다.','','이세벨–나봇의 직접 대면과 개인적 혐오는 본문 기록으로 확정하지 않는다. 해당 가상 대사는 열왕기상 21장의 포도원 강탈과 모함을 바탕으로 쓴 것으로, 본문 속 악한 태도를 보여 주며 그 태도를 승인하는 문장이 아니다.','','독백은 인물의 상징 대사이며 오늘 본문의 시점을 그대로 재현하지 않는다. 모호한 왕/동명 표기는 정해 둔 본문일 때만 개인 독백을 쓰고 그 외에는 창작 일상 대사를 사용한다. 관계 대사는 지정 장이 오늘 분량에 있고 두 인물이 3타일 안에 있으며 이동 중이 아닐 때만 후보가 된다. 모든 대사는 화면에서 상상/창작 표기를 붙인다.','','## 독백',''];
+for(const [name,p] of Object.entries(SOLO_DIALOGUE))lines.push(`### ${name} · ${p.ref}`,'',...p.lines.map(s=>`- ${s}`),'');
+lines.push('## 근접 관계 대사','');for(const p of PAIR_DIALOGUE)lines.push(`### ${p.speaker} → ${p.target} · ${p.ref}`,``, `활성 본문: ${p.chapter}`,'',...p.lines.map(s=>`- ${s}`),'');
+const text=lines.join('\n')+'\n',out=fileURLToPath(new URL('../../docs/pixel-bible-dialogue.md',import.meta.url));
+if(process.argv.includes('--check')){if(fs.readFileSync(out,'utf8')!==text)throw Error('Dialogue guide is stale');}else fs.writeFileSync(out,text);
+console.log('200 solo + 106 pair lines; Hokma review pending');

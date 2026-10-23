@@ -1,3 +1,4 @@
+import { dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS } from './backgrounds.js';
@@ -91,7 +92,7 @@ export async function mountPixelWorld(shell, options) {
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><small></small></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>함께 있는 인물</h3><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-person="${i}" aria-pressed="${i===0}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -106,6 +107,32 @@ export async function mountPixelWorld(shell, options) {
   const canvas = shell.querySelector("canvas"), ctx = canvas.getContext("2d");
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
+  const speechElement=shell.querySelector('.pb-speech');
+  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0;
+  function hideSpeech(){speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  function updateSpeech(now){
+    const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!placing&&!shell.querySelector('.pb-design');
+    const ready=!speech.current&&now>=speech.nextAt;
+    const previous=speech.current;
+    const current=speech.tick(now,enabled&&ready?dialogueCandidates(npcs,requested):[],enabled);
+    if(current!==previous&&current?.target){const a=current.speaker,b=current.target;a.direction=movementDirection(b.x-a.x,b.y-a.y);b.direction=movementDirection(a.x-b.x,a.y-b.y);a.idle=b.idle=5;}
+    if(current!==shownSpeech){
+      shownSpeech=current;speechElement.hidden=!current;
+      if(current){speechElement.querySelector('p').textContent=current.text;speechElement.querySelector('small').textContent=`${current.speaker.name}${current.target?' → '+current.target.name:''} · ${current.kind==='ordinary'?'창작 일상':current.kind==='pair'?'상상 대화':'상상 독백'}${current.ref?' · '+current.ref:''}`;speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}
+    }
+  }
+  function positionSpeech(){
+    if(!shownSpeech||speechElement.hidden)return;
+    const r=canvas.getBoundingClientRect(),v=worldViewport(canvas.width,canvas.height),n=shownSpeech.speaker;
+    const x=(n.x*TILE*v.scale+v.x)*r.width/canvas.width,y=((n.y*TILE-72)*v.scale+v.y)*r.height/canvas.height;
+    const left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
+    const topLimit=Math.max(48,shell.querySelector('.pb-world-head').offsetHeight+10),above=y-speechHeight-10;
+    const below=above<topLimit;
+    const proposed=below?((n.y*TILE+42)*v.scale+v.y)*r.height/canvas.height:above;
+    speechElement.dataset.below=String(below);
+    speechElement.style.left=`${Math.round(left)}px`;speechElement.style.top=`${Math.round(Math.max(topLimit,Math.min(r.height-speechHeight-12,proposed)))}px`;
+    speechElement.style.setProperty('--pb-tail',`${Math.max(14,Math.min(speechWidth-14,x-left))}px`);
+  }
   const storageKey = `pixel-bible-layout:${model.key}`;
   const defaults = () => [{ kind: "field", x: 28, y: 9 }, { kind: "water", x: 21, y: 12 }, { kind: "bench", x: 12, y: 12 }, { kind: "tree", x: 7, y: 8 }, { kind: "tree", x: 33, y: 13 }];
   let objects = defaults();
@@ -116,7 +143,7 @@ export async function mountPixelWorld(shell, options) {
   const npcs = model.cast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, action: "", task: null }));
   let drag=null, suppressClick=false, toastTimer=null;
   let selected = 0, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
-  let activeEvent = null, pendingEvent = null, eventIndex = 0, lastTalk = -10, conversation = null, cinematicTime = 0;
+  let activeEvent = null, pendingEvent = null, eventIndex = 0, cinematicTime = 0;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const blocked = (x, y) => x < 2 || x > 37 || y < 5 || y > 15 || objects.some((o) => o.kind !== "field" && o.x === x && o.y === y);
   const say = (text) => {
@@ -313,7 +340,7 @@ export async function mountPixelWorld(shell, options) {
       if(expand){togglePanel('left',false);togglePanel('right',false);options.landscape();say('양옆 버튼으로 인물과 조합 도구를 펼칠 수 있어요.');}
       else if(document.fullscreenElement)document.exitFullscreen?.().catch(()=>{});
     }
-    if(action==="pause") { paused=!paused; b.setAttribute("aria-pressed",paused); b.textContent=paused?"계속하기":"일시정지"; if(paused && sound) speechSynthesis.cancel(); }
+    if(action==="pause") { hideSpeech();paused=!paused; b.setAttribute("aria-pressed",paused); b.textContent=paused?"계속하기":"일시정지"; if(paused && sound) speechSynthesis.cancel(); }
     if(action==="sound") {
       if(!("speechSynthesis" in window)) return say("이 브라우저에서는 음성 합성을 지원하지 않아요. 자막으로 장면을 볼 수 있어요.");
       sound=!sound; b.setAttribute("aria-pressed",sound); b.textContent=sound?"음성 켜짐":"음성 꺼짐";
@@ -369,20 +396,8 @@ export async function mountPixelWorld(shell, options) {
       }
     }
     if(pendingEvent && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)) beginEvent(pendingEvent.scene);
-    if(time-lastTalk>10) {
-      lastTalk=time;
-      const r=model.relations.find((r)=>{
-        const a=npcs.find((n)=>n.name===r.from),b=npcs.find((n)=>n.name===r.to);
-        return a&&b&&!drag?.active&&Math.hypot(a.x-b.x,a.y-b.y)<3;
-      });
-      if(r) {
-        const a=npcs.find((n)=>n.name===r.from),b=npcs.find((n)=>n.name===r.to);
-        a.direction=movementDirection(b.x-a.x,b.y-a.y);b.direction=movementDirection(a.x-b.x,a.y-b.y);a.idle=b.idle=3;
-        if (!pendingEvent) { a.path=[]; b.path=[]; }
-        conversation={text:`${r.from} · ${r.to}: ${r.label}`,until:time+3};say(`${r.from} ↔ ${r.to} · ${r.label}. ${r.note || ""} (${r.ref})`);
-      }
-    }
   }
+
   // 배경은 한 번 그리고 매 프레임 재사용한다.
   const background=document.createElement("canvas");background.width=WIDTH;background.height=HEIGHT;
   let backgroundKey='meadow';
@@ -403,16 +418,15 @@ export async function mountPixelWorld(shell, options) {
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,selected);
     ctx.restore();
-    if(conversation?.until>time) {ctx.font="14px sans-serif";ctx.textAlign="center";ctx.fillStyle="#112d36e8";ctx.fillRect(260,75,440,28);ctx.fillStyle="#fff0c2";ctx.fillText(conversation.text,480,94);}
     if(placing) {ctx.fillStyle="#102e38d9";ctx.fillRect(300,410,360,28);ctx.fillStyle="#ffe5a2";ctx.font="14px sans-serif";ctx.textAlign="center";ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,480,430);}
-    ctx.restore();
+    ctx.restore();positionSpeech();
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
     const board=shell.querySelector(".pb-design");if(board){e.preventDefault();board.remove();shell.querySelector('[data-action="design"]').focus();}
   },{signal});
   const fitCanvas=()=>{
     const r=canvas.getBoundingClientRect(),ratio=Math.min(window.devicePixelRatio||1,2);
-    canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));draw();
+    canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));if(shownSpeech){speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}draw();
   };
   const resizeObserver=new ResizeObserver(fitCanvas);resizeObserver.observe(canvas);
   const canRun=()=>!disposed&&!document.hidden&&window.innerWidth>window.innerHeight&&options.admin();
@@ -427,16 +441,16 @@ export async function mountPixelWorld(shell, options) {
         if(activeEvent.elapsed>4.5 && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>12)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
-    draw();
+    updateSpeech(performance.now());draw();
     if(canRun())frame=requestAnimationFrame(tick);
   }
   function resume() {
     cancelAnimationFrame(frame);last=0;
-    if(document.hidden || window.innerWidth<=window.innerHeight) {if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
+    if(document.hidden || window.innerWidth<=window.innerHeight) {hideSpeech();if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   select(0);fitCanvas();resume();say('캐릭터를 누르고 끌어 옮겨 보세요. 양옆 버튼에서 인물과 조합식을 볼 수 있어요.');
   return ()=>{cleanup();replacement?.();};
 }

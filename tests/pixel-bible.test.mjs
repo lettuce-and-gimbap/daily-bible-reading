@@ -112,3 +112,44 @@ test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
  const {movementDirection:d}=await import('../js/features/pixel-bible/language.js');
  assert.equal(d(0,-1),'up');assert.equal(d(0,1),'down');assert.equal(d(-1,0),'left');assert.equal(d(1,0),'right');assert.equal(d(0,0,'up'),'up');
 });
+
+test('100종의 독백 200개와 관계 대사 106개를 직접 작성해 출처와 구분한다',async()=>{
+ const {APPEARANCES}=await import('../js/features/pixel-bible/appearance.js');
+ const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
+ assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
+ for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
+ assert.equal(PAIR_DIALOGUE.length,53);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'not-reviewed-source-unavailable');
+});
+
+test('말풍선은 한 슬롯에서 5초 표시하고 실제 숨긴 시점부터 3초를 쉰다',async()=>{
+ const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
+ const s=new SpeechDirector({now:0,random:()=>0});const a={id:'a',speaker:{name:'가'},kind:'solo'},b={id:'b',speaker:{name:'나'},kind:'solo'};
+ assert.equal(s.tick(2999,[a,b]),null);assert.equal(s.tick(3000,[a,b]).id,'a');
+ assert.equal(s.tick(7999,[b]).id,'a');assert.equal(s.tick(8000,[b]),null);
+ assert.equal(s.tick(10999,[b]),null);assert.equal(s.tick(11000,[a,b]).id,'b');
+ // 탭 복귀 등으로 만료를 늦게 관측해도 새로 사라진 순간부터 센다.
+ assert.equal(s.tick(20000,[a]),null);assert.equal(s.tick(22999,[a]),null);assert.equal(s.tick(23000,[a]).id,'a');
+ assert.equal(s.tick(23100,[a],false),null);assert.equal(s.current,null);
+ assert.equal(s.tick(26099,[b]),null);assert.equal(s.tick(26100,[b]).id,'b');
+});
+
+test('랜덤 무발화 기회에도 재시도 간격을 지키며 겹치거나 같은 대사를 연속 선택하지 않는다',async()=>{
+ const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
+ let r=.99;const s=new SpeechDirector({random:()=>r});const a={id:'a',speaker:{},kind:'solo'},b={id:'b',speaker:{},kind:'solo'};
+ assert.equal(s.tick(3000,[a,b]),null);r=0;assert.equal(s.tick(5999,[a,b]),null);assert.equal(s.tick(6000,[a,b]).id,'a');
+ assert.equal(s.tick(11000,[a,b]),null);assert.equal(s.tick(14000,[a,b]).id,'b');
+});
+
+test('이세벨의 대상별 대사를 구분하고 거리·현재 본문·이동 상태를 확인한다',async()=>{
+ const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
+ const npc=(name,x)=>({name,x,y:8,path:[],refs:['열왕기상 21장']});
+ const people=[npc('이세벨',10),npc('아합',11),npc('나봇',12)];
+ const candidates=dialogueCandidates(people,[{code:'1ki',chap:21}]);
+ const queen=candidates.filter(c=>c.kind==='pair'&&c.speaker.name==='이세벨');
+ assert.equal(queen.filter(c=>c.target.name==='아합').length,2);assert.equal(queen.filter(c=>c.target.name==='나봇').length,2);
+ assert.notEqual(queen[0].text,queen.at(-1).text);
+ people[2].x=20;assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:21}]).some(c=>c.kind==='pair'&&c.target.name==='나봇'));
+ assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:20}]).some(c=>c.kind==='pair'));
+ people[0].path=[{x:11,y:8}];assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:21}]).some(c=>c.speaker.name==='이세벨'));
+});
