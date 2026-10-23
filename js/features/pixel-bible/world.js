@@ -1,3 +1,4 @@
+import { WORLD_OBJECTS, OBJECT_SCENES, OBJECT_LINES, removeObjects } from './object-scenes.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
@@ -15,7 +16,7 @@ import { drawPixelCharacter, characterStyle, drawWorldObject, drawWorldBackgroun
 const books = new Map();
 const TILE = 24, WIDTH = 960, HEIGHT = 480;
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-const OBJECTS = { field: "보리밭", water: "물항아리", bench: "쉬는 자리", tree: "나무" };
+const OBJECTS = WORLD_OBJECTS;
 export const RUTH_SCENES = [
   { id: "glean", title: "룻의 이삭 줍기", actors: ["룻"], object: "field", ref: "룻기 2:2–3", lines: ["룻이 밭으로 나가 추수하는 사람들 뒤에서 이삭을 줍습니다.", "그곳은 보아스에게 속한 밭이었습니다."] },
   { id: "greet", title: "보아스와 일꾼들의 인사", actors: ["보아스", "일꾼"], object: "field", ref: "룻기 2:4", lines: ["보아스가 추수하는 일꾼들에게 여호와께서 함께하시기를 빕니다.", "일꾼들도 여호와께서 보아스에게 복 주시기를 빕니다."] },
@@ -25,7 +26,7 @@ export const RUTH_SCENES = [
 export const ELIJAH_SCENES = [
   {id:'rest-elijah',title:'로뎀나무 아래의 쉼',actors:['엘리야','천사'],object:'tree',ref:'열왕기상 19:4–8',lines:['지친 엘리야가 로뎀나무 아래에 눕습니다. 천사가 그를 깨워 먹으라고 말합니다.','천사는 다시 엘리야를 깨웁니다. 엘리야는 먹고 마신 뒤 먼 길을 갈 힘을 얻습니다.']},
 ];
-const ALL_SCENES=[...RUTH_SCENES,...ELIJAH_SCENES];
+const ALL_SCENES=[...RUTH_SCENES,...ELIJAH_SCENES,...OBJECT_SCENES];
 export function worldViewport(width,height) {
   const scale=Math.max(width/WIDTH,height/HEIGHT);
   return {scale,x:(width-WIDTH*scale)/2,y:(height-HEIGHT*scale)/2};
@@ -66,7 +67,7 @@ export function buildWorldModel(chapters) {
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
-  return { cast, relations, events, scenes: [...(ruth ? RUTH_SCENES : []), ...(chapters.some(c=>c.code==="1ki" && c.chap===19 && c.data)?ELIJAH_SCENES:[])], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...(ruth ? RUTH_SCENES : []), ...(chapters.some(c=>c.code==="1ki" && c.chap===19 && c.data)?ELIJAH_SCENES:[])], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 전체 명단을 보존하고 선택 인물과 관계가 있는 인물을 같은 화면에 우선 배치한다.
@@ -114,7 +115,7 @@ export async function mountPixelWorld(shell, options) {
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':'통독 분량 · '}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
-    <h3>오브제 놓기</h3><div class="pb-world-toolbar">${Object.entries(OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}<button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="reset">배치 초기화</button></div>
+    <h3>오브제 놓기</h3><div class="pb-world-toolbar">${Object.entries(OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}<button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브제 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브제 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
@@ -129,7 +130,7 @@ export async function mountPixelWorld(shell, options) {
   function hideSpeech(){cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
   function updateSpeech(now){
-    const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!placing&&!shell.querySelector('.pb-design,.pb-scripture');
+    const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!placing&&!removing&&!shell.querySelector('.pb-design,.pb-scripture');
     const ready=!speech.current&&!pendingTalk&&now>=speech.nextAt;
     let current=null;
     if(!enabled){cancelTalk();speech.tick(now,[],false);}
@@ -142,7 +143,8 @@ export async function mountPixelWorld(shell, options) {
         else speech.dismiss(now);
       }
     }else{
-      const candidates=ready?dialogueCandidates(npcs,chapterData,dialogueContext):[];
+      const candidates=ready?(objectSpeech?[objectSpeech]:dialogueCandidates(npcs,chapterData,dialogueContext)):[];
+      if(ready&&objectSpeech)objectSpeech=null;
       current=speech.tick(now,candidates,true);
       if(current?.target&&current!==shownSpeech){
         const plan=planConversation(current.speaker,current.target,npcs,blocked,findPath);
@@ -200,6 +202,8 @@ export async function mountPixelWorld(shell, options) {
   const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, motion:characterMotion(p,chapterData), action: "", task: null }));
   let drag=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
+  let removing=false,objectSpeech=null,autoObjectAt=2;
+  const objectCooldown=new Map();
   let selected = -1, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
   let activeEvent = null, pendingEvent = null, eventIndex = 0, cinematicTime = 0;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -247,7 +251,7 @@ export async function mountPixelWorld(shell, options) {
     if(pendingTalk||speech.current?.speaker===n||speech.current?.target===n)hideSpeech();
     const path = findPath(cell(n), goal, blocked);
     if (!path) return false;
-    n.path = path; n.task = task; n.action = ""; n.idle = 5;
+    n.path = path; n.task = task; n.usingObject=null;n.objectScene=null;n.objectAction=null;n.action = ""; n.idle = 5;
     return true;
   }
   function toObject(n, o) {
@@ -267,8 +271,8 @@ export async function mountPixelWorld(shell, options) {
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
-    activeEvent = { scene, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
-    sceneActors(scene).forEach((n) => { n.action=scene.object; });
+    activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
+    sceneActors(scene).forEach((n) => { n.action=scene.object;n.usingObject=activeEvent.object;n.objectAction=scene.id; });
     overlay.hidden = false; showLine();
   }
   function endEvent() { activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
@@ -288,7 +292,7 @@ export async function mountPixelWorld(shell, options) {
     if(paused){paused=false;const button=shell.querySelector('[data-action="pause"]');button.setAttribute('aria-pressed','false');button.textContent='일시정지';}
     routes.forEach(({n,p}) => move(n,p,o));
     pendingEvent = { scene, actors, o };togglePanel("right",false);
-    say(`${scene.title} · 인물들이 ${OBJECTS[o.kind]}으로 모이고 있어요. (${scene.ref})`);
+    say(`${scene.title} · 인물들이 ${OBJECTS[o.kind]} 곁으로 모이고 있어요. (${scene.ref})`);
   }
   function interact(n,o) {
     const scene = model.scenes.find((s) => s.object === o.kind && s.actors.includes(n.name) && sceneActors(s).every(Boolean));
@@ -306,7 +310,7 @@ export async function mountPixelWorld(shell, options) {
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag) return;
     suppressClick=false;
-    if(!options.allowed()||activeEvent||placing||e.button!==0||window.innerHeight>=window.innerWidth)return;
+    if(!options.allowed()||activeEvent||placing||removing||e.button!==0||window.innerHeight>=window.innerWidth)return;
     const index=hitPerson(coordinates(e));if(index<0)return;
     const previous=npcs[selected];select(index);const n=npcs[index];
     const relation=previous&&previous!==n&&model.relations.find(r=>r.from===previous.name&&r.to===n.name||r.from===n.name&&r.to===previous.name);
@@ -346,10 +350,15 @@ export async function mountPixelWorld(shell, options) {
     if(suppressClick){suppressClick=false;return;}
     if (!options.allowed() || activeEvent || window.innerHeight >= window.innerWidth) return;
     const p = coordinates(e), x = Math.round(p.x), y = Math.round(p.y);
+    if(removing){
+      const object=objects.map(o=>({o,d:Math.hypot(o.x-p.x,o.y-p.y)})).filter(v=>v.d<1.8).sort((a,b)=>a.d-b.d)[0]?.o;
+      if(object)demolish(o=>o===object);else say('철거할 오브제의 밑부분을 눌러 주세요.');
+      return;
+    }
     if (placing) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
       if (objects.length >= 16) return say("이번 월드에는 오브제를 16개까지 놓을 수 있어요.");
-      objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; syncPlacement(); say("오브제를 놓았어요. 인물을 선택해 사용해 보세요."); return;
+      objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브제를 놓았어요. 인물을 선택해 사용해 보세요."); return;
     }
     const hit=hitPerson(p);
     if (hit >= 0) {
@@ -406,6 +415,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if (b.dataset.place) {
       if(activeEvent) return;
+      removing=false;const removeButton=shell.querySelector('[data-action="remove-object"]');removeButton.setAttribute('aria-pressed','false');removeButton.textContent='개별 철거';
       placing=b.dataset.place; syncPlacement(); say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`); return;
     }
     const action=b.dataset.action;
@@ -435,9 +445,12 @@ export async function mountPixelWorld(shell, options) {
       sound=!sound; b.setAttribute("aria-pressed",sound); b.textContent=sound?"음성 켜짐":"음성 꺼짐";
       if(!sound) speechSynthesis.cancel(); else if(activeEvent) showLine();
     }
-    if(action==="reset") {
-      endEvent(); objects=defaults(); npcs.forEach((n,i)=>{n.path=[];n.task=null;n.x=9+(i%5)*4;n.y=6+Math.floor(i/5)*7;});save();renderRecipes();say("이 월드의 오브제 배치를 처음으로 되돌렸어요.");
+    if(action==='remove-object'){
+      removing=!removing;placing=null;syncPlacement();
+      b.setAttribute('aria-pressed',removing);b.textContent=removing?'철거 마치기':'개별 철거';
+      if(removing)say('철거할 오브제의 밑부분을 누르세요. 인물의 움직임은 유지돼요.');
     }
+    if(action==='reset')demolish(()=>true);
     if(action==="scene" && !activeEvent) {
       const scene=model.scenes[eventIndex++%model.scenes.length], o=objects.find((o)=>o.kind===scene.object);
       if(o) queueScene(scene,o); else say(`${objectPhrase(OBJECTS[scene.object])} 먼저 배치해 주세요.`);
@@ -463,8 +476,32 @@ export async function mountPixelWorld(shell, options) {
     return true;
   }
   let replacement=null;
+  function demolish(predicate){
+    const result=removeObjects(objects,npcs,predicate);objects=result.remaining;
+    if(pendingEvent&&result.removed.includes(pendingEvent.o))pendingEvent=null;
+    if(activeEvent&&result.removed.includes(activeEvent.object))endEvent();
+    if(objectSpeech&&result.removed.includes(objectSpeech.object))objectSpeech=null;
+    result.removed.forEach(o=>objectCooldown.delete(o));
+    save();renderRecipes();draw();say(`${result.removed.length}개 오브제를 철거했어요.`);
+  }
+  function autoObjects(){
+    if(time<autoObjectAt||pendingEvent||pendingTalk||activeEvent||drag||placing||removing)return;
+    autoObjectAt=time+3;
+    const idle=npcs.filter(n=>!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
+    const pairs=objects.flatMap(o=>{
+      const specific=model.scenes.filter(s=>s.object===o.kind&&sceneActors(s).every(Boolean));
+      return idle.map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),distance:Math.hypot(o.x-n.x,o.y-n.y)}))
+        .filter(p=>!specific.length||p.scene);
+    })
+      .filter(p=>time-(objectCooldown.get(p.o)||-100)>=18)
+      .sort((a,b)=>Number(!!b.scene)-Number(!!a.scene)||a.distance-b.distance);
+    const chosen=pairs[0];if(!chosen)return;
+    if(toObject(chosen.n,chosen.o)){
+      chosen.n.objectScene=chosen.scene||null;objectCooldown.set(chosen.o,time);
+    }
+  }
   function update(dt) {
-    time+=dt;
+    time+=dt;autoObjects();
     for(const n of npcs) {
       if(drag?.active && drag.n===n)continue;
       const talk=pendingTalk?.choice||speech.current;
@@ -479,11 +516,15 @@ export async function mountPixelWorld(shell, options) {
         else { n.x+=dx/d*step;n.y+=dy/d*step; }
       } else if(n.task) {
         const target=n.task;
+        if(!objects.includes(target)){n.task=null;continue;}
         n.direction=movementDirection(target.x-n.x,target.y-n.y,n.direction);
-        n.action=target.kind;n.task=null;n.idle=7;
+        n.action=target.kind;n.task=null;n.usingObject=target;n.objectAction=n.objectScene?.id||null;n.idle=7;
+        if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
+          objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:(OBJECT_LINES[scene.id]||scene.lines)[Math.floor(Math.random()*(OBJECT_LINES[scene.id]||scene.lines).length)],ref:scene.ref,kind:'context',object:target};
+        }
         if(target.kind==="bench") { n.x=target.x;n.y=target.y; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
-        n.action="";n.idle=3+Math.random()*5;
+        n.action="";n.usingObject=null;n.idle=3+Math.random()*5;
         if(!reduced&&!pendingTalk) {const p={x:Math.max(2,Math.min(37,Math.round(n.x+(Math.random()-.5)*10))),y:Math.max(5,Math.min(15,Math.round(n.y+(Math.random()-.5)*6)))};if(!blocked(p.x,p.y))move(n,p);}
       }
     }
@@ -557,9 +598,10 @@ export async function mountPixelWorld(shell, options) {
 function drawObject(c,o) { drawWorldObject(c,o); }
 function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
-  const x=Math.round(n.x*TILE)+pose.x,y=Math.round(n.y*TILE)+pose.y;
+  const rise=n.objectAction==='zacchaeus-tree'&&n.usingObject?36:0;
+  const x=Math.round(n.x*TILE)+pose.x,y=Math.round(n.y*TILE)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,action:n.action,time:reduced?0:time,direction:n.direction||"down",selected});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,time:reduced?0:time,direction:n.direction||"down",selected});
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);

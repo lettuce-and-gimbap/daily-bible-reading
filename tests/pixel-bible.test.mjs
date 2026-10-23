@@ -272,3 +272,25 @@ test('같은 인물의 같은 클릭 대사를 즉시 다시 표시할 수 있�
  s.interrupt(a,200);assert.equal(s.current.text,a.text);assert.equal(s.current.until,5200);
  assert.equal(s.tick(5200,[]),null);assert.equal(s.nextAt,8200);
 });
+
+test('오브제 철거는 인물의 위치·경로·방향을 유지하고 삭제한 물건의 작업만 해제한다',async()=>{
+ const {removeObjects}=await import('../js/features/pixel-bible/object-scenes.js');
+ const a={kind:'tree',x:10,y:8},b={kind:'scroll',x:15,y:9};
+ const path=[{x:12,y:8}],n={x:11.25,y:8,path,direction:'right',stride:.4,idle:2,task:a,action:'tree',usingObject:a};
+ const other={x:19,y:10,path:[{x:20,y:10}],task:b};
+ let result=removeObjects([a,b],[n,other],o=>o===a);
+ assert.deepEqual(result.remaining,[b]);assert.equal(n.x,11.25);assert.equal(n.path,path);assert.equal(n.direction,'right');assert.equal(n.task,null);assert.equal(n.usingObject,null);assert.equal(n.stride,.4);assert.equal(other.task,b);
+ result=removeObjects(result.remaining,[n,other],()=>true);assert.deepEqual(result.remaining,[]);assert.equal(other.x,19);assert.equal(other.path.length,1);
+});
+
+test('성경 물건 조합은 실제 해당 장의 등장인물과 매칭되고 다른 장에서는 열리지 않는다',async()=>{
+ const {OBJECT_SCENES,WORLD_OBJECTS}=await import('../js/features/pixel-bible/object-scenes.js');
+ const {readFile}=await import('node:fs/promises');
+ for(const scene of OBJECT_SCENES){
+  assert.ok(WORLD_OBJECTS[scene.object]);assert.ok(scene.ref);assert.equal(scene.lines.length,2);
+  const raw=JSON.parse(await readFile(new URL(`../data/summary/${scene.code}.json`,import.meta.url),'utf8'));
+  const model=buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter,data:raw.chapters[scene.chapter]}]);
+  assert.ok(model.scenes.some(s=>s.id===scene.id));for(const name of scene.actors)assert.ok(model.cast.some(p=>p.name===name),`${scene.id}: ${name}`);
+  assert.ok(!buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter+1,data:{people:[]}}]).scenes.some(s=>s.id===scene.id));
+ }
+});
