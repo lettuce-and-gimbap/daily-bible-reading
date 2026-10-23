@@ -1,3 +1,4 @@
+import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
 import { buildChapterDialogue } from './chapter-dialogue.js';
@@ -46,7 +47,7 @@ export function buildWorldModel(chapters) {
   for (const { name, code, chap, data } of chapters) {
     if (!data) continue;
     const reference = `${name} ${chap}${code === "psa" ? "편" : "장"}`;
-    for (const person of data.people || []) {
+    for (const person of chapterPeople(data)) {
       // 하나님/성령을 무작위 인간 NPC로 그리지 않는다.
       if (/^(하나님|여호와|성령|주님)$/.test(person.name)) continue;
       const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
@@ -60,9 +61,16 @@ export function buildWorldModel(chapters) {
   }
   const ruth = chapters.some((c) => c.code === "rut" && c.chap === 2 && c.data);
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
-  const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1)).slice(0, 10);
+  const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
   return { cast, relations, events, scenes: [...(ruth ? RUTH_SCENES : []), ...(chapters.some(c=>c.code==="1ki" && c.chap===19 && c.data)?ELIJAH_SCENES:[])], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+}
+
+// 전체 명단을 보존하고 선택 인물과 관계가 있는 인물을 같은 화면에 우선 배치한다.
+export function visibleWorldCast(model, focus=0, limit=10) {
+ const primary=model.cast[focus]||model.cast[0];
+ const related=new Set(model.relations.flatMap(r=>r.from===primary.name?[r.to]:r.to===primary.name?[r.from]:[]));
+ return [primary,...model.cast.filter(p=>p!==primary&&related.has(p.name)),...model.cast.filter(p=>p!==primary&&!related.has(p.name))].slice(0,limit);
 }
 
 export function findPath(start, goal, blocked) {
@@ -92,13 +100,14 @@ export async function mountPixelWorld(shell, options) {
   const byCode = Object.fromEntries(loaded);
   const chapterData=requested.map((c)=>({...c,data:byCode[c.code].chapters[c.chap]}));
   const model=buildWorldModel(chapterData),dialogueContext=buildChapterDialogue(chapterData);
+  const visibleCast=visibleWorldCast(model,options.focusPerson||0);
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
   shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
-    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>함께 있는 인물</h3><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-person="${i}" aria-pressed="${i===0}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
+    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>분량 전체 인물 · ${model.cast.length}명/집단</h3><p class="pb-help">인물을 고르면 관련 인물을 우선해 최대 10명씩 함께 보여 줘요.</p><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':'통독 분량 · '}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
@@ -185,7 +194,7 @@ export async function mountPixelWorld(shell, options) {
     const saved = JSON.parse(localStorage.getItem(storageKey));
     if (Array.isArray(saved) && saved.length <= 16 && saved.every((o) => OBJECTS[o.kind] && Number.isInteger(o.x) && Number.isInteger(o.y) && o.x >= 2 && o.x <= 37 && o.y >= 5 && o.y <= 15) && new Set(saved.map((o) => `${o.x},${o.y}`)).size === saved.length) objects = saved;
   } catch (_) {}
-  const npcs = model.cast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, action: "", task: null }));
+  const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, action: "", task: null }));
   let drag=null, suppressClick=false, toastTimer=null;
   let selected = 0, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
   let activeEvent = null, pendingEvent = null, eventIndex = 0, cinematicTime = 0;
@@ -214,7 +223,7 @@ export async function mountPixelWorld(shell, options) {
   }
   function select(i) {
     selected = i;
-    shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) === i));
+    shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) >= 0 && Number(b.dataset.person) === i));
     const n=npcs[i], style=characterStyle(n.name,i,n.role,n.refs);
     shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 걸어가요.</p>`;
     renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 이동해요.`);
@@ -365,7 +374,17 @@ export async function mountPixelWorld(shell, options) {
       try{localStorage.setItem(backgroundStorageKey(model.key),backgroundKey);}catch(_){}
       say(`${BACKGROUNDS[backgroundKey].name} · 상상 지형`);return;
     }
-    if (b.dataset.person!==undefined) { select(Number(b.dataset.person)); return; }
+    if (b.dataset.castPerson!==undefined) {
+      const index=Number(b.dataset.person);
+      if(index>=0){select(index);return;}
+      if(activeEvent)return;
+      cleanup();
+      shell.querySelectorAll(":scope > :not(.pb-world-head)").forEach(el=>el.remove());
+      shell.insertAdjacentHTML('beforeend','<div class="pb-load" role="status">관련 인물들을 불러오고 있어요…</div>');
+      try{replacement=await mountPixelWorld(shell,{...options,focusPerson:Number(b.dataset.castPerson)});}
+      catch(_){if(shell.isConnected)shell.querySelector('.pb-load').textContent='불러오지 못했어요. 닫고 다시 입장해 주세요.';}
+      return;
+    }
     if (b.dataset.place) {
       if(activeEvent) return;
       placing=b.dataset.place; syncPlacement(); say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`); return;
@@ -418,7 +437,7 @@ export async function mountPixelWorld(shell, options) {
     cleanup();
     shell.querySelectorAll(":scope > :not(.pb-world-head)").forEach((el)=>el.remove());
     shell.insertAdjacentHTML("beforeend",'<div class="pb-load" role="status">룻기 체험을 준비하고 있어요…</div>');
-    replacement=await mountPixelWorld(shell,{...options,chapters:[], cachedBook:options.cachedBook});
+    replacement=await mountPixelWorld(shell,{...options,chapters:[], focusPerson:0, cachedBook:options.cachedBook});
     return true;
   }
   let replacement=null;

@@ -22,7 +22,7 @@ for(const b of BOOKS){const raw=JSON.parse(fs.readFileSync(`${root}data/summary/
 }
 stats.sourceLabelCount=names.size;stats.majorSetsWithMatches=majorHits.size;
 if(majorHits.size!==MAJOR_DIALOGUE.length)throw Error('Unmatched major dialogue sets: '+MAJOR_DIALOGUE.filter(e=>!majorHits.has(e.id)).map(e=>e.label).join(','));
-const output={schema:1,scope:'Counts are summary label occurrences, not unique biblical persons. Authored dialogue is imagined. Chapter role/relation text remains narrator commentary. Hokma review pending.',stats,books};
+const output={schema:1,scope:'Counts are summary label occurrences, not unique biblical persons. Authored dialogue is imagined. Chapter role/relation text remains narrator commentary. Partial uploaded-reference review; see docs/pixel-bible-source-review.md.',stats,books};
 const text=JSON.stringify(output,null,2)+'\n',file=`${root}data/pixel-bible/dialogue-coverage.json`;
 if(process.argv.includes('--check')){if(fs.readFileSync(file,'utf8')!==text)throw Error('Coverage report is stale');}else fs.writeFileSync(file,text);
 console.log(JSON.stringify(stats));

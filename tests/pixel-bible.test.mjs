@@ -219,3 +219,19 @@ test('다른 통독 분량은 배경 기본값을 다시 선택하고 수동 배
  assert.equal(defaultBackground(a),defaultBackground([...a]));
  assert.notEqual(backgroundStorageKey('1ki.19'),backgroundStorageKey('2ki.2'));
 });
+
+test('10명 이후 인물도 보존하고 선택 인물의 관계 상대를 함께 배치한다',async()=>{
+ const {visibleWorldCast}=await import('../js/features/pixel-bible/world.js');
+ const data={people:Array.from({length:25},(_,i)=>({name:`인물${i}`,role:'본문 인물',weight:25-i})),rels:[{from:'인물24',to:'인물23',label:'도움',verses:'1'}]};
+ const model=buildWorldModel([{code:'gen',name:'창세기',chap:1,data}]);
+ assert.equal(model.cast.length,25);
+ const visible=visibleWorldCast(model,24);
+ assert.equal(visible.length,10);assert.equal(visible[0].name,'인물24');assert.equal(visible[1].name,'인물23');
+});
+
+test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',async()=>{
+ const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
+ const chapters=[{code:'gen',name:'창세기',chap:1,data:{people:[{name:'갑',role:'돕는 이'}],rels:[{from:'갑',to:'을',label:'도움',note:'갑이 을을 돕는다.',verses:'1'}]}}];
+ const model=buildWorldModel(chapters),context=buildChapterDialogue(chapters);
+ assert.deepEqual(model.cast.map(p=>p.name),['갑','을']);assert.equal(context.relations.length,1);
+});
