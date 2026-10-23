@@ -17,6 +17,8 @@
 .pb-button:hover, .pb-button[aria-pressed=true] { background: #766035; }
 .pb-button:focus-visible, .pb-entry:focus-visible, .pb-banner:focus-visible { outline: 3px solid #e7bb59; outline-offset: 3px; }
 .pb-button:disabled { opacity: .5; cursor: wait; }
+.pb-button[aria-disabled="true"] { opacity: .58; cursor: pointer; }
+.pb-button[aria-disabled="true"]:hover { background: #34525a; }
 .pb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 /* 캔버스는 실제 화면 비율로 그린다. 도구는 월드 위 좌우 패널로 펼친다. */
 .pb-world-dialog { max-width: none; max-height: none; width: 100vw; height: 100dvh; border: 0; margin: 0; }

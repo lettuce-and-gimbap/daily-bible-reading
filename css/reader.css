@@ -298,6 +298,7 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 /* 통독 화면: 탭(통독표·요약·구절·메모·도구·갓피아 원문)을 위에 늘 보여 주고, 패널은 본문 자리에 붙여 띄움 */
 .rd-nav { display: flex; align-items: center; gap: 8px; }
 .rd-seg { flex: none; }
+.qt-pixel-world { justify-self: start; white-space: nowrap; }
 .rd-seg button { padding: 6px 11px; font-size: .86rem; white-space: nowrap; }
 .rd-chap { flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center; gap: 2px; }
 .rd-chap b { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: .95rem; letter-spacing: -0.02em; }

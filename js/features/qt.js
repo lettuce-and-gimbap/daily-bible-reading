@@ -31,6 +31,7 @@ function renderQt() {
           <span class="q-check" id="q-check"></span>
         </div>
         <div class="seg rd-seg" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
+        <button class="chip-btn qt-pixel-world" id="q-pixel-bible" type="button">이 QT 본문으로 픽셀 월드 보기</button>
       </div>
       <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>
         <div class="qp-fixed" id="q-selbar" hidden>
@@ -51,6 +52,12 @@ function renderQt() {
   syncQtTabs();
   fillQtRead(qtDate);
   bindQtContent();
+  $("#q-pixel-bible").addEventListener("click", async () => {
+    const ref=await qtRefFor(qtDate),ranges=qtRanges(ref);
+    const chapters=ranges.map(r=>{const c=CHAPTERS[r.idx];if(!c)return null;const hi=Math.min(r.hi,200);return {code:c.book.code,name:c.book.name,chap:c.chap,verses:Array.from({length:Math.max(0,hi-r.lo+1)},(_,i)=>r.lo+i)};}).filter(c=>c?.verses.length);
+    if(!chapters.length){showToast('이 날짜의 QT 본문 범위를 아직 확인할 수 없어요.');return;}
+    document.dispatchEvent(new CustomEvent('pixel-bible:qt',{detail:{chapters}}));
+  });
 
   bindSheetChrome(renderQtSheet);
   prefetchVerses("qt"); // 그날 QT 본문 장을 미리 받아 둠

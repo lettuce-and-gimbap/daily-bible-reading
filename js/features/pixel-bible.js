@@ -69,18 +69,19 @@ async function pixelBibleLandscape(shell, nativeFullscreen = true) {
   } catch (_) { /* iOS 등 회전 잠금 미지원 기기는 실제 가로 회전을 안내한다. */ }
 }
 
-async function openPixelBible() {
+async function openPixelBible(scope = {}) {
   if (pixelBibleOpening || pixelBibleDialog) return;
   pixelBibleOpening = true;
-  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>오늘의 픽셀 월드</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">오늘의 월드를 준비하고 있어요…</div></div>`, true);
+  const title=scope.chapters?'QT 본문':'오늘의 픽셀 월드';
+  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>${title}</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
   pixelBibleLandscape(shell, false);
   try {
-    const chapters = pixelBibleTodayChapters();
+    const chapters = scope.chapters || pixelBibleTodayChapters();
     const world = await import("./pixel-bible/world.js?v=10.2.0");
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
-      chapters, allowed: () => true, landscape: () => pixelBibleLandscape(shell),
+      chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(shell),
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
       readPassage: async ({code,chapter,verses}) => {
         const idx=CHAPTERS.findIndex(c=>c.book.code===code&&c.chap===chapter);
@@ -99,3 +100,4 @@ async function openPixelBible() {
 }
 
 document.addEventListener("click", (e) => { if (e.target.closest("[data-pixel-bible]")) openPixelBible(); });
+document.addEventListener('pixel-bible:qt',e=>{if(Array.isArray(e.detail?.chapters)&&e.detail.chapters.length)openPixelBible({chapters:e.detail.chapters});});

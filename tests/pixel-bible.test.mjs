@@ -2,8 +2,26 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildWorldModel, findPath } from '../js/features/pixel-bible/world.js';
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
+import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
+import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
 
-test('오브제 근거가 장 전체 요약이어도 발화로 사용하지 않는다',()=>{
+test('QT 절 범위에 맞춰 픽셀 월드의 사건·관계·인물·장면을 좁힌다',()=>{
+ const data={people:[{name:'엘리야'},{name:'천사'},{name:'이세벨'}],events:[{title:'위협',verses:'1-4',text:'이세벨이 엘리야를 위협함'},{title:'돌봄',verses:'5-8',text:'천사가 엘리야에게 떡과 물을 줌'}],rels:[{from:'천사',to:'엘리야',verses:'5-8',note:'지친 엘리야를 먹임'}],story:'전체 장 이야기'};
+ const scoped=scopeChapterSummary(data,[5,6,7,8]);
+ assert.deepEqual(scoped.events.map(e=>e.title),['돌봄']);assert.equal(scoped.rels.length,1);
+ assert.deepEqual(scoped.people.map(p=>p.name),['엘리야','천사']);assert.doesNotMatch(scoped.story,/위협|이세벨/);
+ assert.equal(scenesForChapters([{code:'1ki',chap:19,data,verses:[4,5,6,7,8]}]).some(s=>s.id==='rest-elijah'),true);
+ assert.equal(scenesForChapters([{code:'1ki',chap:19,data,verses:[9,10,11]}]).some(s=>s.id==='rest-elijah'),false);
+});
+
+test('물 오브젝트에는 실제로 잔을 입에 대고 마시는 동작이 포함된다',async()=>{
+ const {interactionOptions,interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const options=interactionOptions('water');assert.ok(options.some(([g])=>g==='drink'));assert.ok(options.some(([g])=>g==='sip'));
+ const pose=interactionPose({category:'water',kind:'water',gesture:'drink',period:2.4,phase:0,variant:0},1.2);
+ assert.equal(pose.gesture,'drink');assert.equal(pose.handY,10);assert.ok(pose.hand>0);
+});
+
+test('오브젝트 근거가 장 전체 요약이어도 발화로 사용하지 않는다',()=>{
  const evidence={text:'아람과 이스라엘의 전쟁을 설명하는 장 요약. '.repeat(80),ref:'열왕기상 22장'};
  const line=objectContextSpeech('물항아리',evidence,{random:()=>0});
  assert.match(line.text,/갈증|물/);assert.ok(!line.text.includes('살펴보자'));assert.ok(line.text.length<65);
@@ -55,7 +73,7 @@ test('본문에 없는 룻기 사건을 다른 장의 사건으로 재생하지 
   assert.ok(model.cast.some((p) => p.name === '일꾼'));
 });
 
-test('배치된 오브제를 우회하고 갈 수 없는 목적지는 거절한다', () => {
+test('배치된 오브젝트를 우회하고 갈 수 없는 목적지는 거절한다', () => {
   const bounds = (x, y) => x < 0 || x > 4 || y < 0 || y > 4;
   const blocked = (x, y) => bounds(x, y) || (x === 2 && y < 4);
   const path = findPath({ x: 0, y: 0 }, { x: 4, y: 0 }, blocked);
@@ -306,7 +324,7 @@ test('같은 인물의 같은 클릭 대사를 즉시 다시 표시할 수 있�
  assert.equal(s.tick(5200,[]),null);assert.equal(s.nextAt,8200);
 });
 
-test('오브제 철거는 인물의 위치·경로·방향을 유지하고 삭제한 물건의 작업만 해제한다',async()=>{
+test('오브젝트 철거는 인물의 위치·경로·방향을 유지하고 삭제한 물건의 작업만 해제한다',async()=>{
  const {removeObjects}=await import('../js/features/pixel-bible/object-scenes.js');
  const a={kind:'tree',x:10,y:8},b={kind:'scroll',x:15,y:9};
  const path=[{x:12,y:8}],n={x:11.25,y:8,path,direction:'right',stride:.4,idle:2,task:a,action:'tree',usingObject:a};
@@ -328,7 +346,7 @@ test('성경 물건 조합은 실제 해당 장의 등장인물과 매칭되고 
  }
 });
 
-test('오브제 색인은 장·구절 범위를 보존하고 돌아가다/불순종을 돌/불로 잘못 찾지 않는다',async()=>{
+test('오브젝트 색인은 장·구절 범위를 보존하고 돌아가다/불순종을 돌/불로 잘못 찾지 않는다',async()=>{
  const {chapterObjects,OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  assert.ok(Object.keys(OBJECT_CATALOG).length>=150);
  const items=chapterObjects({code:'gen',name:'창세기',chap:1,data:{people:[{name:'야곱'}],events:[{title:'돌',verses:'3-5',text:'야곱이 돌을 세우고 기름을 부어요.'}],story:'집으로 돌아와 불순종을 뉘우쳤어요.'}});
@@ -338,7 +356,7 @@ test('오브제 색인은 장·구절 범위를 보존하고 돌아가다/불순
  assert.ok(!empty.some(i=>['stone','fire','horse'].includes(i.id)));
 });
 
-test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다른 자세를 사용한다',async()=>{
+test('전 오브젝트에 단계별 모션이 있고 의자·물·밭은 서로 다른 자세를 사용한다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {interactionRoutine,interactionPose,INTERACTION_MOTION_COUNT}=await import('../js/features/pixel-bible/interaction-motion.js');
  assert.ok(INTERACTION_MOTION_COUNT>=175);
@@ -353,7 +371,7 @@ test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다
  assert.equal(interactionRoutine({name:'바룩',objectAction:'baruch-scroll'},'scroll').gesture,'write');
 });
 
-test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘못된 오브제 동작을 하지 않는다', async () => {
+test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘못된 오브젝트 동작을 하지 않는다', async () => {
  const {ALL_SCENES,RUTH_SCENES}=await import('../js/features/pixel-bible/scenes.js');
  const {OBJECT_SCENES,objectLinesFor}=await import('../js/features/pixel-bible/object-scenes.js');
  const fs=await import('node:fs/promises');
@@ -374,7 +392,7 @@ test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘�
  assert.ok(PAIR_DIALOGUE.find(s=>s.id==='pair-32').lines.every(s=>!s.includes('형님')));
 });
 
-test('표시 인물이 바뀌어도 기존 인물의 위치·경로·방향·오브제 동작과 재등장 상태를 보존한다',async()=>{
+test('표시 인물이 바뀌어도 기존 인물의 위치·경로·방향·오브젝트 동작과 재등장 상태를 보존한다',async()=>{
  const {castKey,reconcileCast,findSpawnCell}=await import('../js/features/pixel-bible/cast-state.js');
  const path=[{x:14,y:8}],object={kind:'well',x:8,y:9};
  const a={name:'다윗',identity:{id:'person:david'},x:13.4,y:8,path,direction:'left',stride:5,action:'well',usingObject:object,task:null};
@@ -397,7 +415,7 @@ test('표시 인물이 바뀌어도 기존 인물의 위치·경로·방향·오
  assert.equal(findSpawnCell([],()=>true),null);
 });
 
-test('오브제 크기와 반응은 인물 동작에 맞추고 접근 표현은 저장된 위치를 바꾸지 않는다',async()=>{
+test('오브젝트 크기와 반응은 인물 동작에 맞추고 접근 표현은 저장된 위치를 바꾸지 않는다',async()=>{
  const {objectPresentation,interactionAnchor,objectInteractionFrame,drawObjectResponse}=await import('../js/features/pixel-bible/object-response.js');
  const {interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
@@ -425,7 +443,7 @@ test('오브제 크기와 반응은 인물 동작에 맞추고 접근 표현은 
  assert.ok(calls.some(c=>c[0]==='rect'));
 });
 
-test('오브제 옮기기는 원래 물건은 제외하고 다른 물건·인물·경로와 화면 밖을 거절한다',async()=>{
+test('오브젝트 옮기기는 원래 물건은 제외하고 다른 물건·인물·경로와 화면 밖을 거절한다',async()=>{
  const {canMoveObject}=await import('../js/features/pixel-bible/object-drag.js');
  const o={kind:'water',x:8,y:9},other={kind:'tree',x:12,y:9},objects=[o,other];
  const n={x:15,y:9,path:[{x:16,y:9}]};
@@ -563,7 +581,7 @@ test('커서가 잡은 지점은 이동·배율 변환 뒤에도 같은 상대 �
  assert.ok(Math.abs(after.x-held.p.x-(origin.x-start.x))<1e-9);assert.ok(Math.abs(after.y-held.p.y-(origin.y-start.y))<1e-9);
 });
 
-test('전체 오브제는 같은 인물이 여섯 번 방문하면 여섯 결과를 선택한다',async()=>{
+test('전체 오브젝트는 같은 인물이 여섯 번 방문하면 여섯 결과를 선택한다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {interactionOptions,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
  for(const kind of Object.keys(OBJECT_CATALOG)){

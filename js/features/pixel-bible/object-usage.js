@@ -24,6 +24,7 @@ bind('dough leaven flour',options(['knead','두 손으로 반죽 주무르기'],
 bind('honey milk wine',options(['drink','잔에 담아 마시기'],['pour','잔에 따르기'],['offer','잔 내밀어 나누기'],['cap','뚜껑 열고 닫기'],['hold','그릇 두 손으로 받치기'],['wipe','그릇 가장자리 닦기']));
 bind('incense myrrh perfume censer',options(['waft','향을 가볍게 맡기'],['pour','조금 덜어 내기'],['cap','뚜껑 여닫기'],['offer','두 손으로 받쳐 내밀기'],['wipe','그릇 닦기'],['inspect','내용물 살피기']));
 bind('fire oven',options(['warm','안전한 거리에서 손 녹이기'],['fan','가볍게 부채질하기'],['tend','긴 막대로 불 살피기'],['step-back','열기에서 물러서기'],['observe','불길 지켜보기'],['shield','손으로 얼굴 앞 열 가리기']));
+bind('water well water-supply jar pitcher basin bowl cup',options(['scoop','그릇으로 물 떠 올리기'],['drink','잔을 입에 대고 물 마시기'],['sip','두 손으로 잔을 받쳐 천천히 마시기'],['pour','잔에 물 따르기'],['wash','물을 떠 손 씻기'],['fill','빈 그릇에 물 채우기']));
 bind('sandal',options(['wear','발을 굽혀 신발 신기'],['remove','발을 굽혀 신발 벗기'],['tie','신 끈 묶기'],['wipe','신발 밑창 닦기'],['inspect','밑창 살피기'],['place','신발 가지런히 놓기']));
 bind('crown helmet',options(['wear','머리에 맞춰 쓰기'],['remove','머리에서 벗기'],['smooth','머리에 고쳐 쓰기'],['polish','겉면 닦기'],['hold','두 손으로 받쳐 들기'],['offer','두 손으로 내밀기']));
 bind('belt breastplate',options(['wear','몸에 맞춰 매기'],['remove','매듭 풀어 벗기'],['smooth','위치 고쳐 매기'],['polish','겉면 닦기'],['hold','두 손으로 받치기'],['offer','건네기']));

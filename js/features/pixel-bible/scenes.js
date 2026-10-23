@@ -31,7 +31,12 @@ export const ELIJAH_SCENES = [{
 }];
 export const ALL_SCENES = [...RUTH_SCENES, ...ELIJAH_SCENES];
 export function scenesForChapters(chapters) {
-  return ALL_SCENES.filter(scene => chapters.some(c => c.data && c.code === scene.code && c.chap === scene.chapter));
+  return ALL_SCENES.filter(scene => chapters.some(c => {
+    if (!c.data || c.code !== scene.code || c.chap !== scene.chapter) return false;
+    if (!Array.isArray(c.verses) || !c.verses.length) return true;
+    const range=scene.ref.match(/:(\d+)(?:\s*[–—-]\s*(\d+))?/),lo=Number(range?.[1]||1),hi=Number(range?.[2]||range?.[1]||200);
+    return c.verses.some(v=>v>=lo&&v<=hi);
+  }));
 }
 // 사건의 방향을 보존한다. 본문 관계 해설을 실제 인물의 발화로 가장하지 않는다.
 export function describeRelation(r) {
