@@ -40,6 +40,13 @@ export function worldViewport(width,height) {
   const scale=Math.max(width/WIDTH,height/HEIGHT);
   return {scale,x:(width-WIDTH*scale)/2,y:(height-HEIGHT*scale)/2};
 }
+// Safari can report fractional CSS bounds while the backing canvas is DPR-scaled.
+// Clamp edge coordinates so taps on the final pixel row/column still resolve.
+export function clientToCanvasPoint(clientX,clientY,rect,width,height) {
+  if(!rect?.width||!rect?.height)return {x:0,y:0};
+  const x=(clientX-rect.left)*width/rect.width,y=(clientY-rect.top)*height/rect.height;
+  return {x:Math.max(0,Math.min(width-1,x)),y:Math.max(0,Math.min(height-1,y))};
+}
 
 async function loadBook(code, cachedBook) {
   const existing = cachedBook?.(code);
@@ -517,7 +524,7 @@ export async function mountPixelWorld(shell, options) {
     draw();
   }
   const pointers=new Map();let pinch=null,pan=null,gestureActive=false;
-  const pixelPoint=e=>{const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height};};
+  const pixelPoint=e=>clientToCanvasPoint(e.clientX,e.clientY,canvas.getBoundingClientRect(),canvas.width,canvas.height);
   const pair=()=>[...pointers.values()].slice(0,2);
   const midpoint=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2});
   function syncCamera(){
@@ -527,8 +534,9 @@ export async function mountPixelWorld(shell, options) {
   canvas.addEventListener('wheel',e=>{e.preventDefault();const delta=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?canvas.clientHeight:1);zoomAt(camera,camera.zoom*Math.exp(-delta*.0015),pixelPoint(e),canvas.width,canvas.height);syncCamera();draw();},{signal,passive:false});
   canvas.addEventListener('pointerdown',e=>{
     if(e.button!==0||!options.allowed())return;
-    const point=pixelPoint(e);pointers.set(e.pointerId,point);canvas.setPointerCapture(e.pointerId);
+    const point=pixelPoint(e);pointers.set(e.pointerId,point);
     if(pointers.size>=2){
+      canvas.setPointerCapture?.(e.pointerId);
       if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:e.clientX,clientY:e.clientY},true);
       if(drag)finishDrag({pointerId:drag.id,clientX:e.clientX,clientY:e.clientY},true);
       pan=null;gestureActive=true;suppressClick=true;
@@ -547,7 +555,8 @@ export async function mountPixelWorld(shell, options) {
     }
     if(gestureActive){e.stopImmediatePropagation();return;}
     if(pan?.id===e.pointerId){
-      if(Math.hypot(point.x-pan.start.x,point.y-pan.start.y)>6)pan.active=true;
+      // Ignore touch jitter so a tap remains a tap on iOS Safari.
+      if(Math.hypot(point.x-pan.start.x,point.y-pan.start.y)>12)pan.active=true;
       if(pan.active){const v=view();camera.x-=(point.x-pan.last.x)/v.scale;camera.y-=(point.y-pan.last.y)/v.scale;constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();e.preventDefault();}
       pan.last=point;
     }
@@ -555,11 +564,13 @@ export async function mountPixelWorld(shell, options) {
     if(objectHold)objectHold.client={x:e.clientX,y:e.clientY};
   },{capture:true,signal});
   const endGesture=e=>{
-    pointers.delete(e.pointerId);const consume=gestureActive||pan?.active;
+    const consume=gestureActive||pan?.active;
+    if(consume)suppressClick=true;
+    pointers.delete(e.pointerId);
     if(pointers.size<2)pinch=null;
     if(pan?.id===e.pointerId)pan=null;
     if(!pointers.size)gestureActive=false;
-    if(consume){suppressClick=false;e.preventDefault();e.stopImmediatePropagation();if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);}
+    if(consume){e.preventDefault();e.stopImmediatePropagation();if(canvas.hasPointerCapture?.(e.pointerId))canvas.releasePointerCapture(e.pointerId);}
   };
   canvas.addEventListener('pointerup',endGesture,{capture:true,signal});canvas.addEventListener('pointercancel',endGesture,{capture:true,signal});
   function keepInView(n){

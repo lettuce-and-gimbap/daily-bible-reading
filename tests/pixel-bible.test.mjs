@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildWorldModel, findPath } from '../js/features/pixel-bible/world.js';
+import { buildWorldModel, findPath, clientToCanvasPoint } from '../js/features/pixel-bible/world.js';
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
 import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
@@ -93,6 +93,15 @@ test('가로 화면 비율을 늘려도 월드는 균일 배율로 빈 여백 �
     assert.ok(Math.abs((projected.x-v.x)/v.scale-p.x)<.00001);
     assert.ok(Math.abs((projected.y-v.y)/v.scale-p.y)<.00001);
   }
+});
+
+test('Safari DPR 캔버스 좌표 변환은 CSS 확대·소수 경계에서도 터치 위치를 보존한다',()=>{
+ const rect={left:13.25,top:27.5,width:390.5,height:844.25};
+ const point=clientToCanvasPoint(rect.left+rect.width*.5,rect.top+rect.height*.25,rect,781,1689);
+ assert.ok(Math.abs(point.x-390.5)<.001);assert.ok(Math.abs(point.y-422.25)<.001);
+ assert.deepEqual(clientToCanvasPoint(rect.left-4,rect.top-2,rect,781,1689),{x:0,y:0});
+ assert.deepEqual(clientToCanvasPoint(rect.left+rect.width,rect.top+rect.height,rect,781,1689),{x:780,y:1688});
+ assert.deepEqual(clientToCanvasPoint(0,0,{left:0,top:0,width:0,height:0},100,100),{x:0,y:0});
 });
 
 test('등장 순서와 무관한 인물 외형과 본문·창작 근거를 제공한다', async () => {
