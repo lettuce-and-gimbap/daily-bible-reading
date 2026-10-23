@@ -14,8 +14,8 @@ for(const book of BOOKS){
   chapters++;if(model.cast.length>10)large++;
   for(const p of chapterPeople(data)){
    const index=model.cast.findIndex(n=>n.name===p.name);if(index<0)throw Error(`Missing cast ${book.code}.${chap}: ${p.name}`);
-   const visible=visibleWorldCast(model,index);if(visible[0].name!==p.name)throw Error('Focus missing');
-   const npc={...visible[0],x:10,y:8,path:[]};
+   const visible=visibleWorldCast(model);if(visible.length!==model.cast.length||visible[index]?.name!==p.name)throw Error('Full cast missing');
+   const npc={...visible[index],x:10,y:8,path:[]};
    if(!dialogueCandidates([npc],input,context).length)throw Error(`Missing speech ${book.code}.${chap}: ${p.name}`);
    const personal=personalLines(npc,input,context);
    if(personal.length<3||personal.length>5||new Set(personal.map(l=>l.text)).size!==personal.length)throw Error(`Invalid personal lines ${book.code}.${chap}: ${p.name}`);

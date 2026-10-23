@@ -1,0 +1,3539 @@
+{
+  "schema": 1,
+  "scope": "20 illustrative terrain designs, with explicit chapter matches for described settings and meadow fallback. Not geographic reconstructions. No private commentary source text.",
+  "stats": {
+    "designs": 20,
+    "books": 66,
+    "chapters": 1189,
+    "chaptersWithContext": 76
+  },
+  "definitions": {
+    "meadow": {
+      "name": "초록 마을",
+      "ground": "#6f995f",
+      "tile": [
+        "#759f62",
+        "#6c955b"
+      ],
+      "speck": "#9ab56d",
+      "path": "#b9b082",
+      "pathLight": "#c9bc8b",
+      "water": "#467f8e",
+      "wave": "#71a9a6",
+      "bank": "#8c9570",
+      "hill": "#4a7758",
+      "house": "#d0bd8a",
+      "roof": "#b09e70",
+      "motif": "village"
+    },
+    "desert": {
+      "name": "모래 광야",
+      "ground": "#c6ad78",
+      "tile": [
+        "#cbb37e",
+        "#c2a671"
+      ],
+      "speck": "#e0ca96",
+      "path": "#b59a68",
+      "pathLight": "#d5bd88",
+      "water": "#5a9298",
+      "wave": "#91b6a9",
+      "bank": "#ae9468",
+      "hill": "#a78660",
+      "house": "#d6bd8e",
+      "roof": "#ad8e63",
+      "motif": "dunes"
+    },
+    "lake": {
+      "name": "호숫가",
+      "ground": "#7eaa87",
+      "tile": [
+        "#86b18f",
+        "#79a480"
+      ],
+      "speck": "#a6c49d",
+      "path": "#c3b995",
+      "pathLight": "#d7cba6",
+      "water": "#4c91ac",
+      "wave": "#93c8cf",
+      "bank": "#a6b49b",
+      "hill": "#568b85",
+      "house": "#c7c8ae",
+      "roof": "#8eaa99",
+      "motif": "lake"
+    },
+    "mountain": {
+      "name": "바위 산지",
+      "ground": "#8b9883",
+      "tile": [
+        "#929d88",
+        "#84917d"
+      ],
+      "speck": "#b5baa0",
+      "path": "#b5aa91",
+      "pathLight": "#ccc0a6",
+      "water": "#658a95",
+      "wave": "#9bb4b4",
+      "bank": "#929989",
+      "hill": "#64756e",
+      "house": "#bcc1ac",
+      "roof": "#8e9b8c",
+      "motif": "mountains"
+    },
+    "evening": {
+      "name": "노을 들판",
+      "ground": "#99916c",
+      "tile": [
+        "#a19a72",
+        "#938b66"
+      ],
+      "speck": "#c4b684",
+      "path": "#baaa82",
+      "pathLight": "#d7bd8f",
+      "water": "#786f91",
+      "wave": "#b59bab",
+      "bank": "#9a8b78",
+      "hill": "#786e75",
+      "house": "#d0b597",
+      "roof": "#a2887e",
+      "motif": "sunset"
+    },
+    "night": {
+      "name": "별빛 마을",
+      "ground": "#536f70",
+      "tile": [
+        "#597778",
+        "#4e696c"
+      ],
+      "speck": "#7c9790",
+      "path": "#8b8e86",
+      "pathLight": "#ada994",
+      "water": "#405d80",
+      "wave": "#7c94b0",
+      "bank": "#667b83",
+      "hill": "#344b64",
+      "house": "#9aaba6",
+      "roof": "#70888b",
+      "motif": "stars"
+    },
+    "garden": {
+      "name": "강이 흐르는 동산",
+      "ground": "#6f995f",
+      "tile": [
+        "#759f62",
+        "#6c955b"
+      ],
+      "speck": "#9ab56d",
+      "path": "#b9b082",
+      "pathLight": "#c9bc8b",
+      "water": "#467f8e",
+      "wave": "#71a9a6",
+      "bank": "#8c9570",
+      "hill": "#4a7758",
+      "house": "#d0bd8a",
+      "roof": "#b09e70",
+      "motif": "garden",
+      "ref": "창세기 2:8–14"
+    },
+    "nile": {
+      "name": "나일 강변",
+      "ground": "#c6ad78",
+      "tile": [
+        "#cbb37e",
+        "#c2a671"
+      ],
+      "speck": "#e0ca96",
+      "path": "#b59a68",
+      "pathLight": "#d5bd88",
+      "water": "#5a9298",
+      "wave": "#91b6a9",
+      "bank": "#ae9468",
+      "hill": "#a78660",
+      "house": "#d6bd8e",
+      "roof": "#ad8e63",
+      "motif": "river",
+      "ref": "출애굽기 2:3–10"
+    },
+    "camp": {
+      "name": "광야의 진영",
+      "ground": "#c6ad78",
+      "tile": [
+        "#cbb37e",
+        "#c2a671"
+      ],
+      "speck": "#e0ca96",
+      "path": "#b59a68",
+      "pathLight": "#d5bd88",
+      "water": "#5a9298",
+      "wave": "#91b6a9",
+      "bank": "#ae9468",
+      "hill": "#a78660",
+      "house": "#d6bd8e",
+      "roof": "#ad8e63",
+      "motif": "camp",
+      "ref": "민수기 2:1–34"
+    },
+    "sinai": {
+      "name": "시내산 아래",
+      "ground": "#8b9883",
+      "tile": [
+        "#929d88",
+        "#84917d"
+      ],
+      "speck": "#b5baa0",
+      "path": "#b5aa91",
+      "pathLight": "#ccc0a6",
+      "water": "#658a95",
+      "wave": "#9bb4b4",
+      "bank": "#929989",
+      "hill": "#64756e",
+      "house": "#bcc1ac",
+      "roof": "#8e9b8c",
+      "motif": "sinai",
+      "ref": "출애굽기 19:16–20"
+    },
+    "river": {
+      "name": "요단 강변",
+      "ground": "#7eaa87",
+      "tile": [
+        "#86b18f",
+        "#79a480"
+      ],
+      "speck": "#a6c49d",
+      "path": "#c3b995",
+      "pathLight": "#d7cba6",
+      "water": "#4c91ac",
+      "wave": "#93c8cf",
+      "bank": "#a6b49b",
+      "hill": "#568b85",
+      "house": "#c7c8ae",
+      "roof": "#8eaa99",
+      "motif": "river",
+      "ref": "여호수아 3:14–17"
+    },
+    "harvest": {
+      "name": "베들레헴 보리밭",
+      "ground": "#6f995f",
+      "tile": [
+        "#759f62",
+        "#6c955b"
+      ],
+      "speck": "#9ab56d",
+      "path": "#b9b082",
+      "pathLight": "#c9bc8b",
+      "water": "#467f8e",
+      "wave": "#71a9a6",
+      "bank": "#8c9570",
+      "hill": "#4a7758",
+      "house": "#d0bd8a",
+      "roof": "#b09e70",
+      "motif": "harvest",
+      "ref": "룻기 2:1–23"
+    },
+    "vineyard": {
+      "name": "포도원 곁 마을",
+      "ground": "#99916c",
+      "tile": [
+        "#a19a72",
+        "#938b66"
+      ],
+      "speck": "#c4b684",
+      "path": "#baaa82",
+      "pathLight": "#d7bd8f",
+      "water": "#786f91",
+      "wave": "#b59bab",
+      "bank": "#9a8b78",
+      "hill": "#786e75",
+      "house": "#d0b597",
+      "roof": "#a2887e",
+      "motif": "vineyard",
+      "ref": "열왕기상 21:1–3"
+    },
+    "pasture": {
+      "name": "푸른 초장",
+      "ground": "#6f995f",
+      "tile": [
+        "#759f62",
+        "#6c955b"
+      ],
+      "speck": "#9ab56d",
+      "path": "#b9b082",
+      "pathLight": "#c9bc8b",
+      "water": "#467f8e",
+      "wave": "#71a9a6",
+      "bank": "#8c9570",
+      "hill": "#4a7758",
+      "house": "#d0bd8a",
+      "roof": "#b09e70",
+      "motif": "pasture",
+      "ref": "시편 23:1–2"
+    },
+    "galilee": {
+      "name": "갈릴리 호숫가",
+      "ground": "#7eaa87",
+      "tile": [
+        "#86b18f",
+        "#79a480"
+      ],
+      "speck": "#a6c49d",
+      "path": "#c3b995",
+      "pathLight": "#d7cba6",
+      "water": "#4c91ac",
+      "wave": "#93c8cf",
+      "bank": "#a6b49b",
+      "hill": "#568b85",
+      "house": "#c7c8ae",
+      "roof": "#8eaa99",
+      "motif": "galilee",
+      "ref": "마태복음 4:18–22"
+    },
+    "jerusalem": {
+      "name": "예루살렘 성벽",
+      "ground": "#8b9883",
+      "tile": [
+        "#929d88",
+        "#84917d"
+      ],
+      "speck": "#b5baa0",
+      "path": "#b5aa91",
+      "pathLight": "#ccc0a6",
+      "water": "#658a95",
+      "wave": "#9bb4b4",
+      "bank": "#929989",
+      "hill": "#64756e",
+      "house": "#bcc1ac",
+      "roof": "#8e9b8c",
+      "motif": "city",
+      "ref": "느헤미야 3:1–32"
+    },
+    "babylon": {
+      "name": "바벨론 궁성",
+      "ground": "#c6ad78",
+      "tile": [
+        "#cbb37e",
+        "#c2a671"
+      ],
+      "speck": "#e0ca96",
+      "path": "#b59a68",
+      "pathLight": "#d5bd88",
+      "water": "#5a9298",
+      "wave": "#91b6a9",
+      "bank": "#ae9468",
+      "hill": "#a78660",
+      "house": "#d6bd8e",
+      "roof": "#ad8e63",
+      "motif": "babylon",
+      "ref": "다니엘 1:1–6"
+    },
+    "ruins": {
+      "name": "무너진 성벽",
+      "ground": "#8b9883",
+      "tile": [
+        "#929d88",
+        "#84917d"
+      ],
+      "speck": "#b5baa0",
+      "path": "#b5aa91",
+      "pathLight": "#ccc0a6",
+      "water": "#658a95",
+      "wave": "#9bb4b4",
+      "bank": "#929989",
+      "hill": "#64756e",
+      "house": "#bcc1ac",
+      "roof": "#8e9b8c",
+      "motif": "ruins",
+      "ref": "열왕기하 25:8–10"
+    },
+    "temple": {
+      "name": "성전 뜰",
+      "ground": "#c6ad78",
+      "tile": [
+        "#cbb37e",
+        "#c2a671"
+      ],
+      "speck": "#e0ca96",
+      "path": "#b59a68",
+      "pathLight": "#d5bd88",
+      "water": "#5a9298",
+      "wave": "#91b6a9",
+      "bank": "#ae9468",
+      "hill": "#a78660",
+      "house": "#d6bd8e",
+      "roof": "#ad8e63",
+      "motif": "temple",
+      "ref": "열왕기상 6:1–10"
+    },
+    "newcity": {
+      "name": "강과 생명나무의 성",
+      "ground": "#d6d5bb",
+      "tile": [
+        "#dad9c0",
+        "#d1d3b7"
+      ],
+      "speck": "#9ab56d",
+      "path": "#b9b082",
+      "pathLight": "#c9bc8b",
+      "water": "#7db5c0",
+      "wave": "#d6ebdb",
+      "bank": "#8c9570",
+      "hill": "#9faa83",
+      "house": "#eee5c4",
+      "roof": "#c9b36f",
+      "motif": "newcity",
+      "ref": "요한계시록 21:10–21; 22:1–2"
+    }
+  },
+  "decorations": {
+    "meadow": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "desert": [
+      {
+        "kind": "stone",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "lake": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "net",
+        "x": 19,
+        "y": 34,
+        "scenery": true
+      },
+      {
+        "kind": "net",
+        "x": 61,
+        "y": 34,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "mountain": [
+      {
+        "kind": "stone",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "evening": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "night": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "garden": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "fig-tree",
+        "x": 24,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "fig-tree",
+        "x": 56,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "fig-tree",
+        "x": 22,
+        "y": 31,
+        "scenery": true
+      },
+      {
+        "kind": "fig-tree",
+        "x": 58,
+        "y": 31,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "nile": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "camp": [
+      {
+        "kind": "tabernacle",
+        "x": 40,
+        "y": 9,
+        "scenery": true
+      },
+      {
+        "kind": "tent",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tent",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "well",
+        "x": 63,
+        "y": 20,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "sinai": [
+      {
+        "kind": "stone",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "stone",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "river": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "palm",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "harvest": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "field",
+        "x": 15,
+        "y": 21,
+        "scenery": true
+      },
+      {
+        "kind": "field",
+        "x": 21,
+        "y": 21,
+        "scenery": true
+      },
+      {
+        "kind": "field",
+        "x": 59,
+        "y": 21,
+        "scenery": true
+      },
+      {
+        "kind": "field",
+        "x": 65,
+        "y": 21,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "barley",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "barley",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "barley",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "barley",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "vineyard": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "vine",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "pasture": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "sheep",
+        "x": 16,
+        "y": 19,
+        "scenery": true
+      },
+      {
+        "kind": "sheep",
+        "x": 64,
+        "y": 20,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "sheep",
+        "x": 20,
+        "y": 32,
+        "scenery": true
+      },
+      {
+        "kind": "sheep",
+        "x": 59,
+        "y": 32,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "galilee": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "net",
+        "x": 19,
+        "y": 34,
+        "scenery": true
+      },
+      {
+        "kind": "net",
+        "x": 61,
+        "y": 34,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "jerusalem": [
+      {
+        "kind": "house",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 13,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 67,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "well",
+        "x": 60,
+        "y": 33,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "babylon": [
+      {
+        "kind": "house",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 13,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 67,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "well",
+        "x": 60,
+        "y": 33,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "ruins": [
+      {
+        "kind": "house",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "temple": [
+      {
+        "kind": "house",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 13,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "house",
+        "x": 67,
+        "y": 23,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "well",
+        "x": 60,
+        "y": 33,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "lily",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ],
+    "newcity": [
+      {
+        "kind": "bench",
+        "x": 19,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "bench",
+        "x": 61,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "olive-tree",
+        "x": 24,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "olive-tree",
+        "x": 56,
+        "y": 11,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 12,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 66,
+        "y": 14,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 18,
+        "y": 27,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 63,
+        "y": 28,
+        "scenery": true
+      },
+      {
+        "kind": "olive-tree",
+        "x": 22,
+        "y": 31,
+        "scenery": true
+      },
+      {
+        "kind": "olive-tree",
+        "x": 58,
+        "y": 31,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "tree",
+        "x": 69,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 23,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 57,
+        "y": 35,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 31,
+        "y": 36,
+        "scenery": true
+      },
+      {
+        "kind": "fruit",
+        "x": 49,
+        "y": 36,
+        "scenery": true
+      }
+    ]
+  },
+  "rules": [
+    {
+      "code": "gen",
+      "chapters": [
+        2,
+        3
+      ],
+      "key": "garden"
+    },
+    {
+      "code": "exo",
+      "chapters": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "key": "nile"
+    },
+    {
+      "code": "exo",
+      "chapters": [
+        19,
+        20,
+        24,
+        32,
+        33,
+        34
+      ],
+      "key": "sinai"
+    },
+    {
+      "code": "exo",
+      "from": 25,
+      "to": 31,
+      "key": "camp"
+    },
+    {
+      "code": "num",
+      "from": 1,
+      "to": 10,
+      "key": "camp"
+    },
+    {
+      "code": "jos",
+      "chapters": [
+        3,
+        4
+      ],
+      "key": "river"
+    },
+    {
+      "code": "rut",
+      "from": 1,
+      "to": 4,
+      "key": "harvest"
+    },
+    {
+      "code": "psa",
+      "chapters": [
+        23
+      ],
+      "key": "pasture"
+    },
+    {
+      "code": "1ki",
+      "chapters": [
+        19
+      ],
+      "key": "mountain"
+    },
+    {
+      "code": "1ki",
+      "chapters": [
+        21
+      ],
+      "key": "vineyard"
+    },
+    {
+      "code": "1ki",
+      "from": 6,
+      "to": 8,
+      "key": "temple"
+    },
+    {
+      "code": "mat",
+      "chapters": [
+        4,
+        8,
+        13,
+        14
+      ],
+      "key": "galilee"
+    },
+    {
+      "code": "mrk",
+      "chapters": [
+        1,
+        4,
+        6
+      ],
+      "key": "galilee"
+    },
+    {
+      "code": "luk",
+      "chapters": [
+        5,
+        8
+      ],
+      "key": "galilee"
+    },
+    {
+      "code": "jhn",
+      "chapters": [
+        6,
+        21
+      ],
+      "key": "galilee"
+    },
+    {
+      "code": "neh",
+      "from": 2,
+      "to": 13,
+      "key": "jerusalem"
+    },
+    {
+      "code": "2ki",
+      "chapters": [
+        2
+      ],
+      "key": "river"
+    },
+    {
+      "code": "2ki",
+      "chapters": [
+        25
+      ],
+      "key": "ruins"
+    },
+    {
+      "code": "dan",
+      "chapters": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "key": "babylon"
+    },
+    {
+      "code": "rev",
+      "chapters": [
+        21,
+        22
+      ],
+      "key": "newcity"
+    }
+  ],
+  "chapters": {
+    "gen": {
+      "1": "meadow",
+      "2": "garden",
+      "3": "garden",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow",
+      "43": "meadow",
+      "44": "meadow",
+      "45": "meadow",
+      "46": "meadow",
+      "47": "meadow",
+      "48": "meadow",
+      "49": "meadow",
+      "50": "meadow"
+    },
+    "exo": {
+      "1": "nile",
+      "2": "nile",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "nile",
+      "8": "nile",
+      "9": "nile",
+      "10": "nile",
+      "11": "nile",
+      "12": "nile",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "sinai",
+      "20": "sinai",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "sinai",
+      "25": "camp",
+      "26": "camp",
+      "27": "camp",
+      "28": "camp",
+      "29": "camp",
+      "30": "camp",
+      "31": "camp",
+      "32": "sinai",
+      "33": "sinai",
+      "34": "sinai",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow"
+    },
+    "lev": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow"
+    },
+    "num": {
+      "1": "camp",
+      "2": "camp",
+      "3": "camp",
+      "4": "camp",
+      "5": "camp",
+      "6": "camp",
+      "7": "camp",
+      "8": "camp",
+      "9": "camp",
+      "10": "camp",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow"
+    },
+    "deu": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow"
+    },
+    "jos": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "river",
+      "4": "river",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow"
+    },
+    "jdg": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow"
+    },
+    "rut": {
+      "1": "harvest",
+      "2": "harvest",
+      "3": "harvest",
+      "4": "harvest"
+    },
+    "1sa": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow"
+    },
+    "2sa": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow"
+    },
+    "1ki": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "temple",
+      "7": "temple",
+      "8": "temple",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "mountain",
+      "20": "meadow",
+      "21": "vineyard",
+      "22": "meadow"
+    },
+    "2ki": {
+      "1": "meadow",
+      "2": "river",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "ruins"
+    },
+    "1ch": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow"
+    },
+    "2ch": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow"
+    },
+    "ezr": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow"
+    },
+    "neh": {
+      "1": "meadow",
+      "2": "jerusalem",
+      "3": "jerusalem",
+      "4": "jerusalem",
+      "5": "jerusalem",
+      "6": "jerusalem",
+      "7": "jerusalem",
+      "8": "jerusalem",
+      "9": "jerusalem",
+      "10": "jerusalem",
+      "11": "jerusalem",
+      "12": "jerusalem",
+      "13": "jerusalem"
+    },
+    "est": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow"
+    },
+    "job": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow"
+    },
+    "psa": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "pasture",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow",
+      "43": "meadow",
+      "44": "meadow",
+      "45": "meadow",
+      "46": "meadow",
+      "47": "meadow",
+      "48": "meadow",
+      "49": "meadow",
+      "50": "meadow",
+      "51": "meadow",
+      "52": "meadow",
+      "53": "meadow",
+      "54": "meadow",
+      "55": "meadow",
+      "56": "meadow",
+      "57": "meadow",
+      "58": "meadow",
+      "59": "meadow",
+      "60": "meadow",
+      "61": "meadow",
+      "62": "meadow",
+      "63": "meadow",
+      "64": "meadow",
+      "65": "meadow",
+      "66": "meadow",
+      "67": "meadow",
+      "68": "meadow",
+      "69": "meadow",
+      "70": "meadow",
+      "71": "meadow",
+      "72": "meadow",
+      "73": "meadow",
+      "74": "meadow",
+      "75": "meadow",
+      "76": "meadow",
+      "77": "meadow",
+      "78": "meadow",
+      "79": "meadow",
+      "80": "meadow",
+      "81": "meadow",
+      "82": "meadow",
+      "83": "meadow",
+      "84": "meadow",
+      "85": "meadow",
+      "86": "meadow",
+      "87": "meadow",
+      "88": "meadow",
+      "89": "meadow",
+      "90": "meadow",
+      "91": "meadow",
+      "92": "meadow",
+      "93": "meadow",
+      "94": "meadow",
+      "95": "meadow",
+      "96": "meadow",
+      "97": "meadow",
+      "98": "meadow",
+      "99": "meadow",
+      "100": "meadow",
+      "101": "meadow",
+      "102": "meadow",
+      "103": "meadow",
+      "104": "meadow",
+      "105": "meadow",
+      "106": "meadow",
+      "107": "meadow",
+      "108": "meadow",
+      "109": "meadow",
+      "110": "meadow",
+      "111": "meadow",
+      "112": "meadow",
+      "113": "meadow",
+      "114": "meadow",
+      "115": "meadow",
+      "116": "meadow",
+      "117": "meadow",
+      "118": "meadow",
+      "119": "meadow",
+      "120": "meadow",
+      "121": "meadow",
+      "122": "meadow",
+      "123": "meadow",
+      "124": "meadow",
+      "125": "meadow",
+      "126": "meadow",
+      "127": "meadow",
+      "128": "meadow",
+      "129": "meadow",
+      "130": "meadow",
+      "131": "meadow",
+      "132": "meadow",
+      "133": "meadow",
+      "134": "meadow",
+      "135": "meadow",
+      "136": "meadow",
+      "137": "meadow",
+      "138": "meadow",
+      "139": "meadow",
+      "140": "meadow",
+      "141": "meadow",
+      "142": "meadow",
+      "143": "meadow",
+      "144": "meadow",
+      "145": "meadow",
+      "146": "meadow",
+      "147": "meadow",
+      "148": "meadow",
+      "149": "meadow",
+      "150": "meadow"
+    },
+    "pro": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow"
+    },
+    "ecc": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow"
+    },
+    "sng": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow"
+    },
+    "isa": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow",
+      "43": "meadow",
+      "44": "meadow",
+      "45": "meadow",
+      "46": "meadow",
+      "47": "meadow",
+      "48": "meadow",
+      "49": "meadow",
+      "50": "meadow",
+      "51": "meadow",
+      "52": "meadow",
+      "53": "meadow",
+      "54": "meadow",
+      "55": "meadow",
+      "56": "meadow",
+      "57": "meadow",
+      "58": "meadow",
+      "59": "meadow",
+      "60": "meadow",
+      "61": "meadow",
+      "62": "meadow",
+      "63": "meadow",
+      "64": "meadow",
+      "65": "meadow",
+      "66": "meadow"
+    },
+    "jer": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow",
+      "43": "meadow",
+      "44": "meadow",
+      "45": "meadow",
+      "46": "meadow",
+      "47": "meadow",
+      "48": "meadow",
+      "49": "meadow",
+      "50": "meadow",
+      "51": "meadow",
+      "52": "meadow"
+    },
+    "lam": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow"
+    },
+    "ezk": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow",
+      "29": "meadow",
+      "30": "meadow",
+      "31": "meadow",
+      "32": "meadow",
+      "33": "meadow",
+      "34": "meadow",
+      "35": "meadow",
+      "36": "meadow",
+      "37": "meadow",
+      "38": "meadow",
+      "39": "meadow",
+      "40": "meadow",
+      "41": "meadow",
+      "42": "meadow",
+      "43": "meadow",
+      "44": "meadow",
+      "45": "meadow",
+      "46": "meadow",
+      "47": "meadow",
+      "48": "meadow"
+    },
+    "dan": {
+      "1": "babylon",
+      "2": "babylon",
+      "3": "meadow",
+      "4": "babylon",
+      "5": "babylon",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow"
+    },
+    "hos": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow"
+    },
+    "jol": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "amo": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow"
+    },
+    "oba": {
+      "1": "meadow"
+    },
+    "jnh": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow"
+    },
+    "mic": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow"
+    },
+    "nam": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "hab": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "zep": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "hag": {
+      "1": "meadow",
+      "2": "meadow"
+    },
+    "zec": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow"
+    },
+    "mal": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow"
+    },
+    "mat": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "galilee",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "galilee",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "galilee",
+      "14": "galilee",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow"
+    },
+    "mrk": {
+      "1": "galilee",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "galilee",
+      "5": "meadow",
+      "6": "galilee",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow"
+    },
+    "luk": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "galilee",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "galilee",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow"
+    },
+    "jhn": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "galilee",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "galilee"
+    },
+    "act": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "meadow",
+      "22": "meadow",
+      "23": "meadow",
+      "24": "meadow",
+      "25": "meadow",
+      "26": "meadow",
+      "27": "meadow",
+      "28": "meadow"
+    },
+    "rom": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow"
+    },
+    "1co": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow"
+    },
+    "2co": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow"
+    },
+    "gal": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow"
+    },
+    "eph": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow"
+    },
+    "php": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow"
+    },
+    "col": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow"
+    },
+    "1th": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow"
+    },
+    "2th": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "1ti": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow"
+    },
+    "2ti": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow"
+    },
+    "tit": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "phm": {
+      "1": "meadow"
+    },
+    "heb": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow"
+    },
+    "jas": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow"
+    },
+    "1pe": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow"
+    },
+    "2pe": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow"
+    },
+    "1jn": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow"
+    },
+    "2jn": {
+      "1": "meadow"
+    },
+    "3jn": {
+      "1": "meadow"
+    },
+    "jud": {
+      "1": "meadow"
+    },
+    "rev": {
+      "1": "meadow",
+      "2": "meadow",
+      "3": "meadow",
+      "4": "meadow",
+      "5": "meadow",
+      "6": "meadow",
+      "7": "meadow",
+      "8": "meadow",
+      "9": "meadow",
+      "10": "meadow",
+      "11": "meadow",
+      "12": "meadow",
+      "13": "meadow",
+      "14": "meadow",
+      "15": "meadow",
+      "16": "meadow",
+      "17": "meadow",
+      "18": "meadow",
+      "19": "meadow",
+      "20": "meadow",
+      "21": "newcity",
+      "22": "newcity"
+    }
+  }
+}

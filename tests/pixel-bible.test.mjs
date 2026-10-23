@@ -97,9 +97,9 @@ test('같은 이름의 다른 신원을 한 월드 인물로 합치지 않는다
  assert.equal(model.cast.length,2);assert.notEqual(model.cast[0].identity.id,model.cast[1].identity.id);
 });
 
-test('배경 6종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
+test('배경 20종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
  const {BACKGROUNDS,backgroundFor}=await import('../js/features/pixel-bible/backgrounds.js');
- assert.equal(Object.keys(BACKGROUNDS).length,6);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
+ assert.equal(Object.keys(BACKGROUNDS).length,20);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
  for(const p of Object.values(BACKGROUNDS)){assert.ok(p.name);assert.equal(p.tile.length,2);for(const k of ['ground','water','path','hill'])assert.match(p[k],/^#[0-9a-f]{6}$/);}
 });
 
@@ -217,20 +217,20 @@ test('통독에서 보고 있는 Day와 계획 밖 본문을 달력상 오늘보
 
 test('다른 통독 분량은 배경 기본값을 다시 선택하고 수동 배경 저장도 분리한다', async () => {
  const {defaultBackground,backgroundStorageKey,BACKGROUNDS}=await import('../js/features/pixel-bible/backgrounds.js');
- const a=[{code:'1ki',chap:19}],b=[{code:'2ki',chap:2}];
+ const a=[{code:'rut',chap:2}],b=[{code:'mat',chap:4}];
  assert.notEqual(defaultBackground(a),defaultBackground(b));
  assert.ok(BACKGROUNDS[defaultBackground(a)]);
  assert.equal(defaultBackground(a),defaultBackground([...a]));
  assert.notEqual(backgroundStorageKey('1ki.19'),backgroundStorageKey('2ki.2'));
 });
 
-test('10명 이후 인물도 보존하고 선택 인물의 관계 상대를 함께 배치한다',async()=>{
+test('10명을 넘는 통독 명단도 모두 동시에 월드에 보존한다',async()=>{
  const {visibleWorldCast}=await import('../js/features/pixel-bible/world.js');
  const data={people:Array.from({length:25},(_,i)=>({name:`인물${i}`,role:'본문 인물',weight:25-i})),rels:[{from:'인물24',to:'인물23',label:'도움',verses:'1'}]};
  const model=buildWorldModel([{code:'gen',name:'창세기',chap:1,data}]);
  assert.equal(model.cast.length,25);
  const visible=visibleWorldCast(model,24);
- assert.equal(visible.length,10);assert.equal(visible[0].name,'인물24');assert.equal(visible[1].name,'인물23');
+ assert.equal(visible.length,25);assert.deepEqual(new Set(visible.map(p=>p.name)),new Set(model.cast.map(p=>p.name)));
 });
 
 test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',async()=>{
@@ -488,4 +488,35 @@ test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 �
  }
  for(const [kind,category]of Object.entries({table:'table',bed:'bed',temple:'building',tent:'building',crown:'wear',lamp:'lamp',rainbow:'symbol',chariot:'cart',basket:'basket',book:'scroll',trumpet:'instrument'}))assert.equal(objectBehavior(kind).category,category,kind);
  assert.equal(objectBehavior('ark-covenant').carry,false);
+});
+
+test('최대 축소는 전체 지형을 담고 지도보다 큰 뷰포트 축은 중앙에 고정한다',async()=>{
+ const {WORLD,homeCamera,constrainCamera,cameraView}=await import('../js/features/pixel-bible/camera.js');
+ for(const [width,height] of [[1280,700],[844,390],[1920,1080]]){
+  const cam=homeCamera();assert.equal(cam.x,WORLD.width/2);assert.equal(cam.y,WORLD.height/2);
+  cam.zoom=.001;cam.x=-9999;cam.y=99999;constrainCamera(cam,width,height);
+  const v=cameraView(width,height,cam);
+  assert.ok(v.x>=-.001&&v.y>=-.001);assert.ok(v.x+WORLD.width*v.scale<=width+.001);assert.ok(v.y+WORLD.height*v.scale<=height+.001);
+  assert.equal(cam.x,WORLD.width/2);assert.equal(cam.y,WORLD.height/2);
+ }
+});
+
+test('주요 인물 선택과 관계 추천은 현재 분량의 신원·출처를 보존한다',async()=>{
+ const {majorCast,recommendedCast}=await import('../js/features/pixel-bible/exposure.js');
+ const a={name:'갑',weight:3,refs:['창세기 2장']},b={name:'을',weight:1,refs:['창세기 2장']},other={name:'을',weight:1,refs:['열왕기상 1장']};
+ const model={cast:[a,b,other],scenes:[],relations:[{from:'갑',to:'을',label:'가족',sourceRef:'창세기 2장'}]};
+ assert.deepEqual(majorCast(model),[a]);assert.deepEqual(recommendedCast(model,a).map(r=>r.person),[b]);
+});
+
+test('많은 인물의 초기 위치와 옛 월드의 물건도 새 범위 안에 보존한다',async()=>{
+ const {castPositions}=await import('../js/features/pixel-bible/world.js');const {BOUNDS}=await import('../js/features/pixel-bible/camera.js');
+ const {fitLayout}=await import('../js/features/pixel-bible/layout.js');
+ for(const count of [1,25,100,2259]){const positions=castPositions(count);assert.equal(positions.length,count);assert.ok(positions.every(p=>p.x>=BOUNDS.minX&&p.x<=BOUNDS.maxX&&p.y>=BOUNDS.minY&&p.y<=BOUNDS.maxY));}
+ const old=[{kind:'stone',x:12,y:12},{kind:'stone',x:110,y:65},{kind:'tree',x:111,y:66}];
+ const next=fitLayout(old,{stone:true,tree:true});assert.equal(next.length,3);assert.deepEqual(next[0],old[0]);assert.equal(new Set(next.map(o=>o.x+':'+o.y)).size,3);assert.ok(next.every(o=>o.x<=BOUNDS.maxX&&o.y<=BOUNDS.maxY));
+});
+
+test('명시한 본문만 묘사 기반 배경을 고르고 다른 본문은 기본 지형을 쓴다',async()=>{
+ const {defaultBackground}=await import('../js/features/pixel-bible/backgrounds.js');
+ for(const [code,chap,expected]of [['gen',2,'garden'],['rut',2,'harvest'],['mat',4,'galilee'],['rev',22,'newcity'],['rom',8,'meadow']])assert.equal(defaultBackground([{code,chap}]),expected);
 });

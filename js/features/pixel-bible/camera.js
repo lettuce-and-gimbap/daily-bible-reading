@@ -1,17 +1,18 @@
-export const WORLD={width:2880,height:1728,tile:24};
-export const BOUNDS={minX:2,maxX:WORLD.width/24-3,minY:4,maxY:WORLD.height/24-3};
-export const ZOOM={min:.4,max:2.5};
+export const WORLD={width:1920,height:1080,tile:24};
+export const BOUNDS={minX:4,maxX:WORLD.width/24-5,minY:8,maxY:Math.floor(WORLD.height/24)-7};
+export const ZOOM={max:2.5};
+export const homeCamera=()=>({x:WORLD.width/2,y:WORLD.height/2,zoom:1});
 export function cameraView(width,height,camera){
  const scale=Math.max(width/960,height/480)*camera.zoom;
  return {scale,x:width/2-camera.x*scale,y:height/2-camera.y*scale};
 }
 export function constrainCamera(camera,width,height){
  const base=Math.max(width/960,height/480);
- const min=Math.max(ZOOM.min,width/WORLD.width/base,height/WORLD.height/base);
+ const min=Math.min(width/WORLD.width,height/WORLD.height)/base;
  camera.zoom=Math.max(min,Math.min(ZOOM.max,camera.zoom));
  const scale=base*camera.zoom,hx=width/(2*scale),hy=height/(2*scale);
- camera.x=Math.max(hx,Math.min(WORLD.width-hx,camera.x));
- camera.y=Math.max(hy,Math.min(WORLD.height-hy,camera.y));
+ camera.x=hx>=WORLD.width/2?WORLD.width/2:Math.max(hx,Math.min(WORLD.width-hx,camera.x));
+ camera.y=hy>=WORLD.height/2?WORLD.height/2:Math.max(hy,Math.min(WORLD.height-hy,camera.y));
  return camera;
 }
 export function toWorld(point,width,height,camera){
