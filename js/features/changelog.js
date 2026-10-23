@@ -71,7 +71,7 @@ async function openChangelog(since) {
   pop.innerHTML = `<div class="cl-card">
     <div class="cl-head"><h3>🆕 ${fresh.length ? "새로 바뀐 점" : "업데이트 기록"} <small>현재 v${esc(cur)}</small></h3><button class="icon-btn" data-cl="close" aria-label="닫기">✕</button></div>
     <div class="cl-body">
-      ${cur === "10.0.0" ? `<section class="pb-release-guide"><h3>사용설명서</h3>${pixelBibleBannerHtml()}<p>통독 탭 왼쪽의 <b>PIXEL BIBLE</b>을 눌러 가로 화면으로 입장하세요.</p><ul><li>인물을 선택해 땅을 누르면 걸어가요. 집어서 옮길 수도 있어요.</li><li>좌우 도구 패널에서 배경을 바꾸고 오브제를 놓아 보세요. 조합식에서 이벤트 조건을 확인할 수 있어요.</li><li>가까운 인물들은 서로 마주 보고 이야기해요. 말풍선의 성경구절을 누르면 본문을 볼 수 있어요.</li><li>전체화면으로 넓게 보고 좌우 패널은 접거나 펼칠 수 있어요.</li></ul><p class="muted small">대사는 본문을 참고해 새로 구성했어요. 실제 성경 문장은 참고 구절에서 확인해 주세요.</p></section>` : ""}
+      ${cur === "10.0.0" ? `<section class="pb-release-guide"><h3>사용설명서</h3>${pixelBibleBannerHtml()}<p>통독 탭 왼쪽의 <b>PIXEL BIBLE</b>을 눌러 가로 화면으로 입장하세요.</p><ul><li>인물을 누르면 선택 표시와 대사가 나와요. 빈 땅을 누르면 선택이 해제돼요. 집어 옮기거나 선택 후 방향키로 이동할 수 있어요.</li><li>좌우 도구 패널에서 배경을 바꾸고 오브제를 놓아 보세요. 조합식에서 이벤트 조건을 확인할 수 있어요.</li><li>가까운 인물들은 서로 마주 보고 이야기해요. 말풍선의 성경구절을 누르면 본문을 볼 수 있어요.</li><li>전체화면으로 넓게 보고 좌우 패널은 접거나 펼칠 수 있어요.</li></ul><p class="muted small">대사는 본문을 참고해 새로 구성했어요. 실제 성경 문장은 참고 구절에서 확인해 주세요.</p></section>` : ""}
       ${fresh.length ? fresh.map(changelogEntryHtml).join("") : ""}
       ${rest.length ? changelogGroupsHtml(rest) : ""}
       ${log.length ? "" : `<p class="muted small">기록을 불러오지 못했어요.</p>`}

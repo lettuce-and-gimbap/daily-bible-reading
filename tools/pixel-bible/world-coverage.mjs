@@ -3,6 +3,7 @@ import {createRequire} from 'node:module';
 import {buildWorldModel,visibleWorldCast} from '../../js/features/pixel-bible/world.js';
 import {buildChapterDialogue} from '../../js/features/pixel-bible/chapter-dialogue.js';
 import {dialogueCandidates} from '../../js/features/pixel-bible/dialogue.js';
+import {personalLines} from '../../js/features/pixel-bible/personal-lines.js';
 import {chapterPeople} from '../../js/features/pixel-bible/chapter-people.js';
 const {BOOKS}=createRequire(import.meta.url)('../../js/core/bible.js');
 let chapters=0,people=0,relations=0,large=0;
@@ -16,6 +17,8 @@ for(const book of BOOKS){
    const visible=visibleWorldCast(model,index);if(visible[0].name!==p.name)throw Error('Focus missing');
    const npc={...visible[0],x:10,y:8,path:[]};
    if(!dialogueCandidates([npc],input,context).length)throw Error(`Missing speech ${book.code}.${chap}: ${p.name}`);
+   const personal=personalLines(npc,input,context);
+   if(personal.length<3||personal.length>5||new Set(personal.map(l=>l.text)).size!==personal.length)throw Error(`Invalid personal lines ${book.code}.${chap}: ${p.name}`);
    people++;
   }
   for(const r of context.relations){

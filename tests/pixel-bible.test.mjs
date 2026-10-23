@@ -134,11 +134,15 @@ test('말풍선은 한 슬롯에서 5초 표시하고 실제 숨긴 시점부터
  assert.equal(s.tick(26099,[b]),null);assert.equal(s.tick(26100,[b]).id,'b');
 });
 
-test('랜덤 무발화 기회에도 재시도 간격을 지키며 겹치거나 같은 대사를 연속 선택하지 않는다',async()=>{
+test('클릭은 현재 대사를 즉시 교체하고 새 5초 종료 후 3초 뒤 자동 대사를 허용한다',async()=>{
  const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
- let r=.99;const s=new SpeechDirector({random:()=>r});const a={id:'a',speaker:{},kind:'solo'},b={id:'b',speaker:{},kind:'solo'};
- assert.equal(s.tick(3000,[a,b]),null);r=0;assert.equal(s.tick(5999,[a,b]),null);assert.equal(s.tick(6000,[a,b]).id,'a');
- assert.equal(s.tick(11000,[a,b]),null);assert.equal(s.tick(14000,[a,b]).id,'b');
+ const s=new SpeechDirector({random:()=>0});const a={id:'a',speaker:{},kind:'solo'},b={id:'b',speaker:{},kind:'solo'},c={id:'c',speaker:{},kind:'solo'};
+ assert.equal(s.tick(3000,[a]).id,'a');
+ assert.equal(s.interrupt(b,4500).id,'b');assert.equal(s.tick(4501,[c]).id,'b');
+ assert.equal(s.tick(9499,[c]).id,'b');assert.equal(s.tick(9500,[c]),null);
+ assert.equal(s.tick(12499,[c]),null);assert.equal(s.tick(12500,[c]).id,'c');
+ // 공백 시간과 같은 인물 재클릭도 즉시 표시하고 5초를 다시 센다.
+ s.interrupt(c,12600);assert.equal(s.current.started,12600);assert.equal(s.current.until,17600);
 });
 
 test('이세벨의 대상별 대사를 구분하고 거리·현재 본문·이동 상태를 확인한다',async()=>{
@@ -165,12 +169,12 @@ test('전용 외형이 없는 주요 인물도 고유 대사를 선택하며 마
  assert.ok(dialogueCandidates([{name:'아비새',x:10,y:8,path:[]}],chapters,context).some(c=>c.origin==='authored'&&c.kind==='solo'));
 });
 
-test('다른 본문의 인물과 관계는 해당 장의 안내로 연결하고 발언으로 위장하지 않는다',async()=>{
+test('다른 본문의 인물과 관계도 현재 장에 맞는 창작 대사와 참고 구절로 연결한다',async()=>{
  const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
  const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
  const chapters=[{code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'하눈',role:'성문을 수리한 사람'},{name:'살룬',role:'문과 성벽을 수리한 사람'}],rels:[{from:'하눈',to:'살룬',label:'함께 재건',verses:'13-15',note:'두 사람이 각자 맡은 문과 성벽을 수리했어요.'}]}}];
  const npcs=[{name:'하눈',x:10,y:8,path:[]},{name:'살룬',x:11,y:9,path:[]}],context=buildChapterDialogue(chapters),lines=dialogueCandidates(npcs,chapters,context);
- assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref==='느헤미야 3장'&&c.text.includes('성문을 수리')));
+ assert.ok(lines.some(c=>c.origin==='context-variation'&&c.ref==='느헤미야 3장'));
  assert.equal(lines.filter(c=>c.origin==='chapter-relation').length,2);
  assert.ok(!lines.some(c=>c.kind==='ordinary'));
  npcs[1].x=30;assert.ok(!dialogueCandidates(npcs,chapters,context).some(c=>c.target));
@@ -244,4 +248,27 @@ test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다�
  a.x=11;links=relationshipLinks(relations,[a,b]);assert.equal(links[0].a.x,264);
  links=relationshipLinks(relations,[a,b],{active:true,n:a,p:{x:15,y:7}});assert.deepEqual(links[0].a,{x:360,y:184});
  assert.equal(relationshipLinks(relations,[a]).length,0);
+});
+
+
+test('인물 동작은 관련 본문만 적용하고 치유 후 인물을 절뚝거림으로 고정하지 않는다',async()=>{
+ const {characterMotion,motionPose}=await import('../js/features/pixel-bible/motion.js');
+ const chapter=(code,name,chap)=>({code,name,chap});
+ const jacob={name:'야곱',refs:['창세기 31장','창세기 32장']};
+ assert.equal(characterMotion(jacob,[chapter('gen','창세기',31)]).limp,false);
+ const limp=characterMotion(jacob,[chapter('gen','창세기',32)]);assert.equal(limp.limp,true);
+ assert.notEqual(motionPose(limp,.25,true).speed,motionPose(limp,.75,true).speed);
+ assert.equal(characterMotion({name:'야곱',refs:['요한복음 4장']},[chapter('jhn','요한복음',4)]).limp,false);
+ assert.equal(characterMotion({name:'므비보셋',refs:['사무엘하 9장']},[chapter('2sa','사무엘하',9)]).limp,true);
+ assert.equal(characterMotion({name:'못 걷는 사람',role:'일어나 걸은 이',refs:['사도행전 3장']},[chapter('act','사도행전',3)]).key,'restored');
+ const profiles=['모세','엘리야','룻','베드로','삭개오'].map(name=>characterMotion({name,refs:[]}));
+ assert.ok(new Set(profiles.map(p=>JSON.stringify([p.swing,p.frequency,p.phase]))).size>=3);
+});
+
+test('같은 인물의 같은 클릭 대사를 즉시 다시 표시할 수 있다',async()=>{
+ const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
+ const s=new SpeechDirector({random:()=>0});const a={id:'same-line',speaker:{name:'가'},text:'같은 문장',kind:'solo'};
+ s.interrupt(a,100);assert.equal(s.current.id,a.id);
+ s.interrupt(a,200);assert.equal(s.current.text,a.text);assert.equal(s.current.until,5200);
+ assert.equal(s.tick(5200,[]),null);assert.equal(s.nextAt,8200);
 });

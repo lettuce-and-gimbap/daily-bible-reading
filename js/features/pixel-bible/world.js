@@ -1,3 +1,5 @@
+import { personalLines } from './personal-lines.js';
+import { characterMotion, motionPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
@@ -106,7 +108,7 @@ export async function mountPixelWorld(shell, options) {
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>분량 전체 인물 · ${model.cast.length}명/집단</h3><p class="pb-help">인물을 고르면 관련 인물을 우선해 최대 10명씩 함께 보여 줘요.</p><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -122,7 +124,7 @@ export async function mountPixelWorld(shell, options) {
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
-  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
+  const speech=new SpeechDirector({now:performance.now()-3000});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
@@ -195,7 +197,7 @@ export async function mountPixelWorld(shell, options) {
     const saved = JSON.parse(localStorage.getItem(storageKey));
     if (Array.isArray(saved) && saved.length <= 16 && saved.every((o) => OBJECTS[o.kind] && Number.isInteger(o.x) && Number.isInteger(o.y) && o.x >= 2 && o.x <= 37 && o.y >= 5 && o.y <= 15) && new Set(saved.map((o) => `${o.x},${o.y}`)).size === saved.length) objects = saved;
   } catch (_) {}
-  const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, action: "", task: null }));
+  const npcs = visibleCast.map((p, i) => ({ ...p, x: 9 + (i % 5) * 4, y: 6 + Math.floor(i / 5) * 7, path: [], direction:"down", stride:0, idle: 1 + i * .4, motion:characterMotion(p,chapterData), action: "", task: null }));
   let drag=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
   let selected = -1, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
@@ -223,14 +225,23 @@ export async function mountPixelWorld(shell, options) {
       return `<article class="pb-recipe"><b>${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)}</small><p>${ready?'✓ 조합 가능':missing.length?`필요 인물: ${esc(missing.join(', '))}`:`${objectPhrase(OBJECTS[scene.object])} 먼저 놓아 주세요.`}</p><button class="pb-button" data-recipe="${i}" ${ready?'':'disabled'}>이 조합으로 모으기</button></article>`;
     }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브제 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>`<button class="pb-button" data-common-recipe="${kind}" ${npcs[selected]&&objects.some(o=>o.kind===kind)?'':'disabled'}>${OBJECTS[kind]} · ${label}</button>`).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.includes(scene)).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
   }
-  function select(i) {
+  function requestPersonal(n){
+    if(!n)return;
+    const lines=personalLines(n,chapterData,dialogueContext);
+    // 클릭 요청은 같은 대사가 연달아 나와도 허용한다.
+    cancelTalk();
+    speech.interrupt(lines[Math.floor(Math.random()*lines.length)],performance.now());
+    updateSpeech(performance.now());positionSpeech();
+  }
+  function select(i, speakOnSelect=false) {
     selected = i;
     shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) >= 0 && Number(b.dataset.person) === i));
     const n=npcs[i];
     if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();return;}
+    if(speakOnSelect)requestPersonal(n);
     const style=characterStyle(n.name,i,n.role,n.refs);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 걸어가요.</p>`;
-    renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 이동해요.`);
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(n.name)}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 선택이 해제돼요.`);
   }
   function move(n, goal, task = null) {
     if(pendingTalk||speech.current?.speaker===n||speech.current?.target===n)hideSpeech();
@@ -294,7 +305,7 @@ export async function mountPixelWorld(shell, options) {
   }
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag) return;
-    hideSpeech();suppressClick=false;
+    suppressClick=false;
     if(!options.allowed()||activeEvent||placing||e.button!==0||window.innerHeight>=window.innerWidth)return;
     const index=hitPerson(coordinates(e));if(index<0)return;
     const previous=npcs[selected];select(index);const n=npcs[index];
@@ -305,14 +316,14 @@ export async function mountPixelWorld(shell, options) {
   },{signal});
   canvas.addEventListener('pointermove',(e)=>{
     if(!drag||e.pointerId!==drag.id)return;
-    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브제에 내려놓아 보세요.`);}
+    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브제에 내려놓아 보세요.`);}
     if(drag.active){e.preventDefault();drag.vx=drag.vx*.65+(e.clientX-drag.lastX)*.35;drag.lastX=e.clientX;drag.p=coordinates(e);draw();}
   },{signal});
   function finishDrag(e,cancel=false) {
     if(!drag||e.pointerId!==drag.id)return;
     const held=drag;drag=null;delete canvas.dataset.dragging;
     if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);
-    if(!held.active){suppressClick=true;return;}
+    if(!held.active){if(!cancel)requestPersonal(held.n);suppressClick=true;return;}
     suppressClick=true;
     const n=held.n,p=coordinates(e),under=document.elementFromPoint(e.clientX,e.clientY);
     if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle')){n.x=held.from.x;n.y=held.from.y;n.idle=5;draw();return;}
@@ -324,7 +335,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if(blocked(landing.x,landing.y)||npcs.some(other=>other!==n&&Math.hypot(other.x-landing.x,other.y-landing.y)<.6)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 다른 인물이나 오브제와 겹쳐요. 빈 땅에 내려놓아 주세요.');
-    }else{n.x=landing.x;n.y=landing.y;n.idle=8;say(`${objectPhrase(n.name)} 내려놓았어요. 다시 집거나 땅을 눌러 걸어가게 할 수 있어요.`);}
+    }else{n.x=landing.x;n.y=landing.y;n.idle=8;say(`${objectPhrase(n.name)} 내려놓았어요. 다시 집거나 선택 후 방향키로 걸어가게 할 수 있어요.`);}
     draw();
   }
   canvas.addEventListener('pointerup',e=>finishDrag(e),{signal});
@@ -345,16 +356,17 @@ export async function mountPixelWorld(shell, options) {
       if (hit !== selected) {
         const a=npcs[selected], b=npcs[hit];
         const r=a&&model.relations.find((r) => r.from===a.name && r.to===b.name || r.from===b.name && r.to===a.name);
-        select(hit);
+        select(hit,true);
         if (r) say(`${r.from} ↔ ${r.to} · ${r.label}. ${r.note || ""} (${r.ref})`);
-      } else select(hit);
+      } else select(hit,true);
       return;
     }
     const o=objects.find((o) => Math.abs(o.x-p.x)<1.1 && Math.abs(o.y-p.y)<1.1);
     pendingEvent=null;
     const n=npcs[selected];
     if (o) {if(n)interact(n,o);return;}
-    if(n&&!blocked(x,y)&&move(n,{x,y}))say(`${n.name} 이동 중 · 목적지에 도착하면 다시 주변을 거닐어요.`);
+    // 배경 클릭은 이동 명령이 아니다. 기존 자연 이동을 유지하며 선택만 해제한다.
+    if(n)n.idle=Math.min(n.idle,1);
     select(-1);draw();
   }, {signal});
   canvas.addEventListener("keydown", (e) => {
@@ -383,12 +395,12 @@ export async function mountPixelWorld(shell, options) {
     }
     if (b.dataset.castPerson!==undefined) {
       const index=Number(b.dataset.person);
-      if(index>=0){select(index);return;}
+      if(index>=0){select(index,true);return;}
       if(activeEvent)return;
       cleanup();
       shell.querySelectorAll(":scope > :not(.pb-world-head)").forEach(el=>el.remove());
       shell.insertAdjacentHTML('beforeend','<div class="pb-load" role="status">관련 인물들을 불러오고 있어요…</div>');
-      try{replacement=await mountPixelWorld(shell,{...options,focusPerson:Number(b.dataset.castPerson),showRelationships});}
+      try{replacement=await mountPixelWorld(shell,{...options,focusPerson:Number(b.dataset.castPerson),showRelationships,speakOnOpen:true});}
       catch(_){if(shell.isConnected)shell.querySelector('.pb-load').textContent='불러오지 못했어요. 닫고 다시 입장해 주세요.';}
       return;
     }
@@ -457,8 +469,9 @@ export async function mountPixelWorld(shell, options) {
       if(drag?.active && drag.n===n)continue;
       const talk=pendingTalk?.choice||speech.current;
       if(talk?.target&&(n===talk.speaker||n===talk.target)&&!n.path.length){n.idle=6;continue;}
+      if(talk?.speaker===n&&!n.path.length){n.idle=1;continue;}
       if(n.path.length) {
-        const p=n.path[0],dx=p.x-n.x,dy=p.y-n.y,d=Math.hypot(dx,dy),step=dt*2.8;
+        const p=n.path[0],dx=p.x-n.x,dy=p.y-n.y,d=Math.hypot(dx,dy),step=dt*n.motion.speed*motionPose(n.motion,n.stride,true,time).speed;
         n.direction=movementDirection(dx,dy,n.direction);
         n.stride+=(Math.min(d,step));
         if(blocked(p.x,p.y)) { n.path=[];n.task=null;continue; }
@@ -537,14 +550,17 @@ export async function mountPixelWorld(shell, options) {
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
     canvas.dataset.relationships=String(showRelationships);
   }
-  syncRelationships();select(-1);fitCanvas();resume();say('캐릭터를 누르고 끌어 옮겨 보세요. 양옆 버튼에서 인물과 조합식을 볼 수 있어요.');
+  syncRelationships();select(options.speakOnOpen?0:-1,!!options.speakOnOpen);fitCanvas();resume();say('캐릭터를 누르고 끌어 옮겨 보세요. 양옆 버튼에서 인물과 조합식을 볼 수 있어요.');
   return ()=>{cleanup();replacement?.();};
 }
 
 function drawObject(c,o) { drawWorldObject(c,o); }
 function drawNpc(c,n,index,time,selected,acting,reduced=false) {
-  const x=Math.round(n.x*TILE),y=Math.round(n.y*TILE);
+  const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
+  const x=Math.round(n.x*TILE)+pose.x,y=Math.round(n.y*TILE)+pose.y;
+  c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
   drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,action:n.action,time:reduced?0:time,direction:n.direction||"down",selected});
+  c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
@@ -554,6 +570,6 @@ function drawLifted(c,drag,time) {
   const groundY=Math.max(5,Math.min(15,Math.round(drag.p.y+3)))*TILE;
   c.fillStyle='#18352b55';c.fillRect(x-19,groundY+8,38,8);
   c.save();c.translate(x,y-96);c.rotate(Math.max(-.18,Math.min(.18,drag.vx*.006)));c.translate(-x,-y+96);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,hanging:true,time:performance.now()/1000,walk:Math.sin(performance.now()/160)*1.5,selected:true});
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs),x,y,{scale:2,hanging:true,time:performance.now()/1000,motion:drag.n.motion,walkFrame:Math.floor(performance.now()/1000*(drag.n.motion.frequency/3)+drag.n.motion.phase)%4,selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }

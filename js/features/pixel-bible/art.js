@@ -20,7 +20,15 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }
  ctx.save();ctx.imageSmoothingEnabled=false;
- if(hanging){ctx.translate(x,y-33*scale);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-x,-y+33*scale);}
+ if(hanging){
+  const motion=options.motion||{frequency:7,swing:.14,phase:0,key:'gentle'};
+  const beat=time*motion.frequency+motion.phase;
+  ctx.translate(x,y-33*scale);ctx.rotate(Math.sin(beat)*motion.swing);
+  if(motion.key==='lively')ctx.translate(Math.round(Math.sin(beat/2)*scale),Math.round(Math.abs(Math.sin(beat))*scale));
+  if(motion.key==='climber')ctx.translate(Math.round(Math.sin(beat)*scale),Math.round(-Math.abs(Math.sin(beat/2))*2*scale));
+  if(motion.key==='steady'||motion.limp)ctx.translate(0,Math.round(Math.sin(beat/2)*scale*.5));
+  ctx.translate(-x,-y+33*scale);
+ }
  if(selected){
   if(!sprite.outline){
    const mask=document.createElement('canvas');mask.width=64;mask.height=64;const m=mask.getContext('2d');
