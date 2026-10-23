@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildWorldModel, findPath, clientToCanvasPoint } from '../js/features/pixel-bible/world.js';
+import { buildWorldModel, findPath, clientToCanvasPoint, touchSlopPixels } from '../js/features/pixel-bible/world.js';
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
 import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
@@ -102,6 +102,13 @@ test('Safari DPR 캔버스 좌표 변환은 CSS 확대·소수 경계에서도 �
  assert.deepEqual(clientToCanvasPoint(rect.left-4,rect.top-2,rect,781,1689),{x:0,y:0});
  assert.deepEqual(clientToCanvasPoint(rect.left+rect.width,rect.top+rect.height,rect,781,1689),{x:780,y:1688});
  assert.deepEqual(clientToCanvasPoint(0,0,{left:0,top:0,width:0,height:0},100,100),{x:0,y:0});
+});
+
+test('터치 드래그 판정 거리는 기기 픽셀 비율에 관계없이 CSS 기준으로 일정하다',()=>{
+ assert.equal(touchSlopPixels(390,390),12);
+ assert.equal(touchSlopPixels(780,390),24);
+ assert.equal(touchSlopPixels(1170,390),36);
+ assert.equal(touchSlopPixels(780,0),12);
 });
 
 test('등장 순서와 무관한 인물 외형과 본문·창작 근거를 제공한다', async () => {

@@ -41,7 +41,12 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
   const px=Math.floor((options.hitTest.x-x)/scale+32),py=Math.floor((options.hitTest.y-y)/scale+52);
   if(px<0||py<0||px>=64||py>=64)return false;
   if(!sprite.pixels)sprite.pixels=sprite.canvas.getContext('2d').getImageData(0,0,64,64).data;
-  return sprite.pixels[(py*64+px)*4+3]>128;
+  const padding=Math.max(0,Math.floor(options.hitPadding||0));
+  for(let oy=-padding;oy<=padding;oy++)for(let ox=-padding;ox<=padding;ox++){
+   const sx=px+ox,sy=py+oy;
+   if(sx>=0&&sy>=0&&sx<64&&sy<64&&ox*ox+oy*oy<=padding*padding+1&&sprite.pixels[(sy*64+sx)*4+3]>128)return true;
+  }
+  return false;
  }
  ctx.save();ctx.imageSmoothingEnabled=false;
  if(hanging){
@@ -303,10 +308,14 @@ export function drawDesignBoard(c) {
 }
 
 const objectHitCache=new Map();
-export function hitWorldObject(o,point,frame=null){
+export function hitWorldObject(o,point,frame=null,padding=0){
  const key=JSON.stringify([o.kind,frame?.scale,frame?.tilt,frame?.open,frame?.squash,frame?.dx,frame?.dy,frame?.lid]);
  let pixels=objectHitCache.get(key);
  if(!pixels){const c=document.createElement('canvas');c.width=c.height=384;drawWorldObject(c.getContext('2d'),{...o,x:192,y:192},1,frame);pixels=c.getContext('2d').getImageData(0,0,384,384).data;if(objectHitCache.size>256)objectHitCache.clear();objectHitCache.set(key,pixels);}
- const x=Math.floor(point.x-o.x*24+192),y=Math.floor(point.y-o.y*24+192);
- return x>=0&&x<384&&y>=0&&y<384&&pixels[(y*384+x)*4+3]>128;
+ const x=Math.floor(point.x-o.x*24+192),y=Math.floor(point.y-o.y*24+192),r=Math.max(0,Math.floor(padding));
+ for(let oy=-r;oy<=r;oy++)for(let ox=-r;ox<=r;ox++){
+  const sx=x+ox,sy=y+oy;
+  if(sx>=0&&sx<384&&sy>=0&&sy<384&&ox*ox+oy*oy<=r*r+1&&pixels[(sy*384+sx)*4+3]>128)return true;
+ }
+ return false;
 }

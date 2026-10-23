@@ -47,6 +47,10 @@ export function clientToCanvasPoint(clientX,clientY,rect,width,height) {
   const x=(clientX-rect.left)*width/rect.width,y=(clientY-rect.top)*height/rect.height;
   return {x:Math.max(0,Math.min(width-1,x)),y:Math.max(0,Math.min(height-1,y))};
 }
+export function touchSlopPixels(canvasWidth,cssWidth,cssSlop=12) {
+  if(!cssWidth)return cssSlop;
+  return cssSlop*Math.max(1,canvasWidth/cssWidth);
+}
 
 async function loadBook(code, cachedBook) {
   const existing = cachedBook?.(code);
@@ -472,7 +476,7 @@ export async function mountPixelWorld(shell, options) {
     const r=canvas.getBoundingClientRect(),v=view();
     return {x:((e.clientX-r.left)*canvas.width/r.width-v.x)/v.scale/TILE,y:((e.clientY-r.top)*canvas.height/r.height-v.y)/v.scale/TILE};
   }
-  function hitPerson(p) {
+  function hitPerson(p,touch=false) {
     const point={x:p.x*TILE,y:p.y*TILE};
     return npcs.map((n,i)=>({n,i,anchor:interactionAnchor(n,TILE)})).sort((a,b)=>b.anchor.y-a.anchor.y).find(({n,i,anchor})=>{
       if(Math.abs(anchor.x-point.x)>90||Math.abs(anchor.y-point.y)>150)return false;
@@ -482,14 +486,14 @@ export async function mountPixelWorld(shell, options) {
       const dx=point.x-x,dy=point.y-(y-28),angle=-pose.tilt-(ip?.actual==='lie-stone'&&[1,2].includes(ip.phase)?Math.PI/2:0);
       const local={x:x+dx*Math.cos(angle)-dy*Math.sin(angle),y:y-28+dx*Math.sin(angle)+dy*Math.cos(angle)};
       if(ip&&(heldObject(n,time,reduced)||ip.wearing))ip={...ip,heldObject:true};
-      return drawPixelCharacter(null,characterStyle(n.name,i,n.role,n.refs,n.creature||false),x,y,{scale:2,direction:n.direction||'down',walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,interaction:ip,expression:n.expression,hitTest:local});
+      return drawPixelCharacter(null,characterStyle(n.name,i,n.role,n.refs,n.creature||false),x,y,{scale:2,direction:n.direction||'down',walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:0,interaction:ip,expression:n.expression,hitTest:local,hitPadding:touch?5:0});
     })?.i??-1;
   }
-  function hitPlacedObject(p) {
+  function hitPlacedObject(p,touch=false) {
     const point={x:p.x*TILE,y:p.y*TILE};
     return [...objects].sort((a,b)=>b.y-a.y).find(o=>{
       const frame=objectInteractionFrame(o,npcs,time+cinematicTime,reduced);if(frame.actor&&objectWorn(frame.actor,time+cinematicTime,reduced))return false;const held=frame.actor&&heldObject(frame.actor,time+cinematicTime,reduced);
-      return hitWorldObject(held||o,point,held?.frame||frame);
+      return hitWorldObject(held||o,point,held?.frame||frame,touch?12:0);
     });
   }
   function beginObjectHold(o,e,p) {
@@ -544,7 +548,9 @@ export async function mountPixelWorld(shell, options) {
       pinch={distance:Math.max(1,Math.hypot(a.x-b.x,a.y-b.y)),zoom:camera.zoom,anchor:toWorld(mid,canvas.width,canvas.height,camera)};
       e.preventDefault();e.stopImmediatePropagation();return;
     }
-    if(!placing&&!removing&&!activeEvent&&hitPerson(coordinates(e))<0&&!hitPlacedObject(coordinates(e)))pan={id:e.pointerId,start:point,last:point,active:false};
+    if(!placing&&!removing&&!activeEvent&&hitPerson(coordinates(e),e.pointerType==='touch')<0&&!hitPlacedObject(coordinates(e),e.pointerType==='touch')){
+      const rect=canvas.getBoundingClientRect();pan={id:e.pointerId,start:point,last:point,active:false,slop:touchSlopPixels(canvas.width,rect.width)};
+    }
   },{capture:true,signal});
   canvas.addEventListener('pointermove',e=>{
     if(!pointers.has(e.pointerId))return;
@@ -556,7 +562,7 @@ export async function mountPixelWorld(shell, options) {
     if(gestureActive){e.stopImmediatePropagation();return;}
     if(pan?.id===e.pointerId){
       // Ignore touch jitter so a tap remains a tap on iOS Safari.
-      if(Math.hypot(point.x-pan.start.x,point.y-pan.start.y)>12)pan.active=true;
+      if(Math.hypot(point.x-pan.start.x,point.y-pan.start.y)>pan.slop)pan.active=true;
       if(pan.active){const v=view();camera.x-=(point.x-pan.last.x)/v.scale;camera.y-=(point.y-pan.last.y)/v.scale;constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();e.preventDefault();}
       pan.last=point;
     }
@@ -572,7 +578,7 @@ export async function mountPixelWorld(shell, options) {
     if(!pointers.size)gestureActive=false;
     if(consume){e.preventDefault();e.stopImmediatePropagation();if(canvas.hasPointerCapture?.(e.pointerId))canvas.releasePointerCapture(e.pointerId);}
   };
-  canvas.addEventListener('pointerup',endGesture,{capture:true,signal});canvas.addEventListener('pointercancel',endGesture,{capture:true,signal});
+  canvas.addEventListener('pointerup',endGesture,{capture:true,signal});canvas.addEventListener('pointercancel',endGesture,{capture:true,signal});canvas.addEventListener('lostpointercapture',endGesture,{capture:true,signal});
   function keepInView(n){
     const v=view(),anchor=interactionAnchor(n,TILE),px=anchor.x*v.scale+v.x,py=anchor.y*v.scale+v.y;
     const mx=Math.min(100,canvas.width/4),top=Math.min(150,canvas.height/3),bottom=canvas.height-100;
@@ -592,7 +598,7 @@ export async function mountPixelWorld(shell, options) {
     if (drag||objectHold) return;
     suppressClick=false;
     if(!options.allowed()||activeEvent||placing||removing||e.button!==0||window.innerHeight>=window.innerWidth)return;
-    const point=coordinates(e),index=hitPerson(point),object=hitPlacedObject(point);
+    const touch=e.pointerType==='touch',point=coordinates(e),index=hitPerson(point,touch),object=hitPlacedObject(point,touch);
     if(object&&(index<0||npcs.some(n=>n.usingObject===object&&heldObject(n,time,reduced))||object.y*TILE>interactionAnchor(npcs[index],TILE).y)){beginObjectHold(object,e,point);return;}
     if(index<0)return;
     select(index);const n=npcs[index];
@@ -650,7 +656,7 @@ export async function mountPixelWorld(shell, options) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
       objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브젝트를 놓았어요. 1초 꾹 누르면 위치를 옮길 수 있어요."); return;
     }
-    const hit=hitPerson(p);
+    const hit=hitPerson(p,e.pointerType==='touch');
     if (hit >= 0) {
       if (hit !== selected) {
         select(hit,true);
@@ -658,7 +664,8 @@ export async function mountPixelWorld(shell, options) {
       } else select(hit,true);
       return;
     }
-    const o=objects.find((o) => Math.abs(o.x-p.x)<1.1 && Math.abs(o.y-p.y)<1.1);
+    const tapTolerance=e.pointerType==='touch'?1.6:1.1;
+    const o=objects.find((o) => Math.abs(o.x-p.x)<tapTolerance && Math.abs(o.y-p.y)<tapTolerance);
     pendingEvent=null;
     const n=npcs[selected];
     if (o) {if(n)interact(n,o);return;}
@@ -887,6 +894,14 @@ export async function mountPixelWorld(shell, options) {
     canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));constrainCamera(camera,canvas.width,canvas.height);syncCamera();if(shownSpeech){speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}draw();
   };
   const resizeObserver=new ResizeObserver(fitCanvas);resizeObserver.observe(canvas);
+  const refreshCanvas=()=>{
+    if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:objectHold.client?.x??-1,clientY:objectHold.client?.y??-1},true);
+    if(drag)finishDrag({pointerId:drag.id,clientX:drag.client?.x??-1,clientY:drag.client?.y??-1},true);
+    pointers.clear();pinch=null;pan=null;gestureActive=false;suppressClick=false;fitCanvas();
+  };
+  window.addEventListener('resize',refreshCanvas,{signal});
+  window.addEventListener('orientationchange',refreshCanvas,{signal});
+  window.visualViewport?.addEventListener('resize',refreshCanvas,{signal});
   const canRun=()=>!disposed&&!document.hidden&&window.innerWidth>window.innerHeight&&options.allowed();
   function tick(stamp) {
     if(disposed)return;

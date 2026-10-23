@@ -32,7 +32,7 @@
 .pb-immersive .pb-world-head b { display: none; }
 .pb-load { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; }
 .pb-world-stage { position: absolute; inset: 0; background: #6f995f; }
-.pb-world-stage canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; touch-action: none; cursor: grab; }
+.pb-world-stage canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; cursor: grab; }
 .pb-world-stage canvas[data-dragging] { cursor: grabbing; }
 .pb-world-stage canvas:focus-visible { outline: 2px solid #e7bb59; outline-offset: -3px; }
 .pb-side-toggle { position: absolute; top: 54px; z-index: 12; padding: 7px 10px; background: #142d37ed; box-shadow: 0 2px 8px #0004; }
