@@ -18,8 +18,8 @@ export const OBJECT_SCENES=[
 export function removeObjects(objects,npcs,shouldRemove){
  const removed=objects.filter(shouldRemove);
  for(const n of npcs){
-  if(removed.includes(n.task)){n.task=null;n.objectScene=null;n.objectAction=null;n.action='';}
-  if(removed.includes(n.usingObject)){n.usingObject=null;n.objectScene=null;n.objectAction=null;n.action='';}
+  if(removed.includes(n.task)){n.task=null;n.objectScene=null;n.objectAction=null;n.interaction=null;n.action='';}
+  if(removed.includes(n.usingObject)){n.usingObject=null;n.objectScene=null;n.objectAction=null;n.interaction=null;n.action='';}
  }
  return {remaining:objects.filter(o=>!removed.includes(o)),removed};
 }

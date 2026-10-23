@@ -1,0 +1,6868 @@
+{
+  "schema": 1,
+  "scope": "80 reusable motion prototypes, four time phases; name-specific bindings for 100 appearance profiles on the ten base objects. Additional chapter objects inherit family routines. Motion variants are creative unless a scoped biblical action overrides them.",
+  "prototypes": {
+    "bench": [
+      [
+        "sit",
+        "바로 앉아 쉬기"
+      ],
+      [
+        "feet",
+        "앉아 발 흔들기"
+      ],
+      [
+        "rest",
+        "몸 기대 쉬기"
+      ],
+      [
+        "lap",
+        "무릎에 손 모으기"
+      ]
+    ],
+    "water": [
+      [
+        "scoop",
+        "물을 떠 올리기"
+      ],
+      [
+        "drink",
+        "잔을 들어 마시기"
+      ],
+      [
+        "pour",
+        "조심히 물 붓기"
+      ],
+      [
+        "wash",
+        "손 씻기"
+      ]
+    ],
+    "field": [
+      [
+        "gather",
+        "숙여 이삭 줍기"
+      ],
+      [
+        "bundle",
+        "이삭 묶기"
+      ],
+      [
+        "inspect",
+        "이삭 살피기"
+      ],
+      [
+        "harvest",
+        "팔 뻗어 거두기"
+      ]
+    ],
+    "tree": [
+      [
+        "shade",
+        "그늘에서 쉬기"
+      ],
+      [
+        "leaves",
+        "잎 살펴보기"
+      ],
+      [
+        "fruit",
+        "열매 살피기"
+      ],
+      [
+        "trunk",
+        "나무에 손 대기"
+      ]
+    ],
+    "well": [
+      [
+        "bucket",
+        "두레박 내리기"
+      ],
+      [
+        "rope",
+        "줄 끌어 올리기"
+      ],
+      [
+        "scoop",
+        "길어 온 물 받기"
+      ],
+      [
+        "pour",
+        "물동이 채우기"
+      ]
+    ],
+    "stone": [
+      [
+        "pick",
+        "무릎 굽혀 돌 고르기"
+      ],
+      [
+        "turn",
+        "돌 돌려 살피기"
+      ],
+      [
+        "stack",
+        "돌 쌓기"
+      ],
+      [
+        "place",
+        "돌 내려놓기"
+      ]
+    ],
+    "bush": [
+      [
+        "observe",
+        "몸 숙여 살펴보기"
+      ],
+      [
+        "kneel",
+        "무릎 꿇기"
+      ],
+      [
+        "hands",
+        "두 손 모으기"
+      ],
+      [
+        "lean",
+        "가까이 살펴보기"
+      ]
+    ],
+    "boat": [
+      [
+        "row",
+        "노 젓기"
+      ],
+      [
+        "balance",
+        "앉아 균형 잡기"
+      ],
+      [
+        "look",
+        "먼 곳 바라보기"
+      ],
+      [
+        "rope",
+        "밧줄 정리하기"
+      ]
+    ],
+    "scroll": [
+      [
+        "read",
+        "펼쳐 읽기"
+      ],
+      [
+        "unroll",
+        "두루마리 펼치기"
+      ],
+      [
+        "write",
+        "무릎 위에 적기"
+      ],
+      [
+        "point",
+        "글을 짚으며 읽기"
+      ]
+    ],
+    "oil": [
+      [
+        "pour",
+        "기름 따르기"
+      ],
+      [
+        "hold",
+        "병 받쳐 들기"
+      ],
+      [
+        "cap",
+        "마개 열고 닫기"
+      ],
+      [
+        "fill",
+        "그릇 채우기"
+      ]
+    ],
+    "instrument": [
+      [
+        "strum",
+        "줄 뜯기"
+      ],
+      [
+        "tap",
+        "박자 맞추기"
+      ],
+      [
+        "blow",
+        "악기 들어 불기"
+      ],
+      [
+        "play",
+        "두 손으로 연주하기"
+      ]
+    ],
+    "weapon": [
+      [
+        "hold",
+        "무기 살피기"
+      ],
+      [
+        "practice",
+        "천천히 자세 잡기"
+      ],
+      [
+        "polish",
+        "무기 닦기"
+      ],
+      [
+        "lower",
+        "무기 내려놓기"
+      ]
+    ],
+    "cloth": [
+      [
+        "fold",
+        "천 접기"
+      ],
+      [
+        "smooth",
+        "천 펴기"
+      ],
+      [
+        "hold",
+        "천 받쳐 들기"
+      ],
+      [
+        "wrap",
+        "천 정리하기"
+      ]
+    ],
+    "food": [
+      [
+        "share",
+        "먹을 것 나누기"
+      ],
+      [
+        "hold",
+        "양식 받아 들기"
+      ],
+      [
+        "prepare",
+        "양식 준비하기"
+      ],
+      [
+        "eat",
+        "한 입 먹기"
+      ]
+    ],
+    "animal": [
+      [
+        "watch",
+        "조용히 지켜보기"
+      ],
+      [
+        "care",
+        "곁에 낮게 앉기"
+      ],
+      [
+        "feed",
+        "먹이 살피기"
+      ],
+      [
+        "guide",
+        "천천히 손 내밀기"
+      ]
+    ],
+    "building": [
+      [
+        "look",
+        "입구 바라보기"
+      ],
+      [
+        "inspect",
+        "벽 살피기"
+      ],
+      [
+        "rest",
+        "곁에서 쉬기"
+      ],
+      [
+        "point",
+        "먼 곳 짚어보기"
+      ]
+    ],
+    "altar": [
+      [
+        "kneel",
+        "곁에서 무릎 굽히기"
+      ],
+      [
+        "arrange",
+        "주변 정리하기"
+      ],
+      [
+        "observe",
+        "두 손 모아 서기"
+      ],
+      [
+        "bow",
+        "고개 숙이기"
+      ]
+    ],
+    "treasure": [
+      [
+        "count",
+        "차례로 세기"
+      ],
+      [
+        "inspect",
+        "빛에 비추어 살피기"
+      ],
+      [
+        "hold",
+        "두 손으로 받치기"
+      ],
+      [
+        "place",
+        "조심히 내려놓기"
+      ]
+    ],
+    "net": [
+      [
+        "spread",
+        "그물 펴기"
+      ],
+      [
+        "mend",
+        "그물 손질하기"
+      ],
+      [
+        "fold",
+        "그물 접기"
+      ],
+      [
+        "cast",
+        "그물 뻗기"
+      ]
+    ],
+    "tool": [
+      [
+        "inspect",
+        "도구 살피기"
+      ],
+      [
+        "use",
+        "천천히 작업하기"
+      ],
+      [
+        "wipe",
+        "도구 닦기"
+      ],
+      [
+        "place",
+        "도구 내려놓기"
+      ]
+    ]
+  },
+  "characters": {
+    "사울": {
+      "name": "사울",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "요나단": {
+      "name": "요나단",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "요압": {
+      "name": "요압",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "압살롬": {
+      "name": "압살롬",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:fruit",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "well": {
+          "routine": "well:scoop",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    },
+    "히스기야": {
+      "name": "히스기야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "요시야": {
+      "name": "요시야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "시드기야": {
+      "name": "시드기야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "느부갓네살": {
+      "name": "느부갓네살",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "고레스": {
+      "name": "고레스",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "다리오": {
+      "name": "다리오",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "벨사살": {
+      "name": "벨사살",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "하만": {
+      "name": "하만",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "바로": {
+      "name": "바로",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "엘르아살": {
+      "name": "엘르아살",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "비느하스": {
+      "name": "비느하스",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "사독": {
+      "name": "사독",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "아비아달": {
+      "name": "아비아달",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "엘리": {
+      "name": "엘리",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "나단": {
+      "name": "나단",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "갓": {
+      "name": "갓",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:point",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "아히야": {
+      "name": "아히야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "훌다": {
+      "name": "훌다",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "요나": {
+      "name": "요나",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "호세아": {
+      "name": "호세아",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "아모스": {
+      "name": "아모스",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "미가": {
+      "name": "미가",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "하박국": {
+      "name": "하박국",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "학개": {
+      "name": "학개",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:wash",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "field": {
+          "routine": "field:inspect",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "tree": {
+          "routine": "tree:fruit",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "well": {
+          "routine": "well:scoop",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "stone": {
+          "routine": "stone:turn",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    },
+    "스가랴": {
+      "name": "스가랴",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "말라기": {
+      "name": "말라기",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "아담": {
+      "name": "아담",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "하와": {
+      "name": "하와",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "아벨": {
+      "name": "아벨",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "가인": {
+      "name": "가인",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "롯": {
+      "name": "롯",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:point",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "라헬": {
+      "name": "라헬",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "레아": {
+      "name": "레아",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "라합": {
+      "name": "라합",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "갈렙": {
+      "name": "갈렙",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "보디발": {
+      "name": "보디발",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "빌립": {
+      "name": "빌립",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "스데반": {
+      "name": "스데반",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "실라": {
+      "name": "실라",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "디도": {
+      "name": "디도",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "누가": {
+      "name": "누가",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "마가": {
+      "name": "마가",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "아굴라": {
+      "name": "아굴라",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "브리스길라": {
+      "name": "브리스길라",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "오네시모": {
+      "name": "오네시모",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "빌레몬": {
+      "name": "빌레몬",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "예수님": {
+      "name": "예수님",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "모세": {
+      "name": "모세",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "엘리야": {
+      "name": "엘리야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "엘리사": {
+      "name": "엘리사",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "이세벨": {
+      "name": "이세벨",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "아합": {
+      "name": "아합",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "여호사밧": {
+      "name": "여호사밧",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    },
+    "벤하닷": {
+      "name": "벤하닷",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "나봇": {
+      "name": "나봇",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:wash",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "field": {
+          "routine": "field:inspect",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "tree": {
+          "routine": "tree:fruit",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "well": {
+          "routine": "well:scoop",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "stone": {
+          "routine": "stone:turn",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    },
+    "미가야": {
+      "name": "미가야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "아하시야": {
+      "name": "아하시야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "천사": {
+      "name": "천사",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "룻": {
+      "name": "룻",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:point",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "보아스": {
+      "name": "보아스",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "나오미": {
+      "name": "나오미",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "세례 요한": {
+      "name": "세례 요한",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "요셉": {
+      "name": "요셉",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "다윗": {
+      "name": "다윗",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:wash",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "field": {
+          "routine": "field:inspect",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "tree": {
+          "routine": "tree:fruit",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "well": {
+          "routine": "well:scoop",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "stone": {
+          "routine": "stone:turn",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    },
+    "베드로": {
+      "name": "베드로",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "일꾼": {
+      "name": "일꾼",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "아론": {
+      "name": "아론",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "미리암": {
+      "name": "미리암",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "여호수아": {
+      "name": "여호수아",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "사무엘": {
+      "name": "사무엘",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "솔로몬": {
+      "name": "솔로몬",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "에스더": {
+      "name": "에스더",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "모르드개": {
+      "name": "모르드개",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "다니엘": {
+      "name": "다니엘",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "에스겔": {
+      "name": "에스겔",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "예레미야": {
+      "name": "예레미야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "이사야": {
+      "name": "이사야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "에스라": {
+      "name": "에스라",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "느헤미야": {
+      "name": "느헤미야",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "바울": {
+      "name": "바울",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "바나바": {
+      "name": "바나바",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "디모데": {
+      "name": "디모데",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "루디아": {
+      "name": "루디아",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "다비다": {
+      "name": "다비다",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "노아": {
+      "name": "노아",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "아브라함": {
+      "name": "아브라함",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "사라": {
+      "name": "사라",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "이삭": {
+      "name": "이삭",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "리브가": {
+      "name": "리브가",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "야곱": {
+      "name": "야곱",
+      "objects": {
+        "bench": {
+          "routine": "bench:rest",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "water": {
+          "routine": "water:drink",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:shade",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "well": {
+          "routine": "well:bucket",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "stone": {
+          "routine": "stone:place",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "bush": {
+          "routine": "bush:hands",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "boat": {
+          "routine": "boat:look",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:pour",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        }
+      }
+    },
+    "에서": {
+      "name": "에서",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "삼손": {
+      "name": "삼손",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "한나": {
+      "name": "한나",
+      "objects": {
+        "bench": {
+          "routine": "bench:feet",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:harvest",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "tree": {
+          "routine": "tree:leaves",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "well": {
+          "routine": "well:rope",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "stone": {
+          "routine": "stone:stack",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "bush": {
+          "routine": "bush:lean",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "boat": {
+          "routine": "boat:rope",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:fill",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        }
+      }
+    },
+    "드보라": {
+      "name": "드보라",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 0,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "기드온": {
+      "name": "기드온",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:scoop",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "field": {
+          "routine": "field:gather",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "tree": {
+          "routine": "tree:trunk",
+          "variant": 2,
+          "period": 3,
+          "phase": 0.75
+        },
+        "well": {
+          "routine": "well:pour",
+          "variant": 0,
+          "period": 3,
+          "phase": 0.75
+        },
+        "stone": {
+          "routine": "stone:pick",
+          "variant": 1,
+          "period": 2.4,
+          "phase": 0
+        },
+        "bush": {
+          "routine": "bush:kneel",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "boat": {
+          "routine": "boat:balance",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "scroll": {
+          "routine": "scroll:read",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "oil": {
+          "routine": "oil:hold",
+          "variant": 2,
+          "period": 2.6,
+          "phase": 0.25
+        }
+      }
+    },
+    "욥": {
+      "name": "욥",
+      "objects": {
+        "bench": {
+          "routine": "bench:sit",
+          "variant": 2,
+          "period": 2.4,
+          "phase": 0
+        },
+        "water": {
+          "routine": "water:wash",
+          "variant": 1,
+          "period": 3,
+          "phase": 0.75
+        },
+        "field": {
+          "routine": "field:inspect",
+          "variant": 0,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "tree": {
+          "routine": "tree:fruit",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "well": {
+          "routine": "well:scoop",
+          "variant": 2,
+          "period": 2.8,
+          "phase": 0.5
+        },
+        "stone": {
+          "routine": "stone:turn",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "bush": {
+          "routine": "bush:observe",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "boat": {
+          "routine": "boat:row",
+          "variant": 0,
+          "period": 2.4,
+          "phase": 0
+        },
+        "scroll": {
+          "routine": "scroll:unroll",
+          "variant": 1,
+          "period": 2.6,
+          "phase": 0.25
+        },
+        "oil": {
+          "routine": "oil:cap",
+          "variant": 1,
+          "period": 2.8,
+          "phase": 0.5
+        }
+      }
+    }
+  }
+}

@@ -294,3 +294,28 @@ test('성경 물건 조합은 실제 해당 장의 등장인물과 매칭되고 
   assert.ok(!buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter+1,data:{people:[]}}]).scenes.some(s=>s.id===scene.id));
  }
 });
+
+test('오브제 색인은 장·구절 범위를 보존하고 돌아가다/불순종을 돌/불로 잘못 찾지 않는다',async()=>{
+ const {chapterObjects,OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ assert.ok(Object.keys(OBJECT_CATALOG).length>=150);
+ const items=chapterObjects({code:'gen',name:'창세기',chap:1,data:{people:[{name:'야곱'}],events:[{title:'돌',verses:'3-5',text:'야곱이 돌을 세우고 기름을 부어요.'}],story:'집으로 돌아와 불순종을 뉘우쳤어요.'}});
+ assert.ok(items.find(i=>i.id==='stone').refs.includes('창세기 1:3-5'));
+ assert.deepEqual(items.find(i=>i.id==='stone').actors,['야곱']);
+ const empty=chapterObjects({code:'gen',name:'창세기',chap:1,data:{story:'그는 돌아가며 불순종을 뉘우치고 말을 전했어요.'}});
+ assert.ok(!empty.some(i=>['stone','fire','horse'].includes(i.id)));
+});
+
+test('전 오브제에 단계별 모션이 있고 의자·물·밭은 서로 다른 자세를 사용한다',async()=>{
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ const {interactionRoutine,interactionPose,INTERACTION_MOTION_COUNT}=await import('../js/features/pixel-bible/interaction-motion.js');
+ assert.equal(INTERACTION_MOTION_COUNT,80);
+ const n={name:'룻'};
+ for(const key of Object.keys(OBJECT_CATALOG)){
+  const routine=interactionRoutine(n,key);assert.ok(routine.id&&routine.label);
+  const phases=[0,.25,.5,.75].map(t=>interactionPose({...routine,phase:0},t*routine.period));assert.equal(new Set(phases.map(p=>p.phase)).size,4);
+ }
+ assert.equal(interactionPose(interactionRoutine(n,'bench'),1).sit,true);
+ const sip=interactionRoutine({name:'룻'},'water');assert.notEqual(sip.category,interactionRoutine(n,'field').category);
+ assert.equal(interactionRoutine(n,'trumpet').gesture,'blow');assert.equal(interactionRoutine(n,'lyre').gesture,'strum');
+ assert.equal(interactionRoutine({name:'바룩',objectAction:'baruch-scroll'},'scroll').gesture,'write');
+});

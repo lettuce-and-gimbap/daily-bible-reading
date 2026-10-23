@@ -1,3 +1,5 @@
+import { drawCatalogDetail } from './catalog-art.js';
+import { OBJECT_CATALOG } from './object-catalog.js';
 import { drawDirectionalCharacter } from './directions.js';
 import { backgroundFor } from './backgrounds.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
@@ -11,12 +13,15 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const direction=hanging?'down':(options.direction||'down');
  const frame=options.walkFrame??(walk>.35?1:walk<-.35?3:0);
  const step=[0,1,0,-1][frame%4];
- const key=JSON.stringify([style,direction,frame,action]);let sprite=spriteCache.get(key);
+ const pose=options.interaction||null;
+ const renderAction=OBJECT_CATALOG[action]?.action||action;
+ const activeStyle=pose?{...style,staff:false,scroll:false,grain:false,grapes:false,net:false,lyre:false,tambourine:false}:style;
+ const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
-  if(direction==='down')drawFrontCharacter(c,style,32,52,{scale:1,walk:step,action,facing:1});
-  else drawDirectionalCharacter(c,style,32,52,{scale:1,step,action,direction});
+  if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose});
+  else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }
  ctx.save();ctx.imageSmoothingEnabled=false;
@@ -44,18 +49,21 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  }
  ctx.drawImage(sprite.canvas,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.restore();
 }
-function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false } = {}) {
+function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false, pose=null } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
   ctx.save();ctx.translate(Math.round(x-12*scale),Math.round(y-36*scale));ctx.scale(scale,scale);
   if(hanging){ctx.translate(12,1);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-12,-1);}
-  const r=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h);};
+  const r=(x,y,w,h,color)=>{ctx.fillStyle=color;const upper=pose&&y<31;ctx.fillRect(x+(upper?pose.bodyX:0),y+(upper?pose.bodyY:0),w,h);};
   const outline="#302f35", skin="#f2d5af", blush="#eb9da2", hair=style.hood?style.coat:style.hair;
   const resting = action === "bench";
   const step=Math.sign(walk), look=facing<0?-1:0;
   r(5,37,14,1,"#183a3933");
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
   const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,"#a77d57");};
-  leg(7,step);leg(14,-step);
+  if(pose?.sit){
+    r(7,31,11,3,outline);r(8,31,9,1,style.coat);r(8,33,3,3,outline);r(15,33+pose.legSwing,3,3,outline);r(8,35,5,2,outline);r(15,35+pose.legSwing,5,2,outline);
+  }else if(pose?.bend){r(6,32,5,3,outline);r(14,32,5,3,outline);r(5,35,6,2,outline);r(14,35,6,2,outline);}
+  else{leg(7,step);leg(14,-step);}
   if(style.mantle||style.royal||style.shawl){r(7,19,10,2,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
   // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
   r(9,19,6,1,outline);r(7,20,10,1,outline);r(6,21,12,3,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
@@ -66,7 +74,11 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   // 옷깃 중앙의 한 줄 피부만 남겨 얼굴과 옷의 경계를 표현한다.
   r(10,20,4,1,skin);r(10,21,1,1,"#f4e7c5");r(13,21,1,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
-  arm(4,hanging?2:-step);arm(17,hanging?2:step);
+  if(pose?.hand){
+    const dy=pose.handY-24;
+    r(4,21,4,4,outline);r(5,22,2,2,style.coat);r(5,24+dy,5,3,outline);r(7,24+dy,3,2,skin);
+    r(17,21,4,4,outline);r(18,22,2,2,style.coat);r(14,24+dy,6,3,outline);r(14,24+dy,3,2,skin);
+  }else{arm(4,hanging?2:-step);arm(17,hanging?2:step);}
   if(style.apron){r(9,24,6,7,'#e9d4aa');r(8,24,8,1,'#705642');}
   if(style.vest){r(7,20,3,5,'#69583f');r(14,20,3,5,'#69583f');}
   if(style.sash){r(14,21,2,11,style.sash);r(13,23,1,3,style.sash);}
@@ -116,23 +128,38 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(style.net){for(let i=0;i<3;i++){r(18+i*2,25,1,9,'#b9b49c');r(18,26+i*3,6,1,'#b9b49c');}}
   if(style.lyre){r(18,25,1,8,'#c09b61');r(23,25,1,8,'#c09b61');r(18,32,6,2,'#c09b61');r(19,25,4,1,'#c09b61');r(20,26,1,5,'#e1d3a3');r(22,26,1,5,'#e1d3a3');}
   if(style.glow){r(-1,6,2,2,'#f8dc85');r(25,3,2,2,'#f8dc85');r(0,26,1,3,'#f8dc85');r(26,25,1,3,'#f8dc85');}
-  if(action==="field"){r(20,22,1,9,"#b78a5a");r(19,21,3,3,"#f5d371");r(18,23,2,2,"#e1b95f");}
-  if(action==="water"){r(19,20,3,5,outline);r(19,20,3,1,"#87bfd1");r(19,21,2,3,"#bf8767");}
+  if(!pose&&action==="field"){r(20,22,1,9,"#b78a5a");r(19,21,3,3,"#f5d371");r(18,23,2,2,"#e1b95f");}
+  if(!pose&&action==="water"){r(19,20,3,5,outline);r(19,20,3,1,"#87bfd1");r(19,21,2,3,"#bf8767");}
   if(style.chariot && action==="ascend") {
     r(-3,21,26,2,"#e4ab4c");r(-3,18,2,5,outline);r(21,18,2,5,outline);r(1,23,5,5,outline);r(14,23,5,5,outline);r(2,24,3,3,"#d9a64c");r(15,24,3,3,"#d9a64c");
     for(let i=0;i<3;i++){r(-5-i,19+(i%2),2,4,"#ef9b46");r(-6-i,21,2,2,"#ffe19a");}
   }
-  if(action==='well'||action==='oil'){r(19,20,3,5,outline);r(19,21,2,3,action==='oil'?'#dbc365':'#84bdce');}
-  if(action==='scroll'){r(6,21,13,8,outline);r(7,22,11,6,'#eee0b2');r(9,23,7,1,'#94805a');r(9,25,6,1,'#94805a');}
-  if(action==='stone'){r(19,23,4,4,outline);r(20,23,2,3,'#a5aaa2');}
-  if(action==='bush'){r(1,24,3,2,skin);r(20,24,3,2,skin);}
+  if(!pose&&(action==='well'||action==='oil')){r(19,20,3,5,outline);r(19,21,2,3,action==='oil'?'#dbc365':'#84bdce');}
+  if(!pose&&action==='scroll'){r(6,21,13,8,outline);r(7,22,11,6,'#eee0b2');r(9,23,7,1,'#94805a');r(9,25,6,1,'#94805a');}
+  if(!pose&&action==='stone'){r(19,23,4,4,outline);r(20,23,2,3,'#a5aaa2');}
+  if(!pose&&action==='bush'){r(1,24,3,2,skin);r(20,24,3,2,skin);}
+  if(pose?.hand){
+    if(['water','well','oil'].includes(pose.prop)){const yy=pose.handY-1;r(15,yy,4,5,outline);r(16,yy+1,2,3,pose.prop==='oil'?'#d9bd58':'#8abbd0');}
+    if(pose.prop==='field'){r(12,pose.bend?29:24,1,8,'#987c48');r(10,pose.bend?29:24,5,3,'#e5c574');}
+    if(pose.prop==='scroll'){const width=pose.gesture==='unroll'?(pose.phase===1?8:14):12;r(7,23,width,7,outline);r(8,24,width-2,5,'#eee0b2');r(10,25,width-6,1,'#94805a');if(pose.gesture==='write')r(16,21+pose.phase,1,6,'#70563e');}
+    if(pose.prop==='stone'){r(14,27,5,4,outline);r(15,27,3,3,'#a5aaa2');}
+    if(pose.prop==='boat'){r(15,22,2,12,'#a17c50');r(14,32,4,4,'#b99263');}
+    if(pose.prop==='instrument'){r(8,24,9,7,outline);r(9,25,7,5,'#c1a36b');r(12,24,1,7,'#eee0b2');}
+  }
+  if(pose?.hand&&pose.gesture==='pour'&&pose.phase===2){r(19,28,1,2,'#8abbd0');r(20,31,1,2,'#8abbd0');}
+  if(pose?.hand&&['bucket','rope'].includes(pose.gesture)){r(18,21,1,12,'#b9945d');r(16,31,5,4,'#9c774a');}
   ctx.restore();
 }
 export function drawWorldObject(c,o,tile=24) {
+  const descriptor=OBJECT_CATALOG[o.kind];
+  const family=descriptor?.family;
+  const originalKind=o.kind;
+  if(descriptor&&!['field','water','bench','tree','well','stone','bush','boat','scroll','oil'].includes(o.kind))o={...o,kind:['plant','crop'].includes(family)?(family==='crop'?'field':'tree'):['vessel'].includes(family)?descriptor.action:['book'].includes(family)?'scroll':family==='boat'?'boat':family==='stone'?'stone':family==='seat'?'bench':'catalog'};
   const x=o.x*tile,y=o.y*tile;
   c.save();c.translate(Math.round(x),Math.round(y));c.scale(3,3);
   const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};const O="#393e3c";
   r(-7,4,15,2,"#193b3533");
+  if(descriptor&&drawCatalogDetail(r,originalKind,family,O)){c.restore();return;}
   if(o.kind==="field") {
     r(-12,-3,25,10,O);r(-11,-2,23,8,"#a68258");
     for(let i=0;i<5;i++){const p=-9+i*5;r(p,-9,1,12,"#795e40");r(p-1,-10,3,6,"#e4b95f");r(p-2,-9,1,3,"#f7dc8d");r(p+2,-7,1,3,"#f7dc8d");}
@@ -142,7 +169,12 @@ export function drawWorldObject(c,o,tile=24) {
   } else if(o.kind==="bench") {
     r(-9,-4,18,5,O);r(-8,-3,16,3,"#d1ad78");r(-7,1,2,5,O);r(5,1,2,5,O);r(-8,-10,2,6,O);r(6,-10,2,6,O);r(-7,-10,14,3,O);r(-6,-9,12,1,"#d1ad78");
   } else if(o.kind==="water") {
-    r(-3,-11,6,2,O);r(-4,-9,8,2,O);r(-5,-7,10,10,O);r(-3,3,6,1,O);r(-3,-8,6,1,"#729fb5");r(-4,-6,8,8,"#be886b");r(-3,-5,2,5,"#e5af86");r(-2,-10,4,1,"#84bdce");
+    if(['cup','bowl','basin','pot','laver'].includes(originalKind)){
+      const wide=['basin','laver','pot'].includes(originalKind)?9:6;
+      r(-wide,-6,wide*2,8,O);r(-wide+1,-5,wide*2-2,6,'#be886b');r(-wide,-7,wide*2,2,'#84bdce');
+      if(originalKind==='cup'){r(6,-5,3,5,O);r(6,-4,2,3,'#be886b');}
+      if(originalKind==='pot'){r(-11,-4,3,3,O);r(8,-4,3,3,O);}
+    }else{r(-3,-11,6,2,O);r(-4,-9,8,2,O);r(-5,-7,10,10,O);r(-3,3,6,1,O);r(-3,-8,6,1,"#729fb5");r(-4,-6,8,8,"#be886b");r(-3,-5,2,5,"#e5af86");r(-2,-10,4,1,"#84bdce");}
   }  if(o.kind==='well'){
     r(-10,-4,20,10,O);r(-9,-3,18,8,'#a9a28a');r(-7,-2,14,4,'#467f8e');r(-11,-6,22,3,'#c5bba0');
     r(-8,-19,2,14,'#78583e');r(6,-19,2,14,'#78583e');r(-10,-20,20,3,'#a58154');r(0,-17,1,13,'#d8c08b');r(-2,-8,5,5,'#805e46');
@@ -161,6 +193,24 @@ export function drawWorldObject(c,o,tile=24) {
     r(-2,-13,4,4,O);r(-4,-9,8,4,O);r(-5,-5,10,10,O);r(-3,-8,6,4,'#ccab51');r(-4,-4,8,8,'#b89145');r(-3,-3,2,5,'#e6cb72');r(-2,-13,4,1,'#e9cf81');
   }
 
+  if(o.kind==='catalog'){
+    const seed=[...originalKind].reduce((n,c)=>n+c.charCodeAt(0),0),color=['#ad8e65','#8d9e9a','#c4a76a','#a98b86'][seed%4];
+    if(['building','tent'].includes(family)){r(-10,-20,20,24,O);r(-9,-19,18,22,color);r(-12,-24,24,5,'#987c55');r(-3,-9,6,13,O);}
+    else if(family==='weapon'||family==='staff'||family==='cross'){r(-1,-27,2,31,O);r(0,-26,1,29,'#d6cbae');r(-6,-9,13,2,'#b28f4b');if(family==='cross')r(-9,-20,19,3,color);}
+    else if(family==='animal'){
+      if(originalKind==='fish'){r(-9,-8,17,8,O);r(-8,-7,15,6,'#7ea8ad');r(7,-6,5,5,'#7ea8ad');r(-6,-6,1,1,O);r(-2,-10,5,2,'#517c8d');}
+      else if(['dove','raven','quail'].includes(originalKind)){const bird=originalKind==='dove'?'#eee4cb':originalKind==='raven'?'#49515b':color;r(-7,-10,14,11,O);r(-6,-9,12,9,bird);r(4,-15,7,8,bird);r(9,-12,4,2,'#c9a568');r(7,-13,1,1,O);r(-4,1,2,4,'#c9a568');r(3,1,2,4,'#c9a568');}
+      else if(originalKind==='snake'){r(-10,1,17,3,'#718b61');r(-8,-2,3,6,'#718b61');r(3,-5,4,8,'#718b61');r(4,-7,7,4,'#718b61');r(9,-6,1,1,O);}
+      else{r(-9,-11,18,12,O);r(-8,-10,16,10,color);r(6,-15,7,8,color);r(11,-13,1,1,O);r(-7,1,2,5,O);r(5,1,2,5,O);}
+    }
+    else if(family==='cloth'||family==='wear'){r(-8,-18,16,23,O);r(-7,-17,14,21,color);r(-7,-13,14,2,'#e2d6b4');r(-5,-17,2,21,'#ffffff33');}
+    else if(family==='lamp'||family==='altar'){r(-9,-5,18,10,O);r(-8,-4,16,8,color);r(-4,-13,8,9,'#d89b47');r(-2,-19,5,11,'#f7d576');}
+    else if(family==='instrument'){r(-7,-16,14,21,O);r(-6,-15,12,19,color);for(let i=0;i<4;i++)r(-4+i*3,-13,1,16,'#eee0b2');}
+    else if(family==='net'){for(let i=-9;i<=9;i+=3){r(i,-16,1,21,color);r(-9,i-6,19,1,color);}}
+    else if(family==='cart'){r(-11,-10,22,10,O);r(-10,-9,20,8,color);r(-9,1,5,5,O);r(5,1,5,5,O);}
+    else if(family==='symbol'){r(-7,-16,14,14,color);r(-3,-20,6,22,'#e9ce7b');r(-11,-12,22,6,'#e9ce7b');}
+    else{r(-8,-8,16,12,O);r(-7,-7,14,10,color);r(-8,-9,16,2,'#d9caa1');if(family==='food'){r(-5,-12,10,4,'#d8b879');r(-3,-13,6,2,'#f0d3a1');}if(family==='treasure'){r(-3,-12,6,6,'#e7c65e');}}
+  }
   c.restore();
 }
 

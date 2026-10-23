@@ -1,0 +1,1475 @@
+{
+  "schema": 1,
+  "scope": "Candidates extracted from existing public chapter/event summaries. Verse ranges are summary scopes, not verified exact verse mentions. Not an exhaustive inventory of the biblical text. Private commentary is excluded.",
+  "stats": {
+    "books": 66,
+    "chapters": 1189,
+    "definitions": 156,
+    "matchedDefinitions": 151,
+    "chaptersWithObjects": 1129,
+    "occurrences": 6022
+  },
+  "definitions": {
+    "field": {
+      "id": "field",
+      "name": "보리밭",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "보리밭",
+        "이삭"
+      ]
+    },
+    "water": {
+      "id": "water",
+      "name": "물항아리",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "물항아리",
+        "물동이"
+      ]
+    },
+    "bench": {
+      "id": "bench",
+      "name": "쉬는 자리",
+      "family": "seat",
+      "action": "bench",
+      "aliases": [
+        "의자"
+      ]
+    },
+    "tree": {
+      "id": "tree",
+      "name": "나무",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "나무"
+      ]
+    },
+    "well": {
+      "id": "well",
+      "name": "우물",
+      "family": "well",
+      "action": "well",
+      "aliases": [
+        "우물"
+      ]
+    },
+    "stone": {
+      "id": "stone",
+      "name": "돌",
+      "family": "stone",
+      "action": "stone",
+      "aliases": [
+        "돌",
+        "돌멩이"
+      ]
+    },
+    "bush": {
+      "id": "bush",
+      "name": "떨기나무",
+      "family": "plant",
+      "action": "bush",
+      "aliases": [
+        "떨기나무"
+      ]
+    },
+    "boat": {
+      "id": "boat",
+      "name": "배",
+      "family": "boat",
+      "action": "boat",
+      "aliases": [
+        "배",
+        "작은 배"
+      ]
+    },
+    "scroll": {
+      "id": "scroll",
+      "name": "두루마리",
+      "family": "book",
+      "action": "scroll",
+      "aliases": [
+        "두루마리"
+      ]
+    },
+    "oil": {
+      "id": "oil",
+      "name": "기름병",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "기름병"
+      ]
+    },
+    "ark-noah": {
+      "id": "ark-noah",
+      "name": "노아의 방주",
+      "family": "boat",
+      "action": "boat",
+      "aliases": [
+        "방주"
+      ]
+    },
+    "ark-covenant": {
+      "id": "ark-covenant",
+      "name": "언약궤",
+      "family": "chest",
+      "action": "scroll",
+      "aliases": [
+        "언약궤",
+        "법궤",
+        "증거궤"
+      ]
+    },
+    "altar": {
+      "id": "altar",
+      "name": "제단",
+      "family": "altar",
+      "action": "bush",
+      "aliases": [
+        "제단",
+        "번제단"
+      ]
+    },
+    "incense-altar": {
+      "id": "incense-altar",
+      "name": "분향단",
+      "family": "altar",
+      "action": "oil",
+      "aliases": [
+        "분향단"
+      ]
+    },
+    "tabernacle": {
+      "id": "tabernacle",
+      "name": "성막",
+      "family": "tent",
+      "action": "scroll",
+      "aliases": [
+        "성막"
+      ]
+    },
+    "tent": {
+      "id": "tent",
+      "name": "장막",
+      "family": "tent",
+      "action": "bench",
+      "aliases": [
+        "장막",
+        "천막"
+      ]
+    },
+    "temple": {
+      "id": "temple",
+      "name": "성전",
+      "family": "building",
+      "action": "scroll",
+      "aliases": [
+        "성전"
+      ]
+    },
+    "gate": {
+      "id": "gate",
+      "name": "성문",
+      "family": "building",
+      "action": "stone",
+      "aliases": [
+        "성문"
+      ]
+    },
+    "wall": {
+      "id": "wall",
+      "name": "성벽",
+      "family": "building",
+      "action": "stone",
+      "aliases": [
+        "성벽"
+      ]
+    },
+    "tower": {
+      "id": "tower",
+      "name": "망대",
+      "family": "building",
+      "action": "stone",
+      "aliases": [
+        "망대"
+      ]
+    },
+    "house": {
+      "id": "house",
+      "name": "집",
+      "family": "building",
+      "action": "bench",
+      "aliases": [
+        "집"
+      ]
+    },
+    "palace": {
+      "id": "palace",
+      "name": "왕궁",
+      "family": "building",
+      "action": "bench",
+      "aliases": [
+        "왕궁"
+      ]
+    },
+    "stable": {
+      "id": "stable",
+      "name": "구유",
+      "family": "chest",
+      "action": "bench",
+      "aliases": [
+        "구유"
+      ]
+    },
+    "tomb": {
+      "id": "tomb",
+      "name": "무덤",
+      "family": "stone",
+      "action": "stone",
+      "aliases": [
+        "무덤",
+        "돌무덤"
+      ]
+    },
+    "staff": {
+      "id": "staff",
+      "name": "지팡이",
+      "family": "staff",
+      "action": "stone",
+      "aliases": [
+        "지팡이"
+      ]
+    },
+    "rod": {
+      "id": "rod",
+      "name": "막대기",
+      "family": "staff",
+      "action": "stone",
+      "aliases": [
+        "막대기"
+      ]
+    },
+    "sling": {
+      "id": "sling",
+      "name": "물매",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "물매"
+      ]
+    },
+    "sword": {
+      "id": "sword",
+      "name": "칼",
+      "family": "weapon",
+      "action": "stone",
+      "aliases": [
+        "칼",
+        "검"
+      ]
+    },
+    "spear": {
+      "id": "spear",
+      "name": "창",
+      "family": "weapon",
+      "action": "stone",
+      "aliases": [
+        "창"
+      ]
+    },
+    "javelin": {
+      "id": "javelin",
+      "name": "단창",
+      "family": "weapon",
+      "action": "stone",
+      "aliases": [
+        "단창"
+      ]
+    },
+    "bow": {
+      "id": "bow",
+      "name": "활",
+      "family": "weapon",
+      "action": "stone",
+      "aliases": [
+        "활"
+      ]
+    },
+    "arrow": {
+      "id": "arrow",
+      "name": "화살",
+      "family": "weapon",
+      "action": "stone",
+      "aliases": [
+        "화살"
+      ]
+    },
+    "shield": {
+      "id": "shield",
+      "name": "방패",
+      "family": "shield",
+      "action": "stone",
+      "aliases": [
+        "방패"
+      ]
+    },
+    "helmet": {
+      "id": "helmet",
+      "name": "투구",
+      "family": "wear",
+      "action": "stone",
+      "aliases": [
+        "투구"
+      ]
+    },
+    "armor": {
+      "id": "armor",
+      "name": "갑옷",
+      "family": "wear",
+      "action": "stone",
+      "aliases": [
+        "갑옷"
+      ]
+    },
+    "chariot": {
+      "id": "chariot",
+      "name": "병거",
+      "family": "cart",
+      "action": "boat",
+      "aliases": [
+        "병거",
+        "전차"
+      ]
+    },
+    "wheel": {
+      "id": "wheel",
+      "name": "바퀴",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "바퀴"
+      ]
+    },
+    "chain": {
+      "id": "chain",
+      "name": "쇠사슬",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "쇠사슬",
+        "사슬"
+      ]
+    },
+    "fetter": {
+      "id": "fetter",
+      "name": "차꼬",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "차꼬"
+      ]
+    },
+    "rope": {
+      "id": "rope",
+      "name": "밧줄",
+      "family": "tool",
+      "action": "well",
+      "aliases": [
+        "밧줄",
+        "줄"
+      ]
+    },
+    "anchor": {
+      "id": "anchor",
+      "name": "닻",
+      "family": "tool",
+      "action": "boat",
+      "aliases": [
+        "닻"
+      ]
+    },
+    "sail": {
+      "id": "sail",
+      "name": "돛",
+      "family": "cloth",
+      "action": "boat",
+      "aliases": [
+        "돛"
+      ]
+    },
+    "oar": {
+      "id": "oar",
+      "name": "노",
+      "family": "staff",
+      "action": "boat",
+      "aliases": [
+        "노"
+      ]
+    },
+    "net": {
+      "id": "net",
+      "name": "그물",
+      "family": "net",
+      "action": "water",
+      "aliases": [
+        "그물"
+      ]
+    },
+    "hook": {
+      "id": "hook",
+      "name": "낚시",
+      "family": "tool",
+      "action": "water",
+      "aliases": [
+        "낚시",
+        "낚싯바늘"
+      ]
+    },
+    "basket": {
+      "id": "basket",
+      "name": "바구니",
+      "family": "basket",
+      "action": "field",
+      "aliases": [
+        "바구니",
+        "광주리",
+        "소쿠리"
+      ]
+    },
+    "jar": {
+      "id": "jar",
+      "name": "항아리",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "항아리"
+      ]
+    },
+    "pot": {
+      "id": "pot",
+      "name": "솥",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "솥",
+        "가마솥"
+      ]
+    },
+    "bowl": {
+      "id": "bowl",
+      "name": "대접",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "대접",
+        "그릇"
+      ]
+    },
+    "cup": {
+      "id": "cup",
+      "name": "잔",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "잔",
+        "술잔"
+      ]
+    },
+    "pitcher": {
+      "id": "pitcher",
+      "name": "주전자",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "주전자"
+      ]
+    },
+    "basin": {
+      "id": "basin",
+      "name": "대야",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "대야",
+        "물두멍"
+      ]
+    },
+    "lamp": {
+      "id": "lamp",
+      "name": "등잔",
+      "family": "lamp",
+      "action": "oil",
+      "aliases": [
+        "등잔",
+        "등불"
+      ]
+    },
+    "lampstand": {
+      "id": "lampstand",
+      "name": "등잔대",
+      "family": "lamp",
+      "action": "oil",
+      "aliases": [
+        "등잔대",
+        "촛대"
+      ]
+    },
+    "torch": {
+      "id": "torch",
+      "name": "횃불",
+      "family": "lamp",
+      "action": "bush",
+      "aliases": [
+        "횃불"
+      ]
+    },
+    "candle": {
+      "id": "candle",
+      "name": "초",
+      "family": "lamp",
+      "action": "oil",
+      "aliases": [
+        "촛불"
+      ]
+    },
+    "censer": {
+      "id": "censer",
+      "name": "향로",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "향로"
+      ]
+    },
+    "incense": {
+      "id": "incense",
+      "name": "향",
+      "family": "basket",
+      "action": "oil",
+      "aliases": [
+        "향",
+        "유향"
+      ]
+    },
+    "myrrh": {
+      "id": "myrrh",
+      "name": "몰약",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "몰약"
+      ]
+    },
+    "perfume": {
+      "id": "perfume",
+      "name": "향유",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "향유",
+        "옥합"
+      ]
+    },
+    "bread": {
+      "id": "bread",
+      "name": "떡",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "떡",
+        "빵"
+      ]
+    },
+    "barley-bread": {
+      "id": "barley-bread",
+      "name": "보리떡",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "보리떡"
+      ]
+    },
+    "manna": {
+      "id": "manna",
+      "name": "만나",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "만나"
+      ]
+    },
+    "quail": {
+      "id": "quail",
+      "name": "메추라기",
+      "family": "animal",
+      "action": "field",
+      "aliases": [
+        "메추라기"
+      ]
+    },
+    "fish": {
+      "id": "fish",
+      "name": "물고기",
+      "family": "animal",
+      "action": "water",
+      "aliases": [
+        "물고기",
+        "생선"
+      ]
+    },
+    "grain": {
+      "id": "grain",
+      "name": "곡식",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "곡식",
+        "곡물"
+      ]
+    },
+    "wheat": {
+      "id": "wheat",
+      "name": "밀",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "밀"
+      ]
+    },
+    "barley": {
+      "id": "barley",
+      "name": "보리",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "보리"
+      ]
+    },
+    "seed": {
+      "id": "seed",
+      "name": "씨앗",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "씨앗",
+        "씨"
+      ]
+    },
+    "flour": {
+      "id": "flour",
+      "name": "가루",
+      "family": "basket",
+      "action": "field",
+      "aliases": [
+        "가루",
+        "밀가루"
+      ]
+    },
+    "dough": {
+      "id": "dough",
+      "name": "반죽",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "반죽"
+      ]
+    },
+    "leaven": {
+      "id": "leaven",
+      "name": "누룩",
+      "family": "basket",
+      "action": "field",
+      "aliases": [
+        "누룩"
+      ]
+    },
+    "salt": {
+      "id": "salt",
+      "name": "소금",
+      "family": "basket",
+      "action": "field",
+      "aliases": [
+        "소금"
+      ]
+    },
+    "honey": {
+      "id": "honey",
+      "name": "꿀",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "꿀"
+      ]
+    },
+    "milk": {
+      "id": "milk",
+      "name": "젖",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "젖",
+        "우유"
+      ]
+    },
+    "water-supply": {
+      "id": "water-supply",
+      "name": "물",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "물"
+      ]
+    },
+    "wine": {
+      "id": "wine",
+      "name": "포도주",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "포도주"
+      ]
+    },
+    "olive-oil": {
+      "id": "olive-oil",
+      "name": "기름",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "기름",
+        "감람유"
+      ]
+    },
+    "grapes": {
+      "id": "grapes",
+      "name": "포도",
+      "family": "plant",
+      "action": "field",
+      "aliases": [
+        "포도"
+      ]
+    },
+    "vineyard": {
+      "id": "vineyard",
+      "name": "포도원",
+      "family": "plant",
+      "action": "field",
+      "aliases": [
+        "포도원"
+      ]
+    },
+    "vine": {
+      "id": "vine",
+      "name": "포도나무",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "포도나무"
+      ]
+    },
+    "fig-tree": {
+      "id": "fig-tree",
+      "name": "무화과나무",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "무화과나무",
+        "돌무화과나무"
+      ]
+    },
+    "fig": {
+      "id": "fig",
+      "name": "무화과",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "무화과"
+      ]
+    },
+    "olive-tree": {
+      "id": "olive-tree",
+      "name": "감람나무",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "감람나무",
+        "올리브나무"
+      ]
+    },
+    "palm": {
+      "id": "palm",
+      "name": "종려나무",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "종려나무"
+      ]
+    },
+    "cedar": {
+      "id": "cedar",
+      "name": "백향목",
+      "family": "plant",
+      "action": "tree",
+      "aliases": [
+        "백향목"
+      ]
+    },
+    "hyssop": {
+      "id": "hyssop",
+      "name": "우슬초",
+      "family": "plant",
+      "action": "bush",
+      "aliases": [
+        "우슬초"
+      ]
+    },
+    "reed": {
+      "id": "reed",
+      "name": "갈대",
+      "family": "plant",
+      "action": "bush",
+      "aliases": [
+        "갈대"
+      ]
+    },
+    "lily": {
+      "id": "lily",
+      "name": "백합",
+      "family": "plant",
+      "action": "bush",
+      "aliases": [
+        "백합"
+      ]
+    },
+    "mustard": {
+      "id": "mustard",
+      "name": "겨자씨",
+      "family": "crop",
+      "action": "field",
+      "aliases": [
+        "겨자씨"
+      ]
+    },
+    "fruit": {
+      "id": "fruit",
+      "name": "열매",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "열매"
+      ]
+    },
+    "table": {
+      "id": "table",
+      "name": "상",
+      "family": "seat",
+      "action": "bench",
+      "aliases": [
+        "상",
+        "식탁"
+      ]
+    },
+    "bed": {
+      "id": "bed",
+      "name": "침상",
+      "family": "seat",
+      "action": "bench",
+      "aliases": [
+        "침상",
+        "침대"
+      ]
+    },
+    "mat": {
+      "id": "mat",
+      "name": "자리",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "거적",
+        "들것"
+      ]
+    },
+    "throne": {
+      "id": "throne",
+      "name": "보좌",
+      "family": "seat",
+      "action": "bench",
+      "aliases": [
+        "보좌",
+        "왕좌"
+      ]
+    },
+    "footstool": {
+      "id": "footstool",
+      "name": "발판",
+      "family": "seat",
+      "action": "bench",
+      "aliases": [
+        "발판",
+        "발등상"
+      ]
+    },
+    "cloak": {
+      "id": "cloak",
+      "name": "겉옷",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "겉옷"
+      ]
+    },
+    "robe": {
+      "id": "robe",
+      "name": "옷",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "옷",
+        "옷자락"
+      ]
+    },
+    "sackcloth": {
+      "id": "sackcloth",
+      "name": "베옷",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "베옷",
+        "굵은 베"
+      ]
+    },
+    "ephod": {
+      "id": "ephod",
+      "name": "에봇",
+      "family": "wear",
+      "action": "scroll",
+      "aliases": [
+        "에봇"
+      ]
+    },
+    "breastplate": {
+      "id": "breastplate",
+      "name": "흉패",
+      "family": "wear",
+      "action": "scroll",
+      "aliases": [
+        "흉패"
+      ]
+    },
+    "crown": {
+      "id": "crown",
+      "name": "왕관",
+      "family": "wear",
+      "action": "stone",
+      "aliases": [
+        "왕관",
+        "면류관"
+      ]
+    },
+    "sandal": {
+      "id": "sandal",
+      "name": "신발",
+      "family": "wear",
+      "action": "bench",
+      "aliases": [
+        "신발",
+        "신"
+      ]
+    },
+    "belt": {
+      "id": "belt",
+      "name": "띠",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "띠",
+        "허리띠"
+      ]
+    },
+    "towel": {
+      "id": "towel",
+      "name": "수건",
+      "family": "cloth",
+      "action": "water",
+      "aliases": [
+        "수건"
+      ]
+    },
+    "veil": {
+      "id": "veil",
+      "name": "휘장",
+      "family": "cloth",
+      "action": "scroll",
+      "aliases": [
+        "휘장",
+        "수건"
+      ]
+    },
+    "curtain": {
+      "id": "curtain",
+      "name": "커튼",
+      "family": "cloth",
+      "action": "scroll",
+      "aliases": [
+        "커튼"
+      ]
+    },
+    "linen": {
+      "id": "linen",
+      "name": "세마포",
+      "family": "cloth",
+      "action": "bench",
+      "aliases": [
+        "세마포"
+      ]
+    },
+    "tablet": {
+      "id": "tablet",
+      "name": "돌판",
+      "family": "book",
+      "action": "scroll",
+      "aliases": [
+        "돌판"
+      ]
+    },
+    "book": {
+      "id": "book",
+      "name": "책",
+      "family": "book",
+      "action": "scroll",
+      "aliases": [
+        "책",
+        "율법책"
+      ]
+    },
+    "letter": {
+      "id": "letter",
+      "name": "편지",
+      "family": "book",
+      "action": "scroll",
+      "aliases": [
+        "편지",
+        "서신"
+      ]
+    },
+    "seal": {
+      "id": "seal",
+      "name": "인장",
+      "family": "tool",
+      "action": "scroll",
+      "aliases": [
+        "인장",
+        "도장"
+      ]
+    },
+    "signet": {
+      "id": "signet",
+      "name": "반지",
+      "family": "wear",
+      "action": "scroll",
+      "aliases": [
+        "반지"
+      ]
+    },
+    "ink": {
+      "id": "ink",
+      "name": "먹",
+      "family": "vessel",
+      "action": "scroll",
+      "aliases": [
+        "먹",
+        "잉크"
+      ]
+    },
+    "pen": {
+      "id": "pen",
+      "name": "붓",
+      "family": "staff",
+      "action": "scroll",
+      "aliases": [
+        "붓"
+      ]
+    },
+    "coin": {
+      "id": "coin",
+      "name": "동전",
+      "family": "treasure",
+      "action": "stone",
+      "aliases": [
+        "동전",
+        "데나리온",
+        "세겔",
+        "드라크마"
+      ]
+    },
+    "silver": {
+      "id": "silver",
+      "name": "은",
+      "family": "treasure",
+      "action": "stone",
+      "aliases": [
+        "은"
+      ]
+    },
+    "gold": {
+      "id": "gold",
+      "name": "금",
+      "family": "treasure",
+      "action": "stone",
+      "aliases": [
+        "금"
+      ]
+    },
+    "pearl": {
+      "id": "pearl",
+      "name": "진주",
+      "family": "treasure",
+      "action": "stone",
+      "aliases": [
+        "진주"
+      ]
+    },
+    "jewel": {
+      "id": "jewel",
+      "name": "보석",
+      "family": "treasure",
+      "action": "stone",
+      "aliases": [
+        "보석"
+      ]
+    },
+    "treasure-chest": {
+      "id": "treasure-chest",
+      "name": "보물상자",
+      "family": "chest",
+      "action": "scroll",
+      "aliases": [
+        "보물",
+        "보화"
+      ]
+    },
+    "moneybag": {
+      "id": "moneybag",
+      "name": "돈주머니",
+      "family": "basket",
+      "action": "scroll",
+      "aliases": [
+        "돈주머니",
+        "전대"
+      ]
+    },
+    "lyre": {
+      "id": "lyre",
+      "name": "수금",
+      "family": "instrument",
+      "action": "scroll",
+      "aliases": [
+        "수금",
+        "비파"
+      ]
+    },
+    "harp": {
+      "id": "harp",
+      "name": "거문고",
+      "family": "instrument",
+      "action": "scroll",
+      "aliases": [
+        "거문고"
+      ]
+    },
+    "tambourine": {
+      "id": "tambourine",
+      "name": "소고",
+      "family": "instrument",
+      "action": "field",
+      "aliases": [
+        "소고"
+      ]
+    },
+    "trumpet": {
+      "id": "trumpet",
+      "name": "나팔",
+      "family": "instrument",
+      "action": "scroll",
+      "aliases": [
+        "나팔"
+      ]
+    },
+    "flute": {
+      "id": "flute",
+      "name": "피리",
+      "family": "instrument",
+      "action": "scroll",
+      "aliases": [
+        "피리"
+      ]
+    },
+    "cymbal": {
+      "id": "cymbal",
+      "name": "제금",
+      "family": "instrument",
+      "action": "scroll",
+      "aliases": [
+        "제금"
+      ]
+    },
+    "millstone": {
+      "id": "millstone",
+      "name": "맷돌",
+      "family": "stone",
+      "action": "stone",
+      "aliases": [
+        "맷돌"
+      ]
+    },
+    "plow": {
+      "id": "plow",
+      "name": "쟁기",
+      "family": "tool",
+      "action": "field",
+      "aliases": [
+        "쟁기"
+      ]
+    },
+    "sickle": {
+      "id": "sickle",
+      "name": "낫",
+      "family": "tool",
+      "action": "field",
+      "aliases": [
+        "낫"
+      ]
+    },
+    "axe": {
+      "id": "axe",
+      "name": "도끼",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "도끼"
+      ]
+    },
+    "hammer": {
+      "id": "hammer",
+      "name": "망치",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "망치"
+      ]
+    },
+    "nail": {
+      "id": "nail",
+      "name": "못",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "못"
+      ]
+    },
+    "key": {
+      "id": "key",
+      "name": "열쇠",
+      "family": "tool",
+      "action": "scroll",
+      "aliases": [
+        "열쇠"
+      ]
+    },
+    "scale": {
+      "id": "scale",
+      "name": "저울",
+      "family": "tool",
+      "action": "stone",
+      "aliases": [
+        "저울"
+      ]
+    },
+    "yoke": {
+      "id": "yoke",
+      "name": "멍에",
+      "family": "tool",
+      "action": "field",
+      "aliases": [
+        "멍에"
+      ]
+    },
+    "cross": {
+      "id": "cross",
+      "name": "십자가",
+      "family": "cross",
+      "action": "stone",
+      "aliases": [
+        "십자가"
+      ]
+    },
+    "laver": {
+      "id": "laver",
+      "name": "물두멍",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "물두멍"
+      ]
+    },
+    "oven": {
+      "id": "oven",
+      "name": "화덕",
+      "family": "altar",
+      "action": "field",
+      "aliases": [
+        "화덕",
+        "풀무"
+      ]
+    },
+    "brick": {
+      "id": "brick",
+      "name": "벽돌",
+      "family": "stone",
+      "action": "stone",
+      "aliases": [
+        "벽돌"
+      ]
+    },
+    "stone-pillar": {
+      "id": "stone-pillar",
+      "name": "돌기둥",
+      "family": "stone",
+      "action": "stone",
+      "aliases": [
+        "돌기둥",
+        "기둥"
+      ]
+    },
+    "ladder": {
+      "id": "ladder",
+      "name": "사다리",
+      "family": "tool",
+      "action": "tree",
+      "aliases": [
+        "사다리"
+      ]
+    },
+    "rainbow": {
+      "id": "rainbow",
+      "name": "무지개",
+      "family": "symbol",
+      "action": "scroll",
+      "aliases": [
+        "무지개"
+      ]
+    },
+    "star": {
+      "id": "star",
+      "name": "별",
+      "family": "symbol",
+      "action": "scroll",
+      "aliases": [
+        "별"
+      ]
+    },
+    "cloud": {
+      "id": "cloud",
+      "name": "구름",
+      "family": "symbol",
+      "action": "water",
+      "aliases": [
+        "구름"
+      ]
+    },
+    "fire": {
+      "id": "fire",
+      "name": "불",
+      "family": "lamp",
+      "action": "bush",
+      "aliases": [
+        "불"
+      ]
+    },
+    "sheep": {
+      "id": "sheep",
+      "name": "양",
+      "family": "animal",
+      "action": "field",
+      "aliases": [
+        "양",
+        "어린 양"
+      ]
+    },
+    "donkey": {
+      "id": "donkey",
+      "name": "나귀",
+      "family": "animal",
+      "action": "bench",
+      "aliases": [
+        "나귀"
+      ]
+    },
+    "horse": {
+      "id": "horse",
+      "name": "말",
+      "family": "animal",
+      "action": "boat",
+      "aliases": [
+        "말"
+      ]
+    },
+    "dove": {
+      "id": "dove",
+      "name": "비둘기",
+      "family": "animal",
+      "action": "tree",
+      "aliases": [
+        "비둘기"
+      ]
+    },
+    "raven": {
+      "id": "raven",
+      "name": "까마귀",
+      "family": "animal",
+      "action": "tree",
+      "aliases": [
+        "까마귀"
+      ]
+    },
+    "snake": {
+      "id": "snake",
+      "name": "뱀",
+      "family": "animal",
+      "action": "stone",
+      "aliases": [
+        "뱀"
+      ]
+    },
+    "bronze-snake": {
+      "id": "bronze-snake",
+      "name": "놋뱀",
+      "family": "symbol",
+      "action": "stone",
+      "aliases": [
+        "놋뱀"
+      ]
+    },
+    "lion": {
+      "id": "lion",
+      "name": "사자",
+      "family": "animal",
+      "action": "stone",
+      "aliases": [
+        "사자"
+      ]
+    },
+    "calf": {
+      "id": "calf",
+      "name": "송아지",
+      "family": "animal",
+      "action": "field",
+      "aliases": [
+        "송아지"
+      ]
+    }
+  }
+}
