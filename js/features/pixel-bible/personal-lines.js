@@ -31,8 +31,7 @@ export function personalLines(n,chapters,context){
  const ref=occurrences[0]?.ref||n.refs?.[0]||'';
  // 현재 장의 실제 역할과 관계를 독백 옆 참고 구절로 연결한다.
  const relation=context.relations.find(r=>occurrenceMatches(n,r.from)||occurrenceMatches(n,r.to));
- if(relation){const other=occurrenceMatches(n,relation.from)?relation.to:relation.from;
-  add(`${other.name}… 서로 얽힌 일을 다시 생각하게 되는구나.`,relation.ref,'relationship-variation');}
+ if(relation?.text) add(relation.text,relation.ref,'relationship-context');
  for(const text of voice)add(text,style.key==='jesus'?'마태복음 11:28–30':ref,'context-variation');
  return lines.slice(0,5).map((line,i)=>({...line,id:`personal:${n.identity?.id||n.name}:${ref}:${i}`,speaker:n,kind:line.origin==='authored'?'solo':'context'}));
 }

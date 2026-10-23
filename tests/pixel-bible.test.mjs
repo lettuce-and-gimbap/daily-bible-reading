@@ -391,3 +391,23 @@ test('오브제 크기와 반응은 인물 동작에 맞추고 접근 표현은 
  }
  assert.ok(calls.some(c=>c[0]==='rect'));
 });
+
+test('오브제 옮기기는 원래 물건은 제외하고 다른 물건·인물·경로와 화면 밖을 거절한다',async()=>{
+ const {canMoveObject}=await import('../js/features/pixel-bible/object-drag.js');
+ const o={kind:'water',x:8,y:9},other={kind:'tree',x:12,y:9},objects=[o,other];
+ const n={x:15,y:9,path:[{x:16,y:9}]};
+ assert.equal(canMoveObject(o,{x:8,y:9},objects,[n]),true);
+ assert.equal(canMoveObject(o,{x:9,y:8},objects,[n]),true);
+ for(const p of [{x:12,y:9},{x:15,y:9},{x:16,y:9},{x:1,y:9},{x:9,y:16},{x:9.5,y:8}])assert.equal(canMoveObject(o,p,objects,[n]),false);
+ assert.deepEqual(o,{kind:'water',x:8,y:9});
+});
+
+test('모호한 관계 독백 대신 본문의 구체적 관계 설명과 출처를 사용한다',async()=>{
+ const {personalLines}=await import('../js/features/pixel-bible/personal-lines.js');
+ const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
+ const chapters=[{code:'rut',name:'룻기',chap:2,data:{people:[{name:'룻',role:'이삭을 줍는 며느리'},{name:'보아스',role:'밭 주인'}],rels:[{from:'보아스',to:'룻',label:'보호',verses:'8-9',note:'보아스는 룻에게 같은 밭에서 일하고 일꾼들이 길어 온 물을 마시도록 허락했습니다.'}]}}];
+ const context=buildChapterDialogue(chapters),p=context.people.find(p=>p.name==='룻');
+ const lines=personalLines({...p,refs:[p.ref]},chapters,context);
+ assert.ok(lines.some(l=>l.text===context.relations[0].text&&l.ref==='룻기 2:8-9'));
+ assert.ok(lines.every(l=>!l.text.includes('얽힌 일')));
+});
