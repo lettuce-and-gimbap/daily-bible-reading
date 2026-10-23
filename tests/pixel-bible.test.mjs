@@ -235,3 +235,13 @@ test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',a
  const model=buildWorldModel(chapters),context=buildChapterDialogue(chapters);
  assert.deepEqual(model.cast.map(p=>p.name),['갑','을']);assert.equal(context.relations.length,1);
 });
+
+test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다른 본문의 동명이인을 연결하지 않는다',async()=>{
+ const {relationshipLinks}=await import('../js/features/pixel-bible/relationship-overlay.js');
+ const a={name:'갑',x:10,y:8,refs:['창세기 1장']},b={name:'을',x:20,y:9,refs:['창세기 1장']};
+ const relations=[{from:'갑',to:'을',label:'가족',sourceRef:'창세기 1장'},{from:'갑',to:'을',label:'다른 사람',sourceRef:'창세기 2장'}];
+ let links=relationshipLinks(relations,[a,b]);assert.equal(links.length,1);assert.deepEqual(links[0].a,{x:240,y:112});
+ a.x=11;links=relationshipLinks(relations,[a,b]);assert.equal(links[0].a.x,264);
+ links=relationshipLinks(relations,[a,b],{active:true,n:a,p:{x:15,y:7}});assert.deepEqual(links[0].a,{x:360,y:184});
+ assert.equal(relationshipLinks(relations,[a]).length,0);
+});
