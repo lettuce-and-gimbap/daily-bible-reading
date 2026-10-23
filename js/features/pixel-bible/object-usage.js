@@ -1,0 +1,35 @@
+// 실제 쓰임새에 따라 고른 일상 동작. 본문에 기록된 전용 동작은 별도로 우선한다.
+const options=(...rows)=>rows.map(([gesture,label])=>[gesture,label]);
+export const OBJECT_USAGE={};
+function bind(kinds,rows){for(const kind of kinds.split(' '))OBJECT_USAGE[kind]=rows;}
+bind('bed mat',options(['lie','반듯이 눕기'],['sleep','누워 잠들기'],['side-rest','옆으로 누워 쉬기'],['tuck','이불 여미고 눕기'],['sit','가장자리에 앉기'],['rise','누웠다가 일어나기']));
+bind('rope',options(['coil','밧줄을 둥글게 감기'],['uncoil','감긴 밧줄 풀기'],['tie','매듭 묶기'],['untie','매듭 풀기'],['pull','양손으로 줄 당기기'],['lower-rope','줄을 아래로 내려 주기']));
+bind('bow arrow',options(['shoot','겨냥하고 화살 쏘기'],['high-shot','위쪽으로 화살 쏘기'],['low-shot','낮게 겨냥해 쏘기'],['steady-shot','한쪽 무릎 굽혀 쏘기'],['quick-shot','짧게 당겨 쏘기'],['draw','시위를 당겼다가 쏘기']));
+bind('chain fetter',options(['lift-chain','양손으로 들어 무게 재기'],['pull','연결 고리 당겨 보기'],['coil','사슬 가지런히 모으기'],['unlock','잠금장치 열어 보기'],['inspect','고리 살피기'],['place','조심히 내려놓기']));
+bind('sword spear javelin',options(['guard','무기를 세워 자세 잡기'],['thrust','빈 쪽으로 찌르기 연습'],['swing','빈 쪽으로 휘두르기'],['polish','날을 천으로 닦기'],['draw-weapon','무기를 빼 들어 보기'],['lower','무기 낮춰 쉬기']));
+bind('shield',options(['guard','방패 들어 몸 가리기'],['brace','방패 뒤에서 버티기'],['raise','방패 높이 들기'],['polish','방패 표면 닦기'],['turn','방패 방향 돌리기'],['lower','방패 내려 쉬기']));
+bind('sling',options(['sling','돌 넣고 물매 돌려 던지기'],['load-sling','주머니에 돌 넣기'],['spin-sling','물매 한 바퀴 돌리기'],['sling-low','낮게 돌려 던지기'],['tie','물매 끈 묶기'],['fold','끈 접어 정리하기']));
+bind('hammer axe sickle',options(['swing','도구를 뒤로 들어 내리기'],['use','앞으로 뻗어 작업하기'],['repair','손잡이 단단히 고치기'],['wipe','날과 손잡이 닦기'],['inspect','도구 날 살피기'],['place','도구 내려놓기']));
+bind('staff rod',options(['lean-staff','지팡이 짚고 기대기'],['plant-staff','땅에 지팡이 짚기'],['point','지팡이로 앞을 가리키기'],['raise','지팡이 들어 올리기'],['wipe','손잡이 닦기'],['lower','지팡이 내려 쥐기']));
+bind('oar',options(['row','노를 앞으로 뻗어 젓기'],['back-row','노를 반대로 젓기'],['lift-oar','노 들어 물 털기'],['reins','노를 양손으로 당기기'],['wipe','노자루 닦기'],['place','노 내려놓기']));
+bind('hook',options(['cast-line','낚싯줄 던지기'],['wait-fish','줄 잡고 기다리기'],['reel','줄 당겨 올리기'],['bait','바늘에 미끼 달기'],['untie','엉킨 줄 풀기'],['coil','낚싯줄 감기']));
+bind('ladder',options(['climb-ladder','아래 디딤대 오르내리기'],['grip','양손으로 사다리 잡기'],['repair','디딤대 조이기'],['wipe','디딤대 닦기'],['measure','간격 살펴보기'],['step-back','뒤로 물러나 확인하기']));
+bind('plow yoke',options(['push','양손으로 잡고 앞으로 밀기'],['pull','뒤로 당겨 자세 잡기'],['grip','손잡이 양손으로 잡기'],['repair','연결 부위 고치기'],['wipe','나무 틀 닦기'],['inspect','나무 틀 살피기']));
+bind('millstone',options(['grind','맷돌 돌리기'],['feed-grain','곡식 조금씩 넣기'],['gather-flour','갈린 가루 받기'],['brush','가루 털어 모으기'],['wipe','돌 표면 닦기'],['inspect','맷돌 틈 살피기']));
+bind('key',options(['unlock','열쇠 꽂아 돌리기'],['turn-key','반대로 돌려 잠그기'],['inspect','열쇠 이 살피기'],['wipe','열쇠 닦기'],['offer','열쇠 건네기'],['place','열쇠 내려놓기']));
+bind('seal signet',options(['stamp','인장 꾹 누르기'],['lift-seal','인장을 들어 자국 확인하기'],['roll-seal','인장을 굴려 찍기'],['inspect','새겨진 문양 보기'],['wipe','인장 면 닦기'],['place','인장 내려놓기']));
+bind('scale',options(['weigh','양쪽 접시에 물건 놓기'],['balance','저울 균형 맞추기'],['remove-weight','추 하나 들어 빼기'],['count','추 세어 보기'],['wipe','접시 닦기'],['inspect','수평 확인하기']));
+bind('pen ink',options(['write','붓으로 글 쓰기'],['dip','붓끝에 먹 묻히기'],['trace','글줄 따라 쓰기'],['wipe','붓끝 닦기'],['inspect','붓끝 살피기'],['place','붓 내려놓기']));
+bind('dough leaven flour',options(['knead','두 손으로 반죽 주무르기'],['press','손바닥으로 누르기'],['fold','반죽 접어 모으기'],['sprinkle','가루 조금 뿌리기'],['portion','작게 나누기'],['cover','천으로 덮기']));
+bind('honey milk wine',options(['drink','잔에 담아 마시기'],['pour','잔에 따르기'],['offer','잔 내밀어 나누기'],['cap','뚜껑 열고 닫기'],['hold','그릇 두 손으로 받치기'],['wipe','그릇 가장자리 닦기']));
+bind('incense myrrh perfume censer',options(['waft','향을 가볍게 맡기'],['pour','조금 덜어 내기'],['cap','뚜껑 여닫기'],['offer','두 손으로 받쳐 내밀기'],['wipe','그릇 닦기'],['inspect','내용물 살피기']));
+bind('fire oven',options(['warm','안전한 거리에서 손 녹이기'],['fan','가볍게 부채질하기'],['tend','긴 막대로 불 살피기'],['step-back','열기에서 물러서기'],['observe','불길 지켜보기'],['shield','손으로 얼굴 앞 열 가리기']));
+bind('sandal',options(['wear','발을 굽혀 신발 신기'],['remove','발을 굽혀 신발 벗기'],['tie','신 끈 묶기'],['wipe','신발 밑창 닦기'],['inspect','밑창 살피기'],['place','신발 가지런히 놓기']));
+bind('crown helmet',options(['wear','머리에 맞춰 쓰기'],['remove','머리에서 벗기'],['smooth','머리에 고쳐 쓰기'],['polish','겉면 닦기'],['hold','두 손으로 받쳐 들기'],['offer','두 손으로 내밀기']));
+bind('belt breastplate',options(['wear','몸에 맞춰 매기'],['remove','매듭 풀어 벗기'],['smooth','위치 고쳐 매기'],['polish','겉면 닦기'],['hold','두 손으로 받치기'],['offer','건네기']));
+bind('veil curtain sail',options(['spread','천을 양옆으로 펼치기'],['pull','천 아래쪽 당기기'],['smooth','주름 펴기'],['tie','천 끝 묶기'],['measure','너비 가늠하기'],['step-back','한 걸음 물러서 보기']));
+bind('anchor wheel',options(['grip','양손으로 단단히 잡기'],['pull','몸 기울여 당기기'],['turn','테두리 돌려 살피기'],['repair','연결 부위 고치기'],['wipe','표면 닦기'],['step-back','물러서 살펴보기']));
+bind('rainbow star cloud bronze-snake cross',options(['look','고개 들어 바라보기'],['point','손으로 가리키기'],['observe','서서 지켜보기'],['hands','손 모아 바라보기'],['bow','고개 숙이기'],['step-back','물러서 바라보기']));
+bind('seed mustard',options(['sow','손을 벌려 씨 뿌리기'],['sprinkle','씨 조금씩 흩뿌리기'],['count','손바닥에서 씨 세기'],['sort','씨 골라 내기'],['gather','씨앗 주워 담기'],['offer','손바닥에 씨 내밀기']));
+bind('grapes vineyard',options(['gather','포도송이 따기'],['bundle','딴 포도 모으기'],['inspect','익은 포도 살피기'],['hold','송이 두 손으로 받치기'],['offer','포도송이 내밀기'],['place','바구니에 송이 놓기']));
+bind('tomb stone-pillar',options(['look','돌 앞에 서서 보기'],['inspect','새겨진 흔적 살피기'],['hands','두 손 모아 서기'],['bow','조용히 고개 숙이기'],['point','돌을 가리키기'],['step-back','한 걸음 물러서기']));

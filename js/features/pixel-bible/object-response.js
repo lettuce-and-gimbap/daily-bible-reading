@@ -6,6 +6,9 @@ export function objectPresentation(kind){
  const d=OBJECT_CATALOG[kind]||{action:kind,family:kind};
  const category=d.family||d.action;
  let scale=SCALES[kind]||SCALES[category]||SCALES[d.action]||2;
+ if(kind==='mat')scale=2.4;
+ if(['cloak','robe','linen','sackcloth','ephod','armor'].includes(kind))scale=.95;
+ if(['helmet','crown','breastplate','sandal','belt','signet'].includes(kind))scale=.8;
  if(['cup','flask','oil','perfume','coin','pearl','seed','mustard','salt','pen','nail'].includes(kind))scale=1.2;
  if(['palm','cedar','ark-noah','tower'].includes(kind))scale=4;
  return {scale,category,portable:objectBehavior(kind).carry};
@@ -20,6 +23,7 @@ export function interactionApproaches(o){
 export function interactionAnchor(n,tile=24){
  if(!n.usingObject||!n.interaction)return {x:n.x*tile,y:n.y*tile};
  const o=n.usingObject,dx=n.x-o.x,dy=n.y-o.y;
+ if(n.interaction.category==='bed')return {x:o.x*tile,y:o.y*tile+14};
  if(n.interaction.gesture==='lie-stone')return {x:o.x*tile-38,y:o.y*tile+16};
  if(['bench','boat'].includes(n.interaction.category))return {x:o.x*tile+(dx?Math.sign(dx)*8:0),y:o.y*tile+5};
  if(n.objectAction==='zacchaeus-tree')return {x:o.x*tile+12,y:o.y*tile-12};
@@ -50,19 +54,19 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
 export function heldObject(n,time,reduced=false,tile=24){
  const o=n.usingObject;if(!o||!n.interaction)return null;
  const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);
- if(!objectBehavior(o.kind).carry||!p.hand||p.wearing||(['arrow','bow'].includes(o.kind)&&['nock','aim','draw','shoot','three-arrows'].includes(p.actual))||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
+ if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||!p.hand||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;
  const side=n.direction==='left'||n.direction==='right';
  const beat=p.phase===1?-1:1;
- const tilt=p.gesture==='drink'&&p.phase===2?-dir*.9:p.gesture==='pour'&&p.phase===2?dir*.8:
-  ['practice','use','wipe','polish','tap','strum','play','mend','cast','reins'].includes(p.gesture)?dir*beat*.2:
+ const tilt=['swing','thrust'].includes(p.gesture)?dir*(p.phase===1?-.9:.9):p.gesture==='drink'&&p.phase===2?-dir*.9:p.gesture==='pour'&&p.phase===2?dir*.8:
+  ['practice','use','wipe','polish','tap','strum','play','mend','cast','reins','swing','thrust','row','back-row','stamp','roll-seal','unlock','turn-key'].includes(p.gesture)?dir*beat*.2:
   p.gesture==='blow'?-dir*.12:0;
  return {kind:o.kind,x:(a.x+(side?dir*14:8)+p.bodyX*2)/tile,y:(a.y+(p.handY-36)*2+p.bodyY*2+5)/tile,
-  frame:{scale:Math.min(objectPresentation(o.kind).scale,.85),tilt,held:true,
+  frame:{scale:Math.min(objectPresentation(o.kind).scale,['cloak','robe','linen','sackcloth','ephod','armor'].includes(o.kind)?.65:.85),tilt,held:true,
    open:['read','unroll','spread'].includes(p.gesture)?(p.phase===2?.25:.1):0,
    squash:['fold','smooth','wrap'].includes(p.gesture)&&p.phase===2?.3:0,bite:p.gesture==='eat'&&p.phase===2},pose:p};
 }
-export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&['nock','aim','draw','shoot','three-arrows'].includes(p.actual))||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
+export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return (p.hand&&['rope','hook'].includes(n.usingObject?.kind))||(p.hand&&['pen','ink'].includes(n.usingObject?.kind)&&['write','trace','dip'].includes(p.actual))||p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&p.archery)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
 export function drawObjectResponse(c,o,frame,tile=24){
  if(!frame?.active)return;
  const held=heldObject(frame.actor,frame.time,frame.reduced,tile);

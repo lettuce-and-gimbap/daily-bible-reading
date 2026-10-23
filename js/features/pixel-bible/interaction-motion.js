@@ -1,3 +1,4 @@
+import {OBJECT_USAGE} from './object-usage.js';
 import {uniqueInteraction} from './unique-interactions.js';
 import {objectBehavior} from './object-behavior.js';
 // 네 단계(준비→사용→사용→복귀)의 동작 원형. 이름별 변형은 원형과 별도로 계산한다.
@@ -64,8 +65,10 @@ const extra={
  basket:[['sort','내용물 고르기'],['offer','바구니 내밀기']],
  symbol:[['bow','고개 숙여 바라보기'],['step-back','물러서 바라보기']],
 };
+INTERACTION_MOTIONS.rope=OBJECT_USAGE.rope;
 for(const [category,values] of Object.entries(extra))INTERACTION_MOTIONS[category].push(...values);
 export function interactionOptions(kind){
+ if(OBJECT_USAGE[kind])return OBJECT_USAGE[kind];
  if(kind==='ark-covenant')return [['observe','곁에서 바라보기'],['bow','고개 숙이기'],['hands','손 모으기'],['look','멀리서 살펴보기'],['step-back','물러서기'],['kneel','곁에 무릎 굽히기']];
  if(['basin','laver'].includes(kind))return [['wash','손 씻기'],['rinse','물로 헹구기'],['fill','물 채우기'],['pour','물을 떠 옮기기'],['scoop','물 떠 보기'],['wipe','가장자리 닦기']];
  if(kind==='pen')return [['write','글 쓰기'],['dip','붓끝 적시기'],['trace','선 따라 긋기'],['wipe','붓 닦기'],['inspect','붓끝 살피기'],['place','붓 내려놓기']];
@@ -101,13 +104,20 @@ export function interactionPose(routine,time=0,reduced=false){
  const {category,variant,outcome=0}=routine;
  const actual=routine.gesture;
  const aliases={'five-stones':'pick','glean-bundle':'gather','fill-vessels':'pour','fill-manna':'fill','offer-water':'pour','write-scroll':'write','read-prophet':'read','explain-scroll':'point','soothe-lyre':'strum','instruct-reapers':'point','unshoe':'kneel','staff-snake':'place','strike-water':'use','cast-mantle':'cast','mantle-water':'use','tear-garment':'stretch','calm-waves':'hands','water-wine':'point','break-share':'break','wear-pattern':'wear','three-arrows':'shoot','long-blow':'blow','rehearse':'blow','pluck':'strum'};
- const gesture=aliases[actual]||actual;
+ const archery=['arrow','bow'].includes(routine.kind);
+ const gesture=archery?'shoot':aliases[actual]||actual;
+ const lie=category==='bed'&&actual!=='sit'&&(actual!=='rise'||phase<3)||actual==='lie-stone'&&use;
+ const kneel=actual==='steady-shot'||routine.kind==='sandal'&&use;
+ const rope=routine.kind==='rope'||['chain','fetter','hook','sling'].includes(routine.kind);
+ const reachHigh=['raise','lift-oar','climb-ladder','blow'].includes(gesture);
+ const working=['tie','untie','coil','uncoil','pull','reel','knead','press','fold','grind','weigh','balance','stamp','roll-seal','brush','push','grip','repair','turn-key','unlock','portion','feed-grain','gather-flour'].includes(gesture);
  const within=reduced?.5:((time/routine.period+routine.phase)*4)%1;
- const sit=category==='bench'||category==='boat'||(category==='bed'&&['sit','rest'].includes(gesture))||(category==='cart'&&gesture==='sit')||gesture==='write';
- const bend=['gather','pick','place','kneel','care','prepare','bow','fill'].includes(gesture)?reach:['bundle','harvest','stack'].includes(gesture)?reach*.5:0;
+ const sit=!lie&&(category==='bench'||category==='boat'||(category==='bed'&&['sit','rest'].includes(gesture))||(category==='cart'&&gesture==='sit')||gesture==='write');
+ const bend=kneel?2:['gather','pick','place','kneel','care','prepare','bow','fill'].includes(gesture)?reach:['bundle','harvest','stack'].includes(gesture)?reach*.5:0;
  const handY=['wear','remove'].includes(gesture)?(phase===1?17:phase===2?23:25):gesture==='trim'?(use?20:24):['point','shield','tend'].includes(gesture)?(use?18:24):['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)?(phase===1?24:26):gesture==='eat'?(phase===2?18:25):gesture==='drink'?(phase===2?18:24):gesture==='scoop'?(phase===2?24:29):gesture==='wash'?(phase===2?27:29):gesture==='pour'?(phase===2?28:23):gesture==='fill'?29:gesture==='cap'?(phase===2?22:25):['leaves','fruit','trunk'].includes(gesture)?(use?19:24):['blow','aim','shoot','draw','nock'].includes(gesture)?18:['arrange','serve','smooth','fill','reins'].includes(gesture)?(phase===2?27:25):gesture==='lap'?27:gesture==='inspect'?21:gesture==='bundle'?26:gesture==='hold'?25:bend?28:24;
  const wearing=['wear','wear-pattern'].includes(actual)?use:actual==='remove'?phase===0:false;
- return {phase,within:Math.floor(within*6)/6,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:handY+(use&&!routine.unique?outcome%3-1:0),hand:actual==='lie-stone'?0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:bend?reach*2:gesture==='rest'&&use?1:0,bodyX:use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):0,kick:gesture==='kick'&&phase===2,climb:gesture==='climb'?reach*3:0};
+ const adjustedHandY=lie?26:archery?24:kneel?30:rope?(phase===1?23:phase===2?26:28):reachHigh?19:working?(phase===1?25:27):handY;
+ return {lie,archery,kneel,rope,phase,within:Math.floor(within*6)/6,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:adjustedHandY,hand:lie?0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:lie?0:bend?Math.min(3,reach*2):gesture==='rest'&&use?1:0,bodyX:lie?0:['pull','push','reins','row','back-row'].includes(gesture)&&use?(phase===1?-2:2):working&&use?(phase===1?-1:1):use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):0,kick:gesture==='kick'&&phase===2,climb:gesture==='climb'?reach*3:0};
 }
 // 한글 안내는 도안/문서 검토용이며 월드 하단 설명으로 띄우지 않는다.
 export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce((s,v)=>s+v.length,0);

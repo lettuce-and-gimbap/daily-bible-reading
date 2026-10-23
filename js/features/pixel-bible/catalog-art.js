@@ -5,6 +5,9 @@ export function drawCatalogDetail(r,id,family,O){
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
 
 
+ if(id==='mat'){line(-15,-7,30,10,O);line(-14,-6,28,8,'#bba375');line(-13,-8,6,5,paper);for(let i=0;i<6;i++)line(-6+i*3,-5,1,6,'#92794f');return true;}
+ if(id==='sling'){for(let i=0;i<15;i++){line(-9+Math.floor(i/2),-20+i,1,2,'#c6aa79');line(9-Math.floor(i/2),-20+i,1,2,'#c6aa79');}line(-4,-7,8,5,wood);line(-3,-6,6,2,'#d8c49c');return true;}
+ if(id==='dough'){line(-11,1,22,3,wood);line(-8,-6,16,7,'#d6be8d');line(-5,-9,10,4,paper);line(-3,-7,6,2,'#ecd9ab');return true;}
  if(['cloak','robe','linen','sackcloth','ephod','armor','helmet','sandal','breastplate'].includes(id)){
   const cloth=garmentColor(id);
   if(id==='cloak'){
@@ -100,7 +103,8 @@ export function drawCatalogDetail(r,id,family,O){
   else if(id==='sickle'){line(-6,-23,13,3,metal);line(5,-20,3,7,metal);line(2,-13,5,3,metal);line(1,-10,2,15);}
   else if(id==='scale'){line(-1,-23,2,28);line(-12,-21,24,2,metal);for(const x of [-9,8]){line(x,-19,1,10,metal);line(x-4,-9,9,3,gold);}}
   else if(id==='key'){line(-4,-21,8,8,gold);line(-2,-19,4,4,'#f3efdf');line(-1,-13,2,17,gold);line(1,0,5,2,gold);}
-  else if(['wheel','chain','fetter','rope'].includes(id)){for(let j=0;j<3;j++){line(-7+j*5,-20+j*5,7,7,metal);line(-5+j*5,-18+j*5,3,3,'#f3efdf');}}
+  else if(id==='rope'){for(let j=0;j<3;j++){line(-9+j,-12+j*4,18-j*2,2,'#c3a278');line(-10+j,-10+j*4,2,3,'#9a7b50');line(7-j,-10+j*4,2,3,'#9a7b50');}line(5,-3,2,7,'#c3a278');}
+  else if(['wheel','chain','fetter'].includes(id)){for(let j=0;j<3;j++){line(-7+j*5,-20+j*5,7,7,metal);line(-5+j*5,-18+j*5,3,3,'#f3efdf');}}
   else if(id==='anchor'){line(-1,-25,2,27,metal);line(-8,-17,16,2,metal);line(-10,-5,3,7,metal);line(7,-5,3,7,metal);line(-8,0,16,3,metal);}
   else if(id==='nail'||id==='hook'){line(-1,-17,2,22,metal);line(-5,-18,10,2,metal);if(id==='hook')line(0,1,5,3,metal);}
   else{line(-12,-10,24,3);line(-9,-22,3,16);line(7,-22,3,16);line(-10,-23,20,3);}

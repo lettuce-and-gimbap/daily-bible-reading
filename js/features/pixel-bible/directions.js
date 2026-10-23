@@ -26,7 +26,12 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.belt)r(10,27,7,1,'#58412d');
   if(s.sash)r(14,22,2,9,s.sash);
   if(s.pattern)r(15,23,1,7,s.accent||'#cfac68');
-  if(pose?.hand){const yy=pose.handY;
+  if(pose?.archery){
+   // 앞손은 활을 지지하고 뒷손은 시위와 함께 몸쪽으로 당긴다.
+   const draw=pose.phase===1?4:pose.phase===2?1:2;
+   r(13,22,4,4,O);r(14,23,3,2,s.coat);r(16,24,8,3,O);r(17,24,7,2,skin);
+   r(11,23,4,3,O);r(13-draw,24,7,3,O);r(14-draw,24,6,2,skin);
+  }else if(pose?.hand){const yy=pose.handY;
    r(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);
    r(12,22,4,4,O);r(13,23,2,2,s.coat);r(14,yy,6,3,O);r(16,yy,4,2,skin);
   }else{r(11+step,22,4,4,O);r(12+step,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}

@@ -13,7 +13,7 @@ export const characterStyle = appearanceFor;
 const spriteCache=new Map();
 export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const {scale=3,walk=0,action='',time=0,hanging=false,selected=false}=options;
- const direction=hanging?'down':(options.direction||'down');
+ const direction=hanging?'down':options.interaction?.lie?'down':options.interaction?.archery?(options.direction==='left'?'left':'right'):(options.direction||'down');
  const frame=options.walkFrame??(walk>.35?1:walk<-.35?3:0);
  const step=[0,1,0,-1][frame%4];
  const pose=options.interaction||null;
@@ -29,6 +29,7 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
+  if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2);c.translate(-32,-37);}
   if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
   else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
@@ -279,7 +280,7 @@ export function drawDesignBoard(c) {
     c.font="11px monospace";c.fillText("24 × 38 / 4x preview",x+85,368);c.restore();
   });
   c.save();c.translate(0,rows*260-220);
-  c.textAlign="left";c.fillStyle="#294842";c.font="bold 20px sans-serif";c.fillText("오브제 · 캐릭터와 같은 굵기의 도트",36,416);
+  c.textAlign="left";c.fillStyle="#294842";c.font="bold 20px sans-serif";c.fillText("오브젝트 · 캐릭터와 같은 굵기의 도트",36,416);
   const obs=[["field","보리밭 / 이삭 줍기"],["water","물항아리 / 물 마시기"],["bench","쉬는 자리 / 휴식"],["tree","나무 / 길 막기"]];
   obs.forEach(([kind,label],i)=>{
     const x=30+i*292;c.fillStyle="#e1e5d4";c.fillRect(x,440,264,213);

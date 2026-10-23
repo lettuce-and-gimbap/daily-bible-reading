@@ -1,5 +1,7 @@
 // 근거가 있는 장/화자/물건 조합만 일상 동작보다 우선한다.
 export const UNIQUE_INTERACTIONS=[
+ {id:'rahab-rope',name:'라합',code:'jos',chapter:2,kinds:['rope'],gesture:'lower-rope',ref:'여호수아 2:15'},
+ {id:'joash-arrow',name:'요아스',code:'2ki',chapter:13,kinds:['arrow','bow'],gesture:'shoot',ref:'열왕기하 13:15–17'},
  {id:'moses-bush',name:'모세',code:'exo',chapter:3,kinds:['bush'],gesture:'unshoe',ref:'출애굽기 3:5'},
  {id:'moses-staff',name:'모세',code:'exo',chapter:4,kinds:['staff','rod'],gesture:'staff-snake',ref:'출애굽기 4:2–4'},
  {id:'moses-rock',name:'모세',code:'num',chapter:20,kinds:['stone'],gesture:'strike-water',ref:'민수기 20:11'},

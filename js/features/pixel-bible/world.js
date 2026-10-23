@@ -119,14 +119,14 @@ export async function mountPixelWorld(shell, options) {
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>분량 전체 인물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':'통독 분량 · '}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
-    <h3>본문 오브제</h3><p class="pb-help">놓은 오브제는 1초 꾹 누른 뒤 끌어서 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브제로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar">${chapterProps.map(item=>`<button class="pb-button" data-place="${item.id}" title="${esc(item.description?item.description+' · '+item.descriptionRefs.join(' · '):item.evidence[0]?.text||'')}">＋ ${esc(item.name)}<small>${esc(item.refs.slice(0,2).join(' · '))}</small></button>`).join('')}</div><details><summary>공통 오브제</summary><div class="pb-world-toolbar">${Object.entries(WORLD_OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}</div></details><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브제 전체 철거</button></div>
-    <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브제 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
+    <h3>본문 오브젝트</h3><p class="pb-help">놓은 오브젝트는 1초 꾹 누른 뒤 끌어서 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar">${chapterProps.map(item=>`<button class="pb-button" data-place="${item.id}" title="${esc(item.description?item.description+' · '+item.descriptionRefs.join(' · '):item.evidence[0]?.text||'')}">＋ ${esc(item.name)}<small>${esc(item.refs.slice(0,2).join(' · '))}</small></button>`).join('')}</div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar">${Object.entries(WORLD_OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}</div></details><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
+    <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
     <div class="pb-camera-controls" aria-label="월드 시점"><button class="pb-button" data-action="camera-home">중앙으로</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
 
@@ -165,7 +165,7 @@ export async function mountPixelWorld(shell, options) {
         const plan=planConversation(current.speaker,current.target,npcs,blocked,findPath);
         if(!plan){speech.dismiss(now);current=null;}
         else {
-          // 오브제에 붙여 그리던 자세를 해제한 뒤 실제 대화 좌표로 이동한다.
+          // 오브젝트에 붙여 그리던 자세를 해제한 뒤 실제 대화 좌표로 이동한다.
           for(const actor of [current.speaker,current.target]){
             actor.usingObject=null;actor.interaction=null;actor.task=null;actor.action='';actor.objectScene=null;actor.objectAction=null;actor.objectEvidence=null;
           }
@@ -227,7 +227,7 @@ export async function mountPixelWorld(shell, options) {
       const id=line.session+':'+line.slot;let el=encounterBubbles.get(id);
       if(!el){
         el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
-        el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
+        el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
         el.dataset.encounter=id;el.querySelector('p').textContent=line.text;
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref);link.dataset.reference=line.ref||'';
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
@@ -318,7 +318,9 @@ export async function mountPixelWorld(shell, options) {
   const save = () => { indexObjects();try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
   const cell = (p) => ({ x: Math.round(p.x), y: Math.round(p.y) });
   const adjacent = (o,n) => interactionApproaches(o).filter(p=>!blocked(p.x,p.y)).sort((a,b)=>Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
+  let recommendationPerson=null,expandedCast=null;
   function renderRecommendations(person){
+    recommendationPerson=person;
     const panel=shell.querySelector('.pb-recommendations'),items=recommendedCast(model,person);
     panel.hidden=false;
     shell.querySelector(`[data-toggle-person="${model.cast.findIndex(p=>castKey(p)===castKey(person))}"]`)?.closest('.pb-roster-row')?.after(panel);
@@ -347,7 +349,7 @@ export async function mountPixelWorld(shell, options) {
     if(objectSpeech&&!npcs.includes(objectSpeech.speaker))objectSpeech=null;
     if(pendingEvent?.actors.some(n=>!npcs.includes(n)))pendingEvent=null;
     if(activeEvent&&sceneActors(activeEvent.scene).some(n=>!n))endEvent();
-    selected=old?npcs.indexOf(old):-1;syncExposure();select(selected);renderRecipes();draw();
+    selected=old?npcs.indexOf(old):-1;syncExposure();renderRecipes();draw();
     try{localStorage.setItem(exposureStorageKey(model.key),JSON.stringify([...exposed]));}catch(_){}
   }
   function togglePanel(side,open) {
@@ -362,7 +364,7 @@ export async function mountPixelWorld(shell, options) {
       const object=objects.find(o=>o.kind===scene.object);
       const ready=!missing.length&&!!object;
       return `<article class="pb-recipe"><b>${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)}</small><p class="pb-help">${esc(scene.objectNote || "")}</p><p>${ready?'✓ 조합 가능':missing.length?`필요 인물: ${esc(missing.join(', '))}`:`${objectPhrase(OBJECTS[scene.object])} 먼저 놓아 주세요.`}</p><button class="pb-button" data-recipe="${i}" ${ready?'':'disabled'}>이 조합으로 모으기</button></article>`;
-    }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브제 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>`<button class="pb-button" data-common-recipe="${kind}" ${npcs[selected]&&objects.some(o=>o.kind===kind)?'':'disabled'}>${OBJECTS[kind]} · ${label}</button>`).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.includes(scene)).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
+    }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브젝트 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>`<button class="pb-button" data-common-recipe="${kind}" ${npcs[selected]&&objects.some(o=>o.kind===kind)?'':'disabled'}>${OBJECTS[kind]} · ${label}</button>`).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.includes(scene)).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><p>${esc(scene.actors.join(' ＋ '))} ＋ ${OBJECTS[scene.object]}</p><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
   }
   function requestPersonal(n){
     if(!n)return;
@@ -440,7 +442,7 @@ export async function mountPixelWorld(shell, options) {
     const scene = model.scenes.find((s) => s.object === o.kind && s.actors.includes(n.name) && sceneActors(s).every(Boolean));
     if (scene) return queueScene(scene,o);
     clearInfo();
-    if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브제나 빈 곳을 선택해 주세요.");
+    if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
   }
   function coordinates(e) {
     const r=canvas.getBoundingClientRect(),v=view();
@@ -479,7 +481,7 @@ export async function mountPixelWorld(shell, options) {
       if(pendingEvent?.o===o)pendingEvent=null;
       if(objectSpeech?.object===o)objectSpeech=null;
       objectCooldown.delete(o);
-      say('오브제를 집었어요. 빈 땅으로 끌어 옮겨 놓아 주세요.');draw();
+      say('오브젝트를 집었어요. 빈 땅으로 끌어 옮겨 놓아 주세요.');draw();
     },1000);
   }
   function objectLanding(held) {
@@ -579,7 +581,7 @@ export async function mountPixelWorld(shell, options) {
       if(objectHold.active){e.preventDefault();objectHold.p=coordinates(e);draw();}return;
     }
     if(!drag||e.pointerId!==drag.id)return;
-    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';drag.n.usingObject=null;drag.n.interaction=null;canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브제에 내려놓아 보세요.`);}
+    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';drag.n.usingObject=null;drag.n.interaction=null;canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브젝트에 내려놓아 보세요.`);}
     if(drag.active){e.preventDefault();drag.vx=drag.vx*.65+(e.clientX-drag.lastX)*.35;drag.lastX=e.clientX;drag.p=coordinates(e);draw();}
   },{signal});
   function finishDrag(e,cancel=false) {
@@ -598,7 +600,7 @@ export async function mountPixelWorld(shell, options) {
       if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);updateEncounters(performance.now());draw();return;}
     }
     if(blocked(landing.x,landing.y)){
-      n.x=held.from.x;n.y=held.from.y;say('여기는 오브제가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
+      n.x=held.from.x;n.y=held.from.y;say('여기는 오브젝트가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
     keepInView(n);updateEncounters(performance.now());draw();
   }
@@ -613,12 +615,12 @@ export async function mountPixelWorld(shell, options) {
     const p = coordinates(e), x = Math.round(p.x), y = Math.round(p.y);
     if(removing){
       const object=objects.map(o=>({o,d:Math.hypot(o.x-p.x,o.y-p.y)})).filter(v=>v.d<1.8).sort((a,b)=>a.d-b.d)[0]?.o;
-      if(object)demolish(o=>o===object);else say('철거할 오브제의 밑부분을 눌러 주세요.');
+      if(object)demolish(o=>o===object);else say('철거할 오브젝트의 밑부분을 눌러 주세요.');
       return;
     }
     if (placing) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
-      objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브제를 놓았어요. 1초 꾹 누르면 위치를 옮길 수 있어요."); return;
+      objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브젝트를 놓았어요. 1초 꾹 누르면 위치를 옮길 수 있어요."); return;
     }
     const hit=hitPerson(p);
     if (hit >= 0) {
@@ -668,12 +670,15 @@ export async function mountPixelWorld(shell, options) {
       if(drag||objectHold)return;
       const person=model.cast[Number(b.dataset.togglePerson??b.dataset.addPerson)],key=castKey(person);
       if(b.dataset.addPerson!==undefined)exposed.add(key);else if(exposed.has(key))exposed.delete(key);else exposed.add(key);
-      applyExposure();renderRecommendations(person);return;
+      applyExposure();renderRecommendations(b.dataset.addPerson!==undefined&&recommendationPerson?recommendationPerson:person);return;
     }
     if (b.dataset.castPerson!==undefined) {
       const person=model.cast[Number(b.dataset.castPerson)],key=castKey(person);
       if(!exposed.has(key)){exposed.add(key);applyExposure();}
-      const index=npcs.findIndex(n=>castKey(n)===key);if(index>=0)select(index,true);return;
+      const index=npcs.findIndex(n=>castKey(n)===key);
+      if(expandedCast===key){expandedCast=null;shell.querySelector('.pb-recommendations').hidden=true;shell.querySelector('.pb-person-details').hidden=true;b.setAttribute('aria-expanded','false');return;}
+      expandedCast=key;shell.querySelectorAll('[data-cast-person]').forEach(el=>el.setAttribute('aria-expanded',el===b));
+      shell.querySelector('.pb-person-details').hidden=false;if(index>=0)select(index,true);return;
     }
     if (b.dataset.place) {
       if(activeEvent) return;
@@ -717,7 +722,7 @@ export async function mountPixelWorld(shell, options) {
     if(action==='remove-object'){
       removing=!removing;placing=null;syncPlacement();
       b.setAttribute('aria-pressed',removing);b.textContent=removing?'철거 마치기':'개별 철거';
-      if(removing)say('철거할 오브제의 밑부분을 누르세요. 인물의 움직임은 유지돼요.');
+      if(removing)say('철거할 오브젝트의 밑부분을 누르세요. 인물의 움직임은 유지돼요.');
     }
     if(action==='reset')demolish(()=>true);
     if(action==="scene" && !activeEvent) {
@@ -751,7 +756,7 @@ export async function mountPixelWorld(shell, options) {
     if(activeEvent&&result.removed.includes(activeEvent.object))endEvent();
     if(objectSpeech&&result.removed.includes(objectSpeech.object))objectSpeech=null;
     result.removed.forEach(o=>objectCooldown.delete(o));
-    save();renderRecipes();draw();say(`${result.removed.length}개 오브제를 철거했어요.`);
+    save();renderRecipes();draw();say(`${result.removed.length}개 오브젝트를 철거했어요.`);
   }
   function propEvidence(n,kind){
     return chapterProps.find(item=>item.id===kind)?.evidence.find(e=>e.actors.includes(n.name)&&n.refs.some(ref=>{
@@ -800,7 +805,7 @@ export async function mountPixelWorld(shell, options) {
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
           objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,kind:'context',object:target};
         }
-        if((OBJECT_CATALOG[target.kind]?.action||target.kind)==="bench") { n.x=target.x;n.y=target.y;n.direction="right"; }
+        if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="right"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
         n.action="";n.usingObject=null;n.interaction=null;n.idle=3+Math.random()*5;
         if(!reduced&&!pendingTalk) {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
@@ -901,8 +906,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const anchor=interactionAnchor(n,TILE);
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  if(actionPose?.actual==='lie-stone'&&[1,2].includes(actionPose.phase)){c.translate(x,y-28);c.rotate(Math.PI/2);c.translate(-x,-y+28);}
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   drawInteractionEffects(c,n,actionPose,x,y,time);
   c.restore();
