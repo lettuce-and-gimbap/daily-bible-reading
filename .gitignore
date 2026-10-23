@@ -1,3 +1,7 @@
 data/summary/.patch.lock
 tools/commentary/.bible-cache/
 .claude/
+
+# Offline Python reference tooling
+__pycache__/
+*.py[cod]

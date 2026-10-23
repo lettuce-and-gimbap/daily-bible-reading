@@ -1,4 +1,5 @@
 // 공개 장별 요약의 물건 후보를 구절 범위와 함께 색인한다. 주석 원문은 사용/배포하지 않는다.
+import {OBJECT_NOTES} from './object-notes.js';
 const rows=[
  ['field','보리밭','crop','field','보리밭|이삭'],['water','물항아리','vessel','water','물항아리|물동이'],['bench','쉬는 자리','seat','bench','의자'],['tree','나무','plant','tree','나무'],['well','우물','well','well','우물'],['stone','돌','stone','stone','돌|돌멩이'],['bush','떨기나무','plant','bush','떨기나무'],['boat','배','boat','boat','배|작은 배'],['scroll','두루마리','book','scroll','두루마리'],['oil','기름병','vessel','oil','기름병'],
  ['ark-noah','노아의 방주','boat','boat','방주'],['ark-covenant','언약궤','chest','scroll','언약궤|법궤|증거궤'],['altar','제단','altar','bush','제단|번제단'],['incense-altar','분향단','altar','oil','분향단'],['tabernacle','성막','tent','scroll','성막'],['tent','장막','tent','bench','장막|천막'],['temple','성전','building','scroll','성전'],['gate','성문','building','stone','성문'],['wall','성벽','building','stone','성벽'],['tower','망대','building','stone','망대'],['house','집','building','bench','집'],['palace','왕궁','building','bench','왕궁'],['stable','구유','chest','bench','구유'],['tomb','무덤','stone','stone','무덤|돌무덤'],
@@ -9,7 +10,7 @@ const rows=[
  ['tablet','돌판','book','scroll','돌판'],['book','책','book','scroll','책|율법책'],['letter','편지','book','scroll','편지|서신'],['seal','인장','tool','scroll','인장|도장'],['signet','반지','wear','scroll','반지'],['ink','먹','vessel','scroll','먹|잉크'],['pen','붓','staff','scroll','붓'],['coin','동전','treasure','stone','동전|데나리온|세겔|드라크마'],['silver','은','treasure','stone','은'],['gold','금','treasure','stone','금'],['pearl','진주','treasure','stone','진주'],['jewel','보석','treasure','stone','보석'],['treasure-chest','보물상자','chest','scroll','보물|보화'],['moneybag','돈주머니','basket','scroll','돈주머니|전대'],
  ['lyre','수금','instrument','scroll','수금|비파'],['harp','거문고','instrument','scroll','거문고'],['tambourine','소고','instrument','field','소고'],['trumpet','나팔','instrument','scroll','나팔'],['flute','피리','instrument','scroll','피리'],['cymbal','제금','instrument','scroll','제금'],['millstone','맷돌','stone','stone','맷돌'],['plow','쟁기','tool','field','쟁기'],['sickle','낫','tool','field','낫'],['axe','도끼','tool','stone','도끼'],['hammer','망치','tool','stone','망치'],['nail','못','tool','stone','못'],['key','열쇠','tool','scroll','열쇠'],['scale','저울','tool','stone','저울'],['yoke','멍에','tool','field','멍에'],['cross','십자가','cross','stone','십자가'],['laver','물두멍','vessel','water','물두멍'],['oven','화덕','altar','field','화덕|풀무'],['brick','벽돌','stone','stone','벽돌'],['stone-pillar','돌기둥','stone','stone','돌기둥|기둥'],['ladder','사다리','tool','tree','사다리'],['rainbow','무지개','symbol','scroll','무지개'],['star','별','symbol','scroll','별'],['cloud','구름','symbol','water','구름'],['fire','불','lamp','bush','불'],['sheep','양','animal','field','양|어린 양'],['donkey','나귀','animal','bench','나귀'],['horse','말','animal','boat','말'],['dove','비둘기','animal','tree','비둘기'],['raven','까마귀','animal','tree','까마귀'],['snake','뱀','animal','stone','뱀'],['bronze-snake','놋뱀','symbol','stone','놋뱀'],['lion','사자','animal','stone','사자'],['calf','송아지','animal','field','송아지'],
 ];
-export const OBJECT_CATALOG=Object.fromEntries(rows.map(([id,name,family,action,aliases])=>[id,{id,name,family,action,aliases:aliases.split('|')} ]));
+export const OBJECT_CATALOG=Object.fromEntries(rows.map(([id,name,family,action,aliases])=>[id,{id,name,family,action,aliases:aliases.split('|'),...OBJECT_NOTES[id]} ]));
 const patterns=new Map();
 function matches(entry,text){
  if(!patterns.has(entry.id))patterns.set(entry.id,new RegExp(`(?<![가-힣])(?:${entry.aliases.join('|')})(?=$|[\\s.,!?·:;()“”‘’]|(?:은|는|이|가|을|를|과|와|도|에|의|로|으로|에서|에게|처럼|보다|만|까지|마다|들|이나|나)(?=$|[\\s.,!?·:;()“”‘’]))`,'u'));
@@ -25,7 +26,7 @@ export function chapterObjects(c){
   if(!matches(entry,text))return;
   const ref=`${c.name||c.code} ${c.chap}${verses?':'+verses:''}`;
   const actors=(c.data?.people||[]).filter(p=>! /^(하나님|여호와|성령|주님)$/.test(p.name)&&text.includes(p.name)).map(p=>p.name);
-  if(!result.has(entry.id))result.set(entry.id,{id:entry.id,name:entry.name,action:entry.action,family:entry.family,refs:[],actors:[],evidence:[]});
+  if(!result.has(entry.id))result.set(entry.id,{id:entry.id,name:entry.name,action:entry.action,family:entry.family,...OBJECT_NOTES[entry.id],refs:[],actors:[],evidence:[]});
   const item=result.get(entry.id);if(!item.refs.includes(ref))item.refs.push(ref);
   for(const name of actors)if(!item.actors.includes(name))item.actors.push(name);
   if(!item.evidence.some(e=>e.ref===ref))item.evidence.push({ref,source,actors,text});

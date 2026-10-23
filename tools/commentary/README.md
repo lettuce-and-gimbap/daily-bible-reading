@@ -1,5 +1,19 @@
 # 장별 요약 데이터 작업 안내서
 
+## 비공개 업로드 자료 조회
+
+두 성경 역본 132개 파일(각 66권·1,189장)은 저장소 밖 `/workspace/private-reference/bible/`에 보관한다. 원본은 수정하지 않고 절 번호의 누락·역본 차이를 보존한다. 모델 자체의 영구 학습이나 다른 환경으로의 자동 이전은 아니다.
+
+```sh
+python tools/commentary/private-scripture.py status
+python tools/commentary/private-scripture.py passage gen 37 3 --commentary --commentary-chars 800
+python tools/commentary/private-scripture.py search 에봇 --code exo --limit 4
+```
+
+필요한 절만 두 역본으로 대조한 뒤 업로드 호크마 정리를 해석 보조로 확인한다. 본문과 주석 해석이 다르면 본문을 우선하고 차이를 기록한다. 이미 정확한 설명은 유지한다. `--db` 또는 `PRIVATE_BIBLE_DB`로 다른 **저장소 외부** 경로를 지정할 수 있다. DB가 없으면 비공개 자료 연결부터 복원한다.
+
+원문·DB·업로드 매니페스트는 Git이나 웹 배포에 넣지 않는다. 앱에는 새로 쓴 설명과 근거 구절만 반영한다. 도구는 오프라인 개발 조회 전용이며 앱 서버/API로 연결하지 않는다. 추가 가져오기는 비공개 매니페스트의 `result.path`를 읽는 `import` 명령으로 수행하며, 132개 파일·권별 장 수·중복 번호·DB 무결성을 검사한다.
+
 오늘 분량 요약을 Gemini로 그때그때 만들지 않고, 1,189장 요약을 **미리 써 둔 파일**로 둔다.
 앱은 하루 분량에 들어 있는 장들의 요약을 합쳐서 보여 준다(`js/features/summary-data.js`).
 그날 분량의 장이 하나라도 파일에 없으면 예전처럼 서버(Gemini) 요약을 쓴다.
