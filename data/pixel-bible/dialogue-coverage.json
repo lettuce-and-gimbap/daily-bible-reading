@@ -1,0 +1,612 @@
+{
+  "schema": 1,
+  "scope": "Counts are summary label occurrences, not unique biblical persons. Authored dialogue is imagined. Chapter role/relation text remains narrator commentary. Hokma review pending.",
+  "stats": {
+    "books": 66,
+    "chapters": 1189,
+    "sourceLabelCount": 2259,
+    "characterOccurrences": 5956,
+    "authoredSoloOccurrences": 2038,
+    "chapterRoleOccurrences": 3918,
+    "ordinaryOnlyOccurrences": 0,
+    "chapterRelationRecords": 3826,
+    "majorSets": 100,
+    "majorSetsWithMatches": 100
+  },
+  "books": [
+    {
+      "code": "gen",
+      "chapters": 50,
+      "characterOccurrences": 291,
+      "authoredSoloOccurrences": 174,
+      "chapterRoleOccurrences": 117,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 205
+    },
+    {
+      "code": "exo",
+      "chapters": 40,
+      "characterOccurrences": 137,
+      "authoredSoloOccurrences": 72,
+      "chapterRoleOccurrences": 65,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 89
+    },
+    {
+      "code": "lev",
+      "chapters": 27,
+      "characterOccurrences": 29,
+      "authoredSoloOccurrences": 17,
+      "chapterRoleOccurrences": 12,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 14
+    },
+    {
+      "code": "num",
+      "chapters": 36,
+      "characterOccurrences": 121,
+      "authoredSoloOccurrences": 63,
+      "chapterRoleOccurrences": 58,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 75
+    },
+    {
+      "code": "deu",
+      "chapters": 34,
+      "characterOccurrences": 59,
+      "authoredSoloOccurrences": 28,
+      "chapterRoleOccurrences": 31,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 22
+    },
+    {
+      "code": "jos",
+      "chapters": 24,
+      "characterOccurrences": 80,
+      "authoredSoloOccurrences": 34,
+      "chapterRoleOccurrences": 46,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 52
+    },
+    {
+      "code": "jdg",
+      "chapters": 21,
+      "characterOccurrences": 99,
+      "authoredSoloOccurrences": 15,
+      "chapterRoleOccurrences": 84,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 68
+    },
+    {
+      "code": "rut",
+      "chapters": 4,
+      "characterOccurrences": 21,
+      "authoredSoloOccurrences": 12,
+      "chapterRoleOccurrences": 9,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 21
+    },
+    {
+      "code": "1sa",
+      "chapters": 31,
+      "characterOccurrences": 250,
+      "authoredSoloOccurrences": 94,
+      "chapterRoleOccurrences": 156,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 377
+    },
+    {
+      "code": "2sa",
+      "chapters": 24,
+      "characterOccurrences": 317,
+      "authoredSoloOccurrences": 105,
+      "chapterRoleOccurrences": 212,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 385
+    },
+    {
+      "code": "1ki",
+      "chapters": 22,
+      "characterOccurrences": 139,
+      "authoredSoloOccurrences": 67,
+      "chapterRoleOccurrences": 72,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 115
+    },
+    {
+      "code": "2ki",
+      "chapters": 25,
+      "characterOccurrences": 182,
+      "authoredSoloOccurrences": 50,
+      "chapterRoleOccurrences": 132,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 141
+    },
+    {
+      "code": "1ch",
+      "chapters": 29,
+      "characterOccurrences": 215,
+      "authoredSoloOccurrences": 84,
+      "chapterRoleOccurrences": 131,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 128
+    },
+    {
+      "code": "2ch",
+      "chapters": 36,
+      "characterOccurrences": 215,
+      "authoredSoloOccurrences": 65,
+      "chapterRoleOccurrences": 150,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 151
+    },
+    {
+      "code": "ezr",
+      "chapters": 10,
+      "characterOccurrences": 66,
+      "authoredSoloOccurrences": 15,
+      "chapterRoleOccurrences": 51,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 43
+    },
+    {
+      "code": "neh",
+      "chapters": 13,
+      "characterOccurrences": 83,
+      "authoredSoloOccurrences": 18,
+      "chapterRoleOccurrences": 65,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 52
+    },
+    {
+      "code": "est",
+      "chapters": 10,
+      "characterOccurrences": 56,
+      "authoredSoloOccurrences": 28,
+      "chapterRoleOccurrences": 28,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 47
+    },
+    {
+      "code": "job",
+      "chapters": 42,
+      "characterOccurrences": 105,
+      "authoredSoloOccurrences": 61,
+      "chapterRoleOccurrences": 44,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 54
+    },
+    {
+      "code": "psa",
+      "chapters": 150,
+      "characterOccurrences": 437,
+      "authoredSoloOccurrences": 114,
+      "chapterRoleOccurrences": 323,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 144
+    },
+    {
+      "code": "pro",
+      "chapters": 31,
+      "characterOccurrences": 136,
+      "authoredSoloOccurrences": 4,
+      "chapterRoleOccurrences": 132,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 58
+    },
+    {
+      "code": "ecc",
+      "chapters": 12,
+      "characterOccurrences": 41,
+      "authoredSoloOccurrences": 0,
+      "chapterRoleOccurrences": 41,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 18
+    },
+    {
+      "code": "sng",
+      "chapters": 8,
+      "characterOccurrences": 31,
+      "authoredSoloOccurrences": 8,
+      "chapterRoleOccurrences": 23,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 23
+    },
+    {
+      "code": "isa",
+      "chapters": 66,
+      "characterOccurrences": 266,
+      "authoredSoloOccurrences": 44,
+      "chapterRoleOccurrences": 222,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 91
+    },
+    {
+      "code": "jer",
+      "chapters": 52,
+      "characterOccurrences": 245,
+      "authoredSoloOccurrences": 81,
+      "chapterRoleOccurrences": 164,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 108
+    },
+    {
+      "code": "lam",
+      "chapters": 5,
+      "characterOccurrences": 16,
+      "authoredSoloOccurrences": 0,
+      "chapterRoleOccurrences": 16,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 9
+    },
+    {
+      "code": "ezk",
+      "chapters": 48,
+      "characterOccurrences": 197,
+      "authoredSoloOccurrences": 39,
+      "chapterRoleOccurrences": 158,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 70
+    },
+    {
+      "code": "dan",
+      "chapters": 12,
+      "characterOccurrences": 70,
+      "authoredSoloOccurrences": 22,
+      "chapterRoleOccurrences": 48,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 43
+    },
+    {
+      "code": "hos",
+      "chapters": 14,
+      "characterOccurrences": 57,
+      "authoredSoloOccurrences": 6,
+      "chapterRoleOccurrences": 51,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 20
+    },
+    {
+      "code": "jol",
+      "chapters": 3,
+      "characterOccurrences": 13,
+      "authoredSoloOccurrences": 0,
+      "chapterRoleOccurrences": 13,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "amo",
+      "chapters": 9,
+      "characterOccurrences": 39,
+      "authoredSoloOccurrences": 7,
+      "chapterRoleOccurrences": 32,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 13
+    },
+    {
+      "code": "oba",
+      "chapters": 1,
+      "characterOccurrences": 5,
+      "authoredSoloOccurrences": 0,
+      "chapterRoleOccurrences": 5,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 2
+    },
+    {
+      "code": "jnh",
+      "chapters": 4,
+      "characterOccurrences": 12,
+      "authoredSoloOccurrences": 4,
+      "chapterRoleOccurrences": 8,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "mic",
+      "chapters": 7,
+      "characterOccurrences": 32,
+      "authoredSoloOccurrences": 4,
+      "chapterRoleOccurrences": 28,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 14
+    },
+    {
+      "code": "nam",
+      "chapters": 3,
+      "characterOccurrences": 12,
+      "authoredSoloOccurrences": 1,
+      "chapterRoleOccurrences": 11,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 6
+    },
+    {
+      "code": "hab",
+      "chapters": 3,
+      "characterOccurrences": 10,
+      "authoredSoloOccurrences": 3,
+      "chapterRoleOccurrences": 7,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 3
+    },
+    {
+      "code": "zep",
+      "chapters": 3,
+      "characterOccurrences": 16,
+      "authoredSoloOccurrences": 3,
+      "chapterRoleOccurrences": 13,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 4
+    },
+    {
+      "code": "hag",
+      "chapters": 2,
+      "characterOccurrences": 10,
+      "authoredSoloOccurrences": 6,
+      "chapterRoleOccurrences": 4,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 4
+    },
+    {
+      "code": "zec",
+      "chapters": 14,
+      "characterOccurrences": 68,
+      "authoredSoloOccurrences": 8,
+      "chapterRoleOccurrences": 60,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 21
+    },
+    {
+      "code": "mal",
+      "chapters": 4,
+      "characterOccurrences": 20,
+      "authoredSoloOccurrences": 4,
+      "chapterRoleOccurrences": 16,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "mat",
+      "chapters": 28,
+      "characterOccurrences": 195,
+      "authoredSoloOccurrences": 69,
+      "chapterRoleOccurrences": 126,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 121
+    },
+    {
+      "code": "mrk",
+      "chapters": 16,
+      "characterOccurrences": 128,
+      "authoredSoloOccurrences": 50,
+      "chapterRoleOccurrences": 78,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 81
+    },
+    {
+      "code": "luk",
+      "chapters": 24,
+      "characterOccurrences": 193,
+      "authoredSoloOccurrences": 60,
+      "chapterRoleOccurrences": 133,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 126
+    },
+    {
+      "code": "jhn",
+      "chapters": 21,
+      "characterOccurrences": 136,
+      "authoredSoloOccurrences": 53,
+      "chapterRoleOccurrences": 83,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 102
+    },
+    {
+      "code": "act",
+      "chapters": 28,
+      "characterOccurrences": 238,
+      "authoredSoloOccurrences": 99,
+      "chapterRoleOccurrences": 139,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 158
+    },
+    {
+      "code": "rom",
+      "chapters": 16,
+      "characterOccurrences": 93,
+      "authoredSoloOccurrences": 48,
+      "chapterRoleOccurrences": 45,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 49
+    },
+    {
+      "code": "1co",
+      "chapters": 16,
+      "characterOccurrences": 95,
+      "authoredSoloOccurrences": 40,
+      "chapterRoleOccurrences": 55,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 54
+    },
+    {
+      "code": "2co",
+      "chapters": 13,
+      "characterOccurrences": 65,
+      "authoredSoloOccurrences": 31,
+      "chapterRoleOccurrences": 34,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 42
+    },
+    {
+      "code": "gal",
+      "chapters": 6,
+      "characterOccurrences": 36,
+      "authoredSoloOccurrences": 18,
+      "chapterRoleOccurrences": 18,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 24
+    },
+    {
+      "code": "eph",
+      "chapters": 6,
+      "characterOccurrences": 32,
+      "authoredSoloOccurrences": 12,
+      "chapterRoleOccurrences": 20,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 18
+    },
+    {
+      "code": "php",
+      "chapters": 4,
+      "characterOccurrences": 25,
+      "authoredSoloOccurrences": 12,
+      "chapterRoleOccurrences": 13,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 16
+    },
+    {
+      "code": "col",
+      "chapters": 4,
+      "characterOccurrences": 28,
+      "authoredSoloOccurrences": 17,
+      "chapterRoleOccurrences": 11,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 17
+    },
+    {
+      "code": "1th",
+      "chapters": 5,
+      "characterOccurrences": 26,
+      "authoredSoloOccurrences": 12,
+      "chapterRoleOccurrences": 14,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 17
+    },
+    {
+      "code": "2th",
+      "chapters": 3,
+      "characterOccurrences": 20,
+      "authoredSoloOccurrences": 7,
+      "chapterRoleOccurrences": 13,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 11
+    },
+    {
+      "code": "1ti",
+      "chapters": 6,
+      "characterOccurrences": 39,
+      "authoredSoloOccurrences": 18,
+      "chapterRoleOccurrences": 21,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 22
+    },
+    {
+      "code": "2ti",
+      "chapters": 4,
+      "characterOccurrences": 32,
+      "authoredSoloOccurrences": 20,
+      "chapterRoleOccurrences": 12,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 18
+    },
+    {
+      "code": "tit",
+      "chapters": 3,
+      "characterOccurrences": 21,
+      "authoredSoloOccurrences": 9,
+      "chapterRoleOccurrences": 12,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 12
+    },
+    {
+      "code": "phm",
+      "chapters": 1,
+      "characterOccurrences": 9,
+      "authoredSoloOccurrences": 6,
+      "chapterRoleOccurrences": 3,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "heb",
+      "chapters": 13,
+      "characterOccurrences": 70,
+      "authoredSoloOccurrences": 37,
+      "chapterRoleOccurrences": 33,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 31
+    },
+    {
+      "code": "jas",
+      "chapters": 5,
+      "characterOccurrences": 27,
+      "authoredSoloOccurrences": 7,
+      "chapterRoleOccurrences": 20,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 14
+    },
+    {
+      "code": "1pe",
+      "chapters": 5,
+      "characterOccurrences": 29,
+      "authoredSoloOccurrences": 14,
+      "chapterRoleOccurrences": 15,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 18
+    },
+    {
+      "code": "2pe",
+      "chapters": 3,
+      "characterOccurrences": 14,
+      "authoredSoloOccurrences": 7,
+      "chapterRoleOccurrences": 7,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 6
+    },
+    {
+      "code": "1jn",
+      "chapters": 5,
+      "characterOccurrences": 21,
+      "authoredSoloOccurrences": 11,
+      "chapterRoleOccurrences": 10,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 11
+    },
+    {
+      "code": "2jn",
+      "chapters": 1,
+      "characterOccurrences": 5,
+      "authoredSoloOccurrences": 1,
+      "chapterRoleOccurrences": 4,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 4
+    },
+    {
+      "code": "3jn",
+      "chapters": 1,
+      "characterOccurrences": 5,
+      "authoredSoloOccurrences": 3,
+      "chapterRoleOccurrences": 2,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "jud",
+      "chapters": 1,
+      "characterOccurrences": 9,
+      "authoredSoloOccurrences": 2,
+      "chapterRoleOccurrences": 7,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 5
+    },
+    {
+      "code": "rev",
+      "chapters": 22,
+      "characterOccurrences": 167,
+      "authoredSoloOccurrences": 15,
+      "chapterRoleOccurrences": 152,
+      "ordinaryOnlyOccurrences": 0,
+      "chapterRelationRecords": 134
+    }
+  ]
+}

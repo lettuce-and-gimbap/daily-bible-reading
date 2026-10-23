@@ -153,3 +153,46 @@ test('이세벨의 대상별 대사를 구분하고 거리·현재 본문·이�
  assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:20}]).some(c=>c.kind==='pair'));
  people[0].path=[{x:11,y:8}];assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:21}]).some(c=>c.speaker.name==='이세벨'));
 });
+
+test('전용 외형이 없는 주요 인물도 고유 대사를 선택하며 마리아의 신원을 구분한다',async()=>{
+ const {buildChapterDialogue,majorFor,MAJOR_DIALOGUE}=await import('../js/features/pixel-bible/chapter-dialogue.js');
+ const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
+ assert.equal(MAJOR_DIALOGUE.length,100);
+ const chapters=[{code:'1sa',name:'사무엘상',chap:26,data:{people:[{name:'아비새',role:'다윗과 함께 간 장수'}]}},{code:'act',name:'사도행전',chap:12,data:{people:[{name:'마리아',role:'마가의 어머니'}]}}];
+ const context=buildChapterDialogue(chapters);
+ assert.equal(majorFor({name:'마리아'},context).label,'마가의 어머니 마리아');
+ assert.equal(majorFor({name:'아비새'},context).label,'아비새');
+ assert.ok(dialogueCandidates([{name:'아비새',x:10,y:8,path:[]}],chapters,context).some(c=>c.origin==='authored'&&c.kind==='solo'));
+});
+
+test('다른 본문의 인물과 관계는 해당 장의 안내로 연결하고 발언으로 위장하지 않는다',async()=>{
+ const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
+ const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
+ const chapters=[{code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'하눈',role:'성문을 수리한 사람'},{name:'살룬',role:'문과 성벽을 수리한 사람'}],rels:[{from:'하눈',to:'살룬',label:'함께 재건',verses:'13-15',note:'두 사람이 각자 맡은 문과 성벽을 수리했어요.'}]}}];
+ const npcs=[{name:'하눈',x:10,y:8,path:[]},{name:'살룬',x:11,y:9,path:[]}],context=buildChapterDialogue(chapters),lines=dialogueCandidates(npcs,chapters,context);
+ assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref==='느헤미야 3장'&&c.text.includes('성문을 수리')));
+ assert.equal(lines.filter(c=>c.origin==='chapter-relation').length,2);
+ assert.ok(!lines.some(c=>c.kind==='ordinary'));
+ npcs[1].x=30;assert.ok(!dialogueCandidates(npcs,chapters,context).some(c=>c.target));
+});
+
+test('대화는 같은 축에서만 마주보고, 대각선일 때 걸어갈 안전한 자리를 찾는다',async()=>{
+ const {opposedDirections,planConversation}=await import('../js/features/pixel-bible/conversation.js');
+ const a={x:10,y:8,path:[]},b={x:12,y:9,path:[]};const blocked=(x,y)=>x<2||x>37||y<5||y>15;
+ assert.equal(opposedDirections(a,b),null);
+ const p=planConversation(a,b,[a,b],blocked,findPath);assert.ok(p?.route.length);assert.ok(opposedDirections(p.anchor,p.destination));
+ assert.deepEqual({x:b.x,y:b.y},{x:12,y:9});
+ assert.deepEqual(opposedDirections({x:10,y:8},{x:12,y:8}),['right','left']);
+ assert.deepEqual(opposedDirections({x:10,y:8},{x:10,y:10}),['down','up']);
+ assert.equal(planConversation(a,b,[a,b],()=>true,findPath),null);
+ const occupied={x:p.destination.x,y:p.destination.y,path:[]},alternate=planConversation(a,b,[a,b,occupied],blocked,findPath);
+ assert.ok(alternate);assert.ok(alternate.destination.x!==occupied.x||alternate.destination.y!==occupied.y);
+});
+
+test('말풍선 성경구절은 장과 절 범위를 안전하게 해석한다',async()=>{
+ const {parseReference:p}=await import('../js/features/pixel-bible/references.js');
+ assert.deepEqual(p('열왕기상 21:5–7'),{code:'1ki',chapter:21,verses:[5,6,7]});
+ assert.deepEqual(p('요한계시록 22:1,3-5'),{code:'rev',chapter:22,verses:[1,3,4,5]});
+ assert.deepEqual(p('느헤미야 3장'),{code:'neh',chapter:3,verses:null});
+ assert.equal(p('열왕기상 99:1'),null);assert.equal(p('본문 없음'),null);assert.equal(p('열왕기상 21:8-3'),null);
+});

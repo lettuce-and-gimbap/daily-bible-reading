@@ -1,3 +1,6 @@
+import { opposedDirections, planConversation } from './conversation.js';
+import { parseReference } from './references.js';
+import { buildChapterDialogue } from './chapter-dialogue.js';
 import { dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
@@ -87,12 +90,13 @@ export async function mountPixelWorld(shell, options) {
   const loaded = await Promise.all([...new Set(requested.map((c) => c.code))].map(async (code) => [code, await loadBook(code, options.cachedBook)]));
   if (!shell.isConnected) return () => {};
   const byCode = Object.fromEntries(loaded);
-  const model = buildWorldModel(requested.map((c) => ({ ...c, data: byCode[c.code].chapters[c.chap] })));
+  const chapterData=requested.map((c)=>({...c,data:byCode[c.code].chapters[c.chap]}));
+  const model=buildWorldModel(chapterData),dialogueContext=buildChapterDialogue(chapterData);
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><small></small></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 캐릭터를 누르고 끌어 옮길 수 있어요. 선택 후 땅을 누르거나 방향키로 걸어갈 수도 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물 선택과 외형 근거"><h3>함께 있는 인물</h3><div class="pb-roster">${model.cast.map((p,i)=>`<button class="pb-button" data-person="${i}" aria-pressed="${i===0}">${esc(p.name)}</button>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -108,29 +112,70 @@ export async function mountPixelWorld(shell, options) {
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
-  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0;
-  function hideSpeech(){speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
+  function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
+  function hideSpeech(){cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
   function updateSpeech(now){
-    const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!placing&&!shell.querySelector('.pb-design');
-    const ready=!speech.current&&now>=speech.nextAt;
-    const previous=speech.current;
-    const current=speech.tick(now,enabled&&ready?dialogueCandidates(npcs,requested):[],enabled);
-    if(current!==previous&&current?.target){const a=current.speaker,b=current.target;a.direction=movementDirection(b.x-a.x,b.y-a.y);b.direction=movementDirection(a.x-b.x,a.y-b.y);a.idle=b.idle=5;}
+    const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!placing&&!shell.querySelector('.pb-design,.pb-scripture');
+    const ready=!speech.current&&!pendingTalk&&now>=speech.nextAt;
+    let current=null;
+    if(!enabled){cancelTalk();speech.tick(now,[],false);}
+    else if(pendingTalk){
+      const talk=pendingTalk;
+      if(now>talk.deadline){cancelTalk();speech.dismiss(now);}
+      else if(!talk.plan.mover.path.length){
+        pendingTalk=null;
+        if(faceEachOther(talk.choice.speaker,talk.choice.target))current=speech.start(talk.choice,now);
+        else speech.dismiss(now);
+      }
+    }else{
+      const candidates=ready?dialogueCandidates(npcs,chapterData,dialogueContext):[];
+      current=speech.tick(now,candidates,true);
+      if(current?.target&&current!==shownSpeech){
+        const plan=planConversation(current.speaker,current.target,npcs,blocked,findPath);
+        if(!plan){speech.dismiss(now);current=null;}
+        else if(plan.route.length){
+          pendingTalk={choice:current,plan,deadline:now+6000};speech.current=null;
+          plan.mover.path=plan.route;plan.anchor.idle=8;plan.mover.idle=8;current=null;
+        }else if(!faceEachOther(current.speaker,current.target)){speech.dismiss(now);current=null;}
+      }
+    }
     if(current!==shownSpeech){
       shownSpeech=current;speechElement.hidden=!current;
-      if(current){speechElement.querySelector('p').textContent=current.text;speechElement.querySelector('small').textContent=`${current.speaker.name}${current.target?' → '+current.target.name:''} · ${current.kind==='ordinary'?'창작 일상':current.kind==='pair'?'상상 대화':'상상 독백'}${current.ref?' · '+current.ref:''}`;speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}
+      if(current){
+        speechElement.querySelector('p').textContent=current.text;
+        const link=speechElement.querySelector('.pb-speech-reference');
+        link.textContent=current.ref||'';link.hidden=!parseReference(current.ref);link.setAttribute('aria-label',`${current.ref||''} 성경 본문 보기`);
+        speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
+      }
     }
+  }
+  async function openSpeechPassage(){
+    const reference=shownSpeech?.ref,parsed=parseReference(reference);if(!parsed)return;
+    hideSpeech();
+    const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label',reference);
+    panel.innerHTML='<header><b></b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body" aria-live="polite">본문을 불러오는 중…</div>';
+    panel.querySelector('b').textContent=reference;shell.append(panel);panel.querySelector('button').focus();
+    try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;}
+    catch(_){if(panel.isConnected)panel.querySelector('.pb-scripture-body').textContent='본문을 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 눌러 주세요.';}
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
     const r=canvas.getBoundingClientRect(),v=worldViewport(canvas.width,canvas.height),n=shownSpeech.speaker;
     const x=(n.x*TILE*v.scale+v.x)*r.width/canvas.width,y=((n.y*TILE-72)*v.scale+v.y)*r.height/canvas.height;
-    const left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
+    let left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
     const topLimit=Math.max(48,shell.querySelector('.pb-world-head').offsetHeight+10),above=y-speechHeight-10;
     const below=above<topLimit;
     const proposed=below?((n.y*TILE+42)*v.scale+v.y)*r.height/canvas.height:above;
     speechElement.dataset.below=String(below);
-    speechElement.style.left=`${Math.round(left)}px`;speechElement.style.top=`${Math.round(Math.max(topLimit,Math.min(r.height-speechHeight-12,proposed)))}px`;
+    let top=Math.max(topLimit,Math.min(r.height-speechHeight-12,proposed));
+    if(shownSpeech.target&&shownSpeech.target.x===n.x){
+      const right=r.width-x>=speechWidth+48;
+      left=Math.max(8,Math.min(r.width-speechWidth-8,right?x+36:x-speechWidth-36));
+      top=Math.max(topLimit,Math.min(r.height-speechHeight-12,y));speechElement.dataset.side=right?'right':'left';
+    }else delete speechElement.dataset.side;
+    speechElement.style.left=`${Math.round(left)}px`;speechElement.style.top=`${Math.round(top)}px`;
     speechElement.style.setProperty('--pb-tail',`${Math.max(14,Math.min(speechWidth-14,x-left))}px`);
   }
   const storageKey = `pixel-bible-layout:${model.key}`;
@@ -175,6 +220,7 @@ export async function mountPixelWorld(shell, options) {
     renderRecipes();say(`${n.name} · ${n.role || "본문 속 인물"}${n.refs.length ? ` (${n.refs.join(", ")})` : ""}. 다른 인물을 누르면 관계를 살펴보고, 땅을 누르면 이동해요.`);
   }
   function move(n, goal, task = null) {
+    if(pendingTalk||speech.current?.speaker===n||speech.current?.target===n)hideSpeech();
     const path = findPath(cell(n), goal, blocked);
     if (!path) return false;
     n.path = path; n.task = task; n.action = ""; n.idle = 5;
@@ -235,7 +281,7 @@ export async function mountPixelWorld(shell, options) {
   }
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag) return;
-    suppressClick=false;
+    hideSpeech();suppressClick=false;
     if(!options.admin()||activeEvent||placing||e.button!==0||window.innerHeight>=window.innerWidth)return;
     const index=hitPerson(coordinates(e));if(index<0)return;
     const previous=npcs[selected];select(index);const n=npcs[index];
@@ -325,6 +371,8 @@ export async function mountPixelWorld(shell, options) {
       placing=b.dataset.place; syncPlacement(); say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`); return;
     }
     const action=b.dataset.action;
+    if(action==='passage'){await openSpeechPassage();return;}
+    if(action==='close-scripture'){shell.querySelector('.pb-scripture')?.remove();canvas.focus();return;}
     if(action==="design" && !shell.querySelector(".pb-design")) {
       const board=document.createElement("section");board.className="pb-design";board.setAttribute("aria-label","픽셀 캐릭터와 지형 디자인 도안");
       board.innerHTML='<header><b>실제 캐릭터 · 지형 도안</b><button class="pb-button" data-action="close-design">도안 닫기 ✕</button></header><canvas aria-label="전용 캐릭터 100종과 보리밭, 물항아리, 쉬는 자리, 나무"></canvas>';
@@ -378,6 +426,8 @@ export async function mountPixelWorld(shell, options) {
     time+=dt;
     for(const n of npcs) {
       if(drag?.active && drag.n===n)continue;
+      const talk=pendingTalk?.choice||speech.current;
+      if(talk?.target&&(n===talk.speaker||n===talk.target)&&!n.path.length){n.idle=6;continue;}
       if(n.path.length) {
         const p=n.path[0],dx=p.x-n.x,dy=p.y-n.y,d=Math.hypot(dx,dy),step=dt*2.8;
         n.direction=movementDirection(dx,dy,n.direction);
@@ -392,7 +442,7 @@ export async function mountPixelWorld(shell, options) {
         if(target.kind==="bench") { n.x=target.x;n.y=target.y; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
         n.action="";n.idle=3+Math.random()*5;
-        if(!reduced) {const p={x:Math.max(2,Math.min(37,Math.round(n.x+(Math.random()-.5)*10))),y:Math.max(5,Math.min(15,Math.round(n.y+(Math.random()-.5)*6)))};if(!blocked(p.x,p.y))move(n,p);}
+        if(!reduced&&!pendingTalk) {const p={x:Math.max(2,Math.min(37,Math.round(n.x+(Math.random()-.5)*10))),y:Math.max(5,Math.min(15,Math.round(n.y+(Math.random()-.5)*6)))};if(!blocked(p.x,p.y))move(n,p);}
       }
     }
     if(pendingEvent && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)) beginEvent(pendingEvent.scene);
@@ -422,6 +472,7 @@ export async function mountPixelWorld(shell, options) {
     ctx.restore();positionSpeech();
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
+    const scripture=shell.querySelector('.pb-scripture');if(scripture){e.preventDefault();scripture.remove();canvas.focus();return;}
     const board=shell.querySelector(".pb-design");if(board){e.preventDefault();board.remove();shell.querySelector('[data-action="design"]').focus();}
   },{signal});
   const fitCanvas=()=>{
@@ -434,7 +485,7 @@ export async function mountPixelWorld(shell, options) {
     if(disposed)return;
     if(!options.admin()) {say("관리자 로그인이 필요해요. 창을 닫고 다시 로그인해 주세요.");return;}
     const dt=Math.min(.05,(stamp-last)/1000||0);last=stamp;
-    if(!paused) {
+    if(!paused&&!shell.querySelector('.pb-scripture')) {
       if(!activeEvent) update(dt);
       else {
         cinematicTime+=dt;activeEvent.elapsed+=dt;

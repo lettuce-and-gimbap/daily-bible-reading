@@ -84,6 +84,14 @@ async function openPixelBible() {
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, admin: () => isAdmin(), landscape: () => pixelBibleLandscape(shell),
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
+      readPassage: async ({code,chapter,verses}) => {
+        const idx=CHAPTERS.findIndex(c=>c.book.code===code&&c.chap===chapter);
+        if(idx<0||!PUSH_SERVER)throw new Error('passage-unavailable');
+        const wanted=verses?new Set(verses):null;
+        const rows=await versePairs(idx,n=>!wanted||wanted.has(n),['gae','easy']);
+        if(!rows.length)throw new Error('passage-empty');
+        return versePairsHtml(rows,['개역개정4판','쉬운성경']);
+      },
     }));
   } catch (e) {
     if (!modal.dialog.isConnected) return;
