@@ -14,11 +14,11 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="css/base.css?v=9.19.2">
-  <link rel="stylesheet" href="css/setup.css?v=9.19.2">
-  <link rel="stylesheet" href="css/reader.css?v=9.19.2">
-  <link rel="stylesheet" href="css/stats.css?v=9.19.2">
-  <link rel="stylesheet" href="css/pixel-bible.css">
+  <link rel="stylesheet" href="css/base.css?v=10.0.0">
+  <link rel="stylesheet" href="css/setup.css?v=10.0.0">
+  <link rel="stylesheet" href="css/reader.css?v=10.0.0">
+  <link rel="stylesheet" href="css/stats.css?v=10.0.0">
+  <link rel="stylesheet" href="css/pixel-bible.css?v=10.0.0">
 </head>
 <body>
   <header class="topbar">
@@ -31,12 +31,12 @@
       <span class="admin-badge" id="admin-badge" title="관리자" hidden><svg viewBox="0 0 40 32" aria-hidden="true"><path d="M20 8C16 5 10 4 3 5v20c7-1 13 0 17 3 4-3 10-4 17-3V5c-7-1-13 0-17 3z" fill="#fff8ec" stroke="#2f6f55" stroke-width="2" stroke-linejoin="round"/><path d="M20 8v20" stroke="#2f6f55" stroke-width="1.6"/><path d="M7 11c3-1 6-1 9 0M7 15c3-1 6-1 9 0M24 11c3-1 6-1 9 0" stroke="#a7d8c0" stroke-width="1.6" fill="none"/><g transform="rotate(38 30 15)"><rect x="27.5" y="-2" width="5" height="19" rx="1.6" fill="#f2c230" stroke="#8a5a1a" stroke-width="1.2"/><path d="M27.5 17l2.5 5 2.5-5z" fill="#f3d9b1" stroke="#8a5a1a" stroke-width="1.2"/></g></svg></span>
     </div>
     <div class="topbar-right">
+      <button class="pb-entry" id="pixel-bible-entry" data-pixel-bible hidden aria-label="PIXEL BIBLE 입장"><span>PIXEL</span><span>BIBLE</span></button>
       <nav class="tabs" aria-label="메뉴">
         <a href="#today" data-route="today">통독</a>
         <a href="#qt" data-route="qt">QT</a>
         <a href="#stats" data-route="stats">관리</a>
       </nav>
-      <button class="pb-entry" id="pixel-bible-entry" data-pixel-bible hidden aria-label="PIXEL BIBLE 입장"><span>PIXEL</span><span>BIBLE</span></button>
       <button class="reload-btn" id="app-reload" aria-label="앱 새로 불러오기" title="앱 새로 불러오기">↻</button>
       <span class="app-sign" title="만든 사람: 벅수">
         <b id="app-ver">v</b>
@@ -53,35 +53,35 @@
   </footer>
 
   <!-- 순서가 중요: core(데이터·저장) → shared(공통) → features(화면별 기능) → main(시작) -->
-  <script src="js/core/bible.js?v=9.19.2"></script>
-  <script src="js/core/store.js?v=9.19.2"></script>
-  <script src="js/core/config.js?v=9.19.2"></script>
-  <script src="js/core/versecounts.js?v=9.19.2"></script>
-  <script src="js/shared/state.js?v=9.19.2"></script>
-  <script src="js/shared/godpia.js?v=9.19.2"></script>
-  <script src="js/shared/ui.js?v=9.19.2"></script>
-  <script src="js/shared/slide.js?v=9.19.2"></script>
-  <script src="js/features/setup.js?v=9.19.2"></script>
-  <script src="js/features/reader.js?v=9.19.2"></script>
-  <script src="js/features/verses.js?v=9.19.2"></script>
-  <script src="js/features/picker.js?v=9.19.2"></script>
-  <script src="js/features/memopick.js?v=9.19.2"></script>
-  <script src="js/features/summary-data.js?v=9.19.2"></script>
-  <script src="js/features/graph-pdf.js?v=9.19.2"></script>
-  <script src="js/features/summary.js?v=9.19.2"></script>
-  <script src="js/features/qt.js?v=9.19.2"></script>
-  <script src="js/features/qtgraph.js?v=9.19.2"></script>
-  <script src="js/features/stats.js?v=9.19.2"></script>
-  <script src="js/features/export.js?v=9.19.2"></script>
-  <script src="js/features/reminder.js?v=9.19.2"></script>
-  <script src="js/features/account.js?v=9.19.2"></script>
-  <script src="js/features/feedback.js?v=9.19.2"></script>
-  <script src="js/features/celebrate.js?v=9.19.2"></script>
-  <script src="js/features/exit.js?v=9.19.2"></script>
-  <script src="js/features/changelog.js?v=9.19.2"></script>
-  <script src="js/features/plan.js?v=9.19.2"></script>
-  <script src="js/features/pixel-bible.js"></script>
-  <script src="js/main.js?v=9.19.2"></script>
+  <script src="js/core/bible.js?v=10.0.0"></script>
+  <script src="js/core/store.js?v=10.0.0"></script>
+  <script src="js/core/config.js?v=10.0.0"></script>
+  <script src="js/core/versecounts.js?v=10.0.0"></script>
+  <script src="js/shared/state.js?v=10.0.0"></script>
+  <script src="js/shared/godpia.js?v=10.0.0"></script>
+  <script src="js/shared/ui.js?v=10.0.0"></script>
+  <script src="js/shared/slide.js?v=10.0.0"></script>
+  <script src="js/features/setup.js?v=10.0.0"></script>
+  <script src="js/features/reader.js?v=10.0.0"></script>
+  <script src="js/features/verses.js?v=10.0.0"></script>
+  <script src="js/features/picker.js?v=10.0.0"></script>
+  <script src="js/features/memopick.js?v=10.0.0"></script>
+  <script src="js/features/summary-data.js?v=10.0.0"></script>
+  <script src="js/features/graph-pdf.js?v=10.0.0"></script>
+  <script src="js/features/summary.js?v=10.0.0"></script>
+  <script src="js/features/qt.js?v=10.0.0"></script>
+  <script src="js/features/qtgraph.js?v=10.0.0"></script>
+  <script src="js/features/stats.js?v=10.0.0"></script>
+  <script src="js/features/export.js?v=10.0.0"></script>
+  <script src="js/features/reminder.js?v=10.0.0"></script>
+  <script src="js/features/account.js?v=10.0.0"></script>
+  <script src="js/features/feedback.js?v=10.0.0"></script>
+  <script src="js/features/celebrate.js?v=10.0.0"></script>
+  <script src="js/features/exit.js?v=10.0.0"></script>
+  <script src="js/features/changelog.js?v=10.0.0"></script>
+  <script src="js/features/plan.js?v=10.0.0"></script>
+  <script src="js/features/pixel-bible.js?v=10.0.0"></script>
+  <script src="js/main.js?v=10.0.0"></script>
   <script>document.getElementById("app-ver").textContent = "v" + (document.querySelector('script[src*="main.js"]').src.match(/v=([\d.]+)/) || [, "?"])[1];</script>
 </body>
 </html>

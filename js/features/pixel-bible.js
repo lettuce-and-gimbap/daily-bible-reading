@@ -1,13 +1,13 @@
-// PIXEL BIBLE 개발 입구. 정식 공개 전까지 관리자 확인 후에만 월드 코드를 불러온다.
-// 공개 배너와 개발 안내는 모든 계정에 표시하며 앱 버전/업데이트 기록은 변경하지 않는다.
+// PIXEL BIBLE 10.0 공개 입구: 로그인 없이도 오늘의 월드를 연다.
+// 통독 상태는 읽기만 하고 월드 조작은 메모리 안에서 처리한다.
 const PIXEL_BIBLE_NOTICE = "앗, 벅수가 무언가를 개발중이에요! 다 개발되면 보여드릴게요!";
 let pixelBibleOpening = false;
 let pixelBibleDialog = null;
 
 function pixelBibleBannerHtml() {
-  return `<button type="button" class="pb-banner" data-pixel-bible aria-label="PIXEL BIBLE · 개발 중">
+  return `<button type="button" class="pb-banner" data-pixel-bible aria-label="PIXEL BIBLE 입장">
     <img src="assets/pixel-bible/banner.webp" alt="가운데 두 팔을 벌린 후광의 예수님, 왼쪽에 지팡이를 왼쪽 위로 든 모세, 오른쪽에 불병거를 타고 올라가는 엘리야" loading="lazy" width="2048" height="683">
-    <span class="pb-banner-caption">말씀 속으로, 한 걸음 <b>PIXEL BIBLE</b><small>COMING SOON</small></span>
+    <span class="pb-banner-caption">말씀 속으로, 한 걸음 <b>PIXEL BIBLE</b><small>지금 입장하기</small></span>
   </button>`;
 }
 
@@ -20,7 +20,7 @@ function pixelBibleModal(contents, world = false) {
   const focus = document.activeElement;
   const dialog = document.createElement("dialog");
   dialog.className = `pb-dialog${world ? " pb-world-dialog" : ""}`;
-  dialog.setAttribute("aria-label", world ? "PIXEL BIBLE 관리자 개발 체험" : "PIXEL BIBLE 개발 안내");
+  dialog.setAttribute("aria-label", world ? "PIXEL BIBLE" : "PIXEL BIBLE 개발 안내");
   dialog.innerHTML = contents;
   document.body.append(dialog);
   pixelBibleDialog = dialog;
@@ -65,24 +65,16 @@ async function pixelBibleLandscape(shell, nativeFullscreen = true) {
 
 async function openPixelBible() {
   if (pixelBibleOpening || pixelBibleDialog) return;
-  if (!isAdmin()) return showPixelBibleNotice();
   pixelBibleOpening = true;
-  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>관리자 개발 체험</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">오늘의 월드를 준비하고 있어요…</div></div>`, true);
+  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>오늘의 픽셀 월드</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">오늘의 월드를 준비하고 있어요…</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
   pixelBibleLandscape(shell, false);
   try {
-    // 로컬 아이디 표시만 믿지 않고 기존 로그인 API가 확인한 계정으로 입장을 결정한다.
-    const identity = await accountApi("data");
-    if (!modal.dialog.isConnected) return;
-    if (!isAdmin() || !ADMIN_IDS.includes(String(identity.id).toLowerCase())) {
-      modal.dialog.addEventListener("close", showPixelBibleNotice, { once: true });
-      modal.dialog.close(); return;
-    }
     const chapters = pixelBibleTodayChapters();
     const world = await import("./pixel-bible/world.js");
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
-      chapters, admin: () => isAdmin(), landscape: () => pixelBibleLandscape(shell),
+      chapters, allowed: () => true, landscape: () => pixelBibleLandscape(shell),
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
       readPassage: async ({code,chapter,verses}) => {
         const idx=CHAPTERS.findIndex(c=>c.book.code===code&&c.chap===chapter);
@@ -95,7 +87,7 @@ async function openPixelBible() {
     }));
   } catch (e) {
     if (!modal.dialog.isConnected) return;
-    modal.dialog.querySelector(".pb-load").textContent = "월드를 열지 못했어요. 로그인과 연결 상태를 확인한 뒤 다시 입장해 주세요.";
+    modal.dialog.querySelector(".pb-load").textContent = "월드를 열지 못했어요. 연결 상태를 확인한 뒤 다시 입장해 주세요.";
     console.warn("PIXEL BIBLE 입장 실패", e.name);
   }
 }

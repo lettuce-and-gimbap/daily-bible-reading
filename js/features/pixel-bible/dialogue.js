@@ -4,7 +4,7 @@ import { PAIR_DIALOGUE } from './pair-dialogue.js';
 import { characterStyle } from './art.js';
 
 export { SOLO_DIALOGUE, PAIR_DIALOGUE };
-export const DIALOGUE_SOURCE_STATUS = { bible:'existing-summary-and-verse-references', hokma:'not-reviewed-source-unavailable', wording:'original-imagined-dialogue' };
+export const DIALOGUE_SOURCE_STATUS = { bible:'existing-summary-and-verse-references', hokma:'partially-reviewed-uploaded-hokma-notes', wording:'original-imagined-dialogue' };
 const ordinary=['천천히 주변을 살펴볼까.','잠깐 숨을 고르고 다시 걸어 보자.','오늘은 어떤 길을 걷게 될까.'];
 // 인물별 독백은 상징 대사다. 특정 장의 현재 심경을 복원했다는 뜻이 아니다.
 export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(chapters)) {

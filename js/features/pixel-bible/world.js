@@ -6,7 +6,7 @@ import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS } from './backgrounds.js';
 import { drawPixelCharacter, characterStyle, drawWorldObject, drawWorldBackground, drawDesignBoard } from "./art.js";
-// 관리자 개발 체험: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
+// 공개 픽셀 월드: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
 // 이 모듈과 본문 JSON은 입장 시에만 로드된다. 본문 장 이동에는 연결하지 않는다.
 const books = new Map();
 const TILE = 24, WIDTH = 960, HEIGHT = 480;
@@ -282,7 +282,7 @@ export async function mountPixelWorld(shell, options) {
   canvas.addEventListener('pointerdown',(e)=>{
     if (drag) return;
     hideSpeech();suppressClick=false;
-    if(!options.admin()||activeEvent||placing||e.button!==0||window.innerHeight>=window.innerWidth)return;
+    if(!options.allowed()||activeEvent||placing||e.button!==0||window.innerHeight>=window.innerWidth)return;
     const index=hitPerson(coordinates(e));if(index<0)return;
     const previous=npcs[selected];select(index);const n=npcs[index];
     const relation=previous!==n&&model.relations.find(r=>r.from===previous.name&&r.to===n.name||r.from===n.name&&r.to===previous.name);
@@ -302,7 +302,7 @@ export async function mountPixelWorld(shell, options) {
     if(!held.active){suppressClick=true;return;}
     suppressClick=true;
     const n=held.n,p=coordinates(e),under=document.elementFromPoint(e.clientX,e.clientY);
-    if(cancel||!options.admin()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle')){n.x=held.from.x;n.y=held.from.y;n.idle=5;draw();return;}
+    if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle')){n.x=held.from.x;n.y=held.from.y;n.idle=5;draw();return;}
     const landing={x:Math.max(2,Math.min(37,Math.round(p.x))),y:Math.max(5,Math.min(15,Math.round(p.y+3)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
     if(obj){
@@ -320,7 +320,7 @@ export async function mountPixelWorld(shell, options) {
   canvas.addEventListener("pointerup", (e) => {
     if (drag) return;
     if(suppressClick){suppressClick=false;return;}
-    if (!options.admin() || activeEvent || window.innerHeight >= window.innerWidth) return;
+    if (!options.allowed() || activeEvent || window.innerHeight >= window.innerWidth) return;
     const p = coordinates(e), x = Math.round(p.x), y = Math.round(p.y);
     if (placing) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
@@ -344,7 +344,7 @@ export async function mountPixelWorld(shell, options) {
   }, {signal});
   canvas.addEventListener("keydown", (e) => {
     if (drag) return;
-    if (!options.admin() || activeEvent || window.innerHeight >= window.innerWidth) return;
+    if (!options.allowed() || activeEvent || window.innerHeight >= window.innerWidth) return;
     const delta={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[e.key];
     const n=npcs[selected];
     if (delta) { e.preventDefault(); pendingEvent=null; const p=cell(n); p.x+=delta[0];p.y+=delta[1]; if (!blocked(p.x,p.y)) move(n,p); }
@@ -356,7 +356,7 @@ export async function mountPixelWorld(shell, options) {
   }
   shell.addEventListener("click", async (e) => {
     if (drag?.active) return;
-    if (!options.admin()) return;
+    if (!options.allowed()) return;
     const b=e.target.closest("button"); if(!b) return;
     if (b.dataset.recipe!==undefined) { const scene=model.scenes[Number(b.dataset.recipe)],o=objects.find(o=>o.kind===scene.object);if(o&&!activeEvent)queueScene(scene,o);return; }
     if (b.dataset.commonRecipe) {const o=objects.find(o=>o.kind===b.dataset.commonRecipe);if(o&&!activeEvent){pendingEvent=null;if(toObject(npcs[selected],o))say(`${npcs[selected].name} · ${OBJECTS[o.kind]} 사용 (창작 일상 동작)`);}return;}
@@ -480,10 +480,10 @@ export async function mountPixelWorld(shell, options) {
     canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));if(shownSpeech){speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;}draw();
   };
   const resizeObserver=new ResizeObserver(fitCanvas);resizeObserver.observe(canvas);
-  const canRun=()=>!disposed&&!document.hidden&&window.innerWidth>window.innerHeight&&options.admin();
+  const canRun=()=>!disposed&&!document.hidden&&window.innerWidth>window.innerHeight&&options.allowed();
   function tick(stamp) {
     if(disposed)return;
-    if(!options.admin()) {say("관리자 로그인이 필요해요. 창을 닫고 다시 로그인해 주세요.");return;}
+    if(!options.allowed()) {say("월드를 다시 열어 주세요.");return;}
     const dt=Math.min(.05,(stamp-last)/1000||0);last=stamp;
     if(!paused&&!shell.querySelector('.pb-scripture')) {
       if(!activeEvent) update(dt);

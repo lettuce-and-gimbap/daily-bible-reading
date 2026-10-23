@@ -119,7 +119,7 @@ test('100종의 독백 200개와 관계 대사 106개를 직접 작성해 출처
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
  assert.equal(PAIR_DIALOGUE.length,53);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
- assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'not-reviewed-source-unavailable');
+ assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
 test('말풍선은 한 슬롯에서 5초 표시하고 실제 숨긴 시점부터 3초를 쉰다',async()=>{
