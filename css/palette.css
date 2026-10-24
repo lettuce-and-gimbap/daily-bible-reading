@@ -1,0 +1,114 @@
+/* HSL ramps: primary H192, secondary H42 (+210°), admin H312 (+120°). */
+:root {
+  --teal-50: hsl(192 42% 97%);
+  --teal-100: hsl(192 42% 93%);
+  --teal-200: hsl(192 42% 86%);
+  --teal-300: hsl(192 42% 75%);
+  --teal-400: hsl(192 42% 61%);
+  --teal-500: hsl(192 42% 45%);
+  --teal-600: hsl(192 42% 32%);
+  --teal-700: hsl(192 42% 24%);
+  --teal-800: hsl(192 42% 17%);
+  --teal-900: hsl(192 42% 11%);
+  --gold-50: hsl(42 65% 97%);
+  --gold-100: hsl(42 65% 93%);
+  --gold-200: hsl(42 65% 86%);
+  --gold-300: hsl(42 65% 75%);
+  --gold-400: hsl(42 65% 61%);
+  --gold-500: hsl(42 65% 45%);
+  --gold-600: hsl(42 65% 32%);
+  --gold-700: hsl(42 65% 24%);
+  --gold-800: hsl(42 65% 17%);
+  --gold-900: hsl(42 65% 11%);
+  --plum-50: hsl(312 26% 97%);
+  --plum-100: hsl(312 26% 93%);
+  --plum-200: hsl(312 26% 86%);
+  --plum-300: hsl(312 26% 75%);
+  --plum-400: hsl(312 26% 61%);
+  --plum-500: hsl(312 26% 45%);
+  --plum-600: hsl(312 26% 32%);
+  --plum-700: hsl(312 26% 24%);
+  --plum-800: hsl(312 26% 17%);
+  --plum-900: hsl(312 26% 11%);
+  --coral-50: hsl(12 50% 97%);
+  --coral-100: hsl(12 50% 93%);
+  --coral-200: hsl(12 50% 86%);
+  --coral-300: hsl(12 50% 75%);
+  --coral-400: hsl(12 50% 61%);
+  --coral-500: hsl(12 50% 45%);
+  --coral-600: hsl(12 50% 32%);
+  --coral-700: hsl(12 50% 24%);
+  --coral-800: hsl(12 50% 17%);
+  --coral-900: hsl(12 50% 11%);
+  --bg:#f3f6f5; --surface:#fffefa; --surface-2:#edf2f1;
+  --ink:#21383d; --muted:#596d70; --line:#cedbd9;
+  --accent:var(--teal-600); --accent-ink:#ffffff; --accent-soft:var(--teal-100);
+  --qt:var(--gold-600); --qt-ink:#ffffff; --qt-soft:var(--gold-100);
+  --admin:var(--plum-600); --admin-ink:#ffffff; --admin-soft:var(--plum-100);
+  --warn:hsl(12 50% 42%); --warn-soft:var(--coral-100);
+  --success:#296c53; --success-soft:#e3f2e9;
+  --info:#3b6198; --info-soft:#e8eef8;
+  --paper-warm:#fcf8ef; --paper-cool:#eaf3f5;
+  --focus:var(--teal-600); --shadow:0 2px 5px #18384005,0 8px 24px #19383d0a;
+  --route:var(--accent); --route-soft:var(--accent-soft);
+  color-scheme:light;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#142126; --surface:#1b2b31; --surface-2:#24363d;
+  --ink:#e5eeed; --muted:#adbfbe; --line:#425960;
+  --accent:var(--teal-300); --accent-ink:var(--teal-900); --accent-soft:#203d47;
+  --qt:var(--gold-300); --qt-ink:var(--gold-900); --qt-soft:#3b3322;
+  --admin:var(--plum-300); --admin-ink:var(--plum-900); --admin-soft:#3b2d3d;
+  --warn:#e6a18e; --warn-soft:#432f2c;
+  --success:#9cd4b5; --success-soft:#243e34;
+  --info:#adc7ec; --info-soft:#293c56;
+  --paper-warm:#222b30; --paper-cool:#162b34;
+  --focus:var(--teal-300); --shadow:0 4px 18px #00000020;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#142126; --surface:#1b2b31; --surface-2:#24363d;
+  --ink:#e5eeed; --muted:#adbfbe; --line:#425960;
+  --accent:var(--teal-300); --accent-ink:var(--teal-900); --accent-soft:#203d47;
+  --qt:var(--gold-300); --qt-ink:var(--gold-900); --qt-soft:#3b3322;
+  --admin:var(--plum-300); --admin-ink:var(--plum-900); --admin-soft:#3b2d3d;
+  --warn:#e6a18e; --warn-soft:#432f2c;
+  --success:#9cd4b5; --success-soft:#243e34;
+  --info:#adc7ec; --info-soft:#293c56;
+  --paper-warm:#222b30; --paper-cool:#162b34;
+  --focus:var(--teal-300); --shadow:0 4px 18px #00000020;
+  color-scheme:dark;
+}
+body{background:linear-gradient(140deg,var(--paper-warm),var(--bg) 42%,var(--paper-cool));background-attachment:fixed}
+body:has(.tabs a[data-route="qt"].active){--route:var(--qt);--route-soft:var(--qt-soft)}
+body:has(.tabs a[data-route="stats"].active){--route:var(--admin);--route-soft:var(--admin-soft)}
+.topbar{background:var(--surface);border-bottom-color:var(--line)}
+.tabs{background:var(--surface-2);border:1px solid var(--line)}
+.tabs a[data-route="today"].active{background:var(--accent-soft);color:var(--accent);box-shadow:inset 0 -2px var(--accent)}
+.tabs a[data-route="qt"].active{background:var(--qt-soft);color:var(--qt);box-shadow:inset 0 -2px var(--qt)}
+.tabs a[data-route="stats"].active{background:var(--admin-soft);color:var(--admin);box-shadow:inset 0 -2px var(--admin)}
+.card{border-color:var(--line);border-top:3px solid var(--route-soft);background:linear-gradient(155deg,var(--surface) 75%,var(--route-soft))}
+.card>h3.label,.card>h2.label{color:var(--route)}
+body:has(.tabs a[data-route="stats"].active) main .btn.primary{background:var(--admin);color:var(--admin-ink)}
+body:has(.tabs a[data-route="stats"].active) .seg button.on{background:var(--admin-soft);color:var(--admin);border-color:var(--admin)}
+.rd-top,.sheet-head{background:linear-gradient(110deg,var(--surface) 65%,var(--route-soft))}
+.rd.reading .rd-main .on,.rd.reading .rd-seg button.on{background:var(--accent-soft);color:var(--accent)}
+.rd.qt .rd-seg button.on{background:var(--qt-soft);color:var(--qt)}
+.rd.qt .btn.primary,.rd.qt .qp-fixed .btn.primary,.rd.qt .toast-action,.rd.qt~.toast .toast-action,.qt-selection-note{color:var(--qt-ink)}
+.step-check{color:var(--accent-ink)}
+.qt-sec{border-left:3px solid var(--qt-soft);padding-left:12px}
+.vp-row{border-color:var(--line);background:var(--surface)}
+.vp-row:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}
+.rd.qt .vp-row:has(input:checked){background:var(--qt-soft);border-color:var(--qt)}
+.study-dialog,.study-selection-tools{background:var(--surface);color:var(--ink);border-color:var(--accent)}
+.study-toolbar{border-color:var(--line);background:var(--surface-2)}
+.study-toolbar button,.study-note,.study-selection-tools button{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.study-dialog textarea{background:var(--surface-2);color:var(--ink);border:1px solid var(--line);padding:10px}
+.study-dialog button{background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px}
+.study-dock-editor{border-top:3px solid var(--accent);background:var(--surface)}
+.study-dock-quote{background:var(--accent-soft);color:var(--ink)}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+::selection{background:var(--teal-200);color:var(--teal-900)}
+@media(hover:hover){.btn.ghost:hover,.icon-btn:hover{background:var(--surface-2)}.tabs a:not(.active):hover{color:var(--ink);background:var(--surface)}}
+/* Theme switches should not briefly combine a new text color with an old fill. */
+.btn{transition:transform .08s}
