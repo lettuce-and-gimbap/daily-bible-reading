@@ -128,3 +128,7 @@
 .pb-collection input[type="search"]{width:100%;box-sizing:border-box;min-height:44px;margin:8px 0;padding:8px;font:inherit}
 .pb-collection progress{width:100%;height:16px;accent-color:#c9ad61}
 .pb-discovery-grid [hidden]{display:none!important}
+.pb-recipe-layout{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:16px 6px;min-height:70px;background:#102c35;border:2px dashed #80928a;margin:10px 0}
+.pb-recipe-layout>span{max-width:110px;overflow-wrap:anywhere;text-align:center;color:#f7eac0}
+.pb-mystery-person{display:grid;place-items:center;position:relative;width:34px;height:48px;background:#34474d;border:3px solid #8a9992;clip-path:polygon(20% 0,80% 0,80% 30%,100% 30%,100% 100%,0 100%,0 30%,20% 30%);font-size:24px}
+.pb-mystery-object{display:grid;place-items:center;width:46px;height:40px;background:#34474d;border:3px solid #8a9992;font-size:26px}

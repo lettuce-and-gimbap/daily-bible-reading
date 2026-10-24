@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {loadRecipeUnlocks,recipeKey,recipeLocked,recipeAssembled} from '../js/features/pixel-bible/recipe-locks.js';
+const scene={id:'test',actors:['엘리야','엘리사']};
+test('오늘 통독 완료와 명시적인 잠금 해제, 영구 발견을 구분한다',()=>{const discovered=new Set();assert(recipeLocked(scene,{discovered,dailyDone:false,hide:false}));assert(recipeLocked(scene,{discovered,dailyDone:true,hide:true}));assert(!recipeLocked(scene,{discovered,dailyDone:true,hide:false}));discovered.add(recipeKey(scene));assert(!recipeLocked(scene,{discovered,dailyDone:false,hide:true}));});
+test('발견 조합은 배우 전원이 물건 가까이 있어야 한다',()=>{const o={x:10,y:10};assert(!recipeAssembled(scene,[{name:'엘리야',x:10,y:11}],o));assert(!recipeAssembled(scene,[{name:'엘리야',x:10,y:11},{name:'엘리사',x:20,y:20}],o));assert(recipeAssembled(scene,[{name:'엘리야',x:9,y:10},{name:'엘리사',x:11,y:10}],o));});
+test('손상된 저장과 과거 발견 목록을 안전하게 읽는다',()=>{assert.equal(loadRecipeUnlocks({getItem:()=>'{'}).size,0);assert(loadRecipeUnlocks({getItem:()=> '["test",3]'}).has('test'));});

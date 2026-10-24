@@ -85,6 +85,7 @@ async function openPixelBible(scope = {}) {
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(shell),
+      dailyReadingDone:()=>!!state.plan&&progress().dailyDone,
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
       readPassage: async ({code,chapter,verses}) => {
         const idx=CHAPTERS.findIndex(c=>c.book.code===code&&c.chap===chapter);

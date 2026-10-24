@@ -2,16 +2,18 @@
 Only short public summary explanations and references are emitted; never source verses.
 Run ot-event-candidates.mjs first. Does not create new first-person dialogue by templates.
 """
-import json,sqlite3,re,pathlib,collections
+import json,sqlite3,re,pathlib,collections,sys
+TESTAMENT='NT' if '--nt' in sys.argv else 'OT'
 ROOT=pathlib.Path(__file__).resolve().parents[2]
 BIBLE=pathlib.Path('/workspace/private-reference/bible/scripture.sqlite3')
 HOKMA=pathlib.Path('/workspace/private-reference/hokma/hokma.sqlite3')
-chapters=json.loads(pathlib.Path('/tmp/ot-candidates.json').read_text())
+chapters=json.loads(pathlib.Path('/tmp/'+TESTAMENT.lower()+'-candidates.json').read_text())
 b=sqlite3.connect(BIBLE.as_uri()+'?mode=ro',uri=True);h=sqlite3.connect(HOKMA.as_uri()+'?mode=ro',uri=True)
 output=ROOT/'data/pixel-bible/events';output.mkdir(exist_ok=True)
 reports=[];bybook=collections.defaultdict(list)
 # The curated source order requested by the user.
 order=['2ki','gen','exo','lev','num','deu','jos','jdg','rut','1sa','2sa','1ki','1ch','2ch','ezr','neh','est','job','psa','pro','ecc','sng','isa','jer','lam','ezk','dan','hos','jol','amo','oba','jnh','mic','nam','hab','zep','hag','zec','mal']
+if TESTAMENT=='NT':order=list(dict.fromkeys(c['code'] for c in chapters))
 chapters.sort(key=lambda c:(order.index(c['code']),c['chapter']))
 def verses(span):
  out=[]
@@ -50,9 +52,10 @@ for c in chapters:
   bybook[code].append(entry);report['scenes']+=1
  reports.append(report)
 voice_review=[]
-for n,line in enumerate((ROOT/'tools/pixel-bible/ot-voiced-seeds.tsv').read_text().splitlines(),1):
+for n,line in enumerate((ROOT/('tools/pixel-bible/'+TESTAMENT.lower()+'-voiced-seeds.tsv')).read_text().splitlines(),1):
  code,ch,span,requested,obj,voice,detail=line.split('|');ch=int(ch);numbers=verses(span);c=next(c for c in chapters if c['code']==code and c['chapter']==ch)
  actors=[p['name'] for p in c['people'] if p['name']==requested or re.sub(r'\(.*?\)','',p['name']).strip()==requested]
+ if requested=='베드로' and (code,ch) in [('luk',5),('jhn',13)]:actors=[p['name'] for p in c['people'] if p['name'] in ['시몬','시몬 베드로']]
  chapter_text={ed:b.execute('select body from chapters where edition=? and code=? and chapter=?',(ed,code,ch)).fetchone()[0] for ed in ['gae','easy']}
  name_context=all(requested in text for text in chapter_text.values())
  if (code,requested) in [('ezr','에스라'),('neh','느헤미야'),('isa','이사야'),('jer','예레미야'),('ezk','에스겔'),('hos','호세아')]:name_context=all(re.search(r'내가|나를|내게|나는|나에게',text) for text in chapter_text.values())
@@ -80,5 +83,5 @@ for c in chapters:
 for code in order:(output/(code+'.json')).write_text(json.dumps(dict(book=code,scenes=bybook[code],additionalPeople=additional[code]),ensure_ascii=False,separators=(',',':'))+'\n')
 print('additional chapter/person mentions',sum(len(p) for chapters_ in additional.values() for p in chapters_.values()))
 manifest=dict(date='2026-10-25',method='Automated local verse-range and literal actor/object cross-check against two supplied editions. Existing authored summaries supply public explanations. Commentary availability is checked, not a claim of manual exegesis of every chapter.',books=[dict(code=code,chapters=sum(r['code']==code for r in reports),scenes=len(bybook[code])) for code in order],chapters=reports,voicedReview=voice_review)
-(output/'review.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+(output/('review.json' if TESTAMENT=='OT' else 'review-nt.json')).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print('books',len(order),'chapters',len(reports),'events',sum(r['eventsReviewed'] for r in reports),'scenes',sum(map(len,bybook.values())))

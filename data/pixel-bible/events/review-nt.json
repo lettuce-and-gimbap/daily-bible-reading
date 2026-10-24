@@ -1,0 +1,6898 @@
+{
+  "date": "2026-10-25",
+  "method": "Automated local verse-range and literal actor/object cross-check against two supplied editions. Existing authored summaries supply public explanations. Commentary availability is checked, not a claim of manual exegesis of every chapter.",
+  "books": [
+    {
+      "code": "mat",
+      "chapters": 28,
+      "scenes": 22
+    },
+    {
+      "code": "mrk",
+      "chapters": 16,
+      "scenes": 15
+    },
+    {
+      "code": "luk",
+      "chapters": 24,
+      "scenes": 22
+    },
+    {
+      "code": "jhn",
+      "chapters": 21,
+      "scenes": 29
+    },
+    {
+      "code": "act",
+      "chapters": 28,
+      "scenes": 34
+    },
+    {
+      "code": "rom",
+      "chapters": 16,
+      "scenes": 5
+    },
+    {
+      "code": "1co",
+      "chapters": 16,
+      "scenes": 6
+    },
+    {
+      "code": "2co",
+      "chapters": 13,
+      "scenes": 4
+    },
+    {
+      "code": "gal",
+      "chapters": 6,
+      "scenes": 2
+    },
+    {
+      "code": "eph",
+      "chapters": 6,
+      "scenes": 2
+    },
+    {
+      "code": "php",
+      "chapters": 4,
+      "scenes": 2
+    },
+    {
+      "code": "col",
+      "chapters": 4,
+      "scenes": 2
+    },
+    {
+      "code": "1th",
+      "chapters": 5,
+      "scenes": 0
+    },
+    {
+      "code": "2th",
+      "chapters": 3,
+      "scenes": 0
+    },
+    {
+      "code": "1ti",
+      "chapters": 6,
+      "scenes": 0
+    },
+    {
+      "code": "2ti",
+      "chapters": 4,
+      "scenes": 0
+    },
+    {
+      "code": "tit",
+      "chapters": 3,
+      "scenes": 0
+    },
+    {
+      "code": "phm",
+      "chapters": 1,
+      "scenes": 0
+    },
+    {
+      "code": "heb",
+      "chapters": 13,
+      "scenes": 8
+    },
+    {
+      "code": "jas",
+      "chapters": 5,
+      "scenes": 1
+    },
+    {
+      "code": "1pe",
+      "chapters": 5,
+      "scenes": 4
+    },
+    {
+      "code": "2pe",
+      "chapters": 3,
+      "scenes": 0
+    },
+    {
+      "code": "1jn",
+      "chapters": 5,
+      "scenes": 1
+    },
+    {
+      "code": "2jn",
+      "chapters": 1,
+      "scenes": 1
+    },
+    {
+      "code": "3jn",
+      "chapters": 1,
+      "scenes": 0
+    },
+    {
+      "code": "jud",
+      "chapters": 1,
+      "scenes": 0
+    },
+    {
+      "code": "rev",
+      "chapters": 22,
+      "scenes": 27
+    }
+  ],
+  "chapters": [
+    {
+      "code": "mat",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "예수 그리스도의 족보",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령으로 잉태됨",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "임마누엘",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "애굽으로 피함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "헤롯의 학살",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나사렛으로",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "광야의 외침",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "독사의 자식들아",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예수님의 세례",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "갈릴리에 비친 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사람을 낚는 어부",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가르치고 고치심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 48,
+        "easy": 48
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "팔복",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "소금과 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "율법을 완전하게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "원수를 사랑하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 34,
+        "easy": 34
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "은밀한 구제와 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주기도문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하늘에 쌓는 보물",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "염려하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "비판하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "구하고 찾고 두드리라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "좁은 문과 열매",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "반석 위의 집",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 34,
+        "easy": 34
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "나병환자와 백부장",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 장모",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가다라의 귀신 들린 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "중풍병자의 죄 사함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마태를 부르심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새 포도주와 새 부대",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "딸과 혈루증 여인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "추수할 일꾼",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 42,
+        "easy": 42
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "열두 제자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "잃어버린 양에게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "양을 이리 가운데로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "십자가를 지고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "요한의 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요한에 대한 증언",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "회개하지 않는 고을",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 50,
+        "easy": 50
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "상한 갈대를 꺾지 않는 종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바알세불 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요나의 표적",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "참 가족",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 58,
+        "easy": 58
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "가라지 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "겨자씨와 누룩",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "보화·진주·그물",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "고향의 배척",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 36,
+        "easy": 36
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "세례 요한의 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "게네사렛의 병자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 39
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "장로들의 전통",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가나안 여인의 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "첫 수난 예고",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자기 십자가를 지고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 17,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "변화산",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "엘리야는 이미 왔다",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "물고기 입의 세겔",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 18,
+      "sourceVerses": {
+        "gae": 35,
+        "easy": 35
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "어린아이처럼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "잃은 양 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "형제의 죄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "용서하지 않는 종",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 19,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "이혼에 대한 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "어린아이를 축복하심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부자 청년",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "낙타와 바늘귀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 20,
+      "sourceVerses": {
+        "gae": 34,
+        "easy": 34
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "포도원 품꾼 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세 번째 수난 예고",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "섬기러 오신 인자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여리고의 두 맹인",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 21,
+      "sourceVerses": {
+        "gae": 46,
+        "easy": 46
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "예루살렘 입성",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성전을 깨끗하게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마른 무화과나무",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "권위에 대한 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "악한 농부 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 22,
+      "sourceVerses": {
+        "gae": 46,
+        "easy": 46
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "혼인 잔치 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부활 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가장 큰 계명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다윗의 자손",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 23,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 39
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "말만 하는 자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "일곱 가지 화",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선지자의 피",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예루살렘을 향한 탄식",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 24,
+      "sourceVerses": {
+        "gae": 51,
+        "easy": 51
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "성전이 무너짐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "재난의 시작",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "큰 환난",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인자가 오심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "깨어 있으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 25,
+      "sourceVerses": {
+        "gae": 46,
+        "easy": 46
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "달란트 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "양과 염소",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 26,
+      "sourceVerses": {
+        "gae": 75,
+        "easy": 75
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 4,
+      "skipped": [
+        {
+          "title": "공회와 베드로의 부인",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 27,
+      "sourceVerses": {
+        "gae": 66,
+        "easy": 66
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "유다의 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "조롱과 십자가",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mat",
+      "chapter": 28,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "경비병의 거짓말",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "지상 명령",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 45,
+        "easy": 45
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "복음의 시작",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가버나움의 하루",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새벽 기도와 나병환자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "지붕을 뚫은 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "레위를 부르심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "신랑과 새 부대",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 35,
+        "easy": 35
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "손 마른 사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "따르는 큰 무리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "열두 제자를 세우심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바알세불 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "참 가족",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 41,
+        "easy": 41
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "씨 뿌리는 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "등불과 헤아림",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자라는 씨와 겨자씨",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 43,
+        "easy": 43
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "군대 귀신",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "달리다굼",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 56,
+        "easy": 56
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "고향의 배척",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "열둘을 보내심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세례 요한의 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "물 위를 걸으심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 37,
+        "easy": 37
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "장로들의 전통",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사람을 더럽히는 것",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "수로보니게 여인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "에바다",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "사천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "벳새다 맹인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 고백",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자기 십자가",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 50,
+        "easy": 50
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "변형되심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿음 없는 것을 도우소서",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "누가 크냐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "실족하게 하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 52,
+        "easy": 52
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "이혼과 어린아이",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "재물이 많은 사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "무화과나무와 성전",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "권위에 대한 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 44,
+        "easy": 44
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "포도원 농부 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세금과 부활",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "첫째 계명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "서기관을 삼가라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "과부의 두 렙돈",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 37,
+        "easy": 37
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "성전이 무너짐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "재난의 시작",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "큰 환난",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인자가 오심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "깨어 있으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 72,
+        "easy": 72
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "겟세마네",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "공회의 정죄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 부인",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 47,
+        "easy": 47
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "빌라도 앞에서",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "mrk",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "빈 무덤",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나타나심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "온 천하에 복음을",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 80,
+        "easy": 80
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "데오빌로에게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예수의 잉태 예고",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마리아의 찬가",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요한의 출생과 사가랴의 노래",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 52,
+        "easy": 52
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "구유에 누인 아기",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "목자들과 천군",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "빈 들의 요한",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "옥에 갇힌 요한",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예수님의 세례",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아담까지의 족보",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 44,
+        "easy": 44
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "광야의 시험",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나사렛 회당",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가버나움의 귀신",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "시몬의 장모와 병자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 39
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "나병환자를 고치심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "지붕으로 내려온 중풍병자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 49,
+        "easy": 49
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "열두 사도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "복과 화",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "원수를 사랑하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "열매와 반석",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 50,
+        "easy": 50
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "백부장의 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나인성 과부의 아들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요한의 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죄 많은 여인",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 56,
+        "easy": 56
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "섬긴 여인들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "씨 뿌리는 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "풍랑과 군대 귀신",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 62,
+        "easy": 62
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "열둘을 보내심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "변화산",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예루살렘을 향하여",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 42,
+        "easy": 42
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "칠십 인을 보내심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하늘에 기록된 이름",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선한 사마리아인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마르다와 마리아",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 54,
+        "easy": 54
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "기도를 가르치심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바알세불 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요나의 표적과 눈",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바리새인과 율법교사에게 화",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 59,
+        "easy": 59
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "외식을 주의하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "어리석은 부자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "염려하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "깨어 있는 종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "불을 던지러",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 35,
+        "easy": 35
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "꼬부라진 여인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "겨자씨와 누룩",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "좁은 문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예루살렘아",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 35,
+        "easy": 35
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "안식일의 수종병자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "낮은 자리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "큰 잔치 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 32,
+        "easy": 32
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "수군거림",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "잃은 양과 드라크마",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "화난 맏아들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "옳지 않은 청지기",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "비웃는 바리새인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부자와 나사로",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 17,
+      "sourceVerses": {
+        "gae": 37,
+        "easy": 37
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "실족과 용서",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿음과 무익한 종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "열 명의 나병환자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인자의 날",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 18,
+      "sourceVerses": {
+        "gae": 43,
+        "easy": 43
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "끈질긴 과부",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바리새인과 세리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "어린아이와 부자 관리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여리고의 맹인",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 19,
+      "sourceVerses": {
+        "gae": 48,
+        "easy": 48
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "열 므나 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "우시는 예수",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 20,
+      "sourceVerses": {
+        "gae": 47,
+        "easy": 47
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "권위에 대한 질문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "포도원 농부 비유",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가이사에게 세금",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부활 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다윗의 주",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 21,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "과부의 두 렙돈",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성전의 무너짐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예루살렘의 멸망",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인자가 오심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 22,
+      "sourceVerses": {
+        "gae": 71,
+        "easy": 71
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "유다의 배반",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 부인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "공회 앞에서",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 23,
+      "sourceVerses": {
+        "gae": 56,
+        "easy": 56
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "빌라도와 헤롯",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "십자가의 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "luk",
+      "chapter": 24,
+      "sourceVerses": {
+        "gae": 53,
+        "easy": 53
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "엠마오로 가는 길",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "제자들에게 나타나심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "승천",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 51,
+        "easy": 51
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "태초의 말씀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요한의 증언",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "첫 제자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 3,
+      "skipped": []
+    },
+    {
+      "code": "jhn",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 36,
+        "easy": 36
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "들려야 할 인자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이처럼 사랑하사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요한의 기쁨",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 54,
+        "easy": 54
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "영과 진리의 예배",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "희어진 밭",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "왕의 신하의 아들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 47,
+        "easy": 47
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "베데스다의 병자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안식일 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아들의 권세",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예수를 증언하는 것들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 71,
+        "easy": 71
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "오천 명을 먹이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "생명의 떡",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "떠나는 제자들과 베드로의 고백",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 53,
+        "easy": 53
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "형제들의 불신",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "생수의 강",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 59,
+        "easy": 59
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "진리가 자유롭게 하리라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 41,
+        "easy": 41
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "누구의 죄냐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "실로암에서 씻음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바리새인의 심문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "내가 믿나이다",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 42,
+        "easy": 42
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "선한 목자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "요단강 저편",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 57,
+        "easy": 57
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "나사로가 병들다",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부활이요 생명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "눈물 흘리신 예수",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죽이려는 공회",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 50,
+        "easy": 50
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "믿지 않는 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "유다가 나감",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새 계명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 부인 예고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "거처를 예비하러",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "길이요 진리요 생명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "또 다른 보혜사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나의 평안",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "참포도나무",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사랑 안에 거하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세상의 미움",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "진리의 성령",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "박해의 예고",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "보혜사의 일",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세상을 이기었노라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 17,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "아들을 영화롭게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "제자들을 위한 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿는 모든 이를 위한 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 18,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "빌라도 앞에서",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바라바",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 19,
+      "sourceVerses": {
+        "gae": 42,
+        "easy": 42
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "보라 이 사람이로다",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다 이루었다",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 20,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "빈 무덤",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마리아야",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령을 받으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jhn",
+      "chapter": 21,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "오른편에 그물을",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "성령을 기다리라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "땅끝까지 증인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다락방의 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "맛디아를 뽑음",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 47,
+        "easy": 47
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "성령 강림",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 설교",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "삼천 명의 세례",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "처음 교회",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "솔로몬 행각의 설교",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "회개하고 돌이키라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 37,
+        "easy": 37
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "잡힌 두 사도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "함께 드린 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "서로 나누는 무리",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 42,
+        "easy": 42
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "아나니아와 삽비라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "표적과 기사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가말리엘의 권고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "구제 문제",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "일곱 사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "스데반이 잡힘",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 60,
+        "easy": 60
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "아브라함과 요셉",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "큰 박해",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사마리아의 빌립",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "돈으로 사려 한 시몬",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "에디오피아 내시",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 43,
+        "easy": 43
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "다메섹 길의 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아나니아의 순종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 기적",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 48,
+        "easy": 48
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "고넬료의 환상",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "보자기 환상",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이방인에게 임한 성령",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "베드로의 설명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안디옥 교회",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "흉년 부조",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "천사가 베드로를 이끌어 냄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "헤롯의 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 52,
+        "easy": 52
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "따로 세운 두 사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "구브로의 엘루마",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이방인에게로",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "이고니온의 분열",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "장로를 세우고 귀환",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 41
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "할례 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베드로의 증언",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "야고보의 결론",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "회의의 편지",
+          "reason": "reference-range-needs-review"
+        },
+        {
+          "title": "바울과 바나바의 갈라섬",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "디모데를 데려감",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마게도냐 환상",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "점치는 여종과 옥",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "간수의 구원",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 17,
+      "sourceVerses": {
+        "gae": 34,
+        "easy": 34
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "데살로니가의 소동",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "베뢰아 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아테네의 우상",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "알지 못하는 신",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 18,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "두려워하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "갈리오의 법정",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안디옥으로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아볼로",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 19,
+      "sourceVerses": {
+        "gae": 41,
+        "easy": 41
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "열두 제자와 성령",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두란노 서원",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "스게와의 아들들과 마술책",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "데메드리오의 소동",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 20,
+      "sourceVerses": {
+        "gae": 38,
+        "easy": 38
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "마게도냐와 헬라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "밀레도의 작별",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 21,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 4,
+      "skipped": []
+    },
+    {
+      "code": "act",
+      "chapter": 22,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "바울의 변명",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다메섹 길의 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이방인에게로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "로마 시민",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 23,
+      "sourceVerses": {
+        "gae": 35,
+        "easy": 35
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "부활 논쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사십여 명의 맹세",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가이사랴로 호송",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 24,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "바울의 변론",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두려워한 벨릭스",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 25,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "베스도 앞의 고발",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가이사께 상소",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아그립바의 방문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "접견 장소",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 26,
+      "sourceVerses": {
+        "gae": 32,
+        "easy": 32
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "바울의 지난 삶",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다메섹 길의 부르심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "거스르지 않은 순종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아그립바의 반응",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 27,
+      "sourceVerses": {
+        "gae": 44,
+        "easy": 44
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "유라굴로 광풍",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안심하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "act",
+      "chapter": 28,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "로마 도착",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "로마의 유대인들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "거침없이 가르침",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 32,
+        "easy": 32
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "바울의 문안",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "로마에 가고 싶은 마음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "복음의 능력",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 진노",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "남을 판단하는 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "행한 대로 보응",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "율법을 자랑하는 유대인",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마음의 할례",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나님의 미쁘심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "의인은 없나니",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿음으로 말미암은 의",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자랑할 데가 없다",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "믿음이 의로 여겨짐",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "할례 전의 의",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "약속과 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "우리를 위한 말씀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나님과 화평",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죄인을 위한 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아담과 그리스도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "죄에 대하여 죽음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "의의 무기",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "의의 종",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "율법에서 벗어남",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "율법은 거룩함",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 39
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "정죄함이 없음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아바 아버지",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "고난과 영광",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "끊을 수 없는 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "동족을 위한 근심",
+          "reason": "reference-range-needs-review"
+        },
+        {
+          "title": "긍휼히 여기시는 하나님",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "자기 의를 세운 이스라엘",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "입으로 시인하고 마음으로 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "전하는 자의 발",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "손을 벌리신 하나님",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 36,
+        "easy": 36
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "남은 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "넘어짐과 구원",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "접붙인 가지",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "온 이스라엘의 구원",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "깊도다 하나님의 지혜",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "산 제물",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "한 몸의 지체",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "거짓 없는 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선으로 악을 이기라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 14,
+        "easy": 14
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "권세에 복종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사랑의 빚",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "연약한 자를 받으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주의 것",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "걸림돌을 두지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "덕을 세우라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "약한 자의 약점을 담당",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "서로 받으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이방인의 사도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "서바나로 갈 계획",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rom",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "뵈뵈 추천",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "동역자들에게 문안",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "분쟁을 일으키는 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "인사와 감사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "십자가의 도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주 안에서 자랑하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "십자가만 알기로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "감추어진 지혜",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령이 보이심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "젖으로 먹인 성도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예수 그리스도의 터",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 성전",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "충성된 일꾼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "교만한 성도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아버지의 권면",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "교회 안의 음행",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "묵은 누룩",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사귀지 말 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "세상 법정의 송사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "씻음받은 자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "몸은 성령의 전",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "부부의 의무",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이혼과 믿지 않는 배우자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부르심 그대로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "처녀와 과부",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "지식과 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "한 하나님 한 주",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "약한 형제를 위하여",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "사도의 권리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "권리를 쓰지 않음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여러 모습이 됨",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "썩지 않을 관",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "광야의 본보기",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 영광을 위하여",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 34,
+        "easy": 34
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "머리에 쓰는 일",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "교회의 분쟁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주의 만찬",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자기를 살피라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "예수를 주라 함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여러 은사 한 성령",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "한 몸 많은 지체",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도의 몸",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "사랑이 없으면",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사랑의 모습",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "떨어지지 않는 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "예언과 방언",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "깨달은 마음으로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "질서 있는 예배",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 58,
+        "easy": 58
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "부활의 복음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부활이 없다면",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "첫 열매",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사망을 이긴 승리",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1co",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "성도를 위한 연보",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바울의 계획",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "위로의 하나님",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "아시아의 환난",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바뀐 계획",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "눈물의 편지",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "용서하고 위로하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "그리스도의 편지",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새 언약의 일꾼",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "가리어진 복음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "질그릇의 보배",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "날로 새로워지는 속사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하늘의 영원한 집",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도의 사랑이 강권함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "화목하게 하는 직분",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "구원의 날",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 일꾼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마음을 넓히라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "거룩함을 이루자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "디도의 위로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 뜻대로 하는 근심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "마게도냐 교회의 연보",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가난하게 되신 그리스도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "디도를 보냄",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "미리 준비한 연보",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "즐겨 내는 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "넘치는 감사",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나님의 능력의 무기",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "편지와 행함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주 안에서 자랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "거짓 사도들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바울의 고난",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "셋째 하늘",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "육체의 가시",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사도의 표",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2co",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "세 번째 방문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자신을 시험하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마지막 권면과 축도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "다른 복음은 없다",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "계시로 받은 복음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예루살렘 방문",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "예루살렘 방문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안디옥의 책망",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿음으로 의롭게 됨",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "어리석은 갈라디아 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "율법과 약속",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "초등교사",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 31,
+        "easy": 31
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "종에서 아들로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "초등학문으로 돌아감",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "해산하는 수고",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하갈과 사라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "자유를 지키라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사랑으로 종노릇",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령의 열매",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "gal",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "서로 짐을 지라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "심은 대로 거둠",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "신령한 복의 찬송",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "피로 속량하심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마음의 눈을 밝히소서",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 22,
+        "easy": 22
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "죽었던 우리를 살리심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "그리스도의 비밀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "지극히 작은 자의 은혜",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "무릎 꿇은 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 32,
+        "easy": 32
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나 되게 하신 것",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "직분과 몸의 성장",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "옛사람과 새사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "서로 용서하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 33,
+        "easy": 33
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나님을 본받으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "빛의 자녀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령으로 충만하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "남편과 아내",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "eph",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "자녀와 부모",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "종과 상전",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 전신 갑주",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "기도 부탁과 두기고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "php",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "매임이 복음의 진전",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사는 것이 그리스도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "복음에 합당하게",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "php",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 30,
+        "easy": 30
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "한마음을 품으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도의 마음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세상의 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "디모데와 에바브로디도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "php",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "육체를 신뢰하지 않음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "배설물로 여김",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "푯대를 향하여",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "php",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "같은 마음을 품으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "항상 기뻐하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자족의 비결",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "향기로운 제물",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "col",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "만물의 으뜸이신 그리스도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "화목과 비밀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "col",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 23,
+        "easy": 23
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "그리스도 안의 보화",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "신성의 충만",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그림자와 몸",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "col",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "위의 것을 찾으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "땅의 지체를 죽이라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "사랑을 옷 입으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가정과 일터",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "col",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "기도를 계속하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두기고와 오네시모",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1th",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 10,
+        "easy": 10
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "믿음과 사랑과 소망",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "능력으로 온 복음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "우상을 버리고",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1th",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "담대한 복음 전도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "유모와 아버지처럼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 말씀으로 받음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "우리의 영광이요 기쁨",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1th",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "디모데를 보냄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "기쁜 소식",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "흠 없이 서기를",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1th",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "거룩함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "형제 사랑과 일",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자는 자들의 소망",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1th",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "도둑같이 오는 날",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "교회 안의 권면",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "항상 기뻐하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "흠 없이 보전되기를",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2th",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 12,
+        "easy": 12
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "자라는 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "공의로운 심판",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "합당한 자가 되기를",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2th",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "흔들리지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "불법의 사람",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "굳건하게 서라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2th",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "기도 부탁",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "게으른 자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "형제 같이 권면하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "다른 교훈을 막으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죄인 중의 괴수",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선한 싸움",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "모든 사람을 위한 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "한 중보자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "예배 중의 남녀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "감독의 자격",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "집사의 자격",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "경건의 비밀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "미혹하는 가르침",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "경건의 연단",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿는 자의 본",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "가족처럼 대하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "참 과부",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "장로를 존경하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1ti",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "종과 다른 교훈",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자족과 돈 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선한 싸움",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부한 자들에게",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2ti",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "거짓 없는 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "부끄러워하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "버린 자와 찾아온 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2ti",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "좋은 병사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "매이지 않는 말씀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "옳게 분별하는 일꾼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "귀히 쓰는 그릇",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2ti",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "말세의 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "바울을 따른 디모데",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님의 감동으로 된 성경",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2ti",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 22,
+        "easy": 22
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "말씀을 전파하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "선한 싸움을 마침",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "동역자들의 소식",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마지막 문안",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "tit",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "디도에게 인사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "장로와 감독의 자격",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "거짓 교사들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "tit",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "나이에 따른 교훈",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "종들에게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나타난 은혜",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "tit",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "선한 일을 준비하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "긍휼로 구원하심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "무익한 다툼을 피하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마지막 부탁",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "phm",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "빌레몬에게 감사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오네시모를 위한 간구",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "내 앞으로 계산하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 14,
+        "easy": 14
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 2,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "아들로 말씀하심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "천사보다 뛰어나심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "큰 구원을 등한히 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죽음을 맛보신 예수",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자비하고 신실한 대제사장",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 19,
+        "easy": 19
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "마음을 완고하게 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "매일 피차 권면하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 16,
+        "easy": 16
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "남은 안식",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "살아 있는 말씀",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 14,
+        "easy": 14
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "부르심 받은 대제사장",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "고난으로 배운 순종",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "젖과 단단한 음식",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "완전한 데로",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "더 좋은 것",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "살렘 왕 멜기세덱",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새로운 제사장",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "온전히 구원하심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 2,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "새 언약",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 28,
+        "easy": 28
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "첫 언약의 장막",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자기 피로 단번에",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "피 흘림이 없으면",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두 번째 나타나심",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 39,
+        "easy": 39
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "그림자인 율법",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새로운 살 길",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "짐짓 짓는 죄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인내가 필요함",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 40,
+        "easy": 40
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "믿음이란",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "모세와 라합",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세상이 감당 못한 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "아들로 대하시는 징계",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "화평과 거룩함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "시온 산에 이름",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "heb",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "사랑과 대접",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "찬송의 제사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "축도와 문안",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jas",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "시험을 기쁘게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "욕심과 좋은 선물",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "행하는 자가 되라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jas",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 26,
+        "easy": 26
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "차별하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "행함이 없는 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jas",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "선생이 많이 되지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "작은 불 같은 혀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "위로부터 난 지혜",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jas",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "정욕에서 나는 다툼",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님을 가까이하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "안개 같은 생명",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jas",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "부한 자들에게",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "길이 참으라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "믿음의 기도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1pe",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "거룩한 자가 되라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "썩지 않을 씨",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1pe",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "신령한 젖",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나그네의 선한 행실",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "그리스도의 본",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1pe",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 22,
+        "easy": 22
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "아내와 남편",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "복을 빌라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "소망의 이유",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1pe",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 19,
+        "easy": 19
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "같은 마음의 갑옷",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마지막이 가까움",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "불 시험",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1pe",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 14,
+        "easy": 14
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "염려를 주께 맡기라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마귀를 대적하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "문안",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2pe",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "신의 성품에 참여",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "더하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "친히 본 위엄",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성령의 감동",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2pe",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 22,
+        "easy": 22
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "거짓 선생들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "심판과 구원의 예",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "발람의 길",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "물 없는 샘",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2pe",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "조롱하는 자들",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오래 참으심",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "새 하늘과 새 땅",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1jn",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 10,
+        "easy": 10
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "생명의 말씀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "빛이신 하나님",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죄를 자백하면",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1jn",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "대언자 예수",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "형제 사랑과 빛",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세상을 사랑하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "적그리스도",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1jn",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "하나님의 자녀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "가인 같이 하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "담대함과 계명",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1jn",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "영들을 분별하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하나님은 사랑이시라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두려움을 내쫓는 사랑",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "1jn",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "세상을 이기는 믿음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "담대함과 참된 자",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "2jn",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "진리 안에서 사랑하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "대면을 바람",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "3jn",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "가이오를 위한 간구",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "나그네를 대접함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "디오드레베와 데메드리오",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "jud",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 25,
+        "easy": 25
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "믿음의 도를 위하여",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "옛 심판의 예",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "자신을 지키라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "송영",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 1,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "계시를 주시는 순서",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "촛대 사이의 인자 같은 분",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두려워하지 말라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 2,
+      "sourceVerses": {
+        "gae": 29,
+        "easy": 29
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 3,
+      "skipped": [
+        {
+          "title": "서머나: 죽도록 충성",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 3,
+      "sourceVerses": {
+        "gae": 22,
+        "easy": 22
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 3,
+      "skipped": []
+    },
+    {
+      "code": "rev",
+      "chapter": 4,
+      "sourceVerses": {
+        "gae": 11,
+        "easy": 11
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "하늘의 열린 문",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "보좌에 앉으신 분",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이십사 장로와 일곱 등불",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "만물을 지으신 분께 경배",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 5,
+      "sourceVerses": {
+        "gae": 14,
+        "easy": 14
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "일곱 인으로 봉한 두루마리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "유다 지파의 사자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "죽임당한 어린 양",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "온 우주의 찬양",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 6,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 6,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "둘째 인: 붉은 말",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "셋째 인: 검은 말",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "넷째 인: 청황색 말",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다섯째 인: 순교자",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여섯째 인: 진노의 날",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 7,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 17
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "네 바람을 붙잡은 천사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "인침받은 십사만 사천",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "흰옷 입은 큰 무리",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "큰 환난에서 나온 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 8,
+      "sourceVerses": {
+        "gae": 13,
+        "easy": 13
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "반 시간의 고요",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "첫째·둘째 나팔",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "셋째·넷째 나팔",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "독수리의 화 화 화",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 9,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "무저갱이 열림",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "유브라데의 네 천사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "이억 마병대",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "회개하지 않는 사람들",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 10,
+      "sourceVerses": {
+        "gae": 11,
+        "easy": 11
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "힘센 천사가 내려옴",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "지체하지 않으리라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "작은 두루마리를 먹음",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "다시 예언하라",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 11,
+      "sourceVerses": {
+        "gae": 19,
+        "easy": 19
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "성전을 측량함",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "두 증인의 죽음과 부활",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "일곱째 나팔과 찬양",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "열린 하늘 성전",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 12,
+      "sourceVerses": {
+        "gae": 17,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "구원의 찬양",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "여자를 박해하는 용",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "남은 자손과 싸우려 함",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 13,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "바다에서 나온 짐승",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "마흔두 달의 모독",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "땅에서 올라온 짐승",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "짐승의 표",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "육백육십육",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 14,
+      "sourceVerses": {
+        "gae": 20,
+        "easy": 20
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "영원한 복음의 천사",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "무너진 바벨론과 진노의 잔",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "주 안에서 죽는 자의 복",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "곡식과 포도의 추수",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 15,
+      "sourceVerses": {
+        "gae": 8,
+        "easy": 8
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "일곱 재앙의 표적",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "일곱 금 대접",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 16,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "일곱째 대접: 되었다",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 17,
+      "sourceVerses": {
+        "gae": 18,
+        "easy": 18
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 3,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "짐승의 비밀",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "음녀의 멸망",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 18,
+      "sourceVerses": {
+        "gae": 24,
+        "easy": 24
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 5,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "무너졌도다",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "내 백성아 나오라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "세 무리의 애통",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "하늘의 기쁨",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "맷돌 같은 돌",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 19,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "할렐루야",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "충신과 진실, 백마 탄 이",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 20,
+      "sourceVerses": {
+        "gae": 15,
+        "easy": 15
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 2,
+      "skipped": [
+        {
+          "title": "첫째 부활과 왕 노릇",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "크고 흰 보좌",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 21,
+      "sourceVerses": {
+        "gae": 27,
+        "easy": 27
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 1,
+      "skipped": [
+        {
+          "title": "새 하늘과 새 땅",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "만물을 새롭게 하노라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "성전이 없는 성",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    },
+    {
+      "code": "rev",
+      "chapter": 22,
+      "sourceVerses": {
+        "gae": 21,
+        "easy": 21
+      },
+      "commentaryAvailable": true,
+      "eventsReviewed": 4,
+      "scenes": 0,
+      "skipped": [
+        {
+          "title": "생명수 강과 생명나무",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "속히 오리라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오라",
+          "reason": "no-source-confirmed-actor-or-object"
+        },
+        {
+          "title": "오시옵소서",
+          "reason": "no-source-confirmed-actor-or-object"
+        }
+      ]
+    }
+  ],
+  "voicedReview": [
+    {
+      "code": "mat",
+      "chapter": 14,
+      "actor": "베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "mat",
+      "chapter": 26,
+      "actor": "베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "mrk",
+      "chapter": 10,
+      "actor": "바디매오",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "luk",
+      "chapter": 5,
+      "actor": "시몬",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "luk",
+      "chapter": 10,
+      "actor": "사마리아 사람",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "luk",
+      "chapter": 19,
+      "actor": "삭개오",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "jhn",
+      "chapter": 4,
+      "actor": "사마리아 여자",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "jhn",
+      "chapter": 13,
+      "actor": "시몬 베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "jhn",
+      "chapter": 20,
+      "actor": "도마",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 3,
+      "actor": "베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 9,
+      "actor": "베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 12,
+      "actor": "베드로",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 16,
+      "actor": "루디아",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 18,
+      "actor": "바울",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 19,
+      "actor": "바울",
+      "status": "range-and-chapter-name-checked"
+    },
+    {
+      "code": "act",
+      "chapter": 27,
+      "actor": "바울",
+      "status": "range-and-chapter-name-checked"
+    }
+  ]
+}
