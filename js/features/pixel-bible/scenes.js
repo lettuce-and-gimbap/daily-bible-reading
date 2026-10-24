@@ -29,7 +29,13 @@ export const ELIJAH_SCENES = [{
   study: '호크마 참고: 지친 엘리야에게 먼저 음식과 쉼이 주어지는 돌봄에 주목합니다. 여호와의 천사의 정체를 특정하는 주석 해석은 장면의 확정 사실로 넣지 않았습니다.',
   objectNote: '공통 나무 그림이 로뎀나무를 상징해요. 떡·물·호렙까지의 여정은 자막으로 설명하며, 이 나무가 호렙에 있다는 뜻은 아니에요.',
 }];
-export const ALL_SCENES = [...RUTH_SCENES, ...ELIJAH_SCENES];
+export const JORDAN_SCENES=[
+ {id:'jordan-elijah',code:'2ki',chapter:2,title:'겉옷으로 요단강을 치다',actors:['엘리야','엘리사'],object:'cloak',ref:'열왕기하 2:8',actions:{엘리야:'cloak'},lines:['엘리야(뜻풀이): 함께 마른 땅으로 건너가자.','해설: 엘리야가 겉옷을 말아 강물을 치자 물이 양쪽으로 갈라졌습니다.'],study:'겉옷 자체의 마술이 아니라 하나님이 선지자와 함께하심을 나타내는 사건이에요.'},
+ {id:'jordan-elisha',code:'2ki',chapter:2,title:'엘리사가 요단을 건너다',actors:['엘리사'],object:'cloak',ref:'열왕기하 2:13–14',actions:{엘리사:'cloak'},lines:['엘리사(뜻풀이): 엘리야의 하나님 여호와는 어디 계십니까?','해설: 엘리사가 물을 치자 강이 갈라졌고, 엘리사는 그 사이로 건넜습니다.'],study:'엘리야가 떠난 뒤에도 하나님이 엘리사와 함께하심을 보여 줘요.'},
+ {id:'jericho-water',code:'2ki',chapter:2,title:'여리고의 물이 회복되다',actors:['엘리사'],object:'water',ref:'열왕기하 2:19–22',actions:{},lines:['엘리사(뜻풀이): 새 그릇에 소금을 담아 가져오시오.','해설: 엘리사는 물 근원에 소금을 던졌고 여호와께서 물을 고치셨다고 전했습니다.'],study:'소금만 넣으면 나쁜 물이 정화된다는 생활 지침이 아니라 하나님의 회복을 전하는 사건이에요.'},
+ {id:'floating-axe',code:'2ki',chapter:6,title:'빌린 도끼가 떠오르다',actors:['엘리사'],object:'water',ref:'열왕기하 6:5–7',actions:{},lines:['엘리사(뜻풀이): 어디에 빠졌느냐?','해설: 엘리사가 나뭇가지를 던지자 쇠도끼가 떠올랐고, 빌린 사람은 손을 뻗어 건졌습니다.'],study:'빌린 도구를 잃은 제자의 곤란을 돌보시는 사건이에요.'}
+];
+export const ALL_SCENES = [...RUTH_SCENES, ...ELIJAH_SCENES,...JORDAN_SCENES];
 export function scenesForChapters(chapters) {
   return ALL_SCENES.filter(scene => chapters.some(c => {
     if (!c.data || c.code !== scene.code || c.chap !== scene.chapter) return false;

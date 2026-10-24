@@ -1,3 +1,4 @@
+import {waterAt,dryLanding} from './terrain-response.js';
 import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,learningNext,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
 import {physiqueFor} from './physique.js';
@@ -337,7 +338,7 @@ export async function mountPixelWorld(shell, options) {
   let blockedCells=new Set();
   const indexObjects=()=>{blockedCells=new Set([...objects,...terrain].filter(o=>(OBJECT_CATALOG[o.kind]?.action||o.kind)!=='field'&&!['lily','fruit','net'].includes(o.kind)).map(o=>`${o.x},${o.y}`));};
   indexObjects();
-  const blocked = (x,y)=>x<BOUNDS.minX||x>BOUNDS.maxX||y<BOUNDS.minY||y>BOUNDS.maxY||blockedCells.has(`${x},${y}`);
+  const blocked = (x,y)=>x<BOUNDS.minX||x>BOUNDS.maxX||y<BOUNDS.minY||y>BOUNDS.maxY||waterAt(backgroundKey,x,y)||blockedCells.has(`${x},${y}`);
   function clearTerrainOverlap(){
     for(const n of npcs)if(!n.usingObject&&blocked(Math.round(n.x),Math.round(n.y))){
       let spot=null;for(let radius=1;radius<8&&!spot;radius++)for(let dy=-radius;dy<=radius&&!spot;dy++)for(let dx=-radius;dx<=radius;dx++){
@@ -679,6 +680,7 @@ export async function mountPixelWorld(shell, options) {
       const spot=adjacent(obj,landing)[0];
       if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);updateEncounters(performance.now());draw();return;}
     }
+    if(!n.creature&&waterAt(backgroundKey,landing.x,landing.y)){const safe=dryLanding(backgroundKey,landing,blocked);if(safe){n.x=landing.x;n.y=landing.y;n.path=[];n.task=null;n.usingObject=null;n.waterEscape={elapsed:0,safe};say('첨벙! 잠시 뒤 물가로 올라와요.');draw();return;}}
     if(blocked(landing.x,landing.y)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 오브젝트가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
@@ -904,6 +906,7 @@ export async function mountPixelWorld(shell, options) {
   function update(dt) {
     time+=dt;autoObjects();
     for(const n of npcs) {
+      if(n.waterEscape){const state=n.waterEscape;state.elapsed+=dt;n.direction='down';n.stride+=dt*8;if(state.elapsed>=5){n.x=state.safe.x;n.y=state.safe.y;n.waterEscape=null;n.idle=3;say('휴! 물가로 올라와 숨을 고르고 있어요.');}continue;}
       if(n.creature?.kind==='plant'){n.path=[];n.task=null;continue;}
       if(drag?.active && drag.n===n)continue;
       if(n.encounter){n.idle=6;continue;}
@@ -964,6 +967,7 @@ export async function mountPixelWorld(shell, options) {
       ctx.fillStyle=valid?'#79c99566':'#e17e7866';ctx.fillRect((p.x-.6)*TILE,(p.y-.4)*TILE,1.2*TILE,.8*TILE);
       ctx.save();ctx.globalAlpha=.8;drawWorldObject(ctx,{...objectHold.o,...grabbedOrigin(objectHold)},TILE,objectHold.frame);ctx.restore();
     }
+    for(const n of npcs.filter(n=>n.waterEscape)){const x=n.x*TILE,y=n.y*TILE;ctx.fillStyle='#6ab5c5';for(let j=0;j<3;j++){const step=Math.floor(n.waterEscape.elapsed*5)%3;ctx.fillRect(x-18+j*12,y-6-(j===step?12:0),9,3);}ctx.fillStyle='#d9f4ee';ctx.fillRect(x-19,y-1,38,3);}
     if(light.alpha){ctx.save();ctx.globalAlpha=light.alpha;ctx.fillStyle=light.shade;ctx.fillRect(0,0,WORLD.width,WORLD.height);ctx.restore();}
     const talkingRelations=model.relations.filter(r=>encounterLines.some(l=>l.origin!=='general'&&l.target&&((l.speaker.name===r.from&&l.target.name===r.to)||(l.speaker.name===r.to&&l.target.name===r.from))));
     if(showRelationships||talkingRelations.length)drawRelationshipLinks(ctx,relationshipLinks(showRelationships?model.relations:talkingRelations,npcs,drag));
