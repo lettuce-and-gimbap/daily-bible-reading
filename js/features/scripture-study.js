@@ -1,19 +1,30 @@
 // User marks contain only reference keys, colors and notes, never a second stored copy of scripture.
 window.ScriptureStudy=(()=>{
- const glossary={
-  '기업 무를 자':{text:'가난 때문에 팔게 된 친족의 땅 등을 되찾아 주는 가까운 친족을 가리켜요. 여기서 기업은 회사가 아니라 물려받은 몫이나 땅이라는 뜻이에요.',ref:'레위기 25:25'},
-  '우림과 둠밈':{text:'대제사장의 흉패에 넣어 두고 하나님의 뜻을 구할 때 사용한 물건이에요. 정확한 모양이나 사용 절차는 본문이 자세히 설명하지 않아요.',ref:'출애굽기 28:30'},
-  '희년':{text:'쉰째 해에 자유를 선포하고 자기 소유지와 가족에게 돌아가도록 한 해예요.',ref:'레위기 25:10'},
-  '할례':{text:'창세기에서는 하나님과 아브라함의 후손 사이에 맺은 언약을 몸에 표시하는 의식으로 소개해요.',ref:'창세기 17:10'},
-  '에봇':{text:'제사장의 의복 가운데 하나예요. 대제사장의 정교한 에봇과 어린 사무엘의 세마포 에봇은 같은 세부 장식으로 단정하면 안 돼요.',ref:'출애굽기 28:4 · 사무엘상 2:18'},
-  '흉패':{text:'대제사장이 가슴에 붙이는 의복 장식이에요. 열두 보석에는 이스라엘 열두 지파의 이름을 새겼어요.',ref:'출애굽기 28:15–21'}
- };
+ const data=window.ScriptureNotesData||{terms:[],sources:{}};
+ const glossary=Object.fromEntries([...data.terms,...(data.passages||[])].map(t=>[t.id,t]));
+ const aliases=data.terms.flatMap(t=>t.aliases.map(word=>({word,term:t}))).sort((a,b)=>b.word.length-a.word.length);
+ const regexEscape=s=>Array.from(s,c=>'.*+?^${}()|[]'.includes(c)||c.charCodeAt(0)===92?String.fromCharCode(92)+c:c).join('');
  const storage='scripture-study:v1';let records={};try{records=JSON.parse(localStorage.getItem(storage))||{};}catch(_){}
  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function save(){try{localStorage.setItem(storage,JSON.stringify(records));return true;}catch(_){alert('표시를 저장하지 못했어요. 저장 공간을 확인해 주세요.');return false;}}
- function glossaryHtml(text){const pattern=new RegExp(Object.keys(glossary).sort((a,b)=>b.length-a.length).join('|'),'g');let start=0,out='';for(const m of text.matchAll(pattern)){out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(m[0])}" aria-label="${esc(m[0])} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));}
+ function glossaryHtml(text,context={}){
+  const available=aliases.filter(a=>!a.term.books||a.term.books.includes(context.code));if(!available.length)return esc(text);
+  const pattern=new RegExp(available.map(a=>regexEscape(a.word)).join('|'),'g');let start=0,out='';
+  for(const m of text.matchAll(pattern)){const g=available.find(a=>a.word===m[0]).term;out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));
+ }
+ function showTerm(g){
+  const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · 직접 정리한 설명</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.</p>${Object.values(data.sources).map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
+ }
+ document.addEventListener('click',async e=>{
+  const button=e.target.closest('[data-study-reference]');if(!button)return;e.preventDefault();const body=button.closest('.study-dialog-body');let output=body.querySelector('.study-reference-verses');if(!output){output=document.createElement('section');output.className='study-reference-verses';output.setAttribute('aria-live','polite');body.append(output);}const request=button.dataset.studyReference;output.dataset.request=request;output.textContent='구절을 불러오는 중이에요…';
+  try{const m=request.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);if(!m||typeof CHAPTERS==='undefined'||typeof versePairs!=='function')throw Error();const idx=CHAPTERS.findIndex(c=>c.book.name===m[1]&&c.chap===Number(m[2]));if(idx<0)throw Error();const lo=Number(m[3]),hi=Math.min(Number(m[4]||m[3]),lo+5),vers=typeof pickVersions==='function'?pickVersions():['gae','easy'];const rows=await versePairs(idx,n=>n>=lo&&n<=hi,vers);if(output.dataset.request!==request)return;if(!rows.length)throw Error();output.innerHTML=`<h4>${esc(request)}${Number(m[4]||m[3])>hi?' · 앞 6절':''}</h4><small>${vers.map(v=>esc(typeof VERSIONS!=='undefined'?VERSIONS.find(x=>x.code===v)?.name||v:v)).join(' · ')}</small>`+rows.map(r=>`<p><strong>${esc(r.label)}</strong> ${esc(r.texts[0])}${r.texts[1]?`<small>${esc(r.texts[1])}</small>`:''}</p>`).join('');}catch(_){if(output.dataset.request===request)output.textContent='구절을 불러오지 못했어요. 통독·QT의 해당 본문에서 확인하거나 다시 눌러 주세요.';}
+ });
+ function mountIndex(root){
+  root.querySelector('.study-notes-index')?.remove();const box=document.createElement('details');box.className='study-notes-index';box.innerHTML='<summary>주석 · 어려운 말 찾아보기</summary><label>용어 검색<input type="search" placeholder="언약, 은혜, 제사…" aria-label="주석 용어 검색"></label><div class="study-notes-results"></div><small>본문 설명과 교리적 해석을 구분해 읽어 보세요.</small>';
+  const render=()=>{const q=box.querySelector('input').value.trim(),terms=data.terms.filter(t=>!q||[t.title,...t.aliases,t.summary].some(x=>x.includes(q)));const results=box.querySelector('.study-notes-results');results.innerHTML=terms.length?terms.map(t=>`<button type="button" data-note-id="${esc(t.id)}">${esc(t.title)}<small>${esc(t.category)}</small></button>`).join(''):'<p role="status">등록된 설명이 없어요. 모든 구절에 주석이 있는 것은 아니에요.</p>';};box.querySelector('input').oninput=render;box.onclick=e=>{const button=e.target.closest('[data-note-id]');if(button){e.preventDefault();showTerm(glossary[button.dataset.noteId]);}};render();root.querySelector('.vp-list')?.before(box);
+ }
  function modal(title){document.querySelector('.study-dialog')?.remove();const d=document.createElement('dialog');d.className='study-dialog';d.setAttribute('aria-label',title);d.innerHTML='<h3></h3><div class="study-dialog-body"></div><button type="button">닫기</button>';d.querySelector('h3').textContent=title;d.querySelector('button').onclick=()=>d.close();d.addEventListener('close',()=>d.remove());document.body.append(d);d.showModal();return d.querySelector('.study-dialog-body');}
- document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(!g)return;const body=modal(term.dataset.studyTerm);body.innerHTML=`<p>${esc(g.text)}</p><small>참고: ${esc(g.ref)}</small>`;},true);
+ document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(g)showTerm(g);},true);
  document.addEventListener('keydown',e=>{if(e.target.matches('[data-study-term]')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
 
  const colorKey='scripture-highlight-color:v1';
@@ -27,8 +38,11 @@ window.ScriptureStudy=(()=>{
  function renderSegment(segment){
   const text=segment.dataset.studyText,entry=records[segment.dataset.studySegment]||{},hash=fingerprint(text);
   const ranges=(entry.ranges||[]).filter(r=>r.hash===hash&&r.start>=0&&r.end<=text.length&&r.end>r.start&&validColor(r.color));
-  const points=[...new Set([0,text.length,...ranges.flatMap(r=>[r.start,r.end])])].sort((a,b)=>a-b);
-  segment.innerHTML=points.slice(0,-1).map((start,i)=>{const end=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=end),body=glossaryHtml(text.slice(start,end));return match?`<mark class="study-mark" style="background:${match.color};color:${[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1'}">${body}</mark>`:body;}).join('');
+  segment.innerHTML=glossaryHtml(text,{code:segment.dataset.studyBook});
+  // Keep a term's accessible button intact even when a highlight covers only part of it.
+  const walker=document.createTreeWalker(segment,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);let offset=0;
+  for(const node of nodes){const base=offset,end=base+node.textContent.length;offset=end;const points=[...new Set([base,end,...ranges.flatMap(r=>[r.start,r.end]).filter(n=>n>base&&n<end)])].sort((a,b)=>a-b);const fragment=document.createDocumentFragment();for(let i=0;i<points.length-1;i++){const start=points[i],stop=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=stop),part=document.createTextNode(node.textContent.slice(start-base,stop-base));if(match){const mark=document.createElement('mark');mark.className='study-mark';mark.style.background=match.color;mark.style.color=[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1';mark.append(part);fragment.append(mark);}else fragment.append(part);}node.replaceWith(fragment);}
+
  }
  function selectionParts(){
   const selection=window.getSelection();if(!selection||selection.isCollapsed||!selection.rangeCount)return [];
@@ -60,9 +74,11 @@ window.ScriptureStudy=(()=>{
  document.addEventListener('scroll',closeTip,true);
  function mount(root,keys,{dock=false}={}){
   if(dock)root.dataset.studyDocked='true';
+  mountIndex(root);
   const rows=[...root.querySelectorAll('.vp-row')];
-  rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');
-   row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;
+  rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');const context=typeof CHAPTERS!=='undefined'?CHAPTERS[Number(idx)]:null;const span=row.querySelector('.vp-num').textContent.match(/\d+/g)||[];const lo=Number(span[0]),hi=Number(span[1]||span[0]);
+   row.querySelector('.study-passage-links')?.remove();const notes=(data.passages||[]).filter(n=>n.code===context?.book.code&&n.chapter===context?.chap&&n.lo<=hi&&n.hi>=lo);if(notes.length){const links=document.createElement('div');links.className='study-passage-links';for(const n of notes){const button=document.createElement('button');button.type='button';button.textContent='주석 · '+n.title;button.onclick=e=>{e.preventDefault();e.stopPropagation();showTerm(n);};links.append(button);}row.querySelector('.vp-txt')?.append(links);}
+   row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;segment.dataset.studyBook=typeof CHAPTERS!=='undefined'?CHAPTERS[Number(idx)]?.book?.code||'':'';
     // Keep earlier whole-verse marks visible when moving to text ranges.
     const old=records[keys[i]],colors={yellow:'#fff0a3',green:'#d7efbd',pink:'#f7d0dd'};
     if(old?.color&&!records[segment.dataset.studySegment])records[segment.dataset.studySegment]={ranges:[{start:0,end:segment.textContent.length,color:colors[old.color]||'#fff0a3',hash:fingerprint(segment.textContent)}]};
