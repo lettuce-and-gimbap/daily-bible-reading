@@ -12,7 +12,7 @@ import subprocess
 
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_DB = Path('/workspace/private-reference/bible/scripture.sqlite3')
-EDITIONS = {'gae': '개역개정 4판', 'easy': '쉬운성경'}
+EDITIONS = {'gae': '개역개정 4판', 'easy': '쉬운성경', 'niv': 'NIV'}
 HEADER = re.compile(r'^##\s+(\d+)(?:장|편)\s*$', re.M)
 VERSE = re.compile(r'^(\d+)\s+(.+)$')
 
@@ -44,6 +44,117 @@ def parse_book(text, expected_chapters=None):
     if not chapters:
         raise ValueError('no chapter headings')
     return chapters
+
+
+def niv_chapter_limits():
+    """Read public chapter metadata only; this does not contain scripture text."""
+    source = (REPO / 'js/core/versecounts.js').read_text()
+    match = re.search(r'const VERSE_COUNTS = \[([^\]]+)\]', source)
+    if not match:
+        raise ValueError('Could not read chapter verse-count metadata')
+    counts = [int(value) for value in re.findall(r'\d+', match[1])]
+    refs = subprocess.check_output([
+        'node', '-e',
+        'const {CHAPTERS}=require("./js/core/bible.js"); console.log(JSON.stringify(CHAPTERS.map(c=>[c.book.code,c.chap])))'
+    ], cwd=REPO)
+    chapters = json.loads(refs)
+    if len(counts) != len(chapters):
+        raise ValueError('Chapter reference metadata length mismatch')
+    return {tuple(ref): count for ref, count in zip(chapters, counts)}
+
+
+def parse_niv_book(text, expected_chapters, limits, code):
+    """Keep NIV wrapped verse text intact without mistaking leading numerals for labels."""
+    headers = list(HEADER.finditer(text.replace('\r\n', '\n')))
+    normalized = text.replace('\r\n', '\n')
+    if [int(h[1]) for h in headers] != list(range(1, expected_chapters + 1)):
+        raise ValueError('missing or unexpected chapter headings')
+    chapters = {}
+    for i, header in enumerate(headers):
+        chapter = int(header[1])
+        body = normalized[header.end():headers[i + 1].start() if i + 1 < len(headers) else len(normalized)]
+        verses = {}
+        current = None
+        for raw_line in body.splitlines():
+            line = raw_line.strip()
+            if not line:
+                continue
+            match = VERSE.match(line)
+            if match:
+                verse, value = int(match[1]), match[2].strip()
+                # A few wrapped NIV lines begin with quantities such as "390 days";
+                # duplicate or far-out labels are part of the previous verse text.
+                if current is not None and (verse in verses or verse > limits[(code, chapter)] + 10):
+                    verses[current] += ' ' + line
+                    continue
+                if verse < 1:
+                    raise ValueError(f'invalid verse {chapter}:{verse}')
+                verses[verse] = value
+                current = verse
+            elif current is not None:
+                verses[current] += ' ' + line
+        if not verses:
+            raise ValueError(f'empty chapter {chapter}')
+        chapters[chapter] = (body.strip(), verses)
+    return chapters
+
+
+def import_niv_sources(db_path, source_root):
+    db_path = private_path(db_path)
+    source_root = private_path(source_root)
+    metadata = {b['code']: b for b in books()}
+    limits = niv_chapter_limits()
+    files = sorted(source_root.glob('NIV_*.md'))
+    parsed_books = {}
+    for source in files:
+        match = re.fullmatch(r'NIV_([a-z0-9]+)_(.+)\.md', source.name)
+        if not match or match[1] not in metadata:
+            raise ValueError(f'unexpected NIV source filename: {source.name}')
+        code = match[1]
+        if code in parsed_books:
+            raise ValueError(f'duplicate NIV book: {code}')
+        raw = source.read_bytes()
+        parsed = parse_niv_book(raw.decode('utf-8-sig'), metadata[code]['chapters'], limits, code)
+        parsed_books[code] = (source, raw, parsed)
+    if set(parsed_books) != set(metadata):
+        missing = sorted(set(metadata) - set(parsed_books))
+        extra = sorted(set(parsed_books) - set(metadata))
+        raise ValueError(f'NIV book coverage mismatch; missing={missing}, extra={extra}')
+    if not db_path.exists():
+        raise ValueError('Existing private scripture database is required')
+    db_path.chmod(0o600)
+    with sqlite3.connect(db_path) as db:
+        if db.execute("SELECT COUNT(*) FROM sources WHERE edition='niv'").fetchone()[0]:
+            raise ValueError('NIV is already present in the private database')
+        required = {'sources', 'chapters', 'verses', 'verse_search'}
+        present = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE name IN ('sources','chapters','verses','verse_search')")}
+        if present != required:
+            raise ValueError('Private database schema is incomplete')
+        db.execute('BEGIN IMMEDIATE')
+        try:
+            for code, (source, raw, parsed) in parsed_books.items():
+                db.execute('INSERT INTO sources VALUES(?,?,?,?,?,?)', (
+                    'niv', code, metadata[code]['name'], source.name,
+                    hashlib.sha256(raw).hexdigest(), len(raw)))
+                for chapter, (body, verses) in parsed.items():
+                    db.execute('INSERT INTO chapters VALUES(?,?,?,?)', ('niv', code, chapter, body))
+                    for verse, value in verses.items():
+                        db.execute('INSERT INTO verses VALUES(?,?,?,?,?)', ('niv', code, chapter, verse, value))
+                        db.execute('INSERT INTO verse_search VALUES(?,?,?,?,?)', (value, 'niv', code, chapter, verse))
+            db.commit()
+        except Exception:
+            db.rollback()
+            raise
+        if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+            raise ValueError('Private database integrity failure after NIV import')
+        counts = {
+            'books': db.execute("SELECT COUNT(*) FROM sources WHERE edition='niv'").fetchone()[0],
+            'chapters': db.execute("SELECT COUNT(*) FROM chapters WHERE edition='niv'").fetchone()[0],
+            'verses': db.execute("SELECT COUNT(*) FROM verses WHERE edition='niv'").fetchone()[0],
+        }
+        if counts != {'books': 66, 'chapters': 1189, 'verses': sum(len(v) for _, _, parsed in parsed_books.values() for _, v in parsed.values())}:
+            raise ValueError(f'NIV import row-count mismatch: {counts}')
+    print(json.dumps(counts, ensure_ascii=False))
 
 
 def merged_passages(body, start, end):
@@ -159,23 +270,28 @@ def main():
     sub = parser.add_subparsers(dest='command', required=True)
     load = sub.add_parser('import')
     load.add_argument('manifest')
+    niv = sub.add_parser('import-niv')
+    niv.add_argument('source_root')
     sub.add_parser('status')
     passage = sub.add_parser('passage')
     passage.add_argument('code')
     passage.add_argument('chapter', type=int)
     passage.add_argument('start', type=int)
     passage.add_argument('end', nargs='?', type=int)
-    passage.add_argument('--edition', choices=['both', 'gae', 'easy'], default='both')
+    passage.add_argument('--edition', choices=['both', 'gae', 'easy', 'niv'], default='both')
     passage.add_argument('--commentary', action='store_true')
     passage.add_argument('--commentary-chars', type=int, default=1000)
     search = sub.add_parser('search')
     search.add_argument('term')
     search.add_argument('--code')
-    search.add_argument('--edition', choices=['both', 'gae', 'easy'], default='gae')
+    search.add_argument('--edition', choices=['both', 'gae', 'easy', 'niv'], default='gae')
     search.add_argument('--limit', type=int, default=8)
     args = parser.parse_args()
     if args.command == 'import':
         import_files(args.manifest, args.db)
+        return
+    if args.command == 'import-niv':
+        import_niv_sources(args.db, args.source_root)
         return
     path = private_path(args.db)
     if not path.exists():
@@ -189,7 +305,8 @@ def main():
             end = args.end or args.start
             if args.start < 1 or end < args.start or end-args.start > 99:
                 parser.error('Query 1–100 verses at a time')
-            for edition in (EDITIONS if args.edition == 'both' else [args.edition]):
+            editions = ['gae', 'easy'] if args.edition == 'both' else [args.edition]
+            for edition in editions:
                 rows = db.execute('SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? AND verse BETWEEN ? AND ? ORDER BY verse', (edition, args.code, args.chapter, args.start, end)).fetchall()
                 body=db.execute('SELECT body FROM chapters WHERE edition=? AND code=? AND chapter=?',(edition,args.code,args.chapter)).fetchone()
                 combined=merged_passages(body[0] if body else '',args.start,end)
@@ -209,7 +326,9 @@ def main():
                 parser.error('A nonempty search term up to 100 characters is required')
             term = args.term.replace('\\', '\\\\').replace('%', '\\%').replace('_', '\\_')
             clauses, params = ["text LIKE ? ESCAPE '\\'"], ['%'+term+'%']
-            if args.edition != 'both':
+            if args.edition == 'both':
+                clauses.append('edition IN (?,?)'); params.extend(['gae', 'easy'])
+            else:
                 clauses.append('edition=?'); params.append(args.edition)
             if args.code:
                 clauses.append('code=?'); params.append(args.code)
@@ -219,7 +338,8 @@ def main():
                 print(f'[{EDITIONS[edition]}] {code} {chapter}:{verse} {text}');shown+=1
             if shown<params[-1]:
                 source_clauses=[clauses[0].replace('text LIKE','body LIKE')];source_params=['%'+term+'%']
-                if args.edition!='both':source_clauses.append('edition=?');source_params.append(args.edition)
+                if args.edition=='both':source_clauses.append('edition IN (?,?)');source_params.extend(['gae','easy'])
+                else:source_clauses.append('edition=?');source_params.append(args.edition)
                 if args.code:source_clauses.append('code=?');source_params.append(args.code)
                 for edition,code,chapter,body in db.execute('SELECT edition,code,chapter,body FROM chapters WHERE '+' AND '.join(source_clauses),source_params):
                     for label,text,_ in merged_passages(body,1,200):

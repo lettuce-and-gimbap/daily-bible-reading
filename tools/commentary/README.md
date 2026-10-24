@@ -2,13 +2,16 @@
 
 ## 비공개 업로드 자료 조회
 
-두 성경 역본 132개 파일(각 66권·1,189장)은 저장소 밖 `/workspace/private-reference/bible/`에 보관한다. 원본은 수정하지 않고 절 번호의 누락·역본 차이를 보존한다. 모델 자체의 영구 학습이나 다른 환경으로의 자동 이전은 아니다.
+개역개정·쉬운성경 132개 파일과 사용자가 제공한 NIV 66권 원문은 저장소 밖 `/workspace/private-reference/bible/`에 보관한다. NIV는 같은 비공개 DB의 별도 `niv` 판본으로 넣는다. 원본은 수정하지 않고 절 번호의 누락·역본 차이를 보존한다. 모델 자체의 영구 학습이나 다른 환경으로의 자동 이전은 아니다.
 
 ```sh
 python tools/commentary/private-scripture.py status
 python tools/commentary/private-scripture.py passage gen 37 3 --commentary --commentary-chars 800
 python tools/commentary/private-scripture.py search 에봇 --code exo --limit 4
+python tools/commentary/private-scripture.py passage jhn 3 16 --edition niv
 ```
+
+NIV 추가 가져오기는 저장소 밖에 둔 `NIV_*.md` 66개를 확인한 뒤 `python tools/commentary/private-scripture.py import-niv /workspace/private-reference/bible/sources`로 수행한다. NIV 절 색인은 업로드 파일의 실제 번호를 보존하며, 기존 두 역본 대조를 뜻하는 `--edition both`에는 포함하지 않는다.
 
 필요한 절만 두 역본으로 대조한 뒤 업로드 호크마 정리를 해석 보조로 확인한다. 본문과 주석 해석이 다르면 본문을 우선하고 차이를 기록한다. 이미 정확한 설명은 유지한다. `--db` 또는 `PRIVATE_BIBLE_DB`로 다른 **저장소 외부** 경로를 지정할 수 있다. DB가 없으면 비공개 자료 연결부터 복원한다.
 
