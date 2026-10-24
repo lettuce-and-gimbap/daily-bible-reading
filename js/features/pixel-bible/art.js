@@ -122,6 +122,13 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(style.collar===2)r(10,22,4,1,style.accent);
   if(style.hem===1)r(8,31,8,1,style.accent);
   if(style.hem===2){r(8,29,1,3,style.accent);r(15,29,1,3,style.accent);}
+  // Large connected cloth clusters, with restrained seams instead of noisy pixels.
+  if(style.fold===1){r(8,25,1,5,'#302f3522');r(13,27,1,4,'#ffffff22');}
+  if(style.fold===2){r(10,24,1,7,'#302f3522');r(14,28,1,3,'#ffffff22');}
+  if(style.weave===1)r(8,30,8,1,style.accent);
+  if(style.weave===2){r(8,30,2,1,style.accent);r(11,30,2,1,style.accent);r(14,30,2,1,style.accent);}
+  if(style.royal){r(8,28,1,2,style.trim||style.accent);r(15,28,1,2,style.trim||style.accent);}
+  if(style.priestBreastplate){r(9,22,6,5,'#c7a65c');for(let yy=0;yy<4;yy++)for(let xx=0;xx<3;xx++)r(9+xx*2,22+yy,1,1,['#a75d53','#6b9caa','#a08cba'][(xx+yy)%3]);}
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
   ctx.save();ctx.translate(0,4);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.

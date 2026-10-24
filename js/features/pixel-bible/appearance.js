@@ -24,7 +24,7 @@ export const APPEARANCES = {
   david: profile('#8a9a69','#6e4b36',{name:'다윗',lyre:true},'사무엘상 16:12,23 · 붉은 안색과 눈이 묘사되며 수금을 탐.','수금은 기록에 근거한 소품이에요. 붉은 안색을 붉은 머리카락이라는 뜻으로 단정하지 않으며 머리색은 창작이에요.'),
   peter: profile('#839d98','#5a4939',{name:'베드로',beard:'#5a4939',net:true},'마태복음 4:18 · 그물을 던지는 어부.','그물은 인물의 배경을 표현한 소품이에요.'),
   worker: profile('#cfac6a','#8f6c42',{name:'일꾼',headband:true,vest:true},'룻기 2:4 · 밭의 추수하는 일꾼들.','머리띠와 작업 조끼는 창작이에요.'),
-  aaron: profile("#d9c7a0","#6b5142",{"name": "아론", "headband": true, "sash": "#937caa", "trim": "#c9a75e"},"출애굽기 28:4, 39–40 · 제사장의 의복·관·띠.","제사장 의복을 단순화했으며 흉패와 에봇의 세부 재현은 아직 없어요."),
+  aaron: profile("#d9c7a0","#6b5142",{"name": "아론", "priestBreastplate": true, "headband": true, "sash": "#937caa", "trim": "#c9a75e"},"출애굽기 28:4, 39–40 · 제사장의 의복·관·띠.","제사장 의복을 단순화했으며 흉패의 보석 배열을 작은 도트로 단순화했어요."),
   miriam: profile("#ae748d","#514235",{"name": "미리암", "hood": true, "tambourine": true},"출애굽기 15:20 · 손에 소고를 들고 나옴.","소고 외의 의복과 머릿수건은 창작이에요."),
   joshua: profile("#738e7d","#584337",{"name": "여호수아", "sash": "#b88452", "headband": true},"여호수아 1:1–2 · 모세를 이어 백성을 이끄는 역할.","띠와 머리띠는 지도자를 구별하기 위한 창작이에요."),
   samuel: profile("#a99a7d","#7b6652",{"name": "사무엘", "mantle": true, "trim": "#d6c194"},"사무엘상 2:18–19 · 어린 시절 세마포 에봇을 입고 섬겼으며 어머니가 해마다 작은 겉옷을 지어 줌.","겉옷은 유년기 기록의 상징이며 색과 현재 모습은 창작이에요."),
@@ -77,5 +77,5 @@ export function appearanceFor(name, index=0, role='', refs=[]) {
 // 등장 순서와 무관하게 머리·옷깃·옷자락의 작은 창작 차이를 유지한다.
 function visualVariation(name) {
   let a=2166136261,b=5381;for(const c of name){a=Math.imul(a^c.codePointAt(0),16777619)>>>0;b=(Math.imul(b,33)^c.codePointAt(0))>>>0;}
-  return {fringe:a%4,collar:b%3,hem:a%3,accent:['#d8b987','#9cb4a2','#bda0a9','#a2b0c5','#c8bb9a'][b%5]};
+  return {weave:a%3,fold:b%3,cuff:a%2,fringe:a%4,collar:b%3,hem:a%3,accent:['#d8b987','#9cb4a2','#bda0a9','#a2b0c5','#c8bb9a'][b%5]};
 }
