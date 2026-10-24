@@ -38,6 +38,17 @@ Object.assign(tracks,{
  hammer:{handY:[27,24,19,17,26,21,26,27],bodyY:[0,0,-1,-1,2,0,1,0]},
  music:{handY:[26,24,23,25,23,24,25,26],bodyX:[0,-1,0,1,0,-1,0,0]}
 });
+// Strong held key poses: anticipation, contact, recoil and a deliberate recovery.
+Object.assign(tracks,{
+ hammer:{handY:[27,22,16,15,29,25,22,27],handX:[0,-2,-3,-2,6,4,2,0],bodyX:[0,-2,-3,-2,4,2,1,0],bodyY:[0,-1,-2,-1,3,2,0,0],toolAngle:[0,-.5,-1.4,-1.2,.8,.4,-.1,0]},
+ pull:{handY:[27,25,24,25,23,24,26,27],handX:[0,4,7,6,-3,-2,1,0],bodyX:[0,1,2,1,-4,-3,-1,0],bodyY:[0,0,1,1,2,1,0,0]},
+ overhead:{handY:[27,23,17,14,16,20,24,27],handX:[0,-1,-2,1,5,4,2,0],bodyX:[0,-1,-2,-1,3,2,1,0]},
+ ground:{handY:[26,28,31,32,29,27,25,26],handX:[0,2,5,6,3,1,0,0],bodyY:[0,1,3,4,3,2,0,0],bodyX:[0,1,2,3,2,1,0,0]},
+ grind:{handY:[27,26,24,26,28,26,25,27],handX:[0,-3,0,5,3,-2,0,0],bodyX:[0,-2,-1,3,2,-1,0,0]},
+ work:{handY:[27,24,22,24,28,26,24,27],handX:[0,-2,-3,2,5,3,1,0],bodyX:[0,-1,-2,0,3,2,0,0]},
+ music:{handY:[26,23,21,25,22,25,23,26],handX:[0,-2,2,4,-1,3,1,0],bodyX:[0,-1,0,2,0,-1,0,0]},
+ offer:{handY:[27,25,24,23,23,24,25,27],handX:[0,1,3,6,6,4,2,0],bodyX:[0,0,1,2,2,1,0,0]},
+});
 const lookup=new Map();
 for(const [track,names] of Object.entries(groups))for(const name of names.split(' '))if(!lookup.has(name))lookup.set(name,track);
 export function actionTrack(gesture){return ({grind:'grind',write:'write',trace:'write',sow:'sow',sprinkle:'sow',wash:'wash',rinse:'wash',swing:'hammer',knead:'grind',press:'grind',divide:'grind'})[gesture]||lookup.get(gesture)||null;}
@@ -46,7 +57,8 @@ export function applyActionTrack(pose,position){
  const track=tracks[actionTrack(pose.actual)];if(!track)return pose;
  const beat=position*2,phase=Math.floor(beat)%8,next=(phase+1)%8,f=beat-Math.floor(beat);
  const local=pose.gesture==='drink'&&[4,5].includes(phase)?Math.max(0,(f-.65)/.35):f;
- const stepped=Math.floor((local*local*(3-2*local))*12)/12;
- for(const [key,values] of Object.entries(track))pose[key]=Math.round(values[phase]+(values[next]-values[phase])*stepped);
+ const subtle=['drink','eat','blow','inspect','rest'].includes(actionTrack(pose.actual));
+ const stepped=subtle?Math.floor((local*local*(3-2*local))*4)/4:0;
+ for(const [key,values] of Object.entries(track))pose[key]=key==='toolAngle'?values[phase]:Math.round(values[phase]+(values[next]-values[phase])*stepped);
  return pose;
 }

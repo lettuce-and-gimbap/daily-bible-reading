@@ -1,5 +1,5 @@
 import {expandedActions} from './additional-actions.js';
-import {applyActionTrack} from './action-tracks.js';
+import {actionTrack,applyActionTrack} from './action-tracks.js';
 import {creatureRoutine} from './creatures.js';
 import {OBJECT_USAGE} from './object-usage.js';
 import {uniqueInteraction} from './unique-interactions.js';
@@ -101,7 +101,7 @@ export function interactionRoutine(n,kind,visit=0){
 
 
 
- return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:3.6+(seed%4)*.2,phase:0};
+ return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:(['rest','inspect','drink','eat','blow'].includes(actionTrack(variants[index][0]))?3.6:kind==='rope'?3.2:2.4)+(seed%3)*.15,phase:0};
 }
 function rawInteractionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;

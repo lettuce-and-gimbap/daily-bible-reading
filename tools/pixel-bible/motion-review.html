@@ -7,8 +7,8 @@ import {interactionPose,interactionOptions} from '../../js/features/pixel-bible/
 import {objectBehavior} from '../../js/features/pixel-bible/object-behavior.js';
 import {interactionAnchor,heldObject,objectWorn,objectInteractionFrame,drawObjectResponse} from '../../js/features/pixel-bible/object-response.js';
 import {drawInteractionEffects} from '../../js/features/pixel-bible/interaction-effects.js';
-const page=Number(new URLSearchParams(location.search).get('page')||0),all=Object.keys(OBJECT_CATALOG),kinds=all.slice(page*12,page*12+12);
-const canvas=document.querySelector('canvas');canvas.width=2400;canvas.height=kinds.length*150;
+const params=new URLSearchParams(location.search),page=Number(params.get('page')||0),all=Object.keys(OBJECT_CATALOG),kinds=params.has('kind')?[params.get('kind')]:all.slice(page*12,page*12+12),facing=params.get('direction')||'right';
+const canvas=document.querySelector('canvas');canvas.width=Math.max(2400,...kinds.map(k=>interactionOptions(k).length*400));canvas.height=kinds.length*150;
 const c=canvas.getContext('2d');c.fillStyle='#d4dcc9';c.fillRect(0,0,canvas.width,canvas.height);
 let frames=0;const errors=[];
 function render(kind,gesture,t,context,x,y,direction='right'){
@@ -22,17 +22,26 @@ function render(kind,gesture,t,context,x,y,direction='right'){
  if(held)drawWorldObject(context,held,24,held.frame);
  drawInteractionEffects(context,n,pose,anchor.x,anchor.y,t);context.restore();frames++;
 }
+if(params.has('kind')){
+ const kind=kinds[0],options=interactionOptions(kind);canvas.width=960;canvas.height=options.length*150;
+ options.forEach(([gesture],row)=>{
+  c.fillStyle=row%2?'#d4dcc9':'#e5dfcc';c.fillRect(0,row*150,960,150);
+  c.fillStyle='#203d3b';c.font='14px sans-serif';c.fillText(kind+' / '+gesture+' / '+facing,8,row*150+18);
+  for(let i=0;i<8;i++){render(kind,gesture,i*.5+.1,c,60+i*120,row*150+115,facing);c.fillStyle='#203d3b';c.fillText(String(i+1),8+i*120,row*150+140);}
+ });
+}else{
 kinds.forEach((kind,row)=>{
- c.fillStyle=row%2?'#d4dcc9':'#e5dfcc';c.fillRect(0,row*150,2400,150);
+ c.fillStyle=row%2?'#d4dcc9':'#e5dfcc';c.fillRect(0,row*150,canvas.width,150);
  c.font='bold 14px sans-serif';c.fillStyle='#203d3b';c.fillText(OBJECT_CATALOG[kind].name+' / '+kind,8,row*150+18);
  interactionOptions(kind).forEach(([gesture],option)=>{
   for(let phase=0;phase<4;phase++){
    const x=(option*4+phase)*100;
-   render(kind,gesture,phase+.45,c,x+52,row*150+118);
+   render(kind,gesture,phase+.45,c,x+52,row*150+118,facing);
    c.fillStyle='#203d3b';c.font='10px sans-serif';c.fillText(gesture+' '+phase,x+2,row*150+143);
   }
  });
 });
+}
 // Audit all frames, all directions and transition boundaries as well as the visible sheet.
 const scratch=document.createElement('canvas');scratch.width=400;scratch.height=300;const g=scratch.getContext('2d');
 for(const kind of kinds)for(const [gesture]of interactionOptions(kind))for(const direction of ['down','left','right','up'])for(let step=0;step<32;step++){

@@ -31,9 +31,11 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
    const draw=pose.phase===1?4:pose.phase===2?1:2;
    r(13,22,4,4,O);r(14,23,3,2,s.coat);r(16,24,8,3,O);r(17,24,7,2,skin);
    r(11,23,4,3,O);r(13-draw,24,7,3,O);r(14-draw,24,6,2,skin);
-  }else if(pose?.hand){const yy=pose.handY;
-   r(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);
-   r(12,22,4,4,O);r(13,23,2,2,s.coat);r(14,yy,6,3,O);r(16,yy,4,2,skin);
+  }else if(pose?.hand){const yy=pose.handY,hx=pose.handX||0;
+   const hr=(xx,yy,w,h,col)=>{c.fillStyle=col;c.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
+   hr(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);
+   hr(12,22,4,4,O);hr(13,23,2,2,s.coat);
+   hr(14+Math.min(0,hx),yy,6+Math.abs(hx),3,O);hr(16+hx,yy,4,2,skin);
   }else{r(11+step,22,4,4,O);r(12+step,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}
   // 뒤통수에서 코끝으로 이어지고 눈 하나와 귀를 구분한다.
   r(8,5,8,1,O);r(6,6,12,2,O);r(5,8,14,8,O);r(7,16,11,3,O);r(10,19,5,1,O);

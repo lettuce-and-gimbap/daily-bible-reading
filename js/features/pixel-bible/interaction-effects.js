@@ -1,4 +1,5 @@
-import {drinkingCup} from './object-response.js';
+import {pixelRope,ropeLoop} from './rope-art.js';
+import {heldObject,drinkingCup} from './object-response.js';
 import {drawWorldObject} from './art.js';
 // 일시적인 결과만 그린다. 저장된 배치와 배경은 바꾸지 않는다.
 export function drawInteractionEffects(c,n,pose,x,y,time){
@@ -23,6 +24,19 @@ export function drawInteractionEffects(c,n,pose,x,y,time){
  }
  if(pose.prop==='boat'&&['row','back-row','lift-oar'].includes(actual)){const angle=Math.sin((phase+pose.within)*Math.PI/2)*.45;prop('oar',x+dir*20,y-12,.9,dir*angle);}
  const cup=drinkingCup(n,pose,x,y);if(cup)drawWorldObject(c,cup,24,cup.frame);
+ if(['hammer','axe','sickle'].includes(o.kind)&&['swing','use'].includes(actual)&&use){
+  const tx=x+dir*34,ty=y-5;
+  if(o.kind==='hammer'){r(tx-13,ty,26,4,'#a98150');r(tx-2,ty-5,3,6,'#aeb8b3');}
+  else if(o.kind==='axe'){r(tx-8,ty-4,16,9,'#79583c');r(tx-6,ty-6,12,3,'#c4a375');}
+  else for(let i=0;i<6;i++){r(tx-10+i*4,ty-14,1,18,'#93a466');r(tx-11+i*4,ty-17,3,5,'#d5be78');}
+  if(phase===2&&pose.within<.5)for(let i=0;i<4;i++)r(tx+dir*(i*4-6),ty-8-i%2*6+Math.floor(pose.within*12),2,2,o.kind==='sickle'?'#d6bd70':'#c4a375');
+ }
+ if(use&&['lyre','harp','tambourine','cymbal'].includes(o.kind)&&['strum','play','pluck','beat','tap','tune'].includes(actual)){
+  const held=heldObject(n,time);if(held){const ix=held.x*24,iy=held.y*24,stroke=[-5,-1,4,1][Math.floor(pose.within*4)%4];
+   r(ix+stroke-2,iy-21,7,5,'#302f35');r(ix+stroke-1,iy-21,5,3,'#f2d5af');
+   r(ix-11,iy-10,6,4,'#302f35');r(ix-10,iy-10,4,2,'#f2d5af');
+  }
+ }
  if(pose.archery){
   if(use){
    const bx=x+dir*18,by=y+(pose.handY-36)*2,stretch=phase===1?8:1;
@@ -37,16 +51,20 @@ export function drawInteractionEffects(c,n,pose,x,y,time){
   r(x-3,y-44,31,22,'#6c8d8e');r(x-3,y-44,31,3,'#c9d4be');r(x+22,y-41,3,18,'#58777b');
  }
  if(o.kind==='rope'&&use){
-  const hy=y+(pose.handY-36)*2,rope='#c3a278',shadow='#775b3b';
-  const segment=(xx,yy)=>{r(xx,yy,4,4,shadow);r(xx+1,yy,2,3,rope);};
-  if(['coil','uncoil'].includes(actual)){
-   const loops=actual==='coil'?phase+1:4-phase;
-   for(let k=0;k<loops;k++)for(let i=0;i<16;i++){const a=i*Math.PI/8;segment(x+dir*17+Math.round(Math.cos(a)*(9+k*3)),hy+Math.round(Math.sin(a)*6)+k*2);}
+  const side=n.direction==='left'||n.direction==='right';
+  const hx=x+(side?dir*(18+(pose.handX||0)*2):10),hy=y+(pose.handY-36)*2;
+  const beat=Math.floor(pose.within*4),pull=['pull','grip','stretch'].includes(actual);
+  if(['coil','uncoil','sort','repair'].includes(actual)){
+   const winding=actual==='uncoil'?1-pose.within:pose.within;
+   for(let k=2;k>=0;k--)pixelRope(r,ropeLoop(hx,hy+k*4,12-k*2,5));
+   pixelRope(r,[[hx+12,hy],[hx+20,hy+7],[hx+22+beat*2,hy+18],[hx+30,hy+24+winding*12]]);
   }else if(['tie','untie'].includes(actual)){
-   for(let i=0;i<12;i++)segment(x+dir*16+(i%6)*3,hy+Math.round(Math.sin(i*1.5+phase)*4));
-   r(x+dir*19,hy-2,5,6,rope);
+   const spread=actual==='untie'?4+beat*4:16-beat*3;
+   pixelRope(r,[[hx-spread,hy+16],[hx-5,hy+4],[hx+6,hy-5],[hx+10,hy+3],[hx,hy+9],[hx-7,hy+2],[hx-3,hy-5],[hx+spread,hy+16]]);
   }else{
-   for(let i=0;i<18;i++)segment(x+dir*(14+i*3),hy+(actual==='lower-rope'?i*3:Math.round(Math.sin(i*.3+phase)*3)));
+   const length=actual==='lower-rope'?26+beat*8:50;
+   const sag=pull?Math.max(1,10-beat*3):12;
+   pixelRope(r,Array.from({length:17},(_,i)=>{const t=i/16;return actual==='lower-rope'?[hx+Math.sin(t*3)*3,hy+t*length]:[hx+dir*t*length,hy+Math.sin(t*Math.PI)*sag];}));
   }
  }
  if(o.kind==='hook'&&use){
