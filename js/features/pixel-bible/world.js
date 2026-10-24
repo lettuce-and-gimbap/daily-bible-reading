@@ -144,7 +144,7 @@ export async function mountPixelWorld(shell, options) {
   const objectChoice=(id,name)=>`<button class="pb-button pb-object-choice" data-place="${esc(id)}" aria-pressed="false" aria-label="${esc(name)} 배치. 한 번 터치, 1초 누르면 설명"><span class="pb-object-art"><canvas width="80" height="72" data-object-icon="${esc(id)}" aria-hidden="true"></canvas><svg class="pb-object-progress" viewBox="0 0 80 72" aria-hidden="true"><path d="M2 2H78V70H2Z"/></svg></span><span class="pb-object-choice-name">${esc(name)}</span></button>`;
   const chapterObjectButtons=chapterProps.map(item=>objectChoice(item.id,item.name)).join('');
   const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><b class="pb-speech-speaker"></b><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -214,6 +214,7 @@ export async function mountPixelWorld(shell, options) {
       shownSpeech=current;speechElement.hidden=!current;
       if(current)current.speaker.expression=speechEmotion(current);
       if(current){
+        speechElement.querySelector('.pb-speech-speaker').textContent=current.speaker.name;
         speechElement.querySelector('p').textContent=current.text;
         speechElement.querySelector('[data-action="speech-details"]').hidden=!speechContext(current,chapterData);
         const link=speechElement.querySelector('[data-action="passage"]');
@@ -256,8 +257,8 @@ export async function mountPixelWorld(shell, options) {
       const id=line.session+':'+line.slot;let el=encounterBubbles.get(id);
       if(!el){
         el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
-        el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
-        el.dataset.encounter=id;el.querySelector('p').textContent=line.text;
+        el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
+        el.dataset.encounter=id;el.querySelector('.pb-speech-speaker').textContent=line.speaker.name;el.querySelector('p').textContent=line.text;
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
