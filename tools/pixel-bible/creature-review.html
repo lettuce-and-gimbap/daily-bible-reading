@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Bible · 동물 도안 검토</title>
+<style>
+@font-face{font-family:DungGeunMo;src:url('../../assets/fonts/DungGeunMo.ttf')}*{box-sizing:border-box}body{margin:0;padding:24px;background:#e9e4d3;color:#263b3c;font:18px DungGeunMo,monospace}h1{margin:0 0 8px;font-size:28px}p{margin:0 0 18px}canvas{display:block;max-width:100%;height:auto;image-rendering:pixelated;border:2px solid #607565;background:#d7deca}
+</style>
+<h1>동물 도안 · 정면 / 측면 / 뒷모습</h1>
+<p>같은 축척으로 동물별 실루엣과 얼굴 특징을 비교합니다.</p>
+<canvas id="sheet" width="1000" height="1050"></canvas>
+<script type="module">
+import {CREATURES} from '../../js/features/pixel-bible/creatures.js';
+import {drawCreature} from '../../js/features/pixel-bible/creature-art.js';
+const canvas=document.querySelector('#sheet'),c=canvas.getContext('2d');c.imageSmoothingEnabled=false;
+const list=Object.values(CREATURES).filter(d=>d.kind==='animal');
+canvas.height=Math.ceil(list.length/5)*150;
+for(let i=0;i<list.length;i++){
+ const d=list[i],col=i%5,row=Math.floor(i/5),x=col*200,y=row*150;
+ c.fillStyle=i%2?'#e2e6d7':'#dce2d2';c.fillRect(x,y,200,150);
+ c.fillStyle='#253b3d';c.font='17px DungGeunMo';c.textAlign='center';c.fillText(d.name,x+100,y+20);
+ for(const [j,direction]of ['down','right','up'].entries()){
+  c.save();c.translate(x+34+j*66,y+102);c.scale(2,2);drawCreature(c,d,0,0,{direction,frame:0});c.restore();
+ }
+ c.fillStyle='#63756b';c.font='12px DungGeunMo';c.fillText('정면   측면   뒤',x+100,y+137);
+}
+window.reviewReady=true;
+</script>
+</html>
