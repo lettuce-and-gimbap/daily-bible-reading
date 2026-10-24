@@ -27,7 +27,7 @@
 .pb-world-head { position: absolute; inset: 0 0 auto; z-index: 9; min-height: 42px; display: flex; align-items: center; gap: 7px; padding: 5px max(10px, env(safe-area-inset-right)) 5px max(10px, env(safe-area-inset-left)); background: #142d37dd; }
 .pb-world-head b { margin-right: auto; font: 700 13px monospace; letter-spacing: 1px; }
 .pb-world-head small { margin-left: 10px; color: #c2cba7; font: 11px sans-serif; }
-.pb-world-head button { padding: 5px 8px; font-size: 11px; }
+.pb-world-head button { flex: none; min-width: 48px; min-height: 48px; padding: 10px 12px; font-size: 14px; touch-action: manipulation; }
 .pb-immersive .pb-world-head { left: auto; background: transparent; }
 .pb-immersive .pb-world-head b { display: none; }
 .pb-load { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; }

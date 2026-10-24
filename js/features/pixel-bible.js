@@ -78,7 +78,7 @@ async function openPixelBible(scope = {}) {
   pixelBibleLandscape(shell, false);
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.2.0");
+    const world = await import("./pixel-bible/world.js?v=10.2.1");
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(shell),
