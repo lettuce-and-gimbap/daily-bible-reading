@@ -46,7 +46,7 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
  return {...base,kind:o.kind,liquidColor:pose.actual==='water-wine'&&use?'#965e83':null,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,actual:pose.actual,pose,actor:n,direction,
   dx:portable&&use?direction*3:0,dy:portable&&use?-3:pose.prop==='boat'?beat:0,
   squash:['bench','bed'].includes(pose.prop)&&use?.035:0,
-  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use?beat*.08:portable?beat*.045:0,
+  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use&&portable?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use&&OBJECT_CATALOG[o.kind]?.family==='cloth'?beat*.08:portable?beat*.045:0,
   open:['read','unroll','spread','mend','fold'].includes(pose.gesture)&&use?.22:0,
   lid:pose.prop==='chest'&&pose.gesture==='open'&&use?1:0,beat,use};
 }
@@ -54,17 +54,29 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
 export function heldObject(n,time,reduced=false,tile=24){
  const o=n.usingObject;if(n.creature||!o||!n.interaction)return null;
  const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);
- if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||!p.hand||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
+ if(p.gesture==='drink'&&o.kind!=='cup')return null;
+ if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;
  const side=n.direction==='left'||n.direction==='right';
  const beat=p.phase===1?-1:1;
  const tilt=['swing','thrust'].includes(p.gesture)?dir*(p.phase===1?-.9:.9):p.gesture==='drink'&&p.phase===2?-dir*.9:p.gesture==='pour'&&p.phase===2?dir*.8:
   ['practice','use','wipe','polish','tap','strum','play','mend','cast','reins','swing','thrust','row','back-row','stamp','roll-seal','unlock','turn-key'].includes(p.gesture)?dir*beat*.2:
   p.gesture==='blow'?-dir*.12:0;
- return {kind:o.kind,x:(a.x+(side?dir*14:8)+p.bodyX*2)/tile,y:(a.y+(p.handY-36)*2+p.bodyY*2+5)/tile,
-  frame:{scale:Math.min(objectPresentation(o.kind).scale,['cloak','robe','linen','sackcloth','ephod','armor'].includes(o.kind)?.65:.85),tilt,held:true,
+ const progress=reduced?.5:((time-(n.interactionStart||0))/n.interaction.period+n.interaction.phase)*4%1;
+ const eased=progress*progress*(3-2*progress),transfer=reduced?1:p.phase===0?eased:p.phase===3?1-eased:1;
+ const tx=(a.x+(side?dir*14:8)+p.bodyX*2)/tile,ty=(a.y+(p.handY-36)*2+p.bodyY*2+(p.gesture==='drink'?6:5))/tile;
+ const originalScale=objectPresentation(o.kind).scale;
+ return {kind:o.kind,x:Math.round((o.x+(tx-o.x)*transfer)*tile)/tile,y:Math.round((o.y+(ty-o.y)*transfer)*tile)/tile,
+  frame:{scale:originalScale+(Math.min(originalScale,['cloak','robe','linen','sackcloth','ephod','armor'].includes(o.kind)?.65:.85)-originalScale)*transfer,tilt:tilt*transfer*Math.sin(Math.PI*progress),held:true,
    open:['read','unroll','spread'].includes(p.gesture)?(p.phase===2?.25:.1):0,
    squash:['fold','smooth','wrap'].includes(p.gesture)&&p.phase===2?.3:0,bite:p.gesture==='eat'&&p.phase===2},pose:p};
+}
+export function drinkingCup(n,pose,x,y){
+ if(pose.gesture!=='drink'||n.usingObject?.kind==='cup')return null;
+ const side=n.direction==='left'||n.direction==='right',dir=n.direction==='left'?-1:1;
+ const lift=pose.phase===0?pose.within:pose.phase===3?1-pose.within:1;
+ const cy=y+(pose.handY-36)*2+6;
+ return {kind:'cup',x:(x+(side?dir*13:6))/24,y:(y-12+(cy-(y-12))*lift)/24,frame:{scale:.65,held:true,tilt:pose.phase===2?-dir*.25*Math.sin(Math.PI*pose.within):0}};
 }
 export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return (p.hand&&['rope','hook'].includes(n.usingObject?.kind))||(p.hand&&['pen','ink'].includes(n.usingObject?.kind)&&['write','trace','dip'].includes(p.actual))||p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&p.archery)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
 export function drawObjectResponse(c,o,frame,tile=24){

@@ -529,13 +529,13 @@ test('큰 나무는 뒤쪽 접근을 막고 수관 밖에서 상호작용한다'
  n.x=10;n.y=11;assert.ok(interactionAnchor(n).y>=o.y*24+24);
 });
 
-test('물병은 손으로 들고 입 높이에서 기울인 뒤 다시 내려놓는다',async()=>{
- const {heldObject}=await import('../js/features/pixel-bible/object-response.js');
- const n={x:9,y:10,direction:'right',usingObject:{kind:'water',x:10,y:10},interactionStart:0,interaction:{category:'water',gesture:'drink',variant:0,phase:0,period:4}};
- assert.equal(heldObject(n,.1),null);
- const lift=heldObject(n,1.1),drink=heldObject(n,2.1);
- assert.equal(lift.kind,'water');assert.ok(drink.y<lift.y);assert.ok(Math.abs(drink.frame.tilt)>.5);
- assert.equal(heldObject(n,3.1),null);
+test('물항아리는 제자리에 두고 잔을 입으로 올려 마신다',async()=>{
+ const {heldObject,drinkingCup}=await import('../js/features/pixel-bible/object-response.js');
+ const {interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const n={direction:'right',usingObject:{kind:'water',x:10,y:10},interaction:{kind:'water',category:'water',gesture:'drink',variant:0,phase:0,period:4},interactionStart:0};
+ assert.equal(heldObject(n,2),null);
+ const lift=drinkingCup(n,interactionPose(n.interaction,1),100,100),drink=drinkingCup(n,interactionPose(n.interaction,2),100,100);
+ assert.equal(drink.kind,'cup');assert.ok(drink.y<lift.y);assert.ok(Math.abs(drink.frame.tilt)<=.25);
 });
 
 test('겹쳐 선 인물도 대화할 때만 서로 다른 축 좌표에 자리를 잡는다',async()=>{
@@ -567,7 +567,7 @@ test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 �
   assert.ok(INTERACTION_MOTIONS[behavior.category],kind);assert.equal(routine.category,kind==='ark-covenant'?'bush':behavior.category,kind);
   if(behavior.frontOnly)assert.ok(interactionApproaches(o).every(p=>p.y>=o.y),kind);
   const n={name:'룻',x:9,y:10,direction:'right',usingObject:o,interaction:{...routine,phase:0},interactionStart:0};
-  assert.equal(!!heldObject(n,routine.period*.3)||objectWorn(n,routine.period*.3),behavior.carry,kind);
+  assert.equal(!!heldObject(n,routine.period*.3)||objectWorn(n,routine.period*.3),behavior.carry&&!(routine.gesture==='drink'&&kind!=='cup'),kind);
  }
  for(const [kind,category]of Object.entries({table:'table',bed:'bed',temple:'building',tent:'building',crown:'wear',lamp:'lamp',rainbow:'symbol',chariot:'cart',basket:'basket',book:'scroll',trumpet:'instrument'}))assert.equal(objectBehavior(kind).category,category,kind);
  assert.equal(objectBehavior('ark-covenant').carry,false);
@@ -624,7 +624,7 @@ test('옷 입기와 화살 발사는 실제 착용·손 소품·발사 상태가
  const {interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
  const {heldObject,objectWorn}=await import('../js/features/pixel-bible/object-response.js');
  const n={x:10,y:10,direction:'right',usingObject:{kind:'cloak',x:11,y:10},interaction:{kind:'cloak',category:'cloth',gesture:'wear',variant:0,phase:0,period:4},interactionStart:0};
- assert.equal(interactionPose(n.interaction,0).wearing,false);assert.equal(objectWorn(n,1.1),true);assert.equal(heldObject(n,1.1),null);assert.equal(objectWorn(n,3.1),false);
+ assert.equal(interactionPose(n.interaction,0).wearing,false);assert.equal(objectWorn(n,1.1),false);assert.equal(heldObject(n,2.1),null);assert.equal(objectWorn(n,3.1),true);assert.equal(objectWorn(n,4.1),true);
  n.usingObject.kind='arrow';n.interaction={kind:'arrow',category:'weapon',gesture:'shoot',variant:0,phase:0,period:4};
  assert.equal(heldObject(n,1.1),null);assert.equal(objectWorn(n,1.1),true);assert.equal(heldObject(n,2.1),null);assert.equal(objectWorn(n,2.1),true);
 });

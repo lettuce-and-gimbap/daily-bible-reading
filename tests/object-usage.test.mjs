@@ -47,3 +47,27 @@ test('여덟 표정의 눈·입은 정면과 측면 피부 안쪽에만 그려�
   },emotion,{side});assert.ok(count>0);
  }
 });
+
+test('휴대 소품은 바닥에서 집고 같은 위치로 내려놓으며 고정 구조물은 기울이지 않는다',async()=>{
+ const {heldObject,objectInteractionFrame}=await import('../js/features/pixel-bible/object-response.js');
+ const n={name:'룻',x:9,y:10,direction:'right',usingObject:{kind:'oil',x:10,y:10},interactionStart:0,interaction:{kind:'oil',category:'oil',gesture:'pour',variant:0,phase:0,period:4}};
+ const first=heldObject(n,0),last=heldObject(n,3.9999);
+ assert.equal(first.x,10);assert.equal(first.y,10);assert.equal(last.x,10);assert.equal(last.y,10);
+ for(const kind of ['well','basin','laver','table']){
+  n.usingObject={kind,x:10,y:10};n.interaction={...n.interaction,kind,gesture:kind==='table'?'spread':'pour'};
+  assert.equal(objectInteractionFrame(n.usingObject,[n],2.4).tilt,0,kind);
+ }
+});
+
+test('마시기는 입 높이에서 잠시 멈추고 일어나기·착용은 완료 상태를 유지한다',async()=>{
+ const {interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
+ const drink={kind:'water',category:'water',gesture:'drink',period:4,phase:0,variant:0};
+ assert.equal(interactionPose(drink,2.1).handY,16);assert.equal(interactionPose(drink,2.5).handY,16);
+ const rise={...drink,kind:'bed',category:'bed',gesture:'rise'};
+ assert.ok(interactionPose(rise,1).recline>interactionPose(rise,3).recline);
+ assert.equal(interactionPose(rise,5).lie,false);
+ const wear={...drink,kind:'cloak',category:'cloth',gesture:'wear'};
+ assert.equal(interactionPose(wear,5).wearing,true);
+ for(const gesture of ['aim','draw','nock'])assert.equal(interactionPose({...drink,kind:'bow',gesture},2).shot,false);
+ assert.equal(interactionPose({...drink,kind:'bow',gesture:'shoot'},2).shot,true);
+});

@@ -31,7 +31,7 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
-  if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2);c.translate(-32,-37);}
+  if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2*(pose.recline??1));c.translate(-32,-37);}
   if(activeStyle.creature)drawCreature(c,activeStyle.creature,32,52,{frame:pose?.dangling?Math.abs((pose.leftLeg||0)+(pose.rightArm||0))%4:frame,direction,pose,time,hanging:hanging||pose?.dangling});
   else if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
   else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});

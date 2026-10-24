@@ -1,7 +1,7 @@
 import {OBJECT_CATALOG} from './object-catalog.js';
 // 모든 카탈로그 항목은 동작 계열과 운반 가능 여부를 명시적으로 결정한다.
 // 큰 구조물/제의 물품/살아 있는 동물을 손 소품으로 축소하지 않는다.
-const fixed=new Set(['mat','table','bed','throne','footstool','ark-covenant','treasure-chest','stable','tabernacle','tent','temple','gate','wall','tower','house','palace','tomb','millstone','stone-pillar','chariot','wheel','anchor','sail','plow','yoke','ladder','cross','bronze-snake','laver','basin','pot','oven','lampstand','fire','curtain','veil','water-supply','vineyard']);
+const fixed=new Set(['flour','dough','leaven','mat','table','bed','throne','footstool','ark-covenant','treasure-chest','stable','tabernacle','tent','temple','gate','wall','tower','house','palace','tomb','millstone','stone-pillar','chariot','wheel','anchor','sail','plow','yoke','ladder','cross','bronze-snake','laver','basin','pot','oven','lampstand','fire','curtain','veil','water-supply','vineyard']);
 const categories={crop:'field',seat:'bench',book:'scroll',tent:'building',staff:'tool',shield:'weapon',wear:'wear',cart:'cart',basket:'basket',lamp:'lamp',symbol:'symbol',cross:'building',chest:'chest'};
 export function objectBehavior(kind){
  const d=OBJECT_CATALOG[kind]||{family:kind,action:kind};

@@ -1,3 +1,4 @@
+import {applyActionTrack} from './action-tracks.js';
 import {creatureRoutine} from './creatures.js';
 import {OBJECT_USAGE} from './object-usage.js';
 import {uniqueInteraction} from './unique-interactions.js';
@@ -12,8 +13,8 @@ export const INTERACTION_MOTIONS={
  stone:[['pick','무릎 굽혀 돌 고르기'],['turn','돌 돌려 살피기'],['stack','돌 쌓기'],['place','돌 내려놓기']],
  bush:[['observe','몸 숙여 살펴보기'],['kneel','무릎 꿇기'],['hands','두 손 모으기'],['lean','가까이 살펴보기']],
  boat:[['row','노 젓기'],['balance','앉아 균형 잡기'],['look','먼 곳 바라보기'],['rope','밧줄 정리하기']],
- scroll:[['read','펼쳐 읽기'],['unroll','두루마리 펼치기'],['write','무릎 위에 적기'],['point','글을 짚으며 읽기']],
- oil:[['pour','기름 따르기'],['hold','병 받쳐 들기'],['cap','마개 열고 닫기'],['fill','그릇 채우기']],
+ scroll:[['read','글 읽기'],['unroll','두루마리 펼치기'],['write','무릎 위에 적기'],['point','글 가리키기']],
+ oil:[['pour','기름 따르기'],['hold','병 받쳐 들기'],['cap','마개 열기'],['fill','그릇 채우기']],
  instrument:[['strum','줄 뜯기'],['tap','박자 맞추기'],['blow','악기 들어 불기'],['play','두 손으로 연주하기']],
  weapon:[['hold','무기 살피기'],['practice','천천히 자세 잡기'],['polish','무기 닦기'],['lower','무기 내려놓기']],
  cloth:[['fold','천 접기'],['smooth','천 펴기'],['hold','천 받쳐 들기'],['wrap','천 정리하기']],
@@ -37,7 +38,7 @@ export const INTERACTION_MOTIONS={
 // 일상 동작은 본문 장면과 구분하며, 매 방문 선택을 바꿀 수 있다.
 const extra={
  bench:[['stretch','앉아 기지개 켜기'],['rise','앉았다 일어나기']],
- water:[['offer','그릇 내밀기'],['cap','마개 열고 닫기']],
+ water:[['offer','그릇 내밀기'],['cap','마개 열기']],
  field:[['sow','씨앗 뿌리기'],['thresh','이삭 털어 모으기']],
  tree:[['shake','나무 흔들기'],['kick','줄기 툭 차기'],['bonk','열매 떨어져 머리에 콩']],
  well:[['drink','길어 온 물 마시기'],['wash','길어 온 물로 씻기']],
@@ -75,7 +76,7 @@ export function interactionOptions(kind){
  if(kind==='pen')return [['write','글 쓰기'],['dip','붓끝 적시기'],['trace','선 따라 긋기'],['wipe','붓 닦기'],['inspect','붓끝 살피기'],['place','붓 내려놓기']];
  if(['tambourine','cymbal'].includes(kind))return [['tap','손으로 두드리기'],['shake','악기 흔들기'],['beat','박자 두드리기'],['raise','들어 올려 울리기'],['wipe','테두리 닦기'],['bow','연주 마치고 인사하기']];
  if(['arrow','bow'].includes(kind))return [['nock','화살 메기기'],['aim','활 겨냥하기'],['shoot','화살 쏘기'],['retrieve','화살 거두기'],['fletch','깃 살피기'],['draw','활시위 당기기']];
- if(['cloak','robe','sackcloth','linen','ephod','armor','helmet','crown','sandal','belt','breastplate'].includes(kind))return [['wear','입고 매무새 살피기'],['remove','벗어 손에 받치기'],['smooth','매무새 정리하기'],['fold','접어 정리하기'],['shake-cloth','털어서 펴기'],['offer','두 손으로 내밀기']];
+ if(['cloak','robe','sackcloth','linen','ephod','armor','helmet','crown','sandal','belt','breastplate'].includes(kind))return [['wear','옷 입기'],['remove','옷 벗기'],['smooth','매무새 정리하기'],['fold','접어 정리하기'],['shake-cloth','털어서 펴기'],['offer','두 손으로 내밀기']];
  if(['trumpet','flute'].includes(kind))return [['blow','짧게 불기'],['long-blow','길게 불기'],['rehearse','박자 맞춰 불기'],['wipe','입구 닦기'],['tune','악기 살피기'],['bow','연주를 마치고 인사하기']];
  if(['lyre','harp'].includes(kind))return [['strum','줄 뜯기'],['play','양손 연주하기'],['pluck','한 줄씩 튕기기'],['tune','줄 조율하기'],['wipe','악기 닦기'],['bow','연주 마치고 인사하기']];
  return INTERACTION_MOTIONS[objectBehavior(kind).category]||INTERACTION_MOTIONS.tool;
@@ -98,7 +99,7 @@ export function interactionRoutine(n,kind,visit=0){
 
 
 
- return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:2.4+(seed%4)*.2,phase:(seed%4)/4};
+ return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:3.6+(seed%4)*.2,phase:0};
 }
 function rawInteractionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;
@@ -123,7 +124,7 @@ function rawInteractionPose(routine,time=0,reduced=false){
  const wearing=['wear','wear-pattern'].includes(actual)?use:actual==='remove'?phase===0:false;
  const adjustedHandY=lie?26:archery?actual==='nock'?(phase===1?21:24):actual==='aim'?18:actual==='draw'?17:actual==='fletch'?(phase===2?21:25):actual==='retrieve'?(use?30:26):shooting?(actual==='high-shot'?14:actual==='low-shot'||actual==='steady-shot'?22:actual==='quick-shot'?16:phase===2?13:18):24:kneel?30:climbing?(phase===1?18:phase===2?22:26):actual==='lower-rope'?(phase===1?28:phase===2?34:25):rope?(phase===1?23:phase===2?26:28):reachHigh?19:working?(phase===1?25:27):handY;
  const shot=shooting&&phase===2;
- return {lie,archery,archeryAction:archery?actual:null,shot,kneel,rope,phase,within:Math.floor(within*6)/6,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:adjustedHandY,hand:lie?0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:lie?0:climbing?-(phase===1?1:phase===2?3:0):bend?Math.min(3,reach*2):gesture==='rest'&&use?1:0,bodyX:lie?0:shooting&&use?(actual==='high-shot'?1:actual==='low-shot'?-1:phase===2?2:-2):climbing?(phase===1?-1:phase===2?1:0):['pull','push','reins','row','back-row'].includes(gesture)&&use?(phase===1?-2:2):working&&use?(phase===1?-1:1):use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):climbing&&use?(phase===1?-1:1):shooting&&phase===2?1:0,kick:['kick','bonk'].includes(gesture)&&phase===2,climb:climbing?phase===1?2:phase===2?4:0:gesture==='climb'?reach*3:0};
+ return {lie,archery,archeryAction:archery?actual:null,shot,kneel,rope,phase,within:Math.floor(within*12)/12,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:adjustedHandY,hand:lie?0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:lie?0:climbing?-(phase===1?1:phase===2?3:0):bend?Math.min(3,reach*2):gesture==='rest'&&use?1:0,bodyX:lie?0:shooting&&use?(actual==='high-shot'?1:actual==='low-shot'?-1:phase===2?2:-2):climbing?(phase===1?-1:phase===2?1:0):['pull','push','reins','row','back-row'].includes(gesture)&&use?(phase===1?-2:2):working&&use?(phase===1?-1:1):use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):climbing&&use?(phase===1?-1:1):shooting&&phase===2?1:0,kick:['kick','bonk'].includes(gesture)&&phase===2,climb:climbing?phase===1?2:phase===2?4:0:gesture==='climb'?reach*3:0};
 }
 // 한글 안내는 도안/문서 검토용이며 월드 하단 설명으로 띄우지 않는다.
 export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce((s,v)=>s+v.length,0);
@@ -139,5 +140,13 @@ export function interactionPose(routine,time=0,reduced=false){
  for(const key of ['handY','bodyX','bodyY','bend','reach','legSwing','climb']){
   if(Number.isFinite(pose[key])&&Number.isFinite(next[key]))pose[key]=Math.round(pose[key]+(next[key]-pose[key])*progress);
  }
+ applyActionTrack(pose,position);
+ if(objectBehavior(routine.kind).carry&&!pose.archery&&!['rope','hook','pen','ink','sling'].includes(routine.kind))pose.hand=Math.max(1,pose.hand);
+ if(routine.category==='bench'&&routine.gesture==='rise')pose.sit=time<routine.period*.5;
+ if(routine.category==='bed'&&routine.gesture==='rise'){
+  pose.recline=Math.max(0,Math.round((1-time/routine.period)*12)/12);pose.lie=pose.recline>0;pose.sit=false;
+ }
+ if(['wear','wear-pattern'].includes(routine.gesture))pose.wearing=time>=routine.period*.5;
+ if(routine.gesture==='remove')pose.wearing=time<routine.period*.5;
  return pose;
 }

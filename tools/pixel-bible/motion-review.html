@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><title>Pixel Bible motion review</title>
+<style>body{margin:0;background:#d4dcc9}canvas{display:block}</style><canvas id="sheet"></canvas>
+<script type="module">
+import {OBJECT_CATALOG} from '../../js/features/pixel-bible/object-catalog.js';
+import {drawPixelCharacter,drawWorldObject,characterStyle} from '../../js/features/pixel-bible/art.js';
+import {interactionPose,interactionOptions} from '../../js/features/pixel-bible/interaction-motion.js';
+import {objectBehavior} from '../../js/features/pixel-bible/object-behavior.js';
+import {interactionAnchor,heldObject,objectWorn,objectInteractionFrame,drawObjectResponse} from '../../js/features/pixel-bible/object-response.js';
+import {drawInteractionEffects} from '../../js/features/pixel-bible/interaction-effects.js';
+const page=Number(new URLSearchParams(location.search).get('page')||0),all=Object.keys(OBJECT_CATALOG),kinds=all.slice(page*12,page*12+12);
+const canvas=document.querySelector('canvas');canvas.width=2400;canvas.height=kinds.length*150;
+const c=canvas.getContext('2d');c.fillStyle='#d4dcc9';c.fillRect(0,0,canvas.width,canvas.height);
+let frames=0;const errors=[];
+function render(kind,gesture,t,context,x,y,direction='right'){
+ context.save();context.translate(x,y);
+ const o={kind,x:0,y:0},routine={kind,category:objectBehavior(kind).category,gesture,period:4,phase:0,variant:0};
+ const n={name:'룻',x:-1,y:0,direction,usingObject:o,interaction:routine,interactionStart:0};
+ const pose=interactionPose(routine,t),anchor=interactionAnchor(n),held=heldObject(n,t),frame=objectInteractionFrame(o,[n],t);
+ for(const value of Object.values(pose))if(typeof value==='number'&&!Number.isFinite(value))throw Error(kind+': invalid pose');
+ if(!held&&!objectWorn(n,t)){drawWorldObject(context,o,24,frame);drawObjectResponse(context,o,frame);}
+ drawPixelCharacter(context,characterStyle(n.name),anchor.x,anchor.y,{scale:2,direction,interaction:{...pose,heldObject:!!held||pose.wearing}});
+ if(held)drawWorldObject(context,held,24,held.frame);
+ drawInteractionEffects(context,n,pose,anchor.x,anchor.y,t);context.restore();frames++;
+}
+kinds.forEach((kind,row)=>{
+ c.fillStyle=row%2?'#d4dcc9':'#e5dfcc';c.fillRect(0,row*150,2400,150);
+ c.font='bold 14px sans-serif';c.fillStyle='#203d3b';c.fillText(OBJECT_CATALOG[kind].name+' / '+kind,8,row*150+18);
+ interactionOptions(kind).forEach(([gesture],option)=>{
+  for(let phase=0;phase<4;phase++){
+   const x=(option*4+phase)*100;
+   render(kind,gesture,phase+.45,c,x+52,row*150+118);
+   c.fillStyle='#203d3b';c.font='10px sans-serif';c.fillText(gesture+' '+phase,x+2,row*150+143);
+  }
+ });
+});
+// Audit all frames, all directions and transition boundaries as well as the visible sheet.
+const scratch=document.createElement('canvas');scratch.width=400;scratch.height=300;const g=scratch.getContext('2d');
+for(const kind of kinds)for(const [gesture]of interactionOptions(kind))for(const direction of ['down','left','right','up'])for(let step=0;step<32;step++){
+ try{g.clearRect(0,0,400,300);render(kind,gesture,step/8,g,200,170,direction);}catch(error){errors.push(error.message);}
+}
+window.review={objects:kinds,frames,errors,total:all.length};window.reviewReady=true;
+</script>

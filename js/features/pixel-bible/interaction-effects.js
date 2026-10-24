@@ -1,3 +1,4 @@
+import {drinkingCup} from './object-response.js';
 import {drawWorldObject} from './art.js';
 // 일시적인 결과만 그린다. 저장된 배치와 배경은 바꾸지 않는다.
 export function drawInteractionEffects(c,n,pose,x,y,time){
@@ -6,12 +7,14 @@ export function drawInteractionEffects(c,n,pose,x,y,time){
  const r=(xx,yy,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(xx),Math.round(yy),w,h);};
  const prop=(kind,xx,yy,scale=.6,tilt=0)=>drawWorldObject(c,{kind,x:xx/24,y:yy/24},24,{scale,tilt,held:true});
  const actual=pose.actual||pose.gesture;
+ if(pose.prop==='boat'&&['row','back-row','lift-oar'].includes(actual)){const angle=Math.sin((phase+pose.within)*Math.PI/2)*.45;prop('oar',x+dir*20,y-12,.9,dir*angle);}
+ const cup=drinkingCup(n,pose,x,y);if(cup)drawWorldObject(c,cup,24,cup.frame);
  if(pose.archery){
   if(use){
    const bx=x+dir*18,by=y+(pose.handY-36)*2,stretch=phase===1?8:1;
    for(let i=0;i<7;i++)r(bx+dir*(7-Math.abs(3-i)*2),by-15+i*5,2,5,'#b49262');
    r(bx-dir*stretch,by-15,1,31,'#e9dcb1');
-   if(phase!==2)prop('arrow',bx,by+1,.7,dir*Math.PI/2);
+   if(!pose.shot)prop('arrow',bx,by+1,.7,dir*Math.PI/2);
    else for(let i=0;i<(actual==='three-arrows'?3:1);i++)prop('arrow',bx+dir*(12+pose.within*130+i*15),by+i*5+(actual==='high-shot'?-pose.within*45:actual==='low-shot'?pose.within*25:0),.7,dir*Math.PI/2+(actual==='high-shot'?-dir*.25:actual==='low-shot'?dir*.2:0));
   }
  }
