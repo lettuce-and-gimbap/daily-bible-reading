@@ -1,9 +1,10 @@
+import {physiqueFor} from './physique.js';
 import {grabbedOrigin} from './grab.js';
 import { interactionAnchor } from './object-response.js';
 // 매 프레임 현재 위치로 머리 위 연결점을 계산한다. 드래그 좌표도 동일하게 반영한다.
 export function relationshipLinks(relations,npcs,drag=null) {
  const links=[],seen=new Set();
- const head=n=>drag?.active&&drag.n===n?{x:grabbedOrigin(drag).x*24,y:grabbedOrigin(drag).y*24-80}:{x:interactionAnchor(n).x,y:interactionAnchor(n).y-80};
+ const head=n=>{const height=n.creature?1:physiqueFor(n.name,n.role,n.refs).height;return drag?.active&&drag.n===n?{x:grabbedOrigin(drag).x*24,y:grabbedOrigin(drag).y*24-80*height}:{x:interactionAnchor(n).x,y:interactionAnchor(n).y-80*height};};
  for(const r of relations){
   const a=npcs.find(n=>n.name===r.from&&(!r.sourceRef||n.refs.includes(r.sourceRef)));
   const b=npcs.find(n=>n.name===r.to&&(!r.sourceRef||n.refs.includes(r.sourceRef)));

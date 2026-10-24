@@ -86,7 +86,11 @@ let summaryBook = ""; // 지금 보는 요약의 권 코드
 const REL_NAME = { family: "가족", ally: "동역·도움", conflict: "대립", other: "기타", rename: "이름이 바뀜" };
 
 // 이름 상자 크기 (13px 굵은 글씨 기준)
-const rgBox = (name) => ({ hw: Math.max(26, (name.length * 13 + 16) / 2), hh: 14 });
+const rgBoxCache=new WeakMap();
+const rgBox = (name, rels=[]) => {
+  let cache=rgBoxCache.get(rels);if(!cache){cache=new Map();const neighbors=new Map();for(const r of rels)for(const [a,b]of [[r.from,r.to],[r.to,r.from]]){if(!neighbors.has(a))neighbors.set(a,new Set());neighbors.get(a).add(b);}for(const [n,peers]of neighbors){const boost=Math.min(12,peers.size*2);cache.set(n,{hw:Math.max(26,(n.length*13+16)/2)+boost,hh:14+Math.min(6,peers.size*1.5)});}rgBoxCache.set(rels,cache);}
+  return cache.get(name)||{hw:Math.max(26,(name.length*13+16)/2),hh:14};
+};
 const rgLabelW = (label) => label.length * 11.5 + 8;
 
 // 서로 이어진 사람끼리 묶음(연결 요소)으로 나눔. 큰 묶음부터
@@ -142,7 +146,7 @@ function layoutGroup(names, rels) {
       const A = pos[s.a], B = pos[s.b];
       const dx = B.x - A.x, dy = B.y - A.y;
       const d = Math.hypot(dx, dy) || 0.01;
-      const want = rgBox(s.a).hw + rgBox(s.b).hw + s.label * 0.9 + 44;
+      const want = rgBox(s.a,rels).hw + rgBox(s.b,rels).hw + s.label * 0.9 + 44;
       const pull = (d - want) * 0.06;
       f[s.a].x += (dx / d) * pull; f[s.a].y += (dy / d) * pull;
       f[s.b].x -= (dx / d) * pull; f[s.b].y -= (dy / d) * pull;
@@ -158,7 +162,7 @@ function layoutGroup(names, rels) {
   // 상자끼리 겹치면 마지막으로 떼어 놓음
   for (let it = 0; it < 60; it++) {
     for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
-      const A = pos[names[i]], B = pos[names[j]], a = rgBox(names[i]), b = rgBox(names[j]);
+      const A = pos[names[i]], B = pos[names[j]], a = rgBox(names[i],rels), b = rgBox(names[j],rels);
       const ox = a.hw + b.hw + 10 - Math.abs(B.x - A.x), oy = a.hh + b.hh + 10 - Math.abs(B.y - A.y);
       if (ox > 0 && oy > 0) {
         if (ox < oy) { const s = (B.x >= A.x ? 1 : -1) * ox / 2; A.x -= s; B.x += s; }
@@ -225,7 +229,7 @@ function rgSvgInner(names, pos, edges, live) {
   edges.forEach(({ r }) => { neighbors.get(r.from)?.add(r.to); neighbors.get(r.to)?.add(r.from); });
   const degrees = new Map([...neighbors].map(([name, set]) => [name, set.size]));
   const maxDegree = Math.max(0, ...degrees.values());
-  const hubThreshold = maxDegree >= 4 ? Math.max(4, maxDegree - 1) : Infinity;
+  const hubThreshold = maxDegree>=2&&[...degrees.values()].some(d=>d<maxDegree)?maxDegree:Infinity;
   const lines = edges.map((e) => {
     const color = REL_COLOR[e.r.kind] || REL_COLOR.other;
     const d = `M${e.p1.x.toFixed(1)} ${e.p1.y.toFixed(1)} Q${e.qx.toFixed(1)} ${e.qy.toFixed(1)} ${e.p2.x.toFixed(1)} ${e.p2.y.toFixed(1)}`;
@@ -268,23 +272,23 @@ function relationGraphCore(people, relations, opts = {}) {
   relationGroups(names, rels).forEach((g) => {
     const p = layoutGroup(g, rels.filter((r) => g.includes(r.from)));
     const span = () => {
-      const xs = g.map((x) => [p[x].x - rgBox(x).hw, p[x].x + rgBox(x).hw]).flat();
+      const xs = g.map((x) => [p[x].x - rgBox(x,rels).hw, p[x].x + rgBox(x,rels).hw]).flat();
       return [Math.min(...xs), Math.max(...xs)];
     };
     // 폭이 넘치면 가로 간격만 줄이고, 그 때문에 겹친 상자는 세로로 떼어 놓음
     let [x0, x1] = span();
     if (x1 - x0 > MAXW) {
-      const cx = (x0 + x1) / 2, maxHw = Math.max(...g.map((x) => rgBox(x).hw));
+      const cx = (x0 + x1) / 2, maxHw = Math.max(...g.map((x) => rgBox(x,rels).hw));
       const k = (MAXW - maxHw * 2) / Math.max(1, (x1 - x0) - maxHw * 2);
       g.forEach((x) => { p[x].x = cx + (p[x].x - cx) * k; });
       for (let it = 0; it < 80; it++) for (let i = 0; i < g.length; i++) for (let j = i + 1; j < g.length; j++) {
-        const A = p[g[i]], B = p[g[j]], a = rgBox(g[i]), b = rgBox(g[j]);
+        const A = p[g[i]], B = p[g[j]], a = rgBox(g[i],rels), b = rgBox(g[j],rels);
         const ox = a.hw + b.hw + 8 - Math.abs(B.x - A.x), oy = a.hh + b.hh + 12 - Math.abs(B.y - A.y);
         if (ox > 0 && oy > 0) { const s = (B.y >= A.y ? 1 : -1) * oy / 2; A.y -= s; B.y += s; }
       }
       [x0, x1] = span();
     }
-    const ys = g.map((x) => [p[x].y - rgBox(x).hh, p[x].y + rgBox(x).hh]).flat();
+    const ys = g.map((x) => [p[x].y - rgBox(x,rels).hh, p[x].y + rgBox(x,rels).hh]).flat();
     const y0 = Math.min(...ys), gw = x1 - x0, gh = Math.max(...ys) - y0 + 18; // 이름표 자리
     if (!row || row.w + GAP + gw > MAXW) { row = { groups: [], w: -GAP, h: 0 }; rows.push(row); }
     row.groups.push({ g, p, x0, y0, gw, gh });
@@ -295,7 +299,7 @@ function relationGraphCore(people, relations, opts = {}) {
     let x = PAD + (MAXW - r.w) / 2; // 줄마다 가운데 정렬
     r.groups.forEach(({ g, p, x0, y0, gw, gh }) => {
       const dy = (r.h - gh) / 2;
-      g.forEach((n) => { pos[n] = { x: p[n].x - x0 + x, y: p[n].y - y0 + y + dy, ...rgBox(n) }; });
+      g.forEach((n) => { pos[n] = { x: p[n].x - x0 + x, y: p[n].y - y0 + y + dy, ...rgBox(n,rels) }; });
       x += gw + GAP;
     });
     y += r.h + GAP;
@@ -315,7 +319,7 @@ function relationGraphCore(people, relations, opts = {}) {
   const kinds = [...new Set(rels.map((r) => r.kind))].filter((k) => REL_COLOR[k]);
   return `
     <button type="button" class="btn ghost small" data-rg-pdf="${id}">관계도 · 설명 PDF 다운로드</button>
-    <p class="rg-hint">꾹 눌러서 자세한 내용을 확인해보아요</p>
+    <p class="rg-hint">연결된 인물이 많을수록 이름 상자가 커져요. 꾹 눌러 자세히 볼 수 있어요.</p>
     <div class="rg-wrap" data-rg="${id}" tabindex="0" aria-label="관계도를 꾹 누르면 자세히 볼 수 있어요">
       <svg class="rg" viewBox="0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}" role="img" aria-label="등장 인물 관계도: ${esc(rels.map((r) => `${r.from}은(는) ${r.to}의 ${r.label}`).join(", "))}">
         ${rgSvgInner(names, pos, edges, false)}

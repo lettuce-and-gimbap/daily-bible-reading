@@ -1,3 +1,4 @@
+import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
 import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
@@ -139,6 +140,7 @@ export async function mountPixelWorld(shell, options) {
   const byCode = Object.fromEntries(loaded);
   const chapterData=requested.map((c)=>({...c,data:scopeChapterSummary(byCode[c.code].chapters[c.chap],c.verses)}));
   const model=buildWorldModel(chapterData),dialogueContext=buildChapterDialogue(chapterData);
+  const prominent=prominentKeys(model);let discoveries=loadDiscoveries(localStorage);
   const visibleCast=visibleWorldCast(model,options.focusPerson||0);
   const chapterProps=includeSceneObjects(objectsForChapters(chapterData),model.scenes);
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
@@ -150,7 +152,7 @@ export async function mountPixelWorld(shell, options) {
   const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
   shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><b class="pb-speech-speaker"></b><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
-    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
+    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><button class="pb-button" data-action="collection">발견 도감 · 알아가기</button><p class="pb-help">인물을 누르면 도감에 기록돼요. 은은한 발밑 빛은 현재 분량의 주요 인물이에요.</p><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(displayPersonName(p.name))}</button>`).join('')}</div>
@@ -311,7 +313,7 @@ export async function mountPixelWorld(shell, options) {
   } catch (_) {}
   terrain=terrain.filter(o=>!objects.some(p=>Math.hypot(p.x-o.x,p.y-o.y)<2.5));
   const positions=castPositions(visibleCast.length);
-  const npcs = visibleCast.map((p, i) => ({ ...p, readingChapters:dialogueContext.people.filter(o=>occurrenceMatches(p,o)).map(o=>({code:o.code,chap:o.chap})), ...positions[i], path: [], direction:"down", stride:0, idle: Math.random()*.4, motion:characterMotion(p,chapterData), action: "", task: null }));
+  const npcs = visibleCast.map((p, i) => ({ ...p, readingChapters:dialogueContext.people.filter(o=>occurrenceMatches(p,o)).map(o=>({code:o.code,chap:o.chap})), ...positions[i], prominent:prominent.has(castKey(p)), path: [], direction:"down", stride:0, idle: Math.random()*.4, motion:characterMotion(p,chapterData), action: "", task: null }));
   const castCache = new Map(npcs.map(n => [castKey(n), n]));
   let exposed=new Set(model.cast.map(castKey));
   try{
@@ -418,14 +420,44 @@ export async function mountPixelWorld(shell, options) {
     const n=npcs[i];
     if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();return;}
     if(speakOnSelect){
+      discover(n);
       const v=view(),anchor=interactionAnchor(n,TILE),sx=anchor.x*v.scale+v.x,sy=anchor.y*v.scale+v.y;
       if(sx<60||sx>canvas.width-60||sy<100||sy>canvas.height-60){camera.x=n.x*TILE;camera.y=n.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
       requestPersonal(n);
     }
     renderRecommendations(n);
     const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physicalEvidence||'현재 본문에서 확정하지 않은 외모는 창작으로 표현해요.')}</p><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
-    renderRecipes();clearInfo();
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><button class="pb-button" data-action="person-collection">발견 도감에서 보기</button><p class="pb-help">현재 분량: 연결 ${importanceFor(model,n).connections}명 · 관련 사건 ${importanceFor(model,n).events}개</p><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physicalEvidence||'현재 본문에서 확정하지 않은 외모는 창작으로 표현해요.')}</p><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    renderRecipes();if(!speakOnSelect)clearInfo();
+  }
+  let discoveryIndex=null;
+  function saveDiscoveries(){try{localStorage.setItem(DISCOVERY_KEY,JSON.stringify(discoveries));return true;}catch(_){say('도감은 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요.');return false;}}
+  function discover(person){
+    if(person.creature||person.name==='읽는 사람')return;
+    const key=discoveryKey(person),first=!discoveries[key];discoveries[key]=mergeDiscovery(discoveries[key],discoverySnapshot(person,model));const saved=saveDiscoveries();
+    if(first&&saved)say(`${displayPersonName(person.name)} 발견! 도감에서 주변 인물과 이야기를 살펴보세요.`);
+  }
+  async function openCollection(key=null,storyLimit=20){
+    hideSpeech();shell.querySelector('.pb-scripture')?.remove();
+    const panel=document.createElement('section');panel.className='pb-scripture pb-collection';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','발견 도감');
+    panel.innerHTML='<header><b>발견 도감 · 알아가기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"></div>';
+    shell.append(panel);panel.querySelector('button').focus();const body=panel.querySelector('.pb-scripture-body');body.textContent='도감을 준비하고 있어요…';
+    if(!discoveryIndex)discoveryIndex=fetch(new URL('../../../data/pixel-bible/physical-audit.json',import.meta.url)).then(r=>r.ok?r.json():{}).then(d=>d.entries||[]).catch(()=>[]);
+    const index=await discoveryIndex;if(!panel.isConnected)return;const record=discoveries[key];
+    if(!record){
+      const found=Object.values(discoveries).sort((a,b)=>a.name.localeCompare(b.name,'ko'));
+      body.innerHTML=`<p>발견한 인물 ${found.length}명 · 이 기기에 저장돼요.</p><p>월드에서 인물을 눌러 발견하세요. 같은 이름의 다른 인물은 따로 기록해요.</p><div class="pb-discovery-grid">${found.map(p=>`<button class="pb-button" data-discovery="${esc(p.key)}"><b>${esc(displayPersonName(p.name))}</b><small>${['','첫 만남','이야기 듣기','관계 알아가기','깊이 알아가기'][learningStage(p,discoveries)]}</small></button>`).join('')}</div>${!found.length?'<p>아직 발견한 인물이 없어요. 월드에서 한 사람을 눌러 보세요.</p>':''}<h3>이번 분량에서 만날 인물</h3><p>${model.cast.filter(p=>!p.creature&&!discoveries[discoveryKey(p)]).map(p=>esc(displayPersonName(p.name))).join(' · ')||'이번 분량의 인물을 모두 발견했어요.'}</p>`;
+    }else{
+      const indexEntry=index.find(p=>p.id===record.identity?.id),counts=new Map();for(const ref of indexEntry?.occurrences||[]){const code=ref.split('.')[0];counts.set(code,(counts.get(code)||0)+1);}
+      if(!counts.size)for(const ref of record.refs){const code=parseReference(ref)?.code;if(code)counts.set(code,(counts.get(code)||0)+1);}
+      const mainBooks=[...counts].sort((a,b)=>b[1]-a[1]).slice(0,5).map(([code,count])=>`${typeof BOOKS!=='undefined'?(BOOKS.find(b=>b.code===code)?.name||code):code} · ${count}장`);
+      const stage=learningStage(record,discoveries),count=Math.min(record.stories.length,stage===4?storyLimit:stage);
+      const neighbors=[...new Map(record.relations.map(r=>[r.key,r])).values()];
+      const family=record.relations.filter(r=>r.kind==='family'||/아들|딸|아버지|어머니|남편|아내|형제|자매|친족/.test(r.label));
+      const relationHtml=r=>`<article class="pb-discovery-relation"><b>${esc(r.from)} → ${esc(r.to)} · ${esc(r.label)}</b><p>${esc(r.note||'현재 본문에서 연결되는 관계예요.')}</p><small>${esc(r.ref)}</small>${discoveries[r.key]?`<button class="pb-button" data-discovery="${esc(r.key)}">${esc(displayPersonName(r.name))} 도감 보기</button>`:'<small>아직 직접 만나지 않았어요.</small>'}</article>`;
+      body.innerHTML=`<button class="pb-button" data-action="collection">← 발견한 인물 전체</button><h2>${esc(displayPersonName(record.name))}</h2><p>알아가기 ${stage}/4 · ${['','첫 만남','이야기 듣기','관계 알아가기','깊이 알아가기'][stage]}</p><p>이야기 읽기 ${record.read.length}개 · 만난 날 ${record.days.length}일 · 주변 인물 발견 ${neighbors.filter(r=>discoveries[r.key]).length}/${neighbors.length}</p><p class="pb-help">이야기 하나 읽기 → 주변 인물 만나기(관계 기록이 없으면 생략) → 다른 날 다시 만나고 이야기 두 개 읽기로 진행해요. 성경 본문은 단계와 관계없이 언제든 읽을 수 있어요.</p><h3>인물 소개</h3>${record.roles.map(role=>`<p>${esc(role)}</p>`).join('')}<h3>주요 등장 권</h3><p>${mainBooks.map(esc).join(' · ')||'현재 발견한 본문부터 확인해요.'}</p><small>앱 요약에서 확인된 등장 장 수 기준이에요. 실제 성경 발화량을 뜻하지 않아요.</small><h3>지금까지 만난 본문</h3><p>${record.refs.map(esc).join(' · ')}</p><h3>계보 · 가족 관계</h3>${family.length?family.map(relationHtml).join(''):'<p>지금까지 만난 본문에는 확인된 가족 관계가 없어요.</p>'}<h3>한 다리 주변 인물</h3>${neighbors.length?neighbors.map(relationHtml).join(''):'<p>현재 분량에 확인된 주변 인물이 없어요.</p>'}<h3>더 알아가는 이야기</h3><p class="pb-help">본문을 읽으며 만나는 사건들이 모여요. 실제 성경 발언이나 원문 인용이 아닌 짧은 상황 설명이에요.</p>${record.stories.slice(0,count).map((story,i)=>`<article class="pb-discovery-story"><p>${esc(story.text)}</p><small>${esc(story.ref)}</small><button class="pb-button" data-story="${i}" data-discovery-owner="${esc(key)}">${record.read.includes(storyKey(story))?'다시 읽기':'이야기 읽고 관련 구절 보기'}</button></article>`).join('')}${record.stories.length>count?(stage===4?`<button class="pb-button" data-more-stories="${esc(key)}" data-story-limit="${storyLimit+20}">이야기 더 보기 · ${record.stories.length-count}개 남음</button>`:`<p>다음 알아가기 단계에서 이야기 ${record.stories.length-count}개를 더 정리해 보여 드려요.</p>`):''}${!record.stories.length?'<p>현재 분량에서 확인된 사건 설명이 아직 없어요. 다른 본문에서 다시 만나면 내용이 더해져요.</p>':''}`;
+    }
+    shell.append(panel);panel.querySelector('button').focus();
   }
   function move(n, goal, task = null) {
     if(n.creature?.kind==='plant')return false;
@@ -772,6 +804,11 @@ export async function mountPixelWorld(shell, options) {
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }
+    if(b.dataset.moreStories!==undefined){openCollection(b.dataset.moreStories,Number(b.dataset.storyLimit));return;}
+    if(b.dataset.discovery!==undefined){openCollection(b.dataset.discovery);return;}
+    if(b.dataset.story!==undefined){const key=b.dataset.discoveryOwner,record=discoveries[key],story=record?.stories[Number(b.dataset.story)];if(story){discoveries[key]=markStoryRead(record,story);saveDiscoveries();await openSpeechPassage(story.ref,contextTerms({text:story.text}));shell.querySelector('.pb-scripture header')?.insertAdjacentHTML('afterbegin',`<button class="pb-button" data-discovery="${esc(key)}">도감으로</button>`);}return;}
+    if(action==='collection'){openCollection();return;}
+    if(action==='person-collection'){const person=npcs[selected];if(person){discover(person);openCollection(discoveryKey(person));}return;}
     if(action==='encounter-details'){const id=b.closest('[data-encounter]').dataset.encounter;openSpeechDetails(encounterLines.find(l=>l.session+':'+l.slot===id));return;}
     if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='speech-details'){openSpeechDetails();return;}
@@ -926,7 +963,8 @@ export async function mountPixelWorld(shell, options) {
       ctx.save();ctx.globalAlpha=.8;drawWorldObject(ctx,{...objectHold.o,...grabbedOrigin(objectHold)},TILE,objectHold.frame);ctx.restore();
     }
     if(light.alpha){ctx.save();ctx.globalAlpha=light.alpha;ctx.fillStyle=light.shade;ctx.fillRect(0,0,WORLD.width,WORLD.height);ctx.restore();}
-    if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
+    const talkingRelations=model.relations.filter(r=>encounterLines.some(l=>l.origin!=='general'&&l.target&&((l.speaker.name===r.from&&l.target.name===r.to)||(l.speaker.name===r.to&&l.target.name===r.from))));
+    if(showRelationships||talkingRelations.length)drawRelationshipLinks(ctx,relationshipLinks(showRelationships?model.relations:talkingRelations,npcs,drag));
     ctx.restore();
     if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px "DungGeunMo", monospace`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
     ctx.restore();positionSpeech();positionEncounters();
@@ -1007,6 +1045,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const rise=(n.objectAction==='zacchaeus-tree'||actionPose?.actual==='climb')&&n.usingObject?36+(actionPose?.climb||0):0;
   const anchor=interactionAnchor(n,TILE);
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
+  if(n.prominent){c.save();c.globalAlpha=reduced?.6:.45+.15*Math.sin(time*2);c.fillStyle='#f6d782';c.beginPath();c.ellipse(x,y+4,23,7,0,0,Math.PI*2);c.fill();c.strokeStyle='#fff0b3';c.lineWidth=2;c.stroke();c.restore();}
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
   drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}

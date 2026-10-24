@@ -68,12 +68,12 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
  }
 });
 
-test('관계 없는 근접 인물은 대화하지 않고 랜덤 말풍선은 독립적으로 유지한다',()=>{
+test('관계 없는 근접 인물은 일상 인사만 하고 랜덤 말풍선은 독립적으로 유지한다',()=>{
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
  const current=ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
  director.tick(0,npcs);assert.equal(ambient.current,current);
  director.clear();director.context={people:[],relations:[]};
- assert.equal(director.tick(1,npcs).length,0);
+ const greeting=director.tick(1,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
 });
 
 test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움직임을 갖는다',()=>{
@@ -85,4 +85,12 @@ test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움�
  assert.ok(limp.every(p=>p.pose.leftLeg===1&&p.pose.rightLeg===0));
  assert.equal(hangingPose(base,3,0,true).angle,0);
  assert.notDeepEqual(hangingPose({...base,key:'steady'},0).pose,poses[0].pose);
+});
+test('일상 인사는 한 쌍만 하고 같은 자리에서 반복하지 않으며 다시 이동한다',()=>{
+ const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
+ const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0,maxActive:99});
+ assert.equal(director.tick(0,[a,b,c]).length,1);assert.equal(director.active.length,1);
+ assert.equal(director.tick(800,[a,b,c]).length,2);assert.equal(director.tick(5800,[a,b,c]).length,0);assert.ok(!a.encounter&&a.idle<1);
+ assert.equal(director.tick(6000,[a,b]).length,0);assert.equal(director.tick(21000,[a,b]).length,0);
+ b.x=8;director.tick(21001,[a,b]);b.x=2;assert.equal(director.tick(21002,[a,b]).length,1);
 });
