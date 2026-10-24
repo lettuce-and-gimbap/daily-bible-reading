@@ -1,16 +1,18 @@
 /* 정식 앱 버전과 분리한 관리자 개발 공간. */
+@font-face { font-family: "DungGeunMo"; src: url("../assets/fonts/DungGeunMo.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+.pb-dialog, .pb-dialog *, .pb-banner, .pb-banner *, .pb-entry { font-family: "DungGeunMo", monospace; }
 #pixel-bible-entry[hidden] { display: none !important; }
-.pb-entry { flex: none; border: 1px solid #b99a55; background: #142d37; color: #ffe2a0; padding: 5px 7px; border-radius: 3px; font: 700 8px/1.2 monospace; letter-spacing: .8px; box-shadow: inset 0 -2px #081923; cursor: pointer; }
+.pb-entry { flex: none; border: 1px solid #b99a55; background: #142d37; color: #ffe2a0; padding: 5px 7px; border-radius: 3px; font: 700 8px/1.2 "DungGeunMo", monospace; letter-spacing: .8px; box-shadow: inset 0 -2px #081923; cursor: pointer; }
 .pb-entry span { display: block; }
 .pb-banner { position: relative; display: block; width: 100%; padding: 0; margin: 0 0 16px; overflow: hidden; border: 2px solid #ac945a; background: #132b36; border-radius: 8px; color: #fff1bd; cursor: pointer; isolation: isolate; }
 .pb-banner img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: contain; image-rendering: pixelated; }
 .pb-banner-caption { display: flex; gap: 10px; align-items: center; justify-content: center; padding: 10px 8px; background: #142d37; font-size: 11px; }
-.pb-banner-caption b { font: 900 17px/1 monospace; letter-spacing: 2px; }
-.pb-banner-caption small { font: 9px monospace; color: #d7bc79; }
+.pb-banner-caption b { font: 900 17px/1 "DungGeunMo", monospace; letter-spacing: 2px; }
+.pb-banner-caption small { font: 9px "DungGeunMo", monospace; color: #d7bc79; }
 .pb-dialog { padding: 0; max-width: min(92vw, 490px); border: 3px solid #d9b86d; background: #112b34; color: #fff1c9; box-shadow: 0 0 0 5px #081c24, 0 20px 80px #0008; }
 .pb-dialog::backdrop { background: #06121ed9; }
 .pb-notice { padding: 25px 15px; text-align: center; background: repeating-linear-gradient(0deg, #122e38, #122e38 3px, #102932 3px, #102932 4px); }
-.pb-notice h2 { color: #ffe19c; font: 900 26px monospace; letter-spacing: 3px; text-shadow: 3px 3px #665237; }
+.pb-notice h2 { color: #ffe19c; font: 900 26px "DungGeunMo", monospace; letter-spacing: 3px; text-shadow: 3px 3px #665237; }
 .pb-notice-text { width: min(100%, 440px); height: auto; image-rendering: pixelated; }
 .pb-stars { color: #e7b85d; letter-spacing: 12px; }
 .pb-button { background: #24434b; color: #fff3cd; border: 1px solid #ac985d; border-radius: 3px; padding: 7px 11px; font-family: inherit; font-size: 12px; font-weight: 600; line-height: 1.4; cursor: pointer; }
@@ -25,8 +27,8 @@
 .pb-shell { position: relative; background: #132c35; width: 100%; height: 100%; overflow: hidden; color: #fff1c9; }
 .pb-shell:fullscreen { width: 100vw; height: 100dvh; }
 .pb-world-head { position: absolute; inset: 0 0 auto; z-index: 9; min-height: 42px; display: flex; align-items: center; gap: 7px; padding: 5px max(10px, env(safe-area-inset-right)) 5px max(10px, env(safe-area-inset-left)); background: #142d37dd; }
-.pb-world-head b { margin-right: auto; font: 700 13px monospace; letter-spacing: 1px; }
-.pb-world-head small { margin-left: 10px; color: #c2cba7; font: 11px sans-serif; }
+.pb-world-head b { margin-right: auto; font: 700 13px "DungGeunMo", monospace; letter-spacing: 1px; }
+.pb-world-head small { margin-left: 10px; color: #c2cba7; font: 11px "DungGeunMo", monospace; }
 .pb-world-head button { flex: none; min-width: 48px; min-height: 48px; padding: 10px 12px; font-size: 14px; touch-action: manipulation; }
 .pb-immersive .pb-world-head { left: auto; background: transparent; }
 .pb-immersive .pb-world-head b { display: none; }
@@ -63,7 +65,7 @@
 .pb-design canvas { display: block; width: min(100%, 1200px); height: auto; margin: 12px auto; image-rendering: pixelated; }
 @media (orientation: portrait) {
   .pb-world-dialog .pb-rotate { position: absolute; inset: 43px 0 0; z-index: 15; background: #112b34; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 20px; text-align: center; }
-  .pb-rotate strong { font: 900 24px monospace; color: #ffe19c; }
+  .pb-rotate strong { font: 900 24px "DungGeunMo", monospace; color: #ffe19c; }
   .pb-rotate .pb-phone { font-size: 50px; }
 }
 @media (max-width: 600px) {
@@ -73,7 +75,7 @@
   .pb-world-head small { display: none; }
 }
 
-.pb-speech{position:absolute;z-index:3;box-sizing:border-box;width:max-content;max-width:min(230px,calc(100% - 28px));padding:8px 10px;border:2px solid #594b39;background:#fff5d8;color:#302f35;box-shadow:2px 2px 0 #17362f55;pointer-events:none;font-family:ui-rounded,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;image-rendering:pixelated;}
+.pb-speech{position:absolute;z-index:3;box-sizing:border-box;width:max-content;max-width:min(230px,calc(100% - 28px));padding:8px 10px;border:2px solid #594b39;background:#fff5d8;color:#302f35;box-shadow:2px 2px 0 #17362f55;pointer-events:none;font-family:"DungGeunMo",monospace;image-rendering:pixelated;}
 .pb-speech[hidden]{display:none;}
 .pb-speech::after{content:"";position:absolute;left:var(--pb-tail,50%);bottom:-7px;width:7px;height:7px;background:#fff5d8;border-right:2px solid #594b39;border-bottom:2px solid #594b39;transform:translateX(-50%) rotate(45deg);}
 .pb-speech p{margin:0;font-size:13px;font-weight:600;line-height:1.35;word-break:keep-all;overflow-wrap:anywhere;}

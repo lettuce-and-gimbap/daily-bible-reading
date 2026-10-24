@@ -16,7 +16,7 @@ export function relationshipLinks(relations,npcs,drag=null) {
 }
 export function drawRelationshipLinks(ctx,links) {
  const labels=[];
- ctx.save();ctx.lineWidth=2;ctx.font='bold 12px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
+ ctx.save();ctx.lineWidth=2;ctx.font='bold 12px "DungGeunMo", monospace';ctx.textAlign='center';ctx.textBaseline='middle';
  for(const [i,l] of links.entries()){
   const top=Math.max(48,Math.min(l.a.y,l.b.y)-14-(i%3)*18),mid=(l.a.x+l.b.x)/2;
   ctx.strokeStyle='#ffe1a4';ctx.shadowColor='#142d37';ctx.shadowBlur=3;

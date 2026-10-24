@@ -737,7 +737,7 @@ export async function mountPixelWorld(shell, options) {
     if(action==="design" && !shell.querySelector(".pb-design")) {
       const board=document.createElement("section");board.className="pb-design";board.setAttribute("aria-label","픽셀 캐릭터와 지형 디자인 도안");
       board.innerHTML='<header><b>실제 캐릭터 · 지형 도안</b><button class="pb-button" data-action="close-design">도안 닫기 ✕</button></header><canvas aria-label="전용 캐릭터 100종과 보리밭, 물항아리, 쉬는 자리, 나무"></canvas>';
-      shell.append(board);drawDesignBoard(board.querySelector("canvas").getContext("2d"));board.querySelector("button").focus();
+      shell.append(board);await document.fonts?.load('12px "DungGeunMo"');if(!board.isConnected)return;drawDesignBoard(board.querySelector("canvas").getContext("2d"));board.querySelector("button").focus();
     }
     if(action==="close-design") {shell.querySelector(".pb-design")?.remove();shell.querySelector('[data-action="design"]').focus();}
     if(action==="cancel-place") { placing=null; syncPlacement(); }
@@ -882,7 +882,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
     ctx.restore();
-    if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px sans-serif`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
+    if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px "DungGeunMo", monospace`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
     ctx.restore();positionSpeech();positionEncounters();
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
@@ -937,6 +937,7 @@ export async function mountPixelWorld(shell, options) {
       if(blocked(goal.x,goal.y))continue;const path=findPath(cell(n),goal,blocked);if(path?.length){n.path=path;n.stride=Math.random()*4;n.direction=movementDirection(path[0].x-n.x,path[0].y-n.y,n.direction);break;}
     }
   }
+  document.fonts?.load('12px "DungGeunMo"').then(()=>{if(!disposed)draw();}).catch(()=>{});
   syncExposure();syncCamera();syncRelationships();select(options.speakOnOpen?0:-1,!!options.speakOnOpen);fitCanvas();resume();say('두 손가락 또는 마우스 휠로 확대·축소해요. 양옆에서 인물과 조합식을 고를 수 있어요.');
   return ()=>{cleanup();replacement?.();};
 }
@@ -946,7 +947,7 @@ function drawObject(c,o,response) {
   drawWorldObject(c,o,TILE,response);
   drawObjectResponse(c,o,response,TILE);
   if(!Object.hasOwn(WORLD_OBJECTS,o.kind)&&OBJECT_CATALOG[o.kind]){
-    c.save();c.font='10px sans-serif';c.textAlign='center';const name=OBJECT_CATALOG[o.kind].name,w=c.measureText(name).width+8;
+    c.save();c.font='10px "DungGeunMo", monospace';c.textAlign='center';const name=OBJECT_CATALOG[o.kind].name,w=c.measureText(name).width+8;
     c.fillStyle='#12303bd9';c.fillRect(o.x*TILE-w/2,o.y*TILE+15,w,15);c.fillStyle='#fff1c9';c.fillText(name,o.x*TILE,o.y*TILE+26);c.restore();
   }
 }
@@ -965,7 +966,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   drawInteractionEffects(c,n,actionPose,x,y,time);
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
-  c.font="12px sans-serif";c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
+  c.font='12px "DungGeunMo", monospace';c.textAlign="center";const w=c.measureText(n.name).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(n.name,x,y+30);
 }
 
 function drawLifted(c,drag,time,reduced=false) {
@@ -975,5 +976,5 @@ function drawLifted(c,drag,time,reduced=false) {
   // 집은 픽셀 자체를 회전 중심으로 삼아 대롱거려도 커서와 떨어지지 않는다.
   c.save();c.translate(drag.p.x*TILE,drag.p.y*TILE);c.rotate(angle);c.translate(-drag.p.x*TILE,-drag.p.y*TILE);
   drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,direction:'down',walkFrame:0,interaction:lift.pose,expression:lift.expression,selected:true});
-  c.restore();c.fillStyle='#fff0bf';c.font='13px sans-serif';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
+  c.restore();c.fillStyle='#fff0bf';c.font='13px "DungGeunMo", monospace';c.textAlign='center';c.fillText(drag.n.name,x,y+28);
 }

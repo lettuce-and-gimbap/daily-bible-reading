@@ -276,35 +276,35 @@ export function drawDesignBoard(c) {
   const W=1200,H=860+rows*260;c.canvas.width=W;c.canvas.height=H;c.imageSmoothingEnabled=false;
   c.fillStyle="#f3ecdb";c.fillRect(0,0,W,H);
   c.fillStyle="#16343c";c.fillRect(0,0,W,108);
-  c.fillStyle="#f6d894";c.font="bold 30px monospace";c.fillText("PIXEL BIBLE / DESIGN BOARD",38,48);
-  c.fillStyle="#d7e0c3";c.font="16px sans-serif";c.fillText("큰 도트 · 길이를 살린 몸통 · 점눈과 볼터치 · 실제 월드와 같은 원본 그림",38,82);
+  c.fillStyle="#f6d894";c.font='bold 30px "DungGeunMo", monospace';c.fillText("PIXEL BIBLE / DESIGN BOARD",38,48);
+  c.fillStyle="#d7e0c3";c.font='16px "DungGeunMo", monospace';c.fillText("큰 도트 · 길이를 살린 몸통 · 점눈과 볼터치 · 실제 월드와 같은 원본 그림",38,82);
   const entries=Object.entries(CHARACTER_STYLES);
   entries.forEach(([key,style],i)=>{
     const x=30+(i%6)*195, row=Math.floor(i/6)*260;
     c.save();c.translate(0,row);
     c.fillStyle=i%2?"#e6ddca":"#d9e0ce";c.fillRect(x,130,170,245);
     drawPixelCharacter(c,style,x+85,325,{scale:4,action:key==="ruth"?"field":""});
-    c.fillStyle="#263e3d";c.textAlign="center";c.font="bold 18px sans-serif";c.fillText(style.name,x+85,350);
-    c.font="11px monospace";c.fillText("24 × 38 / 4x preview",x+85,368);c.restore();
+    c.fillStyle="#263e3d";c.textAlign="center";c.font='bold 18px "DungGeunMo", monospace';c.fillText(style.name,x+85,350);
+    c.font='11px "DungGeunMo", monospace';c.fillText("24 × 38 / 4x preview",x+85,368);c.restore();
   });
   c.save();c.translate(0,rows*260-220);
-  c.textAlign="left";c.fillStyle="#294842";c.font="bold 20px sans-serif";c.fillText("오브젝트 · 캐릭터와 같은 굵기의 도트",36,416);
+  c.textAlign="left";c.fillStyle="#294842";c.font='bold 20px "DungGeunMo", monospace';c.fillText("오브젝트 · 캐릭터와 같은 굵기의 도트",36,416);
   const obs=[["field","보리밭 / 이삭 줍기"],["water","물항아리 / 물 마시기"],["bench","쉬는 자리 / 휴식"],["tree","나무 / 길 막기"]];
   obs.forEach(([kind,label],i)=>{
     const x=30+i*292;c.fillStyle="#e1e5d4";c.fillRect(x,440,264,213);
     c.save();c.translate(x+132,570);c.scale(1.8,1.8);drawWorldObject(c,{kind,x:0,y:0});c.restore();
-    c.fillStyle="#294842";c.textAlign="center";c.font="16px sans-serif";c.fillText(label,x+132,632);
+    c.fillStyle="#294842";c.textAlign="center";c.font='16px "DungGeunMo", monospace';c.fillText(label,x+132,632);
   });
-  c.textAlign="left";c.font="bold 20px sans-serif";c.fillText("걷기 원화와 지형 조합",36,700);
+  c.textAlign="left";c.font='bold 20px "DungGeunMo", monospace';c.fillText("걷기 원화와 지형 조합",36,700);
   for(let i=0;i<4;i++){
     const x=30+i*104;c.fillStyle="#e3ddcc";c.fillRect(x,728,98,160);
     drawPixelCharacter(c,CHARACTER_STYLES.ruth,x+49,856,{scale:3,direction:["down","left","right","up"][i],walkFrame:1});
   }
-  c.font="14px sans-serif";c.fillStyle="#294842";c.fillText("정면 · 왼쪽 · 오른쪽 · 후면",54,916);
+  c.font='14px "DungGeunMo", monospace';c.fillStyle="#294842";c.fillText("정면 · 왼쪽 · 오른쪽 · 후면",54,916);
   const bg=document.createElement("canvas");bg.width=960;bg.height=480;drawWorldBackground(bg.getContext("2d"));
   c.drawImage(bg,450,728,720,240);
-  c.font="14px sans-serif";c.fillText("풀밭 · 흙길 · 물가 · 돌집 (상상 공간)",450,995);
-  c.font="12px sans-serif";c.fillStyle="#5d6d61";c.fillText("본문 근거와 창작 복식을 구분합니다. 관리자 개발 체험 · 정식 버전 유지.",36,1020);c.restore();
+  c.font='14px "DungGeunMo", monospace';c.fillText("풀밭 · 흙길 · 물가 · 돌집 (상상 공간)",450,995);
+  c.font='12px "DungGeunMo", monospace';c.fillStyle="#5d6d61";c.fillText("본문 근거와 창작 복식을 구분합니다. 관리자 개발 체험 · 정식 버전 유지.",36,1020);c.restore();
 }
 
 const objectHitCache=new Map();

@@ -47,9 +47,9 @@ function pixelBibleModal(contents, world = false) {
 function showPixelBibleNotice() {
   if (pixelBibleDialog) return;
   const { dialog } = pixelBibleModal(`<div class="pb-notice"><span class="pb-stars" aria-hidden="true">✦ · ✧ · ✦</span><h2>PIXEL BIBLE</h2><canvas class="pb-notice-text" width="264" height="76" aria-hidden="true"></canvas><p class="pb-sr">${PIXEL_BIBLE_NOTICE}</p><button class="pb-button" data-pb-close autofocus>기다릴게요!</button></div>`);
-  const c = dialog.querySelector("canvas").getContext("2d");
-  c.fillStyle = "#fff1bd"; c.font = "12px monospace"; c.textAlign = "center";
-  ["앗, 벅수가 무언가를", "개발중이에요!", "다 개발되면 보여드릴게요!"].forEach((line, i) => c.fillText(line, 132, 18 + i * 23));
+  const canvas=dialog.querySelector("canvas"),c=canvas.getContext("2d");
+  const draw=()=>{if(!dialog.isConnected)return;c.clearRect(0,0,canvas.width,canvas.height);c.fillStyle="#fff1bd";c.font='12px "DungGeunMo", monospace';c.textAlign="center";["앗, 벅수가 무언가를","개발중이에요!","다 개발되면 보여드릴게요!"].forEach((line,i)=>c.fillText(line,132,18+i*23));};
+  draw();document.fonts?.load('12px "DungGeunMo"').then(draw).catch(()=>{});
 }
 
 function pixelBibleTodayChapters() {
