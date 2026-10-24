@@ -58,18 +58,23 @@ export function heldObject(n,time,reduced=false,tile=24){
  if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;
  const side=n.direction==='left'||n.direction==='right';
- const beat=p.phase===1?-1:1;
- const tilt=['swing','thrust'].includes(p.gesture)?dir*(p.phase===1?-.9:.9):p.gesture==='drink'&&p.phase===2?-dir*.9:p.gesture==='pour'&&p.phase===2?dir*.8:
-  ['practice','use','wipe','polish','tap','strum','play','mend','cast','reins','swing','thrust','row','back-row','stamp','roll-seal','unlock','turn-key'].includes(p.gesture)?dir*beat*.2:
-  p.gesture==='blow'?-dir*.12:0;
  const progress=reduced?.5:((time-(n.interactionStart||0))/n.interaction.period+n.interaction.phase)*4%1;
- const eased=progress*progress*(3-2*progress),transfer=reduced?1:p.phase===0?eased:p.phase===3?1-eased:1;
+ const stepped=Math.floor(progress*8)/8;
+ const eased=stepped*stepped*(3-2*stepped),transfer=reduced?1:p.phase===0?eased:p.phase===3?1-eased:1;
  const tx=(a.x+(side?dir*14:8)+p.bodyX*2)/tile,ty=(a.y+(p.handY-36)*2+p.bodyY*2+(p.gesture==='drink'?6:5))/tile;
  const originalScale=objectPresentation(o.kind).scale;
  return {kind:o.kind,x:Math.round((o.x+(tx-o.x)*transfer)*tile)/tile,y:Math.round((o.y+(ty-o.y)*transfer)*tile)/tile,
-  frame:{scale:originalScale+(Math.min(originalScale,['cloak','robe','linen','sackcloth','ephod','armor'].includes(o.kind)?.65:.85)-originalScale)*transfer,tilt:tilt*transfer*Math.sin(Math.PI*progress),held:true,
+  frame:{scale:originalScale,tilt:heldTilt(p,dir,eased)*transfer,held:true,
    open:['read','unroll','spread'].includes(p.gesture)?(p.phase===2?.25:.1):0,
    squash:['fold','smooth','wrap'].includes(p.gesture)&&p.phase===2?.3:0,bite:p.gesture==='eat'&&p.phase===2},pose:p};
+}
+// Keep the tool angle continuous across beat boundaries, with eight pixel-art ticks.
+function heldTilt(p,dir,f){
+ const angles=['swing','thrust'].includes(p.gesture)?[0,-.9,.9,0]:
+  p.gesture==='drink'?[0,0,-.55,0]:p.gesture==='pour'?[0,0,.8,0]:
+  ['practice','use','wipe','polish','tap','strum','play','mend','cast','reins','row','back-row','stamp','roll-seal','unlock','turn-key'].includes(p.gesture)?[0,-.2,.2,0]:
+  p.gesture==='blow'?[0,-.12,-.12,0]:[0,0,0,0];
+ return dir*(angles[p.phase]+(angles[(p.phase+1)%4]-angles[p.phase])*f);
 }
 export function drinkingCup(n,pose,x,y){
  if(pose.gesture!=='drink'||n.usingObject?.kind==='cup')return null;
