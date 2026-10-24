@@ -1,5 +1,7 @@
 # 외부 픽셀아트 조사 기록
 
+후속 156종 직접·유사 대상 설계 검토는 [전종 조사표](object-animation-study.md)를 참고한다. 아래는 1차 조사 당시의 상태다.
+
 156종에 대해 itch.io에서 영문 오브젝트명 + pixel art animation 검색을 수행했다. 검색 결과 수집은 개별 애니메이션 검토 완료를 뜻하지 않는다. 대표 이미지 140종을 비교했으며 무관한 결과는 아래에 명시했다. 외부 그림은 저장소에 복제하지 않았고, 원본 도안과 코드로 재구성했다.
 
 공통 모션 근거: [SLYNYRD Pixelblog 8](https://www.slynyrd.com/blog/2018/8/19/pixelblog-8-intro-to-animation) 본문과 GIF의 핵심 자세 확인. 준비/완전 신장 자세만으로 행동이 읽혀야 하며 과도한 중간 프레임은 힘을 줄일 수 있다는 설명을 적용했다. [Lospec animation 목록](https://lospec.com/pixel-art-tutorials/tags/animation)은 소재별 추가 조사용 목록이며 연결된 모든 튜토리얼을 읽었다는 뜻은 아니다.

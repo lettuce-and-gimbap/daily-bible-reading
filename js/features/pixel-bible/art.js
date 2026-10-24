@@ -192,7 +192,10 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
   const x=o.x*tile,y=o.y*tile;
   c.save();c.translate(Math.round(x+(frame?.dx||0)),Math.round(y+(frame?.dy||0)));c.rotate(frame?.tilt||0);const size=frame?.scale||objectPresentation(originalKind).scale;c.scale(size*(1+(frame?.open||0)),size*(1-(frame?.squash||0)));
   if(frame?.bite){c.beginPath();c.rect(-30,-40,60,40);c.clip();}
-  const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);};const O="#393e3c";
+  const r=(x,y,w,h,color)=>{c.fillStyle=color;
+   if(frame?.clothWave){for(let j=0;j<h;j+=2){const yy=y+j,offset=Math.round(Math.sin(yy*.22+frame.clothWave)*Math.max(0,(yy+22)/15));c.fillRect(x+offset,yy,w,Math.min(2,h-j));}}
+   else c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);
+  };const O="#393e3c";
   if(!frame?.held)r(-7,4,15,2,"#193b3533");
   if(descriptor&&drawCatalogDetail(r,originalKind,family,O)){c.restore();return;}
   if(o.kind==="field") {
@@ -312,7 +315,7 @@ export function drawDesignBoard(c) {
 
 const objectHitCache=new Map();
 export function hitWorldObject(o,point,frame=null,padding=0){
- const key=JSON.stringify([o.kind,frame?.scale,frame?.tilt,frame?.open,frame?.squash,frame?.dx,frame?.dy,frame?.lid]);
+ const key=JSON.stringify([o.kind,frame?.scale,frame?.tilt,frame?.open,frame?.squash,frame?.dx,frame?.dy,frame?.lid,frame?.clothWave]);
  let pixels=objectHitCache.get(key);
  if(!pixels){const c=document.createElement('canvas');c.width=c.height=384;drawWorldObject(c.getContext('2d'),{...o,x:192,y:192},1,frame);pixels=c.getContext('2d').getImageData(0,0,384,384).data;if(objectHitCache.size>256)objectHitCache.clear();objectHitCache.set(key,pixels);}
  const x=Math.floor(point.x-o.x*24+192),y=Math.floor(point.y-o.y*24+192),r=Math.max(0,Math.floor(padding));

@@ -1,3 +1,4 @@
+import {drawWorkResult} from './work-results.js';
 import {pixelRope,ropeLoop} from './rope-art.js';
 import {heldObject,drinkingCup} from './object-response.js';
 import {drawWorldObject} from './art.js';
@@ -8,6 +9,7 @@ export function drawInteractionEffects(c,n,pose,x,y,time){
  const r=(xx,yy,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(xx),Math.round(yy),w,h);};
  const prop=(kind,xx,yy,scale=.6,tilt=0)=>drawWorldObject(c,{kind,x:xx/24,y:yy/24},24,{scale,tilt,held:true});
  const actual=pose.actual||pose.gesture;
+ drawWorkResult(c,n,pose,x,y,time);
  // Contact/result cues make the work readable from either facing direction.
  if(use&&['write','trace'].includes(actual)){
   prop('letter',x+dir*25,y-10,.65);

@@ -1,0 +1,8194 @@
+{
+  "schema": 1,
+  "scope": "156 object design reviews using direct and analogous sources; not 156 external animation videos",
+  "objects": [
+    {
+      "id": "field",
+      "name": "보리밭",
+      "family": "crop",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "숙여 이삭 줍기"
+        ],
+        [
+          "bundle",
+          "이삭 묶기"
+        ],
+        [
+          "inspect",
+          "이삭 살피기"
+        ],
+        [
+          "harvest",
+          "팔 뻗어 거두기"
+        ],
+        [
+          "sow",
+          "씨앗 뿌리기"
+        ],
+        [
+          "thresh",
+          "이삭 털어 모으기"
+        ],
+        [
+          "sort",
+          "거둔 이삭 고르기"
+        ],
+        [
+          "tie",
+          "이삭 묶음 매기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "water",
+      "name": "물항아리",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "scoop",
+          "그릇으로 물 떠 올리기"
+        ],
+        [
+          "drink",
+          "잔을 입에 대고 물 마시기"
+        ],
+        [
+          "sip",
+          "두 손으로 잔을 받쳐 천천히 마시기"
+        ],
+        [
+          "pour",
+          "잔에 물 따르기"
+        ],
+        [
+          "wash",
+          "물을 떠 손 씻기"
+        ],
+        [
+          "fill",
+          "빈 그릇에 물 채우기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ],
+        [
+          "wipe",
+          "흐른 내용물 닦기"
+        ],
+        [
+          "offer",
+          "그릇을 앞으로 내밀기"
+        ],
+        [
+          "cap",
+          "입구 마개 열기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-water",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "bench",
+      "name": "쉬는 자리",
+      "family": "seat",
+      "behavior": {
+        "category": "bench",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sit",
+          "바로 앉아 쉬기"
+        ],
+        [
+          "feet",
+          "앉아 발 흔들기"
+        ],
+        [
+          "rest",
+          "몸 기대 쉬기"
+        ],
+        [
+          "lap",
+          "무릎에 손 모으기"
+        ],
+        [
+          "stretch",
+          "앉아 기지개 켜기"
+        ],
+        [
+          "rise",
+          "앉았다 일어나기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bed",
+        "relationship": "유사 구조·쓰임새: bed",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지면·등받이/다리",
+      "keyposes": "접근→무게 낮추기→앉기/눕기→일어나기",
+      "acceptance": "발과 좌면, 누운 머리와 베개의 접촉을 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "tree",
+      "name": "나무",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살펴보기"
+        ],
+        [
+          "fruit",
+          "열매 살피기"
+        ],
+        [
+          "trunk",
+          "나무에 손 대기"
+        ],
+        [
+          "shake",
+          "나무 흔들기"
+        ],
+        [
+          "kick",
+          "줄기 툭 차기"
+        ],
+        [
+          "bonk",
+          "열매 떨어져 머리에 콩"
+        ],
+        [
+          "gather",
+          "손 뻗어 열매 거두기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ],
+        [
+          "offer",
+          "열매를 손에 받쳐 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "well",
+      "name": "우물",
+      "family": "well",
+      "behavior": {
+        "category": "well",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "bucket",
+          "두레박을 우물에 내리기"
+        ],
+        [
+          "rope",
+          "줄을 당겨 두레박 올리기"
+        ],
+        [
+          "scoop",
+          "길어 온 물을 그릇에 받기"
+        ],
+        [
+          "pour",
+          "물동이에 물 옮기기"
+        ],
+        [
+          "inspect",
+          "우물 안을 들여다보기"
+        ],
+        [
+          "lower-rope",
+          "두레박을 천천히 내려 주기"
+        ],
+        [
+          "wash",
+          "길어 온 물로 손 씻기"
+        ],
+        [
+          "rinse",
+          "손끝에 물 끼얹기"
+        ],
+        [
+          "fill",
+          "그릇에 물 받아 채우기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-water",
+        "relationship": "유사 구조·쓰임새: water",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "stone",
+      "name": "돌",
+      "family": "stone",
+      "behavior": {
+        "category": "stone",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "pick",
+          "무릎 굽혀 돌 고르기"
+        ],
+        [
+          "turn",
+          "돌 돌려 살피기"
+        ],
+        [
+          "stack",
+          "돌 쌓기"
+        ],
+        [
+          "place",
+          "돌 내려놓기"
+        ],
+        [
+          "balance",
+          "돌 균형 잡기"
+        ],
+        [
+          "skip",
+          "작은 돌 튕기기"
+        ],
+        [
+          "brush",
+          "표면 돌가루 털기"
+        ],
+        [
+          "measure",
+          "손으로 너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stone",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "bush",
+      "name": "떨기나무",
+      "family": "plant",
+      "behavior": {
+        "category": "bush",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "observe",
+          "몸 숙여 살펴보기"
+        ],
+        [
+          "kneel",
+          "무릎 꿇기"
+        ],
+        [
+          "hands",
+          "두 손 모으기"
+        ],
+        [
+          "lean",
+          "가까이 살펴보기"
+        ],
+        [
+          "leaves",
+          "잎을 살피기"
+        ],
+        [
+          "step-back",
+          "뒤로 물러나 바라보기"
+        ],
+        [
+          "trunk",
+          "줄기를 손으로 짚기"
+        ],
+        [
+          "shade",
+          "곁에 낮게 앉아 쉬기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "boat",
+      "name": "배",
+      "family": "boat",
+      "behavior": {
+        "category": "boat",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "row",
+          "노 젓기"
+        ],
+        [
+          "balance",
+          "앉아 균형 잡기"
+        ],
+        [
+          "look",
+          "먼 곳 바라보기"
+        ],
+        [
+          "rope",
+          "밧줄 정리하기"
+        ],
+        [
+          "reins",
+          "밧줄 당기기"
+        ],
+        [
+          "wave",
+          "배 밖으로 손 흔들기"
+        ],
+        [
+          "grip",
+          "가장자리를 양손으로 잡기"
+        ],
+        [
+          "repair",
+          "연결 부위 손질하기"
+        ],
+        [
+          "wipe",
+          "나무 표면 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boat",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "scroll",
+      "name": "두루마리",
+      "family": "book",
+      "behavior": {
+        "category": "scroll",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "read",
+          "글 읽기"
+        ],
+        [
+          "unroll",
+          "두루마리 펼치기"
+        ],
+        [
+          "write",
+          "무릎 위에 적기"
+        ],
+        [
+          "point",
+          "글 가리키기"
+        ],
+        [
+          "roll",
+          "다시 말아 묶기"
+        ],
+        [
+          "trace",
+          "글줄 따라가기"
+        ],
+        [
+          "fold",
+          "읽은 부분 접어 정리하기"
+        ],
+        [
+          "offer",
+          "읽을 부분 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.slynyrd.com/blog/2018/8/19/pixelblog-8-intro-to-animation",
+        "relationship": "유사 동작: 핵심 자세·정지 유지",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "받치기→펼치기→글줄 따라가기/쓰기→덮기",
+      "acceptance": "펼친 면과 손의 작업이 보이고 얼굴을 가리지 않는다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "oil",
+      "name": "기름병",
+      "family": "vessel",
+      "behavior": {
+        "category": "oil",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "pour",
+          "기름 따르기"
+        ],
+        [
+          "hold",
+          "병 받쳐 들기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "fill",
+          "그릇 채우기"
+        ],
+        [
+          "offer",
+          "병 건네듯 내밀기"
+        ],
+        [
+          "wipe",
+          "병 입구 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "ark-noah",
+      "name": "노아의 방주",
+      "family": "boat",
+      "behavior": {
+        "category": "boat",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "row",
+          "노 젓기"
+        ],
+        [
+          "balance",
+          "앉아 균형 잡기"
+        ],
+        [
+          "look",
+          "먼 곳 바라보기"
+        ],
+        [
+          "rope",
+          "밧줄 정리하기"
+        ],
+        [
+          "reins",
+          "밧줄 당기기"
+        ],
+        [
+          "wave",
+          "배 밖으로 손 흔들기"
+        ],
+        [
+          "grip",
+          "가장자리를 양손으로 잡기"
+        ],
+        [
+          "repair",
+          "연결 부위 손질하기"
+        ],
+        [
+          "wipe",
+          "나무 표면 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boat",
+        "relationship": "유사 구조·쓰임새: boat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "ark-covenant",
+      "name": "언약궤",
+      "family": "chest",
+      "behavior": {
+        "category": "chest",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "observe",
+          "곁에서 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "hands",
+          "손 모으기"
+        ],
+        [
+          "look",
+          "멀리서 살펴보기"
+        ],
+        [
+          "step-back",
+          "물러서기"
+        ],
+        [
+          "kneel",
+          "곁에 무릎 굽히기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-chest",
+        "relationship": "유사 구조·쓰임새: chest",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "altar",
+      "name": "제단",
+      "family": "altar",
+      "behavior": {
+        "category": "altar",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "kneel",
+          "곁에서 무릎 굽히기"
+        ],
+        [
+          "arrange",
+          "주변 정리하기"
+        ],
+        [
+          "observe",
+          "두 손 모아 서기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "hands",
+          "손 모아 서기"
+        ],
+        [
+          "step-back",
+          "물러나 예를 갖추기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--campfire",
+        "relationship": "유사 구조·쓰임새: campfire",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "incense-altar",
+      "name": "분향단",
+      "family": "altar",
+      "behavior": {
+        "category": "altar",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "kneel",
+          "곁에서 무릎 굽히기"
+        ],
+        [
+          "arrange",
+          "주변 정리하기"
+        ],
+        [
+          "observe",
+          "두 손 모아 서기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "hands",
+          "손 모아 서기"
+        ],
+        [
+          "step-back",
+          "물러나 예를 갖추기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--campfire",
+        "relationship": "유사 구조·쓰임새: campfire",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "tabernacle",
+      "name": "성막",
+      "family": "tent",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "tent",
+      "name": "장막",
+      "family": "tent",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "temple",
+      "name": "성전",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "gate",
+      "name": "성문",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "wall",
+      "name": "성벽",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "tower",
+      "name": "망대",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "house",
+      "name": "집",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "palace",
+      "name": "왕궁",
+      "family": "building",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "입구 바라보기"
+        ],
+        [
+          "inspect",
+          "벽 살피기"
+        ],
+        [
+          "rest",
+          "곁에서 쉬기"
+        ],
+        [
+          "point",
+          "먼 곳 짚어보기"
+        ],
+        [
+          "knock",
+          "입구 두드리기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--door",
+        "relationship": "유사 구조·쓰임새: door",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정 벽체·열리는 부분",
+      "keyposes": "접근→손 대기→문/부속만 움직임→원위치",
+      "acceptance": "건물 전체는 이동·축소하지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "stable",
+      "name": "구유",
+      "family": "chest",
+      "behavior": {
+        "category": "basket",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "fill",
+          "바구니에 담기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "hold",
+          "바구니 받치기"
+        ],
+        [
+          "place",
+          "바구니 내려놓기"
+        ],
+        [
+          "sort",
+          "내용물 고르기"
+        ],
+        [
+          "offer",
+          "바구니 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-chest",
+        "relationship": "유사 구조·쓰임새: chest",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "tomb",
+      "name": "무덤",
+      "family": "stone",
+      "behavior": {
+        "category": "stone",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "돌 앞에 서서 보기"
+        ],
+        [
+          "inspect",
+          "새겨진 흔적 살피기"
+        ],
+        [
+          "hands",
+          "두 손 모아 서기"
+        ],
+        [
+          "bow",
+          "조용히 고개 숙이기"
+        ],
+        [
+          "point",
+          "돌을 가리키기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stone",
+        "relationship": "유사 구조·쓰임새: stone",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "staff",
+      "name": "지팡이",
+      "family": "staff",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lean-staff",
+          "지팡이 짚고 기대기"
+        ],
+        [
+          "plant-staff",
+          "땅에 지팡이 짚기"
+        ],
+        [
+          "point",
+          "지팡이로 앞을 가리키기"
+        ],
+        [
+          "raise",
+          "지팡이 들어 올리기"
+        ],
+        [
+          "wipe",
+          "손잡이 닦기"
+        ],
+        [
+          "lower",
+          "지팡이 내려 쥐기"
+        ],
+        [
+          "grip",
+          "양손으로 자루 잡기"
+        ],
+        [
+          "turn",
+          "자루를 돌려 살피기"
+        ],
+        [
+          "brace",
+          "지팡이를 짚고 몸 지탱하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--stick",
+        "relationship": "유사 구조·쓰임새: stick",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "rod",
+      "name": "막대기",
+      "family": "staff",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lean-staff",
+          "지팡이 짚고 기대기"
+        ],
+        [
+          "plant-staff",
+          "땅에 지팡이 짚기"
+        ],
+        [
+          "point",
+          "지팡이로 앞을 가리키기"
+        ],
+        [
+          "raise",
+          "지팡이 들어 올리기"
+        ],
+        [
+          "wipe",
+          "손잡이 닦기"
+        ],
+        [
+          "lower",
+          "지팡이 내려 쥐기"
+        ],
+        [
+          "grip",
+          "양손으로 자루 잡기"
+        ],
+        [
+          "turn",
+          "자루를 돌려 살피기"
+        ],
+        [
+          "brace",
+          "지팡이를 짚고 몸 지탱하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--stick",
+        "relationship": "유사 구조·쓰임새: stick",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "sling",
+      "name": "물매",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sling",
+          "돌 넣고 물매 돌려 던지기"
+        ],
+        [
+          "load-sling",
+          "주머니에 돌 넣기"
+        ],
+        [
+          "spin-sling",
+          "물매 한 바퀴 돌리기"
+        ],
+        [
+          "sling-low",
+          "낮게 돌려 던지기"
+        ],
+        [
+          "tie",
+          "물매 끈 묶기"
+        ],
+        [
+          "fold",
+          "끈 접어 정리하기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bow",
+        "relationship": "유사 구조·쓰임새: bow",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "sword",
+      "name": "칼",
+      "family": "weapon",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "guard",
+          "무기를 세워 자세 잡기"
+        ],
+        [
+          "thrust",
+          "빈 쪽으로 찌르기 연습"
+        ],
+        [
+          "swing",
+          "빈 쪽으로 휘두르기"
+        ],
+        [
+          "polish",
+          "날을 천으로 닦기"
+        ],
+        [
+          "draw-weapon",
+          "무기를 빼 들어 보기"
+        ],
+        [
+          "lower",
+          "무기 낮춰 쉬기"
+        ],
+        [
+          "grip",
+          "손잡이 단단히 쥐기"
+        ],
+        [
+          "brace",
+          "몸 낮추고 자세 버티기"
+        ],
+        [
+          "point",
+          "안전한 빈 방향 가리키기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sword",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·날/촉",
+      "keyposes": "준비→겨냥/들기→발사/베기→회수",
+      "acceptance": "큰 각도 변화와 진행 방향이 일치해야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "spear",
+      "name": "창",
+      "family": "weapon",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "guard",
+          "무기를 세워 자세 잡기"
+        ],
+        [
+          "thrust",
+          "빈 쪽으로 찌르기 연습"
+        ],
+        [
+          "swing",
+          "빈 쪽으로 휘두르기"
+        ],
+        [
+          "polish",
+          "날을 천으로 닦기"
+        ],
+        [
+          "draw-weapon",
+          "무기를 빼 들어 보기"
+        ],
+        [
+          "lower",
+          "무기 낮춰 쉬기"
+        ],
+        [
+          "grip",
+          "손잡이 단단히 쥐기"
+        ],
+        [
+          "brace",
+          "몸 낮추고 자세 버티기"
+        ],
+        [
+          "point",
+          "안전한 빈 방향 가리키기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--trident",
+        "relationship": "유사 구조·쓰임새: trident",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·날/촉",
+      "keyposes": "준비→겨냥/들기→발사/베기→회수",
+      "acceptance": "큰 각도 변화와 진행 방향이 일치해야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "javelin",
+      "name": "단창",
+      "family": "weapon",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "guard",
+          "무기를 세워 자세 잡기"
+        ],
+        [
+          "thrust",
+          "빈 쪽으로 찌르기 연습"
+        ],
+        [
+          "swing",
+          "빈 쪽으로 휘두르기"
+        ],
+        [
+          "polish",
+          "날을 천으로 닦기"
+        ],
+        [
+          "draw-weapon",
+          "무기를 빼 들어 보기"
+        ],
+        [
+          "lower",
+          "무기 낮춰 쉬기"
+        ],
+        [
+          "grip",
+          "손잡이 단단히 쥐기"
+        ],
+        [
+          "brace",
+          "몸 낮추고 자세 버티기"
+        ],
+        [
+          "point",
+          "안전한 빈 방향 가리키기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--trident",
+        "relationship": "유사 구조·쓰임새: trident",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·날/촉",
+      "keyposes": "준비→겨냥/들기→발사/베기→회수",
+      "acceptance": "큰 각도 변화와 진행 방향이 일치해야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "bow",
+      "name": "활",
+      "family": "weapon",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "nock",
+          "화살을 활에 메기기"
+        ],
+        [
+          "aim",
+          "빈 쪽으로 활 겨누기"
+        ],
+        [
+          "draw",
+          "활시위를 당겨 버티기"
+        ],
+        [
+          "shoot",
+          "화살 쏘기"
+        ],
+        [
+          "unstring",
+          "활시위 풀어 정리하기"
+        ],
+        [
+          "inspect",
+          "활대와 시위 살피기"
+        ],
+        [
+          "wipe",
+          "활대와 화살대 닦기"
+        ],
+        [
+          "tie",
+          "깃과 끈 매듭 조이기"
+        ],
+        [
+          "guard",
+          "빈 쪽을 향해 대기하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bow",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·날/촉",
+      "keyposes": "준비→겨냥/들기→발사/베기→회수",
+      "acceptance": "큰 각도 변화와 진행 방향이 일치해야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "arrow",
+      "name": "화살",
+      "family": "weapon",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "nock",
+          "화살을 활에 메기기"
+        ],
+        [
+          "aim",
+          "화살 끝을 안전한 빈 쪽에 두기"
+        ],
+        [
+          "shoot",
+          "활에 메운 화살 쏘기"
+        ],
+        [
+          "retrieve",
+          "쏜 화살 거두기"
+        ],
+        [
+          "fletch",
+          "화살 깃 살펴보기"
+        ],
+        [
+          "count",
+          "화살 수 세기"
+        ],
+        [
+          "wipe",
+          "활대와 화살대 닦기"
+        ],
+        [
+          "tie",
+          "깃과 끈 매듭 조이기"
+        ],
+        [
+          "guard",
+          "빈 쪽을 향해 대기하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--arrow",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·날/촉",
+      "keyposes": "준비→겨냥/들기→발사/베기→회수",
+      "acceptance": "큰 각도 변화와 진행 방향이 일치해야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "shield",
+      "name": "방패",
+      "family": "shield",
+      "behavior": {
+        "category": "weapon",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "guard",
+          "방패 들어 몸 가리기"
+        ],
+        [
+          "brace",
+          "방패 뒤에서 버티기"
+        ],
+        [
+          "raise",
+          "방패 높이 들기"
+        ],
+        [
+          "polish",
+          "방패 표면 닦기"
+        ],
+        [
+          "turn",
+          "방패 방향 돌리기"
+        ],
+        [
+          "lower",
+          "방패 내려 쉬기"
+        ],
+        [
+          "grip",
+          "손잡이 단단히 쥐기"
+        ],
+        [
+          "point",
+          "안전한 빈 방향 가리키기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--shield",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "helmet",
+      "name": "투구",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "머리에 맞춰 쓰기"
+        ],
+        [
+          "remove",
+          "머리에서 벗기"
+        ],
+        [
+          "smooth",
+          "머리에 고쳐 쓰기"
+        ],
+        [
+          "polish",
+          "겉면 닦기"
+        ],
+        [
+          "hold",
+          "두 손으로 받쳐 들기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "armor",
+      "name": "갑옷",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "chariot",
+      "name": "병거",
+      "family": "cart",
+      "behavior": {
+        "category": "cart",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "reins",
+          "고삐 잡기"
+        ],
+        [
+          "inspect",
+          "바퀴 살피기"
+        ],
+        [
+          "sit",
+          "병거에 앉기"
+        ],
+        [
+          "balance",
+          "발판 딛고 균형 잡기"
+        ],
+        [
+          "repair",
+          "바퀴 손질하기"
+        ],
+        [
+          "wave",
+          "병거에서 손 흔들기"
+        ],
+        [
+          "grip",
+          "가장자리를 양손으로 잡기"
+        ],
+        [
+          "wipe",
+          "나무 표면 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--minecart",
+        "relationship": "유사 구조·쓰임새: minecart",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "wheel",
+      "name": "바퀴",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ],
+        [
+          "pull",
+          "몸 기울여 당기기"
+        ],
+        [
+          "turn",
+          "테두리 돌려 살피기"
+        ],
+        [
+          "repair",
+          "연결 부위 고치기"
+        ],
+        [
+          "wipe",
+          "표면 닦기"
+        ],
+        [
+          "step-back",
+          "물러서 살펴보기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--minecart",
+        "relationship": "유사 구조·쓰임새: minecart",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "chain",
+      "name": "쇠사슬",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lift-chain",
+          "양손으로 들어 무게 재기"
+        ],
+        [
+          "pull",
+          "연결 고리 당겨 보기"
+        ],
+        [
+          "coil",
+          "사슬 가지런히 모으기"
+        ],
+        [
+          "unlock",
+          "잠금장치 열어 보기"
+        ],
+        [
+          "inspect",
+          "고리 살피기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "fetter",
+      "name": "차꼬",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lift-chain",
+          "양손으로 들어 무게 재기"
+        ],
+        [
+          "pull",
+          "연결 고리 당겨 보기"
+        ],
+        [
+          "coil",
+          "사슬 가지런히 모으기"
+        ],
+        [
+          "unlock",
+          "잠금장치 열어 보기"
+        ],
+        [
+          "inspect",
+          "고리 살피기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "rope",
+      "name": "밧줄",
+      "family": "tool",
+      "behavior": {
+        "category": "rope",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "coil",
+          "밧줄을 둥글게 감기"
+        ],
+        [
+          "uncoil",
+          "감긴 밧줄 풀기"
+        ],
+        [
+          "tie",
+          "매듭 묶기"
+        ],
+        [
+          "untie",
+          "매듭 풀기"
+        ],
+        [
+          "pull",
+          "양손으로 줄 당기기"
+        ],
+        [
+          "lower-rope",
+          "줄을 아래로 내려 주기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://github.com/Donitzo/godot-pixel-rope",
+        "relationship": "동일 재질·픽셀 가닥 예시",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "연결 가닥·코일·늘어진 끝",
+      "keyposes": "잡기→느슨한 줄→팽팽한 줄/매듭→코일",
+      "acceptance": "가닥이 끊기지 않고 늘어진 구간과 장력이 구분되어야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "anchor",
+      "name": "닻",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ],
+        [
+          "pull",
+          "몸 기울여 당기기"
+        ],
+        [
+          "turn",
+          "테두리 돌려 살피기"
+        ],
+        [
+          "repair",
+          "연결 부위 고치기"
+        ],
+        [
+          "wipe",
+          "표면 닦기"
+        ],
+        [
+          "step-back",
+          "물러서 살펴보기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "sail",
+      "name": "돛",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "spread",
+          "천을 양옆으로 펼치기"
+        ],
+        [
+          "pull",
+          "천 아래쪽 당기기"
+        ],
+        [
+          "smooth",
+          "주름 펴기"
+        ],
+        [
+          "tie",
+          "천 끝 묶기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서 보기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "oar",
+      "name": "노",
+      "family": "staff",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "row",
+          "노를 앞으로 뻗어 젓기"
+        ],
+        [
+          "back-row",
+          "노를 반대로 젓기"
+        ],
+        [
+          "lift-oar",
+          "노 들어 물 털기"
+        ],
+        [
+          "reins",
+          "노를 양손으로 당기기"
+        ],
+        [
+          "wipe",
+          "노자루 닦기"
+        ],
+        [
+          "place",
+          "노 내려놓기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "grip",
+          "손잡이를 양손으로 다시 잡기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--stick",
+        "relationship": "유사 구조·쓰임새: stick",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "net",
+      "name": "그물",
+      "family": "net",
+      "behavior": {
+        "category": "net",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "spread",
+          "그물 펴기"
+        ],
+        [
+          "mend",
+          "그물 손질하기"
+        ],
+        [
+          "fold",
+          "그물 접기"
+        ],
+        [
+          "cast",
+          "그물 뻗기"
+        ],
+        [
+          "shake-net",
+          "그물 털기"
+        ],
+        [
+          "tie",
+          "그물 매듭 묶기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--string",
+        "relationship": "유사 구조·쓰임새: string",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "hook",
+      "name": "낚시",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "cast-line",
+          "낚싯줄 던지기"
+        ],
+        [
+          "wait-fish",
+          "줄 잡고 기다리기"
+        ],
+        [
+          "reel",
+          "줄 당겨 올리기"
+        ],
+        [
+          "bait",
+          "바늘에 미끼 달기"
+        ],
+        [
+          "untie",
+          "엉킨 줄 풀기"
+        ],
+        [
+          "coil",
+          "낚싯줄 감기"
+        ],
+        [
+          "sort",
+          "엉킨 부분 나누어 정리하기"
+        ],
+        [
+          "stretch",
+          "양손을 벌려 길이 확인하기"
+        ],
+        [
+          "repair",
+          "연결 매듭 손질하기"
+        ],
+        [
+          "grip",
+          "양손으로 단단히 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "basket",
+      "name": "바구니",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "fill",
+          "바구니에 담기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "hold",
+          "바구니 받치기"
+        ],
+        [
+          "place",
+          "바구니 내려놓기"
+        ],
+        [
+          "sort",
+          "내용물 고르기"
+        ],
+        [
+          "offer",
+          "바구니 내밀기"
+        ],
+        [
+          "count",
+          "안의 물건 하나씩 세기"
+        ],
+        [
+          "cover",
+          "내용물 위를 덮기"
+        ],
+        [
+          "close",
+          "입구를 여며 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-chest",
+        "relationship": "유사 구조·쓰임새: chest",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "jar",
+      "name": "항아리",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "fill",
+          "항아리에 물 담기"
+        ],
+        [
+          "pour",
+          "항아리 물을 그릇에 붓기"
+        ],
+        [
+          "hold",
+          "항아리를 두 손으로 받치기"
+        ],
+        [
+          "carry",
+          "항아리를 옮기기"
+        ],
+        [
+          "cap",
+          "항아리 입구 덮기"
+        ],
+        [
+          "wipe",
+          "항아리 겉면 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ],
+        [
+          "offer",
+          "그릇을 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "pot",
+      "name": "솥",
+      "family": "vessel",
+      "behavior": {
+        "category": "cooking",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "stir",
+          "솥 안을 천천히 젓기"
+        ],
+        [
+          "warm",
+          "불기운 살피기"
+        ],
+        [
+          "serve",
+          "음식 떠내기"
+        ],
+        [
+          "inspect",
+          "익는 상태 살피기"
+        ],
+        [
+          "fan",
+          "불 앞에 부채질하기"
+        ],
+        [
+          "taste",
+          "조금 떠서 맛보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "bowl",
+      "name": "대접",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "drink",
+          "그릇을 들어 마시기"
+        ],
+        [
+          "sip",
+          "두 손으로 받쳐 조금씩 마시기"
+        ],
+        [
+          "scoop",
+          "물을 떠 옮기기"
+        ],
+        [
+          "pour",
+          "다른 그릇에 나누어 붓기"
+        ],
+        [
+          "wash",
+          "손끝을 씻기"
+        ],
+        [
+          "fill",
+          "그릇에 물 채우기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ],
+        [
+          "wipe",
+          "흐른 내용물 닦기"
+        ],
+        [
+          "offer",
+          "그릇을 앞으로 내밀기"
+        ],
+        [
+          "cap",
+          "입구 마개 열기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "cup",
+      "name": "잔",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "drink",
+          "잔을 들어 물 마시기"
+        ],
+        [
+          "sip",
+          "잔을 두 손으로 받쳐 마시기"
+        ],
+        [
+          "offer",
+          "잔을 다른 이에게 내밀기"
+        ],
+        [
+          "pour",
+          "잔에 물 따르기"
+        ],
+        [
+          "fill",
+          "빈 잔 채우기"
+        ],
+        [
+          "wipe",
+          "잔 가장자리 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ],
+        [
+          "cap",
+          "입구 마개 열기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "pitcher",
+      "name": "주전자",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "pour",
+          "주전자 물을 잔에 따르기"
+        ],
+        [
+          "fill",
+          "주전자에 물 채우기"
+        ],
+        [
+          "hold",
+          "손잡이를 잡고 받치기"
+        ],
+        [
+          "offer",
+          "물을 담아 내밀기"
+        ],
+        [
+          "cap",
+          "주전자 입구 덮기"
+        ],
+        [
+          "wipe",
+          "주전자 입구 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "basin",
+      "name": "대야",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "wash",
+          "대야 물로 손 씻기"
+        ],
+        [
+          "rinse",
+          "손에 물을 끼얹어 헹구기"
+        ],
+        [
+          "fill",
+          "대야에 물 붓기"
+        ],
+        [
+          "pour",
+          "사용한 물 비우기"
+        ],
+        [
+          "scoop",
+          "손으로 물 떠 보기"
+        ],
+        [
+          "wipe",
+          "대야 가장자리 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "lamp",
+      "name": "등잔",
+      "family": "lamp",
+      "behavior": {
+        "category": "lamp",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "tend",
+          "등불 살피기"
+        ],
+        [
+          "shield",
+          "손으로 바람 가리기"
+        ],
+        [
+          "inspect",
+          "등잔 심지 살피기"
+        ],
+        [
+          "hold",
+          "불빛 곁에 손 모으기"
+        ],
+        [
+          "trim",
+          "심지 정리하기"
+        ],
+        [
+          "warm",
+          "불빛 곁에서 손 녹이기"
+        ],
+        [
+          "fan",
+          "안전한 거리에서 바람 보내기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--lantern",
+        "relationship": "유사 구조·쓰임새: lantern",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "lampstand",
+      "name": "등잔대",
+      "family": "lamp",
+      "behavior": {
+        "category": "lamp",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "tend",
+          "등불 살피기"
+        ],
+        [
+          "shield",
+          "손으로 바람 가리기"
+        ],
+        [
+          "inspect",
+          "등잔 심지 살피기"
+        ],
+        [
+          "hold",
+          "불빛 곁에 손 모으기"
+        ],
+        [
+          "trim",
+          "심지 정리하기"
+        ],
+        [
+          "warm",
+          "불빛 곁에서 손 녹이기"
+        ],
+        [
+          "fan",
+          "안전한 거리에서 바람 보내기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--lantern",
+        "relationship": "유사 구조·쓰임새: lantern",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "torch",
+      "name": "횃불",
+      "family": "lamp",
+      "behavior": {
+        "category": "lamp",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "tend",
+          "등불 살피기"
+        ],
+        [
+          "shield",
+          "손으로 바람 가리기"
+        ],
+        [
+          "inspect",
+          "등잔 심지 살피기"
+        ],
+        [
+          "hold",
+          "불빛 곁에 손 모으기"
+        ],
+        [
+          "trim",
+          "심지 정리하기"
+        ],
+        [
+          "warm",
+          "불빛 곁에서 손 녹이기"
+        ],
+        [
+          "fan",
+          "안전한 거리에서 바람 보내기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--candle",
+        "relationship": "유사 구조·쓰임새: candle",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "candle",
+      "name": "초",
+      "family": "lamp",
+      "behavior": {
+        "category": "lamp",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "tend",
+          "등불 살피기"
+        ],
+        [
+          "shield",
+          "손으로 바람 가리기"
+        ],
+        [
+          "inspect",
+          "등잔 심지 살피기"
+        ],
+        [
+          "hold",
+          "불빛 곁에 손 모으기"
+        ],
+        [
+          "trim",
+          "심지 정리하기"
+        ],
+        [
+          "warm",
+          "불빛 곁에서 손 녹이기"
+        ],
+        [
+          "fan",
+          "안전한 거리에서 바람 보내기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--candle",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "censer",
+      "name": "향로",
+      "family": "vessel",
+      "behavior": {
+        "category": "oil",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "waft",
+          "향을 가볍게 맡기"
+        ],
+        [
+          "pour",
+          "조금 덜어 내기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "offer",
+          "두 손으로 받쳐 내밀기"
+        ],
+        [
+          "wipe",
+          "그릇 닦기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "raise",
+          "향 그릇을 높이 받치기"
+        ],
+        [
+          "close",
+          "뚜껑 덮어 정리하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--campfire",
+        "relationship": "유사 구조·쓰임새: campfire",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "incense",
+      "name": "향",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "waft",
+          "향을 가볍게 맡기"
+        ],
+        [
+          "pour",
+          "조금 덜어 내기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "offer",
+          "두 손으로 받쳐 내밀기"
+        ],
+        [
+          "wipe",
+          "그릇 닦기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "raise",
+          "향 그릇을 높이 받치기"
+        ],
+        [
+          "close",
+          "뚜껑 덮어 정리하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--campfire",
+        "relationship": "유사 구조·쓰임새: campfire",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "myrrh",
+      "name": "몰약",
+      "family": "vessel",
+      "behavior": {
+        "category": "oil",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "waft",
+          "향을 가볍게 맡기"
+        ],
+        [
+          "pour",
+          "조금 덜어 내기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "offer",
+          "두 손으로 받쳐 내밀기"
+        ],
+        [
+          "wipe",
+          "그릇 닦기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--potion",
+        "relationship": "유사 구조·쓰임새: potion",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "perfume",
+      "name": "향유",
+      "family": "vessel",
+      "behavior": {
+        "category": "oil",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "waft",
+          "향을 가볍게 맡기"
+        ],
+        [
+          "pour",
+          "조금 덜어 내기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "offer",
+          "두 손으로 받쳐 내밀기"
+        ],
+        [
+          "wipe",
+          "그릇 닦기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--potion",
+        "relationship": "유사 구조·쓰임새: potion",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "bread",
+      "name": "떡",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "share",
+          "먹을 것 나누기"
+        ],
+        [
+          "hold",
+          "양식 받아 들기"
+        ],
+        [
+          "prepare",
+          "양식 준비하기"
+        ],
+        [
+          "eat",
+          "한 입 먹기"
+        ],
+        [
+          "break",
+          "작게 떼어 나누기"
+        ],
+        [
+          "offer",
+          "양식 내밀기"
+        ],
+        [
+          "portion",
+          "작은 몫으로 나누기"
+        ],
+        [
+          "serve",
+          "먹을 것을 앞에 놓기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "barley-bread",
+      "name": "보리떡",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "share",
+          "먹을 것 나누기"
+        ],
+        [
+          "hold",
+          "양식 받아 들기"
+        ],
+        [
+          "prepare",
+          "양식 준비하기"
+        ],
+        [
+          "eat",
+          "한 입 먹기"
+        ],
+        [
+          "break",
+          "작게 떼어 나누기"
+        ],
+        [
+          "offer",
+          "양식 내밀기"
+        ],
+        [
+          "portion",
+          "작은 몫으로 나누기"
+        ],
+        [
+          "serve",
+          "먹을 것을 앞에 놓기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "manna",
+      "name": "만나",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "share",
+          "먹을 것 나누기"
+        ],
+        [
+          "hold",
+          "양식 받아 들기"
+        ],
+        [
+          "prepare",
+          "양식 준비하기"
+        ],
+        [
+          "eat",
+          "한 입 먹기"
+        ],
+        [
+          "break",
+          "작게 떼어 나누기"
+        ],
+        [
+          "offer",
+          "양식 내밀기"
+        ],
+        [
+          "portion",
+          "작은 몫으로 나누기"
+        ],
+        [
+          "serve",
+          "먹을 것을 앞에 놓기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "quail",
+      "name": "메추라기",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "fish",
+      "name": "물고기",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "grain",
+      "name": "곡식",
+      "family": "crop",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "숙여 이삭 줍기"
+        ],
+        [
+          "bundle",
+          "이삭 묶기"
+        ],
+        [
+          "inspect",
+          "이삭 살피기"
+        ],
+        [
+          "harvest",
+          "팔 뻗어 거두기"
+        ],
+        [
+          "sow",
+          "씨앗 뿌리기"
+        ],
+        [
+          "thresh",
+          "이삭 털어 모으기"
+        ],
+        [
+          "sort",
+          "거둔 이삭 고르기"
+        ],
+        [
+          "tie",
+          "이삭 묶음 매기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "wheat",
+      "name": "밀",
+      "family": "crop",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "숙여 이삭 줍기"
+        ],
+        [
+          "bundle",
+          "이삭 묶기"
+        ],
+        [
+          "inspect",
+          "이삭 살피기"
+        ],
+        [
+          "harvest",
+          "팔 뻗어 거두기"
+        ],
+        [
+          "sow",
+          "씨앗 뿌리기"
+        ],
+        [
+          "thresh",
+          "이삭 털어 모으기"
+        ],
+        [
+          "sort",
+          "거둔 이삭 고르기"
+        ],
+        [
+          "tie",
+          "이삭 묶음 매기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "barley",
+      "name": "보리",
+      "family": "crop",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "숙여 이삭 줍기"
+        ],
+        [
+          "bundle",
+          "이삭 묶기"
+        ],
+        [
+          "inspect",
+          "이삭 살피기"
+        ],
+        [
+          "harvest",
+          "팔 뻗어 거두기"
+        ],
+        [
+          "sow",
+          "씨앗 뿌리기"
+        ],
+        [
+          "thresh",
+          "이삭 털어 모으기"
+        ],
+        [
+          "sort",
+          "거둔 이삭 고르기"
+        ],
+        [
+          "tie",
+          "이삭 묶음 매기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "seed",
+      "name": "씨앗",
+      "family": "crop",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sow",
+          "손을 벌려 씨 뿌리기"
+        ],
+        [
+          "sprinkle",
+          "씨 조금씩 흩뿌리기"
+        ],
+        [
+          "count",
+          "손바닥에서 씨 세기"
+        ],
+        [
+          "sort",
+          "씨 골라 내기"
+        ],
+        [
+          "gather",
+          "씨앗 주워 담기"
+        ],
+        [
+          "offer",
+          "손바닥에 씨 내밀기"
+        ],
+        [
+          "portion",
+          "손바닥에 조금씩 덜기"
+        ],
+        [
+          "place",
+          "고른 것 따로 놓기"
+        ],
+        [
+          "share",
+          "작은 몫을 나누어 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--seeds",
+        "relationship": "유사 구조·쓰임새: seeds",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "flour",
+      "name": "가루",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "knead",
+          "두 손으로 반죽 주무르기"
+        ],
+        [
+          "press",
+          "손바닥으로 누르기"
+        ],
+        [
+          "fold",
+          "반죽 접어 모으기"
+        ],
+        [
+          "sprinkle",
+          "가루 조금 뿌리기"
+        ],
+        [
+          "portion",
+          "작게 나누기"
+        ],
+        [
+          "cover",
+          "천으로 덮기"
+        ],
+        [
+          "roll",
+          "손바닥으로 굴려 모으기"
+        ],
+        [
+          "divide",
+          "반죽을 두 몫으로 가르기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "dough",
+      "name": "반죽",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "knead",
+          "두 손으로 반죽 주무르기"
+        ],
+        [
+          "press",
+          "손바닥으로 누르기"
+        ],
+        [
+          "fold",
+          "반죽 접어 모으기"
+        ],
+        [
+          "sprinkle",
+          "가루 조금 뿌리기"
+        ],
+        [
+          "portion",
+          "작게 나누기"
+        ],
+        [
+          "cover",
+          "천으로 덮기"
+        ],
+        [
+          "roll",
+          "손바닥으로 굴려 모으기"
+        ],
+        [
+          "divide",
+          "반죽을 두 몫으로 가르기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "leaven",
+      "name": "누룩",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "knead",
+          "두 손으로 반죽 주무르기"
+        ],
+        [
+          "press",
+          "손바닥으로 누르기"
+        ],
+        [
+          "fold",
+          "반죽 접어 모으기"
+        ],
+        [
+          "sprinkle",
+          "가루 조금 뿌리기"
+        ],
+        [
+          "portion",
+          "작게 나누기"
+        ],
+        [
+          "cover",
+          "천으로 덮기"
+        ],
+        [
+          "roll",
+          "손바닥으로 굴려 모으기"
+        ],
+        [
+          "divide",
+          "반죽을 두 몫으로 가르기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "salt",
+      "name": "소금",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "fill",
+          "바구니에 담기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "hold",
+          "바구니 받치기"
+        ],
+        [
+          "place",
+          "바구니 내려놓기"
+        ],
+        [
+          "sort",
+          "내용물 고르기"
+        ],
+        [
+          "offer",
+          "바구니 내밀기"
+        ],
+        [
+          "portion",
+          "손바닥에 조금씩 덜기"
+        ],
+        [
+          "share",
+          "작은 몫을 나누어 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sugar",
+        "relationship": "유사 구조·쓰임새: sugar",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "honey",
+      "name": "꿀",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "taste",
+          "손끝으로 꿀 맛보기"
+        ],
+        [
+          "pour",
+          "꿀 조금 덜기"
+        ],
+        [
+          "offer",
+          "꿀 그릇 내밀기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "close",
+          "마개 닫기"
+        ],
+        [
+          "wipe",
+          "그릇 가장자리 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--honey-bottle",
+        "relationship": "유사 구조·쓰임새: honey-bottle",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "milk",
+      "name": "젖",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "drink",
+          "잔에 담아 마시기"
+        ],
+        [
+          "pour",
+          "잔에 따르기"
+        ],
+        [
+          "offer",
+          "잔 내밀어 나누기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "hold",
+          "그릇 두 손으로 받치기"
+        ],
+        [
+          "wipe",
+          "그릇 가장자리 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "water-supply",
+      "name": "물",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "fill",
+          "그릇에 물을 담기"
+        ],
+        [
+          "pour",
+          "물을 필요한 곳에 붓기"
+        ],
+        [
+          "offer",
+          "물을 건네기"
+        ],
+        [
+          "hold",
+          "물그릇을 받쳐 들기"
+        ],
+        [
+          "drink",
+          "물을 마시기"
+        ],
+        [
+          "wash",
+          "물로 손을 씻기"
+        ],
+        [
+          "rinse",
+          "손끝에 물 끼얹기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-water",
+        "relationship": "유사 구조·쓰임새: water",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "wine",
+      "name": "포도주",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "drink",
+          "잔에 담아 마시기"
+        ],
+        [
+          "pour",
+          "잔에 따르기"
+        ],
+        [
+          "offer",
+          "잔 내밀어 나누기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "hold",
+          "그릇 두 손으로 받치기"
+        ],
+        [
+          "wipe",
+          "그릇 가장자리 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--potion",
+        "relationship": "유사 구조·쓰임새: potion",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "olive-oil",
+      "name": "기름",
+      "family": "vessel",
+      "behavior": {
+        "category": "oil",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "pour",
+          "기름 따르기"
+        ],
+        [
+          "hold",
+          "병 받쳐 들기"
+        ],
+        [
+          "cap",
+          "마개 열기"
+        ],
+        [
+          "fill",
+          "그릇 채우기"
+        ],
+        [
+          "offer",
+          "병 건네듯 내밀기"
+        ],
+        [
+          "wipe",
+          "병 입구 닦기"
+        ],
+        [
+          "close",
+          "마개를 다시 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "grapes",
+      "name": "포도",
+      "family": "plant",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "포도송이 따기"
+        ],
+        [
+          "bundle",
+          "딴 포도 모으기"
+        ],
+        [
+          "inspect",
+          "익은 포도 살피기"
+        ],
+        [
+          "hold",
+          "송이 두 손으로 받치기"
+        ],
+        [
+          "offer",
+          "포도송이 내밀기"
+        ],
+        [
+          "place",
+          "바구니에 송이 놓기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "vineyard",
+      "name": "포도원",
+      "family": "plant",
+      "behavior": {
+        "category": "field",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "gather",
+          "포도송이 따기"
+        ],
+        [
+          "bundle",
+          "딴 포도 모으기"
+        ],
+        [
+          "inspect",
+          "익은 포도 살피기"
+        ],
+        [
+          "hold",
+          "송이 두 손으로 받치기"
+        ],
+        [
+          "offer",
+          "포도송이 내밀기"
+        ],
+        [
+          "place",
+          "바구니에 송이 놓기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "vine",
+      "name": "포도나무",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살펴보기"
+        ],
+        [
+          "fruit",
+          "열매 살피기"
+        ],
+        [
+          "trunk",
+          "나무에 손 대기"
+        ],
+        [
+          "shake",
+          "나무 흔들기"
+        ],
+        [
+          "kick",
+          "줄기 툭 차기"
+        ],
+        [
+          "bonk",
+          "열매 떨어져 머리에 콩"
+        ],
+        [
+          "gather",
+          "손 뻗어 열매 거두기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ],
+        [
+          "offer",
+          "열매를 손에 받쳐 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "fig-tree",
+      "name": "무화과나무",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살펴보기"
+        ],
+        [
+          "fruit",
+          "열매 살피기"
+        ],
+        [
+          "trunk",
+          "나무에 손 대기"
+        ],
+        [
+          "shake",
+          "나무 흔들기"
+        ],
+        [
+          "kick",
+          "줄기 툭 차기"
+        ],
+        [
+          "bonk",
+          "열매 떨어져 머리에 콩"
+        ],
+        [
+          "gather",
+          "손 뻗어 열매 거두기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ],
+        [
+          "offer",
+          "열매를 손에 받쳐 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "fig",
+      "name": "무화과",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "share",
+          "먹을 것 나누기"
+        ],
+        [
+          "hold",
+          "양식 받아 들기"
+        ],
+        [
+          "prepare",
+          "양식 준비하기"
+        ],
+        [
+          "eat",
+          "한 입 먹기"
+        ],
+        [
+          "break",
+          "작게 떼어 나누기"
+        ],
+        [
+          "offer",
+          "양식 내밀기"
+        ],
+        [
+          "portion",
+          "작은 몫으로 나누기"
+        ],
+        [
+          "serve",
+          "먹을 것을 앞에 놓기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "olive-tree",
+      "name": "감람나무",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살펴보기"
+        ],
+        [
+          "fruit",
+          "열매 살피기"
+        ],
+        [
+          "trunk",
+          "나무에 손 대기"
+        ],
+        [
+          "shake",
+          "나무 흔들기"
+        ],
+        [
+          "kick",
+          "줄기 툭 차기"
+        ],
+        [
+          "bonk",
+          "열매 떨어져 머리에 콩"
+        ],
+        [
+          "gather",
+          "손 뻗어 열매 거두기"
+        ],
+        [
+          "sort",
+          "거둔 열매 고르기"
+        ],
+        [
+          "offer",
+          "열매를 손에 받쳐 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "palm",
+      "name": "종려나무",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살펴보기"
+        ],
+        [
+          "fruit",
+          "열매 살피기"
+        ],
+        [
+          "trunk",
+          "나무에 손 대기"
+        ],
+        [
+          "shake",
+          "나무 흔들기"
+        ],
+        [
+          "kick",
+          "줄기 툭 차기"
+        ],
+        [
+          "bonk",
+          "열매 떨어져 머리에 콩"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "cedar",
+      "name": "백향목",
+      "family": "plant",
+      "behavior": {
+        "category": "tree",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "shade",
+          "그늘에서 쉬기"
+        ],
+        [
+          "leaves",
+          "잎 살피기"
+        ],
+        [
+          "trunk",
+          "줄기에 손 대기"
+        ],
+        [
+          "inspect",
+          "나무껍질 살피기"
+        ],
+        [
+          "look",
+          "위로 올려다보기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "hyssop",
+      "name": "우슬초",
+      "family": "plant",
+      "behavior": {
+        "category": "bush",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "observe",
+          "몸 숙여 살펴보기"
+        ],
+        [
+          "kneel",
+          "무릎 꿇기"
+        ],
+        [
+          "hands",
+          "두 손 모으기"
+        ],
+        [
+          "lean",
+          "가까이 살펴보기"
+        ],
+        [
+          "leaves",
+          "잎을 살피기"
+        ],
+        [
+          "step-back",
+          "뒤로 물러나 바라보기"
+        ],
+        [
+          "trunk",
+          "줄기를 손으로 짚기"
+        ],
+        [
+          "shade",
+          "곁에 낮게 앉아 쉬기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "reed",
+      "name": "갈대",
+      "family": "plant",
+      "behavior": {
+        "category": "bush",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "observe",
+          "몸 숙여 살펴보기"
+        ],
+        [
+          "kneel",
+          "무릎 꿇기"
+        ],
+        [
+          "hands",
+          "두 손 모으기"
+        ],
+        [
+          "lean",
+          "가까이 살펴보기"
+        ],
+        [
+          "leaves",
+          "잎을 살피기"
+        ],
+        [
+          "step-back",
+          "뒤로 물러나 바라보기"
+        ],
+        [
+          "trunk",
+          "줄기를 손으로 짚기"
+        ],
+        [
+          "shade",
+          "곁에 낮게 앉아 쉬기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "lily",
+      "name": "백합",
+      "family": "plant",
+      "behavior": {
+        "category": "bush",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "observe",
+          "몸 숙여 살펴보기"
+        ],
+        [
+          "kneel",
+          "무릎 꿇기"
+        ],
+        [
+          "hands",
+          "두 손 모으기"
+        ],
+        [
+          "lean",
+          "가까이 살펴보기"
+        ],
+        [
+          "leaves",
+          "잎을 살피기"
+        ],
+        [
+          "step-back",
+          "뒤로 물러나 바라보기"
+        ],
+        [
+          "trunk",
+          "줄기를 손으로 짚기"
+        ],
+        [
+          "shade",
+          "곁에 낮게 앉아 쉬기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--sweet-berries",
+        "relationship": "유사 구조·쓰임새: sweet-berries",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "줄기·가지·열매",
+      "keyposes": "접근→가지 접촉→잎 흔들림/열매 분리→안정",
+      "acceptance": "줄기 위치를 유지하고 끝부분만 반응한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "mustard",
+      "name": "겨자씨",
+      "family": "crop",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sow",
+          "손을 벌려 씨 뿌리기"
+        ],
+        [
+          "sprinkle",
+          "씨 조금씩 흩뿌리기"
+        ],
+        [
+          "count",
+          "손바닥에서 씨 세기"
+        ],
+        [
+          "sort",
+          "씨 골라 내기"
+        ],
+        [
+          "gather",
+          "씨앗 주워 담기"
+        ],
+        [
+          "offer",
+          "손바닥에 씨 내밀기"
+        ],
+        [
+          "portion",
+          "손바닥에 조금씩 덜기"
+        ],
+        [
+          "place",
+          "고른 것 따로 놓기"
+        ],
+        [
+          "share",
+          "작은 몫을 나누어 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--seeds",
+        "relationship": "유사 구조·쓰임새: seeds",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "이삭 끝·낟알·묶음",
+      "keyposes": "손이 이삭에 닿음→잘린 이삭이 손에 모임→끈으로 묶임",
+      "acceptance": "자르기 전후의 이삭과 묶음이 구분되어야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "fruit",
+      "name": "열매",
+      "family": "food",
+      "behavior": {
+        "category": "food",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "share",
+          "먹을 것 나누기"
+        ],
+        [
+          "hold",
+          "양식 받아 들기"
+        ],
+        [
+          "prepare",
+          "양식 준비하기"
+        ],
+        [
+          "eat",
+          "한 입 먹기"
+        ],
+        [
+          "break",
+          "작게 떼어 나누기"
+        ],
+        [
+          "offer",
+          "양식 내밀기"
+        ],
+        [
+          "portion",
+          "작은 몫으로 나누기"
+        ],
+        [
+          "serve",
+          "먹을 것을 앞에 놓기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bread",
+        "relationship": "유사 구조·쓰임새: bread",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "table",
+      "name": "상",
+      "family": "seat",
+      "behavior": {
+        "category": "table",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "arrange",
+          "상 위 정리하기"
+        ],
+        [
+          "serve",
+          "상에 양식 놓기"
+        ],
+        [
+          "wipe",
+          "상 닦기"
+        ],
+        [
+          "inspect",
+          "상 위 살펴보기"
+        ],
+        [
+          "spread",
+          "상에 천 펴기"
+        ],
+        [
+          "share",
+          "상에 양식 나누기"
+        ],
+        [
+          "lap",
+          "앉아 무릎에 손 모으기"
+        ],
+        [
+          "feet",
+          "앉아 발 번갈아 흔들기"
+        ],
+        [
+          "stretch",
+          "앉아 두 팔 펴기"
+        ],
+        [
+          "rise",
+          "자리에서 일어나기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bed",
+        "relationship": "유사 구조·쓰임새: bed",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지면·등받이/다리",
+      "keyposes": "접근→무게 낮추기→앉기/눕기→일어나기",
+      "acceptance": "발과 좌면, 누운 머리와 베개의 접촉을 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "bed",
+      "name": "침상",
+      "family": "seat",
+      "behavior": {
+        "category": "bed",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lie",
+          "반듯이 눕기"
+        ],
+        [
+          "sleep",
+          "누워 잠들기"
+        ],
+        [
+          "side-rest",
+          "옆으로 누워 쉬기"
+        ],
+        [
+          "tuck",
+          "누운 채 이불 여미기"
+        ],
+        [
+          "sit",
+          "가장자리에 앉기"
+        ],
+        [
+          "rise",
+          "몸 일으키기"
+        ],
+        [
+          "stretch",
+          "누운 자리에서 기지개 켜기"
+        ],
+        [
+          "fold",
+          "이불 끝 접어 정리하기"
+        ],
+        [
+          "smooth",
+          "자리의 주름 펴기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bed",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지면·등받이/다리",
+      "keyposes": "접근→무게 낮추기→앉기/눕기→일어나기",
+      "acceptance": "발과 좌면, 누운 머리와 베개의 접촉을 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "mat",
+      "name": "자리",
+      "family": "cloth",
+      "behavior": {
+        "category": "bed",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "lie",
+          "반듯이 눕기"
+        ],
+        [
+          "sleep",
+          "누워 잠들기"
+        ],
+        [
+          "side-rest",
+          "옆으로 누워 쉬기"
+        ],
+        [
+          "tuck",
+          "누운 채 이불 여미기"
+        ],
+        [
+          "sit",
+          "가장자리에 앉기"
+        ],
+        [
+          "rise",
+          "몸 일으키기"
+        ],
+        [
+          "stretch",
+          "누운 자리에서 기지개 켜기"
+        ],
+        [
+          "fold",
+          "이불 끝 접어 정리하기"
+        ],
+        [
+          "smooth",
+          "자리의 주름 펴기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "throne",
+      "name": "보좌",
+      "family": "seat",
+      "behavior": {
+        "category": "bench",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sit",
+          "바로 앉아 쉬기"
+        ],
+        [
+          "feet",
+          "앉아 발 흔들기"
+        ],
+        [
+          "rest",
+          "몸 기대 쉬기"
+        ],
+        [
+          "lap",
+          "무릎에 손 모으기"
+        ],
+        [
+          "stretch",
+          "앉아 기지개 켜기"
+        ],
+        [
+          "rise",
+          "앉았다 일어나기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bed",
+        "relationship": "유사 구조·쓰임새: bed",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지면·등받이/다리",
+      "keyposes": "접근→무게 낮추기→앉기/눕기→일어나기",
+      "acceptance": "발과 좌면, 누운 머리와 베개의 접촉을 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "footstool",
+      "name": "발판",
+      "family": "seat",
+      "behavior": {
+        "category": "bench",
+        "carry": false,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "sit",
+          "바로 앉아 쉬기"
+        ],
+        [
+          "feet",
+          "앉아 발 흔들기"
+        ],
+        [
+          "rest",
+          "몸 기대 쉬기"
+        ],
+        [
+          "lap",
+          "무릎에 손 모으기"
+        ],
+        [
+          "stretch",
+          "앉아 기지개 켜기"
+        ],
+        [
+          "rise",
+          "앉았다 일어나기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bed",
+        "relationship": "유사 구조·쓰임새: bed",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지면·등받이/다리",
+      "keyposes": "접근→무게 낮추기→앉기/눕기→일어나기",
+      "acceptance": "발과 좌면, 누운 머리와 베개의 접촉을 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "cloak",
+      "name": "겉옷",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "robe",
+      "name": "옷",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "sackcloth",
+      "name": "베옷",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "ephod",
+      "name": "에봇",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "breastplate",
+      "name": "흉패",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "몸에 맞춰 매기"
+        ],
+        [
+          "remove",
+          "매듭 풀어 벗기"
+        ],
+        [
+          "smooth",
+          "위치 고쳐 매기"
+        ],
+        [
+          "polish",
+          "겉면 닦기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "offer",
+          "건네기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "crown",
+      "name": "왕관",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "머리에 맞춰 쓰기"
+        ],
+        [
+          "remove",
+          "머리에서 벗기"
+        ],
+        [
+          "smooth",
+          "머리에 고쳐 쓰기"
+        ],
+        [
+          "polish",
+          "겉면 닦기"
+        ],
+        [
+          "hold",
+          "두 손으로 받쳐 들기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "sandal",
+      "name": "신발",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "발을 굽혀 신발 신기"
+        ],
+        [
+          "remove",
+          "발을 굽혀 신발 벗기"
+        ],
+        [
+          "tie",
+          "신 끈 묶기"
+        ],
+        [
+          "wipe",
+          "신발 밑창 닦기"
+        ],
+        [
+          "inspect",
+          "밑창 살피기"
+        ],
+        [
+          "place",
+          "신발 가지런히 놓기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "belt",
+      "name": "띠",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "몸에 맞춰 매기"
+        ],
+        [
+          "remove",
+          "매듭 풀어 벗기"
+        ],
+        [
+          "smooth",
+          "위치 고쳐 매기"
+        ],
+        [
+          "polish",
+          "겉면 닦기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "offer",
+          "건네기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "towel",
+      "name": "수건",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "fold",
+          "천 접기"
+        ],
+        [
+          "smooth",
+          "천 펴기"
+        ],
+        [
+          "hold",
+          "천 받쳐 들기"
+        ],
+        [
+          "wrap",
+          "천 정리하기"
+        ],
+        [
+          "stretch",
+          "천 양끝 펴기"
+        ],
+        [
+          "shake-cloth",
+          "천을 털기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "veil",
+      "name": "휘장",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "spread",
+          "천을 양옆으로 펼치기"
+        ],
+        [
+          "pull",
+          "천 아래쪽 당기기"
+        ],
+        [
+          "smooth",
+          "주름 펴기"
+        ],
+        [
+          "tie",
+          "천 끝 묶기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서 보기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "curtain",
+      "name": "커튼",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "spread",
+          "천을 양옆으로 펼치기"
+        ],
+        [
+          "pull",
+          "천 아래쪽 당기기"
+        ],
+        [
+          "smooth",
+          "주름 펴기"
+        ],
+        [
+          "tie",
+          "천 끝 묶기"
+        ],
+        [
+          "measure",
+          "너비 가늠하기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서 보기"
+        ],
+        [
+          "fold",
+          "한쪽 끝부터 접기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "linen",
+      "name": "세마포",
+      "family": "cloth",
+      "behavior": {
+        "category": "cloth",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "wear",
+          "옷 입기"
+        ],
+        [
+          "remove",
+          "옷 벗기"
+        ],
+        [
+          "smooth",
+          "매무새 정리하기"
+        ],
+        [
+          "fold",
+          "접어 정리하기"
+        ],
+        [
+          "shake-cloth",
+          "털어서 펴기"
+        ],
+        [
+          "offer",
+          "두 손으로 내밀기"
+        ],
+        [
+          "tie",
+          "끈이나 모서리 매기"
+        ],
+        [
+          "measure",
+          "몸 앞에 대어 길이 재기"
+        ],
+        [
+          "brush",
+          "겉면 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-wool",
+        "relationship": "유사 구조·쓰임새: wool",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "고정점·접힘·끝단",
+      "keyposes": "양끝 잡기→펴기/접기→끝자락 지연→정돈",
+      "acceptance": "끝자락만 지연되고 손의 고정점은 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "tablet",
+      "name": "돌판",
+      "family": "book",
+      "behavior": {
+        "category": "scroll",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "read",
+          "글 읽기"
+        ],
+        [
+          "unroll",
+          "두루마리 펼치기"
+        ],
+        [
+          "write",
+          "무릎 위에 적기"
+        ],
+        [
+          "point",
+          "글 가리키기"
+        ],
+        [
+          "roll",
+          "다시 말아 묶기"
+        ],
+        [
+          "trace",
+          "글줄 따라가기"
+        ],
+        [
+          "fold",
+          "읽은 부분 접어 정리하기"
+        ],
+        [
+          "offer",
+          "읽을 부분 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.slynyrd.com/blog/2018/8/19/pixelblog-8-intro-to-animation",
+        "relationship": "유사 동작: 핵심 자세·정지 유지",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "받치기→펼치기→글줄 따라가기/쓰기→덮기",
+      "acceptance": "펼친 면과 손의 작업이 보이고 얼굴을 가리지 않는다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "book",
+      "name": "책",
+      "family": "book",
+      "behavior": {
+        "category": "scroll",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "read",
+          "글 읽기"
+        ],
+        [
+          "unroll",
+          "두루마리 펼치기"
+        ],
+        [
+          "write",
+          "무릎 위에 적기"
+        ],
+        [
+          "point",
+          "글 가리키기"
+        ],
+        [
+          "roll",
+          "다시 말아 묶기"
+        ],
+        [
+          "trace",
+          "글줄 따라가기"
+        ],
+        [
+          "fold",
+          "읽은 부분 접어 정리하기"
+        ],
+        [
+          "offer",
+          "읽을 부분 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.slynyrd.com/blog/2018/8/19/pixelblog-8-intro-to-animation",
+        "relationship": "유사 동작: 핵심 자세·정지 유지",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "받치기→펼치기→글줄 따라가기/쓰기→덮기",
+      "acceptance": "펼친 면과 손의 작업이 보이고 얼굴을 가리지 않는다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "letter",
+      "name": "편지",
+      "family": "book",
+      "behavior": {
+        "category": "scroll",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "read",
+          "글 읽기"
+        ],
+        [
+          "unroll",
+          "두루마리 펼치기"
+        ],
+        [
+          "write",
+          "무릎 위에 적기"
+        ],
+        [
+          "point",
+          "글 가리키기"
+        ],
+        [
+          "roll",
+          "다시 말아 묶기"
+        ],
+        [
+          "trace",
+          "글줄 따라가기"
+        ],
+        [
+          "fold",
+          "읽은 부분 접어 정리하기"
+        ],
+        [
+          "offer",
+          "읽을 부분 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.slynyrd.com/blog/2018/8/19/pixelblog-8-intro-to-animation",
+        "relationship": "유사 동작: 핵심 자세·정지 유지",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "받치기→펼치기→글줄 따라가기/쓰기→덮기",
+      "acceptance": "펼친 면과 손의 작업이 보이고 얼굴을 가리지 않는다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "seal",
+      "name": "인장",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "stamp",
+          "인장 꾹 누르기"
+        ],
+        [
+          "lift-seal",
+          "인장을 들어 자국 확인하기"
+        ],
+        [
+          "roll-seal",
+          "인장을 굴려 찍기"
+        ],
+        [
+          "inspect",
+          "새겨진 문양 보기"
+        ],
+        [
+          "wipe",
+          "인장 면 닦기"
+        ],
+        [
+          "place",
+          "인장 내려놓기"
+        ],
+        [
+          "press",
+          "작업면에 맞추어 누르기"
+        ],
+        [
+          "turn",
+          "손끝으로 방향 돌리기"
+        ],
+        [
+          "brush",
+          "틈에 낀 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "signet",
+      "name": "반지",
+      "family": "wear",
+      "behavior": {
+        "category": "wear",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "stamp",
+          "인장 꾹 누르기"
+        ],
+        [
+          "lift-seal",
+          "인장을 들어 자국 확인하기"
+        ],
+        [
+          "roll-seal",
+          "인장을 굴려 찍기"
+        ],
+        [
+          "inspect",
+          "새겨진 문양 보기"
+        ],
+        [
+          "wipe",
+          "인장 면 닦기"
+        ],
+        [
+          "place",
+          "인장 내려놓기"
+        ],
+        [
+          "press",
+          "작업면에 맞추어 누르기"
+        ],
+        [
+          "turn",
+          "손끝으로 방향 돌리기"
+        ],
+        [
+          "brush",
+          "틈에 낀 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--boots",
+        "relationship": "유사 구조·쓰임새: boots",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "ink",
+      "name": "먹",
+      "family": "vessel",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "write",
+          "붓으로 글 쓰기"
+        ],
+        [
+          "dip",
+          "붓끝에 먹 묻히기"
+        ],
+        [
+          "trace",
+          "글줄 따라 쓰기"
+        ],
+        [
+          "wipe",
+          "붓끝 닦기"
+        ],
+        [
+          "inspect",
+          "붓끝 살피기"
+        ],
+        [
+          "place",
+          "붓 내려놓기"
+        ],
+        [
+          "cover",
+          "먹그릇 덮기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "pen",
+      "name": "붓",
+      "family": "staff",
+      "behavior": {
+        "category": "scroll",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "write",
+          "붓으로 글 쓰기"
+        ],
+        [
+          "dip",
+          "붓끝에 먹 묻히기"
+        ],
+        [
+          "trace",
+          "글줄 따라 쓰기"
+        ],
+        [
+          "wipe",
+          "붓끝 닦기"
+        ],
+        [
+          "inspect",
+          "붓끝 살피기"
+        ],
+        [
+          "place",
+          "붓 내려놓기"
+        ],
+        [
+          "cover",
+          "먹그릇 덮기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--stick",
+        "relationship": "유사 구조·쓰임새: stick",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "coin",
+      "name": "동전",
+      "family": "treasure",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "count",
+          "차례로 세기"
+        ],
+        [
+          "inspect",
+          "빛에 비추어 살피기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "크기 따라 나누기"
+        ],
+        [
+          "polish",
+          "표면 닦기"
+        ],
+        [
+          "weigh",
+          "손에 받쳐 무게 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--diamond",
+        "relationship": "유사 구조·쓰임새: diamond",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "silver",
+      "name": "은",
+      "family": "treasure",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "count",
+          "차례로 세기"
+        ],
+        [
+          "inspect",
+          "빛에 비추어 살피기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "크기 따라 나누기"
+        ],
+        [
+          "polish",
+          "표면 닦기"
+        ],
+        [
+          "weigh",
+          "손에 받쳐 무게 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--diamond",
+        "relationship": "유사 구조·쓰임새: diamond",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "gold",
+      "name": "금",
+      "family": "treasure",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "count",
+          "차례로 세기"
+        ],
+        [
+          "inspect",
+          "빛에 비추어 살피기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "크기 따라 나누기"
+        ],
+        [
+          "polish",
+          "표면 닦기"
+        ],
+        [
+          "weigh",
+          "손에 받쳐 무게 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--diamond",
+        "relationship": "유사 구조·쓰임새: diamond",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "pearl",
+      "name": "진주",
+      "family": "treasure",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "count",
+          "차례로 세기"
+        ],
+        [
+          "inspect",
+          "빛에 비추어 살피기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "크기 따라 나누기"
+        ],
+        [
+          "polish",
+          "표면 닦기"
+        ],
+        [
+          "weigh",
+          "손에 받쳐 무게 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--diamond",
+        "relationship": "유사 구조·쓰임새: diamond",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "jewel",
+      "name": "보석",
+      "family": "treasure",
+      "behavior": {
+        "category": "treasure",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "count",
+          "차례로 세기"
+        ],
+        [
+          "inspect",
+          "빛에 비추어 살피기"
+        ],
+        [
+          "hold",
+          "두 손으로 받치기"
+        ],
+        [
+          "place",
+          "조심히 내려놓기"
+        ],
+        [
+          "sort",
+          "크기 따라 나누기"
+        ],
+        [
+          "polish",
+          "표면 닦기"
+        ],
+        [
+          "weigh",
+          "손에 받쳐 무게 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--diamond",
+        "relationship": "유사 구조·쓰임새: diamond",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "treasure-chest",
+      "name": "보물상자",
+      "family": "chest",
+      "behavior": {
+        "category": "chest",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "open",
+          "뚜껑 열어 살피기"
+        ],
+        [
+          "inspect",
+          "함 살펴보기"
+        ],
+        [
+          "place",
+          "함 곁 정리하기"
+        ],
+        [
+          "close",
+          "뚜껑 닫기"
+        ],
+        [
+          "sort",
+          "함 안을 정리하기"
+        ],
+        [
+          "count",
+          "함의 물건 세어 보기"
+        ],
+        [
+          "cover",
+          "내용물 위를 덮기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-chest",
+        "relationship": "유사 구조·쓰임새: chest",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "moneybag",
+      "name": "돈주머니",
+      "family": "basket",
+      "behavior": {
+        "category": "basket",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "fill",
+          "바구니에 담기"
+        ],
+        [
+          "inspect",
+          "내용물 살피기"
+        ],
+        [
+          "hold",
+          "바구니 받치기"
+        ],
+        [
+          "place",
+          "바구니 내려놓기"
+        ],
+        [
+          "sort",
+          "내용물 고르기"
+        ],
+        [
+          "offer",
+          "바구니 내밀기"
+        ],
+        [
+          "count",
+          "안의 물건 하나씩 세기"
+        ],
+        [
+          "cover",
+          "내용물 위를 덮기"
+        ],
+        [
+          "close",
+          "입구를 여며 닫기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-chest",
+        "relationship": "유사 구조·쓰임새: chest",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "lyre",
+      "name": "수금",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "strum",
+          "줄 뜯기"
+        ],
+        [
+          "play",
+          "양손 연주하기"
+        ],
+        [
+          "pluck",
+          "한 줄씩 튕기기"
+        ],
+        [
+          "tune",
+          "줄 조율하기"
+        ],
+        [
+          "wipe",
+          "악기 닦기"
+        ],
+        [
+          "bow",
+          "연주 마치고 인사하기"
+        ],
+        [
+          "beat",
+          "짧은 박자 맞추기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-note-block",
+        "relationship": "유사 구조·쓰임새: note-block",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "harp",
+      "name": "거문고",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "strum",
+          "줄 뜯기"
+        ],
+        [
+          "play",
+          "양손 연주하기"
+        ],
+        [
+          "pluck",
+          "한 줄씩 튕기기"
+        ],
+        [
+          "tune",
+          "줄 조율하기"
+        ],
+        [
+          "wipe",
+          "악기 닦기"
+        ],
+        [
+          "bow",
+          "연주 마치고 인사하기"
+        ],
+        [
+          "beat",
+          "짧은 박자 맞추기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-note-block",
+        "relationship": "유사 구조·쓰임새: note-block",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "tambourine",
+      "name": "소고",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "tap",
+          "손으로 두드리기"
+        ],
+        [
+          "shake",
+          "악기 흔들기"
+        ],
+        [
+          "beat",
+          "박자 두드리기"
+        ],
+        [
+          "raise",
+          "들어 올려 울리기"
+        ],
+        [
+          "wipe",
+          "테두리 닦기"
+        ],
+        [
+          "bow",
+          "연주 마치고 인사하기"
+        ],
+        [
+          "tune",
+          "연주 전에 손으로 조율하기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-note-block",
+        "relationship": "유사 구조·쓰임새: note-block",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "trumpet",
+      "name": "나팔",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "blow",
+          "짧게 불기"
+        ],
+        [
+          "long-blow",
+          "길게 불기"
+        ],
+        [
+          "rehearse",
+          "박자 맞춰 불기"
+        ],
+        [
+          "wipe",
+          "입구 닦기"
+        ],
+        [
+          "tune",
+          "악기 살피기"
+        ],
+        [
+          "bow",
+          "연주를 마치고 인사하기"
+        ],
+        [
+          "beat",
+          "짧은 박자 맞추기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--goat-horn",
+        "relationship": "유사 구조·쓰임새: goat-horn",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "flute",
+      "name": "피리",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "blow",
+          "짧게 불기"
+        ],
+        [
+          "long-blow",
+          "길게 불기"
+        ],
+        [
+          "rehearse",
+          "박자 맞춰 불기"
+        ],
+        [
+          "wipe",
+          "입구 닦기"
+        ],
+        [
+          "tune",
+          "악기 살피기"
+        ],
+        [
+          "bow",
+          "연주를 마치고 인사하기"
+        ],
+        [
+          "beat",
+          "짧은 박자 맞추기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-note-block",
+        "relationship": "유사 구조·쓰임새: note-block",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "cymbal",
+      "name": "제금",
+      "family": "instrument",
+      "behavior": {
+        "category": "instrument",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "tap",
+          "손으로 두드리기"
+        ],
+        [
+          "shake",
+          "악기 흔들기"
+        ],
+        [
+          "beat",
+          "박자 두드리기"
+        ],
+        [
+          "raise",
+          "들어 올려 울리기"
+        ],
+        [
+          "wipe",
+          "테두리 닦기"
+        ],
+        [
+          "bow",
+          "연주 마치고 인사하기"
+        ],
+        [
+          "tune",
+          "연주 전에 손으로 조율하기"
+        ],
+        [
+          "hold",
+          "연주 뒤 양손으로 받치기"
+        ],
+        [
+          "offer",
+          "악기를 앞으로 내밀기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-note-block",
+        "relationship": "유사 구조·쓰임새: note-block",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "지지부·발음부",
+      "keyposes": "받쳐 들기→손/입 접촉→연주→손 회수",
+      "acceptance": "악기를 지지하고 연주하는 부분만 움직인다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "millstone",
+      "name": "맷돌",
+      "family": "stone",
+      "behavior": {
+        "category": "stone",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "grind",
+          "맷돌 돌리기"
+        ],
+        [
+          "feed-grain",
+          "곡식 조금씩 넣기"
+        ],
+        [
+          "gather-flour",
+          "갈린 가루 받기"
+        ],
+        [
+          "brush",
+          "가루 털어 모으기"
+        ],
+        [
+          "wipe",
+          "돌 표면 닦기"
+        ],
+        [
+          "inspect",
+          "맷돌 틈 살피기"
+        ],
+        [
+          "stack",
+          "작업한 것을 쌓아 놓기"
+        ],
+        [
+          "measure",
+          "손으로 너비 가늠하기"
+        ],
+        [
+          "turn",
+          "옆면을 돌려 살피기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stone",
+        "relationship": "유사 구조·쓰임새: stone",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "plow",
+      "name": "쟁기",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "push",
+          "양손으로 잡고 앞으로 밀기"
+        ],
+        [
+          "pull",
+          "뒤로 당겨 자세 잡기"
+        ],
+        [
+          "grip",
+          "손잡이 양손으로 잡기"
+        ],
+        [
+          "repair",
+          "연결 부위 고치기"
+        ],
+        [
+          "wipe",
+          "나무 틀 닦기"
+        ],
+        [
+          "inspect",
+          "나무 틀 살피기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--hoe",
+        "relationship": "유사 구조·쓰임새: hoe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "sickle",
+      "name": "낫",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "swing",
+          "도구를 뒤로 들어 내리기"
+        ],
+        [
+          "use",
+          "앞으로 뻗어 작업하기"
+        ],
+        [
+          "repair",
+          "손잡이 단단히 고치기"
+        ],
+        [
+          "wipe",
+          "날과 손잡이 닦기"
+        ],
+        [
+          "inspect",
+          "도구 날 살피기"
+        ],
+        [
+          "place",
+          "도구 내려놓기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "grip",
+          "손잡이를 양손으로 다시 잡기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--shears",
+        "relationship": "유사 구조·쓰임새: shears",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "axe",
+      "name": "도끼",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "swing",
+          "도구를 뒤로 들어 내리기"
+        ],
+        [
+          "use",
+          "앞으로 뻗어 작업하기"
+        ],
+        [
+          "repair",
+          "손잡이 단단히 고치기"
+        ],
+        [
+          "wipe",
+          "날과 손잡이 닦기"
+        ],
+        [
+          "inspect",
+          "도구 날 살피기"
+        ],
+        [
+          "place",
+          "도구 내려놓기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "grip",
+          "손잡이를 양손으로 다시 잡기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "동일 대상 사용 설명",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "hammer",
+      "name": "망치",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "swing",
+          "도구를 뒤로 들어 내리기"
+        ],
+        [
+          "use",
+          "앞으로 뻗어 작업하기"
+        ],
+        [
+          "repair",
+          "손잡이 단단히 고치기"
+        ],
+        [
+          "wipe",
+          "날과 손잡이 닦기"
+        ],
+        [
+          "inspect",
+          "도구 날 살피기"
+        ],
+        [
+          "place",
+          "도구 내려놓기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "grip",
+          "손잡이를 양손으로 다시 잡기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "nail",
+      "name": "못",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "inspect",
+          "도구 살피기"
+        ],
+        [
+          "use",
+          "천천히 작업하기"
+        ],
+        [
+          "wipe",
+          "도구 닦기"
+        ],
+        [
+          "place",
+          "도구 내려놓기"
+        ],
+        [
+          "measure",
+          "길이 가늠하기"
+        ],
+        [
+          "repair",
+          "손잡이 손질하기"
+        ],
+        [
+          "press",
+          "작업면에 맞추어 누르기"
+        ],
+        [
+          "turn",
+          "손끝으로 방향 돌리기"
+        ],
+        [
+          "brush",
+          "틈에 낀 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "key",
+      "name": "열쇠",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "unlock",
+          "열쇠 꽂아 돌리기"
+        ],
+        [
+          "turn-key",
+          "반대로 돌려 잠그기"
+        ],
+        [
+          "inspect",
+          "열쇠 이 살피기"
+        ],
+        [
+          "wipe",
+          "열쇠 닦기"
+        ],
+        [
+          "offer",
+          "열쇠 건네기"
+        ],
+        [
+          "place",
+          "열쇠 내려놓기"
+        ],
+        [
+          "press",
+          "작업면에 맞추어 누르기"
+        ],
+        [
+          "turn",
+          "손끝으로 방향 돌리기"
+        ],
+        [
+          "brush",
+          "틈에 낀 먼지 털기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "scale",
+      "name": "저울",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "weigh",
+          "양쪽 접시에 물건 놓기"
+        ],
+        [
+          "balance",
+          "저울 균형 맞추기"
+        ],
+        [
+          "remove-weight",
+          "추 하나 들어 빼기"
+        ],
+        [
+          "count",
+          "추 세어 보기"
+        ],
+        [
+          "wipe",
+          "접시 닦기"
+        ],
+        [
+          "inspect",
+          "수평 확인하기"
+        ],
+        [
+          "sort",
+          "크기별로 나누어 놓기"
+        ],
+        [
+          "polish",
+          "표면을 천으로 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "yoke",
+      "name": "멍에",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "push",
+          "양손으로 잡고 앞으로 밀기"
+        ],
+        [
+          "pull",
+          "뒤로 당겨 자세 잡기"
+        ],
+        [
+          "grip",
+          "손잡이 양손으로 잡기"
+        ],
+        [
+          "repair",
+          "연결 부위 고치기"
+        ],
+        [
+          "wipe",
+          "나무 틀 닦기"
+        ],
+        [
+          "inspect",
+          "나무 틀 살피기"
+        ],
+        [
+          "measure",
+          "손으로 작업 간격 가늠하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "cross",
+      "name": "십자가",
+      "family": "cross",
+      "behavior": {
+        "category": "building",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "고개 들어 바라보기"
+        ],
+        [
+          "point",
+          "손으로 가리키기"
+        ],
+        [
+          "observe",
+          "서서 지켜보기"
+        ],
+        [
+          "hands",
+          "손 모아 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "step-back",
+          "물러서 바라보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stained-glass",
+        "relationship": "유사 구조·쓰임새: stained-glass",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "laver",
+      "name": "물두멍",
+      "family": "vessel",
+      "behavior": {
+        "category": "water",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "wash",
+          "손 씻기"
+        ],
+        [
+          "rinse",
+          "물로 헹구기"
+        ],
+        [
+          "fill",
+          "물 채우기"
+        ],
+        [
+          "pour",
+          "물을 떠 옮기기"
+        ],
+        [
+          "scoop",
+          "물 떠 보기"
+        ],
+        [
+          "wipe",
+          "가장자리 닦기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--bowl",
+        "relationship": "유사 구조·쓰임새: bowl",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "입구·손잡이·몸통",
+      "keyposes": "입구 잡기→마개 열기/기울이기→수위·흐름→닫기",
+      "acceptance": "마개는 분리되고 액체는 입구에서 시작한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "oven",
+      "name": "화덕",
+      "family": "altar",
+      "behavior": {
+        "category": "cooking",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "tend",
+          "긴 도구로 화덕 살피기"
+        ],
+        [
+          "fan",
+          "불길에 바람 보내기"
+        ],
+        [
+          "place",
+          "빵을 화덕에 넣기"
+        ],
+        [
+          "take-bread",
+          "익은 빵 꺼내기"
+        ],
+        [
+          "warm",
+          "불 가까이 손 녹이기"
+        ],
+        [
+          "inspect",
+          "화덕 안 열기 살피기"
+        ],
+        [
+          "shield",
+          "손으로 눈앞 열기 가리기"
+        ],
+        [
+          "trim",
+          "심지 주변 손질하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--campfire",
+        "relationship": "유사 구조·쓰임새: campfire",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "brick",
+      "name": "벽돌",
+      "family": "stone",
+      "behavior": {
+        "category": "stone",
+        "carry": true,
+        "frontOnly": false
+      },
+      "actions": [
+        [
+          "pick",
+          "무릎 굽혀 돌 고르기"
+        ],
+        [
+          "turn",
+          "돌 돌려 살피기"
+        ],
+        [
+          "stack",
+          "돌 쌓기"
+        ],
+        [
+          "place",
+          "돌 내려놓기"
+        ],
+        [
+          "balance",
+          "돌 균형 잡기"
+        ],
+        [
+          "skip",
+          "작은 돌 튕기기"
+        ],
+        [
+          "brush",
+          "표면 돌가루 털기"
+        ],
+        [
+          "measure",
+          "손으로 너비 가늠하기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stone",
+        "relationship": "유사 구조·쓰임새: stone",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "기존 고유 동작 보존 및 사용 결과 보강"
+    },
+    {
+      "id": "stone-pillar",
+      "name": "돌기둥",
+      "family": "stone",
+      "behavior": {
+        "category": "stone",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "돌 앞에 서서 보기"
+        ],
+        [
+          "inspect",
+          "새겨진 흔적 살피기"
+        ],
+        [
+          "hands",
+          "두 손 모아 서기"
+        ],
+        [
+          "bow",
+          "조용히 고개 숙이기"
+        ],
+        [
+          "point",
+          "돌을 가리키기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stone",
+        "relationship": "유사 구조·쓰임새: stone",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "ladder",
+      "name": "사다리",
+      "family": "tool",
+      "behavior": {
+        "category": "tool",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "climb-ladder",
+          "아래 디딤대 오르내리기"
+        ],
+        [
+          "grip",
+          "양손으로 사다리 잡기"
+        ],
+        [
+          "repair",
+          "디딤대 조이기"
+        ],
+        [
+          "wipe",
+          "디딤대 닦기"
+        ],
+        [
+          "measure",
+          "간격 살펴보기"
+        ],
+        [
+          "step-back",
+          "뒤로 물러나 확인하기"
+        ],
+        [
+          "brush",
+          "작업 뒤 붙은 가루 털기"
+        ],
+        [
+          "turn",
+          "작업 방향 바꾸어 잡기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--axe",
+        "relationship": "유사 구조·쓰임새: axe",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "손잡이·작업부",
+      "keyposes": "잡기→뒤로 힘 모으기→작업부 접촉→반동",
+      "acceptance": "작업부와 접촉 지점이 겹쳐야 한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "rainbow",
+      "name": "무지개",
+      "family": "symbol",
+      "behavior": {
+        "category": "symbol",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "고개 들어 바라보기"
+        ],
+        [
+          "point",
+          "손으로 가리키기"
+        ],
+        [
+          "observe",
+          "서서 지켜보기"
+        ],
+        [
+          "hands",
+          "손 모아 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "step-back",
+          "물러서 바라보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stained-glass",
+        "relationship": "유사 구조·쓰임새: stained-glass",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "star",
+      "name": "별",
+      "family": "symbol",
+      "behavior": {
+        "category": "symbol",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "고개 들어 바라보기"
+        ],
+        [
+          "point",
+          "손으로 가리키기"
+        ],
+        [
+          "observe",
+          "서서 지켜보기"
+        ],
+        [
+          "hands",
+          "손 모아 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "step-back",
+          "물러서 바라보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--nether-star",
+        "relationship": "유사 구조·쓰임새: nether-star",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "cloud",
+      "name": "구름",
+      "family": "symbol",
+      "behavior": {
+        "category": "symbol",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "고개 들어 바라보기"
+        ],
+        [
+          "point",
+          "손으로 가리키기"
+        ],
+        [
+          "observe",
+          "서서 지켜보기"
+        ],
+        [
+          "hands",
+          "손 모아 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "step-back",
+          "물러서 바라보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stained-glass",
+        "relationship": "유사 구조·쓰임새: stained-glass",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "fire",
+      "name": "불",
+      "family": "lamp",
+      "behavior": {
+        "category": "lamp",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "warm",
+          "안전한 거리에서 손 녹이기"
+        ],
+        [
+          "fan",
+          "가볍게 부채질하기"
+        ],
+        [
+          "tend",
+          "긴 막대로 불 살피기"
+        ],
+        [
+          "step-back",
+          "열기에서 물러서기"
+        ],
+        [
+          "observe",
+          "불길 지켜보기"
+        ],
+        [
+          "shield",
+          "손으로 얼굴 앞 열 가리기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--candle",
+        "relationship": "유사 구조·쓰임새: candle",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "sheep",
+      "name": "양",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "donkey",
+      "name": "나귀",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "horse",
+      "name": "말",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "dove",
+      "name": "비둘기",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "raven",
+      "name": "까마귀",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "snake",
+      "name": "뱀",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "bronze-snake",
+      "name": "놋뱀",
+      "family": "symbol",
+      "behavior": {
+        "category": "symbol",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "look",
+          "고개 들어 바라보기"
+        ],
+        [
+          "point",
+          "손으로 가리키기"
+        ],
+        [
+          "observe",
+          "서서 지켜보기"
+        ],
+        [
+          "hands",
+          "손 모아 바라보기"
+        ],
+        [
+          "bow",
+          "고개 숙이기"
+        ],
+        [
+          "step-back",
+          "물러서 바라보기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/block-week-stained-glass",
+        "relationship": "유사 구조·쓰임새: stained-glass",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "재료와 기능 부위",
+      "keyposes": "접근→접촉→사용 결과/변형→정돈",
+      "acceptance": "고정된 부분과 작동하는 부분을 나누고 원래 크기를 유지한다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "lion",
+      "name": "사자",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    },
+    {
+      "id": "calf",
+      "name": "송아지",
+      "family": "animal",
+      "behavior": {
+        "category": "animal",
+        "carry": false,
+        "frontOnly": true
+      },
+      "actions": [
+        [
+          "watch",
+          "조용히 지켜보기"
+        ],
+        [
+          "care",
+          "곁에 낮게 앉기"
+        ],
+        [
+          "feed",
+          "먹이 살피기"
+        ],
+        [
+          "guide",
+          "천천히 손 내밀기"
+        ],
+        [
+          "pet",
+          "동물 쓰다듬기"
+        ],
+        [
+          "step-back",
+          "한 걸음 물러서기"
+        ]
+      ],
+      "reference": {
+        "url": "https://www.minecraft.net/en-us/article/taking-inventory--wheat",
+        "relationship": "유사 구조·쓰임새: wheat",
+        "media": "설명·이미지 또는 공통 GIF 원칙; 대상별 외부 영상 확보와 다름"
+      },
+      "shape": "종별 얼굴·발/날개",
+      "keyposes": "접근→먹이/물 쪽으로 고개→섭취/반응→휴식",
+      "acceptance": "말이 없는 동물은 대사를 만들지 않는다",
+      "decision": "고정 구조 보존 및 접촉 부위만 반응"
+    }
+  ]
+}

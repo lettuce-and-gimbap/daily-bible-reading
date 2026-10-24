@@ -48,6 +48,7 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
   squash:['bench','bed'].includes(pose.prop)&&use?.035:0,
   tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use&&portable?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use&&OBJECT_CATALOG[o.kind]?.family==='cloth'?beat*.08:portable?beat*.045:0,
   open:['read','unroll','spread','mend','fold'].includes(pose.gesture)&&use?.22:0,
+  clothWave:OBJECT_CATALOG[o.kind]?.family==='cloth'&&['spread','shake-cloth','fold','smooth'].includes(pose.gesture)&&use?Math.floor(pose.within*4)+1:0,
   lid:pose.prop==='chest'&&pose.gesture==='open'&&use?1:0,beat,use};
 }
 // 배치된 휴대 소품 자체를 집어 든다. 내려놓는 단계에서는 바닥에 다시 표시한다.
@@ -66,7 +67,7 @@ export function heldObject(n,time,reduced=false,tile=24){
  if(playing){tx=(a.x+(side?dir*19:18)+p.bodyX*2)/tile;ty=(a.y-7+p.bodyY*2)/tile;}
  const originalScale=objectPresentation(o.kind).scale;
  return {kind:o.kind,x:Math.round((o.x+(tx-o.x)*transfer)*tile)/tile,y:Math.round((o.y+(ty-o.y)*transfer)*tile)/tile,
-  frame:{scale:originalScale,tilt:playing?0:(Number.isFinite(p.toolAngle)?dir*p.toolAngle:heldTilt(p,dir,eased))*transfer,held:true,
+  frame:{scale:originalScale,clothWave:OBJECT_CATALOG[o.kind]?.family==='cloth'&&['spread','shake-cloth','fold','smooth'].includes(p.gesture)&&[1,2].includes(p.phase)?Math.floor(p.within*4)+1:0,tilt:playing?0:(Number.isFinite(p.toolAngle)?dir*p.toolAngle:heldTilt(p,dir,eased))*transfer,held:true,
    open:['read','unroll','spread'].includes(p.gesture)?(p.phase===2?.25:.1):0,
    squash:['fold','smooth','wrap'].includes(p.gesture)&&p.phase===2?.3:0,bite:p.gesture==='eat'&&p.phase===2},pose:p};
 }
