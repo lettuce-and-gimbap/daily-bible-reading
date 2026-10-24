@@ -21,6 +21,7 @@ window.ScriptureStudy=(()=>{
  function currentColor(){const value=typeof state!=='undefined'?state.settings.highlightColor:null;const stored=localStorage.getItem(colorKey);return validColor(value)?value:validColor(stored)?stored:'#ffe49b';}
  function setColor(color){if(!validColor(color))return;localStorage.setItem(colorKey,color);if(typeof state!=='undefined'){state.settings.highlightColor=color;}return color;}
  const fingerprint=text=>{let hash=2166136261;for(let i=0;i<text.length;i++)hash=Math.imul(hash^text.charCodeAt(i),16777619);return (hash>>>0).toString(16);};
+ const dockSelections=new WeakMap();
  let pending=[],tip=null,selectionTimer;
  function closeTip(){tip?.remove();tip=null;}
  function renderSegment(segment){
@@ -41,7 +42,7 @@ window.ScriptureStudy=(()=>{
   }return parts;
  }
  function offerHighlight(){
-  const parts=selectionParts();if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
+  const parts=selectionParts();const dock=parts[0]?.el.closest('[data-study-docked]');if(dock){dockSelections.set(dock,parts.filter(p=>dock.contains(p.el)));closeTip();return;}if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
   tip=document.createElement('div');tip.className='study-selection-tools';tip.setAttribute('role','toolbar');tip.setAttribute('aria-label','선택한 글 형광펜');tip.innerHTML='<button type="button" data-selection-mark>형광펜</button><button type="button" data-selection-clear>표시 지우기</button>';
   tip.querySelector('[data-selection-mark]').style.borderBottom='5px solid '+currentColor();
   tip.addEventListener('pointerdown',e=>e.preventDefault());
@@ -57,7 +58,8 @@ window.ScriptureStudy=(()=>{
  document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(offerHighlight,180);});
  document.addEventListener('copy',()=>setTimeout(offerHighlight,0));
  document.addEventListener('scroll',closeTip,true);
- function mount(root,keys){
+ function mount(root,keys,{dock=false}={}){
+  if(dock)root.dataset.studyDocked='true';
   const rows=[...root.querySelectorAll('.vp-row')];
   rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');
    row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;
@@ -67,10 +69,38 @@ window.ScriptureStudy=(()=>{
     renderSegment(segment);
    });paint(row);
   });save();
+  if(dock){mountDock(root,rows);return;}
   root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<span>단어·구를 길게 눌러 선택하면 형광펜을 칠할 수 있어요.</span><button type="button" data-study-note>선택한 절에 메모</button><small aria-live="polite">형광펜 색은 관리에서 바꿔요. 표시는 이 기기에 저장돼요.</small>';root.querySelector('.vp-list')?.before(bar);
   bar.onclick=e=>{if(!e.target.closest('[data-study-note]'))return;const selected=rows.filter(r=>r.querySelector('input').checked);if(!selected.length){bar.querySelector('small').textContent='메모할 절을 먼저 선택해 주세요.';return;}const body=modal('선택한 구절 메모');body.innerHTML='<label>메모<textarea rows="5"></textarea></label><button type="button">저장</button>';body.querySelector('textarea').value=records[selected[0].dataset.studyKey]?.note||'';body.querySelector('button').onclick=()=>{for(const r of selected){const k=r.dataset.studyKey;records[k]={...records[k],note:body.querySelector('textarea').value};}if(save()){selected.forEach(paint);body.closest('dialog').close();}};};
  }
- function paint(row){if(row.nextElementSibling?.classList.contains('study-note'))row.nextElementSibling.remove();const entry=records[row.dataset.studyKey]||{};if(entry.note){const note=document.createElement('button');note.type='button';note.className='study-note';note.textContent='메모 보기';note.onclick=e=>{e.preventDefault();e.stopPropagation();const body=modal('구절 메모');const p=document.createElement('p');p.textContent=entry.note;body.append(p);};row.after(note);}}
+ function mountDock(root,rows){
+  root.querySelector('.study-toolbar')?.remove();root.querySelector('.study-dock-editor')?.remove();
+  const button=root.querySelector('[data-study-highlight]');if(!button)return;
+  button.addEventListener('pointerdown',()=>{const parts=selectionParts().filter(p=>root.contains(p.el));if(parts.length)dockSelections.set(root,parts);});
+  root.addEventListener('change',e=>{if(e.target.matches('.vp-row input')){dockSelections.delete(root);root.querySelector('.study-dock-editor')?.remove();}});
+  root.querySelector('[data-act="clear"]')?.addEventListener('click',()=>{dockSelections.delete(root);root.querySelector('.study-dock-editor')?.remove();window.getSelection()?.removeAllRanges();});
+  button.onclick=()=>{
+   let parts=(dockSelections.get(root)||[]).filter(p=>p.el.isConnected);
+   if(!parts.length)parts=rows.filter(r=>r.querySelector('input').checked).flatMap(r=>[...r.querySelectorAll('[data-study-segment]')].map(el=>({el,start:0,end:el.dataset.studyText.length})));
+   root.querySelector('.study-dock-editor')?.remove();const editor=document.createElement('section');editor.className='study-dock-editor';editor.setAttribute('aria-label','하이라이트와 메모');
+   if(!parts.length){editor.innerHTML='<p role="status">단어·구를 선택하거나 표시할 절을 먼저 골라 주세요.</p>';root.querySelector('.vp-bar').after(editor);return;}
+   editor.innerHTML='<h3>하이라이트 · 메모</h3><p class="study-dock-quote"></p><label>메모<textarea rows="4" placeholder="선택한 말씀에 메모를 남겨 보세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-dock-save>하이라이트 저장</button><button type="button" class="btn ghost" data-dock-erase>하이라이트 지우기</button><button type="button" class="btn ghost" data-dock-cancel>닫기</button></div><small role="status">관리에서 고른 색으로 표시하고 이 기기에 저장해요.</small>';
+   editor.querySelector('.study-dock-quote').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');
+   const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.start===first.start&&r.end===first.end&&r.hash===fingerprint(first.el.dataset.studyText));editor.querySelector('textarea').value=existing?.note||'';
+   root.querySelector('.vp-bar').after(editor);window.getSelection()?.removeAllRanges();editor.scrollIntoView({block:'nearest'});
+   editor.querySelector('[data-dock-cancel]').onclick=()=>editor.remove();
+   editor.querySelector('[data-dock-erase]').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,ranges=(records[key]?.ranges||[]).flatMap(r=>r.end<=start||r.start>=end?[r]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);records[key]={...records[key],ranges};}if(save()){parts.forEach(p=>renderSegment(p.el));rows.forEach(paint);dockSelections.delete(root);editor.querySelector('small').textContent='선택한 부분의 하이라이트를 지웠어요.';}};
+   editor.querySelector('[data-dock-save]').onclick=()=>{
+    for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText),ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash&&!(r.start===start&&r.end===end));ranges.push({start,end,color:currentColor(),hash,note:editor.querySelector('textarea').value});records[key]={...records[key],ranges};}
+    if(save()){parts.forEach(p=>renderSegment(p.el));rows.forEach(paint);dockSelections.delete(root);editor.querySelector('small').textContent='하이라이트와 메모를 저장했어요.';}
+   };
+  };
+ }
+ function paint(row){
+  if(row.nextElementSibling?.classList.contains('study-note'))row.nextElementSibling.remove();const entry=records[row.dataset.studyKey]||{},notes=entry.note?[entry.note]:[];
+  row.querySelectorAll('[data-study-segment]').forEach(el=>{for(const r of records[el.dataset.studySegment]?.ranges||[])if(r.note&&r.hash===fingerprint(el.dataset.studyText))notes.push(el.dataset.studyText.slice(r.start,r.end)+'\n'+r.note);});
+  if(notes.length){const note=document.createElement('button');note.type='button';note.className='study-note';note.textContent='메모 보기';note.onclick=e=>{e.preventDefault();e.stopPropagation();const body=modal('구절 메모');const p=document.createElement('p');p.textContent=[...new Set(notes)].join('\n\n');body.append(p);};row.after(note);}
+ }
  function settingsHtml(){return `<section class="card"><h3>형광펜 색상</h3><p class="muted small">단어·구를 선택해 표시할 때 쓸 색이에요.</p><label>색상 <input type="color" data-highlight-color value="${esc(currentColor())}"></label> <label>HEX <input data-highlight-hex value="${esc(currentColor())}" maxlength="7" size="8" aria-label="형광펜 HEX 색상"></label><label>RGB <input data-highlight-rgb placeholder="255, 228, 155" size="14" aria-label="형광펜 RGB 값"></label><button class="btn" type="button" data-highlight-eyedropper ${'EyeDropper' in window?'':'hidden'}>화면에서 색 추출</button><p class="muted small" data-highlight-status>색상 선택기에서 색을 고르거나 #RRGGBB 값을 입력하세요.</p></section>`;}
  function bindSettings(root){const color=root.querySelector('[data-highlight-color]'),hex=root.querySelector('[data-highlight-hex]'),status=root.querySelector('[data-highlight-status]');if(!color)return;
   const apply=value=>{if(!validColor(value)){status.textContent='예: #FFE49B 형식으로 입력해 주세요.';return;}setColor(value);color.value=hex.value=value;root.querySelector('[data-highlight-rgb]').value=[1,3,5].map(i=>parseInt(value.slice(i,i+2),16)).join(', ');if(typeof persist==='function')persist();status.textContent='형광펜 색상을 저장했어요.';};color.onchange=()=>apply(color.value);hex.onchange=()=>apply(hex.value);const rgb=root.querySelector('[data-highlight-rgb]');rgb.value=[1,3,5].map(i=>parseInt(currentColor().slice(i,i+2),16)).join(', ');rgb.onchange=()=>{const values=rgb.value.split(',').map(x=>x.trim());if(values.length!==3||values.some(x=>!/^\d{1,3}$/.test(x)||Number(x)>255)){status.textContent='RGB는 0~255 숫자 세 개를 쉼표로 구분해 주세요.';return;}apply('#'+values.map(x=>Number(x).toString(16).padStart(2,'0')).join(''));};

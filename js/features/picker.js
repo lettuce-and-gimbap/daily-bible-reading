@@ -88,11 +88,11 @@ async function renderVersePicker(body, target, idx) {
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
-      <button class="btn text small" data-act="clear">해제</button>
+      ${target === "reading" ? '<button type="button" class="btn text small" data-study-highlight>하이라이트</button>' : ""}<button class="btn text small" data-act="clear">해제</button>
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
-  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${r.v.label}`));
+  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${r.v.label}`),{dock:target==="reading"});
   refresh();
 
   // 고른 절(번호 집합)을 보기 설정 역본마다 모아 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식으로
