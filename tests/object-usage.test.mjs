@@ -71,3 +71,20 @@ test('마시기는 입 높이에서 잠시 멈추고 일어나기·착용은 완
  for(const gesture of ['aim','draw','nock'])assert.equal(interactionPose({...drink,kind:'bow',gesture},2).shot,false);
  assert.equal(interactionPose({...drink,kind:'bow',gesture:'shoot'},2).shot,true);
 });
+
+test('월드 오브젝트 상호작용은 한 방문에 짧은 동작을 여러 번 되풀이하지 않는다',async()=>{
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ for(const kind of Object.keys(OBJECT_CATALOG)){
+  const routine=interactionRoutine({name:'검수 인물'},kind);
+  assert.equal(routine.period,7.2,kind);
+ }
+ const {drinkingCup}=await import('../js/features/pixel-bible/object-response.js');
+ const routine=Array.from({length:interactionOptions('water').length},(_,visit)=>interactionRoutine({name:'검수 인물'},'water',visit)).find(r=>r.gesture==='drink');
+ assert.ok(routine,'물 마시기 동작이 선택 가능해야 한다');
+ const actor={usingObject:{kind:'water'},direction:'right'};
+ const atStart=drinkingCup(actor,interactionPose(routine,0),0,0);
+ const atMouth=drinkingCup(actor,interactionPose(routine,routine.period*.5),0,0);
+ const lowering=drinkingCup(actor,interactionPose(routine,routine.period*.99),0,0);
+ assert.ok(atMouth.y<atStart.y-.4,'컵을 한 번 들어 입가에 둔다');
+ assert.ok(lowering.y>atMouth.y+.4,'동작 끝에서만 컵을 내린다');
+});

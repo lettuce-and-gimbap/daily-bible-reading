@@ -93,9 +93,12 @@ export function interactionRoutine(n,kind,visit=0){
  const seed=[...key].reduce((s,c)=>s*31+c.codePointAt(0),7)>>>0;
  let index=(seed+visit)%variants.length;
  const unique=uniqueInteraction(n,kind);
- if(unique)return {id:unique.id,category,kind,gesture:unique.gesture,label:unique.ref,unique:true,ref:unique.ref,variant:seed%3,outcome:0,period:3.6,phase:0};
- if(kind==='ark-covenant')return {id:`bush:${variants[index][0]}`,category:'bush',kind,gesture:variants[index][0],label:variants[index][1],variant:seed%3,outcome:index,period:3,phase:0};
- if(n.objectAction==='zacchaeus-tree')return {id:'tree:climb',category:'tree',gesture:'climb',label:'나무에 올라 바라보기',variant:seed%3,period:2.4,phase:0};
+ // One eight-beat phrase per world visit. Short periods restarted gestures
+ // mid-action (for example, lowering a cup and immediately lifting it again).
+ const phrase=7.2;
+ if(unique)return {id:unique.id,category,kind,gesture:unique.gesture,label:unique.ref,unique:true,ref:unique.ref,variant:seed%3,outcome:0,period:phrase,phase:0};
+ if(kind==='ark-covenant')return {id:`bush:${variants[index][0]}`,category:'bush',kind,gesture:variants[index][0],label:variants[index][1],variant:seed%3,outcome:index,period:phrase,phase:0};
+ if(n.objectAction==='zacchaeus-tree')return {id:'tree:climb',category:'tree',gesture:'climb',label:'나무에 올라 바라보기',variant:seed%3,period:phrase,phase:0};
  const special={'widow-oil':'pour','david-stones':'pick','baruch-scroll':'write','josiah-scroll':'read','aaron-manna':'pour','ethiopian-scroll':'point'}[n.objectAction];
  if(special){const match=variants.findIndex(v=>v[0]===special);if(match>=0)index=match;}
 
@@ -103,7 +106,7 @@ export function interactionRoutine(n,kind,visit=0){
 
 
 
- return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:(['rest','inspect','drink','eat','blow'].includes(actionTrack(variants[index][0]))?3.6:kind==='rope'?3.2:2.4)+(seed%3)*.15,phase:0};
+ return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:phrase,phase:0};
 }
 function rawInteractionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;
