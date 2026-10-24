@@ -1,5 +1,5 @@
 // 구절 선택 패널: 갓피아 화면 대신 우리 앱이 본문을 받아 절마다 눌러 고르게 하고(절 상자를 누르면 선택),
-// 고른 절을 보기 설정의 역본(한권/두권) 모두로 메모·노트에 붙이거나 복사함 (드래그로 복사할 필요 없음)
+// 고른 절을 보기 설정의 역본(한권/두권) 모두로 메모·노트에 붙임.
 // 갓피아는 다른 사이트라 그 화면 안에 체크박스를 넣을 수 없어서 worker/의 /bible로 받은 본문을 따로 보여 준다.
 
 let pickIdx = null; // 지금 보여 주는 장 (전체 장 일련번호)
@@ -89,7 +89,6 @@ async function renderVersePicker(body, target, idx) {
     <div class="vp-bar">
       <span class="vp-n"></span>
       <button class="btn text small" data-act="clear">해제</button>
-      <button class="btn soft small" data-act="copy">📋 복사</button>
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
@@ -123,7 +122,6 @@ async function renderVersePicker(body, target, idx) {
     }
     if (!count()) return;
     const quote = buildQuote();
-    if (act.act === "copy") { logCopied(idx0, quote.split("\n")[0], target === "qt" ? "qt" : "reading"); return copyText(quote, `${quote.split("\n")[0]} 복사했어요`); }
     pickSel = new Set();
     insertQuote(target, quote);
     renderVersePicker(body, target, idx0);
@@ -136,13 +134,4 @@ function mountVersePicker(body, target, hintKey, hintIdx) {
   const moved = hintKey !== pickHint;
   pickHint = hintKey;
   renderVersePicker(body, target, moved ? hintIdx : undefined);
-}
-
-// 구절 패널에서 복사한 절을 날짜와 함께 남김 (관리 → 권별 진행의 "복사한 구절"). 메모에 붙인 구절은 메모에서 따로 읽음
-function logCopied(idx, ref, src = "reading") {
-  const v = (ref.match(/:([\d,\- ]+)$/) || [])[1];
-  if (!v) return;
-  const d = src === "reading" ? readingDateStr() : todayStr();
-  state.copies = [...(state.copies || []), { d, i: idx, v, src }].slice(-3000);
-  persist();
 }

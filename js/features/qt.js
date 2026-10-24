@@ -2,6 +2,7 @@
 // 갓피아 화면은 "갓피아" 탭을 누를 때만 팝업으로 띄움. 날짜 이동·QT 완료·묵상 노트
 
 let qtDate = todayStr();
+let qtSelectionAbort=null;
 
 // 일요일(0)에는 QT를 열지 않아요
 function isQtSunday(date) {
@@ -38,9 +39,8 @@ function renderQt() {
           <span class="vp-n">절을 눌러 고르세요</span>
           <button class="btn text small" data-qa="all">전체</button>
           <button class="btn text small" data-qa="clear">해제</button>
-          <button class="btn soft small" data-qa="copy">📋 복사</button>
           <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
-        </div>${sheetShell()}</div>
+        </div><button type="button" class="qt-selection-note" id="q-selection-note" hidden>선택 문구를 노트에 넣기</button>${sheetShell()}</div>
     </div>`;
   onSheetChange = syncQtTabs;
   $("#q-tabs").addEventListener("click", (e) => {
@@ -237,7 +237,7 @@ async function fillQtRead(date) {
   paintQtPassage(date, d);
 }
 
-// 본문 칸: 그날 QT 범위의 절만 보여 주고, 절을 눌러 골라서 복사하거나 묵상 노트에 붙임
+// 본문 칸: 그날 QT 범위의 절만 보여 주고, 절을 눌러 골라 묵상 노트에 붙임
 let qtPassage = { rows: [] };
 async function paintQtPassage(date, d) {
   const box = $("#q-passage");
@@ -277,7 +277,7 @@ function qtPassageCount() {
   if (!bar) return;
   const n = $("#q-passage").querySelectorAll("input[data-ri]:checked").length;
   bar.querySelector(".vp-n").textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
-  bar.querySelectorAll('[data-qa="copy"], [data-qa="paste"]').forEach((b) => { b.disabled = !n; });
+  bar.querySelectorAll('[data-qa="paste"]').forEach((b) => { b.disabled = !n; });
 }
 
 // 고른 절 → 장마다 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식 (장이 둘이면 빈 줄로 나눔)
@@ -295,8 +295,29 @@ function qtPassageQuote() {
 
 // 본문 · 묵상 화면(#q-content) 안의 눌림·입력을 모아 처리 (화면 안쪽만 바뀌어도 한 번만 연결)
 function bindQtContent() {
+  qtSelectionAbort?.abort();
   const content = $("#q-content");
   const clip = $(".rd-clip"); // 본문 · 묵상 화면과 아래에 고정된 절 선택 막대가 모두 들어 있음
+  const selectionButton=$("#q-selection-note");let selectedText="";
+  const selectionAbort=qtSelectionAbort=new AbortController();
+  const refreshSelectionAction=()=>{
+    const selection=window.getSelection(),text=selection?.toString().trim(),range=selection?.rangeCount?selection.getRangeAt(0):null;
+    if(!range||!text||!range.commonAncestorContainer||!content.contains(range.commonAncestorContainer)||text.length>2000){selectedText="";selectionButton.hidden=true;return;}
+    const passage=content.querySelector("#q-passage"),inVerse=passage&&range.intersectsNode(passage),inStudy=[...content.querySelectorAll(".qt-sec")].some(section=>range.intersectsNode(section));
+    if(inVerse||!inStudy){selectedText="";selectionButton.hidden=true;return;}
+    selectedText=text;selectionButton.hidden=false;
+  };
+  document.addEventListener("selectionchange",refreshSelectionAction,{signal:selectionAbort.signal});
+  clip.addEventListener("touchend",()=>requestAnimationFrame(refreshSelectionAction),{passive:true,signal:selectionAbort.signal});
+  clip.addEventListener("pointerup",()=>requestAnimationFrame(refreshSelectionAction),{signal:selectionAbort.signal});
+  window.addEventListener("hashchange",()=>{selectionButton.hidden=true;selectionAbort.abort();},{once:true,signal:selectionAbort.signal});
+  selectionButton.addEventListener("pointerdown",e=>e.preventDefault());
+  selectionButton.addEventListener("click",()=>{
+    if(!selectedText)return;
+    saveQt({note:appendQuote((state.qt[qtDate]||{}).note,selectedText)});qtSaved();
+    window.getSelection()?.removeAllRanges();selectionButton.hidden=true;selectedText="";
+    showToast("선택한 문구를 QT 묵상 노트에 넣었어요",{label:"노트 보기",onClick:()=>openSheet("note",renderQtSheet)});
+  });
   clip.addEventListener("change", (e) => { if (e.target.closest("input[data-ri]")) qtPassageCount(); });
   clip.addEventListener("click", (e) => {
     const box = $("#q-passage");
@@ -320,10 +341,6 @@ function bindQtContent() {
     }
     const quotes = qtPassageQuote();
     if (!quotes.length) return;
-    if (act.qa === "copy") {
-      quotes.forEach((q) => logCopied(q.idx, q.text.split("\n")[0], "qt"));
-      return copyText(quotes.map((q) => q.text).join("\n\n"), `${quotes[0].text.split("\n")[0]} 복사했어요`);
-    }
     insertQuote("qt", quotes.map((q) => q.text).join("\n\n"));
     box.querySelectorAll("input[data-ri]").forEach((c) => { c.checked = false; });
     qtPassageCount();

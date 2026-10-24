@@ -468,6 +468,8 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .rd-clip:has(.sheet:not([hidden])) .qp-fixed { display: none; }
 .rd.qt .qt-read { padding-bottom: 130px; }
 .rd.qt .paste-fab { bottom: 84px; }
+.qt-selection-note { position: absolute; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); z-index: 4; min-height: 46px; padding: 10px 14px; border: 1px solid var(--qt); border-radius: 12px; background: var(--qt); color: #fff; box-shadow: 0 3px 12px #0003; font: inherit; font-weight: 700; touch-action: manipulation; }
+.qt-selection-note[hidden], .rd-clip:has(.sheet:not([hidden])) .qt-selection-note { display: none; }
 .qp-fixed { flex-wrap: nowrap; gap: 4px; padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); }
 .qp-fixed .vp-n { min-width: 0; font-size: .8rem; overflow: hidden; text-overflow: ellipsis; }
 .qp-fixed .btn { flex: none; padding: 6px 9px; font-size: .82rem; white-space: nowrap; }

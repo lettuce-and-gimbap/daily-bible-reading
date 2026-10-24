@@ -12,9 +12,12 @@ function pixelBibleBannerHtml() {
 }
 
 function updatePixelBibleEntry() {
+  if (typeof document === "undefined" || !document.getElementById) return;
   const entry = document.getElementById("pixel-bible-entry");
-  if (entry) entry.hidden = !["", "#today"].includes(location.hash);
+  if (entry) entry.hidden = !["", "#today", "#qt"].includes(location.hash);
 }
+updatePixelBibleEntry();
+if (typeof window !== "undefined") window.addEventListener("hashchange", updatePixelBibleEntry);
 
 function pixelBibleModal(contents, world = false) {
   const focus = document.activeElement;
