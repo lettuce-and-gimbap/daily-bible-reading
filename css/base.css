@@ -187,3 +187,6 @@ textarea { resize: vertical; line-height: 1.6; }
 .tabs.sl-active > a { position: relative; z-index: 1; }
 .tabs > .slide-thumb { background: var(--surface); box-shadow: 0 1px 3px rgb(0 0 0 / .1); border-radius: 9px; }
 .tabs { position: relative; }
+
+.app-entrance{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;background:linear-gradient(155deg,var(--kst-sky),var(--kst-light));color:#2b504b;pointer-events:none;animation:entrance-out .25s .85s both}.app-entrance img{border-radius:28px;box-shadow:0 12px 40px #27333e22}.entrance-celestial{position:absolute;top:22%;right:25%;font-size:48px;color:#fcf2c6;text-shadow:0 0 22px #fff7c477}[data-kst-light="night"] .app-entrance{color:#e8e9db;background:linear-gradient(155deg,#233151,#506280)}[data-kst-light="dawn"] .app-entrance{background:linear-gradient(155deg,#827da8,#d2afbd,#f2d3ad)}[data-kst-light="dusk"] .app-entrance{background:linear-gradient(155deg,#847291,#d6a09d,#f1c5a3)}@keyframes entrance-out{to{opacity:0}}@media(prefers-reduced-motion:reduce){.app-entrance{animation:none}}
+[data-kst-light="night"] .entrance-celestial::after{content:'✦　·　✧';position:absolute;left:-120px;top:-25px;font-size:20px;letter-spacing:20px;color:#dbe6e9}

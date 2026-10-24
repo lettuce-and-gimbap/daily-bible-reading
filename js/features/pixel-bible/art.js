@@ -1,3 +1,4 @@
+import {drawPhysicalDetails} from './physical-traits.js';
 import {drawWardrobe} from './wardrobe.js';
 import {drawCreature} from './creature-art.js';
 import {creatureForName} from './creatures.js';
@@ -126,7 +127,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(style.collar===2)r(10,22,4,1,style.accent);
   if(style.hem===1)r(8,31,8,1,style.accent);
   if(style.hem===2){r(8,29,1,3,style.accent);r(15,29,1,3,style.accent);}
-  drawWardrobe(r,style,'down');
+  drawWardrobe(r,style,'down');drawPhysicalDetails(r,style);
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
   ctx.save();ctx.translate(0,4);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
@@ -144,8 +145,9 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
     if(style.fringe===3)r(10,5,4,1,"#ffffff22");
   }
   if(style.bald){r(8,3,8,3,skin);r(7,5,10,2,skin);r(7,7,1,1,skin);}
-  drawFaceExpression(r,expression,{look,spacing:style.eyeSpacing,tone:style.eyeTone});
-  r(8,11,1,1,blush);r(15,11,1,1,blush);
+  if(style.hairSheen&&!style.hood&&!style.bald){r(8,4,8,1,'#ffffff44');r(7,5,2,1,'#ffffff22');}
+  drawFaceExpression(r,expression,{look,spacing:style.eyeSpacing,tone:style.eyeTone,soft:style.softEyes});
+  r(8,11,1,1,style.warmCheeks?'#d38d79':blush);r(15,11,1,1,style.warmCheeks?'#d38d79':blush);
   if(style.eyeliner){r(9+look,8,2,1,outline);r(14+look,8,2,1,outline);}
   if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}
   if(style.crown){r(7,1,10,2,outline);r(8,1,8,1,style.trim||'#d9b568');for(const x of [7,11,15])r(x,-1,2,2,'#d9b568');r(11,1,2,1,'#a95e64');}

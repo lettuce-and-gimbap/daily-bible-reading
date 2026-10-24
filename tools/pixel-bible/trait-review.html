@@ -1,0 +1,10 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>외형 특징 검토</title><style>body{margin:0;background:#e6e0d1}canvas{max-width:100%;image-rendering:pixelated}</style><canvas width="1200"></canvas><script type="module">
+import {PHYSICAL_TRAITS} from '../../js/features/pixel-bible/physical-traits.js';
+import {appearanceFor} from '../../js/features/pixel-bible/appearance.js';
+import {drawPixelCharacter} from '../../js/features/pixel-bible/art.js';
+const c=document.querySelector('canvas').getContext('2d');c.canvas.height=Math.ceil(PHYSICAL_TRAITS.length/4)*230;c.imageSmoothingEnabled=false;
+for(const [i,t]of PHYSICAL_TRAITS.entries()){
+ const name=t.names[0],x=i%4*300,y=Math.floor(i/4)*230,s=appearanceFor(name,0,'',t.ref.split('; '));c.fillStyle=i%2?'#e4e6d4':'#d7dfcf';c.fillRect(x,y,300,230);c.fillStyle='#2f423b';c.font='16px sans-serif';c.fillText(name,x+12,y+25);c.font='12px sans-serif';c.fillText(t.ref,x+12,y+49);
+ for(const [j,direction]of ['down','right','up','left'].entries())drawPixelCharacter(c,s,x+36+j*74,y+180,{scale:2,direction});
+}window.ready=true;
+</script></html>

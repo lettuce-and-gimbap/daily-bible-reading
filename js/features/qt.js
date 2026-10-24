@@ -262,7 +262,7 @@ async function paintQtPassage(date, d) {
         <label class="vp-row">
           <input type="checkbox" class="sr-only" data-ri="${i}">
           <span class="vp-num">${esc(r.label)}</span>
-          <span class="vp-txt">${ScriptureStudy.glossaryHtml(r.texts[0])}${r.texts[1] ? `<small><i>${esc(names[1] || "")}</i> ${ScriptureStudy.glossaryHtml(r.texts[1])}</small>` : ""}</span>
+          <span class="vp-txt"><span class="study-version" data-edition="${esc(versionFor(vers[0],CHAPTERS[r.idx].book))}">${ScriptureStudy.glossaryHtml(r.texts[0])}</span>${r.texts[1] ? `<small><i>${esc(names[1] || "")}</i> <span class="study-version" data-edition="${esc(versionFor(vers[1],CHAPTERS[r.idx].book))}">${ScriptureStudy.glossaryHtml(r.texts[1])}</span></small>` : ""}</span>
         </label>`).join("")}</div>`;
     $("#q-selbar").hidden = false;
     ScriptureStudy.mount(box,rows.map(r=>`${r.idx}:${versionFor(vers[0],CHAPTERS[r.idx].book)}:${vers[1]&&versionFor(vers[1],CHAPTERS[r.idx].book)!==versionFor(vers[0],CHAPTERS[r.idx].book)?versionFor(vers[1],CHAPTERS[r.idx].book):''}:${r.label}`));

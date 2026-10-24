@@ -100,6 +100,7 @@ function renderStats() {
   app.innerHTML = `
     ${pixelBibleBannerHtml()}
     ${changelogCardHtml()}
+    ${ScriptureStudy.settingsHtml()}
     <section class="card theme-card">
       <h3 class="label">화면 모드</h3>
       <div class="seg wide">
@@ -164,6 +165,7 @@ function renderStats() {
   bindReminderCard();
   bindExportCard();
 
+  ScriptureStudy.bindSettings(app);
   document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
     state.settings.theme = b.dataset.themeSet;
     applyTheme();

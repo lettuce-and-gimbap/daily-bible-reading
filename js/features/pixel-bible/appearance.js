@@ -1,3 +1,4 @@
+import {withPhysicalTraits} from './physical-traits.js';
 import {physiqueFor} from './physique.js';
 import {wardrobeFor} from './wardrobe.js';
 import { EXTRA_APPEARANCES } from './extra-appearances.js';
@@ -67,13 +68,13 @@ export function appearanceFor(name, index=0, role='', refs=[]) {
   if(name==='빌립' && !refs.some(r=>/^사도행전 8[장:]/.test(r)) && !/전도자|일곱.*집사/.test(role) && (refs.length||role))key=null;
   if(name==='스가랴' && refs.length && !refs.some(r=>r.startsWith('스가랴 ')))key=null;
   if(name.startsWith('아하시야(') && /여호람/.test(name))key=null;
-  if(key) return wardrobeFor({...visualVariation(name),...APPEARANCES[key],key,physique:physiqueFor(name,role,refs),design:APPEARANCES[key].design+' 기록되지 않은 머리·수염·색과 작은 옷깃 무늬는 창작이에요.'},role);
+  if(key) return withPhysicalTraits(wardrobeFor({...visualVariation(name),...APPEARANCES[key],key,physique:physiqueFor(name,role,refs),design:APPEARANCES[key].design+' 기록되지 않은 머리·수염·색과 작은 옷깃 무늬는 창작이에요.'},role),name,refs);
   // 기록이 없는 인물은 역할에 맞는 실루엣을 쓰고 창작임을 명시한다.
   const seed=[...name].reduce((h,c)=>(Math.imul(h,31)+c.codePointAt(0))>>>0,0);
   const colors=['#a87373','#7396ae','#a78db9','#bc995e','#709a83','#747caa','#9c846c','#869c9e','#bd8f9b','#8d9970','#a99d80','#8c7c99'];
-  return wardrobeFor({...visualVariation(name),key:'generic',name,physique:physiqueFor(name,role,refs),coat:colors[seed%colors.length],hair:['#604b39','#433d37','#95816b'][seed%3],
+  return withPhysicalTraits(wardrobeFor({...visualVariation(name),key:'generic',name,physique:physiqueFor(name,role,refs),coat:colors[seed%colors.length],hair:['#604b39','#433d37','#95816b'][seed%3],
     ...(role.includes('왕')?{royal:true,crown:true}:role.includes('선지자')?{mantle:true,scroll:true}:role.includes('제사장')?{headband:true,sash:'#8b9ebc'}:{vest:seed%2===0,headband:seed%3===0}),
-    evidence:'외모를 확정할 본문·주석 근거를 아직 등록하지 않았어요.',design:'의복과 소품은 역할을 구별하기 위한 창작 디자인이에요.'},role);
+    evidence:'외모를 확정할 본문·주석 근거를 아직 등록하지 않았어요.',design:'의복과 소품은 역할을 구별하기 위한 창작 디자인이에요.'},role),name,refs);
 }
 
 // 등장 순서와 무관하게 머리·옷깃·옷자락의 작은 창작 차이를 유지한다.

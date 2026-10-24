@@ -13,17 +13,68 @@ window.ScriptureStudy=(()=>{
  function save(){try{localStorage.setItem(storage,JSON.stringify(records));return true;}catch(_){alert('표시를 저장하지 못했어요. 저장 공간을 확인해 주세요.');return false;}}
  function glossaryHtml(text){const pattern=new RegExp(Object.keys(glossary).sort((a,b)=>b.length-a.length).join('|'),'g');let start=0,out='';for(const m of text.matchAll(pattern)){out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(m[0])}" aria-label="${esc(m[0])} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));}
  function modal(title){document.querySelector('.study-dialog')?.remove();const d=document.createElement('dialog');d.className='study-dialog';d.setAttribute('aria-label',title);d.innerHTML='<h3></h3><div class="study-dialog-body"></div><button type="button">닫기</button>';d.querySelector('h3').textContent=title;d.querySelector('button').onclick=()=>d.close();d.addEventListener('close',()=>d.remove());document.body.append(d);d.showModal();return d.querySelector('.study-dialog-body');}
- document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(!g)return;const body=modal(term.dataset.studyTerm);body.innerHTML=`<p>${esc(g.text)}</p><small>참고: ${esc(g.ref)}</small>`;},true);
+ document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(!g)return;const body=modal(term.dataset.studyTerm);body.innerHTML=`<p>${esc(g.text)}</p><small>참고: ${esc(g.ref)}</small>`;},true);
  document.addEventListener('keydown',e=>{if(e.target.matches('[data-study-term]')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
- function mount(root,keys){
-  const rows=[...root.querySelectorAll('.vp-row')];if(!rows.length)return;
-  rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];paint(row);});
-  root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<span>절 선택 후 형광펜·메모</span><button data-study-color="yellow">노랑</button><button data-study-color="green">초록</button><button data-study-color="pink">분홍</button><button data-study-color="">표시 지우기</button><button data-study-note>메모</button><small aria-live="polite">이 기기에 자동 저장돼요.</small>';root.querySelector('.vp-list').before(bar);
-  bar.onclick=e=>{const b=e.target.closest('button');if(!b)return;const selected=rows.filter(r=>r.querySelector('input').checked);if(!selected.length){bar.querySelector('small').textContent='먼저 표시할 절을 선택해 주세요.';return;}
-   if(b.hasAttribute('data-study-note')){const body=modal('선택한 구절 메모');body.innerHTML='<label>메모<textarea rows="5"></textarea></label><button type="button">저장</button>';body.querySelector('textarea').value=records[selected[0].dataset.studyKey]?.note||'';body.querySelector('button').onclick=()=>{for(const r of selected){const k=r.dataset.studyKey;records[k]={...records[k],note:body.querySelector('textarea').value};}if(save()){selected.forEach(paint);body.closest('dialog').close();}};return;}
-   for(const row of selected){const k=row.dataset.studyKey;records[k]={...records[k],color:b.dataset.studyColor};}if(save()){selected.forEach(paint);bar.querySelector('small').textContent='이 기기에 저장했어요.';}
-  };
+
+ const colorKey='scripture-highlight-color:v1';
+ const validColor=value=>/^#[0-9a-f]{6}$/i.test(value);
+ function currentColor(){const value=typeof state!=='undefined'?state.settings.highlightColor:null;const stored=localStorage.getItem(colorKey);return validColor(value)?value:validColor(stored)?stored:'#ffe49b';}
+ function setColor(color){if(!validColor(color))return;localStorage.setItem(colorKey,color);if(typeof state!=='undefined'){state.settings.highlightColor=color;}return color;}
+ const fingerprint=text=>{let hash=2166136261;for(let i=0;i<text.length;i++)hash=Math.imul(hash^text.charCodeAt(i),16777619);return (hash>>>0).toString(16);};
+ let pending=[],tip=null,selectionTimer;
+ function closeTip(){tip?.remove();tip=null;}
+ function renderSegment(segment){
+  const text=segment.dataset.studyText,entry=records[segment.dataset.studySegment]||{},hash=fingerprint(text);
+  const ranges=(entry.ranges||[]).filter(r=>r.hash===hash&&r.start>=0&&r.end<=text.length&&r.end>r.start&&validColor(r.color));
+  const points=[...new Set([0,text.length,...ranges.flatMap(r=>[r.start,r.end])])].sort((a,b)=>a-b);
+  segment.innerHTML=points.slice(0,-1).map((start,i)=>{const end=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=end),body=glossaryHtml(text.slice(start,end));return match?`<mark class="study-mark" style="background:${match.color};color:${[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1'}">${body}</mark>`:body;}).join('');
  }
- function paint(row){const entry=records[row.dataset.studyKey]||{};row.dataset.studyColor=entry.color||'';if(row.nextElementSibling?.classList.contains('study-note'))row.nextElementSibling.remove();if(entry.note){const note=document.createElement('button');note.type='button';note.className='study-note';note.textContent='메모 보기';note.onclick=e=>{e.preventDefault();e.stopPropagation();const body=modal('구절 메모');const p=document.createElement('p');p.textContent=entry.note;body.append(p);};row.after(note);}}
- return {mount,glossaryHtml};
+ function selectionParts(){
+  const selection=window.getSelection();if(!selection||selection.isCollapsed||!selection.rangeCount)return [];
+  const range=selection.getRangeAt(0),parts=[];
+  for(const el of document.querySelectorAll('[data-study-segment]')){
+   if(!range.intersectsNode(el))continue;
+   const offset=(node,index)=>{const before=document.createRange();before.selectNodeContents(el);before.setEnd(node,index);return before.toString().length;};
+   const start=el.contains(range.startContainer)?offset(range.startContainer,range.startOffset):0;
+   const end=el.contains(range.endContainer)?offset(range.endContainer,range.endOffset):el.textContent.length;
+   if(end>start)parts.push({el,start,end});
+  }return parts;
+ }
+ function offerHighlight(){
+  const parts=selectionParts();if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
+  tip=document.createElement('div');tip.className='study-selection-tools';tip.setAttribute('role','toolbar');tip.setAttribute('aria-label','선택한 글 형광펜');tip.innerHTML='<button type="button" data-selection-mark>형광펜</button><button type="button" data-selection-clear>표시 지우기</button>';
+  tip.querySelector('[data-selection-mark]').style.borderBottom='5px solid '+currentColor();
+  tip.addEventListener('pointerdown',e=>e.preventDefault());
+  tip.onclick=e=>{const b=e.target.closest('button');if(!b)return;for(const {el,start,end}of pending){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);let ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash);
+    if(b.hasAttribute('data-selection-clear'))ranges=ranges.flatMap(r=>r.end<=start||r.start>=end?[r]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);
+    else ranges.push({start,end,color:currentColor(),hash});
+    records[key]={...records[key],ranges};
+   }if(save()){for(const part of pending)renderSegment(part.el);window.getSelection()?.removeAllRanges();closeTip();pending=[];}};
+  document.body.append(tip);const rect=window.getSelection().getRangeAt(0).getBoundingClientRect(),vw=document.documentElement.clientWidth,vh=window.innerHeight;
+  tip.style.left=Math.max(8,Math.min(vw-tip.offsetWidth-8,rect.left))+'px';tip.style.top=Math.max(8,Math.min(vh-tip.offsetHeight-8,rect.bottom+8))+'px';
+ }
+ document.addEventListener('click',e=>{if(e.target.closest('.vp-row')&&!e.target.closest('input')&&selectionParts().length){e.preventDefault();e.stopPropagation();}},true);
+ document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(offerHighlight,180);});
+ document.addEventListener('copy',()=>setTimeout(offerHighlight,0));
+ document.addEventListener('scroll',closeTip,true);
+ function mount(root,keys){
+  const rows=[...root.querySelectorAll('.vp-row')];
+  rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');
+   row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;
+    // Keep earlier whole-verse marks visible when moving to text ranges.
+    const old=records[keys[i]],colors={yellow:'#fff0a3',green:'#d7efbd',pink:'#f7d0dd'};
+    if(old?.color&&!records[segment.dataset.studySegment])records[segment.dataset.studySegment]={ranges:[{start:0,end:segment.textContent.length,color:colors[old.color]||'#fff0a3',hash:fingerprint(segment.textContent)}]};
+    renderSegment(segment);
+   });paint(row);
+  });save();
+  root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<span>단어·구를 길게 눌러 선택하면 형광펜을 칠할 수 있어요.</span><button type="button" data-study-note>선택한 절에 메모</button><small aria-live="polite">형광펜 색은 관리에서 바꿔요. 표시는 이 기기에 저장돼요.</small>';root.querySelector('.vp-list')?.before(bar);
+  bar.onclick=e=>{if(!e.target.closest('[data-study-note]'))return;const selected=rows.filter(r=>r.querySelector('input').checked);if(!selected.length){bar.querySelector('small').textContent='메모할 절을 먼저 선택해 주세요.';return;}const body=modal('선택한 구절 메모');body.innerHTML='<label>메모<textarea rows="5"></textarea></label><button type="button">저장</button>';body.querySelector('textarea').value=records[selected[0].dataset.studyKey]?.note||'';body.querySelector('button').onclick=()=>{for(const r of selected){const k=r.dataset.studyKey;records[k]={...records[k],note:body.querySelector('textarea').value};}if(save()){selected.forEach(paint);body.closest('dialog').close();}};};
+ }
+ function paint(row){if(row.nextElementSibling?.classList.contains('study-note'))row.nextElementSibling.remove();const entry=records[row.dataset.studyKey]||{};if(entry.note){const note=document.createElement('button');note.type='button';note.className='study-note';note.textContent='메모 보기';note.onclick=e=>{e.preventDefault();e.stopPropagation();const body=modal('구절 메모');const p=document.createElement('p');p.textContent=entry.note;body.append(p);};row.after(note);}}
+ function settingsHtml(){return `<section class="card"><h3>형광펜 색상</h3><p class="muted small">단어·구를 선택해 표시할 때 쓸 색이에요.</p><label>색상 <input type="color" data-highlight-color value="${esc(currentColor())}"></label> <label>HEX <input data-highlight-hex value="${esc(currentColor())}" maxlength="7" size="8" aria-label="형광펜 HEX 색상"></label><label>RGB <input data-highlight-rgb placeholder="255, 228, 155" size="14" aria-label="형광펜 RGB 값"></label><button class="btn" type="button" data-highlight-eyedropper ${'EyeDropper' in window?'':'hidden'}>화면에서 색 추출</button><p class="muted small" data-highlight-status>색상 선택기에서 색을 고르거나 #RRGGBB 값을 입력하세요.</p></section>`;}
+ function bindSettings(root){const color=root.querySelector('[data-highlight-color]'),hex=root.querySelector('[data-highlight-hex]'),status=root.querySelector('[data-highlight-status]');if(!color)return;
+  const apply=value=>{if(!validColor(value)){status.textContent='예: #FFE49B 형식으로 입력해 주세요.';return;}setColor(value);color.value=hex.value=value;root.querySelector('[data-highlight-rgb]').value=[1,3,5].map(i=>parseInt(value.slice(i,i+2),16)).join(', ');if(typeof persist==='function')persist();status.textContent='형광펜 색상을 저장했어요.';};color.onchange=()=>apply(color.value);hex.onchange=()=>apply(hex.value);const rgb=root.querySelector('[data-highlight-rgb]');rgb.value=[1,3,5].map(i=>parseInt(currentColor().slice(i,i+2),16)).join(', ');rgb.onchange=()=>{const values=rgb.value.split(',').map(x=>x.trim());if(values.length!==3||values.some(x=>!/^\d{1,3}$/.test(x)||Number(x)>255)){status.textContent='RGB는 0~255 숫자 세 개를 쉼표로 구분해 주세요.';return;}apply('#'+values.map(x=>Number(x).toString(16).padStart(2,'0')).join(''));};
+  root.querySelector('[data-highlight-eyedropper]')?.addEventListener('click',async()=>{try{const result=await new EyeDropper().open();apply(result.sRGBHex);}catch(_){status.textContent='색 추출을 취소했어요.';}});
+ }
+ return {mount,glossaryHtml,currentColor,setColor,settingsHtml,bindSettings};
 })();

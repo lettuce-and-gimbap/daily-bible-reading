@@ -1,3 +1,4 @@
+import '../../shared/daylight.js';
 import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
@@ -423,7 +424,7 @@ export async function mountPixelWorld(shell, options) {
     }
     renderRecommendations(n);
     const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physicalEvidence||'현재 본문에서 확정하지 않은 외모는 창작으로 표현해요.')}</p><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
     renderRecipes();clearInfo();
   }
   function move(n, goal, task = null) {
@@ -914,6 +915,7 @@ export async function mountPixelWorld(shell, options) {
     const v=view();
     ctx.imageSmoothingEnabled=false;ctx.save();ctx.setTransform(v.scale,0,0,v.scale,v.x,v.y);ctx.save();
     ctx.drawImage(background,0,0);
+    const light=globalThis.KstLight.at();
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
     const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
@@ -923,10 +925,12 @@ export async function mountPixelWorld(shell, options) {
       ctx.fillStyle=valid?'#79c99566':'#e17e7866';ctx.fillRect((p.x-.6)*TILE,(p.y-.4)*TILE,1.2*TILE,.8*TILE);
       ctx.save();ctx.globalAlpha=.8;drawWorldObject(ctx,{...objectHold.o,...grabbedOrigin(objectHold)},TILE,objectHold.frame);ctx.restore();
     }
+    if(light.alpha){ctx.save();ctx.globalAlpha=light.alpha;ctx.fillStyle=light.shade;ctx.fillRect(0,0,WORLD.width,WORLD.height);ctx.restore();}
     if(showRelationships)drawRelationshipLinks(ctx,relationshipLinks(model.relations,npcs,drag));
     ctx.restore();
     if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/canvas.getBoundingClientRect().width;ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px "DungGeunMo", monospace`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
     ctx.restore();positionSpeech();positionEncounters();
+    shell.dataset.kstLight=globalThis.KstLight.at().key;
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
     const scripture=shell.querySelector('.pb-scripture');if(scripture){e.preventDefault();scripture.remove();canvas.focus();return;}

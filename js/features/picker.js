@@ -83,8 +83,8 @@ async function renderVersePicker(body, target, idx) {
       <label class="vp-row">
         <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
         <span class="vp-num">${esc(r.v.label)}</span>
-        <span class="vp-txt">${ScriptureStudy.glossaryHtml(r.v.text)}${r.also.map((w) =>
-          `<small><i>${esc(vname(ver2))}</i> ${ScriptureStudy.glossaryHtml(w.text)}</small>`).join("")}</span>
+        <span class="vp-txt"><span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.v.text)}</span>${r.also.map((w) =>
+          `<small><i>${esc(vname(ver2))}</i> <span class="study-version" data-edition="${esc(ver2)}">${ScriptureStudy.glossaryHtml(w.text)}</span></small>`).join("")}</span>
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
