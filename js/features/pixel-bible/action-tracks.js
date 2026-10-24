@@ -40,7 +40,7 @@ Object.assign(tracks,{
 });
 const lookup=new Map();
 for(const [track,names] of Object.entries(groups))for(const name of names.split(' '))if(!lookup.has(name))lookup.set(name,track);
-export function actionTrack(gesture){return ({grind:'grind',write:'write',trace:'write',sow:'sow',sprinkle:'sow',wash:'wash',rinse:'wash',swing:'hammer',knead:'grind',press:'grind'})[gesture]||lookup.get(gesture)||null;}
+export function actionTrack(gesture){return ({grind:'grind',write:'write',trace:'write',sow:'sow',sprinkle:'sow',wash:'wash',rinse:'wash',swing:'hammer',knead:'grind',press:'grind',divide:'grind'})[gesture]||lookup.get(gesture)||null;}
 export function applyActionTrack(pose,position){
  if(pose.archery||pose.lie||pose.kneel||pose.wearing||pose.unique||['wear','remove','climb-ladder'].includes(pose.actual))return pose;
  const track=tracks[actionTrack(pose.actual)];if(!track)return pose;

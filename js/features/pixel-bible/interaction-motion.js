@@ -1,3 +1,4 @@
+import {expandedActions} from './additional-actions.js';
 import {applyActionTrack} from './action-tracks.js';
 import {creatureRoutine} from './creatures.js';
 import {OBJECT_USAGE} from './object-usage.js';
@@ -69,7 +70,8 @@ const extra={
 };
 INTERACTION_MOTIONS.rope=OBJECT_USAGE.rope;
 for(const [category,values] of Object.entries(extra))INTERACTION_MOTIONS[category].push(...values);
-export function interactionOptions(kind){
+export function interactionOptions(kind){return expandedActions(kind,baseInteractionOptions(kind));}
+export function baseInteractionOptions(kind){
  if(OBJECT_USAGE[kind])return OBJECT_USAGE[kind];
  if(kind==='ark-covenant')return [['observe','곁에서 바라보기'],['bow','고개 숙이기'],['hands','손 모으기'],['look','멀리서 살펴보기'],['step-back','물러서기'],['kneel','곁에 무릎 굽히기']];
  if(['basin','laver'].includes(kind))return [['wash','손 씻기'],['rinse','물로 헹구기'],['fill','물 채우기'],['pour','물을 떠 옮기기'],['scoop','물 떠 보기'],['wipe','가장자리 닦기']];
