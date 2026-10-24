@@ -67,15 +67,22 @@ export function touchSlopPixels(canvasWidth,cssWidth,cssSlop=12) {
   return cssSlop*Math.max(1,canvasWidth/cssWidth);
 }
 
+const eventBooks=new Map();
+async function enrichBook(code,data){
+ if(!['gen','exo','lev','num','deu','jos','jdg','rut','1sa','2sa','1ki','2ki','1ch','2ch','ezr','neh','est','job','psa','pro','ecc','sng','isa','jer','lam','ezk','dan','hos','jol','amo','oba','jnh','mic','nam','hab','zep','hag','zec','mal'].includes(code))return data;
+ if(!eventBooks.has(code))eventBooks.set(code,fetch(new URL(`../../../data/pixel-bible/events/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
+ const extra=await eventBooks.get(code);if(!extra)return data;
+ const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name))],eventScenes:(extra.scenes||[]).filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
+}
 async function loadBook(code, cachedBook) {
   const existing = cachedBook?.(code);
-  if (existing) return existing;
+  if (existing) return enrichBook(code,existing);
   if (!books.has(code)) {
     books.set(code, fetch(`data/summary/${code}.json`, { cache: "force-cache" }).then(async (r) => {
       if (!r.ok) throw new Error(`본문 자료 ${r.status}`);
       const data = await r.json();
       if (!data.chapters) throw new Error("본문 자료 형식 오류");
-      return data;
+      return enrichBook(code,data);
     }).catch((e) => { books.delete(code); throw e; }));
   }
   return books.get(code);
@@ -102,7 +109,9 @@ export function buildWorldModel(chapters) {
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
-  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...scenesForChapters(chapters)], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  const dedicated=scenesForChapters(chapters);
+  const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&s.actors.every(name=>cast.some(p=>p.name===name))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)));
+  return { cast, relations, events, scenes: [...extraScenes,...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 명단을 교체하지 않고 통독 분량의 모든 인물을 함께 유지한다.
@@ -514,7 +523,7 @@ export async function mountPixelWorld(shell, options) {
   }
   function interact(n,o) {
     if(n.creature&&!creatureCanUse(n,o.kind)){clearInfo();return;}
-    const scene = model.scenes.find((s) => s.object === o.kind && s.actors.includes(n.name) && sceneActors(s).every(Boolean));
+    const scene = model.scenes.find((s) => !s.narrationOnly && s.object === o.kind && s.actors.includes(n.name) && sceneActors(s).every(Boolean));
     if (scene) return queueScene(scene,o);
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
@@ -893,7 +902,7 @@ export async function mountPixelWorld(shell, options) {
     }
     const idle=npcs.filter(n=>n.creature?.kind!=='plant'&&!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
     const pairs=objects.filter(o=>!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
-      const specific=model.scenes.filter(s=>s.object===o.kind&&sceneActors(s).every(Boolean));
+      const specific=model.scenes.filter(s=>!s.narrationOnly&&s.object===o.kind&&sceneActors(s).every(Boolean));
       return idle.filter(n=>!n.creature||creatureCanUse(n,o.kind)).map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
     });
     const chosen=rankObjectVisits(pairs,time,objectCooldown,visitorCooldown)[0];if(!chosen)return;
