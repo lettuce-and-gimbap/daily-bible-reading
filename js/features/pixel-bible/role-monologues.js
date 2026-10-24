@@ -16,6 +16,8 @@ export function roleMonologues(n,occurrences,relation){
   [/동역|제자|사도|전도|복음/,['함께 믿는 이들의 곁을 지키고 싶어. 내게 맡겨진 소식을 전하자.','길이 멀어도 이 소식을 기다리는 이들에게 가야겠어.','혼자 걷는 길은 아니구나. 동역자들과 마음을 나누자.'],'determined'],
  ];
  const match=rules.find(([pattern])=>pattern.test(role));
- const texts=match?.[1]||['지금 내 앞에 놓인 일을 피하지 말고 마주해 보자.','함께 있는 이들의 말을 조금 더 들어 보고 싶어.','오늘 이 자리에서 내가 할 수 있는 일을 찾자.'];
+ // 이름이나 가족관계만 있는 경우 기록되지 않은 속마음을 공통 대사로 채우지 않는다.
+ if(!match||/아내|남편|아버지|어머니|아들|딸|형제|자매|며느리|친족/.test(match[0].source))return [];
+ const texts=match[1];
  return texts.map(text=>({text,ref:relation?.ref||occurrences[0]?.ref||n.refs?.[0]||'',origin:'chapter-role',emotion:match?.[2]||'neutral',detailText:[role,relation?.text].filter(Boolean).join(' ')}));
 }

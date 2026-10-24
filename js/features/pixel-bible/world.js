@@ -1,3 +1,4 @@
+import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
 import {creatureCanUse} from './creatures.js';
@@ -224,14 +225,14 @@ export async function mountPixelWorld(shell, options) {
       }
     }
   }
-  async function openSpeechPassage(reference=shownSpeech?.ref){
+  async function openSpeechPassage(reference=shownSpeech?.ref,terms=contextTerms(shownSpeech)){
     const parsed=parseReference(reference);if(!parsed)return;
     shell.querySelector('.pb-scripture')?.remove();
     hideSpeech();
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label',reference);
     panel.innerHTML='<header><b></b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body" aria-live="polite">본문을 불러오는 중…</div>';
     panel.querySelector('b').textContent=reference;shell.append(panel);panel.querySelector('button').focus();
-    try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;}
+    try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;emphasizePassage(panel.querySelector('.pb-scripture-body'),terms);}
     catch(_){if(panel.isConnected)panel.querySelector('.pb-scripture-body').textContent='본문을 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 눌러 주세요.';}
   }
   function openSpeechDetails(choice=shownSpeech){
@@ -243,8 +244,8 @@ export async function mountPixelWorld(shell, options) {
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사 쉽게 이해하기');
     panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;
-    panel.querySelector('.pb-detail-context p').textContent=explanation;
-    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
+    panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
     shell.append(panel);panel.querySelector('button').focus();
   }
   function updateEncounters(now){
@@ -261,7 +262,7 @@ export async function mountPixelWorld(shell, options) {
         el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
         el.dataset.encounter=id;el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);el.querySelector('p').textContent=line.text;
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
-        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';
+        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
       }
     }
@@ -770,9 +771,9 @@ export async function mountPixelWorld(shell, options) {
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }
     if(action==='encounter-details'){const id=b.closest('[data-encounter]').dataset.encounter;openSpeechDetails(encounterLines.find(l=>l.session+':'+l.slot===id));return;}
-    if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference);return;}
+    if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='speech-details'){openSpeechDetails();return;}
-    if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference);return;}
+    if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='passage'){await openSpeechPassage();return;}
     if(action==='close-scripture'){shell.querySelector('.pb-scripture')?.remove();canvas.focus();return;}
     if(action==="design" && !shell.querySelector(".pb-design")) {

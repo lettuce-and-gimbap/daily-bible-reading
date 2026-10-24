@@ -122,3 +122,4 @@
 
 .pb-encounter{z-index:4;max-width:min(210px,calc(50% - 20px));border-color:#8b6e32;background:#fff4c9;}
 .pb-encounter::after{background:#fff4c9;}
+.pb-scripture mark{background:#f4db8b;color:#302f35;padding:0 2px;border-radius:2px}

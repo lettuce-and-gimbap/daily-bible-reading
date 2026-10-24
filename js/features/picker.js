@@ -83,8 +83,8 @@ async function renderVersePicker(body, target, idx) {
       <label class="vp-row">
         <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
         <span class="vp-num">${esc(r.v.label)}</span>
-        <span class="vp-txt">${esc(r.v.text)}${r.also.map((w) =>
-          `<small><i>${esc(vname(ver2))}</i> ${esc(w.text)}</small>`).join("")}</span>
+        <span class="vp-txt">${ScriptureStudy.glossaryHtml(r.v.text)}${r.also.map((w) =>
+          `<small><i>${esc(vname(ver2))}</i> ${ScriptureStudy.glossaryHtml(w.text)}</small>`).join("")}</span>
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
@@ -92,6 +92,7 @@ async function renderVersePicker(body, target, idx) {
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
+  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${r.v.label}`));
   refresh();
 
   // 고른 절(번호 집합)을 보기 설정 역본마다 모아 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식으로
