@@ -1,0 +1,19 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>배경·체형 비교</title><style>body{background:#e8e0ce;font:18px sans-serif}canvas{max-width:100%;image-rendering:pixelated}</style><canvas width="1280" height="1600"></canvas><script type="module">
+import {drawWholeBackground} from '../../js/features/pixel-bible/landscape.js';
+import {BACKGROUNDS} from '../../js/features/pixel-bible/backgrounds.js';
+import {drawPixelCharacter,characterStyle} from '../../js/features/pixel-bible/art.js';
+const c=document.querySelector('canvas').getContext('2d'),q=new URLSearchParams(location.search);c.imageSmoothingEnabled=false;
+if(q.has('people')){
+ const people=[['골리앗','블레셋 장수',['사무엘상 17장']],['사울','이스라엘 왕',['사무엘상 9장']],['다윗','목자',['사무엘상 17장']],['삭개오','세리장',['누가복음 19장']],['아낙 자손','아낙 자손',['민수기 13장']],['가나안 사람','주민',['민수기 13장']]];
+ document.querySelector('canvas').height=850;
+ for(const [i,[name,role,refs]]of people.entries()){
+  const x=i%3*420,y=Math.floor(i/3)*400;c.fillStyle='#dae0ce';c.fillRect(x,y,410,390);c.fillStyle='#263d35';c.font='20px sans-serif';c.fillText(name,x+20,y+32);
+  for(const [j,direction]of ['down','right','up','left'].entries())drawPixelCharacter(c,characterStyle(name,0,role,refs,false),x+55+j*96,y+290,{scale:3,direction,walkFrame:1});
+ }
+}else{
+ const keys=Object.keys(BACKGROUNDS);for(const [i,key]of keys.entries()){
+  const x=i%4*320,y=Math.floor(i/4)*310;c.fillStyle='#263d35';c.font='16px sans-serif';c.fillText(BACKGROUNDS[key].name,x+8,y+22);c.save();c.translate(x,y+35);c.scale(1/6,1/6);drawWholeBackground(c,key,1920,1080);c.restore();
+ }
+}
+window.ready=true;
+</script></html>

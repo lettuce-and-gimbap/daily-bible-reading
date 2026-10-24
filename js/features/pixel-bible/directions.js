@@ -43,7 +43,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   r(8,5,8,1,O);r(6,6,12,2,O);r(5,8,14,8,O);r(7,16,11,3,O);r(10,19,5,1,O);
   r(8,6,8,1,hair);r(7,7,10,3,hair);r(6,10,11,6,hair);r(8,16,5,2,hair);
   r(13,10,5,6,skin);r(14,16,3,2,skin);r(18,12,2,2,O);r(18,12,1,1,skin);
-  r(12,12,2,2,skin);drawFaceExpression(r,expression,{side:true});r(17,15,1,1,'#eb9da2');
+  r(12,12,2,2,skin);drawFaceExpression(r,expression,{side:true,tone:s.eyeTone});r(17,15,1,1,'#eb9da2');
   if(s.beard)r(15,17,2,1,s.beard);
   if(s.eyeliner)r(16,11,2,1,O);
   if(s.bald){r(9,6,7,2,skin);r(8,8,9,3,skin);}

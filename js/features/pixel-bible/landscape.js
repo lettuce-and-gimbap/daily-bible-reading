@@ -1,3 +1,4 @@
+import {drawBiomeGround,drawBiomePaths,drawBiomeLandmarks} from './biome-art.js';
 import {drawWorldObject} from './art.js';
 import {backgroundFor} from './backgrounds.js';
 // 지형은 전체 지도 좌표로 한 번만 구성한다. 중심은 보행 공간, 큰 경관은 가장자리다.
@@ -13,9 +14,7 @@ export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=tr
  }
  // 中央広場から分岐する道。縮小時にも一つの지형として読める輪郭。
  const roadY=height*.55,roadX=width*.5;
- r(0,roadY,width,42,p.path);r(roadX-20,130,40,height-240,p.path);
- r(roadX-104,roadY-40,208,120,p.path);r(roadX-92,roadY-28,184,96,p.pathLight);
- for(let x=10;x<width;x+=38)r(x,roadY+14,15,3,p.pathLight);
+ drawBiomeGround(c,p,width,height);drawBiomePaths(c,p,width,height);
  const stone=(x,y,s=1)=>{r(x-9*s,y-8*s,18*s,9*s,p.hill);r(x-6*s,y-11*s,11*s,5*s,p.roof);r(x-5*s,y-10*s,5*s,2*s,p.bank);};
  const tree=(x,y,type='leaf')=>{
   r(x-3,y-18,6,23,p.roof);
@@ -29,19 +28,20 @@ export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=tr
   for(const x of [180,width/2,width-180]){r(x-27,y-36,54,74,p.house);r(x-32,y-43,64,9,p.roof);r(x-8,y+4,16,34,p.hill);}
  };
  // 언덕과 강은 외곽에 한 번 배치해 반복 타일의 이음매를 없앤다.
- for(let i=0;i<18;i++){
-  const x=i*width/17,top=16+hash(i,3)%40;
+ const ridgeCount=['sinai','mountains'].includes(m)?9:m==='dunes'?5:0;
+ for(let i=0;i<ridgeCount;i++){
+  const x=i*width/(ridgeCount-1),top=16+hash(i,3)%40;
   for(let yy=top;yy<100;yy+=6){const half=(yy-top)*(m==='sinai'||m==='mountains'?1.1:2)+9;r(x-half,yy,half*2,6,i%2?p.hill:p.roof);}
  }
- const water=['lake','galilee','river','garden','newcity'].includes(m);
- r(0,height-126,width,126,water?p.water:p.bank);
+ const water=['lake','galilee'].includes(m);
+ if(water)r(0,height-126,width,126,p.water);
  if(water){
   for(let x=0;x<width;x+=24)r(x,height-136-(hash(x,2)%3)*4,24,12,p.bank);
   for(let y=height-108;y<height;y+=24)for(let x=14;x<width;x+=64)r(x+(y%17),y,22+(hash(x,y)%18),2,p.wave);
   if(['river','garden','newcity'].includes(m)){
    for(let y=140;y<height-120;y+=12){const x=width-70+Math.round(Math.sin(y/130)*12);r(x,y,width-x,12,p.water);if(y%36===8)r(x+8,y,28,2,p.wave);}
   }
- }else for(let x=32;x<width;x+=72){stone(x,height-68,1+hash(x,3)%2);r(x-9,height-29,28,2,p.pathLight);}
+ }else if(['dunes','sinai','mountains','ruins'].includes(m))for(let x=32;x<width;x+=96){stone(x,height-68,1+hash(x,3)%2);r(x-9,height-29,28,2,p.pathLight);}
  for(let i=0;i<15;i++){
   const x=100+i*(width-200)/14,y=135+hash(i,8)%24;
   if(m==='camp')tent(x,y);
@@ -91,6 +91,7 @@ export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=tr
  if(m==='galilee')for(let i=0;i<5;i++){const x=width*.2+i*width*.15,y=height-67;r(x-25,y,50,7,p.roof);r(x-20,y+7,40,5,p.roof);r(x,y-30,2,30,p.house);r(x+2,y-30,20,21,p.house);}
  if(m==='pasture')for(let i=0;i<8;i++){const x=70+i*(width-140)/7,y=height-155;r(x-9,y-9,18,11,'#e2dec6');r(x+7,y-13,7,8,p.hill);r(x-6,y+2,2,5,p.hill);r(x+5,y+2,2,5,p.hill);}
  if(m==='stars')for(let i=0;i<36;i++){const x=hash(i,7)%width,y=hash(i,9)%75;r(x,y,2,2,p.pathLight);}
+ drawBiomeLandmarks(c,p,width,height);
  if(decorations)for(const o of sceneDecorations(key))drawWorldObject(c,o,24);
 }
 
@@ -98,15 +99,50 @@ export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=tr
 export function sceneDecorations(key){
  const m=backgroundFor(key).motif,props=[];
  const put=(kind,x,y)=>props.push({kind,x,y,scenery:true});
- const arid=['dunes','sinai','mountains','camp'].includes(m);
- for(const [x,y] of [[12,14],[18,27],[13,35],[66,14],[63,28],[69,35]])put(arid?'stone':m==='river'?'palm':m==='vineyard'?'vine':'tree',x,y);
- for(const [x,y]of [[19,11],[61,11]])put(m==='camp'?'tent':arid?'stone':m==='city'||m==='babylon'||m==='temple'||m==='ruins'?'house':'bench',x,y);
- for(const [x,y]of [[23,35],[31,36],[49,36],[57,35]])put(m==='harvest'?'barley':m==='vineyard'?'vine':m==='garden'||m==='newcity'?'fruit':arid?'stone':'lily',x,y);
+ const layouts={
+ village:[['house',13,12],['house',66,15],['well',22,30],['tree',14,28],['tree',65,32],['basket',25,33]],
+ dunes:[['stone',14,16],['stone',61,29],['bush',20,34]],
+ lake:[['boat',19,34],['net',27,31],['reed',15,28],['tree',66,17]],
+ galilee:[['boat',62,32],['net',57,28],['house',16,15],['basket',54,26]],
+ mountains:[['stone',14,15],['stone',20,21],['stone',64,30],['bush',60,15]],
+ sinai:[['stone',16,18],['stone',61,17],['altar',24,31]],
+ river:[['palm',18,17],['reed',58,28],['stone',20,34]],
+ garden:[['fig-tree',17,18],['fruit',21,24],['olive-tree',63,29]],
+ harvest:[['house',18,12],['basket',24,31],['millstone',63,29]],
+ vineyard:[['house',65,13],['grapes',19,31],['basket',24,28]],
+ pasture:[['tree',16,16],['well',62,30],['bush',19,32]],
+ camp:[['tent',19,18],['tent',60,19],['tent',22,30],['tent',58,32]],
+ city:[['house',16,17],['house',65,18],['house',19,31],['well',62,32]],
+ babylon:[['palm',18,25],['palm',61,25],['house',16,13],['house',65,13]],
+ ruins:[['stone-pillar',18,20],['stone',22,32],['stone-pillar',63,29]],
+ temple:[['altar',24,25],['basin',57,24],['lampstand',23,31]],
+ newcity:[['olive-tree',24,17],['fruit',58,27],['olive-tree',63,34]],
+ sunset:[['tree',18,18],['tree',62,30],['barley',22,31]],
+ stars:[['house',18,14],['lamp',23,26],['house',63,15],['lamp',60,31]],
+ };
+ for(const [kind,x,y]of layouts[m]||layouts.village)put(kind,x,y);
+ const patches={
+ village:['house','tree','basket','well'], garden:['fig-tree','fruit','lily','olive-tree'],
+ dunes:['stone','bush'], mountains:['stone','bush'], sinai:['stone'],
+ river:['palm','reed','bush'],lake:['reed','tree','net'],galilee:['net','basket','house','boat'],
+ camp:['tent','basket','jar'],harvest:['barley','basket','millstone'],vineyard:['vine','grapes','basket'],
+ pasture:['bush','sheep','tree'],city:['house','jar','basket'],babylon:['palm','house','stone-pillar'],
+ ruins:['stone','stone-pillar'],temple:['stone-pillar','lampstand'],newcity:['olive-tree','fruit','lily'],
+ sunset:['barley','tree','bush'],stars:['house','lamp','tree']};
+ const kinds=patches[m]||patches.village;
+ // Irregular peripheral clusters leave the central roaming area open.
+ for(let i=0;i<14;i++){
+  const right=i%2,band=Math.floor(i/2),x=right?57+(band*7%16):8+(band*9%17),y=10+(band*11%27);
+  if(!props.some(o=>Math.hypot(o.x-x,o.y-y)<2.8))put(kinds[i%kinds.length],x,y);
+ }
+
  if(m==='harvest')for(const x of [15,21,59,65])put('field',x,21);
  if(m==='pasture')for(const [x,y]of [[16,19],[20,32],[59,32],[64,20]])put('sheep',x,y);
  if(m==='garden'||m==='newcity')for(const [x,y]of [[24,11],[56,11],[22,31],[58,31]])put(m==='garden'?'fig-tree':'olive-tree',x,y);
  if(m==='galilee'||m==='lake')for(const x of [19,61])put('net',x,34);
  if(m==='camp'){put('tabernacle',40,9);put('well',63,20);}
  if(m==='city'||m==='babylon'||m==='temple'){put('house',13,23);put('house',67,23);put('well',60,33);}
+ if(key==='nile'){put('reed',54,18);put('basket',55,19);}
+ if(key==='river')put('stone',54,19);
  return props.sort((a,b)=>a.y-b.y);
 }

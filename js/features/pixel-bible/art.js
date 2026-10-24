@@ -16,6 +16,8 @@ export const characterStyle = (name,index,role,refs,creature=null)=>{const d=cre
 const spriteCache=new Map();
 export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const {scale=3,walk=0,action='',time=0,hanging=false,selected=false}=options;
+ const scaleX=scale*(style.creature?1:style.physique?.width||1),scaleY=scale*(style.creature?1:style.physique?.height||1);
+ const renderX=Math.round(x-32*scaleX),renderY=Math.round(y-52*scaleY),renderWidth=Math.round(64*scaleX),renderHeight=Math.round(64*scaleY);
  const direction=hanging?'down':options.interaction?.lie?'down':options.interaction?.archery?(options.direction==='left'?'left':'right'):(options.direction||'down');
  const frame=options.walkFrame??(walk>.35?1:walk<-.35?3:0);
  const step=[0,1,0,-1][frame%4];
@@ -39,10 +41,11 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }
  if(options.hitTest){
-  const px=Math.floor((options.hitTest.x-x)/scale+32),py=Math.floor((options.hitTest.y-y)/scale+52);
+  const px=Math.floor((options.hitTest.x-renderX)*64/renderWidth),py=Math.floor((options.hitTest.y-renderY)*64/renderHeight);
   if(px<0||py<0||px>=64||py>=64)return false;
   if(!sprite.pixels)sprite.pixels=sprite.canvas.getContext('2d').getImageData(0,0,64,64).data;
-  const padding=Math.max(0,Math.floor(options.hitPadding||0));
+  // One source-dot tolerance covers nearest-neighbor rounding at fractional body scales.
+  const padding=Math.max(1,Math.floor(options.hitPadding||0));
   for(let oy=-padding;oy<=padding;oy++)for(let ox=-padding;ox<=padding;ox++){
    const sx=px+ox,sy=py+oy;
    if(sx>=0&&sy>=0&&sx<64&&sy<64&&ox*ox+oy*oy<=padding*padding+1&&sprite.pixels[(sy*64+sx)*4+3]>128)return true;
@@ -70,9 +73,9 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
    }
    m.putImageData(pixels,0,0);sprite.outline=mask;
   }
-  const alpha=ctx.globalAlpha;ctx.globalAlpha*=.8+.2*Math.sin(time*4);ctx.drawImage(sprite.outline,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.globalAlpha=alpha;
+  const alpha=ctx.globalAlpha;ctx.globalAlpha*=.8+.2*Math.sin(time*4);ctx.drawImage(sprite.outline,renderX,renderY,renderWidth,renderHeight);ctx.globalAlpha=alpha;
  }
- ctx.drawImage(sprite.canvas,Math.round(x-32*scale),Math.round(y-52*scale),64*scale,64*scale);ctx.restore();
+ ctx.drawImage(sprite.canvas,renderX,renderY,renderWidth,renderHeight);ctx.restore();
 }
 function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false, pose=null, expression="neutral" } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
@@ -141,7 +144,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
     if(style.fringe===3)r(10,5,4,1,"#ffffff22");
   }
   if(style.bald){r(8,3,8,3,skin);r(7,5,10,2,skin);r(7,7,1,1,skin);}
-  drawFaceExpression(r,expression,{look});
+  drawFaceExpression(r,expression,{look,spacing:style.eyeSpacing,tone:style.eyeTone});
   r(8,11,1,1,blush);r(15,11,1,1,blush);
   if(style.eyeliner){r(9+look,8,2,1,outline);r(14+look,8,2,1,outline);}
   if(style.updo){r(9,-2,6,3,outline);r(10,-1,4,2,hair);r(13,0,2,1,'#d8b66a');}

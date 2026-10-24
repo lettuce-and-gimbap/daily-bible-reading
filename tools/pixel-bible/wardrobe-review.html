@@ -9,7 +9,7 @@ for(const [i,[key,p]]of list.entries()){
  c.fillStyle=i%2?'#dbe2d0':'#ece5d2';c.fillRect(x,y,300,220);c.fillStyle='#263b3c';c.font='16px sans-serif';c.fillText(p.name+' · '+style.wardrobe,x+8,y+22);
  for(const [j,direction]of ['down','right','up','left'].entries()){
   drawPixelCharacter(c,style,x+38+j*74,y+146,{scale:2,direction,walkFrame:1});
-  for(let frame=0;frame<4;frame++)for(const expression of ['neutral','happy','sad','angry','surprised']){
+  for(let frame=0;frame<4;frame++)for(const expression of ['neutral','joy','sad','worried','angry','surprised','determined','gentle']){
    ctx.clearRect(0,0,192,192);drawPixelCharacter(ctx,style,96,144,{scale:2,direction,walkFrame:frame,expression});const data=ctx.getImageData(0,0,192,192).data;let count=0,edge=false;
    for(let yy=0;yy<192;yy++)for(let xx=0;xx<192;xx++)if(data[(yy*192+xx)*4+3]){count++;if(xx===0||xx===191||yy===0||yy===191)edge=true;}
    if(!count||edge)errors.push({key,direction,frame,expression,edge});frames++;

@@ -1,3 +1,4 @@
+import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
@@ -279,7 +280,7 @@ export async function mountPixelWorld(shell, options) {
   function placeAboveHead(el,n,r,v,width,height,placed=[]){
     const anchor=interactionAnchor(n,TILE);
     const x=(anchor.x*v.scale+v.x)*r.width/canvas.width;
-    const y=((anchor.y-72)*v.scale+v.y)*r.height/canvas.height;
+    const y=((anchor.y-72*physiqueFor(n.name,n.role,n.refs).height)*v.scale+v.y)*r.height/canvas.height;
     const left=Math.max(4,Math.min(r.width-width-4,x-width/2));
     const top=Math.max(4,y-height-8),gap=8;
     let safeTop=top;
@@ -422,7 +423,7 @@ export async function mountPixelWorld(shell, options) {
     }
     renderRecommendations(n);
     const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
     renderRecipes();clearInfo();
   }
   function move(n, goal, task = null) {
@@ -1005,7 +1006,9 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
   drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
-  drawInteractionEffects(c,n,actionPose,x,y,time);
+  const shape=n.creature?{width:1,height:1}:physiqueFor(n.name,n.role,n.refs);
+  c.save();c.translate(x,y);c.scale(shape.width,shape.height);c.translate(-x,-y);
+  drawInteractionEffects(c,n,actionPose,x,y,time);c.restore();
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font='12px "DungGeunMo", monospace';c.textAlign="center";const w=c.measureText(displayPersonName(n.name)).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(displayPersonName(n.name),x,y+30);

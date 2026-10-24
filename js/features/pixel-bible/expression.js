@@ -12,15 +12,15 @@ export function speechEmotion(line){
  if(/따르|전하|여호와|말씀|명하신|섬기/.test(text))return 'determined';
  return 'neutral';
 }
-export function drawFaceExpression(r,emotion='neutral',{side=false,look=0}={}){
+export function drawFaceExpression(r,emotion='neutral',{side=false,look=0,spacing=0,tone='#302f35'}={}){
  // 표정 픽셀은 얼굴 피부 안쪽에만 둔다. 턱·옆머리·장식을 덮지 않는다.
  const paint=r;
  r=(x,y,w,h,color)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++){
   const inside=side?(yy>=11&&yy<=15?xx>=14&&xx<=17:yy===16&&xx>=14&&xx<=16):(yy>=8&&yy<=11?xx>=8&&xx<=15:yy>=12&&yy<=13&&xx>=9&&xx<=14);
   if(inside)paint(xx,yy,1,1,color);
  }};
- const ink='#302f35',mouth='#a37363';
- const xs=side?[16]:[9+look,14+look],ey=side?12:9,my=side?16:12,mx=side?16:11;
+ const ink=tone,mouth='#a37363';
+ const xs=side?[16]:[9+look+(spacing===1?1:0),14+look-(spacing===2?1:0)],ey=side?12:9,my=side?16:12,mx=side?16:11;
  for(const x of xs){
   if(['joy','gentle'].includes(emotion)){r(x,ey+1,2,1,ink);if(emotion==='joy')r(x,ey,1,1,ink);}
   else {r(x,ey,1,2,ink);if(emotion==='surprised')r(x,ey,side?1:2,2,ink);}

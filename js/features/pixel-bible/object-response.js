@@ -1,3 +1,4 @@
+import {physiqueFor} from './physique.js';
 import {objectBehavior} from './object-behavior.js';
 import {OBJECT_CATALOG} from './object-catalog.js';
 import {interactionPose} from './interaction-motion.js';
@@ -65,6 +66,7 @@ export function heldObject(n,time,reduced=false,tile=24){
  let tx=(a.x+(side?dir*(14+(p.handX||0)*2):8+(p.handX||0)*2)+p.bodyX*2)/tile,ty=(a.y+(p.handY-36)*2+p.bodyY*2+(p.gesture==='drink'?6:OBJECT_CATALOG[o.kind]?.family==='instrument'?18:5))/tile;
  const playing=['lyre','harp','tambourine','cymbal'].includes(o.kind)&&['strum','play','pluck','beat','tap','tune','hold'].includes(p.actual);
  if(playing){tx=(a.x+(side?dir*19:18)+p.bodyX*2)/tile;ty=(a.y-7+p.bodyY*2)/tile;}
+ const shape=physiqueFor(n.name,n.role,n.refs);tx=a.x/tile+(tx-a.x/tile)*shape.width;ty=a.y/tile+(ty-a.y/tile)*shape.height;
  const originalScale=objectPresentation(o.kind).scale;
  return {kind:o.kind,x:Math.round((o.x+(tx-o.x)*transfer)*tile)/tile,y:Math.round((o.y+(ty-o.y)*transfer)*tile)/tile,
   frame:{scale:originalScale,clothWave:OBJECT_CATALOG[o.kind]?.family==='cloth'&&['spread','shake-cloth','fold','smooth'].includes(p.gesture)&&[1,2].includes(p.phase)?Math.floor(p.within*4)+1:0,tilt:playing?0:(Number.isFinite(p.toolAngle)?dir*p.toolAngle:heldTilt(p,dir,eased))*transfer,held:true,

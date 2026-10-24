@@ -8,7 +8,7 @@ export const EXTRA_APPEARANCES = {
     "royal": true,
     "trim": "#d6b56e",
     "evidence": "사무엘상 9:2 · 큰 키의 왕.",
-    "design": "키 기록은 있으나 공통 도트 크기를 유지해 키 차이는 아직 반영하지 않았어요. 왕복·왕관은 창작이에요."
+    "design": "키 차이를 상대 배율로 표현했어요. 왕복·왕관은 창작이에요."
   },
   "expanded2": {
     "name": "요나단",

@@ -19,7 +19,7 @@ const specifics={
 export function wardrobeFor(style,role=''){
  const kind=specifics[style.name]||(style.royal?'royal':/제사장/.test(role)?'priest':style.fur?'fur':style.shawl||style.hood?'shawl':style.mantle?'traveler':style.vest?'worker':'tunic');
  const wardrobe=WARDROBES[kind];
- const detail=style.name==='모르드개'?{mantleColor:'#87628e',underColor:'#e8e4d2'}:style.name==='다니엘'?{goldChain:true}:{};
+ const detail=/골리앗/.test(style.name)?{plate:true,helmet:true}:style.name==='모르드개'?{mantleColor:'#87628e',underColor:'#e8e4d2'}:style.name==='다니엘'?{goldChain:true}:{};
  return {...wardrobe,...style,...detail,wardrobe:kind,wardrobeLabel:wardrobe.label,
   design:style.design+' 의복의 재단·주름·테두리는 시대 복식에서 착안한 창작 도안이에요.'};
 }
