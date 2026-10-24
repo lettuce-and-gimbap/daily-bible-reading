@@ -79,7 +79,9 @@ function renderQt() {
 
   const body = $("#sheet-body");
   body.addEventListener("click", (e) => {
-    if (e.target.closest("#q-copy-note")) return copyText(qtTextOf(qtCurrentFromDom()), "묵상 노트를 복사했어요");
+    if (e.target.closest("#q-copy-note")) {
+      return qtRefFor(qtDate).then(() => copyText(qtTextOf(qtCurrentFromDom()), "묵상 노트를 복사했어요"));
+    }
     const a = e.target.closest("[data-qt]");
     if (!a) return;
     e.preventDefault();
@@ -120,9 +122,15 @@ async function qtRefFor(d) {
 // 칸 이름을 붙여 하나로 합친 글 (복사·내보내기·기록 보기용). 빈 칸은 뺌
 function qtTextOf(q, d = qtDate) {
   if (!q) return "";
-  const parts = qtAnswers(q).map(([, v]) => `[${v.s || "묵상"}] ${v.q}\n${String(v.a).trim()}`);
+  const parts = [];
+  const ref = qtRefs[d] || "";
+  const note = String(q.note || "").trim();
+  const noteLines = note.split("\n");
+  if (ref && noteLines[0].trim() === `[${ref}]`) noteLines.shift();
+  if (ref) parts.push(`[${ref}]`);
+  parts.push(...qtAnswers(q).map(([, v]) => `[${v.s || "묵상"}] ${v.q}\n${String(v.a).trim()}`));
   QT_LEGACY.forEach(([k, label]) => { if (String(q[k] || "").trim()) parts.push(`[${label}]\n${String(q[k]).trim()}`); });
-  if (String(q.note || "").trim()) parts.push(`[${qtRefs[d] || "구절 · 기도 메모"}]\n${String(q.note).trim()}`);
+  if (noteLines.join("\n").trim()) parts.push(`[구절 · 기도 메모]\n${noteLines.join("\n").trim()}`);
   return parts.join("\n\n");
 }
 
@@ -393,7 +401,7 @@ function renderQtSheet() {
         </label>`).join("")}
       <label class="qt-field">
         <b id="q-note-title">${qtRefs[qtDate] ? `[${esc(qtRefs[qtDate])}]` : "구절 · 기도 메모"}</b><small>붙여넣은 구절과 기도제목을 적어 두세요</small>
-        <textarea id="q-note" rows="5" placeholder="구절과 기도제목">${esc(entry.note || "")}</textarea>
+        <textarea id="q-note" rows="5" placeholder="구절과 기도제목">${esc(qtNoteBase(entry.note, qtRefs[qtDate]))}</textarea>
       </label>
       <div class="mp" id="q-note-picker"></div>
       <div class="inline between">
@@ -414,8 +422,20 @@ function renderQtSheet() {
           </li>`).join("")}
       </ul>` : ""}`;
   memoPickMount($("#q-note-picker"), $("#q-note"), saveQtNote, renderQtSheet);
-  const before = Object.keys(qtRefs).length;
-  Promise.all([qtRefFor(qtDate), ...history.map(qtRefFor)]).then(() => { // 범위를 새로 받았으면 한 번 다시 그림
-    if (sheetTab === "note" && Object.keys(qtRefs).length > before) renderQtSheet();
+  Promise.all([qtRefFor(qtDate), ...history.map(qtRefFor)]).then(() => {
+    if (sheetTab !== "note") return;
+    const ref = qtRefs[qtDate];
+    const title = $("#q-note-title");
+    const note = $("#q-note");
+    if (ref && title && note) {
+      title.textContent = `[${ref}]`;
+      if (!note.value.trim() && document.activeElement !== note) note.value = qtNoteBase("", ref);
+    }
   });
+}
+
+// QT 노트가 비어 있으면 그날 읽을 본문 범위를 통독 메모처럼 기본 표시한다.
+function qtNoteBase(existing, ref) {
+  if (existing && existing.trim()) return existing;
+  return ref ? `[${ref}]\n\n` : "";
 }
