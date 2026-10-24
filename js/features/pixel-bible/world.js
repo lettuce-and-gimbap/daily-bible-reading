@@ -150,7 +150,7 @@ export async function mountPixelWorld(shell, options) {
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
-    <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 1초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
+    <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 0.4초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
     <div class="pb-camera-controls" aria-label="월드 시점"><button class="pb-button" data-action="camera-home">중앙으로</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
@@ -519,7 +519,7 @@ export async function mountPixelWorld(shell, options) {
       if(objectSpeech?.object===o)objectSpeech=null;
       objectCooldown.delete(o);
       say('오브젝트를 집었어요. 빈 땅으로 끌어 옮겨 놓아 주세요.');draw();
-    },1000);
+    },400);
   }
   function objectLanding(held) {
     const origin=grabbedOrigin(held);return {x:Math.round(origin.x),y:Math.round(origin.y)};
@@ -663,7 +663,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if (placing) {
       if (blocked(x,y) || objects.some((o) => o.x===x && o.y===y) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say("나무·인물과 겹치지 않는 빈 땅을 골라 주세요.");
-      objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브젝트를 놓았어요. 1초 꾹 누르면 위치를 옮길 수 있어요."); return;
+    objects.push({kind:placing,x,y}); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement(); say("오브젝트를 놓았어요. 0.4초 꾹 누르면 위치를 옮길 수 있어요."); return;
     }
     const hit=hitPerson(p,e.pointerType==='touch');
     if (hit >= 0) {
