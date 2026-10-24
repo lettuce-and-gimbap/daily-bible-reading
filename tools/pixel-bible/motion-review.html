@@ -43,9 +43,28 @@ kinds.forEach((kind,row)=>{
 });
 }
 // Audit all frames, all directions and transition boundaries as well as the visible sheet.
-const scratch=document.createElement('canvas');scratch.width=400;scratch.height=300;const g=scratch.getContext('2d');
-for(const kind of kinds)for(const [gesture]of interactionOptions(kind))for(const direction of ['down','left','right','up'])for(let step=0;step<32;step++){
- try{g.clearRect(0,0,400,300);render(kind,gesture,step/8,g,200,170,direction);}catch(error){errors.push(error.message);}
+const scratch=document.createElement('canvas');scratch.width=1024;scratch.height=768;const g=scratch.getContext('2d');
+const audit=[],tiny=document.createElement('canvas');tiny.width=128;tiny.height=96;
+const tc=tiny.getContext('2d',{willReadFrequently:true});tc.imageSmoothingEnabled=false;
+for(const kind of kinds){
+ const actions=[];
+ for(const [gesture]of interactionOptions(kind)){
+  const signatures=[],bounds=[];
+  for(const direction of ['down','left','right','up'])for(let step=0;step<32;step++){
+   try{
+    g.clearRect(0,0,1024,768);render(kind,gesture,step/8,g,512,500,direction);
+    if(step%4===0){
+     tc.clearRect(0,0,128,96);tc.drawImage(scratch,0,0,128,96);
+     const data=tc.getImageData(0,0,128,96).data;let hash=2166136261,minX=128,minY=96,maxX=-1,maxY=-1;
+     for(let i=0;i<data.length;i+=4){hash=Math.imul(hash^data[i],16777619);hash=Math.imul(hash^data[i+1],16777619);hash=Math.imul(hash^data[i+2],16777619);hash=Math.imul(hash^data[i+3],16777619);if(data[i+3]){const x=(i/4)%128,y=Math.floor(i/512);minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);}}
+     signatures.push(hash>>>0);bounds.push([minX,minY,maxX,maxY]);
+    }
+   }catch(error){errors.push(error.message);}
+  }
+  actions.push({gesture,signature:signatures.join(','),distinctFrames:new Set(signatures).size,clipped:bounds.some(b=>b[0]===0||b[1]===0||b[2]===127||b[3]===95)});
+ }
+ const groups=new Map();for(const a of actions){const list=groups.get(a.signature)||[];list.push(a.gesture);groups.set(a.signature,list);}
+ audit.push({kind,actions:actions.map(({signature,...a})=>a),identicalActions:[...groups.values()].filter(g=>g.length>1)});
 }
-window.review={objects:kinds,frames,errors,total:all.length};window.reviewReady=true;
+window.review={objects:kinds,frames,errors,total:all.length,audit};window.reviewReady=true;
 </script>

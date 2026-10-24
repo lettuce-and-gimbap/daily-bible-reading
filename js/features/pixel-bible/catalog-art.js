@@ -4,6 +4,9 @@ import {garmentColor} from './garments.js';
 export function drawCatalogDetail(r,id,family,O){
  const wood='#a78255',gold='#d8b75f',metal='#aab6b4',paper='#eee0b3',dark='#5d665f';
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
+ if(id==='stone-pillar'){line(-8,-27,16,4,O);line(-6,-23,12,24,'#969e91');line(-4,-22,3,22,'#c4c9b7');line(3,-22,2,22,'#707e75');line(-9,1,18,4,O);line(-8,2,16,2,'#b6bdac');return true;}
+ if(id==='tomb'){line(-12,-17,24,20,O);line(-8,-23,16,6,'#8e988d');line(-11,-16,22,18,'#a7af9e');line(-5,-13,10,16,'#35463e');line(-3,-16,6,3,'#35463e');line(8,-11,7,13,'#778779');line(9,-9,4,9,'#b3bba8');line(-11,-9,5,1,'#7c8c7d');return true;}
+
  if(id==='bread'||id==='barley-bread'){line(-9,-7,18,8,'#9b703f');line(-7,-10,14,4,'#c99c57');line(-8,-6,16,6,'#ddb878');for(const x of [-4,2]){line(x,-8,2,5,'#f3d49a');}if(id==='barley-bread')for(const x of [-6,0,5])line(x,-3,1,1,'#987247');return true;}
  if(id==='lyre'){line(-8,-21,3,17,gold);line(5,-21,3,17,gold);line(-8,-22,16,3,wood);line(-7,-5,14,9,wood);line(-5,-4,10,5,gold);for(let x=-4;x<=4;x+=2)line(x,-19,1,18,paper);return true;}
  if(id==='harp'){line(-10,-23,3,28,gold);line(-9,2,21,3,wood);for(let i=0;i<10;i++)line(-7+i*2,-23+i*2,3,3,gold);for(let i=0;i<6;i++)line(-5+i*2,-19+i*2,1,21-i*2,paper);return true;}

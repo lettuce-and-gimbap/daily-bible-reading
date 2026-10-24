@@ -192,6 +192,13 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
   const x=o.x*tile,y=o.y*tile;
   c.save();c.translate(Math.round(x+(frame?.dx||0)),Math.round(y+(frame?.dy||0)));c.rotate(frame?.tilt||0);const size=frame?.scale||objectPresentation(originalKind).scale;c.scale(size*(1+(frame?.open||0)),size*(1-(frame?.squash||0)));
   if(frame?.bite){c.beginPath();c.rect(-30,-40,60,40);c.clip();}
+  if(OBJECT_CATALOG[originalKind]?.family==='animal'){
+   const creature=creatureForName(OBJECT_CATALOG[originalKind].name);
+   if(creature){const gesture=frame?.pose?.actual;
+    drawCreature(c,creature,0,2,{direction:'right',frame:frame?.active?frame.phase:0,pose:frame?.active?{phase:frame.phase,creatureAction:gesture==='feed'?'graze':gesture==='guide'?'look':'rest'}:null});
+    c.restore();return;
+   }
+  }
   const r=(x,y,w,h,color)=>{c.fillStyle=color;
    if(frame?.clothWave){for(let j=0;j<h;j+=2){const yy=y+j,offset=Math.round(Math.sin(yy*.22+frame.clothWave)*Math.max(0,(yy+22)/15));c.fillRect(x+offset,yy,w,Math.min(2,h-j));}}
    else c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);
