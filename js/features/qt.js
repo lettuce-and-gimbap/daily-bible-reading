@@ -200,7 +200,7 @@ function refreshQtBar() {
   if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
-const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["relations", "관계도"]];
+const QT_TABS = [["read", "QT"], ["note", "묵상 노트"], ["relations", "관계도"]];
 
 function syncQtTabs() {
   refreshQtAnswerBoxes();

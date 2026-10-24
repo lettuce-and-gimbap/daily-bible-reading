@@ -280,7 +280,7 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "메모·도구"]];
+const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "묵상 노트"]];
 
 // 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
 function syncReaderTabs() {

@@ -560,3 +560,5 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 
 /* Hidden third-party frames must not become Safari compositing layers. */
 #r-frame[hidden]{display:none!important;visibility:hidden;pointer-events:none;}
+
+.rd.reading #r-chap{margin-left:auto;justify-content:flex-end;}
