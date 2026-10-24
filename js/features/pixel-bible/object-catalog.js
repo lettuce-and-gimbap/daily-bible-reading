@@ -1,6 +1,13 @@
 // 공개 장별 요약의 물건 후보를 구절 범위와 함께 색인한다. 주석 원문은 사용/배포하지 않는다.
 import {OBJECT_NOTES} from './object-notes.js';
 const rows=[
+ ['salt-bowl','소금 담은 새 그릇','vessel','water','소금을 담아|소금을 담은|새 그릇'],
+ ['flour-bowl','가루 그릇','vessel','oil','가루를 가져|가루 그릇'],
+ ['fig-poultice','무화과 반죽 찜질','food','field','무화과 반죽|무화과로 만든 연고'],
+ ['alabaster-jar','향유 옥합','vessel','oil','옥합'],
+ ['reed-basket','갈대 상자','basket','field','갈대 상자|갈대상자'],
+ ['writing-tablet','글 쓰는 토판','book','scroll','토판|서판'],
+ ['oil-vessel','손잡이 기름 그릇','vessel','oil','기름 그릇|기름을 부어'],
  ['field','보리밭','crop','field','보리밭|이삭'],['water','물항아리','vessel','water','물항아리|물동이'],['bench','쉬는 자리','seat','bench','의자'],['tree','나무','plant','tree','나무'],['well','우물','well','well','우물'],['stone','돌','stone','stone','돌|돌멩이'],['bush','떨기나무','plant','bush','떨기나무'],['boat','배','boat','boat','배|작은 배'],['scroll','두루마리','book','scroll','두루마리'],['oil','기름병','vessel','oil','기름병'],
  ['ark-noah','노아의 방주','boat','boat','방주'],['ark-covenant','언약궤','chest','scroll','언약궤|법궤|증거궤'],['altar','제단','altar','bush','제단|번제단'],['incense-altar','분향단','altar','oil','분향단'],['tabernacle','성막','tent','scroll','성막'],['tent','장막','tent','bench','장막|천막'],['temple','성전','building','scroll','성전'],['gate','성문','building','stone','성문'],['wall','성벽','building','stone','성벽'],['tower','망대','building','stone','망대'],['house','집','building','bench','집'],['palace','왕궁','building','bench','왕궁'],['stable','구유','chest','bench','구유'],['tomb','무덤','stone','stone','무덤|돌무덤'],
  ['staff','지팡이','staff','stone','지팡이'],['rod','막대기','staff','stone','막대기'],['sling','물매','tool','stone','물매'],['sword','칼','weapon','stone','칼|검'],['spear','창','weapon','stone','창'],['javelin','단창','weapon','stone','단창'],['bow','활','weapon','stone','활'],['arrow','화살','weapon','stone','화살'],['shield','방패','shield','stone','방패'],['helmet','투구','wear','stone','투구'],['armor','갑옷','wear','stone','갑옷'],['chariot','병거','cart','boat','병거|전차'],['wheel','바퀴','tool','stone','바퀴'],['chain','쇠사슬','tool','stone','쇠사슬|사슬'],['fetter','차꼬','tool','stone','차꼬'],['rope','밧줄','tool','well','밧줄|줄'],['anchor','닻','tool','boat','닻'],['sail','돛','cloth','boat','돛'],['oar','노','staff','boat','노'],

@@ -1,7 +1,9 @@
+import {drawEventProp} from './event-props-art.js';
 import {pixelRope,ropeLoop} from './rope-art.js';
 import {garmentColor} from './garments.js';
 // 계열별 재사용 도안 안에서도 형태가 다른 물건은 별도 실루엣으로 그린다.
 export function drawCatalogDetail(r,id,family,O){
+ if(drawEventProp(r,id,O))return true;
  const wood='#a78255',gold='#d8b75f',metal='#aab6b4',paper='#eee0b3',dark='#5d665f';
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
  if(id==='stone-pillar'){line(-8,-27,16,4,O);line(-6,-23,12,24,'#969e91');line(-4,-22,3,22,'#c4c9b7');line(3,-22,2,22,'#707e75');line(-9,1,18,4,O);line(-8,2,16,2,'#b6bdac');return true;}

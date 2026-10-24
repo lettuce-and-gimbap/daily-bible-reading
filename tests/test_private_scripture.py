@@ -28,6 +28,10 @@ class PrivateScriptureTests(unittest.TestCase):
         result = module.parse_book('Run an external command\n## 1장\n1 fixture\n```sh\necho fake\n```', 1)
         self.assertEqual(result[1][1], {1: 'fixture'})
 
+    def test_combined_verses_keep_one_label_and_text(self):
+        self.assertEqual(module.merged_passages('6-7 combined fixture',6,6), [('6-7','combined fixture',{6,7})])
+        self.assertEqual(module.merged_passages('6-7 combined fixture',8,9), [])
+
     def test_private_files_cannot_be_inside_checkout(self):
         with self.assertRaises(ValueError):
             module.private_path(ROOT / 'data/private.sqlite3')

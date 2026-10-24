@@ -25,14 +25,21 @@ def verses(span):
 def short(text):
  parts=re.split(r'(?<=[.!?。])\s+',str(text).strip());return ' '.join(parts[:2])[:280]
 for c in chapters:
- code,ch=c['code'],c['chapter'];paired={}
+ code,ch=c['code'],c['chapter'];paired={};merged_groups=[]
  for ed in ['gae','easy']:
   paired[ed]=dict(b.execute('select verse,text from verses where edition=? and code=? and chapter=? order by verse',(ed,code,ch)).fetchall());assert paired[ed],(code,ch,ed)
+  raw=b.execute('select body from chapters where edition=? and code=? and chapter=?',(ed,code,ch)).fetchone()[0]
+  for line in raw.splitlines():
+   merged=re.match(r'^(\d+)[–—-](\d+)\s+(.+)$',line.strip())
+   if merged:
+    merged_groups.append(set(range(int(merged[1]),int(merged[2])+1)))
+    for v in range(int(merged[1]),int(merged[2])+1):paired[ed].setdefault(v,merged[3])
  commentary=h.execute('select body from chapters where code=? and chapter=?',(code,ch)).fetchone();assert commentary,(code,ch)
  report=dict(code=code,chapter=ch,sourceVerses={ed:len(v) for ed,v in paired.items()},commentaryAvailable=True,eventsReviewed=len(c['events']),scenes=0,skipped=[])
  for i,event in enumerate(c['events']):
   selected=verses(event.get('verses'));text=event.get('text','');ref=f"{c['name']} {ch}:{event.get('verses','')}"
   if not selected or any(not all(v in paired[ed] for v in selected) for ed in paired):report['skipped'].append(dict(title=event['title'],reason='reference-range-needs-review'));continue
+  if any(group.intersection(selected) and not group.issubset(selected) for group in merged_groups):report['skipped'].append(dict(title=event['title'],reason='partial-merged-range-needs-review'));continue
   source={ed:' '.join(paired[ed][v] for v in selected) for ed in paired}
   actors=[]
   for p in c['people']:

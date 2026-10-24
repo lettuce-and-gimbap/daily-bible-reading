@@ -410,7 +410,7 @@ test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘�
   const model=buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter,data:book.chapters[scene.chapter]}]);
   for(const name of scene.actors)assert.ok(model.cast.some(p=>p.name===name),`${scene.id}: ${name}`);
   assert.ok(scene.lines.length>=2&&scene.ref);
-  assert.ok(model.scenes.includes(scene));
+  assert.ok(model.scenes.some(s=>s.id===scene.id));
  }
  assert.deepEqual(RUTH_SCENES.find(s=>s.id==='greet').actions,{});
  const boat=OBJECT_SCENES.find(s=>s.id==='jesus-boat');

@@ -46,6 +46,16 @@ def parse_book(text, expected_chapters=None):
     return chapters
 
 
+def merged_passages(body, start, end):
+    """Preserve combined labels rather than pretending to split their wording."""
+    result=[]
+    for line in body.splitlines():
+        m=re.match(r'^(\d+)[–—-](\d+)\s+(.+)$',line.strip())
+        if m and int(m[1])<=end and int(m[2])>=start:
+            result.append((f'{m[1]}-{m[2]}',m[3],set(range(int(m[1]),int(m[2])+1))))
+    return result
+
+
 def private_path(path):
     path = Path(path).expanduser().resolve()
     if path == REPO or REPO in path.parents:
@@ -181,7 +191,11 @@ def main():
                 parser.error('Query 1–100 verses at a time')
             for edition in (EDITIONS if args.edition == 'both' else [args.edition]):
                 rows = db.execute('SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? AND verse BETWEEN ? AND ? ORDER BY verse', (edition, args.code, args.chapter, args.start, end)).fetchall()
-                missing = sorted(set(range(args.start, end+1)) - {r[0] for r in rows})
+                body=db.execute('SELECT body FROM chapters WHERE edition=? AND code=? AND chapter=?',(edition,args.code,args.chapter)).fetchone()
+                combined=merged_passages(body[0] if body else '',args.start,end)
+                covered={r[0] for r in rows}|{v for _,_,vs in combined for v in vs}
+                rows=sorted([*rows,*[(label,text) for label,text,_ in combined]],key=lambda r:int(str(r[0]).split('-')[0]))
+                missing = sorted(set(range(args.start, end+1)) - covered)
                 if missing:
                     print(f'[{EDITIONS[edition]} 원자료에 해당 절 번호 없음: '+', '.join(map(str, missing))+']')
                 print(f'[{EDITIONS[edition]}] {args.code} {args.chapter}:{args.start}–{end}')
@@ -200,8 +214,16 @@ def main():
             if args.code:
                 clauses.append('code=?'); params.append(args.code)
             params.append(max(1, min(args.limit, 30)))
+            shown=0
             for edition, code, chapter, verse, text in db.execute('SELECT edition,code,chapter,verse,text FROM verses WHERE '+' AND '.join(clauses)+' ORDER BY code,chapter,verse LIMIT ?', params):
-                print(f'[{EDITIONS[edition]}] {code} {chapter}:{verse} {text}')
+                print(f'[{EDITIONS[edition]}] {code} {chapter}:{verse} {text}');shown+=1
+            if shown<params[-1]:
+                source_clauses=[clauses[0].replace('text LIKE','body LIKE')];source_params=['%'+term+'%']
+                if args.edition!='both':source_clauses.append('edition=?');source_params.append(args.edition)
+                if args.code:source_clauses.append('code=?');source_params.append(args.code)
+                for edition,code,chapter,body in db.execute('SELECT edition,code,chapter,body FROM chapters WHERE '+' AND '.join(source_clauses),source_params):
+                    for label,text,_ in merged_passages(body,1,200):
+                        if args.term in text and shown<params[-1]:print(f'[{EDITIONS[edition]}] {code} {chapter}:{label} {text}');shown+=1
 
 
 if __name__ == '__main__':

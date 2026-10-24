@@ -8,6 +8,9 @@ export function objectPresentation(kind){
  const category=d.family||d.action;
  let scale=SCALES[kind]||SCALES[category]||SCALES[d.action]||2;
  if(kind==='mat')scale=2.4;
+ if(['salt-bowl','flour-bowl','oil-vessel'].includes(kind))scale=1.3;
+ if(['fig-poultice','alabaster-jar'].includes(kind))scale=1;
+ if(kind==='writing-tablet')scale=1.1;
  if(['cloak','robe','linen','sackcloth','ephod','armor'].includes(kind))scale=.95;
  if(['helmet','crown','breastplate','sandal','belt','signet'].includes(kind))scale=.8;
  if(['cup','flask','oil','perfume','coin','pearl','seed','mustard','salt','pen','nail'].includes(kind))scale=1.2;
@@ -56,13 +59,14 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
 export function heldObject(n,time,reduced=false,tile=24){
  const o=n.usingObject;if(n.creature||!o||!n.interaction)return null;
  const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);
+ if(p.scripted&&(['chain-open','net-catch'].includes(p.actual)||['reed-float','axe-float','fig-paste'].includes(p.actual)&&p.eventBeat>=3))return null;
  if(p.gesture==='drink'&&o.kind!=='cup')return null;
  if(['rope','hook'].includes(o.kind)||(['write','trace','dip'].includes(p.actual)&&['pen','ink'].includes(o.kind))||!objectBehavior(o.kind).carry||p.wearing||(['arrow','bow'].includes(o.kind)&&p.archery)||['lie-stone','five-stones','water-wine','tear-garment'].includes(p.actual)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2))return null;
  const a=interactionAnchor(n,tile),dir=n.direction==='left'?-1:1;
  const side=n.direction==='left'||n.direction==='right';
- const progress=reduced?.5:((time-(n.interactionStart||0))/n.interaction.period+n.interaction.phase)*4%1;
+ const progress=p.scripted?p.within:reduced?.5:((time-(n.interactionStart||0))/n.interaction.period+n.interaction.phase)*4%1;
  const stepped=Math.floor(progress*8)/8;
- const eased=stepped*stepped*(3-2*stepped),transfer=reduced?1:p.phase===0?eased:p.phase===3?1-eased:1;
+ const eased=stepped*stepped*(3-2*stepped),transfer=p.scripted?Math.max(0,Math.min(1,p.eventProgress*4,(1-p.eventProgress)*4)):reduced?1:p.phase===0?eased:p.phase===3?1-eased:1;
  let tx=(a.x+(side?dir*(14+(p.handX||0)*2):8+(p.handX||0)*2)+p.bodyX*2)/tile,ty=(a.y+(p.handY-36)*2+p.bodyY*2+(p.gesture==='drink'?6:OBJECT_CATALOG[o.kind]?.family==='instrument'?18:5))/tile;
  const playing=['lyre','harp','tambourine','cymbal'].includes(o.kind)&&['strum','play','pluck','beat','tap','tune','hold'].includes(p.actual);
  if(playing){tx=(a.x+(side?dir*19:18)+p.bodyX*2)/tile;ty=(a.y-7+p.bodyY*2)/tile;}
@@ -88,7 +92,7 @@ export function drinkingCup(n,pose,x,y){
  const cy=y+(pose.handY-36)*2+6;
  return {kind:'cup',x:(x+(side?dir*13:6))/24,y:(y-12+(cy-(y-12))*lift)/24,frame:{scale:.65,held:true,tilt:pose.phase===2?-dir*.25*Math.sin(Math.PI*pose.within):0}};
 }
-export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return (p.hand&&['rope','hook'].includes(n.usingObject?.kind))||(p.hand&&['pen','ink'].includes(n.usingObject?.kind)&&['write','trace','dip'].includes(p.actual))||p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&p.archery)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
+export function objectWorn(n,time,reduced=false){if(!n?.interaction)return false;const p=interactionPose(n.interaction,time-(n.interactionStart||0),reduced);return (p.scripted&&(['chain-open','net-catch'].includes(p.actual)||['reed-float','axe-float','fig-paste'].includes(p.actual)&&p.eventBeat>=3))||(p.hand&&['rope','hook'].includes(n.usingObject?.kind))||(p.hand&&['pen','ink'].includes(n.usingObject?.kind)&&['write','trace','dip'].includes(p.actual))||p.wearing||(p.hand&&['arrow','bow'].includes(n.usingObject?.kind)&&p.archery)||(['cast-mantle','break-share'].includes(p.actual)&&[1,2].includes(p.phase))||(['shoot','three-arrows','staff-snake','cast-mantle'].includes(p.actual)&&p.phase===2);}
 export function drawObjectResponse(c,o,frame,tile=24){
  if(!frame?.active)return;
  const held=heldObject(frame.actor,frame.time,frame.reduced,tile);

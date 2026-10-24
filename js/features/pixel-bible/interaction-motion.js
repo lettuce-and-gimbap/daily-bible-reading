@@ -1,3 +1,4 @@
+import {scriptedPose} from './scripted-events.js';
 import {expandedActions} from './additional-actions.js';
 import {actionTrack,applyActionTrack} from './action-tracks.js';
 import {creatureRoutine} from './creatures.js';
@@ -85,6 +86,7 @@ export function baseInteractionOptions(kind){
 }
 export function interactionRoutine(n,kind,visit=0){
  if(n.creature)return creatureRoutine(n,kind,visit);
+ if(n.eventRoutine)return {...n.eventRoutine};
  const category=objectBehavior(kind).category;
  const variants=interactionOptions(kind);
  const key=(n.identity?.id||n.name||'reader')+':'+kind;
@@ -133,6 +135,7 @@ export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce(
 
 // Advance one source pixel at a time between action poses, including the loop seam.
 export function interactionPose(routine,time=0,reduced=false){
+ if(routine.scripted)return scriptedPose(routine,time,reduced);
  const pose=rawInteractionPose(routine,time,reduced);
  if(reduced||routine.creatureAction)return pose;
  const position=(time/routine.period+routine.phase)*4;

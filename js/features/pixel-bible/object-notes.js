@@ -1,5 +1,12 @@
 // 직접 쓴 설명과 근거 위치만 공개한다. 업로드 원문/주석은 포함하지 않는다.
 export const OBJECT_NOTES = {
+ 'salt-bowl':{description:'엘리사가 새 그릇에 담아 오게 한 소금을 나타내요. 물의 회복을 소금 자체의 보편적인 정수 능력으로 설명하지 않아요.',descriptionRefs:['열왕기하 2:20–22']},
+ 'flour-bowl':{description:'독이 있다고 외친 국에 엘리사가 넣게 한 가루를 담은 상징 그릇이에요. 본문은 이 가루의 재료나 용기 모양을 확정하지 않아요.',descriptionRefs:['열왕기하 4:40–41']},
+ 'fig-poultice':{description:'히스기야의 종처에 붙인 무화과 반죽을 나타내요. 오늘날 모든 질병에 적용하는 치료 지침은 아니에요.',descriptionRefs:['열왕기하 20:7']},
+ 'alabaster-jar':{description:'향유를 담은 옥합을 향유 자체와 구분한 도안이에요. 본문의 재질과 개봉 동작을 참고하되 정확한 유물 복원이라고 주장하지 않아요.',descriptionRefs:['마가복음 14:3']},
+ 'reed-basket':{description:'아기 모세를 위해 갈대로 엮고 방수한 상자를 표현해요. 평범한 수확 바구니와 구분해 덮개와 엮임을 그렸어요.',descriptionRefs:['출애굽기 2:3']},
+ 'writing-tablet':{description:'기록하거나 표징을 그리는 판의 공통 그림이에요. 에스겔의 토판과 신약의 서판은 재료와 용도가 같다고 단정하지 않아요.',descriptionRefs:['에스겔 4:1','누가복음 1:63']},
+ 'oil-vessel':{description:'기름을 따라 담는 손잡이 그릇의 창작 도안이에요. 과부의 기름 사건에 쓰는 용기를 구분해서 보여 줘요.',descriptionRefs:['열왕기하 4:3–6']},
   oil: {description:'기름을 담아 붓는 작은 병이에요. 열왕기하 4장의 과부는 남은 기름을 빌려 온 빈 그릇들에 부어요.',descriptionRefs:['열왕기하 4:2–6']},
   'ark-noah': {description:'홍수에 대비해 여러 칸과 세 층을 둔 배예요. 나무 이름은 역본에 따라 달라 특정 수종의 실제 모습으로 단정하지 않아요. 언약궤와는 다른 물건이에요.',descriptionRefs:['창세기 6:14–16']},
   'ark-covenant': {description:'증거판을 두는 거룩한 궤예요. 고리에 운반용 채를 끼우며, 일상적인 보물상자처럼 다루는 물건이 아니에요.',descriptionRefs:['출애굽기 25:10–16','사무엘하 6:6–7']},

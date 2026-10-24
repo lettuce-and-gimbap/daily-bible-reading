@@ -1,3 +1,4 @@
+import {SCRIPTED_TRACKS} from '../../js/features/pixel-bible/scripted-events.js';
 import {UNIQUE_INTERACTIONS} from '../../js/features/pixel-bible/unique-interactions.js';
 import {INTERACTION_MOTIONS,INTERACTION_MOTION_COUNT,interactionOptions,interactionRoutine} from '../../js/features/pixel-bible/interaction-motion.js';
 import {APPEARANCES} from '../../js/features/pixel-bible/appearance.js';
@@ -19,4 +20,6 @@ write('catalog.json',{schema:1,scope:'Candidates extracted from existing public 
 console.log(JSON.stringify({books:66,chapters:count,definitions:Object.keys(OBJECT_CATALOG).length,matchedDefinitions:kinds.size,chaptersWithObjects:withObjects,occurrences:events}));
 
 const bindings=Object.fromEntries(Object.values(APPEARANCES).map(p=>[p.key||p.name,{name:p.name,objects:Object.fromEntries(Object.keys(OBJECT_CATALOG).map(kind=>{const r=interactionRoutine({name:p.name},kind);return [kind,{routine:r.id,variant:r.variant,period:r.period,phase:r.phase}];}))}]));
-write('../interaction-motions.json',{schema:1,scope:`${INTERACTION_MOTION_COUNT} reusable motion prototypes; at least six outcomes per catalog object, selected across repeated visits. 100 appearance profiles on 156 objects. Explicit biblical actions are chapter- and identity-scoped. Daily motions are creative.`,prototypes:INTERACTION_MOTIONS,options:Object.fromEntries(Object.keys(OBJECT_CATALOG).map(kind=>[kind,interactionOptions(kind)])),unique:UNIQUE_INTERACTIONS,characters:bindings});
+write('../interaction-motions.json',{schema:1,scope:`${INTERACTION_MOTION_COUNT} reusable motion prototypes; at least six outcomes per catalog object, selected across repeated visits. ${Object.keys(APPEARANCES).length} appearance profiles on ${Object.keys(OBJECT_CATALOG).length} objects. Explicit biblical actions are chapter- and identity-scoped. Daily motions are creative.`,prototypes:INTERACTION_MOTIONS,options:Object.fromEntries(Object.keys(OBJECT_CATALOG).map(kind=>[kind,interactionOptions(kind)])),unique:UNIQUE_INTERACTIONS,characters:bindings});
+
+write('../scripted-event-motions.json',{schema:1,scope:'Authored event keyframes, not a count of completed scripture reviews. Source-pixel [handY,handX,bodyY], eight held beats per action. Runtime poses add object and actor constraints.',period:5.6,tracks:SCRIPTED_TRACKS});

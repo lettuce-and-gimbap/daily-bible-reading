@@ -48,3 +48,9 @@ bind('tomb stone-pillar',options(['look','돌 앞에 서서 보기'],['inspect',
 
 OBJECT_USAGE.honey=options(['taste','손끝으로 꿀 맛보기'],['pour','꿀 조금 덜기'],['offer','꿀 그릇 내밀기'],['cap','마개 열기'],['close','마개 닫기'],['wipe','그릇 가장자리 닦기']);
 OBJECT_USAGE.cedar=options(['shade','그늘에서 쉬기'],['leaves','잎 살피기'],['trunk','줄기에 손 대기'],['inspect','나무껍질 살피기'],['look','위로 올려다보기'],['step-back','한 걸음 물러서기']);
+
+bind('salt-bowl flour-bowl',options(['sprinkle','조금씩 뿌려 넣기'],['pour','기울여 덜어 내기'],['offer','그릇 내밀기'],['hold','양손으로 받치기'],['wipe','가장자리 닦기'],['place','조심히 내려놓기']));
+bind('fig-poultice',options(['place','반죽을 상처 위에 올리기'],['press','천 위를 가볍게 누르기'],['wrap','천으로 감싸기'],['inspect','반죽 상태 살피기'],['offer','반죽 건네기'],['hold','천을 받쳐 들기']));
+bind('alabaster-jar oil-vessel',options(['cap','마개 열기'],['pour','그릇을 기울여 따르기'],['hold','그릇 받쳐 들기'],['offer','두 손으로 건네기'],['wipe','입구 닦기'],['place','그릇 내려놓기']));
+bind('reed-basket',options(['hold','상자를 두 손으로 받치기'],['cover','덮개를 조심히 덮기'],['inspect','엮인 부분 살피기'],['repair','갈대 틈 다듬기'],['place','물가에 조심히 놓기'],['offer','상자를 건네기']));
+bind('writing-tablet',options(['write','판에 글씨 쓰기'],['trace','새긴 글줄 따라가기'],['inspect','기록한 내용 살피기'],['wipe','판 표면 고르기'],['offer','판을 내밀어 보여 주기'],['hold','판을 받쳐 들기']));

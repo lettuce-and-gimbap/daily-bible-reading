@@ -4,12 +4,111 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "definitions": 156,
-    "matchedDefinitions": 151,
+    "definitions": 163,
+    "matchedDefinitions": 158,
     "chaptersWithObjects": 1129,
-    "occurrences": 6022
+    "occurrences": 6050
   },
   "definitions": {
+    "salt-bowl": {
+      "id": "salt-bowl",
+      "name": "소금 담은 새 그릇",
+      "family": "vessel",
+      "action": "water",
+      "aliases": [
+        "소금을 담아",
+        "소금을 담은",
+        "새 그릇"
+      ],
+      "description": "엘리사가 새 그릇에 담아 오게 한 소금을 나타내요. 물의 회복을 소금 자체의 보편적인 정수 능력으로 설명하지 않아요.",
+      "descriptionRefs": [
+        "열왕기하 2:20–22"
+      ]
+    },
+    "flour-bowl": {
+      "id": "flour-bowl",
+      "name": "가루 그릇",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "가루를 가져",
+        "가루 그릇"
+      ],
+      "description": "독이 있다고 외친 국에 엘리사가 넣게 한 가루를 담은 상징 그릇이에요. 본문은 이 가루의 재료나 용기 모양을 확정하지 않아요.",
+      "descriptionRefs": [
+        "열왕기하 4:40–41"
+      ]
+    },
+    "fig-poultice": {
+      "id": "fig-poultice",
+      "name": "무화과 반죽 찜질",
+      "family": "food",
+      "action": "field",
+      "aliases": [
+        "무화과 반죽",
+        "무화과로 만든 연고"
+      ],
+      "description": "히스기야의 종처에 붙인 무화과 반죽을 나타내요. 오늘날 모든 질병에 적용하는 치료 지침은 아니에요.",
+      "descriptionRefs": [
+        "열왕기하 20:7"
+      ]
+    },
+    "alabaster-jar": {
+      "id": "alabaster-jar",
+      "name": "향유 옥합",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "옥합"
+      ],
+      "description": "향유를 담은 옥합을 향유 자체와 구분한 도안이에요. 본문의 재질과 개봉 동작을 참고하되 정확한 유물 복원이라고 주장하지 않아요.",
+      "descriptionRefs": [
+        "마가복음 14:3"
+      ]
+    },
+    "reed-basket": {
+      "id": "reed-basket",
+      "name": "갈대 상자",
+      "family": "basket",
+      "action": "field",
+      "aliases": [
+        "갈대 상자",
+        "갈대상자"
+      ],
+      "description": "아기 모세를 위해 갈대로 엮고 방수한 상자를 표현해요. 평범한 수확 바구니와 구분해 덮개와 엮임을 그렸어요.",
+      "descriptionRefs": [
+        "출애굽기 2:3"
+      ]
+    },
+    "writing-tablet": {
+      "id": "writing-tablet",
+      "name": "글 쓰는 토판",
+      "family": "book",
+      "action": "scroll",
+      "aliases": [
+        "토판",
+        "서판"
+      ],
+      "description": "기록하거나 표징을 그리는 판의 공통 그림이에요. 에스겔의 토판과 신약의 서판은 재료와 용도가 같다고 단정하지 않아요.",
+      "descriptionRefs": [
+        "에스겔 4:1",
+        "누가복음 1:63"
+      ]
+    },
+    "oil-vessel": {
+      "id": "oil-vessel",
+      "name": "손잡이 기름 그릇",
+      "family": "vessel",
+      "action": "oil",
+      "aliases": [
+        "기름 그릇",
+        "기름을 부어"
+      ],
+      "description": "기름을 따라 담는 손잡이 그릇의 창작 도안이에요. 과부의 기름 사건에 쓰는 용기를 구분해서 보여 줘요.",
+      "descriptionRefs": [
+        "열왕기하 4:3–6"
+      ]
+    },
     "field": {
       "id": "field",
       "name": "보리밭",
@@ -106,6 +205,10 @@
       "action": "oil",
       "aliases": [
         "기름병"
+      ],
+      "description": "기름을 담아 붓는 작은 병이에요. 열왕기하 4장의 과부는 남은 기름을 빌려 온 빈 그릇들에 부어요.",
+      "descriptionRefs": [
+        "열왕기하 4:2–6"
       ]
     },
     "ark-noah": {

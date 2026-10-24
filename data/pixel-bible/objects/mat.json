@@ -184,6 +184,32 @@
     ],
     "3": [
       {
+        "id": "oil-vessel",
+        "name": "손잡이 기름 그릇",
+        "action": "oil",
+        "family": "vessel",
+        "description": "기름을 따라 담는 손잡이 그릇의 창작 도안이에요. 과부의 기름 사건에 쓰는 용기를 구분해서 보여 줘요.",
+        "descriptionRefs": [
+          "열왕기하 4:3–6"
+        ],
+        "refs": [
+          "마태복음 3:16"
+        ],
+        "actors": [
+          "예수"
+        ],
+        "evidence": [
+          {
+            "ref": "마태복음 3:16",
+            "source": "relation-summary",
+            "actors": [
+              "예수"
+            ],
+            "text": "성령이 예수님께 기름을 부어 사역을 맡기신 순간이에요. 비둘기 모습으로 내려오셨어요."
+          }
+        ]
+      },
+      {
         "id": "water-supply",
         "name": "물",
         "action": "water",

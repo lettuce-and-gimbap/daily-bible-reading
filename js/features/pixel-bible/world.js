@@ -1,4 +1,5 @@
-import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled} from './recipe-locks.js';
+import {enhanceScene,eventRoutine} from './scripted-events.js';
+import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
 import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,learningNext,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
@@ -51,8 +52,8 @@ export function worldViewport(width,height) {
 export function includeSceneObjects(objects,scenes) {
   const available=new Map(objects.map(item=>[item.id,item]));
   for(const scene of scenes){
-    const item=OBJECT_CATALOG[scene.object];
-    if(item&&!available.has(item.id))available.set(item.id,{...item,refs:scene.ref?[scene.ref]:[],actors:[...scene.actors],evidence:[]});
+    for(const kind of [scene.object,...(scene.requiresObjects||[])]){const item=OBJECT_CATALOG[kind];
+    if(item&&!available.has(item.id))available.set(item.id,{...item,refs:scene.ref?[scene.ref]:[],actors:[...scene.actors],evidence:[]});}
   }
   return [...available.values()];
 }
@@ -112,7 +113,7 @@ export function buildWorldModel(chapters) {
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
   const dedicated=scenesForChapters(chapters);
   const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&s.actors.every(name=>cast.some(p=>p.name===name))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)));
-  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes], title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>enhanceScene(s,cast)), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 명단을 교체하지 않고 통독 분량의 모든 인물을 함께 유지한다.
@@ -411,14 +412,15 @@ export async function mountPixelWorld(shell, options) {
   function renderRecipes() {
     const container=shell.querySelector('.pb-recipes');
     container.innerHTML=`<button class="pb-button" data-action="recipe-lock" aria-pressed="${hideRecipes}">${hideRecipes?'🔒 조합식 잠금':'🔓 오늘의 조합식 보기'}</button><p class="pb-help">오늘 통독을 마치면 잠금을 풀 수 있어요. 직접 인물과 물건을 가까이 배치해 발견한 조합은 계속 열려요.</p>`+model.scenes.map((scene,i)=>{
-      if(isRecipeLocked(scene))return `<article class="pb-recipe pb-recipe-mystery"><b>🔒 숨겨진 본문 장면</b><div class="pb-recipe-layout" aria-label="물음표 인물들을 물음표 오브젝트의 가까운 칸에 배치">${scene.actors.map(()=>'<span class="pb-mystery-person" aria-label="알 수 없는 인물">?</span>').join('')}<span class="pb-mystery-object" aria-label="알 수 없는 오브젝트">?</span></div><small>각 인물을 물건 가까이 모아 보세요.</small></article>`;
+      if(isRecipeLocked(scene))return `<article class="pb-recipe pb-recipe-mystery"><b>🔒 숨겨진 본문 장면</b><div class="pb-recipe-layout" aria-label="물음표 인물들을 물음표 오브젝트의 가까운 칸에 배치">${scene.actors.map(()=>'<span class="pb-mystery-person" aria-label="알 수 없는 인물">?</span>').join('')}${Array.from({length:1+(scene.requiresObjects?.length||0)},()=>'<span class="pb-mystery-object" aria-label="알 수 없는 오브젝트">?</span>').join('')}</div><small>각 인물을 물건 가까이 모아 보세요.</small></article>`;
       const missing=scene.actors.filter(name=>!npcs.some(n=>n.name===name));
       const object=objects.find(o=>o.kind===scene.object);
-      const ready=!missing.length&&!!object;
+      const ready=!missing.length&&!!object&&requiredObjectsNearby(scene,object,objects);
       const needs=[];if(missing.length)needs.push(`인물 표시: ${missing.join(', ')}`);if(!object)needs.push(`${objectPhrase(OBJECTS[scene.object])} 배치`);
+      if(object&&!requiredObjectsNearby(scene,object,objects))needs.push('가까이 놓을 물건: '+(scene.requiresObjects||[]).map(kind=>OBJECTS[kind]).join(' · '));
       const reason=activeEvent?'장면이 진행 중이에요. 끝난 뒤 다시 눌러 주세요.':needs.length?`먼저 준비해 주세요 · ${needs.join(' · ')}`:'조합 가능';
-      return `<article class="pb-recipe"><b>${esc(scene.title)}</b><div class="pb-recipe-layout">${scene.actors.map(name=>`<span>${esc(displayPersonName(name))}</span>`).join('')}<span>${esc(OBJECTS[scene.object])}</span></div><small>${esc(scene.ref)}</small><p class="pb-help">${esc(scene.objectNote || "")}</p><p>${ready&&!activeEvent?'✓ 조합 가능':esc(reason)}</p><button class="pb-button" data-recipe="${i}" aria-disabled="${ready&&!activeEvent?'false':'true'}" data-unavailable-reason="${esc(reason)}">이 조합으로 모으기</button></article>`;
-    }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브젝트 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>{const reason=activeEvent?'장면이 진행 중이에요. 끝난 뒤 다시 눌러 주세요.':!npcs[selected]?'인물을 먼저 선택해 주세요.':!objects.some(o=>o.kind===kind)?`${objectPhrase(OBJECTS[kind])} 먼저 놓아 주세요.`:npcs[selected].creature&&!creatureCanUse(npcs[selected],kind)?'이 생물은 이 오브젝트를 사용할 수 없어요.':`오브젝트 주변에 설 수 있는 자리를 비워 주세요.`;const ready=!activeEvent&&!!npcs[selected]&&objects.some(o=>o.kind===kind)&&(!npcs[selected].creature||creatureCanUse(npcs[selected],kind));return `<button class="pb-button" data-common-recipe="${kind}" aria-disabled="${ready?'false':'true'}" data-unavailable-reason="${esc(reason)}">${OBJECTS[kind]} · ${label}</button>`;}).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.includes(scene)&&!hideRecipes&&dailyDone()).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><div class="pb-recipe-layout">${scene.actors.map(name=>`<span>${esc(displayPersonName(name))}</span>`).join('')}<span>${esc(OBJECTS[scene.object])}</span></div><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
+      return `<article class="pb-recipe"><b>${esc(scene.title)}</b><div class="pb-recipe-layout">${scene.actors.map(name=>`<span>${esc(displayPersonName(name))}</span>`).join('')}<span>${esc(OBJECTS[scene.object])}</span>${(scene.requiresObjects||[]).map(kind=>`<span>${esc(OBJECTS[kind])}</span>`).join('')}</div><small>${esc(scene.ref)}</small><p class="pb-help">${esc(scene.objectNote || "")}</p><p>${ready&&!activeEvent?'✓ 조합 가능':esc(reason)}</p><button class="pb-button" data-recipe="${i}" aria-disabled="${ready&&!activeEvent?'false':'true'}" data-unavailable-reason="${esc(reason)}">이 조합으로 모으기</button></article>`;
+    }).join('') + `<article class="pb-recipe"><b>누구나 사용할 수 있는 조합</b><p>${esc(npcs[selected]?.name||"인물을 먼저 선택하세요")} ＋ 오브젝트 → 일상 동작</p><div class="pb-world-toolbar">${[['bench','앉아 쉬기'],['water','물 마시기'],['field','이삭 줍기']].map(([kind,label])=>{const reason=activeEvent?'장면이 진행 중이에요. 끝난 뒤 다시 눌러 주세요.':!npcs[selected]?'인물을 먼저 선택해 주세요.':!objects.some(o=>o.kind===kind)?`${objectPhrase(OBJECTS[kind])} 먼저 놓아 주세요.`:npcs[selected].creature&&!creatureCanUse(npcs[selected],kind)?'이 생물은 이 오브젝트를 사용할 수 없어요.':`오브젝트 주변에 설 수 있는 자리를 비워 주세요.`;const ready=!activeEvent&&!!npcs[selected]&&objects.some(o=>o.kind===kind)&&(!npcs[selected].creature||creatureCanUse(npcs[selected],kind));return `<button class="pb-button" data-common-recipe="${kind}" aria-disabled="${ready?'false':'true'}" data-unavailable-reason="${esc(reason)}">${OBJECTS[kind]} · ${label}</button>`;}).join('')}</div><small>일상 동작은 창작이며 본문 사건과 구분해요.</small></article>` + ALL_SCENES.filter(scene=>!model.scenes.some(s=>s.id===scene.id)&&!hideRecipes&&dailyDone()).map(scene=>`<article class="pb-recipe pb-locked"><b>🔒 ${esc(scene.title)}</b><div class="pb-recipe-layout">${scene.actors.map(name=>`<span>${esc(displayPersonName(name))}</span>`).join('')}<span>${esc(OBJECTS[scene.object])}</span>${(scene.requiresObjects||[]).map(kind=>`<span>${esc(OBJECTS[kind])}</span>`).join('')}</div><small>${esc(scene.ref)} 본문에서 열려요.</small></article>`).join('');
   }
   function requestPersonal(n){
     if(!n)return;
@@ -504,16 +506,17 @@ export async function mountPixelWorld(shell, options) {
   function beginEvent(scene) {
     recipeUnlocks.add(recipeKey(scene));try{localStorage.setItem(RECIPE_KEY,JSON.stringify([...recipeUnlocks]));}catch(_){}
     activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
-    sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?activeEvent.object:null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
+    sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.eventRoutine=eventRoutine(scene,n);n.eventObjects=objects.filter(o=>(scene.requiresObjects||[]).includes(o.kind)&&Math.hypot(o.x-activeEvent.object.x,o.y-activeEvent.object.y)<=3.5);n.eventPartner=sceneActors(scene).find(other=>other.name===scene.eventMotion?.target)||sceneActors(scene).find(other=>other!==n);n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?(n.action===scene.object?activeEvent.object:n.eventObjects.find(o=>o.kind===n.action)||activeEvent.object):null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
     if(activeEvent.object){camera.x=activeEvent.object.x*TILE;camera.y=activeEvent.object.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
     clearInfo();overlay.hidden = false; renderRecipes();showLine();
   }
-  function endEvent() { if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
+  function endEvent() { if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
-    if(activeEvent||pendingEvent)return;const scene=model.scenes.find(s=>s.object===object.kind&&isRecipeLocked(s)&&recipeAssembled(s,npcs,object));if(scene)queueScene(scene,object);
+    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){queueScene(scene,center);return;}}
   }
   function sceneActors(scene) { return scene.actors.map((name) => npcs.find((n) => n.name === name)); }
   function queueScene(scene, o) {
+    if(!requiredObjectsNearby(scene,o,objects)){say('보조 물건도 중심 물건 가까이에 배치해 주세요.');return;}
     const actors = sceneActors(scene);
     if (actors.some((n) => !n)) { say("이번 분량에는 장면에 필요한 인물이 없어요."); return; }
     const reserved = new Set();
@@ -533,7 +536,7 @@ export async function mountPixelWorld(shell, options) {
   function interact(n,o) {
     if(n.creature&&!creatureCanUse(n,o.kind)){clearInfo();return;}
     const candidates=model.scenes.filter(s=>s.object===o.kind&&s.actors.includes(n.name)&&sceneActors(s).every(Boolean));
-    const scene=candidates.find(s=>isRecipeLocked(s)&&recipeAssembled(s,npcs,o))||candidates.find(s=>!isRecipeLocked(s));
+    const scene=candidates.find(s=>isRecipeLocked(s)&&recipeAssembled(s,npcs,o,objects))||candidates.find(s=>!isRecipeLocked(s));
     if (scene) return queueScene(scene,o);
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
@@ -979,7 +982,7 @@ export async function mountPixelWorld(shell, options) {
     ctx.drawImage(background,0,0);
     const light=globalThis.KstLight.at();
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
-    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
+    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,objectInteractionFrame(o,npcs,time+cinematicTime,reduced))})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,reduced);
     if(objectHold?.active){
@@ -1073,7 +1076,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
   if(n.prominent){c.save();c.globalAlpha=reduced?.6:.45+.15*Math.sin(time*2);c.fillStyle='#f6d782';c.beginPath();c.ellipse(x,y+4,23,7,0,0,Math.PI*2);c.fill();c.strokeStyle='#fff0b3';c.lineWidth=2;c.stroke();c.restore();}
   c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
-  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
+  drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie&&!actionPose?.scripted?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced&&!actionPose?.scripted?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected});
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   const shape=n.creature?{width:1,height:1}:physiqueFor(n.name,n.role,n.refs);
   c.save();c.translate(x,y);c.scale(shape.width,shape.height);c.translate(-x,-y);

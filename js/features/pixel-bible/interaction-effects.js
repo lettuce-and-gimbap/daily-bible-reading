@@ -1,3 +1,4 @@
+import {drawScriptedEffect} from './scripted-effects.js';
 import {drawWorkResult} from './work-results.js';
 import {pixelRope,ropeLoop} from './rope-art.js';
 import {heldObject,drinkingCup} from './object-response.js';
@@ -5,6 +6,7 @@ import {drawWorldObject} from './art.js';
 // 일시적인 결과만 그린다. 저장된 배치와 배경은 바꾸지 않는다.
 export function drawInteractionEffects(c,n,pose,x,y,time){
  if(!pose||!n.usingObject||n.creature)return;
+ if(drawScriptedEffect(c,n,pose,x,y,time))return;
  const o=n.usingObject,phase=pose.phase,use=phase===1||phase===2,dir=n.direction==='left'?-1:1;
  const r=(xx,yy,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(xx),Math.round(yy),w,h);};
  const prop=(kind,xx,yy,scale=.6,tilt=0)=>drawWorldObject(c,{kind,x:xx/24,y:yy/24},24,{scale,tilt,held:true});

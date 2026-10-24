@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><title>전용 사건 모션 도안</title><style>body{margin:0;background:#d6dfd0}canvas{display:block;image-rendering:pixelated}p{font:16px sans-serif;margin:12px}</style><p>새 소품 7종 · 전용 사건 동작 12종 · 준비 → 접촉 → 결과 → 복귀</p><canvas id="sheet"></canvas>
+<script type="module">
+import {SCRIPTED_GESTURES} from '../../js/features/pixel-bible/scripted-events.js';import {interactionPose} from '../../js/features/pixel-bible/interaction-motion.js';import {drawPixelCharacter,drawWorldObject,characterStyle} from '../../js/features/pixel-bible/art.js';import {drawInteractionEffects} from '../../js/features/pixel-bible/interaction-effects.js';import {interactionAnchor,heldObject,objectWorn,objectInteractionFrame} from '../../js/features/pixel-bible/object-response.js';
+const props=['salt-bowl','flour-bowl','fig-poultice','alabaster-jar','reed-basket','writing-tablet','oil-vessel'];const kinds={'mantle-river':'cloak','salt-source':'salt-bowl','flour-pot':'flour-bowl','oil-many':'oil','axe-float':'rod','fig-paste':'fig-poultice','anoint-head':'alabaster-jar','feet-basin':'basin','chain-open':'chain','net-catch':'net','reed-float':'reed-basket','tablet-write':'writing-tablet'};
+const canvas=document.querySelector('canvas');canvas.width=2400;canvas.height=160+SCRIPTED_GESTURES.length*180;const c=canvas.getContext('2d');c.fillStyle='#d6dfd0';c.fillRect(0,0,canvas.width,canvas.height);c.font='16px monospace';
+props.forEach((kind,i)=>{c.fillStyle='#244740';c.fillText(kind,20+i*300,30);drawWorldObject(c,{kind,x:(100+i*300)/24,y:110/24});});
+let frames=0;const errors=[];
+function render(g,beat,ctx,x,y,direction='right'){
+ ctx.save();ctx.translate(x,y);const o={kind:kinds[g],x:0,y:0},routine={scripted:true,gesture:g,kind:o.kind,period:5.6,variant:0,phase:0,unique:true};const n={name:'엘리사',refs:['열왕기하 2장'],x:-1,y:0,direction,usingObject:o,interaction:routine,eventPartner:{x:1,y:0},eventObjects:[{kind:'water-supply',x:1,y:1},{kind:'jar',x:1,y:0},{kind:'pot',x:1,y:0},{kind:'bed',x:1,y:0},{kind:'axe',x:2,y:0}]};
+ const t=beat*.7+.05,pose=interactionPose(routine,t),anchor=interactionAnchor(n),held=heldObject(n,t);
+ if(!held&&!objectWorn(n,t))drawWorldObject(ctx,o,24,objectInteractionFrame(o,[n],t));
+ drawPixelCharacter(ctx,characterStyle(n.name,0,'',n.refs),anchor.x,anchor.y,{scale:2,direction,interaction:{...pose,heldObject:!!held}});if(held)drawWorldObject(ctx,held,24,held.frame);drawInteractionEffects(ctx,n,pose,anchor.x,anchor.y,t);ctx.restore();frames++;
+}
+for(const [row,g]of SCRIPTED_GESTURES.entries()){c.fillStyle=row%2?'#d8dfce':'#e9e2cf';c.fillRect(0,160+row*180,2400,180);c.fillStyle='#244740';c.fillText(g,10,180+row*180);for(let beat=0;beat<8;beat++)try{render(g,beat,c,95+beat*300,290+row*180);}catch(e){errors.push(g+': '+e.message);}}
+const scratch=document.createElement('canvas');scratch.width=400;scratch.height=240;const s=scratch.getContext('2d');for(const g of SCRIPTED_GESTURES)for(const direction of ['down','left','right','up'])for(let beat=0;beat<8;beat++)try{render(g,beat,s,160,150,direction);}catch(e){errors.push(g+': '+e.message);}
+window.review={gestures:SCRIPTED_GESTURES.length,props:props.length,frames,errors};window.reviewReady=true;
+</script>

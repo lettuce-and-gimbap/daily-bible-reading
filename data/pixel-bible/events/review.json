@@ -55,7 +55,7 @@
     {
       "code": "2sa",
       "chapters": 24,
-      "scenes": 63
+      "scenes": 64
     },
     {
       "code": "1ki",
@@ -6624,7 +6624,7 @@
       "chapter": 20,
       "sourceVerses": {
         "gae": 48,
-        "easy": 46
+        "easy": 48
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
@@ -6640,7 +6640,7 @@
         },
         {
           "title": "두 번의 패배",
-          "reason": "reference-range-needs-review"
+          "reason": "no-source-confirmed-actor-or-object"
         },
         {
           "title": "베냐민의 멸절",
@@ -7715,11 +7715,11 @@
       "chapter": 4,
       "sourceVerses": {
         "gae": 12,
-        "easy": 10
+        "easy": 12
       },
       "commentaryAvailable": true,
       "eventsReviewed": 5,
-      "scenes": 1,
+      "scenes": 2,
       "skipped": [
         {
           "title": "아브넬의 죽음에 흔들린 나라",
@@ -7728,10 +7728,6 @@
         {
           "title": "다리 저는 므비보셋",
           "reason": "no-source-confirmed-actor-or-object"
-        },
-        {
-          "title": "한낮의 암살",
-          "reason": "reference-range-needs-review"
         },
         {
           "title": "머리를 바친 두 형제",
@@ -8422,7 +8418,7 @@
       "chapter": 8,
       "sourceVerses": {
         "gae": 66,
-        "easy": 64
+        "easy": 66
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
@@ -8430,7 +8426,7 @@
       "skipped": [
         {
           "title": "봉헌 기도",
-          "reason": "reference-range-needs-review"
+          "reason": "no-source-confirmed-actor-or-object"
         }
       ]
     },

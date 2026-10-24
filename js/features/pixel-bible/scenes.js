@@ -1,3 +1,4 @@
+import {AUTHORED_PROP_SCENES} from './authored-prop-scenes.js';
 import {KINGS_SCENES} from './2ki-scenes.js';
 // 본문 대사는 두 역본의 뜻을 풀어 쓴 문장이며, 주석 해설과 구분한다.
 // 검토 기록과 로컬 자료 위치: docs/pixel-bible-content-review.md
@@ -36,7 +37,7 @@ export const JORDAN_SCENES=[
  {id:'jericho-water',code:'2ki',chapter:2,title:'여리고의 물이 회복되다',actors:['엘리사'],object:'water',ref:'열왕기하 2:19–22',actions:{},lines:['엘리사(뜻풀이): 새 그릇에 소금을 담아 가져오시오.','해설: 엘리사는 물 근원에 소금을 던졌고 여호와께서 물을 고치셨다고 전했습니다.'],study:'소금만 넣으면 나쁜 물이 정화된다는 생활 지침이 아니라 하나님의 회복을 전하는 사건이에요.'},
  {id:'floating-axe',code:'2ki',chapter:6,title:'빌린 도끼가 떠오르다',actors:['엘리사'],object:'water',ref:'열왕기하 6:5–7',actions:{},lines:['엘리사(뜻풀이): 어디에 빠졌느냐?','해설: 엘리사가 나뭇가지를 던지자 쇠도끼가 떠올랐고, 빌린 사람은 손을 뻗어 건졌습니다.'],study:'빌린 도구를 잃은 제자의 곤란을 돌보시는 사건이에요.'}
 ];
-export const ALL_SCENES = [...RUTH_SCENES, ...ELIJAH_SCENES,...KINGS_SCENES];
+export const ALL_SCENES = [...RUTH_SCENES, ...ELIJAH_SCENES,...KINGS_SCENES,...AUTHORED_PROP_SCENES];
 export function scenesForChapters(chapters) {
   return ALL_SCENES.filter(scene => chapters.some(c => {
     if (!c.data || c.code !== scene.code || c.chap !== scene.chapter) return false;
