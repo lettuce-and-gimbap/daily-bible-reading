@@ -68,6 +68,7 @@ const ACTOR_OBJECT_LINES = {
  }
 };
 export function objectLinesFor(scene, name) {
+ if(scene.actorLines?.[name]?.length)return scene.actorLines[name];
  const specific=OBJECT_MONOLOGUES.find(([actor,code,chapter,kinds])=>actor===name&&code===scene.code&&chapter===scene.chapter&&kinds.includes(scene.object));
  if(specific)return specific[6];
  return ACTOR_OBJECT_LINES[scene.id]?.[name] || (scene.actors.length === 1 ? OBJECT_LINES[scene.id] : null) || [objectMonologue({name},scene.object,[{code:scene.code,chap:scene.chapter}]).text];

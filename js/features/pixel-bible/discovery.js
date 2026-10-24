@@ -1,4 +1,3 @@
-import {ALL_SCENES} from './scenes.js';
 import {castKey} from './cast-state.js';
 import {recommendedCast} from './exposure.js';
 import {parseReference} from './references.js';
@@ -17,7 +16,7 @@ export function discoverySnapshot(person,model){
  const peers=recommendedCast(model,person),relations=[];
  for(const {person:other}of peers)for(const r of model.relations.filter(r=>(r.from===person.name&&r.to===other.name||r.to===person.name&&r.from===other.name)&&(!r.sourceRef||person.refs.includes(r.sourceRef)&&other.refs.includes(r.sourceRef))))relations.push({key:discoveryKey(other),name:other.name,label:r.label||'본문 관계',kind:r.kind||'other',from:r.from,to:r.to,note:short(r.note),ref:r.ref||r.sourceRef});
  const stories=(model.events||[]).filter(e=>mentions(e.text,person.name)&&person.refs.some(raw=>{const a=parseReference(raw),b=parseReference(e.ref);return a&&b&&a.code===b.code&&a.chapter===b.chapter;})).map(e=>({text:short(e.text),ref:e.ref}));
- for(const scene of ALL_SCENES)if(scene.actors.includes(person.name)&&person.refs.some(raw=>{const r=parseReference(raw);return r?.code===scene.code&&r.chapter===scene.chapter;}))stories.push({text:short(scene.title+'. '+scene.study),ref:scene.ref});
+ for(const scene of model.scenes||[])if(scene.actors.includes(person.name)&&person.refs.some(raw=>{const r=parseReference(raw);return r?.code===scene.code&&r.chapter===scene.chapter;}))stories.push({text:short(scene.study),ref:scene.ref});
  for(const r of relations)if(r.note)stories.push({text:r.note,ref:r.ref});
  return {key:discoveryKey(person),name:person.name,identity:person.identity,roles:person.role?[short(person.role)]:[],refs:person.refs||[],relations,stories:[...new Map(stories.filter(s=>parseReference(s.ref)?.verses?.length).map(s=>[s.ref+'|'+s.text,s])).values()]};
 }

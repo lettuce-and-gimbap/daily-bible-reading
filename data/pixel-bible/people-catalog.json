@@ -4,13 +4,13 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2261,
+    "sourceLabels": 2271,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
       "unresolved": 2580,
       "group": 244,
-      "person": 97,
+      "person": 109,
       "animal": 8,
       "spiritual": 6,
       "plant": 1
@@ -18401,6 +18401,27 @@
       ]
     },
     {
+      "name": "므술레멧",
+      "roles": [
+        "아몬의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.21"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:므술레멧",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.21"
+          ]
+        }
+      ]
+    },
+    {
       "name": "미가",
       "roles": [
         "모레셋 사람 선지자",
@@ -27052,11 +27073,13 @@
         "끌려간 요시야의 아들",
         "딸들과 함께 쌓은 지도자",
         "문지기의 우두머리",
+        "선지자 훌다의 남편 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)",
         "한 달 왕이었던 반역자"
       ],
       "refs": [
         "1ch.9",
         "2ki.15",
+        "2ki.22",
         "jer.22",
         "neh.3"
       ],
@@ -27077,6 +27100,14 @@
           "status": "needs-review",
           "refs": [
             "2ki.15"
+          ]
+        },
+        {
+          "kind": "person",
+          "id": "person:shallum-huldah-husband",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.22"
           ]
         },
         {
@@ -31221,6 +31252,27 @@
       ]
     },
     {
+      "name": "스비다",
+      "roles": [
+        "여호야김의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.23"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:스비다",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.23"
+          ]
+        }
+      ]
+    },
+    {
       "name": "스승",
       "roles": [
         "숨지 않을 인도자"
@@ -32033,6 +32085,27 @@
           "refs": [
             "2sa.9",
             "2sa.19"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "시비아",
+      "roles": [
+        "요아스의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.12"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:시비아",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.12"
           ]
         }
       ]
@@ -39935,6 +40008,27 @@
       ]
     },
     {
+      "name": "야아사니야",
+      "roles": [
+        "그달리야에게 온 마아가 사람의 아들 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.25"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:야아사니야",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.25"
+          ]
+        }
+      ]
+    },
+    {
       "name": "야엘",
       "roles": [
         "가장 복 받을 여인으로 노래됨",
@@ -42948,6 +43042,27 @@
       ]
     },
     {
+      "name": "여골리야",
+      "roles": [
+        "아사랴의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.15"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:여골리야",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.15"
+          ]
+        }
+      ]
+    },
+    {
       "name": "여델",
       "roles": [
         "두려워 칼을 못 뺀 맏아들"
@@ -43008,6 +43123,27 @@
           "status": "needs-review",
           "refs": [
             "psa.39"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "여디다",
+      "roles": [
+        "요시야의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.22"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:여디다",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.22"
           ]
         }
       ]
@@ -43148,6 +43284,27 @@
           "status": "needs-review",
           "refs": [
             "1ki.14"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "여루사",
+      "roles": [
+        "요담의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.15"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:여루사",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.15"
           ]
         }
       ]
@@ -44076,6 +44233,27 @@
           "status": "needs-review",
           "refs": [
             "2ki.23"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "여호앗단",
+      "roles": [
+        "아마샤의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.14"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:여호앗단",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.14"
           ]
         }
       ]
@@ -49112,12 +49290,14 @@
     {
       "name": "요하난",
       "roles": [
+        "그달리야에게 온 군 지휘관, 가레아의 아들 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)",
         "백성을 애굽으로 이끈 자",
         "백성을 이끈 지휘관",
         "암살을 경고한 지휘관",
         "포로를 되찾은 지휘관"
       ],
       "refs": [
+        "2ki.25",
         "jer.40",
         "jer.41",
         "jer.42",
@@ -49126,6 +49306,14 @@
       "appearance": "generic",
       "review": "unreviewed-label",
       "identities": [
+        {
+          "kind": "person",
+          "id": "person:johanan-kareah",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.25"
+          ]
+        },
         {
           "kind": "unresolved",
           "id": "unresolved:요하난:jer",
@@ -63093,6 +63281,30 @@
       ]
     },
     {
+      "name": "하무달",
+      "roles": [
+        "시드기야의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)",
+        "여호아하스의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.23",
+        "2ki.24"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:하무달",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.23",
+            "2ki.24"
+          ]
+        }
+      ]
+    },
+    {
       "name": "하박국",
       "roles": [
         "기도하며 노래한 선지자",
@@ -64386,6 +64598,27 @@
           "status": "needs-review",
           "refs": [
             "2sa.23"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "헵시바",
+      "roles": [
+        "므낫세의 어머니 (본문에 이름이 언급된 인물이며 현장 동석을 뜻하지 않음)"
+      ],
+      "refs": [
+        "2ki.21"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "person",
+          "id": "person:2ki:헵시바",
+          "status": "verse-reviewed",
+          "refs": [
+            "2ki.21"
           ]
         }
       ]

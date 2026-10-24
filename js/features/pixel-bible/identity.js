@@ -40,6 +40,9 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
     return id('unresolved',`${name}:${code}`,'ambiguous');
   }
   if(['야고보','유다','스가랴','아하시야','요나단','바로','다리오','벤하닷'].includes(name))return id('unresolved',`${name}:${code}`,'ambiguous');
+  if(code==='2ki'&&['시비아','여호앗단','여골리야','여루사','헵시바','므술레멧','여디다','하무달','스비다','야아사니야'].includes(name))return id('person',`2ki:${name}`,'verse-reviewed');
+  if(code==='2ki'&&name==='살룸'&&Number(chapter)===22)return id('person','shallum-huldah-husband','verse-reviewed');
+  if(code==='2ki'&&name==='요하난'&&Number(chapter)===25)return id('person','johanan-kareah','verse-reviewed');
   if(knownPeople.has(name))return id('person',name,'profile-reviewed');
   return id('unresolved',`${name}:${code}`,'needs-review');
 }
