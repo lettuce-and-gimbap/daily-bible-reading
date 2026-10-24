@@ -7,6 +7,20 @@ export function drawInteractionEffects(c,n,pose,x,y,time){
  const r=(xx,yy,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(xx),Math.round(yy),w,h);};
  const prop=(kind,xx,yy,scale=.6,tilt=0)=>drawWorldObject(c,{kind,x:xx/24,y:yy/24},24,{scale,tilt,held:true});
  const actual=pose.actual||pose.gesture;
+ // Contact/result cues make the work readable from either facing direction.
+ if(use&&['write','trace'].includes(actual)){
+  prop('letter',x+dir*25,y-10,.65);
+  for(let i=0;i<1+Math.floor(pose.within*4);i++)r(x+dir*25-6+i*3,y-15,2,1,'#554a3b');
+ }
+ if(use&&['sow','sprinkle','feed-grain'].includes(actual)){
+  for(let i=0;i<5;i++){const t=(pose.within+i/5)%1;r(x+dir*(12+t*26),y-21+t*t*25,2,2,'#dec480');}
+ }
+ if(use&&['grind','knead','press'].includes(actual)){
+  for(let i=0;i<3;i++)r(x+dir*(17+i*4),y-5-Math.floor(pose.within*3)%2,2,1,'#e7d6ad');
+ }
+ if(use&&['wash','rinse'].includes(actual)){
+  for(let i=0;i<4;i++)r(x+dir*(13+i*3),y-19+((i+Math.floor(pose.within*8))%4)*3,1,2,'#a7dce0');
+ }
  if(pose.prop==='boat'&&['row','back-row','lift-oar'].includes(actual)){const angle=Math.sin((phase+pose.within)*Math.PI/2)*.45;prop('oar',x+dir*20,y-12,.9,dir*angle);}
  const cup=drinkingCup(n,pose,x,y);if(cup)drawWorldObject(c,cup,24,cup.frame);
  if(pose.archery){

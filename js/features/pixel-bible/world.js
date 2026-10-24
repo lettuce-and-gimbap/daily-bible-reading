@@ -157,7 +157,14 @@ export async function mountPixelWorld(shell, options) {
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
     <div class="pb-rotate"><span class="pb-phone" aria-hidden="true">▯ ↻ ▭</span><strong>가로로 펼치는<br>PIXEL BIBLE</strong><p>기기를 가로로 돌려 주세요.<br>화면 회전 잠금이 켜져 있다면 해제해 주세요.</p><button class="pb-button" data-action="fullscreen">가로 화면으로 입장</button></div>`);
   const abort = new AbortController(), signal = abort.signal;
-  shell.querySelectorAll('canvas[data-object-icon]').forEach(icon=>{const preview=icon.getContext('2d');preview.imageSmoothingEnabled=false;drawWorldObject(preview,{kind:icon.dataset.objectIcon,x:2.5,y:2.25},16);});
+  shell.querySelectorAll('canvas[data-object-icon]').forEach(icon=>{const preview=icon.getContext('2d'),source=document.createElement('canvas');
+    source.width=source.height=512;const ctx=source.getContext('2d');
+    drawWorldObject(ctx,{kind:icon.dataset.objectIcon,x:256,y:300},1);
+    const pixels=ctx.getImageData(0,0,512,512).data;let left=512,top=512,right=0,bottom=0;
+    for(let y=0;y<512;y++)for(let x=0;x<512;x++)if(pixels[(y*512+x)*4+3]){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
+    if(left>right)return;const w=right-left+1,h=bottom-top+1,fit=Math.min(68/w,60/h);
+    preview.imageSmoothingEnabled=false;preview.clearRect(0,0,80,72);
+    preview.drawImage(source,left,top,w,h,Math.round((80-w*fit)/2),Math.round((72-h*fit)/2),Math.floor(w*fit),Math.floor(h*fit));});
   const canvas = shell.querySelector(".pb-world-stage > canvas"), ctx = canvas.getContext("2d");
   const camera={...homeCamera(),...options.camera};
   const view=()=>cameraView(canvas.width,canvas.height,camera);
