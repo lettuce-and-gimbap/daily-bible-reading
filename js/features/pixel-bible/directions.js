@@ -1,3 +1,4 @@
+import {drawWardrobe} from './wardrobe.js';
 import { drawFaceExpression } from './expression.js';
 // 정면은 기존 도안, 측면/후면은 별도의 도트 실루엣. 좌측은 측면 원화의 반전.
 export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,action='',pose=null,expression='neutral'}={}) {
@@ -26,6 +27,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.belt)r(10,27,7,1,'#58412d');
   if(s.sash)r(14,22,2,9,s.sash);
   if(s.pattern)r(15,23,1,7,s.accent||'#cfac68');
+  drawWardrobe(r,s,direction);
   if(pose?.archery){
    // 앞손은 활을 지지하고 뒷손은 시위와 함께 몸쪽으로 당긴다.
    const draw=pose.phase===1?4:pose.phase===2?1:2;
@@ -51,6 +53,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.mantle||s.royal||s.shawl){r(5,21,14,11,O);r(6,22,12,9,s.coat);r(7,25,1,6,'#ffffff22');r(16,25,1,6,'#302f3522');}
   if(s.belt)r(7,27,10,1,'#58412d');if(s.sash)r(14,22,2,9,s.sash);
   if(s.trim)r(7,31,10,1,s.trim);
+  drawWardrobe(r,s,direction);
   const arm=(x,d)=>{r(x,22+d,4,4,O);r(x+1,23+d,2,2,s.coat);r(x,26+d,3,3,O);r(x+1,26+d,1,2,skin);};arm(4,pose?.hand?-1-(pose.phase===2?1:0):-step);arm(17,pose?.hand?-1:step);
   r(9,5,6,1,O);r(7,6,10,1,O);r(5,7,14,2,O);r(4,9,16,8,O);r(5,17,14,2,O);r(8,19,8,1,O);
   r(8,7,8,1,hair);r(6,8,12,2,hair);r(5,10,14,6,hair);r(6,16,12,2,hair);r(9,18,6,1,hair);

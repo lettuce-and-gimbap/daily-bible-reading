@@ -1,0 +1,21 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>복식 사방향 검토</title><style>body{background:#dedacb;font-family:monospace}canvas{max-width:100%;image-rendering:pixelated}</style><canvas width="1200" height="1100"></canvas><script type="module">
+import {APPEARANCES,appearanceFor} from '../../js/features/pixel-bible/appearance.js';
+import {drawPixelCharacter} from '../../js/features/pixel-bible/art.js';
+const page=Number(new URLSearchParams(location.search).get('page')||0),list=Object.entries(APPEARANCES).slice(page*20,page*20+20),c=document.querySelector('canvas').getContext('2d');
+const scratch=document.createElement('canvas');scratch.width=scratch.height=192;const ctx=scratch.getContext('2d');
+let frames=0;const errors=[];
+for(const [i,[key,p]]of list.entries()){
+ const style=appearanceFor(p.name,0,'',[p.evidence.split(' · ')[0]]),x=i%4*300,y=Math.floor(i/4)*220;
+ c.fillStyle=i%2?'#dbe2d0':'#ece5d2';c.fillRect(x,y,300,220);c.fillStyle='#263b3c';c.font='16px sans-serif';c.fillText(p.name+' · '+style.wardrobe,x+8,y+22);
+ for(const [j,direction]of ['down','right','up','left'].entries()){
+  drawPixelCharacter(c,style,x+38+j*74,y+146,{scale:2,direction,walkFrame:1});
+  for(let frame=0;frame<4;frame++)for(const expression of ['neutral','happy','sad','angry','surprised']){
+   ctx.clearRect(0,0,192,192);drawPixelCharacter(ctx,style,96,144,{scale:2,direction,walkFrame:frame,expression});const data=ctx.getImageData(0,0,192,192).data;let count=0,edge=false;
+   for(let yy=0;yy<192;yy++)for(let xx=0;xx<192;xx++)if(data[(yy*192+xx)*4+3]){count++;if(xx===0||xx===191||yy===0||yy===191)edge=true;}
+   if(!count||edge)errors.push({key,direction,frame,expression,edge});frames++;
+  }
+ }
+ c.font='12px sans-serif';c.fillText('정면 / 우측 / 후면 / 좌측',x+35,y+188);
+}
+window.review={page,people:list.length,frames,errors};
+</script></html>

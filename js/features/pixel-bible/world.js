@@ -421,7 +421,7 @@ export async function mountPixelWorld(shell, options) {
     }
     renderRecommendations(n);
     const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
-    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
+    shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
     renderRecipes();clearInfo();
   }
   function move(n, goal, task = null) {
