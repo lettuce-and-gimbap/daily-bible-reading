@@ -113,9 +113,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 /* Theme switches should not briefly combine a new text color with an old fill. */
 .btn{transition:transform .08s}
 
-.study-notes-index{background:var(--surface);color:var(--ink)}
-.study-notes-index input,.study-notes-results button,.study-passage-links button{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
-.study-notes-results button:hover,.study-passage-links button:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.study-passage-links button{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.study-passage-links button:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
 /* Hourly weather tint, with readable text surfaces retained. */
 :root{--weather-wash:transparent}
 :root[data-weather="cloudy"]{--weather-wash:#aab8c018}
