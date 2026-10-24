@@ -59,7 +59,7 @@ document.addEventListener("scroll", (e) => {
 }, true);
 
 // 탭 전환 슬라이드: 통독·QT 탭 순서에 따라 내용이 좌우에서 밀려 들어옴 (닫히는 탭은 그 자리에서 기억만 함)
-const TAB_ORDER = { reader: ["summary", "verses", "tools", "godpia"], qt: ["read", "note", "relations", "godpia"] };
+const TAB_ORDER = { reader: ["summary", "verses", "tools"], qt: ["read", "note", "relations"] };
 const lastTabBy = { reader: "verses", qt: "read" };
 function rememberTab(group, tab) {
   const order = TAB_ORDER[group];

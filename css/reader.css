@@ -557,3 +557,6 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .graph-pdf h4 { margin: 0 0 3px; font-size: 14px; }
 .graph-pdf .pdf-item { padding: 7px 0; }
 .graph-pdf .pdf-item p { margin: 0; font-size: 14px; }
+
+/* Hidden third-party frames must not become Safari compositing layers. */
+#r-frame[hidden]{display:none!important;visibility:hidden;pointer-events:none;}

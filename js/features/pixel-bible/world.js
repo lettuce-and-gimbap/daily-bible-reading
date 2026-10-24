@@ -214,6 +214,7 @@ export async function mountPixelWorld(shell, options) {
       if(current)current.speaker.expression=speechEmotion(current);
       if(current){
         speechElement.querySelector('p').textContent=current.text;
+        speechElement.querySelector('[data-action="speech-details"]').hidden=!current.ref||['object-daily','general','daily'].includes(current.origin);
         const link=speechElement.querySelector('[data-action="passage"]');
         link.textContent=current.ref||'';link.hidden=!parseReference(current.ref);link.setAttribute('aria-label',`${current.ref||''} 성경 본문 보기`);
         speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
@@ -261,6 +262,7 @@ export async function mountPixelWorld(shell, options) {
         el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
         el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
         el.dataset.encounter=id;el.querySelector('p').textContent=line.text;
+        el.querySelector('[data-action="encounter-details"]').hidden=!line.ref||['object-daily','general','daily'].includes(line.origin);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref);link.dataset.reference=line.ref||'';
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
       }

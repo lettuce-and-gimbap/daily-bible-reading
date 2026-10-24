@@ -39,7 +39,7 @@ function buildReader() {
           <div class="rd-chap" id="r-chap"></div>
         </div>
       </div>
-      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
+      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" hidden aria-hidden="true" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
     </div>`;
 
   guardReaderFrame($("#r-frame"));
@@ -183,6 +183,7 @@ let frameReverts = 0;    // 지금 장에서 되돌린 횟수 (혹시 모를 무
 let frameNavFree = false; // 토스트의 '잠시 풀기'를 누르면 다음 장 이동 전까지 갓피아 안 이동 허용
 
 function loadReaderFrame(frame, url, isRevert = false) {
+  if(frame.hidden)return;
   frameLoads = 0;
   if (!isRevert) { frameReverts = 0; frameNavFree = false; }
   frame.dataset.url = url;
@@ -279,10 +280,11 @@ function refreshReader(reload = false) {
   if (sheetTab) renderReaderSheet();
 }
 
-const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "메모·도구"], ["godpia", "갓피아"]];
+const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "메모·도구"]];
 
 // 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
 function syncReaderTabs() {
+  if(!sheetTab && document.querySelector(".rd.reading") && location.hash === "#today")return openSheet("verses",renderReaderSheet);
   document.querySelectorAll("#r-tabs [data-rtab]").forEach((b) => {
     b.classList.toggle("on", b.dataset.rtab === (sheetTab || "godpia"));
   });

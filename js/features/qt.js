@@ -200,7 +200,7 @@ function refreshQtBar() {
   if (typeof updateStreakChip === "function") updateStreakChip();
 }
 
-const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["relations", "관계도"], ["godpia", "갓피아"]];
+const QT_TABS = [["read", "본문 · 묵상"], ["note", "묵상 노트"], ["relations", "관계도"]];
 
 function syncQtTabs() {
   refreshQtAnswerBoxes();
@@ -377,11 +377,7 @@ function renderQtSheet() {
     return;
   }
   if (sheetTab === "relations") return renderQtRelations(); // qtgraph.js
-  if (sheetTab === "godpia") { // 갓피아 화면은 필요할 때만 팝업으로
-    setSheetTitle(null, `갓피아 <a class="chip-btn" href="${godpiaQtUrl(qtDate)}" target="_blank" rel="noopener" aria-label="새 창으로 열기">↗</a>`);
-    $("#sheet-body").innerHTML = `<div class="sheet-frame"><iframe class="rd-frame" title="갓피아 오늘의 QT" src="${godpiaQtUrl(qtDate)}" ${GODPIA_SANDBOX}></iframe></div>`;
-    return;
-  }
+  if (sheetTab === "godpia") { closeSheet(); return; }
   setSheetTitle(null, "묵상 노트");
   const entry = state.qt[qtDate] || qtEmpty();
   const history = Object.keys(state.qt).filter((d) => d !== qtDate && (state.qt[d].done || qtHasText(state.qt[d]))).sort().reverse().slice(0, 20);
