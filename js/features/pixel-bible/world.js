@@ -1,3 +1,4 @@
+import {speechContext} from './speech-context.js';
 import {creatureCanUse} from './creatures.js';
 import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
@@ -214,9 +215,9 @@ export async function mountPixelWorld(shell, options) {
       if(current)current.speaker.expression=speechEmotion(current);
       if(current){
         speechElement.querySelector('p').textContent=current.text;
-        speechElement.querySelector('[data-action="speech-details"]').hidden=!current.ref||['object-daily','general','daily'].includes(current.origin);
+        speechElement.querySelector('[data-action="speech-details"]').hidden=!speechContext(current,chapterData);
         const link=speechElement.querySelector('[data-action="passage"]');
-        link.textContent=current.ref||'';link.hidden=!parseReference(current.ref);link.setAttribute('aria-label',`${current.ref||''} 성경 본문 보기`);
+        link.textContent=current.ref||'';link.hidden=!parseReference(current.ref)?.verses?.length;link.setAttribute('aria-label',`${current.ref||''} 성경 본문 보기`);
         speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
       }
     }
@@ -234,19 +235,14 @@ export async function mountPixelWorld(shell, options) {
   function openSpeechDetails(choice=shownSpeech){
     if(!choice)return;
     const reference=choice.ref,parsed=parseReference(reference);
-    const chapter=chapterData.find(c=>c.code===parsed?.code&&Number(c.chap)===parsed?.chapter);
+    const explanation=speechContext(choice,chapterData);if(!explanation)return;
     hideSpeech();
-    const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사와 본문 해설');
-    panel.innerHTML='<header><b>대사와 본문 해설</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>본문 맥락</h3><p></p></section><section class="pb-detail-summary"><h3>장 해설</h3><p></p></section><button class="pb-button" data-action="detail-passage">근거 본문 보기</button></div>';
+    shell.querySelector('.pb-scripture')?.remove();
+    const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사 쉽게 이해하기');
+    panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;
-    const context=panel.querySelector('.pb-detail-context');context.hidden=!choice.detailText;context.querySelector('p').textContent=choice.detailText||'';
-    const summary=panel.querySelector('.pb-detail-summary'),story=chapter?.data?.story||chapter?.data?.line||'';
-    summary.hidden=!story||story===choice.detailText;summary.querySelector('p').textContent=story;
-    if(chapter?.code==='1ki'&&Number(chapter.chap)===22){
-      const note=document.createElement('p');note.textContent='해설 · 여호사밧은 출전 전에 하나님의 뜻을 묻자고 요청해요. 왕이 듣기 원하는 말과 하나님의 말씀을 구별하는 것이 이 장의 중요한 갈등이에요. (열왕기상 22:5–8, 업로드 호크마 정리 참고)';
-      panel.querySelector('.pb-scripture-body').append(note);
-    }
-    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed;link.dataset.reference=reference||'';link.textContent=reference?reference+' · 본문 보기':'본문 보기';
+    panel.querySelector('.pb-detail-context p').textContent=explanation;
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
     shell.append(panel);panel.querySelector('button').focus();
   }
   function updateEncounters(now){
@@ -262,50 +258,33 @@ export async function mountPixelWorld(shell, options) {
         el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
         el.innerHTML='<p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
         el.dataset.encounter=id;el.querySelector('p').textContent=line.text;
-        el.querySelector('[data-action="encounter-details"]').hidden=!line.ref||['object-daily','general','daily'].includes(line.origin);
-        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref);link.dataset.reference=line.ref||'';
+        el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
+        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
       }
     }
   }
   function positionEncounters(){
-    const r=canvas.getBoundingClientRect(),v=view(),ratio=canvas.width/r.width,occupied=[];
-    if(!speechElement.hidden&&speechElement.style.visibility!=='hidden'){
-      occupied.push({left:parseFloat(speechElement.style.left)||0,top:parseFloat(speechElement.style.top)||0,width:speechElement.offsetWidth,height:speechElement.offsetHeight});
-    }
+    const r=canvas.getBoundingClientRect(),v=view();
     for(const line of encounterLines){
       const el=encounterBubbles.get(line.session+':'+line.slot);if(!el)continue;
-      const x=(line.speaker.x*TILE*v.scale+v.x)/ratio,y=((line.speaker.y*TILE-76)*v.scale+v.y)/ratio;
-      const width=el.offsetWidth,height=el.offsetHeight;
-      const targetX=(line.target.x*TILE*v.scale+v.x)/ratio;
-      const right=x>targetX||x===targetX&&line.slot===1;
-      const left=Math.max(8,Math.min(r.width-width-8,right?x+18:x-width-18));
-      const preferred=y-height-12+(line.slot?height+24:0);
-      const candidates=[preferred,y-height-12,y+14,y-2*height-24,y+height+28,...occupied.flatMap(o=>[o.top-height-12,o.top+o.height+12])].map(t=>Math.max(60,Math.min(r.height-height-12,t)));
-      const top=candidates.find(t=>occupied.every(o=>left+width+8<=o.left||left>=o.left+o.width+8||t+height+8<=o.top||t>=o.top+o.height+8))??candidates[0];
-      occupied.push({left,top,width,height});
-      el.style.left=`${Math.round(left)}px`;el.style.top=`${Math.round(top)}px`;el.style.setProperty('--pb-tail',`${Math.max(14,Math.min(width-14,x-left))}px`);
-      el.dataset.below=String(top>=y);el.style.visibility=x<0||x>r.width||y<-100||y>r.height?'hidden':'';
+      placeAboveHead(el,line.speaker,r,v,el.offsetWidth,el.offsetHeight);
     }
+  }
+  function placeAboveHead(el,n,r,v,width,height){
+    const anchor=interactionAnchor(n,TILE);
+    const x=(anchor.x*v.scale+v.x)*r.width/canvas.width;
+    const y=((anchor.y-72)*v.scale+v.y)*r.height/canvas.height;
+    const left=Math.max(4,Math.min(r.width-width-4,x-width/2));
+    const top=Math.max(4,y-height-8);
+    el.style.left=`${Math.round(left)}px`;el.style.top=`${Math.round(top)}px`;
+    el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-left))}px`);
+    el.dataset.below='false';delete el.dataset.side;
+    el.style.visibility=x<0||x>r.width||y<0||y>r.height?'hidden':'';
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
-    const r=canvas.getBoundingClientRect(),v=view(),n=shownSpeech.speaker,anchor=interactionAnchor(n,TILE);
-    const x=(anchor.x*v.scale+v.x)*r.width/canvas.width,y=((anchor.y-72)*v.scale+v.y)*r.height/canvas.height;
-    let left=Math.max(8,Math.min(r.width-speechWidth-8,x-speechWidth/2));
-    const topLimit=Math.max(48,shell.querySelector('.pb-world-head').offsetHeight+10),above=y-speechHeight-10;
-    speechElement.style.visibility=x<0||x>r.width||y<-80||y>r.height?'hidden':'';
-    const below=above<topLimit;
-    const proposed=below?((anchor.y+42)*v.scale+v.y)*r.height/canvas.height:above;
-    speechElement.dataset.below=String(below);
-    let top=Math.max(topLimit,Math.min(r.height-speechHeight-12,proposed));
-    if(shownSpeech.target&&shownSpeech.target.x===n.x){
-      const right=r.width-x>=speechWidth+48;
-      left=Math.max(8,Math.min(r.width-speechWidth-8,right?x+36:x-speechWidth-36));
-      top=Math.max(topLimit,Math.min(r.height-speechHeight-12,y));speechElement.dataset.side=right?'right':'left';
-    }else delete speechElement.dataset.side;
-    speechElement.style.left=`${Math.round(left)}px`;speechElement.style.top=`${Math.round(top)}px`;
-    speechElement.style.setProperty('--pb-tail',`${Math.max(14,Math.min(speechWidth-14,x-left))}px`);
+    placeAboveHead(speechElement,shownSpeech.speaker,canvas.getBoundingClientRect(),view(),speechElement.offsetWidth,speechElement.offsetHeight);
   }
   let backgroundKey=defaultBackground(requested);
   try{const saved=localStorage.getItem(backgroundStorageKey(model.key));if(Object.hasOwn(BACKGROUNDS,saved))backgroundKey=saved;}catch(_){}
