@@ -116,3 +116,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .study-notes-index{background:var(--surface);color:var(--ink)}
 .study-notes-index input,.study-notes-results button,.study-passage-links button{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .study-notes-results button:hover,.study-passage-links button:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+/* Hourly weather tint, with readable text surfaces retained. */
+:root{--weather-wash:transparent}
+:root[data-weather="cloudy"]{--weather-wash:#aab8c018}
+:root[data-weather="overcast"],:root[data-weather="fog"]{--weather-wash:#8293a12b}
+:root[data-weather="rain"],:root[data-weather="storm"]{--weather-wash:#627d9d33}
+:root[data-weather="snow"]{--weather-wash:#d4e6ef38}
+body{background-image:linear-gradient(var(--weather-wash),var(--weather-wash)),linear-gradient(135deg,var(--kst-sky),var(--bg) 65%);background-attachment:fixed}
+.app-entrance{background-image:linear-gradient(var(--weather-wash),var(--weather-wash)),linear-gradient(155deg,var(--kst-sky),var(--kst-light))!important}
+.entrance-celestial{top:var(--sun-height,22%);transition:top 1s}
+.app-entrance img{filter:brightness(var(--hour-glow,1));transition:filter 1s}
+:root[data-weather="overcast"] .app-entrance img,:root[data-weather="rain"] .app-entrance img{filter:brightness(.85) saturate(.8)}

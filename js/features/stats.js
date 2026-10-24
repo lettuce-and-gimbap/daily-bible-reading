@@ -145,6 +145,7 @@ function renderStats() {
     ${feedbackCardHtml()}
 
     ${reminderCardHtml()}
+    ${KstLight.permissionsHtml()}
 
     ${exportCardHtml()}
 
@@ -163,6 +164,7 @@ function renderStats() {
   bindAccountCard();
   bindFeedbackCard();
   bindReminderCard();
+  KstLight.bindPermissions(document);
   bindExportCard();
 
   ScriptureStudy.bindSettings(app);
