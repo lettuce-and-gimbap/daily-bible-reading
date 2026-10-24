@@ -119,7 +119,12 @@ document.addEventListener("keydown", (e) => {
 function showToast(msg, action) {
   const t = $("#toast");
   if (!t) return;
-  t.textContent = msg;
+  t.replaceChildren();
+  t.setAttribute("role", "status");
+  const message = document.createElement("span");
+  message.className = "toast-message";
+  message.textContent = msg;
+  t.append(message);
   if (action) {
     const b = document.createElement("button");
     b.className = "toast-action";
