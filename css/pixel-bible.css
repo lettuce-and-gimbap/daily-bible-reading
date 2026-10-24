@@ -125,3 +125,6 @@
 .pb-scripture mark{background:#f4db8b;color:#302f35;padding:0 2px;border-radius:2px}
 .pb-discovery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.pb-discovery-grid .pb-button{min-height:70px;white-space:normal}.pb-discovery-grid small{display:block;margin-top:6px}.pb-discovery-relation,.pb-discovery-story{padding:12px;margin:10px 0;border:1px solid #b9aa7d;background:#fff9e7}.pb-discovery-relation small,.pb-discovery-story small{display:block;margin:6px 0}.pb-collection h3{margin-top:22px}.pb-collection p{line-height:1.6}
 .pb-collection h2{font-size:22px;margin:14px 0}.pb-collection h3{font-size:16px;margin:18px 0 8px}.pb-collection p{font-size:14px;margin:10px 0}.pb-collection .pb-help{color:#71644b;font-size:12px}.pb-collection small{color:#71644b;line-height:1.5}
+.pb-collection input[type="search"]{width:100%;box-sizing:border-box;min-height:44px;margin:8px 0;padding:8px;font:inherit}
+.pb-collection progress{width:100%;height:16px;accent-color:#c9ad61}
+.pb-discovery-grid [hidden]{display:none!important}
