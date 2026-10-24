@@ -21,6 +21,20 @@ test('물 오브젝트에는 실제로 잔을 입에 대고 마시는 동작이 
  assert.equal(pose.gesture,'drink');assert.equal(pose.handY,10);assert.ok(pose.hand>0);
 });
 
+test('본문 재료만 잡혀도 조합식에서 요구하는 기름병 오브젝트를 별도로 준비할 수 있다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const {includeSceneObjects}=await import('../js/features/pixel-bible/world.js');
+ const {objectsForChapters}=await import('../js/features/pixel-bible/object-catalog.js');
+ const book=JSON.parse(await readFile(new URL('../data/summary/2ki.json',import.meta.url),'utf8'));
+ const chapter={code:'2ki',name:'열왕기하',chap:4,data:scopeChapterSummary(book.chapters[4])};
+ const scenes=(await import('../js/features/pixel-bible/world.js')).buildWorldModel([chapter]).scenes;
+ const choices=includeSceneObjects(objectsForChapters([chapter]),scenes);
+ assert.ok(choices.some(item=>item.id==='olive-oil'&&item.name==='기름'));
+ const oilJar=choices.find(item=>item.id==='oil');
+ assert.equal(oilJar.name,'기름병');assert.ok(oilJar.refs.includes('열왕기하 4:1–7'));
+ assert.match(oilJar.description,/빈 그릇/);
+});
+
 test('오브젝트 근거가 장 전체 요약이어도 발화로 사용하지 않는다',()=>{
  const evidence={text:'아람과 이스라엘의 전쟁을 설명하는 장 요약. '.repeat(80),ref:'열왕기상 22장'};
  const line=objectContextSpeech('물항아리',evidence,{random:()=>0});

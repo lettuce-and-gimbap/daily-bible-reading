@@ -40,6 +40,14 @@ export function worldViewport(width,height) {
   const scale=Math.max(width/WIDTH,height/HEIGHT);
   return {scale,x:(width-WIDTH*scale)/2,y:(height-HEIGHT*scale)/2};
 }
+export function includeSceneObjects(objects,scenes) {
+  const available=new Map(objects.map(item=>[item.id,item]));
+  for(const scene of scenes){
+    const item=OBJECT_CATALOG[scene.object];
+    if(item&&!available.has(item.id))available.set(item.id,{...item,refs:scene.ref?[scene.ref]:[],actors:[...scene.actors],evidence:[]});
+  }
+  return [...available.values()];
+}
 // Safari can report fractional CSS bounds while the backing canvas is DPR-scaled.
 // Clamp edge coordinates so taps on the final pixel row/column still resolve.
 export function clientToCanvasPoint(clientX,clientY,rect,width,height) {
@@ -127,18 +135,21 @@ export async function mountPixelWorld(shell, options) {
   const chapterData=requested.map((c)=>({...c,data:scopeChapterSummary(byCode[c.code].chapters[c.chap],c.verses)}));
   const model=buildWorldModel(chapterData),dialogueContext=buildChapterDialogue(chapterData);
   const visibleCast=visibleWorldCast(model,options.focusPerson||0);
-  const chapterProps=objectsForChapters(chapterData);
+  const chapterProps=includeSceneObjects(objectsForChapters(chapterData),model.scenes);
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
   if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
+  const objectChoice=(id,name)=>`<button class="pb-button pb-object-choice" data-place="${esc(id)}" aria-pressed="false" aria-label="${esc(name)} 배치. 한 번 터치, 1초 누르면 설명"><span class="pb-object-art"><canvas width="80" height="72" data-object-icon="${esc(id)}" aria-hidden="true"></canvas><svg class="pb-object-progress" viewBox="0 0 80 72" aria-hidden="true"><path d="M2 2H78V70H2Z"/></svg></span><span class="pb-object-choice-name">${esc(name)}</span></button>`;
+  const chapterObjectButtons=chapterProps.map(item=>objectChoice(item.id,item.name)).join('');
+  const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
   shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button><button type="button" class="pb-speech-reference" data-action="passage" hidden></button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(p.name)}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(p.name)} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="sound" aria-pressed="false">음성 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="design">디자인 도안</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(p.name)}</button>`).join('')}</div>
-    <h3>본문 오브젝트</h3><p class="pb-help">놓은 오브젝트는 1초 꾹 누른 뒤 끌어서 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar">${chapterProps.map(item=>`<button class="pb-button" data-place="${item.id}" title="${esc(item.description?item.description+' · '+item.descriptionRefs.join(' · '):item.evidence[0]?.text||'')}">＋ ${esc(item.name)}<small>${esc(item.refs.slice(0,2).join(' · '))}</small></button>`).join('')}</div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar">${Object.entries(WORLD_OBJECTS).map(([key,label])=>`<button class="pb-button" data-place="${key}" aria-pressed="false">＋ ${label}</button>`).join('')}</div></details><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
+    <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 1초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
     <div class="pb-camera-controls" aria-label="월드 시점"><button class="pb-button" data-action="camera-home">중앙으로</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
@@ -146,7 +157,8 @@ export async function mountPixelWorld(shell, options) {
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
     <div class="pb-rotate"><span class="pb-phone" aria-hidden="true">▯ ↻ ▭</span><strong>가로로 펼치는<br>PIXEL BIBLE</strong><p>기기를 가로로 돌려 주세요.<br>화면 회전 잠금이 켜져 있다면 해제해 주세요.</p><button class="pb-button" data-action="fullscreen">가로 화면으로 입장</button></div>`);
   const abort = new AbortController(), signal = abort.signal;
-  const canvas = shell.querySelector("canvas"), ctx = canvas.getContext("2d");
+  shell.querySelectorAll('canvas[data-object-icon]').forEach(icon=>{const preview=icon.getContext('2d');preview.imageSmoothingEnabled=false;drawWorldObject(preview,{kind:icon.dataset.objectIcon,x:2.5,y:2.25},16);});
+  const canvas = shell.querySelector(".pb-world-stage > canvas"), ctx = canvas.getContext("2d");
   const camera={...homeCamera(),...options.camera};
   const view=()=>cameraView(canvas.width,canvas.height,camera);
   const info = shell.querySelector(".pb-world-info");
@@ -682,6 +694,30 @@ export async function mountPixelWorld(shell, options) {
     if (delta) { e.preventDefault(); pendingEvent=null; const p=cell(n); p.x+=delta[0];p.y+=delta[1]; if (!blocked(p.x,p.y)) move(n,p); }
     if (e.key==="Enter") { e.preventDefault(); const o=[...objects].sort((a,b)=>Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y))[0]; if(o) interact(n,o); }
   }, {signal});
+  let objectChoicePress=null,longPressClick=null;
+  function stopObjectChoicePress(press,completed=false) {
+    if(!press||objectChoicePress!==press)return;
+    clearTimeout(press.timer);press.button.classList.remove('is-holding');
+    if(completed){press.button.classList.add('is-details');longPressClick={button:press.button,id:press.id,until:performance.now()+900};setTimeout(()=>{if(longPressClick?.button===press.button)longPressClick=null;},950);}
+    objectChoicePress=null;
+  }
+  function showObjectDetails(kind) {
+    const prop=chapterProps.find(item=>item.id===kind),entry=OBJECT_CATALOG[kind],box=shell.querySelector('[data-object-detail]');
+    const name=prop?.name||entry?.name||OBJECTS[kind]||kind;
+    const description=prop?.description||entry?.description||prop?.evidence?.[0]?.text||'이 오브젝트는 현재 분량에서 사용할 수 있어요.';
+    const refs=[...new Set([...(prop?.descriptionRefs||[]),...(prop?.refs||[]),...(entry?.descriptionRefs||[])])];
+    box.innerHTML=`<b>${esc(name)}</b><p>${esc(description)}</p>${refs.length?`<small>${esc(refs.join(' · '))}</small>`:''}`;box.hidden=false;box.scrollIntoView({block:'nearest',behavior:'smooth'});
+  }
+  document.addEventListener('pointerdown',e=>{
+    const button=e.target.closest('.pb-object-choice');if(!button||!shell.contains(button)||e.button!==0)return;
+    if(objectChoicePress)stopObjectChoicePress(objectChoicePress);
+    const press={button,id:e.pointerId,x:e.clientX,y:e.clientY,completed:false,timer:0};objectChoicePress=press;
+    button.classList.remove('is-details');button.classList.add('is-holding');
+    press.timer=setTimeout(()=>{if(objectChoicePress!==press)return;press.completed=true;stopObjectChoicePress(press,true);showObjectDetails(button.dataset.place);},1000);
+  },{signal});
+  document.addEventListener('pointermove',e=>{const press=objectChoicePress;if(press?.id===e.pointerId&&Math.hypot(e.clientX-press.x,e.clientY-press.y)>10)stopObjectChoicePress(press);},{signal});
+  document.addEventListener('pointerup',e=>{if(objectChoicePress?.id===e.pointerId)stopObjectChoicePress(objectChoicePress,objectChoicePress.completed);},{signal});
+  document.addEventListener('pointercancel',e=>{if(objectChoicePress?.id===e.pointerId)stopObjectChoicePress(objectChoicePress);if(longPressClick?.id===e.pointerId)longPressClick=null;},{signal});
   function syncPlacement() {
     shell.querySelectorAll("[data-place]").forEach((b)=>b.setAttribute("aria-pressed",b.dataset.place===placing));
     shell.querySelectorAll('[data-action="cancel-place"]').forEach(b=>b.hidden=!placing);
@@ -717,10 +753,11 @@ export async function mountPixelWorld(shell, options) {
       shell.querySelector('.pb-person-details').hidden=false;if(index>=0)select(index,true);return;
     }
     if (b.dataset.place) {
+      if(longPressClick?.button===b&&performance.now()<longPressClick.until){longPressClick=null;return;}
       if(activeEvent) return;
       removing=false;const removeButton=shell.querySelector('[data-action="remove-object"]');removeButton.setAttribute('aria-pressed','false');removeButton.textContent='개별 철거';
       placing=placing===b.dataset.place?null:b.dataset.place;syncPlacement();
-      if(placing){togglePanel('right',false);say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 누르세요.`);}else clearInfo();
+      if(placing){togglePanel('right',false);say(`${objectPhrase(OBJECTS[placing])} 놓을 빈 땅을 터치하세요. 배치 취소를 누르면 도구로 돌아가요.`);}else{togglePanel('right',true);clearInfo();}
       return;
     }
     const action=b.dataset.action;
@@ -740,7 +777,7 @@ export async function mountPixelWorld(shell, options) {
       shell.append(board);await document.fonts?.load('12px "DungGeunMo"');if(!board.isConnected)return;drawDesignBoard(board.querySelector("canvas").getContext("2d"));board.querySelector("button").focus();
     }
     if(action==="close-design") {shell.querySelector(".pb-design")?.remove();shell.querySelector('[data-action="design"]').focus();}
-    if(action==="cancel-place") { placing=null; syncPlacement(); }
+    if(action==="cancel-place") { placing=null; syncPlacement(); togglePanel('right',true); draw(); return; }
     if(action==='toggle-left')togglePanel('left');
     if(action==='toggle-right')togglePanel('right');
     if(action==="fullscreen") {
