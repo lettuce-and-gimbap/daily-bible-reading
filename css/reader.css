@@ -589,3 +589,6 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .study-reference{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .study-reference-verses{border-top:1px solid var(--line,#ccd7d1);margin-top:16px}
 .study-term:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+mark.study-mark{cursor:pointer}
+mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.study-version,.study-version mark{-webkit-user-select:text;user-select:text}

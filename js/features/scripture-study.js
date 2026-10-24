@@ -24,7 +24,7 @@ window.ScriptureStudy=(()=>{
   const render=()=>{const q=box.querySelector('input').value.trim(),terms=data.terms.filter(t=>!q||[t.title,...t.aliases,t.summary].some(x=>x.includes(q)));const results=box.querySelector('.study-notes-results');results.innerHTML=terms.length?terms.map(t=>`<button type="button" data-note-id="${esc(t.id)}">${esc(t.title)}<small>${esc(t.category)}</small></button>`).join(''):'<p role="status">등록된 설명이 없어요. 모든 구절에 주석이 있는 것은 아니에요.</p>';};box.querySelector('input').oninput=render;box.onclick=e=>{const button=e.target.closest('[data-note-id]');if(button){e.preventDefault();showTerm(glossary[button.dataset.noteId]);}};render();root.querySelector('.vp-list')?.before(box);
  }
  function modal(title){document.querySelector('.study-dialog')?.remove();const d=document.createElement('dialog');d.className='study-dialog';d.setAttribute('aria-label',title);d.innerHTML='<h3></h3><div class="study-dialog-body"></div><button type="button">닫기</button>';d.querySelector('h3').textContent=title;d.querySelector('button').onclick=()=>d.close();d.addEventListener('close',()=>d.remove());document.body.append(d);d.showModal();return d.querySelector('.study-dialog-body');}
- document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(g)showTerm(g);},true);
+ document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||e.target.closest('mark.study-mark')||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(g)showTerm(g);},true);
  document.addEventListener('keydown',e=>{if(e.target.matches('[data-study-term]')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
 
  const colorKey='scripture-highlight-color:v1';
@@ -41,7 +41,7 @@ window.ScriptureStudy=(()=>{
   segment.innerHTML=glossaryHtml(text,{code:segment.dataset.studyBook});
   // Keep a term's accessible button intact even when a highlight covers only part of it.
   const walker=document.createTreeWalker(segment,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);let offset=0;
-  for(const node of nodes){const base=offset,end=base+node.textContent.length;offset=end;const points=[...new Set([base,end,...ranges.flatMap(r=>[r.start,r.end]).filter(n=>n>base&&n<end)])].sort((a,b)=>a-b);const fragment=document.createDocumentFragment();for(let i=0;i<points.length-1;i++){const start=points[i],stop=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=stop),part=document.createTextNode(node.textContent.slice(start-base,stop-base));if(match){const mark=document.createElement('mark');mark.className='study-mark';mark.style.background=match.color;mark.style.color=[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1';mark.append(part);fragment.append(mark);}else fragment.append(part);}node.replaceWith(fragment);}
+  for(const node of nodes){const base=offset,end=base+node.textContent.length;offset=end;const points=[...new Set([base,end,...ranges.flatMap(r=>[r.start,r.end]).filter(n=>n>base&&n<end)])].sort((a,b)=>a-b);const fragment=document.createDocumentFragment();for(let i=0;i<points.length-1;i++){const start=points[i],stop=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=stop),part=document.createTextNode(node.textContent.slice(start-base,stop-base));if(match){const mark=document.createElement('mark');mark.className='study-mark';mark.dataset.studyStart=String(match.start);mark.dataset.studyEnd=String(match.end);mark.tabIndex=0;mark.setAttribute('role','note');mark.setAttribute('aria-label','이 구의 하이라이트와 메모 보기');mark.style.background=match.color;mark.style.color=[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1';mark.append(part);fragment.append(mark);}else fragment.append(part);}node.replaceWith(fragment);}
 
  }
  function selectionParts(){
@@ -56,11 +56,11 @@ window.ScriptureStudy=(()=>{
   }return parts;
  }
  function offerHighlight(){
-  const parts=selectionParts();const dock=parts[0]?.el.closest('[data-study-docked]');if(dock){dockSelections.set(dock,parts.filter(p=>dock.contains(p.el)));closeTip();return;}if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
-  tip=document.createElement('div');tip.className='study-selection-tools';tip.setAttribute('role','toolbar');tip.setAttribute('aria-label','선택한 글 형광펜');tip.innerHTML='<button type="button" data-selection-mark>형광펜</button><button type="button" data-selection-clear>표시 지우기</button>';
+  const parts=selectionParts();const owner=parts[0]?.el.closest('[data-study-root]');if(owner)dockSelections.set(owner,parts.filter(p=>owner.contains(p.el)));const dock=parts[0]?.el.closest('[data-study-docked]');if(dock){dockSelections.set(dock,parts.filter(p=>dock.contains(p.el)));closeTip();return;}if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
+  tip=document.createElement('div');tip.className='study-selection-tools';tip.setAttribute('role','toolbar');tip.setAttribute('aria-label','선택한 글 형광펜');tip.innerHTML='<button type="button" data-selection-mark>하이라이트·메모</button><button type="button" data-selection-clear>표시 지우기</button>';
   tip.querySelector('[data-selection-mark]').style.borderBottom='5px solid '+currentColor();
   tip.addEventListener('pointerdown',e=>e.preventDefault());
-  tip.onclick=e=>{const b=e.target.closest('button');if(!b)return;for(const {el,start,end}of pending){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);let ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash);
+  tip.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-selection-mark')){const parts=pending.slice();closeTip();pending=[];window.getSelection()?.removeAllRanges();openPhraseNote(parts);return;}for(const {el,start,end}of pending){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);let ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash);
     if(b.hasAttribute('data-selection-clear'))ranges=ranges.flatMap(r=>r.end<=start||r.start>=end?[r]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);
     else ranges.push({start,end,color:currentColor(),hash});
     records[key]={...records[key],ranges};
@@ -73,6 +73,7 @@ window.ScriptureStudy=(()=>{
  document.addEventListener('copy',()=>setTimeout(offerHighlight,0));
  document.addEventListener('scroll',closeTip,true);
  function mount(root,keys,{dock=false}={}){
+  root.dataset.studyRoot='true';
   if(dock)root.dataset.studyDocked='true';
   mountIndex(root);
   const rows=[...root.querySelectorAll('.vp-row')];
@@ -86,9 +87,20 @@ window.ScriptureStudy=(()=>{
    });paint(row);
   });save();
   if(dock){mountDock(root,rows);return;}
-  root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<span>단어·구를 길게 눌러 선택하면 형광펜을 칠할 수 있어요.</span><button type="button" data-study-note>선택한 절에 메모</button><small aria-live="polite">형광펜 색은 관리에서 바꿔요. 표시는 이 기기에 저장돼요.</small>';root.querySelector('.vp-list')?.before(bar);
-  bar.onclick=e=>{if(!e.target.closest('[data-study-note]'))return;const selected=rows.filter(r=>r.querySelector('input').checked);if(!selected.length){bar.querySelector('small').textContent='메모할 절을 먼저 선택해 주세요.';return;}const body=modal('선택한 구절 메모');body.innerHTML='<label>메모<textarea rows="5"></textarea></label><button type="button">저장</button>';body.querySelector('textarea').value=records[selected[0].dataset.studyKey]?.note||'';body.querySelector('button').onclick=()=>{for(const r of selected){const k=r.dataset.studyKey;records[k]={...records[k],note:body.querySelector('textarea').value};}if(save()){selected.forEach(paint);body.closest('dialog').close();}};};
+  root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<span>절 안의 단어·구를 드래그하거나 길게 눌러 선택하세요.</span><button type="button" data-study-note>선택한 구 하이라이트·메모</button><small aria-live="polite">형광펜 색은 관리에서 바꿔요. 표시는 이 기기에 저장돼요.</small>';root.querySelector('.vp-list')?.before(bar);
+  bar.addEventListener('pointerdown',()=>{const parts=selectionParts().filter(p=>root.contains(p.el));if(parts.length)dockSelections.set(root,parts);});
+  bar.onclick=e=>{if(!e.target.closest('[data-study-note]'))return;const parts=selectionParts().filter(p=>root.contains(p.el));const chosen=parts.length?parts:(dockSelections.get(root)||[]).filter(p=>p.el.isConnected);if(!chosen.length){bar.querySelector('small').textContent='절 안에서 메모할 단어·구를 먼저 드래그해 주세요.';return;}openPhraseNote(chosen);};
+
  }
+ function openPhraseNote(parts){
+  if(!parts.length)return;const body=modal('선택한 구 · 하이라이트와 메모');body.innerHTML='<p class="study-dock-quote"></p><label>이 구에 남길 메모<textarea rows="5" placeholder="선택한 구에 대해 메모하세요"></textarea></label><button type="button" class="btn primary">하이라이트·메모 저장</button>';
+  body.querySelector('p').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.hash===fingerprint(first.el.dataset.studyText)&&r.start===first.start&&r.end===first.end);body.querySelector('textarea').value=existing?.note||'';
+  window.getSelection()?.removeAllRanges();closeTip();body.querySelector('button').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText),ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash&&!(r.start===start&&r.end===end));ranges.push({start,end,color:existing?.color||currentColor(),hash,note:body.querySelector('textarea').value});records[key]={...records[key],ranges};}
+   if(save()){for(const {el}of parts){renderSegment(el);paint(el.closest('.vp-row'));const root=el.closest('[data-study-root]');if(root)dockSelections.delete(root);}body.closest('dialog').close();}
+  };
+ }
+ document.addEventListener('click',e=>{const mark=e.target.closest('mark.study-mark');if(!mark||!window.getSelection()?.isCollapsed)return;const el=mark.closest('[data-study-segment]');if(!el)return;e.preventDefault();e.stopPropagation();openPhraseNote([{el,start:Number(mark.dataset.studyStart),end:Number(mark.dataset.studyEnd)}]);},true);
+ document.addEventListener('keydown',e=>{if(e.target.matches('mark.study-mark')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
  function mountDock(root,rows){
   root.querySelector('.study-toolbar')?.remove();root.querySelector('.study-dock-editor')?.remove();
   const button=root.querySelector('[data-study-highlight]');if(!button)return;
@@ -97,10 +109,10 @@ window.ScriptureStudy=(()=>{
   root.querySelector('[data-act="clear"]')?.addEventListener('click',()=>{dockSelections.delete(root);root.querySelector('.study-dock-editor')?.remove();window.getSelection()?.removeAllRanges();});
   button.onclick=()=>{
    let parts=(dockSelections.get(root)||[]).filter(p=>p.el.isConnected);
-   if(!parts.length)parts=rows.filter(r=>r.querySelector('input').checked).flatMap(r=>[...r.querySelectorAll('[data-study-segment]')].map(el=>({el,start:0,end:el.dataset.studyText.length})));
+
    root.querySelector('.study-dock-editor')?.remove();const editor=document.createElement('section');editor.className='study-dock-editor';editor.setAttribute('aria-label','하이라이트와 메모');
-   if(!parts.length){editor.innerHTML='<p role="status">단어·구를 선택하거나 표시할 절을 먼저 골라 주세요.</p>';root.querySelector('.vp-bar').after(editor);return;}
-   editor.innerHTML='<h3>하이라이트 · 메모</h3><p class="study-dock-quote"></p><label>메모<textarea rows="4" placeholder="선택한 말씀에 메모를 남겨 보세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-dock-save>하이라이트 저장</button><button type="button" class="btn ghost" data-dock-erase>하이라이트 지우기</button><button type="button" class="btn ghost" data-dock-cancel>닫기</button></div><small role="status">관리에서 고른 색으로 표시하고 이 기기에 저장해요.</small>';
+   if(!parts.length){editor.innerHTML='<p role="status">절 안의 단어·구를 드래그해 선택한 뒤 하이라이트를 눌러 주세요. 절 체크만으로는 표시되지 않아요.</p>';root.querySelector('.vp-bar').after(editor);return;}
+   editor.innerHTML='<h3>하이라이트 · 메모</h3><p class="study-dock-quote"></p><label>메모<textarea rows="4" placeholder="선택한 구에 대해 메모를 남겨 보세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-dock-save>하이라이트 저장</button><button type="button" class="btn ghost" data-dock-erase>하이라이트 지우기</button><button type="button" class="btn ghost" data-dock-cancel>닫기</button></div><small role="status">관리에서 고른 색으로 표시하고 이 기기에 저장해요.</small>';
    editor.querySelector('.study-dock-quote').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');
    const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.start===first.start&&r.end===first.end&&r.hash===fingerprint(first.el.dataset.studyText));editor.querySelector('textarea').value=existing?.note||'';
    root.querySelector('.vp-bar').after(editor);window.getSelection()?.removeAllRanges();editor.scrollIntoView({block:'nearest'});
