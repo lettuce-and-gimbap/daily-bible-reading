@@ -100,7 +100,7 @@ export function interactionRoutine(n,kind,visit=0){
 
  return {id:`${category}:${variants[index][0]}`,category,kind,outcome:index,gesture:variants[index][0],label:variants[index][1],variant:seed%3,period:2.4+(seed%4)*.2,phase:(seed%4)/4};
 }
-export function interactionPose(routine,time=0,reduced=false){
+function rawInteractionPose(routine,time=0,reduced=false){
  const phase=reduced?1:Math.floor((time/routine.period+routine.phase)*4+1e-9)%4;
  const use=phase===1||phase===2,reach=phase===1?1:phase===2?2:0;
  if(routine.creatureAction)return {phase,within:0,actual:routine.gesture,gesture:routine.gesture,creatureAction:routine.creatureAction,prop:routine.category,hand:0,bodyX:0,bodyY:0,bend:0,handY:26};
@@ -119,7 +119,7 @@ export function interactionPose(routine,time=0,reduced=false){
  const within=reduced?.5:((time/routine.period+routine.phase)*4)%1;
  const sit=!lie&&(category==='bench'||category==='boat'||(category==='bed'&&['sit','rest'].includes(gesture))||(category==='cart'&&gesture==='sit')||gesture==='write');
  const bend=kneel?2:['gather','pick','place','kneel','care','prepare','bow','fill','retrieve'].includes(gesture)?reach:['bundle','harvest','stack'].includes(gesture)?reach*.5:0;
- const handY=['wear','remove'].includes(gesture)?(phase===1?17:phase===2?23:25):gesture==='trim'?(use?20:24):['point','shield','tend'].includes(gesture)?(use?18:24):['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)?(phase===1?24:26):['eat','taste','drink'].includes(gesture)?(phase===2?10:25):gesture==='sip'?(phase===2?10:24):gesture==='scoop'?(phase===2?24:29):gesture==='wash'?(phase===2?27:29):gesture==='pour'?(phase===2?28:23):gesture==='fill'?29:gesture==='cap'?(phase===2?22:25):['leaves','fruit','trunk'].includes(gesture)?(use?19:24):['blow','aim','shoot','draw','nock','fletch'].includes(gesture)?(phase===1?17:phase===2?18:22):['arrange','serve','smooth','fill','reins'].includes(gesture)?(phase===2?27:25):['lower-rope','bucket'].includes(gesture)?(phase===1?30:phase===2?34:25):['retrieve','gather-flour','break','share','offer'].includes(gesture)?(phase===2?24:27):['carry','hold'].includes(gesture)?(use?27:25):['take-bread'].includes(gesture)?(phase===2?20:26):gesture==='lap'?27:gesture==='inspect'?21:gesture==='bundle'?26:gesture==='hold'?25:bend?28:24;
+ const handY=['wear','remove'].includes(gesture)?(phase===1?17:phase===2?23:25):gesture==='trim'?(use?20:24):['point','shield','tend'].includes(gesture)?(use?18:24):['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)?(phase===1?24:26):['eat','taste','drink'].includes(gesture)?(phase===2?16:25):gesture==='sip'?(phase===2?10:24):gesture==='scoop'?(phase===2?24:29):gesture==='wash'?(phase===2?27:29):gesture==='pour'?(phase===2?28:23):gesture==='fill'?29:gesture==='cap'?(phase===2?22:25):['leaves','fruit','trunk'].includes(gesture)?(use?19:24):['blow','aim','shoot','draw','nock','fletch'].includes(gesture)?(phase===1?17:phase===2?18:22):['arrange','serve','smooth','fill','reins'].includes(gesture)?(phase===2?27:25):['lower-rope','bucket'].includes(gesture)?(phase===1?30:phase===2?34:25):['retrieve','gather-flour','break','share','offer'].includes(gesture)?(phase===2?24:27):['carry','hold'].includes(gesture)?(use?27:25):['take-bread'].includes(gesture)?(phase===2?20:26):gesture==='lap'?27:gesture==='inspect'?21:gesture==='bundle'?26:gesture==='hold'?25:bend?28:24;
  const wearing=['wear','wear-pattern'].includes(actual)?use:actual==='remove'?phase===0:false;
  const adjustedHandY=lie?26:archery?actual==='nock'?(phase===1?21:24):actual==='aim'?18:actual==='draw'?17:actual==='fletch'?(phase===2?21:25):actual==='retrieve'?(use?30:26):shooting?(actual==='high-shot'?14:actual==='low-shot'||actual==='steady-shot'?22:actual==='quick-shot'?16:phase===2?13:18):24:kneel?30:climbing?(phase===1?18:phase===2?22:26):actual==='lower-rope'?(phase===1?28:phase===2?34:25):rope?(phase===1?23:phase===2?26:28):reachHigh?19:working?(phase===1?25:27):handY;
  const shot=shooting&&phase===2;
@@ -127,3 +127,17 @@ export function interactionPose(routine,time=0,reduced=false){
 }
 // 한글 안내는 도안/문서 검토용이며 월드 하단 설명으로 띄우지 않는다.
 export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce((s,v)=>s+v.length,0);
+
+// Advance one source pixel at a time between action poses, including the loop seam.
+export function interactionPose(routine,time=0,reduced=false){
+ const pose=rawInteractionPose(routine,time,reduced);
+ if(reduced||routine.creatureAction)return pose;
+ const position=(time/routine.period+routine.phase)*4;
+ const fraction=position-Math.floor(position);
+ const next=rawInteractionPose(routine,time+(1-fraction)*routine.period/4+1e-7,false);
+ const progress=Math.floor(fraction*8)/8;
+ for(const key of ['handY','bodyX','bodyY','bend','reach','legSwing','climb']){
+  if(Number.isFinite(pose[key])&&Number.isFinite(next[key]))pose[key]=Math.round(pose[key]+(next[key]-pose[key])*progress);
+ }
+ return pose;
+}

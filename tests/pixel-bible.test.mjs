@@ -18,7 +18,7 @@ test('물 오브젝트에는 실제로 잔을 입에 대고 마시는 동작이 
  const {interactionOptions,interactionPose}=await import('../js/features/pixel-bible/interaction-motion.js');
  const options=interactionOptions('water');assert.ok(options.some(([g])=>g==='drink'));assert.ok(options.some(([g])=>g==='sip'));
  const pose=interactionPose({category:'water',kind:'water',gesture:'drink',period:2.4,phase:0,variant:0},1.2);
- assert.equal(pose.gesture,'drink');assert.equal(pose.handY,10);assert.ok(pose.hand>0);
+ assert.equal(pose.gesture,'drink');assert.equal(pose.handY,16);assert.ok(pose.hand>0);
 });
 
 test('본문 재료만 잡혀도 조합식에서 요구하는 기름병 오브젝트를 별도로 준비할 수 있다',async()=>{

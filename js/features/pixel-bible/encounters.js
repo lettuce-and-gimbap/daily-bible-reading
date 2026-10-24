@@ -37,12 +37,14 @@ export class EncounterDirector {
    const touching=beside(a,b)&&!deny.has(a)&&!deny.has(b);
    if(!touching){state.touching=false;continue;}
    if(state.touching||busy.has(a)||busy.has(b)||this.active.length>=this.maxActive)continue;
+   const lines=this.lines(a,b,relation);
+   if(!lines.length)continue;
    state.touching=true;
    // Tiny walking interpolation differences are aligned on the shared axis.
    if(Math.abs(a.y-b.y)<.12){b.y=a.y;b.x=a.x+Math.sign(b.x-a.x);}else{b.x=a.x;b.y=a.y+Math.sign(b.y-a.y);}
    const directions=opposedDirections(a,b);
    [a,b].forEach((n,i)=>{n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;n.direction=directions[i];busy.add(n);});
-   const session={id,people:[a,b],lines:this.lines(a,b,relation),started:now,until:now+5800};this.active.push(session);
+   const session={id,people:[a,b],lines,started:now,until:now+5800};this.active.push(session);
   }
   return this.active.flatMap(s=>s.lines.map((line,i)=>({...line,session:s.id,slot:i,started:s.started+i*800,until:s.started+i*800+5000}))).filter(l=>now>=l.started&&now<l.until);
  }
