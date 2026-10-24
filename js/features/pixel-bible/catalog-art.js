@@ -3,6 +3,24 @@ import {garmentColor} from './garments.js';
 export function drawCatalogDetail(r,id,family,O){
  const wood='#a78255',gold='#d8b75f',metal='#aab6b4',paper='#eee0b3',dark='#5d665f';
  const line=(x,y,w,h,c=wood)=>r(x,y,w,h,c);
+ if(id==='bread'||id==='barley-bread'){line(-9,-7,18,8,'#9b703f');line(-7,-10,14,4,'#c99c57');line(-8,-6,16,6,'#ddb878');for(const x of [-4,2]){line(x,-8,2,5,'#f3d49a');}if(id==='barley-bread')for(const x of [-6,0,5])line(x,-3,1,1,'#987247');return true;}
+ if(id==='lyre'){line(-8,-21,3,17,gold);line(5,-21,3,17,gold);line(-8,-22,16,3,wood);line(-7,-5,14,9,wood);line(-5,-4,10,5,gold);for(let x=-4;x<=4;x+=2)line(x,-19,1,18,paper);return true;}
+ if(id==='harp'){line(-10,-23,3,28,gold);line(-9,2,21,3,wood);for(let i=0;i<10;i++)line(-7+i*2,-23+i*2,3,3,gold);for(let i=0;i<6;i++)line(-5+i*2,-19+i*2,1,21-i*2,paper);return true;}
+ if(id==='cymbal'){for(const x of [-10,3]){line(x,-13,8,2,gold);line(x-2,-11,12,7,'#b99a4e');line(x,-4,8,2,gold);line(x+2,-10,3,4,'#f2d684');}return true;}
+
+ // Recognizable silhouettes for items that previously shared a generic heap or frame.
+ if(id==='plow'){line(-14,0,28,3,wood);line(-8,-5,4,8,metal);line(-4,-20,3,22,wood);line(-3,-20,13,3,wood);line(8,-20,2,14,wood);line(-13,-3,8,2,paper);return true;}
+ if(id==='yoke'){line(-14,-13,28,4,wood);for(const x of [-10,6]){line(x,-10,2,13,wood);line(x+5,-10,2,13,wood);line(x,2,7,2,wood);}line(-2,-15,4,6,dark);return true;}
+ if(id==='hammer'){line(-1,-18,3,23,wood);line(-8,-24,18,7,O);line(-7,-23,16,5,metal);line(5,-22,4,2,paper);return true;}
+ if(id==='hook'){line(-1,-23,2,18,metal);line(-3,-25,6,2,metal);line(-4,-23,2,4,metal);line(-1,-6,8,2,metal);line(6,-10,2,5,metal);line(5,-12,2,3,paper);return true;}
+ if(id==='pearl'){line(-5,-13,10,2,paper);line(-7,-11,14,10,'#d6d9d2');line(-5,-1,10,2,'#c0c9c5');line(-5,-10,10,8,paper);line(-4,-10,3,3,'#fffbed');return true;}
+ if(id==='jewel'){line(-5,-17,10,3,'#9bc1c0');line(-9,-14,18,6,'#609d9f');for(let i=0;i<7;i++)line(-7+i,-8+i,14-i*2,1,'#54838e');line(-3,-14,4,7,'#d2e6d9');return true;}
+ if(id==='gold'||id==='silver'){const col=id==='gold'?gold:metal;line(-10,-7,20,9,O);line(-8,-11,16,4,col);line(-9,-6,18,7,col);line(-7,-10,13,2,paper);line(5,-5,3,6,dark);return true;}
+ if(id==='flour'||id==='salt'){line(-9,-10,18,14,wood);line(-11,-12,22,3,paper);line(-8,-9,16,10,id==='salt'?'#c7d3d1':'#c7ab79');line(-5,-7,10,5,paper);for(let i=0;i<4;i++)line(-4+i*3,-12-i%2*2,2,2,paper);return true;}
+ if(id==='leaven'){line(-10,0,20,3,wood);line(-7,-7,14,8,'#b69769');line(-4,-10,8,4,'#d2bb8b');for(const [x,y]of [[-3,-5],[2,-6],[4,-2]])line(x,y,2,2,'#8f744f');return true;}
+ if(id==='mustard'){line(-6,2,12,2,wood);line(-2,-3,4,4,gold);line(-1,-3,1,1,paper);return true;}
+ if(id==='seed'){for(const [x,y]of [[-7,-7],[-1,-12],[5,-6],[-3,-2]]){line(x,y,4,6,wood);line(x+1,y,2,4,gold);}return true;}
+ if(id==='manna'){for(const [x,y]of [[-8,-5],[-2,-10],[5,-5],[-1,-1]]){line(x,y,5,3,paper);line(x+1,y-1,3,1,'#fff7de');}return true;}
 
 
  if(id==='mat'){line(-15,-7,30,10,O);line(-14,-6,28,8,'#bba375');line(-13,-8,6,5,paper);for(let i=0;i<6;i++)line(-6+i*3,-5,1,6,'#92794f');return true;}

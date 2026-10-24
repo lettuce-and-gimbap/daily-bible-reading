@@ -706,6 +706,12 @@ export async function mountPixelWorld(shell, options) {
     const name=prop?.name||entry?.name||OBJECTS[kind]||kind;
     const description=prop?.description||entry?.description||prop?.evidence?.[0]?.text||'이 오브젝트는 현재 분량에서 사용할 수 있어요.';
     const refs=[...new Set([...(prop?.descriptionRefs||[]),...(prop?.refs||[]),...(entry?.descriptionRefs||[])])];
+    const button=[...shell.querySelectorAll('[data-place]')].find(b=>b.dataset.place===kind);
+    if(button){
+      const grid=button.closest('.pb-object-grid');
+      const row=[...grid.querySelectorAll('.pb-object-choice')].filter(b=>Math.abs(b.offsetTop-button.offsetTop)<3);
+      row[row.length-1].after(box);
+    }
     box.innerHTML=`<b>${esc(name)}</b><p>${esc(description)}</p>${refs.length?`<small>${esc(refs.join(' · '))}</small>`:''}`;box.hidden=false;box.scrollIntoView({block:'nearest',behavior:'smooth'});
   }
   document.addEventListener('pointerdown',e=>{
