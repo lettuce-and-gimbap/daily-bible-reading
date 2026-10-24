@@ -173,7 +173,7 @@ export async function mountPixelWorld(shell, options) {
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
   const speech=new SpeechDirector({now:performance.now()-3000});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
-  const encounters=new EncounterDirector(chapterData,dialogueContext);let encounterLines=[];const encounterBubbles=new Map();
+  const encounters=new EncounterDirector(chapterData,dialogueContext,{maxActive:1});let encounterLines=[];const encounterBubbles=new Map();
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
@@ -266,21 +266,29 @@ export async function mountPixelWorld(shell, options) {
   }
   function positionEncounters(){
     const r=canvas.getBoundingClientRect(),v=view();
+    const placed=[];
     for(const line of encounterLines){
       const el=encounterBubbles.get(line.session+':'+line.slot);if(!el)continue;
-      placeAboveHead(el,line.speaker,r,v,el.offsetWidth,el.offsetHeight);
+      const box=placeAboveHead(el,line.speaker,r,v,el.offsetWidth,el.offsetHeight,placed);
+      if(box)placed.push(box);
     }
   }
-  function placeAboveHead(el,n,r,v,width,height){
+  function placeAboveHead(el,n,r,v,width,height,placed=[]){
     const anchor=interactionAnchor(n,TILE);
     const x=(anchor.x*v.scale+v.x)*r.width/canvas.width;
     const y=((anchor.y-72)*v.scale+v.y)*r.height/canvas.height;
     const left=Math.max(4,Math.min(r.width-width-4,x-width/2));
-    const top=Math.max(4,y-height-8);
-    el.style.left=`${Math.round(left)}px`;el.style.top=`${Math.round(top)}px`;
+    const top=Math.max(4,y-height-8),gap=8;
+    let safeTop=top;
+    // Keep every bubble above its speaker; move it upward by whole bubble heights
+    // until it no longer covers another active bubble.
+    while(placed.some(box=>left<box.right+gap&&left+width>box.left-gap&&safeTop<box.bottom+gap&&safeTop+height>box.top-gap))safeTop-=height+gap;
+    const overlap=placed.some(box=>left<box.right+gap&&left+width>box.left-gap&&safeTop<box.bottom+gap&&safeTop+height>box.top-gap);
+    el.style.left=`${Math.round(left)}px`;el.style.top=`${Math.round(safeTop)}px`;
     el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-left))}px`);
     el.dataset.below='false';delete el.dataset.side;
-    el.style.visibility=x<0||x>r.width||y<0||y>r.height?'hidden':'';
+    el.style.visibility=x<0||x>r.width||y<0||y>r.height||safeTop<0||overlap?'hidden':'';
+    return {left,right:left+width,top:safeTop,bottom:safeTop+height};
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
