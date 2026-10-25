@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
-import {SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
+import {ambientSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
 import {relationshipLines} from '../js/features/pixel-bible/relationship-lines.js';
 
@@ -70,12 +70,14 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
  }
 });
 
-test('관계 없는 근접 인물은 일상 인사만 하고 랜덤 말풍선은 독립적으로 유지한다',()=>{
+test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
- const current=ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
- director.tick(0,npcs);assert.equal(ambient.current,current);
+ ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
+ const related=director.tick(0,npcs);assert.equal(ambient.tick(1,[],ambientSpeechAllowed(related)),null);assert.equal(ambient.current,null);
  director.clear();director.context={people:[],relations:[]};
- const greeting=director.tick(1,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
+ const greeting=director.tick(2,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
+ assert.equal(ambientSpeechAllowed(greeting),false);
+ assert.equal(ambientSpeechAllowed([]),true);
 });
 
 test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움직임을 갖는다',()=>{
