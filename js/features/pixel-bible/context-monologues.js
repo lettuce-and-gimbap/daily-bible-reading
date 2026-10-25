@@ -1,4 +1,5 @@
 import {twoKingsMonologues} from './2ki-dialogue.js';
+import {newTestamentMonologues} from './nt-dialogue.js';
 import {oldTestamentMonologues} from './ot-dialogue.js';
 // 본문 사건을 짧게 풀어 쓴 창작 대사. 성경의 직접 인용이 아니다.
 // 이름뿐 아니라 책/장과 역할을 확인해 동명이인과 행위 주체를 구분한다.
@@ -59,5 +60,5 @@ export function chapterMonologues(n,occurrences){
   for(const [text,emotion]of lines)out.push({text,ref,emotion});
  }
  const remaining=occurrences.filter(p=>!sceneKeys.has(`${p.code}.${p.chap}`));
- return [...out,...oldTestamentMonologues(n,remaining),...twoKingsMonologues(n,remaining)];
+ return [...out,...newTestamentMonologues(n,remaining),...oldTestamentMonologues(n,remaining),...twoKingsMonologues(n,remaining)];
 }
