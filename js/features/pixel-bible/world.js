@@ -274,7 +274,7 @@ export async function mountPixelWorld(shell, options) {
     encounterLines=encounters.tick(now,npcs,{enabled,excluded});
     if(pendingTalk&&[pendingTalk.choice.speaker,pendingTalk.choice.target].some(n=>n.encounter))cancelTalk();
     const ids=new Set(encounterLines.map(l=>l.session+':'+l.slot));
-    for(const [id,el]of encounterBubbles)if(!ids.has(id)){el.remove();encounterBubbles.delete(id);}
+    for(const [id,el]of encounterBubbles)if(!ids.has(id)){el._closePortrait?.();el.remove();encounterBubbles.delete(id);}
     for(const line of encounterLines){
       const id=line.session+':'+line.slot;let el=encounterBubbles.get(id);
       if(!el){
@@ -286,6 +286,7 @@ export async function mountPixelWorld(shell, options) {
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
+        if(chapterData.some(ch=>ch.code==='2ki')){el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker));el.querySelector('canvas').style.maxHeight='100px';}
       }
     }
   }
@@ -498,6 +499,7 @@ export async function mountPixelWorld(shell, options) {
     return true;
   }
   function toObject(n, o) {
+    if(npcs.some(other=>other!==n&&(other.usingObject===o||other.task===o)))return false;
     if(n.creature&&!creatureCanUse(n,o.kind))return false;
     for (const p of adjacent(o,n)) if (move(n,p,o)) {n.objectEvidence=propEvidence(n,o.kind);return true;}
     return false;
@@ -942,8 +944,19 @@ export async function mountPixelWorld(shell, options) {
       chosen.n.objectEvidence=chosen.evidence||null;objectCooldown.set(chosen.o,time);
     }
   }
+  let nextMeet=10;
   function update(dt) {
-    time+=dt;autoObjects();
+    time+=dt;
+    if(time>=nextMeet&&!activeEvent&&!pendingEvent&&!pendingTalk&&!drag&&!placing){
+      nextMeet=time+12;
+      for(const relation of dialogueContext.relations){
+        const a=npcs.find(n=>n.name===relation.from.name),b=npcs.find(n=>n.name===relation.to.name);
+        if(!a||!b||[a,b].some(n=>n.creature||n.task||n.usingObject||n.encounter||n.path.length)||Math.hypot(a.x-b.x,a.y-b.y)>7)continue;
+        const dest=[{x:Math.round(a.x)+1,y:Math.round(a.y)},{x:Math.round(a.x)-1,y:Math.round(a.y)}].find(p=>!blocked(p.x,p.y));
+        if(dest&&move(b,dest)){a.idle=10;break;}
+      }
+    }
+    autoObjects();
     for(const n of npcs) {
       if(n.waterEscape){const state=n.waterEscape;state.elapsed+=dt;n.direction='down';n.stride+=dt*8;if(state.elapsed>=5){n.x=state.safe.x;n.y=state.safe.y;n.waterEscape=null;n.idle=3;say('휴! 물가로 올라와 숨을 고르고 있어요.');}continue;}
       if(n.creature?.kind==='plant'){n.path=[];n.task=null;continue;}
@@ -1054,7 +1067,7 @@ export async function mountPixelWorld(shell, options) {
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;closeCinematic?.();bgm.dispose();encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;closeCinematic?.();bgm.dispose();encounters.clear();for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   function syncRelationships(){
     const button=shell.querySelector('[data-action="relationships"]');
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
