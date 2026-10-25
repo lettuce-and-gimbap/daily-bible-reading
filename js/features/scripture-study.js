@@ -23,10 +23,17 @@ window.ScriptureStudy=(()=>{
  document.addEventListener('click',e=>{const term=e.target.closest('[data-study-term]');if(!term||e.target.closest('mark.study-mark')||!window.getSelection()?.isCollapsed)return;e.preventDefault();e.stopPropagation();const g=glossary[term.dataset.studyTerm];if(g)showTerm(g);},true);
  document.addEventListener('keydown',e=>{if(e.target.matches('[data-study-term]')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
 
- const colorKey='scripture-highlight-color:v1';
+ const colorKey='scripture-highlight-color:v1',paletteKey='scripture-highlight-palette:v1',paletteSelectionKey='scripture-highlight-palette-selected:v1';
  const validColor=value=>/^#[0-9a-f]{6}$/i.test(value);
- function currentColor(){const value=typeof state!=='undefined'?state.settings.highlightColor:null;const stored=localStorage.getItem(colorKey);return validColor(value)?value:validColor(stored)?stored:'#ffe49b';}
+ const legacyColor=(()=>{const v=typeof state!=='undefined'?state.settings.highlightColor:null;const old=localStorage.getItem(colorKey);return validColor(v)?v:validColor(old)?old:'#ffe49b';})();
+ const defaultPalette=[{id:'default-yellow',name:'노랑',tag:'기본',color:legacyColor}];
+ function readPalette(){try{const saved=JSON.parse(localStorage.getItem(paletteKey));if(Array.isArray(saved)&&saved.some(p=>p&&p.id&&p.name&&p.tag&&validColor(p.color)))return saved.filter(p=>p&&p.id&&p.name&&p.tag&&validColor(p.color));}catch(_){}return defaultPalette.slice();}
+ let palette=readPalette();
+ function selectedPalette(){return palette.find(p=>p.id===localStorage.getItem(paletteSelectionKey))||palette[0]||defaultPalette[0];}
+ function currentColor(){const chosen=selectedPalette(),value=typeof state!=='undefined'?state.settings.highlightColor:null;const stored=localStorage.getItem(colorKey);return chosen?.color|| (validColor(value)?value:validColor(stored)?stored:'#ffe49b');}
  function setColor(color){if(!validColor(color))return;localStorage.setItem(colorKey,color);if(typeof state!=='undefined'){state.settings.highlightColor=color;}return color;}
+ function paletteOptions(){return palette.map(p=>`<option value="${esc(p.id)}">${esc(p.name)} · ${esc(p.tag)}</option>`).join('');}
+ function applyPalette(id){const p=palette.find(x=>x.id===id);if(!p)return;localStorage.setItem(paletteSelectionKey,p.id);setColor(p.color);return p;}
  const fingerprint=text=>{let hash=2166136261;for(let i=0;i<text.length;i++)hash=Math.imul(hash^text.charCodeAt(i),16777619);return (hash>>>0).toString(16);};
  const dockSelections=new WeakMap();
  let pending=[],tip=null,selectionTimer;
@@ -51,23 +58,28 @@ window.ScriptureStudy=(()=>{
    if(end>start)parts.push({el,start,end});
   }return parts;
  }
+ function positionTip(){if(!tip)return;const range=window.getSelection()?.rangeCount?window.getSelection().getRangeAt(0):null;if(!range)return;const rect=range.getBoundingClientRect(),vw=document.documentElement.clientWidth,vh=window.innerHeight;tip.style.left=Math.max(8,Math.min(vw-tip.offsetWidth-8,rect.left))+'px';tip.style.top=Math.max(8,Math.min(vh-tip.offsetHeight-8,rect.bottom+8))+'px';}
  function offerHighlight(){
-  const parts=selectionParts();const owner=parts[0]?.el.closest('[data-study-root]');if(owner)dockSelections.set(owner,parts.filter(p=>owner.contains(p.el)));const dock=parts[0]?.el.closest('[data-study-docked]');if(dock){dockSelections.set(dock,parts.filter(p=>dock.contains(p.el)));closeTip();return;}if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
+  const parts=selectionParts();const owner=parts[0]?.el.closest('[data-study-root]');if(owner)dockSelections.set(owner,parts.filter(p=>owner.contains(p.el)));const dock=parts[0]?.el.closest('[data-study-docked]');if(dock)dockSelections.set(dock,parts.filter(p=>dock.contains(p.el)));if(!parts.length){closeTip();pending=[];return;}pending=parts;closeTip();
   tip=document.createElement('div');tip.className='study-selection-tools';tip.setAttribute('role','toolbar');tip.setAttribute('aria-label','선택한 글 형광펜');tip.innerHTML='<button type="button" data-selection-mark>하이라이트·메모</button><button type="button" data-selection-clear>표시 지우기</button>';
   tip.querySelector('[data-selection-mark]').style.borderBottom='5px solid '+currentColor();
-  tip.addEventListener('pointerdown',e=>e.preventDefault());
+  tip.addEventListener('pointerdown',e=>{if(e.target.closest('button'))e.preventDefault();});
   tip.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-selection-mark')){const parts=pending.slice();closeTip();pending=[];window.getSelection()?.removeAllRanges();openPhraseNote(parts);return;}for(const {el,start,end}of pending){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);let ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash);
-    if(b.hasAttribute('data-selection-clear'))ranges=ranges.flatMap(r=>r.end<=start||r.start>=end?[r]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);
-    else ranges.push({start,end,color:currentColor(),hash});
+    if(b.hasAttribute('data-selection-clear'))ranges=ranges.flatMap(r=>r.end<=start||r.start>=end?[r]:r.note?[]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);
+    else {const p=selectedPalette();ranges.push({start,end,color:p.color||currentColor(),hash,paletteId:p.id,paletteName:p.name,tag:p.tag});}
     records[key]={...records[key],ranges};
    }if(save()){for(const part of pending)renderSegment(part.el);window.getSelection()?.removeAllRanges();closeTip();pending=[];}};
-  document.body.append(tip);const rect=window.getSelection().getRangeAt(0).getBoundingClientRect(),vw=document.documentElement.clientWidth,vh=window.innerHeight;
-  tip.style.left=Math.max(8,Math.min(vw-tip.offsetWidth-8,rect.left))+'px';tip.style.top=Math.max(8,Math.min(vh-tip.offsetHeight-8,rect.bottom+8))+'px';
+  document.body.append(tip);positionTip();
  }
  document.addEventListener('click',e=>{if(e.target.closest('.vp-row')&&!e.target.closest('input')&&selectionParts().length){e.preventDefault();e.stopPropagation();}},true);
- document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(offerHighlight,180);});
- document.addEventListener('copy',()=>setTimeout(offerHighlight,0));
- document.addEventListener('scroll',closeTip,true);
+ function scheduleSelection(){clearTimeout(selectionTimer);selectionTimer=setTimeout(()=>requestAnimationFrame(offerHighlight),220);}
+ document.addEventListener('selectionchange',scheduleSelection);
+ // iOS Safari may dispatch selectionchange before its long-press selection is finalized.
+ document.addEventListener('pointerup',()=>setTimeout(scheduleSelection,120),true);
+ document.addEventListener('touchend',()=>setTimeout(scheduleSelection,160),{capture:true,passive:true});
+ document.addEventListener('mouseup',()=>setTimeout(scheduleSelection,60),true);
+ document.addEventListener('copy',()=>setTimeout(scheduleSelection,0));
+ document.addEventListener('scroll',()=>{if(window.getSelection()?.isCollapsed)closeTip();else positionTip();},true);
  function mount(root,keys,{dock=false}={}){
   root.dataset.studyRoot='true';
   if(dock)root.dataset.studyDocked='true';
@@ -81,53 +93,30 @@ window.ScriptureStudy=(()=>{
     renderSegment(segment);
    });paint(row);
   });save();
-  if(dock){mountDock(root,rows);return;}
-  root.querySelector('.study-toolbar')?.remove();const bar=document.createElement('div');bar.className='study-toolbar';bar.innerHTML='<button type="button" data-study-note>하이라이트·메모</button>';root.querySelector('.vp-list')?.before(bar);
-  bar.addEventListener('pointerdown',()=>{const parts=selectionParts().filter(p=>root.contains(p.el));if(parts.length)dockSelections.set(root,parts);});
-  bar.onclick=e=>{if(!e.target.closest('[data-study-note]'))return;const parts=selectionParts().filter(p=>root.contains(p.el));const chosen=parts.length?parts:(dockSelections.get(root)||[]).filter(p=>p.el.isConnected);if(!chosen.length){bar.querySelector('small').textContent='절 안에서 메모할 단어·구를 먼저 드래그해 주세요.';return;}openPhraseNote(chosen);};
+  root.dataset.studyDocked=String(!!dock);root.querySelector('.study-toolbar')?.remove();root.querySelector('[data-study-highlight]')?.remove();
 
  }
  function openPhraseNote(parts){
-  if(!parts.length)return;const body=modal('선택한 구 · 하이라이트와 메모');body.innerHTML='<p class="study-dock-quote"></p><label>이 구에 남길 메모<textarea rows="5" placeholder="선택한 구에 대해 메모하세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-phrase-save>하이라이트·메모 저장</button><button type="button" class="btn ghost" data-phrase-delete>메모와 하이라이트 삭제</button></div>';
-  body.querySelector('p').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.hash===fingerprint(first.el.dataset.studyText)&&r.start===first.start&&r.end===first.end);body.querySelector('textarea').value=existing?.note||'';
-  window.getSelection()?.removeAllRanges();closeTip();body.querySelector('[data-phrase-delete]').hidden=!existing;body.querySelector('[data-phrase-delete]').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);records[key]={...records[key],ranges:(records[key]?.ranges||[]).filter(r=>!(r.hash===hash&&r.start===start&&r.end===end))};}if(save()){for(const {el}of parts){renderSegment(el);paint(el.closest('.vp-row'));}body.closest('dialog').close();}};body.querySelector('[data-phrase-save]').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText),ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash&&!(r.start===start&&r.end===end));ranges.push({start,end,color:existing?.color||currentColor(),hash,note:body.querySelector('textarea').value});records[key]={...records[key],ranges};}
+  if(!parts.length)return;const body=modal('선택한 구 · 하이라이트와 메모');body.innerHTML=`<p class="study-dock-quote"></p><label>색상 분류 <select data-phrase-palette>${palette.map(p=>`<option value="${esc(p.id)}">${esc(p.name)} · ${esc(p.tag)}</option>`).join('')}</select></label><label>이 구에 남길 메모<textarea rows="5" placeholder="선택한 구에 대해 메모하세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-phrase-save>하이라이트·메모 저장</button><button type="button" class="btn ghost" data-phrase-delete>메모와 하이라이트 삭제</button></div>`;
+  body.querySelector('p').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.hash===fingerprint(first.el.dataset.studyText)&&r.start===first.start&&r.end===first.end);body.querySelector('textarea').value=existing?.note||'';body.querySelector('[data-phrase-palette]').value=existing?.paletteId&&palette.some(p=>p.id===existing.paletteId)?existing.paletteId:selectedPalette().id;
+  window.getSelection()?.removeAllRanges();closeTip();body.querySelector('[data-phrase-delete]').hidden=!existing;body.querySelector('[data-phrase-delete]').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);records[key]={...records[key],ranges:(records[key]?.ranges||[]).filter(r=>!(r.hash===hash&&r.start===start&&r.end===end))};}if(save()){for(const {el}of parts){renderSegment(el);paint(el.closest('.vp-row'));}body.closest('dialog').close();}};body.querySelector('[data-phrase-save]').onclick=()=>{const p=palette.find(x=>x.id===body.querySelector('[data-phrase-palette]').value)||selectedPalette();applyPalette(p.id);for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText),ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash&&!(r.start===start&&r.end===end));ranges.push({start,end,color:p.color,hash,note:body.querySelector('textarea').value,paletteId:p.id,paletteName:p.name,tag:p.tag});records[key]={...records[key],ranges};}
    if(save()){for(const {el}of parts){renderSegment(el);paint(el.closest('.vp-row'));const root=el.closest('[data-study-root]');if(root)dockSelections.delete(root);}body.closest('dialog').close();}
   };
  }
  document.addEventListener('click',e=>{const mark=e.target.closest('mark.study-mark');if(!mark||!window.getSelection()?.isCollapsed)return;const el=mark.closest('[data-study-segment]');if(!el)return;e.preventDefault();e.stopPropagation();openPhraseNote([{el,start:Number(mark.dataset.studyStart),end:Number(mark.dataset.studyEnd)}]);},true);
  document.addEventListener('keydown',e=>{if(e.target.matches('mark.study-mark')&&['Enter',' '].includes(e.key)){e.preventDefault();e.target.click();}});
- function mountDock(root,rows){
-  root.querySelector('.study-toolbar')?.remove();root.querySelector('.study-dock-editor')?.remove();
-  const button=root.querySelector('[data-study-highlight]');if(!button)return;
-  button.addEventListener('pointerdown',()=>{const parts=selectionParts().filter(p=>root.contains(p.el));if(parts.length)dockSelections.set(root,parts);});
-  root.addEventListener('change',e=>{if(e.target.matches('.vp-row input')){dockSelections.delete(root);root.querySelector('.study-dock-editor')?.remove();}});
-  root.querySelector('[data-act="clear"]')?.addEventListener('click',()=>{dockSelections.delete(root);root.querySelector('.study-dock-editor')?.remove();window.getSelection()?.removeAllRanges();});
-  button.onclick=()=>{
-   let parts=(dockSelections.get(root)||[]).filter(p=>p.el.isConnected);
-
-   root.querySelector('.study-dock-editor')?.remove();const editor=document.createElement('section');editor.className='study-dock-editor';editor.setAttribute('aria-label','하이라이트와 메모');
-   if(!parts.length){editor.innerHTML='<p role="status">절 안의 단어·구를 드래그해 선택한 뒤 하이라이트를 눌러 주세요. 절 체크만으로는 표시되지 않아요.</p>';root.querySelector('.vp-bar').after(editor);return;}
-   editor.innerHTML='<h3>하이라이트 · 메모</h3><p class="study-dock-quote"></p><label>메모<textarea rows="4" placeholder="선택한 구에 대해 메모를 남겨 보세요"></textarea></label><div class="inline"><button type="button" class="btn primary" data-dock-save>하이라이트 저장</button><button type="button" class="btn ghost" data-dock-erase>하이라이트 지우기</button><button type="button" class="btn ghost" data-dock-cancel>닫기</button></div><small role="status">관리에서 고른 색으로 표시하고 이 기기에 저장해요.</small>';
-   editor.querySelector('.study-dock-quote').textContent=parts.map(p=>p.el.dataset.studyText.slice(p.start,p.end)).join(' / ');
-   const first=parts[0],existing=(records[first.el.dataset.studySegment]?.ranges||[]).slice().reverse().find(r=>r.start===first.start&&r.end===first.end&&r.hash===fingerprint(first.el.dataset.studyText));editor.querySelector('textarea').value=existing?.note||'';
-   root.querySelector('.vp-bar').after(editor);window.getSelection()?.removeAllRanges();editor.scrollIntoView({block:'nearest'});
-   editor.querySelector('[data-dock-cancel]').onclick=()=>editor.remove();
-   editor.querySelector('[data-dock-erase]').onclick=()=>{for(const {el,start,end}of parts){const key=el.dataset.studySegment,ranges=(records[key]?.ranges||[]).flatMap(r=>r.end<=start||r.start>=end?[r]:[...(r.start<start?[{...r,end:start}]:[]),...(r.end>end?[{...r,start:end}]:[])]);records[key]={...records[key],ranges};}if(save()){parts.forEach(p=>renderSegment(p.el));rows.forEach(paint);dockSelections.delete(root);editor.querySelector('small').textContent='선택한 부분의 하이라이트를 지웠어요.';}};
-   editor.querySelector('[data-dock-save]').onclick=()=>{
-    for(const {el,start,end}of parts){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText),ranges=(records[key]?.ranges||[]).filter(r=>r.hash===hash&&!(r.start===start&&r.end===end));ranges.push({start,end,color:currentColor(),hash,note:editor.querySelector('textarea').value});records[key]={...records[key],ranges};}
-    if(save()){parts.forEach(p=>renderSegment(p.el));rows.forEach(paint);dockSelections.delete(root);editor.querySelector('small').textContent='하이라이트와 메모를 저장했어요.';}
-   };
-  };
- }
  function paint(row){
   if(row.nextElementSibling?.classList.contains('study-note'))row.nextElementSibling.remove();const entry=records[row.dataset.studyKey]||{},notes=entry.note?[entry.note]:[];
-  row.querySelectorAll('[data-study-segment]').forEach(el=>{for(const r of records[el.dataset.studySegment]?.ranges||[])if(r.note&&r.hash===fingerprint(el.dataset.studyText))notes.push(el.dataset.studyText.slice(r.start,r.end)+'\n'+r.note);});
+  row.querySelectorAll('[data-study-segment]').forEach(el=>{for(const r of records[el.dataset.studySegment]?.ranges||[])if(r.note&&r.hash===fingerprint(el.dataset.studyText))notes.push(`${r.paletteName||'하이라이트'}${r.tag?` · ${r.tag}`:''}\n${el.dataset.studyText.slice(r.start,r.end)}\n${r.note}`);});
   if(notes.length){const note=document.createElement('button');note.type='button';note.className='study-note';note.textContent='메모 보기 · 삭제';note.onclick=e=>{e.preventDefault();e.stopPropagation();const body=modal('구절 메모');const p=document.createElement('p');p.textContent=[...new Set(notes)].join('\n\n');body.append(p);const remove=document.createElement('button');remove.type='button';remove.className='btn danger';remove.textContent='이 메모와 하이라이트 삭제';body.append(remove);remove.onclick=()=>{for(const el of row.querySelectorAll('[data-study-segment]')){const key=el.dataset.studySegment,hash=fingerprint(el.dataset.studyText);records[key]={...records[key],ranges:(records[key]?.ranges||[]).filter(r=>!(r.hash===hash&&r.note))};}delete records[row.dataset.studyKey]?.note;if(save()){row.querySelectorAll('[data-study-segment]').forEach(renderSegment);paint(row);body.closest('dialog').close();}};};row.after(note);}
  }
- function settingsHtml(){return `<section class="card"><h3>형광펜 색상</h3><p class="muted small">단어·구를 선택해 표시할 때 쓸 색이에요.</p><label>색상 <input type="color" data-highlight-color value="${esc(currentColor())}"></label> <label>HEX <input data-highlight-hex value="${esc(currentColor())}" maxlength="7" size="8" aria-label="형광펜 HEX 색상"></label><label>RGB <input data-highlight-rgb placeholder="255, 228, 155" size="14" aria-label="형광펜 RGB 값"></label><button class="btn" type="button" data-highlight-eyedropper ${'EyeDropper' in window?'':'hidden'}>화면에서 색 추출</button><p class="muted small" data-highlight-status>색상 선택기에서 색을 고르거나 #RRGGBB 값을 입력하세요.</p></section>`;}
- function bindSettings(root){const color=root.querySelector('[data-highlight-color]'),hex=root.querySelector('[data-highlight-hex]'),status=root.querySelector('[data-highlight-status]');if(!color)return;
-  const apply=value=>{if(!validColor(value)){status.textContent='예: #FFE49B 형식으로 입력해 주세요.';return;}setColor(value);color.value=hex.value=value;root.querySelector('[data-highlight-rgb]').value=[1,3,5].map(i=>parseInt(value.slice(i,i+2),16)).join(', ');if(typeof persist==='function')persist();status.textContent='형광펜 색상을 저장했어요.';};color.onchange=()=>apply(color.value);hex.onchange=()=>apply(hex.value);const rgb=root.querySelector('[data-highlight-rgb]');rgb.value=[1,3,5].map(i=>parseInt(currentColor().slice(i,i+2),16)).join(', ');rgb.onchange=()=>{const values=rgb.value.split(',').map(x=>x.trim());if(values.length!==3||values.some(x=>!/^\d{1,3}$/.test(x)||Number(x)>255)){status.textContent='RGB는 0~255 숫자 세 개를 쉼표로 구분해 주세요.';return;}apply('#'+values.map(x=>Number(x).toString(16).padStart(2,'0')).join(''));};
-  root.querySelector('[data-highlight-eyedropper]')?.addEventListener('click',async()=>{try{const result=await new EyeDropper().open();apply(result.sRGBHex);}catch(_){status.textContent='색 추출을 취소했어요.';}});
+ function settingsHtml(){return `<section class="card"><h3>형광펜 팔레트</h3><p class="muted small">색마다 이름과 용도를 붙여 선택한 구절을 분류할 수 있어요.</p><div data-palette-list>${palette.map(p=>`<div class="highlight-palette-row" data-palette-row="${esc(p.id)}"><input aria-label="색 이름" data-palette-name value="${esc(p.name)}" maxlength="20"><input aria-label="분류 이름" data-palette-tag value="${esc(p.tag)}" maxlength="24"><input aria-label="색상" data-palette-color type="color" value="${esc(p.color)}"><button type="button" class="btn text" data-palette-default>기본 색으로</button><button type="button" class="btn text" data-palette-delete>삭제</button></div>`).join('')}</div><div class="highlight-palette-add"><input data-new-palette-name placeholder="색 이름 (예: 노랑)" maxlength="20"><input data-new-palette-tag placeholder="분류 (예: 인물)" maxlength="24"><input data-new-palette-color type="color" value="${esc(currentColor())}"><button class="btn" type="button" data-palette-add>색 추가</button></div><label>직접 입력 HEX <input data-highlight-hex value="${esc(currentColor())}" maxlength="7" size="8"></label> <label>RGB <input data-highlight-rgb placeholder="255, 228, 155" size="14" aria-label="형광펜 RGB 값"></label><button class="btn" type="button" data-highlight-eyedropper ${'EyeDropper' in window?'':'hidden'}>화면에서 색 추출</button><p class="muted small" data-highlight-status>저장한 팔레트는 하이라이트 메뉴에서 선택할 수 있어요.</p></section>`;}
+ function bindSettings(root){const status=root.querySelector('[data-highlight-status]'),hex=root.querySelector('[data-highlight-hex]'),rgb=root.querySelector('[data-highlight-rgb]');if(!status||!hex||!rgb)return;
+  const persistPalette=()=>{localStorage.setItem(paletteKey,JSON.stringify(palette));if(typeof persist==='function')persist();};
+  root.querySelectorAll('[data-palette-row]').forEach(row=>{const id=row.dataset.paletteRow,find=()=>palette.find(p=>p.id===id);row.querySelector('[data-palette-name]').onchange=e=>{const p=find();if(p){p.name=e.target.value.trim()||'색';persistPalette();}};row.querySelector('[data-palette-tag]').onchange=e=>{const p=find();if(p){p.tag=e.target.value.trim()||'분류 없음';persistPalette();}};row.querySelector('[data-palette-color]').onchange=e=>{const p=find();if(p){p.color=e.target.value;persistPalette();if(localStorage.getItem(paletteSelectionKey)===id)setColor(p.color);}};row.querySelector('[data-palette-default]').onclick=()=>{const p=find();if(p){applyPalette(id);status.textContent=`${p.name} · ${p.tag} 색을 기본으로 설정했어요.`;}};row.querySelector('[data-palette-delete]').onclick=()=>{if(palette.length<2){status.textContent='팔레트에는 색을 하나 이상 남겨야 해요.';return;}palette=palette.filter(p=>p.id!==id);if(localStorage.getItem(paletteSelectionKey)===id)applyPalette(palette[0].id);persistPalette();root.innerHTML=window.ScriptureStudy.settingsHtml();bindSettings(root);};});
+  root.querySelector('[data-palette-add]').onclick=()=>{const name=root.querySelector('[data-new-palette-name]').value.trim(),tag=root.querySelector('[data-new-palette-tag]').value.trim(),color=root.querySelector('[data-new-palette-color]').value;if(!name||!tag){status.textContent='색 이름과 분류를 모두 입력해 주세요.';return;}palette.push({id:`p-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,name,tag,color});persistPalette();root.innerHTML=window.ScriptureStudy.settingsHtml();bindSettings(root);};
+  hex.onchange=()=>{if(!validColor(hex.value)){status.textContent='예: #FFE49B 형식으로 입력해 주세요.';return;}const p=selectedPalette();p.color=hex.value;setColor(hex.value);persistPalette();status.textContent='선택한 팔레트 색상을 수정했어요.';};rgb.value=[1,3,5].map(i=>parseInt(currentColor().slice(i,i+2),16)).join(', ');rgb.onchange=()=>{const values=rgb.value.split(',').map(x=>x.trim());if(values.length!==3||values.some(x=>!/^\d{1,3}$/.test(x)||Number(x)>255)){status.textContent='RGB는 0~255 숫자 세 개를 쉼표로 구분해 주세요.';return;}hex.value='#'+values.map(x=>Number(x).toString(16).padStart(2,'0')).join('');hex.dispatchEvent(new Event('change'));};
+  root.querySelector('[data-highlight-eyedropper]')?.addEventListener('click',async()=>{try{const result=await new EyeDropper().open();hex.value=result.sRGBHex;hex.dispatchEvent(new Event('change'));}catch(_){status.textContent='색 추출을 취소했어요.';}});
  }
  return {mount,glossaryHtml,currentColor,setColor,settingsHtml,bindSettings};
 })();

@@ -88,7 +88,7 @@ async function renderVersePicker(body, target, idx) {
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
-      ${target === "reading" ? '<button type="button" class="btn text small" data-study-highlight>하이라이트·메모</button>' : ""}<button class="btn text small" data-act="clear">해제</button>
+      <button class="btn text small" data-act="clear">해제</button>
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
