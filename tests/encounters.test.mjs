@@ -93,6 +93,6 @@ test('일상 인사는 한 쌍만 하고 같은 자리에서 반복하지 않으
  const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0,maxActive:99});
  assert.equal(director.tick(0,[a,b,c]).length,1);assert.equal(director.active.length,1);
  const pair=director.tick(800,[a,b,c]);assert.equal(pair.length,1);assert.equal(pair[0].pairLines.length,2);assert.equal(director.tick(5800,[a,b,c]).length,0);assert.ok(!a.encounter&&a.idle<1);
- assert.equal(director.tick(6000,[a,b]).length,0);assert.equal(director.tick(21000,[a,b]).length,0);
- b.x=8;director.tick(21001,[a,b]);b.x=2;assert.equal(director.tick(21002,[a,b]).length,1);
+ assert.equal(director.tick(6000,[a,b]).length,1);assert.equal(director.tick(12000,[a,b]).length,0);
+ b.x=8;director.tick(12001,[a,b]);b.x=2;assert.equal(director.tick(12002,[a,b]).length,1);
 });
