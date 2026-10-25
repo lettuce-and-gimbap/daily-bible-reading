@@ -1,4 +1,4 @@
-// 통독 화면: 갓피아 성경을 꽉 채워 띄우고, 위 한 줄(장 칸 + 읽음 버튼)로 장 이동·읽음 체크, 통독표·보기 설정·메모 패널을 붙임
+// 통독 화면: 앱의 공개 성경 DB를 본문 탭에 표시하고 장 이동·읽음 체크·메모를 제공한다.
 
 let currentChapter = null; // 지금 보고 있는 장 (전체 장 일련번호)
 let viewingDay = null; // 지금 보고 있는 Day (0부터)
@@ -25,6 +25,9 @@ function saveDayNote(value) {
 }
 
 function buildReader() {
+  if (!VERSIONS.some((v) => v.code === state.settings.ver)) state.settings.ver = "gae";
+  if (!VERSIONS.some((v) => v.code === state.settings.ver2) || state.settings.ver2 === state.settings.ver) state.settings.ver2 = "easy";
+  if (Array.isArray(state.settings.pick)) state.settings.pick = state.settings.pick.filter((code) => VERSIONS.some((v) => v.code === code));
   sheetTab = null;
   onSheetChange = syncReaderTabs;
   app.innerHTML = `
@@ -39,12 +42,10 @@ function buildReader() {
           <div class="rd-chap" id="r-chap"></div>
         </div>
       </div>
-      <div class="rd-clip"><iframe id="r-frame" class="rd-frame" hidden aria-hidden="true" title="갓피아 성경 본문" ${GODPIA_SANDBOX}></iframe>${pasteFabHtml()}${sheetShell()}</div>
+      <div class="rd-clip">${sheetShell()}</div>
     </div>`;
 
-  guardReaderFrame($("#r-frame"));
   bindSheetChrome(renderReaderSheet);
-  $("#paste-fab").addEventListener("click", () => quickPasteVerses("reading"));
   // ‹ 사무엘하 3장 › : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감). 가운데 장 이름을 누르면 권·장 고르기
   $("#r-chap").addEventListener("click", (e) => {
     if (e.target.closest("#r-goto")) { gotoBook = CHAPTERS[currentChapter].book.code; return openSheet("goto", renderReaderSheet); }
@@ -57,7 +58,7 @@ function buildReader() {
     if (p < 0 || p >= pr.seq.length) return;
     goToChapter(pr.seq[p]);
   });
-  // 통독표·요약·구절·메모·도구는 화면 위에 늘 보이는 탭으로, 갓피아 원문은 마지막 탭(= 패널을 닫은 상태)으로
+  // 통독표·요약·본문·메모 탭 전환
   $("#r-tabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-rtab]");
     if (!b) return;
@@ -230,12 +231,7 @@ function refreshReader(reload = false) {
   }
   const c = CHAPTERS[currentChapter];
   const s = state.settings;
-  const url = readerUrl(currentChapter);
-  const frame = $("#r-frame");
-  if (reload || frame.dataset.url !== url) {
-    loadReaderFrame(frame, url);
-    prefetchVerses("reading"); // 붙여넣기용 본문 미리 받기
-  }
+  if (reload) prefetchVerses("reading");
 
   const dayRead = day.filter((i) => state.read[i]).length;
   const dayDone = dayRead === day.length;

@@ -52,7 +52,6 @@ async function renderVersePicker(body, target, idx) {
 
   let verses;
   try {
-    if (!PUSH_SERVER) throw new Error("no-server");
     verses = await chapterVerses(idx0, ver1, ver2);
   } catch (e) {
     if (pickIdx === idx0 && body.firstElementChild === root) {
@@ -65,10 +64,14 @@ async function renderVersePicker(body, target, idx) {
   const verOf = (v) => v.ver || ver1;
   const first = verses.filter((v) => verOf(v) === ver1);
   const second = ver2 ? verses.filter((v) => verOf(v) === ver2) : [];
-  const rows = first.map((v) => {
-    const [a, b] = labelSpan(v.label);
-    const also = second.filter((w) => { const st = labelSpan(w.label)[0]; return st >= a && st <= b; });
-    return { v, a, b, also };
+  const labels = [...new Set([...first, ...second].map((v) => labelSpan(v.label)[0]))].sort((a, b) => a - b);
+  const rows = labels.map((a) => {
+    const primary = first.find((v) => labelSpan(v.label)[0] === a);
+    const fallback = second.find((v) => labelSpan(v.label)[0] === a);
+    const v = primary || fallback;
+    const [, b] = labelSpan(v.label);
+    const also = primary ? second.filter((w) => { const st = labelSpan(w.label)[0]; return st >= a && st <= b; }) : [];
+    return { v, a, b, also, edition: primary ? ver1 : ver2 };
   });
 
   const count = () => root.querySelectorAll("input:checked").length;
@@ -83,7 +86,7 @@ async function renderVersePicker(body, target, idx) {
       <label class="vp-row">
         <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
         <span class="vp-num">${esc(r.v.label)}</span>
-        <span class="vp-txt"><span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.v.text)}</span>${r.also.map((w) =>
+        <span class="vp-txt">${r.edition !== ver1 ? `<small>${esc(vname(r.edition))}</small>` : ""}<span class="study-version" data-edition="${esc(r.edition)}">${ScriptureStudy.glossaryHtml(r.v.text)}</span>${r.also.map((w) =>
           `<small><i>${esc(vname(ver2))}</i> <span class="study-version" data-edition="${esc(ver2)}">${ScriptureStudy.glossaryHtml(w.text)}</span></small>`).join("")}</span>
       </label>`).join("")}</div>
     <div class="vp-bar">

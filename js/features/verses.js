@@ -106,28 +106,24 @@ function versesRef(chapter, nums) {
 //   2) 몇 장인지 짐작 가는 곳("신명기 17장" 제목 줄, 통독 화면에서 보고 있는 장)의 갓피아 본문과 맞대어 봄
 //   3) 못 찾으면 줄마다 본문 검색(worker/의 /search)으로 장을 찾고, 그 장의 갓피아 본문과 맞대어 절을 정확히 잡음
 // 서버가 없거나 끝내 못 찾으면 null → 복사한 그대로 붙임
-const chapterVerseCache = {};
+const publicBookCache = {};
 
-// 한 장 본문을 갓피아에서 받아 [{label: "13", text: "…"}] (두 역본이면 갓피아 화면 순서대로 번갈아)
+// 공개 DB에서 한 장의 절을 선택한 역본 순서대로 읽는다.
 async function chapterVerses(idx, ver, ver2) {
   const { book, chap } = CHAPTERS[idx];
-  const p = new URLSearchParams({ ver: versionFor(ver, book), vol: book.code, chap: String(chap) });
-  if (ver2 && ver2 !== ver) p.set("ver2", versionFor(ver2, book));
-  const qs = p.toString();
-  if (!chapterVerseCache[qs]) {
-    chapterVerseCache[qs] = fetch(`${PUSH_SERVER}/bible?${qs}`)
-      .then((res) => (res.ok ? res.text() : Promise.reject(new Error(`HTTP ${res.status}`))))
-      .then((html) => [...new DOMParser().parseFromString(html, "text/html").querySelectorAll("li[datasec]")]
-        .map((li) => ({
-          ver: li.getAttribute("datavver") || li.getAttribute("dataVer") || "",
-          label: ((li.querySelector(".bible-read-no") || {}).textContent || "").trim(),
-          text: ((li.querySelector(".bible-read-cont") || {}).textContent || "").replace(/\s+/g, " ").trim(),
-        }))
-        .filter((v) => /^\d/.test(v.label) && v.text))
-      .catch((e) => { delete chapterVerseCache[qs]; throw e; });
+  if (!publicBookCache[book.code]) {
+    publicBookCache[book.code] = fetch(`data/scripture/${book.code}.json`)
+      .then((res) => res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`)))
+      .catch((error) => { delete publicBookCache[book.code]; throw error; });
   }
-  return chapterVerseCache[qs];
+  const data = await publicBookCache[book.code];
+  const editions = [ver, ...(ver2 && ver2 !== ver ? [ver2] : [])];
+  return editions.flatMap((edition) => (data.editions[edition]?.[chap] || []).map(([verse, text]) => ({
+    ver: edition, label: String(verse), text,
+  })));
 }
+
+
 
 // "10-11" → [10, 11], "13" → [13, 13]
 function labelSpan(label) {

@@ -19,9 +19,7 @@ const BOOKS = [
   ["3jn", "요한삼서", 1], ["jud", "유다서", 1], ["rev", "요한계시록", 22],
 ].map(([code, name, chapters], i) => ({ code, name, chapters, index: i, testament: i < 39 ? "OT" : "NT" }));
 
-// 갓피아 성경 읽기에서 제공하는 역본 (순서·이름은 갓피아 화면과 같게)
-// 갓피아가 모르는 코드를 보내면 /read/reading.asp로 리다이렉트되어 창세기 1장이 열린다.
-// 쉬운성경(easy): 갓피아 본문 주소(reading_body.asp)로는 받아져서 넣는다 (2026-10 확인).
+// 앱의 공개 본문 DB에서 직접 제공하는 여섯 역본.
 const VERSIONS = [
   { code: "gae", name: "개역개정4판" },
   { code: "niv", name: "NIV" },
@@ -29,8 +27,6 @@ const VERSIONS = [
   { code: "easy", name: "쉬운성경" },
   { code: "hyun", name: "현대인의성경" },
   { code: "saenew", name: "새번역" },
-  { code: "hebrew", name: "히브리어(구약)" },
-  { code: "greek", name: "헬라어(신약)" },
 ];
 
 // 원어는 구약=히브리어, 신약=헬라어만 있으므로 장에 맞게 바꿔 줌
