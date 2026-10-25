@@ -33,8 +33,22 @@ export function impactPose(elapsed,reduced=false){
 }
 
 export function swimPose(elapsed,reduced=false){
- const phase=reduced?0:Math.floor(elapsed*5)%4;
- return {swimming:true,hand:1,handY:[16,19,15,18][phase],phase,bodyY:reduced?0:[0,-1,1,0][phase]};
+ // Alternating reach → catch → pull → recover strokes. Each arm uses the
+ // opposing half of an 8-pose loop so the hands never mirror-flap together.
+ const phase=reduced?0:Math.floor(elapsed*6)%8;
+ const stroke=[
+  {elbowX:-3,elbowY:-5,handX:-7,handY:-9},
+  {elbowX:-2,elbowY:-3,handX:-5,handY:-6},
+  {elbowX:0,elbowY:0,handX:-2,handY:-1},
+  {elbowX:3,elbowY:3,handX:3,handY:5},
+  {elbowX:2,elbowY:-5,handX:7,handY:-9},
+  {elbowX:1,elbowY:-3,handX:5,handY:-6},
+  {elbowX:-1,elbowY:0,handX:2,handY:-1},
+  {elbowX:-3,elbowY:3,handX:-3,handY:5},
+ ];
+ const left=stroke[phase],right=stroke[(phase+4)%8];
+ return {swimming:true,hand:1,handY:21+left.handY,leftArm:left,rightArm:right,phase,
+  bodyY:reduced?0:[-1,0,1,0,0,-1,1,0][phase],kick:reduced?0:[-1,0,1,0,1,0,-1,0][phase]};
 }
 
 export function impactSparkles(elapsed,reduced=false){

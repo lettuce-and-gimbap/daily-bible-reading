@@ -21,6 +21,16 @@ test('물 오브젝트에는 실제로 잔을 입에 대고 마시는 동작이 
  assert.equal(pose.gesture,'drink');assert.equal(pose.handY,16);assert.ok(pose.hand>0);
 });
 
+test('물·나무·밧줄·작업 동작은 각자 다른 8박 핵심 자세를 사용한다',async()=>{
+ const {actionTrack,applyActionTrack}=await import('../js/features/pixel-bible/action-tracks.js');
+ for(const gesture of ['scoop','pour','drink','sip','wash','rinse','shake','kick','bonk','tie','coil','row','back-row','knead','press','divide','portion','pick','place','sort','measure','repair','wipe','brush','gather','sow','read','open','close','step-back','lean','shade','hold','offer','sling','load-sling','look','observe','inspect','point','hands','sit','lap','stretch','serve','guard','brace','thrust','swing','fletch','count','cover','play','pluck','long-blow','rehearse','balance','remove-weight','polish','smooth','lie','sleep','tuck'])assert.ok(actionTrack(gesture),`${gesture} needs an authored track`);
+ const signature=gesture=>Array.from({length:8},(_,phase)=>{
+  const pose={actual:gesture,gesture,lie:['lie','sleep','tuck','smooth'].includes(gesture),handY:25,handX:0,bodyX:0,bodyY:0,headX:0,headY:0,headTilt:0};
+  applyActionTrack(pose,phase/2);return [pose.handY,pose.handX||0,pose.bodyX||0,pose.bodyY||0,pose.headY||0,pose.headTilt||0].join(',');
+ }).join('|');
+ for(const [a,b] of [['scoop','pour'],['pour','drink'],['drink','sip'],['wash','rinse'],['shake','kick'],['kick','bonk'],['tie','coil'],['row','back-row'],['row','knead'],['knead','press'],['divide','portion'],['pick','place'],['measure','repair'],['wipe','brush'],['step-back','lean'],['lean','shade'],['hold','offer'],['sling','load-sling'],['look','observe'],['look','inspect'],['point','hands'],['sit','lap'],['lap','stretch'],['offer','serve'],['guard','brace'],['thrust','swing'],['fletch','count'],['cover','close'],['play','pluck'],['blow','long-blow'],['blow','rehearse'],['balance','remove-weight'],['polish','smooth'],['lie','sleep'],['sleep','tuck'],['tuck','smooth']])assert.notEqual(signature(a),signature(b),`${a} and ${b} should not share a motion`);
+});
+
 test('본문 재료만 잡혀도 조합식에서 요구하는 기름병 오브젝트를 별도로 준비할 수 있다',async()=>{
  const {readFile}=await import('node:fs/promises');
  const {includeSceneObjects}=await import('../js/features/pixel-bible/world.js');
@@ -115,7 +125,27 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
  assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).fall,true);assert.equal(impactPose(1).sit,true);assert.equal(impactPose(2.95).rising,true);
  assert.ok(impactSparkles(1).every(star=>star.y>=-76&&star.y<=-72));
  assert.notEqual(impactPose(.4).headX,impactPose(.6).headX);assert.notEqual(impactPose(.4).headTilt,impactPose(.6).headTilt);
- assert.notEqual(swimPose(0).handY,swimPose(.4).handY);
+ const strokes=Array.from({length:8},(_,i)=>swimPose(i/6));
+ assert.equal(new Set(strokes.map(p=>JSON.stringify([p.leftArm,p.rightArm,p.bodyY]))).size,8);
+ assert.notDeepEqual(strokes[0].leftArm,strokes[0].rightArm);assert.equal(swimPose(0,true).phase,0);
+});
+
+test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 안전한 물가로 이동한다',async()=>{
+ const {beginWaterEscape,advanceWaterEscape,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
+ const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
+ beginWaterEscape(actor,{x:56,y:20});
+ assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
+ for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
+ assert.ok(actor.waterEscape);assert.equal(advanceWaterEscape(actor,.05),true);
+ assert.deepEqual([actor.x,actor.y,actor.waterEscape],[56,20,null]);assert.equal(advanceWaterEscape(actor,.05),false);
+});
+
+test('세로 화면에서도 CSS 회전 월드 애니메이션은 계속 돌고 숨김·종료 때만 멈춘다',async()=>{
+ const {worldCanAnimate}=await import('../js/features/pixel-bible/world-loop.js');
+ assert.equal(worldCanAnimate({hidden:false,allowed:true,portrait:true}),true);
+ assert.equal(worldCanAnimate({hidden:true,allowed:true}),false);
+ assert.equal(worldCanAnimate({hidden:false,allowed:false}),false);
+ assert.equal(worldCanAnimate({disposed:true,hidden:false,allowed:true}),false);
 });
 
 test('상호작용 말풍선은 첫 배치 방향을 유지하며 인물이나 카메라 움직임에 맞춰 함께 이동한다',async()=>{
@@ -128,9 +158,11 @@ test('상호작용 말풍선은 첫 배치 방향을 유지하며 인물이나 �
 });
 
 test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물 타일 경계를 제공한다',async()=>{
- const {waterAt}=await import('../js/features/pixel-bible/terrain-response.js');
+ const {waterAt,dryLanding}=await import('../js/features/pixel-bible/terrain-response.js');
  assert.equal(waterAt('lake',16,31),true);assert.equal(waterAt('lake',35,10),false);
  assert.equal(waterAt('pasture',18,31),true);assert.equal(waterAt('pasture',25,14),false);
+ const safe=dryLanding('river',{x:58,y:20},(x,y)=>x<4||x>75||y<8||y>38||waterAt('river',x,y));
+ assert.ok(safe);assert.equal(waterAt('river',safe.x,safe.y),false);assert.ok(Math.hypot(safe.x-58,safe.y-20)<=Math.SQRT2);
 });
 
 test('가로 화면 비율을 늘려도 월드는 균일 배율로 빈 여백 없이 채운다', async () => {
@@ -152,6 +184,11 @@ test('Safari DPR 캔버스 좌표 변환은 CSS 확대·소수 경계에서도 �
  assert.deepEqual(clientToCanvasPoint(rect.left-4,rect.top-2,rect,781,1689),{x:0,y:0});
  assert.deepEqual(clientToCanvasPoint(rect.left+rect.width,rect.top+rect.height,rect,781,1689),{x:780,y:1688});
  assert.deepEqual(clientToCanvasPoint(0,0,{left:0,top:0,width:0,height:0},100,100),{x:0,y:0});
+});
+
+test('세로 화면에서 CSS로 90도 회전한 월드의 터치를 가로 캔버스 좌표로 되돌린다',()=>{
+ const rect={left:0,top:0,right:390,bottom:844,width:390,height:844};
+ assert.deepEqual(clientToCanvasPoint(100,200,rect,844,390,true),{x:200,y:290});
 });
 
 test('터치 드래그 판정 거리는 기기 픽셀 비율에 관계없이 CSS 기준으로 일정하다',()=>{

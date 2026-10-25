@@ -131,7 +131,7 @@ function rawInteractionPose(routine,time=0,reduced=false){
  const wearing=['wear','wear-pattern'].includes(actual)?use:actual==='remove'?phase===0:false;
  const adjustedHandY=lie?26:archery?actual==='nock'?(phase===1?21:24):actual==='aim'?18:actual==='draw'?17:actual==='fletch'?(phase===2?21:25):actual==='retrieve'?(use?30:26):shooting?(actual==='high-shot'?14:actual==='low-shot'||actual==='steady-shot'?22:actual==='quick-shot'?16:phase===2?13:18):24:kneel?30:climbing?(phase===1?18:phase===2?22:26):actual==='lower-rope'?(phase===1?28:phase===2?34:25):rope?(phase===1?23:phase===2?26:28):reachHigh?19:working?(phase===1?25:27):handY;
  const shot=shooting&&phase===2;
- return {lie,archery,archeryAction:archery?actual:null,shot,kneel,rope,phase,within:Math.floor(within*12)/12,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:adjustedHandY,hand:lie?0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:lie?0:climbing?-(phase===1?1:phase===2?3:0):bend?Math.min(3,reach*2):gesture==='rest'&&use?1:0,bodyX:lie?0:shooting&&use?(actual==='high-shot'?1:actual==='low-shot'?-1:phase===2?2:-2):climbing?(phase===1?-1:phase===2?1:0):['pull','push','reins','row','back-row'].includes(gesture)&&use?(phase===1?-2:2):working&&use?(phase===1?-1:1):use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):climbing&&use?(phase===1?-1:1):shooting&&phase===2?1:0,kick:['kick','bonk'].includes(gesture)&&phase===2,climb:climbing?phase===1?2:phase===2?4:0:gesture==='climb'?reach*3:0};
+ return {lie,archery,archeryAction:archery?actual:null,shot,kneel,rope,phase,within:Math.floor(within*12)/12,actual,outfit:routine.kind,wearing,barefeet:actual==='unshoe'&&use,unique:routine.unique,sit,bend,handY:adjustedHandY,hand:lie?['sleep','tuck','smooth','lie'].includes(actual)&&use?1+variant%2:0:use?1+variant%2:0,reach,prop:category,gesture,variant,bodyY:lie?0:climbing?-(phase===1?1:phase===2?3:0):bend?Math.min(3,reach*2):gesture==='rest'&&use?1:0,bodyX:lie?0:shooting&&use?(actual==='high-shot'?1:actual==='low-shot'?-1:phase===2?2:-2):climbing?(phase===1?-1:phase===2?1:0):['pull','push','reins','row','back-row'].includes(gesture)&&use?(phase===1?-2:2):working&&use?(phase===1?-1:1):use&&!routine.unique&&outcome>=3?1:bend?reach:['strum','tap','play','use','wipe','polish','smooth','mend','stir'].includes(gesture)&&use?(phase===1?-1:1):gesture==='rest'&&use?-1:0,legSwing:gesture==='feet'&&use?(phase===1?1:-1):climbing&&use?(phase===1?-1:1):shooting&&phase===2?1:0,kick:['kick','bonk'].includes(gesture)&&phase===2,climb:climbing?phase===1?2:phase===2?4:0:gesture==='climb'?reach*3:0};
 }
 // 한글 안내는 도안/문서 검토용이며 월드 하단 설명으로 띄우지 않는다.
 export const INTERACTION_MOTION_COUNT=Object.values(INTERACTION_MOTIONS).reduce((s,v)=>s+v.length,0);
@@ -145,8 +145,8 @@ export function interactionPose(routine,time=0,reduced=false){
  const fraction=position-Math.floor(position);
  const next=rawInteractionPose(routine,time+(1-fraction)*routine.period/4+1e-7,false);
  const progress=Math.floor(fraction*8)/8;
- for(const key of ['handY','bodyX','bodyY','bend','reach','legSwing','climb']){
-  if(Number.isFinite(pose[key])&&Number.isFinite(next[key]))pose[key]=Math.round(pose[key]+(next[key]-pose[key])*progress);
+ for(const key of ['handY','handX','headX','headY','headTilt','bodyX','bodyY','bend','reach','legSwing','climb']){
+  if(Number.isFinite(pose[key])&&Number.isFinite(next[key]))pose[key]=key==='headTilt'?pose[key]+(next[key]-pose[key])*progress:Math.round(pose[key]+(next[key]-pose[key])*progress);
  }
  applyActionTrack(pose,position);
  if(objectBehavior(routine.kind).carry&&!pose.archery&&!['rope','hook','pen','ink','sling'].includes(routine.kind))pose.hand=Math.max(1,pose.hand);

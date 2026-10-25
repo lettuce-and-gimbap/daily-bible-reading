@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>Water rescue motion review</title>
+<style>body{margin:0;background:#1c3032;color:#fff;font:16px monospace}canvas{display:block;width:960px;height:300px;image-rendering:pixelated}</style>
+<canvas width="960" height="300"></canvas>
+<script type="module">
+import {drawPixelCharacter,characterStyle} from '../../js/features/pixel-bible/art.js';
+import {swimPose} from '../../js/features/pixel-bible/collision-motion.js';
+import {drawWaterRescue} from '../../js/features/pixel-bible/water-rescue-art.js';
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+ctx.fillStyle='#1c3032';ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle='#cce0d0';ctx.font='14px monospace';
+for(let i=0;i<8;i++){
+ const x=60+i*120,y=184,pose=swimPose(i/6),style=characterStyle('엘리야');
+ ctx.fillText(`frame ${i+1}`,x-28,24);
+ drawPixelCharacter(ctx,style,x,y,{scale:2,interaction:pose,expression:'worried'});
+ drawWaterRescue(ctx,{x,y,style,pose,time:i/6,water:'#4c91ac',foam:'#93c8cf'});
+}
+window.reviewReady=true;
+</script>

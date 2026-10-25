@@ -10,4 +10,15 @@ export function waterAt(key,x,y){
  if(['river','garden','newcity'].includes(m)&&py>=150&&py<h-80){const left=w*(m==='garden'?.24:m==='newcity'?.68:.72)+Math.sin(Math.floor((py-150)/8)*8/140+150/140)*w*.065;return px>=left&&px<left+82;}
  return false;
 }
-export function dryLanding(key,from,blocked){for(let radius=1;radius<80;radius++)for(let dx=-radius;dx<=radius;dx++)for(const dy of [-radius,radius]){const p={x:Math.round(from.x)+dx,y:Math.round(from.y)+dy};if(!waterAt(key,p.x,p.y)&&!blocked(p.x,p.y))return p;}return null;}
+export function dryLanding(key,from,blocked){
+ const ox=Math.round(from.x),oy=Math.round(from.y);
+ for(let radius=1;radius<80;radius++){
+  const ring=[];
+  for(let dx=-radius;dx<=radius;dx++)ring.push({x:ox+dx,y:oy-radius},{x:ox+dx,y:oy+radius});
+  for(let dy=-radius+1;dy<radius;dy++)ring.push({x:ox-radius,y:oy+dy},{x:ox+radius,y:oy+dy});
+  ring.sort((a,b)=>Math.hypot(a.x-ox,a.y-oy)-Math.hypot(b.x-ox,b.y-oy));
+  const safe=ring.find(p=>!waterAt(key,p.x,p.y)&&!blocked(p.x,p.y));
+  if(safe)return safe;
+ }
+ return null;
+}

@@ -110,14 +110,14 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(pose?.eventArms)drawEventArms(r,style,pose);
   else if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
   else if(pose?.swimming){
-    const flap=[-4,1,4,-1][pose.phase%4];
-    const hr=(xx,yy,w,h,col)=>{ctx.fillStyle=col;ctx.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
-    for(const [elbow,hand]of [[5,3+flap],[18,18-flap]]){
-      hr(elbow-1,21,4,4,outline);hr(elbow,22,2,2,style.coat);
-      hr(elbow,Math.min(24,pose.handY+flap),2,Math.abs(pose.handY+flap-24)+2,outline);
-      hr(Math.min(elbow,hand),pose.handY+flap,Math.abs(hand-elbow)+3,3,outline);
-      hr(hand,pose.handY+flap,3,2,skin);
-    }
+    const drawSwimArm=(shoulder,arm)=>{
+      const elbowX=shoulder+arm.elbowX,elbowY=21+arm.elbowY,handX=shoulder+arm.handX,handY=21+arm.handY;
+      r(shoulder-1,21,5,4,outline);r(shoulder,22,3,2,style.coat);
+      r(Math.min(elbowX,handX)-1,Math.min(elbowY,handY)-1,Math.max(3,Math.abs(handX-elbowX)+3),Math.max(3,Math.abs(handY-elbowY)+3),outline);
+      r(Math.min(elbowX,handX),Math.min(elbowY,handY),Math.max(1,Math.abs(handX-elbowX)+1),Math.max(1,Math.abs(handY-elbowY)+1),style.coat);
+      r(handX,handY,3,2,skin);
+    };
+    drawSwimArm(5,pose.leftArm);drawSwimArm(18,pose.rightArm);
   }else if(pose?.hand){
     const yy=pose.handY,hx=pose.handX||0;
     const hr=(xx,yy,w,h,col)=>{ctx.fillStyle=col;ctx.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
