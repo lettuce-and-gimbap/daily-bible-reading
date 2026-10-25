@@ -22,7 +22,7 @@
       return `${prefix}${value}${unit}`;
     });
   }
-  const excluded=el=>el.closest('script,style,textarea,input,select,[contenteditable="true"],.study-version,.verse-text,.bible-verse,.scripture-text,[data-scripture-original],.qt-verse,.sum-ref,.rg-ref');
+  const excluded=el=>!el||el.closest('script,style,textarea,input,select,[contenteditable="true"],.study-version,.verse-text,.bible-verse,.scripture-text,[data-scripture-original],.qt-verse,.sum-ref,.rg-ref');
   function visit(root){
     if(root.nodeType===Node.TEXT_NODE){if(root.nodeValue&&!excluded(root.parentElement)){const next=format(root.nodeValue);if(next!==root.nodeValue)root.nodeValue=next;}return;}
     if(root.nodeType!==Node.ELEMENT_NODE&&root!==document)return;
