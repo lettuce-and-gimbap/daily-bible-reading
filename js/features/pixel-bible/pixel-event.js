@@ -1,3 +1,5 @@
+import {drawVerseDiagram} from './event-animation/verse-diagrams.js';
+import {drawVerseEffects} from './event-animation/verse-effects.js';
 import {characterStyle,drawPixelCharacter,drawWorldObject} from './art.js';
 import {objectPresentation} from './object-response.js';
 import {OBJECT_CATALOG} from './object-catalog.js';
@@ -19,14 +21,16 @@ export function eventLayout(sample){
  if(plan.motif==='vision-water')x=120+i*75;
  if(plan.motif==='crucifixion'&&i===leadIndex)x=360;
  if(plan.motif==='raise-dead'&&i!==leadIndex)x=360+(sample.index===4?sample.progress:sample.index>4?1:0)*60;
+ if(plan.placements?.[s.person.name])x=plan.placements[s.person.name].x;
  x=clamp(x+s.travel,85,640);const y=plan.motif==='roof-lower'&&(i!==leadIndex||n===1)?95+Math.round(Math.min(1,(sample.index+sample.progress)/4)*130):plan.motif==='revive-fall'&&i!==leadIndex&&sample.index===0?130+Math.round(sample.progress*105):plan.motif==='anoint-cloak'&&i!==leadIndex?255:['calm-sea','net-catch'].includes(plan.motif)?203:['flood','recede','bird-release'].includes(plan.motif)?155:235;
- const direction=['left','right'].includes(s.direction)?n===2?(i===leadIndex?'right':'left'):x<=360?'right':'left':s.direction;
- return {x,y,direction,hand:{x:x+(direction==='left'?12-s.hand.x:s.hand.x-12)*3,y:y+(s.hand.y-36)*3+10}};});
- return {positions,lead:positions[leadIndex>=0?leadIndex:0]||{x:300,y:235,hand:{x:330,y:190}},prop:{x:360,y:235},leadIndex:leadIndex>=0?leadIndex:0};
+ const direction=plan.directions?.[s.person.name]|| (['left','right'].includes(s.direction)?n===2?(i===leadIndex?'right':'left'):x<=360?'right':'left':s.direction);
+ const py=plan.placements?.[s.person.name]?.y??y;
+ return {x,y:py,direction,hand:{x:x+(direction==='left'?12-s.hand.x:s.hand.x-12)*3,y:py+(s.hand.y-36)*3+10}};});
+ return {positions,lead:positions[leadIndex>=0?leadIndex:0]||{x:300,y:235,hand:{x:330,y:190}},prop:plan.propAt||{x:360,y:235},leadIndex:leadIndex>=0?leadIndex:0};
 }
-function drawProp(c,kind,position,{angle=0}={}){
+function drawProp(c,kind,position,{angle=0,scale=1}={}){
  if(!kind||kind==='scene-marker'||!OBJECT_CATALOG[kind])return;
- c.save();c.translate(Math.round(position.x),Math.round(position.y));c.rotate(angle);
+ c.save();c.translate(Math.round(position.x),Math.round(position.y));c.rotate(angle);c.scale(scale,scale);
  drawWorldObject(c,{kind,x:0,y:0},1,0);c.restore();
 }
 // Teaching units have no invented historical actors. Their visual summary is explicit.
@@ -44,33 +48,36 @@ export function renderPixelEvent(c,scene,actors,seconds=0,{portrait=false,reduce
  const people=actors.filter(Boolean),plan=eventPlan(scene),total=plan.beats.reduce((n,b)=>n+b.duration,0),elapsed=reduced?total:Math.min(total,Math.max(0,seconds));
  const sample=sampleEvent(scene,people,elapsed,{portrait,reduced}),layout=eventLayout(sample),kind=sample.plan.prop||scene.object,profile=objectPresentation(kind);
  c.save();c.imageSmoothingEnabled=false;drawStage(c,sample.plan.setting,elapsed);
+ if(plan.diagram){drawVerseDiagram(c,scene,sample);c.restore();return sample;}
  if(!people.length&&plan.mode==='illustration'){drawExplanation(c,scene,sample);for(let i=0;i<6;i++){c.fillStyle=i<=sample.index?'#d8bc75':'#425c5e';c.fillRect(535+i*27,14,23,5);}c.restore();return sample;}
  if(portrait&&people.length){
   // Original sprite heads and shoulders: crop at source resolution, never redraw a different person.
   sample.states.slice(0,2).forEach((state,i)=>{const x=i?520:200;c.save();c.beginPath();c.rect(i?370:30,25,320,245);c.clip();drawPixelCharacter(c,characterStyle(state.person.name,i,state.person.role,state.person.refs||[],state.person.creature||false),x,285,{scale:7,direction:i?'left':'right',expression:state.expression});c.restore();c.fillStyle='#fff3cd';c.textAlign='center';c.font='16px DungGeunMo,monospace';c.fillText(caption(state.person.name),x,288);});c.restore();return sample;
  }
  const leadState=sample.states[layout.leadIndex],leadPos=layout.positions[layout.leadIndex];
- const portable=profile.portable&&sample.plan.mode!=='illustration';
+ const portable=(profile.portable||plan.propPortable)&&sample.plan.mode!=='illustration'&&!plan.propFixed;
  let propPosition={...layout.prop},propAngle=0;
  if(portable&&leadState?.held){const amount=leadState.previousHeld?1:sample.progress;propPosition={x:layout.prop.x+(leadPos.hand.x-layout.prop.x)*amount,y:layout.prop.y+(leadPos.hand.y-layout.prop.y)*amount};propAngle=leadState.toolAngle||0;}
  else if(portable&&sample.plan.effect==='transfer'&&sample.index>=4&&sample.states.length>1){const target=layout.positions.find((p,i)=>i!==layout.leadIndex),amount=sample.index===4?sample.progress:1;propPosition={x:leadPos.hand.x+(target.hand.x-leadPos.hand.x)*amount,y:leadPos.hand.y+(target.hand.y-leadPos.hand.y)*amount};}
  else if(portable&&leadState?.previousHeld&&!leadState.held){const amount=sample.progress;propPosition={x:leadPos.hand.x+(layout.prop.x-leadPos.hand.x)*amount,y:leadPos.hand.y+(layout.prop.y-leadPos.hand.y)*amount};}
 
  // Fixed objects remain on the ground at the same scale throughout the event.
- if(!portable&&plan.motif!=='baptism')drawProp(c,kind,propPosition);
+ if(!portable&&plan.motif!=='baptism')drawProp(c,kind,propPosition,{scale:plan.propScale||1});
  const supporting=(scene.requiresObjects||[]).filter(k=>k!==kind).map((k,i)=>({kind:k,x:k==='bed'?(layout.positions.find((_,j)=>j!==layout.leadIndex)?.x||455):405+i*45,y:235}));
+ for(const p of plan.props||[])drawProp(c,p.kind,p);
  for(const o of supporting)drawProp(c,o.kind,o);
+ const labelRows=[[],[],[]],labels=sample.states.map((state,i)=>{const width=caption(state.person.name).length*13+8,x=clamp(layout.positions[i].x,width/2+4,716-width/2),left=x-width/2,right=x+width/2;let lane=labelRows.findIndex(row=>row.every(b=>right<b.left||left>b.right));if(lane<0)lane=2;labelRows[lane].push({left,right});return {x,y:260+lane*17};});
  sample.states.forEach((state,i)=>{
   if(state.visible===false)return;
   const n=state.person,pos=layout.positions[i];let x=pos.x,y=pos.y;
   if(state.pose.lie){const bed=kind==='bed'?layout.prop:supporting.find(o=>o.kind==='bed');x=bed?bed.x+8:pos.x;y=bed?bed.y+36:pos.y+16;}
-  const portrayal=sample.plan.portrayals?.[n.name]||{};if(portrayal.lie){x=layout.prop.x;y=layout.prop.y-14;}let style=characterStyle(n.name,i,n.role,n.refs||[],n.creature||false);
+  const portrayal=sample.plan.portrayals?.[n.name]||{};if(portrayal.lie){x=layout.prop.x;y=layout.prop.y-14;}if(portrayal.carryBy){const carrier=layout.positions[sample.states.findIndex(s=>s.person.name===portrayal.carryBy)];if(carrier){x=carrier.x+12;y=carrier.y-40;}}let style=characterStyle(n.name,i,n.role,n.refs||[],n.creature||false);
   if(sample.plan.motif==='vision-robes'&&sample.index>=3)style={...style,coat:'#e8e4d4'};
-  drawPixelCharacter(c,portrayal.hideBeard?{...style,beard:false}:style,x,y,{scale:3*(portrayal.scale||1),direction:pos.direction,interaction:portrayal.lie?{...state.pose,lie:true,recline:1}:portrayal.sit?{...state.pose,sit:true}:state.pose,walkFrame:state.walkFrame,expression:state.expression});
-  c.fillStyle='#fff3cd';c.textAlign='center';c.font='13px DungGeunMo,monospace';c.fillText(caption(n.name),pos.x,288);
+  for(let copy=0;copy<(portrayal.copies||1);copy++)drawPixelCharacter(c,portrayal.hideBeard?{...style,beard:false}:style,x+(copy-((portrayal.copies||1)-1)/2)*70,y,{scale:3*(portrayal.scale||1),direction:pos.direction,interaction:portrayal.lie?{...state.pose,lie:true,recline:1}:portrayal.sit?{...state.pose,sit:true}:state.pose,walkFrame:state.walkFrame,expression:state.expression});
+  c.fillStyle='#fff3cd';c.textAlign='center';c.font='13px DungGeunMo,monospace';if(!portrayal.carryBy)c.fillText(caption(n.name),labels[i].x,labels[i].y);
  });
  if(portable&&plan.motif!=='baptism'&&!(['sling','arrow'].includes(sample.plan.effect)&&sample.index>=4))drawProp(c,kind,propPosition,{angle:propAngle});
- drawEffects(c,sample,layout);
+ drawEffects(c,sample,layout);drawVerseEffects(c,sample,layout);
  c.fillStyle='#233d47';c.fillRect(8,7,Math.min(300,sample.label.length*14+24),23);c.fillStyle='#fff0c6';c.font='13px DungGeunMo,monospace';c.textAlign='left';c.fillText(sample.label,17,23);
  // A six-segment progress bar distinguishes preparation from outcome without a flashing overlay.
  for(let i=0;i<sample.plan.beats.length;i++){c.fillStyle=i<=sample.index?'#d8bc75':'#425c5e';c.fillRect(535+i*27,14,23,5);}

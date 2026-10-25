@@ -1,0 +1,5 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../css/pixel-bible.css"><style>body{background:#20363f;color:#f4e5bd}.pb-event-card{display:block;max-width:800px;width:94%;margin:20px auto}</style><div class="pb-event-card"></div><script type="module">
+import {mountScenePlayback} from '../../js/features/pixel-bible/verse-playback.js';
+const data=await fetch('../../data/pixel-bible/verse-events/mat.json').then(r=>r.json()),summary=await fetch('../../data/summary/mat.json').then(r=>r.json());const clips=data.scenes.filter(s=>s.chapter===3&&s.verseNumbers[0]>=13),scene={...clips[0],title:'예수의 세례',verseNumbers:[13,14,15,16,17],ref:'마태복음 3:13–17'};
+window.controlsChanges=[];window.controlsReview={dispose:mountScenePlayback(document.querySelector('.pb-event-card'),scene,summary.chapters[3].people,{clips,onChange:change=>window.controlsChanges.push(change)})};
+</script></html>

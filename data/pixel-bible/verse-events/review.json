@@ -1,0 +1,63 @@
+{
+  "authored": 273,
+  "browserVerified": 273,
+  "payloadSha256": "8dda5eca5a89c5129b1a35840326d04bcd60345035d3387f94c9a405a4e49001",
+  "rendererSha256": "c85b831f85b24ddaec8e6e722fd7ac30bdcf0d1d02061926b0b8a85ac6164ab3",
+  "method": "Chromium 7 sampled times, start/action/end/portrait/reduced, desktop and landscape mobile. Automated exceptions check; representative frames inspected separately, not all frames watched manually.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "drawn": 25,
+      "frames": 175,
+      "failures": []
+    },
+    {
+      "chapter": 2,
+      "drawn": 23,
+      "frames": 161,
+      "failures": []
+    },
+    {
+      "chapter": 3,
+      "drawn": 17,
+      "frames": 119,
+      "failures": []
+    },
+    {
+      "chapter": 4,
+      "drawn": 25,
+      "frames": 175,
+      "failures": []
+    },
+    {
+      "chapter": 5,
+      "drawn": 48,
+      "frames": 336,
+      "failures": []
+    },
+    {
+      "chapter": 6,
+      "drawn": 34,
+      "frames": 238,
+      "failures": []
+    },
+    {
+      "chapter": 7,
+      "drawn": 29,
+      "frames": 203,
+      "failures": []
+    },
+    {
+      "chapter": 8,
+      "drawn": 34,
+      "frames": 238,
+      "failures": []
+    },
+    {
+      "chapter": 9,
+      "drawn": 38,
+      "frames": 266,
+      "failures": []
+    }
+  ]
+}

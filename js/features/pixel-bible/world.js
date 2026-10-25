@@ -1,5 +1,5 @@
 import {eventPlan} from './event-animation/timeline.js';
-import {mountPixelEvent} from './pixel-event.js';
+import {mountScenePlayback,verseClipsForScene} from './verse-playback.js';
 import {createBgm} from './bgm.js';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
@@ -78,7 +78,8 @@ async function enrichBook(code,data){
 
  if(!eventBooks.has(code))eventBooks.set(code,fetch(new URL(`../../../data/pixel-bible/events/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
  const extra=await eventBooks.get(code);if(!extra)return data;
- const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name))],eventScenes:[...(extra.scenes||[]),...(extra.restoredScenes||[])].filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
+ const verseData=code==='mat'?await fetch(new URL('../../../data/pixel-bible/verse-events/mat.json',import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null):null;
+ const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name)),...(verseData?.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name)&&!(extra.additionalPeople?.[number]||[]).some(q=>q.name===p.name))],verseClips:(verseData?.scenes||[]).filter(s=>s.chapter===Number(number)),eventScenes:[...(extra.scenes||[]),...(extra.restoredScenes||[])].filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
 }
 async function loadBook(code, cachedBook) {
   const existing = cachedBook?.(code);
@@ -119,7 +120,7 @@ export function buildWorldModel(chapters) {
   // A hand-authored scene may replace an identical restored range without losing its index link.
   const dedicated=scenesForChapters(chapters).map(scene=>({...scene,sourceUnits:[...new Set([...(scene.sourceUnits||[]),...sourceScenes.filter(s=>s.code===scene.code&&s.chapter===scene.chapter&&s.ref===scene.ref).flatMap(s=>s.sourceUnits||[])])]}));
   const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&s.actors.every(name=>cast.some(p=>p.name===name))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)));
-  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>enhanceScene(s,cast)), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>({...enhanceScene(s,cast),verseClips:chapters.filter(c=>c.code===s.code&&c.chap===s.chapter).flatMap(c=>verseClipsForScene(s,c.data?.verseClips||[],c.verses||[]))})), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 명단을 교체하지 않고 통독 분량의 모든 인물을 함께 유지한다.
@@ -521,9 +522,9 @@ export async function mountPixelWorld(shell, options) {
   function showLine() {
     const ev = activeEvent;
     ev.elapsed = 0;
-    const runningCanvas=eventCard.querySelector('canvas');if(runningCanvas)runningCanvas.remove();
-    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">${ev.paused?'▶ 계속':'Ⅱ 일시정지'}</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
-    if(runningCanvas)eventCard.prepend(runningCanvas);else if(!closeCinematic)closeCinematic=mountPixelEvent(eventCard,ev.scene,sceneActors(ev.scene));
+    const runningCanvas=eventCard.querySelector('.pb-event-playback');if(runningCanvas)runningCanvas.remove();
+    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div class="pb-event-actions"><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">${ev.paused?'▶ 계속':'Ⅱ 일시정지'}</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
+    if(runningCanvas)eventCard.prepend(runningCanvas);else if(!closeCinematic)closeCinematic=mountScenePlayback(eventCard,ev.scene,model.cast,{clips:ev.scene.verseClips||[],onChange:({isVerse})=>{ev.elapsed=0;ev.manualClip=isVerse;}});
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
@@ -1071,7 +1072,7 @@ export async function mountPixelWorld(shell, options) {
       if(!activeEvent) update(dt);
       else {
         if(!activeEvent.paused){cinematicTime+=dt;activeEvent.elapsed+=dt;}
-        if(!activeEvent.paused&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        if(!activeEvent.paused&&!activeEvent.manualClip&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
     followDraggedCharacter(dt);

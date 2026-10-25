@@ -1,6 +1,6 @@
 import asyncio,json,urllib.request,urllib.parse,base64,pathlib,argparse
 import websockets
-parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--nt',action='store_true');parser.add_argument('--scene');parser.add_argument('--book');parser.add_argument('--chapter',type=int);parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
+parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--nt',action='store_true');parser.add_argument('--verse',action='store_true');parser.add_argument('--scene');parser.add_argument('--book');parser.add_argument('--chapter',type=int);parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
 async def main():
  tab=json.load(urllib.request.urlopen(urllib.request.Request(args.cdp+'/json/new?about:blank',method='PUT')))
  async with websockets.connect(tab['webSocketDebuggerUrl'],max_size=64*1024*1024) as ws:
@@ -34,6 +34,11 @@ async def main():
   await asyncio.sleep(.3)
   assert await ev("!!document.querySelector('.pb-event-card canvas')"),'missing event canvas'
   assert await ev("document.querySelector('.pb-event-card>p').textContent.trim().length>0"),'missing scene explanation'
+  if args.verse:
+   assert await ev("document.querySelector('.pb-verse-playback-controls select')?.options.length>1"),'missing verse selector'
+   await ev("document.querySelector('.pb-verse-playback-controls select').value='1';document.querySelector('.pb-verse-playback-controls select').dispatchEvent(new Event('change'))")
+   await asyncio.sleep(.2)
+   assert await ev("document.querySelector('.pb-verse-playback-description').textContent.includes('마태복음')"),'missing verse description'
   await ev("document.querySelector('[data-action=\"event-pause\"]').click()")
   first=await ev("document.querySelector('.pb-event-card canvas').toDataURL()")
   await asyncio.sleep(.5)

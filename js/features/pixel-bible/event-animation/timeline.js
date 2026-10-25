@@ -68,7 +68,8 @@ export function sampleEvent(scene,actors,seconds,{reduced=false,portrait=false}=
  const last=elapsed>=duration;
  const states=actors.map((person,i)=>{
   const active=person.name===plan.lead&&!portrait,other=plan.target===person.name;
-  const support=plan.support?.actor===person.name?A[plan.support.actions[index]]:null;
+  const track=plan.tracks?.[person.name];
+  const support=track?A[track[index]]:plan.support?.actor===person.name?A[plan.support.actions[index]]:null;
   let state=support|| (active?action:other&&index>=3&&plan.effect==='transfer'?A.receive:A.listen);
   if(other&&['heal-rise','raise-dead','revive-fall'].includes(plan.motif))state=index<4?(['raise-dead','revive-fall'].includes(plan.motif)||plan.prop==='bed'?A.lie:A.sit):plan.motif==='raise-dead'&&index===4?A.walk:A.stand;
   if((other||actors.length===1)&&plan.motif==='roof-lower')state=index<5?A.lie:A.stand;
@@ -78,17 +79,18 @@ export function sampleEvent(scene,actors,seconds,{reduced=false,portrait=false}=
   if(other&&['wash-feet','anoint-feet','anoint-cloak'].includes(plan.motif))state=A.sit;
   if(scene.passiveMotions?.[person.name]?.gesture==='lie')state=index>=5?A.sit:A.lie;
   if(plan.mode==='illustration')state=portrait?A.listen:A.read;
-  let prev=support?A[plan.support.actions[Math.max(0,index-1)]]:active?old:other&&index>3&&plan.effect==='transfer'?A.receive:A.listen;
+  let prev=support?A[(track||plan.support.actions)[Math.max(0,index-1)]]:active?old:other&&index>3&&plan.effect==='transfer'?A.receive:A.listen;
   if(scene.passiveMotions?.[person.name]?.gesture==='lie')prev=index===5?A.lie:state;
   if(plan.mode==='illustration')prev=state;
+  if(active&&plan.held){state={...state,held:plan.held[index]};prev={...prev,held:plan.held[Math.max(0,index-1)]};}
   const ar=state.arms||REST,pr=prev.arms||REST,eventArms=ar.map((arm,j)=>arm.map((v,k)=>mix(pr[j][k],v,blend)));
   const wasLying=!!prev.lie,isLying=!!state.lie,recline=reduced?1:wasLying===isLying?1:Math.round((isLying?Math.min(1,progress*2):1-Math.min(1,progress*2))*4)/4;
   const pose={...defaults,eventArms,heldObject:true,bodyX:mix(prev.bodyX||0,state.bodyX||0,blend),bodyY:mix(prev.bodyY||0,state.bodyY||0,blend),eventKneel:!!state.kneel,bend:state.bend||0,sit:!!state.sit,lie:isLying||wasLying&&recline>0,recline};
-  let travel=0;for(let k=0;k<=index;k++){const move=A[plan.beats[k].action]?.move||0;travel+=move*(k===index?progress:1)*12;}
-  if(!active)travel=0;
+  let travel=0;for(let k=0;k<=index;k++){const move=A[track?.[k]||plan.beats[k].action]?.move||0;travel+=move*(k===index?progress:1)*12;}
+  if(!active&&!track)travel=0;
   const expression=portrait?'neutral':last||index>=4?plan.emotion:index===1&&['worried','sad'].includes(plan.emotion)?plan.emotion:'neutral';
-  return {person,active,visible:!(other&&plan.motif==='raise-dead'&&plan.prop==='tomb'&&index<4)&&!(active&&plan.motif==='emmaus'&&index>=4),pose,action:active?beat.action:'listen',held:active&&!!state.held,previousHeld:active&&!!prev.held,hand:{x:eventArms[1][2],y:eventArms[1][3]},toolAngle:state.angle||0,
-   travel:Math.round(travel),direction:portrait||plan.mode==='illustration'?'down':state.turn?'up':i===0?'right':'left',walkFrame:!reduced&&state.walk&&!last?Math.floor(elapsed*5)%4:0,expression};
+  return {person,active,visible:plan.visibility?.[person.name]?.[index]!==false&&!(other&&plan.motif==='raise-dead'&&plan.prop==='tomb'&&index<4)&&!(active&&plan.motif==='emmaus'&&index>=4),pose,action:active?beat.action:'listen',held:active&&!!state.held,previousHeld:active&&!!prev.held,hand:{x:eventArms[1][2],y:eventArms[1][3]},toolAngle:state.angle||0,
+   travel:Math.round(travel),direction:portrait||plan.mode==='illustration'?'down':plan.directions?.[person.name]|| (state.turn?'up':i===0?'right':'left'),walkFrame:!reduced&&state.walk&&!last?Math.floor(elapsed*5)%4:0,expression};
  });
  return {plan,states,index,progress,elapsed,duration,finished:last,label:ACTION_LABELS[beat.action]||'동작',effectProgress:Math.min(1,Math.max(0,(index+progress-2)/3))};
 }

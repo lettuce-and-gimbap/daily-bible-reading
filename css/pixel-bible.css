@@ -150,3 +150,11 @@
 .pb-event-playing .pb-event{pointer-events:auto;z-index:13;}
 .pb-event-playing .pb-event-card{width:min(850px,94%);max-height:calc(100% - 56px - env(safe-area-inset-bottom));margin-bottom:max(8px,env(safe-area-inset-bottom));}
 .pb-event-playing .pb-event-card .pb-button{min-height:44px;min-width:48px;padding:8px 12px;touch-action:manipulation;}
+
+.pb-verse-playback-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.pb-verse-playback-controls label{display:flex;gap:6px;align-items:center;flex:1 1 200px;min-width:0}
+.pb-verse-playback-controls select{font:inherit;min-height:44px;width:100%;min-width:0;max-width:100%;color:#f5ead1;background:#233d47;border:1px solid #c4ad76;border-radius:4px;padding:6px}
+.pb-verse-playback-description{font-size:.85em;line-height:1.5;overflow-wrap:anywhere}
+.pb-verse-playback-controls button:disabled{opacity:.45}
+
+.pb-event-card .pb-event-actions{position:sticky;bottom:-10px;background:#112b34;z-index:2;padding:8px 0}

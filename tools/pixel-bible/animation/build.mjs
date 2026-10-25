@@ -8,7 +8,7 @@ const root='data/pixel-bible/events/',plans=JSON.parse(fs.readFileSync('tools/pi
 const overridesFile='tools/pixel-bible/animation/stage-overrides'+suffix+'.json',overrides=fs.existsSync(overridesFile)?JSON.parse(fs.readFileSync(overridesFile)):{};
 const durations=[1,1.2,1.5,1.8,1.5,1.2];
 const previous=fs.existsSync('data/pixel-bible/animation-review'+suffix+'.json')?JSON.parse(fs.readFileSync('data/pixel-bible/animation-review'+suffix+'.json')):{};
-const rendererFiles=['pixel-event.js','art.js','directions.js',...['motifs','timeline','stage','effects','rig'].map(n=>'event-animation/'+n+'.js')];
+const rendererFiles=['pixel-event.js','art.js','directions.js','event-animation/verse-diagrams.js','event-animation/verse-effects.js',...['motifs','timeline','stage','effects','rig'].map(n=>'event-animation/'+n+'.js')];
 const rendererSha256=crypto.createHash('sha256').update(rendererFiles.map(p=>fs.readFileSync('js/features/pixel-bible/'+p,'utf8')).join('\n')).digest('hex');
 const reviews=[];
 for(const [book,line]of Object.entries(plans)){

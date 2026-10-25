@@ -1,0 +1,1828 @@
+{
+  "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
+  "expected": 7957,
+  "authored": 273,
+  "pending": 7684,
+  "chapters": [
+    {
+      "code": "mat",
+      "chapter": 1,
+      "expected": 25,
+      "authored": 25,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 2,
+      "expected": 23,
+      "authored": 23,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 3,
+      "expected": 17,
+      "authored": 17,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 4,
+      "expected": 25,
+      "authored": 25,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 5,
+      "expected": 48,
+      "authored": 48,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 6,
+      "expected": 34,
+      "authored": 34,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 7,
+      "expected": 29,
+      "authored": 29,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 8,
+      "expected": 34,
+      "authored": 34,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 9,
+      "expected": 38,
+      "authored": 38,
+      "pending": 0
+    },
+    {
+      "code": "mat",
+      "chapter": 10,
+      "expected": 42,
+      "authored": 0,
+      "pending": 42
+    },
+    {
+      "code": "mat",
+      "chapter": 11,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "mat",
+      "chapter": 12,
+      "expected": 50,
+      "authored": 0,
+      "pending": 50
+    },
+    {
+      "code": "mat",
+      "chapter": 13,
+      "expected": 58,
+      "authored": 0,
+      "pending": 58
+    },
+    {
+      "code": "mat",
+      "chapter": 14,
+      "expected": 36,
+      "authored": 0,
+      "pending": 36
+    },
+    {
+      "code": "mat",
+      "chapter": 15,
+      "expected": 39,
+      "authored": 0,
+      "pending": 39
+    },
+    {
+      "code": "mat",
+      "chapter": 16,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "mat",
+      "chapter": 17,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "mat",
+      "chapter": 18,
+      "expected": 35,
+      "authored": 0,
+      "pending": 35
+    },
+    {
+      "code": "mat",
+      "chapter": 19,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "mat",
+      "chapter": 20,
+      "expected": 34,
+      "authored": 0,
+      "pending": 34
+    },
+    {
+      "code": "mat",
+      "chapter": 21,
+      "expected": 46,
+      "authored": 0,
+      "pending": 46
+    },
+    {
+      "code": "mat",
+      "chapter": 22,
+      "expected": 46,
+      "authored": 0,
+      "pending": 46
+    },
+    {
+      "code": "mat",
+      "chapter": 23,
+      "expected": 39,
+      "authored": 0,
+      "pending": 39
+    },
+    {
+      "code": "mat",
+      "chapter": 24,
+      "expected": 51,
+      "authored": 0,
+      "pending": 51
+    },
+    {
+      "code": "mat",
+      "chapter": 25,
+      "expected": 46,
+      "authored": 0,
+      "pending": 46
+    },
+    {
+      "code": "mat",
+      "chapter": 26,
+      "expected": 75,
+      "authored": 0,
+      "pending": 75
+    },
+    {
+      "code": "mat",
+      "chapter": 27,
+      "expected": 66,
+      "authored": 0,
+      "pending": 66
+    },
+    {
+      "code": "mat",
+      "chapter": 28,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "mrk",
+      "chapter": 1,
+      "expected": 45,
+      "authored": 0,
+      "pending": 45
+    },
+    {
+      "code": "mrk",
+      "chapter": 2,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "mrk",
+      "chapter": 3,
+      "expected": 35,
+      "authored": 0,
+      "pending": 35
+    },
+    {
+      "code": "mrk",
+      "chapter": 4,
+      "expected": 41,
+      "authored": 0,
+      "pending": 41
+    },
+    {
+      "code": "mrk",
+      "chapter": 5,
+      "expected": 43,
+      "authored": 0,
+      "pending": 43
+    },
+    {
+      "code": "mrk",
+      "chapter": 6,
+      "expected": 56,
+      "authored": 0,
+      "pending": 56
+    },
+    {
+      "code": "mrk",
+      "chapter": 7,
+      "expected": 37,
+      "authored": 0,
+      "pending": 37
+    },
+    {
+      "code": "mrk",
+      "chapter": 8,
+      "expected": 38,
+      "authored": 0,
+      "pending": 38
+    },
+    {
+      "code": "mrk",
+      "chapter": 9,
+      "expected": 50,
+      "authored": 0,
+      "pending": 50
+    },
+    {
+      "code": "mrk",
+      "chapter": 10,
+      "expected": 52,
+      "authored": 0,
+      "pending": 52
+    },
+    {
+      "code": "mrk",
+      "chapter": 11,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "mrk",
+      "chapter": 12,
+      "expected": 44,
+      "authored": 0,
+      "pending": 44
+    },
+    {
+      "code": "mrk",
+      "chapter": 13,
+      "expected": 37,
+      "authored": 0,
+      "pending": 37
+    },
+    {
+      "code": "mrk",
+      "chapter": 14,
+      "expected": 72,
+      "authored": 0,
+      "pending": 72
+    },
+    {
+      "code": "mrk",
+      "chapter": 15,
+      "expected": 47,
+      "authored": 0,
+      "pending": 47
+    },
+    {
+      "code": "mrk",
+      "chapter": 16,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "luk",
+      "chapter": 1,
+      "expected": 80,
+      "authored": 0,
+      "pending": 80
+    },
+    {
+      "code": "luk",
+      "chapter": 2,
+      "expected": 52,
+      "authored": 0,
+      "pending": 52
+    },
+    {
+      "code": "luk",
+      "chapter": 3,
+      "expected": 38,
+      "authored": 0,
+      "pending": 38
+    },
+    {
+      "code": "luk",
+      "chapter": 4,
+      "expected": 44,
+      "authored": 0,
+      "pending": 44
+    },
+    {
+      "code": "luk",
+      "chapter": 5,
+      "expected": 39,
+      "authored": 0,
+      "pending": 39
+    },
+    {
+      "code": "luk",
+      "chapter": 6,
+      "expected": 49,
+      "authored": 0,
+      "pending": 49
+    },
+    {
+      "code": "luk",
+      "chapter": 7,
+      "expected": 50,
+      "authored": 0,
+      "pending": 50
+    },
+    {
+      "code": "luk",
+      "chapter": 8,
+      "expected": 56,
+      "authored": 0,
+      "pending": 56
+    },
+    {
+      "code": "luk",
+      "chapter": 9,
+      "expected": 62,
+      "authored": 0,
+      "pending": 62
+    },
+    {
+      "code": "luk",
+      "chapter": 10,
+      "expected": 42,
+      "authored": 0,
+      "pending": 42
+    },
+    {
+      "code": "luk",
+      "chapter": 11,
+      "expected": 54,
+      "authored": 0,
+      "pending": 54
+    },
+    {
+      "code": "luk",
+      "chapter": 12,
+      "expected": 59,
+      "authored": 0,
+      "pending": 59
+    },
+    {
+      "code": "luk",
+      "chapter": 13,
+      "expected": 35,
+      "authored": 0,
+      "pending": 35
+    },
+    {
+      "code": "luk",
+      "chapter": 14,
+      "expected": 35,
+      "authored": 0,
+      "pending": 35
+    },
+    {
+      "code": "luk",
+      "chapter": 15,
+      "expected": 32,
+      "authored": 0,
+      "pending": 32
+    },
+    {
+      "code": "luk",
+      "chapter": 16,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "luk",
+      "chapter": 17,
+      "expected": 37,
+      "authored": 0,
+      "pending": 37
+    },
+    {
+      "code": "luk",
+      "chapter": 18,
+      "expected": 43,
+      "authored": 0,
+      "pending": 43
+    },
+    {
+      "code": "luk",
+      "chapter": 19,
+      "expected": 48,
+      "authored": 0,
+      "pending": 48
+    },
+    {
+      "code": "luk",
+      "chapter": 20,
+      "expected": 47,
+      "authored": 0,
+      "pending": 47
+    },
+    {
+      "code": "luk",
+      "chapter": 21,
+      "expected": 38,
+      "authored": 0,
+      "pending": 38
+    },
+    {
+      "code": "luk",
+      "chapter": 22,
+      "expected": 71,
+      "authored": 0,
+      "pending": 71
+    },
+    {
+      "code": "luk",
+      "chapter": 23,
+      "expected": 56,
+      "authored": 0,
+      "pending": 56
+    },
+    {
+      "code": "luk",
+      "chapter": 24,
+      "expected": 53,
+      "authored": 0,
+      "pending": 53
+    },
+    {
+      "code": "jhn",
+      "chapter": 1,
+      "expected": 51,
+      "authored": 0,
+      "pending": 51
+    },
+    {
+      "code": "jhn",
+      "chapter": 2,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "jhn",
+      "chapter": 3,
+      "expected": 36,
+      "authored": 0,
+      "pending": 36
+    },
+    {
+      "code": "jhn",
+      "chapter": 4,
+      "expected": 54,
+      "authored": 0,
+      "pending": 54
+    },
+    {
+      "code": "jhn",
+      "chapter": 5,
+      "expected": 47,
+      "authored": 0,
+      "pending": 47
+    },
+    {
+      "code": "jhn",
+      "chapter": 6,
+      "expected": 71,
+      "authored": 0,
+      "pending": 71
+    },
+    {
+      "code": "jhn",
+      "chapter": 7,
+      "expected": 53,
+      "authored": 0,
+      "pending": 53
+    },
+    {
+      "code": "jhn",
+      "chapter": 8,
+      "expected": 59,
+      "authored": 0,
+      "pending": 59
+    },
+    {
+      "code": "jhn",
+      "chapter": 9,
+      "expected": 41,
+      "authored": 0,
+      "pending": 41
+    },
+    {
+      "code": "jhn",
+      "chapter": 10,
+      "expected": 42,
+      "authored": 0,
+      "pending": 42
+    },
+    {
+      "code": "jhn",
+      "chapter": 11,
+      "expected": 57,
+      "authored": 0,
+      "pending": 57
+    },
+    {
+      "code": "jhn",
+      "chapter": 12,
+      "expected": 50,
+      "authored": 0,
+      "pending": 50
+    },
+    {
+      "code": "jhn",
+      "chapter": 13,
+      "expected": 38,
+      "authored": 0,
+      "pending": 38
+    },
+    {
+      "code": "jhn",
+      "chapter": 14,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "jhn",
+      "chapter": 15,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "jhn",
+      "chapter": 16,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "jhn",
+      "chapter": 17,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "jhn",
+      "chapter": 18,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "jhn",
+      "chapter": 19,
+      "expected": 42,
+      "authored": 0,
+      "pending": 42
+    },
+    {
+      "code": "jhn",
+      "chapter": 20,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "jhn",
+      "chapter": 21,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "act",
+      "chapter": 1,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "act",
+      "chapter": 2,
+      "expected": 47,
+      "authored": 0,
+      "pending": 47
+    },
+    {
+      "code": "act",
+      "chapter": 3,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "act",
+      "chapter": 4,
+      "expected": 37,
+      "authored": 0,
+      "pending": 37
+    },
+    {
+      "code": "act",
+      "chapter": 5,
+      "expected": 42,
+      "authored": 0,
+      "pending": 42
+    },
+    {
+      "code": "act",
+      "chapter": 6,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "act",
+      "chapter": 7,
+      "expected": 60,
+      "authored": 0,
+      "pending": 60
+    },
+    {
+      "code": "act",
+      "chapter": 8,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "act",
+      "chapter": 9,
+      "expected": 43,
+      "authored": 0,
+      "pending": 43
+    },
+    {
+      "code": "act",
+      "chapter": 10,
+      "expected": 48,
+      "authored": 0,
+      "pending": 48
+    },
+    {
+      "code": "act",
+      "chapter": 11,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "act",
+      "chapter": 12,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "act",
+      "chapter": 13,
+      "expected": 52,
+      "authored": 0,
+      "pending": 52
+    },
+    {
+      "code": "act",
+      "chapter": 14,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "act",
+      "chapter": 15,
+      "expected": 41,
+      "authored": 0,
+      "pending": 41
+    },
+    {
+      "code": "act",
+      "chapter": 16,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "act",
+      "chapter": 17,
+      "expected": 34,
+      "authored": 0,
+      "pending": 34
+    },
+    {
+      "code": "act",
+      "chapter": 18,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "act",
+      "chapter": 19,
+      "expected": 41,
+      "authored": 0,
+      "pending": 41
+    },
+    {
+      "code": "act",
+      "chapter": 20,
+      "expected": 38,
+      "authored": 0,
+      "pending": 38
+    },
+    {
+      "code": "act",
+      "chapter": 21,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "act",
+      "chapter": 22,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "act",
+      "chapter": 23,
+      "expected": 35,
+      "authored": 0,
+      "pending": 35
+    },
+    {
+      "code": "act",
+      "chapter": 24,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "act",
+      "chapter": 25,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "act",
+      "chapter": 26,
+      "expected": 32,
+      "authored": 0,
+      "pending": 32
+    },
+    {
+      "code": "act",
+      "chapter": 27,
+      "expected": 44,
+      "authored": 0,
+      "pending": 44
+    },
+    {
+      "code": "act",
+      "chapter": 28,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "rom",
+      "chapter": 1,
+      "expected": 32,
+      "authored": 0,
+      "pending": 32
+    },
+    {
+      "code": "rom",
+      "chapter": 2,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "rom",
+      "chapter": 3,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "rom",
+      "chapter": 4,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "rom",
+      "chapter": 5,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rom",
+      "chapter": 6,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "rom",
+      "chapter": 7,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "rom",
+      "chapter": 8,
+      "expected": 39,
+      "authored": 0,
+      "pending": 39
+    },
+    {
+      "code": "rom",
+      "chapter": 9,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "rom",
+      "chapter": 10,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rom",
+      "chapter": 11,
+      "expected": 36,
+      "authored": 0,
+      "pending": 36
+    },
+    {
+      "code": "rom",
+      "chapter": 12,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rom",
+      "chapter": 13,
+      "expected": 14,
+      "authored": 0,
+      "pending": 14
+    },
+    {
+      "code": "rom",
+      "chapter": 14,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "rom",
+      "chapter": 15,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "rom",
+      "chapter": 16,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "1co",
+      "chapter": 1,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "1co",
+      "chapter": 2,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "1co",
+      "chapter": 3,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "1co",
+      "chapter": 4,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "1co",
+      "chapter": 5,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "1co",
+      "chapter": 6,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "1co",
+      "chapter": 7,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "1co",
+      "chapter": 8,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "1co",
+      "chapter": 9,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "1co",
+      "chapter": 10,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "1co",
+      "chapter": 11,
+      "expected": 34,
+      "authored": 0,
+      "pending": 34
+    },
+    {
+      "code": "1co",
+      "chapter": 12,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "1co",
+      "chapter": 13,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "1co",
+      "chapter": 14,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "1co",
+      "chapter": 15,
+      "expected": 58,
+      "authored": 0,
+      "pending": 58
+    },
+    {
+      "code": "1co",
+      "chapter": 16,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "2co",
+      "chapter": 1,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "2co",
+      "chapter": 2,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "2co",
+      "chapter": 3,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "2co",
+      "chapter": 4,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "2co",
+      "chapter": 5,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "2co",
+      "chapter": 6,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "2co",
+      "chapter": 7,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "2co",
+      "chapter": 8,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "2co",
+      "chapter": 9,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "2co",
+      "chapter": 10,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "2co",
+      "chapter": 11,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "2co",
+      "chapter": 12,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "2co",
+      "chapter": 13,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "gal",
+      "chapter": 1,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "gal",
+      "chapter": 2,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "gal",
+      "chapter": 3,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "gal",
+      "chapter": 4,
+      "expected": 31,
+      "authored": 0,
+      "pending": 31
+    },
+    {
+      "code": "gal",
+      "chapter": 5,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "gal",
+      "chapter": 6,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "eph",
+      "chapter": 1,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "eph",
+      "chapter": 2,
+      "expected": 22,
+      "authored": 0,
+      "pending": 22
+    },
+    {
+      "code": "eph",
+      "chapter": 3,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "eph",
+      "chapter": 4,
+      "expected": 32,
+      "authored": 0,
+      "pending": 32
+    },
+    {
+      "code": "eph",
+      "chapter": 5,
+      "expected": 33,
+      "authored": 0,
+      "pending": 33
+    },
+    {
+      "code": "eph",
+      "chapter": 6,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "php",
+      "chapter": 1,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "php",
+      "chapter": 2,
+      "expected": 30,
+      "authored": 0,
+      "pending": 30
+    },
+    {
+      "code": "php",
+      "chapter": 3,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "php",
+      "chapter": 4,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "col",
+      "chapter": 1,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "col",
+      "chapter": 2,
+      "expected": 23,
+      "authored": 0,
+      "pending": 23
+    },
+    {
+      "code": "col",
+      "chapter": 3,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "col",
+      "chapter": 4,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "1th",
+      "chapter": 1,
+      "expected": 10,
+      "authored": 0,
+      "pending": 10
+    },
+    {
+      "code": "1th",
+      "chapter": 2,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "1th",
+      "chapter": 3,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "1th",
+      "chapter": 4,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "1th",
+      "chapter": 5,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "2th",
+      "chapter": 1,
+      "expected": 12,
+      "authored": 0,
+      "pending": 12
+    },
+    {
+      "code": "2th",
+      "chapter": 2,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "2th",
+      "chapter": 3,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "1ti",
+      "chapter": 1,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "1ti",
+      "chapter": 2,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "1ti",
+      "chapter": 3,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "1ti",
+      "chapter": 4,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "1ti",
+      "chapter": 5,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "1ti",
+      "chapter": 6,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "2ti",
+      "chapter": 1,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "2ti",
+      "chapter": 2,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "2ti",
+      "chapter": 3,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "2ti",
+      "chapter": 4,
+      "expected": 22,
+      "authored": 0,
+      "pending": 22
+    },
+    {
+      "code": "tit",
+      "chapter": 1,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "tit",
+      "chapter": 2,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "tit",
+      "chapter": 3,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "phm",
+      "chapter": 1,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "heb",
+      "chapter": 1,
+      "expected": 14,
+      "authored": 0,
+      "pending": 14
+    },
+    {
+      "code": "heb",
+      "chapter": 2,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "heb",
+      "chapter": 3,
+      "expected": 19,
+      "authored": 0,
+      "pending": 19
+    },
+    {
+      "code": "heb",
+      "chapter": 4,
+      "expected": 16,
+      "authored": 0,
+      "pending": 16
+    },
+    {
+      "code": "heb",
+      "chapter": 5,
+      "expected": 14,
+      "authored": 0,
+      "pending": 14
+    },
+    {
+      "code": "heb",
+      "chapter": 6,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "heb",
+      "chapter": 7,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "heb",
+      "chapter": 8,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "heb",
+      "chapter": 9,
+      "expected": 28,
+      "authored": 0,
+      "pending": 28
+    },
+    {
+      "code": "heb",
+      "chapter": 10,
+      "expected": 39,
+      "authored": 0,
+      "pending": 39
+    },
+    {
+      "code": "heb",
+      "chapter": 11,
+      "expected": 40,
+      "authored": 0,
+      "pending": 40
+    },
+    {
+      "code": "heb",
+      "chapter": 12,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "heb",
+      "chapter": 13,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "jas",
+      "chapter": 1,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "jas",
+      "chapter": 2,
+      "expected": 26,
+      "authored": 0,
+      "pending": 26
+    },
+    {
+      "code": "jas",
+      "chapter": 3,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "jas",
+      "chapter": 4,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "jas",
+      "chapter": 5,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "1pe",
+      "chapter": 1,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "1pe",
+      "chapter": 2,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "1pe",
+      "chapter": 3,
+      "expected": 22,
+      "authored": 0,
+      "pending": 22
+    },
+    {
+      "code": "1pe",
+      "chapter": 4,
+      "expected": 19,
+      "authored": 0,
+      "pending": 19
+    },
+    {
+      "code": "1pe",
+      "chapter": 5,
+      "expected": 14,
+      "authored": 0,
+      "pending": 14
+    },
+    {
+      "code": "2pe",
+      "chapter": 1,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "2pe",
+      "chapter": 2,
+      "expected": 22,
+      "authored": 0,
+      "pending": 22
+    },
+    {
+      "code": "2pe",
+      "chapter": 3,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "1jn",
+      "chapter": 1,
+      "expected": 10,
+      "authored": 0,
+      "pending": 10
+    },
+    {
+      "code": "1jn",
+      "chapter": 2,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "1jn",
+      "chapter": 3,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "1jn",
+      "chapter": 4,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "1jn",
+      "chapter": 5,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "2jn",
+      "chapter": 1,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "3jn",
+      "chapter": 1,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "jud",
+      "chapter": 1,
+      "expected": 25,
+      "authored": 0,
+      "pending": 25
+    },
+    {
+      "code": "rev",
+      "chapter": 1,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "rev",
+      "chapter": 2,
+      "expected": 29,
+      "authored": 0,
+      "pending": 29
+    },
+    {
+      "code": "rev",
+      "chapter": 3,
+      "expected": 22,
+      "authored": 0,
+      "pending": 22
+    },
+    {
+      "code": "rev",
+      "chapter": 4,
+      "expected": 11,
+      "authored": 0,
+      "pending": 11
+    },
+    {
+      "code": "rev",
+      "chapter": 5,
+      "expected": 14,
+      "authored": 0,
+      "pending": 14
+    },
+    {
+      "code": "rev",
+      "chapter": 6,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "rev",
+      "chapter": 7,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "rev",
+      "chapter": 8,
+      "expected": 13,
+      "authored": 0,
+      "pending": 13
+    },
+    {
+      "code": "rev",
+      "chapter": 9,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rev",
+      "chapter": 10,
+      "expected": 11,
+      "authored": 0,
+      "pending": 11
+    },
+    {
+      "code": "rev",
+      "chapter": 11,
+      "expected": 19,
+      "authored": 0,
+      "pending": 19
+    },
+    {
+      "code": "rev",
+      "chapter": 12,
+      "expected": 17,
+      "authored": 0,
+      "pending": 17
+    },
+    {
+      "code": "rev",
+      "chapter": 13,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "rev",
+      "chapter": 14,
+      "expected": 20,
+      "authored": 0,
+      "pending": 20
+    },
+    {
+      "code": "rev",
+      "chapter": 15,
+      "expected": 8,
+      "authored": 0,
+      "pending": 8
+    },
+    {
+      "code": "rev",
+      "chapter": 16,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rev",
+      "chapter": 17,
+      "expected": 18,
+      "authored": 0,
+      "pending": 18
+    },
+    {
+      "code": "rev",
+      "chapter": 18,
+      "expected": 24,
+      "authored": 0,
+      "pending": 24
+    },
+    {
+      "code": "rev",
+      "chapter": 19,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    },
+    {
+      "code": "rev",
+      "chapter": 20,
+      "expected": 15,
+      "authored": 0,
+      "pending": 15
+    },
+    {
+      "code": "rev",
+      "chapter": 21,
+      "expected": 27,
+      "authored": 0,
+      "pending": 27
+    },
+    {
+      "code": "rev",
+      "chapter": 22,
+      "expected": 21,
+      "authored": 0,
+      "pending": 21
+    }
+  ]
+}
