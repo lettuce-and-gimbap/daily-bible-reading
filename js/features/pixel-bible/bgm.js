@@ -25,19 +25,63 @@ export function createPlaylist(random=Math.random){
  return bags.get(category).pop();};
 }
 export function createBgm(){
- let context=null,gain=null,timer=null,next=0,step=0,track=0,enabled=false;
+ let context=null,gain=null,tone=null,echo=null,timer=null,next=0,step=0,track=0,enabled=false;
  const pick=createPlaylist();track=pick();
- const note=(midi,start,length,volume,type)=>{const o=context.createOscillator(),g=context.createGain();o.type=type;o.frequency.value=440*2**((midi-69)/12);g.gain.setValueAtTime(0,start);g.gain.linearRampToValueAtTime(volume,start+.009);g.gain.exponentialRampToValueAtTime(.0001,start+length);o.connect(g);g.connect(gain);o.start(start);o.stop(start+length+.02);};
- function schedule(){if(!enabled||context.state!=='running')return;next=Math.max(next,context.currentTime+.02);while(next<context.currentTime+.25){const t=TRACKS[track],beat=60/t.bpm,chord=t.chords[Math.floor(step/8)%4];
- note(t.melody[step%t.melody.length],next,beat*.85,t.type==='square'||t.type==='sawtooth'?.025:.13,t.type);
- if(step%2===0)chord.forEach((n,i)=>note(n+12,next+i*(t.arpeggio?.045:0),beat*1.8,.08,'triangle'));
- if(step%4===0)note(chord[0]-12,next,beat*2,.12,'sine');
- next+=beat;step++;if(step===64){step=0;track=pick();next+=beat;}}
+ // Gentle onset, a held middle, and a release: the instrument breathes between phrases.
+ const note=(midi,start,length,volume,type='triangle',attack=.07)=>{
+ const o=context.createOscillator(),g=context.createGain();o.type=type;
+ o.frequency.value=440*2**((midi-69)/12);
+ const end=start+length,peak=start+Math.min(attack,length*.2);
+ g.gain.setValueAtTime(0,start);g.gain.linearRampToValueAtTime(volume,peak);
+ g.gain.setTargetAtTime(volume*.55,peak,Math.max(.04,length*.22));
+ g.gain.setTargetAtTime(.00001,end, .16);
+ o.connect(g);g.connect(tone);g.connect(echo);o.start(start);o.stop(end+1.3);
+ };
+ function schedule(){
+ if(!enabled||context.state!=='running')return;
+ next=Math.max(next,context.currentTime+.02);
+ while(next<context.currentTime+.25){
+ const t=TRACKS[track],beat=60/t.bpm,chord=t.chords[Math.floor(step/16)%4];
+ const calm=t.category==='잔잔함'||t.category==='기도와 묵상';
+ const phrase=step%16,section=Math.floor(step/64);
+ // Each bar has rests and a longer answer; later sections leave more room for harmony.
+ if(phrase!==7&&phrase!==15&&!(calm&&phrase%4===3)&&!(section===2&&phrase%2)){
+ const pitch=t.melody[Math.floor(step/2)%t.melody.length];
+ note(pitch,next,beat*(phrase%4===2?1.45:.8),calm?.085:.10,'triangle',.08);
+ if(section===1&&phrase%4===0)note(pitch-12,next+.025,beat*1.5,.025,'sine',.14);
+ }
+ // Sustained added-note voicings and a sparse plucked accompaniment.
+ if(step%16===0){
+ [...chord.map(n=>n+12),chord[0]+26].forEach((n,i)=>note(n,next+i*.06,beat*7,.028,'sine',.5));
+ }
+ if(step%4===0){
+ const n=chord[(step/4)%3]+12;
+ note(n,next,beat*1.6,.055,'triangle',.035);
+ }
+ if(step%8===0)note(chord[0]-12,next,beat*3.5,.09,'sine',.12);
+ next+=beat*.5;step++;
+ if(step===256){step=0;track=pick();next+=beat*2;}
+ }
  }
  return {get enabled(){return enabled;},async setEnabled(value){
  if(!value){enabled=false;clearInterval(timer);timer=null;if(context)await context.suspend();return false;}
- const Audio=globalThis.AudioContext||globalThis.webkitAudioContext;if(!Audio)throw new Error('이 브라우저는 배경음악을 지원하지 않아요.');
- if(!context){try{if(globalThis.navigator?.audioSession)globalThis.navigator.audioSession.type='playback';}catch(_){}context=new Audio();gain=context.createGain();gain.gain.value=5;gain.connect(context.destination);}
- await context.resume();enabled=true;next=Math.max(next,context.currentTime+.04);clearInterval(timer);timer=setInterval(schedule,100);schedule();return true;
+ const Audio=globalThis.AudioContext||globalThis.webkitAudioContext;
+ if(!Audio)throw new Error('이 브라우저는 배경음악을 지원하지 않아요.');
+ if(!context){
+ try{if(globalThis.navigator?.audioSession)globalThis.navigator.audioSession.type='playback';}catch(_){}
+ context=new Audio();gain=context.createGain();gain.gain.value=5;
+ tone=context.createBiquadFilter();tone.type='lowpass';tone.frequency.value=2800;tone.Q.value=.5;
+ tone.connect(gain);
+ // A quiet, filtered echo fills the space without repeating harsh transients.
+ echo=context.createDelay(2);echo.delayTime.value=.32;
+ const wet=context.createGain(),feedback=context.createGain(),filter=context.createBiquadFilter();
+ wet.gain.value=.15;feedback.gain.value=.2;filter.type='lowpass';filter.frequency.value=1700;
+ echo.connect(filter);filter.connect(wet);wet.connect(gain);filter.connect(feedback);feedback.connect(echo);
+ const limiter=context.createDynamicsCompressor();limiter.threshold.value=-12;limiter.knee.value=18;
+ limiter.ratio.value=4;limiter.attack.value=.015;limiter.release.value=.3;
+ gain.connect(limiter);limiter.connect(context.destination);
+ }
+ await context.resume();enabled=true;next=Math.max(next,context.currentTime+.04);
+ clearInterval(timer);timer=setInterval(schedule,100);schedule();return true;
  },dispose(){enabled=false;clearInterval(timer);context?.close();}};
 }

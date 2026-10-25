@@ -2,7 +2,7 @@ import {bindOutsidePanelDismiss} from './panel-dismiss.js';
 import {loadVerseBook} from './verse-data.js';
 import {eventPlan} from './event-animation/timeline.js';
 import {mountScenePlayback,verseClipsForScene} from './verse-playback.js';
-import {createBgm} from './bgm.js';
+import {createBgm} from './bgm.js?v=soft2';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';

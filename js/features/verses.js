@@ -108,22 +108,6 @@ function versesRef(chapter, nums) {
 // 서버가 없거나 끝내 못 찾으면 null → 복사한 그대로 붙임
 const privateChapterCache = {};
 
-// Worker KV 이전 중에는 기존 장별 본문 중계로 읽기 화면을 유지한다.
-async function legacyChapterVerses(book, chap, editions) {
-  const groups = await Promise.all(editions.map(async (edition) => {
-    const q = new URLSearchParams({ vol: book.code, chap: String(chap), ver: edition });
-    const res = await fetch(`${PUSH_SERVER}/bible?${q}`);
-    if (!res.ok) throw new Error(`본문 응답 ${res.status}`);
-    const html = await res.text();
-    return [...new DOMParser().parseFromString(html, 'text/html').querySelectorAll('li[datasec]')]
-      .map((li) => ({ ver: edition,
-        label: ((li.querySelector('.bible-read-no') || {}).textContent || '').trim(),
-        text: ((li.querySelector('.bible-read-cont') || {}).textContent || '').replace(/\s+/g, ' ').trim(),
-      })).filter((row) => /^\d/.test(row.label) && row.text);
-  }));
-  return groups.flat();
-}
-
 // Worker의 비공개 저장소에서 선택한 장과 역본만 읽는다.
 async function chapterVerses(idx, ver, ver2, ver3) {
   const { book, chap } = CHAPTERS[idx];
@@ -136,7 +120,6 @@ async function chapterVerses(idx, ver, ver2, ver3) {
     privateChapterCache[key] = fetch(`${PUSH_SERVER}/scripture?${q}`)
       .then((res) => res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`)))
       .then((data) => data.rows)
-      .catch(() => legacyChapterVerses(book, chap, editions))
       .catch((error) => { delete privateChapterCache[key]; throw error; });
   }
   return privateChapterCache[key];
