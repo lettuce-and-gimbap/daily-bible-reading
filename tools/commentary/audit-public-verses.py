@@ -48,7 +48,6 @@ def main():
     limits = counts()
     rows = []
     summary = {}
-    published_books = {}
     with sqlite3.connect('/workspace/private-reference/bible/scripture.sqlite3') as db:
         for edition, name in EDITION_NAMES.items():
             missing = duplicate = extra = 0
@@ -56,10 +55,8 @@ def main():
             for (book, chapter), limit in limits.items():
                 body = db.execute('SELECT body FROM chapters WHERE edition=? AND code=? AND chapter=?',
                                   (edition, book, chapter)).fetchone()[0]
-                if book not in published_books:
-                    published_books[book] = json.loads((ROOT / f'data/scripture/{book}.json').read_text())['editions']
-                published = published_books[book][edition][chapter]
-                numbers = [n for n, _ in published if isinstance(n, int)]
+                numbers = [n for (n,) in db.execute('SELECT verse FROM verses WHERE edition=? AND code=? AND chapter=?',
+                                                    (edition, book, chapter))]
                 present = set(numbers)
                 duplicate += len(numbers) - len(present)
                 for verse in sorted(present - set(range(1, limit + 1))):

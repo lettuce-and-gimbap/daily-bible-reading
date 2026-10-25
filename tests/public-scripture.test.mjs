@@ -1,28 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import fs from 'node:fs';
-import {BOOKS} from '../js/core/bible.js';
+import {scriptureChapter} from '../worker/src/scripture.js';
 
-test('공개 본문 DB는 여섯 역본 모두 창세기부터 요한계시록까지 제공한다',()=>{
- const editions=['gae','easy','niv','han','hyun','saenew'];
- assert.equal(BOOKS.length,66);
- for(const book of BOOKS){
-  const data=JSON.parse(fs.readFileSync(`data/scripture/${book.code}.json`,'utf8'));
-  assert.equal(data.code,book.code);
-  assert.deepEqual(Object.keys(data.editions),editions);
-  for(const edition of editions){
-   assert.equal(data.editions[edition].length,book.chapters+1,`${edition}/${book.code}`);
-   for(let chapter=1;chapter<=book.chapters;chapter++){
-    const verses=data.editions[edition][chapter];
-    assert.ok(verses.length,`${edition}/${book.code}/${chapter}`);
-    let previous=0;
-    for(const [verse,text] of verses){
-     const start=Number(String(verse).split('-')[0]);
-     const end=Number(String(verse).split('-').at(-1));
-     assert.ok(Number.isInteger(start)&&start>previous&&end>=start&&typeof text==='string'&&text.trim(),`${edition}/${book.code}/${chapter}:${verse}`);
-     previous=end;
-    }
-   }
-  }
+const cors={'access-control-allow-origin':'https://lettuce-and-gimbap.github.io'};
+const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:cors});
+const book={editions:{
+ gae:[null,[[1,'첫 절'],[2,'둘째 절']],[[1,'다음 장']]],
+ easy:[null,[[1,'쉬운 첫 절'],[2,'쉬운 둘째 절']]],
+ niv:[null,[[1,'First verse'],[2,'Second verse']]],
+}};
+const env={SUBS:{get:async(key,format)=>{assert.equal(key,'scripture:v1:gen');assert.equal(format,'json');return book;}}};
+
+test('비공개 저장소는 선택한 한 장의 세 역본만 응답한다',async()=>{
+ const req=new Request('https://worker.test/scripture?book=gen&chapter=1&ver=gae&ver2=easy&ver3=niv');
+ const res=await scriptureChapter(req,env,json,cors);
+ assert.equal(res.status,200);
+ assert.equal(res.headers.get('cache-control'),'private, no-store');
+ const body=await res.json();
+ assert.deepEqual(body.rows.map(row=>row.ver),['gae','gae','easy','easy','niv','niv']);
+ assert.ok(!JSON.stringify(body).includes('다음 장'));
+ assert.equal(body.rows.length,6);
+});
+
+test('권 전체나 잘못된 역본은 응답하지 않는다',async()=>{
+ for(const query of ['book=gen&chapter=0&ver=gae','book=gen&chapter=1&ver=unknown','book=gen&chapter=1&ver=gae&ver2=easy&ver3=niv&ver4=han']){
+  const res=await scriptureChapter(new Request('https://worker.test/scripture?'+query),env,json,cors);
+  assert.equal(res.status,400);
  }
 });

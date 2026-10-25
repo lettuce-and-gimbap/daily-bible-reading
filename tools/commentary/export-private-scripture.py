@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the user-authorized public, per-book scripture database assets."""
+"""Build private, per-book scripture payloads for the Worker KV binding."""
 import importlib.util
 import json
 from pathlib import Path
@@ -11,11 +11,12 @@ spec = importlib.util.spec_from_file_location('private_scripture', ROOT / 'tools
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 EDITIONS = ('gae', 'easy', 'niv', 'han', 'hyun', 'saenew')
-OUT = ROOT / 'data/scripture'
+OUT = Path('/workspace/private-reference/bible/kv-books')
 
 
 def main():
     OUT.mkdir(exist_ok=True)
+    OUT.chmod(0o700)
     books = module.books()
     with sqlite3.connect('/workspace/private-reference/bible/scripture.sqlite3') as db:
         for edition in EDITIONS:
@@ -47,7 +48,9 @@ def main():
                         raise ValueError(f'{edition}/{code}/{chapter}: empty')
                     chapters.append(verses)
                 editions[edition] = chapters
-            (OUT / f'{code}.json').write_text(json.dumps({'code': code, 'editions': editions}, ensure_ascii=False, separators=(',', ':')) + '\n')
+            target = OUT / f'{code}.json'
+            target.write_text(json.dumps({'code': code, 'editions': editions}, ensure_ascii=False, separators=(',', ':')) + '\n')
+            target.chmod(0o600)
     print(f'Exported {len(books)} books × {len(EDITIONS)} editions')
 
 

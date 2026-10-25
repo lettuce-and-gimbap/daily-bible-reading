@@ -7,6 +7,7 @@
 import { dailySummary } from "./summary.js";
 import { account } from "./account.js";
 import { planNote } from "./plan.js";
+import { scriptureChapter } from "./scripture.js";
 
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
@@ -32,6 +33,7 @@ export default {
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
       if (pathname === "/plan") return await planNote(request, env, json);
+      if (pathname === "/scripture") return await scriptureChapter(request, env, json, cors);
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
       if (pathname === "/search") return await searchVerses(new URL(request.url), json);

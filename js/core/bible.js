@@ -19,7 +19,7 @@ const BOOKS = [
   ["3jn", "요한삼서", 1], ["jud", "유다서", 1], ["rev", "요한계시록", 22],
 ].map(([code, name, chapters], i) => ({ code, name, chapters, index: i, testament: i < 39 ? "OT" : "NT" }));
 
-// 앱의 공개 본문 DB에서 직접 제공하는 여섯 역본.
+// 앱 서버에서 장별로 제공하는 여섯 역본.
 const VERSIONS = [
   { code: "gae", name: "개역개정4판" },
   { code: "niv", name: "NIV" },
