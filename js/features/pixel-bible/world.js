@@ -518,7 +518,7 @@ export async function mountPixelWorld(shell, options) {
     const ev = activeEvent;
     ev.elapsed = 0;
     eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">Ⅱ 일시정지</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
-    closeCinematic?.();closeCinematic=ev.scene.code==='2ki'?mountCinematic(eventCard,ev.scene,sceneActors(ev.scene)):null;
+    closeCinematic?.();closeCinematic=!['mat','mrk','luk','jhn','act','rom','1co','2co','gal','eph','php','col','1th','2th','1ti','2ti','tit','phm','heb','jas','1pe','2pe','1jn','2jn','3jn','jud','rev'].includes(ev.scene.code)?mountCinematic(eventCard,ev.scene,sceneActors(ev.scene)):null;
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {

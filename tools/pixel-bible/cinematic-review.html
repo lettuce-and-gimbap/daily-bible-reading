@@ -1,6 +1,6 @@
 <!doctype html><meta charset="utf-8"><title>열왕기하 사건 연출 검수</title><style>body{background:#242a31;color:white;font:14px sans-serif}article{display:inline-block;width:48%;margin:1%}canvas{width:100%;image-rendering:pixelated}</style><main></main><script type="module">
 import {KINGS_SCENES} from '../../js/features/pixel-bible/2ki-scenes.js';
-import {renderCinematic} from '../../js/features/pixel-bible/cinematic.js';
-for(const scene of KINGS_SCENES){const a=document.createElement('article');a.innerHTML=`<h3>${scene.ref} · ${scene.title}</h3><canvas width="720" height="300"></canvas>`;document.querySelector('main').append(a);renderCinematic(a.querySelector('canvas').getContext('2d'),scene,scene.actors.map(name=>({name,refs:[scene.ref]})),4);}
+import {renderPixelEvent} from '../../js/features/pixel-bible/pixel-event.js';
+for(const scene of KINGS_SCENES){const a=document.createElement('article');a.innerHTML=`<h3>${scene.ref} · ${scene.title}</h3><canvas width="720" height="300"></canvas>`;document.querySelector('main').append(a);renderPixelEvent(a.querySelector('canvas').getContext('2d'),scene,scene.actors.map(name=>({name,refs:[scene.ref]})),4);}
 document.body.dataset.ready='true';
 </script>
