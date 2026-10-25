@@ -4,7 +4,7 @@ import { chapterMonologues } from './context-monologues.js';
 import {majorFor,occurrenceMatches} from './chapter-dialogue.js';
 import {SOLO_DIALOGUE} from './solo-dialogue.js';
 import {characterStyle} from './art.js';
-const scopes={'바로':'exo.5','다리오':'dan.6','벤하닷':'1ki.20','요나단':'1sa.18','스가랴':'zec.4','아하시야':'2ki.1'};
+import {parseReference} from './references.js';
 // 본문 밖의 추상적인 공통 교훈을 덧붙이지 않고 현재 장의 역할·관계를 사용한다.
 export function personalLines(n,chapters,context){
  if(n.creature)return creatureSpeech(n,chapters);
@@ -12,8 +12,8 @@ export function personalLines(n,chapters,context){
  const style=characterStyle(n.name,0,n.role||'',n.refs||[]);
  const sources=new Set(chapters.map(c=>`${c.code}.${c.chap}`));
  const includesTwoKings=[...sources].some(source=>source.startsWith('2ki.'));
- const solo=SOLO_DIALOGUE[style.name],soloChapter=solo?.ref?.match(/^열왕기하\s+(\d+)/)?.[1];
- const soloAllowed=includesTwoKings?!!soloChapter&&sources.has(`2ki.${soloChapter}`):!scopes[style.name]||sources.has(scopes[style.name]);
+ const solo=SOLO_DIALOGUE[style.name],soloReference=parseReference(solo?.ref||'');
+ const soloAllowed=!!soloReference&&sources.has(`${soloReference.code}.${soloReference.chapter}`);
  const authored=majorFor(n,context)||(style.key!=='generic'&&soloAllowed?solo:null);
  const lines=[];
  const add=(text,ref,origin,emotion)=>{if(text&&!lines.some(l=>l.text===text))lines.push({text,ref,origin,emotion});};

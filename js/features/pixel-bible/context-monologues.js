@@ -1,4 +1,5 @@
 import {twoKingsMonologues} from './2ki-dialogue.js';
+import {oldTestamentMonologues} from './ot-dialogue.js';
 // 본문 사건을 짧게 풀어 쓴 창작 대사. 성경의 직접 인용이 아니다.
 // 이름뿐 아니라 책/장과 역할을 확인해 동명이인과 행위 주체를 구분한다.
 const scenes=[
@@ -52,8 +53,11 @@ const scenes=[
   ['말씀하신 대로 가족과 생물들의 먹이를 준비하자.','determined']]],
 ];
 export function chapterMonologues(n,occurrences){
- const out=[];
- for(const [code,chap,name,ref,lines] of scenes)if((n.name===name||(name==='예수'&&n.name==='예수님'))&&occurrences.some(p=>p.code===code&&p.chap===chap))
+ const out=[],sceneKeys=new Set();
+ for(const [code,chap,name,ref,lines] of scenes)if((n.name===name||(name==='예수'&&n.name==='예수님'))&&occurrences.some(p=>p.code===code&&p.chap===chap)){
+  sceneKeys.add(`${code}.${chap}`);
   for(const [text,emotion]of lines)out.push({text,ref,emotion});
- return [...out,...twoKingsMonologues(n,occurrences)];
+ }
+ const remaining=occurrences.filter(p=>!sceneKeys.has(`${p.code}.${p.chap}`));
+ return [...out,...oldTestamentMonologues(n,remaining),...twoKingsMonologues(n,remaining)];
 }

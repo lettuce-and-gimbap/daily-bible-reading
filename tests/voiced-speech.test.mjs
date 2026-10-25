@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {objectContextSpeech,speechView} from '../js/features/pixel-bible/speech-view.js';
 import {OBJECT_MONOLOGUES,objectMonologue} from '../js/features/pixel-bible/object-monologues.js';
 import {personalLines} from '../js/features/pixel-bible/personal-lines.js';
@@ -8,6 +9,7 @@ import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 import {objectLinesFor} from '../js/features/pixel-bible/object-scenes.js';
 import {ELIJAH_SCENES} from '../js/features/pixel-bible/scenes.js';
 import {TWO_KINGS_DIALOGUE_ROWS} from '../js/features/pixel-bible/2ki-dialogue.js';
+import {OLD_TESTAMENT_CODES,OLD_TESTAMENT_DIALOGUE_ROWS} from '../js/features/pixel-bible/ot-dialogue.js';
 
 test('엘리야의 나무 독백은 현재 장의 공포와 탈진을 담고 긴 근거는 상세에 남긴다',()=>{
  const n={name:'엘리야',refs:['열왕기상 19장']},chapters=[{code:'1ki',name:'열왕기상',chap:19}],evidence={text:'광야의 로뎀나무 아래에서 지쳐 눕는 장면의 상세 맥락.',ref:'열왕기상 19:3–8'};
@@ -54,4 +56,21 @@ test('열왕기하 인물 대사는 사건·인물별로 갈리고 뒤 장의 �
  const allLines=TWO_KINGS_DIALOGUE_ROWS.flatMap(row=>row[3]);assert.equal(new Set(allLines).size,allLines.length,'열왕기하 개별 발화가 서로 구분되어야 한다');
  const unknown={name:'기록되지 않은 왕',role:'왕',refs:[]},unknownContext={people:[{name:unknown.name,code:'2ki',chap:3,role:'왕'}],relations:[]};
  assert.deepEqual(personalLines(unknown,[{code:'2ki',name:'열왕기하',chap:3}],unknownContext),[],'근거가 없는 열왕기하 인물에게 역할 공통 문구를 붙이지 않는다');
+});
+
+test('구약 전권의 개별 대사는 실제 장별 인물 색인에 붙고 역할 공통 독백으로 대체되지 않는다',()=>{
+ const covered=new Set(OLD_TESTAMENT_DIALOGUE_ROWS.map(row=>row[0]));covered.add('2ki');
+ assert.equal(covered.size,39);for(const code of OLD_TESTAMENT_CODES)assert.ok(covered.has(code),code);
+ const allLines=[...OLD_TESTAMENT_DIALOGUE_ROWS.flatMap(row=>row[4]),...TWO_KINGS_DIALOGUE_ROWS.flatMap(row=>row[3])];
+ assert.equal(new Set(allLines).size,allLines.length,'구약 전용 발화가 서로 겹치지 않아야 한다');
+ for(const [code,chap,name,ref] of OLD_TESTAMENT_DIALOGUE_ROWS){
+  const book=JSON.parse(readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));
+  assert.ok((book.chapters?.[String(chap)]?.people||[]).some(p=>p.name===name),`${code}.${chap} ${name}이 본문 인물 색인에 있어야 한다`);
+ }
+ for(const [chap,name] of TWO_KINGS_DIALOGUE_ROWS){
+  const book=JSON.parse(readFileSync(new URL('../data/summary/2ki.json',import.meta.url),'utf8'));
+  assert.ok((book.chapters?.[String(chap)]?.people||[]).some(p=>p.name===name),`2ki.${chap} ${name}이 본문 인물 색인에 있어야 한다`);
+ }
+ const unknown={name:'기록되지 않은 왕',role:'왕',refs:[]},context={people:[{name:unknown.name,code:'2ki',chap:3,role:'왕'}],relations:[]};
+ assert.deepEqual(personalLines(unknown,[{code:'2ki',name:'열왕기하',chap:3}],context),[]);
 });
