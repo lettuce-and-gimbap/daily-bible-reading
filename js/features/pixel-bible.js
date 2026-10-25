@@ -66,9 +66,13 @@ function pixelBibleTodayChapters() {
 
 async function pixelBibleLandscape(shell, nativeFullscreen = true) {
   try {
-    if (nativeFullscreen && !document.fullscreenElement && shell.requestFullscreen) await shell.requestFullscreen();
+    const orientation = screen.orientation;
+    const canLock = !!orientation?.lock;
+    if (nativeFullscreen && !document.fullscreenElement && shell.requestFullscreen) {
+      try { await shell.requestFullscreen(); } catch (_) { /* 방향 고정만 지원하는 기기도 시도 */ }
+    }
     if (!shell.isConnected) return;
-    if (screen.orientation?.lock) await screen.orientation.lock("landscape");
+    if (canLock) await orientation.lock("landscape");
   } catch (_) { /* iOS 등 회전 잠금 미지원 기기는 실제 가로 회전을 안내한다. */ }
 }
 
@@ -78,7 +82,7 @@ async function openPixelBible(scope = {}) {
   const title=scope.chapters?'QT 본문':'오늘의 픽셀 월드';
   const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>${title}</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
-  pixelBibleLandscape(shell, false);
+  pixelBibleLandscape(shell);
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
     const world = await import("./pixel-bible/world.js?v=10.7.0");

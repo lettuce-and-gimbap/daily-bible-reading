@@ -349,6 +349,8 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 /* ---------- QT: 앱이 직접 그리는 본문·묵상 ---------- */
 .rd.qt .rd-clip { background: var(--bg); }
 .qt-read { position: absolute; inset: 0; overflow-y: auto; padding: 16px 16px 84px; display: grid; gap: 14px; align-content: start; max-width: 720px; margin: 0 auto; overscroll-behavior: contain; }
+.rd.qt .qt-read { max-width: none; width: 100%; box-sizing: border-box; }
+.rd.qt #q-content { width: 100%; box-sizing: border-box; }
 .qt-head small { color: var(--qt); font-weight: 700; font-size: .84rem; }
 .qt-head h2 { margin: 2px 0 0; font-size: 1.2rem; letter-spacing: -0.03em; }
 .qt-passage { display: grid; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }

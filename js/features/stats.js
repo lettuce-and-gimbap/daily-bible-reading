@@ -144,8 +144,7 @@ function renderStats() {
     ${accountCardHtml()}
     ${feedbackCardHtml()}
 
-    ${reminderCardHtml()}
-    ${KstLight.permissionsHtml()}
+    <div class="reminder-weather-grid">${reminderCardHtml()}${KstLight.permissionsHtml()}</div>
 
     ${exportCardHtml()}
 

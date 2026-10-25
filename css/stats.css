@@ -30,6 +30,10 @@
 .remind-state { margin: 0; font-weight: 700; }
 .remind-state.on { color: var(--accent); }
 .remind .btn.primary { justify-self: start; }
+.remind .inline { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); align-items: center; }
+.reminder-weather-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+.reminder-weather-grid > .card { min-width: 0; align-content: start; }
+@media (max-width: 600px) { .reminder-weather-grid { grid-template-columns: 1fr; } }
 .howto { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: .9rem; }
 
 /* ---------- 현황 ---------- */

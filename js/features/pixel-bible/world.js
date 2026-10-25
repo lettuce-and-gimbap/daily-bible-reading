@@ -1,3 +1,4 @@
+import {bindOutsidePanelDismiss} from './panel-dismiss.js';
 import {loadVerseBook} from './verse-data.js';
 import {eventPlan} from './event-animation/timeline.js';
 import {mountScenePlayback,verseClipsForScene} from './verse-playback.js';
@@ -166,7 +167,7 @@ export async function mountPixelWorld(shell, options) {
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
-  if(!shell.querySelector('.pb-view-button')) shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button pb-view-button" data-action="fullscreen">⛶ 화면 확대</button>');
+
   const objectChoice=(id,name)=>`<button class="pb-button pb-object-choice" data-place="${esc(id)}" aria-pressed="false" aria-label="${esc(name)} 배치. 한 번 터치, 1초 누르면 설명"><span class="pb-object-art"><canvas width="80" height="72" data-object-icon="${esc(id)}" aria-hidden="true"></canvas><svg class="pb-object-progress" viewBox="0 0 80 72" aria-hidden="true"><path d="M2 2H78V70H2Z"/></svg></span><span class="pb-object-choice-name">${esc(name)}</span></button>`;
   const chapterObjectButtons=chapterProps.map(item=>objectChoice(item.id,item.name)).join('');
   const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
@@ -182,7 +183,7 @@ export async function mountPixelWorld(shell, options) {
     <div class="pb-camera-controls" aria-label="월드 시점"><button class="pb-button" data-action="camera-home">중앙으로</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
 
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
-    <div class="pb-rotate"><span class="pb-phone" aria-hidden="true">▯ ↻ ▭</span><strong>가로로 펼치는<br>PIXEL BIBLE</strong><p>기기를 가로로 돌려 주세요.<br>화면 회전 잠금이 켜져 있다면 해제해 주세요.</p><button class="pb-button" data-action="fullscreen">가로 화면으로 입장</button></div>`);
+`);
   const abort = new AbortController(), signal = abort.signal;
   shell.querySelectorAll('canvas[data-object-icon]').forEach(icon=>{const preview=icon.getContext('2d'),source=document.createElement('canvas');
     source.width=source.height=512;const ctx=source.getContext('2d');
@@ -193,6 +194,8 @@ export async function mountPixelWorld(shell, options) {
     preview.imageSmoothingEnabled=false;preview.clearRect(0,0,80,72);
     preview.drawImage(source,left,top,w,h,Math.round((80-w*fit)/2),Math.round((72-h*fit)/2),Math.floor(w*fit),Math.floor(h*fit));});
   const bgm=createBgm();
+  const savedMusic=()=>{try{return localStorage.getItem('pixel-bible:bgm-enabled');}catch(_){return null;}};
+  const setMusicState=(button,on)=>{button.setAttribute('aria-pressed',String(on));button.textContent=on?'♫ 음악 ON':'♫ 음악 OFF';button.setAttribute('aria-label',on?'배경음악 끄기':'배경음악 켜기');button.dataset.restored='true';};
   const canvas = shell.querySelector(".pb-world-stage > canvas"), ctx = canvas.getContext("2d");
   const camera={...homeCamera(),...options.camera};
   const view=()=>cameraView(canvas.width,canvas.height,camera);
@@ -390,7 +393,7 @@ export async function mountPixelWorld(shell, options) {
     panel.hidden=false;
     shell.querySelector(`[data-toggle-person="${model.cast.findIndex(p=>castKey(p)===castKey(person))}"]`)?.closest('.pb-roster-row')?.after(panel);
     panel.innerHTML=`<h4>${esc(displayPersonName(person.name))} · 함께 표시할 추천 인물</h4>`+(items.length?items.map(({person:p,label})=>{
-      const on=exposed.has(castKey(p));return `<button class="pb-button" data-add-person="${model.cast.indexOf(p)}" aria-disabled="${on}" data-unavailable-reason="이미 표시 중인 인물이에요: ${esc(displayPersonName(p.name))}.">${on?'✓':'＋'} ${esc(displayPersonName(p.name))} <small>${esc(label)}</small></button>`;
+      const on=exposed.has(castKey(p));return `<button class="pb-button" data-add-person="${model.cast.indexOf(p)}" aria-pressed="${on}" aria-label="${esc(displayPersonName(p.name))} ${on?'숨기기':'표시하기'}">${on?'✓':'＋'} ${esc(displayPersonName(p.name))} <small>${esc(label)}</small></button>`;
     }).join(''):'<p class="pb-help">현재 분량의 관계도에 연결된 추가 인물이 없어요.</p>');
   }
   function syncExposure(){
@@ -421,6 +424,14 @@ export async function mountPixelWorld(shell, options) {
     const panel=shell.querySelector(`#pb-${side}-panel`), button=shell.querySelector(`[data-action="toggle-${side}"]`);
     const show=open??panel.hidden;panel.hidden=!show;button.setAttribute('aria-expanded',show);
     button.textContent=side==='left'?(show?'인물 ◂':'인물 ▸'):(show?'도구 · 조합 ▸':'◂ 도구 · 조합');
+  }
+  bindOutsidePanelDismiss(shell,togglePanel,signal);
+  function collapsePersonDetails(){
+    expandedCast=null;recommendationPerson=null;
+    shell.querySelector('.pb-recommendations').hidden=true;
+    shell.querySelector('.pb-person-details').hidden=true;
+    shell.querySelectorAll('[data-cast-person]').forEach(button=>button.setAttribute('aria-expanded','false'));
+    select(-1);draw();
   }
   const recipeUnlocks=loadRecipeUnlocks(localStorage);let hideRecipes=true;
   const dailyDone=()=>!!options.dailyReadingDone?.();
@@ -817,6 +828,11 @@ export async function mountPixelWorld(shell, options) {
     shell.querySelectorAll('[data-action="cancel-place"]').forEach(b=>b.hidden=!placing);
   }
   shell.addEventListener("click", async (e) => {
+    if(!bgm.enabled){
+      const music=shell.querySelector('[data-action="bgm"]');
+      const clickedMusic=e.target.closest('[data-action="bgm"]');
+      if(music&&!music.dataset.restored&&!clickedMusic){music.dataset.restored='true';if(savedMusic()!=='false'){try{setMusicState(music,await bgm.setEnabled(true));}catch(_){}}}
+    }
     if (drag?.active||objectHold?.active) return;
     if (!options.allowed()) return;
     const b=e.target.closest("button"); if(!b) return;
@@ -835,15 +851,14 @@ export async function mountPixelWorld(shell, options) {
     if(b.dataset.togglePerson!==undefined||b.dataset.addPerson!==undefined){
       if(drag||objectHold)return;
       const person=model.cast[Number(b.dataset.togglePerson??b.dataset.addPerson)],key=castKey(person);
-      if(b.dataset.addPerson!==undefined&&exposed.has(key)){say(`이미 표시 중인 인물이에요: ${person.name}.`);return;}
-      if(b.dataset.addPerson!==undefined)exposed.add(key);else if(exposed.has(key))exposed.delete(key);else exposed.add(key);
+      if(exposed.has(key))exposed.delete(key);else exposed.add(key);
       applyExposure();renderRecommendations(b.dataset.addPerson!==undefined&&recommendationPerson?recommendationPerson:person);return;
     }
     if (b.dataset.castPerson!==undefined) {
       const person=model.cast[Number(b.dataset.castPerson)],key=castKey(person);
+      if(expandedCast===key){collapsePersonDetails();return;}
       if(!exposed.has(key)){exposed.add(key);applyExposure();}
       const index=npcs.findIndex(n=>castKey(n)===key);
-      if(expandedCast===key){expandedCast=null;shell.querySelector('.pb-recommendations').hidden=true;shell.querySelector('.pb-person-details').hidden=true;b.setAttribute('aria-expanded','false');return;}
       expandedCast=key;shell.querySelectorAll('[data-cast-person]').forEach(el=>el.setAttribute('aria-expanded',el===b));
       shell.querySelector('.pb-person-details').hidden=false;if(index>=0)select(index,true);return;
     }
@@ -860,7 +875,7 @@ export async function mountPixelWorld(shell, options) {
     if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}if(!requiredObjectsNearby(offer.scene,offer.o,objects)){say('보조 물건도 가까이에 놓아 주세요.');return;}if(offer.scene.actors.length&&!recipeAssembled(offer.scene,npcs,offer.o,objects)){eventOffer=null;offerCard.hidden=true;queueScene(offer.scene,offer.o);return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
     if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;if(activeEvent.paused&&sound)speechSynthesis.cancel();closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
 
-    if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);b.setAttribute('aria-pressed',on);b.textContent=on?'♫ 음악 ON':'♫ 음악 OFF';b.setAttribute('aria-label',on?'배경음악 끄기':'배경음악 켜기');}catch(error){say(error.message);}return;}
+    if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);setMusicState(b,on);try{localStorage.setItem('pixel-bible:bgm-enabled',String(on));}catch(_){} }catch(error){say(error.message);}return;}
     if(action==='camera-home'){Object.assign(camera,homeCamera());constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
@@ -889,9 +904,7 @@ export async function mountPixelWorld(shell, options) {
     if(action==='toggle-right')togglePanel('right');
     if(action==="fullscreen") {
       const expand=!shell.classList.contains('pb-immersive');shell.classList.toggle('pb-immersive',expand);
-      shell.querySelector('.pb-view-button').textContent=expand?'⛶ 화면 복원':'⛶ 화면 확대';
       if(expand){togglePanel('left',false);togglePanel('right',false);options.landscape();say('양옆 버튼으로 인물과 조합 도구를 펼칠 수 있어요.');}
-      else if(document.fullscreenElement)document.exitFullscreen?.().catch(()=>{});
     }
     if(action==="pause") { hideSpeech();paused=!paused; b.setAttribute("aria-pressed",paused); b.textContent=paused?"계속하기":"일시정지"; if(paused && sound) speechSynthesis.cancel(); }
     if(action==="sound") {
