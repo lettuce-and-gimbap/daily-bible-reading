@@ -1,1 +1,53 @@
-{"book":"2pe","scenes":[],"additionalPeople":{"1":[{"name":"베드로","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1]}],"2":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[20]}]}}
+{
+  "book": "2pe",
+  "scenes": [
+    {
+      "id": "nt-animation-2pe-1",
+      "code": "2pe",
+      "chapter": 1,
+      "title": "믿음에 덕과 사랑을 더하라",
+      "actors": [
+        "시몬 베드로"
+      ],
+      "object": "scroll",
+      "ref": "베드로후서 1:5-8",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 믿음에 덕과 지식과 절제와 인내와 경건과 형제 우애와 사랑을 더하라는 가르침을 설명해요."
+      ],
+      "study": "믿음에 덕과 지식과 절제와 인내와 경건과 형제 우애와 사랑을 더하라는 가르침을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"시몬 베드로","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"시몬 베드로"},{"action":"read","duration":1.2,"actor":"시몬 베드로"},{"action":"look","duration":1.5,"actor":"시몬 베드로"},{"action":"point","duration":1.8,"actor":"시몬 베드로"},{"action":"listen","duration":1.5,"actor":"시몬 베드로"},{"action":"bow","duration":1.2,"actor":"시몬 베드로"}],"duration":8.2,"support":null,"ref":"베드로후서 1:5-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "베드로",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          20
+        ]
+      }
+    ]
+  }
+}

@@ -1,1 +1,59 @@
-{"book":"jud","scenes":[],"additionalPeople":{"1":[{"name":"가인","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[11]},{"name":"모세","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[9]},{"name":"아담","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[14]}]}}
+{
+  "book": "jud",
+  "scenes": [
+    {
+      "id": "nt-animation-jud-1",
+      "code": "jud",
+      "chapter": 1,
+      "title": "긍휼히 여기며 믿음을 지키기",
+      "actors": [
+        "유다"
+      ],
+      "object": "scroll",
+      "ref": "유다서 1:20-23",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기도하며 사랑 안에 머물고 의심하는 이들을 긍휼히 여기라는 권면을 설명해요."
+      ],
+      "study": "기도하며 사랑 안에 머물고 의심하는 이들을 긍휼히 여기라는 권면을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"유다","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"read","duration":1.2,"actor":"유다"},{"action":"look","duration":1.5,"actor":"유다"},{"action":"point","duration":1.8,"actor":"유다"},{"action":"listen","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"유다서 1:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "가인",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          11
+        ]
+      },
+      {
+        "name": "모세",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          9
+        ]
+      },
+      {
+        "name": "아담",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          14
+        ]
+      }
+    ]
+  }
+}

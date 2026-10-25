@@ -1,6 +1,6 @@
 import asyncio,json,urllib.request,base64,pathlib,argparse
 import websockets
-parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
+parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--nt',action='store_true');parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
 async def main():
  tab=json.load(urllib.request.urlopen(urllib.request.Request(args.cdp+'/json/new?about:blank',method='PUT')))
  async with websockets.connect(tab['webSocketDebuggerUrl'],max_size=64*1024*1024) as ws:
@@ -17,7 +17,7 @@ async def main():
    return r.get('result',{}).get('value')
   async def shot(name):
    r=await call('Page.captureScreenshot',{'format':'png'});(OUT/(name+'.png')).write_bytes(base64.b64decode(r['data']))
-  await call('Runtime.enable');await call('Network.enable');await call('Network.setCacheDisabled',{'cacheDisabled':True});await call('Emulation.setDeviceMetricsOverride',dict(width=1280,height=720,deviceScaleFactor=1,mobile=False));await call('Page.navigate',{'url':args.base+'/tools/pixel-bible/animation-world-review.html'})
+  await call('Runtime.enable');await call('Network.enable');await call('Network.setCacheDisabled',{'cacheDisabled':True});await call('Emulation.setDeviceMetricsOverride',dict(width=1280,height=720,deviceScaleFactor=1,mobile=False));await call('Page.navigate',{'url':args.base+'/tools/pixel-bible/animation-world-review.html'+('?book=jhn&chapter=13' if args.nt else '')})
   for _ in range(80):
    await asyncio.sleep(.25)
    if await ev('!!window.worldReviewReady'):break
@@ -42,8 +42,10 @@ async def main():
   assert await ev("(()=>{const b=document.querySelector('[data-action=\"skip\"]'),r=b.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('button')===b;})()"),'mobile Close button obscured'
   await shot('world-paused')
   await call('Emulation.setDeviceMetricsOverride',dict(width=1280,height=720,deviceScaleFactor=1,mobile=False));await asyncio.sleep(.2)
-  await ev("window.firstCanvas=document.querySelector('.pb-event-card canvas');document.querySelector('[data-action=\"next\"]').click()")
-  assert await ev("document.querySelector('.pb-event-card canvas')===window.firstCanvas"),'text step restarted/replaced animation'
+  hasNextStep=await ev("document.querySelector('[data-action=\"next\"]').textContent!=='장면 마치기'")
+  if hasNextStep:
+   await ev("window.firstCanvas=document.querySelector('.pb-event-card canvas');document.querySelector('[data-action=\"next\"]').click()")
+   assert await ev("document.querySelector('.pb-event-card canvas')===window.firstCanvas"),'text step restarted/replaced animation'
   await ev("document.querySelector('[data-action=\"skip\"]').click()")
   assert await ev("document.querySelector('.pb-event').hidden&&getComputedStyle(document.querySelector('.pb-event')).display==='none'&&!document.querySelector('.pb-event-card canvas')"),'close cleanup failed'
   await asyncio.sleep(1)
@@ -51,5 +53,5 @@ async def main():
   await call('Emulation.setDeviceMetricsOverride',dict(width=844,height=390,deviceScaleFactor=1,mobile=True))
   await asyncio.sleep(.2);await shot('world-mobile')
   assert not errors,errors
-  (OUT/'world-smoke.json').write_text(json.dumps(dict(ready=True,optIn=True,pause=True,canvasPreserved=True,closeCleanup=True,noAutoRepeat=True,errors=errors),indent=2));print('world smoke passed')
+  (OUT/'world-smoke.json').write_text(json.dumps(dict(ready=True,optIn=True,pause=True,canvasPreserved=True if hasNextStep else 'single-page-scene',closeCleanup=True,noAutoRepeat=True,errors=errors),indent=2));print('world smoke passed')
 asyncio.run(main())

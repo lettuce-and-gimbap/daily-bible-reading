@@ -1,0 +1,6 @@
+{
+ "mat":{"0":{"portrayals":{"예수":{"scale":0.6666666667,"hideBeard":true,"sit":true}}}},
+ "luk":{"2":{"portrayals":{"예수":{"scale":0.85,"hideBeard":true}}}},
+ "jhn":{"5":{"setting":"well"}},
+ "rev":{"1":{"mode":"vision"}}
+}

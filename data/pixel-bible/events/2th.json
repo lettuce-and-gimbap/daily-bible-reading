@@ -1,1 +1,42 @@
-{"book":"2th","scenes":[],"additionalPeople":{"2":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[3]}]}}
+{
+  "book": "2th",
+  "scenes": [
+    {
+      "id": "nt-animation-2th-1",
+      "code": "2th",
+      "chapter": 3,
+      "title": "조용히 일하며 먹으라는 권면",
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll",
+      "ref": "데살로니가후서 3:10-12",
+      "verseNumbers": [
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 공동체에 짐을 지우며 무질서하게 지내지 말고 조용히 일하라는 권면을 살펴봐요."
+      ],
+      "study": "공동체에 짐을 지우며 무질서하게 지내지 말고 조용히 일하라는 권면을 살펴봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"데살로니가후서 3:10-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "2": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -12,8 +12,12 @@ export function eventLayout(sample){
  const {plan,states}=sample,n=states.length,leadIndex=states.findIndex(s=>s.active),lead=states[leadIndex]||states[0];
  const positions=states.map((s,i)=>{let x=n===1?305:180+i*360/Math.max(1,n-1);if(n===2)x=i===leadIndex?300:450;
  if(['flood','recede','bird-release'].includes(plan.motif))x=360;
- x=clamp(x+s.travel,85,640);const y=['flood','recede','bird-release'].includes(plan.motif)?155:235;
- return {x,y,direction:s.direction,hand:{x:x+(s.direction==='left'?12-s.hand.x:s.hand.x-12)*3,y:y+(s.hand.y-36)*3+10}};});
+ if(['calm-sea','net-catch'].includes(plan.motif))x=330+i*60;
+ if(['revive-fall','heal-rise','wash-feet','anoint-feet','anoint-cloak','water-rescue'].includes(plan.motif)&&n===2)x=i===leadIndex?330:390;
+ if(plan.motif==='raise-dead'&&i!==leadIndex)x=360+(sample.index===4?sample.progress:sample.index>4?1:0)*60;
+ x=clamp(x+s.travel,85,640);const y=plan.motif==='revive-fall'&&i!==leadIndex&&sample.index===0?130+Math.round(sample.progress*105):plan.motif==='anoint-cloak'&&i!==leadIndex?255:['calm-sea','net-catch'].includes(plan.motif)?203:['flood','recede','bird-release'].includes(plan.motif)?155:235;
+ const direction=['left','right'].includes(s.direction)?n===2?(i===leadIndex?'right':'left'):x<=360?'right':'left':s.direction;
+ return {x,y,direction,hand:{x:x+(direction==='left'?12-s.hand.x:s.hand.x-12)*3,y:y+(s.hand.y-36)*3+10}};});
  return {positions,lead:positions[leadIndex>=0?leadIndex:0]||{x:300,y:235},prop:{x:360,y:235},leadIndex:leadIndex>=0?leadIndex:0};
 }
 function drawProp(c,kind,position,{angle=0}={}){
@@ -41,9 +45,12 @@ export function renderPixelEvent(c,scene,actors,seconds=0,{portrait=false,reduce
  const supporting=(scene.requiresObjects||[]).filter(k=>k!==kind).map((k,i)=>({kind:k,x:k==='bed'?(layout.positions.find((_,j)=>j!==layout.leadIndex)?.x||455):405+i*45,y:235}));
  for(const o of supporting)drawProp(c,o.kind,o);
  sample.states.forEach((state,i)=>{
+  if(state.visible===false)return;
   const n=state.person,pos=layout.positions[i];let x=pos.x,y=pos.y;
   if(state.pose.lie){const bed=kind==='bed'?layout.prop:supporting.find(o=>o.kind==='bed');x=bed?bed.x+8:pos.x;y=bed?bed.y+36:pos.y+16;}
-  drawPixelCharacter(c,characterStyle(n.name,i,n.role,n.refs||[],n.creature||false),x,y,{scale:3,direction:state.direction,interaction:state.pose,walkFrame:state.walkFrame,expression:state.expression});
+  const portrayal=sample.plan.portrayals?.[n.name]||{};let style=characterStyle(n.name,i,n.role,n.refs||[],n.creature||false);
+  if(sample.plan.motif==='vision-robes'&&sample.index>=3)style={...style,coat:'#e8e4d4'};
+  drawPixelCharacter(c,portrayal.hideBeard?{...style,beard:false}:style,x,y,{scale:3*(portrayal.scale||1),direction:pos.direction,interaction:portrayal.sit?{...state.pose,sit:true}:state.pose,walkFrame:state.walkFrame,expression:state.expression});
   c.fillStyle='#fff3cd';c.textAlign='center';c.font='13px DungGeunMo,monospace';c.fillText(caption(n.name),pos.x,288);
  });
  if(portable&&!(['sling','arrow'].includes(sample.plan.effect)&&sample.index>=4))drawProp(c,kind,propPosition,{angle:propAngle});

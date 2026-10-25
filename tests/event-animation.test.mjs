@@ -27,3 +27,9 @@ test('성경 본문의 행동 주체와 비유·예언의 상징 모드를 구�
  for(const b of ['psa','pro','ecc','sng','oba','nam','zep'])for(const s of books.find(([code])=>code===b)[1].scenes)assert.equal(s.animation.mode,'illustration');
  const s=gen.find(s=>s.title==='두 형제의 제물');assert.equal(s.animation.support.actor,'아벨');assert.equal(eventPlan(s).lead,'가인');
 });
+
+test('두 번째 배우가 행동 주체여도 두 인물이 서로를 향해 서고 소품 좌표가 방향을 따른다',()=>{
+ const scene=books.find(([b])=>b==='1sa')[1].scenes.find(s=>s.title==='막내 다윗'),cast=scene.actors.map(name=>({name}));
+ const layout=eventLayout(sampleEvent(scene,cast,0));assert.equal(scene.animation.lead,'사무엘');
+ assert.equal(layout.positions[1].direction,'right');assert.equal(layout.positions[0].direction,'left');assert.ok(layout.positions[1].x<layout.positions[0].x);
+});

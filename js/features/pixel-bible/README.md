@@ -9,3 +9,5 @@
 When adding Old Testament dialogue, add rows to the matching section under `old-testament/`; keep the six-field row shape and do not include source scripture or commentary text.
 
 - `event-animation/` holds the event timeline, pixel joint rig, stage backgrounds and result effects. `pixel-event.js` plays the original pixel sprites. Each Old Testament event JSON carries its own animation plan. See `docs/ot-pixel-event-animation.md` for coverage and review commands.
+
+- New Testament event plans use the `--nt` option in the same authoring/review tools. See `docs/nt-pixel-event-animation.md`; epistles are explanatory scenes and Revelation is marked as vision imagery.

@@ -1,1 +1,30 @@
-{"book":"1th","scenes":[],"additionalPeople":{}}
+{
+  "book": "1th",
+  "scenes": [
+    {
+      "id": "nt-animation-1th-1",
+      "code": "1th",
+      "chapter": 1,
+      "title": "믿음과 사랑과 소망을 기억하며",
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll",
+      "ref": "데살로니가전서 1:2-3",
+      "verseNumbers": [
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바울은 성도들의 믿음의 일과 사랑의 수고와 소망의 인내를 기억하며 감사해요."
+      ],
+      "study": "바울은 성도들의 믿음의 일과 사랑의 수고와 소망의 인내를 기억하며 감사해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"데살로니가전서 1:2-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {}
+}

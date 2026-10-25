@@ -1,1 +1,86 @@
-{"book":"col","scenes":[{"id":"ot-col-1-0","code":"col","chapter":1,"title":"감사와 기도","actors":["바울","에바브라"],"object":"fruit","ref":"골로새서 1:1-14","verseNumbers":[1,2,3,4,5,6,7,8,9,10,11,12,13,14],"actions":{},"lines":["해설: 바울은 골로새 성도들의 믿음과 사랑과 소망을 감사해요. 에바브라에게서 복음을 듣고 열매를 맺는 그들이 하나님의 뜻을 아는 지식과 지혜로 채워져 주께 합당하게 살도록 기도해요."],"study":"바울은 골로새 성도들의 믿음과 사랑과 소망을 감사해요. 에바브라에게서 복음을 듣고 열매를 맺는 그들이 하나님의 뜻을 아는 지식과 지혜로 채워져 주께 합당하게 살도록 기도해요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-col-4-2","code":"col","chapter":4,"title":"동역자들의 문안","actors":["바울","아리스다고"],"object":"letter","ref":"골로새서 4:10-18","verseNumbers":[10,11,12,13,14,15,16,17,18],"actions":{},"lines":["해설: 아리스다고·마가·유스도·에바브라·누가·데마가 문안해요. 바울은 이 편지를 라오디게아 교회에서도 읽고 그쪽 편지도 읽으라고 해요."],"study":"아리스다고·마가·유스도·에바브라·누가·데마가 문안해요. 바울은 이 편지를 라오디게아 교회에서도 읽고 그쪽 편지도 읽으라고 해요. 아킵보에게는 받은 직분을 이루라고 하고 직접 문안하며 은혜를 빌어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{"4":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[12]}]}}
+{
+  "book": "col",
+  "scenes": [
+    {
+      "id": "ot-col-1-0",
+      "code": "col",
+      "chapter": 1,
+      "title": "감사와 기도",
+      "actors": [
+        "바울",
+        "에바브라"
+      ],
+      "object": "fruit",
+      "ref": "골로새서 1:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바울은 골로새 성도들의 믿음과 사랑과 소망을 감사해요. 에바브라에게서 복음을 듣고 열매를 맺는 그들이 하나님의 뜻을 아는 지식과 지혜로 채워져 주께 합당하게 살도록 기도해요."
+      ],
+      "study": "바울은 골로새 성도들의 믿음과 사랑과 소망을 감사해요. 에바브라에게서 복음을 듣고 열매를 맺는 그들이 하나님의 뜻을 아는 지식과 지혜로 채워져 주께 합당하게 살도록 기도해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":"에바브라","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"골로새서 1:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-col-4-2",
+      "code": "col",
+      "chapter": 4,
+      "title": "동역자들의 문안",
+      "actors": [
+        "바울",
+        "아리스다고"
+      ],
+      "object": "letter",
+      "ref": "골로새서 4:10-18",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아리스다고·마가·유스도·에바브라·누가·데마가 문안해요. 바울은 이 편지를 라오디게아 교회에서도 읽고 그쪽 편지도 읽으라고 해요."
+      ],
+      "study": "아리스다고·마가·유스도·에바브라·누가·데마가 문안해요. 바울은 이 편지를 라오디게아 교회에서도 읽고 그쪽 편지도 읽으라고 해요. 아킵보에게는 받은 직분을 이루라고 하고 직접 문안하며 은혜를 빌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":"아리스다고","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"letter","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"골로새서 4:10-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "4": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          12
+        ]
+      }
+    ]
+  }
+}

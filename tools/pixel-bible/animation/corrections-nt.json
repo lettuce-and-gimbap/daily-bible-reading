@@ -1,0 +1,426 @@
+{
+  "mat": {
+    "0": {
+      "actors": [
+        "동방 박사들",
+        "예수"
+      ],
+      "object": "gold"
+    },
+    "2": {
+      "actors": [
+        "예수",
+        "제자들"
+      ]
+    },
+    "9": {
+      "actors": [
+        "예수",
+        "귀신 들린 아이"
+      ],
+      "object": "house"
+    },
+    "10": {
+      "actors": [
+        "예수",
+        "헤롯 당원"
+      ]
+    },
+    "12": {
+      "actors": [
+        "향유를 부은 여인",
+        "예수"
+      ],
+      "object": "alabaster-jar"
+    },
+    "13": {
+      "actors": [
+        "가룟 유다"
+      ],
+      "object": "silver"
+    },
+    "14": {
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "bread"
+    },
+    "15": {
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "tree"
+    },
+    "17": {
+      "actors": [
+        "백부장"
+      ],
+      "object": "cross"
+    },
+    "18": {
+      "actors": [
+        "아리마대 요셉"
+      ],
+      "object": "tomb"
+    },
+    "19": {
+      "actors": [
+        "막달라 마리아",
+        "주의 천사"
+      ],
+      "object": "tomb"
+    },
+    "20": {
+      "actors": [
+        "예수",
+        "베드로"
+      ],
+      "object": "water-supply"
+    }
+  },
+  "mrk": {
+    "0": {
+      "actors": [
+        "예수",
+        "시몬"
+      ]
+    },
+    "3": {
+      "actors": [
+        "혈루증 여인",
+        "예수"
+      ]
+    },
+    "4": {
+      "actors": [
+        "예수",
+        "제자들"
+      ]
+    },
+    "6": {
+      "actors": [
+        "예수",
+        "바디매오"
+      ]
+    },
+    "7": {
+      "object": "donkey"
+    },
+    "8": {
+      "actors": [
+        "예수",
+        "베드로"
+      ]
+    },
+    "9": {
+      "actors": [
+        "향유를 부은 여자",
+        "예수"
+      ],
+      "object": "alabaster-jar"
+    },
+    "10": {
+      "actors": [
+        "예수",
+        "베드로"
+      ],
+      "object": "bread"
+    },
+    "12": {
+      "object": "cross"
+    },
+    "13": {
+      "actors": [
+        "아리마대 요셉"
+      ]
+    }
+  },
+  "luk": {
+    "7": {
+      "actors": [
+        "예수",
+        "야이로의 딸"
+      ],
+      "object": "bed"
+    },
+    "9": {
+      "actors": [
+        "예수"
+      ],
+      "object": "fig-tree"
+    },
+    "14": {
+      "actors": [
+        "예수",
+        "베드로"
+      ],
+      "object": "bread"
+    },
+    "15": {
+      "actors": [
+        "예수",
+        "천사"
+      ],
+      "object": "tree"
+    },
+    "17": {
+      "actors": [
+        "요셉"
+      ],
+      "object": "tomb"
+    },
+    "18": {
+      "actors": [
+        "베드로"
+      ],
+      "object": "tomb"
+    },
+    "20": {
+      "object": "oil"
+    }
+  },
+  "jhn": {
+    "0": {
+      "object": "scroll"
+    },
+    "5": {
+      "actors": [
+        "사마리아 여자",
+        "예수"
+      ],
+      "object": "well"
+    },
+    "10": {
+      "actors": [
+        "예수",
+        "유대인들"
+      ]
+    },
+    "13": {
+      "actors": [
+        "예수",
+        "나사로"
+      ],
+      "object": "tomb"
+    },
+    "14": {
+      "actors": [
+        "마리아",
+        "예수"
+      ],
+      "object": "perfume"
+    },
+    "17": {
+      "actors": [
+        "예수",
+        "시몬 베드로"
+      ],
+      "object": "basin"
+    },
+    "18": {
+      "object": "scroll"
+    },
+    "21": {
+      "actors": [
+        "군인들"
+      ],
+      "object": "cross"
+    },
+    "22": {
+      "actors": [
+        "아리마대 사람 요셉",
+        "니고데모"
+      ]
+    },
+    "27": {
+      "actors": [
+        "예수",
+        "시몬 베드로"
+      ]
+    },
+    "1": {
+      "actors": [
+        "하인들",
+        "예수"
+      ],
+      "object": "jar"
+    }
+  },
+  "act": {
+    "0": {
+      "actors": [
+        "베드로",
+        "못 걷는 사람"
+      ],
+      "object": "gate"
+    },
+    "1": {
+      "actors": [
+        "베드로",
+        "공회"
+      ]
+    },
+    "3": {
+      "actors": [
+        "스데반"
+      ],
+      "object": "scroll"
+    },
+    "4": {
+      "actors": [
+        "스데반"
+      ],
+      "object": "scroll"
+    },
+    "5": {
+      "actors": [
+        "스데반"
+      ]
+    },
+    "6": {
+      "actors": [
+        "사울"
+      ]
+    },
+    "10": {
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll"
+    },
+    "15": {
+      "object": "house"
+    },
+    "18": {
+      "actors": [
+        "아가보",
+        "바울"
+      ],
+      "object": "belt"
+    },
+    "22": {
+      "actors": [
+        "더둘로",
+        "바울"
+      ]
+    },
+    "25": {
+      "actors": [
+        "바울"
+      ],
+      "object": "snake"
+    },
+    "26": {
+      "actors": [
+        "바울",
+        "보블리오의 부친"
+      ],
+      "object": "bed"
+    },
+    "27": {
+      "actors": [
+        "베드로",
+        "못 걷는 사람"
+      ]
+    },
+    "28": {
+      "actors": [
+        "베드로",
+        "다비다"
+      ]
+    },
+    "31": {
+      "actors": [
+        "바울",
+        "아굴라",
+        "브리스길라"
+      ]
+    },
+    "32": {
+      "actors": [
+        "마술하던 사람들"
+      ],
+      "object": "book"
+    },
+    "24": {
+      "actors": [
+        "승객들"
+      ],
+      "object": "boat"
+    }
+  },
+  "rom": {
+    "0": {
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll"
+    }
+  },
+  "1co": {
+    "2": {
+      "actors": [
+        "바울"
+      ],
+      "object": "cup"
+    }
+  },
+  "2co": {
+    "0": {
+      "actors": [
+        "바울"
+      ],
+      "object": "incense"
+    }
+  },
+  "php": {
+    "1": {
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll"
+    }
+  },
+  "rev": {
+    "0": {
+      "actors": [
+        "요한"
+      ],
+      "object": "scroll"
+    },
+    "1": {
+      "actors": [
+        "요한"
+      ]
+    },
+    "17": {
+      "actors": [
+        "짐승을 이긴 자들"
+      ],
+      "object": "harp"
+    },
+    "19": {
+      "actors": [
+        "일곱 천사"
+      ],
+      "object": "bowl"
+    },
+    "20": {
+      "actors": [
+        "일곱 천사"
+      ],
+      "object": "bowl"
+    },
+    "9": {
+      "object": "harp"
+    },
+    "14": {
+      "object": "snake"
+    },
+    "26": {
+      "object": "wall"
+    }
+  }
+}

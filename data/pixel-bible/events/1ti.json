@@ -1,1 +1,53 @@
-{"book":"1ti","scenes":[],"additionalPeople":{"4":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[6]}],"5":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[21]}]}}
+{
+  "book": "1ti",
+  "scenes": [
+    {
+      "id": "nt-animation-1ti-1",
+      "code": "1ti",
+      "chapter": 2,
+      "title": "모든 사람을 위한 간구",
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll",
+      "ref": "디모데전서 2:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 지도자를 포함한 모든 사람을 위해 기도하라는 가르침을 살펴봐요."
+      ],
+      "study": "지도자를 포함한 모든 사람을 위해 기도하라는 가르침을 살펴봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"디모데전서 2:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "4": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          6
+        ]
+      }
+    ],
+    "5": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          21
+        ]
+      }
+    ]
+  }
+}

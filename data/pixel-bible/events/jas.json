@@ -1,1 +1,49 @@
-{"book":"jas","scenes":[{"id":"ot-jas-2-2","code":"jas","chapter":2,"title":"아브라함과 라합","actors":["아브라함","이삭"],"object":"field","ref":"야고보서 2:18-26","verseNumbers":[18,19,20,21,22,23,24,25,26],"actions":{},"lines":["해설: 아브라함은 이삭을 바칠 때, 라합은 정탐꾼을 숨길 때 행함으로 믿음이 온전해졌어요. 행함 없는 믿음은 영혼 없는 몸처럼 죽은 거예요."],"study":"아브라함은 이삭을 바칠 때, 라합은 정탐꾼을 숨길 때 행함으로 믿음이 온전해졌어요. 행함 없는 믿음은 영혼 없는 몸처럼 죽은 거예요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{"5":[{"name":"엘리","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[17]}]}}
+{
+  "book": "jas",
+  "scenes": [
+    {
+      "id": "ot-jas-2-2",
+      "code": "jas",
+      "chapter": 2,
+      "title": "아브라함과 라합",
+      "actors": [
+        "아브라함",
+        "이삭"
+      ],
+      "object": "field",
+      "ref": "야고보서 2:18-26",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아브라함은 이삭을 바칠 때, 라합은 정탐꾼을 숨길 때 행함으로 믿음이 온전해졌어요. 행함 없는 믿음은 영혼 없는 몸처럼 죽은 거예요."
+      ],
+      "study": "아브라함은 이삭을 바칠 때, 라합은 정탐꾼을 숨길 때 행함으로 믿음이 온전해졌어요. 행함 없는 믿음은 영혼 없는 몸처럼 죽은 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"아브라함","target":"이삭","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"field","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"read","duration":1.2,"actor":"아브라함"},{"action":"look","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"야고보서 2:18-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "5": [
+      {
+        "name": "엘리",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          17
+        ]
+      }
+    ]
+  }
+}

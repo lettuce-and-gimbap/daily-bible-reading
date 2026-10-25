@@ -1,1 +1,42 @@
-{"book":"tit","scenes":[],"additionalPeople":{"1":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1,4]}]}}
+{
+  "book": "tit",
+  "scenes": [
+    {
+      "id": "nt-animation-tit-1",
+      "code": "tit",
+      "chapter": 2,
+      "title": "선한 일의 본을 보이라",
+      "actors": [
+        "디도"
+      ],
+      "object": "scroll",
+      "ref": "디도서 2:7-8",
+      "verseNumbers": [
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 디도에게 가르침과 바른 말과 선한 행동에서 본을 보이라는 권면을 설명해요."
+      ],
+      "study": "디도에게 가르침과 바른 말과 선한 행동에서 본을 보이라는 권면을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"디도","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"디도"},{"action":"read","duration":1.2,"actor":"디도"},{"action":"look","duration":1.5,"actor":"디도"},{"action":"point","duration":1.8,"actor":"디도"},{"action":"listen","duration":1.5,"actor":"디도"},{"action":"bow","duration":1.2,"actor":"디도"}],"duration":8.2,"support":null,"ref":"디도서 2:7-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}

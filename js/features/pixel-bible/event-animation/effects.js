@@ -1,12 +1,29 @@
 import {drawWorldObject} from '../art.js';
-export const EFFECTS=new Set('pour-water five-stones float-basket two-offerings flock bars crown arrow none shadow transfer receive build flood recede bird altar-flame rainbow cover journey light covenant feast shelter fire prayer release coins water tears family refuse vision oil roll speech bury pit stack reveal symbol bush-fire snake water-strike divide restore cloud lamp garment smoke cloth fragments veil arrange powder blossom sign clash rope lots collapse jar-break grain shoe food music sling projectile cloth-cut letter boat whirlwind axe treasure touch water-strike burial potsherd clay cloth-decay sink city joined storm wither scroll idol well signal snare boat-break scepter horse heal tear transfer light'.split(' '));
+export const EFFECTS=new Set('vision-door vision-swarm vision-bowls vision-bind fall-rise anoint-feet storm-calm net-catch water-wine wash-feet rise resurrection garment-touch anoint bread-share veil-dark empty-tomb water-rescue capture pour-water five-stones float-basket two-offerings flock bars crown arrow none shadow transfer receive build flood recede bird altar-flame rainbow cover journey light covenant feast shelter fire prayer release coins water tears family refuse vision oil roll speech bury pit stack reveal symbol bush-fire snake water-strike divide restore cloud lamp garment smoke cloth fragments veil arrange powder blossom sign clash rope lots collapse jar-break grain shoe food music sling projectile cloth-cut letter boat whirlwind axe treasure touch water-strike burial potsherd clay cloth-decay sink city joined storm wither scroll idol well signal snare boat-break scepter horse heal tear transfer light'.split(' '));
 export function drawEffects(c,sample,layout){
  const {plan,index,progress,effectProgress:p,elapsed}=sample,effect=plan.effect;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.max(0,Math.round(w)),Math.max(0,Math.round(h)));};
  const prop=(kind,x,y)=>drawWorldObject(c,{kind,x,y},1,0),x=layout.prop.x,y=layout.prop.y;
- if(['illustration','instruction','vision'].includes(plan.mode)){r(18,35,155,23,'#233d47');c.fillStyle='#f6e4b7';c.font='12px DungGeunMo,monospace';c.textAlign='left';c.fillText(plan.mode==='instruction'?'규례 설명 · 동작은 예시':plan.mode==='vision'?'꿈 · 환상의 상징 장면':'시 · 비유 · 예언의 상징 설명',24,50);}
+ if(['illustration','instruction','vision'].includes(plan.mode)){r(18,35,224,23,'#233d47');c.fillStyle='#f6e4b7';c.font='12px DungGeunMo,monospace';c.textAlign='left';c.fillText(plan.mode==='instruction'?'규례 설명 · 동작은 예시':plan.mode==='vision'?'꿈 · 환상의 상징 장면':'본문을 설명하는 상징 장면',24,50);}
  const spark=(col)=>{if(index<3)return;for(let i=0;i<10;i++)r(x-18+i*7%37,y-60+(i*11+elapsed*10)%50,2,3,col);};
  switch(effect){
+ case 'vision-door':{r(x-25,120,50,115,'#b49c73');r(x-20,125,40,110,'#354c4c');if(index<3)r(x-20,125,40,110,'#88765c');else r(x-20-p*18,125,Math.max(3,40-p*37),110,'#88765c');break;}
+ case 'vision-swarm':if(index>=2)for(let i=0;i<12;i++){const xx=x-70+i*13,yy=130+(i%3)*13+Math.floor(Math.sin(elapsed*3+i)*3);r(xx,yy,5,3,'#595949');r(xx-2,yy-2,2,2,'#b2a475');r(xx+5,yy-2,2,2,'#b2a475');}break;
+ case 'vision-bowls':if(index>=3)for(let i=0;i<7;i++)r(x-15+i*5,y-65+i*7,2,5,'#bda278');break;
+ case 'vision-bind':if(index>=3){prop('snake',x,y);for(let i=0;i<5;i++)r(x-20+i*10,y-12,7,2,'#a9b4b0');}break;
+ case 'storm-calm':if(index<4){for(let i=0;i<20;i++)r(i*41%720,240+Math.sin(elapsed*6+i)*8,22,3,'#d0e2da');for(let i=0;i<25;i++)r(i*67%720,(i*31+elapsed*40)%220,2,6,'#a3c9cd');}else for(let i=0;i<15;i++)r(i*53%720,250+i%3*15,30,2,'#a7ced2');break;
+ case 'net-catch':if(index>=3){const n=index===3?progress:1;c.strokeStyle='#c1b69a';c.lineWidth=2;for(let i=0;i<5;i++){c.beginPath();c.moveTo(x-40+i*20*n,y-20);c.lineTo(x-25+i*14*n,y+25);c.stroke();c.beginPath();c.moveTo(x-40,y-12+i*8);c.lineTo(x+45,y-12+i*8);c.stroke();}if(index>=4)for(let i=0;i<5;i++)prop('fish',x-20+i*12,y+15-Math.round(p*16));}break;
+ case 'water-wine':if(index>=3){prop('cup',x+30,y);r(x+27,y-7,5,3,index>=4?'#996370':'#8fc3cd');}break;
+ case 'wash-feet':if(index>=3){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;prop('basin',target.x-22,target.y-3);for(let i=0;i<5;i++)r(target.x-30+i*4,target.y-18+i*3,2,3,'#a2d3d9');}break;
+ case 'fall-rise':case 'rise':case 'resurrection':if(index>=4){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;for(let i=0;i<4;i++)r(target.x-30+i*18,target.y-78,2,6,'#ebd89b');}break;
+ case 'garment-touch':if(index>=3&&index<=4){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;r(target.x-25,target.y-26,4,4,'#e6d19c');r(target.x-30,target.y-21,3,3,'#e6d19c');}break;
+ case 'anoint-feet':if(index>=3&&index<=4){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;for(let i=0;i<4;i++)r(target.x-15+i*2,target.y-25+i*4,2,4,'#dfc277');}break;
+ case 'anoint':if(index>=3&&index<=4){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;for(let i=0;i<5;i++)r(target.x-5,target.y-100+i*5,2,4,'#dfc277');}break;
+ case 'bread-share':if(index>=3){prop('bread',x-8,y-10);prop('bread',x+17,y-10);prop('cup',x+42,y);}break;
+ case 'veil-dark':if(index>=3){r(0,0,720,300,'#15273988');r(x-18,55,15,100,'#bfb397');r(x+4,55,15,100,'#bfb397');r(x-2,60,4,90,'#293a40');}break;
+ case 'empty-tomb':if(index>=2){r(x-10,y-31,21,31,'#334b47');prop('stone',x+38+p*23,y);}break;
+ case 'water-rescue':if(index>=2){const target=layout.positions.find((_,i)=>i!==layout.leadIndex)||layout.lead;for(let i=0;i<4;i++)r(target.x-18+i*12,target.y+5-Math.round(Math.sin(elapsed*5+i)*3),8,2,'#d0e6df');}break;
+ case 'capture':if(index>=4)prop('rope',x,y);break;
  case 'five-stones':for(let i=0;i<5;i++)if(index<3||i>Math.floor(p*5))prop('stone',x+15+i*18,y+12+i%2*5);break;
  case 'float-basket':if(index>=3)prop('reed-basket',x+p*38,y+8);break;
  case 'two-offerings':if(index>=2){prop('fruit',layout.lead.x+38,y);const target=layout.positions.find((p,i)=>i!==layout.leadIndex);if(target)prop('sheep',target.x-55,y);}break;

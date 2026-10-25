@@ -1,9 +1,10 @@
 <!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>픽셀 사건 실제 월드 검수</title><link rel="stylesheet" href="../../css/pixel-bible.css"><style>html,body{margin:0;width:100%;height:100%}.pb-shell{height:100dvh}</style><div class="pb-shell"><header class="pb-world-head"><b>사건 재생 검수</b></header><div class="pb-load">준비 중</div></div>
 <script type="module">
 import {mountPixelWorld} from '../../js/features/pixel-bible/world.js';
-const summary=await fetch('../../data/summary/gen.json').then(r=>r.json());
+const params=new URLSearchParams(location.search),code=params.get('book')||'gen',chapter=Number(params.get('chapter')||28),name=code==='jhn'?'요한복음':'창세기';
+const summary=await fetch('../../data/summary/'+code+'.json').then(r=>r.json());
 // Only the localhost review origin is used; no signed-in app state is loaded.
-localStorage.setItem('pixel-bible-layout:gen.28',JSON.stringify([{kind:'stone',x:40,y:24}]));
-window.disposeReview=await mountPixelWorld(document.querySelector('.pb-shell'),{chapters:[{code:'gen',name:'창세기',chap:28}],allowed:()=>true,cachedBook:()=>summary,dailyReadingDone:()=>true,landscape:()=>{},scopeLabel:'창세기 연출 검수'});
+localStorage.setItem('pixel-bible-layout:'+code+'.'+chapter,JSON.stringify([{kind:code==='jhn'?'basin':'stone',x:40,y:24}]));
+window.disposeReview=await mountPixelWorld(document.querySelector('.pb-shell'),{chapters:[{code,name,chap:chapter}],allowed:()=>true,cachedBook:()=>summary,dailyReadingDone:()=>true,landscape:()=>{},scopeLabel:'창세기 연출 검수'});
 window.worldReviewReady=true;
 </script></html>

@@ -1,1 +1,74 @@
-{"book":"eph","scenes":[{"id":"ot-eph-2-1","code":"eph","chapter":2,"title":"막힌 담을 허심","actors":["이스라엘"],"object":"cross","ref":"에베소서 2:11-18","verseNumbers":[11,12,13,14,15,16,17,18],"actions":{},"lines":["해설: 이방인은 전에 그리스도 밖에서 이스라엘 나라 밖의 외인이었어요. 그리스도께서 십자가로 막힌 담을 허물고 둘을 한 새 사람, 한 몸으로 만들어 하나님과 화목하게 하셨어요."],"study":"이방인은 전에 그리스도 밖에서 이스라엘 나라 밖의 외인이었어요. 그리스도께서 십자가로 막힌 담을 허물고 둘을 한 새 사람, 한 몸으로 만들어 하나님과 화목하게 하셨어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-eph-2-2","code":"eph","chapter":2,"title":"하나님의 권속","actors":["예수"],"object":"temple","ref":"에베소서 2:19-22","verseNumbers":[19,20,21,22],"actions":{},"lines":["해설: 이제 이방인도 외인이 아니라 성도와 같은 시민, 하나님의 권속이에요. 사도와 선지자의 터 위에 그리스도 예수를 모퉁잇돌로 지어져 성령 안에서 하나님이 계시는 거룩한 성전이 되어 가요."],"study":"이제 이방인도 외인이 아니라 성도와 같은 시민, 하나님의 권속이에요. 사도와 선지자의 터 위에 그리스도 예수를 모퉁잇돌로 지어져 성령 안에서 하나님이 계시는 거룩한 성전이 되어 가요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{"6":[{"name":"예수","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[23,24]}]}}
+{
+  "book": "eph",
+  "scenes": [
+    {
+      "id": "ot-eph-2-1",
+      "code": "eph",
+      "chapter": 2,
+      "title": "막힌 담을 허심",
+      "actors": [
+        "이스라엘"
+      ],
+      "object": "cross",
+      "ref": "에베소서 2:11-18",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이방인은 전에 그리스도 밖에서 이스라엘 나라 밖의 외인이었어요. 그리스도께서 십자가로 막힌 담을 허물고 둘을 한 새 사람, 한 몸으로 만들어 하나님과 화목하게 하셨어요."
+      ],
+      "study": "이방인은 전에 그리스도 밖에서 이스라엘 나라 밖의 외인이었어요. 그리스도께서 십자가로 막힌 담을 허물고 둘을 한 새 사람, 한 몸으로 만들어 하나님과 화목하게 하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"이스라엘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":"이스라엘"},{"action":"read","duration":1.2,"actor":"이스라엘"},{"action":"look","duration":1.5,"actor":"이스라엘"},{"action":"point","duration":1.8,"actor":"이스라엘"},{"action":"listen","duration":1.5,"actor":"이스라엘"},{"action":"bow","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"에베소서 2:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-eph-2-2",
+      "code": "eph",
+      "chapter": 2,
+      "title": "하나님의 권속",
+      "actors": [
+        "예수"
+      ],
+      "object": "temple",
+      "ref": "에베소서 2:19-22",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이제 이방인도 외인이 아니라 성도와 같은 시민, 하나님의 권속이에요. 사도와 선지자의 터 위에 그리스도 예수를 모퉁잇돌로 지어져 성령 안에서 하나님이 계시는 거룩한 성전이 되어 가요."
+      ],
+      "study": "이제 이방인도 외인이 아니라 성도와 같은 시민, 하나님의 권속이에요. 사도와 선지자의 터 위에 그리스도 예수를 모퉁잇돌로 지어져 성령 안에서 하나님이 계시는 거룩한 성전이 되어 가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"에베소서 2:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "6": [
+      {
+        "name": "예수",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          23,
+          24
+        ]
+      }
+    ]
+  }
+}

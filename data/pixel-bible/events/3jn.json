@@ -1,1 +1,32 @@
-{"book":"3jn","scenes":[],"additionalPeople":{}}
+{
+  "book": "3jn",
+  "scenes": [
+    {
+      "id": "nt-animation-3jn-1",
+      "code": "3jn",
+      "chapter": 1,
+      "title": "나그네 형제들을 도우라",
+      "actors": [
+        "가이오"
+      ],
+      "object": "letter",
+      "ref": "요한삼서 1:5-8",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나그네 된 형제들을 사랑으로 돕고 복음의 동역자로 섬기는 일을 설명해요."
+      ],
+      "study": "나그네 된 형제들을 사랑으로 돕고 복음의 동역자로 섬기는 일을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"가이오","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"letter","beats":[{"action":"listen","duration":1,"actor":"가이오"},{"action":"read","duration":1.2,"actor":"가이오"},{"action":"look","duration":1.5,"actor":"가이오"},{"action":"point","duration":1.8,"actor":"가이오"},{"action":"listen","duration":1.5,"actor":"가이오"},{"action":"bow","duration":1.2,"actor":"가이오"}],"duration":8.2,"support":null,"ref":"요한삼서 1:5-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {}
+}

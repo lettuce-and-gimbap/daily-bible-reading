@@ -65,32 +65,32 @@
     {
       "code": "1th",
       "chapters": 5,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "2th",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "1ti",
       "chapters": 6,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "2ti",
       "chapters": 4,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "tit",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "phm",
       "chapters": 1,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "heb",
@@ -110,7 +110,7 @@
     {
       "code": "2pe",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "1jn",
@@ -125,12 +125,12 @@
     {
       "code": "3jn",
       "chapters": 1,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "jud",
       "chapters": 1,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "rev",
@@ -6894,5 +6894,10 @@
       "actor": "바울",
       "status": "range-and-chapter-name-checked"
     }
-  ]
+  ],
+  "animationReview": {
+    "date": "2026-10-25",
+    "report": "../animation-review-nt.json",
+    "scope": "등록된 신약 장면 196개. 모든 성경 사건을 망라하지 않음."
+  }
 }

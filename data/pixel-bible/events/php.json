@@ -1,1 +1,66 @@
-{"book":"php","scenes":[{"id":"ot-php-1-0","code":"php","chapter":1,"title":"감사와 확신","actors":["바울"],"object":"fruit","ref":"빌립보서 1:1-11","verseNumbers":[1,2,3,4,5,6,7,8,9,10,11],"actions":{},"lines":["해설: 바울은 빌립보 성도들이 첫날부터 복음에 함께한 것을 감사하고 기뻐해요. 선한 일을 시작하신 하나님이 그리스도의 날까지 이루실 것을 확신하고, 사랑이 풍성해지고 흠 없이 의의 열매를 맺도록 기도해요."],"study":"바울은 빌립보 성도들이 첫날부터 복음에 함께한 것을 감사하고 기뻐해요. 선한 일을 시작하신 하나님이 그리스도의 날까지 이루실 것을 확신하고, 사랑이 풍성해지고 흠 없이 의의 열매를 맺도록 기도해요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-php-3-3","code":"php","chapter":3,"title":"하늘의 시민권","actors":["예수"],"object":"boat","ref":"빌립보서 3:17-21","verseNumbers":[17,18,19,20,21],"actions":{},"lines":["해설: 배를 신으로 삼는 십자가의 원수들과 달리 우리의 시민권은 하늘에 있어요. 그곳에서 오실 구원자 주 예수 그리스도가 우리의 낮은 몸을 영광의 몸처럼 바꾸실 거예요."],"study":"배를 신으로 삼는 십자가의 원수들과 달리 우리의 시민권은 하늘에 있어요. 그곳에서 오실 구원자 주 예수 그리스도가 우리의 낮은 몸을 영광의 몸처럼 바꾸실 거예요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{}}
+{
+  "book": "php",
+  "scenes": [
+    {
+      "id": "ot-php-1-0",
+      "code": "php",
+      "chapter": 1,
+      "title": "감사와 확신",
+      "actors": [
+        "바울"
+      ],
+      "object": "fruit",
+      "ref": "빌립보서 1:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바울은 빌립보 성도들이 첫날부터 복음에 함께한 것을 감사하고 기뻐해요. 선한 일을 시작하신 하나님이 그리스도의 날까지 이루실 것을 확신하고, 사랑이 풍성해지고 흠 없이 의의 열매를 맺도록 기도해요."
+      ],
+      "study": "바울은 빌립보 성도들이 첫날부터 복음에 함께한 것을 감사하고 기뻐해요. 선한 일을 시작하신 하나님이 그리스도의 날까지 이루실 것을 확신하고, 사랑이 풍성해지고 흠 없이 의의 열매를 맺도록 기도해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 1:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-php-3-3",
+      "code": "php",
+      "chapter": 3,
+      "title": "하늘의 시민권",
+      "actors": [
+        "바울"
+      ],
+      "object": "scroll",
+      "ref": "빌립보서 3:17-21",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 배를 신으로 삼는 십자가의 원수들과 달리 우리의 시민권은 하늘에 있어요. 그곳에서 오실 구원자 주 예수 그리스도가 우리의 낮은 몸을 영광의 몸처럼 바꾸실 거예요."
+      ],
+      "study": "배를 신으로 삼는 십자가의 원수들과 달리 우리의 시민권은 하늘에 있어요. 그곳에서 오실 구원자 주 예수 그리스도가 우리의 낮은 몸을 영광의 몸처럼 바꾸실 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 3:17-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {}
+}

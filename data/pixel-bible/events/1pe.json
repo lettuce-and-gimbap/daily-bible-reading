@@ -1,1 +1,123 @@
-{"book":"1pe","scenes":[{"id":"ot-1pe-1-0","code":"1pe","chapter":1,"title":"산 소망","actors":["예수"],"object":"gold","ref":"베드로전서 1:1-12","verseNumbers":[1,2,3,4,5,6,7,8,9,10,11,12],"actions":{},"lines":["해설: 하나님이 예수님의 부활로 우리를 다시 낳아 산 소망을 주셨어요. 시련은 불로 금을 단련하듯 믿음을 참되게 하고, 선지자와 천사도 이 구원을 살폈어요."],"study":"하나님이 예수님의 부활로 우리를 다시 낳아 산 소망을 주셨어요. 시련은 불로 금을 단련하듯 믿음을 참되게 하고, 선지자와 천사도 이 구원을 살폈어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-1pe-2-1","code":"1pe","chapter":2,"title":"왕 같은 제사장","actors":["예수"],"object":"stone","ref":"베드로전서 2:4-10","verseNumbers":[4,5,6,7,8,9,10],"actions":{},"lines":["해설: 산 돌이신 예수님께 나아가 우리도 산 돌, 거룩한 제사장이 되어요. 택하신 족속, 왕 같은 제사장, 거룩한 나라로 어둠에서 빛으로 불림받았어요."],"study":"산 돌이신 예수님께 나아가 우리도 산 돌, 거룩한 제사장이 되어요. 택하신 족속, 왕 같은 제사장, 거룩한 나라로 어둠에서 빛으로 불림받았어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-1pe-3-3","code":"1pe","chapter":3,"title":"단번에 죽으신 그리스도","actors":["노아","예수"],"object":"ark-noah","ref":"베드로전서 3:18-22","verseNumbers":[18,19,20,21,22],"actions":{},"lines":["해설: 그리스도는 의로운 분으로서 불의한 우리를 위해 단번에 죽어 하나님께 이끄셨어요. 노아 때의 방주와 세례가 부활로 구원을 보여 주고, 예수님은 하늘 보좌에 계세요."],"study":"그리스도는 의로운 분으로서 불의한 우리를 위해 단번에 죽어 하나님께 이끄셨어요. 노아 때의 방주와 세례가 부활로 구원을 보여 주고, 예수님은 하늘 보좌에 계세요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-1pe-5-0","code":"1pe","chapter":5,"title":"양 무리를 치라","actors":["장로들"],"object":"sheep","ref":"베드로전서 5:1-4","verseNumbers":[1,2,3,4],"actions":{},"lines":["해설: 장로들은 억지가 아니라 자원해서, 군림하지 않고 본이 되어 양 떼를 쳐요. 목자장이 나타나시면 시들지 않는 영광의 관을 받아요."],"study":"장로들은 억지가 아니라 자원해서, 군림하지 않고 본이 되어 양 떼를 쳐요. 목자장이 나타나시면 시들지 않는 영광의 관을 받아요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{}}
+{
+  "book": "1pe",
+  "scenes": [
+    {
+      "id": "ot-1pe-1-0",
+      "code": "1pe",
+      "chapter": 1,
+      "title": "산 소망",
+      "actors": [
+        "예수"
+      ],
+      "object": "gold",
+      "ref": "베드로전서 1:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 예수님의 부활로 우리를 다시 낳아 산 소망을 주셨어요. 시련은 불로 금을 단련하듯 믿음을 참되게 하고, 선지자와 천사도 이 구원을 살폈어요."
+      ],
+      "study": "하나님이 예수님의 부활로 우리를 다시 낳아 산 소망을 주셨어요. 시련은 불로 금을 단련하듯 믿음을 참되게 하고, 선지자와 천사도 이 구원을 살폈어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gold","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 1:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1pe-2-1",
+      "code": "1pe",
+      "chapter": 2,
+      "title": "왕 같은 제사장",
+      "actors": [
+        "예수"
+      ],
+      "object": "stone",
+      "ref": "베드로전서 2:4-10",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 산 돌이신 예수님께 나아가 우리도 산 돌, 거룩한 제사장이 되어요. 택하신 족속, 왕 같은 제사장, 거룩한 나라로 어둠에서 빛으로 불림받았어요."
+      ],
+      "study": "산 돌이신 예수님께 나아가 우리도 산 돌, 거룩한 제사장이 되어요. 택하신 족속, 왕 같은 제사장, 거룩한 나라로 어둠에서 빛으로 불림받았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 2:4-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1pe-3-3",
+      "code": "1pe",
+      "chapter": 3,
+      "title": "단번에 죽으신 그리스도",
+      "actors": [
+        "노아",
+        "예수"
+      ],
+      "object": "ark-noah",
+      "ref": "베드로전서 3:18-22",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 그리스도는 의로운 분으로서 불의한 우리를 위해 단번에 죽어 하나님께 이끄셨어요. 노아 때의 방주와 세례가 부활로 구원을 보여 주고, 예수님은 하늘 보좌에 계세요."
+      ],
+      "study": "그리스도는 의로운 분으로서 불의한 우리를 위해 단번에 죽어 하나님께 이끄셨어요. 노아 때의 방주와 세례가 부활로 구원을 보여 주고, 예수님은 하늘 보좌에 계세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"예수","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"ark-noah","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"베드로전서 3:18-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1pe-5-0",
+      "code": "1pe",
+      "chapter": 5,
+      "title": "양 무리를 치라",
+      "actors": [
+        "장로들"
+      ],
+      "object": "sheep",
+      "ref": "베드로전서 5:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 장로들은 억지가 아니라 자원해서, 군림하지 않고 본이 되어 양 떼를 쳐요. 목자장이 나타나시면 시들지 않는 영광의 관을 받아요."
+      ],
+      "study": "장로들은 억지가 아니라 자원해서, 군림하지 않고 본이 되어 양 떼를 쳐요. 목자장이 나타나시면 시들지 않는 영광의 관을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"장로들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sheep","beats":[{"action":"listen","duration":1,"actor":"장로들"},{"action":"read","duration":1.2,"actor":"장로들"},{"action":"look","duration":1.5,"actor":"장로들"},{"action":"point","duration":1.8,"actor":"장로들"},{"action":"listen","duration":1.5,"actor":"장로들"},{"action":"bow","duration":1.2,"actor":"장로들"}],"duration":8.2,"support":null,"ref":"베드로전서 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {}
+}

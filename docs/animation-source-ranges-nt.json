@@ -1,0 +1,167 @@
+{
+  "method": "비공개 두 역본의 참조 범위 존재 여부와 주석 장 연결 확인. 자동 조회이며 전 구절의 수동 신학 검토를 뜻하지 않음.",
+  "books": [
+    {
+      "code": "mat",
+      "scenes": 22,
+      "passageRangesFound": 22,
+      "missing": []
+    },
+    {
+      "code": "mrk",
+      "scenes": 15,
+      "passageRangesFound": 15,
+      "missing": []
+    },
+    {
+      "code": "luk",
+      "scenes": 22,
+      "passageRangesFound": 22,
+      "missing": []
+    },
+    {
+      "code": "jhn",
+      "scenes": 29,
+      "passageRangesFound": 29,
+      "missing": []
+    },
+    {
+      "code": "act",
+      "scenes": 34,
+      "passageRangesFound": 34,
+      "missing": []
+    },
+    {
+      "code": "rom",
+      "scenes": 5,
+      "passageRangesFound": 5,
+      "missing": []
+    },
+    {
+      "code": "1co",
+      "scenes": 6,
+      "passageRangesFound": 6,
+      "missing": []
+    },
+    {
+      "code": "2co",
+      "scenes": 4,
+      "passageRangesFound": 4,
+      "missing": []
+    },
+    {
+      "code": "gal",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "eph",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "php",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "col",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "1th",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "2th",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "1ti",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "2ti",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "tit",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "phm",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "heb",
+      "scenes": 8,
+      "passageRangesFound": 8,
+      "missing": []
+    },
+    {
+      "code": "jas",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "1pe",
+      "scenes": 4,
+      "passageRangesFound": 4,
+      "missing": []
+    },
+    {
+      "code": "2pe",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "1jn",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "2jn",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "3jn",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "jud",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "rev",
+      "scenes": 27,
+      "passageRangesFound": 27,
+      "missing": []
+    }
+  ]
+}

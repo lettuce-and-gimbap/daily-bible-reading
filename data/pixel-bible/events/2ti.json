@@ -1,1 +1,43 @@
-{"book":"2ti","scenes":[],"additionalPeople":{"4":[{"name":"아굴라","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[19]}]}}
+{
+  "book": "2ti",
+  "scenes": [
+    {
+      "id": "nt-animation-2ti-1",
+      "code": "2ti",
+      "chapter": 3,
+      "title": "배운 말씀 안에 머물기",
+      "actors": [
+        "디모데"
+      ],
+      "object": "book",
+      "ref": "디모데후서 3:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 배우고 확신한 말씀 안에 머물라는 권면과 성경이 사람을 준비시키는 유익을 살펴봐요."
+      ],
+      "study": "배우고 확신한 말씀 안에 머물라는 권면과 성경이 사람을 준비시키는 유익을 살펴봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "서신의 가르침을 설명하는 상징 장면이며 특정 현장 행동의 재현이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"디모데","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"book","beats":[{"action":"listen","duration":1,"actor":"디모데"},{"action":"read","duration":1.2,"actor":"디모데"},{"action":"look","duration":1.5,"actor":"디모데"},{"action":"point","duration":1.8,"actor":"디모데"},{"action":"listen","duration":1.5,"actor":"디모데"},{"action":"bow","duration":1.2,"actor":"디모데"}],"duration":8.2,"support":null,"ref":"디모데후서 3:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "4": [
+      {
+        "name": "아굴라",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          19
+        ]
+      }
+    ]
+  }
+}
