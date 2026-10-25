@@ -1,0 +1,27 @@
+{
+  "authored": 108,
+  "browserVerified": 108,
+  "payloadSha256": "14af45f19a6c90c46b2444d75b50e3c9441a5b580ff90fbe2a304d5e04c32a71",
+  "rendererSha256": "8161682655e5218af56783ee8b2defebc6db8ea271098f1c8111453f8ae24264",
+  "method": "Chromium 7 sampled times, start/action/end/portrait/reduced, desktop and landscape mobile. Automated exceptions check; representative frames inspected separately, not all frames watched manually.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "drawn": 45,
+      "frames": 315,
+      "failures": []
+    },
+    {
+      "chapter": 2,
+      "drawn": 28,
+      "frames": 196,
+      "failures": []
+    },
+    {
+      "chapter": 3,
+      "drawn": 35,
+      "frames": 245,
+      "failures": []
+    }
+  ]
+}

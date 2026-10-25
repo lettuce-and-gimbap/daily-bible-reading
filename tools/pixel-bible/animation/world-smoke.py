@@ -38,7 +38,7 @@ async def main():
    assert await ev("document.querySelector('.pb-verse-playback-controls select')?.options.length>1"),'missing verse selector'
    await ev("document.querySelector('.pb-verse-playback-controls select').value='1';document.querySelector('.pb-verse-playback-controls select').dispatchEvent(new Event('change'))")
    await asyncio.sleep(.2)
-   assert await ev("document.querySelector('.pb-verse-playback-description').textContent.includes('마태복음')"),'missing verse description'
+   assert await ev("(()=>{const select=document.querySelector('.pb-verse-playback-controls select'),description=document.querySelector('.pb-verse-playback-description').textContent;return description.includes(select.selectedOptions[0].textContent.split(' · ')[0]);})()"),'missing selected verse description'
   await ev("document.querySelector('[data-action=\"event-pause\"]').click()")
   first=await ev("document.querySelector('.pb-event-card canvas').toDataURL()")
   await asyncio.sleep(.5)

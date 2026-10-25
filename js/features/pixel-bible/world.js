@@ -1,3 +1,4 @@
+import {loadVerseBook} from './verse-data.js';
 import {eventPlan} from './event-animation/timeline.js';
 import {mountScenePlayback,verseClipsForScene} from './verse-playback.js';
 import {createBgm} from './bgm.js';
@@ -78,7 +79,7 @@ async function enrichBook(code,data){
 
  if(!eventBooks.has(code))eventBooks.set(code,fetch(new URL(`../../../data/pixel-bible/events/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
  const extra=await eventBooks.get(code);if(!extra)return data;
- const verseData=code==='mat'?await fetch(new URL('../../../data/pixel-bible/verse-events/mat.json',import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null):null;
+ const verseData=await loadVerseBook(code);
  const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name)),...(verseData?.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name)&&!(extra.additionalPeople?.[number]||[]).some(q=>q.name===p.name))],verseClips:(verseData?.scenes||[]).filter(s=>s.chapter===Number(number)),eventScenes:[...(extra.scenes||[]),...(extra.restoredScenes||[])].filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
 }
 async function loadBook(code, cachedBook) {

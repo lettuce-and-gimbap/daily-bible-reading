@@ -67,14 +67,14 @@ export function renderPixelEvent(c,scene,actors,seconds=0,{portrait=false,reduce
  const supporting=(scene.requiresObjects||[]).filter(k=>k!==kind).map((k,i)=>({kind:k,x:k==='bed'?(layout.positions.find((_,j)=>j!==layout.leadIndex)?.x||455):405+i*45,y:235}));
  for(const p of plan.props||[])drawProp(c,p.kind,p);
  for(const o of supporting)drawProp(c,o.kind,o);
- const labelRows=[[],[],[]],labels=sample.states.map((state,i)=>{const width=caption(state.person.name).length*13+8,x=clamp(layout.positions[i].x,width/2+4,716-width/2),left=x-width/2,right=x+width/2;let lane=labelRows.findIndex(row=>row.every(b=>right<b.left||left>b.right));if(lane<0)lane=2;labelRows[lane].push({left,right});return {x,y:260+lane*17};});
+ const labelRows=[[],[],[]],labels=sample.states.map((state,i)=>{const width=caption(state.person.name).length*13+8,x=clamp(plan.portrayals?.[state.person.name]?.lie?layout.prop.x:layout.positions[i].x,width/2+4,716-width/2),left=x-width/2,right=x+width/2;let lane=labelRows.findIndex(row=>row.every(b=>right<b.left||left>b.right));if(lane<0)lane=2;labelRows[lane].push({left,right});return {x,y:260+lane*17};});
  sample.states.forEach((state,i)=>{
   if(state.visible===false)return;
   const n=state.person,pos=layout.positions[i];let x=pos.x,y=pos.y;
   if(state.pose.lie){const bed=kind==='bed'?layout.prop:supporting.find(o=>o.kind==='bed');x=bed?bed.x+8:pos.x;y=bed?bed.y+36:pos.y+16;}
-  const portrayal=sample.plan.portrayals?.[n.name]||{};if(portrayal.lie){x=layout.prop.x;y=layout.prop.y-14;}if(portrayal.carryBy){const carrier=layout.positions[sample.states.findIndex(s=>s.person.name===portrayal.carryBy)];if(carrier){x=carrier.x+12;y=carrier.y-40;}}let style=characterStyle(n.name,i,n.role,n.refs||[],n.creature||false);
+  const portrayal=sample.plan.portrayals?.[n.name]||{};if(portrayal.lie){x=layout.prop.x;y=layout.prop.y+(portrayal.lieOffset??-14);}if(portrayal.carryBy){const carrier=layout.positions[sample.states.findIndex(s=>s.person.name===portrayal.carryBy)];if(carrier){x=carrier.x+12;y=carrier.y-40;}}let style=characterStyle(n.name,i,n.role,n.refs||[],n.creature||false);
   if(sample.plan.motif==='vision-robes'&&sample.index>=3||plan.whiteAfter!==undefined&&state.active&&sample.index>=plan.whiteAfter)style={...style,coat:'#f0efda'};
-  for(let copy=0;copy<(portrayal.copies||1);copy++)drawPixelCharacter(c,portrayal.hideBeard?{...style,beard:false}:style,x+(copy-((portrayal.copies||1)-1)/2)*70,y,{scale:3*(portrayal.scale||1),direction:pos.direction,interaction:portrayal.lie?{...state.pose,lie:true,recline:1}:portrayal.sit?{...state.pose,sit:true}:state.pose,walkFrame:state.walkFrame,expression:state.expression});
+  for(let copy=0;copy<(portrayal.copies||1);copy++)drawPixelCharacter(c,portrayal.hideBeard?{...style,beard:false}:style,x+(portrayal.copyOffsets?.[copy]?.x??(copy-((portrayal.copies||1)-1)/2)*70),y+(portrayal.copyOffsets?.[copy]?.y||0),{scale:3*(portrayal.scale||1),direction:pos.direction,interaction:portrayal.lie?{...state.pose,lie:true,recline:1}:portrayal.sit?{...state.pose,sit:true}:state.pose,walkFrame:state.walkFrame,expression:state.expression});
  });
  if(portable&&plan.motif!=='baptism'&&!(['sling','arrow'].includes(sample.plan.effect)&&sample.index>=4))drawProp(c,kind,propPosition,{angle:propAngle});
  drawEffects(c,sample,layout);drawVerseEffects(c,sample,layout);

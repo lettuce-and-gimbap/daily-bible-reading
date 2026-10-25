@@ -1,13 +1,14 @@
 <!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>절별 픽셀 연출 검수</title><style>@font-face{font-family:DungGeunMo;src:url('../../assets/fonts/DungGeunMo.ttf')}body{margin:0;background:#25313a;color:#f5ead1;font:14px DungGeunMo,monospace}header{padding:12px;position:sticky;top:0;background:#142d37}button,select{font:inherit;padding:10px}main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px}article{padding:10px;border:1px solid #a79569;min-width:0}canvas{display:block;width:100%;image-rendering:pixelated}h3{font-size:14px;margin:5px}@media(max-width:650px){main{grid-template-columns:1fr}}</style><header><select id="chapter"></select><span id="status"></span></header><main></main><script type="module">
 import {renderPixelEvent} from '../../js/features/pixel-bible/pixel-event.js';
 import {sampleEvent} from '../../js/features/pixel-bible/event-animation/timeline.js';
-const data=await fetch('../../data/pixel-bible/verse-events/mat.json').then(r=>r.json()),summary=await fetch('../../data/summary/mat.json').then(r=>r.json()),main=document.querySelector('main');
-const chapters=[...new Set(data.scenes.map(s=>s.chapter))];for(const chapter of chapters){const o=document.createElement('option');o.value=chapter;o.textContent=`마태복음 ${chapter}장`;document.querySelector('select').append(o);}
-window.verseReview={chapters,async render(chapter,{time=4.5,ids=null,portrait=false,reduced=false}={}){
+const code=new URLSearchParams(location.search).get('book')||'mat';if(!['mat','mrk'].includes(code))throw Error('Unauthored book');
+const data=await fetch(`../../data/pixel-bible/verse-events/${code}.json`).then(r=>r.json()),summary=await fetch(`../../data/summary/${code}.json`).then(r=>r.json()),main=document.querySelector('main');
+const chapters=[...new Set(data.scenes.map(s=>s.chapter))];for(const chapter of chapters){const o=document.createElement('option');o.value=chapter;o.textContent=`${code==='mat'?'마태복음':'마가복음'} ${chapter}장`;document.querySelector('select').append(o);}
+window.verseReview={code,chapters,async render(chapter,{time=4.5,ids=null,portrait=false,reduced=false}={}){
  main.replaceChildren();const failures=[];let frames=0,drawn=0;
  for(const scene of data.scenes.filter(s=>s.chapter===Number(chapter)&&(!ids||ids.includes(s.id)))){
   const card=document.createElement('article'),title=document.createElement('h3');title.textContent=scene.ref+' · '+scene.title;card.append(title);const canvas=document.createElement('canvas');canvas.width=720;canvas.height=300;card.append(canvas);main.append(card);
-  const cast=scene.actors.map(name=>({...summary.chapters[scene.chapter].people.find(p=>p.name===name),name,refs:[scene.ref]}));
+  const cast=scene.actors.map(name=>({...[...summary.chapters[scene.chapter].people,...(data.additionalPeople[scene.chapter]||[])].find(p=>p.name===name),name,refs:[scene.ref]}));
   try{const c=canvas.getContext('2d');for(const t of [0,1,2.5,4,6,8.2,20]){renderPixelEvent(c,scene,cast,t,{portrait,reduced});const s=sampleEvent(scene,cast,t);for(const st of s.states)if(!Number.isFinite(st.travel)||!st.pose.eventArms.flat().every(Number.isFinite))throw Error('Invalid coordinates');frames++;}renderPixelEvent(c,scene,cast,time,{portrait,reduced});drawn++;}catch(e){failures.push({id:scene.id,error:String(e.stack||e)});}
  }
  document.querySelector('#status').textContent=`${drawn}절 · 오류 ${failures.length}`;document.body.dataset.ready='true';return {chapter,drawn,frames,failures};
