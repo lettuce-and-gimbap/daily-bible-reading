@@ -103,12 +103,12 @@ function versesRef(chapter, nums) {
 // 예) " 행하지 아니하리라↵13그러면 누구나 다 이 일에 관" → 신명기 17:13 개역개정 + 쉬운성경 전체
 // 붙이는 역본은 config.js의 QUOTE_VERSIONS. 순서:
 //   1) 복사한 글에 "신명기 17:13"이 있으면 그 절
-//   2) 몇 장인지 짐작 가는 곳("신명기 17장" 제목 줄, 통독 화면에서 보고 있는 장)의 갓피아 본문과 맞대어 봄
-//   3) 못 찾으면 줄마다 본문 검색(worker/의 /search)으로 장을 찾고, 그 장의 갓피아 본문과 맞대어 절을 정확히 잡음
+//   2) 짐작 가는 장(제목 줄, 통독 화면의 장)의 자체 DB 본문과 대조함
+//   3) 못 찾으면 외부 검색(worker의 /search)으로 후보 장을 찾고, 자체 DB 본문과 대조해 절을 잡음
 // 서버가 없거나 끝내 못 찾으면 null → 복사한 그대로 붙임
 const privateChapterCache = {};
 
-// Worker의 비공개 저장소에서 선택한 장과 역본만 읽는다.
+// 통독 본문은 자체 구축한 비공개 DB에서만 읽는다. DB 오류를 갓피아 중계로 숨기지 않는다.
 async function chapterVerses(idx, ver, ver2, ver3) {
   const { book, chap } = CHAPTERS[idx];
   const editions = [...new Set([ver, ver2, ver3].filter(Boolean))];
@@ -119,7 +119,13 @@ async function chapterVerses(idx, ver, ver2, ver3) {
     if (editions[2]) q.set('ver3', editions[2]);
     privateChapterCache[key] = fetch(`${PUSH_SERVER}/scripture?${q}`)
       .then((res) => res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`)))
-      .then((data) => data.rows)
+      .then((data) => {
+        if (data.book !== book.code || data.chapter !== chap || !Array.isArray(data.rows) ||
+            editions.some((edition) => !data.rows.some((row) => row.ver === edition))) {
+          throw new Error('자체 본문 DB 응답이 올바르지 않습니다.');
+        }
+        return data.rows;
+      })
       .catch((error) => { delete privateChapterCache[key]; throw error; });
   }
   return privateChapterCache[key];
