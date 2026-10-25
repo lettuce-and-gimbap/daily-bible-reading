@@ -180,8 +180,6 @@ export async function mountPixelWorld(shell, options) {
     <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 0.4초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
-    <div class="pb-camera-controls" aria-label="월드 시점"><button class="pb-button" data-action="camera-home">중앙으로</button><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button></div>
-
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
 `);
   const abort = new AbortController(), signal = abort.signal;
@@ -736,7 +734,7 @@ export async function mountPixelWorld(shell, options) {
     if(!held.active){if(!cancel)requestPersonal(held.n);suppressClick=true;return;}
     suppressClick=true;
     const n=held.n,p=coordinates(e),under=document.elementFromPoint(e.clientX,e.clientY);
-    if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle,.pb-camera-controls')){n.x=held.from.x;n.y=held.from.y;n.idle=5;Object.assign(camera,held.fromCamera);syncCamera();draw();return;}
+    if(cancel||!options.allowed()||under?.closest('.pb-side,.pb-world-head,.pb-side-toggle')){n.x=held.from.x;n.y=held.from.y;n.idle=5;Object.assign(camera,held.fromCamera);syncCamera();draw();return;}
     held.p=p;const origin=grabbedOrigin(held);
     const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(origin.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(origin.y)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
@@ -879,7 +877,6 @@ export async function mountPixelWorld(shell, options) {
     if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;if(activeEvent.paused&&sound)speechSynthesis.cancel();closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
 
     if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);setMusicState(b,on);try{localStorage.setItem('pixel-bible:bgm-enabled',String(on));}catch(_){} }catch(error){say(error.message);}return;}
-    if(action==='camera-home'){Object.assign(camera,homeCamera());constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
     }

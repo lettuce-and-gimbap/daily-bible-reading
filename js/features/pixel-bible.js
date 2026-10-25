@@ -79,8 +79,7 @@ async function pixelBibleLandscape(shell, nativeFullscreen = true) {
 async function openPixelBible(scope = {}) {
   if (pixelBibleOpening || pixelBibleDialog) return;
   pixelBibleOpening = true;
-  const title=scope.chapters?'QT 본문':'오늘의 픽셀 월드';
-  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><b>PIXEL BIBLE <small>${title}</small></b><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
+  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
   pixelBibleLandscape(shell);
   try {
