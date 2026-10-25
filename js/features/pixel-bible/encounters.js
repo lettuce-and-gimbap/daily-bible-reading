@@ -49,7 +49,7 @@ export class EncounterDirector {
   }
   // Unknown relationships get a brief everyday greeting, never an invented
   // biblical conflict. Spatial buckets keep crowded casts from an all-pairs scan.
-  if(!this.active.length&&now>=this.nextGreeting){
+  if(!this.active.length){
    const humans=npcs.filter(n=>!n.creature&&!deny.has(n)&&!n.encounter&&!n.usingObject&&!n.task);
    const cells=new Map();for(const n of humans){const cell=`${Math.round(n.x)},${Math.round(n.y)}`;if(!cells.has(cell))cells.set(cell,[]);cells.get(cell).push(n);}
    let started=false;
@@ -64,7 +64,7 @@ export class EncounterDirector {
       const directions=opposedDirections(a,b);if(!directions)continue;
       for(const [i,n]of [a,b].entries()){n.path=[];n.idle=6;n.direction=directions[i];n.encounter=true;}
       const lines=[{speaker:a,target:b,text:this.random()<.5?'어… 안녕.':'잠깐 지나갈게.',origin:'general',kind:'pair'},{speaker:b,target:a,text:'응, 잘 가.',origin:'general',kind:'pair'}];
-      this.active.push({id,people:[a,b],lines,started:now,until:now+5800});this.nextGreeting=now+20000;started=true;break;
+      this.active.push({id,people:[a,b],lines,started:now,until:now+5800});this.nextGreeting=now;started=true;break;
      }if(started)break;
     }
    }

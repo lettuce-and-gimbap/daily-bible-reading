@@ -214,13 +214,19 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
    else c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);
   };const O="#393e3c";
   if(!frame?.held)r(-7,4,15,2,"#193b3533");
-  if(descriptor&&drawCatalogDetail(r,originalKind,family,O)){c.restore();return;}
+  if(descriptor&&drawCatalogDetail(r,originalKind,family,O,frame)){c.restore();return;}
   if(o.kind==="field") {
     r(-12,-3,25,10,O);r(-11,-2,23,8,"#a68258");
     for(let i=0;i<5;i++){const p=-9+i*5;r(p,-9,1,12,"#795e40");r(p-1,-10,3,6,"#e4b95f");r(p-2,-9,1,3,"#f7dc8d");r(p+2,-7,1,3,"#f7dc8d");}
   } else if(o.kind==="tree") {
-    r(-2,-7,5,12,O);r(-1,-7,3,11,"#a18159");r(-7,-22,14,2,O);r(-10,-20,20,3,O);r(-12,-17,24,9,O);r(-10,-8,20,3,O);r(-6,-5,12,1,O);
-    r(-7,-20,14,2,"#61946c");r(-9,-18,18,3,"#61946c");r(-11,-15,22,7,"#54865f");r(-9,-8,18,2,"#54865f");r(-7,-18,7,3,"#80ac77");r(-9,-14,5,3,"#80ac77");r(4,-8,4,2,"#427454");
+    const motion=frame?.pose,phase=motion?.phase||0,active=motion&&["shake","kick","bonk","fruit"].includes(motion.actual);
+    const sway=active&&[1,2].includes(phase)?(phase===1?-2:2):0;
+    r(-2,-7,5,12,O);r(-1,-7,3,11,"#a18159");
+    r(-7+sway,-22,14,2,O);r(-10+sway,-20,20,3,O);r(-12+sway,-17,24,9,O);r(-10+sway,-8,20,3,O);r(-6+sway,-5,12,1,O);
+    r(-7+sway,-20,14,2,"#61946c");r(-9+sway,-18,18,3,"#61946c");r(-11+sway,-15,22,7,"#54865f");r(-9+sway,-8,18,2,"#54865f");r(-7+sway,-18,7,3,"#80ac77");r(-9+sway,-14,5,3,"#80ac77");r(4+sway,-8,4,2,"#427454");
+    const falling=active&&["kick","bonk","shake","fruit"].includes(motion.actual)&&phase===2;
+    if(falling){const drop=Math.floor((motion.within||0)*12);for(const [fx,fy]of [[-6,-12],[5,-15],[8,-9]]){const yy=fy+drop*2;r(fx+sway,yy,3,3,"#d7864d");r(fx+sway+1,yy-1,1,1,"#66844e");}}
+    else if(active)for(const [fx,fy]of [[-6,-12],[5,-15],[8,-9]]){r(fx+sway,fy,3,3,"#d7864d");r(fx+sway+1,fy-1,1,1,"#66844e");}
   } else if(o.kind==="bench") {
     r(-9,-4,18,5,O);r(-8,-3,16,3,"#d1ad78");r(-7,1,2,5,O);r(5,1,2,5,O);r(-8,-10,2,6,O);r(6,-10,2,6,O);r(-7,-10,14,3,O);r(-6,-9,12,1,"#d1ad78");
   } else if(o.kind==="water") {

@@ -206,6 +206,7 @@ export async function mountPixelWorld(shell, options) {
   const encounters=new EncounterDirector(chapterData,dialogueContext,{maxActive:1});let encounterLines=[];const encounterBubbles=new Map();
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  function dismissAllBubbles(){hideSpeech();encounters.clear();encounterLines=[];for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}encounterBubbles.clear();}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
   function updateSpeech(now){
     const enabled=!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!objectHold?.active&&!placing&&!removing&&!shell.querySelector('.pb-design,.pb-scripture');
@@ -780,6 +781,8 @@ export async function mountPixelWorld(shell, options) {
     pendingEvent=null;
     const n=npcs[selected];
     if (o) {if(n)interact(n,o);return;}
+    // 배경 탭은 현재 말풍선을 즉시 닫는다.
+    dismissAllBubbles();
     // 배경 클릭은 이동 명령이 아니다. 기존 자연 이동을 유지하며 선택만 해제한다.
     if(n)n.idle=Math.min(n.idle,1);
     select(-1);draw();
@@ -1018,7 +1021,7 @@ export async function mountPixelWorld(shell, options) {
         if(n.objectScene){const scene=n.objectScene;n.objectScene=null;
           objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,detailText:scene.study||scene.lines.join(' '),kind:'solo',object:target};
         }
-        if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="right"; }
+        if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="down"; }
       } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
         n.action="";n.usingObject=null;n.interaction=null;n.idle=3+Math.random()*5;
         if(!reduced&&!pendingTalk&&n.creature?.body!=='fish') {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
