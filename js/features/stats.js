@@ -2,7 +2,6 @@
 
 let calMonth = todayStr().slice(0, 7); // 달력에 보이는 달 "YYYY-MM"
 let calSel = todayStr(); // 달력에서 고른 날
-let readMode = "read"; // 읽은 기록 보기: "read" 통독 · "qt" QT (섞지 않고 따로)
 let bookSel = null; // 권별 진행에서 고른 권 코드
 let glanceMode = "read"; // 통독 현황 한눈에 보기: "read" 통독 · "qt" QT 본문 범위 (따로 전환)
 let qtBookSel = null; // QT 모드에서 고른 권 코드
@@ -74,27 +73,6 @@ function renderStats() {
       </ul>
     </article>`;
 
-  // 달력
-  const [cy, cm] = calMonth.split("-").map(Number);
-  const firstDay = new Date(cy, cm - 1, 1);
-  const daysInMonth = new Date(cy, cm, 0).getDate();
-  let cells = "";
-  for (let i = 0; i < firstDay.getDay(); i++) cells += `<div class="cell blank"></div>`;
-  let monthRead = 0, monthQt = 0;
-  for (let d = 1; d <= daysInMonth; d++) {
-    const ds = `${calMonth}-${String(d).padStart(2, "0")}`;
-    const n = (byDate[ds] || []).length;
-    const q = qtDates.has(ds);
-    if (n) monthRead++;
-    if (q) monthQt++;
-    const readCls = n === 0 ? "" : n >= perDay ? "full" : "part";
-    cells += `<button class="cell ${ds === today ? "today" : ""} ${ds > today ? "future" : ""} ${ds === calSel ? "sel" : ""}" data-date="${ds}" ${ds > today ? "disabled" : ""}
-      title="${ds}${n ? ` · 통독 ${n}장` : ""}${q ? " · QT 완료" : ""}">
-      <span class="d">${d}</span>
-      <span class="marks"><i class="m-read ${readCls}"></i><i class="m-qt ${q ? "on" : ""}"></i></span>
-    </button>`;
-  }
-
   const copied = copiedByDate();
 
   if (statsSubpage) {
@@ -104,36 +82,16 @@ function renderStats() {
   app.innerHTML = `
     ${pixelBibleBannerHtml()}
     ${changelogCardHtml()}
-    <div class="stats-page-links" aria-label="관리 설정">
-      <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
-      <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
-    </div>
     <section class="hero-row">${readCard}${qtCard}</section>
 
     ${glanceCardHtml()}
 
-    <section class="card">
-      <div class="cal-head">
-        <button class="icon-btn" id="cal-prev" aria-label="이전 달">‹</button>
-        <h2>${cy}년 ${cm}월</h2>
-        <button class="icon-btn" id="cal-next" aria-label="다음 달" ${calMonth >= thisMonth ? "disabled" : ""}>›</button>
-      </div>
-      <div class="seg wide read-mode" role="group" aria-label="읽은 기록 보기">
-        ${[["read", "📖 통독"], ["qt", "🙏 QT"]].map(([v, l]) => `<button class="${readMode === v ? "on" : ""}" data-rmode="${v}">${l}</button>`).join("")}
-      </div>
-      <div class="cal mode-${readMode}">
-        ${WEEK.map((w) => `<div class="wk">${w}</div>`).join("")}
-        ${cells}
-      </div>
-      <div class="cal-foot">
-        <span class="legend"><i class="m-read full"></i>통독 완료 <i class="m-read part"></i>일부 <i class="m-qt on"></i>QT</span>
-        <span class="muted small">이 달 통독 <b>${monthRead}</b>일 · QT <b>${monthQt}</b>일</span>
-      </div>
-      <div class="day-detail" id="day-detail">${dayDetailHtml(calSel, byDate, copiedBySource(readMode), readMode)}</div>
-    </section>
-
     ${pr ? planTableCardHtml(pr) : ""}
     ${ScriptureStudy.highlightLibraryHtml()}
+    <div class="stats-page-links" aria-label="관리 설정">
+      <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
+      <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
+    </div>
     `;
 
   ScriptureStudy.bindHighlightLibrary(app);
@@ -142,25 +100,6 @@ function renderStats() {
     renderStats();
   }));
 
-  const shiftMonth = (n) => {
-    const d = new Date(cy, cm - 1 + n, 1);
-    calMonth = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
-    renderStats();
-  };
-  $("#cal-prev").addEventListener("click", () => shiftMonth(-1));
-  $("#cal-next").addEventListener("click", () => shiftMonth(1));
-  $(".cal").addEventListener("click", (e) => {
-    const c = e.target.closest("[data-date]");
-    if (!c || c.disabled) return;
-    calSel = c.dataset.date;
-    app.querySelectorAll(".cal .cell.sel").forEach((x) => x.classList.remove("sel"));
-    c.classList.add("sel");
-    $("#day-detail").innerHTML = dayDetailHtml(calSel, byDate, copiedBySource(readMode), readMode);
-  });
-  app.querySelectorAll("[data-rmode]").forEach((b) => b.addEventListener("click", () => {
-    readMode = b.dataset.rmode;
-    renderStats();
-  }));
   bindGlanceCard();
   const books = $("#glance-card");
   if (books) books.addEventListener("click", (e) => {
@@ -550,7 +489,33 @@ function glanceSwitchHtml() {
 }
 
 function glanceBodyHtml(g = glanceStats()) {
-  return `${glanceSwitchHtml()}${glanceMode === "qt" ? `<div id="glance-qt"><p class="muted small">QT 본문 범위를 모으는 중…</p></div>` : glanceReadHtml(g)}`;
+  return `${glanceSwitchHtml()}${glanceMode === "qt" ? `<div id="glance-qt"><p class="muted small">QT 본문 범위를 모으는 중…</p></div>` : glanceReadHtml(g)}${calendarCardHtml(readDates(), qtCountDates(), todayStr())}`;
+}
+
+function calendarCardHtml(byDate, qtDates, today) {
+  const [year, month] = calMonth.split("-").map(Number);
+  const firstDay = new Date(year, month - 1, 1).getDay();
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const isQt = glanceMode === "qt";
+  const perDay = state.plan?.perDay || 5;
+  let recordedDays = 0, cells = "";
+  for (let i = 0; i < firstDay; i++) cells += `<div class="cell blank" aria-hidden="true"></div>`;
+  for (let day = 1; day <= daysInMonth; day++) {
+    const date = `${calMonth}-${String(day).padStart(2, "0")}`;
+    const count = (byDate[date] || []).length, qtDone = qtDates.has(date);
+    const active = isQt ? qtDone : count > 0;
+    if (active) recordedDays++;
+    const mark = isQt ? `<i class="m-qt ${qtDone ? "on" : ""}"></i>` : `<i class="m-read ${count === 0 ? "" : count >= perDay ? "full" : "part"}"></i>`;
+    cells += `<button class="cell ${date === today ? "today" : ""} ${date > today ? "future" : ""} ${date === calSel ? "sel" : ""}" data-date="${date}" ${date > today ? "disabled" : ""} title="${date}${count ? ` · 통독 ${count}장` : ""}${qtDone ? " · QT 완료" : ""}"><span class="d">${day}</span><span class="marks">${mark}</span></button>`;
+  }
+  return `<section class="glance-calendar" id="glance-calendar" aria-label="${isQt ? "QT 기록" : "읽은 날"}">
+    <header class="glance-calendar-head"><div><h3>${isQt ? "QT 기록" : "읽은 날"}</h3><small>${recordedDays}일 기록 · 날짜를 누르면 상세 내용을 볼 수 있어요</small></div>
+      <div class="cal-month-nav"><button class="icon-btn" data-cal-shift="-1" aria-label="이전 달">‹</button><b>${year}년 ${month}월</b><button class="icon-btn" data-cal-shift="1" aria-label="다음 달" ${calMonth >= today.slice(0, 7) ? "disabled" : ""}>›</button></div></header>
+    <div class="cal mode-${glanceMode}">${WEEK.map((w) => `<div class="wk">${w}</div>`).join("")}${cells}</div>
+    <div class="cal-foot"><span class="legend">${isQt ? `<i class="m-qt on"></i>QT 완료` : `<i class="m-read full"></i>하루 목표 달성 <i class="m-read part"></i>일부 읽음`}</span>
+      <span class="muted small">${month}월 ${isQt ? "QT" : "통독"} <b>${recordedDays}</b>일</span></div>
+    <div class="day-detail" id="day-detail" hidden aria-live="polite"></div>
+  </section>`;
 }
 
 function glanceReadHtml(g) {
@@ -646,6 +611,24 @@ function bindGlanceCard() {
     if (m) {
       glanceMode = m.dataset.gmode;
       redrawGlanceBody();
+      return;
+    }
+    const monthShift = e.target.closest("[data-cal-shift]");
+    if (monthShift) {
+      const [year, month] = calMonth.split("-").map(Number), next = new Date(year, month - 1 + Number(monthShift.dataset.calShift), 1);
+      calMonth = `${next.getFullYear()}-${String(next.getMonth() + 1).padStart(2, "0")}`;
+      const oldCalendar = $("#glance-calendar");
+      if (oldCalendar) oldCalendar.outerHTML = calendarCardHtml(readDates(), qtCountDates(), todayStr());
+      return;
+    }
+    const dateCell = e.target.closest("[data-date]");
+    if (dateCell && !dateCell.disabled) {
+      calSel = dateCell.dataset.date;
+      $("#glance-calendar .cell.sel")?.classList.remove("sel");
+      dateCell.classList.add("sel");
+      const detail = $("#day-detail");
+      detail.innerHTML = dayDetailHtml(calSel, readDates(), copiedBySource(glanceMode), glanceMode);
+      detail.hidden = false;
       return;
     }
     const q = e.target.closest("[data-qbook]");
