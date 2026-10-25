@@ -12,6 +12,7 @@ import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
+import {captureBubblePlacement,pinnedBubblePlacement} from './bubble-position.js';
 import {creatureCanUse} from './creatures.js';
 import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
@@ -201,7 +202,7 @@ export async function mountPixelWorld(shell, options) {
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
-  const speech=new SpeechDirector({now:performance.now()-3000});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
+  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
   const encounters=new EncounterDirector(chapterData,dialogueContext,{maxActive:1});let encounterLines=[];const encounterBubbles=new Map();
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
@@ -318,6 +319,12 @@ export async function mountPixelWorld(shell, options) {
   function placeAboveHead(el,n,r,v,width,height,placed=[]){
     const anchor=interactionAnchor(n,TILE);
     const scale=v.scale*r.width/canvas.width,x=(anchor.x*v.scale+v.x)*r.width/canvas.width,y=(anchor.y*v.scale+v.y)*r.height/canvas.height;
+    if(el._layoutPin){
+      const box=pinnedBubblePlacement(el._layoutPin,x,y,width,height,r.width,r.height);
+      el.style.left=`${Math.round(box.left)}px`;el.style.top=`${Math.round(box.top)}px`;el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-box.left))}px`);
+      el.dataset.below=box.side==='bottom'?'true':'false';if(['left','right'].includes(box.side))el.dataset.side=box.side;else delete el.dataset.side;
+      el.style.visibility='';return box;
+    }
     const body=physiqueFor(n.name,n.role,n.refs),sprite={left:x-22*scale*body.width,right:x+22*scale*body.width,top:y-76*scale*body.height,bottom:y-24*scale*body.height};
     const gap=8,margin=4,characters=npcs.filter(other=>!other.creature||other.creature.kind!=='plant').map(other=>{
       const a=interactionAnchor(other,TILE),ox=(a.x*v.scale+v.x)*r.width/canvas.width,oy=(a.y*v.scale+v.y)*r.height/canvas.height,p=physiqueFor(other.name,other.role,other.refs);
@@ -343,6 +350,7 @@ export async function mountPixelWorld(shell, options) {
     el.style.left=`${Math.round(best.left)}px`;el.style.top=`${Math.round(best.top)}px`;
     el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-best.left))}px`);
     el.dataset.below=best.side==='bottom'?'true':'false';if(['left','right'].includes(best.side))el.dataset.side=best.side;else delete el.dataset.side;
+    if(el.classList.contains('pb-encounter'))el._layoutPin=captureBubblePlacement(x,y,best.left,best.top,best.side);
     el.style.visibility='';
     return {left:best.left,right:best.right,top:best.top,bottom:best.bottom};
   }

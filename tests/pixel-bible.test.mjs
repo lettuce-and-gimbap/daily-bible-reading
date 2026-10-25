@@ -55,14 +55,14 @@ test('긴 해설은 짧은 첫 문장만 말풍선에 표시하고 원문 맥락
  assert.equal(speechView({text:unbroken}).detailText,unbroken);
 });
 
-test('자동 대사와 클릭 대사 모두 길이 제한과 5초 표시 후 3초 공백을 지킨다',async()=>{
+test('자동 대사와 클릭 대사는 5초 표시 후 5초 쉰다',async()=>{
  const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
  const director=new SpeechDirector({now:0,random:()=>0});
  const line={id:'long',speaker:{},text:'장 설명 '.repeat(300)};
- assert.ok(director.tick(3000,[line]).text.length<=BUBBLE_LIMIT);
- assert.equal(director.tick(8000,[line]),null);
- assert.equal(director.tick(10999,[line]),null);
- assert.ok(director.tick(11000,[line]));
+ assert.ok(director.tick(5000,[line]).text.length<=BUBBLE_LIMIT);
+ assert.equal(director.tick(10000,[line]),null);
+ assert.equal(director.tick(14999,[line]),null);
+ assert.ok(director.tick(15000,[line]));
  assert.ok(director.interrupt(line,11001).text.length<=BUBBLE_LIMIT);
  assert.equal(director.current.detailText,line.text.trim());
 });
@@ -114,6 +114,15 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
  assert.equal(runningIntoObject({x:.3,y:0},[{kind:'bench',x:1,y:0}],actor)?.kind,'bench');
  assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).sit,true);
  assert.notEqual(swimPose(0).handY,swimPose(.4).handY);
+});
+
+test('상호작용 말풍선은 첫 배치 방향을 유지하며 인물이나 카메라 움직임에 맞춰 함께 이동한다',async()=>{
+ const {captureBubblePlacement,pinnedBubblePlacement}=await import('../js/features/pixel-bible/bubble-position.js');
+ const pin=captureBubblePlacement(300,240,170,100,'left');
+ const moved=pinnedBubblePlacement(pin,305,240,130,90,900,600);
+ assert.equal(moved.side,'left');assert.deepEqual([moved.left,moved.top],[175,100]);
+ const cameraShifted=pinnedBubblePlacement(pin,355,280,130,90,900,600);
+ assert.equal(cameraShifted.side,'left');assert.deepEqual([cameraShifted.left,cameraShifted.top],[225,140]);
 });
 
 test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물 타일 경계를 제공한다',async()=>{
@@ -228,27 +237,27 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
-test('말풍선은 한 슬롯에서 5초 표시하고 실제 숨긴 시점부터 3초를 쉰다',async()=>{
+test('말풍선은 한 슬롯에서 5초 표시하고 실제 숨긴 시점부터 5초를 쉰다',async()=>{
  const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
  const s=new SpeechDirector({now:0,random:()=>0});const a={id:'a',speaker:{name:'가'},kind:'solo'},b={id:'b',speaker:{name:'나'},kind:'solo'};
- assert.equal(s.tick(2999,[a,b]),null);assert.equal(s.tick(3000,[a,b]).id,'a');
- assert.equal(s.tick(7999,[b]).id,'a');assert.equal(s.tick(8000,[b]),null);
- assert.equal(s.tick(10999,[b]),null);assert.equal(s.tick(11000,[a,b]).id,'b');
+ assert.equal(s.tick(4999,[a,b]),null);assert.equal(s.tick(5000,[a,b]).id,'a');
+ assert.equal(s.tick(9999,[b]).id,'a');assert.equal(s.tick(10000,[b]),null);
+ assert.equal(s.tick(14999,[b]),null);assert.equal(s.tick(15000,[a,b]).id,'b');
  // 탭 복귀 등으로 만료를 늦게 관측해도 새로 사라진 순간부터 센다.
- assert.equal(s.tick(20000,[a]),null);assert.equal(s.tick(22999,[a]),null);assert.equal(s.tick(23000,[a]).id,'a');
- assert.equal(s.tick(23100,[a],false),null);assert.equal(s.current,null);
- assert.equal(s.tick(26099,[b]),null);assert.equal(s.tick(26100,[b]).id,'b');
+ assert.equal(s.tick(25000,[a]),null);assert.equal(s.tick(29999,[a]),null);assert.equal(s.tick(30000,[a]).id,'a');
+ assert.equal(s.tick(30100,[a],false),null);assert.equal(s.current,null);
+ assert.equal(s.tick(35099,[b]),null);assert.equal(s.tick(35100,[b]).id,'b');
 });
 
-test('클릭은 현재 대사를 즉시 교체하고 새 5초 종료 후 3초 뒤 자동 대사를 허용한다',async()=>{
+test('클릭은 현재 대사를 즉시 교체하고 새 5초 종료 후 5초 뒤 자동 대사를 허용한다',async()=>{
  const {SpeechDirector}=await import('../js/features/pixel-bible/dialogue.js');
  const s=new SpeechDirector({random:()=>0});const a={id:'a',speaker:{},kind:'solo'},b={id:'b',speaker:{},kind:'solo'},c={id:'c',speaker:{},kind:'solo'};
- assert.equal(s.tick(3000,[a]).id,'a');
- assert.equal(s.interrupt(b,4500).id,'b');assert.equal(s.tick(4501,[c]).id,'b');
- assert.equal(s.tick(9499,[c]).id,'b');assert.equal(s.tick(9500,[c]),null);
- assert.equal(s.tick(12499,[c]),null);assert.equal(s.tick(12500,[c]).id,'c');
+ assert.equal(s.tick(5000,[a]).id,'a');
+ assert.equal(s.interrupt(b,6500).id,'b');assert.equal(s.tick(6501,[c]).id,'b');
+ assert.equal(s.tick(11499,[c]).id,'b');assert.equal(s.tick(11500,[c]),null);
+ assert.equal(s.tick(16499,[c]),null);assert.equal(s.tick(16500,[c]).id,'c');
  // 공백 시간과 같은 인물 재클릭도 즉시 표시하고 5초를 다시 센다.
- s.interrupt(c,12600);assert.equal(s.current.started,12600);assert.equal(s.current.until,17600);
+ s.interrupt(c,16600);assert.equal(s.current.started,16600);assert.equal(s.current.until,21600);
 });
 
 test('이세벨의 대상별 대사를 구분하고 거리·현재 본문·이동 상태를 확인한다',async()=>{
@@ -376,7 +385,7 @@ test('같은 인물의 같은 클릭 대사를 즉시 다시 표시할 수 있�
  const s=new SpeechDirector({random:()=>0});const a={id:'same-line',speaker:{name:'가'},text:'같은 문장',kind:'solo'};
  s.interrupt(a,100);assert.equal(s.current.id,a.id);
  s.interrupt(a,200);assert.equal(s.current.text,a.text);assert.equal(s.current.until,5200);
- assert.equal(s.tick(5200,[]),null);assert.equal(s.nextAt,8200);
+ assert.equal(s.tick(5200,[]),null);assert.equal(s.nextAt,10200);
 });
 
 test('오브젝트 철거는 인물의 위치·경로·방향을 유지하고 삭제한 물건의 작업만 해제한다',async()=>{

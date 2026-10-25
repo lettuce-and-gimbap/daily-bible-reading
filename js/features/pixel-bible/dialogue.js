@@ -35,9 +35,9 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
 
 }
 
-// 한 전역 슬롯만 소유한다. 종료를 실제 관측한 시점부터 다음 3초를 센다.
+// 한 전역 슬롯만 소유한다. 종료를 실제 관측한 시점부터 다음 5초를 센다.
 export class SpeechDirector {
- constructor({now=0,random=Math.random,duration=5000,gap=3000}={}){this.random=random;this.duration=duration;this.gap=gap;this.nextAt=now+gap;this.current=null;this.lastId=null;this.lastSpeaker=null;}
+ constructor({now=0,random=Math.random,duration=5000,gap=5000}={}){this.random=random;this.duration=duration;this.gap=gap;this.nextAt=now+gap;this.current=null;this.lastId=null;this.lastSpeaker=null;}
  interrupt(choice,now){return this.start(choice,now);}
  start(choice,now){this.current={...speechView(choice),started:now,until:now+this.duration};this.lastId=choice.id;this.lastSpeaker=choice.speaker;return this.current;}
  dismiss(now){this.current=null;this.nextAt=now+this.gap;}

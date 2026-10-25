@@ -7,7 +7,7 @@ export function beside(a,b){
  const dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y);
  return Math.abs(dx-1)<.18&&dy<.12||Math.abs(dy-1)<.18&&dx<.12;
 }
-// Keep one paired exchange active at a time; it can coexist with one ambient speech slot.
+// Keep one paired exchange active at a time; ambient speech pauses until it ends.
 // One encounter per arrival; staying beside someone must not restart it every frame.
 export class EncounterDirector {
  constructor(chapters,context,{random=Math.random,maxActive=1}={}){
@@ -69,8 +69,7 @@ export class EncounterDirector {
     }
    }
   }
-  // A related pair speaks together in one shared bubble. Keeping the two lines
-  // in a single timed item prevents one speaker's bubble from covering the other.
+  // Return one timed exchange; the view positions each speaker's line separately.
   return this.active.filter(s=>now>=s.started&&now<s.until).map(s=>({
    ...s.lines[0],session:s.id,slot:0,started:s.started,until:s.until,pairLines:s.lines,
   }));
