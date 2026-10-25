@@ -1,16 +1,14 @@
-// 구절 선택 패널: 갓피아 화면 대신 우리 앱이 본문을 받아 절마다 눌러 고르게 하고(절 상자를 누르면 선택),
-// 고른 절을 보기 설정의 역본(한권/두권) 모두로 메모·노트에 붙임.
-// 갓피아는 다른 사이트라 그 화면 안에 체크박스를 넣을 수 없어서 worker/의 /bible로 받은 본문을 따로 보여 준다.
+// 공개 본문 DB에서 최대 세 역본을 읽고, 고른 절을 메모·노트에 붙인다.
 
 let pickIdx = null; // 지금 보여 주는 장 (전체 장 일련번호)
 let pickSel = new Set(); // 고른 절 번호
 
-// 구절 패널에서 볼 역본(1~2개): 직접 고른 게 있으면 그것, 없으면 보기 설정을 따름
+// 구절 패널에서 볼 역본(1~3개): 직접 고른 게 있으면 그것, 없으면 보기 설정을 따름
 function pickVersions() {
   const s = state.settings;
   const ok = (c) => VERSIONS.some((v) => v.code === c);
-  const own = Array.isArray(s.pick) ? s.pick.filter(ok).slice(0, 2) : [];
-  return own.length ? own : [s.ver, ...(s.mode === "two" ? [s.ver2] : [])];
+  const own = Array.isArray(s.pick) ? [...new Set(s.pick.filter(ok))].slice(0, 3) : [];
+  return own.length ? own : [s.ver, ...(s.mode !== "one" ? [s.ver2] : []), ...(s.mode === "three" ? [s.ver3] : [])];
 }
 
 // 패널 본문에 그림. target: "reading"(통독 메모) | "qt"(묵상 노트), idx: 처음 보여 줄 장
@@ -23,6 +21,7 @@ async function renderVersePicker(body, target, idx) {
   const picked = pickVersions();
   const ver1 = versionFor(picked[0], book);
   const ver2 = picked[1] && versionFor(picked[1], book) !== ver1 ? versionFor(picked[1], book) : "";
+  const ver3 = picked[2] && ![ver1, ver2].includes(versionFor(picked[2], book)) ? versionFor(picked[2], book) : "";
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
 
   body.innerHTML = `<div class="vp" style="--fz:${fzScale()}"><div class="vp-head" ${target === "reading" ? "hidden" : ""}>
@@ -41,8 +40,8 @@ async function renderVersePicker(body, target, idx) {
     const go = e.target.closest("[data-go]");
     if (go) return renderVersePicker(body, target, idx0 + Number(go.dataset.go));
     const pv = e.target.closest("[data-pv]");
-    if (pv) { // 역본 고르기: 최대 2개, 먼저 고른 게 위에 나옴
-      let next = picked.includes(pv.dataset.pv) ? picked.filter((c) => c !== pv.dataset.pv) : [...picked, pv.dataset.pv].slice(-2);
+    if (pv) { // 역본 고르기: 최대 3개, 먼저 고른 게 위에 나옴
+      let next = picked.includes(pv.dataset.pv) ? picked.filter((c) => c !== pv.dataset.pv) : [...picked, pv.dataset.pv].slice(-3);
       if (!next.length) return;
       state.settings.pick = next;
       persist();
@@ -52,7 +51,7 @@ async function renderVersePicker(body, target, idx) {
 
   let verses;
   try {
-    verses = await chapterVerses(idx0, ver1, ver2);
+    verses = await chapterVerses(idx0, ver1, ver2, ver3);
   } catch (e) {
     if (pickIdx === idx0 && body.firstElementChild === root) {
       root.querySelector(".vp-msg").textContent = "본문을 불러오지 못했어요. 인터넷 연결을 확인하고 다시 열어 주세요.";
@@ -64,14 +63,15 @@ async function renderVersePicker(body, target, idx) {
   const verOf = (v) => v.ver || ver1;
   const first = verses.filter((v) => verOf(v) === ver1);
   const second = ver2 ? verses.filter((v) => verOf(v) === ver2) : [];
-  const labels = [...new Set([...first, ...second].map((v) => labelSpan(v.label)[0]))].sort((a, b) => a - b);
+  const third = ver3 ? verses.filter((v) => verOf(v) === ver3) : [];
+  const labels = [...new Set([...first, ...second, ...third].map((v) => labelSpan(v.label)[0]))].sort((a, b) => a - b);
   const rows = labels.map((a) => {
     const primary = first.find((v) => labelSpan(v.label)[0] === a);
-    const fallback = second.find((v) => labelSpan(v.label)[0] === a);
+    const fallback = [...second, ...third].find((v) => labelSpan(v.label)[0] === a);
     const v = primary || fallback;
     const [, b] = labelSpan(v.label);
-    const also = primary ? second.filter((w) => { const st = labelSpan(w.label)[0]; return st >= a && st <= b; }) : [];
-    return { v, a, b, also, edition: primary ? ver1 : ver2 };
+    const also = [second, third].flatMap((list) => list.filter((w) => w !== v && labelSpan(w.label)[0] >= a && labelSpan(w.label)[0] <= b));
+    return { v, a, b, also, edition: v.ver || ver1 };
   });
 
   const count = () => root.querySelectorAll("input:checked").length;
@@ -87,7 +87,7 @@ async function renderVersePicker(body, target, idx) {
         <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
         <span class="vp-num">${esc(r.v.label)}</span>
         <span class="vp-txt">${r.edition !== ver1 ? `<small>${esc(vname(r.edition))}</small>` : ""}<span class="study-version" data-edition="${esc(r.edition)}">${ScriptureStudy.glossaryHtml(r.v.text)}</span>${r.also.map((w) =>
-          `<small><i>${esc(vname(ver2))}</i> <span class="study-version" data-edition="${esc(ver2)}">${ScriptureStudy.glossaryHtml(w.text)}</span></small>`).join("")}</span>
+          `<small><i>${esc(vname(w.ver))}</i> <span class="study-version" data-edition="${esc(w.ver)}">${ScriptureStudy.glossaryHtml(w.text)}</span></small>`).join("")}</span>
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
@@ -95,7 +95,7 @@ async function renderVersePicker(body, target, idx) {
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
-  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${r.v.label}`),{dock:target==="reading"});
+  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${ver3}:${r.v.label}`),{dock:target==="reading"});
   refresh();
 
   // 고른 절(번호 집합)을 보기 설정 역본마다 모아 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식으로
@@ -106,7 +106,7 @@ async function renderVersePicker(body, target, idx) {
     });
     const hit = (list) => list.filter((v) => { const [a, b] = labelSpan(v.label); for (let n = a; n <= b; n++) if (nums.has(n)) return true; return false; })
       .map((v) => `${v.label} ${v.text}`);
-    const groups = [hit(first), ...(ver2 ? [hit(second)] : [])].filter((g) => g.length);
+    const groups = [first, second, third].map(hit).filter((g) => g.length);
     return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;
   };
 

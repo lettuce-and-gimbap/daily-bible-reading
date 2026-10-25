@@ -17,8 +17,10 @@ test('공개 본문 DB는 여섯 역본 모두 창세기부터 요한계시록�
     assert.ok(verses.length,`${edition}/${book.code}/${chapter}`);
     let previous=0;
     for(const [verse,text] of verses){
-     assert.ok(Number.isInteger(verse)&&verse>previous&&typeof text==='string'&&text.trim(),`${edition}/${book.code}/${chapter}:${verse}`);
-     previous=verse;
+     const start=Number(String(verse).split('-')[0]);
+     const end=Number(String(verse).split('-').at(-1));
+     assert.ok(Number.isInteger(start)&&start>previous&&end>=start&&typeof text==='string'&&text.trim(),`${edition}/${book.code}/${chapter}:${verse}`);
+     previous=end;
     }
    }
   }

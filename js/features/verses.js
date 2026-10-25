@@ -109,7 +109,7 @@ function versesRef(chapter, nums) {
 const publicBookCache = {};
 
 // 공개 DB에서 한 장의 절을 선택한 역본 순서대로 읽는다.
-async function chapterVerses(idx, ver, ver2) {
+async function chapterVerses(idx, ver, ver2, ver3) {
   const { book, chap } = CHAPTERS[idx];
   if (!publicBookCache[book.code]) {
     publicBookCache[book.code] = fetch(`data/scripture/${book.code}.json`)
@@ -117,7 +117,7 @@ async function chapterVerses(idx, ver, ver2) {
       .catch((error) => { delete publicBookCache[book.code]; throw error; });
   }
   const data = await publicBookCache[book.code];
-  const editions = [ver, ...(ver2 && ver2 !== ver ? [ver2] : [])];
+  const editions = [...new Set([ver, ver2, ver3].filter(Boolean))];
   return editions.flatMap((edition) => (data.editions[edition]?.[chap] || []).map(([verse, text]) => ({
     ver: edition, label: String(verse), text,
   })));

@@ -1,0 +1,52 @@
+{
+  "개역개정4판": {
+    "missingLabels": 24,
+    "duplicateLabels": 0,
+    "extraLabels": 0,
+    "categories": {
+      "번호 누락·병합 미확인": 24
+    }
+  },
+  "쉬운성경": {
+    "missingLabels": 6,
+    "duplicateLabels": 0,
+    "extraLabels": 1,
+    "categories": {
+      "명시적 범위 병합": 6
+    }
+  },
+  "NIV": {
+    "missingLabels": 883,
+    "duplicateLabels": 0,
+    "extraLabels": 1,
+    "categories": {
+      "행 안 절표기 후보": 760,
+      "번호 누락·병합 미확인": 123
+    }
+  },
+  "개역한글": {
+    "missingLabels": 2,
+    "duplicateLabels": 0,
+    "extraLabels": 1,
+    "categories": {
+      "번호 누락·병합 미확인": 2
+    }
+  },
+  "현대인의성경": {
+    "missingLabels": 12,
+    "duplicateLabels": 0,
+    "extraLabels": 2,
+    "categories": {
+      "번호 누락·병합 미확인": 12
+    }
+  },
+  "새번역": {
+    "missingLabels": 13,
+    "duplicateLabels": 0,
+    "extraLabels": 3,
+    "categories": {
+      "번호 누락·병합 미확인": 2,
+      "명시적 범위 병합": 11
+    }
+  }
+}

@@ -27,6 +27,7 @@ function saveDayNote(value) {
 function buildReader() {
   if (!VERSIONS.some((v) => v.code === state.settings.ver)) state.settings.ver = "gae";
   if (!VERSIONS.some((v) => v.code === state.settings.ver2) || state.settings.ver2 === state.settings.ver) state.settings.ver2 = "easy";
+  state.settings = normalizeSettings(state.settings);
   if (Array.isArray(state.settings.pick)) state.settings.pick = state.settings.pick.filter((code) => VERSIONS.some((v) => v.code === code));
   sheetTab = null;
   onSheetChange = syncReaderTabs;
@@ -142,7 +143,7 @@ function buildReader() {
       return;
     } else if (t.dataset.mode) {
       state.settings.mode = t.dataset.mode;
-      if (state.settings.mode === "two" && state.settings.ver2 === state.settings.ver) {
+      if (state.settings.mode !== "one" && state.settings.ver2 === state.settings.ver) {
         state.settings.ver2 = VERSIONS.find((v) => v.code !== state.settings.ver).code;
       }
     } else if (t.dataset.ver) {
@@ -150,6 +151,8 @@ function buildReader() {
       if (state.settings.ver2 === t.dataset.ver) state.settings.ver2 = VERSIONS.find((v) => v.code !== t.dataset.ver).code;
     } else if (t.dataset.ver2) {
       state.settings.ver2 = t.dataset.ver2;
+    } else if (t.dataset.ver3) {
+      state.settings.ver3 = t.dataset.ver3;
     } else if (t.dataset.gchap !== undefined) { // 관계도: 장별로 보기 (all = 분량 전체)
       state.settings.graphChap = t.dataset.gchap === "all" ? "all" : Number(t.dataset.gchap);
       persist();
@@ -162,6 +165,8 @@ function buildReader() {
     } else {
       return;
     }
+    if (t.dataset.mode || t.dataset.ver || t.dataset.ver2 || t.dataset.ver3) delete state.settings.pick;
+    state.settings = normalizeSettings(state.settings);
     persist();
     refreshReader(reload);
   });
@@ -302,10 +307,12 @@ function renderReaderSheet() {
       <div class="opts two">
         <button class="opt big ${s.mode === "one" ? "on" : ""}" data-mode="one"><b>한권 보기</b><span>한 역본만 읽어요</span></button>
         <button class="opt big ${s.mode === "two" ? "on" : ""}" data-mode="two"><b>두권 보기</b><span>두 역본을 나란히 읽어요</span></button>
+        <button class="opt big ${s.mode === "three" ? "on" : ""}" data-mode="three"><b>세권 보기</b><span>세 역본을 나란히 읽어요</span></button>
       </div>
-      <h3 class="label">${s.mode === "two" ? "첫 번째 역본" : "역본"}</h3>
+      <h3 class="label">${s.mode !== "one" ? "첫 번째 역본" : "역본"}</h3>
       <div class="opts">${chips("ver", s.ver)}</div>
-      ${s.mode === "two" ? `<h3 class="label">함께 볼 역본</h3><div class="opts">${chips("ver2", s.ver2, s.ver)}</div>` : ""}`;
+      ${s.mode !== "one" ? `<h3 class="label">함께 볼 역본</h3><div class="opts">${chips("ver2", s.ver2, s.ver)}</div>` : ""}
+      ${s.mode === "three" ? `<h3 class="label">세 번째 역본</h3><div class="opts">${chips("ver3", s.ver3, s.ver)}</div>` : ""}`;
     return;
   }
 

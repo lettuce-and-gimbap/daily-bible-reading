@@ -29,7 +29,7 @@ function defaultState() {
     read: {}, // { 장일련번호: "YYYY-MM-DD" }
     dayNotes: {}, // { "YYYY-MM-DD": "통독 메모" }
     qt: {}, // { "YYYY-MM-DD": { done: bool, note: string } }
-    settings: { mode: "one", ver: "gae", ver2: "niv", readingCutoff: 0 },
+    settings: { mode: "one", ver: "gae", ver2: "niv", ver3: "easy", readingCutoff: 0 },
     readingHabits: { rule: 2, lateDays: [], cutoffUses: [], pending: null },
   };
 }
@@ -125,17 +125,20 @@ function saveState(state) {
   }
 }
 
-// 갓피아에서 없어진 역본(예: 쉬운성경)이 저장돼 있으면 창세기 1장으로 튕기므로 지원하는 역본으로 바꿈
+// 저장된 역본이 바뀌거나 중복됐으면 공개 DB의 서로 다른 역본으로 정리한다.
 function normalizeSettings(settings) {
   const valid = (code) => VERSIONS.some((v) => v.code === code);
   const ver = valid(settings.ver) ? settings.ver : "gae";
   const ver2 = valid(settings.ver2) && settings.ver2 !== ver
     ? settings.ver2
     : ["niv", "saenew", "gae"].find((code) => code !== ver);
+  const ver3 = valid(settings.ver3) && ![ver, ver2].includes(settings.ver3)
+    ? settings.ver3
+    : VERSIONS.find((v) => ![ver, ver2].includes(v.code)).code;
   const theme = ["light", "dark"].includes(settings.theme) ? settings.theme : "auto"; // 화면 모드: 기기 설정 따르기 / 밝게 / 어둡게
   const cutoff = Number(settings.readingCutoff);
   const readingCutoff = Number.isInteger(cutoff) && cutoff >= 0 && cutoff <= 5 ? cutoff : 0;
-  return { ...settings, mode: settings.mode === "two" ? "two" : "one", ver, ver2, theme, readingCutoff };
+  return { ...settings, mode: ["one", "two", "three"].includes(settings.mode) ? settings.mode : "one", ver, ver2, ver3, theme, readingCutoff };
 }
 
 // 계획에 포함되는 장 일련번호 순서. 끝 장이 시작 장보다 앞이면 요한계시록 다음 창세기로 이어 읽음

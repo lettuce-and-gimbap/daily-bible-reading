@@ -3,6 +3,7 @@
 import importlib.util
 import json
 from pathlib import Path
+import re
 import sqlite3
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -30,6 +31,18 @@ def main():
                 for chapter in range(1, book['chapters'] + 1):
                     verses = db.execute('SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? ORDER BY verse',
                                         (edition, code, chapter)).fetchall()
+                    body = db.execute('SELECT body FROM chapters WHERE edition=? AND code=? AND chapter=?',
+                                      (edition, code, chapter)).fetchone()[0]
+                    present = {verse for verse, _ in verses}
+                    for line in body.splitlines():
+                        match = re.match(r'^\s*(\d+)\s*[-–~]\s*(\d+)\s+(.+)$', line)
+                        if not match:
+                            continue
+                        start, end = int(match[1]), int(match[2])
+                        if end <= start or any(n in present for n in range(start, end + 1)):
+                            continue
+                        verses.append((f'{start}-{end}', match[3].strip()))
+                    verses.sort(key=lambda row: int(str(row[0]).split('-')[0]))
                     if not verses:
                         raise ValueError(f'{edition}/{code}/{chapter}: empty')
                     chapters.append(verses)
