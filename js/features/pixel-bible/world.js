@@ -286,7 +286,7 @@ export async function mountPixelWorld(shell, options) {
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
-        if(chapterData.some(ch=>ch.code==='2ki')){el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker));el.querySelector('canvas').style.maxHeight='100px';}
+        if(chapterData.some(ch=>ch.code==='2ki')){el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';}
       }
     }
   }
@@ -1054,7 +1054,7 @@ export async function mountPixelWorld(shell, options) {
       if(!activeEvent) update(dt);
       else {
         cinematicTime+=dt;activeEvent.elapsed+=dt;
-        if(activeEvent.elapsed>Math.max(4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        if(activeEvent.elapsed>Math.max(activeEvent.scene.code==='2ki'?8:4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
     followDraggedCharacter(dt);
