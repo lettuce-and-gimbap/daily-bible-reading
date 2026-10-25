@@ -1,3 +1,4 @@
+import {createBgm} from './bgm.js';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
@@ -185,6 +186,8 @@ export async function mountPixelWorld(shell, options) {
     if(left>right)return;const w=right-left+1,h=bottom-top+1,fit=Math.min(68/w,60/h);
     preview.imageSmoothingEnabled=false;preview.clearRect(0,0,80,72);
     preview.drawImage(source,left,top,w,h,Math.round((80-w*fit)/2),Math.round((72-h*fit)/2),Math.floor(w*fit),Math.floor(h*fit));});
+  const bgm=createBgm();
+  shell.querySelector('.pb-world-head').insertAdjacentHTML('beforeend','<button class="pb-button" data-action="bgm" aria-pressed="false">♫ BGM OFF</button>');
   const canvas = shell.querySelector(".pb-world-stage > canvas"), ctx = canvas.getContext("2d");
   const camera={...homeCamera(),...options.camera};
   const view=()=>cameraView(canvas.width,canvas.height,camera);
@@ -418,7 +421,7 @@ export async function mountPixelWorld(shell, options) {
   const isRecipeLocked=scene=>recipeLocked(scene,{discovered:recipeUnlocks,dailyDone:dailyDone(),hide:hideRecipes});
   function renderRecipes() {
     const container=shell.querySelector('.pb-recipes');
-    container.innerHTML=`<button class="pb-button" data-action="recipe-lock" aria-pressed="${hideRecipes}">${hideRecipes?'🔒 조합식 잠금':'🔓 오늘의 조합식 보기'}</button><p class="pb-help">오늘 통독을 마치면 잠금을 풀 수 있어요. 직접 인물과 물건을 가까이 배치해 발견한 조합은 계속 열려요.</p>`+model.scenes.map((scene,i)=>{
+    container.innerHTML=`<button class="pb-button" data-action="recipe-lock" aria-pressed="${hideRecipes}">${hideRecipes?'🔒 조합식 해금':'🔓 오늘의 조합식 보기'}</button><p class="pb-help">오늘 통독을 마치면 잠금을 풀 수 있어요. 직접 인물과 물건을 가까이 배치해 발견한 조합은 계속 열려요.</p>`+model.scenes.map((scene,i)=>{
       if(isRecipeLocked(scene))return `<article class="pb-recipe pb-recipe-mystery"><b>🔒 숨겨진 본문 장면</b><div class="pb-recipe-layout" aria-label="물음표 인물들을 물음표 오브젝트의 가까운 칸에 배치">${scene.actors.map(()=>'<span class="pb-mystery-person" aria-label="알 수 없는 인물">?</span>').join('')}${Array.from({length:1+(scene.requiresObjects?.length||0)},()=>'<span class="pb-mystery-object" aria-label="알 수 없는 오브젝트">?</span>').join('')}</div><small>각 인물을 물건 가까이 모아 보세요.</small></article>`;
       const missing=scene.actors.filter(name=>!npcs.some(n=>n.name===name));
       const object=objects.find(o=>o.kind===scene.object);
@@ -834,6 +837,7 @@ export async function mountPixelWorld(shell, options) {
       return;
     }
     const action=b.dataset.action;
+    if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);b.setAttribute('aria-pressed',on);b.textContent=on?'♫ BGM ON':'♫ BGM OFF';}catch(error){say(error.message);}return;}
     if(action==='camera-home'){Object.assign(camera,homeCamera());constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
     if(action==='relationships'){
       showRelationships=!showRelationships;syncRelationships();draw();return;
@@ -1046,7 +1050,7 @@ export async function mountPixelWorld(shell, options) {
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;bgm.dispose();encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   function syncRelationships(){
     const button=shell.querySelector('[data-action="relationships"]');
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
