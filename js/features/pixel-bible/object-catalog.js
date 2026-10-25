@@ -1,6 +1,7 @@
 // 공개 장별 요약의 물건 후보를 구절 범위와 함께 색인한다. 주석 원문은 사용/배포하지 않는다.
 import {OBJECT_NOTES} from './object-notes.js';
 const rows=[
+ ['scene-marker','본문 장면','symbol','scroll','본문장면표지'],
  ['salt-bowl','소금 담은 새 그릇','vessel','water','소금을 담아|소금을 담은|새 그릇'],
  ['flour-bowl','가루 그릇','vessel','oil','가루를 가져|가루 그릇'],
  ['fig-poultice','무화과 반죽 찜질','food','field','무화과 반죽|무화과로 만든 연고'],

@@ -49,5 +49,557 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-1ti-1-0",
+      "code": "1ti",
+      "chapter": 1,
+      "title": "다른 교훈을 막으라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 1:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "1ti.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "에베소에 족보와 끝없는 이야기로 다투는 거짓 교사들이 있어요."
+      ],
+      "study": "에베소에 족보와 끝없는 이야기로 다투는 거짓 교사들이 있어요. 바울은 가르침의 목적이 깨끗한 마음에서 나오는 사랑이라고 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 1:1-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-1-1",
+      "code": "1ti",
+      "chapter": 1,
+      "title": "죄인 중의 괴수",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 1:12-17",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "1ti.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "한때 박해자였던 바울이 알지 못해 한 일이라 긍휼을 입었어요."
+      ],
+      "study": "한때 박해자였던 바울이 알지 못해 한 일이라 긍휼을 입었어요. 죄인 중 괴수인 자신을 구원하신 일은 모든 사람에게 소망의 본보기예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 1:12-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-1-2",
+      "code": "1ti",
+      "chapter": 1,
+      "title": "선한 싸움",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 1:18-20",
+      "verseNumbers": [
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "1ti.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 디모데에게 선한 싸움을 하라고 해요."
+      ],
+      "study": "바울은 디모데에게 선한 싸움을 하라고 해요. 믿음과 양심을 버린 후메내오와 알렉산더는 반대로 믿음이 파선한 사람들이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 1:18-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-2-0",
+      "code": "1ti",
+      "chapter": 2,
+      "title": "모든 사람을 위한 기도",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 2:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "1ti.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "모든 사람을 위해, 왕과 높은 사람들도 위해 기도하라고 해요."
+      ],
+      "study": "모든 사람을 위해, 왕과 높은 사람들도 위해 기도하라고 해요. 하나님이 모든 사람이 구원받기 원하시고 우리가 조용히 살게 하려는 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 2:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-2-1",
+      "code": "1ti",
+      "chapter": 2,
+      "title": "한 중보자",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 2:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "1ti.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님은 한 분이고 중보자도 사람이신 그리스도 예수 한 분이세요."
+      ],
+      "study": "하나님은 한 분이고 중보자도 사람이신 그리스도 예수 한 분이세요. 예수님이 자기를 대속물로 주셨고 바울은 그 복음을 이방인에게 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 2:5-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-2-2",
+      "code": "1ti",
+      "chapter": 2,
+      "title": "예배 중의 남녀",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 2:8-15",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "1ti.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "남자는 다투지 말고 거룩한 손으로 기도하고, 여자는 착한 행실로 단정히 꾸며요."
+      ],
+      "study": "남자는 다투지 말고 거룩한 손으로 기도하고, 여자는 착한 행실로 단정히 꾸며요. 가르침과 다스림의 직임은 창조 순서를 따라 질서 있게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 2:8-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-3-0",
+      "code": "1ti",
+      "chapter": 3,
+      "title": "감독의 자격",
+      "actors": [],
+      "object": "house",
+      "ref": "디모데전서 3:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "1ti.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "감독은 책망받을 것이 없고, 절제하고, 가르치기를 잘하고, 자기 집을 잘 다스려야 해요."
+      ],
+      "study": "감독은 책망받을 것이 없고, 절제하고, 가르치기를 잘하고, 자기 집을 잘 다스려야 해요. 새로 믿은 사람은 교만해질 수 있어 맡기지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 3:1-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-3-1",
+      "code": "1ti",
+      "chapter": 3,
+      "title": "집사의 자격",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 3:8-13",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "1ti.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "집사는 정직하고 믿음의 비밀을 깨끗한 양심으로 지켜야 해요."
+      ],
+      "study": "집사는 정직하고 믿음의 비밀을 깨끗한 양심으로 지켜야 해요. 먼저 시험해 보고 책망받을 것이 없을 때 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 3:8-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-3-2",
+      "code": "1ti",
+      "chapter": 3,
+      "title": "경건의 비밀",
+      "actors": [],
+      "object": "stone-pillar",
+      "ref": "디모데전서 3:14-16",
+      "verseNumbers": [
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "1ti.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "교회는 살아 계신 하나님의 집이고 진리의 기둥과 터예요."
+      ],
+      "study": "교회는 살아 계신 하나님의 집이고 진리의 기둥과 터예요. 그 중심은 육신으로 오셔서 영광 가운데 올려지신 그리스도이시고, 찬송처럼 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone-pillar","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 3:14-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-4-0",
+      "code": "1ti",
+      "chapter": 4,
+      "title": "미혹하는 가르침",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 4:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "1ti.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "마지막 때에 속이는 영을 따라 결혼을 금하고 음식을 끊으라는 가르침이 나와요."
+      ],
+      "study": "마지막 때에 속이는 영을 따라 결혼을 금하고 음식을 끊으라는 가르침이 나와요. 하나님이 지으신 모든 것은 감사함으로 받으면 좋아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 4:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-4-1",
+      "code": "1ti",
+      "chapter": 4,
+      "title": "경건의 연단",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 4:6-10",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "1ti.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "헛된 이야기를 버리고 경건에 이르도록 자신을 훈련하라고 해요."
+      ],
+      "study": "헛된 이야기를 버리고 경건에 이르도록 자신을 훈련하라고 해요. 몸의 훈련은 조금 유익하지만 경건은 현재와 영원의 삶 모두에 유익해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 4:6-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-4-2",
+      "code": "1ti",
+      "chapter": 4,
+      "title": "믿는 자의 본",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 4:11-16",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "1ti.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "젊은 디모데는 말과 행실, 사랑과 믿음과 깨끗함의 본이 되어야 해요."
+      ],
+      "study": "젊은 디모데는 말과 행실, 사랑과 믿음과 깨끗함의 본이 되어야 해요. 읽고 가르치는 일에 힘쓰고, 안수받을 때의 은사를 소홀히 하지 말아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 4:11-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-5-0",
+      "code": "1ti",
+      "chapter": 5,
+      "title": "가족처럼 대하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 5:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "sourceUnits": [
+        "1ti.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "나이 든 이는 부모처럼, 젊은 이는 형제자매처럼 대하라고 해요."
+      ],
+      "study": "나이 든 이는 부모처럼, 젊은 이는 형제자매처럼 대하라고 해요. 꾸짖을 때도 가족을 대하듯 존중하고 깨끗한 마음으로 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 5:1-2","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-5-1",
+      "code": "1ti",
+      "chapter": 5,
+      "title": "참 과부",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 5:3-16",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "1ti.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "의지할 데 없는 참 과부는 교회가 돌봐요."
+      ],
+      "study": "의지할 데 없는 참 과부는 교회가 돌봐요. 자녀나 손자가 있으면 그들이 먼저 돌봐야 하고, 명단에는 선한 평판의 나이 든 과부를 올려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 5:3-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-5-2",
+      "code": "1ti",
+      "chapter": 5,
+      "title": "장로를 존경하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 5:17-25",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "1ti.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "잘 다스리고 말씀에 수고하는 장로를 갑절로 존경해요."
+      ],
+      "study": "잘 다스리고 말씀에 수고하는 장로를 갑절로 존경해요. 고발은 두세 증인이 있어야 받고, 성급히 안수하지 말고 편견 없이 판단해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 5:17-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-6-0",
+      "code": "1ti",
+      "chapter": 6,
+      "title": "종과 다른 교훈",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 6:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "1ti.6.0"
+      ],
+      "actions": {},
+      "lines": [
+        "종은 주인을 존경하라고 해요."
+      ],
+      "study": "종은 주인을 존경하라고 해요. 다른 가르침을 하며 경건을 돈벌이로 삼는 자들은 교만하고 논쟁만 좋아하니 따르지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 6:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-6-1",
+      "code": "1ti",
+      "chapter": 6,
+      "title": "자족과 돈 사랑",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 6:6-10",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "1ti.6.1"
+      ],
+      "actions": {},
+      "lines": [
+        "자족하는 경건이 큰 이익이에요."
+      ],
+      "study": "자족하는 경건이 큰 이익이에요. 돈을 사랑하는 마음은 모든 악의 뿌리가 되어 믿음에서 떠나 많은 아픔을 겪게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 6:6-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-6-2",
+      "code": "1ti",
+      "chapter": 6,
+      "title": "선한 싸움",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 6:11-16",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "1ti.6.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님의 사람 디모데는 의와 경건을 따르고 선한 싸움을 싸워 영생을 붙들라고 해요."
+      ],
+      "study": "하나님의 사람 디모데는 의와 경건을 따르고 선한 싸움을 싸워 영생을 붙들라고 해요. 예수님도 빌라도 앞에서 선한 증언을 하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 6:11-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1ti-6-3",
+      "code": "1ti",
+      "chapter": 6,
+      "title": "부한 자들에게",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디모데전서 6:17-21",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sourceUnits": [
+        "1ti.6.3"
+      ],
+      "actions": {},
+      "lines": [
+        "부자들은 교만하지 말고 하나님께 소망을 두며 선한 일에 넉넉히 나누라고 해요."
+      ],
+      "study": "부자들은 교만하지 말고 하나님께 소망을 두며 선한 일에 넉넉히 나누라고 해요. 디모데는 맡은 것을 지키고 거짓 지식을 피해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디모데전서 6:17-21","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

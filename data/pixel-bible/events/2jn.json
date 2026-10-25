@@ -26,8 +26,67 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"요한이서 1:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"요한이서 1:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "2jn.1.1"
+      ]
     }
   ],
-  "additionalPeople": {}
+  "additionalPeople": {},
+  "restoredScenes": [
+    {
+      "id": "nt-restored-2jn-1-0",
+      "code": "2jn",
+      "chapter": 1,
+      "title": "진리 안에서 사랑하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "요한이서 1:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "2jn.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "장로 요한은 진리 안에서 사랑하는 부녀와 자녀들에게 편지해요."
+      ],
+      "study": "장로 요한은 진리 안에서 사랑하는 부녀와 자녀들에게 편지해요. 처음부터 가진 계명대로 서로 사랑하며 진리 안에서 행하길 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"요한이서 1:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2jn-1-2",
+      "code": "2jn",
+      "chapter": 1,
+      "title": "대면을 바람",
+      "actors": [],
+      "object": "manna",
+      "ref": "요한이서 1:12-13",
+      "verseNumbers": [
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "2jn.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "쓸 말이 많지만 직접 만나 기쁨을 충만하게 하고 싶다고 해요."
+      ],
+      "study": "쓸 말이 많지만 직접 만나 기쁨을 충만하게 하고 싶다고 해요. 택하심을 받은 자매의 자녀들이 문안한다고 끝맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"manna","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"요한이서 1:12-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

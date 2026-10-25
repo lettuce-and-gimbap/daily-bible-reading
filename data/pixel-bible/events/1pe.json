@@ -33,7 +33,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gold","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 1:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gold","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 1:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "1pe.1.0"
+      ]
     },
     {
       "id": "ot-1pe-2-1",
@@ -62,7 +65,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 2:4-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"베드로전서 2:4-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "1pe.2.1"
+      ]
     },
     {
       "id": "ot-1pe-3-3",
@@ -90,7 +96,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"예수","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"ark-noah","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"베드로전서 3:18-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"예수","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"ark-noah","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"베드로전서 3:18-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "1pe.3.3"
+      ]
     },
     {
       "id": "ot-1pe-5-0",
@@ -116,8 +125,412 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"장로들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sheep","beats":[{"action":"listen","duration":1,"actor":"장로들"},{"action":"read","duration":1.2,"actor":"장로들"},{"action":"look","duration":1.5,"actor":"장로들"},{"action":"point","duration":1.8,"actor":"장로들"},{"action":"listen","duration":1.5,"actor":"장로들"},{"action":"bow","duration":1.2,"actor":"장로들"}],"duration":8.2,"support":null,"ref":"베드로전서 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"장로들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sheep","beats":[{"action":"listen","duration":1,"actor":"장로들"},{"action":"read","duration":1.2,"actor":"장로들"},{"action":"look","duration":1.5,"actor":"장로들"},{"action":"point","duration":1.8,"actor":"장로들"},{"action":"listen","duration":1.5,"actor":"장로들"},{"action":"bow","duration":1.2,"actor":"장로들"}],"duration":8.2,"support":null,"ref":"베드로전서 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "1pe.5.0"
+      ]
     }
   ],
-  "additionalPeople": {}
+  "additionalPeople": {},
+  "restoredScenes": [
+    {
+      "id": "nt-restored-1pe-1-1",
+      "code": "1pe",
+      "chapter": 1,
+      "title": "거룩한 자가 되라",
+      "actors": [],
+      "object": "sheep",
+      "ref": "베드로전서 1:13-21",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sourceUnits": [
+        "1pe.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "마음을 동이고 정신을 차려 거룩하신 하나님처럼 거룩하라고 해요."
+      ],
+      "study": "마음을 동이고 정신을 차려 거룩하신 하나님처럼 거룩하라고 해요. 헛된 삶에서 은이나 금이 아니라 흠 없는 어린 양 그리스도의 피로 속량받았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sheep","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 1:13-21","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-1-2",
+      "code": "1pe",
+      "chapter": 1,
+      "title": "썩지 않을 씨",
+      "actors": [],
+      "object": "seed",
+      "ref": "베드로전서 1:22-25",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "1pe.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "진리에 순종해 깨끗해졌으니 거짓 없이 서로 뜨겁게 사랑해요."
+      ],
+      "study": "진리에 순종해 깨끗해졌으니 거짓 없이 서로 뜨겁게 사랑해요. 썩지 않을 씨인 살아 있는 말씀으로 거듭났고, 그 말씀은 영원해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"seed","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 1:22-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-2-0",
+      "code": "1pe",
+      "chapter": 2,
+      "title": "신령한 젖",
+      "actors": [],
+      "object": "milk",
+      "ref": "베드로전서 2:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "sourceUnits": [
+        "1pe.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "모든 악과 거짓을 버리고 순수한 신령한 젖을 사모해 구원에 이르도록 자라라고 해요."
+      ],
+      "study": "모든 악과 거짓을 버리고 순수한 신령한 젖을 사모해 구원에 이르도록 자라라고 해요. 이미 주님이 선하시다는 것을 맛보았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"milk","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 2:1-3","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-2-2",
+      "code": "1pe",
+      "chapter": 2,
+      "title": "나그네의 선한 행실",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 2:11-17",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "1pe.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "나그네로서 육체의 욕심을 멀리하고 선한 행실로 비방하는 이도 하나님께 영광 돌리게 해요."
+      ],
+      "study": "나그네로서 육체의 욕심을 멀리하고 선한 행실로 비방하는 이도 하나님께 영광 돌리게 해요. 왕과 왕이 보낸 관리에게 순종하고 모든 사람을 존중해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 2:11-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-2-3",
+      "code": "1pe",
+      "chapter": 2,
+      "title": "그리스도의 본",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 2:18-25",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "1pe.2.3"
+      ],
+      "actions": {},
+      "lines": [
+        "종들은 선하고 친절한 주인뿐 아니라 악한 주인에게도 순종해요."
+      ],
+      "study": "종들은 선하고 친절한 주인뿐 아니라 악한 주인에게도 순종해요. 그리스도가 욕을 받고도 갚지 않고 우리 죄를 대신 지셔서 나은 본을 따라서예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 2:18-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-3-0",
+      "code": "1pe",
+      "chapter": 3,
+      "title": "아내와 남편",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 3:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "1pe.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "아내는 순종하는 깨끗한 행실로 믿지 않는 남편도 하나님을 믿게 할 수 있어요."
+      ],
+      "study": "아내는 순종하는 깨끗한 행실로 믿지 않는 남편도 하나님을 믿게 할 수 있어요. 남편은 아내를 이해하고 존중해야 기도가 막히지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 3:1-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-3-1",
+      "code": "1pe",
+      "chapter": 3,
+      "title": "복을 빌라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 3:8-12",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "1pe.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "마음을 같이하고 서로 사랑하며 악을 악으로, 욕을 욕으로 갚지 말라고 해요."
+      ],
+      "study": "마음을 같이하고 서로 사랑하며 악을 악으로, 욕을 욕으로 갚지 말라고 해요. 오히려 복을 빌면 복을 이어받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 3:8-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-3-2",
+      "code": "1pe",
+      "chapter": 3,
+      "title": "소망의 이유",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 3:13-17",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "1pe.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "마음에 그리스도를 주로 모시고, 소망의 이유를 묻는 이에게 공손하고 친절하게 대답할 준비를 해요."
+      ],
+      "study": "마음에 그리스도를 주로 모시고, 소망의 이유를 묻는 이에게 공손하고 친절하게 대답할 준비를 해요. 선을 행하다 받는 고난이 나아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 3:13-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-4-0",
+      "code": "1pe",
+      "chapter": 4,
+      "title": "같은 마음의 갑옷",
+      "actors": [],
+      "object": "armor",
+      "ref": "베드로전서 4:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "1pe.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "그리스도의 고난을 본받아 남은 때를 욕심이 아니라 하나님의 뜻대로 살아요."
+      ],
+      "study": "그리스도의 고난을 본받아 남은 때를 욕심이 아니라 하나님의 뜻대로 살아요. 예전의 방탕한 생활을 함께하지 않으면 믿지 않는 사람들이 이상히 여기며 비방해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"armor","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 4:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-4-1",
+      "code": "1pe",
+      "chapter": 4,
+      "title": "마지막이 가까움",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 4:7-11",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "1pe.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "마지막이 가까우니 정신을 차려 기도하고 서로 뜨겁게 사랑해요."
+      ],
+      "study": "마지막이 가까우니 정신을 차려 기도하고 서로 뜨겁게 사랑해요. 받은 은사로 착한 종처럼 서로 돕고, 모든 일에 하나님이 영광받으시게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 4:7-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-4-2",
+      "code": "1pe",
+      "chapter": 4,
+      "title": "불 시험",
+      "actors": [],
+      "object": "fire",
+      "ref": "베드로전서 4:12-19",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "1pe.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "불 같은 시련을 이상히 여기지 말고 그리스도의 고난에 참여하는 만큼 기뻐해요."
+      ],
+      "study": "불 같은 시련을 이상히 여기지 말고 그리스도의 고난에 참여하는 만큼 기뻐해요. 그리스도인으로 받는 고난은 부끄럽지 않고 선을 행하며 신실한 창조주께 영혼을 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fire","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 4:12-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-5-1",
+      "code": "1pe",
+      "chapter": 5,
+      "title": "염려를 주께 맡기라",
+      "actors": [],
+      "object": "robe",
+      "ref": "베드로전서 5:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "1pe.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "젊은 사람은 장로에게 순복하고 모두 겸손으로 옷 입어요."
+      ],
+      "study": "젊은 사람은 장로에게 순복하고 모두 겸손으로 옷 입어요. 하나님이 겸손한 자를 높이시고 염려를 맡기면 돌보세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"robe","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 5:5-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-5-2",
+      "code": "1pe",
+      "chapter": 5,
+      "title": "마귀를 대적하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 5:8-11",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "1pe.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "대적 마귀가 우는 사자처럼 삼킬 자를 찾으니 깨어 믿음으로 대적해요."
+      ],
+      "study": "대적 마귀가 우는 사자처럼 삼킬 자를 찾으니 깨어 믿음으로 대적해요. 잠깐 고난받은 뒤에 은혜의 하나님이 온전하게 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 5:8-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1pe-5-3",
+      "code": "1pe",
+      "chapter": 5,
+      "title": "문안",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "베드로전서 5:12-14",
+      "verseNumbers": [
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "1pe.5.3"
+      ],
+      "actions": {},
+      "lines": [
+        "실라의 손을 빌려 짧게 써서 보내며 은혜에 굳게 서라고 해요."
+      ],
+      "study": "실라의 손을 빌려 짧게 써서 보내며 은혜에 굳게 서라고 해요. 바벨론에 있는 교회와 아들 마가가 문안해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"베드로전서 5:12-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

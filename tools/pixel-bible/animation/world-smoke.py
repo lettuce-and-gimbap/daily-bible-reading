@@ -1,6 +1,6 @@
-import asyncio,json,urllib.request,base64,pathlib,argparse
+import asyncio,json,urllib.request,urllib.parse,base64,pathlib,argparse
 import websockets
-parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--nt',action='store_true');parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
+parser=argparse.ArgumentParser();parser.add_argument('--cdp',default='http://localhost:9222');parser.add_argument('--base',default='http://127.0.0.1:8765');parser.add_argument('--nt',action='store_true');parser.add_argument('--scene');parser.add_argument('--book');parser.add_argument('--chapter',type=int);parser.add_argument('--output',default='/tmp/pixel-bible-animation-world-review');args=parser.parse_args();OUT=pathlib.Path(args.output);OUT.mkdir(exist_ok=True,parents=True)
 async def main():
  tab=json.load(urllib.request.urlopen(urllib.request.Request(args.cdp+'/json/new?about:blank',method='PUT')))
  async with websockets.connect(tab['webSocketDebuggerUrl'],max_size=64*1024*1024) as ws:
@@ -17,13 +17,13 @@ async def main():
    return r.get('result',{}).get('value')
   async def shot(name):
    r=await call('Page.captureScreenshot',{'format':'png'});(OUT/(name+'.png')).write_bytes(base64.b64decode(r['data']))
-  await call('Runtime.enable');await call('Network.enable');await call('Network.setCacheDisabled',{'cacheDisabled':True});await call('Emulation.setDeviceMetricsOverride',dict(width=1280,height=720,deviceScaleFactor=1,mobile=False));await call('Page.navigate',{'url':args.base+'/tools/pixel-bible/animation-world-review.html'+('?book=jhn&chapter=13' if args.nt else '')})
+  await call('Runtime.enable');await call('Network.enable');await call('Network.setCacheDisabled',{'cacheDisabled':True});await call('Emulation.setDeviceMetricsOverride',dict(width=1280,height=720,deviceScaleFactor=1,mobile=False));await call('Page.navigate',{'url':args.base+'/tools/pixel-bible/animation-world-review.html'+('?' + urllib.parse.urlencode(dict(book=args.book or ('jhn' if args.nt else 'gen'),chapter=args.chapter or (13 if args.nt else 28),**({'scene':args.scene} if args.scene else {}))))})
   for _ in range(80):
    await asyncio.sleep(.25)
    if await ev('!!window.worldReviewReady'):break
   assert await ev('!!window.worldReviewReady'),errors
   assert await ev("document.querySelector('.pb-event').hidden"),'event must not autoplay'
-  await ev("document.querySelector('[data-action=\"toggle-right\"]').click();document.querySelector('[data-action=\"recipe-lock\"]').click();document.querySelector('[data-recipe]').click()")
+  await ev("document.querySelector('[data-action=\"toggle-right\"]').click();document.querySelector('[data-action=\"recipe-lock\"]').click();(window.reviewSceneTitle?Array.from(document.querySelectorAll('[data-recipe]')).find(b=>b.closest('article').textContent.includes(window.reviewSceneTitle)):document.querySelector('[data-recipe]')).click()")
   for _ in range(160):
    await asyncio.sleep(.2)
    if await ev("!document.querySelector('.pb-event-offer').hidden"):break
@@ -33,6 +33,7 @@ async def main():
   await ev("document.querySelector('[data-action=\"watch-event\"]').click()")
   await asyncio.sleep(.3)
   assert await ev("!!document.querySelector('.pb-event-card canvas')"),'missing event canvas'
+  assert await ev("document.querySelector('.pb-event-card>p').textContent.trim().length>0"),'missing scene explanation'
   await ev("document.querySelector('[data-action=\"event-pause\"]').click()")
   first=await ev("document.querySelector('.pb-event-card canvas').toDataURL()")
   await asyncio.sleep(.5)

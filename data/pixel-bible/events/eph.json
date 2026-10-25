@@ -29,7 +29,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"이스라엘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":"이스라엘"},{"action":"read","duration":1.2,"actor":"이스라엘"},{"action":"look","duration":1.5,"actor":"이스라엘"},{"action":"point","duration":1.8,"actor":"이스라엘"},{"action":"listen","duration":1.5,"actor":"이스라엘"},{"action":"bow","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"에베소서 2:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"이스라엘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":"이스라엘"},{"action":"read","duration":1.2,"actor":"이스라엘"},{"action":"look","duration":1.5,"actor":"이스라엘"},{"action":"point","duration":1.8,"actor":"이스라엘"},{"action":"listen","duration":1.5,"actor":"이스라엘"},{"action":"bow","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"에베소서 2:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "eph.2.1"
+      ]
     },
     {
       "id": "ot-eph-2-2",
@@ -55,7 +58,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"에베소서 2:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"에베소서 2:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "eph.2.2"
+      ]
     }
   ],
   "additionalPeople": {
@@ -70,5 +76,587 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-eph-1-0",
+      "code": "eph",
+      "chapter": 1,
+      "title": "신령한 복의 찬송",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 1:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "eph.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님은 세상을 만드시기 전에 그리스도 안에서 우리를 택하셔서 거룩하고 흠 없게 하시고, 사랑으로 자녀 되게 정하셨어요."
+      ],
+      "study": "하나님은 세상을 만드시기 전에 그리스도 안에서 우리를 택하셔서 거룩하고 흠 없게 하시고, 사랑으로 자녀 되게 정하셨어요. 우리의 공로가 아니라 기쁘신 뜻과 은혜의 영광을 찬양하게 하려는 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 1:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-1-1",
+      "code": "eph",
+      "chapter": 1,
+      "title": "피로 속량하심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 1:7-14",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "eph.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "우리는 그리스도의 피로 속량 받아 죄를 용서받았어요."
+      ],
+      "study": "우리는 그리스도의 피로 속량 받아 죄를 용서받았어요. 하나님은 때가 차매 모든 것을 그리스도 안에서 하나로 모으실 뜻을 알려 주셨고, 믿을 때 약속의 성령으로 인 치셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 1:7-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-1-2",
+      "code": "eph",
+      "chapter": 1,
+      "title": "마음의 눈을 밝히소서",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 1:15-23",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sourceUnits": [
+        "eph.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 쉬지 않고 감사하며 마음의 눈이 밝아져 소망과 기업, 하나님의 큰 능력을 알게 해 달라고 기도해요."
+      ],
+      "study": "바울은 쉬지 않고 감사하며 마음의 눈이 밝아져 소망과 기업, 하나님의 큰 능력을 알게 해 달라고 기도해요. 그 능력으로 그리스도를 살리셔서 모든 권세 위에 앉히시고 교회의 머리로 삼으셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 1:15-23","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-2-0",
+      "code": "eph",
+      "chapter": 2,
+      "title": "죽었던 우리를 살리심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 2:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "eph.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "우리는 허물로 죽어 세상과 사탄을 따랐지만, 긍휼이 풍성하신 하나님이 큰 사랑으로 우리를 그리스도와 함께 살리셨어요."
+      ],
+      "study": "우리는 허물로 죽어 세상과 사탄을 따랐지만, 긍휼이 풍성하신 하나님이 큰 사랑으로 우리를 그리스도와 함께 살리셨어요. 구원은 은혜와 믿음으로 받은 선물이고 우리는 선한 일을 위해 지음 받은 작품이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 2:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-3-0",
+      "code": "eph",
+      "chapter": 3,
+      "title": "그리스도의 비밀",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 3:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "eph.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 이방인을 위해 갇힌 자예요."
+      ],
+      "study": "바울은 이방인을 위해 갇힌 자예요. 전에는 숨겨졌던 그리스도의 비밀이 사도들에게 계시되었어요. 이방인도 복음으로 유대인과 함께 상속자가 되고 한 몸이 되며 약속에 참여해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 3:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-3-1",
+      "code": "eph",
+      "chapter": 3,
+      "title": "지극히 작은 자의 은혜",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 3:7-13",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "eph.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 자기를 지극히 보잘것없는 사람 중 하나라고 낮추며 이 은혜를 받았다고 해요."
+      ],
+      "study": "바울은 자기를 지극히 보잘것없는 사람 중 하나라고 낮추며 이 은혜를 받았다고 해요. 그리스도의 헤아릴 수 없는 풍성함을 이방인에게 전하고, 교회로 하늘의 권세들에게도 하나님의 지혜를 알리는 일이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 3:7-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-3-2",
+      "code": "eph",
+      "chapter": 3,
+      "title": "무릎 꿇은 기도",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 3:14-21",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sourceUnits": [
+        "eph.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 아버지 앞에 무릎을 꿇어요."
+      ],
+      "study": "바울은 아버지 앞에 무릎을 꿇어요. 성령으로 속사람이 강건해지고 그리스도가 마음에 계시며, 그 사랑의 넓이와 깊이를 깨달아 하나님의 충만으로 채워지길 기도해요. 하나님께 영원한 영광을 돌려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 3:14-21","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-4-0",
+      "code": "eph",
+      "chapter": 4,
+      "title": "하나 되게 하신 것",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 4:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "eph.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 부르심에 합당하게 겸손과 온유와 오래 참음으로 서로 용납하고, 성령이 이루신 하나 됨을 지키라고 해요."
+      ],
+      "study": "바울은 부르심에 합당하게 겸손과 온유와 오래 참음으로 서로 용납하고, 성령이 이루신 하나 됨을 지키라고 해요. 몸도 성령도 주도 믿음도 세례도 하나님도 하나예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 4:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-4-1",
+      "code": "eph",
+      "chapter": 4,
+      "title": "직분과 몸의 성장",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 4:7-16",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "eph.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "그리스도가 사도·선지자·복음 전하는 자·목사와 교사를 선물로 주셨어요."
+      ],
+      "study": "그리스도가 사도·선지자·복음 전하는 자·목사와 교사를 선물로 주셨어요. 이들이 성도를 준비시켜 섬기게 하고 몸을 세워서, 우리가 사랑으로 진리를 말하며 머리이신 그리스도께로 자라 가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 4:7-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-4-2",
+      "code": "eph",
+      "chapter": 4,
+      "title": "옛사람과 새사람",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 4:17-24",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sourceUnits": [
+        "eph.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "이방인처럼 어둡게 사는 옛사람을 벗고 마음이 새로워져 하나님을 닮은 새사람을 입으라고 해요."
+      ],
+      "study": "이방인처럼 어둡게 사는 옛사람을 벗고 마음이 새로워져 하나님을 닮은 새사람을 입으라고 해요. 거짓을 버리고 참된 말을 하며, 분을 해 지도록 품지 말고 일해서 나누라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 4:17-24","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-4-3",
+      "code": "eph",
+      "chapter": 4,
+      "title": "서로 용서하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 4:25-32",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "sourceUnits": [
+        "eph.4.3"
+      ],
+      "actions": {},
+      "lines": [
+        "더러운 말 대신 덕을 세우는 말을 해요."
+      ],
+      "study": "더러운 말 대신 덕을 세우는 말을 해요. 성령을 근심하게 하지 않고 악독과 노함을 버리며 서로 친절하고 용서하라고 해요. 하나님이 그리스도 안에서 우리를 용서하셨기 때문이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 4:25-32","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-5-0",
+      "code": "eph",
+      "chapter": 5,
+      "title": "하나님을 본받으라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 5:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "eph.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "사랑받는 자녀로서 하나님을 본받고, 그리스도가 자신을 내주신 것처럼 사랑 가운데 행해요."
+      ],
+      "study": "사랑받는 자녀로서 하나님을 본받고, 그리스도가 자신을 내주신 것처럼 사랑 가운데 행해요. 음행과 더러운 것, 탐욕은 성도에게 어울리지 않고 감사가 어울려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 5:1-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-5-1",
+      "code": "eph",
+      "chapter": 5,
+      "title": "빛의 자녀",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 5:8-14",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "eph.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "전에는 어둠이었지만 이제는 주 안에서 빛이에요."
+      ],
+      "study": "전에는 어둠이었지만 이제는 주 안에서 빛이에요. 빛의 열매인 착함과 의로움과 진실로 살며 어둠의 일에 참여하지 말고 드러내라고 해요. 잠든 사람아 깨어나라, 그리스도께서 비추신다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 5:8-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-5-2",
+      "code": "eph",
+      "chapter": 5,
+      "title": "성령으로 충만하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 5:15-21",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sourceUnits": [
+        "eph.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "때가 악하니 지혜롭게 세월을 아끼고 술 대신 성령 충만을 받아요."
+      ],
+      "study": "때가 악하니 지혜롭게 세월을 아끼고 술 대신 성령 충만을 받아요. 그러면 찬송하고 감사하며 그리스도를 두려워하여 서로 복종하게 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 5:15-21","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-5-3",
+      "code": "eph",
+      "chapter": 5,
+      "title": "남편과 아내",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 5:22-33",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "sourceUnits": [
+        "eph.5.3"
+      ],
+      "actions": {},
+      "lines": [
+        "아내는 주께 하듯 남편을 존중하고, 남편은 그리스도가 교회를 위해 자신을 주셨듯 아내를 사랑해요."
+      ],
+      "study": "아내는 주께 하듯 남편을 존중하고, 남편은 그리스도가 교회를 위해 자신을 주셨듯 아내를 사랑해요. 그리스도는 교회를 말씀으로 씻어 거룩하게 하세요. 이 비밀은 그리스도와 교회를 가리켜요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 5:22-33","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-6-0",
+      "code": "eph",
+      "chapter": 6,
+      "title": "자녀와 부모",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 6:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "eph.6.0"
+      ],
+      "actions": {},
+      "lines": [
+        "자녀는 주 안에서 부모에게 순종하고 공경해요."
+      ],
+      "study": "자녀는 주 안에서 부모에게 순종하고 공경해요. 약속이 있는 첫 계명이에요. 아버지들은 자녀를 노엽게 하지 말고 주님의 교훈과 훈계로 기르라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 6:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-6-1",
+      "code": "eph",
+      "chapter": 6,
+      "title": "종과 상전",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 6:5-9",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceUnits": [
+        "eph.6.1"
+      ],
+      "actions": {},
+      "lines": [
+        "종은 그리스도께 하듯 진심으로 섬기고, 상전도 위협을 그치고 종과 주인 모두 하늘에 같은 주인이 계심을 기억해요."
+      ],
+      "study": "종은 그리스도께 하듯 진심으로 섬기고, 상전도 위협을 그치고 종과 주인 모두 하늘에 같은 주인이 계심을 기억해요. 하나님은 사람을 외모로 보시지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 6:5-9","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-6-2",
+      "code": "eph",
+      "chapter": 6,
+      "title": "하나님의 전신 갑주",
+      "actors": [],
+      "object": "shield",
+      "ref": "에베소서 6:10-17",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "eph.6.2"
+      ],
+      "actions": {},
+      "lines": [
+        "우리의 싸움은 사람이 아니라 마귀의 꾀와 하늘의 악한 영들과의 싸움이에요."
+      ],
+      "study": "우리의 싸움은 사람이 아니라 마귀의 꾀와 하늘의 악한 영들과의 싸움이에요. 진리의 허리띠, 의의 호심경, 복음의 신, 믿음의 방패, 구원의 투구, 성령의 검인 말씀으로 무장해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"shield","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 6:10-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-eph-6-3",
+      "code": "eph",
+      "chapter": 6,
+      "title": "기도 부탁과 두기고",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "에베소서 6:18-24",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sourceUnits": [
+        "eph.6.3"
+      ],
+      "actions": {},
+      "lines": [
+        "항상 성령 안에서 기도하고 성도들을 위해 구해요."
+      ],
+      "study": "항상 성령 안에서 기도하고 성도들을 위해 구해요. 바울은 복음을 담대하게 알릴 수 있도록 기도를 부탁하고, 두기고를 보내 안부를 전하게 하며 평안과 은혜를 빌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"에베소서 6:18-24","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

@@ -29,7 +29,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"follow","lead":"시몬","target":"예수","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"net","beats":[{"action":"look","duration":1,"actor":"시몬"},{"action":"receive","duration":1.2,"actor":"시몬"},{"action":"turn","duration":1.5,"actor":"시몬"},{"action":"walk","duration":1.8,"actor":"시몬"},{"action":"walk","duration":1.5,"actor":"시몬"},{"action":"stand","duration":1.2,"actor":"시몬"}],"duration":8.2,"support":null,"ref":"마가복음 1:14-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"follow","lead":"시몬","target":"예수","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"net","beats":[{"action":"look","duration":1,"actor":"시몬"},{"action":"receive","duration":1.2,"actor":"시몬"},{"action":"turn","duration":1.5,"actor":"시몬"},{"action":"walk","duration":1.8,"actor":"시몬"},{"action":"walk","duration":1.5,"actor":"시몬"},{"action":"stand","duration":1.2,"actor":"시몬"}],"duration":8.2,"support":null,"ref":"마가복음 1:14-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.1.1"
+      ]
     },
     {
       "id": "ot-mrk-2-3",
@@ -58,7 +61,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"gather","lead":"예수","target":"제자들","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"field","beats":[{"action":"walk","duration":1,"actor":"예수"},{"action":"bend","duration":1.2,"actor":"예수"},{"action":"grasp","duration":1.5,"actor":"예수"},{"action":"lift","duration":1.8,"actor":"예수"},{"action":"bundle","duration":1.5,"actor":"예수"},{"action":"carry","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 2:23-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"gather","lead":"예수","target":"제자들","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"field","beats":[{"action":"walk","duration":1,"actor":"예수"},{"action":"bend","duration":1.2,"actor":"예수"},{"action":"grasp","duration":1.5,"actor":"예수"},{"action":"lift","duration":1.8,"actor":"예수"},{"action":"bundle","duration":1.5,"actor":"예수"},{"action":"carry","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 2:23-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.2.3"
+      ]
     },
     {
       "id": "ot-mrk-4-3",
@@ -88,7 +94,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"calm-sea","lead":"예수","target":"제자들","mode":"reconstruction","setting":"water","effect":"storm-calm","emotion":"determined","prop":"boat","beats":[{"action":"sleep","duration":1,"actor":"예수"},{"action":"startle","duration":1.2,"actor":"예수"},{"action":"rise","duration":1.5,"actor":"예수"},{"action":"lift","duration":1.8,"actor":"예수"},{"action":"halt","duration":1.5,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 4:35-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"calm-sea","lead":"예수","target":"제자들","mode":"reconstruction","setting":"water","effect":"storm-calm","emotion":"determined","prop":"boat","beats":[{"action":"sleep","duration":1,"actor":"예수"},{"action":"startle","duration":1.2,"actor":"예수"},{"action":"rise","duration":1.5,"actor":"예수"},{"action":"lift","duration":1.8,"actor":"예수"},{"action":"halt","duration":1.5,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 4:35-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.4.3"
+      ]
     },
     {
       "id": "ot-mrk-5-1",
@@ -125,7 +134,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"touch-cloak","lead":"혈루증 여인","target":"예수","mode":"reconstruction","setting":"courtyard","effect":"garment-touch","emotion":"joy","prop":"robe","beats":[{"action":"look","duration":1,"actor":"혈루증 여인"},{"action":"walk","duration":1.2,"actor":"혈루증 여인"},{"action":"reach","duration":1.5,"actor":"혈루증 여인"},{"action":"grasp","duration":1.8,"actor":"혈루증 여인"},{"action":"inspect","duration":1.5,"actor":"혈루증 여인"},{"action":"bow","duration":1.2,"actor":"혈루증 여인"}],"duration":8.2,"support":null,"ref":"마가복음 5:21-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"touch-cloak","lead":"혈루증 여인","target":"예수","mode":"reconstruction","setting":"courtyard","effect":"garment-touch","emotion":"joy","prop":"robe","beats":[{"action":"look","duration":1,"actor":"혈루증 여인"},{"action":"walk","duration":1.2,"actor":"혈루증 여인"},{"action":"reach","duration":1.5,"actor":"혈루증 여인"},{"action":"grasp","duration":1.8,"actor":"혈루증 여인"},{"action":"inspect","duration":1.5,"actor":"혈루증 여인"},{"action":"bow","duration":1.2,"actor":"혈루증 여인"}],"duration":8.2,"support":null,"ref":"마가복음 5:21-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.5.1"
+      ]
     },
     {
       "id": "ot-mrk-8-1",
@@ -159,7 +171,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"parable","lead":"예수","target":"제자들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"leaven","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 8:11-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"parable","lead":"예수","target":"제자들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"leaven","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 8:11-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.8.1"
+      ]
     },
     {
       "id": "ot-mrk-10-2",
@@ -196,7 +211,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"야고보","target":"요한","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cup","beats":[{"action":"listen","duration":1,"actor":"야고보"},{"action":"read","duration":1.2,"actor":"야고보"},{"action":"look","duration":1.5,"actor":"야고보"},{"action":"point","duration":1.8,"actor":"야고보"},{"action":"listen","duration":1.5,"actor":"야고보"},{"action":"bow","duration":1.2,"actor":"야고보"}],"duration":8.2,"support":null,"ref":"마가복음 10:32-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"야고보","target":"요한","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cup","beats":[{"action":"listen","duration":1,"actor":"야고보"},{"action":"read","duration":1.2,"actor":"야고보"},{"action":"look","duration":1.5,"actor":"야고보"},{"action":"point","duration":1.8,"actor":"야고보"},{"action":"listen","duration":1.5,"actor":"야고보"},{"action":"bow","duration":1.2,"actor":"야고보"}],"duration":8.2,"support":null,"ref":"마가복음 10:32-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.10.2"
+      ]
     },
     {
       "id": "ot-mrk-10-3",
@@ -226,7 +244,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"바디매오","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 10:46-52","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"바디매오","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 10:46-52","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.10.3"
+      ]
     },
     {
       "id": "ot-mrk-11-0",
@@ -259,7 +280,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"parade","lead":"예수","target":null,"mode":"reconstruction","setting":"road","effect":"horse","emotion":"joy","prop":"donkey","beats":[{"action":"receive","duration":1,"actor":"예수"},{"action":"wear","duration":1.2,"actor":"예수"},{"action":"sit","duration":1.5,"actor":"예수"},{"action":"hold","duration":1.8,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 11:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"parade","lead":"예수","target":null,"mode":"reconstruction","setting":"road","effect":"horse","emotion":"joy","prop":"donkey","beats":[{"action":"receive","duration":1,"actor":"예수"},{"action":"wear","duration":1.2,"actor":"예수"},{"action":"sit","duration":1.5,"actor":"예수"},{"action":"hold","duration":1.8,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 11:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.11.0"
+      ]
     },
     {
       "id": "ot-mrk-11-2",
@@ -289,7 +313,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"예수","target":"베드로","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"pray","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 11:20-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"예수","target":"베드로","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"pray","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 11:20-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.11.2"
+      ]
     },
     {
       "id": "ot-mrk-14-0",
@@ -323,7 +350,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"anoint-cloak","lead":"향유를 부은 여자","target":"예수","mode":"reconstruction","setting":"chamber","effect":"anoint","emotion":"gentle","prop":"alabaster-jar","beats":[{"action":"inspect","duration":1,"actor":"향유를 부은 여자"},{"action":"grasp","duration":1.2,"actor":"향유를 부은 여자"},{"action":"lift","duration":1.5,"actor":"향유를 부은 여자"},{"action":"pour","duration":1.8,"actor":"향유를 부은 여자"},{"action":"lower","duration":1.5,"actor":"향유를 부은 여자"},{"action":"bow","duration":1.2,"actor":"향유를 부은 여자"}],"duration":8.2,"support":null,"ref":"마가복음 14:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"anoint-cloak","lead":"향유를 부은 여자","target":"예수","mode":"reconstruction","setting":"chamber","effect":"anoint","emotion":"gentle","prop":"alabaster-jar","beats":[{"action":"inspect","duration":1,"actor":"향유를 부은 여자"},{"action":"grasp","duration":1.2,"actor":"향유를 부은 여자"},{"action":"lift","duration":1.5,"actor":"향유를 부은 여자"},{"action":"pour","duration":1.8,"actor":"향유를 부은 여자"},{"action":"lower","duration":1.5,"actor":"향유를 부은 여자"},{"action":"bow","duration":1.2,"actor":"향유를 부은 여자"}],"duration":8.2,"support":null,"ref":"마가복음 14:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.14.0"
+      ]
     },
     {
       "id": "ot-mrk-14-1",
@@ -366,7 +396,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"break-bread","lead":"예수","target":"베드로","mode":"reconstruction","setting":"chamber","effect":"bread-share","emotion":"gentle","prop":"bread","beats":[{"action":"grasp","duration":1,"actor":"예수"},{"action":"lift","duration":1.2,"actor":"예수"},{"action":"cut","duration":1.5,"actor":"예수"},{"action":"extend","duration":1.8,"actor":"예수"},{"action":"release","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 14:12-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"break-bread","lead":"예수","target":"베드로","mode":"reconstruction","setting":"chamber","effect":"bread-share","emotion":"gentle","prop":"bread","beats":[{"action":"grasp","duration":1,"actor":"예수"},{"action":"lift","duration":1.2,"actor":"예수"},{"action":"cut","duration":1.5,"actor":"예수"},{"action":"extend","duration":1.8,"actor":"예수"},{"action":"release","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"마가복음 14:12-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.14.1"
+      ]
     },
     {
       "id": "ot-mrk-15-1",
@@ -405,7 +438,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"warning","lead":"군인들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"군인들"},{"action":"turn","duration":1.2,"actor":"군인들"},{"action":"speak","duration":1.5,"actor":"군인들"},{"action":"point","duration":1.8,"actor":"군인들"},{"action":"listen","duration":1.5,"actor":"군인들"},{"action":"lower","duration":1.2,"actor":"군인들"}],"duration":8.2,"support":null,"ref":"마가복음 15:16-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"군인들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"군인들"},{"action":"turn","duration":1.2,"actor":"군인들"},{"action":"speak","duration":1.5,"actor":"군인들"},{"action":"point","duration":1.8,"actor":"군인들"},{"action":"listen","duration":1.5,"actor":"군인들"},{"action":"lower","duration":1.2,"actor":"군인들"}],"duration":8.2,"support":null,"ref":"마가복음 15:16-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.15.1"
+      ]
     },
     {
       "id": "ot-mrk-15-2",
@@ -436,7 +472,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"crucifixion","lead":"백부장","target":null,"mode":"reconstruction","setting":"hills","effect":"veil-dark","emotion":"sad","prop":"cross","beats":[{"action":"look","duration":1,"actor":"백부장"},{"action":"startle","duration":1.2,"actor":"백부장"},{"action":"lower","duration":1.5,"actor":"백부장"},{"action":"bow","duration":1.8,"actor":"백부장"},{"action":"mourn","duration":1.5,"actor":"백부장"},{"action":"wait","duration":1.2,"actor":"백부장"}],"duration":8.2,"support":null,"ref":"마가복음 15:33-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"crucifixion","lead":"백부장","target":null,"mode":"reconstruction","setting":"hills","effect":"veil-dark","emotion":"sad","prop":"cross","beats":[{"action":"look","duration":1,"actor":"백부장"},{"action":"startle","duration":1.2,"actor":"백부장"},{"action":"lower","duration":1.5,"actor":"백부장"},{"action":"bow","duration":1.8,"actor":"백부장"},{"action":"mourn","duration":1.5,"actor":"백부장"},{"action":"wait","duration":1.2,"actor":"백부장"}],"duration":8.2,"support":null,"ref":"마가복음 15:33-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.15.2"
+      ]
     },
     {
       "id": "ot-mrk-15-3",
@@ -464,7 +503,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"burial","lead":"아리마대 요셉","target":null,"mode":"reconstruction","setting":"garden","effect":"burial","emotion":"sad","prop":"tomb","beats":[{"action":"look","duration":1,"actor":"아리마대 요셉"},{"action":"lower","duration":1.2,"actor":"아리마대 요셉"},{"action":"carry","duration":1.5,"actor":"아리마대 요셉"},{"action":"place","duration":1.8,"actor":"아리마대 요셉"},{"action":"mourn","duration":1.5,"actor":"아리마대 요셉"},{"action":"bow","duration":1.2,"actor":"아리마대 요셉"}],"duration":8.2,"support":null,"ref":"마가복음 15:42-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"burial","lead":"아리마대 요셉","target":null,"mode":"reconstruction","setting":"garden","effect":"burial","emotion":"sad","prop":"tomb","beats":[{"action":"look","duration":1,"actor":"아리마대 요셉"},{"action":"lower","duration":1.2,"actor":"아리마대 요셉"},{"action":"carry","duration":1.5,"actor":"아리마대 요셉"},{"action":"place","duration":1.8,"actor":"아리마대 요셉"},{"action":"mourn","duration":1.5,"actor":"아리마대 요셉"},{"action":"bow","duration":1.2,"actor":"아리마대 요셉"}],"duration":8.2,"support":null,"ref":"마가복음 15:42-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "mrk.15.3"
+      ]
     },
     {
       "id": "ot-voice-3",
@@ -746,5 +788,1875 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-mrk-1-0",
+      "code": "mrk",
+      "chapter": 1,
+      "title": "복음의 시작",
+      "actors": [
+        "요한"
+      ],
+      "object": "water-supply",
+      "ref": "마가복음 1:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "mrk.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "광야의 요한과 세례, 하늘의 음성, 사십 일의 시험까지 이어져요."
+      ],
+      "study": "광야의 요한과 세례, 하늘의 음성, 사십 일의 시험까지 이어져요. 마가는 서두에서 하나님의 아들을 밝히고 성령이 곧바로 광야로 이끄는 속도로 쓰고 있어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"baptism","lead":"요한","target":null,"mode":"reconstruction","setting":"water","effect":"baptism","emotion":"gentle","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"요한"},{"action":"walk","duration":1.2,"actor":"요한"},{"action":"kneel","duration":1.5,"actor":"요한"},{"action":"touch","duration":1.8,"actor":"요한"},{"action":"rise","duration":1.5,"actor":"요한"},{"action":"bow","duration":1.2,"actor":"요한"}],"duration":8.2,"ref":"마가복음 1:1-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-1-2",
+      "code": "mrk",
+      "chapter": 1,
+      "title": "가버나움의 하루",
+      "actors": [
+        "예수",
+        "시몬의 장모"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 1:21-34",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "sourceUnits": [
+        "mrk.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "안식일 가버나움 회당에서 권위 있게 가르치고 귀신을 쫓으세요."
+      ],
+      "study": "안식일 가버나움 회당에서 권위 있게 가르치고 귀신을 쫓으세요. 그날 저녁 문 앞에 몰려온 병자들을 고치세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"시몬의 장모","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 1:21-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-1-3",
+      "code": "mrk",
+      "chapter": 1,
+      "title": "새벽 기도와 나병환자",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 1:35-45",
+      "verseNumbers": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "sourceUnits": [
+        "mrk.1.3"
+      ],
+      "actions": {},
+      "lines": [
+        "새벽 한적한 곳에서 기도하신 뒤 다른 마을로 전도하러 가세요."
+      ],
+      "study": "새벽 한적한 곳에서 기도하신 뒤 다른 마을로 전도하러 가세요. 나병 환자를 만지고 깨끗하게 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"pray","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"pray","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 1:35-45","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-2-0",
+      "code": "mrk",
+      "chapter": 2,
+      "title": "지붕을 뚫은 믿음",
+      "actors": [
+        "네 사람",
+        "중풍병자"
+      ],
+      "object": "mat",
+      "ref": "마가복음 2:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "mrk.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "네 사람이 지붕을 뜯어 중풍병자를 내리자 먼저 죄를 용서하세요."
+      ],
+      "study": "네 사람이 지붕을 뜯어 중풍병자를 내리자 먼저 죄를 용서하세요. 서기관들의 의심에 병을 고쳐 권세를 보이세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"roof-lower","lead":"네 사람","target":"중풍병자","mode":"reconstruction","setting":"chamber","effect":"roof-lower","emotion":"surprised","prop":"mat","beats":[{"action":"look","duration":1,"actor":"네 사람"},{"action":"grasp","duration":1.2,"actor":"네 사람"},{"action":"lower","duration":1.5,"actor":"네 사람"},{"action":"lower","duration":1.8,"actor":"네 사람"},{"action":"release","duration":1.5,"actor":"네 사람"},{"action":"look","duration":1.2,"actor":"네 사람"}],"duration":8.2,"ref":"마가복음 2:1-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-2-1",
+      "code": "mrk",
+      "chapter": 2,
+      "title": "레위를 부르심",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 2:13-17",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "mrk.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "세관에 앉은 세리 레위를 따르라 부르세요."
+      ],
+      "study": "세관에 앉은 세리 레위를 따르라 부르세요. 죄인과 먹는다는 비난에 건강한 자가 아니라 병든 자에게 의사가 필요하다고 답하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"follow","lead":"예수","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"예수"},{"action":"receive","duration":1.2,"actor":"예수"},{"action":"turn","duration":1.5,"actor":"예수"},{"action":"walk","duration":1.8,"actor":"예수"},{"action":"walk","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 2:13-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-2-2",
+      "code": "mrk",
+      "chapter": 2,
+      "title": "신랑과 새 부대",
+      "actors": [],
+      "object": "robe",
+      "ref": "마가복음 2:18-22",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "sourceUnits": [
+        "mrk.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "신랑이 있는 동안은 금식하지 않아요."
+      ],
+      "study": "신랑이 있는 동안은 금식하지 않아요. 낡은 옷과 헌 부대에는 새것을 담을 수 없듯, 새 가르침은 새 틀이 필요해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"parable","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"robe","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 2:18-22","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-3-0",
+      "code": "mrk",
+      "chapter": 3,
+      "title": "손 마른 사람",
+      "actors": [
+        "예수",
+        "손 마른 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 3:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "mrk.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "안식일에 손 마른 사람을 고치시자, 바리새인들이 헤롯 당원과 손잡고 예수님을 죽일 의논을 시작해요."
+      ],
+      "study": "안식일에 손 마른 사람을 고치시자, 바리새인들이 헤롯 당원과 손잡고 예수님을 죽일 의논을 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"손 마른 사람","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 3:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-3-1",
+      "code": "mrk",
+      "chapter": 3,
+      "title": "따르는 큰 무리",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 3:7-12",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "mrk.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "갈릴리뿐 아니라 먼 지방에서도 병자들이 몰려와요."
+      ],
+      "study": "갈릴리뿐 아니라 먼 지방에서도 병자들이 몰려와요. 귀신들이 하나님의 아들이라 하면 예수님이 입을 막으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":null,"mode":"illustration","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 3:7-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-3-2",
+      "code": "mrk",
+      "chapter": 3,
+      "title": "열두 제자를 세우심",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 3:13-19",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "mrk.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "산에 올라 열둘을 세우세요."
+      ],
+      "study": "산에 올라 열둘을 세우세요. 곁에 있게 하고 전도와 귀신 쫓는 일을 위해서예요. 시몬은 베드로, 야고보와 요한은 우레의 아들이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"appoint","lead":"예수","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"receive","duration":1.5,"actor":"예수"},{"action":"wear","duration":1.8,"actor":"예수"},{"action":"rise","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 3:13-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-3-3",
+      "code": "mrk",
+      "chapter": 3,
+      "title": "바알세불 논쟁",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 3:20-30",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "sourceUnits": [
+        "mrk.3.3"
+      ],
+      "actions": {},
+      "lines": [
+        "서기관들은 귀신 왕의 힘이라 해요."
+      ],
+      "study": "서기관들은 귀신 왕의 힘이라 해요. 예수님은 갈라진 나라는 서지 못한다 하시고 성령을 모독하는 죄를 경고하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"report","lead":"예수","target":null,"mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"speak","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"listen","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 3:20-30","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-3-4",
+      "code": "mrk",
+      "chapter": 3,
+      "title": "참 가족",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "마가복음 3:31-35",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "sourceUnits": [
+        "mrk.3.4"
+      ],
+      "actions": {},
+      "lines": [
+        "어머니와 동생들이 찾아와도 하나님 뜻을 행하는 사람이 내 형제와 자매와 어머니라고 하세요."
+      ],
+      "study": "어머니와 동생들이 찾아와도 하나님 뜻을 행하는 사람이 내 형제와 자매와 어머니라고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 3:31-35","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-4-0",
+      "code": "mrk",
+      "chapter": 4,
+      "title": "씨 뿌리는 비유",
+      "actors": [],
+      "object": "seed",
+      "ref": "마가복음 4:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "mrk.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "씨는 같지만 땅이 달라 열매가 달라요."
+      ],
+      "study": "씨는 같지만 땅이 달라 열매가 달라요. 말씀은 사탄에게 빼앗기거나 환난과 염려에 막히지만, 좋은 땅에서는 크게 열매 맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"parable","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"seed","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 4:1-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-4-1",
+      "code": "mrk",
+      "chapter": 4,
+      "title": "등불과 헤아림",
+      "actors": [],
+      "object": "lamp",
+      "ref": "마가복음 4:21-25",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "mrk.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "등불은 등경 위에 두고, 감추어진 것은 드러나요."
+      ],
+      "study": "등불은 등경 위에 두고, 감추어진 것은 드러나요. 들은 대로 헤아림을 받으니 어떻게 듣는지 조심하라고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"parable","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"lamp","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 4:21-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-4-2",
+      "code": "mrk",
+      "chapter": 4,
+      "title": "자라는 씨와 겨자씨",
+      "actors": [],
+      "object": "tree",
+      "ref": "마가복음 4:26-34",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "sourceUnits": [
+        "mrk.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "사람이 잠든 사이에도 씨는 자라고, 겨자씨는 작아도 큰 나무가 돼요."
+      ],
+      "study": "사람이 잠든 사이에도 씨는 자라고, 겨자씨는 작아도 큰 나무가 돼요. 하나님 나라는 눈에 안 띄게 시작해 크게 자라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"parable","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tree","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 4:26-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-5-0",
+      "code": "mrk",
+      "chapter": 5,
+      "title": "군대 귀신",
+      "actors": [
+        "예수",
+        "군대 귀신 들린 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 5:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "mrk.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "무덤가의 귀신 들린 사람에게서 군대 귀신을 쫓아내시자 돼지 떼가 바다에 빠져요."
+      ],
+      "study": "무덤가의 귀신 들린 사람에게서 군대 귀신을 쫓아내시자 돼지 떼가 바다에 빠져요. 고침받은 사람은 데가볼리에 가서 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"군대 귀신 들린 사람","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 5:1-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-5-2",
+      "code": "mrk",
+      "chapter": 5,
+      "title": "달리다굼",
+      "actors": [
+        "예수",
+        "야이로의 딸"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 5:35-43",
+      "verseNumbers": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sourceUnits": [
+        "mrk.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "죽었다는 소식에도 믿기만 하라 하시고, 베드로, 야고보, 요한과 함께 들어가 아람말로 달리다굼 하자 소녀가 살아나요."
+      ],
+      "study": "죽었다는 소식에도 믿기만 하라 하시고, 베드로, 야고보, 요한과 함께 들어가 아람말로 달리다굼 하자 소녀가 살아나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"raise-dead","lead":"예수","target":"야이로의 딸","mode":"reconstruction","setting":"chamber","effect":"resurrection","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"pray","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"reach","duration":1.8,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"portrayals":{"야이로의 딸":{"scale":0.7,"hideBeard":true}},"ref":"마가복음 5:35-43","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-6-0",
+      "code": "mrk",
+      "chapter": 6,
+      "title": "고향의 배척",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 6:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "mrk.6.0"
+      ],
+      "actions": {},
+      "lines": [
+        "고향 사람들은 목수라며 믿지 않아요."
+      ],
+      "study": "고향 사람들은 목수라며 믿지 않아요. 예수님은 그들의 믿음 없음에 놀라 많은 능력을 행하지 못하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"refuse","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"halt","duration":1.5,"actor":"예수"},{"action":"retreat","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 6:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-6-1",
+      "code": "mrk",
+      "chapter": 6,
+      "title": "열둘을 보내심",
+      "actors": [
+        "예수"
+      ],
+      "object": "staff",
+      "ref": "마가복음 6:7-13",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "mrk.6.1"
+      ],
+      "actions": {},
+      "lines": [
+        "열둘을 둘씩 보내 회개를 전하고 귀신을 쫓게 하세요."
+      ],
+      "study": "열둘을 둘씩 보내 회개를 전하고 귀신을 쫓게 하세요. 지팡이와 신발만 갖고 가고 받아 주지 않는 곳은 발의 먼지를 떨라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"instruct","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 6:7-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-6-2",
+      "code": "mrk",
+      "chapter": 6,
+      "title": "세례 요한의 죽음",
+      "actors": [
+        "헤롯",
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 6:14-29",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "sourceUnits": [
+        "mrk.6.2"
+      ],
+      "actions": {},
+      "lines": [
+        "헤롯은 요한을 옳은 사람으로 알았지만 헤로디아의 원한과 잔치의 맹세로 요한의 목을 베요."
+      ],
+      "study": "헤롯은 요한을 옳은 사람으로 알았지만 헤로디아의 원한과 잔치의 맹세로 요한의 목을 베요. 선지자가 배척당한 이야기예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"warning","lead":"헤롯","target":"세례 요한","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"헤롯"},{"action":"turn","duration":1.2,"actor":"헤롯"},{"action":"speak","duration":1.5,"actor":"헤롯"},{"action":"point","duration":1.8,"actor":"헤롯"},{"action":"listen","duration":1.5,"actor":"헤롯"},{"action":"lower","duration":1.2,"actor":"헤롯"}],"duration":8.2,"ref":"마가복음 6:14-29","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-6-3",
+      "code": "mrk",
+      "chapter": 6,
+      "title": "오천 명을 먹이심",
+      "actors": [
+        "예수"
+      ],
+      "object": "bread",
+      "ref": "마가복음 6:30-44",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "sourceUnits": [
+        "mrk.6.3"
+      ],
+      "actions": {},
+      "lines": [
+        "푸른 잔디에 앉은 오천 명을 떡 다섯 개와 물고기 두 개로 먹이세요."
+      ],
+      "study": "푸른 잔디에 앉은 오천 명을 떡 다섯 개와 물고기 두 개로 먹이세요. 남은 조각이 열두 바구니예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"feed-many","lead":"예수","target":null,"mode":"reconstruction","setting":"pasture","effect":"feed-many","emotion":"joy","prop":"bread","beats":[{"action":"gather","duration":1,"actor":"예수"},{"action":"lift","duration":1.2,"actor":"예수"},{"action":"bless","duration":1.5,"actor":"예수"},{"action":"cut","duration":1.8,"actor":"예수"},{"action":"extend","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"basketCount":12,"ref":"마가복음 6:30-44","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-6-4",
+      "code": "mrk",
+      "chapter": 6,
+      "title": "물 위를 걸으심",
+      "actors": [
+        "예수"
+      ],
+      "object": "rope",
+      "ref": "마가복음 6:45-56",
+      "verseNumbers": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "sourceUnits": [
+        "mrk.6.4"
+      ],
+      "actions": {},
+      "lines": [
+        "산에서 기도하시다 밤중에 호수 위를 걸어 제자들에게 가세요."
+      ],
+      "study": "산에서 기도하시다 밤중에 호수 위를 걸어 제자들에게 가세요. 유령인 줄 놀란 제자들에게 안심하라 나다 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"cross","lead":"예수","target":null,"mode":"reconstruction","setting":"water","effect":"water","emotion":"determined","prop":"rope","beats":[{"action":"look","duration":1,"actor":"예수"},{"action":"brace","duration":1.2,"actor":"예수"},{"action":"walk","duration":1.5,"actor":"예수"},{"action":"walk","duration":1.8,"actor":"예수"},{"action":"rise","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 6:45-56","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-7-0",
+      "code": "mrk",
+      "chapter": 7,
+      "title": "장로들의 전통",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 7:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "mrk.7.0"
+      ],
+      "actions": {},
+      "lines": [
+        "손 씻기 같은 장로들의 전통을 이유로 따지자, 예수님이 고르반 예처럼 전통이 하나님 말씀을 폐한다고 하세요."
+      ],
+      "study": "손 씻기 같은 장로들의 전통을 이유로 따지자, 예수님이 고르반 예처럼 전통이 하나님 말씀을 폐한다고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"report","lead":"예수","target":null,"mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"speak","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"listen","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 7:1-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-7-1",
+      "code": "mrk",
+      "chapter": 7,
+      "title": "사람을 더럽히는 것",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "마가복음 7:14-23",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sourceUnits": [
+        "mrk.7.1"
+      ],
+      "actions": {},
+      "lines": [
+        "밖에서 들어가는 음식이 아니라 마음에서 나오는 악한 생각이 사람을 더럽혀요."
+      ],
+      "study": "밖에서 들어가는 음식이 아니라 마음에서 나오는 악한 생각이 사람을 더럽혀요. 마가는 이 말씀이 모든 음식을 깨끗하게 한다고 덧붙여요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 7:14-23","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-7-2",
+      "code": "mrk",
+      "chapter": 7,
+      "title": "수로보니게 여인",
+      "actors": [
+        "예수",
+        "수로보니게 여인"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 7:24-30",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "sourceUnits": [
+        "mrk.7.2"
+      ],
+      "actions": {},
+      "lines": [
+        "이방 여인이 개도 부스러기를 먹는다며 물러서지 않자, 예수님이 그 말 때문에 딸에게서 귀신이 나갔다고 하세요."
+      ],
+      "study": "이방 여인이 개도 부스러기를 먹는다며 물러서지 않자, 예수님이 그 말 때문에 딸에게서 귀신이 나갔다고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"petition","lead":"수로보니게 여인","target":"예수","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"수로보니게 여인"},{"action":"kneel","duration":1.2,"actor":"수로보니게 여인"},{"action":"lift","duration":1.5,"actor":"수로보니게 여인"},{"action":"pray","duration":1.8,"actor":"수로보니게 여인"},{"action":"pray","duration":1.5,"actor":"수로보니게 여인"},{"action":"bow","duration":1.2,"actor":"수로보니게 여인"}],"duration":8.2,"ref":"마가복음 7:24-30","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-7-3",
+      "code": "mrk",
+      "chapter": 7,
+      "title": "에바다",
+      "actors": [
+        "예수",
+        "귀먹은 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 7:31-37",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "sourceUnits": [
+        "mrk.7.3"
+      ],
+      "actions": {},
+      "lines": [
+        "귀먹고 말 더듬는 사람을 따로 데리고 가 귀와 혀를 만지며 에바다 하시자 열려요."
+      ],
+      "study": "귀먹고 말 더듬는 사람을 따로 데리고 가 귀와 혀를 만지며 에바다 하시자 열려요. 사람들은 놀라서 더 널리 소문을 퍼뜨려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"귀먹은 사람","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 7:31-37","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-8-0",
+      "code": "mrk",
+      "chapter": 8,
+      "title": "사천 명을 먹이심",
+      "actors": [
+        "예수"
+      ],
+      "object": "bread",
+      "ref": "마가복음 8:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "mrk.8.0"
+      ],
+      "actions": {},
+      "lines": [
+        "사흘 동안 함께한 무리를 불쌍히 여겨 떡 일곱 개로 사천 명을 먹이세요."
+      ],
+      "study": "사흘 동안 함께한 무리를 불쌍히 여겨 떡 일곱 개로 사천 명을 먹이세요. 먹고 남은 조각이 일곱 광주리예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"feed-many","lead":"예수","target":null,"mode":"reconstruction","setting":"pasture","effect":"feed-many","emotion":"joy","prop":"bread","beats":[{"action":"gather","duration":1,"actor":"예수"},{"action":"lift","duration":1.2,"actor":"예수"},{"action":"bless","duration":1.5,"actor":"예수"},{"action":"cut","duration":1.8,"actor":"예수"},{"action":"extend","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"basketCount":7,"ref":"마가복음 8:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-8-2",
+      "code": "mrk",
+      "chapter": 8,
+      "title": "벳새다 맹인",
+      "actors": [
+        "예수",
+        "벳새다 맹인"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 8:22-26",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "sourceUnits": [
+        "mrk.8.2"
+      ],
+      "actions": {},
+      "lines": [
+        "벳새다 맹인을 두 번 안수해 밝히 보게 하세요."
+      ],
+      "study": "벳새다 맹인을 두 번 안수해 밝히 보게 하세요. 제자들도 단계적으로 깨닫는다고 읽는 견해가 많아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"벳새다 맹인","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 8:22-26","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-8-3",
+      "code": "mrk",
+      "chapter": 8,
+      "title": "베드로의 고백",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 8:27-33",
+      "verseNumbers": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "sourceUnits": [
+        "mrk.8.3"
+      ],
+      "actions": {},
+      "lines": [
+        "베드로가 그리스도시라 고백하자 예수님이 고난과 죽음, 부활을 처음 말씀하세요."
+      ],
+      "study": "베드로가 그리스도시라 고백하자 예수님이 고난과 죽음, 부활을 처음 말씀하세요. 베드로가 말리자 사탄아 물러가라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"confess","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"},{"action":"kneel","duration":1.5,"actor":"예수"},{"action":"speak","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 8:27-33","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-8-4",
+      "code": "mrk",
+      "chapter": 8,
+      "title": "자기 십자가",
+      "actors": [],
+      "object": "cross",
+      "ref": "마가복음 8:34-38",
+      "verseNumbers": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "sourceUnits": [
+        "mrk.8.4"
+      ],
+      "actions": {},
+      "lines": [
+        "자기를 부인하고 십자가를 지고 따르라고 하세요."
+      ],
+      "study": "자기를 부인하고 십자가를 지고 따르라고 하세요. 온 세상을 얻어도 목숨을 잃으면 소용없어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 8:34-38","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-9-0",
+      "code": "mrk",
+      "chapter": 9,
+      "title": "변형되심",
+      "actors": [
+        "예수",
+        "모세",
+        "엘리야"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 9:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "mrk.9.0"
+      ],
+      "actions": {},
+      "lines": [
+        "산 위에서 예수님이 희게 빛나고 모세와 엘리야가 나타나요."
+      ],
+      "study": "산 위에서 예수님이 희게 빛나고 모세와 엘리야가 나타나요. 하늘 음성이 사랑하는 아들의 말을 들으라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"transfiguration","lead":"예수","target":"모세","mode":"reconstruction","setting":"hills","effect":"transfiguration","emotion":"surprised","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"},{"action":"stand","duration":1.5,"actor":"예수"},{"action":"listen","duration":1.8,"actor":"예수"},{"action":"bow","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 9:1-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-9-1",
+      "code": "mrk",
+      "chapter": 9,
+      "title": "믿음 없는 것을 도우소서",
+      "actors": [
+        "예수",
+        "귀신 들린 아이"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 9:14-29",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "sourceUnits": [
+        "mrk.9.1"
+      ],
+      "actions": {},
+      "lines": [
+        "귀신 들린 아이의 아버지가 믿음 없는 나를 도우소서 하고 외쳐요."
+      ],
+      "study": "귀신 들린 아이의 아버지가 믿음 없는 나를 도우소서 하고 외쳐요. 예수님이 귀신을 꾸짖어 쫓고 아이를 일으키세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"귀신 들린 아이","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 9:14-29","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-9-2",
+      "code": "mrk",
+      "chapter": 9,
+      "title": "누가 크냐",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "마가복음 9:30-37",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "sourceUnits": [
+        "mrk.9.2"
+      ],
+      "actions": {},
+      "lines": [
+        "죽음과 부활을 다시 말씀하시지만 제자들은 누가 크냐고 다퉈요."
+      ],
+      "study": "죽음과 부활을 다시 말씀하시지만 제자들은 누가 크냐고 다퉈요. 예수님은 섬기는 자가 첫째라며 어린아이를 안으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 9:30-37","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-9-3",
+      "code": "mrk",
+      "chapter": 9,
+      "title": "실족하게 하지 말라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "마가복음 9:38-50",
+      "verseNumbers": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "sourceUnits": [
+        "mrk.9.3"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님 이름으로 귀신을 쫓는 낯선 사람을 막지 말라 하시고, 작은 자를 실족하게 하지 말며 죄는 과감히 끊어 내라 하세요."
+      ],
+      "study": "예수님 이름으로 귀신을 쫓는 낯선 사람을 막지 말라 하시고, 작은 자를 실족하게 하지 말며 죄는 과감히 끊어 내라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 9:38-50","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-10-0",
+      "code": "mrk",
+      "chapter": 10,
+      "title": "이혼과 어린아이",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 10:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "mrk.10.0"
+      ],
+      "actions": {},
+      "lines": [
+        "이혼을 시험하는 바리새인에게 창조 때의 한 몸을 말씀하세요."
+      ],
+      "study": "이혼을 시험하는 바리새인에게 창조 때의 한 몸을 말씀하세요. 막는 제자들을 보고 화를 내며 어린아이들을 안고 축복하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"blessing","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"lift","duration":1.2,"actor":"예수"},{"action":"bless","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 10:1-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-10-1",
+      "code": "mrk",
+      "chapter": 10,
+      "title": "재물이 많은 사람",
+      "actors": [
+        "재물이 많은 사람",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 10:17-31",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "sourceUnits": [
+        "mrk.10.1"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님이 사랑스럽게 보신 부자에게 재산을 팔고 따르라 하시자 그는 근심하며 떠나요."
+      ],
+      "study": "예수님이 사랑스럽게 보신 부자에게 재산을 팔고 따르라 하시자 그는 근심하며 떠나요. 사람은 못해도 하나님은 다 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"refuse","lead":"재물이 많은 사람","target":"예수","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"재물이 많은 사람"},{"action":"turn","duration":1.2,"actor":"재물이 많은 사람"},{"action":"halt","duration":1.5,"actor":"재물이 많은 사람"},{"action":"retreat","duration":1.8,"actor":"재물이 많은 사람"},{"action":"lower","duration":1.5,"actor":"재물이 많은 사람"},{"action":"stand","duration":1.2,"actor":"재물이 많은 사람"}],"duration":8.2,"ref":"마가복음 10:17-31","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-11-1",
+      "code": "mrk",
+      "chapter": 11,
+      "title": "무화과나무와 성전",
+      "actors": [
+        "예수"
+      ],
+      "object": "fig-tree",
+      "ref": "마가복음 11:12-19",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "mrk.11.1"
+      ],
+      "actions": {},
+      "lines": [
+        "열매 없는 무화과나무를 저주하고, 성전에서 장사꾼을 내쫓으세요."
+      ],
+      "study": "열매 없는 무화과나무를 저주하고, 성전에서 장사꾼을 내쫓으세요. 성전은 모든 민족이 기도하는 집이어야 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"wither","lead":"예수","target":null,"mode":"reconstruction","setting":"garden","effect":"wither","emotion":"worried","prop":"fig-tree","beats":[{"action":"walk","duration":1,"actor":"예수"},{"action":"inspect","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"look","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 11:12-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-11-3",
+      "code": "mrk",
+      "chapter": 11,
+      "title": "권위에 대한 질문",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 11:27-33",
+      "verseNumbers": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "sourceUnits": [
+        "mrk.11.3"
+      ],
+      "actions": {},
+      "lines": [
+        "권위를 따지는 지도자들에게 요한의 세례가 어디서 왔는지 되물으세요."
+      ],
+      "study": "권위를 따지는 지도자들에게 요한의 세례가 어디서 왔는지 되물으세요. 그들은 곤란해서 대답하지 못해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"report","lead":"예수","target":null,"mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"speak","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"listen","duration":1.8,"actor":"예수"},{"action":"lower","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 11:27-33","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-12-0",
+      "code": "mrk",
+      "chapter": 12,
+      "title": "포도원 농부 비유",
+      "actors": [],
+      "object": "stone",
+      "ref": "마가복음 12:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "mrk.12.0"
+      ],
+      "actions": {},
+      "lines": [
+        "농부들이 종들과 사랑하는 아들까지 죽이는 비유로 이스라엘 지도자들을 지적하세요."
+      ],
+      "study": "농부들이 종들과 사랑하는 아들까지 죽이는 비유로 이스라엘 지도자들을 지적하세요. 버린 돌이 머릿돌이 된다고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"parable","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 12:1-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-12-1",
+      "code": "mrk",
+      "chapter": 12,
+      "title": "세금과 부활",
+      "actors": [],
+      "object": "coin",
+      "ref": "마가복음 12:13-27",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "sourceUnits": [
+        "mrk.12.1"
+      ],
+      "actions": {},
+      "lines": [
+        "세금에 대한 올무에는 데나리온을 보이며 하나님의 것을 하나님께 드리라 하세요."
+      ],
+      "study": "세금에 대한 올무에는 데나리온을 보이며 하나님의 것을 하나님께 드리라 하세요. 사두개인에게는 하나님이 산 자의 하나님이라 답하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"coin","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 12:13-27","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-12-2",
+      "code": "mrk",
+      "chapter": 12,
+      "title": "첫째 계명",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "마가복음 12:28-34",
+      "verseNumbers": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "sourceUnits": [
+        "mrk.12.2"
+      ],
+      "actions": {},
+      "lines": [
+        "서기관이 가장 큰 계명을 묻자 하나님 사랑과 이웃 사랑이라 하세요."
+      ],
+      "study": "서기관이 가장 큰 계명을 묻자 하나님 사랑과 이웃 사랑이라 하세요. 그가 옳다 하자 하나님 나라에서 멀지 않다고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 12:28-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-12-3",
+      "code": "mrk",
+      "chapter": 12,
+      "title": "서기관을 삼가라",
+      "actors": [
+        "예수"
+      ],
+      "object": "house",
+      "ref": "마가복음 12:35-40",
+      "verseNumbers": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sourceUnits": [
+        "mrk.12.3"
+      ],
+      "actions": {},
+      "lines": [
+        "다윗이 주라 부른 그리스도가 어떻게 그의 아들이냐고 물으세요."
+      ],
+      "study": "다윗이 주라 부른 그리스도가 어떻게 그의 아들이냐고 물으세요. 겉으로 높은 척하며 과부의 집을 삼키는 서기관을 조심하라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"warning","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 12:35-40","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-12-4",
+      "code": "mrk",
+      "chapter": 12,
+      "title": "과부의 두 렙돈",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 12:41-44",
+      "verseNumbers": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "sourceUnits": [
+        "mrk.12.4"
+      ],
+      "actions": {},
+      "lines": [
+        "연보궤 앞에서 부자들은 많이 넣었지만 가난한 과부는 두 렙돈, 곧 전부를 넣었어요."
+      ],
+      "study": "연보궤 앞에서 부자들은 많이 넣었지만 가난한 과부는 두 렙돈, 곧 전부를 넣었어요. 예수님은 그 마음을 가장 크게 보세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"coins","lead":"예수","target":null,"mode":"reconstruction","setting":"temple","effect":"coins","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"예수"},{"action":"grasp","duration":1.2,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"drop","duration":1.8,"actor":"예수"},{"action":"count","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 12:41-44","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-13-0",
+      "code": "mrk",
+      "chapter": 13,
+      "title": "성전이 무너짐",
+      "actors": [
+        "예수"
+      ],
+      "object": "stone",
+      "ref": "마가복음 13:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "sourceUnits": [
+        "mrk.13.0"
+      ],
+      "actions": {},
+      "lines": [
+        "제자가 성전의 큰 돌을 감탄하자 돌 하나도 남지 않게 무너질 거라 하세요."
+      ],
+      "study": "제자가 성전의 큰 돌을 감탄하자 돌 하나도 남지 않게 무너질 거라 하세요. 주후 70년 로마군이 이 일을 이루었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"vision-warning","lead":"예수","target":null,"mode":"reconstruction","setting":"night","effect":"symbol","emotion":"determined","prop":"stone","beats":[{"action":"read","duration":1,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"halt","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 13:1-2","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-13-1",
+      "code": "mrk",
+      "chapter": 13,
+      "title": "재난의 시작",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 13:3-13",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "mrk.13.1"
+      ],
+      "actions": {},
+      "lines": [
+        "네 제자가 올리브 산에서 징조를 묻자 미혹을 조심하라, 전쟁과 지진은 시작일 뿐이라 하세요."
+      ],
+      "study": "네 제자가 올리브 산에서 징조를 묻자 미혹을 조심하라, 전쟁과 지진은 시작일 뿐이라 하세요. 성령이 증언할 말을 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"vision-warning","lead":"예수","target":null,"mode":"reconstruction","setting":"night","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"halt","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 13:3-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-13-2",
+      "code": "mrk",
+      "chapter": 13,
+      "title": "큰 환난",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 13:14-23",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sourceUnits": [
+        "mrk.13.2"
+      ],
+      "actions": {},
+      "lines": [
+        "멸망의 가증한 것이 서면 유대 사람은 산으로 도망하라 하세요."
+      ],
+      "study": "멸망의 가증한 것이 서면 유대 사람은 산으로 도망하라 하세요. 이전에 없던 큰 환난이 오고 거짓 그리스도들도 많아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"vision-warning","lead":"예수","target":null,"mode":"reconstruction","setting":"night","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"},{"action":"point","duration":1.5,"actor":"예수"},{"action":"halt","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 13:14-23","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-13-3",
+      "code": "mrk",
+      "chapter": 13,
+      "title": "인자가 오심",
+      "actors": [
+        "예수"
+      ],
+      "object": "cloud",
+      "ref": "마가복음 13:24-31",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "sourceUnits": [
+        "mrk.13.3"
+      ],
+      "actions": {},
+      "lines": [
+        "환난 뒤에 인자가 구름을 타고 영광으로 오세요."
+      ],
+      "study": "환난 뒤에 인자가 구름을 타고 영광으로 오세요. 하늘과 땅은 없어져도 그 말씀은 없어지지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"예수","target":null,"mode":"reconstruction","setting":"night","effect":"scroll","emotion":"surprised","prop":"cloud","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"look","duration":1.2,"actor":"예수"},{"action":"startle","duration":1.5,"actor":"예수"},{"action":"read","duration":1.8,"actor":"예수"},{"action":"write","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 13:24-31","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-13-4",
+      "code": "mrk",
+      "chapter": 13,
+      "title": "깨어 있으라",
+      "actors": [],
+      "object": "house",
+      "ref": "마가복음 13:32-37",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "sourceUnits": [
+        "mrk.13.4"
+      ],
+      "actions": {},
+      "lines": [
+        "그날과 때는 아버지만 아세요."
+      ],
+      "study": "그날과 때는 아버지만 아세요. 집 떠난 주인을 기다리는 문지기처럼 졸지 말고 깨어 있으라고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"마가복음 13:32-37","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-14-2",
+      "code": "mrk",
+      "chapter": 14,
+      "title": "겟세마네",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 14:32-52",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "sourceUnits": [
+        "mrk.14.2"
+      ],
+      "actions": {},
+      "lines": [
+        "겟세마네에서 아빠 아버지라 부르며 기도하세요."
+      ],
+      "study": "겟세마네에서 아빠 아버지라 부르며 기도하세요. 졸던 제자들 곁에서 유다의 입맞춤으로 잡히고 모두 도망가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"pray","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"lift","duration":1.5,"actor":"예수"},{"action":"pray","duration":1.8,"actor":"예수"},{"action":"pray","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 14:32-52","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-14-3",
+      "code": "mrk",
+      "chapter": 14,
+      "title": "공회의 정죄",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 14:53-65",
+      "verseNumbers": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "sourceUnits": [
+        "mrk.14.3"
+      ],
+      "actions": {},
+      "lines": [
+        "공회에서 증언이 어긋나자 대제사장이 그리스도냐고 물어요."
+      ],
+      "study": "공회에서 증언이 어긋나자 대제사장이 그리스도냐고 물어요. 예수님이 내가 그라고 답하시자 사형 판결을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"judgment","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 14:53-65","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-14-4",
+      "code": "mrk",
+      "chapter": 14,
+      "title": "베드로의 부인",
+      "actors": [
+        "베드로"
+      ],
+      "object": "house",
+      "ref": "마가복음 14:66-72",
+      "verseNumbers": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "sourceUnits": [
+        "mrk.14.4"
+      ],
+      "actions": {},
+      "lines": [
+        "베드로가 대제사장 집 마당에서 세 번 부인하고 닭이 두 번 울자 예수님의 말씀을 기억하며 울어요."
+      ],
+      "study": "베드로가 대제사장 집 마당에서 세 번 부인하고 닭이 두 번 울자 예수님의 말씀을 기억하며 울어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"lament","lead":"베드로","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"house","beats":[{"action":"startle","duration":1,"actor":"베드로"},{"action":"lower","duration":1.2,"actor":"베드로"},{"action":"kneel","duration":1.5,"actor":"베드로"},{"action":"cover-mouth","duration":1.8,"actor":"베드로"},{"action":"mourn","duration":1.5,"actor":"베드로"},{"action":"lower","duration":1.2,"actor":"베드로"}],"duration":8.2,"ref":"마가복음 14:66-72","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-15-0",
+      "code": "mrk",
+      "chapter": 15,
+      "title": "빌라도 앞에서",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 15:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "mrk.15.0"
+      ],
+      "actions": {},
+      "lines": [
+        "대제사장들이 예수님을 빌라도에게 넘기고 무리를 부추겨 바라바를 요구해요."
+      ],
+      "study": "대제사장들이 예수님을 빌라도에게 넘기고 무리를 부추겨 바라바를 요구해요. 빌라도는 무리를 기쁘게 하려고 십자가형을 넘겨줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"judgment","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 15:1-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-16-0",
+      "code": "mrk",
+      "chapter": 16,
+      "title": "빈 무덤",
+      "actors": [
+        "흰옷 입은 청년"
+      ],
+      "object": "stone",
+      "ref": "마가복음 16:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sourceUnits": [
+        "mrk.16.0"
+      ],
+      "actions": {},
+      "lines": [
+        "여인들이 무덤에 가니 큰 돌이 굴려져 있고 흰옷 입은 청년이 부활을 알려요."
+      ],
+      "study": "여인들이 무덤에 가니 큰 돌이 굴려져 있고 흰옷 입은 청년이 부활을 알려요. 놀란 여인들은 무서워 도망쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"resurrection","lead":"흰옷 입은 청년","target":null,"mode":"reconstruction","setting":"garden","effect":"empty-tomb","emotion":"surprised","prop":"stone","beats":[{"action":"walk","duration":1,"actor":"흰옷 입은 청년"},{"action":"look","duration":1.2,"actor":"흰옷 입은 청년"},{"action":"startle","duration":1.5,"actor":"흰옷 입은 청년"},{"action":"inspect","duration":1.8,"actor":"흰옷 입은 청년"},{"action":"listen","duration":1.5,"actor":"흰옷 입은 청년"},{"action":"bow","duration":1.2,"actor":"흰옷 입은 청년"}],"duration":8.2,"ref":"마가복음 16:1-8","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-16-1",
+      "code": "mrk",
+      "chapter": 16,
+      "title": "나타나심",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 16:9-14",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "mrk.16.1"
+      ],
+      "actions": {},
+      "lines": [
+        "9~20절은 일부 오래된 사본에는 없지만 교회가 성경 본문으로 받아 읽어 온 부분이에요."
+      ],
+      "study": "9~20절은 일부 오래된 사본에는 없지만 교회가 성경 본문으로 받아 읽어 온 부분이에요. 부활하신 예수님이 막달라 마리아와 두 사람, 열한 제자에게 나타나 믿지 않는 마음을 꾸짖으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"reveal","lead":"예수","target":null,"mode":"reconstruction","setting":"chamber","effect":"light","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"예수"},{"action":"startle","duration":1.2,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"reach","duration":1.8,"actor":"예수"},{"action":"bow","duration":1.5,"actor":"예수"},{"action":"stand","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 16:9-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-mrk-16-2",
+      "code": "mrk",
+      "chapter": 16,
+      "title": "온 천하에 복음을",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "ref": "마가복음 16:15-20",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "mrk.16.2"
+      ],
+      "actions": {},
+      "lines": [
+        "온 천하에 복음을 전하라 하시고 하늘로 올라 하나님 우편에 앉으세요."
+      ],
+      "study": "온 천하에 복음을 전하라 하시고 하늘로 올라 하나님 우편에 앉으세요. 제자들이 전파하며 주께서 함께 역사하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"instruct","lead":"예수","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"turn","duration":1.2,"actor":"예수"},{"action":"speak","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"lower","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마가복음 16:15-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

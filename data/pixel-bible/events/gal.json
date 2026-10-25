@@ -30,7 +30,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"아브라함","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"read","duration":1.2,"actor":"아브라함"},{"action":"look","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"갈라디아서 3:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"아브라함","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"read","duration":1.2,"actor":"아브라함"},{"action":"look","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"갈라디아서 3:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "gal.3.1"
+      ]
     },
     {
       "id": "ot-gal-6-2",
@@ -60,7 +63,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"갈라디아서 6:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"갈라디아서 6:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "gal.6.2"
+      ]
     }
   ],
   "additionalPeople": {
@@ -85,5 +91,553 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-gal-1-0",
+      "code": "gal",
+      "chapter": 1,
+      "title": "다른 복음은 없다",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 1:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "gal.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 감사 인사도 없이 갈라디아 교회가 그렇게 빨리 다른 복음으로 옮겨 가는 것에 놀라요."
+      ],
+      "study": "바울은 감사 인사도 없이 갈라디아 교회가 그렇게 빨리 다른 복음으로 옮겨 가는 것에 놀라요. 복음을 뒤틀어 혼란하게 하는 이들은 천사라도 저주를 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 1:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-1-1",
+      "code": "gal",
+      "chapter": 1,
+      "title": "계시로 받은 복음",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 1:11-17",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "gal.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울의 복음은 사람에게서 배운 게 아니라 예수 그리스도의 계시로 받은 거예요."
+      ],
+      "study": "바울의 복음은 사람에게서 배운 게 아니라 예수 그리스도의 계시로 받은 거예요. 유대교에 열심이던 박해자를 하나님이 태 중부터 택하시고 은혜로 불러 이방인에게 아들을 전하게 하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 1:11-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-1-2",
+      "code": "gal",
+      "chapter": 1,
+      "title": "예루살렘 방문",
+      "actors": [],
+      "object": "manna",
+      "ref": "갈라디아서 1:18-24",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sourceUnits": [
+        "gal.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 회심 후 삼 년 만에 예루살렘에서 게바를 만나 보름을 지냈고 야고보 외 다른 사도는 보지 않았어요."
+      ],
+      "study": "바울은 회심 후 삼 년 만에 예루살렘에서 게바를 만나 보름을 지냈고 야고보 외 다른 사도는 보지 않았어요. 수리아와 길리기아에서 지내자 유대 교회들은 하나님께 영광을 돌렸어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"manna","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 1:18-24","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-2-0",
+      "code": "gal",
+      "chapter": 2,
+      "title": "예루살렘 방문",
+      "actors": [],
+      "object": "stone-pillar",
+      "ref": "갈라디아서 2:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "gal.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "십사 년 뒤 바울은 바나바와 디도를 데리고 예루살렘에 갔어요."
+      ],
+      "study": "십사 년 뒤 바울은 바나바와 디도를 데리고 예루살렘에 갔어요. 사도행전 11장의 방문으로 보는 견해가 유력해요. 거짓 형제들이 디도에게 할례를 강요했지만 양보하지 않았고, 기둥 같은 야고보·게바·요한은 교제의 악수로 바울의 복음과 이방인 사역을 인정했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"stone-pillar","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 2:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-2-1",
+      "code": "gal",
+      "chapter": 2,
+      "title": "안디옥의 책망",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 2:11-14",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "gal.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "안디옥에서 베드로가 이방인과 먹다가 유대인 신자들이 오자 눈치를 보며 자리를 피했어요."
+      ],
+      "study": "안디옥에서 베드로가 이방인과 먹다가 유대인 신자들이 오자 눈치를 보며 자리를 피했어요. 바나바도 휩쓸렸고 바울은 복음의 진리에 어긋난다며 모든 사람 앞에서 책망했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 2:11-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-2-2",
+      "code": "gal",
+      "chapter": 2,
+      "title": "믿음으로 의롭게 됨",
+      "actors": [],
+      "object": "cross",
+      "ref": "갈라디아서 2:15-21",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sourceUnits": [
+        "gal.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "유대인도 율법의 행위가 아니라 그리스도를 믿음으로 의롭게 돼요."
+      ],
+      "study": "유대인도 율법의 행위가 아니라 그리스도를 믿음으로 의롭게 돼요. 그리스도와 함께 십자가에 못 박혀 이제는 내 안에서 그리스도께서 사시니, 의가 율법으로 된다면 그분의 죽음은 헛되어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 2:15-21","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-3-0",
+      "code": "gal",
+      "chapter": 3,
+      "title": "어리석은 갈라디아 사람들",
+      "actors": [],
+      "object": "cross",
+      "ref": "갈라디아서 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "gal.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "십자가의 그리스도가 눈앞에 그려졌는데 누가 홀렸느냐고 바울이 어리석다 해요."
+      ],
+      "study": "십자가의 그리스도가 눈앞에 그려졌는데 누가 홀렸느냐고 바울이 어리석다 해요. 성령을 받은 건 율법 때문이냐 믿음 때문이냐, 성령으로 시작해 육체로 마치려느냐고 물어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 3:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-3-2",
+      "code": "gal",
+      "chapter": 3,
+      "title": "율법과 약속",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 3:15-22",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "sourceUnits": [
+        "gal.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님이 먼저 아브라함에게 하신 약속을 사백삼십 년 뒤의 율법이 폐하지 못해요."
+      ],
+      "study": "하나님이 먼저 아브라함에게 하신 약속을 사백삼십 년 뒤의 율법이 폐하지 못해요. 율법은 죄를 드러내고 약속의 자손이 올 때까지 지키는 역할을 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 3:15-22","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-3-3",
+      "code": "gal",
+      "chapter": 3,
+      "title": "초등교사",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 3:23-29",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "sourceUnits": [
+        "gal.3.3"
+      ],
+      "actions": {},
+      "lines": [
+        "율법은 그리스도께 이르게 하는 보호자(초등교사) 같았고, 믿음이 온 지금은 그 아래 있지 않아요."
+      ],
+      "study": "율법은 그리스도께 이르게 하는 보호자(초등교사) 같았고, 믿음이 온 지금은 그 아래 있지 않아요. 믿음으로 모두 하나님의 자녀이며 그리스도 안에서 유대인·헬라인·종·남녀 구별 없이 하나예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 3:23-29","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-4-0",
+      "code": "gal",
+      "chapter": 4,
+      "title": "종에서 아들로",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 4:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "gal.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "상속자가 어릴 때는 종과 같듯 우리도 그리스도 오시기 전에는 세상의 초등학문 아래 있었어요."
+      ],
+      "study": "상속자가 어릴 때는 종과 같듯 우리도 그리스도 오시기 전에는 세상의 초등학문 아래 있었어요. 때가 차매 하나님이 율법 아래 난 아들을 보내 우리를 자녀로 삼으셨고, 성령이 아빠 아버지라 부르게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 4:1-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-4-1",
+      "code": "gal",
+      "chapter": 4,
+      "title": "초등학문으로 돌아감",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 4:8-11",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "gal.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님을 알게 된 갈라디아 사람들이 날과 절기를 지키는 약하고 천한 초등학문으로 돌아가려 해요."
+      ],
+      "study": "하나님을 알게 된 갈라디아 사람들이 날과 절기를 지키는 약하고 천한 초등학문으로 돌아가려 해요. 바울은 헛수고가 될까 두려워해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 4:8-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-4-2",
+      "code": "gal",
+      "chapter": 4,
+      "title": "해산하는 수고",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 4:12-20",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "gal.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 몸이 아팠을 때도 그들이 천사처럼 맞아 주던 때를 떠올려요."
+      ],
+      "study": "바울은 몸이 아팠을 때도 그들이 천사처럼 맞아 주던 때를 떠올려요. 거짓 선생들은 그들을 바울에게서 떼어 놓으려 하고, 바울은 그리스도의 형상이 이루어질 때까지 해산하는 수고를 다시 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 4:12-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-4-3",
+      "code": "gal",
+      "chapter": 4,
+      "title": "하갈과 사라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 4:21-31",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "sourceUnits": [
+        "gal.4.3"
+      ],
+      "actions": {},
+      "lines": [
+        "율법 아래 있고 싶은 이들에게 하갈과 사라를 비유로 풀어요."
+      ],
+      "study": "율법 아래 있고 싶은 이들에게 하갈과 사라를 비유로 풀어요. 하갈은 시내산 옛 언약의 종살이, 사라는 위에 있는 예루살렘의 자유예요. 육체로 난 자가 성령으로 난 자를 박해해요. 우리는 자유 있는 여자의 자녀예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 4:21-31","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-5-0",
+      "code": "gal",
+      "chapter": 5,
+      "title": "자유를 지키라",
+      "actors": [],
+      "object": "yoke",
+      "ref": "갈라디아서 5:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "gal.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 그리스도가 주신 자유에 굳게 서서 다시 종의 멍에를 메지 말라고 해요."
+      ],
+      "study": "바울은 그리스도가 주신 자유에 굳게 서서 다시 종의 멍에를 메지 말라고 해요. 할례로 의롭게 되려는 사람은 율법 전체를 지킬 빚을 지고 은혜에서 떨어져요. 사랑으로 일하는 믿음이 중요해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"yoke","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 5:1-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-5-1",
+      "code": "gal",
+      "chapter": 5,
+      "title": "사랑으로 종노릇",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 5:13-15",
+      "verseNumbers": [
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "gal.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "자유를 육체의 기회로 삼지 말고 사랑으로 서로 종노릇하라고 해요."
+      ],
+      "study": "자유를 육체의 기회로 삼지 말고 사랑으로 서로 종노릇하라고 해요. 율법 전체는 이웃을 내 몸처럼 사랑하라는 한 말씀으로 이뤄지고, 물고 먹으면 서로 망해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 5:13-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-5-2",
+      "code": "gal",
+      "chapter": 5,
+      "title": "성령의 열매",
+      "actors": [],
+      "object": "fruit",
+      "ref": "갈라디아서 5:16-26",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "sourceUnits": [
+        "gal.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "성령을 따라 행하면 육체의 욕심을 이루지 않아요."
+      ],
+      "study": "성령을 따라 행하면 육체의 욕심을 이루지 않아요. 육체의 일은 음행·우상·다툼·시기 등이고, 성령의 열매는 사랑·기쁨·화평·오래 참음·자비·양선·충성·온유·절제예요. 그리스도께 속한 이는 육체를 못 박았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 5:16-26","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-6-0",
+      "code": "gal",
+      "chapter": 6,
+      "title": "서로 짐을 지라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 6:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "gal.6.0"
+      ],
+      "actions": {},
+      "lines": [
+        "누가 죄에 빠지면 성령의 사람이 온유한 마음으로 바로잡아 주고, 서로의 짐을 지어 그리스도의 법을 이뤄요."
+      ],
+      "study": "누가 죄에 빠지면 성령의 사람이 온유한 마음으로 바로잡아 주고, 서로의 짐을 지어 그리스도의 법을 이뤄요. 대단한 척하면 자신을 속이는 것이고 각자 자기 일을 살펴요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 6:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-gal-6-1",
+      "code": "gal",
+      "chapter": 6,
+      "title": "심은 대로 거둠",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "갈라디아서 6:6-10",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "gal.6.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님은 업신여김을 받지 않으셔서 심은 대로 거둬요."
+      ],
+      "study": "하나님은 업신여김을 받지 않으셔서 심은 대로 거둬요. 육체에 심으면 썩을 것을, 성령에 심으면 영생을 거두니 선을 행하다 낙심하지 말고, 기회가 있을 때 믿음의 가정에게 특히 선을 행해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"갈라디아서 6:6-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

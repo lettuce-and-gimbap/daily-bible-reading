@@ -32,7 +32,7 @@ for(const [book,line]of Object.entries(plans)){
  fs.writeFileSync(file,serialized+'\n');
  const payloadSha256=crypto.createHash('sha256').update(serialized+'\n').digest('hex');
  const old=previous.books?.find(b=>b.code===book),unchanged=previous.rendererSha256===rendererSha256&&old?.payloadSha256===payloadSha256;
- reviews.push({code:book,payloadSha256,scenes:data.scenes.length,corrected,planned:data.scenes.length,modes:data.scenes.reduce((o,s)=>(o[s.animation.mode]=(o[s.animation.mode]||0)+1,o),{}),status:unchanged?old.status:'authored-awaiting-browser-review',...(unchanged&&old.browser?{browser:old.browser}:{})});
+ reviews.push({code:book,payloadSha256,scenes:data.scenes.length+(data.restoredScenes?.length||0),existing:data.scenes.length,restored:data.restoredScenes?.length||0,corrected,planned:data.scenes.length+(data.restoredScenes?.length||0),modes:[...data.scenes,...(data.restoredScenes||[])].reduce((o,s)=>(o[s.animation.mode]=(o[s.animation.mode]||0)+1,o),{}),status:unchanged?old.status:'authored-awaiting-browser-review',...(unchanged&&old.browser?{browser:old.browser}:{})});
  console.log(book,`교정 ${corrected} · 연출 ${data.scenes.length}`);
 }
 fs.writeFileSync('data/pixel-bible/animation-review'+suffix+'.json',JSON.stringify({version:2,rendererSha256,scope:'현재 등록된 '+(testament==='nt'?'신약':'구약')+' 사건. 모든 성경 사건을 망라한다는 뜻이 아님.',books:reviews},null,2)+'\n');

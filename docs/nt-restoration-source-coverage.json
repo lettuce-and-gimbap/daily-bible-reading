@@ -1,0 +1,4426 @@
+{
+  "method": "두 비공개 역본의 비어 있지 않은 절 행이 공개 요약 단위의 범위에 포함되는지 자동 검사. 모든 절의 개별 작화 또는 수동 신학 검토를 뜻하지 않음. 원문은 내보내지 않음.",
+  "units": 993,
+  "chapters": [
+    {
+      "code": "mat",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 58,
+          "coveredRows": 58,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 58,
+          "coveredRows": 58,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 17,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 18,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 19,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 20,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 21,
+      "editions": {
+        "gae": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 22,
+      "editions": {
+        "gae": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 23,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 24,
+      "editions": {
+        "gae": {
+          "sourceRows": 51,
+          "coveredRows": 51,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 51,
+          "coveredRows": 51,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 25,
+      "editions": {
+        "gae": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 26,
+      "editions": {
+        "gae": {
+          "sourceRows": 75,
+          "coveredRows": 75,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 75,
+          "coveredRows": 75,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 27,
+      "editions": {
+        "gae": {
+          "sourceRows": 66,
+          "coveredRows": 66,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 66,
+          "coveredRows": 66,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mat",
+      "chapter": 28,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 45,
+          "coveredRows": 45,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 45,
+          "coveredRows": 45,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 56,
+          "coveredRows": 56,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 56,
+          "coveredRows": 56,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 37,
+          "coveredRows": 37,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 37,
+          "coveredRows": 37,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 37,
+          "coveredRows": 37,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 72,
+          "coveredRows": 72,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 72,
+          "coveredRows": 72,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "mrk",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 80,
+          "coveredRows": 80,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 80,
+          "coveredRows": 80,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 49,
+          "coveredRows": 49,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 49,
+          "coveredRows": 49,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 56,
+          "coveredRows": 56,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 56,
+          "coveredRows": 56,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 62,
+          "coveredRows": 62,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 62,
+          "coveredRows": 62,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 54,
+          "coveredRows": 54,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 54,
+          "coveredRows": 54,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 59,
+          "coveredRows": 59,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 59,
+          "coveredRows": 59,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 17,
+      "editions": {
+        "gae": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 18,
+      "editions": {
+        "gae": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 19,
+      "editions": {
+        "gae": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 20,
+      "editions": {
+        "gae": {
+          "sourceRows": 47,
+          "coveredRows": 47,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 47,
+          "coveredRows": 47,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 21,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 22,
+      "editions": {
+        "gae": {
+          "sourceRows": 71,
+          "coveredRows": 71,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 71,
+          "coveredRows": 71,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 23,
+      "editions": {
+        "gae": {
+          "sourceRows": 55,
+          "coveredRows": 55,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 55,
+          "coveredRows": 55,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "luk",
+      "chapter": 24,
+      "editions": {
+        "gae": {
+          "sourceRows": 53,
+          "coveredRows": 53,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 53,
+          "coveredRows": 53,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 51,
+          "coveredRows": 51,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 51,
+          "coveredRows": 51,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 54,
+          "coveredRows": 54,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 54,
+          "coveredRows": 54,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 47,
+          "coveredRows": 47,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 46,
+          "coveredRows": 46,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 71,
+          "coveredRows": 71,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 71,
+          "coveredRows": 71,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 53,
+          "coveredRows": 53,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 53,
+          "coveredRows": 53,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 59,
+          "coveredRows": 59,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 59,
+          "coveredRows": 59,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 57,
+          "coveredRows": 57,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 57,
+          "coveredRows": 57,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 50,
+          "coveredRows": 50,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 17,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 18,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 19,
+      "editions": {
+        "gae": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 20,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jhn",
+      "chapter": 21,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 47,
+          "coveredRows": 47,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 47,
+          "coveredRows": 47,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 37,
+          "coveredRows": 37,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 37,
+          "coveredRows": 37,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 42,
+          "coveredRows": 42,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 60,
+          "coveredRows": 60,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 60,
+          "coveredRows": 60,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 43,
+          "coveredRows": 43,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 48,
+          "coveredRows": 48,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 52,
+          "coveredRows": 52,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 17,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 18,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 19,
+      "editions": {
+        "gae": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 41,
+          "coveredRows": 41,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 20,
+      "editions": {
+        "gae": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 38,
+          "coveredRows": 38,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 21,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 22,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 23,
+      "editions": {
+        "gae": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 35,
+          "coveredRows": 35,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 24,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 25,
+      "editions": {
+        "gae": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 26,
+      "editions": {
+        "gae": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 27,
+      "editions": {
+        "gae": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 44,
+          "coveredRows": 44,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "act",
+      "chapter": 28,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 36,
+          "coveredRows": 36,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rom",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 34,
+          "coveredRows": 34,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 58,
+          "coveredRows": 58,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 58,
+          "coveredRows": 58,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1co",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2co",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 31,
+          "coveredRows": 31,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "gal",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 32,
+          "coveredRows": 32,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 33,
+          "coveredRows": 33,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "eph",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "php",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "php",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 30,
+          "coveredRows": 30,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "php",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "php",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "col",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "col",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 23,
+          "coveredRows": 23,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "col",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "col",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1th",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 10,
+          "coveredRows": 10,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 10,
+          "coveredRows": 10,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1th",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1th",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1th",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1th",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2th",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 12,
+          "coveredRows": 12,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 12,
+          "coveredRows": 12,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2th",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2th",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1ti",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2ti",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2ti",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2ti",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2ti",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "tit",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "tit",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "tit",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "phm",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 16,
+          "coveredRows": 16,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 28,
+          "coveredRows": 28,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 39,
+          "coveredRows": 39,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 40,
+          "coveredRows": 40,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "heb",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jas",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jas",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 26,
+          "coveredRows": 26,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jas",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jas",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jas",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1pe",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1pe",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1pe",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1pe",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1pe",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2pe",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2pe",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2pe",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1jn",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 10,
+          "coveredRows": 10,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 10,
+          "coveredRows": 10,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1jn",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1jn",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1jn",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "1jn",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "2jn",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "3jn",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "jud",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 25,
+          "coveredRows": 25,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 1,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 2,
+      "editions": {
+        "gae": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 29,
+          "coveredRows": 29,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 3,
+      "editions": {
+        "gae": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 22,
+          "coveredRows": 22,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 4,
+      "editions": {
+        "gae": {
+          "sourceRows": 11,
+          "coveredRows": 11,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 11,
+          "coveredRows": 11,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 5,
+      "editions": {
+        "gae": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 14,
+          "coveredRows": 14,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 6,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 7,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 8,
+      "editions": {
+        "gae": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 13,
+          "coveredRows": 13,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 9,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 10,
+      "editions": {
+        "gae": {
+          "sourceRows": 11,
+          "coveredRows": 11,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 11,
+          "coveredRows": 11,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 11,
+      "editions": {
+        "gae": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 19,
+          "coveredRows": 19,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 12,
+      "editions": {
+        "gae": {
+          "sourceRows": 17,
+          "coveredRows": 17,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 13,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 14,
+      "editions": {
+        "gae": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 20,
+          "coveredRows": 20,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 15,
+      "editions": {
+        "gae": {
+          "sourceRows": 8,
+          "coveredRows": 8,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 8,
+          "coveredRows": 8,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 16,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 17,
+      "editions": {
+        "gae": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 18,
+          "coveredRows": 18,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 18,
+      "editions": {
+        "gae": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 24,
+          "coveredRows": 24,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 19,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 20,
+      "editions": {
+        "gae": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 15,
+          "coveredRows": 15,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 21,
+      "editions": {
+        "gae": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 27,
+          "coveredRows": 27,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    },
+    {
+      "code": "rev",
+      "chapter": 22,
+      "editions": {
+        "gae": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        },
+        "easy": {
+          "sourceRows": 21,
+          "coveredRows": 21,
+          "missing": []
+        }
+      },
+      "commentaryAvailable": true
+    }
+  ]
+}

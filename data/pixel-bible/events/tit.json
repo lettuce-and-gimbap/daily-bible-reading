@@ -38,5 +38,283 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-tit-1-0",
+      "code": "tit",
+      "chapter": 1,
+      "title": "디도에게 인사",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 1:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "tit.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 하나님의 종, 예수 그리스도의 사도로서 디도에게 인사해요."
+      ],
+      "study": "바울은 하나님의 종, 예수 그리스도의 사도로서 디도에게 인사해요. 거짓이 없으신 하나님이 영원 전에 약속하신 영생의 소망 위에 서 있어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 1:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-1-1",
+      "code": "tit",
+      "chapter": 1,
+      "title": "장로와 감독의 자격",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 1:5-9",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceUnits": [
+        "tit.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "그레데의 각 성에 장로를 세우라고 해요."
+      ],
+      "study": "그레데의 각 성에 장로를 세우라고 해요. 책망할 것이 없고 가정을 잘 돌보며 미쁜 말씀을 굳게 지키는 사람이어야 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 1:5-9","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-1-2",
+      "code": "tit",
+      "chapter": 1,
+      "title": "거짓 교사들",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 1:10-16",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "tit.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "할례를 앞세우는 거짓 교사들이 이익을 위해 온 집안을 뒤엎고 있어요."
+      ],
+      "study": "할례를 앞세우는 거짓 교사들이 이익을 위해 온 집안을 뒤엎고 있어요. 디도는 그들을 엄히 꾸짖어 신자들의 믿음이 건강하게 해야 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 1:10-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-2-0",
+      "code": "tit",
+      "chapter": 2,
+      "title": "나이에 따른 교훈",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 2:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sourceUnits": [
+        "tit.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "나이 든 남녀와 젊은이에게 각각 알맞은 삶을 가르쳐요."
+      ],
+      "study": "나이 든 남녀와 젊은이에게 각각 알맞은 삶을 가르쳐요. 가정을 아름답게 지켜 하나님의 말씀이 비방받지 않게 하고, 디도는 본이 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 2:1-8","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-2-1",
+      "code": "tit",
+      "chapter": 2,
+      "title": "종들에게",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 2:9-10",
+      "verseNumbers": [
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "tit.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "종들은 주인에게 순종하고 훔치지 말고 신실하라고 해요."
+      ],
+      "study": "종들은 주인에게 순종하고 훔치지 말고 신실하라고 해요. 그렇게 하면 하나님의 교훈이 사람들 앞에서 빛나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 2:9-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-2-2",
+      "code": "tit",
+      "chapter": 2,
+      "title": "나타난 은혜",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 2:11-15",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "tit.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님의 은혜가 나타나 우리를 구원하고 경건하게 살도록 가르쳐요."
+      ],
+      "study": "하나님의 은혜가 나타나 우리를 구원하고 경건하게 살도록 가르쳐요. 예수님이 우리를 불법에서 건지고 선한 일에 열심인 백성으로 만드셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 2:11-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-3-0",
+      "code": "tit",
+      "chapter": 3,
+      "title": "선한 일을 준비하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 3:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "sourceUnits": [
+        "tit.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "통치자에게 복종하고 선한 일에 힘쓰며 모든 사람에게 온유하라고 해요."
+      ],
+      "study": "통치자에게 복종하고 선한 일에 힘쓰며 모든 사람에게 온유하라고 해요. 우리도 한때 어리석고 욕심의 종이었기 때문이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 3:1-2","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-3-1",
+      "code": "tit",
+      "chapter": 3,
+      "title": "긍휼로 구원하심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 3:3-7",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "tit.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "우리 구주 하나님의 인자하심이 나타나 우리를 행위가 아닌 자비로 구원하셨어요."
+      ],
+      "study": "우리 구주 하나님의 인자하심이 나타나 우리를 행위가 아닌 자비로 구원하셨어요. 다시 태어나게 씻으시고 성령으로 새롭게 하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 3:3-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-3-2",
+      "code": "tit",
+      "chapter": 3,
+      "title": "무익한 다툼을 피하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 3:8-11",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "tit.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "믿는 사람은 선한 일에 힘쓰고, 어리석은 논쟁과 족보와 율법 다툼은 피해요."
+      ],
+      "study": "믿는 사람은 선한 일에 힘쓰고, 어리석은 논쟁과 족보와 율법 다툼은 피해요. 분열을 일으키는 사람은 두 번 타이른 뒤 멀리해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 3:8-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-tit-3-3",
+      "code": "tit",
+      "chapter": 3,
+      "title": "마지막 부탁",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "디도서 3:12-15",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "tit.3.3"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 아데마나 두기고를 보내면 서둘러 니고볼리로 와서 겨울을 같이 나자고 해요."
+      ],
+      "study": "바울은 아데마나 두기고를 보내면 서둘러 니고볼리로 와서 겨울을 같이 나자고 해요. 세나와 아볼로는 부족함 없이 도와 보내라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"디도서 3:12-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

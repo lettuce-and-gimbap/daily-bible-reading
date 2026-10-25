@@ -166,6 +166,20 @@ add('vision-dry-river','inspect grasp lift pour look bow','recede','water','dete
 add('vision-fire','look startle recoil point bow stand','fire','night','determined');
 add('vision-bind','look grasp tie pull place bow','vision-bind','night','determined');
 add('vision-city','read look point walk bow stand','city','night','joy');
+// Distinct source sequences for restored New Testament episodes.
+add('emmaus','walk listen sit cut startle stand','light','road','surprised');
+add('transfiguration','walk look stand listen bow stand','transfiguration','hills','surprised');
+add('announce','look startle listen point bow stand','light','pasture','surprised');
+add('ascension','look lift look point bow stand','ascension','hills','surprised');
+add('baptism','listen walk kneel touch rise bow','baptism','water','gentle');
+add('feed-many','gather lift bless cut extend lower','feed-many','pasture','joy');
+add('roof-lower','look grasp lower lower release look','roof-lower','chamber','surprised');
+add('pentecost','sit listen look speak lift stand','pentecost','chamber','surprised');
+add('reveal','look startle listen reach bow stand','light','chamber','joy');
+add('wither','walk inspect point look lower stand','wither','garden','worried');
+add('vision-eat','look receive open eat listen write','vision-eat','vision','surprised');
+add('vision-harvest','look lift reach cut gather look','vision-harvest','vision','determined');
+add('vision-water','look point inspect listen bless bow','vision-water','vision','gentle');
 export const ANIMATION_MOTIFS=Object.freeze(M);
 export const ACTION_LABELS={listen:'귀 기울이기',inspect:'살펴보기',grasp:'손에 쥐기',gather:'모으기',lift:'들어 올리기',extend:'내밀기',release:'놓기',bow:'고개 숙이기',kneel:'무릎 꿇기',pray:'기도하기',walk:'걷기',stand:'서기',look:'바라보기',startle:'놀라기',strike:'치기',pour:'붓기',read:'읽기',write:'기록하기',mourn:'슬퍼하기',lower:'내리기',reach:'손 뻗기',place:'놓아두기',carry:'들고 이동하기',sleep:'잠들기',lie:'눕기',rise:'일어나기',tear:'옷 찢기',bless:'축복하기',point:'가리키기',hold:'유지하기',brace:'힘주어 버티기',retreat:'물러서기',drop:'떨어뜨리기',receive:'받기',wait:'기다리기',turn:'돌아보기',hide:'숨기',peek:'내다보기',windup:'준비 자세',recoil:'동작 거두기',speak:'말하기',signal:'신호하기',removeShoe:'신 벗기'};
 

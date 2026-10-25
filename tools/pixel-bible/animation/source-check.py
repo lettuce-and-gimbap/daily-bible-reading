@@ -11,12 +11,12 @@ scripture=sqlite3.connect('file:/workspace/private-reference/bible/scripture.sql
 hokma=sqlite3.connect('file:/workspace/private-reference/hokma/hokma.sqlite3?mode=ro',uri=True)
 private=[];public=[]
 for code in plans:
- scenes=json.loads((root/f'data/pixel-bible/events/{code}.json').read_text())['scenes'];missing=[]
+ data=json.loads((root/f'data/pixel-bible/events/{code}.json').read_text());scenes=data['scenes']+data.get('restoredScenes',[]);missing=[]
  for scene in scenes:
   counts={};records={}
   for edition in ['gae','easy']:
-   verses=scene['verseNumbers'];marks=','.join('?' for _ in verses)
-   rows=scripture.execute(f'SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? AND verse IN ({marks}) ORDER BY verse',[edition,code,scene['chapter'],*verses]).fetchall()
+   source=scene.get('sourceRanges',{}).get(edition,{});verses=source.get('verses',scene['verseNumbers']);marks=','.join('?' for _ in verses)
+   rows=scripture.execute(f'SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? AND verse IN ({marks}) ORDER BY verse',[edition,code,source.get('chapter',scene['chapter']),*verses]).fetchall()
    counts[edition]=len(rows);records[edition]=hashlib.sha256(json.dumps(rows,ensure_ascii=False).encode()).hexdigest()
    if not rows:missing.append(scene['id']+':'+edition)
   row=hokma.execute('SELECT body FROM chapters WHERE code=? AND chapter=?',(code,scene['chapter'])).fetchone()

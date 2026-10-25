@@ -42,5 +42,101 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-phm-1-0",
+      "code": "phm",
+      "chapter": 1,
+      "title": "빌레몬에게 감사",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌레몬서 1:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "phm.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 빌레몬의 사랑과 믿음을 기억하며 감사해요."
+      ],
+      "study": "바울은 빌레몬의 사랑과 믿음을 기억하며 감사해요. 그가 성도들의 마음을 시원하게 한 일을 알기에 부탁할 바탕이 있어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌레몬서 1:1-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-phm-1-1",
+      "code": "phm",
+      "chapter": 1,
+      "title": "오네시모를 위한 간구",
+      "actors": [],
+      "object": "manna",
+      "ref": "빌레몬서 1:8-16",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "phm.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "도망친 종 오네시모는 감옥의 바울을 만나 믿게 되었어요."
+      ],
+      "study": "도망친 종 오네시모는 감옥의 바울을 만나 믿게 되었어요. 바울은 명령하지 않고 사랑으로 호소하며 그를 종 이상의 형제로 맞아 달라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"manna","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌레몬서 1:8-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-phm-1-2",
+      "code": "phm",
+      "chapter": 1,
+      "title": "내 앞으로 계산하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌레몬서 1:17-25",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "phm.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 오네시모가 잘못했거나 빚졌으면 자기 앞으로 계산하라고 해요."
+      ],
+      "study": "바울은 오네시모가 잘못했거나 빚졌으면 자기 앞으로 계산하라고 해요. 자기를 맞듯 받아 달라 하고, 방을 마련해 달라며 문안을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌레몬서 1:17-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

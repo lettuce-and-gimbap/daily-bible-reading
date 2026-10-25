@@ -12,9 +12,9 @@ const review=await fetch('../../data/pixel-bible/animation-review'+suffix+'.json
 const select=document.querySelector('#book'),slider=document.querySelector('#time'),main=document.querySelector('main');
 for(const b of review.books){const o=document.createElement('option');o.value=b.code;o.textContent=b.code+' · '+b.scenes+'장면';select.append(o);}
 async function load(code){if(!cache.has(code)){const [data,summary]=await Promise.all(['../../data/pixel-bible/events/'+code+'.json','../../data/summary/'+code+'.json'].map(p=>fetch(p).then(r=>r.json())));cache.set(code,{data,summary});}return cache.get(code);}
-window.animationReview={books:review.books,async renderBook(code,{time=4.5,portrait=false,width=720}={}){
+window.animationReview={books:review.books,async renderBook(code,{time=4.5,portrait=false,width=720,ids=null}={}){
  const {data,summary}=await load(code);main.replaceChildren();select.value=code;let failures=[],drawn=0,frames=0;
- for(const raw of data.scenes){const cast=raw.actors.map(name=>({...summary.chapters[raw.chapter].people.find(p=>p.name===name),name,refs:[raw.ref]}));const scene=enhanceScene(raw,cast);
+ for(const raw of [...data.scenes,...(data.restoredScenes||[])].filter(s=>!ids||ids.includes(s.id))){const cast=raw.actors.map(name=>({...summary.chapters[raw.chapter].people.find(p=>p.name===name),name,refs:[raw.ref]}));const scene=enhanceScene(raw,cast);
  const card=document.createElement('article');const title=document.createElement('h3');title.textContent=scene.ref+' · '+scene.title;card.append(title);
  const label=document.createElement('small');label.textContent=scene.animation.lead+' · '+scene.animation.motif+' · '+scene.animation.mode;card.append(label);
  const canvas=document.createElement('canvas');canvas.width=720;canvas.height=300;card.append(canvas);main.append(card);

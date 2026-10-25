@@ -26,5 +26,487 @@
       "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"데살로니가전서 1:2-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
-  "additionalPeople": {}
+  "additionalPeople": {},
+  "restoredScenes": [
+    {
+      "id": "nt-restored-1th-1-0",
+      "code": "1th",
+      "chapter": 1,
+      "title": "믿음과 사랑과 소망",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 1:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "sourceUnits": [
+        "1th.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 하나님이 먼저 사랑해 택하신 것을 믿는 교회라서 감사해요."
+      ],
+      "study": "바울은 하나님이 먼저 사랑해 택하신 것을 믿는 교회라서 감사해요. 믿음의 행동, 사랑의 수고, 소망의 인내가 눈에 띄었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 1:1-3","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-1-1",
+      "code": "1th",
+      "chapter": 1,
+      "title": "능력으로 온 복음",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 1:4-7",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceUnits": [
+        "1th.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울 일행은 말뿐 아니라 성령의 능력과 진실한 삶으로 복음을 전했어요."
+      ],
+      "study": "바울 일행은 말뿐 아니라 성령의 능력과 진실한 삶으로 복음을 전했어요. 교회는 고난 속에서도 기쁨으로 받아 본이 되었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 1:4-7","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-1-2",
+      "code": "1th",
+      "chapter": 1,
+      "title": "우상을 버리고",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 1:8-10",
+      "verseNumbers": [
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "1th.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "이들이 우상을 버리고 참 하나님을 섬긴다는 소문이 온 그리스에 퍼졌어요."
+      ],
+      "study": "이들이 우상을 버리고 참 하나님을 섬긴다는 소문이 온 그리스에 퍼졌어요. 이들은 다시 오실 예수님을 기다려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 1:8-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-2-0",
+      "code": "1th",
+      "chapter": 2,
+      "title": "담대한 복음 전도",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 2:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "1th.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울 일행은 빌립보에서 고난을 겪고도 담대히 전했어요."
+      ],
+      "study": "바울 일행은 빌립보에서 고난을 겪고도 담대히 전했어요. 속임수나 욕심 없이, 마음을 아시는 하나님 앞에서 전한 복음이었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 2:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-2-1",
+      "code": "1th",
+      "chapter": 2,
+      "title": "유모와 아버지처럼",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 2:7-12",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "1th.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 유모처럼 아끼고 아버지처럼 가르쳤어요."
+      ],
+      "study": "바울은 유모처럼 아끼고 아버지처럼 가르쳤어요. 짐이 되지 않으려고 밤낮으로 일하며 목숨까지 주려 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 2:7-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-2-2",
+      "code": "1th",
+      "chapter": 2,
+      "title": "하나님의 말씀으로 받음",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 2:13-16",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "1th.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "이들은 바울의 말을 사람 말이 아니라 하나님의 말씀으로 받았어요."
+      ],
+      "study": "이들은 바울의 말을 사람 말이 아니라 하나님의 말씀으로 받았어요. 그 때문에 유대 교회들처럼 동족에게 고난을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 2:13-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-2-3",
+      "code": "1th",
+      "chapter": 2,
+      "title": "우리의 영광이요 기쁨",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 2:17-20",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "sourceUnits": [
+        "1th.2.3"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 쫓겨나서 헤어졌지만 마음은 늘 곁에 있어요."
+      ],
+      "study": "바울은 쫓겨나서 헤어졌지만 마음은 늘 곁에 있어요. 다시 가려 해도 사탄이 막았고, 이들은 주 앞에서 바울의 기쁨이 될 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 2:17-20","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-3-0",
+      "code": "1th",
+      "chapter": 3,
+      "title": "디모데를 보냄",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "1th.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 더 참지 못하고 아덴에 혼자 남아 디모데를 보내요."
+      ],
+      "study": "바울은 더 참지 못하고 아덴에 혼자 남아 디모데를 보내요. 환난에 흔들려 시험하는 자에게 넘어갈까 걱정했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 3:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-3-1",
+      "code": "1th",
+      "chapter": 3,
+      "title": "기쁜 소식",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 3:6-10",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "1th.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "디모데가 믿음과 사랑이 굳건하다는 소식을 가져와요."
+      ],
+      "study": "디모데가 믿음과 사랑이 굳건하다는 소식을 가져와요. 바울은 어려움 속에서도 크게 위로받고 감사해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 3:6-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-3-2",
+      "code": "1th",
+      "chapter": 3,
+      "title": "흠 없이 서기를",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 3:11-13",
+      "verseNumbers": [
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "1th.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 이들을 다시 보게 해 달라고 밤낮으로 기도해요."
+      ],
+      "study": "바울은 이들을 다시 보게 해 달라고 밤낮으로 기도해요. 사랑이 넘치고 주님 오실 때 거룩하게 서 있기를 빌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 3:11-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-4-0",
+      "code": "1th",
+      "chapter": 4,
+      "title": "거룩함",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 4:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sourceUnits": [
+        "1th.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 하나님의 뜻이 거룩함이라고 해요."
+      ],
+      "study": "바울은 하나님의 뜻이 거룩함이라고 해요. 음란이 흔한 도시에서 몸을 거룩하게 지키라는 부르심은 성령을 주신 분의 뜻이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 4:1-8","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-4-1",
+      "code": "1th",
+      "chapter": 4,
+      "title": "형제 사랑과 일",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 4:9-12",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "1th.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님께 배운 대로 서로 사랑하되, 조용히 자기 일에 힘쓰고 남에게 기대지 말라고 해요."
+      ],
+      "study": "하나님께 배운 대로 서로 사랑하되, 조용히 자기 일에 힘쓰고 남에게 기대지 말라고 해요. 그것이 바깥 사람들에게도 좋은 모습이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 4:9-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-4-2",
+      "code": "1th",
+      "chapter": 4,
+      "title": "자는 자들의 소망",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 4:13-18",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceUnits": [
+        "1th.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "죽은 신자들이 주님 오실 때 손해 볼까 걱정하는 이들에게, 먼저 잠든 이들이 먼저 살아나고 함께 주님을 맞이할 거라고 위로해요."
+      ],
+      "study": "죽은 신자들이 주님 오실 때 손해 볼까 걱정하는 이들에게, 먼저 잠든 이들이 먼저 살아나고 함께 주님을 맞이할 거라고 위로해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 4:13-18","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-5-0",
+      "code": "1th",
+      "chapter": 5,
+      "title": "도둑같이 오는 날",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 5:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "1th.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "주의 날은 밤의 도둑처럼 예고 없이 와요."
+      ],
+      "study": "주의 날은 밤의 도둑처럼 예고 없이 와요. 세상은 평안하다 하지만 믿는 이들은 빛의 아들로서 깨어 믿음과 사랑과 소망으로 준비해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 5:1-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-5-1",
+      "code": "1th",
+      "chapter": 5,
+      "title": "교회 안의 권면",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 5:12-15",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "sourceUnits": [
+        "1th.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "수고하며 이끄는 이들을 귀히 여기고, 게으른 이는 타이르고, 약한 이는 격려하고, 힘없는 이는 붙들며, 서로 악을 갚지 말라고 해요."
+      ],
+      "study": "수고하며 이끄는 이들을 귀히 여기고, 게으른 이는 타이르고, 약한 이는 격려하고, 힘없는 이는 붙들며, 서로 악을 갚지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 5:12-15","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-5-2",
+      "code": "1th",
+      "chapter": 5,
+      "title": "항상 기뻐하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 5:16-22",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "sourceUnits": [
+        "1th.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "항상 기뻐하고 쉬지 말고 기도하며 범사에 감사하라고 해요."
+      ],
+      "study": "항상 기뻐하고 쉬지 말고 기도하며 범사에 감사하라고 해요. 성령을 끄지 말고 예언은 따져 보고 좋은 것을 붙들라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 5:16-22","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-1th-5-3",
+      "code": "1th",
+      "chapter": 5,
+      "title": "흠 없이 보전되기를",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가전서 5:23-28",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "sourceUnits": [
+        "1th.5.3"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 평강의 하나님이 영과 혼과 몸을 온전히 거룩하게 지켜 주시길 빌어요."
+      ],
+      "study": "바울은 평강의 하나님이 영과 혼과 몸을 온전히 거룩하게 지켜 주시길 빌어요. 부르신 하나님이 신실하시니 이루실 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가전서 5:23-28","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

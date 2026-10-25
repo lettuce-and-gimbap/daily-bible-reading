@@ -3,4 +3,4 @@ export function loadRecipeUnlocks(storage){try{const x=JSON.parse(storage.getIte
 export const recipeKey=scene=>JSON.stringify([scene.code||'',scene.chapter||0,scene.ref||'',scene.object||'',[...scene.actors].sort(),scene.title||scene.id,...(scene.requiresObjects?.length?[[...scene.requiresObjects].sort()]:[])]);
 export const recipeLocked=(scene,{discovered,dailyDone,hide=true})=>!discovered.has(recipeKey(scene))&&!(dailyDone&&!hide);
 export const requiredObjectsNearby=(scene,object,objects=[])=>!!object&&(scene.requiresObjects||[]).every(kind=>objects.some(o=>o.kind===kind&&Math.hypot(o.x-object.x,o.y-object.y)<=3.5));
-export const recipeAssembled=(scene,npcs,object,objects=[])=>!!object&&requiredObjectsNearby(scene,object,objects)&&scene.actors.every(name=>npcs.some(n=>n.name===name&&!n.waterEscape&&Math.hypot(n.x-object.x,n.y-object.y)<=1.8));
+export const recipeAssembled=(scene,npcs,object,objects=[])=>scene.actors.length>0&&!!object&&requiredObjectsNearby(scene,object,objects)&&scene.actors.every(name=>npcs.some(n=>n.name===name&&!n.waterEscape&&Math.hypot(n.x-object.x,n.y-object.y)<=1.8));

@@ -38,5 +38,261 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-2th-1-0",
+      "code": "2th",
+      "chapter": 1,
+      "title": "자라는 믿음",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 1:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "2th.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "박해 속에서도 믿음이 자라고 사랑이 풍성해져서, 바울은 하나님께 감사하고 다른 교회들에게 이 교회를 자랑해요."
+      ],
+      "study": "박해 속에서도 믿음이 자라고 사랑이 풍성해져서, 바울은 하나님께 감사하고 다른 교회들에게 이 교회를 자랑해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 1:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-1-1",
+      "code": "2th",
+      "chapter": 1,
+      "title": "공의로운 심판",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 1:5-10",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "2th.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "고난은 하나님의 공정한 판단의 증거예요."
+      ],
+      "study": "고난은 하나님의 공정한 판단의 증거예요. 주님이 불꽃 속에 나타나실 때 괴롭힌 자들은 갚음을 받고, 성도들은 쉼을 얻어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 1:5-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-1-2",
+      "code": "2th",
+      "chapter": 1,
+      "title": "합당한 자가 되기를",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 1:11-12",
+      "verseNumbers": [
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "2th.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 그들이 부르심에 합당하게 되도록, 하나님이 선한 뜻과 믿음의 일을 이루어 주시길 기도해요."
+      ],
+      "study": "바울은 그들이 부르심에 합당하게 되도록, 하나님이 선한 뜻과 믿음의 일을 이루어 주시길 기도해요. 그래야 예수님의 이름이 영광을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 1:11-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-2-0",
+      "code": "2th",
+      "chapter": 2,
+      "title": "흔들리지 말라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 2:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "sourceUnits": [
+        "2th.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "주의 날이 이미 왔다는 말에 흔들리는 이들에게 바울은 놀라지 말라고 해요."
+      ],
+      "study": "주의 날이 이미 왔다는 말에 흔들리는 이들에게 바울은 놀라지 말라고 해요. 거짓 예언이나 바울 이름의 편지에도 속지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 2:1-2","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-2-1",
+      "code": "2th",
+      "chapter": 2,
+      "title": "불법의 사람",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 2:3-12",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "2th.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "그날 전에 큰 반역과 불법의 사람이 나타나요."
+      ],
+      "study": "그날 전에 큰 반역과 불법의 사람이 나타나요. 그는 하나님 자리를 차지하려 하지만 예수님이 오시면 입김으로 멸하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 2:3-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-2-2",
+      "code": "2th",
+      "chapter": 2,
+      "title": "굳건하게 서라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 2:13-17",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "2th.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님이 처음부터 이들을 구원하려 택하셨어요."
+      ],
+      "study": "하나님이 처음부터 이들을 구원하려 택하셨어요. 그러니 두려워 말고 배운 가르침을 굳게 붙들라고 하고, 위로와 힘을 구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 2:13-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-3-0",
+      "code": "2th",
+      "chapter": 3,
+      "title": "기도 부탁",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceUnits": [
+        "2th.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 말씀이 빨리 퍼지고 악한 사람들에게서 건져지도록 기도를 부탁해요."
+      ],
+      "study": "바울은 말씀이 빨리 퍼지고 악한 사람들에게서 건져지도록 기도를 부탁해요. 신실하신 주님이 이들을 굳세게 지켜 주실 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 3:1-5","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-3-1",
+      "code": "2th",
+      "chapter": 3,
+      "title": "게으른 자들",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 3:6-13",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "2th.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "일하지 않고 질서 없이 사는 이들에게 바울은 자기들이 밤낮 일하며 본을 보였다고 해요."
+      ],
+      "study": "일하지 않고 질서 없이 사는 이들에게 바울은 자기들이 밤낮 일하며 본을 보였다고 해요. 일하기 싫으면 먹지도 말라고 명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 3:6-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-2th-3-2",
+      "code": "2th",
+      "chapter": 3,
+      "title": "형제 같이 권면하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "데살로니가후서 3:14-18",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceUnits": [
+        "2th.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "선을 행하다 지치지 말라고 해요."
+      ],
+      "study": "선을 행하다 지치지 말라고 해요. 따르지 않는 이는 거리를 두어 부끄럽게 하되 원수가 아닌 형제로 타일러요. 바울은 친필 인사로 맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"데살로니가후서 3:14-18","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

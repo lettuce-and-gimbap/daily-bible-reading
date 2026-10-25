@@ -32,7 +32,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 1:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 1:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "php.1.0"
+      ]
     },
     {
       "id": "ot-php-3-3",
@@ -59,8 +62,423 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 3:17-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"빌립보서 3:17-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "php.3.3"
+      ]
     }
   ],
-  "additionalPeople": {}
+  "additionalPeople": {},
+  "restoredScenes": [
+    {
+      "id": "nt-restored-php-1-1",
+      "code": "php",
+      "chapter": 1,
+      "title": "매임이 복음의 진전",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 1:12-18",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceUnits": [
+        "php.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울이 갇힌 일이 근위대와 많은 사람에게 알려져 오히려 복음이 퍼졌어요."
+      ],
+      "study": "바울이 갇힌 일이 근위대와 많은 사람에게 알려져 오히려 복음이 퍼졌어요. 시기하며 전하는 이들도 있지만 어떤 방법으로든 그리스도가 전파되니 바울은 기뻐해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 1:12-18","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-1-2",
+      "code": "php",
+      "chapter": 1,
+      "title": "사는 것이 그리스도",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 1:19-26",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "sourceUnits": [
+        "php.1.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 풀려날지 죽을지 몰라도 살든 죽든 그리스도가 존귀하게 되기를 바라요."
+      ],
+      "study": "바울은 풀려날지 죽을지 몰라도 살든 죽든 그리스도가 존귀하게 되기를 바라요. 사는 것은 그리스도요 죽는 것도 유익이지만, 교회를 위해 더 남아 있는 것이 필요하다고 확신해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 1:19-26","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-1-3",
+      "code": "php",
+      "chapter": 1,
+      "title": "복음에 합당하게",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 1:27-30",
+      "verseNumbers": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "sourceUnits": [
+        "php.1.3"
+      ],
+      "actions": {},
+      "lines": [
+        "복음에 합당하게 살고 한마음으로 믿음을 위해 싸우라고 해요."
+      ],
+      "study": "복음에 합당하게 살고 한마음으로 믿음을 위해 싸우라고 해요. 대적을 두려워하지 말아요. 그리스도를 믿는 은혜와 그분을 위해 고난받는 은혜가 함께 주어졌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 1:27-30","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-2-0",
+      "code": "php",
+      "chapter": 2,
+      "title": "한마음을 품으라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 2:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "php.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "교회 안에 다툼이 있어 바울은 위로와 사랑과 성령의 교제를 바탕으로 한마음을 품으라고 해요."
+      ],
+      "study": "교회 안에 다툼이 있어 바울은 위로와 사랑과 성령의 교제를 바탕으로 한마음을 품으라고 해요. 다툼과 허영이 아니라 겸손으로 남을 자기보다 낫게 여기고 남의 일도 돌보래요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 2:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-2-1",
+      "code": "php",
+      "chapter": 2,
+      "title": "그리스도의 마음",
+      "actors": [],
+      "object": "cross",
+      "ref": "빌립보서 2:5-11",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "php.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "그리스도는 하나님의 본체이셨지만 자기를 비워 종의 모습이 되시고 십자가까지 순종하셨어요."
+      ],
+      "study": "그리스도는 하나님의 본체이셨지만 자기를 비워 종의 모습이 되시고 십자가까지 순종하셨어요. 그래서 하나님이 지극히 높이시고 모든 이름 위의 이름을 주셔서 모두가 예수가 주님이라고 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cross","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 2:5-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-2-2",
+      "code": "php",
+      "chapter": 2,
+      "title": "세상의 빛",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 2:12-18",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceUnits": [
+        "php.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울이 없어도 두렵고 떨림으로 구원을 이루어 가요."
+      ],
+      "study": "바울이 없어도 두렵고 떨림으로 구원을 이루어 가요. 그 안에서 소원을 두고 행하게 하시는 분이 하나님이세요. 불평 없이 세상에서 빛처럼 생명의 말씀을 붙들고 흠 없는 자녀로 살아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 2:12-18","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-2-3",
+      "code": "php",
+      "chapter": 2,
+      "title": "디모데와 에바브로디도",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 2:19-30",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "sourceUnits": [
+        "php.2.3"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 아들처럼 복음을 위해 수고한 디모데를 곧 보내려 하고, 빌립보 교회가 보낸 에바브로디도는 죽을병에서 나았으니 먼저 돌려보내며 귀하게 맞아 달라고 해요."
+      ],
+      "study": "바울은 아들처럼 복음을 위해 수고한 디모데를 곧 보내려 하고, 빌립보 교회가 보낸 에바브로디도는 죽을병에서 나았으니 먼저 돌려보내며 귀하게 맞아 달라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 2:19-30","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-3-0",
+      "code": "php",
+      "chapter": 3,
+      "title": "육체를 신뢰하지 않음",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 3:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "php.3.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 이방인에게도 할례를 강요하는 개들과 행악자들을 삼가라고 해요."
+      ],
+      "study": "바울은 이방인에게도 할례를 강요하는 개들과 행악자들을 삼가라고 해요. 참된 할례자는 성령으로 예배하고 그리스도를 자랑하는 사람이에요. 바울 자신은 육체로 자랑할 것이 누구보다 많았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 3:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-3-1",
+      "code": "php",
+      "chapter": 3,
+      "title": "배설물로 여김",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 3:7-11",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "php.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 그리스도를 아는 지식이 가장 고상하기에 이전의 모든 자랑을 해로 여기고 배설물처럼 버렸어요."
+      ],
+      "study": "바울은 그리스도를 아는 지식이 가장 고상하기에 이전의 모든 자랑을 해로 여기고 배설물처럼 버렸어요. 자기 의가 아니라 믿음으로 얻는 하나님의 의와 부활의 능력을 알고 싶어 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 3:7-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-3-2",
+      "code": "php",
+      "chapter": 3,
+      "title": "푯대를 향하여",
+      "actors": [],
+      "object": "table",
+      "ref": "빌립보서 3:12-16",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUnits": [
+        "php.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 아직 다 이루지 못했다며 뒤의 것은 잊고 푯대를 향해 달려가요."
+      ],
+      "study": "바울은 아직 다 이루지 못했다며 뒤의 것은 잊고 푯대를 향해 달려가요. 위로 부르신 하나님의 부르심의 상을 얻기 위해서예요. 성숙한 사람은 이런 마음을 품어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"table","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 3:12-16","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-4-0",
+      "code": "php",
+      "chapter": 4,
+      "title": "같은 마음을 품으라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 4:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "sourceUnits": [
+        "php.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 복음을 위해 함께 애썼지만 서로 마음이 갈라진 유오디아와 순두게에게 주 안에서 같은 마음을 품으라고 간곡히 부탁하고, 동역자에게 그들을 도우라고 해요."
+      ],
+      "study": "바울은 복음을 위해 함께 애썼지만 서로 마음이 갈라진 유오디아와 순두게에게 주 안에서 같은 마음을 품으라고 간곡히 부탁하고, 동역자에게 그들을 도우라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 4:1-3","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-4-1",
+      "code": "php",
+      "chapter": 4,
+      "title": "항상 기뻐하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 4:4-9",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceUnits": [
+        "php.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "항상 주 안에서 기뻐하고 관용을 알려요."
+      ],
+      "study": "항상 주 안에서 기뻐하고 관용을 알려요. 아무것도 염려하지 말고 기도와 감사로 하나님께 아뢰면 지각에 뛰어난 하나님의 평강이 마음을 지켜 줘요. 참되고 옳고 사랑받을 것들을 생각하라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 4:4-9","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-4-2",
+      "code": "php",
+      "chapter": 4,
+      "title": "자족의 비결",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 4:10-14",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "php.4.2"
+      ],
+      "actions": {},
+      "lines": [
+        "바울은 비천에도 풍부에도 처하는 법, 곧 자족하는 비결을 배웠어요."
+      ],
+      "study": "바울은 비천에도 풍부에도 처하는 법, 곧 자족하는 비결을 배웠어요. 나에게 능력 주시는 그리스도 안에서 모든 것을 할 수 있다고 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 4:10-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-php-4-3",
+      "code": "php",
+      "chapter": 4,
+      "title": "향기로운 제물",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "빌립보서 4:15-23",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sourceUnits": [
+        "php.4.3"
+      ],
+      "actions": {},
+      "lines": [
+        "빌립보 교회는 바울이 마게도냐를 떠날 때부터 여러 번 도움을 보냈어요."
+      ],
+      "study": "빌립보 교회는 바울이 마게도냐를 떠날 때부터 여러 번 도움을 보냈어요. 에바브로디도 편의 선물은 하나님이 기뻐하시는 향기로운 제물이고, 하나님이 그들의 모든 쓸 것을 채우세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"빌립보서 4:15-23","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }

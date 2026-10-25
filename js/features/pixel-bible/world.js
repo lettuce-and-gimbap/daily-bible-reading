@@ -78,7 +78,7 @@ async function enrichBook(code,data){
 
  if(!eventBooks.has(code))eventBooks.set(code,fetch(new URL(`../../../data/pixel-bible/events/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
  const extra=await eventBooks.get(code);if(!extra)return data;
- const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name))],eventScenes:(extra.scenes||[]).filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
+ const chapters=Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>{const names=new Set((c.people||[]).map(p=>p.name));return [number,{...c,people:[...(c.people||[]),...(extra.additionalPeople?.[number]||[]).filter(p=>!names.has(p.name))],eventScenes:[...(extra.scenes||[]),...(extra.restoredScenes||[])].filter(s=>s.chapter===Number(number))}];}));return {...data,chapters};
 }
 async function loadBook(code, cachedBook) {
   const existing = cachedBook?.(code);
@@ -115,7 +115,9 @@ export function buildWorldModel(chapters) {
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
-  const dedicated=scenesForChapters(chapters);
+  const sourceScenes=chapters.flatMap(c=>c.data?.eventScenes||[]);
+  // A hand-authored scene may replace an identical restored range without losing its index link.
+  const dedicated=scenesForChapters(chapters).map(scene=>({...scene,sourceUnits:[...new Set([...(scene.sourceUnits||[]),...sourceScenes.filter(s=>s.code===scene.code&&s.chapter===scene.chapter&&s.ref===scene.ref).flatMap(s=>s.sourceUnits||[])])]}));
   const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&s.actors.every(name=>cast.some(p=>p.name===name))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)));
   return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>enhanceScene(s,cast)), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
@@ -853,7 +855,7 @@ export async function mountPixelWorld(shell, options) {
     }
     const action=b.dataset.action;
     if(action==='dismiss-event'){eventOffer=null;offerCard.hidden=true;return;}
-    if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}if(!requiredObjectsNearby(offer.scene,offer.o,objects)){say('보조 물건도 가까이에 놓아 주세요.');return;}if(!recipeAssembled(offer.scene,npcs,offer.o,objects)){eventOffer=null;offerCard.hidden=true;queueScene(offer.scene,offer.o);return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
+    if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}if(!requiredObjectsNearby(offer.scene,offer.o,objects)){say('보조 물건도 가까이에 놓아 주세요.');return;}if(offer.scene.actors.length&&!recipeAssembled(offer.scene,npcs,offer.o,objects)){eventOffer=null;offerCard.hidden=true;queueScene(offer.scene,offer.o);return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
     if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;if(activeEvent.paused&&sound)speechSynthesis.cancel();closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
 
     if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);b.setAttribute('aria-pressed',on);b.textContent=on?'♫ 음악 ON':'♫ 음악 OFF';b.setAttribute('aria-label',on?'배경음악 끄기':'배경음악 켜기');}catch(error){say(error.message);}return;}

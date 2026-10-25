@@ -71,6 +71,10 @@ export function sampleEvent(scene,actors,seconds,{reduced=false,portrait=false}=
   const support=plan.support?.actor===person.name?A[plan.support.actions[index]]:null;
   let state=support|| (active?action:other&&index>=3&&plan.effect==='transfer'?A.receive:A.listen);
   if(other&&['heal-rise','raise-dead','revive-fall'].includes(plan.motif))state=index<4?(['raise-dead','revive-fall'].includes(plan.motif)||plan.prop==='bed'?A.lie:A.sit):plan.motif==='raise-dead'&&index===4?A.walk:A.stand;
+  if((other||actors.length===1)&&plan.motif==='roof-lower')state=index<5?A.lie:A.stand;
+  if(active&&plan.motif==='crucifixion'&&index>=2)state={arms:arms([3,21,-1,21],[21,21,27,21])};
+  if(other&&plan.motif==='baptism')state=index===2||index===3?A.kneel:A.stand;
+  if(other&&plan.motif==='emmaus')state=index===4?A.startle:index>=2?A.sit:A.listen;
   if(other&&['wash-feet','anoint-feet','anoint-cloak'].includes(plan.motif))state=A.sit;
   if(scene.passiveMotions?.[person.name]?.gesture==='lie')state=index>=5?A.sit:A.lie;
   if(plan.mode==='illustration')state=portrait?A.listen:A.read;
@@ -83,7 +87,7 @@ export function sampleEvent(scene,actors,seconds,{reduced=false,portrait=false}=
   let travel=0;for(let k=0;k<=index;k++){const move=A[plan.beats[k].action]?.move||0;travel+=move*(k===index?progress:1)*12;}
   if(!active)travel=0;
   const expression=portrait?'neutral':last||index>=4?plan.emotion:index===1&&['worried','sad'].includes(plan.emotion)?plan.emotion:'neutral';
-  return {person,active,visible:!(other&&plan.motif==='raise-dead'&&plan.prop==='tomb'&&index<4),pose,action:active?beat.action:'listen',held:active&&!!state.held,previousHeld:active&&!!prev.held,hand:{x:eventArms[1][2],y:eventArms[1][3]},toolAngle:state.angle||0,
+  return {person,active,visible:!(other&&plan.motif==='raise-dead'&&plan.prop==='tomb'&&index<4)&&!(active&&plan.motif==='emmaus'&&index>=4),pose,action:active?beat.action:'listen',held:active&&!!state.held,previousHeld:active&&!!prev.held,hand:{x:eventArms[1][2],y:eventArms[1][3]},toolAngle:state.angle||0,
    travel:Math.round(travel),direction:portrait||plan.mode==='illustration'?'down':state.turn?'up':i===0?'right':'left',walkFrame:!reduced&&state.walk&&!last?Math.floor(elapsed*5)%4:0,expression};
  });
  return {plan,states,index,progress,elapsed,duration,finished:last,label:ACTION_LABELS[beat.action]||'동작',effectProgress:Math.min(1,Math.max(0,(index+progress-2)/3))};

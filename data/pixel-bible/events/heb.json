@@ -28,7 +28,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":"모세","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 3:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":"모세","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 3:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.3.0"
+      ]
     },
     {
       "id": "ot-heb-4-2",
@@ -53,7 +56,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 4:14-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 4:14-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.4.2"
+      ]
     },
     {
       "id": "ot-heb-6-2",
@@ -84,7 +90,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":"아브라함","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"anchor","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 6:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":"아브라함","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"anchor","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 6:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.6.2"
+      ]
     },
     {
       "id": "ot-heb-8-0",
@@ -112,7 +121,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 8:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 8:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.8.0"
+      ]
     },
     {
       "id": "ot-heb-11-1",
@@ -139,7 +151,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"아벨","target":"에녹","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"ark-noah","beats":[{"action":"listen","duration":1,"actor":"아벨"},{"action":"read","duration":1.2,"actor":"아벨"},{"action":"look","duration":1.5,"actor":"아벨"},{"action":"point","duration":1.8,"actor":"아벨"},{"action":"listen","duration":1.5,"actor":"아벨"},{"action":"bow","duration":1.2,"actor":"아벨"}],"duration":8.2,"support":null,"ref":"히브리서 11:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"아벨","target":"에녹","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"ark-noah","beats":[{"action":"listen","duration":1,"actor":"아벨"},{"action":"read","duration":1.2,"actor":"아벨"},{"action":"look","duration":1.5,"actor":"아벨"},{"action":"point","duration":1.8,"actor":"아벨"},{"action":"listen","duration":1.5,"actor":"아벨"},{"action":"bow","duration":1.2,"actor":"아벨"}],"duration":8.2,"support":null,"ref":"히브리서 11:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.11.1"
+      ]
     },
     {
       "id": "ot-heb-11-2",
@@ -177,7 +192,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"아브라함","target":"사라","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"field","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"read","duration":1.2,"actor":"아브라함"},{"action":"look","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"히브리서 11:8-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"아브라함","target":"사라","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"field","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"read","duration":1.2,"actor":"아브라함"},{"action":"look","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"히브리서 11:8-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.11.2"
+      ]
     },
     {
       "id": "ot-heb-12-0",
@@ -202,7 +220,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 12:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 12:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.12.0"
+      ]
     },
     {
       "id": "ot-heb-13-1",
@@ -232,7 +253,10 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 13:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"예수","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"read","duration":1.2,"actor":"예수"},{"action":"look","duration":1.5,"actor":"예수"},{"action":"point","duration":1.8,"actor":"예수"},{"action":"listen","duration":1.5,"actor":"예수"},{"action":"bow","duration":1.2,"actor":"예수"}],"duration":8.2,"support":null,"ref":"히브리서 13:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "sourceUnits": [
+        "heb.13.1"
+      ]
     }
   ],
   "additionalPeople": {
@@ -318,5 +342,1062 @@
         ]
       }
     ]
-  }
+  },
+  "restoredScenes": [
+    {
+      "id": "nt-restored-heb-1-0",
+      "code": "heb",
+      "chapter": 1,
+      "title": "아들로 말씀하심",
+      "actors": [],
+      "object": "throne",
+      "ref": "히브리서 1:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "heb.1.0"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님은 마지막 때에 아들로 완전하게 말씀하셨어요."
+      ],
+      "study": "하나님은 마지막 때에 아들로 완전하게 말씀하셨어요. 아들은 세상을 지으시고 붙드시며, 우리 죄를 씻으신 뒤 하늘 보좌 오른편에 앉으셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"throne","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 1:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-1-1",
+      "code": "heb",
+      "chapter": 1,
+      "title": "천사보다 뛰어나심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 1:5-14",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "heb.1.1"
+      ],
+      "actions": {},
+      "lines": [
+        "구약 말씀 일곱 개를 들어 아들이 천사보다 뛰어나심을 보여 줘요."
+      ],
+      "study": "구약 말씀 일곱 개를 들어 아들이 천사보다 뛰어나심을 보여 줘요. 천사들은 아들을 경배하고, 구원받을 사람들을 돕도록 보내진 종이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 1:5-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-2-0",
+      "code": "heb",
+      "chapter": 2,
+      "title": "큰 구원을 등한히 말라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 2:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceUnits": [
+        "heb.2.0"
+      ],
+      "actions": {},
+      "lines": [
+        "주님이 직접 전하시고 사도들이 확인하고 하나님이 기적으로 증언하신 큰 구원이에요."
+      ],
+      "study": "주님이 직접 전하시고 사도들이 확인하고 하나님이 기적으로 증언하신 큰 구원이에요. 이 말씀에서 떠내려가지 말라고 경고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 2:1-4","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-2-1",
+      "code": "heb",
+      "chapter": 2,
+      "title": "죽음을 맛보신 예수",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 2:5-13",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "heb.2.1"
+      ],
+      "actions": {},
+      "lines": [
+        "시편 8편 말씀처럼 예수님은 잠시 천사보다 낮아져 모든 사람을 위해 죽음을 맛보셨고, 우리를 형제라 부르기를 부끄러워하지 않으세요."
+      ],
+      "study": "시편 8편 말씀처럼 예수님은 잠시 천사보다 낮아져 모든 사람을 위해 죽음을 맛보셨고, 우리를 형제라 부르기를 부끄러워하지 않으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 2:5-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-2-2",
+      "code": "heb",
+      "chapter": 2,
+      "title": "자비하고 신실한 대제사장",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 2:14-18",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceUnits": [
+        "heb.2.2"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님이 사람의 몸을 입고 죽으셔서 마귀의 힘을 꺾으셨어요."
+      ],
+      "study": "예수님이 사람의 몸을 입고 죽으셔서 마귀의 힘을 꺾으셨어요. 시험을 겪어 보신 대제사장이라 시험받는 우리를 도우실 수 있어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 2:14-18","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-3-1",
+      "code": "heb",
+      "chapter": 3,
+      "title": "마음을 완고하게 말라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 3:7-11",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sourceUnits": [
+        "heb.3.1"
+      ],
+      "actions": {},
+      "lines": [
+        "시편 95편을 들어, 오늘 하나님 음성을 들으면 광야 조상들처럼 마음을 굳게 하지 말라고 해요."
+      ],
+      "study": "시편 95편을 들어, 오늘 하나님 음성을 들으면 광야 조상들처럼 마음을 굳게 하지 말라고 해요. 그들은 사십 년 동안 하나님을 시험했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 3:7-11","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-3-2",
+      "code": "heb",
+      "chapter": 3,
+      "title": "매일 피차 권면하라",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 3:12-19",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "heb.3.2"
+      ],
+      "actions": {},
+      "lines": [
+        "죄는 마음을 속여 점점 굳게 만들어요."
+      ],
+      "study": "죄는 마음을 속여 점점 굳게 만들어요. 그러니 오늘이라 불리는 동안 날마다 서로 격려하래요. 광야 세대는 믿지 않아 쉼에 들어가지 못했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 3:12-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-4-0",
+      "code": "heb",
+      "chapter": 4,
+      "title": "남은 안식",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 4:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "heb.4.0"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님이 일곱째 날 쉬신 그 쉼이 아직 남아 있어요."
+      ],
+      "study": "하나님이 일곱째 날 쉬신 그 쉼이 아직 남아 있어요. 여호수아의 가나안이 끝이 아니었으니, 믿음으로 그 참된 안식에 들어가라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 4:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-4-1",
+      "code": "heb",
+      "chapter": 4,
+      "title": "살아 있는 말씀",
+      "actors": [],
+      "object": "sword",
+      "ref": "히브리서 4:11-13",
+      "verseNumbers": [
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "heb.4.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님 말씀은 살아 있고 양날 칼보다 날카로워서, 마음 깊은 곳의 생각과 뜻까지 드러내요."
+      ],
+      "study": "하나님 말씀은 살아 있고 양날 칼보다 날카로워서, 마음 깊은 곳의 생각과 뜻까지 드러내요. 하나님 앞에서는 아무것도 숨길 수 없어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sword","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 4:11-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-5-0",
+      "code": "heb",
+      "chapter": 5,
+      "title": "부르심 받은 대제사장",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 5:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "heb.5.0"
+      ],
+      "actions": {},
+      "lines": [
+        "대제사장은 연약한 사람 가운데서 하나님이 부르신 사람이에요."
+      ],
+      "study": "대제사장은 연약한 사람 가운데서 하나님이 부르신 사람이에요. 그리스도도 스스로 높이지 않고 아들이자 멜기세덱 계열의 제사장으로 세우심을 받으셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 5:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-5-1",
+      "code": "heb",
+      "chapter": 5,
+      "title": "고난으로 배운 순종",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 5:7-10",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "heb.5.1"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님은 땅에서 눈물로 기도하며 고난을 통해 순종을 배우셨어요."
+      ],
+      "study": "예수님은 땅에서 눈물로 기도하며 고난을 통해 순종을 배우셨어요. 그리고 순종하는 모든 이에게 영원한 구원의 근원이 되셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 5:7-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-5-2",
+      "code": "heb",
+      "chapter": 5,
+      "title": "젖과 단단한 음식",
+      "actors": [],
+      "object": "milk",
+      "ref": "히브리서 5:11-14",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "heb.5.2"
+      ],
+      "actions": {},
+      "lines": [
+        "독자들은 듣는 것이 둔해져 가르칠 때가 지났는데도 기초를 다시 배워야 해요."
+      ],
+      "study": "독자들은 듣는 것이 둔해져 가르칠 때가 지났는데도 기초를 다시 배워야 해요. 단단한 음식은 분별력을 훈련한 성숙한 사람의 몫이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"milk","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 5:11-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-6-0",
+      "code": "heb",
+      "chapter": 6,
+      "title": "완전한 데로",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 6:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sourceUnits": [
+        "heb.6.0"
+      ],
+      "actions": {},
+      "lines": [
+        "기초를 반복하지 말고 성숙한 데로 나아가라고 해요."
+      ],
+      "study": "기초를 반복하지 말고 성숙한 데로 나아가라고 해요. 은혜를 맛보는 듯하다가 등을 돌려 버리면 다시 돌이키게 할 수 없다는 엄한 경고도 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 6:1-8","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-6-1",
+      "code": "heb",
+      "chapter": 6,
+      "title": "더 좋은 것",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 6:9-12",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceUnits": [
+        "heb.6.1"
+      ],
+      "actions": {},
+      "lines": [
+        "저자는 독자들에게 구원에 가까운 더 좋은 것을 확신한다고 해요."
+      ],
+      "study": "저자는 독자들에게 구원에 가까운 더 좋은 것을 확신한다고 해요. 하나님은 이들이 성도를 섬긴 사랑의 수고를 잊지 않으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 6:9-12","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-7-0",
+      "code": "heb",
+      "chapter": 7,
+      "title": "살렘 왕 멜기세덱",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 7:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "heb.7.0"
+      ],
+      "actions": {},
+      "lines": [
+        "살렘 왕이며 하나님의 제사장인 멜기세덱은 아브라함에게 복을 빌고 십분의 일을 받아요."
+      ],
+      "study": "살렘 왕이며 하나님의 제사장인 멜기세덱은 아브라함에게 복을 빌고 십분의 일을 받아요. 그래서 그는 아브라함의 후손 레위보다 높아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 7:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-7-1",
+      "code": "heb",
+      "chapter": 7,
+      "title": "새로운 제사장",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 7:11-19",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "heb.7.1"
+      ],
+      "actions": {},
+      "lines": [
+        "레위 제사장직이 완전했다면 다른 제사장이 필요 없었을 거예요."
+      ],
+      "study": "레위 제사장직이 완전했다면 다른 제사장이 필요 없었을 거예요. 예수님은 유다 지파에서 나셨고 끝없는 생명의 능력으로 제사장이 되셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 7:11-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-7-2",
+      "code": "heb",
+      "chapter": 7,
+      "title": "온전히 구원하심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 7:20-28",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "sourceUnits": [
+        "heb.7.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님이 맹세로 세우신 예수님은 영원히 계셔서 자기를 통해 나오는 이들을 온전히 구원하세요."
+      ],
+      "study": "하나님이 맹세로 세우신 예수님은 영원히 계셔서 자기를 통해 나오는 이들을 온전히 구원하세요. 날마다 드릴 필요 없이 자기를 단번에 드리셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 7:20-28","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-8-1",
+      "code": "heb",
+      "chapter": 8,
+      "title": "새 언약",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 8:7-13",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "heb.8.1"
+      ],
+      "actions": {},
+      "lines": [
+        "첫 언약은 사람들이 지키지 못했고, 하나님은 예레미야를 통해 법을 마음에 쓰고 죄를 기억하지 않는 새 언약을 약속하셨어요."
+      ],
+      "study": "첫 언약은 사람들이 지키지 못했고, 하나님은 예레미야를 통해 법을 마음에 쓰고 죄를 기억하지 않는 새 언약을 약속하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 8:7-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-9-0",
+      "code": "heb",
+      "chapter": 9,
+      "title": "첫 언약의 장막",
+      "actors": [],
+      "object": "tent",
+      "ref": "히브리서 9:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "heb.9.0"
+      ],
+      "actions": {},
+      "lines": [
+        "첫 장막은 앞 칸과 지성소로 나뉘고 대제사장만 일 년에 한 번 피를 가지고 들어가요."
+      ],
+      "study": "첫 장막은 앞 칸과 지성소로 나뉘고 대제사장만 일 년에 한 번 피를 가지고 들어가요. 아직 하나님께 가는 길이 열리지 않았다는 표예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tent","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 9:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-9-1",
+      "code": "heb",
+      "chapter": 9,
+      "title": "자기 피로 단번에",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 9:11-14",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceUnits": [
+        "heb.9.1"
+      ],
+      "actions": {},
+      "lines": [
+        "그리스도는 짐승 피가 아니라 자기 피로 단번에 영원한 속죄를 이루셨어요."
+      ],
+      "study": "그리스도는 짐승 피가 아니라 자기 피로 단번에 영원한 속죄를 이루셨어요. 그 피는 죽은 행실에서 우리 양심을 깨끗하게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 9:11-14","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-9-2",
+      "code": "heb",
+      "chapter": 9,
+      "title": "피 흘림이 없으면",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 9:15-22",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "sourceUnits": [
+        "heb.9.2"
+      ],
+      "actions": {},
+      "lines": [
+        "죽음이 있어야 유언이 효력이 있듯 새 언약도 피로 세워졌어요."
+      ],
+      "study": "죽음이 있어야 유언이 효력이 있듯 새 언약도 피로 세워졌어요. 모세가 피를 뿌린 것처럼 피 흘림이 없으면 죄 사함이 없어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 9:15-22","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-9-3",
+      "code": "heb",
+      "chapter": 9,
+      "title": "두 번째 나타나심",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 9:23-28",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "sourceUnits": [
+        "heb.9.3"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님은 하늘 성소에 들어가 우리를 위해 하나님 앞에 나타나셨어요."
+      ],
+      "study": "예수님은 하늘 성소에 들어가 우리를 위해 하나님 앞에 나타나셨어요. 단번에 죄를 담당하셨고 구원을 바라는 이들에게 다시 나타나실 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 9:23-28","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-10-0",
+      "code": "heb",
+      "chapter": 10,
+      "title": "그림자인 율법",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 10:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceUnits": [
+        "heb.10.0"
+      ],
+      "actions": {},
+      "lines": [
+        "율법은 그림자일 뿐이라 짐승 피로는 죄를 없앨 수 없어요."
+      ],
+      "study": "율법은 그림자일 뿐이라 짐승 피로는 죄를 없앨 수 없어요. 그리스도는 하나님의 뜻을 행하러 오셔서 몸을 단번에 드려 우리를 거룩하게 하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 10:1-10","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-10-1",
+      "code": "heb",
+      "chapter": 10,
+      "title": "새로운 살 길",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 10:11-25",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "heb.10.1"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님이 열어 주신 새로운 살 길로 담대히 나아가요."
+      ],
+      "study": "예수님이 열어 주신 새로운 살 길로 담대히 나아가요. 소망을 붙들고 서로 격려하며 모이기를 폐하지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 10:11-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-10-2",
+      "code": "heb",
+      "chapter": 10,
+      "title": "짐짓 짓는 죄",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 10:26-31",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "sourceUnits": [
+        "heb.10.2"
+      ],
+      "actions": {},
+      "lines": [
+        "예수님을 알고도 일부러 등지고 아들을 짓밟는 것은 일상의 실수와 달라서 심판만 남아요."
+      ],
+      "study": "예수님을 알고도 일부러 등지고 아들을 짓밟는 것은 일상의 실수와 달라서 심판만 남아요. 하나님의 심판은 두려운 일이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 10:26-31","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-10-3",
+      "code": "heb",
+      "chapter": 10,
+      "title": "인내가 필요함",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 10:32-39",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sourceUnits": [
+        "heb.10.3"
+      ],
+      "actions": {},
+      "lines": [
+        "지난 박해 때처럼 담대함을 버리지 말고 인내하라고 해요."
+      ],
+      "study": "지난 박해 때처럼 담대함을 버리지 말고 인내하라고 해요. 의인은 믿음으로 살고 뒤로 물러서지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 10:32-39","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-11-0",
+      "code": "heb",
+      "chapter": 11,
+      "title": "믿음이란",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 11:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "sourceUnits": [
+        "heb.11.0"
+      ],
+      "actions": {},
+      "lines": [
+        "믿음은 바라는 것들의 실상이고 보이지 않는 것들의 증거예요."
+      ],
+      "study": "믿음은 바라는 것들의 실상이고 보이지 않는 것들의 증거예요. 하나님이 말씀으로 세상을 지으셨다는 것도 믿음으로 알아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 11:1-3","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-11-3",
+      "code": "heb",
+      "chapter": 11,
+      "title": "모세와 라합",
+      "actors": [],
+      "object": "wall",
+      "ref": "히브리서 11:23-31",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "sourceUnits": [
+        "heb.11.3"
+      ],
+      "actions": {},
+      "lines": [
+        "모세는 죄의 즐거움 대신 하나님 백성과 고난받는 길을 택했어요."
+      ],
+      "study": "모세는 죄의 즐거움 대신 하나님 백성과 고난받는 길을 택했어요. 홍해를 건너고 여리고 성벽이 무너지고 라합이 구원받은 것도 믿음의 일이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"wall","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 11:23-31","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-11-4",
+      "code": "heb",
+      "chapter": 11,
+      "title": "세상이 감당 못한 사람들",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 11:32-40",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sourceUnits": [
+        "heb.11.4"
+      ],
+      "actions": {},
+      "lines": [
+        "믿음으로 승리한 사람도, 고난과 죽임을 당한 사람도 있었어요."
+      ],
+      "study": "믿음으로 승리한 사람도, 고난과 죽임을 당한 사람도 있었어요. 모두 약속을 받지 못했고, 하나님이 우리와 함께 온전해지도록 더 좋은 것을 예비하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 11:32-40","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-12-1",
+      "code": "heb",
+      "chapter": 12,
+      "title": "아들로 대하시는 징계",
+      "actors": [],
+      "object": "fruit",
+      "ref": "히브리서 12:4-13",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceUnits": [
+        "heb.12.1"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님의 징계는 자녀로 사랑하신다는 증거예요."
+      ],
+      "study": "하나님의 징계는 자녀로 사랑하신다는 증거예요. 지금은 괴로워도 나중에 의와 평강의 열매를 맺게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"fruit","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 12:4-13","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-12-2",
+      "code": "heb",
+      "chapter": 12,
+      "title": "화평과 거룩함",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 12:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceUnits": [
+        "heb.12.2"
+      ],
+      "actions": {},
+      "lines": [
+        "모든 사람과 화평하고 거룩함을 따르며 쓴 뿌리가 생기지 않게 해요."
+      ],
+      "study": "모든 사람과 화평하고 거룩함을 따르며 쓴 뿌리가 생기지 않게 해요. 한 끼 음식에 장자의 권리를 판 에서처럼 되지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 12:14-17","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-12-3",
+      "code": "heb",
+      "chapter": 12,
+      "title": "시온 산에 이름",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 12:18-29",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "sourceUnits": [
+        "heb.12.3"
+      ],
+      "actions": {},
+      "lines": [
+        "두려운 시내산과 달리 우리는 시온 산, 하늘 예루살렘에 이르렀어요."
+      ],
+      "study": "두려운 시내산과 달리 우리는 시온 산, 하늘 예루살렘에 이르렀어요. 흔들리지 않는 나라를 받았으니 경건과 두려움으로 섬겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 12:18-29","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-13-0",
+      "code": "heb",
+      "chapter": 13,
+      "title": "사랑과 대접",
+      "actors": [],
+      "object": "bowl",
+      "ref": "히브리서 13:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sourceUnits": [
+        "heb.13.0"
+      ],
+      "actions": {},
+      "lines": [
+        "형제 사랑과 손님 대접, 갇힌 이를 기억하기, 결혼을 귀하게 여기기, 돈을 사랑하지 않기를 권해요."
+      ],
+      "study": "형제 사랑과 손님 대접, 갇힌 이를 기억하기, 결혼을 귀하게 여기기, 돈을 사랑하지 않기를 권해요. 주님이 결코 떠나지 않으시니 담대해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"bowl","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 13:1-6","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-13-2",
+      "code": "heb",
+      "chapter": 13,
+      "title": "찬송의 제사",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 13:15-19",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sourceUnits": [
+        "heb.13.2"
+      ],
+      "actions": {},
+      "lines": [
+        "하나님께 찬송의 제사를 드리고 선행과 나눔도 기쁘게 받으시는 제사예요."
+      ],
+      "study": "하나님께 찬송의 제사를 드리고 선행과 나눔도 기쁘게 받으시는 제사예요. 지도자들에게 순종하고 기도를 부탁해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 13:15-19","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    },
+    {
+      "id": "nt-restored-heb-13-3",
+      "code": "heb",
+      "chapter": 13,
+      "title": "축도와 문안",
+      "actors": [],
+      "object": "scene-marker",
+      "ref": "히브리서 13:20-25",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "sourceUnits": [
+        "heb.13.3"
+      ],
+      "actions": {},
+      "lines": [
+        "영원한 언약의 피로 큰 목자 예수님을 살리신 하나님이 선한 일에 온전케 하시길 빌어요."
+      ],
+      "study": "영원한 언약의 피로 큰 목자 예수님을 살리신 하나님이 선한 일에 온전케 하시길 빌어요. 디모데의 소식과 이탈리아 형제들의 문안도 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":null,"target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":null},{"action":"read","duration":1.2,"actor":null},{"action":"look","duration":1.5,"actor":null},{"action":"point","duration":1.8,"actor":null},{"action":"listen","duration":1.5,"actor":null},{"action":"bow","duration":1.2,"actor":null}],"duration":8.2,"ref":"히브리서 13:20-25","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+    }
+  ]
 }
