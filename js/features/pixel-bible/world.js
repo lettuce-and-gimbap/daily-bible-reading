@@ -267,13 +267,14 @@ export async function mountPixelWorld(shell, options) {
   function openSpeechDetails(choice=shownSpeech){
     if(!choice)return;
     const reference=choice.ref,parsed=parseReference(reference);
-    const explanation=speechContext(choice,chapterData);if(!explanation)return;
+    const explanation=speechContext(choice,chapterData);if(!explanation&&!parsed?.verses?.length)return;
     hideSpeech();
     shell.querySelector('.pb-scripture')?.remove();
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사 쉽게 이해하기');
     panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;
-    panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
+    panel.querySelector('.pb-detail-context').hidden=!explanation;
+    if(explanation)panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
     const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
     shell.append(panel);panel.querySelector('button').focus();
   }
@@ -289,20 +290,17 @@ export async function mountPixelWorld(shell, options) {
       const line={...base,...part};let el=encounterBubbles.get(id);
       if(!el){
         el=document.createElement('div');el.className=`pb-speech pb-encounter ${line.origin==='general'?'pb-encounter-general':'pb-encounter-related'}`;el.setAttribute('role','status');el.setAttribute('aria-live','polite');
-        el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
+        el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button>';
         el.dataset.encounter=id;
         el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);
         el.querySelector('p').textContent=line.text;
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
-        const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
         el._line=line;
-        if(chapterData.length)el.insertAdjacentHTML('beforeend','<button class="pb-speech-reference" data-action="encounter-portrait">두 인물 확대 보기</button>');
       }
       el._line=line;el.classList.toggle('pb-encounter-related',line.origin!=='general');el.classList.toggle('pb-encounter-general',line.origin==='general');
       el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);el.querySelector('p').textContent=line.text;
-      const detail=el.querySelector('[data-action="encounter-details"]');detail.hidden=!speechContext(line,chapterData);
-      const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
+      const detail=el.querySelector('[data-action="encounter-details"]');detail.hidden=!speechContext(line,chapterData)&&!parseReference(line.ref)?.verses?.length;
     }
   }
   function positionEncounters(){
@@ -921,9 +919,7 @@ export async function mountPixelWorld(shell, options) {
     if(b.dataset.story!==undefined){const key=b.dataset.discoveryOwner,record=discoveries[key],story=record?.stories[Number(b.dataset.story)];if(story){discoveries[key]=markStoryRead(record,story);saveDiscoveries();await openSpeechPassage(story.ref,contextTerms({text:story.text}));shell.querySelector('.pb-scripture header')?.insertAdjacentHTML('afterbegin',`<button class="pb-button" data-discovery="${esc(key)}">도감으로</button>`);}return;}
     if(action==='collection'){openCollection();return;}
     if(action==='person-collection'){const person=npcs[selected];if(person){discover(person);openCollection(discoveryKey(person));}return;}
-    if(action==='encounter-portrait'){const el=b.closest('[data-encounter]'),line=el?._line;if(!line)return;if(el._closePortrait){el._closePortrait();el._closePortrait=null;b.textContent='두 인물 확대 보기';}else{el._closePortrait=mountPixelEvent(el,{title:'인물 대화',lines:[line.text],object:null},[line.speaker,line.target].filter(Boolean),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';b.textContent='확대 접기';}return;}
     if(action==='encounter-details'){openSpeechDetails(b.closest('[data-encounter]')?._line);return;}
-    if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='speech-details'){openSpeechDetails();return;}
     if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='passage'){await openSpeechPassage();return;}
@@ -1185,10 +1181,10 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   if((held||actionPose?.wearing)&&actionPose)actionPose={...actionPose,heldObject:true};
   const rise=(n.objectAction==='zacchaeus-tree'||actionPose?.actual==='climb')&&n.usingObject?36+(actionPose?.climb||0):0;
   const anchor=interactionAnchor(n,TILE);
-  const x=Math.round(anchor.x)+pose.x,y=Math.round(anchor.y)+pose.y-rise;
+  const x=Math.round(anchor.x)+pose.x+(actionPose?.impactX||0),y=Math.round(anchor.y)+pose.y-rise+(actionPose?.impactY||0);
   if(n.prominent){c.save();c.globalAlpha=reduced?.6:.45+.15*Math.sin(time*2);c.fillStyle='#f6d782';c.beginPath();c.ellipse(x,y+4,23,7,0,0,Math.PI*2);c.fill();c.strokeStyle='#fff0b3';c.lineWidth=2;c.stroke();c.restore();}
   if(n.encounter){c.save();c.globalAlpha=reduced?.8:.68+.22*Math.sin(time*7);c.strokeStyle='#f4cf70';c.fillStyle='#f4cf7038';c.lineWidth=2;c.beginPath();c.ellipse(x,y+4,21+Math.round(Math.sin(time*7)),6,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
-  c.save();c.translate(x,y-28);c.rotate(pose.tilt);c.translate(-x,-y+28);
+  c.save();c.translate(x,y-28);c.rotate(n.collisionStun?(actionPose?.impactTilt||0):pose.tilt);c.translate(-x,-y+28);
   drawPixelCharacter(c,characterStyle(n.name,index,n.role,n.refs,n.creature||false),x,y+(acting&&!actionPose?.lie&&!actionPose?.scripted?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced&&!actionPose?.scripted?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.collisionStun?'surprised':n.waterEscape?'worried':actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected:selected||!!n.encounter});
   if(n.waterEscape){
     const water=BACKGROUNDS[backgroundKey].water||'#528ca0',surfaceY=y-39;

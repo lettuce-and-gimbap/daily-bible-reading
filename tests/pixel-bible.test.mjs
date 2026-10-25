@@ -106,13 +106,14 @@ test('배는 물 위에서 놓고 옮길 수 있지만 다른 오브젝트는 �
 });
 
 test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍을 쓴다',async()=>{
- const {shouldRun,runningIntoPerson,runningIntoObject,impactPose,swimPose,COLLISION_STUN_SECONDS}=await import('../js/features/pixel-bible/collision-motion.js');
+ const {shouldRun,runningIntoPerson,runningIntoObject,impactPose,impactSparkles,swimPose,COLLISION_STUN_SECONDS}=await import('../js/features/pixel-bible/collision-motion.js');
  assert.equal(shouldRun(()=>.1),true);assert.equal(shouldRun(()=>.9),false);
  const actor={x:0,y:0},other={x:1,y:0};
  assert.equal(runningIntoPerson(actor,{x:.3,y:0},[actor,other]),other);
  assert.equal(runningIntoPerson(actor,{x:-.3,y:0},[actor,other]),undefined);
  assert.equal(runningIntoObject({x:.3,y:0},[{kind:'bench',x:1,y:0}],actor)?.kind,'bench');
- assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).sit,true);
+ assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).fall,true);assert.equal(impactPose(1).sit,true);assert.equal(impactPose(2.95).rising,true);
+ assert.ok(impactSparkles(1).every(star=>star.y>=-76&&star.y<=-72));
  assert.notEqual(swimPose(0).handY,swimPose(.4).handY);
 });
 

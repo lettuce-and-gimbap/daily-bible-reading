@@ -20,6 +20,14 @@ export function runningIntoObject(next,objects,actor){
 
 export function impactPose(elapsed,reduced=false){
  const phase=reduced?0:Math.floor(elapsed*5)%4;
+ if(elapsed<.32){
+  const beat=reduced?0:Math.round(elapsed*9);
+  return {fall:true,hand:1,handY:beat%2?14:19,phase:beat%2,bodyY:beat%2?-1:0,impactTilt:beat%2?-.38:.3,impactX:beat%2?-3:3,impactY:1};
+ }
+ if(elapsed>=2.62){
+  const beat=reduced?1:Math.min(3,Math.floor((elapsed-2.62)*9));
+  return {rising:beat>=2,sit:beat<2,hand:beat<2?1:0,handY:beat<2?16:23,phase:beat,bodyY:beat<2?-1:0,impactTilt:beat===0?.18:0,legSwing:beat%2};
+ }
  return {sit:true,hand:1,handY:[18,16,20,17][phase],phase,bodyY:reduced?0:[0,-1,0,1][phase],legSwing:phase%2?1:0};
 }
 
@@ -30,5 +38,5 @@ export function swimPose(elapsed,reduced=false){
 
 export function impactSparkles(elapsed,reduced=false){
  const phase=reduced?0:elapsed*5;
- return Array.from({length:3},(_,i)=>({x:Math.round(Math.cos(phase+i*Math.PI*2/3)*18),y:Math.round(Math.sin(phase+i*Math.PI*2/3)*5)-104,kind:'star'}));
+ return Array.from({length:3},(_,i)=>({x:Math.round(Math.cos(phase+i*Math.PI*2/3)*12),y:Math.round(Math.sin(phase+i*Math.PI*2/3)*2)-74,kind:'star'}));
 }

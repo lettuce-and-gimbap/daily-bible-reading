@@ -12,6 +12,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  r(5,37,14,1,'#183a3933');
  const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};
  if(pose?.eventKneel){r(9,30,10,3,O);r(10,30,8,2,s.coat);r(8,33,5,3,O);r(14,33,9,3,O);r(15,34,7,1,skin);}
+ else if(pose?.rising){r(9,30,8,3,O);r(10,31,6,1,s.coat);r(8,33,5,3,O);r(15,32,7,3,O);r(16,33,5,1,skin);}
  else if(pose?.sit){
   if(side){r(9,30,12,3,O);r(10,31,10,1,s.coat);r(18,32,3,4+pose.legSwing,O);r(18,35+pose.legSwing,6,2,O);r(19,35+pose.legSwing,4,1,'#a77d57');}
   else{r(7,31,11,3,O);r(8,33,3,3,O);r(15,33+pose.legSwing,3,3,O);r(7,35,5,2,O);r(14,35+pose.legSwing,5,2,O);}
