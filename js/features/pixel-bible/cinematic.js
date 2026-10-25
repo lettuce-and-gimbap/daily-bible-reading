@@ -42,7 +42,7 @@ export function renderCinematic(c,scene,actors,seconds=0,{portrait=false}={}){
 }
 export function mountCinematic(host,scene,actors,{portrait=false}={}){
  const canvas=document.createElement('canvas');canvas.width=720;canvas.height=300;canvas.setAttribute('aria-label',scene.title+' 사건 애니메이션');canvas.style.cssText='width:100%;max-height:48vh;object-fit:contain;image-rendering:pixelated;background:#253943';host.prepend(canvas);
- const c=canvas.getContext('2d');c.imageSmoothingEnabled=false;let frame,closed=false,start=performance.now();
- function draw(now){if(closed||!canvas.isConnected)return;renderCinematic(c,scene,actors,(now-start)/1000,{portrait});frame=requestAnimationFrame(draw);}
- frame=requestAnimationFrame(draw);return ()=>{closed=true;cancelAnimationFrame(frame);canvas.remove();};
+ const c=canvas.getContext('2d');c.imageSmoothingEnabled=false;let frame,closed=false,start=performance.now(),paused=false,pauseAt=0;
+ function draw(now){if(closed||!canvas.isConnected)return;renderCinematic(c,scene,actors,((paused?pauseAt:now)-start)/1000,{portrait});frame=requestAnimationFrame(draw);}
+ frame=requestAnimationFrame(draw);const dispose=()=>{closed=true;cancelAnimationFrame(frame);canvas.remove();};dispose.setPaused=value=>{if(value===paused)return;if(value)pauseAt=performance.now();else start+=performance.now()-pauseAt;paused=value;};return dispose;
 }

@@ -139,3 +139,5 @@
 
 /* Event animation and dialogue remain visible on landscape phones. */
 .pb-event-card:has(canvas){max-height:90%;width:min(850px,94%);margin-bottom:8px;}
+
+.pb-event-offer{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:15;max-width:90%;padding:10px;background:#17353eee;border:2px solid #d2b573;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pb-event-offer[hidden]{display:none}

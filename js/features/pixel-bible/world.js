@@ -286,7 +286,7 @@ export async function mountPixelWorld(shell, options) {
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
-        if(chapterData.some(ch=>ch.code==='2ki')){el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';}
+        if(chapterData.some(ch=>ch.code==='2ki'))el.insertAdjacentHTML('beforeend','<button class="pb-speech-reference" data-action="encounter-portrait">두 인물 확대 보기</button>');
       }
     }
   }
@@ -510,15 +510,19 @@ export async function mountPixelWorld(shell, options) {
     const u = new SpeechSynthesisUtterance(text); u.lang = "ko-KR"; u.rate = .9;
     speechSynthesis.speak(u);
   }
-  let closeCinematic=null;
+  let closeCinematic=null,eventOffer=null;
+  const offerCard=document.createElement('div');offerCard.className='pb-event-offer';offerCard.hidden=true;shell.append(offerCard);
+  function offerEvent(scene,o){if(activeEvent||pendingEvent||eventOffer?.scene.id===scene.id)return;eventOffer={scene,o};offerCard.hidden=false;offerCard.innerHTML=`<b>${esc(scene.title)}</b><button class="pb-button" data-action="watch-event">▶ 사건 보기</button><button class="pb-button" data-action="dismiss-event">나중에</button>`;}
+
   function showLine() {
     const ev = activeEvent;
     ev.elapsed = 0;
-    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="skip">건너뛰기</button></div>`;
+    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">Ⅱ 일시정지</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
     closeCinematic?.();closeCinematic=ev.scene.code==='2ki'?mountCinematic(eventCard,ev.scene,sceneActors(ev.scene)):null;
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
+    eventOffer=null;offerCard.hidden=true;hideSpeech();encounters.clear();updateEncounters(performance.now());
     recipeUnlocks.add(recipeKey(scene));try{localStorage.setItem(RECIPE_KEY,JSON.stringify([...recipeUnlocks]));}catch(_){}
     activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
     sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.eventRoutine=eventRoutine(scene,n);n.eventObjects=objects.filter(o=>(scene.requiresObjects||[]).includes(o.kind)&&Math.hypot(o.x-activeEvent.object.x,o.y-activeEvent.object.y)<=3.5);n.eventPartner=sceneActors(scene).find(other=>other.name===scene.eventMotion?.target)||sceneActors(scene).find(other=>other!==n);n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?(n.action===scene.object?activeEvent.object:n.eventObjects.find(o=>o.kind===n.action)||activeEvent.object):null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
@@ -528,8 +532,9 @@ export async function mountPixelWorld(shell, options) {
   }
   function endEvent() {closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
-    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){queueScene(scene,center);return;}}
+    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){offerEvent(scene,center);return;}}
   }
+  function offerEventReady(){const pending=pendingEvent;pendingEvent=null;offerEvent(pending.scene,pending.o);}
   function sceneActors(scene) { return scene.actors.map((name) => npcs.find((n) => n.name === name)); }
   function queueScene(scene, o) {
     if(!requiredObjectsNearby(scene,o,objects)){say('보조 물건도 중심 물건 가까이에 배치해 주세요.');return;}
@@ -553,7 +558,7 @@ export async function mountPixelWorld(shell, options) {
     if(n.creature&&!creatureCanUse(n,o.kind)){clearInfo();return;}
     const candidates=model.scenes.filter(s=>s.object===o.kind&&s.actors.includes(n.name)&&sceneActors(s).every(Boolean));
     const scene=candidates.find(s=>isRecipeLocked(s)&&recipeAssembled(s,npcs,o,objects))||candidates.find(s=>!isRecipeLocked(s));
-    if (scene) return queueScene(scene,o);
+    if (scene) return offerEvent(scene,o);
     if(npcs.some(other=>other!==n&&(other.usingObject===o||other.task===o))){say('다른 인물이 사용 중이에요. 잠시 기다려 주세요.');return;}
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
@@ -843,6 +848,10 @@ export async function mountPixelWorld(shell, options) {
       return;
     }
     const action=b.dataset.action;
+    if(action==='dismiss-event'){eventOffer=null;offerCard.hidden=true;return;}
+    if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
+    if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
+
     if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);b.setAttribute('aria-pressed',on);b.textContent=on?'♫ 음악 ON':'♫ 음악 OFF';b.setAttribute('aria-label',on?'배경음악 끄기':'배경음악 켜기');}catch(error){say(error.message);}return;}
     if(action==='camera-home'){Object.assign(camera,homeCamera());constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
     if(action==='relationships'){
@@ -854,6 +863,7 @@ export async function mountPixelWorld(shell, options) {
     if(b.dataset.story!==undefined){const key=b.dataset.discoveryOwner,record=discoveries[key],story=record?.stories[Number(b.dataset.story)];if(story){discoveries[key]=markStoryRead(record,story);saveDiscoveries();await openSpeechPassage(story.ref,contextTerms({text:story.text}));shell.querySelector('.pb-scripture header')?.insertAdjacentHTML('afterbegin',`<button class="pb-button" data-discovery="${esc(key)}">도감으로</button>`);}return;}
     if(action==='collection'){openCollection();return;}
     if(action==='person-collection'){const person=npcs[selected];if(person){discover(person);openCollection(discoveryKey(person));}return;}
+    if(action==='encounter-portrait'){const el=b.closest('[data-encounter]'),line=encounterLines.find(l=>l.session+':'+l.slot===el.dataset.encounter);if(!line)return;if(el._closePortrait){el._closePortrait();el._closePortrait=null;b.textContent='두 인물 확대 보기';}else{el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';b.textContent='확대 접기';}return;}
     if(action==='encounter-details'){const id=b.closest('[data-encounter]').dataset.encounter;openSpeechDetails(encounterLines.find(l=>l.session+':'+l.slot===id));return;}
     if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='speech-details'){openSpeechDetails();return;}
@@ -993,7 +1003,7 @@ export async function mountPixelWorld(shell, options) {
         if(!reduced&&!pendingTalk&&n.creature?.body!=='fish') {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p);}
       }
     }
-    if(pendingEvent && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)) beginEvent(pendingEvent.scene);
+    if(pendingEvent && !pendingEvent.ready && pendingEvent.actors.every((n)=>!n.path.length && Math.hypot(n.x-pendingEvent.o.x,n.y-pendingEvent.o.y)<=1.5)){pendingEvent.ready=true;offerEventReady();}
   }
 
   // 배경은 한 번 그리고 매 프레임 재사용한다.
@@ -1053,8 +1063,8 @@ export async function mountPixelWorld(shell, options) {
     if(!paused&&!shell.querySelector('.pb-scripture')) {
       if(!activeEvent) update(dt);
       else {
-        cinematicTime+=dt;activeEvent.elapsed+=dt;
-        if(activeEvent.elapsed>Math.max(activeEvent.scene.code==='2ki'?8:4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        if(!activeEvent.paused){cinematicTime+=dt;activeEvent.elapsed+=dt;}
+        if(!activeEvent.paused&&activeEvent.elapsed>Math.max(activeEvent.scene.code==='2ki'?8:4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
     followDraggedCharacter(dt);
