@@ -6,6 +6,7 @@ let readMode = "read"; // 읽은 기록 보기: "read" 통독 · "qt" QT (섞지
 let bookSel = null; // 권별 진행에서 고른 권 코드
 let glanceMode = "read"; // 통독 현황 한눈에 보기: "read" 통독 · "qt" QT 본문 범위 (따로 전환)
 let qtBookSel = null; // QT 모드에서 고른 권 코드
+let statsSubpage = ""; // 관리의 색상 / 계정·설정 별도 화면
 const qtCoverMap = {}; // QT 날짜 → { ref: 본문 범위, idx: 다룬 장 번호들 } (한 번 받으면 다시 받지 않음)
 
 function ring(pct) {
@@ -96,25 +97,17 @@ function renderStats() {
 
   const copied = copiedByDate();
 
-  const themeNow = state.settings.theme || "auto";
+  if (statsSubpage) {
+    renderStatsSubpage(statsSubpage, { cutoff, cutoffText, habits, habitAdvice });
+    return;
+  }
   app.innerHTML = `
     ${pixelBibleBannerHtml()}
     ${changelogCardHtml()}
-    ${ScriptureStudy.settingsHtml()}
-    <section class="card theme-card">
-      <h3 class="label">화면 모드</h3>
-      <div class="seg wide">
-        ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
-      </div>
-    </section>
-    <section class="card cutoff-card">
-      <div class="cutoff-head"><div><h3 class="label">통독 하루 마감</h3><p class="muted small">마감 전 새벽에 읽으면 전날 통독으로 기록해요.</p></div><b id="cutoff-value">${cutoffText}</b></div>
-      <input type="range" id="reading-cutoff" min="0" max="5" step="1" value="${cutoff}" aria-label="통독 하루 마감 시간">
-      <div class="cutoff-ticks" aria-hidden="true">${["자정", "1시", "2시", "3시", "4시", "5시"].map((x) => `<span>${x}</span>`).join("")}</div>
-      <p class="muted small" id="cutoff-preview">현재 기준으로 통독 날짜는 <b>${prettyDate(readingDateStr())}</b>예요. 과거 기록은 바뀌지 않아요.</p>
-      <p class="muted small">마감 활용은 시간을 바꾼 그 통독 날짜에, 하루 분량을 자정부터 선택한 새벽 시각 사이에 모두 읽었을 때만 1회로 세요. 다음 회차는 마감 시간을 다시 바꾼 뒤에 셀 수 있어요.</p>
-      ${habitAdvice ? `<p class="cutoff-advice">🌙 최근 30일 동안 새벽 통독 ${habits.late}일 · 새벽 마감 활용 ${habits.uses}일이었어요. 가능하다면 몸과 말씀 묵상을 위해 조금 일찍 읽어 보아도 좋아요.</p>` : ""}
-    </section>
+    <div class="stats-page-links" aria-label="관리 설정">
+      <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
+      <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
+    </div>
     <section class="hero-row">${readCard}${qtCard}</section>
 
     ${glanceCardHtml()}
@@ -141,51 +134,13 @@ function renderStats() {
 
     ${pr ? planTableCardHtml(pr) : ""}
     ${ScriptureStudy.highlightLibraryHtml()}
+    `;
 
-    ${accountCardHtml()}
-    ${feedbackCardHtml()}
-
-    <div class="reminder-weather-grid">${reminderCardHtml()}${KstLight.permissionsHtml()}</div>
-
-    ${exportCardHtml()}
-
-    <section class="card">
-      <h2>계획 · 데이터</h2>
-      ${state.plan ? `<p class="muted small">${esc(chapLabel(state.plan.startIdx))} → ${esc(chapLabel(state.plan.endIdx))} · 하루 ${state.plan.perDay}장 · ${prettyDate(state.plan.startDate)} 시작</p>` : ""}
-      <div class="inline wrap">
-        ${state.plan ? `<button class="btn ghost small" id="st-edit">계획 바꾸기</button>` : ""}
-        <button class="btn ghost small" id="st-export">백업 파일 받기</button>
-        <label class="btn ghost small">백업 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
-        <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
-      </div>
-      <p class="muted small">로그인하지 않으면 모든 기록은 <b>이 기기의 이 브라우저(또는 홈 화면 앱)</b>에만 저장돼요. 위 <b>계정</b>으로 로그인하면 서버에도 저장돼서 다른 기기에서 이어 할 수 있어요. 백업 파일은 언제든 받아 둘 수 있어요.</p>
-    </section>`;
-
-  bindAccountCard();
-  bindFeedbackCard();
-  bindReminderCard();
-  KstLight.bindPermissions(document);
-  bindExportCard();
-
-  ScriptureStudy.bindSettings(app);
   ScriptureStudy.bindHighlightLibrary(app);
-  document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
-    state.settings.theme = b.dataset.themeSet;
-    applyTheme();
-    persist();
-    // 다시 그리지 않고 .on만 바꿔서 슬라이드 막대가 밀려 가게 함
-    b.parentElement.querySelectorAll("[data-theme-set]").forEach((x) => x.classList.toggle("on", x === b));
-  }));
-
-  const cutoffInput = $("#reading-cutoff");
-  cutoffInput.addEventListener("input", () => {
-    const h = Number(cutoffInput.value);
-    $("#cutoff-value").textContent = h === 0 ? "자정" : `새벽 ${h}시`;
-  });
-  cutoffInput.addEventListener("change", () => {
-    if (changeReadingCutoff(cutoffInput.value)) persist();
+  app.querySelectorAll("[data-stats-page]").forEach((button) => button.addEventListener("click", () => {
+    statsSubpage = button.dataset.statsPage;
     renderStats();
-  });
+  }));
 
   const shiftMonth = (n) => {
     const d = new Date(cy, cm - 1 + n, 1);
@@ -215,6 +170,67 @@ function renderStats() {
     books.querySelectorAll(".book").forEach((x) => x.classList.toggle("sel", x.dataset.book === bookSel));
     $("#book-detail").innerHTML = bookSel ? bookDetailHtml(bookSel, copiedBySource(glanceMode)) : "";
   });
+}
+
+function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
+  const title = page === "colors" ? "색상" : "계정·설정";
+  const header = `<header class="stats-subpage-head"><button type="button" id="stats-subpage-back" aria-label="관리 화면으로 돌아가기">←</button><h1>${title}</h1></header>`;
+  if (page === "colors") {
+    app.innerHTML = `${header}${ScriptureStudy.settingsHtml()}`;
+    $("#stats-subpage-back").addEventListener("click", () => { statsSubpage = ""; renderStats(); });
+    const palettePanel = app.querySelector(".highlight-palette-settings");
+    if (palettePanel) palettePanel.open = true;
+    ScriptureStudy.bindSettings(app);
+    return;
+  }
+  const themeNow = state.settings.theme || "auto";
+  app.innerHTML = `${header}
+    <section class="card theme-card"><h3 class="label">화면 모드</h3><div class="seg wide">
+      ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
+    </div></section>
+    <section class="card cutoff-card">
+      <div class="cutoff-head"><div><h3 class="label">통독 하루 마감</h3><p class="muted small">마감 전 새벽에 읽으면 전날 통독으로 기록해요.</p></div><b id="cutoff-value">${cutoffText}</b></div>
+      <input type="range" id="reading-cutoff" min="0" max="5" step="1" value="${cutoff}" aria-label="통독 하루 마감 시간">
+      <div class="cutoff-ticks" aria-hidden="true">${["자정", "1시", "2시", "3시", "4시", "5시"].map((x) => `<span>${x}</span>`).join("")}</div>
+      <p class="muted small" id="cutoff-preview">현재 기준으로 통독 날짜는 <b>${prettyDate(readingDateStr())}</b>예요. 과거 기록은 바뀌지 않아요.</p>
+      <p class="muted small">마감 활용은 시간을 바꾼 그 통독 날짜에, 하루 분량을 자정부터 선택한 새벽 시각 사이에 모두 읽었을 때만 1회로 세요. 다음 회차는 마감 시간을 다시 바꾼 뒤에 셀 수 있어요.</p>
+      ${habitAdvice ? `<p class="cutoff-advice">🌙 최근 30일 동안 새벽 통독 ${habits.late}일 · 새벽 마감 활용 ${habits.uses}일이었어요. 가능하다면 몸과 말씀 묵상을 위해 조금 일찍 읽어 보아도 좋아요.</p>` : ""}
+    </section>
+    ${accountCardHtml()}
+    ${feedbackCardHtml()}
+    <div class="reminder-weather-grid">${reminderCardHtml()}${KstLight.permissionsHtml()}</div>
+    ${exportCardHtml()}
+    <section class="card"><h2>계획 · 데이터</h2>
+      ${state.plan ? `<p class="muted small">${esc(chapLabel(state.plan.startIdx))} → ${esc(chapLabel(state.plan.endIdx))} · 하루 ${state.plan.perDay}장 · ${prettyDate(state.plan.startDate)} 시작</p>` : ""}
+      <div class="inline wrap">${state.plan ? `<button class="btn ghost small" id="st-edit">계획 바꾸기</button>` : ""}
+        <button class="btn ghost small" id="st-export">백업 파일 받기</button>
+        <label class="btn ghost small">백업 불러오기<input type="file" id="st-import" accept="application/json" hidden></label>
+        <button class="btn danger small" id="st-reset">모든 기록 초기화</button>
+      </div>
+      <p class="muted small">로그인하지 않으면 모든 기록은 <b>이 기기의 이 브라우저(또는 홈 화면 앱)</b>에만 저장돼요. 위 <b>계정</b>으로 로그인하면 서버에도 저장돼서 다른 기기에서 이어 할 수 있어요. 백업 파일은 언제든 받아 둘 수 있어요.</p>
+    </section>`;
+
+  $("#stats-subpage-back").addEventListener("click", () => { statsSubpage = ""; renderStats(); });
+  bindAccountCard();
+  bindFeedbackCard();
+  bindReminderCard();
+  KstLight.bindPermissions(document);
+  bindExportCard();
+  document.querySelectorAll("[data-theme-set]").forEach((button) => button.addEventListener("click", () => {
+    state.settings.theme = button.dataset.themeSet;
+    applyTheme();
+    persist();
+    button.parentElement.querySelectorAll("[data-theme-set]").forEach((item) => item.classList.toggle("on", item === button));
+  }));
+  const cutoffInput = $("#reading-cutoff");
+  cutoffInput.addEventListener("input", () => {
+    const h = Number(cutoffInput.value);
+    $("#cutoff-value").textContent = h === 0 ? "자정" : `새벽 ${h}시`;
+  });
+  cutoffInput.addEventListener("change", () => {
+    if (changeReadingCutoff(cutoffInput.value)) persist();
+    renderStats();
+  });
   const edit = $("#st-edit");
   if (edit) edit.addEventListener("click", () => renderSetup(state.plan));
   $("#st-export").addEventListener("click", () => {
@@ -235,9 +251,7 @@ function renderStats() {
       state = { ...defaultState(), ...data, plan: normalizePlan(data.plan), readingHabits: normalizeReadingHabits(data.readingHabits), settings: normalizeSettings({ ...defaultState().settings, ...(data.settings || {}) }) };
       persist();
       route();
-    } catch (err) {
-      alert("올바른 백업 파일이 아니에요.");
-    }
+    } catch (err) { alert("올바른 백업 파일이 아니에요."); }
   });
   $("#st-reset").addEventListener("click", () => {
     if (!confirm("통독 계획과 모든 기록(QT 노트 포함)을 삭제할까요? 되돌릴 수 없어요.")) return;
@@ -258,13 +272,13 @@ function planTableCardHtml(pr) {
     const st = done === d.length ? "done" : done ? "part" : n < pr.todayDay ? "late" : n === pr.todayDay ? "today" : "";
     return `<button class="tcell ${st} ${n === planSel ? "sel" : ""}" data-tcell="${n}" aria-label="Day ${n + 1}">${n + 1}</button>`;
   }).join("");
-  return `<section class="card" id="ptable-card">
-    <div class="ptable-head"><h2>통독표</h2>
-      <span class="muted small"><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</span></div>
-    <div class="tlegend"><span><i class="done"></i>다 읽음</span><span><i class="part"></i>일부</span><span><i class="late"></i>밀림</span><span><i class="today"></i>오늘</span><span><i></i>남은 날</span></div>
+  return `<details class="card ptable-toggle" id="ptable-card">
+    <summary class="ptable-head"><h2>통독표</h2>
+      <span class="muted small"><b>${pr.pct}%</b> · ${pr.readCount}/${pr.total}장 · Day ${pr.doneDays}/${pr.days.length} 완료</span></summary>
+    <div class="ptable-content"><div class="tlegend"><span><i class="done"></i>다 읽음</span><span><i class="part"></i>일부</span><span><i class="late"></i>밀림</span><span><i class="today"></i>오늘</span><span><i></i>남은 날</span></div>
     <div class="tgrid" id="tgrid">${cells}</div>
-    <div class="tdetail" id="tdetail">${planDetailHtml(pr, planSel)}</div>
-  </section>`;
+    <div class="tdetail" id="tdetail">${planDetailHtml(pr, planSel)}</div></div>
+  </details>`;
 }
 function planDetailHtml(pr, n) {
   const d = pr.days[n];

@@ -3,6 +3,7 @@
 
 function route() {
   const r = (location.hash || "#today").slice(1);
+  if (r !== "stats") statsSubpage = "";
   document.body.classList.remove("full", "sheet-open");
   sheetTab = null;
   document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("active", a.dataset.route === r));
