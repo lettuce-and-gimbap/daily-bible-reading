@@ -382,3 +382,5 @@ button.book { border: 0; font: inherit; color: inherit; text-align: left; cursor
 #feedback-inbox { margin-top:20px; }
 .feedback-item { padding:14px 0; border-bottom:1px solid var(--line, #ddd); }
 .feedback-message { white-space:pre-wrap; overflow-wrap:anywhere; }
+
+.highlight-palette-settings>summary{display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none;font-weight:800}.highlight-palette-settings>summary::-webkit-details-marker{display:none}.highlight-palette-settings>summary::after{content:"＋";margin-left:auto;color:var(--accent);font-size:1.2rem}.highlight-palette-settings[open]>summary::after{content:"−"}.highlight-palette-settings>summary span{font-size:1.05rem}.highlight-palette-settings>summary small{color:var(--muted);font-weight:500}.highlight-palette-content{padding-top:10px}

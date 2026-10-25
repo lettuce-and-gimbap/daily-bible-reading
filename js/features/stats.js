@@ -140,6 +140,7 @@ function renderStats() {
     </section>
 
     ${pr ? planTableCardHtml(pr) : ""}
+    ${ScriptureStudy.highlightLibraryHtml()}
 
     ${accountCardHtml()}
     ${feedbackCardHtml()}
@@ -167,6 +168,7 @@ function renderStats() {
   bindExportCard();
 
   ScriptureStudy.bindSettings(app);
+  ScriptureStudy.bindHighlightLibrary(app);
   document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
     state.settings.theme = b.dataset.themeSet;
     applyTheme();
