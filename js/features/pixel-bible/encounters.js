@@ -69,6 +69,10 @@ export class EncounterDirector {
     }
    }
   }
-  return this.active.flatMap(s=>s.lines.map((line,i)=>({...line,session:s.id,slot:i,started:s.started+i*800,until:s.started+i*800+5000}))).filter(l=>now>=l.started&&now<l.until);
+  // A related pair speaks together in one shared bubble. Keeping the two lines
+  // in a single timed item prevents one speaker's bubble from covering the other.
+  return this.active.filter(s=>now>=s.started&&now<s.until).map(s=>({
+   ...s.lines[0],session:s.id,slot:0,started:s.started,until:s.until,pairLines:s.lines,
+  }));
  }
 }

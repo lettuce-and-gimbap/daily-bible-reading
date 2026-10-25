@@ -276,8 +276,10 @@ export async function mountPixelWorld(shell, options) {
       const id=line.session+':'+line.slot;let el=encounterBubbles.get(id);
       if(!el){
         el=document.createElement('div');el.className='pb-speech pb-encounter';el.setAttribute('role','status');el.setAttribute('aria-live','polite');
-        el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
-        el.dataset.encounter=id;el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);el.querySelector('p').textContent=line.text;
+        el.innerHTML='<div class="pb-encounter-lines"></div><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button><button class="pb-speech-reference" data-action="encounter-passage"></button>';
+        el.dataset.encounter=id;
+        el.querySelector('.pb-encounter-lines').innerHTML=(line.pairLines||[line]).map(part=>`<section class="pb-encounter-line"><b class="pb-speech-speaker">${esc(displayPersonName(part.speaker.name))}</b><p></p></section>`).join('');
+        [...el.querySelectorAll('.pb-encounter-line p')].forEach((p,i)=>{p.textContent=(line.pairLines||[line])[i].text;});
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
@@ -289,7 +291,11 @@ export async function mountPixelWorld(shell, options) {
     const placed=[];
     for(const line of encounterLines){
       const el=encounterBubbles.get(line.session+':'+line.slot);if(!el)continue;
-      const box=placeAboveHead(el,line.speaker,r,v,el.offsetWidth,el.offsetHeight,placed);
+      const pair=line.pairLines||[line];
+      const onScreen=pair.every(part=>{const a=interactionAnchor(part.speaker,TILE),x=a.x*v.scale+v.x,y=a.y*v.scale+v.y;return x>=0&&x<=canvas.width&&y>=0&&y<=canvas.height;});
+      if(!onScreen){el.style.visibility='hidden';continue;}
+      const anchor={...line.speaker,x:pair.reduce((sum,part)=>sum+part.speaker.x,0)/pair.length,y:pair.reduce((sum,part)=>sum+part.speaker.y,0)/pair.length};
+      const box=placeAboveHead(el,anchor,r,v,el.offsetWidth,el.offsetHeight,placed);
       if(box)placed.push(box);
     }
   }
@@ -758,7 +764,7 @@ export async function mountPixelWorld(shell, options) {
   function stopObjectChoicePress(press,completed=false) {
     if(!press||objectChoicePress!==press)return;
     clearTimeout(press.timer);press.button.classList.remove('is-holding');
-    if(completed){press.button.classList.add('is-details');longPressClick={button:press.button,id:press.id,until:performance.now()+900};setTimeout(()=>{if(longPressClick?.button===press.button)longPressClick=null;},950);}
+    if(completed){press.button.classList.remove('is-details');press.button.blur();longPressClick={button:press.button,id:press.id,until:performance.now()+900};setTimeout(()=>{if(longPressClick?.button===press.button)longPressClick=null;},950);}
     objectChoicePress=null;
   }
   function showObjectDetails(kind) {

@@ -17,11 +17,12 @@ test('옆 칸 조우 즉시 서로 마주보고 각자 사건에 맞는 대사�
  const {director,npcs}=fixture();
  const first=director.tick(0,npcs);assert.equal(first.length,1);
  assert.equal(first[0].speaker.name,'아합');assert.match(first[0].text,/포도원/);
+ assert.equal(first[0].pairLines.length,2);assert.match(first[0].pairLines[1].text,/유산|조상/);
  assert.equal(npcs[0].direction,'right');assert.equal(npcs[1].direction,'left');
  assert.ok(npcs.every(n=>!n.path.length&&!n.task&&!n.usingObject&&n.encounter));
- const reply=director.tick(800,npcs);assert.equal(reply.length,2);
- assert.equal(reply[1].speaker.name,'나봇');assert.match(reply[1].text,/유산|조상/);
- assert.ok(reply.every(l=>l.until-l.started===5000));
+ const reply=director.tick(800,npcs);assert.equal(reply.length,1);
+ assert.equal(reply[0].pairLines.length,2,'두 인물의 문장이 처음부터 한 말풍선에 함께 남는다');
+ assert.ok(reply.every(l=>l.until-l.started===5800));
  assert.equal(director.tick(5000,npcs).length,1);
  assert.equal(director.tick(5800,npcs).length,0);
  assert.ok(npcs.every(n=>!n.encounter));
@@ -42,7 +43,8 @@ test('동시 조우는 한 쌍만 진행해 자동 말풍선 슬롯과 합쳐 �
  director.tick(0,npcs);
  assert.equal(director.active.length,1);
  assert.equal(npcs.filter(n=>n.encounter).length,2);
- assert.equal(director.tick(800,npcs).length,2,'한 쌍의 맞대화만 동시에 표시');
+ assert.equal(director.tick(800,npcs).length,1,'한 쌍의 두 문장을 하나의 겹치지 않는 말풍선에 표시');
+ assert.equal(director.tick(800,npcs)[0].pairLines.length,2);
 });
 
 test('상하 조우·드래그 배제·다시 놓기와 인물 숨기기를 처리한다',()=>{
@@ -61,7 +63,7 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
  const lines=relationshipLines(a,b,relation,new Map(),{random:()=>0});
  assert.equal(lines.length,2);
  for(const line of lines){
-  assert.ok(line.text.length<=64);assert.doesNotMatch(line.text,/이 일의 말씀을 함께 살펴보자/);
+  assert.doesNotMatch(line.text,/\.\.\.|…|이 일의 말씀을 함께 살펴보자/);
   assert.equal(line.detailText,`${relation.text} (${relation.ref})`);
   assert.equal(line.ref,relation.ref);
   assert.ok(!line.text.includes(relation.text));
@@ -90,7 +92,7 @@ test('일상 인사는 한 쌍만 하고 같은 자리에서 반복하지 않으
  const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
  const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0,maxActive:99});
  assert.equal(director.tick(0,[a,b,c]).length,1);assert.equal(director.active.length,1);
- assert.equal(director.tick(800,[a,b,c]).length,2);assert.equal(director.tick(5800,[a,b,c]).length,0);assert.ok(!a.encounter&&a.idle<1);
+ const pair=director.tick(800,[a,b,c]);assert.equal(pair.length,1);assert.equal(pair[0].pairLines.length,2);assert.equal(director.tick(5800,[a,b,c]).length,0);assert.ok(!a.encounter&&a.idle<1);
  assert.equal(director.tick(6000,[a,b]).length,0);assert.equal(director.tick(21000,[a,b]).length,0);
  b.x=8;director.tick(21001,[a,b]);b.x=2;assert.equal(director.tick(21002,[a,b]).length,1);
 });

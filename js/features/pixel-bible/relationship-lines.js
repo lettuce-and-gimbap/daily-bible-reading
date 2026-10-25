@@ -1,6 +1,5 @@
 import {PAIR_DIALOGUE} from './pair-dialogue.js';
 import {parseReference} from './references.js';
-import {speechView} from './speech-view.js';
 
 const sameName=(a,b)=>a===b||['예수','예수님'].includes(a)&&['예수','예수님'].includes(b);
 function contextualLine(speaker,relation){
@@ -19,8 +18,8 @@ export function relationshipLines(a,b,relation,chapterLines,{random=Math.random}
   const ownLine=own.length?own[Math.floor(random()*own.length)]:null;
   const text=authored?authored.lines[Math.floor(random()*authored.lines.length)]:ownLine?.text||contextualLine(speaker,relation);
   if(!text)return null;
-  return speechView({id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,
+  return {id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,
    ref:authored?.ref||ownLine?.ref||relation.ref,
-   detailText:[relation.text,authored?.detail].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair'});
+   detailText:[relation.text,authored?.detail].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair'};
  }).filter(Boolean);
 }

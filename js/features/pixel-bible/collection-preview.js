@@ -28,16 +28,12 @@ export function bindPersonPreview(root){
    box._garmentDetails=details;
   };
   const setDirectionFrom=(dx,dy)=>{if(Math.abs(dx)+Math.abs(dy)<2)return;if(Math.abs(dx)>=Math.abs(dy))direction=dx<0?'left':'right';else direction=dy<0?'up':'down';};
-  const inCharacter=(e)=>{
-   const rect=image.getBoundingClientRect();if(!rect.width||!rect.height)return false;
-   const x=Math.floor((e.clientX-rect.left)*224/rect.width),y=Math.floor((e.clientY-rect.top)*224/rect.height);
-   if(x<0||y<0||x>=224||y>=224)return false;
-   return box._characterPixels.getContext('2d').getImageData(x,y,1,1).data[3]>24;
-  };
   stage.addEventListener('pointerdown',e=>{
-   if(e.target.closest('button')||!inCharacter(e))return;
+   // On touch screens a pixel-exact alpha hit can miss due to fractional CSS
+   // scaling. The preview stage itself is a forgiving drag surface.
+   if(e.target.closest('button'))return;
    drag={id:e.pointerId,x:e.clientX,y:e.clientY,origin:{...position},distance:0};
-   stage.setPointerCapture?.(e.pointerId);e.preventDefault();
+   try{stage.setPointerCapture?.(e.pointerId);}catch(_){}e.preventDefault();
   });
   stage.addEventListener('pointermove',e=>{
    if(!drag||drag.id!==e.pointerId)return;
