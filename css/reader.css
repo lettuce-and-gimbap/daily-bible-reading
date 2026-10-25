@@ -456,6 +456,9 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .qt-ans { width: 100%; min-height: 4.6em; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: .94rem; line-height: 1.6; }
 .qt-ans:focus { outline: 2px solid color-mix(in srgb, var(--qt) 45%, transparent); outline-offset: 0; }
 .qt-passage .vp-list { min-width: 0; }
+.qt-passage .vp-row { border: 0; border-radius: 0; background: transparent; }
+.qt-passage .vp-row + .vp-row { border-top: 1px solid var(--line); }
+.rd.qt .qt-passage .vp-row:has(input:checked) { background: var(--qt-soft); }
 .rd.qt .vp-row:has(input:checked) { border-color: var(--qt); background: var(--qt-soft); }
 .rd.qt .vp-row:has(input:checked)::after { color: var(--qt); }
 .rd.qt .vp-num { color: var(--qt); }

@@ -96,7 +96,7 @@ body:has(.tabs a[data-route="stats"].active) .seg button.on{background:var(--adm
 .rd.qt .rd-seg button.on{background:var(--qt-soft);color:var(--qt)}
 .rd.qt .btn.primary,.rd.qt .qp-fixed .btn.primary,.rd.qt .toast-action,.rd.qt~.toast .toast-action,.qt-selection-note{color:var(--qt-ink)}
 .step-check{color:var(--accent-ink)}
-.qt-sec{border-left:3px solid var(--qt-soft);padding-left:12px}
+.qt-sec{border-left:0;padding-left:0}
 .vp-row{border-color:var(--line);background:var(--surface)}
 .vp-row:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}
 .rd.qt .vp-row:has(input:checked){background:var(--qt-soft);border-color:var(--qt)}
