@@ -16,6 +16,7 @@ export function eventPlan(scene){
 const arms=(a,b)=>[a||[5,25,5,28],b||[17,25,17,28]];
 const REST=arms();
 const A={
+ 'anoint-head':{arms:arms([7,21,11,17],[20,18,28,12]),held:true,angle:.8},'break-bread':{arms:arms([6,24,9,25],[20,24,23,25]),held:true},prostrate:{arms:arms([7,25,12,30],[17,25,23,30]),kneel:true,bend:5,bodyY:6},
  listen:{arms:REST},stand:{arms:REST},inspect:{arms:arms([7,25,10,27],[17,25,14,27])},grasp:{arms:arms(null,[19,26,22,29]),held:true},
  weigh:{arms:arms([7,24,10,25],[20,24,24,25]),held:true},scoop:{arms:arms(null,[20,27,24,30]),bend:1,held:true},march:{walk:true,move:1},
  gather:{arms:arms([5,27,10,30],[17,27,14,30]),bend:2,held:true},lift:{arms:arms([6,23,8,19],[17,23,19,19]),held:true},

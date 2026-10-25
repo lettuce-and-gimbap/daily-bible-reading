@@ -1,8 +1,10 @@
 {
   "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
   "expected": 7957,
-  "authored": 273,
-  "pending": 7684,
+  "authored": 1071,
+  "contentClips": 1068,
+  "textualNotices": 3,
+  "pending": 6886,
   "chapters": [
     {
       "code": "mat",
@@ -71,134 +73,134 @@
       "code": "mat",
       "chapter": 10,
       "expected": 42,
-      "authored": 0,
-      "pending": 42
+      "authored": 42,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 11,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 12,
       "expected": 50,
-      "authored": 0,
-      "pending": 50
+      "authored": 50,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 13,
       "expected": 58,
-      "authored": 0,
-      "pending": 58
+      "authored": 58,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 14,
       "expected": 36,
-      "authored": 0,
-      "pending": 36
+      "authored": 36,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 15,
       "expected": 39,
-      "authored": 0,
-      "pending": 39
+      "authored": 39,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 16,
       "expected": 28,
-      "authored": 0,
-      "pending": 28
+      "authored": 28,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 17,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 18,
       "expected": 35,
-      "authored": 0,
-      "pending": 35
+      "authored": 35,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 19,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 20,
       "expected": 34,
-      "authored": 0,
-      "pending": 34
+      "authored": 34,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 21,
       "expected": 46,
-      "authored": 0,
-      "pending": 46
+      "authored": 46,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 22,
       "expected": 46,
-      "authored": 0,
-      "pending": 46
+      "authored": 46,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 23,
       "expected": 39,
-      "authored": 0,
-      "pending": 39
+      "authored": 39,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 24,
       "expected": 51,
-      "authored": 0,
-      "pending": 51
+      "authored": 51,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 25,
       "expected": 46,
-      "authored": 0,
-      "pending": 46
+      "authored": 46,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 26,
       "expected": 75,
-      "authored": 0,
-      "pending": 75
+      "authored": 75,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 27,
       "expected": 66,
-      "authored": 0,
-      "pending": 66
+      "authored": 66,
+      "pending": 0
     },
     {
       "code": "mat",
       "chapter": 28,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "mrk",

@@ -1,3 +1,4 @@
+import {drawVerseSymbols} from './verse-symbols.js';
 import {drawCreature} from '../creature-art.js';
 import {CREATURES} from '../creatures.js';
 // Animated illustrations, explicitly distinguished from historical reconstructions.
@@ -11,7 +12,7 @@ export function drawVerseDiagram(c,scene,sample){
  r(14,12,692,28,'#233d47');text(scene.ref+' · '+scene.title,360,31,15);
  text('본문을 풀어 그린 상징 연출',360,61,12,'#304b50');
  const positions=labels.map((_,i)=>110+i*500/Math.max(1,labels.length-1));
- if(kind==='lineage'){
+ if(drawVerseSymbols(c,kind,sample,{r,prop,text,phase})){}else if(kind==='lineage'){
   for(let i=0;i<shown;i++){const x=positions[i];if(i){r(positions[i-1]+48,151,(x-positions[i-1]-96)*Math.min(1,phase*labels.length-i+1),3,'#d7c18a');if(edgeLabels)text(edgeLabels[i-1],(positions[i-1]+x)/2,115,12,'#304b50');}r(x-48,124,96,56,'#233d47');r(x-44,128,88,48,i===shown-1?'#6d8a77':'#526a64');for(const [j,line]of wrap(labels[i],7).entries())text(line,x,143+j*16,13);}
  }else if(['house','house-storm','house-fall'].includes(kind)){
   const sand=labels.some(l=>l.includes('모래')),fall=kind==='house-fall'&&index>=4;

@@ -4,7 +4,7 @@ export function drawEffects(c,sample,layout){
  const {plan,index,progress,effectProgress:p,elapsed}=sample,effect=plan.effect;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.max(0,Math.round(w)),Math.max(0,Math.round(h)));};
  const prop=(kind,x,y)=>drawWorldObject(c,{kind,x,y},1,0),x=layout.prop.x,y=layout.prop.y;
- if(['illustration','instruction','vision'].includes(plan.mode)){r(18,35,224,23,'#233d47');c.fillStyle='#f6e4b7';c.font='12px DungGeunMo,monospace';c.textAlign='left';c.fillText(plan.mode==='instruction'?'규례 설명 · 동작은 예시':plan.mode==='vision'?'꿈 · 환상의 상징 장면':'본문을 설명하는 상징 장면',24,50);}
+ if(['illustration','instruction','vision','parable'].includes(plan.mode)){r(18,35,224,23,'#233d47');c.fillStyle='#f6e4b7';c.font='12px DungGeunMo,monospace';c.textAlign='left';c.fillText(plan.mode==='parable'?'비유 속 사건을 그린 예시':plan.mode==='instruction'?'규례 설명 · 동작은 예시':plan.mode==='vision'?'꿈 · 환상의 상징 장면':'본문을 설명하는 상징 장면',24,50);}
  const spark=(col)=>{if(index<3)return;for(let i=0;i<10;i++)r(x-18+i*7%37,y-60+(i*11+elapsed*10)%50,2,3,col);};
  switch(effect){
  case 'transfiguration':if(index>=2){for(const dx of [-40,-27,27,40])r(layout.lead.x+dx,layout.lead.y-110,3,90,'#efe3ae');}break;

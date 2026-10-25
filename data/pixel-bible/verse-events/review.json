@@ -1,8 +1,8 @@
 {
-  "authored": 273,
-  "browserVerified": 273,
-  "payloadSha256": "8dda5eca5a89c5129b1a35840326d04bcd60345035d3387f94c9a405a4e49001",
-  "rendererSha256": "c85b831f85b24ddaec8e6e722fd7ac30bdcf0d1d02061926b0b8a85ac6164ab3",
+  "authored": 1071,
+  "browserVerified": 1071,
+  "payloadSha256": "4d8bb92dea4497ec47eed32d3d5076093e8851d5baead6fa3fe119575b95bf55",
+  "rendererSha256": "6e052ce227cbbc9d802ef5a908ad53e551e21432330495a026a4bc6a75dc8fba",
   "method": "Chromium 7 sampled times, start/action/end/portrait/reduced, desktop and landscape mobile. Automated exceptions check; representative frames inspected separately, not all frames watched manually.",
   "chapters": [
     {
@@ -57,6 +57,120 @@
       "chapter": 9,
       "drawn": 38,
       "frames": 266,
+      "failures": []
+    },
+    {
+      "chapter": 10,
+      "drawn": 42,
+      "frames": 294,
+      "failures": []
+    },
+    {
+      "chapter": 11,
+      "drawn": 30,
+      "frames": 210,
+      "failures": []
+    },
+    {
+      "chapter": 12,
+      "drawn": 50,
+      "frames": 350,
+      "failures": []
+    },
+    {
+      "chapter": 13,
+      "drawn": 58,
+      "frames": 406,
+      "failures": []
+    },
+    {
+      "chapter": 14,
+      "drawn": 36,
+      "frames": 252,
+      "failures": []
+    },
+    {
+      "chapter": 15,
+      "drawn": 39,
+      "frames": 273,
+      "failures": []
+    },
+    {
+      "chapter": 16,
+      "drawn": 28,
+      "frames": 196,
+      "failures": []
+    },
+    {
+      "chapter": 17,
+      "drawn": 27,
+      "frames": 189,
+      "failures": []
+    },
+    {
+      "chapter": 18,
+      "drawn": 35,
+      "frames": 245,
+      "failures": []
+    },
+    {
+      "chapter": 19,
+      "drawn": 30,
+      "frames": 210,
+      "failures": []
+    },
+    {
+      "chapter": 20,
+      "drawn": 34,
+      "frames": 238,
+      "failures": []
+    },
+    {
+      "chapter": 21,
+      "drawn": 46,
+      "frames": 322,
+      "failures": []
+    },
+    {
+      "chapter": 22,
+      "drawn": 46,
+      "frames": 322,
+      "failures": []
+    },
+    {
+      "chapter": 23,
+      "drawn": 39,
+      "frames": 273,
+      "failures": []
+    },
+    {
+      "chapter": 24,
+      "drawn": 51,
+      "frames": 357,
+      "failures": []
+    },
+    {
+      "chapter": 25,
+      "drawn": 46,
+      "frames": 322,
+      "failures": []
+    },
+    {
+      "chapter": 26,
+      "drawn": 75,
+      "frames": 525,
+      "failures": []
+    },
+    {
+      "chapter": 27,
+      "drawn": 66,
+      "frames": 462,
+      "failures": []
+    },
+    {
+      "chapter": 28,
+      "drawn": 20,
+      "frames": 140,
       "failures": []
     }
   ]
