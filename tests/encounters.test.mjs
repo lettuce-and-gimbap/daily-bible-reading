@@ -88,11 +88,11 @@ test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움�
  assert.equal(hangingPose(base,3,0,true).angle,0);
  assert.notDeepEqual(hangingPose({...base,key:'steady'},0).pose,poses[0].pose);
 });
-test('일상 인사는 한 쌍만 하고 같은 자리에서 반복하지 않으며 다시 이동한다',()=>{
+test('일상 인사는 만난 즉시 한 쌍만 시작하고 두 인물의 대사를 함께 표시한다',()=>{
  const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
- const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0,maxActive:99});
- assert.equal(director.tick(0,[a,b,c]).length,1);assert.equal(director.active.length,1);
- const pair=director.tick(800,[a,b,c]);assert.equal(pair.length,1);assert.equal(pair[0].pairLines.length,2);assert.equal(director.tick(5800,[a,b,c]).length,0);assert.ok(!a.encounter&&a.idle<1);
- assert.equal(director.tick(6000,[a,b]).length,1);assert.equal(director.tick(12000,[a,b]).length,0);
- b.x=8;director.tick(12001,[a,b]);b.x=2;assert.equal(director.tick(12002,[a,b]).length,1);
+ const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0});
+ const first=director.tick(0,[a,b,c]);assert.equal(first.length,1);assert.equal(first[0].pairLines.length,2);
+ assert.equal(director.tick(800,[a,b,c]).length,1);assert.equal(director.active.length,1);
+ assert.equal(director.active.length,1);
+ b.x=8;director.tick(801,[a,b,c]);b.x=2;const again=director.tick(802,[a,b,c]);assert.equal(again.length,1);assert.equal(again[0].pairLines.length,2);
 });
