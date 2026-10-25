@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "rendererSha256": "5552100834cc6f3c287208774556b267a80b6d4595f48bc16371f05d7f868192",
+  "rendererSha256": "2ff5b18cda13fbb0ca6ed3b60f18d355463681faf67b5b3095e8f29c15d636d1",
   "scope": "현재 등록된 신약 사건. 모든 성경 사건을 망라한다는 뜻이 아님.",
   "books": [
     {
@@ -15,18 +15,7 @@
         "reconstruction": 70,
         "illustration": 47
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 117,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "mrk",
@@ -40,18 +29,7 @@
         "reconstruction": 53,
         "illustration": 16
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 69,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "luk",
@@ -65,18 +43,7 @@
         "reconstruction": 73,
         "illustration": 33
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 106,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "jhn",
@@ -90,18 +57,7 @@
         "illustration": 31,
         "reconstruction": 55
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 86,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "act",
@@ -115,18 +71,7 @@
         "reconstruction": 114,
         "illustration": 6
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 120,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "rom",
@@ -139,18 +84,7 @@
       "modes": {
         "illustration": 61
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 61,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "1co",
@@ -163,18 +97,7 @@
       "modes": {
         "illustration": 57
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 57,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "2co",
@@ -187,18 +110,7 @@
       "modes": {
         "illustration": 40
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 40,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "gal",
@@ -211,18 +123,7 @@
       "modes": {
         "illustration": 20
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 20,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "eph",
@@ -235,18 +136,7 @@
       "modes": {
         "illustration": 21
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 21,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "php",
@@ -259,18 +149,7 @@
       "modes": {
         "illustration": 16
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 16,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "col",
@@ -283,18 +162,7 @@
       "modes": {
         "illustration": 13
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 13,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "1th",
@@ -307,18 +175,7 @@
       "modes": {
         "illustration": 18
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 18,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "2th",
@@ -331,18 +188,7 @@
       "modes": {
         "illustration": 10
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 10,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "1ti",
@@ -355,18 +201,7 @@
       "modes": {
         "illustration": 20
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 20,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "2ti",
@@ -379,18 +214,7 @@
       "modes": {
         "illustration": 15
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 15,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "tit",
@@ -403,18 +227,7 @@
       "modes": {
         "illustration": 11
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 11,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "phm",
@@ -427,18 +240,7 @@
       "modes": {
         "illustration": 4
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 4,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "heb",
@@ -451,18 +253,7 @@
       "modes": {
         "illustration": 43
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 43,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "jas",
@@ -475,18 +266,7 @@
       "modes": {
         "illustration": 15
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 15,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "1pe",
@@ -499,18 +279,7 @@
       "modes": {
         "illustration": 18
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 18,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "2pe",
@@ -523,18 +292,7 @@
       "modes": {
         "illustration": 12
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 12,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "1jn",
@@ -547,18 +305,7 @@
       "modes": {
         "illustration": 16
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 16,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "2jn",
@@ -571,18 +318,7 @@
       "modes": {
         "illustration": 3
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 3,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "3jn",
@@ -595,18 +331,7 @@
       "modes": {
         "illustration": 4
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 4,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "jud",
@@ -619,18 +344,7 @@
       "modes": {
         "illustration": 5
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 5,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     },
     {
       "code": "rev",
@@ -643,18 +357,7 @@
       "modes": {
         "vision": 98
       },
-      "status": "browser-verified",
-      "browser": {
-        "scenes": 98,
-        "sampledStatesPerScene": 7,
-        "renderPasses": [
-          "start",
-          "action",
-          "end",
-          "portrait"
-        ],
-        "errors": 0
-      }
+      "status": "authored-awaiting-browser-review"
     }
   ]
 }

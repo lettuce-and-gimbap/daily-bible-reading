@@ -27,7 +27,7 @@ async def main():
     r=await ev(f'window.verseReview.render({ch},{json.dumps(opts)})');assert not r['failures'],r
    print(ch,result['drawn'],'verse clips; errors 0',flush=True)
   samples={1:[2,16,20,24],2:[9,11,14,16],3:[6,14,16,17],4:[3,18,20,24],5:[15,24,29,45],6:[6,11,26,34],7:[7,15,25,27],8:[3,6,13,26],9:[7,10,20,25],10:[14,29,34,42],11:[7,12,14,29],12:[15,20,40,50],13:[4,7,33,48],14:[11,20,29,31],15:[14,26,28,37],16:[3,6,18,24],17:[2,12,21,27],18:[11,12,23,34],19:[6,14,24,29],20:[8,16,22,34],21:[7,9,12,29],22:[2,11,21,44],23:[14,24,26,37],24:[2,29,31,41],25:[1,10,15,35],26:[7,26,39,74],27:[24,38,51,60],28:[2,6,9,20]}
-  if CODE=='mrk':samples={1:[9,16,31,41],2:[3,4,12,14],3:[3,5,11,34]}
+  if CODE=='mrk':samples={1:[9,16,31,41],2:[3,4,12,14],3:[3,5,11,34],4:[3,35,38,41],5:[3,13,27,42],6:[8,14,40,52],7:[10,16,29,33]}
   for ch,verses in samples.items():
    ids=[f'verse-{CODE}-{ch}-{v}' for v in verses];await ev(f'window.verseReview.render({ch},'+json.dumps({'ids':ids,'time':5})+')');shot=await call('Page.captureScreenshot',{'format':'png'});(OUT/f'selected-{ch}.png').write_bytes(base64.b64decode(shot['data']))
   await call('Emulation.setDeviceMetricsOverride',dict(width=844,height=390,deviceScaleFactor=1,mobile=True));assert not (await ev('window.verseReview.render(3)'))['failures']

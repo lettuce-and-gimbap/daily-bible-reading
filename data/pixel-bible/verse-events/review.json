@@ -2,7 +2,7 @@
   "authored": 1071,
   "browserVerified": 1071,
   "payloadSha256": "4d8bb92dea4497ec47eed32d3d5076093e8851d5baead6fa3fe119575b95bf55",
-  "rendererSha256": "8161682655e5218af56783ee8b2defebc6db8ea271098f1c8111453f8ae24264",
+  "rendererSha256": "d45016175511bac33dbf9aa647477ad2d5900f75a7104a304a9afee63b523853",
   "method": "Chromium 7 sampled times, start/action/end/portrait/reduced, desktop and landscape mobile. Automated exceptions check; representative frames inspected separately, not all frames watched manually.",
   "chapters": [
     {

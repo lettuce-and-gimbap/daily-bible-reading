@@ -5,14 +5,23 @@ import {VERSE_EFFECTS} from '../js/features/pixel-bible/event-animation/verse-ef
 import {buildWorldModel} from '../js/features/pixel-bible/world.js';
 import {loadVerseBook,VERSE_BOOKS} from '../js/features/pixel-bible/verse-data.js';
 const data=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/mrk.json')),summary=JSON.parse(fs.readFileSync('data/summary/mrk.json')),events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mrk.json'));
-test('마가복음 1–3장 108절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
- assert.equal(data.scenes.length,108);
- for(const [chapter,count]of [[1,45],[2,28],[3,35]]){
+test('마가복음 1–7장 285절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
+ assert.equal(data.scenes.length,285);
+ for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37]]){
  const clips=data.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(clips.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));
  const people=[...summary.chapters[chapter].people,...(data.additionalPeople[chapter]||[])];
  const c={code:'mrk',chap:chapter,name:'마가복음',data:{...summary.chapters[chapter],people,verseClips:clips,eventScenes:[...events.scenes,...events.restoredScenes].filter(s=>s.chapter===chapter)}};
  const ids=new Set(buildWorldModel([c]).scenes.flatMap(s=>s.verseClips.map(v=>v.id)));for(const clip of clips){assert.ok(ids.has(clip.id),clip.id);for(const name of clip.actors)assert.ok(people.some(p=>p.name===name));assert.equal(clip.animation.beats.length,6);assert.ok(EFFECTS.has(clip.animation.effect)||VERSE_EFFECTS.has(clip.animation.effect));for(const b of clip.animation.beats)assert.ok(EVENT_ACTIONS.includes(b.action));const cast=clip.actors.map(name=>({name}));for(const t of [0,2,4,8.2,30])for(const s of sampleEvent(clip,cast,t).states)assert.ok(s.pose.eventArms.flat().every(Number.isFinite));}
  }
+});
+test('마가복음의 배 비유·군대 귀신·전도 지침·귀먹은 사람은 본문별 도식과 동작을 쓴다',()=>{
+ const get=(ch,v)=>data.scenes.find(s=>s.chapter===ch&&s.verseNumbers[0]===v);
+ assert.equal(get(5,3).animation.diagram.kind,'broken-chain');
+ assert.equal(get(5,11).animation.diagram.kind,'herd');assert.equal(get(5,13).animation.diagram.kind,'herd-water');
+ assert.equal(get(6,8).animation.diagram.kind,'travel-kit');assert.equal(get(6,40).animation.diagram.kind,'seated-groups');
+ assert.equal(get(7,10).animation.diagram.kind,'scroll-command');assert.equal(get(7,33).animation.effect,'ear-tongue');
+ assert.equal(get(7,16).editionVariant,true);assert.equal(get(7,16).textualNotice,undefined);
+ assert.equal(get(6,14).editionVariant,true);
 });
 test('네 운반자·지붕 내리기·상을 들고 나가기의 단계가 다르다',()=>{
  const get=v=>data.scenes.find(s=>s.chapter===2&&s.verseNumbers[0]===v);

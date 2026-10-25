@@ -12,6 +12,35 @@ export function drawVerseSymbols(c,kind,sample,{r,prop,text,phase}){
  if(kind==='edition-note'){
   prop('scroll',360,193,2);r(305,107,110,36,'#233d47');text('본문 표기 안내',360,131,13);return true;
  }
+ if(kind==='broken-chain'){
+  prop('tomb',220,205,1.7);r(315,184,90,25,'#34474b');
+  for(let i=0;i<7;i++){const x=315+i*13,y=188+(i%2)*10;if(index<2||i%3!==Math.floor(progress*3)%3){r(x,y,9,5,'#c2ad7e');r(x+4,y+5,5,6,'#c2ad7e');}else{r(x-3,y+12,5,4,'#a58b65');r(x+8,y-4,4,4,'#a58b65');}}
+  if(index>=3){r(330,158,62,3,'#617c77');r(342,151,4,20,'#617c77');r(375,151,4,20,'#617c77');}
+  return true;
+ }
+ if(kind==='travel-kit'){
+  prop('staff',235,202,1.8);prop('sandal',315,205,1.5);prop('cloak',390,193,1.25);prop('moneybag',485,197,1.3);
+  r(184,219,350,3,'#8f987c');
+  if(index>=2){r(445,176,72,52,'#263b40');r(455,184,52,4,'#d77c72');r(455,194,52,4,'#d77c72');r(455,204,52,4,'#d77c72');}
+  if(index>=4){text('지팡이 · 신',276,249,12,'#304b50');text('여벌 짐 없이',450,249,12,'#304b50');}
+  return true;
+ }
+ if(kind==='seated-groups'){
+  for(let row=0;row<3;row++)for(let col=0;col<8;col++){
+   const x=214+col*39+(row%2)*13,y=132+row*38;
+   if(index<2&&row*8+col>Math.floor((index+progress)*12))continue;
+   r(x-5,y-12,10,10,'#d9bb91');r(x-8,y-1,16,13,'#658173');r(x-7,y+11,5,8,'#3d4d4b');r(x+2,y+11,5,8,'#3d4d4b');
+  }
+  if(index>=3){r(180,230,360,3,'#d6c58f');text(sample.plan.diagram.labels.some(l=>l.includes('오천'))?'오천 명을 나타내는 무리':'백 명씩 · 오십 명씩',360,257,13,'#304b50');}
+  return true;
+ }
+ if(kind==='scroll-command'){
+  prop('scroll',360,177,2.2);r(287,224,146,4,'#9c825f');
+  if(index>=1){r(306,119,108,28,'#233d47');text('부모를 공경하라',360,138,12);}
+  if(index>=3){r(318,158,84,3,'#826f54');r(318,166,84,3,'#826f54');}
+  if(index>=4){prop('house',470,214,.7);r(423,198,27,3,'#d7c18a');}
+  return true;
+ }
  if(kind==='fish-coin'){
   prop('fish',310,188,3);if(index>=2){prop('hook',267,142);r(267,85,2,50,'#cdbb93');}if(index>=4){prop('coin',385+Math.round(progress*20),185,2);prop('temple',495,210,.55);}return true;
  }

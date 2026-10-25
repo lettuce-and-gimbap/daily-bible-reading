@@ -1,7 +1,7 @@
 import {drawCreature} from '../creature-art.js';
 import {CREATURES} from '../creatures.js';
 import {drawWorldObject} from '../art.js';
-export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent']);
+export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent','ear-tongue']);
 export function drawVerseEffects(c,sample,layout){
  const {plan,index,progress}=sample;if(!VERSE_EFFECTS.has(plan.effect))return;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),w,h);},prop=(kind,x,y)=>drawWorldObject(c,{kind,x:Math.round(x),y:Math.round(y)},1,0),p=Math.min(1,(index+progress)/5);
@@ -9,6 +9,15 @@ export function drawVerseEffects(c,sample,layout){
  if(plan.effect==='anoint-head'&&index>=2&&index<=3){const target=layout.positions[1];for(let i=0;i<4;i++)r(target.x-7+i*3,target.y-83+((Math.floor(progress*16)+i*5)%20),2,3,'#e3c887');}
  if(plan.effect==='rooster-call'){c.save();c.translate(510,235);c.scale(2,2);drawCreature(c,CREATURES.rooster,0,0,{frame:0,direction:'left'});c.restore();if(index>=3)for(let i=0;i<3;i++)r(527+i*9,180-i*9,3,5,'#eed39b');}
  if(plan.effect==='remote-room'){r(430,75,3,170,'#dac59b');c.fillStyle='#233d47';c.font='13px DungGeunMo,monospace';c.textAlign='center';c.fillText(plan.remoteLabel||'다른 장소',555,70);}
+ if(plan.effect==='ear-tongue'){
+  const target=layout.positions[1];
+  if(target){
+   const handX=target.x-13,handY=target.y-49;
+   if(index>=2&&index<=3){r(handX,handY,9,7,'#e3bd91');r(target.x-18,target.y-56,5,10,'#e6c69a');}
+   if(index>=4){r(handX+8,handY+12,8,6,'#e3bd91');r(target.x-4,target.y-43,7,3,'#a96d69');}
+   if(index===3||index===5){r(target.x-24,target.y-65,3,3,'#f3d38b');r(target.x+18,target.y-62,3,3,'#f3d38b');}
+  }
+ }
  if(plan.effect==='waterline'){const who=layout.lead;r(who.x-38,241,76,59,'#4f899e');for(let i=0;i<4;i++)r(who.x-35+i*22,244+i%2*5,16,2,'#b5d7d9');}
  if(plan.effect==='star-guide'){prop('star',220+p*240,76);if(index>=4)for(let i=0;i<3;i++)r(450+i*9,85+i%2*8,3,3,'#eddaa1');}
  if(plan.effect==='gifts'&&index>=3){prop('perfume',385,235);prop('myrrh',420,235);}
