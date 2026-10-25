@@ -108,7 +108,16 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   if(pose?.eventArms)drawEventArms(r,style,pose);
   else if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
-  else if(pose?.hand){
+  else if(pose?.swimming){
+    const flap=[-4,1,4,-1][pose.phase%4];
+    const hr=(xx,yy,w,h,col)=>{ctx.fillStyle=col;ctx.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
+    for(const [elbow,hand]of [[5,3+flap],[18,18-flap]]){
+      hr(elbow-1,21,4,4,outline);hr(elbow,22,2,2,style.coat);
+      hr(elbow,Math.min(24,pose.handY+flap),2,Math.abs(pose.handY+flap-24)+2,outline);
+      hr(Math.min(elbow,hand),pose.handY+flap,Math.abs(hand-elbow)+3,3,outline);
+      hr(hand,pose.handY+flap,3,2,skin);
+    }
+  }else if(pose?.hand){
     const yy=pose.handY,hx=pose.handX||0;
     const hr=(xx,yy,w,h,col)=>{ctx.fillStyle=col;ctx.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
     for(const [elbow,hand]of [[5,7-Math.max(0,hx)],[18,14+hx]]){

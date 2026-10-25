@@ -37,6 +37,9 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
    const draw=pose.phase===1?4:pose.phase===2?1:2;
    r(13,22,4,4,O);r(14,23,3,2,s.coat);r(16,24,8,3,O);r(17,24,7,2,skin);
    r(11,23,4,3,O);r(13-draw,24,7,3,O);r(14-draw,24,6,2,skin);
+  }else if(pose?.swimming){
+   const flap=[-4,1,4,-1][pose.phase%4];
+   for(const [elbow,hand]of [[11,7+flap],[16,19-flap]]){r(elbow-1,21,3,4,O);r(elbow,22,2,2,s.coat);r(elbow,Math.min(24,pose.handY+flap),2,Math.abs(pose.handY+flap-24)+2,O);r(Math.min(elbow,hand),pose.handY+flap,Math.abs(hand-elbow)+3,3,O);r(hand,pose.handY+flap,3,2,skin);}
   }else if(pose?.hand){const yy=pose.handY,hx=pose.handX||0;
    const hr=(xx,yy,w,h,col)=>{c.fillStyle=col;c.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};
    hr(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);

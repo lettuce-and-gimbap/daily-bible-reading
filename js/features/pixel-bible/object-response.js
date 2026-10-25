@@ -25,6 +25,7 @@ export function interactionApproaches(o){
 }
 // 그리는 위치만 가까이 맞춘다. 저장된 좌표와 이동 경로는 바꾸지 않는다.
 export function interactionAnchor(n,tile=24){
+ if(n.boatRide)return {x:n.boatRide.x*tile,y:(n.boatRide.y+1)*tile+(n.boatRide.floatY||0)};
  if(n.creature?.kind==='plant'||!n.usingObject||!n.interaction)return {x:n.x*tile,y:n.y*tile};
  const o=n.usingObject,dx=n.x-o.x,dy=n.y-o.y;
  if(n.interaction.category==='bed')return {x:o.x*tile,y:o.y*tile+14};

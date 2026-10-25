@@ -97,6 +97,31 @@ test('배치된 오브젝트를 우회하고 갈 수 없는 목적지는 거절�
   assert.equal(findPath({ x: 0, y: 0 }, { x: 4, y: 0 }, (x, y) => bounds(x, y) || x === 2), null);
 });
 
+test('배는 물 위에서 놓고 옮길 수 있지만 다른 오브젝트는 물로 옮기지 못한다', async()=>{
+ const {canMoveObject}=await import('../js/features/pixel-bible/object-drag.js');
+ const wet=(x,y)=>x===4&&y===10;
+ assert.equal(canMoveObject({kind:'boat'},{x:4,y:10},[],[],{waterAt:wet}),true);
+ assert.equal(canMoveObject({kind:'tree'},{x:4,y:10},[],[],{waterAt:wet}),false);
+ assert.equal(canMoveObject({kind:'boat'},{x:4,y:10},[{kind:'tree',x:4,y:10}],[],{waterAt:wet}),false);
+});
+
+test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍을 쓴다',async()=>{
+ const {shouldRun,runningIntoPerson,runningIntoObject,impactPose,swimPose,COLLISION_STUN_SECONDS}=await import('../js/features/pixel-bible/collision-motion.js');
+ assert.equal(shouldRun(()=>.1),true);assert.equal(shouldRun(()=>.9),false);
+ const actor={x:0,y:0},other={x:1,y:0};
+ assert.equal(runningIntoPerson(actor,{x:.3,y:0},[actor,other]),other);
+ assert.equal(runningIntoPerson(actor,{x:-.3,y:0},[actor,other]),undefined);
+ assert.equal(runningIntoObject({x:.3,y:0},[{kind:'bench',x:1,y:0}],actor)?.kind,'bench');
+ assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).sit,true);
+ assert.notEqual(swimPose(0).handY,swimPose(.4).handY);
+});
+
+test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물 타일 경계를 제공한다',async()=>{
+ const {waterAt}=await import('../js/features/pixel-bible/terrain-response.js');
+ assert.equal(waterAt('lake',16,31),true);assert.equal(waterAt('lake',35,10),false);
+ assert.equal(waterAt('pasture',18,31),true);assert.equal(waterAt('pasture',25,14),false);
+});
+
 test('가로 화면 비율을 늘려도 월드는 균일 배율로 빈 여백 없이 채운다', async () => {
   const {worldViewport}=await import('../js/features/pixel-bible/world.js');
   for(const [w,h] of [[1280,591],[844,390],[1100,700]]) {
