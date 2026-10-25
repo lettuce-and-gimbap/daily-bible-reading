@@ -360,6 +360,7 @@ function renderReaderSheet() {
       <div class="mp" id="d-note-picker"></div>
       <p class="muted small hint">갓피아 화면 위의 <b>📋 붙여넣기</b> 버튼으로 구절을 바로 넣을 수 있어요. 다 쓰면 여기서 <b>메모 전체 복사</b>로 다른 곳에 옮겨 보세요.</p>
     </section>
+    <div id="reading-highlight-list"></div>
     <section class="tool-card godpia-card">
       <h3 class="label">갓피아 형광펜 · 메모 · 좋아요</h3>
       <p class="muted small">이 기능은 <b>갓피아 계정</b>에 저장돼서, 앱 안의 갓피아 화면에서는 로그인이 되지 않아 눌러도 반응이 없어요.
@@ -368,6 +369,7 @@ function renderReaderSheet() {
     </section>
 `;
   memoPickMount($("#d-note-picker"), $("#d-note"), saveDayNote, renderReaderSheet);
+  ScriptureStudy.mountReadingHighlights($("#reading-highlight-list"), freeChapter !== null ? [freeChapter] : (pr.days[viewingDay] || []));
 }
 
 // 권·장 골라 이동: 계획 안의 장이면 그 Day로, 밖이면 계획과 따로 그 장만 읽음

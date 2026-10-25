@@ -409,6 +409,23 @@ function booksGridHtml(pr, copied) {
   }).join("");
 }
 
+function currentBookProgressHtml(pr) {
+  const today = pr.days[pr.todayDay] || [];
+  const codes = [...new Set(today.map((i) => CHAPTERS[i]?.book.code).filter(Boolean))];
+  if (!codes.length) return `<section class="current-reading-books"><h3>오늘 읽는 권</h3><p class="muted small">오늘 분량이 없어요.</p></section>`;
+  return `<section class="current-reading-books"><header><h3>오늘 읽는 권</h3><span class="muted small">Day ${pr.todayDay + 1} · ${esc(describeChapters(today))}</span></header>
+    <div class="current-book-list">${codes.map((code) => {
+      const b = BOOKS.find((x) => x.code === code), start = chapterIndex(code, 1);
+      let inPlan = 0, done = 0;
+      for (let i = start; i < start + b.chapters; i++) if (pr.seq.includes(i)) { inPlan++; if (state.read[i]) done++; }
+      const todayChapters = today.filter((i) => CHAPTERS[i].book.code === code);
+      const todayDone = todayChapters.filter((i) => state.read[i]).length;
+      const pct = inPlan ? Math.round(done / inPlan * 100) : 0;
+      return `<article class="current-book-progress"><div class="current-book-head"><strong>${esc(b.name)}</strong><b>${done} / ${inPlan}${chapUnit(b)} · ${pct}%</b></div>
+        <div class="bar"><span style="width:${pct}%"></span></div><p><b>오늘 분량:</b> ${esc(describeChapters(todayChapters))} · ${todayDone}/${todayChapters.length}장 읽음</p><button type="button" class="btn text small" data-book="${b.code}">상세보기</button></article>`;
+    }).join("")}</div></section>`;
+}
+
 function bookDetailHtml(code, copied) {
   const b = BOOKS.find((x) => x.code === code);
   const start = chapterIndex(code, 1), end = start + b.chapters;
@@ -531,9 +548,9 @@ function glanceReadHtml(g) {
         ${glanceSideHtml("rest", "아직 안 읽음", TOTAL_CHAPTERS - read, TOTAL_CHAPTERS)}
       </ul>
     </div>
-    ${pr ? `<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedBySource(glanceMode)) : ""}</div>
-    <h3 class="gl-group">권별 진행 <span class="muted small">권을 누르면 위에 읽은 기간과 복사한 구절이 나와요</span></h3>
-    <div class="books">${booksGridHtml(pr, copiedByDate())}</div>` : ""}
+    ${pr ? `${currentBookProgressHtml(pr)}<div id="book-detail">${bookSel ? bookDetailHtml(bookSel, copiedBySource(glanceMode)) : ""}</div>
+    <details class="books-toggle"><summary><span>권별 진행</span><small>${BOOKS.filter((b) => { const start = chapterIndex(b.code, 1); return pr.seq.some((i) => i >= start && i < start + b.chapters); }).length}권 · 누르면 전체 진행을 펼쳐요</small></summary>
+      <div class="books">${booksGridHtml(pr, copiedByDate())}</div></details>` : ""}
     <p class="muted small">원 전체가 성경 전체예요. 구약과 신약을 색으로 나눠 보여 줘요.</p>`;
 }
 
