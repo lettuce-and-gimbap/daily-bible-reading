@@ -136,3 +136,6 @@
 .pb-recipe-layout>span{max-width:110px;overflow-wrap:anywhere;text-align:center;color:#f7eac0}
 .pb-mystery-person{display:grid;place-items:center;position:relative;width:34px;height:48px;background:#34474d;border:3px solid #8a9992;clip-path:polygon(20% 0,80% 0,80% 30%,100% 30%,100% 100%,0 100%,0 30%,20% 30%);font-size:24px}
 .pb-mystery-object{display:grid;place-items:center;width:46px;height:40px;background:#34474d;border:3px solid #8a9992;font-size:26px}
+
+/* Event animation and dialogue remain visible on landscape phones. */
+.pb-event-card:has(canvas){max-height:90%;width:min(850px,94%);margin-bottom:8px;}

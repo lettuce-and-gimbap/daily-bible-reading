@@ -513,6 +513,7 @@ export async function mountPixelWorld(shell, options) {
     const ev = activeEvent;
     ev.elapsed = 0;
     eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="skip">건너뛰기</button></div>`;
+    closeCinematic?.();closeCinematic=ev.scene.code==='2ki'?mountCinematic(eventCard,ev.scene,sceneActors(ev.scene)):null;
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
@@ -521,7 +522,7 @@ export async function mountPixelWorld(shell, options) {
     sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.eventRoutine=eventRoutine(scene,n);n.eventObjects=objects.filter(o=>(scene.requiresObjects||[]).includes(o.kind)&&Math.hypot(o.x-activeEvent.object.x,o.y-activeEvent.object.y)<=3.5);n.eventPartner=sceneActors(scene).find(other=>other.name===scene.eventMotion?.target)||sceneActors(scene).find(other=>other!==n);n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?(n.action===scene.object?activeEvent.object:n.eventObjects.find(o=>o.kind===n.action)||activeEvent.object):null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
     if(activeEvent.object){camera.x=activeEvent.object.x*TILE;camera.y=activeEvent.object.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
     clearInfo();overlay.hidden = false; renderRecipes();showLine();
-    closeCinematic?.();closeCinematic=mountCinematic(eventCard,scene,sceneActors(scene));
+
   }
   function endEvent() {closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
