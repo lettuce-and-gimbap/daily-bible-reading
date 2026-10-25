@@ -1,3 +1,4 @@
+import {mountCinematic} from './cinematic.js';
 import {createBgm} from './bgm.js';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
@@ -507,6 +508,7 @@ export async function mountPixelWorld(shell, options) {
     const u = new SpeechSynthesisUtterance(text); u.lang = "ko-KR"; u.rate = .9;
     speechSynthesis.speak(u);
   }
+  let closeCinematic=null;
   function showLine() {
     const ev = activeEvent;
     ev.elapsed = 0;
@@ -519,8 +521,9 @@ export async function mountPixelWorld(shell, options) {
     sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.eventRoutine=eventRoutine(scene,n);n.eventObjects=objects.filter(o=>(scene.requiresObjects||[]).includes(o.kind)&&Math.hypot(o.x-activeEvent.object.x,o.y-activeEvent.object.y)<=3.5);n.eventPartner=sceneActors(scene).find(other=>other.name===scene.eventMotion?.target)||sceneActors(scene).find(other=>other!==n);n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?(n.action===scene.object?activeEvent.object:n.eventObjects.find(o=>o.kind===n.action)||activeEvent.object):null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
     if(activeEvent.object){camera.x=activeEvent.object.x*TILE;camera.y=activeEvent.object.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
     clearInfo();overlay.hidden = false; renderRecipes();showLine();
+    closeCinematic?.();closeCinematic=mountCinematic(eventCard,scene,sceneActors(scene));
   }
-  function endEvent() { if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
+  function endEvent() {closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
     if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){queueScene(scene,center);return;}}
   }
@@ -548,6 +551,7 @@ export async function mountPixelWorld(shell, options) {
     const candidates=model.scenes.filter(s=>s.object===o.kind&&s.actors.includes(n.name)&&sceneActors(s).every(Boolean));
     const scene=candidates.find(s=>isRecipeLocked(s)&&recipeAssembled(s,npcs,o,objects))||candidates.find(s=>!isRecipeLocked(s));
     if (scene) return queueScene(scene,o);
+    if(npcs.some(other=>other!==n&&(other.usingObject===o||other.task===o))){say('다른 인물이 사용 중이에요. 잠시 기다려 주세요.');return;}
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
   }
@@ -1049,7 +1053,7 @@ export async function mountPixelWorld(shell, options) {
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;bgm.dispose();encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;closeCinematic?.();bgm.dispose();encounters.clear();for(const el of encounterBubbles.values())el.remove();if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   function syncRelationships(){
     const button=shell.querySelector('[data-action="relationships"]');
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
