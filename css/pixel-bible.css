@@ -141,3 +141,12 @@
 .pb-event-card:has(canvas){max-height:90%;width:min(850px,94%);margin-bottom:8px;}
 
 .pb-event-offer{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:15;max-width:90%;padding:10px;background:#17353eee;border:2px solid #d2b573;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pb-event-offer[hidden]{display:none}
+
+/* Explicitly override the event flex layout when the player closes it. */
+.pb-event[hidden]{display:none;}
+
+/* Event playback owns its controls; camera buttons must never cover Pause/Close. */
+.pb-event-playing .pb-camera-controls,.pb-event-playing .pb-side-toggle,.pb-event-playing .pb-side{visibility:hidden;pointer-events:none;}
+.pb-event-playing .pb-event{pointer-events:auto;z-index:13;}
+.pb-event-playing .pb-event-card{width:min(850px,94%);max-height:calc(100% - 56px - env(safe-area-inset-bottom));margin-bottom:max(8px,env(safe-area-inset-bottom));}
+.pb-event-playing .pb-event-card .pb-button{min-height:44px;min-width:48px;padding:8px 12px;touch-action:manipulation;}

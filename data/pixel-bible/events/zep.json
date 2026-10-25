@@ -1,1 +1,43 @@
-{"book":"zep","scenes":[],"additionalPeople":{"1":[{"name":"히스기야","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1]}]}}
+{
+  "book": "zep",
+  "scenes": [
+    {
+      "id": "ot-animation-zep-1",
+      "code": "zep",
+      "chapter": 3,
+      "title": "두려움 대신 기쁨의 노래",
+      "actors": [
+        "딸 시온"
+      ],
+      "object": "lyre",
+      "ref": "스바냐 3:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 딸 시온에게 기뻐 노래하며 두려워하지 말라는 말씀을 설명해요. 회복의 약속을 상징으로 보여 주며 하나님의 형상을 그리지 않아요."
+      ],
+      "study": "딸 시온에게 기뻐 노래하며 두려워하지 말라는 말씀을 설명해요. 회복의 약속을 상징으로 보여 주며 하나님의 형상을 그리지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"딸 시온","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"lyre","beats":[{"action":"listen","duration":1,"actor":"딸 시온"},{"action":"read","duration":1.2,"actor":"딸 시온"},{"action":"look","duration":1.5,"actor":"딸 시온"},{"action":"point","duration":1.8,"actor":"딸 시온"},{"action":"listen","duration":1.5,"actor":"딸 시온"},{"action":"bow","duration":1.2,"actor":"딸 시온"}],"duration":8.2,"support":null,"ref":"스바냐 3:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "히스기야",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1
+        ]
+      }
+    ]
+  }
+}

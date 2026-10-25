@@ -1,4 +1,5 @@
-import {mountPixelEvent as mountCinematic} from './pixel-event.js';
+import {eventPlan} from './event-animation/timeline.js';
+import {mountPixelEvent} from './pixel-event.js';
 import {createBgm} from './bgm.js';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
@@ -286,7 +287,7 @@ export async function mountPixelWorld(shell, options) {
         el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData);
         const link=el.querySelector('[data-action="encounter-passage"]');link.textContent=line.ref||'';link.hidden=!parseReference(line.ref)?.verses?.length;link.dataset.reference=line.ref||'';link.dataset.terms=JSON.stringify(contextTerms(line));
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
-        if(chapterData.some(ch=>ch.code==='2ki'))el.insertAdjacentHTML('beforeend','<button class="pb-speech-reference" data-action="encounter-portrait">두 인물 확대 보기</button>');
+        if(chapterData.length)el.insertAdjacentHTML('beforeend','<button class="pb-speech-reference" data-action="encounter-portrait">두 인물 확대 보기</button>');
       }
     }
   }
@@ -511,28 +512,31 @@ export async function mountPixelWorld(shell, options) {
     speechSynthesis.speak(u);
   }
   let closeCinematic=null,eventOffer=null;
+  const offeredAutomatic=new Set();
   const offerCard=document.createElement('div');offerCard.className='pb-event-offer';offerCard.hidden=true;shell.append(offerCard);
-  function offerEvent(scene,o){if(activeEvent||pendingEvent||eventOffer?.scene.id===scene.id)return;eventOffer={scene,o};offerCard.hidden=false;offerCard.innerHTML=`<b>${esc(scene.title)}</b><button class="pb-button" data-action="watch-event">▶ 사건 보기</button><button class="pb-button" data-action="dismiss-event">나중에</button>`;}
+  function offerEvent(scene,o,automatic=false){if(activeEvent||pendingEvent||eventOffer?.scene.id===scene.id||automatic&&offeredAutomatic.has(scene.id))return;if(automatic)offeredAutomatic.add(scene.id);eventOffer={scene,o};offerCard.hidden=false;offerCard.innerHTML=`<b>${esc(scene.title)}</b><button class="pb-button" data-action="watch-event">▶ 사건 보기</button><button class="pb-button" data-action="dismiss-event">나중에</button>`;}
 
   function showLine() {
     const ev = activeEvent;
     ev.elapsed = 0;
-    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">Ⅱ 일시정지</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
-    closeCinematic?.();closeCinematic=!['mat','mrk','luk','jhn','act','rom','1co','2co','gal','eph','php','col','1th','2th','1ti','2ti','tit','phm','heb','jas','1pe','2pe','1jn','2jn','3jn','jud','rev'].includes(ev.scene.code)?mountCinematic(eventCard,ev.scene,sceneActors(ev.scene)):null;
+    const runningCanvas=eventCard.querySelector('canvas');if(runningCanvas)runningCanvas.remove();
+    eventCard.innerHTML = `<b>${esc(ev.scene.title)}</b><p>${esc(ev.scene.lines[ev.step])}</p><small>${esc(ev.scene.ref)} · 본문 뜻풀이</small>${ev.scene.study?`<details><summary>본문과 주석 해설</summary><p>${esc(ev.scene.study)}</p><p>${esc(ev.scene.objectNote || "")}</p></details>`:""}<div><button class="pb-button" data-action="next">${ev.step === ev.scene.lines.length-1 ? "장면 마치기" : "다음"}</button> <button class="pb-button" data-action="event-pause">${ev.paused?'▶ 계속':'Ⅱ 일시정지'}</button> <button class="pb-button" data-action="skip">닫기</button></div>`;
+    if(runningCanvas)eventCard.prepend(runningCanvas);else if(!closeCinematic)closeCinematic=mountPixelEvent(eventCard,ev.scene,sceneActors(ev.scene));
     speak(ev.scene.lines[ev.step]);
   }
   function beginEvent(scene) {
-    eventOffer=null;offerCard.hidden=true;hideSpeech();encounters.clear();updateEncounters(performance.now());
+    shell.classList.add('pb-event-playing');
+    eventOffer=null;offerCard.hidden=true;hideSpeech();encounters.clear();
     recipeUnlocks.add(recipeKey(scene));try{localStorage.setItem(RECIPE_KEY,JSON.stringify([...recipeUnlocks]));}catch(_){}
-    activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0 }; cinematicTime = 0; pendingEvent = null;
+    activeEvent = { scene, object:pendingEvent?.o, step: 0, elapsed: 0, home:{...camera} }; cinematicTime = 0; pendingEvent = null;updateEncounters(performance.now());
     sceneActors(scene).forEach((n) => { n.path=[];n.task=null;n.eventRoutine=eventRoutine(scene,n);n.eventObjects=objects.filter(o=>(scene.requiresObjects||[]).includes(o.kind)&&Math.hypot(o.x-activeEvent.object.x,o.y-activeEvent.object.y)<=3.5);n.eventPartner=sceneActors(scene).find(other=>other.name===scene.eventMotion?.target)||sceneActors(scene).find(other=>other!==n);n.action=scene.actions ? (scene.actions[n.name] || "") : scene.object;n.usingObject=n.action?(n.action===scene.object?activeEvent.object:n.eventObjects.find(o=>o.kind===n.action)||activeEvent.object):null;n.objectAction=scene.id;n.interaction=n.action?interactionRoutine(n,n.action):null;n.interactionStart=time; });
     if(activeEvent.object){camera.x=activeEvent.object.x*TILE;camera.y=activeEvent.object.y*TILE-36;constrainCamera(camera,canvas.width,canvas.height);syncCamera();}
     clearInfo();overlay.hidden = false; renderRecipes();showLine();
 
   }
-  function endEvent() {closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
+  function endEvent() {shell.classList.remove('pb-event-playing');if(activeEvent?.home){Object.assign(camera,activeEvent.home);constrainCamera(camera,canvas.width,canvas.height);syncCamera();}closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
-    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){offerEvent(scene,center);return;}}
+    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){offerEvent(scene,center,true);return;}}
   }
   function offerEventReady(){const pending=pendingEvent;pendingEvent=null;offerEvent(pending.scene,pending.o);}
   function sceneActors(scene) { return scene.actors.map((name) => npcs.find((n) => n.name === name)); }
@@ -849,8 +853,8 @@ export async function mountPixelWorld(shell, options) {
     }
     const action=b.dataset.action;
     if(action==='dismiss-event'){eventOffer=null;offerCard.hidden=true;return;}
-    if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
-    if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
+    if(action==='watch-event'){const offer=eventOffer;if(!offer||!objects.includes(offer.o)||!sceneActors(offer.scene).every(Boolean)){offerCard.hidden=true;eventOffer=null;say('필요한 인물과 오브젝트를 다시 배치해 주세요.');return;}if(!requiredObjectsNearby(offer.scene,offer.o,objects)){say('보조 물건도 가까이에 놓아 주세요.');return;}if(!recipeAssembled(offer.scene,npcs,offer.o,objects)){eventOffer=null;offerCard.hidden=true;queueScene(offer.scene,offer.o);return;}pendingEvent={scene:offer.scene,o:offer.o};beginEvent(offer.scene);return;}
+    if(action==='event-pause'&&activeEvent){activeEvent.paused=!activeEvent.paused;if(activeEvent.paused&&sound)speechSynthesis.cancel();closeCinematic?.setPaused?.(activeEvent.paused);b.textContent=activeEvent.paused?'▶ 계속':'Ⅱ 일시정지';return;}
 
     if(action==='bgm'){try{const on=await bgm.setEnabled(!bgm.enabled);b.setAttribute('aria-pressed',on);b.textContent=on?'♫ 음악 ON':'♫ 음악 OFF';b.setAttribute('aria-label',on?'배경음악 끄기':'배경음악 켜기');}catch(error){say(error.message);}return;}
     if(action==='camera-home'){Object.assign(camera,homeCamera());constrainCamera(camera,canvas.width,canvas.height);syncCamera();draw();return;}
@@ -863,7 +867,7 @@ export async function mountPixelWorld(shell, options) {
     if(b.dataset.story!==undefined){const key=b.dataset.discoveryOwner,record=discoveries[key],story=record?.stories[Number(b.dataset.story)];if(story){discoveries[key]=markStoryRead(record,story);saveDiscoveries();await openSpeechPassage(story.ref,contextTerms({text:story.text}));shell.querySelector('.pb-scripture header')?.insertAdjacentHTML('afterbegin',`<button class="pb-button" data-discovery="${esc(key)}">도감으로</button>`);}return;}
     if(action==='collection'){openCollection();return;}
     if(action==='person-collection'){const person=npcs[selected];if(person){discover(person);openCollection(discoveryKey(person));}return;}
-    if(action==='encounter-portrait'){const el=b.closest('[data-encounter]'),line=encounterLines.find(l=>l.session+':'+l.slot===el.dataset.encounter);if(!line)return;if(el._closePortrait){el._closePortrait();el._closePortrait=null;b.textContent='두 인물 확대 보기';}else{el._closePortrait=mountCinematic(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';b.textContent='확대 접기';}return;}
+    if(action==='encounter-portrait'){const el=b.closest('[data-encounter]'),line=encounterLines.find(l=>l.session+':'+l.slot===el.dataset.encounter);if(!line)return;if(el._closePortrait){el._closePortrait();el._closePortrait=null;b.textContent='두 인물 확대 보기';}else{el._closePortrait=mountPixelEvent(el,{title:'인물 대화',lines:[line.text],object:null},(line.pairLines||[line]).map(part=>part.speaker),{portrait:true});el.querySelector('canvas').style.maxHeight='100px';b.textContent='확대 접기';}return;}
     if(action==='encounter-details'){const id=b.closest('[data-encounter]').dataset.encounter;openSpeechDetails(encounterLines.find(l=>l.session+':'+l.slot===id));return;}
     if(action==='encounter-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='speech-details'){openSpeechDetails();return;}
@@ -1039,6 +1043,7 @@ export async function mountPixelWorld(shell, options) {
     shell.dataset.kstLight=globalThis.KstLight.at().key;
   }
   shell.closest("dialog")?.addEventListener("cancel",(e)=>{
+    if(activeEvent){e.preventDefault();endEvent();return;}
     const scripture=shell.querySelector('.pb-scripture');if(scripture){e.preventDefault();scripture.remove();canvas.focus();return;}
     const board=shell.querySelector(".pb-design");if(board){e.preventDefault();board.remove();shell.querySelector('[data-action="design"]').focus();}
   },{signal});
@@ -1064,7 +1069,7 @@ export async function mountPixelWorld(shell, options) {
       if(!activeEvent) update(dt);
       else {
         if(!activeEvent.paused){cinematicTime+=dt;activeEvent.elapsed+=dt;}
-        if(!activeEvent.paused&&activeEvent.elapsed>Math.max(activeEvent.scene.code==='2ki'?8:4.5,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        if(!activeEvent.paused&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
       }
     }
     followDraggedCharacter(dt);
@@ -1073,7 +1078,7 @@ export async function mountPixelWorld(shell, options) {
   }
   function resume() {
     cancelAnimationFrame(frame);last=0;
-    if(document.hidden || window.innerWidth<=window.innerHeight) {hideSpeech();encounters.clear();updateEncounters(performance.now());if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:0,clientY:0},true);if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
+    if(document.hidden || window.innerWidth<=window.innerHeight) {hideSpeech();encounters.clear();if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:0,clientY:0},true);if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
     if(canRun())frame=requestAnimationFrame(tick);
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});

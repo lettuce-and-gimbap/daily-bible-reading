@@ -1,0 +1,782 @@
+{
+  "gen": {
+    "2": {
+      "actors": [
+        "가인",
+        "라멕"
+      ],
+      "object": "house"
+    },
+    "19": {
+      "actors": [
+        "롯의 아내"
+      ],
+      "object": "salt"
+    },
+    "22": {
+      "actors": [
+        "하갈"
+      ],
+      "object": "well"
+    },
+    "24": {
+      "actors": [
+        "아브라함",
+        "이삭"
+      ],
+      "object": "altar"
+    },
+    "25": {
+      "object": "rod"
+    },
+    "26": {
+      "actors": [
+        "아브라함",
+        "이삭"
+      ],
+      "object": "altar"
+    },
+    "28": {
+      "actors": [
+        "아브라함"
+      ],
+      "object": "robe"
+    },
+    "33": {
+      "actors": [
+        "이삭",
+        "리브가"
+      ],
+      "object": "house"
+    },
+    "35": {
+      "object": "well"
+    },
+    "37": {
+      "object": "bread"
+    },
+    "43": {
+      "object": "house"
+    },
+    "46": {
+      "actors": [
+        "야곱"
+      ],
+      "object": "sheep"
+    },
+    "52": {
+      "actors": [
+        "야곱",
+        "에서"
+      ],
+      "object": "tomb"
+    },
+    "53": {
+      "object": "grain"
+    },
+    "54": {
+      "object": "well"
+    },
+    "61": {
+      "object": "basket"
+    },
+    "62": {
+      "object": "grain"
+    },
+    "64": {
+      "actors": [
+        "요셉"
+      ],
+      "object": "grain"
+    },
+    "65": {
+      "actors": [
+        "요셉"
+      ],
+      "object": "grain"
+    },
+    "71": {
+      "actors": [
+        "야곱",
+        "유다"
+      ],
+      "object": "staff"
+    },
+    "1": {
+      "object": "fruit"
+    },
+    "3": {
+      "object": "ark-noah"
+    },
+    "4": {
+      "object": "ark-noah"
+    },
+    "5": {
+      "object": "ark-noah"
+    }
+  },
+  "exo": {
+    "0": {
+      "actors": [
+        "모세"
+      ]
+    },
+    "2": {
+      "object": "staff"
+    },
+    "6": {
+      "object": "water-supply"
+    },
+    "7": {
+      "object": "water-supply"
+    },
+    "8": {
+      "actors": [
+        "미리암"
+      ]
+    },
+    "20": {
+      "object": "gold"
+    },
+    "24": {
+      "object": "tablet"
+    },
+    "25": {
+      "object": "scroll"
+    }
+  },
+  "lev": {
+    "7": {
+      "object": "altar"
+    }
+  },
+  "num": {
+    "1": {
+      "actors": [
+        "아론",
+        "엘르아살"
+      ]
+    },
+    "18": {
+      "actors": [
+        "모세",
+        "아론",
+        "엘르아살"
+      ]
+    },
+    "19": {
+      "object": "donkey"
+    },
+    "27": {
+      "actors": [
+        "비느하스"
+      ]
+    }
+  },
+  "deu": {},
+  "jos": {
+    "11": {
+      "actors": [
+        "기브온 사람들"
+      ],
+      "object": "tree"
+    }
+  },
+  "jdg": {
+    "1": {
+      "actors": [
+        "삼갈"
+      ]
+    },
+    "5": {
+      "actors": [
+        "기드온"
+      ],
+      "object": "jar"
+    },
+    "13": {
+      "object": "lion"
+    },
+    "16": {
+      "object": "jawbone"
+    }
+  },
+  "rut": {
+    "1": {
+      "actors": [
+        "룻"
+      ],
+      "object": "field"
+    },
+    "3": {
+      "actors": [
+        "룻",
+        "나오미"
+      ]
+    }
+  },
+  "1sa": {
+    "1": {
+      "actors": [
+        "한나",
+        "엘리"
+      ],
+      "object": "temple"
+    },
+    "14": {
+      "object": "donkey"
+    },
+    "16": {
+      "object": "table"
+    },
+    "17": {
+      "actors": [
+        "사무엘",
+        "사울"
+      ]
+    },
+    "18": {
+      "actors": [
+        "사울"
+      ]
+    },
+    "26": {
+      "actors": [
+        "사울"
+      ]
+    },
+    "27": {
+      "actors": [
+        "다윗",
+        "사울"
+      ]
+    },
+    "30": {
+      "object": "stone"
+    },
+    "32": {
+      "actors": [
+        "사울",
+        "다윗"
+      ]
+    },
+    "33": {
+      "actors": [
+        "사울",
+        "다윗"
+      ]
+    },
+    "34": {
+      "actors": [
+        "미갈",
+        "다윗"
+      ]
+    },
+    "37": {
+      "actors": [
+        "사울",
+        "요나단"
+      ]
+    },
+    "44": {
+      "actors": [
+        "다윗",
+        "사울"
+      ],
+      "object": "cloak"
+    },
+    "45": {
+      "object": "cloak"
+    },
+    "48": {
+      "actors": [
+        "나발",
+        "아비가일"
+      ]
+    },
+    "52": {
+      "actors": [
+        "다윗",
+        "아비새"
+      ]
+    },
+    "59": {
+      "object": "bread"
+    },
+    "64": {
+      "actors": [
+        "블레셋 사람들"
+      ]
+    },
+    "65": {
+      "actors": [
+        "야베스 길르앗 사람들"
+      ],
+      "object": "tomb"
+    }
+  },
+  "2sa": {
+    "0": {
+      "actors": [
+        "다윗"
+      ],
+      "object": "crown"
+    },
+    "1": {
+      "actors": [
+        "아말렉 청년"
+      ],
+      "object": "crown"
+    },
+    "2": {
+      "actors": [
+        "다윗"
+      ]
+    },
+    "4": {
+      "actors": [
+        "다윗"
+      ]
+    },
+    "7": {
+      "actors": [
+        "아브넬",
+        "아사헬"
+      ],
+      "object": "spear"
+    },
+    "8": {
+      "actors": [
+        "아브넬",
+        "요압"
+      ]
+    },
+    "9": {
+      "actors": [
+        "다윗"
+      ]
+    },
+    "10": {
+      "actors": [
+        "요압",
+        "아브넬"
+      ]
+    },
+    "12": {
+      "actors": [
+        "이스보셋",
+        "레갑"
+      ],
+      "object": "bed"
+    },
+    "21": {
+      "actors": [
+        "다윗",
+        "나단"
+      ]
+    },
+    "27": {
+      "actors": [
+        "다윗"
+      ],
+      "object": "shield"
+    },
+    "28": {
+      "actors": [
+        "다윗"
+      ],
+      "object": "silver"
+    },
+    "32": {
+      "object": "sheep"
+    },
+    "36": {
+      "actors": [
+        "압살롬",
+        "다윗"
+      ]
+    },
+    "37": {
+      "actors": [
+        "다윗",
+        "압살롬"
+      ]
+    },
+    "46": {
+      "actors": [
+        "아히마아스",
+        "요나단(아비아달의 아들)"
+      ]
+    },
+    "51": {
+      "actors": [
+        "세바"
+      ]
+    },
+    "52": {
+      "actors": [
+        "요압",
+        "아마사"
+      ],
+      "object": "sword"
+    },
+    "54": {
+      "actors": [
+        "아벨의 여인",
+        "요압"
+      ]
+    },
+    "56": {
+      "actors": [
+        "다윗"
+      ],
+      "object": "spear"
+    },
+    "55": {
+      "actors": [
+        "다윗"
+      ],
+      "object": "tomb"
+    }
+  },
+  "1ki": {
+    "0": {
+      "actors": [
+        "사독",
+        "솔로몬"
+      ]
+    },
+    "8": {
+      "actors": [
+        "솔로몬"
+      ]
+    },
+    "10": {
+      "actors": [
+        "솔로몬"
+      ]
+    },
+    "15": {
+      "actors": [
+        "아히야",
+        "여로보암"
+      ]
+    },
+    "17": {
+      "actors": [
+        "하나님의 사람",
+        "여로보암"
+      ]
+    },
+    "20": {
+      "actors": [
+        "시므리"
+      ]
+    },
+    "27": {
+      "actors": [
+        "엘리야"
+      ]
+    },
+    "29": {
+      "actors": [
+        "엘리야"
+      ],
+      "object": "bush"
+    },
+    "32": {
+      "actors": [
+        "이세벨"
+      ],
+      "object": "signet"
+    }
+  },
+  "2ki": {
+    "10": {
+      "actors": [
+        "선지자 제자의 아내"
+      ],
+      "object": "oil"
+    },
+    "13": {
+      "actors": [
+        "어린 여종"
+      ],
+      "object": "house"
+    },
+    "14": {
+      "actors": [
+        "엘리사",
+        "게하시"
+      ]
+    },
+    "15": {
+      "actors": [
+        "게하시"
+      ]
+    },
+    "17": {
+      "actors": [
+        "엘리사",
+        "엘리사의 사환"
+      ],
+      "object": "chariot"
+    },
+    "18": {
+      "actors": [
+        "이스라엘 왕"
+      ]
+    },
+    "21": {
+      "actors": [
+        "수넴 여인",
+        "게하시"
+      ]
+    },
+    "22": {
+      "actors": [
+        "선지자의 제자",
+        "예후"
+      ],
+      "object": "oil"
+    },
+    "23": {
+      "actors": [
+        "예후",
+        "요람(아합의 아들)"
+      ],
+      "object": "bow"
+    },
+    "24": {
+      "actors": [
+        "선지자의 제자",
+        "예후"
+      ]
+    },
+    "30": {
+      "actors": [
+        "여호야다",
+        "요아스"
+      ],
+      "object": "crown"
+    },
+    "35": {
+      "actors": [
+        "요아스(여호아하스의 아들)",
+        "엘리사"
+      ]
+    },
+    "36": {
+      "actors": [
+        "요아스(여호아하스의 아들)",
+        "엘리사"
+      ]
+    },
+    "37": {
+      "object": "scroll"
+    },
+    "49": {
+      "actors": [
+        "엘리아김(힐기야의 아들)",
+        "셉나",
+        "요아"
+      ],
+      "object": "wall"
+    },
+    "50": {
+      "actors": [
+        "히스기야"
+      ],
+      "object": "scroll"
+    },
+    "52": {
+      "object": "scroll"
+    },
+    "54": {
+      "actors": [
+        "히스기야"
+      ],
+      "object": "tomb"
+    },
+    "55": {
+      "actors": [
+        "이사야",
+        "히스기야"
+      ],
+      "object": "fig-poultice"
+    }
+  },
+  "neh": {
+    "1": {
+      "actors": [
+        "느헤미야"
+      ]
+    },
+    "4": {
+      "actors": [
+        "느헤미야"
+      ]
+    }
+  },
+  "isa": {
+    "0": {
+      "actors": [
+        "이사야",
+        "스랍"
+      ]
+    },
+    "1": {
+      "actors": [
+        "이사야",
+        "스랍"
+      ]
+    },
+    "12": {
+      "actors": [
+        "이사야",
+        "히스기야"
+      ]
+    },
+    "11": {
+      "actors": [
+        "히스기야"
+      ],
+      "object": "scroll"
+    },
+    "3": {
+      "actors": [
+        "이사야"
+      ]
+    }
+  },
+  "dan": {
+    "0": {
+      "object": "book"
+    },
+    "6": {
+      "object": "seal"
+    },
+    "7": {
+      "object": "house"
+    },
+    "10": {
+      "actors": [
+        "다니엘"
+      ],
+      "object": "scroll"
+    }
+  },
+  "job": {
+    "0": {
+      "actors": [
+        "욥"
+      ]
+    },
+    "3": {
+      "object": "scroll"
+    }
+  },
+  "est": {
+    "0": {
+      "actors": [
+        "하만"
+      ],
+      "object": "signet"
+    },
+    "2": {
+      "actors": [
+        "모르드개",
+        "에스더"
+      ]
+    }
+  },
+  "1ch": {
+    "1": {
+      "actors": [
+        "헤만",
+        "아삽"
+      ],
+      "object": "lyre"
+    },
+    "4": {
+      "actors": [
+        "문지기들"
+      ],
+      "object": "gate"
+    },
+    "8": {
+      "object": "water"
+    },
+    "10": {
+      "actors": [
+        "갓 용사들"
+      ],
+      "object": "water-supply"
+    }
+  },
+  "2ch": {
+    "18": {
+      "object": "scroll"
+    },
+    "33": {
+      "object": "scroll"
+    },
+    "15": {
+      "actors": [
+        "제사장들",
+        "아비야"
+      ]
+    }
+  },
+  "ezr": {
+    "0": {
+      "object": "scroll"
+    },
+    "6": {
+      "object": "letter"
+    },
+    "7": {
+      "object": "scroll"
+    },
+    "9": {
+      "object": "scroll"
+    }
+  },
+  "jnh": {
+    "2": {
+      "actors": [
+        "사공들"
+      ],
+      "object": "boat"
+    }
+  },
+  "sng": {
+    "0": {
+      "object": "palanquin"
+    },
+    "1": {
+      "object": "crown"
+    }
+  },
+  "ecc": {
+    "0": {
+      "object": "moneybag"
+    }
+  },
+  "pro": {
+    "9": {
+      "object": "scroll"
+    }
+  },
+  "zec": {
+    "0": {
+      "object": "scroll"
+    },
+    "1": {
+      "object": "rope"
+    },
+    "3": {
+      "object": "crown"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>구약 픽셀 사건 연출 검수</title>
+<style>@font-face{font-family:DungGeunMo;src:url('../../assets/fonts/DungGeunMo.ttf')}*{box-sizing:border-box}body{margin:0;background:#25313a;color:#f5ead1;font:14px DungGeunMo,monospace}header{position:sticky;top:0;z-index:1;padding:12px;background:#142d37;display:flex;gap:12px;flex-wrap:wrap}select,button,input{font:inherit;padding:8px}main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:14px}article{padding:10px;border:1px solid #a79569;min-width:0}canvas{display:block;width:100%;image-rendering:pixelated}h3{margin:0 0 8px;font-size:14px}small{display:block;color:#c6cfb4;margin:5px 0}p{margin:4px 0}@media(max-width:650px){main{grid-template-columns:1fr}}</style>
+<header><label>권 <select id="book"></select></label><label>시점 <input id="time" type="range" min="0" max="9" step=".2" value="4.5"></label><button id="portrait">대화 확대</button><span id="status">준비 중</span></header><main></main>
+<script type="module">
+import {renderPixelEvent} from '../../js/features/pixel-bible/pixel-event.js';
+import {sampleEvent} from '../../js/features/pixel-bible/event-animation/timeline.js';
+import {ALL_SCENES} from '../../js/features/pixel-bible/scenes.js';
+import {OBJECT_SCENES} from '../../js/features/pixel-bible/object-scenes.js';
+import {enhanceScene} from '../../js/features/pixel-bible/scripted-events.js';
+const review=await fetch('../../data/pixel-bible/animation-review.json').then(r=>r.json()),cache=new Map();let portraits=false;
+const select=document.querySelector('#book'),slider=document.querySelector('#time'),main=document.querySelector('main');
+for(const b of review.books){const o=document.createElement('option');o.value=b.code;o.textContent=b.code+' · '+b.scenes+'장면';select.append(o);}
+async function load(code){if(!cache.has(code)){const [data,summary]=await Promise.all(['../../data/pixel-bible/events/'+code+'.json','../../data/summary/'+code+'.json'].map(p=>fetch(p).then(r=>r.json())));cache.set(code,{data,summary});}return cache.get(code);}
+window.animationReview={books:review.books,async renderBook(code,{time=4.5,portrait=false,width=720}={}){
+ const {data,summary}=await load(code);main.replaceChildren();select.value=code;let failures=[],drawn=0,frames=0;
+ for(const raw of data.scenes){const cast=raw.actors.map(name=>({...summary.chapters[raw.chapter].people.find(p=>p.name===name),name,refs:[raw.ref]}));const scene=enhanceScene(raw,cast);
+ const card=document.createElement('article');const title=document.createElement('h3');title.textContent=scene.ref+' · '+scene.title;card.append(title);
+ const label=document.createElement('small');label.textContent=scene.animation.lead+' · '+scene.animation.motif+' · '+scene.animation.mode;card.append(label);
+ const canvas=document.createElement('canvas');canvas.width=720;canvas.height=300;card.append(canvas);main.append(card);
+ try{const context=canvas.getContext('2d');const state=renderPixelEvent(context,scene,cast,time,{portrait});const data=context.getImageData(0,0,720,300).data;if(!data.some((v,i)=>i%4===3&&v))throw Error('빈 프레임');const info=document.createElement('p');info.textContent=state.label+' · '+state.index+'단계';card.append(info);drawn++;
+ for(const second of [0,1,2.5,4,6,8.2,12]){renderPixelEvent(context,scene,cast,second,{portrait});const sample=sampleEvent(scene,cast,second);for(const s of sample.states){if(!Number.isFinite(s.travel))throw Error('잘못된 좌표');}frames++;}renderPixelEvent(context,scene,cast,time,{portrait});
+ }catch(e){failures.push({id:scene.id,error:String(e.stack||e)});}
+ }
+ document.querySelector('#status').textContent=code+' · '+drawn+'장면 · 오류 '+failures.length;document.body.dataset.ready='true';return {code,drawn,frames,failures};
+},async auditStatic(){let failures=[],count=0;const canvas=document.createElement('canvas');canvas.width=720;canvas.height=300;for(const scene of [...ALL_SCENES,...OBJECT_SCENES].filter(s=>review.books.some(b=>b.code===s.code))){try{const cast=scene.actors.map(name=>({name,refs:[scene.ref]}));for(const time of [0,4,8.2])renderPixelEvent(canvas.getContext('2d'),scene,cast,time);count++;}catch(e){failures.push({id:scene.id,error:String(e)});}}return {count,failures};}};
+select.onchange=()=>window.animationReview.renderBook(select.value,{time:Number(slider.value),portrait:portraits});slider.oninput=select.onchange;document.querySelector('#portrait').onclick=()=>{portraits=!portraits;select.onchange();};
+await document.fonts.ready;await window.animationReview.renderBook(new URLSearchParams(location.search).get('book')||'gen');
+</script></html>

@@ -1,1 +1,126 @@
-{"book":"ecc","scenes":[{"id":"ot-ecc-5-2","code":"ecc","chapter":5,"title":"만족 없는 재물","actors":["부자"],"object":"nail","ref":"전도서 5:10-17","verseNumbers":[10,11,12,13,14,15,16,17],"actions":{},"lines":["해설: 돈을 사랑하면 만족이 없고 부자는 걱정으로 잠도 못 자요. 사람은 빈손으로 나와 빈손으로 돌아가요."],"study":"돈을 사랑하면 만족이 없고 부자는 걱정으로 잠도 못 자요. 사람은 빈손으로 나와 빈손으로 돌아가요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-ecc-12-2","code":"ecc","chapter":12,"title":"한 목자가 주신 말씀","actors":["한 목자"],"object":"book","ref":"전도서 12:9-12","verseNumbers":[9,10,11,12],"actions":{},"lines":["해설: 지혜로운 말은 막대기와 못처럼 단단히 박혀요. 한 목자께서 주신 말씀이에요."],"study":"지혜로운 말은 막대기와 못처럼 단단히 박혀요. 한 목자께서 주신 말씀이에요. 책을 많이 짓는 것은 끝이 없어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{"1":[{"name":"다윗","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1]}],"2":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[19,25]}],"3":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[21]}],"6":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[12]}],"7":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[13,24]}],"8":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1,4]}]}}
+{
+  "book": "ecc",
+  "scenes": [
+    {
+      "id": "ot-ecc-5-2",
+      "code": "ecc",
+      "chapter": 5,
+      "title": "만족 없는 재물",
+      "actors": [
+        "부자"
+      ],
+      "object": "moneybag",
+      "ref": "전도서 5:10-17",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 돈을 사랑하면 만족이 없고 부자는 걱정으로 잠도 못 자요. 사람은 빈손으로 나와 빈손으로 돌아가요."
+      ],
+      "study": "돈을 사랑하면 만족이 없고 부자는 걱정으로 잠도 못 자요. 사람은 빈손으로 나와 빈손으로 돌아가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"부자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"moneybag","beats":[{"action":"listen","duration":1,"actor":"부자"},{"action":"read","duration":1.2,"actor":"부자"},{"action":"look","duration":1.5,"actor":"부자"},{"action":"point","duration":1.8,"actor":"부자"},{"action":"listen","duration":1.5,"actor":"부자"},{"action":"bow","duration":1.2,"actor":"부자"}],"duration":8.2,"support":null,"ref":"전도서 5:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-12-2",
+      "code": "ecc",
+      "chapter": 12,
+      "title": "한 목자가 주신 말씀",
+      "actors": [
+        "한 목자"
+      ],
+      "object": "book",
+      "ref": "전도서 12:9-12",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 지혜로운 말은 막대기와 못처럼 단단히 박혀요. 한 목자께서 주신 말씀이에요."
+      ],
+      "study": "지혜로운 말은 막대기와 못처럼 단단히 박혀요. 한 목자께서 주신 말씀이에요. 책을 많이 짓는 것은 끝이 없어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"한 목자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"book","beats":[{"action":"listen","duration":1,"actor":"한 목자"},{"action":"read","duration":1.2,"actor":"한 목자"},{"action":"look","duration":1.5,"actor":"한 목자"},{"action":"point","duration":1.8,"actor":"한 목자"},{"action":"listen","duration":1.5,"actor":"한 목자"},{"action":"bow","duration":1.2,"actor":"한 목자"}],"duration":8.2,"support":null,"ref":"전도서 12:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "다윗",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          19,
+          25
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          21
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          12
+        ]
+      }
+    ],
+    "7": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          13,
+          24
+        ]
+      }
+    ],
+    "8": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}

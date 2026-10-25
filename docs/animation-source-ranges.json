@@ -1,0 +1,239 @@
+{
+  "method": "비공개 두 역본의 참조 범위 존재 여부와 주석 장 연결 확인. 자동 조회이며 전 구절의 수동 신학 검토를 뜻하지 않음.",
+  "books": [
+    {
+      "code": "gen",
+      "scenes": 75,
+      "passageRangesFound": 75,
+      "missing": []
+    },
+    {
+      "code": "exo",
+      "scenes": 38,
+      "passageRangesFound": 38,
+      "missing": []
+    },
+    {
+      "code": "lev",
+      "scenes": 10,
+      "passageRangesFound": 10,
+      "missing": []
+    },
+    {
+      "code": "num",
+      "scenes": 31,
+      "passageRangesFound": 31,
+      "missing": []
+    },
+    {
+      "code": "deu",
+      "scenes": 3,
+      "passageRangesFound": 3,
+      "missing": []
+    },
+    {
+      "code": "jos",
+      "scenes": 18,
+      "passageRangesFound": 18,
+      "missing": []
+    },
+    {
+      "code": "jdg",
+      "scenes": 26,
+      "passageRangesFound": 26,
+      "missing": []
+    },
+    {
+      "code": "rut",
+      "scenes": 8,
+      "passageRangesFound": 8,
+      "missing": []
+    },
+    {
+      "code": "1sa",
+      "scenes": 69,
+      "passageRangesFound": 69,
+      "missing": []
+    },
+    {
+      "code": "2sa",
+      "scenes": 64,
+      "passageRangesFound": 64,
+      "missing": []
+    },
+    {
+      "code": "1ki",
+      "scenes": 36,
+      "passageRangesFound": 36,
+      "missing": []
+    },
+    {
+      "code": "2ki",
+      "scenes": 65,
+      "passageRangesFound": 65,
+      "missing": []
+    },
+    {
+      "code": "1ch",
+      "scenes": 37,
+      "passageRangesFound": 37,
+      "missing": []
+    },
+    {
+      "code": "2ch",
+      "scenes": 45,
+      "passageRangesFound": 45,
+      "missing": []
+    },
+    {
+      "code": "ezr",
+      "scenes": 13,
+      "passageRangesFound": 13,
+      "missing": []
+    },
+    {
+      "code": "neh",
+      "scenes": 12,
+      "passageRangesFound": 12,
+      "missing": []
+    },
+    {
+      "code": "est",
+      "scenes": 5,
+      "passageRangesFound": 5,
+      "missing": []
+    },
+    {
+      "code": "job",
+      "scenes": 6,
+      "passageRangesFound": 6,
+      "missing": []
+    },
+    {
+      "code": "psa",
+      "scenes": 18,
+      "passageRangesFound": 18,
+      "missing": []
+    },
+    {
+      "code": "pro",
+      "scenes": 10,
+      "passageRangesFound": 10,
+      "missing": []
+    },
+    {
+      "code": "ecc",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "sng",
+      "scenes": 3,
+      "passageRangesFound": 3,
+      "missing": []
+    },
+    {
+      "code": "isa",
+      "scenes": 21,
+      "passageRangesFound": 21,
+      "missing": []
+    },
+    {
+      "code": "jer",
+      "scenes": 32,
+      "passageRangesFound": 32,
+      "missing": []
+    },
+    {
+      "code": "lam",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "ezk",
+      "scenes": 17,
+      "passageRangesFound": 17,
+      "missing": []
+    },
+    {
+      "code": "dan",
+      "scenes": 14,
+      "passageRangesFound": 14,
+      "missing": []
+    },
+    {
+      "code": "hos",
+      "scenes": 12,
+      "passageRangesFound": 12,
+      "missing": []
+    },
+    {
+      "code": "jol",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "amo",
+      "scenes": 5,
+      "passageRangesFound": 5,
+      "missing": []
+    },
+    {
+      "code": "oba",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "jnh",
+      "scenes": 4,
+      "passageRangesFound": 4,
+      "missing": []
+    },
+    {
+      "code": "mic",
+      "scenes": 2,
+      "passageRangesFound": 2,
+      "missing": []
+    },
+    {
+      "code": "nam",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "hab",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "zep",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "hag",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    },
+    {
+      "code": "zec",
+      "scenes": 5,
+      "passageRangesFound": 5,
+      "missing": []
+    },
+    {
+      "code": "mal",
+      "scenes": 1,
+      "passageRangesFound": 1,
+      "missing": []
+    }
+  ]
+}

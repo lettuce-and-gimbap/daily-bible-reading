@@ -1,3 +1,4 @@
+import {drawEventArms} from './event-animation/rig.js';
 import {drawPhysicalDetails} from './physical-traits.js';
 import {drawWardrobe} from './wardrobe.js';
 import {drawCreature} from './creature-art.js';
@@ -89,7 +90,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   r(5,37,14,1,"#183a3933");
   // 무릎과 팔이 교대로 움직이고 무게중심은 허리 위에 둔다.
   const leg=(x,dy)=>{r(x,31,4,5,outline);r(x+1,32,2,3,skin);r(x-1,35+dy,5,2,outline);r(x,35+dy,3,1,pose?.barefeet?skin:style.sandal?"#d2b47d":"#a77d57");};
-  if(pose?.dangling){leg(7,pose.leftLeg);leg(14,pose.rightLeg);}
+  if(pose?.eventKneel){r(7,31,10,3,outline);r(8,31,8,2,style.coat);r(7,34,5,2,outline);r(13,34,6,2,outline);r(8,34,3,1,skin);}
+  else if(pose?.dangling){leg(7,pose.leftLeg);leg(14,pose.rightLeg);}
   else if(pose?.sit){
     r(7,31,11,3,outline);r(8,31,9,1,style.coat);r(8,33,3,3,outline);r(15,33+pose.legSwing,3,3,outline);r(8,35,5,2,outline);r(15,35+pose.legSwing,5,2,outline);
   }else if(pose?.bend){r(6,32,5,3,outline);r(14,32,5,3,outline);r(5,35,6,2,outline);r(14,35,6,2,outline);}
@@ -104,7 +106,8 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   // 옷깃 중앙의 한 줄 피부만 남겨 얼굴과 옷의 경계를 표현한다.
   r(10,20,4,1,skin);r(10,21,1,1,"#f4e7c5");r(13,21,1,1,"#f4e7c5");
   const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
-  if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
+  if(pose?.eventArms)drawEventArms(r,style,pose);
+  else if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
   else if(pose?.hand){
     const yy=pose.handY,hx=pose.handX||0;
     const hr=(xx,yy,w,h,col)=>{ctx.fillStyle=col;ctx.fillRect(xx+pose.bodyX,yy+pose.bodyY,w,h);};

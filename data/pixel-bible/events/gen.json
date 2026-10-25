@@ -26,7 +26,8 @@
       "study": "하나님이 동산을 거니시자 둘이 숨어요. 하나님이 어디 있느냐고 부르시자 아담은 하나님이 주신 여자를, 여자는 뱀을 탓하며 잘못을 미뤄요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"hide","lead":"아담","target":null,"mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"snake","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"startle","duration":1.2,"actor":"아담"},{"action":"retreat","duration":1.5,"actor":"아담"},{"action":"hide","duration":1.8,"actor":"아담"},{"action":"peek","duration":1.5,"actor":"아담"},{"action":"stand","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-4-0",
@@ -37,7 +38,7 @@
         "가인",
         "아벨"
       ],
-      "object": "sheep",
+      "object": "fruit",
       "ref": "창세기 4:1-7",
       "verseNumbers": [
         1,
@@ -55,7 +56,8 @@
       "study": "가인은 땅의 열매를, 아벨은 양의 첫 새끼를 드려요. 하나님이 아벨의 제물만 받으시자 가인이 화를 내고, 하나님은 죄를 다스리라고 타이르세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"two-offerings","lead":"가인","target":"아벨","mode":"reconstruction","setting":"altar","effect":"two-offerings","emotion":"determined","prop":"fruit","beats":[{"action":"inspect","duration":1,"actor":"가인"},{"action":"gather","duration":1.2,"actor":"가인"},{"action":"lift","duration":1.5,"actor":"가인"},{"action":"place","duration":1.8,"actor":"가인"},{"action":"bow","duration":1.5,"actor":"가인"},{"action":"wait","duration":1.2,"actor":"가인"}],"duration":8.2,"support":{"actor":"아벨","actions":["inspect","gather","lift","place","bow","wait"]},"ref":"창세기 4:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-4-2",
@@ -66,7 +68,7 @@
         "가인",
         "라멕"
       ],
-      "object": "boat",
+      "object": "house",
       "ref": "창세기 4:17-24",
       "verseNumbers": [
         17,
@@ -85,7 +87,8 @@
       "study": "가인이 성을 쌓고, 후손 중에 목축·악기·쇠 다루는 기술이 생겨요. 그러나 라멕은 사람을 죽이고 칠십칠 배로 갚겠다고 뽐내며 더 포악해져요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"build","lead":"가인","target":"라멕","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"house","beats":[{"action":"inspect","duration":1,"actor":"가인"},{"action":"gather","duration":1.2,"actor":"가인"},{"action":"lift","duration":1.5,"actor":"가인"},{"action":"place","duration":1.8,"actor":"가인"},{"action":"hammer","duration":1.5,"actor":"가인"},{"action":"inspect","duration":1.2,"actor":"가인"}],"duration":8.2,"support":null,"ref":"창세기 4:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-7-2",
@@ -95,7 +98,7 @@
       "actors": [
         "노아"
       ],
-      "object": "water-supply",
+      "object": "ark-noah",
       "ref": "창세기 7:17-24",
       "verseNumbers": [
         17,
@@ -114,7 +117,8 @@
       "study": "사십 일 비로 물이 불어 높은 산들까지 덮어요. 땅 위에 숨 쉬던 생물은 모두 죽고 방주 안의 노아 일행만 살아남으며, 물은 백오십 일 동안 이어져요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"flood","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"flood","emotion":"worried","prop":"ark-noah","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"startle","duration":1.2,"actor":"노아"},{"action":"brace","duration":1.5,"actor":"노아"},{"action":"brace","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"look","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 7:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-0",
@@ -124,7 +128,7 @@
       "actors": [
         "노아"
       ],
-      "object": "water-supply",
+      "object": "ark-noah",
       "ref": "창세기 8:1-5",
       "verseNumbers": [
         1,
@@ -140,7 +144,8 @@
       "study": "하나님이 노아와 짐승들을 기억하시고 바람을 보내 물을 줄이세요. 일곱째 달에 방주가 아라랏 산에 멈추고, 열째 달에는 산봉우리들이 드러나요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"recede","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"recede","emotion":"joy","prop":"ark-noah","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"listen","duration":1.2,"actor":"노아"},{"action":"point","duration":1.5,"actor":"노아"},{"action":"look","duration":1.8,"actor":"노아"},{"action":"bow","duration":1.5,"actor":"노아"},{"action":"stand","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-1",
@@ -150,7 +155,7 @@
       "actors": [
         "노아"
       ],
-      "object": "water-supply",
+      "object": "ark-noah",
       "ref": "창세기 8:6-12",
       "verseNumbers": [
         6,
@@ -168,7 +173,8 @@
       "study": "노아가 까마귀와 비둘기를 내보내요. 두 번째 비둘기가 올리브나무 새 잎을 물고 와 물이 줄었음을 알리고, 세 번째 비둘기는 돌아오지 않아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"bird-release","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"bird","emotion":"joy","prop":"ark-noah","beats":[{"action":"grasp","duration":1,"actor":"노아"},{"action":"lift","duration":1.2,"actor":"노아"},{"action":"extend","duration":1.5,"actor":"노아"},{"action":"release","duration":1.8,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-3",
@@ -192,7 +198,8 @@
       "study": "노아가 제단을 쌓고 태워 드리는 제물을 바쳐요. 하나님이 기뻐 받으시고, 땅이 있는 동안 계절과 낮밤이 그치지 않게 하시겠다 약속하세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"노아","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"노아"},{"action":"carry","duration":1.2,"actor":"노아"},{"action":"place","duration":1.5,"actor":"노아"},{"action":"kneel","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-9-1",
@@ -223,7 +230,8 @@
       "study": "하나님이 노아와 모든 생물과 언약을 세우시고 다시는 홍수로 멸하지 않겠다고 하세요. 구름 속 무지개를 그 약속을 기억하는 표로 주세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"rainbow","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"rainbow","emotion":"gentle","prop":"rainbow","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"point","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"kneel","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"stand","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-9-2",
@@ -251,7 +259,8 @@
       "study": "포도주에 취한 노아가 벗은 채 잠들자 함은 밖에 나가 두 형제에게 알려요. 셈과 야벳은 옷을 메고 뒷걸음쳐 들어가 아버지를 보지 않고 덮어 드려요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"cover","lead":"노아","target":"야벳","mode":"reconstruction","setting":"chamber","effect":"cover","emotion":"gentle","prop":"wine","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"lower","duration":1.2,"actor":"노아"},{"action":"grasp","duration":1.5,"actor":"노아"},{"action":"extend","duration":1.8,"actor":"노아"},{"action":"cover","duration":1.5,"actor":"노아"},{"action":"turn","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-12-0",
@@ -275,7 +284,8 @@
       "study": "하나님이 아브람에게 고향과 친척을 떠나 보여 줄 땅으로 가라 하세요. 큰 민족을 이루고, 그를 통해 땅의 모든 집안이 복을 받게 하겠다고 약속하세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"depart","lead":"아브람","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"rope","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"gather","duration":1.2,"actor":"아브람"},{"action":"carry","duration":1.5,"actor":"아브람"},{"action":"walk","duration":1.8,"actor":"아브람"},{"action":"walk","duration":1.5,"actor":"아브람"},{"action":"look","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 12:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-12-1",
@@ -302,7 +312,8 @@
       "study": "일흔다섯 살 아브람이 가나안에 들어가요. 세겜에서 이 땅을 자손에게 주겠다는 약속을 받고 제단을 쌓고, 벧엘 근처에서도 여호와의 이름을 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"아브람","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"아브람"},{"action":"carry","duration":1.2,"actor":"아브람"},{"action":"place","duration":1.5,"actor":"아브람"},{"action":"kneel","duration":1.8,"actor":"아브람"},{"action":"pray","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 12:4-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-12-3",
@@ -328,7 +339,8 @@
       "study": "하나님이 바로의 집에 큰 재앙을 내리세요. 바로는 아브람에게 왜 속였냐고 꾸짖고, 사래를 돌려주며 그들을 애굽에서 내보내요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"return","lead":"아브람","target":"사래","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"},{"action":"extend","duration":1.5,"actor":"아브람"},{"action":"receive","duration":1.8,"actor":"아브람"},{"action":"bow","duration":1.5,"actor":"아브람"},{"action":"stand","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 12:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-13-0",
@@ -353,7 +365,8 @@
       "study": "애굽에서 큰 부자가 되어 나온 아브람이 벧엘로 돌아와요. 처음 제단을 쌓았던 자리에서 다시 여호와의 이름을 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"아브람","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"아브람"},{"action":"carry","duration":1.2,"actor":"아브람"},{"action":"place","duration":1.5,"actor":"아브람"},{"action":"kneel","duration":1.8,"actor":"아브람"},{"action":"pray","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 13:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-13-3",
@@ -379,7 +392,8 @@
       "study": "하나님이 아브람에게 동서남북을 보게 하시며 그 땅과 티끌처럼 많은 자손을 약속하세요. 아브람은 헤브론 마므레로 옮겨 제단을 쌓아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"blessing","lead":"아브람","target":null,"mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"lift","duration":1.2,"actor":"아브람"},{"action":"bless","duration":1.5,"actor":"아브람"},{"action":"bless","duration":1.8,"actor":"아브람"},{"action":"lower","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 13:14-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-14-2",
@@ -405,7 +419,8 @@
       "study": "살렘 왕이자 가장 높으신 하나님의 제사장 멜기세덱이 빵과 포도주를 들고 나와 아브람을 축복해요. 아브람은 얻은 것의 십분의 일을 드려요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"blessing","lead":"아브람","target":"멜기세덱","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"wine","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"lift","duration":1.2,"actor":"아브람"},{"action":"bless","duration":1.5,"actor":"아브람"},{"action":"bless","duration":1.8,"actor":"아브람"},{"action":"lower","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 14:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-17-3",
@@ -432,7 +447,8 @@
       "study": "그날 바로 아흔아홉 살 아브라함이 열세 살 이스마엘과 집에서 난 종, 돈 주고 산 종까지 모든 남자와 함께 할례를 받아요. 말씀에 바로 순종했어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"covenant","lead":"아브라함","target":"이스마엘","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 17:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-18-0",
@@ -461,7 +477,8 @@
       "study": "한낮에 아브라함이 장막 앞에 선 세 사람을 보고 달려가 엎드려 절해요. 발을 씻게 하고 갓 구운 빵과 송아지 요리로 정성껏 대접해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"아브라함","target":null,"mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"아브라함"},{"action":"walk","duration":1.2,"actor":"아브라함"},{"action":"bow","duration":1.5,"actor":"아브라함"},{"action":"extend","duration":1.8,"actor":"아브라함"},{"action":"place","duration":1.5,"actor":"아브라함"},{"action":"sit","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 18:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-18-1",
@@ -489,7 +506,8 @@
       "study": "내년 이맘때 아들이 있을 거라는 말에 장막 뒤의 사라가 속으로 웃어요. 하나님은 나 여호와가 하지 못할 일이 어디 있느냐며 약속을 다시 확인해 주세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"laugh","lead":"사라","target":null,"mode":"reconstruction","setting":"tent","effect":"light","emotion":"joy","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"사라"},{"action":"turn","duration":1.2,"actor":"사라"},{"action":"smile","duration":1.5,"actor":"사라"},{"action":"cover-mouth","duration":1.8,"actor":"사라"},{"action":"look","duration":1.5,"actor":"사라"},{"action":"bow","duration":1.2,"actor":"사라"}],"duration":8.2,"support":null,"ref":"창세기 18:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-19-0",
@@ -521,7 +539,8 @@
       "study": "롯이 두 천사를 집에 들이자 소돔 남자들이 몰려와 악한 짓을 하려 해요. 롯이 딸들을 내주겠다는 말까지 하자, 천사들이 무리의 눈을 어둡게 해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"shelter","lead":"두 천사","target":null,"mode":"reconstruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"두 천사"},{"action":"startle","duration":1.2,"actor":"두 천사"},{"action":"extend","duration":1.5,"actor":"두 천사"},{"action":"guard","duration":1.8,"actor":"두 천사"},{"action":"turn","duration":1.5,"actor":"두 천사"},{"action":"stand","duration":1.2,"actor":"두 천사"}],"duration":8.2,"support":null,"ref":"창세기 19:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-19-2",
@@ -529,8 +548,7 @@
       "chapter": 19,
       "title": "유황불 심판",
       "actors": [
-        "롯의 아내",
-        "아브라함"
+        "롯의 아내"
       ],
       "object": "salt",
       "ref": "창세기 19:23-29",
@@ -550,7 +568,8 @@
       "study": "해가 뜰 때 하나님이 소돔과 고모라에 유황과 불을 내려 성과 들판을 엎으세요. 뒤돌아본 롯의 아내는 소금 기둥이 되고, 롯은 아브라함 덕에 살아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"destruction","lead":"롯의 아내","target":null,"mode":"reconstruction","setting":"ruins","effect":"fire","emotion":"sad","prop":"salt","beats":[{"action":"look","duration":1,"actor":"롯의 아내"},{"action":"startle","duration":1.2,"actor":"롯의 아내"},{"action":"retreat","duration":1.5,"actor":"롯의 아내"},{"action":"brace","duration":1.8,"actor":"롯의 아내"},{"action":"mourn","duration":1.5,"actor":"롯의 아내"},{"action":"lower","duration":1.2,"actor":"롯의 아내"}],"duration":8.2,"support":null,"ref":"창세기 19:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-20-3",
@@ -574,7 +593,8 @@
       "study": "아브라함이 기도하자 하나님이 아비멜렉과 아내와 여종들을 고쳐 다시 아이를 낳게 하세요. 사라 일로 그 집 여인들의 태가 닫혀 있었어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"pray","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"kneel","duration":1.2,"actor":"아브라함"},{"action":"lift","duration":1.5,"actor":"아브라함"},{"action":"pray","duration":1.8,"actor":"아브라함"},{"action":"pray","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 20:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-21-1",
@@ -606,7 +626,8 @@
       "study": "젖 떼는 잔치에서 이스마엘이 이삭을 놀리자 사라가 내보내라고 해요. 괴로워하던 아브라함은 하나님 말씀에 따라 빵과 물을 주어 하갈 모자를 보내요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요."
+      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요.",
+      "animation": {"version":2,"motif":"provision","lead":"아브라함","target":"하갈","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"bread","beats":[{"action":"inspect","duration":1,"actor":"아브라함"},{"action":"gather","duration":1.2,"actor":"아브라함"},{"action":"lift","duration":1.5,"actor":"아브라함"},{"action":"extend","duration":1.8,"actor":"아브라함"},{"action":"release","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 21:8-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-21-2",
@@ -616,7 +637,7 @@
       "actors": [
         "하갈"
       ],
-      "object": "bow",
+      "object": "well",
       "ref": "창세기 21:15-21",
       "verseNumbers": [
         15,
@@ -634,7 +655,8 @@
       "study": "광야에서 물이 떨어져 울던 하갈에게 하나님이 아이의 소리를 들었다며 샘을 보여 주세요. 이스마엘은 바란 광야에서 자라 활 쏘는 사람이 돼요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"well","lead":"하갈","target":null,"mode":"reconstruction","setting":"desert","effect":"well","emotion":"determined","prop":"well","beats":[{"action":"look","duration":1,"actor":"하갈"},{"action":"bend","duration":1.2,"actor":"하갈"},{"action":"dig","duration":1.5,"actor":"하갈"},{"action":"dig","duration":1.8,"actor":"하갈"},{"action":"rise","duration":1.5,"actor":"하갈"},{"action":"inspect","duration":1.2,"actor":"하갈"}],"duration":8.2,"support":null,"ref":"창세기 21:15-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-21-3",
@@ -669,7 +691,8 @@
       "study": "아비멜렉과 비골이 찾아와 서로 거짓되이 행하지 않기를 맹세해요. 아브라함은 우물 일을 바로잡고, 그곳을 브엘세바라 부르며 하나님의 이름을 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"agreement","lead":"아브라함","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"well","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 21:22-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-22-0",
@@ -680,7 +703,7 @@
         "아브라함",
         "이삭"
       ],
-      "object": "field",
+      "object": "altar",
       "ref": "창세기 22:1-2",
       "verseNumbers": [
         1,
@@ -693,7 +716,8 @@
       "study": "하나님이 아브라함을 시험하시며 사랑하는 외아들 이삭을 모리아 땅의 산에서 태워 드리는 제물로 바치라고 하세요. 오래 기다려 얻은 약속의 아들이었어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"listen","lead":"아브라함","target":"이삭","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"turn","duration":1.2,"actor":"아브라함"},{"action":"speak","duration":1.5,"actor":"아브라함"},{"action":"point","duration":1.8,"actor":"아브라함"},{"action":"listen","duration":1.5,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 22:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-22-1",
@@ -704,7 +728,7 @@
         "아브라함",
         "이삭"
       ],
-      "object": "field",
+      "object": "rod",
       "ref": "창세기 22:3-8",
       "verseNumbers": [
         3,
@@ -721,7 +745,8 @@
       "study": "아브라함이 아침 일찍 이삭과 길을 떠나 사흘을 걸어요. 어린양은 어디 있냐는 이삭의 물음에 하나님이 친히 준비하실 거라고 대답해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"journey","lead":"아브라함","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"rod","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"gather","duration":1.2,"actor":"아브라함"},{"action":"carry","duration":1.5,"actor":"아브라함"},{"action":"walk","duration":1.8,"actor":"아브라함"},{"action":"walk","duration":1.5,"actor":"아브라함"},{"action":"look","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 22:3-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-22-2",
@@ -729,9 +754,10 @@
       "chapter": 22,
       "title": "여호와 이레",
       "actors": [
+        "아브라함",
         "이삭"
       ],
-      "object": "field",
+      "object": "altar",
       "ref": "창세기 22:9-14",
       "verseNumbers": [
         9,
@@ -748,7 +774,8 @@
       "study": "이삭을 묶어 제단에 올리고 칼을 들자 여호와의 사자가 막아요. 수풀에 뿔이 걸린 숫양을 대신 바치고, 그곳을 여호와 이레라 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"rescue","lead":"아브라함","target":"이삭","mode":"reconstruction","setting":"altar","effect":"release","emotion":"surprised","prop":"altar","beats":[{"action":"look","duration":1,"actor":"아브라함"},{"action":"startle","duration":1.2,"actor":"아브라함"},{"action":"halt","duration":1.5,"actor":"아브라함"},{"action":"release","duration":1.8,"actor":"아브라함"},{"action":"kneel","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 22:9-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-23-2",
@@ -777,7 +804,8 @@
       "study": "에브론이 그냥 드리겠다며 공손히 말하다가 은 사백 세겔이라는 값을 내놓아요. 아브라함은 흥정하지 않고 사람들 앞에서 은을 달아 줘요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"weigh","lead":"아브라함","target":"에브론","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"아브라함"},{"action":"grasp","duration":1.2,"actor":"아브라함"},{"action":"weigh","duration":1.5,"actor":"아브라함"},{"action":"place","duration":1.8,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"receive","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-0",
@@ -785,10 +813,9 @@
       "chapter": 24,
       "title": "종의 맹세",
       "actors": [
-        "이삭",
         "아브라함"
       ],
-      "object": "field",
+      "object": "robe",
       "ref": "창세기 24:1-9",
       "verseNumbers": [
         1,
@@ -808,7 +835,8 @@
       "study": "늙은 아브라함이 늙은 종에게 가나안 여자가 아닌 고향 친족 가운데서 이삭의 아내를 데려오라 맹세하게 해요. 이삭을 그곳으로 데려가지는 말라 해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"oath","lead":"아브라함","target":null,"mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 24:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-1",
@@ -847,7 +875,8 @@
       "study": "우물가에서 종이 낙타에게까지 물을 주는 여인을 보내 달라고 기도해요. 기도가 끝나기 전에 리브가가 나와 그대로 하자, 종은 엎드려 하나님을 찬양해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"water","lead":"리브가","target":null,"mode":"reconstruction","setting":"water","effect":"water","emotion":"gentle","prop":"water-supply","beats":[{"action":"bend","duration":1,"actor":"리브가"},{"action":"reach","duration":1.2,"actor":"리브가"},{"action":"scoop","duration":1.5,"actor":"리브가"},{"action":"lift","duration":1.8,"actor":"리브가"},{"action":"pour","duration":1.5,"actor":"리브가"},{"action":"lower","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:10-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-2",
@@ -891,7 +920,8 @@
       "study": "리브가의 오빠 라반이 종을 집으로 맞아들여요. 종은 밥보다 먼저 하나님의 인도를 다 이야기하고, 라반과 브두엘도 여호와께서 하신 일이라 인정해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"리브가","target":"라반","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"house","beats":[{"action":"look","duration":1,"actor":"리브가"},{"action":"walk","duration":1.2,"actor":"리브가"},{"action":"bow","duration":1.5,"actor":"리브가"},{"action":"extend","duration":1.8,"actor":"리브가"},{"action":"place","duration":1.5,"actor":"리브가"},{"action":"sit","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:28-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-3",
@@ -931,7 +961,8 @@
       "study": "더 머물다 가라는 가족에게 리브가가 가겠다고 대답해요. 들에서 묵상하던 이삭은 리브가를 어머니의 장막으로 맞아들이고 사랑하며 위로를 얻어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"journey","lead":"리브가","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"리브가"},{"action":"gather","duration":1.2,"actor":"리브가"},{"action":"carry","duration":1.5,"actor":"리브가"},{"action":"walk","duration":1.8,"actor":"리브가"},{"action":"walk","duration":1.5,"actor":"리브가"},{"action":"look","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:50-67","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-25-0",
@@ -964,7 +995,8 @@
       "study": "아브라함은 그두라에게서 난 아들들에게 선물을 주어 동쪽으로 보내고 모든 재산은 이삭에게 줘요. 백칠십오 세에 죽어 이삭과 이스마엘이 함께 장사해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"mourn","lead":"이삭","target":"아브라함","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"field","beats":[{"action":"startle","duration":1,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"},{"action":"kneel","duration":1.5,"actor":"이삭"},{"action":"cover-mouth","duration":1.8,"actor":"이삭"},{"action":"mourn","duration":1.5,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 25:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-25-2",
@@ -972,10 +1004,10 @@
       "chapter": 25,
       "title": "쌍둥이의 탄생",
       "actors": [
-        "야곱",
-        "에서"
+        "이삭",
+        "리브가"
       ],
-      "object": "field",
+      "object": "house",
       "ref": "창세기 25:19-26",
       "verseNumbers": [
         19,
@@ -994,7 +1026,8 @@
       "study": "아이가 없던 리브가가 이삭의 기도로 쌍둥이를 가져요. 큰 자가 어린 자를 섬길 거라는 말씀 뒤에, 붉은 에서와 형의 발꿈치를 잡은 야곱이 태어나요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"birth","lead":"이삭","target":"리브가","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"house","beats":[{"action":"look","duration":1,"actor":"이삭"},{"action":"listen","duration":1.2,"actor":"이삭"},{"action":"cradle","duration":1.5,"actor":"이삭"},{"action":"smile","duration":1.8,"actor":"이삭"},{"action":"bless","duration":1.5,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 25:19-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-26-1",
@@ -1021,7 +1054,8 @@
       "study": "이삭이 죽을까 두려워 리브가를 누이라고 해요. 아비멜렉이 둘이 부부인 걸 알아채고 꾸짖으며, 누구도 그들을 건드리지 말라고 명령해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"refuse","lead":"이삭","target":"리브가","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"turn","duration":1.2,"actor":"이삭"},{"action":"halt","duration":1.5,"actor":"이삭"},{"action":"retreat","duration":1.8,"actor":"이삭"},{"action":"lower","duration":1.5,"actor":"이삭"},{"action":"stand","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-26-2",
@@ -1031,7 +1065,7 @@
       "actors": [
         "이삭"
       ],
-      "object": "field",
+      "object": "well",
       "ref": "창세기 26:12-22",
       "verseNumbers": [
         12,
@@ -1053,7 +1087,8 @@
       "study": "백 배를 거두고 부자가 된 이삭을 시기해 블레셋이 우물을 메우고 빼앗아요. 이삭은 다투지 않고 옮겨 파다가 마침내 르호봇을 얻어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dig","lead":"이삭","target":null,"mode":"reconstruction","setting":"desert","effect":"well","emotion":"determined","prop":"well","beats":[{"action":"look","duration":1,"actor":"이삭"},{"action":"bend","duration":1.2,"actor":"이삭"},{"action":"dig","duration":1.5,"actor":"이삭"},{"action":"dig","duration":1.8,"actor":"이삭"},{"action":"rise","duration":1.5,"actor":"이삭"},{"action":"inspect","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:12-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-26-3",
@@ -1088,7 +1123,8 @@
       "study": "브엘세바에서 하나님이 나타나 함께하겠다 하시자 이삭이 제단을 쌓아요. 아비멜렉이 찾아와 평화 언약을 맺고, 에서는 헷 여인들과 결혼해 부모를 근심시켜요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"agreement","lead":"이삭","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"},{"action":"extend","duration":1.5,"actor":"이삭"},{"action":"pledge","duration":1.8,"actor":"이삭"},{"action":"read","duration":1.5,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:23-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-27-0",
@@ -1099,7 +1135,7 @@
         "이삭",
         "에서"
       ],
-      "object": "field",
+      "object": "bread",
       "ref": "창세기 27:1-4",
       "verseNumbers": [
         1,
@@ -1114,7 +1150,8 @@
       "study": "늙어 눈이 어두워진 이삭이 맏아들 에서에게 사냥한 고기로 별미를 만들어 오면 축복하겠다고 해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"listen","lead":"이삭","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"bread","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"turn","duration":1.2,"actor":"이삭"},{"action":"speak","duration":1.5,"actor":"이삭"},{"action":"point","duration":1.8,"actor":"이삭"},{"action":"listen","duration":1.5,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 27:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-27-2",
@@ -1148,7 +1185,8 @@
       "study": "목소리가 야곱 같다며 의심하던 이삭은 야곱의 거짓말과 옷 냄새에 속아 에서로 알고, 땅의 풍성함과 형제를 다스리는 복을 빌어 줘요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"blessing","lead":"야곱","target":"이삭","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"field","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"lift","duration":1.2,"actor":"야곱"},{"action":"bless","duration":1.5,"actor":"야곱"},{"action":"bless","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 27:18-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-28-0",
@@ -1179,7 +1217,8 @@
       "study": "이삭이 야곱에게 아브라함의 복을 빌어 주고 외삼촌 라반에게 보내요. 에서는 아버지가 가나안 여자를 싫어한다는 걸 알고 이스마엘의 딸 마할랏을 또 아내로 맞아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-28-1",
@@ -1206,7 +1245,8 @@
       "study": "돌을 베고 잔 야곱이 꿈에 하늘까지 닿은 층계와 오르내리는 천사들을 봐요. 하나님이 땅과 자손을 약속하시며 함께 있어 지키겠다고 하세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dream","lead":"야곱","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"stone","beats":[{"action":"sit","duration":1,"actor":"야곱"},{"action":"lie","duration":1.2,"actor":"야곱"},{"action":"sleep","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.8,"actor":"야곱"},{"action":"startle","duration":1.5,"actor":"야곱"},{"action":"rise","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:10-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-28-2",
@@ -1231,7 +1271,8 @@
       "study": "깨어난 야곱이 여호와께서 여기 계신데 몰랐다며 두려워해요. 베개로 쓴 돌을 기둥으로 세워 기름을 붓고, 루스를 하나님의 집 벧엘이라 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"anoint","lead":"야곱","target":null,"mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"stone","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pour","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-29-0",
@@ -1267,7 +1308,8 @@
       "study": "하란 근처 우물가에서 야곱이 외삼촌의 딸 라헬을 만나요. 혼자 돌을 굴려 양 떼에게 물을 먹이고, 라헬에게 입 맞추며 기뻐 울어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"roll-stone","lead":"야곱","target":"라헬","mode":"reconstruction","setting":"well","effect":"roll","emotion":"determined","prop":"stone","beats":[{"action":"walk","duration":1,"actor":"야곱"},{"action":"bend","duration":1.2,"actor":"야곱"},{"action":"brace","duration":1.5,"actor":"야곱"},{"action":"push","duration":1.8,"actor":"야곱"},{"action":"push","duration":1.5,"actor":"야곱"},{"action":"rise","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 29:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-30-0",
@@ -1278,7 +1320,7 @@
         "라헬",
         "레아"
       ],
-      "object": "nail",
+      "object": "house",
       "ref": "창세기 30:1-13",
       "verseNumbers": [
         1,
@@ -1302,7 +1344,8 @@
       "study": "라헬이 아이를 못 낳아 언니를 시기하며 여종 빌하를 주어 단과 납달리를 얻어요. 레아도 여종 실바를 주어 갓과 아셀을 얻으며 두 자매가 겨뤄요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"rivalry","lead":"라헬","target":"레아","mode":"reconstruction","setting":"tent","effect":"speech","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"라헬"},{"action":"turn","duration":1.2,"actor":"라헬"},{"action":"point","duration":1.5,"actor":"라헬"},{"action":"lower","duration":1.8,"actor":"라헬"},{"action":"turn","duration":1.5,"actor":"라헬"},{"action":"stand","duration":1.2,"actor":"라헬"}],"duration":8.2,"support":null,"ref":"창세기 30:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-30-3",
@@ -1343,7 +1386,8 @@
       "study": "야곱이 얼룩지고 점 있는 양과 염소를 품삯으로 받기로 해요. 라반이 꾀를 부려도 하나님이 도우셔서 야곱의 떼가 크게 불어나 부자가 돼요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"tend","lead":"야곱","target":"라반","mode":"reconstruction","setting":"pasture","effect":"flock","emotion":"gentle","prop":"sheep","beats":[{"action":"look","duration":1,"actor":"야곱"},{"action":"walk","duration":1.2,"actor":"야곱"},{"action":"reach","duration":1.5,"actor":"야곱"},{"action":"inspect","duration":1.8,"actor":"야곱"},{"action":"gather","duration":1.5,"actor":"야곱"},{"action":"stand","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 30:25-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-32-1",
@@ -1369,7 +1413,8 @@
       "study": "야곱이 지팡이 하나로 떠났던 자신에게 주신 은혜를 감당할 수 없다고 고백해요. 형의 손에서 건져 달라고, 자손의 약속을 기억해 달라고 기도해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"pray","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"kneel","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pray","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 32:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-32-2",
@@ -1377,7 +1422,7 @@
       "chapter": 32,
       "title": "앞서 보낸 선물",
       "actors": [
-        "에서"
+        "야곱"
       ],
       "object": "sheep",
       "ref": "창세기 32:13-21",
@@ -1399,7 +1444,8 @@
       "study": "에서의 마음을 풀려고 염소와 양, 낙타, 소, 나귀를 몇 떼로 나누어 차례로 먼저 보내요. 선물로 형의 화를 조금씩 가라앉히려는 거였어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"gift","lead":"야곱","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"sheep","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"extend","duration":1.8,"actor":"야곱"},{"action":"release","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 32:13-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-33-2",
@@ -1427,7 +1473,8 @@
       "study": "함께 가자는 에서에게 야곱은 아이들과 어린 가축 때문에 천천히 가겠다고 해요. 에서는 세일로 돌아가고, 야곱은 숙곳에 집과 우리를 지어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"에서","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 33:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-33-3",
@@ -1451,7 +1498,8 @@
       "study": "야곱이 가나안 땅 세겜에 평안히 이르러 은 돈 백 개로 밭을 사요. 제단을 쌓고 그 이름을 엘엘로헤이스라엘, 곧 하나님은 이스라엘의 하나님이시라는 뜻으로 불러요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"야곱","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"야곱"},{"action":"carry","duration":1.2,"actor":"야곱"},{"action":"place","duration":1.5,"actor":"야곱"},{"action":"kneel","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 33:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-34-2",
@@ -1480,7 +1528,8 @@
       "study": "하몰과 세겜이 성문에서 그들의 재산이 우리 것이 될 거라며 사람들을 설득해요. 그 말을 들은 성의 모든 남자가 할례를 받아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dispute","lead":"세겜","target":"하몰","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"세겜"},{"action":"turn","duration":1.2,"actor":"세겜"},{"action":"point","duration":1.5,"actor":"세겜"},{"action":"point","duration":1.8,"actor":"세겜"},{"action":"listen","duration":1.5,"actor":"세겜"},{"action":"lower","duration":1.2,"actor":"세겜"}],"duration":8.2,"support":null,"ref":"창세기 34:18-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-0",
@@ -1509,7 +1558,8 @@
       "study": "하나님이 벧엘로 올라가라 하시자 야곱이 가족의 이방 신상과 귀고리를 거두어 묻어요. 하나님이 주변 성읍에 두려움을 주셔서 무사히 벧엘에 이르러 제단을 쌓아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"bury-idols","lead":"야곱","target":null,"mode":"reconstruction","setting":"garden","effect":"bury","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"bend","duration":1.8,"actor":"야곱"},{"action":"bury","duration":1.5,"actor":"야곱"},{"action":"rise","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-1",
@@ -1537,7 +1587,8 @@
       "study": "하나님이 다시 나타나 이스라엘이라는 이름을 확인하시고 민족과 왕들이 나올 거라 하세요. 야곱은 서원했던 그곳에 돌기둥을 세우고 기름을 부어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"anoint","lead":"야곱","target":null,"mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"olive-oil","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pour","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-3",
@@ -1546,9 +1597,9 @@
       "title": "열두 아들과 이삭의 죽음",
       "actors": [
         "야곱",
-        "르우벤"
+        "에서"
       ],
-      "object": "field",
+      "object": "tomb",
       "ref": "창세기 35:22-29",
       "verseNumbers": [
         22,
@@ -1567,7 +1618,8 @@
       "study": "르우벤이 아버지의 첩 빌하와 동침하는 죄를 지어요. 열두 아들의 이름이 정리되고, 이삭이 백팔십 세에 죽어 에서와 야곱이 함께 장사해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tomb","beats":[{"action":"startle","duration":1,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"},{"action":"kneel","duration":1.5,"actor":"야곱"},{"action":"cover-mouth","duration":1.8,"actor":"야곱"},{"action":"mourn","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:22-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-0",
@@ -1599,7 +1651,8 @@
       "study": "아버지가 요셉을 더 사랑해 좋은 옷을 입히자 형들이 미워해요. 요셉이 형들의 곡식 단과 해·달·별이 자기에게 절하는 꿈을 말하자 형들은 더 시기해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dream","lead":"요셉","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"grain","beats":[{"action":"sit","duration":1,"actor":"요셉"},{"action":"lie","duration":1.2,"actor":"요셉"},{"action":"sleep","duration":1.5,"actor":"요셉"},{"action":"look","duration":1.8,"actor":"요셉"},{"action":"startle","duration":1.5,"actor":"요셉"},{"action":"rise","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 37:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-1",
@@ -1610,7 +1663,7 @@
         "요셉",
         "르우벤"
       ],
-      "object": "water-supply",
+      "object": "well",
       "ref": "창세기 37:12-24",
       "verseNumbers": [
         12,
@@ -1634,7 +1687,8 @@
       "study": "아버지 심부름으로 형들을 찾아 도단까지 간 요셉을 형들이 죽이려 해요. 르우벤이 말려서 형들은 요셉의 옷을 벗기고 물 없는 구덩이에 던져요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"pit","lead":"요셉","target":"르우벤","mode":"reconstruction","setting":"desert","effect":"pit","emotion":"worried","prop":"well","beats":[{"action":"walk","duration":1,"actor":"요셉"},{"action":"startle","duration":1.2,"actor":"요셉"},{"action":"retreat","duration":1.5,"actor":"요셉"},{"action":"fall","duration":1.8,"actor":"요셉"},{"action":"brace","duration":1.5,"actor":"요셉"},{"action":"look","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 37:12-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-2",
@@ -1660,7 +1714,8 @@
       "study": "애굽으로 가는 이스마엘 상인들이 지나가자, 유다가 동생을 죽여 봐야 이익이 없다며 팔자고 해요. 형들은 요셉을 은 이십에 팔아넘겨요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"trade","lead":"요셉","target":"유다","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"grasp","duration":1.2,"actor":"요셉"},{"action":"weigh","duration":1.5,"actor":"요셉"},{"action":"place","duration":1.8,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 37:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-3",
@@ -1691,7 +1746,8 @@
       "study": "형들이 숫염소 피를 묻힌 옷을 보이자 야곱은 요셉이 짐승에게 죽었다며 오래 슬피 울어요. 그 사이 요셉은 애굽의 보디발에게 팔려 가요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요."
+      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요.",
+      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"robe","beats":[{"action":"startle","duration":1,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"},{"action":"kneel","duration":1.5,"actor":"야곱"},{"action":"cover-mouth","duration":1.8,"actor":"야곱"},{"action":"mourn","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 37:29-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-38-1",
@@ -1725,7 +1781,8 @@
       "study": "셀라가 자랐는데도 약속이 지켜지지 않자 다말이 얼굴을 가리고 길가에 앉아요. 다말을 알아보지 못한 유다는 도장과 끈과 지팡이를 담보로 맡겨요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"pledge","lead":"유다","target":"다말","mode":"reconstruction","setting":"road","effect":"transfer","emotion":"neutral","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"inspect","duration":1.2,"actor":"유다"},{"action":"grasp","duration":1.5,"actor":"유다"},{"action":"extend","duration":1.8,"actor":"유다"},{"action":"release","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:12-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-39-0",
@@ -1753,7 +1810,8 @@
       "study": "보디발의 집에 팔려 간 요셉과 하나님이 함께하셔서 하는 일마다 잘돼요. 보디발은 요셉에게 모든 것을 맡기고, 하나님은 요셉 때문에 그 집에 복을 주세요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"steward","lead":"요셉","target":"보디발","mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"read","duration":1.2,"actor":"요셉"},{"action":"inspect","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"write","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 39:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-39-1",
@@ -1780,7 +1838,8 @@
       "study": "보디발의 아내가 날마다 유혹하자 요셉은 하나님께 죄를 지을 수 없다며 거절해요. 여인이 옷을 붙잡자 요셉은 옷을 버려두고 밖으로 도망쳐요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"flee","lead":"요셉","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"robe","beats":[{"action":"look","duration":1,"actor":"요셉"},{"action":"startle","duration":1.2,"actor":"요셉"},{"action":"turn","duration":1.5,"actor":"요셉"},{"action":"run","duration":1.8,"actor":"요셉"},{"action":"run","duration":1.5,"actor":"요셉"},{"action":"look","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 39:7-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-39-2",
@@ -1809,7 +1868,8 @@
       "study": "여인은 남겨진 옷을 증거 삼아 히브리 종이 자기를 범하려 했다고 거짓말해요. 화가 난 보디발은 요셉을 왕의 죄수들이 갇히는 옥에 넣어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"imprison","lead":"요셉","target":null,"mode":"reconstruction","setting":"chamber","effect":"bars","emotion":"sad","prop":"robe","beats":[{"action":"walk","duration":1,"actor":"요셉"},{"action":"halt","duration":1.2,"actor":"요셉"},{"action":"brace","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.8,"actor":"요셉"},{"action":"sit","duration":1.5,"actor":"요셉"},{"action":"mourn","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 39:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-40-2",
@@ -1819,7 +1879,7 @@
       "actors": [
         "요셉"
       ],
-      "object": "ink",
+      "object": "basket",
       "ref": "창세기 40:16-19",
       "verseNumbers": [
         16,
@@ -1834,7 +1894,8 @@
       "study": "빵 관원장도 머리 위 빵 바구니를 새들이 먹은 꿈을 말해요. 요셉은 사흘 안에 그가 장대에 매달리게 된다고 정직하게 풀어 줘요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"basket","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 40:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-41-0",
@@ -1844,7 +1905,7 @@
       "actors": [
         "바로"
       ],
-      "object": "field",
+      "object": "grain",
       "ref": "창세기 41:1-13",
       "verseNumbers": [
         1,
@@ -1868,7 +1929,8 @@
       "study": "바로가 살진 소를 먹는 마른 소, 충실한 이삭을 삼키는 마른 이삭 꿈을 꿔요. 아무도 풀지 못하자 술 관원장이 그제야 감옥의 요셉을 떠올려요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dream","lead":"바로","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"grain","beats":[{"action":"sit","duration":1,"actor":"바로"},{"action":"lie","duration":1.2,"actor":"바로"},{"action":"sleep","duration":1.5,"actor":"바로"},{"action":"look","duration":1.8,"actor":"바로"},{"action":"startle","duration":1.5,"actor":"바로"},{"action":"rise","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"창세기 41:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-41-2",
@@ -1898,7 +1960,8 @@
       "study": "바로가 하나님의 영이 함께하는 요셉을 총리로 세워 인장 반지와 수레를 주고 애굽 이름과 아내를 줘요. 그때 요셉은 서른 살이었어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"invest","lead":"요셉","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"signet","beats":[{"action":"bow","duration":1,"actor":"요셉"},{"action":"kneel","duration":1.2,"actor":"요셉"},{"action":"receive","duration":1.5,"actor":"요셉"},{"action":"wear","duration":1.8,"actor":"요셉"},{"action":"rise","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 41:37-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-41-3",
@@ -1906,8 +1969,7 @@
       "chapter": 41,
       "title": "풍년과 흉년",
       "actors": [
-        "요셉",
-        "므낫세"
+        "요셉"
       ],
       "object": "grain",
       "ref": "창세기 41:46-57",
@@ -1932,7 +1994,8 @@
       "study": "요셉이 풍년에 셀 수 없는 곡식을 쌓고 므낫세와 에브라임을 얻어요. 흉년이 시작되자 온 세상이 곡식을 사러 애굽의 요셉에게 와요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"store","lead":"요셉","target":null,"mode":"reconstruction","setting":"store","effect":"stack","emotion":"determined","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"carry","duration":1.5,"actor":"요셉"},{"action":"place","duration":1.8,"actor":"요셉"},{"action":"count","duration":1.5,"actor":"요셉"},{"action":"stand","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 41:46-57","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-42-0",
@@ -1940,8 +2003,7 @@
       "chapter": 42,
       "title": "애굽으로 간 형들",
       "actors": [
-        "요셉",
-        "야곱"
+        "요셉"
       ],
       "object": "grain",
       "ref": "창세기 42:1-6",
@@ -1960,7 +2022,8 @@
       "study": "흉년이 들자 야곱이 열 아들을 애굽으로 보내 곡식을 사 오게 해요. 베냐민만은 보내지 않고, 형들은 총리 요셉 앞에 얼굴을 땅에 대고 절해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"trade","lead":"요셉","target":null,"mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"grasp","duration":1.2,"actor":"요셉"},{"action":"weigh","duration":1.5,"actor":"요셉"},{"action":"place","duration":1.8,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 42:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-43-1",
@@ -1993,7 +2056,8 @@
       "study": "요셉이 형제들을 집으로 부르자 형들은 돈 때문에 종이 될까 겁을 먹어요. 청지기는 하나님이 주신 보물이라며 안심시키고 시므온을 데려와요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"요셉","target":"시므온","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"house","beats":[{"action":"look","duration":1,"actor":"요셉"},{"action":"walk","duration":1.2,"actor":"요셉"},{"action":"bow","duration":1.5,"actor":"요셉"},{"action":"extend","duration":1.8,"actor":"요셉"},{"action":"place","duration":1.5,"actor":"요셉"},{"action":"sit","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 43:15-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-44-0",
@@ -2029,7 +2093,8 @@
       "study": "요셉이 베냐민의 자루에 몰래 은잔을 넣게 해요. 청지기가 뒤쫓아가 자루를 뒤지자 은잔이 베냐민의 자루에서 나오고, 형제들은 옷을 찢어요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요."
+      "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요.",
+      "animation": {"version":2,"motif":"discover-cup","lead":"베냐민","target":null,"mode":"reconstruction","setting":"chamber","effect":"reveal","emotion":"surprised","prop":"cup","beats":[{"action":"bend","duration":1,"actor":"베냐민"},{"action":"open","duration":1.2,"actor":"베냐민"},{"action":"inspect","duration":1.5,"actor":"베냐민"},{"action":"grasp","duration":1.8,"actor":"베냐민"},{"action":"lift","duration":1.5,"actor":"베냐민"},{"action":"startle","duration":1.2,"actor":"베냐민"}],"duration":8.2,"support":null,"ref":"창세기 44:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-44-1",
@@ -2054,7 +2119,8 @@
       "study": "형제들이 아무도 베냐민을 버리지 않고 함께 돌아와 요셉 앞에 엎드려요. 요셉은 잔을 가진 사람만 종이 되고 나머지는 돌아가라고 해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"plead","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cup","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"kneel","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"pray","duration":1.8,"actor":"요셉"},{"action":"pray","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 44:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-45-2",
@@ -2084,7 +2150,8 @@
       "study": "바로가 기뻐하며 수레를 내주고 애굽의 좋은 땅을 주겠다고 해요. 요셉은 형들에게 양식과 새 옷을 주고, 길에서 다투지 말라고 당부해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"provision","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"extend","duration":1.8,"actor":"요셉"},{"action":"release","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 45:16-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-47-1",
@@ -2115,7 +2182,8 @@
       "study": "흉년이 심해지자 백성들이 돈, 가축, 땅과 몸까지 바쳐 곡식을 사요. 요셉은 그렇게 모은 곡식으로 애굽과 가나안 사람들을 살려요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"distribute","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"extend","duration":1.8,"actor":"요셉"},{"action":"release","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-49-1",
@@ -2123,9 +2191,10 @@
       "chapter": 49,
       "title": "유다의 규",
       "actors": [
+        "야곱",
         "유다"
       ],
-      "object": "lion",
+      "object": "staff",
       "ref": "창세기 49:8-12",
       "verseNumbers": [
         8,
@@ -2141,7 +2210,8 @@
       "study": "유다를 사자 새끼에 비유하며 왕의 지팡이가 그를 떠나지 않을 거라 예언해요. 다윗과 예수님을 가리키는 예언으로 읽는 견해가 많아요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"blessing","lead":"야곱","target":"유다","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"lift","duration":1.2,"actor":"야곱"},{"action":"bless","duration":1.5,"actor":"야곱"},{"action":"bless","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 49:8-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-1",
@@ -2170,7 +2240,8 @@
         ]
       },
       "narrationOnly": false,
-      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요."
+      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
+      "animation": {"version":2,"motif":"water","lead":"리브가","target":null,"mode":"reconstruction","setting":"water","effect":"water","emotion":"gentle","prop":"well","beats":[{"action":"bend","duration":1,"actor":"리브가"},{"action":"reach","duration":1.2,"actor":"리브가"},{"action":"scoop","duration":1.5,"actor":"리브가"},{"action":"lift","duration":1.8,"actor":"리브가"},{"action":"pour","duration":1.5,"actor":"리브가"},{"action":"lower","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-2",
@@ -2198,7 +2269,8 @@
         ]
       },
       "narrationOnly": false,
-      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요."
+      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
+      "animation": {"version":2,"motif":"anoint","lead":"야곱","target":null,"mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"stone","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pour","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:18-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-3",
@@ -2226,7 +2298,8 @@
         ]
       },
       "narrationOnly": false,
-      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요."
+      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
+      "animation": {"version":2,"motif":"plead","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"kneel","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"pray","duration":1.8,"actor":"요셉"},{"action":"pray","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 40:14-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

@@ -1,1 +1,86 @@
-{"book":"jol","scenes":[{"id":"ot-jol-1-2","code":"jol","chapter":1,"title":"금식하고 성회를 열라","actors":["제사장들"],"object":"temple","ref":"요엘 1:13-20","verseNumbers":[13,14,15,16,17,18,19,20],"actions":{},"lines":["해설: 제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요."],"study":"제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-jol-2-1","code":"jol","chapter":2,"title":"마음을 찢고 돌아오라","actors":["제사장들"],"object":"robe","ref":"요엘 2:12-17","verseNumbers":[12,13,14,15,16,17],"actions":{},"lines":["해설: 하나님이 옷이 아니라 마음을 찢고 돌아오라고 하세요. 은혜로운 분이라 용서하실 수도 있지만 당연한 건 아니에요."],"study":"하나님이 옷이 아니라 마음을 찢고 돌아오라고 하세요. 은혜로운 분이라 용서하실 수도 있지만 당연한 건 아니에요. 제사장들이 울며 구해요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."}],"additionalPeople":{"2":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[14]}],"3":[{"name":"여호사밧","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[2,12]}]}}
+{
+  "book": "jol",
+  "scenes": [
+    {
+      "id": "ot-jol-1-2",
+      "code": "jol",
+      "chapter": 1,
+      "title": "금식하고 성회를 열라",
+      "actors": [
+        "제사장들"
+      ],
+      "object": "temple",
+      "ref": "요엘 1:13-20",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요."
+      ],
+      "study": "제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"제사장들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"read","duration":1.2,"actor":"제사장들"},{"action":"look","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"요엘 1:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jol-2-1",
+      "code": "jol",
+      "chapter": 2,
+      "title": "마음을 찢고 돌아오라",
+      "actors": [
+        "제사장들"
+      ],
+      "object": "robe",
+      "ref": "요엘 2:12-17",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 옷이 아니라 마음을 찢고 돌아오라고 하세요. 은혜로운 분이라 용서하실 수도 있지만 당연한 건 아니에요."
+      ],
+      "study": "하나님이 옷이 아니라 마음을 찢고 돌아오라고 하세요. 은혜로운 분이라 용서하실 수도 있지만 당연한 건 아니에요. 제사장들이 울며 구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"제사장들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"read","duration":1.2,"actor":"제사장들"},{"action":"look","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"요엘 2:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "2": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          14
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "여호사밧",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          2,
+          12
+        ]
+      }
+    ]
+  }
+}

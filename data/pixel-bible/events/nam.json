@@ -1,1 +1,41 @@
-{"book":"nam","scenes":[],"additionalPeople":{"3":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[7]}]}}
+{
+  "book": "nam",
+  "scenes": [
+    {
+      "id": "ot-animation-nam-1",
+      "code": "nam",
+      "chapter": 1,
+      "title": "환난 날의 피난처",
+      "actors": [
+        "나훔"
+      ],
+      "object": "wall",
+      "ref": "나훔 1:7-8",
+      "verseNumbers": [
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 니느웨에 대한 심판과 주께 피하는 자를 돌보신다는 말씀을 대조해 살펴봐요. 예언의 이미지를 설명하는 장면이에요."
+      ],
+      "study": "니느웨에 대한 심판과 주께 피하는 자를 돌보신다는 말씀을 대조해 살펴봐요. 예언의 이미지를 설명하는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"나훔","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"read","duration":1.2,"actor":"나훔"},{"action":"look","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:7-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "3": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          7
+        ]
+      }
+    ]
+  }
+}

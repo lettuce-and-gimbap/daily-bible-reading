@@ -1,1 +1,31 @@
-{"book":"hab","scenes":[],"additionalPeople":{}}
+{
+  "book": "hab",
+  "scenes": [
+    {
+      "id": "ot-animation-hab-1",
+      "code": "hab",
+      "chapter": 2,
+      "title": "파수하며 기록하는 하박국",
+      "actors": [
+        "하박국"
+      ],
+      "object": "writing-tablet",
+      "ref": "하박국 2:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하박국은 파수하며 응답을 기다리고, 정한 때를 기다리라는 말씀을 판에 분명하게 기록하라는 명령을 들어요. 기록하는 자세는 창작 연출이에요."
+      ],
+      "study": "하박국은 파수하며 응답을 기다리고, 정한 때를 기다리라는 말씀을 판에 분명하게 기록하라는 명령을 들어요. 기록하는 자세는 창작 연출이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"write","lead":"하박국","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"writing-tablet","beats":[{"action":"inspect","duration":1,"actor":"하박국"},{"action":"grasp","duration":1.2,"actor":"하박국"},{"action":"open","duration":1.5,"actor":"하박국"},{"action":"read","duration":1.8,"actor":"하박국"},{"action":"write","duration":1.5,"actor":"하박국"},{"action":"place","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {}
+}

@@ -1,1 +1,211 @@
-{"book":"est","scenes":[{"id":"ot-est-3-3","code":"est","chapter":3,"title":"진멸 조서","actors":["유다인"],"object":"signet","ref":"에스더 3:12-15","verseNumbers":[12,13,14,15],"actions":{},"lines":["해설: 아달월 십삼 일에 유다인을 죽이고 재산을 빼앗으라는 조서가 각 지방에 퍼져요. 조서는 각 지방의 문자와 민족의 언어로 쓰고 왕의 반지로 인쳐요."],"study":"아달월 십삼 일에 유다인을 죽이고 재산을 빼앗으라는 조서가 각 지방에 퍼져요. 조서는 각 지방의 문자와 민족의 언어로 쓰고 왕의 반지로 인쳐요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-est-5-0","code":"est","chapter":5,"title":"금 규를 내민 왕","actors":["에스더"],"object":"gold","ref":"에스더 5:1-3","verseNumbers":[1,2,3],"actions":{},"lines":["해설: 에스더가 안뜰에 서자 왕이 금 규를 내밀어요."],"study":"에스더가 안뜰에 서자 왕이 금 규를 내밀어요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-est-8-0","code":"est","chapter":8,"title":"반지를 받은 모르드개","actors":["에스더","모르드개"],"object":"signet","ref":"에스더 8:1-2","verseNumbers":[1,2],"actions":{},"lines":["해설: 하만의 집은 에스더에게, 반지는 모르드개에게 가요."],"study":"하만의 집은 에스더에게, 반지는 모르드개에게 가요.","actorLines":{},"narrationOnly":true,"objectNote":"본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요."},{"id":"ot-voice-33","code":"est","chapter":4,"title":"에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해","actors":["에스더"],"object":"cloak","ref":"에스더 4:16","verseNumbers":[16],"actions":{},"lines":["에스더(창작·본문 기반): 금식해 주십시오. 나도 왕에게 나아가겠습니다.","해설: 에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해요. 겉옷은 왕궁 입장을 위한 상징 배치예요."],"study":"에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해요. 겉옷은 왕궁 입장을 위한 상징 배치예요.","actorLines":{"에스더":["금식해 주십시오. 나도 왕에게 나아가겠습니다."]},"narrationOnly":false,"objectNote":"본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요."},{"id":"ot-voice-34","code":"est","chapter":6,"title":"하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해","actors":["모르드개"],"object":"horse","ref":"에스더 6:10-11","verseNumbers":[10,11],"actions":{},"lines":["모르드개(창작·본문 기반): 성문을 지키던 내가 왕의 옷을 입고 말에 오르게 되었구나.","해설: 하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해요."],"study":"하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해요.","actorLines":{"모르드개":["성문을 지키던 내가 왕의 옷을 입고 말에 오르게 되었구나."]},"narrationOnly":false,"objectNote":"본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요."}],"additionalPeople":{"2":[{"name":"느부갓네살","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[6]}],"4":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[14]},{"name":"하만","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[7]}],"6":[{"name":"누가","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[4]},{"name":"에스더","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[14]}],"7":[{"name":"모르드개","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[9,10]}],"8":[{"name":"하만","weight":1,"role":"본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.","mentionVerses":[1,2,3,5,7]}]}}
+{
+  "book": "est",
+  "scenes": [
+    {
+      "id": "ot-est-3-3",
+      "code": "est",
+      "chapter": 3,
+      "title": "진멸 조서",
+      "actors": [
+        "하만"
+      ],
+      "object": "signet",
+      "ref": "에스더 3:12-15",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아달월 십삼 일에 유다인을 죽이고 재산을 빼앗으라는 조서가 각 지방에 퍼져요. 조서는 각 지방의 문자와 민족의 언어로 쓰고 왕의 반지로 인쳐요."
+      ],
+      "study": "아달월 십삼 일에 유다인을 죽이고 재산을 빼앗으라는 조서가 각 지방에 퍼져요. 조서는 각 지방의 문자와 민족의 언어로 쓰고 왕의 반지로 인쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"decree","lead":"하만","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"signet","beats":[{"action":"read","duration":1,"actor":"하만"},{"action":"lift","duration":1.2,"actor":"하만"},{"action":"speak","duration":1.5,"actor":"하만"},{"action":"point","duration":1.8,"actor":"하만"},{"action":"lower","duration":1.5,"actor":"하만"},{"action":"write","duration":1.2,"actor":"하만"}],"duration":8.2,"support":null,"ref":"에스더 3:12-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-est-5-0",
+      "code": "est",
+      "chapter": 5,
+      "title": "금 규를 내민 왕",
+      "actors": [
+        "에스더"
+      ],
+      "object": "gold",
+      "ref": "에스더 5:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에스더가 안뜰에 서자 왕이 금 규를 내밀어요."
+      ],
+      "study": "에스더가 안뜰에 서자 왕이 금 규를 내밀어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"approach","lead":"에스더","target":null,"mode":"reconstruction","setting":"court","effect":"scepter","emotion":"worried","prop":"gold","beats":[{"action":"wait","duration":1,"actor":"에스더"},{"action":"look","duration":1.2,"actor":"에스더"},{"action":"walk","duration":1.5,"actor":"에스더"},{"action":"halt","duration":1.8,"actor":"에스더"},{"action":"bow","duration":1.5,"actor":"에스더"},{"action":"speak","duration":1.2,"actor":"에스더"}],"duration":8.2,"support":null,"ref":"에스더 5:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-est-8-0",
+      "code": "est",
+      "chapter": 8,
+      "title": "반지를 받은 모르드개",
+      "actors": [
+        "모르드개",
+        "에스더"
+      ],
+      "object": "signet",
+      "ref": "에스더 8:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하만의 집은 에스더에게, 반지는 모르드개에게 가요."
+      ],
+      "study": "하만의 집은 에스더에게, 반지는 모르드개에게 가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"invest","lead":"모르드개","target":"에스더","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"signet","beats":[{"action":"bow","duration":1,"actor":"모르드개"},{"action":"kneel","duration":1.2,"actor":"모르드개"},{"action":"receive","duration":1.5,"actor":"모르드개"},{"action":"wear","duration":1.8,"actor":"모르드개"},{"action":"rise","duration":1.5,"actor":"모르드개"},{"action":"bow","duration":1.2,"actor":"모르드개"}],"duration":8.2,"support":null,"ref":"에스더 8:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-voice-33",
+      "code": "est",
+      "chapter": 4,
+      "title": "에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해",
+      "actors": [
+        "에스더"
+      ],
+      "object": "cloak",
+      "ref": "에스더 4:16",
+      "verseNumbers": [
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "에스더(창작·본문 기반): 금식해 주십시오. 나도 왕에게 나아가겠습니다.",
+        "해설: 에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해요. 겉옷은 왕궁 입장을 위한 상징 배치예요."
+      ],
+      "study": "에스더는 금식을 요청하고 위험을 감수해 왕 앞에 가기로 해요. 겉옷은 왕궁 입장을 위한 상징 배치예요.",
+      "actorLines": {
+        "에스더": [
+          "금식해 주십시오. 나도 왕에게 나아가겠습니다."
+        ]
+      },
+      "narrationOnly": false,
+      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
+      "animation": {"version":2,"motif":"pray","lead":"에스더","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"에스더"},{"action":"kneel","duration":1.2,"actor":"에스더"},{"action":"lift","duration":1.5,"actor":"에스더"},{"action":"pray","duration":1.8,"actor":"에스더"},{"action":"pray","duration":1.5,"actor":"에스더"},{"action":"bow","duration":1.2,"actor":"에스더"}],"duration":8.2,"support":null,"ref":"에스더 4:16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-voice-34",
+      "code": "est",
+      "chapter": 6,
+      "title": "하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해",
+      "actors": [
+        "모르드개"
+      ],
+      "object": "horse",
+      "ref": "에스더 6:10-11",
+      "verseNumbers": [
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "모르드개(창작·본문 기반): 성문을 지키던 내가 왕의 옷을 입고 말에 오르게 되었구나.",
+        "해설: 하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해요."
+      ],
+      "study": "하만이 왕의 명령대로 모르드개를 입히고 말을 태워 성중으로 인도해요.",
+      "actorLines": {
+        "모르드개": [
+          "성문을 지키던 내가 왕의 옷을 입고 말에 오르게 되었구나."
+        ]
+      },
+      "narrationOnly": false,
+      "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
+      "animation": {"version":2,"motif":"parade","lead":"모르드개","target":null,"mode":"reconstruction","setting":"road","effect":"horse","emotion":"joy","prop":"horse","beats":[{"action":"receive","duration":1,"actor":"모르드개"},{"action":"wear","duration":1.2,"actor":"모르드개"},{"action":"sit","duration":1.5,"actor":"모르드개"},{"action":"hold","duration":1.8,"actor":"모르드개"},{"action":"look","duration":1.5,"actor":"모르드개"},{"action":"bow","duration":1.2,"actor":"모르드개"}],"duration":8.2,"support":null,"ref":"에스더 6:10-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    }
+  ],
+  "additionalPeople": {
+    "2": [
+      {
+        "name": "느부갓네살",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          6
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          14
+        ]
+      },
+      {
+        "name": "하만",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          7
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "누가",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          4
+        ]
+      },
+      {
+        "name": "에스더",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          14
+        ]
+      }
+    ],
+    "7": [
+      {
+        "name": "모르드개",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          9,
+          10
+        ]
+      }
+    ],
+    "8": [
+      {
+        "name": "하만",
+        "weight": 1,
+        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
+        "mentionVerses": [
+          1,
+          2,
+          3,
+          5,
+          7
+        ]
+      }
+    ]
+  }
+}

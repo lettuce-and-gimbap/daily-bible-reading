@@ -155,7 +155,7 @@
     {
       "code": "oba",
       "chapters": 1,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "jnh",
@@ -170,17 +170,17 @@
     {
       "code": "nam",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "hab",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "zep",
       "chapters": 3,
-      "scenes": 0
+      "scenes": 1
     },
     {
       "code": "hag",
@@ -24006,5 +24006,10 @@
       "actor": "스룹바벨",
       "status": "range-and-chapter-name-checked"
     }
-  ]
+  ],
+  "animationReview": {
+    "date": "2026-10-25",
+    "report": "../animation-review.json",
+    "scope": "등록된 구약 사건 715개. 모든 성경 사건을 망라하지 않음."
+  }
 }

@@ -1,3 +1,4 @@
+import {drawEventArms} from './event-animation/rig.js';
 import {drawPhysicalDetails} from './physical-traits.js';
 import {drawWardrobe} from './wardrobe.js';
 import { drawFaceExpression } from './expression.js';
@@ -10,7 +11,8 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  const side=direction!=='up',bob=step?1:0;
  r(5,37,14,1,'#183a3933');
  const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};
- if(pose?.sit){
+ if(pose?.eventKneel){r(9,30,10,3,O);r(10,30,8,2,s.coat);r(8,33,5,3,O);r(14,33,9,3,O);r(15,34,7,1,skin);}
+ else if(pose?.sit){
   if(side){r(9,30,12,3,O);r(10,31,10,1,s.coat);r(18,32,3,4+pose.legSwing,O);r(18,35+pose.legSwing,6,2,O);r(19,35+pose.legSwing,4,1,'#a77d57');}
   else{r(7,31,11,3,O);r(8,33,3,3,O);r(15,33+pose.legSwing,3,3,O);r(7,35,5,2,O);r(14,35+pose.legSwing,5,2,O);}
  }else if(pose?.bend){r(7,32,6,3,O);r(14,32,5,3,O);r(7,35,6,2,O);r(15,35,6,2,O);}
@@ -29,7 +31,8 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.sash)r(14,22,2,9,s.sash);
   if(s.pattern)r(15,23,1,7,s.accent||'#cfac68');
   drawWardrobe(r,s,direction);
-  if(pose?.archery){
+  if(pose?.eventArms){drawEventArms(r,s,pose,{side:true});}
+  else if(pose?.archery){
    // 앞손은 활을 지지하고 뒷손은 시위와 함께 몸쪽으로 당긴다.
    const draw=pose.phase===1?4:pose.phase===2?1:2;
    r(13,22,4,4,O);r(14,23,3,2,s.coat);r(16,24,8,3,O);r(17,24,7,2,skin);

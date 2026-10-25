@@ -1,0 +1,65 @@
+import {drawWorldObject} from '../art.js';
+export const EFFECTS=new Set('pour-water five-stones float-basket two-offerings flock bars crown arrow none shadow transfer receive build flood recede bird altar-flame rainbow cover journey light covenant feast shelter fire prayer release coins water tears family refuse vision oil roll speech bury pit stack reveal symbol bush-fire snake water-strike divide restore cloud lamp garment smoke cloth fragments veil arrange powder blossom sign clash rope lots collapse jar-break grain shoe food music sling projectile cloth-cut letter boat whirlwind axe treasure touch water-strike burial potsherd clay cloth-decay sink city joined storm wither scroll idol well signal snare boat-break scepter horse heal tear transfer light'.split(' '));
+export function drawEffects(c,sample,layout){
+ const {plan,index,progress,effectProgress:p,elapsed}=sample,effect=plan.effect;
+ const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.max(0,Math.round(w)),Math.max(0,Math.round(h)));};
+ const prop=(kind,x,y)=>drawWorldObject(c,{kind,x,y},1,0),x=layout.prop.x,y=layout.prop.y;
+ if(['illustration','instruction','vision'].includes(plan.mode)){r(18,35,155,23,'#233d47');c.fillStyle='#f6e4b7';c.font='12px DungGeunMo,monospace';c.textAlign='left';c.fillText(plan.mode==='instruction'?'규례 설명 · 동작은 예시':plan.mode==='vision'?'꿈 · 환상의 상징 장면':'시 · 비유 · 예언의 상징 설명',24,50);}
+ const spark=(col)=>{if(index<3)return;for(let i=0;i<10;i++)r(x-18+i*7%37,y-60+(i*11+elapsed*10)%50,2,3,col);};
+ switch(effect){
+ case 'five-stones':for(let i=0;i<5;i++)if(index<3||i>Math.floor(p*5))prop('stone',x+15+i*18,y+12+i%2*5);break;
+ case 'float-basket':if(index>=3)prop('reed-basket',x+p*38,y+8);break;
+ case 'two-offerings':if(index>=2){prop('fruit',layout.lead.x+38,y);const target=layout.positions.find((p,i)=>i!==layout.leadIndex);if(target)prop('sheep',target.x-55,y);}break;
+ case 'divide':{const gap=p*70;r(x-gap,224,gap*2,76,'#b9ae87');r(x-gap-3,224,3,76,'#bbdfdc');r(x+gap,224,3,76,'#bbdfdc');break;}
+ case 'restore':r(0,224,720,76,'#4f899e');for(let i=0;i<18;i++)r((i*49+elapsed*8)%720,238+i%3*20,19,2,'#a7ced2');break;
+ case 'flood':case 'storm':r(0,285-p*65,720,15+p*65,'#4e819c');if(index<5)for(let i=0;i<28;i++)r((i*73)%720,(i*47+elapsed*36)%220,2,7,'#b4d2d8');break;
+ case 'recede':r(0,224+p*57,720,76-p*57,'#4e819c');break;
+ case 'bird':if(index>=2){const bx=x+Math.min(150,p*160),by=y-100-p*55;prop('dove',bx,by);if(index<5)r(bx-9,by-7+(Math.floor(elapsed*5)%2)*4,19,2,'#e4e6d5');}break;
+ case 'altar-flame':case 'fire':case 'bush-fire':if(index>=3){for(let i=0;i<6;i++){r(x-15+i*6,y-24-(i%2)*8,5,22,'#d48148');r(x-12+i*6,y-20-(Math.floor(elapsed*4+i)%3)*4,3,14,'#efcf76');}}break;
+ case 'rainbow':if(index>=2)for(let j=0;j<4;j++){c.strokeStyle=['#d29185','#dfbe74','#8cb79f','#879fc6'][j];c.lineWidth=3;c.beginPath();c.arc(x,190,80-j*5,Math.PI,2*Math.PI);c.stroke();}break;
+ case 'powder':spark('#f2e7c9');break;
+ case 'pour-water':case 'oil':if(index>=3&&index<=4){const hand=layout.lead.hand;for(let i=0;i<8;i++)r(hand.x+8+i*.8,hand.y-4+i*4,2,4,effect==='oil'?'#ddba67':'#8fc9d4');}if(plan.motif==='oil')for(let i=0;i<4;i++){prop('jar',x+20+i*25,y);r(x+15+i*25,y-8,10,Math.round(p*6),'#dfbe69');}break;
+ case 'coins':if(index>=3)for(let i=0;i<6;i++)prop('coin',x+(i%3)*9,y-Math.floor(i/3)*4);break;
+ case 'tears':if(index>=3){const who=layout.lead;r(who.x-4,who.y-73+(Math.floor(elapsed*6)%9),2,3,'#a9d5d9');}break;
+ case 'family':case 'light':case 'heal':case 'release':if(index>=4){for(let i=0;i<4;i++)r(x-28+i*18,y-75,2,4,'#e3cf8e');}break;
+ case 'vision':if(index>=2){r(x-60,45,120,68,'#d1cdb477');prop(plan.motif==='dream'?'ladder':'cloud',x,100);prop('star',x+35,62);}break;
+ case 'snake':if(index>=3&&index<=4)prop('snake',x,y);break;
+ case 'water-strike':if(index>=3){for(let i=0;i<5;i++)r(x+i*5,y-22+i*3,3,4,'#8dc2cd');r(x,y,55*p,3,'#8dc2cd');}break;
+ case 'cloud':if(index>=2)for(let i=0;i<5;i++)r(x-75+i*31,50+i%2*10,54,22,'#d0d5c7aa');break;
+ case 'lamp':if(index>=3){r(x-3,y-27,5,8,'#f6db89');r(x-1,y-30,2,9,'#f6db89');}break;
+ case 'smoke':if(index>=3)for(let i=0;i<6;i++)r(x-5+i%2*5,y-35-i*9-(elapsed*3%5),7,5,'#d9d3c3aa');break;
+ case 'fragments':case 'jar-break':case 'collapse':case 'boat-break':if(index>=3){for(let i=0;i<8;i++)r(x+(i-4)*10*p,y-18+Math.abs(i-4)*p*3,7,5,'#9d8a68');}break;
+ case 'blossom':if(index>=3){for(let i=0;i<5;i++){r(x-3+i%2*7,y-20-i*5,5,3,'#81a16b');r(x-2+i%2*7,y-22-i*5,3,2,'#efdbc0');}}break;
+ case 'sign':if(index>=3)prop('bronze-snake',x,y-35);break;
+ case 'rope':{const py=index<3?y-55:y-55+p*40;c.strokeStyle='#c2a376';c.lineWidth=2;c.beginPath();c.moveTo(x,py-65);c.lineTo(x,py);c.stroke();if(index>=3)prop('basket',x,py);break;}
+ case 'lots':if(index>=3)for(let i=0;i<4;i++)r(x-12+i*7,y-5-i%2*3,4,4,'#d4cab0');break;
+ case 'grain':case 'stack':case 'build':if(index>=3)for(let i=0;i<Math.ceil(p*5);i++)prop(effect==='build'?'brick':'grain',x+i%3*24,y-Math.floor(i/3)*14);break;
+ case 'food':case 'feast':if(index>=3){prop('bread',x,y);prop('cup',x+28,y);}break;
+ case 'music':if(index>=2&&index<=4){c.fillStyle='#f0d38a';c.font='16px DungGeunMo,monospace';c.fillText('♪',x+30,115-Math.floor(elapsed*6)%25);c.fillText('♫',x-35,125-Math.floor(elapsed*6)%30);}break;
+ case 'sling':case 'projectile':case 'arrow':if(index>=(effect==='projectile'?2:4)){const flight=index===4?progress:index>4?1:0;const tx=layout.lead.x+30+flight*140,ty=layout.lead.y-57;prop(effect==='arrow'?'arrow':'stone',Math.min(650,tx),ty);}break;
+ case 'letter':case 'scroll':case 'covenant':if(index>=3){prop('scroll',x,y);}break;
+ case 'boat':if(index>=2)prop('boat',x,y+20);break;
+ case 'whirlwind':if(index>=2)for(let i=0;i<9;i++)r(x-28+i%3*12,y-30-i*12,60-i*4,2,'#e2d9b7');break;
+ case 'axe':if(index>=3)prop('axe',x+48,y+43-p*42);break;
+ case 'treasure':if(index>=3){prop('treasure-chest',x,y);prop('gold',x+20,y-15);}break;
+ case 'symbol':if(index>=2){r(x-50,60,100,70,'#d4d6bf77');prop(plan.prop,x,111);}break;
+ case 'reveal':if(index>=3){prop('cup',x,y-15);for(let i=0;i<3;i++)r(x-25+i*25,y-42,2,5,'#ead59b');}break;
+ case 'bury':if(index>=4)r(x-17,y-5,35,7,'#8f8269');break;
+ case 'city':if(index>=3){r(x-20,y-7,40,6,'#bb8b66');for(let i=0;i<4;i++)r(x-18+i*11,y-15,6,8,'#bb8b66');}break;
+ case 'joined':if(index>=3){r(x-15+p*10,y-27,3,27,'#b48d60');r(x+15-p*15,y-27,3,27,'#b48d60');}break;
+ case 'wither':if(index>=4){r(x-25,y-90,50,10,'#a39460');r(x-20,y-85,40,15,'#a39460');}break;
+ case 'scepter':if(index>=3)prop('staff',x,y-45);break;
+ case 'horse':if(index>=3)prop('horse',x,y);break;
+ case 'crown':if(index>=3)prop('crown',layout.lead.x,layout.lead.y-100);break;
+ case 'flock':if(index>=2){prop('sheep',x+35,y+5);prop('sheep',x+75,y+7);}break;
+ case 'bars':for(let i=0;i<6;i++)r(layout.lead.x-30+i*12,layout.lead.y-110,3,110,'#6c726e');break;
+ case 'well':if(index>=3)prop('well',x,y);break;
+ case 'snare':if(index>=3){r(layout.lead.x+4,layout.lead.y-110,4,55,'#7f6849');}break;
+ case 'burial':if(index>=3)prop('tomb',x,y);break;
+ case 'tear':case 'cloth-cut':if(index>=3){r(x-10,y-18,5,20,'#bba27c');r(x+2,y-14,6,14,'#bba27c');}break;
+ case 'sink':if(index>=3)prop('scroll',x,y-25+p*55);break;
+ case 'clay':if(index>=2){r(x-16,y-9,32,10,'#b88969');r(x-12,y-14+(index===4?6:0),24,7,'#c5a078');}break;
+ case 'cloth-decay':if(index>=4)for(let i=0;i<5;i++)r(x-15+i*7,y-10+i%2*5,4,5,'#8d8168');break;
+ default:break;
+ }
+}
