@@ -1,4 +1,4 @@
-import {mountCinematic} from './cinematic.js';
+import {mountPixelEvent as mountCinematic} from './pixel-event.js';
 import {createBgm} from './bgm.js';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
