@@ -5,9 +5,9 @@ import {VERSE_EFFECTS} from '../js/features/pixel-bible/event-animation/verse-ef
 import {buildWorldModel} from '../js/features/pixel-bible/world.js';
 import {loadVerseBook,VERSE_BOOKS} from '../js/features/pixel-bible/verse-data.js';
 const data=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/mrk.json')),summary=JSON.parse(fs.readFileSync('data/summary/mrk.json')),events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mrk.json'));
-test('마가복음 1–7장 285절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
- assert.equal(data.scenes.length,285);
- for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37]]){
+test('마가복음 1–12장 502절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
+ assert.equal(data.scenes.length,502);
+ for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37],[8,38],[9,50],[10,52],[11,33],[12,44]]){
  const clips=data.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(clips.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));
  const people=[...summary.chapters[chapter].people,...(data.additionalPeople[chapter]||[])];
  const c={code:'mrk',chap:chapter,name:'마가복음',data:{...summary.chapters[chapter],people,verseClips:clips,eventScenes:[...events.scenes,...events.restoredScenes].filter(s=>s.chapter===chapter)}};
@@ -22,6 +22,22 @@ test('마가복음의 배 비유·군대 귀신·전도 지침·귀먹은 사람
  assert.equal(get(7,10).animation.diagram.kind,'scroll-command');assert.equal(get(7,33).animation.effect,'ear-tongue');
  assert.equal(get(7,16).editionVariant,true);assert.equal(get(7,16).textualNotice,undefined);
  assert.equal(get(6,14).editionVariant,true);
+});
+test('마가복음 8–10장의 표징·변화산·아이 축복·바디매오 사건을 구별한다',()=>{
+ const get=(ch,v)=>data.scenes.find(s=>s.chapter===ch&&s.verseNumbers[0]===v);
+ assert.equal(get(8,6).animation.effect,'bread-share');assert.equal(get(8,25).animation.effect,'heal');
+ assert.equal(get(9,3).animation.effect,'transfiguration');assert.equal(get(9,27).animation.effect,'heal');
+ assert.equal(get(9,44).textualNotice,true);assert.equal(get(9,46).textualNotice,true);
+ assert.equal(get(10,25).animation.diagram.kind,'camel-needle');assert.equal(get(10,50).animation.prop,'cloak');assert.equal(get(10,52).animation.effect,'heal');
+});
+test('마가복음 11–12장은 입성·성전 정화·포도원 비유·논쟁·과부의 헌금을 절별로 구성한다',()=>{
+ const get=(ch,v)=>data.scenes.find(s=>s.chapter===ch&&s.verseNumbers[0]===v);
+ assert.equal(get(11,4).animation.prop,'donkey');assert.equal(get(11,15).animation.prop,'table');
+ assert.equal(get(11,17).animation.diagram.kind,'promise');assert.equal(get(11,23).animation.diagram.kind,'comparison');
+ assert.equal(get(11,26).textualNotice,true);
+ assert.equal(get(12,1).animation.diagram.kind,'vineyard');assert.equal(get(12,10).animation.diagram.kind,'cornerstone');
+ assert.equal(get(12,16).animation.prop,'coin');assert.equal(get(12,42).animation.prop,'coin');
+ assert.ok(get(12,42).study.includes('두 렙돈'));assert.equal(get(12,44).animation.beats.length,6);
 });
 test('네 운반자·지붕 내리기·상을 들고 나가기의 단계가 다르다',()=>{
  const get=v=>data.scenes.find(s=>s.chapter===2&&s.verseNumbers[0]===v);
