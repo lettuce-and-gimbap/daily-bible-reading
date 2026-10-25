@@ -1,3 +1,4 @@
+import {twoKingsMonologues} from './2ki-dialogue.js';
 // 본문 사건을 짧게 풀어 쓴 창작 대사. 성경의 직접 인용이 아니다.
 // 이름뿐 아니라 책/장과 역할을 확인해 동명이인과 행위 주체를 구분한다.
 const scenes=[
@@ -54,5 +55,5 @@ export function chapterMonologues(n,occurrences){
  const out=[];
  for(const [code,chap,name,ref,lines] of scenes)if((n.name===name||(name==='예수'&&n.name==='예수님'))&&occurrences.some(p=>p.code===code&&p.chap===chap))
   for(const [text,emotion]of lines)out.push({text,ref,emotion});
- return out;
+ return [...out,...twoKingsMonologues(n,occurrences)];
 }

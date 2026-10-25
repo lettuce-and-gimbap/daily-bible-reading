@@ -7,6 +7,7 @@ import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 import {objectLinesFor} from '../js/features/pixel-bible/object-scenes.js';
 import {ELIJAH_SCENES} from '../js/features/pixel-bible/scenes.js';
+import {TWO_KINGS_DIALOGUE_ROWS} from '../js/features/pixel-bible/2ki-dialogue.js';
 
 test('엘리야의 나무 독백은 현재 장의 공포와 탈진을 담고 긴 근거는 상세에 남긴다',()=>{
  const n={name:'엘리야',refs:['열왕기상 19장']},chapters=[{code:'1ki',name:'열왕기상',chap:19}],evidence={text:'광야의 로뎀나무 아래에서 지쳐 눕는 장면의 상세 맥락.',ref:'열왕기상 19:3–8'};
@@ -30,4 +31,27 @@ test('짧은 두 문장은 의도까지 보이고 긴 해설은 첫 문장만 �
  assert.equal(speechView({text:full}).text,full);
  const long='나는 오늘 이 길을 가야겠어. '+'본문 사건을 자세하게 설명합니다. '.repeat(30);assert.equal(speechView({text:long}).text,'나는 오늘 이 길을 가야겠어.');assert.equal(speechView({text:long}).detailText,long.trim());
  for(const row of OBJECT_MONOLOGUES)for(const text of row[6])assert.ok([...text].length<=64,text);
+});
+
+test('열왕기하 인물 대사는 사건·인물별로 갈리고 뒤 장의 후보도 잘리지 않는다',()=>{
+ const chapters=[{code:'2ki',name:'열왕기하',chap:9},{code:'2ki',name:'열왕기하',chap:10}];
+ const context={people:TWO_KINGS_DIALOGUE_ROWS.filter(r=>[9,10].includes(r[0])).map(([chap,name])=>({name,code:'2ki',chap,role:'왕'})),relations:[]};
+ const jehu=personalLines({name:'예후',role:'왕',refs:[]},chapters,context);
+ assert.equal(jehu.length,4);
+ assert.ok(jehu.some(l=>l.ref==='열왕기하 9:1-13'&&/기름|이스르엘/.test(l.text)));
+ assert.ok(jehu.some(l=>l.ref==='열왕기하 10:1-11'&&/아합|금송아지/.test(l.text)));
+ assert.ok(jehu.every(l=>!['내 결정에 여러 사람의 삶이 달려 있구나. 이 일을 어찌 풀어야 할까.','사람들이 어떤 대답을 기다리는지 먼저 들어야겠군.','오늘도 내가 결정해야 할 일이 쌓였구나.'].includes(l.text)));
+ const keys=new Set();
+ for(const [chap,name,verses,lines,emotion] of TWO_KINGS_DIALOGUE_ROWS){
+  const key=`${chap}:${name}`;assert.ok(!keys.has(key),`duplicate ${key}`);keys.add(key);
+  assert.ok(lines.length>=2&&lines.every(line=>line.length<=64),key);
+  const local={people:[{name,code:'2ki',chap,role:'기록된 사건 인물'}],relations:[]};
+  const output=personalLines({name,role:'기록된 사건 인물',refs:[]},[{code:'2ki',name:'열왕기하',chap}],local);
+  assert.ok(output.length>=1,key);assert.ok(output.every(line=>line.ref?.startsWith('열왕기하 ')),key);
+  assert.ok(['neutral','joy','sad','worried','angry','surprised','determined','gentle'].includes(emotion),key);
+ }
+ assert.ok(TWO_KINGS_DIALOGUE_ROWS.length>=160);
+ const allLines=TWO_KINGS_DIALOGUE_ROWS.flatMap(row=>row[3]);assert.equal(new Set(allLines).size,allLines.length,'열왕기하 개별 발화가 서로 구분되어야 한다');
+ const unknown={name:'기록되지 않은 왕',role:'왕',refs:[]},unknownContext={people:[{name:unknown.name,code:'2ki',chap:3,role:'왕'}],relations:[]};
+ assert.deepEqual(personalLines(unknown,[{code:'2ki',name:'열왕기하',chap:3}],unknownContext),[],'근거가 없는 열왕기하 인물에게 역할 공통 문구를 붙이지 않는다');
 });
