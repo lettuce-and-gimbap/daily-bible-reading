@@ -37,7 +37,7 @@ export function createBgm(){
  return {get enabled(){return enabled;},async setEnabled(value){
  if(!value){enabled=false;clearInterval(timer);timer=null;if(context)await context.suspend();return false;}
  const Audio=globalThis.AudioContext||globalThis.webkitAudioContext;if(!Audio)throw new Error('이 브라우저는 배경음악을 지원하지 않아요.');
- if(!context){try{if(globalThis.navigator?.audioSession)globalThis.navigator.audioSession.type='playback';}catch(_){}context=new Audio();gain=context.createGain();gain.gain.value=1;gain.connect(context.destination);}
+ if(!context){try{if(globalThis.navigator?.audioSession)globalThis.navigator.audioSession.type='playback';}catch(_){}context=new Audio();gain=context.createGain();gain.gain.value=5;gain.connect(context.destination);}
  await context.resume();enabled=true;next=Math.max(next,context.currentTime+.04);clearInterval(timer);timer=setInterval(schedule,100);schedule();return true;
  },dispose(){enabled=false;clearInterval(timer);context?.close();}};
 }
