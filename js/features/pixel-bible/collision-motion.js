@@ -26,9 +26,10 @@ export function impactPose(elapsed,reduced=false){
  }
  if(elapsed>=2.62){
   const beat=reduced?1:Math.min(3,Math.floor((elapsed-2.62)*9));
-  return {rising:beat>=2,sit:beat<2,hand:beat<2?1:0,handY:beat<2?16:23,phase:beat,bodyY:beat<2?-1:0,impactTilt:beat===0?.18:0,legSwing:beat%2};
+  return {rising:beat>=2,sit:beat<2,hand:beat<2?1:0,handY:beat<2?16:23,phase:beat,bodyY:beat<2?1:0,headY:beat<2?1:0,headX:beat===0?-1:0,impactTilt:beat===0?.18:0,legSwing:beat%2};
  }
- return {sit:true,hand:1,handY:[18,16,20,17][phase],phase,bodyY:reduced?0:[0,-1,0,1][phase],legSwing:phase%2?1:0};
+ const shake=reduced?0:Math.floor((elapsed-.32)*6)%2;
+ return {sit:true,hand:1,handY:[31,32,30,31][phase],handX:shake?1:0,headX:shake?1:-1,headY:phase%2,headTilt:shake?.14:-.14,phase,bodyY:[1,2,1,0][phase],impactTilt:shake?.045:-.045,legSwing:phase%2?1:0};
 }
 
 export function swimPose(elapsed,reduced=false){

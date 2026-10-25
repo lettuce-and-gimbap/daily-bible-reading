@@ -6,7 +6,7 @@ import { drawFaceExpression } from './expression.js';
 export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,action='',pose=null,expression='neutral'}={}) {
  c.save();c.translate(Math.round(x-12*scale),Math.round(y-36*scale));c.scale(scale,scale);
  if(direction==='left'){c.translate(24,0);c.scale(-1,1);}
- const r=(x,y,w,h,color)=>{c.fillStyle=color;const upper=pose&&y<31;c.fillRect(x+(upper?pose.bodyX:0),y+(upper?pose.bodyY:0),w,h);};
+ const r=(x,y,w,h,color)=>{c.fillStyle=color;const head=pose&&y<19,torso=pose&&y>=19&&y<31;c.fillRect(x+(head?(pose.headX||0):torso?(pose.bodyX||0):0),y+(head?(pose.headY||0):torso?(pose.bodyY||0):0),w,h);};
  const O='#302f35',skin='#f2d5af',hair=s.hood?s.coat:s.hair;
  const side=direction!=='up',bob=step?1:0;
  r(5,37,14,1,'#183a3933');
@@ -48,6 +48,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
    hr(14+Math.min(0,hx),yy,6+Math.abs(hx),3,O);hr(16+hx,yy,4,2,skin);
   }else{r(11+step,22,4,4,O);r(12+step,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}
   // 뒤통수에서 코끝으로 이어지고 눈 하나와 귀를 구분한다.
+  c.save();c.translate(12,12);c.rotate(pose?.headTilt||0);c.translate(-12,-12);
   r(8,5,8,1,O);r(6,6,12,2,O);r(5,8,14,8,O);r(7,16,11,3,O);r(10,19,5,1,O);
   r(8,6,8,1,hair);r(7,7,10,3,hair);r(6,10,11,6,hair);r(8,16,5,2,hair);
   r(13,10,5,6,skin);r(14,16,3,2,skin);r(18,12,2,2,O);r(18,12,1,1,skin);
@@ -56,6 +57,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.eyeliner)r(16,11,2,1,O);
   if(s.bald){r(9,6,7,2,skin);r(8,8,9,3,skin);}
   if(s.longHair){r(6,14,4,8,O);r(7,14,2,7,hair);}
+  c.restore();
  }else{
   r(8,19,8,2,O);r(6,21,12,10,O);r(7,22,10,9,s.coat);r(6,31,12,2,O);r(7,31,10,1,s.coat);
   if(s.mantle||s.royal||s.shawl){r(5,21,14,11,O);r(6,22,12,9,s.coat);r(7,25,1,6,'#ffffff22');r(16,25,1,6,'#302f3522');}
@@ -63,11 +65,13 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.trim)r(7,31,10,1,s.trim);
   drawWardrobe(r,s,direction);
   const arm=(x,d)=>{r(x,22+d,4,4,O);r(x+1,23+d,2,2,s.coat);r(x,26+d,3,3,O);r(x+1,26+d,1,2,skin);};arm(4,pose?.hand?-1-(pose.phase===2?1:0):-step);arm(17,pose?.hand?-1:step);
+  c.save();c.translate(12,12);c.rotate(pose?.headTilt||0);c.translate(-12,-12);
   r(9,5,6,1,O);r(7,6,10,1,O);r(5,7,14,2,O);r(4,9,16,8,O);r(5,17,14,2,O);r(8,19,8,1,O);
   r(8,7,8,1,hair);r(6,8,12,2,hair);r(5,10,14,6,hair);r(6,16,12,2,hair);r(9,18,6,1,hair);
   r(8,9,4,1,'#ffffff22');
   if(s.bald){r(8,7,8,2,skin);r(6,9,12,4,skin);r(7,13,10,1,skin);}
   if(s.longHair){r(6,16,12,7,O);r(7,16,10,6,hair);r(10,18,1,4,'#ffffff22');}
+  c.restore();
  }
  drawPhysicalDetails(r,s,{side,back:!side});
  // 방향에 맞춘 장식: 얼굴을 덮지 않고 머리의 윗부분에만 둔다.

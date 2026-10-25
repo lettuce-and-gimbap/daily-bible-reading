@@ -83,7 +83,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
   ctx.save();ctx.translate(Math.round(x-12*scale),Math.round(y-36*scale));ctx.scale(scale,scale);
   if(hanging){ctx.translate(12,1);ctx.rotate(Math.sin(time*7)*.14);ctx.translate(-12,-1);}
-  const r=(x,y,w,h,color)=>{ctx.fillStyle=color;const upper=pose&&y<31;ctx.fillRect(x+(upper?pose.bodyX:0),y+(upper?pose.bodyY:0),w,h);};
+  const r=(x,y,w,h,color)=>{ctx.fillStyle=color;const head=pose&&y<19,torso=pose&&y>=19&&y<31;ctx.fillRect(x+(head?(pose.headX||0):torso?(pose.bodyX||0):0),y+(head?(pose.headY||0):torso?(pose.bodyY||0):0),w,h);};
   const outline="#302f35", skin="#f2d5af", blush="#eb9da2", hair=style.hood?style.coat:style.hair;
   const resting = action === "bench";
   const step=Math.sign(walk), look=facing<0?-1:0;
@@ -142,7 +142,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   if(style.hem===2){r(8,29,1,3,style.accent);r(15,29,1,3,style.accent);}
   drawWardrobe(r,style,'down');drawPhysicalDetails(r,style);
   // 16도트 머리와 10도트 얼굴: 둥근 턱이 짧은 목과 어깨에 바로 이어진다.
-  ctx.save();ctx.translate(0,4);
+  ctx.save();ctx.translate(12,13);ctx.rotate(pose?.headTilt||0);ctx.translate(-12,-13);ctx.translate(0,4);
   // 뒤 머리 → 닫힌 얼굴 윤곽 → 얼굴 → 앞머리 → 표정 순서로 겹친다.
   r(9,1,6,1,outline);r(7,2,10,1,outline);r(5,3,14,2,outline);r(4,5,16,8,outline);r(5,13,14,2,outline);r(8,15,8,1,outline);
   r(8,3,8,1,hair);r(6,4,12,2,hair);r(5,6,14,7,hair);r(6,13,12,1,hair);

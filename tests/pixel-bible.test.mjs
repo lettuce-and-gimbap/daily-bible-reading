@@ -114,6 +114,7 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
  assert.equal(runningIntoObject({x:.3,y:0},[{kind:'bench',x:1,y:0}],actor)?.kind,'bench');
  assert.equal(COLLISION_STUN_SECONDS,3);assert.equal(impactPose(0).fall,true);assert.equal(impactPose(1).sit,true);assert.equal(impactPose(2.95).rising,true);
  assert.ok(impactSparkles(1).every(star=>star.y>=-76&&star.y<=-72));
+ assert.notEqual(impactPose(.4).headX,impactPose(.6).headX);assert.notEqual(impactPose(.4).headTilt,impactPose(.6).headTilt);
  assert.notEqual(swimPose(0).handY,swimPose(.4).handY);
 });
 
