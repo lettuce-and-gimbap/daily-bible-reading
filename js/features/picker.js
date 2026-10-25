@@ -64,15 +64,13 @@ async function renderVersePicker(body, target, idx) {
   const first = verses.filter((v) => verOf(v) === ver1);
   const second = ver2 ? verses.filter((v) => verOf(v) === ver2) : [];
   const third = ver3 ? verses.filter((v) => verOf(v) === ver3) : [];
-  const labels = [...new Set([...first, ...second, ...third].map((v) => labelSpan(v.label)[0]))].sort((a, b) => a - b);
-  const rows = labels.map((a) => {
-    const primary = first.find((v) => labelSpan(v.label)[0] === a);
-    const fallback = [...second, ...third].find((v) => labelSpan(v.label)[0] === a);
-    const v = primary || fallback;
-    const [, b] = labelSpan(v.label);
-    const also = [second, third].flatMap((list) => list.filter((w) => w !== v && labelSpan(w.label)[0] >= a && labelSpan(w.label)[0] <= b));
-    return { v, a, b, also, edition: v.ver || ver1 };
-  });
+  const lists = [first, ...(ver2 ? [second] : []), ...(ver3 ? [third] : [])];
+  const editions = [ver1, ...(ver2 ? [ver2] : []), ...(ver3 ? [ver3] : [])];
+  const rows = alignVerseRows(lists);
+  const multiple = lists.length > 1;
+  const renderCell = (entry, edition) => entry
+    ? `<span class="vp-edition"><i>${esc(vname(edition))}${labelSpan(entry.label)[1] > labelSpan(entry.label)[0] ? ` · ${esc(entry.label)}절` : ""}</i><span class="study-version" data-edition="${esc(edition)}">${ScriptureStudy.glossaryHtml(entry.text)}</span></span>`
+    : `<span class="vp-edition vp-empty" aria-label="${esc(vname(edition))} 이 절의 별도 본문 없음"></span>`;
 
   const count = () => root.querySelectorAll("input:checked").length;
   const refresh = () => {
@@ -84,10 +82,9 @@ async function renderVersePicker(body, target, idx) {
   root.insertAdjacentHTML("beforeend", `
     <div class="vp-list">${rows.map((r) => `
       <label class="vp-row">
-        <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${pickSel.has(r.a) ? "checked" : ""}>
-        <span class="vp-num">${esc(r.v.label)}</span>
-        <span class="vp-txt">${r.edition !== ver1 ? `<small>${esc(vname(r.edition))}</small>` : ""}<span class="study-version" data-edition="${esc(r.edition)}">${ScriptureStudy.glossaryHtml(r.v.text)}</span>${r.also.map((w) =>
-          `<small><i>${esc(vname(w.ver))}</i> <span class="study-version" data-edition="${esc(w.ver)}">${ScriptureStudy.glossaryHtml(w.text)}</span></small>`).join("")}</span>
+        <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${[...pickSel].some((n) => n >= r.a && n <= r.b) ? "checked" : ""}>
+        <span class="vp-num">${esc(r.label)}</span>
+        <span class="vp-txt">${multiple ? r.cells.map((entry, i) => renderCell(entry, editions[i])).join("") : `<span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.cells[0].text)}</span>`}</span>
       </label>`).join("")}</div>
     <div class="vp-bar">
       <span class="vp-n"></span>
@@ -95,7 +92,7 @@ async function renderVersePicker(body, target, idx) {
       <button class="btn primary small" data-act="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>`);
   root.querySelector(".vp-msg").remove();
-  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${ver3}:${r.v.label}`),{dock:target==="reading"});
+  ScriptureStudy.mount(root,rows.map(r=>`${idx0}:${ver1}:${ver2}:${ver3}:${r.label}`),{dock:target==="reading"});
   refresh();
 
   // 고른 절(번호 집합)을 보기 설정 역본마다 모아 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식으로
@@ -104,7 +101,7 @@ async function renderVersePicker(body, target, idx) {
     root.querySelectorAll("input:checked").forEach((c) => {
       for (let n = Number(c.dataset.a); n <= Number(c.dataset.b); n++) nums.add(n);
     });
-    const hit = (list) => list.filter((v) => { const [a, b] = labelSpan(v.label); for (let n = a; n <= b; n++) if (nums.has(n)) return true; return false; })
+    const hit = (list) => list.filter((v) => nums.has(labelSpan(v.label)[0]))
       .map((v) => `${v.label} ${v.text}`);
     const groups = [first, second, third].map(hit).filter((g) => g.length);
     return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;

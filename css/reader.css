@@ -300,6 +300,10 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .vp-txt { padding-right: 12px; font-weight: 400; font-size: calc(.92rem * var(--fz, 1)); line-height: 1.6; }
 .vp-txt small { display: block; margin-top: 4px; font-size: calc(.84rem * var(--fz, 1)); color: var(--muted); }
 .vp-txt small i { font-style: normal; font-weight: 700; margin-right: 4px; }
+.vp-edition { display: block; padding: 3px 0; }
+.vp-edition + .vp-edition { border-top: 1px solid var(--line); margin-top: 5px; }
+.vp-edition > i { display: block; font-style: normal; font-weight: 700; font-size: calc(.78rem * var(--fz, 1)); color: var(--muted); }
+.vp-edition.vp-empty { min-height: 1.5em; }
 .vp-bar { position: sticky; bottom: -14px; display: flex; align-items: center; gap: 6px; padding: 10px 0 14px; margin-top: 8px; background: var(--bg); }
 .vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }
 
