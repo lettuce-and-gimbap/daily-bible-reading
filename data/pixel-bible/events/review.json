@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1253,
+    "scenesInFiles": 1254,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,13 +28,13 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 539
+    "curatedSupplementalScenes": 540
   },
   "books": [
     {
       "code": "2ki",
       "chapters": 25,
-      "scenes": 71,
+      "scenes": 72,
       "sourceMatchedSceneCandidates": 65,
       "retainedLegacyScenes": 0,
       "curatedSupplementalScenes": 1
@@ -1060,7 +1060,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 6,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-object-only": 2,
         "source-confirmed-actor-only": 3,
@@ -28401,6 +28401,10 @@
       },
       {
         "book": "neh",
+        "scenesAdded": 1
+      },
+      {
+        "book": "2ki",
         "scenesAdded": 1
       },
       {

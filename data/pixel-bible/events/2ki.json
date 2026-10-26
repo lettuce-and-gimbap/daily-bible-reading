@@ -2046,6 +2046,31 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"idol","lead":"앗수르 왕","target":"포로 된 제사장","mode":"illustration","setting":"altar","effect":"idol","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"앗수르 왕"},{"action":"point","duration":1.2,"actor":"앗수르 왕"},{"action":"listen","duration":1.5,"actor":"앗수르 왕"},{"action":"lower","duration":1.8,"actor":"앗수르 왕"},{"action":"turn","duration":1.5,"actor":"앗수르 왕"},{"action":"stand","duration":1.2,"actor":"앗수르 왕"}],"duration":8.2,"support":null,"ref":"열왕기하 17:24-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-23-3",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "요시야의 개혁 뒤에도 심판 선언이 남다",
+      "actors": [
+        "하나님",
+        "유다 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 23:26-27",
+      "verseNumbers": [
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요시야의 개혁에도 유다를 향한 심판 선언은 거두어지지 않아요. 본문은 므낫세의 죄와 예루살렘에 임할 심판을 그 이유로 제시해요."
+      ],
+      "study": "요시야의 개혁에도 유다를 향한 심판 선언은 거두어지지 않아요. 본문은 므낫세의 죄와 예루살렘에 임할 심판을 그 이유로 제시해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":"유다 백성","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"열왕기하 23:26-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
