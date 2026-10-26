@@ -240,8 +240,9 @@
       "chapter": 9,
       "title": "노아의 허물",
       "actors": [
-        "노아",
-        "야벳"
+        "야벳",
+        "셈",
+        "노아"
       ],
       "object": "wine",
       "ref": "창세기 9:18-23",
@@ -261,7 +262,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"cover","lead":"노아","target":"야벳","mode":"reconstruction","setting":"chamber","effect":"cover","emotion":"gentle","prop":"wine","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"lower","duration":1.2,"actor":"노아"},{"action":"grasp","duration":1.5,"actor":"노아"},{"action":"extend","duration":1.8,"actor":"노아"},{"action":"cover","duration":1.5,"actor":"노아"},{"action":"turn","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"cover","lead":"야벳","target":"노아","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"gentle","prop":"wine","beats":[{"action":"grasp","actor":"야벳","duration":1},{"action":"lift","actor":"야벳","duration":1.2},{"action":"turn","actor":"야벳","duration":1.5},{"action":"step","actor":"야벳","duration":1.8},{"action":"cover","actor":"야벳","duration":1.5},{"action":"retreat","actor":"야벳","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 9:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-12-0",
@@ -5313,6 +5314,64 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"lament","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"},{"action":"kneel","duration":1.5,"actor":"아브라함"},{"action":"cover-mouth","duration":1.8,"actor":"아브라함"},{"action":"mourn","duration":1.5,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-23-1",
+      "code": "gen",
+      "chapter": 23,
+      "title": "사라를 애도하고 매장할 땅을 요청하다",
+      "actors": [
+        "아브라함",
+        "사라",
+        "헷 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 23:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사라를 잃은 아브라함이 애도한 뒤 헷 족속에게 값을 치르고 매장지를 얻고 싶다고 요청해요."
+      ],
+      "study": "사라를 잃은 아브라함이 애도한 뒤 헷 족속에게 값을 치르고 매장지를 얻고 싶다고 요청해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"kneel","duration":1.2,"actor":"아브라함"},{"action":"lift","duration":1.5,"actor":"아브라함"},{"action":"pray","duration":1.8,"actor":"아브라함"},{"action":"pray","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-39-0",
+      "code": "gen",
+      "chapter": 39,
+      "title": "감옥에서도 요셉에게 일을 맡기다",
+      "actors": [
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 39:21-23",
+      "verseNumbers": [
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 감옥에서도 하나님이 요셉과 함께하시고, 간수장은 죄수들과 여러 일을 요셉에게 맡겨요."
+      ],
+      "study": "감옥에서도 하나님이 요셉과 함께하시고, 간수장은 죄수들과 여러 일을 요셉에게 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"steward","lead":"요셉","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"read","duration":1.2,"actor":"요셉"},{"action":"inspect","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"write","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 39:21-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

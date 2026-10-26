@@ -821,6 +821,44 @@
     }
   },
   "gen": {
+    "8": {
+      "mode": "reconstruction",
+      "lead": "야벳",
+      "target": "노아",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "grasp",
+          "actor": "야벳",
+          "duration": 1
+        },
+        {
+          "action": "lift",
+          "actor": "야벳",
+          "duration": 1.2
+        },
+        {
+          "action": "turn",
+          "actor": "야벳",
+          "duration": 1.5
+        },
+        {
+          "action": "step",
+          "actor": "야벳",
+          "duration": 1.8
+        },
+        {
+          "action": "cover",
+          "actor": "야벳",
+          "duration": 1.5
+        },
+        {
+          "action": "retreat",
+          "actor": "야벳",
+          "duration": 1.2
+        }
+      ]
+    },
     "75": {
       "mode": "illustration"
     },
@@ -1514,9 +1552,6 @@
     "135": {
       "mode": "illustration"
     },
-    "161": {
-      "mode": "reconstruction"
-    },
     "143": {
       "mode": "symbolic",
       "lead": "야곱",
@@ -1711,6 +1746,15 @@
           "duration": 1.2
         }
       ]
+    },
+    "161": {
+      "mode": "reconstruction"
+    },
+    "162": {
+      "mode": "reconstruction"
+    },
+    "163": {
+      "mode": "reconstruction"
     }
   },
   "exo": {
