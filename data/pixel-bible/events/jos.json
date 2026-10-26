@@ -63,6 +63,7 @@
       "title": "열두 돌",
       "actors": [
         "여호수아",
+        "열두 사람",
         "제사장들"
       ],
       "object": "stone",
@@ -87,7 +88,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"carry","lead":"여호수아","target":"제사장들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"stone","beats":[{"action":"grasp","duration":1,"actor":"여호수아"},{"action":"lift","duration":1.2,"actor":"여호수아"},{"action":"brace","duration":1.5,"actor":"여호수아"},{"action":"carry","duration":1.8,"actor":"여호수아"},{"action":"walk","duration":1.5,"actor":"여호수아"},{"action":"lower","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 4:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"carry","lead":"열두 사람","target":"여호수아","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"stone","beats":[{"action":"grasp","duration":1,"actor":"열두 사람"},{"action":"lift","duration":1.2,"actor":"열두 사람"},{"action":"brace","duration":1.5,"actor":"열두 사람"},{"action":"carry","duration":1.8,"actor":"열두 사람"},{"action":"walk","duration":1.5,"actor":"열두 사람"},{"action":"lower","duration":1.2,"actor":"열두 사람"}],"duration":8.2,"support":null,"ref":"여호수아 4:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jos-4-2",
