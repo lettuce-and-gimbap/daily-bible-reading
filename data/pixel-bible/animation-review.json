@@ -32,15 +32,16 @@
     },
     {
       "code": "lev",
-      "payloadSha256": "4374797128bc6da0c104929260c4069120b3e69edd9b0d9dfaedc9b4aebd23ed",
-      "scenes": 10,
-      "existing": 10,
+      "payloadSha256": "b034e2cfdee98eca426d1ac7e9aad496d16ee275e45b2b48087235d56b3ad835",
+      "scenes": 14,
+      "existing": 14,
       "restored": 0,
       "corrected": 1,
-      "planned": 10,
+      "planned": 14,
       "modes": {
         "instruction": 4,
-        "reconstruction": 6
+        "reconstruction": 6,
+        "illustration": 4
       },
       "status": "authored-awaiting-browser-review"
     },
