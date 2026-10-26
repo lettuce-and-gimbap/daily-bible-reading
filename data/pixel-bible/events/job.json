@@ -5209,6 +5209,77 @@
         "ref": "욥기 22:26-30",
         "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
       }
+    },
+    {
+      "id": "ot-job-review-02-08",
+      "code": "job",
+      "chapter": 2,
+      "title": "악창과 아내의 말 · 이어지는 말씀",
+      "actors": [
+        "욥"
+      ],
+      "object": "scroll",
+      "ref": "욥기 2:8-10",
+      "verseNumbers": [
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 온몸에 종기가 난 욥이 잿더미에 앉아 그릇 조각으로 몸을 긁어요. 아내가 하나님을 욕하고 죽으라 해도 욥은 입으로 죄짓지 않아요."
+      ],
+      "study": "온몸에 종기가 난 욥이 잿더미에 앉아 그릇 조각으로 몸을 긁어요. 아내가 하나님을 욕하고 죽으라 해도 욥은 입으로 죄짓지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 사건과 인물을 설명하는 장면이에요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 2:8-10",
+        "source": "장별 요약 사건 단락 기반 연출 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
