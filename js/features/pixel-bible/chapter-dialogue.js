@@ -1,6 +1,7 @@
 import { chapterPeople } from './chapter-people.js';
 import { resolveIdentity } from './identity.js';
 import { MAJOR_DIALOGUE } from './major-dialogue.js';
+import { PAIR_DIALOGUE } from './pair-dialogue.js';
 
 export { MAJOR_DIALOGUE };
 export function matchesMajor(entry,name,code,role='',chapter=0) {
@@ -21,6 +22,15 @@ export function buildChapterDialogue(chapters) {
    if(!from||!to)continue;
    relations.push({from,to,text:r.note||`${r.from} → ${r.to}: ${r.label||'본문에서 관련된 인물'}.`,ref:`${c.name||c.code} ${c.chap}${r.verses?':'+r.verses:''}`});
   }
+ }
+ // A scripted, source-linked exchange itself establishes a valid interaction
+ // edge when the chapter's general relationship index omits the pair.
+ for(const entry of PAIR_DIALOGUE){
+  const [code,chapter]=entry.chapter.split('.');
+  const from=people.find(p=>p.code===code&&p.chap===Number(chapter)&&p.name===entry.speaker);
+  const to=people.find(p=>p.code===code&&p.chap===Number(chapter)&&p.name===entry.target);
+  if(!from||!to||relations.some(r=>r.from===from&&r.to===to||r.from===to&&r.to===from))continue;
+  relations.push({from,to,text:entry.detail||`${entry.speaker}와 ${entry.target}의 본문 대화.`,ref:entry.ref,scriptedPair:true});
  }
  return {people,relations};
 }

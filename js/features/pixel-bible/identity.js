@@ -44,5 +44,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='2ki'&&name==='살룸'&&Number(chapter)===22)return id('person','shallum-huldah-husband','verse-reviewed');
   if(code==='2ki'&&name==='요하난'&&Number(chapter)===25)return id('person','johanan-kareah','verse-reviewed');
   if(knownPeople.has(name))return id('person',name,'profile-reviewed');
-  return id('unresolved',`${name}:${code}`,'needs-review');
+  // A role change across books does not create a second visual person. Names
+  // with known ambiguity are split explicitly above; keep fallback identities
+  // stable so repeated appearances merge in the world cast.
+  return id('unresolved',name,'needs-review');
 }

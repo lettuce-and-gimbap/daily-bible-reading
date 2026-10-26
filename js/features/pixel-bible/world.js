@@ -14,6 +14,7 @@ import '../../shared/daylight.js';
 import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
+import {speechContext} from './speech-context.js';
 import {captureBubblePlacement,pinnedBubblePlacement} from './bubble-position.js';
 import {creatureCanUse} from './creatures.js';
 import {EncounterDirector} from './encounters.js';
@@ -35,7 +36,7 @@ import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObject
 import { characterWalkFrame } from './character-motion.js';
 import { loveBoothExchange } from './relationship-lines.js';
 import { personalLines } from './personal-lines.js';
-import { characterMotion, motionPose, hangingPose } from './motion.js';
+import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
@@ -114,9 +115,11 @@ export function buildWorldModel(chapters) {
       if (/^(하나님|여호와|성령|주님)$/.test(person.name)) continue;
       const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
       const personKey=`${person.name}:${identity.id}`;
-      if (!people.has(personKey)) people.set(personKey, { ...person, identity, refs: [] });
+      if (!people.has(personKey)) people.set(personKey, { ...person, identity, refs: [], roles: [] });
       const p = people.get(personKey);
-      p.refs.push(reference); p.weight = Math.max(p.weight || 1, person.weight || 1);
+      p.refs.push(reference);
+      if(person.role&&!p.roles.includes(person.role))p.roles.push(person.role);
+      p.weight = Math.max(p.weight || 1, person.weight || 1);
     }
     for (const r of data.rels || []) relations.push({ ...r, sourceRef: reference, ref: `${name} ${chap}:${r.verses || ""}` });
     for (const e of data.events || []) events.push({ ...e, ref: `${name} ${chap}:${e.verses || ""}` });
@@ -178,7 +181,7 @@ export async function mountPixelWorld(shell, options) {
   const objectChoice=(id,name)=>`<button class="pb-button pb-object-choice" data-place="${esc(id)}" aria-pressed="false" aria-label="${esc(name)} 배치. 한 번 터치, 1초 누르면 설명"><span class="pb-object-art"><canvas width="80" height="72" data-object-icon="${esc(id)}" aria-hidden="true"></canvas><svg class="pb-object-progress" viewBox="0 0 80 72" aria-hidden="true"><path d="M2 2H78V70H2Z"/></svg></span><span class="pb-object-choice-name">${esc(name)}</span></button>`;
   const chapterObjectButtons=chapterProps.map(item=>objectChoice(item.id,item.name)).join('');
   const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
-  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><b class="pb-speech-speaker"></b><p></p></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
+  shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><b class="pb-speech-speaker"></b><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><button class="pb-button" data-action="collection">발견 도감 · 알아가기</button><p class="pb-help">인물을 누르면 도감에 기록돼요. 은은한 발밑 빛은 현재 분량의 주요 인물이에요.</p><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
@@ -284,6 +287,7 @@ export async function mountPixelWorld(shell, options) {
       if(current){
         speechElement.querySelector('.pb-speech-speaker').textContent=displayPersonName(current.speaker.name);
         speechElement.querySelector('p').textContent=current.text;
+        speechElement.querySelector('[data-action="speech-details"]').hidden=!speechContext(current,chapterData)&&!parseReference(current.ref)?.verses?.length;
         speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
       }
     }
@@ -299,6 +303,18 @@ export async function mountPixelWorld(shell, options) {
     try{if(!options.readPassage)throw new Error('passage-unavailable');const html=await options.readPassage(parsed);if(!panel.isConnected)return;panel.querySelector('.pb-scripture-body').innerHTML=html;emphasizePassage(panel.querySelector('.pb-scripture-body'),terms);}
     catch(_){if(panel.isConnected)panel.querySelector('.pb-scripture-body').textContent='본문을 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 눌러 주세요.';}
   }
+  function openSpeechDetails(choice=shownSpeech){
+    if(!choice)return;
+    const reference=choice.ref,parsed=parseReference(reference);
+    const explanation=speechContext(choice,chapterData);if(!explanation&&!parsed?.verses?.length)return;
+    hideSpeech();shell.querySelector('.pb-scripture')?.remove();
+    const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사 쉽게 이해하기');
+    panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
+    panel.querySelector('.pb-detail-line').textContent=choice.text;panel.querySelector('.pb-detail-context').hidden=!explanation;
+    if(explanation)panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
+    shell.append(panel);panel.querySelector('button').focus();
+  }
   function updateEncounters(now){
     const enabled=!loveBoothSession&&!paused&&!activeEvent&&!pendingEvent&&!shell.querySelector('.pb-design,.pb-scripture')&&!document.hidden;
     const excluded=[drag?.active?drag.n:null,...npcs.filter(n=>n.loveBooth)];
@@ -313,15 +329,17 @@ export async function mountPixelWorld(shell, options) {
       const line={...base,...part};let el=encounterBubbles.get(id);
       if(!el){
         el=document.createElement('div');el.className=`pb-speech pb-encounter ${line.origin==='general'?'pb-encounter-general':'pb-encounter-related'}${line.origin==='booth'?' pb-encounter-booth':''}`;el.setAttribute('role','status');el.setAttribute('aria-live','polite');
-        el.innerHTML='<b class="pb-speech-speaker"></b><p></p>';
+        el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button>';
         el.dataset.encounter=id;
         el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);
         el.querySelector('p').textContent=line.text;
+        el.querySelector('[data-action="encounter-details"]').hidden=!speechContext(line,chapterData)&&!parseReference(line.ref)?.verses?.length;
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
         el._line=line;
       }
       el._line=line;el.classList.toggle('pb-encounter-related',line.origin!=='general');el.classList.toggle('pb-encounter-general',line.origin==='general');el.classList.toggle('pb-encounter-booth',line.origin==='booth');
       el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);el.querySelector('p').textContent=line.text;
+      const detail=el.querySelector('[data-action="encounter-details"]');detail.hidden=!speechContext(line,chapterData)&&!parseReference(line.ref)?.verses?.length;
     }
   }
   function positionEncounters(){
@@ -975,6 +993,9 @@ export async function mountPixelWorld(shell, options) {
     if(b.dataset.story!==undefined){const key=b.dataset.discoveryOwner,record=discoveries[key],story=record?.stories[Number(b.dataset.story)];if(story){discoveries[key]=markStoryRead(record,story);saveDiscoveries();await openSpeechPassage(story.ref,contextTerms({text:story.text}));shell.querySelector('.pb-scripture header')?.insertAdjacentHTML('afterbegin',`<button class="pb-button" data-discovery="${esc(key)}">도감으로</button>`);}return;}
     if(action==='collection'){openCollection();return;}
     if(action==='person-collection'){const person=npcs[selected];if(person){discover(person);openCollection(discoveryKey(person));}return;}
+    if(action==='encounter-details'){openSpeechDetails(b.closest('[data-encounter]')?._line);return;}
+    if(action==='speech-details'){openSpeechDetails();return;}
+    if(action==='detail-passage'){await openSpeechPassage(b.dataset.reference,b.dataset.terms?JSON.parse(b.dataset.terms):contextTerms(shownSpeech));return;}
     if(action==='close-scripture'){shell.querySelector('.pb-scripture')?.remove();canvas.focus();return;}
     if(action==="design" && !shell.querySelector(".pb-design")) {
       const board=document.createElement("section");board.className="pb-design";board.setAttribute("aria-label","픽셀 캐릭터와 지형 디자인 도안");
@@ -1280,11 +1301,11 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
 
 function drawLifted(c,drag,time,reduced=false) {
   const origin=grabbedOrigin(drag),x=origin.x*TILE,y=origin.y*TILE;
-  const lift=hangingPose(drag.n.motion,time,drag.vx,reduced),sway=reduced?0:Math.round(Math.sin(time*5+lift.phase)*2);
+  const pose=liftedCharacterFrame(drag.n.motion,time,drag.vx,reduced),sway=reduced?0:Math.round(Math.sin(time*5+(drag.n.motion.phase||0))*2);
   c.fillStyle='#18352b55';c.fillRect(x-19,y+8,38,8);
   // Keep the original pixel sprite rigid: swinging changes placement, never
   // rotates/interpolates the face and body pixels themselves.
   c.save();c.translate(sway,0);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,direction:'down',walkFrame:0,motionOnly:!drag.n.creature,baseExpression:'neutral',selected:true});
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,...pose,baseExpression:'neutral',selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px "DungGeunMo", monospace';c.textAlign='center';c.fillText(displayPersonName(drag.n.name),x,y+28);
 }

@@ -5,6 +5,9 @@ import {majorFor,occurrenceMatches} from './chapter-dialogue.js';
 import {SOLO_DIALOGUE} from './solo-dialogue.js';
 import {characterStyle} from './art.js';
 import {parseReference} from './references.js';
+// Ambient role-wide filler stays archived in role-monologues.js; authored
+// character and situation-specific speech remains enabled by default.
+export const ENABLE_GENERIC_ROLE_MONOLOGUES=false;
 // 본문 밖의 추상적인 공통 교훈을 덧붙이지 않고 현재 장의 역할·관계를 사용한다.
 export function firstPersonMonologue(name,text){
  let line=String(text||'').trim();if(!line)return line;
@@ -54,7 +57,7 @@ export function personalLines(n,chapters,context){
  // 현재 장의 실제 역할과 관계를 독백 옆 참고 구절로 연결한다.
  const relation=context.relations.find(r=>occurrenceMatches(n,r.from)||occurrenceMatches(n,r.to));
  // 열왕기하 사건 인물은 인물별 기록이 없으면 직업군 공통 독백을 붙이지 않는다.
- if(!lines.length&&!includesTwoKings)for(const line of roleMonologues(n,occurrences,relation))add(line.text,line.ref,line.origin,line.emotion);
+ if(ENABLE_GENERIC_ROLE_MONOLOGUES&&!lines.length&&!includesTwoKings)for(const line of roleMonologues(n,occurrences,relation))add(line.text,line.ref,line.origin,line.emotion);
  const authoredLines=lines.filter(line=>line.origin==='authored');
  // 여러 장을 읽는 범위에서는 뒤쪽 사건의 인물별 발화도 후보에 남긴다.
  return (authoredLines.length?authoredLines:lines).map((line,i)=>({...line,text:firstPersonMonologue(n.name,line.text),detailText:line.detailText|| (line.origin==='authored'?'':[relation?.text,...occurrences.map(p=>p.role)].filter(Boolean).join(' ')),id:`personal:${n.identity?.id||n.name}:${line.ref||ref}:${i}`,speaker:n,kind:'solo'}));

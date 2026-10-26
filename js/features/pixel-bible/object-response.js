@@ -51,7 +51,9 @@ export function objectInteractionFrame(o,npcs,time,reduced=false){
  return {...base,kind:o.kind,liquidColor:pose.actual==='water-wine'&&use?'#965e83':null,active:true,time,reduced,phase:pose.phase,gesture:pose.gesture,actual:pose.actual,pose,actor:n,direction,
   dx:portable&&use?direction*3:0,dy:portable&&use?-3:pose.prop==='boat'?beat:0,
   squash:['bench','bed'].includes(pose.prop)&&use?.035:0,
-  tilt:pose.prop==='tree'&&['shake','kick','bonk'].includes(pose.gesture)&&use?beat*.045:pose.gesture==='pour'&&use&&portable?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use&&OBJECT_CATALOG[o.kind]?.family==='cloth'?beat*.08:portable?beat*.045:0,
+  // Tree sway is drawn in the canopy while its trunk stays rooted. Rotating the
+  // entire sprite around the tile origin makes it look as if it is floating.
+  tilt:pose.prop==='tree'?0:pose.gesture==='pour'&&use&&portable?direction*.32:pose.prop==='animal'?beat*.025:['shake-cloth','spread'].includes(pose.gesture)&&use&&OBJECT_CATALOG[o.kind]?.family==='cloth'?beat*.08:portable?beat*.045:0,
   open:['read','unroll','spread','mend','fold'].includes(pose.gesture)&&use?.22:0,
   clothWave:OBJECT_CATALOG[o.kind]?.family==='cloth'&&['spread','shake-cloth','fold','smooth'].includes(pose.gesture)&&use?Math.floor(pose.within*4)+1:0,
   lid:pose.prop==='chest'&&pose.gesture==='open'&&use?1:0,beat,use};

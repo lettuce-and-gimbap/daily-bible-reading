@@ -9,12 +9,18 @@
   "books": {
     "gen": {
       "chaptersScanned": 50,
-      "pairedEntriesReviewed": 20,
-      "newTwoWayEntries": 16,
+      "pairedEntriesReviewed": 37,
+      "newTwoWayEntries": 33,
       "status": "in-progress",
-      "authoredUtteranceGroupsReviewed": 8,
-      "utteranceReferencesCorrected": 17,
-      "statusNote": "자동 인사 제거와 창세기 핵심 독백 8묶음의 문장별 구절 범위를 점검했다. 인물별 3~5개 해설 정합성 및 나머지 사건·관계 검토가 남아 있어 권 완료로 계산하지 않는다."
+      "authoredUtteranceGroupsReviewed": 51,
+      "utteranceReferencesCorrected": 103,
+      "eventVerseSpanAudit": {
+        "versesExpected": 1533,
+        "versesCovered": 1533,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "창세기 50장 인물·관계 색인과 대사 묶음 51개를 검토했다. 양방향 특수 대화 37개를 확인하고 이 구간에서 5개를 보강했다. 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음과 항변을 짝 대화로 기록했다. 독백 103개 발화에 개별 절 참조를 연결했으며, 창세기 13장의 아브람·롯 화자를 분리하고 4·7·8·9·17·27·28·37·40·42장의 인물·절 범위를 바로잡았다. 사건 범위의 1,533절 대조는 누락·중복 없이 통과했다. 이 수치는 장면 범위 대조이며 대사 전수 완료를 뜻하지 않는다. 나머지 인물 관계와 장면별 특수 대사의 절 단위 검토가 남아 권 완료로 계산하지 않는다."
     }
   }
 }

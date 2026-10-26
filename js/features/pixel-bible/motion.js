@@ -33,3 +33,8 @@ export function hangingPose(profile,time=0,velocity=0,reduced=false){
   pose:{dangling:true,bodyX:0,bodyY:0,leftLeg:profile.limp?1:left,rightLeg:profile.limp?0:right,leftArm:(lively?[0,-2,-4,-1,1,-2]:[1,0,-1,1,2,0])[beat],rightArm:(lively?[-3,0,1,-2,-4,0]:[0,1,2,0,-1,1])[beat]},
   expression:lively&&beat%3===0?'surprised':'worried'};
 }
+// Keep the character's source sprite and outfit while animating discrete limbs.
+export function liftedCharacterFrame(profile,time=0,velocity=0,reduced=false){
+ const hanging=hangingPose(profile,time,velocity,reduced);
+ return {direction:hanging.direction,interaction:hanging.pose,expression:hanging.expression,walkFrame:reduced?0:Math.floor(time*profile.frequency+profile.phase)%4,motionOnly:false};
+}

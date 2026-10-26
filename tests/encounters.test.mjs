@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
-import {hangingPose} from '../js/features/pixel-bible/motion.js';
+import {hangingPose,liftedCharacterFrame} from '../js/features/pixel-bible/motion.js';
 import {relationshipLines,loveBoothExchange} from '../js/features/pixel-bible/relationship-lines.js';
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 
@@ -107,7 +107,7 @@ test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 
 test('창세기 관계 대화는 같은 장의 인물 색인과 사건 범위를 근거로 주고받는다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/gen.json'));
  const genesis=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('gen.'));
- assert.equal(genesis.length,20);
+ assert.equal(genesis.length,37);
  for(const entry of genesis){
   const chapter=entry.chapter.split('.')[1],people=summary.chapters[chapter].people.map(person=>person.name);
   assert(people.includes(entry.speaker),`${entry.id} speaker is indexed in Genesis ${chapter}`);
@@ -115,6 +115,36 @@ test('창세기 관계 대화는 같은 장의 인물 색인과 사건 범위를
   assert.equal(entry.lines.length,2);assert.equal(entry.replyLines?.length||2,2);
   assert([...entry.lines,...(entry.replyLines||[])].every(line=>line.length<=100),`${entry.id} fits a speech bubble`);
   assert.match(entry.ref,new RegExp(`창세기 ${chapter}:`));
+ }
+});
+
+test('본문 관계선이 빠져도 창세기 24장의 기록된 종·리브가 대화는 상호작용 경로를 갖는다',()=>{
+ const context=buildChapterDialogue([{code:'gen',name:'창세기',chap:24,data:{people:[{name:'아브라함의 종',role:'물을 청한 나그네'},{name:'리브가',role:'물을 길어 준 사람'}],rels:[]}}]);
+ const a=context.people.find(p=>p.name==='아브라함의 종'),b=context.people.find(p=>p.name==='리브가');
+ const relation=context.relations.find(r=>r.from===a&&r.to===b||r.from===b&&r.to===a);assert.ok(relation);
+ const exchange=relationshipLines(a,b,relation,null,{random:()=>0});assert.equal(exchange.length,2);
+ assert.match(exchange[0].text,/물/);assert.match(exchange[1].text,/낙타/);
+});
+
+test('창세기 무덤 협상·브엘세바 언약·베냐민 보증 대사는 양쪽이 사건에 응답한다',()=>{
+ const check=(chapter,from,to,verses,patterns)=>{
+  const context=buildChapterDialogue([{code:'gen',name:'창세기',chap:chapter,data:{people:[{name:from,role:'사건 인물'},{name:to,role:'사건 인물'}],rels:[{from,to,label:'사건 대화',verses,note:'본문에서 협상하거나 약속을 나눈 두 사람.'}]}}]);
+  const a=context.people.find(p=>p.name===from),b=context.people.find(p=>p.name===to),relation=context.relations[0];
+  const lines=relationshipLines(a,b,relation,null,{random:()=>0});assert.equal(lines.length,2,`${chapter}장 양방향 대화`);
+  assert.match(lines[0].text,patterns[0]);assert.match(lines[1].text,patterns[1]);
+ };
+ check(23,'에브론','아브라함','14-16',[/사라를|밭/ ,/굴|400|사라/]);
+ check(26,'아비멜렉','이삭','26-31',[/하나님|여호와|맹세/ ,/왜|해치지|평안/]);
+ check(43,'유다','야곱','8-14',[/아이|베냐민/ ,/아들|하나님|불쌍/]);
+});
+
+test('창세기 34장 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음과 항변이 짝 대화로 이어진다',()=>{
+ for(const son of ['시므온','레위']){
+  const entry=PAIR_DIALOGUE.find(item=>item.chapter==='gen.34'&&item.speaker==='야곱'&&item.target===son);
+  assert.ok(entry,`${son} 대화가 있음`);
+  assert.match(entry.ref,/34:30–31/);
+  assert.match(entry.lines[0],/위험/);
+  assert.match(entry.replyLines[0],/우리 누이/);
  }
 });
 
@@ -142,6 +172,14 @@ test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움�
  assert.equal(hangingPose(base,3,0,true).angle,0);
  assert.notDeepEqual(hangingPose({...base,key:'steady'},0).pose,poses[0].pose);
 });
+test('인물을 집어 들고 움직일 때 디스크리트 팔다리 포즈와 걷기 프레임이 이어진다',()=>{
+ const profile={key:'lively',frequency:7,phase:.5,swing:.17,limp:false};
+ const frames=Array.from({length:8},(_,i)=>liftedCharacterFrame(profile,i/7,2));
+ assert.ok(frames.every(f=>f.motionOnly===false&&f.direction==='down'&&f.interaction.dangling));
+ assert.ok(new Set(frames.map(f=>f.walkFrame)).size>1);
+ assert.ok(new Set(frames.map(f=>JSON.stringify([f.interaction.leftArm,f.interaction.rightArm,f.interaction.leftLeg,f.interaction.rightLeg]))).size>1);
+ assert.equal(liftedCharacterFrame(profile,2,4,true).walkFrame,0);
+});
 test('본문 근거가 없는 인물 간 자동 인사는 만들지 않는다',()=>{
  const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
  const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0});
@@ -161,8 +199,10 @@ test('기록된 인물 간 상호대사는 확률 제한 없이 실제 조우 �
  assert.equal(lines.length,1);assert.notEqual(lines[0].origin,'general');
  assert.equal(director.active.length,1);
 });
-test('일반·상호작용 말풍선에는 구절 줄이나 자세히 보기 버튼을 표시하지 않는다',()=>{
+test('말풍선에는 구절 줄을 빼고 자세히 보기에는 해설과 관련 구절을 둔다',()=>{
  const source=fs.readFileSync('js/features/pixel-bible/world.js','utf8');
  assert.doesNotMatch(source,/data-action="passage"/);
- assert.doesNotMatch(source,/speech-details|encounter-details|detail-passage/);
+ assert.match(source,/data-action="detail-passage"/);
+ assert.match(source,/data-action="speech-details">자세히 보기/);
+ assert.match(source,/data-action="encounter-details">자세히 보기/);
 });

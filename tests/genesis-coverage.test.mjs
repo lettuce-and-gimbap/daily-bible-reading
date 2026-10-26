@@ -1,0 +1,27 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+
+test('창세기 사건 범위는 기준 1,533절을 누락·중복 없이 덮는다',()=>{
+ const data=JSON.parse(readFileSync('data/summary/gen.json','utf8'));
+ const verseCounts=[31,25,24,26,32,22,24,22,29,32,32,20,18,24,21,16,27,33,38,18,34,24,20,67,34,35,46,22,35,43,55,32,20,31,29,43,36,30,23,23,57,38,34,34,28,34,31,22,33,26];
+ assert.equal(Object.keys(data.chapters).length,50);
+ assert.equal(verseCounts.reduce((sum,count)=>sum+count,0),1533);
+ let covered=0;const missing=[],duplicates=[];
+ verseCounts.forEach((count,index)=>{
+  const chapter=index+1,seen=new Uint8Array(count+1);
+  for(const event of data.chapters[String(chapter)].events||[]){
+   const numbers=event.verses.match(/\d+/g)?.map(Number)||[];
+   const from=numbers[0],to=numbers[1]||from;
+   for(let verse=from;verse<=to;verse++)if(verse>0&&verse<=count)seen[verse]++;
+  }
+  for(let verse=1;verse<=count;verse++){
+   if(!seen[verse])missing.push(`${chapter}:${verse}`);
+   else covered++;
+   if(seen[verse]>1)duplicates.push(`${chapter}:${verse}`);
+  }
+ });
+ assert.deepEqual(missing,[]);
+ assert.deepEqual(duplicates,[]);
+ assert.equal(covered,1533);
+});

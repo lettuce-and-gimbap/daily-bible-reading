@@ -357,6 +357,15 @@ test('같은 이름의 다른 신원을 한 월드 인물로 합치지 않는다
  assert.equal(model.cast.length,2);assert.notEqual(model.cast[0].identity.id,model.cast[1].identity.id);
 });
 
+test('역할명이 달라도 미확정 인물 이름은 월드에서 한 명으로 합치고 등장 장을 모은다',()=>{
+ const model=buildWorldModel([
+  {code:'gen',name:'창세기',chap:12,data:{people:[{name:'엘리아십',role:'제사장'}]}},
+  {code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'엘리아십',role:'성벽을 재건하는 사람'}]}}
+ ]);
+ const same=model.cast.filter(p=>p.name==='엘리아십');
+ assert.equal(same.length,1);assert.deepEqual(same[0].refs,['창세기 12장','느헤미야 3장']);assert.deepEqual(same[0].roles,['제사장','성벽을 재건하는 사람']);
+});
+
 test('배경 20종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
  const {BACKGROUNDS,backgroundFor}=await import('../js/features/pixel-bible/backgrounds.js');
  assert.equal(Object.keys(BACKGROUNDS).length,20);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
@@ -378,7 +387,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,77);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,94);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
@@ -434,7 +443,7 @@ test('다른 본문의 인물과 관계도 현재 장에 맞는 창작 대사와
  const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
  const chapters=[{code:'neh',name:'느헤미야',chap:3,data:{people:[{name:'하눈',role:'성문을 수리한 사람'},{name:'살룬',role:'문과 성벽을 수리한 사람'}],rels:[{from:'하눈',to:'살룬',label:'함께 재건',verses:'13-15',note:'두 사람이 각자 맡은 문과 성벽을 수리했어요.'}]}}];
  const npcs=[{name:'하눈',x:10,y:8,path:[]},{name:'살룬',x:11,y:9,path:[]}],context=buildChapterDialogue(chapters),lines=dialogueCandidates(npcs,chapters,context);
- assert.ok(lines.some(c=>c.origin==='chapter-role'&&c.ref.startsWith('느헤미야 3')));
+ assert.ok(!lines.some(c=>c.origin==='chapter-role'),'장·상황 근거가 없는 직업군 공통 독백은 자동 재생하지 않는다');
  assert.equal(lines.filter(c=>c.origin==='chapter-relation').length,2);
  assert.ok(!lines.some(c=>c.kind==='ordinary'));
  npcs[1].x=30;assert.ok(!dialogueCandidates(npcs,chapters,context).some(c=>c.target));
@@ -642,6 +651,9 @@ test('오브젝트 크기와 반응은 인물 동작에 맞추고 접근 표현�
  assert.equal(objectInteractionFrame(o,[],0).active,false);
  const still=[0,1,5].map(t=>objectInteractionFrame(o,[n],t,true));
  assert.equal(new Set(still.map(f=>f.phase)).size,1);
+ const tree={kind:'tree',x:9,y:9},treeActor={name:'나무꾼',x:8,y:9,usingObject:tree,interactionStart:0};treeActor.interaction=interactionRoutine(treeActor,'tree');
+ const treeFrames=[0,.25,.5,.75].map(t=>objectInteractionFrame(tree,[treeActor],t*treeActor.interaction.period));
+ assert.ok(treeFrames.every(f=>f.dy===0&&f.tilt===0),'나무의 뿌리 위치는 상호작용 중에도 고정');
  const calls=[];const c={save(){},restore(){},translate(){},rotate(){},scale(x,y){calls.push(['scale',x,y]);},fillRect(...args){calls.push(['rect',...args]);}};
  for(const kind of [...Object.keys(OBJECT_CATALOG),'well','oil','tree','field','bench']){
   const object={kind,x:8,y:9};const npc={name:'룻',x:7,y:9,usingObject:object,interactionStart:0};npc.interaction=interactionRoutine(npc,kind);
