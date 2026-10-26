@@ -2004,6 +2004,48 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"mourn","lead":"요시야","target":"바로 느고","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"},{"action":"kneel","duration":1.5,"actor":"요시야"},{"action":"cover-mouth","duration":1.8,"actor":"요시야"},{"action":"mourn","duration":1.5,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"}],"duration":8.2,"support":null,"ref":"열왕기하 23:29-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-17-1",
+      "code": "2ki",
+      "chapter": 17,
+      "title": "앗수르가 이주민을 옮기고 사마리아에 혼합 예배가 자리잡다",
+      "actors": [
+        "앗수르 왕",
+        "포로 된 제사장",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 17:24-41",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 앗수르 왕은 여러 민족을 사마리아에 옮겨 살게 하고, 사로잡혀 간 제사장 한 명을 돌려보내 여호와의 법을 가르치게 해요. 그러나 이주민들은 여호와와 자기들의 신들을 함께 섬겨요."
+      ],
+      "study": "앗수르 왕은 여러 민족을 사마리아에 옮겨 살게 하고, 사로잡혀 간 제사장 한 명을 돌려보내 여호와의 법을 가르치게 해요. 그러나 이주민들은 여호와와 자기들의 신들을 함께 섬겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"idol","lead":"앗수르 왕","target":"포로 된 제사장","mode":"illustration","setting":"altar","effect":"idol","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"앗수르 왕"},{"action":"point","duration":1.2,"actor":"앗수르 왕"},{"action":"listen","duration":1.5,"actor":"앗수르 왕"},{"action":"lower","duration":1.8,"actor":"앗수르 왕"},{"action":"turn","duration":1.5,"actor":"앗수르 왕"},{"action":"stand","duration":1.2,"actor":"앗수르 왕"}],"duration":8.2,"support":null,"ref":"열왕기하 17:24-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

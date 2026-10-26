@@ -160,16 +160,16 @@
     },
     {
       "code": "2ki",
-      "payloadSha256": "eadf9b17a3bc411e0188449cf99de8fea47fec24c842155eee4b2fd80917a6c6",
-      "scenes": 70,
-      "existing": 70,
+      "payloadSha256": "96e27777dfc83810726317f8d66501ebfbc7ef8eee4e29c3dae890933c4134b2",
+      "scenes": 71,
+      "existing": 71,
       "restored": 0,
       "corrected": 19,
-      "planned": 70,
+      "planned": 71,
       "modes": {
         "reconstruction": 66,
         "vision": 1,
-        "illustration": 3
+        "illustration": 4
       },
       "status": "authored-awaiting-browser-review"
     },
