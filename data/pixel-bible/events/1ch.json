@@ -2227,6 +2227,106 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"confess","lead":"다윗","target":"사탄","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"speak","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 21:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-18-1",
+      "code": "1ch",
+      "chapter": 18,
+      "title": "다윗의 공정한 통치와 왕실 직무자들",
+      "actors": [
+        "다윗",
+        "요압",
+        "여호사밧",
+        "브나야"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 18:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 온 이스라엘을 공평하고 의롭게 다스리고, 요압을 군대 지휘관으로 세워요. 여호사밧은 기록을 맡고, 사독과 아비멜렉은 제사장으로, 브나야는 왕의 경호대를 맡아요."
+      ],
+      "study": "다윗은 온 이스라엘을 공평하고 의롭게 다스리고, 요압을 군대 지휘관으로 세워요. 여호사밧은 기록을 맡고, 사독과 아비멜렉은 제사장으로, 브나야는 왕의 경호대를 맡아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"다윗","target":"요압","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 18:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-19-0",
+      "code": "1ch",
+      "chapter": 19,
+      "title": "아람 군대와의 재대결",
+      "actors": [
+        "다윗",
+        "요압",
+        "아비새",
+        "소박"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 19:16-19",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아람 군대가 다시 모여 하닷에셀의 지휘관 소박과 함께 강을 건너오자 다윗은 요압을 보냅니다. 요압은 적을 물리치고 소박을 포함한 지휘관들을 쓰러뜨려 아람 세력을 꺾어요."
+      ],
+      "study": "아람 군대가 다시 모여 하닷에셀의 지휘관 소박과 함께 강을 건너오자 다윗은 요압을 보냅니다. 요압은 적을 물리치고 소박을 포함한 지휘관들을 쓰러뜨려 아람 세력을 꺾어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":"요압","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 19:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-23-0",
+      "code": "1ch",
+      "chapter": 23,
+      "title": "레위 가문의 성전 봉사 직무",
+      "actors": [
+        "다윗",
+        "레위인들",
+        "게르손",
+        "고핫"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 23:7-23",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 레위 지파의 가문별 계보와 수를 정리해요. 게르손·고핫·므라리 자손의 이름과 계통을 확인해 성전 봉사를 맡을 공동체의 기반을 세워요."
+      ],
+      "study": "다윗이 레위 지파의 가문별 계보와 수를 정리해요. 게르손·고핫·므라리 자손의 이름과 계통을 확인해 성전 봉사를 맡을 공동체의 기반을 세워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"serve","lead":"다윗","target":"레위인들","mode":"reconstruction","setting":"altar","effect":"arrange","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"carry","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.8,"actor":"다윗"},{"action":"inspect","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 23:7-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
