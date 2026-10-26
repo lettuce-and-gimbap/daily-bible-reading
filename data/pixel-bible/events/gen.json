@@ -3698,6 +3698,190 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"birth","lead":"레아","target":"야곱","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"레아"},{"action":"listen","duration":1.2,"actor":"레아"},{"action":"cradle","duration":1.5,"actor":"레아"},{"action":"smile","duration":1.8,"actor":"레아"},{"action":"bless","duration":1.5,"actor":"레아"},{"action":"bow","duration":1.2,"actor":"레아"}],"duration":8.2,"support":null,"ref":"창세기 29:31-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-40-0",
+      "code": "gen",
+      "chapter": 40,
+      "title": "요셉이 관원장들의 근심을 묻고 꿈을 듣다",
+      "actors": [
+        "요셉",
+        "술 맡은 관원장",
+        "떡 굽는 관원장"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 40:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉은 감옥에서 두 관원장을 섬기다 근심하는 얼굴을 보고 이유를 물어요. 술 맡은 관원장의 꿈을 듣고 복직을 해석하며 자신을 기억해 달라고 부탁해요."
+      ],
+      "study": "요셉은 감옥에서 두 관원장을 섬기다 근심하는 얼굴을 보고 이유를 물어요. 술 맡은 관원장의 꿈을 듣고 복직을 해석하며 자신을 기억해 달라고 부탁해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"술 맡은 관원장","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 40:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-40-1",
+      "code": "gen",
+      "chapter": 40,
+      "title": "꿈의 해석이 이루어져도 요셉은 잊히다",
+      "actors": [
+        "바로",
+        "술 맡은 관원장",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 40:20-23",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바로의 생일에 술 맡은 관원장은 복직하고 떡 굽는 관원장은 처형돼요. 꿈의 해석은 이루어지지만 복직한 관원장은 요셉을 잊어요. 처형은 직접 묘사하지 않고 엇갈린 결과로 설명해요."
+      ],
+      "study": "바로의 생일에 술 맡은 관원장은 복직하고 떡 굽는 관원장은 처형돼요. 꿈의 해석은 이루어지지만 복직한 관원장은 요셉을 잊어요. 처형은 직접 묘사하지 않고 엇갈린 결과로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"바로","target":"술 맡은 관원장","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"바로"},{"action":"speak","duration":1.2,"actor":"바로"},{"action":"point","duration":1.5,"actor":"바로"},{"action":"listen","duration":1.8,"actor":"바로"},{"action":"lower","duration":1.5,"actor":"바로"},{"action":"bow","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"창세기 40:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-41-0",
+      "code": "gen",
+      "chapter": 41,
+      "title": "요셉이 풍년과 흉년을 해석하고 비축을 제안하다",
+      "actors": [
+        "요셉",
+        "바로"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 41:14-36",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉은 감옥에서 불려 나와 바로 앞에서 꿈의 해석은 하나님께 있다고 말해요. 7년 풍년과 7년 흉년을 설명하고 감독관을 세워 풍년 소출의 5분의 1을 거두어 저장하라고 제안해요."
+      ],
+      "study": "요셉은 감옥에서 불려 나와 바로 앞에서 꿈의 해석은 하나님께 있다고 말해요. 7년 풍년과 7년 흉년을 설명하고 감독관을 세워 풍년 소출의 5분의 1을 거두어 저장하라고 제안해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"바로","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 41:14-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-44-0",
+      "code": "gen",
+      "chapter": 44,
+      "title": "유다가 베냐민 대신 종으로 남겠다고 간청하다",
+      "actors": [
+        "유다",
+        "요셉",
+        "베냐민"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 44:18-34",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다는 아버지와 막내의 관계를 설명하며 베냐민 없이 돌아갈 수 없다고 호소해요. 아버지에게 한 보증을 지키기 위해 자신이 대신 종으로 남겠다고 요셉에게 간청해요."
+      ],
+      "study": "유다는 아버지와 막내의 관계를 설명하며 베냐민 없이 돌아갈 수 없다고 호소해요. 아버지에게 한 보증을 지키기 위해 자신이 대신 종으로 남겠다고 요셉에게 간청해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"유다","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"kneel","duration":1.2,"actor":"유다"},{"action":"lift","duration":1.5,"actor":"유다"},{"action":"pray","duration":1.8,"actor":"유다"},{"action":"pray","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 44:18-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-46-1",
+      "code": "gen",
+      "chapter": 46,
+      "title": "야곱이 브엘세바에서 약속을 듣고 애굽으로 떠나다",
+      "actors": [
+        "야곱",
+        "유다"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 46:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱은 브엘세바에서 제사를 드리고 밤의 환상 가운데 두려워하지 말라는 약속을 들어요. 아들들은 가족을 수레에 태우고 소유와 가축을 이끌어 함께 애굽으로 내려가요."
+      ],
+      "study": "야곱은 브엘세바에서 제사를 드리고 밤의 환상 가운데 두려워하지 말라는 약속을 들어요. 아들들은 가족을 수레에 태우고 소유와 가축을 이끌어 함께 애굽으로 내려가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"야곱","target":"유다","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

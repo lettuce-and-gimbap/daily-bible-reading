@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1378,
+    "scenesInFiles": 1383,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 664
+    "curatedSupplementalScenes": 669
   },
   "books": [
     {
@@ -42,10 +42,10 @@
     {
       "code": "gen",
       "chapters": 50,
-      "scenes": 117,
+      "scenes": 122,
       "sourceMatchedSceneCandidates": 75,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 42
+      "curatedSupplementalScenes": 47
     },
     {
       "code": "exo",
@@ -2210,7 +2210,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 3,
         "source-confirmed-actor-and-object": 1
@@ -2239,7 +2239,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-and-object": 3,
         "source-confirmed-actor-only": 1
@@ -2318,7 +2318,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-and-object": 2,
         "source-confirmed-actor-only": 1
@@ -2368,7 +2368,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-actor-only": 4
       },
@@ -28522,6 +28522,10 @@
       {
         "book": "gen",
         "scenesAdded": 7
+      },
+      {
+        "book": "gen",
+        "scenesAdded": 5
       }
     ]
   }
