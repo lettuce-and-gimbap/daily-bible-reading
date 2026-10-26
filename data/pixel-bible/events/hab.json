@@ -93,29 +93,26 @@
       "id": "ot-hab-extra-2-0",
       "code": "hab",
       "chapter": 2,
-      "title": "성루에서 답을 기다리다",
+      "title": "교만한 탐욕과 믿음의 삶",
       "actors": [
         "하박국",
         "교만한 자(갈대아)"
       ],
       "object": "scene-marker",
-      "ref": "하박국 2:1-5",
+      "ref": "하박국 2:4-5",
       "verseNumbers": [
-        1,
-        2,
-        3,
         4,
         5
       ],
       "actions": {},
       "lines": [
-        "해설: 하박국이 파수대에 서서 답을 기다리고, 환상을 판에 기록하라는 말씀과 의인은 믿음으로 살리라는 답을 받아요."
+        "해설: 교만한 자의 바르지 못한 마음과 믿음으로 사는 의인의 길이 대조돼요. 여러 나라를 끌어모아도 채워지지 않는 탐욕은 죽음에 비유돼요."
       ],
-      "study": "하박국이 파수대에 서서 답을 기다리고, 환상을 판에 기록하라는 말씀과 의인은 믿음으로 살리라는 답을 받아요.",
+      "study": "교만한 자의 바르지 못한 마음과 믿음으로 사는 의인의 길이 대조돼요. 여러 나라를 끌어모아도 채워지지 않는 탐욕은 죽음에 비유돼요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision-record","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"look","duration":1.2,"actor":"하박국"},{"action":"startle","duration":1.5,"actor":"하박국"},{"action":"read","duration":1.8,"actor":"하박국"},{"action":"write","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"read","duration":1.2,"actor":"하박국"},{"action":"look","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:4-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-hab-extra-2-1",
