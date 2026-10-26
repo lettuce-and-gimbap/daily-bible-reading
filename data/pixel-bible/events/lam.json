@@ -273,13 +273,13 @@
       "id": "ot-lam-extra-4-1",
       "code": "lam",
       "chapter": 4,
-      "title": "헛된 기대가 끝나고 심판을 직면하다",
+      "title": "무너진 시온과 사로잡힌 왕을 탄식하다",
       "actors": [
         "시온의 아들들",
         "에돔"
       ],
       "object": "scene-marker",
-      "ref": "예레미야애가 4:11-22",
+      "ref": "예레미야애가 4:11-20",
       "verseNumbers": [
         11,
         12,
@@ -290,19 +290,17 @@
         17,
         18,
         19,
-        20,
-        21,
-        22
+        20
       ],
       "actions": {},
       "lines": [
-        "해설: 시인은 성의 함락과 지도자들의 실패를 돌아보고, 주변 민족에게도 교만을 경계하라고 말해요."
+        "해설: 공동체는 성의 함락과 지도자들의 죄를 돌아보며 탄식해요. 기대했던 외부의 도움은 헛되고, 피난길마저 막힌 가운데 의지하던 왕도 붙잡혀요."
       ],
-      "study": "시인은 성의 함락과 지도자들의 실패를 돌아보고, 주변 민족에게도 교만을 경계하라고 말해요.",
+      "study": "공동체는 성의 함락과 지도자들의 죄를 돌아보며 탄식해요. 기대했던 외부의 도움은 헛되고, 피난길마저 막힌 가운데 의지하던 왕도 붙잡혀요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시의 의인화와 탄식을 살펴보는 상징적 장면 표지예요. 고통을 실제 인물 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"시온의 아들들","target":"에돔","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"시온의 아들들"},{"action":"read","duration":1.2,"actor":"시온의 아들들"},{"action":"look","duration":1.5,"actor":"시온의 아들들"},{"action":"point","duration":1.8,"actor":"시온의 아들들"},{"action":"listen","duration":1.5,"actor":"시온의 아들들"},{"action":"bow","duration":1.2,"actor":"시온의 아들들"}],"duration":8.2,"support":null,"ref":"예레미야애가 4:11-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"lament","lead":"시온의 아들들","target":"에돔","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"시온의 아들들"},{"action":"lower","duration":1.2,"actor":"시온의 아들들"},{"action":"kneel","duration":1.5,"actor":"시온의 아들들"},{"action":"cover-mouth","duration":1.8,"actor":"시온의 아들들"},{"action":"mourn","duration":1.5,"actor":"시온의 아들들"},{"action":"lower","duration":1.2,"actor":"시온의 아들들"}],"duration":8.2,"support":null,"ref":"예레미야애가 4:11-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-lam-extra-5-0",
