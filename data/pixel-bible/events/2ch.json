@@ -189,7 +189,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"praise","lead":"제사장들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"trumpet","beats":[{"action":"lift","duration":1,"actor":"제사장들"},{"action":"sway","duration":1.2,"actor":"제사장들"},{"action":"step","duration":1.5,"actor":"제사장들"},{"action":"sway","duration":1.8,"actor":"제사장들"},{"action":"step","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"역대하 5:11-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"praise","lead":"제사장들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"제사장들"},{"action":"lift","duration":1.2,"actor":"제사장들"},{"action":"blow","duration":1.5,"actor":"제사장들"},{"action":"blow","duration":1.8,"actor":"제사장들"},{"action":"hold","duration":1.5,"actor":"제사장들"},{"action":"lower","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"역대하 5:11-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-5-3",
@@ -213,7 +213,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"cloud","lead":"제사장들","target":null,"mode":"reconstruction","setting":"hills","effect":"cloud","emotion":"surprised","prop":"cloud","beats":[{"action":"look","duration":1,"actor":"제사장들"},{"action":"lift","duration":1.2,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.8,"actor":"제사장들"},{"action":"lower","duration":1.5,"actor":"제사장들"},{"action":"stand","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"역대하 5:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"cloud","lead":"제사장들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"cloud","emotion":"surprised","prop":"cloud","beats":[{"action":"look","duration":1,"actor":"제사장들"},{"action":"startle","duration":1.2,"actor":"제사장들"},{"action":"halt","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.8,"actor":"제사장들"},{"action":"lower","duration":1.5,"actor":"제사장들"},{"action":"kneel","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"역대하 5:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-6-0",
