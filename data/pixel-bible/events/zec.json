@@ -274,39 +274,30 @@
       "id": "ot-zec-extra-4-0",
       "code": "zec",
       "chapter": 4,
-      "title": "순금 등잔대와 두 감람나무의 환상",
+      "title": "순금 등잔대와 감람나무를 보다",
       "actors": [
         "스가랴",
         "스룹바벨",
         "두 감람나무"
       ],
       "object": "scene-marker",
-      "ref": "스가랴 4:1-14",
+      "ref": "스가랴 4:1-5",
       "verseNumbers": [
         1,
         2,
         3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
+        5
       ],
       "actions": {},
       "lines": [
-        "해설: 등잔대와 감람나무를 보고, 성전 재건이 힘이나 능이 아닌 영으로 이뤄진다는 설명을 들어요."
+        "해설: 천사가 스가랴를 깨우고 무엇이 보이는지 물어요. 스가랴는 순금 등잔대와 기름 그릇, 등잔들과 양쪽 감람나무를 보고 그 의미를 질문해요."
       ],
-      "study": "등잔대와 감람나무를 보고, 성전 재건이 힘이나 능이 아닌 영으로 이뤄진다는 설명을 들어요.",
+      "study": "천사가 스가랴를 깨우고 무엇이 보이는지 물어요. 스가랴는 순금 등잔대와 기름 그릇, 등잔들과 양쪽 감람나무를 보고 그 의미를 질문해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"스룹바벨","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"스룹바벨","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-zec-extra-5-0",
@@ -709,6 +700,34 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"vision","lead":"예루살렘 백성","target":"열국","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"예루살렘 백성"},{"action":"lie","duration":1.2,"actor":"예루살렘 백성"},{"action":"sleep","duration":1.5,"actor":"예루살렘 백성"},{"action":"look","duration":1.8,"actor":"예루살렘 백성"},{"action":"startle","duration":1.5,"actor":"예루살렘 백성"},{"action":"rise","duration":1.2,"actor":"예루살렘 백성"}],"duration":8.2,"support":null,"ref":"스가랴 14:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-4-1",
+      "code": "zec",
+      "chapter": 4,
+      "title": "감람나무의 뜻을 다시 묻다",
+      "actors": [
+        "스가랴",
+        "천사",
+        "두 감람나무"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 4:11-14",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 스가랴는 등잔대 양쪽의 감람나무와 기름을 흘리는 가지의 의미를 다시 물어요. 천사는 온 세상의 주 앞에 서 있는 기름 부음 받은 둘을 가리킨다고 설명해요."
+      ],
+      "study": "스가랴는 등잔대 양쪽의 감람나무와 기름을 흘리는 가지의 의미를 다시 물어요. 천사는 온 세상의 주 앞에 서 있는 기름 부음 받은 둘을 가리킨다고 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
