@@ -1,0 +1,1806 @@
+{
+  "version": 1,
+  "code": "luk",
+  "scope": "누가복음 1–1장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "기록자",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "목격자들",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "데오빌로",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "사가랴",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "엘리사벳",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "백성들",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      },
+      {
+        "name": "가브리엘",
+        "role": "누가복음 1장 본문 관련 인물",
+        "refs": [
+          "누가복음 1장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-luk-1-1",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "기록을 시작한 사람들",
+      "ref": "누가복음 1:1",
+      "actors": [
+        "기록자",
+        "목격자들"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "이루어진 사건을 기록하려는 이들의 작업을 두루마리로 보여요."
+      ],
+      "study": "이루어진 사건을 기록하려는 이들의 작업을 두루마리로 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "기록자",
+        "target": "목격자들",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "기록자",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "기록자",
+            "duration": 1.2
+          },
+          {
+            "action": "write",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "기록자",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "기록자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-2",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "목격자의 전승",
+      "ref": "누가복음 1:2",
+      "actors": [
+        "기록자",
+        "목격자들"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "목격자들이 전해 준 이야기를 듣고 기록하는 흐름이에요."
+      ],
+      "study": "목격자들이 전해 준 이야기를 듣고 기록하는 흐름이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "기록자",
+        "target": "목격자들",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "기록자",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "기록자",
+            "duration": 1.2
+          },
+          {
+            "action": "write",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "기록자",
+            "duration": 1.8
+          },
+          {
+            "action": "place",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "기록자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-3",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "데오빌로에게 보내는 기록",
+      "ref": "누가복음 1:3",
+      "actors": [
+        "기록자",
+        "목격자들"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "근원부터 살핀 일을 차례대로 정리해 데오빌로에게 보내요."
+      ],
+      "study": "근원부터 살핀 일을 차례대로 정리해 데오빌로에게 보내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "기록자",
+        "target": "목격자들",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "inspect",
+            "actor": "기록자",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "기록자",
+            "duration": 1.2
+          },
+          {
+            "action": "write",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "기록자",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "기록자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-4",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "배운 사실을 확신하도록",
+      "ref": "누가복음 1:4",
+      "actors": [
+        "기록자",
+        "목격자들"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "이미 배운 내용을 확인하려는 기록의 목적을 설명해요."
+      ],
+      "study": "이미 배운 내용을 확인하려는 기록의 목적을 설명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "기록자",
+        "target": "목격자들",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "기록자",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "기록자",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "기록자",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "기록자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "기록자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-5",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "사가랴와 엘리사벳",
+      "ref": "누가복음 1:5",
+      "actors": [
+        "사가랴",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제사장 사가랴와 아론 가문의 엘리사벳을 소개해요."
+      ],
+      "study": "제사장 사가랴와 아론 가문의 엘리사벳을 소개해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-6",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "계명을 따라 살아가는 부부",
+      "ref": "누가복음 1:6",
+      "actors": [
+        "사가랴",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "두 사람이 계명과 규례를 따라 살아가는 모습을 보여요."
+      ],
+      "study": "두 사람이 계명과 규례를 따라 살아가는 모습을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-7",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "자녀 없이 늙어 간 부부",
+      "ref": "누가복음 1:7",
+      "actors": [
+        "사가랴",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "나이 많은 두 사람에게 자녀가 없었음을 알려요. 이를 잘못이나 불신의 결과로 그리지 않아요."
+      ],
+      "study": "나이 많은 두 사람에게 자녀가 없었음을 알려요. 이를 잘못이나 불신의 결과로 그리지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-8",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "제사장 직무의 차례",
+      "ref": "누가복음 1:8",
+      "actors": [
+        "사가랴",
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사가랴가 자기 반열의 차례에 성전에서 직무를 맡아요."
+      ],
+      "study": "사가랴가 자기 반열의 차례에 성전에서 직무를 맡아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "백성들",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "receive",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-9",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "분향하도록 뽑힘",
+      "ref": "누가복음 1:9",
+      "actors": [
+        "사가랴",
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제비로 분향 직무에 뽑힌 사가랴가 성소에 들어가요."
+      ],
+      "study": "제비로 분향 직무에 뽑힌 사가랴가 성소에 들어가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "백성들",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "light",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-10",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "밖에서 기도하는 백성",
+      "ref": "누가복음 1:10",
+      "actors": [
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "분향 시간에 백성들은 성소 밖에서 기도해요."
+      ],
+      "study": "분향 시간에 백성들은 성소 밖에서 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "백성들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "백성들",
+            "duration": 1
+          },
+          {
+            "action": "kneel",
+            "actor": "백성들",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "백성들",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "백성들",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "백성들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "백성들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-11",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "향단 오른편의 사자",
+      "ref": "누가복음 1:11",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사가랴 앞에 주의 사자가 나타나 향단 오른편에 서요."
+      ],
+      "study": "사가랴 앞에 주의 사자가 나타나 향단 오른편에 서요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-12",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "두려워하는 사가랴",
+      "ref": "누가복음 1:12",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사가랴가 갑작스러운 나타남에 놀라고 두려워해요."
+      ],
+      "study": "사가랴가 갑작스러운 나타남에 놀라고 두려워해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "brace",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-13",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "아들의 이름은 요한",
+      "ref": "누가복음 1:13",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사자가 기도가 들렸으며 엘리사벳이 아들을 낳으리라고 알려요."
+      ],
+      "study": "사자가 기도가 들렸으며 엘리사벳이 아들을 낳으리라고 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "point",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-14",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "많은 이에게 기쁨이 될 탄생",
+      "ref": "누가복음 1:14",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "아이의 탄생이 부부와 많은 이에게 기쁨이 되리라는 약속이에요."
+      ],
+      "study": "아이의 탄생이 부부와 많은 이에게 기쁨이 되리라는 약속이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-15",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "요한의 삶에 대한 약속",
+      "ref": "누가복음 1:15",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "술을 멀리하고 태중부터 성령으로 충만할 아이의 사명을 설명해요."
+      ],
+      "study": "술을 멀리하고 태중부터 성령으로 충만할 아이의 사명을 설명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-16",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "돌아오게 하는 사명",
+      "ref": "누가복음 1:16",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 많은 이스라엘 사람을 주께 돌아오게 하리라는 약속이에요."
+      ],
+      "study": "요한이 많은 이스라엘 사람을 주께 돌아오게 하리라는 약속이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-17",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "주를 맞을 백성을 준비함",
+      "ref": "누가복음 1:17",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리야의 심령과 능력으로 관계를 돌이키고 백성을 준비할 사명을 설명해요. 엘리야의 환생으로 그리지 않아요."
+      ],
+      "study": "엘리야의 심령과 능력으로 관계를 돌이키고 백성을 준비할 사명을 설명해요. 엘리야의 환생으로 그리지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-18",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "나이를 들어 되묻는 사가랴",
+      "ref": "누가복음 1:18",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사가랴가 자신과 아내의 나이를 들어 어떻게 확인할 수 있는지 물어요."
+      ],
+      "study": "사가랴가 자신과 아내의 나이를 들어 어떻게 확인할 수 있는지 물어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "count",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-19",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "가브리엘의 소개",
+      "ref": "누가복음 1:19",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사자가 자신을 가브리엘이라 밝히고 기쁜 소식을 전하도록 보내졌다고 말해요."
+      ],
+      "study": "사자가 자신을 가브리엘이라 밝히고 기쁜 소식을 전하도록 보내졌다고 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-20",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "말하지 못할 기간",
+      "ref": "누가복음 1:20",
+      "actors": [
+        "사가랴",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "약속을 믿지 않은 사가랴에게 성취까지 말하지 못하리라는 표징이 주어져요."
+      ],
+      "study": "약속을 믿지 않은 사가랴에게 성취까지 말하지 못하리라는 표징이 주어져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "cover-mouth",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-21",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "늦어지는 사가랴를 기다림",
+      "ref": "누가복음 1:21",
+      "actors": [
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "백성들이 성소 밖에서 기다리며 사가랴가 늦는 것을 의아해해요."
+      ],
+      "study": "백성들이 성소 밖에서 기다리며 사가랴가 늦는 것을 의아해해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "백성들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "백성들",
+            "duration": 1
+          },
+          {
+            "action": "wait",
+            "actor": "백성들",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "백성들",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "백성들",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "백성들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "백성들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-22",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        22
+      ],
+      "title": "말 대신 몸짓으로 전함",
+      "ref": "누가복음 1:22",
+      "actors": [
+        "사가랴",
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "밖으로 나온 사가랴가 말하지 못하고 손짓하자 백성들이 환상을 보았음을 알아차려요."
+      ],
+      "study": "밖으로 나온 사가랴가 말하지 못하고 손짓하자 백성들이 환상을 보았음을 알아차려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "백성들",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "cover-mouth",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-23",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        23
+      ],
+      "title": "직무를 마치고 귀가함",
+      "ref": "누가복음 1:23",
+      "actors": [
+        "사가랴",
+        "백성들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사가랴가 직무 기간을 마치고 집으로 돌아가요."
+      ],
+      "study": "사가랴가 직무 기간을 마치고 집으로 돌아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사가랴",
+        "target": "백성들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "bow",
+            "actor": "사가랴",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "사가랴",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "사가랴",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "사가랴",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사가랴",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-24",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        24
+      ],
+      "title": "임신 뒤 다섯 달의 머묾",
+      "ref": "누가복음 1:24",
+      "actors": [
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 임신하고 5개월 동안 밖으로 나서지 않아요."
+      ],
+      "study": "엘리사벳이 임신하고 5개월 동안 밖으로 나서지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "sit",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-25",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        25
+      ],
+      "title": "돌보심을 감사하는 엘리사벳",
+      "ref": "누가복음 1:25",
+      "actors": [
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 자신을 돌보신 주께 감사해요. 자녀 없는 삶의 가치를 낮추는 묘사는 덧붙이지 않아요."
+      ],
+      "study": "엘리사벳이 자신을 돌보신 주께 감사해요. 자녀 없는 삶의 가치를 낮추는 묘사는 덧붙이지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

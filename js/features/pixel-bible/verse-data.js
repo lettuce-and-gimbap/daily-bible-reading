@@ -1,5 +1,5 @@
 // Only authored books are fetched; unfinished books keep the existing scene player.
-export const VERSE_BOOKS=Object.freeze(['mat','mrk']);
+export const VERSE_BOOKS=Object.freeze(['mat','mrk','luk']);
 const pending=new Map();
 export function loadVerseBook(code,fetcher=globalThis.fetch){
  if(!VERSE_BOOKS.includes(code))return Promise.resolve(null);

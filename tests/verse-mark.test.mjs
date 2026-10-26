@@ -84,7 +84,7 @@ test('네 운반자·지붕 내리기·상을 들고 나가기의 단계가 다�
  assert.ok(data.scenes.find(s=>s.chapter===3&&s.verseNumbers[0]===1).study.includes('어느 손인지 쓰지 않아요'));
 });
 test('작성되지 않은 권은 요청하지 않고 같은 권의 동시 요청은 한 번만 읽는다',async()=>{
- assert.deepEqual(VERSE_BOOKS,['mat','mrk']);let calls=0;const fetcher=async url=>{calls++;assert.ok(url.pathname.endsWith('/mrk.json'));return {ok:true,json:async()=>data};};
- assert.equal(await loadVerseBook('luk',fetcher),null);assert.equal(calls,0);
+ assert.deepEqual(VERSE_BOOKS,['mat','mrk','luk']);let calls=0;const fetcher=async url=>{calls++;assert.ok(url.pathname.endsWith('/mrk.json'));return {ok:true,json:async()=>data};};
+ assert.equal(await loadVerseBook('jhn',fetcher),null);assert.equal(calls,0);
  const [a,b]=await Promise.all([loadVerseBook('mrk',fetcher),loadVerseBook('mrk',fetcher)]);assert.equal(a,data);assert.equal(a,b);assert.equal(calls,1);
 });
