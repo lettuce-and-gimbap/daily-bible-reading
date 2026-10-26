@@ -492,16 +492,27 @@
     },
     {
       "code": "ecc",
-      "payloadSha256": "3a4afa81ef1f83efe94ffb6e76f6a8cca0080017ee92a81f794c0a31e6bed87b",
-      "scenes": 13,
-      "existing": 13,
+      "payloadSha256": "b05ac2d3ed3e4c53a15fe3f92632d7ceacce44ea88f24de4936f680a96880583",
+      "scenes": 36,
+      "existing": 36,
       "restored": 0,
-      "corrected": 1,
-      "planned": 13,
+      "corrected": 0,
+      "planned": 36,
       "modes": {
-        "illustration": 13
+        "illustration": 36
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 36,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "sng",
