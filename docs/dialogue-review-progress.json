@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 2,
-  "currentBook": "lev",
+  "booksCompleted": 3,
+  "currentBook": "num",
   "currentBookStatus": "in-progress",
   "nextBook": "lev",
   "books": {
@@ -39,6 +39,23 @@
         "duplicate": 0
       },
       "statusNote": "출애굽기 40장 전체의 인물·사건 대화 후보를 검토했다. 발화가 있는 38개 장의 42묶음, 84개 문장에 개별 구절 참조를 달고 양방향 대화 16개를 확인해 기존보다 14개 보강했다. 산파와 바로, 미리암과 바로의 딸, 모세와 바로의 재앙 대화, 바다 앞 백성과 모세, 이드로와 모세, 시내산 언약, 금송아지 사건의 모세와 아론을 연결했다. 21–22장의 율례와 다른 단독·신적 대화, 제작 기록에는 근거 없는 인간 간 대사를 만들지 않았다. 사건 범위 1,213절은 누락·중복 없이 통과했다."
+    },
+    "lev": {
+      "chaptersScanned": 27,
+      "chaptersWithAuthoredDialogueReviewed": 7,
+      "chapterDialogueAudit": 27,
+      "authoredUtteranceGroupsReviewed": 9,
+      "utteranceReferencesCorrected": 18,
+      "pairedEntriesReviewed": 1,
+      "newTwoWayEntries": 1,
+      "status": "complete",
+      "eventVerseSpanAudit": {
+        "versesExpected": 859,
+        "versesCovered": 859,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "레위기 27장 전체의 인물·사건 장면을 대조했고, 발화가 있는 7개 장의 9묶음·18문장에 개별 절 참조를 달았다. 레위기 10장에서 나답과 아비후 사망 뒤 모세와 아론이 속죄제물을 두고 나눈 대화를 추가했다. 직접 말한 근거가 없는 무명 모독자를 인물 발화 목록에서 제외하고 사건 묘사는 유지했다. 절 범위 검수 중 발견한 5:20–26 이웃 재산 속건제 누락을 복원했으며, 12:3 할례와 정결 기간 범위 중복도 분리했다. 사건 범위 859절은 누락·중복 없이 통과했다."
     }
   }
 }

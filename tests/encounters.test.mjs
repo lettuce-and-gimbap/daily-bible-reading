@@ -159,6 +159,11 @@ test('출애굽기 1·5·9·10·14·16·18·19·20·24·32장의 주요 대화�
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
+test('레위기 10장 모세와 아론은 아들들의 죽음 뒤 제물 처리 문제를 주고받는다',()=>{
+ const entry=PAIR_DIALOGUE.find(item=>item.chapter==='lev.10'&&item.speaker==='모세'&&item.target==='아론');
+ assert.ok(entry);assert.match(entry.ref,/10:16–20/);assert.match(entry.lines[0],/속죄제물/);assert.match(entry.replyLines[0],/아들들이 죽었는데/);
+});
+
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
  ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);

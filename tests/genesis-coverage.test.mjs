@@ -49,3 +49,27 @@ test('출애굽기 사건 범위는 기준 1,213절을 누락·중복 없이 덮
  assert.deepEqual(duplicates,[]);
  assert.equal(covered,1213);
 });
+
+test('레위기 사건 범위는 기준 859절을 누락·중복 없이 덮는다',()=>{
+ const data=JSON.parse(readFileSync('data/summary/lev.json','utf8'));
+ const verseCounts=[17,16,17,35,26,23,38,36,24,20,47,8,59,57,33,34,16,30,37,27,24,33,44,23,55,46,34];
+ assert.equal(Object.keys(data.chapters).length,27);
+ assert.equal(verseCounts.reduce((sum,count)=>sum+count,0),859);
+ let covered=0;const missing=[],duplicates=[];
+ verseCounts.forEach((count,index)=>{
+  const chapter=index+1,seen=new Uint8Array(count+1);
+  for(const event of data.chapters[String(chapter)].events||[]){
+   const numbers=event.verses.match(/\d+/g)?.map(Number)||[];
+   const from=numbers[0],to=numbers[1]||from;
+   for(let verse=from;verse<=to;verse++)if(verse>0&&verse<=count)seen[verse]++;
+  }
+  for(let verse=1;verse<=count;verse++){
+   if(!seen[verse])missing.push(`${chapter}:${verse}`);
+   else covered++;
+   if(seen[verse]>1)duplicates.push(`${chapter}:${verse}`);
+  }
+ });
+ assert.deepEqual(missing,[]);
+ assert.deepEqual(duplicates,[]);
+ assert.equal(covered,859);
+});
