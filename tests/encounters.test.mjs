@@ -333,6 +333,39 @@ test('여호수아의 발화 행은 인물 시점을 유지하고 각 문장에 
  assert.ok(!rows.some(row=>row[1]===8&&row[2]==='아이 왕'), '말하지 않은 아이 왕에게 독백을 붙이지 않음');
 });
 
+test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/ezr.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'ezr',name:'에스라',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const humanRelations=context.relations.filter(r=>r.from.name!=='하나님'&&r.to.name!=='하나님');
+ assert.equal(humanRelations.length,44,'본문 관계선과 대사 데이터가 추가로 보장하는 인간 관계선 수');
+ for(const relation of humanRelations){
+  const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+  assert.equal(lines.length,2,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+  assert.notEqual(lines[0].origin,'general');assert.notEqual(lines[1].origin,'general');
+  assert.ok(lines.every(line=>line.ref),`${relation.ref} reference available`);
+ }
+ const cases=[['ezr.1','고레스','유다와 베냐민 족장들',/성전을 세우도록/,/예루살렘으로 돌아가게/],['ezr.3','예수아','스룹바벨',/제단을 세우고/,/예배/],['ezr.5','닷드내','유다 장로들',/누가 이 성전을/,/하늘과 땅의 하나님/],['ezr.6','다리오','닷드내',/조서를 찾아냈소/,/왕의 조서대로/],['ezr.7','에스라','아닥사스다',/율법을 가르치고/,/에스라여, 너는 가라/],['ezr.8','에스라','잇도',/레위 사람들을 보내/,/세레뱌/],['ezr.10','스가냐','에스라',/아직 소망/,/기도하고 있습니다/]];
+ for(const [chapter,speaker,target,first,reply] of cases){
+  const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
+  assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);
+ }
+});
+
+test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지고 형제·개혁·성벽 사건의 상대 응답을 확인한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/neh.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'neh',name:'느헤미야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ assert.equal(context.relations.length,52);
+ for(const relation of context.relations){
+  const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+  assert.equal(lines.length,2,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+  assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));
+ }
+ const cases=[['neh.1','하나니','느헤미야',/예루살렘에 남은 사람들/,/울며/],['neh.2','느헤미야','아닥사스다',/성읍을 다시 세우게/,/필요한 조서/],['neh.5','가난한 백성','느헤미야',/밭과 포도원을 저당/,/이자를 받는 일을 그치고/],['neh.8','에스라','모든 백성',/율법책을 읽겠습니다/,/말씀을 듣고/],['neh.13','엘리아십','도비야',/방을 마련/,/성전 곳간을 비우고/]];
+ for(const [chapter,speaker,target,first,reply] of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
 test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵한 피해자에게 대사를 붙이지 않는다',()=>{
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='jdg');
  assert.equal(rows.length,23);

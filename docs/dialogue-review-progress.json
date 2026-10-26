@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 14,
-  "currentBook": "ezr",
+  "booksCompleted": 16,
+  "currentBook": "est",
   "currentBookStatus": "in-progress",
-  "nextBook": "ezr",
+  "nextBook": "est",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -158,12 +158,12 @@
       "authoredUtteranceGroupsReviewed": 32,
       "utteranceReferencesCorrected": 64,
       "pairedEntriesReviewed": 15,
-      "newTwoWayEntries": 8,
+      "newTwoWayEntries": 9,
       "relationshipEdgesAudited": 377,
       "authoredPairLinks": 35,
       "relationshipBasedPairLines": 342,
       "status": "complete",
-      "statusNote": "사무엘상 31장 전체의 장별 인물·사건 인덱스와 관계선 377개를 대조했다. 관계선은 모두 양방향 대화로 연결되며 미연결은 0개다. 한나와 엘가나, 사무엘과 엘리, 요나단과 사울, 다윗과 골리앗·요나단·사울, 다윗과 아히멜렉, 아비가일과 다윗, 아비아달과 다윗 등 핵심 장면에 관계 기반 대화 8개를 추가했다. 기존 독백 32묶음의 64개 발화에 각 문장별 절 범위를 연결하고 장 범위와 대조했다. 관계도에 연결된 인물은 어색한 인사로 대체되지 않는다."
+      "statusNote": "사무엘상 31장 전체의 장별 인물·사건 인덱스와 관계선 377개를 대조했다. 관계선은 모두 양방향 대화로 연결되며 미연결은 0개다. 한나와 엘가나, 사무엘과 엘리, 요나단과 사울, 다윗과 골리앗·요나단·사울, 다윗과 아히멜렉, 아비가일과 다윗, 아비아달과 다윗 등 핵심 장면에 관계 기반 대화 9개를 추가했다. 기존 독백 32묶음의 64개 발화에 각 문장별 절 범위를 연결하고 장 범위와 대조했다. 관계도에 연결된 인물은 어색한 인사로 대체되지 않는다."
     },
     "2sa": {
       "chaptersScanned": 24,
@@ -227,6 +227,28 @@
       "relationshipBasedPairLines": 131,
       "status": "complete",
       "statusNote": "역대하 36장 전체의 인물·사건·관계선 152개를 검토했다. 관계선 전부가 양방향 대화 대상이며 미연결은 0개다. 솔로몬과 후람, 스바 여왕, 르호보암과 두 조언자 집단, 스마야, 아비야와 여로보암, 아사랴와 아사, 여호사밧과 아합·재판관·야하시엘, 엘리야와 여호람, 여호야다와 요아스, 스가랴, 오뎃과 에브라임 지도자들, 히스기야와 레위인·사신, 훌다와 요시야, 느고와 요시야 등 사건 대화 21개를 보강했다. 기존 발화 38묶음의 76개 문장에 개별 절 범위를 지정하고 각 장의 절 수 안에서 확인했다."
+    },
+    "ezr": {
+      "chaptersScanned": 10,
+      "chapterDialogueAudit": 10,
+      "pairedEntriesReviewed": 11,
+      "newTwoWayEntries": 11,
+      "relationshipEdgesAudited": 44,
+      "authoredPairLinks": 12,
+      "relationshipBasedPairLines": 32,
+      "status": "complete",
+      "statusNote": "에스라 10장 전체의 장별 관계 인덱스를 대조했다. 하나님만 포함된 관계를 제외한 인간 관계선 44개(기존 장별 관계 43개와 관계 대사로 보완한 연결 1개)는 모두 양방향 특수 대화 후보이며 미연결은 0개다. 고레스의 귀환 조서, 성전 기초, 학개와 스룹바벨, 닷드내의 조사와 다리오의 답신, 에스라와 아닥사스다·잇도, 스가냐의 권면 등 관계 대화 11개를 보강했다. 기존 연결 중 32개는 관계 유형과 장별 설명에 근거한 짧은 상호 대화로 이어진다. 주요 대화의 구절 근거와 양쪽 응답을 회귀 테스트로 확인했다."
+    },
+    "neh": {
+      "chaptersScanned": 13,
+      "chapterDialogueAudit": 13,
+      "pairedEntriesReviewed": 15,
+      "newTwoWayEntries": 15,
+      "relationshipEdgesAudited": 52,
+      "authoredPairLinks": 15,
+      "relationshipBasedPairLines": 37,
+      "status": "complete",
+      "statusNote": "느헤미야 13장 전체의 장별 관계 항목을 대조했다. 인간 관계선 52개 모두 양방향 특수 대화 대상이며 어색한 인사로만 대체되는 연결은 없다. 형제 하나니와 느헤미야, 느헤미야와 아닥사스다, 산발랏의 방해, 성벽을 지키는 백성, 가난한 백성의 호소와 귀족 책망, 에스라와 백성의 말씀 낭독, 성전 방을 내준 엘리아십과 도비야 등 사건 대화 15개를 보강했다. 나머지 37개도 관계 유형과 장별 설명에 맞춘 양방향 대사를 제공한다. 주요 발화 상대와 응답을 회귀 테스트로 검증했다."
     }
   },
   "relationshipDialogueCoverage": {
@@ -244,11 +266,13 @@
       "1ki",
       "2ki",
       "1ch",
-      "2ch"
+      "2ch",
+      "ezr",
+      "neh"
     ],
-    "relationshipLinks": 2020,
-    "authoredPairLinks": 283,
-    "relationshipBasedPairLines": 1737,
+    "relationshipLinks": 2116,
+    "authoredPairLinks": 310,
+    "relationshipBasedPairLines": 1806,
     "unpairedLinks": 0,
     "rule": "관계도 연결은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 짧은 창작 대사를 쓰고, 관계 설명과 구절은 자세히 보기에서 확인한다."
   }
