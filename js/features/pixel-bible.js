@@ -118,7 +118,7 @@ async function openPixelBible(scope = {}) {
   landscapeReady.catch(() => {});
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=shore-huff-speech-frequency-1");
+    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=three-second-tread-huff-mark-1");
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback),

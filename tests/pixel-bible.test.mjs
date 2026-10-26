@@ -138,13 +138,16 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
  assert.notDeepEqual(strokes[0].leftArm,strokes[0].rightArm);assert.equal(swimPose(0,true).phase,0);
 });
 
-test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 안전한 물가로 이동한다',async()=>{
- const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,advanceWaterHuff,rescueWaterEscape,WATER_ESCAPE_SECONDS,WATER_HUFF_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
+test('물 진입 뒤 3초 제자리 허우적거리고 가까운 물가로 헤엄친 다음 2초 숨을 고른다',async()=>{
+ const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,advanceWaterHuff,rescueWaterEscape,WATER_ESCAPE_SECONDS,WATER_TREAD_SECONDS,WATER_HUFF_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
  const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
  beginWaterEscape(actor,{x:56,y:20});
  assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
+ for(let i=0;i<Math.floor(WATER_TREAD_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
+ assert.equal(actor.x,58,'첫 3초는 빠진 위치에서 어푸어푸');assert.equal(actor.waterEscape.phase,'treading');
+ assert.equal(advanceWaterEscape(actor,.05),false);assert.equal(actor.waterEscape.phase,'swimming');assert.equal(actor.x,58);
  for(let i=0;i<49;i++)assert.equal(advanceWaterEscape(actor,.05),false);
- assert.ok(actor.x<58&&actor.x>56,'구조 중에는 가장 가까운 물가를 향해 실제로 이동');
+ assert.ok(actor.x<58&&actor.x>56,'제자리 허우적 이후 가장 가까운 물가를 향해 이동');assert.equal(actor.waterEscape.phase,'swimming');
  for(let i=49;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
  assert.ok(actor.waterEscape);assert.equal(advanceWaterEscape(actor,.05),true);
  assert.deepEqual([actor.x,actor.y,actor.waterEscape],[56,20,null]);assert.equal(advanceWaterEscape(actor,.05),false);
@@ -152,12 +155,20 @@ test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 
  for(let i=0;i<Math.floor(WATER_HUFF_SECONDS/.05)-1;i++)assert.equal(advanceWaterHuff(actor,.05),true);
  assert.equal(advanceWaterHuff(actor,.05),false);assert.equal(actor.waterHuff,null);assert.equal(actor.expression,'neutral');
  const swimmer={x:12,y:12},bystander={x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1};beginWaterEscape(swimmer,{x:11,y:12});
- for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05);i++)advanceWaterEscapes([swimmer,bystander],.05);
+ for(let i=0;i<Math.floor((WATER_TREAD_SECONDS+WATER_ESCAPE_SECONDS)/.05);i++)advanceWaterEscapes([swimmer,bystander],.05);
  assert.deepEqual([swimmer.x,swimmer.y,swimmer.waterEscape],[11,12,null]);
  assert.deepEqual(bystander,{x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1});
  const stalled={x:40,y:25};beginWaterEscape(stalled,{x:39,y:25});
  assert.equal(rescueWaterEscape(stalled),true,'RAF가 멈춘 경우에도 별도 감시 타이머가 물가로 복귀시킬 수 있다');
  assert.equal(rescueWaterEscape(stalled),false,'구조 전환은 중복 실행되지 않는다');
+});
+
+test('물가에서 숨 고를 때 빨간 빠직 표시를 인물 머리 위에 그린다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const world=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ const motion=await readFile(new URL('../js/features/pixel-bible/water-escape.js',import.meta.url),'utf8');
+ assert.match(motion,/WATER_HUFF_SECONDS=2/);
+ assert.match(world,/c\.fillStyle='#8c272b';c\.fillRect\(x\+13,y-88/);
 });
 
 test('픽셀 월드 말풍선 본문 터치는 배경으로 전달되지 않아 닫힘을 유발하지 않는다',async()=>{

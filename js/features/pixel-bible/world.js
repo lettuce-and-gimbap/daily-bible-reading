@@ -1235,7 +1235,12 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   c.save();c.translate(x,y);c.scale(shape.width,shape.height);c.translate(-x,-y);
   drawInteractionEffects(c,n,actionPose,x,y,time);c.restore();
   if(n.collisionStun){for(const star of impactSparkles(n.collisionStun.elapsed,reduced)){c.fillStyle='#f6d56f';c.fillRect(x+star.x,y+star.y,3,3);c.fillRect(x+star.x-2,y+star.y+1,7,1);}const flap=Math.floor(time*8)%2;c.fillStyle='#f4efe0';c.fillRect(x+19,y-77-flap*2,5,1);c.fillRect(x+22,y-79+flap*2,4,1);c.fillRect(x+26,y-77-flap*2,4,1);}
-  if(n.waterHuff){const breath=reduced?0:Math.floor(time*5)%3;c.fillStyle='#e8f0e7';c.fillRect(x+17,y-88-breath,3,2);c.fillRect(x+22,y-91-breath,4,2);if(breath===2)c.fillRect(x+28,y-94,3,2);}
+  if(n.waterHuff){
+    const breath=reduced?0:Math.floor(time*5)%3;c.fillStyle='#e8f0e7';c.fillRect(x+17,y-88-breath,3,2);c.fillRect(x+22,y-91-breath,4,2);if(breath===2)c.fillRect(x+28,y-94,3,2);
+    // Red pixel “vein pop” marks the short, winded recovery without changing
+    // the character's face or body sprite.
+    c.fillStyle='#8c272b';c.fillRect(x+13,y-88,8,3);c.fillRect(x+18,y-91,3,8);c.fillRect(x+21,y-91,8,3);c.fillRect(x+26,y-88,3,8);c.fillStyle='#e74a4a';c.fillRect(x+16,y-86,5,2);c.fillRect(x+23,y-89,5,2);
+  }
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font='12px "DungGeunMo", monospace';c.textAlign="center";const w=c.measureText(displayPersonName(n.name)).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(displayPersonName(n.name),x,y+30);

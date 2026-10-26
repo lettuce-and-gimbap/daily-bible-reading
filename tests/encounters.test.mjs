@@ -136,3 +136,9 @@ test('본문 특수대화가 아닌 일상 인사는 이전 대비 3분의 1 확
  assert.equal(make(()=>.32).tick(0,pair()).length,1);
  assert.equal(make(()=>.34).tick(0,pair()).length,0);
 });
+test('일반 인사 확률을 낮춰도 본문 관계 기반 특수 상호작용은 확률 제한 없이 시작한다',()=>{
+ const {director,npcs}=fixture();director.random=()=>.99;
+ const lines=director.tick(0,npcs);
+ assert.equal(lines.length,1);assert.notEqual(lines[0].origin,'general');
+ assert.equal(director.active.length,1);
+});
