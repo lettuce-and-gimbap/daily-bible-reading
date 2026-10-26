@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "2jn",
-    "nextBook": "3jn",
-    "booksCompleted": 63,
+    "currentBook": "3jn",
+    "nextBook": "jud",
+    "booksCompleted": 64,
     "completedBooks": [
       "gen",
       "exo",
@@ -360,10 +360,11 @@
       "1pe",
       "2pe",
       "1jn",
-      "2jn"
+      "2jn",
+      "3jn"
     ],
-    "chaptersReviewed": 1165,
-    "relationshipLinksReviewed": 3646,
+    "chaptersReviewed": 1166,
+    "relationshipLinksReviewed": 3651,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -374,9 +375,9 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요한이서 한 장의 발화를 살펴 진리와 사랑 안에서 행하라는 권면, 그리스도의 성육신을 부인하는 이들에 대한 경고를 2문장·절별 참조로 연결했다. 편지의 수신 공동체와 실제 현장 대화를 혼동하지 않고 관계 연결 4개를 확인했다. 다음은 요한삼서다.",
+    "statusNote": "요한삼서 한 장에서 가이오의 진실한 행실과 나그네 형제 환대를 칭찬하고 디오드레베의 권력욕을 경계하는 발화 2문장에 각각 구절 근거를 연결했다. 수신자 간 실제 만남으로 꾸미지 않고 관계 연결 5개를 확인했다. 다음은 유다서다.",
     "partialBookAudit": {
-      "book": "2jn",
+      "book": "3jn",
       "chaptersScanned": 1,
       "chaptersWithAuthoredDialogueReviewed": 1,
       "authoredUtteranceGroupsReviewed": 1,
@@ -384,19 +385,19 @@
       "chapterDialogueAudit": 1,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 4,
+      "relationshipEdgesAudited": 5,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 4,
-      "relationshipLinksFound": 4,
+      "relationshipBasedPairLines": 5,
+      "relationshipLinksFound": 5,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 4,
+      "generatedLinksRemaining": 5,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1
       ],
-      "statusNote": "요한이서 한 장의 발화를 살펴 진리와 사랑 안에서 행하라는 권면, 그리스도의 성육신을 부인하는 이들에 대한 경고를 2문장·절별 참조로 연결했다. 편지의 수신 공동체와 실제 현장 대화를 혼동하지 않고 관계 연결 4개를 확인했다. 다음은 요한삼서다."
+      "statusNote": "요한삼서 한 장에서 가이오의 진실한 행실과 나그네 형제 환대를 칭찬하고 디오드레베의 권력욕을 경계하는 발화 2문장에 각각 구절 근거를 연결했다. 수신자 간 실제 만남으로 꾸미지 않고 관계 연결 5개를 확인했다. 다음은 유다서다."
     },
     "currentBookStatus": "complete"
   }
