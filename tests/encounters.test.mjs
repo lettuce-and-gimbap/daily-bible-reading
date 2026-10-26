@@ -826,6 +826,21 @@ test('오바댜의 에돔·야곱 형제 배신 관계는 하나의 양방향 �
  assert.equal(data.people.some(person=>person.name==='에돔(에서)'),false);
 });
 
+
+test('요나서 네 장의 다섯 인간 관계선은 폭풍·경고·회개·자비 장면에 맞는 대화를 갖는다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jnh.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'jnh',name:'요나',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^jnh\.\d+$/.test(entry.chapter));
+ assert.equal(chapters.length,4);assert.equal(context.relations.length,5);assert.equal(entries.length,5);
+ for(const relation of context.relations){
+  const entry=entries.find(item=>item.chapter===`jnh.${relation.from.chap}`&&((item.speaker===relation.from.name&&item.target===relation.to.name)||(item.speaker===relation.to.name&&item.target===relation.from.name)));
+  assert.ok(entry,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(summary.chapters['2'].people.some(person=>person.name==='우상을 숭상하는 자'),false,'추상 집단은 물고기 뱃속 장면의 NPC가 아니다');
+ const catalog=JSON.parse(fs.readFileSync('data/pixel-bible/people-catalog.json'));
+ assert.equal(catalog.entries.find(person=>person.name==='큰 물고기').identities[0].kind,'animal');
+});
+
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/amo.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'amo',name:'아모스',chap:Number(chap),data}));

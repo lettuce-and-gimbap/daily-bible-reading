@@ -4,10 +4,10 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabelCount": 2259,
-    "characterOccurrences": 5956,
+    "sourceLabelCount": 2258,
+    "characterOccurrences": 5955,
     "authoredSoloOccurrences": 2039,
-    "chapterRoleOccurrences": 3917,
+    "chapterRoleOccurrences": 3916,
     "ordinaryOnlyOccurrences": 0,
     "chapterRelationRecords": 3825,
     "majorSets": 100,
@@ -296,9 +296,9 @@
     {
       "code": "jnh",
       "chapters": 4,
-      "characterOccurrences": 12,
+      "characterOccurrences": 11,
       "authoredSoloOccurrences": 4,
-      "chapterRoleOccurrences": 8,
+      "chapterRoleOccurrences": 7,
       "ordinaryOnlyOccurrences": 0,
       "chapterRelationRecords": 5
     },

@@ -4,11 +4,11 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2265,
+    "sourceLabels": 2264,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2573,
+      "unresolved": 2572,
       "group": 245,
       "person": 109,
       "animal": 8,
@@ -50023,27 +50023,6 @@
           "status": "needs-review",
           "refs": [
             "psa.97"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "우상을 숭상하는 자",
-      "roles": [
-        "은혜를 버리는 사람"
-      ],
-      "refs": [
-        "jnh.2"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:우상을 숭상하는 자:jnh",
-          "status": "needs-review",
-          "refs": [
-            "jnh.2"
           ]
         }
       ]

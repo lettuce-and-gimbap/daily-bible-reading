@@ -1990,7 +1990,6 @@
 {"id":"unresolved:선장:jnh","name":"선장","kind":"unresolved","occurrences":["jnh.1"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:사공들:jnh","name":"사공들","kind":"unresolved","occurrences":["jnh.1"],"traits":[],"status":"group-or-unresolved"},
 {"id":"animal:great-fish","name":"큰 물고기","kind":"animal","occurrences":["jnh.1","jnh.2"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:우상을 숭상하는 자:jnh","name":"우상을 숭상하는 자","kind":"unresolved","occurrences":["jnh.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:니느웨 왕:jnh","name":"니느웨 왕","kind":"unresolved","occurrences":["jnh.3"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:니느웨 사람들","name":"니느웨 사람들","kind":"group","occurrences":["jnh.3","jnh.4"],"traits":[],"status":"group-or-unresolved"},
 {"id":"plant:gourd","name":"박넝쿨","kind":"plant","occurrences":["jnh.4"],"traits":[],"status":"group-or-unresolved"},

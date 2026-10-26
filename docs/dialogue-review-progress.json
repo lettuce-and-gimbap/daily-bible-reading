@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "oba",
-    "nextBook": "jnh",
-    "booksCompleted": 31,
+    "currentBook": "jnh",
+    "nextBook": "mic",
+    "booksCompleted": 32,
     "completedBooks": [
       "gen",
       "exo",
@@ -328,35 +328,39 @@
       "hos",
       "jol",
       "amo",
-      "oba"
+      "oba",
+      "jnh"
     ],
-    "chaptersReviewed": 893,
-    "relationshipLinksReviewed": 2789,
-    "authoredPairEntriesReviewed": 862,
+    "chaptersReviewed": 897,
+    "relationshipLinksReviewed": 2794,
+    "authoredPairEntriesReviewed": 867,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3805,
-      "authoredLinks": 906,
-      "relationshipGeneratedLinks": 2899,
+      "authoredLinks": 911,
+      "relationshipGeneratedLinks": 2894,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요엘과 아모스에 이어 오바댜 1장 전체를 검토했다. 에돔과 야곱 족속의 형제·적대 관계가 양방향으로 중복된 기록을 하나로 합치고, 하나의 왕복 대화로 구성했다. 예언의 대상인 에돔은 에서 개인이 아니라 나라 집단으로 분류했다. 하나님과의 관계선은 인물 간 조우 대상에서 제외했다. 다음 권은 요나다.",
+    "statusNote": "오바댜에 이어 요나서 1–4장 전체를 검토했다. 선장·사공들과 요나의 폭풍 속 문답, 니느웨의 경고와 회개, 왕의 금식 조서를 장면별로 주고받는 대화 5개로 구성했다. 4장의 요나와 니느웨 관계도는 심판을 기다린 선지자와 자비를 입은 성읍의 대비를 살렸다. 2장의 우상 숭배자라는 일반 집단은 장면 밖 추상 표현이라 인물 목록에서 제외했고, 큰 물고기와 박넝쿨은 각각 동물·식물로 유지했다. 요나의 중복 발화 묶음은 4:1–4와 4:6–11로 구분하고 모두 1인칭 관점과 절 참조를 다듬었다. 다음 권은 미가다.",
     "partialBookAudit": {
-      "book": "oba",
-      "chaptersScanned": 1,
-      "relationshipLinksFound": 1,
-      "authoredPairEntriesAddedAndChecked": 1,
-      "authoredLinksCovered": 1,
+      "book": "jnh",
+      "chaptersScanned": 4,
+      "relationshipLinksFound": 5,
+      "authoredPairEntriesAddedAndChecked": 5,
+      "authoredLinksCovered": 5,
       "generatedLinksRemaining": 0,
       "nonDialogueLinksRemoved": 1,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
-        1
+        1,
+        2,
+        3,
+        4
       ],
-      "statusNote": "오바댜 1장 전부를 살펴 에돔과 야곱 족속의 배신한 형제 관계를 대화로 구성했다. 형제 관계와 일방적 적대 기록은 하나로 병합했고, 집단 에돔을 개인 에서와 구별했다."
+      "statusNote": "요나서 1–4장을 전부 살폈다. 선장·사공, 니느웨의 백성·왕, 요나 사이에서 본문 상황에 맞는 왕복 대화 5개를 작성했다. 추상적인 우상 숭배자 집단은 NPC에서 빼고, 큰 물고기는 동물, 박넝쿨은 식물로 분류했다."
     },
     "currentBookStatus": "complete"
   }
