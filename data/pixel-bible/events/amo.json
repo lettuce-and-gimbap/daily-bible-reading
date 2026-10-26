@@ -402,11 +402,8 @@
         "가난한 자와 궁핍한 자"
       ],
       "object": "scene-marker",
-      "ref": "아모스 8:1-14",
+      "ref": "아모스 8:4-14",
       "verseNumbers": [
-        1,
-        2,
-        3,
         4,
         5,
         6,
@@ -421,46 +418,42 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 가난한 이를 사고파는 상인들을 책망하고 하나님의 말씀을 듣지 못하는 기근을 예고해요."
+        "해설: 가난한 이들을 착취하고 저울을 속이는 상인들의 행위를 아모스가 고발해요. 절기가 애통으로 바뀌고 하나님의 말씀을 구해도 듣지 못할 기근이 예고돼요."
       ],
-      "study": "가난한 이를 사고파는 상인들을 책망하고 하나님의 말씀을 듣지 못하는 기근을 예고해요.",
+      "study": "가난한 이들을 착취하고 저울을 속이는 상인들의 행위를 아모스가 고발해요. 절기가 애통으로 바뀌고 하나님의 말씀을 구해도 듣지 못할 기근이 예고돼요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"아모스","target":"탐욕스러운 상인들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"turn","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"lower","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 8:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"아모스","target":"탐욕스러운 상인들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"turn","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"lower","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 8:4-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-amo-extra-9-0",
       "code": "amo",
       "chapter": 9,
-      "title": "무너지는 제단의 환상과 흩어짐",
+      "title": "제단 곁에서 본 피할 수 없는 심판",
       "actors": [
         "아모스",
         "이스라엘"
       ],
       "object": "scene-marker",
-      "ref": "아모스 9:1-10",
+      "ref": "아모스 9:1-6",
       "verseNumbers": [
         1,
         2,
         3,
         4,
         5,
-        6,
-        7,
-        8,
-        9,
-        10
+        6
       ],
       "actions": {},
       "lines": [
-        "해설: 제단 곁 환상으로 피할 수 없는 심판과 체질하듯 가려지는 백성을 상징해요."
+        "해설: 아모스는 제단 곁에서 주님을 보는 환상을 전해요. 어디로 숨더라도 피할 수 없는 심판과 땅과 바다를 다스리시는 하나님의 권능을 상징으로 표현해요."
       ],
-      "study": "제단 곁 환상으로 피할 수 없는 심판과 체질하듯 가려지는 백성을 상징해요.",
+      "study": "아모스는 제단 곁에서 주님을 보는 환상을 전해요. 어디로 숨더라도 피할 수 없는 심판과 땅과 바다를 다스리시는 하나님의 권능을 상징으로 표현해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"아모스","target":"이스라엘","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"아모스"},{"action":"lie","duration":1.2,"actor":"아모스"},{"action":"sleep","duration":1.5,"actor":"아모스"},{"action":"look","duration":1.8,"actor":"아모스"},{"action":"startle","duration":1.5,"actor":"아모스"},{"action":"rise","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 9:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"vision","lead":"아모스","target":"이스라엘","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"아모스"},{"action":"lie","duration":1.2,"actor":"아모스"},{"action":"sleep","duration":1.5,"actor":"아모스"},{"action":"look","duration":1.8,"actor":"아모스"},{"action":"startle","duration":1.5,"actor":"아모스"},{"action":"rise","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 9:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-amo-extra-9-1",
