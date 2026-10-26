@@ -113,6 +113,18 @@ test('요한복음 각 장의 발화는 말한 인물과 문장별 구절에 연
  }
 });
 
+test('요한계시록 22장 모두의 발화는 문장별 환상·선포 구절에 연결된다',()=>{
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='rev');
+ assert.equal(new Set(rows.map(row=>row[1])).size,22);
+ assert.ok(rows.every(row=>row[6]?.length===row[4].length));
+ for(const row of rows){
+  const [,,name,,texts,,refs]=row;
+  const lines=newTestamentMonologues({name},[{code:'rev',chap:row[1]}]);
+  assert.ok(lines.length>=texts.length);
+  for(const ref of refs)assert.ok(lines.some(line=>line.ref===`요한계시록 ${row[1]}:${ref}`),`rev.${row[1]} ${name}: ${ref}`);
+ }
+});
+
 test('마태·마가·누가복음의 주요 대면 문답은 장면의 두 화자와 구절에 맞게 연결된다',()=>{
  const cases=[
   ['mat.3','세례 요한','예수'],['mat.4','예수','마귀'],['mat.14','베드로','예수'],
