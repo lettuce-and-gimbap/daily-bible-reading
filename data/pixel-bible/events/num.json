@@ -1466,6 +1466,150 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"journey","lead":"모세","target":"아론","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 33:1-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-34-0",
+      "code": "num",
+      "chapter": 34,
+      "title": "엘르아살과 여호수아가 땅을 나눌 지도자를 세우다",
+      "actors": [
+        "엘르아살",
+        "여호수아",
+        "갈렙"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 34:16-29",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 엘르아살과 여호수아와 각 지파의 지도자들을 땅 분배 책임자로 세우세요. 각 지파의 대표가 공동체의 기업을 나누는 준비를 해요."
+      ],
+      "study": "하나님은 엘르아살과 여호수아와 각 지파의 지도자들을 땅 분배 책임자로 세우세요. 각 지파의 대표가 공동체의 기업을 나누는 준비를 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"엘르아살","target":"여호수아","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"엘르아살"},{"action":"kneel","duration":1.2,"actor":"엘르아살"},{"action":"receive","duration":1.5,"actor":"엘르아살"},{"action":"wear","duration":1.8,"actor":"엘르아살"},{"action":"rise","duration":1.5,"actor":"엘르아살"},{"action":"bow","duration":1.2,"actor":"엘르아살"}],"duration":8.2,"support":null,"ref":"민수기 34:16-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-35-0",
+      "code": "num",
+      "chapter": 35,
+      "title": "도피성을 세워 실수로 사람을 죽인 이를 보호하다",
+      "actors": [
+        "레위 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 35:9-15",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이스라엘은 요단 양쪽에 도피성을 마련해 실수로 사람을 죽인 이가 회중 앞에서 재판받기 전 보복을 피하도록 해요."
+      ],
+      "study": "이스라엘은 요단 양쪽에 도피성을 마련해 실수로 사람을 죽인 이가 회중 앞에서 재판받기 전 보복을 피하도록 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"rescue","lead":"레위 지파","target":null,"mode":"illustration","setting":"altar","effect":"release","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"레위 지파"},{"action":"startle","duration":1.2,"actor":"레위 지파"},{"action":"halt","duration":1.5,"actor":"레위 지파"},{"action":"release","duration":1.8,"actor":"레위 지파"},{"action":"kneel","duration":1.5,"actor":"레위 지파"},{"action":"bow","duration":1.2,"actor":"레위 지파"}],"duration":8.2,"support":null,"ref":"민수기 35:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-35-1",
+      "code": "num",
+      "chapter": 35,
+      "title": "살인 사건의 재판과 피의 보복 금지를 정하다",
+      "actors": [
+        "레위 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 35:16-34",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 본문은 고의와 과실을 구별해 회중이 판결하도록 하고, 피의 보복을 경계해요. 폭력 자체를 재현하지 않고 재판과 보호의 원칙을 상징적으로 표현해요."
+      ],
+      "study": "본문은 고의와 과실을 구별해 회중이 판결하도록 하고, 피의 보복을 경계해요. 폭력 자체를 재현하지 않고 재판과 보호의 원칙을 상징적으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"레위 지파","target":null,"mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"레위 지파"},{"action":"turn","duration":1.2,"actor":"레위 지파"},{"action":"speak","duration":1.5,"actor":"레위 지파"},{"action":"point","duration":1.8,"actor":"레위 지파"},{"action":"listen","duration":1.5,"actor":"레위 지파"},{"action":"lower","duration":1.2,"actor":"레위 지파"}],"duration":8.2,"support":null,"ref":"민수기 35:16-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-36-0",
+      "code": "num",
+      "chapter": 36,
+      "title": "슬로브핫의 딸들이 지파의 기업을 지키는 결정을 받다",
+      "actors": [
+        "말라",
+        "모세",
+        "길르앗 족장들"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 36:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 길르앗 족장들이 딸들의 상속으로 지파의 땅이 다른 지파에 넘어갈 가능성을 제기해요. 모세는 기업을 지키면서도 딸들이 원하는 사람과 결혼할 수 있는 판결을 전해요."
+      ],
+      "study": "길르앗 족장들이 딸들의 상속으로 지파의 땅이 다른 지파에 넘어갈 가능성을 제기해요. 모세는 기업을 지키면서도 딸들이 원하는 사람과 결혼할 수 있는 판결을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"counsel","lead":"말라","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"말라"},{"action":"turn","duration":1.2,"actor":"말라"},{"action":"speak","duration":1.5,"actor":"말라"},{"action":"point","duration":1.8,"actor":"말라"},{"action":"listen","duration":1.5,"actor":"말라"},{"action":"lower","duration":1.2,"actor":"말라"}],"duration":8.2,"support":null,"ref":"민수기 36:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
