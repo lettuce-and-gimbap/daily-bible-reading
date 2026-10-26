@@ -188,16 +188,28 @@
     },
     {
       "code": "rut",
-      "payloadSha256": "61452e8ac41313cb5d27e8ebf6118b190e86362e65ab56306db4c98d6a446572",
-      "scenes": 12,
-      "existing": 12,
+      "payloadSha256": "d53d8ee62b51581db93bf22a4c701c764584a6507bd2e2daba7572ead9c3762a",
+      "scenes": 13,
+      "existing": 13,
       "restored": 0,
       "corrected": 2,
-      "planned": 12,
+      "planned": 13,
       "modes": {
-        "reconstruction": 12
+        "reconstruction": 12,
+        "illustration": 1
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 13,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "1sa",
