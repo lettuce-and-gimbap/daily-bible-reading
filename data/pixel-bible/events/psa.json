@@ -667,13 +667,13 @@
       "id": "ot-psa-extra-05",
       "code": "psa",
       "chapter": 78,
-      "title": "거듭된 반역과 다윗을 택하심",
+      "title": "구원을 잊은 반역과 실로의 상실",
       "actors": [
         "에브라임 자손",
         "다윗"
       ],
       "object": "sword",
-      "ref": "시편 78:40-72",
+      "ref": "시편 78:40-64",
       "verseNumbers": [
         40,
         41,
@@ -699,25 +699,17 @@
         61,
         62,
         63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72
+        64
       ],
       "actions": {},
       "lines": [
-        "해설: 시인은 광야와 정착지에서 이어진 반역을 되짚고, 마지막에 다윗을 목자로 세운 일을 기억해요."
+        "해설: 시인은 애굽의 재앙과 광야의 인도, 땅의 분배를 기억해요. 그 은혜를 잊고 다시 우상을 섬긴 백성이 실로의 성소와 언약궤를 잃은 일을 탄식하며 되짚어요."
       ],
-      "study": "시인은 광야와 정착지에서 이어진 반역을 되짚고, 마지막에 다윗을 목자로 세운 일을 기억해요.",
+      "study": "시인은 애굽의 재앙과 광야의 인도, 땅의 분배를 기억해요. 그 은혜를 잊고 다시 우상을 섬긴 백성이 실로의 성소와 언약궤를 잃은 일을 탄식하며 되짚어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시가 묘사하는 역사적 회고와 비유를 구분하고, 표현은 상징 애니메이션으로 보여 줘요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"lament","lead":"에브라임 자손","target":"다윗","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"sword","beats":[{"action":"startle","duration":1,"actor":"에브라임 자손"},{"action":"lower","duration":1.2,"actor":"에브라임 자손"},{"action":"kneel","duration":1.5,"actor":"에브라임 자손"},{"action":"cover-mouth","duration":1.8,"actor":"에브라임 자손"},{"action":"mourn","duration":1.5,"actor":"에브라임 자손"},{"action":"lower","duration":1.2,"actor":"에브라임 자손"}],"duration":8.2,"support":null,"ref":"시편 78:40-72","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"lament","lead":"에브라임 자손","target":"다윗","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"sword","beats":[{"action":"startle","duration":1,"actor":"에브라임 자손"},{"action":"lower","duration":1.2,"actor":"에브라임 자손"},{"action":"kneel","duration":1.5,"actor":"에브라임 자손"},{"action":"cover-mouth","duration":1.8,"actor":"에브라임 자손"},{"action":"mourn","duration":1.5,"actor":"에브라임 자손"},{"action":"lower","duration":1.2,"actor":"에브라임 자손"}],"duration":8.2,"support":null,"ref":"시편 78:40-64","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-psa-extra-06",
