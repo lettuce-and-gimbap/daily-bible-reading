@@ -27,7 +27,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"encourage","lead":"학개","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"turn","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"point","duration":1.8,"actor":"학개"},{"action":"listen","duration":1.5,"actor":"학개"},{"action":"lower","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 1:8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "학개",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 1:8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hag-extra-1-0",
@@ -61,7 +107,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"instruct","lead":"학개","target":"남은 백성","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"turn","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"point","duration":1.8,"actor":"학개"},{"action":"listen","duration":1.5,"actor":"학개"},{"action":"lower","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 1:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "instruct",
+        "lead": "학개",
+        "target": "남은 백성",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 1:1-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hag-extra-1-1",
@@ -90,7 +182,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"학개","target":"스룹바벨","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"학개"},{"action":"bend","duration":1.2,"actor":"학개"},{"action":"grasp","duration":1.5,"actor":"학개"},{"action":"lift","duration":1.8,"actor":"학개"},{"action":"bundle","duration":1.5,"actor":"학개"},{"action":"carry","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 1:12-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "학개",
+        "target": "스룹바벨",
+        "mode": "reconstruction",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 1:12-15",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hag-extra-2-0",
@@ -124,7 +262,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"encourage","lead":"학개","target":"스룹바벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"turn","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"point","duration":1.8,"actor":"학개"},{"action":"listen","duration":1.5,"actor":"학개"},{"action":"lower","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 2:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "학개",
+        "target": "스룹바벨",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 2:1-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hag-extra-2-1",
@@ -158,7 +342,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"instruct","lead":"학개","target":"제사장들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"turn","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"point","duration":1.8,"actor":"학개"},{"action":"listen","duration":1.5,"actor":"학개"},{"action":"lower","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 2:10-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "instruct",
+        "lead": "학개",
+        "target": "제사장들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 2:10-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hag-extra-2-2",
@@ -185,7 +415,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"학개","target":"스룹바벨","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"lift","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"bless","duration":1.8,"actor":"학개"},{"action":"lower","duration":1.5,"actor":"학개"},{"action":"bow","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"학개 2:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "학개",
+        "target": "스룹바벨",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "학개 2:20-23",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {}
