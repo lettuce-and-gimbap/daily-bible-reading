@@ -239,15 +239,16 @@
     },
     {
       "code": "job",
-      "payloadSha256": "bd2801c89fb6ab960b3077cf71b3d1bdf1d5aa8c60efcb373c5b2aab58af508b",
-      "scenes": 6,
-      "existing": 6,
+      "payloadSha256": "047dfb1c0c595c486d99aa9fd43a12482b430f1a9c2a018af6843c968a0a5d15",
+      "scenes": 34,
+      "existing": 34,
       "restored": 0,
       "corrected": 2,
-      "planned": 6,
+      "planned": 34,
       "modes": {
-        "reconstruction": 2,
-        "illustration": 4
+        "reconstruction": 26,
+        "illustration": 7,
+        "vision": 1
       },
       "status": "authored-awaiting-browser-review"
     },
