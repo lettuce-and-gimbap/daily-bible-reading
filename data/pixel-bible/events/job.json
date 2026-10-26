@@ -1392,6 +1392,34 @@
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"blessing","lead":"욥","target":"여미마","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"table","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"lift","duration":1.2,"actor":"욥"},{"action":"bless","duration":1.5,"actor":"욥"},{"action":"bless","duration":1.8,"actor":"욥"},{"action":"lower","duration":1.5,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 42:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-job-extra-1-0",
+      "code": "job",
+      "chapter": 1,
+      "title": "평온했던 욥의 집과 자녀들을 위한 제사",
+      "actors": [
+        "욥",
+        "욥의 자녀들"
+      ],
+      "object": "scene-marker",
+      "ref": "욥기 1:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 흠잡을 데 없이 바르게 살며 하나님을 경외해요. 자녀들이 차례로 잔치를 마치면 혹시 마음으로 죄를 지었을까 염려해 이른 아침 번제를 드려요. 재앙 전 가족의 평온과 욥의 세심한 신앙을 보여 주는 장면이에요."
+      ],
+      "study": "욥은 흠잡을 데 없이 바르게 살며 하나님을 경외해요. 자녀들이 차례로 잔치를 마치면 혹시 마음으로 죄를 지었을까 염려해 이른 아침 번제를 드려요. 재앙 전 가족의 평온과 욥의 세심한 신앙을 보여 주는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"욥","target":"욥의 자녀들","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"욥"},{"action":"walk","duration":1.2,"actor":"욥"},{"action":"bow","duration":1.5,"actor":"욥"},{"action":"extend","duration":1.8,"actor":"욥"},{"action":"place","duration":1.5,"actor":"욥"},{"action":"sit","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
