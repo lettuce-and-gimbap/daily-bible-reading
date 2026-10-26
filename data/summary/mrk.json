@@ -61,8 +61,7 @@
         {"name":"서기관","role":"속으로 비난한 이들","weight":2},
         {"name":"레위","role":"알패오의 아들 세리","weight":3},
         {"name":"바리새인","role":"안식일을 따진 이들","weight":2},
-        {"name":"제자들","role":"이삭을 자른 이들","weight":1},
-        {"name":"다윗","role":"진설병을 먹은 왕","weight":1}
+        {"name":"제자들","role":"이삭을 자른 이들","weight":1}
       ],
       "rels": [
         {"from":"네 사람","to":"중풍병자","label":"메고 온 친구","kind":"ally","directed":true,"weight":2,"verses":"3-4","note":"친구 네 사람이 병자를 메고 와서 무리 때문에 못 들어가자 지붕을 뚫고 내렸어요. 포기하지 않는 우정과 믿음이에요."},
@@ -225,8 +224,7 @@
         {"name":"수로보니게 여인","role":"간구한 헬라 여인","weight":3},
         {"name":"여인의 딸","role":"귀신이 나간 딸","weight":1},
         {"name":"귀먹은 사람","role":"귀가 열린 이","weight":2},
-        {"name":"제자들","role":"비유를 물은 이들","weight":1},
-        {"name":"이사야","role":"외식을 예언한 선지자","weight":1}
+        {"name":"제자들","role":"비유를 물은 이들","weight":1}
       ],
       "rels": [
         {"from":"바리새인과 서기관","to":"예수","label":"트집 잡은 이들","kind":"conflict","directed":true,"weight":2,"verses":"1-5","note":"예루살렘에서 온 종교 지도자들이 손 씻기 전통을 문제 삼았어요. 예수님은 그들이 사람의 전통을 하나님 말씀 위에 둔다고 답하셨어요."},
@@ -256,9 +254,7 @@
         {"name":"제자들","role":"깨닫지 못한 이들","weight":2},
         {"name":"바리새인","role":"표적을 구한 이들","weight":2},
         {"name":"벳새다 맹인","role":"두 번 안수받은 이","weight":2},
-        {"name":"무리","role":"사천 명","weight":2},
-        {"name":"헤롯","role":"누룩을 주의할 왕","weight":1},
-        {"name":"사탄","role":"하나님의 일을 막는 자","weight":1}
+        {"name":"무리","role":"사천 명","weight":2}
       ],
       "rels": [
         {"from":"베드로","to":"예수","label":"그리스도라 고백","kind":"ally","directed":true,"weight":3,"verses":"29","note":"베드로는 제자들 중 먼저 예수님이 그리스도라고 고백했어요. 하지만 고난받는 그리스도는 받아들이지 못했어요."},
@@ -358,8 +354,7 @@
         {"name":"두 제자","role":"나귀를 가져온 이들","weight":1},
         {"name":"매매하는 자들","role":"쫓겨난 이들","weight":2},
         {"name":"대제사장과 서기관","role":"죽이려 꾀한 이들","weight":3},
-        {"name":"베드로","role":"마른 나무를 본 제자","weight":1},
-        {"name":"세례 요한","role":"하늘의 세례를 준 이","weight":1}
+        {"name":"베드로","role":"마른 나무를 본 제자","weight":1}
       ],
       "rels": [
         {"from":"무리","to":"예수","label":"호산나 외침","kind":"ally","directed":true,"weight":3,"verses":"8-10","note":"무리는 겉옷과 나뭇가지를 깔고 다윗의 나라를 외쳤어요. 예수님을 왕으로 맞는 것 같았지만 그분의 길은 십자가였어요."},
@@ -390,8 +385,7 @@
         {"name":"사두개인","role":"부활을 부인한 이들","weight":2},
         {"name":"서기관","role":"첫째 계명을 물은 이","weight":2},
         {"name":"가난한 과부","role":"두 렙돈을 넣은 여인","weight":3},
-        {"name":"악한 농부들","role":"아들을 죽인 소작인","weight":2},
-        {"name":"다윗","role":"그리스도를 주라 부른 왕","weight":1}
+        {"name":"악한 농부들","role":"아들을 죽인 소작인","weight":2}
       ],
       "rels": [
         {"from":"바리새인과 헤롯당","to":"예수","label":"책잡으려 함","kind":"conflict","directed":true,"weight":2,"verses":"13-14","note":"정치적 입장이 다른 두 무리가 함께 와서 세금 질문으로 함정을 팠어요. 예수님은 위선을 알고 데나리온을 가져오라 하셨어요."},
@@ -422,13 +416,11 @@
         {"name":"야고보","role":"물은 제자","weight":1},
         {"name":"요한","role":"물은 제자","weight":1},
         {"name":"안드레","role":"물은 제자","weight":1},
-        {"name":"거짓 그리스도","role":"미혹하는 자들","weight":2},
         {"name":"성령","role":"대신 말씀하시는 영","weight":1},
         {"name":"하나님","role":"그날을 아시는 아버지","weight":2}
       ],
       "rels": [
         {"from":"예수","to":"베드로","label":"알려 주심","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"성전을 마주한 올리브 산에서 네 제자가 따로 물었어요. 예수님은 징조를 따지기보다 미혹을 조심하고 깨어 있으라고 답하셨어요."},
-        {"from":"거짓 그리스도","to":"베드로","label":"미혹하는 자","kind":"conflict","directed":true,"weight":1,"verses":"6, 22","note":"거짓 그리스도들은 내가 그라며 많은 사람을 미혹하고 이적을 보여 택한 자까지 속이려 해요. 예수님은 미리 말해 두셨어요."},
         {"from":"성령","to":"베드로","label":"말하게 하심","kind":"ally","directed":true,"weight":1,"verses":"11","note":"붙잡혀 끌려가도 무슨 말을 할까 미리 염려하지 말라 하셨어요. 말하는 이는 제자들이 아니라 성령이세요."},
         {"from":"베드로","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"형제인 베드로와 안드레가 함께 따로 예수님께 물었어요."},
         {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"야고보와 요한도 같은 질문에 함께했어요."}

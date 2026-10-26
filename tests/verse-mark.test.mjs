@@ -25,6 +25,13 @@ test('마가복음 13장의 성전 예고·환난 경고·깨어 있음 비유�
  assert.equal(get(34).actors.includes('문지기'),true);
  assert.ok(get(17).study.includes('고통은 묘사하지 않아요'));
 });
+test('인용·예언 속 인물을 현재 장면의 실제 출연자로 따로 세우지 않는다',()=>{
+ const get=(chapter,verse)=>data.scenes.find(scene=>scene.chapter===chapter&&scene.verseNumbers[0]===verse);
+ assert.equal(get(11,30).actors.includes('세례 요한'),false);
+ assert.equal(get(12,36).actors.includes('다윗'),false);
+ for(const verse of [6,22])assert.equal(get(13,verse).actors.includes('거짓 그리스도'),false);
+ assert.equal(summary.chapters[8].people.some(person=>person.name==='사탄'),false);
+});
 test('마가복음 14장의 향유·식탁·겟세마네·심문·베드로 부인을 장면별로 구별한다',()=>{
  const get=v=>data.scenes.find(s=>s.chapter===14&&s.verseNumbers[0]===v);
  assert.deepEqual(data.scenes.filter(s=>s.chapter===14).map(s=>s.verseNumbers[0]),Array.from({length:72},(_,i)=>i+1));
