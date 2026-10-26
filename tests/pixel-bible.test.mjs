@@ -21,6 +21,14 @@ test('물 오브젝트에는 실제로 잔을 입에 대고 마시는 동작이 
  assert.equal(pose.gesture,'drink');assert.equal(pose.handY,16);assert.ok(pose.hand>0);
 });
 
+test('인물 모션 중에는 프레임마다 얼굴·몸 스프라이트를 바꾸지 않는다',async()=>{
+ const {characterSpriteFrame}=await import('../js/features/pixel-bible/character-motion.js');
+ const a=characterSpriteFrame({motionOnly:true,walkFrame:1,action:'drink',interaction:{handY:14,bodyX:2},expression:'surprised',baseExpression:'neutral'});
+ const b=characterSpriteFrame({motionOnly:true,walkFrame:3,action:'fall',interaction:{headX:-1,bodyY:2},expression:'worried',baseExpression:'neutral'});
+ assert.deepEqual(a,{walkFrame:0,action:'',interaction:null,expression:'neutral'});
+ assert.deepEqual(b,a);
+});
+
 test('물·나무·밧줄·작업 동작은 각자 다른 8박 핵심 자세를 사용한다',async()=>{
  const {actionTrack,applyActionTrack}=await import('../js/features/pixel-bible/action-tracks.js');
  for(const gesture of ['scoop','pour','drink','sip','wash','rinse','shake','kick','bonk','tie','coil','row','back-row','knead','press','divide','portion','pick','place','sort','measure','repair','wipe','brush','gather','sow','read','open','close','step-back','lean','shade','hold','offer','sling','load-sling','look','observe','inspect','point','hands','sit','lap','stretch','serve','guard','brace','thrust','swing','fletch','count','cover','play','pluck','long-blow','rehearse','balance','remove-weight','polish','smooth','lie','sleep','tuck'])assert.ok(actionTrack(gesture),`${gesture} needs an authored track`);

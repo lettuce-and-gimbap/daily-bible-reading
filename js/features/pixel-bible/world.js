@@ -1217,9 +1217,10 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   const x=Math.round(anchor.x)+pose.x+(actionPose?.impactX||0),y=Math.round(anchor.y)+pose.y-rise+(actionPose?.impactY||0);
   if(n.prominent){c.save();c.globalAlpha=reduced?.6:.45+.15*Math.sin(time*2);c.fillStyle='#f6d782';c.beginPath();c.ellipse(x,y+4,23,7,0,0,Math.PI*2);c.fill();c.strokeStyle='#fff0b3';c.lineWidth=2;c.stroke();c.restore();}
   if(n.encounter){c.save();c.globalAlpha=reduced?.8:.68+.22*Math.sin(time*7);c.strokeStyle='#f4cf70';c.fillStyle='#f4cf7038';c.lineWidth=2;c.beginPath();c.ellipse(x,y+4,21+Math.round(Math.sin(time*7)),6,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
-  c.save();c.translate(x,y-28);c.rotate(n.collisionStun?(actionPose?.impactTilt||0):pose.tilt);c.translate(-x,-y+28);
+  c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
-  drawPixelCharacter(c,style,x,y+(acting&&!actionPose?.lie&&!actionPose?.scripted?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced&&!actionPose?.scripted?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.collisionStun?'surprised':n.waterEscape?'worried':actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected:selected||!!n.encounter});
+  const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):0;
+  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,reduced});
   }
@@ -1235,10 +1236,11 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
 
 function drawLifted(c,drag,time,reduced=false) {
   const origin=grabbedOrigin(drag),x=origin.x*TILE,y=origin.y*TILE;
-  const lift=hangingPose(drag.n.motion,time,drag.vx,reduced),angle=lift.angle;
+  const lift=hangingPose(drag.n.motion,time,drag.vx,reduced),sway=reduced?0:Math.round(Math.sin(time*5+lift.phase)*2);
   c.fillStyle='#18352b55';c.fillRect(x-19,y+8,38,8);
-  // 집은 픽셀 자체를 회전 중심으로 삼아 대롱거려도 커서와 떨어지지 않는다.
-  c.save();c.translate(drag.p.x*TILE,drag.p.y*TILE);c.rotate(angle);c.translate(-drag.p.x*TILE,-drag.p.y*TILE);
-  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,direction:'down',walkFrame:0,interaction:lift.pose,expression:lift.expression,selected:true});
+  // Keep the original pixel sprite rigid: swinging changes placement, never
+  // rotates/interpolates the face and body pixels themselves.
+  c.save();c.translate(sway,0);
+  drawPixelCharacter(c,characterStyle(drag.n.name,drag.index,drag.n.role,drag.n.refs,drag.n.creature||false),x,y,{scale:2,direction:'down',walkFrame:0,motionOnly:!drag.n.creature,baseExpression:'neutral',selected:true});
   c.restore();c.fillStyle='#fff0bf';c.font='13px "DungGeunMo", monospace';c.textAlign='center';c.fillText(displayPersonName(drag.n.name),x,y+28);
 }

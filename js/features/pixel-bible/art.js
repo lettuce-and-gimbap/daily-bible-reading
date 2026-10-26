@@ -10,6 +10,7 @@ import { drawCatalogDetail } from './catalog-art.js';
 import { OBJECT_CATALOG } from './object-catalog.js';
 import { drawDirectionalCharacter } from './directions.js';
 import { backgroundFor } from './backgrounds.js';
+import { characterSpriteFrame } from './character-motion.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
@@ -18,20 +19,22 @@ export const characterStyle = (name,index,role,refs,creature=null)=>{const d=cre
 const spriteCache=new Map();
 export function drawPixelCharacter(ctx,style,x,y,options={}) {
  const {scale=3,walk=0,action='',time=0,hanging=false,selected=false}=options;
+ const motionOnly=options.motionOnly===true;
  const scaleX=scale*(style.creature?1:style.physique?.width||1),scaleY=scale*(style.creature?1:style.physique?.height||1);
  const renderX=Math.round(x-32*scaleX),renderY=Math.round(y-52*scaleY),renderWidth=Math.round(64*scaleX),renderHeight=Math.round(64*scaleY);
  const direction=hanging?'down':options.interaction?.lie?'down':options.interaction?.archery?(options.direction==='left'?'left':'right'):(options.direction||'down');
- const frame=options.walkFrame??(walk>.35?1:walk<-.35?3:0);
+ const spriteFrame=characterSpriteFrame({motionOnly,walkFrame:options.walkFrame??(walk>.35?1:walk<-.35?3:0),action,interaction:options.interaction,expression:options.expression,baseExpression:options.baseExpression});
+ const frame=spriteFrame.walkFrame;
  const step=[0,1,0,-1][frame%4];
- const pose=options.interaction||null;
- const renderAction=OBJECT_CATALOG[action]?.action||action;
+ const pose=spriteFrame.interaction||null;
+ const renderAction=OBJECT_CATALOG[spriteFrame.action]?.action||spriteFrame.action;
  let activeStyle=pose?{...style,staff:false,scroll:false,grain:false,grapes:false,net:false,lyre:false,tambourine:false}:style;
  if(pose?.wearing){
   const kind=pose.outfit,headgear=['crown','helmet','sandal','belt','breastplate'].includes(kind);
   activeStyle={...activeStyle,...(!headgear?{coat:garmentColor(kind),mantle:kind==='cloak',pattern:pose.actual==='wear-pattern',trim:'#dacb96'}:{}),
    crown:kind==='helmet'?false:kind==='crown'||activeStyle.crown,turban:['helmet','crown'].includes(kind)?false:activeStyle.turban,helmet:kind==='helmet',belt:kind==='belt'||activeStyle.belt,apron:kind==='ephod'||activeStyle.apron,plate:['armor','breastplate'].includes(kind),fur:kind==='sackcloth'||activeStyle.fur,sandal:kind==='sandal'};
  }
- const expression=options.expression||'neutral';
+ const expression=spriteFrame.expression||'neutral';
  const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose?{...pose,within:0}:null,expression]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
@@ -64,6 +67,18 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
   if(motion.key==='steady'||motion.limp)ctx.translate(0,Math.round(Math.sin(beat/2)*scale*.5));
   ctx.translate(-x,-y+33*scale);
  }
+ // Align the sprite origin to the final canvas pixel grid. Camera zoom can be
+ // fractional; snapping only its translation prevents shimmer without changing
+ // the sprite's scale, proportions, or source pixels.
+ const transform=ctx.getTransform?.();let drawX=renderX,drawY=renderY;
+ if(transform){
+  const det=transform.a*transform.d-transform.b*transform.c;
+  if(Math.abs(det)>1e-9){
+   const sx=transform.a*renderX+transform.c*renderY+transform.e,sy=transform.b*renderX+transform.d*renderY+transform.f;
+   const dx=Math.round(sx)-sx,dy=Math.round(sy)-sy;
+   drawX+=(transform.d*dx-transform.c*dy)/det;drawY+=(-transform.b*dx+transform.a*dy)/det;
+  }
+ }
  if(selected){
   if(!sprite.outline){
    const mask=document.createElement('canvas');mask.width=64;mask.height=64;const m=mask.getContext('2d');
@@ -75,9 +90,9 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
    }
    m.putImageData(pixels,0,0);sprite.outline=mask;
   }
-  const alpha=ctx.globalAlpha;ctx.globalAlpha*=.8+.2*Math.sin(time*4);ctx.drawImage(sprite.outline,renderX,renderY,renderWidth,renderHeight);ctx.globalAlpha=alpha;
+  const alpha=ctx.globalAlpha;ctx.globalAlpha*=.9;ctx.drawImage(sprite.outline,drawX,drawY,renderWidth,renderHeight);ctx.globalAlpha=alpha;
  }
- ctx.drawImage(sprite.canvas,renderX,renderY,renderWidth,renderHeight);ctx.restore();
+ ctx.drawImage(sprite.canvas,drawX,drawY,renderWidth,renderHeight);ctx.restore();
 }
 function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = "", facing = 1, time = 0, hanging = false, pose=null, expression="neutral" } = {}) {
   // 24×38 base sprite: head occupies 16×16; neck and longer torso remain visible.
