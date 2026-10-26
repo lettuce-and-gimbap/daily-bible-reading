@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "2th",
-    "nextBook": "1ti",
-    "booksCompleted": 53,
+    "currentBook": "1ti",
+    "nextBook": "2ti",
+    "booksCompleted": 54,
     "completedBooks": [
       "gen",
       "exo",
@@ -350,10 +350,11 @@
       "php",
       "col",
       "1th",
-      "2th"
+      "2th",
+      "1ti"
     ],
-    "chaptersReviewed": 1123,
-    "relationshipLinksReviewed": 3719,
+    "chaptersReviewed": 1129,
+    "relationshipLinksReviewed": 3741,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -364,31 +365,34 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "데살로니가후서 3장 전체에서 바울의 위로와 주의 날에 관한 가르침, 공동체 질서와 선행 권면 3묶음·6문장에 개별 구절 참조를 연결했다. 불안과 게으름에 대한 권면을 해당 문맥에 맞추고 관계 연결 11개를 확인했다. 다음은 디모데전서다.",
+    "statusNote": "디모데전서 6장 전체에서 바울의 교회 질서, 기도와 중보, 디모데를 향한 목회 지침, 경건과 재물에 대한 경계를 6묶음·12문장으로 정리하고 문장별 구절 참조를 연결했다. 장로·과부·종과 주인에 관한 권면도 해당 장의 문맥으로 구별했고 관계 연결 22개를 확인했다. 다음은 디모데후서다.",
     "partialBookAudit": {
-      "book": "2th",
-      "chaptersScanned": 3,
-      "chaptersWithAuthoredDialogueReviewed": 3,
-      "authoredUtteranceGroupsReviewed": 3,
-      "utteranceReferencesCorrected": 6,
-      "chapterDialogueAudit": 3,
+      "book": "1ti",
+      "chaptersScanned": 6,
+      "chaptersWithAuthoredDialogueReviewed": 6,
+      "authoredUtteranceGroupsReviewed": 6,
+      "utteranceReferencesCorrected": 12,
+      "chapterDialogueAudit": 6,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 11,
+      "relationshipEdgesAudited": 22,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 11,
-      "relationshipLinksFound": 11,
+      "relationshipBasedPairLines": 22,
+      "relationshipLinksFound": 22,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 11,
+      "generatedLinksRemaining": 22,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
         2,
-        3
+        3,
+        4,
+        5,
+        6
       ],
-      "statusNote": "데살로니가후서 3장 전체에서 바울의 위로와 주의 날에 관한 가르침, 공동체 질서와 선행 권면 3묶음·6문장에 개별 구절 참조를 연결했다. 불안과 게으름에 대한 권면을 해당 문맥에 맞추고 관계 연결 11개를 확인했다. 다음은 디모데전서다."
+      "statusNote": "디모데전서 6장 전체에서 바울의 교회 질서, 기도와 중보, 디모데를 향한 목회 지침, 경건과 재물에 대한 경계를 6묶음·12문장으로 정리하고 문장별 구절 참조를 연결했다. 장로·과부·종과 주인에 관한 권면도 해당 장의 문맥으로 구별했고 관계 연결 22개를 확인했다. 다음은 디모데후서다."
     },
     "currentBookStatus": "complete"
   }
