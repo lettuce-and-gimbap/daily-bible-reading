@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "1ti",
-    "nextBook": "2ti",
-    "booksCompleted": 54,
+    "currentBook": "2ti",
+    "nextBook": "tit",
+    "booksCompleted": 55,
     "completedBooks": [
       "gen",
       "exo",
@@ -351,10 +351,11 @@
       "col",
       "1th",
       "2th",
-      "1ti"
+      "1ti",
+      "2ti"
     ],
-    "chaptersReviewed": 1129,
-    "relationshipLinksReviewed": 3741,
+    "chaptersReviewed": 1133,
+    "relationshipLinksReviewed": 3759,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -365,22 +366,22 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "디모데전서 6장 전체에서 바울의 교회 질서, 기도와 중보, 디모데를 향한 목회 지침, 경건과 재물에 대한 경계를 6묶음·12문장으로 정리하고 문장별 구절 참조를 연결했다. 장로·과부·종과 주인에 관한 권면도 해당 장의 문맥으로 구별했고 관계 연결 22개를 확인했다. 다음은 디모데후서다.",
+    "statusNote": "디모데후서 4장 전체에서 바울의 마지막 권면과 디모데를 향한 당부 4묶음·8문장을 개별 절 근거에 연결했다. 두려움 대신 담대함, 복음의 고난, 성경의 역할, 말씀 선포와 사명의 완주를 장면·문맥에 맞게 살피고 관계 연결 18개를 확인했다. 다음은 디도서다.",
     "partialBookAudit": {
-      "book": "1ti",
-      "chaptersScanned": 6,
-      "chaptersWithAuthoredDialogueReviewed": 6,
-      "authoredUtteranceGroupsReviewed": 6,
-      "utteranceReferencesCorrected": 12,
-      "chapterDialogueAudit": 6,
+      "book": "2ti",
+      "chaptersScanned": 4,
+      "chaptersWithAuthoredDialogueReviewed": 4,
+      "authoredUtteranceGroupsReviewed": 4,
+      "utteranceReferencesCorrected": 8,
+      "chapterDialogueAudit": 4,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 22,
+      "relationshipEdgesAudited": 18,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 22,
-      "relationshipLinksFound": 22,
+      "relationshipBasedPairLines": 18,
+      "relationshipLinksFound": 18,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 22,
+      "generatedLinksRemaining": 18,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -388,11 +389,9 @@
         1,
         2,
         3,
-        4,
-        5,
-        6
+        4
       ],
-      "statusNote": "디모데전서 6장 전체에서 바울의 교회 질서, 기도와 중보, 디모데를 향한 목회 지침, 경건과 재물에 대한 경계를 6묶음·12문장으로 정리하고 문장별 구절 참조를 연결했다. 장로·과부·종과 주인에 관한 권면도 해당 장의 문맥으로 구별했고 관계 연결 22개를 확인했다. 다음은 디모데후서다."
+      "statusNote": "디모데후서 4장 전체에서 바울의 마지막 권면과 디모데를 향한 당부 4묶음·8문장을 개별 절 근거에 연결했다. 두려움 대신 담대함, 복음의 고난, 성경의 역할, 말씀 선포와 사명의 완주를 장면·문맥에 맞게 살피고 관계 연결 18개를 확인했다. 다음은 디도서다."
     },
     "currentBookStatus": "complete"
   }
