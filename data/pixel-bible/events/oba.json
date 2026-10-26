@@ -29,18 +29,14 @@
       "id": "ot-oba-extra-1-0",
       "code": "oba",
       "chapter": 1,
-      "title": "에돔의 요새와 교만을 낮추다",
+      "title": "에돔의 보물과 동맹이 무너지다",
       "actors": [
         "오바댜",
         "에돔(에서)"
       ],
       "object": "scene-marker",
-      "ref": "오바댜 1:1-9",
+      "ref": "오바댜 1:5-9",
       "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
         5,
         6,
         7,
@@ -49,13 +45,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 바위 틈의 높은 거처를 믿는 에돔의 교만과 동맹국의 배신을 예언의 상징으로 보여 줘요."
+        "해설: 남겨 두는 도둑이나 포도 수확자와 달리 철저한 약탈이 예고돼요. 동맹과 함께 먹던 이들의 배신, 지혜와 용사들의 무력함을 심판의 상징으로 보여 줘요."
       ],
-      "study": "바위 틈의 높은 거처를 믿는 에돔의 교만과 동맹국의 배신을 예언의 상징으로 보여 줘요.",
+      "study": "남겨 두는 도둑이나 포도 수확자와 달리 철저한 약탈이 예고돼요. 동맹과 함께 먹던 이들의 배신, 지혜와 용사들의 무력함을 심판의 상징으로 보여 줘요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":"에돔(에서)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":"에돔(에서)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-oba-extra-1-1",
@@ -140,6 +136,31 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"promise","lead":"구원자들","target":"야곱 족속","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"구원자들"},{"action":"lift","duration":1.2,"actor":"구원자들"},{"action":"speak","duration":1.5,"actor":"구원자들"},{"action":"bless","duration":1.8,"actor":"구원자들"},{"action":"lower","duration":1.5,"actor":"구원자들"},{"action":"bow","duration":1.2,"actor":"구원자들"}],"duration":8.2,"support":null,"ref":"오바댜 1:19-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-oba-extra-1-4",
+      "code": "oba",
+      "chapter": 1,
+      "title": "에돔을 향한 심판의 소식이 전해지다",
+      "actors": [
+        "오바댜",
+        "에돔(에서)"
+      ],
+      "object": "scene-marker",
+      "ref": "오바댜 1:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 오바댜의 묵시는 에돔을 향한 경고로 시작돼요. 나라들 사이에 전해진 싸움의 소식과 작아지고 멸시받을 에돔의 처지를 예언의 서두로 보여 줘요."
+      ],
+      "study": "오바댜의 묵시는 에돔을 향한 경고로 시작돼요. 나라들 사이에 전해진 싸움의 소식과 작아지고 멸시받을 에돔의 처지를 예언의 서두로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":"에돔(에서)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
