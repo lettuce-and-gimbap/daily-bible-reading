@@ -572,7 +572,7 @@ addLukeChapterTen(`
 많은 염려를 내려놓으라|예수께서 마르다에게 많은 일로 염려하고 근심한다고 말씀하세요.
 좋은 몫을 택한 마리아|예수께서 마리아가 좋은 몫을 택했고 그것을 빼앗기지 않는다고 하세요.
 `);
-const addLukeLongChapter=(chapter,sourceRows,ranges,extras,effects={})=>{const actionFix={reject:'turn',accuse:'speak',die:'fall',darken:'lower',mock:'speak',heal:'touch',promise:'speak',ask:'speak',approach:'walk',climb:'step',plant:'place',send:'release',question:'speak',answer:'speak',silence:'wait',appear:'look',endure:'brace',flee:'run',give:'release',quote:'read',report:'speak',judge:'point',spread:'place',praise:'bless',lead:'walk',surround:'gather',teach:'speak',raise:'lift',invite:'reach',recognize:'look',return:'walk',warn:'point',watch:'look',follow:'walk',argue:'speak',kiss:'touch',deny:'turn',blindfold:'cover',rest:'sleep',wrap:'cover',prepare:'place',approach:'walk',enter:'walk',whisper:'speak',search:'inspect',sweep:'smooth',embrace:'reach',shout:'speak',reconcile:'bow',store:'bundle',serve:'extend',grow:'sway',knock:'touch',wash:'smooth',think:'look',build:'place',share:'extend'},propFix={'hen-gather':'scene-marker',door:'gate','donkey-pair':'donkey','grape':'vine','fig-tree':'scene-marker','burial-cloth':'linen'};additionalPeople[chapter]=extras.map(name=>({name,role:`누가복음 ${chapter}장 관련 인물`,refs:[`누가복음 ${chapter}장`]}));chapters[chapter]=[];for(const [i,line]of sourceRows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,notice=chapter===17&&verse===36,g=ranges.find(x=>verse>=x.from&&verse<=x.to)||ranges.find(x=>notice&&x.from<=35&&x.to>=37)||ranges.at(-1),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:propFix[g.prop]||g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(notice){scene.actors=[];scene.tracks={};scene.textualNotice=true;scene.diagram={kind:'edition-note',label:'본문 없음',note:'개역개정4판과 쉬운성경 모두 이 절에 본문을 싣지 않아요.'};}if(effects[verse])scene.effect=effects[verse];chapters[chapter].push(scene)}};
+const addLukeLongChapter=(chapter,sourceRows,ranges,extras,effects={})=>{const actionFix={remove:'release',reject:'turn',accuse:'speak',die:'fall',darken:'lower',mock:'speak',heal:'touch',promise:'speak',ask:'speak',approach:'walk',climb:'step',plant:'place',send:'release',question:'speak',answer:'speak',silence:'wait',appear:'look',endure:'brace',flee:'run',give:'release',quote:'read',report:'speak',judge:'point',spread:'place',praise:'bless',lead:'walk',surround:'gather',teach:'speak',raise:'lift',invite:'reach',recognize:'look',return:'walk',warn:'point',watch:'look',follow:'walk',argue:'speak',kiss:'touch',deny:'turn',blindfold:'cover',rest:'sleep',wrap:'cover',prepare:'place',approach:'walk',enter:'walk',whisper:'speak',search:'inspect',sweep:'smooth',embrace:'reach',shout:'speak',reconcile:'bow',store:'bundle',serve:'extend',grow:'sway',knock:'touch',wash:'smooth',think:'look',build:'place',share:'extend'},propFix={'hen-gather':'scene-marker',door:'gate','donkey-pair':'donkey','grape':'vine','fig-tree':'scene-marker','burial-cloth':'linen'};additionalPeople[chapter]=extras.map(name=>({name,role:`누가복음 ${chapter}장 관련 인물`,refs:[`누가복음 ${chapter}장`]}));chapters[chapter]=[];for(const [i,line]of sourceRows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,notice=chapter===17&&verse===36,g=ranges.find(x=>verse>=x.from&&verse<=x.to)||ranges.find(x=>notice&&x.from<=35&&x.to>=37)||ranges.at(-1),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:propFix[g.prop]||g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(notice){scene.actors=[];scene.tracks={};scene.textualNotice=true;scene.diagram={kind:'edition-note',label:'본문 없음',note:'개역개정4판과 쉬운성경 모두 이 절에 본문을 싣지 않아요.'};}if(effects[verse])scene.effect=effects[verse];chapters[chapter].push(scene)}};
 addLukeLongChapter(11,`
 기도를 마치신 예수께 묻는 제자|제자 한 사람이 요한처럼 기도를 가르쳐 달라고 예수께 청해요.
 아버지의 이름과 나라를 구하는 기도|예수께서 아버지의 이름이 거룩히 여김 받고 나라가 오기를 기도하라 하세요.
@@ -984,7 +984,8 @@ addLukeLongChapter(19,`
 기뻐하며 내려온 삭개오|삭개오는 서둘러 내려와 기쁜 마음으로 예수를 맞아요.
 죄인의 집이라 수군대는 무리|사람들은 예수가 죄인의 집에 들어간다고 수군거려요.
 재산을 나누겠다는 삭개오|삭개오는 재산 절반을 가난한 이들에게 주고 속여 빼앗은 것은 네 배로 갚겠다고 해요.
-오늘 임한 구원|예수께서는 이 사람도 아브라함의 자손이며 잃은 이를 찾아 구원하러 왔다고 하세요.
+오늘 임한 구원|예수께서는 이 사람도 아브라함의 자손이라고 하세요.
+잃은 이를 찾아오신 인자|인자가 온 것은 잃어버린 이를 찾아 구원하려는 것이라고 하세요.
 예루살렘 가까이의 비유|사람들이 하나님 나라가 곧 나타날 줄 생각하자 예수께서 비유를 더하세요.
 먼 나라로 떠나는 귀인|귀인이 왕위를 받아 돌아오려고 먼 나라로 떠나요.
 열 종에게 맡긴 은화|귀인은 종 열 명을 불러 은화 한 므나씩 맡기며 장사하라고 해요.
@@ -994,15 +995,20 @@ addLukeLongChapter(19,`
 열 고을을 맡기는 왕|왕은 충성한 종에게 열 고을을 다스리게 해요.
 다섯 므나의 보고|다른 종은 한 므나로 다섯 므나를 남겼다고 보고해요.
 다섯 고을을 맡긴 왕|왕은 그 종에게 다섯 고을을 맡겨요.
-수건에 감춘 한 므나|한 종은 주인을 엄한 사람이라 여겨 돈을 수건에 싸 두었다고 말해요.
-그 말로 판단받은 종|왕은 종의 말이 옳다면 은행에라도 맡겼어야 한다고 답해요.
+수건에 감춘 한 므나|한 종은 한 므나를 수건에 싸 두었다고 말해요.
+두려움을 핑계로 내놓은 종|그 종은 주인을 엄한 사람이라 두려워했다고 말해요.
+자기 말로 심판받는 종|왕은 종의 말로 그를 심판하며 왜 돈을 은행에 맡기지 않았느냐고 물어요.
+이자와 함께 찾을 수 있었던 돈|은행에 맡겼다면 돌아와 이자와 함께 찾았을 것이라고 하세요.
 한 므나를 빼앗아 열 므나 종에게|왕은 한 므나를 빼앗아 열 므나 가진 이에게 주라고 해요.
+곁에 선 이들의 항의|곁에 선 사람들이 그에게 이미 열 므나가 있다고 말해요.
 가진 이와 없는 이의 차이|가진 사람은 더 받고 없는 사람은 가진 줄 아는 것마저 빼앗긴다고 하세요.
 반대자들을 심판하라는 명령|왕은 왕 되기를 원치 않은 원수들을 데려와 심판하라고 해요.
 예루살렘을 향해 앞서가심|예수께서 이 말씀을 하시고 예루살렘으로 올라가세요.
 감람산 부근의 두 제자|예수께서 제자 둘을 맞은편 마을로 보내세요.
-아무도 타지 않은 나귀 새끼|두 제자는 매여 있는 나귀 새끼를 풀어 데려오라는 지시를 받아요.
+아무도 타지 않은 나귀 새끼|두 제자는 매여 있는 나귀 새끼를 풀라는 지시를 받아요.
+풀어 데려오라는 말씀|예수께서는 아직 아무도 타지 않은 나귀를 풀어 끌고 오라고 하세요.
 왜 푸느냐 묻는 주인들|나귀를 푸는 이들에게 주인들이 이유를 물어요.
+풀려난 나귀를 본 주인들|제자들이 나귀를 풀 때 주인들이 왜 푸느냐고 물어요.
 주께서 쓰신다는 대답|제자들은 주께서 쓰시겠다고 답하고 나귀를 예수께 데려와요.
 겉옷을 깔고 태워 드림|제자들이 자기 겉옷을 나귀 위에 얹고 예수를 태워요.
 겉옷을 길에 펴는 무리|예수께서 가시는 길에 사람들이 겉옷을 펼쳐 놓아요.
@@ -1016,8 +1022,7 @@ addLukeLongChapter(19,`
 돌 하나도 남지 않을 성전|예수께서는 방문의 때를 알아보지 못한 성이 무너질 것을 예고하세요.
 성전에 들어가신 예수|예수께서 성전에 들어가 장사하는 이들을 내쫓기 시작하세요.
 기도의 집을 강도의 소굴로|예수께서 성전은 기도하는 집인데 사람들이 강도의 소굴로 만들었다고 하세요.
-날마다 가르치시는 예수|예수께서 성전에서 날마다 가르치세요.
-죽이려는 지도자들|대제사장과 서기관과 지도자들이 예수를 죽일 방법을 찾아요.
+성전에서 날마다 가르치심|예수께서 성전에서 날마다 가르치시고 지도자들은 예수를 죽일 방법을 찾아요.
 말씀을 듣는 백성|백성은 예수의 말씀을 들으려고 성전에 모여 있어요.
 `,[
 {from:1,to:9,actors:["예수","삭개오","무리"],setting:"road",prop:"fig-tree",actions:["walk","run","climb","look","signal","gather"]},
@@ -1029,8 +1034,10 @@ addLukeLongChapter(19,`
 addLukeLongChapter(20,`
 성전에서 가르치시는 예수|예수께서 성전에서 백성을 가르치며 복음을 전하세요.
 권위를 따지는 지도자들|대제사장과 서기관과 장로들이 다가와 무슨 권위로 일하느냐고 물어요.
-권위의 근원을 되물으심|예수께서는 요한의 세례가 하늘에서 왔는지 사람에게서 왔는지 되물으세요.
+되묻기로 권위를 시험하심|예수께서 먼저 한 가지 물을 테니 답하라고 하세요.
+요한의 세례가 어디서 왔는가|예수께서 요한의 세례가 하늘에서 왔는지 사람에게서 왔는지 되물으세요.
 서로 의논하는 지도자들|지도자들은 하늘에서 왔다 하면 왜 믿지 않았느냐 들을까 염려해요.
+백성의 반응을 두려워함|사람들이 요한을 선지자로 여겨 돌을 던질까 걱정해요.
 모르겠다고 답한 지도자들|그들은 어디서 왔는지 모르겠다고 답하고 예수께서도 권위를 밝히지 않으세요.
 포도원과 농부의 비유|예수께서 포도원을 농부들에게 맡긴 주인의 이야기를 시작하세요.
 소출을 받으러 간 종|주인은 소출을 받으려고 종 하나를 농부들에게 보내요.
@@ -1041,31 +1048,37 @@ addLukeLongChapter(20,`
 상속자를 죽인 농부들|농부들은 상속자를 죽이면 유산이 자기들 것이 되리라며 아들을 포도원 밖에서 죽여요.
 농부를 심판할 주인|주인은 농부들을 멸하고 포도원을 다른 이들에게 맡길 것이라고 하세요.
 버린 돌이 모퉁잇돌이 됨|건축자들이 버린 돌이 모퉁이의 머릿돌이 된다고 하세요.
+돌에 걸려 부서지는 자|그 돌 위에 떨어지는 이는 깨지고 돌이 사람 위에 떨어지면 가루가 된다고 하세요.
 비유를 알아챈 지도자들|서기관과 대제사장들은 이 비유가 자신들을 가리킨 줄 알고 예수를 잡으려 해요.
 엿보는 정탐꾼들|지도자들이 예수의 말을 책잡으려고 정탐꾼을 보내요.
+진실한 척 다가온 정탐꾼들|정탐꾼들은 예수께서 사람을 외모로 취하지 않고 진리를 가르친다고 아첨해요.
 세금 질문으로 덫을 놓음|정탐꾼들은 가이사에게 세금을 내는 것이 옳으냐고 물어요.
 간계임을 아시는 예수|예수께서는 그들의 속셈을 알아차리고 데나리온을 보여 달라 하세요.
 동전의 형상과 글|예수께서 동전에 누구의 형상과 글이 있는지 물으세요.
 가이사의 것은 가이사에게|사람들은 가이사의 것이라 답하고 예수께서는 가이사의 것은 가이사에게 돌리라 하세요.
 하나님의 것은 하나님께|예수께서는 하나님의 것은 하나님께 바치라고 덧붙이세요.
-놀라며 잠잠해진 정탐꾼들|그들은 백성 앞에서 예수를 책잡지 못하고 답에 놀라 잠잠해져요.
+책잡지 못하고 놀란 정탐꾼들|정탐꾼들은 백성 앞에서 예수를 책잡지 못하고 답에 놀라 잠잠해져요.
 부활을 부정하는 사두개인들|부활이 없다고 믿는 사두개인들이 모세의 율법을 들어 질문해요.
-일곱 형제의 혼인 이야기|일곱 형제가 한 여인과 차례로 혼인했으나 자식 없이 죽었다고 설명해요.
+첫 형제의 혼인과 죽음|맏형이 혼인했지만 자식 없이 죽었다고 사두개인들이 설명해요.
+이어 혼인한 둘째와 셋째|둘째와 셋째도 차례로 그 여인과 혼인해요.
+차례로 혼인한 형제들|일곱 형제가 차례로 혼인했지만 자식 없이 죽어요.
+마지막에 죽은 여인|일곱 형제가 죽은 뒤 그 여인도 죽었다고 해요.
 부활 때 누구의 아내인가|사두개인들은 부활 때 여인이 누구의 아내가 되느냐고 물어요.
-현세의 혼인과 부활의 삶|예수께서는 이 세상의 혼인과 부활한 이들의 삶이 다르다고 설명하세요.
+이 세상의 혼인|예수께서는 이 세상의 자녀들은 장가들고 시집간다고 말씀하세요.
+부활에 합당한 이들의 삶|저 세상과 부활에 합당한 이들은 혼인하지 않는다고 하세요.
 천사와 같은 하나님의 자녀|부활에 참여한 이들은 죽을 수 없고 하나님의 자녀가 된다고 하세요.
 모세도 밝힌 부활|떨기나무 앞에서 모세가 하나님을 조상들의 하나님이라 부른 사실을 드세요.
 하나님은 산 자의 하나님|하나님께는 모든 사람이 살아 있다고 말씀하세요.
 옳은 답이라 인정한 서기관|서기관 몇이 선생님의 답이 옳다고 말해요.
 더 묻지 못하는 이들|사람들은 감히 예수께 더 묻지 못해요.
 다윗의 자손과 주님|예수께서 그리스도를 다윗의 자손이라 부르는 까닭을 물으세요.
-다윗이 주라 부른 그리스도|다윗이 시편에서 그리스도를 주라 부른 말씀을 인용하세요.
-원수들이 발 아래 놓일 때까지|그리스도께서 원수를 발판 삼으실 때까지 하나님 우편에 앉으신다고 하세요.
+다윗이 주라 부른 그리스도|다윗이 시편에서 주께서 내 주께 말씀하셨다는 구절을 인용하세요.
+하나님 우편의 그리스도|원수들이 발 아래 놓일 때까지 하나님 우편에 앉으라 하신 말씀을 풀이하세요.
+자손을 넘어서는 그리스도|다윗이 그리스도를 주라 불렀으니 어떻게 자손이라 하겠느냐고 물으세요.
 백성 앞의 경고|예수께서 제자들이 듣는 가운데 서기관들을 조심하라 하세요.
-긴 옷과 인사를 좋아하는 이들|서기관들은 긴 옷을 입고 시장에서 인사받기를 좋아해요.
+긴 옷과 시장의 인사|서기관들은 긴 옷을 입고 시장에서 인사받기를 좋아해요.
 회당의 높은 자리와 잔치 상석|그들은 회당의 높은 자리와 잔치의 윗자리를 탐내요.
 과부의 가산을 삼키는 위선|그들은 과부의 가산을 삼키고 보이려고 길게 기도한다고 하세요.
-더 엄중한 심판의 경고|예수께서는 그들이 더 큰 심판을 받을 것이라 말씀하세요.
 `,[
 {from:1,to:8,actors:["예수","대제사장들","서기관들","장로들"],setting:"temple",prop:"scroll",actions:["teach","gather","question","listen","signal","wait"]},
 {from:9,to:16,actors:["예수","포도원 주인","농부들","종들","아들"],setting:"vineyard",prop:"grape",actions:["plant","send","strike","return","release","fall"]},
@@ -1104,7 +1117,8 @@ addLukeLongChapter(21,`
 일어나 머리를 들라|이 일이 시작되면 구원이 가까우니 일어나 머리를 들라고 하세요.
 무화과나무와 모든 나무|무화과나무와 모든 나무에서 싹이 나면 여름이 가까운 줄 알아요.
 하나님 나라가 가까운 줄 알라|이런 일이 일어나는 것을 보면 하나님 나라가 가까운 줄 알라고 하세요.
-말씀은 사라지지 않음|하늘과 땅은 없어져도 예수의 말씀은 없어지지 않아요.
+하늘과 땅이 사라져도|하늘과 땅은 없어질 수 있다고 말씀하세요.
+말씀은 사라지지 않음|예수의 말씀은 없어지지 않는다고 하세요.
 방탕과 염려로 마음을 무겁게 말라|방탕과 술 취함과 생활의 염려로 마음이 둔해지지 않게 조심하라 하세요.
 뜻밖에 닥칠 그날|그날은 덫처럼 온 땅에 사는 모든 이에게 닥칠 거예요.
 깨어 기도하라|항상 깨어 기도하며 닥칠 일을 피하고 인자 앞에 서도록 하세요.
