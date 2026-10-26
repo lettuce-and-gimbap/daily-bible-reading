@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1343,
+    "scenesInFiles": 1346,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 629
+    "curatedSupplementalScenes": 632
   },
   "books": [
     {
@@ -194,10 +194,10 @@
     {
       "code": "ecc",
       "chapters": 12,
-      "scenes": 11,
+      "scenes": 13,
       "sourceMatchedSceneCandidates": 2,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 9
+      "curatedSupplementalScenes": 11
     },
     {
       "code": "sng",
@@ -330,10 +330,10 @@
     {
       "code": "zec",
       "chapters": 14,
-      "scenes": 21,
+      "scenes": 22,
       "sourceMatchedSceneCandidates": 5,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 16
+      "curatedSupplementalScenes": 17
     },
     {
       "code": "mal",
@@ -19940,7 +19940,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 1,
         "no-source-confirmed-actor-or-object": 2,
@@ -20160,7 +20160,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-object-only": 1,
@@ -27460,7 +27460,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-object-only": 2,
         "source-confirmed-actor-and-object": 1
@@ -28482,6 +28482,14 @@
       {
         "book": "2ch",
         "scenesAdded": 2
+      },
+      {
+        "book": "ecc",
+        "scenesAdded": 2
+      },
+      {
+        "book": "zec",
+        "scenesAdded": 1
       }
     ]
   }

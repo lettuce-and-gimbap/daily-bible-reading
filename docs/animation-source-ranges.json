@@ -123,8 +123,8 @@
     },
     {
       "code": "ecc",
-      "scenes": 11,
-      "passageRangesFound": 11,
+      "scenes": 13,
+      "passageRangesFound": 13,
       "missing": []
     },
     {
@@ -225,8 +225,8 @@
     },
     {
       "code": "zec",
-      "scenes": 21,
-      "passageRangesFound": 21,
+      "scenes": 22,
+      "passageRangesFound": 22,
       "missing": []
     },
     {

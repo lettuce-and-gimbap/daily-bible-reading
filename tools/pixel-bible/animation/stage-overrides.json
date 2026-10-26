@@ -645,7 +645,10 @@
       "mode": "illustration"
     },
     "9": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "스가랴 4:1-5",
+      "lead": "스가랴",
+      "target": "스룹바벨"
     },
     "10": {
       "mode": "illustration"
@@ -679,6 +682,9 @@
     },
     "20": {
       "mode": "illustration"
+    },
+    "21": {
+      "mode": "vision"
     }
   },
   "deu": {
@@ -745,7 +751,10 @@
       "mode": "illustration"
     },
     "6": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "전도서 5:18-20",
+      "lead": "전도자",
+      "target": "부자"
     },
     "7": {
       "mode": "illustration"
@@ -757,6 +766,15 @@
       "mode": "illustration"
     },
     "10": {
+      "mode": "illustration",
+      "ref": "전도서 12:1-8",
+      "lead": "전도자",
+      "target": "청년"
+    },
+    "11": {
+      "mode": "illustration"
+    },
+    "12": {
       "mode": "illustration"
     }
   },
