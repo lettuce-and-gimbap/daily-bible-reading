@@ -494,6 +494,9 @@ test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이�
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
   assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);
  }
+ const decree=PAIR_DIALOGUE.find(entry=>entry.id==='pair-250');assert.match(decree.detail,/왕에게 직접 답한 말을 기록하지 않습니다/);
+ const request=PAIR_DIALOGUE.find(entry=>entry.id==='pair-251');assert.match(request.detail,/사람을 통한 요청과 응답/);
+ const objection=PAIR_DIALOGUE.find(entry=>entry.id==='pair-253');assert.match(objection.detail,/반대자들이 이유를 말한 문장을 싣지 않아/);
 });
 
 test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지고 형제·개혁·성벽 사건의 상대 응답을 확인한다',()=>{
