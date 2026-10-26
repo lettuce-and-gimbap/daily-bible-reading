@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "heb",
-    "nextBook": "jas",
-    "booksCompleted": 58,
+    "currentBook": "jas",
+    "nextBook": "1pe",
+    "booksCompleted": 59,
     "completedBooks": [
       "gen",
       "exo",
@@ -355,10 +355,11 @@
       "2ti",
       "tit",
       "phm",
-      "heb"
+      "heb",
+      "jas"
     ],
-    "chaptersReviewed": 1146,
-    "relationshipLinksReviewed": 3593,
+    "chaptersReviewed": 1151,
+    "relationshipLinksReviewed": 3607,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -369,22 +370,22 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "히브리서 13장 전체의 발화 후보 13묶음·26문장에 개별 절 참조를 연결했다. 그리스도의 대제사장직, 새 언약, 믿음의 증인, 인내의 경주, 공동체 권면을 논증 문맥과 대조하고 관계선 31개를 확인했다. 서신의 비유·과거 인물 회고를 현장 대화로 바꾸지 않았다. 진행 누계는 완료 권들의 장별 관계선을 다시 합산해 3,593개로 바로잡았다. 다음은 야고보서다.",
+    "statusNote": "야고보서 5장 전체에서 시험과 인내, 행함이 있는 믿음, 혀와 지혜, 겸손, 부자에 대한 경고와 인내의 권면 5묶음·10문장에 절별 근거를 연결했다. 비유와 공동체 권면을 실제 인물 간 대화로 오인하지 않고 관계 연결 14개를 대조했다. 다음은 베드로전서다.",
     "partialBookAudit": {
-      "book": "heb",
-      "chaptersScanned": 13,
-      "chaptersWithAuthoredDialogueReviewed": 13,
-      "authoredUtteranceGroupsReviewed": 13,
-      "utteranceReferencesCorrected": 26,
-      "chapterDialogueAudit": 13,
+      "book": "jas",
+      "chaptersScanned": 5,
+      "chaptersWithAuthoredDialogueReviewed": 5,
+      "authoredUtteranceGroupsReviewed": 5,
+      "utteranceReferencesCorrected": 10,
+      "chapterDialogueAudit": 5,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 31,
+      "relationshipEdgesAudited": 14,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 31,
-      "relationshipLinksFound": 31,
+      "relationshipBasedPairLines": 14,
+      "relationshipLinksFound": 14,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 31,
+      "generatedLinksRemaining": 14,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -393,17 +394,9 @@
         2,
         3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
+        5
       ],
-      "statusNote": "히브리서 13장 전체의 발화 후보 13묶음·26문장에 개별 절 참조를 연결했다. 그리스도의 대제사장직, 새 언약, 믿음의 증인, 인내의 경주, 공동체 권면을 논증 문맥과 대조하고 관계선 31개를 확인했다. 서신의 비유·과거 인물 회고를 현장 대화로 바꾸지 않았다. 진행 누계는 완료 권들의 장별 관계선을 다시 합산해 3,593개로 바로잡았다. 다음은 야고보서다."
+      "statusNote": "야고보서 5장 전체에서 시험과 인내, 행함이 있는 믿음, 혀와 지혜, 겸손, 부자에 대한 경고와 인내의 권면 5묶음·10문장에 절별 근거를 연결했다. 비유와 공동체 권면을 실제 인물 간 대화로 오인하지 않고 관계 연결 14개를 대조했다. 다음은 베드로전서다."
     },
     "currentBookStatus": "complete"
   }
