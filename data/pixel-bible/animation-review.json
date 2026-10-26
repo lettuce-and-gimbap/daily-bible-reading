@@ -146,15 +146,16 @@
     },
     {
       "code": "1ki",
-      "payloadSha256": "e31d3c91cf9114bf8f755fb3c4fd6b81e63a5a6ca5451b4f4c4a192b458a4bb8",
-      "scenes": 66,
-      "existing": 66,
+      "payloadSha256": "1f3d998f123d46553fa9eda9b964a9e207fe06ddb35f077b8ca607dffee0e347",
+      "scenes": 73,
+      "existing": 73,
       "restored": 0,
       "corrected": 9,
-      "planned": 66,
+      "planned": 73,
       "modes": {
         "reconstruction": 65,
-        "vision": 1
+        "vision": 1,
+        "illustration": 7
       },
       "status": "authored-awaiting-browser-review"
     },
