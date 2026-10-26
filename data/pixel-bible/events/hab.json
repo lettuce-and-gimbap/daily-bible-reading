@@ -24,7 +24,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
-      "animation": {"version":2,"motif":"write","lead":"하박국","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"writing-tablet","beats":[{"action":"inspect","duration":1,"actor":"하박국"},{"action":"grasp","duration":1.2,"actor":"하박국"},{"action":"open","duration":1.5,"actor":"하박국"},{"action":"read","duration":1.8,"actor":"하박국"},{"action":"write","duration":1.5,"actor":"하박국"},{"action":"place","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "write",
+        "lead": "하박국",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "writing-tablet",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 2:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-1-0",
@@ -51,7 +97,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"하박국","target":"유다의 악인","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"kneel","duration":1.2,"actor":"하박국"},{"action":"lift","duration":1.5,"actor":"하박국"},{"action":"pray","duration":1.8,"actor":"하박국"},{"action":"pray","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 1:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "pray",
+        "lead": "하박국",
+        "target": "유다의 악인",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 1:1-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-1-1",
@@ -87,7 +179,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"dispute","lead":"하박국","target":"갈대아 사람","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"turn","duration":1.2,"actor":"하박국"},{"action":"point","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"lower","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 1:5-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "하박국",
+        "target": "갈대아 사람",
+        "mode": "illustration",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 1:5-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-2-0",
@@ -112,7 +250,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"read","duration":1.2,"actor":"하박국"},{"action":"look","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:4-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "하박국",
+        "target": "교만한 자(갈대아)",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 2:4-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-2-1",
@@ -151,7 +335,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"turn","duration":1.2,"actor":"하박국"},{"action":"speak","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"lower","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:6-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "하박국",
+        "target": "교만한 자(갈대아)",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 2:6-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-3-0",
@@ -189,7 +419,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"하박국","target":"하나님의 백성","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"kneel","duration":1.2,"actor":"하박국"},{"action":"lift","duration":1.5,"actor":"하박국"},{"action":"pray","duration":1.8,"actor":"하박국"},{"action":"pray","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 3:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "pray",
+        "lead": "하박국",
+        "target": "하나님의 백성",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 3:1-15",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-hab-extra-3-1",
@@ -215,7 +491,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"praise","lead":"하박국","target":null,"mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"하박국"},{"action":"sway","duration":1.2,"actor":"하박국"},{"action":"step","duration":1.5,"actor":"하박국"},{"action":"sway","duration":1.8,"actor":"하박국"},{"action":"step","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 3:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "praise",
+        "lead": "하박국",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "music",
+        "emotion": "joy",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "lift",
+            "duration": 1,
+            "actor": "하박국"
+          },
+          {
+            "action": "sway",
+            "duration": 1.2,
+            "actor": "하박국"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "sway",
+            "duration": 1.8,
+            "actor": "하박국"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "하박국"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "하박국"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "하박국 3:16-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {}
