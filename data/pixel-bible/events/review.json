@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 777,
+    "scenesInFiles": 803,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 63
+    "curatedSupplementalScenes": 89
   },
   "books": [
     {
@@ -107,9 +107,10 @@
     {
       "code": "2sa",
       "chapters": 24,
-      "scenes": 64,
+      "scenes": 90,
       "sourceMatchedSceneCandidates": 64,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 26
     },
     {
       "code": "1ki",
@@ -9111,7 +9112,8 @@
           "title": "아브넬이 세운 이스보셋",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9144,7 +9146,8 @@
           "title": "다윗의 금식과 백성의 이해",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9202,7 +9205,8 @@
           "title": "뽕나무 숲 뒤의 승리",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9227,7 +9231,8 @@
           "title": "웃사의 죽음",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9252,7 +9257,8 @@
           "title": "겸손한 감사 기도",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9339,7 +9345,8 @@
           "title": "헬람의 큰 싸움",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9368,7 +9375,8 @@
           "title": "악하게 보신 일",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9397,7 +9405,8 @@
           "title": "솔로몬과 여디디야",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9430,7 +9439,8 @@
           "title": "그술로 도망",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9464,7 +9474,8 @@
           "title": "압살롬의 외모와 가족",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9493,7 +9504,8 @@
           "title": "감람산의 눈물",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9545,7 +9557,8 @@
           "title": "마하나임의 도움",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9574,7 +9587,8 @@
           "title": "내 아들 압살롬아",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9612,7 +9626,8 @@
           "title": "유다와 이스라엘의 다툼",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "2sa",
@@ -9670,7 +9685,8 @@
           "title": "리스바의 애곡",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9742,7 +9758,8 @@
           "title": "삼십 용사 명단",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "2sa",
@@ -9775,7 +9792,8 @@
           "title": "세 가지 벌",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1ki",
@@ -28130,6 +28148,10 @@
       {
         "book": "1sa",
         "scenesAdded": 35
+      },
+      {
+        "book": "2sa",
+        "scenesAdded": 26
       }
     ]
   }

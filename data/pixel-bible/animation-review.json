@@ -128,15 +128,15 @@
     },
     {
       "code": "2sa",
-      "payloadSha256": "49505372d489c53224c3538fa520e1ca410df0586c1426496761dfccc03adfbd",
-      "scenes": 64,
-      "existing": 64,
+      "payloadSha256": "779b78e8e3f489865940aed0c8b44e8c0f47479db9c77d5072e317df712727d5",
+      "scenes": 90,
+      "existing": 90,
       "restored": 0,
       "corrected": 21,
-      "planned": 64,
+      "planned": 90,
       "modes": {
-        "reconstruction": 63,
-        "illustration": 1
+        "reconstruction": 88,
+        "illustration": 2
       },
       "status": "authored-awaiting-browser-review"
     },
