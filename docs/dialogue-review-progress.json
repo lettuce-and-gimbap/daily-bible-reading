@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "rom",
-    "nextBook": "1co",
-    "booksCompleted": 45,
+    "currentBook": "1co",
+    "nextBook": "2co",
+    "booksCompleted": 46,
     "completedBooks": [
       "gen",
       "exo",
@@ -342,10 +342,11 @@
       "luk",
       "jhn",
       "act",
-      "rom"
+      "rom",
+      "1co"
     ],
-    "chaptersReviewed": 1066,
-    "relationshipLinksReviewed": 3520,
+    "chaptersReviewed": 1082,
+    "relationshipLinksReviewed": 3574,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -356,9 +357,9 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "로마서 16장 전체를 대조해 바울의 논증 발화 16묶음·32문장에 개별 절 참조를 지정했다. 죄와 믿음으로 의롭다 함, 아브라함의 믿음, 죄와 은혜, 성령 안의 생명, 이스라엘과 이방인, 공동체의 사랑과 화평, 동역자 인사를 장별 핵심 문맥에 맞춰 다시 확인했다. 관계 연결 49개를 함께 검토했으며, 편지의 논증을 인물 간 현장 대화처럼 꾸미지 않았다. 전권 구조 테스트 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도전서다.",
+    "statusNote": "고린도전서 16장을 훑어 바울의 권면 16묶음·32문장에 개별 절 참조를 연결했다. 십자가와 지혜, 교회 분열, 공동체 윤리, 은사와 사랑, 예배 질서, 부활, 연보와 동역자 인사를 해당 장의 논증 흐름에 맞춰 확인했다. 관계 연결 54개를 함께 검토했다. 서신의 논증을 실제 현장에 있던 두 인물의 대화로 꾸미지 않았다. 전권 구조 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도후서다.",
     "partialBookAudit": {
-      "book": "rom",
+      "book": "1co",
       "chaptersScanned": 16,
       "chaptersWithAuthoredDialogueReviewed": 16,
       "authoredUtteranceGroupsReviewed": 16,
@@ -366,12 +367,12 @@
       "chapterDialogueAudit": 16,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 49,
+      "relationshipEdgesAudited": 54,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 49,
-      "relationshipLinksFound": 49,
+      "relationshipBasedPairLines": 54,
+      "relationshipLinksFound": 54,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 49,
+      "generatedLinksRemaining": 54,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -393,7 +394,7 @@
         15,
         16
       ],
-      "statusNote": "로마서 16장 전체를 대조해 바울의 논증 발화 16묶음·32문장에 개별 절 참조를 지정했다. 죄와 믿음으로 의롭다 함, 아브라함의 믿음, 죄와 은혜, 성령 안의 생명, 이스라엘과 이방인, 공동체의 사랑과 화평, 동역자 인사를 장별 핵심 문맥에 맞춰 다시 확인했다. 관계 연결 49개를 함께 검토했으며, 편지의 논증을 인물 간 현장 대화처럼 꾸미지 않았다. 전권 구조 테스트 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도전서다."
+      "statusNote": "고린도전서 16장을 훑어 바울의 권면 16묶음·32문장에 개별 절 참조를 연결했다. 십자가와 지혜, 교회 분열, 공동체 윤리, 은사와 사랑, 예배 질서, 부활, 연보와 동역자 인사를 해당 장의 논증 흐름에 맞춰 확인했다. 관계 연결 54개를 함께 검토했다. 서신의 논증을 실제 현장에 있던 두 인물의 대화로 꾸미지 않았다. 전권 구조 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도후서다."
     },
     "currentBookStatus": "complete"
   }
