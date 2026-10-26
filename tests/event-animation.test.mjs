@@ -47,3 +47,16 @@ test('두 번째 배우가 행동 주체여도 두 인물이 서로를 향해 �
  const layout=eventLayout(sampleEvent(scene,cast,0));assert.equal(scene.animation.lead,'사무엘');
  assert.equal(layout.positions[1].direction,'right');assert.equal(layout.positions[0].direction,'left');assert.ok(layout.positions[1].x<layout.positions[0].x);
 });
+
+test('솔로몬의 즉위는 솔로몬이 왕위를 받고 다윗이 다시 대관하지 않는다',()=>{
+ const s=books.find(([code])=>code==='1ch')[1].scenes.find(s=>s.id==='ot-1ch-extra-29');
+ assert.equal(s.animation.lead,'솔로몬');assert(s.animation.beats.every(b=>b.actor==='솔로몬'));assert.equal(s.animation.beats.at(-1).action,'sit');
+});
+test('성전 봉헌의 제사장은 나팔을 불고 영광의 구름 앞에서 봉사를 멈춘다',()=>{
+ const scenes=books.find(([code])=>code==='2ch')[1].scenes,a=scenes.find(s=>s.id==='ot-2ch-5-2'),b=scenes.find(s=>s.id==='ot-2ch-5-3');
+ assert.equal(a.animation.prop,'trumpet');assert(a.animation.beats.some(x=>x.action==='blow'));assert.equal(b.animation.setting,'courtyard');assert(b.animation.beats.some(x=>x.action==='halt'));assert.equal(b.animation.beats.at(-1).action,'kneel');
+});
+test('구약 장면의 공유 절은 찬양과 구름이 동시 발생하는 성전 봉헌 연결에만 남는다',()=>{
+ const overlaps=[];for(const [code,data]of books)for(let ch=1;ch<=150;ch++){const scenes=data.scenes.filter(s=>s.chapter===ch&&!s.id.startsWith('ot-voice-'));for(let i=0;i<scenes.length;i++)for(let j=i+1;j<scenes.length;j++){const a=scenes[i],b=scenes[j];if(a.verseNumbers.some(v=>b.verseNumbers.includes(v)))overlaps.push([code,...[a.id,b.id].sort()]);}}
+ assert.deepEqual(overlaps,[['2ch','ot-2ch-5-2','ot-2ch-5-3']]);
+});

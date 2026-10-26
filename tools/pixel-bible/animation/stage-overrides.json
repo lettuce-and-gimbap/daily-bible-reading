@@ -2108,6 +2108,80 @@
       "ref": "역대하 5:1",
       "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
     },
+    "6": {
+      "lead": "제사장들",
+      "target": null,
+      "setting": "courtyard",
+      "beats": [
+        {
+          "action": "grasp",
+          "duration": 1,
+          "actor": "제사장들"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "제사장들"
+        },
+        {
+          "action": "blow",
+          "duration": 1.5,
+          "actor": "제사장들"
+        },
+        {
+          "action": "blow",
+          "duration": 1.8,
+          "actor": "제사장들"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "제사장들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "제사장들"
+        }
+      ]
+    },
+    "7": {
+      "lead": "제사장들",
+      "target": null,
+      "setting": "courtyard",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "제사장들"
+        },
+        {
+          "action": "startle",
+          "duration": 1.2,
+          "actor": "제사장들"
+        },
+        {
+          "action": "halt",
+          "duration": 1.5,
+          "actor": "제사장들"
+        },
+        {
+          "action": "bow",
+          "duration": 1.8,
+          "actor": "제사장들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "제사장들"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "제사장들"
+        }
+      ]
+    },
     "47": {
       "version": 2,
       "motif": "craft",
@@ -2245,6 +2319,43 @@
     "30": {}
   },
   "1ch": {
+    "65": {
+      "lead": "솔로몬",
+      "target": "다윗",
+      "setting": "court",
+      "beats": [
+        {
+          "action": "bow",
+          "duration": 1,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "wear",
+          "duration": 1.8,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "rise",
+          "duration": 1.5,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "sit",
+          "duration": 1.2,
+          "actor": "솔로몬"
+        }
+      ]
+    },
     "67": {
       "mode": "illustration"
     },
