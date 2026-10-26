@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1925,
+    "scenesInFiles": 1928,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 1210
+    "curatedSupplementalScenes": 1213
   },
   "books": [
     {
@@ -154,10 +154,10 @@
     {
       "code": "neh",
       "chapters": 13,
-      "scenes": 31,
+      "scenes": 34,
       "sourceMatchedSceneCandidates": 12,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 19
+      "curatedSupplementalScenes": 22
     },
     {
       "code": "est",
@@ -12596,7 +12596,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-actor-only": 1,
@@ -12910,7 +12910,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 1,
         "source-confirmed-actor-and-object": 2,
@@ -12936,7 +12936,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 5,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "source-confirmed-object-only": 3,
         "source-confirmed-actor-only": 1,
@@ -28610,6 +28610,10 @@
       {
         "book": "ezr",
         "scenesAdded": 2
+      },
+      {
+        "book": "neh",
+        "scenesAdded": 3
       }
     ]
   }

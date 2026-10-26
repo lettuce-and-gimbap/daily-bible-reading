@@ -25,7 +25,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"느헤미야","target":"하나니","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"gate","beats":[{"action":"startle","duration":1,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"},{"action":"kneel","duration":1.5,"actor":"느헤미야"},{"action":"cover-mouth","duration":1.8,"actor":"느헤미야"},{"action":"mourn","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 1:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "느헤미야",
+        "target": "하나니",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "gate",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 1:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-1-2",
@@ -54,7 +100,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"느헤미야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"kneel","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"pray","duration":1.8,"actor":"느헤미야"},{"action":"pray","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 1:5-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "pray",
+        "lead": "느헤미야",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 1:5-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-3-0",
@@ -82,7 +174,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"build","lead":"엘리아십","target":"제사장들","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"sheep","beats":[{"action":"inspect","duration":1,"actor":"엘리아십"},{"action":"gather","duration":1.2,"actor":"엘리아십"},{"action":"lift","duration":1.5,"actor":"엘리아십"},{"action":"place","duration":1.8,"actor":"엘리아십"},{"action":"hammer","duration":1.5,"actor":"엘리아십"},{"action":"inspect","duration":1.2,"actor":"엘리아십"}],"duration":8.2,"support":null,"ref":"느헤미야 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "build",
+        "lead": "엘리아십",
+        "target": "제사장들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "sheep",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "엘리아십"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "엘리아십"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "엘리아십"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "엘리아십"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "엘리아십"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "엘리아십"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 3:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-3-3",
@@ -109,7 +247,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"build","lead":"제사장들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"sheep","beats":[{"action":"inspect","duration":1,"actor":"제사장들"},{"action":"gather","duration":1.2,"actor":"제사장들"},{"action":"lift","duration":1.5,"actor":"제사장들"},{"action":"place","duration":1.8,"actor":"제사장들"},{"action":"hammer","duration":1.5,"actor":"제사장들"},{"action":"inspect","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"느헤미야 3:28-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "build",
+        "lead": "제사장들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "sheep",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "제사장들"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "제사장들"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "제사장들"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "제사장들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 3:28-32",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-6-3",
@@ -136,7 +320,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"fortify","lead":"느헤미야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"wall","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"place","duration":1.8,"actor":"느헤미야"},{"action":"hammer","duration":1.5,"actor":"느헤미야"},{"action":"inspect","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 6:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "fortify",
+        "lead": "느헤미야",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 6:15-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-7-0",
@@ -162,7 +392,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"appoint","lead":"하나니","target":"하나냐","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"wall","beats":[{"action":"bow","duration":1,"actor":"하나니"},{"action":"kneel","duration":1.2,"actor":"하나니"},{"action":"receive","duration":1.5,"actor":"하나니"},{"action":"wear","duration":1.8,"actor":"하나니"},{"action":"rise","duration":1.5,"actor":"하나니"},{"action":"bow","duration":1.2,"actor":"하나니"}],"duration":8.2,"support":null,"ref":"느헤미야 7:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "appoint",
+        "lead": "하나니",
+        "target": "하나냐",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "crown",
+        "emotion": "joy",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "bow",
+            "duration": 1,
+            "actor": "하나니"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "하나니"
+          },
+          {
+            "action": "receive",
+            "duration": 1.5,
+            "actor": "하나니"
+          },
+          {
+            "action": "wear",
+            "duration": 1.8,
+            "actor": "하나니"
+          },
+          {
+            "action": "rise",
+            "duration": 1.5,
+            "actor": "하나니"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "하나니"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 7:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-8-0",
@@ -187,7 +463,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"read","lead":"에스라","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"book","beats":[{"action":"inspect","duration":1,"actor":"에스라"},{"action":"grasp","duration":1.2,"actor":"에스라"},{"action":"open","duration":1.5,"actor":"에스라"},{"action":"read","duration":1.8,"actor":"에스라"},{"action":"write","duration":1.5,"actor":"에스라"},{"action":"place","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"느헤미야 8:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "read",
+        "lead": "에스라",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 8:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-8-1",
@@ -214,7 +536,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"bow","lead":"에스라","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"book","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"lower","duration":1.2,"actor":"에스라"},{"action":"bow","duration":1.5,"actor":"에스라"},{"action":"listen","duration":1.8,"actor":"에스라"},{"action":"lower","duration":1.5,"actor":"에스라"},{"action":"stand","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"느헤미야 8:4-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "bow",
+        "lead": "에스라",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 8:4-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-12-1",
@@ -240,7 +608,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dedicate","lead":"백성","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"wall","beats":[{"action":"inspect","duration":1,"actor":"백성"},{"action":"gather","duration":1.2,"actor":"백성"},{"action":"lift","duration":1.5,"actor":"백성"},{"action":"extend","duration":1.8,"actor":"백성"},{"action":"release","duration":1.5,"actor":"백성"},{"action":"bow","duration":1.2,"actor":"백성"}],"duration":8.2,"support":null,"ref":"느헤미야 12:27-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dedicate",
+        "lead": "백성",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "백성"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "백성"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "백성"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "백성"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "백성"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "백성"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 12:27-30",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-12-2",
@@ -275,7 +689,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"march","lead":"에스라","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"wall","beats":[{"action":"grasp","duration":1,"actor":"에스라"},{"action":"lift","duration":1.2,"actor":"에스라"},{"action":"brace","duration":1.5,"actor":"에스라"},{"action":"carry","duration":1.8,"actor":"에스라"},{"action":"walk","duration":1.5,"actor":"에스라"},{"action":"lower","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"느헤미야 12:31-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "march",
+        "lead": "에스라",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "determined",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "grasp",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "brace",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "carry",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 12:31-43",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-31",
@@ -304,7 +764,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"build","lead":"느헤미야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"wall","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"place","duration":1.8,"actor":"느헤미야"},{"action":"hammer","duration":1.5,"actor":"느헤미야"},{"action":"inspect","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 2:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "build",
+        "lead": "느헤미야",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 2:17-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-32",
@@ -333,7 +839,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"read","lead":"에스라","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"inspect","duration":1,"actor":"에스라"},{"action":"grasp","duration":1.2,"actor":"에스라"},{"action":"open","duration":1.5,"actor":"에스라"},{"action":"read","duration":1.8,"actor":"에스라"},{"action":"write","duration":1.5,"actor":"에스라"},{"action":"place","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"느헤미야 8:5-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "read",
+        "lead": "에스라",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 8:5-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-01",
@@ -365,7 +917,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"request","lead":"느헤미야","target":"아닥사스다","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"kneel","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"pray","duration":1.8,"actor":"느헤미야"},{"action":"pray","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 2:4-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "request",
+        "lead": "느헤미야",
+        "target": "아닥사스다",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 2:4-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-02",
@@ -394,7 +992,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"scout","lead":"느헤미야","target":"유다 지도자들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"neutral","prop":"lamp","beats":[{"action":"look","duration":1,"actor":"느헤미야"},{"action":"walk","duration":1.2,"actor":"느헤미야"},{"action":"hide","duration":1.5,"actor":"느헤미야"},{"action":"peek","duration":1.8,"actor":"느헤미야"},{"action":"inspect","duration":1.5,"actor":"느헤미야"},{"action":"stand","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 2:11-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "scout",
+        "lead": "느헤미야",
+        "target": "유다 지도자들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "hide",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "peek",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 2:11-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-03",
@@ -421,7 +1065,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"dispute","lead":"느헤미야","target":"산발랏","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"turn","duration":1.2,"actor":"느헤미야"},{"action":"point","duration":1.5,"actor":"느헤미야"},{"action":"point","duration":1.8,"actor":"느헤미야"},{"action":"listen","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 2:19-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "느헤미야",
+        "target": "산발랏",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 2:19-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-04",
@@ -468,7 +1158,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"build","lead":"살룸","target":"살룸의 딸들","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"wall","beats":[{"action":"inspect","duration":1,"actor":"살룸"},{"action":"gather","duration":1.2,"actor":"살룸"},{"action":"lift","duration":1.5,"actor":"살룸"},{"action":"place","duration":1.8,"actor":"살룸"},{"action":"hammer","duration":1.5,"actor":"살룸"},{"action":"inspect","duration":1.2,"actor":"살룸"}],"duration":8.2,"support":null,"ref":"느헤미야 3:6-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "build",
+        "lead": "살룸",
+        "target": "살룸의 딸들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "살룸"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "살룸"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "살룸"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "살룸"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "살룸"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "살룸"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 3:6-27",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-05",
@@ -516,7 +1252,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"guard","lead":"느헤미야","target":"유다 백성","mode":"reconstruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"sword","beats":[{"action":"look","duration":1,"actor":"느헤미야"},{"action":"startle","duration":1.2,"actor":"느헤미야"},{"action":"extend","duration":1.5,"actor":"느헤미야"},{"action":"guard","duration":1.8,"actor":"느헤미야"},{"action":"turn","duration":1.5,"actor":"느헤미야"},{"action":"stand","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 4:1-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "guard",
+        "lead": "느헤미야",
+        "target": "유다 백성",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "shelter",
+        "emotion": "worried",
+        "prop": "sword",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "guard",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 4:1-23",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-06",
@@ -553,7 +1335,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"dispute","lead":"느헤미야","target":"가난한 백성","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"silver","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"turn","duration":1.2,"actor":"느헤미야"},{"action":"point","duration":1.5,"actor":"느헤미야"},{"action":"point","duration":1.8,"actor":"느헤미야"},{"action":"listen","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 5:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "느헤미야",
+        "target": "가난한 백성",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "silver",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 5:1-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-07",
@@ -592,7 +1420,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"conceal","lead":"느헤미야","target":"산발랏","mode":"reconstruction","setting":"water","effect":"cloth-decay","emotion":"determined","prop":"letter","beats":[{"action":"grasp","duration":1,"actor":"느헤미야"},{"action":"fold","duration":1.2,"actor":"느헤미야"},{"action":"carry","duration":1.5,"actor":"느헤미야"},{"action":"bury","duration":1.8,"actor":"느헤미야"},{"action":"wait","duration":1.5,"actor":"느헤미야"},{"action":"inspect","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 6:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "conceal",
+        "lead": "느헤미야",
+        "target": "산발랏",
+        "mode": "reconstruction",
+        "setting": "water",
+        "effect": "cloth-decay",
+        "emotion": "determined",
+        "prop": "letter",
+        "beats": [
+          {
+            "action": "grasp",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "fold",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bury",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 6:1-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-08",
@@ -687,7 +1561,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"느헤미야","target":"하나니","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"book","beats":[{"action":"look","duration":1,"actor":"느헤미야"},{"action":"listen","duration":1.2,"actor":"느헤미야"},{"action":"cradle","duration":1.5,"actor":"느헤미야"},{"action":"smile","duration":1.8,"actor":"느헤미야"},{"action":"bless","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 7:4-73","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "genealogy",
+        "lead": "느헤미야",
+        "target": "하나니",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "family",
+        "emotion": "gentle",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "cradle",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "smile",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 7:4-73",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-09",
@@ -722,7 +1642,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"feast","lead":"에스라","target":"느헤미야","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"에스라"},{"action":"walk","duration":1.2,"actor":"에스라"},{"action":"bow","duration":1.5,"actor":"에스라"},{"action":"extend","duration":1.8,"actor":"에스라"},{"action":"place","duration":1.5,"actor":"에스라"},{"action":"sit","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"느헤미야 8:9-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "feast",
+        "lead": "에스라",
+        "target": "느헤미야",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "tent",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 8:9-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-10",
@@ -785,7 +1751,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"repent","lead":"이스라엘 자손","target":"레위인들","mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 자손"},{"action":"startle","duration":1.2,"actor":"이스라엘 자손"},{"action":"grasp","duration":1.5,"actor":"이스라엘 자손"},{"action":"tear","duration":1.8,"actor":"이스라엘 자손"},{"action":"kneel","duration":1.5,"actor":"이스라엘 자손"},{"action":"pray","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"느헤미야 9:1-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "repent",
+        "lead": "이스라엘 자손",
+        "target": "레위인들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tear",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "이스라엘 자손"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "이스라엘 자손"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "이스라엘 자손"
+          },
+          {
+            "action": "tear",
+            "duration": 1.8,
+            "actor": "이스라엘 자손"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "이스라엘 자손"
+          },
+          {
+            "action": "pray",
+            "duration": 1.2,
+            "actor": "이스라엘 자손"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 9:1-38",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-11",
@@ -849,7 +1861,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"covenant","lead":"느헤미야","target":"제사장들","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"},{"action":"extend","duration":1.5,"actor":"느헤미야"},{"action":"pledge","duration":1.8,"actor":"느헤미야"},{"action":"read","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 10:1-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "covenant",
+        "lead": "느헤미야",
+        "target": "제사장들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "covenant",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "pledge",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "read",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 10:1-39",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-12",
@@ -910,7 +1968,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"lots","lead":"백성의 지도자들","target":"자원한 사람들","mode":"reconstruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"백성의 지도자들"},{"action":"grasp","duration":1.2,"actor":"백성의 지도자들"},{"action":"shake","duration":1.5,"actor":"백성의 지도자들"},{"action":"release","duration":1.8,"actor":"백성의 지도자들"},{"action":"inspect","duration":1.5,"actor":"백성의 지도자들"},{"action":"point","duration":1.2,"actor":"백성의 지도자들"}],"duration":8.2,"support":null,"ref":"느헤미야 11:1-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lots",
+        "lead": "백성의 지도자들",
+        "target": "자원한 사람들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "lots",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "read",
+            "duration": 1,
+            "actor": "백성의 지도자들"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "백성의 지도자들"
+          },
+          {
+            "action": "shake",
+            "duration": 1.5,
+            "actor": "백성의 지도자들"
+          },
+          {
+            "action": "release",
+            "duration": 1.8,
+            "actor": "백성의 지도자들"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.5,
+            "actor": "백성의 지도자들"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "백성의 지도자들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 11:1-36",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-13",
@@ -939,7 +2043,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"arrange","lead":"느헤미야","target":"레위인들","mode":"reconstruction","setting":"altar","effect":"arrange","emotion":"determined","prop":"treasure-chest","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"grasp","duration":1.2,"actor":"느헤미야"},{"action":"carry","duration":1.5,"actor":"느헤미야"},{"action":"place","duration":1.8,"actor":"느헤미야"},{"action":"inspect","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 12:44-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "arrange",
+        "lead": "느헤미야",
+        "target": "레위인들",
+        "mode": "reconstruction",
+        "setting": "altar",
+        "effect": "arrange",
+        "emotion": "determined",
+        "prop": "treasure-chest",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 12:44-47",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-14",
@@ -969,7 +2119,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"confiscate","lead":"느헤미야","target":"엘리아십","mode":"reconstruction","setting":"chamber","effect":"transfer","emotion":"worried","prop":"house","beats":[{"action":"walk","duration":1,"actor":"느헤미야"},{"action":"point","duration":1.2,"actor":"느헤미야"},{"action":"grasp","duration":1.5,"actor":"느헤미야"},{"action":"carry","duration":1.8,"actor":"느헤미야"},{"action":"turn","duration":1.5,"actor":"느헤미야"},{"action":"walk","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 13:4-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "confiscate",
+        "lead": "느헤미야",
+        "target": "엘리아십",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "transfer",
+        "emotion": "worried",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "carry",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 13:4-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-15",
@@ -998,7 +2194,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"distribute","lead":"느헤미야","target":"레위인들","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"extend","duration":1.8,"actor":"느헤미야"},{"action":"release","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 13:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "distribute",
+        "lead": "느헤미야",
+        "target": "레위인들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "grain",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 13:10-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-16",
@@ -1030,7 +2272,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"guard","lead":"느헤미야","target":"유다 귀인들","mode":"reconstruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"gate","beats":[{"action":"look","duration":1,"actor":"느헤미야"},{"action":"startle","duration":1.2,"actor":"느헤미야"},{"action":"extend","duration":1.5,"actor":"느헤미야"},{"action":"guard","duration":1.8,"actor":"느헤미야"},{"action":"turn","duration":1.5,"actor":"느헤미야"},{"action":"stand","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 13:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "guard",
+        "lead": "느헤미야",
+        "target": "유다 귀인들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "shelter",
+        "emotion": "worried",
+        "prop": "gate",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "guard",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 13:15-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-17",
@@ -1064,7 +2352,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"warning","lead":"느헤미야","target":"엘리아십","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"turn","duration":1.2,"actor":"느헤미야"},{"action":"speak","duration":1.5,"actor":"느헤미야"},{"action":"point","duration":1.8,"actor":"느헤미야"},{"action":"listen","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 13:23-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "느헤미야",
+        "target": "엘리아십",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 13:23-31",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-5-0",
@@ -1094,7 +2428,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"provision","lead":"느헤미야","target":"이전 총독들","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"extend","duration":1.8,"actor":"느헤미야"},{"action":"release","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 5:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "provision",
+        "lead": "느헤미야",
+        "target": "이전 총독들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 5:14-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-neh-extra-1-0",
@@ -1117,7 +2497,292 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"mourn","lead":"느헤미야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"},{"action":"kneel","duration":1.5,"actor":"느헤미야"},{"action":"cover-mouth","duration":1.8,"actor":"느헤미야"},{"action":"mourn","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 1:4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "mourn",
+        "lead": "느헤미야",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 1:4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-neh-review-01",
+      "code": "neh",
+      "chapter": 2,
+      "title": "왕 앞에 드러난 근심",
+      "actors": [
+        "느헤미야",
+        "아닥사스다"
+      ],
+      "object": "wine",
+      "ref": "느헤미야 2:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 왕에게 술을 올리던 느헤미야의 얼굴에 근심이 드러나요. 왕이 이유를 묻고, 느헤미야는 폐허가 된 예루살렘의 형편을 말해요."
+      ],
+      "study": "왕에게 술을 올리던 느헤미야의 얼굴에 근심이 드러나요. 왕이 이유를 묻고, 느헤미야는 폐허가 된 예루살렘의 형편을 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건의 핵심을 설명형 애니메이션으로 재구성해요. 기록에 없는 세부 동작은 연출로만 표현해요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "느헤미야",
+        "target": "아닥사스다",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "worried",
+        "prop": "wine",
+        "beats": [
+          {
+            "action": "pour",
+            "duration": 1,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "느헤미야"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "느헤미야"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 2:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-neh-review-02",
+      "code": "neh",
+      "chapter": 12,
+      "title": "귀환한 제사장과 레위 사람들의 명단",
+      "actors": [
+        "제사장들",
+        "레위인들"
+      ],
+      "object": "book",
+      "ref": "느헤미야 12:1-26",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 귀환한 제사장과 레위 사람들의 이름과 섬김의 계보를 기록해 공동체의 예배 직무를 이어가요."
+      ],
+      "study": "귀환한 제사장과 레위 사람들의 이름과 섬김의 계보를 기록해 공동체의 예배 직무를 이어가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건의 핵심을 설명형 애니메이션으로 재구성해요. 기록에 없는 세부 동작은 연출로만 표현해요.",
+      "animation": {
+        "version": 2,
+        "motif": "genealogy",
+        "lead": "제사장들",
+        "target": "레위인들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "arrange",
+        "emotion": "neutral",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "open",
+            "duration": 1,
+            "actor": "제사장들"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "제사장들"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "레위인들"
+          },
+          {
+            "action": "write",
+            "duration": 1.8,
+            "actor": "레위인들"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "레위인들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "레위인들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 12:1-26",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-neh-review-03",
+      "code": "neh",
+      "chapter": 13,
+      "title": "율법을 읽고 공동체를 정돈하다",
+      "actors": [
+        "레위인들",
+        "유다 귀인들"
+      ],
+      "object": "book",
+      "ref": "느헤미야 13:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 회중 앞에서 율법을 읽자 백성은 말씀을 듣고 공동체의 경계를 정돈해요."
+      ],
+      "study": "회중 앞에서 율법을 읽자 백성은 말씀을 듣고 공동체의 경계를 정돈해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건의 핵심을 설명형 애니메이션으로 재구성해요. 기록에 없는 세부 동작은 연출로만 표현해요.",
+      "animation": {
+        "version": 2,
+        "motif": "read",
+        "lead": "레위인들",
+        "target": "유다 귀인들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "reveal",
+        "emotion": "determined",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "open",
+            "duration": 1,
+            "actor": "레위 사람들"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "레위 사람들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "유다 귀인들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "레위 사람들"
+          },
+          {
+            "action": "align",
+            "duration": 1.5,
+            "actor": "유다 귀인들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "유다 귀인들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "느헤미야 13:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
