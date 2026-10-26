@@ -1977,6 +1977,33 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"siege","lead":"느부갓네살","target":"여호야긴","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"느부갓네살"},{"action":"push","duration":1.2,"actor":"느부갓네살"},{"action":"brace","duration":1.5,"actor":"느부갓네살"},{"action":"recoil","duration":1.8,"actor":"느부갓네살"},{"action":"retreat","duration":1.5,"actor":"느부갓네살"},{"action":"mourn","duration":1.2,"actor":"느부갓네살"}],"duration":8.2,"support":null,"ref":"열왕기하 24:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-23-2",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "요시야가 므깃도에서 죽고 여호아하스가 왕이 되다",
+      "actors": [
+        "요시야",
+        "바로 느고",
+        "여호아하스(요시야의 아들)",
+        "유다 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 23:29-30",
+      "verseNumbers": [
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요시야는 바로 느고의 진군을 막으려다 므깃도에서 죽고, 신하들은 그의 시신을 예루살렘으로 옮겨 장사해요. 백성은 아들 여호아하스를 왕으로 세워요."
+      ],
+      "study": "요시야는 바로 느고의 진군을 막으려다 므깃도에서 죽고, 신하들은 그의 시신을 예루살렘으로 옮겨 장사해요. 백성은 아들 여호아하스를 왕으로 세워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"요시야","target":"바로 느고","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"},{"action":"kneel","duration":1.5,"actor":"요시야"},{"action":"cover-mouth","duration":1.8,"actor":"요시야"},{"action":"mourn","duration":1.5,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"}],"duration":8.2,"support":null,"ref":"열왕기하 23:29-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
