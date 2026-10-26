@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js';
+import {EncounterDirector,GENERAL_GREETING_CHANCE,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
@@ -128,4 +128,11 @@ test('일상 인사는 만난 즉시 한 쌍만 시작하고 두 인물의 대�
  assert.equal(director.tick(800,[a,b,c]).length,1);assert.equal(director.active.length,1);
  assert.equal(director.active.length,1);
  b.x=8;director.tick(801,[a,b,c]);b.x=2;const again=director.tick(802,[a,b,c]);assert.equal(again.length,1);assert.equal(again[0].pairLines.length,2);
+});
+test('본문 특수대화가 아닌 일상 인사는 이전 대비 3분의 1 확률로만 시작한다',()=>{
+ const make=random=>new EncounterDirector([],{people:[],relations:[]},{random});
+ const pair=()=>[{name:'가',x:1,y:1,path:[]},{name:'나',x:2,y:1,path:[]}];
+ assert.equal(GENERAL_GREETING_CHANCE,1/3);
+ assert.equal(make(()=>.32).tick(0,pair()).length,1);
+ assert.equal(make(()=>.34).tick(0,pair()).length,0);
 });

@@ -7,7 +7,7 @@ import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
 import {worldCanAnimate} from './world-loop.js';
-import {beginWaterEscape,advanceWaterEscapes,rescueWaterEscape,WATER_ESCAPE_SECONDS} from './water-escape.js';
+import {beginWaterEscape,advanceWaterEscapes,advanceWaterHuff,rescueWaterEscape,WATER_ESCAPE_SECONDS} from './water-escape.js';
 import {drawWaterRescue} from './water-rescue-art.js';
 import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,learningNext,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
@@ -424,7 +424,7 @@ export async function mountPixelWorld(shell, options) {
     const timer=setTimeout(()=>{
       waterRescueTimers.delete(n);
       if(disposed||!npcs.includes(n)||n.waterEscape!==state||!rescueWaterEscape(n))return;
-      say('물가로 올라왔어요. 다시 움직일 수 있어요.');
+      say('휴우… 씩씩. 잠깐 숨을 고르고 있어요.');
       try{draw();}catch(error){console.warn('물가 화면 복구 중 그리기 오류',error);}
       scheduleFrame();
     },(state.duration+1)*1000);
@@ -1046,6 +1046,7 @@ export async function mountPixelWorld(shell, options) {
     }
     autoObjects();
     for(const n of npcs) {
+      if(n.waterHuff){advanceWaterHuff(n,dt);n.path=[];n.task=null;n.running=false;if(n.waterHuff)continue;}
       if(n.boatRide){
         if(!objects.includes(n.boatRide)&&!terrain.includes(n.boatRide)){
           const safe=dryLanding(backgroundKey,n.boatRide,blocked);n.boatRide=null;
@@ -1161,7 +1162,7 @@ export async function mountPixelWorld(shell, options) {
       const rescued=advanceWaterEscapes(npcs,dt);
       for(const n of rescued){const timer=waterRescueTimers.get(n);if(timer)clearTimeout(timer);waterRescueTimers.delete(n);}
       for(const n of npcs)if(n.waterEscape){n.direction='down';n.stride+=dt*8;}
-      if(rescued.length)say(rescued.length>1?`${rescued.length}명이 물가로 올라와 숨을 고르고 있어요.`:'휴! 물가로 올라와 숨을 고르고 있어요.');
+      if(rescued.length)say(rescued.length>1?`${rescued.length}명이 물가에서 잠깐 숨을 고르고 있어요.`:'휴우… 씩씩. 물가에서 숨을 고르고 있어요.');
       if(!paused&&!shell.querySelector('.pb-scripture')) {
         if(!activeEvent) update(dt);
         else {
@@ -1224,7 +1225,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   if(n.encounter){c.save();c.globalAlpha=reduced?.8:.68+.22*Math.sin(time*7);c.strokeStyle='#f4cf70';c.fillStyle='#f4cf7038';c.lineWidth=2;c.beginPath();c.ellipse(x,y+4,21+Math.round(Math.sin(time*7)),6,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
-  const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):0;
+  const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
   drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
@@ -1234,6 +1235,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   c.save();c.translate(x,y);c.scale(shape.width,shape.height);c.translate(-x,-y);
   drawInteractionEffects(c,n,actionPose,x,y,time);c.restore();
   if(n.collisionStun){for(const star of impactSparkles(n.collisionStun.elapsed,reduced)){c.fillStyle='#f6d56f';c.fillRect(x+star.x,y+star.y,3,3);c.fillRect(x+star.x-2,y+star.y+1,7,1);}const flap=Math.floor(time*8)%2;c.fillStyle='#f4efe0';c.fillRect(x+19,y-77-flap*2,5,1);c.fillRect(x+22,y-79+flap*2,4,1);c.fillRect(x+26,y-77-flap*2,4,1);}
+  if(n.waterHuff){const breath=reduced?0:Math.floor(time*5)%3;c.fillStyle='#e8f0e7';c.fillRect(x+17,y-88-breath,3,2);c.fillRect(x+22,y-91-breath,4,2);if(breath===2)c.fillRect(x+28,y-94,3,2);}
   c.restore();
   if(acting){c.fillStyle="#ffe189";c.fillRect(x-2,y-131,4,7);c.fillRect(x-2,y-122,4,3);}
   c.font='12px "DungGeunMo", monospace';c.textAlign="center";const w=c.measureText(displayPersonName(n.name)).width+12;c.fillStyle="#12303bd9";c.fillRect(x-w/2,y+17,w,18);c.fillStyle="#fff1c9";c.fillText(displayPersonName(n.name),x,y+30);

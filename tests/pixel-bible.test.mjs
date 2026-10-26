@@ -139,7 +139,7 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
 });
 
 test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 안전한 물가로 이동한다',async()=>{
- const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,rescueWaterEscape,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
+ const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,advanceWaterHuff,rescueWaterEscape,WATER_ESCAPE_SECONDS,WATER_HUFF_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
  const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
  beginWaterEscape(actor,{x:56,y:20});
  assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
@@ -148,6 +148,9 @@ test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 
  for(let i=49;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
  assert.ok(actor.waterEscape);assert.equal(advanceWaterEscape(actor,.05),true);
  assert.deepEqual([actor.x,actor.y,actor.waterEscape],[56,20,null]);assert.equal(advanceWaterEscape(actor,.05),false);
+ assert.deepEqual(actor.waterHuff,{elapsed:0,duration:WATER_HUFF_SECONDS});
+ for(let i=0;i<Math.floor(WATER_HUFF_SECONDS/.05)-1;i++)assert.equal(advanceWaterHuff(actor,.05),true);
+ assert.equal(advanceWaterHuff(actor,.05),false);assert.equal(actor.waterHuff,null);assert.equal(actor.expression,'neutral');
  const swimmer={x:12,y:12},bystander={x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1};beginWaterEscape(swimmer,{x:11,y:12});
  for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05);i++)advanceWaterEscapes([swimmer,bystander],.05);
  assert.deepEqual([swimmer.x,swimmer.y,swimmer.waterEscape],[11,12,null]);
@@ -155,6 +158,12 @@ test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 
  const stalled={x:40,y:25};beginWaterEscape(stalled,{x:39,y:25});
  assert.equal(rescueWaterEscape(stalled),true,'RAF가 멈춘 경우에도 별도 감시 타이머가 물가로 복귀시킬 수 있다');
  assert.equal(rescueWaterEscape(stalled),false,'구조 전환은 중복 실행되지 않는다');
+});
+
+test('픽셀 월드 말풍선 본문 터치는 배경으로 전달되지 않아 닫힘을 유발하지 않는다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const css=await readFile(new URL('../css/pixel-bible.css',import.meta.url),'utf8');
+ assert.match(css,/\.pb-speech\{[^}]*pointer-events:auto/);
 });
 
 test('물 구조 그리기는 월드의 자유 변수를 읽지 않고 지형 색을 전달받는다',async()=>{

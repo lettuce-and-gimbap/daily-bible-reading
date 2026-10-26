@@ -3,6 +3,7 @@ import {opposedDirections} from './conversation.js';
 import {relationshipLines} from './relationship-lines.js';
 
 const key=n=>`${n.name}:${n.identity?.id||''}`;
+export const GENERAL_GREETING_CHANCE=1/3;
 export function beside(a,b){
  const dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y);
  return Math.abs(dx-1)<.18&&dy<.12||Math.abs(dy-1)<.18&&dx<.12;
@@ -60,6 +61,7 @@ export class EncounterDirector {
       if(!beside(a,b)||this.context.relations.some(r=>[key(r.from),key(r.to)].includes(key(a))&&[key(r.from),key(r.to)].includes(key(b))))continue;
       const id=[key(a),key(b)].sort().join('|'),state=this.contacts.get(id)||{};
       if(state.greeted)continue;state.greeted=true;this.contacts.set(id,state);
+      if(this.random()>=GENERAL_GREETING_CHANCE)continue;
       if(Math.abs(a.y-b.y)<.12)b.y=a.y;else b.x=a.x;
       const directions=opposedDirections(a,b);if(!directions)continue;
       for(const [i,n]of [a,b].entries()){n.path=[];n.idle=6;n.direction=directions[i];n.encounter=true;}

@@ -1,9 +1,11 @@
 export const WATER_ESCAPE_SECONDS=5;
 export const WATER_ESCAPE_SPEED=1.8;
+export const WATER_HUFF_SECONDS=1.8;
 
 // Cancel conflicting activity before the rescue animation starts.
 export function beginWaterEscape(actor,safe){
  actor.path=[];actor.task=null;actor.running=false;actor.boatRide=null;
+ actor.waterHuff=null;
  actor.usingObject=null;actor.interaction=null;actor.action='';actor.objectAction=null;
  actor.objectScene=null;actor.objectEvidence=null;actor.eventRoutine=null;actor.eventObjects=null;actor.eventPartner=null;
  actor.collisionStun=null;actor.expression='worried';actor.direction='down';actor.idle=0;
@@ -28,7 +30,17 @@ export function advanceWaterEscape(actor,dt){
 export function rescueWaterEscape(actor){
  const state=actor.waterEscape;if(!state)return false;
  actor.x=state.safe.x;actor.y=state.safe.y;actor.waterEscape=null;actor.idle=3;actor.expression='worried';
+ actor.waterHuff={elapsed:0,duration:WATER_HUFF_SECONDS};
  return true;
+}
+
+// Pause a rescued character briefly for a visible breath before ordinary
+// movement resumes. Returns true while the panting phase is still active.
+export function advanceWaterHuff(actor,dt){
+ const huff=actor.waterHuff;if(!huff)return false;
+ huff.elapsed+=Math.max(0,Math.min(.05,Number(dt)||0));
+ if(huff.elapsed+1e-9<huff.duration)return true;
+ actor.waterHuff=null;actor.expression='neutral';actor.idle=.35;return false;
 }
 
 // Advance each submerged actor independently of ordinary NPC movement and
