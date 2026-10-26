@@ -1,0 +1,6666 @@
+{
+  "version": 1,
+  "code": "2ti",
+  "scope": "디모데후서 1–4장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "바울",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "로이스",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "유니게",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "부겔로",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "허모게네",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "오네시보로",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "디모데후서 1장 서신의 인물",
+        "refs": [
+          "디모데후서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "바울",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "충성된 사람들",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "후메내오",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "빌레도",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "마귀",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "다윗",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "디모데후서 2장 서신의 인물",
+        "refs": [
+          "디모데후서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "바울",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "말세의 사람들",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "얀네와 얌브레",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "모세",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "디모데후서 3장 서신의 인물",
+        "refs": [
+          "디모데후서 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "바울",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "데마",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "누가",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "마가",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "두기고",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "알렉산더",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "브리스가와 아굴라",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "오네시보로",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "디모데후서 4장 서신의 인물",
+        "refs": [
+          "디모데후서 4장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-2ti-1-1",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "하나님의 뜻으로 사도 된 바울 · 사랑하는 아들 디모데에게",
+      "ref": "디모데후서 1:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 하나님의 뜻으로 그리스도 예수 안에 있는 생명의 약속을 전하는 사도예요. 바울은 사랑하는 아들 디모데에게 편지해요."
+      ],
+      "study": "바울은 하나님의 뜻으로 그리스도 예수 안에 있는 생명의 약속을 전하는 사도예요. 바울은 사랑하는 아들 디모데에게 편지해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-2",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "은혜와 긍휼과 평강 · 조상처럼 깨끗한 양심으로 섬김",
+      "ref": "디모데후서 1:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지와 그리스도 예수에게서 은혜와 긍휼과 평강이 있기를 바라요. 바울은 조상 때부터 깨끗한 양심으로 하나님을 섬겨요."
+      ],
+      "study": "하나님 아버지와 그리스도 예수에게서 은혜와 긍휼과 평강이 있기를 바라요. 바울은 조상 때부터 깨끗한 양심으로 하나님을 섬겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-3",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "밤낮 기도하며 디모데를 기억 · 디모데의 눈물을 기억",
+      "ref": "디모데후서 1:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 밤낮 기도할 때 디모데를 쉬지 않고 기억해요. 바울은 디모데의 눈물을 기억하며 다시 만나 기쁨을 얻고 싶어 해요."
+      ],
+      "study": "바울은 밤낮 기도할 때 디모데를 쉬지 않고 기억해요. 바울은 디모데의 눈물을 기억하며 다시 만나 기쁨을 얻고 싶어 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-4",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "거짓 없는 믿음을 기억 · 외조모 로이스와 어머니 유니게",
+      "ref": "디모데후서 1:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데 안에 거짓 없는 믿음이 있음을 기억해요. 그 믿음은 먼저 외조모 로이스와 어머니 유니게 안에 있었어요."
+      ],
+      "study": "디모데 안에 거짓 없는 믿음이 있음을 기억해요. 그 믿음은 먼저 외조모 로이스와 어머니 유니게 안에 있었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-5",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "디모데 안에도 있는 믿음 · 하나님의 은사를 다시 불일 듯",
+      "ref": "디모데후서 1:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그 믿음이 디모데 안에도 있음을 확신해요. 바울은 안수할 때 받은 하나님의 은사를 다시 불일 듯 하라고 권해요."
+      ],
+      "study": "바울은 그 믿음이 디모데 안에도 있음을 확신해요. 바울은 안수할 때 받은 하나님의 은사를 다시 불일 듯 하라고 권해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-6",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "두려움이 아니라 능력과 사랑과 절제 · 복음의 증언을 부끄러워 말라",
+      "ref": "디모데후서 1:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 두려움의 영이 아니라 능력과 사랑과 절제의 영을 주셨어요. 주님의 증언이나 주 때문에 갇힌 바울을 부끄러워하지 말아요."
+      ],
+      "study": "하나님은 두려움의 영이 아니라 능력과 사랑과 절제의 영을 주셨어요. 주님의 증언이나 주 때문에 갇힌 바울을 부끄러워하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-7",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "복음을 위해 고난에 참여 · 거룩한 부르심으로 구원",
+      "ref": "디모데후서 1:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 능력을 따라 복음을 위해 고난에 참여해요. 하나님은 행위가 아니라 뜻과 은혜로 우리를 구원하고 부르셨어요."
+      ],
+      "study": "하나님의 능력을 따라 복음을 위해 고난에 참여해요. 하나님은 행위가 아니라 뜻과 은혜로 우리를 구원하고 부르셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-8",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "창세 전부터 주신 은혜",
+      "ref": "디모데후서 1:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그 은혜는 창세 전 그리스도 예수 안에서 주어졌어요."
+      ],
+      "study": "그 은혜는 창세 전 그리스도 예수 안에서 주어졌어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-9",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "구주 예수께서 죽음을 폐하심",
+      "ref": "디모데후서 1:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "구주 예수는 죽음을 폐하고 복음으로 생명과 썩지 않을 것을 드러내셨어요."
+      ],
+      "study": "구주 예수는 죽음을 폐하고 복음으로 생명과 썩지 않을 것을 드러내셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-10",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "복음을 위해 사도로 세움",
+      "ref": "디모데후서 1:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 복음을 위해 전파자와 사도와 교사로 세움받았어요."
+      ],
+      "study": "바울은 복음을 위해 전파자와 사도와 교사로 세움받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-11",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "고난에도 부끄럽지 않은 바울",
+      "ref": "디모데후서 1:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 고난을 받지만 부끄러워하지 않아요."
+      ],
+      "study": "바울은 고난을 받지만 부끄러워하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-12",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "맡긴 것을 주께서 지키심",
+      "ref": "디모데후서 1:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자기가 맡긴 것을 주께서 그 날까지 지키실 것을 확신해요."
+      ],
+      "study": "바울은 자기가 맡긴 것을 주께서 그 날까지 지키실 것을 확신해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-13",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "바른 말씀의 본을 지킴",
+      "ref": "디모데후서 1:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 그리스도 예수 안의 믿음과 사랑으로 바른 말씀의 본을 지켜요."
+      ],
+      "study": "디모데는 그리스도 예수 안의 믿음과 사랑으로 바른 말씀의 본을 지켜요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-14",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "성령으로 맡은 선한 것을 지키라",
+      "ref": "디모데후서 1:14",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리 안에 거하시는 성령으로 맡은 선한 것을 지켜요."
+      ],
+      "study": "우리 안에 거하시는 성령으로 맡은 선한 것을 지켜요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-15",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "아시아의 많은 이가 떠남",
+      "ref": "디모데후서 1:15",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "부겔로와 허모게네를 비롯해 아시아의 많은 이가 바울을 떠났어요."
+      ],
+      "study": "부겔로와 허모게네를 비롯해 아시아의 많은 이가 바울을 떠났어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-16",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "오네시보로의 집에 긍휼",
+      "ref": "디모데후서 1:16",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주께서 오네시보로의 집에 긍휼을 베푸시길 바라요."
+      ],
+      "study": "주께서 오네시보로의 집에 긍휼을 베푸시길 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-17",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "로마에서 바울을 찾아냄",
+      "ref": "디모데후서 1:17",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "오네시보로는 로마에서 바울을 부지런히 찾아내 만났어요."
+      ],
+      "study": "오네시보로는 로마에서 바울을 부지런히 찾아내 만났어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-1-18",
+      "code": "2ti",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "에베소에서 섬긴 오네시보로",
+      "ref": "디모데후서 1:18",
+      "actors": [
+        "바울",
+        "디모데",
+        "로이스",
+        "유니게",
+        "부겔로",
+        "허모게네",
+        "오네시보로",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "오네시보로는 에베소에서도 바울을 여러 번 섬겼어요."
+      ],
+      "study": "오네시보로는 에베소에서도 바울을 여러 번 섬겼어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-1",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "은혜로 강건해져라 · 충성된 사람에게 맡기라",
+      "ref": "디모데후서 2:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 그리스도 예수 안에 있는 은혜로 강건해져야 해요. 많은 증인 앞에서 들은 것을 충성된 사람들에게 맡겨 그들이 가르치게 해요."
+      ],
+      "study": "디모데는 그리스도 예수 안에 있는 은혜로 강건해져야 해요. 많은 증인 앞에서 들은 것을 충성된 사람들에게 맡겨 그들이 가르치게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-2",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "그리스도 예수의 좋은 병사 · 군 복무 중 생업에 얽매이지 않음",
+      "ref": "디모데후서 2:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 그리스도 예수의 좋은 병사로 고난을 함께 받아요. 병사는 자기를 모집한 이를 기쁘게 하려고 생업에 얽매이지 않아요."
+      ],
+      "study": "디모데는 그리스도 예수의 좋은 병사로 고난을 함께 받아요. 병사는 자기를 모집한 이를 기쁘게 하려고 생업에 얽매이지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-3",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "경기하는 자는 규칙대로 · 수고한 농부가 먼저 열매",
+      "ref": "디모데후서 2:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "경기하는 자도 규칙대로 해야 승리의 관을 받아요. 수고하는 농부가 열매를 먼저 받아야 해요."
+      ],
+      "study": "경기하는 자도 규칙대로 해야 승리의 관을 받아요. 수고하는 농부가 열매를 먼저 받아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-4",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "바울의 말을 생각하라",
+      "ref": "디모데후서 2:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 디모데가 자기 말을 생각하면 주께서 깨달음을 주실 거라 해요."
+      ],
+      "study": "바울은 디모데가 자기 말을 생각하면 주께서 깨달음을 주실 거라 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-5",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "다윗의 자손 예수를 기억",
+      "ref": "디모데후서 2:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "다윗의 자손 예수 그리스도께서 죽은 이들 가운데서 살아나신 것을 기억해요."
+      ],
+      "study": "다윗의 자손 예수 그리스도께서 죽은 이들 가운데서 살아나신 것을 기억해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-6",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "복음 때문에 매인 바울",
+      "ref": "디모데후서 2:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 복음 때문에 죄수처럼 매였어요."
+      ],
+      "study": "바울은 복음 때문에 죄수처럼 매였어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-7",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "하나님의 말씀은 매이지 않음",
+      "ref": "디모데후서 2:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그러나 하나님의 말씀은 매이지 않았어요."
+      ],
+      "study": "그러나 하나님의 말씀은 매이지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-8",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "택하신 이들을 위해 참음",
+      "ref": "디모데후서 2:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 택하신 이들이 구원을 얻게 하려고 모든 것을 참아요."
+      ],
+      "study": "바울은 택하신 이들이 구원을 얻게 하려고 모든 것을 참아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-9",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "주와 함께 죽으면 함께 삶",
+      "ref": "디모데후서 2:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리가 주와 함께 죽었으면 또한 함께 살 거예요."
+      ],
+      "study": "우리가 주와 함께 죽었으면 또한 함께 살 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-10",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "참으면 함께 다스림",
+      "ref": "디모데후서 2:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "참으면 주와 함께 다스리고 부인하면 주도 우리를 부인하세요."
+      ],
+      "study": "참으면 주와 함께 다스리고 부인하면 주도 우리를 부인하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-11",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "우리가 신실하지 않아도 주는 신실",
+      "ref": "디모데후서 2:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리가 신실하지 못해도 주는 자신을 부인할 수 없어 신실하세요."
+      ],
+      "study": "우리가 신실하지 못해도 주는 자신을 부인할 수 없어 신실하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-12",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "말다툼을 경계하라",
+      "ref": "디모데후서 2:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 말다툼을 피하고 말씀을 두고 다투지 말라고 엄히 경고해야 해요."
+      ],
+      "study": "디모데는 말다툼을 피하고 말씀을 두고 다투지 말라고 엄히 경고해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-13",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "진리의 말씀을 바르게 다룸",
+      "ref": "디모데후서 2:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님께 인정받는 일꾼으로 진리의 말씀을 바르게 다뤄야 해요."
+      ],
+      "study": "하나님께 인정받는 일꾼으로 진리의 말씀을 바르게 다뤄야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-14",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "헛된 말은 경건하지 않음으로",
+      "ref": "디모데후서 2:14",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "헛된 말은 더욱 경건하지 않은 데로 나아가요."
+      ],
+      "study": "헛된 말은 더욱 경건하지 않은 데로 나아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-15",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "후메내오와 빌레도가 진리를 떠남",
+      "ref": "디모데후서 2:15",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "후메내오와 빌레도는 부활이 이미 지나갔다며 진리에서 떠났어요."
+      ],
+      "study": "후메내오와 빌레도는 부활이 이미 지나갔다며 진리에서 떠났어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-16",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "성도들의 믿음을 무너뜨림",
+      "ref": "디모데후서 2:16",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 어떤 이들의 믿음을 무너뜨려요."
+      ],
+      "study": "그들은 어떤 이들의 믿음을 무너뜨려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-17",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "하나님의 견고한 터는 서 있음",
+      "ref": "디모데후서 2:17",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그러나 하나님의 견고한 터는 서 있고 주께서 자기 백성을 아세요."
+      ],
+      "study": "그러나 하나님의 견고한 터는 서 있고 주께서 자기 백성을 아세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-18",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "불의에서 떠나라",
+      "ref": "디모데후서 2:18",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님의 이름을 부르는 이는 불의에서 떠나야 해요."
+      ],
+      "study": "주님의 이름을 부르는 이는 불의에서 떠나야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-19",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "큰 집의 여러 그릇",
+      "ref": "디모데후서 2:19",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "큰 집에는 금과 은뿐 아니라 나무와 질그릇도 있어요."
+      ],
+      "study": "큰 집에는 금과 은뿐 아니라 나무와 질그릇도 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-20",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "자기를 깨끗하게 하면 귀히 쓰임",
+      "ref": "디모데후서 2:20",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "자기를 깨끗하게 하는 이는 귀히 쓰는 그릇이 되어 준비돼요."
+      ],
+      "study": "자기를 깨끗하게 하는 이는 귀히 쓰는 그릇이 되어 준비돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-21",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "청년의 정욕을 피하라",
+      "ref": "디모데후서 2:21",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 청년의 정욕을 피하고 의와 믿음과 사랑과 화평을 따라요."
+      ],
+      "study": "디모데는 청년의 정욕을 피하고 의와 믿음과 사랑과 화평을 따라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-22",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "깨끗한 마음으로 주를 부르는 이들과 함께",
+      "ref": "디모데후서 2:22",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "깨끗한 마음으로 주를 부르는 이들과 함께 선을 따라요."
+      ],
+      "study": "깨끗한 마음으로 주를 부르는 이들과 함께 선을 따라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-23",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        23
+      ],
+      "title": "어리석은 변론을 피함",
+      "ref": "디모데후서 2:23",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "어리석고 무식한 변론은 다툼을 낳으니 피해야 해요."
+      ],
+      "study": "어리석고 무식한 변론은 다툼을 낳으니 피해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-24",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        24
+      ],
+      "title": "주의 종은 다투지 않음",
+      "ref": "디모데후서 2:24",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주의 종은 다투지 않고 모든 사람에게 온유하며 가르치기를 잘해야 해요."
+      ],
+      "study": "주의 종은 다투지 않고 모든 사람에게 온유하며 가르치기를 잘해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-25",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        25
+      ],
+      "title": "반대자를 온유하게 바로잡음",
+      "ref": "디모데후서 2:25",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님이 그들에게 회개를 주셔서 진리를 알게 하실 수 있어요."
+      ],
+      "study": "하나님이 그들에게 회개를 주셔서 진리를 알게 하실 수 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-2-26",
+      "code": "2ti",
+      "chapter": 2,
+      "verseNumbers": [
+        26
+      ],
+      "title": "마귀의 올무에서 돌아옴",
+      "ref": "디모데후서 2:26",
+      "actors": [
+        "바울",
+        "디모데",
+        "충성된 사람들",
+        "후메내오",
+        "빌레도",
+        "마귀",
+        "다윗",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들이 정신을 차려 마귀의 올무에서 벗어나 하나님 뜻을 행할 수 있어요."
+      ],
+      "study": "그들이 정신을 차려 마귀의 올무에서 벗어나 하나님 뜻을 행할 수 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 2:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-1",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "말세에 어려운 때 · 자기를 사랑하고 돈을 사랑",
+      "ref": "디모데후서 3:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "말세에 어려운 때가 이를 거예요. 사람들은 자기를 사랑하고 돈을 사랑하며 자랑하고 교만해져요."
+      ],
+      "study": "말세에 어려운 때가 이를 거예요. 사람들은 자기를 사랑하고 돈을 사랑하며 자랑하고 교만해져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-2",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "부모에게 불순종하고 감사하지 않음 · 무정하고 화해하지 않음",
+      "ref": "디모데후서 3:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사람들은 부모에게 불순종하고 감사하지 않으며 거룩하지 않아요. 사람들은 무정하고 화해하지 않으며 비방하고 절제하지 않아요."
+      ],
+      "study": "사람들은 부모에게 불순종하고 감사하지 않으며 거룩하지 않아요. 사람들은 무정하고 화해하지 않으며 비방하고 절제하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-3",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "선한 것을 싫어함 · 쾌락을 하나님보다 사랑",
+      "ref": "디모데후서 3:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사람들은 선한 것을 좋아하지 않고 배신하며 거칠어요. 하나님보다 쾌락을 더 사랑해요."
+      ],
+      "study": "사람들은 선한 것을 좋아하지 않고 배신하며 거칠어요. 하나님보다 쾌락을 더 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-4",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "경건의 모양은 있으나 능력은 부인 · 집에 들어가 약한 이를 사로잡음",
+      "ref": "디모데후서 3:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "경건의 모양은 있지만 능력은 부인하니 디모데는 그들을 멀리해야 해요. 그들은 집에 들어가 죄에 눌리고 여러 욕심에 이끌리는 이들을 사로잡아요."
+      ],
+      "study": "경건의 모양은 있지만 능력은 부인하니 디모데는 그들을 멀리해야 해요. 그들은 집에 들어가 죄에 눌리고 여러 욕심에 이끌리는 이들을 사로잡아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-5",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "항상 배우나 진리를 못 앎 · 얀네와 얌브레의 대적",
+      "ref": "디모데후서 3:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 항상 배우지만 진리를 온전히 알지 못해요. 얀네와 얌브레가 모세를 대적한 것처럼 이들도 진리를 대적해요."
+      ],
+      "study": "그들은 항상 배우지만 진리를 온전히 알지 못해요. 얀네와 얌브레가 모세를 대적한 것처럼 이들도 진리를 대적해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-6",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "마음이 부패하고 믿음에 실패 · 어리석음이 드러남",
+      "ref": "디모데후서 3:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 마음이 부패하고 믿음에 관해 버림받았어요. 그들의 어리석음은 더 나아갈 수 없어 모든 이에게 드러나요."
+      ],
+      "study": "그들은 마음이 부패하고 믿음에 관해 버림받았어요. 그들의 어리석음은 더 나아갈 수 없어 모든 이에게 드러나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-7",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "바울의 교훈과 삶을 따름",
+      "ref": "디모데후서 3:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 바울의 교훈과 생활과 목적과 믿음과 인내를 따랐어요."
+      ],
+      "study": "디모데는 바울의 교훈과 생활과 목적과 믿음과 인내를 따랐어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-8",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "박해와 고난 가운데",
+      "ref": "디모데후서 3:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 안디옥과 이고니온과 루스드라에서 박해와 고난을 겪었어요."
+      ],
+      "study": "바울은 안디옥과 이고니온과 루스드라에서 박해와 고난을 겪었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-9",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "주께서 건지심",
+      "ref": "디모데후서 3:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 모든 박해에서 바울을 건지셨어요."
+      ],
+      "study": "주님은 모든 박해에서 바울을 건지셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-10",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "경건하게 살면 박해받음",
+      "ref": "디모데후서 3:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도 예수 안에서 경건하게 살려는 사람은 박해를 받아요."
+      ],
+      "study": "그리스도 예수 안에서 경건하게 살려는 사람은 박해를 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-11",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "악한 자는 속이고 속음",
+      "ref": "디모데후서 3:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "악한 사람들과 속이는 이들은 더 악해지고 속이기도 속기도 해요."
+      ],
+      "study": "악한 사람들과 속이는 이들은 더 악해지고 속이기도 속기도 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-12",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "배운 데 거하라",
+      "ref": "디모데후서 3:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 배우고 확신한 것에 머물러야 해요."
+      ],
+      "study": "디모데는 배우고 확신한 것에 머물러야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-13",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "성경을 어려서부터 앎",
+      "ref": "디모데후서 3:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 어려서부터 성경을 알고 있어요."
+      ],
+      "study": "디모데는 어려서부터 성경을 알고 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-14",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "성경은 구원에 이르게 하는 지혜",
+      "ref": "디모데후서 3:14",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성경은 그리스도 예수 안의 믿음으로 구원에 이르는 지혜를 줘요."
+      ],
+      "study": "성경은 그리스도 예수 안의 믿음으로 구원에 이르는 지혜를 줘요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-15",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "모든 성경은 하나님의 감동",
+      "ref": "디모데후서 3:15",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "모든 성경은 하나님의 감동으로 된 것이에요."
+      ],
+      "study": "모든 성경은 하나님의 감동으로 된 것이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-16",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "교훈과 책망과 바르게 함",
+      "ref": "디모데후서 3:16",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성경은 교훈과 책망과 바르게 함과 의로 교육하는 데 유익해요."
+      ],
+      "study": "성경은 교훈과 책망과 바르게 함과 의로 교육하는 데 유익해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-3-17",
+      "code": "2ti",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "하나님의 사람을 온전하게",
+      "ref": "디모데후서 3:17",
+      "actors": [
+        "바울",
+        "디모데",
+        "말세의 사람들",
+        "얀네와 얌브레",
+        "모세",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성경은 하나님의 사람을 온전하게 해 모든 선한 일을 갖추게 해요."
+      ],
+      "study": "성경은 하나님의 사람을 온전하게 해 모든 선한 일을 갖추게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-1",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "산 자와 죽은 이를 심판할 예수 · 말씀을 전파하라",
+      "ref": "디모데후서 4:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 살아 있는 이와 죽은 이를 심판하실 하나님과 그리스도 예수 앞에서 엄히 명해요. 디모데는 때를 얻든지 못 얻든지 말씀을 전파해야 해요."
+      ],
+      "study": "바울은 살아 있는 이와 죽은 이를 심판하실 하나님과 그리스도 예수 앞에서 엄히 명해요. 디모데는 때를 얻든지 못 얻든지 말씀을 전파해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-2",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "오래 참음으로 책망하고 권면 · 바른 교훈을 견디지 못할 때",
+      "ref": "디모데후서 4:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "모든 오래 참음과 가르침으로 책망하고 경계하며 권면해요. 사람들이 바른 교훈을 견디지 못하고 자기 욕망에 따라 교사를 모아요."
+      ],
+      "study": "모든 오래 참음과 가르침으로 책망하고 경계하며 권면해요. 사람들이 바른 교훈을 견디지 못하고 자기 욕망에 따라 교사를 모아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-3",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "귀를 진리에서 돌려 허탄한 이야기로 · 모든 일에 신중하라",
+      "ref": "디모데후서 4:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 귀를 진리에서 돌이켜 허탄한 이야기를 따라가요. 디모데는 모든 일에 신중하고 고난을 견뎌야 해요."
+      ],
+      "study": "그들은 귀를 진리에서 돌이켜 허탄한 이야기를 따라가요. 디모데는 모든 일에 신중하고 고난을 견뎌야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-4",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "복음 전도자의 일을 하라 · 바울의 떠날 때가 가까움",
+      "ref": "디모데후서 4:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "전도자의 일을 하며 맡은 직무를 다해야 해요. 바울은 자신이 제물처럼 부어지고 떠날 때가 가까웠다고 해요."
+      ],
+      "study": "전도자의 일을 하며 맡은 직무를 다해야 해요. 바울은 자신이 제물처럼 부어지고 떠날 때가 가까웠다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-5",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "선한 싸움을 싸운 바울 · 믿음을 지킨 바울",
+      "ref": "디모데후서 4:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 선한 싸움을 싸우고 달려갈 길을 마쳤어요. 바울은 믿음을 지켰고 의의 면류관을 기다려요."
+      ],
+      "study": "바울은 선한 싸움을 싸우고 달려갈 길을 마쳤어요. 바울은 믿음을 지켰고 의의 면류관을 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-6",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "주께서 의의 면류관을 주심 · 디모데에게 속히 오라",
+      "ref": "디모데후서 4:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "의로운 재판장이신 주께서 그 날에 바울뿐 아니라 나타나심을 사모하는 이들에게 주실 거예요. 바울은 디모데에게 속히 오라고 부탁해요."
+      ],
+      "study": "의로운 재판장이신 주께서 그 날에 바울뿐 아니라 나타나심을 사모하는 이들에게 주실 거예요. 바울은 디모데에게 속히 오라고 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-7",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "데마가 세상을 사랑해 떠남",
+      "ref": "디모데후서 4:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "데마는 이 세상을 사랑해 바울을 버리고 데살로니가로 갔어요."
+      ],
+      "study": "데마는 이 세상을 사랑해 바울을 버리고 데살로니가로 갔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-8",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "누가만 바울과 함께",
+      "ref": "디모데후서 4:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "누가만 바울과 함께 있고 디모데는 마가를 데려오라고 해요."
+      ],
+      "study": "누가만 바울과 함께 있고 디모데는 마가를 데려오라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-9",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "마가는 사역에 유익",
+      "ref": "디모데후서 4:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "마가는 바울의 사역에 유익해요."
+      ],
+      "study": "마가는 바울의 사역에 유익해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-10",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "두기고를 에베소로 보냄",
+      "ref": "디모데후서 4:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 두기고를 에베소로 보냈어요."
+      ],
+      "study": "바울은 두기고를 에베소로 보냈어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-11",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "드로아에 두고 온 겉옷과 책",
+      "ref": "디모데후서 4:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 드로아의 가보 집에 둔 겉옷과 책, 양피지를 가져와야 해요."
+      ],
+      "study": "디모데는 드로아의 가보 집에 둔 겉옷과 책, 양피지를 가져와야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-12",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "알렉산더가 해를 끼침",
+      "ref": "디모데후서 4:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "구리 세공업자 알렉산더가 바울에게 많은 해를 끼쳤어요."
+      ],
+      "study": "구리 세공업자 알렉산더가 바울에게 많은 해를 끼쳤어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-13",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "주께서 행한 대로 갚으심",
+      "ref": "디모데후서 4:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주께서 그의 행위대로 갚으실 거예요."
+      ],
+      "study": "주께서 그의 행위대로 갚으실 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-14",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "바울의 첫 변론에 함께한 이 없음",
+      "ref": "디모데후서 4:14",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울의 첫 변론 때 아무도 함께하지 않고 모두 그를 버렸어요."
+      ],
+      "study": "바울의 첫 변론 때 아무도 함께하지 않고 모두 그를 버렸어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-15",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "주께서 곁에 서서 힘주심",
+      "ref": "디모데후서 4:15",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 바울 곁에 서서 힘을 주셨어요."
+      ],
+      "study": "주님은 바울 곁에 서서 힘을 주셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-16",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "사자의 입에서 건짐",
+      "ref": "디모데후서 4:16",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 바울을 사자의 입에서 건지셨어요."
+      ],
+      "study": "주님은 바울을 사자의 입에서 건지셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-17",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "악한 일에서 건져 천국으로",
+      "ref": "디모데후서 4:17",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 바울을 모든 악한 일에서 건져 천국에 들어가게 하세요."
+      ],
+      "study": "주님은 바울을 모든 악한 일에서 건져 천국에 들어가게 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-18",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "브리스가와 아굴라에게 문안",
+      "ref": "디모데후서 4:18",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "브리스가와 아굴라와 오네시보로의 집에 문안해요."
+      ],
+      "study": "브리스가와 아굴라와 오네시보로의 집에 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-19",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        19
+      ],
+      "title": "에라스도와 드로비모",
+      "ref": "디모데후서 4:19",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에라스도는 고린도에 머물고 드로비모는 병들어 밀레도에 남았어요."
+      ],
+      "study": "에라스도는 고린도에 머물고 드로비모는 병들어 밀레도에 남았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-20",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        20
+      ],
+      "title": "겨울 전에 오라",
+      "ref": "디모데후서 4:20",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 디모데에게 겨울 전에 오라고 거듭 부탁해요."
+      ],
+      "study": "바울은 디모데에게 겨울 전에 오라고 거듭 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-21",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        21
+      ],
+      "title": "유불로와 부데와 리노와 글라우디아",
+      "ref": "디모데후서 4:21",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "유불로와 부데와 리노와 글라우디아와 모든 형제가 문안해요."
+      ],
+      "study": "유불로와 부데와 리노와 글라우디아와 모든 형제가 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2ti-4-22",
+      "code": "2ti",
+      "chapter": 4,
+      "verseNumbers": [
+        22
+      ],
+      "title": "주께서 디모데의 영과 함께",
+      "ref": "디모데후서 4:22",
+      "actors": [
+        "바울",
+        "디모데",
+        "데마",
+        "누가",
+        "마가",
+        "두기고",
+        "알렉산더",
+        "브리스가와 아굴라",
+        "오네시보로",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주 예수 그리스도께서 디모데의 영과 함께하시길 바라요."
+      ],
+      "study": "주 예수 그리스도께서 디모데의 영과 함께하시길 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "디모데후서 4:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

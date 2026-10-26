@@ -1,0 +1,7999 @@
+{
+  "version": 1,
+  "code": "1jn",
+  "scope": "요한일서 1–5장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "요한",
+        "role": "요한일서 1장 서신의 인물",
+        "refs": [
+          "요한일서 1장"
+        ]
+      },
+      {
+        "name": "성도들",
+        "role": "요한일서 1장 서신의 인물",
+        "refs": [
+          "요한일서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한일서 1장 서신의 인물",
+        "refs": [
+          "요한일서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한일서 1장 서신의 인물",
+        "refs": [
+          "요한일서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "요한",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      },
+      {
+        "name": "자녀들",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      },
+      {
+        "name": "적그리스도",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      },
+      {
+        "name": "형제를 미워하는 자",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한일서 2장 서신의 인물",
+        "refs": [
+          "요한일서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "요한",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "하나님의 자녀들",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "마귀",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "가인",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "아벨",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한일서 3장 서신의 인물",
+        "refs": [
+          "요한일서 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "요한",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      },
+      {
+        "name": "사랑하는 자들",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      },
+      {
+        "name": "거짓 선지자들",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한일서 4장 서신의 인물",
+        "refs": [
+          "요한일서 4장"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "name": "요한",
+        "role": "요한일서 5장 서신의 인물",
+        "refs": [
+          "요한일서 5장"
+        ]
+      },
+      {
+        "name": "자녀들",
+        "role": "요한일서 5장 서신의 인물",
+        "refs": [
+          "요한일서 5장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한일서 5장 서신의 인물",
+        "refs": [
+          "요한일서 5장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "요한일서 5장 서신의 인물",
+        "refs": [
+          "요한일서 5장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한일서 5장 서신의 인물",
+        "refs": [
+          "요한일서 5장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-1jn-1-1",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "태초부터 있는 생명의 말씀 · 귀로 듣고 눈으로 본 생명",
+      "ref": "요한일서 1:1",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 태초부터 계신 생명의 말씀을 전해요. 사도들은 생명의 말씀을 듣고 눈으로 보고 자세히 살폈어요."
+      ],
+      "study": "요한은 태초부터 계신 생명의 말씀을 전해요. 사도들은 생명의 말씀을 듣고 눈으로 보고 자세히 살폈어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-2",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "손으로 만진 말씀",
+      "ref": "요한일서 1:2",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사도들은 생명의 말씀을 손으로 만졌어요."
+      ],
+      "study": "사도들은 생명의 말씀을 손으로 만졌어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-3",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "아버지와 함께 있다 나타난 생명",
+      "ref": "요한일서 1:3",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "영원한 생명은 아버지와 함께 있다가 사람들에게 나타났어요."
+      ],
+      "study": "영원한 생명은 아버지와 함께 있다가 사람들에게 나타났어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-4",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "보고 들은 것을 전함",
+      "ref": "요한일서 1:4",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 자신이 보고 들은 것을 성도들에게 전해요."
+      ],
+      "study": "요한은 자신이 보고 들은 것을 성도들에게 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-5",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "사도들과 사귐",
+      "ref": "요한일서 1:5",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들도 사도들과 사귀고 사귐은 아버지와 아들 예수와 함께해요."
+      ],
+      "study": "성도들도 사도들과 사귀고 사귐은 아버지와 아들 예수와 함께해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-6",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "기쁨이 충만하게 하려 씀",
+      "ref": "요한일서 1:6",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 성도들의 기쁨이 충만하도록 이 글을 써요."
+      ],
+      "study": "요한은 성도들의 기쁨이 충만하도록 이 글을 써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-7",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "하나님은 빛",
+      "ref": "요한일서 1:7",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 빛이시며 그 안에 어둠이 조금도 없어요."
+      ],
+      "study": "하나님은 빛이시며 그 안에 어둠이 조금도 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-8",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "빛 가운데 행하면 사귐",
+      "ref": "요한일서 1:8",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님이 빛 가운데 계신 것처럼 행하면 서로 사귀게 돼요."
+      ],
+      "study": "하나님이 빛 가운데 계신 것처럼 행하면 서로 사귀게 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-9",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "예수의 피가 모든 죄에서 깨끗하게",
+      "ref": "요한일서 1:9",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수의 피가 우리를 모든 죄에서 깨끗하게 해요."
+      ],
+      "study": "예수의 피가 우리를 모든 죄에서 깨끗하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-1-10",
+      "code": "1jn",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "죄 없다고 하면 자신을 속임",
+      "ref": "요한일서 1:10",
+      "actors": [
+        "요한",
+        "성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "죄가 없다고 하면 자신을 속이고 진리가 우리 안에 없어요."
+      ],
+      "study": "죄가 없다고 하면 자신을 속이고 진리가 우리 안에 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-1",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "죄를 짓지 않도록 씀 · 죄를 지으면 대언자 예수",
+      "ref": "요한일서 2:1",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 성도들이 죄를 짓지 않도록 이 글을 써요. 누가 죄를 지으면 의로우신 예수께서 아버지 앞에서 대언자가 되세요."
+      ],
+      "study": "요한은 성도들이 죄를 짓지 않도록 이 글을 써요. 누가 죄를 지으면 의로우신 예수께서 아버지 앞에서 대언자가 되세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-2",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "예수는 우리 죄를 위한 화목제물",
+      "ref": "요한일서 2:2",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수는 우리 죄를 위한 화목제물이며 온 세상 죄를 위한 분이에요."
+      ],
+      "study": "예수는 우리 죄를 위한 화목제물이며 온 세상 죄를 위한 분이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-3",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "계명을 지키면 주를 앎",
+      "ref": "요한일서 2:3",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그의 계명을 지키면 우리가 그를 아는 줄 알아요."
+      ],
+      "study": "그의 계명을 지키면 우리가 그를 아는 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-4",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "말로만 안다며 계명을 안 지키는 자",
+      "ref": "요한일서 2:4",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "안다고 말하면서 계명을 지키지 않는 이는 거짓말쟁이예요."
+      ],
+      "study": "안다고 말하면서 계명을 지키지 않는 이는 거짓말쟁이예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-5",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "말씀을 지키면 사랑이 온전해짐",
+      "ref": "요한일서 2:5",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "말씀을 지키는 이 안에서 하나님의 사랑이 온전해져요."
+      ],
+      "study": "말씀을 지키는 이 안에서 하나님의 사랑이 온전해져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-6",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "그 안에 거하는 사람",
+      "ref": "요한일서 2:6",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그 안에 거한다고 하는 이는 예수께서 행하신 대로 행해야 해요."
+      ],
+      "study": "그 안에 거한다고 하는 이는 예수께서 행하신 대로 행해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-7",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "새 계명이며 옛 계명",
+      "ref": "요한일서 2:7",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 새 계명을 쓰지만 이는 처음부터 가진 옛 계명이기도 해요."
+      ],
+      "study": "요한은 새 계명을 쓰지만 이는 처음부터 가진 옛 계명이기도 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-8",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "어둠이 지나고 참빛이 비침",
+      "ref": "요한일서 2:8",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "어둠이 지나가고 참빛이 벌써 비치고 있어요."
+      ],
+      "study": "어둠이 지나가고 참빛이 벌써 비치고 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-9",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "형제를 사랑하는 이는 빛에 거함",
+      "ref": "요한일서 2:9",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제를 사랑하는 이는 빛 가운데 있고 걸림돌이 없어요."
+      ],
+      "study": "형제를 사랑하는 이는 빛 가운데 있고 걸림돌이 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-10",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "형제를 미워하면 어둠에 있음",
+      "ref": "요한일서 2:10",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제를 미워하는 이는 어둠 가운데 있어 어디로 가는지 알지 못해요."
+      ],
+      "study": "형제를 미워하는 이는 어둠 가운데 있어 어디로 가는지 알지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-11",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "자녀들에게 죄 사함을 씀",
+      "ref": "요한일서 2:11",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 자녀들에게 예수의 이름으로 죄가 용서되었음을 써요."
+      ],
+      "study": "요한은 자녀들에게 예수의 이름으로 죄가 용서되었음을 써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-12",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "아비들은 태초부터 계신 이를 앎",
+      "ref": "요한일서 2:12",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아비들은 태초부터 계신 이를 알았어요."
+      ],
+      "study": "아비들은 태초부터 계신 이를 알았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-13",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "청년들은 악한 자를 이김",
+      "ref": "요한일서 2:13",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "청년들은 강하고 하나님의 말씀이 안에 있어 악한 자를 이겼어요."
+      ],
+      "study": "청년들은 강하고 하나님의 말씀이 안에 있어 악한 자를 이겼어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-14",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "세상을 사랑하지 말라",
+      "ref": "요한일서 2:14",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "세상이나 세상에 있는 것을 사랑하지 말아요."
+      ],
+      "study": "세상이나 세상에 있는 것을 사랑하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-15",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "육신의 정욕과 안목의 정욕과 이생의 자랑",
+      "ref": "요한일서 2:15",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "세상에는 육신의 정욕과 안목의 정욕과 이생의 자랑이 있어요."
+      ],
+      "study": "세상에는 육신의 정욕과 안목의 정욕과 이생의 자랑이 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-16",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "세상과 정욕은 지나감",
+      "ref": "요한일서 2:16",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "세상과 그 정욕은 지나가지만 하나님의 뜻을 행하는 이는 영원히 거해요."
+      ],
+      "study": "세상과 그 정욕은 지나가지만 하나님의 뜻을 행하는 이는 영원히 거해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-17",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "적그리스도가 오리라 들음",
+      "ref": "요한일서 2:17",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "마지막 때이며 적그리스도가 오리라는 말을 들었어요."
+      ],
+      "study": "마지막 때이며 적그리스도가 오리라는 말을 들었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-18",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "많은 적그리스도가 나타남",
+      "ref": "요한일서 2:18",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "많은 적그리스도가 나와 마지막 때인 줄 알아요."
+      ],
+      "study": "많은 적그리스도가 나와 마지막 때인 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-19",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "그들은 우리에게서 나가지 않음",
+      "ref": "요한일서 2:19",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 우리에게 속하지 않아 나갔어요."
+      ],
+      "study": "그들은 우리에게 속하지 않아 나갔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-20",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "기름 부음으로 진리를 앎",
+      "ref": "요한일서 2:20",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 거룩하신 이에게서 기름 부음을 받아 진리를 알아요."
+      ],
+      "study": "성도들은 거룩하신 이에게서 기름 부음을 받아 진리를 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-21",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "거짓말쟁이는 예수를 부인",
+      "ref": "요한일서 2:21",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수가 그리스도임을 부인하는 자는 거짓말쟁이예요."
+      ],
+      "study": "예수가 그리스도임을 부인하는 자는 거짓말쟁이예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-22",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "아들을 부인하면 아버지도 없음",
+      "ref": "요한일서 2:22",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아들을 부인하는 이는 아버지도 모시지 못해요."
+      ],
+      "study": "아들을 부인하는 이는 아버지도 모시지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-23",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        23
+      ],
+      "title": "아들을 시인하면 아버지도 모심",
+      "ref": "요한일서 2:23",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아들을 시인하는 이는 아버지도 모셔요."
+      ],
+      "study": "아들을 시인하는 이는 아버지도 모셔요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-24",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        24
+      ],
+      "title": "처음부터 들은 것을 안에 둠",
+      "ref": "요한일서 2:24",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "처음부터 들은 것이 성도들 안에 거하게 해요."
+      ],
+      "study": "처음부터 들은 것이 성도들 안에 거하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-25",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        25
+      ],
+      "title": "아들과 아버지 안에 거함",
+      "ref": "요한일서 2:25",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "처음 들은 말씀이 안에 있으면 아들과 아버지 안에 거해요."
+      ],
+      "study": "처음 들은 말씀이 안에 있으면 아들과 아버지 안에 거해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-26",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        26
+      ],
+      "title": "그가 약속한 영원한 생명",
+      "ref": "요한일서 2:26",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수는 성도들에게 영원한 생명을 약속하셨어요."
+      ],
+      "study": "예수는 성도들에게 영원한 생명을 약속하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-27",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        27
+      ],
+      "title": "기름 부음이 가르침",
+      "ref": "요한일서 2:27",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그에게 받은 기름 부음이 모든 것을 가르치고 참돼요."
+      ],
+      "study": "그에게 받은 기름 부음이 모든 것을 가르치고 참돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-28",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        28
+      ],
+      "title": "그 안에 거하라",
+      "ref": "요한일서 2:28",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "기름 부음이 가르친 대로 그리스도 안에 거해요."
+      ],
+      "study": "기름 부음이 가르친 대로 그리스도 안에 거해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-2-29",
+      "code": "1jn",
+      "chapter": 2,
+      "verseNumbers": [
+        29
+      ],
+      "title": "담대함과 부끄러움",
+      "ref": "요한일서 2:29",
+      "actors": [
+        "요한",
+        "자녀들",
+        "적그리스도",
+        "형제를 미워하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그가 나타나실 때 담대하고 부끄러움을 당하지 않도록 해요."
+      ],
+      "study": "그가 나타나실 때 담대하고 부끄러움을 당하지 않도록 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 2:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-1",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "하나님의 자녀라 불리는 사랑 · 세상이 우리를 모르는 이유",
+      "ref": "요한일서 3:1",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아버지는 우리를 사랑해 하나님의 자녀라 불리게 하셨어요. 세상이 우리를 모르는 것은 하나님을 알지 못하기 때문이에요."
+      ],
+      "study": "아버지는 우리를 사랑해 하나님의 자녀라 불리게 하셨어요. 세상이 우리를 모르는 것은 하나님을 알지 못하기 때문이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-2",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "장차 어떻게 될지 나타나지 않음",
+      "ref": "요한일서 3:2",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리는 지금 하나님의 자녀지만 장차 어떻게 될지는 아직 나타나지 않았어요."
+      ],
+      "study": "우리는 지금 하나님의 자녀지만 장차 어떻게 될지는 아직 나타나지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-3",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "그가 나타나면 그와 같아짐",
+      "ref": "요한일서 3:3",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도가 나타나실 때 우리가 그와 같을 줄 알아요."
+      ],
+      "study": "그리스도가 나타나실 때 우리가 그와 같을 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-4",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "소망을 가진 이는 자신을 깨끗하게",
+      "ref": "요한일서 3:4",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이 소망을 가진 사람은 예수의 깨끗함처럼 자신을 깨끗하게 해요."
+      ],
+      "study": "이 소망을 가진 사람은 예수의 깨끗함처럼 자신을 깨끗하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-5",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "죄는 불법",
+      "ref": "요한일서 3:5",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "죄를 짓는 것은 불법을 행하는 거예요."
+      ],
+      "study": "죄를 짓는 것은 불법을 행하는 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-6",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "예수는 죄를 없애려고 나타나심",
+      "ref": "요한일서 3:6",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수는 죄를 없애려고 나타나셨고 그 안에 죄가 없어요."
+      ],
+      "study": "예수는 죄를 없애려고 나타나셨고 그 안에 죄가 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-7",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "그 안에 거하는 자는 죄를 계속 짓지 않음",
+      "ref": "요한일서 3:7",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그 안에 거하는 이는 죄를 계속 짓지 않아요."
+      ],
+      "study": "그 안에 거하는 이는 죄를 계속 짓지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-8",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "죄를 계속 짓는 이는 그를 보지 못함",
+      "ref": "요한일서 3:8",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "죄를 계속 짓는 이는 예수를 보지도 알지도 못했어요."
+      ],
+      "study": "죄를 계속 짓는 이는 예수를 보지도 알지도 못했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-9",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "의를 행하는 이는 의로움",
+      "ref": "요한일서 3:9",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "의를 행하는 이는 예수께서 의로우신 것처럼 의로워요."
+      ],
+      "study": "의를 행하는 이는 예수께서 의로우신 것처럼 의로워요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-10",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "죄를 짓는 이는 마귀에게 속함",
+      "ref": "요한일서 3:10",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "죄를 계속 짓는 이는 처음부터 죄짓는 마귀에게 속해요."
+      ],
+      "study": "죄를 계속 짓는 이는 처음부터 죄짓는 마귀에게 속해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-11",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "하나님의 아들이 마귀의 일을 멸함",
+      "ref": "요한일서 3:11",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 아들은 마귀의 일을 멸하려 나타나셨어요."
+      ],
+      "study": "하나님의 아들은 마귀의 일을 멸하려 나타나셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-12",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "하나님께 난 이는 죄를 계속 짓지 않음",
+      "ref": "요한일서 3:12",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님께 난 이는 하나님의 씨가 안에 있어 죄를 계속 짓지 않아요."
+      ],
+      "study": "하나님께 난 이는 하나님의 씨가 안에 있어 죄를 계속 짓지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-13",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "하나님의 자녀와 마귀의 자녀",
+      "ref": "요한일서 3:13",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "의를 행하지 않고 형제를 사랑하지 않는 이는 하나님께 속하지 않았어요."
+      ],
+      "study": "의를 행하지 않고 형제를 사랑하지 않는 이는 하나님께 속하지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-14",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "서로 사랑하라는 처음부터의 소식",
+      "ref": "요한일서 3:14",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "처음부터 들은 소식은 서로 사랑하라는 거예요."
+      ],
+      "study": "처음부터 들은 소식은 서로 사랑하라는 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-15",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "가인처럼 되지 말라",
+      "ref": "요한일서 3:15",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "가인은 악한 자에게 속해 아우 아벨을 죽였어요."
+      ],
+      "study": "가인은 악한 자에게 속해 아우 아벨을 죽였어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-16",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "세상이 형제를 미워해도 이상히 여기지 말라",
+      "ref": "요한일서 3:16",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "세상이 형제들을 미워해도 이상히 여기지 말아요."
+      ],
+      "study": "세상이 형제들을 미워해도 이상히 여기지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-17",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "사랑함으로 죽음에서 생명으로 옮김",
+      "ref": "요한일서 3:17",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제를 사랑함으로 죽음에서 생명으로 옮겨온 줄 알아요."
+      ],
+      "study": "형제를 사랑함으로 죽음에서 생명으로 옮겨온 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-18",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        18
+      ],
+      "title": "형제를 미워하는 이는 살인자",
+      "ref": "요한일서 3:18",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제를 미워하는 이는 살인자이며 영원한 생명이 그 안에 없어요."
+      ],
+      "study": "형제를 미워하는 이는 살인자이며 영원한 생명이 그 안에 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-19",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        19
+      ],
+      "title": "예수께서 목숨을 주심",
+      "ref": "요한일서 3:19",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수는 우리를 위해 목숨을 버리셨고 우리는 이로써 사랑을 알아요."
+      ],
+      "study": "예수는 우리를 위해 목숨을 버리셨고 우리는 이로써 사랑을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-20",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        20
+      ],
+      "title": "형제를 위해 목숨을 버려야 함",
+      "ref": "요한일서 3:20",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리도 형제들을 위해 목숨을 버리는 것이 마땅해요."
+      ],
+      "study": "우리도 형제들을 위해 목숨을 버리는 것이 마땅해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-21",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        21
+      ],
+      "title": "재물이 있으면서 형제를 돕지 않음",
+      "ref": "요한일서 3:21",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "재물이 있으면서 궁핍한 형제를 보고도 돕지 않으면 사랑이 어찌 거하겠어요."
+      ],
+      "study": "재물이 있으면서 궁핍한 형제를 보고도 돕지 않으면 사랑이 어찌 거하겠어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-22",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        22
+      ],
+      "title": "말과 혀만이 아닌 행함과 진실",
+      "ref": "요한일서 3:22",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "말과 혀로만 하지 말고 행함과 진실함으로 사랑해요."
+      ],
+      "study": "말과 혀로만 하지 말고 행함과 진실함으로 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-23",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        23
+      ],
+      "title": "진리에 속했음을 알고 마음을 안심",
+      "ref": "요한일서 3:23",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이로써 우리가 진리에 속한 줄 알고 하나님 앞에서 마음을 안심시켜요."
+      ],
+      "study": "이로써 우리가 진리에 속한 줄 알고 하나님 앞에서 마음을 안심시켜요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-3-24",
+      "code": "1jn",
+      "chapter": 3,
+      "verseNumbers": [
+        24
+      ],
+      "title": "마음보다 크신 하나님",
+      "ref": "요한일서 3:24",
+      "actors": [
+        "요한",
+        "하나님의 자녀들",
+        "마귀",
+        "가인",
+        "아벨",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "마음이 우리를 책망해도 하나님은 마음보다 크시고 모든 것을 아세요."
+      ],
+      "study": "마음이 우리를 책망해도 하나님은 마음보다 크시고 모든 것을 아세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "하나님의 자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 3:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-1",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "모든 영을 믿지 말고 시험",
+      "ref": "요한일서 4:1",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "모든 영을 믿지 말고 하나님께 속했는지 시험해요."
+      ],
+      "study": "모든 영을 믿지 말고 하나님께 속했는지 시험해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-2",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "거짓 선지자가 세상에 많음",
+      "ref": "요한일서 4:2",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "많은 거짓 선지자가 세상에 나왔어요."
+      ],
+      "study": "많은 거짓 선지자가 세상에 나왔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-3",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "예수의 성육신을 시인하는 영",
+      "ref": "요한일서 4:3",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수 그리스도께서 육체로 오신 것을 시인하는 영은 하나님께 속했어요."
+      ],
+      "study": "예수 그리스도께서 육체로 오신 것을 시인하는 영은 하나님께 속했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-4",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "예수를 시인하지 않는 영은 적그리스도",
+      "ref": "요한일서 4:4",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수를 시인하지 않는 영은 하나님께 속하지 않은 적그리스도의 영이에요."
+      ],
+      "study": "예수를 시인하지 않는 영은 하나님께 속하지 않은 적그리스도의 영이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-5",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "미혹하는 자들은 세상에 속함",
+      "ref": "요한일서 4:5",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 선지자들은 세상에 속해 세상 말을 하고 세상은 그들을 들어요."
+      ],
+      "study": "거짓 선지자들은 세상에 속해 세상 말을 하고 세상은 그들을 들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-6",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "하나님을 아는 우리는 들음",
+      "ref": "요한일서 4:6",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님을 아는 이는 우리 말을 듣고 하나님께 속하지 않은 이는 듣지 않아요."
+      ],
+      "study": "하나님을 아는 이는 우리 말을 듣고 하나님께 속하지 않은 이는 듣지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-7",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "진리의 영과 미혹의 영",
+      "ref": "요한일서 4:7",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이로써 진리의 영과 미혹의 영을 알아요."
+      ],
+      "study": "이로써 진리의 영과 미혹의 영을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-8",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "서로 사랑하라",
+      "ref": "요한일서 4:8",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑하는 이들아 서로 사랑해요."
+      ],
+      "study": "사랑하는 이들아 서로 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-9",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "사랑은 하나님께 속함",
+      "ref": "요한일서 4:9",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑은 하나님께 속했고 사랑하는 이는 하나님께 나서 하나님을 알아요."
+      ],
+      "study": "사랑은 하나님께 속했고 사랑하는 이는 하나님께 나서 하나님을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-10",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "사랑하지 않는 이는 하나님을 모름",
+      "ref": "요한일서 4:10",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑하지 않는 이는 하나님을 알지 못해요."
+      ],
+      "study": "사랑하지 않는 이는 하나님을 알지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-11",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "하나님은 사랑",
+      "ref": "요한일서 4:11",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 사랑이세요."
+      ],
+      "study": "하나님은 사랑이세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-12",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "하나님의 사랑이 나타남",
+      "ref": "요한일서 4:12",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 독생자를 세상에 보내 우리를 살리셨어요."
+      ],
+      "study": "하나님은 독생자를 세상에 보내 우리를 살리셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-13",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "우리가 하나님을 사랑한 것이 아님",
+      "ref": "요한일서 4:13",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑은 우리가 하나님을 사랑한 것이 아니라 하나님이 우리를 사랑하신 거예요."
+      ],
+      "study": "사랑은 우리가 하나님을 사랑한 것이 아니라 하나님이 우리를 사랑하신 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-14",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "아들을 화목제물로 보내심",
+      "ref": "요한일서 4:14",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 아들을 우리 죄를 위한 화목제물로 보내셨어요."
+      ],
+      "study": "하나님은 아들을 우리 죄를 위한 화목제물로 보내셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-15",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "하나님이 사랑하셨으니 서로 사랑",
+      "ref": "요한일서 4:15",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님이 이처럼 사랑하셨으니 우리도 서로 사랑해야 해요."
+      ],
+      "study": "하나님이 이처럼 사랑하셨으니 우리도 서로 사랑해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-16",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "하나님은 서로 사랑하는 이 안에 거함",
+      "ref": "요한일서 4:16",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "서로 사랑하면 하나님이 우리 안에 거하시고 사랑이 온전해져요."
+      ],
+      "study": "서로 사랑하면 하나님이 우리 안에 거하시고 사랑이 온전해져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-17",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "성령을 주셔서 거하심을 앎",
+      "ref": "요한일서 4:17",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님이 자기 성령을 주셨으므로 우리가 그 안에 거하는 줄 알아요."
+      ],
+      "study": "하나님이 자기 성령을 주셨으므로 우리가 그 안에 거하는 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-18",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "아버지가 아들을 구주로 보내심",
+      "ref": "요한일서 4:18",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리는 아버지께서 아들을 세상의 구주로 보내신 것을 보았고 증언해요."
+      ],
+      "study": "우리는 아버지께서 아들을 세상의 구주로 보내신 것을 보았고 증언해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-19",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        19
+      ],
+      "title": "예수를 하나님의 아들로 시인",
+      "ref": "요한일서 4:19",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수를 하나님의 아들로 시인하는 이 안에 하나님이 거하고 그도 하나님 안에 거해요."
+      ],
+      "study": "예수를 하나님의 아들로 시인하는 이 안에 하나님이 거하고 그도 하나님 안에 거해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-20",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        20
+      ],
+      "title": "사랑을 알고 믿음",
+      "ref": "요한일서 4:20",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리는 하나님이 우리를 사랑하시는 사랑을 알고 믿었어요."
+      ],
+      "study": "우리는 하나님이 우리를 사랑하시는 사랑을 알고 믿었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-4-21",
+      "code": "1jn",
+      "chapter": 4,
+      "verseNumbers": [
+        21
+      ],
+      "title": "온전한 사랑은 두려움을 내쫓음",
+      "ref": "요한일서 4:21",
+      "actors": [
+        "요한",
+        "사랑하는 자들",
+        "거짓 선지자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑이 온전해지면 심판 날 담대함이 있고 온전한 사랑은 두려움을 내쫓아요."
+      ],
+      "study": "사랑이 온전해지면 심판 날 담대함이 있고 온전한 사랑은 두려움을 내쫓아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "사랑하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 4:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-1",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        1
+      ],
+      "title": "예수를 그리스도로 믿는 이는 하나님께 남 · 낳으신 이를 사랑하면 자녀도 사랑",
+      "ref": "요한일서 5:1",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수가 그리스도임을 믿는 이는 하나님께로부터 났어요. 낳으신 이를 사랑하는 이는 그에게서 난 자녀도 사랑해요."
+      ],
+      "study": "예수가 그리스도임을 믿는 이는 하나님께로부터 났어요. 낳으신 이를 사랑하는 이는 그에게서 난 자녀도 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-2",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        2
+      ],
+      "title": "하나님의 자녀를 사랑하는 표 · 계명은 무겁지 않음",
+      "ref": "요한일서 5:2",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님을 사랑하고 계명을 지키면 하나님의 자녀를 사랑하는 줄 알아요. 하나님을 사랑하는 것은 그 계명을 지키는 것이며 계명은 무겁지 않아요."
+      ],
+      "study": "하나님을 사랑하고 계명을 지키면 하나님의 자녀를 사랑하는 줄 알아요. 하나님을 사랑하는 것은 그 계명을 지키는 것이며 계명은 무겁지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-3",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        3
+      ],
+      "title": "세상을 이기는 믿음 · 세상을 이기는 승리는 믿음",
+      "ref": "요한일서 5:3",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님께로부터 난 이는 세상을 이겨요. 세상을 이기는 승리는 우리 믿음이에요."
+      ],
+      "study": "하나님께로부터 난 이는 세상을 이겨요. 세상을 이기는 승리는 우리 믿음이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-4",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        4
+      ],
+      "title": "예수는 물과 피로 오심",
+      "ref": "요한일서 5:4",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수 그리스도는 물과 피로 오셨고 성령이 증언하세요."
+      ],
+      "study": "예수 그리스도는 물과 피로 오셨고 성령이 증언하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-5",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        5
+      ],
+      "title": "성령은 진리",
+      "ref": "요한일서 5:5",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "증언하시는 이는 성령이며 성령은 진리예요."
+      ],
+      "study": "증언하시는 이는 성령이며 성령은 진리예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-6",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        6
+      ],
+      "title": "세 증언이 하나",
+      "ref": "요한일서 5:6",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성령과 물과 피가 증언하고 이 셋은 하나예요."
+      ],
+      "study": "성령과 물과 피가 증언하고 이 셋은 하나예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-7",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        7
+      ],
+      "title": "하나님의 증언이 더 큼",
+      "ref": "요한일서 5:7",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사람들의 증언도 받지만 하나님의 증언은 더 커요."
+      ],
+      "study": "사람들의 증언도 받지만 하나님의 증언은 더 커요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-8",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        8
+      ],
+      "title": "하나님은 아들에 관해 증언",
+      "ref": "요한일서 5:8",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 아들에 관해 증언하셨어요."
+      ],
+      "study": "하나님은 아들에 관해 증언하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-9",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        9
+      ],
+      "title": "아들을 믿는 이는 증언을 가짐",
+      "ref": "요한일서 5:9",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 아들을 믿는 이는 그 증언을 마음에 간직해요."
+      ],
+      "study": "하나님의 아들을 믿는 이는 그 증언을 마음에 간직해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-10",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        10
+      ],
+      "title": "아들을 믿지 않는 이는 하나님을 거짓말쟁이로",
+      "ref": "요한일서 5:10",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 증언을 믿지 않는 이는 하나님을 거짓말쟁이로 만들어요."
+      ],
+      "study": "하나님의 증언을 믿지 않는 이는 하나님을 거짓말쟁이로 만들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-11",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        11
+      ],
+      "title": "아들 안에 있는 생명",
+      "ref": "요한일서 5:11",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 우리에게 영원한 생명을 주셨고 생명은 아들 안에 있어요."
+      ],
+      "study": "하나님은 우리에게 영원한 생명을 주셨고 생명은 아들 안에 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-12",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        12
+      ],
+      "title": "아들이 있으면 생명이 있음",
+      "ref": "요한일서 5:12",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아들이 있는 이에게는 생명이 있고 없는 이에게는 생명이 없어요."
+      ],
+      "study": "아들이 있는 이에게는 생명이 있고 없는 이에게는 생명이 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-13",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        13
+      ],
+      "title": "영원한 생명을 알게 하려 씀",
+      "ref": "요한일서 5:13",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "요한은 성도들이 영원한 생명이 있음을 알게 하려고 써요."
+      ],
+      "study": "요한은 성도들이 영원한 생명이 있음을 알게 하려고 써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-14",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        14
+      ],
+      "title": "하나님의 뜻대로 구하면 들으심",
+      "ref": "요한일서 5:14",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 뜻대로 무엇을 구하면 하나님이 들으시는 줄 알아요."
+      ],
+      "study": "하나님의 뜻대로 무엇을 구하면 하나님이 들으시는 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-15",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        15
+      ],
+      "title": "형제가 죄짓는 것을 보면 구하라",
+      "ref": "요한일서 5:15",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제가 죽음에 이르지 않는 죄를 지으면 구해 생명을 얻게 해야 해요."
+      ],
+      "study": "형제가 죽음에 이르지 않는 죄를 지으면 구해 생명을 얻게 해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-16",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        16
+      ],
+      "title": "죽음에 이르는 죄도 있음",
+      "ref": "요한일서 5:16",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "죽음에 이르는 죄가 있으니 그것을 두고 구하라고 하진 않아요."
+      ],
+      "study": "죽음에 이르는 죄가 있으니 그것을 두고 구하라고 하진 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-17",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        17
+      ],
+      "title": "하나님께 난 이는 죄에 머물지 않음",
+      "ref": "요한일서 5:17",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님께 난 이는 죄에 머물지 않고 악한 자가 건드리지 못해요."
+      ],
+      "study": "하나님께 난 이는 죄에 머물지 않고 악한 자가 건드리지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-18",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        18
+      ],
+      "title": "우리는 하나님께 속함",
+      "ref": "요한일서 5:18",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리는 하나님께 속하고 온 세상은 악한 자 안에 있어요."
+      ],
+      "study": "우리는 하나님께 속하고 온 세상은 악한 자 안에 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-19",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        19
+      ],
+      "title": "하나님의 아들이 지각을 주심",
+      "ref": "요한일서 5:19",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 아들이 오셔서 참되신 이를 알도록 지각을 주셨어요."
+      ],
+      "study": "하나님의 아들이 오셔서 참되신 이를 알도록 지각을 주셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-20",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        20
+      ],
+      "title": "참 하나님과 영생",
+      "ref": "요한일서 5:20",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리는 참되신 이와 그의 아들 예수 그리스도 안에 있으며 그가 참 하나님이고 영생이에요."
+      ],
+      "study": "우리는 참되신 이와 그의 아들 예수 그리스도 안에 있으며 그가 참 하나님이고 영생이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1jn-5-21",
+      "code": "1jn",
+      "chapter": 5,
+      "verseNumbers": [
+        21
+      ],
+      "title": "자녀들아 우상을 멀리하라",
+      "ref": "요한일서 5:21",
+      "actors": [
+        "요한",
+        "자녀들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "자녀들아 우상을 멀리해야 해요."
+      ],
+      "study": "자녀들아 우상을 멀리해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요한",
+        "target": "자녀들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "요한",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "요한",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "요한",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한일서 5:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

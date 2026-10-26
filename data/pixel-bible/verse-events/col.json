@@ -1,0 +1,7397 @@
+{
+  "version": 1,
+  "code": "col",
+  "scope": "골로새서 1–4장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "바울",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      },
+      {
+        "name": "골로새 성도들",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      },
+      {
+        "name": "에바브라",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "골로새서 1장 서신의 인물",
+        "refs": [
+          "골로새서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "바울",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      },
+      {
+        "name": "골로새 성도들",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      },
+      {
+        "name": "라오디게아 성도들",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      },
+      {
+        "name": "거짓 교사들",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "골로새서 2장 서신의 인물",
+        "refs": [
+          "골로새서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "바울",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "골로새 성도들",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "아내들과 남편들",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "자녀들과 아비들",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "종들",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "골로새서 3장 서신의 인물",
+        "refs": [
+          "골로새서 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "바울",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "골로새 성도들",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "두기고",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "오네시모",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "아리스다고",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "마가",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "바나바",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "에바브라",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "누가",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "데마",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "눔바",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      },
+      {
+        "name": "아킵보",
+        "role": "골로새서 4장 서신의 인물",
+        "refs": [
+          "골로새서 4장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-col-1-1",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "바울과 디모데의 인사",
+      "ref": "골로새서 1:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울과 디모데는 하나님의 뜻으로 그리스도 예수의 사도가 된 바울의 이름으로 문안해요."
+      ],
+      "study": "바울과 디모데는 하나님의 뜻으로 그리스도 예수의 사도가 된 바울의 이름으로 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-2",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "골로새의 신실한 성도들",
+      "ref": "골로새서 1:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "두 사람은 골로새에 있는 그리스도 안의 신실한 성도들에게 편지해요."
+      ],
+      "study": "두 사람은 골로새에 있는 그리스도 안의 신실한 성도들에게 편지해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-3",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "은혜와 평강의 축복",
+      "ref": "골로새서 1:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지에게서 은혜와 평강이 있기를 바라요."
+      ],
+      "study": "하나님 아버지에게서 은혜와 평강이 있기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-4",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "성도들의 믿음과 사랑을 들음",
+      "ref": "골로새서 1:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도 예수에 대한 믿음과 모든 성도를 향한 사랑을 듣고 감사해요."
+      ],
+      "study": "바울은 그리스도 예수에 대한 믿음과 모든 성도를 향한 사랑을 듣고 감사해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-5",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "하늘에 쌓인 소망",
+      "ref": "골로새서 1:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 복음의 진리에서 들은 소망을 하늘에 간직하고 있어요."
+      ],
+      "study": "성도들은 복음의 진리에서 들은 소망을 하늘에 간직하고 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-6",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "복음이 온 세상에서 열매 맺음",
+      "ref": "골로새서 1:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "복음은 온 세상에 이르러 열매를 맺고 자라며 골로새에서도 그렇게 되었어요."
+      ],
+      "study": "복음은 온 세상에 이르러 열매를 맺고 자라며 골로새에서도 그렇게 되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-7",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "에바브라가 전한 은혜",
+      "ref": "골로새서 1:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 사랑하는 동역자 에바브라에게서 하나님의 은혜를 배웠어요."
+      ],
+      "study": "성도들은 사랑하는 동역자 에바브라에게서 하나님의 은혜를 배웠어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-8",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "에바브라가 전한 성령의 사랑",
+      "ref": "골로새서 1:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에바브라는 성도들의 사랑을 성령 안에서 바울에게 알렸어요."
+      ],
+      "study": "에바브라는 성도들의 사랑을 성령 안에서 바울에게 알렸어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-9",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "바울의 기도와 간구",
+      "ref": "골로새서 1:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 소식을 들은 날부터 성도들을 위해 기도하며 간구해요."
+      ],
+      "study": "바울은 소식을 들은 날부터 성도들을 위해 기도하며 간구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-10",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "하나님의 뜻을 아는 지식",
+      "ref": "골로새서 1:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들이 하나님의 뜻을 온전히 알고 지혜와 총명으로 충만하기를 구해요."
+      ],
+      "study": "성도들이 하나님의 뜻을 온전히 알고 지혜와 총명으로 충만하기를 구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-11",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "주님께 합당하게 걸음",
+      "ref": "골로새서 1:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들이 주님께 합당하게 살아 모든 일에서 기쁘시게 하기를 바라요."
+      ],
+      "study": "성도들이 주님께 합당하게 살아 모든 일에서 기쁘시게 하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-12",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "모든 선한 일에 열매 맺음",
+      "ref": "골로새서 1:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들이 모든 선한 일에 열매 맺고 하나님을 아는 지식에서 자라기를 기도해요."
+      ],
+      "study": "성도들이 모든 선한 일에 열매 맺고 하나님을 아는 지식에서 자라기를 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-13",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "능력으로 강건해짐",
+      "ref": "골로새서 1:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 영광스러운 능력으로 모든 힘을 얻어 기쁨으로 오래 참기를 바라요."
+      ],
+      "study": "하나님의 영광스러운 능력으로 모든 힘을 얻어 기쁨으로 오래 참기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-14",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "아버지께 감사",
+      "ref": "골로새서 1:14",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지께서 성도들을 빛 가운데 있는 성도의 유업에 참여하게 하셨어요."
+      ],
+      "study": "하나님 아버지께서 성도들을 빛 가운데 있는 성도의 유업에 참여하게 하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-15",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "어둠의 권세에서 건지심",
+      "ref": "골로새서 1:15",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 성도들을 어둠의 권세에서 건져 내셨어요."
+      ],
+      "study": "하나님은 성도들을 어둠의 권세에서 건져 내셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-16",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "사랑의 아들의 나라로 옮기심",
+      "ref": "골로새서 1:16",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 성도들을 사랑하시는 아들의 나라로 옮기셨어요."
+      ],
+      "study": "하나님은 성도들을 사랑하시는 아들의 나라로 옮기셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-17",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "그리스도 안에서 얻은 속량",
+      "ref": "골로새서 1:17",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그 아들 안에서 속량 곧 죄 사함을 얻었어요."
+      ],
+      "study": "성도들은 그 아들 안에서 속량 곧 죄 사함을 얻었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-18",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "보이지 않는 하나님의 형상",
+      "ref": "골로새서 1:18",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 보이지 않는 하나님의 형상이며 모든 창조물보다 먼저 나신 분이에요."
+      ],
+      "study": "그리스도는 보이지 않는 하나님의 형상이며 모든 창조물보다 먼저 나신 분이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-19",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "하늘과 땅의 만물을 창조",
+      "ref": "골로새서 1:19",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하늘과 땅의 보이는 것과 보이지 않는 모든 것이 그리스도를 통해 창조되었어요."
+      ],
+      "study": "하늘과 땅의 보이는 것과 보이지 않는 모든 것이 그리스도를 통해 창조되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-20",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "만물이 그리스도를 위해 창조",
+      "ref": "골로새서 1:20",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "왕권과 주권과 통치와 권세도 모두 그리스도를 위해 창조되었어요."
+      ],
+      "study": "왕권과 주권과 통치와 권세도 모두 그리스도를 위해 창조되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-21",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "만물보다 먼저 계신 그리스도",
+      "ref": "골로새서 1:21",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 만물보다 먼저 계시고 만물은 그분 안에서 유지돼요."
+      ],
+      "study": "그리스도는 만물보다 먼저 계시고 만물은 그분 안에서 유지돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-22",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        22
+      ],
+      "title": "교회의 머리이신 그리스도",
+      "ref": "골로새서 1:22",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 몸인 교회의 머리이며 죽은 이들 가운데서 먼저 살아나셨어요."
+      ],
+      "study": "그리스도는 몸인 교회의 머리이며 죽은 이들 가운데서 먼저 살아나셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-23",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        23
+      ],
+      "title": "그리스도의 으뜸 되심",
+      "ref": "골로새서 1:23",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 모든 것에서 으뜸이 되세요."
+      ],
+      "study": "그리스도는 모든 것에서 으뜸이 되세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-24",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        24
+      ],
+      "title": "하나님의 충만이 거하심",
+      "ref": "골로새서 1:24",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 모든 충만이 그리스도 안에 머물게 하기를 기뻐하셨어요."
+      ],
+      "study": "하나님은 모든 충만이 그리스도 안에 머물게 하기를 기뻐하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-25",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        25
+      ],
+      "title": "십자가의 피로 화평을 이루심",
+      "ref": "골로새서 1:25",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 십자가의 피로 화평을 이루어 만물을 자신과 화해시키셨어요."
+      ],
+      "study": "하나님은 십자가의 피로 화평을 이루어 만물을 자신과 화해시키셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-26",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        26
+      ],
+      "title": "멀리 떠나 원수였던 사람들",
+      "ref": "골로새서 1:26",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 전에는 악한 행실로 하나님에게서 멀어져 원수였어요."
+      ],
+      "study": "성도들은 전에는 악한 행실로 하나님에게서 멀어져 원수였어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-27",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        27
+      ],
+      "title": "그리스도의 육체로 화해",
+      "ref": "골로새서 1:27",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 죽음을 통해 성도들을 하나님과 화해시키셨어요."
+      ],
+      "study": "그리스도는 죽음을 통해 성도들을 하나님과 화해시키셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-28",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        28
+      ],
+      "title": "거룩하고 흠 없이 세우심",
+      "ref": "골로새서 1:28",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 하나님 앞에 거룩하고 흠 없고 책망할 것 없이 서게 되었어요."
+      ],
+      "study": "성도들은 하나님 앞에 거룩하고 흠 없고 책망할 것 없이 서게 되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-1-29",
+      "code": "col",
+      "chapter": 1,
+      "verseNumbers": [
+        29
+      ],
+      "title": "복음의 소망에 굳게 섬",
+      "ref": "골로새서 1:29",
+      "actors": [
+        "바울",
+        "디모데",
+        "골로새 성도들",
+        "에바브라",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 믿음에 굳게 서서 복음의 소망에서 떠나지 말아야 해요."
+      ],
+      "study": "성도들은 믿음에 굳게 서서 복음의 소망에서 떠나지 말아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 1:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-1",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "바울의 수고와 씨름 · 마음에 위로를 얻음",
+      "ref": "골로새서 2:1",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 골로새와 라오디게아 성도들을 위해 큰 싸움을 하고 있어요. 성도들은 사랑으로 연합해 마음에 위로를 얻어요."
+      ],
+      "study": "바울은 골로새와 라오디게아 성도들을 위해 큰 싸움을 하고 있어요. 성도들은 사랑으로 연합해 마음에 위로를 얻어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-2",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "깨달음의 풍성함 · 그리스도 안에 있는 지혜",
+      "ref": "골로새서 2:2",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 확신에 찬 깨달음의 풍성함에 이르러요. 지혜와 지식의 모든 보화가 그리스도 안에 감추어져 있어요."
+      ],
+      "study": "성도들은 확신에 찬 깨달음의 풍성함에 이르러요. 지혜와 지식의 모든 보화가 그리스도 안에 감추어져 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-3",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "속임수에 넘어가지 않도록 · 몸은 떨어져도 영으로 함께",
+      "ref": "골로새서 2:3",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그럴듯한 말로 아무도 성도들을 속이지 못하게 해요. 바울은 몸으로는 떠나 있어도 영으로 함께하며 질서와 믿음을 기뻐해요."
+      ],
+      "study": "바울은 그럴듯한 말로 아무도 성도들을 속이지 못하게 해요. 바울은 몸으로는 떠나 있어도 영으로 함께하며 질서와 믿음을 기뻐해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-4",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "그리스도를 주로 받아들임 · 그 안에서 뿌리내림",
+      "ref": "골로새서 2:4",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그리스도 예수를 주로 받아들였어요. 성도들은 그리스도 안에 뿌리를 내리고 세움을 받아요."
+      ],
+      "study": "성도들은 그리스도 예수를 주로 받아들였어요. 성도들은 그리스도 안에 뿌리를 내리고 세움을 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-5",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "믿음에 굳게 섬 · 철학과 헛된 속임수 경계",
+      "ref": "골로새서 2:5",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "배운 대로 믿음에 굳게 서서 감사가 넘쳐요. 사람의 전통과 세상의 초등 원리에 따른 철학으로 사로잡히지 않도록 조심해요."
+      ],
+      "study": "배운 대로 믿음에 굳게 서서 감사가 넘쳐요. 사람의 전통과 세상의 초등 원리에 따른 철학으로 사로잡히지 않도록 조심해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-6",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "그리스도 안에 신성의 충만 · 그리스도 안에서 충만해짐",
+      "ref": "골로새서 2:6",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "신성의 모든 충만이 몸으로 그리스도 안에 거해요. 성도들은 모든 통치와 권세의 머리이신 그리스도 안에서 충만해요."
+      ],
+      "study": "신성의 모든 충만이 몸으로 그리스도 안에 거해요. 성도들은 모든 통치와 권세의 머리이신 그리스도 안에서 충만해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-7",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "손으로 하지 않은 할례 · 그리스도와 함께 장사되고 일으킴",
+      "ref": "골로새서 2:7",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 손으로 하지 않은 할례를 받아 육의 몸을 벗었어요. 성도들은 세례로 그리스도와 함께 장사되고 믿음으로 함께 일으킴을 받았어요."
+      ],
+      "study": "성도들은 손으로 하지 않은 할례를 받아 육의 몸을 벗었어요. 성도들은 세례로 그리스도와 함께 장사되고 믿음으로 함께 일으킴을 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-8",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "죄와 무할례 가운데 죽었던 우리",
+      "ref": "골로새서 2:8",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 허물과 육체의 무할례로 죽었던 성도들을 살리셨어요."
+      ],
+      "study": "하나님은 허물과 육체의 무할례로 죽었던 성도들을 살리셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-9",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "모든 죄를 용서하심",
+      "ref": "골로새서 2:9",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 모든 허물을 용서하셨어요."
+      ],
+      "study": "하나님은 모든 허물을 용서하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-10",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "빚 문서를 십자가에 못 박음",
+      "ref": "골로새서 2:10",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "우리를 거스르던 빚 문서를 지워 십자가에 못 박으셨어요."
+      ],
+      "study": "우리를 거스르던 빚 문서를 지워 십자가에 못 박으셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-11",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "권세들을 무장 해제",
+      "ref": "골로새서 2:11",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 통치자와 권세를 무장 해제하고 드러내어 이기셨어요."
+      ],
+      "study": "그리스도는 통치자와 권세를 무장 해제하고 드러내어 이기셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-12",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "음식과 절기를 판단하지 말라",
+      "ref": "골로새서 2:12",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "먹고 마시는 일이나 절기와 초하루와 안식일로 아무도 성도들을 판단하지 못하게 해요."
+      ],
+      "study": "먹고 마시는 일이나 절기와 초하루와 안식일로 아무도 성도들을 판단하지 못하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-13",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "그림자와 실체",
+      "ref": "골로새서 2:13",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그런 것들은 장차 올 것의 그림자이고 실체는 그리스도께 있어요."
+      ],
+      "study": "그런 것들은 장차 올 것의 그림자이고 실체는 그리스도께 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-14",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "겸손과 천사 숭배를 내세움",
+      "ref": "골로새서 2:14",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 교사들은 겸손과 천사 숭배를 내세워 성도들을 정죄해요."
+      ],
+      "study": "거짓 교사들은 겸손과 천사 숭배를 내세워 성도들을 정죄해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-15",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "환상에 부풀어 머리를 놓침",
+      "ref": "골로새서 2:15",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 육신의 생각으로 헛되이 부풀어 머리이신 그리스도를 붙들지 않아요."
+      ],
+      "study": "그들은 육신의 생각으로 헛되이 부풀어 머리이신 그리스도를 붙들지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-16",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "온몸이 자라게 하시는 머리",
+      "ref": "골로새서 2:16",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "온몸은 머리이신 그리스도에게서 마디와 힘줄로 공급받아 자라요."
+      ],
+      "study": "온몸은 머리이신 그리스도에게서 마디와 힘줄로 공급받아 자라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-17",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "세상의 초등 원리에서 그리스도와 함께 죽음",
+      "ref": "골로새서 2:17",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그리스도와 함께 세상의 초등 원리에서 죽었어요."
+      ],
+      "study": "성도들은 그리스도와 함께 세상의 초등 원리에서 죽었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-18",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "세상에 속한 규례에 복종하지 말라",
+      "ref": "골로새서 2:18",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "세상에 속한 것처럼 규례에 복종하지 말아요."
+      ],
+      "study": "세상에 속한 것처럼 규례에 복종하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-19",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "붙잡지 말고 맛보지 말고 만지지 말라",
+      "ref": "골로새서 2:19",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "사람의 명령과 가르침에 따른 금지 규정은 붙잡거나 맛보거나 만지지 말라는 것이에요."
+      ],
+      "study": "사람의 명령과 가르침에 따른 금지 규정은 붙잡거나 맛보거나 만지지 말라는 것이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-20",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "쓰면 없어지는 것들",
+      "ref": "골로새서 2:20",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그런 것들은 쓰는 대로 없어질 것들이에요."
+      ],
+      "study": "그런 것들은 쓰는 대로 없어질 것들이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-21",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "사람의 계명에 불과함",
+      "ref": "골로새서 2:21",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "사람의 계명과 가르침에 따른 규정일 뿐이에요."
+      ],
+      "study": "사람의 계명과 가르침에 따른 규정일 뿐이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-22",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "자기 방식의 경건은 지혜처럼 보여도",
+      "ref": "골로새서 2:22",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "자기 방식의 경건과 겸손과 몸을 괴롭히는 일은 지혜처럼 보여요."
+      ],
+      "study": "자기 방식의 경건과 겸손과 몸을 괴롭히는 일은 지혜처럼 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-2-23",
+      "code": "col",
+      "chapter": 2,
+      "verseNumbers": [
+        23
+      ],
+      "title": "육체의 욕망을 막지 못함",
+      "ref": "골로새서 2:23",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "라오디게아 성도들",
+        "거짓 교사들",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그러나 그런 규정은 육체의 욕망을 막는 데 아무 유익이 없어요."
+      ],
+      "study": "그러나 그런 규정은 육체의 욕망을 막는 데 아무 유익이 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 2:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-1",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "위의 것을 찾으라 · 그리스도는 하나님 오른편에 계심",
+      "ref": "골로새서 3:1",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그리스도와 함께 일으킴을 받았으니 위의 것을 찾아야 해요. 그리스도는 하나님 오른편에 앉아 계세요."
+      ],
+      "study": "성도들은 그리스도와 함께 일으킴을 받았으니 위의 것을 찾아야 해요. 그리스도는 하나님 오른편에 앉아 계세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-2",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "위의 것을 생각하라 · 그리스도와 함께 감추어진 생명",
+      "ref": "골로새서 3:2",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "땅의 것이 아니라 위의 것을 생각해야 해요. 성도들의 생명은 그리스도와 함께 하나님 안에 감추어져 있어요."
+      ],
+      "study": "땅의 것이 아니라 위의 것을 생각해야 해요. 성도들의 생명은 그리스도와 함께 하나님 안에 감추어져 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-3",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "영광 가운데 나타나실 그리스도 · 땅에 속한 욕망을 죽이라",
+      "ref": "골로새서 3:3",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도께서 나타나실 때 성도들도 영광 가운데 나타나요. 음행과 더러움과 정욕과 악한 욕망과 탐심을 죽여요."
+      ],
+      "study": "그리스도께서 나타나실 때 성도들도 영광 가운데 나타나요. 음행과 더러움과 정욕과 악한 욕망과 탐심을 죽여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-4",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "탐심은 우상 숭배 · 불순종하는 이에게 임하는 진노",
+      "ref": "골로새서 3:4",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "탐심은 우상 숭배예요. 이런 일 때문에 하나님의 진노가 불순종하는 이들에게 임해요."
+      ],
+      "study": "탐심은 우상 숭배예요. 이런 일 때문에 하나님의 진노가 불순종하는 이들에게 임해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-5",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "전에 그 가운데 살던 성도들 · 분노와 악의와 더러운 말 버리기",
+      "ref": "골로새서 3:5",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "성도들도 전에는 그런 욕망 가운데 살았어요. 이제는 분노와 악의와 비방과 입의 부끄러운 말을 버려요."
+      ],
+      "study": "성도들도 전에는 그런 욕망 가운데 살았어요. 이제는 분노와 악의와 비방과 입의 부끄러운 말을 버려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-6",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "서로 거짓말하지 말라 · 새사람을 입음",
+      "ref": "골로새서 3:6",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "옛사람과 그 행위를 벗었으니 서로 거짓말하지 말아요. 성도들은 창조주의 형상을 따라 새롭게 되는 새사람을 입었어요."
+      ],
+      "study": "옛사람과 그 행위를 벗었으니 서로 거짓말하지 말아요. 성도들은 창조주의 형상을 따라 새롭게 되는 새사람을 입었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-7",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "그리스도는 모든 이 안에 계심 · 긍휼과 겸손과 온유를 입으라",
+      "ref": "골로새서 3:7",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "헬라인과 유대인, 종과 자유인 사이에 차별이 없고 그리스도는 모든 이 안에 계세요. 하나님의 택하심을 받은 거룩하고 사랑받는 이답게 긍휼과 겸손과 온유와 오래 참음을 입어요."
+      ],
+      "study": "헬라인과 유대인, 종과 자유인 사이에 차별이 없고 그리스도는 모든 이 안에 계세요. 하나님의 택하심을 받은 거룩하고 사랑받는 이답게 긍휼과 겸손과 온유와 오래 참음을 입어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-8",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "서로 용납하고 용서",
+      "ref": "골로새서 3:8",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "서로 불평할 일이 있어도 용납하고 주께서 용서하신 것처럼 용서해요."
+      ],
+      "study": "서로 불평할 일이 있어도 용납하고 주께서 용서하신 것처럼 용서해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-9",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "사랑은 온전하게 묶는 띠",
+      "ref": "골로새서 3:9",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "이 모든 것 위에 사랑을 더하며 사랑은 온전하게 묶는 띠예요."
+      ],
+      "study": "이 모든 것 위에 사랑을 더하며 사랑은 온전하게 묶는 띠예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-10",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "그리스도의 평강이 다스림",
+      "ref": "골로새서 3:10",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도의 평강이 마음을 다스리게 해요."
+      ],
+      "study": "그리스도의 평강이 마음을 다스리게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-11",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "한 몸으로 부르심",
+      "ref": "골로새서 3:11",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 한 몸으로 평강에 부르심을 받았어요."
+      ],
+      "study": "성도들은 한 몸으로 평강에 부르심을 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-12",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "감사하는 사람이 되라",
+      "ref": "골로새서 3:12",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "감사하는 사람이 되어야 해요."
+      ],
+      "study": "감사하는 사람이 되어야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-13",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "그리스도의 말씀이 풍성히 거함",
+      "ref": "골로새서 3:13",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도의 말씀이 성도들 안에 풍성히 거하게 해요."
+      ],
+      "study": "그리스도의 말씀이 성도들 안에 풍성히 거하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-14",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "지혜로 서로 가르치고 권면",
+      "ref": "골로새서 3:14",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "모든 지혜로 서로 가르치고 권면해요."
+      ],
+      "study": "모든 지혜로 서로 가르치고 권면해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-15",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "시와 찬송과 영적 노래",
+      "ref": "골로새서 3:15",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "감사하는 마음으로 시와 찬송과 영적인 노래를 불러요."
+      ],
+      "study": "감사하는 마음으로 시와 찬송과 영적인 노래를 불러요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-16",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "말과 행실을 주 예수의 이름으로",
+      "ref": "골로새서 3:16",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "무엇을 하든지 말이나 일이나 모두 주 예수의 이름으로 해요."
+      ],
+      "study": "무엇을 하든지 말이나 일이나 모두 주 예수의 이름으로 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-17",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "아내들은 남편에게 복종",
+      "ref": "골로새서 3:17",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "아내들은 주 안에서 마땅한 대로 남편에게 복종해요."
+      ],
+      "study": "아내들은 주 안에서 마땅한 대로 남편에게 복종해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-18",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        18
+      ],
+      "title": "남편들은 아내를 사랑",
+      "ref": "골로새서 3:18",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "남편들은 아내를 사랑하고 괴롭게 하지 말아요."
+      ],
+      "study": "남편들은 아내를 사랑하고 괴롭게 하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-19",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        19
+      ],
+      "title": "자녀들은 부모에게 순종",
+      "ref": "골로새서 3:19",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "자녀들은 모든 일에 부모에게 순종해 주님을 기쁘시게 해요."
+      ],
+      "study": "자녀들은 모든 일에 부모에게 순종해 주님을 기쁘시게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-20",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        20
+      ],
+      "title": "아버지들은 자녀를 낙심시키지 말라",
+      "ref": "골로새서 3:20",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "아버지들은 자녀를 격분하게 하지 말아 낙심하지 않게 해요."
+      ],
+      "study": "아버지들은 자녀를 격분하게 하지 말아 낙심하지 않게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-21",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        21
+      ],
+      "title": "종은 주인에게 성실히 순종",
+      "ref": "골로새서 3:21",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "종들은 사람을 기쁘게 하려 눈앞에서만 일하지 말고 성실히 순종해요."
+      ],
+      "study": "종들은 사람을 기쁘게 하려 눈앞에서만 일하지 말고 성실히 순종해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-22",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        22
+      ],
+      "title": "주를 두려워하며 일함",
+      "ref": "골로새서 3:22",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "무슨 일을 하든 사람에게 하듯 하지 말고 주를 두려워하며 해요."
+      ],
+      "study": "무슨 일을 하든 사람에게 하듯 하지 말고 주를 두려워하며 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-23",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        23
+      ],
+      "title": "주께 받을 유업의 상",
+      "ref": "골로새서 3:23",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "종들은 주께 유업의 상을 받을 것을 알아요."
+      ],
+      "study": "종들은 주께 유업의 상을 받을 것을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-24",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        24
+      ],
+      "title": "그리스도를 섬김",
+      "ref": "골로새서 3:24",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 주 그리스도를 섬겨요."
+      ],
+      "study": "성도들은 주 그리스도를 섬겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-3-25",
+      "code": "col",
+      "chapter": 3,
+      "verseNumbers": [
+        25
+      ],
+      "title": "불의를 행한 이는 갚음을 받음",
+      "ref": "골로새서 3:25",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "아내들과 남편들",
+        "자녀들과 아비들",
+        "종들",
+        "예수",
+        "하나님"
+      ],
+      "object": "robe",
+      "narrationOnly": true,
+      "lines": [
+        "불의를 행한 사람은 행한 불의의 대가를 받아요."
+      ],
+      "study": "불의를 행한 사람은 행한 불의의 대가를 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "robe",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "remove-shoe",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 3:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-1",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "주인들은 종에게 공정히 · 하늘에 계신 주를 기억",
+      "ref": "골로새서 4:1",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주인들은 종들에게 공정하고 공평하게 대해야 해요. 주인들에게도 하늘에 주님이 계심을 기억해야 해요."
+      ],
+      "study": "주인들은 종들에게 공정하고 공평하게 대해야 해요. 주인들에게도 하늘에 주님이 계심을 기억해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-2",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "기도에 힘쓰라 · 복음의 문을 열어 달라",
+      "ref": "골로새서 4:2",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 기도에 힘쓰고 깨어 감사해야 해요. 바울은 하나님이 말씀을 전할 문을 열어 그리스도의 비밀을 말하게 해 달라고 기도해요."
+      ],
+      "study": "성도들은 기도에 힘쓰고 깨어 감사해야 해요. 바울은 하나님이 말씀을 전할 문을 열어 그리스도의 비밀을 말하게 해 달라고 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-3",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "매인 몸으로 비밀을 전함 · 바깥사람에게 지혜롭게 행함",
+      "ref": "골로새서 4:3",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그 비밀 때문에 매여 있어요. 성도들은 바깥사람을 대할 때 지혜롭게 행해야 해요."
+      ],
+      "study": "바울은 그 비밀 때문에 매여 있어요. 성도들은 바깥사람을 대할 때 지혜롭게 행해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-4",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "기회를 선용하라 · 말은 은혜롭고 소금으로 맛을 냄",
+      "ref": "골로새서 4:4",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "때를 아끼며 기회를 선용해요. 말은 언제나 은혜롭고 소금으로 맛을 내듯 해야 해요."
+      ],
+      "study": "때를 아끼며 기회를 선용해요. 말은 언제나 은혜롭고 소금으로 맛을 내듯 해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-5",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "각 사람에게 어떻게 대답할지 알라 · 두기고가 소식을 전함",
+      "ref": "골로새서 4:5",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 각 사람에게 어떻게 대답할지 알아야 해요. 두기고는 사랑받는 형제이며 주 안에서 신실한 일꾼이에요."
+      ],
+      "study": "성도들은 각 사람에게 어떻게 대답할지 알아야 해요. 두기고는 사랑받는 형제이며 주 안에서 신실한 일꾼이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-6",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "바울의 형편을 알리러 보냄 · 오네시모도 함께 감",
+      "ref": "골로새서 4:6",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 두기고를 보내 자신의 형편을 알리고 성도들의 마음을 위로하게 해요. 신실하고 사랑받는 형제 오네시모도 두기고와 함께 가요."
+      ],
+      "study": "바울은 두기고를 보내 자신의 형편을 알리고 성도들의 마음을 위로하게 해요. 신실하고 사랑받는 형제 오네시모도 두기고와 함께 가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-7",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "아리스다고가 문안 · 마가도 문안",
+      "ref": "골로새서 4:7",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "함께 갇힌 아리스다고가 문안해요. 바나바의 사촌 마가도 문안해요."
+      ],
+      "study": "함께 갇힌 아리스다고가 문안해요. 바나바의 사촌 마가도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-8",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "마가를 영접하라 · 유스도라 불리는 예수도 문안",
+      "ref": "골로새서 4:8",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "마가가 가면 영접하라는 지시를 전에 받았어요. 유스도라 하는 예수도 문안해요."
+      ],
+      "study": "마가가 가면 영접하라는 지시를 전에 받았어요. 유스도라 하는 예수도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-9",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "할례받은 이들 가운데 동역자 · 바울에게 위로가 된 동역자",
+      "ref": "골로새서 4:9",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이들은 할례받은 이들 가운데 하나님 나라를 위해 일하는 동역자예요. 그들은 바울에게 위로가 되었어요."
+      ],
+      "study": "이들은 할례받은 이들 가운데 하나님 나라를 위해 일하는 동역자예요. 그들은 바울에게 위로가 되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-10",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "에바브라의 간절한 기도 · 성숙하고 확신 있게 서도록",
+      "ref": "골로새서 4:10",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "골로새 출신 에바브라는 성도들을 위해 늘 애써 기도해요. 에바브라는 성도들이 하나님의 모든 뜻 안에서 성숙하고 확신 있게 서기를 구해요."
+      ],
+      "study": "골로새 출신 에바브라는 성도들을 위해 늘 애써 기도해요. 에바브라는 성도들이 하나님의 모든 뜻 안에서 성숙하고 확신 있게 서기를 구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-11",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "라오디게아와 히에라볼리의 수고 · 누가가 문안",
+      "ref": "골로새서 4:11",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에바브라는 라오디게아와 히에라볼리 성도들을 위해서도 수고해요. 사랑받는 의사 누가가 문안해요."
+      ],
+      "study": "에바브라는 라오디게아와 히에라볼리 성도들을 위해서도 수고해요. 사랑받는 의사 누가가 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-12",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "데마도 문안 · 라오디게아 교회에 문안",
+      "ref": "골로새서 4:12",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "데마도 골로새 성도들에게 문안해요. 바울은 라오디게아의 형제자매에게도 문안해요."
+      ],
+      "study": "데마도 골로새 성도들에게 문안해요. 바울은 라오디게아의 형제자매에게도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-13",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "눔바의 집에 모이는 교회",
+      "ref": "골로새서 4:13",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "눔바와 그 집에서 모이는 교회에도 문안해요."
+      ],
+      "study": "눔바와 그 집에서 모이는 교회에도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-14",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "편지를 서로 읽으라",
+      "ref": "골로새서 4:14",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "골로새에서 편지를 읽고 라오디게아 교회에서도 읽도록 해요."
+      ],
+      "study": "골로새에서 편지를 읽고 라오디게아 교회에서도 읽도록 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-15",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "라오디게아 편지도 읽으라",
+      "ref": "골로새서 4:15",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 라오디게아에서 오는 편지도 읽어야 해요."
+      ],
+      "study": "성도들은 라오디게아에서 오는 편지도 읽어야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-16",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "아킵보에게 맡은 직무를 완수하라",
+      "ref": "골로새서 4:16",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아킵보는 주 안에서 받은 직무를 살펴 완수해야 해요."
+      ],
+      "study": "아킵보는 주 안에서 받은 직무를 살펴 완수해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-17",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "바울의 친필 문안",
+      "ref": "골로새서 4:17",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신의 손으로 문안하며 매인 것을 기억해 달라고 해요."
+      ],
+      "study": "바울은 자신의 손으로 문안하며 매인 것을 기억해 달라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-col-4-18",
+      "code": "col",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "은혜가 함께하기를",
+      "ref": "골로새서 4:18",
+      "actors": [
+        "바울",
+        "골로새 성도들",
+        "두기고",
+        "오네시모",
+        "아리스다고",
+        "마가",
+        "바나바",
+        "에바브라",
+        "누가",
+        "데마",
+        "눔바",
+        "아킵보"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "은혜가 성도들과 함께하기를 바라며 편지를 맺어요."
+      ],
+      "study": "은혜가 성도들과 함께하기를 바라며 편지를 맺어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "골로새 성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "carry",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "골로새서 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

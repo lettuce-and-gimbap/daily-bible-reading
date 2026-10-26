@@ -125,6 +125,8 @@ test('일상 인사는 만난 즉시 한 쌍만 시작하고 두 인물의 대�
  const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
  const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0});
  const first=director.tick(0,[a,b,c]);assert.equal(first.length,1);assert.equal(first[0].pairLines.length,2);
+ assert.doesNotMatch(first[0].pairLines.map(line=>line.text).join(' '),/잠깐 지나갈게|응, 잘 가|어… 안녕/);
+ assert.match(first[0].pairLines[0].text,/반갑|어떤 일을/);assert.match(first[0].pairLines[1].text,/네,|맡은 일을/);
  assert.equal(director.tick(800,[a,b,c]).length,1);assert.equal(director.active.length,1);
  assert.equal(director.active.length,1);
  b.x=8;director.tick(801,[a,b,c]);b.x=2;const again=director.tick(802,[a,b,c]);assert.equal(again.length,1);assert.equal(again[0].pairLines.length,2);

@@ -33,6 +33,8 @@ import { castKey, reconcileCast } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
+import { walkingFrame } from './character-motion.js';
+import { relationshipLines } from './relationship-lines.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose } from './motion.js';
 import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
@@ -183,7 +185,7 @@ export async function mountPixelWorld(shell, options) {
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="bgm" aria-pressed="false" aria-label="배경음악 켜기">♫ 음악 OFF</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(displayPersonName(p.name))}</button>`).join('')}</div>
-    <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 0.4초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
+    <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 0.4초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">TV는 사랑을 싣고 부스에 인물을 직접 끌어 올리면 두 사람만 대화해요. 다른 인물은 자동으로 부스에 올라가지 않아요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
     ${model.scenes.length?'<button class="pb-button" data-action="scene">다음 본문 장면 모아 보기</button>':'<button class="pb-button" data-action="demo">룻기 2장 체험으로 이동</button>'}</aside>
     <div class="pb-world-info" role="status" aria-live="polite" hidden></div>
@@ -208,11 +210,45 @@ export async function mountPixelWorld(shell, options) {
   const speechElement=shell.querySelector('.pb-speech');
   const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null,manualSpeechUntil=0;
   const encounters=new EncounterDirector(chapterData,dialogueContext,{maxActive:1});let encounterLines=[];const encounterBubbles=new Map();
+  let loveBoothSession=null;
+  const loveBooth=()=>objects.find(o=>o.kind==='love-booth');
+  const boothSlots=o=>[{x:o.x-1,y:o.y},{x:o.x+1,y:o.y}];
+  const boothPair=()=>npcs.filter(n=>n.loveBooth===loveBooth()&&!n.creature).slice(0,2);
+  const restoreBoothCamera=()=>{if(loveBoothSession?.home){Object.assign(camera,loveBoothSession.home);constrainCamera(camera,canvas.width,canvas.height);syncCamera();}};
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';manualSpeechUntil=0;cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function dismissAllBubbles(){hideSpeech();encounters.clear();encounterLines=[];for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}encounterBubbles.clear();}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
+  function startLoveBooth(){
+    if(loveBoothSession)return;
+    const stage=loveBooth(),pair=boothPair();if(!stage||pair.length!==2)return;
+    const [a,b]=pair,relation=dialogueContext.relations.find(r=>[r.from.name,r.to.name].includes(a.name)&&[r.from.name,r.to.name].includes(b.name));
+    const exchange=relation?relationshipLines(a,b,relation,null):[];
+    const special=exchange.length===2;
+    const lines=(special?exchange:[
+      {speaker:a,target:b,text:'어… 안녕하세요.',kind:'pair'},
+      {speaker:b,target:a,text:'응… 안녕하세요.',kind:'pair'},
+    ]).map(line=>({...line,origin:'booth',kind:'pair',ref:line.ref||relation?.ref}));
+    for(const n of pair){n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;}
+    faceEachOther(a,b);cancelTalk();hideSpeech();encounters.clear();
+    loveBoothSession={stage,pair,lines,mode:special?'special':'awkward',started:performance.now(),until:performance.now()+5800,home:{...camera}};
+    camera.x=((a.x+b.x)/2)*TILE;camera.y=((a.y+b.y)/2)*TILE-28;camera.zoom=Math.max(camera.zoom,1.75);constrainCamera(camera,canvas.width,canvas.height);syncCamera();
+    say(special?'두 사람이 무대에서 특별한 이야기를 나눠요.':'두 사람이 잠시 인사한 뒤 무대에서 내려와요.');
+  }
+  function finishLoveBooth(){
+    const session=loveBoothSession;if(!session)return;
+    restoreBoothCamera();loveBoothSession=null;
+    session.pair.forEach((n,i)=>{
+      n.encounter=false;n.loveBooth=null;n.idle=.2;
+      if(session.mode==='awkward'){
+        const goal={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x)+(i===0?-2:2))),y:Math.round(n.y)+1};
+        const route=findPath(cell(n),goal,blocked);if(route?.length)n.path=route;
+      }
+    });
+    updateEncounters(performance.now());draw();
+  }
   function updateSpeech(now){
+    if(loveBoothSession){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';shownSpeech=null;speech.dismiss(now);speechElement.hidden=true;cancelTalk();return;}
     const enabled=ambientSpeechAllowed(encounterLines,!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!objectHold?.active&&!placing&&!removing&&!shell.querySelector('.pb-design,.pb-scripture'));
     const manualActive=manualSpeechAllowed(speech.current,manualSpeechUntil,now);
     const ready=!speech.current&&!pendingTalk&&now>=speech.nextAt;
@@ -285,17 +321,19 @@ export async function mountPixelWorld(shell, options) {
     shell.append(panel);panel.querySelector('button').focus();
   }
   function updateEncounters(now){
-    const enabled=!paused&&!activeEvent&&!pendingEvent&&!shell.querySelector('.pb-design,.pb-scripture')&&!document.hidden;
-    const excluded=[drag?.active?drag.n:null];
+    const enabled=!loveBoothSession&&!paused&&!activeEvent&&!pendingEvent&&!shell.querySelector('.pb-design,.pb-scripture')&&!document.hidden;
+    const excluded=[drag?.active?drag.n:null,...npcs.filter(n=>n.loveBooth)];
     encounterLines=encounters.tick(now,npcs,{enabled,excluded});
     if(pendingTalk&&[pendingTalk.choice.speaker,pendingTalk.choice.target].some(n=>n.encounter))cancelTalk();
+    if(loveBoothSession&&now>=loveBoothSession.until)finishLoveBooth();
+    if(loveBoothSession)encounterLines=[{...loveBoothSession.lines[0],session:'love-booth',slot:0,pairLines:loveBoothSession.lines,started:loveBoothSession.started,until:loveBoothSession.until}];
     const parts=encounterLines.flatMap(line=>(line.pairLines||[line]).map((part,index)=>({base:line,part,id:`${line.session}:${line.slot}:${index}`})));
     const ids=new Set(parts.map(p=>p.id));
     for(const [id,el]of encounterBubbles)if(!ids.has(id)){el._closePortrait?.();el.remove();encounterBubbles.delete(id);}
     for(const {base,part,id} of parts){
       const line={...base,...part};let el=encounterBubbles.get(id);
       if(!el){
-        el=document.createElement('div');el.className=`pb-speech pb-encounter ${line.origin==='general'?'pb-encounter-general':'pb-encounter-related'}`;el.setAttribute('role','status');el.setAttribute('aria-live','polite');
+        el=document.createElement('div');el.className=`pb-speech pb-encounter ${line.origin==='general'?'pb-encounter-general':'pb-encounter-related'}${line.origin==='booth'?' pb-encounter-booth':''}`;el.setAttribute('role','status');el.setAttribute('aria-live','polite');
         el.innerHTML='<b class="pb-speech-speaker"></b><p></p><button class="pb-speech-reference" data-action="encounter-details">자세히 보기</button>';
         el.dataset.encounter=id;
         el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);
@@ -304,7 +342,7 @@ export async function mountPixelWorld(shell, options) {
         shell.querySelector('.pb-world-stage').append(el);encounterBubbles.set(id,el);
         el._line=line;
       }
-      el._line=line;el.classList.toggle('pb-encounter-related',line.origin!=='general');el.classList.toggle('pb-encounter-general',line.origin==='general');
+      el._line=line;el.classList.toggle('pb-encounter-related',line.origin!=='general');el.classList.toggle('pb-encounter-general',line.origin==='general');el.classList.toggle('pb-encounter-booth',line.origin==='booth');
       el.querySelector('.pb-speech-speaker').textContent=displayPersonName(line.speaker.name);el.querySelector('p').textContent=line.text;
       const detail=el.querySelector('[data-action="encounter-details"]');detail.hidden=!speechContext(line,chapterData)&&!parseReference(line.ref)?.verses?.length;
     }
@@ -369,11 +407,21 @@ export async function mountPixelWorld(shell, options) {
   try{const saved=localStorage.getItem(backgroundStorageKey(model.key));if(Object.hasOwn(BACKGROUNDS,saved))backgroundKey=saved;}catch(_){}
   let terrain=sceneDecorations(backgroundKey);
   const storageKey = `pixel-bible-layout:${model.key}`;
-  const defaults = () => [{ kind: "field", x: 48, y: 27 }, { kind: "water", x: 43, y: 25 }, { kind: "bench", x: 35, y: 25 }, { kind: "tree", x: 26, y: 21 }, { kind: "tree", x: 54, y: 24 }];
+  const defaults = () => [{ kind: "field", x: 48, y: 27 }, { kind: "water", x: 43, y: 25 }, { kind: "bench", x: 35, y: 25 }, { kind: "tree", x: 26, y: 21 }, { kind: "tree", x: 54, y: 24 }, {kind:"love-booth",x:40,y:19}];
   let objects = defaults();
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey));
-    if(Array.isArray(saved))objects=fitLayout(saved,OBJECTS);
+    if(Array.isArray(saved)){
+      objects=fitLayout(saved,OBJECTS);
+      if(!objects.some(o=>o.kind==='love-booth')){
+        const occupied=new Set([...objects,...terrain].map(o=>`${o.x},${o.y}`));let spot=null;
+        for(let radius=0;radius<10&&!spot;radius++)for(let dy=-radius;dy<=radius&&!spot;dy++)for(let dx=-radius;dx<=radius;dx++){
+          if(Math.max(Math.abs(dx),Math.abs(dy))!==radius)continue;const x=40+dx,y=19+dy;
+          if(x>=BOUNDS.minX&&x<=BOUNDS.maxX&&y>=BOUNDS.minY&&y<=BOUNDS.maxY&&!occupied.has(`${x},${y}`)){spot={x,y};break;}
+        }
+        if(spot)objects.push({kind:'love-booth',...spot});
+      }
+    }
   } catch (_) {}
   terrain=terrain.filter(o=>!objects.some(p=>Math.hypot(p.x-o.x,p.y-o.y)<2.5));
   const positions=castPositions(visibleCast.length);
@@ -696,7 +744,7 @@ export async function mountPixelWorld(shell, options) {
 
   canvas.addEventListener('wheel',e=>{e.preventDefault();const delta=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?canvas.clientHeight:1);zoomAt(camera,camera.zoom*Math.exp(-delta*.0015),pixelPoint(e),canvas.width,canvas.height);syncCamera();draw();},{signal,passive:false});
   canvas.addEventListener('pointerdown',e=>{
-    if(e.button!==0||!options.allowed())return;
+    if(e.button!==0||!options.allowed()||loveBoothSession)return;
     const point=pixelPoint(e);pointers.set(e.pointerId,point);
     if(pointers.size>=2){
       canvas.setPointerCapture?.(e.pointerId);
@@ -775,7 +823,7 @@ export async function mountPixelWorld(shell, options) {
       if(objectHold.active){e.preventDefault();objectHold.p=coordinates(e);draw();}return;
     }
     if(!drag||e.pointerId!==drag.id)return;
-    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.path=[];drag.n.task=null;drag.n.action='';drag.n.usingObject=null;drag.n.interaction=null;canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브젝트에 내려놓아 보세요.`);}
+    if(!drag.active&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6){hideSpeech();drag.active=true;pendingEvent=null;drag.n.loveBooth=null;drag.n.path=[];drag.n.task=null;drag.n.action='';drag.n.usingObject=null;drag.n.interaction=null;canvas.dataset.dragging='true';say(`${objectPhrase(drag.n.name)} 집어 들었어요. 빈 땅이나 오브젝트에 내려놓아 보세요.`);}
     if(drag.active){e.preventDefault();drag.vx=drag.vx*.65+(e.clientX-drag.lastX)*.35;drag.lastX=e.clientX;drag.p=coordinates(e);draw();}
   },{signal});
   function finishDrag(e,cancel=false) {
@@ -790,6 +838,12 @@ export async function mountPixelWorld(shell, options) {
     held.p=p;const origin=grabbedOrigin(held);
     const landing={x:Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(origin.x))),y:Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(origin.y)))};
     const obj=objects.find(o=>Math.hypot(o.x-landing.x,o.y-landing.y)<1.6||Math.hypot(o.x-p.x,o.y-p.y)<1.3);
+    const stage=loveBooth();
+    if(stage&&Math.hypot(stage.x-landing.x,stage.y-landing.y)<2.4){
+      const occupied=boothPair(),slot=boothSlots(stage).find(s=>!occupied.some(other=>Math.hypot(other.x-s.x,other.y-s.y)<.2));
+      if(!slot){n.x=held.from.x;n.y=held.from.y;n.loveBooth=null;say('무대에는 두 사람까지 올라갈 수 있어요.');draw();return;}
+      else{Object.assign(n,slot);n.loveBooth=stage;n.path=[];n.task=null;n.usingObject=null;n.interaction=null;n.idle=8;keepInView(n);startLoveBooth();updateEncounters(performance.now());draw();return;}
+    }
     const boat=[...objects,...terrain].find(o=>isBoat(o)&&waterAt(backgroundKey,o.x,o.y)&&(Math.hypot(o.x-landing.x,o.y-landing.y)<2||Math.hypot(o.x-p.x,o.y-p.y)<1.5));
     n.boatRide=null;
     if(boat){
@@ -1019,8 +1073,8 @@ export async function mountPixelWorld(shell, options) {
       const water=objects.find(o=>['water','well','water-supply','basin'].includes(o.kind)&&Math.hypot(o.x-plant.x,o.y-plant.y)<=3);
       plant.usingObject=water||null;plant.interaction=water?{id:'plant:water',category:'water',kind:water.kind,gesture:'absorb',creatureAction:'absorb',variant:0,period:3,phase:0}:null;
     }
-    const idle=npcs.filter(n=>n.creature?.kind!=='plant'&&!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
-    const pairs=objects.filter(o=>!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
+    const idle=npcs.filter(n=>n.creature?.kind!=='plant'&&!n.loveBooth&&!n.encounter&&!n.path.length&&!n.task&&!n.action&&speech.current?.speaker!==n&&speech.current?.target!==n);
+    const pairs=objects.filter(o=>o.kind!=='love-booth'&&!npcs.some(n=>n.task===o||n.usingObject===o)).flatMap(o=>{
       const specific=model.scenes.filter(s=>!s.narrationOnly&&s.object===o.kind&&sceneActors(s).every(Boolean));
       return idle.filter(n=>!n.creature||creatureCanUse(n,o.kind)).map(n=>({n,o,scene:specific.find(s=>s.actors[(s.id==='samaritan-well'||s.id==='jesus-boat')?1:0]===n.name),evidence:propEvidence(n,o.kind),distance:Math.hypot(o.x-n.x,o.y-n.y)}));
     });
@@ -1039,7 +1093,7 @@ export async function mountPixelWorld(shell, options) {
       nextMeet=time+12;
       for(const relation of dialogueContext.relations){
         const a=npcs.find(n=>n.name===relation.from.name),b=npcs.find(n=>n.name===relation.to.name);
-        if(!a||!b||[a,b].some(n=>n.creature||n.task||n.usingObject||n.encounter||n.path.length)||Math.hypot(a.x-b.x,a.y-b.y)>7)continue;
+        if(!a||!b||[a,b].some(n=>n.creature||n.loveBooth||n.task||n.usingObject||n.encounter||n.path.length)||Math.hypot(a.x-b.x,a.y-b.y)>7)continue;
         const dest=[{x:Math.round(a.x)+1,y:Math.round(a.y)},{x:Math.round(a.x)-1,y:Math.round(a.y)}].find(p=>!blocked(p.x,p.y));
         if(dest&&move(b,dest)){a.idle=10;break;}
       }
@@ -1061,6 +1115,7 @@ export async function mountPixelWorld(shell, options) {
       }
       if(n.creature?.kind==='plant'){n.path=[];n.task=null;continue;}
       if(drag?.active && drag.n===n)continue;
+      if(n.loveBooth){n.path=[];n.task=null;n.idle=2;continue;}
       if(n.encounter){n.idle=6;continue;}
       const talk=pendingTalk?.choice||speech.current;
       if(talk?.target&&(n===talk.speaker||n===talk.target)&&!n.path.length){n.idle=6;continue;}
@@ -1207,6 +1262,10 @@ function drawObject(c,o,response) {
   if(response?.actor&&(heldObject(response.actor,response.time,response.reduced)||objectWorn(response.actor,response.time,response.reduced)))return;
   drawWorldObject(c,o,TILE,response);
   drawObjectResponse(c,o,response,TILE);
+  if(o.kind==='love-booth'){
+    c.save();c.font='10px "DungGeunMo", monospace';c.textAlign='center';const name='TV는 사랑을 싣고',w=c.measureText(name).width+10;
+    c.fillStyle='#12303bd9';c.fillRect(o.x*TILE-w/2,o.y*TILE+15,w,15);c.fillStyle='#ffe7a0';c.fillText(name,o.x*TILE,o.y*TILE+26);c.restore();
+  }
   if(!Object.hasOwn(WORLD_OBJECTS,o.kind)&&OBJECT_CATALOG[o.kind]){
     c.save();c.font='10px "DungGeunMo", monospace';c.textAlign='center';const name=OBJECT_CATALOG[o.kind].name,w=c.measureText(name).width+8;
     c.fillStyle='#12303bd9';c.fillRect(o.x*TILE-w/2,o.y*TILE+15,w,15);c.fillStyle='#fff1c9';c.fillText(name,o.x*TILE,o.y*TILE+26);c.restore();
@@ -1226,7 +1285,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
   const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
-  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
+  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:walkingFrame(n.stride,!!n.path.length&&!actionPose&&!reduced),action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
   }

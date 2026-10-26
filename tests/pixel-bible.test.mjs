@@ -25,8 +25,30 @@ test('인물 모션 중에는 프레임마다 얼굴·몸 스프라이트를 바
  const {characterSpriteFrame}=await import('../js/features/pixel-bible/character-motion.js');
  const a=characterSpriteFrame({motionOnly:true,walkFrame:1,action:'drink',interaction:{handY:14,bodyX:2},expression:'surprised',baseExpression:'neutral'});
  const b=characterSpriteFrame({motionOnly:true,walkFrame:3,action:'fall',interaction:{headX:-1,bodyY:2},expression:'worried',baseExpression:'neutral'});
- assert.deepEqual(a,{walkFrame:0,action:'',interaction:null,expression:'neutral'});
- assert.deepEqual(b,a);
+ assert.deepEqual(a,{walkFrame:1,action:'',interaction:null,expression:'neutral'});
+ assert.deepEqual(b,{walkFrame:3,action:'',interaction:null,expression:'neutral'});
+ const {walkingFrame}=await import('../js/features/pixel-bible/character-motion.js');
+ assert.deepEqual([0,1,2,3].map(i=>walkingFrame(i/2,true)),[0,1,2,3]);
+ assert.equal(walkingFrame(2,true),0);assert.equal(walkingFrame(2,false),0);
+});
+
+test('TV는 사랑을 싣고 부스는 수동 배치 오브젝트로 등록되고 자동 인물 방문에서 제외된다',async()=>{
+ const {WORLD_OBJECTS}=await import('../js/features/pixel-bible/object-scenes.js');
+ const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
+ const {readFile}=await import('node:fs/promises');
+ const world=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ assert.equal(WORLD_OBJECTS['love-booth'],'TV는 사랑을 싣고');assert.ok(OBJECT_CATALOG['love-booth']);
+ assert.match(world,/n\.loveBooth=stage[\s\S]{0,120}startLoveBooth\(\)/);
+ assert.match(world,/o\.kind!=='love-booth'/);assert.match(world,/camera\.zoom=Math\.max\(camera\.zoom,1\.75\)/);
+ assert.match(world,/if\(loveBoothSession\).*speech\.dismiss/);
+});
+
+test('인물 독백은 화자 이름을 1인칭 주어로 바꾼다',async()=>{
+ const {firstPersonMonologue}=await import('../js/features/pixel-bible/personal-lines.js');
+ assert.equal(firstPersonMonologue('예후','예후가 왕이 되었다.'),'내가 왕이 되었다.');
+ assert.equal(firstPersonMonologue('이세벨','이세벨은 장로들을 움직이겠어.'),'나는 장로들을 움직이겠어.');
+ assert.equal(firstPersonMonologue('다윗','그는 다시 길을 떠났다.'),'나는 다시 길을 떠났다.');
+ assert.equal(firstPersonMonologue('여호아하스','아버지 예후의 뒤를 이어 이스라엘 왕이 되었다.'),'내 아버지의 뒤를 이어 내가 이스라엘 왕이 되었어.');
 });
 
 test('물·나무·밧줄·작업 동작은 각자 다른 8박 핵심 자세를 사용한다',async()=>{

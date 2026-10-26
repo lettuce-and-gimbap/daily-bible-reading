@@ -65,7 +65,12 @@ export class EncounterDirector {
       if(Math.abs(a.y-b.y)<.12)b.y=a.y;else b.x=a.x;
       const directions=opposedDirections(a,b);if(!directions)continue;
       for(const [i,n]of [a,b].entries()){n.path=[];n.idle=6;n.direction=directions[i];n.encounter=true;}
-      const lines=[{speaker:a,target:b,text:this.random()<.5?'어… 안녕.':'잠깐 지나갈게.',origin:'general',kind:'pair'},{speaker:b,target:a,text:'응, 잘 가.',origin:'general',kind:'pair'}];
+      const variant=this.random()<.5?0:1;
+      const greetings=[
+       ['여기서 만나니 반갑네요. 잘 지내셨어요?','네, 덕분에 잘 지내요. 다시 이야기 나눠 기뻐요.'],
+       ['오늘은 어떤 일을 하고 계세요?','맡은 일을 살피고 있어요. 당신은 잘 지내셨나요?'],
+      ][variant];
+      const lines=[{speaker:a,target:b,text:greetings[0],origin:'general',kind:'pair'},{speaker:b,target:a,text:greetings[1],origin:'general',kind:'pair'}];
       this.active.push({id,people:[a,b],lines,started:now,until:now+5800});this.nextGreeting=now;started=true;break;
      }if(started)break;
     }

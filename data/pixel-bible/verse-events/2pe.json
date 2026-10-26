@@ -1,0 +1,4656 @@
+{
+  "version": 1,
+  "code": "2pe",
+  "scope": "베드로후서 1–3장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "시몬 베드로",
+        "role": "베드로후서 1장 서신의 인물",
+        "refs": [
+          "베드로후서 1장"
+        ]
+      },
+      {
+        "name": "성도들",
+        "role": "베드로후서 1장 서신의 인물",
+        "refs": [
+          "베드로후서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "베드로후서 1장 서신의 인물",
+        "refs": [
+          "베드로후서 1장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "베드로후서 1장 서신의 인물",
+        "refs": [
+          "베드로후서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "베드로후서 1장 서신의 인물",
+        "refs": [
+          "베드로후서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "베드로",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "거짓 선생들",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "범죄한 천사들",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "노아",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "롯",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "발람",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "베드로후서 2장 서신의 인물",
+        "refs": [
+          "베드로후서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "베드로",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      },
+      {
+        "name": "조롱하는 자들",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      },
+      {
+        "name": "사랑하는 자들",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      },
+      {
+        "name": "바울",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "베드로후서 3장 서신의 인물",
+        "refs": [
+          "베드로후서 3장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-2pe-1-1",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "예수 그리스도의 종이며 사도",
+      "ref": "베드로후서 1:1",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "시몬 베드로는 예수 그리스도의 종이며 사도라고 자신을 소개해요."
+      ],
+      "study": "시몬 베드로는 예수 그리스도의 종이며 사도라고 자신을 소개해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-2",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "같은 귀한 믿음을 받은 이들",
+      "ref": "베드로후서 1:2",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 같은 귀한 믿음을 함께 받았어요."
+      ],
+      "study": "성도들은 같은 귀한 믿음을 함께 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-3",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "하나님과 예수를 아는 지식",
+      "ref": "베드로후서 1:3",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님과 예수를 아는 지식으로 은혜와 평강이 더해지기를 바라요."
+      ],
+      "study": "하나님과 예수를 아는 지식으로 은혜와 평강이 더해지기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-4",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "생명과 경건에 필요한 것을 주심",
+      "ref": "베드로후서 1:4",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 능력은 생명과 경건에 필요한 모든 것을 주셨어요."
+      ],
+      "study": "하나님의 능력은 생명과 경건에 필요한 모든 것을 주셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-5",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "영광과 덕으로 부르심",
+      "ref": "베드로후서 1:5",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 자기 영광과 덕으로 성도들을 부르셨어요."
+      ],
+      "study": "하나님은 자기 영광과 덕으로 성도들을 부르셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-6",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "보배롭고 큰 약속",
+      "ref": "베드로후서 1:6",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 보배롭고 큰 약속을 주셔서 신성한 성품에 참여하게 하셨어요."
+      ],
+      "study": "하나님은 보배롭고 큰 약속을 주셔서 신성한 성품에 참여하게 하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-7",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "세상의 정욕과 부패를 피함",
+      "ref": "베드로후서 1:7",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 정욕으로 세상에 들어온 부패를 피했어요."
+      ],
+      "study": "성도들은 정욕으로 세상에 들어온 부패를 피했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-8",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "믿음에 덕을 더하라",
+      "ref": "베드로후서 1:8",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "믿음에 덕을 더하고 덕에 지식을 더해야 해요."
+      ],
+      "study": "믿음에 덕을 더하고 덕에 지식을 더해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-9",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "지식과 절제를 더함",
+      "ref": "베드로후서 1:9",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "지식에는 절제를, 절제에는 인내를 더해요."
+      ],
+      "study": "지식에는 절제를, 절제에는 인내를 더해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-10",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "경건과 형제 우애를 더함",
+      "ref": "베드로후서 1:10",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "인내에는 경건을, 경건에는 형제 우애를 더해요."
+      ],
+      "study": "인내에는 경건을, 경건에는 형제 우애를 더해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-11",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "형제 우애에 사랑을 더함",
+      "ref": "베드로후서 1:11",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "형제 우애에 사랑을 더해야 해요."
+      ],
+      "study": "형제 우애에 사랑을 더해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-12",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "이 덕들이 풍성하게 자람",
+      "ref": "베드로후서 1:12",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이런 덕들이 풍성하면 성도들이 주 예수를 아는 데 게으르거나 열매 없지 않아요."
+      ],
+      "study": "이런 덕들이 풍성하면 성도들이 주 예수를 아는 데 게으르거나 열매 없지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-13",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "없는 이는 눈먼 사람",
+      "ref": "베드로후서 1:13",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이 덕들이 없는 이는 앞을 못 보는 눈먼 사람과 같아요."
+      ],
+      "study": "이 덕들이 없는 이는 앞을 못 보는 눈먼 사람과 같아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-14",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "부르심과 택하심을 굳게 하라",
+      "ref": "베드로후서 1:14",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 부르심과 택하심을 굳게 해야 해요."
+      ],
+      "study": "성도들은 부르심과 택하심을 굳게 해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-15",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "넘어지지 않게 됨",
+      "ref": "베드로후서 1:15",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그렇게 하면 결코 넘어지지 않을 거예요."
+      ],
+      "study": "그렇게 하면 결코 넘어지지 않을 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-16",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "영원한 나라에 들어감",
+      "ref": "베드로후서 1:16",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리 주 예수 그리스도의 영원한 나라에 넉넉히 들어가게 돼요."
+      ],
+      "study": "우리 주 예수 그리스도의 영원한 나라에 넉넉히 들어가게 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-17",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "항상 기억시키려는 베드로",
+      "ref": "베드로후서 1:17",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "베드로는 성도들이 알고 있는 진리도 늘 기억하게 하려 해요."
+      ],
+      "study": "베드로는 성도들이 알고 있는 진리도 늘 기억하게 하려 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-18",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "장막을 벗을 날을 앎",
+      "ref": "베드로후서 1:18",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "베드로는 자기 장막을 벗을 때가 가까운 줄 알아요."
+      ],
+      "study": "베드로는 자기 장막을 벗을 때가 가까운 줄 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-19",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "떠난 뒤에도 기억하게 함",
+      "ref": "베드로후서 1:19",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "베드로는 자신이 떠난 뒤에도 성도들이 이 일을 기억하도록 힘써요."
+      ],
+      "study": "베드로는 자신이 떠난 뒤에도 성도들이 이 일을 기억하도록 힘써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-20",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "교묘한 이야기 아닌 목격 증언",
+      "ref": "베드로후서 1:20",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사도들은 교묘히 만든 이야기를 따르지 않고 주의 위엄을 직접 보았어요."
+      ],
+      "study": "사도들은 교묘히 만든 이야기를 따르지 않고 주의 위엄을 직접 보았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-1-21",
+      "code": "2pe",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "하늘에서 들린 하나님의 음성",
+      "ref": "베드로후서 1:21",
+      "actors": [
+        "시몬 베드로",
+        "성도들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지에게서 예수에 관한 음성이 들렸어요."
+      ],
+      "study": "하나님 아버지에게서 예수에 관한 음성이 들렸어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬 베드로",
+        "target": "성도들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "시몬 베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시몬 베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "시몬 베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "시몬 베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-1",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "거짓 선생들이 나타날 것",
+      "ref": "베드로후서 2:1",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "백성 가운데 거짓 선지자가 있었듯 성도들 가운데 거짓 선생이 나타나요."
+      ],
+      "study": "백성 가운데 거짓 선지자가 있었듯 성도들 가운데 거짓 선생이 나타나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-2",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "파괴적인 이단을 몰래 들임",
+      "ref": "베드로후서 2:2",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 파괴적인 이단을 몰래 끌어들이고 주인을 부인해요."
+      ],
+      "study": "그들은 파괴적인 이단을 몰래 끌어들이고 주인을 부인해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-3",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "자기들의 멸망을 재촉",
+      "ref": "베드로후서 2:3",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "많은 사람이 그들의 방탕을 따르고 진리의 길이 비방받아요."
+      ],
+      "study": "많은 사람이 그들의 방탕을 따르고 진리의 길이 비방받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-4",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "탐심으로 지어낸 말",
+      "ref": "베드로후서 2:4",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 선생들은 탐심으로 지어낸 말을 해요."
+      ],
+      "study": "거짓 선생들은 탐심으로 지어낸 말을 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-5",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "옛 세상을 아끼지 않으심",
+      "ref": "베드로후서 2:5",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 범죄한 천사들을 아끼지 않고 어둠에 가두셨어요."
+      ],
+      "study": "하나님은 범죄한 천사들을 아끼지 않고 어둠에 가두셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-6",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "홍수 때 옛 세상을 심판",
+      "ref": "베드로후서 2:6",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 경건하지 않은 세상에 홍수를 내리셨어요."
+      ],
+      "study": "하나님은 경건하지 않은 세상에 홍수를 내리셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-7",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "의의 전파자 노아를 보전",
+      "ref": "베드로후서 2:7",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 의를 전한 노아와 일곱 사람을 보전하셨어요."
+      ],
+      "study": "하나님은 의를 전한 노아와 일곱 사람을 보전하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-8",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "소돔과 고모라를 재로 만드심",
+      "ref": "베드로후서 2:8",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 소돔과 고모라를 심판해 후세에 본보기로 삼으셨어요."
+      ],
+      "study": "하나님은 소돔과 고모라를 심판해 후세에 본보기로 삼으셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-9",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "의로운 롯을 건지심",
+      "ref": "베드로후서 2:9",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 무법한 이들의 방탕한 행실로 괴로워한 의로운 롯을 건지셨어요."
+      ],
+      "study": "하나님은 무법한 이들의 방탕한 행실로 괴로워한 의로운 롯을 건지셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-10",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "경건한 자를 시험에서 건지심",
+      "ref": "베드로후서 2:10",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 경건한 자를 시험에서 건지시고 불의한 자를 심판 아래 두세요."
+      ],
+      "study": "주님은 경건한 자를 시험에서 건지시고 불의한 자를 심판 아래 두세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-11",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "육체의 더러운 정욕을 따름",
+      "ref": "베드로후서 2:11",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 선생들은 육체를 따라 더러운 정욕에 빠져요."
+      ],
+      "study": "거짓 선생들은 육체를 따라 더러운 정욕에 빠져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-12",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "권위를 업신여기고 영광을 비방",
+      "ref": "베드로후서 2:12",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 권위를 업신여기며 영광스러운 존재를 비방해요."
+      ],
+      "study": "그들은 권위를 업신여기며 영광스러운 존재를 비방해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-13",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "천사들도 모욕 판결하지 않음",
+      "ref": "베드로후서 2:13",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "천사들은 더 큰 힘과 능력이 있어도 주 앞에서 모욕으로 고발하지 않아요."
+      ],
+      "study": "천사들은 더 큰 힘과 능력이 있어도 주 앞에서 모욕으로 고발하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-14",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "본능에 사로잡힌 짐승",
+      "ref": "베드로후서 2:14",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 선생들은 잡혀 죽으려고 태어난 이성 없는 짐승 같아요."
+      ],
+      "study": "거짓 선생들은 잡혀 죽으려고 태어난 이성 없는 짐승 같아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-15",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "불의의 삯을 받음",
+      "ref": "베드로후서 2:15",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 불의의 대가를 받아요."
+      ],
+      "study": "그들은 불의의 대가를 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-16",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "낮에도 방탕을 즐김",
+      "ref": "베드로후서 2:16",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 낮에도 방탕을 즐기며 성도들과 함께 먹을 때 흠이 돼요."
+      ],
+      "study": "그들은 낮에도 방탕을 즐기며 성도들과 함께 먹을 때 흠이 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-17",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "간음과 탐욕의 눈",
+      "ref": "베드로후서 2:17",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들의 눈은 간음으로 가득하고 죄를 그치지 않으며 불안정한 이를 유혹해요."
+      ],
+      "study": "그들의 눈은 간음으로 가득하고 죄를 그치지 않으며 불안정한 이를 유혹해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-18",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "발람의 길을 사랑함",
+      "ref": "베드로후서 2:18",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 불의의 삯을 사랑한 발람의 길을 따라요."
+      ],
+      "study": "그들은 불의의 삯을 사랑한 발람의 길을 따라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-19",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "말 못 하는 나귀가 막음",
+      "ref": "베드로후서 2:19",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "발람의 나귀가 사람의 소리로 선지자의 미친 행동을 막았어요."
+      ],
+      "study": "발람의 나귀가 사람의 소리로 선지자의 미친 행동을 막았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-20",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "물 없는 샘과 폭풍 구름",
+      "ref": "베드로후서 2:20",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 물 없는 샘과 폭풍에 밀리는 안개 같아요."
+      ],
+      "study": "그들은 물 없는 샘과 폭풍에 밀리는 안개 같아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-21",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "어둠이 예비됨",
+      "ref": "베드로후서 2:21",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들을 위해 캄캄한 어둠이 예비되어 있어요."
+      ],
+      "study": "그들을 위해 캄캄한 어둠이 예비되어 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-2-22",
+      "code": "2pe",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "헛된 말로 유혹",
+      "ref": "베드로후서 2:22",
+      "actors": [
+        "베드로",
+        "거짓 선생들",
+        "범죄한 천사들",
+        "노아",
+        "롯",
+        "발람",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 육체의 정욕과 방탕으로 겨우 빠져나온 사람들을 유혹해요."
+      ],
+      "study": "그들은 육체의 정욕과 방탕으로 겨우 빠져나온 사람들을 유혹해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "거짓 선생들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-1",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "두 번째 편지로 기억을 일깨움 · 선지자와 사도의 말을 기억",
+      "ref": "베드로후서 3:1",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "베드로는 두 편지로 성도들의 깨끗한 마음을 일깨워요. 거룩한 선지자들의 예언과 주님의 사도들이 전한 명령을 기억해요."
+      ],
+      "study": "베드로는 두 편지로 성도들의 깨끗한 마음을 일깨워요. 거룩한 선지자들의 예언과 주님의 사도들이 전한 명령을 기억해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-2",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "마지막 날 조롱하는 자들 · 주님의 강림 약속을 비웃음",
+      "ref": "베드로후서 3:2",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "마지막 날에는 자기 정욕을 따라 조롱하는 자들이 나타나요. 그들은 주께서 오신다는 약속이 어디 있느냐고 물어요."
+      ],
+      "study": "마지막 날에는 자기 정욕을 따라 조롱하는 자들이 나타나요. 그들은 주께서 오신다는 약속이 어디 있느냐고 물어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-3",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "창조 때부터 만물이 그대로 · 말씀으로 하늘과 땅이 생김",
+      "ref": "베드로후서 3:3",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 창조 이래 만물이 그대로 있다고 주장해요. 하늘은 옛적부터 하나님의 말씀으로 있었고 땅은 물에서 나왔어요."
+      ],
+      "study": "그들은 창조 이래 만물이 그대로 있다고 주장해요. 하늘은 옛적부터 하나님의 말씀으로 있었고 땅은 물에서 나왔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-4",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "물로 옛 세상이 멸망",
+      "ref": "베드로후서 3:4",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그때 세상은 물에 잠겨 멸망했어요."
+      ],
+      "study": "그때 세상은 물에 잠겨 멸망했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-5",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "현재의 하늘과 땅도 보존",
+      "ref": "베드로후서 3:5",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "현재의 하늘과 땅은 같은 말씀으로 불사르기 위해 보존돼요."
+      ],
+      "study": "현재의 하늘과 땅은 같은 말씀으로 불사르기 위해 보존돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-6",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "주께는 하루가 천 년 같음",
+      "ref": "베드로후서 3:6",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑하는 이들아 주께는 하루가 천 년 같고 천 년이 하루 같아요."
+      ],
+      "study": "사랑하는 이들아 주께는 하루가 천 년 같고 천 년이 하루 같아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-7",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "더딘 것이 아니라 오래 참으심",
+      "ref": "베드로후서 3:7",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 약속을 더디 지키는 것이 아니라 아무도 멸망하지 않도록 오래 참으세요."
+      ],
+      "study": "주님은 약속을 더디 지키는 것이 아니라 아무도 멸망하지 않도록 오래 참으세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-8",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "주의 날은 도둑처럼",
+      "ref": "베드로후서 3:8",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주의 날은 도둑처럼 오고 하늘은 큰 소리로 사라져요."
+      ],
+      "study": "주의 날은 도둑처럼 오고 하늘은 큰 소리로 사라져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-9",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "땅과 모든 일이 드러남",
+      "ref": "베드로후서 3:9",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "땅과 그 안에 있는 일들이 드러날 거예요."
+      ],
+      "study": "땅과 그 안에 있는 일들이 드러날 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-10",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "거룩한 행실과 경건함",
+      "ref": "베드로후서 3:10",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "모든 것이 풀어질 테니 성도들은 거룩한 행실과 경건함으로 살아야 해요."
+      ],
+      "study": "모든 것이 풀어질 테니 성도들은 거룩한 행실과 경건함으로 살아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-11",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "새 하늘과 새 땅을 기다림",
+      "ref": "베드로후서 3:11",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 의가 깃든 새 하늘과 새 땅을 기다려요."
+      ],
+      "study": "성도들은 의가 깃든 새 하늘과 새 땅을 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-12",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "점도 흠도 없이 평강 가운데",
+      "ref": "베드로후서 3:12",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님을 기다리며 점도 흠도 없이 평강 가운데 나타나도록 힘써요."
+      ],
+      "study": "주님을 기다리며 점도 흠도 없이 평강 가운데 나타나도록 힘써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-13",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "오래 참으심은 구원의 기회",
+      "ref": "베드로후서 3:13",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주님의 오래 참으심을 구원의 기회로 여겨요."
+      ],
+      "study": "주님의 오래 참으심을 구원의 기회로 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-14",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "바울도 지혜로 편지를 씀",
+      "ref": "베드로후서 3:14",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑하는 형제 바울도 받은 지혜대로 편지했어요."
+      ],
+      "study": "사랑하는 형제 바울도 받은 지혜대로 편지했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-15",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "성경을 억지로 풀지 말라",
+      "ref": "베드로후서 3:15",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "무식하고 굳세지 못한 이들이 성경을 억지로 풀어 스스로 멸망해요."
+      ],
+      "study": "무식하고 굳세지 못한 이들이 성경을 억지로 풀어 스스로 멸망해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-16",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "미혹에 이끌려 굳셈을 잃지 말라",
+      "ref": "베드로후서 3:16",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 무법한 자들의 미혹에 이끌려 굳셈을 잃지 말아야 해요."
+      ],
+      "study": "성도들은 무법한 자들의 미혹에 이끌려 굳셈을 잃지 말아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-17",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "은혜와 지식에서 자라라",
+      "ref": "베드로후서 3:17",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "우리 주 예수 그리스도의 은혜와 그를 아는 지식에서 자라요."
+      ],
+      "study": "우리 주 예수 그리스도의 은혜와 그를 아는 지식에서 자라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2pe-3-18",
+      "code": "2pe",
+      "chapter": 3,
+      "verseNumbers": [
+        18
+      ],
+      "title": "영광이 영원히",
+      "ref": "베드로후서 3:18",
+      "actors": [
+        "베드로",
+        "조롱하는 자들",
+        "사랑하는 자들",
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수께 영광이 이제와 영원한 날까지 있기를 바라요."
+      ],
+      "study": "예수께 영광이 이제와 영원한 날까지 있기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "조롱하는 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "베드로후서 3:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

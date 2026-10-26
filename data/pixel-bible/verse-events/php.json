@@ -1,0 +1,7677 @@
+{
+  "version": 1,
+  "code": "php",
+  "scope": "빌립보서 1–4장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "바울",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "빌립보 성도들",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "형제들",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "시위대",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      },
+      {
+        "name": "대적자들",
+        "role": "빌립보서 1장 편지의 인물",
+        "refs": [
+          "빌립보서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "바울",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      },
+      {
+        "name": "빌립보 성도들",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      },
+      {
+        "name": "에바브로디도",
+        "role": "빌립보서 2장 편지의 인물",
+        "refs": [
+          "빌립보서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "바울",
+        "role": "빌립보서 3장 편지의 인물",
+        "refs": [
+          "빌립보서 3장"
+        ]
+      },
+      {
+        "name": "빌립보 성도들",
+        "role": "빌립보서 3장 편지의 인물",
+        "refs": [
+          "빌립보서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "빌립보서 3장 편지의 인물",
+        "refs": [
+          "빌립보서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "빌립보서 3장 편지의 인물",
+        "refs": [
+          "빌립보서 3장"
+        ]
+      },
+      {
+        "name": "대적자들",
+        "role": "빌립보서 3장 편지의 인물",
+        "refs": [
+          "빌립보서 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "바울",
+        "role": "빌립보서 4장 편지의 인물",
+        "refs": [
+          "빌립보서 4장"
+        ]
+      },
+      {
+        "name": "빌립보 성도들",
+        "role": "빌립보서 4장 편지의 인물",
+        "refs": [
+          "빌립보서 4장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "빌립보서 4장 편지의 인물",
+        "refs": [
+          "빌립보서 4장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "빌립보서 4장 편지의 인물",
+        "refs": [
+          "빌립보서 4장"
+        ]
+      },
+      {
+        "name": "형제들",
+        "role": "빌립보서 4장 편지의 인물",
+        "refs": [
+          "빌립보서 4장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-php-1-1",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "그리스도 예수의 종 바울과 디모데",
+      "ref": "빌립보서 1:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울과 디모데는 그리스도 예수의 종으로 편지를 시작해요."
+      ],
+      "study": "바울과 디모데는 그리스도 예수의 종으로 편지를 시작해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-2",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "빌립보의 성도와 감독과 집사",
+      "ref": "빌립보서 1:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 그리스도 예수 안에 있는 빌립보의 모든 성도와 감독과 집사에게 문안해요."
+      ],
+      "study": "그들은 그리스도 예수 안에 있는 빌립보의 모든 성도와 감독과 집사에게 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-3",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "은혜와 평강을 빌다",
+      "ref": "빌립보서 1:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지와 주 예수 그리스도에게서 은혜와 평강이 있기를 바라요."
+      ],
+      "study": "하나님 아버지와 주 예수 그리스도에게서 은혜와 평강이 있기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-4",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "성도들을 생각할 때마다 감사",
+      "ref": "빌립보서 1:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들을 생각할 때마다 하나님께 감사해요."
+      ],
+      "study": "바울은 성도들을 생각할 때마다 하나님께 감사해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-5",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "기쁨으로 늘 기도함",
+      "ref": "빌립보서 1:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들을 위해 기쁨으로 간구해요."
+      ],
+      "study": "바울은 성도들을 위해 기쁨으로 간구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-6",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "복음에 함께 참여한 교회",
+      "ref": "빌립보서 1:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 첫날부터 지금까지 복음을 위해 함께해 왔어요."
+      ],
+      "study": "성도들은 첫날부터 지금까지 복음을 위해 함께해 왔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-7",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "선한 일을 완성하실 하나님",
+      "ref": "빌립보서 1:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 시작하신 선한 일을 그리스도 예수의 날까지 완성하실 거예요."
+      ],
+      "study": "하나님은 시작하신 선한 일을 그리스도 예수의 날까지 완성하실 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-8",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "성도들을 마음에 둔 바울",
+      "ref": "빌립보서 1:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들을 마음에 두고 함께 은혜에 참여한다고 해요."
+      ],
+      "study": "바울은 성도들을 마음에 두고 함께 은혜에 참여한다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-9",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "사랑과 지식이 더 풍성하기를",
+      "ref": "빌립보서 1:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 사랑이 지식과 분별로 더 풍성해지기를 기도해요."
+      ],
+      "study": "바울은 성도들의 사랑이 지식과 분별로 더 풍성해지기를 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-10",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "가장 좋은 것을 분별함",
+      "ref": "빌립보서 1:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들이 가장 좋은 것을 분별하고 그리스도의 날까지 깨끗하기를 바라요."
+      ],
+      "study": "성도들이 가장 좋은 것을 분별하고 그리스도의 날까지 깨끗하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-11",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "의의 열매가 가득하기를",
+      "ref": "빌립보서 1:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들이 예수 그리스도로 말미암아 의의 열매를 맺어 하나님께 영광 돌리기를 바라요."
+      ],
+      "study": "성도들이 예수 그리스도로 말미암아 의의 열매를 맺어 하나님께 영광 돌리기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-12",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "바울의 일이 복음 전파를 진전시킴",
+      "ref": "빌립보서 1:12",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "바울에게 일어난 일이 도리어 복음 전파에 도움이 되었어요."
+      ],
+      "study": "바울에게 일어난 일이 도리어 복음 전파에 도움이 되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-13",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "감옥에 갇힌 일이 알려짐",
+      "ref": "빌립보서 1:13",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "바울이 그리스도 때문에 갇힌 사실이 시위대와 모든 사람에게 알려졌어요."
+      ],
+      "study": "바울이 그리스도 때문에 갇힌 사실이 시위대와 모든 사람에게 알려졌어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-14",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "형제들이 담대히 복음을 전함",
+      "ref": "빌립보서 1:14",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "바울의 갇힘을 본 형제들이 주 안에서 담대하게 말씀을 전해요."
+      ],
+      "study": "바울의 갇힘을 본 형제들이 주 안에서 담대하게 말씀을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-15",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "시기와 다툼으로 전하는 이들",
+      "ref": "빌립보서 1:15",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "어떤 이는 시기와 다툼으로, 어떤 이는 좋은 뜻으로 그리스도를 전해요."
+      ],
+      "study": "어떤 이는 시기와 다툼으로, 어떤 이는 좋은 뜻으로 그리스도를 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-16",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "사랑으로 전하는 이들",
+      "ref": "빌립보서 1:16",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "사랑으로 전하는 이들은 바울이 복음을 변호하도록 세워졌음을 알아요."
+      ],
+      "study": "사랑으로 전하는 이들은 바울이 복음을 변호하도록 세워졌음을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-17",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "다툼으로 전하는 이들",
+      "ref": "빌립보서 1:17",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "다른 이들은 순수하지 않은 마음으로 바울의 괴로움을 더하려 해요."
+      ],
+      "study": "다른 이들은 순수하지 않은 마음으로 바울의 괴로움을 더하려 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-18",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "어떤 방식이든 그리스도가 전파됨",
+      "ref": "빌립보서 1:18",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "동기가 어떻든 그리스도가 전파되니 바울은 기뻐해요."
+      ],
+      "study": "동기가 어떻든 그리스도가 전파되니 바울은 기뻐해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-19",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "기도와 성령의 도움을 기다림",
+      "ref": "빌립보서 1:19",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "형제들",
+        "시위대",
+        "예수"
+      ],
+      "object": "chain",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 기도와 예수의 성령의 도우심으로 풀려날 것을 기대해요."
+      ],
+      "study": "바울은 성도들의 기도와 예수의 성령의 도우심으로 풀려날 것을 기대해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "chain",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "guard",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-20",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "살든지 죽든지 그리스도를 높임",
+      "ref": "빌립보서 1:20",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 살든지 죽든지 담대히 그리스도를 높이기를 바라요."
+      ],
+      "study": "바울은 살든지 죽든지 담대히 그리스도를 높이기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-21",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "바울에게 사는 것은 그리스도",
+      "ref": "빌립보서 1:21",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신에게 사는 것이 그리스도이고 죽는 것도 유익이라고 고백해요."
+      ],
+      "study": "바울은 자신에게 사는 것이 그리스도이고 죽는 것도 유익이라고 고백해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-22",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        22
+      ],
+      "title": "죽음과 사역 사이에서 선택",
+      "ref": "빌립보서 1:22",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 떠나 그리스도와 함께 있는 것이 더 좋지만 성도들을 위해 남는 것이 필요하다고 느껴요."
+      ],
+      "study": "바울은 떠나 그리스도와 함께 있는 것이 더 좋지만 성도들을 위해 남는 것이 필요하다고 느껴요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-23",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        23
+      ],
+      "title": "성도들의 믿음과 기쁨을 위해 남음",
+      "ref": "빌립보서 1:23",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 믿음과 기쁨이 자라도록 그들과 함께 남을 것을 확신해요."
+      ],
+      "study": "바울은 성도들의 믿음과 기쁨이 자라도록 그들과 함께 남을 것을 확신해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-24",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        24
+      ],
+      "title": "그리스도 안에서 자랑이 커짐",
+      "ref": "빌립보서 1:24",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울이 다시 가면 성도들은 자신을 통해 그리스도 예수 안에서 자랑하게 돼요."
+      ],
+      "study": "바울이 다시 가면 성도들은 자신을 통해 그리스도 예수 안에서 자랑하게 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-25",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        25
+      ],
+      "title": "복음에 합당하게 살아라",
+      "ref": "빌립보서 1:25",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신이 가든 떠나 있든 복음에 합당하게 살라고 권해요."
+      ],
+      "study": "바울은 자신이 가든 떠나 있든 복음에 합당하게 살라고 권해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-26",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        26
+      ],
+      "title": "한 영과 한마음으로 섬김",
+      "ref": "빌립보서 1:26",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 한 영으로 굳게 서서 한마음으로 복음의 믿음을 위해 힘써야 해요."
+      ],
+      "study": "성도들은 한 영으로 굳게 서서 한마음으로 복음의 믿음을 위해 힘써야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-27",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        27
+      ],
+      "title": "대적을 두려워하지 않음",
+      "ref": "빌립보서 1:27",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "대적하는 이를 두려워하지 않는 모습은 그들에게 멸망의 표이고 성도에게는 구원의 표예요."
+      ],
+      "study": "대적하는 이를 두려워하지 않는 모습은 그들에게 멸망의 표이고 성도에게는 구원의 표예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-28",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        28
+      ],
+      "title": "그리스도를 위한 고난",
+      "ref": "빌립보서 1:28",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그리스도를 믿을 뿐 아니라 그를 위해 고난도 받도록 은혜를 받았어요."
+      ],
+      "study": "성도들은 그리스도를 믿을 뿐 아니라 그를 위해 고난도 받도록 은혜를 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-29",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        29
+      ],
+      "title": "바울과 같은 싸움을 겪음",
+      "ref": "빌립보서 1:29",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 바울이 싸우는 것을 보았고 이제도 같은 싸움을 겪어요."
+      ],
+      "study": "성도들은 바울이 싸우는 것을 보았고 이제도 같은 싸움을 겪어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-1-30",
+      "code": "php",
+      "chapter": 1,
+      "verseNumbers": [
+        30
+      ],
+      "title": "복음의 믿음을 위해 함께 힘씀",
+      "ref": "빌립보서 1:30",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "대적자들"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 한마음으로 복음의 믿음을 위해 함께 힘써요."
+      ],
+      "study": "성도들은 한마음으로 복음의 믿음을 위해 함께 힘써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 1:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-1",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "그리스도 안의 위로와 사랑",
+      "ref": "빌립보서 2:1",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도 안에 위로와 사랑의 격려가 있으면 바울의 기쁨을 채워 달라고 해요."
+      ],
+      "study": "그리스도 안에 위로와 사랑의 격려가 있으면 바울의 기쁨을 채워 달라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-2",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "한마음과 한뜻으로",
+      "ref": "빌립보서 2:2",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 같은 사랑과 한뜻으로 하나 되어야 해요."
+      ],
+      "study": "성도들은 같은 사랑과 한뜻으로 하나 되어야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-3",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "다툼과 허영을 버림",
+      "ref": "빌립보서 2:3",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "무슨 일이든 다툼이나 허영으로 하지 말고 겸손히 남을 낫게 여겨요."
+      ],
+      "study": "무슨 일이든 다툼이나 허영으로 하지 말고 겸손히 남을 낫게 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-4",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "자기 일만 아니라 남의 일도 살핌",
+      "ref": "빌립보서 2:4",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "각 사람은 자기 일만 돌보지 말고 다른 이의 일도 돌아봐야 해요."
+      ],
+      "study": "각 사람은 자기 일만 돌보지 말고 다른 이의 일도 돌아봐야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-5",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "그리스도 예수의 마음을 품음",
+      "ref": "빌립보서 2:5",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그리스도 예수의 마음을 품어야 해요."
+      ],
+      "study": "성도들은 그리스도 예수의 마음을 품어야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-6",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "하나님의 모습이나 종의 모습",
+      "ref": "빌립보서 2:6",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 하나님의 모습을 지녔으나 종의 모습을 취하셨어요."
+      ],
+      "study": "그리스도는 하나님의 모습을 지녔으나 종의 모습을 취하셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-7",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "자기를 비우고 사람처럼 되심",
+      "ref": "빌립보서 2:7",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 자기를 비우고 사람의 모습으로 오셨어요."
+      ],
+      "study": "그리스도는 자기를 비우고 사람의 모습으로 오셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-8",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "죽기까지 순종",
+      "ref": "빌립보서 2:8",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도는 죽기까지 순종하셨고 십자가에서 죽으셨어요."
+      ],
+      "study": "그리스도는 죽기까지 순종하셨고 십자가에서 죽으셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-9",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "하나님이 그를 높이심",
+      "ref": "빌립보서 2:9",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 그리스도를 높여 모든 이름 위에 뛰어난 이름을 주셨어요."
+      ],
+      "study": "하나님은 그리스도를 높여 모든 이름 위에 뛰어난 이름을 주셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-10",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "모든 무릎이 예수 이름에 꿇음",
+      "ref": "빌립보서 2:10",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "하늘과 땅과 땅 아래 있는 이들이 예수 이름에 무릎 꿇어요."
+      ],
+      "study": "하늘과 땅과 땅 아래 있는 이들이 예수 이름에 무릎 꿇어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-11",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "모든 입이 예수를 주라 고백",
+      "ref": "빌립보서 2:11",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수",
+        "하나님"
+      ],
+      "object": "cross",
+      "narrationOnly": true,
+      "lines": [
+        "모든 입이 예수 그리스도를 주라 고백해 하나님 아버지께 영광을 돌려요."
+      ],
+      "study": "모든 입이 예수 그리스도를 주라 고백해 하나님 아버지께 영광을 돌려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "cross-hill",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cross",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-12",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "두렵고 떨림으로 구원을 이루라",
+      "ref": "빌립보서 2:12",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들에게 두렵고 떨림으로 구원을 이루라고 해요."
+      ],
+      "study": "바울은 성도들에게 두렵고 떨림으로 구원을 이루라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-13",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "하나님이 뜻과 행동을 이루심",
+      "ref": "빌립보서 2:13",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 기쁘신 뜻을 위해 성도들 안에서 원하고 행하게 하세요."
+      ],
+      "study": "하나님은 기쁘신 뜻을 위해 성도들 안에서 원하고 행하게 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-14",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "원망과 다툼 없이 행함",
+      "ref": "빌립보서 2:14",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 원망과 시비 없이 모든 일을 해야 해요."
+      ],
+      "study": "성도들은 원망과 시비 없이 모든 일을 해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-15",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "흠 없는 하나님의 자녀",
+      "ref": "빌립보서 2:15",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 어그러진 세대 가운데 흠 없고 순결한 하나님의 자녀로 드러나요."
+      ],
+      "study": "성도들은 어그러진 세대 가운데 흠 없고 순결한 하나님의 자녀로 드러나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-16",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "세상에 빛을 비춤",
+      "ref": "빌립보서 2:16",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 세상에서 별처럼 빛나며 생명의 말씀을 굳게 붙들어요."
+      ],
+      "study": "성도들은 세상에서 별처럼 빛나며 생명의 말씀을 굳게 붙들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-17",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "바울의 수고가 헛되지 않음",
+      "ref": "빌립보서 2:17",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도의 날에 바울은 달음질과 수고가 헛되지 않았음을 자랑할 거예요."
+      ],
+      "study": "그리스도의 날에 바울은 달음질과 수고가 헛되지 않았음을 자랑할 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-18",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "믿음의 제물 위에 기쁨으로 부어짐",
+      "ref": "빌립보서 2:18",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 믿음의 제물과 섬김 위에 자신이 부어져도 기뻐해요."
+      ],
+      "study": "바울은 성도들의 믿음의 제물과 섬김 위에 자신이 부어져도 기뻐해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "light",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pour",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-19",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "성도들도 함께 기뻐하라",
+      "ref": "빌립보서 2:19",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신과 함께 성도들도 기뻐하고 즐거워하라고 해요."
+      ],
+      "study": "바울은 자신과 함께 성도들도 기뻐하고 즐거워하라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-20",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "디모데를 보내려는 바울",
+      "ref": "빌립보서 2:20",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 사정을 알고 위로받으려고 디모데를 곧 보내고 싶어 해요."
+      ],
+      "study": "바울은 성도들의 사정을 알고 위로받으려고 디모데를 곧 보내고 싶어 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-21",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "디모데처럼 진심으로 돌보는 이 없음",
+      "ref": "빌립보서 2:21",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 디모데처럼 성도들의 일을 진심으로 돌보는 이가 없다고 해요."
+      ],
+      "study": "바울은 디모데처럼 성도들의 일을 진심으로 돌보는 이가 없다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-22",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "자기 일만 찾는 이들",
+      "ref": "빌립보서 2:22",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "많은 이가 예수 그리스도의 일보다 자기 일을 구해요."
+      ],
+      "study": "많은 이가 예수 그리스도의 일보다 자기 일을 구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-23",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        23
+      ],
+      "title": "디모데의 검증된 충성",
+      "ref": "빌립보서 2:23",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 아들이 아버지와 함께하듯 바울과 복음을 위해 섬겼어요."
+      ],
+      "study": "디모데는 아들이 아버지와 함께하듯 바울과 복음을 위해 섬겼어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-24",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        24
+      ],
+      "title": "바울의 형편이 정해지면 디모데를 보냄",
+      "ref": "빌립보서 2:24",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신이 어떻게 될지 알게 되면 디모데를 보내기를 바라요."
+      ],
+      "study": "바울은 자신이 어떻게 될지 알게 되면 디모데를 보내기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-25",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        25
+      ],
+      "title": "바울도 곧 갈 수 있기를 바람",
+      "ref": "빌립보서 2:25",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신도 곧 가게 되기를 주 안에서 기대해요."
+      ],
+      "study": "바울은 자신도 곧 가게 되기를 주 안에서 기대해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-26",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        26
+      ],
+      "title": "에바브로디도를 돌려보냄",
+      "ref": "빌립보서 2:26",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 형제이며 동역자이고 함께 싸운 에바브로디도를 성도들에게 보내요. 그는 성도들이 바울의 필요를 돕도록 보낸 사자예요."
+      ],
+      "study": "바울은 형제이며 동역자이고 함께 싸운 에바브로디도를 성도들에게 보내요. 그는 성도들이 바울의 필요를 돕도록 보낸 사자예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-27",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        27
+      ],
+      "title": "병들어 죽을 뻔한 에바브로디도",
+      "ref": "빌립보서 2:27",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에바브로디도는 병들어 거의 죽을 뻔했지만 하나님이 긍휼을 베푸셨어요."
+      ],
+      "study": "에바브로디도는 병들어 거의 죽을 뻔했지만 하나님이 긍휼을 베푸셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-28",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        28
+      ],
+      "title": "슬픔 위에 슬픔을 면하게 하심",
+      "ref": "빌립보서 2:28",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 에바브로디도뿐 아니라 바울에게도 긍휼을 베풀어 슬픔을 덜어 주셨어요."
+      ],
+      "study": "하나님은 에바브로디도뿐 아니라 바울에게도 긍휼을 베풀어 슬픔을 덜어 주셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-29",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        29
+      ],
+      "title": "기쁨으로 맞고 귀히 여기라",
+      "ref": "빌립보서 2:29",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 그를 주 안에서 기쁨으로 맞고 귀히 여겨야 해요."
+      ],
+      "study": "성도들은 그를 주 안에서 기쁨으로 맞고 귀히 여겨야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-2-30",
+      "code": "php",
+      "chapter": 2,
+      "verseNumbers": [
+        30
+      ],
+      "title": "그리스도의 일을 위해 목숨을 건 섬김",
+      "ref": "빌립보서 2:30",
+      "actors": [
+        "바울",
+        "디모데",
+        "에바브로디도",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에바브로디도는 그리스도의 일을 위해 목숨을 걸고 바울을 섬겼어요."
+      ],
+      "study": "에바브로디도는 그리스도의 일을 위해 목숨을 걸고 바울을 섬겼어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "touch",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 2:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-1",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "주 안에서 기뻐하라",
+      "ref": "빌립보서 3:1",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 같은 말을 다시 쓰는 것이 성도들에게 안전하다고 해요."
+      ],
+      "study": "바울은 같은 말을 다시 쓰는 것이 성도들에게 안전하다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-2",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "개들을 삼가고 악한 일꾼을 경계",
+      "ref": "빌립보서 3:2",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 개들과 악한 일꾼들과 몸을 상하게 하는 이들을 경계하라고 해요."
+      ],
+      "study": "바울은 개들과 악한 일꾼들과 몸을 상하게 하는 이들을 경계하라고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-3",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "참 할례는 성령으로 하나님을 섬김",
+      "ref": "빌립보서 3:3",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "참된 할례를 받은 이들은 하나님의 영으로 섬기고 그리스도 예수를 자랑해요."
+      ],
+      "study": "참된 할례를 받은 이들은 하나님의 영으로 섬기고 그리스도 예수를 자랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-4",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "육체를 자랑할 이유가 있는 바울",
+      "ref": "빌립보서 3:4",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 육체를 신뢰하려면 자신에게도 이유가 많다고 해요."
+      ],
+      "study": "바울은 육체를 신뢰하려면 자신에게도 이유가 많다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-5",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "팔 일 만에 할례받은 이스라엘",
+      "ref": "빌립보서 3:5",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 팔 일 만에 할례를 받았고 이스라엘과 베냐민 지파에 속했어요."
+      ],
+      "study": "바울은 팔 일 만에 할례를 받았고 이스라엘과 베냐민 지파에 속했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-6",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "히브리인 중의 히브리인",
+      "ref": "빌립보서 3:6",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 히브리인 중의 히브리인이며 율법으로는 바리새인이었어요."
+      ],
+      "study": "바울은 히브리인 중의 히브리인이며 율법으로는 바리새인이었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-7",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "열심으로 교회를 박해",
+      "ref": "빌립보서 3:7",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 열심으로 교회를 박해했고 율법의 의로는 흠이 없었어요."
+      ],
+      "study": "바울은 열심으로 교회를 박해했고 율법의 의로는 흠이 없었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "teaching",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-8",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "그리스도 때문에 모든 것을 손해로 여김",
+      "ref": "빌립보서 3:8",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도를 아는 지식이 가장 귀해 다른 모든 것을 손해로 여겨요."
+      ],
+      "study": "바울은 그리스도를 아는 지식이 가장 귀해 다른 모든 것을 손해로 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-9",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "그리스도를 얻고 그 안에 있음",
+      "ref": "빌립보서 3:9",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자기 의가 아니라 믿음으로 그리스도 안에서 발견되기를 바라요."
+      ],
+      "study": "바울은 자기 의가 아니라 믿음으로 그리스도 안에서 발견되기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-10",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "그리스도와 부활의 능력을 앎",
+      "ref": "빌립보서 3:10",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도와 부활의 능력을 알고 고난에 참여하고 싶어 해요."
+      ],
+      "study": "바울은 그리스도와 부활의 능력을 알고 고난에 참여하고 싶어 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-11",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "죽음을 본받아 부활에 이름",
+      "ref": "빌립보서 3:11",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도의 죽음을 본받아 어떻게든 부활에 이르려 해요."
+      ],
+      "study": "바울은 그리스도의 죽음을 본받아 어떻게든 부활에 이르려 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-12",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "이미 얻은 것이 아닌 바울",
+      "ref": "빌립보서 3:12",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 이미 얻었거나 온전해졌다고 말하지 않아요."
+      ],
+      "study": "바울은 이미 얻었거나 온전해졌다고 말하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-13",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "그리스도께 잡힌 목적을 붙듦",
+      "ref": "빌립보서 3:13",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도 예수께 붙잡힌 목적을 붙들려고 달려가요."
+      ],
+      "study": "바울은 그리스도 예수께 붙잡힌 목적을 붙들려고 달려가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-14",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "뒤에 있는 것은 잊고 앞을 향함",
+      "ref": "빌립보서 3:14",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 뒤에 있는 것을 잊고 앞에 있는 것을 향해 달려요."
+      ],
+      "study": "바울은 뒤에 있는 것을 잊고 앞에 있는 것을 향해 달려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-15",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "부르심의 상을 향해 달림",
+      "ref": "빌립보서 3:15",
+      "actors": [
+        "바울",
+        "예수",
+        "하나님"
+      ],
+      "object": "crown",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 그리스도 안에서 하나님이 부르신 상을 향해 달려요."
+      ],
+      "study": "바울은 그리스도 안에서 하나님이 부르신 상을 향해 달려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "race-course",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "crown",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-16",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "성숙한 이들이 한마음",
+      "ref": "빌립보서 3:16",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성숙한 이들은 같은 생각을 품고 다른 생각이 있으면 하나님이 드러내실 거예요."
+      ],
+      "study": "성숙한 이들은 같은 생각을 품고 다른 생각이 있으면 하나님이 드러내실 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-17",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "받은 데까지 그대로 행함",
+      "ref": "빌립보서 3:17",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "각자는 이미 받은 빛에 따라 그대로 걸어야 해요."
+      ],
+      "study": "각자는 이미 받은 빛에 따라 그대로 걸어야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-18",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        18
+      ],
+      "title": "바울을 본받는 이들을 살핌",
+      "ref": "빌립보서 3:18",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 바울을 본받고 그렇게 걷는 이들을 살펴요."
+      ],
+      "study": "성도들은 바울을 본받고 그렇게 걷는 이들을 살펴요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-19",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        19
+      ],
+      "title": "많은 이가 십자가의 원수로 행함",
+      "ref": "빌립보서 3:19",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "많은 이가 그리스도의 십자가의 원수로 행하며 바울은 눈물로 말해요."
+      ],
+      "study": "많은 이가 그리스도의 십자가의 원수로 행하며 바울은 눈물로 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-20",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        20
+      ],
+      "title": "그들의 끝은 멸망",
+      "ref": "빌립보서 3:20",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그들의 신은 배이고 영광은 부끄러움이며 생각은 땅의 일뿐이에요."
+      ],
+      "study": "그들의 신은 배이고 영광은 부끄러움이며 생각은 땅의 일뿐이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-3-21",
+      "code": "php",
+      "chapter": 3,
+      "verseNumbers": [
+        21
+      ],
+      "title": "하늘의 시민권을 기다림",
+      "ref": "빌립보서 3:21",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "대적자들",
+        "예수"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들의 시민권은 하늘에 있고 거기서 구원자 예수 그리스도를 기다려요."
+      ],
+      "study": "성도들의 시민권은 하늘에 있고 거기서 구원자 예수 그리스도를 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 3:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-1",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "주 안에 굳게 서라",
+      "ref": "빌립보서 4:1",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 사랑하고 그리워하는 성도들에게 주 안에 굳게 서라고 권해요."
+      ],
+      "study": "바울은 사랑하고 그리워하는 성도들에게 주 안에 굳게 서라고 권해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-2",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "유오디아와 순두게가 한마음",
+      "ref": "빌립보서 4:2",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 유오디아와 순두게에게 주 안에서 같은 마음을 품으라고 간청해요."
+      ],
+      "study": "바울은 유오디아와 순두게에게 주 안에서 같은 마음을 품으라고 간청해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-3",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "참된 동역자가 두 여인을 도움",
+      "ref": "빌립보서 4:3",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 참된 동역자에게 그들을 도와 달라고 부탁하며 그들이 복음을 위해 함께 수고했다고 해요."
+      ],
+      "study": "바울은 참된 동역자에게 그들을 도와 달라고 부탁하며 그들이 복음을 위해 함께 수고했다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-4",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "주 안에서 기뻐하라",
+      "ref": "빌립보서 4:4",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들에게 주 안에서 항상 기뻐하라고 다시 말해요."
+      ],
+      "study": "바울은 성도들에게 주 안에서 항상 기뻐하라고 다시 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-5",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "너그러움을 모든 사람에게",
+      "ref": "빌립보서 4:5",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들의 너그러움을 모든 사람이 알게 하고 주님이 가까이 계시다고 해요."
+      ],
+      "study": "성도들의 너그러움을 모든 사람이 알게 하고 주님이 가까이 계시다고 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-6",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "아무것도 염려하지 말고 기도",
+      "ref": "빌립보서 4:6",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아무것도 염려하지 말고 모든 일을 기도와 간구와 감사로 하나님께 아뢰어요."
+      ],
+      "study": "아무것도 염려하지 말고 모든 일을 기도와 간구와 감사로 하나님께 아뢰어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-7",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "하나님의 평화가 마음을 지킴",
+      "ref": "빌립보서 4:7",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "사람의 생각을 뛰어넘는 하나님의 평화가 그리스도 안에서 마음과 생각을 지켜요."
+      ],
+      "study": "사람의 생각을 뛰어넘는 하나님의 평화가 그리스도 안에서 마음과 생각을 지켜요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-8",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "참되고 의롭고 칭찬할 것을 생각",
+      "ref": "빌립보서 4:8",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "무엇이든 참되고 경건하고 옳고 깨끗하고 사랑받고 칭찬할 만한 것을 생각해요."
+      ],
+      "study": "무엇이든 참되고 경건하고 옳고 깨끗하고 사랑받고 칭찬할 만한 것을 생각해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-9",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "배운 것을 행하라",
+      "ref": "빌립보서 4:9",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울에게 배우고 받고 듣고 본 것을 행하면 평화의 하나님이 함께하세요."
+      ],
+      "study": "바울에게 배우고 받고 듣고 본 것을 행하면 평화의 하나님이 함께하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-10",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "빌립보 교회가 다시 마음을 써 도움",
+      "ref": "빌립보서 4:10",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들이 다시 자신을 생각해 도울 마음이 있었지만 기회가 없었다가 이제 도움을 보낸 것을 기뻐해요."
+      ],
+      "study": "바울은 성도들이 다시 자신을 생각해 도울 마음이 있었지만 기회가 없었다가 이제 도움을 보낸 것을 기뻐해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-11",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "형편에 만족하는 법을 배움",
+      "ref": "빌립보서 4:11",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 어떤 형편에서도 만족하는 법을 배웠어요."
+      ],
+      "study": "바울은 어떤 형편에서도 만족하는 법을 배웠어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-12",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "비천함과 풍부함에 익숙함",
+      "ref": "빌립보서 4:12",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 궁핍과 풍부함, 배부름과 배고픔을 모두 겪었어요."
+      ],
+      "study": "바울은 궁핍과 풍부함, 배부름과 배고픔을 모두 겪었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-13",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "능력 주시는 분 안에서 감당",
+      "ref": "빌립보서 4:13",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신을 강하게 하시는 분 안에서 모든 것을 감당해요."
+      ],
+      "study": "바울은 자신을 강하게 하시는 분 안에서 모든 것을 감당해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-14",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "성도들이 어려움에 동참",
+      "ref": "빌립보서 4:14",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "빌립보 성도들은 바울의 어려움에 함께 참여했어요."
+      ],
+      "study": "빌립보 성도들은 바울의 어려움에 함께 참여했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-15",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "마게도냐를 떠날 때 도운 교회",
+      "ref": "빌립보서 4:15",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "복음을 처음 전할 때 빌립보 교회 외에는 주고받는 일에 함께한 교회가 없었어요."
+      ],
+      "study": "복음을 처음 전할 때 빌립보 교회 외에는 주고받는 일에 함께한 교회가 없었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-16",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "데살로니가에서도 여러 번 도움",
+      "ref": "빌립보서 4:16",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울이 데살로니가에 있을 때도 성도들은 필요한 것을 여러 번 보냈어요."
+      ],
+      "study": "바울이 데살로니가에 있을 때도 성도들은 필요한 것을 여러 번 보냈어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-17",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "바울은 선물보다 열매를 구함",
+      "ref": "빌립보서 4:17",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 선물을 구하기보다 성도들에게 유익한 열매가 풍성하기를 바라요."
+      ],
+      "study": "바울은 선물을 구하기보다 성도들에게 유익한 열매가 풍성하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-18",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "하나님께 드려진 향기로운 제물",
+      "ref": "빌립보서 4:18",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님"
+      ],
+      "object": "basket",
+      "narrationOnly": true,
+      "lines": [
+        "성도들의 선물은 하나님이 기뻐하시는 향기로운 제물이에요."
+      ],
+      "study": "성도들의 선물은 하나님이 기뻐하시는 향기로운 제물이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "basket",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-19",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        19
+      ],
+      "title": "하나님이 필요를 채우심",
+      "ref": "빌립보서 4:19",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 그리스도 예수 안에서 영광 가운데 성도들의 모든 필요를 채우세요."
+      ],
+      "study": "하나님은 그리스도 예수 안에서 영광 가운데 성도들의 모든 필요를 채우세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-20",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        20
+      ],
+      "title": "하나님 아버지께 영광",
+      "ref": "빌립보서 4:20",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지께 영광이 영원하기를 바라요."
+      ],
+      "study": "하나님 아버지께 영광이 영원하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-21",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        21
+      ],
+      "title": "모든 성도에게 문안",
+      "ref": "빌립보서 4:21",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 모든 성도에게 문안하고 함께 있는 형제들도 문안해요."
+      ],
+      "study": "바울은 모든 성도에게 문안하고 함께 있는 형제들도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-22",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        22
+      ],
+      "title": "가이사의 집 사람들도 문안",
+      "ref": "빌립보서 4:22",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "가이사의 집안에 속한 이들도 성도들에게 문안해요."
+      ],
+      "study": "가이사의 집안에 속한 이들도 성도들에게 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-php-4-23",
+      "code": "php",
+      "chapter": 4,
+      "verseNumbers": [
+        23
+      ],
+      "title": "주 예수의 은혜가 함께",
+      "ref": "빌립보서 4:23",
+      "actors": [
+        "바울",
+        "빌립보 성도들",
+        "하나님",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 주 예수 그리스도의 은혜가 성도들의 영과 함께하기를 빌어요."
+      ],
+      "study": "바울은 주 예수 그리스도의 은혜가 성도들의 영과 함께하기를 빌어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌립보 성도들",
+        "mode": "reconstruction",
+        "setting": "prison",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌립보서 4:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}
