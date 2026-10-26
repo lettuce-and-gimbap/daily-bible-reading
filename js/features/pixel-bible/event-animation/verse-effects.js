@@ -1,7 +1,7 @@
 import {drawCreature} from '../creature-art.js';
 import {CREATURES} from '../creatures.js';
 import {drawWorldObject} from '../art.js';
-export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent','ear-tongue','temple-fall','spirit-light','flight','leaf-growth']);
+export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent','ear-tongue','temple-fall','spirit-light','flight','leaf-growth','tomb-seal']);
 export function drawVerseEffects(c,sample,layout){
  const {plan,index,progress}=sample;if(!VERSE_EFFECTS.has(plan.effect))return;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),w,h);},prop=(kind,x,y)=>drawWorldObject(c,{kind,x:Math.round(x),y:Math.round(y)},1,0),p=Math.min(1,(index+progress)/5);
@@ -34,6 +34,10 @@ export function drawVerseEffects(c,sample,layout){
  if(plan.effect==='leaf-growth'&&index>=3){
   const tree=layout.prop||layout.lead,xx=tree.x,yy=tree.y-47;
   for(const [dx,dy]of [[-17,0],[-8,-8],[2,-12],[13,-6],[20,2]])r(xx+dx,yy+dy,7,6,'#8eae75');
+ }
+ if(plan.effect==='tomb-seal'){
+  const xx=layout.lead.x+66,yy=173;r(xx-24,yy-45,50,51,'#9d9275');r(xx-17,yy-37,36,43,'#263a3c');
+  const close=Math.min(1,Math.max(0,(index-3+progress)/2));prop('stone',xx+35-close*34,yy+3);
  }
  if(plan.effect==='waterline'){const who=layout.lead;r(who.x-38,241,76,59,'#4f899e');for(let i=0;i<4;i++)r(who.x-35+i*22,244+i%2*5,16,2,'#b5d7d9');}
  if(plan.effect==='star-guide'){prop('star',220+p*240,76);if(index>=4)for(let i=0;i<3;i++)r(450+i*9,85+i%2*8,3,3,'#eddaa1');}
