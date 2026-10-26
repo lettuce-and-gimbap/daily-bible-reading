@@ -144,14 +144,12 @@
         {"name":"아버지","role":"여러 경고를 하는 이","weight":3},
         {"name":"아들","role":"경고를 듣는 젊은이","weight":3},
         {"name":"게으른 자","role":"개미에게 배워야 할 사람","weight":2},
-        {"name":"개미","role":"우두머리 없이 일하는 작은 생물","weight":1},
         {"name":"불량한 자","role":"다툼을 일으키는 사람","weight":2},
         {"name":"남의 아내","role":"범하면 안 되는 여인","weight":1},
         {"name":"하나님","role":"일곱 가지를 미워하시는 분","weight":2}
       ],
       "rels": [
         {"from":"아버지","to":"아들","label":"경고하는 아버지","kind":"family","directed":true,"weight":3,"verses":"20-22","note":"부모의 가르침을 붙들면 그것이 길을 안내해 줄 거래요."},
-        {"from":"개미","to":"게으른 자","label":"본보기","kind":"ally","directed":true,"weight":2,"verses":"6-8","note":"게으른 사람은 여름에 먹이를 모으는 개미를 보고 배우라고 해요."},
         {"from":"하나님","to":"불량한 자","label":"미워하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"16-19","note":"여호와께서는 교만한 눈, 거짓된 혀, 형제 사이를 갈라놓는 일 같은 것을 미워하신대요."},
         {"from":"남의 아내","to":"아들","label":"유혹","kind":"conflict","directed":true,"weight":1,"verses":"24-29","note":"남의 아내의 아름다움에 마음을 뺏기지 말라, 그 대가는 피할 수 없대요."}
       ],
@@ -173,13 +171,11 @@
         {"name":"아버지","role":"창밖 장면을 들려주는 이","weight":3},
         {"name":"아들","role":"경고를 듣는 젊은이","weight":2},
         {"name":"어리석은 젊은이","role":"음녀를 따라간 청년","weight":3},
-        {"name":"음녀","role":"간교하게 꾀는 여인","weight":3},
-        {"name":"음녀의 남편","role":"먼 길을 떠난 사람","weight":1}
+        {"name":"음녀","role":"간교하게 꾀는 여인","weight":3}
       ],
       "rels": [
         {"from":"아버지","to":"아들","label":"경고하는 아버지","kind":"family","directed":true,"weight":3,"verses":"1-5","note":"아버지 말을 눈동자처럼 아끼면 유혹하는 여자에게 빠지지 않는대요."},
         {"from":"음녀","to":"어리석은 젊은이","label":"꾀어낸 여인","kind":"conflict","directed":true,"weight":3,"verses":"10-21","note":"기생의 옷을 입은 여인이 젊은이를 붙잡고 입 맞추며 고운 말로 꾀어 따라오게 했어요."},
-        {"from":"음녀의 남편","to":"음녀","label":"남편","kind":"family","directed":true,"weight":1,"verses":"19-20","note":"여인은 남편이 집을 떠나 먼 길을 갔다며 젊은이를 안심시켰어요."},
         {"from":"아버지","to":"어리석은 젊은이","label":"지켜본 이","kind":"other","directed":true,"weight":1,"verses":"6-7","note":"내가 우리 집 창으로 살펴보다가 어리석은 자 중에 지혜 없는 젊은이를 보았다고 해요."}
       ],
       "places": [
@@ -763,7 +759,6 @@
         {"name":"아굴","role":"자기의 무지를 고백한 사람","weight":3},
         {"name":"야게","role":"아굴의 아버지","weight":1},
         {"name":"이디엘과 우갈","role":"아굴이 말을 건넨 이들","weight":1},
-        {"name":"개미와 메뚜기","role":"작고도 지혜로운 생물","weight":1},
         {"name":"하나님","role":"순전한 말씀의 주, 방패","weight":3}
       ],
       "rels": [

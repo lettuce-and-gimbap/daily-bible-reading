@@ -1007,7 +1007,6 @@
         {"from":"히스기야","to":"하나님","label":"기도한 왕","kind":"ally","directed":true,"weight":3,"verses":"14-20","note":"히스기야는 협박 편지를 성전에서 펴 놓고 구원을 구했어요. 천하 만국이 주만이 여호와이신 줄 알게 해 달라고 기도했어요."},
         {"from":"이사야","to":"히스기야","label":"응답 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"6-7, 21","note":"이사야는 앗수르 왕의 말에 두려워 말라, 하나님이 응답하셨다고 전했어요. 왕이 기도하자 말씀도 이어졌어요."},
         {"from":"산헤립","to":"하나님","label":"모욕한 왕","kind":"conflict","directed":true,"weight":3,"verses":"23-24","note":"산헤립은 하나님을 욕하며 교만했어요. 본문은 그 오만이 하나님께 들려 왔던 길로 돌려보내신 까닭이라고 해요."},
-        {"from":"여호와의 사자","to":"산헤립","label":"군대를 친 천사","kind":"conflict","directed":true,"weight":2,"verses":"36","note":"하룻밤에 앗수르 진영의 십팔만 오천 명이 죽어 아침에 시체뿐이었어요. 사람의 힘이 아닌 하나님의 구원이었어요."},
         {"from":"아드람멜렉과 사레셀","to":"산헤립","label":"죽인 아들들","kind":"conflict","directed":true,"weight":1,"verses":"38","note":"산헤립이 신전에서 자기 신을 섬기다 아들들의 칼에 죽었어요. 이사야가 말한 대로 자기 땅에서 칼에 죽었어요."},
         {"from":"아드람멜렉과 사레셀","to":"산헤립","label":"아들들","kind":"family","directed":false,"weight":2,"verses":"38","note":"아드람멜렉과 사레셀은 산헤립의 아들들이며, 니스록 신전에서 산헤립을 죽이고 아라랏 땅으로 달아났어요.","adminOnly":true}
       ],
@@ -1053,14 +1052,12 @@
         {"name":"히스기야","role":"보물을 자랑한 왕","weight":3},
         {"name":"이사야","role":"포로를 예언한 선지자","weight":3},
         {"name":"므로닥발라단","role":"사신을 보낸 바벨론 왕","weight":2},
-        {"name":"바벨론 사신들","role":"보물을 구경한 이들","weight":2},
-        {"name":"히스기야의 자손","role":"환관이 될 후손","weight":1}
+        {"name":"바벨론 사신들","role":"보물을 구경한 이들","weight":2}
       ],
       "rels": [
         {"from":"므로닥발라단","to":"히스기야","label":"사신 보낸 왕","kind":"other","directed":true,"weight":2,"verses":"1","note":"바벨론 왕은 히스기야의 병이 나은 것을 듣고 편지와 선물을 보냈어요. 앗수르에 맞설 동맹을 얻으려는 뜻도 있었다고 보는 견해가 많아요."},
         {"from":"이사야","to":"히스기야","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"5-7","note":"이사야는 보물을 다 보인 일을 물으며, 궁의 모든 것과 자손이 바벨론으로 끌려가리라 경고했어요."},
-        {"from":"바벨론 사신들","to":"므로닥발라단","label":"보냄받은 사신","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"사신들은 왕의 편지와 선물을 가지고 와서 히스기야의 창고와 무기고를 다 보았어요."},
-        {"from":"히스기야의 자손","to":"히스기야","label":"후손","kind":"family","directed":true,"weight":1,"verses":"7","note":"히스기야의 후손 중 몇이 포로로 끌려가 바벨론 왕궁의 내시가 될 거라고 이사야가 말했어요."}
+        {"from":"바벨론 사신들","to":"므로닥발라단","label":"보냄받은 사신","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"사신들은 왕의 편지와 선물을 가지고 와서 히스기야의 창고와 무기고를 다 보았어요."}
       ],
       "places": [
         {"name":"바벨론","where":"메소보다미아 남쪽 큰 성","what":"보물과 자손이 옮겨질 큰 도성 바벨론이에요.","weight":3},

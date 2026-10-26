@@ -932,7 +932,6 @@
       ],
       "rels": [
         {"from":"다윗","to":"하나님","label":"소망을 둔 이","kind":"ally","directed":true,"weight":3,"verses":"7","note":"다윗은 이제 바랄 건 주님뿐이라고 고백해요."},
-        {"from":"다윗","to":"여두둔","label":"부르는 방식","kind":"ally","directed":true,"weight":1,"verses":"1","note":"이 노래는 인도자를 따라 여두둔의 방식으로 부르라고 제목에 적혀 있어요."},
         {"from":"다윗","to":"악인","label":"말을 참은 상대","kind":"conflict","directed":true,"weight":1,"verses":"1","note":"다윗은 악인 앞에서 실수하지 않으려고 입을 꾹 다물었대요."}
       ],
       "places": [
@@ -1223,7 +1222,6 @@
       "rels": [
         {"from":"나단","to":"다윗","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"이 시는 다윗이 밧세바와 동침한 후 선지자 나단이 그에게 왔을 때 지은 시예요."},
         {"from":"다윗","to":"하나님","label":"회개한 왕","kind":"ally","directed":true,"weight":3,"verses":"1-4, 10","note":"다윗은 사랑으로 불쌍히 여겨 달라며 깨끗한 마음을 새로 만들어 달라고 빌어요."},
-        {"from":"다윗","to":"밧세바","label":"범죄한 상대","kind":"other","directed":true,"weight":1,"verses":"1","note":"다윗은 밧세바와 범한 죄를 숨기지 않고 하나님 앞에 내놓아요."},
         {"from":"성령","to":"다윗","label":"함께하시는 영","kind":"ally","directed":true,"weight":2,"verses":"11","note":"다윗은 주님 앞에서 쫓아내지 말고 성령을 거두지 말아 달라고 해요."}
       ],
       "places": [
@@ -2774,12 +2772,10 @@
       ],
       "people": [
         {"name":"이스라엘","role":"애굽에서 나온 백성","weight":3},
-        {"name":"야곱의 집","role":"하나님의 성소가 된 백성","weight":1},
         {"name":"하나님","role":"야곱의 하나님","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이스라엘","label":"이끌어 내신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님은 이스라엘을 애굽에서 나오게 하셨고, 자기 성소와 영토로 삼으셨어요."},
-        {"from":"이스라엘","to":"야곱의 집","label":"같은 백성","kind":"family","directed":false,"weight":1,"verses":"1","note":"이스라엘과 야곱의 집은 같은 백성을 가리켜요."}
+        {"from":"하나님","to":"이스라엘","label":"이끌어 내신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님은 이스라엘을 애굽에서 나오게 하셨고, 자기 성소와 영토로 삼으셨어요."}
       ],
       "places": [
         {"name":"애굽","where":"이스라엘 남서쪽 나라","what":"이스라엘이 종살이하다가 나온 나라, 애굽","weight":2},
@@ -2868,14 +2864,11 @@
         {"name":"이스라엘과 아론의 집","role":"고백하라 부름받은 이","weight":1},
         {"name":"뭇 나라","role":"벌떼처럼 에워싼 원수","weight":2},
         {"name":"건축자들","role":"돌을 버린 자들","weight":2},
-        {"name":"머릿돌","role":"버려졌다 높아진 돌","weight":2},
         {"name":"하나님","role":"인자하심이 영원하신 분","weight":3}
       ],
       "rels": [
         {"from":"뭇 나라","to":"시인","label":"에워싼 원수","kind":"conflict","directed":true,"weight":2,"verses":"10-12","note":"나라들이 벌 떼처럼, 불붙은 가시덤불처럼 에워싸도 시인은 여호와의 이름으로 그들을 쳐서 끊겠다고 해요."},
-        {"from":"하나님","to":"시인","label":"편이 되신 분","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"여호와가 내 편이니 두렵지 않고, 사람이 나를 해치지 못한다고 해요. 사람을 믿는 것보다 하나님께 피하는 것이 나아요."},
-        {"from":"건축자들","to":"머릿돌","label":"버린 자들","kind":"conflict","directed":true,"weight":2,"verses":"22","note":"집 짓는 사람들이 쓸모없다며 버린 돌이 집 모퉁이의 머릿돌이 됐어요."},
-        {"from":"하나님","to":"머릿돌","label":"높이신 분","kind":"ally","directed":true,"weight":3,"verses":"23","note":"버려진 돌을 머릿돌로 세운 것은 여호와가 하신 일이라, 우리 눈에는 놀라워요. 그날이 하나님이 정하신 날이에요."}
+        {"from":"하나님","to":"시인","label":"편이 되신 분","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"여호와가 내 편이니 두렵지 않고, 사람이 나를 해치지 못한다고 해요. 사람을 믿는 것보다 하나님께 피하는 것이 나아요."}
       ],
       "places": [
         {"name":"의의 문","where":"성전의 문","what":"시인이 감사하며 들어가는 의의 문","weight":2},
@@ -2914,12 +2907,12 @@
       ],
       "people": [
         {"name":"시인","role":"화평을 원하는 순례자","weight":3},
-        {"name":"속이는 혀","role":"거짓말하는 이웃","weight":2},
+        {"name":"거짓말하는 이웃","role":"화평을 거부하고 속이는 이웃","weight":2},
         {"name":"하나님","role":"부르짖음에 응답하시는 분","weight":3}
       ],
       "rels": [
         {"from":"시인","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"시인은 괴로울 때 하나님께 부르짖었고 대답을 들었어요. 그래서 이제 거짓말하는 입술에서도 건져 달라고 구해요."},
-        {"from":"속이는 혀","to":"시인","label":"거짓으로 친 자","kind":"conflict","directed":true,"weight":2,"verses":"3-7","note":"속이는 혀는 날카로운 화살과 로뎀 나무 숯불 같은 벌을 받아요. 시인은 평화를 원하지만 말하면 그들은 싸우려고 해요."}
+        {"from":"거짓말하는 이웃","to":"시인","label":"거짓으로 친 자","kind":"conflict","directed":true,"weight":2,"verses":"3-7","note":"거짓말하는 이웃은 날카로운 화살과 로뎀 나무 숯불 같은 벌을 받아요. 시인은 평화를 원하지만 말하면 그들은 싸우려고 해요."}
       ],
       "places": [
         {"name":"메섹과 게달","where":"메섹과 게달","what":"시인이 오래 머문 화평을 싫어하는 이들 곁","weight":2}

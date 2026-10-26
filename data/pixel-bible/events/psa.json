@@ -1119,7 +1119,7 @@
       "chapter": 118,
       "title": "버린 돌이 머릿돌",
       "actors": [
-        "머릿돌"
+        "시인"
       ],
       "object": "stone",
       "ref": "시편 118:19-24",
@@ -1142,7 +1142,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "머릿돌",
+        "lead": "시인",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -1153,32 +1153,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "머릿돌"
+            "actor": "시인"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "머릿돌"
+            "actor": "시인"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "머릿돌"
+            "actor": "시인"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "머릿돌"
+            "actor": "시인"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "머릿돌"
+            "actor": "시인"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "머릿돌"
+            "actor": "시인"
           }
         ],
         "duration": 8.2,
@@ -2278,8 +2278,7 @@
       "chapter": 114,
       "title": "출애굽 때 바다와 요단이 물러서다",
       "actors": [
-        "이스라엘",
-        "야곱의 집"
+        "이스라엘"
       ],
       "object": "water-supply",
       "ref": "시편 114:1-8",
@@ -2305,7 +2304,7 @@
         "version": 2,
         "motif": "divide",
         "lead": "이스라엘",
-        "target": "야곱의 집",
+        "target": null,
         "mode": "illustration",
         "setting": "water",
         "effect": "divide",
@@ -15220,7 +15219,7 @@
       "title": "속이는 혀에서 건지소서 · 화평을 미워하는 자 사이",
       "actors": [
         "시인",
-        "속이는 혀"
+        "거짓말하는 이웃"
       ],
       "object": "tree",
       "ref": "시편 120:1-7",
@@ -15245,7 +15244,7 @@
         "version": 2,
         "motif": "rescue",
         "lead": "시인",
-        "target": "속이는 혀",
+        "target": "거짓말하는 이웃",
         "mode": "illustration",
         "setting": "field",
         "effect": "shelter",

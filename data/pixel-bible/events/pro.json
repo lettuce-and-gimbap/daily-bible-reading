@@ -769,8 +769,7 @@
       "chapter": 6,
       "title": "개미에게서 배우는 부지런함",
       "actors": [
-        "게으른 자",
-        "개미"
+        "게으른 자"
       ],
       "object": "scene-marker",
       "ref": "잠언 6:6-11",
@@ -794,7 +793,7 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "게으른 자",
-        "target": "개미",
+        "target": null,
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",

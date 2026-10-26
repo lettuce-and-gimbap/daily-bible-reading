@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3857);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3849);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -499,7 +499,7 @@ test('욥기 42장과 관계선 54개를 모두 사건에 맞는 양방향 대�
 
 test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 사건 배경을 구분한다',()=>{
  const psalms=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('psa.'));
- assert.equal(psalms.length,84);
+ assert.equal(psalms.length,137);
  for(const entry of psalms){assert.ok(entry.ref.startsWith('시편 '));assert.equal(entry.lines.length,2);assert.ok(entry.detail)}
  const psalmSummary=JSON.parse(fs.readFileSync('data/summary/psa.json'));
  for(const entry of psalms){
@@ -509,7 +509,10 @@ test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 
  }
  const psalmContext=buildChapterDialogue(Object.entries(psalmSummary.chapters).map(([chap,data])=>({code:'psa',name:'시편',chap:Number(chap),data})));
  const covered=psalmContext.relations.filter(relation=>psalms.some(entry=>entry.chapter===`psa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))));
- assert.equal(psalmContext.relations.length,144);assert.equal(covered.length,87);
+ assert.equal(psalmContext.relations.length,140);assert.equal(covered.length,140);
+ assert.ok(!psalmSummary.chapters[114].people.some(person=>person.name==='야곱의 집'));
+ assert.ok(!psalmSummary.chapters[118].people.some(person=>person.name==='머릿돌'));
+ assert.ok(psalmSummary.chapters[120].people.some(person=>person.name==='거짓말하는 이웃'));
  const absalom=psalms.find(entry=>entry.chapter==='psa.3'&&entry.speaker==='압살롬');
  assert.match(absalom.detail,/실제 발언|직접 발언/);assert.match(absalom.replyLines[0],/방패/);
  const doeg=psalms.find(entry=>entry.chapter==='psa.52'&&entry.target==='사울');
@@ -520,6 +523,75 @@ test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 
  assert.match(pharaoh.ref,/창세기 41/);assert.match(pharaoh.detail,/재구성/);
  const exiles=psalms.find(entry=>entry.chapter==='psa.137'&&entry.speaker==='에돔 자손');
  assert.match(exiles.ref,/오바댜/);assert.match(exiles.detail,/직접 발언은 아니며/);
+});
+
+test('잠언의 31장 관계 후보는 모두 본문 맥락의 양방향 대화로 연결하고 동물을 인물로 노출하지 않는다',()=>{
+ const proverbs=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('pro.'));
+ const summary=JSON.parse(fs.readFileSync('data/summary/pro.json'));
+ const context=buildChapterDialogue(Object.entries(summary.chapters).map(([chap,data])=>({code:'pro',name:'잠언',chap:Number(chap),data})));
+ assert.equal(proverbs.length,56);assert.equal(context.relations.length,56);
+ for(const entry of proverbs){
+  const names=summary.chapters[Number(entry.chapter.split('.')[1])].people.map(person=>person.name);
+  assert.ok(names.includes(entry.speaker),`${entry.id} 화자가 장 인물 색인에 있음`);
+  assert.ok(names.includes(entry.target),`${entry.id} 상대가 장 인물 색인에 있음`);
+  assert.ok(entry.detail);assert.ok(entry.lines.every(line=>line.length<=100));
+ }
+ for(const relation of context.relations){
+  assert.ok(proverbs.some(entry=>entry.chapter===`pro.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.target===relation.from.name&&entry.speaker===relation.to.name))));
+ }
+ assert.ok(!summary.chapters[6].people.some(person=>person.name==='개미'));
+ assert.ok(!summary.chapters[30].people.some(person=>person.name==='개미와 메뚜기'));
+ const proverb7=proverbs.find(entry=>entry.id==='pair-pro-7-seductress-young-man');
+ assert.match(proverb7.lines[0],/화목제를 드리고 서원을 갚았/);assert.match(proverb7.replyLines[0],/생명이 위험/);
+});
+
+test('전도서의 관계선 18개는 왕·억압받는 이·지혜자·청년의 상황을 반영한 대화로 잇는다',()=>{
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('ecc.'));
+ const summary=JSON.parse(fs.readFileSync('data/summary/ecc.json'));
+ const context=buildChapterDialogue(Object.entries(summary.chapters).map(([chap,data])=>({code:'ecc',name:'전도서',chap:Number(chap),data})));
+ assert.equal(entries.length,18);assert.equal(context.relations.length,18);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`ecc.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.target===relation.from.name&&entry.speaker===relation.to.name))));
+ }
+ const youngKing=entries.find(entry=>entry.id==='pair-ecc-4-youth-old-king');
+ assert.match(youngKing.lines[0],/충고를 듣/);assert.match(youngKing.replyLines[0],/충고를 거부/);
+ const shepherd=entries.find(entry=>entry.id==='pair-ecc-12-shepherd-preacher');
+ assert.match(shepherd.detail,/신학적 재구성/);
+});
+
+test('아가의 8장 관계 후보 23개는 연인·가족·합창대의 서로 응답하는 노래로 연결한다',()=>{
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('sng.'));
+ const summary=JSON.parse(fs.readFileSync('data/summary/sng.json'));
+ const context=buildChapterDialogue(Object.entries(summary.chapters).map(([chap,data])=>({code:'sng',name:'아가',chap:Number(chap),data})));
+ assert.equal(entries.length,21);assert.equal(context.relations.length,23);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`sng.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.target===relation.from.name&&entry.speaker===relation.to.name))));
+ }
+ for(const entry of entries){
+  assert.ok(entry.detail);assert.match(entry.detail,/재구성|극화|노래/);
+  const people=summary.chapters[Number(entry.chapter.split('.')[1])].people.map(person=>person.name);
+  assert.ok(people.includes(entry.speaker));assert.ok(people.includes(entry.target));
+ }
+ const brothers=entries.find(entry=>entry.id==='pair-sng-8-brothers-sister');
+ assert.match(brothers.lines[0],/어린 누이/);assert.match(brothers.replyLines[0],/굳게 서/);
+});
+
+test('이사야 36–39장의 히스기야 위기 대화는 위협·전달·기도·책망 순서에 맞는다',()=>{
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('isa.'));
+ const summary=JSON.parse(fs.readFileSync('data/summary/isa.json'));
+ const context=buildChapterDialogue(Object.entries(summary.chapters).map(([chap,data])=>({code:'isa',name:'이사야',chap:Number(chap),data})));
+ const covered=context.relations.filter(relation=>[36,37,38,39].includes(relation.from.chap));
+ const passageEntries=entries.filter(entry=>/^isa\.(36|37|38|39)$/.test(entry.chapter));
+ assert.equal(covered.length,12);assert.equal(passageEntries.length,11);
+ for(const relation of covered){
+  assert.ok(passageEntries.some(entry=>entry.chapter===`isa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.target===relation.from.name&&entry.speaker===relation.to.name))));
+ }
+ assert.ok(!summary.chapters[37].rels.some(relation=>relation.from==='여호와의 사자'&&relation.to==='산헤립'));
+ assert.ok(!summary.chapters[39].people.some(person=>person.name==='히스기야의 자손'));
+ const letter=passageEntries.find(entry=>entry.id==='pair-isa-36-sennacherib-hezekiah');
+ assert.match(letter.detail,/직접 주고받은 말로 기록된 것은 아닙니다/);
+ const rebuke=passageEntries.find(entry=>entry.id==='pair-isa-39-isaiah-hezekiah');
+ assert.match(rebuke.replyLines[0],/모든 것을 보았습니다/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
