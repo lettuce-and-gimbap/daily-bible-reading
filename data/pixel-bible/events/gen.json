@@ -2703,7 +2703,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"reconstruction","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"hold","duration":1.8,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-0",
@@ -2746,7 +2746,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"holy-ground","lead":"하나님","target":"아담","mode":"reconstruction","setting":"desert","effect":"bush-fire","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하나님"},{"action":"startle","duration":1.2,"actor":"하나님"},{"action":"kneel","duration":1.5,"actor":"하나님"},{"action":"remove-shoe","duration":1.8,"actor":"하나님"},{"action":"bow","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"아담","target":"여자","mode":"illustration","setting":"garden","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"walk","duration":1.2,"actor":"아담"},{"action":"inspect","duration":1.5,"actor":"아담"},{"action":"sleep","duration":1.8,"actor":"아담"},{"action":"rise","duration":1.5,"actor":"아담"},{"action":"look","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-11-0",

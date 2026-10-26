@@ -76,3 +76,8 @@ test('열두 돌은 열두 사람이 메고 언약궤는 다윗 대신 레위인
  const a=books.find(([c])=>c==='jos')[1].scenes.find(s=>s.id==='ot-jos-4-0').animation;assert.equal(a.lead,'열두 사람');assert(a.beats.some(b=>b.action==='carry'));
  const scenes=books.find(([c])=>c==='1ch')[1].scenes;for(const id of ['ot-1ch-15-0','ot-voice-25']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'레위인들');assert(a.beats.filter(b=>b.action==='carry').every(b=>b.actor==='레위인들'));}
 });
+
+test('창세기 창조·에덴 장면에 모세의 떨기나무와 신 벗기 동작이 연결되지 않는다',()=>{
+ const scenes=books.find(([c])=>c==='gen')[1].scenes;for(const id of ['ot-gen-extra-1-0','ot-gen-extra-2-0']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.mode,'illustration');assert.notEqual(a.effect,'bush-fire');assert(!a.beats.some(b=>b.action==='remove-shoe'));}
+ const a=scenes.find(s=>s.id==='ot-gen-extra-2-0').animation;assert.equal(a.lead,'아담');assert.equal(a.setting,'garden');assert(a.beats.some(b=>b.action==='sleep'));
+});

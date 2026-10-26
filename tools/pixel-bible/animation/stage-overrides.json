@@ -849,10 +849,82 @@
       "mode": "reconstruction"
     },
     "84": {
-      "mode": "reconstruction"
+      "mode": "illustration",
+      "lead": "하나님",
+      "target": null,
+      "setting": "vision",
+      "effect": "light",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
     },
     "85": {
-      "mode": "reconstruction"
+      "mode": "illustration",
+      "lead": "아담",
+      "target": "여자",
+      "setting": "garden",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "아담"
+        },
+        {
+          "action": "walk",
+          "duration": 1.2,
+          "actor": "아담"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.5,
+          "actor": "아담"
+        },
+        {
+          "action": "sleep",
+          "duration": 1.8,
+          "actor": "아담"
+        },
+        {
+          "action": "rise",
+          "duration": 1.5,
+          "actor": "아담"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "아담"
+        }
+      ]
     },
     "86": {
       "mode": "illustration"
