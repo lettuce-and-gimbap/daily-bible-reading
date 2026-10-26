@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "1co",
-    "nextBook": "2co",
-    "booksCompleted": 46,
+    "currentBook": "2co",
+    "nextBook": "gal",
+    "booksCompleted": 47,
     "completedBooks": [
       "gen",
       "exo",
@@ -343,10 +343,11 @@
       "jhn",
       "act",
       "rom",
-      "1co"
+      "1co",
+      "2co"
     ],
-    "chaptersReviewed": 1082,
-    "relationshipLinksReviewed": 3574,
+    "chaptersReviewed": 1095,
+    "relationshipLinksReviewed": 3616,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -357,22 +358,22 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "고린도전서 16장을 훑어 바울의 권면 16묶음·32문장에 개별 절 참조를 연결했다. 십자가와 지혜, 교회 분열, 공동체 윤리, 은사와 사랑, 예배 질서, 부활, 연보와 동역자 인사를 해당 장의 논증 흐름에 맞춰 확인했다. 관계 연결 54개를 함께 검토했다. 서신의 논증을 실제 현장에 있던 두 인물의 대화로 꾸미지 않았다. 전권 구조 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도후서다.",
+    "statusNote": "고린도후서 13장 전체에서 바울의 위로·화해·새 언약·연약함과 사도적 권면을 담은 발화 13묶음·26문장에 개별 구절 참조를 연결했다. 마게도냐의 연보와 바울의 고난을 본문 서술과 혼동하지 않도록 구절 범위를 대조했고, 관계 연결 42개를 확인했다. 실제 대면 장면이 아닌 서신 내용을 현장 대화로 만들지 않았다. 다음은 갈라디아서다.",
     "partialBookAudit": {
-      "book": "1co",
-      "chaptersScanned": 16,
-      "chaptersWithAuthoredDialogueReviewed": 16,
-      "authoredUtteranceGroupsReviewed": 16,
-      "utteranceReferencesCorrected": 32,
-      "chapterDialogueAudit": 16,
+      "book": "2co",
+      "chaptersScanned": 13,
+      "chaptersWithAuthoredDialogueReviewed": 13,
+      "authoredUtteranceGroupsReviewed": 13,
+      "utteranceReferencesCorrected": 26,
+      "chapterDialogueAudit": 13,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 54,
+      "relationshipEdgesAudited": 42,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 54,
-      "relationshipLinksFound": 54,
+      "relationshipBasedPairLines": 42,
+      "relationshipLinksFound": 42,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 54,
+      "generatedLinksRemaining": 42,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -389,12 +390,9 @@
         10,
         11,
         12,
-        13,
-        14,
-        15,
-        16
+        13
       ],
-      "statusNote": "고린도전서 16장을 훑어 바울의 권면 16묶음·32문장에 개별 절 참조를 연결했다. 십자가와 지혜, 교회 분열, 공동체 윤리, 은사와 사랑, 예배 질서, 부활, 연보와 동역자 인사를 해당 장의 논증 흐름에 맞춰 확인했다. 관계 연결 54개를 함께 검토했다. 서신의 논증을 실제 현장에 있던 두 인물의 대화로 꾸미지 않았다. 전권 구조 기준은 1,189장·3,790개 상호작용 연결이다. 다음은 고린도후서다."
+      "statusNote": "고린도후서 13장 전체에서 바울의 위로·화해·새 언약·연약함과 사도적 권면을 담은 발화 13묶음·26문장에 개별 구절 참조를 연결했다. 마게도냐의 연보와 바울의 고난을 본문 서술과 혼동하지 않도록 구절 범위를 대조했고, 관계 연결 42개를 확인했다. 실제 대면 장면이 아닌 서신 내용을 현장 대화로 만들지 않았다. 다음은 갈라디아서다."
     },
     "currentBookStatus": "complete"
   }
