@@ -15,6 +15,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
     if(['1sa','2sa','1ch'].includes(code)||/이스라엘.*왕|다윗.*왕/.test(role))return id('person','saul-king');
     return id('unresolved',`${name}:${code}`,'ambiguous');
   }
+  // 열왕기하 15장의 불은 불꽃이 아니라 은을 받은 앗수르 왕 풀(Pul)이에요.
+  if(name==='불'&&code==='2ki'&&/왕|앗수르/.test(role))return id('person','assyria-king-pul','verse-reviewed');
   if(name==='바울')return id('person','paul');
   if(name==='요셉') {
     if(code==='gen')return id('person','joseph-patriarch');

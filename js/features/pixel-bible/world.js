@@ -13,7 +13,7 @@ import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscover
 import '../../shared/daylight.js';
 import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
-const displayPersonName=name=>name.replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
+const displayPersonName=name=>(name==='불'?'불 왕':name).replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
 import {captureBubblePlacement,pinnedBubblePlacement} from './bubble-position.js';
 import {creatureCanUse} from './creatures.js';
@@ -61,6 +61,9 @@ const ALL_SCENES=[...REVIEWED_SCENES,...OBJECT_SCENES];
 export function worldViewport(width,height) {
   const scale=Math.max(width/WIDTH,height/HEIGHT);
   return {scale,x:(width-WIDTH*scale)/2,y:(height-HEIGHT*scale)/2};
+}
+export function rangeIsTooLarge({people=0,objects=0,events=0}={}) {
+  return people>24||objects>36||events>36;
 }
 export function includeSceneObjects(objects,scenes) {
   const available=new Map(objects.map(item=>[item.id,item]));
@@ -174,6 +177,10 @@ export async function mountPixelWorld(shell, options) {
   const prominent=prominentKeys(model);let discoveries=loadDiscoveries(localStorage);
   const visibleCast=visibleWorldCast(model,options.focusPerson||0);
   const chapterProps=includeSceneObjects(objectsForChapters(chapterData),model.scenes);
+  const initialRange=options.initialRange||{code:requested[0]?.code,start:requested[0]?.chap||1,end:requested[0]?.code===requested.at(-1)?.code?requested.at(-1)?.chap:(requested[0]?.chap||1)};
+  const rangeBooks=options.rangeBooks||[];
+  const rangeBook=rangeBooks.find(b=>b.code===initialRange.code);
+  const rangeForm=rangeBooks.length?`<details class="pb-range"><summary>표기 범위 · 장 선택</summary><p class="pb-help">기본은 한 장이에요. 같은 권에서 시작 장과 끝 장을 골라 인물·오브젝트·사건을 함께 볼 수 있어요.</p><label>성경 <select data-range-book>${rangeBooks.map(b=>`<option value="${esc(b.code)}" ${b.code===initialRange.code?'selected':''}>${esc(b.name)}</option>`).join('')}</select></label><div class="pb-range-inputs"><label>시작 장 <input type="number" data-range-start min="1" max="${rangeBook?.chapters||1}" value="${initialRange.start}" inputmode="numeric"></label><label>끝 장 <input type="number" data-range-end min="1" max="${rangeBook?.chapters||1}" value="${initialRange.end}" inputmode="numeric"></label></div><button class="pb-button" data-action="apply-range">범위 적용</button><p class="pb-range-status" role="status" aria-live="polite"></p></details>`:'';
   if (requested.some((c) => !byCode[c.code].chapters[c.chap])) throw new Error("본문 자료가 아직 준비되지 않았어요");
   shell.querySelector(".pb-load").remove();
   shell.classList.add('pb-ready');
@@ -185,7 +192,7 @@ export async function mountPixelWorld(shell, options) {
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
     <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><button class="pb-button" data-action="collection">발견 도감 · 알아가기</button><p class="pb-help">인물을 누르면 도감에 기록돼요. 은은한 발밑 빛은 현재 분량의 주요 인물이에요.</p><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
-    <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p><div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="bgm" aria-pressed="false" aria-label="배경음악 켜기">♫ 음악 OFF</button></div>
+    <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} · `}${esc(model.title)}</p>${rangeForm}<div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="bgm" aria-pressed="false" aria-label="배경음악 켜기">♫ 음악 OFF</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(displayPersonName(p.name))}</button>`).join('')}</div>
     <h3>본문 오브젝트</h3><p class="pb-help">가볍게 터치하면 배치돼요. 그림을 1초 꾹 누르면 테두리가 한 바퀴 돌고 설명이 열려요. 배치한 오브젝트는 0.4초 꾹 눌러 옮길 수 있어요.</p><p class="pb-help">TV는 사랑을 싣고 부스에 인물을 직접 끌어 올리면 두 사람만 대화해요. 다른 인물은 자동으로 부스에 올라가지 않아요.</p><p class="pb-help">${chapterProps.length?'현재 분량의 물건·공간·상징이에요. 구절 범위는 사건 설명의 범위예요.':'현재 요약에서 확인된 물건이 없어요. 공통 오브젝트로 꾸밀 수 있어요.'}</p><div class="pb-world-toolbar"><div class="pb-object-grid">${chapterObjectButtons}</div></div><details><summary>공통 오브젝트</summary><div class="pb-world-toolbar"><div class="pb-object-grid">${commonObjectButtons}</div></div></details><section class="pb-object-detail" data-object-detail hidden aria-live="polite"></section><div class="pb-world-toolbar"><button class="pb-button" data-action="cancel-place" hidden>배치 취소</button><button class="pb-button" data-action="remove-object" aria-pressed="false">개별 철거</button><button class="pb-button" data-action="reset">오브젝트 전체 철거</button></div>
     <h3>조합식</h3><p class="pb-help">아래 조합을 누르면 필요한 인물들이 모여요. 캐릭터를 집어 오브젝트 옆에 내려놓아도 돼요.</p><div class="pb-recipes"></div>
@@ -935,6 +942,12 @@ export async function mountPixelWorld(shell, options) {
     shell.querySelectorAll("[data-place]").forEach((b)=>b.setAttribute("aria-pressed",b.dataset.place===placing));
     shell.querySelectorAll('[data-action="cancel-place"]').forEach(b=>b.hidden=!placing);
   }
+  shell.addEventListener('change',e=>{
+    const select=e.target.closest('[data-range-book]');if(!select)return;
+    const book=rangeBooks.find(row=>row.code===select.value);if(!book)return;
+    for(const input of shell.querySelectorAll('[data-range-start],[data-range-end]')){input.max=String(book.chapters);if(Number(input.value)>book.chapters)input.value=String(book.chapters);}
+    shell.querySelector('.pb-range-status').textContent='';
+  },{signal});
   shell.addEventListener("click", async (e) => {
     if(!bgm.enabled){
       const music=shell.querySelector('[data-action="bgm"]');
@@ -944,6 +957,23 @@ export async function mountPixelWorld(shell, options) {
     if (drag?.active||objectHold?.active) return;
     if (!options.allowed()) return;
     const b=e.target.closest("button"); if(!b) return;
+    if(b.dataset.action==='apply-range'){
+      const status=shell.querySelector('.pb-range-status'),code=shell.querySelector('[data-range-book]').value;
+      const start=Number(shell.querySelector('[data-range-start]').value),end=Number(shell.querySelector('[data-range-end]').value);
+      const book=rangeBooks.find(row=>row.code===code);
+      if(!book||!Number.isInteger(start)||!Number.isInteger(end)||start<1||end<start||end>book.chapters){status.textContent='같은 권 안에서 시작 장과 끝 장을 확인해 주세요.';return;}
+      status.textContent='범위의 인물·오브젝트·사건을 살펴보고 있어요…';
+      try{
+        const data=await loadBook(code,options.cachedBook),candidate=[];
+        for(let chap=start;chap<=end;chap++)if(data.chapters[chap])candidate.push({code,name:book.name,chap,data:scopeChapterSummary(data.chapters[chap])});
+        if(!candidate.length){status.textContent='선택한 본문을 찾지 못했어요.';return;}
+        const candidateModel=buildWorldModel(candidate),props=objectsForChapters(candidate),sceneCount=candidateModel.scenes.length;
+        if(rangeIsTooLarge({people:candidateModel.cast.length,objects:props.length,events:sceneCount})){status.textContent='너무 많아요! 인물·오브젝트·사건이 한 화면에 많아져요. 범위를 좁혀 다시 골라 주세요.';return;}
+        if(!options.onRangeSelect){status.textContent='이 화면에서는 범위를 바꿀 수 없어요.';return;}
+        await options.onRangeSelect(candidate.map(({code,name,chap})=>({code,name,chap})));
+      }catch(_){status.textContent='범위 자료를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.';}
+      return;
+    }
     if(b.dataset.action==='recipe-lock'){if(hideRecipes&&!dailyDone()){say('오늘 통독을 마치거나 직접 조합을 발견하면 열 수 있어요.');return;}hideRecipes=!hideRecipes;renderRecipes();return;}
     if (b.dataset.recipe!==undefined) { const scene=model.scenes[Number(b.dataset.recipe)],o=objects.find(o=>o.kind===scene.object);if(!scene)return;if(isRecipeLocked(scene)){say('아직 잠긴 조합이에요. 직접 배치해 발견해 보세요.');return;}if(activeEvent){say('장면이 진행 중이에요. 끝난 뒤 다시 눌러 주세요.');return;}if(!o||scene.actors.some(name=>!npcs.some(n=>n.name===name))){say(b.dataset.unavailableReason||'필요한 인물과 오브젝트를 먼저 준비해 주세요.');return;}queueScene(scene,o);return; }
     if (b.dataset.commonRecipe) {const o=objects.find(o=>o.kind===b.dataset.commonRecipe),n=npcs[selected];if(activeEvent||!o||!n||n.creature&&!creatureCanUse(n,b.dataset.commonRecipe)){say(b.dataset.unavailableReason||'필요한 인물과 오브젝트를 먼저 준비해 주세요.');return;}pendingEvent=null;clearInfo();if(!toObject(n,o))say('오브젝트 주변의 길과 설 자리를 비워 주세요.');return;}

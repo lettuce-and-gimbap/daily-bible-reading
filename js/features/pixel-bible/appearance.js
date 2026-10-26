@@ -72,8 +72,11 @@ export function appearanceFor(name, index=0, role='', refs=[]) {
   // 기록이 없는 인물은 역할에 맞는 실루엣을 쓰고 창작임을 명시한다.
   const seed=[...name].reduce((h,c)=>(Math.imul(h,31)+c.codePointAt(0))>>>0,0);
   const colors=['#a87373','#7396ae','#a78db9','#bc995e','#709a83','#747caa','#9c846c','#869c9e','#bd8f9b','#8d9970','#a99d80','#8c7c99'];
+  const cut=seed%8;
   return withPhysicalTraits(wardrobeFor({...visualVariation(name),key:'generic',name,physique:physiqueFor(name,role,refs),coat:colors[seed%colors.length],hair:['#604b39','#433d37','#95816b'][seed%3],
-    ...(role.includes('왕')?{royal:true,crown:true}:role.includes('선지자')?{mantle:true,scroll:true}:role.includes('제사장')?{headband:true,sash:'#8b9ebc'}:{vest:seed%2===0,headband:seed%3===0}),
+    ...(role.includes('왕')?{royal:true,crown:true}:role.includes('선지자')?{mantle:true,scroll:true}:role.includes('제사장')?{headband:true,sash:'#8b9ebc'}:[
+      {vest:true},{mantle:true},{hood:true,shawl:true},{shortSleeve:true,belt:true},{apron:true},{headband:true},{longHair:true},{updo:true,trim:'#c8ad72'},
+    ][cut]),
     evidence:'외모를 확정할 본문·주석 근거를 아직 등록하지 않았어요.',design:'의복과 소품은 역할을 구별하기 위한 창작 디자인이에요.'},role),name,refs);
 }
 

@@ -350,6 +350,15 @@ test('집단과 신적 존재를 분류하고 사울·요셉·빌립의 신원�
  assert.notEqual(r('요셉',{code:'gen'}).id,r('요셉',{code:'mat',role:'마리아의 남편'}).id);
  assert.equal(r('바로',{code:'exo'}).kind,'unresolved');assert.equal(r('마리아').kind,'unresolved');assert.equal(r('요한').status,'ambiguous');
  assert.notEqual(r('빌립',{code:'act',chapter:8}).id,r('빌립',{code:'jhn'}).id);
+ assert.equal(r('불',{code:'2ki',chapter:15,role:'은을 받은 앗수르 왕'}).id,'person:assyria-king-pul');
+});
+
+test('오브젝트 명칭 불과 사람 이름인 앗수르 왕 불을 혼동하지 않는다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const art=await readFile(new URL('../js/features/pixel-bible/art.js',import.meta.url),'utf8');
+ const world=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ assert.match(art,/originalKind==='fire'[\s\S]{0,300}불은 사람이나 덤불이 아닌 장면 오브젝트/);
+ assert.match(world,/name==='불'\?'불 왕':name/);
 });
 
 test('같은 이름의 다른 신원을 한 월드 인물로 합치지 않는다',()=>{
@@ -387,7 +396,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,318);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,335);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
@@ -475,13 +484,46 @@ test('통독에서 보고 있는 Day와 계획 밖 본문을 달력상 오늘보
  const {runInNewContext}=await import('node:vm');
  const source=await readFile(new URL('../js/features/pixel-bible.js',import.meta.url),'utf8');
  const ctx={document:{addEventListener(){}},state:{plan:{}},freeChapter:null,viewingDay:1,
-  CHAPTERS:[{book:{code:'1ki',name:'열왕기상'},chap:19},{book:{code:'2ki',name:'열왕기하'},chap:2},{book:{code:'jhn',name:'요한복음'},chap:3}],
+ CHAPTERS:[{book:{code:'1ki',name:'열왕기상'},chap:19},{book:{code:'2ki',name:'열왕기하'},chap:2},{book:{code:'jhn',name:'요한복음'},chap:3}],
   progress:()=>({days:[[0],[1]],todayDay:0})};
  runInNewContext(source,ctx);
  assert.equal(ctx.pixelBibleTodayChapters()[0].code,'2ki');
- ctx.freeChapter=2;assert.equal(ctx.pixelBibleTodayChapters()[0].code,'jhn');
+ ctx.freeChapter=2;assert.equal(ctx.pixelBibleTodayChapters()[0].code,'jhn');assert.equal(ctx.pixelBibleTodayChapters().length,1);
  ctx.freeChapter=null;ctx.viewingDay=null;assert.equal(ctx.pixelBibleTodayChapters()[0].code,'1ki');
  ctx.state.plan=null;assert.equal(ctx.pixelBibleTodayChapters().length,0);
+});
+
+test('기본 월드는 현재 통독 범위를 유지하고 계획 밖 직접 선택은 한 장으로 연다', async () => {
+ const {readFile}=await import('node:fs/promises');
+ const {runInNewContext}=await import('node:vm');
+ const source=await readFile(new URL('../js/features/pixel-bible.js',import.meta.url),'utf8');
+ const psalms=Array.from({length:150},(_,i)=>({book:{code:'psa',name:'시편'},chap:i+1}));
+ const ctx={document:{addEventListener(){}},state:{plan:{}},freeChapter:59,viewingDay:0,
+  CHAPTERS:[...psalms,{book:{code:'pro',name:'잠언'},chap:1}],progress:()=>({days:[],todayDay:0})};
+ runInNewContext(source,ctx);
+ ctx.freeChapter=null;
+ ctx.progress=()=>({days:[[57,58,59]],todayDay:0});ctx.viewingDay=0;
+ assert.deepEqual(Array.from(ctx.pixelBibleTodayChapters(),c=>c.chap),[58,59,60]);
+ ctx.freeChapter=59;ctx.progress=()=>({days:[[0],[1]],todayDay:0});ctx.viewingDay=1;
+ assert.deepEqual(Array.from(ctx.pixelBibleTodayChapters(),c=>c.chap),[60]);
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('psa',57,61),c=>c.chap),[57,58,59,60,61]);
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('psa',57,151),c=>c.chap),Array.from({length:94},(_,i)=>i+57));
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('pro',1,5),c=>c.chap),[1]);
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('mat',1,5),c=>c.chap),[]);
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('psa',3,2)),[]);
+ ctx.freeChapter=0;assert.deepEqual(Array.from(ctx.pixelBibleTodayChapters(),c=>c.chap),[1]);
+ ctx.freeChapter=149;assert.deepEqual(Array.from(ctx.pixelBibleTodayChapters(),c=>c.chap),[150]);
+ ctx.CHAPTERS=[{book:{code:'ob',name:'오바댜'},chap:1}];ctx.freeChapter=0;
+ assert.deepEqual(Array.from(ctx.pixelBibleRangeChapters('ob',1,1),c=>c.chap),[1]);
+});
+
+test('표기 범위는 인물·오브젝트·사건이 화면 한도를 넘으면 다시 선택하게 한다',async()=>{
+ const {rangeIsTooLarge}=await import('../js/features/pixel-bible/world.js');
+ assert.equal(rangeIsTooLarge({people:24,objects:36,events:36}),false);
+ assert.equal(rangeIsTooLarge({people:25}),true);assert.equal(rangeIsTooLarge({objects:37}),true);assert.equal(rangeIsTooLarge({events:37}),true);
+ const {readFile}=await import('node:fs/promises');
+ const world=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ assert.match(world,/<summary>표기 범위 · 장 선택<\/summary>/);assert.match(world,/너무 많아요! 인물·오브젝트·사건이 한 화면에 많아져요/);
 });
 
 test('다른 통독 분량은 배경 기본값을 다시 선택하고 수동 배경 저장도 분리한다', async () => {

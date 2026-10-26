@@ -319,7 +319,7 @@
     ],
     "chaptersReviewed": 478,
     "relationshipLinksReviewed": 2068,
-    "authoredPairEntriesReviewed": 310,
+    "authoredPairEntriesReviewed": 327,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
@@ -329,6 +329,15 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "창세기부터 에스더까지 완료한 17권에 이어 욥기 42장과 관계 후보 54개를 전수 검토했다. 욥의 아내와 욥의 실제 응답, 세 친구의 책망과 욥의 반박, 엘리후의 변론, 약자를 대하는 욥의 회고 등 관계선 54개 모두에 사건 맥락이 있는 양방향 대화를 연결했다. 본문에 직접 발화가 없는 방문·전언·가정적 비유는 실제 인용이 아니라는 점을 자세히 보기에서 분명히 밝혔다. 엘리바스와 빌닷의 인물 독백도 실제 상대에게 건네는 말로 고쳤다. 욥기 42장, 관계선 54개, 새로 작성한 대화 54개를 확인했으며 다음은 시편이다."
+    "statusNote": "욥기 42장과 관계 후보 54개를 마무리해 54개 모두에 사건 맥락을 반영한 양방향 대화를 연결했고, 실제 대화가 아닌 장면은 자세히 보기에 재구성임을 표시했다. 이어 시편 150편의 관계 후보 144개를 추출하고 다윗과 압살롬·사울·아비멜렉·도엑·십 사람들 등 역사적 연결 17개를 시편의 기도와 실제 사건을 구분해 보강했다. 시편은 상징적 집단과 기도 대상이 인물 대화처럼 잡히는 경우가 많아 남은 125개 후보의 성격을 계속 분류하고 있다. 시편 검토는 진행 중이다.",
+    "partialBookAudit": {
+      "book": "psa",
+      "chaptersScanned": 150,
+      "relationshipLinksFound": 144,
+      "authoredPairEntriesAddedAndChecked": 17,
+      "generatedLinksRemaining": 125,
+      "status": "in-progress",
+      "statusNote": "시편 150편의 관계 후보 144개를 추출했다. 시편은 실제 대면 대화보다 기도·찬양·탄식 속에 역사 인물과 상징적 집단을 언급하는 경우가 많다. 다윗과 압살롬·사울·아비멜렉·도엑·십 사람들 등 표제와 역사 배경이 분명한 17개 연결을 시편의 시적 발화와 구약 사건을 구분해 보강했다. 나머지 125개 관계 후보는 시적 언급과 실제 대화 여부를 더 분류하고 본문에 맞춰 작성해야 한다."
+    }
   }
 }

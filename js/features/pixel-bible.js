@@ -67,7 +67,7 @@ function showPixelBibleNotice() {
 }
 
 function pixelBibleTodayChapters() {
-  // 계획 밖에서 고른 장도 통독 화면과 같은 본문을 사용한다.
+  // 기본 월드는 현재 통독 분량을 그대로 쓰고, 계획 밖 직접 선택은 그 한 장만 쓴다.
   if (freeChapter !== null && CHAPTERS[freeChapter]) {
     const c = CHAPTERS[freeChapter];
     return [{ code: c.book.code, name: c.book.name, chap: c.chap }];
@@ -78,6 +78,20 @@ function pixelBibleTodayChapters() {
   return day.map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
 }
 
+function pixelBibleRangeBooks() {
+  const books = new Map();
+  for (const c of CHAPTERS) {
+    const row = books.get(c.book.code) || { code: c.book.code, name: c.book.name, chapters: 0 };
+    row.chapters = Math.max(row.chapters, c.chap); books.set(c.book.code, row);
+  }
+  return [...books.values()];
+}
+function pixelBibleRangeChapters(code, start, end) {
+  const from = Number(start), to = Number(end);
+  if (!Number.isInteger(from) || !Number.isInteger(to) || from < 1 || to < from) return [];
+  return CHAPTERS.filter(c => c.book.code === code && c.chap >= from && c.chap <= to)
+    .map(c => ({ code: c.book.code, name: c.book.name, chap: c.chap }));
+}
 async function completesWithin(action, ms = 900) {
   let timer;
   try {
@@ -120,8 +134,20 @@ async function openPixelBible(scope = {}) {
     const chapters = scope.chapters || pixelBibleTodayChapters();
     const world = await import("./pixel-bible/world.js?v=10.9.1&rev=three-second-tread-huff-mark-1");
     if (!modal.dialog.isConnected) return;
-    modal.setDispose(await world.mountPixelWorld(shell, {
+    let disposeWorld = () => {};
+    const worldOptions = {
       chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback),
+      rangeBooks: pixelBibleRangeBooks(),
+      onRangeSelect: async (rangeChapters) => {
+        if (!rangeChapters.length) return;
+        const selectedRange = pixelBibleRangeChapters(rangeChapters[0].code, rangeChapters[0].chap, rangeChapters.at(-1).chap);
+        if (!selectedRange.length) return;
+        disposeWorld();
+        shell.querySelectorAll(':scope > :not(.pb-world-head)').forEach(el => el.remove());
+        shell.insertAdjacentHTML('beforeend','<div class="pb-load" role="status">선택한 표기 범위의 월드를 준비하고 있어요…</div>');
+        disposeWorld = await world.mountPixelWorld(shell, { ...worldOptions, chapters: selectedRange, scopeLabel:'표기 범위' });
+        modal.setDispose(disposeWorld);
+      },
       dailyReadingDone:()=>!!state.plan&&progress().dailyDone,
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
       readPassage: async ({code,chapter,verses}) => {
@@ -132,7 +158,9 @@ async function openPixelBible(scope = {}) {
         if(!rows.length)throw new Error('passage-empty');
         return versePairsHtml(rows,['개역개정4판','쉬운성경']);
       },
-    }));
+    };
+    disposeWorld = await world.mountPixelWorld(shell, worldOptions);
+    modal.setDispose(disposeWorld);
   } catch (e) {
     if (!modal.dialog.isConnected) return;
     modal.dialog.querySelector(".pb-load").textContent = "월드를 열지 못했어요. 연결 상태를 확인한 뒤 다시 입장해 주세요.";

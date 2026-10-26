@@ -497,6 +497,16 @@ test('욥기 42장과 관계선 54개를 모두 사건에 맞는 양방향 대�
  assert.match(wife.lines[0],/하나님을 욕하고 죽/);assert.match(wife.replyLines[0],/좋은 것을 받았/);
 });
 
+test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 사건 배경을 구분한다',()=>{
+ const psalms=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('psa.'));
+ assert.equal(psalms.length,17);
+ for(const entry of psalms){assert.ok(entry.ref.startsWith('시편 '));assert.equal(entry.lines.length,2);assert.ok(entry.detail)}
+ const absalom=psalms.find(entry=>entry.chapter==='psa.3'&&entry.speaker==='압살롬');
+ assert.match(absalom.detail,/실제 발언|직접 발언/);assert.match(absalom.replyLines[0],/방패/);
+ const doeg=psalms.find(entry=>entry.chapter==='psa.52'&&entry.target==='사울');
+ assert.match(doeg.ref,/사무엘상 22/);assert.match(doeg.detail,/재구성/);
+});
+
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/ezr.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'ezr',name:'에스라',chap:Number(chap),data}));
@@ -644,4 +654,12 @@ test('말풍선에는 구절 줄을 빼고 자세히 보기에는 해설과 관�
  assert.match(source,/data-action="detail-passage"/);
  assert.match(source,/data-action="speech-details">자세히 보기/);
  assert.match(source,/data-action="encounter-details">자세히 보기/);
+ assert.match(source,/관련 구절 보기/);assert.doesNotMatch(source,/관련\s*\$\{?\w*verse\w*\}?\s*절/);
+});
+
+test('수사 숫자와 지시어 이 일을 구별해 관계 대사의 조사를 지킨다',()=>{
+ const a={name:'인물A'},b={name:'인물B'};
+ const relation={from:{...a,code:'gen',chap:1},to:b,kind:'conflict',label:'갈등',text:'두 사람이 맞섰다.',ref:'창세기 1:1'};
+ const line=relationshipLines(a,b,relation,null,{random:()=>.8})[0].text;
+ assert.match(line,/그러나 이 일을 덮지도/);assert.doesNotMatch(line,/\d+일을 덮지도/);
 });
