@@ -153,6 +153,9 @@ test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되�
  assert.match(source,/canvas\.height,cssLandscape\(\)/);
  assert.match(entry,/fullscreenTarget\.requestFullscreen\(\)/);
  assert.match(entry,/screen\.orientation\.lock\("landscape"\)/);
+ assert.match(entry,/Promise\.race\(\[result, new Promise/);
+ assert.doesNotMatch(entry,/await landscapeReady/,'가로 잠금 대기가 월드 로딩을 막으면 안 된다');
+ assert.match(entry,/화면을 가로로 돌려 주세요\. 자동 회전이 안 되어도 월드는 입장할 수 있어요/);
  assert.match(entry,/pb-css-landscape/);
 });
 

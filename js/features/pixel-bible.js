@@ -32,7 +32,10 @@ function pixelBibleModal(contents, world = false) {
   const orientationState = { locked: false };
   const syncOrientationFallback = () => {
     if (!world || !dialog.isConnected) return;
-    dialog.classList.toggle("pb-css-landscape", window.innerHeight >= window.innerWidth && !orientationState.locked);
+    const fallback = window.innerHeight >= window.innerWidth && !orientationState.locked;
+    dialog.classList.toggle("pb-css-landscape", fallback);
+    const hint = dialog.querySelector(".pb-rotate");
+    if (hint) hint.hidden = !fallback;
   };
   if (world) {
     window.addEventListener("resize", syncOrientationFallback, { signal: abort.signal });
@@ -51,6 +54,7 @@ function pixelBibleModal(contents, world = false) {
   dialog.addEventListener("click", (e) => { if (e.target.closest("[data-pb-close]")) dialog.close(); });
   window.addEventListener("hashchange", () => dialog.close(), { signal: abort.signal });
   dialog.showModal();
+  syncOrientationFallback();
   return { dialog, orientationState, syncOrientationFallback, setDispose: (fn) => { dispose = fn; } };
 }
 
@@ -74,18 +78,33 @@ function pixelBibleTodayChapters() {
   return day.map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
 }
 
+async function completesWithin(action, ms = 900) {
+  let timer;
+  try {
+    const result = Promise.resolve().then(action).then(() => true, () => false);
+    return await Promise.race([result, new Promise((resolve) => { timer = setTimeout(() => resolve(false), ms); })]);
+  } finally { clearTimeout(timer); }
+}
+
 async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState = null, syncFallback = null) {
   const mobile = matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0;
   const fullscreenTarget = dialog?.querySelector(".pb-shell");
   let fullscreen = !!document.fullscreenElement, locked = false;
+  if (orientationState) orientationState.locked = false;
+  const fallback = window.innerHeight >= window.innerWidth;
+  dialog?.classList.toggle("pb-css-landscape", fallback);
+  const hint = dialog?.querySelector(".pb-rotate");
+  if (hint) hint.hidden = !fallback;
   if (mobile && fullscreenTarget && !fullscreen && typeof fullscreenTarget.requestFullscreen === "function") {
-    try { await fullscreenTarget.requestFullscreen(); fullscreen = true; } catch (_) { /* iOS Safari 등 Fullscreen API 미지원 */ }
+    fullscreen = await completesWithin(() => fullscreenTarget.requestFullscreen()) || fullscreen;
   }
   if (mobile && screen.orientation?.lock) {
-    try { await screen.orientation.lock("landscape"); locked = true; } catch (_) { /* 설치형 iOS 앱 등 방향 잠금 미지원 */ }
+    locked = await completesWithin(() => screen.orientation.lock("landscape"));
   }
   if (orientationState) orientationState.locked = locked;
-  dialog?.classList.toggle("pb-css-landscape", window.innerHeight >= window.innerWidth && !locked);
+  const useFallback = window.innerHeight >= window.innerWidth && !locked;
+  dialog?.classList.toggle("pb-css-landscape", useFallback);
+  if (hint) hint.hidden = !useFallback;
   syncFallback?.();
   return { fullscreen, locked };
 }
@@ -93,13 +112,13 @@ async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState =
 async function openPixelBible(scope = {}) {
   if (pixelBibleOpening || pixelBibleDialog) return;
   pixelBibleOpening = true;
-  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
+  const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-rotate pb-orientation-hint" role="status" hidden>📱 화면을 가로로 돌려 주세요. 자동 회전이 안 되어도 월드는 입장할 수 있어요.</div><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
   const landscapeReady = pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback);
+  landscapeReady.catch(() => {});
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
     const world = await import("./pixel-bible/world.js?v=10.9.1&rev=orientation-water-1");
-    await landscapeReady;
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
       chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback),
