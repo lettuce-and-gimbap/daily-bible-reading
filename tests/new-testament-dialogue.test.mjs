@@ -77,6 +77,18 @@ test('누가복음 각 장의 새 발화도 문장별 근거 범위를 갖는다
  }
 });
 
+test('사도행전 각 장의 발화는 사건 속 화자와 문장별 구절에 연결된다',()=>{
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='act');
+ assert.equal(new Set(rows.map(row=>row[1])).size,28);
+ assert.ok(rows.every(row=>row[6]?.length===row[4].length));
+ for(const row of rows){
+  const [,,name,,texts,,refs]=row;
+  const lines=newTestamentMonologues({name},[{code:'act',chap:row[1]}]);
+  assert.ok(lines.length>=texts.length);
+  for(const ref of refs)assert.ok(lines.some(line=>line.ref===`사도행전 ${row[1]}:${ref}`),`act.${row[1]} ${name}: ${ref}`);
+ }
+});
+
 test('요한복음 각 장의 발화는 말한 인물과 문장별 구절에 연결된다',()=>{
  const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='jhn');
  assert.equal(new Set(rows.map(row=>row[1])).size,21);
@@ -102,12 +114,13 @@ test('마태·마가·누가복음의 주요 대면 문답은 장면의 두 화�
   ['luk.17','열 명의 나병환자','예수'],['luk.19','삭개오','예수'],
   ['luk.23','회개한 강도','예수'],['luk.24','예수','글로바'],
   ['jhn.1','나다나엘','예수'],['jhn.3','니고데모','예수'],['jhn.4','사마리아 여자','예수'],
-  ['jhn.9','날 때부터 맹인 된 사람','바리새인'],['jhn.13','시몬 베드로','예수'],['jhn.20','도마','예수'],['jhn.21','예수','시몬 베드로']
+  ['jhn.9','날 때부터 맹인 된 사람','바리새인'],['jhn.13','시몬 베드로','예수'],['jhn.20','도마','예수'],['jhn.21','예수','시몬 베드로'],
+  ['act.9','아나니아','사울'],['act.10','고넬료','베드로'],['act.16','간수','바울'],['act.26','아그립바','바울']
  ];
  for(const [chapter,speaker,target] of cases){
   const entry=PAIR_DIALOGUE.find(pair=>pair.chapter===chapter&&pair.speaker===speaker&&pair.target===target);
   assert.ok(entry,`${chapter}: ${speaker} ↔ ${target}`);
-  const bookName=chapter.startsWith('mat.')?'마태복음 ':chapter.startsWith('mrk.')?'마가복음 ':chapter.startsWith('luk.')?'누가복음 ':'요한복음 ';
+  const bookName=chapter.startsWith('mat.')?'마태복음 ':chapter.startsWith('mrk.')?'마가복음 ':chapter.startsWith('luk.')?'누가복음 ':chapter.startsWith('jhn.')?'요한복음 ':'사도행전 ';
   assert.ok(entry.ref.startsWith(bookName));
   assert.ok(entry.lines.length>0&&entry.replyLines.length>0);
   assert.ok(entry.lines.every(line=>!/(말했다|대답했다|묻자|보았다|돌아섰다)$/.test(line)),`${chapter} includes spoken lines only`);
