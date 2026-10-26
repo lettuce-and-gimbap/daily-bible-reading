@@ -176,15 +176,15 @@
     },
     {
       "code": "1ch",
-      "payloadSha256": "030d29ae22af0ed0ba7cf711f61b838ee8ba8cfaf34a2de7968ceb791ebf3f14",
-      "scenes": 72,
-      "existing": 72,
+      "payloadSha256": "fed7cad8004a36c6bc0237de07e1738f5d714e0552c072ad16167b58d6540440",
+      "scenes": 75,
+      "existing": 75,
       "restored": 0,
       "corrected": 4,
-      "planned": 72,
+      "planned": 75,
       "modes": {
         "illustration": 11,
-        "reconstruction": 61
+        "reconstruction": 64
       },
       "status": "authored-awaiting-browser-review"
     },
@@ -204,14 +204,14 @@
     },
     {
       "code": "ezr",
-      "payloadSha256": "8493d040efeaef06a63620e0ce70bf5319996381c77c10a403b72053402be64e",
-      "scenes": 24,
-      "existing": 24,
+      "payloadSha256": "9b67d71532061b6672710561948f021c1e54d1cebfa144bd2d28c5489e80cf00",
+      "scenes": 26,
+      "existing": 26,
       "restored": 0,
       "corrected": 4,
-      "planned": 24,
+      "planned": 26,
       "modes": {
-        "reconstruction": 23,
+        "reconstruction": 25,
         "illustration": 1
       },
       "status": "authored-awaiting-browser-review"

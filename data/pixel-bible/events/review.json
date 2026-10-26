@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1324,
+    "scenesInFiles": 1329,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 610
+    "curatedSupplementalScenes": 615
   },
   "books": [
     {
@@ -130,10 +130,10 @@
     {
       "code": "1ch",
       "chapters": 29,
-      "scenes": 72,
+      "scenes": 75,
       "sourceMatchedSceneCandidates": 37,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 5
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "2ch",
@@ -146,10 +146,10 @@
     {
       "code": "ezr",
       "chapters": 10,
-      "scenes": 24,
+      "scenes": 26,
       "sourceMatchedSceneCandidates": 13,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 11
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "neh",
@@ -10932,7 +10932,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-only": 3,
         "source-confirmed-actor-and-object": 1
@@ -10961,7 +10961,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 3,
         "source-confirmed-actor-and-object": 1
@@ -11059,7 +11059,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-only": 2,
         "source-confirmed-object-only": 1,
@@ -12290,7 +12290,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-and-object": 2,
         "no-source-confirmed-actor-or-object": 1
@@ -12421,7 +12421,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-and-object": 2,
         "source-confirmed-actor-only": 1,
@@ -28445,6 +28445,14 @@
       },
       {
         "book": "1ki",
+        "scenesAdded": 2
+      },
+      {
+        "book": "1ch",
+        "scenesAdded": 3
+      },
+      {
+        "book": "ezr",
         "scenesAdded": 2
       }
     ]
