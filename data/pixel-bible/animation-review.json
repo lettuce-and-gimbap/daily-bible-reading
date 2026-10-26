@@ -293,14 +293,14 @@
     },
     {
       "code": "sng",
-      "payloadSha256": "6197df8980ad10a810406e1bde81d88779cc6522ffb424c2a7fae353544ad6fa",
-      "scenes": 3,
-      "existing": 3,
+      "payloadSha256": "3da8554413acc8567945d459ff851b717660bb992613f70ac4e62e1ca7be74c8",
+      "scenes": 11,
+      "existing": 11,
       "restored": 0,
       "corrected": 2,
-      "planned": 3,
+      "planned": 11,
       "modes": {
-        "illustration": 3
+        "illustration": 11
       },
       "status": "authored-awaiting-browser-review"
     },

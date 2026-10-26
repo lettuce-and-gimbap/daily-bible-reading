@@ -77,6 +77,251 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"솔로몬","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"vineyard","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"read","duration":1.2,"actor":"솔로몬"},{"action":"look","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"아가 8:8-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-01",
+      "code": "sng",
+      "chapter": 2,
+      "title": "봄을 알리며 함께 가자고 부르다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬",
+        "예루살렘 딸들"
+      ],
+      "object": "vine",
+      "ref": "아가 2:8-17",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 연인은 겨울이 지나고 봄이 왔다며 함께 나오자고 청해요. 포도나무와 여우는 사랑의 시적 이미지로 표현해요."
+      ],
+      "study": "연인은 겨울이 지나고 봄이 왔다며 함께 나오자고 청해요. 포도나무와 여우는 사랑의 시적 이미지로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"vine","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 2:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-02",
+      "code": "sng",
+      "chapter": 3,
+      "title": "밤중에 일어나 사랑하는 이를 찾다",
+      "actors": [
+        "술람미 여인",
+        "예루살렘 딸들"
+      ],
+      "object": "lamp",
+      "ref": "아가 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 꿈속에서 사랑하는 이를 찾아 거리를 헤매고, 만난 뒤에는 때가 오기 전 사랑을 깨우지 말라고 당부해요."
+      ],
+      "study": "여인은 꿈속에서 사랑하는 이를 찾아 거리를 헤매고, 만난 뒤에는 때가 오기 전 사랑을 깨우지 말라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"seek","lead":"술람미 여인","target":"예루살렘 딸들","mode":"illustration","setting":"road","effect":"journey","emotion":"neutral","prop":"lamp","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"hide","duration":1.5,"actor":"술람미 여인"},{"action":"peek","duration":1.8,"actor":"술람미 여인"},{"action":"walk","duration":1.5,"actor":"술람미 여인"},{"action":"inspect","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-03",
+      "code": "sng",
+      "chapter": 4,
+      "title": "잠근 동산을 열어 초대하다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬"
+      ],
+      "object": "vine",
+      "ref": "아가 4:12-16",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 동산과 향기, 샘물은 사랑하는 이의 아름다움을 노래하는 시적 비유예요."
+      ],
+      "study": "동산과 향기, 샘물은 사랑하는 이의 아름다움을 노래하는 시적 비유예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"vine","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 4:12-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-04",
+      "code": "sng",
+      "chapter": 5,
+      "title": "문 앞에서 늦고 밤거리에서 찾다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬",
+        "파수꾼들",
+        "예루살렘 딸들"
+      ],
+      "object": "house",
+      "ref": "아가 5:2-8",
+      "verseNumbers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 문을 늦게 열어 사랑하는 이를 놓치고, 밤거리를 찾아다니다 파수꾼에게 상처를 입어요. 꿈같은 시 장면으로 표현해요."
+      ],
+      "study": "여인은 문을 늦게 열어 사랑하는 이를 놓치고, 밤거리를 찾아다니다 파수꾼에게 상처를 입어요. 꿈같은 시 장면으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"lament","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"house","beats":[{"action":"startle","duration":1,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"},{"action":"kneel","duration":1.5,"actor":"술람미 여인"},{"action":"cover-mouth","duration":1.8,"actor":"술람미 여인"},{"action":"mourn","duration":1.5,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 5:2-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-05",
+      "code": "sng",
+      "chapter": 5,
+      "title": "친구들에게 사랑하는 이를 묘사하다",
+      "actors": [
+        "술람미 여인",
+        "신랑의 친구들",
+        "예루살렘 딸들"
+      ],
+      "object": "scene-marker",
+      "ref": "아가 5:9-16",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 예루살렘의 딸들이 사랑하는 이가 다른 사람보다 나은 이유를 묻고, 여인은 그의 모습을 시적으로 노래해요."
+      ],
+      "study": "예루살렘의 딸들이 사랑하는 이가 다른 사람보다 나은 이유를 묻고, 여인은 그의 모습을 시적으로 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"explain","lead":"술람미 여인","target":"신랑의 친구들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"술람미 여인"},{"action":"turn","duration":1.2,"actor":"술람미 여인"},{"action":"speak","duration":1.5,"actor":"술람미 여인"},{"action":"point","duration":1.8,"actor":"술람미 여인"},{"action":"listen","duration":1.5,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 5:9-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-06",
+      "code": "sng",
+      "chapter": 6,
+      "title": "사랑하는 이가 동산으로 돌아오다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬",
+        "예루살렘 딸들",
+        "왕비와 후궁들"
+      ],
+      "object": "tree",
+      "ref": "아가 6:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 사랑하는 이와 서로 속했음을 확인하고, 왕비와 후궁들도 그 아름다움을 바라봐요."
+      ],
+      "study": "여인은 사랑하는 이와 서로 속했음을 확인하고, 왕비와 후궁들도 그 아름다움을 바라봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"tree","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 6:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-07",
+      "code": "sng",
+      "chapter": 7,
+      "title": "들로 나가 포도밭을 살피자고 청하다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬"
+      ],
+      "object": "vine",
+      "ref": "아가 7:10-13",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 사랑하는 이와 들로 나가 포도밭과 꽃을 살피자고 초대해요. 열매 이미지는 시적 상징이에요."
+      ],
+      "study": "여인은 사랑하는 이와 들로 나가 포도밭과 꽃을 살피자고 초대해요. 열매 이미지는 시적 상징이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"journey","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"vine","beats":[{"action":"listen","duration":1,"actor":"술람미 여인"},{"action":"gather","duration":1.2,"actor":"술람미 여인"},{"action":"carry","duration":1.5,"actor":"술람미 여인"},{"action":"walk","duration":1.8,"actor":"술람미 여인"},{"action":"walk","duration":1.5,"actor":"술람미 여인"},{"action":"look","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 7:10-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-sng-extra-08",
+      "code": "sng",
+      "chapter": 8,
+      "title": "사랑하는 이의 목소리를 듣고 오라고 부르다",
+      "actors": [
+        "술람미 여인",
+        "솔로몬",
+        "예루살렘 딸들"
+      ],
+      "object": "scene-marker",
+      "ref": "아가 8:13-14",
+      "verseNumbers": [
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 친구들이 여인의 목소리를 청하고, 여인은 사랑하는 이에게 서둘러 오라고 마지막 노래를 건네요."
+      ],
+      "study": "친구들이 여인의 목소리를 청하고, 여인은 사랑하는 이에게 서둘러 오라고 마지막 노래를 건네요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
+      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 8:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
