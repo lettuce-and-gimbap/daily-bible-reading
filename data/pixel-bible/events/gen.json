@@ -1047,7 +1047,8 @@
       "title": "아버지를 닮은 거짓말",
       "actors": [
         "이삭",
-        "리브가"
+        "리브가",
+        "아비멜렉"
       ],
       "object": "field",
       "ref": "창세기 26:7-11",
@@ -1066,7 +1067,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"refuse","lead":"이삭","target":"리브가","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"turn","duration":1.2,"actor":"이삭"},{"action":"halt","duration":1.5,"actor":"이삭"},{"action":"retreat","duration":1.8,"actor":"이삭"},{"action":"lower","duration":1.5,"actor":"이삭"},{"action":"stand","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"refuse","lead":"아비멜렉","target":"이삭","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"field","beats":[{"action":"look","actor":"아비멜렉","duration":1},{"action":"signal","actor":"아비멜렉","duration":1.2},{"action":"speak","actor":"아비멜렉","duration":1.5},{"action":"listen","actor":"이삭","duration":1.8},{"action":"speak","actor":"이삭","duration":1.5},{"action":"signal","actor":"아비멜렉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 26:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-26-2",
@@ -1135,7 +1136,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"agreement","lead":"이삭","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"},{"action":"extend","duration":1.5,"actor":"이삭"},{"action":"pledge","duration":1.8,"actor":"이삭"},{"action":"read","duration":1.5,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:23-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"agreement","lead":"이삭","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"field","beats":[{"action":"pray","actor":"이삭","duration":1},{"action":"listen","actor":"이삭","duration":1.2},{"action":"speak","actor":"아비멜렉","duration":1.5},{"action":"place","actor":"이삭","duration":1.8},{"action":"eat","actor":"아비멜렉","duration":1.5},{"action":"pledge","actor":"이삭","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 26:23-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-27-0",
@@ -1229,7 +1230,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"depart","lead":"이삭","target":"야곱","mode":"reconstruction","setting":"road","effect":"none","emotion":"determined","prop":"field","beats":[{"action":"signal","actor":"이삭","duration":1},{"action":"speak","actor":"이삭","duration":1.2},{"action":"bless","actor":"이삭","duration":1.5},{"action":"listen","actor":"야곱","duration":1.8},{"action":"gather","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 28:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-28-1",
@@ -1608,7 +1609,8 @@
       "title": "열두 아들과 이삭의 죽음",
       "actors": [
         "야곱",
-        "에서"
+        "에서",
+        "이삭"
       ],
       "object": "tomb",
       "ref": "창세기 35:22-29",
@@ -1630,7 +1632,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tomb","beats":[{"action":"startle","duration":1,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"},{"action":"kneel","duration":1.5,"actor":"야곱"},{"action":"cover-mouth","duration":1.8,"actor":"야곱"},{"action":"mourn","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:22-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"tomb","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"walk","actor":"야곱","duration":1.2},{"action":"lower","actor":"이삭","duration":1.5},{"action":"mourn","actor":"야곱","duration":1.8},{"action":"mourn","actor":"에서","duration":1.5},{"action":"bow","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:22-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-0",
@@ -4762,7 +4764,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"birth","lead":"라헬","target":"야곱","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"라헬"},{"action":"listen","duration":1.2,"actor":"라헬"},{"action":"cradle","duration":1.5,"actor":"라헬"},{"action":"smile","duration":1.8,"actor":"라헬"},{"action":"bless","duration":1.5,"actor":"라헬"},{"action":"bow","duration":1.2,"actor":"라헬"}],"duration":8.2,"support":null,"ref":"창세기 35:16-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"birth","lead":"야곱","target":"라헬","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"lower","actor":"라헬","duration":1},{"action":"speak","actor":"라헬","duration":1.2},{"action":"cradle","actor":"야곱","duration":1.5},{"action":"mourn","actor":"야곱","duration":1.8},{"action":"place","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:16-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-42-0",

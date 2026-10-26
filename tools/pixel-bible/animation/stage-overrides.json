@@ -1415,6 +1415,80 @@
         }
       ]
     },
+    "34": {
+      "lead": "아비멜렉",
+      "target": "이삭",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "아비멜렉",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        }
+      ]
+    },
+    "36": {
+      "lead": "이삭",
+      "target": "아비멜렉",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "pray",
+          "actor": "이삭",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "이삭",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "place",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "eat",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "pledge",
+          "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
     "38": {
       "lead": "이삭",
       "target": "야곱",
@@ -1448,6 +1522,80 @@
         {
           "action": "bless",
           "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
+    "39": {
+      "lead": "이삭",
+      "target": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "signal",
+          "actor": "이삭",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "이삭",
+          "duration": 1.2
+        },
+        {
+          "action": "bless",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "52": {
+      "lead": "야곱",
+      "target": "에서",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "lower",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "mourn",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "mourn",
+          "actor": "에서",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "야곱",
           "duration": 1.2
         }
       ]
@@ -2754,6 +2902,43 @@
         {
           "action": "look",
           "actor": "레위",
+          "duration": 1.2
+        }
+      ]
+    },
+    "146": {
+      "lead": "야곱",
+      "target": "라헬",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "lower",
+          "actor": "라헬",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "라헬",
+          "duration": 1.2
+        },
+        {
+          "action": "cradle",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "mourn",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "place",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
           "duration": 1.2
         }
       ]
