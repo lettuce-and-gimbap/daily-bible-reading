@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1218,
+    "scenesInFiles": 1219,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 504
+    "curatedSupplementalScenes": 505
   },
   "books": [
     {
@@ -112,10 +112,10 @@
     {
       "code": "2sa",
       "chapters": 24,
-      "scenes": 90,
+      "scenes": 91,
       "sourceMatchedSceneCandidates": 64,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 26
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -28340,6 +28340,10 @@
       {
         "book": "num",
         "scenesAdded": 9
+      },
+      {
+        "book": "2sa",
+        "scenesAdded": 1
       }
     ]
   }

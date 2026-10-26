@@ -6780,6 +6780,90 @@
         "ref": "사무엘하 24:10-14",
         "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
       }
+    },
+    {
+      "id": "ot-2sa-extra-9-0",
+      "code": "2sa",
+      "chapter": 9,
+      "title": "므비보셋을 왕의 식탁에 초대하다",
+      "actors": [
+        "다윗",
+        "므비보셋",
+        "시바",
+        "요나단"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 9:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 요나단의 아들 므비보셋을 찾아 사울의 땅을 돌려주고, 그를 왕의 식탁에 앉혀요."
+      ],
+      "study": "다윗이 요나단의 아들 므비보셋을 찾아 사울의 땅을 돌려주고, 그를 왕의 식탁에 앉혀요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {
+        "version": 2,
+        "motif": "welcome",
+        "lead": "다윗",
+        "target": "므비보셋",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "다윗"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "다윗"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "다윗"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "다윗"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "다윗"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "다윗"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "사무엘하 9:1-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
