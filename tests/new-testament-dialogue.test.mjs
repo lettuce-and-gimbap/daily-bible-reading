@@ -77,6 +77,18 @@ test('누가복음 각 장의 새 발화도 문장별 근거 범위를 갖는다
  }
 });
 
+test('로마서 16장 발화는 바울의 논증 문맥과 개별 구절을 가리킨다',()=>{
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='rom');
+ assert.equal(new Set(rows.map(row=>row[1])).size,16);
+ assert.ok(rows.every(row=>row[6]?.length===row[4].length));
+ for(const row of rows){
+  const [,,name,,texts,,refs]=row;
+  const lines=newTestamentMonologues({name},[{code:'rom',chap:row[1]}]);
+  assert.ok(lines.length>=texts.length);
+  for(const ref of refs)assert.ok(lines.some(line=>line.ref===`로마서 ${row[1]}:${ref}`),`rom.${row[1]} ${name}: ${ref}`);
+ }
+});
+
 test('사도행전 각 장의 발화는 사건 속 화자와 문장별 구절에 연결된다',()=>{
  const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='act');
  assert.equal(new Set(rows.map(row=>row[1])).size,28);
