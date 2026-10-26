@@ -1,10 +1,10 @@
 {
   "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
   "expected": 7957,
-  "authored": 6886,
-  "contentClips": 6874,
+  "authored": 7142,
+  "contentClips": 7130,
   "textualNotices": 12,
-  "pending": 1071,
+  "pending": 815,
   "chapters": [
     {
       "code": "mat",
@@ -1053,92 +1053,92 @@
       "code": "2co",
       "chapter": 1,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 2,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 3,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 4,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 5,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 6,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 7,
       "expected": 16,
-      "authored": 0,
-      "pending": 16
+      "authored": 16,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 8,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 9,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 10,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 11,
       "expected": 33,
-      "authored": 0,
-      "pending": 33
+      "authored": 33,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 12,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "2co",
       "chapter": 13,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "gal",
