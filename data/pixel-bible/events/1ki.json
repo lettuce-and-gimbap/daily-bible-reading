@@ -2460,6 +2460,83 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"warning","lead":"엘리야","target":"아합","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"turn","duration":1.2,"actor":"엘리야"},{"action":"speak","duration":1.5,"actor":"엘리야"},{"action":"point","duration":1.8,"actor":"엘리야"},{"action":"listen","duration":1.5,"actor":"엘리야"},{"action":"lower","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 17:1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ki-extra-5-0",
+      "code": "1ki",
+      "chapter": 5,
+      "title": "성전 건축을 위한 부역과 준비",
+      "actors": [
+        "솔로몬",
+        "아도니람",
+        "히람"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기상 5:13-18",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 솔로몬은 이스라엘에서 부역꾼을 징집하고 아도니람이 그들을 감독하게 해요. 히람의 일꾼들과 함께 레바논에서 목재와 돌을 마련해 성전 건축의 토대를 준비해요."
+      ],
+      "study": "솔로몬은 이스라엘에서 부역꾼을 징집하고 아도니람이 그들을 감독하게 해요. 히람의 일꾼들과 함께 레바논에서 목재와 돌을 마련해 성전 건축의 토대를 준비해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"솔로몬","target":"아도니람","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 5:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ki-extra-6-0",
+      "code": "1ki",
+      "chapter": 6,
+      "title": "성전 내부를 완성하다",
+      "actors": [
+        "솔로몬",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기상 6:15-38",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 성전 안쪽을 백향목으로 덮고 성소와 지성소를 나누며 그룹과 종려나무, 핀 꽃을 새겨요. 금으로 내부를 입힌 뒤 문과 안뜰을 만들고, 일곱 해에 걸친 건축을 마쳐요."
+      ],
+      "study": "성전 안쪽을 백향목으로 덮고 성소와 지성소를 나누며 그룹과 종려나무, 핀 꽃을 새겨요. 금으로 내부를 입힌 뒤 문과 안뜰을 만들고, 일곱 해에 걸친 건축을 마쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"솔로몬","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 6:15-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
