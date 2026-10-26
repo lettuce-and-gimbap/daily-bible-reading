@@ -26,7 +26,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"사마리아","target":"예루살렘","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"사마리아"},{"action":"read","duration":1.2,"actor":"사마리아"},{"action":"look","duration":1.5,"actor":"사마리아"},{"action":"point","duration":1.8,"actor":"사마리아"},{"action":"listen","duration":1.5,"actor":"사마리아"},{"action":"bow","duration":1.2,"actor":"사마리아"}],"duration":8.2,"support":null,"ref":"미가 1:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "사마리아",
+        "target": "예루살렘",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "사마리아"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "사마리아"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "사마리아"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "사마리아"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "사마리아"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "사마리아"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 1:1-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-1-2",
@@ -50,7 +96,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"예루살렘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"예루살렘"},{"action":"read","duration":1.2,"actor":"예루살렘"},{"action":"look","duration":1.5,"actor":"예루살렘"},{"action":"point","duration":1.8,"actor":"예루살렘"},{"action":"listen","duration":1.5,"actor":"예루살렘"},{"action":"bow","duration":1.2,"actor":"예루살렘"}],"duration":8.2,"support":null,"ref":"미가 1:8-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "예루살렘",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "gate",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "예루살렘"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 1:8-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-2-0",
@@ -78,7 +170,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"탐욕스러운 자들","target":"부녀와 어린 자녀","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"탐욕스러운 자들"},{"action":"turn","duration":1.2,"actor":"탐욕스러운 자들"},{"action":"speak","duration":1.5,"actor":"탐욕스러운 자들"},{"action":"point","duration":1.8,"actor":"탐욕스러운 자들"},{"action":"listen","duration":1.5,"actor":"탐욕스러운 자들"},{"action":"lower","duration":1.2,"actor":"탐욕스러운 자들"}],"duration":8.2,"support":null,"ref":"미가 2:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "judgment",
+        "lead": "탐욕스러운 자들",
+        "target": "부녀와 어린 자녀",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "탐욕스러운 자들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "탐욕스러운 자들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "탐욕스러운 자들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "탐욕스러운 자들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "탐욕스러운 자들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "탐욕스러운 자들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 2:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-2-1",
@@ -109,7 +247,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"야곱의 남은 자","target":"거짓 선지자","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"야곱의 남은 자"},{"action":"bend","duration":1.2,"actor":"야곱의 남은 자"},{"action":"grasp","duration":1.5,"actor":"야곱의 남은 자"},{"action":"lift","duration":1.8,"actor":"야곱의 남은 자"},{"action":"bundle","duration":1.5,"actor":"야곱의 남은 자"},{"action":"carry","duration":1.2,"actor":"야곱의 남은 자"}],"duration":8.2,"support":null,"ref":"미가 2:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "야곱의 남은 자",
+        "target": "거짓 선지자",
+        "mode": "illustration",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "야곱의 남은 자"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "야곱의 남은 자"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "야곱의 남은 자"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "야곱의 남은 자"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "야곱의 남은 자"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "야곱의 남은 자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 2:6-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-3-0",
@@ -146,7 +330,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"야곱의 우두머리들","target":"백성","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱의 우두머리들"},{"action":"turn","duration":1.2,"actor":"야곱의 우두머리들"},{"action":"speak","duration":1.5,"actor":"야곱의 우두머리들"},{"action":"point","duration":1.8,"actor":"야곱의 우두머리들"},{"action":"listen","duration":1.5,"actor":"야곱의 우두머리들"},{"action":"lower","duration":1.2,"actor":"야곱의 우두머리들"}],"duration":8.2,"support":null,"ref":"미가 3:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "야곱의 우두머리들",
+        "target": "백성",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "야곱의 우두머리들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "야곱의 우두머리들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "야곱의 우두머리들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "야곱의 우두머리들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "야곱의 우두머리들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "야곱의 우두머리들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 3:1-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-4-0",
@@ -178,7 +408,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"민족들","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"민족들"},{"action":"bend","duration":1.2,"actor":"민족들"},{"action":"grasp","duration":1.5,"actor":"민족들"},{"action":"lift","duration":1.8,"actor":"민족들"},{"action":"bundle","duration":1.5,"actor":"민족들"},{"action":"carry","duration":1.2,"actor":"민족들"}],"duration":8.2,"support":null,"ref":"미가 4:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "민족들",
+        "target": "딸 시온",
+        "mode": "illustration",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "민족들"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "민족들"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "민족들"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "민족들"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "민족들"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "민족들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 4:1-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-5-0",
@@ -211,7 +487,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"다스릴 자","target":"야곱의 남은 자","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다스릴 자"},{"action":"lift","duration":1.2,"actor":"다스릴 자"},{"action":"speak","duration":1.5,"actor":"다스릴 자"},{"action":"bless","duration":1.8,"actor":"다스릴 자"},{"action":"lower","duration":1.5,"actor":"다스릴 자"},{"action":"bow","duration":1.2,"actor":"다스릴 자"}],"duration":8.2,"support":null,"ref":"미가 5:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "다스릴 자",
+        "target": "야곱의 남은 자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "다스릴 자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 5:1-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-6-0",
@@ -244,7 +566,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"dispute","lead":"이스라엘 백성","target":"모세와 아론과 미리암","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 백성"},{"action":"turn","duration":1.2,"actor":"이스라엘 백성"},{"action":"point","duration":1.5,"actor":"이스라엘 백성"},{"action":"point","duration":1.8,"actor":"이스라엘 백성"},{"action":"listen","duration":1.5,"actor":"이스라엘 백성"},{"action":"lower","duration":1.2,"actor":"이스라엘 백성"}],"duration":8.2,"support":null,"ref":"미가 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "이스라엘 백성",
+        "target": "모세와 아론과 미리암",
+        "mode": "illustration",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "이스라엘 백성"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 6:1-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-7-0",
@@ -278,7 +646,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"미가","target":"지도자와 재판관","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"미가"},{"action":"kneel","duration":1.2,"actor":"미가"},{"action":"lift","duration":1.5,"actor":"미가"},{"action":"pray","duration":1.8,"actor":"미가"},{"action":"pray","duration":1.5,"actor":"미가"},{"action":"bow","duration":1.2,"actor":"미가"}],"duration":8.2,"support":null,"ref":"미가 7:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "pray",
+        "lead": "미가",
+        "target": "지도자와 재판관",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "미가"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "미가"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "미가"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "미가"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 7:1-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mic-extra-7-1",
@@ -304,7 +718,565 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"미가","target":"아브라함과 야곱","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"미가"},{"action":"lift","duration":1.2,"actor":"미가"},{"action":"speak","duration":1.5,"actor":"미가"},{"action":"bless","duration":1.8,"actor":"미가"},{"action":"lower","duration":1.5,"actor":"미가"},{"action":"bow","duration":1.2,"actor":"미가"}],"duration":8.2,"support":null,"ref":"미가 7:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "미가",
+        "target": "아브라함과 야곱",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "미가"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "미가"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "미가"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "미가"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 7:18-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-01-05",
+      "code": "mic",
+      "chapter": 1,
+      "title": "사마리아의 무더기",
+      "actors": [
+        "사마리아"
+      ],
+      "object": "scroll",
+      "ref": "미가 1:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 사마리아를 들의 돌무더기로 만들고 새긴 우상을 부수세요. 음행으로 모은 재물은 기생의 값으로 돌아가요."
+      ],
+      "study": "하나님은 사마리아를 들의 돌무더기로 만들고 새긴 우상을 부수세요. 음행으로 모은 재물은 기생의 값으로 돌아가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "사마리아",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "사마리아"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "사마리아"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "사마리아"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "사마리아"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "사마리아"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "사마리아"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 1:5-7",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-01-10",
+      "code": "mic",
+      "chapter": 1,
+      "title": "유다 성읍들의 애가",
+      "actors": [
+        "유다 성읍들"
+      ],
+      "object": "house",
+      "ref": "미가 1:10-16",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다 남서쪽 마을 이름으로 말놀이를 하며 앗수르의 침략을 노래해요. 티끌의 집은 티끌에 구르고, 라기스는 시온의 죄가 시작된 곳이에요."
+      ],
+      "study": "유다 남서쪽 마을 이름으로 말놀이를 하며 앗수르의 침략을 노래해요. 티끌의 집은 티끌에 구르고, 라기스는 시온의 죄가 시작된 곳이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "유다 성읍들",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "유다 성읍들"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "유다 성읍들"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "유다 성읍들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "유다 성읍들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "유다 성읍들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "유다 성읍들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 1:10-16",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-04-09",
+      "code": "mic",
+      "chapter": 4,
+      "title": "바벨론에서 구원하리라",
+      "actors": [
+        "민족들"
+      ],
+      "object": "scroll",
+      "ref": "미가 4:9-10",
+      "verseNumbers": [
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 시온은 해산하는 여인처럼 고통하며 바빌론까지 끌려가지만, 하나님이 거기서 원수의 손에서 건져 내세요."
+      ],
+      "study": "시온은 해산하는 여인처럼 고통하며 바빌론까지 끌려가지만, 하나님이 거기서 원수의 손에서 건져 내세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "민족들",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "민족들"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "민족들"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "민족들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "민족들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "민족들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "민족들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 4:9-10",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-04-11",
+      "code": "mic",
+      "chapter": 4,
+      "title": "타작마당의 곡식단",
+      "actors": [
+        "딸 시온"
+      ],
+      "object": "scroll",
+      "ref": "미가 4:11-13",
+      "verseNumbers": [
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 지금은 많은 나라가 시온을 더럽히려 모였지만, 하나님이 이들을 타작마당의 곡식단처럼 모으셔서 딸 시온이 짓밟게 하세요."
+      ],
+      "study": "지금은 많은 나라가 시온을 더럽히려 모였지만, 하나님이 이들을 타작마당의 곡식단처럼 모으셔서 딸 시온이 짓밟게 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "딸 시온",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "딸 시온"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 4:11-13",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-05-10",
+      "code": "mic",
+      "chapter": 5,
+      "title": "우상을 없애심",
+      "actors": [
+        "다스릴 자"
+      ],
+      "object": "chariot",
+      "ref": "미가 5:10-15",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 말과 병거와 요새, 점치는 일과 우상과 아세라 목상을 없애세요."
+      ],
+      "study": "하나님은 말과 병거와 요새, 점치는 일과 우상과 아세라 목상을 없애세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "다스릴 자",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "chariot",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "다스릴 자"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "다스릴 자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 5:10-15",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-06-09",
+      "code": "mic",
+      "chapter": 6,
+      "title": "거짓 저울의 성읍",
+      "actors": [
+        "이스라엘 백성"
+      ],
+      "object": "scale",
+      "ref": "미가 6:9-16",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 성읍에는 속이는 저울과 폭력과 거짓말이 가득해요. 오므리와 아합의 길을 따랐으니 먹어도 배부르지 않고 심어도 거두지 못해요."
+      ],
+      "study": "성읍에는 속이는 저울과 폭력과 거짓말이 가득해요. 오므리와 아합의 길을 따랐으니 먹어도 배부르지 않고 심어도 거두지 못해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "prophecy",
+        "lead": "이스라엘 백성",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scale",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "이스라엘 백성"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "이스라엘 백성"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 6:9-16",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mic-review-07-11",
+      "code": "mic",
+      "chapter": 7,
+      "title": "다시 세우시는 날",
+      "actors": [
+        "미가"
+      ],
+      "object": "wall",
+      "ref": "미가 7:11-17",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 성벽을 다시 쌓고 이집트에서 올라올 때처럼 기이한 일을 보이세요. 여러 나라는 부끄러워하며 두려워해요."
+      ],
+      "study": "하나님이 성벽을 다시 쌓고 이집트에서 올라올 때처럼 기이한 일을 보이세요. 여러 나라는 부끄러워하며 두려워해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "미가",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "미가"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "미가"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "미가"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "미가"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "미가"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "미가 7:11-17",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
