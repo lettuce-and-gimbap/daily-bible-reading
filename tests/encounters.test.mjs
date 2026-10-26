@@ -511,6 +511,10 @@ test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지�
  }
  const cases=[['neh.1','하나니','느헤미야',/예루살렘에 남은 사람들/,/울며/],['neh.2','느헤미야','아닥사스다',/성읍을 다시 세우게/,/필요한 조서/],['neh.5','가난한 백성','느헤미야',/밭과 포도원을 저당/,/이자를 받는 일을 그치고/],['neh.8','에스라','모든 백성',/율법책을 읽겠습니다/,/말씀을 듣고/],['neh.13','엘리아십','도비야',/방을 마련/,/성전 곳간을 비우고/]];
  for(const [chapter,speaker,target,first,reply] of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+ const report=PAIR_DIALOGUE.find(entry=>entry.id==='pair-254');assert.match(report.detail,/하나니에게 답한 말이 아니라 하나님께 드린 기도/);
+ const reading=PAIR_DIALOGUE.find(entry=>entry.id==='pair-261');assert.match(reading.detail,/권면은 에스라의 말이 아니라/);
+ const nobles=PAIR_DIALOGUE.find(entry=>entry.id==='pair-258');assert.match(nobles.detail,/귀족들에게 한 조치/);
+ const elders=PAIR_DIALOGUE.find(entry=>entry.id==='pair-265');assert.match(elders.detail,/두 사람이 나눈 대화를 싣지 않으므로/);
 });
 
 test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵한 피해자에게 대사를 붙이지 않는다',()=>{
