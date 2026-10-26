@@ -4,11 +4,11 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2269,
+    "sourceLabels": 2265,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2578,
+      "unresolved": 2574,
       "group": 244,
       "person": 109,
       "animal": 8,
@@ -15175,27 +15175,6 @@
       ]
     },
     {
-      "name": "마른 뼈들",
-      "roles": [
-        "소망을 잃은 이스라엘"
-      ],
-      "refs": [
-        "ezk.37"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:마른 뼈들:ezk",
-          "status": "needs-review",
-          "refs": [
-            "ezk.37"
-          ]
-        }
-      ]
-    },
-    {
       "name": "마리아",
       "roles": [
         "마가의 어머니",
@@ -23222,27 +23201,6 @@
       ]
     },
     {
-      "name": "부시",
-      "roles": [
-        "에스겔의 아버지"
-      ],
-      "refs": [
-        "ezk.1"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:부시:ezk",
-          "status": "needs-review",
-          "refs": [
-            "ezk.1"
-          ]
-        }
-      ]
-    },
-    {
       "name": "부아",
       "roles": [
         "하나님을 경외한 산파"
@@ -27255,27 +27213,6 @@
       ]
     },
     {
-      "name": "살진 양",
-      "roles": [
-        "약한 양을 밀어낸 자"
-      ],
-      "refs": [
-        "ezk.34"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:살진 양:ezk",
-          "status": "needs-review",
-          "refs": [
-            "ezk.34"
-          ]
-        }
-      ]
-    },
-    {
       "name": "삼갈",
       "roles": [
         "소 막대기로 싸운 사사"
@@ -27524,27 +27461,6 @@
           "status": "needs-review",
           "refs": [
             "rev.21"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "생기",
-      "roles": [
-        "뼈에 들어간 숨"
-      ],
-      "refs": [
-        "ezk.37"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:생기:ezk",
-          "status": "needs-review",
-          "refs": [
-            "ezk.37"
           ]
         }
       ]

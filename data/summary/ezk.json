@@ -363,8 +363,7 @@
       "rels": [
         {"from":"이스라엘 장로들","to":"에스겔","label":"물으러 온 이들","kind":"other","directed":true,"weight":2,"verses":"1","note":"포로 장로들이 하나님 뜻을 구하러 에스겔 앞에 앉았지만, 그들 마음에는 이미 우상이 자리 잡고 있었어요."},
         {"from":"하나님","to":"이스라엘 장로들","label":"물음을 거절하심","kind":"conflict","directed":true,"weight":3,"verses":"3","note":"우상을 마음에 둔 채 묻는 사람에게 하나님은 가볍게 답하지 않으세요. 먼저 마음을 돌이키라고 하시고, 응하지 않으면 엄하게 응답하세요."},
-        {"from":"하나님","to":"노아","label":"의롭다 하신 분","kind":"ally","directed":true,"weight":1,"verses":"14","note":"노아 같은 의인이 있어도 죄 많은 땅의 심판은 바뀌지 않아요. 의인은 자기 의로 자기 목숨만 건지고 자녀는 못 구해요."},
-        {"from":"노아","to":"다니엘","label":"함께 든 의인","kind":"ally","directed":false,"weight":1,"verses":"14","note":"본문은 노아, 다니엘, 욥을 의인으로 함께 꼽아요. 이 다니엘이 다니엘서의 다니엘인지는 견해가 나뉘어요."}
+        {"from":"하나님","to":"노아","label":"의롭다 하신 분","kind":"ally","directed":true,"weight":1,"verses":"14","note":"노아 같은 의인이 있어도 죄 많은 땅의 심판은 바뀌지 않아요. 의인은 자기 의로 자기 목숨만 건지고 자녀는 못 구해요."}
       ],
       "places": [
         {"name":"예루살렘","where":"네 가지 심판이 닥칠 성","what":"남은 자가 끌려 나올 곳","weight":2}
@@ -924,8 +923,7 @@
       "rels": [
         {"from":"이스라엘 목자들","to":"양 떼","label":"돌보지 않은 목자","kind":"conflict","directed":true,"weight":3,"verses":"2-4","note":"지도자들은 양을 먹이는 일을 버리고 자기만 먹었어요. 약한 양을 돌보지 않고 오히려 포악으로 다스려 양들이 흩어졌어요."},
         {"from":"하나님","to":"양 떼","label":"친히 찾으시는 목자","kind":"ally","directed":true,"weight":3,"verses":"11-12, 16","note":"하나님이 직접 흩어진 양을 찾고 먹이세요. 잃은 양을 찾고 다친 양을 싸매 주겠다는 약속이에요."},
-        {"from":"하나님","to":"내 종 다윗","label":"세우실 분","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"하나님이 다윗 같은 한 목자를 세워 양을 먹이게 하세요. 이 목자를 오실 메시아로 읽는 견해가 많아요."},
-        {"from":"살진 양","to":"양 떼","label":"밀어낸 양","kind":"conflict","directed":true,"weight":1,"verses":"20-21","note":"힘센 양들은 약한 양을 뿔로 밀고 먹을 풀을 밟아 흩어지게 했어요. 가난한 사람을 누르는 권세 있는 사람들로 읽는 견해가 많아요."}
+        {"from":"하나님","to":"내 종 다윗","label":"세우실 분","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"하나님이 다윗 같은 한 목자를 세워 양을 먹이게 하세요. 이 목자를 오실 메시아로 읽는 견해가 많아요."}
       ],
       "places": [
         {"name":"이스라엘 산","where":"좋은 꼴이 있는 땅","what":"양을 먹이실 곳","weight":2}

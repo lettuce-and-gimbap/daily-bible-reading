@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3836);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3829);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -722,6 +722,58 @@ test('예레미야애가 1–5장의 배신·조롱·박해·억압 관계를 �
  }
  assert.equal(summary.chapters[5].people.some(person=>person.name==='조상들'),false);
  assert.equal(summary.chapters[5].rels.some(relation=>relation.from==='조상들'||relation.to==='조상들'),false);
+});
+
+test('에스겔 1–12장은 포로 예언자의 표징·환상·파수꾼 사명을 관계 대사로 연결하고 장면 밖 가족은 뺀다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/ezk.json'));
+ const chapters=Object.entries(summary.chapters).slice(0,12).map(([chap,data])=>({code:'ezk',name:'에스겔',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^ezk\.(?:[1-9]|1[0-2])$/.test(entry.chapter));
+ assert.equal(context.relations.length,8);assert.equal(entries.length,8);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`ezk.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.match(entry.ref,/에스겔 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(summary.chapters[1].people.some(person=>person.name==='부시'),false);
+ assert.equal(summary.chapters[1].rels.some(relation=>relation.from==='부시'||relation.to==='부시'),false);
+ assert.match(entries.find(entry=>entry.id==='pair-ezk-9-scribe-mourners').detail,/환상 속/);
+});
+
+test('에스겔 13–25장의 거짓 예언·왕실 맹세·세대 비유·열방 심판 관계를 본문 장면에 맞춘다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/ezk.json'));
+ const chapters=Object.entries(summary.chapters).slice(12,25).map(([chap,data])=>({code:'ezk',name:'에스겔',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^ezk\.(?:1[3-9]|2[0-5])$/.test(entry.chapter));
+ assert.equal(context.relations.length,25);assert.equal(entries.length,25);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`ezk.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.match(entry.ref,/에스겔 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.match(entries.find(entry=>entry.id==='pair-ezk-23-sisters').detail,/비유/);
+ assert.match(entries.find(entry=>entry.id==='pair-ezk-24-wife-ezekiel').detail,/아내의 발언이 없습니다/);
+ assert.equal(summary.chapters[19].rels.some(relation=>relation.from.includes('사자 새끼')),false,'비유 속 사자 가족은 동물 간 대화선으로 만들지 않는다');
+});
+
+test('에스겔 26–48장의 인간 관계선은 본문 사건에 맞는 양방향 대사를 갖고 상징물은 조우 대상에서 제외한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/ezk.json'));
+ const chapters=Object.entries(summary.chapters).slice(25).map(([chap,data])=>({code:'ezk',name:'에스겔',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^ezk\.(?:2[6-9]|3\d|4[0-8])$/.test(entry.chapter));
+ assert.equal(chapters.length,23);assert.equal(context.relations.length,30);assert.equal(entries.length,30);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`ezk.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){assert.ok(entry.detail,entry.id);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/에스겔 \d+/);}
+ assert.equal(summary.chapters[34].rels.some(relation=>relation.from==='살진 양'),false,'비유 속 양은 대화 상대가 아님');
+ assert.equal(summary.chapters[37].rels.some(relation=>relation.to==='마른 뼈들'),false,'환상 속 뼈와 생기는 인물 조우가 아님');
+ for(const chapter of [34,37])assert.ok(summary.chapters[chapter].people.every(person=>!['양 떼','살진 양','마른 뼈들','생기'].includes(person.name)),'비인간 상징은 인물 NPC 목록에서 제외');
+ assert.match(entries.find(entry=>entry.id==='pair-ezk-37-david-tribes').detail,/실제 동시대 조우는 아닙니다/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
