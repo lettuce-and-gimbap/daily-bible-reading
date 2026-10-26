@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1092,
+    "scenesInFiles": 1096,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 378
+    "curatedSupplementalScenes": 382
   },
   "books": [
     {
@@ -266,9 +266,10 @@
     {
       "code": "oba",
       "chapters": 1,
-      "scenes": 1,
+      "scenes": 5,
       "sourceMatchedSceneCandidates": 0,
-      "retainedLegacyScenes": 1
+      "retainedLegacyScenes": 1,
+      "curatedSupplementalScenes": 4
     },
     {
       "code": "jnh",
@@ -28271,6 +28272,10 @@
       {
         "book": "mic",
         "scenesAdded": 8
+      },
+      {
+        "book": "oba",
+        "scenesAdded": 4
       }
     ]
   }

@@ -421,14 +421,14 @@
     },
     {
       "code": "oba",
-      "payloadSha256": "d3766e926887e5875e8df3c9f7b64ee02aff2795e9d2ec08fd5f75d6d553d499",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "dc866a9fb30454e91e2eeaf8162846dc366345d8973664b19539a669c4d746b9",
+      "scenes": 5,
+      "existing": 5,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 5,
       "modes": {
-        "illustration": 1
+        "illustration": 5
       },
       "status": "authored-awaiting-browser-review"
     },
