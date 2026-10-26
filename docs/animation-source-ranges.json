@@ -3,8 +3,8 @@
   "books": [
     {
       "code": "gen",
-      "scenes": 95,
-      "passageRangesFound": 95,
+      "scenes": 99,
+      "passageRangesFound": 99,
       "missing": []
     },
     {

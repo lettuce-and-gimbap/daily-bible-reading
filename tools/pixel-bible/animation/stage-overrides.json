@@ -1176,6 +1176,53 @@
           "actor": "하나님"
         }
       ]
+    },
+    "95": {
+      "mode": "illustration",
+      "setting": "garden",
+      "prop": "fruit",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "하와",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "하와",
+          "duration": 1.2
+        },
+        {
+          "action": "reach",
+          "actor": "하와",
+          "duration": 1.5
+        },
+        {
+          "action": "eat",
+          "actor": "하와",
+          "duration": 1.8
+        },
+        {
+          "action": "extend",
+          "actor": "하와",
+          "duration": 1.5
+        },
+        {
+          "action": "cover",
+          "actor": "하와",
+          "duration": 1.2
+        }
+      ]
+    },
+    "96": {
+      "mode": "illustration"
+    },
+    "97": {
+      "mode": "illustration"
+    },
+    "98": {
+      "mode": "illustration"
     }
   },
   "exo": {

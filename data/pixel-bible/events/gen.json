@@ -7,7 +7,8 @@
       "chapter": 3,
       "title": "숨은 사람들",
       "actors": [
-        "아담"
+        "아담",
+        "하와"
       ],
       "object": "snake",
       "ref": "창세기 3:8-13",
@@ -27,7 +28,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"hide","lead":"아담","target":null,"mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"snake","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"startle","duration":1.2,"actor":"아담"},{"action":"retreat","duration":1.5,"actor":"아담"},{"action":"hide","duration":1.8,"actor":"아담"},{"action":"peek","duration":1.5,"actor":"아담"},{"action":"stand","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"hide","lead":"아담","target":"하와","mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"snake","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"startle","duration":1.2,"actor":"아담"},{"action":"retreat","duration":1.5,"actor":"아담"},{"action":"hide","duration":1.8,"actor":"아담"},{"action":"peek","duration":1.5,"actor":"아담"},{"action":"stand","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-4-0",
@@ -2988,6 +2989,125 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:4-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-3-1",
+      "code": "gen",
+      "chapter": 3,
+      "title": "뱀의 유혹 뒤 열매를 먹고 몸을 가리다",
+      "actors": [
+        "하와",
+        "아담",
+        "뱀"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 3:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 뱀은 하나님의 말씀을 의심하게 하고 여자는 열매를 먹은 뒤 남편에게도 건네요. 두 사람은 벗은 것을 깨닫고 잎을 엮어 몸을 가려요. 열매의 종류는 본문에 없으므로 특정 과일로 단정하지 않아요."
+      ],
+      "study": "뱀은 하나님의 말씀을 의심하게 하고 여자는 열매를 먹은 뒤 남편에게도 건네요. 두 사람은 벗은 것을 깨닫고 잎을 엮어 몸을 가려요. 열매의 종류는 본문에 없으므로 특정 과일로 단정하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"하와","target":"아담","mode":"illustration","setting":"garden","effect":"none","emotion":"joy","prop":"fruit","beats":[{"action":"listen","actor":"하와","duration":1},{"action":"look","actor":"하와","duration":1.2},{"action":"reach","actor":"하와","duration":1.5},{"action":"eat","actor":"하와","duration":1.8},{"action":"extend","actor":"하와","duration":1.5},{"action":"cover","actor":"하와","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 3:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-3-2",
+      "code": "gen",
+      "chapter": 3,
+      "title": "불순종 뒤 삶의 고통과 죽음이 선고되다",
+      "actors": [
+        "아담",
+        "하와",
+        "뱀"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 3:14-19",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 뱀과 여자와 남자에게 각각 결과가 선고돼요. 관계의 갈등과 출산의 고통, 가시를 내는 땅에서의 수고와 흙으로 돌아갈 운명을 설명형 상징으로 다뤄요."
+      ],
+      "study": "뱀과 여자와 남자에게 각각 결과가 선고돼요. 관계의 갈등과 출산의 고통, 가시를 내는 땅에서의 수고와 흙으로 돌아갈 운명을 설명형 상징으로 다뤄요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"아담","target":"하와","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"turn","duration":1.2,"actor":"아담"},{"action":"speak","duration":1.5,"actor":"아담"},{"action":"point","duration":1.8,"actor":"아담"},{"action":"listen","duration":1.5,"actor":"아담"},{"action":"lower","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-4-0",
+      "code": "gen",
+      "chapter": 4,
+      "title": "아벨이 죽고 가인이 떠도는 삶을 선고받다",
+      "actors": [
+        "가인",
+        "아벨"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 4:8-16",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 가인이 들에서 아벨을 죽인 뒤 동생의 행방을 묻는 질문에 책임을 부인해요. 땅에서 떠도는 삶이 선고되지만 보복으로 죽임당하지 않도록 표가 주어져요. 표의 모양은 본문이 밝히지 않으며 폭력은 직접 묘사하지 않아요."
+      ],
+      "study": "가인이 들에서 아벨을 죽인 뒤 동생의 행방을 묻는 질문에 책임을 부인해요. 땅에서 떠도는 삶이 선고되지만 보복으로 죽임당하지 않도록 표가 주어져요. 표의 모양은 본문이 밝히지 않으며 폭력은 직접 묘사하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"가인","target":"아벨","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"가인"},{"action":"turn","duration":1.2,"actor":"가인"},{"action":"speak","duration":1.5,"actor":"가인"},{"action":"point","duration":1.8,"actor":"가인"},{"action":"listen","duration":1.5,"actor":"가인"},{"action":"lower","duration":1.2,"actor":"가인"}],"duration":8.2,"support":null,"ref":"창세기 4:8-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-4-1",
+      "code": "gen",
+      "chapter": 4,
+      "title": "셋이 태어나고 하나님의 이름을 부르다",
+      "actors": [
+        "하와",
+        "아담",
+        "셋"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 4:25-26",
+      "verseNumbers": [
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아벨을 잃은 뒤 셋이 태어나고 하와는 다른 자손을 주신 일을 고백해요. 셋의 아들이 태어난 때 사람들이 하나님의 이름을 부르기 시작했다고 본문이 전해요."
+      ],
+      "study": "아벨을 잃은 뒤 셋이 태어나고 하와는 다른 자손을 주신 일을 고백해요. 셋의 아들이 태어난 때 사람들이 하나님의 이름을 부르기 시작했다고 본문이 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"birth","lead":"하와","target":"아담","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하와"},{"action":"listen","duration":1.2,"actor":"하와"},{"action":"cradle","duration":1.5,"actor":"하와"},{"action":"smile","duration":1.8,"actor":"하와"},{"action":"bless","duration":1.5,"actor":"하와"},{"action":"bow","duration":1.2,"actor":"하와"}],"duration":8.2,"support":null,"ref":"창세기 4:25-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
