@@ -876,6 +876,24 @@ test('나훔 세 장의 여섯 사람 관계를 왕복 대사로 연결하고 �
  for(const row of rows){assert.equal(row[4].length,row[7].length,`${row[1]}장 발화마다 절 범위가 붙는다`);assert.ok(row[4].every(line=>line.length>8));}
 });
 
+test('하박국 세 장의 사람 관계와 선지자·하나님의 문답을 본문 범위에 맞추고 동식물 비유를 구분한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/hab.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'hab',name:'하박국',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^hab\.\d+$/.test(entry.chapter));
+ const human=context.relations.filter(r=>!r.from.creature&&!r.to.creature);
+ assert.equal(chapters.length,3);assert.equal(human.length,3);
+ for(const relation of human){
+  const entry=entries.find(item=>item.chapter===`hab.${relation.from.chap}`&&((item.speaker===relation.from.name&&item.target===relation.to.name)||(item.speaker===relation.to.name&&item.target===relation.from.name)));
+  assert.ok(entry,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.ok(entry.detail);
+ }
+ for(const id of ['pair-hab-1-habakkuk-yahweh','pair-hab-2-habakkuk-yahweh'])assert.ok(entries.some(x=>x.id===id),'본문에 직접 기록된 선지자와 하나님의 문답을 보존한다');
+ for(const name of ['물고기','말','나무','포도나무','무화과나무','양','사슴'])assert.ok(context.people.filter(x=>x.name===name).every(x=>['animal','plant'].includes(x.identity?.kind)),`${name}은 인간 NPC가 아니라 생물·비유로 분류한다`);
+ assert.equal(summary.chapters['3'].people.some(x=>x.name==='선택받은 사람들'),false,'기름 부음 받은 자를 근거 없이 별도 인물로 특정하지 않는다');
+ assert.equal(summary.chapters['3'].rels.filter(x=>(x.from==='하박국'&&x.to==='하나님')||(x.from==='하나님'&&x.to==='하박국')).length,1,'같은 관계의 왕복 중복을 한 기록으로 합친다');
+ const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='hab');assert.equal(rows.length,4);
+ for(const row of rows){assert.equal(row[4].length,row[7].length);assert.ok(row[4].every(x=>x.length>8));}
+});
+
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/amo.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'amo',name:'아모스',chap:Number(chap),data}));

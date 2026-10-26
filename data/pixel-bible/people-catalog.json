@@ -1197,20 +1197,11 @@
         "사납고 성급한 침략자"
       ],
       "refs": [
-        "hab.1",
         "job.1"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
       "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:갈대아 사람:hab",
-          "status": "needs-review",
-          "refs": [
-            "hab.1"
-          ]
-        },
         {
           "kind": "unresolved",
           "id": "unresolved:갈대아 사람:job",
@@ -4176,27 +4167,6 @@
           "status": "needs-review",
           "refs": [
             "psa.138"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "교만한 자(갈대아)",
-      "roles": [
-        "화를 받을 침략자"
-      ],
-      "refs": [
-        "hab.2"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:교만한 자(갈대아):hab",
-          "status": "needs-review",
-          "refs": [
-            "hab.2"
           ]
         }
       ]
@@ -28120,27 +28090,6 @@
       ]
     },
     {
-      "name": "선택받은 사람들",
-      "roles": [
-        "구원받을 이들"
-      ],
-      "refs": [
-        "hab.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "group",
-          "id": "group:선택받은 사람들",
-          "status": "reviewed-rule",
-          "refs": [
-            "hab.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "섬들",
       "roles": [
         "우상을 만드는 나라들"
@@ -45008,7 +44957,6 @@
       ],
       "refs": [
         "ezk.5",
-        "hab.2",
         "isa.11",
         "isa.17",
         "isa.34",
@@ -45026,14 +44974,6 @@
           "status": "needs-review",
           "refs": [
             "ezk.5"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:열방:hab",
-          "status": "needs-review",
-          "refs": [
-            "hab.2"
           ]
         },
         {
@@ -51014,27 +50954,6 @@
       ]
     },
     {
-      "name": "유다의 악인",
-      "roles": [
-        "정의를 굽게 한 자"
-      ],
-      "refs": [
-        "hab.1"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:유다의 악인:hab",
-          "status": "needs-review",
-          "refs": [
-            "hab.1"
-          ]
-        }
-      ]
-    },
-    {
       "name": "유다인",
       "roles": [
         "금식하며 통곡한 민족",
@@ -51728,7 +51647,6 @@
       ],
       "refs": [
         "ezk.13",
-        "hab.2",
         "isa.57",
         "pro.10",
         "pro.11",
@@ -51754,14 +51672,6 @@
           "status": "needs-review",
           "refs": [
             "ezk.13"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:의인:hab",
-          "status": "needs-review",
-          "refs": [
-            "hab.2"
           ]
         },
         {
@@ -65933,6 +65843,101 @@
           "status": "needs-review",
           "refs": [
             "2sa.23"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "유다의 악한 권력자들",
+      "roles": [],
+      "refs": [
+        "hab.1"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:유다의 악한 권력자들",
+          "status": "reviewed-rule",
+          "refs": [
+            "hab.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "유다의 의인들",
+      "roles": [],
+      "refs": [
+        "hab.1"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:유다의 의인들",
+          "status": "reviewed-rule",
+          "refs": [
+            "hab.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "믿음으로 사는 의인들",
+      "roles": [],
+      "refs": [
+        "hab.2"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:믿음으로 사는 의인들",
+          "status": "reviewed-rule",
+          "refs": [
+            "hab.2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "바빌로니아의 통치자들",
+      "roles": [],
+      "refs": [
+        "hab.2"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:바빌로니아의 통치자들",
+          "status": "reviewed-rule",
+          "refs": [
+            "hab.2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "약탈당한 나라들",
+      "roles": [],
+      "refs": [
+        "hab.2"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:약탈당한 나라들",
+          "status": "reviewed-rule",
+          "refs": [
+            "hab.2"
           ]
         }
       ]

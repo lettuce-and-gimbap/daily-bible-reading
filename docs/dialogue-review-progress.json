@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "nam",
-    "nextBook": "hab",
-    "booksCompleted": 34,
+    "currentBook": "hab",
+    "nextBook": "zep",
+    "booksCompleted": 35,
     "completedBooks": [
       "gen",
       "exo",
@@ -331,11 +331,12 @@
       "oba",
       "jnh",
       "mic",
-      "nam"
+      "nam",
+      "hab"
     ],
-    "chaptersReviewed": 907,
-    "relationshipLinksReviewed": 2814,
-    "authoredPairEntriesReviewed": 887,
+    "chaptersReviewed": 910,
+    "relationshipLinksReviewed": 2817,
+    "authoredPairEntriesReviewed": 892,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
@@ -345,15 +346,15 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "미가서에 이어 나훔 1–3장 전체를 본문과 주석에 대조했다. 앗수르의 압제와 유다의 해방, 평화의 전령, 니느웨 침공, 피해국의 반응, 왕후와 시녀의 애곡, 앗수르 왕과 주민 등 인간 관계 6개를 왕복 대사로 보강했다. 니느웨·노 아몬은 성읍으로 남기고 사람 NPC에서 제외했으며, 야곱은 이스라엘 백성의 집합적 이름으로 처리했다. 동물 비유는 대화 관계에서 제외하고 독백에 절별 참조를 달았다. 다음 권은 하박국이다.",
+    "statusNote": "하박국 1–3장을 본문과 주석에 다시 대조했다. 선지자와 하나님의 문답, 유다 안의 압제자와 의인, 갈대아 군대와 유다 피해자, 바빌로니아 통치자와 약탈당한 민족의 관계를 분리해 정리하고, 다섯 왕복 대화를 보강했다. 믿음으로 사는 의인·피해 민족은 집단으로 다듬고, 기름 부음 받은 자는 특정 인물로 단정하지 않았다. 물고기·말·나무·포도나무·무화과나무·양·사슴은 생물·식물로 분류해 사람 대사 관계에서 제외했다. 다음은 스바냐서다.",
     "partialBookAudit": {
-      "book": "nam",
+      "book": "hab",
       "chaptersScanned": 3,
-      "relationshipLinksFound": 6,
-      "authoredPairEntriesAddedAndChecked": 6,
-      "authoredLinksCovered": 6,
+      "relationshipLinksFound": 3,
+      "authoredPairEntriesAddedAndChecked": 5,
+      "authoredLinksCovered": 3,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 1,
+      "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
@@ -361,7 +362,7 @@
         2,
         3
       ],
-      "statusNote": "나훔 1–3장의 인간 관계 6개를 모두 대사화했다. 왕후와 시녀들의 이별 장면을 본문 2:7에 근거해 추가하고, 니느웨·노 아몬은 성읍으로, 야곱은 이스라엘 백성으로 분류했다. 왕복 중복 관계 1개를 통합하고 동물 비유를 대화에서 제외했다."
+      "statusNote": "하박국의 세 장을 모두 대조하고 사람 관계 3개에 사건별 왕복 대화를 연결했다. 중복된 하박국–하나님 관계는 한 기록으로 합쳤고, 13절 기름 부음 받은 자를 별도 인물로 특정하지 않았다."
     },
     "currentBookStatus": "complete"
   }

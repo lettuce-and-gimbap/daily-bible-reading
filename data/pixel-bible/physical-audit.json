@@ -1513,12 +1513,6 @@
 {"id":"group:애굽 사람들","name":"애굽 사람들","kind":"group","occurrences":["gen.50"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:요셉의 손자들:gen","name":"요셉의 손자들","kind":"unresolved","occurrences":["gen.50"],"traits":[],"status":"group-or-unresolved"},
 {"id":"person:하박국","name":"하박국","kind":"person","occurrences":["hab.1","hab.2","hab.3"],"traits":[],"status":"existing-or-designed-appearance"},
-{"id":"unresolved:갈대아 사람:hab","name":"갈대아 사람","kind":"unresolved","occurrences":["hab.1"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:유다의 악인:hab","name":"유다의 악인","kind":"unresolved","occurrences":["hab.1"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:의인:hab","name":"의인","kind":"unresolved","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:교만한 자(갈대아):hab","name":"교만한 자(갈대아)","kind":"unresolved","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:열방:hab","name":"열방","kind":"unresolved","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"},
-{"id":"group:선택받은 사람들","name":"선택받은 사람들","kind":"group","occurrences":["hab.3"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:하나님의 백성","name":"하나님의 백성","kind":"group","occurrences":["hab.3","heb.4","isa.47"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:스룹바벨:hag","name":"스룹바벨","kind":"unresolved","occurrences":["hag.1","hag.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:남은 백성","name":"남은 백성","kind":"group","occurrences":["hag.1","jer.42","zec.8"],"traits":[],"status":"group-or-unresolved"},
@@ -2967,5 +2961,11 @@
 {"id":"group:침공군대","name":"침공군대","kind":"group","occurrences":["nam.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:니느웨 여성들","name":"니느웨 여성들","kind":"group","occurrences":["nam.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:피해를 입은 나라들","name":"피해를 입은 나라들","kind":"group","occurrences":["nam.3"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:니느웨 왕후:nam","name":"니느웨 왕후","kind":"unresolved","occurrences":["nam.2"],"traits":[],"status":"group-or-unresolved"}
+{"id":"unresolved:니느웨 왕후:nam","name":"니느웨 왕후","kind":"unresolved","occurrences":["nam.2"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:갈대아 군대","name":"갈대아 군대","kind":"group","occurrences":["hab.1"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:유다의 악한 권력자들","name":"유다의 악한 권력자들","kind":"group","occurrences":["hab.1"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:유다의 의인들","name":"유다의 의인들","kind":"group","occurrences":["hab.1"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:믿음으로 사는 의인들","name":"믿음으로 사는 의인들","kind":"group","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:바빌로니아의 통치자들","name":"바빌로니아의 통치자들","kind":"group","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:약탈당한 나라들","name":"약탈당한 나라들","kind":"group","occurrences":["hab.2"],"traits":[],"status":"group-or-unresolved"}
 ]}
