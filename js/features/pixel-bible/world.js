@@ -427,7 +427,7 @@ export async function mountPixelWorld(shell, options) {
       say('물가로 올라왔어요. 다시 움직일 수 있어요.');
       try{draw();}catch(error){console.warn('물가 화면 복구 중 그리기 오류',error);}
       scheduleFrame();
-    },(WATER_ESCAPE_SECONDS+1)*1000);
+    },(state.duration+1)*1000);
     waterRescueTimers.set(n,timer);return state;
   }
   const save = () => { indexObjects();try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
@@ -1227,7 +1227,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):0;
   drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
-    drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,reduced});
+    drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
   }
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   const shape=n.creature?{width:1,height:1}:physiqueFor(n.name,n.role,n.refs);

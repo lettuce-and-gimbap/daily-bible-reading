@@ -1,4 +1,5 @@
 export const WATER_ESCAPE_SECONDS=5;
+export const WATER_ESCAPE_SPEED=1.8;
 
 // Cancel conflicting activity before the rescue animation starts.
 export function beginWaterEscape(actor,safe){
@@ -6,14 +7,19 @@ export function beginWaterEscape(actor,safe){
  actor.usingObject=null;actor.interaction=null;actor.action='';actor.objectAction=null;
  actor.objectScene=null;actor.objectEvidence=null;actor.eventRoutine=null;actor.eventObjects=null;actor.eventPartner=null;
  actor.collisionStun=null;actor.expression='worried';actor.direction='down';actor.idle=0;
- actor.waterEscape={elapsed:0,safe:{x:safe.x,y:safe.y}};
+ const from={x:actor.x,y:actor.y},destination={x:safe.x,y:safe.y};
+ const distance=Math.hypot(destination.x-from.x,destination.y-from.y);
+ actor.waterEscape={elapsed:0,from,safe:destination,distance,duration:Math.max(WATER_ESCAPE_SECONDS,distance/WATER_ESCAPE_SPEED),progress:0};
  return actor.waterEscape;
 }
 
 export function advanceWaterEscape(actor,dt){
  const state=actor.waterEscape;if(!state)return false;
  state.elapsed+=Math.max(0,Math.min(.05,Number(dt)||0));
- if(state.elapsed+1e-9<WATER_ESCAPE_SECONDS)return false;
+ state.progress=Math.min(1,state.elapsed/state.duration);
+ actor.x=state.from.x+(state.safe.x-state.from.x)*state.progress;
+ actor.y=state.from.y+(state.safe.y-state.from.y)*state.progress;
+ if(state.elapsed+1e-9<state.duration)return false;
  return rescueWaterEscape(actor);
 }
 

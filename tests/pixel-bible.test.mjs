@@ -143,7 +143,9 @@ test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 
  const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
  beginWaterEscape(actor,{x:56,y:20});
  assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
- for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
+ for(let i=0;i<49;i++)assert.equal(advanceWaterEscape(actor,.05),false);
+ assert.ok(actor.x<58&&actor.x>56,'구조 중에는 가장 가까운 물가를 향해 실제로 이동');
+ for(let i=49;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
  assert.ok(actor.waterEscape);assert.equal(advanceWaterEscape(actor,.05),true);
  assert.deepEqual([actor.x,actor.y,actor.waterEscape],[56,20,null]);assert.equal(advanceWaterEscape(actor,.05),false);
  const swimmer={x:12,y:12},bystander={x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1};beginWaterEscape(swimmer,{x:11,y:12});
@@ -162,7 +164,7 @@ test('물 구조 그리기는 월드의 자유 변수를 읽지 않고 지형 �
  assert.match(source,/const waterPalette=BACKGROUNDS\[backgroundKey\]/);
  assert.match(source,/waterPalette\.water,waterPalette\.wave/);
  assert.match(npcDraw,/function drawNpc\([^\n]*water='#528ca0',foam='#a7d4d0'/);
- assert.match(npcDraw,/drawWaterRescue\(c,\{x,y,style,pose:actionPose,time,water,foam,reduced\}\)/);
+ assert.match(npcDraw,/drawWaterRescue\(c,\{x,y,style,pose:actionPose,time,water,foam,progress:n\.waterEscape\.progress\|\|0,reduced\}\)/);
  assert.doesNotMatch(npcDraw,/backgroundKey/);
 });
 
@@ -204,6 +206,22 @@ test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물
  assert.equal(waterAt('pasture',18,31),true);assert.equal(waterAt('pasture',25,14),false);
  const safe=dryLanding('river',{x:58,y:20},(x,y)=>x<4||x>75||y<8||y>38||waterAt('river',x,y));
  assert.ok(safe);assert.equal(waterAt('river',safe.x,safe.y),false);assert.ok(Math.hypot(safe.x-58,safe.y-20)<=Math.SQRT2);
+});
+
+test('물가 탈출은 테두리까지의 유클리드 거리가 가장 짧은 마른 칸을 고른다',async()=>{
+ const {waterAt,dryLanding}=await import('../js/features/pixel-bible/terrain-response.js');
+ const from={x:16,y:31},safe=dryLanding('lake',from,()=>false);let nearest=Infinity;
+ for(let y=0;y<80;y++)for(let x=0;x<80;x++)if(!waterAt('lake',x,y))nearest=Math.min(nearest,Math.hypot(x-from.x,y-from.y));
+ assert.ok(safe);assert.equal(Math.hypot(safe.x-from.x,safe.y-from.y),nearest);
+});
+
+test('물 허우적 모션은 물보라를 그리고 탈출이 진행되면 수면 덮임을 줄인다',async()=>{
+ const {drawWaterRescue}=await import('../js/features/pixel-bible/water-rescue-art.js');
+ const {swimPose}=await import('../js/features/pixel-bible/collision-motion.js');
+ const render=progress=>{const calls=[],ctx={fillStyle:'',save(){},restore(){},fillRect(...rect){calls.push({color:this.fillStyle,rect});}};drawWaterRescue(ctx,{x:100,y:100,style:{coat:'#aabbcc'},pose:swimPose(.3),time:.3,water:'#112233',foam:'#aabbcc',progress});return calls;};
+ const immersed=render(0),emerging=render(.5);
+ assert.ok(immersed.some(({color,rect})=>color==='#d9f4ee'&&rect[2]<=2),'팔 동작에 맞춘 작은 물방울');
+ assert.ok(immersed.filter(c=>c.color==='#112233').length>emerging.filter(c=>c.color==='#112233').length,'물가로 갈수록 몸을 덮는 수면이 줄어듦');
 });
 
 test('가로 화면 비율을 늘려도 월드는 균일 배율로 빈 여백 없이 채운다', async () => {

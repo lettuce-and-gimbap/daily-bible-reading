@@ -11,14 +11,19 @@ export function waterAt(key,x,y){
  return false;
 }
 export function dryLanding(key,from,blocked){
- const ox=Math.round(from.x),oy=Math.round(from.y);
+ const ox=Math.round(from.x),oy=Math.round(from.y);let closest=null,closestDistance=Infinity;
  for(let radius=1;radius<80;radius++){
   const ring=[];
   for(let dx=-radius;dx<=radius;dx++)ring.push({x:ox+dx,y:oy-radius},{x:ox+dx,y:oy+radius});
   for(let dy=-radius+1;dy<radius;dy++)ring.push({x:ox-radius,y:oy+dy},{x:ox+radius,y:oy+dy});
   ring.sort((a,b)=>Math.hypot(a.x-ox,a.y-oy)-Math.hypot(b.x-ox,b.y-oy));
-  const safe=ring.find(p=>!waterAt(key,p.x,p.y)&&!blocked(p.x,p.y));
-  if(safe)return safe;
+  for(const p of ring){
+   const distance=Math.hypot(p.x-ox,p.y-oy);
+   if(distance>=closestDistance)continue;
+   if(!waterAt(key,p.x,p.y)&&!blocked(p.x,p.y)){closest=p;closestDistance=distance;}
+  }
+  // Every point outside this square is at least `radius + 1` away.
+  if(closest&&closestDistance<=radius+1)return closest;
  }
- return null;
+ return closest;
 }
