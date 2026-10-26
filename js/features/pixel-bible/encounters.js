@@ -3,7 +3,6 @@ import {opposedDirections} from './conversation.js';
 import {relationshipLines} from './relationship-lines.js';
 
 const key=n=>`${n.name}:${n.identity?.id||''}`;
-export const GENERAL_GREETING_CHANCE=1/3;
 export function beside(a,b){
  const dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y);
  return Math.abs(dx-1)<.18&&dy<.12||Math.abs(dy-1)<.18&&dx<.12;
@@ -48,34 +47,8 @@ export class EncounterDirector {
    [a,b].forEach((n,i)=>{n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;n.direction=directions[i];busy.add(n);});
    const session={id,people:[a,b],lines,started:now,until:now+5800};this.active.push(session);
   }
-  // Unknown relationships get a brief everyday greeting, never an invented
-  // biblical conflict. Spatial buckets keep crowded casts from an all-pairs scan.
-  if(!this.active.length){
-   const humans=npcs.filter(n=>!n.creature&&!deny.has(n)&&!n.encounter&&!n.usingObject&&!n.task);
-   const cells=new Map();for(const n of humans){const cell=`${Math.round(n.x)},${Math.round(n.y)}`;if(!cells.has(cell))cells.set(cell,[]);cells.get(cell).push(n);}
-   let started=false;
-   for(const a of humans){
-    if(started)break;
-    for(const [dx,dy]of [[1,0],[0,1]]){
-     for(const b of cells.get(`${Math.round(a.x)+dx},${Math.round(a.y)+dy}`)||[]){
-      if(!beside(a,b))continue;
-      const id=[key(a),key(b)].sort().join('|'),state=this.contacts.get(id)||{};
-      if(state.greeted||state.touching)continue;state.greeted=true;this.contacts.set(id,state);
-      if(this.random()>=GENERAL_GREETING_CHANCE)continue;
-      if(Math.abs(a.y-b.y)<.12)b.y=a.y;else b.x=a.x;
-      const directions=opposedDirections(a,b);if(!directions)continue;
-      for(const [i,n]of [a,b].entries()){n.path=[];n.idle=6;n.direction=directions[i];n.encounter=true;}
-      const variant=this.random()<.5?0:1;
-      const greetings=[
-       ['여기서 만나니 반갑네요. 잘 지내셨어요?','네, 덕분에 잘 지내요. 다시 이야기 나눠 기뻐요.'],
-       ['오늘은 어떤 일을 하고 계세요?','맡은 일을 살피고 있어요. 당신은 잘 지내셨나요?'],
-      ][variant];
-      const lines=[{speaker:a,target:b,text:greetings[0],origin:'general',kind:'pair'},{speaker:b,target:a,text:greetings[1],origin:'general',kind:'pair'}];
-      this.active.push({id,people:[a,b],lines,started:now,until:now+5800});this.nextGreeting=now;started=true;break;
-     }if(started)break;
-    }
-   }
-  }
+  // Unscripted proximity never invents a greeting. The relationship stage is
+  // reserved for documented pair dialogue; unpaired characters stay in ambient motion.
   // Return one timed exchange; the view positions each speaker's line separately.
   return this.active.filter(s=>now>=s.started&&now<s.until).map(s=>({
    ...s.lines[0],session:s.id,slot:0,started:s.started,until:s.until,pairLines:s.lines,

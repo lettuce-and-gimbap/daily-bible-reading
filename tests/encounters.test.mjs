@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {EncounterDirector,GENERAL_GREETING_CHANCE,beside} from '../js/features/pixel-bible/encounters.js';
+import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
@@ -117,8 +117,8 @@ test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯�
  ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
  const related=director.tick(0,npcs);assert.equal(ambient.tick(1,[],ambientSpeechAllowed(related)),null);assert.equal(ambient.current,null);
  director.clear();director.contacts.clear();director.context={people:[],relations:[]};
- const greeting=director.tick(2,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
- assert.equal(ambientSpeechAllowed(greeting),true,'일상 인사에는 다른 인물의 일반 대사를 함께 허용');
+ const noEncounter=director.tick(2,npcs);assert.deepEqual(noEncounter,[]);
+ assert.equal(ambientSpeechAllowed(noEncounter),true,'발화가 기록되지 않은 근접 상황은 일반 독백을 막지 않음');
  assert.equal(ambientSpeechAllowed([{origin:'chapter-relation'}]),false,'본문 관계 특수 대사는 일반 대화와 겹치지 않음');
  assert.equal(ambientSpeechAllowed([]),true);
  const clicked={text:'선택한 인물의 대사'};
@@ -136,33 +136,28 @@ test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움�
  assert.equal(hangingPose(base,3,0,true).angle,0);
  assert.notDeepEqual(hangingPose({...base,key:'steady'},0).pose,poses[0].pose);
 });
-test('일상 인사는 만난 즉시 한 쌍만 시작하고 두 인물의 대사를 함께 표시한다',()=>{
+test('본문 근거가 없는 인물 간 자동 인사는 만들지 않는다',()=>{
  const a={name:'가',x:1,y:1,path:[]},b={name:'나',x:2,y:1,path:[]},c={name:'다',x:3,y:1,path:[]};
  const director=new EncounterDirector([],{people:[],relations:[]},{random:()=>0});
- const first=director.tick(0,[a,b,c]);assert.equal(first.length,1);assert.equal(first[0].pairLines.length,2);
- assert.doesNotMatch(first[0].pairLines.map(line=>line.text).join(' '),/잠깐 지나갈게|응, 잘 가|어… 안녕/);
- assert.match(first[0].pairLines[0].text,/반갑|어떤 일을/);assert.match(first[0].pairLines[1].text,/네,|맡은 일을/);
- assert.equal(director.tick(800,[a,b,c]).length,1);assert.equal(director.active.length,1);
- assert.equal(director.active.length,1);
- b.x=8;director.tick(801,[a,b,c]);b.x=2;const again=director.tick(802,[a,b,c]);assert.equal(again.length,1);assert.equal(again[0].pairLines.length,2);
+ assert.deepEqual(director.tick(0,[a,b,c]),[]);
+ assert.deepEqual(director.tick(800,[a,b,c]),[]);
+ assert.equal(director.active.length,0);
 });
-test('전용 상호대사가 없는 관계 인물도 어색한 침묵 대신 일반 인사를 나눈다',()=>{
+test('관계선만 있고 사건별 대화 기록이 없는 두 인물은 자동 발화하지 않는다',()=>{
  const chapters=[{code:'gen',name:'창세기',chap:1,data:{people:[{name:'아담',role:'첫 사람'},{name:'하와',role:'첫 여자'}],rels:[{from:'아담',to:'하와',label:'함께 있음',verses:'1-2',note:'함께 있는 두 사람.'}]}}];
  const context=buildChapterDialogue(chapters),npcs=context.people.map((p,i)=>({...p,refs:[p.ref],x:10+i,y:10,path:[]}));
  const lines=new EncounterDirector(chapters,context,{random:()=>0}).tick(0,npcs);
- assert.equal(lines.length,1);assert.equal(lines[0].origin,'general');assert.equal(lines[0].pairLines.length,2);
- assert.doesNotMatch(lines[0].pairLines.map(line=>line.text).join(' '),/어…|응…|잠깐 지나갈게|잘 가/);
+ assert.deepEqual(lines,[]);
 });
-test('본문 특수대화가 아닌 일상 인사는 이전 대비 3분의 1 확률로만 시작한다',()=>{
- const make=random=>new EncounterDirector([],{people:[],relations:[]},{random});
- const pair=()=>[{name:'가',x:1,y:1,path:[]},{name:'나',x:2,y:1,path:[]}];
- assert.equal(GENERAL_GREETING_CHANCE,1/3);
- assert.equal(make(()=>.32).tick(0,pair()).length,1);
- assert.equal(make(()=>.34).tick(0,pair()).length,0);
-});
-test('일반 인사 확률을 낮춰도 본문 관계 기반 특수 상호작용은 확률 제한 없이 시작한다',()=>{
+test('기록된 인물 간 상호대사는 확률 제한 없이 실제 조우 때 시작한다',()=>{
  const {director,npcs}=fixture();director.random=()=>.99;
  const lines=director.tick(0,npcs);
  assert.equal(lines.length,1);assert.notEqual(lines[0].origin,'general');
  assert.equal(director.active.length,1);
+});
+test('일반 발화 말풍선에서는 구절 줄을 숨기고 자세히 보기 안의 관련 구절은 유지한다',()=>{
+ const source=fs.readFileSync('js/features/pixel-bible/world.js','utf8');
+ assert.doesNotMatch(source,/data-action="passage"/);
+ assert.match(source,/data-action="detail-passage"/);
+ assert.match(source,/data-action="speech-details">자세히 보기/);
 });
