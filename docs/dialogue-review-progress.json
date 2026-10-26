@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "eph",
-    "nextBook": "php",
-    "booksCompleted": 49,
+    "currentBook": "php",
+    "nextBook": "col",
+    "booksCompleted": 50,
     "completedBooks": [
       "gen",
       "exo",
@@ -346,10 +346,11 @@
       "1co",
       "2co",
       "gal",
-      "eph"
+      "eph",
+      "php"
     ],
-    "chaptersReviewed": 1107,
-    "relationshipLinksReviewed": 3658,
+    "chaptersReviewed": 1111,
+    "relationshipLinksReviewed": 3674,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -360,22 +361,22 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "에베소서 6장 전체에서 바울의 감사와 기도, 은혜로 얻는 구원, 유대인·이방인의 화해, 교회와 가정·공동체 권면을 다룬 발화 6묶음·12문장에 개별 절 참조를 달았다. 은유적 설명을 두 사람의 현장 대화로 오인하지 않았고, 관계 연결 18개를 확인했다. 다음은 빌립보서다.",
+    "statusNote": "빌립보서 4장을 살펴 바울의 감사와 복음 동역, 겸손한 섬김, 그리스도를 아는 기쁨, 염려와 자족에 관한 권면 4묶음·8문장에 절별 근거를 연결했다. 감옥 상황의 소망과 서신의 공동체 권면을 구별하고 관계선 16개를 확인했다. 다음은 골로새서다.",
     "partialBookAudit": {
-      "book": "eph",
-      "chaptersScanned": 6,
-      "chaptersWithAuthoredDialogueReviewed": 6,
-      "authoredUtteranceGroupsReviewed": 6,
-      "utteranceReferencesCorrected": 12,
-      "chapterDialogueAudit": 6,
+      "book": "php",
+      "chaptersScanned": 4,
+      "chaptersWithAuthoredDialogueReviewed": 4,
+      "authoredUtteranceGroupsReviewed": 4,
+      "utteranceReferencesCorrected": 8,
+      "chapterDialogueAudit": 4,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 18,
+      "relationshipEdgesAudited": 16,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 18,
-      "relationshipLinksFound": 18,
+      "relationshipBasedPairLines": 16,
+      "relationshipLinksFound": 16,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 18,
+      "generatedLinksRemaining": 16,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -383,11 +384,9 @@
         1,
         2,
         3,
-        4,
-        5,
-        6
+        4
       ],
-      "statusNote": "에베소서 6장 전체에서 바울의 감사와 기도, 은혜로 얻는 구원, 유대인·이방인의 화해, 교회와 가정·공동체 권면을 다룬 발화 6묶음·12문장에 개별 절 참조를 달았다. 은유적 설명을 두 사람의 현장 대화로 오인하지 않았고, 관계 연결 18개를 확인했다. 다음은 빌립보서다."
+      "statusNote": "빌립보서 4장을 살펴 바울의 감사와 복음 동역, 겸손한 섬김, 그리스도를 아는 기쁨, 염려와 자족에 관한 권면 4묶음·8문장에 절별 근거를 연결했다. 감옥 상황의 소망과 서신의 공동체 권면을 구별하고 관계선 16개를 확인했다. 다음은 골로새서다."
     },
     "currentBookStatus": "complete"
   }
