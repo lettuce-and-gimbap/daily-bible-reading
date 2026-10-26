@@ -859,6 +859,154 @@
         }
       ]
     },
+    "28": {
+      "lead": "아브라함의 종",
+      "target": "아브라함",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "아브라함의 종",
+          "duration": 1
+        },
+        {
+          "action": "reach",
+          "actor": "아브라함의 종",
+          "duration": 1.2
+        },
+        {
+          "action": "pledge",
+          "actor": "아브라함의 종",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함의 종",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "아브라함의 종",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "아브라함의 종",
+          "duration": 1.2
+        }
+      ]
+    },
+    "29": {
+      "lead": "리브가",
+      "target": "아브라함의 종",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "carry",
+          "actor": "리브가",
+          "duration": 1
+        },
+        {
+          "action": "scoop",
+          "actor": "리브가",
+          "duration": 1.2
+        },
+        {
+          "action": "extend",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "pour",
+          "actor": "리브가",
+          "duration": 1.8
+        },
+        {
+          "action": "scoop",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "pour",
+          "actor": "리브가",
+          "duration": 1.2
+        }
+      ]
+    },
+    "30": {
+      "lead": "아브라함의 종",
+      "target": "라반",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "아브라함의 종",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "아브라함의 종",
+          "duration": 1.2
+        },
+        {
+          "action": "halt",
+          "actor": "아브라함의 종",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "아브라함의 종",
+          "duration": 1.8
+        },
+        {
+          "action": "point",
+          "actor": "아브라함의 종",
+          "duration": 1.5
+        },
+        {
+          "action": "wait",
+          "actor": "아브라함의 종",
+          "duration": 1.2
+        }
+      ]
+    },
+    "31": {
+      "lead": "리브가",
+      "target": "이삭",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "리브가",
+          "duration": 1
+        },
+        {
+          "action": "gather",
+          "actor": "리브가",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "리브가",
+          "duration": 1.8
+        },
+        {
+          "action": "cover",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "리브가",
+          "duration": 1.2
+        }
+      ]
+    },
     "55": {
       "lead": "유다",
       "target": "요셉",

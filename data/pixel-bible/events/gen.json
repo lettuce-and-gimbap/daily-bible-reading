@@ -815,6 +815,7 @@
       "chapter": 24,
       "title": "종의 맹세",
       "actors": [
+        "아브라함의 종",
         "아브라함"
       ],
       "object": "robe",
@@ -838,7 +839,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"oath","lead":"아브라함","target":null,"mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 24:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"oath","lead":"아브라함의 종","target":"아브라함","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"robe","beats":[{"action":"listen","actor":"아브라함의 종","duration":1},{"action":"reach","actor":"아브라함의 종","duration":1.2},{"action":"pledge","actor":"아브라함의 종","duration":1.5},{"action":"bow","actor":"아브라함의 종","duration":1.8},{"action":"gather","actor":"아브라함의 종","duration":1.5},{"action":"walk","actor":"아브라함의 종","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 24:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-1",
@@ -846,7 +847,8 @@
       "chapter": 24,
       "title": "우물가의 기도",
       "actors": [
-        "리브가"
+        "리브가",
+        "아브라함의 종"
       ],
       "object": "water-supply",
       "ref": "창세기 24:10-27",
@@ -878,7 +880,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"water","lead":"리브가","target":null,"mode":"reconstruction","setting":"water","effect":"water","emotion":"gentle","prop":"water-supply","beats":[{"action":"bend","duration":1,"actor":"리브가"},{"action":"reach","duration":1.2,"actor":"리브가"},{"action":"scoop","duration":1.5,"actor":"리브가"},{"action":"lift","duration":1.8,"actor":"리브가"},{"action":"pour","duration":1.5,"actor":"리브가"},{"action":"lower","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:10-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"water","lead":"리브가","target":"아브라함의 종","mode":"reconstruction","setting":"water","effect":"none","emotion":"gentle","prop":"water-supply","beats":[{"action":"carry","actor":"리브가","duration":1},{"action":"scoop","actor":"리브가","duration":1.2},{"action":"extend","actor":"리브가","duration":1.5},{"action":"pour","actor":"리브가","duration":1.8},{"action":"scoop","actor":"리브가","duration":1.5},{"action":"pour","actor":"리브가","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 24:10-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-2",
@@ -886,8 +888,9 @@
       "chapter": 24,
       "title": "라반의 집",
       "actors": [
-        "리브가",
-        "라반"
+        "아브라함의 종",
+        "라반",
+        "브두엘"
       ],
       "object": "house",
       "ref": "창세기 24:28-49",
@@ -923,7 +926,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"리브가","target":"라반","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"house","beats":[{"action":"look","duration":1,"actor":"리브가"},{"action":"walk","duration":1.2,"actor":"리브가"},{"action":"bow","duration":1.5,"actor":"리브가"},{"action":"extend","duration":1.8,"actor":"리브가"},{"action":"place","duration":1.5,"actor":"리브가"},{"action":"sit","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:28-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"welcome","lead":"아브라함의 종","target":"라반","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"joy","prop":"house","beats":[{"action":"walk","actor":"아브라함의 종","duration":1},{"action":"listen","actor":"아브라함의 종","duration":1.2},{"action":"halt","actor":"아브라함의 종","duration":1.5},{"action":"speak","actor":"아브라함의 종","duration":1.8},{"action":"point","actor":"아브라함의 종","duration":1.5},{"action":"wait","actor":"아브라함의 종","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 24:28-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-3",
@@ -932,7 +935,9 @@
       "title": "가겠나이다",
       "actors": [
         "리브가",
-        "이삭"
+        "이삭",
+        "아브라함의 종",
+        "라반"
       ],
       "object": "field",
       "ref": "창세기 24:50-67",
@@ -964,7 +969,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"journey","lead":"리브가","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"field","beats":[{"action":"listen","duration":1,"actor":"리브가"},{"action":"gather","duration":1.2,"actor":"리브가"},{"action":"carry","duration":1.5,"actor":"리브가"},{"action":"walk","duration":1.8,"actor":"리브가"},{"action":"walk","duration":1.5,"actor":"리브가"},{"action":"look","duration":1.2,"actor":"리브가"}],"duration":8.2,"support":null,"ref":"창세기 24:50-67","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"리브가","target":"이삭","mode":"reconstruction","setting":"road","effect":"none","emotion":"determined","prop":"field","beats":[{"action":"speak","actor":"리브가","duration":1},{"action":"gather","actor":"리브가","duration":1.2},{"action":"walk","actor":"리브가","duration":1.5},{"action":"look","actor":"리브가","duration":1.8},{"action":"cover","actor":"리브가","duration":1.5},{"action":"walk","actor":"리브가","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 24:50-67","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-25-0",
