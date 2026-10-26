@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3829);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3821);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -774,6 +774,19 @@ test('에스겔 26–48장의 인간 관계선은 본문 사건에 맞는 양방
  assert.equal(summary.chapters[37].rels.some(relation=>relation.to==='마른 뼈들'),false,'환상 속 뼈와 생기는 인물 조우가 아님');
  for(const chapter of [34,37])assert.ok(summary.chapters[chapter].people.every(person=>!['양 떼','살진 양','마른 뼈들','생기'].includes(person.name)),'비인간 상징은 인물 NPC 목록에서 제외');
  assert.match(entries.find(entry=>entry.id==='pair-ezk-37-david-tribes').detail,/실제 동시대 조우는 아닙니다/);
+});
+
+test('다니엘 1–12장의 유효한 관계 35개는 포로 궁정·풀무불·사자 굴·환상에 맞는 왕복 대사를 갖는다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/dan.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'dan',name:'다니엘',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^dan\.\d+$/.test(entry.chapter));
+ assert.equal(chapters.length,12);assert.equal(context.relations.length,35);assert.equal(entries.length,35);
+ for(const relation of context.relations){assert.ok(entries.some(entry=>entry.chapter===`dan.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);}
+ for(const entry of entries){const chapter=Number(entry.chapter.slice(4)),names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/다니엘 \d+/);}
+ assert.equal(summary.chapters[1].rels.some(relation=>relation.to==='여호야김'),false,'현장에 없는 예루살렘 왕은 왕궁 장면에서 제외');
+ assert.equal(summary.chapters[7].rels.some(relation=>['옛적부터 항상 계신 이','작은 뿔'].includes(relation.from)||relation.to==='네 짐승'),false,'환상의 상징 동물과 표상은 NPC 조우선에서 제외');
+ assert.match(entries.find(entry=>entry.id==='pair-dan-3-nebuchadnezzar-shadrach').replyLines[0],/답할 필요/);
+ assert.match(entries.find(entry=>entry.id==='pair-dan-6-darius-daniel').replyLines[0],/천사/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

@@ -404,7 +404,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,800);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,835);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
@@ -796,6 +796,15 @@ test('현재 장의 사건 대사는 구체적인 물건·행동과 감정을 �
  assert.equal(speechEmotion(lines[0]),'sad');assert.equal(speechEmotion(lines[2]),'surprised');
  assert.equal(chapterMonologues({name:'엘리야'},[{code:'1ki',chap:21}]).length,0);
  assert.equal(speechEmotion({text:'전혀 다른 문장',emotion:'joy'}),'joy');
+});
+
+test('다니엘서 인물 독백은 각 장의 포로·왕궁·환상 상황에 맞고 1인칭과 해당 장 참조를 유지한다',async()=>{
+ const {chapterMonologues}=await import('../js/features/pixel-bible/context-monologues.js');
+ const chapterNames=[1,2,4,5,6,7,8,9,10,11,12];let authored=0;
+ for(const chap of chapterNames){const lines=chapterMonologues({name:chap===4?'다니엘(벨드사살)':'다니엘'},[{code:'dan',chap}]);assert.equal(lines.length,2,`다니엘 ${chap}장`);assert.ok(lines.every(line=>line.ref.startsWith(`다니엘 ${chap}:`)));assert.ok(lines.some(line=>/(?:내가|나는|우리|나를|내게|내)/.test(line.text)));authored+=lines.length;}
+ assert.equal(chapterMonologues({name:'다니엘'},[{code:'dan',chap:3}]).length,0,'다니엘은 풀무불 사건 현장에 없었다');
+ assert.equal(chapterMonologues({name:'사드락'},[{code:'dan',chap:3}]).length,2);
+ assert.equal(authored,22);
 });
 
 test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 규칙을 갖는다',async()=>{
