@@ -468,16 +468,27 @@
     },
     {
       "code": "psa",
-      "payloadSha256": "c4595bffec1aeb2a5405fc346a72c48a28af7dec0ac54b9aeff2ad3441da70b9",
-      "scenes": 46,
-      "existing": 46,
+      "payloadSha256": "1b42034bb3655978187b4a9c6c1f1a987a3d9ec910a38c49c541eddfd2798420",
+      "scenes": 218,
+      "existing": 218,
       "restored": 0,
       "corrected": 0,
-      "planned": 46,
+      "planned": 218,
       "modes": {
-        "illustration": 46
+        "illustration": 218
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 218,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "pro",
