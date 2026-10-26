@@ -154,7 +154,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"anoint","lead":"다윗","target":"유다 사람들","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"oil-vessel","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pour","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 2:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"anoint","lead":"유다 사람들","target":"다윗","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"oil-vessel","beats":[{"action":"inspect","duration":1,"actor":"유다 사람들"},{"action":"grasp","duration":1.2,"actor":"유다 사람들"},{"action":"lift","duration":1.5,"actor":"유다 사람들"},{"action":"pour","duration":1.8,"actor":"유다 사람들"},{"action":"lower","duration":1.5,"actor":"유다 사람들"},{"action":"bow","duration":1.2,"actor":"유다 사람들"}],"duration":8.2,"support":null,"ref":"사무엘하 2:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-2-3",
