@@ -459,7 +459,8 @@
       "chapter": 18,
       "title": "세 나그네 대접",
       "actors": [
-        "아브라함"
+        "아브라함",
+        "사라"
       ],
       "object": "tent",
       "ref": "창세기 18:1-8",
@@ -481,7 +482,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"아브라함","target":null,"mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"아브라함"},{"action":"walk","duration":1.2,"actor":"아브라함"},{"action":"bow","duration":1.5,"actor":"아브라함"},{"action":"extend","duration":1.8,"actor":"아브라함"},{"action":"place","duration":1.5,"actor":"아브라함"},{"action":"sit","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 18:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"welcome","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"joy","prop":"tent","beats":[{"action":"look","actor":"아브라함","duration":1},{"action":"run","actor":"아브라함","duration":1.2},{"action":"bow","actor":"아브라함","duration":1.5},{"action":"speak","actor":"아브라함","duration":1.8},{"action":"place","actor":"아브라함","duration":1.5},{"action":"stand","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 18:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-18-1",
@@ -518,7 +519,8 @@
       "chapter": 19,
       "title": "소돔의 악",
       "actors": [
-        "두 천사"
+        "두 천사",
+        "롯"
       ],
       "object": "house",
       "ref": "창세기 19:1-11",
@@ -543,7 +545,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"shelter","lead":"두 천사","target":null,"mode":"reconstruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"두 천사"},{"action":"startle","duration":1.2,"actor":"두 천사"},{"action":"extend","duration":1.5,"actor":"두 천사"},{"action":"guard","duration":1.8,"actor":"두 천사"},{"action":"turn","duration":1.5,"actor":"두 천사"},{"action":"stand","duration":1.2,"actor":"두 천사"}],"duration":8.2,"support":null,"ref":"창세기 19:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"shelter","lead":"두 천사","target":"롯","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"worried","prop":"house","beats":[{"action":"listen","actor":"두 천사","duration":1},{"action":"walk","actor":"롯","duration":1.2},{"action":"guard","actor":"롯","duration":1.5},{"action":"reach","actor":"두 천사","duration":1.8},{"action":"pull","actor":"두 천사","duration":1.5},{"action":"halt","actor":"두 천사","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 19:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-19-2",
@@ -572,7 +574,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"destruction","lead":"롯의 아내","target":null,"mode":"reconstruction","setting":"ruins","effect":"fire","emotion":"sad","prop":"salt","beats":[{"action":"look","duration":1,"actor":"롯의 아내"},{"action":"startle","duration":1.2,"actor":"롯의 아내"},{"action":"retreat","duration":1.5,"actor":"롯의 아내"},{"action":"brace","duration":1.8,"actor":"롯의 아내"},{"action":"mourn","duration":1.5,"actor":"롯의 아내"},{"action":"lower","duration":1.2,"actor":"롯의 아내"}],"duration":8.2,"support":null,"ref":"창세기 19:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"destruction","lead":"롯의 아내","target":null,"mode":"reconstruction","setting":"ruins","effect":"none","emotion":"sad","prop":"salt","beats":[{"action":"walk","actor":"롯의 아내","duration":1},{"action":"turn","actor":"롯의 아내","duration":1.2},{"action":"startle","actor":"롯의 아내","duration":1.5},{"action":"halt","actor":"롯의 아내","duration":1.8},{"action":"stand","actor":"롯의 아내","duration":1.5},{"action":"stand","actor":"롯의 아내","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 19:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-20-3",
@@ -581,7 +583,7 @@
       "title": "아브라함의 기도",
       "actors": [
         "아브라함",
-        "사라"
+        "아비멜렉"
       ],
       "object": "house",
       "ref": "창세기 20:17-18",
@@ -597,7 +599,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"kneel","duration":1.2,"actor":"아브라함"},{"action":"lift","duration":1.5,"actor":"아브라함"},{"action":"pray","duration":1.8,"actor":"아브라함"},{"action":"pray","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 20:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"아브라함","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"house","beats":[{"action":"listen","actor":"아브라함","duration":1},{"action":"kneel","actor":"아브라함","duration":1.2},{"action":"pray","actor":"아브라함","duration":1.5},{"action":"pray","actor":"아브라함","duration":1.8},{"action":"rise","actor":"아비멜렉","duration":1.5},{"action":"stand","actor":"아비멜렉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 20:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-21-1",
@@ -4299,9 +4301,7 @@
       "title": "롯의 딸들이 모압과 암몬의 조상이 되다",
       "actors": [
         "롯",
-        "롯의 아내",
-        "롯의 딸들",
-        "아브라함"
+        "롯의 딸들"
       ],
       "object": "scene-marker",
       "ref": "창세기 19:30-38",
@@ -4324,7 +4324,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"롯","target":"롯의 아내","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"롯"},{"action":"listen","duration":1.2,"actor":"롯"},{"action":"cradle","duration":1.5,"actor":"롯"},{"action":"smile","duration":1.8,"actor":"롯"},{"action":"bless","duration":1.5,"actor":"롯"},{"action":"bow","duration":1.2,"actor":"롯"}],"duration":8.2,"support":null,"ref":"창세기 19:30-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"롯","target":null,"mode":"illustration","setting":"chamber","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","actor":"롯","duration":1},{"action":"look","actor":"롯","duration":1.2},{"action":"sit","actor":"롯","duration":1.5},{"action":"hold","actor":"롯","duration":1.8},{"action":"look","actor":"롯","duration":1.5},{"action":"stand","actor":"롯","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 19:30-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-20-0",
@@ -4365,7 +4365,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"하나님","target":"아비멜렉","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"speak","duration":1.2,"actor":"하나님"},{"action":"point","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.8,"actor":"하나님"},{"action":"lower","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 20:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"아비멜렉","target":"하나님","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"sleep","actor":"아비멜렉","duration":1},{"action":"listen","actor":"아비멜렉","duration":1.2},{"action":"startle","actor":"아비멜렉","duration":1.5},{"action":"rise","actor":"아비멜렉","duration":1.8},{"action":"speak","actor":"아비멜렉","duration":1.5},{"action":"signal","actor":"아비멜렉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 20:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-21-0",

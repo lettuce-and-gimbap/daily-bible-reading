@@ -1008,6 +1008,154 @@
       ],
       "mode": "symbolic"
     },
+    "16": {
+      "lead": "아브라함",
+      "target": "사라",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "run",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "place",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
+    },
+    "18": {
+      "lead": "두 천사",
+      "target": "롯",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "두 천사",
+          "duration": 1
+        },
+        {
+          "action": "walk",
+          "actor": "롯",
+          "duration": 1.2
+        },
+        {
+          "action": "guard",
+          "actor": "롯",
+          "duration": 1.5
+        },
+        {
+          "action": "reach",
+          "actor": "두 천사",
+          "duration": 1.8
+        },
+        {
+          "action": "pull",
+          "actor": "두 천사",
+          "duration": 1.5
+        },
+        {
+          "action": "halt",
+          "actor": "두 천사",
+          "duration": 1.2
+        }
+      ]
+    },
+    "19": {
+      "lead": "롯의 아내",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "롯의 아내",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "롯의 아내",
+          "duration": 1.2
+        },
+        {
+          "action": "startle",
+          "actor": "롯의 아내",
+          "duration": 1.5
+        },
+        {
+          "action": "halt",
+          "actor": "롯의 아내",
+          "duration": 1.8
+        },
+        {
+          "action": "stand",
+          "actor": "롯의 아내",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "롯의 아내",
+          "duration": 1.2
+        }
+      ]
+    },
+    "20": {
+      "lead": "아브라함",
+      "target": "아비멜렉",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "kneel",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "pray",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "rise",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        }
+      ]
+    },
     "22": {
       "lead": "하갈",
       "target": "이스마엘",
@@ -2454,10 +2602,80 @@
       ]
     },
     "133": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "롯",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "롯",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "롯",
+          "duration": 1.2
+        },
+        {
+          "action": "sit",
+          "actor": "롯",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "롯",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "롯",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "롯",
+          "duration": 1.2
+        }
+      ]
     },
     "134": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "아비멜렉",
+      "target": "하나님",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "sleep",
+          "actor": "아비멜렉",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        },
+        {
+          "action": "startle",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "rise",
+          "actor": "아비멜렉",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        }
+      ]
     },
     "135": {
       "mode": "illustration"
