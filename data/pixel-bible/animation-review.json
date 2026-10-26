@@ -226,14 +226,14 @@
     },
     {
       "code": "est",
-      "payloadSha256": "e01ebc02c186f501685d9c7d0208e320d9edc339d532f71a7c92bbbe097cad00",
-      "scenes": 5,
-      "existing": 5,
+      "payloadSha256": "1b95cd03cbf787c844c21caf125897944aecc0432161900a2f8dbb533308a23d",
+      "scenes": 19,
+      "existing": 19,
       "restored": 0,
       "corrected": 2,
-      "planned": 5,
+      "planned": 19,
       "modes": {
-        "reconstruction": 5
+        "reconstruction": 19
       },
       "status": "authored-awaiting-browser-review"
     },
