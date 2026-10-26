@@ -1124,7 +1124,7 @@
       "id": "ot-num-extra-14-0",
       "code": "num",
       "chapter": 14,
-      "title": "모세와 아론이 엎드려 백성을 위해 간구하다",
+      "title": "모세가 백성의 용서를 간구하다",
       "actors": [
         "이스라엘 자손",
         "여호수아",
@@ -1132,18 +1132,8 @@
         "모세"
       ],
       "object": "scene-marker",
-      "ref": "민수기 14:1-25",
+      "ref": "민수기 14:11-25",
       "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
         11,
         12,
         13,
@@ -1162,13 +1152,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 백성이 애굽으로 돌아가자고 원망하고 여호수아와 갈렙은 믿음을 호소해요. 모세는 백성을 위해 용서를 간구해요."
+        "해설: 하나님이 불신한 백성의 심판을 말씀하시자 모세는 하나님의 명예와 인자하심을 의지해 용서를 구해요. 용서의 응답과 함께 불신한 세대가 약속의 땅에 들어가지 못한다는 선언이 이어져요."
       ],
-      "study": "백성이 애굽으로 돌아가자고 원망하고 여호수아와 갈렙은 믿음을 호소해요. 모세는 백성을 위해 용서를 간구해요.",
+      "study": "하나님이 불신한 백성의 심판을 말씀하시자 모세는 하나님의 명예와 인자하심을 의지해 용서를 구해요. 용서의 응답과 함께 불신한 세대가 약속의 땅에 들어가지 못한다는 선언이 이어져요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"이스라엘 자손","target":"여호수아","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 자손"},{"action":"kneel","duration":1.2,"actor":"이스라엘 자손"},{"action":"lift","duration":1.5,"actor":"이스라엘 자손"},{"action":"pray","duration":1.8,"actor":"이스라엘 자손"},{"action":"pray","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 14:1-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 14:11-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-num-extra-19-0",
@@ -1638,6 +1628,33 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"judgment","lead":"안식일에 나무한 사람","target":"모세","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"안식일에 나무한 사람"},{"action":"turn","duration":1.2,"actor":"안식일에 나무한 사람"},{"action":"speak","duration":1.5,"actor":"안식일에 나무한 사람"},{"action":"point","duration":1.8,"actor":"안식일에 나무한 사람"},{"action":"listen","duration":1.5,"actor":"안식일에 나무한 사람"},{"action":"lower","duration":1.2,"actor":"안식일에 나무한 사람"}],"duration":8.2,"support":null,"ref":"민수기 15:32-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-14-1",
+      "code": "num",
+      "chapter": 14,
+      "title": "밤새 울며 애굽 귀환을 요구하다",
+      "actors": [
+        "이스라엘 자손",
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 14:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 백성은 정탐 보고를 듣고 밤새 울며 모세와 아론을 원망해요. 가족이 사로잡힐까 두려워 새 지도자를 세워 애굽으로 돌아가자고 말해요."
+      ],
+      "study": "백성은 정탐 보고를 듣고 밤새 울며 모세와 아론을 원망해요. 가족이 사로잡힐까 두려워 새 지도자를 세워 애굽으로 돌아가자고 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"이스라엘 자손","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"},{"action":"kneel","duration":1.5,"actor":"이스라엘 자손"},{"action":"cover-mouth","duration":1.8,"actor":"이스라엘 자손"},{"action":"mourn","duration":1.5,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 14:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
