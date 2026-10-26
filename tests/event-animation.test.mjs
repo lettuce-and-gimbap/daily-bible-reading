@@ -81,3 +81,8 @@ test('창세기 창조·에덴 장면에 모세의 떨기나무와 신 벗기 �
  const scenes=books.find(([c])=>c==='gen')[1].scenes;for(const id of ['ot-gen-extra-1-0','ot-gen-extra-2-0']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.mode,'illustration');assert.notEqual(a.effect,'bush-fire');assert(!a.beats.some(b=>b.action==='remove-shoe'));}
  const a=scenes.find(s=>s.id==='ot-gen-extra-2-0').animation;assert.equal(a.lead,'아담');assert.equal(a.setting,'garden');assert(a.beats.some(b=>b.action==='sleep'));
 });
+
+test('창세기 동작은 해당 장면에 실제 등록된 배우에게만 배정된다',()=>{
+ const data=books.find(([code])=>code==='gen')[1];
+ for(const scene of data.scenes)for(const beat of scene.animation.beats)if(beat.actor)assert(scene.actors.includes(beat.actor),scene.id+': '+beat.actor);
+});

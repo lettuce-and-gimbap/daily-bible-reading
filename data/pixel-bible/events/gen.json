@@ -982,6 +982,7 @@
       "title": "아브라함의 죽음",
       "actors": [
         "이삭",
+        "이스마엘",
         "아브라함"
       ],
       "object": "field",
@@ -1007,7 +1008,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"mourn","lead":"이삭","target":"아브라함","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"field","beats":[{"action":"startle","duration":1,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"},{"action":"kneel","duration":1.5,"actor":"이삭"},{"action":"cover-mouth","duration":1.8,"actor":"이삭"},{"action":"mourn","duration":1.5,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 25:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"mourn","lead":"이삭","target":"이스마엘","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"field","beats":[{"action":"lower","actor":"아브라함","duration":1},{"action":"mourn","actor":"이삭","duration":1.2},{"action":"mourn","actor":"이스마엘","duration":1.5},{"action":"carry","actor":"이삭","duration":1.8},{"action":"carry","actor":"이스마엘","duration":1.5},{"action":"bow","actor":"이삭","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 25:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-25-2",
@@ -1038,7 +1039,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"birth","lead":"이삭","target":"리브가","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"house","beats":[{"action":"look","duration":1,"actor":"이삭"},{"action":"listen","duration":1.2,"actor":"이삭"},{"action":"cradle","duration":1.5,"actor":"이삭"},{"action":"smile","duration":1.8,"actor":"이삭"},{"action":"bless","duration":1.5,"actor":"이삭"},{"action":"bow","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 25:19-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"birth","lead":"이삭","target":"리브가","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"gentle","prop":"house","beats":[{"action":"pray","actor":"이삭","duration":1},{"action":"listen","actor":"리브가","duration":1.2},{"action":"pray","actor":"리브가","duration":1.5},{"action":"listen","actor":"리브가","duration":1.8},{"action":"cradle","actor":"리브가","duration":1.5},{"action":"look","actor":"이삭","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 25:19-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-26-1",
@@ -1486,7 +1487,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"에서","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 33:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"에서","mode":"reconstruction","setting":"road","effect":"none","emotion":"determined","prop":"house","beats":[{"action":"speak","actor":"에서","duration":1},{"action":"listen","actor":"야곱","duration":1.2},{"action":"speak","actor":"야곱","duration":1.5},{"action":"turn","actor":"에서","duration":1.8},{"action":"walk","actor":"에서","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 33:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-33-3",
@@ -3401,7 +3402,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"},{"action":"extend","duration":1.5,"actor":"야곱"},{"action":"receive","duration":1.8,"actor":"야곱"},{"action":"bow","duration":1.5,"actor":"야곱"},{"action":"stand","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 33:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"bow","actor":"야곱","duration":1},{"action":"run","actor":"에서","duration":1.2},{"action":"reach","actor":"에서","duration":1.5},{"action":"hold","actor":"에서","duration":1.8},{"action":"mourn","actor":"야곱","duration":1.5},{"action":"extend","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 33:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-45-0",
@@ -3503,7 +3504,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"trade","lead":"야곱","target":"에서","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"weigh","duration":1.5,"actor":"야곱"},{"action":"place","duration":1.8,"actor":"야곱"},{"action":"extend","duration":1.5,"actor":"야곱"},{"action":"receive","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 25:27-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"trade","lead":"야곱","target":"에서","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"scoop","actor":"야곱","duration":1},{"action":"speak","actor":"에서","duration":1.2},{"action":"speak","actor":"야곱","duration":1.5},{"action":"pledge","actor":"에서","duration":1.8},{"action":"extend","actor":"야곱","duration":1.5},{"action":"eat","actor":"에서","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 25:27-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-27-0",
@@ -4702,7 +4703,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"디나","mode":"reconstruction","setting":"home","effect":"symbol","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"turn","actor":"야곱","duration":1.2},{"action":"speak","actor":"하몰","duration":1.5},{"action":"hold","actor":"야곱","duration":1.8},{"action":"speak","actor":"시므온","duration":1.5},{"action":"look","actor":"레위","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 34:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"하몰","mode":"reconstruction","setting":"home","effect":"none","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"turn","actor":"야곱","duration":1.2},{"action":"speak","actor":"하몰","duration":1.5},{"action":"hold","actor":"야곱","duration":1.8},{"action":"speak","actor":"세겜","duration":1.5},{"action":"look","actor":"디나","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 34:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-34-1",

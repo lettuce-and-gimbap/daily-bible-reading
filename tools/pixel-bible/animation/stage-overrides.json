@@ -1415,6 +1415,80 @@
         }
       ]
     },
+    "32": {
+      "lead": "이삭",
+      "target": "이스마엘",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "lower",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "mourn",
+          "actor": "이삭",
+          "duration": 1.2
+        },
+        {
+          "action": "mourn",
+          "actor": "이스마엘",
+          "duration": 1.5
+        },
+        {
+          "action": "carry",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "carry",
+          "actor": "이스마엘",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
+    "33": {
+      "lead": "이삭",
+      "target": "리브가",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "pray",
+          "actor": "이삭",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "리브가",
+          "duration": 1.2
+        },
+        {
+          "action": "pray",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "리브가",
+          "duration": 1.8
+        },
+        {
+          "action": "cradle",
+          "actor": "리브가",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
     "34": {
       "lead": "아비멜렉",
       "target": "이삭",
@@ -1554,6 +1628,43 @@
         {
           "action": "gather",
           "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "47": {
+      "lead": "야곱",
+      "target": "에서",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "에서",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "에서",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "에서",
           "duration": 1.5
         },
         {
@@ -2496,7 +2607,42 @@
       "mode": "reconstruction"
     },
     "108": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "target": "에서",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "bow",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "run",
+          "actor": "에서",
+          "duration": 1.2
+        },
+        {
+          "action": "reach",
+          "actor": "에서",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "에서",
+          "duration": 1.8
+        },
+        {
+          "action": "mourn",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "extend",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
     },
     "109": {
       "mode": "reconstruction"
@@ -2505,7 +2651,42 @@
       "mode": "reconstruction"
     },
     "111": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "target": "에서",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "scoop",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "에서",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "pledge",
+          "actor": "에서",
+          "duration": 1.8
+        },
+        {
+          "action": "extend",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "eat",
+          "actor": "에서",
+          "duration": 1.2
+        }
+      ]
     },
     "112": {
       "mode": "reconstruction"
@@ -2870,9 +3051,9 @@
     "144": {
       "mode": "reconstruction",
       "lead": "야곱",
-      "target": "디나",
+      "target": "하몰",
       "setting": "home",
-      "effect": "symbol",
+      "effect": "none",
       "beats": [
         {
           "action": "listen",
@@ -2896,12 +3077,12 @@
         },
         {
           "action": "speak",
-          "actor": "시므온",
+          "actor": "세겜",
           "duration": 1.5
         },
         {
           "action": "look",
-          "actor": "레위",
+          "actor": "디나",
           "duration": 1.2
         }
       ]
