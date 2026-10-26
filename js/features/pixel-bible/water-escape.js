@@ -14,6 +14,13 @@ export function advanceWaterEscape(actor,dt){
  const state=actor.waterEscape;if(!state)return false;
  state.elapsed+=Math.max(0,Math.min(.05,Number(dt)||0));
  if(state.elapsed+1e-9<WATER_ESCAPE_SECONDS)return false;
+ return rescueWaterEscape(actor);
+}
+
+// A watchdog can use the same transition if animation frames are throttled or
+// the tab temporarily stops painting. Keep it idempotent for timer/frame races.
+export function rescueWaterEscape(actor){
+ const state=actor.waterEscape;if(!state)return false;
  actor.x=state.safe.x;actor.y=state.safe.y;actor.waterEscape=null;actor.idle=3;actor.expression='worried';
  return true;
 }

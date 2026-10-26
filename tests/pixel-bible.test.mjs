@@ -131,7 +131,7 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
 });
 
 test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 안전한 물가로 이동한다',async()=>{
- const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
+ const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,rescueWaterEscape,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
  const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
  beginWaterEscape(actor,{x:56,y:20});
  assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
@@ -142,6 +142,20 @@ test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 
  for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05);i++)advanceWaterEscapes([swimmer,bystander],.05);
  assert.deepEqual([swimmer.x,swimmer.y,swimmer.waterEscape],[11,12,null]);
  assert.deepEqual(bystander,{x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1});
+ const stalled={x:40,y:25};beginWaterEscape(stalled,{x:39,y:25});
+ assert.equal(rescueWaterEscape(stalled),true,'RAF가 멈춘 경우에도 별도 감시 타이머가 물가로 복귀시킬 수 있다');
+ assert.equal(rescueWaterEscape(stalled),false,'구조 전환은 중복 실행되지 않는다');
+});
+
+test('물 구조 그리기는 월드의 자유 변수를 읽지 않고 지형 색을 전달받는다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const source=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ const npcDraw=source.slice(source.lastIndexOf('function drawNpc('));
+ assert.match(source,/const waterPalette=BACKGROUNDS\[backgroundKey\]/);
+ assert.match(source,/waterPalette\.water,waterPalette\.wave/);
+ assert.match(npcDraw,/function drawNpc\([^\n]*water='#528ca0',foam='#a7d4d0'/);
+ assert.match(npcDraw,/drawWaterRescue\(c,\{x,y,style,pose:actionPose,time,water,foam,reduced\}\)/);
+ assert.doesNotMatch(npcDraw,/backgroundKey/);
 });
 
 test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되어 있고 회전 좌표는 실제 CSS 회전 상태를 따른다',async()=>{

@@ -7,7 +7,7 @@ import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
 import {worldCanAnimate} from './world-loop.js';
-import {beginWaterEscape,advanceWaterEscapes} from './water-escape.js';
+import {beginWaterEscape,advanceWaterEscapes,rescueWaterEscape,WATER_ESCAPE_SECONDS} from './water-escape.js';
 import {drawWaterRescue} from './water-rescue-art.js';
 import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,learningNext,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
@@ -391,7 +391,8 @@ export async function mountPixelWorld(shell, options) {
   let showRelationships=!!options.showRelationships;
   let removing=false,objectSpeech=null,autoObjectAt=2;
   const objectCooldown=new Map(),visitorCooldown=new Map();
-  let selected = -1, placing = null, paused = false, sound = false, disposed = false, frame = 0, last = 0, time = 0;
+  let selected = -1, placing = null, paused = false, sound = false, disposed = false, frame = 0, frameScheduled = false, frameErrorReported = false, last = 0, time = 0;
+  const waterRescueTimers=new Map();
   let activeEvent = null, pendingEvent = null, eventIndex = 0, cinematicTime = 0;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let blockedCells=new Set();
@@ -414,6 +415,17 @@ export async function mountPixelWorld(shell, options) {
     toastTimer=setTimeout(()=>{info.hidden=true;},2000);
   };
   const clearInfo=()=>{clearTimeout(toastTimer);info.hidden=true;};
+  function startWaterEscape(n,safe){
+    const state=beginWaterEscape(n,safe),old=waterRescueTimers.get(n);if(old)clearTimeout(old);
+    const timer=setTimeout(()=>{
+      waterRescueTimers.delete(n);
+      if(disposed||!npcs.includes(n)||n.waterEscape!==state||!rescueWaterEscape(n))return;
+      say('물가로 올라왔어요. 다시 움직일 수 있어요.');
+      try{draw();}catch(error){console.warn('물가 화면 복구 중 그리기 오류',error);}
+      scheduleFrame();
+    },(WATER_ESCAPE_SECONDS+1)*1000);
+    waterRescueTimers.set(n,timer);return state;
+  }
   const save = () => { indexObjects();try { localStorage.setItem(storageKey, JSON.stringify(objects)); } catch (_) { say("배치는 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요."); } };
   const cell = (p) => ({ x: Math.round(p.x), y: Math.round(p.y) });
   const adjacent = (o,n) => interactionApproaches(o).filter(p=>!blocked(p.x,p.y)).sort((a,b)=>Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));
@@ -764,6 +776,7 @@ export async function mountPixelWorld(shell, options) {
   function finishDrag(e,cancel=false) {
     if(!drag||e.pointerId!==drag.id)return;
     const held=drag;drag=null;delete canvas.dataset.dragging;
+    pointers.delete(e.pointerId);if(pointers.size<2)pinch=null;if(pan?.id===e.pointerId)pan=null;if(!pointers.size)gestureActive=false;
     if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);
     if(!held.active){if(!cancel)requestPersonal(held.n);suppressClick=true;return;}
     suppressClick=true;
@@ -781,7 +794,7 @@ export async function mountPixelWorld(shell, options) {
       const spot=adjacent(obj,landing)[0];
       if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);updateEncounters(performance.now());draw();return;}
     }
-    if(!n.creature&&waterAt(backgroundKey,landing.x,landing.y)){const safe=dryLanding(backgroundKey,landing,blocked);if(safe){n.x=landing.x;n.y=landing.y;beginWaterEscape(n,safe);say('첨벙! 잠시 뒤 물가로 올라와요.');draw();return;}}
+    if(!n.creature&&waterAt(backgroundKey,landing.x,landing.y)){const safe=dryLanding(backgroundKey,landing,blocked);if(safe){n.x=landing.x;n.y=landing.y;startWaterEscape(n,safe);say('첨벙! 잠시 뒤 물가로 올라와요.');draw();return;}}
     if(blocked(landing.x,landing.y)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 오브젝트가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
     }else{n.x=landing.x;n.y=landing.y;n.idle=8;clearInfo();}
@@ -1031,7 +1044,7 @@ export async function mountPixelWorld(shell, options) {
       if(n.boatRide){
         if(!objects.includes(n.boatRide)&&!terrain.includes(n.boatRide)){
           const safe=dryLanding(backgroundKey,n.boatRide,blocked);n.boatRide=null;
-          if(safe)beginWaterEscape(n,safe);
+          if(safe)startWaterEscape(n,safe);
         }else{n.x=n.boatRide.x;n.y=n.boatRide.y+1;n.waterEscape=null;n.path=[];n.stride+=dt*2;continue;}
       }
       if(n.waterEscape)continue;
@@ -1097,7 +1110,8 @@ export async function mountPixelWorld(shell, options) {
     ctx.drawImage(background,0,0);
     const light=globalThis.KstLight.at();
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
-    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced)}))].sort((a,b)=>a.y-b.y);
+    const waterPalette=BACKGROUNDS[backgroundKey];
+    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced,waterPalette.water,waterPalette.wave)}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,reduced);
     if(objectHold?.active){
@@ -1132,31 +1146,40 @@ export async function mountPixelWorld(shell, options) {
   window.addEventListener('orientationchange',refreshCanvas,{signal});
   window.visualViewport?.addEventListener('resize',refreshCanvas,{signal});
   const canRun=()=>worldCanAnimate({disposed,hidden:document.hidden,allowed:options.allowed()});
+  const scheduleFrame=()=>{if(canRun()&&!frameScheduled){frameScheduled=true;frame=requestAnimationFrame(tick);}};
   function tick(stamp) {
+    frameScheduled=false;
     if(disposed)return;
     if(!options.allowed()) {say("월드를 다시 열어 주세요.");return;}
-    const dt=Math.min(.05,(stamp-last)/1000||0);last=stamp;
-    const rescued=advanceWaterEscapes(npcs,dt);
-    for(const n of npcs)if(n.waterEscape){n.direction='down';n.stride+=dt*8;}
-    if(rescued.length)say(rescued.length>1?`${rescued.length}명이 물가로 올라와 숨을 고르고 있어요.`:'휴! 물가로 올라와 숨을 고르고 있어요.');
-    if(!paused&&!shell.querySelector('.pb-scripture')) {
-      if(!activeEvent) update(dt);
-      else {
-        if(!activeEvent.paused){cinematicTime+=dt;activeEvent.elapsed+=dt;}
-        if(!activeEvent.paused&&!activeEvent.manualClip&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+    try{
+      const dt=Math.min(.05,(stamp-last)/1000||0);last=stamp;
+      const rescued=advanceWaterEscapes(npcs,dt);
+      for(const n of rescued){const timer=waterRescueTimers.get(n);if(timer)clearTimeout(timer);waterRescueTimers.delete(n);}
+      for(const n of npcs)if(n.waterEscape){n.direction='down';n.stride+=dt*8;}
+      if(rescued.length)say(rescued.length>1?`${rescued.length}명이 물가로 올라와 숨을 고르고 있어요.`:'휴! 물가로 올라와 숨을 고르고 있어요.');
+      if(!paused&&!shell.querySelector('.pb-scripture')) {
+        if(!activeEvent) update(dt);
+        else {
+          if(!activeEvent.paused){cinematicTime+=dt;activeEvent.elapsed+=dt;}
+          if(!activeEvent.paused&&!activeEvent.manualClip&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
+        }
       }
+      followDraggedCharacter(dt);
+      updateEncounters(performance.now());updateSpeech(performance.now());draw();
+      frameErrorReported=false;
+    }catch(error){
+      if(!frameErrorReported){frameErrorReported=true;console.warn('PIXEL BIBLE 월드 프레임 복구 시도',error);}
+    }finally{
+      scheduleFrame();
     }
-    followDraggedCharacter(dt);
-    updateEncounters(performance.now());updateSpeech(performance.now());draw();
-    if(canRun())frame=requestAnimationFrame(tick);
   }
   function resume() {
-    cancelAnimationFrame(frame);last=0;
+    cancelAnimationFrame(frame);frameScheduled=false;last=0;
     if(document.hidden) {hideSpeech();encounters.clear();if(objectHold)finishObjectHold({pointerId:objectHold.id,clientX:0,clientY:0},true);if(drag)finishDrag({pointerId:drag.id,clientX:0,clientY:0},true);if(sound)speechSynthesis.cancel();return;}
-    if(canRun())frame=requestAnimationFrame(tick);
+    scheduleFrame();
   }
   document.addEventListener("visibilitychange",resume,{signal});window.addEventListener("resize",resume,{signal});
-  function cleanup() {if(disposed)return;disposed=true;closeCinematic?.();bgm.dispose();encounters.clear();for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
+  function cleanup() {if(disposed)return;disposed=true;for(const timer of waterRescueTimers.values())clearTimeout(timer);waterRescueTimers.clear();frameScheduled=false;closeCinematic?.();bgm.dispose();encounters.clear();for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}if(objectHold){clearTimeout(objectHold.timer);objectHold=null;}hideSpeech();abort.abort();clearTimeout(toastTimer);resizeObserver.disconnect();cancelAnimationFrame(frame);if(sound)speechSynthesis.cancel();}
   function syncRelationships(){
     const button=shell.querySelector('[data-action="relationships"]');
     button.setAttribute('aria-pressed',showRelationships);button.textContent=showRelationships?'관계선 켜짐':'관계선 꺼짐';
@@ -1183,7 +1206,7 @@ function drawObject(c,o,response) {
     c.fillStyle='#12303bd9';c.fillRect(o.x*TILE-w/2,o.y*TILE+15,w,15);c.fillStyle='#fff1c9';c.fillText(name,o.x*TILE,o.y*TILE+26);c.restore();
   }
 }
-function drawNpc(c,n,index,time,selected,acting,reduced=false) {
+function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',foam='#a7d4d0') {
   const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
   let actionPose=n.collisionStun?impactPose(n.collisionStun.elapsed,reduced):n.waterEscape?swimPose(n.waterEscape.elapsed,reduced):n.boatRide?{sit:true,phase:Math.floor(time*3)%4,legSwing:Math.floor(time*3)%2}:n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
   if(n.creature?.kind==='plant'&&!actionPose)actionPose={phase:reduced?0:Math.floor(time*1.5)%4,bodyX:0,bodyY:0,hand:0,creatureAction:'sway'};
@@ -1198,7 +1221,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false) {
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
   drawPixelCharacter(c,style,x,y+(acting&&!actionPose?.lie&&!actionPose?.scripted?Math.round(Math.sin(time*4)*2):0),{scale:2,walkFrame:n.path.length?Math.floor((n.stride||0)*2)%4:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:n.usingObject&&!reduced&&!actionPose?.scripted?Math.floor(time*2)%4:0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.collisionStun?'surprised':n.waterEscape?'worried':actionPose?.actual==='bonk'&&actionPose.phase===2&&actionPose.within>=.65?'surprised':n.expression||"neutral",selected:selected||!!n.encounter});
   if(n.waterEscape){
-    drawWaterRescue(c,{x,y,style,pose:actionPose,time,water:BACKGROUNDS[backgroundKey].water,foam:BACKGROUNDS[backgroundKey].wave,reduced});
+    drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,reduced});
   }
   if(held){drawWorldObject(c,held,TILE,held.frame);drawObjectResponse(c,n.usingObject,objectInteractionFrame(n.usingObject,[n],time,reduced),TILE);}
   const shape=n.creature?{width:1,height:1}:physiqueFor(n.name,n.role,n.refs);
