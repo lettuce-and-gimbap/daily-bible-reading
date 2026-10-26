@@ -78,7 +78,7 @@ test('욥기의 논쟁·엘리후의 답변·폭풍 속 질문과 회복을 상�
 });
 
 test('시편의 출애굽·광야·다윗 언약 회고를 사건과 시적 상징으로 나눠 보강한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'psa.json')),added=data.scenes.filter(s=>['구원하신 하나님을 노래한 다윗' ,'광야의 행진과 성소로 향하는 찬양' ,'무너진 성소를 바라보는 아삽의 탄식' ,'광야에서 반복된 불신과 돌보심' ,'거듭된 반역과 다윗을 택하심' ,'다윗과 맺은 왕위의 언약' ,'땅에 던져진 왕관을 탄식하다' ,'앞서 애굽으로 보내진 요셉' ,'모세와 아론을 통한 출애굽과 광야의 돌보심' ,'홍해 앞의 불신과 모세의 중보' ,'가나안에서의 반역과 비느하스의 개입' ,'출애굽 때 바다와 요단이 물러서다'].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/psa.json'));assert.equal(added.length,12);
+ const data=JSON.parse(fs.readFileSync(root+'psa.json')),added=data.scenes.filter(s=>['구원하신 하나님을 노래한 다윗' ,'광야의 행진과 성소로 향하는 찬양' ,'무너진 성소를 바라보는 아삽의 탄식' ,'광야에서 반복된 불신과 돌보심' ,'구원을 잊은 반역과 실로의 상실' ,'다윗과 맺은 왕위의 언약' ,'땅에 던져진 왕관을 탄식하다' ,'앞서 애굽으로 보내진 요셉' ,'모세와 아론을 통한 출애굽과 광야의 돌보심' ,'홍해 앞의 불신과 모세의 중보' ,'가나안에서의 반역과 비느하스의 개입' ,'출애굽 때 바다와 요단이 물러서다'].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/psa.json'));assert.equal(added.length,12);
  for(const title of ['구원하신 하나님을 노래한 다윗','무너진 성소를 바라보는 아삽의 탄식','앞서 애굽으로 보내진 요셉','모세와 아론을 통한 출애굽과 광야의 돌보심','출애굽 때 바다와 요단이 물러서다'])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
@@ -141,7 +141,7 @@ test('hos 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('jol 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'jol.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-jol-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jol.json'));assert.equal(added.length,6);
- for(const title of ["메뚜기 재앙에 농부와 포도원 일꾼이 탄식하다","제사장과 백성이 성회로 모이다","나팔을 불어 여호와의 날을 알리다","돌아온 백성에게 햇수의 회복을 약속하다","모든 사람에게 영을 부으시리라 약속하다","열국을 심판하고 백성의 피난처가 되다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["메뚜기 재앙에 농부와 포도원 일꾼이 탄식하다","메마른 들판에서 하나님께 부르짖다","나팔을 불어 여호와의 날을 알리다","돌아온 백성에게 햇수의 회복을 약속하다","모든 사람에게 영을 부으시리라 약속하다","열국을 심판하고 백성의 피난처가 되다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -514,4 +514,9 @@ test('사사기·이사야·아모스의 복합 장면은 인접 범위를 침�
  const groups=[['jdg','ot-jdg-extra-14','ot-jdg-extra-15'],['isa','ot-isa-extra-22-0','ot-isa-22-2'],['amo','ot-amo-8-0','ot-amo-extra-8-0'],['amo','ot-amo-extra-9-0','ot-amo-9-1'],['hab','ot-animation-hab-1','ot-hab-extra-2-0'],['nam','ot-nam-extra-1-0','ot-animation-nam-1'],['lam','ot-lam-extra-4-1','ot-lam-4-3']];
  for(const [code,left,right]of groups){const scenes=JSON.parse(fs.readFileSync(root+code+'.json')).scenes,a=scenes.find(s=>s.id===left),b=scenes.find(s=>s.id===right);assert(a);assert(b);assert.equal(a.verseNumbers.at(-1)+1,b.verseNumbers[0]);assert.equal(a.animation.ref,a.ref);assert.equal(b.animation.ref,b.ref);}
  const scene=JSON.parse(fs.readFileSync(root+'jdg.json')).scenes.find(s=>s.id==='ot-jdg-extra-14');assert.equal(scene.animation.lead,'들릴라');
+});
+
+
+test('요엘의 성회 소집과 기도 및 시편의 반역 회고와 다윗 선택은 절을 빠짐없이 연결한다',()=>{
+ for(const [code,left,right]of [['jol','ot-jol-1-2','ot-jol-extra-1-1'],['psa','ot-psa-extra-05','ot-psa-78-3']]){const scenes=JSON.parse(fs.readFileSync(root+code+'.json')).scenes,a=scenes.find(s=>s.id===left),b=scenes.find(s=>s.id===right);assert(a);assert(b);assert.equal(a.verseNumbers.at(-1)+1,b.verseNumbers[0]);assert.equal(a.animation.ref,a.ref);assert.equal(b.animation.ref,b.ref);}
 });

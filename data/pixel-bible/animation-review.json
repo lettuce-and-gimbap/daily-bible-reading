@@ -260,7 +260,7 @@
     },
     {
       "code": "psa",
-      "payloadSha256": "259abd2254c28280967ab9c3e19ea323b84e324b58368977edef305e2da8f5f9",
+      "payloadSha256": "0e61841d16b9a34afe442a6c8b6235fb1cac4a5d936b100791c14b31afcc913b",
       "scenes": 45,
       "existing": 45,
       "restored": 0,
@@ -399,7 +399,7 @@
     },
     {
       "code": "jol",
-      "payloadSha256": "ea5f3ff21731224033bc087c4fc3c7b2f6f6a05ea4967fc2d987152d95954e78",
+      "payloadSha256": "f6304214d25263b68ba661d5a61d2c439a91d6c9cefe4278428944330a9eaafd",
       "scenes": 8,
       "existing": 8,
       "restored": 0,

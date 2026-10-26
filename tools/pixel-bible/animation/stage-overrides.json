@@ -73,7 +73,10 @@
       "mode": "illustration"
     },
     "22": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "시편 78:40-64",
+      "lead": "에브라임 자손",
+      "target": "다윗"
     },
     "23": {
       "mode": "illustration"
@@ -409,7 +412,10 @@
       "mode": "illustration"
     },
     "3": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "ref": "요엘 1:15-20",
+      "lead": "요엘",
+      "target": "제사장들"
     },
     "4": {
       "mode": "illustration"
