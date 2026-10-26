@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1431,
+    "scenesInFiles": 1432,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -42,7 +42,7 @@
     {
       "code": "gen",
       "chapters": 50,
-      "scenes": 170,
+      "scenes": 171,
       "sourceMatchedSceneCandidates": 75,
       "retainedLegacyScenes": 0,
       "curatedSupplementalScenes": 95
@@ -2091,7 +2091,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "source-confirmed-actor-and-object": 3,
         "source-confirmed-actor-only": 1

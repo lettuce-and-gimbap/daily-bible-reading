@@ -821,6 +821,310 @@
     }
   },
   "gen": {
+    "0": {
+      "lead": "아담",
+      "target": "하와",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "hide",
+          "actor": "아담",
+          "duration": 1
+        },
+        {
+          "action": "hide",
+          "actor": "하와",
+          "duration": 1.2
+        },
+        {
+          "action": "look",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "아담",
+          "duration": 1.8
+        },
+        {
+          "action": "point",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "하와",
+          "duration": 1.2
+        }
+      ]
+    },
+    "1": {
+      "lead": "가인",
+      "target": "아벨",
+      "mode": "reconstruction",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "place",
+          "actor": "가인",
+          "duration": 1
+        },
+        {
+          "action": "kneel",
+          "actor": "아벨",
+          "duration": 1.2
+        },
+        {
+          "action": "look",
+          "actor": "가인",
+          "duration": 1.5
+        },
+        {
+          "action": "place",
+          "actor": "아벨",
+          "duration": 1.8
+        },
+        {
+          "action": "lower",
+          "actor": "가인",
+          "duration": 1.5
+        },
+        {
+          "action": "wait",
+          "actor": "아벨",
+          "duration": 1.2
+        }
+      ]
+    },
+    "2": {
+      "lead": "가인",
+      "target": "라멕",
+      "mode": "illustration",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "hammer",
+          "actor": "가인",
+          "duration": 1
+        },
+        {
+          "action": "gather",
+          "actor": "가인",
+          "duration": 1.2
+        },
+        {
+          "action": "strum",
+          "actor": "라멕",
+          "duration": 1.5
+        },
+        {
+          "action": "hammer",
+          "actor": "라멕",
+          "duration": 1.8
+        },
+        {
+          "action": "turn",
+          "actor": "라멕",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "라멕",
+          "duration": 1.2
+        }
+      ]
+    },
+    "3": {
+      "lead": "노아",
+      "target": null,
+      "mode": "illustration",
+      "effect": "water",
+      "beats": [
+        {
+          "action": "brace",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "kneel",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
+    },
+    "4": {
+      "lead": "노아",
+      "target": null,
+      "mode": "illustration",
+      "effect": "water",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "wait",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "inspect",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
+    },
+    "5": {
+      "lead": "노아",
+      "target": null,
+      "mode": "reconstruction",
+      "effect": "water",
+      "beats": [
+        {
+          "action": "open",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "release",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "wait",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "reach",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "receive",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
+    },
+    "6": {
+      "lead": "노아",
+      "target": null,
+      "mode": "reconstruction",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "place",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "kneel",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "stand",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
+    },
+    "7": {
+      "lead": "노아",
+      "target": null,
+      "mode": "reconstruction",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "signal",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "extend",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
+    },
     "8": {
       "mode": "reconstruction",
       "lead": "야벳",
@@ -1263,6 +1567,44 @@
         {
           "action": "walk",
           "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
+    "27": {
+      "lead": "아브라함",
+      "target": "에브론",
+      "mode": "reconstruction",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "에브론",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "weigh",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "place",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
           "duration": 1.2
         }
       ]
@@ -1822,10 +2164,49 @@
         }
       ]
     },
-    "52": {
+    "50": {
       "lead": "야곱",
-      "target": "에서",
-      "effect": "none",
+      "target": null,
+      "mode": "reconstruction",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "signal",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "remove-shoe",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "bury",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "kneel",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "51": {
+      "lead": "야곱",
+      "target": null,
+      "mode": "illustration",
+      "effect": "symbol",
       "beats": [
         {
           "action": "listen",
@@ -1833,27 +2214,68 @@
           "duration": 1
         },
         {
-          "action": "walk",
+          "action": "look",
           "actor": "야곱",
           "duration": 1.2
         },
         {
-          "action": "lower",
-          "actor": "이삭",
+          "action": "place",
+          "actor": "야곱",
           "duration": 1.5
         },
         {
-          "action": "mourn",
+          "action": "pour",
           "actor": "야곱",
           "duration": 1.8
         },
         {
-          "action": "mourn",
-          "actor": "에서",
+          "action": "hold",
+          "actor": "야곱",
           "duration": 1.5
         },
         {
           "action": "bow",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "52": {
+      "lead": "르우벤",
+      "target": "야곱",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "family",
+      "emotion": "tense",
+      "prop": "scene-marker",
+      "beats": [
+        {
+          "action": "retreat",
+          "actor": "르우벤",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "look",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "르우벤",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
           "actor": "야곱",
           "duration": 1.2
         }
@@ -2081,6 +2503,44 @@
         }
       ]
     },
+    "65": {
+      "lead": "야곱",
+      "target": "르우벤",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "point",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "르우벤",
+          "duration": 1.2
+        }
+      ]
+    },
     "66": {
       "lead": "청지기",
       "target": "유다",
@@ -2229,8 +2689,81 @@
         }
       ]
     },
+    "70": {
+      "lead": "요셉",
+      "target": "애굽 백성",
+      "mode": "reconstruction",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "애굽 백성",
+          "duration": 1
+        },
+        {
+          "action": "receive",
+          "actor": "요셉",
+          "duration": 1.2
+        },
+        {
+          "action": "weigh",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "receive",
+          "actor": "애굽 백성",
+          "duration": 1.5
+        },
+        {
+          "action": "show",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
+    },
     "75": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "아담",
+      "target": "하와",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "cover",
+          "actor": "하와",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "아담",
+          "duration": 1.2
+        },
+        {
+          "action": "cover",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "하와",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "guard",
+          "actor": "하와",
+          "duration": 1.2
+        }
+      ]
     },
     "76": {
       "mode": "illustration",
@@ -2267,11 +2800,48 @@
           "actor": "에녹",
           "duration": 1.2
         }
-      ]
+      ],
+      "lead": "에녹",
+      "target": "므두셀라"
     },
     "77": {
-      "mode": "reconstruction",
-      "ref": "창세기 6:13-22"
+      "mode": "illustration",
+      "ref": "창세기 6:13-22",
+      "lead": "노아",
+      "target": null,
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "78": {
       "mode": "symbolic",
@@ -2390,15 +2960,15 @@
       "mode": "reconstruction",
       "lead": "요셉",
       "target": "야곱",
-      "effect": "none",
+      "effect": "family",
       "beats": [
         {
-          "action": "walk",
+          "action": "look",
           "actor": "요셉",
           "duration": 1
         },
         {
-          "action": "look",
+          "action": "run",
           "actor": "요셉",
           "duration": 1.2
         },
@@ -2418,8 +2988,8 @@
           "duration": 1.5
         },
         {
-          "action": "speak",
-          "actor": "요셉",
+          "action": "hold",
+          "actor": "야곱",
           "duration": 1.2
         }
       ]
@@ -2508,325 +3078,416 @@
       "beats": [
         {
           "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "light",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "turn",
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
       ]
     },
     "85": {
       "mode": "illustration",
       "lead": "아담",
-      "target": "여자",
+      "target": "하나님",
       "setting": "garden",
       "effect": "symbol",
       "beats": [
         {
-          "action": "listen",
-          "duration": 1,
-          "actor": "아담"
+          "action": "mold",
+          "actor": "하나님",
+          "duration": 1
         },
         {
-          "action": "walk",
-          "duration": 1.2,
-          "actor": "아담"
-        },
-        {
-          "action": "inspect",
-          "duration": 1.5,
-          "actor": "아담"
-        },
-        {
-          "action": "sleep",
-          "duration": 1.8,
-          "actor": "아담"
+          "action": "pour",
+          "actor": "하나님",
+          "duration": 1.2
         },
         {
           "action": "rise",
-          "duration": 1.5,
-          "actor": "아담"
+          "actor": "아담",
+          "duration": 1.5
         },
         {
-          "action": "look",
-          "duration": 1.2,
-          "actor": "아담"
+          "action": "inspect",
+          "actor": "아담",
+          "duration": 1.8
+        },
+        {
+          "action": "sleep",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "reach",
+          "actor": "하나님",
+          "duration": 1.2
         }
       ]
     },
     "86": {
-      "mode": "illustration"
+      "mode": "reconstruction",
+      "lead": "바벨 건축자들",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "바벨 건축자들",
+          "duration": 1
+        },
+        {
+          "action": "lift",
+          "actor": "바벨 건축자들",
+          "duration": 1.2
+        },
+        {
+          "action": "place",
+          "actor": "바벨 건축자들",
+          "duration": 1.5
+        },
+        {
+          "action": "hammer",
+          "actor": "바벨 건축자들",
+          "duration": 1.8
+        },
+        {
+          "action": "lift",
+          "actor": "바벨 건축자들",
+          "duration": 1.5
+        },
+        {
+          "action": "brace",
+          "actor": "바벨 건축자들",
+          "duration": 1.2
+        }
+      ]
     },
     "87": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "하나님",
+      "target": "바벨 건축자들",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "바벨 건축자들",
+          "duration": 1.5
+        },
+        {
+          "action": "startle",
+          "actor": "바벨 건축자들",
+          "duration": 1.8
+        },
+        {
+          "action": "turn",
+          "actor": "바벨 건축자들",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "바벨 건축자들",
+          "duration": 1.2
+        }
+      ]
     },
     "88": {
       "mode": "illustration",
       "beats": [
         {
           "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "extend",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "하나님",
+          "duration": 1.8
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": null,
+      "effect": "symbol"
     },
     "89": {
       "mode": "illustration",
       "beats": [
         {
-          "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "light",
+          "actor": "하나님",
+          "duration": 1.8
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": null,
+      "effect": "symbol"
     },
     "90": {
       "mode": "illustration",
       "beats": [
         {
-          "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
         },
         {
-          "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "lift",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "light",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "turn",
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": null,
+      "effect": "light"
     },
     "91": {
       "mode": "illustration",
       "beats": [
         {
-          "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "extend",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "bless",
+          "actor": "하나님",
+          "duration": 1.8
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": null,
+      "effect": "water"
     },
     "92": {
       "mode": "illustration",
       "beats": [
         {
-          "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "bless",
+          "actor": "하나님",
+          "duration": 1.8
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "사람",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "사람",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": "사람",
+      "effect": "family"
     },
     "93": {
       "mode": "illustration",
       "beats": [
         {
           "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1
         },
         {
           "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
+          "action": "bless",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "lower",
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": null,
+      "effect": "symbol"
     },
     "94": {
       "mode": "illustration",
       "beats": [
         {
-          "action": "stand",
-          "duration": 1,
-          "actor": "하나님"
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
         },
         {
-          "action": "look",
-          "duration": 1.2,
-          "actor": "하나님"
+          "action": "signal",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "pour",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "sway",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "turn",
+          "actor": "하나님",
+          "duration": 1.5
         },
         {
           "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "look",
-          "duration": 1.8,
-          "actor": "하나님"
-        },
-        {
-          "action": "hold",
-          "duration": 1.5,
-          "actor": "하나님"
-        },
-        {
-          "action": "stand",
-          "duration": 1.2,
-          "actor": "하나님"
+          "actor": "하나님",
+          "duration": 1.2
         }
-      ]
+      ],
+      "lead": "하나님",
+      "target": "아담",
+      "effect": "water"
     },
     "95": {
       "mode": "illustration",
@@ -2870,37 +3531,422 @@
       "mode": "illustration"
     },
     "97": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "가인",
+      "target": "아벨",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "가인",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "아벨",
+          "duration": 1.2
+        },
+        {
+          "action": "strike",
+          "actor": "가인",
+          "duration": 1.5
+        },
+        {
+          "action": "fall",
+          "actor": "아벨",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "가인",
+          "duration": 1.5
+        },
+        {
+          "action": "retreat",
+          "actor": "가인",
+          "duration": 1.2
+        }
+      ]
     },
     "98": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "하와",
+      "target": "아담",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "cradle",
+          "actor": "하와",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "아담",
+          "duration": 1.2
+        },
+        {
+          "action": "hold",
+          "actor": "하와",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "하와",
+          "duration": 1.8
+        },
+        {
+          "action": "listen",
+          "actor": "아담",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "하와",
+          "duration": 1.2
+        }
+      ]
     },
     "99": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "아담",
+      "target": "셋",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "아담",
+          "duration": 1
+        },
+        {
+          "action": "cradle",
+          "actor": "아담",
+          "duration": 1.2
+        },
+        {
+          "action": "bless",
+          "actor": "셋",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "에노스",
+          "duration": 1.8
+        },
+        {
+          "action": "point",
+          "actor": "야렛",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "아담",
+          "duration": 1.2
+        }
+      ]
     },
     "100": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "므두셀라",
+      "target": "라멕",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "므두셀라",
+          "duration": 1
+        },
+        {
+          "action": "cradle",
+          "actor": "므두셀라",
+          "duration": 1.2
+        },
+        {
+          "action": "turn",
+          "actor": "라멕",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "라멕",
+          "duration": 1.8
+        },
+        {
+          "action": "bow",
+          "actor": "므두셀라",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "라멕",
+          "duration": 1.2
+        }
+      ]
     },
     "101": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "라멕",
+      "target": "노아",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "cradle",
+          "actor": "라멕",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "라멕",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "라멕",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "bless",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "102": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "하나님",
+      "target": null,
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "hold",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "하나님",
+          "duration": 1.2
+        }
+      ]
     },
     "103": {
-      "mode": "illustration"
+      "mode": "reconstruction",
+      "lead": "노아",
+      "target": "셈",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "count",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "hammer",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "carry",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "104": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "노아",
+      "target": "셈",
+      "effect": "water",
+      "beats": [
+        {
+          "action": "signal",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "gather",
+          "actor": "셈",
+          "duration": 1.2
+        },
+        {
+          "action": "carry",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "셈",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "105": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "노아",
+      "target": null,
+      "effect": "journey",
+      "beats": [
+        {
+          "action": "open",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "signal",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "106": {
-      "mode": "reconstruction"
+      "mode": "illustration",
+      "lead": "노아",
+      "target": "셈",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "turn",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "셈",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "함",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "야벳",
+          "duration": 1.2
+        }
+      ]
     },
     "107": {
-      "mode": "reconstruction"
+      "mode": "illustration",
+      "lead": "노아",
+      "target": "가나안",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "rise",
+          "actor": "노아",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "노아",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "point",
+          "actor": "노아",
+          "duration": 1.8
+        },
+        {
+          "action": "lower",
+          "actor": "노아",
+          "duration": 1.5
+        },
+        {
+          "action": "lie",
+          "actor": "노아",
+          "duration": 1.2
+        }
+      ]
     },
     "108": {
       "mode": "reconstruction",
@@ -3082,13 +4128,118 @@
       ]
     },
     "121": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "target": "유다",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "kneel",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "pray",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "gather",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "load",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
     },
     "122": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "셈",
+      "target": "함",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "셈",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "셈",
+          "duration": 1.2
+        },
+        {
+          "action": "turn",
+          "actor": "함",
+          "duration": 1.5
+        },
+        {
+          "action": "show",
+          "actor": "야벳",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "셈",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "함",
+          "duration": 1.2
+        }
+      ]
     },
     "123": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "셈",
+      "target": "데라",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "cradle",
+          "actor": "셈",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "데라",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "롯",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "셈",
+          "duration": 1.5
+        },
+        {
+          "action": "point",
+          "actor": "데라",
+          "duration": 1.2
+        }
+      ]
     },
     "124": {
       "mode": "reconstruction"
@@ -3255,7 +4406,42 @@
       ]
     },
     "131": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "lead": "에서",
+      "target": null,
+      "effect": "family",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "에서",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "에서",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "에서",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "에서",
+          "duration": 1.8
+        },
+        {
+          "action": "show",
+          "actor": "에서",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "에서",
+          "duration": 1.2
+        }
+      ]
     },
     "132": {
       "mode": "reconstruction",
@@ -3567,15 +4753,15 @@
     "146": {
       "lead": "야곱",
       "target": "라헬",
-      "effect": "none",
+      "effect": "symbol",
       "beats": [
         {
-          "action": "lower",
+          "action": "brace",
           "actor": "라헬",
           "duration": 1
         },
         {
-          "action": "speak",
+          "action": "reach",
           "actor": "라헬",
           "duration": 1.2
         },
@@ -3599,33 +4785,34 @@
           "actor": "야곱",
           "duration": 1.2
         }
-      ]
+      ],
+      "mode": "illustration"
     },
     "147": {
       "mode": "reconstruction",
       "lead": "요셉",
       "target": "르우벤",
       "setting": "egypt",
-      "effect": "symbol",
+      "effect": "speech",
       "beats": [
         {
-          "action": "look",
-          "actor": "요셉",
+          "action": "bow",
+          "actor": "르우벤",
           "duration": 1
         },
         {
-          "action": "point",
+          "action": "look",
           "actor": "요셉",
           "duration": 1.2
         },
         {
-          "action": "listen",
-          "actor": "르우벤",
+          "action": "speak",
+          "actor": "요셉",
           "duration": 1.5
         },
         {
-          "action": "turn",
-          "actor": "요셉",
+          "action": "listen",
+          "actor": "르우벤",
           "duration": 1.8
         },
         {
@@ -3643,20 +4830,20 @@
     "148": {
       "lead": "르우벤",
       "target": "야곱",
-      "effect": "none",
+      "effect": "speech",
       "beats": [
         {
-          "action": "carry",
+          "action": "open",
           "actor": "르우벤",
           "duration": 1
         },
         {
-          "action": "open",
+          "action": "look",
           "actor": "르우벤",
           "duration": 1.2
         },
         {
-          "action": "startle",
+          "action": "gather",
           "actor": "르우벤",
           "duration": 1.5
         },
@@ -3667,12 +4854,51 @@
         },
         {
           "action": "listen",
-          "actor": "르우벤",
+          "actor": "야곱",
           "duration": 1.5
         },
         {
           "action": "lower",
-          "actor": "르우벤",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ],
+      "mode": "reconstruction"
+    },
+    "149": {
+      "lead": "유다",
+      "target": "야곱",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "pledge",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "유다",
           "duration": 1.2
         }
       ]
@@ -3682,35 +4908,35 @@
       "lead": "요셉",
       "target": "베냐민",
       "setting": "meal",
-      "effect": "none",
+      "effect": "family",
       "beats": [
         {
-          "action": "signal",
-          "actor": "요셉",
+          "action": "bow",
+          "actor": "유다",
           "duration": 1
         },
         {
-          "action": "look",
+          "action": "speak",
           "actor": "요셉",
           "duration": 1.2
         },
         {
-          "action": "receive",
+          "action": "look",
           "actor": "베냐민",
           "duration": 1.5
         },
         {
-          "action": "turn",
+          "action": "mourn",
           "actor": "요셉",
           "duration": 1.8
         },
         {
-          "action": "walk",
+          "action": "turn",
           "actor": "요셉",
           "duration": 1.5
         },
         {
-          "action": "place",
+          "action": "sit",
           "actor": "요셉",
           "duration": 1.2
         }
@@ -3750,6 +4976,196 @@
         },
         {
           "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "152": {
+      "lead": "요셉",
+      "target": "바로",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "signal",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "gather",
+          "actor": "요셉의 형제 다섯",
+          "duration": 1.2
+        },
+        {
+          "action": "bow",
+          "actor": "요셉의 형제 다섯",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "바로",
+          "duration": 1.8
+        },
+        {
+          "action": "bless",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "153": {
+      "lead": "요셉",
+      "target": "애굽 백성",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "extend",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "receive",
+          "actor": "애굽 백성",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "애굽 백성",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
+    },
+    "154": {
+      "lead": "야곱",
+      "target": "요셉",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "pledge",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "bow",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "155": {
+      "lead": "야곱",
+      "target": "르우벤",
+      "mode": "reconstruction",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "유다",
+          "duration": 1.2
+        }
+      ]
+    },
+    "156": {
+      "lead": "야곱",
+      "target": "유다",
+      "mode": "illustration",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "point",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "look",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "lie",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
           "actor": "야곱",
           "duration": 1.2
         }
@@ -3830,11 +5246,119 @@
         }
       ]
     },
+    "160": {
+      "lead": "야곱",
+      "target": null,
+      "mode": "illustration",
+      "effect": "family",
+      "beats": [
+        {
+          "action": "show",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
     "161": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "아브라함",
+      "target": "에브론",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "place",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "carry",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "mourn",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
     },
     "162": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "아브라함",
+      "target": "헷 족속",
+      "effect": "speech",
+      "beats": [
+        {
+          "action": "mourn",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "stand",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "listen",
+          "actor": "헷 족속",
+          "duration": 1.5
+        },
+        {
+          "action": "point",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
     },
     "163": {
       "mode": "reconstruction"
@@ -3993,6 +5517,47 @@
         {
           "action": "walk",
           "actor": "라반",
+          "duration": 1.2
+        }
+      ]
+    },
+    "170": {
+      "lead": "야곱",
+      "target": "이삭",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "family",
+      "emotion": "sad",
+      "prop": "tomb",
+      "beats": [
+        {
+          "action": "mourn",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "walk",
+          "actor": "에서",
+          "duration": 1.2
+        },
+        {
+          "action": "stand",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "bury",
+          "actor": "에서",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "야곱",
           "duration": 1.2
         }
       ]

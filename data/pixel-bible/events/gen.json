@@ -28,7 +28,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"hide","lead":"아담","target":"하와","mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"snake","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"startle","duration":1.2,"actor":"아담"},{"action":"retreat","duration":1.5,"actor":"아담"},{"action":"hide","duration":1.8,"actor":"아담"},{"action":"peek","duration":1.5,"actor":"아담"},{"action":"stand","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"hide","lead":"아담","target":"하와","mode":"reconstruction","setting":"garden","effect":"speech","emotion":"worried","prop":"snake","beats":[{"action":"hide","actor":"아담","duration":1},{"action":"hide","actor":"하와","duration":1.2},{"action":"look","actor":"아담","duration":1.5},{"action":"speak","actor":"아담","duration":1.8},{"action":"point","actor":"아담","duration":1.5},{"action":"lower","actor":"하와","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 3:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-4-0",
@@ -58,7 +58,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"two-offerings","lead":"가인","target":"아벨","mode":"reconstruction","setting":"altar","effect":"two-offerings","emotion":"determined","prop":"fruit","beats":[{"action":"inspect","duration":1,"actor":"가인"},{"action":"gather","duration":1.2,"actor":"가인"},{"action":"lift","duration":1.5,"actor":"가인"},{"action":"place","duration":1.8,"actor":"가인"},{"action":"bow","duration":1.5,"actor":"가인"},{"action":"wait","duration":1.2,"actor":"가인"}],"duration":8.2,"support":{"actor":"아벨","actions":["inspect","gather","lift","place","bow","wait"]},"ref":"창세기 4:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"two-offerings","lead":"가인","target":"아벨","mode":"reconstruction","setting":"altar","effect":"symbol","emotion":"determined","prop":"fruit","beats":[{"action":"place","actor":"가인","duration":1},{"action":"kneel","actor":"아벨","duration":1.2},{"action":"look","actor":"가인","duration":1.5},{"action":"place","actor":"아벨","duration":1.8},{"action":"lower","actor":"가인","duration":1.5},{"action":"wait","actor":"아벨","duration":1.2}],"duration":8.2,"support":{"actor":"아벨","actions":["inspect","gather","lift","place","bow","wait"]},"ref":"창세기 4:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-4-2",
@@ -89,7 +89,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"build","lead":"가인","target":"라멕","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"house","beats":[{"action":"inspect","duration":1,"actor":"가인"},{"action":"gather","duration":1.2,"actor":"가인"},{"action":"lift","duration":1.5,"actor":"가인"},{"action":"place","duration":1.8,"actor":"가인"},{"action":"hammer","duration":1.5,"actor":"가인"},{"action":"inspect","duration":1.2,"actor":"가인"}],"duration":8.2,"support":null,"ref":"창세기 4:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"가인","target":"라멕","mode":"illustration","setting":"courtyard","effect":"family","emotion":"determined","prop":"house","beats":[{"action":"hammer","actor":"가인","duration":1},{"action":"gather","actor":"가인","duration":1.2},{"action":"strum","actor":"라멕","duration":1.5},{"action":"hammer","actor":"라멕","duration":1.8},{"action":"turn","actor":"라멕","duration":1.5},{"action":"speak","actor":"라멕","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 4:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-7-2",
@@ -119,7 +119,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"flood","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"flood","emotion":"worried","prop":"ark-noah","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"startle","duration":1.2,"actor":"노아"},{"action":"brace","duration":1.5,"actor":"노아"},{"action":"brace","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"look","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 7:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"flood","lead":"노아","target":null,"mode":"illustration","setting":"water","effect":"water","emotion":"worried","prop":"ark-noah","beats":[{"action":"brace","actor":"노아","duration":1},{"action":"look","actor":"노아","duration":1.2},{"action":"hold","actor":"노아","duration":1.5},{"action":"turn","actor":"노아","duration":1.8},{"action":"kneel","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 7:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-0",
@@ -146,7 +146,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"recede","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"recede","emotion":"joy","prop":"ark-noah","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"listen","duration":1.2,"actor":"노아"},{"action":"point","duration":1.5,"actor":"노아"},{"action":"look","duration":1.8,"actor":"노아"},{"action":"bow","duration":1.5,"actor":"노아"},{"action":"stand","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"recede","lead":"노아","target":null,"mode":"illustration","setting":"water","effect":"water","emotion":"joy","prop":"ark-noah","beats":[{"action":"look","actor":"노아","duration":1},{"action":"wait","actor":"노아","duration":1.2},{"action":"inspect","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.8},{"action":"hold","actor":"노아","duration":1.5},{"action":"stand","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 8:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-1",
@@ -175,7 +175,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"bird-release","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"bird","emotion":"joy","prop":"ark-noah","beats":[{"action":"grasp","duration":1,"actor":"노아"},{"action":"lift","duration":1.2,"actor":"노아"},{"action":"extend","duration":1.5,"actor":"노아"},{"action":"release","duration":1.8,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"bird-release","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"water","emotion":"joy","prop":"ark-noah","beats":[{"action":"open","actor":"노아","duration":1},{"action":"release","actor":"노아","duration":1.2},{"action":"wait","actor":"노아","duration":1.5},{"action":"reach","actor":"노아","duration":1.8},{"action":"receive","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 8:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-8-3",
@@ -200,7 +200,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"sacrifice","lead":"노아","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"노아"},{"action":"carry","duration":1.2,"actor":"노아"},{"action":"place","duration":1.5,"actor":"노아"},{"action":"kneel","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"sacrifice","lead":"노아","target":null,"mode":"reconstruction","setting":"altar","effect":"symbol","emotion":"determined","prop":"altar","beats":[{"action":"gather","actor":"노아","duration":1},{"action":"place","actor":"노아","duration":1.2},{"action":"kneel","actor":"노아","duration":1.5},{"action":"pray","actor":"노아","duration":1.8},{"action":"stand","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 8:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-9-1",
@@ -232,7 +232,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"rainbow","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"rainbow","emotion":"gentle","prop":"rainbow","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"point","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"kneel","duration":1.8,"actor":"노아"},{"action":"pray","duration":1.5,"actor":"노아"},{"action":"stand","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"rainbow","lead":"노아","target":null,"mode":"reconstruction","setting":"water","effect":"symbol","emotion":"gentle","prop":"rainbow","beats":[{"action":"stand","actor":"노아","duration":1},{"action":"look","actor":"노아","duration":1.2},{"action":"signal","actor":"노아","duration":1.5},{"action":"extend","actor":"노아","duration":1.8},{"action":"hold","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 9:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-9-2",
@@ -811,7 +811,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"weigh","lead":"아브라함","target":"에브론","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"아브라함"},{"action":"grasp","duration":1.2,"actor":"아브라함"},{"action":"weigh","duration":1.5,"actor":"아브라함"},{"action":"place","duration":1.8,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"receive","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"weigh","lead":"아브라함","target":"에브론","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"silver","beats":[{"action":"bow","actor":"아브라함","duration":1},{"action":"speak","actor":"에브론","duration":1.2},{"action":"listen","actor":"아브라함","duration":1.5},{"action":"weigh","actor":"아브라함","duration":1.8},{"action":"place","actor":"아브라함","duration":1.5},{"action":"bow","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 23:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-24-0",
@@ -1573,7 +1573,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"bury-idols","lead":"야곱","target":null,"mode":"reconstruction","setting":"garden","effect":"bury","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"bend","duration":1.8,"actor":"야곱"},{"action":"bury","duration":1.5,"actor":"야곱"},{"action":"rise","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"bury-idols","lead":"야곱","target":null,"mode":"reconstruction","setting":"garden","effect":"symbol","emotion":"determined","prop":"altar","beats":[{"action":"signal","actor":"야곱","duration":1},{"action":"gather","actor":"야곱","duration":1.2},{"action":"remove-shoe","actor":"야곱","duration":1.5},{"action":"bury","actor":"야곱","duration":1.8},{"action":"walk","actor":"야곱","duration":1.5},{"action":"kneel","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-1",
@@ -1602,39 +1602,35 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"anoint","lead":"야곱","target":null,"mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"olive-oil","beats":[{"action":"inspect","duration":1,"actor":"야곱"},{"action":"grasp","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pour","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 35:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"anoint","lead":"야곱","target":null,"mode":"illustration","setting":"court","effect":"symbol","emotion":"determined","prop":"olive-oil","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"look","actor":"야곱","duration":1.2},{"action":"place","actor":"야곱","duration":1.5},{"action":"pour","actor":"야곱","duration":1.8},{"action":"hold","actor":"야곱","duration":1.5},{"action":"bow","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-3",
       "code": "gen",
       "chapter": 35,
-      "title": "열두 아들과 이삭의 죽음",
+      "title": "르우벤의 잘못과 열두 아들의 계보",
       "actors": [
-        "야곱",
-        "에서",
-        "이삭"
+        "르우벤",
+        "야곱"
       ],
-      "object": "tomb",
-      "ref": "창세기 35:22-29",
+      "object": "scene-marker",
+      "ref": "창세기 35:22-26",
       "verseNumbers": [
         22,
         23,
         24,
         25,
-        26,
-        27,
-        28,
-        29
+        26
       ],
       "actions": {},
       "lines": [
-        "해설: 르우벤이 아버지의 첩 빌하와 동침하는 죄를 지어요. 열두 아들의 이름이 정리되고, 이삭이 백팔십 세에 죽어 에서와 야곱이 함께 장사해요."
+        "해설: 르우벤의 잘못이 기록되고, 야곱의 열두 아들이 정리돼요. 민감한 행위는 재현하지 않고 야곱이 소식을 듣고 가족을 바라보는 장면으로 다뤄요."
       ],
-      "study": "르우벤이 아버지의 첩 빌하와 동침하는 죄를 지어요. 열두 아들의 이름이 정리되고, 이삭이 백팔십 세에 죽어 에서와 야곱이 함께 장사해요.",
+      "study": "르우벤의 잘못이 기록되고, 야곱의 열두 아들이 정리돼요. 민감한 행위는 재현하지 않고 야곱이 소식을 듣고 가족을 바라보는 장면으로 다뤄요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"tomb","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"walk","actor":"야곱","duration":1.2},{"action":"lower","actor":"이삭","duration":1.5},{"action":"mourn","actor":"야곱","duration":1.8},{"action":"mourn","actor":"에서","duration":1.5},{"action":"bow","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:22-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "objectNote": "본문을 요약하는 안내 표지예요. 성경에 없는 소품이나 민감한 행위를 실제 물건·행동으로 만들지 않아요.",
+      "animation": {"version":2,"motif":"mourn","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"family","emotion":"tense","prop":"scene-marker","beats":[{"action":"retreat","actor":"르우벤","duration":1},{"action":"turn","actor":"야곱","duration":1.2},{"action":"look","actor":"야곱","duration":1.5},{"action":"hold","actor":"르우벤","duration":1.8},{"action":"gather","actor":"르우벤","duration":1.5},{"action":"listen","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:22-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-0",
@@ -2024,6 +2020,8 @@
       "chapter": 42,
       "title": "애굽으로 간 형들",
       "actors": [
+        "야곱",
+        "르우벤",
         "요셉"
       ],
       "object": "grain",
@@ -2044,7 +2042,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"trade","lead":"요셉","target":null,"mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"grasp","duration":1.2,"actor":"요셉"},{"action":"weigh","duration":1.5,"actor":"요셉"},{"action":"place","duration":1.8,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 42:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"trade","lead":"야곱","target":"르우벤","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"grain","beats":[{"action":"look","actor":"야곱","duration":1},{"action":"speak","actor":"야곱","duration":1.2},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"turn","actor":"야곱","duration":1.8},{"action":"point","actor":"야곱","duration":1.5},{"action":"lower","actor":"르우벤","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-43-1",
@@ -2189,7 +2187,8 @@
       "chapter": 47,
       "title": "흉년의 정책",
       "actors": [
-        "요셉"
+        "요셉",
+        "애굽 백성"
       ],
       "object": "grain",
       "ref": "창세기 47:13-22",
@@ -2213,7 +2212,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"distribute","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"extend","duration":1.8,"actor":"요셉"},{"action":"release","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"distribute","lead":"요셉","target":"애굽 백성","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"grain","beats":[{"action":"gather","actor":"애굽 백성","duration":1},{"action":"receive","actor":"요셉","duration":1.2},{"action":"weigh","actor":"요셉","duration":1.5},{"action":"speak","actor":"요셉","duration":1.8},{"action":"receive","actor":"애굽 백성","duration":1.5},{"action":"show","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 47:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-49-1",
@@ -2357,7 +2356,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"depart","lead":"아담","target":"하와","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"gather","duration":1.2,"actor":"아담"},{"action":"carry","duration":1.5,"actor":"아담"},{"action":"walk","duration":1.8,"actor":"아담"},{"action":"walk","duration":1.5,"actor":"아담"},{"action":"look","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 3:20-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"depart","lead":"아담","target":"하와","mode":"illustration","setting":"road","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"cover","actor":"하와","duration":1},{"action":"look","actor":"아담","duration":1.2},{"action":"cover","actor":"아담","duration":1.5},{"action":"hold","actor":"하와","duration":1.8},{"action":"walk","actor":"아담","duration":1.5},{"action":"guard","actor":"하와","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 3:20-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-5-0",
@@ -2419,7 +2418,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"build","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"lift","duration":1.5,"actor":"노아"},{"action":"place","duration":1.8,"actor":"노아"},{"action":"hammer","duration":1.5,"actor":"노아"},{"action":"inspect","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"노아","target":null,"mode":"illustration","setting":"courtyard","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","actor":"노아","duration":1},{"action":"hold","actor":"노아","duration":1.2},{"action":"walk","actor":"노아","duration":1.5},{"action":"look","actor":"노아","duration":1.8},{"action":"hold","actor":"노아","duration":1.5},{"action":"stand","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 6:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-15-0",
@@ -2567,7 +2566,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","actor":"요셉","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"reach","actor":"요셉","duration":1.5},{"action":"hold","actor":"요셉","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"speak","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 46:28-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","actor":"요셉","duration":1},{"action":"run","actor":"요셉","duration":1.2},{"action":"reach","actor":"요셉","duration":1.5},{"action":"hold","actor":"요셉","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"hold","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 46:28-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-48-0",
@@ -2680,7 +2679,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","actor":"하나님","duration":1},{"action":"look","actor":"하나님","duration":1.2},{"action":"signal","actor":"하나님","duration":1.5},{"action":"light","actor":"하나님","duration":1.8},{"action":"turn","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-0",
@@ -2723,7 +2722,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"아담","target":"여자","mode":"illustration","setting":"garden","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아담"},{"action":"walk","duration":1.2,"actor":"아담"},{"action":"inspect","duration":1.5,"actor":"아담"},{"action":"sleep","duration":1.8,"actor":"아담"},{"action":"rise","duration":1.5,"actor":"아담"},{"action":"look","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"아담","target":"하나님","mode":"illustration","setting":"garden","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"mold","actor":"하나님","duration":1},{"action":"pour","actor":"하나님","duration":1.2},{"action":"rise","actor":"아담","duration":1.5},{"action":"inspect","actor":"아담","duration":1.8},{"action":"sleep","actor":"아담","duration":1.5},{"action":"reach","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-11-0",
@@ -2749,7 +2748,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"build","lead":"바벨 건축자들","target":null,"mode":"illustration","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"바벨 건축자들"},{"action":"gather","duration":1.2,"actor":"바벨 건축자들"},{"action":"lift","duration":1.5,"actor":"바벨 건축자들"},{"action":"place","duration":1.8,"actor":"바벨 건축자들"},{"action":"hammer","duration":1.5,"actor":"바벨 건축자들"},{"action":"inspect","duration":1.2,"actor":"바벨 건축자들"}],"duration":8.2,"support":null,"ref":"창세기 11:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"바벨 건축자들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"scene-marker","beats":[{"action":"gather","actor":"바벨 건축자들","duration":1},{"action":"lift","actor":"바벨 건축자들","duration":1.2},{"action":"place","actor":"바벨 건축자들","duration":1.5},{"action":"hammer","actor":"바벨 건축자들","duration":1.8},{"action":"lift","actor":"바벨 건축자들","duration":1.5},{"action":"brace","actor":"바벨 건축자들","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 11:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-11-1",
@@ -2777,7 +2776,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"divide","lead":"하나님","target":"바벨 건축자들","mode":"illustration","setting":"water","effect":"divide","emotion":"surprised","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"하나님"},{"action":"lift","duration":1.2,"actor":"하나님"},{"action":"windup","duration":1.5,"actor":"하나님"},{"action":"strike","duration":1.8,"actor":"하나님"},{"action":"recoil","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 11:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"divide","lead":"하나님","target":"바벨 건축자들","mode":"illustration","setting":"water","effect":"symbol","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"listen","actor":"바벨 건축자들","duration":1.5},{"action":"startle","actor":"바벨 건축자들","duration":1.8},{"action":"turn","actor":"바벨 건축자들","duration":1.5},{"action":"walk","actor":"바벨 건축자들","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 11:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-1",
@@ -2802,7 +2801,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"extend","actor":"하나님","duration":1.5},{"action":"turn","actor":"하나님","duration":1.8},{"action":"look","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-2",
@@ -2829,7 +2828,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"gather","actor":"하나님","duration":1.5},{"action":"light","actor":"하나님","duration":1.8},{"action":"look","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-3",
@@ -2857,7 +2856,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"lift","actor":"하나님","duration":1.5},{"action":"light","actor":"하나님","duration":1.8},{"action":"turn","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-4",
@@ -2883,7 +2882,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"water","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"extend","actor":"하나님","duration":1.5},{"action":"bless","actor":"하나님","duration":1.8},{"action":"look","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-5",
@@ -2914,7 +2913,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":"사람","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:24-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":"사람","mode":"illustration","setting":"vision","effect":"family","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"gather","actor":"하나님","duration":1.5},{"action":"bless","actor":"하나님","duration":1.8},{"action":"look","actor":"사람","duration":1.5},{"action":"hold","actor":"사람","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 1:24-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-1",
@@ -2939,7 +2938,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","actor":"하나님","duration":1},{"action":"look","actor":"하나님","duration":1.2},{"action":"hold","actor":"하나님","duration":1.5},{"action":"bless","actor":"하나님","duration":1.8},{"action":"lower","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-2",
@@ -2964,7 +2963,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:4-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":"아담","mode":"illustration","setting":"vision","effect":"water","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"signal","actor":"하나님","duration":1.2},{"action":"pour","actor":"하나님","duration":1.5},{"action":"sway","actor":"하나님","duration":1.8},{"action":"turn","actor":"하나님","duration":1.5},{"action":"hold","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 2:4-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-3-1",
@@ -3057,7 +3056,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"가인","target":"아벨","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"가인"},{"action":"turn","duration":1.2,"actor":"가인"},{"action":"speak","duration":1.5,"actor":"가인"},{"action":"point","duration":1.8,"actor":"가인"},{"action":"listen","duration":1.5,"actor":"가인"},{"action":"lower","duration":1.2,"actor":"가인"}],"duration":8.2,"support":null,"ref":"창세기 4:8-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"judgment","lead":"가인","target":"아벨","mode":"illustration","setting":"courtyard","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"walk","actor":"가인","duration":1},{"action":"turn","actor":"아벨","duration":1.2},{"action":"strike","actor":"가인","duration":1.5},{"action":"fall","actor":"아벨","duration":1.8},{"action":"look","actor":"가인","duration":1.5},{"action":"retreat","actor":"가인","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 4:8-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-4-1",
@@ -3083,7 +3082,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"birth","lead":"하와","target":"아담","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하와"},{"action":"listen","duration":1.2,"actor":"하와"},{"action":"cradle","duration":1.5,"actor":"하와"},{"action":"smile","duration":1.8,"actor":"하와"},{"action":"bless","duration":1.5,"actor":"하와"},{"action":"bow","duration":1.2,"actor":"하와"}],"duration":8.2,"support":null,"ref":"창세기 4:25-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"birth","lead":"하와","target":"아담","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"cradle","actor":"하와","duration":1},{"action":"look","actor":"아담","duration":1.2},{"action":"hold","actor":"하와","duration":1.5},{"action":"speak","actor":"하와","duration":1.8},{"action":"listen","actor":"아담","duration":1.5},{"action":"look","actor":"하와","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 4:25-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-5-1",
@@ -3128,7 +3127,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"아담","target":"셋","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"아담"},{"action":"listen","duration":1.2,"actor":"아담"},{"action":"cradle","duration":1.5,"actor":"아담"},{"action":"smile","duration":1.8,"actor":"아담"},{"action":"bless","duration":1.5,"actor":"아담"},{"action":"bow","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 5:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"아담","target":"셋","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","actor":"아담","duration":1},{"action":"cradle","actor":"아담","duration":1.2},{"action":"bless","actor":"셋","duration":1.5},{"action":"turn","actor":"에노스","duration":1.8},{"action":"point","actor":"야렛","duration":1.5},{"action":"hold","actor":"아담","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 5:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-5-2",
@@ -3154,7 +3153,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"므두셀라","target":"라멕","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"므두셀라"},{"action":"listen","duration":1.2,"actor":"므두셀라"},{"action":"cradle","duration":1.5,"actor":"므두셀라"},{"action":"smile","duration":1.8,"actor":"므두셀라"},{"action":"bless","duration":1.5,"actor":"므두셀라"},{"action":"bow","duration":1.2,"actor":"므두셀라"}],"duration":8.2,"support":null,"ref":"창세기 5:25-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"므두셀라","target":"라멕","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","actor":"므두셀라","duration":1},{"action":"cradle","actor":"므두셀라","duration":1.2},{"action":"turn","actor":"라멕","duration":1.5},{"action":"hold","actor":"라멕","duration":1.8},{"action":"bow","actor":"므두셀라","duration":1.5},{"action":"look","actor":"라멕","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 5:25-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-5-3",
@@ -3184,7 +3183,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"birth","lead":"라멕","target":"노아","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"라멕"},{"action":"listen","duration":1.2,"actor":"라멕"},{"action":"cradle","duration":1.5,"actor":"라멕"},{"action":"smile","duration":1.8,"actor":"라멕"},{"action":"bless","duration":1.5,"actor":"라멕"},{"action":"bow","duration":1.2,"actor":"라멕"}],"duration":8.2,"support":null,"ref":"창세기 5:28-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"birth","lead":"라멕","target":"노아","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"cradle","actor":"라멕","duration":1},{"action":"look","actor":"노아","duration":1.2},{"action":"speak","actor":"라멕","duration":1.5},{"action":"hold","actor":"라멕","duration":1.8},{"action":"gather","actor":"노아","duration":1.5},{"action":"bless","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 5:28-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-6-1",
@@ -3210,7 +3209,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 6:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"하나님","duration":1},{"action":"turn","actor":"하나님","duration":1.2},{"action":"hold","actor":"하나님","duration":1.5},{"action":"look","actor":"하나님","duration":1.8},{"action":"hold","actor":"하나님","duration":1.5},{"action":"stand","actor":"하나님","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 6:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-6-2",
@@ -3243,7 +3242,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"셈","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:5-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"셈","mode":"reconstruction","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"노아","duration":1},{"action":"signal","actor":"노아","duration":1.2},{"action":"gather","actor":"노아","duration":1.5},{"action":"count","actor":"노아","duration":1.8},{"action":"hammer","actor":"노아","duration":1.5},{"action":"carry","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 6:5-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-7-0",
@@ -3284,7 +3283,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"노아","target":"셈","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"노아"},{"action":"bend","duration":1.2,"actor":"노아"},{"action":"grasp","duration":1.5,"actor":"노아"},{"action":"lift","duration":1.8,"actor":"노아"},{"action":"bundle","duration":1.5,"actor":"노아"},{"action":"carry","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 7:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"gather","lead":"노아","target":"셈","mode":"reconstruction","setting":"pasture","effect":"water","emotion":"gentle","prop":"scene-marker","beats":[{"action":"signal","actor":"노아","duration":1},{"action":"gather","actor":"셈","duration":1.2},{"action":"carry","actor":"노아","duration":1.5},{"action":"walk","actor":"노아","duration":1.8},{"action":"walk","actor":"셈","duration":1.5},{"action":"hold","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 7:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-8-0",
@@ -3313,7 +3312,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"depart","lead":"노아","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"carry","duration":1.5,"actor":"노아"},{"action":"walk","duration":1.8,"actor":"노아"},{"action":"walk","duration":1.5,"actor":"노아"},{"action":"look","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:13-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"depart","lead":"노아","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"open","actor":"노아","duration":1},{"action":"look","actor":"노아","duration":1.2},{"action":"signal","actor":"노아","duration":1.5},{"action":"walk","actor":"노아","duration":1.8},{"action":"gather","actor":"노아","duration":1.5},{"action":"walk","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 8:13-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-9-0",
@@ -3345,7 +3344,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"instruct","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"turn","duration":1.2,"actor":"노아"},{"action":"speak","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"lower","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"instruct","lead":"노아","target":"셈","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"turn","actor":"노아","duration":1},{"action":"speak","actor":"노아","duration":1.2},{"action":"point","actor":"노아","duration":1.5},{"action":"listen","actor":"셈","duration":1.8},{"action":"look","actor":"함","duration":1.5},{"action":"hold","actor":"야벳","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 9:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-9-1",
@@ -3376,7 +3375,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"prophecy","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"lift","duration":1.2,"actor":"노아"},{"action":"speak","duration":1.5,"actor":"노아"},{"action":"sway","duration":1.8,"actor":"노아"},{"action":"lower","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:24-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"prophecy","lead":"노아","target":"가나안","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"surprised","prop":"scene-marker","beats":[{"action":"rise","actor":"노아","duration":1},{"action":"turn","actor":"노아","duration":1.2},{"action":"speak","actor":"노아","duration":1.5},{"action":"point","actor":"노아","duration":1.8},{"action":"lower","actor":"노아","duration":1.5},{"action":"lie","actor":"노아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 9:24-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-33-0",
@@ -3865,7 +3864,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"journey","lead":"야곱","target":"유다","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"야곱","target":"유다","mode":"reconstruction","setting":"road","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"kneel","actor":"야곱","duration":1},{"action":"pray","actor":"야곱","duration":1.2},{"action":"listen","actor":"야곱","duration":1.5},{"action":"gather","actor":"유다","duration":1.8},{"action":"load","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 46:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-10-0",
@@ -3922,7 +3921,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"노아","target":"셈","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"listen","duration":1.2,"actor":"노아"},{"action":"cradle","duration":1.5,"actor":"노아"},{"action":"smile","duration":1.8,"actor":"노아"},{"action":"bless","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 10:1-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"셈","target":"함","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"gather","actor":"셈","duration":1},{"action":"point","actor":"셈","duration":1.2},{"action":"turn","actor":"함","duration":1.5},{"action":"show","actor":"야벳","duration":1.8},{"action":"hold","actor":"셈","duration":1.5},{"action":"look","actor":"함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 10:1-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-11-2",
@@ -3970,7 +3969,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"셈","target":"데라","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"셈"},{"action":"listen","duration":1.2,"actor":"셈"},{"action":"cradle","duration":1.5,"actor":"셈"},{"action":"smile","duration":1.8,"actor":"셈"},{"action":"bless","duration":1.5,"actor":"셈"},{"action":"bow","duration":1.2,"actor":"셈"}],"duration":8.2,"support":null,"ref":"창세기 11:10-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"셈","target":"데라","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"cradle","actor":"셈","duration":1},{"action":"turn","actor":"데라","duration":1.2},{"action":"gather","actor":"아브람","duration":1.5},{"action":"look","actor":"롯","duration":1.8},{"action":"hold","actor":"셈","duration":1.5},{"action":"point","actor":"데라","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 11:10-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-12-0",
@@ -4267,7 +4266,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"에서","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"에서"},{"action":"listen","duration":1.2,"actor":"에서"},{"action":"cradle","duration":1.5,"actor":"에서"},{"action":"smile","duration":1.8,"actor":"에서"},{"action":"bless","duration":1.5,"actor":"에서"},{"action":"bow","duration":1.2,"actor":"에서"}],"duration":8.2,"support":null,"ref":"창세기 36:1-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"에서","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"stand","actor":"에서","duration":1},{"action":"look","actor":"에서","duration":1.2},{"action":"point","actor":"에서","duration":1.5},{"action":"turn","actor":"에서","duration":1.8},{"action":"show","actor":"에서","duration":1.5},{"action":"hold","actor":"에서","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 36:1-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-19-0",
@@ -4772,7 +4771,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"birth","lead":"야곱","target":"라헬","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"lower","actor":"라헬","duration":1},{"action":"speak","actor":"라헬","duration":1.2},{"action":"cradle","actor":"야곱","duration":1.5},{"action":"mourn","actor":"야곱","duration":1.8},{"action":"place","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:16-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"birth","lead":"야곱","target":"라헬","mode":"illustration","setting":"chamber","effect":"symbol","emotion":"gentle","prop":"scene-marker","beats":[{"action":"brace","actor":"라헬","duration":1},{"action":"reach","actor":"라헬","duration":1.2},{"action":"cradle","actor":"야곱","duration":1.5},{"action":"mourn","actor":"야곱","duration":1.8},{"action":"place","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:16-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-42-0",
@@ -4815,7 +4814,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"요셉","target":"르우벤","mode":"reconstruction","setting":"egypt","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"요셉","duration":1},{"action":"point","actor":"요셉","duration":1.2},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"turn","actor":"요셉","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"signal","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"요셉","target":"르우벤","mode":"reconstruction","setting":"egypt","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"bow","actor":"르우벤","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"speak","actor":"요셉","duration":1.5},{"action":"listen","actor":"르우벤","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"signal","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-42-1",
@@ -4852,7 +4851,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"carry","actor":"르우벤","duration":1},{"action":"open","actor":"르우벤","duration":1.2},{"action":"startle","actor":"르우벤","duration":1.5},{"action":"speak","actor":"르우벤","duration":1.8},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"lower","actor":"르우벤","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:26-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"open","actor":"르우벤","duration":1},{"action":"look","actor":"르우벤","duration":1.2},{"action":"gather","actor":"르우벤","duration":1.5},{"action":"speak","actor":"르우벤","duration":1.8},{"action":"listen","actor":"야곱","duration":1.5},{"action":"lower","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:26-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-43-0",
@@ -4891,7 +4890,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"petition","lead":"유다","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"kneel","duration":1.2,"actor":"유다"},{"action":"lift","duration":1.5,"actor":"유다"},{"action":"pray","duration":1.8,"actor":"유다"},{"action":"pray","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 43:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"유다","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"worried","prop":"scene-marker","beats":[{"action":"speak","actor":"유다","duration":1},{"action":"listen","actor":"야곱","duration":1.2},{"action":"pledge","actor":"유다","duration":1.5},{"action":"hold","actor":"야곱","duration":1.8},{"action":"gather","actor":"야곱","duration":1.5},{"action":"walk","actor":"유다","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 43:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-43-1",
@@ -4925,7 +4924,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"요셉","target":"베냐민","mode":"reconstruction","setting":"meal","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"signal","actor":"요셉","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"receive","actor":"베냐민","duration":1.5},{"action":"turn","actor":"요셉","duration":1.8},{"action":"walk","actor":"요셉","duration":1.5},{"action":"place","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 43:26-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"gather","lead":"요셉","target":"베냐민","mode":"reconstruction","setting":"meal","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"bow","actor":"유다","duration":1},{"action":"speak","actor":"요셉","duration":1.2},{"action":"look","actor":"베냐민","duration":1.5},{"action":"mourn","actor":"요셉","duration":1.8},{"action":"turn","actor":"요셉","duration":1.5},{"action":"sit","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 43:26-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-45-1",
@@ -4990,7 +4989,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"journey","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"carry","duration":1.5,"actor":"요셉"},{"action":"walk","duration":1.8,"actor":"요셉"},{"action":"walk","duration":1.5,"actor":"요셉"},{"action":"look","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"요셉","target":"바로","mode":"reconstruction","setting":"road","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"signal","actor":"요셉","duration":1},{"action":"gather","actor":"요셉의 형제 다섯","duration":1.2},{"action":"bow","actor":"요셉의 형제 다섯","duration":1.5},{"action":"speak","actor":"바로","duration":1.8},{"action":"bless","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 47:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-47-1",
@@ -5018,7 +5017,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"애굽 백성","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"애굽 백성","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"extend","actor":"요셉","duration":1},{"action":"receive","actor":"애굽 백성","duration":1.2},{"action":"point","actor":"요셉","duration":1.5},{"action":"speak","actor":"요셉","duration":1.8},{"action":"gather","actor":"애굽 백성","duration":1.5},{"action":"hold","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 47:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-47-2",
@@ -5045,7 +5044,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"kneel","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pray","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 47:28-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"worried","prop":"scene-marker","beats":[{"action":"speak","actor":"야곱","duration":1},{"action":"speak","actor":"야곱","duration":1.2},{"action":"listen","actor":"요셉","duration":1.5},{"action":"pledge","actor":"요셉","duration":1.8},{"action":"bow","actor":"야곱","duration":1.5},{"action":"hold","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 47:28-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-49-0",
@@ -5077,7 +5076,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"르우벤","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"turn","duration":1.2,"actor":"야곱"},{"action":"speak","duration":1.5,"actor":"야곱"},{"action":"point","duration":1.8,"actor":"야곱"},{"action":"listen","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 49:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"르우벤","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"gather","actor":"야곱","duration":1},{"action":"speak","actor":"야곱","duration":1.2},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"turn","actor":"야곱","duration":1.8},{"action":"speak","actor":"야곱","duration":1.5},{"action":"listen","actor":"유다","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 49:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-49-1",
@@ -5123,7 +5122,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"유다","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"turn","duration":1.2,"actor":"야곱"},{"action":"speak","duration":1.5,"actor":"야곱"},{"action":"point","duration":1.8,"actor":"야곱"},{"action":"listen","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 49:13-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"유다","mode":"illustration","setting":"courtyard","effect":"family","emotion":"determined","prop":"scene-marker","beats":[{"action":"point","actor":"야곱","duration":1},{"action":"speak","actor":"야곱","duration":1.2},{"action":"look","actor":"요셉","duration":1.5},{"action":"speak","actor":"야곱","duration":1.8},{"action":"lie","actor":"야곱","duration":1.5},{"action":"hold","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 49:13-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-18-1",
@@ -5263,7 +5262,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"야곱","target":"요셉","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"야곱"},{"action":"listen","duration":1.2,"actor":"야곱"},{"action":"cradle","duration":1.5,"actor":"야곱"},{"action":"smile","duration":1.8,"actor":"야곱"},{"action":"bless","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:8-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"야곱","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"show","actor":"야곱","duration":1},{"action":"point","actor":"야곱","duration":1.2},{"action":"gather","actor":"야곱","duration":1.5},{"action":"turn","actor":"야곱","duration":1.8},{"action":"hold","actor":"야곱","duration":1.5},{"action":"look","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 46:8-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-23-0",
@@ -5292,7 +5291,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"lament","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"},{"action":"kneel","duration":1.5,"actor":"아브라함"},{"action":"cover-mouth","duration":1.8,"actor":"아브라함"},{"action":"mourn","duration":1.5,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"lament","lead":"아브라함","target":"에브론","mode":"reconstruction","setting":"courtyard","effect":"symbol","emotion":"sad","prop":"scene-marker","beats":[{"action":"gather","actor":"아브라함","duration":1},{"action":"place","actor":"아브라함","duration":1.2},{"action":"carry","actor":"아브라함","duration":1.5},{"action":"lower","actor":"아브라함","duration":1.8},{"action":"mourn","actor":"아브라함","duration":1.5},{"action":"hold","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 23:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-23-1",
@@ -5325,7 +5324,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"petition","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"kneel","duration":1.2,"actor":"아브라함"},{"action":"lift","duration":1.5,"actor":"아브라함"},{"action":"pray","duration":1.8,"actor":"아브라함"},{"action":"pray","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"아브라함","target":"헷 족속","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"worried","prop":"scene-marker","beats":[{"action":"mourn","actor":"아브라함","duration":1},{"action":"stand","actor":"아브라함","duration":1.2},{"action":"bow","actor":"아브라함","duration":1.5},{"action":"speak","actor":"아브라함","duration":1.8},{"action":"listen","actor":"헷 족속","duration":1.5},{"action":"point","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 23:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-39-0",
@@ -5535,6 +5534,33 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"blessing","lead":"라반","target":"라헬","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"reach","actor":"라반","duration":1},{"action":"hold","actor":"라반","duration":1.2},{"action":"bless","actor":"라반","duration":1.5},{"action":"turn","actor":"라반","duration":1.8},{"action":"walk","actor":"라반","duration":1.5},{"action":"walk","actor":"라반","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:55","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-35-4",
+      "code": "gen",
+      "chapter": 35,
+      "title": "이삭의 죽음과 두 아들의 장례",
+      "actors": [
+        "이삭",
+        "야곱",
+        "에서"
+      ],
+      "object": "tomb",
+      "ref": "창세기 35:27-29",
+      "verseNumbers": [
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이삭이 백팔십 세에 생을 마치고, 에서와 야곱이 함께 장사해요."
+      ],
+      "study": "이삭이 백팔십 세에 생을 마치고, 에서와 야곱이 함께 장사해요. 세 사람의 마지막 만남과 장례를 차분하고 비그래픽하게 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 무덤은 장례를 나타내는 공통 픽셀 그림이며, 세부 자세와 시간은 창작이에요.",
+      "animation": {"version":2,"motif":"mourn","lead":"야곱","target":"이삭","mode":"reconstruction","setting":"courtyard","effect":"family","emotion":"sad","prop":"tomb","beats":[{"action":"mourn","actor":"야곱","duration":1},{"action":"walk","actor":"에서","duration":1.2},{"action":"stand","actor":"이삭","duration":1.5},{"action":"lower","actor":"이삭","duration":1.8},{"action":"bury","actor":"에서","duration":1.5},{"action":"bow","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 35:27-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

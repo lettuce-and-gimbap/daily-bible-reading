@@ -5,19 +5,30 @@
   "books": [
     {
       "code": "gen",
-      "payloadSha256": "97dd313ade94f41dd726859afe542f2ebb07ff0143b01282720da41e3bc5616c",
-      "scenes": 170,
-      "existing": 170,
+      "payloadSha256": "f5750034e9f35513e562d638dc0e94a37e7ebb137dcd8f52bd27bb7fcfc2b5fb",
+      "scenes": 171,
+      "existing": 171,
       "restored": 0,
-      "corrected": 57,
-      "planned": 170,
+      "corrected": 58,
+      "planned": 171,
       "modes": {
-        "reconstruction": 130,
+        "reconstruction": 124,
+        "illustration": 38,
         "symbolic": 6,
-        "vision": 3,
-        "illustration": 31
+        "vision": 3
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 171,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "exo",
