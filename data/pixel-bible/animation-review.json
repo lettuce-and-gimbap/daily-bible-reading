@@ -364,16 +364,16 @@
     },
     {
       "code": "dan",
-      "payloadSha256": "bfd426d83b4a7a8fc8edb7dcdfc876ddd10eee32c58d82c1ba0373171cc8f880",
-      "scenes": 14,
-      "existing": 14,
+      "payloadSha256": "9f2c67ccd12fc17196c5295cd965df9fd8569ef2762ad9cd56b42778844f17b2",
+      "scenes": 22,
+      "existing": 22,
       "restored": 0,
       "corrected": 4,
-      "planned": 14,
+      "planned": 22,
       "modes": {
         "reconstruction": 12,
         "vision": 1,
-        "illustration": 1
+        "illustration": 9
       },
       "status": "authored-awaiting-browser-review"
     },

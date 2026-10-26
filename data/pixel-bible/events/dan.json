@@ -417,6 +417,327 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"refuse","lead":"다니엘","target":null,"mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"water","beats":[{"action":"listen","duration":1,"actor":"다니엘"},{"action":"turn","duration":1.2,"actor":"다니엘"},{"action":"halt","duration":1.5,"actor":"다니엘"},{"action":"retreat","duration":1.8,"actor":"다니엘"},{"action":"lower","duration":1.5,"actor":"다니엘"},{"action":"stand","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 1:12-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-1-0",
+      "code": "dan",
+      "chapter": 1,
+      "title": "왕의 음식 대신 시험을 청하다",
+      "actors": [
+        "다니엘",
+        "감독자"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 1:8-16",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다니엘이 왕의 음식으로 자신을 더럽히지 않겠다고 뜻을 정하고, 감독자에게 채소와 물로 시험해 보자고 청해요."
+      ],
+      "study": "다니엘이 왕의 음식으로 자신을 더럽히지 않겠다고 뜻을 정하고, 감독자에게 채소와 물로 시험해 보자고 청해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"request","lead":"다니엘","target":"감독자","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다니엘"},{"action":"kneel","duration":1.2,"actor":"다니엘"},{"action":"lift","duration":1.5,"actor":"다니엘"},{"action":"pray","duration":1.8,"actor":"다니엘"},{"action":"pray","duration":1.5,"actor":"다니엘"},{"action":"bow","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 1:8-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-3-0",
+      "code": "dan",
+      "chapter": 3,
+      "title": "불 가운데서 보호받은 세 친구",
+      "actors": [
+        "사드락",
+        "메삭",
+        "아벳느고",
+        "느부갓네살"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 3:19-30",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 왕의 명령을 거부한 세 사람이 불 속에 던져지지만 상하지 않고 나와요. 위협과 기적을 상징적이고 비그래픽하게 보여 줘요."
+      ],
+      "study": "왕의 명령을 거부한 세 사람이 불 속에 던져지지만 상하지 않고 나와요. 위협과 기적을 상징적이고 비그래픽하게 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"rescue","lead":"사드락","target":"메삭","mode":"illustration","setting":"altar","effect":"release","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"사드락"},{"action":"startle","duration":1.2,"actor":"사드락"},{"action":"halt","duration":1.5,"actor":"사드락"},{"action":"release","duration":1.8,"actor":"사드락"},{"action":"kneel","duration":1.5,"actor":"사드락"},{"action":"bow","duration":1.2,"actor":"사드락"}],"duration":8.2,"support":null,"ref":"다니엘 3:19-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-4-0",
+      "code": "dan",
+      "chapter": 4,
+      "title": "큰 나무의 꿈을 해석하다",
+      "actors": [
+        "느부갓네살",
+        "다니엘(벨드사살)"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 4:4-27",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 느부갓네살의 큰 나무 꿈을 다니엘이 해석하며 왕에게 교만을 버리고 약한 이를 돌보라고 권해요."
+      ],
+      "study": "느부갓네살의 큰 나무 꿈을 다니엘이 해석하며 왕에게 교만을 버리고 약한 이를 돌보라고 권해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dream","lead":"느부갓네살","target":"다니엘(벨드사살)","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"느부갓네살"},{"action":"lie","duration":1.2,"actor":"느부갓네살"},{"action":"sleep","duration":1.5,"actor":"느부갓네살"},{"action":"look","duration":1.8,"actor":"느부갓네살"},{"action":"startle","duration":1.5,"actor":"느부갓네살"},{"action":"rise","duration":1.2,"actor":"느부갓네살"}],"duration":8.2,"support":null,"ref":"다니엘 4:4-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-4-1",
+      "code": "dan",
+      "chapter": 4,
+      "title": "낮아진 왕이 하늘을 우러러보다",
+      "actors": [
+        "느부갓네살"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 4:28-37",
+      "verseNumbers": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 왕의 교만이 꺾이고, 정신을 되찾은 뒤 하늘의 왕을 찬양해요. 서술된 고통은 과장하거나 희화화하지 않아요."
+      ],
+      "study": "왕의 교만이 꺾이고, 정신을 되찾은 뒤 하늘의 왕을 찬양해요. 서술된 고통은 과장하거나 희화화하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"repent","lead":"느부갓네살","target":null,"mode":"illustration","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"느부갓네살"},{"action":"startle","duration":1.2,"actor":"느부갓네살"},{"action":"grasp","duration":1.5,"actor":"느부갓네살"},{"action":"tear","duration":1.8,"actor":"느부갓네살"},{"action":"kneel","duration":1.5,"actor":"느부갓네살"},{"action":"pray","duration":1.2,"actor":"느부갓네살"}],"duration":8.2,"support":null,"ref":"다니엘 4:28-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-7-0",
+      "code": "dan",
+      "chapter": 7,
+      "title": "바다에서 올라온 네 짐승의 환상",
+      "actors": [
+        "다니엘",
+        "네 짐승",
+        "작은 뿔"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 7:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다니엘이 바다에서 올라오는 짐승과 보좌 환상을 봐요. 제국의 상징을 문자적 동물 전투로 만들지 않아요."
+      ],
+      "study": "다니엘이 바다에서 올라오는 짐승과 보좌 환상을 봐요. 제국의 상징을 문자적 동물 전투로 만들지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"다니엘","target":"네 짐승","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"다니엘"},{"action":"lie","duration":1.2,"actor":"다니엘"},{"action":"sleep","duration":1.5,"actor":"다니엘"},{"action":"look","duration":1.8,"actor":"다니엘"},{"action":"startle","duration":1.5,"actor":"다니엘"},{"action":"rise","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 7:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-7-1",
+      "code": "dan",
+      "chapter": 7,
+      "title": "환상의 뜻을 묻고 해석을 듣다",
+      "actors": [
+        "다니엘",
+        "천사",
+        "성도들"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 7:15-28",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다니엘이 환상의 의미를 묻고 나라와 성도의 미래에 관한 설명을 들어요."
+      ],
+      "study": "다니엘이 환상의 의미를 묻고 나라와 성도의 미래에 관한 설명을 들어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"다니엘","target":"천사","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다니엘"},{"action":"look","duration":1.2,"actor":"다니엘"},{"action":"startle","duration":1.5,"actor":"다니엘"},{"action":"read","duration":1.8,"actor":"다니엘"},{"action":"write","duration":1.5,"actor":"다니엘"},{"action":"bow","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 7:15-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-8-0",
+      "code": "dan",
+      "chapter": 8,
+      "title": "숫양과 숫염소의 환상을 보다",
+      "actors": [
+        "다니엘",
+        "숫양",
+        "숫염소",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 8:1-27",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다니엘이 숫양과 숫염소의 환상을 보고, 가브리엘에게 그 뜻을 설명받아요."
+      ],
+      "study": "다니엘이 숫양과 숫염소의 환상을 보고, 가브리엘에게 그 뜻을 설명받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"다니엘","target":"숫양","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"다니엘"},{"action":"lie","duration":1.2,"actor":"다니엘"},{"action":"sleep","duration":1.5,"actor":"다니엘"},{"action":"look","duration":1.8,"actor":"다니엘"},{"action":"startle","duration":1.5,"actor":"다니엘"},{"action":"rise","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 8:1-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-dan-extra-10-0",
+      "code": "dan",
+      "chapter": 10,
+      "title": "금식하던 다니엘이 환상 앞에 엎드리다",
+      "actors": [
+        "다니엘",
+        "세마포 입은 이",
+        "미가엘"
+      ],
+      "object": "scene-marker",
+      "ref": "다니엘 10:1-21",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다니엘이 슬퍼하며 금식하던 중 환상을 보고 힘을 잃어요. 전령의 격려와 미가엘의 도움을 상징적으로 표현해요."
+      ],
+      "study": "다니엘이 슬퍼하며 금식하던 중 환상을 보고 힘을 잃어요. 전령의 격려와 미가엘의 도움을 상징적으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "환상·상징 사건을 설명하는 공통 장면 표지예요. 환상의 이미지는 실제 인물 행동으로 혼동하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"다니엘","target":"세마포 입은 이","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"다니엘"},{"action":"lie","duration":1.2,"actor":"다니엘"},{"action":"sleep","duration":1.5,"actor":"다니엘"},{"action":"look","duration":1.8,"actor":"다니엘"},{"action":"startle","duration":1.5,"actor":"다니엘"},{"action":"rise","duration":1.2,"actor":"다니엘"}],"duration":8.2,"support":null,"ref":"다니엘 10:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
