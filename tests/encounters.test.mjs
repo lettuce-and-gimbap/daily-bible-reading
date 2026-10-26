@@ -190,12 +190,70 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
 
 test('명시 대사가 없는 가족·협력·갈등 관계도 관계 성격에 맞는 양방향 창작 특수 대화를 갖는다',()=>{
  const a={name:'아버지'},b={name:'딸'};
- for(const [kind,label,expected]of [['family','아버지와 딸',/가족|정/],['ally','함께 지킨 동료',/함께|곁/],['conflict','맞선 원수',/가볍게|선택/]]){
+ for(const [kind,label,expected]of [['family','아버지와 딸',/아버지|딸|함께/],['ally','함께 지킨 동료',/약속|네가|필요/],['conflict','맞선 원수',/피해|해친|맞서|싸움/]]){
   const relation={from:{code:'gen',chap:1},to:{code:'gen',chap:1},kind,label,text:'이 장면에서 두 인물의 관계가 드러납니다.',ref:'창세기 1:1'};
   const lines=relationshipLines(a,b,relation,new Map(),{random:()=>0});
   assert.equal(lines.length,2);assert.ok(lines.every(line=>line.origin==='chapter-relation'));
-  assert.match(lines[0].text,expected);assert.match(lines[1].detailText,/창작 상호작용/);
+ assert.match(lines[0].text,expected);assert.match(lines[1].detailText,/창작 상호작용/);
  }
+});
+
+test('약한 가족 관계 대사는 기존보다 5배 많은 변형을 쓰고 부모·자녀와 형·동생의 말투를 나눈다',()=>{
+ const father={name:'아버지',role:'아버지'},son={name:'아들',role:'아들'};
+ const parentLink={from:{...father,code:'gen',chap:1},to:{...son,code:'gen',chap:1},kind:'family',label:'아버지와 아들',text:'아버지는 아들을 가르치고 아들은 아버지의 말을 듣는다.',ref:'창세기 1:1'};
+ const parentVariants=Array.from({length:10},(_,i)=>relationshipLines(father,son,parentLink,null,{random:()=>i/10}));
+ assert.equal(new Set(parentVariants.map(lines=>lines[0].text)).size,10);
+ assert.ok(parentVariants.every(lines=>!/딸아/.test(lines[0].text)&&/아버지/.test(lines[1].text)));
+ assert.ok(parentVariants.some(lines=>/아들아/.test(lines[0].text)));
+ const older={name:'형',role:'형'},younger={name:'동생',role:'동생'};
+ const siblingLink={from:{...older,code:'gen',chap:1},to:{...younger,code:'gen',chap:1},kind:'family',label:'형',text:'형이 동생을 이끌었다.',ref:'창세기 1:1'};
+ const siblings=relationshipLines(older,younger,siblingLink,null,{random:()=>0});
+ assert.match(siblings[0].text,/동생아/);assert.match(siblings[1].text,/형/);
+ const cain={name:'형제A'},abel={name:'형제B'};
+ const hostileSibling={from:{...cain,code:'gen',chap:4},to:{...abel,code:'gen',chap:4},kind:'family',label:'형제',text:'형제A는 동생 형제B를 꾸짖었습니다.',ref:'창세기 4:8'};
+ const cainAbel=relationshipLines(cain,abel,hostileSibling,null,{random:()=>0});
+ assert.match(cainAbel[0].text,/동생아/,'관계 설명에서 연령 순서와 호칭을 읽는다');
+ assert.match(cainAbel[1].text,/형/);
+});
+
+test('약한 적대 관계 대사도 열 가지 사건 중심 응답을 고르고 서로 질문과 반박을 주고받는다',()=>{
+ const a={name:'대적 A'},b={name:'대적 B'},relation={from:{name:a.name,code:'gen',chap:1},to:{name:b.name,code:'gen',chap:1},kind:'conflict',label:'공사를 방해한 대적',text:'한쪽은 공사를 계속하려 하고 다른 쪽은 겁을 주며 막았다.',ref:'에스라 4:1–5'};
+ const variants=Array.from({length:10},(_,i)=>relationshipLines(a,b,relation,null,{random:()=>i/10}));
+ assert.equal(new Set(variants.map(lines=>lines[0].text)).size,10);
+ assert.ok(variants.every(lines=>lines.length===2&&lines.every(line=>line.text.length>15)&&lines[0].text!==lines[1].text));
+});
+
+test('가족 갈등 대사는 혈연 호칭을 유지하면서 비난과 응답을 주고받는다',()=>{
+ const older={name:'형제A',role:'동생을 해친 맏형'},younger={name:'형제B',role:'피해를 입은 동생'};
+ const relation={from:{...older,code:'gen',chap:5},to:{...younger,code:'gen',chap:5},kind:'conflict',label:'죽인 형',text:'형제A가 동생 형제B를 해쳤어요.',ref:'창세기 5:1'};
+ const lines=relationshipLines(older,younger,relation,null,{random:()=>0});
+ assert.match(lines[0].text,/동생아/);assert.match(lines[1].text,/형,/);
+ assert.notEqual(lines[0].text,lines[1].text);
+});
+
+test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방향이며 약한 연결은 10개 변형을 갖는다',()=>{
+ let chapterCount=0,edgeCount=0,fallbackCount=0;
+ const files=fs.readdirSync('data/summary').filter(file=>file.endsWith('.json'));
+ assert.equal(files.length,66);
+ for(const file of files){
+  const code=file.replace(/\.json$/,''),summary=JSON.parse(fs.readFileSync(`data/summary/${file}`,'utf8'));
+  const chapters=Object.entries(summary.chapters||{}).map(([chap,data])=>({code,name:summary.book?.name||code,chap:Number(chap),data}));
+  chapterCount+=chapters.length;
+  const context=buildChapterDialogue(chapters);
+  for(const relation of context.relations){
+   edgeCount++;
+   const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+   assert.equal(lines.length,2,`${code}.${relation.from.chap}: ${relation.from.name} ↔ ${relation.to.name}`);
+   assert.notEqual(lines[0].text,lines[1].text,`${code}.${relation.from.chap}: 응답이 같은 독백으로 반복되지 않음`);
+   assert.ok(lines.every(line=>line.text&&!/우리가 가족으로 이어져 있다는 걸 잊지 않겠다|가족 관계와 함께 겪은 일을 마음에 두고|우리 사이의 정을 소중히 여기겠다|어색한 인사|안녕하세요/.test(line.text)));
+   if(lines[0].origin==='chapter-relation'){
+    fallbackCount++;
+    const variants=new Set(Array.from({length:10},(_,i)=>relationshipLines(relation.from,relation.to,relation,null,{random:()=>i/10})[0].text));
+    assert.equal(variants.size,10,`${code}.${relation.from.chap}: 약한 관계 대사 변형 수`);
+   }
+  }
+ }
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3857);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -289,6 +347,14 @@ test('창세기 19장 롯과 두 천사의 피신 대화는 요청과 응답이 
  const entry=PAIR_DIALOGUE.find(item=>item.chapter==='gen.19'&&item.speaker==='롯'&&item.target==='두 천사');
  assert.ok(entry);assert.match(entry.ref,/19:15–22/);
  assert.match(entry.lines[0],/산으로/);assert.match(entry.replyLines[1],/엎지 않겠다/);
+});
+
+test('창세기 37장 유다의 요셉 매매 제안과 45장 정체 공개를 서로 다른 장면으로 구분한다',()=>{
+ const sale=PAIR_DIALOGUE.find(item=>item.chapter==='gen.37'&&item.speaker==='유다'&&item.target==='요셉');
+ assert.ok(sale);assert.match(sale.ref,/37:26–28/);assert.match(sale.lines[0],/죽이고.*상인에게 팔/);assert.match(sale.replyLines[0],/손대지 말고/);assert.match(sale.detail,/42:21.*창작 재구성/);
+ const reveal=PAIR_DIALOGUE.find(item=>item.chapter==='gen.45'&&item.speaker==='요셉'&&item.target==='유다');
+ assert.ok(reveal);assert.match(reveal.lines[0],/유다 형님.*살아 계십니까/);assert.match(reveal.detail,/대답하지 못했다고 기록/);assert.match(reveal.detail,/직접 인용이 아닙니다/);
+ assert.ok(!reveal.replyLines.some(line=>/아버지는 살아 계십니다/.test(line)),'45장에서 조용했던 형들에게 기록되지 않은 답을 직접 인용처럼 붙이지 않음');
 });
 
 test('출애굽기 1·5·9·10·14·16·18·19·20·24·32장의 주요 대화는 상대 발화까지 연결된다',()=>{
@@ -436,7 +502,7 @@ test('관계선만 있어도 그 관계를 반영한 양방향 특수 대화를 
  const context=buildChapterDialogue(chapters),npcs=context.people.map((p,i)=>({...p,refs:[p.ref],x:10+i,y:10,path:[]}));
  const lines=new EncounterDirector(chapters,context,{random:()=>0}).tick(0,npcs);
  assert.equal(lines.length,1);assert.equal(lines[0].origin,'chapter-relation');
- assert.equal(lines[0].pairLines.length,2);assert.match(lines[0].pairLines[0].text,/이어져|연결/);
+ assert.equal(lines[0].pairLines.length,2);assert.match(lines[0].pairLines[0].text,/맡은 몫|부탁할 일|형편/);
 });
 test('기록된 인물 간 상호대사는 확률 제한 없이 실제 조우 때 시작한다',()=>{
  const {director,npcs}=fixture();director.random=()=>.99;
