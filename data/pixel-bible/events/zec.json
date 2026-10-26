@@ -139,6 +139,576 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"vision","lead":"스룹바벨","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"temple","beats":[{"action":"sit","duration":1,"actor":"스룹바벨"},{"action":"lie","duration":1.2,"actor":"스룹바벨"},{"action":"sleep","duration":1.5,"actor":"스룹바벨"},{"action":"look","duration":1.8,"actor":"스룹바벨"},{"action":"startle","duration":1.5,"actor":"스룹바벨"},{"action":"rise","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"스가랴 4:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-1-0",
+      "code": "zec",
+      "chapter": 1,
+      "title": "말 탄 이들이 땅의 형편을 보고하다",
+      "actors": [
+        "스가랴",
+        "붉은 말 탄 사람",
+        "여호와의 천사"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 1:7-17",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 화석류나무 사이의 말 탄 이들이 온 땅의 평안을 보고하고, 천사는 예루살렘을 향한 긍휼을 구해요."
+      ],
+      "study": "화석류나무 사이의 말 탄 이들이 온 땅의 평안을 보고하고, 천사는 예루살렘을 향한 긍휼을 구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"스가랴","target":"붉은 말 탄 사람","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스가랴"},{"action":"look","duration":1.2,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"read","duration":1.8,"actor":"스가랴"},{"action":"write","duration":1.5,"actor":"스가랴"},{"action":"bow","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 1:7-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-1-1",
+      "code": "zec",
+      "chapter": 1,
+      "title": "네 뿔과 네 대장장이의 환상",
+      "actors": [
+        "스가랴",
+        "네 뿔",
+        "네 대장장이"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 1:18-21",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다를 흩은 뿔과 그것을 떨게 할 대장장이들의 환상을 보여 줘요."
+      ],
+      "study": "유다를 흩은 뿔과 그것을 떨게 할 대장장이들의 환상을 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"네 뿔","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 1:18-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-2-0",
+      "code": "zec",
+      "chapter": 2,
+      "title": "바벨론을 떠나 시온으로 나오라 하다",
+      "actors": [
+        "스가랴",
+        "딸 시온",
+        "많은 나라"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 2:6-13",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 포로지에서 나오라고 부르고, 많은 민족이 여호와께 속할 날과 시온의 회복을 선포해요."
+      ],
+      "study": "포로지에서 나오라고 부르고, 많은 민족이 여호와께 속할 날과 시온의 회복을 선포해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"스가랴","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"스가랴"},{"action":"bend","duration":1.2,"actor":"스가랴"},{"action":"grasp","duration":1.5,"actor":"스가랴"},{"action":"lift","duration":1.8,"actor":"스가랴"},{"action":"bundle","duration":1.5,"actor":"스가랴"},{"action":"carry","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 2:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-3-0",
+      "code": "zec",
+      "chapter": 3,
+      "title": "더러운 옷을 벗고 새 옷을 입은 여호수아",
+      "actors": [
+        "여호수아",
+        "사탄",
+        "여호와의 천사",
+        "스가랴"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 3:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아를 고발하던 사탄이 물러나고 더러운 옷이 벗겨져 깨끗한 옷을 입어요. 정결과 회복의 환상으로 보여 줘요."
+      ],
+      "study": "여호수아를 고발하던 사탄이 물러나고 더러운 옷이 벗겨져 깨끗한 옷을 입어요. 정결과 회복의 환상으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"transfer-garment","lead":"여호수아","target":"사탄","mode":"illustration","setting":"chamber","effect":"garment","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"여호수아"},{"action":"grasp","duration":1.2,"actor":"여호수아"},{"action":"lift","duration":1.5,"actor":"여호수아"},{"action":"wear","duration":1.8,"actor":"여호수아"},{"action":"smooth","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"스가랴 3:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-4-0",
+      "code": "zec",
+      "chapter": 4,
+      "title": "순금 등잔대와 두 감람나무의 환상",
+      "actors": [
+        "스가랴",
+        "스룹바벨",
+        "두 감람나무"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 4:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 등잔대와 감람나무를 보고, 성전 재건이 힘이나 능이 아닌 영으로 이뤄진다는 설명을 들어요."
+      ],
+      "study": "등잔대와 감람나무를 보고, 성전 재건이 힘이나 능이 아닌 영으로 이뤄진다는 설명을 들어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"스룹바벨","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-5-0",
+      "code": "zec",
+      "chapter": 5,
+      "title": "날아가는 두루마리와 저주의 환상",
+      "actors": [
+        "스가랴",
+        "천사",
+        "도둑과 거짓 맹세자"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 5:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 날아가는 두루마리가 도둑질과 거짓 맹세를 심판하는 환상을 상징해요."
+      ],
+      "study": "날아가는 두루마리가 도둑질과 거짓 맹세를 심판하는 환상을 상징해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-5-1",
+      "code": "zec",
+      "chapter": 5,
+      "title": "에바에 담겨 시날로 옮겨지는 악",
+      "actors": [
+        "스가랴",
+        "천사",
+        "에바 속의 여인",
+        "학 날개의 두 여인"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 5:5-11",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에바 속 여인이 두 여인의 날개를 타고 시날 땅으로 옮겨지는 환상으로 악의 제거를 보여 줘요."
+      ],
+      "study": "에바 속 여인이 두 여인의 날개를 타고 시날 땅으로 옮겨지는 환상으로 악의 제거를 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 5:5-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-6-0",
+      "code": "zec",
+      "chapter": 6,
+      "title": "네 병거가 사방으로 나가다",
+      "actors": [
+        "스가랴",
+        "천사"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 6:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 네 병거가 온 땅으로 나가는 환상으로 하늘의 명령과 땅의 안정을 나타내요."
+      ],
+      "study": "네 병거가 온 땅으로 나가는 환상으로 하늘의 명령과 땅의 안정을 나타내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-7-0",
+      "code": "zec",
+      "chapter": 7,
+      "title": "금식이 누구를 위한 것인지 묻다",
+      "actors": [
+        "벧엘 사람들",
+        "사레셀과 레겜멜렉",
+        "스가랴"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 7:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 벧엘 사람들이 금식 여부를 묻자, 스가랴는 공정한 재판과 인애를 행하라는 말씀을 전해요."
+      ],
+      "study": "벧엘 사람들이 금식 여부를 묻자, 스가랴는 공정한 재판과 인애를 행하라는 말씀을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"벧엘 사람들","target":"사레셀과 레겜멜렉","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"벧엘 사람들"},{"action":"turn","duration":1.2,"actor":"벧엘 사람들"},{"action":"point","duration":1.5,"actor":"벧엘 사람들"},{"action":"point","duration":1.8,"actor":"벧엘 사람들"},{"action":"listen","duration":1.5,"actor":"벧엘 사람들"},{"action":"lower","duration":1.2,"actor":"벧엘 사람들"}],"duration":8.2,"support":null,"ref":"스가랴 7:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-8-0",
+      "code": "zec",
+      "chapter": 8,
+      "title": "노인과 아이들이 함께 사는 예루살렘",
+      "actors": [
+        "시온",
+        "노인과 아이들",
+        "남은 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 8:1-23",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거리에서 노인과 아이들이 안전하게 지내고 여러 민족이 하나님을 찾으러 오는 회복을 약속해요."
+      ],
+      "study": "거리에서 노인과 아이들이 안전하게 지내고 여러 민족이 하나님을 찾으러 오는 회복을 약속해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"시온","target":"노인과 아이들","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"시온"},{"action":"lift","duration":1.2,"actor":"시온"},{"action":"speak","duration":1.5,"actor":"시온"},{"action":"bless","duration":1.8,"actor":"시온"},{"action":"lower","duration":1.5,"actor":"시온"},{"action":"bow","duration":1.2,"actor":"시온"}],"duration":8.2,"support":null,"ref":"스가랴 8:1-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-9-0",
+      "code": "zec",
+      "chapter": 9,
+      "title": "겸손한 왕이 나귀를 타고 오다",
+      "actors": [
+        "시온의 딸",
+        "겸손한 왕",
+        "두로와 시돈과 블레셋"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 9:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 주변 민족의 교만을 낮춘 뒤 시온의 왕이 나귀를 타고 오며 평화를 선포하는 예언이에요."
+      ],
+      "study": "주변 민족의 교만을 낮춘 뒤 시온의 왕이 나귀를 타고 오며 평화를 선포하는 예언이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"parade","lead":"시온의 딸","target":"겸손한 왕","mode":"illustration","setting":"road","effect":"horse","emotion":"joy","prop":"scene-marker","beats":[{"action":"receive","duration":1,"actor":"시온의 딸"},{"action":"wear","duration":1.2,"actor":"시온의 딸"},{"action":"sit","duration":1.5,"actor":"시온의 딸"},{"action":"hold","duration":1.8,"actor":"시온의 딸"},{"action":"look","duration":1.5,"actor":"시온의 딸"},{"action":"bow","duration":1.2,"actor":"시온의 딸"}],"duration":8.2,"support":null,"ref":"스가랴 9:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-10-0",
+      "code": "zec",
+      "chapter": 10,
+      "title": "목자 없는 양 떼를 모으다",
+      "actors": [
+        "유다 족속",
+        "요셉 족속",
+        "악한 목자들"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 10:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거짓 목자들을 책망하고 유다와 요셉의 집을 모아 강하게 하시겠다는 약속이에요."
+      ],
+      "study": "거짓 목자들을 책망하고 유다와 요셉의 집을 모아 강하게 하시겠다는 약속이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"유다 족속","target":"요셉 족속","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"유다 족속"},{"action":"bend","duration":1.2,"actor":"유다 족속"},{"action":"grasp","duration":1.5,"actor":"유다 족속"},{"action":"lift","duration":1.8,"actor":"유다 족속"},{"action":"bundle","duration":1.5,"actor":"유다 족속"},{"action":"carry","duration":1.2,"actor":"유다 족속"}],"duration":8.2,"support":null,"ref":"스가랴 10:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-11-0",
+      "code": "zec",
+      "chapter": 11,
+      "title": "은총과 연합의 막대기를 꺾다",
+      "actors": [
+        "스가랴",
+        "잡혀 죽을 양 떼",
+        "사고파는 자들",
+        "못된 목자"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 11:4-17",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 양 떼를 돌보는 두 막대기를 꺾는 행동이 은총과 연합의 단절을 가리켜요. 비유적 행동으로 표시해요."
+      ],
+      "study": "양 떼를 돌보는 두 막대기를 꺾는 행동이 은총과 연합의 단절을 가리켜요. 비유적 행동으로 표시해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"스가랴","target":"잡혀 죽을 양 떼","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스가랴"},{"action":"read","duration":1.2,"actor":"스가랴"},{"action":"look","duration":1.5,"actor":"스가랴"},{"action":"point","duration":1.8,"actor":"스가랴"},{"action":"listen","duration":1.5,"actor":"스가랴"},{"action":"bow","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 11:4-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-12-0",
+      "code": "zec",
+      "chapter": 12,
+      "title": "찔린 이를 바라보며 애통하다",
+      "actors": [
+        "예루살렘 주민",
+        "다윗의 족속",
+        "찔린 이",
+        "모든 민족"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 12:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 예루살렘을 둘러싼 민족과 찔린 이를 바라보며 애통하는 집단적 환상을 상징적으로 보여 줘요."
+      ],
+      "study": "예루살렘을 둘러싼 민족과 찔린 이를 바라보며 애통하는 집단적 환상을 상징적으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"예루살렘 주민","target":"다윗의 족속","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"예루살렘 주민"},{"action":"lower","duration":1.2,"actor":"예루살렘 주민"},{"action":"kneel","duration":1.5,"actor":"예루살렘 주민"},{"action":"cover-mouth","duration":1.8,"actor":"예루살렘 주민"},{"action":"mourn","duration":1.5,"actor":"예루살렘 주민"},{"action":"lower","duration":1.2,"actor":"예루살렘 주민"}],"duration":8.2,"support":null,"ref":"스가랴 12:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-13-0",
+      "code": "zec",
+      "chapter": 13,
+      "title": "죄와 더러움을 씻는 샘을 열다",
+      "actors": [
+        "다윗의 족속과 예루살렘 주민",
+        "거짓 선지자",
+        "흩어질 양"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 13:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 죄를 씻는 샘과 거짓 예언의 제거, 목자를 치고 양이 흩어지는 환상을 상징으로 제시해요."
+      ],
+      "study": "죄를 씻는 샘과 거짓 예언의 제거, 목자를 치고 양이 흩어지는 환상을 상징으로 제시해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"다윗의 족속과 예루살렘 주민","target":"거짓 선지자","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"read","duration":1.2,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"look","duration":1.5,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"point","duration":1.8,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"listen","duration":1.5,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"bow","duration":1.2,"actor":"다윗의 족속과 예루살렘 주민"}],"duration":8.2,"support":null,"ref":"스가랴 13:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zec-extra-14-0",
+      "code": "zec",
+      "chapter": 14,
+      "title": "감람산과 생수의 날을 그리다",
+      "actors": [
+        "예루살렘 백성",
+        "열국",
+        "남은 자들"
+      ],
+      "object": "scene-marker",
+      "ref": "스가랴 14:1-21",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 감람산과 생수, 남은 자들의 예배를 포함한 마지막 환상을 지도와 상징으로 표현해요."
+      ],
+      "study": "감람산과 생수, 남은 자들의 예배를 포함한 마지막 환상을 지도와 상징으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"예루살렘 백성","target":"열국","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"예루살렘 백성"},{"action":"lie","duration":1.2,"actor":"예루살렘 백성"},{"action":"sleep","duration":1.5,"actor":"예루살렘 백성"},{"action":"look","duration":1.8,"actor":"예루살렘 백성"},{"action":"startle","duration":1.5,"actor":"예루살렘 백성"},{"action":"rise","duration":1.2,"actor":"예루살렘 백성"}],"duration":8.2,"support":null,"ref":"스가랴 14:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

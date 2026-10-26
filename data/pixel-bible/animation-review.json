@@ -515,15 +515,16 @@
     },
     {
       "code": "zec",
-      "payloadSha256": "8e2f17c23b574a9df2e40b4d6a032a0409ea3d221213be7dce208b6c013c305c",
-      "scenes": 5,
-      "existing": 5,
+      "payloadSha256": "a2b96aa57df66fdddd9fbf6b1864d82f5292f9931a64295dafa09bd30a54a543",
+      "scenes": 21,
+      "existing": 21,
       "restored": 0,
       "corrected": 3,
-      "planned": 5,
+      "planned": 21,
       "modes": {
         "vision": 4,
-        "reconstruction": 1
+        "reconstruction": 1,
+        "illustration": 16
       },
       "status": "authored-awaiting-browser-review"
     },
