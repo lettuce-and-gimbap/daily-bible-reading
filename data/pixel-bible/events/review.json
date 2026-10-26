@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1258,
+    "scenesInFiles": 1264,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 544
+    "curatedSupplementalScenes": 550
   },
   "books": [
     {
@@ -82,10 +82,10 @@
     {
       "code": "jos",
       "chapters": 24,
-      "scenes": 25,
+      "scenes": 31,
       "sourceMatchedSceneCandidates": 18,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 7
+      "curatedSupplementalScenes": 6
     },
     {
       "code": "jdg",
@@ -28370,6 +28370,10 @@
       {
         "book": "exo",
         "scenesAdded": 10
+      },
+      {
+        "book": "jos",
+        "scenesAdded": 6
       }
     ]
   }

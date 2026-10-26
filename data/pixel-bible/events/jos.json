@@ -766,6 +766,208 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"covenant","lead":"여호수아","target":"이스라엘 장로들","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"},{"action":"extend","duration":1.5,"actor":"여호수아"},{"action":"pledge","duration":1.8,"actor":"여호수아"},{"action":"read","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 23:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-12-0",
+      "code": "jos",
+      "chapter": 12,
+      "title": "요단 동편과 가나안에서 패한 왕들을 기록하다",
+      "actors": [
+        "모세",
+        "여호수아",
+        "시혼",
+        "옥"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 12:1-24",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세와 여호수아가 이끈 전쟁에서 패한 왕들의 이름과 땅이 정리돼요. 이 장은 전쟁을 다시 재현하기보다 정복의 범위를 기록하는 장면으로 표현해요."
+      ],
+      "study": "모세와 여호수아가 이끈 전쟁에서 패한 왕들의 이름과 땅이 정리돼요. 이 장은 전쟁을 다시 재현하기보다 정복의 범위를 기록하는 장면으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"모세","target":"여호수아","mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"},{"action":"brace","duration":1.5,"actor":"모세"},{"action":"run","duration":1.8,"actor":"모세"},{"action":"halt","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"여호수아 12:1-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-13-0",
+      "code": "jos",
+      "chapter": 13,
+      "title": "여호수아가 지파별 땅을 나누기 시작하다",
+      "actors": [
+        "여호수아",
+        "레위 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 13:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아가 아직 남은 땅을 지파별로 나누라는 지시를 받아요. 레위 지파에는 땅 대신 하나님께 드리는 제물이 기업이 된다는 구별도 확인돼요."
+      ],
+      "study": "여호수아가 아직 남은 땅을 지파별로 나누라는 지시를 받아요. 레위 지파에는 땅 대신 하나님께 드리는 제물이 기업이 된다는 구별도 확인돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"여호수아","target":"레위 지파","mode":"illustration","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"여호수아"},{"action":"grasp","duration":1.2,"actor":"여호수아"},{"action":"shake","duration":1.5,"actor":"여호수아"},{"action":"release","duration":1.8,"actor":"여호수아"},{"action":"inspect","duration":1.5,"actor":"여호수아"},{"action":"point","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 13:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-14-0",
+      "code": "jos",
+      "chapter": 14,
+      "title": "갈렙이 약속받은 헤브론을 요청하다",
+      "actors": [
+        "갈렙",
+        "여호수아",
+        "엘르아살",
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 14:6-15",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 갈렙은 광야에서 받은 약속을 근거로 헤브론을 청해요. 여호수아는 그를 축복하고, 갈렙은 나이 들어서도 산지를 차지하겠다고 나서요."
+      ],
+      "study": "갈렙은 광야에서 받은 약속을 근거로 헤브론을 청해요. 여호수아는 그를 축복하고, 갈렙은 나이 들어서도 산지를 차지하겠다고 나서요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"request","lead":"갈렙","target":"여호수아","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"갈렙"},{"action":"kneel","duration":1.2,"actor":"갈렙"},{"action":"lift","duration":1.5,"actor":"갈렙"},{"action":"pray","duration":1.8,"actor":"갈렙"},{"action":"pray","duration":1.5,"actor":"갈렙"},{"action":"bow","duration":1.2,"actor":"갈렙"}],"duration":8.2,"support":null,"ref":"여호수아 14:6-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-16-0",
+      "code": "jos",
+      "chapter": 16,
+      "title": "에브라임 지파의 기업 경계를 정하다",
+      "actors": [
+        "에브라임 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 16:5-10",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에브라임 지파에 주어진 성읍과 경계가 기록돼요. 본문이 지리적 경계를 설명하므로 지도와 땅의 표상 중심으로 보여줘요."
+      ],
+      "study": "에브라임 지파에 주어진 성읍과 경계가 기록돼요. 본문이 지리적 경계를 설명하므로 지도와 땅의 표상 중심으로 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"에브라임 지파","target":null,"mode":"illustration","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"에브라임 지파"},{"action":"grasp","duration":1.2,"actor":"에브라임 지파"},{"action":"shake","duration":1.5,"actor":"에브라임 지파"},{"action":"release","duration":1.8,"actor":"에브라임 지파"},{"action":"inspect","duration":1.5,"actor":"에브라임 지파"},{"action":"point","duration":1.2,"actor":"에브라임 지파"}],"duration":8.2,"support":null,"ref":"여호수아 16:5-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-19-0",
+      "code": "jos",
+      "chapter": 19,
+      "title": "여호수아에게 딤낫 세라를 기업으로 주다",
+      "actors": [
+        "여호수아",
+        "단 지파",
+        "엘르아살"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 19:49-51",
+      "verseNumbers": [
+        49,
+        50,
+        51
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 지파들의 분배가 끝난 뒤 백성이 여호수아에게도 기업을 줘요. 여호수아는 에브라임 산지의 딤낫 세라를 받아 성읍을 세우고 그곳에 살아요."
+      ],
+      "study": "지파들의 분배가 끝난 뒤 백성이 여호수아에게도 기업을 줘요. 여호수아는 에브라임 산지의 딤낫 세라를 받아 성읍을 세우고 그곳에 살아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"receive","lead":"여호수아","target":"단 지파","mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"여호수아"},{"action":"reach","duration":1.2,"actor":"여호수아"},{"action":"grasp","duration":1.5,"actor":"여호수아"},{"action":"lift","duration":1.8,"actor":"여호수아"},{"action":"inspect","duration":1.5,"actor":"여호수아"},{"action":"lower","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 19:49-51","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-21-0",
+      "code": "jos",
+      "chapter": 21,
+      "title": "레위 지파가 이스라엘 여러 지파에서 성읍을 받다",
+      "actors": [
+        "레위 지파",
+        "엘르아살",
+        "이스라엘 자손",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 21:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위 지파의 지도자들이 실로에서 엘르아살과 여호수아에게 거주할 성읍과 목초지를 요청해요. 이스라엘은 각 지파의 몫에서 성읍을 내어줘요."
+      ],
+      "study": "레위 지파의 지도자들이 실로에서 엘르아살과 여호수아에게 거주할 성읍과 목초지를 요청해요. 이스라엘은 각 지파의 몫에서 성읍을 내어줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"receive","lead":"레위 지파","target":"엘르아살","mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"레위 지파"},{"action":"reach","duration":1.2,"actor":"레위 지파"},{"action":"grasp","duration":1.5,"actor":"레위 지파"},{"action":"lift","duration":1.8,"actor":"레위 지파"},{"action":"inspect","duration":1.5,"actor":"레위 지파"},{"action":"lower","duration":1.2,"actor":"레위 지파"}],"duration":8.2,"support":null,"ref":"여호수아 21:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
