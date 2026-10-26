@@ -3098,6 +3098,477 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"crown","lead":"므나헴","target":"브가히야","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"므나헴"},{"action":"kneel","duration":1.2,"actor":"므나헴"},{"action":"receive","duration":1.5,"actor":"므나헴"},{"action":"wear","duration":1.8,"actor":"므나헴"},{"action":"rise","duration":1.5,"actor":"므나헴"},{"action":"bow","duration":1.2,"actor":"므나헴"}],"duration":8.2,"support":null,"ref":"열왕기하 15:21-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-2-01",
+      "code": "2ki",
+      "chapter": 2,
+      "title": "떠나지 않는 엘리사",
+      "actors": [
+        "엘리사",
+        "엘리야"
+      ],
+      "object": "robe",
+      "ref": "열왕기하 2:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리야가 세 번이나 머물라고 하지만, 엘리사는 당신을 떠나지 않겠다며 길갈에서 벧엘과 여리고를 거쳐 요단까지 끝까지 따라가요."
+      ],
+      "study": "엘리야가 세 번이나 머물라고 하지만, 엘리사는 당신을 떠나지 않겠다며 길갈에서 벧엘과 여리고를 거쳐 요단까지 끝까지 따라가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 동작의 세부와 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"ascend","lead":"엘리사","target":"엘리야","mode":"instruction","setting":"water","effect":"whirlwind","emotion":"surprised","prop":"robe","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"lift","duration":1.2,"actor":"엘리사"},{"action":"look","duration":1.5,"actor":"엘리사"},{"action":"recoil","duration":1.8,"actor":"엘리사"},{"action":"look","duration":1.5,"actor":"엘리사"},{"action":"bow","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-3-01",
+      "code": "2ki",
+      "chapter": 3,
+      "title": "모압의 배반",
+      "actors": [
+        "여호사밧"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 3:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아합이 죽자 모압 왕 메사가 해마다 바치던 양털 조공을 끊어요. 여호람이 유다 왕 여호사밧, 에돔 왕과 함께 모압을 치러 가요."
+      ],
+      "study": "아합이 죽자 모압 왕 메사가 해마다 바치던 양털 조공을 끊어요. 여호람이 유다 왕 여호사밧, 에돔 왕과 함께 모압을 치러 가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"여호사밧","target":null,"mode":"instruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"여호사밧"},{"action":"lower","duration":1.2,"actor":"여호사밧"},{"action":"kneel","duration":1.5,"actor":"여호사밧"},{"action":"cover-mouth","duration":1.8,"actor":"여호사밧"},{"action":"mourn","duration":1.5,"actor":"여호사밧"},{"action":"lower","duration":1.2,"actor":"여호사밧"}],"duration":8.2,"support":null,"ref":"열왕기하 3:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-4-01",
+      "code": "2ki",
+      "chapter": 4,
+      "title": "독 든 국과 보리떡",
+      "actors": [
+        "엘리사"
+      ],
+      "object": "pot",
+      "ref": "열왕기하 4:38",
+      "verseNumbers": [
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 흉년의 길갈에서 독 든 국에 가루를 넣어 해를 없애고, 보리빵 스무 개로 백 명을 먹이고도 남게 해요."
+      ],
+      "study": "흉년의 길갈에서 독 든 국에 가루를 넣어 해를 없애고, 보리빵 스무 개로 백 명을 먹이고도 남게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 동작의 세부와 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"instruct","lead":"엘리사","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"pot","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 4:38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-4-02",
+      "code": "2ki",
+      "chapter": 4,
+      "title": "보리떡을 백 명에게 나누다",
+      "actors": [
+        "엘리사"
+      ],
+      "object": "barley-bread",
+      "ref": "열왕기하 4:42-44",
+      "verseNumbers": [
+        42,
+        43,
+        44
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 보리떡 스무 개가 백 명에게 주어지고 여호와의 말씀대로 음식이 남아요."
+      ],
+      "study": "보리떡 스무 개가 백 명에게 주어지고 여호와의 말씀대로 음식이 남아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 동작의 세부와 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"listen","lead":"엘리사","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"barley-bread","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 4:42-44","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-9-01",
+      "code": "2ki",
+      "chapter": 9,
+      "title": "아하시야의 죽음",
+      "actors": [
+        "예후"
+      ],
+      "object": "chariot",
+      "ref": "열왕기하 9:27-29",
+      "verseNumbers": [
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요람을 문병 왔던 유다 왕 아하시야가 도망치다 예후의 부하들이 쏜 화살에 맞고, 므깃도까지 가서 죽어요. 그는 예루살렘에 묻혀요."
+      ],
+      "study": "요람을 문병 왔던 유다 왕 아하시야가 도망치다 예후의 부하들이 쏜 화살에 맞고, 므깃도까지 가서 죽어요. 그는 예루살렘에 묻혀요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"예후","target":null,"mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"chariot","beats":[{"action":"startle","duration":1,"actor":"예후"},{"action":"lower","duration":1.2,"actor":"예후"},{"action":"kneel","duration":1.5,"actor":"예후"},{"action":"cover-mouth","duration":1.8,"actor":"예후"},{"action":"mourn","duration":1.5,"actor":"예후"},{"action":"lower","duration":1.2,"actor":"예후"}],"duration":8.2,"support":null,"ref":"열왕기하 9:27-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-9-02",
+      "code": "2ki",
+      "chapter": 9,
+      "title": "이세벨의 최후",
+      "actors": [
+        "예후",
+        "이세벨"
+      ],
+      "object": "palace",
+      "ref": "열왕기하 9:30-37",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 눈을 그리고 창가에서 예후를 조롱하던 이세벨을 내시들이 창밖으로 던지고, 예후가 그 몸을 밟아요. 엘리야가 전한 대로 개들이 먹어 두개골과 발과 손만 남아요."
+      ],
+      "study": "눈을 그리고 창가에서 예후를 조롱하던 이세벨을 내시들이 창밖으로 던지고, 예후가 그 몸을 밟아요. 엘리야가 전한 대로 개들이 먹어 두개골과 발과 손만 남아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"예후","target":"이세벨","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"palace","beats":[{"action":"listen","duration":1,"actor":"예후"},{"action":"turn","duration":1.2,"actor":"예후"},{"action":"speak","duration":1.5,"actor":"예후"},{"action":"point","duration":1.8,"actor":"예후"},{"action":"listen","duration":1.5,"actor":"예후"},{"action":"lower","duration":1.2,"actor":"예후"}],"duration":8.2,"support":null,"ref":"열왕기하 9:30-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-11-01",
+      "code": "2ki",
+      "chapter": 11,
+      "title": "새 언약과 개혁",
+      "actors": [
+        "여호야다"
+      ],
+      "object": "book",
+      "ref": "열왕기하 11:17-21",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호야다가 하나님과 왕과 백성 사이에 언약을 세우고, 백성이 바알 신당을 헐고 바알 제사장 맛단을 죽여요. 온 성이 평온해져요."
+      ],
+      "study": "여호야다가 하나님과 왕과 백성 사이에 언약을 세우고, 백성이 바알 신당을 헐고 바알 제사장 맛단을 죽여요. 온 성이 평온해져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 동작의 세부와 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"mourn","lead":"여호야다","target":null,"mode":"instruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"book","beats":[{"action":"startle","duration":1,"actor":"여호야다"},{"action":"lower","duration":1.2,"actor":"여호야다"},{"action":"kneel","duration":1.5,"actor":"여호야다"},{"action":"cover-mouth","duration":1.8,"actor":"여호야다"},{"action":"mourn","duration":1.5,"actor":"여호야다"},{"action":"lower","duration":1.2,"actor":"여호야다"}],"duration":8.2,"support":null,"ref":"열왕기하 11:17-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-12-01",
+      "code": "2ki",
+      "chapter": 12,
+      "title": "바르게 행한 요아스",
+      "actors": [
+        "요아스",
+        "여호야다"
+      ],
+      "object": "crown",
+      "ref": "열왕기하 12:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 일곱 살에 왕이 된 요아스가 사십 년 다스리며, 여호야다가 가르치는 동안 바르게 행해요. 하지만 산당은 그대로 남아 있었어요."
+      ],
+      "study": "일곱 살에 왕이 된 요아스가 사십 년 다스리며, 여호야다가 가르치는 동안 바르게 행해요. 하지만 산당은 그대로 남아 있었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 동작의 세부와 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"crown","lead":"요아스","target":"여호야다","mode":"instruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"요아스"},{"action":"kneel","duration":1.2,"actor":"요아스"},{"action":"receive","duration":1.5,"actor":"요아스"},{"action":"wear","duration":1.8,"actor":"요아스"},{"action":"rise","duration":1.5,"actor":"요아스"},{"action":"bow","duration":1.2,"actor":"요아스"}],"duration":8.2,"support":null,"ref":"열왕기하 12:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-13-01",
+      "code": "2ki",
+      "chapter": 13,
+      "title": "여호아하스의 간구",
+      "actors": [
+        "여호아하스"
+      ],
+      "object": "sword",
+      "ref": "열왕기하 13:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 금송아지 죄로 하사엘에게 짓밟히던 여호아하스가 하나님께 간구해요. 하나님은 학대를 보시고 구원자를 주시지만 백성은 죄를 떠나지 않아요."
+      ],
+      "study": "금송아지 죄로 하사엘에게 짓밟히던 여호아하스가 하나님께 간구해요. 하나님은 학대를 보시고 구원자를 주시지만 백성은 죄를 떠나지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"ascend","lead":"여호아하스","target":null,"mode":"illustration","setting":"water","effect":"whirlwind","emotion":"surprised","prop":"sword","beats":[{"action":"look","duration":1,"actor":"여호아하스"},{"action":"lift","duration":1.2,"actor":"여호아하스"},{"action":"look","duration":1.5,"actor":"여호아하스"},{"action":"recoil","duration":1.8,"actor":"여호아하스"},{"action":"look","duration":1.5,"actor":"여호아하스"},{"action":"bow","duration":1.2,"actor":"여호아하스"}],"duration":8.2,"support":null,"ref":"열왕기하 13:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-15-01",
+      "code": "2ki",
+      "chapter": 15,
+      "title": "빼앗긴 북쪽 땅",
+      "actors": [
+        "베가",
+        "호세아"
+      ],
+      "object": "palace",
+      "ref": "열왕기하 15:27-31",
+      "verseNumbers": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 베가 때 앗수르 왕 디글랏 빌레셀이 갈릴리와 길르앗 땅을 빼앗고 주민을 끌고 가요. 호세아가 반역해 베가를 죽이고 왕이 돼요."
+      ],
+      "study": "베가 때 앗수르 왕 디글랏 빌레셀이 갈릴리와 길르앗 땅을 빼앗고 주민을 끌고 가요. 호세아가 반역해 베가를 죽이고 왕이 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"rivalry","lead":"베가","target":"호세아","mode":"illustration","setting":"tent","effect":"speech","emotion":"worried","prop":"palace","beats":[{"action":"listen","duration":1,"actor":"베가"},{"action":"turn","duration":1.2,"actor":"베가"},{"action":"point","duration":1.5,"actor":"베가"},{"action":"lower","duration":1.8,"actor":"베가"},{"action":"turn","duration":1.5,"actor":"베가"},{"action":"stand","duration":1.2,"actor":"베가"}],"duration":8.2,"support":null,"ref":"열왕기하 15:27-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-18-01",
+      "code": "2ki",
+      "chapter": 18,
+      "title": "사마리아의 끝",
+      "actors": [
+        "히스기야"
+      ],
+      "object": "wall",
+      "ref": "열왕기하 18:9-12",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야 때 사마리아가 앗수르에 무너진 일을 다시 말해요. 이스라엘이 하나님의 목소리를 듣지 않고 언약을 어겼기 때문이에요. 언약을 어긴 결과예요."
+      ],
+      "study": "히스기야 때 사마리아가 앗수르에 무너진 일을 다시 말해요. 이스라엘이 하나님의 목소리를 듣지 않고 언약을 어겼기 때문이에요. 언약을 어긴 결과예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"히스기야","target":null,"mode":"illustration","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"},{"action":"extend","duration":1.5,"actor":"히스기야"},{"action":"pledge","duration":1.8,"actor":"히스기야"},{"action":"read","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"열왕기하 18:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-19-01",
+      "code": "2ki",
+      "chapter": 19,
+      "title": "베옷을 입고 구한 중보",
+      "actors": [
+        "히스기야",
+        "이사야"
+      ],
+      "object": "sackcloth",
+      "ref": "열왕기하 19:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야는 베옷을 입고 성전에 가며 이사야에게 사람을 보내 기도를 청해요."
+      ],
+      "study": "히스기야는 베옷을 입고 성전에 가며 이사야에게 사람을 보내 기도를 청해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"히스기야","target":"이사야","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"sackcloth","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"kneel","duration":1.2,"actor":"히스기야"},{"action":"lift","duration":1.5,"actor":"히스기야"},{"action":"pray","duration":1.8,"actor":"히스기야"},{"action":"pray","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"열왕기하 19:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-19-02",
+      "code": "2ki",
+      "chapter": 19,
+      "title": "이사야에게 보냄",
+      "actors": [
+        "히스기야",
+        "이사야"
+      ],
+      "object": "letter",
+      "ref": "열왕기하 19:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야가 굵은 베를 두르고 성전에 들어가, 신하들을 이사야에게 보내 기도를 부탁해요. 이사야는 두려워 말라, 산헤립이 돌아가리라 전해요."
+      ],
+      "study": "히스기야가 굵은 베를 두르고 성전에 들어가, 신하들을 이사야에게 보내 기도를 부탁해요. 이사야는 두려워 말라, 산헤립이 돌아가리라 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"히스기야","target":"이사야","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"letter","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"kneel","duration":1.2,"actor":"히스기야"},{"action":"lift","duration":1.5,"actor":"히스기야"},{"action":"pray","duration":1.8,"actor":"히스기야"},{"action":"pray","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"열왕기하 19:5-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-19-03",
+      "code": "2ki",
+      "chapter": 19,
+      "title": "이사야의 응답",
+      "actors": [
+        "이사야"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 19:20-34",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이사야가 하나님의 응답을 전해요. 하나님을 모욕한 교만한 앗수르 왕을 왔던 길로 돌려보내고, 다윗을 위해 예루살렘을 지키시리라고요."
+      ],
+      "study": "이사야가 하나님의 응답을 전해요. 하나님을 모욕한 교만한 앗수르 왕을 왔던 길로 돌려보내고, 다윗을 위해 예루살렘을 지키시리라고요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"crown","lead":"이사야","target":null,"mode":"illustration","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"이사야"},{"action":"kneel","duration":1.2,"actor":"이사야"},{"action":"receive","duration":1.5,"actor":"이사야"},{"action":"wear","duration":1.8,"actor":"이사야"},{"action":"rise","duration":1.5,"actor":"이사야"},{"action":"bow","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"열왕기하 19:20-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-23-01",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "요시야의 죽음",
+      "actors": [
+        "요시야"
+      ],
+      "object": "chariot",
+      "ref": "열왕기하 23:28",
+      "verseNumbers": [
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요시야가 므깃도에서 애굽 왕 느고를 막다 죽어요. 느고는 여호아하스를 끌고 가고 엘리아김을 여호야김으로 이름을 바꿔 왕으로 세워요."
+      ],
+      "study": "요시야가 므깃도에서 애굽 왕 느고를 막다 죽어요. 느고는 여호아하스를 끌고 가고 엘리아김을 여호야김으로 이름을 바꿔 왕으로 세워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"요시야","target":null,"mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"chariot","beats":[{"action":"startle","duration":1,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"},{"action":"kneel","duration":1.5,"actor":"요시야"},{"action":"cover-mouth","duration":1.8,"actor":"요시야"},{"action":"mourn","duration":1.5,"actor":"요시야"},{"action":"lower","duration":1.2,"actor":"요시야"}],"duration":8.2,"support":null,"ref":"열왕기하 23:28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-23-02",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "여호아하스가 폐위되고 여호야김이 세워지다",
+      "actors": [
+        "바로 느고",
+        "여호아하스(요시야의 아들)",
+        "여호야김"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 23:31-37",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 애굽 왕 느고가 여호아하스를 끌고 가고, 엘리아김을 여호야김으로 이름을 바꿔 왕으로 세워요. 유다 왕권이 애굽의 압력 아래 놓여요."
+      ],
+      "study": "애굽 왕 느고가 여호아하스를 끌고 가고, 엘리아김을 여호야김으로 이름을 바꿔 왕으로 세워요. 유다 왕권이 애굽의 압력 아래 놓여요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"바로 느고","target":"여호아하스(요시야의 아들)","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"바로 느고"},{"action":"lower","duration":1.2,"actor":"바로 느고"},{"action":"kneel","duration":1.5,"actor":"바로 느고"},{"action":"cover-mouth","duration":1.8,"actor":"바로 느고"},{"action":"mourn","duration":1.5,"actor":"바로 느고"},{"action":"lower","duration":1.2,"actor":"바로 느고"}],"duration":8.2,"support":null,"ref":"열왕기하 23:31-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-review-24-01",
+      "code": "2ki",
+      "chapter": 24,
+      "title": "시드기야",
+      "actors": [
+        "시드기야",
+        "느부갓네살"
+      ],
+      "object": "crown",
+      "ref": "열왕기하 24:18-20",
+      "verseNumbers": [
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 느부갓네살이 여호야긴의 숙부 맛다니야를 시드기야로 이름을 바꿔 왕으로 세워요. 시드기야도 악을 행하다 결국 바벨론을 배반해요."
+      ],
+      "study": "느부갓네살이 여호야긴의 숙부 맛다니야를 시드기야로 이름을 바꿔 왕으로 세워요. 시드기야도 악을 행하다 결국 바벨론을 배반해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "죽음·전쟁·정복의 결과를 직접적·그래픽하게 묘사하지 않고 인물의 반응과 상징 배치로 표현해요.",
+      "animation": {"version":2,"motif":"crown","lead":"시드기야","target":"느부갓네살","mode":"illustration","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"시드기야"},{"action":"kneel","duration":1.2,"actor":"시드기야"},{"action":"receive","duration":1.5,"actor":"시드기야"},{"action":"wear","duration":1.8,"actor":"시드기야"},{"action":"rise","duration":1.5,"actor":"시드기야"},{"action":"bow","duration":1.2,"actor":"시드기야"}],"duration":8.2,"support":null,"ref":"열왕기하 24:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
