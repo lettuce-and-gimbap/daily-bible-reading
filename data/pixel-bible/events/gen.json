@@ -2033,8 +2033,10 @@
       "chapter": 43,
       "title": "요셉의 집으로",
       "actors": [
-        "요셉",
-        "시므온"
+        "청지기",
+        "시므온",
+        "베냐민",
+        "유다"
       ],
       "object": "house",
       "ref": "창세기 43:15-25",
@@ -2059,7 +2061,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"요셉","target":"시므온","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"house","beats":[{"action":"look","duration":1,"actor":"요셉"},{"action":"walk","duration":1.2,"actor":"요셉"},{"action":"bow","duration":1.5,"actor":"요셉"},{"action":"extend","duration":1.8,"actor":"요셉"},{"action":"place","duration":1.5,"actor":"요셉"},{"action":"sit","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 43:15-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"welcome","lead":"청지기","target":"유다","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"joy","prop":"house","beats":[{"action":"listen","actor":"청지기","duration":1},{"action":"speak","actor":"청지기","duration":1.2},{"action":"signal","actor":"청지기","duration":1.5},{"action":"receive","actor":"청지기","duration":1.8},{"action":"pour","actor":"청지기","duration":1.5},{"action":"place","actor":"청지기","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 43:15-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-44-0",
@@ -2067,7 +2069,9 @@
       "chapter": 44,
       "title": "베냐민의 자루 속 은잔",
       "actors": [
-        "베냐민"
+        "청지기",
+        "베냐민",
+        "유다"
       ],
       "object": "cup",
       "ref": "창세기 44:1-13",
@@ -2096,7 +2100,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문의 핵심 물건으로 사건을 재구성한 픽셀 연출이에요. 세부 자세는 창작 표현이에요.",
-      "animation": {"version":2,"motif":"discover-cup","lead":"베냐민","target":null,"mode":"reconstruction","setting":"chamber","effect":"reveal","emotion":"surprised","prop":"cup","beats":[{"action":"bend","duration":1,"actor":"베냐민"},{"action":"open","duration":1.2,"actor":"베냐민"},{"action":"inspect","duration":1.5,"actor":"베냐민"},{"action":"grasp","duration":1.8,"actor":"베냐민"},{"action":"lift","duration":1.5,"actor":"베냐민"},{"action":"startle","duration":1.2,"actor":"베냐민"}],"duration":8.2,"support":null,"ref":"창세기 44:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"discover-cup","lead":"청지기","target":"베냐민","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"surprised","prop":"cup","beats":[{"action":"place","actor":"청지기","duration":1},{"action":"walk","actor":"청지기","duration":1.2},{"action":"point","actor":"청지기","duration":1.5},{"action":"open","actor":"청지기","duration":1.8},{"action":"inspect","actor":"청지기","duration":1.5},{"action":"show","actor":"청지기","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 44:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-44-1",
@@ -2104,7 +2108,9 @@
       "chapter": 44,
       "title": "엎드린 형제들",
       "actors": [
-        "요셉"
+        "유다",
+        "요셉",
+        "베냐민"
       ],
       "object": "cup",
       "ref": "창세기 44:14-17",
@@ -2122,7 +2128,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"plead","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cup","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"kneel","duration":1.2,"actor":"요셉"},{"action":"lift","duration":1.5,"actor":"요셉"},{"action":"pray","duration":1.8,"actor":"요셉"},{"action":"pray","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 44:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"plead","lead":"유다","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"cup","beats":[{"action":"walk","actor":"유다","duration":1},{"action":"bow","actor":"유다","duration":1.2},{"action":"kneel","actor":"유다","duration":1.5},{"action":"speak","actor":"유다","duration":1.8},{"action":"listen","actor":"유다","duration":1.5},{"action":"lower","actor":"유다","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 44:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-45-2",
@@ -4845,8 +4851,7 @@
       "actors": [
         "르우벤",
         "야곱",
-        "베냐민",
-        "시므온"
+        "베냐민"
       ],
       "object": "scene-marker",
       "ref": "창세기 42:26-38",
@@ -4873,7 +4878,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"르우벤"},{"action":"speak","duration":1.2,"actor":"르우벤"},{"action":"point","duration":1.5,"actor":"르우벤"},{"action":"listen","duration":1.8,"actor":"르우벤"},{"action":"lower","duration":1.5,"actor":"르우벤"},{"action":"bow","duration":1.2,"actor":"르우벤"}],"duration":8.2,"support":null,"ref":"창세기 42:26-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"carry","actor":"르우벤","duration":1},{"action":"open","actor":"르우벤","duration":1.2},{"action":"startle","actor":"르우벤","duration":1.5},{"action":"speak","actor":"르우벤","duration":1.8},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"lower","actor":"르우벤","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:26-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-43-0",
@@ -4955,8 +4960,8 @@
       "title": "야곱이 요셉의 생존 소식에 기운을 되찾다",
       "actors": [
         "야곱",
-        "요셉",
-        "바로"
+        "유다",
+        "베냐민"
       ],
       "object": "scene-marker",
       "ref": "창세기 45:25-28",
@@ -4974,7 +4979,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"home","effect":"symbol","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"startle","actor":"야곱","duration":1.2},{"action":"inspect","actor":"야곱","duration":1.5},{"action":"smile","actor":"야곱","duration":1.8},{"action":"rise","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 45:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"유다","mode":"reconstruction","setting":"home","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"startle","actor":"야곱","duration":1.2},{"action":"inspect","actor":"야곱","duration":1.5},{"action":"smile","actor":"야곱","duration":1.8},{"action":"rise","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 45:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-47-0",

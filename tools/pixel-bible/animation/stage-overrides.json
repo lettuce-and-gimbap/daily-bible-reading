@@ -859,6 +859,117 @@
         }
       ]
     },
+    "66": {
+      "lead": "청지기",
+      "target": "유다",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "청지기",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "청지기",
+          "duration": 1.2
+        },
+        {
+          "action": "signal",
+          "actor": "청지기",
+          "duration": 1.5
+        },
+        {
+          "action": "receive",
+          "actor": "청지기",
+          "duration": 1.8
+        },
+        {
+          "action": "pour",
+          "actor": "청지기",
+          "duration": 1.5
+        },
+        {
+          "action": "place",
+          "actor": "청지기",
+          "duration": 1.2
+        }
+      ]
+    },
+    "67": {
+      "lead": "청지기",
+      "target": "베냐민",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "place",
+          "actor": "청지기",
+          "duration": 1
+        },
+        {
+          "action": "walk",
+          "actor": "청지기",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "청지기",
+          "duration": 1.5
+        },
+        {
+          "action": "open",
+          "actor": "청지기",
+          "duration": 1.8
+        },
+        {
+          "action": "inspect",
+          "actor": "청지기",
+          "duration": 1.5
+        },
+        {
+          "action": "show",
+          "actor": "청지기",
+          "duration": 1.2
+        }
+      ]
+    },
+    "68": {
+      "lead": "유다",
+      "target": "요셉",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "유다",
+          "duration": 1
+        },
+        {
+          "action": "bow",
+          "actor": "유다",
+          "duration": 1.2
+        },
+        {
+          "action": "kneel",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "listen",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "유다",
+          "duration": 1.2
+        }
+      ]
+    },
     "75": {
       "mode": "illustration"
     },
@@ -1669,6 +1780,43 @@
         }
       ]
     },
+    "148": {
+      "lead": "르우벤",
+      "target": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "carry",
+          "actor": "르우벤",
+          "duration": 1
+        },
+        {
+          "action": "open",
+          "actor": "르우벤",
+          "duration": 1.2
+        },
+        {
+          "action": "startle",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "르우벤",
+          "duration": 1.8
+        },
+        {
+          "action": "listen",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "르우벤",
+          "duration": 1.2
+        }
+      ]
+    },
     "150": {
       "mode": "reconstruction",
       "lead": "요셉",
@@ -1711,9 +1859,9 @@
     "151": {
       "mode": "reconstruction",
       "lead": "야곱",
-      "target": "요셉",
+      "target": "유다",
       "setting": "home",
-      "effect": "symbol",
+      "effect": "none",
       "beats": [
         {
           "action": "listen",
