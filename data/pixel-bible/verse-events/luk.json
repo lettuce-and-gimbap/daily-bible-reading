@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "luk",
-  "scope": "누가복음 1–3장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "누가복음 1–5장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -132,6 +132,87 @@
         "role": "누가복음 3장 관련 인물",
         "refs": [
           "누가복음 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "마귀",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      },
+      {
+        "name": "무리",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      },
+      {
+        "name": "귀신 들린 사람",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      },
+      {
+        "name": "시몬의 장모",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      },
+      {
+        "name": "환자들",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      },
+      {
+        "name": "회당 맡은 자",
+        "role": "누가복음 4장 관련 인물",
+        "refs": [
+          "누가복음 4장"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "name": "시몬",
+        "role": "누가복음 5장 관련 인물",
+        "refs": [
+          "누가복음 5장"
+        ]
+      },
+      {
+        "name": "무리",
+        "role": "누가복음 5장 관련 인물",
+        "refs": [
+          "누가복음 5장"
+        ]
+      },
+      {
+        "name": "어부들",
+        "role": "누가복음 5장 관련 인물",
+        "refs": [
+          "누가복음 5장"
+        ]
+      },
+      {
+        "name": "야고보",
+        "role": "누가복음 5장 관련 인물",
+        "refs": [
+          "누가복음 5장"
+        ]
+      },
+      {
+        "name": "요한",
+        "role": "누가복음 5장 관련 인물",
+        "refs": [
+          "누가복음 5장"
         ]
       }
     ]
@@ -12273,6 +12354,3925 @@
             "하나님"
           ]
         }
+      }
+    },
+    {
+      "id": "verse-luk-4-1",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "성령에 이끌려 요단에서 광야로 가심",
+      "ref": "누가복음 4:1",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "성령에 이끌려 요단에서 광야로 가심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "성령에 이끌려 요단에서 광야로 가심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-2",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "40일 동안 시험받고 금식 끝에 시장하심",
+      "ref": "누가복음 4:2",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "40일 동안 시험받고 금식 끝에 시장하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "40일 동안 시험받고 금식 끝에 시장하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-3",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "마귀가 돌을 떡으로 만들라고 유혹함",
+      "ref": "누가복음 4:3",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마귀가 돌을 떡으로 만들라고 유혹함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "마귀가 돌을 떡으로 만들라고 유혹함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-4",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "떡만으로 살지 않는다는 말씀으로 답하심",
+      "ref": "누가복음 4:4",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "떡만으로 살지 않는다는 말씀으로 답하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "떡만으로 살지 않는다는 말씀으로 답하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-5",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "마귀가 세상의 나라들을 보여 줌",
+      "ref": "누가복음 4:5",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마귀가 세상의 나라들을 보여 줌 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "마귀가 세상의 나라들을 보여 줌 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "마귀가 세상의 나라들을 보여 줌",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-6",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "권위와 영광을 주겠다고 마귀가 주장함",
+      "ref": "누가복음 4:6",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "권위와 영광을 주겠다고 마귀가 주장함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "권위와 영광을 주겠다고 마귀가 주장함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "권위와 영광을 주겠다고 마귀가 주장함",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-7",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "자신에게 절하라고 마귀가 요구함",
+      "ref": "누가복음 4:7",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "자신에게 절하라고 마귀가 요구함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "자신에게 절하라고 마귀가 요구함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "자신에게 절하라고 마귀가 요구함",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-8",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "하나님만 경배하고 섬기라는 말씀으로 답하심",
+      "ref": "누가복음 4:8",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하나님만 경배하고 섬기라는 말씀으로 답하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "하나님만 경배하고 섬기라는 말씀으로 답하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-9",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "성전 꼭대기에서 뛰어내리라고 유혹함",
+      "ref": "누가복음 4:9",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "성전 꼭대기에서 뛰어내리라고 유혹함 장면을 해당 절의 흐름에 맞춰 보여요. 실제로 뛰어내리는 동작은 넣지 않아요."
+      ],
+      "study": "성전 꼭대기에서 뛰어내리라고 유혹함 장면을 해당 절의 흐름에 맞춰 보여요. 실제로 뛰어내리는 동작은 넣지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-10",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "마귀가 천사의 보호에 관한 성경을 인용함",
+      "ref": "누가복음 4:10",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마귀가 천사의 보호에 관한 성경을 인용함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "마귀가 천사의 보호에 관한 성경을 인용함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "마귀가 천사의 보호에 관한 성경을 인용함",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-11",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "발이 돌에 부딪치지 않는다는 구절로 유혹을 이어감",
+      "ref": "누가복음 4:11",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "발이 돌에 부딪치지 않는다는 구절로 유혹을 이어감 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "발이 돌에 부딪치지 않는다는 구절로 유혹을 이어감 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "발이 돌에 부딪치지 않는다는 구절로 유혹을 이어감",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-12",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "하나님을 시험하지 말라는 말씀으로 거절하심",
+      "ref": "누가복음 4:12",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하나님을 시험하지 말라는 말씀으로 거절하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "하나님을 시험하지 말라는 말씀으로 거절하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-13",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "마귀가 시험을 마치고 잠시 떠남",
+      "ref": "누가복음 4:13",
+      "actors": [
+        "예수",
+        "마귀"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마귀가 시험을 마치고 잠시 떠남 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "마귀가 시험을 마치고 잠시 떠남 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마귀",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-14",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "성령의 능력으로 갈릴리에 돌아오심",
+      "ref": "누가복음 4:14",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "성령의 능력으로 갈릴리에 돌아오심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "성령의 능력으로 갈릴리에 돌아오심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-15",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "여러 회당에서 가르치며 칭송받으심",
+      "ref": "누가복음 4:15",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여러 회당에서 가르치며 칭송받으심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "여러 회당에서 가르치며 칭송받으심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-16",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "나사렛 회당에서 성경을 읽으려고 일어서심",
+      "ref": "누가복음 4:16",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "나사렛 회당에서 성경을 읽으려고 일어서심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "나사렛 회당에서 성경을 읽으려고 일어서심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-17",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "이사야의 두루마리를 받아 해당 부분을 찾으심",
+      "ref": "누가복음 4:17",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "이사야의 두루마리를 받아 해당 부분을 찾으심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "이사야의 두루마리를 받아 해당 부분을 찾으심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-18",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "가난한 이와 포로와 보지 못하는 이의 회복을 읽으심",
+      "ref": "누가복음 4:18",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가난한 이와 포로와 보지 못하는 이의 회복을 읽으심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "가난한 이와 포로와 보지 못하는 이의 회복을 읽으심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-19",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        19
+      ],
+      "title": "주의 은혜의 해를 선포하는 말씀을 읽으심",
+      "ref": "누가복음 4:19",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주의 은혜의 해를 선포하는 말씀을 읽으심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "주의 은혜의 해를 선포하는 말씀을 읽으심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-20",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        20
+      ],
+      "title": "두루마리를 돌려주고 앉으시자 모두 주목함",
+      "ref": "누가복음 4:20",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "두루마리를 돌려주고 앉으시자 모두 주목함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "두루마리를 돌려주고 앉으시자 모두 주목함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-21",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        21
+      ],
+      "title": "읽은 말씀이 오늘 이루어졌다고 선언하심",
+      "ref": "누가복음 4:21",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "읽은 말씀이 오늘 이루어졌다고 선언하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "읽은 말씀이 오늘 이루어졌다고 선언하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-22",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        22
+      ],
+      "title": "회중이 은혜로운 말에 놀라며 요셉의 아들인지 물음",
+      "ref": "누가복음 4:22",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "회중이 은혜로운 말에 놀라며 요셉의 아들인지 물음 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "회중이 은혜로운 말에 놀라며 요셉의 아들인지 물음 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-23",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        23
+      ],
+      "title": "고향에서도 기적을 요구할 것을 지적하심",
+      "ref": "누가복음 4:23",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "고향에서도 기적을 요구할 것을 지적하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "고향에서도 기적을 요구할 것을 지적하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-24",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        24
+      ],
+      "title": "선지자가 고향에서 환영받지 못한다고 말씀하심",
+      "ref": "누가복음 4:24",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "선지자가 고향에서 환영받지 못한다고 말씀하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "선지자가 고향에서 환영받지 못한다고 말씀하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-25",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        25
+      ],
+      "title": "엘리야 시대 3년 6개월 가뭄과 과부들을 언급하심",
+      "ref": "누가복음 4:25",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리야 시대 3년 6개월 가뭄과 과부들을 언급하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "엘리야 시대 3년 6개월 가뭄과 과부들을 언급하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "illustration",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "엘리야 시대 3년 6개월 가뭄과 과부들을 언급하심",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-26",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        26
+      ],
+      "title": "엘리야가 사렙다 과부에게 보내졌음을 말씀하심",
+      "ref": "누가복음 4:26",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리야가 사렙다 과부에게 보내졌음을 말씀하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "엘리야가 사렙다 과부에게 보내졌음을 말씀하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "illustration",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "엘리야가 사렙다 과부에게 보내졌음을 말씀하심",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-27",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        27
+      ],
+      "title": "엘리사 때 수리아 사람 나아만의 치유를 언급하심",
+      "ref": "누가복음 4:27",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사 때 수리아 사람 나아만의 치유를 언급하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "엘리사 때 수리아 사람 나아만의 치유를 언급하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "illustration",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "엘리사 때 수리아 사람 나아만의 치유를 언급하심",
+            "발화와 인용",
+            "본문의 맥락"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-4-28",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        28
+      ],
+      "title": "회당 사람들이 말을 듣고 크게 화냄",
+      "ref": "누가복음 4:28",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "회당 사람들이 말을 듣고 크게 화냄 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "회당 사람들이 말을 듣고 크게 화냄 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-29",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        29
+      ],
+      "title": "사람들이 예수를 벼랑까지 끌고 가 밀치려 함",
+      "ref": "누가복음 4:29",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사람들이 예수를 벼랑까지 끌고 가 밀치려 함 장면을 해당 절의 흐름에 맞춰 보여요. 추락이나 신체 손상은 재현하지 않아요."
+      ],
+      "study": "사람들이 예수를 벼랑까지 끌고 가 밀치려 함 장면을 해당 절의 흐름에 맞춰 보여요. 추락이나 신체 손상은 재현하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-30",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        30
+      ],
+      "title": "예수께서 사람들 사이를 지나 떠나심",
+      "ref": "누가복음 4:30",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 사람들 사이를 지나 떠나심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "예수께서 사람들 사이를 지나 떠나심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-31",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        31
+      ],
+      "title": "가버나움에서 안식일에 가르치심",
+      "ref": "누가복음 4:31",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가버나움에서 안식일에 가르치심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "가버나움에서 안식일에 가르치심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-32",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        32
+      ],
+      "title": "사람들이 말씀의 권위에 놀람",
+      "ref": "누가복음 4:32",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사람들이 말씀의 권위에 놀람 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "사람들이 말씀의 권위에 놀람 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-33",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        33
+      ],
+      "title": "회당에서 귀신 들린 사람이 소리침",
+      "ref": "누가복음 4:33",
+      "actors": [
+        "예수",
+        "귀신 들린 사람"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "회당에서 귀신 들린 사람이 소리침 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "회당에서 귀신 들린 사람이 소리침 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "귀신 들린 사람",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-34",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        34
+      ],
+      "title": "귀신이 예수를 거룩한 자라고 외침",
+      "ref": "누가복음 4:34",
+      "actors": [
+        "예수",
+        "귀신 들린 사람"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "귀신이 예수를 거룩한 자라고 외침 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "귀신이 예수를 거룩한 자라고 외침 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "귀신 들린 사람",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-35",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        35
+      ],
+      "title": "예수의 명령에 귀신이 떠나고 사람은 상하지 않음",
+      "ref": "누가복음 4:35",
+      "actors": [
+        "예수",
+        "귀신 들린 사람"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수의 명령에 귀신이 떠나고 사람은 상하지 않음 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "예수의 명령에 귀신이 떠나고 사람은 상하지 않음 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "귀신 들린 사람",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "release",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "signal",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "fall",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-36",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        36
+      ],
+      "title": "사람들이 권위 있는 명령에 놀라 서로 말함",
+      "ref": "누가복음 4:36",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사람들이 권위 있는 명령에 놀라 서로 말함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "사람들이 권위 있는 명령에 놀라 서로 말함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-37",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        37
+      ],
+      "title": "주변 지역으로 소문이 퍼짐",
+      "ref": "누가복음 4:37",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주변 지역으로 소문이 퍼짐 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "주변 지역으로 소문이 퍼짐 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-38",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        38
+      ],
+      "title": "시몬의 집에서 열병 앓는 장모를 위해 간구함",
+      "ref": "누가복음 4:38",
+      "actors": [
+        "예수",
+        "시몬의 장모"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시몬의 집에서 열병 앓는 장모를 위해 간구함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "시몬의 집에서 열병 앓는 장모를 위해 간구함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "시몬의 장모",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:38",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-39",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        39
+      ],
+      "title": "열병이 떠나자 장모가 일어나 섬김",
+      "ref": "누가복음 4:39",
+      "actors": [
+        "예수",
+        "시몬의 장모"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "열병이 떠나자 장모가 일어나 섬김 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "열병이 떠나자 장모가 일어나 섬김 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "시몬의 장모",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "heal",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:39",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-40",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        40
+      ],
+      "title": "해 질 무렵 환자들에게 일일이 손을 얹어 고치심",
+      "ref": "누가복음 4:40",
+      "actors": [
+        "예수",
+        "환자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "해 질 무렵 환자들에게 일일이 손을 얹어 고치심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "해 질 무렵 환자들에게 일일이 손을 얹어 고치심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "환자들",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "heal",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "touch",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:40",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-41",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        41
+      ],
+      "title": "귀신들이 정체를 외치자 말하지 못하게 하심",
+      "ref": "누가복음 4:41",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "귀신들이 정체를 외치자 말하지 못하게 하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "귀신들이 정체를 외치자 말하지 못하게 하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:41",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-42",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        42
+      ],
+      "title": "새벽 한적한 곳에서 만난 무리가 떠나지 말라 만류함",
+      "ref": "누가복음 4:42",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "새벽 한적한 곳에서 만난 무리가 떠나지 말라 만류함 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "새벽 한적한 곳에서 만난 무리가 떠나지 말라 만류함 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:42",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-43",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        43
+      ],
+      "title": "다른 동네에도 하나님 나라를 전할 사명을 밝히심",
+      "ref": "누가복음 4:43",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "다른 동네에도 하나님 나라를 전할 사명을 밝히심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "다른 동네에도 하나님 나라를 전할 사명을 밝히심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:43",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-4-44",
+      "code": "luk",
+      "chapter": 4,
+      "verseNumbers": [
+        44
+      ],
+      "title": "여러 회당을 다니며 복음을 전하심",
+      "ref": "누가복음 4:44",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여러 회당을 다니며 복음을 전하심 장면을 해당 절의 흐름에 맞춰 보여요."
+      ],
+      "study": "여러 회당을 다니며 복음을 전하심 장면을 해당 절의 흐름에 맞춰 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 4:44",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-1",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        1
+      ],
+      "title": "호숫가에 모인 무리",
+      "ref": "누가복음 5:1",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "무리가 말씀을 들으려고 예수 곁에 모여요."
+      ],
+      "study": "무리가 말씀을 들으려고 예수 곁에 모여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-2",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        2
+      ],
+      "title": "그물을 씻는 어부들",
+      "ref": "누가복음 5:2",
+      "actors": [
+        "어부들",
+        "예수"
+      ],
+      "object": "net",
+      "narrationOnly": true,
+      "lines": [
+        "배 두 척 곁에서 어부들이 그물을 씻어요."
+      ],
+      "study": "배 두 척 곁에서 어부들이 그물을 씻어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "어부들",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "net",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "reach",
+            "actor": "어부들",
+            "duration": 1
+          },
+          {
+            "action": "grasp",
+            "actor": "어부들",
+            "duration": 1.2
+          },
+          {
+            "action": "scoop",
+            "actor": "어부들",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "어부들",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "어부들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "어부들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-3",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        3
+      ],
+      "title": "시몬의 배에서 가르치심",
+      "ref": "누가복음 5:3",
+      "actors": [
+        "예수",
+        "시몬",
+        "무리"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 시몬의 배를 조금 떼어 놓게 하시고 앉아서 가르치세요."
+      ],
+      "study": "예수께서 시몬의 배를 조금 떼어 놓게 하시고 앉아서 가르치세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "시몬",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "row",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-4",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        4
+      ],
+      "title": "깊은 곳에 그물을 내리라",
+      "ref": "누가복음 5:4",
+      "actors": [
+        "예수",
+        "시몬"
+      ],
+      "object": "net",
+      "narrationOnly": true,
+      "lines": [
+        "가르침을 마치고 시몬에게 깊은 곳에서 그물을 내리라고 하세요."
+      ],
+      "study": "가르침을 마치고 시몬에게 깊은 곳에서 그물을 내리라고 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "시몬",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "net",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "row",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-5",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        5
+      ],
+      "title": "말씀을 의지한 시몬",
+      "ref": "누가복음 5:5",
+      "actors": [
+        "시몬",
+        "예수"
+      ],
+      "object": "net",
+      "narrationOnly": true,
+      "lines": [
+        "시몬이 밤새 허탕쳤지만 말씀을 따라 그물을 내리겠다고 답해요."
+      ],
+      "study": "시몬이 밤새 허탕쳤지만 말씀을 따라 그물을 내리겠다고 답해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "net",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "시몬",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "시몬",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "grasp",
+            "actor": "시몬",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "throw",
+            "actor": "시몬",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-6",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        6
+      ],
+      "title": "찢어질 만큼 가득한 그물",
+      "ref": "누가복음 5:6",
+      "actors": [
+        "시몬",
+        "어부들"
+      ],
+      "object": "net",
+      "narrationOnly": true,
+      "lines": [
+        "많은 고기가 잡혀 그물이 찢어질 지경에 이르러요."
+      ],
+      "study": "많은 고기가 잡혀 그물이 찢어질 지경에 이르러요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬",
+        "target": "어부들",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "net-catch",
+        "emotion": "neutral",
+        "prop": "net",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "grasp",
+            "actor": "시몬",
+            "duration": 1
+          },
+          {
+            "action": "pull",
+            "actor": "시몬",
+            "duration": 1.2
+          },
+          {
+            "action": "brace",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "시몬",
+            "duration": 1.8
+          },
+          {
+            "action": "startle",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "시몬",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-7",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        7
+      ],
+      "title": "다른 배에 도움을 청함",
+      "ref": "누가복음 5:7",
+      "actors": [
+        "시몬",
+        "어부들"
+      ],
+      "object": "net",
+      "narrationOnly": true,
+      "lines": [
+        "동료들에게 손짓하고 두 배가 물고기로 가득 차요."
+      ],
+      "study": "동료들에게 손짓하고 두 배가 물고기로 가득 차요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬",
+        "target": "어부들",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "net",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "signal",
+            "actor": "시몬",
+            "duration": 1
+          },
+          {
+            "action": "row",
+            "actor": "시몬",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "시몬",
+            "duration": 1.8
+          },
+          {
+            "action": "load",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "brace",
+            "actor": "시몬",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-8",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        8
+      ],
+      "title": "엎드려 고백하는 베드로",
+      "ref": "누가복음 5:8",
+      "actors": [
+        "시몬",
+        "예수"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "시몬 베드로가 예수 앞에 엎드려 죄인임을 고백해요."
+      ],
+      "study": "시몬 베드로가 예수 앞에 엎드려 죄인임을 고백해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "시몬",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "시몬",
+            "duration": 1.2
+          },
+          {
+            "action": "kneel",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "prostrate",
+            "actor": "시몬",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "시몬",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-9",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        9
+      ],
+      "title": "동료들도 놀람",
+      "ref": "누가복음 5:9",
+      "actors": [
+        "어부들",
+        "시몬"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "함께 있던 동료들도 물고기의 양을 보고 놀라요."
+      ],
+      "study": "함께 있던 동료들도 물고기의 양을 보고 놀라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "어부들",
+        "target": "시몬",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "어부들",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "어부들",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "어부들",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "어부들",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "어부들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "어부들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-10",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        10
+      ],
+      "title": "사람을 얻을 사명",
+      "ref": "누가복음 5:10",
+      "actors": [
+        "예수",
+        "시몬",
+        "야고보",
+        "요한"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "야고보와 요한도 놀라고 예수께서 시몬에게 새로운 사명을 말씀하세요."
+      ],
+      "study": "야고보와 요한도 놀라고 예수께서 시몬에게 새로운 사명을 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "시몬",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-5-11",
+      "code": "luk",
+      "chapter": 5,
+      "verseNumbers": [
+        11
+      ],
+      "title": "배를 두고 따름",
+      "ref": "누가복음 5:11",
+      "actors": [
+        "시몬",
+        "야고보",
+        "요한",
+        "예수"
+      ],
+      "object": "boat",
+      "narrationOnly": true,
+      "lines": [
+        "육지에 배를 대고 모든 것을 두고 예수를 따라 나서요."
+      ],
+      "study": "육지에 배를 대고 모든 것을 두고 예수를 따라 나서요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시몬",
+        "target": "야고보",
+        "mode": "reconstruction",
+        "setting": "shore",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "boat",
+        "propFixed": true,
+        "beats": [
+          {
+            "action": "row",
+            "actor": "시몬",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "시몬",
+            "duration": 1.2
+          },
+          {
+            "action": "rise",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "시몬",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "시몬",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "시몬",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 5:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
     }
   ]
