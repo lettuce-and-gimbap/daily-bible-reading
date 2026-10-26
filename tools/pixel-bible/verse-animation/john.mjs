@@ -1,6 +1,6 @@
 export const chapters={},additionalPeople={};
-const fix={call:'signal',welcome:'walk',hear:'listen',arrive:'walk',leave:'walk',draw:'scoop',offer:'extend',depart:'walk',row:'walk',murmur:'speak',argue:'speak',whisper:'speak',promise:'speak',proclaim:'speak',accuse:'speak',judge:'point',shine:'light',witness:'look',fill:'pour',overturn:'push',rejoice:'smile',approach:'walk',question:'speak',answer:'speak',invite:'reach',recognize:'look',take:'receive',raise:'lift',heal:'touch',teach:'speak',follow:'walk',gather:'gather',return:'walk',report:'speak',send:'release',prepare:'place',enter:'walk',appear:'look',believe:'bow',testify:'speak',baptize:'pour',depart:'walk',celebrate:'smile',serve:'extend',cleanse:'wash',wash:'smooth',drive:'push',sell:'release',exchange:'turn',remember:'look',rebuke:'point',seek:'inspect',search:'inspect',find:'look',come:'walk',draw:'scoop',drink:'pour',give:'release',feed:'extend',cross:'walk',lift:'raise',receive:'hold',speak:'speak',listen:'listen',look:'look',touch:'touch',walk:'walk',wait:'wait',stand:'stand',sit:'sit',rise:'rise',turn:'turn',point:'point',reach:'reach',hold:'hold',place:'place',carry:'carry',bless:'bless',bow:'bow',kneel:'kneel',pray:'pray',read:'read',write:'write',eat:'eat',sleep:'sleep',fall:'fall',open:'open',hide:'hide',signal:'signal',lower:'lower',pour:'pour',strike:'strike',release:'release',startle:'startle',retreat:'retreat',run:'run',inspect:'inspect',brace:'brace',remove:'remove-shoe',gather:'gather',share:'extend',break:'break-bread',climb:'step',light:'light',sweep:'smooth',ask:'speak',come:'walk',remain:'wait',reveal:'open',proclaim:'speak',witness:'look',test:'inspect',marvel:'startle',go:'walk',follow:'walk',beloved:'bless',deny:'turn',teach:'speak',know:'look',receive:'hold',see:'look',drink:'pour',save:'lift',sacrifice:'release',lift:'lift',scatter:'scatter',rise:'rise',carry:'carry',greet:'bless',prophesy:'speak',seek:'inspect',bring:'carry',restore:'heal',hide:'hide',write:'write',summon:'signal',expel:'push',hesitate:'wait',warn:'speak',reveal:'open',sweep:'smooth',retreat:'retreat',depart:'walk',return:'walk',lead:'walk',follow:'walk',scatter:'scatter',summon:'signal',expel:'push',wash:'smooth',cleanse:'wash',kneel:'kneel',withdraw:'retreat',defend:'speak',summon:'signal',question:'speak',answer:'speak',testify:'speak',accuse:'speak',hesitate:'wait',warn:'speak',call:'signal',open:'open',lead:'walk',run:'run',retreat:'retreat',brace:'brace',raise:'lift',proclaim:'speak'};
-const propFix={light:'lamp',fig:'scene-marker',jar:'water',whip:'staff',temple:'scroll',stone:'stone',water:'water',wine:'wine',bread:'bread',fig:'fig-tree',sheep:'sheep',lamb:'sheep',fish:'fish',coin:'coin',cross:'cross',tomb:'tomb',scroll:'scroll',table:'table',well:'well',boat:'boat',staff:'staff',robe:'robe',house:'house',basket:'basket',lamp:'lamp',door:'gate',field:'field',vine:'vine',net:'net',hand:'scene-marker'};
+const fix={call:'signal',welcome:'walk',hear:'listen',arrive:'walk',leave:'walk',draw:'scoop',offer:'extend',depart:'walk',row:'walk',murmur:'speak',argue:'speak',whisper:'speak',promise:'speak',proclaim:'speak',accuse:'speak',judge:'point',shine:'light',witness:'look',fill:'pour',overturn:'push',rejoice:'smile',approach:'walk',question:'speak',answer:'speak',invite:'reach',recognize:'look',take:'receive',raise:'lift',heal:'touch',teach:'speak',follow:'walk',gather:'gather',return:'walk',report:'speak',send:'release',prepare:'place',enter:'walk',appear:'look',believe:'bow',testify:'speak',baptize:'pour',depart:'walk',celebrate:'smile',serve:'extend',cleanse:'wash',wash:'smooth',drive:'push',sell:'release',exchange:'turn',remember:'look',rebuke:'point',seek:'inspect',search:'inspect',find:'look',come:'walk',draw:'scoop',drink:'pour',give:'release',feed:'extend',cross:'walk',lift:'raise',receive:'hold',speak:'speak',listen:'listen',look:'look',touch:'touch',walk:'walk',wait:'wait',stand:'stand',sit:'sit',rise:'rise',turn:'turn',point:'point',reach:'reach',hold:'hold',place:'place',carry:'carry',bless:'bless',bow:'bow',kneel:'kneel',pray:'pray',read:'read',write:'write',eat:'eat',sleep:'sleep',fall:'fall',open:'open',hide:'hide',signal:'signal',lower:'lower',pour:'pour',strike:'strike',release:'release',startle:'startle',retreat:'retreat',run:'run',inspect:'inspect',brace:'brace',remove:'remove-shoe',gather:'gather',share:'extend',break:'break-bread',climb:'step',light:'light',sweep:'smooth',ask:'speak',come:'walk',remain:'wait',reveal:'open',proclaim:'speak',witness:'look',test:'inspect',marvel:'startle',go:'walk',follow:'walk',beloved:'bless',deny:'turn',teach:'speak',know:'look',receive:'hold',see:'look',drink:'pour',save:'lift',sacrifice:'release',lift:'lift',scatter:'scatter',rise:'rise',carry:'carry',greet:'bless',prophesy:'speak',seek:'inspect',bring:'carry',restore:'heal',hide:'hide',write:'write',summon:'signal',expel:'push',hesitate:'wait',warn:'speak',reveal:'open',sweep:'smooth',retreat:'retreat',depart:'walk',return:'walk',lead:'walk',follow:'walk',scatter:'scatter',summon:'signal',expel:'push',wash:'smooth',cleanse:'wash',kneel:'kneel',withdraw:'retreat',defend:'speak',summon:'signal',question:'speak',answer:'speak',testify:'speak',accuse:'speak',hesitate:'wait',warn:'speak',call:'signal',open:'open',lead:'walk',run:'run',retreat:'retreat',brace:'brace',raise:'lift',proclaim:'speak',rest:'wait',weep:'kneel',move:'push',comfort:'bless',remove:'remove-shoe',prune:'cut',cleanse:'wash',grow:'rise',endure:'wait',appoint:'signal',prepare:'place',plot:'speak',wipe:'smooth',ride:'sit',cleanse:'smooth',love:'bless'};
+const propFix={light:'lamp',fig:'scene-marker',jar:'water',whip:'staff',temple:'scroll',stone:'stone',water:'water',wine:'wine',bread:'bread',fig:'fig-tree',sheep:'sheep',lamb:'sheep',fish:'fish',coin:'coin',cross:'cross',tomb:'tomb',scroll:'scroll',table:'table',well:'well',boat:'boat',staff:'staff',robe:'robe',house:'house',basket:'basket',lamp:'lamp',door:'gate',field:'field',vine:'vine',net:'net',hand:'scene-marker', 'palm-branch':'palm', council:'scroll'};
 const add=(chapter,rows,ranges,extras=[],effects={})=>{additionalPeople[chapter]=extras.map(name=>({name,role:`요한복음 ${chapter}장 관련 인물`,refs:[`요한복음 ${chapter}장`]}));chapters[chapter]=[];for(const [i,line]of rows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to);if(!g)throw Error(`Missing John ${chapter}:${verse} range`);const actions=g.actions.map(a=>fix[a]||a),scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:propFix[g.prop]||g.prop};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand']]));if(effects[verse])scene.effect=effects[verse];chapters[chapter].push(scene)}};
 add(1,`
 태초부터 계신 말씀|말씀은 태초부터 계셨고 하나님과 함께 계셨어요.
@@ -558,3 +558,240 @@ add(10,`
 {from:31,to:39,actors:["예수","유대인들"],setting:"temple",prop:"stone",actions:["raise","question","accuse","teach","point","retreat"]},
 {from:40,to:42,actors:["예수","무리","요한의 제자들"],setting:"river",prop:"water",actions:["depart","gather","testify","listen","believe","remain"]}
 ],["예수","목자","양","문지기","낯선 이","선한 목자","삯꾼","이리","유대인들","무리","요한의 제자들"]);
+add(11,`
+베다니의 병든 나사로|마리아와 마르다의 마을 베다니에서 그들의 오라버니 나사로가 병들어요.
+향유를 부었던 마리아|요한은 이 마리아가 향유를 붓고 머리털로 예수의 발을 닦았던 사람이라고 알려 줘요.
+예수께 전한 자매의 소식|마리아와 마르다는 사람을 보내 사랑하는 나사로가 병들었다고 예수께 알려요.
+하나님의 영광을 위한 병|예수께서는 이 병이 하나님의 영광과 아들의 영광을 드러낼 것이라고 말씀하세요.
+세 남매를 사랑하신 예수|예수께서 마르다와 마리아와 나사로를 사랑하셨다고 전해져요.
+이틀을 더 머무심|나사로의 병을 들으신 예수께서는 계시던 곳에서 이틀을 더 머무세요.
+유대로 다시 가자|예수께서는 제자들에게 유대로 다시 가자고 하세요.
+돌에 맞을까 염려하는 제자들|제자들은 방금도 유대인들이 예수를 돌로 치려 했는데 다시 가시려 하느냐고 걱정해요.
+낮의 빛을 따라 걷는 사람|예수께서는 낮에 다니는 이는 세상의 빛을 보아 넘어지지 않는다고 말씀하세요.
+밤에 걷는 위험|빛이 없는 밤에 다니는 이는 넘어질 수 있다고 제자들에게 설명하세요.
+잠든 나사로를 깨우러 감|예수께서는 친구 나사로가 잠들었으니 깨우러 가겠다고 하세요.
+잠이 낫게 하리라 생각한 제자들|제자들은 나사로가 잠들었다면 회복될 것이라고 생각해요.
+잠이 아니라 죽음을 말하심|제자들이 쉼으로 이해하지만 예수께서는 나사로의 죽음을 말씀하신 거예요.
+나사로가 죽었다고 밝히심|예수께서는 제자들이 알아듣도록 나사로가 죽었다고 분명히 말씀하세요.
+믿음을 위해 함께 가자|예수께서는 자신이 그곳에 없었던 일이 제자들의 믿음에 도움이 된다며 함께 가자고 하세요.
+도마의 결연한 말|도마는 다른 제자들에게 주와 함께 죽으러 가자고 말해요.
+무덤에 든 지 나흘|예수께서 베다니에 오셨을 때 나사로는 무덤에 든 지 이미 나흘이에요.
+예루살렘 가까운 베다니|베다니가 예루살렘에서 가까운 곳이라고 설명해요.
+자매를 찾아온 조문객들|많은 유대인이 나사로의 죽음을 위로하러 마르다와 마리아를 찾아와요.
+예수를 맞으러 나간 마르다|예수께서 오신다는 말을 듣고 마르다는 나가 맞고 마리아는 집에 남아요.
+늦게 오신 예수께 드린 말|마르다는 예수께서 계셨다면 오라버니가 죽지 않았을 것이라고 말해요.
+하나님께 구하실 것을 믿음|마르다는 지금도 예수께서 하나님께 구하는 것을 하나님이 주실 줄 안다고 고백해요.
+다시 살아날 나사로|예수께서는 마르다에게 오라버니가 다시 살아날 것이라고 말씀하세요.
+마지막 날 부활을 믿는 마르다|마르다는 마지막 날 부활 때 나사로가 살아날 줄 안다고 답해요.
+부활과 생명이신 예수|예수께서는 자신이 부활과 생명이며 믿는 이는 죽어도 살 것이라고 선포하세요.
+살아 믿는 이는 영원히 죽지 않음|예수께서는 살아서 믿는 이가 영원히 죽지 않는다고 말씀하시며 믿음을 물으세요.
+그리스도라 고백한 마르다|마르다는 예수가 그리스도이며 하나님의 아들이심을 믿는다고 고백해요.
+마리아를 조용히 부르는 마르다|마르다는 돌아가 동생 마리아를 조용히 불러 선생님이 오셔서 찾는다고 전해요.
+급히 일어나 예수께 가는 마리아|마리아는 그 말을 듣고 곧 일어나 예수께 나아가요.
+마을 밖에 머무신 예수|예수께서는 아직 마을에 들어오지 않고 마르다를 만난 곳에 머무세요.
+마리아를 따라간 조문객들|집에서 위로하던 유대인들은 마리아가 급히 나가는 것을 보고 무덤에 가는 줄 알고 따라가요.
+예수 발 앞에 엎드린 마리아|마리아는 예수께 와서 발 앞에 엎드리고 주께서 계셨다면 오라버니가 죽지 않았을 것이라 말해요.
+울음에 비통해하신 예수|예수께서는 마리아와 함께 온 이들의 울음을 보시고 깊이 비통해하시며 불쌍히 여기세요.
+무덤이 어디인지 물으심|예수께서는 나사로를 어디에 두었는지 물으시고 사람들은 와서 보시라고 답해요.
+눈물을 흘리신 예수|예수께서 나사로를 생각하며 눈물을 흘리세요.
+사랑을 알아본 유대인들|유대인들은 예수께서 나사로를 얼마나 사랑하셨는지 말해요.
+다른 표적을 떠올린 사람들|일부는 맹인의 눈을 뜨게 한 예수가 나사로를 죽지 않게 할 수 없었는지 의문을 말해요.
+돌로 막힌 무덤에 가심|예수께서는 다시 비통해하시며 돌로 막힌 굴 무덤으로 가세요.
+돌을 옮기라 하심|예수께서는 무덤의 돌을 옮기라고 하시고 마르다는 나흘이 되어 냄새가 날 것이라 염려해요.
+믿으면 영광을 보리라|예수께서는 믿으면 하나님의 영광을 보리라 하지 않았느냐고 마르다에게 상기시켜요.
+감사를 드리는 예수|사람들이 돌을 옮기자 예수께서는 하늘을 우러러 아버지께 감사 기도를 드리세요.
+둘러선 무리를 위한 기도|예수께서는 아버지가 늘 들으심을 알지만 둘러선 이들이 믿게 하려고 말한다고 하세요.
+나사로야 나오라|예수께서 큰 소리로 나사로를 부르며 무덤 밖으로 나오라고 명하세요.
+수의를 입고 나온 나사로|죽었던 나사로가 손발을 베로 감은 채 나오자 예수께서는 풀어 주어 다니게 하라고 하세요.
+표적을 보고 믿은 유대인들|마리아에게 왔다가 예수의 일을 본 많은 유대인이 예수를 믿어요.
+바리새인들에게 알린 이들|그 가운데 일부는 바리새인들에게 가서 예수의 일을 알립니다.
+공회를 모은 대제사장과 바리새인|대제사장들과 바리새인들은 공회를 모아 예수가 많은 표적을 행한다고 논의해요.
+로마의 개입을 두려워함|그들은 사람들이 예수를 믿으면 로마가 땅과 민족을 빼앗을까 염려해요.
+가야바의 정치적 계산|그해 대제사장 가야바는 상황을 모른다며 한 사람이 백성을 위해 죽는 편이 낫다고 말해요.
+민족을 위한 한 사람의 죽음|가야바는 온 민족이 망하지 않도록 한 사람이 죽는 것이 유익하다고 주장해요.
+민족을 위한 죽음의 예고|요한은 가야바의 말이 예수께서 민족을 위해 죽으실 것을 가리켰다고 설명해요.
+흩어진 자녀를 모으실 죽음|예수의 죽음은 흩어진 하나님의 자녀를 모아 하나 되게 할 것이라고 풀이해요.
+예수를 죽이려 모의함|그날부터 지도자들은 예수를 죽이기로 모의해요.
+에브라임으로 물러나심|예수께서는 유대인들 앞에 드러나지 않고 제자들과 함께 에브라임 마을로 물러가세요.
+유월절을 앞둔 성결 준비|유월절이 가까워지자 많은 사람이 정결 예식을 위해 시골에서 예루살렘으로 올라와요.
+성전에서 예수를 찾는 사람들|사람들은 성전에 모여 예수가 명절에 올지 서로 이야기하며 찾아요.
+신고 명령을 내린 지도자들|대제사장들과 바리새인들은 예수의 소재를 알면 신고해 붙잡게 하라고 명령해 두었어요.
+`,[
+{from:1,to:16,actors:["예수","나사로","마르다","마리아","제자들","도마"],setting:"house",prop:"robe",actions:["rest","report","listen","wait","depart","question"]},
+{from:17,to:31,actors:["예수","나사로","마르다","마리아","유대인들"],setting:"house",prop:"robe",actions:["arrive","gather","approach","speak","answer","follow"]},
+{from:32,to:44,actors:["예수","나사로","마르다","마리아","유대인들"],setting:"tomb",prop:"stone",actions:["kneel","weep","lead","move","pray","rise"]},
+{from:45,to:57,actors:["예수","대제사장들","바리새인들","가야바","유대인들","제자들"],setting:"council",prop:"scroll",actions:["believe","report","gather","argue","plot","retreat"]}
+],["예수","나사로","마르다","마리아","제자들","도마","유대인들","대제사장들","바리새인들","가야바"]);
+add(12,`
+베다니에 오신 예수|유월절 엿새 전 예수께서는 나사로가 있는 베다니에 오세요.
+예수를 위한 저녁 잔치|사람들은 예수를 위해 잔치를 열고 마르다는 일하며 나사로는 함께 앉아요.
+향유를 붓고 발을 닦은 마리아|마리아는 값비싼 나드 향유를 예수의 발에 붓고 머리털로 닦아 집에 향기가 퍼져요.
+가룟 유다의 불평|제자 가룟 유다는 향유를 팔아 가난한 이들에게 주지 않은 까닭을 물어요.
+삼백 데나리온을 말한 유다|유다는 향유 값이 삼백 데나리온이라며 낭비라고 비판해요.
+돈궤를 맡은 도둑|요한은 유다가 가난한 이를 걱정한 것이 아니라 돈궤에서 훔쳤다고 설명해요.
+장례를 위해 간직하라|예수께서는 마리아를 막지 말고 자신의 장례를 위해 향유를 간직하게 하라고 하세요.
+항상 함께 있지 않을 예수|예수께서는 가난한 이들은 늘 함께 있지만 자신은 늘 함께 있지 않을 것이라고 하세요.
+나사로도 보러 온 무리|큰 무리는 예수뿐 아니라 살아난 나사로도 보려고 베다니에 찾아와요.
+나사로까지 죽이려는 계획|대제사장들은 나사로도 죽이려고 모의해요.
+나사로 때문에 믿는 사람들|나사로의 표적 때문에 많은 유대인이 예수를 믿어요.
+예루살렘으로 오시는 예수|이튿날 큰 무리는 예수께서 예루살렘으로 오신다는 소식을 들어요.
+종려 가지를 든 환영 행렬|사람들은 종려나무 가지를 들고 호산나를 외치며 이스라엘의 왕을 맞아요.
+어린 나귀를 타신 예수|예수께서는 어린 나귀를 발견하고 그 위에 올라타세요.
+시온의 왕에 관한 기록|요한은 왕이 나귀 새끼를 타고 오리라는 예언이 이루어진 장면을 짚어요.
+나중에 깨달은 제자들|제자들은 처음에는 뜻을 모르다가 예수께서 영광을 얻으신 뒤 기록과 일을 연결해요.
+나사로의 부활을 증언한 무리|무덤에서 나사로를 불러내실 때 함께 있던 사람들이 그 일을 증언해요.
+표적을 듣고 맞으러 나온 무리|사람들은 예수께서 표적을 행했다는 소식을 듣고 환영해요.
+온 세상이 따른다고 탄식한 바리새인|바리새인들은 자기 계획이 소용없다며 온 세상이 예수를 따른다고 말해요.
+예수를 만나려는 헬라인들|예배하러 온 헬라인 몇 사람이 예수를 뵙고 싶어 해요.
+빌립에게 부탁한 방문객들|헬라인들은 벳새다 출신 빌립에게 예수를 만나게 해 달라고 청해요.
+안드레와 함께 전한 요청|빌립은 안드레와 상의한 뒤 둘이 함께 예수께 그 요청을 전해요.
+영광의 때를 알리심|예수께서는 인자가 영광을 얻을 때가 왔다고 제자들에게 말씀하세요.
+땅에 떨어져 열매 맺는 밀알|예수께서는 밀알이 죽어야 많은 열매를 맺는다고 비유하세요.
+생명을 붙잡고 놓는 길|자기 생명만 사랑하면 잃고 세상에서 생명을 내려놓는 이는 영생을 얻는다고 하세요.
+섬기려면 따르라|예수께서는 자신을 섬기려면 따르며 섬기는 이를 아버지가 귀히 여기신다고 하세요.
+괴로운 마음으로 드린 기도|예수께서는 괴로운 마음을 드러내며 이때를 면하게 해 달라 할지 고민하시고 이때를 위해 오셨다고 하세요.
+기도와 함께 들린 하늘의 응답|예수께서 아버지의 이름을 영광스럽게 해 달라고 기도하시자 하늘에서 이미 영광스럽게 했고 다시 하리라는 음성이 들려요.
+천둥인지 천사인지 묻는 무리|곁에 있던 사람들은 소리를 천둥이라 하거나 천사가 말했다고 서로 말해요.
+무리를 위한 하늘의 음성|예수께서는 그 소리가 자신이 아니라 사람들을 위한 것이라고 설명하세요.
+세상 임금의 심판|예수께서는 세상에 대한 심판이 이르렀고 세상 임금이 쫓겨날 것이라 하세요.
+들려 모든 이를 이끄심|예수께서는 땅에서 들리면 모든 사람을 자신에게 이끌겠다고 말씀하세요.
+죽음을 가리킨 말씀|요한은 예수의 말씀이 어떤 죽음을 맞으실지 가리켰다고 해설해요.
+영원한 그리스도와 인자의 모순|무리는 그리스도는 영원히 계신다 들었는데 인자가 어떻게 들려야 하느냐고 묻습니다.
+빛이 있을 동안 걸으라|예수께서는 빛이 함께 있는 동안 어둠에 붙잡히지 않도록 걸으라고 하세요.
+빛을 믿고 숨으신 예수|예수께서는 빛을 믿어 빛의 자녀가 되라고 하신 뒤 자리를 떠나 숨으세요.
+표적을 보고도 믿지 않는 이들|많은 표적을 보았어도 사람들은 예수를 믿지 않아요.
+이사야의 예언을 떠올림|요한은 믿지 않는 상황을 이사야가 전한 말씀과 연결해요.
+믿지 못하게 된 까닭|요한은 사람들이 믿지 못한 일을 이사야의 예언으로 다시 설명해요.
+눈과 마음이 굳어진 사람들|요한은 눈으로 보고 마음으로 깨달아 돌이키지 못하는 상태를 언급해요.
+주의 영광을 본 이사야|이사야가 주의 영광을 보고 예수를 가리켜 말했다고 요한이 덧붙여요.
+드러내지 못한 관리들의 믿음|관리 중에도 믿는 이가 많지만 출교가 두려워 공개적으로 말하지 못해요.
+사람의 영광을 더 사랑함|그들은 하나님의 영광보다 사람에게서 받는 영광을 더 사랑해요.
+보내신 이를 믿게 하는 외침|예수께서는 자신을 믿는 이는 자신을 보내신 이를 믿는 것이라고 외치세요.
+예수를 보면 아버지를 봄|예수께서는 자신을 보는 이는 자신을 보내신 이를 본다고 하세요.
+어둠에서 나오게 하는 빛|예수께서는 믿는 이가 어둠에 머물지 않게 빛으로 세상에 오셨어요.
+세상을 구원하러 오심|예수께서는 말씀을 듣고 지키지 않는 이를 지금 심판하려 온 것이 아니라 세상을 구원하러 왔다고 하세요.
+마지막 날에 심판할 말씀|예수를 저버린 이를 마지막 날 심판할 것은 예수께서 하신 말씀이라고 하세요.
+아버지의 명령을 전하심|예수께서는 스스로 말하지 않고 아버지께서 말하고 전할 것을 명하셨다고 하세요.
+영생인 아버지의 명령|예수께서는 아버지의 명령이 영생임을 알고 그대로 전한다고 말씀하세요.
+`,[
+{from:1,to:11,actors:["예수","마리아","마르다","나사로","가룟 유다","제자들"],setting:"house",prop:"oil",actions:["arrive","gather","pour","wipe","question","defend"]},
+{from:12,to:19,actors:["예수","무리","제자들","바리새인들"],setting:"road",prop:"palm-branch",actions:["gather","welcome","ride","proclaim","witness","argue"]},
+{from:20,to:36,actors:["예수","헬라인들","빌립","안드레","제자들","무리"],setting:"temple",prop:"wheat",actions:["approach","invite","report","teach","pray","light"]},
+{from:37,to:50,actors:["예수","무리","이사야","관리들"],setting:"temple",prop:"scroll",actions:["look","testify","hide","proclaim","listen","depart"]}
+],["예수","마리아","마르다","나사로","가룟 유다","제자들","무리","바리새인들","헬라인들","빌립","안드레","이사야","관리들"]);
+add(13,`
+끝까지 사랑하신 예수|예수께서는 세상을 떠나 아버지께 돌아갈 때가 온 줄 아시고 제자들을 끝까지 사랑하세요.
+유다의 배신 생각|마귀는 시몬의 아들 가룟 유다 마음에 예수를 팔려는 생각을 넣어요.
+자신의 길을 아시는 예수|예수께서는 모든 것이 맡겨졌고 자신이 하나님에게서 와 하나님께 돌아갈 것을 아세요.
+겉옷을 벗고 수건을 두르심|저녁 식사 중 예수께서는 자리에서 일어나 겉옷을 벗고 수건을 허리에 두르세요.
+제자들의 발을 씻기심|예수께서는 대야에 물을 떠 제자들의 발을 씻고 수건으로 닦기 시작하세요.
+베드로의 놀란 질문|베드로는 주께서 자기 발을 씻으시는지 놀라며 물어요.
+나중에 알게 될 섬김|예수께서는 지금은 모르지만 나중에는 자신이 하는 일을 알게 될 것이라고 답하세요.
+씻김을 거절하는 베드로|베드로가 절대 씻지 못한다고 하자 예수께서는 씻지 않으면 자신과 상관이 없다고 하세요.
+손과 머리도 씻어 달라는 청|베드로는 발뿐 아니라 손과 머리도 씻어 달라고 청해요.
+이미 깨끗한 제자들|예수께서는 이미 목욕한 이는 발만 씻으면 되지만 모두가 깨끗한 것은 아니라고 하세요.
+배신자를 알고 계심|예수께서 유다를 아시기에 모두가 깨끗하지 않다고 말씀하신 거예요.
+다시 자리에 앉아 물으심|발을 씻기신 예수께서는 옷을 입고 자리에 앉아 자신이 한 일을 아느냐고 물으세요.
+선생과 주라 부르는 제자들|예수께서는 제자들이 자신을 선생과 주라 부르는 것이 옳다고 하세요.
+서로 발을 씻으라는 본|주와 선생인 예수께서 발을 씻기셨으니 제자들도 서로 섬기라고 하세요.
+본을 따라 행하라|예수께서는 자신이 행한 것처럼 제자들도 행하도록 본을 보였다고 하세요.
+종은 주인보다 크지 않음|예수께서는 종이 주인보다 크지 않고 보냄받은 이도 보낸 이보다 크지 않다고 하세요.
+알고 행하면 복이 있음|예수께서는 가르침을 알고 실제로 행하면 복이 있다고 하세요.
+배신할 제자를 아심|예수께서는 택한 이들을 알며 떡을 먹는 이가 발꿈치를 들 것이라 말씀하세요.
+일이 일어나기 전에 알리심|예수께서는 일이 일어나기 전에 미리 알려 자신이 누구인지 믿게 하세요.
+보냄받은 이를 영접함|예수께서는 자신이 보낸 이를 맞아들이는 것은 자신을, 자신을 맞는 것은 아버지를 영접하는 일이라 하세요.
+배신을 예고하신 예수|예수께서는 마음 아파하시며 제자 중 하나가 자신을 팔 것이라고 증언하세요.
+서로 바라보는 제자들|제자들은 누구를 두고 하신 말씀인지 몰라 서로 바라봐요.
+예수 곁에 기대어 앉은 제자|사랑받는 제자는 식탁에서 예수 곁에 기대어 앉아 있어요.
+베드로의 눈짓|베드로는 그 제자에게 누가 배신자인지 예수께 여쭤보라고 눈짓해요.
+누구인지 여쭙는 제자|그 제자는 예수의 가슴에 기대어 주님, 누구인지 묻습니다.
+떡을 적셔 유다에게 주심|예수께서는 떡 한 조각을 적셔 가룟 유다에게 건네며 그가 배신자라고 알려 주세요.
+유다에게 속히 하라 하심|유다가 떡을 받은 뒤 예수께서는 하려는 일을 속히 하라고 하세요.
+뜻을 알지 못한 식탁의 사람들|함께 앉은 이들은 예수께서 무슨 뜻으로 말씀하셨는지 깨닫지 못해요.
+돈궤와 구제를 생각한 제자들|일부 제자들은 유다가 돈으로 명절 물건을 사거나 가난한 이에게 주러 간다고 생각해요.
+밤에 나간 유다|유다는 떡을 받고 곧 밖으로 나가고 때는 밤이에요.
+영광을 받으신 인자|유다가 나간 뒤 예수께서는 인자가 영광을 받았고 하나님도 영광을 받으셨다고 하세요.
+하나님이 주실 영광|하나님께서 자신으로 말미암아 아들에게 영광을 주실 것이라고 말씀하세요.
+잠시 더 함께할 예수|예수께서는 제자들과 잠시 더 함께 있지만 자신이 가는 곳에 지금은 올 수 없다고 하세요.
+서로 사랑하라는 새 계명|예수께서는 자신이 사랑한 것처럼 제자들도 서로 사랑하라고 새 계명을 주세요.
+사랑으로 드러나는 제자|서로 사랑하면 모든 사람이 제자인 줄 알게 될 것이라고 하세요.
+어디로 가시는지 묻는 베드로|베드로가 예수께 어디로 가시는지 묻자 예수께서는 지금은 따라오지 못하지만 나중에는 따라올 것이라 하세요.
+목숨까지 내놓겠다는 베드로|베드로는 왜 지금 따라갈 수 없느냐며 주를 위해 목숨을 버리겠다고 말해요.
+세 번 부인할 것을 알리심|예수께서는 닭이 울기 전에 베드로가 세 번 자신을 부인할 것이라고 하세요.
+`,[
+{from:1,to:11,actors:["예수","베드로","제자들","가룟 유다"],setting:"upper-room",prop:"basin",actions:["gather","rise","remove","pour","wash","question"]},
+{from:12,to:20,actors:["예수","제자들"],setting:"upper-room",prop:"towel",actions:["return","sit","teach","listen","bless","follow"]},
+{from:21,to:30,actors:["예수","베드로","사랑받는 제자","가룟 유다","제자들"],setting:"upper-room",prop:"bread",actions:["speak","look","signal","ask","give","depart"]},
+{from:31,to:38,actors:["예수","베드로","제자들"],setting:"upper-room",prop:"scroll",actions:["proclaim","teach","bless","question","promise","warn"]}
+],["예수","베드로","제자들","가룟 유다","사랑받는 제자"]);
+add(14,`
+마음을 진정시키라는 말씀|예수께서는 제자들에게 마음에 근심하지 말고 하나님과 자신을 믿으라고 하세요.
+아버지 집의 거처|예수께서는 아버지 집에 거할 곳이 많으며 제자들을 위한 자리를 마련하러 간다고 하세요.
+다시 와서 맞아들이심|거처를 마련한 뒤 다시 와서 제자들을 맞아 자신 있는 곳에 있게 하겠다고 약속하세요.
+길을 안다고 하신 예수|예수께서는 자신이 가는 길을 제자들이 안다고 말씀하세요.
+도마의 길에 관한 질문|도마는 어디로 가시는지 모르는데 어떻게 길을 알겠느냐고 물어요.
+길과 진리와 생명이신 예수|예수께서는 자신이 길과 진리와 생명이며 자신을 통해서만 아버지께 간다고 하세요.
+아버지를 알게 된 제자들|예수께서는 자신을 알았다면 아버지도 알았으며 이제 아버지를 알고 보았다고 하세요.
+아버지를 보여 달라는 빌립|빌립은 아버지를 보여 주시면 충분하겠다고 청해요.
+예수를 본 이는 아버지를 봄|예수께서는 오래 함께했는데도 자신을 모르느냐며 자신을 본 이는 아버지를 보았다고 하세요.
+서로 안에 계신 아버지와 아들|예수께서는 자신이 아버지 안에 있고 아버지가 자신 안에 계심을 믿으라고 하세요.
+행하신 일을 보고 믿으라|예수께서는 말씀을 믿기 어렵다면 자신이 행한 일로 믿으라고 하세요.
+믿는 이가 할 일|예수께서는 자신을 믿는 이도 자신이 한 일을 하며 더 큰 일도 하리라 하세요.
+이름으로 구한 일을 행하심|예수께서는 자신의 이름으로 구하는 것을 행해 아버지께 영광을 돌리겠다고 하세요.
+거듭 약속하신 응답|예수께서는 자신의 이름으로 구하면 자신이 행하겠다고 다시 약속하세요.
+사랑은 계명을 지키는 것|예수께서는 자신을 사랑하면 계명을 지킬 것이라고 하세요.
+다른 보혜사를 구하심|예수께서는 아버지께 구해 또 다른 보혜사를 보내 영원히 함께 있게 하겠다고 하세요.
+진리의 영을 아는 제자들|세상은 진리의 영을 알지 못하지만 제자들은 그를 안다고 하세요.
+고아처럼 버려두지 않으심|예수께서는 제자들을 고아처럼 버리지 않고 다시 오겠다고 위로하세요.
+세상은 못 보나 제자들은 봄|잠시 뒤 세상은 예수를 보지 못해도 제자들은 그를 볼 것이며 함께 살 것이라고 하세요.
+서로 안에 거함을 알게 됨|그날에 아버지와 아들과 제자들이 서로 안에 있음을 알게 되리라 하세요.
+사랑하는 이에게 자신을 나타내심|예수께서는 계명을 지키는 이를 아버지와 자신이 사랑하고 그에게 자신을 나타낸다고 하세요.
+유다의 질문|가룟인이 아닌 유다는 왜 예수께서 세상에는 나타내지 않고 제자들에게만 보이려 하시는지 물어요.
+사랑하면 말씀을 지킨다|예수께서는 자신을 사랑하면 말씀을 지키며 아버지와 함께 그에게 거처를 마련한다고 답하세요.
+사랑하지 않으면 말씀을 지키지 않음|예수께서는 자신의 말이 아니라 보내신 아버지의 말씀을 전한다고 하세요.
+함께 있을 때 미리 하신 말씀|예수께서는 제자들과 함께 있는 동안 이 가르침을 전했다고 하세요.
+성령이 모든 것을 가르치심|아버지께서 예수의 이름으로 보내실 보혜사가 모든 것을 가르치고 말씀을 기억나게 하세요.
+세상이 주지 못하는 평안|예수께서는 자신의 평안을 제자들에게 주시며 마음에 두려워하지 말라고 하세요.
+아버지께 가심을 기뻐하라|예수께서는 자신을 사랑한다면 아버지께로 가는 일을 기뻐했을 것이라고 말씀하세요.
+일어나기 전에 알려 주심|예수께서는 일이 일어나기 전에 알려 제자들이 그때 믿게 하세요.
+세상 임금이 오지만|예수께서는 세상의 임금이 오지만 자신과 관계가 없다고 하세요.
+아버지 사랑을 세상에 보이심|예수께서는 아버지를 사랑하고 명하신 대로 행함을 세상이 알도록 하며 일어나 떠나자고 하세요.
+`,[
+{from:1,to:7,actors:["예수","도마","제자들"],setting:"upper-room",prop:"lamp",actions:["comfort","teach","prepare","promise","question","answer"]},
+{from:8,to:14,actors:["예수","빌립","제자들"],setting:"upper-room",prop:"lamp",actions:["question","answer","teach","point","promise","pray"]},
+{from:15,to:21,actors:["예수","제자들","보혜사"],setting:"upper-room",prop:"lamp",actions:["teach","promise","wait","comfort","reveal","bless"]},
+{from:22,to:31,actors:["예수","유다","제자들","보혜사"],setting:"upper-room",prop:"scroll",actions:["question","answer","teach","promise","comfort","depart"]}
+],["예수","도마","제자들","빌립","유다","보혜사"]);
+add(15,`
+참포도나무와 농부|예수께서는 자신을 참포도나무, 아버지를 농부에 비유하세요.
+열매 맺는 가지를 돌보심|아버지는 열매 없는 가지를 제거하고 열매 맺는 가지는 더 맺도록 손질하세요.
+말씀으로 깨끗해진 제자들|예수께서는 제자들이 전한 말씀으로 이미 깨끗해졌다고 하세요.
+포도나무에 붙어 있으라|예수께서는 자신 안에 거하라고 하시며 가지가 나무에 붙어야 열매 맺는다고 비유하세요.
+나무와 가지의 관계|예수는 나무, 제자들은 가지이며 서로 안에 거하면 많은 열매를 맺어요.
+마른 가지의 마지막|예수 안에 거하지 않는 이는 마른 가지처럼 밖에 버려져 불에 던져져요.
+말씀이 머무는 이의 간구|예수의 말씀이 제자들 안에 거하면 원하는 것을 구하라고 하세요.
+많은 열매와 아버지의 영광|제자들이 많은 열매를 맺으면 아버지께서 영광을 받고 제자임이 드러나요.
+사랑 안에 머물라|아버지께서 예수를 사랑하신 것처럼 예수도 제자들을 사랑하셨으니 그 사랑 안에 머물라고 하세요.
+계명을 지켜 사랑 안에 거함|예수께서는 아버지의 계명을 지켜 사랑 안에 거하듯 제자들도 계명을 지키라 하세요.
+기쁨을 충만하게 하려는 말씀|예수께서는 자신의 기쁨이 제자들 안에 있어 충만해지도록 가르치세요.
+서로 사랑하라는 계명|예수께서는 자신이 사랑한 것처럼 제자들이 서로 사랑하라고 명하세요.
+친구를 위한 큰 사랑|친구를 위해 목숨을 내놓는 사랑보다 큰 사랑은 없다고 하세요.
+명령을 행하는 친구들|예수께서는 제자들이 명하는 대로 행하면 자신의 친구라고 하세요.
+종이 아니라 친구|예수께서는 아버지께 들은 것을 알린 제자들을 더는 종이라 하지 않고 친구라 부르세요.
+택하여 세우신 제자들|예수께서는 제자들이 자신을 택한 것이 아니라 자신이 택해 열매 맺도록 세웠다고 하세요.
+사랑하라고 거듭 명하심|예수께서는 서로 사랑하라는 계명을 다시 강조하세요.
+세상이 먼저 예수를 미워함|세상이 제자들을 미워하면 먼저 예수를 미워한 줄 알라고 하세요.
+세상에 속하지 않은 제자들|예수께서는 제자들을 세상에서 택했으므로 세상이 미워한다고 하세요.
+주인보다 크지 않은 종|예수께서는 종이 주인보다 크지 않으니 자신을 박해한 세상이 제자들도 박해할 것이라 하세요.
+보내신 이를 모르는 박해자들|사람들은 예수의 이름 때문에 제자들을 괴롭기지만 보내신 이를 알지 못해요.
+말씀을 듣고도 핑계할 수 없음|예수께서는 와서 말씀하지 않았더라면 죄가 없겠지만 이제는 핑계할 수 없다고 하세요.
+예수와 아버지를 함께 미워함|예수를 미워하는 이는 아버지도 미워한다고 말씀하세요.
+아무도 하지 못한 일을 보았음|예수께서는 다른 이가 하지 못한 일을 보았으면서 자신과 아버지를 미워한다고 하세요.
+이유 없이 받은 미움|요한은 그들의 미움이 율법에 기록된 말씀을 이루었다고 덧붙여요.
+보혜사가 예수를 증언함|예수께서는 아버지에게서 보내실 진리의 성령이 자신을 증언하리라 하세요.
+제자들도 증언하리라|예수께서는 처음부터 함께한 제자들도 증언하게 될 것이라고 말씀하세요.
+`,[
+{from:1,to:8,actors:["예수","아버지","제자들","포도나무","가지"],setting:"vineyard",prop:"vine",actions:["teach","prune","cleanse","remain","grow","bless"]},
+{from:9,to:17,actors:["예수","제자들","아버지"],setting:"vineyard",prop:"vine",actions:["comfort","teach","love","share","appoint","bless"]},
+{from:18,to:27,actors:["예수","제자들","세상","보혜사"],setting:"upper-room",prop:"scroll",actions:["warn","teach","follow","endure","testify","listen"]}
+],["예수","아버지","제자들","포도나무","가지","세상","보혜사"]);

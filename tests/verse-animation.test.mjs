@@ -6,8 +6,9 @@ import {VERSE_EFFECTS} from '../js/features/pixel-bible/event-animation/verse-ef
 import {buildWorldModel} from '../js/features/pixel-bible/world.js';
 const data=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/mat.json')),summary=JSON.parse(fs.readFileSync('data/summary/mat.json'));
 const john=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/jhn.json'));
-test('요한복음 7–10장은 실제 장별 절 수대로 빈틈없이 장면이 있다',()=>{
- for(const [chapter,count]of [[7,53],[8,59],[9,41],[10,42]]){const scenes=john.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));for(const s of scenes){assert.ok(s.title&&s.study);assert.equal(s.animation.beats.length,6);}}
+
+test('요한복음 7–15장은 실제 장별 절 수대로 빈틈없이 장면이 있다',()=>{
+ for(const [chapter,count]of [[7,53],[8,59],[9,41],[10,42],[11,57],[12,50],[13,38],[14,31],[15,27]]){const scenes=john.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));for(const s of scenes){assert.ok(s.title&&s.study);assert.equal(s.animation.beats.length,6);}}
 });
 test('절별로 직접 작성한 1071개 연출은 1–28장 번호에 빈틈이나 중복이 없다',()=>{
  assert.equal(data.scenes.length,1071);for(const [chapter,count]of [[1,25],[2,23],[3,17],[4,25],[5,48],[6,34],[7,29],[8,34],[9,38],[10,42],[11,30],[12,50],[13,58],[14,36],[15,39],[16,28],[17,27],[18,35],[19,30],[20,34],[21,46],[22,46],[23,39],[24,51],[25,46],[26,75],[27,66],[28,20]])assert.deepEqual(data.scenes.filter(s=>s.chapter===chapter).map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));
@@ -33,7 +34,7 @@ test('주연 외 동작 트랙과 가시성은 절의 순서대로 움직이며 
  for(const s of data.scenes){const cast=s.actors.map(name=>({name}));for(const t of [0,1,3,5,8.2,40])for(const st of sampleEvent(s,cast,t).states)assert.ok(st.pose.eventArms.flat().every(Number.isFinite));assert.deepEqual(sampleEvent(s,cast,20).states,sampleEvent(s,cast,200).states);}
 });
 test('미작성 절은 제작 완료 수에 들어가지 않는다',()=>{
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,3379);assert.equal(p.contentClips,3371);assert.equal(p.textualNotices,8);assert.equal(p.pending,4578);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk','jhn'].includes(c.code)||c.code==='luk'&&c.chapter>24||c.code==='jhn'&&c.chapter>10).every(c=>c.authored===0));
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,3582);assert.equal(p.contentClips,3574);assert.equal(p.textualNotices,8);assert.equal(p.pending,4375);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk','jhn'].includes(c.code)||c.code==='luk'&&c.chapter>24||c.code==='jhn'&&c.chapter>15).every(c=>c.authored===0));
 });
 test('작성한 마태복음 1071절 모두 실제 월드의 사건 진입점에서 접근할 수 있다',()=>{
  const events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mat.json'));
@@ -54,7 +55,7 @@ test('본문이 없는 절과 역본별 배열 차이를 사건으로 단정하�
  for(const s of data.scenes.filter(s=>s.textualNotice)){assert.equal(s.animation.diagram.kind,'edition-note');assert.deepEqual(s.actors,[]);}
  assert.equal(get(21,29).editionVariant,true);assert.deepEqual(get(21,29).animation.diagram.patterns,['yes-stay','no-go']);assert.deepEqual(get(21,30).animation.diagram.patterns,['no-go','yes-stay']);
  assert.equal(get(17,27).animation.mode,'illustration');assert.equal(get(28,13).animation.effect,'none');
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,3371);assert.equal(p.textualNotices,8);
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,3574);assert.equal(p.textualNotices,8);
 });
 test('물 위 이동·상 뒤집기·나귀 이동을 명시적 경로로 구분한다',async()=>{
  const {eventLayout}=await import('../js/features/pixel-bible/pixel-event.js');
