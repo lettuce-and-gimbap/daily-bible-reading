@@ -245,14 +245,14 @@
     },
     {
       "code": "job",
-      "payloadSha256": "047dfb1c0c595c486d99aa9fd43a12482b430f1a9c2a018af6843c968a0a5d15",
-      "scenes": 34,
-      "existing": 34,
+      "payloadSha256": "501223236ad53cd656f19ab917363bc4f37d450e333ac8ee47c5a564344dac94",
+      "scenes": 35,
+      "existing": 35,
       "restored": 0,
       "corrected": 2,
-      "planned": 34,
+      "planned": 35,
       "modes": {
-        "reconstruction": 26,
+        "reconstruction": 27,
         "illustration": 7,
         "vision": 1
       },
