@@ -866,17 +866,17 @@
           "actor": "하나님"
         },
         {
-          "action": "look",
+          "action": "hold",
           "duration": 1.5,
           "actor": "하나님"
         },
         {
-          "action": "hold",
+          "action": "look",
           "duration": 1.8,
           "actor": "하나님"
         },
         {
-          "action": "look",
+          "action": "hold",
           "duration": 1.5,
           "actor": "하나님"
         },
@@ -931,6 +931,251 @@
     },
     "87": {
       "mode": "illustration"
+    },
+    "88": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "89": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "90": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "91": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "92": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "93": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "94": {
+      "mode": "illustration",
+      "beats": [
+        {
+          "action": "stand",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
     }
   },
   "exo": {

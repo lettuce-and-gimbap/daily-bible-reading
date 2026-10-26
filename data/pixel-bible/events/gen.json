@@ -2703,7 +2703,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"hold","duration":1.8,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"light","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-0",
@@ -2801,6 +2801,193 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"divide","lead":"하나님","target":"바벨 건축자들","mode":"illustration","setting":"water","effect":"divide","emotion":"surprised","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"하나님"},{"action":"lift","duration":1.2,"actor":"하나님"},{"action":"windup","duration":1.5,"actor":"하나님"},{"action":"strike","duration":1.8,"actor":"하나님"},{"action":"recoil","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 11:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-1-1",
+      "code": "gen",
+      "chapter": 1,
+      "title": "하늘을 두어 물과 물을 나누다",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 1:6-8",
+      "verseNumbers": [
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 물과 물 사이에 하늘이 놓이며 창조의 질서가 세워져요. 인물의 손작업 대신 위아래 공간이 구분되는 상징 장면으로 설명해요."
+      ],
+      "study": "물과 물 사이에 하늘이 놓이며 창조의 질서가 세워져요. 인물의 손작업 대신 위아래 공간이 구분되는 상징 장면으로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-1-2",
+      "code": "gen",
+      "chapter": 1,
+      "title": "뭍과 바다가 나뉘고 식물이 자라다",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 1:9-13",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 물이 모이고 마른 땅이 드러나며 풀과 씨 맺는 식물과 열매나무가 자라요. 땅과 바다의 구분 뒤 식물이 나타나는 순서를 설명해요."
+      ],
+      "study": "물이 모이고 마른 땅이 드러나며 풀과 씨 맺는 식물과 열매나무가 자라요. 땅과 바다의 구분 뒤 식물이 나타나는 순서를 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-1-3",
+      "code": "gen",
+      "chapter": 1,
+      "title": "광명체가 낮과 밤의 때를 나누다",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 1:14-19",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하늘의 광명체가 땅을 비추고 낮과 밤, 계절과 날과 해를 구분해요. 밝고 어두운 하늘의 변화로 본문의 시간 질서를 표현해요."
+      ],
+      "study": "하늘의 광명체가 땅을 비추고 낮과 밤, 계절과 날과 해를 구분해요. 밝고 어두운 하늘의 변화로 본문의 시간 질서를 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-1-4",
+      "code": "gen",
+      "chapter": 1,
+      "title": "물속 생물과 하늘의 새가 번성하다",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 1:20-23",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 물속에 움직이는 생물과 하늘을 나는 새들이 종류대로 지어져요. 생육하고 번성하라는 복을 생명이 가득해지는 상징으로 설명해요."
+      ],
+      "study": "물속에 움직이는 생물과 하늘을 나는 새들이 종류대로 지어져요. 생육하고 번성하라는 복을 생명이 가득해지는 상징으로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-1-5",
+      "code": "gen",
+      "chapter": 1,
+      "title": "땅의 생물과 사람에게 생명과 책임을 주다",
+      "actors": [
+        "하나님",
+        "사람"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 1:24-31",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 땅의 생물과 하나님의 형상대로 지어진 남자와 여자가 소개돼요. 사람에게 번성과 돌봄의 책임이 주어지고 생물에게 먹거리가 마련되며 창조의 좋음이 강조돼요."
+      ],
+      "study": "땅의 생물과 하나님의 형상대로 지어진 남자와 여자가 소개돼요. 사람에게 번성과 돌봄의 책임이 주어지고 생물에게 먹거리가 마련되며 창조의 좋음이 강조돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":"사람","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:24-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-2-1",
+      "code": "gen",
+      "chapter": 2,
+      "title": "창조를 마치고 안식의 날을 구별하다",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 2:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 천지와 만물이 완성되고 일곱째 날이 복되고 거룩하게 구별돼요. 피곤하여 잠드는 동작 대신 창조를 마친 고요와 완성을 상징으로 설명해요."
+      ],
+      "study": "천지와 만물이 완성되고 일곱째 날이 복되고 거룩하게 구별돼요. 피곤하여 잠드는 동작 대신 창조를 마친 고요와 완성을 상징으로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-2-2",
+      "code": "gen",
+      "chapter": 2,
+      "title": "땅을 적시는 물과 동산 이야기의 시작",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 2:4-6",
+      "verseNumbers": [
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이야기는 땅과 하늘의 내력으로 전환돼요. 아직 비와 경작할 사람이 없는 땅에 물기가 올라와 지면을 적시는 도입부를 설명해요."
+      ],
+      "study": "이야기는 땅과 하늘의 내력으로 전환돼요. 아직 비와 경작할 사람이 없는 땅에 물기가 올라와 지면을 적시는 도입부를 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"stand","duration":1,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.8,"actor":"하나님"},{"action":"hold","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:4-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
