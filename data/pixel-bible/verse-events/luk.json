@@ -1801,6 +1801,2235 @@
         "ref": "누가복음 1:25",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
+    },
+    {
+      "id": "verse-luk-1-26",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        26
+      ],
+      "title": "가브리엘이 나사렛에 오다",
+      "ref": "누가복음 1:26",
+      "actors": [
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여섯째 달에 가브리엘이 하나님의 보내심을 받아 나사렛에 와요."
+      ],
+      "study": "여섯째 달에 가브리엘이 하나님의 보내심을 받아 나사렛에 와요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-27",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        27
+      ],
+      "title": "요셉과 약혼한 마리아",
+      "ref": "누가복음 1:27",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가브리엘이 다윗 가문의 요셉과 약혼한 마리아를 찾아가요."
+      ],
+      "study": "가브리엘이 다윗 가문의 요셉과 약혼한 마리아를 찾아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-28",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        28
+      ],
+      "title": "은혜의 인사를 전함",
+      "ref": "누가복음 1:28",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가브리엘이 마리아에게 은혜와 주의 함께하심을 전해요."
+      ],
+      "study": "가브리엘이 마리아에게 은혜와 주의 함께하심을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-29",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        29
+      ],
+      "title": "뜻을 헤아리며 놀란 마리아",
+      "ref": "누가복음 1:29",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 예상하지 못한 인사에 놀라며 그 뜻을 생각해요."
+      ],
+      "study": "마리아가 예상하지 못한 인사에 놀라며 그 뜻을 생각해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "startle",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-30",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        30
+      ],
+      "title": "두려워하지 말라 하심",
+      "ref": "누가복음 1:30",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가브리엘이 마리아를 안심시키며 은혜를 입었다고 전해요."
+      ],
+      "study": "가브리엘이 마리아를 안심시키며 은혜를 입었다고 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-31",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        31
+      ],
+      "title": "아들의 이름은 예수",
+      "ref": "누가복음 1:31",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "천사가 아들을 낳을 것이며 그 이름을 예수라 하라고 알려요."
+      ],
+      "study": "천사가 아들을 낳을 것이며 그 이름을 예수라 하라고 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-32",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        32
+      ],
+      "title": "다윗의 왕위를 이을 아들",
+      "ref": "누가복음 1:32",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "그 아이가 지극히 높으신 이의 아들이라 불리고 다윗의 왕위를 받을 것이라 전해요."
+      ],
+      "study": "그 아이가 지극히 높으신 이의 아들이라 불리고 다윗의 왕위를 받을 것이라 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-33",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        33
+      ],
+      "title": "끝이 없는 나라",
+      "ref": "누가복음 1:33",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "야곱의 집을 영원히 다스릴 나라를 약속해요."
+      ],
+      "study": "야곱의 집을 영원히 다스릴 나라를 약속해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-34",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        34
+      ],
+      "title": "어떻게 이루어지는지 묻는 마리아",
+      "ref": "누가복음 1:34",
+      "actors": [
+        "마리아",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 이 일이 어떻게 이루어지는지 물어요."
+      ],
+      "study": "마리아가 이 일이 어떻게 이루어지는지 물어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-35",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        35
+      ],
+      "title": "성령의 임재와 능력을 알림",
+      "ref": "누가복음 1:35",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가브리엘이 성령의 임재와 지극히 높으신 이의 능력을 설명해요."
+      ],
+      "study": "가브리엘이 성령의 임재와 지극히 높으신 이의 능력을 설명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-36",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        36
+      ],
+      "title": "엘리사벳의 임신을 증거로 들다",
+      "ref": "누가복음 1:36",
+      "actors": [
+        "가브리엘",
+        "마리아",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "천사가 엘리사벳도 임신한 지 여섯 달이 되었다고 알려요."
+      ],
+      "study": "천사가 엘리사벳도 임신한 지 여섯 달이 되었다고 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-37",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        37
+      ],
+      "title": "하나님의 말씀은 능하지 못함이 없음",
+      "ref": "누가복음 1:37",
+      "actors": [
+        "가브리엘",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하나님께 불가능한 일이 없다는 말을 전해요."
+      ],
+      "study": "하나님께 불가능한 일이 없다는 말을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가브리엘",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가브리엘",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "가브리엘",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "가브리엘",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가브리엘",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가브리엘",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-38",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        38
+      ],
+      "title": "말씀대로 이루어지기를 답함",
+      "ref": "누가복음 1:38",
+      "actors": [
+        "마리아",
+        "가브리엘"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 말씀대로 이루어지기를 받아들이자 가브리엘이 떠나요."
+      ],
+      "study": "마리아가 말씀대로 이루어지기를 받아들이자 가브리엘이 떠나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "가브리엘",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:38",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-39",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        39
+      ],
+      "title": "산골 마을로 서둘러 감",
+      "ref": "누가복음 1:39",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 일어나 유대 산골의 한 동네를 향해 서둘러 가요."
+      ],
+      "study": "마리아가 일어나 유대 산골의 한 동네를 향해 서둘러 가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "run",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "halt",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:39",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-40",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        40
+      ],
+      "title": "사가랴의 집에서 엘리사벳에게 인사",
+      "ref": "누가복음 1:40",
+      "actors": [
+        "마리아",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 사가랴의 집에 들어가 엘리사벳에게 문안해요."
+      ],
+      "study": "마리아가 사가랴의 집에 들어가 엘리사벳에게 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:40",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-41",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        41
+      ],
+      "title": "태중의 아이가 뛰놀고 성령이 충만함",
+      "ref": "누가복음 1:41",
+      "actors": [
+        "엘리사벳",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 문안 소리를 듣자 태중의 아이가 뛰놀고 성령으로 충만해져요."
+      ],
+      "study": "엘리사벳이 문안 소리를 듣자 태중의 아이가 뛰놀고 성령으로 충만해져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:41",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-42",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        42
+      ],
+      "title": "복을 선포하는 엘리사벳",
+      "ref": "누가복음 1:42",
+      "actors": [
+        "엘리사벳",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 마리아와 태중의 아이에게 복이 있다고 말해요."
+      ],
+      "study": "엘리사벳이 마리아와 태중의 아이에게 복이 있다고 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:42",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-43",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        43
+      ],
+      "title": "주님의 어머니가 찾아옴을 놀라워함",
+      "ref": "누가복음 1:43",
+      "actors": [
+        "엘리사벳",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 마리아가 찾아온 일을 놀라워하며 맞이해요."
+      ],
+      "study": "엘리사벳이 마리아가 찾아온 일을 놀라워하며 맞이해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:43",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-44",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        44
+      ],
+      "title": "기쁨으로 뛰논 아이를 말함",
+      "ref": "누가복음 1:44",
+      "actors": [
+        "엘리사벳",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "엘리사벳이 문안 소리를 들을 때 아이가 기뻐 뛰놀았다고 말해요."
+      ],
+      "study": "엘리사벳이 문안 소리를 들을 때 아이가 기뻐 뛰놀았다고 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "smile",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:44",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-45",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        45
+      ],
+      "title": "말씀을 믿은 이의 복",
+      "ref": "누가복음 1:45",
+      "actors": [
+        "엘리사벳",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "말씀이 이루어질 것을 믿은 이가 복되다고 엘리사벳이 고백해요."
+      ],
+      "study": "말씀이 이루어질 것을 믿은 이가 복되다고 엘리사벳이 고백해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "엘리사벳",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "엘리사벳",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "엘리사벳",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "엘리사벳",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "엘리사벳",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:45",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-46",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        46
+      ],
+      "title": "주님을 찬양하는 마리아",
+      "ref": "누가복음 1:46",
+      "actors": [
+        "마리아",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 주님을 찬양하는 노래를 시작해요."
+      ],
+      "study": "마리아가 주님을 찬양하는 노래를 시작해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:46",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-47",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        47
+      ],
+      "title": "구주 하나님을 기뻐함",
+      "ref": "누가복음 1:47",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 구주 하나님으로 인해 기뻐한다고 노래해요."
+      ],
+      "study": "마리아가 구주 하나님으로 인해 기뻐한다고 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "smile",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:47",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-48",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        48
+      ],
+      "title": "낮은 처지를 돌아보신 주님",
+      "ref": "누가복음 1:48",
+      "actors": [
+        "마리아",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 자신의 낮은 처지를 돌아보신 주를 노래해요."
+      ],
+      "study": "마리아가 자신의 낮은 처지를 돌아보신 주를 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:48",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-49",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        49
+      ],
+      "title": "대대로 기억될 복",
+      "ref": "누가복음 1:49",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여러 세대가 자신을 복되다 부르리라고 노래해요."
+      ],
+      "study": "여러 세대가 자신을 복되다 부르리라고 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:49",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-50",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        50
+      ],
+      "title": "능하신 이가 행하신 큰일",
+      "ref": "누가복음 1:50",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 능하신 이가 큰일을 하셨고 그 이름이 거룩하다고 찬양해요."
+      ],
+      "study": "마리아가 능하신 이가 큰일을 하셨고 그 이름이 거룩하다고 찬양해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:50",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-51",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        51
+      ],
+      "title": "대대로 이어지는 긍휼",
+      "ref": "누가복음 1:51",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주님을 경외하는 이들에게 대대로 긍휼이 있음을 노래해요."
+      ],
+      "study": "주님을 경외하는 이들에게 대대로 긍휼이 있음을 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:51",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-52",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        52
+      ],
+      "title": "교만한 마음을 흩으심",
+      "ref": "누가복음 1:52",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아의 노래는 교만한 마음을 흩으시는 주님의 능력을 선포해요."
+      ],
+      "study": "마리아의 노래는 교만한 마음을 흩으시는 주님의 능력을 선포해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "drop",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:52",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-53",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        53
+      ],
+      "title": "권세 있는 이를 낮추고 낮은 이를 높임",
+      "ref": "누가복음 1:53",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "권세 있는 이를 낮추고 낮은 이를 높이시는 반전의 노래예요."
+      ],
+      "study": "권세 있는 이를 낮추고 낮은 이를 높이시는 반전의 노래예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:53",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-54",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        54
+      ],
+      "title": "주린 이를 채우고 부자를 돌려보냄",
+      "ref": "누가복음 1:54",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주린 이를 채우고 부자를 빈손으로 보내신다는 노래를 상징으로 표현해요."
+      ],
+      "study": "주린 이를 채우고 부자를 빈손으로 보내신다는 노래를 상징으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "show",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:54",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-55",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        55
+      ],
+      "title": "이스라엘을 도우시는 긍휼",
+      "ref": "누가복음 1:55",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주께서 이스라엘을 도우시고 긍휼히 여기신 일을 노래해요."
+      ],
+      "study": "주께서 이스라엘을 도우시고 긍휼히 여기신 일을 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:55",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-56",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        56
+      ],
+      "title": "아브라함에게 하신 약속을 기억함",
+      "ref": "누가복음 1:56",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "조상들에게 하신 약속을 기억하며 노래를 맺어요."
+      ],
+      "study": "조상들에게 하신 약속을 기억하며 노래를 맺어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:56",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-1-57",
+      "code": "luk",
+      "chapter": 1,
+      "verseNumbers": [
+        57
+      ],
+      "title": "석 달 함께한 뒤 집으로 돌아감",
+      "ref": "누가복음 1:57",
+      "actors": [
+        "마리아",
+        "엘리사벳"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 엘리사벳과 석 달쯤 지낸 뒤 집으로 돌아가요."
+      ],
+      "study": "마리아가 엘리사벳과 석 달쯤 지낸 뒤 집으로 돌아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "엘리사벳",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "reach",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 1:57",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
     }
   ]
 }
