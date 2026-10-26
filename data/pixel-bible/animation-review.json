@@ -491,19 +491,6 @@
       }
     },
     {
-      "code": "pro",
-      "payloadSha256": "704aa1f91e08c801e59e5f1a15ff0e383fa90d81f28b5b0987fb1be10a9df07b",
-      "scenes": 14,
-      "existing": 14,
-      "restored": 0,
-      "corrected": 1,
-      "planned": 14,
-      "modes": {
-        "illustration": 14
-      },
-      "status": "authored-awaiting-browser-review"
-    },
-    {
       "code": "ecc",
       "payloadSha256": "3a4afa81ef1f83efe94ffb6e76f6a8cca0080017ee92a81f794c0a31e6bed87b",
       "scenes": 13,
@@ -765,6 +752,30 @@
         "illustration": 7
       },
       "status": "authored-awaiting-browser-review"
+    },
+    {
+      "code": "pro",
+      "payloadSha256": "1cbcdd78e60d113f8dce1cf5fe2819911137af8c44bb324f56947ee25985b41f",
+      "scenes": 119,
+      "existing": 119,
+      "restored": 0,
+      "corrected": 0,
+      "planned": 119,
+      "modes": {
+        "illustration": 119
+      },
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 119,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     }
   ]
 }
