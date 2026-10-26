@@ -8,3 +8,9 @@ export function characterSpriteFrame({motionOnly=false,walkFrame=0,action='',int
 export function walkingFrame(stride,moving=true){
  return moving?Math.floor(Math.max(0,stride||0)*2)%4:0;
 }
+
+// Reduced-motion preferences suppress decorative bobbing, not the leg cycle
+// needed to communicate that a character is walking across the world.
+export function characterWalkFrame({stride=0,moving=false,actionPose=false}={}){
+ return walkingFrame(stride,Boolean(moving)&&!actionPose);
+}

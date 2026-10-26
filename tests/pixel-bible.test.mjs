@@ -27,9 +27,11 @@ test('인물 모션 중에는 프레임마다 얼굴·몸 스프라이트를 바
  const b=characterSpriteFrame({motionOnly:true,walkFrame:3,action:'fall',interaction:{headX:-1,bodyY:2},expression:'worried',baseExpression:'neutral'});
  assert.deepEqual(a,{walkFrame:1,action:'',interaction:null,expression:'neutral'});
  assert.deepEqual(b,{walkFrame:3,action:'',interaction:null,expression:'neutral'});
- const {walkingFrame}=await import('../js/features/pixel-bible/character-motion.js');
+ const {walkingFrame,characterWalkFrame}=await import('../js/features/pixel-bible/character-motion.js');
  assert.deepEqual([0,1,2,3].map(i=>walkingFrame(i/2,true)),[0,1,2,3]);
  assert.equal(walkingFrame(2,true),0);assert.equal(walkingFrame(2,false),0);
+ assert.equal(characterWalkFrame({stride:.5,moving:true}),1,'이동 중에는 동작 줄이기 설정과 관계없이 보행 프레임을 유지한다');
+ assert.equal(characterWalkFrame({stride:.5,moving:true,actionPose:{sit:true}}),0,'앉거나 상호작용 중에는 걷기 프레임을 적용하지 않는다');
 });
 
 test('TV는 사랑을 싣고 부스는 수동 배치 오브젝트로 등록되고 자동 인물 방문에서 제외된다',async()=>{

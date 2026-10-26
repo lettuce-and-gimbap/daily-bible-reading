@@ -33,7 +33,7 @@ import { castKey, reconcileCast } from './cast-state.js';
 import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
-import { walkingFrame } from './character-motion.js';
+import { characterWalkFrame } from './character-motion.js';
 import { relationshipLines } from './relationship-lines.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose } from './motion.js';
@@ -1285,7 +1285,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
   const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
-  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:walkingFrame(n.stride,!!n.path.length&&!actionPose&&!reduced),action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
+  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
   }
