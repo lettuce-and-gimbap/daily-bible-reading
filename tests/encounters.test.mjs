@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import {EncounterDirector,GENERAL_GREETING_CHANCE,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
@@ -94,6 +95,20 @@ test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 
    assert.equal(lines[1].text,reverse?.lines[index]||entry.replyLines?.[index],`${entry.id} 응답 후보가 맞지 않음`);
    assert.ok(lines.every(line=>line.pairIndex===index));
   }
+ }
+});
+
+test('창세기 관계 대화는 같은 장의 인물 색인과 사건 범위를 근거로 주고받는다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/gen.json'));
+ const genesis=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('gen.'));
+ assert.equal(genesis.length,20);
+ for(const entry of genesis){
+  const chapter=entry.chapter.split('.')[1],people=summary.chapters[chapter].people.map(person=>person.name);
+  assert(people.includes(entry.speaker),`${entry.id} speaker is indexed in Genesis ${chapter}`);
+  assert(people.includes(entry.target),`${entry.id} target is indexed in Genesis ${chapter}`);
+  assert.equal(entry.lines.length,2);assert.equal(entry.replyLines?.length||2,2);
+  assert([...entry.lines,...(entry.replyLines||[])].every(line=>line.length<=100),`${entry.id} fits a speech bubble`);
+  assert.match(entry.ref,new RegExp(`창세기 ${chapter}:`));
  }
 });
 

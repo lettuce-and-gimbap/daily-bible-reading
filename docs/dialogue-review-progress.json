@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
+  "booksTotal": 66,
+  "booksCompleted": 0,
+  "currentBook": "gen",
+  "currentBookStatus": "in-progress",
+  "nextBook": "exo",
+  "books": {
+    "gen": {
+      "chaptersScanned": 50,
+      "pairedEntriesReviewed": 20,
+      "newTwoWayEntries": 16,
+      "status": "in-progress",
+      "note": "장별 인물·관계 기록과 기존 대사를 대조하고 핵심 대화를 보강했다. 추가 관계 검토가 남아 있어 권 완료로 계산하지 않는다."
+    }
+  }
+}
