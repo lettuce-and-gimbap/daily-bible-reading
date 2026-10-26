@@ -343,17 +343,28 @@
     },
     {
       "code": "2ch",
-      "payloadSha256": "c03da98b8c7e319f43cb09a3c79f609aa455b0bbd9ed7aab9375ff3e4eaab41c",
-      "scenes": 98,
-      "existing": 98,
+      "payloadSha256": "b10e666809de8624d25401069595428b8bdea76699985b7ed1a7791f288b85f0",
+      "scenes": 113,
+      "existing": 113,
       "restored": 0,
       "corrected": 4,
-      "planned": 98,
+      "planned": 113,
       "modes": {
-        "reconstruction": 84,
-        "illustration": 14
+        "reconstruction": 98,
+        "illustration": 15
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 113,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "ezr",
