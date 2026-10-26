@@ -10191,5 +10191,97 @@
   },
   "job": {
     "34": {}
+  },
+  "jdg": {
+    "50": {
+      "mode": "instruction"
+    },
+    "51": {
+      "mode": "instruction"
+    },
+    "52": {
+      "mode": "instruction"
+    },
+    "53": {
+      "mode": "instruction"
+    },
+    "54": {
+      "mode": "instruction"
+    },
+    "55": {
+      "mode": "instruction"
+    },
+    "56": {
+      "mode": "reconstruction"
+    },
+    "57": {
+      "mode": "illustration"
+    },
+    "58": {
+      "mode": "illustration"
+    },
+    "59": {
+      "mode": "illustration"
+    },
+    "60": {
+      "mode": "illustration"
+    },
+    "61": {
+      "mode": "illustration"
+    },
+    "62": {
+      "mode": "reconstruction"
+    },
+    "63": {
+      "mode": "reconstruction"
+    },
+    "64": {
+      "mode": "reconstruction"
+    },
+    "65": {
+      "mode": "reconstruction"
+    },
+    "66": {
+      "mode": "illustration"
+    },
+    "67": {
+      "mode": "illustration"
+    },
+    "68": {
+      "mode": "instruction"
+    },
+    "69": {
+      "mode": "illustration"
+    },
+    "70": {
+      "mode": "illustration"
+    },
+    "71": {
+      "mode": "instruction"
+    },
+    "72": {
+      "mode": "instruction"
+    },
+    "73": {
+      "mode": "reconstruction"
+    },
+    "74": {
+      "mode": "reconstruction"
+    },
+    "75": {
+      "mode": "reconstruction"
+    },
+    "76": {
+      "mode": "illustration"
+    },
+    "77": {
+      "mode": "illustration"
+    },
+    "78": {
+      "mode": "illustration"
+    },
+    "79": {
+      "mode": "illustration"
+    }
   }
 }

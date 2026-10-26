@@ -161,18 +161,30 @@
     },
     {
       "code": "jdg",
-      "payloadSha256": "a9b488384719edf5b0d378eb32bb8c4aba1ff1d801d2bded3ea17d9e20142e7d",
-      "scenes": 50,
-      "existing": 50,
+      "payloadSha256": "720ebc98c680661c46f1a756eea40f2dfbf891afb62253992ea51510e40e827e",
+      "scenes": 80,
+      "existing": 80,
       "restored": 0,
       "corrected": 4,
-      "planned": 50,
+      "planned": 80,
       "modes": {
-        "reconstruction": 48,
+        "reconstruction": 56,
         "vision": 1,
-        "illustration": 1
+        "illustration": 14,
+        "instruction": 9
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 80,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "rut",
