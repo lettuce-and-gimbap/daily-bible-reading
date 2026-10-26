@@ -1610,6 +1610,34 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"counsel","lead":"말라","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"말라"},{"action":"turn","duration":1.2,"actor":"말라"},{"action":"speak","duration":1.5,"actor":"말라"},{"action":"point","duration":1.8,"actor":"말라"},{"action":"listen","duration":1.5,"actor":"말라"},{"action":"lower","duration":1.2,"actor":"말라"}],"duration":8.2,"support":null,"ref":"민수기 36:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-extra-15-0",
+      "code": "num",
+      "chapter": 15,
+      "title": "安息日劳作者被带到摩西面前并接受判决",
+      "actors": [
+        "안식일에 나무한 사람",
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 15:32-36",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 안식일에 나무를 모은 사람이 모세와 회중 앞으로 끌려와요. 본문은 모세가 하나님의 판결을 기다린 뒤 공동체에 전했다고 기록해요. 처형 장면은 재현하지 않고 엄중한 판결의 맥락만 상징적으로 보여줘요."
+      ],
+      "study": "안식일에 나무를 모은 사람이 모세와 회중 앞으로 끌려와요. 본문은 모세가 하나님의 판결을 기다린 뒤 공동체에 전했다고 기록해요. 처형 장면은 재현하지 않고 엄중한 판결의 맥락만 상징적으로 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"안식일에 나무한 사람","target":"모세","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"안식일에 나무한 사람"},{"action":"turn","duration":1.2,"actor":"안식일에 나무한 사람"},{"action":"speak","duration":1.5,"actor":"안식일에 나무한 사람"},{"action":"point","duration":1.8,"actor":"안식일에 나무한 사람"},{"action":"listen","duration":1.5,"actor":"안식일에 나무한 사람"},{"action":"lower","duration":1.2,"actor":"안식일에 나무한 사람"}],"duration":8.2,"support":null,"ref":"민수기 15:32-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

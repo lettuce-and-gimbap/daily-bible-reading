@@ -49,15 +49,15 @@
     },
     {
       "code": "num",
-      "payloadSha256": "2e356ed6d3ab415f976f7360a46f1a0f229d287e6bb28611878fd273d7457774",
-      "scenes": 44,
-      "existing": 44,
+      "payloadSha256": "47564001c3c83f46a6c10bed01b7aacb133abc0e9565056679a19429f47c547a",
+      "scenes": 45,
+      "existing": 45,
       "restored": 0,
       "corrected": 4,
-      "planned": 44,
+      "planned": 45,
       "modes": {
         "reconstruction": 36,
-        "illustration": 8
+        "illustration": 9
       },
       "status": "authored-awaiting-browser-review"
     },
