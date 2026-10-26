@@ -321,15 +321,15 @@
     },
     {
       "code": "jer",
-      "payloadSha256": "8b93de4fcab228373c817f8d755bc6e0e87e8f401897984adff955ffbfb841cd",
-      "scenes": 32,
-      "existing": 32,
+      "payloadSha256": "90a99f7a18e7fc30de6231d13f2c341d21ca52a86683849ab12e36fc6a4391f3",
+      "scenes": 48,
+      "existing": 48,
       "restored": 0,
       "corrected": 0,
-      "planned": 32,
+      "planned": 48,
       "modes": {
-        "illustration": 8,
-        "reconstruction": 23,
+        "illustration": 13,
+        "reconstruction": 34,
         "vision": 1
       },
       "status": "authored-awaiting-browser-review"

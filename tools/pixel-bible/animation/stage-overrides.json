@@ -135,5 +135,55 @@
     "32": {
       "mode": "reconstruction"
     }
+  },
+  "jer": {
+    "32": {
+      "mode": "illustration"
+    },
+    "33": {
+      "mode": "reconstruction"
+    },
+    "34": {
+      "mode": "illustration"
+    },
+    "35": {
+      "mode": "reconstruction"
+    },
+    "36": {
+      "mode": "reconstruction"
+    },
+    "37": {
+      "mode": "reconstruction"
+    },
+    "38": {
+      "mode": "reconstruction"
+    },
+    "39": {
+      "mode": "illustration"
+    },
+    "40": {
+      "mode": "reconstruction"
+    },
+    "41": {
+      "mode": "illustration"
+    },
+    "42": {
+      "mode": "reconstruction"
+    },
+    "43": {
+      "mode": "reconstruction"
+    },
+    "44": {
+      "mode": "reconstruction"
+    },
+    "45": {
+      "mode": "reconstruction"
+    },
+    "46": {
+      "mode": "reconstruction"
+    },
+    "47": {
+      "mode": "illustration"
+    }
   }
 }
