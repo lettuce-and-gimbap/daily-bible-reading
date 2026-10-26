@@ -1698,8 +1698,8 @@
       "chapter": 37,
       "title": "은 이십에 팔림",
       "actors": [
-        "요셉",
-        "유다"
+        "유다",
+        "요셉"
       ],
       "object": "silver",
       "ref": "창세기 37:25-28",
@@ -1717,7 +1717,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"trade","lead":"요셉","target":"유다","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"요셉"},{"action":"grasp","duration":1.2,"actor":"요셉"},{"action":"weigh","duration":1.5,"actor":"요셉"},{"action":"place","duration":1.8,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 37:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"trade","lead":"유다","target":"요셉","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"silver","beats":[{"action":"speak","actor":"유다","duration":1},{"action":"listen","actor":"유다","duration":1.2},{"action":"point","actor":"유다","duration":1.5},{"action":"weigh","actor":"유다","duration":1.8},{"action":"extend","actor":"유다","duration":1.5},{"action":"release","actor":"유다","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 37:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-37-3",
@@ -1879,7 +1879,8 @@
       "chapter": 40,
       "title": "떡 광주리 꿈",
       "actors": [
-        "요셉"
+        "요셉",
+        "떡 굽는 관원장"
       ],
       "object": "basket",
       "ref": "창세기 40:16-19",
@@ -1897,7 +1898,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"explain","lead":"요셉","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"basket","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 40:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"떡 굽는 관원장","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"basket","beats":[{"action":"listen","actor":"요셉","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"point","actor":"요셉","duration":1.5},{"action":"speak","actor":"요셉","duration":1.8},{"action":"lower","actor":"요셉","duration":1.5},{"action":"hold","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 40:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-41-0",
@@ -2556,8 +2557,7 @@
       "actors": [
         "야곱",
         "요셉",
-        "유다",
-        "바로"
+        "유다"
       ],
       "object": "scene-marker",
       "ref": "창세기 46:28-34",
@@ -2578,7 +2578,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"},{"action":"extend","duration":1.5,"actor":"야곱"},{"action":"receive","duration":1.8,"actor":"야곱"},{"action":"bow","duration":1.5,"actor":"야곱"},{"action":"stand","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:28-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","actor":"요셉","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"reach","actor":"요셉","duration":1.5},{"action":"hold","actor":"요셉","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"speak","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 46:28-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-48-0",

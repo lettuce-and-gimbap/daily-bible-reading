@@ -859,6 +859,80 @@
         }
       ]
     },
+    "55": {
+      "lead": "유다",
+      "target": "요셉",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "유다",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "weigh",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "extend",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "release",
+          "actor": "유다",
+          "duration": 1.2
+        }
+      ]
+    },
+    "61": {
+      "lead": "요셉",
+      "target": "떡 굽는 관원장",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "요셉",
+          "duration": 1.2
+        },
+        {
+          "action": "point",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "lower",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
+    },
     "66": {
       "lead": "청지기",
       "target": "유다",
@@ -1024,7 +1098,42 @@
       "mode": "reconstruction"
     },
     "81": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "요셉",
+      "target": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "요셉",
+          "duration": 1.2
+        },
+        {
+          "action": "reach",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "mourn",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
     },
     "82": {
       "mode": "reconstruction"
