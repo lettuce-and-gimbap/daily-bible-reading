@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1078,
+    "scenesInFiles": 1084,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 364
+    "curatedSupplementalScenes": 370
   },
   "books": [
     {
@@ -273,9 +273,10 @@
     {
       "code": "jnh",
       "chapters": 4,
-      "scenes": 4,
+      "scenes": 10,
       "sourceMatchedSceneCandidates": 4,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 6
     },
     {
       "code": "mic",
@@ -28261,6 +28262,10 @@
       {
         "book": "amo",
         "scenesAdded": 11
+      },
+      {
+        "book": "jnh",
+        "scenesAdded": 6
       }
     ]
   }

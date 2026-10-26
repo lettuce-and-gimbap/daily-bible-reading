@@ -109,6 +109,189 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"shade","lead":"요나","target":null,"mode":"reconstruction","setting":"garden","effect":"wither","emotion":"worried","prop":"tree","beats":[{"action":"look","duration":1,"actor":"요나"},{"action":"sit","duration":1.2,"actor":"요나"},{"action":"smile","duration":1.5,"actor":"요나"},{"action":"look","duration":1.8,"actor":"요나"},{"action":"startle","duration":1.5,"actor":"요나"},{"action":"mourn","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 4:6-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-1-0",
+      "code": "jnh",
+      "chapter": 1,
+      "title": "제비가 요나에게 떨어지다",
+      "actors": [
+        "요나",
+        "선장",
+        "사공들"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 1:7-12",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 선원들이 제비를 뽑아 폭풍의 원인을 묻고, 요나는 자신이 도망 중이라고 밝혀요."
+      ],
+      "study": "선원들이 제비를 뽑아 폭풍의 원인을 묻고, 요나는 자신이 도망 중이라고 밝혀요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"요나","target":"선장","mode":"reconstruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"요나"},{"action":"grasp","duration":1.2,"actor":"요나"},{"action":"shake","duration":1.5,"actor":"요나"},{"action":"release","duration":1.8,"actor":"요나"},{"action":"inspect","duration":1.5,"actor":"요나"},{"action":"point","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 1:7-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-1-1",
+      "code": "jnh",
+      "chapter": 1,
+      "title": "선원들이 바다에 요나를 내리다",
+      "actors": [
+        "요나",
+        "선장",
+        "사공들"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 1:13-16",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 선원들은 먼저 배를 육지로 돌리려 애쓰다가 요나를 바다에 내리고, 바다가 잔잔해지자 하나님을 두려워해요."
+      ],
+      "study": "선원들은 먼저 배를 육지로 돌리려 애쓰다가 요나를 바다에 내리고, 바다가 잔잔해지자 하나님을 두려워해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"calm-sea","lead":"요나","target":"선장","mode":"reconstruction","setting":"water","effect":"storm-calm","emotion":"determined","prop":"scene-marker","beats":[{"action":"sleep","duration":1,"actor":"요나"},{"action":"startle","duration":1.2,"actor":"요나"},{"action":"rise","duration":1.5,"actor":"요나"},{"action":"lift","duration":1.8,"actor":"요나"},{"action":"halt","duration":1.5,"actor":"요나"},{"action":"look","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 1:13-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-2-0",
+      "code": "jnh",
+      "chapter": 2,
+      "title": "큰 물고기 뱃속에서 드린 기도",
+      "actors": [
+        "요나",
+        "큰 물고기"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 2:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요나가 깊은 곳에서 하나님께 기도하고, 물고기가 그를 육지에 토해 내요. 물고기 내부는 상징적인 그림으로 표현해요."
+      ],
+      "study": "요나가 깊은 곳에서 하나님께 기도하고, 물고기가 그를 육지에 토해 내요. 물고기 내부는 상징적인 그림으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"요나","target":"큰 물고기","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요나"},{"action":"kneel","duration":1.2,"actor":"요나"},{"action":"lift","duration":1.5,"actor":"요나"},{"action":"pray","duration":1.8,"actor":"요나"},{"action":"pray","duration":1.5,"actor":"요나"},{"action":"bow","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 2:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-3-0",
+      "code": "jnh",
+      "chapter": 3,
+      "title": "두 번째 부름을 받고 니느웨로 가다",
+      "actors": [
+        "요나",
+        "니느웨 사람들"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 3:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요나가 다시 부름을 받고 니느웨로 가서 심판의 경고를 전해요."
+      ],
+      "study": "요나가 다시 부름을 받고 니느웨로 가서 심판의 경고를 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"요나","target":"니느웨 사람들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요나"},{"action":"gather","duration":1.2,"actor":"요나"},{"action":"carry","duration":1.5,"actor":"요나"},{"action":"walk","duration":1.8,"actor":"요나"},{"action":"walk","duration":1.5,"actor":"요나"},{"action":"look","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 3:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-3-1",
+      "code": "jnh",
+      "chapter": 3,
+      "title": "니느웨 왕과 백성이 돌이키다",
+      "actors": [
+        "요나",
+        "니느웨 왕",
+        "니느웨 사람들"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 3:5-10",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 니느웨 사람들이 금식하고 악한 길에서 돌이키며, 왕도 조서를 내려 폭력과 악을 버리라고 해요."
+      ],
+      "study": "니느웨 사람들이 금식하고 악한 길에서 돌이키며, 왕도 조서를 내려 폭력과 악을 버리라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"repent","lead":"요나","target":"니느웨 왕","mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요나"},{"action":"startle","duration":1.2,"actor":"요나"},{"action":"grasp","duration":1.5,"actor":"요나"},{"action":"tear","duration":1.8,"actor":"요나"},{"action":"kneel","duration":1.5,"actor":"요나"},{"action":"pray","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 3:5-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jnh-extra-4-0",
+      "code": "jnh",
+      "chapter": 4,
+      "title": "요나의 분노와 하나님의 마지막 질문",
+      "actors": [
+        "요나",
+        "니느웨 사람들",
+        "박넝쿨"
+      ],
+      "object": "scene-marker",
+      "ref": "요나 4:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요나가 자비에 화를 내자 하나님은 박넝쿨 하나를 아끼는 마음과 큰 성읍의 생명을 대비해 물으세요."
+      ],
+      "study": "요나가 자비에 화를 내자 하나님은 박넝쿨 하나를 아끼는 마음과 큰 성읍의 생명을 대비해 물으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"요나","target":"니느웨 사람들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요나"},{"action":"read","duration":1.2,"actor":"요나"},{"action":"look","duration":1.5,"actor":"요나"},{"action":"point","duration":1.8,"actor":"요나"},{"action":"listen","duration":1.5,"actor":"요나"},{"action":"bow","duration":1.2,"actor":"요나"}],"duration":8.2,"support":null,"ref":"요나 4:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {}

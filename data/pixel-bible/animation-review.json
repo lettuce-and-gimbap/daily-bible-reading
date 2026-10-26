@@ -434,14 +434,15 @@
     },
     {
       "code": "jnh",
-      "payloadSha256": "bab458944f068b97878ecdf4dddff2fc2f942fa3cca0b58b66c3c8f5f8b0a74d",
-      "scenes": 4,
-      "existing": 4,
+      "payloadSha256": "86890f521a50f140d2f333dfb99df81519dce3732ce32b281377e0dc186615a0",
+      "scenes": 10,
+      "existing": 10,
       "restored": 0,
       "corrected": 1,
-      "planned": 4,
+      "planned": 10,
       "modes": {
-        "reconstruction": 4
+        "reconstruction": 8,
+        "illustration": 2
       },
       "status": "authored-awaiting-browser-review"
     },
