@@ -4,12 +4,12 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2251,
+    "sourceLabels": 2249,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2562,
-      "group": 250,
+      "unresolved": 2555,
+      "group": 252,
       "person": 109,
       "animal": 8,
       "spiritual": 6,
@@ -7354,27 +7354,6 @@
       ]
     },
     {
-      "name": "네 뿔",
-      "roles": [
-        "유다를 흩은 세력"
-      ],
-      "refs": [
-        "zec.1"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:네 뿔:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.1"
-          ]
-        }
-      ]
-    },
-    {
       "name": "네 사람",
       "roles": [
         "병자를 멘 친구들"
@@ -11544,27 +11523,6 @@
       ]
     },
     {
-      "name": "두 감람나무",
-      "roles": [
-        "기름 부음 받은 두 사람"
-      ],
-      "refs": [
-        "zec.4"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:두 감람나무:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.4"
-          ]
-        }
-      ]
-    },
-    {
       "name": "두 맹인",
       "roles": [
         "눈을 뜬 사람들",
@@ -12636,8 +12594,7 @@
       ],
       "refs": [
         "jer.4",
-        "lam.2",
-        "zec.2"
+        "lam.2"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -12656,14 +12613,6 @@
           "status": "needs-review",
           "refs": [
             "lam.2"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:딸 시온:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.2"
           ]
         }
       ]
@@ -23674,27 +23623,6 @@
       ]
     },
     {
-      "name": "붉은 말 탄 사람",
-      "roles": [
-        "화석류나무 사이에 선 이"
-      ],
-      "refs": [
-        "zec.1"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:붉은 말 탄 사람:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.1"
-          ]
-        }
-      ]
-    },
-    {
       "name": "붉은 말 탄 자",
       "roles": [
         "평화를 빼앗은 자"
@@ -31925,8 +31853,7 @@
         "isa.54",
         "isa.60",
         "isa.62",
-        "isa.66",
-        "zec.8"
+        "isa.66"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -31944,14 +31871,6 @@
             "isa.60",
             "isa.62",
             "isa.66"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:시온:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.8"
           ]
         }
       ]
@@ -31994,27 +31913,6 @@
           "status": "needs-review",
           "refs": [
             "amo.6"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "시온의 딸",
-      "roles": [
-        "왕을 맞을 백성"
-      ],
-      "refs": [
-        "zec.9"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:시온의 딸:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.9"
           ]
         }
       ]
@@ -44403,7 +44301,8 @@
       "roles": [
         "예루살렘을 위해 물은 천사",
         "옷을 바꿔 입힌 이",
-        "칼을 든 심판의 천사"
+        "칼을 든 심판의 천사",
+        "화석류나무 사이에 선 이"
       ],
       "refs": [
         "1ch.21",
@@ -49811,14 +49710,12 @@
       "roles": [
         "교만해져 나병에 걸린 왕",
         "요담의 아버지",
-        "죽은 유다 왕",
-        "지진 때의 왕"
+        "죽은 유다 왕"
       ],
       "refs": [
         "2ch.26",
         "2ch.27",
-        "isa.6",
-        "zec.14"
+        "isa.6"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -49838,14 +49735,6 @@
           "status": "needs-review",
           "refs": [
             "isa.6"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:웃시야:zec",
-          "status": "needs-review",
-          "refs": [
-            "zec.14"
           ]
         }
       ]
@@ -57938,15 +57827,16 @@
         "야곱과 겨룬 이",
         "열쇠와 쇠사슬로 용을 결박한 천사",
         "환상을 풀어 준 이",
-        "힘을 도운 이"
+        "힘을 도운 이",
+        "스가랴와 대화하며 환상을 해석한 천사"
       ],
       "refs": [
         "1ki.19",
         "2ch.32",
         "act.10",
+        "dan.11",
         "dan.6",
         "dan.7",
-        "dan.11",
         "hos.12",
         "luk.22",
         "rev.1",
@@ -57954,6 +57844,7 @@
         "rev.20",
         "rev.21",
         "rev.22",
+        "zec.1",
         "zec.2",
         "zec.4",
         "zec.5",
@@ -57970,9 +57861,9 @@
             "1ki.19",
             "2ch.32",
             "act.10",
+            "dan.11",
             "dan.6",
             "dan.7",
-            "dan.11",
             "hos.12",
             "luk.22",
             "rev.1",
@@ -57980,6 +57871,7 @@
             "rev.20",
             "rev.21",
             "rev.22",
+            "zec.1",
             "zec.2",
             "zec.4",
             "zec.5",
@@ -65890,6 +65782,50 @@
           "status": "reviewed-rule",
           "refs": [
             "zep.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "시온 주민",
+      "roles": [
+        "회복과 왕의 도래를 기다리는 공동체"
+      ],
+      "refs": [
+        "zec.2",
+        "zec.9"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:시온 주민",
+          "status": "group-or-unresolved",
+          "refs": [
+            "zec.2",
+            "zec.9"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "말 탄 순찰대",
+      "roles": [
+        "온 땅을 살피고 보고한 이들"
+      ],
+      "refs": [
+        "zec.1"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:말 탄 순찰대",
+          "status": "group-or-unresolved",
+          "refs": [
+            "zec.1"
           ]
         }
       ]

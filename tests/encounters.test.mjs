@@ -1089,3 +1089,17 @@ test('수사 숫자와 지시어 이 일을 구별해 관계 대사의 조사를
  const line=relationshipLines(a,b,relation,null,{random:()=>.8})[0].text;
  assert.match(line,/그러나 이 일을 덮지도/);assert.doesNotMatch(line,/\d+일을 덮지도/);
 });
+
+test('스가랴서 환상 인물을 하나로 통합하고 실제 문답만 본문 절에 연결한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/zec.json','utf8'));
+ const ch1=summary.chapters['1'],ch4=summary.chapters['4'],ch14=summary.chapters['14'];
+ assert.ok(!ch1.people.some(p=>p.name==='붉은 말 탄 사람'||p.name==='네 뿔'));
+ assert.ok(ch1.people.some(p=>p.name==='여호와의 천사')&&ch1.people.some(p=>p.name==='천사'));
+ assert.ok(!ch4.people.some(p=>p.name==='두 감람나무'));
+ assert.ok(!ch14.people.some(p=>p.name==='웃시야'));
+ for(const [id,chapter] of [['pair-zec-1-zechariah-interpreting-angel',1],['pair-zec-4-zechariah-interpreting-angel',4],['pair-zec-5-zechariah-interpreting-angel',5],['pair-zec-6-zechariah-interpreting-angel',6],['pair-zec-7-bethel-delegates-zechariah',7]]){
+  const row=PAIR_DIALOGUE.find(p=>p.id===id);assert.ok(row,id);assert.equal(row.chapter,`zec.${chapter}`);assert.ok(row.ref);assert.equal(row.replyLines.length,2);
+ }
+ const scene=JSON.parse(fs.readFileSync('data/pixel-bible/events/zec.json','utf8')).scenes.find(s=>s.id==='ot-zec-extra-1-0');
+ assert.equal(new Set(scene.actors).size,scene.actors.length);assert.ok(!scene.actors.includes('붉은 말 탄 사람'));
+});

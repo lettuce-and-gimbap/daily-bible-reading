@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "hag",
-    "nextBook": "zec",
-    "booksCompleted": 37,
+    "currentBook": "zec",
+    "nextBook": "mal",
+    "booksCompleted": 38,
     "completedBooks": [
       "gen",
       "exo",
@@ -334,36 +334,56 @@
       "nam",
       "hab",
       "zep",
-      "hag"
+      "hag",
+      "zec"
     ],
-    "chaptersReviewed": 915,
-    "relationshipLinksReviewed": 2827,
-    "authoredPairEntriesReviewed": 902,
+    "chaptersReviewed": 929,
+    "relationshipLinksReviewed": 2880,
+    "authoredPairEntriesReviewed": 907,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3807,
-      "authoredLinks": 931,
-      "relationshipGeneratedLinks": 2876,
+      "authoredLinks": 936,
+      "relationshipGeneratedLinks": 2871,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "나훔·하박국·스바냐에 이어 학개 1–2장을 본문과 주석에 대조했다. 다리오는 표제의 연대 정보로만 남기고 장면 인물에서 뺐다. 학개와 스룹바벨·여호수아·남은 백성의 재건 협력, 여호수아와 스룹바벨의 공동 지도, 학개와 제사장들의 율법 문답 등 사람 관계 7개를 본문 절에 맞춰 왕복 대사로 보강했다. 다음은 스가랴서다.",
+    "statusNote": "스가랴 14장 전체를 본문과 주석에 대조했다. 사건 절 범위 211절은 누락·중복 없이 연결했다. 스가랴와 해석 천사의 환상 문답, 사레셀·레겜멜렉의 금식 질문 등 실제 본문에 있는 문답 5쌍을 별도 대사로 보강하고, 각 발화의 절 근거를 연결했다. 붉은 말 탄 자를 여호와의 천사와 중복 노출하던 문제, 환상 상징물·지명·연대 비교 인물을 사람 명단에 두던 문제를 바로잡았다. 다음은 말라기서다.",
     "partialBookAudit": {
-      "book": "hag",
-      "chaptersScanned": 2,
-      "relationshipLinksFound": 7,
-      "authoredPairEntriesAddedAndChecked": 7,
-      "authoredLinksCovered": 7,
+      "book": "zec",
+      "chaptersScanned": 14,
+      "chapterDialogueAudit": 14,
+      "relationshipLinksFound": 53,
+      "authoredPairEntriesAddedAndChecked": 5,
+      "authoredLinksCovered": 5,
       "generatedLinksRemaining": 0,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
-        2
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
       ],
-      "statusNote": "학개 두 장을 모두 확인했다. 날짜의 다리오는 NPC에서 제외하고, 재건 협력자 네 관계와 제사장 문답·격려·인장 약속을 포함한 사람 관계 7개에 사건별 왕복 대사를 연결했다."
+      "eventVerseSpanAudit": {
+        "versesExpected": 211,
+        "versesCovered": 211,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "스가랴 14장을 모두 확인했다. 스가랴와 해석 천사의 1·4·5·6장 문답, 7장 사레셀·레겜멜렉의 질문과 스가랴가 전달한 답을 구절에 맞춰 왕복 대사로 보강했다. 붉은 말을 탄 자와 여호와의 천사를 한 인물로 합치고, 뿔·감람나무·시온 같은 상징·장소, 지진 비교에만 나오는 웃시야는 인물 명단에서 뺐다. 사건 범위 211절은 누락·중복 없이 통과했다."
     },
     "currentBookStatus": "complete"
   }

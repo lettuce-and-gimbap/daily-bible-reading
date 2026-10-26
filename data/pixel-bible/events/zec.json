@@ -377,8 +377,9 @@
       "title": "말 탄 이들이 땅의 형편을 보고하다",
       "actors": [
         "스가랴",
-        "붉은 말 탄 사람",
-        "여호와의 천사"
+        "여호와의 천사",
+        "천사",
+        "말 탄 순찰대"
       ],
       "object": "scene-marker",
       "ref": "스가랴 1:7-17",
@@ -407,7 +408,7 @@
         "version": 2,
         "motif": "vision-record",
         "lead": "스가랴",
-        "target": "붉은 말 탄 사람",
+        "target": "여호와의 천사",
         "mode": "illustration",
         "setting": "night",
         "effect": "scroll",
@@ -455,11 +456,10 @@
       "id": "ot-zec-extra-1-1",
       "code": "zec",
       "chapter": 1,
-      "title": "네 뿔과 네 대장장이의 환상",
+      "title": "뿔 4개와 대장장이 4명의 환상",
       "actors": [
         "스가랴",
-        "네 뿔",
-        "네 대장장이"
+        "대장장이 4명"
       ],
       "object": "scene-marker",
       "ref": "스가랴 1:18-21",
@@ -481,7 +481,7 @@
         "version": 2,
         "motif": "vision",
         "lead": "스가랴",
-        "target": "네 뿔",
+        "target": "대장장이 4명",
         "mode": "illustration",
         "setting": "night",
         "effect": "vision",
@@ -532,7 +532,7 @@
       "title": "바벨론을 떠나 시온으로 나오라 하다",
       "actors": [
         "스가랴",
-        "딸 시온",
+        "시온 주민",
         "많은 나라"
       ],
       "object": "scene-marker",
@@ -559,7 +559,7 @@
         "version": 2,
         "motif": "gather",
         "lead": "스가랴",
-        "target": "딸 시온",
+        "target": "시온 주민",
         "mode": "illustration",
         "setting": "pasture",
         "effect": "grain",
@@ -691,8 +691,7 @@
       "title": "순금 등잔대와 감람나무를 보다",
       "actors": [
         "스가랴",
-        "스룹바벨",
-        "두 감람나무"
+        "스룹바벨"
       ],
       "object": "scene-marker",
       "ref": "스가랴 4:1-5",
@@ -842,7 +841,7 @@
         "스가랴",
         "천사",
         "에바 속의 여인",
-        "학 날개의 두 여인"
+        "학 날개의 여인 2명"
       ],
       "object": "scene-marker",
       "ref": "스가랴 5:5-11",
@@ -994,7 +993,6 @@
       "chapter": 7,
       "title": "금식이 누구를 위한 것인지 묻다",
       "actors": [
-        "벧엘 사람들",
         "사레셀과 레겜멜렉",
         "스가랴"
       ],
@@ -1026,9 +1024,9 @@
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {
         "version": 2,
+        "lead": "스가랴",
         "motif": "dispute",
-        "lead": "벧엘 사람들",
-        "target": "사레셀과 레겜멜렉",
+        "target": "스가랴",
         "mode": "illustration",
         "setting": "court",
         "effect": "speech",
@@ -1037,33 +1035,27 @@
         "beats": [
           {
             "action": "listen",
-            "duration": 1,
-            "actor": "벧엘 사람들"
+            "duration": 1
           },
           {
             "action": "turn",
-            "duration": 1.2,
-            "actor": "벧엘 사람들"
+            "duration": 1.2
           },
           {
             "action": "point",
-            "duration": 1.5,
-            "actor": "벧엘 사람들"
+            "duration": 1.5
           },
           {
             "action": "point",
-            "duration": 1.8,
-            "actor": "벧엘 사람들"
+            "duration": 1.8
           },
           {
             "action": "listen",
-            "duration": 1.5,
-            "actor": "벧엘 사람들"
+            "duration": 1.5
           },
           {
             "action": "lower",
-            "duration": 1.2,
-            "actor": "벧엘 사람들"
+            "duration": 1.2
           }
         ],
         "duration": 8.2,
@@ -1078,7 +1070,6 @@
       "chapter": 8,
       "title": "노인과 아이들이 함께 사는 예루살렘",
       "actors": [
-        "시온",
         "노인과 아이들",
         "남은 백성"
       ],
@@ -1119,8 +1110,8 @@
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {
         "version": 2,
+        "lead": "남은 백성",
         "motif": "promise",
-        "lead": "시온",
         "target": "노인과 아이들",
         "mode": "illustration",
         "setting": "courtyard",
@@ -1130,33 +1121,27 @@
         "beats": [
           {
             "action": "listen",
-            "duration": 1,
-            "actor": "시온"
+            "duration": 1
           },
           {
             "action": "lift",
-            "duration": 1.2,
-            "actor": "시온"
+            "duration": 1.2
           },
           {
             "action": "speak",
-            "duration": 1.5,
-            "actor": "시온"
+            "duration": 1.5
           },
           {
             "action": "bless",
-            "duration": 1.8,
-            "actor": "시온"
+            "duration": 1.8
           },
           {
             "action": "lower",
-            "duration": 1.5,
-            "actor": "시온"
+            "duration": 1.5
           },
           {
             "action": "bow",
-            "duration": 1.2,
-            "actor": "시온"
+            "duration": 1.2
           }
         ],
         "duration": 8.2,
@@ -1171,7 +1156,7 @@
       "chapter": 9,
       "title": "겸손한 왕이 나귀를 타고 오다",
       "actors": [
-        "시온의 딸",
+        "시온 주민",
         "겸손한 왕",
         "두로와 시돈과 블레셋"
       ],
@@ -1200,7 +1185,7 @@
       "animation": {
         "version": 2,
         "motif": "parade",
-        "lead": "시온의 딸",
+        "lead": "시온 주민",
         "target": "겸손한 왕",
         "mode": "illustration",
         "setting": "road",
@@ -1211,32 +1196,32 @@
           {
             "action": "receive",
             "duration": 1,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "wear",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "sit",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "hold",
             "duration": 1.8,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           }
         ],
         "duration": 8.2,
@@ -1674,8 +1659,7 @@
       "title": "감람나무의 뜻을 다시 묻다",
       "actors": [
         "스가랴",
-        "천사",
-        "두 감람나무"
+        "천사"
       ],
       "object": "scene-marker",
       "ref": "스가랴 4:11-14",
@@ -1819,7 +1803,7 @@
       "chapter": 9,
       "title": "언약의 피로 놓음",
       "actors": [
-        "시온의 딸"
+        "시온 주민"
       ],
       "object": "bow",
       "ref": "스가랴 9:11-13",
@@ -1839,7 +1823,7 @@
       "animation": {
         "version": 2,
         "motif": "encourage",
-        "lead": "시온의 딸",
+        "lead": "시온 주민",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -1850,32 +1834,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "look",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "reach",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "speak",
             "duration": 1.8,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "wait",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           }
         ],
         "duration": 8.2,
@@ -1890,7 +1874,7 @@
       "chapter": 9,
       "title": "양 떼처럼 구원하심",
       "actors": [
-        "시온의 딸"
+        "시온 주민"
       ],
       "object": "bow",
       "ref": "스가랴 9:14-17",
@@ -1911,7 +1895,7 @@
       "animation": {
         "version": 2,
         "motif": "encourage",
-        "lead": "시온의 딸",
+        "lead": "시온 주민",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -1922,32 +1906,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "look",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "reach",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "speak",
             "duration": 1.8,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "wait",
             "duration": 1.5,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "시온의 딸"
+            "actor": "시온 주민"
           }
         ],
         "duration": 8.2,

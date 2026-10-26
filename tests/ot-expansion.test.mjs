@@ -331,7 +331,7 @@ test('mal 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('zec 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'zec.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-zec-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/zec.json'));assert.equal(added.length,17);
- for(const title of ["말 탄 이들이 땅의 형편을 보고하다","네 뿔과 네 대장장이의 환상","바벨론을 떠나 시온으로 나오라 하다","더러운 옷을 벗고 새 옷을 입은 여호수아","순금 등잔대와 감람나무를 보다","날아가는 두루마리와 저주의 환상","에바에 담겨 시날로 옮겨지는 악","네 병거가 사방으로 나가다","금식이 누구를 위한 것인지 묻다","노인과 아이들이 함께 사는 예루살렘","겸손한 왕이 나귀를 타고 오다","목자 없는 양 떼를 모으다","은총과 연합의 막대기를 꺾다","찔린 이를 바라보며 애통하다","죄와 더러움을 씻는 샘을 열다","감람산과 생수의 날을 그리다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["말 탄 이들이 땅의 형편을 보고하다","뿔 4개와 대장장이 4명의 환상","바벨론을 떠나 시온으로 나오라 하다","더러운 옷을 벗고 새 옷을 입은 여호수아","순금 등잔대와 감람나무를 보다","날아가는 두루마리와 저주의 환상","에바에 담겨 시날로 옮겨지는 악","네 병거가 사방으로 나가다","금식이 누구를 위한 것인지 묻다","노인과 아이들이 함께 사는 예루살렘","겸손한 왕이 나귀를 타고 오다","목자 없는 양 떼를 모으다","은총과 연합의 막대기를 꺾다","찔린 이를 바라보며 애통하다","죄와 더러움을 씻는 샘을 열다","감람산과 생수의 날을 그리다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
