@@ -49,11 +49,11 @@
     },
     {
       "code": "num",
-      "payloadSha256": "17fabeb3aa017539692cc55406483a85f7d6ce9346964e17711ec48a67d01cfd",
+      "payloadSha256": "8ca2e6b48997a4de0c30cacd5dee5d8dfb8ad223d380934fe25967753d8ddbb5",
       "scenes": 46,
       "existing": 46,
       "restored": 0,
-      "corrected": 4,
+      "corrected": 6,
       "planned": 46,
       "modes": {
         "reconstruction": 37,
@@ -77,11 +77,11 @@
     },
     {
       "code": "jos",
-      "payloadSha256": "a3ee1ff5e5b6667555a24211a3a97ab435ad71ca997298d824e58e86cbb6aa5b",
+      "payloadSha256": "698aee280256f9d034814b2da6a484f21017d9220afddd97fcb768d78b3aaffc",
       "scenes": 31,
       "existing": 31,
       "restored": 0,
-      "corrected": 1,
+      "corrected": 2,
       "planned": 31,
       "modes": {
         "reconstruction": 28,
@@ -176,11 +176,11 @@
     },
     {
       "code": "1ch",
-      "payloadSha256": "d190a191895f7c4a95bc5eb3fad6afd5a0bcd9b8efd0c5522c146c59eddfed3d",
+      "payloadSha256": "d493fdad536c9808a2e38fb25bf43a384d471cae3eadbfec856592cbde7dfcaf",
       "scenes": 75,
       "existing": 75,
       "restored": 0,
-      "corrected": 4,
+      "corrected": 6,
       "planned": 75,
       "modes": {
         "illustration": 11,

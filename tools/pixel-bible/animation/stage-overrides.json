@@ -1,5 +1,9 @@
 {
   "jos": {
+    "2": {
+      "lead": "열두 사람",
+      "target": "여호수아"
+    },
     "8": {
       "setting": "desert",
       "effect": "sling",
@@ -917,6 +921,78 @@
     }
   },
   "num": {
+    "2": {
+      "lead": "이다말",
+      "target": null,
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "이다말"
+        },
+        {
+          "action": "count",
+          "duration": 1.2,
+          "actor": "이다말"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "이다말"
+        },
+        {
+          "action": "speak",
+          "duration": 1.8,
+          "actor": "이다말"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "이다말"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "이다말"
+        }
+      ]
+    },
+    "3": {
+      "lead": "이다말",
+      "target": null,
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "이다말"
+        },
+        {
+          "action": "count",
+          "duration": 1.2,
+          "actor": "이다말"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "이다말"
+        },
+        {
+          "action": "speak",
+          "duration": 1.8,
+          "actor": "이다말"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "이다말"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "이다말"
+        }
+      ]
+    },
     "31": {
       "mode": "illustration"
     },
@@ -2392,6 +2468,10 @@
     "30": {}
   },
   "1ch": {
+    "14": {
+      "lead": "레위인들",
+      "target": "다윗"
+    },
     "18": {
       "lead": "아삽",
       "target": "다윗",
@@ -2428,6 +2508,10 @@
           "actor": "아삽"
         }
       ]
+    },
+    "35": {
+      "lead": "레위인들",
+      "target": "다윗"
     },
     "53": {
       "lead": "아삽",

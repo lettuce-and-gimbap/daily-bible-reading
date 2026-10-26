@@ -68,3 +68,11 @@ test('왕후 선발 명령은 왕의 재대관을 연출하지 않고 유다의 
  const a=books.find(([c])=>c==='est')[1].scenes.find(s=>s.id==='ot-est-extra-2-0').animation;assert.equal(a.motif,'decree');assert(!a.beats.some(b=>b.action==='wear'));assert(a.beats.some(b=>b.action==='signal'));
  const b=books.find(([c])=>c==='2sa')[1].scenes.find(s=>s.id==='ot-2sa-2-1').animation;assert.equal(b.lead,'유다 사람들');assert.equal(b.target,'다윗');assert(b.beats.every(x=>x.actor==='유다 사람들'));
 });
+
+test('이다말은 게르손·므라리 운반을 감독하며 짐을 직접 메지 않는다',()=>{
+ const scenes=books.find(([c])=>c==='num')[1].scenes;for(const id of ['ot-num-4-1','ot-num-4-2']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'이다말');assert.equal(a.motif,'instruct');assert(a.beats.some(b=>b.action==='signal'));assert(!a.beats.some(b=>b.action==='carry'));}
+});
+test('열두 돌은 열두 사람이 메고 언약궤는 다윗 대신 레위인들이 멘다',()=>{
+ const a=books.find(([c])=>c==='jos')[1].scenes.find(s=>s.id==='ot-jos-4-0').animation;assert.equal(a.lead,'열두 사람');assert(a.beats.some(b=>b.action==='carry'));
+ const scenes=books.find(([c])=>c==='1ch')[1].scenes;for(const id of ['ot-1ch-15-0','ot-voice-25']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'레위인들');assert(a.beats.filter(b=>b.action==='carry').every(b=>b.actor==='레위인들'));}
+});
