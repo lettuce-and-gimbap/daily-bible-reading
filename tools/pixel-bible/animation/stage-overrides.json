@@ -1948,6 +1948,241 @@
     "105": {}
   },
   "2ch": {
+    "4": {
+      "version": 2,
+      "motif": "craft",
+      "lead": "후람(장인)",
+      "target": "솔로몬",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "build",
+      "emotion": "determined",
+      "prop": "net",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "gather",
+          "duration": 1.2,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "후람(장인)"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "역대하 4:11-18",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "5": {
+      "version": 2,
+      "motif": "store",
+      "lead": "솔로몬",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "chamber",
+      "effect": "stack",
+      "emotion": "determined",
+      "prop": "silver",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "gather",
+          "duration": 1.2,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "carry",
+          "duration": 1.5,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "count",
+          "duration": 1.5,
+          "actor": "솔로몬"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "솔로몬"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "역대하 5:1",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "47": {
+      "version": 2,
+      "motif": "craft",
+      "lead": "후람(장인)",
+      "target": "솔로몬",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "build",
+      "emotion": "determined",
+      "prop": "lampstand",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "gather",
+          "duration": 1.2,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "후람(장인)"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "후람(장인)"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "역대하 4:1-22",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "48": {
+      "version": 2,
+      "motif": "carry",
+      "lead": "레위인들",
+      "target": "솔로몬",
+      "mode": "reconstruction",
+      "setting": "road",
+      "effect": "journey",
+      "emotion": "determined",
+      "prop": "ark-covenant",
+      "beats": [
+        {
+          "action": "grasp",
+          "duration": 1,
+          "actor": "레위인들"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "레위인들"
+        },
+        {
+          "action": "brace",
+          "duration": 1.5,
+          "actor": "레위인들"
+        },
+        {
+          "action": "carry",
+          "duration": 1.8,
+          "actor": "레위인들"
+        },
+        {
+          "action": "walk",
+          "duration": 1.5,
+          "actor": "레위인들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "레위인들"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "역대하 5:2-10",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "64": {
+      "version": 2,
+      "motif": "encourage",
+      "lead": "야하시엘",
+      "target": "여호사밧",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "determined",
+      "prop": "scene-marker",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "야하시엘"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "야하시엘"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "야하시엘"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "야하시엘"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "야하시엘"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "야하시엘"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "역대하 20:1-20",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
     "82": {
       "mode": "illustration"
     },

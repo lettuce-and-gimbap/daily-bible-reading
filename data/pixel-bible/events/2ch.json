@@ -118,6 +118,7 @@
       "chapter": 4,
       "title": "후람이 마친 일",
       "actors": [
+        "후람(장인)",
         "솔로몬"
       ],
       "object": "net",
@@ -140,7 +141,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"craft","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"net","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대하 4:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"craft","lead":"후람(장인)","target":"솔로몬","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"net","beats":[{"action":"inspect","duration":1,"actor":"후람(장인)"},{"action":"gather","duration":1.2,"actor":"후람(장인)"},{"action":"lift","duration":1.5,"actor":"후람(장인)"},{"action":"place","duration":1.8,"actor":"후람(장인)"},{"action":"hammer","duration":1.5,"actor":"후람(장인)"},{"action":"inspect","duration":1.2,"actor":"후람(장인)"}],"duration":8.2,"support":null,"ref":"역대하 4:11-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-5-0",
@@ -163,7 +164,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"deposit","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"grasp","duration":1.2,"actor":"솔로몬"},{"action":"open","duration":1.5,"actor":"솔로몬"},{"action":"read","duration":1.8,"actor":"솔로몬"},{"action":"write","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대하 5:1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"store","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"chamber","effect":"stack","emotion":"determined","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"carry","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"count","duration":1.5,"actor":"솔로몬"},{"action":"stand","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대하 5:1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-5-2",
@@ -1400,7 +1401,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"craft","lead":"솔로몬","target":"후람(장인)","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"lampstand","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대하 4:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"craft","lead":"후람(장인)","target":"솔로몬","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"lampstand","beats":[{"action":"inspect","duration":1,"actor":"후람(장인)"},{"action":"gather","duration":1.2,"actor":"후람(장인)"},{"action":"lift","duration":1.5,"actor":"후람(장인)"},{"action":"place","duration":1.8,"actor":"후람(장인)"},{"action":"hammer","duration":1.5,"actor":"후람(장인)"},{"action":"inspect","duration":1.2,"actor":"후람(장인)"}],"duration":8.2,"support":null,"ref":"역대하 4:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-extra-04",
@@ -1434,7 +1435,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"carry","lead":"솔로몬","target":"제사장들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"grasp","duration":1,"actor":"솔로몬"},{"action":"lift","duration":1.2,"actor":"솔로몬"},{"action":"brace","duration":1.5,"actor":"솔로몬"},{"action":"carry","duration":1.8,"actor":"솔로몬"},{"action":"walk","duration":1.5,"actor":"솔로몬"},{"action":"lower","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대하 5:2-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"carry","lead":"레위인들","target":"솔로몬","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"grasp","duration":1,"actor":"레위인들"},{"action":"lift","duration":1.2,"actor":"레위인들"},{"action":"brace","duration":1.5,"actor":"레위인들"},{"action":"carry","duration":1.8,"actor":"레위인들"},{"action":"walk","duration":1.5,"actor":"레위인들"},{"action":"lower","duration":1.2,"actor":"레위인들"}],"duration":8.2,"support":null,"ref":"역대하 5:2-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-extra-05",
@@ -1992,7 +1993,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"encourage","lead":"여호사밧","target":"야하시엘","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"여호사밧"},{"action":"turn","duration":1.2,"actor":"여호사밧"},{"action":"speak","duration":1.5,"actor":"여호사밧"},{"action":"point","duration":1.8,"actor":"여호사밧"},{"action":"listen","duration":1.5,"actor":"여호사밧"},{"action":"lower","duration":1.2,"actor":"여호사밧"}],"duration":8.2,"support":null,"ref":"역대하 20:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"encourage","lead":"야하시엘","target":"여호사밧","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야하시엘"},{"action":"turn","duration":1.2,"actor":"야하시엘"},{"action":"speak","duration":1.5,"actor":"야하시엘"},{"action":"point","duration":1.8,"actor":"야하시엘"},{"action":"listen","duration":1.5,"actor":"야하시엘"},{"action":"lower","duration":1.2,"actor":"야하시엘"}],"duration":8.2,"support":null,"ref":"역대하 20:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ch-extra-21",
