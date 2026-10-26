@@ -488,14 +488,14 @@
     },
     {
       "code": "zep",
-      "payloadSha256": "4aaae21625bc383cac5e3208dbe4e7d9c1e8bf111077fbd0c4df6e2d33b32676",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "6e04a655da47cac1b0b173a7689d9b8864b25efe9d0a9199aff54dc4f6b5e6b3",
+      "scenes": 7,
+      "existing": 7,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 7,
       "modes": {
-        "illustration": 1
+        "illustration": 7
       },
       "status": "authored-awaiting-browser-review"
     },
