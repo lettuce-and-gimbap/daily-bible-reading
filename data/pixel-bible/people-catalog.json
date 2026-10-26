@@ -8,8 +8,8 @@
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2555,
-      "group": 252,
+      "unresolved": 2553,
+      "group": 253,
       "person": 109,
       "animal": 8,
       "spiritual": 6,
@@ -7225,27 +7225,6 @@
       ]
     },
     {
-      "name": "내 사자",
-      "roles": [
-        "길을 준비할 이"
-      ],
-      "refs": [
-        "mal.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:내 사자:mal",
-          "status": "needs-review",
-          "refs": [
-            "mal.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "내 종 다윗",
       "roles": [
         "세우실 한 목자",
@@ -13362,7 +13341,6 @@
         "gen.49",
         "heb.7",
         "luk.5",
-        "mal.2",
         "mrk.2"
       ],
       "appearance": "generic",
@@ -13404,14 +13382,6 @@
         },
         {
           "kind": "unresolved",
-          "id": "unresolved:레위:mal",
-          "status": "needs-review",
-          "refs": [
-            "mal.2"
-          ]
-        },
-        {
-          "kind": "unresolved",
           "id": "unresolved:레위:mrk",
           "status": "needs-review",
           "refs": [
@@ -13444,12 +13414,10 @@
     {
       "name": "레위 자손",
       "roles": [
-        "모세 편에 선 지파",
-        "연단받을 제사장"
+        "모세 편에 선 지파"
       ],
       "refs": [
-        "exo.32",
-        "mal.3"
+        "exo.32"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -13459,8 +13427,7 @@
           "id": "group:레위 자손",
           "status": "reviewed-rule",
           "refs": [
-            "exo.32",
-            "mal.3"
+            "exo.32"
           ]
         }
       ]
@@ -15761,7 +15728,8 @@
         "마지막 선지자"
       ],
       "refs": [
-        "mal.1"
+        "mal.1",
+        "mal.4"
       ],
       "appearance": "expanded30",
       "review": "profile-symbolic",
@@ -15771,7 +15739,8 @@
           "id": "person:말라기",
           "status": "profile-reviewed",
           "refs": [
-            "mal.1"
+            "mal.1",
+            "mal.4"
           ]
         }
       ]
@@ -16867,7 +16836,6 @@
         "lev.24",
         "luk.9",
         "luk.16",
-        "mal.4",
         "mat.17",
         "mat.19",
         "mrk.9",
@@ -16990,7 +16958,6 @@
             "lev.24",
             "luk.9",
             "luk.16",
-            "mal.4",
             "mat.17",
             "mat.19",
             "mrk.9",
@@ -38973,7 +38940,6 @@
         "jer.30",
         "jer.46",
         "jhn.4",
-        "mal.1",
         "psa.85",
         "psa.105",
         "psa.135",
@@ -39017,7 +38983,6 @@
             "jer.30",
             "jer.46",
             "jhn.4",
-            "mal.1",
             "psa.85",
             "psa.105",
             "psa.135",
@@ -40317,27 +40282,6 @@
       ]
     },
     {
-      "name": "언약의 사자",
-      "roles": [
-        "성전에 임하실 주"
-      ],
-      "refs": [
-        "mal.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:언약의 사자:mal",
-          "status": "needs-review",
-          "refs": [
-            "mal.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "에그론 사람들",
       "roles": [
         "궤를 두려워하며 돌려보내자 함"
@@ -41273,21 +41217,10 @@
       "roles": [
         "미움받은 형"
       ],
-      "refs": [
-        "mal.1"
-      ],
+      "refs": [],
       "appearance": "generic",
       "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:에서(에돔):mal",
-          "status": "needs-review",
-          "refs": [
-            "mal.1"
-          ]
-        }
-      ]
+      "identities": []
     },
     {
       "name": "에셀과 엘르앗",
@@ -42373,7 +42306,6 @@
         "jas.5",
         "luk.4",
         "luk.9",
-        "mal.4",
         "mat.11",
         "mat.17",
         "mrk.9",
@@ -42397,7 +42329,6 @@
             "jas.5",
             "luk.4",
             "luk.9",
-            "mal.4",
             "mat.11",
             "mat.17",
             "mrk.9",
@@ -65826,6 +65757,27 @@
           "status": "group-or-unresolved",
           "refs": [
             "zec.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "악을 행하는 자들",
+      "roles": [
+        "하나님을 섬기는 일이 헛되다고 말한 이들"
+      ],
+      "refs": [
+        "mal.3"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:악을 행하는 자들",
+          "status": "reviewed-rule",
+          "refs": [
+            "mal.3"
           ]
         }
       ]

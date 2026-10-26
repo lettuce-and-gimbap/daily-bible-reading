@@ -324,7 +324,7 @@ test('hag 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('mal 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'mal.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-mal-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/mal.json'));assert.equal(added.length,6);
- for(const title of ["멸시받는 제물과 하나님의 이름을 책망하다","레위와 맺은 언약을 되새기다","형제와 아내에게 신실하라고 촉구하다","온전한 십일조와 돌봄을 회복하라 하다","여호와를 경외하는 이들의 이름을 기록하다","모세의 율법과 엘리야의 약속으로 맺다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["멸시받는 제물과 하나님의 이름을 책망하다","레위와 맺은 언약을 되새기다","형제와 아내에게 신실하라고 촉구하다","온전한 십일조와 돌봄을 회복하라 하다","여호와를 경외하는 이들의 이름을 기록하다","마지막 예언을 전하는 말라기"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 

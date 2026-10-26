@@ -5,9 +5,9 @@
       "id": "ot-mal-3-0",
       "code": "mal",
       "chapter": 3,
-      "title": "길을 준비하는 사자",
+      "title": "말라기가 언약의 날을 예고하다",
       "actors": [
-        "언약의 사자"
+        "말라기"
       ],
       "object": "temple",
       "ref": "말라기 3:1-5",
@@ -20,7 +20,7 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 하나님이 길을 준비할 사자를 보내시고 이어 언약의 사자가 갑자기 성전에 오세요. 예수님은 이 사자가 세례 요한이라고 하셨고, 오시는 분은 은을 녹이는 불과 같아요."
+        "해설: 말라기가 길을 준비할 사자와 성전에 임하실 주, 정결하게 될 레위 자손에 관한 예언을 전해요."
       ],
       "study": "하나님이 길을 준비할 사자를 보내시고 이어 언약의 사자가 갑자기 성전에 오세요. 예수님은 이 사자가 세례 요한이라고 하셨고, 오시는 분은 은을 녹이는 불과 같아요.",
       "actorLines": {},
@@ -29,7 +29,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "언약의 사자",
+        "lead": "말라기",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -40,32 +40,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "언약의 사자"
+            "actor": "말라기"
           }
         ],
         "duration": 8.2,
@@ -159,8 +159,7 @@
       "chapter": 2,
       "title": "레위와 맺은 언약을 되새기다",
       "actors": [
-        "제사장들",
-        "레위"
+        "제사장들"
       ],
       "object": "scene-marker",
       "ref": "말라기 2:1-9",
@@ -187,7 +186,7 @@
         "version": 2,
         "motif": "warning",
         "lead": "제사장들",
-        "target": "레위",
+        "target": null,
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "speech",
@@ -462,10 +461,9 @@
       "id": "ot-mal-extra-4-0",
       "code": "mal",
       "chapter": 4,
-      "title": "모세의 율법과 엘리야의 약속으로 맺다",
+      "title": "마지막 예언을 전하는 말라기",
       "actors": [
-        "모세",
-        "엘리야",
+        "말라기",
         "이름을 경외하는 자들",
         "교만한 자와 악인"
       ],
@@ -481,17 +479,17 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 교만한 자의 심판과 의로운 해의 치유를 대비하고 모세의 율법과 엘리야의 도래를 기억하라고 해요."
+        "해설: 말라기가 악인의 심판과 경외하는 이들의 회복을 전하고, 모세의 율법과 엘리야의 약속을 기억하라고 해요."
       ],
-      "study": "교만한 자의 심판과 의로운 해의 치유를 대비하고 모세의 율법과 엘리야의 도래를 기억하라고 해요.",
+      "study": "말라기가 악인의 심판과 경외하는 이들의 회복을 전하고, 모세의 율법과 엘리야의 약속을 기억하라고 해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {
         "version": 2,
         "motif": "promise",
-        "lead": "모세",
-        "target": "엘리야",
+        "lead": "말라기",
+        "target": "이름을 경외하는 자들",
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "light",
@@ -501,32 +499,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "모세"
+            "actor": "말라기"
           },
           {
             "action": "lift",
             "duration": 1.2,
-            "actor": "모세"
+            "actor": "말라기"
           },
           {
             "action": "speak",
             "duration": 1.5,
-            "actor": "모세"
+            "actor": "말라기"
           },
           {
             "action": "bless",
             "duration": 1.8,
-            "actor": "모세"
+            "actor": "말라기"
           },
           {
             "action": "lower",
             "duration": 1.5,
-            "actor": "모세"
+            "actor": "말라기"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "모세"
+            "actor": "말라기"
           }
         ],
         "duration": 8.2,
@@ -541,7 +539,7 @@
       "chapter": 1,
       "title": "어떻게 사랑하셨나이까",
       "actors": [
-        "야곱"
+        "이스라엘 백성"
       ],
       "object": "field",
       "ref": "말라기 1:1-5",
@@ -563,7 +561,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "야곱",
+        "lead": "이스라엘 백성",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -574,32 +572,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘 백성"
           }
         ],
         "duration": 8.2,
@@ -678,37 +676,5 @@
       }
     }
   ],
-  "additionalPeople": {
-    "1": [
-      {
-        "name": "에서",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          2,
-          3
-        ]
-      }
-    ],
-    "3": [
-      {
-        "name": "야곱",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          6
-        ]
-      }
-    ],
-    "4": [
-      {
-        "name": "엘리",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          5
-        ]
-      }
-    ]
-  }
+  "additionalPeople": {}
 }

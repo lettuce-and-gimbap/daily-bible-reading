@@ -2961,5 +2961,6 @@
 {"id":"group:곤고하고 가난한 남은 자들","name":"곤고하고 가난한 남은 자들","kind":"group","occurrences":["zep.3"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:시온의 백성","name":"시온의 백성","kind":"group","occurrences":["zep.3"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:시온 주민","name":"시온 주민","kind":"group","occurrences":["zec.2","zec.9"],"traits":[],"status":"group-or-unresolved"},
-{"id":"group:말 탄 순찰대","name":"말 탄 순찰대","kind":"group","occurrences":["zec.1"],"traits":[],"status":"group-or-unresolved"}
+{"id":"group:말 탄 순찰대","name":"말 탄 순찰대","kind":"group","occurrences":["zec.1"],"traits":[],"status":"group-or-unresolved"},
+{"id":"group:악을 행하는 자들","name":"악을 행하는 자들","kind":"group","occurrences":["mal.3"],"traits":[],"status":"group-or-unresolved"}
 ]}

@@ -20,7 +20,7 @@ const explicit={camel:/낙타/u,ox:/(?:암소|수소|소 떼|황소)/u,goat:/염
 export function chapterCreatures(c){
  const found=new Map();
  const add=(id,refs)=>{const d=CREATURES[id];if(!d)return;found.set(id,{name:d.name,weight:1,creature:d,role:`이 본문에 언급된 ${d.kind==='animal'?'동물':'식물'} · ${d.name}`,creatureRefs:refs});};
- for(const item of chapterObjects(c))if(CREATURES[item.id])add(item.id,item.refs);
+ for(const item of chapterObjects(c))if(CREATURES[item.id]&&!(item.id==='calf'&&item.evidence.every(e=>/송아지처럼/.test(e.text))))add(item.id,item.refs);
  for(const [id,pattern]of Object.entries(explicit)){
   const events=(c.data?.events||[]).filter(e=>pattern.test(`${e.title||''} ${e.text||''}`));
   if(events.length)add(id,events.map(e=>`${c.name||c.code} ${c.chap}${e.verses?':'+e.verses:''}`));

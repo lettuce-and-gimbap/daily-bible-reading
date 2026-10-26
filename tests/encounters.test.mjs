@@ -304,7 +304,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3807);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3803);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -801,6 +801,24 @@ test('호세아의 가족·정치 관계 9개는 표징 결혼·경고·돌아�
  assert.equal(summary.chapters[1].rels.some(relation=>['이스르엘','로루하마','로암미'].includes(relation.from)),false,'어린 자녀가 성인 대사를 말하지 않게 함');
  assert.equal(summary.chapters[12].people.some(person=>['야곱','에서','천사'].includes(person.name)),false,'과거 조상과 천사의 회상을 현재 조우로 만들지 않음');
  assert.match(entries.find(entry=>entry.id==='pair-hos-3-israel-david').detail,/실제 동시대 조우가 아닌/);
+});
+
+test('말라기 4장은 예언 속 옛 인물과 비유 동물을 현장 NPC로 만들지 않고 절별 발화를 유지한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/mal.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'mal',name:'말라기',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='mal');
+ assert.equal(chapters.length,4);assert.equal(entries.length,10);
+ assert.equal(context.relations.length,1);assert.equal(context.relations[0].from.name,'남편들');assert.equal(context.relations[0].to.name,'어려서 맞은 아내');
+ assert.equal(summary.chapters['1'].people.some(p=>['야곱','에서(에돔)'].includes(p.name)),false,'선택의 예시로 회고되는 조상은 현장 인물이 아님');
+ assert.equal(summary.chapters['2'].people.some(p=>p.name==='레위'),false);
+ assert.equal(summary.chapters['3'].people.some(p=>['언약의 사자','레위 자손'].includes(p.name)),false,'미래에 임할 인물과 정결하게 될 집단은 현재 장면 배우가 아님');
+ assert.equal(summary.chapters['4'].people.some(p=>['모세','엘리야'].includes(p.name)),false,'율법과 미래 예언에 언급되는 인물은 현장 배우가 아님');
+ const malEventData=JSON.parse(fs.readFileSync('data/pixel-bible/events/mal.json'));const malEvents=malEventData.scenes;assert.deepEqual(malEvents.find(e=>e.id==='ot-mal-3-0').actors,['말라기'],'예언을 전달하는 말라기가 현재 장면을 이끈다');assert.deepEqual(malEventData.additionalPeople,{},'과거·미래에 언급된 사람을 자동으로 현재 장면에 더하지 않는다');
+ for(const row of entries){assert.equal(row[4].length,row[7].length,`${row[1]}장 발화마다 구절 참조`);assert.ok(row[4].every(line=>line.length>8));}
+ const pair=PAIR_DIALOGUE.find(x=>x.id==='pair-mal-2-husbands-wife-covenant');assert.ok(pair);assert.match(pair.detail,/직접 발화를 기록하지 않습니다/);
+ const verseCounts=[14,17,18,6];let covered=0;for(let i=0;i<chapters.length;i++){const seen=new Set();for(const event of chapters[i].data.events){const m=event.verses.match(/^(\d+)(?:-(\d+))?$/);assert.ok(m,`말라기 ${i+1}장 범위 형식`);for(let v=Number(m[1]);v<=Number(m[2]||m[1]);v++){assert.ok(v<=verseCounts[i],`말라기 ${i+1}:${v} 범위`);assert.equal(seen.has(v),false,`말라기 ${i+1}:${v} 중복`);seen.add(v);}}assert.equal(seen.size,verseCounts[i],`말라기 ${i+1}장 누락 절`);covered+=seen.size;}assert.equal(covered,55);
+ const {chapterObjects}=await import('../js/features/pixel-bible/object-catalog.js');const {chapterCreatures}=await import('../js/features/pixel-bible/creatures.js');
+ const ch4=chapters.find(c=>c.chap===4);assert.equal(chapterObjects(ch4).some(x=>x.id==='horse'),false,'말라기 이름과 타는 날의 동사에 말을 잘못 매칭하지 않음');assert.equal(chapterCreatures(ch4).some(x=>x.name==='송아지'),false,'송아지 비유를 실제 동물 NPC로 만들지 않음');
 });
 
 test('요엘의 3장면은 재앙의 호출·회개 권면·열국 심판을 구분하고 메뚜기 떼를 대화 인물에서 제외한다',()=>{

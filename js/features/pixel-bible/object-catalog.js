@@ -26,7 +26,7 @@ function matches(entry,text){
  if(entry.id==='boat'&&/배가 고|배를 채|배가 부/.test(text)&&!/바다|타고|건너|풍랑|호수/.test(text))return false;
  if(entry.id==='sandal'&&!/신발|신을.*벗|신.*발|신 끈/.test(text))return false;
  if(entry.id==='lion'&&!/굴|으르렁|맹수|사자들|사자에게|사자의 입|사자 새끼/.test(text))return false;
- if(entry.id==='horse'&&!/타고|타는|탄 |기병|군마|말들이|말을 타/.test(text))return false;
+ if(entry.id==='horse'&&!/말(?:을 타고|을 타|을 몰|에 올라| 위에| 탄|들이 달리|이 달리)|기병|군마/.test(text))return false;
  return patterns.get(entry.id).test(text);
 }
 export function chapterObjects(c){
