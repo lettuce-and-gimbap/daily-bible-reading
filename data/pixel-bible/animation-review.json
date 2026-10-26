@@ -516,16 +516,27 @@
     },
     {
       "code": "sng",
-      "payloadSha256": "3da8554413acc8567945d459ff851b717660bb992613f70ac4e62e1ca7be74c8",
-      "scenes": 11,
-      "existing": 11,
+      "payloadSha256": "ef05e5559165df1f8201776e18a9e6329d6f29c6be7380077abed3d96c0d20bc",
+      "scenes": 22,
+      "existing": 22,
       "restored": 0,
-      "corrected": 2,
-      "planned": 11,
+      "corrected": 0,
+      "planned": 22,
       "modes": {
-        "illustration": 11
+        "illustration": 22
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 22,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "isa",

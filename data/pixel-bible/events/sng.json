@@ -24,7 +24,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"솔로몬","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"palanquin","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"read","duration":1.2,"actor":"솔로몬"},{"action":"look","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"아가 3:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "솔로몬",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "palanquin",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 3:6-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-3-2",
@@ -49,7 +95,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"솔로몬","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"crown","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"read","duration":1.2,"actor":"솔로몬"},{"action":"look","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"아가 3:9-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "솔로몬",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "crown",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 3:9-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-8-2",
@@ -76,7 +168,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"솔로몬","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"vineyard","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"read","duration":1.2,"actor":"솔로몬"},{"action":"look","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"아가 8:8-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "솔로몬",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "vineyard",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "솔로몬"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "솔로몬"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 8:8-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-01",
@@ -110,7 +248,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"vine","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 2:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "welcome",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "vine",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 2:8-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-02",
@@ -138,7 +322,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"seek","lead":"술람미 여인","target":"예루살렘 딸들","mode":"illustration","setting":"road","effect":"journey","emotion":"neutral","prop":"lamp","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"hide","duration":1.5,"actor":"술람미 여인"},{"action":"peek","duration":1.8,"actor":"술람미 여인"},{"action":"walk","duration":1.5,"actor":"술람미 여인"},{"action":"inspect","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "seek",
+        "lead": "술람미 여인",
+        "target": "예루살렘 딸들",
+        "mode": "illustration",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "hide",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "peek",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 3:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-03",
@@ -166,7 +396,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"vine","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 4:12-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "welcome",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "vine",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 4:12-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-04",
@@ -198,7 +474,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"house","beats":[{"action":"startle","duration":1,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"},{"action":"kneel","duration":1.5,"actor":"술람미 여인"},{"action":"cover-mouth","duration":1.8,"actor":"술람미 여인"},{"action":"mourn","duration":1.5,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 5:2-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 5:2-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-05",
@@ -230,7 +552,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"explain","lead":"술람미 여인","target":"신랑의 친구들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"술람미 여인"},{"action":"turn","duration":1.2,"actor":"술람미 여인"},{"action":"speak","duration":1.5,"actor":"술람미 여인"},{"action":"point","duration":1.8,"actor":"술람미 여인"},{"action":"listen","duration":1.5,"actor":"술람미 여인"},{"action":"lower","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 5:9-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "explain",
+        "lead": "술람미 여인",
+        "target": "신랑의 친구들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 5:9-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-06",
@@ -268,7 +636,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"tree","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 6:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "welcome",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "tree",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 6:1-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-07",
@@ -295,7 +709,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"journey","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"vine","beats":[{"action":"listen","duration":1,"actor":"술람미 여인"},{"action":"gather","duration":1.2,"actor":"술람미 여인"},{"action":"carry","duration":1.5,"actor":"술람미 여인"},{"action":"walk","duration":1.8,"actor":"술람미 여인"},{"action":"walk","duration":1.5,"actor":"술람미 여인"},{"action":"look","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 7:10-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "journey",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "determined",
+        "prop": "vine",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 7:10-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-sng-extra-08",
@@ -321,7 +781,853 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사랑 노래의 화자와 꿈·비유를 구분해 상징적으로 재구성해요. 모든 이미지를 실제 사건이나 인물의 확정된 외모로 단정하지 않아요.",
-      "animation": {"version":2,"motif":"welcome","lead":"술람미 여인","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"feast","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"술람미 여인"},{"action":"walk","duration":1.2,"actor":"술람미 여인"},{"action":"bow","duration":1.5,"actor":"술람미 여인"},{"action":"extend","duration":1.8,"actor":"술람미 여인"},{"action":"place","duration":1.5,"actor":"술람미 여인"},{"action":"sit","duration":1.2,"actor":"술람미 여인"}],"duration":8.2,"support":null,"ref":"아가 8:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "welcome",
+        "lead": "술람미 여인",
+        "target": "솔로몬",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 8:13-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-01-01",
+      "code": "sng",
+      "chapter": 1,
+      "title": "포도주보다 나은 사랑",
+      "actors": [
+        "예루살렘 딸들"
+      ],
+      "object": "wine",
+      "ref": "아가 1:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인이 왕의 사랑을 포도주보다 좋다고 노래하며 자기를 방으로 이끌어 달라고 해요. 예루살렘 딸들이 함께 기뻐해요."
+      ],
+      "study": "여인이 왕의 사랑을 포도주보다 좋다고 노래하며 자기를 방으로 이끌어 달라고 해요. 예루살렘 딸들이 함께 기뻐해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "예루살렘 딸들",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "wine",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "예루살렘 딸들"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "예루살렘 딸들"
+          },
+          {
+            "action": "reach",
+            "duration": 1.5,
+            "actor": "예루살렘 딸들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "예루살렘 딸들"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "예루살렘 딸들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "예루살렘 딸들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 1:1-4",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-01-05",
+      "code": "sng",
+      "chapter": 1,
+      "title": "햇볕에 그을린 여인",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "tent",
+      "ref": "아가 1:5-8",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 게달의 검은 천막처럼 햇볕에 그을렸지만 아름답다고 해요. 오빠들 성화에 못 이겨 포도원을 지키느라 자기 포도원은 소홀히 했어요."
+      ],
+      "study": "여인은 게달의 검은 천막처럼 햇볕에 그을렸지만 아름답다고 해요. 오빠들 성화에 못 이겨 포도원을 지키느라 자기 포도원은 소홀히 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "tent",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 1:5-8",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-01-09",
+      "code": "sng",
+      "chapter": 1,
+      "title": "서로를 칭찬함",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "myrrh",
+      "ref": "아가 1:9-17",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신랑이 신부를 암말과 비둘기 같은 눈으로, 신부가 신랑을 몰약 주머니와 고벨화로 칭찬해요. 푸른 풀밭이 침상이에요."
+      ],
+      "study": "신랑이 신부를 암말과 비둘기 같은 눈으로, 신부가 신랑을 몰약 주머니와 고벨화로 칭찬해요. 푸른 풀밭이 침상이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "myrrh",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 1:9-17",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-02-01",
+      "code": "sng",
+      "chapter": 2,
+      "title": "샤론의 수선화",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "lily",
+      "ref": "아가 2:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여인은 자기를 샤론의 수선화로, 신랑은 가시나무 속의 백합으로 칭찬해요. 사랑의 깃발 아래 잔칫집에서 사랑하는 이의 팔에 안겨요."
+      ],
+      "study": "여인은 자기를 샤론의 수선화로, 신랑은 가시나무 속의 백합으로 칭찬해요. 사랑의 깃발 아래 잔칫집에서 사랑하는 이의 팔에 안겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "lily",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 2:1-7",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-04-01",
+      "code": "sng",
+      "chapter": 4,
+      "title": "어여쁘고도 어여쁘다",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "tower",
+      "ref": "아가 4:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신랑이 신부의 눈은 비둘기, 머리털은 염소 떼, 이는 목욕한 양 떼, 목은 다윗의 망대 같다고 칭찬해요. 흠이 하나도 없다고 해요."
+      ],
+      "study": "신랑이 신부의 눈은 비둘기, 머리털은 염소 떼, 이는 목욕한 양 떼, 목은 다윗의 망대 같다고 칭찬해요. 흠이 하나도 없다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "tower",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 4:1-7",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-04-08",
+      "code": "sng",
+      "chapter": 4,
+      "title": "내 마음을 빼앗았구나",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "scroll",
+      "ref": "아가 4:8-11",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신랑이 신부에게 레바논에서 함께 가자고 불러요. 너의 눈빛 하나와 목걸이 하나가 내 마음을 빼앗았다고 해요."
+      ],
+      "study": "신랑이 신부에게 레바논에서 함께 가자고 불러요. 너의 눈빛 하나와 목걸이 하나가 내 마음을 빼앗았다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 4:8-11",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-05-01",
+      "code": "sng",
+      "chapter": 5,
+      "title": "동산의 잔치",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "honey",
+      "ref": "아가 5:1",
+      "verseNumbers": [
+        1
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신랑이 동산에 들어와 향료와 꿀과 포도주를 누리고 친구들에게도 먹고 마시라고 해요."
+      ],
+      "study": "신랑이 동산에 들어와 향료와 꿀과 포도주를 누리고 친구들에게도 먹고 마시라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "honey",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 5:1",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-07-01",
+      "code": "sng",
+      "chapter": 7,
+      "title": "발부터 머리까지",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "sandal",
+      "ref": "아가 7:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신랑이 신부를 신 신은 발부터 목, 눈, 코, 머리까지 아름다운 비유로 노래해요."
+      ],
+      "study": "신랑이 신부를 신 신은 발부터 목, 눈, 코, 머리까지 아름다운 비유로 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "sandal",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 7:1-5",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-07-06",
+      "code": "sng",
+      "chapter": 7,
+      "title": "종려나무 같은 키",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "wine",
+      "ref": "아가 7:6-9",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신부의 키는 종려나무 같고 가슴은 포도송이 같아요. 입은 좋은 포도주처럼 흘러요."
+      ],
+      "study": "신부의 키는 종려나무 같고 가슴은 포도송이 같아요. 입은 좋은 포도주처럼 흘러요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "wine",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 7:6-9",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-08-01",
+      "code": "sng",
+      "chapter": 8,
+      "title": "어머니의 집으로",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "house",
+      "ref": "아가 8:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 신부가 사랑하는 이를 오라버니처럼 밖에서도 입 맞추고 싶다며 어머니의 집으로 데려가고 싶다고 하고, 사랑을 깨우지 말라 당부해요."
+      ],
+      "study": "신부가 사랑하는 이를 오라버니처럼 밖에서도 입 맞추고 싶다며 어머니의 집으로 데려가고 싶다고 하고, 사랑을 깨우지 말라 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 8:1-4",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-sng-review-08-05",
+      "code": "sng",
+      "chapter": 8,
+      "title": "죽음같이 강한 사랑",
+      "actors": [
+        "술람미 여인"
+      ],
+      "object": "water-supply",
+      "ref": "아가 8:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나를 도장처럼 마음에 두라고 해요. 사랑은 죽음처럼 강하고 많은 물도 끄지 못하며 돈으로 살 수 없어요."
+      ],
+      "study": "나를 도장처럼 마음에 두라고 해요. 사랑은 죽음처럼 강하고 많은 물도 끄지 못하며 돈으로 살 수 없어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "사랑의 노래와 비유를 상징적으로 보여 주는 장면이에요. 구체적인 동작과 표정은 감상을 돕기 위한 연출이에요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "술람미 여인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "garden",
+        "effect": "symbol",
+        "emotion": "gentle",
+        "prop": "water-supply",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.8,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "술람미 여인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "술람미 여인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "아가 8:5-7",
+        "source": "장별 요약의 노래 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {

@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 2255,
+    "scenesInFiles": 2266,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 1540
+    "curatedSupplementalScenes": 1551
   },
   "books": [
     {
@@ -202,10 +202,10 @@
     {
       "code": "sng",
       "chapters": 8,
-      "scenes": 11,
+      "scenes": 22,
       "sourceMatchedSceneCandidates": 3,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 8
+      "curatedSupplementalScenes": 19
     },
     {
       "code": "isa",
@@ -20190,7 +20190,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 3,
       "classification": {
         "no-source-confirmed-actor-or-object": 1,
         "source-confirmed-object-only": 2
@@ -20219,7 +20219,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-object-only": 3
       },
@@ -20268,7 +20268,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 1,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 2
@@ -20301,7 +20301,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 2
@@ -20363,7 +20363,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 1
@@ -20392,7 +20392,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 4,
       "classification": {
         "source-confirmed-object-only": 1,
         "no-source-confirmed-actor-or-object": 2,
@@ -28634,6 +28634,10 @@
       {
         "book": "ecc",
         "scenesAdded": 23
+      },
+      {
+        "book": "sng",
+        "scenesAdded": 11
       }
     ]
   }
