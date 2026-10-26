@@ -529,14 +529,14 @@
     },
     {
       "code": "mal",
-      "payloadSha256": "ca68b73b5c4c617ee52329c3fa1a63aadbfe7c26495620991a1483c43cad576b",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "7d2de22a785d12a0d6d896298d36078d08b711cd33721e3b6725d37e2f088ce1",
+      "scenes": 7,
+      "existing": 7,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 7,
       "modes": {
-        "illustration": 1
+        "illustration": 7
       },
       "status": "authored-awaiting-browser-review"
     }

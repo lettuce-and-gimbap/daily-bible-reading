@@ -27,6 +27,191 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"언약의 사자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"언약의 사자"},{"action":"read","duration":1.2,"actor":"언약의 사자"},{"action":"look","duration":1.5,"actor":"언약의 사자"},{"action":"point","duration":1.8,"actor":"언약의 사자"},{"action":"listen","duration":1.5,"actor":"언약의 사자"},{"action":"bow","duration":1.2,"actor":"언약의 사자"}],"duration":8.2,"support":null,"ref":"말라기 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-1-0",
+      "code": "mal",
+      "chapter": 1,
+      "title": "멸시받는 제물과 하나님의 이름을 책망하다",
+      "actors": [
+        "말라기",
+        "이스라엘 백성",
+        "제사장들"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 1:6-14",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 말라기가 흠 있는 제물을 드리는 제사장들을 책망하며, 하나님의 이름이 민족들 가운데 크게 될 날을 전해요."
+      ],
+      "study": "말라기가 흠 있는 제물을 드리는 제사장들을 책망하며, 하나님의 이름이 민족들 가운데 크게 될 날을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"말라기","target":"이스라엘 백성","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"말라기"},{"action":"turn","duration":1.2,"actor":"말라기"},{"action":"speak","duration":1.5,"actor":"말라기"},{"action":"point","duration":1.8,"actor":"말라기"},{"action":"listen","duration":1.5,"actor":"말라기"},{"action":"lower","duration":1.2,"actor":"말라기"}],"duration":8.2,"support":null,"ref":"말라기 1:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-2-0",
+      "code": "mal",
+      "chapter": 2,
+      "title": "레위와 맺은 언약을 되새기다",
+      "actors": [
+        "제사장들",
+        "레위"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 2:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제사장들이 바른 길에서 떠난 일을 책망하고 레위와 맺은 생명과 평화의 언약을 상기시켜요."
+      ],
+      "study": "제사장들이 바른 길에서 떠난 일을 책망하고 레위와 맺은 생명과 평화의 언약을 상기시켜요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"제사장들","target":"레위","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"turn","duration":1.2,"actor":"제사장들"},{"action":"speak","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"lower","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"말라기 2:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-2-1",
+      "code": "mal",
+      "chapter": 2,
+      "title": "형제와 아내에게 신실하라고 촉구하다",
+      "actors": [
+        "남편들",
+        "어려서 맞은 아내",
+        "유다"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 2:10-16",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다 공동체의 배신과 배우자에게 불성실한 일을 책망하며, 폭력을 삼가고 신의를 지키라고 해요."
+      ],
+      "study": "유다 공동체의 배신과 배우자에게 불성실한 일을 책망하며, 폭력을 삼가고 신의를 지키라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"남편들","target":"어려서 맞은 아내","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"남편들"},{"action":"turn","duration":1.2,"actor":"남편들"},{"action":"speak","duration":1.5,"actor":"남편들"},{"action":"point","duration":1.8,"actor":"남편들"},{"action":"listen","duration":1.5,"actor":"남편들"},{"action":"lower","duration":1.2,"actor":"남편들"}],"duration":8.2,"support":null,"ref":"말라기 2:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-3-0",
+      "code": "mal",
+      "chapter": 3,
+      "title": "온전한 십일조와 돌봄을 회복하라 하다",
+      "actors": [
+        "야곱의 자손",
+        "과부와 고아와 품꾼"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 3:6-12",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 돌아오라는 부름과 십일조에 관한 말씀을 전하고, 공동체가 약자를 돌보며 땅의 복을 회복하리라 약속해요."
+      ],
+      "study": "돌아오라는 부름과 십일조에 관한 말씀을 전하고, 공동체가 약자를 돌보며 땅의 복을 회복하리라 약속해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"야곱의 자손","target":"과부와 고아와 품꾼","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱의 자손"},{"action":"turn","duration":1.2,"actor":"야곱의 자손"},{"action":"speak","duration":1.5,"actor":"야곱의 자손"},{"action":"point","duration":1.8,"actor":"야곱의 자손"},{"action":"listen","duration":1.5,"actor":"야곱의 자손"},{"action":"lower","duration":1.2,"actor":"야곱의 자손"}],"duration":8.2,"support":null,"ref":"말라기 3:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-3-1",
+      "code": "mal",
+      "chapter": 3,
+      "title": "여호와를 경외하는 이들의 이름을 기록하다",
+      "actors": [
+        "여호와를 경외하는 자들"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 3:13-18",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님을 섬기는 일이 헛되다고 말하는 이들과 달리, 경외하는 이들이 서로 말하고 기념책에 기록되는 장면을 상징해요."
+      ],
+      "study": "하나님을 섬기는 일이 헛되다고 말하는 이들과 달리, 경외하는 이들이 서로 말하고 기념책에 기록되는 장면을 상징해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"write","lead":"여호와를 경외하는 자들","target":null,"mode":"illustration","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"여호와를 경외하는 자들"},{"action":"grasp","duration":1.2,"actor":"여호와를 경외하는 자들"},{"action":"open","duration":1.5,"actor":"여호와를 경외하는 자들"},{"action":"read","duration":1.8,"actor":"여호와를 경외하는 자들"},{"action":"write","duration":1.5,"actor":"여호와를 경외하는 자들"},{"action":"place","duration":1.2,"actor":"여호와를 경외하는 자들"}],"duration":8.2,"support":null,"ref":"말라기 3:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mal-extra-4-0",
+      "code": "mal",
+      "chapter": 4,
+      "title": "모세의 율법과 엘리야의 약속으로 맺다",
+      "actors": [
+        "모세",
+        "엘리야",
+        "이름을 경외하는 자들",
+        "교만한 자와 악인"
+      ],
+      "object": "scene-marker",
+      "ref": "말라기 4:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 교만한 자의 심판과 의로운 해의 치유를 대비하고 모세의 율법과 엘리야의 도래를 기억하라고 해요."
+      ],
+      "study": "교만한 자의 심판과 의로운 해의 치유를 대비하고 모세의 율법과 엘리야의 도래를 기억하라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"모세","target":"엘리야","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"bless","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"말라기 4:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

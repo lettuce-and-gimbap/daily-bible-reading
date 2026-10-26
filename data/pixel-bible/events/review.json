@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1118,
+    "scenesInFiles": 1124,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 404
+    "curatedSupplementalScenes": 410
   },
   "books": [
     {
@@ -329,9 +329,10 @@
     {
       "code": "mal",
       "chapters": 4,
-      "scenes": 1,
+      "scenes": 7,
       "sourceMatchedSceneCandidates": 1,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 6
     }
   ],
   "chapters": [
@@ -28296,6 +28297,10 @@
       {
         "book": "hag",
         "scenesAdded": 5
+      },
+      {
+        "book": "mal",
+        "scenesAdded": 6
       }
     ]
   }
