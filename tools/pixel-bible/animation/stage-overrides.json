@@ -748,6 +748,15 @@
     },
     "13": {
       "mode": "illustration"
+    },
+    "14": {
+      "mode": "instruction"
+    },
+    "15": {
+      "mode": "instruction"
+    },
+    "16": {
+      "mode": "instruction"
     }
   },
   "gen": {
