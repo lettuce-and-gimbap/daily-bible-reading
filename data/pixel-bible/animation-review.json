@@ -102,14 +102,14 @@
     },
     {
       "code": "rut",
-      "payloadSha256": "c4a8528ddcd590cdf4db9565a0039db9fe962f32b0a9469e3fbe8e0784a18cbf",
-      "scenes": 8,
-      "existing": 8,
+      "payloadSha256": "61452e8ac41313cb5d27e8ebf6118b190e86362e65ab56306db4c98d6a446572",
+      "scenes": 12,
+      "existing": 12,
       "restored": 0,
       "corrected": 2,
-      "planned": 8,
+      "planned": 12,
       "modes": {
-        "reconstruction": 8
+        "reconstruction": 12
       },
       "status": "authored-awaiting-browser-review"
     },

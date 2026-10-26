@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 738,
+    "scenesInFiles": 742,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 24
+    "curatedSupplementalScenes": 28
   },
   "books": [
     {
@@ -91,9 +91,10 @@
     {
       "code": "rut",
       "chapters": 4,
-      "scenes": 8,
+      "scenes": 12,
       "sourceMatchedSceneCandidates": 8,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 4
     },
     {
       "code": "1sa",
@@ -7956,7 +7957,8 @@
           "title": "룻의 고백",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "rut",
@@ -7996,7 +7998,8 @@
           "title": "타작마당의 밤",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "rut",
@@ -8021,7 +8024,8 @@
           "title": "다윗의 족보",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -28085,9 +28089,17 @@
     }
   ],
   "curatedSceneReview": {
-    "book": "jdg",
-    "scenesAdded": 24,
     "method": "Manually reviewed event gaps alongside existing authored candidates. Checked scene ranges and named actors against local Bible data; symbolic passages and sensitive violence are explicitly marked to avoid literal or graphic reenactment.",
-    "scopeNote": "Supplemental scenes are tracked separately from automated source-matched candidates."
+    "scopeNote": "Supplemental scenes are tracked separately from automated source-matched candidates.",
+    "books": [
+      {
+        "book": "jdg",
+        "scenesAdded": 24
+      },
+      {
+        "book": "rut",
+        "scenesAdded": 4
+      }
+    ]
   }
 }

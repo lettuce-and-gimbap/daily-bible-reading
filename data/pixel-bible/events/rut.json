@@ -204,29 +204,165 @@
       "id": "ot-voice-15",
       "code": "rut",
       "chapter": 3,
-      "title": "룻은 보아스가 기업 무를 자임을 밝히며 보호를 청해",
+      "title": "타작마당에서 보호를 청한 룻",
       "actors": [
-        "룻"
+        "룻",
+        "보아스"
       ],
       "object": "cloak",
-      "ref": "룻기 3:9",
+      "ref": "룻기 3:6-13",
       "verseNumbers": [
-        9
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
       ],
       "actions": {},
       "lines": [
-        "룻(창작·본문 기반): 당신의 옷자락으로 저를 덮어 주십시오.",
-        "해설: 룻은 보아스가 기업 무를 자임을 밝히며 보호를 청해요. 혼인과 친족 책임의 문맥이에요."
+        "룻(창작·본문 기반): 저는 룻입니다. 당신의 보호 아래 머물 수 있도록 책임을 다해 주세요.",
+        "보아스(창작·본문 기반): 네 신의를 고맙게 여긴다. 더 가까운 친족의 책임부터 확인하고 내가 약속을 지키겠다.",
+        "해설: 룻이 보호와 기업 무를 책임을 청하자 보아스는 더 가까운 친족의 권리를 먼저 확인한 뒤 책임을 다하겠다고 약속해요."
       ],
-      "study": "룻은 보아스가 기업 무를 자임을 밝히며 보호를 청해요. 혼인과 친족 책임의 문맥이에요.",
+      "study": "룻이 보호와 기업 무를 책임을 청하자 보아스는 더 가까운 친족의 권리를 먼저 확인한 뒤 책임을 다하겠다고 약속해요.",
       "actorLines": {
         "룻": [
-          "당신의 옷자락으로 저를 덮어 주십시오."
+          "저는 룻입니다. 당신의 보호 아래 머물 수 있도록 책임을 다해 주세요."
+        ],
+        "보아스": [
+          "네 신의를 고맙게 여긴다. 더 가까운 친족의 책임부터 확인하고 내가 약속을 지키겠다."
         ]
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"plead","lead":"룻","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"룻"},{"action":"kneel","duration":1.2,"actor":"룻"},{"action":"lift","duration":1.5,"actor":"룻"},{"action":"pray","duration":1.8,"actor":"룻"},{"action":"pray","duration":1.5,"actor":"룻"},{"action":"bow","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 3:9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"plead","lead":"룻","target":"보아스","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"룻"},{"action":"kneel","duration":1.2,"actor":"룻"},{"action":"lift","duration":1.5,"actor":"룻"},{"action":"pray","duration":1.8,"actor":"룻"},{"action":"pray","duration":1.5,"actor":"룻"},{"action":"bow","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 3:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-rut-extra-01",
+      "code": "rut",
+      "chapter": 1,
+      "title": "모압으로 떠난 가족",
+      "actors": [
+        "엘리멜렉",
+        "나오미",
+        "말론",
+        "기룐"
+      ],
+      "object": "house",
+      "ref": "룻기 1:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 흉년을 피해 모압으로 떠난 나오미의 가족은 남편과 두 아들을 잃어요. 이야기는 이 상실에서 시작해요."
+      ],
+      "study": "흉년을 피해 모압으로 떠난 나오미의 가족은 남편과 두 아들을 잃어요. 이야기는 이 상실에서 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "집은 고향을 떠난 가족을 상징하는 배치예요. 죽음은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"depart","lead":"엘리멜렉","target":"나오미","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"엘리멜렉"},{"action":"gather","duration":1.2,"actor":"엘리멜렉"},{"action":"carry","duration":1.5,"actor":"엘리멜렉"},{"action":"walk","duration":1.8,"actor":"엘리멜렉"},{"action":"walk","duration":1.5,"actor":"엘리멜렉"},{"action":"look","duration":1.2,"actor":"엘리멜렉"}],"duration":8.2,"support":null,"ref":"룻기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-rut-extra-02",
+      "code": "rut",
+      "chapter": 1,
+      "title": "나오미와 룻의 귀향",
+      "actors": [
+        "나오미",
+        "룻",
+        "오르바"
+      ],
+      "object": "house",
+      "ref": "룻기 1:6-18",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나오미는 며느리들에게 고향으로 돌아가라고 하지만, 룻은 끝까지 함께하겠다고 결심해요. 두 사람은 베들레헴을 향해 길을 나서요."
+      ],
+      "study": "나오미는 며느리들에게 고향으로 돌아가라고 하지만, 룻은 끝까지 함께하겠다고 결심해요. 두 사람은 베들레헴을 향해 길을 나서요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "두 며느리의 서로 다른 선택을 보여주는 귀향 장면이에요.",
+      "animation": {"version":2,"motif":"journey","lead":"나오미","target":"룻","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"나오미"},{"action":"gather","duration":1.2,"actor":"나오미"},{"action":"carry","duration":1.5,"actor":"나오미"},{"action":"walk","duration":1.8,"actor":"나오미"},{"action":"walk","duration":1.5,"actor":"나오미"},{"action":"look","duration":1.2,"actor":"나오미"}],"duration":8.2,"support":null,"ref":"룻기 1:6-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-rut-extra-03",
+      "code": "rut",
+      "chapter": 3,
+      "title": "타작마당으로 가기 전의 준비",
+      "actors": [
+        "나오미",
+        "룻"
+      ],
+      "object": "robe",
+      "ref": "룻기 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나오미는 룻에게 몸을 단장하고 타작마당에서 보아스에게 보호를 청할 방법을 알려줘요. 룻은 그 말을 따르기로 해요."
+      ],
+      "study": "나오미는 룻에게 몸을 단장하고 타작마당에서 보아스에게 보호를 청할 방법을 알려줘요. 룻은 그 말을 따르기로 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "옷은 본문에 나오는 준비의 일부예요. 장면은 밤의 행동을 선정적으로 연출하지 않아요.",
+      "animation": {"version":2,"motif":"wear","lead":"나오미","target":"룻","mode":"reconstruction","setting":"chamber","effect":"garment","emotion":"gentle","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"나오미"},{"action":"grasp","duration":1.2,"actor":"나오미"},{"action":"lift","duration":1.5,"actor":"나오미"},{"action":"wear","duration":1.8,"actor":"나오미"},{"action":"smooth","duration":1.5,"actor":"나오미"},{"action":"bow","duration":1.2,"actor":"나오미"}],"duration":8.2,"support":null,"ref":"룻기 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-rut-extra-04",
+      "code": "rut",
+      "chapter": 4,
+      "title": "오벳의 탄생과 나오미의 회복",
+      "actors": [
+        "룻",
+        "나오미",
+        "오벳"
+      ],
+      "object": "bed",
+      "ref": "룻기 4:13-17",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 룻과 보아스에게 오벳이 태어나고, 이웃들은 나오미가 다시 기쁨과 돌봄을 얻었다고 축하해요. 오벳은 다윗의 할아버지가 돼요."
+      ],
+      "study": "룻과 보아스에게 오벳이 태어나고, 이웃들은 나오미가 다시 기쁨과 돌봄을 얻었다고 축하해요. 오벳은 다윗의 할아버지가 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "출산을 직접 묘사하지 않고 아이의 탄생과 공동체의 돌봄을 중심으로 보여줘요.",
+      "animation": {"version":2,"motif":"birth","lead":"룻","target":"나오미","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"bed","beats":[{"action":"look","duration":1,"actor":"룻"},{"action":"listen","duration":1.2,"actor":"룻"},{"action":"cradle","duration":1.5,"actor":"룻"},{"action":"smile","duration":1.8,"actor":"룻"},{"action":"bless","duration":1.5,"actor":"룻"},{"action":"bow","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 4:13-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
