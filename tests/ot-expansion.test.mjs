@@ -328,7 +328,7 @@ test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'num.json')),added=data.scenes.filter(s=>s.id==='ot-num-extra-15-0'),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/num.json'));assert.equal(added.length,1);
- for(const title of ["安息日劳作者被带到摩西面前并接受判决"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["안식일에 나무를 한 사람이 모세 앞에 서다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
