@@ -4,6 +4,7 @@ Run ot-event-candidates.mjs first. Does not create new first-person dialogue by 
 """
 import json,sqlite3,re,pathlib,collections,sys
 TESTAMENT='NT' if '--nt' in sys.argv else 'OT'
+AUDIT_ONLY='--audit-only' in sys.argv
 ROOT=pathlib.Path(__file__).resolve().parents[2]
 BIBLE=pathlib.Path('/workspace/private-reference/bible/scripture.sqlite3')
 HOKMA=pathlib.Path('/workspace/private-reference/hokma/hokma.sqlite3')
@@ -13,6 +14,8 @@ output=ROOT/'data/pixel-bible/events';output.mkdir(exist_ok=True)
 reports=[];bybook=collections.defaultdict(list)
 # The curated source order requested by the user.
 order=['2ki','gen','exo','lev','num','deu','jos','jdg','rut','1sa','2sa','1ki','1ch','2ch','ezr','neh','est','job','psa','pro','ecc','sng','isa','jer','lam','ezk','dan','hos','jol','amo','oba','jnh','mic','nam','hab','zep','hag','zec','mal']
+KOREAN_EDS=['gae','easy','han','hyun','saenew']
+NON_SCENE_REFERENCES={('deu',23,'총회에 들어올 사람'):'발람'}
 if TESTAMENT=='NT':order=list(dict.fromkeys(c['code'] for c in chapters))
 chapters.sort(key=lambda c:(order.index(c['code']),c['chapter']))
 def verses(span):
@@ -25,21 +28,30 @@ def verses(span):
 def short(text):
  parts=re.split(r'(?<=[.!?。])\s+',str(text).strip());return ' '.join(parts[:2])[:280]
 for c in chapters:
- code,ch=c['code'],c['chapter'];paired={};merged_groups=[]
- for ed in ['gae','easy']:
-  paired[ed]=dict(b.execute('select verse,text from verses where edition=? and code=? and chapter=? order by verse',(ed,code,ch)).fetchall());assert paired[ed],(code,ch,ed)
+ code,ch=c['code'],c['chapter'];paired={};source_by_edition={};merged_groups=[]
+ for ed in KOREAN_EDS:
+  source_by_edition[ed]=dict(b.execute('select verse,text from verses where edition=? and code=? and chapter=? order by verse',(ed,code,ch)).fetchall());assert source_by_edition[ed],(code,ch,ed)
   raw=b.execute('select body from chapters where edition=? and code=? and chapter=?',(ed,code,ch)).fetchone()[0]
   for line in raw.splitlines():
    merged=re.match(r'^(\d+)[–—-](\d+)\s+(.+)$',line.strip())
    if merged:
-    merged_groups.append(set(range(int(merged[1]),int(merged[2])+1)))
-    for v in range(int(merged[1]),int(merged[2])+1):paired[ed].setdefault(v,merged[3])
+    if ed in ['gae','easy']:merged_groups.append(set(range(int(merged[1]),int(merged[2])+1)))
+    for v in range(int(merged[1]),int(merged[2])+1):source_by_edition[ed].setdefault(v,merged[3])
+  if ed in ['gae','easy']:paired[ed]=source_by_edition[ed]
  commentary=h.execute('select body from chapters where code=? and chapter=?',(code,ch)).fetchone();assert commentary,(code,ch)
- report=dict(code=code,chapter=ch,sourceVerses={ed:len(v) for ed,v in paired.items()},commentaryAvailable=True,eventsReviewed=len(c['events']),scenes=0,skipped=[])
+ report=dict(code=code,chapter=ch,sourceVerses={ed:len(v) for ed,v in paired.items()},commentaryAvailable=True,eventsReviewed=len(c['events']),scenes=0,classification=collections.Counter(),skipped=[])
  for i,event in enumerate(c['events']):
   selected=verses(event.get('verses'));text=event.get('text','');ref=f"{c['name']} {ch}:{event.get('verses','')}"
-  if not selected or any(not all(v in paired[ed] for v in selected) for ed in paired):report['skipped'].append(dict(title=event['title'],reason='reference-range-needs-review'));continue
-  if any(group.intersection(selected) and not group.issubset(selected) for group in merged_groups):report['skipped'].append(dict(title=event['title'],reason='partial-merged-range-needs-review'));continue
+  missing_by_edition={ed:[v for v in selected if v not in source_by_edition[ed]] for ed in KOREAN_EDS} if selected else {}
+  if not selected or any(not all(v in paired[ed] for v in selected) for ed in paired):
+   supported=[ed for ed,rows in source_by_edition.items() if selected and all(v in rows for v in selected)]
+   reason='source-edition-gap' if supported else 'reference-range-needs-review'
+   report['classification'][reason]+=1
+   report['skipped'].append(dict(title=event['title'],reason=reason,missingVerseNumbers={ed:vs for ed,vs in missing_by_edition.items() if vs},supportedByEditions=supported));continue
+  if any(group.intersection(selected) and not group.issubset(selected) for group in merged_groups):report['classification']['partial-merged-range-needs-review']+=1;report['skipped'].append(dict(title=event['title'],reason='partial-merged-range-needs-review'));continue
+  excluded_actor=NON_SCENE_REFERENCES.get((code,ch,event['title']))
+  if excluded_actor:
+   report['classification']['referenced-person-not-scene-actor']+=1;report['skipped'].append(dict(title=event['title'],reason='referenced-person-not-scene-actor',actor=excluded_actor));continue
   source={ed:' '.join(paired[ed][v] for v in selected) for ed in paired}
   actors=[]
   for p in c['people']:
@@ -51,13 +63,16 @@ for c in chapters:
   for obj in c['objects']:
    aliases=obj.get('terms') or [obj['name']]
    if any(re.search(r'(?<![가-힣])'+re.escape(alias)+r'(?:들)?(?:은|는|이|가|을|를|의|에|에서|으로|로|과|와)?(?=$|[\s.,!?;:])',text) and all(alias in s for s in source.values()) for alias in aliases):candidates.append(obj)
+  category='source-confirmed-actor-and-object' if actors and candidates else 'source-confirmed-actor-only' if actors else 'source-confirmed-object-only' if candidates else 'no-source-confirmed-actor-or-object'
+  report['classification'][category]+=1
   if not actors or not candidates:
-   report['skipped'].append(dict(title=event['title'],reason='no-source-confirmed-actor-or-object'));continue
+   reason='no-source-confirmed-actor-or-object' if not actors and not candidates else 'no-source-confirmed-actor' if not actors else 'no-source-confirmed-object'
+   report['skipped'].append(dict(title=event['title'],reason=reason));continue
   # No invented first-person speech; poetry and figurative prophetic passages stay explanations.
   obj=candidates[0]
   entry=dict(id=f'ot-{code}-{ch}-{i}',code=code,chapter=ch,title=event['title'],actors=actors[:2],object=obj['id'],ref=ref,verseNumbers=selected,actions={},lines=['해설: '+short(text)],study=text,actorLines={},narrationOnly=True,objectNote='본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.')
   bybook[code].append(entry);report['scenes']+=1
- reports.append(report)
+ report['classification']=dict(report['classification']);reports.append(report)
 voice_review=[]
 for n,line in enumerate((ROOT/('tools/pixel-bible/'+TESTAMENT.lower()+'-voiced-seeds.tsv')).read_text().splitlines(),1):
  code,ch,span,requested,obj,voice,detail=line.split('|');ch=int(ch);numbers=verses(span);c=next(c for c in chapters if c['code']==code and c['chapter']==ch)
@@ -87,8 +102,17 @@ for c in chapters:
   pattern=re.compile(r'(?<![가-힣])'+re.escape(name)+r'(?=$|[\s,.:;]|은|는|이|가|의|을|를|에게|에게서|과|와|아|야)')
   hits=[v for v,t in source['gae'].items() if pattern.search(t) and pattern.search(source['easy'].get(v,''))]
   if hits:additional[code].setdefault(str(ch),[]).append(dict(name=name,weight=1,role='본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.',mentionVerses=hits))
-for code in order:(output/(code+'.json')).write_text(json.dumps(dict(book=code,scenes=bybook[code],additionalPeople=additional[code]),ensure_ascii=False,separators=(',',':'))+'\n')
+retained_legacy={};existing_counts={}
+for code in order:
+ path=output/(code+'.json');old=json.loads(path.read_text()) if path.exists() else {'scenes':[],'additionalPeople':{}}
+ existing_counts[code]=len(old.get('scenes',[]))
+ new_ids={scene['id'] for scene in bybook[code]};retained_legacy[code]=sum(scene['id'] not in new_ids for scene in old.get('scenes',[]))
+ if not AUDIT_ONLY:path.write_text(json.dumps(dict(book=code,scenes=bybook[code],additionalPeople=additional[code]),ensure_ascii=False,indent=2)+'\n')
 print('additional chapter/person mentions',sum(len(p) for chapters_ in additional.values() for p in chapters_.values()))
-manifest=dict(date='2026-10-25',method='Automated local verse-range and literal actor/object cross-check against two supplied editions. Existing authored summaries supply public explanations. Commentary availability is checked, not a claim of manual exegesis of every chapter.',books=[dict(code=code,chapters=sum(r['code']==code for r in reports),scenes=len(bybook[code])) for code in order],chapters=reports,voicedReview=voice_review)
+classification=collections.Counter();skip_reasons=collections.Counter()
+for report in reports:
+ classification.update(report['classification'])
+ skip_reasons.update(item['reason'] for item in report['skipped'])
+manifest=dict(date='2026-10-26',method='Event actor/object matching uses two supplied editions; verse-range gaps are separately checked against all five supplied Korean editions. Existing authored summaries supply public explanations. Commentary availability is checked, not a claim of manual exegesis of every chapter.',rangeGapCrossCheckEditions=KOREAN_EDS,coverageSummary=dict(eventsReviewed=sum(r['eventsReviewed'] for r in reports),sourceMatchedSceneCandidates=sum(len(bybook[c]) for c in order),scenesInFiles=sum(existing_counts.values()) if AUDIT_ONLY else sum(len(bybook[c]) for c in order),retainedLegacyScenes=sum(retained_legacy.values()),classification=dict(classification),skippedByReason=dict(skip_reasons)),books=[dict(code=code,chapters=sum(r['code']==code for r in reports),scenes=existing_counts[code] if AUDIT_ONLY else len(bybook[code]),sourceMatchedSceneCandidates=len(bybook[code]),retainedLegacyScenes=retained_legacy[code]) for code in order],chapters=reports,voicedReview=voice_review)
 (output/('review.json' if TESTAMENT=='OT' else 'review-nt.json')).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print('books',len(order),'chapters',len(reports),'events',sum(r['eventsReviewed'] for r in reports),'scenes',sum(map(len,bybook.values())))

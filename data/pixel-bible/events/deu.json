@@ -29,37 +29,7 @@
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"장로들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"장로들"},{"action":"read","duration":1.2,"actor":"장로들"},{"action":"look","duration":1.5,"actor":"장로들"},{"action":"point","duration":1.8,"actor":"장로들"},{"action":"listen","duration":1.5,"actor":"장로들"},{"action":"bow","duration":1.2,"actor":"장로들"}],"duration":8.2,"support":null,"ref":"신명기 21:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
-    {
-      "id": "ot-deu-23-0",
-      "code": "deu",
-      "chapter": 23,
-      "title": "총회에 들어올 사람",
-      "actors": [
-        "발람"
-      ],
-      "object": "water-supply",
-      "ref": "신명기 23:1-8",
-      "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 암몬과 모압은 빵과 물로 맞지 않고 발람에게 뇌물을 주어 저주하려 해서 영원히 회중에 들지 못해요. 에돔은 형제이고 애굽은 나그네로 살던 땅이니 미워하지 말라 해요."
-      ],
-      "study": "암몬과 모압은 빵과 물로 맞지 않고 발람에게 뇌물을 주어 저주하려 해서 영원히 회중에 들지 못해요. 에돔은 형제이고 애굽은 나그네로 살던 땅이니 미워하지 말라 해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"발람","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"발람"},{"action":"read","duration":1.2,"actor":"발람"},{"action":"look","duration":1.5,"actor":"발람"},{"action":"point","duration":1.8,"actor":"발람"},{"action":"listen","duration":1.5,"actor":"발람"},{"action":"bow","duration":1.2,"actor":"발람"}],"duration":8.2,"support":null,"ref":"신명기 23:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
+{
       "id": "ot-voice-10",
       "code": "deu",
       "chapter": 31,
