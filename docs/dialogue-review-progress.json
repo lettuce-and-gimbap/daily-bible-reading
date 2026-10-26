@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "mic",
-    "nextBook": "nam",
-    "booksCompleted": 33,
+    "currentBook": "nam",
+    "nextBook": "hab",
+    "booksCompleted": 34,
     "completedBooks": [
       "gen",
       "exo",
@@ -330,41 +330,38 @@
       "amo",
       "oba",
       "jnh",
-      "mic"
+      "mic",
+      "nam"
     ],
-    "chaptersReviewed": 904,
-    "relationshipLinksReviewed": 2808,
-    "authoredPairEntriesReviewed": 881,
+    "chaptersReviewed": 907,
+    "relationshipLinksReviewed": 2814,
+    "authoredPairEntriesReviewed": 887,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3805,
-      "authoredLinks": 925,
-      "relationshipGeneratedLinks": 2880,
+      "authoredLinks": 931,
+      "relationshipGeneratedLinks": 2874,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요나서에 이어 미가서 1–7장 전체의 관계선을 전수 대조했다. 압제당한 여성과 아이, 거짓 예언, 착취 지도자와 백성, 시온의 위협, 앗수르 침공, 발락과 발람, 부패한 재판관과 미가 등 본문별 관계 14개를 서로 응답하는 대사로 작성했다. 도시 자체는 인물에서 빼고 유다 성읍의 주민 집단으로 바꾸었으며, 시온의 의인화도 주민 집단으로 구분했다. 표제의 유다 왕들과 7장의 조상 아브라함·야곱은 해당 장면에 없는 NPC 목록과 무대 행위자에서 제외했다. 미가의 독백은 1인칭으로 다듬고 문장마다 절 범위를 분리했다. 다음 권은 나훔이다.",
+    "statusNote": "미가서에 이어 나훔 1–3장 전체를 본문과 주석에 대조했다. 앗수르의 압제와 유다의 해방, 평화의 전령, 니느웨 침공, 피해국의 반응, 왕후와 시녀의 애곡, 앗수르 왕과 주민 등 인간 관계 6개를 왕복 대사로 보강했다. 니느웨·노 아몬은 성읍으로 남기고 사람 NPC에서 제외했으며, 야곱은 이스라엘 백성의 집합적 이름으로 처리했다. 동물 비유는 대화 관계에서 제외하고 독백에 절별 참조를 달았다. 다음 권은 하박국이다.",
     "partialBookAudit": {
-      "book": "mic",
-      "chaptersScanned": 7,
-      "relationshipLinksFound": 14,
-      "authoredPairEntriesAddedAndChecked": 14,
-      "authoredLinksCovered": 14,
+      "book": "nam",
+      "chaptersScanned": 3,
+      "relationshipLinksFound": 6,
+      "authoredPairEntriesAddedAndChecked": 6,
+      "authoredLinksCovered": 6,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 2,
+      "nonDialogueLinksRemoved": 1,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
         2,
-        3,
-        4,
-        5,
-        6,
-        7
+        3
       ],
-      "statusNote": "미가 1–7장 전체를 훑어 남아 있는 인간 관계선 14개에 각 사건에 맞는 왕복 대사를 작성했다. 비인격적 도시는 인물에서 제외하고 유다 성읍과 시온은 주민 집단으로 표현했다. 본문 시점에 없는 유다 왕과 조상은 NPC 명단에서 제외했다."
+      "statusNote": "나훔 1–3장의 인간 관계 6개를 모두 대사화했다. 왕후와 시녀들의 이별 장면을 본문 2:7에 근거해 추가하고, 니느웨·노 아몬은 성읍으로, 야곱은 이스라엘 백성으로 분류했다. 왕복 중복 관계 1개를 통합하고 동물 비유를 대화에서 제외했다."
     },
     "currentBookStatus": "complete"
   }

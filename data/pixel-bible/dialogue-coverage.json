@@ -4,11 +4,11 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabelCount": 2254,
-    "characterOccurrences": 5951,
-    "authoredSoloOccurrences": 2039,
-    "chapterRoleOccurrences": 3912,
-    "ordinaryOnlyOccurrences": 0,
+    "sourceLabelCount": 2286,
+    "characterOccurrences": 5955,
+    "authoredSoloOccurrences": 2042,
+    "chapterRoleOccurrences": 3901,
+    "ordinaryOnlyOccurrences": 12,
     "chapterRelationRecords": 3825,
     "majorSets": 100,
     "majorSetsWithMatches": 100
@@ -314,10 +314,10 @@
     {
       "code": "nam",
       "chapters": 3,
-      "characterOccurrences": 12,
-      "authoredSoloOccurrences": 1,
-      "chapterRoleOccurrences": 11,
-      "ordinaryOnlyOccurrences": 0,
+      "characterOccurrences": 16,
+      "authoredSoloOccurrences": 4,
+      "chapterRoleOccurrences": 0,
+      "ordinaryOnlyOccurrences": 12,
       "chapterRelationRecords": 6
     },
     {

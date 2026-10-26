@@ -4,12 +4,12 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2260,
+    "sourceLabels": 2251,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2566,
-      "group": 247,
+      "unresolved": 2562,
+      "group": 250,
       "person": 109,
       "animal": 8,
       "spiritual": 6,
@@ -7568,27 +7568,6 @@
       ]
     },
     {
-      "name": "노 아몬(테베)",
-      "roles": [
-        "먼저 무너진 애굽 도성"
-      ],
-      "refs": [
-        "nam.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:노 아몬(테베):nam",
-          "status": "needs-review",
-          "refs": [
-            "nam.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "노래하는 이들",
       "roles": [
         "군대 앞에서 찬양한 레위인",
@@ -8455,41 +8434,18 @@
       ]
     },
     {
-      "name": "니느웨",
-      "roles": [
-        "무너질 앗수르의 수도",
-        "앗수르의 잔혹한 수도",
-        "피의 성"
-      ],
-      "refs": [
-        "nam.1",
-        "nam.2",
-        "nam.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:니느웨:nam",
-          "status": "needs-review",
-          "refs": [
-            "nam.1",
-            "nam.2",
-            "nam.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "니느웨 사람들",
       "roles": [
         "분별 못하는 십이만여 명",
+        "앗수르의 압제 아래 사는 니느웨 주민들",
         "하나님을 믿고 금식한 이들"
       ],
       "refs": [
         "jnh.3",
-        "jnh.4"
+        "jnh.4",
+        "nam.1",
+        "nam.2",
+        "nam.3"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -8500,7 +8456,31 @@
           "status": "reviewed-rule",
           "refs": [
             "jnh.3",
-            "jnh.4"
+            "jnh.4",
+            "nam.1",
+            "nam.2",
+            "nam.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "니느웨 여성들",
+      "roles": [
+        "포위와 함락 속에서 신음하는 주민들"
+      ],
+      "refs": [
+        "nam.2"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:니느웨 여성들",
+          "status": "reviewed-rule",
+          "refs": [
+            "nam.2"
           ]
         }
       ]
@@ -8543,6 +8523,27 @@
           "status": "needs-review",
           "refs": [
             "jnh.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "니느웨 왕후",
+      "roles": [
+        "함락 뒤 정한 대로 끌려가는 왕후"
+      ],
+      "refs": [
+        "nam.2"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "unresolved",
+          "id": "unresolved:니느웨 왕후:nam",
+          "status": "needs-review",
+          "refs": [
+            "nam.2"
           ]
         }
       ]
@@ -39258,7 +39259,6 @@
         "jer.46",
         "jhn.4",
         "mal.1",
-        "nam.2",
         "psa.85",
         "psa.105",
         "psa.135",
@@ -39303,7 +39303,6 @@
             "jer.46",
             "jhn.4",
             "mal.1",
-            "nam.2",
             "psa.85",
             "psa.105",
             "psa.135",
@@ -50379,8 +50378,7 @@
         "jhn.14",
         "jhn.18",
         "jud.1",
-        "mal.2",
-        "nam.1"
+        "mal.2"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -50398,8 +50396,7 @@
             "hos.8",
             "hos.12",
             "isa.16",
-            "mal.2",
-            "nam.1"
+            "mal.2"
           ]
         },
         {
@@ -50548,6 +50545,7 @@
         "손이 약해진 사람들",
         "실로아 물을 버린 백성",
         "안식일을 지켜야 할 이들",
+        "앗수르의 멍에가 꺾일 백성",
         "언약에 참여한 무리",
         "언약을 깨뜨린 이들",
         "여전히 부패한 백성",
@@ -50572,16 +50570,13 @@
         "2ki.23",
         "ezr.4",
         "isa.1",
-        "isa.6",
-        "isa.8",
         "isa.26",
         "isa.29",
         "isa.58",
         "isa.59",
+        "isa.6",
+        "isa.8",
         "jer.1",
-        "jer.7",
-        "jer.8",
-        "jer.9",
         "jer.11",
         "jer.14",
         "jer.15",
@@ -50589,9 +50584,13 @@
         "jer.17",
         "jer.25",
         "jer.35",
+        "jer.7",
+        "jer.8",
+        "jer.9",
         "jol.1",
         "jol.2",
         "lam.5",
+        "nam.1",
         "neh.4"
       ],
       "appearance": "generic",
@@ -50611,16 +50610,13 @@
             "2ki.23",
             "ezr.4",
             "isa.1",
-            "isa.6",
-            "isa.8",
             "isa.26",
             "isa.29",
             "isa.58",
             "isa.59",
+            "isa.6",
+            "isa.8",
             "jer.1",
-            "jer.7",
-            "jer.8",
-            "jer.9",
             "jer.11",
             "jer.14",
             "jer.15",
@@ -50628,9 +50624,13 @@
             "jer.17",
             "jer.25",
             "jer.35",
+            "jer.7",
+            "jer.8",
+            "jer.9",
             "jol.1",
             "jol.2",
             "lam.5",
+            "nam.1",
             "neh.4"
           ]
         }
@@ -53200,6 +53200,7 @@
         "사랑을 의심한 이들",
         "속아 넘어간 이들",
         "여호와 그는 하나님이라 외친 무리",
+        "영광을 회복할 야곱의 백성",
         "왕을 주장함",
         "요나단을 구해 낸 이들",
         "좋은 가축을 남긴 군대",
@@ -53208,16 +53209,17 @@
       ],
       "refs": [
         "1ki.18",
-        "1sa.8",
         "1sa.14",
         "1sa.15",
+        "1sa.8",
         "2sa.7",
         "dan.9",
         "ezk.13",
         "hos.4",
         "hos.6",
         "mal.1",
-        "mic.6"
+        "mic.6",
+        "nam.2"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -53228,16 +53230,17 @@
           "status": "reviewed-rule",
           "refs": [
             "1ki.18",
-            "1sa.8",
             "1sa.14",
             "1sa.15",
+            "1sa.8",
             "2sa.7",
             "dan.9",
             "ezk.13",
             "hos.4",
             "hos.6",
             "mal.1",
-            "mic.6"
+            "mic.6",
+            "nam.2"
           ]
         }
       ]
@@ -58863,6 +58866,27 @@
       ]
     },
     {
+      "name": "침공군대",
+      "roles": [
+        "니느웨를 공격하는 군대"
+      ],
+      "refs": [
+        "nam.2"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:침공군대",
+          "status": "reviewed-rule",
+          "refs": [
+            "nam.2"
+          ]
+        }
+      ]
+    },
+    {
       "name": "칭찬받는 형제",
       "roles": [
         "함께 보낸 이"
@@ -59706,6 +59730,27 @@
           "status": "needs-review",
           "refs": [
             "mat.20"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "피해를 입은 나라들",
+      "roles": [
+        "니느웨의 학대에 시달린 나라들"
+      ],
+      "refs": [
+        "nam.3"
+      ],
+      "appearance": "generic",
+      "review": "unreviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:피해를 입은 나라들",
+          "status": "reviewed-rule",
+          "refs": [
+            "nam.3"
           ]
         }
       ]

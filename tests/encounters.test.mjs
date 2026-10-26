@@ -8,6 +8,7 @@ import {hangingPose,liftedCharacterFrame} from '../js/features/pixel-bible/motio
 import {relationshipLines,loveBoothExchange} from '../js/features/pixel-bible/relationship-lines.js';
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 import {HISTORY_DIALOGUE_ROWS} from '../js/features/pixel-bible/old-testament/history.js';
+import {MINOR_PROPHETS_DIALOGUE_ROWS} from '../js/features/pixel-bible/old-testament/minor-prophets.js';
 
 function fixture(){
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:[{name:'아합',role:'포도원을 원한 왕'},{name:'나봇',role:'유산을 지킨 포도원 주인'}],rels:[{from:'아합',to:'나봇',label:'포도원 요구',verses:'1-4',note:'아합이 포도원을 원했지만 나봇은 조상의 유산을 넘기지 않았어요.'}]}}];
@@ -854,6 +855,25 @@ test('미가서 일곱 장의 인간 관계선 14개는 본문에 맞는 양방�
  const names=context.people.map(person=>person.name);
  for(const absent of ['사마리아','예루살렘','요담·아하스·히스기야','아브라함과 야곱'])assert.equal(names.includes(absent),false,`${absent}는 미가 본문 시점의 인물이 아니다`);
  assert.ok(names.includes('유다 성읍 사람들'));assert.ok(names.includes('시온의 백성'));
+});
+
+test('나훔 세 장의 여섯 사람 관계를 왕복 대사로 연결하고 성읍·비유·동물을 NPC와 구분한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/nam.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'nam',name:'나훔',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^nam\.\d+$/.test(entry.chapter));
+ const human=context.relations.filter(r=>r.from.name!=='하나님'&&r.to.name!=='하나님');
+ assert.equal(chapters.length,3);assert.equal(human.length,6);assert.equal(entries.length,6);
+ for(const relation of human){
+  const entry=entries.find(item=>item.chapter===`nam.${relation.from.chap}`&&((item.speaker===relation.from.name&&item.target===relation.to.name)||(item.speaker===relation.to.name&&item.target===relation.from.name)));
+  assert.ok(entry,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ const names=context.people.map(person=>person.name);
+ for(const absent of ['니느웨','노 아몬(테베)','야곱'])assert.equal(names.includes(absent),false,`${absent}는 해당 장의 현장 인물이 아니다`);
+ for(const present of ['니느웨 사람들','유다 백성','침공군대','니느웨 여성들','이스라엘 백성','피해를 입은 나라들','니느웨 왕후'])assert.ok(names.includes(present),`${present} 집단을 현장 맥락에 맞게 구분한다`);
+ assert.ok(summary.chapters['3'].places.some(place=>place.name==='노 아몬(테베)'),'회상되는 도시는 장소 자료에 보존');
+ assert.ok(!context.relations.some(relation=>['포도나무','비둘기','사자','메뚜기'].includes(relation.from.name)||['포도나무','비둘기','사자','메뚜기'].includes(relation.to.name)),'동물과 식물 비유는 사람 관계 대사로 만들지 않는다');
+ const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='nam');assert.ok(rows.length>=4);
+ for(const row of rows){assert.equal(row[4].length,row[7].length,`${row[1]}장 발화마다 절 범위가 붙는다`);assert.ok(row[4].every(line=>line.length>8));}
 });
 
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{

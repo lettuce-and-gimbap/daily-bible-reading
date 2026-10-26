@@ -78,7 +78,7 @@
       "title": "니느웨를 향한 경고와 심판의 권능",
       "actors": [
         "나훔",
-        "니느웨"
+        "니느웨 사람들"
       ],
       "object": "scene-marker",
       "ref": "나훔 1:1-6",
@@ -102,7 +102,7 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "나훔",
-        "target": "니느웨",
+        "target": "니느웨 사람들",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -153,7 +153,7 @@
       "title": "유다의 멍에를 꺾고 평화를 알리다",
       "actors": [
         "나훔",
-        "유다",
+        "유다 백성",
         "좋은 소식을 전하는 자"
       ],
       "object": "scene-marker",
@@ -179,7 +179,7 @@
         "version": 2,
         "motif": "promise",
         "lead": "나훔",
-        "target": "유다",
+        "target": "유다 백성",
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "light",
@@ -229,8 +229,10 @@
       "chapter": 2,
       "title": "니느웨 성을 향해 진군하는 군대",
       "actors": [
-        "니느웨",
-        "파괴하는 자"
+        "니느웨 사람들",
+        "침공군대",
+        "니느웨 왕후",
+        "니느웨 여성들"
       ],
       "object": "scene-marker",
       "ref": "나훔 2:1-10",
@@ -257,8 +259,8 @@
       "animation": {
         "version": 2,
         "motif": "siege",
-        "lead": "니느웨",
-        "target": "파괴하는 자",
+        "lead": "니느웨 사람들",
+        "target": "침공군대",
         "mode": "illustration",
         "setting": "wall",
         "effect": "collapse",
@@ -268,32 +270,32 @@
           {
             "action": "look",
             "duration": 1,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "push",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "brace",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "recoil",
             "duration": 1.8,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "retreat",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "mourn",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 왕후"
           }
         ],
         "duration": 8.2,
@@ -308,9 +310,7 @@
       "chapter": 2,
       "title": "사자의 굴이 비게 되리라",
       "actors": [
-        "니느웨",
-        "니느웨 여종들",
-        "야곱"
+        "니느웨 사람들"
       ],
       "object": "scene-marker",
       "ref": "나훔 2:11-13",
@@ -330,8 +330,8 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "니느웨",
-        "target": "니느웨 여종들",
+        "lead": "니느웨 사람들",
+        "target": null,
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -341,32 +341,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           }
         ],
         "duration": 8.2,
@@ -381,10 +381,9 @@
       "chapter": 3,
       "title": "피의 성 니느웨의 몰락을 애도하다",
       "actors": [
-        "니느웨",
+        "니느웨 사람들",
         "앗수르 왕",
-        "노 아몬(테베)",
-        "열방"
+        "피해를 입은 나라들"
       ],
       "object": "scene-marker",
       "ref": "나훔 3:1-19",
@@ -420,7 +419,7 @@
       "animation": {
         "version": 2,
         "motif": "judgment",
-        "lead": "니느웨",
+        "lead": "니느웨 사람들",
         "target": "앗수르 왕",
         "mode": "illustration",
         "setting": "courtyard",
@@ -431,32 +430,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "turn",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "speak",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           },
           {
             "action": "lower",
             "duration": 1.2,
-            "actor": "니느웨"
+            "actor": "니느웨 사람들"
           }
         ],
         "duration": 8.2,
@@ -466,16 +465,5 @@
       }
     }
   ],
-  "additionalPeople": {
-    "3": [
-      {
-        "name": "누가",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          7
-        ]
-      }
-    ]
-  }
+  "additionalPeople": {}
 }
