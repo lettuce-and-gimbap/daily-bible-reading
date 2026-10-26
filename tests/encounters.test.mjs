@@ -107,7 +107,7 @@ test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 
 test('창세기 관계 대화는 같은 장의 인물 색인과 사건 범위를 근거로 주고받는다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/gen.json'));
  const genesis=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('gen.'));
- assert.equal(genesis.length,37);
+ assert.equal(genesis.length,38);
  for(const entry of genesis){
   const chapter=entry.chapter.split('.')[1],people=summary.chapters[chapter].people.map(person=>person.name);
   assert(people.includes(entry.speaker),`${entry.id} speaker is indexed in Genesis ${chapter}`);
@@ -146,6 +146,12 @@ test('창세기 34장 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음
   assert.match(entry.lines[0],/위험/);
   assert.match(entry.replyLines[0],/우리 누이/);
  }
+});
+
+test('창세기 19장 롯과 두 천사의 피신 대화는 요청과 응답이 이어진다',()=>{
+ const entry=PAIR_DIALOGUE.find(item=>item.chapter==='gen.19'&&item.speaker==='롯'&&item.target==='두 천사');
+ assert.ok(entry);assert.match(entry.ref,/19:15–22/);
+ assert.match(entry.lines[0],/산으로/);assert.match(entry.replyLines[1],/엎지 않겠다/);
 });
 
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{

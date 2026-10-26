@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 0,
-  "currentBook": "gen",
+  "booksCompleted": 1,
+  "currentBook": "exo",
   "currentBookStatus": "in-progress",
   "nextBook": "exo",
   "books": {
@@ -11,16 +11,17 @@
       "chaptersScanned": 50,
       "pairedEntriesReviewed": 37,
       "newTwoWayEntries": 33,
-      "status": "in-progress",
+      "status": "complete",
       "authoredUtteranceGroupsReviewed": 51,
       "utteranceReferencesCorrected": 103,
+      "chapterDialogueAudit": 50,
       "eventVerseSpanAudit": {
         "versesExpected": 1533,
         "versesCovered": 1533,
         "missing": 0,
         "duplicate": 0
       },
-      "statusNote": "창세기 50장 인물·관계 색인과 대사 묶음 51개를 검토했다. 양방향 특수 대화 37개를 확인하고 이 구간에서 5개를 보강했다. 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음과 항변을 짝 대화로 기록했다. 독백 103개 발화에 개별 절 참조를 연결했으며, 창세기 13장의 아브람·롯 화자를 분리하고 4·7·8·9·17·27·28·37·40·42장의 인물·절 범위를 바로잡았다. 사건 범위의 1,533절 대조는 누락·중복 없이 통과했다. 이 수치는 장면 범위 대조이며 대사 전수 완료를 뜻하지 않는다. 나머지 인물 관계와 장면별 특수 대사의 절 단위 검토가 남아 권 완료로 계산하지 않는다."
+      "statusNote": "창세기 50장 전체의 인물·관계 색인, 장면별 대화 후보, 대사 묶음 51개를 검토했다. 본문에 근거한 양방향 특수 대화 38개를 확인하고 기존 누계에서 6개를 보강했다. 디나 사건 뒤 야곱과 시므온·레위, 소돔 심판 때 롯과 두 천사의 요청·응답을 짝 대화로 추가했다. 독백 103개 발화에 개별 절 참조를 연결했으며, 창세기 13장의 아브람·롯 화자를 분리하고 4·7·8·9·17·27·28·37·40·42장의 인물·절 범위를 바로잡았다. 사건 범위의 1,533절 대조는 누락·중복 없이 통과했다. 족보·단독 발화·신적 대화 등 별도의 인간 간 특수 상호작용이 없는 장면은 짝 대사를 억지로 만들지 않았다."
     }
   }
 }
