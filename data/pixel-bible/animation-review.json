@@ -142,7 +142,7 @@
     },
     {
       "code": "1ki",
-      "payloadSha256": "9cd254dbbc0358943c7da910a6bd25f4f6abc2b5e76ad32f8312edc17ee87307",
+      "payloadSha256": "650208f690ffb42a6e6a5af895d645dddba4393f07917a9f864e1bb247857d8f",
       "scenes": 65,
       "existing": 65,
       "restored": 0,
@@ -171,15 +171,15 @@
     },
     {
       "code": "1ch",
-      "payloadSha256": "07090b24063acfaf4a6de39d1be86cfa4d15ea87ee7f4fee18181f639c782dc8",
-      "scenes": 37,
-      "existing": 37,
+      "payloadSha256": "b0d5ea0b2b929c1340511dc554cab4d8a388e7c0d78529d884ab65e131b22098",
+      "scenes": 67,
+      "existing": 67,
       "restored": 0,
       "corrected": 4,
-      "planned": 37,
+      "planned": 67,
       "modes": {
-        "illustration": 2,
-        "reconstruction": 35
+        "illustration": 6,
+        "reconstruction": 61
       },
       "status": "authored-awaiting-browser-review"
     },
