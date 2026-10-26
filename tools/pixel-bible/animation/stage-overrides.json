@@ -1007,6 +1007,43 @@
         }
       ]
     },
+    "38": {
+      "lead": "이삭",
+      "target": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "이삭",
+          "duration": 1
+        },
+        {
+          "action": "touch",
+          "actor": "이삭",
+          "duration": 1.2
+        },
+        {
+          "action": "inspect",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "eat",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "reach",
+          "actor": "이삭",
+          "duration": 1.5
+        },
+        {
+          "action": "bless",
+          "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
     "55": {
       "lead": "유다",
       "target": "요셉",
@@ -1359,9 +1396,8 @@
       ]
     },
     "83": {
-      "mode": "reconstruction",
       "lead": "요셉",
-      "target": "형들",
+      "target": "야곱",
       "effect": "none",
       "beats": [
         {
@@ -1370,28 +1406,28 @@
           "duration": 1
         },
         {
-          "action": "carry",
-          "actor": "애굽 사람들",
+          "action": "speak",
+          "actor": "요셉",
           "duration": 1.2
+        },
+        {
+          "action": "carry",
+          "actor": "형들",
+          "duration": 1.5
         },
         {
           "action": "walk",
           "actor": "요셉",
-          "duration": 1.5
-        },
-        {
-          "action": "bow",
-          "actor": "형들",
           "duration": 1.8
         },
         {
-          "action": "speak",
+          "action": "mourn",
           "actor": "요셉",
           "duration": 1.5
         },
         {
-          "action": "pledge",
-          "actor": "형들",
+          "action": "walk",
+          "actor": "요셉",
           "duration": 1.2
         }
       ]
@@ -2267,6 +2303,16 @@
     },
     "163": {
       "mode": "reconstruction"
+    },
+    "164": {
+      "mode": "reconstruction",
+      "lead": "요셉",
+      "target": "형들"
+    },
+    "165": {
+      "mode": "reconstruction",
+      "lead": "요셉",
+      "target": "형들"
     }
   },
   "exo": {
