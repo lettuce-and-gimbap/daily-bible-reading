@@ -89,8 +89,8 @@ test('명시 대사가 없는 가족·협력·갈등 관계도 관계 성격에 
  }
 });
 
-test('창세기부터 여호수아까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
- const names={gen:'창세기',exo:'출애굽기',lev:'레위기',num:'민수기',deu:'신명기',jos:'여호수아'};
+test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
+ const names={gen:'창세기',exo:'출애굽기',lev:'레위기',num:'민수기',deu:'신명기',jos:'여호수아',rut:'룻기'};
  for(const code of Object.keys(names)){
   const summary=JSON.parse(fs.readFileSync(`data/summary/${code}.json`,'utf8'));
   for(const [chapter,data]of Object.entries(summary.chapters)){
@@ -239,6 +239,15 @@ test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵
 test('사사기 핵심 관계 장면은 직접 만남의 요청·응답이 이어진다',()=>{
  const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 주시오/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/수수께끼의 답/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/따르지 않겠다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
+test('룻기의 발화 행은 중복 화자를 정리하고 각 문장을 본문 절에 연결한다',()=>{
+ const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='rut');
+ assert.equal(rows.length,5);
+ assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
+ for(const [chapter,speaker,target,ref]of [['rut.3','나오미','룻',/3:1–6/],['rut.4','보아스','아무개',/4:3–10/]]){
+  const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry);assert.match(entry.ref,ref);assert.equal(entry.replyLines.length,2);
+ }
 });
 
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{

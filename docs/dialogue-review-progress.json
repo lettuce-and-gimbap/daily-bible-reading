@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 7,
-  "currentBook": "rut",
+  "booksCompleted": 8,
+  "currentBook": "1sa",
   "currentBookStatus": "in-progress",
-  "nextBook": "rut",
+  "nextBook": "1sa",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -129,6 +129,26 @@
         "duplicate": 0
       },
       "statusNote": "사사기 21장 전체의 인물·사건·관계선을 훑었다. 기존 발화 23묶음의 46개 문장에 장별 개별 절 참조를 달고, 관계도 연결 68개가 모두 양방향 특수 대화 후보로 이어지는지 확인했다. 드보라와 바락, 야엘과 시스라, 입다와 딸, 삼손과 딤나 여인·들릴라, 미가와 레위 소년, 레위인과 장인·기브아 노인, 이스라엘과 베냐민 등 사건 접점이 분명한 상호대화 17개를 추가했다. 침묵한 피해자에게 사건 서술을 발화로 붙이지 않고 레위인의 장면 회고와 주변인의 실제 대화를 분리했다. 발화별 참조가 장의 범위와 실제 절 안에 있는지 검사했다. 사건 범위 618절은 누락·중복 없이 통과했다."
+    },
+    "rut": {
+      "chaptersScanned": 4,
+      "chaptersWithAuthoredDialogueReviewed": 4,
+      "authoredUtteranceGroupsReviewed": 5,
+      "utteranceReferencesCorrected": 10,
+      "chapterDialogueAudit": 4,
+      "pairedEntriesReviewed": 9,
+      "newTwoWayEntries": 2,
+      "relationshipEdgesAudited": 21,
+      "authoredPairLinks": 7,
+      "relationshipBasedPairLines": 14,
+      "status": "complete",
+      "eventVerseSpanAudit": {
+        "versesExpected": 85,
+        "versesCovered": 85,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "룻기 4장 전체를 읽고 사건·관계 연결 21개를 대조했다. 나오미의 중복 발화 행을 하나로 합치고 보아스의 중복 행을 정리했으며, 직접 말하지 않은 오르바의 행동을 독백처럼 쓰던 행은 제거했다. 남은 발화 5묶음의 10문장에 각각 절 참조를 달고 룻과 나오미의 타작마당 계획, 보아스와 더 가까운 기업 무를 자의 협상을 양방향 대화로 추가했다. 관계도 연결은 기존·유형별 대화를 포함해 모두 대화 후보가 된다. 사건 범위 85절은 누락·중복 없이 통과했다."
     }
   },
   "relationshipDialogueCoverage": {
@@ -138,11 +158,13 @@
       "lev",
       "num",
       "deu",
-      "jos"
+      "jos",
+      "jdg",
+      "rut"
     ],
-    "relationshipLinks": 466,
-    "authoredPairLinks": 102,
-    "relationshipBasedPairLines": 364,
+    "relationshipLinks": 555,
+    "authoredPairLinks": 127,
+    "relationshipBasedPairLines": 428,
     "unpairedLinks": 0,
     "rule": "관계도 연결은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 짧은 창작 대사를 쓰고, 관계 설명과 구절은 자세히 보기에서 확인한다."
   }
