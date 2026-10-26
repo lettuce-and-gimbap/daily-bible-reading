@@ -527,6 +527,245 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"monument","lead":"여호수아","target":null,"mode":"reconstruction","setting":"courtyard","effect":"stack","emotion":"determined","prop":"stone","beats":[{"action":"grasp","duration":1,"actor":"여호수아"},{"action":"carry","duration":1.2,"actor":"여호수아"},{"action":"lift","duration":1.5,"actor":"여호수아"},{"action":"place","duration":1.8,"actor":"여호수아"},{"action":"inspect","duration":1.5,"actor":"여호수아"},{"action":"point","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 4:6-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-1-0",
+      "code": "jos",
+      "chapter": 1,
+      "title": "여호수아가 백성을 이끌고 요단을 건널 준비를 하다",
+      "actors": [
+        "여호수아",
+        "르우벤 자손",
+        "갓 자손",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 1:10-18",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아는 백성에게 사흘 안에 요단을 건널 준비를 하라고 알리고, 동쪽 지파들은 함께 싸우겠다는 약속을 확인해요."
+      ],
+      "study": "여호수아는 백성에게 사흘 안에 요단을 건널 준비를 하라고 알리고, 동쪽 지파들은 함께 싸우겠다는 약속을 확인해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"command","lead":"여호수아","target":"르우벤 자손","mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"read","duration":1,"actor":"여호수아"},{"action":"lift","duration":1.2,"actor":"여호수아"},{"action":"speak","duration":1.5,"actor":"여호수아"},{"action":"point","duration":1.8,"actor":"여호수아"},{"action":"lower","duration":1.5,"actor":"여호수아"},{"action":"write","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 1:10-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-10-0",
+      "code": "jos",
+      "chapter": 10,
+      "title": "여호수아가 기브온을 구하고 남부 연합을 물리치다",
+      "actors": [
+        "여호수아",
+        "아도니세덱",
+        "기브온 사람들",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 10:6-15",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기브온의 요청을 받은 여호수아는 밤새 올라가 그들을 돕고 남부 연합군을 물리쳐요. 본문의 기도와 긴 낮은 기적으로 기록되므로 상징적으로 표현해요."
+      ],
+      "study": "기브온의 요청을 받은 여호수아는 밤새 올라가 그들을 돕고 남부 연합군을 물리쳐요. 본문의 기도와 긴 낮은 기적으로 기록되므로 상징적으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"여호수아","target":"아도니세덱","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"여호수아"},{"action":"signal","duration":1.2,"actor":"여호수아"},{"action":"brace","duration":1.5,"actor":"여호수아"},{"action":"run","duration":1.8,"actor":"여호수아"},{"action":"halt","duration":1.5,"actor":"여호수아"},{"action":"lift","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 10:6-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-11-0",
+      "code": "jos",
+      "chapter": 11,
+      "title": "여호수아가 북쪽 연합군과 맞서다",
+      "actors": [
+        "여호수아",
+        "야빈",
+        "아낙 사람",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 11:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아가 북쪽 왕들의 연합군과 맞서고 하솔을 차지해요. 본문은 전쟁의 승리와 함께 하나님이 여호수아에게 하신 말씀을 전해요."
+      ],
+      "study": "여호수아가 북쪽 왕들의 연합군과 맞서고 하솔을 차지해요. 본문은 전쟁의 승리와 함께 하나님이 여호수아에게 하신 말씀을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"여호수아","target":"야빈","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"여호수아"},{"action":"signal","duration":1.2,"actor":"여호수아"},{"action":"brace","duration":1.5,"actor":"여호수아"},{"action":"run","duration":1.8,"actor":"여호수아"},{"action":"halt","duration":1.5,"actor":"여호수아"},{"action":"lift","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 11:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-15-0",
+      "code": "jos",
+      "chapter": 15,
+      "title": "악사가 갈렙에게 샘물을 청하다",
+      "actors": [
+        "갈렙",
+        "악사",
+        "옷니엘"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 15:15-19",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 악사는 옷니엘과 혼인한 뒤 갈렙에게 땅을 청하고, 샘물도 달라고 요청해요. 갈렙은 윗샘과 아랫샘을 내어줘요."
+      ],
+      "study": "악사는 옷니엘과 혼인한 뒤 갈렙에게 땅을 청하고, 샘물도 달라고 요청해요. 갈렙은 윗샘과 아랫샘을 내어줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"request","lead":"갈렙","target":"악사","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"갈렙"},{"action":"kneel","duration":1.2,"actor":"갈렙"},{"action":"lift","duration":1.5,"actor":"갈렙"},{"action":"pray","duration":1.8,"actor":"갈렙"},{"action":"pray","duration":1.5,"actor":"갈렙"},{"action":"bow","duration":1.2,"actor":"갈렙"}],"duration":8.2,"support":null,"ref":"여호수아 15:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-17-0",
+      "code": "jos",
+      "chapter": 17,
+      "title": "슬로브핫의 딸들이 기업을 받고 경계를 확인하다",
+      "actors": [
+        "여호수아",
+        "슬로브핫의 딸들",
+        "요셉 자손",
+        "엘르아살"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 17:3-6",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 슬로브핫의 딸들은 모세에게 들은 판결에 따라 요셉 자손 가운데 기업을 받아요. 여성이 땅의 상속을 요구하고 인정받은 일을 분명히 보여줘요."
+      ],
+      "study": "슬로브핫의 딸들은 모세에게 들은 판결에 따라 요셉 자손 가운데 기업을 받아요. 여성이 땅의 상속을 요구하고 인정받은 일을 분명히 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"receive","lead":"여호수아","target":"슬로브핫의 딸들","mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"여호수아"},{"action":"reach","duration":1.2,"actor":"여호수아"},{"action":"grasp","duration":1.5,"actor":"여호수아"},{"action":"lift","duration":1.8,"actor":"여호수아"},{"action":"inspect","duration":1.5,"actor":"여호수아"},{"action":"lower","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 17:3-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-20-0",
+      "code": "jos",
+      "chapter": 20,
+      "title": "이스라엘이 도피성을 구별하다",
+      "actors": [
+        "여호수아"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 20:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아는 하나님이 모세를 통해 명하신 대로 도피성을 구별해 실수로 사람을 죽인 이가 보복을 피해 재판을 기다릴 수 있게 해요."
+      ],
+      "study": "여호수아는 하나님이 모세를 통해 명하신 대로 도피성을 구별해 실수로 사람을 죽인 이가 보복을 피해 재판을 기다릴 수 있게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"rescue","lead":"여호수아","target":null,"mode":"reconstruction","setting":"altar","effect":"release","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"여호수아"},{"action":"startle","duration":1.2,"actor":"여호수아"},{"action":"halt","duration":1.5,"actor":"여호수아"},{"action":"release","duration":1.8,"actor":"여호수아"},{"action":"kneel","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 20:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-jos-extra-23-0",
+      "code": "jos",
+      "chapter": 23,
+      "title": "여호수아가 장로들에게 언약을 지키라고 당부하다",
+      "actors": [
+        "여호수아",
+        "이스라엘 장로들",
+        "하나님",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "여호수아 23:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 늙은 여호수아는 장로와 지도자들을 불러 하나님이 하신 일을 되새기고, 율법을 지키며 다른 신들에게 기울지 말라고 당부해요."
+      ],
+      "study": "늙은 여호수아는 장로와 지도자들을 불러 하나님이 하신 일을 되새기고, 율법을 지키며 다른 신들에게 기울지 말라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"여호수아","target":"이스라엘 장로들","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"},{"action":"extend","duration":1.5,"actor":"여호수아"},{"action":"pledge","duration":1.8,"actor":"여호수아"},{"action":"read","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"여호수아 23:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

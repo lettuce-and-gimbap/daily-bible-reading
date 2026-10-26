@@ -77,14 +77,14 @@
     },
     {
       "code": "jos",
-      "payloadSha256": "10a2110b72889d19d17714879e8d7dc3c8d3ae00ba82efe5c90a81a09a7209f6",
-      "scenes": 18,
-      "existing": 18,
+      "payloadSha256": "f58bc8a1820e71a6ea78d7eb3f8c0f8a2c4a6657fb2b70446e2b10bfafecc473",
+      "scenes": 25,
+      "existing": 25,
       "restored": 0,
       "corrected": 1,
-      "planned": 18,
+      "planned": 25,
       "modes": {
-        "reconstruction": 18
+        "reconstruction": 25
       },
       "status": "authored-awaiting-browser-review"
     },

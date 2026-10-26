@@ -18,6 +18,27 @@
     "11": {
       "setting": "pasture",
       "effect": "woodcut"
+    },
+    "18": {
+      "mode": "reconstruction"
+    },
+    "19": {
+      "mode": "reconstruction"
+    },
+    "20": {
+      "mode": "reconstruction"
+    },
+    "21": {
+      "mode": "reconstruction"
+    },
+    "22": {
+      "mode": "reconstruction"
+    },
+    "23": {
+      "mode": "reconstruction"
+    },
+    "24": {
+      "mode": "reconstruction"
     }
   },
   "psa": {

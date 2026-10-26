@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1241,
+    "scenesInFiles": 1248,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 527
+    "curatedSupplementalScenes": 534
   },
   "books": [
     {
@@ -82,9 +82,10 @@
     {
       "code": "jos",
       "chapters": 24,
-      "scenes": 18,
+      "scenes": 25,
       "sourceMatchedSceneCandidates": 18,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 7
     },
     {
       "code": "jdg",
@@ -28361,6 +28362,10 @@
       {
         "book": "gen",
         "scenesAdded": 9
+      },
+      {
+        "book": "jos",
+        "scenesAdded": 7
       }
     ]
   }
