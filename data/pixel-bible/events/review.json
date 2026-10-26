@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1096,
+    "scenesInFiles": 1101,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 382
+    "curatedSupplementalScenes": 387
   },
   "books": [
     {
@@ -290,9 +290,10 @@
     {
       "code": "nam",
       "chapters": 3,
-      "scenes": 1,
+      "scenes": 6,
       "sourceMatchedSceneCandidates": 0,
-      "retainedLegacyScenes": 1
+      "retainedLegacyScenes": 1,
+      "curatedSupplementalScenes": 5
     },
     {
       "code": "hab",
@@ -28276,6 +28277,10 @@
       {
         "book": "oba",
         "scenesAdded": 4
+      },
+      {
+        "book": "nam",
+        "scenesAdded": 5
       }
     ]
   }

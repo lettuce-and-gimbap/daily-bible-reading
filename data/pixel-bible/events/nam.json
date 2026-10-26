@@ -24,6 +24,172 @@
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
       "animation": {"version":2,"motif":"symbolic","lead":"나훔","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"read","duration":1.2,"actor":"나훔"},{"action":"look","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:7-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-nam-extra-1-0",
+      "code": "nam",
+      "chapter": 1,
+      "title": "니느웨의 요새가 무너지리라 경고하다",
+      "actors": [
+        "나훔",
+        "니느웨"
+      ],
+      "object": "scene-marker",
+      "ref": "나훔 1:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나훔은 니느웨를 향한 심판과 환난 날에 의지할 피난처를 함께 선포해요."
+      ],
+      "study": "나훔은 니느웨를 향한 심판과 환난 날에 의지할 피난처를 함께 선포해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"나훔","target":"니느웨","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"turn","duration":1.2,"actor":"나훔"},{"action":"speak","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"lower","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-nam-extra-1-1",
+      "code": "nam",
+      "chapter": 1,
+      "title": "유다의 멍에를 꺾고 평화를 알리다",
+      "actors": [
+        "나훔",
+        "유다",
+        "좋은 소식을 전하는 자"
+      ],
+      "object": "scene-marker",
+      "ref": "나훔 1:9-15",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다를 괴롭힌 멍에가 꺾이고 절기를 지킬 길이 열린다는 소식을 전해요."
+      ],
+      "study": "유다를 괴롭힌 멍에가 꺾이고 절기를 지킬 길이 열린다는 소식을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"나훔","target":"유다","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"lift","duration":1.2,"actor":"나훔"},{"action":"speak","duration":1.5,"actor":"나훔"},{"action":"bless","duration":1.8,"actor":"나훔"},{"action":"lower","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-nam-extra-2-0",
+      "code": "nam",
+      "chapter": 2,
+      "title": "니느웨 성을 향해 진군하는 군대",
+      "actors": [
+        "니느웨",
+        "파괴하는 자"
+      ],
+      "object": "scene-marker",
+      "ref": "나훔 2:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 공격과 성의 함락을 빠른 상징 이미지로 보여 주고 폭력의 세부는 재현하지 않아요."
+      ],
+      "study": "공격과 성의 함락을 빠른 상징 이미지로 보여 주고 폭력의 세부는 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"니느웨","target":"파괴하는 자","mode":"illustration","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"니느웨"},{"action":"push","duration":1.2,"actor":"니느웨"},{"action":"brace","duration":1.5,"actor":"니느웨"},{"action":"recoil","duration":1.8,"actor":"니느웨"},{"action":"retreat","duration":1.5,"actor":"니느웨"},{"action":"mourn","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 2:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-nam-extra-2-1",
+      "code": "nam",
+      "chapter": 2,
+      "title": "사자의 굴이 비게 되리라",
+      "actors": [
+        "니느웨",
+        "니느웨 여종들",
+        "야곱"
+      ],
+      "object": "scene-marker",
+      "ref": "나훔 2:11-13",
+      "verseNumbers": [
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사자의 굴 비유로 약탈하던 니느웨의 힘이 끝나는 심판을 나타내요."
+      ],
+      "study": "사자의 굴 비유로 약탈하던 니느웨의 힘이 끝나는 심판을 나타내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"니느웨","target":"니느웨 여종들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"니느웨"},{"action":"read","duration":1.2,"actor":"니느웨"},{"action":"look","duration":1.5,"actor":"니느웨"},{"action":"point","duration":1.8,"actor":"니느웨"},{"action":"listen","duration":1.5,"actor":"니느웨"},{"action":"bow","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 2:11-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-nam-extra-3-0",
+      "code": "nam",
+      "chapter": 3,
+      "title": "피의 성 니느웨의 몰락을 애도하다",
+      "actors": [
+        "니느웨",
+        "앗수르 왕",
+        "노 아몬(테베)",
+        "열방"
+      ],
+      "object": "scene-marker",
+      "ref": "나훔 3:1-19",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 약탈과 속임으로 가득한 니느웨가 몰락하고 아무도 위로하지 않는다는 예언으로 끝나요."
+      ],
+      "study": "약탈과 속임으로 가득한 니느웨가 몰락하고 아무도 위로하지 않는다는 예언으로 끝나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"니느웨","target":"앗수르 왕","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"니느웨"},{"action":"turn","duration":1.2,"actor":"니느웨"},{"action":"speak","duration":1.5,"actor":"니느웨"},{"action":"point","duration":1.8,"actor":"니느웨"},{"action":"listen","duration":1.5,"actor":"니느웨"},{"action":"lower","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 3:1-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

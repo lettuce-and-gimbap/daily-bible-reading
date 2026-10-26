@@ -461,14 +461,14 @@
     },
     {
       "code": "nam",
-      "payloadSha256": "1afafa21b9343576f1f9b4f0d37c344dc9f9f726fb5b8fb1fd51805eb9fc981c",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "5ddd1723025b6bff7dcfb09b62b5ab50fcd1f5a074f1b1cf0ad6a5ada3f4bf62",
+      "scenes": 6,
+      "existing": 6,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 6,
       "modes": {
-        "illustration": 1
+        "illustration": 6
       },
       "status": "authored-awaiting-browser-review"
     },
