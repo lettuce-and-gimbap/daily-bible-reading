@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1264);assert.equal(c.curatedSupplementalScenes,550);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),550);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1283);assert.equal(c.curatedSupplementalScenes,569);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),569);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -373,5 +373,29 @@ test('열왕기하 후속 장면은 기존 사건과 겹치지 않는 절 범위
   ['ot-2ki-extra-21-1','열왕기하 21:19-26','아몬이 살해되고 요시야가 왕으로 세워지다'],
   ['ot-2ki-extra-24-1','열왕기하 24:1-9','바벨론에 굴복한 여호야김과 첫 침공']
  ];
+
+ const expectedMore=[
+  ['열왕기하 3:21-27','모압 왕의 맏아들이 죽고 연합군이 물러나다'],
+  ['열왕기하 4:8-17','수넴 여인이 엘리사를 대접하고 아들을 약속받다'],
+  ['열왕기하 4:18-28','수넴 여인이 죽은 아들을 안고 엘리사를 찾아가다'],
+  ['열왕기하 4:32-37','엘리사가 수넴 여인의 아들을 살리다'],
+  ['열왕기하 5:8-19','나아만이 요단에서 씻고 나음을 얻다'],
+  ['열왕기하 6:18-23','엘리사가 아람 군대를 사마리아로 이끌다'],
+  ['열왕기하 8:16-29','유다의 여호람과 아하시야가 왕위에 오르고 동맹을 맺다'],
+  ['열왕기하 10:29-36','예후가 우상숭배를 남긴 채 왕위를 이어가다'],
+  ['열왕기하 13:20-25','엘리사의 무덤에서 죽은 사람이 살아나다'],
+  ['열왕기하 14:15-22','아마샤가 패하고 예루살렘 성벽이 무너지다'],
+  ['열왕기하 14:23-29','여로보암 2세가 북이스라엘 영토를 회복하다'],
+  ['열왕기하 15:1-7','아사랴가 오랜 통치를 마치고 왕위를 요담에게 넘기다'],
+  ['열왕기하 15:8-16','북이스라엘 왕들이 연이어 살해되고 바뀌다'],
+  ['열왕기하 16:5-9','르신과 베가가 예루살렘을 공격하다'],
+  ['열왕기하 18:1-8','히스기야가 우상을 없애고 하나님을 의지하다'],
+  ['열왕기하 20:1-6','히스기야가 기도하고 생명을 연장받다'],
+  ['열왕기하 20:8-11','해 그림자가 뒤로 물러나는 표징을 보이다'],
+  ['열왕기하 22:11-20','훌다가 율법책을 들은 요시야에게 심판과 자비를 전하다'],
+  ['열왕기하 25:18-26','그달리야가 살해되고 남은 백성이 이집트로 달아나다']
+ ];
+ for(const [ref,title] of expectedMore){const s=data.scenes.find(x=>x.ref===ref&&x.title===title);assert(s,ref+' '+title);assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+
  for(const [id,ref,title] of expected){const s=data.scenes.find(x=>x.id===id);assert(s,id);assert.equal(s.ref,ref);assert.equal(s.title,title);assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),id);}
 });
