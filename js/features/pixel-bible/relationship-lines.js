@@ -119,29 +119,31 @@ const EXCHANGES={
  ],
 };
 function kinshipKind(a,b,relation){
- const label=relation.label||'',fromRole=relation.from.role||'',toRole=relation.to.role||'',detail=relation.text||'';
+ const label=relation.label||'',fromRole=relation.from.role||'',detail=relation.text||'';
  const isParent=r=>/아버지|어머니|부친|모친|아빠|엄마/.test(r);
- const isChild=r=>/아들|딸|자녀|아우|손자|후손/.test(r);
- let sourceParent=isParent(label)||isParent(fromRole),sourceChild=isChild(label)||isChild(fromRole);
- if(!sourceParent&&!sourceChild){sourceParent=isParent(toRole);sourceChild=isChild(toRole);if(sourceParent||sourceChild){sourceParent=!sourceParent;sourceChild=!sourceChild;}}
+ const isChild=r=>/아들|딸|자녀|손자|후손/.test(r);
+ const sourceParent=isParent(label)||isParent(fromRole),sourceChild=isChild(label)||isChild(fromRole);
  if(sourceParent||sourceChild)return (a.name===relation.from.name?sourceParent:!sourceParent)?'parent':'child';
+ const fromKin=`${label} ${fromRole}`;
+ const sourceUncle=/삼촌|숙부|고모|이모/.test(fromKin),sourceNephew=/조카/.test(fromKin);
+ if(sourceUncle||sourceNephew)return (a.name===relation.from.name?sourceUncle:!sourceUncle)?'uncle':'nephew';
  const elder=/맏|장자|맏형|형(?!제)|오빠|누나|언니/.test(`${label} ${fromRole}`);
  const younger=/동생|아우|둘째|막내/.test(`${label} ${fromRole}`);
  // Relation notes often spell out age order even when the graph label only
  // says "siblings" (for example, "Cain killed his younger brother Abel").
- const sourceNamedOlder=new RegExp(`${relation.from.name}[^.。]{0,32}(?:${relation.to.name}의\\s*(?:형|오빠|누나|언니)|(?:동생|아우)\\s*${relation.to.name})`).test(detail);
- const sourceNamedYounger=new RegExp(`${relation.from.name}[^.。]{0,32}(?:${relation.to.name}의\\s*(?:동생|아우)|(?:형|오빠|누나|언니)\\s*${relation.to.name})`).test(detail);
- const targetNamedOlder=new RegExp(`${relation.to.name}[^.。]{0,32}(?:${relation.from.name}의\\s*(?:형|오빠|누나|언니)|(?:동생|아우)\\s*${relation.from.name})`).test(detail);
- const targetNamedYounger=new RegExp(`${relation.to.name}[^.。]{0,32}(?:${relation.from.name}의\\s*(?:동생|아우)|(?:형|오빠|누나|언니)\\s*${relation.from.name})`).test(detail);
+ const sourceNamedOlder=new RegExp(`${relation.from.name}[^.。]{0,64}(?:${relation.to.name}의\\s*(?:형|오빠|누나|언니)|(?:동생|아우)\\s*${relation.to.name})`).test(detail)||new RegExp(`(?:맏형|형|오빠|누나|언니)\\s*${relation.from.name}`).test(detail);
+ const sourceNamedYounger=new RegExp(`${relation.from.name}[^.。]{0,64}(?:${relation.to.name}의\\s*(?:동생|아우)|(?:형|오빠|누나|언니)\\s*${relation.to.name})`).test(detail)||new RegExp(`(?:동생|아우)\\s*${relation.from.name}`).test(detail);
+ const targetNamedOlder=new RegExp(`${relation.to.name}[^.。]{0,64}(?:${relation.from.name}의\\s*(?:형|오빠|누나|언니)|(?:동생|아우)\\s*${relation.from.name})`).test(detail)||new RegExp(`(?:맏형|형|오빠|누나|언니)\\s*${relation.to.name}`).test(detail);
+ const targetNamedYounger=new RegExp(`${relation.to.name}[^.。]{0,64}(?:${relation.from.name}의\\s*(?:동생|아우)|(?:형|오빠|누나|언니)\\s*${relation.from.name})`).test(detail)||new RegExp(`(?:동생|아우)\\s*${relation.to.name}`).test(detail);
  const sourceIsOlder=elder||sourceNamedOlder||targetNamedYounger;
  const sourceIsYounger=younger||sourceNamedYounger||targetNamedOlder;
  if(sourceIsOlder||sourceIsYounger)return (a.name===relation.from.name?sourceIsOlder:!sourceIsOlder)?'siblingOlder':'siblingYounger';
- if(/아내|남편|부부|배필/.test(label+' '+fromRole+' '+toRole))return 'couple';
+ if(/아내|남편|부부|배필/.test(label+' '+fromRole+' '+relation.to.role))return 'couple';
  return 'sibling';
 }
 function relationshipFallback(a,b,relation,index){
  const basis=`${relation.label||''} ${relation.text||''} ${relation.from.role||''} ${relation.to.role||''}`;
- const family=relation.kind==='family'||/형제|자매|아들|딸|아버지|어머니|아내|남편|부부|족보|후손|자손|친척|배필|손자|할아버지|형|누이|동생/.test(basis);
+ const family=relation.kind==='family'||/형제|자매|아들|딸|아버지|어머니|아내|남편|부부|족보|후손|자손|친척|배필|손자|할아버지|형|누이|동생|삼촌|숙부|조카|고모|이모/.test(basis);
  const conflict=relation.kind==='conflict'||/대적|원수|죽였|죽이|위협|배신|싸우|억압|속였|빼앗|저주|모욕/.test(basis);
  const kinship=family?kinshipKind(a,b,relation):'';
  let category='other';
@@ -154,8 +156,10 @@ function relationshipFallback(a,b,relation,index){
  const parentAddress=/어머니|모친|엄마/.test(kinshipBasis)?'어머니':'아버지';
  const olderSiblingAddress=/언니/.test(kinshipBasis)?'언니':/누나|누이|자매/.test(kinshipBasis)?'누나':'형';
  const kinshipText=value=>value.replaceAll('아들아',childAddress).replaceAll('딸아',childAddress).replaceAll('아버지',parentAddress).replaceAll('형,',`${olderSiblingAddress},`);
+ if(category==='uncle')return EXCHANGES.parent[index%EXCHANGES.parent.length][0].replaceAll('아들아','조카야').replaceAll('딸아','조카야');
+ if(category==='nephew')return EXCHANGES.parent[index%EXCHANGES.parent.length][1].replaceAll('아버지','삼촌').replaceAll('아들아','조카').replaceAll('딸아','조카');
  if(category==='conflict'&&family){
-  const address=kinship==='parent'?childAddress:kinship==='child'?parentAddress:kinship==='siblingOlder'?'동생아':kinship==='siblingYounger'?olderSiblingAddress:kinship==='couple'?'여보':b.name;
+  const address=kinship==='parent'?childAddress:kinship==='child'?parentAddress:kinship==='siblingOlder'?'동생아':kinship==='siblingYounger'?olderSiblingAddress:kinship==='uncle'?'조카야':kinship==='nephew'?'삼촌':kinship==='couple'?'여보':b.name;
   const line=isFrom?pair[0]:pair[1];
   return `${address}, ${kinshipText(line)}`;
  }

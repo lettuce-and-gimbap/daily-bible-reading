@@ -234,6 +234,18 @@ test('가족 갈등 대사는 혈연 호칭을 유지하면서 비난과 응답�
  assert.notEqual(lines[0].text,lines[1].text);
 });
 
+test('레위기의 가족 관계 설명에서 형 아론과 조카 엘르아살 호칭을 관계 대사에 반영한다',()=>{
+ const data=JSON.parse(fs.readFileSync('data/summary/lev.json'));
+ const chapters=Object.entries(data.chapters).map(([chap,chapter])=>({code:'lev',name:'레위기',chap:Number(chap),data:chapter}));
+ const context=buildChapterDialogue(chapters);
+ const brother=context.relations.find(item=>item.from.name==='모세'&&item.to.name==='아론'&&item.from.chap===8);
+ const brotherLines=relationshipLines(brother.from,brother.to,brother,null,{random:()=>0});
+ assert.match(brotherLines[0].text,/형/);
+ const uncle=context.relations.find(item=>item.from.name==='모세'&&item.to.name==='엘르아살'&&item.from.chap===10);
+ const uncleLines=relationshipLines(uncle.from,uncle.to,uncle,null,{random:()=>0});
+ assert.match(uncleLines[0].text,/조카/);
+});
+
 test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방향이며 약한 연결은 10개 변형을 갖는다',()=>{
  let chapterCount=0,edgeCount=0,fallbackCount=0;
  const files=fs.readdirSync('data/summary').filter(file=>file.endsWith('.json'));
@@ -337,13 +349,16 @@ test('창세기 무덤 협상·브엘세바 언약·베냐민 보증 대사는 �
 });
 
 test('창세기 34장 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음과 항변이 짝 대화로 이어진다',()=>{
+ const replies=[];
  for(const son of ['시므온','레위']){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter==='gen.34'&&item.speaker==='야곱'&&item.target===son);
   assert.ok(entry,`${son} 대화가 있음`);
   assert.match(entry.ref,/34:30–31/);
   assert.match(entry.lines[0],/위험/);
-  assert.match(entry.replyLines[0],/우리 누이/);
+  assert.match(entry.replyLines[0],/우리 누이|디나/);
+  replies.push(entry.replyLines[0]);
  }
+ assert.notEqual(replies[0],replies[1],'시므온과 레위의 개별 화면 대사를 구분한다');
 });
 
 test('창세기 19장 롯과 두 천사의 피신 대화는 요청과 응답이 이어진다',()=>{
@@ -365,6 +380,15 @@ test('출애굽기 1·5·9·10·14·16·18·19·20·24·32장의 주요 대화�
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
+test('출애굽기 1장의 산파들은 공동 답변을 유지하되 십브라와 부아의 발화를 똑같이 반복하지 않는다',()=>{
+ const shiphrah=PAIR_DIALOGUE.find(entry=>entry.chapter==='exo.1'&&entry.target==='십브라');
+ const puah=PAIR_DIALOGUE.find(entry=>entry.chapter==='exo.1'&&entry.target==='부아');
+ assert.ok(shiphrah&&puah);
+ assert.notEqual(shiphrah.replyLines[1],puah.replyLines[1]);
+ assert.ok([shiphrah,puah].every(entry=>/함께 한 대답/.test(entry.detail)));
+ assert.ok([shiphrah,puah].every(entry=>entry.replyLines.every(line=>/히브리 여인|아이/.test(line))));
+});
+
 test('레위기 10장 모세와 아론은 아들들의 죽음 뒤 제물 처리 문제를 주고받는다',()=>{
  const entry=PAIR_DIALOGUE.find(item=>item.chapter==='lev.10'&&item.speaker==='모세'&&item.target==='아론');
  assert.ok(entry);assert.match(entry.ref,/10:16–20/);assert.match(entry.lines[0],/속죄제물/);assert.match(entry.replyLines[0],/아들들이 죽었는데/);
@@ -380,6 +404,13 @@ test('민수기 정탐·반역·에돔·놋뱀·발람·기업·요단 동편 �
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
+test('민수기 16장 모세의 호소를 다단에게 한 말로 오인하지 않고 27장 판결 전달자를 모세로 둔다',()=>{
+ const dathan=PAIR_DIALOGUE.find(entry=>entry.chapter==='num.16'&&entry.speaker==='다단');
+ assert.ok(dathan);assert.match(dathan.replyLines[0],/여호와여/);assert.match(dathan.detail,/직접 답했다고 기록되지 않습니다/);
+ const daughters=PAIR_DIALOGUE.find(entry=>entry.chapter==='num.27'&&entry.speaker==='말라');
+ assert.ok(daughters);assert.ok(daughters.replyLines.every(line=>/여호와께서/.test(line)));assert.match(daughters.detail,/모세는 하나님께 받은 결정을 딸들에게 전하는 장면/);
+});
+
 test('신명기 27장에서 레위인의 저주 선포에 이스라엘 백성이 아멘으로 응답한다',()=>{
  const entry=PAIR_DIALOGUE.find(item=>item.chapter==='deu.27'&&item.speaker==='레위 지파'&&item.target==='이스라엘 자손');
  assert.ok(entry);assert.match(entry.ref,/27:14–26/);assert.match(entry.lines[0],/저주/);assert.match(entry.replyLines[0],/아멘/);
@@ -393,6 +424,15 @@ test('신명기의 시혼 통행 거부와 계명 전달 요청은 상대 발화
 test('여호수아 관계도상 주요 대화 상대는 서로 이어지는 사건 기반 상호작용을 갖는다',()=>{
  const cases=[['jos.1','여호수아','르우벤 자손',/형제들이 기업을 얻을 때까지/,/어디든 가겠습니다/],['jos.2','라합','두 정탐꾼',/우리 성 사람들은/,/가족을 지키겠습니다/],['jos.5','여호수아','여호와의 군대 장관',/우리 편입니까/,/여호와의 군대 장관/],['jos.7','여호수아','아간',/숨김없이/,/외투와 은과 금/],['jos.9','여호수아','기브온 사람들',/왜 그렇게 했느냐/,/생명을 잃을까/],['jos.17','요셉 자손','여호수아',/한 몫만 받았습니까/,/산지로 올라가/],['jos.22','비느하스','르우벤 자손',/제단은 여호와께 등을/,/증거로 세웠습니다/],['jos.24','여호수아','이스라엘 자손',/섬길 자를 택하라/,/여호와를 버리고/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
+test('신명기 31장 계승 대화와 여호수아 14장 갈렙의 헤브론 요청을 구체화한다',()=>{
+ const succession=PAIR_DIALOGUE.find(entry=>entry.chapter==='deu.31'&&entry.speaker==='모세'&&entry.target==='여호수아');
+ assert.ok(succession);assert.ok(succession.lines.every(line=>/강하고 담대|함께/.test(line)));assert.match(succession.detail,/여호수아의 응답은 본문에 따로 기록되지 않아/);
+ const joshua=PAIR_DIALOGUE.find(entry=>entry.chapter==='jos.14'&&entry.speaker==='여호수아');
+ const caleb=PAIR_DIALOGUE.find(entry=>entry.chapter==='jos.14'&&entry.speaker==='갈렙');
+ assert.ok(joshua&&caleb);assert.ok([...joshua.lines,...caleb.lines].every(line=>/헤브론|산지/.test(line)));
+ assert.match(caleb.lines[0],/주십시오/);assert.match(joshua.detail,/기업으로 주었습니다/);
 });
 
 test('여호수아의 발화 행은 인물 시점을 유지하고 각 문장에 별도 절 근거를 둔다',()=>{
@@ -448,8 +488,19 @@ test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵
 });
 
 test('사사기 핵심 관계 장면은 직접 만남의 요청·응답이 이어진다',()=>{
- const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 주시오/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/수수께끼의 답/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/따르지 않겠다/]];
+ const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 주시오/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/수수께끼의 답/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/넘기지 않겠다|싸우겠다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
+test('사사기 입다의 딸·마노아의 아내 응답을 본문에 맞추고 집단 대사를 창작으로 표시한다',()=>{
+ const daughter=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.11'&&entry.speaker==='입다의 딸');
+ assert.ok(daughter);assert.doesNotMatch(daughter.lines[0],/기뻐합니다/);assert.match(daughter.lines[0],/서원/);
+ const wife=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.13'&&entry.speaker==='마노아의 아내');
+ assert.ok(wife);assert.match(wife.replyLines[0],/여호와께 다시 여쭈어야/);assert.match(wife.detail,/아내에게 한 말이 아니므로/);
+ const assembly=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.20'&&entry.speaker==='레위인');
+ const benjamin=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.20'&&entry.target==='베냐민 지파');
+ assert.match(assembly.detail,/창작 재구성/);assert.match(benjamin.detail,/창작 재구성/);
+ assert.ok(benjamin.replyLines.every(line=>/베냐민 지파는 각 성읍에서 모여/.test(line)===false),'서술문을 인물의 직접 대사로 내보내지 않는다');
 });
 
 test('룻기의 발화 행은 중복 화자를 정리하고 각 문장을 본문 절에 연결한다',()=>{
@@ -459,6 +510,8 @@ test('룻기의 발화 행은 중복 화자를 정리하고 각 문장을 본문
  for(const [chapter,speaker,target,ref]of [['rut.3','나오미','룻',/3:1–6/],['rut.4','보아스','아무개',/4:3–10/]]){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry);assert.match(entry.ref,ref);assert.equal(entry.replyLines.length,2);
  }
+ const vow=PAIR_DIALOGUE.find(item=>item.chapter==='rut.1'&&item.speaker==='룻'&&item.target==='나오미');
+ assert.match(vow.detail,/나오미의 답을 기록하지 않아/);
 });
 
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{
