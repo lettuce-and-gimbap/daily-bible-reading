@@ -23,7 +23,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"나훔","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"read","duration":1.2,"actor":"나훔"},{"action":"look","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:7-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "나훔",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "wall",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "나훔"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "나훔"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "나훔"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "나훔"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 1:7-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-nam-extra-1-0",
@@ -52,7 +98,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"나훔","target":"니느웨","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"read","duration":1.2,"actor":"나훔"},{"action":"look","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "나훔",
+        "target": "니느웨",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "나훔"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "나훔"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "나훔"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "나훔"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 1:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-nam-extra-1-1",
@@ -83,7 +175,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"나훔","target":"유다","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"lift","duration":1.2,"actor":"나훔"},{"action":"speak","duration":1.5,"actor":"나훔"},{"action":"bless","duration":1.8,"actor":"나훔"},{"action":"lower","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "나훔",
+        "target": "유다",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "나훔"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "나훔"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "나훔"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "나훔"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "나훔"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 1:9-15",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-nam-extra-2-0",
@@ -116,7 +254,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"siege","lead":"니느웨","target":"파괴하는 자","mode":"illustration","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"니느웨"},{"action":"push","duration":1.2,"actor":"니느웨"},{"action":"brace","duration":1.5,"actor":"니느웨"},{"action":"recoil","duration":1.8,"actor":"니느웨"},{"action":"retreat","duration":1.5,"actor":"니느웨"},{"action":"mourn","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 2:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "siege",
+        "lead": "니느웨",
+        "target": "파괴하는 자",
+        "mode": "illustration",
+        "setting": "wall",
+        "effect": "collapse",
+        "emotion": "worried",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "니느웨"
+          },
+          {
+            "action": "push",
+            "duration": 1.2,
+            "actor": "니느웨"
+          },
+          {
+            "action": "brace",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "recoil",
+            "duration": 1.8,
+            "actor": "니느웨"
+          },
+          {
+            "action": "retreat",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.2,
+            "actor": "니느웨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 2:1-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-nam-extra-2-1",
@@ -143,7 +327,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"니느웨","target":"니느웨 여종들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"니느웨"},{"action":"read","duration":1.2,"actor":"니느웨"},{"action":"look","duration":1.5,"actor":"니느웨"},{"action":"point","duration":1.8,"actor":"니느웨"},{"action":"listen","duration":1.5,"actor":"니느웨"},{"action":"bow","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 2:11-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "니느웨",
+        "target": "니느웨 여종들",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "니느웨"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "니느웨"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "니느웨"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "니느웨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 2:11-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-nam-extra-3-0",
@@ -187,7 +417,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"니느웨","target":"앗수르 왕","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"니느웨"},{"action":"turn","duration":1.2,"actor":"니느웨"},{"action":"speak","duration":1.5,"actor":"니느웨"},{"action":"point","duration":1.8,"actor":"니느웨"},{"action":"listen","duration":1.5,"actor":"니느웨"},{"action":"lower","duration":1.2,"actor":"니느웨"}],"duration":8.2,"support":null,"ref":"나훔 3:1-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "judgment",
+        "lead": "니느웨",
+        "target": "앗수르 왕",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "니느웨"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "니느웨"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "니느웨"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "니느웨"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "니느웨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "나훔 3:1-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
