@@ -1,0 +1,19 @@
+{
+  "jos": {
+    "8": {
+      "setting": "desert",
+      "effect": "sling",
+      "support": {
+        "actor": "아간",
+        "actions": [
+          "listen",
+          "startle",
+          "lower",
+          "fall",
+          "lie",
+          "lie"
+        ]
+      }
+    }
+  }
+}

@@ -22,6 +22,14 @@ test('동일 오브젝트여도 꿈·기름 붓기·돌 굴리기는 서로 다�
  const a=gen.find(s=>s.title==='사닥다리 꿈'),b=gen.find(s=>s.title==='하나님의 집'),d=gen.find(s=>s.title==='우물가의 라헬');
  assert.notDeepEqual(a.animation.beats.map(b=>b.action),b.animation.beats.map(b=>b.action));assert.notDeepEqual(b.animation.beats.map(b=>b.action),d.animation.beats.map(b=>b.action));
 });
+test('아골 골짜기 장면은 돌을 던지는 백성과 쓰러지는 아간을 따로 연출한다',()=>{
+ const scene=books.find(([code])=>code==='jos')[1].scenes.find(s=>s.id==='ot-jos-7-3');
+ assert.deepEqual(scene.actors,['이스라엘 자손','아간']);
+ assert.equal(scene.animation.lead,'이스라엘 자손');assert.equal(scene.animation.target,'아간');
+ assert.equal(scene.animation.effect,'sling');assert.equal(scene.animation.support.actor,'아간');
+ const cast=scene.actors.map(name=>({name,refs:[scene.ref]}));
+ assert.equal(sampleEvent(scene,cast,4).states[0].action,'windup');assert.equal(sampleEvent(scene,cast,6).states[1].pose.lie,true);
+});
 test('성경 본문의 행동 주체와 비유·예언의 상징 모드를 구분한다',()=>{
  const gen=books.find(([b])=>b==='gen')[1].scenes;assert.deepEqual(gen.find(s=>s.title==='속은 아버지').actors,['야곱']);assert.equal(gen.find(s=>s.title==='베냐민의 자루 속 은잔').object,'cup');
  for(const b of ['psa','pro','ecc','sng','oba','nam','zep'])for(const s of books.find(([code])=>code===b)[1].scenes)assert.equal(s.animation.mode,'illustration');

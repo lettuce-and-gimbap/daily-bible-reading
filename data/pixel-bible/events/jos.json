@@ -241,6 +241,7 @@
       "chapter": 7,
       "title": "아골 골짜기",
       "actors": [
+        "이스라엘 자손",
         "아간"
       ],
       "object": "stone",
@@ -260,7 +261,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"mourn","lead":"아간","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"stone","beats":[{"action":"startle","duration":1,"actor":"아간"},{"action":"lower","duration":1.2,"actor":"아간"},{"action":"kneel","duration":1.5,"actor":"아간"},{"action":"cover-mouth","duration":1.8,"actor":"아간"},{"action":"mourn","duration":1.5,"actor":"아간"},{"action":"lower","duration":1.2,"actor":"아간"}],"duration":8.2,"support":null,"ref":"여호수아 7:22-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"sling","lead":"이스라엘 자손","target":"아간","mode":"reconstruction","setting":"desert","effect":"sling","emotion":"determined","prop":"stone","beats":[{"action":"bend","duration":1,"actor":"이스라엘 자손"},{"action":"grasp","duration":1.2,"actor":"이스라엘 자손"},{"action":"load","duration":1.5,"actor":"이스라엘 자손"},{"action":"windup","duration":1.8,"actor":"이스라엘 자손"},{"action":"throw","duration":1.5,"actor":"이스라엘 자손"},{"action":"look","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":{"actor":"아간","actions":["listen","startle","lower","fall","lie","lie"]},"ref":"여호수아 7:22-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jos-8-1",
