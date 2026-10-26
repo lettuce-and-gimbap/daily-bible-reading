@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "luk",
-    "nextBook": "jhn",
-    "booksCompleted": 42,
+    "currentBook": "jhn",
+    "nextBook": "act",
+    "booksCompleted": 43,
     "completedBooks": [
       "gen",
       "exo",
@@ -339,37 +339,38 @@
       "mal",
       "mat",
       "mrk",
-      "luk"
+      "luk",
+      "jhn"
     ],
-    "chaptersReviewed": 1001,
-    "relationshipLinksReviewed": 3210,
-    "authoredPairEntriesReviewed": 933,
+    "chaptersReviewed": 1022,
+    "relationshipLinksReviewed": 3313,
+    "authoredPairEntriesReviewed": 940,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3790,
-      "authoredLinks": 971,
-      "relationshipGeneratedLinks": 2819,
+      "authoredLinks": 975,
+      "relationshipGeneratedLinks": 2815,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "누가복음 24장 전체를 순서대로 훑어 발화 37묶음의 86문장을 문장별 근거 절에 연결했다. 마리아와 가브리엘, 시몬과 예수, 야이로와 예수, 율법교사와 예수, 맏아들과 아버지, 부자와 아브라함, 나병환자들과 예수, 삭개오와 예수, 회개한 강도와 예수, 글로바와 예수의 문답을 포함해 주요 대화 10개를 추가했다. 족보·인용·회고 인물(가이사 아구스도, 아담, 엘리야·엘리사, 요나, 모세, 노아·롯 등)은 해당 장면의 물리적 출연자에서 분리했다. 화자를 잘못 붙이던 율법교사, 나병환자, 회개한 강도의 말을 분리하고, 침묵한 인물에게 설명을 대신 말시키지 않도록 정리했다. 누가복음 24장, 관계선 120개를 검토했고 전체 구조 검사에서 창세기부터 요한계시록까지 1,189장·3,790개 상호작용 연결이 모두 유지됨을 확인했다. 다음은 요한복음이다.",
+    "statusNote": "요한복음 21장 전체의 발화 색인을 다시 대조해 기존 독백·요약형 발화 21묶음, 45문장을 화자와 개별 절 근거에 맞게 고쳤다. 특히 사마리아 여인·맹인·베드로의 회고성 서술을 실제 발언으로 바로잡고, 예수의 발화와 침묵한 인물의 행동을 분리했다. 나다나엘과 예수, 니고데모와 예수, 사마리아 여인과 예수, 맹인과 바리새인, 베드로와 예수, 도마와 예수, 부활 후 예수와 베드로의 응답형 문답 7개를 추가했다. 요한복음 21장과 관계선 103개를 검토했고, 전권 구조 검사에서 1,189장·3,790개 상호작용 링크가 유지됨을 확인했다. 다음은 사도행전이다.",
     "partialBookAudit": {
-      "book": "luk",
-      "chaptersScanned": 24,
-      "chaptersWithAuthoredDialogueReviewed": 24,
-      "authoredUtteranceGroupsReviewed": 37,
-      "utteranceReferencesCorrected": 86,
-      "chapterDialogueAudit": 24,
-      "pairedEntriesReviewed": 10,
-      "newTwoWayEntries": 10,
-      "relationshipEdgesAudited": 120,
-      "authoredPairLinks": 7,
-      "relationshipBasedPairLines": 113,
-      "relationshipLinksFound": 120,
-      "authoredLinksCovered": 7,
-      "generatedLinksRemaining": 113,
-      "nonDialogueLinksRemoved": 11,
+      "book": "jhn",
+      "chaptersScanned": 21,
+      "chaptersWithAuthoredDialogueReviewed": 21,
+      "authoredUtteranceGroupsReviewed": 21,
+      "utteranceReferencesCorrected": 45,
+      "chapterDialogueAudit": 21,
+      "pairedEntriesReviewed": 7,
+      "newTwoWayEntries": 7,
+      "relationshipEdgesAudited": 103,
+      "authoredPairLinks": 4,
+      "relationshipBasedPairLines": 99,
+      "relationshipLinksFound": 103,
+      "authoredLinksCovered": 4,
+      "generatedLinksRemaining": 99,
+      "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
@@ -393,12 +394,9 @@
         18,
         19,
         20,
-        21,
-        22,
-        23,
-        24
+        21
       ],
-      "statusNote": "누가복음 24장 전체를 순서대로 훑어 발화 37묶음의 86문장을 문장별 근거 절에 연결했다. 마리아와 가브리엘, 시몬과 예수, 야이로와 예수, 율법교사와 예수, 맏아들과 아버지, 부자와 아브라함, 나병환자들과 예수, 삭개오와 예수, 회개한 강도와 예수, 글로바와 예수의 문답을 포함해 주요 대화 10개를 추가했다. 족보·인용·회고 인물(가이사 아구스도, 아담, 엘리야·엘리사, 요나, 모세, 노아·롯 등)은 해당 장면의 물리적 출연자에서 분리했다. 화자를 잘못 붙이던 율법교사, 나병환자, 회개한 강도의 말을 분리하고, 침묵한 인물에게 설명을 대신 말시키지 않도록 정리했다. 누가복음 24장, 관계선 120개를 검토했고 전체 구조 검사에서 창세기부터 요한계시록까지 1,189장·3,790개 상호작용 연결이 모두 유지됨을 확인했다. 다음은 요한복음이다."
+      "statusNote": "요한복음 21장 전체의 발화 색인을 다시 대조해 기존 독백·요약형 발화 21묶음, 45문장을 화자와 개별 절 근거에 맞게 고쳤다. 특히 사마리아 여인·맹인·베드로의 회고성 서술을 실제 발언으로 바로잡고, 예수의 발화와 침묵한 인물의 행동을 분리했다. 나다나엘과 예수, 니고데모와 예수, 사마리아 여인과 예수, 맹인과 바리새인, 베드로와 예수, 도마와 예수, 부활 후 예수와 베드로의 응답형 문답 7개를 추가했다. 요한복음 21장과 관계선 103개를 검토했고, 전권 구조 검사에서 1,189장·3,790개 상호작용 링크가 유지됨을 확인했다. 다음은 사도행전이다."
     },
     "currentBookStatus": "complete"
   }
