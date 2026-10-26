@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3810);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3808);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -800,6 +800,16 @@ test('호세아의 가족·정치 관계 9개는 표징 결혼·경고·돌아�
  assert.equal(summary.chapters[1].rels.some(relation=>['이스르엘','로루하마','로암미'].includes(relation.from)),false,'어린 자녀가 성인 대사를 말하지 않게 함');
  assert.equal(summary.chapters[12].people.some(person=>['야곱','에서','천사'].includes(person.name)),false,'과거 조상과 천사의 회상을 현재 조우로 만들지 않음');
  assert.match(entries.find(entry=>entry.id==='pair-hos-3-israel-david').detail,/실제 동시대 조우가 아닌/);
+});
+
+test('요엘의 3장면은 재앙의 호출·회개 권면·열국 심판을 구분하고 메뚜기 떼를 대화 인물에서 제외한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jol.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'jol',name:'요엘',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^jol\.\d+$/.test(entry.chapter));
+ assert.equal(chapters.length,3);assert.equal(context.relations.length,3);assert.equal(entries.length,3);
+ for(const relation of context.relations)assert.ok(entries.some(entry=>entry.chapter===`jol.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ for(const chapter of [1,2])assert.ok(summary.chapters[chapter].people.every(person=>!['메뚜기 떼','큰 군대'].includes(person.name)),'재앙과 상징 군대는 NPC가 아님');
+ for(const entry of entries)assert.ok(entry.detail&&entry.lines.length===2&&entry.replyLines.length===2);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

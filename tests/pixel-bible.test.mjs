@@ -404,7 +404,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,844);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,847);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
@@ -810,6 +810,11 @@ test('다니엘서 인물 독백은 각 장의 포로·왕궁·환상 상황에 
 test('호세아와 고멜의 독백은 표징 결혼과 회복 장면에 맞게 1인칭으로 이어진다',async()=>{
  const {chapterMonologues}=await import('../js/features/pixel-bible/context-monologues.js');
  for(const [name,chap]of [['호세아',1],['고멜',1],['호세아',3],['고멜',3]]){const lines=chapterMonologues({name},[{code:'hos',chap}]);assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref.startsWith(`호세아 ${chap}:`)));assert.ok(lines.some(line=>/(?:내가|나는|내 |내게)/.test(line.text)));}
+});
+
+test('요엘의 재앙 경고와 회개 촉구 독백은 해당 장의 1인칭 발화다',async()=>{
+ const {chapterMonologues}=await import('../js/features/pixel-bible/context-monologues.js');
+ for(const chap of [1,2]){const lines=chapterMonologues({name:'요엘'},[{code:'jol',chap}]);assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref.startsWith(`요엘 ${chap}:`)));assert.ok(lines.every(line=>/(?:나는|내가)/.test(line.text)));}
 });
 
 test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 규칙을 갖는다',async()=>{

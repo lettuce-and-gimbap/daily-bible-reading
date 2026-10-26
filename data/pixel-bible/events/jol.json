@@ -152,7 +152,6 @@
       "title": "메뚜기 재앙에 농부와 포도원 일꾼이 탄식하다",
       "actors": [
         "요엘",
-        "메뚜기 떼",
         "농부와 포도원 일꾼"
       ],
       "object": "scene-marker",
@@ -183,7 +182,6 @@
         "version": 2,
         "motif": "lament",
         "lead": "요엘",
-        "target": "메뚜기 떼",
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "tears",
@@ -310,7 +308,6 @@
       "title": "나팔을 불어 여호와의 날을 알리다",
       "actors": [
         "요엘",
-        "큰 군대",
         "유다 백성"
       ],
       "object": "scene-marker",
@@ -340,7 +337,6 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "요엘",
-        "target": "큰 군대",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
