@@ -304,7 +304,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3805);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3804);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -892,6 +892,19 @@ test('하박국 세 장의 사람 관계와 선지자·하나님의 문답을 �
  assert.equal(summary.chapters['3'].rels.filter(x=>(x.from==='하박국'&&x.to==='하나님')||(x.from==='하나님'&&x.to==='하박국')).length,1,'같은 관계의 왕복 중복을 한 기록으로 합친다');
  const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='hab');assert.equal(rows.length,4);
  for(const row of rows){assert.equal(row[4].length,row[7].length);assert.ok(row[4].every(x=>x.length>8));}
+});
+
+test('스바냐 세 장에서 왕·도시는 배경으로 분리하고 집단의 압제·회복 관계를 대화로 잇는다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/zep.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'zep',name:'스바냐',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^zep\.\d+$/.test(entry.chapter));
+ const human=context.relations.filter(r=>!r.from.creature&&!r.to.creature);
+ assert.equal(chapters.length,3);assert.equal(human.length,3);assert.equal(entries.length,3);
+ for(const relation of human)assert.ok(entries.some(entry=>entry.chapter==='zep.'+relation.from.chap&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),relation.ref+' '+relation.from.name+' ↔ '+relation.to.name);
+ for(const absent of ['요시야','예루살렘','니느웨(앗수르)','딸 시온'])assert.equal(context.people.some(x=>x.name===absent),false,absent+'는 실제 인물 NPC가 아니라 시대·장소·집단 표현이다');
+ for(const present of ['모압과 암몬 사람들','예루살렘 주민들','시온의 백성','곤고하고 가난한 남은 자들'])assert.ok(context.people.some(x=>x.name===present),present+'을 본문에 맞는 집단으로 보존한다');
+ assert.ok(summary.chapters['2'].places.some(x=>x.name==='니느웨'),'니느웨는 사람 목록 대신 장소로 남긴다');
+ const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='zep');assert.equal(rows.length,5);for(const row of rows){assert.equal(row[4].length,row[7].length);assert.ok(row[4].every(x=>x.length>8));}
 });
 
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{

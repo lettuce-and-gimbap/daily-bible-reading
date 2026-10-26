@@ -7,7 +7,7 @@
       "chapter": 3,
       "title": "두려움 대신 기쁨의 노래",
       "actors": [
-        "딸 시온"
+        "시온의 백성"
       ],
       "object": "lyre",
       "ref": "스바냐 3:14-17",
@@ -21,14 +21,14 @@
       "lines": [
         "해설: 딸 시온에게 기뻐 노래하며 두려워하지 말라는 말씀을 설명해요. 회복의 약속을 상징으로 보여 주며 하나님의 형상을 그리지 않아요."
       ],
-      "study": "딸 시온에게 기뻐 노래하며 두려워하지 말라는 말씀을 설명해요. 회복의 약속을 상징으로 보여 주며 하나님의 형상을 그리지 않아요.",
+      "study": "시온의 백성에게 기뻐 노래하며 두려워하지 말라는 말씀을 설명해요. 회복의 약속을 상징으로 보여 주며 하나님의 형상을 그리지 않아요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "딸 시온",
+        "lead": "시온의 백성",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -39,32 +39,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           }
         ],
         "duration": 8.2,
@@ -80,7 +80,6 @@
       "title": "우상 숭배와 안일한 지도자들을 깨우다",
       "actors": [
         "스바냐",
-        "요시야",
         "우상 숭배자들",
         "안주하는 자들"
       ],
@@ -112,7 +111,7 @@
         "version": 2,
         "motif": "warning",
         "lead": "스바냐",
-        "target": "요시야",
+        "target": null,
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "speech",
@@ -311,9 +310,8 @@
       "title": "주변 민족의 교만을 낮추다",
       "actors": [
         "스바냐",
-        "블레셋",
-        "모압과 암몬",
-        "니느웨(앗수르)"
+        "블레셋 사람들",
+        "모압과 암몬 사람들"
       ],
       "object": "scene-marker",
       "ref": "스바냐 2:4-15",
@@ -343,7 +341,7 @@
         "version": 2,
         "motif": "judgment",
         "lead": "스바냐",
-        "target": "블레셋",
+        "target": "블레셋 사람들",
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "speech",
@@ -393,9 +391,9 @@
       "chapter": 3,
       "title": "패역한 성과 타락한 지도자들을 책망하다",
       "actors": [
-        "예루살렘",
-        "방백과 재판장",
-        "선지자와 제사장"
+        "예루살렘 주민들",
+        "방백과 재판관들",
+        "거짓 선지자들과 제사장들"
       ],
       "object": "scene-marker",
       "ref": "스바냐 3:1-8",
@@ -420,8 +418,8 @@
       "animation": {
         "version": 2,
         "motif": "warning",
-        "lead": "예루살렘",
-        "target": "방백과 재판장",
+        "lead": "예루살렘 주민들",
+        "target": "방백과 재판관들",
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "speech",
@@ -431,32 +429,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           },
           {
             "action": "turn",
             "duration": 1.2,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           },
           {
             "action": "speak",
             "duration": 1.5,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           },
           {
             "action": "lower",
             "duration": 1.2,
-            "actor": "예루살렘"
+            "actor": "예루살렘 주민들"
           }
         ],
         "duration": 8.2,
@@ -471,8 +469,8 @@
       "chapter": 3,
       "title": "쫓겨난 이들을 모으고 수치를 돌이키다",
       "actors": [
-        "곤고한 남은 자",
-        "딸 시온"
+        "곤고하고 가난한 남은 자들",
+        "시온의 백성"
       ],
       "object": "scene-marker",
       "ref": "스바냐 3:18-20",
@@ -492,8 +490,8 @@
       "animation": {
         "version": 2,
         "motif": "gather",
-        "lead": "곤고한 남은 자",
-        "target": "딸 시온",
+        "lead": "곤고하고 가난한 남은 자들",
+        "target": "시온의 백성",
         "mode": "illustration",
         "setting": "pasture",
         "effect": "grain",
@@ -503,32 +501,32 @@
           {
             "action": "walk",
             "duration": 1,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "bend",
             "duration": 1.2,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "grasp",
             "duration": 1.5,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "lift",
             "duration": 1.8,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "bundle",
             "duration": 1.5,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "carry",
             "duration": 1.2,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           }
         ],
         "duration": 8.2,
@@ -543,7 +541,7 @@
       "chapter": 3,
       "title": "정결한 입술과 겸손한 남은 자",
       "actors": [
-        "곤고한 남은 자"
+        "곤고하고 가난한 남은 자들"
       ],
       "object": "scene-marker",
       "ref": "스바냐 3:9-13",
@@ -565,7 +563,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "곤고한 남은 자",
+        "lead": "곤고하고 가난한 남은 자들",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -576,32 +574,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "곤고한 남은 자"
+            "actor": "곤고하고 가난한 남은 자들"
           }
         ],
         "duration": 8.2,

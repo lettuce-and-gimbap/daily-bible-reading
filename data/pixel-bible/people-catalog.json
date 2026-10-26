@@ -3621,27 +3621,6 @@
       ]
     },
     {
-      "name": "곤고한 남은 자",
-      "roles": [
-        "여호와께 피할 백성"
-      ],
-      "refs": [
-        "zep.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:곤고한 남은 자:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "곤고한 백성",
       "roles": [
         "하나님이 구원하신 낮은 사람들"
@@ -8519,27 +8498,6 @@
       ]
     },
     {
-      "name": "니느웨(앗수르)",
-      "roles": [
-        "나만 있다 한 교만한 성"
-      ],
-      "refs": [
-        "zep.2"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:니느웨(앗수르):zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.2"
-          ]
-        }
-      ]
-    },
-    {
       "name": "니므롯",
       "roles": [
         "바벨과 니느웨를 세운 용사",
@@ -12688,8 +12646,7 @@
       "refs": [
         "jer.4",
         "lam.2",
-        "zec.2",
-        "zep.3"
+        "zec.2"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -12716,14 +12673,6 @@
           "status": "needs-review",
           "refs": [
             "zec.2"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:딸 시온:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.3"
           ]
         }
       ]
@@ -17399,27 +17348,6 @@
       ]
     },
     {
-      "name": "모압과 암몬",
-      "roles": [
-        "백성을 비방한 나라"
-      ],
-      "refs": [
-        "zep.2"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:모압과 암몬:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.2"
-          ]
-        }
-      ]
-    },
-    {
       "name": "모압과 암몬 연합군",
       "roles": [
         "서로 쳐서 무너진 적"
@@ -21213,27 +21141,6 @@
       ]
     },
     {
-      "name": "방백과 재판장",
-      "roles": [
-        "사자와 이리 같은 지도자"
-      ],
-      "refs": [
-        "zep.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:방백과 재판장:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "방백들",
       "roles": [
         "정의로 다스릴 이들"
@@ -24267,8 +24174,7 @@
       "refs": [
         "ezk.25",
         "isa.14",
-        "jer.47",
-        "zep.2"
+        "jer.47"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -24295,14 +24201,6 @@
           "status": "needs-review",
           "refs": [
             "jer.47"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:블레셋:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.2"
           ]
         }
       ]
@@ -27932,27 +27830,6 @@
           "status": "needs-review",
           "refs": [
             "rev.10"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "선지자와 제사장",
-      "roles": [
-        "경솔하고 성소를 더럽힌 자"
-      ],
-      "refs": [
-        "zep.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:선지자와 제사장:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.3"
           ]
         }
       ]
@@ -45373,8 +45250,7 @@
         "ezk.22",
         "ezk.24",
         "ezk.26",
-        "isa.40",
-        "zep.3"
+        "isa.40"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -45397,14 +45273,6 @@
           "status": "needs-review",
           "refs": [
             "isa.40"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:예루살렘:zep",
-          "status": "needs-review",
-          "refs": [
-            "zep.3"
           ]
         }
       ]
@@ -48714,8 +48582,7 @@
         "2ki.23",
         "jer.1",
         "jer.3",
-        "jer.22",
-        "zep.1"
+        "jer.22"
       ],
       "appearance": "expanded6",
       "review": "profile-symbolic",
@@ -48736,8 +48603,7 @@
             "2ki.23",
             "jer.1",
             "jer.3",
-            "jer.22",
-            "zep.1"
+            "jer.22"
           ]
         }
       ]
@@ -65938,6 +65804,101 @@
           "status": "reviewed-rule",
           "refs": [
             "hab.2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "모압과 암몬 사람들",
+      "roles": [],
+      "refs": [
+        "zep.2"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:모압과 암몬 사람들",
+          "status": "reviewed-rule",
+          "refs": [
+            "zep.2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "예루살렘 주민들",
+      "roles": [],
+      "refs": [
+        "zep.3"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:예루살렘 주민들",
+          "status": "reviewed-rule",
+          "refs": [
+            "zep.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "방백과 재판관들",
+      "roles": [],
+      "refs": [
+        "zep.3"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:방백과 재판관들",
+          "status": "reviewed-rule",
+          "refs": [
+            "zep.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "거짓 선지자들과 제사장들",
+      "roles": [],
+      "refs": [
+        "zep.3"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:거짓 선지자들과 제사장들",
+          "status": "reviewed-rule",
+          "refs": [
+            "zep.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "곤고하고 가난한 남은 자들",
+      "roles": [],
+      "refs": [
+        "zep.3"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-label",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:곤고하고 가난한 남은 자들",
+          "status": "reviewed-rule",
+          "refs": [
+            "zep.3"
           ]
         }
       ]

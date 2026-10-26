@@ -4,12 +4,12 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabelCount": 2286,
-    "characterOccurrences": 5955,
-    "authoredSoloOccurrences": 2042,
-    "chapterRoleOccurrences": 3901,
-    "ordinaryOnlyOccurrences": 12,
-    "chapterRelationRecords": 3825,
+    "sourceLabelCount": 2288,
+    "characterOccurrences": 5963,
+    "authoredSoloOccurrences": 2044,
+    "chapterRoleOccurrences": 3881,
+    "ordinaryOnlyOccurrences": 38,
+    "chapterRelationRecords": 3824,
     "majorSets": 100,
     "majorSetsWithMatches": 100
   },
@@ -323,20 +323,20 @@
     {
       "code": "hab",
       "chapters": 3,
-      "characterOccurrences": 10,
+      "characterOccurrences": 17,
       "authoredSoloOccurrences": 3,
-      "chapterRoleOccurrences": 7,
-      "ordinaryOnlyOccurrences": 0,
+      "chapterRoleOccurrences": 0,
+      "ordinaryOnlyOccurrences": 14,
       "chapterRelationRecords": 3
     },
     {
       "code": "zep",
       "chapters": 3,
-      "characterOccurrences": 16,
-      "authoredSoloOccurrences": 3,
-      "chapterRoleOccurrences": 13,
-      "ordinaryOnlyOccurrences": 0,
-      "chapterRelationRecords": 4
+      "characterOccurrences": 17,
+      "authoredSoloOccurrences": 5,
+      "chapterRoleOccurrences": 0,
+      "ordinaryOnlyOccurrences": 12,
+      "chapterRelationRecords": 3
     },
     {
       "code": "hag",
