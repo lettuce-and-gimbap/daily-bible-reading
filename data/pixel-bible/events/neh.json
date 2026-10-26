@@ -1065,6 +1065,36 @@
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
       "animation": {"version":2,"motif":"warning","lead":"느헤미야","target":"엘리아십","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"느헤미야"},{"action":"turn","duration":1.2,"actor":"느헤미야"},{"action":"speak","duration":1.5,"actor":"느헤미야"},{"action":"point","duration":1.8,"actor":"느헤미야"},{"action":"listen","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 13:23-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-neh-extra-5-0",
+      "code": "neh",
+      "chapter": 5,
+      "title": "느헤미야가 총독의 몫을 받지 않고 백성을 먹이다",
+      "actors": [
+        "느헤미야",
+        "이전 총독들",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "느헤미야 5:14-19",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 느헤미야는 총독의 식량 몫을 요구하지 않고, 자기 식탁에서 유다 사람과 관리들을 대접해요. 그는 백성의 무거운 부담을 더하지 않으려 한 일을 하나님께 기억해 달라고 기도해요."
+      ],
+      "study": "느헤미야는 총독의 식량 몫을 요구하지 않고, 자기 식탁에서 유다 사람과 관리들을 대접해요. 그는 백성의 무거운 부담을 더하지 않으려 한 일을 하나님께 기억해 달라고 기도해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"provision","lead":"느헤미야","target":"이전 총독들","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"extend","duration":1.8,"actor":"느헤미야"},{"action":"release","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 5:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

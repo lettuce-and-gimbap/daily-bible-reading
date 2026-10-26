@@ -217,14 +217,14 @@
     },
     {
       "code": "neh",
-      "payloadSha256": "af9fc9f45548d67d16a1eb38f1db2afc890109e7b9cfad7ed05137f59bf48e43",
-      "scenes": 29,
-      "existing": 29,
+      "payloadSha256": "2884a98f81adb4f40a1beafdd8ef74c39117b754e9ba9a46bc081b47d6e45f29",
+      "scenes": 30,
+      "existing": 30,
       "restored": 0,
       "corrected": 2,
-      "planned": 29,
+      "planned": 30,
       "modes": {
-        "reconstruction": 28,
+        "reconstruction": 29,
         "illustration": 1
       },
       "status": "authored-awaiting-browser-review"
