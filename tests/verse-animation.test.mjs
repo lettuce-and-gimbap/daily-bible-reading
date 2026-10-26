@@ -13,6 +13,7 @@ const corinthians=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/1co.
 const secondCorinthians=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/2co.json'));
 const hebrews=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/heb.json'));
 const james=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/jas.json'));
+const revelation=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/rev.json'));
 const galatians=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/gal.json'));
 const philippians=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/php.json'));
 const ephesians=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/eph.json'));
@@ -54,6 +55,10 @@ test('히브리서 1–13장은 303절을 논증 흐름과 믿음의 본보기�
 test('야고보서 1–5장은 108절을 믿음·행함·말·기도의 권면에 따라 장면화한다',()=>{
  for(const [chapter,count]of [[1,27],[2,26],[3,18],[4,17],[5,20]]){const scenes=james.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));for(const s of scenes){assert.ok(s.title&&s.study);assert.equal(s.animation.beats.length,6);for(const beat of s.animation.beats)assert.ok(EVENT_ACTIONS.includes(beat.action));}}
  assert.ok(james.scenes.some(s=>s.animation.motif==='pray'));assert.ok(james.scenes.some(s=>s.animation.motif==='counsel'));
+});
+test('요한계시록 1–22장은 404절을 교회 편지와 환상 연속성에 맞춰 구성한다',()=>{
+ for(const [chapter,count]of [[1,20],[2,29],[3,22],[4,11],[5,14],[6,17],[7,17],[8,13],[9,21],[10,11],[11,19],[12,17],[13,18],[14,20],[15,8],[16,21],[17,18],[18,24],[19,21],[20,15],[21,27],[22,21]]){const scenes=revelation.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));for(const s of scenes){assert.ok(s.title&&s.study);assert.equal(s.animation.beats.length,6);for(const beat of s.animation.beats)assert.ok(EVENT_ACTIONS.includes(beat.action));}}
+ assert.ok(revelation.scenes.some(s=>s.animation.motif==='vision-battle'));assert.ok(revelation.scenes.some(s=>s.animation.motif==='vision-city'));
 });
 test('갈라디아서 1–6장은 장별 절 번호와 맞는 설명 장면을 갖는다',()=>{
  for(const [chapter,count]of [[1,24],[2,21],[3,29],[4,31],[5,26],[6,18]]){const scenes=galatians.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));for(const s of scenes){assert.ok(s.title&&s.study);assert.equal(s.animation.beats.length,6);}}
@@ -123,7 +128,7 @@ test('주연 외 동작 트랙과 가시성은 절의 순서대로 움직이며 
  for(const s of data.scenes){const cast=s.actors.map(name=>({name}));for(const t of [0,1,3,5,8.2,40])for(const st of sampleEvent(s,cast,t).states)assert.ok(st.pose.eventArms.flat().every(Number.isFinite));assert.deepEqual(sampleEvent(s,cast,20).states,sampleEvent(s,cast,200).states);}
 });
 test('미작성 절은 제작 완료 수에 들어가지 않는다',()=>{
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,7553);assert.equal(p.contentClips,7541);assert.equal(p.textualNotices,12);assert.equal(p.pending,404);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk','jhn','1jn','act','rom','1co','2co','heb','jas','gal','php','eph','col','1th','2th','phm','2jn','3jn','jud','2pe','1pe','tit','2ti','1ti'].includes(c.code)||c.code==='luk'&&c.chapter>24||c.code==='jhn'&&c.chapter>21||c.code==='act'&&c.chapter>28||c.code==='rom'&&c.chapter>16||c.code==='1co'&&c.chapter>16||c.code==='2co'&&c.chapter>13||c.code==='heb'&&c.chapter>13||c.code==='jas'&&c.chapter>5||c.code==='gal'&&c.chapter>6||c.code==='php'&&c.chapter>4||c.code==='eph'&&c.chapter>6||c.code==='col'&&c.chapter>4||c.code==='1th'&&c.chapter>5||c.code==='2th'&&c.chapter>3||c.code==='phm'&&c.chapter>1||c.code==='1jn'&&c.chapter>5||c.code==='2jn'&&c.chapter>1||c.code==='3jn'&&c.chapter>1||c.code==='jud'&&c.chapter>1||c.code==='2pe'&&c.chapter>3||c.code==='1pe'&&c.chapter>5||c.code==='tit'&&c.chapter>3||c.code==='2ti'&&c.chapter>4||c.code==='1ti'&&c.chapter>6).every(c=>c.authored===0));
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,7957);assert.equal(p.contentClips,7945);assert.equal(p.textualNotices,12);assert.equal(p.pending,0);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk','jhn','1jn','act','rom','1co','2co','heb','jas','rev','gal','php','eph','col','1th','2th','phm','2jn','3jn','jud','2pe','1pe','tit','2ti','1ti'].includes(c.code)||c.code==='luk'&&c.chapter>24||c.code==='jhn'&&c.chapter>21||c.code==='act'&&c.chapter>28||c.code==='rom'&&c.chapter>16||c.code==='1co'&&c.chapter>16||c.code==='2co'&&c.chapter>13||c.code==='heb'&&c.chapter>13||c.code==='jas'&&c.chapter>5||c.code==='rev'&&c.chapter>22||c.code==='gal'&&c.chapter>6||c.code==='php'&&c.chapter>4||c.code==='eph'&&c.chapter>6||c.code==='col'&&c.chapter>4||c.code==='1th'&&c.chapter>5||c.code==='2th'&&c.chapter>3||c.code==='phm'&&c.chapter>1||c.code==='1jn'&&c.chapter>5||c.code==='2jn'&&c.chapter>1||c.code==='3jn'&&c.chapter>1||c.code==='jud'&&c.chapter>1||c.code==='2pe'&&c.chapter>3||c.code==='1pe'&&c.chapter>5||c.code==='tit'&&c.chapter>3||c.code==='2ti'&&c.chapter>4||c.code==='1ti'&&c.chapter>6).every(c=>c.authored===0));
 });
 test('작성한 마태복음 1071절 모두 실제 월드의 사건 진입점에서 접근할 수 있다',()=>{
  const events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mat.json'));
@@ -144,7 +149,7 @@ test('본문이 없는 절과 역본별 배열 차이를 사건으로 단정하�
  for(const s of data.scenes.filter(s=>s.textualNotice)){assert.equal(s.animation.diagram.kind,'edition-note');assert.deepEqual(s.actors,[]);}
  assert.equal(get(21,29).editionVariant,true);assert.deepEqual(get(21,29).animation.diagram.patterns,['yes-stay','no-go']);assert.deepEqual(get(21,30).animation.diagram.patterns,['no-go','yes-stay']);
  assert.equal(get(17,27).animation.mode,'illustration');assert.equal(get(28,13).animation.effect,'none');
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,7541);assert.equal(p.textualNotices,12);
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,7945);assert.equal(p.textualNotices,12);
 });
 test('물 위 이동·상 뒤집기·나귀 이동을 명시적 경로로 구분한다',async()=>{
  const {eventLayout}=await import('../js/features/pixel-bible/pixel-event.js');
