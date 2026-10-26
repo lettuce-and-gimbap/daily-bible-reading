@@ -406,3 +406,10 @@ test('1ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
  const expected=[['열왕기상 1:1-4','아비삭이 늙은 다윗을 돌보다'],['열왕기상 9:10-14','솔로몬이 히람에게 갈릴리 성읍을 주다'],['열왕기상 9:15-24','솔로몬이 성읍을 세우고 이방인을 노역에 동원하다'],['열왕기상 15:1-8','아비얌이 죽고 아사가 유다 왕이 되다'],['열왕기상 15:25-34','나답이 살해되고 바아사가 북이스라엘 왕이 되다'],['열왕기상 16:1-7','예후가 바아사 집안의 심판을 예고하다'],['열왕기상 17:1','엘리야가 가뭄을 선포하다']];
  for(const [ref,title] of expected){const s=data.scenes.find(x=>x.ref===ref&&x.title===title);assert(s,ref);assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
+
+test('장별 검수 장면 수가 권별 실제 사건 파일과 일치한다',()=>{
+ for(const row of review.chapters){
+  const data=JSON.parse(fs.readFileSync(root+row.code+'.json'));
+  assert.equal(row.scenes,data.scenes.filter(scene=>scene.chapter===row.chapter).length,`${row.code} ${row.chapter}`);
+ }
+});
