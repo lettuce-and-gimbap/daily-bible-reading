@@ -1,7 +1,7 @@
 import {drawCreature} from '../creature-art.js';
 import {CREATURES} from '../creatures.js';
 import {drawWorldObject} from '../art.js';
-export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent','ear-tongue']);
+export const VERSE_EFFECTS=new Set(['star-guide','gifts','detour','dove-descend','kingdoms','cast-net','remote-room','waterline','rooster-call','anoint-head','roof-descent','ear-tongue','temple-fall','spirit-light','flight','leaf-growth']);
 export function drawVerseEffects(c,sample,layout){
  const {plan,index,progress}=sample;if(!VERSE_EFFECTS.has(plan.effect))return;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),w,h);},prop=(kind,x,y)=>drawWorldObject(c,{kind,x:Math.round(x),y:Math.round(y)},1,0),p=Math.min(1,(index+progress)/5);
@@ -17,6 +17,23 @@ export function drawVerseEffects(c,sample,layout){
    if(index>=4){r(handX+8,handY+12,8,6,'#e3bd91');r(target.x-4,target.y-43,7,3,'#a96d69');}
    if(index===3||index===5){r(target.x-24,target.y-65,3,3,'#f3d38b');r(target.x+18,target.y-62,3,3,'#f3d38b');}
   }
+ }
+ if(plan.effect==='temple-fall'){
+  const xx=layout.lead.x;
+  r(xx-72,107,144,72,'#b59b72');r(xx-62,96,124,12,'#c9b487');
+  for(let i=0;i<5;i++)r(xx-54+i*25,120,12,46,'#d5c39b');
+  if(index>=3){const fall=Math.round(Math.min(1,(index-3+progress)/2)*34);for(let i=0;i<4;i++)r(xx-58+i*38,170+fall+(i%2)*4,25,9,'#a89579');r(xx-76,183+fall,152,3,'#c6bca0');}
+ }
+ if(plan.effect==='spirit-light'&&index>=3){
+  const who=layout.lead;for(let i=0;i<7;i++){const xx=who.x-18+i*6;r(xx,who.y-118+(i%2)*6,2,32,'#eadb9f');}
+  if(index>=4)for(let i=0;i<5;i++)r(who.x-24+i*12,who.y-126-(i%2)*5,3,3,'#f1dfa5');
+ }
+ if(plan.effect==='flight'&&index>=2){
+  r(0,246,720,3,'#bcae83');for(let i=0;i<5;i++){const xx=layout.lead.x-68+i*34;r(xx,225-(i%2)*8,16,2,'#d7c890');}
+ }
+ if(plan.effect==='leaf-growth'&&index>=3){
+  const tree=layout.prop||layout.lead,xx=tree.x,yy=tree.y-47;
+  for(const [dx,dy]of [[-17,0],[-8,-8],[2,-12],[13,-6],[20,2]])r(xx+dx,yy+dy,7,6,'#8eae75');
  }
  if(plan.effect==='waterline'){const who=layout.lead;r(who.x-38,241,76,59,'#4f899e');for(let i=0;i<4;i++)r(who.x-35+i*22,244+i%2*5,16,2,'#b5d7d9');}
  if(plan.effect==='star-guide'){prop('star',220+p*240,76);if(index>=4)for(let i=0;i<3;i++)r(450+i*9,85+i%2*8,3,3,'#eddaa1');}

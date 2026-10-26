@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "mrk",
-  "scope": "마가복음 1–12장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "마가복음 1–13장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -568,6 +568,92 @@
         "role": "본문 사건에 등장하는 인물",
         "refs": [
           "마가복음 12장"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "name": "제자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "제자들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "무리",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "거짓 선지자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "천사들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "종들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "문지기",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "집주인",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "임신한 여인들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "아이에게 젖을 먹이는 여인들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
+        ]
+      },
+      {
+        "name": "민족들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 13장"
         ]
       }
     ]
@@ -37440,6 +37526,2744 @@
         ],
         "duration": 8.2,
         "ref": "마가복음 12:44",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-1",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        1
+      ],
+      "title": "성전의 돌과 건물을 바라봄",
+      "ref": "마가복음 13:1",
+      "actors": [
+        "제자",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "성전을 나서는 길에 한 제자가 큰 돌과 웅장한 건물을 가리키며 예수께 감탄을 건네요."
+      ],
+      "study": "성전을 나서는 길에 한 제자가 큰 돌과 웅장한 건물을 가리키며 예수께 감탄을 건네요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "제자",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "제자",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "제자",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "제자",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "제자",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "제자",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-2",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        2
+      ],
+      "title": "돌 하나도 남지 않으리라는 예고",
+      "ref": "마가복음 13:2",
+      "actors": [
+        "예수",
+        "제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 성전의 무너짐을 말씀하세요. 완성된 건물 위로 금이 번지고 돌들이 차례로 내려앉는 상징 연출로 보여요."
+      ],
+      "study": "예수께서 성전의 무너짐을 말씀하세요. 완성된 건물 위로 금이 번지고 돌들이 차례로 내려앉는 상징 연출로 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "temple-fall",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "recoil",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-3",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        3
+      ],
+      "title": "감람산 맞은편에 함께 앉음",
+      "ref": "마가복음 13:3",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한",
+        "안드레"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "감람산에서 성전을 마주한 예수 곁에 베드로와 야고보와 요한과 안드레가 자리를 잡아요."
+      ],
+      "study": "감람산에서 성전을 마주한 예수 곁에 베드로와 야고보와 요한과 안드레가 자리를 잡아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-4",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        4
+      ],
+      "title": "때와 징조를 조용히 질문함",
+      "ref": "마가복음 13:4",
+      "actors": [
+        "베드로",
+        "야고보",
+        "요한",
+        "안드레",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "네 제자가 예수께 다가와 성전 예고가 이루어질 때를 조용히 여쭈어요."
+      ],
+      "study": "네 제자가 예수께 다가와 성전 예고가 이루어질 때를 조용히 여쭈어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "야고보",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "crouch",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-5",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        5
+      ],
+      "title": "미혹을 경계하라는 당부",
+      "ref": "마가복음 13:5",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자들에게 먼저 속임을 경계하라고 말씀하시고, 제자들은 주의 깊게 들어요."
+      ],
+      "study": "예수께서 제자들에게 먼저 속임을 경계하라고 말씀하시고, 제자들은 주의 깊게 들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-6",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        6
+      ],
+      "title": "자신을 그리스도라 내세우는 사람들",
+      "ref": "마가복음 13:6",
+      "actors": [
+        "거짓 그리스도",
+        "사람들",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "자신이 그리스도라고 주장하는 이들이 나타나 사람들을 흔들려는 장면을 경고의 표지로 보여요."
+      ],
+      "study": "자신이 그리스도라고 주장하는 이들이 나타나 사람들을 흔들려는 장면을 경고의 표지로 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 그리스도",
+        "target": "사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "거짓 그리스도",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "거짓 그리스도",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "거짓 그리스도",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "거짓 그리스도",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "거짓 그리스도",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 그리스도",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "거짓 주장",
+            "흔들리는 사람들",
+            "분별하고 경계함"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-7",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        7
+      ],
+      "title": "전쟁 소문 앞에서 두려워하지 말라",
+      "ref": "마가복음 13:7",
+      "actors": [
+        "예수",
+        "제자들",
+        "민족들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "전쟁 소식이 들려와도 제자들이 공포에 휩쓸리지 않도록 예수께서 아직 끝은 아니라고 일러 주세요."
+      ],
+      "study": "전쟁 소식이 들려와도 제자들이 공포에 휩쓸리지 않도록 예수께서 아직 끝은 아니라고 일러 주세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "전쟁의 소문",
+            "두려움에 휩쓸리지 않음",
+            "끝은 아직 아님"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-8",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        8
+      ],
+      "title": "분쟁과 지진과 기근의 시작",
+      "ref": "마가복음 13:8",
+      "actors": [
+        "민족들",
+        "사람들",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "민족 간 분쟁, 흔들리는 땅, 메마른 밭을 세 칸 상징 장면으로 이어 보여요. 이를 마지막이 아니라 진통의 시작이라고 설명하세요."
+      ],
+      "study": "민족 간 분쟁, 흔들리는 땅, 메마른 밭을 세 칸 상징 장면으로 이어 보여요. 이를 마지막이 아니라 진통의 시작이라고 설명하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "민족들",
+        "target": "사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "민족들",
+            "duration": 1
+          },
+          {
+            "action": "brace",
+            "actor": "민족들",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "민족들",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "민족들",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "민족들",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "민족들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "민족의 대립",
+            "지진과 기근",
+            "재난의 시작"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-9",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        9
+      ],
+      "title": "공회와 회당과 권력자 앞에 섬",
+      "ref": "마가복음 13:9",
+      "actors": [
+        "예수",
+        "제자들",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제자들이 공회에 넘겨지고 회당에서 매를 맞으며, 예수 때문에 권력자들 앞에서 증언하게 될 일을 말씀하세요. 폭행은 직접 재현하지 않고 증언대 앞의 굳센 자세로 다뤄요."
+      ],
+      "study": "제자들이 공회에 넘겨지고 회당에서 매를 맞으며, 예수 때문에 권력자들 앞에서 증언하게 될 일을 말씀하세요. 폭행은 직접 재현하지 않고 증언대 앞의 굳센 자세로 다뤄요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "synagogue",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-10",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        10
+      ],
+      "title": "모든 민족에게 먼저 전해질 복음",
+      "ref": "마가복음 13:10",
+      "actors": [
+        "제자들",
+        "민족들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "복음의 소식이 여러 민족에게 전해지는 흐름을 지도 위의 빛과 전달자들로 표현해요."
+      ],
+      "study": "복음의 소식이 여러 민족에게 전해지는 흐름을 지도 위의 빛과 전달자들로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "제자들",
+        "target": "민족들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "제자들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "제자들",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "제자들",
+            "duration": 1.8
+          },
+          {
+            "action": "extend",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "제자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "복음의 시작",
+            "여러 민족에게 전함",
+            "증언의 확장"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-11",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        11
+      ],
+      "title": "그때 주어질 말을 믿고 의지함",
+      "ref": "마가복음 13:11",
+      "actors": [
+        "예수",
+        "제자들",
+        "성령"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "붙잡혀 심문받는 순간을 상징적으로 보여주며, 제자들이 미리 답을 걱정하지 말고 주어질 말을 하도록 격려하세요. 성령은 인물 형상 대신 빛으로 표현해요."
+      ],
+      "study": "붙잡혀 심문받는 순간을 상징적으로 보여주며, 제자들이 미리 답을 걱정하지 말고 주어질 말을 하도록 격려하세요. 성령은 인물 형상 대신 빛으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "spirit-light",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-12",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        12
+      ],
+      "title": "가족 사이의 배신을 경고함",
+      "ref": "마가복음 13:12",
+      "actors": [
+        "예수",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "가까운 가족 사이에도 배신과 적대가 생길 수 있음을 경고하세요. 구체적인 살해 장면은 생략하고 서로 등지는 실루엣으로 표현해요."
+      ],
+      "study": "가까운 가족 사이에도 배신과 적대가 생길 수 있음을 경고하세요. 구체적인 살해 장면은 생략하고 서로 등지는 실루엣으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "broken-tie",
+          "labels": [
+            "가족의 갈등",
+            "배신의 위협",
+            "폭력을 재현하지 않음"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-13",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        13
+      ],
+      "title": "끝까지 견디는 사람의 소망",
+      "ref": "마가복음 13:13",
+      "actors": [
+        "예수",
+        "제자들",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "미움과 박해 속에서도 제자들이 서로를 붙들며 끝까지 견디라는 말씀을 들어요."
+      ],
+      "study": "미움과 박해 속에서도 제자들이 서로를 붙들며 끝까지 견디라는 말씀을 들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "brace",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-14",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        14
+      ],
+      "title": "산으로 피하라는 긴급한 경고",
+      "ref": "마가복음 13:14",
+      "actors": [
+        "예수",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "황폐하게 하는 표징을 보았을 때 유대에 있는 이들이 지체하지 말고 산으로 피하라는 긴급한 경고예요. 표징은 침략의 공포를 자극하지 않는 상징물로 표시해요."
+      ],
+      "study": "황폐하게 하는 표징을 보았을 때 유대에 있는 이들이 지체하지 말고 산으로 피하라는 긴급한 경고예요. 표징은 침략의 공포를 자극하지 않는 상징물로 표시해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "사람들",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "flight",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "run",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-15",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        15
+      ],
+      "title": "지붕에서 집 안으로 되돌아가지 않음",
+      "ref": "마가복음 13:15",
+      "actors": [
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "지붕 위에 있는 이는 소지품을 챙기러 내려가지 말라는 말을 듣고 즉시 피난길을 택해요."
+      ],
+      "study": "지붕 위에 있는 이는 소지품을 챙기러 내려가지 말라는 말을 듣고 즉시 피난길을 택해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-16",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        16
+      ],
+      "title": "밭에서 겉옷을 가지러 돌아서지 않음",
+      "ref": "마가복음 13:16",
+      "actors": [
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "밭에서 일하던 사람은 겉옷을 가지러 되돌아가지 않고 피하라는 경고를 받아요."
+      ],
+      "study": "밭에서 일하던 사람은 겉옷을 가지러 되돌아가지 않고 피하라는 경고를 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "run",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-17",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        17
+      ],
+      "title": "취약한 이들이 겪을 어려움을 헤아림",
+      "ref": "마가복음 13:17",
+      "actors": [
+        "예수",
+        "임신한 여인들",
+        "아이에게 젖을 먹이는 여인들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "임신한 여인들과 젖먹이는 아이를 돌보는 이들이 피난의 어려움을 겪을 것을 예수께서 안타깝게 말씀하세요. 위협적인 장면이나 신체적 고통은 묘사하지 않아요."
+      ],
+      "study": "임신한 여인들과 젖먹이는 아이를 돌보는 이들이 피난의 어려움을 겪을 것을 예수께서 안타깝게 말씀하세요. 위협적인 장면이나 신체적 고통은 묘사하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "임신한 여인들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "cover",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-18",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        18
+      ],
+      "title": "겨울을 피해 달라고 기도함",
+      "ref": "마가복음 13:18",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "피난이 겨울에 닥치지 않도록 기도하라는 권면을 조용히 올리는 기도로 표현해요."
+      ],
+      "study": "피난이 겨울에 닥치지 않도록 기도하라는 권면을 조용히 올리는 기도로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "comparison",
+          "labels": [
+            "피난의 어려움",
+            "겨울을 피하도록",
+            "기도하는 마음"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-19",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        19
+      ],
+      "title": "전례없이 큰 환난을 알리심",
+      "ref": "마가복음 13:19",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 큰 환난의 무게를 말씀하세요. 인물의 고통을 재현하기보다 어두워지는 하늘과 비어 있는 길로 엄중함을 전달해요."
+      ],
+      "study": "예수께서 큰 환난의 무게를 말씀하세요. 인물의 고통을 재현하기보다 어두워지는 하늘과 비어 있는 길로 엄중함을 전달해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "큰 환난",
+            "전례없는 어려움",
+            "엄중한 경고"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-20",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        20
+      ],
+      "title": "택하신 이들을 위해 날을 감하심",
+      "ref": "마가복음 13:20",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "환난의 날들이 감해져 선택된 이들이 보전된다는 말씀을, 짧아지는 달력과 다시 밝아지는 빛으로 상징해요."
+      ],
+      "study": "환난의 날들이 감해져 선택된 이들이 보전된다는 말씀을, 짧아지는 달력과 다시 밝아지는 빛으로 상징해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "count",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "promise",
+          "labels": [
+            "감해진 날들",
+            "택하신 이들",
+            "보전하시는 은혜"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-21",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        21
+      ],
+      "title": "여기 있다 저기 있다 해도 믿지 말라",
+      "ref": "마가복음 13:21",
+      "actors": [
+        "예수",
+        "제자들",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도가 여기 있다고 유인하는 말이 들려도 제자들이 따라가지 말라고 예수께서 다시 경계하세요."
+      ],
+      "study": "그리스도가 여기 있다고 유인하는 말이 들려도 제자들이 따라가지 말라고 예수께서 다시 경계하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "여기 있다는 주장",
+            "저기 있다는 주장",
+            "따라가지 말고 분별함"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-22",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        22
+      ],
+      "title": "표적을 내세우는 거짓 지도자들",
+      "ref": "마가복음 13:22",
+      "actors": [
+        "거짓 그리스도",
+        "거짓 선지자",
+        "사람들",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "거짓 그리스도와 거짓 예언자가 표적을 앞세워 사람들을 미혹하려는 상황을 경고해요. 초자연 현상을 진짜 성취처럼 재현하지 않아요."
+      ],
+      "study": "거짓 그리스도와 거짓 예언자가 표적을 앞세워 사람들을 미혹하려는 상황을 경고해요. 초자연 현상을 진짜 성취처럼 재현하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 그리스도",
+        "target": "거짓 선지자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "거짓 그리스도",
+            "duration": 1
+          },
+          {
+            "action": "show",
+            "actor": "거짓 그리스도",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "거짓 그리스도",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "거짓 그리스도",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "거짓 그리스도",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 그리스도",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "거짓 지도자",
+            "표적을 내세움",
+            "미혹을 경계함"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-23",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        23
+      ],
+      "title": "미리 들은 말씀을 기억하라",
+      "ref": "마가복음 13:23",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 앞서 모든 일을 알려 주셨다고 상기시키며 제자들에게 깨어 분별하라고 하세요."
+      ],
+      "study": "예수께서 앞서 모든 일을 알려 주셨다고 상기시키며 제자들에게 깨어 분별하라고 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-24",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        24
+      ],
+      "title": "환난 뒤 어두워지는 해와 달",
+      "ref": "마가복음 13:24",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "환난 뒤 해가 어두워지고 달의 빛이 사라지는 우주적 표징을 어두운 하늘의 상징 장면으로 나타내요."
+      ],
+      "study": "환난 뒤 해가 어두워지고 달의 빛이 사라지는 우주적 표징을 어두운 하늘의 상징 장면으로 나타내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "cosmic-dark",
+          "labels": [
+            "환난 뒤의 표징",
+            "어두워진 해",
+            "빛을 잃은 달"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-25",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        25
+      ],
+      "title": "흔들리고 떨어지는 하늘의 별들",
+      "ref": "마가복음 13:25",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "별과 하늘의 권세가 흔들리는 종말의 표상을 상징적 별빛과 진동하는 하늘로 보여요."
+      ],
+      "study": "별과 하늘의 권세가 흔들리는 종말의 표상을 상징적 별빛과 진동하는 하늘로 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "sky-sign",
+          "labels": [
+            "흔들리는 하늘",
+            "떨어지는 별빛",
+            "권능의 동요"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-26",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        26
+      ],
+      "title": "구름 가운데 오는 인자",
+      "ref": "마가복음 13:26",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "인자가 큰 권능과 영광으로 오는 장면은 인물을 과장해 신격화하지 않고, 구름과 빛을 통해 사람들이 바라보는 상징 연출로 구성해요."
+      ],
+      "study": "인자가 큰 권능과 영광으로 오는 장면은 인물을 과장해 신격화하지 않고, 구름과 빛을 통해 사람들이 바라보는 상징 연출로 구성해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "glory-cloud",
+          "labels": [
+            "구름 가운데 오심",
+            "큰 권능",
+            "영광을 바라보는 사람들"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-27",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        27
+      ],
+      "title": "사방에서 모이는 선택된 사람들",
+      "ref": "마가복음 13:27",
+      "actors": [
+        "천사들",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "천사들이 사방에서 선택된 사람들을 모으는 장면을 흩어진 점들이 한곳으로 모이는 지도 연출로 나타내요."
+      ],
+      "study": "천사들이 사방에서 선택된 사람들을 모으는 장면을 흩어진 점들이 한곳으로 모이는 지도 연출로 나타내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "천사들",
+        "target": "사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "천사들",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "천사들",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "천사들",
+            "duration": 1.5
+          },
+          {
+            "action": "gather",
+            "actor": "천사들",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "천사들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "천사들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "gather-call",
+          "labels": [
+            "땅 끝에서",
+            "하늘 끝까지",
+            "사방에서 모임"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-28",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        28
+      ],
+      "title": "잎이 돋는 무화과나무의 계절",
+      "ref": "마가복음 13:28",
+      "actors": [
+        "제자들"
+      ],
+      "object": "tree",
+      "narrationOnly": true,
+      "lines": [
+        "무화과나무의 가지가 부드러워지고 새잎이 나오는 변화를 살펴 여름이 가까움을 아는 비유예요."
+      ],
+      "study": "무화과나무의 가지가 부드러워지고 새잎이 나오는 변화를 살펴 여름이 가까움을 아는 비유예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "제자들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "leaf-growth",
+        "emotion": "neutral",
+        "prop": "tree",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "제자들",
+            "duration": 1
+          },
+          {
+            "action": "touch",
+            "actor": "제자들",
+            "duration": 1.2
+          },
+          {
+            "action": "show",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "제자들",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "제자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-29",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        29
+      ],
+      "title": "표징을 보고 가까움을 알아차림",
+      "ref": "마가복음 13:29",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 앞서 말한 일들이 보이면 인자가 가까이 왔음을 알아차리라고 비유를 적용하세요."
+      ],
+      "study": "예수께서 앞서 말한 일들이 보이면 인자가 가까이 왔음을 알아차리라고 비유를 적용하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "표징을 살핌",
+            "가까워짐을 깨달음",
+            "문 앞에 이르심"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-30",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        30
+      ],
+      "title": "이 세대에 이루어질 말씀",
+      "ref": "마가복음 13:30",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 자신이 말씀하신 일이 이 세대 안에 이루어질 것이라고 엄숙히 선언하세요."
+      ],
+      "study": "예수께서 자신이 말씀하신 일이 이 세대 안에 이루어질 것이라고 엄숙히 선언하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "count",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-31",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        31
+      ],
+      "title": "사라지지 않을 말씀",
+      "ref": "마가복음 13:31",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하늘과 땅이 지나가도 예수의 말씀은 사라지지 않는다는 선언을, 배경은 희미해져도 남는 글빛으로 상징해요."
+      ],
+      "study": "하늘과 땅이 지나가도 예수의 말씀은 사라지지 않는다는 선언을, 배경은 희미해져도 남는 글빛으로 상징해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "promise",
+          "labels": [
+            "지나가는 하늘과 땅",
+            "남아 있는 말씀",
+            "변하지 않는 약속"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-32",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        32
+      ],
+      "title": "그날과 그때를 아는 이는 아버지",
+      "ref": "마가복음 13:32",
+      "actors": [
+        "예수",
+        "천사들",
+        "제자들",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "천사도 아들도 그날과 때를 알지 못하고 아버지만 아신다고 말씀하세요. 하나님을 무대 위 인물로 묘사하지 않아요."
+      ],
+      "study": "천사도 아들도 그날과 때를 알지 못하고 아버지만 아신다고 말씀하세요. 하나님을 무대 위 인물로 묘사하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "천사들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "정해진 때",
+            "사람이 알 수 없음",
+            "아버지만 아심"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-13-33",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        33
+      ],
+      "title": "주의하고 깨어 있으라",
+      "ref": "마가복음 13:33",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "때를 알 수 없으므로 제자들이 졸음을 떨치고 깨어 살피도록 예수께서 당부하세요."
+      ],
+      "study": "때를 알 수 없으므로 제자들이 졸음을 떨치고 깨어 살피도록 예수께서 당부하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-34",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        34
+      ],
+      "title": "각 종에게 일을 맡기고 떠난 주인",
+      "ref": "마가복음 13:34",
+      "actors": [
+        "집주인",
+        "종들",
+        "문지기"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여행을 떠나는 집주인이 종들에게 각자 맡을 일을 나누고 문지기에게 깨어 있으라 일러요."
+      ],
+      "study": "여행을 떠나는 집주인이 종들에게 각자 맡을 일을 나누고 문지기에게 깨어 있으라 일러요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "집주인",
+        "target": "종들",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "집주인",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "집주인",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "receive",
+            "actor": "집주인",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "집주인",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-13-35",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        35
+      ],
+      "title": "저녁부터 새벽까지 깨어 기다림",
+      "ref": "마가복음 13:35",
+      "actors": [
+        "집주인",
+        "종들",
+        "문지기"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "집주인이 저녁, 한밤, 닭 울 때, 새벽 중 언제 돌아올지 모르므로 문지기와 종들이 깨어 기다려요."
+      ],
+      "study": "집주인이 저녁, 한밤, 닭 울 때, 새벽 중 언제 돌아올지 모르므로 문지기와 종들이 깨어 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "집주인",
+        "target": "종들",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "집주인",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "집주인",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "집주인",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "집주인",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-mrk-13-36",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        36
+      ],
+      "title": "갑작스러운 귀가에 잠들지 않도록",
+      "ref": "마가복음 13:36",
+      "actors": [
+        "집주인",
+        "종들",
+        "문지기"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주인이 갑자기 돌아와 종들이 잠든 모습을 보지 않도록 깨어 있으라는 경계를 이어가요."
+      ],
+      "study": "주인이 갑자기 돌아와 종들이 잠든 모습을 보지 않도록 깨어 있으라는 경계를 이어가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "집주인",
+        "target": "종들",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "집주인",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "집주인",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "집주인",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "집주인",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-mrk-13-37",
+      "code": "mrk",
+      "chapter": 13,
+      "verseNumbers": [
+        37
+      ],
+      "title": "모든 사람에게 주신 깨어 있음의 말씀",
+      "ref": "마가복음 13:37",
+      "actors": [
+        "예수",
+        "제자들",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자들에게 하신 깨어 있으라는 당부가 모든 사람에게 향함을 넓은 무리를 향한 손짓으로 마무리해요."
+      ],
+      "study": "예수께서 제자들에게 하신 깨어 있으라는 당부가 모든 사람에게 향함을 넓은 무리를 향한 손짓으로 마무리해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 13:37",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
     }
