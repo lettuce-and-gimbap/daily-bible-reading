@@ -970,6 +970,155 @@
         }
       ]
     },
+    "15": {
+      "lead": "아브라함",
+      "target": "이스마엘",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "이스마엘",
+          "duration": 1.2
+        },
+        {
+          "action": "pledge",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "이스마엘",
+          "duration": 1.8
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "이스마엘",
+          "duration": 1.2
+        }
+      ],
+      "mode": "symbolic"
+    },
+    "22": {
+      "lead": "하갈",
+      "target": "이스마엘",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "sit",
+          "actor": "하갈",
+          "duration": 1
+        },
+        {
+          "action": "mourn",
+          "actor": "하갈",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "하갈",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "하갈",
+          "duration": 1.8
+        },
+        {
+          "action": "scoop",
+          "actor": "하갈",
+          "duration": 1.5
+        },
+        {
+          "action": "extend",
+          "actor": "하갈",
+          "duration": 1.2
+        }
+      ]
+    },
+    "23": {
+      "lead": "아브라함",
+      "target": "아비멜렉",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "아비멜렉",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "extend",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "pledge",
+          "actor": "아비멜렉",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
+    },
+    "25": {
+      "lead": "아브라함",
+      "target": "이삭",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "carry",
+          "actor": "이삭",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "이삭",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "이삭",
+          "duration": 1.2
+        }
+      ]
+    },
     "28": {
       "lead": "아브라함의 종",
       "target": "아브라함",
@@ -2225,7 +2374,42 @@
       "mode": "symbolic"
     },
     "130": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "아브라함",
+      "target": "하나님",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "아브라함",
+          "duration": 1
+        },
+        {
+          "action": "reach",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "pray",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "listen",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
     },
     "131": {
       "mode": "illustration"

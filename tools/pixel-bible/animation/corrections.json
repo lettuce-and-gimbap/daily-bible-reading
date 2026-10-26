@@ -58,7 +58,8 @@
     },
     "22": {
       "actors": [
-        "하갈"
+        "하갈",
+        "이스마엘"
       ],
       "object": "well"
     },
@@ -70,7 +71,11 @@
       "object": "altar"
     },
     "25": {
-      "object": "rod"
+      "object": "rod",
+      "actors": [
+        "아브라함",
+        "이삭"
+      ]
     },
     "26": {
       "actors": [

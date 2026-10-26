@@ -5,17 +5,17 @@
   "books": [
     {
       "code": "gen",
-      "payloadSha256": "878e1ae16f3b302057f56ff7a7f1c5862125810e88150f3590d9746fbfdc1291",
+      "payloadSha256": "3ba5e94a193f0c03b69296330b4b3d1f3f51d5b0079a2f4d0065267a2c82f0c2",
       "scenes": 170,
       "existing": 170,
       "restored": 0,
       "corrected": 45,
       "planned": 170,
       "modes": {
-        "reconstruction": 131,
+        "reconstruction": 130,
+        "symbolic": 6,
         "vision": 3,
-        "illustration": 31,
-        "symbolic": 5
+        "illustration": 31
       },
       "status": "authored-awaiting-browser-review"
     },

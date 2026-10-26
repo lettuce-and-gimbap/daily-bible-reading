@@ -451,7 +451,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"covenant","lead":"아브라함","target":"이스마엘","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 17:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"covenant","lead":"아브라함","target":"이스마엘","mode":"symbolic","setting":"courtyard","effect":"none","emotion":"determined","prop":"house","beats":[{"action":"gather","actor":"아브라함","duration":1},{"action":"listen","actor":"이스마엘","duration":1.2},{"action":"pledge","actor":"아브라함","duration":1.5},{"action":"hold","actor":"이스마엘","duration":1.8},{"action":"bow","actor":"아브라함","duration":1.5},{"action":"stand","actor":"이스마엘","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 17:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-18-0",
@@ -638,7 +638,8 @@
       "chapter": 21,
       "title": "광야의 우물",
       "actors": [
-        "하갈"
+        "하갈",
+        "이스마엘"
       ],
       "object": "well",
       "ref": "창세기 21:15-21",
@@ -659,7 +660,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"well","lead":"하갈","target":null,"mode":"reconstruction","setting":"desert","effect":"well","emotion":"determined","prop":"well","beats":[{"action":"look","duration":1,"actor":"하갈"},{"action":"bend","duration":1.2,"actor":"하갈"},{"action":"dig","duration":1.5,"actor":"하갈"},{"action":"dig","duration":1.8,"actor":"하갈"},{"action":"rise","duration":1.5,"actor":"하갈"},{"action":"inspect","duration":1.2,"actor":"하갈"}],"duration":8.2,"support":null,"ref":"창세기 21:15-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"well","lead":"하갈","target":"이스마엘","mode":"reconstruction","setting":"desert","effect":"none","emotion":"determined","prop":"well","beats":[{"action":"sit","actor":"하갈","duration":1},{"action":"mourn","actor":"하갈","duration":1.2},{"action":"listen","actor":"하갈","duration":1.5},{"action":"look","actor":"하갈","duration":1.8},{"action":"scoop","actor":"하갈","duration":1.5},{"action":"extend","actor":"하갈","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 21:15-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-21-3",
@@ -695,7 +696,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"agreement","lead":"아브라함","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"well","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"},{"action":"extend","duration":1.5,"actor":"아브라함"},{"action":"pledge","duration":1.8,"actor":"아브라함"},{"action":"read","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 21:22-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"agreement","lead":"아브라함","target":"아비멜렉","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"well","beats":[{"action":"speak","actor":"아브라함","duration":1},{"action":"listen","actor":"아비멜렉","duration":1.2},{"action":"gather","actor":"아브라함","duration":1.5},{"action":"extend","actor":"아브라함","duration":1.8},{"action":"pledge","actor":"아비멜렉","duration":1.5},{"action":"pray","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 21:22-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-22-0",
@@ -749,7 +750,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"journey","lead":"아브라함","target":"이삭","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"rod","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"gather","duration":1.2,"actor":"아브라함"},{"action":"carry","duration":1.5,"actor":"아브라함"},{"action":"walk","duration":1.8,"actor":"아브라함"},{"action":"walk","duration":1.5,"actor":"아브라함"},{"action":"look","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 22:3-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"아브라함","target":"이삭","mode":"reconstruction","setting":"road","effect":"none","emotion":"determined","prop":"rod","beats":[{"action":"gather","actor":"아브라함","duration":1},{"action":"carry","actor":"이삭","duration":1.2},{"action":"walk","actor":"아브라함","duration":1.5},{"action":"speak","actor":"이삭","duration":1.8},{"action":"speak","actor":"아브라함","duration":1.5},{"action":"walk","actor":"이삭","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 22:3-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-22-2",
@@ -4188,7 +4189,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"petition","lead":"하나님","target":"아브라함","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"kneel","duration":1.2,"actor":"하나님"},{"action":"lift","duration":1.5,"actor":"하나님"},{"action":"pray","duration":1.8,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 18:20-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"아브라함","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"scene-marker","beats":[{"action":"stand","actor":"아브라함","duration":1},{"action":"reach","actor":"아브라함","duration":1.2},{"action":"pray","actor":"아브라함","duration":1.5},{"action":"speak","actor":"하나님","duration":1.8},{"action":"listen","actor":"아브라함","duration":1.5},{"action":"pray","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 18:20-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-36-0",
