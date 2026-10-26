@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1322);assert.equal(c.curatedSupplementalScenes,608);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),608);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1324);assert.equal(c.curatedSupplementalScenes,610);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),610);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -35,7 +35,7 @@ test('사무엘하의 언약·반란·화해 흐름과 므비보셋 양방향 �
 });
 
 test('열왕기상에 빠진 왕위 위기·지혜 재판·예언 사건과 엘리야·엘리사 상호 장면을 보강한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'1ki.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-1ki-extra-'));assert.equal(added.length,37);
+ const data=JSON.parse(fs.readFileSync(root+'1ki.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-1ki-extra-'));assert.equal(added.length,39);
  for(const title of ['아도니야의 왕위 찬탈 시도','아이의 어머니를 가려낸 재판','벧엘과 단의 금송아지','과부의 아들이 살아나다','나봇의 포도원을 거절함','미가야가 본 전쟁의 환상'])assert(added.some(s=>s.title===title),title);
  const scene=data.scenes.find(s=>s.id==='ot-voice-22');assert.deepEqual(scene.actors,['엘리야','엘리사']);assert.equal(Object.keys(scene.actorLines).length,2);assert(OBJECT_CATALOG.idol);
 });
@@ -438,6 +438,13 @@ test('1sa 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('2sa 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'2sa.json')),titles=["왕궁의 쇠락과 므비보셋의 사고","왕국의 질서를 세운 다윗","아히도벨의 마지막","압살롬을 살리라는 다윗의 명령","바르실래의 배웅과 귀환을 둘러싼 다툼","아마사의 지체와 요압의 추격","다윗의 마지막 말과 의로운 통치의 이상"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2sa.json'));assert.equal(added.length,7);
+ for(const title of titles)assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('1ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'1ki.json')),titles=["성전 건축을 위한 부역과 준비","성전 내부를 완성하다"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/1ki.json'));assert.equal(added.length,2);
  for(const title of titles)assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
