@@ -1317,7 +1317,41 @@
       "mode": "reconstruction"
     },
     "80": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "carry",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "run",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "halt",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
     },
     "81": {
       "mode": "reconstruction",
@@ -2313,6 +2347,154 @@
       "mode": "reconstruction",
       "lead": "요셉",
       "target": "형들"
+    },
+    "166": {
+      "mode": "reconstruction",
+      "lead": "라반",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "라반",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "라반",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "라반",
+          "duration": 1.5
+        },
+        {
+          "action": "inspect",
+          "actor": "라반",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "라반",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "라반",
+          "duration": 1.2
+        }
+      ]
+    },
+    "167": {
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "startle",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "lower",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "168": {
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "lift",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "place",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "pledge",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "pray",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "eat",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "169": {
+      "mode": "reconstruction",
+      "lead": "라반",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "reach",
+          "actor": "라반",
+          "duration": 1
+        },
+        {
+          "action": "hold",
+          "actor": "라반",
+          "duration": 1.2
+        },
+        {
+          "action": "bless",
+          "actor": "라반",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "라반",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "라반",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "라반",
+          "duration": 1.2
+        }
+      ]
     }
   },
   "exo": {

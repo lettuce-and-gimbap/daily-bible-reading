@@ -5,14 +5,14 @@
   "books": [
     {
       "code": "gen",
-      "payloadSha256": "9558aae0b05f82aeef0215ecd29786bc8e0e20aa5e88693d1c39fdce416589d8",
-      "scenes": 166,
-      "existing": 166,
+      "payloadSha256": "c888780b6f414cfec2903cc5e40cad6d57e1698b6124873d1ab28f59cef32c1c",
+      "scenes": 170,
+      "existing": 170,
       "restored": 0,
       "corrected": 40,
-      "planned": 166,
+      "planned": 170,
       "modes": {
-        "reconstruction": 127,
+        "reconstruction": 131,
         "vision": 3,
         "illustration": 32,
         "symbolic": 4

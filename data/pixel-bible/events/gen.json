@@ -2495,7 +2495,7 @@
       "id": "ot-gen-extra-31-0",
       "code": "gen",
       "chapter": 31,
-      "title": "라헬이 드라빔을 숨기고 야곱이 라반과 언약하다",
+      "title": "야곱의 가족이 떠나고 라반이 뒤쫓다",
       "actors": [
         "야곱",
         "라반",
@@ -2503,7 +2503,7 @@
         "레아"
       ],
       "object": "scene-marker",
-      "ref": "창세기 31:17-55",
+      "ref": "창세기 31:17-24",
       "verseNumbers": [
         17,
         18,
@@ -2512,48 +2512,17 @@
         21,
         22,
         23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55
+        24
       ],
       "actions": {},
       "lines": [
-        "해설: 야곱 가족이 몰래 떠나고 라반이 뒤쫓아요. 드라빔을 찾은 뒤 두 사람은 돌무더기를 세워 경계를 약속해요."
+        "해설: 야곱의 가족이 몰래 떠나고 라헬은 드라빔을 가져가요. 라반이 뒤쫓지만 하나님은 꿈에서 야곱을 해하지 않도록 경고하세요."
       ],
-      "study": "야곱 가족이 몰래 떠나고 라반이 뒤쫓아요. 드라빔을 찾은 뒤 두 사람은 돌무더기를 세워 경계를 약속해요.",
+      "study": "야곱의 가족이 몰래 떠나고 라헬은 드라빔을 가져가요. 라반이 뒤쫓지만 하나님은 꿈에서 야곱을 해하지 않도록 경고하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"covenant","lead":"야곱","target":"라반","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"},{"action":"extend","duration":1.5,"actor":"야곱"},{"action":"pledge","duration":1.8,"actor":"야곱"},{"action":"read","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 31:17-55","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"covenant","lead":"야곱","target":"라반","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"scene-marker","beats":[{"action":"gather","actor":"야곱","duration":1},{"action":"carry","actor":"야곱","duration":1.2},{"action":"walk","actor":"야곱","duration":1.5},{"action":"run","actor":"야곱","duration":1.8},{"action":"look","actor":"야곱","duration":1.5},{"action":"halt","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-46-0",
@@ -5429,6 +5398,132 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"oath","lead":"요셉","target":"형들","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"pledge","duration":1.8,"actor":"요셉"},{"action":"read","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 50:22-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-31-2",
+      "code": "gen",
+      "chapter": 31,
+      "title": "라반이 야곱의 장막들을 수색하다",
+      "actors": [
+        "라반",
+        "야곱",
+        "라헬",
+        "레아"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 31:25-35",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 라반이 떠난 이유와 드라빔을 묻고 장막들을 수색해요. 라헬은 안장 아래 숨긴 물건 위에 앉아 있고 라반은 찾지 못해요."
+      ],
+      "study": "라반이 떠난 이유와 드라빔을 묻고 장막들을 수색해요. 라헬은 안장 아래 숨긴 물건 위에 앉아 있고 라반은 찾지 못해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"discover","lead":"라반","target":"야곱","mode":"reconstruction","setting":"chamber","effect":"none","emotion":"surprised","prop":"scene-marker","beats":[{"action":"speak","actor":"라반","duration":1},{"action":"point","actor":"라반","duration":1.2},{"action":"walk","actor":"라반","duration":1.5},{"action":"inspect","actor":"라반","duration":1.8},{"action":"look","actor":"라반","duration":1.5},{"action":"turn","actor":"라반","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:25-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-31-3",
+      "code": "gen",
+      "chapter": 31,
+      "title": "야곱이 라반에게 지난 수고를 항변하다",
+      "actors": [
+        "야곱",
+        "라반"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 31:36-42",
+      "verseNumbers": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 수색이 끝나자 야곱이 분노하며 20년의 수고와 바뀐 품삯, 하나님의 보호를 말해요."
+      ],
+      "study": "수색이 끝나자 야곱이 분노하며 20년의 수고와 바뀐 품삯, 하나님의 보호를 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"야곱","target":"라반","mode":"reconstruction","setting":"court","effect":"none","emotion":"angry","prop":"scene-marker","beats":[{"action":"startle","actor":"야곱","duration":1},{"action":"point","actor":"야곱","duration":1.2},{"action":"speak","actor":"야곱","duration":1.5},{"action":"speak","actor":"야곱","duration":1.8},{"action":"lower","actor":"야곱","duration":1.5},{"action":"hold","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:36-42","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-31-4",
+      "code": "gen",
+      "chapter": 31,
+      "title": "야곱과 라반이 돌무더기 앞에서 경계를 약속하다",
+      "actors": [
+        "야곱",
+        "라반"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 31:43-54",
+      "verseNumbers": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱이 돌기둥을 세우고 사람들이 돌을 모아요. 라반과 야곱은 서로 해치러 경계를 넘지 않겠다고 약속하고 제사와 식사를 나누어요."
+      ],
+      "study": "야곱이 돌기둥을 세우고 사람들이 돌을 모아요. 라반과 야곱은 서로 해치러 경계를 넘지 않겠다고 약속하고 제사와 식사를 나누어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"agreement","lead":"야곱","target":"라반","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"scene-marker","beats":[{"action":"lift","actor":"야곱","duration":1},{"action":"place","actor":"야곱","duration":1.2},{"action":"gather","actor":"야곱","duration":1.5},{"action":"pledge","actor":"야곱","duration":1.8},{"action":"pray","actor":"야곱","duration":1.5},{"action":"eat","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:43-54","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-31-5",
+      "code": "gen",
+      "chapter": 31,
+      "title": "라반이 딸들과 손자들에게 작별을 고하다",
+      "actors": [
+        "라반",
+        "라헬",
+        "레아"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 31:55",
+      "verseNumbers": [
+        55
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 라반은 아침에 손자들과 딸들에게 입맞추고 복을 빈 뒤 고향으로 돌아가요."
+      ],
+      "study": "라반은 아침에 손자들과 딸들에게 입맞추고 복을 빈 뒤 고향으로 돌아가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"blessing","lead":"라반","target":"라헬","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"reach","actor":"라반","duration":1},{"action":"hold","actor":"라반","duration":1.2},{"action":"bless","actor":"라반","duration":1.5},{"action":"turn","actor":"라반","duration":1.8},{"action":"walk","actor":"라반","duration":1.5},{"action":"walk","actor":"라반","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 31:55","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
