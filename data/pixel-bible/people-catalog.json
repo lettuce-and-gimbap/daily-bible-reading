@@ -4,11 +4,11 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2271,
+    "sourceLabels": 2269,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2580,
+      "unresolved": 2578,
       "group": 244,
       "person": 109,
       "animal": 8,
@@ -5422,27 +5422,6 @@
           "status": "needs-review",
           "refs": [
             "jer.36"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "그모스",
-      "roles": [
-        "모압이 섬긴 우상"
-      ],
-      "refs": [
-        "jer.48"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:그모스:jer",
-          "status": "needs-review",
-          "refs": [
-            "jer.48"
           ]
         }
       ]
@@ -62896,30 +62875,6 @@
           "status": "needs-review",
           "refs": [
             "2sa.10"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "하늘 여왕",
-      "roles": [
-        "가족이 섬긴 우상",
-        "백성이 섬긴 우상"
-      ],
-      "refs": [
-        "jer.7",
-        "jer.44"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:하늘 여왕:jer",
-          "status": "needs-review",
-          "refs": [
-            "jer.7",
-            "jer.44"
           ]
         }
       ]

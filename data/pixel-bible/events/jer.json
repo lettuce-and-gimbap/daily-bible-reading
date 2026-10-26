@@ -13217,10 +13217,9 @@
       "chapter": 48,
       "title": "무너지는 모압",
       "actors": [
-        "모압",
-        "그모스"
+        "모압"
       ],
-      "object": "scroll",
+      "object": "idol",
       "ref": "예레미야 48:1-10",
       "verseNumbers": [
         1,
@@ -13246,12 +13245,12 @@
         "version": 2,
         "motif": "warning",
         "lead": "모압",
-        "target": "그모스",
+        "target": null,
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
         "emotion": "neutral",
-        "prop": "scroll",
+        "prop": "idol",
         "beats": [
           {
             "action": "listen",

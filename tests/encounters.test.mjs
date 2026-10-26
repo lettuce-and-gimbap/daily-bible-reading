@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3841);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3837);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -618,6 +618,93 @@ test('이사야 1–66장의 관계 대화는 해당 장의 인물과 본문 관
  assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=56).length,11);
  assert.equal(entries.some(entry=>entry.speaker==='하나님'||entry.target==='하나님'),false,'인물 상호작용에서 제외된 하나님 단독 관계선은 짝 대사로 넣지 않는다');
  for(const chapter of [4,7,8,9])assert.equal(summary.chapters[chapter].rels.some(relation=>['여호와의 싹','르말리야','마헬살랄하스바스','한 아기'].includes(relation.from)||['여호와의 싹','르말리야','마헬살랄하스바스','한 아기'].includes(relation.to)),false);
+});
+
+test('예레미야 1–12장의 인간 관계선은 본문 상황에 맞는 왕복 대사로 연결하고 우상은 인물에서 제외한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jer.json'));
+ const chapters=Object.entries(summary.chapters).slice(0,12).map(([chap,data])=>({code:'jer',name:'예레미야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^jer\.(?:[1-9]|1[01]|12)$/.test(entry.chapter));
+ assert.equal(context.relations.length,17);
+ assert.equal(entries.length,17);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`jer.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));
+  const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
+  assert.match(entry.ref,/예레미야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(summary.chapters[7].people.some(person=>person.name==='하늘 여왕'),false);
+ assert.equal(summary.chapters[7].rels.some(relation=>relation.from==='하늘 여왕'||relation.to==='하늘 여왕'),false);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-11-anathoth-jeremiah').detail,/위협/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-12-family-jeremiah').detail,/기록되지 않습니다/);
+});
+
+test('예레미야 13–25장의 심판 경고·왕실·박해 장면은 인물 관계선에 맞게 주고받고 시대 대비는 창작임을 밝힌다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jer.json'));
+ const chapters=Object.entries(summary.chapters).slice(12,25).map(([chap,data])=>({code:'jer',name:'예레미야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^jer\.(?:1[3-9]|2[0-5])$/.test(entry.chapter));
+ assert.equal(context.relations.length,17);
+ assert.equal(entries.length,16,'예레미야 20장의 같은 쌍을 향한 상반된 두 관계선을 한 대화로 다룬다');
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`jer.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));
+  const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
+  assert.match(entry.ref,/예레미야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.match(entries.find(entry=>entry.id==='pair-jer-22-jehoiakim-josiah').detail,/같은 장면에서 대화하지 않으므로/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-20-friends-jeremiah').detail,/직접 대화는 기록되지 않아/);
+});
+
+test('예레미야 26–40장의 재판·포로 편지·두루마리·함락 장면은 모든 인간 관계선에 연결한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jer.json'));
+ const chapters=Object.entries(summary.chapters).slice(25,40).map(([chap,data])=>({code:'jer',name:'예레미야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^jer\.(?:2[6-9]|3\d|40)$/.test(entry.chapter));
+ assert.equal(context.relations.length,45);
+ assert.equal(entries.length,43,'같은 사건의 반대 방향 관계선은 한 왕복 대화로 묶는다');
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`jer.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));
+  const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
+  assert.match(entry.ref,/예레미야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(summary.chapters[26].people.some(person=>person.name==='사반'),false,'이 사건 장면에 등장하지 않는 사반은 월드 인물에서 뺀다');
+ assert.match(entries.find(entry=>entry.id==='pair-jer-38-ebedmelech-jeremiah').lines[1],/줄과 낡은 옷/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-40-johanan-gedaliah').replyLines[0],/사실이 아니오/);
+});
+
+test('예레미야 41–52장의 암살·이집트 피신·열방 심판·포로 귀환을 대화로 연결하고 우상을 인물에서 뺀다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/jer.json'));
+ const chapters=Object.entries(summary.chapters).slice(40,52).map(([chap,data])=>({code:'jer',name:'예레미야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>/^jer\.(?:4[1-9]|5[0-2])$/.test(entry.chapter));
+ assert.equal(context.relations.length,25);
+ assert.equal(entries.length,23,'42장과 52장의 상반된 관계 방향을 각각 한 문답으로 합친다');
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`jer.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));
+  const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
+  assert.match(entry.ref,/예레미야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ for(const chapter of [44,48]){
+  assert.equal(summary.chapters[chapter].people.some(person=>['하늘 여왕','그모스'].includes(person.name)),false);
+  assert.equal(summary.chapters[chapter].rels.some(relation=>['하늘 여왕','그모스'].includes(relation.from)||['하늘 여왕','그모스'].includes(relation.to)),false);
+ }
+ assert.match(entries.find(entry=>entry.id==='pair-jer-42-johanan-jeremiah').detail,/불순종/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-52-evilmerodach-jehoiachin').lines[1],/식탁/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

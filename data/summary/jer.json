@@ -187,14 +187,12 @@
         {"name":"예레미야","role":"성전 문에 선 선지자","weight":3},
         {"name":"유다 백성","role":"성전을 강도의 소굴로 만든 이들","weight":3},
         {"name":"나그네와 고아와 과부","role":"압제받는 약자","weight":1},
-        {"name":"하늘 여왕","role":"가족이 섬긴 우상","weight":1},
         {"name":"하나님","role":"순종을 원하시는 분","weight":3}
       ],
       "rels": [
         {"from":"하나님","to":"예레미야","label":"성전 문에 세움","kind":"ally","directed":true,"weight":3,"verses":"2","note":"하나님은 예레미야를 성전 문 앞에 세워 예배하러 오는 사람들에게 말씀을 외치게 하세요."},
         {"from":"유다 백성","to":"하나님","label":"거짓으로 기댄 백성","kind":"conflict","directed":true,"weight":3,"verses":"4, 9-10","note":"백성은 성전만 있으면 안전하다고 믿고, 온갖 악을 저지른 뒤에도 와서 우리는 안전하다고 말했어요. 성전이 있으니 괜찮다고 믿은 거예요."},
-        {"from":"유다 백성","to":"나그네와 고아와 과부","label":"압제한 자","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"나그네와 고아와 과부를 억누르지 말고 죄 없는 사람을 죽이지 말라고 하셨어요. 백성은 도둑질하고 살인하는 악을 저질렀어요."},
-        {"from":"유다 백성","to":"하늘 여왕","label":"섬긴 우상","kind":"other","directed":true,"weight":1,"verses":"18","note":"아이들이 나무를 줍고 아버지가 불을 피우고 여인들이 하늘 여신에게 바칠 빵을 만들었어요. 온 가족이 함께 우상을 섬긴 거예요."}
+        {"from":"유다 백성","to":"나그네와 고아와 과부","label":"압제한 자","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"나그네와 고아와 과부를 억누르지 말고 죄 없는 사람을 죽이지 말라고 하셨어요. 백성은 도둑질하고 살인하는 악을 저질렀어요."}
       ],
       "places": [
         {"name":"성전 문","where":"예루살렘 성전 입구","what":"예레미야가 설교를 외친 예루살렘 성전 입구예요.","weight":3},
@@ -718,16 +716,14 @@
         {"name":"미가","role":"히스기야 때의 선지자","weight":1},
         {"name":"우리야","role":"여호야김에게 죽은 선지자","weight":2},
         {"name":"여호야김","role":"우리야를 죽인 왕","weight":2},
-        {"name":"아히감","role":"예레미야를 보호한 사반의 아들","weight":2},
-        {"name":"사반","role":"아히감의 아버지","weight":1}
+        {"name":"아히감","role":"예레미야를 보호한 사반의 아들","weight":2}
       ],
       "rels": [
         {"from":"제사장과 선지자들","to":"예레미야","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"8, 11","note":"예레미야가 말을 마치자 제사장들과 예언자들이 그를 붙잡고 너는 반드시 죽어야 한다고 했어요."},
         {"from":"장로들","to":"예레미야","label":"변호한 이들","kind":"ally","directed":true,"weight":2,"verses":"17-19","note":"장로 몇 사람이 히스기야가 예언자 미가를 죽이지 않고 하나님께 간구하여 재앙을 거둔 일을 들어 예레미야를 변호했어요."},
         {"from":"아히감","to":"예레미야","label":"보호한 이","kind":"ally","directed":true,"weight":3,"verses":"24","note":"사반의 아들 아히감이 예레미야를 감싸 백성의 손에 넘기지 않아 죽음을 면했어요."},
         {"from":"여호야김","to":"우리야","label":"죽인 왕","kind":"conflict","directed":true,"weight":2,"verses":"20-23","note":"같은 말을 예언한 우리야는 이집트로 도망갔지만 여호야김이 사람을 보내 붙잡아 와 칼로 죽였어요."},
-        {"from":"고관들","to":"예레미야","label":"무죄 판단","kind":"ally","directed":true,"weight":2,"verses":"16","note":"고관들과 백성은 예레미야가 하나님의 이름으로 말했으니 죽일 이유가 없다고 판단했어요."},
-        {"from":"아히감","to":"사반","label":"아들","kind":"family","directed":false,"weight":2,"verses":"24","note":"아히감은 사반의 아들이었어요. 그는 예레미야를 보호해 처형되지 않게 했고, 사반 집안은 요시야 시대부터 왕실과 성전에서 중요한 역할을 했어요.","adminOnly":true}
+        {"from":"고관들","to":"예레미야","label":"무죄 판단","kind":"ally","directed":true,"weight":2,"verses":"16","note":"고관들과 백성은 예레미야가 하나님의 이름으로 말했으니 죽일 이유가 없다고 판단했어요."}
       ],
       "places": [
         {"name":"성전 뜰","where":"예루살렘 하나님의 집","what":"예레미야가 설교한 여호와의 집 뜰이에요.","weight":3},
@@ -1244,13 +1240,11 @@
         {"name":"예레미야","role":"애굽에서도 말씀을 전한 선지자","weight":3},
         {"name":"애굽의 유다인들","role":"하늘 여왕을 섬긴 이들","weight":3},
         {"name":"유다 여인들","role":"분향을 고집한 여자들","weight":2},
-        {"name":"하늘 여왕","role":"백성이 섬긴 우상","weight":1},
         {"name":"바로 호브라","role":"원수에게 넘겨질 애굽 왕","weight":1},
         {"name":"하나님","role":"분향을 기억하신 분","weight":3}
       ],
       "rels": [
         {"from":"애굽의 유다인들","to":"예레미야","label":"듣지 않은 이들","kind":"conflict","directed":true,"weight":3,"verses":"16-17","note":"이집트로 간 유다 사람들은 여호와의 이름으로 한 말이라도 듣지 않겠다고 했어요."},
-        {"from":"애굽의 유다인들","to":"하늘 여왕","label":"섬긴 우상","kind":"other","directed":true,"weight":2,"verses":"17-19","note":"그들은 우리가 하늘 여왕에게 분향하던 때에 먹을 것이 풍성했다며 우상 숭배를 계속하겠다고 했어요."},
         {"from":"하나님","to":"애굽의 유다인들","label":"심판하실 분","kind":"conflict","directed":true,"weight":3,"verses":"27","note":"하나님은 이집트의 유다 사람들에게 복이 아니라 재앙을 위해 깨어 지켜보겠다고 하세요."},
         {"from":"하나님","to":"바로 호브라","label":"넘기실 분","kind":"conflict","directed":true,"weight":1,"verses":"30","note":"시드기야를 느부갓네살에게 넘긴 것처럼 이집트 왕 바로 호브라를 그를 죽이려는 원수의 손에 넘기겠다고 하세요."}
       ],
@@ -1344,14 +1338,12 @@
       ],
       "people": [
         {"name":"모압","role":"교만하게 굳은 나라","weight":3},
-        {"name":"그모스","role":"모압이 섬긴 우상","weight":2},
         {"name":"예레미야","role":"모압을 위해 슬퍼한 선지자","weight":2},
         {"name":"모압의 제사장과 고관","role":"함께 끌려갈 이들","weight":1},
         {"name":"하나님","role":"심판하시되 회복하실 분","weight":3}
       ],
       "rels": [
         {"from":"하나님","to":"모압","label":"교만을 쏟으실 분","kind":"conflict","directed":true,"weight":3,"verses":"29-30, 42","note":"모압은 여호와를 향해 몹시 교만해 스스로 높아졌어요. 하나님이 병을 기울여 비우고 깨뜨리듯 심판하세요."},
-        {"from":"모압","to":"그모스","label":"의지한 우상","kind":"other","directed":true,"weight":2,"verses":"7, 13","note":"모압은 자기 업적과 재물을 믿고 신 그모스를 의지했지만 그모스도 포로로 끌려가요."},
         {"from":"예레미야","to":"모압","label":"슬퍼한 선지자","kind":"ally","directed":true,"weight":2,"verses":"31-32","note":"하나님이 모압과 길헤레스 사람을 위해 우신다는 말씀을 예레미야가 전했어요."},
         {"from":"하나님","to":"모압","label":"말일에 돌려보내심","kind":"ally","directed":true,"weight":1,"verses":"47","note":"그래도 하나님은 마지막 날에 모압의 포로를 돌려보내 회복시키겠다고 하세요."}
       ],

@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "jer",
-    "nextBook": "jer",
-    "booksCompleted": 23,
+    "currentBook": "lam",
+    "nextBook": "lam",
+    "booksCompleted": 24,
     "completedBooks": [
       "gen",
       "exo",
@@ -320,29 +320,30 @@
       "pro",
       "ecc",
       "sng",
-      "isa"
+      "isa",
+      "jer"
     ],
-    "chaptersReviewed": 749,
-    "relationshipLinksReviewed": 2555,
-    "authoredPairEntriesReviewed": 633,
+    "chaptersReviewed": 801,
+    "relationshipLinksReviewed": 2659,
+    "authoredPairEntriesReviewed": 732,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
-      "interactionLinks": 3841,
-      "authoredLinks": 669,
-      "relationshipGeneratedLinks": 3172,
+      "interactionLinks": 3837,
+      "authoredLinks": 773,
+      "relationshipGeneratedLinks": 3064,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "이사야 66장 전체를 완료했다. 누계 749장, 관계 후보 2,555개, 완료 권수 23권이다. 이사야 1–66장의 실제 인물 관계선 81개를 80개 대화 묶음으로 모두 연결했고, 미연결 관계는 없다. 도시·우상 물체를 사람 간 조우로 처리하던 연결을 바로잡았고, 직접 대화가 없는 예언적 장면은 재구성이라고 표시했다. 다음 책은 예레미야이며 1장부터 시작한다.",
+    "statusNote": "예레미야 1–52장 전체 검토를 마쳤다. 누계 801장, 관계 후보 2,659개, 작성·확인한 대화 묶음 732개이며 완료 권수는 24권이다. 예레미야의 사람 간 상호작용 후보 104개를 빠짐없이 왕복 대사로 연결했고, 서로 반대 방향인 관계선은 한 문답으로 묶은 경우가 있다. 하늘 여왕과 그모스는 인물 대사 상대가 아닌 예배 대상이라 사람 목록과 조우 관계선에서 제거했다. 본문에 직접 기록되지 않은 대화나 예언적 의인화는 각 항목에 재구성임을 표시했다. 전체 1,189장 중 상호작용 후보 3,837개가 있고, 773개는 작성 대사, 3,064개는 관계 기반 대사로 연결되어 있다. 다음 책은 예레미야애가 1장이다.",
     "partialBookAudit": {
-      "book": "isa",
-      "chaptersScanned": 66,
-      "relationshipLinksFound": 236,
-      "authoredPairEntriesAddedAndChecked": 80,
-      "authoredLinksCovered": 81,
+      "book": "jer",
+      "chaptersScanned": 52,
+      "relationshipLinksFound": 104,
+      "authoredPairEntriesAddedAndChecked": 99,
+      "authoredLinksCovered": 104,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 12,
+      "nonDialogueLinksRemoved": 4,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
@@ -397,23 +398,9 @@
         49,
         50,
         51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66
+        52
       ],
-      "statusNote": "이사야 1–66장 전체를 순서대로 확인했다. 관계 후보 236개를 대조했고 실제 인물 관계선 81개를 80개 양방향 대화 묶음에 연결했다. 예언 속 재구성과 직접 대화를 구분하고, 도시·우상 물체를 인물 조우로 처리하던 관계를 정리했다. 다음은 예레미야 1장이다."
+      "statusNote": "예레미야 1–52장 검토 완료. 104개 인간 상호작용 후보를 99개 왕복 대화 묶음으로 모두 연결했다. 중복 방향선은 한 장면 대화로 합쳤으며, 비인물 예배 대상 2건과 장면 밖 가족 인물 1건 등 부적절한 조우 연결 4개를 제거했다. 다음 책은 예레미야애가다."
     }
   }
 }
