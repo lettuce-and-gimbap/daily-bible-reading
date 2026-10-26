@@ -5,6 +5,7 @@ import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.
 import {ambientSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
 import {relationshipLines} from '../js/features/pixel-bible/relationship-lines.js';
+import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 
 function fixture(){
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:[{name:'아합',role:'포도원을 원한 왕'},{name:'나봇',role:'유산을 지킨 포도원 주인'}],rels:[{from:'아합',to:'나봇',label:'포도원 요구',verses:'1-4',note:'아합이 포도원을 원했지만 나봇은 조상의 유산을 넘기지 않았어요.'}]}}];
@@ -67,6 +68,32 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
   assert.equal(line.detailText,`${relation.text} (${relation.ref})`);
   assert.equal(line.ref,relation.ref);
   assert.ok(!line.text.includes(relation.text));
+ }
+});
+
+test('관계 대화의 두 화자는 같은 대화 후보 번호를 공유하고 서로 응답한다',()=>{
+ const a={name:'아합',identity:{id:'ahab'}},b={name:'나봇',identity:{id:'naboth'}};
+ const relation={from:{code:'1ki',chap:21},to:{code:'1ki',chap:21},text:'아합은 포도원을 원했고 나봇은 조상의 유산이라며 거절했습니다.',ref:'열왕기상 21:1–3'};
+ for(const [random,index] of [[()=>0,0],[()=>.99,1]]){
+  const lines=relationshipLines(a,b,relation,new Map(),{random});
+  assert.equal(lines.length,2);assert.ok(lines.every(line=>line.pairIndex===index));
+  if(index===0){assert.match(lines[0].text,/포도원/);assert.match(lines[1].text,/조상|유산/);}
+  else {assert.match(lines[0].text,/값|생각/);assert.match(lines[1].text,/땅|유산/);}
+ }
+});
+
+test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 명시 응답이 있다',()=>{
+ for(const entry of PAIR_DIALOGUE){
+  const reverse=PAIR_DIALOGUE.find(other=>other.chapter===entry.chapter&&other.speaker===entry.target&&other.target===entry.speaker);
+  assert.ok(reverse||entry.replyLines?.length===entry.lines.length,`${entry.id} (${entry.speaker} → ${entry.target})에 응답이 없음`);
+  for(const index of [0,1]){
+   const relation={from:{code:entry.chapter.split('.')[0],chap:Number(entry.chapter.split('.')[1])},to:{},text:'같은 장면의 두 인물',ref:entry.ref};
+   const lines=relationshipLines({name:entry.speaker},{name:entry.target},relation,new Map(),{random:()=>index?0.99:0});
+   assert.equal(lines.length,2,`${entry.id} 대사가 독백으로 분리됨`);
+   assert.equal(lines[0].text,entry.lines[index],`${entry.id} 첫 발화 후보가 맞지 않음`);
+   assert.equal(lines[1].text,reverse?.lines[index]||entry.replyLines?.[index],`${entry.id} 응답 후보가 맞지 않음`);
+   assert.ok(lines.every(line=>line.pairIndex===index));
+  }
  }
 });
 
