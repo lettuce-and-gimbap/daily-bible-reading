@@ -485,5 +485,22 @@
     "6": {
       "mode": "illustration"
     }
+  },
+  "hag": {
+    "1": {
+      "mode": "reconstruction"
+    },
+    "2": {
+      "mode": "reconstruction"
+    },
+    "3": {
+      "mode": "reconstruction"
+    },
+    "4": {
+      "mode": "illustration"
+    },
+    "5": {
+      "mode": "illustration"
+    }
   }
 }

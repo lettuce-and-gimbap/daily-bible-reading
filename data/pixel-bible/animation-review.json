@@ -501,14 +501,15 @@
     },
     {
       "code": "hag",
-      "payloadSha256": "ef253493d1e24134a9cde786ec234ccc67b8c9301416361a95d175e9e2a06b84",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "9a960ae1723331b31c9c066f3819fb911226704346a0dd5d195df83221b7d96c",
+      "scenes": 6,
+      "existing": 6,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 6,
       "modes": {
-        "reconstruction": 1
+        "reconstruction": 4,
+        "illustration": 2
       },
       "status": "authored-awaiting-browser-review"
     },
