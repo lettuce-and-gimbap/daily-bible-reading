@@ -7086,6 +7086,2346 @@
         "ref": "누가복음 2:20",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
+    },
+    {
+      "id": "verse-luk-2-21",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        21
+      ],
+      "title": "이름을 예수라 부름",
+      "ref": "누가복음 2:21",
+      "actors": [
+        "요셉",
+        "마리아",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "8일째 할례를 행하고 천사가 알려 준 이름으로 불러요."
+      ],
+      "study": "8일째 할례를 행하고 천사가 알려 준 이름으로 불러요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "cradle",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-22",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        22
+      ],
+      "title": "예루살렘으로 데려감",
+      "ref": "누가복음 2:22",
+      "actors": [
+        "요셉",
+        "마리아",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "정결 예식 때가 되어 부모가 아기를 데리고 예루살렘에 올라가요."
+      ],
+      "study": "정결 예식 때가 되어 부모가 아기를 데리고 예루살렘에 올라가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "carry",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "halt",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-23",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        23
+      ],
+      "title": "처음 난 아들을 드림",
+      "ref": "누가복음 2:23",
+      "actors": [
+        "요셉",
+        "마리아",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "율법의 말씀에 따라 첫아들을 주께 드려요."
+      ],
+      "study": "율법의 말씀에 따라 첫아들을 주께 드려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "carry",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-24",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        24
+      ],
+      "title": "비둘기 제물을 준비함",
+      "ref": "누가복음 2:24",
+      "actors": [
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "율법에 따른 비둘기 제물을 마련해 드려요."
+      ],
+      "study": "율법에 따른 비둘기 제물을 마련해 드려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "retrieve",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "carry",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-25",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        25
+      ],
+      "title": "위로를 기다리는 시므온",
+      "ref": "누가복음 2:25",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "경건한 시므온이 이스라엘의 위로를 기다려요."
+      ],
+      "study": "경건한 시므온이 이스라엘의 위로를 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-26",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        26
+      ],
+      "title": "그리스도를 보리라는 약속",
+      "ref": "누가복음 2:26",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시므온이 그리스도를 보기 전에는 죽지 않으리라는 성령의 지시를 받아요."
+      ],
+      "study": "시므온이 그리스도를 보기 전에는 죽지 않으리라는 성령의 지시를 받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-27",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        27
+      ],
+      "title": "성전에서 만난 부모와 아기",
+      "ref": "누가복음 2:27",
+      "actors": [
+        "시므온",
+        "요셉",
+        "마리아",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시므온이 성전으로 와 아기를 데려온 부모를 만나요."
+      ],
+      "study": "시므온이 성전으로 와 아기를 데려온 부모를 만나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-28",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        28
+      ],
+      "title": "아기를 안고 찬송함",
+      "ref": "누가복음 2:28",
+      "actors": [
+        "시므온",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시므온이 아기 예수를 품에 안고 찬송해요."
+      ],
+      "study": "시므온이 아기 예수를 품에 안고 찬송해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "reach",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "receive",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "cradle",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-29",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        29
+      ],
+      "title": "평안히 놓아 주심을 노래함",
+      "ref": "누가복음 2:29",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시므온이 약속의 성취를 보고 평안을 노래해요."
+      ],
+      "study": "시므온이 약속의 성취를 보고 평안을 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-30",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        30
+      ],
+      "title": "구원을 본 눈",
+      "ref": "누가복음 2:30",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "자신의 눈으로 주의 구원을 보았다고 고백해요."
+      ],
+      "study": "자신의 눈으로 주의 구원을 보았다고 고백해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-31",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        31
+      ],
+      "title": "모든 백성을 위해 예비된 구원",
+      "ref": "누가복음 2:31",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "만민 앞에 예비된 구원을 찬송해요."
+      ],
+      "study": "만민 앞에 예비된 구원을 찬송해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-32",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        32
+      ],
+      "title": "이방의 빛과 이스라엘의 영광",
+      "ref": "누가복음 2:32",
+      "actors": [
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "이방을 비추는 빛과 이스라엘의 영광이라 노래해요."
+      ],
+      "study": "이방을 비추는 빛과 이스라엘의 영광이라 노래해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-33",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        33
+      ],
+      "title": "놀라는 부모",
+      "ref": "누가복음 2:33",
+      "actors": [
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "부모가 아기에 관한 말을 듣고 놀라요."
+      ],
+      "study": "부모가 아기에 관한 말을 듣고 놀라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-34",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        34
+      ],
+      "title": "마리아에게 전한 예언",
+      "ref": "누가복음 2:34",
+      "actors": [
+        "시므온",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "시므온이 축복하고 아이를 둘러싼 반대와 일어섬을 예언해요."
+      ],
+      "study": "시므온이 축복하고 아이를 둘러싼 반대와 일어섬을 예언해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "bless",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-35",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        35
+      ],
+      "title": "마음을 찌르는 슬픔",
+      "ref": "누가복음 2:35",
+      "actors": [
+        "시므온",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 겪을 아픔과 드러날 사람들의 마음을 비유로 말해요. 실제 칼 공격은 그리지 않아요."
+      ],
+      "study": "마리아가 겪을 아픔과 드러날 사람들의 마음을 비유로 말해요. 실제 칼 공격은 그리지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "시므온",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "시므온",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "시므온",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "시므온",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "시므온",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "시므온",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-36",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        36
+      ],
+      "title": "선지자 안나의 소개",
+      "ref": "누가복음 2:36",
+      "actors": [
+        "안나"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "아셀 지파 바누엘의 딸인 나이 많은 안나를 소개해요."
+      ],
+      "study": "아셀 지파 바누엘의 딸인 나이 많은 안나를 소개해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "안나",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "안나",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "안나",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "안나",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "안나",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-37",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        37
+      ],
+      "title": "금식과 기도로 섬기는 안나",
+      "ref": "누가복음 2:37",
+      "actors": [
+        "안나"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "84세 안나가 밤낮으로 성전에서 기도하며 섬겨요."
+      ],
+      "study": "84세 안나가 밤낮으로 성전에서 기도하며 섬겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "안나",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "kneel",
+            "actor": "안나",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "안나",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "안나",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "안나",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-38",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        38
+      ],
+      "title": "아기에 대해 전하는 안나",
+      "ref": "누가복음 2:38",
+      "actors": [
+        "안나",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "안나가 감사하며 구원을 기다리는 사람들에게 아기를 말해요."
+      ],
+      "study": "안나가 감사하며 구원을 기다리는 사람들에게 아기를 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "안나",
+        "target": "사람들",
+        "mode": "reconstruction",
+        "setting": "temple",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "안나",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "안나",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "안나",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "안나",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "안나",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:38",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-39",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        39
+      ],
+      "title": "나사렛으로 귀가함",
+      "ref": "누가복음 2:39",
+      "actors": [
+        "요셉",
+        "마리아",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "율법에 따른 일을 마치고 가족이 나사렛으로 돌아가요."
+      ],
+      "study": "율법에 따른 일을 마치고 가족이 나사렛으로 돌아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "carry",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:39",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-40",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        40
+      ],
+      "title": "아이가 자라 강해짐",
+      "ref": "누가복음 2:40",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "아이가 자라고 지혜가 충만하며 은혜가 함께해요."
+      ],
+      "study": "아이가 자라고 지혜가 충만하며 은혜가 함께해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:40",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-41",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        41
+      ],
+      "title": "해마다 유월절에 올라감",
+      "ref": "누가복음 2:41",
+      "actors": [
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "부모가 해마다 유월절에 예루살렘을 찾아가요."
+      ],
+      "study": "부모가 해마다 유월절에 예루살렘을 찾아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:41",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-42",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        42
+      ],
+      "title": "열두 살의 유월절",
+      "ref": "누가복음 2:42",
+      "actors": [
+        "예수",
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "12세 예수가 부모와 절기 관례를 따라 올라가요."
+      ],
+      "study": "12세 예수가 부모와 절기 관례를 따라 올라가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:42",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-43",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        43
+      ],
+      "title": "예루살렘에 남은 소년",
+      "ref": "누가복음 2:43",
+      "actors": [
+        "예수",
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "절기가 끝난 뒤 예수는 남았으나 부모는 알지 못해요."
+      ],
+      "study": "절기가 끝난 뒤 예수는 남았으나 부모는 알지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:43",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-44",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        44
+      ],
+      "title": "일행에서 아이를 찾음",
+      "ref": "누가복음 2:44",
+      "actors": [
+        "요셉",
+        "마리아",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하루 길을 간 부모가 친족과 지인 사이에서 예수를 찾아요."
+      ],
+      "study": "하루 길을 간 부모가 친족과 지인 사이에서 예수를 찾아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "inspect",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:44",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-45",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        45
+      ],
+      "title": "다시 예루살렘으로 돌아감",
+      "ref": "누가복음 2:45",
+      "actors": [
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "찾지 못한 부모가 예루살렘으로 돌아가며 찾아요."
+      ],
+      "study": "찾지 못한 부모가 예루살렘으로 돌아가며 찾아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "halt",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:45",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-46",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        46
+      ],
+      "title": "선생들 사이의 소년 예수",
+      "ref": "누가복음 2:46",
+      "actors": [
+        "예수",
+        "선생들",
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "3일 뒤 성전에서 선생들의 말을 듣고 묻는 예수를 발견해요."
+      ],
+      "study": "3일 뒤 성전에서 선생들의 말을 듣고 묻는 예수를 발견해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "선생들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:46",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-47",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        47
+      ],
+      "title": "지혜와 대답에 놀람",
+      "ref": "누가복음 2:47",
+      "actors": [
+        "선생들",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "듣는 사람들이 예수의 이해와 대답에 놀라요."
+      ],
+      "study": "듣는 사람들이 예수의 이해와 대답에 놀라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "선생들",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "선생들",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "선생들",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "선생들",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "선생들",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "선생들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "선생들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:47",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-48",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        48
+      ],
+      "title": "근심하며 찾았다는 마리아",
+      "ref": "누가복음 2:48",
+      "actors": [
+        "마리아",
+        "예수",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 걱정하며 찾았다고 아들에게 말해요."
+      ],
+      "study": "마리아가 걱정하며 찾았다고 아들에게 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:48",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-49",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        49
+      ],
+      "title": "아버지 집에 있어야 함",
+      "ref": "누가복음 2:49",
+      "actors": [
+        "예수",
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수가 아버지 집에 있어야 함을 부모에게 답해요."
+      ],
+      "study": "예수가 아버지 집에 있어야 함을 부모에게 답해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:49",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-50",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        50
+      ],
+      "title": "깨닫지 못한 부모",
+      "ref": "누가복음 2:50",
+      "actors": [
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "부모가 그 말의 뜻을 이해하지 못해요."
+      ],
+      "study": "부모가 그 말의 뜻을 이해하지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:50",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-51",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        51
+      ],
+      "title": "나사렛에서 부모에게 순종함",
+      "ref": "누가복음 2:51",
+      "actors": [
+        "예수",
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "함께 나사렛으로 내려가 순종하고 마리아는 일을 마음에 간직해요."
+      ],
+      "study": "함께 나사렛으로 내려가 순종하고 마리아는 일을 마음에 간직해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "bow",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:51",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-52",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        52
+      ],
+      "title": "지혜와 키가 자람",
+      "ref": "누가복음 2:52",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수가 지혜와 키에서 자라며 하나님과 사람에게 사랑받아요."
+      ],
+      "study": "예수가 지혜와 키에서 자라며 하나님과 사람에게 사랑받아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:52",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.75,
+            "hideBeard": true
+          }
+        }
+      }
     }
   ]
 }
