@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "phm",
-    "nextBook": "heb",
-    "booksCompleted": 57,
+    "currentBook": "heb",
+    "nextBook": "jas",
+    "booksCompleted": 58,
     "completedBooks": [
       "gen",
       "exo",
@@ -354,10 +354,11 @@
       "1ti",
       "2ti",
       "tit",
-      "phm"
+      "phm",
+      "heb"
     ],
-    "chaptersReviewed": 1137,
-    "relationshipLinksReviewed": 3776,
+    "chaptersReviewed": 1146,
+    "relationshipLinksReviewed": 3593,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -368,29 +369,41 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "빌레몬서 한 장의 발화를 살펴 바울이 오네시모를 아들처럼 부르는 정서와 빌레몬에게 형제로 받아 달라는 간청을 2문장·개별 절 참조로 정리했다. 손해가 있다면 자신의 몫으로 돌려 달라는 부탁도 확인하고 관계 연결 5개를 점검했다. 다음은 히브리서다.",
+    "statusNote": "히브리서 13장 전체의 발화 후보 13묶음·26문장에 개별 절 참조를 연결했다. 그리스도의 대제사장직, 새 언약, 믿음의 증인, 인내의 경주, 공동체 권면을 논증 문맥과 대조하고 관계선 31개를 확인했다. 서신의 비유·과거 인물 회고를 현장 대화로 바꾸지 않았다. 진행 누계는 완료 권들의 장별 관계선을 다시 합산해 3,593개로 바로잡았다. 다음은 야고보서다.",
     "partialBookAudit": {
-      "book": "phm",
-      "chaptersScanned": 1,
-      "chaptersWithAuthoredDialogueReviewed": 1,
-      "authoredUtteranceGroupsReviewed": 1,
-      "utteranceReferencesCorrected": 2,
-      "chapterDialogueAudit": 1,
+      "book": "heb",
+      "chaptersScanned": 13,
+      "chaptersWithAuthoredDialogueReviewed": 13,
+      "authoredUtteranceGroupsReviewed": 13,
+      "utteranceReferencesCorrected": 26,
+      "chapterDialogueAudit": 13,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 5,
+      "relationshipEdgesAudited": 31,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 5,
-      "relationshipLinksFound": 5,
+      "relationshipBasedPairLines": 31,
+      "relationshipLinksFound": 31,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 5,
+      "generatedLinksRemaining": 31,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
-        1
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
       ],
-      "statusNote": "빌레몬서 한 장의 발화를 살펴 바울이 오네시모를 아들처럼 부르는 정서와 빌레몬에게 형제로 받아 달라는 간청을 2문장·개별 절 참조로 정리했다. 손해가 있다면 자신의 몫으로 돌려 달라는 부탁도 확인하고 관계 연결 5개를 점검했다. 다음은 히브리서다."
+      "statusNote": "히브리서 13장 전체의 발화 후보 13묶음·26문장에 개별 절 참조를 연결했다. 그리스도의 대제사장직, 새 언약, 믿음의 증인, 인내의 경주, 공동체 권면을 논증 문맥과 대조하고 관계선 31개를 확인했다. 서신의 비유·과거 인물 회고를 현장 대화로 바꾸지 않았다. 진행 누계는 완료 권들의 장별 관계선을 다시 합산해 3,593개로 바로잡았다. 다음은 야고보서다."
     },
     "currentBookStatus": "complete"
   }
