@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1262);assert.equal(c.curatedSupplementalScenes,548);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),548);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1251);assert.equal(c.curatedSupplementalScenes,537);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),537);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -244,14 +244,14 @@ test('시편 표제의 역사적 배경과 포로·회복 노래의 사건을 �
 
 
 test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-gen-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,16);
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-gen-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,13);
  for(const title of ["동산에서 쫓겨나 생명나무 길이 막히다","하나님과 동행한 에녹이 사라지다","폭력으로 가득한 세상에서 노아가 은혜를 입다","아브람과 맺은 언약을 표징으로 보이다","광야의 샘에서 하갈을 만나 약속하다","라헬이 드라빔을 숨기고 야곱이 라반과 언약하다","애굽에서 다시 만난 야곱과 요셉","야곱이 에브라임과 므낫세를 축복하다","요셉이 형들을 용서하고 야곱을 장사하다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
 
 test('exo 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'exo.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-exo-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/exo.json'));assert.equal(added.length,27);
+ const data=JSON.parse(fs.readFileSync(root+'exo.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-exo-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/exo.json'));assert.equal(added.length,19);
  for(const title of ["십브라와 부아가 왕의 명령을 거역하다","요게벳이 아기를 갈대 상자에 두다","미디안으로 도망한 모세가 십보라와 살다","개구리 떼가 애굽 땅을 덮다","이와 파리 떼 앞에서 바로가 굴복과 거부를 반복하다","애굽의 가축에 돌림병이 퍼지다","우박과 불이 내려 농작물을 치다","메뚜기 떼가 남은 작물을 삼키다","짙은 어둠 속에서 마지막 협상을 거부하다","처음 난 것에 닥칠 마지막 재앙을 알리다","유월절 양과 피의 표징을 준비하다","첫째 재앙 뒤 이스라엘이 애굽을 떠나다","요셉의 뼈를 들고 구름과 불의 인도를 받다","하늘에서 만나와 메추라기를 거두다","여섯째 날의 갑절과 만나 항아리를 보관하다","이드로가 모세에게 재판을 나누라고 권하다","시내 산 앞에서 언약을 받고 산이 진동하다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
@@ -283,7 +283,7 @@ test('2ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 
 test('창세기의 창조·가족·귀환 사건을 보강하고 본문 범위와 상징 방식을 연결한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'gen.json')),ids=['ot-gen-extra-1-0','ot-gen-extra-2-0','ot-gen-extra-6-1','ot-gen-extra-16-1','ot-gen-extra-31-1'],objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json')),added=ids.map(id=>data.scenes.find(s=>s.id===id));assert(added.every(Boolean));
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),ids=['ot-gen-extra-1-0','ot-gen-extra-2-0'],objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json')),added=ids.map(id=>data.scenes.find(s=>s.id===id));assert(added.every(Boolean));
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -296,8 +296,8 @@ test('jos 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 
 test('exo 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'exo.json')),ids=['ot-exo-extra-1-1','ot-exo-extra-2-2','ot-exo-extra-8-2','ot-exo-extra-9-2','ot-exo-extra-10-2','ot-exo-extra-12-2','ot-exo-extra-16-2','ot-exo-extra-18-1','ot-exo-extra-36-0','ot-exo-extra-37-0'],added=ids.map(id=>data.scenes.find(s=>s.id===id)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/exo.json'));assert(added.every(Boolean));
- for(const title of ["히브리 산파들이 바로의 명령을 거슬러 생명을 지키다","모세가 나일 강에서 건져져 미디안으로 피하다","모세와 아론이 개구리 재앙을 알리다","우박이 애굽 땅을 치고 바로가 다시 거역하다","메뚜기 떼가 애굽의 남은 작물을 먹어 치우다","이스라엘이 유월절을 지키고 애굽을 떠나다","백성이 만나와 메추라기를 받아 먹다","이드로가 모세에게 재판 업무를 나누라고 권하다","브살렐과 오홀리압이 성막을 만들다","브살렐이 언약궤와 성소 기구를 만들다"])assert(added.some(s=>s.title===title),title);
+ const data=JSON.parse(fs.readFileSync(root+'exo.json')),ids=['ot-exo-extra-36-0','ot-exo-extra-37-0'],added=ids.map(id=>data.scenes.find(s=>s.id===id)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/exo.json'));assert(added.every(Boolean));
+ for(const title of ["브살렐과 오홀리압이 성막을 만들다","브살렐이 언약궤와 성소 기구를 만들다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 

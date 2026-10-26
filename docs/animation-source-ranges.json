@@ -3,14 +3,14 @@
   "books": [
     {
       "code": "gen",
-      "scenes": 91,
-      "passageRangesFound": 91,
+      "scenes": 88,
+      "passageRangesFound": 88,
       "missing": []
     },
     {
       "code": "exo",
-      "scenes": 65,
-      "passageRangesFound": 65,
+      "scenes": 57,
+      "passageRangesFound": 57,
       "missing": []
     },
     {

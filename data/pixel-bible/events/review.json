@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1262,
+    "scenesInFiles": 1251,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 548
+    "curatedSupplementalScenes": 537
   },
   "books": [
     {
@@ -42,7 +42,7 @@
     {
       "code": "gen",
       "chapters": 50,
-      "scenes": 91,
+      "scenes": 88,
       "sourceMatchedSceneCandidates": 75,
       "retainedLegacyScenes": 0,
       "curatedSupplementalScenes": 2
@@ -50,10 +50,10 @@
     {
       "code": "exo",
       "chapters": 40,
-      "scenes": 65,
+      "scenes": 57,
       "sourceMatchedSceneCandidates": 38,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 10
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "lev",
@@ -28337,7 +28337,7 @@
       },
       {
         "book": "exo",
-        "scenesAdded": 17
+        "scenesAdded": 9
       },
       {
         "book": "num",
@@ -28361,7 +28361,7 @@
       },
       {
         "book": "gen",
-        "scenesAdded": 9
+        "scenesAdded": 6
       },
       {
         "book": "jos",

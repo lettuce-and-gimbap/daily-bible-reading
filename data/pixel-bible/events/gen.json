@@ -2703,7 +2703,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"reconstruction","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-2-0",
@@ -2746,140 +2746,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"holy-ground","lead":"하나님","target":"아담","mode":"illustration","setting":"desert","effect":"bush-fire","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하나님"},{"action":"startle","duration":1.2,"actor":"하나님"},{"action":"kneel","duration":1.5,"actor":"하나님"},{"action":"remove-shoe","duration":1.8,"actor":"하나님"},{"action":"bow","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-gen-extra-6-1",
-      "code": "gen",
-      "chapter": 6,
-      "title": "노아가 방주를 준비하라는 말씀을 듣다",
-      "actors": [
-        "노아",
-        "하나님"
-      ],
-      "object": "scene-marker",
-      "ref": "창세기 6:9-22",
-      "verseNumbers": [
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 하나님이 노아에게 방주를 만들고 생명을 보존할 준비를 하라고 알려주세요. 노아는 들은 대로 준비해요."
-      ],
-      "study": "하나님이 노아에게 방주를 만들고 생명을 보존할 준비를 하라고 알려주세요. 노아는 들은 대로 준비해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"build","lead":"노아","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"lift","duration":1.5,"actor":"노아"},{"action":"place","duration":1.8,"actor":"노아"},{"action":"hammer","duration":1.5,"actor":"노아"},{"action":"inspect","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:9-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-gen-extra-16-1",
-      "code": "gen",
-      "chapter": 16,
-      "title": "하갈이 광야에서 하나님의 사자를 만나다",
-      "actors": [
-        "하갈",
-        "여호와의 사자",
-        "이스마엘"
-      ],
-      "object": "scene-marker",
-      "ref": "창세기 16:7-14",
-      "verseNumbers": [
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 광야로 달아난 하갈에게 여호와의 사자가 다가와 돌아갈 길과 아이의 미래를 전해요. 하갈은 자신을 살피시는 하나님을 고백해요."
-      ],
-      "study": "광야로 달아난 하갈에게 여호와의 사자가 다가와 돌아갈 길과 아이의 미래를 전해요. 하갈은 자신을 살피시는 하나님을 고백해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"well","lead":"하갈","target":"여호와의 사자","mode":"reconstruction","setting":"desert","effect":"well","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하갈"},{"action":"bend","duration":1.2,"actor":"하갈"},{"action":"dig","duration":1.5,"actor":"하갈"},{"action":"dig","duration":1.8,"actor":"하갈"},{"action":"rise","duration":1.5,"actor":"하갈"},{"action":"inspect","duration":1.2,"actor":"하갈"}],"duration":8.2,"support":null,"ref":"창세기 16:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-gen-extra-31-1",
-      "code": "gen",
-      "chapter": 31,
-      "title": "야곱이 가족과 함께 라반을 떠나다",
-      "actors": [
-        "야곱",
-        "라반",
-        "라헬",
-        "레아"
-      ],
-      "object": "scene-marker",
-      "ref": "창세기 31:17-55",
-      "verseNumbers": [
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 야곱은 가족과 가축을 이끌고 떠나고, 라반은 뒤쫓아와요. 두 사람은 미스바에서 돌무더기를 증거로 삼아 언약을 맺고 헤어져요."
-      ],
-      "study": "야곱은 가족과 가축을 이끌고 떠나고, 라반은 뒤쫓아와요. 두 사람은 미스바에서 돌무더기를 증거로 삼아 언약을 맺고 헤어져요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"journey","lead":"야곱","target":"라반","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 31:17-55","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"holy-ground","lead":"하나님","target":"아담","mode":"reconstruction","setting":"desert","effect":"bush-fire","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하나님"},{"action":"startle","duration":1.2,"actor":"하나님"},{"action":"kneel","duration":1.5,"actor":"하나님"},{"action":"remove-shoe","duration":1.8,"actor":"하나님"},{"action":"bow","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 2:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-11-0",
