@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3806);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3805);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -810,6 +810,20 @@ test('요엘의 3장면은 재앙의 호출·회개 권면·열국 심판을 구
  for(const relation of context.relations)assert.ok(entries.some(entry=>entry.chapter===`jol.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  for(const chapter of [1,2])assert.ok(summary.chapters[chapter].people.every(person=>!['메뚜기 떼','큰 군대'].includes(person.name)),'재앙과 상징 군대는 NPC가 아님');
  for(const entry of entries)assert.ok(entry.detail&&entry.lines.length===2&&entry.replyLines.length===2);
+});
+
+
+test('오바댜의 에돔·야곱 형제 배신 관계는 하나의 양방향 대화이며 에돔을 개인 에서와 구분한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/oba.json'));
+ const data=summary.chapters['1'];
+ const context=buildChapterDialogue([{code:'oba',name:'오바댜',chap:1,data}]);
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter==='oba.1');
+ assert.equal(context.relations.length,1);assert.equal(entries.length,1);
+ assert.equal(context.relations[0].from.name,'에돔');assert.equal(context.relations[0].to.name,'야곱 족속');
+ const lines=relationshipLines(context.relations[0].from,context.relations[0].to,context.relations[0],null,{random:()=>0});
+ assert.match(lines[0].text,/형제.*환난/);assert.match(lines[1].text,/형제.*쓰러질/);
+ assert.match(entries[0].detail,/직접 대화가 아니라/);
+ assert.equal(data.people.some(person=>person.name==='에돔(에서)'),false);
 });
 
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{

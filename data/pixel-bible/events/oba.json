@@ -78,7 +78,7 @@
       "title": "에돔의 보물과 동맹이 무너지다",
       "actors": [
         "오바댜",
-        "에돔(에서)"
+        "에돔"
       ],
       "object": "scene-marker",
       "ref": "오바댜 1:5-9",
@@ -101,7 +101,7 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "오바댜",
-        "target": "에돔(에서)",
+        "target": "에돔",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -151,7 +151,7 @@
       "chapter": 1,
       "title": "형제의 재난을 외면한 에돔을 책망하다",
       "actors": [
-        "에돔(에서)",
+        "에돔",
         "야곱 족속",
         "이방인"
       ],
@@ -175,7 +175,7 @@
       "animation": {
         "version": 2,
         "motif": "warning",
-        "lead": "에돔(에서)",
+        "lead": "에돔",
         "target": "야곱 족속",
         "mode": "illustration",
         "setting": "courtyard",
@@ -226,7 +226,7 @@
       "chapter": 1,
       "title": "모든 민족에게 행한 대로 돌아오다",
       "actors": [
-        "에돔(에서)",
+        "에돔",
         "이방인",
         "야곱 족속"
       ],
@@ -249,7 +249,7 @@
       "animation": {
         "version": 2,
         "motif": "judgment",
-        "lead": "에돔(에서)",
+        "lead": "에돔",
         "target": "이방인",
         "mode": "illustration",
         "setting": "courtyard",
@@ -302,7 +302,7 @@
       "actors": [
         "구원자들",
         "야곱 족속",
-        "에돔(에서)"
+        "에돔"
       ],
       "object": "scene-marker",
       "ref": "오바댜 1:19-21",
@@ -374,7 +374,7 @@
       "title": "에돔을 향한 심판의 소식이 전해지다",
       "actors": [
         "오바댜",
-        "에돔(에서)"
+        "에돔"
       ],
       "object": "scene-marker",
       "ref": "오바댜 1:1-2",
@@ -394,7 +394,7 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "오바댜",
-        "target": "에돔(에서)",
+        "target": "에돔",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",

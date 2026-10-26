@@ -8,8 +8,8 @@
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2574,
-      "group": 244,
+      "unresolved": 2573,
+      "group": 245,
       "person": 109,
       "animal": 8,
       "spiritual": 6,
@@ -40948,20 +40948,20 @@
       ]
     },
     {
-      "name": "에돔(에서)",
+      "name": "에돔",
       "roles": [
-        "교만하고 형제를 배신한 나라"
+        "형제 야곱의 환난을 외면하고 배신한 나라"
       ],
       "refs": [
         "oba.1"
       ],
       "appearance": "generic",
-      "review": "unreviewed-label",
+      "review": "reviewed-rule",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:에돔(에서):oba",
-          "status": "needs-review",
+          "kind": "group",
+          "id": "group:에돔",
+          "status": "reviewed-rule",
           "refs": [
             "oba.1"
           ]

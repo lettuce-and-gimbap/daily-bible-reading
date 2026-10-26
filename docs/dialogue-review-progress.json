@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "amo",
-    "nextBook": "oba",
-    "booksCompleted": 30,
+    "currentBook": "oba",
+    "nextBook": "jnh",
+    "booksCompleted": 31,
     "completedBooks": [
       "gen",
       "exo",
@@ -327,43 +327,36 @@
       "dan",
       "hos",
       "jol",
-      "amo"
+      "amo",
+      "oba"
     ],
-    "chaptersReviewed": 892,
-    "relationshipLinksReviewed": 2788,
-    "authoredPairEntriesReviewed": 861,
+    "chaptersReviewed": 893,
+    "relationshipLinksReviewed": 2789,
+    "authoredPairEntriesReviewed": 862,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
-      "interactionLinks": 3806,
-      "authoredLinks": 905,
-      "relationshipGeneratedLinks": 2901,
+      "interactionLinks": 3805,
+      "authoredLinks": 906,
+      "relationshipGeneratedLinks": 2899,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요엘 3장에 이어 아모스 9장까지 검토했다. 누계 892장, 유효 관계 대화 2,788개, 작성·점검 대화 묶음 861개다. 아모스의 인간 관계 11개를 압제·예언·심판 맥락에 맞춰 보강했다. ‘바산의 암소들’은 본문 비유를 보존하면서 사람인 사마리아 부유층으로 분류했고, 여로보암에게 전달된 보고는 현장 조우에서 제외했다. 아모스의 벧엘 대면 독백도 추가했다. 전체 상호작용 후보는 3,806개이며 905개 작성 대사와 2,901개 관계 기반 대사로 연결되어 있다. 다음 권은 오바댜다.",
+    "statusNote": "요엘과 아모스에 이어 오바댜 1장 전체를 검토했다. 에돔과 야곱 족속의 형제·적대 관계가 양방향으로 중복된 기록을 하나로 합치고, 하나의 왕복 대화로 구성했다. 예언의 대상인 에돔은 에서 개인이 아니라 나라 집단으로 분류했다. 하나님과의 관계선은 인물 간 조우 대상에서 제외했다. 다음 권은 요나다.",
     "partialBookAudit": {
-      "book": "amo",
-      "chaptersScanned": 9,
-      "relationshipLinksFound": 11,
-      "authoredPairEntriesAddedAndChecked": 11,
-      "authoredLinksCovered": 11,
+      "book": "oba",
+      "chaptersScanned": 1,
+      "relationshipLinksFound": 1,
+      "authoredPairEntriesAddedAndChecked": 1,
+      "authoredLinksCovered": 1,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 2,
+      "nonDialogueLinksRemoved": 1,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        1
       ],
-      "statusNote": "아모스 1–9장 전체를 훑었다. 가난한 이를 사고판 죄, 성문에서 정의를 막은 일, 벧엘 제사장 아마샤와 아모스의 대면, 열국 심판을 사건별 왕복 대사 11개로 구성했다. 중복된 대면 관계선은 하나로 합치고 왕에게 전달된 간접 보고는 조우에서 제외했다. 동물 비유의 ‘바산의 암소들’은 사마리아의 부유한 여인들로 분류했다."
+      "statusNote": "오바댜 1장 전부를 살펴 에돔과 야곱 족속의 배신한 형제 관계를 대화로 구성했다. 형제 관계와 일방적 적대 기록은 하나로 병합했고, 집단 에돔을 개인 에서와 구별했다."
     },
     "currentBookStatus": "complete"
   }
