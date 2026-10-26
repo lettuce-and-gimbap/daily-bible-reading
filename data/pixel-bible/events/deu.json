@@ -58,6 +58,525 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"deposit","lead":"모세","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"open","duration":1.5,"actor":"모세"},{"action":"read","duration":1.8,"actor":"모세"},{"action":"write","duration":1.5,"actor":"모세"},{"action":"place","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 31:24-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-1-0",
+      "code": "deu",
+      "chapter": 1,
+      "title": "정탐꾼의 보고와 백성의 두려움을 회고하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손",
+        "갈렙",
+        "여호수아"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 1:22-33",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 가나안 정탐과 백성의 두려움을 되돌아보고, 앞서 인도하신 하나님을 신뢰하라고 일깨워요."
+      ],
+      "study": "모세가 가나안 정탐과 백성의 두려움을 되돌아보고, 앞서 인도하신 하나님을 신뢰하라고 일깨워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"모세"},{"action":"point","duration":1.5,"actor":"모세"},{"action":"listen","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 1:22-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-1-1",
+      "code": "deu",
+      "chapter": 1,
+      "title": "뒤늦은 출정이 실패하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 1:34-46",
+      "verseNumbers": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 백성이 뒤늦게 올라가 싸우려 하지만 모세의 경고를 듣지 않고 패해요. 회고의 맥락을 분명히 해요."
+      ],
+      "study": "백성이 뒤늦게 올라가 싸우려 하지만 모세의 경고를 듣지 않고 패해요. 회고의 맥락을 분명히 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 1:34-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-2-0",
+      "code": "deu",
+      "chapter": 2,
+      "title": "시혼의 땅을 지나 정복하다",
+      "actors": [
+        "모세",
+        "시혼",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 2:24-37",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 시혼에게 평화 제안을 보냈으나 거부당하고, 이스라엘이 그의 성읍들을 차지해요."
+      ],
+      "study": "모세가 시혼에게 평화 제안을 보냈으나 거부당하고, 이스라엘이 그의 성읍들을 차지해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"모세","target":"시혼","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"},{"action":"brace","duration":1.5,"actor":"모세"},{"action":"run","duration":1.8,"actor":"모세"},{"action":"halt","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 2:24-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-3-0",
+      "code": "deu",
+      "chapter": 3,
+      "title": "옥의 바산을 차지하고 땅을 나누다",
+      "actors": [
+        "모세",
+        "옥",
+        "여호수아",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 3:1-17",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이스라엘이 바산 왕 옥의 성읍들을 차지하고 요단 동쪽 땅을 르우벤·갓·므낫세 반 지파에 나눠요."
+      ],
+      "study": "이스라엘이 바산 왕 옥의 성읍들을 차지하고 요단 동쪽 땅을 르우벤·갓·므낫세 반 지파에 나눠요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"모세","target":"옥","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"},{"action":"brace","duration":1.5,"actor":"모세"},{"action":"run","duration":1.8,"actor":"모세"},{"action":"halt","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 3:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-4-0",
+      "code": "deu",
+      "chapter": 4,
+      "title": "호렙에서 받은 말씀을 다음 세대에 전하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 4:9-14",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 호렙의 언약과 십계명을 기억하고 자녀에게 가르치라고 당부해요."
+      ],
+      "study": "모세가 호렙의 언약과 십계명을 기억하고 자녀에게 가르치라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 4:9-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-5-0",
+      "code": "deu",
+      "chapter": 5,
+      "title": "백성이 두려워 중재를 부탁하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 5:22-33",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 백성이 불과 음성 앞에서 두려워 모세에게 말씀을 듣고 전해 달라 부탁하고, 모세는 순종을 권해요."
+      ],
+      "study": "백성이 불과 음성 앞에서 두려워 모세에게 말씀을 듣고 전해 달라 부탁하고, 모세는 순종을 권해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 5:22-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-9-0",
+      "code": "deu",
+      "chapter": 9,
+      "title": "금송아지 앞에서 돌판을 깨고 중보하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손",
+        "아론"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 9:7-21",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 금송아지 사건과 깨뜨린 돌판을 회고하고 백성과 아론을 위해 다시 엎드려 간구해요."
+      ],
+      "study": "모세가 금송아지 사건과 깨뜨린 돌판을 회고하고 백성과 아론을 위해 다시 엎드려 간구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 9:7-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-10-0",
+      "code": "deu",
+      "chapter": 10,
+      "title": "새 돌판과 언약궤를 마련하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손",
+        "레위 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 10:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 새 돌판을 만들어 언약궤에 넣고, 레위 지파가 궤를 메고 섬기도록 구별돼요."
+      ],
+      "study": "모세가 새 돌판을 만들어 언약궤에 넣고, 레위 지파가 궤를 메고 섬기도록 구별돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"write","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"open","duration":1.5,"actor":"모세"},{"action":"read","duration":1.8,"actor":"모세"},{"action":"write","duration":1.5,"actor":"모세"},{"action":"place","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 10:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-27-0",
+      "code": "deu",
+      "chapter": 27,
+      "title": "율법을 돌에 기록하고 에발 산에 제단을 세우다",
+      "actors": [
+        "모세",
+        "레위 지파",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 27:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 백성이 요단을 건너면 율법을 큰 돌에 기록하고 에발 산에 제단을 쌓으라는 지시를 받아요."
+      ],
+      "study": "백성이 요단을 건너면 율법을 큰 돌에 기록하고 에발 산에 제단을 쌓으라는 지시를 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"모세","target":"레위 지파","mode":"illustration","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"hammer","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 27:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-29-0",
+      "code": "deu",
+      "chapter": 29,
+      "title": "모압에서 언약을 새롭게 하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 29:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 광야에서 지켜 주신 일을 되짚고 모든 지파와 함께 언약에 들어오라고 불러요."
+      ],
+      "study": "모세가 광야에서 지켜 주신 일을 되짚고 모든 지파와 함께 언약에 들어오라고 불러요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 29:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-30-0",
+      "code": "deu",
+      "chapter": 30,
+      "title": "생명과 죽음 앞에서 생명을 택하라 하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 30:11-20",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 말씀이 멀리 있지 않다고 전하고 생명과 복을 택해 하나님을 사랑하라고 마지막으로 권해요."
+      ],
+      "study": "말씀이 멀리 있지 않다고 전하고 생명과 복을 택해 하나님을 사랑하라고 마지막으로 권해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"모세","target":"이스라엘 자손","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"bless","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 30:11-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-31-0",
+      "code": "deu",
+      "chapter": 31,
+      "title": "여호수아를 후계자로 세우다",
+      "actors": [
+        "모세",
+        "여호수아"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 31:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 여호수아에게 백성을 이끌고 건너가라고 당부하고, 백성 앞에서 담대하라고 격려해요."
+      ],
+      "study": "모세가 여호수아에게 백성을 이끌고 건너가라고 당부하고, 백성 앞에서 담대하라고 격려해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"모세","target":"여호수아","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"receive","duration":1.5,"actor":"모세"},{"action":"wear","duration":1.8,"actor":"모세"},{"action":"rise","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 31:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-31-1",
+      "code": "deu",
+      "chapter": 31,
+      "title": "칠 년마다 율법을 낭독하라 명하다",
+      "actors": [
+        "모세",
+        "레위 지파"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 31:9-13",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 율법을 기록해 레위 제사장에게 맡기고 초막절마다 백성에게 낭독하라고 해요."
+      ],
+      "study": "모세가 율법을 기록해 레위 제사장에게 맡기고 초막절마다 백성에게 낭독하라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"read","lead":"모세","target":"레위 지파","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"open","duration":1.5,"actor":"모세"},{"action":"read","duration":1.8,"actor":"모세"},{"action":"write","duration":1.5,"actor":"모세"},{"action":"place","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 31:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-32-0",
+      "code": "deu",
+      "chapter": 32,
+      "title": "모세가 노래를 전하고 백성에게 기억시키다",
+      "actors": [
+        "모세",
+        "여호수아",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 32:44-47",
+      "verseNumbers": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 여호수아와 함께 노래의 말씀을 백성에게 전하고, 마음에 두어 자녀에게 가르치라고 당부해요."
+      ],
+      "study": "모세가 여호수아와 함께 노래의 말씀을 백성에게 전하고, 마음에 두어 자녀에게 가르치라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"praise","lead":"모세","target":"여호수아","mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"모세"},{"action":"sway","duration":1.2,"actor":"모세"},{"action":"step","duration":1.5,"actor":"모세"},{"action":"sway","duration":1.8,"actor":"모세"},{"action":"step","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 32:44-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-34-0",
+      "code": "deu",
+      "chapter": 34,
+      "title": "비스가 산에서 땅을 바라보고 모세가 죽다",
+      "actors": [
+        "모세",
+        "여호수아",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 34:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 약속의 땅을 바라본 뒤 죽고, 백성이 애곡하며 여호수아가 지혜의 영으로 충만해져요."
+      ],
+      "study": "모세가 약속의 땅을 바라본 뒤 죽고, 백성이 애곡하며 여호수아가 지혜의 영으로 충만해져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"모세","target":"여호수아","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"},{"action":"kneel","duration":1.5,"actor":"모세"},{"action":"cover-mouth","duration":1.8,"actor":"모세"},{"action":"mourn","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 34:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

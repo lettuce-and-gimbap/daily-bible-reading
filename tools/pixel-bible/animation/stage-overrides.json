@@ -572,5 +572,52 @@
     "20": {
       "mode": "illustration"
     }
+  },
+  "deu": {
+    "2": {
+      "mode": "illustration"
+    },
+    "3": {
+      "mode": "illustration"
+    },
+    "4": {
+      "mode": "reconstruction"
+    },
+    "5": {
+      "mode": "reconstruction"
+    },
+    "6": {
+      "mode": "illustration"
+    },
+    "7": {
+      "mode": "illustration"
+    },
+    "8": {
+      "mode": "illustration"
+    },
+    "9": {
+      "mode": "illustration"
+    },
+    "10": {
+      "mode": "illustration"
+    },
+    "11": {
+      "mode": "illustration"
+    },
+    "12": {
+      "mode": "illustration"
+    },
+    "13": {
+      "mode": "reconstruction"
+    },
+    "14": {
+      "mode": "reconstruction"
+    },
+    "15": {
+      "mode": "reconstruction"
+    },
+    "16": {
+      "mode": "illustration"
+    }
   }
 }

@@ -60,15 +60,15 @@
     },
     {
       "code": "deu",
-      "payloadSha256": "8a00045c7ec653ef3dd10c70578303b189f6e9d667639fd8acb596f1ee19eab6",
-      "scenes": 2,
-      "existing": 2,
+      "payloadSha256": "604fe26d314dc615928da499d6d1ebbcdeae3675ab7618568bd5c0cd48da7455",
+      "scenes": 17,
+      "existing": 17,
       "restored": 0,
       "corrected": 0,
-      "planned": 2,
+      "planned": 17,
       "modes": {
-        "illustration": 1,
-        "reconstruction": 1
+        "illustration": 11,
+        "reconstruction": 6
       },
       "status": "authored-awaiting-browser-review"
     },
