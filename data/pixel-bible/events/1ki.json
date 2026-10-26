@@ -35,53 +35,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "anoint",
-        "lead": "사독",
-        "target": "솔로몬",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "oil",
-        "emotion": "determined",
-        "prop": "olive-oil",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "사독"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "사독"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "사독"
-          },
-          {
-            "action": "pour",
-            "duration": 1.8,
-            "actor": "사독"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "사독"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "사독"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 1:28-40",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"anoint","lead":"사독","target":"솔로몬","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"olive-oil","beats":[{"action":"inspect","duration":1,"actor":"사독"},{"action":"grasp","duration":1.2,"actor":"사독"},{"action":"lift","duration":1.5,"actor":"사독"},{"action":"pour","duration":1.8,"actor":"사독"},{"action":"lower","duration":1.5,"actor":"사독"},{"action":"bow","duration":1.2,"actor":"사독"}],"duration":8.2,"support":null,"ref":"열왕기상 1:28-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-1-3",
@@ -117,53 +71,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "flee",
-        "lead": "아도니야",
-        "target": "솔로몬",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "worried",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "아도니야"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "아도니야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "아도니야"
-          },
-          {
-            "action": "run",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "아도니야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 1:41-53",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"flee","lead":"아도니야","target":"솔로몬","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"altar","beats":[{"action":"look","duration":1,"actor":"아도니야"},{"action":"startle","duration":1.2,"actor":"아도니야"},{"action":"turn","duration":1.5,"actor":"아도니야"},{"action":"run","duration":1.8,"actor":"아도니야"},{"action":"run","duration":1.5,"actor":"아도니야"},{"action":"look","duration":1.2,"actor":"아도니야"}],"duration":8.2,"support":null,"ref":"열왕기상 1:41-53","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-2-2",
@@ -196,53 +104,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "요압",
-        "target": "브나야",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 2:26-35",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"요압","target":"브나야","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"요압"},{"action":"turn","duration":1.2,"actor":"요압"},{"action":"speak","duration":1.5,"actor":"요압"},{"action":"point","duration":1.8,"actor":"요압"},{"action":"listen","duration":1.5,"actor":"요압"},{"action":"lower","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"열왕기상 2:26-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-3-0",
@@ -268,53 +130,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "sacrifice",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "altar",
-        "effect": "altar-flame",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "gather",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "carry",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 3:1-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"sacrifice","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"temple","beats":[{"action":"gather","duration":1,"actor":"솔로몬"},{"action":"carry","duration":1.2,"actor":"솔로몬"},{"action":"place","duration":1.5,"actor":"솔로몬"},{"action":"kneel","duration":1.8,"actor":"솔로몬"},{"action":"pray","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 3:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-5-0",
@@ -343,53 +159,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "send-letter",
-        "lead": "솔로몬",
-        "target": "히람",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "letter",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "read",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "write",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "fold",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 5:1-6",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"send-letter","lead":"솔로몬","target":"히람","mode":"reconstruction","setting":"chamber","effect":"letter","emotion":"determined","prop":"temple","beats":[{"action":"read","duration":1,"actor":"솔로몬"},{"action":"write","duration":1.2,"actor":"솔로몬"},{"action":"fold","duration":1.5,"actor":"솔로몬"},{"action":"extend","duration":1.8,"actor":"솔로몬"},{"action":"release","duration":1.5,"actor":"솔로몬"},{"action":"look","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 5:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-5-1",
@@ -418,53 +188,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "agreement",
-        "lead": "솔로몬",
-        "target": "히람",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "covenant",
-        "emotion": "determined",
-        "prop": "wheat",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pledge",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "read",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 5:7-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"agreement","lead":"솔로몬","target":"히람","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"wheat","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"},{"action":"extend","duration":1.5,"actor":"솔로몬"},{"action":"pledge","duration":1.8,"actor":"솔로몬"},{"action":"read","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 5:7-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-6-0",
@@ -496,53 +220,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "build",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "build",
-        "emotion": "determined",
-        "prop": "stone",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "hammer",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 6:1-10",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"build","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"stone","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 6:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-7-0",
@@ -576,53 +254,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "craft",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "build",
-        "emotion": "determined",
-        "prop": "tree",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "hammer",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 7:1-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"craft","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tree","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 7:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-7-3",
@@ -648,53 +280,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "inventory",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "store",
-        "effect": "stack",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "count",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 7:48-51",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"inventory","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"store","effect":"stack","emotion":"determined","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"carry","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"count","duration":1.5,"actor":"솔로몬"},{"action":"stand","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 7:48-51","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-8-0",
@@ -727,53 +313,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "carry",
-        "lead": "제사장들",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "ark-covenant",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "제사장들"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "제사장들"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "제사장들"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "제사장들"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "제사장들"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "제사장들"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 8:1-11",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"carry","lead":"제사장들","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"grasp","duration":1,"actor":"제사장들"},{"action":"lift","duration":1.2,"actor":"제사장들"},{"action":"brace","duration":1.5,"actor":"제사장들"},{"action":"carry","duration":1.8,"actor":"제사장들"},{"action":"walk","duration":1.5,"actor":"제사장들"},{"action":"lower","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"열왕기상 8:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-8-1",
@@ -805,53 +345,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "praise",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 8:12-21",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"praise","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"temple","beats":[{"action":"lift","duration":1,"actor":"솔로몬"},{"action":"sway","duration":1.2,"actor":"솔로몬"},{"action":"step","duration":1.5,"actor":"솔로몬"},{"action":"sway","duration":1.8,"actor":"솔로몬"},{"action":"step","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 8:12-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-8-3",
@@ -886,53 +380,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "feast",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "feast",
-        "emotion": "joy",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 8:54-66",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"feast","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"temple","beats":[{"action":"look","duration":1,"actor":"솔로몬"},{"action":"walk","duration":1.2,"actor":"솔로몬"},{"action":"bow","duration":1.5,"actor":"솔로몬"},{"action":"extend","duration":1.8,"actor":"솔로몬"},{"action":"place","duration":1.5,"actor":"솔로몬"},{"action":"sit","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 8:54-66","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-9-3",
@@ -959,53 +407,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "voyage",
-        "lead": "솔로몬",
-        "target": "히람",
-        "mode": "reconstruction",
-        "setting": "water",
-        "effect": "boat",
-        "emotion": "neutral",
-        "prop": "boat",
-        "beats": [
-          {
-            "action": "walk",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "row",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "row",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 9:25-28",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"voyage","lead":"솔로몬","target":"히람","mode":"reconstruction","setting":"water","effect":"boat","emotion":"neutral","prop":"boat","beats":[{"action":"walk","duration":1,"actor":"솔로몬"},{"action":"sit","duration":1.2,"actor":"솔로몬"},{"action":"grasp","duration":1.5,"actor":"솔로몬"},{"action":"row","duration":1.8,"actor":"솔로몬"},{"action":"row","duration":1.5,"actor":"솔로몬"},{"action":"look","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 9:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-10-0",
@@ -1032,53 +434,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "welcome",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "feast",
-        "emotion": "joy",
-        "prop": "gold",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 10:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"welcome","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"gold","beats":[{"action":"look","duration":1,"actor":"솔로몬"},{"action":"walk","duration":1.2,"actor":"솔로몬"},{"action":"bow","duration":1.5,"actor":"솔로몬"},{"action":"extend","duration":1.8,"actor":"솔로몬"},{"action":"place","duration":1.5,"actor":"솔로몬"},{"action":"sit","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 10:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-10-1",
@@ -1108,53 +464,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "praise",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "palace",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 10:6-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"praise","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"palace","beats":[{"action":"lift","duration":1,"actor":"솔로몬"},{"action":"sway","duration":1.2,"actor":"솔로몬"},{"action":"step","duration":1.5,"actor":"솔로몬"},{"action":"sway","duration":1.8,"actor":"솔로몬"},{"action":"step","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 10:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-11-3",
@@ -1192,53 +502,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "tear",
-        "lead": "아히야",
-        "target": "여로보암",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tear",
-        "emotion": "sad",
-        "prop": "robe",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아히야"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "아히야"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "아히야"
-          },
-          {
-            "action": "tear",
-            "duration": 1.8,
-            "actor": "아히야"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "아히야"
-          },
-          {
-            "action": "pray",
-            "duration": 1.2,
-            "actor": "아히야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 11:26-40",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"tear","lead":"아히야","target":"여로보암","mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"아히야"},{"action":"startle","duration":1.2,"actor":"아히야"},{"action":"grasp","duration":1.5,"actor":"아히야"},{"action":"tear","duration":1.8,"actor":"아히야"},{"action":"kneel","duration":1.5,"actor":"아히야"},{"action":"pray","duration":1.2,"actor":"아히야"}],"duration":8.2,"support":null,"ref":"열왕기상 11:26-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-12-2",
@@ -1270,53 +534,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "dispute",
-        "lead": "르호보암",
-        "target": "여로보암",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "speech",
-        "emotion": "angry",
-        "prop": "stone",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "르호보암"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "르호보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "르호보암"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "르호보암"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 12:16-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"dispute","lead":"르호보암","target":"여로보암","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"stone","beats":[{"action":"listen","duration":1,"actor":"르호보암"},{"action":"turn","duration":1.2,"actor":"르호보암"},{"action":"point","duration":1.5,"actor":"르호보암"},{"action":"point","duration":1.8,"actor":"르호보암"},{"action":"listen","duration":1.5,"actor":"르호보암"},{"action":"lower","duration":1.2,"actor":"르호보암"}],"duration":8.2,"support":null,"ref":"열왕기상 12:16-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-13-0",
@@ -1344,53 +562,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "하나님의 사람",
-        "target": "여로보암",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 13:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"하나님의 사람","target":"여로보암","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"하나님의 사람"},{"action":"turn","duration":1.2,"actor":"하나님의 사람"},{"action":"speak","duration":1.5,"actor":"하나님의 사람"},{"action":"point","duration":1.8,"actor":"하나님의 사람"},{"action":"listen","duration":1.5,"actor":"하나님의 사람"},{"action":"lower","duration":1.2,"actor":"하나님의 사람"}],"duration":8.2,"support":null,"ref":"열왕기상 13:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-14-3",
@@ -1424,53 +596,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "confiscate",
-        "lead": "르호보암",
-        "target": "시삭",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "transfer",
-        "emotion": "worried",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "walk",
-            "duration": 1,
-            "actor": "르호보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.2,
-            "actor": "르호보암"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "르호보암"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "르호보암"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 14:21-31",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"confiscate","lead":"르호보암","target":"시삭","mode":"reconstruction","setting":"chamber","effect":"transfer","emotion":"worried","prop":"temple","beats":[{"action":"walk","duration":1,"actor":"르호보암"},{"action":"point","duration":1.2,"actor":"르호보암"},{"action":"grasp","duration":1.5,"actor":"르호보암"},{"action":"carry","duration":1.8,"actor":"르호보암"},{"action":"turn","duration":1.5,"actor":"르호보암"},{"action":"walk","duration":1.2,"actor":"르호보암"}],"duration":8.2,"support":null,"ref":"열왕기상 14:21-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-15-2",
@@ -1502,53 +628,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "marshal",
-        "lead": "아사",
-        "target": "바아사",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아사"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "아사"
-          },
-          {
-            "action": "signal",
-            "duration": 1.5,
-            "actor": "아사"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "아사"
-          },
-          {
-            "action": "march",
-            "duration": 1.5,
-            "actor": "아사"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "아사"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 15:16-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"marshal","lead":"아사","target":"바아사","mode":"reconstruction","setting":"courtyard","effect":"signal","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"아사"},{"action":"lift","duration":1.2,"actor":"아사"},{"action":"signal","duration":1.5,"actor":"아사"},{"action":"point","duration":1.8,"actor":"아사"},{"action":"march","duration":1.5,"actor":"아사"},{"action":"stand","duration":1.2,"actor":"아사"}],"duration":8.2,"support":null,"ref":"열왕기상 15:16-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-16-1",
@@ -1583,53 +663,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "시므리",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "palace",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "시므리"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "시므리"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "시므리"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "시므리"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "시므리"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "시므리"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 16:8-20",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"시므리","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"palace","beats":[{"action":"listen","duration":1,"actor":"시므리"},{"action":"turn","duration":1.2,"actor":"시므리"},{"action":"speak","duration":1.5,"actor":"시므리"},{"action":"point","duration":1.8,"actor":"시므리"},{"action":"listen","duration":1.5,"actor":"시므리"},{"action":"lower","duration":1.2,"actor":"시므리"}],"duration":8.2,"support":null,"ref":"열왕기상 16:8-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-17-1",
@@ -1657,53 +691,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "feed",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "pasture",
-        "effect": "food",
-        "emotion": "gentle",
-        "prop": "raven",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "reach",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "eat",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 17:2-7",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"feed","lead":"엘리야","target":null,"mode":"reconstruction","setting":"pasture","effect":"food","emotion":"gentle","prop":"raven","beats":[{"action":"inspect","duration":1,"actor":"엘리야"},{"action":"reach","duration":1.2,"actor":"엘리야"},{"action":"grasp","duration":1.5,"actor":"엘리야"},{"action":"lift","duration":1.8,"actor":"엘리야"},{"action":"eat","duration":1.5,"actor":"엘리야"},{"action":"lower","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 17:2-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-17-2",
@@ -1734,53 +722,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "provision",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "flour",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 17:8-16",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"provision","lead":"엘리야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"flour","beats":[{"action":"inspect","duration":1,"actor":"엘리야"},{"action":"gather","duration":1.2,"actor":"엘리야"},{"action":"lift","duration":1.5,"actor":"엘리야"},{"action":"extend","duration":1.8,"actor":"엘리야"},{"action":"release","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 17:8-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-18-1",
@@ -1810,53 +752,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "fire",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 18:17-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"엘리야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"fire","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"kneel","duration":1.2,"actor":"엘리야"},{"action":"lift","duration":1.5,"actor":"엘리야"},{"action":"pray","duration":1.8,"actor":"엘리야"},{"action":"pray","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 18:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-18-2",
@@ -1883,53 +779,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 18:25-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"엘리야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"turn","duration":1.2,"actor":"엘리야"},{"action":"speak","duration":1.5,"actor":"엘리야"},{"action":"point","duration":1.8,"actor":"엘리야"},{"action":"listen","duration":1.5,"actor":"엘리야"},{"action":"lower","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 18:25-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-18-3",
@@ -1962,53 +812,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "fire",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "fire",
-        "emotion": "surprised",
-        "prop": "stone",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "look",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 18:30-40",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"fire","lead":"엘리야","target":null,"mode":"reconstruction","setting":"hills","effect":"fire","emotion":"surprised","prop":"stone","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"halt","duration":1.5,"actor":"엘리야"},{"action":"recoil","duration":1.8,"actor":"엘리야"},{"action":"look","duration":1.5,"actor":"엘리야"},{"action":"lower","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 18:30-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-18-4",
@@ -2036,53 +840,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "cloud",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "cloud",
-        "emotion": "surprised",
-        "prop": "cloud",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bow",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 18:41-46",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"cloud","lead":"엘리야","target":null,"mode":"reconstruction","setting":"hills","effect":"cloud","emotion":"surprised","prop":"cloud","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"listen","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.8,"actor":"엘리야"},{"action":"lower","duration":1.5,"actor":"엘리야"},{"action":"stand","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 18:41-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-19-0",
@@ -2108,53 +866,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "flee",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "worried",
-        "prop": "tree",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "run",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 19:1-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"flee","lead":"엘리야","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"tree","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"startle","duration":1.2,"actor":"엘리야"},{"action":"turn","duration":1.5,"actor":"엘리야"},{"action":"run","duration":1.8,"actor":"엘리야"},{"action":"run","duration":1.5,"actor":"엘리야"},{"action":"look","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 19:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-19-1",
@@ -2180,53 +892,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "feed",
-        "lead": "천사",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "pasture",
-        "effect": "food",
-        "emotion": "gentle",
-        "prop": "water-supply",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "천사"
-          },
-          {
-            "action": "reach",
-            "duration": 1.2,
-            "actor": "천사"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "천사"
-          },
-          {
-            "action": "lift",
-            "duration": 1.8,
-            "actor": "천사"
-          },
-          {
-            "action": "eat",
-            "duration": 1.5,
-            "actor": "천사"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "천사"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 19:5-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"feed","lead":"천사","target":null,"mode":"reconstruction","setting":"pasture","effect":"food","emotion":"gentle","prop":"water-supply","beats":[{"action":"inspect","duration":1,"actor":"천사"},{"action":"reach","duration":1.2,"actor":"천사"},{"action":"grasp","duration":1.5,"actor":"천사"},{"action":"lift","duration":1.8,"actor":"천사"},{"action":"eat","duration":1.5,"actor":"천사"},{"action":"lower","duration":1.2,"actor":"천사"}],"duration":8.2,"support":null,"ref":"열왕기상 19:5-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-19-2",
@@ -2258,53 +924,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "listen",
-        "lead": "엘리야",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "bush",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 19:9-18",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"listen","lead":"엘리야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"bush","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"turn","duration":1.2,"actor":"엘리야"},{"action":"speak","duration":1.5,"actor":"엘리야"},{"action":"point","duration":1.8,"actor":"엘리야"},{"action":"listen","duration":1.5,"actor":"엘리야"},{"action":"lower","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 19:9-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-19-3",
@@ -2330,53 +950,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "follow",
-        "lead": "엘리야",
-        "target": "엘리사",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "cloak",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "receive",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "walk",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 19:19-21",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"follow","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"cloak","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"receive","duration":1.2,"actor":"엘리야"},{"action":"turn","duration":1.5,"actor":"엘리야"},{"action":"walk","duration":1.8,"actor":"엘리야"},{"action":"walk","duration":1.5,"actor":"엘리야"},{"action":"stand","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 19:19-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-20-0",
@@ -2411,53 +985,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "siege",
-        "lead": "아합",
-        "target": "벤하닷",
-        "mode": "reconstruction",
-        "setting": "wall",
-        "effect": "collapse",
-        "emotion": "worried",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "아합"
-          },
-          {
-            "action": "push",
-            "duration": 1.2,
-            "actor": "아합"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.8,
-            "actor": "아합"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.2,
-            "actor": "아합"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 20:1-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"siege","lead":"아합","target":"벤하닷","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"아합"},{"action":"push","duration":1.2,"actor":"아합"},{"action":"brace","duration":1.5,"actor":"아합"},{"action":"recoil","duration":1.8,"actor":"아합"},{"action":"retreat","duration":1.5,"actor":"아합"},{"action":"mourn","duration":1.2,"actor":"아합"}],"duration":8.2,"support":null,"ref":"열왕기상 20:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-21-1",
@@ -2491,53 +1019,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "이세벨",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "signet",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "이세벨"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "이세벨"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "이세벨"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "이세벨"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "이세벨"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "이세벨"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 21:5-16",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"이세벨","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"signet","beats":[{"action":"listen","duration":1,"actor":"이세벨"},{"action":"turn","duration":1.2,"actor":"이세벨"},{"action":"speak","duration":1.5,"actor":"이세벨"},{"action":"point","duration":1.8,"actor":"이세벨"},{"action":"listen","duration":1.5,"actor":"이세벨"},{"action":"lower","duration":1.2,"actor":"이세벨"}],"duration":8.2,"support":null,"ref":"열왕기상 21:5-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-21-3",
@@ -2562,53 +1044,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "repent",
-        "lead": "아합",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tear",
-        "emotion": "sad",
-        "prop": "robe",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아합"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "아합"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "tear",
-            "duration": 1.8,
-            "actor": "아합"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "pray",
-            "duration": 1.2,
-            "actor": "아합"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 21:27-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"repent","lead":"아합","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"아합"},{"action":"startle","duration":1.2,"actor":"아합"},{"action":"grasp","duration":1.5,"actor":"아합"},{"action":"tear","duration":1.8,"actor":"아합"},{"action":"kneel","duration":1.5,"actor":"아합"},{"action":"pray","duration":1.2,"actor":"아합"}],"duration":8.2,"support":null,"ref":"열왕기상 21:27-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-22-2",
@@ -2642,53 +1078,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "wounded",
-        "lead": "아합",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "armor",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "아합"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "아합"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "아합"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "아합"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 22:29-40",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"wounded","lead":"아합","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"armor","beats":[{"action":"startle","duration":1,"actor":"아합"},{"action":"lower","duration":1.2,"actor":"아합"},{"action":"kneel","duration":1.5,"actor":"아합"},{"action":"cover-mouth","duration":1.8,"actor":"아합"},{"action":"mourn","duration":1.5,"actor":"아합"},{"action":"lower","duration":1.2,"actor":"아합"}],"duration":8.2,"support":null,"ref":"열왕기상 22:29-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-22",
@@ -2723,53 +1113,7 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {
-        "version": 2,
-        "motif": "follow",
-        "lead": "엘리야",
-        "target": "엘리사",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "cloak",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "receive",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "walk",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 19:19-21",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"follow","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"cloak","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"receive","duration":1.2,"actor":"엘리야"},{"action":"turn","duration":1.5,"actor":"엘리야"},{"action":"walk","duration":1.8,"actor":"엘리야"},{"action":"walk","duration":1.5,"actor":"엘리야"},{"action":"stand","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 19:19-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-01",
@@ -2816,53 +1160,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "두 왕위 주장이 맞서는 정치적 위기와 나단·밧세바의 개입을 분명히 해요.",
-      "animation": {
-        "version": 2,
-        "motif": "crown",
-        "lead": "아도니야",
-        "target": "나단",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "crown",
-        "emotion": "joy",
-        "prop": "crown",
-        "beats": [
-          {
-            "action": "bow",
-            "duration": 1,
-            "actor": "아도니야"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "아도니야"
-          },
-          {
-            "action": "receive",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "wear",
-            "duration": 1.8,
-            "actor": "아도니야"
-          },
-          {
-            "action": "rise",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아도니야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 1:5-27",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"crown","lead":"아도니야","target":"나단","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"아도니야"},{"action":"kneel","duration":1.2,"actor":"아도니야"},{"action":"receive","duration":1.5,"actor":"아도니야"},{"action":"wear","duration":1.8,"actor":"아도니야"},{"action":"rise","duration":1.5,"actor":"아도니야"},{"action":"bow","duration":1.2,"actor":"아도니야"}],"duration":8.2,"support":null,"ref":"열왕기상 1:5-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-02",
@@ -2897,53 +1195,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕위 계승과 유언의 무게를 차분하게 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "counsel",
-        "lead": "다윗",
-        "target": "솔로몬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "bed",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 2:1-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"counsel","lead":"다윗","target":"솔로몬","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"bed","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"열왕기상 2:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-03",
@@ -2980,53 +1232,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "밧세바를 중개자로 이용한 권력 다툼을 다루고 처형은 직접 보이지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "아도니야",
-        "target": "밧세바",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "palace",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아도니야"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "아도니야"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "아도니야"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "아도니야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "아도니야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 2:13-25",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"아도니야","target":"밧세바","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"palace","beats":[{"action":"listen","duration":1,"actor":"아도니야"},{"action":"turn","duration":1.2,"actor":"아도니야"},{"action":"speak","duration":1.5,"actor":"아도니야"},{"action":"point","duration":1.8,"actor":"아도니야"},{"action":"listen","duration":1.5,"actor":"아도니야"},{"action":"lower","duration":1.2,"actor":"아도니야"}],"duration":8.2,"support":null,"ref":"열왕기상 2:13-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-04",
@@ -3061,53 +1267,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "경계와 결과를 중심으로 하고 처형은 비그래픽으로 처리해요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "솔로몬",
-        "target": "시므이",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 2:36-46",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"솔로몬","target":"시므이","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"turn","duration":1.2,"actor":"솔로몬"},{"action":"speak","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"lower","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 2:36-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-05",
@@ -3140,53 +1300,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕좌는 통치 책임의 상징으로 쓰고 솔로몬의 요청과 응답을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "throne",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 3:5-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"kneel","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"pray","duration":1.8,"actor":"솔로몬"},{"action":"pray","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 3:5-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-06",
@@ -3222,53 +1336,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "아이를 위협하는 장면은 직접 묘사하지 않고 판결을 멈추는 순간을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "judgment",
-        "lead": "솔로몬",
-        "target": "두 여인",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 3:16-28",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"judgment","lead":"솔로몬","target":"두 여인","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"turn","duration":1.2,"actor":"솔로몬"},{"action":"speak","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"lower","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 3:16-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-07",
@@ -3294,53 +1362,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "공사와 언약의 말씀을 연결해 건축이 단지 왕의 업적이 아님을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "covenant",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "covenant",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pledge",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "read",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 6:11-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"covenant","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"},{"action":"extend","duration":1.5,"actor":"솔로몬"},{"action":"pledge","duration":1.8,"actor":"솔로몬"},{"action":"read","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 6:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-08",
@@ -3398,53 +1420,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "기구를 하나씩 만드는 작업 장면으로 구성해 기술과 협력에 초점을 둬요.",
-      "animation": {
-        "version": 2,
-        "motif": "craft",
-        "lead": "히람(놋 장인)",
-        "target": "솔로몬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "build",
-        "emotion": "determined",
-        "prop": "water-supply",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "히람(놋 장인)"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "히람(놋 장인)"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "히람(놋 장인)"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "히람(놋 장인)"
-          },
-          {
-            "action": "hammer",
-            "duration": 1.5,
-            "actor": "히람(놋 장인)"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "히람(놋 장인)"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 7:13-47",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"craft","lead":"히람(놋 장인)","target":"솔로몬","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"water-supply","beats":[{"action":"inspect","duration":1,"actor":"히람(놋 장인)"},{"action":"gather","duration":1.2,"actor":"히람(놋 장인)"},{"action":"lift","duration":1.5,"actor":"히람(놋 장인)"},{"action":"place","duration":1.8,"actor":"히람(놋 장인)"},{"action":"hammer","duration":1.5,"actor":"히람(놋 장인)"},{"action":"inspect","duration":1.2,"actor":"히람(놋 장인)"}],"duration":8.2,"support":null,"ref":"열왕기상 7:13-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-09",
@@ -3499,53 +1475,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "긴 기도는 반복 동작으로 축약하지 않고 서로 다른 간구 주제를 상징적으로 나눠요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "솔로몬",
-        "target": "이스라엘 자손",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 8:22-53",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"솔로몬","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"kneel","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"pray","duration":1.8,"actor":"솔로몬"},{"action":"pray","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 8:22-53","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-10",
@@ -3576,53 +1506,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "성전 건축의 성공 뒤에 놓인 언약의 조건을 분명히 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "temple",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 9:1-9",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"솔로몬"},{"action":"turn","duration":1.2,"actor":"솔로몬"},{"action":"speak","duration":1.5,"actor":"솔로몬"},{"action":"point","duration":1.8,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"lower","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 9:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-11",
@@ -3662,53 +1546,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "화려함뿐 아니라 축적된 부와 군사력의 무게도 설명해요.",
-      "animation": {
-        "version": 2,
-        "motif": "trade",
-        "lead": "솔로몬",
-        "target": "스바 여왕",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "coins",
-        "emotion": "neutral",
-        "prop": "gold",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "weigh",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "receive",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 10:14-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"trade","lead":"솔로몬","target":"스바 여왕","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"gold","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"grasp","duration":1.2,"actor":"솔로몬"},{"action":"weigh","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"extend","duration":1.5,"actor":"솔로몬"},{"action":"receive","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 10:14-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-12",
@@ -3743,53 +1581,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "혼인을 낭만적 장식으로 다루지 않고 권력과 신앙의 이탈을 설명해요.",
-      "animation": {
-        "version": 2,
-        "motif": "idol",
-        "lead": "솔로몬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "altar",
-        "effect": "idol",
-        "emotion": "worried",
-        "prop": "idol",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "point",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 11:1-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"idol","lead":"솔로몬","target":null,"mode":"reconstruction","setting":"altar","effect":"idol","emotion":"worried","prop":"idol","beats":[{"action":"look","duration":1,"actor":"솔로몬"},{"action":"point","duration":1.2,"actor":"솔로몬"},{"action":"listen","duration":1.5,"actor":"솔로몬"},{"action":"lower","duration":1.8,"actor":"솔로몬"},{"action":"turn","duration":1.5,"actor":"솔로몬"},{"action":"stand","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 11:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-13",
@@ -3825,53 +1617,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "복수의 세력을 한 장면에서 구분해 솔로몬 왕국의 불안이 커지는 흐름을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "rivalry",
-        "lead": "하닷",
-        "target": "르손",
-        "mode": "reconstruction",
-        "setting": "tent",
-        "effect": "speech",
-        "emotion": "worried",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "하닷"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "하닷"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "하닷"
-          },
-          {
-            "action": "lower",
-            "duration": 1.8,
-            "actor": "하닷"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "하닷"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "하닷"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 11:14-25",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"rivalry","lead":"하닷","target":"르손","mode":"reconstruction","setting":"tent","effect":"speech","emotion":"worried","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"하닷"},{"action":"turn","duration":1.2,"actor":"하닷"},{"action":"point","duration":1.5,"actor":"하닷"},{"action":"lower","duration":1.8,"actor":"하닷"},{"action":"turn","duration":1.5,"actor":"하닷"},{"action":"stand","duration":1.2,"actor":"하닷"}],"duration":8.2,"support":null,"ref":"열왕기상 11:14-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-14",
@@ -3897,53 +1643,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕위가 바뀌는 전환 장면이며 다음 사건의 긴장을 남겨요.",
-      "animation": {
-        "version": 2,
-        "motif": "crown",
-        "lead": "솔로몬",
-        "target": "르호보암",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "crown",
-        "emotion": "joy",
-        "prop": "throne",
-        "beats": [
-          {
-            "action": "bow",
-            "duration": 1,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "receive",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "wear",
-            "duration": 1.8,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "rise",
-            "duration": 1.5,
-            "actor": "솔로몬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "솔로몬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 11:41-43",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"crown","lead":"솔로몬","target":"르호보암","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"throne","beats":[{"action":"bow","duration":1,"actor":"솔로몬"},{"action":"kneel","duration":1.2,"actor":"솔로몬"},{"action":"receive","duration":1.5,"actor":"솔로몬"},{"action":"wear","duration":1.8,"actor":"솔로몬"},{"action":"rise","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 11:41-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-15",
@@ -3983,53 +1683,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "권력을 행사하는 왕과 부담을 호소하는 백성의 간격을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "dispute",
-        "lead": "르호보암",
-        "target": "노인들",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "speech",
-        "emotion": "angry",
-        "prop": "yoke",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "르호보암"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "르호보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "르호보암"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "르호보암"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "르호보암"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 12:1-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"dispute","lead":"르호보암","target":"노인들","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"yoke","beats":[{"action":"listen","duration":1,"actor":"르호보암"},{"action":"turn","duration":1.2,"actor":"르호보암"},{"action":"point","duration":1.5,"actor":"르호보암"},{"action":"point","duration":1.8,"actor":"르호보암"},{"action":"listen","duration":1.5,"actor":"르호보암"},{"action":"lower","duration":1.2,"actor":"르호보암"}],"duration":8.2,"support":null,"ref":"열왕기상 12:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-16",
@@ -4061,53 +1715,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "우상을 세우는 정치적 의도를 드러내며 예배를 편의로 바꾼 결과를 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "idol",
-        "lead": "여로보암",
-        "target": "이스라엘 자손",
-        "mode": "reconstruction",
-        "setting": "altar",
-        "effect": "idol",
-        "emotion": "worried",
-        "prop": "calf",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "여로보암"
-          },
-          {
-            "action": "point",
-            "duration": 1.2,
-            "actor": "여로보암"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "여로보암"
-          },
-          {
-            "action": "lower",
-            "duration": 1.8,
-            "actor": "여로보암"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "여로보암"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "여로보암"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 12:25-33",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"idol","lead":"여로보암","target":"이스라엘 자손","mode":"reconstruction","setting":"altar","effect":"idol","emotion":"worried","prop":"calf","beats":[{"action":"look","duration":1,"actor":"여로보암"},{"action":"point","duration":1.2,"actor":"여로보암"},{"action":"listen","duration":1.5,"actor":"여로보암"},{"action":"lower","duration":1.8,"actor":"여로보암"},{"action":"turn","duration":1.5,"actor":"여로보암"},{"action":"stand","duration":1.2,"actor":"여로보암"}],"duration":8.2,"support":null,"ref":"열왕기상 12:25-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-17",
@@ -4135,53 +1743,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "손의 변화는 제한된 픽셀 효과로 나타내고 초자연적 사건을 과장하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "heal",
-        "lead": "하나님의 사람",
-        "target": "여로보암",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "heal",
-        "emotion": "gentle",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "reach",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "touch",
-            "duration": 1.8,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 13:6-10",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"heal","lead":"하나님의 사람","target":"여로보암","mode":"reconstruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"하나님의 사람"},{"action":"reach","duration":1.2,"actor":"하나님의 사람"},{"action":"lift","duration":1.5,"actor":"하나님의 사람"},{"action":"touch","duration":1.8,"actor":"하나님의 사람"},{"action":"lower","duration":1.5,"actor":"하나님의 사람"},{"action":"inspect","duration":1.2,"actor":"하나님의 사람"}],"duration":8.2,"support":null,"ref":"열왕기상 13:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-18",
@@ -4213,53 +1775,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "속임수와 잘못된 판단을 중심으로 하고 식탁은 소품으로만 사용해요.",
-      "animation": {
-        "version": 2,
-        "motif": "conceal",
-        "lead": "하나님의 사람",
-        "target": "늙은 선지자",
-        "mode": "reconstruction",
-        "setting": "water",
-        "effect": "cloth-decay",
-        "emotion": "determined",
-        "prop": "bread",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "fold",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "bury",
-            "duration": 1.8,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "wait",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 13:11-19",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"conceal","lead":"하나님의 사람","target":"늙은 선지자","mode":"reconstruction","setting":"water","effect":"cloth-decay","emotion":"determined","prop":"bread","beats":[{"action":"grasp","duration":1,"actor":"하나님의 사람"},{"action":"fold","duration":1.2,"actor":"하나님의 사람"},{"action":"carry","duration":1.5,"actor":"하나님의 사람"},{"action":"bury","duration":1.8,"actor":"하나님의 사람"},{"action":"wait","duration":1.5,"actor":"하나님의 사람"},{"action":"inspect","duration":1.2,"actor":"하나님의 사람"}],"duration":8.2,"support":null,"ref":"열왕기상 13:11-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-19",
@@ -4297,53 +1813,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "죽음은 직접 묘사하지 않고 사자와 멈춰 선 길, 장례로 사건의 결과를 전해요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "하나님의 사람",
-        "target": "늙은 선지자",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "lion",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "하나님의 사람"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "하나님의 사람"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 13:20-34",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"하나님의 사람","target":"늙은 선지자","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"lion","beats":[{"action":"listen","duration":1,"actor":"하나님의 사람"},{"action":"turn","duration":1.2,"actor":"하나님의 사람"},{"action":"speak","duration":1.5,"actor":"하나님의 사람"},{"action":"point","duration":1.8,"actor":"하나님의 사람"},{"action":"listen","duration":1.5,"actor":"하나님의 사람"},{"action":"lower","duration":1.2,"actor":"하나님의 사람"}],"duration":8.2,"support":null,"ref":"열왕기상 13:20-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-20",
@@ -4386,53 +1856,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "변장은 숨기려는 시도임을 분명히 하고 아이의 죽음은 직접 보여주지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "conceal",
-        "lead": "여로보암의 아내",
-        "target": "아히야",
-        "mode": "reconstruction",
-        "setting": "water",
-        "effect": "cloth-decay",
-        "emotion": "determined",
-        "prop": "robe",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "여로보암의 아내"
-          },
-          {
-            "action": "fold",
-            "duration": 1.2,
-            "actor": "여로보암의 아내"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "여로보암의 아내"
-          },
-          {
-            "action": "bury",
-            "duration": 1.8,
-            "actor": "여로보암의 아내"
-          },
-          {
-            "action": "wait",
-            "duration": 1.5,
-            "actor": "여로보암의 아내"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "여로보암의 아내"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 14:1-20",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"conceal","lead":"여로보암의 아내","target":"아히야","mode":"reconstruction","setting":"water","effect":"cloth-decay","emotion":"determined","prop":"robe","beats":[{"action":"grasp","duration":1,"actor":"여로보암의 아내"},{"action":"fold","duration":1.2,"actor":"여로보암의 아내"},{"action":"carry","duration":1.5,"actor":"여로보암의 아내"},{"action":"bury","duration":1.8,"actor":"여로보암의 아내"},{"action":"wait","duration":1.5,"actor":"여로보암의 아내"},{"action":"inspect","duration":1.2,"actor":"여로보암의 아내"}],"duration":8.2,"support":null,"ref":"열왕기상 14:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-21",
@@ -4471,53 +1895,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "개혁과 정치적 군사 동맹을 분리해 선악의 단순한 승리로만 표현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "demolish",
-        "lead": "아사",
-        "target": "바아사",
-        "mode": "reconstruction",
-        "setting": "altar",
-        "effect": "fragments",
-        "emotion": "determined",
-        "prop": "altar",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "아사"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "아사"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "아사"
-          },
-          {
-            "action": "strike",
-            "duration": 1.8,
-            "actor": "아사"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.5,
-            "actor": "아사"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "아사"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 15:9-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"demolish","lead":"아사","target":"바아사","mode":"reconstruction","setting":"altar","effect":"fragments","emotion":"determined","prop":"altar","beats":[{"action":"inspect","duration":1,"actor":"아사"},{"action":"grasp","duration":1.2,"actor":"아사"},{"action":"lift","duration":1.5,"actor":"아사"},{"action":"strike","duration":1.8,"actor":"아사"},{"action":"recoil","duration":1.5,"actor":"아사"},{"action":"inspect","duration":1.2,"actor":"아사"}],"duration":8.2,"support":null,"ref":"열왕기상 15:9-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-22",
@@ -4555,53 +1933,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "도시 건설과 우상 숭배의 확산을 별도 단계로 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "build",
-        "lead": "오므리",
-        "target": "아합",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "build",
-        "emotion": "determined",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "오므리"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "오므리"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "오므리"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "오므리"
-          },
-          {
-            "action": "hammer",
-            "duration": 1.5,
-            "actor": "오므리"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "오므리"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 16:21-34",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"build","lead":"오므리","target":"아합","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"house","beats":[{"action":"inspect","duration":1,"actor":"오므리"},{"action":"gather","duration":1.2,"actor":"오므리"},{"action":"lift","duration":1.5,"actor":"오므리"},{"action":"place","duration":1.8,"actor":"오므리"},{"action":"hammer","duration":1.5,"actor":"오므리"},{"action":"inspect","duration":1.2,"actor":"오므리"}],"duration":8.2,"support":null,"ref":"열왕기상 16:21-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-23",
@@ -4633,53 +1965,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "죽음과 회복을 자극적으로 표현하지 않고 어머니의 애도에서 기쁨으로 이동해요.",
-      "animation": {
-        "version": 2,
-        "motif": "raise-dead",
-        "lead": "엘리야",
-        "target": "사르밧 과부",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "resurrection",
-        "emotion": "gentle",
-        "prop": "bed",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "pray",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "reach",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bless",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 17:17-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"raise-dead","lead":"엘리야","target":"사르밧 과부","mode":"reconstruction","setting":"chamber","effect":"resurrection","emotion":"gentle","prop":"bed","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"pray","duration":1.2,"actor":"엘리야"},{"action":"speak","duration":1.5,"actor":"엘리야"},{"action":"reach","duration":1.8,"actor":"엘리야"},{"action":"lift","duration":1.5,"actor":"엘리야"},{"action":"bless","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 17:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-24",
@@ -4718,53 +2004,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "숨겨진 선지자들과 오바댜의 위험한 충성을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "conceal",
-        "lead": "엘리야",
-        "target": "오바댜",
-        "mode": "reconstruction",
-        "setting": "water",
-        "effect": "cloth-decay",
-        "emotion": "determined",
-        "prop": "scene-marker",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "fold",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bury",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "wait",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 18:1-16",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"conceal","lead":"엘리야","target":"오바댜","mode":"reconstruction","setting":"water","effect":"cloth-decay","emotion":"determined","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"엘리야"},{"action":"fold","duration":1.2,"actor":"엘리야"},{"action":"carry","duration":1.5,"actor":"엘리야"},{"action":"bury","duration":1.8,"actor":"엘리야"},{"action":"wait","duration":1.5,"actor":"엘리야"},{"action":"inspect","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 18:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-25",
@@ -4819,53 +2059,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "전쟁 승리와 뒤이은 정치적 타협을 이어서 보여주며, 인물을 구분해요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "아합",
-        "target": "벤하닷",
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "tent",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "아합"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "아합"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "아합"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "아합"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "아합"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 20:13-43",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"아합","target":"벤하닷","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"tent","beats":[{"action":"look","duration":1,"actor":"아합"},{"action":"signal","duration":1.2,"actor":"아합"},{"action":"brace","duration":1.5,"actor":"아합"},{"action":"run","duration":1.8,"actor":"아합"},{"action":"halt","duration":1.5,"actor":"아합"},{"action":"lift","duration":1.2,"actor":"아합"}],"duration":8.2,"support":null,"ref":"열왕기상 20:13-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-26",
@@ -4892,53 +2086,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "나봇의 권리와 왕의 탐욕을 대비하며 거절을 무례한 행동으로 표현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "refuse",
-        "lead": "나봇",
-        "target": "아합",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "refuse",
-        "emotion": "determined",
-        "prop": "vineyard",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "나봇"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "나봇"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "나봇"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.8,
-            "actor": "나봇"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "나봇"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "나봇"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 21:1-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"refuse","lead":"나봇","target":"아합","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"vineyard","beats":[{"action":"listen","duration":1,"actor":"나봇"},{"action":"turn","duration":1.2,"actor":"나봇"},{"action":"halt","duration":1.5,"actor":"나봇"},{"action":"retreat","duration":1.8,"actor":"나봇"},{"action":"lower","duration":1.5,"actor":"나봇"},{"action":"stand","duration":1.2,"actor":"나봇"}],"duration":8.2,"support":null,"ref":"열왕기상 21:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-27",
@@ -4971,53 +2119,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "예언을 행동보다 말과 반응으로 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "prophecy",
-        "lead": "엘리야",
-        "target": "아합",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "light",
-        "emotion": "surprised",
-        "prop": "vineyard",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "엘리야"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "엘리야"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "엘리야"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "엘리야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 21:17-26",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"prophecy","lead":"엘리야","target":"아합","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"vineyard","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"speak","duration":1.5,"actor":"엘리야"},{"action":"sway","duration":1.8,"actor":"엘리야"},{"action":"lower","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기상 21:17-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-28",
@@ -5070,53 +2172,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "환상·예언을 실제 회의 현장과 구분해 상징 장면으로 제시해요.",
-      "animation": {
-        "version": 2,
-        "motif": "vision",
-        "lead": "미가야",
-        "target": "아합",
-        "mode": "vision",
-        "setting": "night",
-        "effect": "vision",
-        "emotion": "surprised",
-        "prop": "scene-marker",
-        "beats": [
-          {
-            "action": "sit",
-            "duration": 1,
-            "actor": "미가야"
-          },
-          {
-            "action": "lie",
-            "duration": 1.2,
-            "actor": "미가야"
-          },
-          {
-            "action": "sleep",
-            "duration": 1.5,
-            "actor": "미가야"
-          },
-          {
-            "action": "look",
-            "duration": 1.8,
-            "actor": "미가야"
-          },
-          {
-            "action": "startle",
-            "duration": 1.5,
-            "actor": "미가야"
-          },
-          {
-            "action": "rise",
-            "duration": 1.2,
-            "actor": "미가야"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 22:1-28",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"vision","lead":"미가야","target":"아합","mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"미가야"},{"action":"lie","duration":1.2,"actor":"미가야"},{"action":"sleep","duration":1.5,"actor":"미가야"},{"action":"look","duration":1.8,"actor":"미가야"},{"action":"startle","duration":1.5,"actor":"미가야"},{"action":"rise","duration":1.2,"actor":"미가야"}],"duration":8.2,"support":null,"ref":"열왕기상 22:1-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ki-extra-29",
@@ -5152,53 +2208,60 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "해상 계획이 실행되지 못한 결말을 배를 띄우기 전의 중단으로 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "halt",
-        "lead": "여호사밧",
-        "target": "아하시야",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "none",
-        "emotion": "worried",
-        "prop": "boat",
-        "beats": [
-          {
-            "action": "walk",
-            "duration": 1,
-            "actor": "여호사밧"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "여호사밧"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "여호사밧"
-          },
-          {
-            "action": "lower",
-            "duration": 1.8,
-            "actor": "여호사밧"
-          },
-          {
-            "action": "stand",
-            "duration": 1.5,
-            "actor": "여호사밧"
-          },
-          {
-            "action": "listen",
-            "duration": 1.2,
-            "actor": "여호사밧"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "열왕기상 22:41-53",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"halt","lead":"여호사밧","target":"아하시야(아합의 아들)","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"boat","beats":[{"action":"walk","duration":1,"actor":"여호사밧"},{"action":"look","duration":1.2,"actor":"여호사밧"},{"action":"halt","duration":1.5,"actor":"여호사밧"},{"action":"lower","duration":1.8,"actor":"여호사밧"},{"action":"stand","duration":1.5,"actor":"여호사밧"},{"action":"listen","duration":1.2,"actor":"여호사밧"}],"duration":8.2,"support":null,"ref":"열왕기상 22:41-53","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ki-extra-4-0",
+      "code": "1ki",
+      "chapter": 4,
+      "title": "솔로몬이 열두 관장을 세워 나라를 돌보다",
+      "actors": [
+        "솔로몬",
+        "아사리아(사독의 아들)",
+        "여호사밧",
+        "열두 관장"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기상 4:1-28",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 솔로몬이 관리들을 세우고 열두 관장이 각 지역의 양식을 차례대로 맡아 나라의 평화와 번영을 뒷받침해요."
+      ],
+      "study": "솔로몬이 관리들을 세우고 열두 관장이 각 지역의 양식을 차례대로 맡아 나라의 평화와 번영을 뒷받침해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"솔로몬","target":"아사리아(사독의 아들)","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"솔로몬"},{"action":"kneel","duration":1.2,"actor":"솔로몬"},{"action":"receive","duration":1.5,"actor":"솔로몬"},{"action":"wear","duration":1.8,"actor":"솔로몬"},{"action":"rise","duration":1.5,"actor":"솔로몬"},{"action":"bow","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 4:1-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
