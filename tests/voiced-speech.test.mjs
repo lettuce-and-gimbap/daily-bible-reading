@@ -6,6 +6,7 @@ import {OBJECT_MONOLOGUES,objectMonologue} from '../js/features/pixel-bible/obje
 import {personalLines} from '../js/features/pixel-bible/personal-lines.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
+import {PENTATEUCH_DIALOGUE_ROWS} from '../js/features/pixel-bible/old-testament/law.js';
 import {objectLinesFor} from '../js/features/pixel-bible/object-scenes.js';
 import {ELIJAH_SCENES} from '../js/features/pixel-bible/scenes.js';
 import {TWO_KINGS_DIALOGUE_ROWS} from '../js/features/pixel-bible/2ki-dialogue.js';
@@ -117,4 +118,13 @@ test('창세기 대사의 개별 참조는 각 문장의 실제 사건 범위와
  }
  assert.deepEqual(findGenesis(13,'아브람')[6],['8-9','8-9']);
  assert.deepEqual(findGenesis(13,'롯')[6],['10-11','12-13']);
+});
+
+test('출애굽기 대사 42묶음은 문장마다 장 안의 개별 절 참조를 가진다',()=>{
+ const rows=PENTATEUCH_DIALOGUE_ROWS.filter(row=>row[0]==='exo');assert.equal(rows.length,42);
+ for(const row of rows){
+  const [low,high]=row[3].split('-').map(Number);
+  assert.equal(row[7]?.length,row[4].length,`${row[1]}장 ${row[2]} 줄 참조`);
+  for(const ref of row[7]){const [start,end=start]=ref.split('-').map(Number);assert(start>=low&&end<=high,`${row[1]}장 ${row[2]} ${ref} 범위 밖`);}
+ }
 });
