@@ -5,7 +5,9 @@ let calSel = todayStr(); // 달력에서 고른 날
 let bookSel = null; // 권별 진행에서 고른 권 코드
 let glanceMode = "read"; // 통독 현황 한눈에 보기: "read" 통독 · "qt" QT 본문 범위 (따로 전환)
 let qtBookSel = null; // QT 모드에서 고른 권 코드
-let statsSubpage = ""; // 관리의 색상 / 계정·설정 별도 화면
+let statsSubpage = ""; // 관리의 색상 / 계정·설정 / 픽셀 자료실 별도 화면
+let pixelReferenceCategory = "all";
+let pixelReferenceQuery = "";
 const qtCoverMap = {}; // QT 날짜 → { ref: 본문 범위, idx: 다룬 장 번호들 } (한 번 받으면 다시 받지 않음)
 
 function ring(pct) {
@@ -91,6 +93,7 @@ function renderStats() {
     <div class="stats-page-links" aria-label="관리 설정">
       <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
       <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
+      <button type="button" class="stats-page-link" data-stats-page="pixel-library"><span aria-hidden="true">🧩</span><b>픽셀 자료실</b></button>
     </div>
     `;
 
@@ -112,8 +115,12 @@ function renderStats() {
 }
 
 function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
-  const title = page === "colors" ? "색상" : "계정·설정";
+  const title = page === "colors" ? "색상" : page === "pixel-library" ? "픽셀 자료실" : "계정·설정";
   const header = `<header class="stats-subpage-head"><button type="button" id="stats-subpage-back" aria-label="관리 화면으로 돌아가기">←</button><h1>${title}</h1></header>`;
+  if (page === "pixel-library") {
+    renderPixelReferenceLibrary(header);
+    return;
+  }
   if (page === "colors") {
     app.innerHTML = `${header}${ScriptureStudy.settingsHtml()}`;
     $("#stats-subpage-back").addEventListener("click", () => { statsSubpage = ""; renderStats(); });
@@ -199,6 +206,53 @@ function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
     location.hash = "#today";
     route();
   });
+}
+
+async function renderPixelReferenceLibrary(header) {
+  app.innerHTML = `${header}<section class="pixel-reference-library card"><p class="muted">픽셀 동작·인체 포즈·성경 시대 시각 자료·배경과 제작 도구를 주제별로 찾아볼 수 있어요.</p><div id="pixel-reference-content" aria-live="polite"><p class="muted">자료 목록을 불러오는 중…</p></div></section>`;
+  $("#stats-subpage-back").addEventListener("click", () => { statsSubpage = ""; renderStats(); });
+  try {
+    const response = await fetch("data/pixel-bible/reference-library.json", { cache: "no-cache" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const database = await response.json();
+    if (!Array.isArray(database.categories) || !Array.isArray(database.references)) throw new Error("자료 형식이 올바르지 않음");
+    const host = $("#pixel-reference-content");
+    if (!host) return;
+    host.innerHTML = pixelReferenceLibraryHtml(database);
+    const query = host.querySelector("[data-reference-search]");
+    query.value = pixelReferenceQuery;
+    const update = () => {
+      pixelReferenceCategory = host.querySelector("[data-reference-category].on")?.dataset.referenceCategory || "all";
+      pixelReferenceQuery = query.value;
+      const filtered = database.references.filter((item) => {
+        const categoryMatch = pixelReferenceCategory === "all" || item.category === pixelReferenceCategory;
+        const haystack = [item.title, item.summary, item.pixelBibleUse, item.tags.join(" "), item.access, item.license].join(" ").toLocaleLowerCase();
+        return categoryMatch && haystack.includes(pixelReferenceQuery.trim().toLocaleLowerCase());
+      });
+      host.querySelector("[data-reference-count]").textContent = `${filtered.length}개 자료`;
+      host.querySelector("[data-reference-list]").innerHTML = filtered.length ? filtered.map(pixelReferenceCardHtml).join("") : '<p class="muted">조건에 맞는 자료가 없어요.</p>';
+    };
+    host.querySelectorAll("[data-reference-category]").forEach((button) => button.addEventListener("click", () => {
+      host.querySelectorAll("[data-reference-category]").forEach((entry) => entry.classList.toggle("on", entry === button));
+      update();
+    }));
+    query.addEventListener("input", update);
+    update();
+  } catch (error) {
+    const host = $("#pixel-reference-content");
+    if (host) host.innerHTML = '<p class="muted">자료 목록을 불러오지 못했어요. 연결을 확인한 뒤 다시 열어 주세요.</p>';
+  }
+}
+
+function pixelReferenceLibraryHtml(database) {
+  return `<label class="pixel-reference-search">자료 검색<input type="search" data-reference-search placeholder="예: 걷기, 옷감, 타일맵" autocomplete="off"></label>
+    <div class="pixel-reference-categories" aria-label="자료 분류"><button type="button" class="${pixelReferenceCategory === "all" ? "on" : ""}" data-reference-category="all">전체</button>${database.categories.map((category) => `<button type="button" class="${pixelReferenceCategory === category.id ? "on" : ""}" data-reference-category="${esc(category.id)}">${esc(category.name)}</button>`).join("")}</div>
+    <p class="pixel-reference-count" data-reference-count></p><div class="pixel-reference-list" data-reference-list></div>
+    <p class="pixel-reference-disclaimer">외부 자료의 설명은 원 사이트의 자료 유형을 요약한 안내입니다. 이미지·도안은 저장소에 복제하지 않으며, 실제 제작물에 재사용할 때는 각 항목의 라이선스와 출처 조건을 다시 확인해 주세요.</p>`;
+}
+
+function pixelReferenceCardHtml(item) {
+  return `<article class="pixel-reference-card"><header><span>${esc(item.sourceType)}</span><small>${esc(item.checkedAt)} 확인</small></header><h3><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)} ↗</a></h3><p>${esc(item.summary)}</p><p><b>픽셀바이블 참고:</b> ${esc(item.pixelBibleUse)}</p><footer><span>${esc(item.access)}</span><span>${esc(item.license)}</span></footer><div class="pixel-reference-tags">${item.tags.map((tag) => `<span>${esc(tag)}</span>`).join("")}</div></article>`;
 }
 
 // ── 통독표 (예전엔 통독 화면 패널, 이제 관리 화면 카드) ──

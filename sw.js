@@ -228,7 +228,7 @@ self.addEventListener("notificationclick", (event) => {
   })());
 });
 
-// 화면 파일(HTML·스크립트·스타일)은 매번 서버에 확인해서 받음. 브라우저 캐시의 예전 파일이 먼저 떠서
+// 화면 파일(HTML·스크립트·스타일)과 픽셀 자료실 목록은 매번 서버에 확인해서 받음. 브라우저 캐시의 예전 파일이 먼저 떠서
 // 접속 직후 버전이 바뀌는 일을 막음. 오프라인이면 마지막으로 받아 둔 파일을 씀
 const SHELL_CACHE = "app-shell-v1";
 self.addEventListener("fetch", (event) => {
@@ -236,7 +236,7 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
-  const isShell = req.mode === "navigate" || url.pathname.endsWith("/") || /\.(html|js|css)$/.test(url.pathname);
+  const isShell = req.mode === "navigate" || url.pathname.endsWith("/") || /\.(html|js|css)$/.test(url.pathname) || /\/data\/pixel-bible\/reference-library\.json$/.test(url.pathname);
   if (!isShell) return;
   event.respondWith((async () => {
     try {
