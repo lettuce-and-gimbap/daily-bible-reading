@@ -27,7 +27,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"scroll","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 1:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": null,
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 1:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-2-0",
@@ -54,7 +100,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"vision","lead":"천사","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"rope","beats":[{"action":"sit","duration":1,"actor":"천사"},{"action":"lie","duration":1.2,"actor":"천사"},{"action":"sleep","duration":1.5,"actor":"천사"},{"action":"look","duration":1.8,"actor":"천사"},{"action":"startle","duration":1.5,"actor":"천사"},{"action":"rise","duration":1.2,"actor":"천사"}],"duration":8.2,"support":null,"ref":"스가랴 2:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "천사",
+        "target": null,
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "rope",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "천사"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "천사"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "천사"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "천사"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "천사"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "천사"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 2:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-4-1",
@@ -81,7 +173,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"vision","lead":"스룹바벨","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"temple","beats":[{"action":"sit","duration":1,"actor":"스룹바벨"},{"action":"lie","duration":1.2,"actor":"스룹바벨"},{"action":"sleep","duration":1.5,"actor":"스룹바벨"},{"action":"look","duration":1.8,"actor":"스룹바벨"},{"action":"startle","duration":1.5,"actor":"스룹바벨"},{"action":"rise","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"스가랴 4:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스룹바벨",
+        "target": null,
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 4:6-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-6-1",
@@ -106,7 +244,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"crown","lead":"여호수아","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"여호수아"},{"action":"kneel","duration":1.2,"actor":"여호수아"},{"action":"receive","duration":1.5,"actor":"여호수아"},{"action":"wear","duration":1.8,"actor":"여호수아"},{"action":"rise","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"스가랴 6:9-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "crown",
+        "lead": "여호수아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "crown",
+        "emotion": "joy",
+        "prop": "crown",
+        "beats": [
+          {
+            "action": "bow",
+            "duration": 1,
+            "actor": "여호수아"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "여호수아"
+          },
+          {
+            "action": "receive",
+            "duration": 1.5,
+            "actor": "여호수아"
+          },
+          {
+            "action": "wear",
+            "duration": 1.8,
+            "actor": "여호수아"
+          },
+          {
+            "action": "rise",
+            "duration": 1.5,
+            "actor": "여호수아"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "여호수아"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 6:9-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-46",
@@ -138,7 +322,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"vision","lead":"스룹바벨","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"temple","beats":[{"action":"sit","duration":1,"actor":"스룹바벨"},{"action":"lie","duration":1.2,"actor":"스룹바벨"},{"action":"sleep","duration":1.5,"actor":"스룹바벨"},{"action":"look","duration":1.8,"actor":"스룹바벨"},{"action":"startle","duration":1.5,"actor":"스룹바벨"},{"action":"rise","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"스가랴 4:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스룹바벨",
+        "target": null,
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 4:6-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-1-0",
@@ -173,7 +403,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision-record","lead":"스가랴","target":"붉은 말 탄 사람","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스가랴"},{"action":"look","duration":1.2,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"read","duration":1.8,"actor":"스가랴"},{"action":"write","duration":1.5,"actor":"스가랴"},{"action":"bow","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 1:7-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision-record",
+        "lead": "스가랴",
+        "target": "붉은 말 탄 사람",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "scroll",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 1:7-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-1-1",
@@ -201,7 +477,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"네 뿔","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 1:18-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "네 뿔",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 1:18-21",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-2-0",
@@ -233,7 +555,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"스가랴","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"스가랴"},{"action":"bend","duration":1.2,"actor":"스가랴"},{"action":"grasp","duration":1.5,"actor":"스가랴"},{"action":"lift","duration":1.8,"actor":"스가랴"},{"action":"bundle","duration":1.5,"actor":"스가랴"},{"action":"carry","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 2:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "스가랴",
+        "target": "딸 시온",
+        "mode": "illustration",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 2:6-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-3-0",
@@ -268,7 +636,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"transfer-garment","lead":"여호수아","target":"사탄","mode":"illustration","setting":"chamber","effect":"garment","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"여호수아"},{"action":"grasp","duration":1.2,"actor":"여호수아"},{"action":"lift","duration":1.5,"actor":"여호수아"},{"action":"wear","duration":1.8,"actor":"여호수아"},{"action":"smooth","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"스가랴 3:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "transfer-garment",
+        "lead": "여호수아",
+        "target": "사탄",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "garment",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "여호수아"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "여호수아"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "여호수아"
+          },
+          {
+            "action": "wear",
+            "duration": 1.8,
+            "actor": "여호수아"
+          },
+          {
+            "action": "smooth",
+            "duration": 1.5,
+            "actor": "여호수아"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "여호수아"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 3:1-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-4-0",
@@ -297,7 +711,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"스룹바벨","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "스룹바벨",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 4:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-5-0",
@@ -325,7 +785,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "천사",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 5:1-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-5-1",
@@ -357,7 +863,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 5:5-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "천사",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 5:5-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-6-0",
@@ -388,7 +940,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "천사",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 6:1-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-7-0",
@@ -426,7 +1024,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"dispute","lead":"벧엘 사람들","target":"사레셀과 레겜멜렉","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"벧엘 사람들"},{"action":"turn","duration":1.2,"actor":"벧엘 사람들"},{"action":"point","duration":1.5,"actor":"벧엘 사람들"},{"action":"point","duration":1.8,"actor":"벧엘 사람들"},{"action":"listen","duration":1.5,"actor":"벧엘 사람들"},{"action":"lower","duration":1.2,"actor":"벧엘 사람들"}],"duration":8.2,"support":null,"ref":"스가랴 7:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "벧엘 사람들",
+        "target": "사레셀과 레겜멜렉",
+        "mode": "illustration",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "벧엘 사람들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "벧엘 사람들"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "벧엘 사람들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "벧엘 사람들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "벧엘 사람들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "벧엘 사람들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 7:1-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-8-0",
@@ -473,7 +1117,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"시온","target":"노인과 아이들","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"시온"},{"action":"lift","duration":1.2,"actor":"시온"},{"action":"speak","duration":1.5,"actor":"시온"},{"action":"bless","duration":1.8,"actor":"시온"},{"action":"lower","duration":1.5,"actor":"시온"},{"action":"bow","duration":1.2,"actor":"시온"}],"duration":8.2,"support":null,"ref":"스가랴 8:1-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "시온",
+        "target": "노인과 아이들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "시온"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "시온"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "시온"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "시온"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "시온"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "시온"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 8:1-23",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-9-0",
@@ -507,7 +1197,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"parade","lead":"시온의 딸","target":"겸손한 왕","mode":"illustration","setting":"road","effect":"horse","emotion":"joy","prop":"scene-marker","beats":[{"action":"receive","duration":1,"actor":"시온의 딸"},{"action":"wear","duration":1.2,"actor":"시온의 딸"},{"action":"sit","duration":1.5,"actor":"시온의 딸"},{"action":"hold","duration":1.8,"actor":"시온의 딸"},{"action":"look","duration":1.5,"actor":"시온의 딸"},{"action":"bow","duration":1.2,"actor":"시온의 딸"}],"duration":8.2,"support":null,"ref":"스가랴 9:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "parade",
+        "lead": "시온의 딸",
+        "target": "겸손한 왕",
+        "mode": "illustration",
+        "setting": "road",
+        "effect": "horse",
+        "emotion": "joy",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "receive",
+            "duration": 1,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "wear",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "sit",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "hold",
+            "duration": 1.8,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 9:1-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-10-0",
@@ -543,7 +1279,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"유다 족속","target":"요셉 족속","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"유다 족속"},{"action":"bend","duration":1.2,"actor":"유다 족속"},{"action":"grasp","duration":1.5,"actor":"유다 족속"},{"action":"lift","duration":1.8,"actor":"유다 족속"},{"action":"bundle","duration":1.5,"actor":"유다 족속"},{"action":"carry","duration":1.2,"actor":"유다 족속"}],"duration":8.2,"support":null,"ref":"스가랴 10:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "유다 족속",
+        "target": "요셉 족속",
+        "mode": "illustration",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "유다 족속"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "유다 족속"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "유다 족속"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "유다 족속"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "유다 족속"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "유다 족속"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 10:1-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-11-0",
@@ -582,7 +1364,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"스가랴","target":"잡혀 죽을 양 떼","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스가랴"},{"action":"read","duration":1.2,"actor":"스가랴"},{"action":"look","duration":1.5,"actor":"스가랴"},{"action":"point","duration":1.8,"actor":"스가랴"},{"action":"listen","duration":1.5,"actor":"스가랴"},{"action":"bow","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 11:4-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "스가랴",
+        "target": "잡혀 죽을 양 떼",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 11:4-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-12-0",
@@ -621,7 +1449,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"mourn","lead":"예루살렘 주민","target":"다윗의 족속","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"예루살렘 주민"},{"action":"lower","duration":1.2,"actor":"예루살렘 주민"},{"action":"kneel","duration":1.5,"actor":"예루살렘 주민"},{"action":"cover-mouth","duration":1.8,"actor":"예루살렘 주민"},{"action":"mourn","duration":1.5,"actor":"예루살렘 주민"},{"action":"lower","duration":1.2,"actor":"예루살렘 주민"}],"duration":8.2,"support":null,"ref":"스가랴 12:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "mourn",
+        "lead": "예루살렘 주민",
+        "target": "다윗의 족속",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "예루살렘 주민"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "예루살렘 주민"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "예루살렘 주민"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "예루살렘 주민"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "예루살렘 주민"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "예루살렘 주민"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 12:1-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-13-0",
@@ -654,7 +1528,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"다윗의 족속과 예루살렘 주민","target":"거짓 선지자","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"read","duration":1.2,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"look","duration":1.5,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"point","duration":1.8,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"listen","duration":1.5,"actor":"다윗의 족속과 예루살렘 주민"},{"action":"bow","duration":1.2,"actor":"다윗의 족속과 예루살렘 주민"}],"duration":8.2,"support":null,"ref":"스가랴 13:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "다윗의 족속과 예루살렘 주민",
+        "target": "거짓 선지자",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "다윗의 족속과 예루살렘 주민"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 13:1-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-14-0",
@@ -699,7 +1619,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"예루살렘 백성","target":"열국","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"예루살렘 백성"},{"action":"lie","duration":1.2,"actor":"예루살렘 백성"},{"action":"sleep","duration":1.5,"actor":"예루살렘 백성"},{"action":"look","duration":1.8,"actor":"예루살렘 백성"},{"action":"startle","duration":1.5,"actor":"예루살렘 백성"},{"action":"rise","duration":1.2,"actor":"예루살렘 백성"}],"duration":8.2,"support":null,"ref":"스가랴 14:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "예루살렘 백성",
+        "target": "열국",
+        "mode": "illustration",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "예루살렘 백성"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "예루살렘 백성"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "예루살렘 백성"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "예루살렘 백성"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "예루살렘 백성"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "예루살렘 백성"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 14:1-21",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zec-extra-4-1",
@@ -727,7 +1693,339 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"vision","lead":"스가랴","target":"천사","mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"스가랴"},{"action":"lie","duration":1.2,"actor":"스가랴"},{"action":"sleep","duration":1.5,"actor":"스가랴"},{"action":"look","duration":1.8,"actor":"스가랴"},{"action":"startle","duration":1.5,"actor":"스가랴"},{"action":"rise","duration":1.2,"actor":"스가랴"}],"duration":8.2,"support":null,"ref":"스가랴 4:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "스가랴",
+        "target": "천사",
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 4:11-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-zec-review-06-12",
+      "code": "zec",
+      "chapter": 6,
+      "title": "싹이라 이름하는 사람",
+      "actors": [
+        "싹이라 이름하는 사람"
+      ],
+      "object": "temple",
+      "ref": "스가랴 6:12-15",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 싹이라는 분이 성전을 짓고 왕좌에 앉아 다스리며, 제사장과 함께 평화의 의논이 있어요. 먼 곳 사람들도 와서 성전 짓는 일을 도와요."
+      ],
+      "study": "싹이라는 분이 성전을 짓고 왕좌에 앉아 다스리며, 제사장과 함께 평화의 의논이 있어요. 먼 곳 사람들도 와서 성전 짓는 일을 도와요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "싹이라 이름하는 사람",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "싹이라 이름하는 사람"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "싹이라 이름하는 사람"
+          },
+          {
+            "action": "reach",
+            "duration": 1.5,
+            "actor": "싹이라 이름하는 사람"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "싹이라 이름하는 사람"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "싹이라 이름하는 사람"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "싹이라 이름하는 사람"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 6:12-15",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-zec-review-09-11",
+      "code": "zec",
+      "chapter": 9,
+      "title": "언약의 피로 놓음",
+      "actors": [
+        "시온의 딸"
+      ],
+      "object": "bow",
+      "ref": "스가랴 9:11-13",
+      "verseNumbers": [
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 언약의 피를 보고 갇힌 사람들을 물 없는 구덩이에서 풀어 주세요. 소망이 있는 포로들은 요새로 돌아오고 갑절로 갚아 주세요."
+      ],
+      "study": "하나님이 언약의 피를 보고 갇힌 사람들을 물 없는 구덩이에서 풀어 주세요. 소망이 있는 포로들은 요새로 돌아오고 갑절로 갚아 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "시온의 딸",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "bow",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "reach",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 9:11-13",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-zec-review-09-14",
+      "code": "zec",
+      "chapter": 9,
+      "title": "양 떼처럼 구원하심",
+      "actors": [
+        "시온의 딸"
+      ],
+      "object": "bow",
+      "ref": "스가랴 9:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 유다를 활로 에브라임을 화살로 삼아 그리스 사람과 맞서게 하세요. 백성은 양 떼처럼 구원받고 왕관의 보석처럼 빛나요."
+      ],
+      "study": "하나님이 유다를 활로 에브라임을 화살로 삼아 그리스 사람과 맞서게 하세요. 백성은 양 떼처럼 구원받고 왕관의 보석처럼 빛나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "시온의 딸",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "bow",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "reach",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "시온의 딸"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "시온의 딸"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 9:14-17",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-zec-review-11-01",
+      "code": "zec",
+      "chapter": 11,
+      "title": "레바논의 불",
+      "actors": [
+        "스가랴"
+      ],
+      "object": "cedar",
+      "ref": "스가랴 11:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레바논의 문이 열리고 불이 백향목을 사르며 목자들이 울부짖어요. 이스라엘의 영광스러운 지도자들이 무너져요."
+      ],
+      "study": "레바논의 문이 열리고 불이 백향목을 사르며 목자들이 울부짖어요. 이스라엘의 영광스러운 지도자들이 무너져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "스가랴",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "cedar",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스가랴"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "스가랴"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "스가랴"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "스가랴"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스가랴"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스가랴 11:1-3",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
