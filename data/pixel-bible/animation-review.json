@@ -255,14 +255,14 @@
     },
     {
       "code": "psa",
-      "payloadSha256": "31138048f18601c0fd6ced9650ca678bb5b9b7626fc5150867b37e05df71a630",
-      "scenes": 30,
-      "existing": 30,
+      "payloadSha256": "259abd2254c28280967ab9c3e19ea323b84e324b58368977edef305e2da8f5f9",
+      "scenes": 45,
+      "existing": 45,
       "restored": 0,
       "corrected": 0,
-      "planned": 30,
+      "planned": 45,
       "modes": {
-        "illustration": 30
+        "illustration": 45
       },
       "status": "authored-awaiting-browser-review"
     },

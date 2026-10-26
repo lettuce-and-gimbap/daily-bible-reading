@@ -989,6 +989,562 @@
       "narrationOnly": true,
       "objectNote": "시가 묘사하는 역사적 회고와 비유를 구분하고, 표현은 상징 애니메이션으로 보여 줘요. 세부 동작은 연출이에요.",
       "animation": {"version":2,"motif":"divide","lead":"이스라엘","target":"야곱의 집","mode":"illustration","setting":"water","effect":"divide","emotion":"surprised","prop":"water-supply","beats":[{"action":"grasp","duration":1,"actor":"이스라엘"},{"action":"lift","duration":1.2,"actor":"이스라엘"},{"action":"windup","duration":1.5,"actor":"이스라엘"},{"action":"strike","duration":1.8,"actor":"이스라엘"},{"action":"recoil","duration":1.5,"actor":"이스라엘"},{"action":"look","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"시편 114:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-34-0",
+      "code": "psa",
+      "chapter": 34,
+      "title": "아비멜렉 앞에서 미친 체한 다윗의 노래",
+      "actors": [
+        "다윗",
+        "아비멜렉"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 34:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제에 따르면 다윗이 아비멜렉 앞에서 미친 체해 쫓겨난 뒤 부른 노래예요. 겸손한 이들에게 하나님을 찾고 선을 행하라고 권해요."
+      ],
+      "study": "표제에 따르면 다윗이 아비멜렉 앞에서 미친 체해 쫓겨난 뒤 부른 노래예요. 겸손한 이들에게 하나님을 찾고 선을 행하라고 권해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"escape","lead":"다윗","target":"아비멜렉","mode":"illustration","setting":"road","effect":"journey","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"turn","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"run","duration":1.5,"actor":"다윗"},{"action":"look","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 34:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-52-0",
+      "code": "psa",
+      "chapter": 52,
+      "title": "도엑의 고발과 아히멜렉의 죽음을 탄식하다",
+      "actors": [
+        "다윗",
+        "도엑",
+        "사울",
+        "아히멜렉"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 52:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제의 사건을 바탕으로 다윗이 악한 혀와 폭력을 탄식하고, 하나님을 의지하겠다고 노래해요. 죽음은 직접 재현하지 않아요."
+      ],
+      "study": "표제의 사건을 바탕으로 다윗이 악한 혀와 폭력을 탄식하고, 하나님을 의지하겠다고 노래해요. 죽음은 직접 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":"도엑","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 52:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-54-0",
+      "code": "psa",
+      "chapter": 54,
+      "title": "십 사람들이 사울에게 밀고한 뒤 드린 기도",
+      "actors": [
+        "다윗",
+        "십 사람들",
+        "사울"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 54:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제에 따르면 십 사람들이 다윗의 위치를 사울에게 알린 뒤, 다윗이 도움을 구하며 구원을 노래해요."
+      ],
+      "study": "표제에 따르면 십 사람들이 다윗의 위치를 사울에게 알린 뒤, 다윗이 도움을 구하며 구원을 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"십 사람들","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 54:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-56-0",
+      "code": "psa",
+      "chapter": 56,
+      "title": "가드에서 붙잡힌 다윗의 두려움과 신뢰",
+      "actors": [
+        "다윗",
+        "블레셋 사람들",
+        "원수들"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 56:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 가드에서 붙잡힌 상황을 표제가 전하고, 다윗은 두려움 속에서도 하나님을 신뢰한다고 고백해요."
+      ],
+      "study": "가드에서 붙잡힌 상황을 표제가 전하고, 다윗은 두려움 속에서도 하나님을 신뢰한다고 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"블레셋 사람들","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 56:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-57-0",
+      "code": "psa",
+      "chapter": 57,
+      "title": "굴에 숨어 아침을 기다리는 다윗",
+      "actors": [
+        "다윗",
+        "사울",
+        "원수들"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 57:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제가 굴에 숨은 상황을 가리켜요. 다윗은 위험을 탄식하면서도 마음을 굳게 하고 새벽을 깨우리라 노래해요."
+      ],
+      "study": "표제가 굴에 숨은 상황을 가리켜요. 다윗은 위험을 탄식하면서도 마음을 굳게 하고 새벽을 깨우리라 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"사울","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 57:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-59-0",
+      "code": "psa",
+      "chapter": 59,
+      "title": "집을 지키는 사울의 사람들을 피해 기도하다",
+      "actors": [
+        "다윗",
+        "사울",
+        "사울이 보낸 자들"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 59:1-17",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제에 따르면 사울이 사람들을 보내 다윗의 집을 지켰어요. 다윗은 포위와 위협을 피해 구원을 간구해요."
+      ],
+      "study": "표제에 따르면 사울이 사람들을 보내 다윗의 집을 지켰어요. 다윗은 포위와 위협을 피해 구원을 간구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"escape","lead":"다윗","target":"사울","mode":"illustration","setting":"road","effect":"journey","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"turn","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"run","duration":1.5,"actor":"다윗"},{"action":"look","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 59:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-60-0",
+      "code": "psa",
+      "chapter": 60,
+      "title": "에돔과의 전쟁 가운데 도움을 구하다",
+      "actors": [
+        "다윗",
+        "에돔",
+        "요압",
+        "모압"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 60:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 표제의 전쟁 상황 속에서 다윗은 패배와 혼란을 토로하고, 하나님께 도움을 구하며 승리를 기대해요."
+      ],
+      "study": "표제의 전쟁 상황 속에서 다윗은 패배와 혼란을 토로하고, 하나님께 도움을 구하며 승리를 기대해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"에돔","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 60:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-63-0",
+      "code": "psa",
+      "chapter": 63,
+      "title": "유다 광야에서 하나님을 찾는 다윗",
+      "actors": [
+        "다윗",
+        "원수들"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 63:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 광야의 표제 아래 다윗은 목마름과 위험 속에서 성소의 기억과 하나님의 사랑을 노래해요."
+      ],
+      "study": "광야의 표제 아래 다윗은 목마름과 위험 속에서 성소의 기억과 하나님의 사랑을 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"원수들","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 63:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-107-0",
+      "code": "psa",
+      "chapter": 107,
+      "title": "광야에서 길을 잃은 이들이 돌아오다",
+      "actors": [
+        "속량받은 자들",
+        "광야의 나그네"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 107:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 광야에서 길과 거처를 찾지 못한 이들이 부르짖고, 하나님이 바른 길로 인도하신 일을 노래해요."
+      ],
+      "study": "광야에서 길과 거처를 찾지 못한 이들이 부르짖고, 하나님이 바른 길로 인도하신 일을 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"rescue","lead":"속량받은 자들","target":"광야의 나그네","mode":"illustration","setting":"altar","effect":"release","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"속량받은 자들"},{"action":"startle","duration":1.2,"actor":"속량받은 자들"},{"action":"halt","duration":1.5,"actor":"속량받은 자들"},{"action":"release","duration":1.8,"actor":"속량받은 자들"},{"action":"kneel","duration":1.5,"actor":"속량받은 자들"},{"action":"bow","duration":1.2,"actor":"속량받은 자들"}],"duration":8.2,"support":null,"ref":"시편 107:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-107-1",
+      "code": "psa",
+      "chapter": 107,
+      "title": "갇힌 이들과 병든 이들이 구원을 경험하다",
+      "actors": [
+        "속량받은 자들",
+        "갇힌 자"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 107:10-22",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 갇힌 이와 병든 이들이 고난 중 부르짖고 건짐을 받은 일을 감사의 제사로 노래해요."
+      ],
+      "study": "갇힌 이와 병든 이들이 고난 중 부르짖고 건짐을 받은 일을 감사의 제사로 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"rescue","lead":"속량받은 자들","target":"갇힌 자","mode":"illustration","setting":"altar","effect":"release","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"속량받은 자들"},{"action":"startle","duration":1.2,"actor":"속량받은 자들"},{"action":"halt","duration":1.5,"actor":"속량받은 자들"},{"action":"release","duration":1.8,"actor":"속량받은 자들"},{"action":"kneel","duration":1.5,"actor":"속량받은 자들"},{"action":"bow","duration":1.2,"actor":"속량받은 자들"}],"duration":8.2,"support":null,"ref":"시편 107:10-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-107-2",
+      "code": "psa",
+      "chapter": 107,
+      "title": "바다의 폭풍 속에서 선원들이 부르짖다",
+      "actors": [
+        "속량받은 자들",
+        "뱃사람"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 107:23-32",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바다에서 폭풍을 만난 선원들이 하나님께 부르짖고, 파도가 잔잔해져 항구에 이른 일을 노래해요."
+      ],
+      "study": "바다에서 폭풍을 만난 선원들이 하나님께 부르짖고, 파도가 잔잔해져 항구에 이른 일을 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"calm-sea","lead":"속량받은 자들","target":"뱃사람","mode":"illustration","setting":"water","effect":"storm-calm","emotion":"determined","prop":"scene-marker","beats":[{"action":"sleep","duration":1,"actor":"속량받은 자들"},{"action":"startle","duration":1.2,"actor":"속량받은 자들"},{"action":"rise","duration":1.5,"actor":"속량받은 자들"},{"action":"lift","duration":1.8,"actor":"속량받은 자들"},{"action":"halt","duration":1.5,"actor":"속량받은 자들"},{"action":"look","duration":1.2,"actor":"속량받은 자들"}],"duration":8.2,"support":null,"ref":"시편 107:23-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-132-0",
+      "code": "psa",
+      "chapter": 132,
+      "title": "다윗이 언약궤를 모시고 시온을 바라보다",
+      "actors": [
+        "다윗",
+        "제사장들",
+        "다윗의 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 132:1-18",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 하나님의 궤가 머물 곳을 찾겠다고 맹세한 일과, 시온을 택하신 언약을 함께 노래해요."
+      ],
+      "study": "다윗이 하나님의 궤가 머물 곳을 찾겠다고 맹세한 일과, 시온을 택하신 언약을 함께 노래해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"carry","lead":"다윗","target":"제사장들","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"carry","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"시편 132:1-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-135-0",
+      "code": "psa",
+      "chapter": 135,
+      "title": "출애굽과 가나안 왕들을 기억하다",
+      "actors": [
+        "여호와의 종들",
+        "바로",
+        "시혼",
+        "옥"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 135:1-21",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 창조와 출애굽, 시혼·옥을 이긴 일을 회고하고 생명 없는 우상과 살아 계신 하나님을 대조해요."
+      ],
+      "study": "창조와 출애굽, 시혼·옥을 이긴 일을 회고하고 생명 없는 우상과 살아 계신 하나님을 대조해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"praise","lead":"여호와의 종들","target":"바로","mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"여호와의 종들"},{"action":"sway","duration":1.2,"actor":"여호와의 종들"},{"action":"step","duration":1.5,"actor":"여호와의 종들"},{"action":"sway","duration":1.8,"actor":"여호와의 종들"},{"action":"step","duration":1.5,"actor":"여호와의 종들"},{"action":"bow","duration":1.2,"actor":"여호와의 종들"}],"duration":8.2,"support":null,"ref":"시편 135:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-136-0",
+      "code": "psa",
+      "chapter": 136,
+      "title": "창조부터 포로의 비천함까지 인자를 노래하다",
+      "actors": [
+        "회중",
+        "이스라엘",
+        "바로",
+        "시혼과 옥"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 136:1-26",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 창조와 출애굽, 광야와 땅의 선물, 비천한 때의 기억을 후렴으로 되짚어요."
+      ],
+      "study": "창조와 출애굽, 광야와 땅의 선물, 비천한 때의 기억을 후렴으로 되짚어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"praise","lead":"회중","target":"이스라엘","mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"회중"},{"action":"sway","duration":1.2,"actor":"회중"},{"action":"step","duration":1.5,"actor":"회중"},{"action":"sway","duration":1.8,"actor":"회중"},{"action":"step","duration":1.5,"actor":"회중"},{"action":"bow","duration":1.2,"actor":"회중"}],"duration":8.2,"support":null,"ref":"시편 136:1-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-137-0",
+      "code": "psa",
+      "chapter": 137,
+      "title": "바벨론 강가에서 예루살렘을 기억하다",
+      "actors": [
+        "포로들",
+        "사로잡은 자들",
+        "에돔 자손",
+        "바벨론"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 137:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 포로들이 바벨론 강가에서 시온을 기억하며 노래를 요구받고, 예루살렘을 잊지 않겠다고 맹세해요. 끝의 분노는 역사적 탄식으로 두고 시각 폭력은 재현하지 않아요."
+      ],
+      "study": "포로들이 바벨론 강가에서 시온을 기억하며 노래를 요구받고, 예루살렘을 잊지 않겠다고 맹세해요. 끝의 분노는 역사적 탄식으로 두고 시각 폭력은 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"포로들","target":"사로잡은 자들","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"포로들"},{"action":"lower","duration":1.2,"actor":"포로들"},{"action":"kneel","duration":1.5,"actor":"포로들"},{"action":"cover-mouth","duration":1.8,"actor":"포로들"},{"action":"mourn","duration":1.5,"actor":"포로들"},{"action":"lower","duration":1.2,"actor":"포로들"}],"duration":8.2,"support":null,"ref":"시편 137:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
