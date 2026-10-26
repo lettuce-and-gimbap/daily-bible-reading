@@ -393,14 +393,15 @@
     },
     {
       "code": "jol",
-      "payloadSha256": "81905a73e94c1ab507c22bd93d5eedf6c62332921abaa97fa3f1d2a1406a1def",
-      "scenes": 2,
-      "existing": 2,
+      "payloadSha256": "ea5f3ff21731224033bc087c4fc3c7b2f6f6a05ea4967fc2d987152d95954e78",
+      "scenes": 8,
+      "existing": 8,
       "restored": 0,
       "corrected": 0,
-      "planned": 2,
+      "planned": 8,
       "modes": {
-        "illustration": 2
+        "illustration": 7,
+        "reconstruction": 1
       },
       "status": "authored-awaiting-browser-review"
     },

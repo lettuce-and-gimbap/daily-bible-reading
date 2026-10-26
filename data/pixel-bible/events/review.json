@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1061,
+    "scenesInFiles": 1067,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 347
+    "curatedSupplementalScenes": 353
   },
   "books": [
     {
@@ -250,9 +250,10 @@
     {
       "code": "jol",
       "chapters": 3,
-      "scenes": 2,
+      "scenes": 8,
       "sourceMatchedSceneCandidates": 2,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 6
     },
     {
       "code": "amo",
@@ -28251,6 +28252,10 @@
       {
         "book": "hos",
         "scenesAdded": 4
+      },
+      {
+        "book": "jol",
+        "scenesAdded": 6
       }
     ]
   }

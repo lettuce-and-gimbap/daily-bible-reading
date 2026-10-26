@@ -313,5 +313,25 @@
     "15": {
       "mode": "illustration"
     }
+  },
+  "jol": {
+    "2": {
+      "mode": "illustration"
+    },
+    "3": {
+      "mode": "reconstruction"
+    },
+    "4": {
+      "mode": "illustration"
+    },
+    "5": {
+      "mode": "illustration"
+    },
+    "6": {
+      "mode": "illustration"
+    },
+    "7": {
+      "mode": "illustration"
+    }
   }
 }
