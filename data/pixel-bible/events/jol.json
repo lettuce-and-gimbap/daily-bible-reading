@@ -10,26 +10,20 @@
         "제사장들"
       ],
       "object": "temple",
-      "ref": "요엘 1:13-20",
+      "ref": "요엘 1:13-14",
       "verseNumbers": [
         13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
+        14
       ],
       "actions": {},
       "lines": [
-        "해설: 제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요."
+        "해설: 곡식 제물과 전제를 드릴 수 없게 되자 요엘은 제사장들에게 슬퍼하며 금식일을 정하라고 권해요. 장로들과 주민들을 성전에 모아 하나님께 부르짖도록 소집해요."
       ],
-      "study": "제사에 쓸 곡식이 없어 제사장들이 슬퍼해요. 요엘은 금식을 선포하고 모두 성전에 모여 부르짖으라고 해요.",
+      "study": "곡식 제물과 전제를 드릴 수 없게 되자 요엘은 제사장들에게 슬퍼하며 금식일을 정하라고 권해요. 장로들과 주민들을 성전에 모아 하나님께 부르짖도록 소집해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"제사장들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"read","duration":1.2,"actor":"제사장들"},{"action":"look","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"요엘 1:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"제사장들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"read","duration":1.2,"actor":"제사장들"},{"action":"look","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"요엘 1:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jol-2-1",
@@ -99,17 +93,15 @@
       "id": "ot-jol-extra-1-1",
       "code": "jol",
       "chapter": 1,
-      "title": "제사장과 백성이 성회로 모이다",
+      "title": "메마른 들판에서 하나님께 부르짖다",
       "actors": [
         "요엘",
         "제사장들",
         "유다 백성"
       ],
       "object": "scene-marker",
-      "ref": "요엘 1:13-20",
+      "ref": "요엘 1:15-20",
       "verseNumbers": [
-        13,
-        14,
         15,
         16,
         17,
@@ -119,13 +111,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 요엘은 제사장들에게 굵은 베를 입고 금식하며 성회를 열라고 하고, 백성과 함께 부르짖어요."
+        "해설: 먹을 것이 끊기고 창고는 비며 가축도 먹을 풀을 잃어요. 요엘은 불탄 목장과 마른 시내를 바라보며 하나님께 부르짖어요. 짐승들의 고통도 함께 보여 주는 재앙 속 기도 장면이에요."
       ],
-      "study": "요엘은 제사장들에게 굵은 베를 입고 금식하며 성회를 열라고 하고, 백성과 함께 부르짖어요.",
+      "study": "먹을 것이 끊기고 창고는 비며 가축도 먹을 풀을 잃어요. 요엘은 불탄 목장과 마른 시내를 바라보며 하나님께 부르짖어요. 짐승들의 고통도 함께 보여 주는 재앙 속 기도 장면이에요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"요엘","target":"제사장들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요엘"},{"action":"kneel","duration":1.2,"actor":"요엘"},{"action":"lift","duration":1.5,"actor":"요엘"},{"action":"pray","duration":1.8,"actor":"요엘"},{"action":"pray","duration":1.5,"actor":"요엘"},{"action":"bow","duration":1.2,"actor":"요엘"}],"duration":8.2,"support":null,"ref":"요엘 1:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"요엘","target":"제사장들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요엘"},{"action":"kneel","duration":1.2,"actor":"요엘"},{"action":"lift","duration":1.5,"actor":"요엘"},{"action":"pray","duration":1.8,"actor":"요엘"},{"action":"pray","duration":1.5,"actor":"요엘"},{"action":"bow","duration":1.2,"actor":"요엘"}],"duration":8.2,"support":null,"ref":"요엘 1:15-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jol-extra-2-0",
