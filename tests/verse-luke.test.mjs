@@ -11,3 +11,8 @@ test('누가복음 2장은 52절을 빠짐없이 연결하고 아기와 소년�
  const scenes=data.scenes.filter(s=>s.chapter===2);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:52},(_,i)=>i+1));
  assert.equal(scenes[27].animation.portrayals.예수.scale,.5);assert.equal(scenes[45].animation.portrayals.예수.scale,.75);
 });
+
+test('누가복음 3장은 38절을 연결하고 족보의 역본 차이를 보존한다',()=>{
+ const scenes=data.scenes.filter(s=>s.chapter===3);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:38},(_,i)=>i+1));
+ assert.equal(scenes[21].animation.effect,'dove-descend');assert.equal(scenes[32].editionVariant,true);assert.match(scenes[32].study,/아드민/);
+});

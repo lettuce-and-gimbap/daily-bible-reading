@@ -29,7 +29,7 @@ test('주연 외 동작 트랙과 가시성은 절의 순서대로 움직이며 
  for(const s of data.scenes){const cast=s.actors.map(name=>({name}));for(const t of [0,1,3,5,8.2,40])for(const st of sampleEvent(s,cast,t).states)assert.ok(st.pose.eventArms.flat().every(Number.isFinite));assert.deepEqual(sampleEvent(s,cast,20).states,sampleEvent(s,cast,200).states);}
 });
 test('미작성 절은 제작 완료 수에 들어가지 않는다',()=>{
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,1881);assert.equal(p.contentClips,1874);assert.equal(p.textualNotices,7);assert.equal(p.pending,6076);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk'].includes(c.code)||c.code==='luk'&&c.chapter>2).every(c=>c.authored===0));
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.expected,7957);assert.equal(p.authored,1919);assert.equal(p.contentClips,1912);assert.equal(p.textualNotices,7);assert.equal(p.pending,6038);assert.ok(p.chapters.filter(c=>!['mat','mrk','luk'].includes(c.code)||c.code==='luk'&&c.chapter>3).every(c=>c.authored===0));
 });
 test('작성한 1071절 모두 실제 월드의 사건 진입점에서 접근할 수 있다',()=>{
  const events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mat.json'));
@@ -50,7 +50,7 @@ test('본문이 없는 절과 역본별 배열 차이를 사건으로 단정하�
  for(const s of data.scenes.filter(s=>s.textualNotice)){assert.equal(s.animation.diagram.kind,'edition-note');assert.deepEqual(s.actors,[]);}
  assert.equal(get(21,29).editionVariant,true);assert.deepEqual(get(21,29).animation.diagram.patterns,['yes-stay','no-go']);assert.deepEqual(get(21,30).animation.diagram.patterns,['no-go','yes-stay']);
  assert.equal(get(17,27).animation.mode,'illustration');assert.equal(get(28,13).animation.effect,'none');
- const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,1874);assert.equal(p.textualNotices,7);
+ const p=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/progress.json'));assert.equal(p.contentClips,1912);assert.equal(p.textualNotices,7);
 });
 test('물 위 이동·상 뒤집기·나귀 이동을 명시적 경로로 구분한다',async()=>{
  const {eventLayout}=await import('../js/features/pixel-bible/pixel-event.js');

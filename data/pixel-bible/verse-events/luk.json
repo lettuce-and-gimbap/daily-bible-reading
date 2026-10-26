@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "luk",
-  "scope": "누가복음 1–2장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "누가복음 1–3장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -88,6 +88,50 @@
         "role": "누가복음 2장 관련 인물",
         "refs": [
           "누가복음 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "세례 요한",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
+        ]
+      },
+      {
+        "name": "무리",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
+        ]
+      },
+      {
+        "name": "세리들",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
+        ]
+      },
+      {
+        "name": "군인들",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
+        ]
+      },
+      {
+        "name": "헤롯",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
+        ]
+      },
+      {
+        "name": "사람들",
+        "role": "누가복음 3장 관련 인물",
+        "refs": [
+          "누가복음 3장"
         ]
       }
     ]
@@ -9424,6 +9468,2810 @@
             "scale": 0.75,
             "hideBeard": true
           }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-1",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "통치자들의 시대",
+      "ref": "누가복음 3:1",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "디베료 통치 15년의 여러 통치자를 배경으로 소개해요."
+      ],
+      "study": "디베료 통치 15년의 여러 통치자를 배경으로 소개해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-2",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "광야에 임한 말씀",
+      "ref": "누가복음 3:2",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "안나스와 가야바 때 광야의 요한에게 말씀이 임해요."
+      ],
+      "study": "안나스와 가야바 때 광야의 요한에게 말씀이 임해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-3",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "요단 주변의 회개 세례",
+      "ref": "누가복음 3:3",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 요단 일대에서 회개의 세례를 전해요."
+      ],
+      "study": "요한이 요단 일대에서 회개의 세례를 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "river",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "reach",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "scoop",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "pour",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-4",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "주의 길을 준비하는 소리",
+      "ref": "누가복음 3:4",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "이사야의 예언에 나온 광야의 외침을 설명해요."
+      ],
+      "study": "이사야의 예언에 나온 광야의 외침을 설명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "주의 길을 준비하는 소리",
+            "예언과 비유",
+            "말씀의 의미"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-5",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "평탄해지는 길의 비유",
+      "ref": "누가복음 3:5",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "골짜기와 산과 굽은 길의 변화는 구원의 길을 나타내는 예언의 상징이에요."
+      ],
+      "study": "골짜기와 산과 굽은 길의 변화는 구원의 길을 나타내는 예언의 상징이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "평탄해지는 길의 비유",
+            "예언과 비유",
+            "말씀의 의미"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-6",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "모든 이가 볼 구원",
+      "ref": "누가복음 3:6",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "모든 사람이 하나님의 구원을 보리라는 예언을 전해요."
+      ],
+      "study": "모든 사람이 하나님의 구원을 보리라는 예언을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "모든 이가 볼 구원",
+            "예언과 비유",
+            "말씀의 의미"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-7",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "무리에게 경고하는 요한",
+      "ref": "누가복음 3:7",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 세례받으러 오는 무리에게 다가올 진노를 경고해요."
+      ],
+      "study": "요한이 세례받으러 오는 무리에게 다가올 진노를 경고해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-8",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "회개에 맞는 열매",
+      "ref": "누가복음 3:8",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "혈통을 내세우지 말고 회개에 맞는 삶을 살라고 권해요."
+      ],
+      "study": "혈통을 내세우지 말고 회개에 맞는 삶을 살라고 권해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-9",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "뿌리에 놓인 도끼의 비유",
+      "ref": "누가복음 3:9",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "열매 없는 나무와 도끼는 심판을 경고하는 비유로 표시해요."
+      ],
+      "study": "열매 없는 나무와 도끼는 심판을 경고하는 비유로 표시해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "뿌리에 놓인 도끼의 비유",
+            "예언과 비유",
+            "말씀의 의미"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-10",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "무리가 실천을 묻다",
+      "ref": "누가복음 3:10",
+      "actors": [
+        "무리",
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "무리가 무엇을 해야 하는지 요한에게 물어요."
+      ],
+      "study": "무리가 무엇을 해야 하는지 요한에게 물어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "무리",
+        "target": "세례 요한",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "무리",
+            "duration": 1
+          },
+          {
+            "action": "reach",
+            "actor": "무리",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "무리",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "무리",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-11",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "옷과 음식을 나누라",
+      "ref": "누가복음 3:11",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 여분의 옷과 음식을 필요한 이에게 나누라고 답해요."
+      ],
+      "study": "요한이 여분의 옷과 음식을 필요한 이에게 나누라고 답해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "retrieve",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "receive",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-12",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "세리들의 질문",
+      "ref": "누가복음 3:12",
+      "actors": [
+        "세리들",
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "세리들이 세례받으러 와 자신들의 실천을 물어요."
+      ],
+      "study": "세리들이 세례받으러 와 자신들의 실천을 물어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세리들",
+        "target": "세례 요한",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "세리들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "세리들",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "세리들",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "세리들",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세리들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세리들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-13",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "정해진 세금만 거두라",
+      "ref": "누가복음 3:13",
+      "actors": [
+        "세례 요한",
+        "세리들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 부과된 액수보다 더 거두지 말라고 답해요."
+      ],
+      "study": "요한이 부과된 액수보다 더 거두지 말라고 답해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "세리들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "count",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-14",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        14
+      ],
+      "title": "강탈과 거짓 고발을 금함",
+      "ref": "누가복음 3:14",
+      "actors": [
+        "세례 요한",
+        "군인들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "군인들에게 강탈과 거짓 고발을 금하고 급료에 만족하라고 답해요."
+      ],
+      "study": "군인들에게 강탈과 거짓 고발을 금하고 급료에 만족하라고 답해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "군인들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-15",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        15
+      ],
+      "title": "요한을 그리스도로 생각함",
+      "ref": "누가복음 3:15",
+      "actors": [
+        "무리",
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "백성이 그리스도를 기다리며 요한인지 생각해요."
+      ],
+      "study": "백성이 그리스도를 기다리며 요한인지 생각해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "무리",
+        "target": "세례 요한",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "무리",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "무리",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "무리",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "무리",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-16",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        16
+      ],
+      "title": "더 능하신 이를 기다림",
+      "ref": "누가복음 3:16",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 자신보다 능하신 이의 성령과 불의 세례를 말하며 자신을 낮춰요."
+      ],
+      "study": "요한이 자신보다 능하신 이의 성령과 불의 세례를 말하며 자신을 낮춰요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-17",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        17
+      ],
+      "title": "알곡과 쭉정이의 비유",
+      "ref": "누가복음 3:17",
+      "actors": [
+        "세례 요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "타작과 키질은 오실 이의 구별과 심판을 가리키는 비유예요."
+      ],
+      "study": "타작과 키질은 오실 이의 구별과 심판을 가리키는 비유예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": null,
+        "mode": "illustration",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "show",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "알곡과 쭉정이의 비유",
+            "예언과 비유",
+            "말씀의 의미"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-18",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        18
+      ],
+      "title": "여러 권면과 복음",
+      "ref": "누가복음 3:18",
+      "actors": [
+        "세례 요한",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 여러 권면으로 백성에게 좋은 소식을 전해요."
+      ],
+      "study": "요한이 여러 권면으로 백성에게 좋은 소식을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-19",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        19
+      ],
+      "title": "헤롯을 책망함",
+      "ref": "누가복음 3:19",
+      "actors": [
+        "세례 요한",
+        "헤롯"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "요한이 헤로디아의 일과 헤롯의 악행을 책망해요."
+      ],
+      "study": "요한이 헤로디아의 일과 헤롯의 악행을 책망해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "헤롯",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-20",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        20
+      ],
+      "title": "감옥에 갇힌 요한",
+      "ref": "누가복음 3:20",
+      "actors": [
+        "세례 요한",
+        "군인들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "헤롯이 요한을 감옥에 가두는 악을 더해요."
+      ],
+      "study": "헤롯이 요한을 감옥에 가두는 악을 더해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "세례 요한",
+        "target": "군인들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "세례 요한",
+            "duration": 1
+          },
+          {
+            "action": "hold",
+            "actor": "세례 요한",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "세례 요한",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "세례 요한",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "세례 요한",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-21",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        21
+      ],
+      "title": "세례 후 기도하시는 예수",
+      "ref": "누가복음 3:21",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 세례를 받으시고 기도하실 때 하늘이 열려요."
+      ],
+      "study": "예수께서 세례를 받으시고 기도하실 때 하늘이 열려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "river",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-22",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        22
+      ],
+      "title": "비둘기처럼 내려온 성령",
+      "ref": "누가복음 3:22",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "성령이 비둘기 같은 형체로 내리고 하늘의 소리가 아들을 증언해요. 하나님을 사람으로 그리지 않아요."
+      ],
+      "study": "성령이 비둘기 같은 형체로 내리고 하늘의 소리가 아들을 증언해요. 하나님을 사람으로 그리지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "river",
+        "effect": "dove-descend",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-3-23",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        23
+      ],
+      "title": "족보의 연결 1",
+      "ref": "누가복음 3:23",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "약 30세에 사역을 시작한 예수와 사람들이 아버지로 여긴 요셉에서 족보를 시작해요."
+      ],
+      "study": "약 30세에 사역을 시작한 예수와 사람들이 아버지로 여긴 요셉에서 족보를 시작해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "예수",
+            "요셉",
+            "헬리"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-24",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        24
+      ],
+      "title": "족보의 연결 2",
+      "ref": "누가복음 3:24",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "맛닷",
+            "레위",
+            "멜기",
+            "얀나",
+            "요셉"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-25",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        25
+      ],
+      "title": "족보의 연결 3",
+      "ref": "누가복음 3:25",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "맛다디아",
+            "아모스",
+            "나훔",
+            "에슬리",
+            "낙개"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-26",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        26
+      ],
+      "title": "족보의 연결 4",
+      "ref": "누가복음 3:26",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "마앗",
+            "맛다디아",
+            "서머인",
+            "요섹",
+            "요다"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-27",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        27
+      ],
+      "title": "족보의 연결 5",
+      "ref": "누가복음 3:27",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "요아난",
+            "레사",
+            "스룹바벨",
+            "스알디엘",
+            "네리"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-28",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        28
+      ],
+      "title": "족보의 연결 6",
+      "ref": "누가복음 3:28",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "멜기",
+            "앗디",
+            "고삼",
+            "엘마담",
+            "에르"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-29",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        29
+      ],
+      "title": "족보의 연결 7",
+      "ref": "누가복음 3:29",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "예수(족보의 조상)",
+            "엘리에서",
+            "요림",
+            "맛닷",
+            "레위"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-30",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        30
+      ],
+      "title": "족보의 연결 8",
+      "ref": "누가복음 3:30",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "시므온",
+            "유다",
+            "요셉",
+            "요남",
+            "엘리아김"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-31",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        31
+      ],
+      "title": "족보의 연결 9",
+      "ref": "누가복음 3:31",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "멜레아",
+            "멘나",
+            "맛다다",
+            "나단",
+            "다윗"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-32",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        32
+      ],
+      "title": "족보의 연결 10",
+      "ref": "누가복음 3:32",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "이새",
+            "오벳",
+            "보아스",
+            "살몬",
+            "나손"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-luk-3-33",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        33
+      ],
+      "title": "족보의 연결 11",
+      "ref": "누가복음 3:33",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요. 쉬운성경은 아미나답과 아니 사이에 아드민을 추가로 기록하므로 역본 차이를 함께 표시해요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요. 쉬운성경은 아미나답과 아니 사이에 아드민을 추가로 기록하므로 역본 차이를 함께 표시해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "아미나답",
+            "아니",
+            "헤스론",
+            "베레스",
+            "유다",
+            "쉬운성경: 아드민 포함"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-34",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        34
+      ],
+      "title": "족보의 연결 12",
+      "ref": "누가복음 3:34",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "야곱",
+            "이삭",
+            "아브라함",
+            "데라",
+            "나홀"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-35",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        35
+      ],
+      "title": "족보의 연결 13",
+      "ref": "누가복음 3:35",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "스룩",
+            "르우",
+            "벨렉",
+            "헤버",
+            "살라"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-36",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        36
+      ],
+      "title": "족보의 연결 14",
+      "ref": "누가복음 3:36",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "가이난",
+            "아박삿",
+            "셈",
+            "노아",
+            "레멕"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-37",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        37
+      ],
+      "title": "족보의 연결 15",
+      "ref": "누가복음 3:37",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "므두셀라",
+            "에녹",
+            "야렛",
+            "마할랄렐",
+            "가이난"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-luk-3-38",
+      "code": "luk",
+      "chapter": 3,
+      "verseNumbers": [
+        38
+      ],
+      "title": "족보의 연결 16",
+      "ref": "누가복음 3:38",
+      "actors": [],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "족보가 위 세대로 거슬러 이어지는 연결을 보여요."
+      ],
+      "study": "족보가 위 세대로 거슬러 이어지는 연결을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": null,
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": null,
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "show",
+            "actor": null,
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": null,
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": null,
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 3:38",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "lineage",
+          "labels": [
+            "에노스",
+            "셋",
+            "아담",
+            "하나님"
+          ]
         }
       }
     }
