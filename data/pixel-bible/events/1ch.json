@@ -2035,6 +2035,198 @@
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
       "animation": {"version":2,"motif":"burial","lead":"다윗","target":null,"mode":"reconstruction","setting":"garden","effect":"burial","emotion":"sad","prop":"tomb","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"carry","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:26-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-12-0",
+      "code": "1ch",
+      "chapter": 12,
+      "title": "므낫세 지파의 용사들이 다윗에게 합류하다",
+      "actors": [
+        "므낫세 사람들",
+        "다윗",
+        "온 이스라엘 군대"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 12:19-22",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 블레셋과 함께 있던 다윗에게 므낫세 지파의 용사들이 합류해요. 다윗은 그들을 받아들이고, 그들은 다른 군대와 함께 다윗을 도와요."
+      ],
+      "study": "블레셋과 함께 있던 다윗에게 므낫세 지파의 용사들이 합류해요. 다윗은 그들을 받아들이고, 그들은 다른 군대와 함께 다윗을 도와요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"므낫세 사람들","target":"다윗","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"므낫세 사람들"},{"action":"bend","duration":1.2,"actor":"므낫세 사람들"},{"action":"grasp","duration":1.5,"actor":"므낫세 사람들"},{"action":"lift","duration":1.8,"actor":"므낫세 사람들"},{"action":"bundle","duration":1.5,"actor":"므낫세 사람들"},{"action":"carry","duration":1.2,"actor":"므낫세 사람들"}],"duration":8.2,"support":null,"ref":"역대상 12:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-12-1",
+      "code": "1ch",
+      "chapter": 12,
+      "title": "온 지파의 군대가 다윗을 왕으로 세우러 모이다",
+      "actors": [
+        "다윗",
+        "잇사갈 자손",
+        "온 이스라엘 군대"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 12:23-37",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 각 지파의 군대가 헤브론에 모여 다윗을 온 이스라엘의 왕으로 세우려 해요. 그들은 싸울 준비를 갖추고, 마음을 같이해 다윗을 왕으로 삼아요."
+      ],
+      "study": "각 지파의 군대가 헤브론에 모여 다윗을 온 이스라엘의 왕으로 세우려 해요. 그들은 싸울 준비를 갖추고, 마음을 같이해 다윗을 왕으로 삼아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"다윗","target":"잇사갈 자손","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"다윗"},{"action":"bend","duration":1.2,"actor":"다윗"},{"action":"grasp","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.8,"actor":"다윗"},{"action":"bundle","duration":1.5,"actor":"다윗"},{"action":"carry","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 12:23-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-16-0",
+      "code": "1ch",
+      "chapter": 16,
+      "title": "다윗과 아삽이 언약궤 앞에서 감사 찬양을 드리다",
+      "actors": [
+        "다윗",
+        "아삽",
+        "레위인들",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 16:8-36",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 아삽과 레위인들이 부를 감사의 노래를 맡겨요. 회중은 하나님이 하신 일을 기억하고, 여러 민족 가운데 그 이름과 구원을 전하며 함께 찬양해요."
+      ],
+      "study": "다윗은 아삽과 레위인들이 부를 감사의 노래를 맡겨요. 회중은 하나님이 하신 일을 기억하고, 여러 민족 가운데 그 이름과 구원을 전하며 함께 찬양해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"praise","lead":"다윗","target":"아삽","mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 16:8-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-18-0",
+      "code": "1ch",
+      "chapter": 18,
+      "title": "다윗이 여러 나라를 이기고 영토를 넓히다",
+      "actors": [
+        "다윗",
+        "하닷에셀",
+        "아비새",
+        "요압"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 18:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 블레셋과 모압, 소바와 아람을 물리쳐요. 그는 전쟁에서 얻은 금과 놋을 하나님께 드리고, 정복한 지역에 수비대를 두어요."
+      ],
+      "study": "다윗은 블레셋과 모압, 소바와 아람을 물리쳐요. 그는 전쟁에서 얻은 금과 놋을 하나님께 드리고, 정복한 지역에 수비대를 두어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":"하닷에셀","mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 18:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ch-extra-21-0",
+      "code": "1ch",
+      "chapter": 21,
+      "title": "다윗이 인구 조사를 명하고 죄를 고백하다",
+      "actors": [
+        "다윗",
+        "사탄",
+        "요압",
+        "갓"
+      ],
+      "object": "scene-marker",
+      "ref": "역대상 21:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 요압의 반대에도 인구 조사를 명하고, 조사가 끝난 뒤 그 일을 죄로 고백해요. 갓은 세 가지 징계 가운데 하나를 택하라고 전하고, 다윗은 하나님의 자비에 자신을 맡겨요."
+      ],
+      "study": "다윗은 요압의 반대에도 인구 조사를 명하고, 조사가 끝난 뒤 그 일을 죄로 고백해요. 갓은 세 가지 징계 가운데 하나를 택하라고 전하고, 다윗은 하나님의 자비에 자신을 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"confess","lead":"다윗","target":"사탄","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"speak","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 21:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

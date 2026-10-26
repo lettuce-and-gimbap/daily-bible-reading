@@ -176,14 +176,14 @@
     },
     {
       "code": "1ch",
-      "payloadSha256": "b0d5ea0b2b929c1340511dc554cab4d8a388e7c0d78529d884ab65e131b22098",
-      "scenes": 67,
-      "existing": 67,
+      "payloadSha256": "030d29ae22af0ed0ba7cf711f61b838ee8ba8cfaf34a2de7968ceb791ebf3f14",
+      "scenes": 72,
+      "existing": 72,
       "restored": 0,
       "corrected": 4,
-      "planned": 67,
+      "planned": 72,
       "modes": {
-        "illustration": 6,
+        "illustration": 11,
         "reconstruction": 61
       },
       "status": "authored-awaiting-browser-review"

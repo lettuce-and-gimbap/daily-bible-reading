@@ -1043,5 +1043,22 @@
     "29": {
       "mode": "reconstruction"
     }
+  },
+  "1ch": {
+    "67": {
+      "mode": "illustration"
+    },
+    "68": {
+      "mode": "illustration"
+    },
+    "69": {
+      "mode": "illustration"
+    },
+    "70": {
+      "mode": "illustration"
+    },
+    "71": {
+      "mode": "illustration"
+    }
   }
 }
