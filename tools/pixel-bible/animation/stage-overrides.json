@@ -707,5 +707,34 @@
     "13": {
       "mode": "illustration"
     }
+  },
+  "gen": {
+    "75": {
+      "mode": "illustration"
+    },
+    "76": {
+      "mode": "illustration"
+    },
+    "77": {
+      "mode": "reconstruction"
+    },
+    "78": {
+      "mode": "illustration"
+    },
+    "79": {
+      "mode": "reconstruction"
+    },
+    "80": {
+      "mode": "reconstruction"
+    },
+    "81": {
+      "mode": "reconstruction"
+    },
+    "82": {
+      "mode": "reconstruction"
+    },
+    "83": {
+      "mode": "reconstruction"
+    }
   }
 }

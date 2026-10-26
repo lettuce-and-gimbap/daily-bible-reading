@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1183,
+    "scenesInFiles": 1192,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 469
+    "curatedSupplementalScenes": 478
   },
   "books": [
     {
@@ -41,9 +41,10 @@
     {
       "code": "gen",
       "chapters": 50,
-      "scenes": 75,
+      "scenes": 84,
       "sourceMatchedSceneCandidates": 75,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 9
     },
     {
       "code": "exo",
@@ -28325,6 +28326,10 @@
       {
         "book": "psa",
         "scenesAdded": 15
+      },
+      {
+        "book": "gen",
+        "scenesAdded": 9
       }
     ]
   }
