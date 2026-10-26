@@ -286,7 +286,11 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
 
   if(o.kind==='catalog'){
     const seed=[...originalKind].reduce((n,c)=>n+c.charCodeAt(0),0),color=['#ad8e65','#8d9e9a','#c4a76a','#a98b86'][seed%4];
-    if(['building','tent'].includes(family)){r(-10,-20,20,24,O);r(-9,-19,18,22,color);r(-12,-24,24,5,'#987c55');r(-3,-9,6,13,O);}
+    if(originalKind==='fleece'){
+      r(-10,-3,20,8,O);r(-9,-5,18,9,'#e9e2d1');r(-7,-9,5,8,'#f5f0e4');r(-2,-11,6,9,'#f5f0e4');r(4,-9,5,8,'#f5f0e4');r(8,-5,2,6,'#ddd4c2');
+      r(-6,-2,12,2,'#d5cbb7');
+    }
+    else if(['building','tent'].includes(family)){r(-10,-20,20,24,O);r(-9,-19,18,22,color);r(-12,-24,24,5,'#987c55');r(-3,-9,6,13,O);}
     else if(family==='weapon'||family==='staff'||family==='cross'){r(-1,-27,2,31,O);r(0,-26,1,29,'#d6cbae');r(-6,-9,13,2,'#b28f4b');if(family==='cross')r(-9,-20,19,3,color);}
     else if(family==='animal'){
       if(originalKind==='fish'){r(-9,-8,17,8,O);r(-8,-7,15,6,'#7ea8ad');r(7,-6,5,5,'#7ea8ad');r(-6,-6,1,1,O);r(-2,-10,5,2,'#517c8d');}

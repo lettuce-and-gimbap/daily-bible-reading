@@ -3,6 +3,7 @@ const M={};
 const add=(names,actions,effect='none',setting='courtyard',emotion='neutral')=>{for(const name of names.split(' '))M[name]={actions:actions.split(' '),effect,setting,emotion};};
 add('hide','listen startle retreat hide peek stand','shadow','garden','worried');
 add('offer gift provision distribute dedicate','inspect gather lift extend release bow','transfer','courtyard','gentle');
+add('fleece-sign','place kneel wait inspect lift bow','water','night','hopeful');
 add('receive retrieve','listen reach grasp lift inspect lower','receive','courtyard','surprised');
 add('build craft repair fortify','inspect gather lift place hammer inspect','build','courtyard','determined');
 add('flood storm','look startle brace brace pray look','flood','water','worried');

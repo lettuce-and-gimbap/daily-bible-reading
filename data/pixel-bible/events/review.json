@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 714,
+    "scenesInFiles": 738,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -27,7 +27,8 @@
       "no-source-confirmed-actor": 629,
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
-    }
+    },
+    "curatedSupplementalScenes": 24
   },
   "books": [
     {
@@ -82,9 +83,10 @@
     {
       "code": "jdg",
       "chapters": 21,
-      "scenes": 26,
+      "scenes": 50,
       "sourceMatchedSceneCandidates": 26,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 24
     },
     {
       "code": "rut",
@@ -7343,7 +7345,8 @@
           "title": "쫓아내지 못한 지파들",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7376,7 +7379,8 @@
           "title": "시험하시는 하나님",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7402,7 +7406,8 @@
           "title": "옷니엘",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7431,7 +7436,8 @@
           "title": "무너진 시스라 군대",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7490,7 +7496,8 @@
           "title": "양털의 표징",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7521,7 +7528,8 @@
           "title": "적진의 꿈",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7550,7 +7558,8 @@
           "title": "왕을 거절함",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7571,7 +7580,8 @@
           "title": "요담의 비유",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7600,7 +7610,8 @@
           "title": "버린 이방 신들",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7629,7 +7640,8 @@
           "title": "성급한 서원",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "jdg",
@@ -7655,7 +7667,8 @@
           "title": "입산, 엘론, 압돈",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7687,7 +7700,8 @@
           "title": "삼손의 탄생",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7712,7 +7726,8 @@
           "title": "혼인 잔치의 수수께끼",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7737,7 +7752,8 @@
           "title": "부르짖은 자의 샘",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7762,7 +7778,8 @@
           "title": "머리털이 잘림",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "jdg",
@@ -7783,7 +7800,8 @@
           "title": "레위 소년 제사장",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7808,7 +7826,8 @@
           "title": "라이스가 단이 됨",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7838,7 +7857,8 @@
           "title": "열두 토막",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7872,7 +7892,8 @@
           "title": "베냐민의 멸절",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jdg",
@@ -7904,7 +7925,8 @@
           "title": "각기 소견대로",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "rut",
@@ -28061,5 +28083,11 @@
       "actor": "스룹바벨",
       "status": "range-and-chapter-name-checked"
     }
-  ]
+  ],
+  "curatedSceneReview": {
+    "book": "jdg",
+    "scenesAdded": 24,
+    "method": "Manually reviewed event gaps alongside existing authored candidates. Checked scene ranges and named actors against local Bible data; symbolic passages and sensitive violence are explicitly marked to avoid literal or graphic reenactment.",
+    "scopeNote": "Supplemental scenes are tracked separately from automated source-matched candidates."
+  }
 }
