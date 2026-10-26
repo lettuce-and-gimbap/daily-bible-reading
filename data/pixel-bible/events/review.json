@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 993,
+    "scenesInFiles": 1005,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 279
+    "curatedSupplementalScenes": 291
   },
   "books": [
     {
@@ -202,9 +202,10 @@
     {
       "code": "isa",
       "chapters": 66,
-      "scenes": 21,
+      "scenes": 33,
       "sourceMatchedSceneCandidates": 21,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 12
     },
     {
       "code": "jer",
@@ -28221,6 +28222,10 @@
       {
         "book": "sng",
         "scenesAdded": 8
+      },
+      {
+        "book": "isa",
+        "scenesAdded": 12
       }
     ]
   }

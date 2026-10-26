@@ -97,5 +97,43 @@
     "10": {
       "mode": "illustration"
     }
+  },
+  "isa": {
+    "21": {
+      "mode": "vision"
+    },
+    "22": {
+      "mode": "reconstruction"
+    },
+    "23": {
+      "mode": "illustration"
+    },
+    "24": {
+      "mode": "illustration"
+    },
+    "25": {
+      "mode": "reconstruction"
+    },
+    "26": {
+      "mode": "reconstruction"
+    },
+    "27": {
+      "mode": "reconstruction"
+    },
+    "28": {
+      "mode": "illustration"
+    },
+    "29": {
+      "mode": "reconstruction"
+    },
+    "30": {
+      "mode": "reconstruction"
+    },
+    "31": {
+      "mode": "illustration"
+    },
+    "32": {
+      "mode": "reconstruction"
+    }
   }
 }

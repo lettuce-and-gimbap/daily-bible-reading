@@ -575,6 +575,370 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"cleanse","lead":"이사야","target":null,"mode":"reconstruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"이사야"},{"action":"reach","duration":1.2,"actor":"이사야"},{"action":"lift","duration":1.5,"actor":"이사야"},{"action":"touch","duration":1.8,"actor":"이사야"},{"action":"lower","duration":1.5,"actor":"이사야"},{"action":"inspect","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"이사야 6:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-6-0",
+      "code": "isa",
+      "chapter": 6,
+      "title": "이사야의 부르심에 응답하다",
+      "actors": [
+        "이사야"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 6:8",
+      "verseNumbers": [
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이사야가 환상 속 부르심을 듣고 응답해요. 이 장면은 예언자의 소명 환상을 상징적으로 보여 줘요."
+      ],
+      "study": "이사야가 환상 속 부르심을 듣고 응답해요. 이 장면은 예언자의 소명 환상을 상징적으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"이사야","target":null,"mode":"vision","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이사야"},{"action":"look","duration":1.2,"actor":"이사야"},{"action":"startle","duration":1.5,"actor":"이사야"},{"action":"read","duration":1.8,"actor":"이사야"},{"action":"write","duration":1.5,"actor":"이사야"},{"action":"bow","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"이사야 6:8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-7-0",
+      "code": "isa",
+      "chapter": 7,
+      "title": "두려움에 흔들리는 아하스와 이사야",
+      "actors": [
+        "아하스",
+        "이사야"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 7:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 르신과 베가의 위협에 아하스와 백성이 두려워해요. 이사야는 두려워하지 말고 믿음에 굳게 서라고 전해요."
+      ],
+      "study": "르신과 베가의 위협에 아하스와 백성이 두려워해요. 이사야는 두려워하지 말고 믿음에 굳게 서라고 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"아하스","target":"이사야","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아하스"},{"action":"turn","duration":1.2,"actor":"아하스"},{"action":"speak","duration":1.5,"actor":"아하스"},{"action":"point","duration":1.8,"actor":"아하스"},{"action":"listen","duration":1.5,"actor":"아하스"},{"action":"lower","duration":1.2,"actor":"아하스"}],"duration":8.2,"support":null,"ref":"이사야 7:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-7-1",
+      "code": "isa",
+      "chapter": 7,
+      "title": "임마누엘의 징조를 전하다",
+      "actors": [
+        "이사야",
+        "아하스"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 7:10-17",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아하스가 징조를 구하지 않겠다고 하자, 이사야는 임마누엘의 징조를 전해요. 인물의 실제 행동이 아닌 예언의 상징 장면으로 표현해요."
+      ],
+      "study": "아하스가 징조를 구하지 않겠다고 하자, 이사야는 임마누엘의 징조를 전해요. 인물의 실제 행동이 아닌 예언의 상징 장면으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"이사야","target":"아하스","mode":"illustration","setting":"courtyard","effect":"light","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이사야"},{"action":"lift","duration":1.2,"actor":"이사야"},{"action":"speak","duration":1.5,"actor":"이사야"},{"action":"sway","duration":1.8,"actor":"이사야"},{"action":"lower","duration":1.5,"actor":"이사야"},{"action":"bow","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"이사야 7:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-22-0",
+      "code": "isa",
+      "chapter": 22,
+      "title": "셉나의 자리에서 엘리아김으로",
+      "actors": [
+        "셉나",
+        "엘리아김"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 22:15-25",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 셉나에게 심판이 선고되고 엘리아김이 직무를 맡아요. 어깨의 열쇠와 못은 권한의 이전을 나타내는 상징으로 보여 줘요."
+      ],
+      "study": "셉나에게 심판이 선고되고 엘리아김이 직무를 맡아요. 어깨의 열쇠와 못은 권한의 이전을 나타내는 상징으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"transfer-garment","lead":"셉나","target":"엘리아김","mode":"illustration","setting":"chamber","effect":"garment","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"셉나"},{"action":"grasp","duration":1.2,"actor":"셉나"},{"action":"lift","duration":1.5,"actor":"셉나"},{"action":"wear","duration":1.8,"actor":"셉나"},{"action":"smooth","duration":1.5,"actor":"셉나"},{"action":"bow","duration":1.2,"actor":"셉나"}],"duration":8.2,"support":null,"ref":"이사야 22:15-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-36-0",
+      "code": "isa",
+      "chapter": 36,
+      "title": "산헤립의 군대가 예루살렘을 에워싸다",
+      "actors": [
+        "히스기야",
+        "산헤립"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 36:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 산헤립의 군대가 유다 성읍들을 점령하고 예루살렘을 위협해요. 포위된 성과 왕의 대응을 장면으로 정리해요."
+      ],
+      "study": "산헤립의 군대가 유다 성읍들을 점령하고 예루살렘을 위협해요. 포위된 성과 왕의 대응을 장면으로 정리해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"히스기야","target":"산헤립","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"히스기야"},{"action":"push","duration":1.2,"actor":"히스기야"},{"action":"brace","duration":1.5,"actor":"히스기야"},{"action":"recoil","duration":1.8,"actor":"히스기야"},{"action":"retreat","duration":1.5,"actor":"히스기야"},{"action":"mourn","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"이사야 36:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-36-1",
+      "code": "isa",
+      "chapter": 36,
+      "title": "랍사게가 성벽 앞에서 백성에게 외치다",
+      "actors": [
+        "랍사게",
+        "엘리아김",
+        "셉나",
+        "성벽 위 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 36:11-20",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 랍사게가 유다 말로 성벽 위 백성에게 항복을 요구하며 위협해요. 관리들은 백성에게 대답하지 말라고 당부해요."
+      ],
+      "study": "랍사게가 유다 말로 성벽 위 백성에게 항복을 요구하며 위협해요. 관리들은 백성에게 대답하지 말라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"랍사게","target":"엘리아김","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"랍사게"},{"action":"turn","duration":1.2,"actor":"랍사게"},{"action":"speak","duration":1.5,"actor":"랍사게"},{"action":"point","duration":1.8,"actor":"랍사게"},{"action":"listen","duration":1.5,"actor":"랍사게"},{"action":"lower","duration":1.2,"actor":"랍사게"}],"duration":8.2,"support":null,"ref":"이사야 36:11-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-37-0",
+      "code": "isa",
+      "chapter": 37,
+      "title": "히스기야가 편지를 펴고 기도하다",
+      "actors": [
+        "히스기야"
+      ],
+      "object": "letter",
+      "ref": "이사야 37:14-20",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야가 산헤립의 편지를 성전 앞에 펴 놓고 하나님께 구원을 기도해요."
+      ],
+      "study": "히스기야가 산헤립의 편지를 성전 앞에 펴 놓고 하나님께 구원을 기도해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"히스기야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"letter","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"kneel","duration":1.2,"actor":"히스기야"},{"action":"lift","duration":1.5,"actor":"히스기야"},{"action":"pray","duration":1.8,"actor":"히스기야"},{"action":"pray","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"이사야 37:14-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-37-1",
+      "code": "isa",
+      "chapter": 37,
+      "title": "이사야가 산헤립의 위협에 답하다",
+      "actors": [
+        "이사야"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 37:21-29",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이사야가 사신을 통해 산헤립의 교만과 예루살렘의 보전을 전해요. 예언의 말은 상징 장면으로 다뤄요."
+      ],
+      "study": "이사야가 사신을 통해 산헤립의 교만과 예루살렘의 보전을 전해요. 예언의 말은 상징 장면으로 다뤄요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"이사야","target":null,"mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이사야"},{"action":"look","duration":1.2,"actor":"이사야"},{"action":"startle","duration":1.5,"actor":"이사야"},{"action":"read","duration":1.8,"actor":"이사야"},{"action":"write","duration":1.5,"actor":"이사야"},{"action":"bow","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"이사야 37:21-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-37-2",
+      "code": "isa",
+      "chapter": 37,
+      "title": "예루살렘에서 물러가는 산헤립",
+      "actors": [
+        "산헤립",
+        "히스기야"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 37:33-38",
+      "verseNumbers": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 예루살렘은 공격받지 않고 산헤립은 니느웨로 돌아가요. 포위가 끝나고 위협이 물러나는 흐름을 보여 줘요."
+      ],
+      "study": "예루살렘은 공격받지 않고 산헤립은 니느웨로 돌아가요. 포위가 끝나고 위협이 물러나는 흐름을 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"산헤립","target":"히스기야","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"산헤립"},{"action":"push","duration":1.2,"actor":"산헤립"},{"action":"brace","duration":1.5,"actor":"산헤립"},{"action":"recoil","duration":1.8,"actor":"산헤립"},{"action":"retreat","duration":1.5,"actor":"산헤립"},{"action":"mourn","duration":1.2,"actor":"산헤립"}],"duration":8.2,"support":null,"ref":"이사야 37:33-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-38-0",
+      "code": "isa",
+      "chapter": 38,
+      "title": "병든 히스기야에게 전해진 회복의 표징",
+      "actors": [
+        "히스기야",
+        "이사야"
+      ],
+      "object": "fig-poultice",
+      "ref": "이사야 38:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야가 병들어 기도하고, 이사야는 회복과 예루살렘의 보호를 전해요. 해 그림자가 물러가는 표징이 이어져요."
+      ],
+      "study": "히스기야가 병들어 기도하고, 이사야는 회복과 예루살렘의 보호를 전해요. 해 그림자가 물러가는 표징이 이어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"heal","lead":"히스기야","target":"이사야","mode":"reconstruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"fig-poultice","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"reach","duration":1.2,"actor":"히스기야"},{"action":"lift","duration":1.5,"actor":"히스기야"},{"action":"touch","duration":1.8,"actor":"히스기야"},{"action":"lower","duration":1.5,"actor":"히스기야"},{"action":"inspect","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"이사야 38:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-38-1",
+      "code": "isa",
+      "chapter": 38,
+      "title": "회복 뒤에 부른 히스기야의 노래",
+      "actors": [
+        "히스기야"
+      ],
+      "object": "scene-marker",
+      "ref": "이사야 38:9-20",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야가 병중의 두려움과 회복의 감사를 노래해요. 시적 고백을 서사 행동으로 오해하지 않도록 상징적으로 보여 줘요."
+      ],
+      "study": "히스기야가 병중의 두려움과 회복의 감사를 노래해요. 시적 고백을 서사 행동으로 오해하지 않도록 상징적으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"히스기야","target":null,"mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"look","duration":1.2,"actor":"히스기야"},{"action":"startle","duration":1.5,"actor":"히스기야"},{"action":"read","duration":1.8,"actor":"히스기야"},{"action":"write","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"이사야 38:9-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-isa-extra-39-0",
+      "code": "isa",
+      "chapter": 39,
+      "title": "이사야가 바빌론 사절 방문의 의미를 묻다",
+      "actors": [
+        "이사야",
+        "히스기야"
+      ],
+      "object": "treasure-chest",
+      "ref": "이사야 39:3-8",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이사야가 사절들이 무엇을 보았는지 묻고, 히스기야에게 왕궁의 보물과 후손이 바빌론으로 옮겨질 일을 전해요."
+      ],
+      "study": "이사야가 사절들이 무엇을 보았는지 묻고, 히스기야에게 왕궁의 보물과 후손이 바빌론으로 옮겨질 일을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절의 대상이며, 예언과 시적 고백은 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"이사야","target":"히스기야","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"treasure-chest","beats":[{"action":"listen","duration":1,"actor":"이사야"},{"action":"speak","duration":1.2,"actor":"이사야"},{"action":"point","duration":1.5,"actor":"이사야"},{"action":"listen","duration":1.8,"actor":"이사야"},{"action":"lower","duration":1.5,"actor":"이사야"},{"action":"bow","duration":1.2,"actor":"이사야"}],"duration":8.2,"support":null,"ref":"이사야 39:3-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

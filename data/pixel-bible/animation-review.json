@@ -306,16 +306,16 @@
     },
     {
       "code": "isa",
-      "payloadSha256": "e6b79001906386b2a8b4331c68490ee101b315cfae27914c2edddccf1424e21d",
-      "scenes": 21,
-      "existing": 21,
+      "payloadSha256": "c44fb6137137119b69c6ec36a6975a1aa155dc32222ee97f0da994e4c7901b72",
+      "scenes": 33,
+      "existing": 33,
       "restored": 0,
       "corrected": 5,
-      "planned": 21,
+      "planned": 33,
       "modes": {
-        "vision": 1,
-        "reconstruction": 9,
-        "illustration": 11
+        "vision": 2,
+        "reconstruction": 16,
+        "illustration": 15
       },
       "status": "authored-awaiting-browser-review"
     },
