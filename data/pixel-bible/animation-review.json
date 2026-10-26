@@ -474,14 +474,15 @@
     },
     {
       "code": "hab",
-      "payloadSha256": "ee9605e7e1963e1029b1af2281c87c439150104fe6800616e79dfc34c76f566c",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "a09e84a1da1baed228882e1db5a18bcc70dedb6a1301763b443cc067e65529dd",
+      "scenes": 7,
+      "existing": 7,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 7,
       "modes": {
-        "reconstruction": 1
+        "reconstruction": 1,
+        "illustration": 6
       },
       "status": "authored-awaiting-browser-review"
     },

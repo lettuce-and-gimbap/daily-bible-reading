@@ -25,6 +25,200 @@
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
       "animation": {"version":2,"motif":"write","lead":"하박국","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"writing-tablet","beats":[{"action":"inspect","duration":1,"actor":"하박국"},{"action":"grasp","duration":1.2,"actor":"하박국"},{"action":"open","duration":1.5,"actor":"하박국"},{"action":"read","duration":1.8,"actor":"하박국"},{"action":"write","duration":1.5,"actor":"하박국"},{"action":"place","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-1-0",
+      "code": "hab",
+      "chapter": 1,
+      "title": "폭력이 그치지 않는 현실을 묻다",
+      "actors": [
+        "하박국",
+        "유다의 악인"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 1:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하박국이 폭력과 불의를 보면서 언제까지 부르짖어야 하는지 하나님께 묻고, 정의가 뒤집힌 현실을 토로해요."
+      ],
+      "study": "하박국이 폭력과 불의를 보면서 언제까지 부르짖어야 하는지 하나님께 묻고, 정의가 뒤집힌 현실을 토로해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"하박국","target":"유다의 악인","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"kneel","duration":1.2,"actor":"하박국"},{"action":"lift","duration":1.5,"actor":"하박국"},{"action":"pray","duration":1.8,"actor":"하박국"},{"action":"pray","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 1:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-1-1",
+      "code": "hab",
+      "chapter": 1,
+      "title": "갈대아의 위협을 이해할 수 없어 묻다",
+      "actors": [
+        "하박국",
+        "갈대아 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 1:5-17",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 갈대아 군대가 빠르게 밀려오는 환상을 듣고 하박국이 더 악한 자가 의인을 삼키는 일을 다시 질문해요."
+      ],
+      "study": "갈대아 군대가 빠르게 밀려오는 환상을 듣고 하박국이 더 악한 자가 의인을 삼키는 일을 다시 질문해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"하박국","target":"갈대아 사람","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"turn","duration":1.2,"actor":"하박국"},{"action":"point","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"lower","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 1:5-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-2-0",
+      "code": "hab",
+      "chapter": 2,
+      "title": "성루에서 답을 기다리다",
+      "actors": [
+        "하박국",
+        "교만한 자(갈대아)"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 2:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하박국이 파수대에 서서 답을 기다리고, 환상을 판에 기록하라는 말씀과 의인은 믿음으로 살리라는 답을 받아요."
+      ],
+      "study": "하박국이 파수대에 서서 답을 기다리고, 환상을 판에 기록하라는 말씀과 의인은 믿음으로 살리라는 답을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"look","duration":1.2,"actor":"하박국"},{"action":"startle","duration":1.5,"actor":"하박국"},{"action":"read","duration":1.8,"actor":"하박국"},{"action":"write","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-2-1",
+      "code": "hab",
+      "chapter": 2,
+      "title": "탐욕과 폭력에 대한 다섯 경고",
+      "actors": [
+        "하박국",
+        "교만한 자(갈대아)",
+        "열방"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 2:6-20",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 빼앗고 피 흘리며 우상을 섬기는 자들을 향한 다섯 경고를 연속 상징 장면으로 정리해요."
+      ],
+      "study": "빼앗고 피 흘리며 우상을 섬기는 자들을 향한 다섯 경고를 연속 상징 장면으로 정리해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"하박국","target":"교만한 자(갈대아)","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"turn","duration":1.2,"actor":"하박국"},{"action":"speak","duration":1.5,"actor":"하박국"},{"action":"point","duration":1.8,"actor":"하박국"},{"action":"listen","duration":1.5,"actor":"하박국"},{"action":"lower","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 2:6-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-3-0",
+      "code": "hab",
+      "chapter": 3,
+      "title": "진노 중에도 긍휼을 구하는 기도",
+      "actors": [
+        "하박국",
+        "하나님의 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 3:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하박국이 옛 구원의 모습을 시로 되새기며 진노 중에도 긍휼을 베풀어 달라고 기도해요."
+      ],
+      "study": "하박국이 옛 구원의 모습을 시로 되새기며 진노 중에도 긍휼을 베풀어 달라고 기도해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"하박국","target":"하나님의 백성","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하박국"},{"action":"kneel","duration":1.2,"actor":"하박국"},{"action":"lift","duration":1.5,"actor":"하박국"},{"action":"pray","duration":1.8,"actor":"하박국"},{"action":"pray","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 3:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hab-extra-3-1",
+      "code": "hab",
+      "chapter": 3,
+      "title": "그럴지라도 주 안에서 기뻐하다",
+      "actors": [
+        "하박국"
+      ],
+      "object": "scene-marker",
+      "ref": "하박국 3:16-19",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열매와 양 떼와 소출이 없어도 구원의 하나님으로 기뻐하겠다는 고백으로 책을 마쳐요."
+      ],
+      "study": "열매와 양 떼와 소출이 없어도 구원의 하나님으로 기뻐하겠다는 고백으로 책을 마쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"praise","lead":"하박국","target":null,"mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"하박국"},{"action":"sway","duration":1.2,"actor":"하박국"},{"action":"step","duration":1.5,"actor":"하박국"},{"action":"sway","duration":1.8,"actor":"하박국"},{"action":"step","duration":1.5,"actor":"하박국"},{"action":"bow","duration":1.2,"actor":"하박국"}],"duration":8.2,"support":null,"ref":"하박국 3:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {}
