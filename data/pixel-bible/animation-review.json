@@ -20,14 +20,14 @@
     },
     {
       "code": "exo",
-      "payloadSha256": "82ddfe31ba2b27b8b198d8e06114e2c85eba8b07ea5d4bc1a784b91b19c3603c",
-      "scenes": 55,
-      "existing": 55,
+      "payloadSha256": "f195d5dd1321d6af3af67caa37ec282fe25973a6b2bb05e6a80385ffb445f5d1",
+      "scenes": 65,
+      "existing": 65,
       "restored": 0,
       "corrected": 8,
-      "planned": 55,
+      "planned": 65,
       "modes": {
-        "reconstruction": 45,
+        "reconstruction": 55,
         "illustration": 10
       },
       "status": "authored-awaiting-browser-review"
