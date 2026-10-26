@@ -391,6 +391,14 @@ test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
  assert.equal(d(0,-1),'up');assert.equal(d(0,1),'down');assert.equal(d(-1,0),'left');assert.equal(d(1,0),'right');assert.equal(d(0,0,'up'),'up');
 });
 
+test('도감 캐릭터는 좌우 쓸기에 반시계·시계 방향으로 시점을 돌리고 위아래 쓸기로 앞뒤를 본다',async()=>{
+ const {previewDirectionAfterSwipe:turn}=await import('../js/features/pixel-bible/collection-preview.js');
+ assert.equal(turn('down',40,0),'right');assert.equal(turn('right',40,0),'up');
+ assert.equal(turn('down',-40,0),'left');assert.equal(turn('left',-40,0),'up');
+ assert.equal(turn('down',0,-40),'up');assert.equal(turn('up',0,40),'down');
+ assert.equal(turn('left',2,1),'left');
+});
+
 test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한다',async()=>{
  const {APPEARANCES}=await import('../js/features/pixel-bible/appearance.js');
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');

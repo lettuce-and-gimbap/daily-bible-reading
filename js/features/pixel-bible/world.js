@@ -4,7 +4,7 @@ import {eventPlan} from './event-animation/timeline.js';
 import {mountScenePlayback,verseClipsForScene} from './verse-playback.js';
 import {createBgm} from './bgm.js?v=soft2';
 import {enhanceScene,eventRoutine} from './scripted-events.js';
-import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
+import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeHint,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
 import {worldCanAnimate} from './world-loop.js';
 import {beginWaterEscape,advanceWaterEscapes,advanceWaterHuff,rescueWaterEscape,WATER_ESCAPE_SECONDS} from './water-escape.js';
@@ -530,13 +530,17 @@ export async function mountPixelWorld(shell, options) {
     shell.querySelectorAll('[data-cast-person]').forEach(button=>button.setAttribute('aria-expanded','false'));
     select(-1);draw();
   }
-  const recipeUnlocks=loadRecipeUnlocks(localStorage);let hideRecipes=true;
+  const recipeUnlocks=loadRecipeUnlocks(localStorage),recipeHintLevels=new Map();let hideRecipes=true;
   const dailyDone=()=>!!options.dailyReadingDone?.();
   const isRecipeLocked=scene=>recipeLocked(scene,{discovered:recipeUnlocks,dailyDone:dailyDone(),hide:hideRecipes});
   function renderRecipes() {
     const container=shell.querySelector('.pb-recipes');
     container.innerHTML=`<button class="pb-button" data-action="recipe-lock" aria-pressed="${hideRecipes}">${hideRecipes?'🔒 조합식 해금':'🔓 오늘의 조합식 보기'}</button><p class="pb-help">오늘 통독을 마치면 잠금을 풀 수 있어요. 직접 인물과 물건을 가까이 배치해 발견한 조합은 계속 열려요.</p>`+model.scenes.map((scene,i)=>{
-      if(isRecipeLocked(scene))return `<article class="pb-recipe pb-recipe-mystery"><b>🔒 숨겨진 본문 장면</b><div class="pb-recipe-layout" aria-label="물음표 인물들을 물음표 오브젝트의 가까운 칸에 배치">${scene.actors.map(()=>'<span class="pb-mystery-person" aria-label="알 수 없는 인물">?</span>').join('')}${Array.from({length:1+(scene.requiresObjects?.length||0)},()=>'<span class="pb-mystery-object" aria-label="알 수 없는 오브젝트">?</span>').join('')}</div><small>각 인물을 물건 가까이 모아 보세요.</small></article>`;
+      if(isRecipeLocked(scene)){
+        const hintLevel=recipeHintLevels.get(recipeKey(scene))||0;
+        const hint=hintLevel?recipeHint(scene,hintLevel,{objectNames:OBJECTS}):'힌트는 3단계로 열려요. 본문 범위부터 필요한 물건, 인물 순서로 알려 드려요.';
+        return `<article class="pb-recipe pb-recipe-mystery"><b>🔒 숨겨진 본문 장면</b><div class="pb-recipe-layout" aria-label="물음표 인물들을 물음표 오브젝트의 가까운 칸에 배치">${scene.actors.map(()=>'<span class="pb-mystery-person" aria-label="알 수 없는 인물">?</span>').join('')}${Array.from({length:1+(scene.requiresObjects?.length||0)},()=>'<span class="pb-mystery-object" aria-label="알 수 없는 오브젝트">?</span>').join('')}</div><p class="pb-help" data-recipe-hint-text role="status">${esc(hint)}</p>${hintLevel<3?`<button class="pb-button" data-recipe-hint="${i}">힌트 보기 · ${hintLevel+1}/3</button>`:'<small>힌트를 모두 확인했어요.</small>'}</article>`;
+      }
       const missing=scene.actors.filter(name=>!npcs.some(n=>n.name===name));
       const object=objects.find(o=>o.kind===scene.object);
       const ready=!missing.length&&!!object&&requiredObjectsNearby(scene,object,objects);
@@ -975,6 +979,7 @@ export async function mountPixelWorld(shell, options) {
       return;
     }
     if(b.dataset.action==='recipe-lock'){if(hideRecipes&&!dailyDone()){say('오늘 통독을 마치거나 직접 조합을 발견하면 열 수 있어요.');return;}hideRecipes=!hideRecipes;renderRecipes();return;}
+    if(b.dataset.recipeHint!==undefined){const scene=model.scenes[Number(b.dataset.recipeHint)];if(!scene||!isRecipeLocked(scene))return;const key=recipeKey(scene);recipeHintLevels.set(key,Math.min(3,(recipeHintLevels.get(key)||0)+1));renderRecipes();return;}
     if (b.dataset.recipe!==undefined) { const scene=model.scenes[Number(b.dataset.recipe)],o=objects.find(o=>o.kind===scene.object);if(!scene)return;if(isRecipeLocked(scene)){say('아직 잠긴 조합이에요. 직접 배치해 발견해 보세요.');return;}if(activeEvent){say('장면이 진행 중이에요. 끝난 뒤 다시 눌러 주세요.');return;}if(!o||scene.actors.some(name=>!npcs.some(n=>n.name===name))){say(b.dataset.unavailableReason||'필요한 인물과 오브젝트를 먼저 준비해 주세요.');return;}queueScene(scene,o);return; }
     if (b.dataset.commonRecipe) {const o=objects.find(o=>o.kind===b.dataset.commonRecipe),n=npcs[selected];if(activeEvent||!o||!n||n.creature&&!creatureCanUse(n,b.dataset.commonRecipe)){say(b.dataset.unavailableReason||'필요한 인물과 오브젝트를 먼저 준비해 주세요.');return;}pendingEvent=null;clearInfo();if(!toObject(n,o))say('오브젝트 주변의 길과 설 자리를 비워 주세요.');return;}
     if (b.dataset.background && Object.hasOwn(BACKGROUNDS,b.dataset.background)) {
