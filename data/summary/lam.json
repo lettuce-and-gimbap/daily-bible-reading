@@ -121,14 +121,12 @@
       ],
       "people": [
         {"name":"유다 백성","role":"치욕을 기억해 달라는 이들","weight":3},
-        {"name":"조상들","role":"범죄하고 없어진 이들","weight":1},
         {"name":"다스리는 종들","role":"백성을 다스린 자","weight":1},
         {"name":"하나님","role":"영원한 보좌의 주","weight":3}
       ],
       "rels": [
         {"from":"유다 백성","to":"하나님","label":"돌이켜 달라는 백성","kind":"ally","directed":true,"weight":3,"verses":"1, 21","note":"주님, 우리가 겪은 일을 기억하시고 우리를 주께로 돌려 옛날처럼 새롭게 해 달라고 간구해요."},
-        {"from":"다스리는 종들","to":"유다 백성","label":"억누른 자","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"종이었던 사람들이 우리를 다스리는데 건져 줄 사람이 없다고 탄식해요."},
-        {"from":"유다 백성","to":"조상들","label":"죄를 짊어진 후손","kind":"family","directed":true,"weight":1,"verses":"7","note":"조상들은 죄짓고 없어졌고 그 대가를 우리가 짊어졌다고 해요. 자기 죄도 함께 고백해요."}
+        {"from":"다스리는 종들","to":"유다 백성","label":"억누른 자","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"종이었던 사람들이 우리를 다스리는데 건져 줄 사람이 없다고 탄식해요."}
       ],
       "places": [
         {"name":"시온 산","where":"예루살렘","what":"황폐해 여우가 다니는 시온 산, 곧 예루살렘이에요.","weight":2}

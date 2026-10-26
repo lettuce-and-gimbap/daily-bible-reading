@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3837);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3836);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -705,6 +705,23 @@ test('예레미야 41–52장의 암살·이집트 피신·열방 심판·포로
  }
  assert.match(entries.find(entry=>entry.id==='pair-jer-42-johanan-jeremiah').detail,/불순종/);
  assert.match(entries.find(entry=>entry.id==='pair-jer-52-evilmerodach-jehoiachin').lines[1],/식탁/);
+});
+
+test('예레미야애가 1–5장의 배신·조롱·박해·억압 관계를 탄식의 응답으로 잇고 부재한 조상은 조우에서 뺀다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/lam.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'lam',name:'예레미야애가',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('lam.'));
+ assert.equal(context.relations.length,8);assert.equal(entries.length,8);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`lam.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(summary.chapters[5].people.some(person=>person.name==='조상들'),false);
+ assert.equal(summary.chapters[5].rels.some(relation=>relation.from==='조상들'||relation.to==='조상들'),false);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
