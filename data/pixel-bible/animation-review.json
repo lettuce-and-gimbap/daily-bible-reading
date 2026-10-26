@@ -280,14 +280,14 @@
     },
     {
       "code": "ecc",
-      "payloadSha256": "d4be2190ada262a3f9a74c3e096d2e237e8fd3adf971fde4ca60fce3170e3b01",
-      "scenes": 2,
-      "existing": 2,
+      "payloadSha256": "2c1ab45024404d56584b31e156aabd24d303b9c14b57a45b0705a749c0305136",
+      "scenes": 11,
+      "existing": 11,
       "restored": 0,
       "corrected": 1,
-      "planned": 2,
+      "planned": 11,
       "modes": {
-        "illustration": 2
+        "illustration": 11
       },
       "status": "authored-awaiting-browser-review"
     },

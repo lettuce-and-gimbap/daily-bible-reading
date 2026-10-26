@@ -56,6 +56,315 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"한 목자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"book","beats":[{"action":"listen","duration":1,"actor":"한 목자"},{"action":"read","duration":1.2,"actor":"한 목자"},{"action":"look","duration":1.5,"actor":"한 목자"},{"action":"point","duration":1.8,"actor":"한 목자"},{"action":"listen","duration":1.5,"actor":"한 목자"},{"action":"bow","duration":1.2,"actor":"한 목자"}],"duration":8.2,"support":null,"ref":"전도서 12:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-2-0",
+      "code": "ecc",
+      "chapter": 2,
+      "title": "즐거움과 큰일을 시험한 전도자",
+      "actors": [
+        "전도자"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 2:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 전도자가 웃음과 술, 집과 동산과 재물을 쌓아 보지만 모두 바람을 잡는 일처럼 남았다고 돌아봐요."
+      ],
+      "study": "전도자가 웃음과 술, 집과 동산과 재물을 쌓아 보지만 모두 바람을 잡는 일처럼 남았다고 돌아봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 2:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-3-0",
+      "code": "ecc",
+      "chapter": 3,
+      "title": "때를 따라 일하시는 일을 바라보다",
+      "actors": [
+        "전도자",
+        "사람"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 3:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 울 때와 웃을 때, 심을 때와 거둘 때를 나란히 놓고 사람이 모든 일을 다 헤아릴 수 없는 한계를 돌아봐요."
+      ],
+      "study": "울 때와 웃을 때, 심을 때와 거둘 때를 나란히 놓고 사람이 모든 일을 다 헤아릴 수 없는 한계를 돌아봐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"사람","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 3:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-4-0",
+      "code": "ecc",
+      "chapter": 4,
+      "title": "학대받는 이의 눈물과 홀로 있는 사람",
+      "actors": [
+        "전도자",
+        "학대받는 자",
+        "학대하는 자",
+        "함께하는 두 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 4:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 학대받는 이의 눈물을 살피고, 시기와 고립의 허무함을 짚은 뒤 둘과 세 겹 줄의 도움을 비유해요."
+      ],
+      "study": "학대받는 이의 눈물을 살피고, 시기와 고립의 허무함을 짚은 뒤 둘과 세 겹 줄의 도움을 비유해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"학대받는 자","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 4:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-4-1",
+      "code": "ecc",
+      "chapter": 4,
+      "title": "지혜로운 소년과 늙고 둔한 왕",
+      "actors": [
+        "전도자",
+        "지혜로운 소년",
+        "늙고 둔한 왕"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 4:13-16",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 감옥에서 왕위에 오른 가난한 소년과 듣지 않는 늙은 왕의 대비로 권세의 덧없음을 말해요."
+      ],
+      "study": "감옥에서 왕위에 오른 가난한 소년과 듣지 않는 늙은 왕의 대비로 권세의 덧없음을 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"parable","lead":"전도자","target":"지혜로운 소년","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 4:13-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-5-0",
+      "code": "ecc",
+      "chapter": 5,
+      "title": "재물이 있어도 누리지 못하는 부자",
+      "actors": [
+        "전도자",
+        "부자",
+        "가난한 자"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 5:8-20",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 재물을 쌓고도 누리지 못하는 사람과 자기 몫을 기뻐하는 사람을 대비해요."
+      ],
+      "study": "재물을 쌓고도 누리지 못하는 사람과 자기 몫을 기뻐하는 사람을 대비해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"부자","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 5:8-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-8-0",
+      "code": "ecc",
+      "chapter": 8,
+      "title": "악인이 오래 사는 현실과 늦은 심판을 보다",
+      "actors": [
+        "전도자",
+        "왕",
+        "악인",
+        "하나님을 경외하는 자"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 8:9-17",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 악인의 형통과 지연되는 심판을 살피며, 사람이 하나님의 일을 다 알아낼 수 없음을 고백해요."
+      ],
+      "study": "악인의 형통과 지연되는 심판을 살피며, 사람이 하나님의 일을 다 알아낼 수 없음을 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"왕","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 8:9-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-9-0",
+      "code": "ecc",
+      "chapter": 9,
+      "title": "가난한 지혜자가 큰 성을 구하다",
+      "actors": [
+        "전도자",
+        "가난한 지혜자",
+        "큰 왕"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 9:13-18",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 작은 성을 포위한 큰 왕과 성을 구한 가난한 지혜자의 비유를 들려주고, 지혜가 무기보다 낫다고 해요."
+      ],
+      "study": "작은 성을 포위한 큰 왕과 성을 구한 가난한 지혜자의 비유를 들려주고, 지혜가 무기보다 낫다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"parable","lead":"전도자","target":"가난한 지혜자","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 9:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-11-0",
+      "code": "ecc",
+      "chapter": 11,
+      "title": "아침에 씨를 뿌리고 저녁에도 손을 거두지 않다",
+      "actors": [
+        "전도자",
+        "농부",
+        "젊은이"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 11:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바람과 구름만 살피다 일을 미루지 말고 아침에도 저녁에도 씨를 뿌리라고 권하며 젊은 날의 책임을 말해요."
+      ],
+      "study": "바람과 구름만 살피다 일을 미루지 말고 아침에도 저녁에도 씨를 뿌리라고 권하며 젊은 날의 책임을 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"농부","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 11:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ecc-extra-12-0",
+      "code": "ecc",
+      "chapter": 12,
+      "title": "늙음의 비유를 지나 창조주를 기억하다",
+      "actors": [
+        "전도자",
+        "청년",
+        "한 목자"
+      ],
+      "object": "scene-marker",
+      "ref": "전도서 12:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노년과 죽음을 집과 등잔의 비유로 그린 뒤, 창조주를 기억하고 하나님을 경외하라는 결론에 이르러요."
+      ],
+      "study": "노년과 죽음을 집과 등잔의 비유로 그린 뒤, 창조주를 기억하고 하나님을 경외하라는 결론에 이르러요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"전도자","target":"청년","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"전도자"},{"action":"read","duration":1.2,"actor":"전도자"},{"action":"look","duration":1.5,"actor":"전도자"},{"action":"point","duration":1.8,"actor":"전도자"},{"action":"listen","duration":1.5,"actor":"전도자"},{"action":"bow","duration":1.2,"actor":"전도자"}],"duration":8.2,"support":null,"ref":"전도서 12:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
