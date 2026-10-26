@@ -28,7 +28,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"fire","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 1:13-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "fire",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 1:13-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-27-2",
@@ -61,7 +107,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"악인","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"악인"},{"action":"read","duration":1.2,"actor":"악인"},{"action":"look","duration":1.5,"actor":"악인"},{"action":"point","duration":1.8,"actor":"악인"},{"action":"listen","duration":1.5,"actor":"악인"},{"action":"bow","duration":1.2,"actor":"악인"}],"duration":8.2,"support":null,"ref":"욥기 27:13-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "악인",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "sword",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "악인"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "악인"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "악인"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "악인"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "악인"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "악인"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 27:13-23",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-28-0",
@@ -94,7 +186,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"사람","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"silver","beats":[{"action":"listen","duration":1,"actor":"사람"},{"action":"read","duration":1.2,"actor":"사람"},{"action":"look","duration":1.5,"actor":"사람"},{"action":"point","duration":1.8,"actor":"사람"},{"action":"listen","duration":1.5,"actor":"사람"},{"action":"bow","duration":1.2,"actor":"사람"}],"duration":8.2,"support":null,"ref":"욥기 28:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "사람",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "silver",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "사람"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "사람"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "사람"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "사람"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "사람"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "사람"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 28:1-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-32-1",
@@ -125,7 +263,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"엘리후","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"read","duration":1.2,"actor":"엘리후"},{"action":"look","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"bow","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 32:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "엘리후",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 32:6-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-35-0",
@@ -155,7 +339,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"엘리후","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cloud","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"read","duration":1.2,"actor":"엘리후"},{"action":"look","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"bow","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 35:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "엘리후",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 35:1-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-35",
@@ -185,7 +415,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"scratch","lead":"욥","target":null,"mode":"reconstruction","setting":"desert","effect":"potsherd","emotion":"sad","prop":"pot","beats":[{"action":"sit","duration":1,"actor":"욥"},{"action":"reach","duration":1.2,"actor":"욥"},{"action":"scratch","duration":1.5,"actor":"욥"},{"action":"wait","duration":1.8,"actor":"욥"},{"action":"scratch","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 2:8-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "scratch",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "desert",
+        "effect": "potsherd",
+        "emotion": "sad",
+        "prop": "pot",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "scratch",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "scratch",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 2:8-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-01",
@@ -214,7 +490,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"사탄","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사탄"},{"action":"read","duration":1.2,"actor":"사탄"},{"action":"look","duration":1.5,"actor":"사탄"},{"action":"point","duration":1.8,"actor":"사탄"},{"action":"listen","duration":1.5,"actor":"사탄"},{"action":"bow","duration":1.2,"actor":"사탄"}],"duration":8.2,"support":null,"ref":"욥기 1:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "사탄",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "사탄"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "사탄"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "사탄"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "사탄"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "사탄"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "사탄"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 1:6-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-02",
@@ -239,7 +561,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"cloak","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 1:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "cloak",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 1:20-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-03",
@@ -269,7 +637,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"wounded","lead":"욥","target":"사탄","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 2:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "wounded",
+        "lead": "욥",
+        "target": "사탄",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 2:1-7",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-04",
@@ -297,7 +711,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":"엘리바스","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"mat","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 2:11-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": "엘리바스",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "mat",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 2:11-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-05",
@@ -345,7 +805,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"cloud","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 3:1-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 3:1-26",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-06",
@@ -389,7 +895,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"엘리바스","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리바스"},{"action":"turn","duration":1.2,"actor":"엘리바스"},{"action":"point","duration":1.5,"actor":"엘리바스"},{"action":"point","duration":1.8,"actor":"엘리바스"},{"action":"listen","duration":1.5,"actor":"엘리바스"},{"action":"lower","duration":1.2,"actor":"엘리바스"}],"duration":8.2,"support":null,"ref":"욥기 4:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "엘리바스",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 4:1-21",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-07",
@@ -434,7 +986,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"빌닷","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"빌닷"},{"action":"turn","duration":1.2,"actor":"빌닷"},{"action":"point","duration":1.5,"actor":"빌닷"},{"action":"point","duration":1.8,"actor":"빌닷"},{"action":"listen","duration":1.5,"actor":"빌닷"},{"action":"lower","duration":1.2,"actor":"빌닷"}],"duration":8.2,"support":null,"ref":"욥기 8:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "빌닷",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "빌닷"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "빌닷"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "빌닷"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 8:1-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-08",
@@ -477,7 +1075,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"소발","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"소발"},{"action":"turn","duration":1.2,"actor":"소발"},{"action":"point","duration":1.5,"actor":"소발"},{"action":"point","duration":1.8,"actor":"소발"},{"action":"listen","duration":1.5,"actor":"소발"},{"action":"lower","duration":1.2,"actor":"소발"}],"duration":8.2,"support":null,"ref":"욥기 11:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "소발",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "소발"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "소발"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "소발"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "소발"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 11:1-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-09",
@@ -535,7 +1179,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"엘리바스","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리바스"},{"action":"turn","duration":1.2,"actor":"엘리바스"},{"action":"point","duration":1.5,"actor":"엘리바스"},{"action":"point","duration":1.8,"actor":"엘리바스"},{"action":"listen","duration":1.5,"actor":"엘리바스"},{"action":"lower","duration":1.2,"actor":"엘리바스"}],"duration":8.2,"support":null,"ref":"욥기 15:1-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "엘리바스",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 15:1-35",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-10",
@@ -577,7 +1267,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"빌닷","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"빌닷"},{"action":"turn","duration":1.2,"actor":"빌닷"},{"action":"point","duration":1.5,"actor":"빌닷"},{"action":"point","duration":1.8,"actor":"빌닷"},{"action":"listen","duration":1.5,"actor":"빌닷"},{"action":"lower","duration":1.2,"actor":"빌닷"}],"duration":8.2,"support":null,"ref":"욥기 18:1-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "빌닷",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "빌닷"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "빌닷"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "빌닷"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 18:1-19",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-11",
@@ -606,7 +1342,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"promise","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"book","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"lift","duration":1.2,"actor":"욥"},{"action":"speak","duration":1.5,"actor":"욥"},{"action":"bless","duration":1.8,"actor":"욥"},{"action":"lower","duration":1.5,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 19:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 19:23-29",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-12",
@@ -650,7 +1432,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"소발","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"소발"},{"action":"turn","duration":1.2,"actor":"소발"},{"action":"point","duration":1.5,"actor":"소발"},{"action":"point","duration":1.8,"actor":"소발"},{"action":"listen","duration":1.5,"actor":"소발"},{"action":"lower","duration":1.2,"actor":"소발"}],"duration":8.2,"support":null,"ref":"욥기 20:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "소발",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "소발"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "소발"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "소발"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "소발"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 20:1-21",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-13",
@@ -698,42 +1526,128 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"엘리바스","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리바스"},{"action":"turn","duration":1.2,"actor":"엘리바스"},{"action":"point","duration":1.5,"actor":"엘리바스"},{"action":"point","duration":1.8,"actor":"엘리바스"},{"action":"listen","duration":1.5,"actor":"엘리바스"},{"action":"lower","duration":1.2,"actor":"엘리바스"}],"duration":8.2,"support":null,"ref":"욥기 22:1-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "엘리바스",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 22:1-25",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-14",
       "code": "job",
       "chapter": 25,
-      "title": "빌닷의 짧은 주장과 욥의 마지막 변론",
+      "title": "빌닷이 하나님의 위엄을 말하다",
       "actors": [
         "빌닷",
         "욥"
       ],
       "object": "scroll",
-      "ref": "욥기 25:1-12",
+      "ref": "욥기 25:1-6",
       "verseNumbers": [
         1,
         2,
         3,
         4,
         5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
+        6
       ],
       "actions": {},
       "lines": [
-        "해설: 빌닷은 사람의 미약함을 말하고, 욥은 친구들의 지혜를 인정하지 않으며 자기 결백을 이어 말해요."
+        "해설: 빌닷은 인간의 연약함과 하나님의 위엄을 짧게 말해요."
       ],
-      "study": "빌닷은 사람의 미약함을 말하고, 욥은 친구들의 지혜를 인정하지 않으며 자기 결백을 이어 말해요.",
+      "study": "빌닷은 인간의 연약함과 하나님의 위엄을 짧게 말해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"빌닷","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"빌닷"},{"action":"turn","duration":1.2,"actor":"빌닷"},{"action":"point","duration":1.5,"actor":"빌닷"},{"action":"point","duration":1.8,"actor":"빌닷"},{"action":"listen","duration":1.5,"actor":"빌닷"},{"action":"lower","duration":1.2,"actor":"빌닷"}],"duration":8.2,"support":null,"ref":"욥기 25:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "빌닷",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "빌닷"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "빌닷"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "빌닷"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 25:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-15",
@@ -772,7 +1686,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"사람","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"book","beats":[{"action":"listen","duration":1,"actor":"사람"},{"action":"read","duration":1.2,"actor":"사람"},{"action":"look","duration":1.5,"actor":"사람"},{"action":"point","duration":1.8,"actor":"사람"},{"action":"listen","duration":1.5,"actor":"사람"},{"action":"bow","duration":1.2,"actor":"사람"}],"duration":8.2,"support":null,"ref":"욥기 28:12-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "사람",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "사람"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "사람"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "사람"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "사람"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "사람"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "사람"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 28:12-28",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-16",
@@ -819,7 +1779,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"lamp","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 29:1-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "lamp",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 29:1-25",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-17",
@@ -873,7 +1879,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"욥","target":"조롱하는 젊은이들","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tambourine","beats":[{"action":"startle","duration":1,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"cover-mouth","duration":1.8,"actor":"욥"},{"action":"mourn","duration":1.5,"actor":"욥"},{"action":"lower","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 30:1-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": "조롱하는 젊은이들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "tambourine",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 30:1-31",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-18",
@@ -937,7 +1989,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"oath","lead":"욥","target":"종들","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"book","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"},{"action":"extend","duration":1.5,"actor":"욥"},{"action":"pledge","duration":1.8,"actor":"욥"},{"action":"read","duration":1.5,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 31:1-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "oath",
+        "lead": "욥",
+        "target": "종들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "covenant",
+        "emotion": "determined",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "pledge",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "read",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 31:1-40",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-19",
@@ -970,7 +2068,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"explain","lead":"엘리후","target":"욥","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"turn","duration":1.2,"actor":"엘리후"},{"action":"speak","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"lower","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 32:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "explain",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 32:15-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-20",
@@ -1026,7 +2170,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"explain","lead":"엘리후","target":"욥","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"turn","duration":1.2,"actor":"엘리후"},{"action":"speak","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"lower","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 33:1-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "explain",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 33:1-33",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-21",
@@ -1087,7 +2277,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"엘리후","target":"욥","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scale","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"turn","duration":1.2,"actor":"엘리후"},{"action":"point","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"lower","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 34:1-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scale",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 34:1-37",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-22",
@@ -1118,19 +2354,65 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"explain","lead":"엘리후","target":"압제받는 사람들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"cloud","beats":[{"action":"listen","duration":1,"actor":"엘리후"},{"action":"turn","duration":1.2,"actor":"엘리후"},{"action":"speak","duration":1.5,"actor":"엘리후"},{"action":"point","duration":1.8,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"lower","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 35:9-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "explain",
+        "lead": "엘리후",
+        "target": "압제받는 사람들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 35:9-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-23",
       "code": "job",
       "chapter": 36,
-      "title": "구름과 비를 들어 말하는 엘리후",
+      "title": "엘리후가 하나님의 큰일과 다스리심을 말하다",
       "actors": [
         "엘리후",
         "욥"
       ],
       "object": "cloud",
-      "ref": "욥기 36:1-37",
+      "ref": "욥기 36:1-33",
       "verseNumbers": [
         1,
         2,
@@ -1164,11 +2446,7 @@
         30,
         31,
         32,
-        33,
-        34,
-        35,
-        36,
-        37
+        33
       ],
       "actions": {},
       "lines": [
@@ -1178,79 +2456,64 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"cloud","lead":"엘리후","target":"욥","mode":"reconstruction","setting":"hills","effect":"cloud","emotion":"surprised","prop":"cloud","beats":[{"action":"look","duration":1,"actor":"엘리후"},{"action":"lift","duration":1.2,"actor":"엘리후"},{"action":"listen","duration":1.5,"actor":"엘리후"},{"action":"bow","duration":1.8,"actor":"엘리후"},{"action":"lower","duration":1.5,"actor":"엘리후"},{"action":"stand","duration":1.2,"actor":"엘리후"}],"duration":8.2,"support":null,"ref":"욥기 36:1-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "cloud",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "hills",
+        "effect": "cloud",
+        "emotion": "surprised",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "bow",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 36:1-33",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-24",
       "code": "job",
       "chapter": 38,
-      "title": "폭풍 속에서 욥에게 물으시는 하나님",
+      "title": "폭풍 속에서 욥에게 창조 세계를 물으시다",
       "actors": [
         "욥"
       ],
       "object": "cloud",
-      "ref": "욥기 38:1-39",
-      "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 폭풍 가운데 시작된 질문은 창조와 자연의 질서를 다뤄요. 하나님의 모습은 인물로 그리지 않고 폭풍과 빛으로 상징해요."
-      ],
-      "study": "폭풍 가운데 시작된 질문은 창조와 자연의 질서를 다뤄요. 하나님의 모습은 인물로 그리지 않고 폭풍과 빛으로 상징해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"vision","lead":"욥","target":null,"mode":"vision","setting":"night","effect":"vision","emotion":"surprised","prop":"cloud","beats":[{"action":"sit","duration":1,"actor":"욥"},{"action":"lie","duration":1.2,"actor":"욥"},{"action":"sleep","duration":1.5,"actor":"욥"},{"action":"look","duration":1.8,"actor":"욥"},{"action":"startle","duration":1.5,"actor":"욥"},{"action":"rise","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 38:1-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-job-extra-25",
-      "code": "job",
-      "chapter": 40,
-      "title": "베헤못과 리워야단의 상징적 묘사",
-      "actors": [
-        "욥"
-      ],
-      "object": "scene-marker",
-      "ref": "욥기 40:1-41",
+      "ref": "욥기 38:1-41",
       "verseNumbers": [
         1,
         2,
@@ -1296,13 +2559,141 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 욥은 베헤못과 리워야단을 묘사하는 질문을 듣고 자신의 한계를 마주해요. 괴수는 사실적 폭력이나 인간형 NPC로 만들지 않아요."
+        "해설: 하나님은 폭풍 가운데서 땅과 바다와 하늘의 질서를 물으시고, 사자와 까마귀를 먹이시는 창조의 돌보심까지 보여 주세요."
       ],
-      "study": "욥은 베헤못과 리워야단을 묘사하는 질문을 듣고 자신의 한계를 마주해요. 괴수는 사실적 폭력이나 인간형 NPC로 만들지 않아요.",
+      "study": "하나님은 폭풍 가운데서 땅과 바다와 하늘의 질서를 물으시고, 사자와 까마귀를 먹이시는 창조의 돌보심까지 보여 주세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"욥","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"read","duration":1.2,"actor":"욥"},{"action":"look","duration":1.5,"actor":"욥"},{"action":"point","duration":1.8,"actor":"욥"},{"action":"listen","duration":1.5,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 40:1-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "vision",
+        "lead": "욥",
+        "target": null,
+        "mode": "vision",
+        "setting": "night",
+        "effect": "vision",
+        "emotion": "surprised",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lie",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "sleep",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "startle",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "rise",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 38:1-41",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-extra-25",
+      "code": "job",
+      "chapter": 40,
+      "title": "욥이 손으로 입을 가리고 대답을 멈추다",
+      "actors": [
+        "욥"
+      ],
+      "object": "scene-marker",
+      "ref": "욥기 40:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 하나님의 질문 앞에서 자신을 낮추고 더 말하지 않겠다고 해요. 이어지는 질문은 욥의 의로움과 통치에 대한 도전을 다뤄요."
+      ],
+      "study": "욥은 하나님의 질문 앞에서 자신을 낮추고 더 말하지 않겠다고 해요. 이어지는 질문은 욥의 의로움과 통치에 대한 도전을 다뤄요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 40:1-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-26",
@@ -1330,7 +2721,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"repent","lead":"욥","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"startle","duration":1.2,"actor":"욥"},{"action":"grasp","duration":1.5,"actor":"욥"},{"action":"tear","duration":1.8,"actor":"욥"},{"action":"kneel","duration":1.5,"actor":"욥"},{"action":"pray","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 42:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "repent",
+        "lead": "욥",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tear",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "tear",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "pray",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 42:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-27",
@@ -1358,7 +2795,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"욥","target":"엘리바스","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"},{"action":"extend","duration":1.5,"actor":"욥"},{"action":"receive","duration":1.8,"actor":"욥"},{"action":"bow","duration":1.5,"actor":"욥"},{"action":"stand","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 42:7-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "reconcile",
+        "lead": "욥",
+        "target": "엘리바스",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "altar",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "receive",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 42:7-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-28",
@@ -1391,7 +2874,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시와 논쟁은 설명·상징 장면으로 표현해요. 하나님의 모습과 시적 괴수는 인간형 NPC나 사실적 폭력으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"blessing","lead":"욥","target":"여미마","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"table","beats":[{"action":"listen","duration":1,"actor":"욥"},{"action":"lift","duration":1.2,"actor":"욥"},{"action":"bless","duration":1.5,"actor":"욥"},{"action":"bless","duration":1.8,"actor":"욥"},{"action":"lower","duration":1.5,"actor":"욥"},{"action":"bow","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 42:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "blessing",
+        "lead": "욥",
+        "target": "여미마",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "table",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 42:10-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-job-extra-1-0",
@@ -1419,7 +2948,2267 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"feast","lead":"욥","target":"욥의 자녀들","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"욥"},{"action":"walk","duration":1.2,"actor":"욥"},{"action":"bow","duration":1.5,"actor":"욥"},{"action":"extend","duration":1.8,"actor":"욥"},{"action":"place","duration":1.5,"actor":"욥"},{"action":"sit","duration":1.2,"actor":"욥"}],"duration":8.2,"support":null,"ref":"욥기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "feast",
+        "lead": "욥",
+        "target": "욥의 자녀들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 1:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-01",
+      "code": "job",
+      "chapter": 5,
+      "title": "엘리바스가 징계와 소망을 말하다",
+      "actors": [
+        "엘리바스",
+        "욥"
+      ],
+      "object": "tent",
+      "ref": "욥기 5:1-27",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리바스는 고난을 징계로 받아들이라는 조언과 회복의 희망을 말해요."
+      ],
+      "study": "엘리바스는 고난을 징계로 받아들이라는 조언과 회복의 희망을 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "counsel",
+        "lead": "엘리바스",
+        "target": "욥",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "serious",
+        "prop": "tent",
+        "beats": [
+          {
+            "action": "turn",
+            "duration": 1,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 5:1-27",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-02",
+      "code": "job",
+      "chapter": 6,
+      "title": "욥이 견딜 수 없는 괴로움과 친구의 침묵을 말하다",
+      "actors": [
+        "욥",
+        "엘리바스"
+      ],
+      "object": "scale",
+      "ref": "욥기 6:1-30",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 자신의 고통이 너무 무겁다고 말하고, 친구가 자신을 이해하지 못한다고 토로해요."
+      ],
+      "study": "욥은 자신의 고통이 너무 무겁다고 말하고, 친구가 자신을 이해하지 못한다고 토로해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": "엘리바스",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "grief",
+        "prop": "scale",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 6:1-30",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-03",
+      "code": "job",
+      "chapter": 7,
+      "title": "욥이 짧은 인생과 고통을 탄식하다",
+      "actors": [
+        "욥"
+      ],
+      "object": "house",
+      "ref": "욥기 7:1-21",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 품꾼 같은 삶과 잠조차 편안하지 않은 밤을 말하며, 자신의 고통을 하나님께 호소해요."
+      ],
+      "study": "욥은 품꾼 같은 삶과 잠조차 편안하지 않은 밤을 말하며, 자신의 고통을 하나님께 호소해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "grief",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lie",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 7:1-21",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-04",
+      "code": "job",
+      "chapter": 9,
+      "title": "욥이 하나님의 크심과 인간의 한계를 말하다",
+      "actors": [
+        "욥",
+        "빌닷"
+      ],
+      "object": "star",
+      "ref": "욥기 9:1-35",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 하나님의 권능 앞에서 사람이 스스로 의롭다 주장하기 어렵고, 자신을 변호해 줄 판결자를 찾기 어렵다고 말해요."
+      ],
+      "study": "욥은 하나님의 권능 앞에서 사람이 스스로 의롭다 주장하기 어렵고, 자신을 변호해 줄 판결자를 찾기 어렵다고 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "욥",
+        "target": "빌닷",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "symbol",
+        "emotion": "troubled",
+        "prop": "star",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "빌닷"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 9:1-35",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-05",
+      "code": "job",
+      "chapter": 10,
+      "title": "욥이 자신을 빚으신 하나님께 까닭을 묻다",
+      "actors": [
+        "욥"
+      ],
+      "object": "tomb",
+      "ref": "욥기 10:1-22",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 자신을 지으신 하나님께 왜 자신을 괴롭게 하시는지 묻고, 잠시라도 놓아 달라고 탄식해요."
+      ],
+      "study": "욥은 자신을 지으신 하나님께 왜 자신을 괴롭게 하시는지 묻고, 잠시라도 놓아 달라고 탄식해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "grief",
+        "prop": "tomb",
+        "beats": [
+          {
+            "action": "kneel",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 10:1-22",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-06",
+      "code": "job",
+      "chapter": 12,
+      "title": "욥이 친구들의 지혜를 되묻다",
+      "actors": [
+        "욥",
+        "세 친구"
+      ],
+      "object": "fish",
+      "ref": "욥기 12:1-25",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 친구들의 지혜가 자신보다 낫지 않다고 반박하고, 지혜와 권능은 하나님께 있음을 고백해요."
+      ],
+      "study": "욥은 친구들의 지혜가 자신보다 낫지 않다고 반박하고, 지혜와 권능은 하나님께 있음을 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "욥",
+        "target": "세 친구",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "fish",
+        "beats": [
+          {
+            "action": "turn",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "세 친구"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 12:1-25",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-07",
+      "code": "job",
+      "chapter": 13,
+      "title": "욥이 친구들의 말을 꾸짖고 하나님께 답을 구하다",
+      "actors": [
+        "욥",
+        "세 친구"
+      ],
+      "object": "robe",
+      "ref": "욥기 13:1-28",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 친구들의 그릇된 변론을 꾸짖고, 하나님 앞에서 자신의 사정을 말하겠다고 해요."
+      ],
+      "study": "욥은 친구들의 그릇된 변론을 꾸짖고, 하나님 앞에서 자신의 사정을 말하겠다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "욥",
+        "target": "세 친구",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "robe",
+        "beats": [
+          {
+            "action": "stand",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "세 친구"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 13:1-28",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-08",
+      "code": "job",
+      "chapter": 14,
+      "title": "욥이 시드는 꽃과 다시 살 소망을 묻다",
+      "actors": [
+        "욥"
+      ],
+      "object": "tree",
+      "ref": "욥기 14:1-22",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 사람의 짧은 삶을 시드는 꽃에 비유하고, 죽은 뒤 다시 살 수 있는지 묻고 기다려요."
+      ],
+      "study": "욥은 사람의 짧은 삶을 시드는 꽃에 비유하고, 죽은 뒤 다시 살 수 있는지 묻고 기다려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "symbol",
+        "emotion": "grief",
+        "prop": "tree",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 14:1-22",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-09",
+      "code": "job",
+      "chapter": 16,
+      "title": "욥이 친구들을 위로자라 부르며 하늘의 증인을 찾다",
+      "actors": [
+        "욥",
+        "세 친구"
+      ],
+      "object": "sackcloth",
+      "ref": "욥기 16:1-22",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 친구들의 위로가 오히려 괴롭다고 말하고, 자신을 위해 증언할 하늘의 증인을 바라요."
+      ],
+      "study": "욥은 친구들의 위로가 오히려 괴롭다고 말하고, 자신을 위해 증언할 하늘의 증인을 바라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": "세 친구",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "grief",
+        "prop": "sackcloth",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "세 친구"
+          },
+          {
+            "action": "reach",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 16:1-22",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-10",
+      "code": "job",
+      "chapter": 17,
+      "title": "욥이 무덤과 희망 사이에서 보증을 구하다",
+      "actors": [
+        "욥"
+      ],
+      "object": "tomb",
+      "ref": "욥기 17:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 죽음이 가까이 있다고 느끼며, 자신을 위해 보증해 줄 이와 남아 있는 희망을 찾아요."
+      ],
+      "study": "욥은 죽음이 가까이 있다고 느끼며, 자신을 위해 보증해 줄 이와 남아 있는 희망을 찾아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "grief",
+        "prop": "tomb",
+        "beats": [
+          {
+            "action": "sit",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 17:1-16",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-11",
+      "code": "job",
+      "chapter": 19,
+      "title": "욥이 버림받은 처지와 대속자의 소망을 말하다",
+      "actors": [
+        "욥",
+        "세 친구",
+        "욥의 아내",
+        "형제와 친척"
+      ],
+      "object": "book",
+      "ref": "욥기 19:1-22",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 가까운 이들에게서 외면당한 고통을 말하면서도, 자신의 대속자가 살아 계시리라는 소망을 붙들어요."
+      ],
+      "study": "욥은 가까운 이들에게서 외면당한 고통을 말하면서도, 자신의 대속자가 살아 계시리라는 소망을 붙들어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "욥",
+        "target": "세 친구",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "grief",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "reach",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "세 친구"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 19:1-22",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-12",
+      "code": "job",
+      "chapter": 21,
+      "title": "욥이 악인의 형통을 두고 친구들에게 묻다",
+      "actors": [
+        "욥",
+        "악인",
+        "세 친구"
+      ],
+      "object": "house",
+      "ref": "욥기 21:1-34",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 악인들이 평안하고 번성하는 현실을 지적하며, 죽음 앞에서 사람들의 운명이 어떻게 되는지 묻고 친구들의 위로를 반박해요."
+      ],
+      "study": "욥은 악인들이 평안하고 번성하는 현실을 지적하며, 죽음 앞에서 사람들의 운명이 어떻게 되는지 묻고 친구들의 위로를 반박해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "욥",
+        "target": "악인",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "troubled",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "point",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "악인"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "세 친구"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 21:1-34",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-13",
+      "code": "job",
+      "chapter": 23,
+      "title": "욥이 하나님을 찾으나 침묵과 두려움을 느끼다",
+      "actors": [
+        "욥"
+      ],
+      "object": "fire",
+      "ref": "욥기 23:1-17",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 하나님을 찾아 자신의 사정을 아뢰고 싶지만, 그분의 뜻과 두려운 침묵 앞에서 흔들려요."
+      ],
+      "study": "욥은 하나님을 찾아 자신의 사정을 아뢰고 싶지만, 그분의 뜻과 두려운 침묵 앞에서 흔들려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "seek",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "fire",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 23:1-17",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-14",
+      "code": "job",
+      "chapter": 24,
+      "title": "욥이 억눌린 이들의 고통과 악의 현실을 말하다",
+      "actors": [
+        "욥",
+        "가난한 자들",
+        "악인"
+      ],
+      "object": "field",
+      "ref": "욥기 24:1-25",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 땅과 집을 빼앗기고 굶주림과 추위에 놓인 사람들을 이야기하며, 악이 잠시 번성하는 현실을 고발해요."
+      ],
+      "study": "욥은 땅과 집을 빼앗기고 굶주림과 추위에 놓인 사람들을 이야기하며, 악이 잠시 번성하는 현실을 고발해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "accuse",
+        "lead": "욥",
+        "target": "가난한 자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "symbol",
+        "emotion": "serious",
+        "prop": "field",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "gather",
+            "duration": 1.5,
+            "actor": "가난한 자들"
+          },
+          {
+            "action": "carry",
+            "duration": 1.8,
+            "actor": "가난한 자들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "악인"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 24:1-25",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-15",
+      "code": "job",
+      "chapter": 26,
+      "title": "욥이 창조 세계에 드러난 하나님의 능력을 말하다",
+      "actors": [
+        "욥"
+      ],
+      "object": "cloud",
+      "ref": "욥기 26:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 땅과 바다와 하늘을 다스리시는 하나님의 능력을 말하고, 자신이 말한 것조차 그분의 큰일을 다 설명하지 못한다고 인정해요."
+      ],
+      "study": "욥은 땅과 바다와 하늘을 다스리시는 하나님의 능력을 말하고, 자신이 말한 것조차 그분의 큰일을 다 설명하지 못한다고 인정해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "reveal",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "symbol",
+        "emotion": "solemn",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 26:1-14",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-16",
+      "code": "job",
+      "chapter": 27,
+      "title": "욥이 온전함을 굽히지 않고 악인의 끝을 말하다",
+      "actors": [
+        "욥",
+        "악인",
+        "세 친구"
+      ],
+      "object": "robe",
+      "ref": "욥기 27:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 욥은 숨이 붙어 있는 동안 자신의 온전함을 버리지 않겠다고 다짐하고, 악인의 몫이 사라질 것을 말해요."
+      ],
+      "study": "욥은 숨이 붙어 있는 동안 자신의 온전함을 버리지 않겠다고 다짐하고, 악인의 몫이 사라질 것을 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "pledge",
+        "lead": "욥",
+        "target": "악인",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "robe",
+        "beats": [
+          {
+            "action": "stand",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "세 친구"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 27:1-12",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-17",
+      "code": "job",
+      "chapter": 32,
+      "title": "엘리후가 분노하며 발언을 기다린 까닭을 밝히다",
+      "actors": [
+        "엘리후",
+        "욥",
+        "세 친구",
+        "바라겔"
+      ],
+      "object": "scroll",
+      "ref": "욥기 32:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리후는 욥이 자신을 의롭다 한 일과 친구들이 답하지 못한 일을 보고, 나이가 어려 지금까지 기다렸다고 설명해요."
+      ],
+      "study": "엘리후는 욥이 자신을 의롭다 한 일과 친구들이 답하지 못한 일을 보고, 나이가 어려 지금까지 기다렸다고 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "listen",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "wait",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "세 친구"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "stand",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "엘리후"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 32:1-5",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-18",
+      "code": "job",
+      "chapter": 37,
+      "title": "엘리후가 폭풍과 날씨를 통해 하나님의 위엄을 말하다",
+      "actors": [
+        "엘리후",
+        "욥"
+      ],
+      "object": "cloud",
+      "ref": "욥기 37:1-24",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리후는 천둥과 비와 눈과 바람을 들어 사람이 다 알 수 없는 하나님의 일을 말하고, 그분을 경외하라고 권해요."
+      ],
+      "study": "엘리후는 천둥과 비와 눈과 바람을 들어 사람이 다 알 수 없는 하나님의 일을 말하고, 그분을 경외하라고 권해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "storm",
+        "lead": "엘리후",
+        "target": "욥",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "symbol",
+        "emotion": "solemn",
+        "prop": "cloud",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "엘리후"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "엘리후"
+          },
+          {
+            "action": "brace",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "엘리후"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "엘리후"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 37:1-24",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-19",
+      "code": "job",
+      "chapter": 39,
+      "title": "산과 들과 하늘에 사는 짐승들의 삶",
+      "actors": [
+        "욥"
+      ],
+      "object": "donkey",
+      "ref": "욥기 39:1-18",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님의 질문은 산염소와 들나귀와 들소와 타조의 삶을 보여 주며, 각 생명을 돌보는 지혜를 생각하게 해요."
+      ],
+      "study": "하나님의 질문은 산염소와 들나귀와 들소와 타조의 삶을 보여 주며, 각 생명을 돌보는 지혜를 생각하게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "reveal",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "field",
+        "effect": "symbol",
+        "emotion": "curious",
+        "prop": "donkey",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 39:1-18",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-20",
+      "code": "job",
+      "chapter": 39,
+      "title": "전쟁마와 매와 독수리를 바라보다",
+      "actors": [
+        "욥"
+      ],
+      "object": "horse",
+      "ref": "욥기 39:19-30",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 전쟁마의 힘과 매와 독수리의 비행을 물으시며, 욥이 알지 못하는 창조의 질서를 보여 주세요."
+      ],
+      "study": "하나님은 전쟁마의 힘과 매와 독수리의 비행을 물으시며, 욥이 알지 못하는 창조의 질서를 보여 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "reveal",
+        "lead": "욥",
+        "target": null,
+        "mode": "illustration",
+        "setting": "field",
+        "effect": "symbol",
+        "emotion": "awe",
+        "prop": "horse",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "brace",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 39:19-30",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-22",
+      "code": "job",
+      "chapter": 40,
+      "title": "베헤못을 바라보며 인간의 힘을 돌아보다",
+      "actors": [
+        "욥",
+        "베헤못"
+      ],
+      "object": "scene-marker",
+      "ref": "욥기 40:15-24",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 베헤못의 힘과 몸집을 상징적으로 보여 주며, 사람이 다스릴 수 없는 피조 세계를 생각해요."
+      ],
+      "study": "베헤못의 힘과 몸집을 상징적으로 보여 주며, 사람이 다스릴 수 없는 피조 세계를 생각해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "욥",
+        "target": "베헤못",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "awe",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "point",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "brace",
+            "duration": 1.5,
+            "actor": "베헤못"
+          },
+          {
+            "action": "turn",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "wait",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 40:15-24",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-23",
+      "code": "job",
+      "chapter": 41,
+      "title": "리워야단의 위엄을 상징적으로 묘사하다",
+      "actors": [
+        "욥",
+        "리워야단"
+      ],
+      "object": "millstone",
+      "ref": "욥기 41:1-34",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 리워야단을 길들일 수 없고 두려운 존재로 그려, 어떤 피조물도 창조주 앞에서 자랑할 수 없음을 강조해요."
+      ],
+      "study": "리워야단을 길들일 수 없고 두려운 존재로 그려, 어떤 피조물도 창조주 앞에서 자랑할 수 없음을 강조해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적인 장면으로 표현해요. 하나님은 인물로 재현하지 않으며, 비유적 표현은 문자 그대로의 사건처럼 그리지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "욥",
+        "target": "리워야단",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "awe",
+        "prop": "millstone",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "욥"
+          },
+          {
+            "action": "reach",
+            "duration": 1.2,
+            "actor": "욥"
+          },
+          {
+            "action": "recoil",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "brace",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "turn",
+            "duration": 1.5,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 41:1-34",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-24",
+      "code": "job",
+      "chapter": 18,
+      "title": "빌닷이 악인의 끝을 두고 놀람을 말하다",
+      "actors": [
+        "빌닷",
+        "욥"
+      ],
+      "object": "scroll",
+      "ref": "욥기 18:20-21",
+      "verseNumbers": [
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 빌닷은 악인의 마지막이 사람들에게 경고와 놀람이 된다고 말하며 연설을 맺어요."
+      ],
+      "study": "빌닷은 악인의 마지막이 사람들에게 경고와 놀람이 된다고 말하며 연설을 맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적으로 표현해요. 기록에 없는 장면은 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "warn",
+        "lead": "빌닷",
+        "target": "욥",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "speech",
+        "emotion": "solemn",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "turn",
+            "duration": 1,
+            "actor": "빌닷"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "빌닷"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "빌닷"
+          },
+          {
+            "action": "wait",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 18:20-21",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-25",
+      "code": "job",
+      "chapter": 20,
+      "title": "소발이 악인의 마지막 심판을 말하다",
+      "actors": [
+        "소발",
+        "욥"
+      ],
+      "object": "scroll",
+      "ref": "욥기 20:22-29",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 소발은 악인이 얻은 것을 잃고 심판을 맞는다고 주장하며 말을 끝내요."
+      ],
+      "study": "소발은 악인이 얻은 것을 잃고 심판을 맞는다고 주장하며 말을 끝내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적으로 표현해요. 기록에 없는 장면은 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "소발",
+        "target": "욥",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "serious",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "turn",
+            "duration": 1,
+            "actor": "소발"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "소발"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "소발"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 20:22-29",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-job-review-26",
+      "code": "job",
+      "chapter": 22,
+      "title": "엘리바스가 하나님께 돌아오라고 권하다",
+      "actors": [
+        "엘리바스",
+        "욥"
+      ],
+      "object": "gold",
+      "ref": "욥기 22:26-30",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리바스는 하나님과 화목하고 기도하면 회복과 도움을 얻을 것이라고 권하며 말을 맺어요."
+      ],
+      "study": "엘리바스는 하나님과 화목하고 기도하면 회복과 도움을 얻을 것이라고 권하며 말을 맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시와 논쟁의 핵심을 상징적으로 표현해요. 기록에 없는 장면은 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "엘리바스",
+        "target": "욥",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "speech",
+        "emotion": "hopeful",
+        "prop": "gold",
+        "beats": [
+          {
+            "action": "turn",
+            "duration": 1,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "욥"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "엘리바스"
+          },
+          {
+            "action": "wait",
+            "duration": 1.2,
+            "actor": "욥"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "욥기 22:26-30",
+        "source": "시 본문 기반 상징 연출 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {

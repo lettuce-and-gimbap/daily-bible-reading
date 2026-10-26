@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1930,
+    "scenesInFiles": 1955,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 1215
+    "curatedSupplementalScenes": 1240
   },
   "books": [
     {
@@ -170,10 +170,10 @@
     {
       "code": "job",
       "chapters": 42,
-      "scenes": 35,
+      "scenes": 60,
       "sourceMatchedSceneCandidates": 6,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 29
+      "curatedSupplementalScenes": 54
     },
     {
       "code": "psa",
@@ -13398,7 +13398,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 2,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2
       },
@@ -13422,7 +13422,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 2
@@ -13455,7 +13455,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13513,7 +13513,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "source-confirmed-object-only": 1,
         "no-source-confirmed-actor-or-object": 2
@@ -13542,7 +13542,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13599,7 +13599,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13627,7 +13627,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13655,7 +13655,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-object-only": 2
@@ -13718,7 +13718,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13746,7 +13746,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 1
@@ -13775,7 +13775,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-actor-only": 1,
         "source-confirmed-object-only": 1,
@@ -13805,7 +13805,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-object-only": 1,
         "no-source-confirmed-actor-or-object": 2
@@ -13834,7 +13834,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-actor-only": 1,
         "no-source-confirmed-actor-or-object": 2
@@ -13863,7 +13863,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-actor-only": 2
@@ -13896,7 +13896,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "source-confirmed-actor-only": 1,
         "no-source-confirmed-actor-or-object": 2
@@ -13925,7 +13925,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -13953,7 +13953,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "source-confirmed-actor-only": 1,
         "no-source-confirmed-actor-or-object": 1,
@@ -14008,7 +14008,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-object-only": 1
@@ -14037,7 +14037,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "no-source-confirmed-actor-or-object": 1,
         "source-confirmed-actor-only": 1,
@@ -14183,7 +14183,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 1,
         "source-confirmed-actor-and-object": 1,
@@ -14329,7 +14329,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-object-only": 2
@@ -14395,7 +14395,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 2,
       "classification": {
         "no-source-confirmed-actor-or-object": 3,
         "source-confirmed-object-only": 1
@@ -14428,7 +14428,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 2,
       "classification": {
         "no-source-confirmed-actor-or-object": 3
       },
@@ -14456,7 +14456,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 0,
+      "scenes": 1,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-object-only": 1
@@ -28618,6 +28618,10 @@
       {
         "book": "est",
         "scenesAdded": 2
+      },
+      {
+        "book": "job",
+        "scenesAdded": 25
       }
     ]
   }

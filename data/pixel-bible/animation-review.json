@@ -442,18 +442,29 @@
     },
     {
       "code": "job",
-      "payloadSha256": "501223236ad53cd656f19ab917363bc4f37d450e333ac8ee47c5a564344dac94",
-      "scenes": 35,
-      "existing": 35,
+      "payloadSha256": "d87c6ecb6ca897e4b9f10d54c4e9b1337b98972e2711c5ea5ce2858c3de9916d",
+      "scenes": 60,
+      "existing": 60,
       "restored": 0,
-      "corrected": 2,
-      "planned": 35,
+      "corrected": 4,
+      "planned": 60,
       "modes": {
-        "reconstruction": 27,
-        "illustration": 7,
+        "reconstruction": 28,
+        "illustration": 31,
         "vision": 1
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 60,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "psa",
