@@ -119,7 +119,7 @@
     },
     {
       "code": "1sa",
-      "payloadSha256": "acfb4648eb4eda102f9c6f98faa5a45f8c84f5f3d232e44fcf26f593475fd789",
+      "payloadSha256": "cb570789105433c8b0f1d9bcd92643eb35252c0e08b531d75b7ae4ccd105fe61",
       "scenes": 110,
       "existing": 110,
       "restored": 0,
@@ -132,7 +132,7 @@
     },
     {
       "code": "2sa",
-      "payloadSha256": "5714782bdb6851a7721fb17fe86f97236449de903862b50c4066b5115abc5b6e",
+      "payloadSha256": "4ccbd9e0666591d58ba6ad08a3d39b7f657acf761a32898dacdc45b772e78fca",
       "scenes": 99,
       "existing": 99,
       "restored": 0,
@@ -161,11 +161,11 @@
     },
     {
       "code": "2ki",
-      "payloadSha256": "10345584b373234d2cc35670ed8c8e179945ecad120e9f5f21e28207e60aacd1",
+      "payloadSha256": "0c11c59b1d437072bad8ea52a6fe0a43a3506a01cc34b6e0d5c7b2be4f3443da",
       "scenes": 106,
       "existing": 106,
       "restored": 0,
-      "corrected": 19,
+      "corrected": 21,
       "planned": 106,
       "modes": {
         "reconstruction": 73,

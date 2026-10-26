@@ -940,6 +940,899 @@
     "74": {}
   },
   "2ki": {
+    "1": {
+      "version": 2,
+      "motif": "request",
+      "lead": "엘리사",
+      "target": "엘리야",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "determined",
+      "prop": "cloak",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "엘리사"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "엘리사"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "lift",
+          "duration": 1.8,
+          "actor": "엘리사"
+        },
+        {
+          "action": "wait",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "엘리사"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 2:9-10",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "2": {
+      "version": 2,
+      "motif": "ascend",
+      "lead": "엘리야",
+      "target": "엘리사",
+      "mode": "reconstruction",
+      "setting": "water",
+      "effect": "whirlwind",
+      "emotion": "surprised",
+      "prop": "water-supply",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "엘리야"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "엘리야"
+        },
+        {
+          "action": "startle",
+          "duration": 1.5,
+          "actor": "엘리야"
+        },
+        {
+          "action": "rise",
+          "duration": 1.8,
+          "actor": "엘리야"
+        },
+        {
+          "action": "rise",
+          "duration": 1.5,
+          "actor": "엘리야"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "엘리야"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 2:11-12",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "3": {
+      "version": 2,
+      "motif": "welcome",
+      "lead": "엘리사",
+      "target": "선지자의 제자들",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "relieved",
+      "prop": "scene-marker",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "엘리사"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "엘리사"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "wait",
+          "duration": 1.8,
+          "actor": "엘리사"
+        },
+        {
+          "action": "walk",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "엘리사"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 2:15-18",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "4": {
+      "version": 2,
+      "motif": "divide",
+      "lead": "엘리야",
+      "target": "엘리사",
+      "mode": "reconstruction",
+      "setting": "water",
+      "effect": "divide",
+      "emotion": "determined",
+      "prop": "water-supply",
+      "beats": [
+        {
+          "action": "grasp",
+          "duration": 1,
+          "actor": "엘리야"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "엘리야"
+        },
+        {
+          "action": "windup",
+          "duration": 1.5,
+          "actor": "엘리야"
+        },
+        {
+          "action": "strike",
+          "duration": 1.8,
+          "actor": "엘리야"
+        },
+        {
+          "action": "walk",
+          "duration": 1.5,
+          "actor": "엘리야"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "엘리야"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 2:7-8",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "8": {
+      "version": 2,
+      "motif": "warning",
+      "lead": "엘리사",
+      "target": "여호람(아합의 아들)",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "stern",
+      "prop": "water-supply",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "엘리사"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "엘리사"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "엘리사"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "엘리사"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "엘리사"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 3:13-14",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "14": {
+      "version": 2,
+      "motif": "seek",
+      "lead": "게하시",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "journey",
+      "emotion": "greedy",
+      "prop": "robe",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "게하시"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "게하시"
+        },
+        {
+          "action": "turn",
+          "duration": 1.5,
+          "actor": "게하시"
+        },
+        {
+          "action": "run",
+          "duration": 1.8,
+          "actor": "게하시"
+        },
+        {
+          "action": "run",
+          "duration": 1.5,
+          "actor": "게하시"
+        },
+        {
+          "action": "hide",
+          "duration": 1.2,
+          "actor": "게하시"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 5:20-21",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "22": {
+      "version": 2,
+      "motif": "anoint",
+      "lead": "선지자의 제자",
+      "target": "예후",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "oil",
+      "emotion": "determined",
+      "prop": "oil",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "선지자의 제자"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "선지자의 제자"
+        },
+        {
+          "action": "pour",
+          "duration": 1.5,
+          "actor": "선지자의 제자"
+        },
+        {
+          "action": "speak",
+          "duration": 1.8,
+          "actor": "선지자의 제자"
+        },
+        {
+          "action": "turn",
+          "duration": 1.5,
+          "actor": "선지자의 제자"
+        },
+        {
+          "action": "run",
+          "duration": 1.2,
+          "actor": "선지자의 제자"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 9:7-10",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "28": {
+      "version": 2,
+      "motif": "guard",
+      "lead": "여호야다",
+      "target": "백부장들",
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "speech",
+      "emotion": "determined",
+      "prop": "temple",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "여호야다"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "여호야다"
+        },
+        {
+          "action": "extend",
+          "duration": 1.5,
+          "actor": "여호야다"
+        },
+        {
+          "action": "guard",
+          "duration": 1.8,
+          "actor": "여호야다"
+        },
+        {
+          "action": "guard",
+          "duration": 1.5,
+          "actor": "여호야다"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "여호야다"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 11:4-11",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "31": {
+      "version": 2,
+      "motif": "warning",
+      "lead": "요아스",
+      "target": "여호야다",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "stern",
+      "prop": "temple",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "요아스"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "요아스"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "요아스"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "요아스"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "요아스"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "요아스"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 12:4-8",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "34": {
+      "version": 2,
+      "motif": "repair",
+      "lead": "여호야다",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "build",
+      "emotion": "focused",
+      "prop": "temple",
+      "beats": [
+        {
+          "action": "open",
+          "duration": 1,
+          "actor": "여호야다"
+        },
+        {
+          "action": "count",
+          "duration": 1.2,
+          "actor": "여호야다"
+        },
+        {
+          "action": "extend",
+          "duration": 1.5,
+          "actor": "여호야다"
+        },
+        {
+          "action": "receive",
+          "duration": 1.8,
+          "actor": "여호야다"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "여호야다"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "여호야다"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 12:9-16",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "35": {
+      "version": 2,
+      "motif": "mourn",
+      "lead": "요아스(여호아하스의 아들)",
+      "target": "엘리사",
+      "mode": "reconstruction",
+      "setting": "chamber",
+      "effect": "tears",
+      "emotion": "sad",
+      "prop": "arrow",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "mourn",
+          "duration": 1.5,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "reach",
+          "duration": 1.8,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "요아스(여호아하스의 아들)"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 13:10-14",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "38": {
+      "version": 2,
+      "motif": "siege",
+      "lead": "아마샤",
+      "target": "요아스(여호아하스의 아들)",
+      "mode": "reconstruction",
+      "setting": "wall",
+      "effect": "collapse",
+      "emotion": "worried",
+      "prop": "wall",
+      "beats": [
+        {
+          "action": "march",
+          "duration": 1,
+          "actor": "아마샤"
+        },
+        {
+          "action": "strike",
+          "duration": 1.2,
+          "actor": "아마샤"
+        },
+        {
+          "action": "recoil",
+          "duration": 1.5,
+          "actor": "아마샤"
+        },
+        {
+          "action": "retreat",
+          "duration": 1.8,
+          "actor": "아마샤"
+        },
+        {
+          "action": "fall",
+          "duration": 1.5,
+          "actor": "아마샤"
+        },
+        {
+          "action": "mourn",
+          "duration": 1.2,
+          "actor": "아마샤"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 14:11-14",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "39": {
+      "version": 2,
+      "motif": "warning",
+      "lead": "요아스(여호아하스의 아들)",
+      "target": "아마샤",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "stern",
+      "prop": "cedar",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "요아스(여호아하스의 아들)"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "요아스(여호아하스의 아들)"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 14:8-10",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "40": {
+      "version": 2,
+      "motif": "crown",
+      "lead": "므나헴",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "crown",
+      "emotion": "stern",
+      "prop": "silver",
+      "beats": [
+        {
+          "action": "rise",
+          "duration": 1,
+          "actor": "므나헴"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "므나헴"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "므나헴"
+        },
+        {
+          "action": "walk",
+          "duration": 1.8,
+          "actor": "므나헴"
+        },
+        {
+          "action": "sit",
+          "duration": 1.5,
+          "actor": "므나헴"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "므나헴"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 15:17-18",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "44": {
+      "version": 2,
+      "motif": "offer",
+      "lead": "아하스",
+      "target": "우리야",
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "none",
+      "emotion": "determined",
+      "prop": "altar",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "아하스"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "아하스"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "아하스"
+        },
+        {
+          "action": "pour",
+          "duration": 1.8,
+          "actor": "아하스"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "아하스"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "아하스"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 16:12-13",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "50": {
+      "version": 2,
+      "motif": "warning",
+      "lead": "히스기야",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "worried",
+      "prop": "scroll",
+      "beats": [
+        {
+          "action": "receive",
+          "duration": 1,
+          "actor": "히스기야"
+        },
+        {
+          "action": "read",
+          "duration": 1.2,
+          "actor": "히스기야"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "히스기야"
+        },
+        {
+          "action": "turn",
+          "duration": 1.8,
+          "actor": "히스기야"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "히스기야"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "히스기야"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 19:8-13",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "58": {
+      "version": 2,
+      "motif": "discover",
+      "lead": "힐기야",
+      "target": "사반",
+      "mode": "reconstruction",
+      "setting": "chamber",
+      "effect": "reveal",
+      "emotion": "surprised",
+      "prop": "temple",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "힐기야"
+        },
+        {
+          "action": "bend",
+          "duration": 1.2,
+          "actor": "힐기야"
+        },
+        {
+          "action": "grasp",
+          "duration": 1.5,
+          "actor": "힐기야"
+        },
+        {
+          "action": "lift",
+          "duration": 1.8,
+          "actor": "힐기야"
+        },
+        {
+          "action": "show",
+          "duration": 1.5,
+          "actor": "힐기야"
+        },
+        {
+          "action": "extend",
+          "duration": 1.2,
+          "actor": "힐기야"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 22:8-9",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "59": {
+      "version": 2,
+      "motif": "read",
+      "lead": "사반",
+      "target": "요시야",
+      "mode": "reconstruction",
+      "setting": "chamber",
+      "effect": "scroll",
+      "emotion": "focused",
+      "prop": "book",
+      "beats": [
+        {
+          "action": "open",
+          "duration": 1,
+          "actor": "사반"
+        },
+        {
+          "action": "open",
+          "duration": 1.2,
+          "actor": "사반"
+        },
+        {
+          "action": "read",
+          "duration": 1.5,
+          "actor": "사반"
+        },
+        {
+          "action": "read",
+          "duration": 1.8,
+          "actor": "사반"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "사반"
+        },
+        {
+          "action": "fold",
+          "duration": 1.2,
+          "actor": "사반"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 22:10",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
+    "61": {
+      "version": 2,
+      "motif": "store",
+      "lead": "느부사라단",
+      "target": null,
+      "mode": "reconstruction",
+      "setting": "store",
+      "effect": "stack",
+      "emotion": "stern",
+      "prop": "temple",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "느부사라단"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "느부사라단"
+        },
+        {
+          "action": "gather",
+          "duration": 1.5,
+          "actor": "느부사라단"
+        },
+        {
+          "action": "strike",
+          "duration": 1.8,
+          "actor": "느부사라단"
+        },
+        {
+          "action": "carry",
+          "duration": 1.5,
+          "actor": "느부사라단"
+        },
+        {
+          "action": "count",
+          "duration": 1.2,
+          "actor": "느부사라단"
+        }
+      ],
+      "duration": 8.2,
+      "support": null,
+      "ref": "열왕기하 25:11-17",
+      "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+    },
     "65": {
       "mode": "reconstruction"
     },

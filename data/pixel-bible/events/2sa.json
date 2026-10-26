@@ -2187,7 +2187,7 @@
       "id": "ot-2sa-extra-14",
       "code": "2sa",
       "chapter": 13,
-      "title": "압살롬이 암논을 죽이고 그술로 달아나다",
+      "title": "양털 깎는 잔치에서 암논이 죽다",
       "actors": [
         "압살롬",
         "암논",
@@ -2211,7 +2211,7 @@
       "study": "압살롬은 양털 깎는 잔치에 왕자들을 초대하고, 종들에게 신호를 주어 암논을 죽이게 해요. 다른 왕자들은 노새를 타고 달아나요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "살해를 직접 묘사하지 않고, 사건 뒤의 애도와 도피를 중심으로 표현해요.",
+      "objectNote": "살해 장면은 직접 묘사하지 않고 잔치 뒤 왕자들이 달아나는 반응으로 표현해요.",
       "animation": {"version":2,"motif":"flee","lead":"압살롬","target":"암논","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"sword","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"turn","duration":1.5,"actor":"압살롬"},{"action":"run","duration":1.8,"actor":"압살롬"},{"action":"run","duration":1.5,"actor":"압살롬"},{"action":"look","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
@@ -2531,7 +2531,7 @@
       "study": "기근의 이유를 묻자 하나님은 사울이 기브온 사람들을 죽인 일과 연결해 답하세요. 다윗은 기브온 사람들을 불러 무엇으로 속죄할지 묻고, 그들은 사울 집안의 책임을 요구해요.",
       "actorLines": {},
       "narrationOnly": true,
-      "objectNote": "처형과 시신은 직접 묘사하지 않고 리스바의 애도와 기근 해결의 복잡한 윤리만 다뤄요.",
+      "objectNote": "기근의 원인을 묻고 기브온 사람들의 요구를 듣는 장면이에요. 처형과 애도는 뒤의 별도 장면에서 다뤄요.",
       "animation": {"version":2,"motif":"petition","lead":"다윗","target":"기브온 사람들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
