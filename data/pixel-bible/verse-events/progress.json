@@ -1,10 +1,10 @@
 {
   "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
   "expected": 7957,
-  "authored": 1974,
-  "contentClips": 1967,
+  "authored": 2101,
+  "contentClips": 2094,
   "textualNotices": 7,
-  "pending": 5983,
+  "pending": 5856,
   "chapters": [
     {
       "code": "mat",
@@ -346,22 +346,22 @@
       "code": "luk",
       "chapter": 5,
       "expected": 39,
-      "authored": 11,
-      "pending": 28
+      "authored": 39,
+      "pending": 0
     },
     {
       "code": "luk",
       "chapter": 6,
       "expected": 49,
-      "authored": 0,
-      "pending": 49
+      "authored": 49,
+      "pending": 0
     },
     {
       "code": "luk",
       "chapter": 7,
       "expected": 50,
-      "authored": 0,
-      "pending": 50
+      "authored": 50,
+      "pending": 0
     },
     {
       "code": "luk",
