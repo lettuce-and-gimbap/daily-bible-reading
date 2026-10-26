@@ -11,7 +11,7 @@ const books=review.books.map(b=>[b.code,JSON.parse(fs.readFileSync('data/pixel-b
 test('구약 39권의 모든 등록 사건은 배우·구절에 연결된 개별 동작 순서를 갖는다',()=>{
  assert.equal(books.length,39);let total=0;
  for(const [code,data]of books){assert.ok(data.scenes.length,code+' missing scenes');for(const s of data.scenes){total++;const a=s.animation;assert.equal(a.version,2);assert.equal(a.ref,s.ref);assert.ok(s.actors.includes(a.lead),s.id+' lead');assert.ok(ANIMATION_MOTIFS[a.motif]);assert.equal(a.beats.length,6);assert.ok(a.beats.every(b=>b.duration>0&&EVENT_ACTIONS.includes(b.action)&&ACTION_LABELS[b.action]));assert.ok(EFFECTS.has(a.effect),a.effect);assert.ok(a.duration>=8);if(a.support)assert.ok(s.actors.includes(a.support.actor));}}
- assert.equal(total,1275)
+ assert.equal(total,1276)
 });
 test('모든 사건의 단계 전환은 유효한 도트 관절을 가지며 완료 후 동작을 다시 시작하지 않는다',()=>{
  for(const [,data]of books)for(const raw of data.scenes){const cast=raw.actors.map(name=>({name,refs:[raw.ref]})),s=enhanceScene(raw,cast);for(const seconds of [0,.9,1.1,2.3,4.2,6.7,8.2,20]){const result=sampleEvent(s,cast,seconds),layout=eventLayout(result);assert.ok(result.index>=0&&result.index<6);for(const [i,n]of result.states.entries()){assert.ok(Number.isFinite(n.travel));assert.ok(n.pose.eventArms.flat().every(Number.isFinite),s.id);for(const arm of n.pose.eventArms)assert.ok(arm.every(v=>v>=0&&v<=36),s.id+' limb bounds');assert.ok(layout.positions[i].x>=85&&layout.positions[i].x<=640);}}
