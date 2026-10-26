@@ -58,9 +58,9 @@ export class EncounterDirector {
     if(started)break;
     for(const [dx,dy]of [[1,0],[0,1]]){
      for(const b of cells.get(`${Math.round(a.x)+dx},${Math.round(a.y)+dy}`)||[]){
-      if(!beside(a,b)||this.context.relations.some(r=>[key(r.from),key(r.to)].includes(key(a))&&[key(r.from),key(r.to)].includes(key(b))))continue;
+      if(!beside(a,b))continue;
       const id=[key(a),key(b)].sort().join('|'),state=this.contacts.get(id)||{};
-      if(state.greeted)continue;state.greeted=true;this.contacts.set(id,state);
+      if(state.greeted||state.touching)continue;state.greeted=true;this.contacts.set(id,state);
       if(this.random()>=GENERAL_GREETING_CHANCE)continue;
       if(Math.abs(a.y-b.y)<.12)b.y=a.y;else b.x=a.x;
       const directions=opposedDirections(a,b);if(!directions)continue;

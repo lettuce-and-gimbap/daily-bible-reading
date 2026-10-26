@@ -101,7 +101,7 @@ test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯�
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
  ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
  const related=director.tick(0,npcs);assert.equal(ambient.tick(1,[],ambientSpeechAllowed(related)),null);assert.equal(ambient.current,null);
- director.clear();director.context={people:[],relations:[]};
+ director.clear();director.contacts.clear();director.context={people:[],relations:[]};
  const greeting=director.tick(2,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
  assert.equal(ambientSpeechAllowed(greeting),true,'일상 인사에는 다른 인물의 일반 대사를 함께 허용');
  assert.equal(ambientSpeechAllowed([{origin:'chapter-relation'}]),false,'본문 관계 특수 대사는 일반 대화와 겹치지 않음');
@@ -130,6 +130,13 @@ test('일상 인사는 만난 즉시 한 쌍만 시작하고 두 인물의 대�
  assert.equal(director.tick(800,[a,b,c]).length,1);assert.equal(director.active.length,1);
  assert.equal(director.active.length,1);
  b.x=8;director.tick(801,[a,b,c]);b.x=2;const again=director.tick(802,[a,b,c]);assert.equal(again.length,1);assert.equal(again[0].pairLines.length,2);
+});
+test('전용 상호대사가 없는 관계 인물도 어색한 침묵 대신 일반 인사를 나눈다',()=>{
+ const chapters=[{code:'gen',name:'창세기',chap:1,data:{people:[{name:'아담',role:'첫 사람'},{name:'하와',role:'첫 여자'}],rels:[{from:'아담',to:'하와',label:'함께 있음',verses:'1-2',note:'함께 있는 두 사람.'}]}}];
+ const context=buildChapterDialogue(chapters),npcs=context.people.map((p,i)=>({...p,refs:[p.ref],x:10+i,y:10,path:[]}));
+ const lines=new EncounterDirector(chapters,context,{random:()=>0}).tick(0,npcs);
+ assert.equal(lines.length,1);assert.equal(lines[0].origin,'general');assert.equal(lines[0].pairLines.length,2);
+ assert.doesNotMatch(lines[0].pairLines.map(line=>line.text).join(' '),/어…|응…|잠깐 지나갈게|잘 가/);
 });
 test('본문 특수대화가 아닌 일상 인사는 이전 대비 3분의 1 확률로만 시작한다',()=>{
  const make=random=>new EncounterDirector([],{people:[],relations:[]},{random});
