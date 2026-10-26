@@ -319,25 +319,26 @@
     ],
     "chaptersReviewed": 478,
     "relationshipLinksReviewed": 2068,
-    "authoredPairEntriesReviewed": 327,
+    "authoredPairEntriesReviewed": 394,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3857,
-      "authoredLinks": 301,
-      "relationshipGeneratedLinks": 3556,
+      "authoredLinks": 438,
+      "relationshipGeneratedLinks": 3419,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "욥기 42장과 관계 후보 54개를 마무리해 54개 모두에 사건 맥락을 반영한 양방향 대화를 연결했고, 실제 대화가 아닌 장면은 자세히 보기에 재구성임을 표시했다. 이어 시편 150편의 관계 후보 144개를 추출하고 다윗과 압살롬·사울·아비멜렉·도엑·십 사람들 등 역사적 연결 17개를 시편의 기도와 실제 사건을 구분해 보강했다. 시편은 상징적 집단과 기도 대상이 인물 대화처럼 잡히는 경우가 많아 남은 125개 후보의 성격을 계속 분류하고 있다. 시편 검토는 진행 중이다.",
+    "statusNote": "욥기 42장과 관계 후보 54개를 마무리해 54개 모두에 사건 맥락을 반영한 양방향 대화를 연결했고, 실제 대화가 아닌 장면은 자세히 보기에 재구성임을 표시했다. 이어 시편 150편의 관계 후보 144개를 전수 분류하고, 다윗 주변 인물·모세와 아론·애굽 역사·가족·예배 공동체·왕과 약자·침략과 구원 등 84개 대화 묶음으로 87개 관계선을 본문 맥락에 맞게 보강했다. 시편의 시적 화자와 역사 인물의 실제 대화를 구분했으며, 남은 57개 후보는 기도 대상·상징·집단·인물 관계 성격을 계속 확인하고 있다. 시편 검토는 진행 중이다.",
     "partialBookAudit": {
       "book": "psa",
       "chaptersScanned": 150,
       "relationshipLinksFound": 144,
-      "authoredPairEntriesAddedAndChecked": 17,
-      "generatedLinksRemaining": 125,
+      "authoredPairEntriesAddedAndChecked": 84,
+      "authoredLinksCovered": 87,
+      "generatedLinksRemaining": 57,
       "status": "in-progress",
-      "statusNote": "시편 150편의 관계 후보 144개를 추출했다. 시편은 실제 대면 대화보다 기도·찬양·탄식 속에 역사 인물과 상징적 집단을 언급하는 경우가 많다. 다윗과 압살롬·사울·아비멜렉·도엑·십 사람들 등 표제와 역사 배경이 분명한 17개 연결을 시편의 시적 발화와 구약 사건을 구분해 보강했다. 나머지 125개 관계 후보는 시적 언급과 실제 대화 여부를 더 분류하고 본문에 맞춰 작성해야 한다."
+      "statusNote": "시편 150편의 관계 후보 144개를 전수 분류했다. 표제와 역사 배경이 분명한 다윗 주변 인물, 모세·아론, 애굽 역사, 가족·예배 공동체, 원수·억압, 왕과 약자, 공동체 찬양 등 84개 대화 묶음이 87개 관계선을 덮도록 보강했다. 본문에 직접 기록된 문답과 기도·시적 탄식을 연결한 재구성을 자세히 보기에서 구분한다. 남은 57개 후보는 상징·기도 대상·일반 집단·인물 관계를 계속 판별해 정리한다."
     }
   }
 }

@@ -499,12 +499,27 @@ test('욥기 42장과 관계선 54개를 모두 사건에 맞는 양방향 대�
 
 test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 사건 배경을 구분한다',()=>{
  const psalms=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('psa.'));
- assert.equal(psalms.length,17);
+ assert.equal(psalms.length,84);
  for(const entry of psalms){assert.ok(entry.ref.startsWith('시편 '));assert.equal(entry.lines.length,2);assert.ok(entry.detail)}
+ const psalmSummary=JSON.parse(fs.readFileSync('data/summary/psa.json'));
+ for(const entry of psalms){
+  const names=psalmSummary.chapters[Number(entry.chapter.split('.')[1])].people.map(person=>person.name);
+  assert.ok(names.includes(entry.speaker),`${entry.id} 화자가 장 인물 색인에 있음`);
+  assert.ok(names.includes(entry.target),`${entry.id} 상대가 장 인물 색인에 있음`);
+ }
+ const psalmContext=buildChapterDialogue(Object.entries(psalmSummary.chapters).map(([chap,data])=>({code:'psa',name:'시편',chap:Number(chap),data})));
+ const covered=psalmContext.relations.filter(relation=>psalms.some(entry=>entry.chapter===`psa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))));
+ assert.equal(psalmContext.relations.length,144);assert.equal(covered.length,87);
  const absalom=psalms.find(entry=>entry.chapter==='psa.3'&&entry.speaker==='압살롬');
  assert.match(absalom.detail,/실제 발언|직접 발언/);assert.match(absalom.replyLines[0],/방패/);
  const doeg=psalms.find(entry=>entry.chapter==='psa.52'&&entry.target==='사울');
  assert.match(doeg.ref,/사무엘상 22/);assert.match(doeg.detail,/재구성/);
+ const mockers=psalms.find(entry=>entry.chapter==='psa.42'&&entry.target==='고라 자손');
+ assert.match(mockers.ref,/시편 42:3/);assert.match(mockers.replyLines[0],/하나님을 바라리라/);
+ const pharaoh=psalms.find(entry=>entry.chapter==='psa.105'&&entry.target==='요셉');
+ assert.match(pharaoh.ref,/창세기 41/);assert.match(pharaoh.detail,/재구성/);
+ const exiles=psalms.find(entry=>entry.chapter==='psa.137'&&entry.speaker==='에돔 자손');
+ assert.match(exiles.ref,/오바댜/);assert.match(exiles.detail,/직접 발언은 아니며/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
