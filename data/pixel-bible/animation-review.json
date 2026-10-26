@@ -540,18 +540,27 @@
     },
     {
       "code": "isa",
-      "payloadSha256": "2ec54a9392f552097ba349ede218c78c372f4bcf4c0d97906733c37ca00906f5",
-      "scenes": 33,
-      "existing": 33,
+      "payloadSha256": "7e10a88e745419961feef53a41d378c1a734ff30db9fc3d728866f0a1c248418",
+      "scenes": 226,
+      "existing": 226,
       "restored": 0,
-      "corrected": 5,
-      "planned": 33,
+      "corrected": 0,
+      "planned": 226,
       "modes": {
-        "vision": 3,
-        "reconstruction": 16,
-        "illustration": 14
+        "illustration": 226
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 226,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "jer",
