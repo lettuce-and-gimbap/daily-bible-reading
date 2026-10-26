@@ -138,3 +138,13 @@ test('레위기에서 확인한 각 개인 발화는 문장별 본문 범위를 
  }
  assert(!rows.some(row=>row[2]==='모독한 사람'),'기록되지 않은 대사를 무명 인물에게 붙이지 않음');
 });
+
+test('민수기 인물 발화 28묶음은 문장별 구절 범위에 연결되고 실제 말하지 않은 나무꾼은 제외한다',()=>{
+ const rows=PENTATEUCH_DIALOGUE_ROWS.filter(row=>row[0]==='num');assert.equal(rows.length,28);
+ for(const row of rows){
+  const [low,high]=row[3].split('-').map(Number);
+  assert.equal(row[7]?.length,row[4].length,`${row[1]}장 ${row[2]} 줄 참조`);
+  for(const ref of row[7]){const [start,end=start]=ref.split('-').map(Number);assert(start>=low&&end<=high,`${row[1]}장 ${row[2]} ${ref} 범위 밖`);}
+ }
+ assert(!rows.some(row=>row[2]==='안식일에 나무한 사람'));
+});

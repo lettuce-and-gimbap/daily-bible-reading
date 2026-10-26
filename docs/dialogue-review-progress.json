@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 3,
-  "currentBook": "num",
+  "booksCompleted": 4,
+  "currentBook": "deu",
   "currentBookStatus": "in-progress",
-  "nextBook": "lev",
+  "nextBook": "deu",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -56,6 +56,24 @@
         "duplicate": 0
       },
       "statusNote": "레위기 27장 전체의 인물·사건 장면을 대조했고, 발화가 있는 7개 장의 9묶음·18문장에 개별 절 참조를 달았다. 레위기 10장에서 나답과 아비후 사망 뒤 모세와 아론이 속죄제물을 두고 나눈 대화를 추가했다. 직접 말한 근거가 없는 무명 모독자를 인물 발화 목록에서 제외하고 사건 묘사는 유지했다. 절 범위 검수 중 발견한 5:20–26 이웃 재산 속건제 누락을 복원했으며, 12:3 할례와 정결 기간 범위 중복도 분리했다. 사건 범위 859절은 누락·중복 없이 통과했다."
+    },
+    "num": {
+      "chaptersScanned": 36,
+      "chaptersWithAuthoredDialogueReviewed": 22,
+      "chapterDialogueAudit": 36,
+      "authoredUtteranceGroupsReviewed": 28,
+      "utteranceReferencesCorrected": 56,
+      "pairedEntriesReviewed": 15,
+      "newTwoWayEntries": 15,
+      "chapterDialogueAudit": 36,
+      "status": "complete",
+      "eventVerseSpanAudit": {
+        "versesExpected": 1288,
+        "versesCovered": 1288,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "민수기 36장 전체의 장면·인물 색인을 살펴 관계 대화 후보를 확인했다. 발화 28묶음의 56개 문장을 개별 절 범위에 연결하고 여호수아·갈렙·고라·다단·발람과 나귀·에돔 왕·모세·슬로브핫의 딸들·요단 동편 지파들의 특수 대화 15개를 보강했다. 호밥 대사의 화자 오류를 바로잡고 모세의 언약궤 출발·귀환 기도를 별도 발화로 분리했으며, 직접 말하지 않은 안식일 나무꾼의 대사를 제거했다. 절 범위 대조에서 민수기 30:9 중복도 분리했다. 사건 범위 1,288절은 누락·중복 없이 통과했다."
     }
   }
 }

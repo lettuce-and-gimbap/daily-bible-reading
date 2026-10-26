@@ -73,3 +73,27 @@ test('레위기 사건 범위는 기준 859절을 누락·중복 없이 덮는�
  assert.deepEqual(duplicates,[]);
  assert.equal(covered,859);
 });
+
+test('민수기 사건 범위는 기준 1,288절을 누락·중복 없이 덮는다',()=>{
+ const data=JSON.parse(readFileSync('data/summary/num.json','utf8'));
+ const verseCounts=[54,34,51,49,31,27,89,26,23,36,35,16,33,45,41,50,13,32,22,29,35,41,30,25,18,65,23,31,40,16,54,42,56,29,34,13];
+ assert.equal(Object.keys(data.chapters).length,36);
+ assert.equal(verseCounts.reduce((sum,count)=>sum+count,0),1288);
+ let covered=0;const missing=[],duplicates=[];
+ verseCounts.forEach((count,index)=>{
+  const chapter=index+1,seen=new Uint8Array(count+1);
+  for(const event of data.chapters[String(chapter)].events||[]){
+   const numbers=event.verses.match(/\d+/g)?.map(Number)||[];
+   const from=numbers[0],to=numbers[1]||from;
+   for(let verse=from;verse<=to;verse++)if(verse>0&&verse<=count)seen[verse]++;
+  }
+  for(let verse=1;verse<=count;verse++){
+   if(!seen[verse])missing.push(`${chapter}:${verse}`);
+   else covered++;
+   if(seen[verse]>1)duplicates.push(`${chapter}:${verse}`);
+  }
+ });
+ assert.deepEqual(missing,[]);
+ assert.deepEqual(duplicates,[]);
+ assert.equal(covered,1288);
+});
