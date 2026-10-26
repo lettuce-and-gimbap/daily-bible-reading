@@ -132,6 +132,364 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"이스라엘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"이스라엘"},{"action":"read","duration":1.2,"actor":"이스라엘"},{"action":"look","duration":1.5,"actor":"이스라엘"},{"action":"point","duration":1.8,"actor":"이스라엘"},{"action":"listen","duration":1.5,"actor":"이스라엘"},{"action":"bow","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"아모스 9:7-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-1-0",
+      "code": "amo",
+      "chapter": 1,
+      "title": "다메섹과 가사에 대한 심판 선언",
+      "actors": [
+        "아모스",
+        "다메섹",
+        "가사와 두로"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 1:3-8",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다메섹과 블레셋을 향한 심판 선언을 예언의 상징 장면으로 보여 줘요."
+      ],
+      "study": "다메섹과 블레셋을 향한 심판 선언을 예언의 상징 장면으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"아모스","target":"다메섹","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"read","duration":1.2,"actor":"아모스"},{"action":"look","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"bow","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 1:3-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-3-0",
+      "code": "amo",
+      "chapter": 3,
+      "title": "사자의 포효처럼 임박한 말씀을 전하다",
+      "actors": [
+        "아모스",
+        "이스라엘 족속",
+        "사마리아의 부자들"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 3:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사자가 부르짖고 나팔을 불면 반응하듯, 아모스가 받은 말씀을 전해야 함을 비유로 말해요."
+      ],
+      "study": "사자가 부르짖고 나팔을 불면 반응하듯, 아모스가 받은 말씀을 전해야 함을 비유로 말해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"아모스","target":"이스라엘 족속","mode":"illustration","setting":"courtyard","effect":"light","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"lift","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"sway","duration":1.8,"actor":"아모스"},{"action":"lower","duration":1.5,"actor":"아모스"},{"action":"bow","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 3:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-4-0",
+      "code": "amo",
+      "chapter": 4,
+      "title": "거듭된 재앙에도 돌아오지 않은 백성",
+      "actors": [
+        "바산의 암소들",
+        "이스라엘"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 4:6-13",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기근과 가뭄 등 여러 경고 뒤에도 돌아오지 않은 백성을 책망하고 하나님을 만날 준비를 하라고 해요."
+      ],
+      "study": "기근과 가뭄 등 여러 경고 뒤에도 돌아오지 않은 백성을 책망하고 하나님을 만날 준비를 하라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"바산의 암소들","target":"이스라엘","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"바산의 암소들"},{"action":"turn","duration":1.2,"actor":"바산의 암소들"},{"action":"speak","duration":1.5,"actor":"바산의 암소들"},{"action":"point","duration":1.8,"actor":"바산의 암소들"},{"action":"listen","duration":1.5,"actor":"바산의 암소들"},{"action":"lower","duration":1.2,"actor":"바산의 암소들"}],"duration":8.2,"support":null,"ref":"아모스 4:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-5-0",
+      "code": "amo",
+      "chapter": 5,
+      "title": "악을 버리고 성문에서 정의를 세우라",
+      "actors": [
+        "아모스",
+        "이스라엘 족속",
+        "가난한 자",
+        "성문에서 책망하는 자"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 5:4-15",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아모스가 하나님을 찾고 선을 구하며 성문에서 정의를 세우라고 촉구해요."
+      ],
+      "study": "아모스가 하나님을 찾고 선을 구하며 성문에서 정의를 세우라고 촉구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"아모스","target":"이스라엘 족속","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"turn","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"lower","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 5:4-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-5-1",
+      "code": "amo",
+      "chapter": 5,
+      "title": "정의를 물처럼 흐르게 하라고 외치다",
+      "actors": [
+        "아모스",
+        "이스라엘 족속",
+        "가난한 자"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 5:18-27",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제의만으로 의롭다 할 수 없고 정의와 공의가 흘러야 한다는 예언자의 호소예요."
+      ],
+      "study": "제의만으로 의롭다 할 수 없고 정의와 공의가 흘러야 한다는 예언자의 호소예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"아모스","target":"이스라엘 족속","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"read","duration":1.2,"actor":"아모스"},{"action":"look","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"bow","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 5:18-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-6-0",
+      "code": "amo",
+      "chapter": 6,
+      "title": "상아 침상에 누운 지도자들을 꾸짖다",
+      "actors": [
+        "시온과 사마리아의 지도자",
+        "요셉(이스라엘)"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 6:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 안일한 지도자들이 나라의 무너짐을 걱정하지 않고 사치하는 모습을 경고해요."
+      ],
+      "study": "안일한 지도자들이 나라의 무너짐을 걱정하지 않고 사치하는 모습을 경고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"시온과 사마리아의 지도자","target":"요셉(이스라엘)","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"시온과 사마리아의 지도자"},{"action":"turn","duration":1.2,"actor":"시온과 사마리아의 지도자"},{"action":"speak","duration":1.5,"actor":"시온과 사마리아의 지도자"},{"action":"point","duration":1.8,"actor":"시온과 사마리아의 지도자"},{"action":"listen","duration":1.5,"actor":"시온과 사마리아의 지도자"},{"action":"lower","duration":1.2,"actor":"시온과 사마리아의 지도자"}],"duration":8.2,"support":null,"ref":"아모스 6:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-7-0",
+      "code": "amo",
+      "chapter": 7,
+      "title": "메뚜기와 불의 환상 뒤에 긍휼을 구하다",
+      "actors": [
+        "아모스",
+        "야곱(이스라엘)"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 7:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 메뚜기와 불의 환상을 본 아모스가 야곱이 작다며 긍휼을 간구하고, 심판이 거두어져요."
+      ],
+      "study": "메뚜기와 불의 환상을 본 아모스가 야곱이 작다며 긍휼을 간구하고, 심판이 거두어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"아모스","target":"야곱(이스라엘)","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"아모스"},{"action":"lie","duration":1.2,"actor":"아모스"},{"action":"sleep","duration":1.5,"actor":"아모스"},{"action":"look","duration":1.8,"actor":"아모스"},{"action":"startle","duration":1.5,"actor":"아모스"},{"action":"rise","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 7:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-7-1",
+      "code": "amo",
+      "chapter": 7,
+      "title": "다림줄 환상과 벧엘의 제사장 아마샤",
+      "actors": [
+        "아모스",
+        "아마샤",
+        "여로보암"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 7:7-17",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다림줄 환상 뒤 아마샤가 아모스를 고발하고, 아모스는 자신이 예언자가 된 부름과 경고를 답해요."
+      ],
+      "study": "다림줄 환상 뒤 아마샤가 아모스를 고발하고, 아모스는 자신이 예언자가 된 부름과 경고를 답해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"아모스","target":"아마샤","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"turn","duration":1.2,"actor":"아모스"},{"action":"point","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"lower","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 7:7-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-8-0",
+      "code": "amo",
+      "chapter": 8,
+      "title": "저울을 속이는 상인과 말씀의 기근",
+      "actors": [
+        "아모스",
+        "탐욕스러운 상인들",
+        "가난한 자와 궁핍한 자"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 8:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 가난한 이를 사고파는 상인들을 책망하고 하나님의 말씀을 듣지 못하는 기근을 예고해요."
+      ],
+      "study": "가난한 이를 사고파는 상인들을 책망하고 하나님의 말씀을 듣지 못하는 기근을 예고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"아모스","target":"탐욕스러운 상인들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"turn","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"point","duration":1.8,"actor":"아모스"},{"action":"listen","duration":1.5,"actor":"아모스"},{"action":"lower","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 8:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-9-0",
+      "code": "amo",
+      "chapter": 9,
+      "title": "무너지는 제단의 환상과 흩어짐",
+      "actors": [
+        "아모스",
+        "이스라엘"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 9:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제단 곁 환상으로 피할 수 없는 심판과 체질하듯 가려지는 백성을 상징해요."
+      ],
+      "study": "제단 곁 환상으로 피할 수 없는 심판과 체질하듯 가려지는 백성을 상징해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"아모스","target":"이스라엘","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"아모스"},{"action":"lie","duration":1.2,"actor":"아모스"},{"action":"sleep","duration":1.5,"actor":"아모스"},{"action":"look","duration":1.8,"actor":"아모스"},{"action":"startle","duration":1.5,"actor":"아모스"},{"action":"rise","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 9:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-amo-extra-9-1",
+      "code": "amo",
+      "chapter": 9,
+      "title": "다윗의 무너진 장막을 다시 세우다",
+      "actors": [
+        "아모스",
+        "다윗의 장막",
+        "이스라엘"
+      ],
+      "object": "scene-marker",
+      "ref": "아모스 9:11-15",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 무너진 다윗의 장막과 황폐한 땅이 다시 세워질 회복 약속으로 예언서가 끝나요."
+      ],
+      "study": "무너진 다윗의 장막과 황폐한 땅이 다시 세워질 회복 약속으로 예언서가 끝나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"아모스","target":"다윗의 장막","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아모스"},{"action":"lift","duration":1.2,"actor":"아모스"},{"action":"speak","duration":1.5,"actor":"아모스"},{"action":"bless","duration":1.8,"actor":"아모스"},{"action":"lower","duration":1.5,"actor":"아모스"},{"action":"bow","duration":1.2,"actor":"아모스"}],"duration":8.2,"support":null,"ref":"아모스 9:11-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

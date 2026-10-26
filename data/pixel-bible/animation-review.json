@@ -407,14 +407,15 @@
     },
     {
       "code": "amo",
-      "payloadSha256": "91e12fab4ab621c8fff7e1e4a4d61c47612c93e779379a479e371839c1d2c019",
-      "scenes": 5,
-      "existing": 5,
+      "payloadSha256": "14fdd65cde9d11d3ccb0179ffcb8a301bf3cc4a31323eafea4e907716468f1dd",
+      "scenes": 16,
+      "existing": 16,
       "restored": 0,
       "corrected": 0,
-      "planned": 5,
+      "planned": 16,
       "modes": {
-        "illustration": 5
+        "illustration": 15,
+        "reconstruction": 1
       },
       "status": "authored-awaiting-browser-review"
     },
