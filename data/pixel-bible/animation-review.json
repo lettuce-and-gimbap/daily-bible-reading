@@ -57,18 +57,29 @@
     },
     {
       "code": "lev",
-      "payloadSha256": "73c883e9225c8583e5a84dd8727e3639f49b9fea42172ce4226da11bfe834f07",
-      "scenes": 16,
-      "existing": 16,
+      "payloadSha256": "229691ca02bf181304fa3e7e96d6a5ba54557f9110f07bb8a95dc48f5a0c034f",
+      "scenes": 94,
+      "existing": 94,
       "restored": 0,
-      "corrected": 1,
-      "planned": 16,
+      "corrected": 2,
+      "planned": 94,
       "modes": {
-        "instruction": 6,
-        "reconstruction": 6,
+        "instruction": 74,
+        "reconstruction": 16,
         "illustration": 4
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 94,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "num",

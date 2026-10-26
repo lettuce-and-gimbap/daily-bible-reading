@@ -818,6 +818,244 @@
     },
     "15": {
       "mode": "instruction"
+    },
+    "16": {
+      "mode": "instruction"
+    },
+    "17": {
+      "mode": "instruction"
+    },
+    "18": {
+      "mode": "instruction"
+    },
+    "19": {
+      "mode": "instruction"
+    },
+    "20": {
+      "mode": "instruction"
+    },
+    "21": {
+      "mode": "instruction"
+    },
+    "22": {
+      "mode": "instruction"
+    },
+    "23": {
+      "mode": "instruction"
+    },
+    "24": {
+      "mode": "instruction"
+    },
+    "25": {
+      "mode": "instruction"
+    },
+    "26": {
+      "mode": "instruction"
+    },
+    "27": {
+      "mode": "instruction"
+    },
+    "28": {
+      "mode": "instruction"
+    },
+    "29": {
+      "mode": "instruction"
+    },
+    "30": {
+      "mode": "instruction"
+    },
+    "31": {
+      "mode": "instruction"
+    },
+    "32": {
+      "mode": "instruction"
+    },
+    "33": {
+      "mode": "instruction"
+    },
+    "34": {
+      "mode": "instruction"
+    },
+    "35": {
+      "mode": "reconstruction"
+    },
+    "36": {
+      "mode": "reconstruction"
+    },
+    "37": {
+      "mode": "reconstruction"
+    },
+    "38": {
+      "mode": "reconstruction"
+    },
+    "39": {
+      "mode": "reconstruction"
+    },
+    "40": {
+      "mode": "instruction"
+    },
+    "41": {
+      "mode": "instruction"
+    },
+    "42": {
+      "mode": "instruction"
+    },
+    "43": {
+      "mode": "instruction"
+    },
+    "44": {
+      "mode": "instruction"
+    },
+    "45": {
+      "mode": "instruction"
+    },
+    "46": {
+      "mode": "instruction"
+    },
+    "47": {
+      "mode": "instruction"
+    },
+    "48": {
+      "mode": "instruction"
+    },
+    "49": {
+      "mode": "instruction"
+    },
+    "50": {
+      "mode": "instruction"
+    },
+    "51": {
+      "mode": "instruction"
+    },
+    "52": {
+      "mode": "instruction"
+    },
+    "53": {
+      "mode": "reconstruction"
+    },
+    "54": {
+      "mode": "reconstruction"
+    },
+    "55": {
+      "mode": "reconstruction"
+    },
+    "56": {
+      "mode": "instruction"
+    },
+    "57": {
+      "mode": "instruction"
+    },
+    "58": {
+      "mode": "instruction"
+    },
+    "59": {
+      "mode": "reconstruction"
+    },
+    "60": {
+      "mode": "instruction"
+    },
+    "61": {
+      "mode": "instruction"
+    },
+    "62": {
+      "mode": "instruction"
+    },
+    "63": {
+      "mode": "instruction"
+    },
+    "64": {
+      "mode": "instruction"
+    },
+    "65": {
+      "mode": "instruction"
+    },
+    "66": {
+      "mode": "instruction"
+    },
+    "67": {
+      "mode": "instruction"
+    },
+    "68": {
+      "mode": "instruction"
+    },
+    "69": {
+      "mode": "instruction"
+    },
+    "70": {
+      "mode": "instruction"
+    },
+    "71": {
+      "mode": "instruction"
+    },
+    "72": {
+      "mode": "instruction"
+    },
+    "73": {
+      "mode": "instruction"
+    },
+    "74": {
+      "mode": "instruction"
+    },
+    "75": {
+      "mode": "instruction"
+    },
+    "76": {
+      "mode": "instruction"
+    },
+    "77": {
+      "mode": "instruction"
+    },
+    "78": {
+      "mode": "instruction"
+    },
+    "79": {
+      "mode": "instruction"
+    },
+    "80": {
+      "mode": "instruction"
+    },
+    "81": {
+      "mode": "instruction"
+    },
+    "82": {
+      "mode": "instruction"
+    },
+    "83": {
+      "mode": "instruction"
+    },
+    "84": {
+      "mode": "instruction"
+    },
+    "85": {
+      "mode": "instruction"
+    },
+    "86": {
+      "mode": "reconstruction"
+    },
+    "87": {
+      "mode": "instruction"
+    },
+    "88": {
+      "mode": "instruction"
+    },
+    "89": {
+      "mode": "instruction"
+    },
+    "90": {
+      "mode": "instruction"
+    },
+    "91": {
+      "mode": "instruction"
+    },
+    "92": {
+      "mode": "instruction"
+    },
+    "93": {
+      "mode": "instruction"
+    },
+    "3": {
+      "mode": "reconstruction",
+      "setting": "courtyard"
     }
   },
   "gen": {
