@@ -188,14 +188,15 @@
     },
     {
       "code": "2ch",
-      "payloadSha256": "5f9f85604b312bdf2a110c75b54108c6b7a67bc437021e192893a5fb7d060cf3",
-      "scenes": 82,
-      "existing": 82,
+      "payloadSha256": "7c47acb3eece1f16d8d80f0d64dd0eb75c294a3de884621d9bfaaf1a33774678",
+      "scenes": 90,
+      "existing": 90,
       "restored": 0,
       "corrected": 3,
-      "planned": 82,
+      "planned": 90,
       "modes": {
-        "reconstruction": 82
+        "reconstruction": 89,
+        "illustration": 1
       },
       "status": "authored-awaiting-browser-review"
     },

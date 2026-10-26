@@ -842,5 +842,31 @@
     "68": {
       "mode": "reconstruction"
     }
+  },
+  "2ch": {
+    "82": {
+      "mode": "reconstruction"
+    },
+    "83": {
+      "mode": "reconstruction"
+    },
+    "84": {
+      "mode": "reconstruction"
+    },
+    "85": {
+      "mode": "illustration"
+    },
+    "86": {
+      "mode": "reconstruction"
+    },
+    "87": {
+      "mode": "reconstruction"
+    },
+    "88": {
+      "mode": "reconstruction"
+    },
+    "89": {
+      "mode": "reconstruction"
+    }
   }
 }
