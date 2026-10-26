@@ -5,7 +5,7 @@ import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
 import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
-import {relationshipLines} from '../js/features/pixel-bible/relationship-lines.js';
+import {relationshipLines,loveBoothExchange} from '../js/features/pixel-bible/relationship-lines.js';
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 
 function fixture(){
@@ -31,6 +31,12 @@ test('옆 칸 조우 즉시 서로 마주보고 각자 사건에 맞는 대사�
  assert.equal(director.tick(5900,npcs).length,0,'같은 자리에서는 반복하지 않음');
  npcs[1].x=20;director.tick(5901,npcs);npcs[1].x=11;
  assert.equal(director.tick(5902,npcs).length,1,'떠났다가 다시 만나면 시작');
+});
+
+test('TV 부스는 연결 관계의 대사 공백을 어색한 인사로 가리지 않는다',()=>{
+ const a={name:'가상인물A'},b={name:'가상인물B'},relations=[{from:{name:'가상인물A',code:'gen',chap:1},to:{name:'가상인물B'},ref:'창세기 1:1',text:'두 인물이 연결되어 있다.'}];
+ const result=loveBoothExchange(a,b,relations);assert.equal(result.mode,'pending');assert.equal(result.lines.length,0);
+ const unrelated=loveBoothExchange(a,b,[]);assert.equal(unrelated.mode,'awkward');assert.equal(unrelated.lines.length,2);
 });
 
 test('동시 조우는 한 쌍만 진행해 자동 말풍선 슬롯과 합쳐 대화 세트를 두 개로 제한한다',()=>{
@@ -155,9 +161,8 @@ test('기록된 인물 간 상호대사는 확률 제한 없이 실제 조우 �
  assert.equal(lines.length,1);assert.notEqual(lines[0].origin,'general');
  assert.equal(director.active.length,1);
 });
-test('일반 발화 말풍선에서는 구절 줄을 숨기고 자세히 보기 안의 관련 구절은 유지한다',()=>{
+test('일반·상호작용 말풍선에는 구절 줄이나 자세히 보기 버튼을 표시하지 않는다',()=>{
  const source=fs.readFileSync('js/features/pixel-bible/world.js','utf8');
  assert.doesNotMatch(source,/data-action="passage"/);
- assert.match(source,/data-action="detail-passage"/);
- assert.match(source,/data-action="speech-details">자세히 보기/);
+ assert.doesNotMatch(source,/speech-details|encounter-details|detail-passage/);
 });

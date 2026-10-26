@@ -13,8 +13,8 @@ const orderedRows=[
 ].sort((a,b)=>a[6]-b[6]);
 
 // 기존 소비자는 6개 항목의 행 형식을 유지한다.
-export const OLD_TESTAMENT_DIALOGUE_ROWS=orderedRows.map(([code,chapter,name,verses,lines,emotion])=>[
-  code,chapter,name,verses,lines,emotion,
+export const OLD_TESTAMENT_DIALOGUE_ROWS=orderedRows.map(([code,chapter,name,verses,lines,emotion,_order,lineRefs,lineContexts])=>[
+  code,chapter,name,verses,lines,emotion,lineRefs||null,lineContexts||null,
 ]);
 
 export const OLD_TESTAMENT_CODES=new Set([
@@ -37,9 +37,9 @@ const BOOK_NAMES={
 
 export function oldTestamentMonologues(person,occurrences){
   const out=[];
-  for(const [code,chapter,name,verses,lines,emotion] of OLD_TESTAMENT_DIALOGUE_ROWS){
+  for(const [code,chapter,name,verses,lines,emotion,lineRefs,lineContexts] of OLD_TESTAMENT_DIALOGUE_ROWS){
     if(person.name!==name||!occurrences.some(item=>item.code===code&&item.chap===chapter))continue;
-    for(const text of lines)out.push({text,ref:`${BOOK_NAMES[code]} ${chapter}:${verses}`,emotion,origin:'authored'});
+    for(const [i,text] of lines.entries())out.push({text,ref:`${BOOK_NAMES[code]} ${chapter}:${lineRefs?.[i]||verses}`,detailText:lineContexts?.[i]||'',emotion,origin:'authored'});
   }
   return out;
 }

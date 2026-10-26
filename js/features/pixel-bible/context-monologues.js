@@ -48,10 +48,6 @@ const scenes=[
   ['예수님을 꼭 뵙고 싶은데 사람들이 앞을 가리는구나. 나무에 올라서라도 보자.','determined'],
   ['예수님이 오늘 내 집에 머무르신다니!','joy'],
   ['재산 절반을 가난한 이들에게 주어야겠어.','determined']]],
- ['gen',6,'노아','창세기 6:14–22',[
-  ['우리 식구와 생물들이 홍수를 피할 방주를 지어야겠어. 말씀하신 나무를 준비하자.','determined'],
-  ['방주 안팎에 역청을 칠해야겠어.','determined'],
-  ['말씀하신 대로 가족과 생물들의 먹이를 준비하자.','determined']]],
 ];
 export function chapterMonologues(n,occurrences){
  const out=[],sceneKeys=new Set();

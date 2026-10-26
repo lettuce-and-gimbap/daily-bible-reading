@@ -10,6 +10,7 @@ import {objectLinesFor} from '../js/features/pixel-bible/object-scenes.js';
 import {ELIJAH_SCENES} from '../js/features/pixel-bible/scenes.js';
 import {TWO_KINGS_DIALOGUE_ROWS} from '../js/features/pixel-bible/2ki-dialogue.js';
 import {OLD_TESTAMENT_CODES,OLD_TESTAMENT_DIALOGUE_ROWS} from '../js/features/pixel-bible/ot-dialogue.js';
+import {speechContext} from '../js/features/pixel-bible/speech-context.js';
 
 test('엘리야의 나무 독백은 현재 장의 공포와 탈진을 담고 긴 근거는 상세에 남긴다',()=>{
  const n={name:'엘리야',refs:['열왕기상 19장']},chapters=[{code:'1ki',name:'열왕기상',chap:19}],evidence={text:'광야의 로뎀나무 아래에서 지쳐 눕는 장면의 상세 맥락.',ref:'열왕기상 19:3–8'};
@@ -73,4 +74,24 @@ test('구약 전권의 개별 대사는 실제 장별 인물 색인에 붙고 �
  }
  const unknown={name:'기록되지 않은 왕',role:'왕',refs:[]},context={people:[{name:unknown.name,code:'2ki',chap:3,role:'왕'}],relations:[]};
  assert.deepEqual(personalLines(unknown,[{code:'2ki',name:'열왕기하',chap:3}],context),[]);
+});
+
+test('창세기 대사의 개별 참조는 각 문장의 실제 사건 범위와 일치한다',()=>{
+ const rows=OLD_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='gen');
+ const find=(chap,name)=>rows.find(row=>row[1]===chap&&row[2]===name);
+ assert.deepEqual(find(2,'아담')[6],['15-17','23-24']);
+ assert.deepEqual(find(3,'아담')[6],['8-10','11-12']);
+ assert.deepEqual(find(3,'하와')[6],['13','16']);
+ assert.deepEqual(find(4,'가인')[6],['3-7','9']);
+ assert.deepEqual(find(6,'노아')[6],['8-12','14-16','19-21']);
+ assert.deepEqual(find(8,'노아')[6],['6-12','20-22']);
+ assert.deepEqual(find(9,'노아')[6],['20-23','22-23']);
+ assert.deepEqual(find(12,'아브람')[6],['1-4','10-13']);
+ const output=personalLines({name:'가인',role:'농부',refs:[]},[{code:'gen',name:'창세기',chap:4}],{people:[{name:'가인',code:'gen',chap:4,role:'농부'}],relations:[]});
+ assert.deepEqual(output.map(line=>line.ref),['창세기 4:3-7','창세기 4:9']);
+ assert.ok(output.every(line=>!line.detailText),'다른 인물 관계 설명을 발화에 임의로 붙이지 않는다');
+ const genesis=JSON.parse(readFileSync(new URL('../data/summary/gen.json',import.meta.url),'utf8'));
+ const noah=personalLines({name:'노아',role:'의인',refs:[]},[{code:'gen',name:'창세기',chap:6}],{people:[{name:'노아',code:'gen',chap:6,role:'의인'}],relations:[]});
+ assert.equal(noah.length,3);assert.deepEqual(noah.map(line=>line.ref),['창세기 6:8-12','창세기 6:14-16','창세기 6:19-21']);
+ for(const line of noah){const verses=line.ref.split(':')[1],bounds=verses.split('-').map(Number);assert.ok(genesis.chapters['6'].events.some(event=>{const nums=event.verses.match(/\d+/g).map(Number);return bounds[0]>=nums[0]&&bounds.at(-1)<=nums.at(-1)}),line.ref);assert.ok(speechContext(line,[{code:'gen',chap:6,data:genesis.chapters['6']}]),line.ref+' 설명이 본문 사건에서 생성되어야 한다')}
 });

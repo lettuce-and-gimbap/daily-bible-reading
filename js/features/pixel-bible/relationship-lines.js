@@ -33,3 +33,14 @@ export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random
   ref,detailText:[relation.text,entry?.detail].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair',pairIndex:index,
  }));
 }
+
+export function loveBoothExchange(a,b,relations){
+ const relation=relations.find(r=>[r.from.name,r.to.name].includes(a.name)&&[r.from.name,r.to.name].includes(b.name));
+ const lines=relation?relationshipLines(a,b,relation,null):[];
+ if(lines.length===2)return {relation,lines,mode:'special'};
+ if(relation)return {relation,lines:[],mode:'pending'};
+ return {relation:null,mode:'awkward',lines:[
+  {speaker:a,target:b,text:'어… 안녕하세요.',kind:'pair'},
+  {speaker:b,target:a,text:'응… 안녕하세요.',kind:'pair'},
+ ]};
+}

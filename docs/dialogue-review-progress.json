@@ -12,7 +12,9 @@
       "pairedEntriesReviewed": 20,
       "newTwoWayEntries": 16,
       "status": "in-progress",
-      "note": "장별 인물·관계 기록과 기존 대사를 대조하고 핵심 대화를 보강했다. 추가 관계 검토가 남아 있어 권 완료로 계산하지 않는다."
+      "authoredUtteranceGroupsReviewed": 8,
+      "utteranceReferencesCorrected": 17,
+      "statusNote": "자동 인사 제거와 창세기 핵심 독백 8묶음의 문장별 구절 범위를 점검했다. 인물별 3~5개 해설 정합성 및 나머지 사건·관계 검토가 남아 있어 권 완료로 계산하지 않는다."
     }
   }
 }

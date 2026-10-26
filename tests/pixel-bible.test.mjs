@@ -662,14 +662,14 @@ test('오브젝트 옮기기는 원래 물건은 제외하고 다른 물건·인
  assert.deepEqual(o,{kind:'water',x:8,y:9});
 });
 
-test('짧은 고유 대사를 우선하고 구체적 관계 설명은 펼칠 맥락으로 보존한다',async()=>{
+test('짧은 고유 대사를 우선하고 다른 인물 관계 설명을 독백에 섞지 않는다',async()=>{
  const {personalLines}=await import('../js/features/pixel-bible/personal-lines.js');
  const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
  const chapters=[{code:'rut',name:'룻기',chap:2,data:{people:[{name:'룻',role:'이삭을 줍는 며느리'},{name:'보아스',role:'밭 주인'}],rels:[{from:'보아스',to:'룻',label:'보호',verses:'8-9',note:'보아스는 룻에게 같은 밭에서 일하고 일꾼들이 길어 온 물을 마시도록 허락했습니다.'}]}}];
  const context=buildChapterDialogue(chapters),p=context.people.find(p=>p.name==='룻');
  const lines=personalLines({...p,refs:[p.ref]},chapters,context);
  assert.ok(lines.every(l=>l.origin==='authored'));
- assert.ok(lines.some(l=>l.detailText===context.relations[0].text));
+ assert.ok(lines.every(l=>l.detailText!==context.relations[0].text));
  assert.ok(lines.every(l=>l.ref.startsWith('룻기 2:')));
  assert.ok(lines.every(l=>!l.text.includes('얽힌 일')));
 
