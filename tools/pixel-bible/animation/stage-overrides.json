@@ -757,6 +757,327 @@
     },
     "17": {
       "mode": "illustration"
+    },
+    "18": {
+      "mode": "reconstruction"
+    },
+    "19": {
+      "mode": "reconstruction"
+    },
+    "20": {
+      "mode": "reconstruction"
+    },
+    "21": {
+      "mode": "reconstruction"
+    },
+    "22": {
+      "mode": "reconstruction"
+    },
+    "23": {
+      "mode": "reconstruction"
+    },
+    "24": {
+      "mode": "reconstruction"
+    },
+    "25": {
+      "mode": "reconstruction"
+    },
+    "26": {
+      "mode": "instruction"
+    },
+    "27": {
+      "mode": "instruction"
+    },
+    "28": {
+      "mode": "instruction"
+    },
+    "29": {
+      "mode": "instruction"
+    },
+    "30": {
+      "mode": "instruction"
+    },
+    "31": {
+      "mode": "instruction"
+    },
+    "32": {
+      "mode": "instruction"
+    },
+    "33": {
+      "mode": "instruction"
+    },
+    "34": {
+      "mode": "instruction"
+    },
+    "35": {
+      "mode": "instruction"
+    },
+    "36": {
+      "mode": "instruction"
+    },
+    "37": {
+      "mode": "instruction"
+    },
+    "38": {
+      "mode": "instruction"
+    },
+    "39": {
+      "mode": "instruction"
+    },
+    "40": {
+      "mode": "instruction"
+    },
+    "41": {
+      "mode": "instruction"
+    },
+    "42": {
+      "mode": "instruction"
+    },
+    "43": {
+      "mode": "reconstruction"
+    },
+    "44": {
+      "mode": "reconstruction"
+    },
+    "45": {
+      "mode": "reconstruction"
+    },
+    "46": {
+      "mode": "instruction"
+    },
+    "47": {
+      "mode": "instruction"
+    },
+    "48": {
+      "mode": "instruction"
+    },
+    "49": {
+      "mode": "instruction"
+    },
+    "50": {
+      "mode": "instruction"
+    },
+    "51": {
+      "mode": "instruction"
+    },
+    "52": {
+      "mode": "instruction"
+    },
+    "53": {
+      "mode": "instruction"
+    },
+    "54": {
+      "mode": "instruction"
+    },
+    "55": {
+      "mode": "instruction"
+    },
+    "56": {
+      "mode": "instruction"
+    },
+    "57": {
+      "mode": "instruction"
+    },
+    "58": {
+      "mode": "instruction"
+    },
+    "59": {
+      "mode": "instruction"
+    },
+    "60": {
+      "mode": "instruction"
+    },
+    "61": {
+      "mode": "instruction"
+    },
+    "62": {
+      "mode": "instruction"
+    },
+    "63": {
+      "mode": "instruction"
+    },
+    "64": {
+      "mode": "instruction"
+    },
+    "65": {
+      "mode": "instruction"
+    },
+    "66": {
+      "mode": "instruction"
+    },
+    "67": {
+      "mode": "instruction"
+    },
+    "68": {
+      "mode": "instruction"
+    },
+    "69": {
+      "mode": "instruction"
+    },
+    "70": {
+      "mode": "instruction"
+    },
+    "71": {
+      "mode": "instruction"
+    },
+    "72": {
+      "mode": "instruction"
+    },
+    "73": {
+      "mode": "instruction"
+    },
+    "74": {
+      "mode": "instruction"
+    },
+    "75": {
+      "mode": "instruction"
+    },
+    "76": {
+      "mode": "instruction"
+    },
+    "77": {
+      "mode": "instruction"
+    },
+    "78": {
+      "mode": "instruction"
+    },
+    "79": {
+      "mode": "instruction"
+    },
+    "80": {
+      "mode": "instruction"
+    },
+    "81": {
+      "mode": "instruction"
+    },
+    "82": {
+      "mode": "instruction"
+    },
+    "83": {
+      "mode": "reconstruction"
+    },
+    "84": {
+      "mode": "reconstruction"
+    },
+    "85": {
+      "mode": "reconstruction"
+    },
+    "86": {
+      "mode": "reconstruction"
+    },
+    "87": {
+      "mode": "reconstruction"
+    },
+    "88": {
+      "mode": "reconstruction"
+    },
+    "89": {
+      "mode": "reconstruction"
+    },
+    "90": {
+      "mode": "reconstruction"
+    },
+    "91": {
+      "mode": "reconstruction"
+    },
+    "92": {
+      "mode": "reconstruction"
+    },
+    "93": {
+      "mode": "reconstruction"
+    },
+    "94": {
+      "mode": "reconstruction"
+    },
+    "95": {
+      "mode": "reconstruction"
+    },
+    "96": {
+      "mode": "reconstruction"
+    },
+    "97": {
+      "mode": "reconstruction"
+    },
+    "98": {
+      "mode": "reconstruction"
+    },
+    "99": {
+      "mode": "reconstruction"
+    },
+    "100": {
+      "mode": "reconstruction"
+    },
+    "101": {
+      "mode": "reconstruction"
+    },
+    "102": {
+      "mode": "reconstruction"
+    },
+    "103": {
+      "mode": "reconstruction"
+    },
+    "104": {
+      "mode": "reconstruction"
+    },
+    "105": {
+      "mode": "reconstruction"
+    },
+    "106": {
+      "mode": "instruction"
+    },
+    "107": {
+      "mode": "instruction"
+    },
+    "108": {
+      "mode": "instruction"
+    },
+    "109": {
+      "mode": "illustration"
+    },
+    "110": {
+      "mode": "illustration"
+    },
+    "111": {
+      "mode": "illustration"
+    },
+    "112": {
+      "mode": "illustration"
+    },
+    "113": {
+      "mode": "illustration"
+    },
+    "114": {
+      "mode": "illustration"
+    },
+    "115": {
+      "mode": "illustration"
+    },
+    "116": {
+      "mode": "illustration"
+    },
+    "117": {
+      "mode": "illustration"
+    },
+    "118": {
+      "mode": "illustration"
+    },
+    "119": {
+      "mode": "illustration"
+    },
+    "120": {
+      "mode": "illustration"
+    },
+    "121": {
+      "mode": "illustration"
+    },
+    "122": {
+      "mode": "illustration"
+    },
+    "123": {
+      "mode": "illustration"
+    },
+    "124": {
+      "mode": "illustration"
     }
   },
   "ecc": {
