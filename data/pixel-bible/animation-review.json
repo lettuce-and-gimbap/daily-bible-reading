@@ -213,16 +213,29 @@
     },
     {
       "code": "1sa",
-      "payloadSha256": "cb570789105433c8b0f1d9bcd92643eb35252c0e08b531d75b7ae4ccd105fe61",
-      "scenes": 110,
-      "existing": 110,
+      "payloadSha256": "05fcbc4d31f94988eaa255e356ea066e975dfdc42865193b542735eb404d5c73",
+      "scenes": 143,
+      "existing": 143,
       "restored": 0,
       "corrected": 19,
-      "planned": 110,
+      "planned": 143,
       "modes": {
-        "reconstruction": 110
+        "reconstruction": 114,
+        "instruction": 17,
+        "illustration": 12
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 143,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "2sa",

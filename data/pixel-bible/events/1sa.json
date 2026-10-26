@@ -3258,6 +3258,881 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"listen","lead":"사울","target":"사울의 신하들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 28:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-1-01",
+      "code": "1sa",
+      "chapter": 1,
+      "title": "한나의 슬픔",
+      "actors": [
+        "한나",
+        "엘가나"
+      ],
+      "object": "tabernacle",
+      "ref": "사무엘상 1:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에브라임 산지 사람 엘가나의 두 아내 중 한나는 자식이 없어, 해마다 실로에 갈 때마다 브닌나에게 약 올림을 당해 울고 먹지 못해요."
+      ],
+      "study": "에브라임 산지 사람 엘가나의 두 아내 중 한나는 자식이 없어, 해마다 실로에 갈 때마다 브닌나에게 약 올림을 당해 울고 먹지 못해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"mourn","lead":"한나","target":"엘가나","mode":"instruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tabernacle","beats":[{"action":"startle","duration":1,"actor":"한나"},{"action":"lower","duration":1.2,"actor":"한나"},{"action":"kneel","duration":1.5,"actor":"한나"},{"action":"cover-mouth","duration":1.8,"actor":"한나"},{"action":"mourn","duration":1.5,"actor":"한나"},{"action":"lower","duration":1.2,"actor":"한나"}],"duration":8.2,"support":null,"ref":"사무엘상 1:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-2-01",
+      "code": "1sa",
+      "chapter": 2,
+      "title": "사무엘과 엘리의 아들들",
+      "actors": [
+        "엘리",
+        "사무엘"
+      ],
+      "object": "house",
+      "ref": "사무엘상 2:11",
+      "verseNumbers": [
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사무엘은 엘리 앞에서 하나님을 섬기고, 홉니와 비느하스는 사환을 시켜 제물을 억지로 빼앗아 하나님의 제사를 업신여겨요."
+      ],
+      "study": "사무엘은 엘리 앞에서 하나님을 섬기고, 홉니와 비느하스는 사환을 시켜 제물을 억지로 빼앗아 하나님의 제사를 업신여겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"엘리","target":"사무엘","mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"house","beats":[{"action":"gather","duration":1,"actor":"엘리"},{"action":"carry","duration":1.2,"actor":"엘리"},{"action":"place","duration":1.5,"actor":"엘리"},{"action":"kneel","duration":1.8,"actor":"엘리"},{"action":"pray","duration":1.5,"actor":"엘리"},{"action":"bow","duration":1.2,"actor":"엘리"}],"duration":8.2,"support":null,"ref":"사무엘상 2:11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-2-02",
+      "code": "1sa",
+      "chapter": 2,
+      "title": "엘리의 책망과 아들들의 거역",
+      "actors": [
+        "엘리",
+        "사무엘"
+      ],
+      "object": "house",
+      "ref": "사무엘상 2:22-26",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 늙은 엘리가 아들들의 악행을 꾸짖지만 듣지 않고, 하나님은 그들을 죽이기로 뜻하신 반면 사무엘은 점점 은총을 받아요."
+      ],
+      "study": "늙은 엘리가 아들들의 악행을 꾸짖지만 듣지 않고, 하나님은 그들을 죽이기로 뜻하신 반면 사무엘은 점점 은총을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"listen","lead":"엘리","target":"사무엘","mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"엘리"},{"action":"turn","duration":1.2,"actor":"엘리"},{"action":"speak","duration":1.5,"actor":"엘리"},{"action":"point","duration":1.8,"actor":"엘리"},{"action":"listen","duration":1.5,"actor":"엘리"},{"action":"lower","duration":1.2,"actor":"엘리"}],"duration":8.2,"support":null,"ref":"사무엘상 2:22-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-3-01",
+      "code": "1sa",
+      "chapter": 3,
+      "title": "숨기지 않은 사무엘",
+      "actors": [
+        "사무엘",
+        "엘리"
+      ],
+      "object": "lamp",
+      "ref": "사무엘상 3:15-18",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사무엘이 두려워 말하지 못하다 엘리의 다그침에 모두 말하고, 엘리는 하나님이 선하신 대로 하시리라며 받아들여요."
+      ],
+      "study": "사무엘이 두려워 말하지 못하다 엘리의 다그침에 모두 말하고, 엘리는 하나님이 선하신 대로 하시리라며 받아들여요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"hide","lead":"사무엘","target":"엘리","mode":"instruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"lamp","beats":[{"action":"listen","duration":1,"actor":"사무엘"},{"action":"startle","duration":1.2,"actor":"사무엘"},{"action":"retreat","duration":1.5,"actor":"사무엘"},{"action":"hide","duration":1.8,"actor":"사무엘"},{"action":"peek","duration":1.5,"actor":"사무엘"},{"action":"stand","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 3:15-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-3-02",
+      "code": "1sa",
+      "chapter": 3,
+      "title": "온 이스라엘의 선지자",
+      "actors": [
+        "사무엘"
+      ],
+      "object": "lamp",
+      "ref": "사무엘상 3:19-21",
+      "verseNumbers": [
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 사무엘과 함께하셔서 그의 말이 땅에 떨어지지 않고, 온 이스라엘이 그를 선지자로 알아보며 실로에서 말씀이 이어져요."
+      ],
+      "study": "하나님이 사무엘과 함께하셔서 그의 말이 땅에 떨어지지 않고, 온 이스라엘이 그를 선지자로 알아보며 실로에서 말씀이 이어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"listen","lead":"사무엘","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"lamp","beats":[{"action":"listen","duration":1,"actor":"사무엘"},{"action":"turn","duration":1.2,"actor":"사무엘"},{"action":"speak","duration":1.5,"actor":"사무엘"},{"action":"point","duration":1.8,"actor":"사무엘"},{"action":"listen","duration":1.5,"actor":"사무엘"},{"action":"lower","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 3:19-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-4-01",
+      "code": "1sa",
+      "chapter": 4,
+      "title": "이가봇의 출생",
+      "actors": [
+        "비느하스의 아내"
+      ],
+      "object": "ark-covenant",
+      "ref": "사무엘상 4:19-22",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 비느하스의 아내가 소식을 듣고 아이를 낳다가 죽어 가며 영광이 떠났다는 뜻으로 이름을 이가봇이라 지어요."
+      ],
+      "study": "비느하스의 아내가 소식을 듣고 아이를 낳다가 죽어 가며 영광이 떠났다는 뜻으로 이름을 이가봇이라 지어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"birth","lead":"비느하스의 아내","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"ark-covenant","beats":[{"action":"look","duration":1,"actor":"비느하스의 아내"},{"action":"listen","duration":1.2,"actor":"비느하스의 아내"},{"action":"cradle","duration":1.5,"actor":"비느하스의 아내"},{"action":"smile","duration":1.8,"actor":"비느하스의 아내"},{"action":"bless","duration":1.5,"actor":"비느하스의 아내"},{"action":"bow","duration":1.2,"actor":"비느하스의 아내"}],"duration":8.2,"support":null,"ref":"사무엘상 4:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-6-01",
+      "code": "1sa",
+      "chapter": 6,
+      "title": "궤를 들여다본 죄",
+      "actors": [
+        "벧세메스 사람들"
+      ],
+      "object": "ark-covenant",
+      "ref": "사무엘상 6:19-20",
+      "verseNumbers": [
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 벧세메스 사람들이 궤를 들여다보아 하나님이 많은 사람을 치시고, 사람들은 이 거룩하신 하나님 앞에 누가 서겠느냐고 두려워해요."
+      ],
+      "study": "벧세메스 사람들이 궤를 들여다보아 하나님이 많은 사람을 치시고, 사람들은 이 거룩하신 하나님 앞에 누가 서겠느냐고 두려워해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"벧세메스 사람들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"ark-covenant","beats":[{"action":"listen","duration":1,"actor":"벧세메스 사람들"},{"action":"turn","duration":1.2,"actor":"벧세메스 사람들"},{"action":"speak","duration":1.5,"actor":"벧세메스 사람들"},{"action":"point","duration":1.8,"actor":"벧세메스 사람들"},{"action":"listen","duration":1.5,"actor":"벧세메스 사람들"},{"action":"lower","duration":1.2,"actor":"벧세메스 사람들"}],"duration":8.2,"support":null,"ref":"사무엘상 6:19-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-6-02",
+      "code": "1sa",
+      "chapter": 6,
+      "title": "기럇여아림으로",
+      "actors": [
+        "벧세메스 사람들"
+      ],
+      "object": "ark-covenant",
+      "ref": "사무엘상 6:21",
+      "verseNumbers": [
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 벧세메스 사람들이 기럇여아림 주민에게 전령을 보내 블레셋이 궤를 돌려보냈으니 와서 가져가라고 해요."
+      ],
+      "study": "벧세메스 사람들이 기럇여아림 주민에게 전령을 보내 블레셋이 궤를 돌려보냈으니 와서 가져가라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"벧세메스 사람들","target":null,"mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"ark-covenant","beats":[{"action":"look","duration":1,"actor":"벧세메스 사람들"},{"action":"signal","duration":1.2,"actor":"벧세메스 사람들"},{"action":"brace","duration":1.5,"actor":"벧세메스 사람들"},{"action":"run","duration":1.8,"actor":"벧세메스 사람들"},{"action":"halt","duration":1.5,"actor":"벧세메스 사람들"},{"action":"lift","duration":1.2,"actor":"벧세메스 사람들"}],"duration":8.2,"support":null,"ref":"사무엘상 6:21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-8-01",
+      "code": "1sa",
+      "chapter": 8,
+      "title": "사무엘의 아들들",
+      "actors": [
+        "사무엘",
+        "요엘"
+      ],
+      "object": "house",
+      "ref": "사무엘상 8:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 늙은 사무엘이 아들 요엘과 아비야를 브엘세바의 사사로 세우지만, 아들들이 이익을 따라 뇌물을 받고 재판을 굽게 해요."
+      ],
+      "study": "늙은 사무엘이 아들 요엘과 아비야를 브엘세바의 사사로 세우지만, 아들들이 이익을 따라 뇌물을 받고 재판을 굽게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"listen","lead":"사무엘","target":"요엘","mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"사무엘"},{"action":"turn","duration":1.2,"actor":"사무엘"},{"action":"speak","duration":1.5,"actor":"사무엘"},{"action":"point","duration":1.8,"actor":"사무엘"},{"action":"listen","duration":1.5,"actor":"사무엘"},{"action":"lower","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 8:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-9-01",
+      "code": "1sa",
+      "chapter": 9,
+      "title": "사울과 기스",
+      "actors": [
+        "사울",
+        "기스"
+      ],
+      "object": "donkey",
+      "ref": "사무엘상 9:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 베냐민 사람 기스의 아들 사울은 잘생기고 누구보다 키가 컸어요."
+      ],
+      "study": "베냐민 사람 기스의 아들 사울은 잘생기고 누구보다 키가 컸어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"instruct","lead":"사울","target":"기스","mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"donkey","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 9:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-9-02",
+      "code": "1sa",
+      "chapter": 9,
+      "title": "선견자를 찾아 성으로",
+      "actors": [
+        "사울"
+      ],
+      "object": "donkey",
+      "ref": "사무엘상 9:11-14",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 성으로 올라가다 만난 소녀들이 선견자가 지금 산당 제사 때문에 성에 오셨다고 알려 주고, 사울이 올라가다 사무엘과 마주쳐요."
+      ],
+      "study": "성으로 올라가다 만난 소녀들이 선견자가 지금 산당 제사 때문에 성에 오셨다고 알려 주고, 사울이 올라가다 사무엘과 마주쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"사울","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"donkey","beats":[{"action":"gather","duration":1,"actor":"사울"},{"action":"carry","duration":1.2,"actor":"사울"},{"action":"place","duration":1.5,"actor":"사울"},{"action":"kneel","duration":1.8,"actor":"사울"},{"action":"pray","duration":1.5,"actor":"사울"},{"action":"bow","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 9:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-9-03",
+      "code": "1sa",
+      "chapter": 9,
+      "title": "지붕 위의 밤, 새벽의 말씀",
+      "actors": [
+        "사울"
+      ],
+      "object": "donkey",
+      "ref": "사무엘상 9:25-27",
+      "verseNumbers": [
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사무엘이 지붕에서 사울과 이야기를 나누고 새벽에 불러, 성 끝에서 사환을 먼저 보내고 하나님의 말씀을 들려주겠다고 해요."
+      ],
+      "study": "사무엘이 지붕에서 사울과 이야기를 나누고 새벽에 불러, 성 끝에서 사환을 먼저 보내고 하나님의 말씀을 들려주겠다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"listen","lead":"사울","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"donkey","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 9:25-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-10-01",
+      "code": "1sa",
+      "chapter": 10,
+      "title": "새 마음과 예언",
+      "actors": [
+        "사울"
+      ],
+      "object": "oil-vessel",
+      "ref": "사무엘상 10:9-13",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 돌아설 때 하나님이 새 마음을 주시고, 표징이 그날 다 이루어져 사울이 선지자들 사이에서 예언하자 사람들이 놀라요."
+      ],
+      "study": "사울이 돌아설 때 하나님이 새 마음을 주시고, 표징이 그날 다 이루어져 사울이 선지자들 사이에서 예언하자 사람들이 놀라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"vision","lead":"사울","target":null,"mode":"instruction","setting":"night","effect":"vision","emotion":"surprised","prop":"oil-vessel","beats":[{"action":"sit","duration":1,"actor":"사울"},{"action":"lie","duration":1.2,"actor":"사울"},{"action":"sleep","duration":1.5,"actor":"사울"},{"action":"look","duration":1.8,"actor":"사울"},{"action":"startle","duration":1.5,"actor":"사울"},{"action":"rise","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 10:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-13-01",
+      "code": "1sa",
+      "chapter": 13,
+      "title": "블레셋 대군",
+      "actors": [
+        "사울"
+      ],
+      "object": "sword",
+      "ref": "사무엘상 13:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 병거와 마병과 바닷가 모래 같은 군대가 믹마스에 진을 치자, 백성은 굴과 바위틈에 숨거나 요단 건너로 달아나요."
+      ],
+      "study": "병거와 마병과 바닷가 모래 같은 군대가 믹마스에 진을 치자, 백성은 굴과 바위틈에 숨거나 요단 건너로 달아나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"사울","target":null,"mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"sword","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"signal","duration":1.2,"actor":"사울"},{"action":"brace","duration":1.5,"actor":"사울"},{"action":"run","duration":1.8,"actor":"사울"},{"action":"halt","duration":1.5,"actor":"사울"},{"action":"lift","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 13:5-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-14-01",
+      "code": "1sa",
+      "chapter": 14,
+      "title": "사울의 나라와 집안",
+      "actors": [
+        "사울"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 14:47-52",
+      "verseNumbers": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 사방의 적을 쳐 이기고 아말렉에게서도 이스라엘을 건졌어요. 가족 이름이 소개되고, 늘 블레셋과 싸워 용사를 모아들였어요."
+      ],
+      "study": "사울이 사방의 적을 쳐 이기고 아말렉에게서도 이스라엘을 건졌어요. 가족 이름이 소개되고, 늘 블레셋과 싸워 용사를 모아들였어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"사울","target":null,"mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"signal","duration":1.2,"actor":"사울"},{"action":"brace","duration":1.5,"actor":"사울"},{"action":"run","duration":1.8,"actor":"사울"},{"action":"halt","duration":1.5,"actor":"사울"},{"action":"lift","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 14:47-52","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-16-01",
+      "code": "1sa",
+      "chapter": 16,
+      "title": "베들레헴으로",
+      "actors": [
+        "사무엘"
+      ],
+      "object": "oil-vessel",
+      "ref": "사무엘상 16:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울 때문에 슬퍼하는 사무엘을 하나님이 베들레헴으로 보내세요. 사울을 두려워하자 제사를 드리러 왔다고 하라고 길을 열어 주세요. 장로들이 떨며 맞아요."
+      ],
+      "study": "사울 때문에 슬퍼하는 사무엘을 하나님이 베들레헴으로 보내세요. 사울을 두려워하자 제사를 드리러 왔다고 하라고 길을 열어 주세요. 장로들이 떨며 맞아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"사무엘","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"oil-vessel","beats":[{"action":"gather","duration":1,"actor":"사무엘"},{"action":"carry","duration":1.2,"actor":"사무엘"},{"action":"place","duration":1.5,"actor":"사무엘"},{"action":"kneel","duration":1.8,"actor":"사무엘"},{"action":"pray","duration":1.5,"actor":"사무엘"},{"action":"bow","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 16:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-16-02",
+      "code": "1sa",
+      "chapter": 16,
+      "title": "중심을 보시는 하나님",
+      "actors": [
+        "사무엘"
+      ],
+      "object": "oil-vessel",
+      "ref": "사무엘상 16:6-10",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 키 큰 엘리압을 보고 그가 왕이라 여긴 사무엘에게, 하나님은 사람은 겉모습을 보지만 하나님은 마음을 보신다고 하세요. 일곱 아들이 지나가도 택하지 않으셨어요."
+      ],
+      "study": "키 큰 엘리압을 보고 그가 왕이라 여긴 사무엘에게, 하나님은 사람은 겉모습을 보지만 하나님은 마음을 보신다고 하세요. 일곱 아들이 지나가도 택하지 않으셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"invest","lead":"사무엘","target":null,"mode":"instruction","setting":"court","effect":"crown","emotion":"joy","prop":"oil-vessel","beats":[{"action":"bow","duration":1,"actor":"사무엘"},{"action":"kneel","duration":1.2,"actor":"사무엘"},{"action":"receive","duration":1.5,"actor":"사무엘"},{"action":"wear","duration":1.8,"actor":"사무엘"},{"action":"rise","duration":1.5,"actor":"사무엘"},{"action":"bow","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 16:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-17-01",
+      "code": "1sa",
+      "chapter": 17,
+      "title": "누구의 아들인가",
+      "actors": [
+        "사울",
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 17:55-58",
+      "verseNumbers": [
+        55,
+        56,
+        57,
+        58
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 아브넬에게 이 소년이 누구의 아들이냐고 묻고, 아브넬이 머리를 든 다윗을 데려오자 다윗은 이새의 아들이라고 답해요."
+      ],
+      "study": "사울이 아브넬에게 이 소년이 누구의 아들이냐고 묻고, 아브넬이 머리를 든 다윗을 데려오자 다윗은 이새의 아들이라고 답해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"bury","lead":"사울","target":"다윗","mode":"illustration","setting":"courtyard","effect":"bury","emotion":"sad","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"사울"},{"action":"carry","duration":1.2,"actor":"사울"},{"action":"bend","duration":1.5,"actor":"사울"},{"action":"bury","duration":1.8,"actor":"사울"},{"action":"lower","duration":1.5,"actor":"사울"},{"action":"rise","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 17:55-58","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-18-01",
+      "code": "1sa",
+      "chapter": 18,
+      "title": "메랍을 거둔 사울",
+      "actors": [
+        "사울"
+      ],
+      "object": "sword",
+      "ref": "사무엘상 18:17-19",
+      "verseNumbers": [
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 큰딸 메랍을 주겠다며 블레셋과 싸우게 하지만, 정작 때가 되자 아드리엘에게 줘 버려요."
+      ],
+      "study": "사울이 큰딸 메랍을 주겠다며 블레셋과 싸우게 하지만, 정작 때가 되자 아드리엘에게 줘 버려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"사울","target":null,"mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"sword","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"signal","duration":1.2,"actor":"사울"},{"action":"brace","duration":1.5,"actor":"사울"},{"action":"run","duration":1.8,"actor":"사울"},{"action":"halt","duration":1.5,"actor":"사울"},{"action":"lift","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 18:17-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-18-02",
+      "code": "1sa",
+      "chapter": 18,
+      "title": "미갈을 미끼로",
+      "actors": [
+        "사울",
+        "다윗"
+      ],
+      "object": "sword",
+      "ref": "사무엘상 18:20-27",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 미갈이 다윗을 사랑하자 사울이 신부값으로 블레셋 사람 포피 백 개를 요구해요. 다윗이 이백 개를 가져오자 사울이 미갈을 아내로 줘요."
+      ],
+      "study": "미갈이 다윗을 사랑하자 사울이 신부값으로 블레셋 사람 포피 백 개를 요구해요. 다윗이 이백 개를 가져오자 사울이 미갈을 아내로 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"사울","target":"다윗","mode":"illustration","setting":"hills","effect":"signal","emotion":"determined","prop":"sword","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"signal","duration":1.2,"actor":"사울"},{"action":"brace","duration":1.5,"actor":"사울"},{"action":"run","duration":1.8,"actor":"사울"},{"action":"halt","duration":1.5,"actor":"사울"},{"action":"lift","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 18:20-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-18-03",
+      "code": "1sa",
+      "chapter": 18,
+      "title": "더 두려워한 사울",
+      "actors": [
+        "사울",
+        "다윗"
+      ],
+      "object": "sword",
+      "ref": "사무엘상 18:28-30",
+      "verseNumbers": [
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 다윗과 함께하심을 본 사울이 더 두려워하며 평생 원수가 돼요. 다윗의 이름은 더 귀해져요."
+      ],
+      "study": "하나님이 다윗과 함께하심을 본 사울이 더 두려워하며 평생 원수가 돼요. 다윗의 이름은 더 귀해져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"사울","target":"다윗","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 18:28-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-19-01",
+      "code": "1sa",
+      "chapter": 19,
+      "title": "라마의 사무엘",
+      "actors": [
+        "사울",
+        "사무엘"
+      ],
+      "object": "house",
+      "ref": "사무엘상 19:18-20",
+      "verseNumbers": [
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 사무엘에게 도망쳐 모든 일을 알리고 나욧에서 지내요. 사울이 보낸 첫 전령들이 선지자 무리를 보고 예언해요."
+      ],
+      "study": "다윗이 사무엘에게 도망쳐 모든 일을 알리고 나욧에서 지내요. 사울이 보낸 첫 전령들이 선지자 무리를 보고 예언해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"flee","lead":"사울","target":"사무엘","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"startle","duration":1.2,"actor":"사울"},{"action":"turn","duration":1.5,"actor":"사울"},{"action":"run","duration":1.8,"actor":"사울"},{"action":"run","duration":1.5,"actor":"사울"},{"action":"look","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 19:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-20-01",
+      "code": "1sa",
+      "chapter": 20,
+      "title": "죽음과 한 걸음",
+      "actors": [
+        "다윗",
+        "요나단"
+      ],
+      "object": "table",
+      "ref": "사무엘상 20:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 도망쳐 와 내 죄가 무엇이냐고 하자 요나단은 믿지 못하지만 도우려 해요. 둘은 초하루 잔치 때 사울의 마음을 알아볼 계획을 세워요."
+      ],
+      "study": "다윗이 도망쳐 와 내 죄가 무엇이냐고 하자 요나단은 믿지 못하지만 도우려 해요. 둘은 초하루 잔치 때 사울의 마음을 알아볼 계획을 세워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"요나단","mode":"instruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"table","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 20:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-22-01",
+      "code": "1sa",
+      "chapter": 22,
+      "title": "아히멜렉을 심문함",
+      "actors": [
+        "사울",
+        "아히멜렉"
+      ],
+      "object": "ephod",
+      "ref": "사무엘상 22:11-15",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 놉의 제사장들을 불러 다윗과 짰다고 몰아세워요. 아히멜렉은 다윗만큼 충성스러운 신하가 없고 자기는 속사정을 몰랐다고 변호해요."
+      ],
+      "study": "사울이 놉의 제사장들을 불러 다윗과 짰다고 몰아세워요. 아히멜렉은 다윗만큼 충성스러운 신하가 없고 자기는 속사정을 몰랐다고 변호해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"사울","target":"아히멜렉","mode":"illustration","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"ephod","beats":[{"action":"gather","duration":1,"actor":"사울"},{"action":"carry","duration":1.2,"actor":"사울"},{"action":"place","duration":1.5,"actor":"사울"},{"action":"kneel","duration":1.8,"actor":"사울"},{"action":"pray","duration":1.5,"actor":"사울"},{"action":"bow","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 22:11-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-24-01",
+      "code": "1sa",
+      "chapter": 24,
+      "title": "울며 인정한 사울",
+      "actors": [
+        "사울"
+      ],
+      "object": "robe",
+      "ref": "사무엘상 24:16-19",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 이것이 네 목소리냐 하며 소리 내어 울어요. 네가 나보다 의롭다고 인정하며 하나님이 선으로 갚아 주시기를 빌어요."
+      ],
+      "study": "사울이 이것이 네 목소리냐 하며 소리 내어 울어요. 네가 나보다 의롭다고 인정하며 하나님이 선으로 갚아 주시기를 빌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"사울","target":null,"mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"robe","beats":[{"action":"startle","duration":1,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"},{"action":"kneel","duration":1.5,"actor":"사울"},{"action":"cover-mouth","duration":1.8,"actor":"사울"},{"action":"mourn","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 24:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-25-01",
+      "code": "1sa",
+      "chapter": 25,
+      "title": "사무엘의 죽음",
+      "actors": [
+        "다윗",
+        "사무엘"
+      ],
+      "object": "water-supply",
+      "ref": "사무엘상 25:1",
+      "verseNumbers": [
+        1
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 선지자 사무엘이 죽자 온 이스라엘이 모여 슬피 울고 라마에 장사해요. 다윗은 바란 광야로 내려가요."
+      ],
+      "study": "선지자 사무엘이 죽자 온 이스라엘이 모여 슬피 울고 라마에 장사해요. 다윗은 바란 광야로 내려가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"사무엘","mode":"instruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"water-supply","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 25:1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-25-02",
+      "code": "1sa",
+      "chapter": 25,
+      "title": "다윗의 정중한 부탁",
+      "actors": [
+        "다윗",
+        "나발"
+      ],
+      "object": "water-supply",
+      "ref": "사무엘상 25:4-8",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 나발의 양털 깎는 소식을 듣고 소년 열 명을 보내요. 목자들을 지켜 준 일을 말하며 잔칫날에 가진 것을 나눠 달라고 청해요."
+      ],
+      "study": "다윗이 나발의 양털 깎는 소식을 듣고 소년 열 명을 보내요. 목자들을 지켜 준 일을 말하며 잔칫날에 가진 것을 나눠 달라고 청해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"instruct","lead":"다윗","target":"나발","mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 25:4-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-25-03",
+      "code": "1sa",
+      "chapter": 25,
+      "title": "하인의 귀띔",
+      "actors": [
+        "아비가일",
+        "다윗"
+      ],
+      "object": "water-supply",
+      "ref": "사무엘상 25:14-17",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나발의 하인이 아비가일에게 다윗의 사람들이 들에서 담장이 되어 주었는데 주인이 모욕했다며 큰 해가 닥칠 거라고 알려요."
+      ],
+      "study": "나발의 하인이 아비가일에게 다윗의 사람들이 들에서 담장이 되어 주었는데 주인이 모욕했다며 큰 해가 닥칠 거라고 알려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"instruct","lead":"아비가일","target":"다윗","mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"아비가일"},{"action":"turn","duration":1.2,"actor":"아비가일"},{"action":"speak","duration":1.5,"actor":"아비가일"},{"action":"point","duration":1.8,"actor":"아비가일"},{"action":"listen","duration":1.5,"actor":"아비가일"},{"action":"lower","duration":1.2,"actor":"아비가일"}],"duration":8.2,"support":null,"ref":"사무엘상 25:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-25-04",
+      "code": "1sa",
+      "chapter": 25,
+      "title": "다윗의 찬송",
+      "actors": [
+        "아비가일",
+        "다윗"
+      ],
+      "object": "water-supply",
+      "ref": "사무엘상 25:32-35",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 아비가일을 보내신 하나님을 찬송하고 그 지혜를 칭찬하며 피 흘리는 일을 막아 준 것에 복을 빌어요. 선물을 받고 평안히 돌려보내요."
+      ],
+      "study": "다윗이 아비가일을 보내신 하나님을 찬송하고 그 지혜를 칭찬하며 피 흘리는 일을 막아 준 것에 복을 빌어요. 선물을 받고 평안히 돌려보내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"praise","lead":"아비가일","target":"다윗","mode":"instruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"water-supply","beats":[{"action":"lift","duration":1,"actor":"아비가일"},{"action":"sway","duration":1.2,"actor":"아비가일"},{"action":"step","duration":1.5,"actor":"아비가일"},{"action":"sway","duration":1.8,"actor":"아비가일"},{"action":"step","duration":1.5,"actor":"아비가일"},{"action":"bow","duration":1.2,"actor":"아비가일"}],"duration":8.2,"support":null,"ref":"사무엘상 25:32-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-26-01",
+      "code": "1sa",
+      "chapter": 26,
+      "title": "다윗의 호소",
+      "actors": [
+        "다윗",
+        "사울"
+      ],
+      "object": "spear",
+      "ref": "사무엘상 26:17-20",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 다윗의 목소리를 알아듣자 다윗이 왜 쫓으시느냐 묻고, 충동질하는 사람들을 하나님께 맡기며 여호와 앞에서 멀리 떨어져 죽게 하지 마시라고 호소해요."
+      ],
+      "study": "사울이 다윗의 목소리를 알아듣자 다윗이 왜 쫓으시느냐 묻고, 충동질하는 사람들을 하나님께 맡기며 여호와 앞에서 멀리 떨어져 죽게 하지 마시라고 호소해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"bury","lead":"다윗","target":"사울","mode":"illustration","setting":"courtyard","effect":"bury","emotion":"sad","prop":"spear","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"carry","duration":1.2,"actor":"다윗"},{"action":"bend","duration":1.5,"actor":"다윗"},{"action":"bury","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"rise","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 26:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-28-01",
+      "code": "1sa",
+      "chapter": 28,
+      "title": "사무엘의 선고",
+      "actors": [
+        "사울",
+        "사무엘"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 28:15-19",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울이 하소연하자 사무엘은 하나님이 너의 대적이 되셨다며 나라가 다윗에게 갔고 내일 너와 네 아들들이 나와 함께 있을 것이라고 알려요."
+      ],
+      "study": "사울이 하소연하자 사무엘은 하나님이 너의 대적이 되셨다며 나라가 다윗에게 갔고 내일 너와 네 아들들이 나와 함께 있을 것이라고 알려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"사울","target":"사무엘","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 28:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-30-01",
+      "code": "1sa",
+      "chapter": 30,
+      "title": "브솔 시내의 이백 명",
+      "actors": [
+        "다윗"
+      ],
+      "object": "water",
+      "ref": "사무엘상 30:9-10",
+      "verseNumbers": [
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗과 육백 명이 브솔 시내에 이르렀을 때 너무 지친 이백 명은 건너지 못하고 남고, 다윗은 사백 명과 계속 쫓아가요."
+      ],
+      "study": "다윗과 육백 명이 브솔 시내에 이르렀을 때 너무 지친 이백 명은 건너지 못하고 남고, 다윗은 사백 명과 계속 쫓아가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 사건 흐름을 설명하는 장면이에요. 구체적인 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"instruct","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"water","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 30:9-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-review-31-01",
+      "code": "1sa",
+      "chapter": 31,
+      "title": "성읍을 버린 이스라엘",
+      "actors": [
+        "사울",
+        "블레셋 사람들"
+      ],
+      "object": "house",
+      "ref": "사무엘상 31:7",
+      "verseNumbers": [
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 골짜기 건너편과 요단 건너편의 이스라엘 사람들이 군대의 도망과 사울의 죽음을 보고 성읍을 버리고 도망쳐요. 블레셋 사람들이 와서 살아요."
+      ],
+      "study": "골짜기 건너편과 요단 건너편의 이스라엘 사람들이 군대의 도망과 사울의 죽음을 보고 성읍을 버리고 도망쳐요. 블레셋 사람들이 와서 살아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁·죽음의 결과를 그래픽하게 재현하지 않고 인물의 반응과 장소·소품을 중심으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"사울","target":"블레셋 사람들","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"house","beats":[{"action":"startle","duration":1,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"},{"action":"kneel","duration":1.5,"actor":"사울"},{"action":"cover-mouth","duration":1.8,"actor":"사울"},{"action":"mourn","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 31:7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
