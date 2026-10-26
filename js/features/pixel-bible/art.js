@@ -286,7 +286,10 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
 
   if(o.kind==='catalog'){
     const seed=[...originalKind].reduce((n,c)=>n+c.charCodeAt(0),0),color=['#ad8e65','#8d9e9a','#c4a76a','#a98b86'][seed%4];
-    if(originalKind==='fleece'){
+    if(originalKind==='idol'){
+      r(-10,5,20,4,O);r(-8,3,16,2,'#927341');r(-3,-14,6,17,O);r(-2,-12,4,14,'#d1ae58');r(-6,-10,3,3,'#d1ae58');r(3,-10,3,3,'#d1ae58');r(-6,-8,2,2,O);r(4,-8,2,2,O);r(-7,-6,4,2,'#d1ae58');r(3,-6,4,2,'#d1ae58');r(-2,-19,4,5,O);r(-1,-18,2,3,'#d1ae58');
+    }
+    else if(originalKind==='fleece'){
       r(-10,-3,20,8,O);r(-9,-5,18,9,'#e9e2d1');r(-7,-9,5,8,'#f5f0e4');r(-2,-11,6,9,'#f5f0e4');r(4,-9,5,8,'#f5f0e4');r(8,-5,2,6,'#ddd4c2');
       r(-6,-2,12,2,'#d5cbb7');
     }

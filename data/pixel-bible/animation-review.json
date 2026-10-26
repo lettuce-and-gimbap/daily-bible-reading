@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "rendererSha256": "e8f54682b3adebcfc253d74879b97ba37a0e09cf9932dcf52cde6ccb867a88cf",
+  "rendererSha256": "23460f931ff08620f36aa777b9514c7a01478bfd10de427b9ad235f1c4ad37da",
   "scope": "현재 등록된 구약 사건. 모든 성경 사건을 망라한다는 뜻이 아님.",
   "books": [
     {
@@ -128,7 +128,7 @@
     },
     {
       "code": "2sa",
-      "payloadSha256": "779b78e8e3f489865940aed0c8b44e8c0f47479db9c77d5072e317df712727d5",
+      "payloadSha256": "8d09ae89fc54ce5ef79b6311d0ddc5f361f644028008f50f478d2a072f2f1099",
       "scenes": 90,
       "existing": 90,
       "restored": 0,
@@ -142,14 +142,15 @@
     },
     {
       "code": "1ki",
-      "payloadSha256": "709c443214881c60ac8a3271366444a0bf8216b8ad32df73058c83f9f502f568",
-      "scenes": 36,
-      "existing": 36,
+      "payloadSha256": "9cd254dbbc0358943c7da910a6bd25f4f6abc2b5e76ad32f8312edc17ee87307",
+      "scenes": 65,
+      "existing": 65,
       "restored": 0,
       "corrected": 9,
-      "planned": 36,
+      "planned": 65,
       "modes": {
-        "reconstruction": 36
+        "reconstruction": 64,
+        "vision": 1
       },
       "status": "authored-awaiting-browser-review"
     },

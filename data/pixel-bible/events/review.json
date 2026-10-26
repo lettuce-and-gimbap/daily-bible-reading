@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 803,
+    "scenesInFiles": 832,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 89
+    "curatedSupplementalScenes": 118
   },
   "books": [
     {
@@ -115,9 +115,10 @@
     {
       "code": "1ki",
       "chapters": 22,
-      "scenes": 36,
+      "scenes": 65,
       "sourceMatchedSceneCandidates": 36,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 29
     },
     {
       "code": "1ch",
@@ -9818,7 +9819,8 @@
           "title": "나단과 밧세바",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -9847,7 +9849,8 @@
           "title": "시므이의 최후",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "1ki",
@@ -9873,7 +9876,8 @@
           "title": "두 여인의 재판",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1ki",
@@ -9957,7 +9961,8 @@
           "title": "두 그룹과 문",
           "reason": "no-source-confirmed-actor"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -9982,7 +9987,8 @@
           "title": "놋 바다와 물두멍",
           "reason": "no-source-confirmed-actor"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10003,7 +10009,8 @@
           "title": "봉헌 기도",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10034,7 +10041,8 @@
           "title": "성읍 건축과 역군",
           "reason": "no-source-confirmed-actor"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10060,7 +10068,8 @@
           "title": "애굽에서 들인 말",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10093,7 +10102,8 @@
           "title": "솔로몬의 죽음",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "1ki",
@@ -10122,7 +10132,8 @@
           "title": "금송아지 둘",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1ki",
@@ -10152,7 +10163,8 @@
           "title": "사자에게 죽음",
           "reason": "no-source-confirmed-actor"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "1ki",
@@ -10182,7 +10194,8 @@
           "title": "아비야의 죽음",
           "reason": "no-source-confirmed-actor"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10211,7 +10224,8 @@
           "title": "나답과 바아사",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10240,7 +10254,8 @@
           "title": "아합과 이세벨",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10265,7 +10280,8 @@
           "title": "살아난 아들",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10286,7 +10302,8 @@
           "title": "엘리야와 오바댜",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10331,7 +10348,8 @@
           "title": "놓아 준 벤하닷",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1ki",
@@ -10356,7 +10374,8 @@
           "title": "엘리야의 심판 선포",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1ki",
@@ -10385,7 +10404,8 @@
           "title": "여호사밧과 아하시야",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1ch",
@@ -28152,6 +28172,10 @@
       {
         "book": "2sa",
         "scenesAdded": 26
+      },
+      {
+        "book": "1ki",
+        "scenesAdded": 29
       }
     ]
   }
