@@ -41,7 +41,7 @@ import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
 import { scopeChapterSummary } from './qt-scope.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
-import { ambientSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
+import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
@@ -206,17 +206,18 @@ export async function mountPixelWorld(shell, options) {
   const info = shell.querySelector(".pb-world-info");
   const overlay = shell.querySelector(".pb-event"), eventCard = shell.querySelector(".pb-event-card");
   const speechElement=shell.querySelector('.pb-speech');
-  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null;
+  const speech=new SpeechDirector({now:performance.now()});let shownSpeech=null,speechWidth=0,speechHeight=0,pendingTalk=null,manualSpeechUntil=0;
   const encounters=new EncounterDirector(chapterData,dialogueContext,{maxActive:1});let encounterLines=[];const encounterBubbles=new Map();
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
-  function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
+  function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';manualSpeechUntil=0;cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function dismissAllBubbles(){hideSpeech();encounters.clear();encounterLines=[];for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}encounterBubbles.clear();}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
   function updateSpeech(now){
     const enabled=ambientSpeechAllowed(encounterLines,!paused&&!activeEvent&&!pendingEvent&&!drag?.active&&!objectHold?.active&&!placing&&!removing&&!shell.querySelector('.pb-design,.pb-scripture'));
+    const manualActive=manualSpeechAllowed(speech.current,manualSpeechUntil,now);
     const ready=!speech.current&&!pendingTalk&&now>=speech.nextAt;
     let current=null;
-    if(!enabled){cancelTalk();speech.tick(now,[],false);}
+    if(!enabled&&!manualActive){cancelTalk();speech.tick(now,[],false);}
     else if(pendingTalk){
       const talk=pendingTalk;
       if(now>talk.deadline){cancelTalk();speech.dismiss(now);}
@@ -257,6 +258,7 @@ export async function mountPixelWorld(shell, options) {
         speechWidth=speechElement.offsetWidth;speechHeight=speechElement.offsetHeight;
       }
     }
+    if(!speech.current||now>=manualSpeechUntil)manualSpeechUntil=0;
   }
   async function openSpeechPassage(reference=shownSpeech?.ref,terms=contextTerms(shownSpeech)){
     const parsed=parseReference(reference);if(!parsed)return;
@@ -358,7 +360,9 @@ export async function mountPixelWorld(shell, options) {
   }
   function positionSpeech(){
     if(!shownSpeech||speechElement.hidden)return;
-    placeAboveHead(speechElement,shownSpeech.speaker,canvasLayoutRect(),view(),speechElement.offsetWidth,speechElement.offsetHeight);
+    const stage=shell.querySelector('.pb-world-stage'),bounds=stage.getBoundingClientRect();
+    const occupied=[...encounterBubbles.values()].filter(el=>el.isConnected&&!el.hidden&&el.style.visibility!=='hidden').map(el=>{const r=el.getBoundingClientRect();return {left:r.left-bounds.left,right:r.right-bounds.left,top:r.top-bounds.top,bottom:r.bottom-bounds.top};});
+    placeAboveHead(speechElement,shownSpeech.speaker,canvasLayoutRect(),view(),speechElement.offsetWidth,speechElement.offsetHeight,occupied);
   }
   function canvasLayoutRect(){const r=canvas.getBoundingClientRect();return {left:0,top:0,width:canvas.offsetWidth||r.width,height:canvas.offsetHeight||r.height};}
   let backgroundKey=defaultBackground(requested);
@@ -498,8 +502,9 @@ export async function mountPixelWorld(shell, options) {
     if(!lines.length){hideSpeech();return;}
     // 클릭 요청은 같은 대사가 연달아 나와도 허용한다.
     cancelTalk();
-    speech.interrupt(lines[Math.floor(Math.random()*lines.length)],performance.now());
-    updateSpeech(performance.now());positionSpeech();
+    const now=performance.now();manualSpeechUntil=now+speech.duration;
+    speech.interrupt(lines[Math.floor(Math.random()*lines.length)],now);
+    updateSpeech(now);positionSpeech();
   }
   function select(i, speakOnSelect=false) {
     selected = i;

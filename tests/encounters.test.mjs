@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {EncounterDirector,beside} from '../js/features/pixel-bible/encounters.js';
 import {buildChapterDialogue} from '../js/features/pixel-bible/chapter-dialogue.js';
-import {ambientSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
+import {ambientSpeechAllowed,manualSpeechAllowed,SpeechDirector} from '../js/features/pixel-bible/dialogue.js';
 import {hangingPose} from '../js/features/pixel-bible/motion.js';
 import {relationshipLines} from '../js/features/pixel-bible/relationship-lines.js';
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
@@ -103,8 +103,12 @@ test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯�
  const related=director.tick(0,npcs);assert.equal(ambient.tick(1,[],ambientSpeechAllowed(related)),null);assert.equal(ambient.current,null);
  director.clear();director.context={people:[],relations:[]};
  const greeting=director.tick(2,npcs);assert.equal(greeting.length,1);assert.equal(greeting[0].origin,'general');assert.equal(greeting[0].ref,undefined);
- assert.equal(ambientSpeechAllowed(greeting),false);
+ assert.equal(ambientSpeechAllowed(greeting),true,'일상 인사에는 다른 인물의 일반 대사를 함께 허용');
+ assert.equal(ambientSpeechAllowed([{origin:'chapter-relation'}]),false,'본문 관계 특수 대사는 일반 대화와 겹치지 않음');
  assert.equal(ambientSpeechAllowed([]),true);
+ const clicked={text:'선택한 인물의 대사'};
+ assert.equal(manualSpeechAllowed(clicked,100,99),true,'사용자가 클릭한 대사는 특수 조우 중에도 유지');
+ assert.equal(manualSpeechAllowed(clicked,100,100),false,'수동 대사는 표시 시간이 끝나면 해제');
 });
 
 test('매달림은 정면 고정·여섯 도트 자세·인물별 팔다리 움직임을 갖는다',()=>{

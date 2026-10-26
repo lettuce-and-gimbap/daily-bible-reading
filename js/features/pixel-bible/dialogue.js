@@ -8,7 +8,10 @@ import { characterStyle } from './art.js';
 
 export { SOLO_DIALOGUE, PAIR_DIALOGUE };
 export const DIALOGUE_SOURCE_STATUS = { bible:'existing-summary-and-verse-references', hokma:'partially-reviewed-uploaded-hokma-notes', wording:'original-imagined-dialogue' };
-export const ambientSpeechAllowed=(interactionLines,enabled=true)=>enabled&&interactionLines.length===0;
+// Story/relationship encounters keep their dialogue focus. Casual greetings
+// may coexist with unrelated ambient speech.
+export const ambientSpeechAllowed=(interactionLines,enabled=true)=>enabled&&!(interactionLines||[]).some(line=>line.origin!=='general');
+export const manualSpeechAllowed=(speech,until,now)=>!!speech&&now<until;
 // 인물별 독백은 상징 대사다. 특정 장의 현재 심경을 복원했다는 뜻이 아니다.
 export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(chapters)) {
  // 관계 대사는 두 인물이 서로 8칸 이내에 있을 때만 후보가 된다.
