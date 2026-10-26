@@ -3081,6 +3081,188 @@
       "narrationOnly": true,
       "objectNote": "구출과 공동 분배를 보여주며 포로가 된 사람들을 재산처럼 다루지 않아요.",
       "animation": {"version":2,"motif":"distribute","lead":"다윗","target":"이집트 사람","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"water","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 30:11-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-11-0",
+      "code": "1sa",
+      "chapter": 11,
+      "title": "길갈에서 다시 세워진 왕권",
+      "actors": [
+        "사울",
+        "사무엘",
+        "이스라엘 자손",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 11:12-15",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야베스의 구원 뒤 백성은 사울을 반대하던 이들을 처벌하려 하지만, 사울은 구원의 공을 하나님께 돌리며 막아요. 사무엘은 길갈에서 왕권을 새롭게 세우고 백성은 제사를 드리며 기뻐해요."
+      ],
+      "study": "야베스의 구원 뒤 백성은 사울을 반대하던 이들을 처벌하려 하지만, 사울은 구원의 공을 하나님께 돌리며 막아요. 사무엘은 길갈에서 왕권을 새롭게 세우고 백성은 제사를 드리며 기뻐해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"crown","lead":"사울","target":"사무엘","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"사울"},{"action":"kneel","duration":1.2,"actor":"사울"},{"action":"receive","duration":1.5,"actor":"사울"},{"action":"wear","duration":1.8,"actor":"사울"},{"action":"rise","duration":1.5,"actor":"사울"},{"action":"bow","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 11:12-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-12-0",
+      "code": "1sa",
+      "chapter": 12,
+      "title": "두려워 말고 여호와를 섬기라",
+      "actors": [
+        "사무엘",
+        "이스라엘 자손",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 12:20-25",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 우레와 비 앞에서 백성이 두려워하자 사무엘은 돌이켜 하나님을 섬기라고 권해요. 그는 백성을 위해 기도를 멈추지 않겠다고 약속하면서도 왕과 백성에게 불순종의 결과를 경고해요."
+      ],
+      "study": "우레와 비 앞에서 백성이 두려워하자 사무엘은 돌이켜 하나님을 섬기라고 권해요. 그는 백성을 위해 기도를 멈추지 않겠다고 약속하면서도 왕과 백성에게 불순종의 결과를 경고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"사무엘","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사무엘"},{"action":"turn","duration":1.2,"actor":"사무엘"},{"action":"speak","duration":1.5,"actor":"사무엘"},{"action":"point","duration":1.8,"actor":"사무엘"},{"action":"listen","duration":1.5,"actor":"사무엘"},{"action":"lower","duration":1.2,"actor":"사무엘"}],"duration":8.2,"support":null,"ref":"사무엘상 12:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-13-0",
+      "code": "1sa",
+      "chapter": 13,
+      "title": "블레셋 약탈대의 진출",
+      "actors": [
+        "사울",
+        "요나단",
+        "블레셋 약탈대",
+        "블레셋 사람들"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 13:16-18",
+      "verseNumbers": [
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울과 요나단의 군대가 게바에 머무는 동안 블레셋 진영에서 세 무리의 약탈대가 서로 다른 길로 퍼져 나가요. 이스라엘이 맞닥뜨린 군사적 압박을 보여 주는 장면이에요."
+      ],
+      "study": "사울과 요나단의 군대가 게바에 머무는 동안 블레셋 진영에서 세 무리의 약탈대가 서로 다른 길로 퍼져 나가요. 이스라엘이 맞닥뜨린 군사적 압박을 보여 주는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"사울","target":"요나단","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"사울"},{"action":"push","duration":1.2,"actor":"사울"},{"action":"brace","duration":1.5,"actor":"사울"},{"action":"recoil","duration":1.8,"actor":"사울"},{"action":"retreat","duration":1.5,"actor":"사울"},{"action":"mourn","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 13:16-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-15-0",
+      "code": "1sa",
+      "chapter": 15,
+      "title": "사울의 변명과 아각의 처분",
+      "actors": [
+        "사울",
+        "사무엘",
+        "아각",
+        "이스라엘 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 15:24-35",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울은 백성을 두려워했다고 고백하면서도 사람들 앞에서 체면을 세워 달라 청해요. 사무엘은 찢어진 옷자락을 왕권 상실의 표징으로 선언하고 아각을 처형한 뒤 사울과 갈라서며 슬퍼해요."
+      ],
+      "study": "사울은 백성을 두려워했다고 고백하면서도 사람들 앞에서 체면을 세워 달라 청해요. 사무엘은 찢어진 옷자락을 왕권 상실의 표징으로 선언하고 아각을 처형한 뒤 사울과 갈라서며 슬퍼해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"confess","lead":"사울","target":"사무엘","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"},{"action":"kneel","duration":1.5,"actor":"사울"},{"action":"speak","duration":1.8,"actor":"사울"},{"action":"pray","duration":1.5,"actor":"사울"},{"action":"bow","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 15:24-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-22-0",
+      "code": "1sa",
+      "chapter": 22,
+      "title": "사울의 의심과 신하들의 침묵",
+      "actors": [
+        "사울",
+        "사울의 신하들",
+        "도엑"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 22:6-8",
+      "verseNumbers": [
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사울은 창을 든 채 신하들을 모아 다윗을 도운 사람이 없느냐고 다그쳐요. 신하들은 침묵하고, 도엑의 고발로 이어질 불신과 공포의 분위기가 만들어져요."
+      ],
+      "study": "사울은 창을 든 채 신하들을 모아 다윗을 도운 사람이 없느냐고 다그쳐요. 신하들은 침묵하고, 도엑의 고발로 이어질 불신과 공포의 분위기가 만들어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"사울","target":"사울의 신하들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 22:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1sa-extra-28-0",
+      "code": "1sa",
+      "chapter": 28,
+      "title": "블레셋 진영 앞에서 두려워하는 사울",
+      "actors": [
+        "사울",
+        "사울의 신하들",
+        "블레셋 사람들",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘상 28:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 블레셋 군대가 이스라엘을 향해 진을 치자 사울은 두려움에 사로잡혀 하나님께 묻지만 응답을 얻지 못해요. 이 침묵이 그가 엔돌의 여인을 찾아가는 다음 사건의 배경이 돼요."
+      ],
+      "study": "블레셋 군대가 이스라엘을 향해 진을 치자 사울은 두려움에 사로잡혀 하나님께 묻지만 응답을 얻지 못해요. 이 침묵이 그가 엔돌의 여인을 찾아가는 다음 사건의 배경이 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"listen","lead":"사울","target":"사울의 신하들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"사울"},{"action":"turn","duration":1.2,"actor":"사울"},{"action":"speak","duration":1.5,"actor":"사울"},{"action":"point","duration":1.8,"actor":"사울"},{"action":"listen","duration":1.5,"actor":"사울"},{"action":"lower","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 28:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
