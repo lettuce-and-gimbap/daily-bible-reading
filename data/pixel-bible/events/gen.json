@@ -3021,6 +3021,60 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"형들","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.8,"actor":"요셉"},{"action":"bow","duration":1.5,"actor":"요셉"},{"action":"stand","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 50:15-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-11-0",
+      "code": "gen",
+      "chapter": 11,
+      "title": "시날 평지 사람들이 성과 탑을 쌓다",
+      "actors": [
+        "바벨 건축자들"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 11:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 한 언어를 쓰던 사람들이 시날 평지에 성과 탑을 쌓고 이름을 내며 흩어지지 않으려 해요. 집단의 계획과 벽돌을 굽고 쌓는 노동을 보여줘요."
+      ],
+      "study": "한 언어를 쓰던 사람들이 시날 평지에 성과 탑을 쌓고 이름을 내며 흩어지지 않으려 해요. 집단의 계획과 벽돌을 굽고 쌓는 노동을 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"바벨 건축자들","target":null,"mode":"illustration","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"바벨 건축자들"},{"action":"gather","duration":1.2,"actor":"바벨 건축자들"},{"action":"lift","duration":1.5,"actor":"바벨 건축자들"},{"action":"place","duration":1.8,"actor":"바벨 건축자들"},{"action":"hammer","duration":1.5,"actor":"바벨 건축자들"},{"action":"inspect","duration":1.2,"actor":"바벨 건축자들"}],"duration":8.2,"support":null,"ref":"창세기 11:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-11-1",
+      "code": "gen",
+      "chapter": 11,
+      "title": "하나님이 언어를 뒤섞어 사람들을 흩으시다",
+      "actors": [
+        "하나님",
+        "바벨 건축자들"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 11:5-9",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 사람들의 말을 서로 알아듣지 못하게 하시자 건축은 멈추고 사람들은 온 땅으로 흩어져요. 언어가 갈리고 공동체가 해체되는 일을 상징적으로 표현해요."
+      ],
+      "study": "하나님이 사람들의 말을 서로 알아듣지 못하게 하시자 건축은 멈추고 사람들은 온 땅으로 흩어져요. 언어가 갈리고 공동체가 해체되는 일을 상징적으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"divide","lead":"하나님","target":"바벨 건축자들","mode":"illustration","setting":"water","effect":"divide","emotion":"surprised","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"하나님"},{"action":"lift","duration":1.2,"actor":"하나님"},{"action":"windup","duration":1.5,"actor":"하나님"},{"action":"strike","duration":1.8,"actor":"하나님"},{"action":"recoil","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 11:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

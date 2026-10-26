@@ -804,6 +804,12 @@
     },
     "92": {
       "mode": "reconstruction"
+    },
+    "93": {
+      "mode": "illustration"
+    },
+    "94": {
+      "mode": "illustration"
     }
   },
   "exo": {
