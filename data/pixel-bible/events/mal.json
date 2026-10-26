@@ -26,7 +26,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"언약의 사자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"언약의 사자"},{"action":"read","duration":1.2,"actor":"언약의 사자"},{"action":"look","duration":1.5,"actor":"언약의 사자"},{"action":"point","duration":1.8,"actor":"언약의 사자"},{"action":"listen","duration":1.5,"actor":"언약의 사자"},{"action":"bow","duration":1.2,"actor":"언약의 사자"}],"duration":8.2,"support":null,"ref":"말라기 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "언약의 사자",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "언약의 사자"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "언약의 사자"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "언약의 사자"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "언약의 사자"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "언약의 사자"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "언약의 사자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 3:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-1-0",
@@ -59,7 +105,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"말라기","target":"이스라엘 백성","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"말라기"},{"action":"turn","duration":1.2,"actor":"말라기"},{"action":"speak","duration":1.5,"actor":"말라기"},{"action":"point","duration":1.8,"actor":"말라기"},{"action":"listen","duration":1.5,"actor":"말라기"},{"action":"lower","duration":1.2,"actor":"말라기"}],"duration":8.2,"support":null,"ref":"말라기 1:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "말라기",
+        "target": "이스라엘 백성",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "말라기"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "말라기"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "말라기"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "말라기"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "말라기"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "말라기"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 1:6-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-2-0",
@@ -91,7 +183,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"제사장들","target":"레위","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"제사장들"},{"action":"turn","duration":1.2,"actor":"제사장들"},{"action":"speak","duration":1.5,"actor":"제사장들"},{"action":"point","duration":1.8,"actor":"제사장들"},{"action":"listen","duration":1.5,"actor":"제사장들"},{"action":"lower","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"말라기 2:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "제사장들",
+        "target": "레위",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "제사장들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "제사장들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "제사장들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "제사장들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 2:1-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-2-1",
@@ -122,7 +260,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"남편들","target":"어려서 맞은 아내","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"남편들"},{"action":"turn","duration":1.2,"actor":"남편들"},{"action":"speak","duration":1.5,"actor":"남편들"},{"action":"point","duration":1.8,"actor":"남편들"},{"action":"listen","duration":1.5,"actor":"남편들"},{"action":"lower","duration":1.2,"actor":"남편들"}],"duration":8.2,"support":null,"ref":"말라기 2:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "남편들",
+        "target": "어려서 맞은 아내",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "남편들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "남편들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "남편들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "남편들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "남편들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "남편들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 2:10-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-3-0",
@@ -152,7 +336,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"instruct","lead":"야곱의 자손","target":"과부와 고아와 품꾼","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱의 자손"},{"action":"turn","duration":1.2,"actor":"야곱의 자손"},{"action":"speak","duration":1.5,"actor":"야곱의 자손"},{"action":"point","duration":1.8,"actor":"야곱의 자손"},{"action":"listen","duration":1.5,"actor":"야곱의 자손"},{"action":"lower","duration":1.2,"actor":"야곱의 자손"}],"duration":8.2,"support":null,"ref":"말라기 3:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "instruct",
+        "lead": "야곱의 자손",
+        "target": "과부와 고아와 품꾼",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "야곱의 자손"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "야곱의 자손"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "야곱의 자손"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "야곱의 자손"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "야곱의 자손"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "야곱의 자손"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 3:6-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-3-1",
@@ -180,7 +410,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"write","lead":"여호와를 경외하는 자들","target":null,"mode":"illustration","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"여호와를 경외하는 자들"},{"action":"grasp","duration":1.2,"actor":"여호와를 경외하는 자들"},{"action":"open","duration":1.5,"actor":"여호와를 경외하는 자들"},{"action":"read","duration":1.8,"actor":"여호와를 경외하는 자들"},{"action":"write","duration":1.5,"actor":"여호와를 경외하는 자들"},{"action":"place","duration":1.2,"actor":"여호와를 경외하는 자들"}],"duration":8.2,"support":null,"ref":"말라기 3:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "write",
+        "lead": "여호와를 경외하는 자들",
+        "target": null,
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "여호와를 경외하는 자들"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "여호와를 경외하는 자들"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "여호와를 경외하는 자들"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "여호와를 경외하는 자들"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "여호와를 경외하는 자들"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "여호와를 경외하는 자들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 3:13-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-mal-extra-4-0",
@@ -211,7 +487,195 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"모세","target":"엘리야","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"bless","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"말라기 4:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "모세",
+        "target": "엘리야",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "모세"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "모세"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "모세"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "모세"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "모세"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "모세"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 4:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mal-review-01-01",
+      "code": "mal",
+      "chapter": 1,
+      "title": "어떻게 사랑하셨나이까",
+      "actors": [
+        "야곱"
+      ],
+      "object": "field",
+      "ref": "말라기 1:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 내가 너희를 사랑했다고 하시자 백성이 어떻게냐고 물어요. 하나님은 에서 대신 야곱을 택하신 것과 에돔 땅이 황폐해진 것을 보여 주세요."
+      ],
+      "study": "하나님이 내가 너희를 사랑했다고 하시자 백성이 어떻게냐고 물어요. 하나님은 에서 대신 야곱을 택하신 것과 에돔 땅이 황폐해진 것을 보여 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "야곱",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "field",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "야곱"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "야곱"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "야곱"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "야곱"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "야곱"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "야곱"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 1:1-5",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-mal-review-02-17",
+      "code": "mal",
+      "chapter": 2,
+      "title": "정의의 하나님이 어디",
+      "actors": [
+        "제사장들"
+      ],
+      "object": "scroll",
+      "ref": "말라기 2:17",
+      "verseNumbers": [
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 악인이 하나님 눈에 좋아 보인다거나 정의의 하나님이 어디 있느냐는 말은 하나님을 괴롭게 했어요."
+      ],
+      "study": "악인이 하나님 눈에 좋아 보인다거나 정의의 하나님이 어디 있느냐는 말은 하나님을 괴롭게 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "제사장들",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "제사장들"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "제사장들"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "제사장들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "제사장들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "말라기 2:17",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
