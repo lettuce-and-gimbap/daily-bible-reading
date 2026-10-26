@@ -1095,6 +1095,29 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"provision","lead":"느헤미야","target":"이전 총독들","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"느헤미야"},{"action":"gather","duration":1.2,"actor":"느헤미야"},{"action":"lift","duration":1.5,"actor":"느헤미야"},{"action":"extend","duration":1.8,"actor":"느헤미야"},{"action":"release","duration":1.5,"actor":"느헤미야"},{"action":"bow","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 5:14-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-neh-extra-1-0",
+      "code": "neh",
+      "chapter": 1,
+      "title": "무너진 성벽 앞에서 애도하다",
+      "actors": [
+        "느헤미야"
+      ],
+      "object": "scene-marker",
+      "ref": "느헤미야 1:4",
+      "verseNumbers": [
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 느헤미야는 예루살렘 성벽이 무너지고 성문이 불탔다는 소식을 듣고 주저앉아 울어요. 여러 날 슬퍼하며 금식하고 하나님께 기도하기 시작해요."
+      ],
+      "study": "느헤미야는 예루살렘 성벽이 무너지고 성문이 불탔다는 소식을 듣고 주저앉아 울어요. 여러 날 슬퍼하며 금식하고 하나님께 기도하기 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"느헤미야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"},{"action":"kneel","duration":1.5,"actor":"느헤미야"},{"action":"cover-mouth","duration":1.8,"actor":"느헤미야"},{"action":"mourn","duration":1.5,"actor":"느헤미야"},{"action":"lower","duration":1.2,"actor":"느헤미야"}],"duration":8.2,"support":null,"ref":"느헤미야 1:4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
