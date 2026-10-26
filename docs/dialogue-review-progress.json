@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 9,
-  "currentBook": "2sa",
+  "booksCompleted": 10,
+  "currentBook": "1ki",
   "currentBookStatus": "in-progress",
-  "nextBook": "2sa",
+  "nextBook": "1ki",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -164,6 +164,19 @@
       "relationshipBasedPairLines": 342,
       "status": "complete",
       "statusNote": "사무엘상 31장 전체의 장별 인물·사건 인덱스와 관계선 377개를 대조했다. 관계선은 모두 양방향 대화로 연결되며 미연결은 0개다. 한나와 엘가나, 사무엘과 엘리, 요나단과 사울, 다윗과 골리앗·요나단·사울, 다윗과 아히멜렉, 아비가일과 다윗, 아비아달과 다윗 등 핵심 장면에 관계 기반 대화 8개를 추가했다. 기존 독백 32묶음의 64개 발화에 각 문장별 절 범위를 연결하고 장 범위와 대조했다. 관계도에 연결된 인물은 어색한 인사로 대체되지 않는다."
+    },
+    "2sa": {
+      "chaptersScanned": 24,
+      "chapterDialogueAudit": 24,
+      "authoredUtteranceGroupsReviewed": 25,
+      "utteranceReferencesCorrected": 50,
+      "pairedEntriesReviewed": 15,
+      "newTwoWayEntries": 13,
+      "relationshipEdgesAudited": 385,
+      "authoredPairLinks": 22,
+      "relationshipBasedPairLines": 363,
+      "status": "complete",
+      "statusNote": "사무엘하 24장 전체의 장별 인물·사건 인덱스와 인간 관계선 385개를 대조했다. 모든 연결이 양방향 대화 후보로 이어지며 미연결은 0개다. 다윗과 아말렉 청년, 야베스 길르앗 사람들, 아브넬·요압, 이스라엘 지파들, 나단, 므비보셋, 우리아, 압살롬·후새, 시므이, 바르실래, 아라우나 등 사건 접점 13개를 특수 대화로 추가했다. 기존 발화 25묶음의 50문장에 각각 절 범위를 붙이고 해당 장의 구절 범위 안에 있는지 검사했다."
     }
   },
   "relationshipDialogueCoverage": {
@@ -176,11 +189,12 @@
       "jos",
       "jdg",
       "rut",
-      "1sa"
+      "1sa",
+      "2sa"
     ],
-    "relationshipLinks": 932,
-    "authoredPairLinks": 162,
-    "relationshipBasedPairLines": 770,
+    "relationshipLinks": 1317,
+    "authoredPairLinks": 184,
+    "relationshipBasedPairLines": 1133,
     "unpairedLinks": 0,
     "rule": "관계도 연결은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 짧은 창작 대사를 쓰고, 관계 설명과 구절은 자세히 보기에서 확인한다."
   }
