@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 742,
+    "scenesInFiles": 777,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 28
+    "curatedSupplementalScenes": 63
   },
   "books": [
     {
@@ -99,9 +99,10 @@
     {
       "code": "1sa",
       "chapters": 31,
-      "scenes": 69,
+      "scenes": 104,
       "sourceMatchedSceneCandidates": 69,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 35
     },
     {
       "code": "2sa",
@@ -8054,7 +8055,8 @@
           "title": "사무엘의 탄생",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8079,7 +8081,8 @@
           "title": "엘리의 책망과 아들들의 거역",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8108,7 +8111,8 @@
           "title": "온 이스라엘의 선지자",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8142,7 +8146,8 @@
           "title": "이가봇의 출생",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8179,7 +8184,8 @@
           "title": "궤를 돌려보내자",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8213,7 +8219,8 @@
           "title": "기럇여아림으로",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8234,7 +8241,8 @@
           "title": "우상을 버리라",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8270,7 +8278,8 @@
           "title": "거절과 허락",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8329,7 +8338,8 @@
           "title": "미스바의 제비뽑기",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8369,7 +8379,8 @@
           "title": "길갈에서 새롭게",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8403,7 +8414,8 @@
           "title": "기도를 쉬지 않으리라",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8437,7 +8449,8 @@
           "title": "약탈하는 블레셋",
           "reason": "no-source-confirmed-actor-or-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8471,7 +8484,8 @@
           "title": "사울의 나라와 집안",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8511,7 +8525,8 @@
           "title": "아각의 최후",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8569,7 +8584,8 @@
           "title": "누구의 아들인가",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8602,7 +8618,8 @@
           "title": "더 두려워한 사울",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8627,7 +8644,8 @@
           "title": "라마의 사무엘",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8689,7 +8707,8 @@
           "title": "미친 척한 다윗",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8726,7 +8745,8 @@
           "title": "피해 온 아비아달",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -8763,7 +8783,8 @@
           "title": "갈라지는 바위",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 3
     },
     {
       "code": "1sa",
@@ -8788,7 +8809,8 @@
           "title": "울며 인정한 사울",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8841,7 +8863,8 @@
           "title": "흩어진 가정들",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8870,7 +8893,8 @@
           "title": "다윗의 호소",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8902,7 +8926,8 @@
           "title": "아기스를 속임",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -8975,7 +9000,8 @@
           "title": "새벽의 귀환",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "1sa",
@@ -9017,7 +9043,8 @@
           "title": "유다 장로들에게 선물",
           "reason": "no-source-confirmed-object"
         }
-      ]
+      ],
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "1sa",
@@ -28099,6 +28126,10 @@
       {
         "book": "rut",
         "scenesAdded": 4
+      },
+      {
+        "book": "1sa",
+        "scenesAdded": 35
       }
     ]
   }

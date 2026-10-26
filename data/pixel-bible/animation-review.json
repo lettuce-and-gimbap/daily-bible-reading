@@ -115,14 +115,14 @@
     },
     {
       "code": "1sa",
-      "payloadSha256": "bff80328286eb1ff39edf3e0ce39390e7e7a46ed0367fa982535747354aa7742",
-      "scenes": 69,
-      "existing": 69,
+      "payloadSha256": "369781b1beb2b4ef4a85bd49ae2a89e851299d286a48f93432886778eab8f472",
+      "scenes": 104,
+      "existing": 104,
       "restored": 0,
       "corrected": 19,
-      "planned": 69,
+      "planned": 104,
       "modes": {
-        "reconstruction": 69
+        "reconstruction": 104
       },
       "status": "authored-awaiting-browser-review"
     },
