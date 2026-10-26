@@ -47,10 +47,13 @@ test('TV는 사랑을 싣고 부스는 수동 배치 오브젝트로 등록되�
 
 test('인물 독백은 화자 이름을 1인칭 주어로 바꾼다',async()=>{
  const {firstPersonMonologue}=await import('../js/features/pixel-bible/personal-lines.js');
- assert.equal(firstPersonMonologue('예후','예후가 왕이 되었다.'),'내가 왕이 되었다.');
+ assert.equal(firstPersonMonologue('예후','예후가 왕이 되었다.'),'내가 왕이 되었어.');
  assert.equal(firstPersonMonologue('이세벨','이세벨은 장로들을 움직이겠어.'),'나는 장로들을 움직이겠어.');
- assert.equal(firstPersonMonologue('다윗','그는 다시 길을 떠났다.'),'나는 다시 길을 떠났다.');
+ assert.equal(firstPersonMonologue('다윗','그는 다시 길을 떠났다.'),'나는 다시 길을 떠났어.');
  assert.equal(firstPersonMonologue('여호아하스','아버지 예후의 뒤를 이어 이스라엘 왕이 되었다.'),'내 아버지의 뒤를 이어 내가 이스라엘 왕이 되었어.');
+ assert.equal(firstPersonMonologue('예후','예후가 왕이 되었다.'),'내가 왕이 되었어.');
+ assert.equal(firstPersonMonologue('동방 박사들','꿈에서 경고를 받은 박사들은 헤롯의 궁을 다시 찾지 않고 귀향길을 바꾸었다.'),'꿈에서 경고를 받은 우리는 헤롯의 궁을 다시 찾지 않고 귀향길을 바꾸었어.');
+ assert.equal(firstPersonMonologue('이스라엘 자손','이스라엘 자손은 길을 떠났고 그들은 약속을 기억했다.'),'우리는 길을 떠났고 우리는 약속을 기억했어.');
 });
 
 test('물·나무·밧줄·작업 동작은 각자 다른 8박 핵심 자세를 사용한다',async()=>{
