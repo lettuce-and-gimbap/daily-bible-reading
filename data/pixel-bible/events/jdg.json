@@ -1224,14 +1224,14 @@
     {
       "id": "ot-jdg-extra-14",
       "chapter": 16,
-      "title": "들릴라의 배신과 삼손의 실명",
+      "title": "들릴라의 압박과 삼손의 비밀 노출",
       "actors": [
         "삼손",
         "들릴라",
         "블레셋 방백들"
       ],
       "object": "silver",
-      "ref": "사사기 16:4-22",
+      "ref": "사사기 16:4-20",
       "motif": "coins",
       "code": "jdg",
       "verseNumbers": [
@@ -1251,19 +1251,17 @@
         17,
         18,
         19,
-        20,
-        21,
-        22
+        20
       ],
       "actions": {},
       "lines": [
-        "해설: 들릴라는 은을 받고 삼손의 힘의 비밀을 알아내려 거듭 압박해요. 삼손은 비밀을 털어놓고 머리카락을 잘린 뒤 붙잡혀 눈을 잃어요."
+        "해설: 들릴라는 블레셋 방백들의 은 약속을 받고 삼손의 힘의 근원을 캐물어요. 삼손은 거듭된 압박 끝에 나실인의 비밀을 털어놓고, 잠든 사이 머리카락이 잘린 뒤 힘을 잃어요."
       ],
-      "study": "릴라는 은을 받고 삼손의 힘의 비밀을 알아내려 거듭 압박해요. 삼손은 비밀을 털어놓고 머리카락을 잘린 뒤 붙잡혀 눈을 잃어요.",
+      "study": "들릴라는 블레셋 방백들의 은 약속을 받고 삼손의 힘의 근원을 캐물어요. 삼손은 거듭된 압박 끝에 나실인의 비밀을 털어놓고, 잠든 사이 머리카락이 잘린 뒤 힘을 잃어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "배신과 포획을 다루되 머리카락 절단·실명은 비그래픽 상징 연출로 처리해요.",
-      "animation": {"version":2,"motif":"coins","lead":"삼손","target":"들릴라","mode":"reconstruction","setting":"temple","effect":"coins","emotion":"determined","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"삼손"},{"action":"grasp","duration":1.2,"actor":"삼손"},{"action":"lift","duration":1.5,"actor":"삼손"},{"action":"drop","duration":1.8,"actor":"삼손"},{"action":"count","duration":1.5,"actor":"삼손"},{"action":"lower","duration":1.2,"actor":"삼손"}],"duration":8.2,"support":null,"ref":"사사기 16:4-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"들릴라","target":"삼손","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"silver","beats":[{"action":"listen","duration":1,"actor":"들릴라"},{"action":"turn","duration":1.2,"actor":"들릴라"},{"action":"speak","duration":1.5,"actor":"들릴라"},{"action":"point","duration":1.8,"actor":"들릴라"},{"action":"listen","duration":1.5,"actor":"들릴라"},{"action":"lower","duration":1.2,"actor":"들릴라"}],"duration":8.2,"support":null,"ref":"사사기 16:4-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jdg-extra-15",
