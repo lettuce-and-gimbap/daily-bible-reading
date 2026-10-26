@@ -260,14 +260,14 @@
     },
     {
       "code": "psa",
-      "payloadSha256": "0e61841d16b9a34afe442a6c8b6235fb1cac4a5d936b100791c14b31afcc913b",
-      "scenes": 45,
-      "existing": 45,
+      "payloadSha256": "c4595bffec1aeb2a5405fc346a72c48a28af7dec0ac54b9aeff2ad3441da70b9",
+      "scenes": 46,
+      "existing": 46,
       "restored": 0,
       "corrected": 0,
-      "planned": 45,
+      "planned": 46,
       "modes": {
-        "illustration": 45
+        "illustration": 46
       },
       "status": "authored-awaiting-browser-review"
     },
@@ -427,14 +427,14 @@
     },
     {
       "code": "oba",
-      "payloadSha256": "dc866a9fb30454e91e2eeaf8162846dc366345d8973664b19539a669c4d746b9",
-      "scenes": 5,
-      "existing": 5,
+      "payloadSha256": "464d4132604c796cd32ee53d9de64d18dea989eff47939ac1e03dcfd4a33c8ef",
+      "scenes": 6,
+      "existing": 6,
       "restored": 0,
       "corrected": 0,
-      "planned": 5,
+      "planned": 6,
       "modes": {
-        "illustration": 5
+        "illustration": 6
       },
       "status": "authored-awaiting-browser-review"
     },
@@ -494,14 +494,14 @@
     },
     {
       "code": "zep",
-      "payloadSha256": "6e04a655da47cac1b0b173a7689d9b8864b25efe9d0a9199aff54dc4f6b5e6b3",
-      "scenes": 7,
-      "existing": 7,
+      "payloadSha256": "7b050cc95bd1bd40703472737f8d3e2812ff7f997280b4f5d10d1415b5480395",
+      "scenes": 8,
+      "existing": 8,
       "restored": 0,
       "corrected": 0,
-      "planned": 7,
+      "planned": 8,
       "modes": {
-        "illustration": 7
+        "illustration": 8
       },
       "status": "authored-awaiting-browser-review"
     },

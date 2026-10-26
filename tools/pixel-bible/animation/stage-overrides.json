@@ -88,7 +88,10 @@
       "mode": "illustration"
     },
     "26": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "시편 105:37-45",
+      "lead": "모세",
+      "target": "아론"
     },
     "27": {
       "mode": "illustration"
@@ -142,6 +145,9 @@
       "mode": "illustration"
     },
     "44": {
+      "mode": "illustration"
+    },
+    "45": {
       "mode": "illustration"
     }
   },
@@ -519,7 +525,10 @@
   },
   "oba": {
     "1": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "오바댜 1:5-9",
+      "lead": "오바댜",
+      "target": "에돔(에서)"
     },
     "2": {
       "mode": "illustration"
@@ -528,6 +537,9 @@
       "mode": "illustration"
     },
     "4": {
+      "mode": "illustration"
+    },
+    "5": {
       "mode": "illustration"
     }
   },
@@ -591,6 +603,12 @@
       "mode": "illustration"
     },
     "6": {
+      "mode": "illustration",
+      "ref": "스바냐 3:18-20",
+      "lead": "곤고한 남은 자",
+      "target": "딸 시온"
+    },
+    "7": {
       "mode": "illustration"
     }
   },

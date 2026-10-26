@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1346,
+    "scenesInFiles": 1349,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 632
+    "curatedSupplementalScenes": 635
   },
   "books": [
     {
@@ -178,10 +178,10 @@
     {
       "code": "psa",
       "chapters": 150,
-      "scenes": 45,
+      "scenes": 46,
       "sourceMatchedSceneCandidates": 18,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 27
+      "curatedSupplementalScenes": 28
     },
     {
       "code": "pro",
@@ -274,10 +274,10 @@
     {
       "code": "oba",
       "chapters": 1,
-      "scenes": 5,
+      "scenes": 6,
       "sourceMatchedSceneCandidates": 0,
       "retainedLegacyScenes": 1,
-      "curatedSupplementalScenes": 4
+      "curatedSupplementalScenes": 5
     },
     {
       "code": "jnh",
@@ -314,10 +314,10 @@
     {
       "code": "zep",
       "chapters": 3,
-      "scenes": 7,
+      "scenes": 8,
       "sourceMatchedSceneCandidates": 0,
       "retainedLegacyScenes": 1,
-      "curatedSupplementalScenes": 6
+      "curatedSupplementalScenes": 7
     },
     {
       "code": "hag",
@@ -17533,7 +17533,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-edition-gap": 1,
         "source-confirmed-actor-only": 1,
@@ -26670,7 +26670,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 5,
+      "scenes": 6,
       "classification": {
         "no-source-confirmed-actor-or-object": 4
       },
@@ -27284,7 +27284,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-object-only": 1,
         "no-source-confirmed-actor-or-object": 3
@@ -28489,6 +28489,18 @@
       },
       {
         "book": "zec",
+        "scenesAdded": 1
+      },
+      {
+        "book": "zep",
+        "scenesAdded": 1
+      },
+      {
+        "book": "oba",
+        "scenesAdded": 1
+      },
+      {
+        "book": "psa",
         "scenesAdded": 1
       }
     ]

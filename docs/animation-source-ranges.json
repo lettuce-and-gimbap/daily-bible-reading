@@ -111,8 +111,8 @@
     },
     {
       "code": "psa",
-      "scenes": 45,
-      "passageRangesFound": 45,
+      "scenes": 46,
+      "passageRangesFound": 46,
       "missing": []
     },
     {
@@ -183,8 +183,8 @@
     },
     {
       "code": "oba",
-      "scenes": 5,
-      "passageRangesFound": 5,
+      "scenes": 6,
+      "passageRangesFound": 6,
       "missing": []
     },
     {
@@ -213,8 +213,8 @@
     },
     {
       "code": "zep",
-      "scenes": 7,
-      "passageRangesFound": 7,
+      "scenes": 8,
+      "passageRangesFound": 8,
       "missing": []
     },
     {
