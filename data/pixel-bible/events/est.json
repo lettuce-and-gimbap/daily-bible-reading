@@ -1784,6 +1784,146 @@
         "ref": "에스더 6:12-14",
         "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
       }
+    },
+    {
+      "id": "ot-est-review-04-16",
+      "code": "est",
+      "chapter": 4,
+      "title": "죽으면 죽으리이다 · 이어지는 말씀",
+      "actors": [
+        "에스더"
+      ],
+      "object": "scroll",
+      "ref": "에스더 4:16",
+      "verseNumbers": [
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에스더가 사흘 금식을 부탁하고 왕에게 나아가기로 해요."
+      ],
+      "study": "에스더가 사흘 금식을 부탁하고 왕에게 나아가기로 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 사건과 인물을 설명하는 장면이에요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "에스더",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스더"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "에스더"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "에스더"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "에스더"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "에스더"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스더"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스더 4:16",
+        "source": "장별 요약 사건 단락 기반 연출 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-est-review-06-10",
+      "code": "est",
+      "chapter": 6,
+      "title": "모르드개를 높인 하만",
+      "actors": [
+        "모르드개",
+        "하만"
+      ],
+      "object": "book",
+      "ref": "에스더 6:10-11",
+      "verseNumbers": [
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하만이 모르드개를 왕의 말에 태우고 성 거리를 다녀요."
+      ],
+      "study": "하만이 모르드개를 왕의 말에 태우고 성 거리를 다녀요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 사건과 인물을 설명하는 장면이에요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "모르드개",
+        "target": "하만",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "모르드개"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "모르드개"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "모르드개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "모르드개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "모르드개"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "모르드개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스더 6:10-11",
+        "source": "장별 요약 사건 단락 기반 연출 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
