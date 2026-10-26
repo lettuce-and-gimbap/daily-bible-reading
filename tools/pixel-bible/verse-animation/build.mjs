@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 const code=process.argv[2]||'mat';
-const authors={mat:['matthew','마태복음'],mrk:['mark','마가복음'],luk:['luke','누가복음'],jhn:['john','요한복음'],'1jn':['john1','요한일서'],act:['acts','사도행전'],rom:['romans','로마서'],'1co':['corinthians','고린도전서'],gal:['galatians','갈라디아서'],php:['philippians','빌립보서'],eph:['ephesians','에베소서'],col:['colossians','골로새서'],'1th':['thessalonians1','데살로니가전서'],'2th':['thessalonians2','데살로니가후서'],phm:['philemon','빌레몬서'],'2jn':['john2','요한이서'],'3jn':['john3','요한삼서'],jud:['jude','유다서'],'2pe':['peter2','베드로후서'],'1pe':['peter1','베드로전서'],tit:['titus','디도서'],'2ti':['timothy2','디모데후서'],'1ti':['timothy1','디모데전서']};
+const authors={mat:['matthew','마태복음'],mrk:['mark','마가복음'],luk:['luke','누가복음'],jhn:['john','요한복음'],'1jn':['john1','요한일서'],act:['acts','사도행전'],rom:['romans','로마서'],'1co':['corinthians','고린도전서'],'2co':['second-corinthians','고린도후서'],gal:['galatians','갈라디아서'],php:['philippians','빌립보서'],eph:['ephesians','에베소서'],col:['colossians','골로새서'],'1th':['thessalonians1','데살로니가전서'],'2th':['thessalonians2','데살로니가후서'],phm:['philemon','빌레몬서'],'2jn':['john2','요한이서'],'3jn':['john3','요한삼서'],jud:['jude','유다서'],'2pe':['peter2','베드로후서'],'1pe':['peter1','베드로전서'],tit:['titus','디도서'],'2ti':['timothy2','디모데후서'],'1ti':['timothy1','디모데전서']};
 if(!authors[code])throw Error('No authored verse book '+code);
 const [author,bookName]=authors[code],{chapters,additionalPeople}=await import('./'+author+'.mjs');
 import {ANIMATION_MOTIFS} from '../../../js/features/pixel-bible/event-animation/motifs.js';
