@@ -136,6 +136,19 @@ test('역대상 인간 관계선 130개와 왕위·성전·예배·전쟁의 대
  for(const row of rows){const base=row[3].match(/\d+/g).map(Number);for(const ref of row[7]){const n=ref.match(/\d+/g).map(Number),end=n[1]||n[0];assert.ok(n[0]>=base[0]&&end<=(base[1]||base[0])&&end<=verseCounts[row[1]-1],`${row[1]} ${ref} 범위 확인`)}}
 });
 
+test('역대하 인간 관계선 152개와 개혁·전쟁·성전 장면의 대화를 보강했다',()=>{
+ const data=JSON.parse(fs.readFileSync('data/summary/2ch.json'));
+ const chapters=Object.entries(data.chapters).map(([chap,chapter])=>({code:'2ch',name:'역대하',chap:Number(chap),data:chapter}));
+ const context=buildChapterDialogue(chapters);let audited=0;
+ for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
+ assert.equal(audited,152);
+ const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목을|후람\(장인\)/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 말하겠/,/더 무겁게/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/바르게 판결/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/주만 바라봅니다/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/왕으로 세워/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','보발꾼들',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/화살에 맞/]];
+ for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
+ const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='2ch');assert.equal(rows.length,38);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
+ const verseCounts=[17,18,17,22,14,42,22,18,31,19,23,16,22,15,19,14,19,34,11,37,20,12,21,27,28,23,9,27,36,27,21,33,25,33,27,23];
+ for(const row of rows){const base=row[3].match(/\d+/g).map(Number);for(const ref of row[7]){const n=ref.match(/\d+/g).map(Number),end=n[1]||n[0];assert.ok(n[0]>=base[0]&&end<=(base[1]||base[0])&&end<=verseCounts[row[1]-1],`${row[1]} ${ref} 범위 확인`)}}
+});
+
 test('동시 조우는 한 쌍만 진행해 자동 말풍선 슬롯과 합쳐 대화 세트를 두 개로 제한한다',()=>{
  const people=['아합','나봇','엘리야','엘리사','모세','아론'];
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:people.map(name=>({name,role:'본문 인물'})),rels:[
