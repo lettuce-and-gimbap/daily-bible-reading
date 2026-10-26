@@ -1,5 +1,5 @@
 export const chapters={},additionalPeople={};
-const fix={call:'signal',welcome:'walk',hear:'listen',arrive:'walk',leave:'walk',draw:'scoop',offer:'extend',depart:'walk',row:'walk',murmur:'speak',argue:'speak',whisper:'speak',promise:'speak',proclaim:'speak',accuse:'speak',judge:'point',shine:'light',witness:'look',fill:'pour',overturn:'push',rejoice:'smile',approach:'walk',question:'speak',answer:'speak',invite:'reach',recognize:'look',take:'receive',raise:'lift',heal:'touch',teach:'speak',follow:'walk',gather:'gather',return:'walk',report:'speak',send:'release',prepare:'place',enter:'walk',appear:'look',believe:'bow',testify:'speak',baptize:'pour',depart:'walk',celebrate:'smile',serve:'extend',cleanse:'wash',wash:'smooth',drive:'push',sell:'release',exchange:'turn',remember:'look',rebuke:'point',seek:'inspect',search:'inspect',find:'look',come:'walk',draw:'scoop',drink:'pour',give:'release',feed:'extend',cross:'walk',lift:'raise',receive:'hold',speak:'speak',listen:'listen',look:'look',touch:'touch',walk:'walk',wait:'wait',stand:'stand',sit:'sit',rise:'rise',turn:'turn',point:'point',reach:'reach',hold:'hold',place:'place',carry:'carry',bless:'bless',bow:'bow',kneel:'kneel',pray:'pray',read:'read',write:'write',eat:'eat',sleep:'sleep',fall:'fall',open:'open',hide:'hide',signal:'signal',lower:'lower',pour:'pour',strike:'strike',release:'release',startle:'startle',retreat:'retreat',run:'run',inspect:'inspect',brace:'brace',remove:'remove-shoe',gather:'gather',share:'extend',break:'break-bread',climb:'step',light:'light',sweep:'smooth',ask:'speak',come:'walk',remain:'wait',reveal:'open',proclaim:'speak',witness:'look',test:'inspect',marvel:'startle',go:'walk',follow:'walk',beloved:'bless',deny:'turn',teach:'speak',know:'look',receive:'hold',see:'look',drink:'pour',save:'lift',sacrifice:'release',lift:'lift',scatter:'scatter',rise:'rise',carry:'carry',greet:'bless',prophesy:'speak',seek:'inspect',bring:'carry',restore:'heal'};
+const fix={call:'signal',welcome:'walk',hear:'listen',arrive:'walk',leave:'walk',draw:'scoop',offer:'extend',depart:'walk',row:'walk',murmur:'speak',argue:'speak',whisper:'speak',promise:'speak',proclaim:'speak',accuse:'speak',judge:'point',shine:'light',witness:'look',fill:'pour',overturn:'push',rejoice:'smile',approach:'walk',question:'speak',answer:'speak',invite:'reach',recognize:'look',take:'receive',raise:'lift',heal:'touch',teach:'speak',follow:'walk',gather:'gather',return:'walk',report:'speak',send:'release',prepare:'place',enter:'walk',appear:'look',believe:'bow',testify:'speak',baptize:'pour',depart:'walk',celebrate:'smile',serve:'extend',cleanse:'wash',wash:'smooth',drive:'push',sell:'release',exchange:'turn',remember:'look',rebuke:'point',seek:'inspect',search:'inspect',find:'look',come:'walk',draw:'scoop',drink:'pour',give:'release',feed:'extend',cross:'walk',lift:'raise',receive:'hold',speak:'speak',listen:'listen',look:'look',touch:'touch',walk:'walk',wait:'wait',stand:'stand',sit:'sit',rise:'rise',turn:'turn',point:'point',reach:'reach',hold:'hold',place:'place',carry:'carry',bless:'bless',bow:'bow',kneel:'kneel',pray:'pray',read:'read',write:'write',eat:'eat',sleep:'sleep',fall:'fall',open:'open',hide:'hide',signal:'signal',lower:'lower',pour:'pour',strike:'strike',release:'release',startle:'startle',retreat:'retreat',run:'run',inspect:'inspect',brace:'brace',remove:'remove-shoe',gather:'gather',share:'extend',break:'break-bread',climb:'step',light:'light',sweep:'smooth',ask:'speak',come:'walk',remain:'wait',reveal:'open',proclaim:'speak',witness:'look',test:'inspect',marvel:'startle',go:'walk',follow:'walk',beloved:'bless',deny:'turn',teach:'speak',know:'look',receive:'hold',see:'look',drink:'pour',save:'lift',sacrifice:'release',lift:'lift',scatter:'scatter',rise:'rise',carry:'carry',greet:'bless',prophesy:'speak',seek:'inspect',bring:'carry',restore:'heal',hide:'hide',write:'write',summon:'signal',expel:'push',hesitate:'wait',warn:'speak',reveal:'open',sweep:'smooth',retreat:'retreat',depart:'walk',return:'walk',lead:'walk',follow:'walk',scatter:'scatter',summon:'signal',expel:'push',wash:'smooth',cleanse:'wash',kneel:'kneel',withdraw:'retreat',defend:'speak',summon:'signal',question:'speak',answer:'speak',testify:'speak',accuse:'speak',hesitate:'wait',warn:'speak',call:'signal',open:'open',lead:'walk',run:'run',retreat:'retreat',brace:'brace',raise:'lift',proclaim:'speak'};
 const propFix={light:'lamp',fig:'scene-marker',jar:'water',whip:'staff',temple:'scroll',stone:'stone',water:'water',wine:'wine',bread:'bread',fig:'fig-tree',sheep:'sheep',lamb:'sheep',fish:'fish',coin:'coin',cross:'cross',tomb:'tomb',scroll:'scroll',table:'table',well:'well',boat:'boat',staff:'staff',robe:'robe',house:'house',basket:'basket',lamp:'lamp',door:'gate',field:'field',vine:'vine',net:'net',hand:'scene-marker'};
 const add=(chapter,rows,ranges,extras=[],effects={})=>{additionalPeople[chapter]=extras.map(name=>({name,role:`요한복음 ${chapter}장 관련 인물`,refs:[`요한복음 ${chapter}장`]}));chapters[chapter]=[];for(const [i,line]of rows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to);if(!g)throw Error(`Missing John ${chapter}:${verse} range`);const actions=g.actions.map(a=>fix[a]||a),scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:propFix[g.prop]||g.prop};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand']]));if(effects[verse])scene.effect=effects[verse];chapters[chapter].push(scene)}};
 add(1,`
@@ -331,3 +331,230 @@ add(6,`
 {from:52,to:59,actors:["예수","유대인들","제자들"],setting:"synagogue",prop:"bread",actions:["argue","teach","eat","drink","remain","listen"]},
 {from:60,to:71,actors:["예수","제자들","베드로","유다"],setting:"synagogue",prop:"scroll",actions:["listen","murmur","question","teach","depart","answer"]}
 ],["예수","제자들","빌립","안드레","아이","무리","유대인들","아버지","베드로","유다"]);
+add(7,`
+갈릴리에 머무신 예수|위협을 아시는 예수께서는 갈릴리에서 다니시며 유대에 드러나지 않으세요.
+초막절이 가까워짐|유대인의 초막절이 다가오자 예루살렘으로 향할 때가 가까워져요.
+형제들의 공개 권유|예수의 형제들은 제자들도 보도록 유대로 가서 일을 드러내라고 권해요.
+세상에 자신을 나타내라는 말|형제들은 큰일을 하는 사람이 숨어 있지 않는다며 자신을 세상에 보이라고 말해요.
+아직 믿지 않는 형제들|요한은 예수의 형제들조차 아직 그분을 믿지 않았다고 전해요.
+때가 이르지 않았다는 대답|예수께서는 자신의 때는 아직 오지 않았지만 형제들의 때는 늘 준비되어 있다고 답하세요.
+세상의 미움을 받는 이유|예수께서는 세상이 악하다고 증언하기 때문에 자신을 미워한다고 설명하세요.
+먼저 올라가라는 말씀|예수께서는 형제들에게 먼저 명절에 올라가라고 하시며 자신의 때는 아직 차지 않았다고 하세요.
+갈릴리에 남으심|말씀을 마치신 예수께서는 잠시 갈릴리에 머무세요.
+은밀히 올라가신 예수|형제들이 떠난 뒤 예수께서는 드러내지 않고 조용히 명절에 올라가세요.
+예수를 찾는 유대인들|명절에 모인 유대인들은 예수가 어디 있는지 서로 찾아요.
+엇갈리는 무리의 평가|무리 가운데 어떤 이는 예수를 선하다고 하고 다른 이는 사람들을 미혹한다고 수군거려요.
+두려워 입을 닫은 사람들|유대 지도자들을 두려워한 이들은 예수에 관해 공개적으로 말하지 못해요.
+성전에서 가르치심|명절 중간에 예수께서 성전에 올라가 사람들을 가르치세요.
+배우지 않았는데 아는 말씀|유대인들은 정식으로 배우지 않은 예수가 글과 가르침을 아는 것을 놀라워해요.
+보내신 이에게서 온 가르침|예수께서는 자신의 교훈이 스스로 만든 것이 아니라 보내신 이에게서 왔다고 답하세요.
+뜻을 행하면 알게 될 교훈|하나님의 뜻을 행하려는 사람은 그 가르침이 하나님에게서 왔는지 분별하게 된다고 하세요.
+자기 영광과 보내신 이의 영광|예수께서는 자기 영광을 구하는 이와 보내신 이의 영광을 구하는 이의 차이를 설명하세요.
+율법을 주고도 죽이려는 모순|예수께서는 율법을 받은 이들이 자신을 죽이려는 모순을 지적하세요.
+귀신 들렸다고 반박하는 무리|무리는 누가 예수를 죽이려 하느냐며 그분의 말을 부인해요.
+한 일을 두고 놀라는 사람들|예수께서는 자신이 한 일 하나 때문에 사람들이 놀란다고 말씀하세요.
+안식일에도 행하는 할례|예수께서는 모세의 율법에 따라 안식일에도 할례를 행하는 관습을 상기시키세요.
+전신을 온전하게 한 일|예수께서는 안식일에 사람의 온몸을 회복시킨 일로 화내는 것이 옳은지 물으세요.
+공의롭게 판단하라는 권면|예수께서는 겉모습에 매이지 말고 공의롭게 판단하라고 하세요.
+예루살렘 사람들의 의문|예루살렘 사람들은 당국자들이 죽이려던 예수가 공개적으로 말하는데도 왜 막지 않는지 의아해해요.
+당국자들이 믿는지 묻다|사람들은 지도자들도 예수를 그리스도로 여기는지 서로 추측해요.
+출신을 안다고 여기는 무리|무리는 예수의 출신을 안다고 생각하며 메시아의 기원을 둘러싼 통념을 말해요.
+자신을 보내신 이를 밝히심|성전에서 가르치시던 예수께서는 자신이 스스로 온 것이 아니며 보내신 이는 참되다고 외치세요.
+아버지에게서 오신 예수|예수께서는 자신이 아버지를 알고 그분에게서 왔다고 선언하세요.
+붙잡지 못한 사람들|사람들은 예수를 붙잡으려 하지만 때가 이르지 않아 아무도 손대지 못해요.
+표적을 생각하며 믿는 무리|많은 사람은 메시아가 오더라도 예수보다 더 많은 표적을 행하겠느냐며 믿어요.
+붙잡으러 파견된 아랫사람들|바리새인들은 무리의 수군거림을 듣고 대제사장들과 함께 아랫사람들을 보내 예수를 잡으려 해요.
+보내신 이에게 돌아갈 때|예수께서는 자신이 조금 더 함께 있다가 보내신 이에게 돌아간다고 말씀하세요.
+찾아도 만나지 못하리라|예수께서는 자신을 찾아도 만나지 못하고 자신이 있는 곳에 오지 못한다고 하세요.
+흩어진 이들에게 갈지 묻다|유대인들은 예수가 헬라인들 가운데 흩어진 유대인에게 가서 가르치려는지 서로 묻습니다.
+말뜻을 헤아리는 사람들|무리는 찾아도 만나지 못한다는 예수의 말씀을 이해하지 못해 다시 논의해요.
+목마른 이에게 건네신 초청|명절 마지막 날 예수께서는 목마른 사람은 자신에게 와서 마시라고 크게 외치세요.
+믿는 이에게 흐를 생수|예수께서는 자신을 믿는 이의 안에서 생수의 강이 흐를 것이라고 약속하세요.
+성령을 가리킨 생수|요한은 생수의 약속이 믿는 이들이 받을 성령을 가리킨다고 풀어 줘요.
+선지자라 말하는 무리|말씀을 들은 사람들 가운데 예수를 그 선지자라고 여기는 이들이 생겨요.
+그리스도인지 논쟁하는 사람들|어떤 이들은 예수를 그리스도라 하고 다른 이들은 갈릴리에서 그리스도가 나올 수 있느냐고 반박해요.
+다윗과 베들레헴을 떠올리다|사람들은 성경의 약속을 들어 메시아가 다윗의 자손이며 베들레헴에서 나올 것이라 주장해요.
+예수로 나뉜 무리|예수에 대한 판단이 엇갈리며 무리 사이에 논쟁이 커져요.
+손대지 못한 사람들|일부는 예수를 붙잡으려 하지만 아무도 손대지 못해요.
+돌아온 아랫사람들|예수를 잡으러 갔던 아랫사람들이 빈손으로 대제사장들과 바리새인에게 돌아와요.
+그처럼 말한 이는 없었다|아랫사람들은 예수처럼 말한 사람은 이제껏 없었다고 답해요.
+미혹되었느냐고 몰아붙임|바리새인들은 아랫사람들까지 예수에게 미혹되었느냐고 다그쳐요.
+지도자 중 믿는 이가 있느냐|바리새인들은 지도자나 자신들 가운데 예수를 믿는 사람이 있느냐고 반문해요.
+무리를 업신여기는 지도자들|그들은 율법을 모르는 무리를 저주받은 자라며 깎아내려요.
+니고데모의 신중한 질문|전에 예수를 찾아왔던 니고데모는 율법이 먼저 말을 듣고 행위를 살피지 않고 심판하는지 묻습니다.
+먼저 듣고 판단하자는 항변|니고데모는 예수의 말을 듣고 행한 일을 알기 전에 판결하는 것이 율법에 맞는지 따져요.
+갈릴리를 비웃는 대답|지도자들은 니고데모에게 갈릴리에서는 선지자가 나지 않는다고 비웃으며 물러서요.
+각자 집으로 돌아감|논쟁이 끝나고 사람들은 저마다 집으로 돌아가요.
+`,[
+{from:1,to:9,actors:["예수","예수의 형제들","제자들"],setting:"house",prop:"robe",actions:["retreat","gather","invite","proclaim","wait","depart"]},
+{from:10,to:24,actors:["예수","무리","유대 지도자들"],setting:"temple",prop:"scroll",actions:["hide","search","whisper","teach","listen","point"]},
+{from:25,to:36,actors:["예수","무리","유대 지도자들","아랫사람들"],setting:"temple",prop:"scroll",actions:["question","argue","teach","reach","retreat","depart"]},
+{from:37,to:44,actors:["예수","무리","제자들"],setting:"temple",prop:"water",actions:["proclaim","reach","pour","listen","believe","argue"]},
+{from:45,to:53,actors:["예수","아랫사람들","대제사장들","바리새인들","니고데모"],setting:"temple",prop:"scroll",actions:["return","question","testify","accuse","defend","depart"]}
+],["예수","예수의 형제들","제자들","무리","유대 지도자들","아랫사람들","대제사장들","바리새인들","니고데모"]);
+add(8,`
+감람 산으로 가신 예수|예수께서는 저녁이 되어 감람 산으로 가세요.
+아침에 성전으로 돌아오심|아침 일찍 예수께서는 성전에 돌아와 모여든 사람들을 가르치세요.
+고발당해 끌려온 여인|서기관들과 바리새인들이 간음하다 붙잡힌 여인을 사람들 가운데 세워요.
+여인을 둘러싼 고발|고발자들은 예수께 현장에서 붙잡힌 여인이라고 설명해요.
+율법을 내세운 시험|그들은 율법의 처벌을 언급하며 예수의 판단을 시험해요.
+땅에 글을 쓰신 예수|예수께서는 대답 대신 몸을 굽혀 손가락으로 땅에 쓰세요.
+죄 없는 이가 먼저 돌을|끈질긴 질문에 예수께서는 죄 없는 사람이 먼저 돌을 던지라고 하세요.
+다시 땅에 쓰심|예수께서는 다시 몸을 굽혀 땅에 글을 쓰세요.
+돌을 내려놓고 떠난 고발자들|양심에 찔린 이들이 나이 든 사람부터 하나씩 떠나고 예수와 여인만 남아요.
+고발자가 남아 있는지 물으심|예수께서는 고발하던 사람들이 어디 있는지, 정죄한 이가 남았는지 여인에게 물으세요.
+정죄 대신 새 출발을 주심|여인은 아무도 없다고 답하고 예수께서는 자신도 정죄하지 않으니 다시 죄를 짓지 말라고 하세요.
+세상의 빛이라 선언하심|예수께서는 자신을 세상의 빛이라 하시며 따르는 이는 생명의 빛을 얻는다고 선포하세요.
+증언을 문제 삼는 바리새인들|바리새인들은 예수가 스스로 증언하므로 참되지 않다고 반박해요.
+자신의 길을 아시는 예수|예수께서는 자신이 어디서 와 어디로 가는지 알지만 그들은 알지 못한다고 답하세요.
+육체를 따라 판단하는 사람들|예수께서는 사람들은 겉모습으로 판단하지만 자신은 그렇게 심판하지 않는다고 하세요.
+아버지와 함께 내리는 판단|예수께서는 혼자가 아니라 보내신 아버지와 함께하므로 판단이 참되다고 밝히세요.
+두 증인의 율법|예수께서는 율법이 두 증인의 증언을 참되게 여긴다고 상기시키세요.
+자신과 아버지의 증언|예수께서는 자신과 보내신 아버지가 함께 증언한다고 말씀하세요.
+아버지의 위치를 묻는 이들|사람들은 예수의 아버지가 어디 있느냐고 묻고 예수께서는 자신과 아버지를 모른다고 답하세요.
+헌금함 곁의 가르침|예수께서는 성전 헌금함 곁에서 가르치시지만 아무도 붙잡지 못해요.
+떠날 곳을 알리심|예수께서는 자신이 떠날 것이며 그들이 죄 가운데 죽고 자신이 가는 곳에 오지 못한다고 하세요.
+자결하려는지 묻는 사람들|유대인들은 예수가 자신들이 갈 수 없는 곳으로 간다며 스스로 목숨을 끊으려는지 묻습니다.
+위에서 오신 예수|예수께서는 자신은 위에서 왔고 그들은 이 세상에 속했다고 설명하세요.
+믿지 않으면 죄 가운데 죽음|예수께서는 자신이 누구인지 믿지 않으면 죄 가운데 죽을 것이라 경고하세요.
+누구냐고 재차 묻다|사람들이 예수의 정체를 묻자 예수께서는 처음부터 말해 온 이라고 답하세요.
+들은 것을 세상에 전하심|예수께서는 보내신 이에게서 들은 진실을 세상에 전한다고 말씀하세요.
+아버지 말씀을 깨닫지 못함|사람들은 예수께서 하나님 아버지를 가리켜 말한 것을 알아듣지 못해요.
+들어 올려진 뒤 알게 될 것|예수께서는 자신이 들려 올려진 뒤에야 자신과 아버지를 알게 될 것이라 하세요.
+함께하시는 아버지|예수께서는 보내신 이가 함께하시고 자신을 홀로 두지 않으셨다고 말씀하세요.
+말씀을 듣고 믿은 사람들|예수의 말씀을 듣고 많은 사람이 믿어요.
+말씀에 거하는 제자|예수께서는 자신을 믿은 이들에게 말씀 안에 거하면 참 제자가 된다고 하세요.
+진리가 주는 자유|진리를 알면 진리가 사람을 자유롭게 한다고 예수께서 가르치세요.
+종이 된 적 없다는 주장|사람들은 아브라함의 자손이며 누구의 종도 된 적 없다고 반박해요.
+죄의 종이라는 설명|예수께서는 죄를 짓는 사람은 누구나 죄의 종이라고 답하세요.
+집에 머물지 못하는 종|예수께서는 종은 영원히 집에 있지 못하지만 아들은 머문다고 비유하세요.
+아들이 주는 참 자유|아들이 자유롭게 하면 참으로 자유로워진다고 예수께서 선언하세요.
+말씀이 머물 자리가 없다|예수께서는 아브라함의 자손임을 알지만 자신의 말씀이 그들 안에 머물지 않는다고 하세요.
+서로 다른 아버지의 일을 함|예수께서는 자신은 아버지에게서 본 일을 말하고 그들은 다른 아비에게서 들은 일을 한다고 하세요.
+아브라함을 아버지라 주장함|사람들은 아브라함이 자기 조상이라고 말해요.
+진리를 전한 이를 죽이려 함|예수께서는 하나님께 들은 진리를 전하는 자신을 죽이려는 행동이 아브라함과 다르다고 하세요.
+행동으로 드러나는 아버지|예수께서는 그들이 자기 아비의 일을 행한다고 하시고 사람들은 하나님만이 자기 아버지라 주장해요.
+하나님에게서 오신 예수|예수께서는 하나님이 아버지라면 자신을 사랑했을 것이며 자신은 하나님에게서 와 보냄받았다고 하세요.
+말을 알아듣지 못하는 까닭|예수께서는 그들이 자신의 말을 들을 줄 모르기에 깨닫지 못한다고 지적하세요.
+거짓의 아비를 따르는 이들|예수께서는 진리 대신 거짓과 살인을 택하는 이들의 모습을 폭로하세요.
+진리를 말해도 믿지 않음|예수께서는 자신이 진리를 말하기 때문에 오히려 믿지 않는다고 하세요.
+죄를 입증하지 못하는 사람들|예수께서는 누구도 자신에게서 죄를 찾아내지 못하는데 왜 믿지 않느냐고 물으세요.
+하나님께 속한 이가 듣는 말씀|하나님께 속한 사람은 하나님의 말씀을 듣지만 그들은 듣지 않는다고 하세요.
+사마리아 사람이라는 모욕|유대인들은 예수를 사마리아 사람이며 귀신 들렸다고 모욕해요.
+아버지를 공경하시는 예수|예수께서는 자신은 귀신 들린 것이 아니라 아버지를 공경한다고 답하세요.
+영광을 구하지 않으심|예수께서는 자신의 영광을 구하지 않으며 판단하시는 이가 계시다고 말씀하세요.
+죽음을 보지 않을 말씀|예수께서는 자신의 말을 지키는 이는 영원히 죽음을 보지 않는다고 선언하세요.
+죽은 조상들을 들어 반박함|사람들은 아브라함과 선지자도 죽었는데 어떻게 죽음을 보지 않느냐고 따져요.
+아브라함보다 크냐는 질문|사람들은 예수가 이미 죽은 아브라함보다 큰지, 자신을 누구라 하는지 묻습니다.
+아버지께서 영광을 주심|예수께서는 자기 영광이 아니라 아버지께서 자신에게 영광을 주신다고 밝히세요.
+아버지를 알고 말씀을 지키심|예수께서는 아버지를 알고 그 말씀을 지키지만 그들은 알지 못한다고 말씀하세요.
+아브라함이 기뻐한 날|예수께서는 아브라함이 자신의 날을 보고 기뻐했다고 가르치세요.
+오십도 되지 않았다는 반문|사람들은 아직 오십도 되지 않은 예수가 어떻게 아브라함을 보았느냐고 물어요.
+아브라함보다 먼저 계신 이|예수께서는 아브라함이 나기 전부터 자신이 있다고 선언하세요.
+돌을 들고 성전을 떠나심|사람들이 돌을 들어 치려 하지만 예수께서는 몸을 숨겨 성전 밖으로 나가세요.
+`,[
+{from:1,to:11,actors:["예수","고발당한 여인","서기관들","바리새인들","무리"],setting:"temple",prop:"stone",actions:["depart","teach","gather","accuse","question","write"]},
+{from:12,to:20,actors:["예수","바리새인들","무리"],setting:"temple",prop:"lamp",actions:["proclaim","argue","answer","teach","point","retreat"]},
+{from:21,to:30,actors:["예수","유대인들","제자들"],setting:"temple",prop:"scroll",actions:["warn","question","teach","listen","turn","believe"]},
+{from:31,to:47,actors:["예수","믿는 유대인들","유대인들","아브라함"],setting:"temple",prop:"scroll",actions:["teach","answer","argue","point","accuse","listen"]},
+{from:48,to:59,actors:["예수","유대인들","아브라함"],setting:"temple",prop:"stone",actions:["accuse","answer","teach","question","raise","retreat"]}
+],["예수","고발당한 여인","서기관들","바리새인들","무리","유대인들","제자들","믿는 유대인들","아브라함"]);
+add(9,`
+길에서 만난 날 때부터 맹인|예수께서 길을 가시다 태어날 때부터 보지 못한 사람을 바라보세요.
+제자들의 죄에 관한 질문|제자들은 그 사람의 맹인이 된 이유가 본인의 죄인지 부모의 죄인지 물어요.
+하나님의 일을 드러내려는 고통|예수께서는 이 사람이나 부모의 죄 탓이 아니며 그에게서 하나님의 일이 드러날 것이라 하세요.
+낮 동안 해야 할 일|예수께서는 자신을 보내신 이의 일을 낮 동안 해야 한다고 제자들에게 말씀하세요.
+세상의 빛이신 예수|예수께서는 세상에 있는 동안 세상의 빛이라고 선포하세요.
+진흙을 눈에 바르심|예수께서는 땅에 침을 뱉어 진흙을 이겨 맹인의 눈에 바르세요.
+실로암에서 씻고 보게 됨|예수께서는 실로암 못에 가서 씻으라고 하시고, 그 사람은 씻은 뒤 보게 되어 돌아와요.
+이웃들이 알아봄|이웃들은 그가 전에 앉아 구걸하던 사람이 맞는지 서로 묻습니다.
+자신이라고 밝힌 사람|어떤 이들은 같은 사람이라 하고 다른 이들은 닮은 사람이라 하지만 그는 자신이라고 밝혀요.
+어떻게 눈을 떴는지 묻다|이웃들은 어떻게 보게 되었는지 그에게 자세히 물어요.
+예수의 지시를 증언함|그 사람은 예수께서 진흙을 바르고 씻으라 하셨고 그대로 하자 보게 되었다고 말해요.
+어디 계신지 모른다고 답함|사람들이 예수의 행방을 묻지만 그는 알지 못한다고 해요.
+바리새인들에게 데려감|이웃들은 전에 맹인이었던 사람을 바리새인들에게 데려가요.
+안식일에 행한 치유|치유가 안식일에 일어난 것을 요한이 짚어 줘요.
+바리새인들의 재질문|바리새인들도 어떻게 보게 되었는지 묻고 그는 진흙을 바르고 씻었다고 답해요.
+표적을 두고 갈린 바리새인|일부는 안식일을 어겼다고 비난하고 다른 이들은 죄인이 어떻게 표적을 행하느냐고 맞서요.
+선지자라 대답한 사람|그들은 전에 맹인이던 이에게 예수를 어떻게 생각하는지 묻고 그는 선지자라고 답해요.
+기적을 믿지 않는 유대인들|유대인들은 그가 맹인이었다가 보게 된 일을 믿지 않고 부모를 불러요.
+아들이 맞는지 확인하다|그들은 부모에게 그가 맹인으로 태어난 아들이 맞는지 확인해요.
+맹인이었던 아들이라고 증언|부모는 그가 자기 아들이며 맹인으로 태어난 것을 안다고 답해요.
+치유의 경위는 모른다고 함|부모는 누가 어떻게 눈을 뜨게 했는지는 모른다며 아들에게 직접 물으라고 해요.
+출교가 두려운 부모|부모는 예수를 그리스도라 시인하면 출교될까 두려워 조심스럽게 답해요.
+아들에게 다시 물으라는 부모|부모는 아들이 장성했으니 본인에게 물으라고 거듭 말해요.
+두 번째 심문을 받음|바리새인들은 그 사람을 다시 불러 예수가 죄인이라고 인정하라고 압박해요.
+보게 된 사실 하나는 안다|그는 예수가 죄인인지는 모르지만 맹인이었다가 지금 본다는 사실은 분명하다고 답해요.
+치유 과정을 되묻는 지도자들|그들은 예수가 무슨 일을 했는지, 어떻게 눈을 뜨게 했는지 또 캐물어요.
+다시 듣겠느냐고 되묻다|그는 이미 답했는데 왜 다시 듣느냐며 그들도 예수의 제자가 되려는지 물어요.
+모세의 제자라 주장함|바리새인들은 그를 욕하며 자기들은 모세의 제자라고 주장해요.
+어디서 왔는지 모른다고 함|그들은 하나님이 모세에게 말씀하신 것은 알지만 예수의 출신은 모른다고 말해요.
+기적을 보고도 모른다는 반문|그 사람은 눈을 뜨게 한 표적을 보고도 예수가 어디서 왔는지 모른다는 것이 이상하다고 해요.
+하나님은 경건한 이를 들으심|그는 하나님께서 죄인의 말이 아니라 뜻을 행하는 경건한 사람의 말을 들으신다고 말해요.
+창세 이후 없던 치유|그는 태어날 때부터 맹인이 눈을 뜬 일은 전례가 없었다고 증언해요.
+하나님에게서 오신 분이라 증언|그는 예수가 하나님에게서 오지 않았다면 아무 일도 할 수 없다고 단언해요.
+회당 밖으로 쫓겨남|지도자들은 그를 꾸짖고 회당에서 내쫓아요.
+쫓겨난 이를 찾아오신 예수|예수께서는 그 사람이 쫓겨났다는 소식을 듣고 찾아와 인자를 믿느냐고 물으세요.
+누구인지 묻는 사람|그 사람은 주님이 누구인지 알려 주시면 믿겠다고 답해요.
+말하고 있는 이가 바로 그분|예수께서는 그가 이미 보았고 지금 말하는 자신이 인자라고 알려 주세요.
+믿고 경배하는 사람|그는 예수를 믿는다고 고백하고 엎드려 경배해요.
+보지 못한 이와 본다고 하는 이|예수께서는 보지 못하는 이는 보게 하고 본다고 하는 이는 눈멀게 하려 왔다고 하세요.
+우리도 맹인인지 묻는 바리새인|곁의 바리새인들은 자신들도 맹인이냐고 반문해요.
+죄가 그대로 남았다고 답하심|예수께서는 그들이 보지 못한다고 인정했다면 죄가 없겠지만 본다고 하니 죄가 남는다고 하세요.
+`,[
+{from:1,to:7,actors:["예수","맹인이었던 사람","제자들"],setting:"road",prop:"water",actions:["walk","look","question","teach","kneel","wash"]},
+{from:8,to:17,actors:["맹인이었던 사람","이웃 사람들","바리새인들"],setting:"pool",prop:"water",actions:["gather","question","testify","lead","inspect","argue"]},
+{from:18,to:23,actors:["맹인이었던 사람","부모","유대 지도자들"],setting:"courtyard",prop:"scroll",actions:["question","answer","testify","hesitate","retreat","point"]},
+{from:24,to:34,actors:["맹인이었던 사람","바리새인들","유대 지도자들"],setting:"courtyard",prop:"scroll",actions:["summon","question","testify","argue","accuse","expel"]},
+{from:35,to:41,actors:["예수","맹인이었던 사람","바리새인들"],setting:"road",prop:"lamp",actions:["approach","question","answer","reveal","bow","teach"]}
+],["예수","맹인이었던 사람","제자들","이웃 사람들","바리새인들","유대 지도자들","부모"]);
+add(10,`
+문을 넘는 도둑과 강도|예수께서는 문이 아닌 곳으로 우리에 들어가는 자를 도둑과 강도에 비유하세요.
+문으로 드는 목자|문으로 들어가는 이는 양을 돌보는 목자라고 하세요.
+양의 이름을 부르는 목자|문지기가 문을 열고 양들은 목자의 음성을 알아들으며 목자는 자기 양의 이름을 불러 이끌어요.
+앞서가면 따라오는 양들|목자가 양들을 이끌고 앞서가면 양들은 그의 음성을 알아듣고 따라가요.
+낯선 음성에서 도망하는 양|양들은 낯선 사람의 목소리는 알지 못해 그를 따르지 않고 도망해요.
+비유를 깨닫지 못한 청중|예수의 비유를 들은 사람들은 그 말씀이 무슨 뜻인지 깨닫지 못해요.
+양의 문이라 하신 예수|예수께서는 다시 설명하시며 자신이 양의 문이라고 선포하세요.
+양이 듣지 않은 도둑들|예수보다 먼저 온 자들은 도둑과 강도이며 양들이 그들을 따르지 않았다고 하세요.
+문으로 들어가 얻는 구원|예수께서는 자신을 통해 들어오는 이는 구원받고 드나들며 꼴을 얻는다고 하세요.
+풍성한 생명을 주러 오심|도둑은 훔치고 죽이지만 예수께서는 양이 풍성한 생명을 얻게 하러 오셨어요.
+양을 위해 목숨을 버리는 목자|예수께서는 양들을 위해 목숨을 내놓는 선한 목자라고 하세요.
+이리를 보고 달아나는 삯꾼|삯꾼은 이리가 나타나면 양을 버리고 달아나며 양들은 흩어져요.
+양을 돌보지 않는 삯꾼|삯꾼이 달아나는 까닭은 양을 자기 것으로 여기지 않고 돌보지 않기 때문이에요.
+양을 알고 양에게 알려진 목자|예수께서는 자신이 양을 알고 양도 자신을 안다고 말씀하세요.
+아버지를 알고 양을 위해 내놓는 생명|예수께서는 아버지와 서로 아는 것처럼 양을 위해 목숨을 버린다고 하세요.
+다른 양도 한 무리가 되리라|예수께서는 이 우리 밖의 다른 양도 이끌어 한 무리와 한 목자가 되게 하세요.
+다시 얻으려 스스로 내놓는 생명|예수께서는 아버지께서 자신을 사랑하시는 까닭이 생명을 스스로 내놓고 다시 얻기 때문이라고 하세요.
+생명을 내놓고 다시 얻을 권세|예수께서는 누구도 생명을 빼앗지 못하며 스스로 내놓고 다시 얻을 권세를 받았다고 하세요.
+말씀을 두고 다시 갈린 유대인|이 말씀 때문에 유대인들 사이에 다시 의견이 갈려요.
+미쳤다며 듣지 말라는 이들|많은 사람은 예수가 귀신 들려 미쳤다며 그의 말을 듣지 말라고 해요.
+맹인을 고칠 수 있느냐는 반문|다른 이들은 귀신이 맹인의 눈을 뜨게 할 수 있겠느냐며 반문해요.
+겨울 수전절|예루살렘에 수전절이 이르고 겨울이 돼요.
+솔로몬 행각을 거니심|예수께서는 성전 안 솔로몬 행각을 거니세요.
+그리스도인지 밝히라는 요구|유대인들은 예수를 둘러싸고 그리스도라면 분명히 말하라고 요구해요.
+아버지의 일이 증언함|예수께서는 이미 말했지만 믿지 않으며 아버지의 이름으로 한 일들이 자신을 증언한다고 답하세요.
+양이 아니어서 믿지 않는 이들|예수께서는 그들이 자신의 양이 아니기에 믿지 않는다고 하세요.
+목자의 음성을 듣고 따르는 양|예수께서는 자기 양은 음성을 듣고 자신을 따라온다고 하세요.
+영원한 생명을 주는 손|예수께서는 양에게 영생을 주며 아무도 그들을 자기 손에서 빼앗지 못한다고 약속하세요.
+아버지 손에서도 빼앗지 못함|양들을 주신 아버지는 만물보다 크시며 누구도 아버지의 손에서 빼앗지 못한다고 하세요.
+아버지와 하나라 선언하심|예수께서는 자신과 아버지가 하나라고 말씀하세요.
+돌을 든 유대인들|유대인들은 예수를 치려고 다시 돌을 들어요.
+선한 일을 두고 돌을 드느냐|예수께서는 아버지에게서 온 선한 일 가운데 무엇 때문에 자신을 돌로 치려는지 물으세요.
+신성모독이라 고발함|유대인들은 선한 일 때문이 아니라 사람이 하나님이라 한다며 예수를 고발해요.
+율법의 표현을 들어 답하심|예수께서는 그들의 율법에도 하나님의 말씀을 받은 사람을 신이라 부른 기록이 있다고 되물으세요.
+성경은 폐할 수 없다는 말씀|예수께서는 성경의 말씀은 폐할 수 없다고 상기시키세요.
+하나님의 아들이라 하신 이유|아버지께서 거룩하게 해 보내신 자신이 하나님의 아들이라 한 일을 신성모독이라 하느냐고 물으세요.
+아버지의 일을 하지 않는다면|예수께서는 아버지의 일을 하지 않는다면 믿지 말라고 하세요.
+행한 일을 보고 믿으라|예수께서는 자신을 믿기 어렵더라도 행한 일은 믿어 아버지와 자신의 하나 됨을 알라고 하세요.
+손에서 벗어나 떠나심|사람들이 예수를 잡으려 하지만 예수께서는 그들 손을 벗어나 나가세요.
+요단 건너편에 머무심|예수께서는 요한이 처음 세례를 베풀던 요단 건너편으로 가서 머무세요.
+요한의 증언을 기억한 사람들|많은 사람은 요한이 예수를 두고 한 말이 모두 참이었다고 기억해요.
+그곳에서 믿은 많은 이들|요단 건너편에서 많은 사람이 예수를 믿어요.
+`,[
+{from:1,to:6,actors:["예수","목자","양","문지기","낯선 이"],setting:"field",prop:"gate",actions:["approach","open","call","lead","follow","retreat"]},
+{from:7,to:18,actors:["예수","양","선한 목자","삯꾼","이리"],setting:"field",prop:"sheep",actions:["proclaim","gather","lead","scatter","brace","release"]},
+{from:19,to:30,actors:["예수","유대인들","무리"],setting:"temple",prop:"scroll",actions:["argue","gather","question","answer","follow","bless"]},
+{from:31,to:39,actors:["예수","유대인들"],setting:"temple",prop:"stone",actions:["raise","question","accuse","teach","point","retreat"]},
+{from:40,to:42,actors:["예수","무리","요한의 제자들"],setting:"river",prop:"water",actions:["depart","gather","testify","listen","believe","remain"]}
+],["예수","목자","양","문지기","낯선 이","선한 목자","삯꾼","이리","유대인들","무리","요한의 제자들"]);
