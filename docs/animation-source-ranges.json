@@ -9,8 +9,8 @@
     },
     {
       "code": "exo",
-      "scenes": 100,
-      "passageRangesFound": 100,
+      "scenes": 111,
+      "passageRangesFound": 111,
       "missing": []
     },
     {
@@ -21,14 +21,14 @@
     },
     {
       "code": "num",
-      "scenes": 124,
-      "passageRangesFound": 124,
+      "scenes": 126,
+      "passageRangesFound": 126,
       "missing": []
     },
     {
       "code": "deu",
-      "scenes": 125,
-      "passageRangesFound": 125,
+      "scenes": 126,
+      "passageRangesFound": 126,
       "missing": []
     },
     {
@@ -45,8 +45,8 @@
     },
     {
       "code": "rut",
-      "scenes": 13,
-      "passageRangesFound": 13,
+      "scenes": 14,
+      "passageRangesFound": 14,
       "missing": []
     },
     {
@@ -57,8 +57,8 @@
     },
     {
       "code": "2sa",
-      "scenes": 114,
-      "passageRangesFound": 114,
+      "scenes": 118,
+      "passageRangesFound": 118,
       "missing": []
     },
     {
@@ -81,32 +81,32 @@
     },
     {
       "code": "2ch",
-      "scenes": 113,
-      "passageRangesFound": 113,
+      "scenes": 114,
+      "passageRangesFound": 114,
       "missing": []
     },
     {
       "code": "ezr",
-      "scenes": 28,
-      "passageRangesFound": 28,
+      "scenes": 29,
+      "passageRangesFound": 29,
       "missing": []
     },
     {
       "code": "neh",
-      "scenes": 34,
-      "passageRangesFound": 34,
+      "scenes": 35,
+      "passageRangesFound": 35,
       "missing": []
     },
     {
       "code": "est",
-      "scenes": 23,
-      "passageRangesFound": 23,
+      "scenes": 25,
+      "passageRangesFound": 25,
       "missing": []
     },
     {
       "code": "job",
-      "scenes": 60,
-      "passageRangesFound": 60,
+      "scenes": 61,
+      "passageRangesFound": 61,
       "missing": []
     },
     {
@@ -165,8 +165,8 @@
     },
     {
       "code": "hos",
-      "scenes": 16,
-      "passageRangesFound": 16,
+      "scenes": 47,
+      "passageRangesFound": 47,
       "missing": []
     },
     {
@@ -177,8 +177,8 @@
     },
     {
       "code": "amo",
-      "scenes": 16,
-      "passageRangesFound": 16,
+      "scenes": 26,
+      "passageRangesFound": 26,
       "missing": []
     },
     {
@@ -195,8 +195,8 @@
     },
     {
       "code": "mic",
-      "scenes": 10,
-      "passageRangesFound": 10,
+      "scenes": 17,
+      "passageRangesFound": 17,
       "missing": []
     },
     {
@@ -213,8 +213,8 @@
     },
     {
       "code": "zep",
-      "scenes": 8,
-      "passageRangesFound": 8,
+      "scenes": 9,
+      "passageRangesFound": 9,
       "missing": []
     },
     {
@@ -225,14 +225,14 @@
     },
     {
       "code": "zec",
-      "scenes": 22,
-      "passageRangesFound": 22,
+      "scenes": 26,
+      "passageRangesFound": 26,
       "missing": []
     },
     {
       "code": "mal",
-      "scenes": 7,
-      "passageRangesFound": 7,
+      "scenes": 9,
+      "passageRangesFound": 9,
       "missing": []
     }
   ]

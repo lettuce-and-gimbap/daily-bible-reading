@@ -1,9 +1,9 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';import {buildWorldModel} from '../js/features/pixel-bible/world.js';import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';import {objectLinesFor} from '../js/features/pixel-bible/object-scenes.js';
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
-test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,80);assert.equal(review.books.find(b=>b.code==='rut').scenes,13);assert.equal(review.books.find(b=>b.code==='1sa').scenes,143);assert.equal(review.books.find(b=>b.code==='2sa').scenes,114);assert.equal(review.books.find(b=>b.code==='1ki').scenes,76);assert.equal(review.books.find(b=>b.code==='2ki').scenes,123);assert.equal(review.books.find(b=>b.code==='1ch').scenes,100);assert.equal(review.books.find(b=>b.code==='2ch').scenes,113);assert.equal(review.books.find(b=>b.code==='ezr').scenes,28);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
+test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,80);assert.equal(review.books.find(b=>b.code==='rut').scenes,14);assert.equal(review.books.find(b=>b.code==='1sa').scenes,143);assert.equal(review.books.find(b=>b.code==='2sa').scenes,118);assert.equal(review.books.find(b=>b.code==='1ki').scenes,76);assert.equal(review.books.find(b=>b.code==='2ki').scenes,123);assert.equal(review.books.find(b=>b.code==='1ch').scenes,100);assert.equal(review.books.find(b=>b.code==='2ch').scenes,114);assert.equal(review.books.find(b=>b.code==='ezr').scenes,29);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,2748);assert.equal(c.curatedSupplementalScenes,2033);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),1990);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,2828);assert.equal(c.curatedSupplementalScenes,2127);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),2084);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('레위기 27장 859절이 모두 장면 참조에 포함되고 율례의 핵심 구간을 구분한다',()=>{
@@ -14,13 +14,13 @@ test('레위기 27장 859절이 모두 장면 참조에 포함되고 율례의 �
 });
 test('민수기 36장 1,288절을 장면 범위로 모두 덮고 광야 여정의 전환 사건을 나눈다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'num.json')),covered=new Set(data.scenes.flatMap(s=>s.verseNumbers.map(v=>`${s.chapter}:${v}`)));
- assert.equal(data.scenes.length,124);assert.equal(covered.size,1288);
+ assert.equal(data.scenes.length,126);assert.equal(covered.size,1288);
  for(let ch=1;ch<=36;ch++){const verses=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json')).books.num.reviewedVerses.filter(v=>v.startsWith(`${ch}:`));for(const v of verses)assert(covered.has(v),v);}
  for(const ref of ['민수기 10:1-10','민수기 13:1-16','민수기 21:4-7','민수기 22:22-35','민수기 27:1-11','민수기 35:9-15'])assert(data.scenes.some(s=>s.ref===ref),ref);
 });
 test('신명기 34장 959절을 모두 장면화하고 제공 원문에서 빠진 역본 절을 별도로 기록한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'deu.json')),covered=new Set(data.scenes.flatMap(s=>s.verseNumbers.map(v=>`${s.chapter}:${v}`))),progress=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json'));
- assert.equal(data.scenes.length,125);assert.equal(covered.size,959);
+ assert.equal(data.scenes.length,126);assert.equal(covered.size,959);
  for(let ch=1;ch<=34;ch++){const verses=progress.books.deu.reviewedVerses.filter(v=>v.startsWith(`${ch}:`));for(const v of verses)assert(covered.has(v),v);}
  for(const ref of ['신명기 4:41-49','신명기 6:1-5','신명기 15:7-11','신명기 28:45-57','신명기 32:36-43'])assert(data.scenes.some(s=>s.ref===ref),ref);
  assert.deepEqual(progress.books.deu.sourceEditionGaps.gae,['6:18','6:19','15:4','15:5','30:9','30:10']);assert.deepEqual(progress.books.deu.fullCoverageBy,['easy','han','saenew']);
@@ -42,7 +42,7 @@ test('사사기 21장 618절을 빠짐없이 덮고 드보라의 노래를 네 �
 });
 test('룻기 4장 족보 장면까지 85절을 덮고 NIV 추출의 누락 행을 남긴다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'rut.json')),covered=new Set(data.scenes.flatMap(s=>s.verseNumbers.map(v=>`${s.chapter}:${v}`))),progress=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json'));
- assert.equal(data.scenes.length,13);assert.equal(covered.size,85);assert.equal(progress.books.rut.reviewedCount,85);assert.equal(progress.books.rut.remainingCount,0);
+ assert.equal(data.scenes.length,14);assert.equal(covered.size,85);assert.equal(progress.books.rut.reviewedCount,85);assert.equal(progress.books.rut.remainingCount,0);
  for(let ch=1;ch<=4;ch++)for(const ref of progress.books.rut.reviewedVerses.filter(v=>v.startsWith(`${ch}:`)))assert(covered.has(ref),ref);
  const genealogy=data.scenes.find(s=>s.ref==='룻기 4:18-22');assert(genealogy);assert.equal(genealogy.animation.motif,'genealogy');assert.equal(genealogy.animation.mode,'illustration');
  assert.deepEqual(progress.books.rut.sourceEditionGaps.niv,['4:7']);assert.deepEqual(progress.books.rut.fullCoverageBy,['gae','easy','han','hyun','saenew']);
@@ -57,7 +57,7 @@ test('사무엘상 31장 810절을 모든 장면 참조로 덮고 역본별 행 
 });
 test('사무엘하 24장 695절을 모두 덮고 다윗의 노래를 시적 단락으로 분리한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'2sa.json')),covered=new Set(data.scenes.flatMap(s=>s.verseNumbers.map(v=>`${s.chapter}:${v}`))),progress=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json'));
- assert.equal(data.scenes.length,114);assert.equal(covered.size,695);assert.equal(progress.books['2sa'].reviewedCount,695);assert.equal(progress.books['2sa'].remainingCount,0);
+ assert.equal(data.scenes.length,118);assert.equal(covered.size,695);assert.equal(progress.books['2sa'].reviewedCount,695);assert.equal(progress.books['2sa'].remainingCount,0);
  for(let ch=1;ch<=24;ch++)for(const ref of progress.books['2sa'].reviewedVerses.filter(v=>v.startsWith(`${ch}:`)))assert(covered.has(ref),ref);
  const song=data.scenes.filter(s=>s.chapter===22);assert.equal(song.length,7);assert(song.every(s=>s.animation.mode==='illustration'));assert.equal(song.filter(s=>s.id.startsWith('ot-2sa-review-')).length,6);
  for(const ref of ['사무엘하 1:19-27','사무엘하 13:15-19','사무엘하 22:8-20','사무엘하 23:24-39'])assert(data.scenes.some(s=>s.ref===ref),ref);
@@ -84,18 +84,18 @@ test('역대상 942절은 보강 장면으로 빠짐없이 연결하고 역본 �
 
 test('역대하 822절 장면이 빠짐없이 이어지고 원자료 역본 누락을 따로 기록한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'2ch.json')),progress=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json')).books['2ch'];
- assert.equal(data.scenes.length,113);assert.equal(progress.totalVerses,822);assert.equal(progress.reviewedCount,822);assert.equal(progress.remainingCount,0);
+ assert.equal(data.scenes.length,114);assert.equal(progress.totalVerses,822);assert.equal(progress.reviewedCount,822);assert.equal(progress.remainingCount,0);
  assert.deepEqual(progress.fullCoverageBy,['gae','easy','han','hyun','saenew']);assert.equal(progress.sourceEditionGaps.niv.length,11);
- const coverage=new Map();for(const s of data.scenes.filter(x=>x.id!=='ot-voice-28'))for(const verse of s.verseNumbers){const key=`${s.chapter}:${verse}`,prior=coverage.get(key);if(prior){assert.equal(key,'5:13');assert.deepEqual(new Set([prior,s.id]),new Set(['ot-2ch-5-2','ot-2ch-5-3']));}else coverage.set(key,s.id);}
+ const coverage=new Map();for(const s of data.scenes.filter(x=>!x.id.startsWith('ot-voice-')))for(const verse of s.verseNumbers){const key=`${s.chapter}:${verse}`,prior=coverage.get(key);if(prior){assert.equal(key,'5:13');assert.deepEqual(new Set([prior,s.id]),new Set(['ot-2ch-5-2','ot-2ch-5-3']));}else coverage.set(key,s.id);}
  for(const [ch,start,end] of progress.ranges)for(let verse=start;verse<=end;verse++)assert(coverage.has(`${ch}:${verse}`),`${ch}:${verse} uncovered`);
  for(const ref of ['역대하 1:14-17','역대하 10:12-15','역대하 20:23-25','역대하 23:16-21','역대하 32:20-23'])assert(data.scenes.some(s=>s.ref===ref),ref);
 });
 
 test('에스라 280절은 사건·귀환 명단 장면으로 덮고 NIV 누락 행을 남긴다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'ezr.json')),progress=JSON.parse(fs.readFileSync('docs/ot-verse-review-progress.json')).books['ezr'];
- assert.equal(data.scenes.length,28);assert.equal(progress.totalVerses,280);assert.equal(progress.reviewedCount,280);assert.equal(progress.remainingCount,0);
+ assert.equal(data.scenes.length,29);assert.equal(progress.totalVerses,280);assert.equal(progress.reviewedCount,280);assert.equal(progress.remainingCount,0);
  assert.deepEqual(progress.fullCoverageBy,['gae','easy','han','hyun','saenew']);assert.equal(progress.sourceEditionGaps.niv.length,10);
- const coverage=new Map();for(const s of data.scenes)for(const verse of s.verseNumbers){const key=`${s.chapter}:${verse}`,prior=coverage.get(key);if(prior){assert(['3:10','3:11'].includes(key));assert.deepEqual(new Set([prior,s.id]),new Set(['ot-ezr-3-2','ot-voice-29']));}else coverage.set(key,s.id);}
+ const coverage=new Map();for(const s of data.scenes.filter(x=>!x.id.startsWith('ot-voice-')))for(const verse of s.verseNumbers){const key=`${s.chapter}:${verse}`,prior=coverage.get(key);if(prior){assert(['3:10','3:11'].includes(key));assert.deepEqual(new Set([prior,s.id]),new Set(['ot-ezr-3-2','ot-ezr-review-03-10']));}else coverage.set(key,s.id);}
  for(const [ch,start,end] of progress.ranges)for(let verse=start;verse<=end;verse++)assert(coverage.has(`${ch}:${verse}`),`${ch}:${verse} uncovered`);
  for(const ref of ['에스라 3:7-9','에스라 8:1-14'])assert(data.scenes.some(s=>s.ref===ref),ref);
 });
@@ -119,7 +119,7 @@ test('사사기 누락 사건을 보강하고 양털 표징을 전용 오브젝�
 
 test('룻기의 가족 상실·귀향·타작마당 약속·오벳 탄생 누락을 장면으로 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'rut.json')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/rut.json'));
- assert.equal(data.scenes.length,13);for(const id of ['ot-rut-extra-01','ot-rut-extra-02','ot-rut-extra-03','ot-rut-extra-04'])assert(data.scenes.some(s=>s.id===id));
+ assert.equal(data.scenes.length,14);for(const id of ['ot-rut-extra-01','ot-rut-extra-02','ot-rut-extra-03','ot-rut-extra-04'])assert(data.scenes.some(s=>s.id===id));
  const threshing=data.scenes.find(s=>s.id==='ot-voice-15');assert.deepEqual(threshing.actors,['룻','보아스']);assert.equal(threshing.ref,'룻기 3:6-13');assert.equal(threshing.actorLines.보아스.length,1);
  for(const s of data.scenes.filter(x=>x.id.startsWith('ot-rut-extra-')))assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)));
 });
