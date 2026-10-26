@@ -349,15 +349,15 @@
     },
     {
       "code": "ezk",
-      "payloadSha256": "4fb76d54e111db4e19b443d1d39f260115192fe3f02f24d90757a8033b73d041",
-      "scenes": 17,
-      "existing": 17,
+      "payloadSha256": "33a8c491f7077cf098a87aac43f6686cb220017dbca9373eed7f27e683b5fca5",
+      "scenes": 35,
+      "existing": 35,
       "restored": 0,
       "corrected": 0,
-      "planned": 17,
+      "planned": 35,
       "modes": {
         "vision": 2,
-        "illustration": 13,
+        "illustration": 31,
         "reconstruction": 2
       },
       "status": "authored-awaiting-browser-review"

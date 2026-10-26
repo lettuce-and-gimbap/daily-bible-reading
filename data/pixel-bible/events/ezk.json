@@ -485,6 +485,729 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"join-rods","lead":"에스겔","target":null,"mode":"reconstruction","setting":"courtyard","effect":"joined","emotion":"determined","prop":"staff","beats":[{"action":"grasp","duration":1,"actor":"에스겔"},{"action":"lift","duration":1.2,"actor":"에스겔"},{"action":"align","duration":1.5,"actor":"에스겔"},{"action":"join","duration":1.8,"actor":"에스겔"},{"action":"hold","duration":1.5,"actor":"에스겔"},{"action":"show","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 37:16-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-1-0",
+      "code": "ezk",
+      "chapter": 1,
+      "title": "그발 강가에서 본 하나님의 영광",
+      "actors": [
+        "에스겔",
+        "네 생물",
+        "여호야긴"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 1:1-28",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 포로지 그발 강가에서 폭풍과 생물, 바퀴, 보좌의 환상을 보아요."
+      ],
+      "study": "포로지 그발 강가에서 폭풍과 생물, 바퀴, 보좌의 환상을 보아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision","lead":"에스겔","target":"네 생물","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"에스겔"},{"action":"lie","duration":1.2,"actor":"에스겔"},{"action":"sleep","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.8,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"rise","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 1:1-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-2-0",
+      "code": "ezk",
+      "chapter": 3,
+      "title": "두루마리를 받아 먹는 에스겔",
+      "actors": [
+        "에스겔",
+        "이스라엘 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 3:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 두루마리를 받아 먹고 꿀처럼 달았다고 해요. 예언자의 사명을 상징하는 환상이에요."
+      ],
+      "study": "두루마리를 받아 먹고 꿀처럼 달았다고 해요. 예언자의 사명을 상징하는 환상이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision-record","lead":"에스겔","target":"이스라엘 족속","mode":"illustration","setting":"night","effect":"scroll","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"look","duration":1.2,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"read","duration":1.8,"actor":"에스겔"},{"action":"write","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 3:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-3-0",
+      "code": "ezk",
+      "chapter": 3,
+      "title": "포로 곁에서 파수꾼의 책임을 받다",
+      "actors": [
+        "에스겔",
+        "델아빕의 포로들"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 3:12-21",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 포로 공동체 가운데 파수꾼의 책임을 맡아요."
+      ],
+      "study": "포로 공동체 가운데 파수꾼의 책임을 맡아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"warning","lead":"에스겔","target":"델아빕의 포로들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"turn","duration":1.2,"actor":"에스겔"},{"action":"speak","duration":1.5,"actor":"에스겔"},{"action":"point","duration":1.8,"actor":"에스겔"},{"action":"listen","duration":1.5,"actor":"에스겔"},{"action":"lower","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 3:12-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-4-0",
+      "code": "ezk",
+      "chapter": 4,
+      "title": "벽돌 위에 예루살렘을 그려 포위를 보이다",
+      "actors": [
+        "에스겔",
+        "이스라엘 족속",
+        "유다 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 4:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 벽돌에 성을 새겨 예루살렘 포위를 보이는 표징이에요."
+      ],
+      "study": "벽돌에 성을 새겨 예루살렘 포위를 보이는 표징이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"에스겔","target":"이스라엘 족속","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"read","duration":1.2,"actor":"에스겔"},{"action":"look","duration":1.5,"actor":"에스겔"},{"action":"point","duration":1.8,"actor":"에스겔"},{"action":"listen","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 4:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-4-1",
+      "code": "ezk",
+      "chapter": 4,
+      "title": "오랜 날 동안 한쪽으로 누워 징조를 보이다",
+      "actors": [
+        "에스겔",
+        "이스라엘 족속",
+        "유다 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 4:4-8",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 정해진 기간 옆으로 누워 이스라엘과 유다의 죄를 짊어지는 표징을 보여 줘요."
+      ],
+      "study": "정해진 기간 옆으로 누워 이스라엘과 유다의 죄를 짊어지는 표징을 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"에스겔","target":"이스라엘 족속","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"read","duration":1.2,"actor":"에스겔"},{"action":"look","duration":1.5,"actor":"에스겔"},{"action":"point","duration":1.8,"actor":"에스겔"},{"action":"listen","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 4:4-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-5-0",
+      "code": "ezk",
+      "chapter": 5,
+      "title": "머리털을 나누어 심판의 표징을 보이다",
+      "actors": [
+        "에스겔",
+        "예루살렘"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 5:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 머리털을 나누는 표징으로 흩어짐과 남은 자를 나타내요. 폭력은 도식으로 표현해요."
+      ],
+      "study": "머리털을 나누는 표징으로 흩어짐과 남은 자를 나타내요. 폭력은 도식으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"에스겔","target":"예루살렘","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"read","duration":1.2,"actor":"에스겔"},{"action":"look","duration":1.5,"actor":"에스겔"},{"action":"point","duration":1.8,"actor":"에스겔"},{"action":"listen","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-8-0",
+      "code": "ezk",
+      "chapter": 8,
+      "title": "성전에서 본 여러 우상 숭배의 모습",
+      "actors": [
+        "에스겔",
+        "유다 장로들",
+        "장로 칠십 명",
+        "야아사냐(사반의 아들)"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 8:1-18",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 성전의 우상 숭배 환상을 증인과 장소별로 나눠 보여 줘요."
+      ],
+      "study": "성전의 우상 숭배 환상을 증인과 장소별로 나눠 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision","lead":"에스겔","target":"유다 장로들","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"에스겔"},{"action":"lie","duration":1.2,"actor":"에스겔"},{"action":"sleep","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.8,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"rise","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 8:1-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-12-0",
+      "code": "ezk",
+      "chapter": 12,
+      "title": "포로 행장을 꾸려 떠날 준비를 하다",
+      "actors": [
+        "에스겔",
+        "예루살렘의 왕(시드기야)",
+        "반역하는 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 12:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 낮에는 포로 행장을 들고 나가고 밤에는 벽을 뚫어 왕과 백성의 포로됨을 표징으로 보여 줘요."
+      ],
+      "study": "낮에는 포로 행장을 들고 나가고 밤에는 벽을 뚫어 왕과 백성의 포로됨을 표징으로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"journey","lead":"에스겔","target":"예루살렘의 왕(시드기야)","mode":"illustration","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"gather","duration":1.2,"actor":"에스겔"},{"action":"carry","duration":1.5,"actor":"에스겔"},{"action":"walk","duration":1.8,"actor":"에스겔"},{"action":"walk","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 12:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-13-0",
+      "code": "ezk",
+      "chapter": 13,
+      "title": "회칠한 담과 거짓 예언을 책망하다",
+      "actors": [
+        "거짓 선지자들",
+        "거짓 여선지자들",
+        "이스라엘 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 13:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거짓 예언자들이 허술한 담에 회칠해 안전한 듯 꾸민다고 책망해요."
+      ],
+      "study": "거짓 예언자들이 허술한 담에 회칠해 안전한 듯 꾸민다고 책망해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"warning","lead":"거짓 선지자들","target":"거짓 여선지자들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"거짓 선지자들"},{"action":"turn","duration":1.2,"actor":"거짓 선지자들"},{"action":"speak","duration":1.5,"actor":"거짓 선지자들"},{"action":"point","duration":1.8,"actor":"거짓 선지자들"},{"action":"listen","duration":1.5,"actor":"거짓 선지자들"},{"action":"lower","duration":1.2,"actor":"거짓 선지자들"}],"duration":8.2,"support":null,"ref":"에스겔 13:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-18-0",
+      "code": "ezk",
+      "chapter": 18,
+      "title": "각 사람의 책임과 돌이킴을 전하다",
+      "actors": [
+        "이스라엘 족속",
+        "의로운 사람",
+        "강포한 아들",
+        "의로운 손자"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 18:1-32",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 조상의 죄만 탓하는 속담을 바로잡고 각자 돌이켜 살 길을 택하라고 전해요."
+      ],
+      "study": "조상의 죄만 탓하는 속담을 바로잡고 각자 돌이켜 살 길을 택하라고 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"warning","lead":"이스라엘 족속","target":"의로운 사람","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 족속"},{"action":"turn","duration":1.2,"actor":"이스라엘 족속"},{"action":"speak","duration":1.5,"actor":"이스라엘 족속"},{"action":"point","duration":1.8,"actor":"이스라엘 족속"},{"action":"listen","duration":1.5,"actor":"이스라엘 족속"},{"action":"lower","duration":1.2,"actor":"이스라엘 족속"}],"duration":8.2,"support":null,"ref":"에스겔 18:1-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-23-0",
+      "code": "ezk",
+      "chapter": 23,
+      "title": "두 자매의 비유로 사마리아와 예루살렘을 꾸짖다",
+      "actors": [
+        "오홀라(사마리아)",
+        "오홀리바(예루살렘)"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 23:1-35",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 두 자매 비유로 배반을 고발해요. 성적 비유는 문자 그대로 재현하지 않아요."
+      ],
+      "study": "두 자매 비유로 배반을 고발해요. 성적 비유는 문자 그대로 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"parable","lead":"오홀라(사마리아)","target":"오홀리바(예루살렘)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오홀라(사마리아)"},{"action":"read","duration":1.2,"actor":"오홀라(사마리아)"},{"action":"look","duration":1.5,"actor":"오홀라(사마리아)"},{"action":"point","duration":1.8,"actor":"오홀라(사마리아)"},{"action":"listen","duration":1.5,"actor":"오홀라(사마리아)"},{"action":"bow","duration":1.2,"actor":"오홀라(사마리아)"}],"duration":8.2,"support":null,"ref":"에스겔 23:1-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-24-0",
+      "code": "ezk",
+      "chapter": 24,
+      "title": "아내의 죽음을 애도하지 말라는 표징",
+      "actors": [
+        "에스겔",
+        "에스겔의 아내",
+        "포로 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 24:15-27",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 개인적 상실이 공동체의 예루살렘 상실을 가리켜요. 죽음을 직접 재현하지 않고 침묵을 상징해요."
+      ],
+      "study": "개인적 상실이 공동체의 예루살렘 상실을 가리켜요. 죽음을 직접 재현하지 않고 침묵을 상징해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"에스겔","target":"에스겔의 아내","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"read","duration":1.2,"actor":"에스겔"},{"action":"look","duration":1.5,"actor":"에스겔"},{"action":"point","duration":1.8,"actor":"에스겔"},{"action":"listen","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 24:15-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-33-0",
+      "code": "ezk",
+      "chapter": 33,
+      "title": "예루살렘 함락 소식을 전하는 도망자",
+      "actors": [
+        "에스겔",
+        "도망한 자",
+        "포로 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 33:21-22",
+      "verseNumbers": [
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 도망자가 포로지에 함락 소식을 전하고 에스겔의 입이 다시 열려요."
+      ],
+      "study": "도망자가 포로지에 함락 소식을 전하고 에스겔의 입이 다시 열려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"report","lead":"에스겔","target":"도망한 자","mode":"illustration","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스겔"},{"action":"speak","duration":1.2,"actor":"에스겔"},{"action":"point","duration":1.5,"actor":"에스겔"},{"action":"listen","duration":1.8,"actor":"에스겔"},{"action":"lower","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 33:21-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-36-0",
+      "code": "ezk",
+      "chapter": 36,
+      "title": "새 마음과 새 영을 약속하다",
+      "actors": [
+        "이스라엘 족속",
+        "이스라엘 산들"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 36:16-38",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 흩어진 백성을 모으고 새 마음과 새 영을 주시겠다는 회복의 약속이에요."
+      ],
+      "study": "흩어진 백성을 모으고 새 마음과 새 영을 주시겠다는 회복의 약속이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"promise","lead":"이스라엘 족속","target":"이스라엘 산들","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 족속"},{"action":"lift","duration":1.2,"actor":"이스라엘 족속"},{"action":"speak","duration":1.5,"actor":"이스라엘 족속"},{"action":"bless","duration":1.8,"actor":"이스라엘 족속"},{"action":"lower","duration":1.5,"actor":"이스라엘 족속"},{"action":"bow","duration":1.2,"actor":"이스라엘 족속"}],"duration":8.2,"support":null,"ref":"에스겔 36:16-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-37-0",
+      "code": "ezk",
+      "chapter": 37,
+      "title": "마른 뼈들이 살아나는 환상",
+      "actors": [
+        "에스겔",
+        "마른 뼈들",
+        "생기"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 37:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 마른 뼈가 이어지고 생기가 들어서는 환상으로 공동체 회복을 보여 줘요."
+      ],
+      "study": "마른 뼈가 이어지고 생기가 들어서는 환상으로 공동체 회복을 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision","lead":"에스겔","target":"마른 뼈들","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"에스겔"},{"action":"lie","duration":1.2,"actor":"에스겔"},{"action":"sleep","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.8,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"rise","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 37:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-40-0",
+      "code": "ezk",
+      "chapter": 40,
+      "title": "새 성전의 문과 뜰을 측량하다",
+      "actors": [
+        "에스겔",
+        "놋 같은 사람"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 40:1-49",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 측량하는 사람의 안내를 받아 성전 문과 뜰을 살펴요. 환상 건축은 도식으로 표현해요."
+      ],
+      "study": "측량하는 사람의 안내를 받아 성전 문과 뜰을 살펴요. 환상 건축은 도식으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision","lead":"에스겔","target":"놋 같은 사람","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"에스겔"},{"action":"lie","duration":1.2,"actor":"에스겔"},{"action":"sleep","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.8,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"rise","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 40:1-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-43-0",
+      "code": "ezk",
+      "chapter": 43,
+      "title": "성전으로 돌아오는 영광",
+      "actors": [
+        "에스겔",
+        "측량하는 사람",
+        "이스라엘 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 43:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 동쪽에서 오는 영광이 성전을 채우고 에스겔은 엎드려요."
+      ],
+      "study": "동쪽에서 오는 영광이 성전을 채우고 에스겔은 엎드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"vision","lead":"에스겔","target":"측량하는 사람","mode":"illustration","setting":"night","effect":"vision","emotion":"surprised","prop":"scene-marker","beats":[{"action":"sit","duration":1,"actor":"에스겔"},{"action":"lie","duration":1.2,"actor":"에스겔"},{"action":"sleep","duration":1.5,"actor":"에스겔"},{"action":"look","duration":1.8,"actor":"에스겔"},{"action":"startle","duration":1.5,"actor":"에스겔"},{"action":"rise","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 43:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezk-extra-47-0",
+      "code": "ezk",
+      "chapter": 47,
+      "title": "성전에서 흘러나와 바다를 살리는 강",
+      "actors": [
+        "에스겔",
+        "측량하는 사람",
+        "어부들"
+      ],
+      "object": "scene-marker",
+      "ref": "에스겔 47:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 성전 아래 물이 흘러 바다를 살리고 강가에 나무가 자라요."
+      ],
+      "study": "성전 아래 물이 흘러 바다를 살리고 강가에 나무가 자라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 환상·비유는 문자 그대로 재현하지 않고 상징으로 보여 줘요.",
+      "animation": {"version":2,"motif":"restore-water","lead":"에스겔","target":"측량하는 사람","mode":"illustration","setting":"water","effect":"restore","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"에스겔"},{"action":"lift","duration":1.2,"actor":"에스겔"},{"action":"extend","duration":1.5,"actor":"에스겔"},{"action":"lower","duration":1.8,"actor":"에스겔"},{"action":"look","duration":1.5,"actor":"에스겔"},{"action":"bow","duration":1.2,"actor":"에스겔"}],"duration":8.2,"support":null,"ref":"에스겔 47:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

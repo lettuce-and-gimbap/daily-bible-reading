@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1031,
+    "scenesInFiles": 1049,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 317
+    "curatedSupplementalScenes": 335
   },
   "books": [
     {
@@ -226,9 +226,10 @@
     {
       "code": "ezk",
       "chapters": 48,
-      "scenes": 17,
+      "scenes": 35,
       "sourceMatchedSceneCandidates": 17,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 18
     },
     {
       "code": "dan",
@@ -28236,6 +28237,10 @@
       {
         "book": "lam",
         "scenesAdded": 10
+      },
+      {
+        "book": "ezk",
+        "scenesAdded": 18
       }
     ]
   }
