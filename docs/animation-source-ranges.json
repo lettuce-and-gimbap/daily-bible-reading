@@ -3,8 +3,8 @@
   "books": [
     {
       "code": "gen",
-      "scenes": 95,
-      "passageRangesFound": 95,
+      "scenes": 91,
+      "passageRangesFound": 91,
       "missing": []
     },
     {
@@ -15,8 +15,8 @@
     },
     {
       "code": "lev",
-      "scenes": 17,
-      "passageRangesFound": 17,
+      "scenes": 16,
+      "passageRangesFound": 16,
       "missing": []
     },
     {
@@ -57,8 +57,8 @@
     },
     {
       "code": "2sa",
-      "scenes": 91,
-      "passageRangesFound": 91,
+      "scenes": 90,
+      "passageRangesFound": 90,
       "missing": []
     },
     {
@@ -81,8 +81,8 @@
     },
     {
       "code": "2ch",
-      "scenes": 90,
-      "passageRangesFound": 90,
+      "scenes": 82,
+      "passageRangesFound": 82,
       "missing": []
     },
     {
@@ -99,8 +99,8 @@
     },
     {
       "code": "est",
-      "scenes": 20,
-      "passageRangesFound": 20,
+      "scenes": 19,
+      "passageRangesFound": 19,
       "missing": []
     },
     {

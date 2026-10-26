@@ -609,36 +609,6 @@
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
       "animation": {"version":2,"motif":"serve","lead":"모르드개","target":"아하수에로","mode":"reconstruction","setting":"altar","effect":"arrange","emotion":"determined","prop":"scroll","beats":[{"action":"inspect","duration":1,"actor":"모르드개"},{"action":"grasp","duration":1.2,"actor":"모르드개"},{"action":"carry","duration":1.5,"actor":"모르드개"},{"action":"place","duration":1.8,"actor":"모르드개"},{"action":"inspect","duration":1.5,"actor":"모르드개"},{"action":"bow","duration":1.2,"actor":"모르드개"}],"duration":8.2,"support":null,"ref":"에스더 10:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-est-extra-7-0",
-      "code": "est",
-      "chapter": 7,
-      "title": "하만의 음모가 드러나고 왕의 명령으로 처형되다",
-      "actors": [
-        "에스더",
-        "하만",
-        "아하수에로",
-        "하르보나"
-      ],
-      "object": "scene-marker",
-      "ref": "에스더 7:6-10",
-      "verseNumbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 에스더가 하만을 지목하자 왕은 노하여 자리를 뜨고, 돌아와 하만이 왕후에게 엎드린 모습을 봐요. 하르보나가 세운 나무를 알리자 왕의 명령이 내려져요. 폭력 장면은 직접 묘사하지 않고 음모의 결과와 판결로 표현해요."
-      ],
-      "study": "에스더가 하만을 지목하자 왕은 노하여 자리를 뜨고, 돌아와 하만이 왕후에게 엎드린 모습을 봐요. 하르보나가 세운 나무를 알리자 왕의 명령이 내려져요. 폭력 장면은 직접 묘사하지 않고 음모의 결과와 판결로 표현해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"에스더","target":"하만","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스더"},{"action":"turn","duration":1.2,"actor":"에스더"},{"action":"speak","duration":1.5,"actor":"에스더"},{"action":"point","duration":1.8,"actor":"에스더"},{"action":"listen","duration":1.5,"actor":"에스더"},{"action":"lower","duration":1.2,"actor":"에스더"}],"duration":8.2,"support":null,"ref":"에스더 7:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

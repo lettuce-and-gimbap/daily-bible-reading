@@ -543,52 +543,6 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"cleanse","lead":"제사장","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"제사장"},{"action":"reach","duration":1.2,"actor":"제사장"},{"action":"lift","duration":1.5,"actor":"제사장"},{"action":"touch","duration":1.8,"actor":"제사장"},{"action":"lower","duration":1.5,"actor":"제사장"},{"action":"inspect","duration":1.2,"actor":"제사장"}],"duration":8.2,"support":null,"ref":"레위기 14:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-lev-extra-16-1",
-      "code": "lev",
-      "chapter": 16,
-      "title": "아론이 속죄일에 두 염소로 백성의 죄를 속하다",
-      "actors": [
-        "아론",
-        "모세",
-        "하나님"
-      ],
-      "object": "scene-marker",
-      "ref": "레위기 16:1-22",
-      "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 아론은 정해진 절차에 따라 속죄 제물을 드리고, 한 염소에는 백성의 죄를 상징적으로 맡겨 광야로 보냅니다. 의식의 순서와 죄를 제거한다는 상징을 분명히 구분해 표현해요."
-      ],
-      "study": "아론은 정해진 절차에 따라 속죄 제물을 드리고, 한 염소에는 백성의 죄를 상징적으로 맡겨 광야로 보냅니다. 의식의 순서와 죄를 제거한다는 상징을 분명히 구분해 표현해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"sacrifice","lead":"아론","target":"모세","mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"scene-marker","beats":[{"action":"gather","duration":1,"actor":"아론"},{"action":"carry","duration":1.2,"actor":"아론"},{"action":"place","duration":1.5,"actor":"아론"},{"action":"kneel","duration":1.8,"actor":"아론"},{"action":"pray","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"레위기 16:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

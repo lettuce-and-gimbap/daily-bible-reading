@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1277,
+    "scenesInFiles": 1262,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 563
+    "curatedSupplementalScenes": 548
   },
   "books": [
     {
@@ -42,7 +42,7 @@
     {
       "code": "gen",
       "chapters": 50,
-      "scenes": 95,
+      "scenes": 91,
       "sourceMatchedSceneCandidates": 75,
       "retainedLegacyScenes": 0,
       "curatedSupplementalScenes": 2
@@ -58,10 +58,10 @@
     {
       "code": "lev",
       "chapters": 27,
-      "scenes": 17,
+      "scenes": 16,
       "sourceMatchedSceneCandidates": 10,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 3
+      "curatedSupplementalScenes": 2
     },
     {
       "code": "num",
@@ -114,10 +114,10 @@
     {
       "code": "2sa",
       "chapters": 24,
-      "scenes": 91,
+      "scenes": 90,
       "sourceMatchedSceneCandidates": 64,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 0
     },
     {
       "code": "1ki",
@@ -138,10 +138,10 @@
     {
       "code": "2ch",
       "chapters": 36,
-      "scenes": 90,
+      "scenes": 82,
       "sourceMatchedSceneCandidates": 45,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 8
+      "curatedSupplementalScenes": 0
     },
     {
       "code": "ezr",
@@ -162,10 +162,10 @@
     {
       "code": "est",
       "chapters": 10,
-      "scenes": 20,
+      "scenes": 19,
       "sourceMatchedSceneCandidates": 5,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 0
     },
     {
       "code": "job",
@@ -28205,7 +28205,7 @@
       },
       {
         "book": "2sa",
-        "scenesAdded": 26
+        "scenesAdded": 25
       },
       {
         "book": "1ki",
@@ -28217,7 +28217,7 @@
       },
       {
         "book": "2ch",
-        "scenesAdded": 37
+        "scenesAdded": 29
       },
       {
         "book": "ezr",
@@ -28229,7 +28229,7 @@
       },
       {
         "book": "est",
-        "scenesAdded": 14
+        "scenesAdded": 13
       },
       {
         "book": "job",
@@ -28325,7 +28325,7 @@
       },
       {
         "book": "lev",
-        "scenesAdded": 4
+        "scenesAdded": 3
       },
       {
         "book": "psa",
@@ -28333,7 +28333,7 @@
       },
       {
         "book": "gen",
-        "scenesAdded": 9
+        "scenesAdded": 5
       },
       {
         "book": "exo",

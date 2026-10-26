@@ -5,14 +5,14 @@
   "books": [
     {
       "code": "gen",
-      "payloadSha256": "d3f14d31595c9e15eb411461d894bfd35532ec44d4286bc8313c1c50e9171bb6",
-      "scenes": 95,
-      "existing": 95,
+      "payloadSha256": "eb8858ecf691fa287d6bda34bda618921300eb76b54329da2540db9ee9515cd2",
+      "scenes": 91,
+      "existing": 91,
       "restored": 0,
       "corrected": 24,
-      "planned": 95,
+      "planned": 91,
       "modes": {
-        "reconstruction": 85,
+        "reconstruction": 81,
         "vision": 3,
         "illustration": 7
       },
@@ -34,14 +34,14 @@
     },
     {
       "code": "lev",
-      "payloadSha256": "32f0cc1c29577eee99856c5f88958086ea6a0bc8ddccc9ff16eb186d5a150ff6",
-      "scenes": 17,
-      "existing": 17,
+      "payloadSha256": "73c883e9225c8583e5a84dd8727e3639f49b9fea42172ce4226da11bfe834f07",
+      "scenes": 16,
+      "existing": 16,
       "restored": 0,
       "corrected": 1,
-      "planned": 17,
+      "planned": 16,
       "modes": {
-        "instruction": 7,
+        "instruction": 6,
         "reconstruction": 6,
         "illustration": 4
       },
@@ -132,14 +132,14 @@
     },
     {
       "code": "2sa",
-      "payloadSha256": "ae48daeed37d34907d8e75fc4b0ee5415e2756f6f33004e973d18d11d15381db",
-      "scenes": 91,
-      "existing": 91,
+      "payloadSha256": "8d09ae89fc54ce5ef79b6311d0ddc5f361f644028008f50f478d2a072f2f1099",
+      "scenes": 90,
+      "existing": 90,
       "restored": 0,
       "corrected": 21,
-      "planned": 91,
+      "planned": 90,
       "modes": {
-        "reconstruction": 89,
+        "reconstruction": 88,
         "illustration": 2
       },
       "status": "authored-awaiting-browser-review"
@@ -189,15 +189,14 @@
     },
     {
       "code": "2ch",
-      "payloadSha256": "7c47acb3eece1f16d8d80f0d64dd0eb75c294a3de884621d9bfaaf1a33774678",
-      "scenes": 90,
-      "existing": 90,
+      "payloadSha256": "5f9f85604b312bdf2a110c75b54108c6b7a67bc437021e192893a5fb7d060cf3",
+      "scenes": 82,
+      "existing": 82,
       "restored": 0,
       "corrected": 3,
-      "planned": 90,
+      "planned": 82,
       "modes": {
-        "reconstruction": 89,
-        "illustration": 1
+        "reconstruction": 82
       },
       "status": "authored-awaiting-browser-review"
     },
@@ -231,14 +230,14 @@
     },
     {
       "code": "est",
-      "payloadSha256": "090e268a93deaae7dd9f51122f3a9be21550383c4182fc6a7ca891a0949ce1af",
-      "scenes": 20,
-      "existing": 20,
+      "payloadSha256": "1b95cd03cbf787c844c21caf125897944aecc0432161900a2f8dbb533308a23d",
+      "scenes": 19,
+      "existing": 19,
       "restored": 0,
       "corrected": 2,
-      "planned": 20,
+      "planned": 19,
       "modes": {
-        "reconstruction": 20
+        "reconstruction": 19
       },
       "status": "authored-awaiting-browser-review"
     },

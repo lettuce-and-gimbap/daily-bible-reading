@@ -26,53 +26,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "report",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "speech",
-        "emotion": "neutral",
-        "prop": "crown",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 1:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"report","lead":"다윗","target":null,"mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"crown","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"speak","duration":1.2,"actor":"다윗"},{"action":"point","duration":1.5,"actor":"다윗"},{"action":"listen","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-1-1",
@@ -99,53 +53,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "report",
-        "lead": "아말렉 청년",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "speech",
-        "emotion": "neutral",
-        "prop": "crown",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아말렉 청년"
-          },
-          {
-            "action": "speak",
-            "duration": 1.2,
-            "actor": "아말렉 청년"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "아말렉 청년"
-          },
-          {
-            "action": "listen",
-            "duration": 1.8,
-            "actor": "아말렉 청년"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "아말렉 청년"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아말렉 청년"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 1:6-10",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"report","lead":"아말렉 청년","target":null,"mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"crown","beats":[{"action":"listen","duration":1,"actor":"아말렉 청년"},{"action":"speak","duration":1.2,"actor":"아말렉 청년"},{"action":"point","duration":1.5,"actor":"아말렉 청년"},{"action":"listen","duration":1.8,"actor":"아말렉 청년"},{"action":"lower","duration":1.5,"actor":"아말렉 청년"},{"action":"bow","duration":1.2,"actor":"아말렉 청년"}],"duration":8.2,"support":null,"ref":"사무엘하 1:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-1-2",
@@ -169,53 +77,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "lament",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 1:11-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"sword","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 1:11-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-1-3",
@@ -241,53 +103,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "olive-oil",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 1:13-16",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"olive-oil","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 1:13-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-1-4",
@@ -311,53 +127,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "lament",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "book",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 1:17-18",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"book","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 1:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-2-1",
@@ -384,53 +154,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "anoint",
-        "lead": "다윗",
-        "target": "유다 사람들",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "oil",
-        "emotion": "determined",
-        "prop": "oil-vessel",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pour",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:4-7",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"anoint","lead":"다윗","target":"유다 사람들","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"oil-vessel","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pour","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 2:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-2-3",
@@ -459,53 +183,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "duel",
-        "lead": "아브넬",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "clash",
-        "emotion": "determined",
-        "prop": "nail",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "아브넬"
-          },
-          {
-            "action": "brace",
-            "duration": 1.2,
-            "actor": "아브넬"
-          },
-          {
-            "action": "windup",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "halt",
-            "duration": 1.8,
-            "actor": "아브넬"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.2,
-            "actor": "아브넬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:12-17",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"duel","lead":"아브넬","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"clash","emotion":"determined","prop":"nail","beats":[{"action":"look","duration":1,"actor":"아브넬"},{"action":"brace","duration":1.2,"actor":"아브넬"},{"action":"windup","duration":1.5,"actor":"아브넬"},{"action":"halt","duration":1.8,"actor":"아브넬"},{"action":"recoil","duration":1.5,"actor":"아브넬"},{"action":"retreat","duration":1.2,"actor":"아브넬"}],"duration":8.2,"support":null,"ref":"사무엘하 2:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-2-4",
@@ -534,53 +212,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "아브넬",
-        "target": "아사헬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "spear",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아브넬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "아브넬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "아브넬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "아브넬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:18-23",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"아브넬","target":"아사헬","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"spear","beats":[{"action":"listen","duration":1,"actor":"아브넬"},{"action":"turn","duration":1.2,"actor":"아브넬"},{"action":"speak","duration":1.5,"actor":"아브넬"},{"action":"point","duration":1.8,"actor":"아브넬"},{"action":"listen","duration":1.5,"actor":"아브넬"},{"action":"lower","duration":1.2,"actor":"아브넬"}],"duration":8.2,"support":null,"ref":"사무엘하 2:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-2-5",
@@ -612,53 +244,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "trumpet",
-        "lead": "아브넬",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "wall",
-        "effect": "music",
-        "emotion": "determined",
-        "prop": "trumpet",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "아브넬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "아브넬"
-          },
-          {
-            "action": "blow",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "hold",
-            "duration": 1.8,
-            "actor": "아브넬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "아브넬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:24-32",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"trumpet","lead":"아브넬","target":"요압","mode":"reconstruction","setting":"wall","effect":"music","emotion":"determined","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"아브넬"},{"action":"lift","duration":1.2,"actor":"아브넬"},{"action":"blow","duration":1.5,"actor":"아브넬"},{"action":"hold","duration":1.8,"actor":"아브넬"},{"action":"lower","duration":1.5,"actor":"아브넬"},{"action":"signal","duration":1.2,"actor":"아브넬"}],"duration":8.2,"support":null,"ref":"사무엘하 2:24-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-3-0",
@@ -685,53 +271,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "birth",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "family",
-        "emotion": "gentle",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "cradle",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "smile",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "bless",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 3:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"birth","lead":"다윗","target":null,"mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"house","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"listen","duration":1.2,"actor":"다윗"},{"action":"cradle","duration":1.5,"actor":"다윗"},{"action":"smile","duration":1.8,"actor":"다윗"},{"action":"bless","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-3-4",
@@ -760,53 +300,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "요압",
-        "target": "아브넬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 3:22-27",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"요압","target":"아브넬","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"요압"},{"action":"turn","duration":1.2,"actor":"요압"},{"action":"speak","duration":1.5,"actor":"요압"},{"action":"point","duration":1.8,"actor":"요압"},{"action":"listen","duration":1.5,"actor":"요압"},{"action":"lower","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 3:22-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-3-5",
@@ -836,53 +330,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "lament",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "tomb",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 3:28-34",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tomb","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 3:28-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-4-2",
@@ -908,53 +356,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "이스보셋",
-        "target": "레갑",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "bed",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "이스보셋"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 4:5-7",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"이스보셋","target":"레갑","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"bed","beats":[{"action":"listen","duration":1,"actor":"이스보셋"},{"action":"turn","duration":1.2,"actor":"이스보셋"},{"action":"speak","duration":1.5,"actor":"이스보셋"},{"action":"point","duration":1.8,"actor":"이스보셋"},{"action":"listen","duration":1.5,"actor":"이스보셋"},{"action":"lower","duration":1.2,"actor":"이스보셋"}],"duration":8.2,"support":null,"ref":"사무엘하 4:5-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-4-4",
@@ -981,53 +383,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "이스보셋",
-        "target": "다윗",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "tomb",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "이스보셋"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "이스보셋"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 4:9-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"이스보셋","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tomb","beats":[{"action":"listen","duration":1,"actor":"이스보셋"},{"action":"turn","duration":1.2,"actor":"이스보셋"},{"action":"speak","duration":1.5,"actor":"이스보셋"},{"action":"point","duration":1.8,"actor":"이스보셋"},{"action":"listen","duration":1.5,"actor":"이스보셋"},{"action":"lower","duration":1.2,"actor":"이스보셋"}],"duration":8.2,"support":null,"ref":"사무엘하 4:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-5-0",
@@ -1054,53 +410,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "anoint",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "oil",
-        "emotion": "determined",
-        "prop": "olive-oil",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pour",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 5:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"anoint","lead":"다윗","target":null,"mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"olive-oil","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pour","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-5-2",
@@ -1125,53 +435,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "craft",
-        "lead": "다윗",
-        "target": "히람",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "build",
-        "emotion": "determined",
-        "prop": "cedar",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "hammer",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 5:11-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"craft","lead":"다윗","target":"히람","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"cedar","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.8,"actor":"다윗"},{"action":"hammer","duration":1.5,"actor":"다윗"},{"action":"inspect","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:11-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-5-4",
@@ -1198,53 +462,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "water-supply",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 5:17-21",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":null,"mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:17-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-6-2",
@@ -1270,53 +488,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "guard",
-        "lead": "다윗",
-        "target": "오벧에돔",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "shelter",
-        "emotion": "worried",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "guard",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:9-11",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"guard","lead":"다윗","target":"오벧에돔","mode":"reconstruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"guard","duration":1.8,"actor":"다윗"},{"action":"turn","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:9-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-6-3",
@@ -1342,53 +514,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "dance",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "ephod",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:12-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"dance","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"ephod","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:12-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-6-4",
@@ -1415,53 +541,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "deposit",
-        "lead": "다윗",
-        "target": "미갈",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "scroll",
-        "emotion": "determined",
-        "prop": "tent",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "open",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "read",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "write",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:16-19",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"deposit","lead":"다윗","target":"미갈","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"tent","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"open","duration":1.5,"actor":"다윗"},{"action":"read","duration":1.8,"actor":"다윗"},{"action":"write","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-6-5",
@@ -1488,53 +568,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "dispute",
-        "lead": "다윗",
-        "target": "미갈",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "speech",
-        "emotion": "angry",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:20-23",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"dispute","lead":"다윗","target":"미갈","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"house","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"point","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-7-0",
@@ -1560,53 +594,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "listen",
-        "lead": "다윗",
-        "target": "나단",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "cedar",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:1-3",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"listen","lead":"다윗","target":"나단","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"cedar","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 7:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-7-1",
@@ -1632,53 +620,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "listen",
-        "lead": "나단",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "tent",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "나단"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "나단"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "나단"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "나단"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:4-7",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"listen","lead":"나단","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"나단"},{"action":"turn","duration":1.2,"actor":"나단"},{"action":"speak","duration":1.5,"actor":"나단"},{"action":"point","duration":1.8,"actor":"나단"},{"action":"listen","duration":1.5,"actor":"나단"},{"action":"lower","duration":1.2,"actor":"나단"}],"duration":8.2,"support":null,"ref":"사무엘하 7:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-7-2",
@@ -1704,53 +646,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "praise",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:8-11",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"praise","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"house","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 7:8-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-7-5",
@@ -1777,53 +673,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:25-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 7:25-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-8-0",
@@ -1847,53 +697,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "rope",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 8:1-2",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":null,"mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"rope","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 8:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-8-1",
@@ -1917,53 +721,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "march",
-        "lead": "하닷에셀",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "horse",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "하닷에셀"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "하닷에셀"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "하닷에셀"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "하닷에셀"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "하닷에셀"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "하닷에셀"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 8:3-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"march","lead":"하닷에셀","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"horse","beats":[{"action":"grasp","duration":1,"actor":"하닷에셀"},{"action":"lift","duration":1.2,"actor":"하닷에셀"},{"action":"brace","duration":1.5,"actor":"하닷에셀"},{"action":"carry","duration":1.8,"actor":"하닷에셀"},{"action":"walk","duration":1.5,"actor":"하닷에셀"},{"action":"lower","duration":1.2,"actor":"하닷에셀"}],"duration":8.2,"support":null,"ref":"사무엘하 8:3-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-8-2",
@@ -1989,53 +747,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "shield",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 8:5-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":null,"mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"shield","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 8:5-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-8-3",
@@ -2061,53 +773,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "offer",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "silver",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 8:9-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"offer","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 8:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-10-1",
@@ -2133,53 +799,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "marshal",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "signal",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "march",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 10:6-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"marshal","lead":"다윗","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"signal","emotion":"determined","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"signal","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"march","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 10:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-11-1",
@@ -2210,53 +830,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "refuse",
-        "lead": "다윗",
-        "target": "우리아",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "refuse",
-        "emotion": "determined",
-        "prop": "ark-covenant",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 11:6-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"refuse","lead":"다윗","target":"우리아","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"ark-covenant","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"retreat","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 11:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-11-2",
@@ -2283,53 +857,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "send-letter",
-        "lead": "다윗",
-        "target": "우리아",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "letter",
-        "emotion": "determined",
-        "prop": "letter",
-        "beats": [
-          {
-            "action": "read",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "write",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "fold",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 11:14-17",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"send-letter","lead":"다윗","target":"우리아","mode":"reconstruction","setting":"chamber","effect":"letter","emotion":"determined","prop":"letter","beats":[{"action":"read","duration":1,"actor":"다윗"},{"action":"write","duration":1.2,"actor":"다윗"},{"action":"fold","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"look","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 11:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-12-0",
@@ -2358,53 +886,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "parable",
-        "lead": "나단",
-        "target": "다윗",
-        "mode": "illustration",
-        "setting": "vision",
-        "effect": "symbol",
-        "emotion": "neutral",
-        "prop": "sheep",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "나단"
-          },
-          {
-            "action": "read",
-            "duration": 1.2,
-            "actor": "나단"
-          },
-          {
-            "action": "look",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "나단"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "나단"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 12:1-6",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"parable","lead":"나단","target":"다윗","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"sheep","beats":[{"action":"listen","duration":1,"actor":"나단"},{"action":"read","duration":1.2,"actor":"나단"},{"action":"look","duration":1.5,"actor":"나단"},{"action":"point","duration":1.8,"actor":"나단"},{"action":"listen","duration":1.5,"actor":"나단"},{"action":"bow","duration":1.2,"actor":"나단"}],"duration":8.2,"support":null,"ref":"사무엘하 12:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-12-1",
@@ -2433,53 +915,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "confess",
-        "lead": "나단",
-        "target": "다윗",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "sad",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "나단"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "나단"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "speak",
-            "duration": 1.8,
-            "actor": "나단"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "나단"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "나단"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 12:7-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"confess","lead":"나단","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"house","beats":[{"action":"listen","duration":1,"actor":"나단"},{"action":"lower","duration":1.2,"actor":"나단"},{"action":"kneel","duration":1.5,"actor":"나단"},{"action":"speak","duration":1.8,"actor":"나단"},{"action":"pray","duration":1.5,"actor":"나단"},{"action":"bow","duration":1.2,"actor":"나단"}],"duration":8.2,"support":null,"ref":"사무엘하 12:7-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-12-5",
@@ -2508,53 +944,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "water-supply",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 12:26-31",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":"요압","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 12:26-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-13-1",
@@ -2585,53 +975,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "암논",
-        "target": "다말",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "암논"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "암논"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "암논"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "암논"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "암논"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "암논"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 13:7-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"암논","target":"다말","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"암논"},{"action":"turn","duration":1.2,"actor":"암논"},{"action":"speak","duration":1.5,"actor":"암논"},{"action":"point","duration":1.8,"actor":"암논"},{"action":"listen","duration":1.5,"actor":"암논"},{"action":"lower","duration":1.2,"actor":"암논"}],"duration":8.2,"support":null,"ref":"사무엘하 13:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-13-3",
@@ -2657,53 +1001,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "mourn",
-        "lead": "압살롬",
-        "target": "다윗",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 13:20-22",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"mourn","lead":"압살롬","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"house","beats":[{"action":"startle","duration":1,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"},{"action":"kneel","duration":1.5,"actor":"압살롬"},{"action":"cover-mouth","duration":1.8,"actor":"압살롬"},{"action":"mourn","duration":1.5,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-13-5",
@@ -2733,53 +1031,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "lament",
-        "lead": "다윗",
-        "target": "압살롬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "robe",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 13:30-36",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":"압살롬","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"robe","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 13:30-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-14-3",
@@ -2806,53 +1058,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "refuse",
-        "lead": "요압",
-        "target": "압살롬",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "refuse",
-        "emotion": "determined",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 14:21-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"refuse","lead":"요압","target":"압살롬","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"요압"},{"action":"turn","duration":1.2,"actor":"요압"},{"action":"halt","duration":1.5,"actor":"요압"},{"action":"retreat","duration":1.8,"actor":"요압"},{"action":"lower","duration":1.5,"actor":"요압"},{"action":"stand","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 14:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-14-5",
@@ -2881,53 +1087,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "burn",
-        "lead": "요압",
-        "target": "압살롬",
-        "mode": "reconstruction",
-        "setting": "ruins",
-        "effect": "fire",
-        "emotion": "sad",
-        "prop": "fire",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "brace",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 14:28-33",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"burn","lead":"요압","target":"압살롬","mode":"reconstruction","setting":"ruins","effect":"fire","emotion":"sad","prop":"fire","beats":[{"action":"look","duration":1,"actor":"요압"},{"action":"startle","duration":1.2,"actor":"요압"},{"action":"retreat","duration":1.5,"actor":"요압"},{"action":"brace","duration":1.8,"actor":"요압"},{"action":"mourn","duration":1.5,"actor":"요압"},{"action":"lower","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 14:28-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-15-0",
@@ -2955,53 +1115,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "greet",
-        "lead": "압살롬",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "gentle",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 15:1-6",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"greet","lead":"압살롬","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"gentle","prop":"gate","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"walk","duration":1.2,"actor":"압살롬"},{"action":"bow","duration":1.5,"actor":"압살롬"},{"action":"speak","duration":1.8,"actor":"압살롬"},{"action":"listen","duration":1.5,"actor":"압살롬"},{"action":"stand","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 15:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-15-3",
@@ -3030,53 +1144,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "carry",
-        "lead": "사독",
-        "target": "아비아달",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "ark-covenant",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "사독"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "사독"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "사독"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "사독"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "사독"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "사독"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 15:24-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"carry","lead":"사독","target":"아비아달","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"grasp","duration":1,"actor":"사독"},{"action":"lift","duration":1.2,"actor":"사독"},{"action":"brace","duration":1.5,"actor":"사독"},{"action":"carry","duration":1.8,"actor":"사독"},{"action":"walk","duration":1.5,"actor":"사독"},{"action":"lower","duration":1.2,"actor":"사독"}],"duration":8.2,"support":null,"ref":"사무엘하 15:24-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-16-0",
@@ -3103,53 +1171,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "gift",
-        "lead": "다윗",
-        "target": "시바",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "donkey",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 16:1-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"gift","lead":"다윗","target":"시바","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"donkey","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 16:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-16-1",
@@ -3182,53 +1204,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "endure",
-        "lead": "다윗",
-        "target": "시므이",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "projectile",
-        "emotion": "sad",
-        "prop": "stone",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 16:5-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"endure","lead":"다윗","target":"시므이","mode":"reconstruction","setting":"road","effect":"projectile","emotion":"sad","prop":"stone","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 16:5-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-16-2",
@@ -3256,53 +1232,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "counsel",
-        "lead": "압살롬",
-        "target": "아히도벨",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "horse",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 16:15-19",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"counsel","lead":"압살롬","target":"아히도벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"horse","beats":[{"action":"listen","duration":1,"actor":"압살롬"},{"action":"turn","duration":1.2,"actor":"압살롬"},{"action":"speak","duration":1.5,"actor":"압살롬"},{"action":"point","duration":1.8,"actor":"압살롬"},{"action":"listen","duration":1.5,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 16:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-16-3",
@@ -3329,53 +1259,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "압살롬",
-        "target": "아히도벨",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "tent",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 16:20-23",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"압살롬","target":"아히도벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"압살롬"},{"action":"turn","duration":1.2,"actor":"압살롬"},{"action":"speak","duration":1.5,"actor":"압살롬"},{"action":"point","duration":1.8,"actor":"압살롬"},{"action":"listen","duration":1.5,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 16:20-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-17-3",
@@ -3406,53 +1290,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "hide",
-        "lead": "아히마아스",
-        "target": "요나단(아비아달의 아들)",
-        "mode": "reconstruction",
-        "setting": "garden",
-        "effect": "shadow",
-        "emotion": "worried",
-        "prop": "well",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아히마아스"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "아히마아스"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.5,
-            "actor": "아히마아스"
-          },
-          {
-            "action": "hide",
-            "duration": 1.8,
-            "actor": "아히마아스"
-          },
-          {
-            "action": "peek",
-            "duration": 1.5,
-            "actor": "아히마아스"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "아히마아스"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 17:15-22",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"hide","lead":"아히마아스","target":"요나단(아비아달의 아들)","mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"well","beats":[{"action":"listen","duration":1,"actor":"아히마아스"},{"action":"startle","duration":1.2,"actor":"아히마아스"},{"action":"retreat","duration":1.5,"actor":"아히마아스"},{"action":"hide","duration":1.8,"actor":"아히마아스"},{"action":"peek","duration":1.5,"actor":"아히마아스"},{"action":"stand","duration":1.2,"actor":"아히마아스"}],"duration":8.2,"support":null,"ref":"사무엘하 17:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-18-1",
@@ -3477,53 +1315,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "march",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 18:6-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"march","lead":"다윗","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"sword","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"carry","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 18:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-18-2",
@@ -3553,53 +1345,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "entangle",
-        "lead": "압살롬",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "garden",
-        "effect": "snare",
-        "emotion": "worried",
-        "prop": "spear",
-        "beats": [
-          {
-            "action": "walk",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 18:9-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"entangle","lead":"압살롬","target":"요압","mode":"reconstruction","setting":"garden","effect":"snare","emotion":"worried","prop":"spear","beats":[{"action":"walk","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"brace","duration":1.5,"actor":"압살롬"},{"action":"sway","duration":1.8,"actor":"압살롬"},{"action":"halt","duration":1.5,"actor":"압살롬"},{"action":"mourn","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 18:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-18-3",
@@ -3625,53 +1371,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "monument",
-        "lead": "압살롬",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "stack",
-        "emotion": "determined",
-        "prop": "trumpet",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "carry",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "inspect",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "point",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 18:16-18",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"monument","lead":"압살롬","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"stack","emotion":"determined","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"압살롬"},{"action":"carry","duration":1.2,"actor":"압살롬"},{"action":"lift","duration":1.5,"actor":"압살롬"},{"action":"place","duration":1.8,"actor":"압살롬"},{"action":"inspect","duration":1.5,"actor":"압살롬"},{"action":"point","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 18:16-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-19-0",
@@ -3701,53 +1401,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "accuse",
-        "lead": "요압",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 19:1-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"accuse","lead":"요압","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"요압"},{"action":"turn","duration":1.2,"actor":"요압"},{"action":"speak","duration":1.5,"actor":"요압"},{"action":"point","duration":1.8,"actor":"요압"},{"action":"listen","duration":1.5,"actor":"요압"},{"action":"lower","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 19:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-20-0",
@@ -3771,53 +1425,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "trumpet",
-        "lead": "세바",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "wall",
-        "effect": "music",
-        "emotion": "determined",
-        "prop": "trumpet",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "세바"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "세바"
-          },
-          {
-            "action": "blow",
-            "duration": 1.5,
-            "actor": "세바"
-          },
-          {
-            "action": "hold",
-            "duration": 1.8,
-            "actor": "세바"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "세바"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "세바"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 20:1-2",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"trumpet","lead":"세바","target":null,"mode":"reconstruction","setting":"wall","effect":"music","emotion":"determined","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"세바"},{"action":"lift","duration":1.2,"actor":"세바"},{"action":"blow","duration":1.5,"actor":"세바"},{"action":"hold","duration":1.8,"actor":"세바"},{"action":"lower","duration":1.5,"actor":"세바"},{"action":"signal","duration":1.2,"actor":"세바"}],"duration":8.2,"support":null,"ref":"사무엘하 20:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-20-3",
@@ -3846,53 +1454,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "요압",
-        "target": "아마사",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 20:8-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"요압","target":"아마사","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"요압"},{"action":"turn","duration":1.2,"actor":"요압"},{"action":"speak","duration":1.5,"actor":"요압"},{"action":"point","duration":1.8,"actor":"요압"},{"action":"listen","duration":1.5,"actor":"요압"},{"action":"lower","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 20:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-20-4",
@@ -3917,53 +1479,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "siege",
-        "lead": "세바",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "wall",
-        "effect": "collapse",
-        "emotion": "worried",
-        "prop": "wall",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "세바"
-          },
-          {
-            "action": "push",
-            "duration": 1.2,
-            "actor": "세바"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "세바"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.8,
-            "actor": "세바"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.5,
-            "actor": "세바"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.2,
-            "actor": "세바"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 20:14-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"siege","lead":"세바","target":"요압","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"wall","beats":[{"action":"look","duration":1,"actor":"세바"},{"action":"push","duration":1.2,"actor":"세바"},{"action":"brace","duration":1.5,"actor":"세바"},{"action":"recoil","duration":1.8,"actor":"세바"},{"action":"retreat","duration":1.5,"actor":"세바"},{"action":"mourn","duration":1.2,"actor":"세바"}],"duration":8.2,"support":null,"ref":"사무엘하 20:14-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-20-5",
@@ -3993,53 +1509,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "reconcile",
-        "lead": "아벨의 여인",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "trumpet",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아벨의 여인"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아벨의 여인"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "아벨의 여인"
-          },
-          {
-            "action": "receive",
-            "duration": 1.8,
-            "actor": "아벨의 여인"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "아벨의 여인"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "아벨의 여인"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 20:16-22",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"reconcile","lead":"아벨의 여인","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"trumpet","beats":[{"action":"listen","duration":1,"actor":"아벨의 여인"},{"action":"bow","duration":1.2,"actor":"아벨의 여인"},{"action":"extend","duration":1.5,"actor":"아벨의 여인"},{"action":"receive","duration":1.8,"actor":"아벨의 여인"},{"action":"bow","duration":1.5,"actor":"아벨의 여인"},{"action":"stand","duration":1.2,"actor":"아벨의 여인"}],"duration":8.2,"support":null,"ref":"사무엘하 20:16-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-21-2",
@@ -4064,53 +1534,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "mourn",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "tomb",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 21:7-9",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tomb","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:7-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-21-4",
@@ -4140,53 +1564,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "march",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "spear",
-        "beats": [
-          {
-            "action": "grasp",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "carry",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 21:15-22",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"march","lead":"다윗","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"spear","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"carry","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-22-0",
@@ -4212,53 +1590,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "praise",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "shield",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 22:1-4",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"praise","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"shield","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-23-1",
@@ -4286,53 +1618,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "요셉밧세벳",
-        "target": "삼마",
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "요셉밧세벳"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "요셉밧세벳"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "요셉밧세벳"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "요셉밧세벳"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "요셉밧세벳"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "요셉밧세벳"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 23:8-12",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"요셉밧세벳","target":"삼마","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"sword","beats":[{"action":"look","duration":1,"actor":"요셉밧세벳"},{"action":"signal","duration":1.2,"actor":"요셉밧세벳"},{"action":"brace","duration":1.5,"actor":"요셉밧세벳"},{"action":"run","duration":1.8,"actor":"요셉밧세벳"},{"action":"halt","duration":1.5,"actor":"요셉밧세벳"},{"action":"lift","duration":1.2,"actor":"요셉밧세벳"}],"duration":8.2,"support":null,"ref":"사무엘하 23:8-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-23-3",
@@ -4361,53 +1647,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "아비새",
-        "target": "브나야",
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "spear",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "아비새"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "아비새"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "아비새"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "아비새"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "아비새"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "아비새"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 23:18-23",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"아비새","target":"브나야","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"spear","beats":[{"action":"look","duration":1,"actor":"아비새"},{"action":"signal","duration":1.2,"actor":"아비새"},{"action":"brace","duration":1.5,"actor":"아비새"},{"action":"run","duration":1.8,"actor":"아비새"},{"action":"halt","duration":1.5,"actor":"아비새"},{"action":"lift","duration":1.2,"actor":"아비새"}],"duration":8.2,"support":null,"ref":"사무엘하 23:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-24-4",
@@ -4432,53 +1672,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "house",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 24:15-17",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 24:15-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-24-5",
@@ -4509,53 +1703,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "purchase",
-        "lead": "다윗",
-        "target": "아라우나",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "coins",
-        "emotion": "neutral",
-        "prop": "coin",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "weigh",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "receive",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 24:18-25",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"purchase","lead":"다윗","target":"아라우나","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"coin","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"grasp","duration":1.2,"actor":"다윗"},{"action":"weigh","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.8,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"receive","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 24:18-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-19",
@@ -4584,53 +1732,7 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {
-        "version": 2,
-        "motif": "dance",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "music",
-        "emotion": "joy",
-        "prop": "lyre",
-        "beats": [
-          {
-            "action": "lift",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sway",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "step",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:14-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"dance","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"lyre","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:14-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-voice-20",
@@ -4675,53 +1777,7 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {
-        "version": 2,
-        "motif": "feast",
-        "lead": "다윗",
-        "target": "므비보셋",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "feast",
-        "emotion": "joy",
-        "prop": "bread",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 9:1-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"feast","lead":"다윗","target":"므비보셋","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"bread","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"walk","duration":1.2,"actor":"다윗"},{"action":"bow","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"place","duration":1.5,"actor":"다윗"},{"action":"sit","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 9:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-01",
@@ -4747,53 +1803,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "전투를 먼저 시작하는 대신 뜻을 묻고 공동체와 함께 이동하는 장면이에요.",
-      "animation": {
-        "version": 2,
-        "motif": "journey",
-        "lead": "다윗",
-        "target": "유다 사람들",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:1-3",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"journey","lead":"다윗","target":"유다 사람들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"sword","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"carry","duration":1.5,"actor":"다윗"},{"action":"walk","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"look","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-02",
@@ -4820,53 +1830,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕관은 분열된 왕권을 나타내는 상징으로 사용해요.",
-      "animation": {
-        "version": 2,
-        "motif": "anoint",
-        "lead": "아브넬",
-        "target": "이스보셋",
-        "mode": "reconstruction",
-        "setting": "court",
-        "effect": "oil",
-        "emotion": "determined",
-        "prop": "crown",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "아브넬"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.2,
-            "actor": "아브넬"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "pour",
-            "duration": 1.8,
-            "actor": "아브넬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아브넬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 2:8-11",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"anoint","lead":"아브넬","target":"이스보셋","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"crown","beats":[{"action":"inspect","duration":1,"actor":"아브넬"},{"action":"grasp","duration":1.2,"actor":"아브넬"},{"action":"lift","duration":1.5,"actor":"아브넬"},{"action":"pour","duration":1.8,"actor":"아브넬"},{"action":"lower","duration":1.5,"actor":"아브넬"},{"action":"bow","duration":1.2,"actor":"아브넬"}],"duration":8.2,"support":null,"ref":"사무엘하 2:8-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-03",
@@ -4906,53 +1870,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "협상과 권력 이양을 중심으로 하며 미갈을 거래 대상으로 표현하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "agreement",
-        "lead": "아브넬",
-        "target": "다윗",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "covenant",
-        "emotion": "determined",
-        "prop": "table",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "아브넬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아브넬"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "pledge",
-            "duration": 1.8,
-            "actor": "아브넬"
-          },
-          {
-            "action": "read",
-            "duration": 1.5,
-            "actor": "아브넬"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "아브넬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 3:6-21",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"agreement","lead":"아브넬","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"table","beats":[{"action":"listen","duration":1,"actor":"아브넬"},{"action":"bow","duration":1.2,"actor":"아브넬"},{"action":"extend","duration":1.5,"actor":"아브넬"},{"action":"pledge","duration":1.8,"actor":"아브넬"},{"action":"read","duration":1.5,"actor":"아브넬"},{"action":"bow","duration":1.2,"actor":"아브넬"}],"duration":8.2,"support":null,"ref":"사무엘하 3:6-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-04",
@@ -4980,53 +1898,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "성읍 점령은 비그래픽 전술 장면으로 짧게 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "siege",
-        "lead": "다윗",
-        "target": "여부스 사람",
-        "mode": "reconstruction",
-        "setting": "wall",
-        "effect": "collapse",
-        "emotion": "worried",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "push",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "recoil",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "retreat",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 5:6-10",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"siege","lead":"다윗","target":"여부스 사람","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"gate","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"push","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"recoil","duration":1.8,"actor":"다윗"},{"action":"retreat","duration":1.5,"actor":"다윗"},{"action":"mourn","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:6-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-05",
@@ -5058,53 +1930,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "웃사의 죽음을 직접 묘사하지 않고, 행렬이 멈추고 애통하는 결과만 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "다윗",
-        "target": "웃사",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "ark-covenant",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 6:1-8",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"다윗","target":"웃사","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"ark-covenant","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-06",
@@ -5133,53 +1959,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕좌는 왕조의 약속을 상징하며 아직 태어나지 않은 후손을 현장 인물처럼 등장시키지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "covenant",
-        "lead": "다윗",
-        "target": "나단",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "covenant",
-        "emotion": "determined",
-        "prop": "throne",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pledge",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "read",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:12-17",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"covenant","lead":"다윗","target":"나단","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"throne","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"pledge","duration":1.8,"actor":"다윗"},{"action":"read","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 7:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-07",
@@ -5208,53 +1988,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "조용한 기도와 감사로 구성해 전투 장면과 구분해요.",
-      "animation": {
-        "version": 2,
-        "motif": "pray",
-        "lead": "다윗",
-        "target": null,
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "prayer",
-        "emotion": "worried",
-        "prop": "scroll",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 7:18-24",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 7:18-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-08",
@@ -5283,53 +2017,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "수치심을 조롱거리로 만들지 않고 사절들을 보호하는 배려에 초점을 둬요.",
-      "animation": {
-        "version": 2,
-        "motif": "welcome",
-        "lead": "다윗",
-        "target": "하눈",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "feast",
-        "emotion": "joy",
-        "prop": "robe",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 10:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"welcome","lead":"다윗","target":"하눈","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"robe","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"walk","duration":1.2,"actor":"다윗"},{"action":"bow","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"place","duration":1.5,"actor":"다윗"},{"action":"sit","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 10:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-09",
@@ -5365,53 +2053,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "두 지휘관의 상호 지원과 양쪽 진영의 전환을 분명히 해요.",
-      "animation": {
-        "version": 2,
-        "motif": "victory",
-        "lead": "요압",
-        "target": "아비새",
-        "mode": "reconstruction",
-        "setting": "hills",
-        "effect": "signal",
-        "emotion": "determined",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "요압"
-          },
-          {
-            "action": "signal",
-            "duration": 1.2,
-            "actor": "요압"
-          },
-          {
-            "action": "brace",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "요압"
-          },
-          {
-            "action": "halt",
-            "duration": 1.5,
-            "actor": "요압"
-          },
-          {
-            "action": "lift",
-            "duration": 1.2,
-            "actor": "요압"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 10:9-19",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"victory","lead":"요압","target":"아비새","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"sword","beats":[{"action":"look","duration":1,"actor":"요압"},{"action":"signal","duration":1.2,"actor":"요압"},{"action":"brace","duration":1.5,"actor":"요압"},{"action":"run","duration":1.8,"actor":"요압"},{"action":"halt","duration":1.5,"actor":"요압"},{"action":"lift","duration":1.2,"actor":"요압"}],"duration":8.2,"support":null,"ref":"사무엘하 10:9-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-10",
@@ -5439,53 +2081,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "성적 상황은 묘사하지 않으며, 왕의 권력 남용과 밧세바가 놓인 불평등한 처지를 중심으로 연출해요.",
-      "animation": {
-        "version": 2,
-        "motif": "warning",
-        "lead": "다윗",
-        "target": "밧세바",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "palace",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 11:1-5",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"warning","lead":"다윗","target":"밧세바","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"palace","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 11:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-11",
@@ -5519,53 +2115,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "죽음과 애도를 직접적으로 묘사하지 않고, 권력자가 책임을 은폐하는 과정과 피해자의 상실을 드러내요.",
-      "animation": {
-        "version": 2,
-        "motif": "send-letter",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "letter",
-        "emotion": "determined",
-        "prop": "letter",
-        "beats": [
-          {
-            "action": "read",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "write",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "fold",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 11:18-27",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"send-letter","lead":"다윗","target":"요압","mode":"reconstruction","setting":"chamber","effect":"letter","emotion":"determined","prop":"letter","beats":[{"action":"read","duration":1,"actor":"다윗"},{"action":"write","duration":1.2,"actor":"다윗"},{"action":"fold","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"look","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 11:18-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-12",
@@ -5602,53 +2152,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "아이의 질병과 죽음을 화면에 직접 재현하지 않고 부모의 애도와 새 생명의 도래를 절제해 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "mourn",
-        "lead": "다윗",
-        "target": "밧세바",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "bed",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 12:13-25",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"밧세바","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"bed","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 12:13-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-13",
@@ -5677,53 +2181,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "피해를 낭만화하지 않고 폭력으로 이어지는 조종과 계획의 위험을 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "plan",
-        "lead": "암논",
-        "target": "요나답",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "scroll",
-        "emotion": "determined",
-        "prop": "bed",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "암논"
-          },
-          {
-            "action": "open",
-            "duration": 1.2,
-            "actor": "암논"
-          },
-          {
-            "action": "read",
-            "duration": 1.5,
-            "actor": "암논"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "암논"
-          },
-          {
-            "action": "write",
-            "duration": 1.5,
-            "actor": "암논"
-          },
-          {
-            "action": "fold",
-            "duration": 1.2,
-            "actor": "암논"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 13:1-6",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"plan","lead":"암논","target":"요나답","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"bed","beats":[{"action":"inspect","duration":1,"actor":"암논"},{"action":"open","duration":1.2,"actor":"암논"},{"action":"read","duration":1.5,"actor":"암논"},{"action":"point","duration":1.8,"actor":"암논"},{"action":"write","duration":1.5,"actor":"암논"},{"action":"fold","duration":1.2,"actor":"암논"}],"duration":8.2,"support":null,"ref":"사무엘하 13:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-14",
@@ -5764,53 +2222,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "살해를 직접 묘사하지 않고, 사건 뒤의 애도와 도피를 중심으로 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "flee",
-        "lead": "압살롬",
-        "target": "암논",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "worried",
-        "prop": "sword",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "run",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 13:23-39",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"flee","lead":"압살롬","target":"암논","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"sword","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"turn","duration":1.5,"actor":"압살롬"},{"action":"run","duration":1.8,"actor":"압살롬"},{"action":"run","duration":1.5,"actor":"압살롬"},{"action":"look","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:23-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-15",
@@ -5854,53 +2266,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "이야기 속 두 아들은 비유의 인물이므로 실제 사건 배우와 구분해 상징적으로 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "parable",
-        "lead": "드고아 여인",
-        "target": "요압",
-        "mode": "illustration",
-        "setting": "vision",
-        "effect": "symbol",
-        "emotion": "neutral",
-        "prop": "scroll",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "드고아 여인"
-          },
-          {
-            "action": "read",
-            "duration": 1.2,
-            "actor": "드고아 여인"
-          },
-          {
-            "action": "look",
-            "duration": 1.5,
-            "actor": "드고아 여인"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "드고아 여인"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "드고아 여인"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "드고아 여인"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 14:1-20",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"parable","lead":"드고아 여인","target":"요압","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"드고아 여인"},{"action":"read","duration":1.2,"actor":"드고아 여인"},{"action":"look","duration":1.5,"actor":"드고아 여인"},{"action":"point","duration":1.8,"actor":"드고아 여인"},{"action":"listen","duration":1.5,"actor":"드고아 여인"},{"action":"bow","duration":1.2,"actor":"드고아 여인"}],"duration":8.2,"support":null,"ref":"사무엘하 14:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-16",
@@ -5941,53 +2307,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "반역과 피난을 다루며 다윗의 퇴각을 승리의 행진처럼 연출하지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "flee",
-        "lead": "압살롬",
-        "target": "다윗",
-        "mode": "reconstruction",
-        "setting": "road",
-        "effect": "journey",
-        "emotion": "worried",
-        "prop": "ark-covenant",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "run",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "run",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "look",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 15:7-23",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"flee","lead":"압살롬","target":"다윗","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"ark-covenant","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"turn","duration":1.5,"actor":"압살롬"},{"action":"run","duration":1.8,"actor":"압살롬"},{"action":"run","duration":1.5,"actor":"압살롬"},{"action":"look","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 15:7-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-17",
@@ -6018,53 +2338,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "애도와 작전을 분리해 표현하고, 상징 표지는 산길 공간을 나타내요.",
-      "animation": {
-        "version": 2,
-        "motif": "mourn",
-        "lead": "다윗",
-        "target": "후새",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "scene-marker",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 15:30-37",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"후새","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 15:30-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-18",
@@ -6102,53 +2376,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "두 조언의 대비와 결정권자의 망설임을 대화 장면으로 구성해요.",
-      "animation": {
-        "version": 2,
-        "motif": "counsel",
-        "lead": "압살롬",
-        "target": "아히도벨",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "speech",
-        "emotion": "determined",
-        "prop": "scroll",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "압살롬"
-          },
-          {
-            "action": "turn",
-            "duration": 1.2,
-            "actor": "압살롬"
-          },
-          {
-            "action": "speak",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "point",
-            "duration": 1.8,
-            "actor": "압살롬"
-          },
-          {
-            "action": "listen",
-            "duration": 1.5,
-            "actor": "압살롬"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "압살롬"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 17:1-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"counsel","lead":"압살롬","target":"아히도벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"압살롬"},{"action":"turn","duration":1.2,"actor":"압살롬"},{"action":"speak","duration":1.5,"actor":"압살롬"},{"action":"point","duration":1.8,"actor":"압살롬"},{"action":"listen","duration":1.5,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 17:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-19",
@@ -6176,53 +2404,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "물품과 식량을 나누어 주는 장면을 따뜻하게 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "provision",
-        "lead": "다윗",
-        "target": "마길",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "bread",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 17:27-29",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"provision","lead":"다윗","target":"마길","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"bread","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 17:27-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-20",
@@ -6261,53 +2443,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "압살롬의 죽음은 직접 묘사하지 않고, 소식을 들은 다윗의 상실과 요압의 충고를 중심으로 해요.",
-      "animation": {
-        "version": 2,
-        "motif": "mourn",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "gate",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 18:19-33",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"gate","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 18:19-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-21",
@@ -6338,53 +2474,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕의 복귀를 정치적 화해와 권력 재편의 맥락에서 보여줘요.",
-      "animation": {
-        "version": 2,
-        "motif": "reconcile",
-        "lead": "다윗",
-        "target": "이스라엘 모든 백성",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "crown",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "receive",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 19:9-15",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"reconcile","lead":"다윗","target":"이스라엘 모든 백성","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"crown","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"receive","duration":1.8,"actor":"다윗"},{"action":"bow","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 19:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-22",
@@ -6423,53 +2513,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "용서와 불신, 공정하지 못할 수도 있는 왕의 판단을 단순한 화해로만 그리지 않아요.",
-      "animation": {
-        "version": 2,
-        "motif": "reconcile",
-        "lead": "다윗",
-        "target": "시므이",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "cloak",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "receive",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 19:16-30",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"reconcile","lead":"다윗","target":"시므이","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"receive","duration":1.8,"actor":"다윗"},{"action":"bow","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 19:16-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-23",
@@ -6507,53 +2551,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "처형과 시신은 직접 묘사하지 않고 리스바의 애도와 기근 해결의 복잡한 윤리만 다뤄요.",
-      "animation": {
-        "version": 2,
-        "motif": "lament",
-        "lead": "다윗",
-        "target": "기브온 사람들",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tears",
-        "emotion": "sad",
-        "prop": "sackcloth",
-        "beats": [
-          {
-            "action": "startle",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "cover-mouth",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "mourn",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "lower",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 21:1-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"lament","lead":"다윗","target":"기브온 사람들","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"sackcloth","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-24",
@@ -6581,53 +2579,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "물의 전달과 다윗의 거절을 따라가며 충성과 생명의 가치를 강조해요.",
-      "animation": {
-        "version": 2,
-        "motif": "offer",
-        "lead": "다윗",
-        "target": "삼십 두목 중 세 사람",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "transfer",
-        "emotion": "gentle",
-        "prop": "water",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "lift",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "release",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 23:13-17",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"offer","lead":"다윗","target":"삼십 두목 중 세 사람","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"water","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"extend","duration":1.8,"actor":"다윗"},{"action":"release","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 23:13-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-25",
@@ -6659,53 +2611,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "기록판은 조사와 권력의 상징 소품이에요.",
-      "animation": {
-        "version": 2,
-        "motif": "inventory",
-        "lead": "다윗",
-        "target": "요압",
-        "mode": "reconstruction",
-        "setting": "store",
-        "effect": "stack",
-        "emotion": "determined",
-        "prop": "writing-tablet",
-        "beats": [
-          {
-            "action": "inspect",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "gather",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "carry",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "count",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "stand",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 24:1-9",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"inventory","lead":"다윗","target":"요압","mode":"reconstruction","setting":"store","effect":"stack","emotion":"determined","prop":"writing-tablet","beats":[{"action":"inspect","duration":1,"actor":"다윗"},{"action":"gather","duration":1.2,"actor":"다윗"},{"action":"carry","duration":1.5,"actor":"다윗"},{"action":"place","duration":1.8,"actor":"다윗"},{"action":"count","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 24:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-26",
@@ -6733,137 +2639,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "재앙을 자극적으로 예고하지 않고 책임 인정과 자비를 구하는 선택을 중심으로 해요.",
-      "animation": {
-        "version": 2,
-        "motif": "repent",
-        "lead": "다윗",
-        "target": "갓",
-        "mode": "reconstruction",
-        "setting": "courtyard",
-        "effect": "tear",
-        "emotion": "sad",
-        "prop": "scene-marker",
-        "beats": [
-          {
-            "action": "listen",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "startle",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "grasp",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "tear",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "kneel",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "pray",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 24:10-14",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
-    },
-    {
-      "id": "ot-2sa-extra-9-0",
-      "code": "2sa",
-      "chapter": 9,
-      "title": "므비보셋을 왕의 식탁에 초대하다",
-      "actors": [
-        "다윗",
-        "므비보셋",
-        "시바",
-        "요나단"
-      ],
-      "object": "scene-marker",
-      "ref": "사무엘하 9:1-13",
-      "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 다윗이 요나단의 아들 므비보셋을 찾아 사울의 땅을 돌려주고, 그를 왕의 식탁에 앉혀요."
-      ],
-      "study": "다윗이 요나단의 아들 므비보셋을 찾아 사울의 땅을 돌려주고, 그를 왕의 식탁에 앉혀요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {
-        "version": 2,
-        "motif": "welcome",
-        "lead": "다윗",
-        "target": "므비보셋",
-        "mode": "reconstruction",
-        "setting": "chamber",
-        "effect": "feast",
-        "emotion": "joy",
-        "prop": "scene-marker",
-        "beats": [
-          {
-            "action": "look",
-            "duration": 1,
-            "actor": "다윗"
-          },
-          {
-            "action": "walk",
-            "duration": 1.2,
-            "actor": "다윗"
-          },
-          {
-            "action": "bow",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "extend",
-            "duration": 1.8,
-            "actor": "다윗"
-          },
-          {
-            "action": "place",
-            "duration": 1.5,
-            "actor": "다윗"
-          },
-          {
-            "action": "sit",
-            "duration": 1.2,
-            "actor": "다윗"
-          }
-        ],
-        "duration": 8.2,
-        "support": null,
-        "ref": "사무엘하 9:1-13",
-        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
-      }
+      "animation": {"version":2,"motif":"repent","lead":"다윗","target":"갓","mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"grasp","duration":1.5,"actor":"다윗"},{"action":"tear","duration":1.8,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 24:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
