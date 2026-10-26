@@ -25,7 +25,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"lament","lead":"나오미","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"barley","beats":[{"action":"startle","duration":1,"actor":"나오미"},{"action":"lower","duration":1.2,"actor":"나오미"},{"action":"kneel","duration":1.5,"actor":"나오미"},{"action":"cover-mouth","duration":1.8,"actor":"나오미"},{"action":"mourn","duration":1.5,"actor":"나오미"},{"action":"lower","duration":1.2,"actor":"나오미"}],"duration":8.2,"support":null,"ref":"룻기 1:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "나오미",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "barley",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "나오미"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "나오미"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "나오미"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "나오미"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 1:19-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-2-0",
@@ -50,7 +96,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"gather","lead":"룻","target":null,"mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"field","beats":[{"action":"walk","duration":1,"actor":"룻"},{"action":"bend","duration":1.2,"actor":"룻"},{"action":"grasp","duration":1.5,"actor":"룻"},{"action":"lift","duration":1.8,"actor":"룻"},{"action":"bundle","duration":1.5,"actor":"룻"},{"action":"carry","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "룻",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "field",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "룻"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "룻"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "룻"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "룻"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 2:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-2-1",
@@ -85,7 +177,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"offer","lead":"보아스","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"field","beats":[{"action":"inspect","duration":1,"actor":"보아스"},{"action":"gather","duration":1.2,"actor":"보아스"},{"action":"lift","duration":1.5,"actor":"보아스"},{"action":"extend","duration":1.8,"actor":"보아스"},{"action":"release","duration":1.5,"actor":"보아스"},{"action":"bow","duration":1.2,"actor":"보아스"}],"duration":8.2,"support":null,"ref":"룻기 2:4-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "offer",
+        "lead": "보아스",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "field",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "보아스"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "보아스"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "보아스"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "보아스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 2:4-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-2-2",
@@ -115,7 +253,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"receive","lead":"룻","target":"나오미","mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"barley","beats":[{"action":"listen","duration":1,"actor":"룻"},{"action":"reach","duration":1.2,"actor":"룻"},{"action":"grasp","duration":1.5,"actor":"룻"},{"action":"lift","duration":1.8,"actor":"룻"},{"action":"inspect","duration":1.5,"actor":"룻"},{"action":"lower","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 2:17-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "receive",
+        "lead": "룻",
+        "target": "나오미",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "receive",
+        "emotion": "surprised",
+        "prop": "barley",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "룻"
+          },
+          {
+            "action": "reach",
+            "duration": 1.2,
+            "actor": "룻"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "룻"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "룻"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 2:17-23",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-3-2",
@@ -142,7 +326,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"provision","lead":"보아스","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"barley","beats":[{"action":"inspect","duration":1,"actor":"보아스"},{"action":"gather","duration":1.2,"actor":"보아스"},{"action":"lift","duration":1.5,"actor":"보아스"},{"action":"extend","duration":1.8,"actor":"보아스"},{"action":"release","duration":1.5,"actor":"보아스"},{"action":"bow","duration":1.2,"actor":"보아스"}],"duration":8.2,"support":null,"ref":"룻기 3:14-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "provision",
+        "lead": "보아스",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "barley",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "보아스"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "보아스"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "보아스"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "보아스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 3:14-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-4-0",
@@ -170,7 +400,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"agreement","lead":"보아스","target":null,"mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"보아스"},{"action":"bow","duration":1.2,"actor":"보아스"},{"action":"extend","duration":1.5,"actor":"보아스"},{"action":"pledge","duration":1.8,"actor":"보아스"},{"action":"read","duration":1.5,"actor":"보아스"},{"action":"bow","duration":1.2,"actor":"보아스"}],"duration":8.2,"support":null,"ref":"룻기 4:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "agreement",
+        "lead": "보아스",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "covenant",
+        "emotion": "determined",
+        "prop": "gate",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "보아스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "보아스"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "pledge",
+            "duration": 1.8,
+            "actor": "보아스"
+          },
+          {
+            "action": "read",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "보아스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 4:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-4-1",
@@ -198,7 +474,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"exchange-shoe","lead":"보아스","target":null,"mode":"reconstruction","setting":"gate","effect":"shoe","emotion":"determined","prop":"sandal","beats":[{"action":"listen","duration":1,"actor":"보아스"},{"action":"kneel","duration":1.2,"actor":"보아스"},{"action":"remove-shoe","duration":1.5,"actor":"보아스"},{"action":"lift","duration":1.8,"actor":"보아스"},{"action":"extend","duration":1.5,"actor":"보아스"},{"action":"bow","duration":1.2,"actor":"보아스"}],"duration":8.2,"support":null,"ref":"룻기 4:7-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "exchange-shoe",
+        "lead": "보아스",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "gate",
+        "effect": "shoe",
+        "emotion": "determined",
+        "prop": "sandal",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "보아스"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "보아스"
+          },
+          {
+            "action": "remove-shoe",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "보아스"
+          },
+          {
+            "action": "extend",
+            "duration": 1.5,
+            "actor": "보아스"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "보아스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 4:7-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-15",
@@ -238,7 +560,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"plead","lead":"룻","target":"보아스","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"룻"},{"action":"kneel","duration":1.2,"actor":"룻"},{"action":"lift","duration":1.5,"actor":"룻"},{"action":"pray","duration":1.8,"actor":"룻"},{"action":"pray","duration":1.5,"actor":"룻"},{"action":"bow","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 3:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "plead",
+        "lead": "룻",
+        "target": "보아스",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "worried",
+        "prop": "cloak",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "룻"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "룻"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "pray",
+            "duration": 1.8,
+            "actor": "룻"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "룻"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 3:6-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-extra-01",
@@ -268,7 +636,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "집은 고향을 떠난 가족을 상징하는 배치예요. 죽음은 직접 재현하지 않아요.",
-      "animation": {"version":2,"motif":"depart","lead":"엘리멜렉","target":"나오미","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"엘리멜렉"},{"action":"gather","duration":1.2,"actor":"엘리멜렉"},{"action":"carry","duration":1.5,"actor":"엘리멜렉"},{"action":"walk","duration":1.8,"actor":"엘리멜렉"},{"action":"walk","duration":1.5,"actor":"엘리멜렉"},{"action":"look","duration":1.2,"actor":"엘리멜렉"}],"duration":8.2,"support":null,"ref":"룻기 1:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "depart",
+        "lead": "엘리멜렉",
+        "target": "나오미",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "determined",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "엘리멜렉"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "엘리멜렉"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "엘리멜렉"
+          },
+          {
+            "action": "walk",
+            "duration": 1.8,
+            "actor": "엘리멜렉"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "엘리멜렉"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "엘리멜렉"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 1:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-extra-02",
@@ -305,7 +719,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "두 며느리의 서로 다른 선택을 보여주는 귀향 장면이에요.",
-      "animation": {"version":2,"motif":"journey","lead":"나오미","target":"룻","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"house","beats":[{"action":"listen","duration":1,"actor":"나오미"},{"action":"gather","duration":1.2,"actor":"나오미"},{"action":"carry","duration":1.5,"actor":"나오미"},{"action":"walk","duration":1.8,"actor":"나오미"},{"action":"walk","duration":1.5,"actor":"나오미"},{"action":"look","duration":1.2,"actor":"나오미"}],"duration":8.2,"support":null,"ref":"룻기 1:6-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "journey",
+        "lead": "나오미",
+        "target": "룻",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "determined",
+        "prop": "house",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "나오미"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "나오미"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "walk",
+            "duration": 1.8,
+            "actor": "나오미"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "나오미"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 1:6-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-extra-03",
@@ -333,7 +793,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "옷은 본문에 나오는 준비의 일부예요. 장면은 밤의 행동을 선정적으로 연출하지 않아요.",
-      "animation": {"version":2,"motif":"wear","lead":"나오미","target":"룻","mode":"reconstruction","setting":"chamber","effect":"garment","emotion":"gentle","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"나오미"},{"action":"grasp","duration":1.2,"actor":"나오미"},{"action":"lift","duration":1.5,"actor":"나오미"},{"action":"wear","duration":1.8,"actor":"나오미"},{"action":"smooth","duration":1.5,"actor":"나오미"},{"action":"bow","duration":1.2,"actor":"나오미"}],"duration":8.2,"support":null,"ref":"룻기 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "wear",
+        "lead": "나오미",
+        "target": "룻",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "garment",
+        "emotion": "gentle",
+        "prop": "robe",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "나오미"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "나오미"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "wear",
+            "duration": 1.8,
+            "actor": "나오미"
+          },
+          {
+            "action": "smooth",
+            "duration": 1.5,
+            "actor": "나오미"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "나오미"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 3:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-extra-04",
@@ -362,7 +868,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "출산을 직접 묘사하지 않고 아이의 탄생과 공동체의 돌봄을 중심으로 보여줘요.",
-      "animation": {"version":2,"motif":"birth","lead":"룻","target":"나오미","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"bed","beats":[{"action":"look","duration":1,"actor":"룻"},{"action":"listen","duration":1.2,"actor":"룻"},{"action":"cradle","duration":1.5,"actor":"룻"},{"action":"smile","duration":1.8,"actor":"룻"},{"action":"bless","duration":1.5,"actor":"룻"},{"action":"bow","duration":1.2,"actor":"룻"}],"duration":8.2,"support":null,"ref":"룻기 4:13-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "birth",
+        "lead": "룻",
+        "target": "나오미",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "family",
+        "emotion": "gentle",
+        "prop": "bed",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "룻"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "룻"
+          },
+          {
+            "action": "cradle",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "smile",
+            "duration": 1.8,
+            "actor": "룻"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "룻"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 4:13-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-rut-review-4-01",
@@ -389,7 +941,130 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "등장인물이 한 장면에서 함께 살았다는 뜻이 아니라, 계보에 기록된 이름의 흐름을 두루마리의 상징으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"오벳","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"book","beats":[{"action":"look","duration":1,"actor":"오벳"},{"action":"listen","duration":1.2,"actor":"오벳"},{"action":"cradle","duration":1.5,"actor":"오벳"},{"action":"smile","duration":1.8,"actor":"오벳"},{"action":"bless","duration":1.5,"actor":"오벳"},{"action":"bow","duration":1.2,"actor":"오벳"}],"duration":8.2,"support":null,"ref":"룻기 4:18-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "genealogy",
+        "lead": "오벳",
+        "target": null,
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "family",
+        "emotion": "gentle",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "오벳"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "오벳"
+          },
+          {
+            "action": "cradle",
+            "duration": 1.5,
+            "actor": "오벳"
+          },
+          {
+            "action": "smile",
+            "duration": 1.8,
+            "actor": "오벳"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "오벳"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "오벳"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 4:18-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-rut-review-03-06",
+      "code": "rut",
+      "chapter": 3,
+      "title": "타작마당의 밤",
+      "actors": [
+        "룻",
+        "보아스"
+      ],
+      "object": "scroll",
+      "ref": "룻기 3:6-13",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 룻이 옷자락으로 덮어 달라며 결혼을 청하자, 보아스는 룻의 인애를 칭찬하고 더 가까운 친척 문제부터 풀겠다고 맹세해요."
+      ],
+      "study": "룻이 옷자락으로 덮어 달라며 결혼을 청하자, 보아스는 룻의 인애를 칭찬하고 더 가까운 친척 문제부터 풀겠다고 맹세해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 사건과 인물을 설명하는 장면이에요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "룻",
+        "target": "보아스",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "룻"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "룻"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "룻"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "룻"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "룻"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "룻기 3:6-13",
+        "source": "장별 요약 사건 단락 기반 연출 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
