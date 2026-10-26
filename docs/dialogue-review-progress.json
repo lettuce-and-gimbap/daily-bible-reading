@@ -294,13 +294,25 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "2sa",
-    "nextBook": "2sa",
-    "booksCompleted": 9,
-    "completedBooks": ["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa"],
-    "chaptersReviewed": 267,
-    "relationshipLinksReviewed": 932,
-    "authoredPairEntriesReviewed": 124,
+    "currentBook": "2ki",
+    "nextBook": "2ki",
+    "booksCompleted": 11,
+    "completedBooks": [
+      "gen",
+      "exo",
+      "lev",
+      "num",
+      "deu",
+      "jos",
+      "jdg",
+      "rut",
+      "1sa",
+      "2sa",
+      "1ki"
+    ],
+    "chaptersReviewed": 313,
+    "relationshipLinksReviewed": 1433,
+    "authoredPairEntriesReviewed": 175,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
@@ -310,6 +322,6 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "창세기부터 사무엘상까지 9권의 대화 품질 재검토를 마쳤다. 267장, 관계선 932개, 등록 대화 124개를 확인했다. 창세기의 요셉 장면과 형제 대화, 출애굽기 산파들의 공동 답변, 레위기의 형·삼촌 호칭, 민수기의 모세가 하나님께 올린 호소와 슬로브핫 딸들의 판결 전달 화자를 바로잡았다. 신명기 31장과 여호수아 14장의 계승·헤브론 요청 대화를 구체화했다. 사사기의 입다 딸은 본문에 없는 기쁨을 말하지 않도록 고쳤고, 마노아가 하나님께 기도한 내용을 아내에게 한 말로 잘못 돌리지 않았다. 사사기 20장의 집단 반응과 룻의 맹세에 대한 나오미의 답은 창작 재구성임을 자세히 보기에 밝혔다. 사무엘상에서는 다윗과 요나단의 언약·선물, 사무엘의 사울 책망과 사울의 실제 자백, 엘리의 한나 축복, 사무엘과 엘리의 부르심 대화를 본문 장면에 맞게 구체화했다. 다음은 사무엘하이다. 전체 66권 1,189장 3,857개 상호작용 대상의 구조 검사는 통과했으며, 관계선을 하나씩 대조하며 이어간다."
+    "statusNote": "창세기부터 열왕기상까지 11권의 관계·사건 대사 품질 재검토를 마쳤다. 313장, 관계선 1,433개, 등록 대화 175개를 확인했다. 이전 권의 가족 호칭·사건 화자·실제 발화와 재구성 발화 구분을 이어 점검했다. 열왕기상에서는 나봇 사건의 이세벨 편지를 장로들에게 전달된 문서로 구분하고, 아합과 엘리야의 실제 대면 발화를 본문에 맞췄다. 엘리야의 로뎀나무 아래 말은 이세벨에게 한 답이 아니라 여호와께 드린 기도로 바로잡았고, 엘리야와 엘리사의 부르심 대화를 본문 장면에 맞게 고쳤다. 여로보암·바아사·벤하닷 등 본문에 답이 기록되지 않은 인물의 반응은 창작 재구성임을 자세히 보기에 표시했다. 22장 전체의 사건·관계 장면과 116개 상호작용 연결을 대조했고, 다음은 열왕기하다. 전체 66권 1,189장 3,857개 상호작용 대상의 구조 검사는 통과 상태이며, 권별 품질 검토를 계속한다."
   }
 }

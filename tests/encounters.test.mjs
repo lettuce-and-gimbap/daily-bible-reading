@@ -88,15 +88,28 @@ test('사무엘하의 인간 관계선 385개와 주요 사건의 대화를 모�
   audited++;
  }
  assert.equal(audited,385);
- const cases=[['2sa.1','다윗','아말렉 청년',/기름 부음 받은 왕/,/보상을|왕께서 물으셔서/],['2sa.2','다윗','야베스 길르앗 사람들',/장사해 준/,/기억해|알아주셔서/],['2sa.3','아브넬','다윗',/이스라엘 장로들/,/미갈|언약/],['2sa.3','요압','다윗',/아브넬/,/스루야|악을 행한 자/],['2sa.5','이스라엘 지파들','다윗',/골육|목자/,/헤브론|언약/],['2sa.7','나단','다윗',/집을 세우십니다/,/성전을 짓고|집이 주 앞에/],['2sa.9','다윗','므비보셋',/두려워하지|상에서 먹어라/,/죽은 개|자격/],['2sa.11','다윗','우리아',/집으로 내려가/,/집에 갈 수 없/],['2sa.16','압살롬','후새',/왜 그 친구의 아들을/,/왕 만세/],['2sa.19','시므이','다윗',/죄를 지었습니다/,/죽지 않을/],['2sa.19','다윗','므비보셋',/왜 나와 함께/,/시바가|왕께서 무사히/],['2sa.19','바르실래','다윗',/요단을 건너/,/김함/],['2sa.24','다윗','아라우나',/타작마당|값을 치르지/,/제단을 쌓으십시오/]];
+ const cases=[['2sa.1','다윗','아말렉 청년',/기름 부음 받은 왕/,/죽여 달라고|제가 사울을 죽였다고/],['2sa.2','다윗','야베스 길르앗 사람들',/장사해 준/,/기억해|알아주셔서/],['2sa.3','아브넬','다윗',/이스라엘 장로들/,/미갈|언약/],['2sa.3','요압','다윗',/아브넬/,/스루야|네가 한 악|악을 행한 자/],['2sa.5','이스라엘 지파들','다윗',/골육|목자/,/헤브론|언약/],['2sa.7','나단','다윗',/집을 세우십니다/,/성전을 짓고|집을 세우신다는 약속/],['2sa.9','다윗','므비보셋',/두려워하지|상에서 먹어라/,/죽은 개|자격/],['2sa.11','다윗','우리아',/집으로 내려가/,/집에 갈 수 없/],['2sa.16','압살롬','후새',/왜 그 친구의 아들을/,/왕 만세/],['2sa.19','시므이','다윗',/죄를 지었습니다/,/죽지 않을/],['2sa.19','다윗','므비보셋',/왜 나와 함께/,/시바가|왕께서 무사히/],['2sa.19','바르실래','다윗',/요단을 건널/,/김함/],['2sa.24','다윗','아라우나',/타작마당|값을 치르지/,/제단을 쌓으십시오/]];
  for(const [chapter,speaker,target,first,reply]of cases){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
-  assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)));assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)));
+  assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} ${speaker} first line`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} ${speaker} reply line`);
  }
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='2sa');
  assert.equal(rows.length,25);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length),'각 발화마다 구절 연결');
  const verseCounts=[27,32,39,12,25,23,29,18,13,19,27,31,39,33,37,23,29,33,43,26,22,51,39,25];
  for(const row of rows){const base=row[3].match(/\d+/g).map(Number);for(const ref of row[7]){const n=ref.match(/\d+/g).map(Number),end=n[1]||n[0];assert.ok(n[0]>=base[0]&&end<=(base[1]||base[0])&&end<=verseCounts[row[1]-1],`${row[1]} ${ref} 범위 확인`)}}
+});
+
+test('사무엘하의 나단·다윗 책망, 사울 죽음 주장, 요압 항의, 바르실래의 작별을 본문대로 구분한다',()=>{
+ const nathan=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.12'&&entry.speaker==='나단');
+ assert.match(nathan.lines[1],/우리야를 죽이고/);
+ const amalekite=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.1'&&entry.speaker==='다윗'&&entry.target==='아말렉 청년');
+ assert.match(amalekite.ref,/1:6–16/);assert.doesNotMatch(amalekite.replyLines[0],/보상/);assert.match(amalekite.detail,/사무엘상 31장/);
+ const joab=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.3'&&entry.speaker==='요압');
+ assert.match(joab.detail,/직접 한 말로 기록하지 않고/);assert.match(joab.detail,/창작 재구성/);
+ const nathanPromise=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.7');
+ assert.match(nathanPromise.detail,/하나님께 기도한 것이 아니라|나단에게 답한 것이 아니라 하나님께 기도/);
+ const barzillai=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.19'&&entry.speaker==='바르실래');
+ assert.match(barzillai.lines[0],/너무 늙었습니다/);assert.match(barzillai.lines[1],/김함/);
 });
 
 test('열왕기상 인간 관계선 115개와 왕·선지자·가족의 핵심 대화를 확인한다',()=>{
@@ -109,6 +122,12 @@ test('열왕기상 인간 관계선 115개와 왕·선지자·가족의 핵심 �
  const cases=[['1ki.1','밧세바','다윗',/아도니야|솔로몬/,/솔로몬이 왕이|기름 부으/],['1ki.1','나단','다윗',/아도니야가 왕이/,/솔로몬이 왕이/],['1ki.2','밧세바','솔로몬',/아비삭/,/왕위를|아비삭/],['1ki.3','솔로몬','두 여인',/칼을 가져와|아이를 죽이지/,/아이를 죽이지|포기/],['1ki.5','솔로몬','히람',/성전을|백향목/,/백향목|나무를 보내/],['1ki.10','스바 여왕','솔로몬',/질문|소문/,/물어보|찬양/],['1ki.11','아히야','여로보암',/열 지파/,/나라를|열 지파/],['1ki.12','르호보암','노인들',/멍에/,/백성의 종|부드럽게/],['1ki.13','하나님의 사람','늙은 선지자',/먹지도|말씀/,/선지자|여호와께서 말씀/],['1ki.14','아히야','여로보암의 아내',/변장/,/아들이 죽/],['1ki.15','아사','벤하닷',/은과 금/,/조약|이스라엘 왕/],['1ki.16','예후(하나니의 아들)','바아사',/세우셨/,/왕조|여로보암/],['1ki.17','엘리야','사르밧 과부',/빵 한 조각/,/밀가루|먼저/],['1ki.18','엘리야','오바댜',/아합 앞에/,/두려|엘리야시군요/],['1ki.18','아합','엘리야',/괴롭게/,/왕과 왕의 집안/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='1ki');assert.equal(rows.length,27);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
+ const naboth=PAIR_DIALOGUE.find(entry=>entry.id==='pair-3');assert.equal(naboth.target,'나봇의 성읍 장로들');assert.match(naboth.detail,/편지 내용을 대사로 옮겼고/);
+ const jezebelThreat=PAIR_DIALOGUE.find(entry=>entry.id==='pair-9');assert.match(jezebelThreat.detail,/마주 앉아 한 대화가 아니라 사자를 통해/);assert.equal(jezebelThreat.replyLines.length,2);
+ assert.equal(PAIR_DIALOGUE.some(entry=>['pair-10','pair-12','pair-13'].includes(entry.id)),false,'기도와 기록된 행동은 인물 간 대사로 만들지 않는다');
+ const call=PAIR_DIALOGUE.find(entry=>entry.id==='pair-14'),callReply=PAIR_DIALOGUE.find(entry=>entry.id==='pair-15');assert.match(call.lines[0],/부모님께 입 맞추고/);assert.match(callReply.lines[0],/돌아가라/);
+ const baasha=PAIR_DIALOGUE.find(entry=>entry.id==='pair-189');assert.match(baasha.detail,/답변을 기록하지 않습니다/);
+ const benhadad=PAIR_DIALOGUE.find(entry=>entry.id==='pair-188');assert.match(benhadad.detail,/사신을 통해/);assert.match(benhadad.detail,/재구성/);
  const verseCounts=[53,46,28,34,18,38,51,66,28,29,43,33,34,31,34,34,24,46,21,43,29,53];
  for(const row of rows){const base=row[3].match(/\d+/g).map(Number);for(const ref of row[7]){const n=ref.match(/\d+/g).map(Number),end=n[1]||n[0];assert.ok(n[0]>=base[0]&&end<=(base[1]||base[0])&&end<=verseCounts[row[1]-1],`${row[1]} ${ref} 범위 확인`)}}
 });

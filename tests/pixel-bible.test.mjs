@@ -387,7 +387,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,268);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
+ assert.equal(PAIR_DIALOGUE.length,264);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.equal(p.lines.length,2);}
  assert.equal(DIALOGUE_SOURCE_STATUS.hokma,'partially-reviewed-uploaded-hokma-notes');
 });
 
@@ -417,10 +417,10 @@ test('클릭은 현재 대사를 즉시 교체하고 새 5초 종료 후 5초 �
 test('이세벨의 대상별 대사를 구분하고 거리·현재 본문·이동 상태를 확인한다',async()=>{
  const {dialogueCandidates}=await import('../js/features/pixel-bible/dialogue.js');
  const npc=(name,x)=>({name,x,y:8,path:[],refs:['열왕기상 21장']});
- const people=[npc('이세벨',10),npc('아합',11),npc('나봇',12)];
+ const people=[npc('이세벨',10),npc('아합',11),npc('나봇',12),npc('나봇의 성읍 장로들',13)];
  const candidates=dialogueCandidates(people,[{code:'1ki',chap:21}]);
  const queen=candidates.filter(c=>c.kind==='pair'&&c.speaker.name==='이세벨');
- assert.equal(queen.filter(c=>c.target.name==='아합').length,2);assert.equal(queen.filter(c=>c.target.name==='나봇').length,2);
+ assert.equal(queen.filter(c=>c.target.name==='아합').length,2);assert.equal(queen.filter(c=>c.target.name==='나봇의 성읍 장로들').length,2);assert.equal(queen.some(c=>c.target.name==='나봇'),false);
  assert.notEqual(queen[0].text,queen.at(-1).text);
  people[2].x=20;assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:21}]).some(c=>c.kind==='pair'&&c.target.name==='나봇'));
  assert.ok(!dialogueCandidates(people,[{code:'1ki',chap:20}]).some(c=>c.kind==='pair'));
