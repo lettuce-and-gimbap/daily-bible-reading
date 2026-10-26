@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "tit",
-    "nextBook": "phm",
-    "booksCompleted": 56,
+    "currentBook": "phm",
+    "nextBook": "heb",
+    "booksCompleted": 57,
     "completedBooks": [
       "gen",
       "exo",
@@ -353,10 +353,11 @@
       "2th",
       "1ti",
       "2ti",
-      "tit"
+      "tit",
+      "phm"
     ],
-    "chaptersReviewed": 1136,
-    "relationshipLinksReviewed": 3771,
+    "chaptersReviewed": 1137,
+    "relationshipLinksReviewed": 3776,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -367,31 +368,29 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "디도서 3장 전체의 발화 3묶음·6문장을 문장별 구절 근거와 연결했다. 교회 지도자의 자격, 은혜로 얻는 구원, 선한 일을 힘쓰라는 목회 권면을 문맥에 맞게 확인하고 관계 연결 12개를 살폈다. 다음은 빌레몬서다.",
+    "statusNote": "빌레몬서 한 장의 발화를 살펴 바울이 오네시모를 아들처럼 부르는 정서와 빌레몬에게 형제로 받아 달라는 간청을 2문장·개별 절 참조로 정리했다. 손해가 있다면 자신의 몫으로 돌려 달라는 부탁도 확인하고 관계 연결 5개를 점검했다. 다음은 히브리서다.",
     "partialBookAudit": {
-      "book": "tit",
-      "chaptersScanned": 3,
-      "chaptersWithAuthoredDialogueReviewed": 3,
-      "authoredUtteranceGroupsReviewed": 3,
-      "utteranceReferencesCorrected": 6,
-      "chapterDialogueAudit": 3,
+      "book": "phm",
+      "chaptersScanned": 1,
+      "chaptersWithAuthoredDialogueReviewed": 1,
+      "authoredUtteranceGroupsReviewed": 1,
+      "utteranceReferencesCorrected": 2,
+      "chapterDialogueAudit": 1,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 12,
+      "relationshipEdgesAudited": 5,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 12,
-      "relationshipLinksFound": 12,
+      "relationshipBasedPairLines": 5,
+      "relationshipLinksFound": 5,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 12,
+      "generatedLinksRemaining": 5,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
-        1,
-        2,
-        3
+        1
       ],
-      "statusNote": "디도서 3장 전체의 발화 3묶음·6문장을 문장별 구절 근거와 연결했다. 교회 지도자의 자격, 은혜로 얻는 구원, 선한 일을 힘쓰라는 목회 권면을 문맥에 맞게 확인하고 관계 연결 12개를 살폈다. 다음은 빌레몬서다."
+      "statusNote": "빌레몬서 한 장의 발화를 살펴 바울이 오네시모를 아들처럼 부르는 정서와 빌레몬에게 형제로 받아 달라는 간청을 2문장·개별 절 참조로 정리했다. 손해가 있다면 자신의 몫으로 돌려 달라는 부탁도 확인하고 관계 연결 5개를 점검했다. 다음은 히브리서다."
     },
     "currentBookStatus": "complete"
   }
