@@ -25,7 +25,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"딸 시온","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"lyre","beats":[{"action":"listen","duration":1,"actor":"딸 시온"},{"action":"read","duration":1.2,"actor":"딸 시온"},{"action":"look","duration":1.5,"actor":"딸 시온"},{"action":"point","duration":1.8,"actor":"딸 시온"},{"action":"listen","duration":1.5,"actor":"딸 시온"},{"action":"bow","duration":1.2,"actor":"딸 시온"}],"duration":8.2,"support":null,"ref":"스바냐 3:14-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "딸 시온",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "lyre",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "딸 시온"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "딸 시온"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 3:14-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-1-0",
@@ -62,7 +108,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"스바냐","target":"요시야","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스바냐"},{"action":"turn","duration":1.2,"actor":"스바냐"},{"action":"speak","duration":1.5,"actor":"스바냐"},{"action":"point","duration":1.8,"actor":"스바냐"},{"action":"listen","duration":1.5,"actor":"스바냐"},{"action":"lower","duration":1.2,"actor":"스바냐"}],"duration":8.2,"support":null,"ref":"스바냐 1:2-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "스바냐",
+        "target": "요시야",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스바냐"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "스바냐"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스바냐"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "스바냐"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 1:2-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-1-1",
@@ -91,7 +183,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"스바냐","target":"고관과 왕자들","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스바냐"},{"action":"read","duration":1.2,"actor":"스바냐"},{"action":"look","duration":1.5,"actor":"스바냐"},{"action":"point","duration":1.8,"actor":"스바냐"},{"action":"listen","duration":1.5,"actor":"스바냐"},{"action":"bow","duration":1.2,"actor":"스바냐"}],"duration":8.2,"support":null,"ref":"스바냐 1:14-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "스바냐",
+        "target": "고관과 왕자들",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스바냐"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "스바냐"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스바냐"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스바냐"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 1:14-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-2-0",
@@ -118,7 +256,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"스바냐","target":"겸손한 자들","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스바냐"},{"action":"turn","duration":1.2,"actor":"스바냐"},{"action":"speak","duration":1.5,"actor":"스바냐"},{"action":"point","duration":1.8,"actor":"스바냐"},{"action":"listen","duration":1.5,"actor":"스바냐"},{"action":"lower","duration":1.2,"actor":"스바냐"}],"duration":8.2,"support":null,"ref":"스바냐 2:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "스바냐",
+        "target": "겸손한 자들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스바냐"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "스바냐"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스바냐"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "스바냐"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 2:1-3",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-2-1",
@@ -155,7 +339,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"스바냐","target":"블레셋","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"스바냐"},{"action":"turn","duration":1.2,"actor":"스바냐"},{"action":"speak","duration":1.5,"actor":"스바냐"},{"action":"point","duration":1.8,"actor":"스바냐"},{"action":"listen","duration":1.5,"actor":"스바냐"},{"action":"lower","duration":1.2,"actor":"스바냐"}],"duration":8.2,"support":null,"ref":"스바냐 2:4-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "judgment",
+        "lead": "스바냐",
+        "target": "블레셋",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스바냐"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "스바냐"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스바냐"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "스바냐"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 2:4-15",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-3-0",
@@ -187,7 +417,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"예루살렘","target":"방백과 재판장","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예루살렘"},{"action":"turn","duration":1.2,"actor":"예루살렘"},{"action":"speak","duration":1.5,"actor":"예루살렘"},{"action":"point","duration":1.8,"actor":"예루살렘"},{"action":"listen","duration":1.5,"actor":"예루살렘"},{"action":"lower","duration":1.2,"actor":"예루살렘"}],"duration":8.2,"support":null,"ref":"스바냐 3:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "예루살렘",
+        "target": "방백과 재판장",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "예루살렘"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "예루살렘"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 3:1-8",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-3-1",
@@ -213,7 +489,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"곤고한 남은 자","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"곤고한 남은 자"},{"action":"bend","duration":1.2,"actor":"곤고한 남은 자"},{"action":"grasp","duration":1.5,"actor":"곤고한 남은 자"},{"action":"lift","duration":1.8,"actor":"곤고한 남은 자"},{"action":"bundle","duration":1.5,"actor":"곤고한 남은 자"},{"action":"carry","duration":1.2,"actor":"곤고한 남은 자"}],"duration":8.2,"support":null,"ref":"스바냐 3:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "곤고한 남은 자",
+        "target": "딸 시온",
+        "mode": "illustration",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "곤고한 남은 자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 3:18-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-zep-extra-3-2",
@@ -240,7 +562,122 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"곤고한 남은 자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"곤고한 남은 자"},{"action":"read","duration":1.2,"actor":"곤고한 남은 자"},{"action":"look","duration":1.5,"actor":"곤고한 남은 자"},{"action":"point","duration":1.8,"actor":"곤고한 남은 자"},{"action":"listen","duration":1.5,"actor":"곤고한 남은 자"},{"action":"bow","duration":1.2,"actor":"곤고한 남은 자"}],"duration":8.2,"support":null,"ref":"스바냐 3:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "곤고한 남은 자",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "곤고한 남은 자"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "곤고한 남은 자"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 3:9-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-zep-review-01-01",
+      "code": "zep",
+      "chapter": 1,
+      "title": "모든 것을 진멸하리라 · 앞부분",
+      "actors": [
+        "스바냐"
+      ],
+      "object": "scroll",
+      "ref": "스바냐 1:1",
+      "verseNumbers": [
+        1
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 땅의 모든 것을 쓸어버리겠다고 하세요. 유다에서 바알과 우상 제사장을 끊고, 여호와와 말감에게 함께 맹세하는 사람을 찾아 벌하세요."
+      ],
+      "study": "하나님이 땅의 모든 것을 쓸어버리겠다고 하세요. 유다에서 바알과 우상 제사장을 끊고, 여호와와 말감에게 함께 맹세하는 사람을 찾아 벌하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "예언·비유는 본문이 제시하는 상징을 설명하는 장면으로 보여 줘요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "스바냐",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "스바냐"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "스바냐"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "스바냐"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "스바냐"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스바냐"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "스바냐 1:1",
+        "source": "장별 요약 단락 기반 상징 연출 · 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
