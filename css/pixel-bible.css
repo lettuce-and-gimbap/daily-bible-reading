@@ -24,8 +24,9 @@
 .pb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 /* 캔버스는 실제 화면 비율로 그린다. 도구는 월드 위 좌우 패널로 펼친다. */
 .pb-world-dialog { max-width: none; max-height: none; width: 100vw; height: 100dvh; border: 0; margin: 0; }
+.pb-world-dialog:has(.pb-shell:fullscreen) { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; }
 .pb-shell { position: relative; background: #132c35; width: 100%; height: 100%; overflow: hidden; color: #fff1c9; }
-.pb-shell:fullscreen { width: 100vw; height: 100dvh; }
+.pb-shell:fullscreen { position: fixed; inset: 0; width: 100vw; height: 100dvh; }
 .pb-world-head { position: absolute; inset: 0 0 auto; z-index: 21; height: 0; pointer-events: none; }
 .pb-world-head button { position: absolute; top: max(8px, env(safe-area-inset-top)); right: max(8px, env(safe-area-inset-right)); min-height: 44px; padding: 8px 12px; font-size: 14px; touch-action: manipulation; pointer-events: auto; }
 .pb-load { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; }
@@ -72,7 +73,7 @@
 .pb-design header { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; background: #15313a; padding: 8px; }
 .pb-design canvas { display: block; width: min(100%, 1200px); height: auto; margin: 12px auto; image-rendering: pixelated; }
 @media (orientation: portrait) {
-  .pb-world-dialog { position: fixed; inset: auto; left: 100vw; top: 0; width: 100dvh; height: 100vw; max-width: none; max-height: none; transform: rotate(90deg); transform-origin: top left; }
+  .pb-world-dialog.pb-css-landscape { position: fixed; inset: auto; left: 100vw; top: 0; width: 100dvh; height: 100vw; max-width: none; max-height: none; transform: rotate(90deg); transform-origin: top left; }
   .pb-world-dialog .pb-shell { width: 100%; height: 100%; }
   .pb-world-dialog .pb-rotate { display: none !important; }
   .pb-rotate strong { font: 900 24px "DungGeunMo", monospace; color: #ffe19c; }

@@ -131,13 +131,29 @@ test('달리기·충돌·물장구 동작은 정해진 확률과 3초 타이밍�
 });
 
 test('물 진입은 기존 충돌·오브젝트 모션을 해제하고 5초 뒤 안전한 물가로 이동한다',async()=>{
- const {beginWaterEscape,advanceWaterEscape,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
+ const {beginWaterEscape,advanceWaterEscape,advanceWaterEscapes,WATER_ESCAPE_SECONDS}=await import('../js/features/pixel-bible/water-escape.js');
  const actor={x:58,y:20,path:[{x:59,y:20}],task:{},running:true,collisionStun:{elapsed:2},usingObject:{kind:'water'},interaction:{gesture:'drink'},action:'drink',boatRide:{},expression:'surprised'};
  beginWaterEscape(actor,{x:56,y:20});
  assert.deepEqual([actor.path.length,actor.task,actor.running,actor.collisionStun,actor.usingObject,actor.interaction,actor.boatRide],[0,null,false,null,null,null,null]);
  for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05)-1;i++)assert.equal(advanceWaterEscape(actor,.05),false);
  assert.ok(actor.waterEscape);assert.equal(advanceWaterEscape(actor,.05),true);
  assert.deepEqual([actor.x,actor.y,actor.waterEscape],[56,20,null]);assert.equal(advanceWaterEscape(actor,.05),false);
+ const swimmer={x:12,y:12},bystander={x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1};beginWaterEscape(swimmer,{x:11,y:12});
+ for(let i=0;i<Math.floor(WATER_ESCAPE_SECONDS/.05);i++)advanceWaterEscapes([swimmer,bystander],.05);
+ assert.deepEqual([swimmer.x,swimmer.y,swimmer.waterEscape],[11,12,null]);
+ assert.deepEqual(bystander,{x:30,y:12,path:[{x:31,y:12}],stride:4,idle:1});
+});
+
+test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되어 있고 회전 좌표는 실제 CSS 회전 상태를 따른다',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const source=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
+ const entry=await readFile(new URL('../js/features/pixel-bible.js',import.meta.url),'utf8');
+ assert.match(source,/const rescued=advanceWaterEscapes\(npcs,dt\);[\s\S]{0,400}if\(!paused/);
+ assert.match(source,/const cssLandscape = \(\) => !!shell\.closest\('dialog'\)\?\.classList\.contains\('pb-css-landscape'\)/);
+ assert.match(source,/canvas\.height,cssLandscape\(\)/);
+ assert.match(entry,/fullscreenTarget\.requestFullscreen\(\)/);
+ assert.match(entry,/screen\.orientation\.lock\("landscape"\)/);
+ assert.match(entry,/pb-css-landscape/);
 });
 
 test('세로 화면에서도 CSS 회전 월드 애니메이션은 계속 돌고 숨김·종료 때만 멈춘다',async()=>{

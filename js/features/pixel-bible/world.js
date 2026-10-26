@@ -7,7 +7,7 @@ import {enhanceScene,eventRoutine} from './scripted-events.js';
 import {RECIPE_KEY,recipeKey,loadRecipeUnlocks,recipeLocked,recipeAssembled,requiredObjectsNearby} from './recipe-locks.js';
 import {waterAt,dryLanding} from './terrain-response.js';
 import {worldCanAnimate} from './world-loop.js';
-import {beginWaterEscape,advanceWaterEscape} from './water-escape.js';
+import {beginWaterEscape,advanceWaterEscapes} from './water-escape.js';
 import {drawWaterRescue} from './water-rescue-art.js';
 import {discoveryKey,importanceFor,prominentKeys,discoverySnapshot,mergeDiscovery,learningStage,learningNext,markStoryRead,loadDiscoveries,storyKey,DISCOVERY_KEY} from './discovery.js';
 import '../../shared/daylight.js';
@@ -613,8 +613,9 @@ export async function mountPixelWorld(shell, options) {
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
   }
+  const cssLandscape = () => !!shell.closest('dialog')?.classList.contains('pb-css-landscape');
   function coordinates(e) {
-    const point=clientToCanvasPoint(e.clientX,e.clientY,canvas.getBoundingClientRect(),canvas.width,canvas.height,window.innerHeight>=window.innerWidth),v=view();
+    const point=clientToCanvasPoint(e.clientX,e.clientY,canvas.getBoundingClientRect(),canvas.width,canvas.height,cssLandscape()),v=view();
     return {x:(point.x-v.x)/v.scale/TILE,y:(point.y-v.y)/v.scale/TILE};
   }
   function hitPerson(p,touch=false) {
@@ -669,7 +670,7 @@ export async function mountPixelWorld(shell, options) {
     draw();
   }
   const pointers=new Map();let pinch=null,pan=null,gestureActive=false;
-  const pixelPoint=e=>clientToCanvasPoint(e.clientX,e.clientY,canvas.getBoundingClientRect(),canvas.width,canvas.height,window.innerHeight>=window.innerWidth);
+  const pixelPoint=e=>clientToCanvasPoint(e.clientX,e.clientY,canvas.getBoundingClientRect(),canvas.width,canvas.height,cssLandscape());
   const pair=()=>[...pointers.values()].slice(0,2);
   const midpoint=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2});
   function syncCamera(){
@@ -743,6 +744,7 @@ export async function mountPixelWorld(shell, options) {
     if(object&&(index<0||npcs.some(n=>n.usingObject===object&&heldObject(n,time,reduced))||object.y*TILE>interactionAnchor(npcs[index],TILE).y)){beginObjectHold(object,e,point);return;}
     if(index<0)return;
     select(index);const n=npcs[index];
+    if(n.waterEscape){suppressClick=true;say('물가로 올라오는 중이에요. 잠시만 기다려 주세요.');return;}
 
     const anchor=interactionAnchor(n,TILE),pose=motionPose(n.motion,n.stride,!!n.path.length,time);
     const snapshot=n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
@@ -1032,7 +1034,7 @@ export async function mountPixelWorld(shell, options) {
           if(safe)beginWaterEscape(n,safe);
         }else{n.x=n.boatRide.x;n.y=n.boatRide.y+1;n.waterEscape=null;n.path=[];n.stride+=dt*2;continue;}
       }
-      if(n.waterEscape){n.direction='down';n.stride+=dt*8;if(advanceWaterEscape(n,dt))say('휴! 물가로 올라와 숨을 고르고 있어요.');continue;}
+      if(n.waterEscape)continue;
       if(n.collisionStun){
         n.collisionStun.elapsed+=dt;n.path=[];n.task=null;n.running=false;
         if(n.collisionStun.elapsed>=COLLISION_STUN_SECONDS){n.collisionStun=null;n.expression='neutral';n.idle=.3;}
@@ -1134,6 +1136,9 @@ export async function mountPixelWorld(shell, options) {
     if(disposed)return;
     if(!options.allowed()) {say("월드를 다시 열어 주세요.");return;}
     const dt=Math.min(.05,(stamp-last)/1000||0);last=stamp;
+    const rescued=advanceWaterEscapes(npcs,dt);
+    for(const n of npcs)if(n.waterEscape){n.direction='down';n.stride+=dt*8;}
+    if(rescued.length)say(rescued.length>1?`${rescued.length}명이 물가로 올라와 숨을 고르고 있어요.`:'휴! 물가로 올라와 숨을 고르고 있어요.');
     if(!paused&&!shell.querySelector('.pb-scripture')) {
       if(!activeEvent) update(dt);
       else {

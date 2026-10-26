@@ -29,6 +29,16 @@ function pixelBibleModal(contents, world = false) {
   pixelBibleDialog = dialog;
   let dispose = () => {};
   const abort = new AbortController();
+  const orientationState = { locked: false };
+  const syncOrientationFallback = () => {
+    if (!world || !dialog.isConnected) return;
+    dialog.classList.toggle("pb-css-landscape", window.innerHeight >= window.innerWidth && !orientationState.locked);
+  };
+  if (world) {
+    window.addEventListener("resize", syncOrientationFallback, { signal: abort.signal });
+    window.addEventListener("orientationchange", syncOrientationFallback, { signal: abort.signal });
+    window.visualViewport?.addEventListener("resize", syncOrientationFallback, { signal: abort.signal });
+  }
   dialog.addEventListener("close", () => {
     abort.abort(); dispose();
     if (dialog.contains(document.fullscreenElement)) document.exitFullscreen?.().catch(() => {});
@@ -41,7 +51,7 @@ function pixelBibleModal(contents, world = false) {
   dialog.addEventListener("click", (e) => { if (e.target.closest("[data-pb-close]")) dialog.close(); });
   window.addEventListener("hashchange", () => dialog.close(), { signal: abort.signal });
   dialog.showModal();
-  return { dialog, setDispose: (fn) => { dispose = fn; } };
+  return { dialog, orientationState, syncOrientationFallback, setDispose: (fn) => { dispose = fn; } };
 }
 
 function showPixelBibleNotice() {
@@ -64,12 +74,20 @@ function pixelBibleTodayChapters() {
   return day.map((i) => ({ code: CHAPTERS[i].book.code, name: CHAPTERS[i].book.name, chap: CHAPTERS[i].chap }));
 }
 
-async function pixelBibleLandscape() {
-  try {
-    const orientation = screen.orientation;
-    const canLock = !!orientation?.lock;
-    if (canLock) await orientation.lock("landscape");
-  } catch (_) { /* iOS 등 회전 잠금 미지원 기기는 실제 가로 회전을 안내한다. */ }
+async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState = null, syncFallback = null) {
+  const mobile = matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0;
+  const fullscreenTarget = dialog?.querySelector(".pb-shell");
+  let fullscreen = !!document.fullscreenElement, locked = false;
+  if (mobile && fullscreenTarget && !fullscreen && typeof fullscreenTarget.requestFullscreen === "function") {
+    try { await fullscreenTarget.requestFullscreen(); fullscreen = true; } catch (_) { /* iOS Safari 등 Fullscreen API 미지원 */ }
+  }
+  if (mobile && screen.orientation?.lock) {
+    try { await screen.orientation.lock("landscape"); locked = true; } catch (_) { /* 설치형 iOS 앱 등 방향 잠금 미지원 */ }
+  }
+  if (orientationState) orientationState.locked = locked;
+  dialog?.classList.toggle("pb-css-landscape", window.innerHeight >= window.innerWidth && !locked);
+  syncFallback?.();
+  return { fullscreen, locked };
 }
 
 async function openPixelBible(scope = {}) {
@@ -77,13 +95,14 @@ async function openPixelBible(scope = {}) {
   pixelBibleOpening = true;
   const modal = pixelBibleModal(`<div class="pb-shell"><header class="pb-world-head"><button class="pb-button" data-pb-close aria-label="픽셀 월드 닫기">나가기 ✕</button></header><div class="pb-load" role="status">${scope.chapters?'QT 본문에 맞는 월드를 준비하고 있어요…':'오늘의 월드를 준비하고 있어요…'}</div></div>`, true);
   const shell = modal.dialog.querySelector(".pb-shell");
-  pixelBibleLandscape();
+  const landscapeReady = pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback);
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.8.0");
+    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=orientation-water-1");
+    await landscapeReady;
     if (!modal.dialog.isConnected) return;
     modal.setDispose(await world.mountPixelWorld(shell, {
-      chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: pixelBibleLandscape,
+      chapters, scopeLabel:scope.chapters?'QT 본문':'통독 분량', allowed: () => true, landscape: () => pixelBibleLandscape(modal.dialog, modal.orientationState, modal.syncOrientationFallback),
       dailyReadingDone:()=>!!state.plan&&progress().dailyDone,
       cachedBook: (code) => staticBooks[code]?.status === "ok" ? staticBooks[code].data : null,
       readPassage: async ({code,chapter,verses}) => {
