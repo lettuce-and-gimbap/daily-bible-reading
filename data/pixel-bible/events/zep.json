@@ -193,36 +193,54 @@
       "id": "ot-zep-extra-3-1",
       "code": "zep",
       "chapter": 3,
-      "title": "곤고한 남은 자를 모으고 명성을 주다",
+      "title": "쫓겨난 이들을 모으고 수치를 돌이키다",
       "actors": [
         "곤고한 남은 자",
         "딸 시온"
       ],
       "object": "scene-marker",
-      "ref": "스바냐 3:9-20",
+      "ref": "스바냐 3:18-20",
       "verseNumbers": [
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
         18,
         19,
         20
       ],
       "actions": {},
       "lines": [
-        "해설: 겸손한 남은 자를 모으고 수치를 기쁨으로 바꾸며, 흩어진 이들을 돌아오게 하겠다고 약속해요."
+        "해설: 절기를 잃고 슬퍼하는 이들과 쫓겨난 이들을 모으고 상처 입은 이들을 구원하겠다는 약속이에요. 흩어진 공동체의 수치가 칭찬으로 바뀌는 회복을 상징으로 보여 줘요."
       ],
-      "study": "겸손한 남은 자를 모으고 수치를 기쁨으로 바꾸며, 흩어진 이들을 돌아오게 하겠다고 약속해요.",
+      "study": "절기를 잃고 슬퍼하는 이들과 쫓겨난 이들을 모으고 상처 입은 이들을 구원하겠다는 약속이에요. 흩어진 공동체의 수치가 칭찬으로 바뀌는 회복을 상징으로 보여 줘요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"곤고한 남은 자","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"곤고한 남은 자"},{"action":"bend","duration":1.2,"actor":"곤고한 남은 자"},{"action":"grasp","duration":1.5,"actor":"곤고한 남은 자"},{"action":"lift","duration":1.8,"actor":"곤고한 남은 자"},{"action":"bundle","duration":1.5,"actor":"곤고한 남은 자"},{"action":"carry","duration":1.2,"actor":"곤고한 남은 자"}],"duration":8.2,"support":null,"ref":"스바냐 3:9-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"gather","lead":"곤고한 남은 자","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"곤고한 남은 자"},{"action":"bend","duration":1.2,"actor":"곤고한 남은 자"},{"action":"grasp","duration":1.5,"actor":"곤고한 남은 자"},{"action":"lift","duration":1.8,"actor":"곤고한 남은 자"},{"action":"bundle","duration":1.5,"actor":"곤고한 남은 자"},{"action":"carry","duration":1.2,"actor":"곤고한 남은 자"}],"duration":8.2,"support":null,"ref":"스바냐 3:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-zep-extra-3-2",
+      "code": "zep",
+      "chapter": 3,
+      "title": "정결한 입술과 겸손한 남은 자",
+      "actors": [
+        "곤고한 남은 자"
+      ],
+      "object": "scene-marker",
+      "ref": "스바냐 3:9-13",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여러 민족이 정결한 입술로 함께 하나님을 섬기는 회복이 약속돼요. 교만이 제거되고 겸손한 남은 자들이 거짓과 두려움 없이 살아가는 모습을 상징으로 설명해요."
+      ],
+      "study": "여러 민족이 정결한 입술로 함께 하나님을 섬기는 회복이 약속돼요. 교만이 제거되고 겸손한 남은 자들이 거짓과 두려움 없이 살아가는 모습을 상징으로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"곤고한 남은 자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"곤고한 남은 자"},{"action":"read","duration":1.2,"actor":"곤고한 남은 자"},{"action":"look","duration":1.5,"actor":"곤고한 남은 자"},{"action":"point","duration":1.8,"actor":"곤고한 남은 자"},{"action":"listen","duration":1.5,"actor":"곤고한 남은 자"},{"action":"bow","duration":1.2,"actor":"곤고한 남은 자"}],"duration":8.2,"support":null,"ref":"스바냐 3:9-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
