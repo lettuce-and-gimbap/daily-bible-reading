@@ -218,28 +218,28 @@
     },
     {
       "code": "neh",
-      "payloadSha256": "2884a98f81adb4f40a1beafdd8ef74c39117b754e9ba9a46bc081b47d6e45f29",
-      "scenes": 30,
-      "existing": 30,
+      "payloadSha256": "5e598d69b2a797b5258f3a8a32a25df1416a2b40397dfdaf4b5e4c598f4532f9",
+      "scenes": 31,
+      "existing": 31,
       "restored": 0,
       "corrected": 2,
-      "planned": 30,
+      "planned": 31,
       "modes": {
-        "reconstruction": 29,
+        "reconstruction": 30,
         "illustration": 1
       },
       "status": "authored-awaiting-browser-review"
     },
     {
       "code": "est",
-      "payloadSha256": "1b95cd03cbf787c844c21caf125897944aecc0432161900a2f8dbb533308a23d",
-      "scenes": 19,
-      "existing": 19,
+      "payloadSha256": "6ed5c674ba22013011bccfc982e3386a3a192de0edee9dbf1aff9bbb0bbebffa",
+      "scenes": 21,
+      "existing": 21,
       "restored": 0,
       "corrected": 2,
-      "planned": 19,
+      "planned": 21,
       "modes": {
-        "reconstruction": 19
+        "reconstruction": 21
       },
       "status": "authored-awaiting-browser-review"
     },

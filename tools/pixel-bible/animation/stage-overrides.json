@@ -1091,11 +1091,15 @@
       "mode": "illustration"
     }
   },
-  "est": {},
+  "est": {
+    "19": {},
+    "20": {}
+  },
   "neh": {
     "29": {
       "mode": "reconstruction"
-    }
+    },
+    "30": {}
   },
   "1ch": {
     "67": {
