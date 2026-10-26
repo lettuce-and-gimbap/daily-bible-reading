@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "mrk",
-  "scope": "마가복음 1–15장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "마가복음 1–16장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -931,6 +931,64 @@
         "role": "본문 사건에 등장하는 인물",
         "refs": [
           "마가복음 15장"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "name": "여인들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "제자들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "두 제자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "열한 제자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "믿는 사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "세례 받는 사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "병든 사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
+        ]
+      },
+      {
+        "name": "귀신들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 16장"
         ]
       }
     ]
@@ -49043,6 +49101,1481 @@
         "duration": 8.2,
         "ref": "마가복음 15:47",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-1",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        1
+      ],
+      "title": "향품을 마련한 세 여인",
+      "ref": "마가복음 16:1",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "perfume",
+      "narrationOnly": true,
+      "lines": [
+        "안식일이 지나자 막달라 마리아와 야고보의 어머니 마리아와 살로메가 예수께 바를 향품을 준비해요."
+      ],
+      "study": "안식일이 지나자 막달라 마리아와 야고보의 어머니 마리아와 살로메가 예수께 바를 향품을 준비해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "perfume",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "retrieve",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "carry",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-2",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        2
+      ],
+      "title": "해 돋을 무렵 무덤으로 향함",
+      "ref": "마가복음 16:2",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주간 첫날 이른 아침, 세 여인이 해가 떠오를 때 무덤으로 걸어가요."
+      ],
+      "study": "주간 첫날 이른 아침, 세 여인이 해가 떠오를 때 무덤으로 걸어가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "halt",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-3",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        3
+      ],
+      "title": "돌을 누가 옮길지 걱정함",
+      "ref": "마가복음 16:3",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "stone",
+      "narrationOnly": true,
+      "lines": [
+        "여인들이 무덤 입구의 큰 돌을 누가 굴려 줄 수 있을지 서로 이야기해요."
+      ],
+      "study": "여인들이 무덤 입구의 큰 돌을 누가 굴려 줄 수 있을지 서로 이야기해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "stone",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-4",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        4
+      ],
+      "title": "이미 옮겨진 큰 돌을 발견함",
+      "ref": "마가복음 16:4",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "stone",
+      "narrationOnly": true,
+      "lines": [
+        "가까이 가서 보니 큰 돌이 이미 옮겨져 있어요."
+      ],
+      "study": "가까이 가서 보니 큰 돌이 이미 옮겨져 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "empty-tomb",
+        "emotion": "neutral",
+        "prop": "stone",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "inspect",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-5",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        5
+      ],
+      "title": "무덤 안 오른편의 흰옷 입은 청년",
+      "ref": "마가복음 16:5",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메",
+        "흰옷 입은 청년"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여인들이 무덤 안 오른편에 흰옷을 입고 앉아 있는 청년을 보고 놀라요."
+      ],
+      "study": "여인들이 무덤 안 오른편에 흰옷을 입고 앉아 있는 청년을 보고 놀라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "sit",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "startle",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "recoil",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-6",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        6
+      ],
+      "title": "예수께서 살아나셨다는 알림",
+      "ref": "마가복음 16:6",
+      "actors": [
+        "흰옷 입은 청년",
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "linen",
+      "narrationOnly": true,
+      "lines": [
+        "청년이 두려워하지 말라고 하며 십자가에 달리신 예수께서 살아나셨고 빈 무덤에 계시지 않는다고 알려요."
+      ],
+      "study": "청년이 두려워하지 말라고 하며 십자가에 달리신 예수께서 살아나셨고 빈 무덤에 계시지 않는다고 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "흰옷 입은 청년",
+        "target": "막달라 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "empty-tomb",
+        "emotion": "neutral",
+        "prop": "linen",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "흰옷 입은 청년",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.8
+          },
+          {
+            "action": "point",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-7",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        7
+      ],
+      "title": "제자들과 베드로에게 전할 소식",
+      "ref": "마가복음 16:7",
+      "actors": [
+        "흰옷 입은 청년",
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메",
+        "베드로",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "청년이 여인들에게 제자들과 베드로에게 알리고 갈릴리에서 예수를 만나게 될 것이라고 전하라고 부탁해요."
+      ],
+      "study": "청년이 여인들에게 제자들과 베드로에게 알리고 갈릴리에서 예수를 만나게 될 것이라고 전하라고 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "흰옷 입은 청년",
+        "target": "막달라 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "흰옷 입은 청년",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "흰옷 입은 청년",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-16-8",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        8
+      ],
+      "title": "두려워 말하지 못하고 달아남",
+      "ref": "마가복음 16:8",
+      "actors": [
+        "막달라 마리아",
+        "야고보의 어머니 마리아",
+        "살로메"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여인들이 떨며 무덤에서 나와 두려움에 사로잡혀 누구에게도 말하지 못해요."
+      ],
+      "study": "여인들이 떨며 무덤에서 나와 두려움에 사로잡혀 누구에게도 말하지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "야고보의 어머니 마리아",
+        "mode": "reconstruction",
+        "setting": "tomb",
+        "effect": "none",
+        "emotion": "surprised",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "startle",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "shake",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "run",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "retreat",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-9",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        9
+      ],
+      "title": "막달라 마리아에게 먼저 나타나심",
+      "ref": "마가복음 16:9",
+      "actors": [
+        "예수",
+        "막달라 마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 부활하신 뒤 먼저 막달라 마리아에게 나타나세요. 9–20절은 일부 오래된 사본에서 다르게 전해지는 긴 결말임을 표시하되, 두 역본에 수록된 장면은 본문 흐름대로 다뤄요."
+      ],
+      "study": "예수께서 부활하신 뒤 먼저 막달라 마리아에게 나타나세요. 9–20절은 일부 오래된 사본에서 다르게 전해지는 긴 결말임을 표시하되, 두 역본에 수록된 장면은 본문 흐름대로 다뤄요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "막달라 마리아",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "resurrection",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-10",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        10
+      ],
+      "title": "슬퍼하던 제자들에게 알림",
+      "ref": "마가복음 16:10",
+      "actors": [
+        "막달라 마리아",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "막달라 마리아가 예수와 함께하던 이들에게 소식을 전하자 그들은 슬퍼하며 울고 있어요."
+      ],
+      "study": "막달라 마리아가 예수와 함께하던 이들에게 소식을 전하자 그들은 슬퍼하며 울고 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "mourn",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-11",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        11
+      ],
+      "title": "소식을 듣고도 믿지 못함",
+      "ref": "마가복음 16:11",
+      "actors": [
+        "막달라 마리아",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제자들은 예수께서 살아나 마리아에게 보이셨다는 말을 듣고도 믿지 않아요."
+      ],
+      "study": "제자들은 예수께서 살아나 마리아에게 보이셨다는 말을 듣고도 믿지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "막달라 마리아",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "막달라 마리아",
+            "duration": 1
+          },
+          {
+            "action": "listen",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "막달라 마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "막달라 마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "막달라 마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-12",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        12
+      ],
+      "title": "길을 걷는 두 제자에게 나타나심",
+      "ref": "마가복음 16:12",
+      "actors": [
+        "예수",
+        "두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "두 제자가 시골로 걸어가는 중 예수께서 다른 모습으로 나타나세요. 신비한 만남은 인물의 픽셀 외형을 바꾸지 않고, 두 제자가 알아보지 못한 채 함께 걷는 장면으로 표현해요."
+      ],
+      "study": "두 제자가 시골로 걸어가는 중 예수께서 다른 모습으로 나타나세요. 신비한 만남은 인물의 픽셀 외형을 바꾸지 않고, 두 제자가 알아보지 못한 채 함께 걷는 장면으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "두 제자",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-13",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        13
+      ],
+      "title": "돌아와 전해도 믿지 않음",
+      "ref": "마가복음 16:13",
+      "actors": [
+        "두 제자",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "두 제자가 남은 이들에게 돌아와 만남을 알리지만 그들도 믿지 않아요."
+      ],
+      "study": "두 제자가 남은 이들에게 돌아와 만남을 알리지만 그들도 믿지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "두 제자",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "두 제자",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "두 제자",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "두 제자",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "두 제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-14",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        14
+      ],
+      "title": "열한 제자에게 나타나 불신을 꾸짖으심",
+      "ref": "마가복음 16:14",
+      "actors": [
+        "예수",
+        "열한 제자"
+      ],
+      "object": "table",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 식탁에 모인 열한 제자에게 나타나 부활을 본 이들의 말을 믿지 않은 불신을 꾸짖으세요."
+      ],
+      "study": "예수께서 식탁에 모인 열한 제자에게 나타나 부활을 본 이들의 말을 믿지 않은 불신을 꾸짖으세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열한 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "table",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "startle",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-15",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        15
+      ],
+      "title": "온 세상에 복음을 전하라",
+      "ref": "마가복음 16:15",
+      "actors": [
+        "예수",
+        "열한 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자들에게 세상으로 나가 모든 사람에게 복음을 전하라고 맡기세요."
+      ],
+      "study": "예수께서 제자들에게 세상으로 나가 모든 사람에게 복음을 전하라고 맡기세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열한 제자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "제자들에게 맡긴 사명",
+            "온 세상으로 나아감",
+            "복음을 전함"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-16",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        16
+      ],
+      "title": "믿음과 세례와 응답의 길",
+      "ref": "마가복음 16:16",
+      "actors": [
+        "예수",
+        "믿는 사람들",
+        "세례 받는 사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "믿고 세례받는 이와 믿지 않는 이의 결과를 대조해 가르치세요. 세례는 물과 빛의 상징으로, 심판은 위협적인 형상 없이 갈림길 표식으로 보여요."
+      ],
+      "study": "믿고 세례받는 이와 믿지 않는 이의 결과를 대조해 가르치세요. 세례는 물과 빛의 상징으로, 심판은 위협적인 형상 없이 갈림길 표식으로 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "믿는 사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "separate",
+          "labels": [
+            "믿음과 세례",
+            "구원의 약속",
+            "믿지 않음의 결과"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-17",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        17
+      ],
+      "title": "믿는 이들에게 따르는 표적",
+      "ref": "마가복음 16:17",
+      "actors": [
+        "예수",
+        "믿는 사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수의 이름으로 귀신을 내쫓고 새로운 말을 하는 표적을 상징적으로 설명해요. 초자연 현상을 과장하거나 모든 신자에게 보장된 기술처럼 묘사하지 않아요."
+      ],
+      "study": "예수의 이름으로 귀신을 내쫓고 새로운 말을 하는 표적을 상징적으로 설명해요. 초자연 현상을 과장하거나 모든 신자에게 보장된 기술처럼 묘사하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "믿는 사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "release",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "promise",
+          "labels": [
+            "예수의 이름",
+            "악한 영을 물리침",
+            "새로운 말"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-18",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        18
+      ],
+      "title": "보호와 치유를 말하는 표적",
+      "ref": "마가복음 16:18",
+      "actors": [
+        "예수",
+        "믿는 사람들",
+        "병든 사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "뱀과 독과 치유에 관한 표적을 상징 도식으로 설명해요. 뱀을 잡거나 독을 마시라는 행동 권유로 읽히지 않도록 위험 행동은 재현하지 않고, 병든 이를 돌보는 손길만 표현해요."
+      ],
+      "study": "뱀과 독과 치유에 관한 표적을 상징 도식으로 설명해요. 뱀을 잡거나 독을 마시라는 행동 권유로 읽히지 않도록 위험 행동은 재현하지 않고, 병든 이를 돌보는 손길만 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "믿는 사람들",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "cover",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "bless",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "warning",
+          "labels": [
+            "위험으로부터의 보호",
+            "독을 시험하지 않음",
+            "병든 이를 돌봄"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-19",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        19
+      ],
+      "title": "말씀 뒤 하늘로 올려지심",
+      "ref": "마가복음 16:19",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 말씀을 마치고 하늘로 올려지며 하나님 우편에 앉으세요. 하나님을 별도 인물로 그리지 않고 구름과 높아지는 빛으로 나타내요."
+      ],
+      "study": "예수께서 말씀을 마치고 하늘로 올려지며 하나님 우편에 앉으세요. 하나님을 별도 인물로 그리지 않고 구름과 높아지는 빛으로 나타내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "ascension",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lift",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "glory-cloud",
+          "labels": [
+            "말씀을 마치심",
+            "하늘로 올려지심",
+            "하나님 우편"
+          ]
+        }
+      }
+    },
+    {
+      "editionVariant": true,
+      "id": "verse-mrk-16-20",
+      "code": "mrk",
+      "chapter": 16,
+      "verseNumbers": [
+        20
+      ],
+      "title": "두루 다니며 복음을 전한 제자들",
+      "ref": "마가복음 16:20",
+      "actors": [
+        "제자들",
+        "예수",
+        "믿는 사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제자들이 곳곳에 다니며 복음을 전하고 주께서 함께 일하셔서 증언을 확증하세요."
+      ],
+      "study": "제자들이 곳곳에 다니며 복음을 전하고 주께서 함께 일하셔서 증언을 확증하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "제자들",
+        "target": "예수",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "제자들",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "제자들",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "제자들",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "제자들",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "제자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 16:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "곳곳으로 나아간 제자들",
+            "복음 선포",
+            "함께하시는 확증"
+          ]
+        }
       }
     }
   ]

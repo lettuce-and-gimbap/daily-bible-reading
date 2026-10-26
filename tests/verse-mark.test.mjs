@@ -5,9 +5,9 @@ import {VERSE_EFFECTS} from '../js/features/pixel-bible/event-animation/verse-ef
 import {buildWorldModel} from '../js/features/pixel-bible/world.js';
 import {loadVerseBook,VERSE_BOOKS} from '../js/features/pixel-bible/verse-data.js';
 const data=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/mrk.json')),summary=JSON.parse(fs.readFileSync('data/summary/mrk.json')),events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mrk.json'));
-test('마가복음 1–15장 658절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
- assert.equal(data.scenes.length,658);
- for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37],[8,38],[9,50],[10,52],[11,33],[12,44],[13,37],[14,72],[15,47]]){
+test('마가복음 1–16장 678절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
+ assert.equal(data.scenes.length,678);
+ for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37],[8,38],[9,50],[10,52],[11,33],[12,44],[13,37],[14,72],[15,47],[16,20]]){
  const clips=data.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(clips.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));
  const people=[...summary.chapters[chapter].people,...(data.additionalPeople[chapter]||[])];
  const c={code:'mrk',chap:chapter,name:'마가복음',data:{...summary.chapters[chapter],people,verseClips:clips,eventScenes:[...events.scenes,...events.restoredScenes].filter(s=>s.chapter===chapter)}};
@@ -40,6 +40,15 @@ test('마가복음 15장의 재판·십자가·장례를 다루고 빈 본문 �
  assert.equal(get(28).textualNotice,true);assert.equal(get(28).animation.diagram.kind,'edition-note');
  assert.equal(get(33).animation.diagram.kind,'cosmic-dark');assert.equal(get(38).animation.effect,'veil-dark');
  assert.equal(get(46).animation.effect,'tomb-seal');assert.ok(get(25).study.includes('신체 손상은 보이지 않게'));
+});
+test('마가복음 16장의 부활 증언과 사명을 절별로 구성하고 긴 결말을 표시한다',()=>{
+ const get=v=>data.scenes.find(s=>s.chapter===16&&s.verseNumbers[0]===v);
+ assert.deepEqual(data.scenes.filter(s=>s.chapter===16).map(s=>s.verseNumbers[0]),Array.from({length:20},(_,i)=>i+1));
+ assert.equal(get(4).animation.effect,'empty-tomb');assert.equal(get(9).editionVariant,true);
+ for(let verse=9;verse<=20;verse++)assert.equal(get(verse).editionVariant,true,`16:${verse} 긴 결말 표기`);
+ assert.equal(get(8).editionVariant,undefined);assert.equal(get(19).animation.effect,'ascension');
+ assert.equal(get(18).animation.diagram.kind,'warning');assert.equal(get(18).actors.includes('하나님'),false);
+ assert.ok(get(18).study.includes('행동 권유로 읽히지 않도록'));
 });
 test('마가복음의 배 비유·군대 귀신·전도 지침·귀먹은 사람은 본문별 도식과 동작을 쓴다',()=>{
  const get=(ch,v)=>data.scenes.find(s=>s.chapter===ch&&s.verseNumbers[0]===v);

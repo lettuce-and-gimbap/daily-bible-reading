@@ -695,3 +695,26 @@ v(44,'죽음이 이른 것을 확인함','빌라도가 예수의 죽음이 이�
 v(45,'확인 뒤 요셉에게 내어 줌','백부장의 확인을 들은 빌라도가 시신을 요셉에게 내어줘요.',['빌라도','백부장','아리마대 사람 요셉'],'listen nod signal receive lower stand',{setting:'court'});
 v(46,'세마포로 싸서 무덤에 모심','요셉이 세마포로 예수를 싸 바위를 깎은 무덤에 모시고 큰 돌을 굴려 입구를 막아요.',['아리마대 사람 요셉','예수','여자들'],'wrap carry lower place roll wait',{setting:'tomb',prop:'linen',props:[{kind:'stone',x:470,y:208}],effect:'tomb-seal'});
 v(47,'무덤 자리를 확인하는 두 마리아','막달라 마리아와 요세의 어머니 마리아가 예수를 모신 곳을 바라보고 기억해요.',['막달라 마리아','요세의 어머니 마리아'],'walk halt look point mourn wait',{setting:'tomb',prop:'stone'});
+
+chapter=16;
+additionalPeople[16]=people(['여인들','제자들','두 제자','열한 제자','믿는 사람들','세례 받는 사람들','병든 사람들','귀신들']);
+v(1,'향품을 마련한 세 여인','안식일이 지나자 막달라 마리아와 야고보의 어머니 마리아와 살로메가 예수께 바를 향품을 준비해요.',['막달라 마리아','야고보의 어머니 마리아','살로메'],'gather inspect retrieve place carry walk',{setting:'chamber',prop:'perfume'});
+v(2,'해 돋을 무렵 무덤으로 향함','주간 첫날 이른 아침, 세 여인이 해가 떠오를 때 무덤으로 걸어가요.',['막달라 마리아','야고보의 어머니 마리아','살로메'],'walk walk look halt inspect wait',{setting:'tomb'});
+v(3,'돌을 누가 옮길지 걱정함','여인들이 무덤 입구의 큰 돌을 누가 굴려 줄 수 있을지 서로 이야기해요.',['막달라 마리아','야고보의 어머니 마리아','살로메'],'look speak point inspect wait turn',{setting:'tomb',prop:'stone'});
+v(4,'이미 옮겨진 큰 돌을 발견함','가까이 가서 보니 큰 돌이 이미 옮겨져 있어요.',['막달라 마리아','야고보의 어머니 마리아','살로메'],'walk look startle approach inspect wait',{setting:'tomb',prop:'stone',effect:'empty-tomb'});
+v(5,'무덤 안 오른편의 흰옷 입은 청년','여인들이 무덤 안 오른편에 흰옷을 입고 앉아 있는 청년을 보고 놀라요.',['막달라 마리아','야고보의 어머니 마리아','살로메','흰옷 입은 청년'],'enter look sit startle recoil wait',{setting:'tomb'});
+v(6,'예수께서 살아나셨다는 알림','청년이 두려워하지 말라고 하며 십자가에 달리신 예수께서 살아나셨고 빈 무덤에 계시지 않는다고 알려요.',['흰옷 입은 청년','막달라 마리아','야고보의 어머니 마리아','살로메'],'speak signal listen look point stand',{setting:'tomb',prop:'linen',effect:'empty-tomb'});
+v(7,'제자들과 베드로에게 전할 소식','청년이 여인들에게 제자들과 베드로에게 알리고 갈릴리에서 예수를 만나게 될 것이라고 전하라고 부탁해요.',['흰옷 입은 청년','막달라 마리아','야고보의 어머니 마리아','살로메','베드로','제자들'],'speak point listen turn walk follow',{setting:'tomb'});
+v(8,'두려워 말하지 못하고 달아남','여인들이 떨며 무덤에서 나와 두려움에 사로잡혀 누구에게도 말하지 못해요.',['막달라 마리아','야고보의 어머니 마리아','살로메'],'startle shake turn run run retreat',{setting:'tomb',emotion:'surprised'});
+v(9,'막달라 마리아에게 먼저 나타나심','예수께서 부활하신 뒤 먼저 막달라 마리아에게 나타나세요. 9–20절은 일부 오래된 사본에서 다르게 전해지는 긴 결말임을 표시하되, 두 역본에 수록된 장면은 본문 흐름대로 다뤄요.',['예수','막달라 마리아'],'look approach startle speak reach listen',{editionVariant:true,setting:'garden',effect:'resurrection'});
+v(10,'슬퍼하던 제자들에게 알림','막달라 마리아가 예수와 함께하던 이들에게 소식을 전하자 그들은 슬퍼하며 울고 있어요.',['막달라 마리아','제자들'],'walk approach speak listen mourn look',{editionVariant:true,setting:'chamber'});
+v(11,'소식을 듣고도 믿지 못함','제자들은 예수께서 살아나 마리아에게 보이셨다는 말을 듣고도 믿지 않아요.',['막달라 마리아','제자들'],'speak listen turn lower wait look',{editionVariant:true,setting:'chamber'});
+v(12,'길을 걷는 두 제자에게 나타나심','두 제자가 시골로 걸어가는 중 예수께서 다른 모습으로 나타나세요. 신비한 만남은 인물의 픽셀 외형을 바꾸지 않고, 두 제자가 알아보지 못한 채 함께 걷는 장면으로 표현해요.',['예수','두 제자'],'walk walk approach look turn listen',{editionVariant:true,setting:'road'});
+v(13,'돌아와 전해도 믿지 않음','두 제자가 남은 이들에게 돌아와 만남을 알리지만 그들도 믿지 않아요.',['두 제자','제자들'],'walk gather speak listen turn lower',{editionVariant:true,setting:'chamber'});
+v(14,'열한 제자에게 나타나 불신을 꾸짖으심','예수께서 식탁에 모인 열한 제자에게 나타나 부활을 본 이들의 말을 믿지 않은 불신을 꾸짖으세요.',['예수','열한 제자'],'approach gather startle speak listen lower',{editionVariant:true,setting:'chamber',prop:'table'});
+v(15,'온 세상에 복음을 전하라','예수께서 제자들에게 세상으로 나가 모든 사람에게 복음을 전하라고 맡기세요.',['예수','열한 제자'],'speak point gather turn walk extend',{editionVariant:true,mode:'illustration',diagram:{kind:'map',labels:['제자들에게 맡긴 사명','온 세상으로 나아감','복음을 전함']}});
+v(16,'믿음과 세례와 응답의 길','믿고 세례받는 이와 믿지 않는 이의 결과를 대조해 가르치세요. 세례는 물과 빛의 상징으로, 심판은 위협적인 형상 없이 갈림길 표식으로 보여요.',['예수','믿는 사람들','세례 받는 사람들'],'speak point receive bless listen wait',{editionVariant:true,mode:'illustration',diagram:{kind:'separate',labels:['믿음과 세례','구원의 약속','믿지 않음의 결과']}});
+v(17,'믿는 이들에게 따르는 표적','예수의 이름으로 귀신을 내쫓고 새로운 말을 하는 표적을 상징적으로 설명해요. 초자연 현상을 과장하거나 모든 신자에게 보장된 기술처럼 묘사하지 않아요.',['예수','믿는 사람들'],'speak extend release listen point stand',{editionVariant:true,mode:'illustration',diagram:{kind:'promise',labels:['예수의 이름','악한 영을 물리침','새로운 말']}});
+v(18,'보호와 치유를 말하는 표적','뱀과 독과 치유에 관한 표적을 상징 도식으로 설명해요. 뱀을 잡거나 독을 마시라는 행동 권유로 읽히지 않도록 위험 행동은 재현하지 않고, 병든 이를 돌보는 손길만 표현해요.',['예수','믿는 사람들','병든 사람들'],'speak point cover reach bless listen',{editionVariant:true,mode:'illustration',diagram:{kind:'warning',labels:['위험으로부터의 보호','독을 시험하지 않음','병든 이를 돌봄']}});
+v(19,'말씀 뒤 하늘로 올려지심','예수께서 말씀을 마치고 하늘로 올려지며 하나님 우편에 앉으세요. 하나님을 별도 인물로 그리지 않고 구름과 높아지는 빛으로 나타내요.',['예수'],'speak rise look lift wait stand',{editionVariant:true,mode:'illustration',diagram:{kind:'glory-cloud',labels:['말씀을 마치심','하늘로 올려지심','하나님 우편']},effect:'ascension'});
+v(20,'두루 다니며 복음을 전한 제자들','제자들이 곳곳에 다니며 복음을 전하고 주께서 함께 일하셔서 증언을 확증하세요.',['제자들','예수','믿는 사람들'],'gather walk speak extend listen bless',{editionVariant:true,mode:'illustration',diagram:{kind:'map',labels:['곳곳으로 나아간 제자들','복음 선포','함께하시는 확증']}});
