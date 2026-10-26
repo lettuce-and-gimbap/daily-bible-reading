@@ -2640,6 +2640,222 @@
       "narrationOnly": true,
       "objectNote": "재앙을 자극적으로 예고하지 않고 책임 인정과 자비를 구하는 선택을 중심으로 해요.",
       "animation": {"version":2,"motif":"repent","lead":"다윗","target":"갓","mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"grasp","duration":1.5,"actor":"다윗"},{"action":"tear","duration":1.8,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 24:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-4-0",
+      "code": "2sa",
+      "chapter": 4,
+      "title": "왕궁의 쇠락과 므비보셋의 사고",
+      "actors": [
+        "이스보셋",
+        "므비보셋",
+        "유모"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 4:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아브넬의 죽음을 들은 이스보셋의 왕궁은 힘을 잃고, 요나단의 어린 아들 므비보셋은 소식을 피해 달아나던 유모의 손에서 떨어져 다리를 절게 돼요."
+      ],
+      "study": "아브넬의 죽음을 들은 이스보셋의 왕궁은 힘을 잃고, 요나단의 어린 아들 므비보셋은 소식을 피해 달아나던 유모의 손에서 떨어져 다리를 절게 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"collapse","lead":"이스보셋","target":"므비보셋","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"이스보셋"},{"action":"push","duration":1.2,"actor":"이스보셋"},{"action":"brace","duration":1.5,"actor":"이스보셋"},{"action":"recoil","duration":1.8,"actor":"이스보셋"},{"action":"retreat","duration":1.5,"actor":"이스보셋"},{"action":"mourn","duration":1.2,"actor":"이스보셋"}],"duration":8.2,"support":null,"ref":"사무엘하 4:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-8-0",
+      "code": "2sa",
+      "chapter": 8,
+      "title": "왕국의 질서를 세운 다윗",
+      "actors": [
+        "다윗",
+        "요압",
+        "사독",
+        "브나야"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 8:13-18",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 전쟁에서 돌아온 다윗은 에돔에 수비대를 두고 온 이스라엘을 공평하고 의롭게 다스려요. 요압과 제사장들, 서기관과 군 지휘관을 세워 왕국의 질서를 갖춰요."
+      ],
+      "study": "전쟁에서 돌아온 다윗은 에돔에 수비대를 두고 온 이스라엘을 공평하고 의롭게 다스려요. 요압과 제사장들, 서기관과 군 지휘관을 세워 왕국의 질서를 갖춰요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"다윗","target":"요압","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 8:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-17-0",
+      "code": "2sa",
+      "chapter": 17,
+      "title": "아히도벨의 마지막",
+      "actors": [
+        "아히도벨",
+        "압살롬",
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 17:23-26",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 자기 조언이 받아들여지지 않은 것을 본 아히도벨은 집으로 돌아가 일을 정리하고 스스로 목숨을 끊어요. 다윗과 압살롬의 군대는 각각 요단 동쪽과 길르앗에 진을 치며 대치해요."
+      ],
+      "study": "자기 조언이 받아들여지지 않은 것을 본 아히도벨은 집으로 돌아가 일을 정리하고 스스로 목숨을 끊어요. 다윗과 압살롬의 군대는 각각 요단 동쪽과 길르앗에 진을 치며 대치해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"아히도벨","target":"압살롬","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"아히도벨"},{"action":"lower","duration":1.2,"actor":"아히도벨"},{"action":"kneel","duration":1.5,"actor":"아히도벨"},{"action":"cover-mouth","duration":1.8,"actor":"아히도벨"},{"action":"mourn","duration":1.5,"actor":"아히도벨"},{"action":"lower","duration":1.2,"actor":"아히도벨"}],"duration":8.2,"support":null,"ref":"사무엘하 17:23-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-18-0",
+      "code": "2sa",
+      "chapter": 18,
+      "title": "압살롬을 살리라는 다윗의 명령",
+      "actors": [
+        "다윗",
+        "요압",
+        "아비새",
+        "다윗의 군사들"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 18:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 군대를 세 지휘관에게 나누어 맡기고 자신도 함께 나가려 하지만 백성은 왕이 성에 남아야 한다고 말해요. 출전하는 지휘관들에게 압살롬을 너그럽게 대하라고 당부해요."
+      ],
+      "study": "다윗은 군대를 세 지휘관에게 나누어 맡기고 자신도 함께 나가려 하지만 백성은 왕이 성에 남아야 한다고 말해요. 출전하는 지휘관들에게 압살롬을 너그럽게 대하라고 당부해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"marshal","lead":"다윗","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"signal","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"march","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 18:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-19-0",
+      "code": "2sa",
+      "chapter": 19,
+      "title": "바르실래의 배웅과 귀환을 둘러싼 다툼",
+      "actors": [
+        "다윗",
+        "바르실래",
+        "김함",
+        "이스라엘 모든 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 19:31-43",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바르실래는 왕을 요단까지 배웅하고 김함을 대신 데려가 달라고 부탁해요. 다윗의 귀환을 맞으러 모인 유다와 이스라엘 사람들은 누가 왕을 먼저 모셨는지를 두고 다투기 시작해요."
+      ],
+      "study": "바르실래는 왕을 요단까지 배웅하고 김함을 대신 데려가 달라고 부탁해요. 다윗의 귀환을 맞으러 모인 유다와 이스라엘 사람들은 누가 왕을 먼저 모셨는지를 두고 다투기 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"reconcile","lead":"다윗","target":"바르실래","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"},{"action":"extend","duration":1.5,"actor":"다윗"},{"action":"receive","duration":1.8,"actor":"다윗"},{"action":"bow","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 19:31-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-20-0",
+      "code": "2sa",
+      "chapter": 20,
+      "title": "아마사의 지체와 요압의 추격",
+      "actors": [
+        "다윗",
+        "아마사",
+        "요압",
+        "아비새"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 20:3-7",
+      "verseNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 아마사에게 사흘 안에 유다 군대를 모으라고 명하지만 아마사는 늦게 돌아와요. 세바의 반란이 번지자 다윗은 아비새를 보내고, 요압과 용사들도 그를 따라 추격에 나서요."
+      ],
+      "study": "다윗은 아마사에게 사흘 안에 유다 군대를 모으라고 명하지만 아마사는 늦게 돌아와요. 세바의 반란이 번지자 다윗은 아비새를 보내고, 요압과 용사들도 그를 따라 추격에 나서요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"march","lead":"다윗","target":"아마사","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"carry","duration":1.8,"actor":"다윗"},{"action":"walk","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 20:3-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-23-0",
+      "code": "2sa",
+      "chapter": 23,
+      "title": "다윗의 마지막 말과 의로운 통치의 이상",
+      "actors": [
+        "다윗",
+        "하나님",
+        "사악한 자들"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 23:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗은 하나님의 영이 자신을 통해 말했음을 밝히며, 하나님을 경외하는 통치가 새벽빛처럼 생명을 살린다고 노래해요. 하나님과 맺은 언약을 신뢰하는 고백 뒤에 사악한 자들의 끝을 가시덤불에 비유해요."
+      ],
+      "study": "다윗은 하나님의 영이 자신을 통해 말했음을 밝히며, 하나님을 경외하는 통치가 새벽빛처럼 생명을 살린다고 노래해요. 하나님과 맺은 언약을 신뢰하는 고백 뒤에 사악한 자들의 끝을 가시덤불에 비유해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"다윗","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 23:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

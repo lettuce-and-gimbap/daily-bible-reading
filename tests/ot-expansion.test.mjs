@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1309);assert.equal(c.curatedSupplementalScenes,595);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),595);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1322);assert.equal(c.curatedSupplementalScenes,608);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),608);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -23,13 +23,13 @@ test('룻기의 가족 상실·귀향·타작마당 약속·오벳 탄생 누락
 });
 
 test('사무엘상의 빠진 서사 장면과 양방향 이별·중재 대화를 보강한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'1sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-1sa-extra-'));assert.equal(added.length,35);
+ const data=JSON.parse(fs.readFileSync(root+'1sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-1sa-extra-'));assert.equal(added.length,41);
  for(const title of ['한나의 간절한 기도','빼앗긴 언약궤','다곤 신전의 궤','야베스를 구한 사울','골리앗의 도전과 다윗의 도착','아비아달의 피신','불탄 시글락과 무너진 마음'])assert(added.some(s=>s.title===title),title);
  for(const id of ['ot-1sa-20-3','ot-1sa-25-6']){const s=data.scenes.find(x=>x.id===id);assert.equal(s.actors.length,2);assert.equal(Object.keys(s.actorLines).length,2);for(const actor of s.actors)assert.equal(s.actorLines[actor].length,1);}
 });
 
 test('사무엘하의 언약·반란·화해 흐름과 므비보셋 양방향 장면을 보강한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'2sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-2sa-extra-'));assert.equal(added.length,26);
+ const data=JSON.parse(fs.readFileSync(root+'2sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-2sa-extra-'));assert.equal(added.length,33);
  for(const title of ['시온 산성을 차지한 다윗','다윗의 왕위를 잇는 약속','왕의 권력 아래 놓인 밧세바','압살롬의 반역과 다윗의 피신','압살롬의 죽음을 듣고 우는 다윗','기브온의 요구와 리스바의 애곡'])assert(added.some(s=>s.title===title),title);
  const scene=data.scenes.find(s=>s.id==='ot-voice-20');assert.equal(scene.ref,'사무엘하 9:1-13');assert.deepEqual(scene.actors,['다윗','므비보셋']);assert.equal(Object.keys(scene.actorLines).length,2);
 });
@@ -426,4 +426,18 @@ test('2ch 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
  const data=JSON.parse(fs.readFileSync(root+'2ch.json')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ch.json'));
  const expected=[['역대하 9:5-12','스바 여왕이 솔로몬의 지혜를 인정하고 예물을 주다'],['역대하 9:13-28','솔로몬의 재물과 교역이 크게 늘다'],['역대하 10:1-5','르호보암이 백성의 요구를 듣기 전에 사흘을 기다리다'],['역대하 11:1-4','스마야가 르호보암에게 북쪽 지파와 싸우지 말라 전하다'],['역대하 17:1-6','여호사밧이 유다의 성읍을 다지고 하나님을 찾다'],['역대하 17:11-19','블레셋과 아라비아가 여호사밧에게 예물을 바치다'],['역대하 18:1-11','여호사밧과 아합이 전쟁을 의논하고 거짓 예언을 듣다'],['역대하 21:1-11','여호람이 형제들을 죽이고 유다를 우상숭배로 이끌다'],['역대하 22:5-9','아하시야가 요람과 함께 전쟁에 나갔다가 죽다'],['역대하 24:23-27','아람의 침략 뒤 요아스가 신하들에게 살해되다'],['역대하 26:21-23','나병으로 별궁에 머물던 웃시야가 죽고 요담이 왕이 되다'],['역대하 35:20-27','느고의 경고를 듣지 않은 요시야가 므깃도에서 죽다'],['역대하 36:1-10','여호아하스와 여호야김·여호야긴이 차례로 왕위에서 밀려나다'],['역대하 36:11-14','시드기야가 하나님께 반역하고 성전 지도자들이 죄를 더하다']];
  for(const [ref,title] of expected){const s=data.scenes.find(x=>x.ref===ref&&x.title===title);assert(s,ref);assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('1sa 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'1sa.json')),titles=["길갈에서 다시 세워진 왕권","두려워 말고 여호와를 섬기라","블레셋 약탈대의 진출","사울의 변명과 아각의 처분","사울의 의심과 신하들의 침묵","블레셋 진영 앞에서 두려워하는 사울"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/1sa.json'));assert.equal(added.length,6);
+ for(const title of titles)assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('2sa 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'2sa.json')),titles=["왕궁의 쇠락과 므비보셋의 사고","왕국의 질서를 세운 다윗","아히도벨의 마지막","압살롬을 살리라는 다윗의 명령","바르실래의 배웅과 귀환을 둘러싼 다툼","아마사의 지체와 요압의 추격","다윗의 마지막 말과 의로운 통치의 이상"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2sa.json'));assert.equal(added.length,7);
+ for(const title of titles)assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
