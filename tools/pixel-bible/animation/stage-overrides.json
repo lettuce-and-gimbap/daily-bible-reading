@@ -828,5 +828,19 @@
     "65": {
       "mode": "reconstruction"
     }
+  },
+  "2ki": {
+    "65": {
+      "mode": "reconstruction"
+    },
+    "66": {
+      "mode": "reconstruction"
+    },
+    "67": {
+      "mode": "reconstruction"
+    },
+    "68": {
+      "mode": "reconstruction"
+    }
   }
 }

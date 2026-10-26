@@ -159,14 +159,14 @@
     },
     {
       "code": "2ki",
-      "payloadSha256": "2794e61f865d3f3e06a60127dd79fd8dd8799fe02cc0f5e9ab656d4548dfd8cc",
-      "scenes": 65,
-      "existing": 65,
+      "payloadSha256": "b47ef12b668753920c47fb46bd7e4dd0819d5914ea6a16bfc3b828d5d3bd5263",
+      "scenes": 69,
+      "existing": 69,
       "restored": 0,
       "corrected": 19,
-      "planned": 65,
+      "planned": 69,
       "modes": {
-        "reconstruction": 62,
+        "reconstruction": 66,
         "vision": 1,
         "illustration": 2
       },

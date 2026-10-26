@@ -1823,6 +1823,160 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"request","lead":"엘리사","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"kneel","duration":1.2,"actor":"엘리사"},{"action":"lift","duration":1.5,"actor":"엘리사"},{"action":"pray","duration":1.8,"actor":"엘리사"},{"action":"pray","duration":1.5,"actor":"엘리사"},{"action":"bow","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:9-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-17-0",
+      "code": "2ki",
+      "chapter": 17,
+      "title": "사마리아가 함락되고 백성이 앗수르로 끌려가다",
+      "actors": [
+        "호세아(엘라의 아들)",
+        "살만에셀",
+        "이스라엘 자손",
+        "앗수르 왕"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 17:1-23",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사마리아가 포위되어 함락되고 이스라엘 백성이 앗수르로 끌려가요. 본문은 이 일을 하나님을 떠난 왕국의 몰락으로 해석해요."
+      ],
+      "study": "사마리아가 포위되어 함락되고 이스라엘 백성이 앗수르로 끌려가요. 본문은 이 일을 하나님을 떠난 왕국의 몰락으로 해석해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"호세아(엘라의 아들)","target":"살만에셀","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"호세아(엘라의 아들)"},{"action":"push","duration":1.2,"actor":"호세아(엘라의 아들)"},{"action":"brace","duration":1.5,"actor":"호세아(엘라의 아들)"},{"action":"recoil","duration":1.8,"actor":"호세아(엘라의 아들)"},{"action":"retreat","duration":1.5,"actor":"호세아(엘라의 아들)"},{"action":"mourn","duration":1.2,"actor":"호세아(엘라의 아들)"}],"duration":8.2,"support":null,"ref":"열왕기하 17:1-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-23-0",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "요시야가 우상 숭배의 흔적을 없애다",
+      "actors": [
+        "요시야",
+        "힐기야",
+        "유다 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 23:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요시야는 언약을 백성 앞에서 다시 읽고, 성전과 여러 지역에 남은 우상 숭배의 표지들을 제거해요."
+      ],
+      "study": "요시야는 언약을 백성 앞에서 다시 읽고, 성전과 여러 지역에 남은 우상 숭배의 표지들을 제거해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"idol","lead":"요시야","target":"힐기야","mode":"reconstruction","setting":"altar","effect":"idol","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"요시야"},{"action":"point","duration":1.2,"actor":"요시야"},{"action":"listen","duration":1.5,"actor":"요시야"},{"action":"lower","duration":1.8,"actor":"요시야"},{"action":"turn","duration":1.5,"actor":"요시야"},{"action":"stand","duration":1.2,"actor":"요시야"}],"duration":8.2,"support":null,"ref":"열왕기하 23:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-23-1",
+      "code": "2ki",
+      "chapter": 23,
+      "title": "요시야가 유월절을 회복하다",
+      "actors": [
+        "요시야",
+        "유다 백성",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 23:21-25",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요시야의 명령으로 백성이 유월절을 지켜요. 본문은 사사 시대 이후 이처럼 온전히 지킨 유월절이 없었다고 강조해요."
+      ],
+      "study": "요시야의 명령으로 백성이 유월절을 지켜요. 본문은 사사 시대 이후 이처럼 온전히 지킨 유월절이 없었다고 강조해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"요시야","target":"유다 백성","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"요시야"},{"action":"walk","duration":1.2,"actor":"요시야"},{"action":"bow","duration":1.5,"actor":"요시야"},{"action":"extend","duration":1.8,"actor":"요시야"},{"action":"place","duration":1.5,"actor":"요시야"},{"action":"sit","duration":1.2,"actor":"요시야"}],"duration":8.2,"support":null,"ref":"열왕기하 23:21-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-24-0",
+      "code": "2ki",
+      "chapter": 24,
+      "title": "바벨론이 예루살렘을 포위하고 사람들을 사로잡다",
+      "actors": [
+        "느부갓네살",
+        "여호야긴",
+        "포로 된 용사와 장인",
+        "느후스다"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 24:10-17",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바벨론 군대가 예루살렘을 포위하고 왕과 왕실, 기술자들을 사로잡아 바벨론으로 데려가요."
+      ],
+      "study": "바벨론 군대가 예루살렘을 포위하고 왕과 왕실, 기술자들을 사로잡아 바벨론으로 데려가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"siege","lead":"느부갓네살","target":"여호야긴","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"느부갓네살"},{"action":"push","duration":1.2,"actor":"느부갓네살"},{"action":"brace","duration":1.5,"actor":"느부갓네살"},{"action":"recoil","duration":1.8,"actor":"느부갓네살"},{"action":"retreat","duration":1.5,"actor":"느부갓네살"},{"action":"mourn","duration":1.2,"actor":"느부갓네살"}],"duration":8.2,"support":null,"ref":"열왕기하 24:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
