@@ -5,9 +5,9 @@ import {VERSE_EFFECTS} from '../js/features/pixel-bible/event-animation/verse-ef
 import {buildWorldModel} from '../js/features/pixel-bible/world.js';
 import {loadVerseBook,VERSE_BOOKS} from '../js/features/pixel-bible/verse-data.js';
 const data=JSON.parse(fs.readFileSync('data/pixel-bible/verse-events/mrk.json')),summary=JSON.parse(fs.readFileSync('data/summary/mrk.json')),events=JSON.parse(fs.readFileSync('data/pixel-bible/events/mrk.json'));
-test('마가복음 1–13장 539절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
- assert.equal(data.scenes.length,539);
- for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37],[8,38],[9,50],[10,52],[11,33],[12,44],[13,37]]){
+test('마가복음 1–14장 611절은 누락 없이 작성되고 실제 월드에서 선택된다',()=>{
+ assert.equal(data.scenes.length,611);
+ for(const [chapter,count]of [[1,45],[2,28],[3,35],[4,41],[5,43],[6,56],[7,37],[8,38],[9,50],[10,52],[11,33],[12,44],[13,37],[14,72]]){
  const clips=data.scenes.filter(s=>s.chapter===chapter);assert.deepEqual(clips.map(s=>s.verseNumbers[0]),Array.from({length:count},(_,i)=>i+1));
  const people=[...summary.chapters[chapter].people,...(data.additionalPeople[chapter]||[])];
  const c={code:'mrk',chap:chapter,name:'마가복음',data:{...summary.chapters[chapter],people,verseClips:clips,eventScenes:[...events.scenes,...events.restoredScenes].filter(s=>s.chapter===chapter)}};
@@ -24,6 +24,14 @@ test('마가복음 13장의 성전 예고·환난 경고·깨어 있음 비유�
  assert.equal(get(27).animation.diagram.kind,'gather-call');
  assert.equal(get(34).actors.includes('문지기'),true);
  assert.ok(get(17).study.includes('고통은 묘사하지 않아요'));
+});
+test('마가복음 14장의 향유·식탁·겟세마네·심문·베드로 부인을 장면별로 구별한다',()=>{
+ const get=v=>data.scenes.find(s=>s.chapter===14&&s.verseNumbers[0]===v);
+ assert.deepEqual(data.scenes.filter(s=>s.chapter===14).map(s=>s.verseNumbers[0]),Array.from({length:72},(_,i)=>i+1));
+ assert.equal(get(3).animation.effect,'anoint-head');assert.equal(get(22).animation.effect,'bread-share');
+ assert.equal(get(36).actors.includes('하나님'),false);assert.equal(get(46).animation.effect,'capture');
+ assert.equal(get(68).animation.effect,'rooster-call');assert.equal(get(72).animation.effect,'rooster-call');
+ assert.ok(get(65).study.includes('화면 밖'));
 });
 test('마가복음의 배 비유·군대 귀신·전도 지침·귀먹은 사람은 본문별 도식과 동작을 쓴다',()=>{
  const get=(ch,v)=>data.scenes.find(s=>s.chapter===ch&&s.verseNumbers[0]===v);

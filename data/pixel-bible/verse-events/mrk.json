@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "mrk",
-  "scope": "마가복음 1–13장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "마가복음 1–14장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -654,6 +654,148 @@
         "role": "본문 사건에 등장하는 인물",
         "refs": [
           "마가복음 13장"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "name": "제자들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "열두 제자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "대제사장들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "서기관들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "장로들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "무리",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "베다니의 시몬",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "향유를 부은 여자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "가난한 사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "물동이를 든 사람",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "집주인",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "두 제자",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "경비병",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "대제사장의 종",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "곁에 선 사람",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "종",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "공회",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "거짓 증인들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "여종",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
+        ]
+      },
+      {
+        "name": "사람들",
+        "role": "본문 사건에 등장하는 인물",
+        "refs": [
+          "마가복음 14장"
         ]
       }
     ]
@@ -40264,6 +40406,5136 @@
         ],
         "duration": 8.2,
         "ref": "마가복음 13:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-1",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        1
+      ],
+      "title": "명절을 앞두고 모의하는 지도자들",
+      "ref": "마가복음 14:1",
+      "actors": [
+        "대제사장들",
+        "서기관들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "유월절과 무교절을 앞두고 대제사장들과 서기관들이 예수를 몰래 붙잡아 죽일 방도를 의논해요."
+      ],
+      "study": "유월절과 무교절을 앞두고 대제사장들과 서기관들이 예수를 몰래 붙잡아 죽일 방도를 의논해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장들",
+        "target": "서기관들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "tense",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "대제사장들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장들",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "대제사장들",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "대제사장들",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-2",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        2
+      ],
+      "title": "명절 소동을 염려함",
+      "ref": "마가복음 14:2",
+      "actors": [
+        "대제사장들",
+        "서기관들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "지도자들은 명절 중에 일을 벌이면 무리가 소동할 수 있다고 걱정하며 시기를 저울질해요."
+      ],
+      "study": "지도자들은 명절 중에 일을 벌이면 무리가 소동할 수 있다고 걱정하며 시기를 저울질해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장들",
+        "target": "서기관들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "worried",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "대제사장들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장들",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "대제사장들",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "대제사장들",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-3",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        3
+      ],
+      "title": "시몬의 집에서 향유를 부은 여자",
+      "ref": "마가복음 14:3",
+      "actors": [
+        "예수",
+        "향유를 부은 여자",
+        "베다니의 시몬"
+      ],
+      "object": "perfume",
+      "narrationOnly": true,
+      "lines": [
+        "베다니 시몬의 식탁에서 한 여자가 값진 향유 병을 열어 예수의 머리에 부어요."
+      ],
+      "study": "베다니 시몬의 식탁에서 한 여자가 값진 향유 병을 열어 예수의 머리에 부어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "향유를 부은 여자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "anoint-head",
+        "emotion": "neutral",
+        "prop": "perfume",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "strike",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "pour",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-4",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        4
+      ],
+      "title": "향유를 낭비라며 화내는 사람들",
+      "ref": "마가복음 14:4",
+      "actors": [
+        "사람들",
+        "향유를 부은 여자",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "곁에 있던 이들이 향유를 왜 낭비하느냐며 서로 불평해요. 여인을 몰아세우는 표정과 시선을 보여요."
+      ],
+      "study": "곁에 있던 이들이 향유를 왜 낭비하느냐며 서로 불평해요. 여인을 몰아세우는 표정과 시선을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": "향유를 부은 여자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "angry",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "point",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-5",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        5
+      ],
+      "title": "삼백 데나리온을 셈하는 비난",
+      "ref": "마가복음 14:5",
+      "actors": [
+        "사람들",
+        "향유를 부은 여자",
+        "예수",
+        "가난한 사람들"
+      ],
+      "object": "coin",
+      "narrationOnly": true,
+      "lines": [
+        "사람들은 향유를 팔아 가난한 사람을 도울 수 있었다며 여인을 꾸짖어요. 향유 값은 숫자 표식으로만 제시해요."
+      ],
+      "study": "사람들은 향유를 팔아 가난한 사람을 도울 수 있었다며 여인을 꾸짖어요. 향유 값은 숫자 표식으로만 제시해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": "향유를 부은 여자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "coin",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "count",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-6",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        6
+      ],
+      "title": "여인을 괴롭히지 말라 하심",
+      "ref": "마가복음 14:6",
+      "actors": [
+        "예수",
+        "향유를 부은 여자",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 여인을 괴롭히지 말라고 막아서고, 그가 자신에게 좋은 일을 했다고 말씀하세요."
+      ],
+      "study": "예수께서 여인을 괴롭히지 말라고 막아서고, 그가 자신에게 좋은 일을 했다고 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "향유를 부은 여자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-7",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        7
+      ],
+      "title": "가난한 이들을 도울 기회와 때",
+      "ref": "마가복음 14:7",
+      "actors": [
+        "예수",
+        "향유를 부은 여자",
+        "가난한 사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 가난한 이들을 언제든 도울 수 있지만 자신은 늘 함께 있지 않다고 설명하세요."
+      ],
+      "study": "예수께서 가난한 이들을 언제든 도울 수 있지만 자신은 늘 함께 있지 않다고 설명하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "향유를 부은 여자",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-8",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        8
+      ],
+      "title": "장례를 미리 준비한 향유",
+      "ref": "마가복음 14:8",
+      "actors": [
+        "예수",
+        "향유를 부은 여자"
+      ],
+      "object": "perfume",
+      "narrationOnly": true,
+      "lines": [
+        "여자가 할 수 있는 일을 해 예수의 장례를 미리 준비했다는 뜻을 조용한 향기와 낮아진 시선으로 나타내요."
+      ],
+      "study": "여자가 할 수 있는 일을 해 예수의 장례를 미리 준비했다는 뜻을 조용한 향기와 낮아진 시선으로 나타내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "향유를 부은 여자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "anoint-head",
+        "emotion": "neutral",
+        "prop": "perfume",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "pour",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "promise",
+          "labels": [
+            "여인이 할 수 있는 일",
+            "장례를 앞선 준비",
+            "기억될 헌신"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-14-9",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        9
+      ],
+      "title": "복음과 함께 기억될 행위",
+      "ref": "마가복음 14:9",
+      "actors": [
+        "예수",
+        "향유를 부은 여자",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "복음이 전해지는 곳마다 여인이 한 일이 기억될 것이라는 예수의 말씀을, 퍼져나가는 작은 빛으로 표현해요."
+      ],
+      "study": "복음이 전해지는 곳마다 여인이 한 일이 기억될 것이라는 예수의 말씀을, 퍼져나가는 작은 빛으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "향유를 부은 여자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "복음이 전해지는 곳",
+            "여인의 행위",
+            "기억에 남음"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-14-10",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        10
+      ],
+      "title": "유다가 지도자들에게 찾아감",
+      "ref": "마가복음 14:10",
+      "actors": [
+        "가룟 유다",
+        "대제사장들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "열두 제자 중 가룟 유다가 예수를 넘겨주려고 대제사장들에게 찾아가요."
+      ],
+      "study": "열두 제자 중 가룟 유다가 예수를 넘겨주려고 대제사장들에게 찾아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가룟 유다",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "tense",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "가룟 유다",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "가룟 유다",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-11",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        11
+      ],
+      "title": "돈을 약속하고 기회를 찾음",
+      "ref": "마가복음 14:11",
+      "actors": [
+        "가룟 유다",
+        "대제사장들"
+      ],
+      "object": "coin",
+      "narrationOnly": true,
+      "lines": [
+        "지도자들은 유다의 제안을 반기며 돈을 약속하고, 유다는 넘겨줄 기회를 살펴요."
+      ],
+      "study": "지도자들은 유다의 제안을 반기며 돈을 약속하고, 유다는 넘겨줄 기회를 살펴요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가룟 유다",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "coin",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "가룟 유다",
+            "duration": 1
+          },
+          {
+            "action": "receive",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          },
+          {
+            "action": "count",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "가룟 유다",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-12",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        12
+      ],
+      "title": "유월절 식사 장소를 묻는 제자들",
+      "ref": "마가복음 14:12",
+      "actors": [
+        "예수",
+        "제자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "유월절 양을 잡는 날에 제자들이 예수께 식사 준비 장소를 여쭈어요."
+      ],
+      "study": "유월절 양을 잡는 날에 제자들이 예수께 식사 준비 장소를 여쭈어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "제자들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-13",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        13
+      ],
+      "title": "물동이 든 이를 따라가라 하심",
+      "ref": "마가복음 14:13",
+      "actors": [
+        "예수",
+        "두 제자",
+        "물동이를 든 사람"
+      ],
+      "object": "water",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자 둘을 성으로 보내시며 물동이를 든 사람을 만나면 따라가라고 하세요."
+      ],
+      "study": "예수께서 제자 둘을 성으로 보내시며 물동이를 든 사람을 만나면 따라가라고 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "두 제자",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "water",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-14",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        14
+      ],
+      "title": "집주인에게 객실을 물으라 하심",
+      "ref": "마가복음 14:14",
+      "actors": [
+        "두 제자",
+        "물동이를 든 사람",
+        "집주인"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 물동이를 든 이가 들어가는 집의 주인에게 객실을 물으라고 일러 주세요."
+      ],
+      "study": "예수께서 물동이를 든 이가 들어가는 집의 주인에게 객실을 물으라고 일러 주세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "두 제자",
+        "target": "물동이를 든 사람",
+        "mode": "reconstruction",
+        "setting": "house",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "두 제자",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "두 제자",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "두 제자",
+            "duration": 1.8
+          },
+          {
+            "action": "point",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "두 제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-15",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        15
+      ],
+      "title": "준비된 큰 다락방",
+      "ref": "마가복음 14:15",
+      "actors": [
+        "집주인",
+        "두 제자"
+      ],
+      "object": "table",
+      "narrationOnly": true,
+      "lines": [
+        "집주인이 자리가 마련된 큰 다락방을 보여주고 제자들이 그곳에서 식사를 준비해요."
+      ],
+      "study": "집주인이 자리가 마련된 큰 다락방을 보여주고 제자들이 그곳에서 식사를 준비해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "집주인",
+        "target": "두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "table",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "open",
+            "actor": "집주인",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "집주인",
+            "duration": 1.2
+          },
+          {
+            "action": "inspect",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "집주인",
+            "duration": 1.8
+          },
+          {
+            "action": "gather",
+            "actor": "집주인",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "집주인",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-16",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        16
+      ],
+      "title": "말씀대로 마련된 유월절 식사",
+      "ref": "마가복음 14:16",
+      "actors": [
+        "두 제자",
+        "집주인"
+      ],
+      "object": "table",
+      "narrationOnly": true,
+      "lines": [
+        "제자들이 성으로 가서 예수께서 말씀하신 사람과 집을 만나 유월절 음식을 준비해요."
+      ],
+      "study": "제자들이 성으로 가서 예수께서 말씀하신 사람과 집을 만나 유월절 음식을 준비해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "두 제자",
+        "target": "집주인",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "table",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "두 제자",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "두 제자",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "receive",
+            "actor": "두 제자",
+            "duration": 1.8
+          },
+          {
+            "action": "place",
+            "actor": "두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "두 제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-17",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        17
+      ],
+      "title": "저물어 열두 제자와 오심",
+      "ref": "마가복음 14:17",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "table",
+      "narrationOnly": true,
+      "lines": [
+        "저녁이 되자 예수께서 열두 제자와 함께 마련된 식사 자리로 오세요."
+      ],
+      "study": "저녁이 되자 예수께서 열두 제자와 함께 마련된 식사 자리로 오세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "table",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-18",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        18
+      ],
+      "title": "함께 먹는 이가 배반하리라",
+      "ref": "마가복음 14:18",
+      "actors": [
+        "예수",
+        "열두 제자",
+        "가룟 유다"
+      ],
+      "object": "table",
+      "narrationOnly": true,
+      "lines": [
+        "식탁에 둘러앉아 먹는 중 예수께서 함께 먹는 사람 가운데 자신을 넘길 이가 있다고 알리세요."
+      ],
+      "study": "식탁에 둘러앉아 먹는 중 예수께서 함께 먹는 사람 가운데 자신을 넘길 이가 있다고 알리세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "table",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "eat",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-19",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        19
+      ],
+      "title": "근심하며 자신인지 묻는 제자들",
+      "ref": "마가복음 14:19",
+      "actors": [
+        "열두 제자",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제자들이 근심하며 차례로 자신이 배반자인지 묻고 서로의 얼굴을 살펴요."
+      ],
+      "study": "제자들이 근심하며 차례로 자신이 배반자인지 묻고 서로의 얼굴을 살펴요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "열두 제자",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "열두 제자",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "열두 제자",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "열두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "열두 제자",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "열두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "열두 제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-20",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        20
+      ],
+      "title": "같은 그릇에 손을 넣는 이",
+      "ref": "마가복음 14:20",
+      "actors": [
+        "예수",
+        "열두 제자",
+        "가룟 유다"
+      ],
+      "object": "bowl",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 열둘 중 함께 그릇에 손을 넣는 이라고 답하세요. 식탁 위 손의 움직임으로 가까운 단서를 보여요."
+      ],
+      "study": "예수께서 열둘 중 함께 그릇에 손을 넣는 이라고 답하세요. 식탁 위 손의 움직임으로 가까운 단서를 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "bowl",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-21",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        21
+      ],
+      "title": "기록된 길과 배반자의 책임",
+      "ref": "마가복음 14:21",
+      "actors": [
+        "예수",
+        "열두 제자",
+        "가룟 유다"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 인자의 길은 기록된 대로 가지만 넘기는 사람에게 화가 있다고 엄중히 말씀하세요."
+      ],
+      "study": "예수께서 인자의 길은 기록된 대로 가지만 넘기는 사람에게 화가 있다고 엄중히 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-22",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        22
+      ],
+      "title": "떡을 떼어 제자들에게 주심",
+      "ref": "마가복음 14:22",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "bread",
+      "narrationOnly": true,
+      "lines": [
+        "식사 중 예수께서 떡을 축복하고 떼어 제자들에게 건네며 이를 자신의 몸을 가리키는 표지로 설명하세요."
+      ],
+      "study": "식사 중 예수께서 떡을 축복하고 떼어 제자들에게 건네며 이를 자신의 몸을 가리키는 표지로 설명하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "bread-share",
+        "emotion": "neutral",
+        "prop": "bread",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "lift",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "bless",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "strike",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-23",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        23
+      ],
+      "title": "잔을 들어 감사하고 나누심",
+      "ref": "마가복음 14:23",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "cup",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 잔을 들어 감사하고 제자들에게 건네시며 모두가 받아 마셔요."
+      ],
+      "study": "예수께서 잔을 들어 감사하고 제자들에게 건네시며 모두가 받아 마셔요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "bread-share",
+        "emotion": "neutral",
+        "prop": "cup",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "lift",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "receive",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "eat",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-24",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        24
+      ],
+      "title": "많은 이를 위한 언약의 잔",
+      "ref": "마가복음 14:24",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "cup",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 잔을 많은 이를 위한 언약의 피를 가리키는 표지로 설명하세요. 피를 시각적으로 재현하지 않고 잔과 빛으로 상징해요."
+      ],
+      "study": "예수께서 잔을 많은 이를 위한 언약의 피를 가리키는 표지로 설명하세요. 피를 시각적으로 재현하지 않고 잔과 빛으로 상징해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "bread-share",
+        "emotion": "neutral",
+        "prop": "cup",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-25",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        25
+      ],
+      "title": "하나님 나라의 새 잔을 기다림",
+      "ref": "마가복음 14:25",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "cup",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 나라에서 새것을 마실 날까지 포도나무에서 난 것을 마시지 않으리라는 말씀을 전하세요."
+      ],
+      "study": "하나님 나라에서 새것을 마실 날까지 포도나무에서 난 것을 마시지 않으리라는 말씀을 전하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "cup",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "hold",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "promise",
+          "labels": [
+            "지금의 식탁",
+            "하나님 나라",
+            "새것을 마실 날"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-14-26",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        26
+      ],
+      "title": "찬송 후 감람산으로 향함",
+      "ref": "마가복음 14:26",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수와 제자들이 찬송한 뒤 감람산으로 걸어가요."
+      ],
+      "study": "예수와 제자들이 찬송한 뒤 감람산으로 걸어가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-27",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        27
+      ],
+      "title": "흩어질 양 떼를 말씀하심",
+      "ref": "마가복음 14:27",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자들이 자신을 버리고 흩어질 것이라고 예고하며 목자와 양의 표상을 말씀하세요."
+      ],
+      "study": "예수께서 제자들이 자신을 버리고 흩어질 것이라고 예고하며 목자와 양의 표상을 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "retreat",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "herd",
+          "labels": [
+            "목자를 치심",
+            "흩어지는 양들",
+            "제자들의 두려움"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-14-28",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        28
+      ],
+      "title": "부활 뒤 갈릴리에서 만나리라",
+      "ref": "마가복음 14:28",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 살아난 뒤 제자들보다 먼저 갈릴리로 가겠다고 약속하세요."
+      ],
+      "study": "예수께서 살아난 뒤 제자들보다 먼저 갈릴리로 가겠다고 약속하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "diagram": {
+          "kind": "map",
+          "labels": [
+            "죽음 뒤",
+            "다시 살아남",
+            "갈릴리에서 만남"
+          ]
+        }
+      }
+    },
+    {
+      "id": "verse-mrk-14-29",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        29
+      ],
+      "title": "베드로의 굳은 맹세",
+      "ref": "마가복음 14:29",
+      "actors": [
+        "베드로",
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "베드로가 다른 제자들이 떠나도 자신은 그렇지 않겠다고 단호하게 말해요."
+      ],
+      "study": "베드로가 다른 제자들이 떠나도 자신은 그렇지 않겠다고 단호하게 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "step",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:29",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-30",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        30
+      ],
+      "title": "세 번 부인을 미리 알리심",
+      "ref": "마가복음 14:30",
+      "actors": [
+        "예수",
+        "베드로"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 닭이 두 번 울기 전에 베드로가 세 번 부인할 것이라고 알려 주세요."
+      ],
+      "study": "예수께서 닭이 두 번 울기 전에 베드로가 세 번 부인할 것이라고 알려 주세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "rooster-call",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "count",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "recoil",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:30",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-31",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        31
+      ],
+      "title": "죽어도 부인하지 않겠다 답함",
+      "ref": "마가복음 14:31",
+      "actors": [
+        "베드로",
+        "열두 제자",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "베드로가 죽더라도 부인하지 않겠다고 힘주어 말하고 다른 제자들도 같은 뜻을 밝혀요."
+      ],
+      "study": "베드로가 죽더라도 부인하지 않겠다고 힘주어 말하고 다른 제자들도 같은 뜻을 밝혀요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "mountain",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "pledge",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:31",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-32",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        32
+      ],
+      "title": "겟세마네에 이르러 기도하심",
+      "ref": "마가복음 14:32",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수와 제자들이 겟세마네에 도착하고 예수께서 기도하는 동안 앉아 있으라고 하세요."
+      ],
+      "study": "예수와 제자들이 겟세마네에 도착하고 예수께서 기도하는 동안 앉아 있으라고 하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:32",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-33",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        33
+      ],
+      "title": "세 제자와 더 나아가심",
+      "ref": "마가복음 14:33",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 베드로와 야고보와 요한을 데리고 가며 깊은 근심을 드러내세요."
+      ],
+      "study": "예수께서 베드로와 야고보와 요한을 데리고 가며 깊은 근심을 드러내세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:33",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-34",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        34
+      ],
+      "title": "깨어 있으라고 부탁하심",
+      "ref": "마가복음 14:34",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 마음의 괴로움을 나누고 세 제자에게 곁에 머물며 깨어 있으라고 부탁하세요."
+      ],
+      "study": "예수께서 마음의 괴로움을 나누고 세 제자에게 곁에 머물며 깨어 있으라고 부탁하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "sit",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:34",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-35",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        35
+      ],
+      "title": "땅에 엎드려 기도하심",
+      "ref": "마가복음 14:35",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 조금 더 나아가 땅에 엎드려 그 시간이 지나가기를 기도하세요."
+      ],
+      "study": "예수께서 조금 더 나아가 땅에 엎드려 그 시간이 지나가기를 기도하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "prostrate",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:35",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-36",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        36
+      ],
+      "title": "아버지의 뜻을 구하는 기도",
+      "ref": "마가복음 14:36",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 아버지께 모든 것이 가능함을 고백하면서도 자신의 뜻보다 아버지의 뜻을 구하세요. 하나님을 별도 인물로 무대에 세우지 않고 예수의 기도 동작으로 표현해요."
+      ],
+      "study": "예수께서 아버지께 모든 것이 가능함을 고백하면서도 자신의 뜻보다 아버지의 뜻을 구하세요. 하나님을 별도 인물로 무대에 세우지 않고 예수의 기도 동작으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "prostrate",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:36",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-37",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        37
+      ],
+      "title": "잠든 제자들을 깨우심",
+      "ref": "마가복음 14:37",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 돌아와 잠든 제자들을 보시고 베드로에게 깨어 있을 수 없었느냐고 물으세요."
+      ],
+      "study": "예수께서 돌아와 잠든 제자들을 보시고 베드로에게 깨어 있을 수 없었느냐고 물으세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "sleep",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "startle",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:37",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-38",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        38
+      ],
+      "title": "시험에 들지 않게 기도하라",
+      "ref": "마가복음 14:38",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 깨어 기도하라고 하시며 마음의 바람과 몸의 약함을 함께 일러 주세요."
+      ],
+      "study": "예수께서 깨어 기도하라고 하시며 마음의 바람과 몸의 약함을 함께 일러 주세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:38",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-39",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        39
+      ],
+      "title": "같은 말씀으로 다시 기도하심",
+      "ref": "마가복음 14:39",
+      "actors": [
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 다시 떨어져 나가 같은 뜻으로 기도하세요. 반복 기도는 같은 자세의 고정 복제가 아니라 숨을 고르고 엎드리는 흐름으로 표현해요."
+      ],
+      "study": "예수께서 다시 떨어져 나가 같은 뜻으로 기도하세요. 반복 기도는 같은 자세의 고정 복제가 아니라 숨을 고르고 엎드리는 흐름으로 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "kneel",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "prostrate",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:39",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-40",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        40
+      ],
+      "title": "피곤해 다시 잠든 제자들",
+      "ref": "마가복음 14:40",
+      "actors": [
+        "예수",
+        "베드로",
+        "야고보",
+        "요한"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 돌아오시자 제자들은 눈이 무거워 다시 잠들어 대답하지 못해요."
+      ],
+      "study": "예수께서 돌아오시자 제자들은 눈이 무거워 다시 잠들어 대답하지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sleep",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "inspect",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:40",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-41",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        41
+      ],
+      "title": "세 번째로 오셔서 때를 알리심",
+      "ref": "마가복음 14:41",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "세 번째 돌아오신 예수께서 이제 쉬고 일어날 때이며 자신을 넘길 자가 가까이 왔다고 알리세요."
+      ],
+      "study": "세 번째 돌아오신 예수께서 이제 쉬고 일어날 때이며 자신을 넘길 자가 가까이 왔다고 알리세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "solemn",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:41",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-42",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        42
+      ],
+      "title": "일어나 함께 가자 하심",
+      "ref": "마가복음 14:42",
+      "actors": [
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 제자들에게 함께 일어나 가자고 하시며 넘기는 이가 가까이 왔다고 말씀하세요."
+      ],
+      "study": "예수께서 제자들에게 함께 일어나 가자고 하시며 넘기는 이가 가까이 왔다고 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "열두 제자",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:42",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-43",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        43
+      ],
+      "title": "유다와 무리가 도착함",
+      "ref": "마가복음 14:43",
+      "actors": [
+        "가룟 유다",
+        "대제사장들",
+        "서기관들",
+        "장로들",
+        "무리",
+        "예수"
+      ],
+      "object": "sword",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 말씀하실 때 유다가 대제사장들과 서기관들과 장로들이 보낸 무리를 이끌고 와요. 무기는 위협의 배경으로만 둬요."
+      ],
+      "study": "예수께서 말씀하실 때 유다가 대제사장들과 서기관들과 장로들이 보낸 무리를 이끌고 와요. 무기는 위협의 배경으로만 둬요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가룟 유다",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "sword",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "가룟 유다",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "point",
+            "actor": "가룟 유다",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "gather",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:43",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-44",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        44
+      ],
+      "title": "입맞춤을 체포 신호로 삼음",
+      "ref": "마가복음 14:44",
+      "actors": [
+        "가룟 유다",
+        "무리",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "유다가 미리 정한 신호로 입맞추는 사람을 붙잡으라고 무리에게 알렸어요."
+      ],
+      "study": "유다가 미리 정한 신호로 입맞추는 사람을 붙잡으라고 무리에게 알렸어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가룟 유다",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "가룟 유다",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "가룟 유다",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:44",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-45",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        45
+      ],
+      "title": "선생님이라 부르며 입맞춤함",
+      "ref": "마가복음 14:45",
+      "actors": [
+        "가룟 유다",
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "유다가 예수께 다가와 선생님이라 부르며 입맞추고, 무리는 그 신호를 알아봐요."
+      ],
+      "study": "유다가 예수께 다가와 선생님이라 부르며 입맞추고, 무리는 그 신호를 알아봐요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가룟 유다",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "가룟 유다",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "touch",
+            "actor": "가룟 유다",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "가룟 유다",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "가룟 유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:45",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-46",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        46
+      ],
+      "title": "예수를 붙잡음",
+      "ref": "마가복음 14:46",
+      "actors": [
+        "무리",
+        "예수",
+        "열두 제자"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "무리가 예수께 손을 대어 체포해요. 몸싸움이나 폭행은 과장하지 않고 붙들린 순간을 짧게 표현해요."
+      ],
+      "study": "무리가 예수께 손을 대어 체포해요. 몸싸움이나 폭행은 과장하지 않고 붙들린 순간을 짧게 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "무리",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "capture",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "reach",
+            "actor": "무리",
+            "duration": 1
+          },
+          {
+            "action": "hold",
+            "actor": "무리",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "무리",
+            "duration": 1.8
+          },
+          {
+            "action": "gather",
+            "actor": "무리",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "무리",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:46",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-47",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        47
+      ],
+      "title": "칼에 맞은 종의 귀",
+      "ref": "마가복음 14:47",
+      "actors": [
+        "곁에 선 사람",
+        "대제사장의 종",
+        "예수",
+        "무리"
+      ],
+      "object": "sword",
+      "narrationOnly": true,
+      "lines": [
+        "곁에 있던 사람이 칼을 휘둘러 대제사장의 종의 귀를 다치게 해요. 상처나 피는 그리지 않고 예수의 제지와 놀란 표정에 초점을 둬요."
+      ],
+      "study": "곁에 있던 사람이 칼을 휘둘러 대제사장의 종의 귀를 다치게 해요. 상처나 피는 그리지 않고 예수의 제지와 놀란 표정에 초점을 둬요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "곁에 선 사람",
+        "target": "대제사장의 종",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "sword",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "곁에 선 사람",
+            "duration": 1
+          },
+          {
+            "action": "windup",
+            "actor": "곁에 선 사람",
+            "duration": 1.2
+          },
+          {
+            "action": "strike",
+            "actor": "곁에 선 사람",
+            "duration": 1.5
+          },
+          {
+            "action": "recoil",
+            "actor": "곁에 선 사람",
+            "duration": 1.8
+          },
+          {
+            "action": "reach",
+            "actor": "곁에 선 사람",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "곁에 선 사람",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:47",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-48",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        48
+      ],
+      "title": "강도 잡듯 나온 무리를 책망함",
+      "ref": "마가복음 14:48",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 자신을 강도처럼 잡으러 칼과 몽둥이를 들고 나왔느냐고 무리에게 물으세요."
+      ],
+      "study": "예수께서 자신을 강도처럼 잡으러 칼과 몽둥이를 들고 나왔느냐고 무리에게 물으세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "stern",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:48",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-49",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        49
+      ],
+      "title": "성전에서 가르칠 때는 잡지 않음",
+      "ref": "마가복음 14:49",
+      "actors": [
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 성전에서 날마다 가르칠 때에는 붙잡지 않았음을 지적하고, 지금 일은 성경을 이루는 과정이라고 말씀하세요."
+      ],
+      "study": "예수께서 성전에서 날마다 가르칠 때에는 붙잡지 않았음을 지적하고, 지금 일은 성경을 이루는 과정이라고 말씀하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:49",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-50",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        50
+      ],
+      "title": "흩어져 도망가는 제자들",
+      "ref": "마가복음 14:50",
+      "actors": [
+        "열두 제자",
+        "예수",
+        "무리"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "제자들이 예수를 두고 모두 달아나요. 한 방향으로 몰리지 않도록 서로 다른 길로 흩어지는 실루엣을 보여요."
+      ],
+      "study": "제자들이 예수를 두고 모두 달아나요. 한 방향으로 몰리지 않도록 서로 다른 길로 흩어지는 실루엣을 보여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "열두 제자",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "startle",
+            "actor": "열두 제자",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "열두 제자",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "열두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "열두 제자",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "열두 제자",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "열두 제자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:50",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-51",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        51
+      ],
+      "title": "홑이불만 걸친 청년이 붙잡힘",
+      "ref": "마가복음 14:51",
+      "actors": [
+        "벗은 청년",
+        "무리",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "한 청년이 홑이불을 걸치고 예수를 따라오다 무리에게 붙들리는 장면이에요."
+      ],
+      "study": "한 청년이 홑이불을 걸치고 예수를 따라오다 무리에게 붙들리는 장면이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "벗은 청년",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "벗은 청년",
+            "duration": 1
+          },
+          {
+            "action": "reach",
+            "actor": "벗은 청년",
+            "duration": 1.2
+          },
+          {
+            "action": "hold",
+            "actor": "벗은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "recoil",
+            "actor": "벗은 청년",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "벗은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "벗은 청년",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:51",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-52",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        52
+      ],
+      "title": "홑이불을 두고 달아남",
+      "ref": "마가복음 14:52",
+      "actors": [
+        "벗은 청년",
+        "무리"
+      ],
+      "object": "linen",
+      "narrationOnly": true,
+      "lines": [
+        "청년이 홑이불을 놓고 달아나요. 노출이나 신체를 그리지 않고 천과 멀어지는 뒷모습만 표현해요."
+      ],
+      "study": "청년이 홑이불을 놓고 달아나요. 노출이나 신체를 그리지 않고 천과 멀어지는 뒷모습만 표현해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "벗은 청년",
+        "target": "무리",
+        "mode": "reconstruction",
+        "setting": "garden",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "linen",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "release",
+            "actor": "벗은 청년",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "벗은 청년",
+            "duration": 1.2
+          },
+          {
+            "action": "run",
+            "actor": "벗은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "벗은 청년",
+            "duration": 1.8
+          },
+          {
+            "action": "retreat",
+            "actor": "벗은 청년",
+            "duration": 1.5
+          },
+          {
+            "action": "run",
+            "actor": "벗은 청년",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:52",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-53",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        53
+      ],
+      "title": "대제사장에게 끌려가 모인 공회",
+      "ref": "마가복음 14:53",
+      "actors": [
+        "예수",
+        "대제사장",
+        "대제사장들",
+        "장로들",
+        "서기관들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "무리가 예수를 대제사장에게 데려가자 대제사장들과 장로들과 서기관들이 모여요."
+      ],
+      "study": "무리가 예수를 대제사장에게 데려가자 대제사장들과 장로들과 서기관들이 모여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "대제사장",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "halt",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:53",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-54",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        54
+      ],
+      "title": "멀찍이 따라가 불을 쬐는 베드로",
+      "ref": "마가복음 14:54",
+      "actors": [
+        "베드로",
+        "경비병"
+      ],
+      "object": "fire",
+      "narrationOnly": true,
+      "lines": [
+        "베드로가 거리를 두고 대제사장의 집 뜰까지 따라가 경비병들과 불을 쬐며 상황을 살펴요."
+      ],
+      "study": "베드로가 거리를 두고 대제사장의 집 뜰까지 따라가 경비병들과 불을 쬐며 상황을 살펴요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "경비병",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "fire",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "hide",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "sit",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "sit",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:54",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-55",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        55
+      ],
+      "title": "정죄할 증거를 찾는 공회",
+      "ref": "마가복음 14:55",
+      "actors": [
+        "대제사장",
+        "대제사장들",
+        "공회",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "대제사장들과 공회가 예수를 죽일 증거를 찾지만 뜻대로 얻지 못해요."
+      ],
+      "study": "대제사장들과 공회가 예수를 죽일 증거를 찾지만 뜻대로 얻지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "대제사장",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "대제사장",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "대제사장",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "대제사장",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:55",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-56",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        56
+      ],
+      "title": "서로 맞지 않는 거짓 증언",
+      "ref": "마가복음 14:56",
+      "actors": [
+        "거짓 증인들",
+        "대제사장들",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "많은 거짓 증인이 나서지만 말이 서로 맞지 않아 증언이 흔들려요."
+      ],
+      "study": "많은 거짓 증인이 나서지만 말이 서로 맞지 않아 증언이 흔들려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 증인들",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "거짓 증인들",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          },
+          {
+            "action": "turn",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "거짓 증인들",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:56",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-57",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        57
+      ],
+      "title": "거짓 증언을 시작하는 사람들",
+      "ref": "마가복음 14:57",
+      "actors": [
+        "거짓 증인들",
+        "예수",
+        "대제사장들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "몇 사람이 일어나 예수를 고발하는 말을 시작해요. 실제 사실과 다른 증언임을 분명히 하고 고발 장면만 간결히 나타내요."
+      ],
+      "study": "몇 사람이 일어나 예수를 고발하는 말을 시작해요. 실제 사실과 다른 증언임을 분명히 하고 고발 장면만 간결히 나타내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 증인들",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "거짓 증인들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "거짓 증인들",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:57",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-58",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        58
+      ],
+      "title": "성전 발언을 왜곡해 고발함",
+      "ref": "마가복음 14:58",
+      "actors": [
+        "거짓 증인들",
+        "예수",
+        "대제사장들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "증인들이 성전을 헐고 사흘 만에 다시 세우겠다는 말을 들었다고 주장해요. 예수의 실제 가르침으로 확정하지 않고 증언자의 발언으로 표시해요."
+      ],
+      "study": "증인들이 성전을 헐고 사흘 만에 다시 세우겠다는 말을 들었다고 주장해요. 예수의 실제 가르침으로 확정하지 않고 증언자의 발언으로 표시해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 증인들",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "거짓 증인들",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "inspect",
+            "actor": "거짓 증인들",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:58",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-59",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        59
+      ],
+      "title": "일치하지 않는 증언",
+      "ref": "마가복음 14:59",
+      "actors": [
+        "거짓 증인들",
+        "대제사장들",
+        "공회"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "그 증언마저 서로 맞지 않아 공회가 확정된 근거를 찾지 못해요."
+      ],
+      "study": "그 증언마저 서로 맞지 않아 공회가 확정된 근거를 찾지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "거짓 증인들",
+        "target": "대제사장들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "거짓 증인들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          },
+          {
+            "action": "inspect",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "거짓 증인들",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "거짓 증인들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "거짓 증인들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:59",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-60",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        60
+      ],
+      "title": "대제사장이 직접 심문함",
+      "ref": "마가복음 14:60",
+      "actors": [
+        "대제사장",
+        "예수",
+        "공회"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "대제사장이 일어나 예수께 증언에 답하라고 묻지만 예수께서는 침묵하세요."
+      ],
+      "study": "대제사장이 일어나 예수께 증언에 답하라고 묻지만 예수께서는 침묵하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "대제사장",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "대제사장",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "대제사장",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:60",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-61",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        61
+      ],
+      "title": "그리스도인지 다시 묻는 대제사장",
+      "ref": "마가복음 14:61",
+      "actors": [
+        "대제사장",
+        "예수",
+        "공회"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "대제사장이 찬송받을 이의 아들 그리스도인지 묻고 예수께서는 침묵을 지키세요."
+      ],
+      "study": "대제사장이 찬송받을 이의 아들 그리스도인지 묻고 예수께서는 침묵을 지키세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "대제사장",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장",
+            "duration": 1.2
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "대제사장",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "대제사장",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:61",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-62",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        62
+      ],
+      "title": "자신의 정체와 올 일을 밝히심",
+      "ref": "마가복음 14:62",
+      "actors": [
+        "예수",
+        "대제사장",
+        "공회"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 자신이 그리스도임을 밝히고 인자가 권능자의 우편에 앉으며 구름 가운데 오는 것을 말하세요."
+      ],
+      "study": "예수께서 자신이 그리스도임을 밝히고 인자가 권능자의 우편에 앉으며 구름 가운데 오는 것을 말하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "대제사장",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "rise",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "recoil",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:62",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-63",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        63
+      ],
+      "title": "옷을 찢는 대제사장",
+      "ref": "마가복음 14:63",
+      "actors": [
+        "대제사장",
+        "공회",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "대제사장이 옷을 찢으며 더는 증언이 필요 없다고 선언해요."
+      ],
+      "study": "대제사장이 옷을 찢으며 더는 증언이 필요 없다고 선언해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장",
+        "target": "공회",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "angry",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "tear",
+            "actor": "대제사장",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "대제사장",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "gather",
+            "actor": "대제사장",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:63",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-64",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        64
+      ],
+      "title": "사형에 해당한다고 정죄함",
+      "ref": "마가복음 14:64",
+      "actors": [
+        "대제사장",
+        "공회",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "공회가 그 말씀을 신성모독으로 판단하고 사형에 해당한다고 정죄해요."
+      ],
+      "study": "공회가 그 말씀을 신성모독으로 판단하고 사형에 해당한다고 정죄해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "대제사장",
+        "target": "공회",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "tense",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "대제사장",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "대제사장",
+            "duration": 1.2
+          },
+          {
+            "action": "gather",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "대제사장",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "대제사장",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "대제사장",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:64",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-65",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        65
+      ],
+      "title": "모욕과 폭행을 당하심",
+      "ref": "마가복음 14:65",
+      "actors": [
+        "예수",
+        "사람들",
+        "경비병"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사람들이 예수를 모욕하고 가리며 때려요. 폭력의 접촉은 화면 밖으로 두고 가려진 얼굴과 둘러싼 그림자로만 다뤄요."
+      ],
+      "study": "사람들이 예수를 모욕하고 가리며 때려요. 폭력의 접촉은 화면 밖으로 두고 가려진 얼굴과 둘러싼 그림자로만 다뤄요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "예수",
+        "target": "사람들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "none",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "예수",
+            "duration": 1
+          },
+          {
+            "action": "cover",
+            "actor": "예수",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "예수",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "예수",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "예수",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:65",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-66",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        66
+      ],
+      "title": "뜰에서 베드로에게 다가온 여종",
+      "ref": "마가복음 14:66",
+      "actors": [
+        "베드로",
+        "여종"
+      ],
+      "object": "fire",
+      "narrationOnly": true,
+      "lines": [
+        "아랫뜰에서 불을 쬐던 베드로에게 대제사장의 여종이 다가와요."
+      ],
+      "study": "아랫뜰에서 불을 쬐던 베드로에게 대제사장의 여종이 다가와요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "여종",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "fire",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "point",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:66",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-67",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        67
+      ],
+      "title": "예수와 함께 있던 사람이라 알아봄",
+      "ref": "마가복음 14:67",
+      "actors": [
+        "여종",
+        "베드로",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여종이 베드로를 살펴보고 예수와 함께 있었다고 말해요."
+      ],
+      "study": "여종이 베드로를 살펴보고 예수와 함께 있었다고 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "여종",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "여종",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "여종",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "여종",
+            "duration": 1.5
+          },
+          {
+            "action": "recoil",
+            "actor": "여종",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "여종",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "여종",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:67",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-68",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        68
+      ],
+      "title": "첫 부인과 닭 울음",
+      "ref": "마가복음 14:68",
+      "actors": [
+        "베드로",
+        "여종",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "베드로가 무슨 말인지 모른다고 부인하며 앞뜰로 옮기고 닭이 한 번 울어요."
+      ],
+      "study": "베드로가 무슨 말인지 모른다고 부인하며 앞뜰로 옮기고 닭이 한 번 울어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "여종",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "rooster-call",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "turn",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "retreat",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "startle",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:68",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-69",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        69
+      ],
+      "title": "다시 베드로를 알아본 여종",
+      "ref": "마가복음 14:69",
+      "actors": [
+        "여종",
+        "베드로",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "여종이 곁의 사람들에게 베드로도 예수의 무리라고 다시 말해요."
+      ],
+      "study": "여종이 곁의 사람들에게 베드로도 예수의 무리라고 다시 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "여종",
+        "target": "베드로",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "여종",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "여종",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "여종",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "여종",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "여종",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "여종",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:69",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-70",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        70
+      ],
+      "title": "갈릴리 말씨로 다시 의심받음",
+      "ref": "마가복음 14:70",
+      "actors": [
+        "베드로",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "잠시 뒤 사람들도 베드로가 갈릴리 사람이라며 같은 무리라고 말하고 베드로는 다시 부인해요."
+      ],
+      "study": "잠시 뒤 사람들도 베드로가 갈릴리 사람이라며 같은 무리라고 말하고 베드로는 다시 부인해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "사람들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "rooster-call",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:70",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-71",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        71
+      ],
+      "title": "모른다고 맹세하며 부인함",
+      "ref": "마가복음 14:71",
+      "actors": [
+        "베드로",
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "베드로가 맹세하고 자신은 그 사람을 모른다고 강하게 부인해요."
+      ],
+      "study": "베드로가 맹세하고 자신은 그 사람을 모른다고 강하게 부인해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "사람들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "tense",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "pledge",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "retreat",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "wait",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:71",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-mrk-14-72",
+      "code": "mrk",
+      "chapter": 14,
+      "verseNumbers": [
+        72
+      ],
+      "title": "두 번째 닭 울음과 베드로의 눈물",
+      "ref": "마가복음 14:72",
+      "actors": [
+        "베드로",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "닭이 두 번째 울자 베드로는 예수의 예고를 기억하고 무너져 울어요. 닭 울음 뒤 표정과 몸이 천천히 낮아지는 흐름으로 마무리해요."
+      ],
+      "study": "닭이 두 번째 울자 베드로는 예수의 예고를 기억하고 무너져 울어요. 닭 울음 뒤 표정과 몸이 천천히 낮아지는 흐름으로 마무리해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "베드로",
+        "target": "예수",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "rooster-call",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "베드로",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "베드로",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "베드로",
+            "duration": 1.8
+          },
+          {
+            "action": "kneel",
+            "actor": "베드로",
+            "duration": 1.5
+          },
+          {
+            "action": "mourn",
+            "actor": "베드로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "마가복음 14:72",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
     }
