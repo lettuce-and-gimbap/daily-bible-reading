@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "2co",
-    "nextBook": "gal",
-    "booksCompleted": 47,
+    "currentBook": "gal",
+    "nextBook": "eph",
+    "booksCompleted": 48,
     "completedBooks": [
       "gen",
       "exo",
@@ -344,10 +344,11 @@
       "act",
       "rom",
       "1co",
-      "2co"
+      "2co",
+      "gal"
     ],
-    "chaptersReviewed": 1095,
-    "relationshipLinksReviewed": 3616,
+    "chaptersReviewed": 1101,
+    "relationshipLinksReviewed": 3640,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -358,22 +359,22 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "고린도후서 13장 전체에서 바울의 위로·화해·새 언약·연약함과 사도적 권면을 담은 발화 13묶음·26문장에 개별 구절 참조를 연결했다. 마게도냐의 연보와 바울의 고난을 본문 서술과 혼동하지 않도록 구절 범위를 대조했고, 관계 연결 42개를 확인했다. 실제 대면 장면이 아닌 서신 내용을 현장 대화로 만들지 않았다. 다음은 갈라디아서다.",
+    "statusNote": "갈라디아서 6장을 대조해 바울의 복음 변증과 자유·성령·공동체 권면 6묶음·12문장에 문장별 구절 참조를 붙였다. 다른 복음에 대한 경고, 믿음으로 의롭다 함, 약속의 자녀, 성령의 열매, 서로 짐을 지는 권면을 해당 장 범위 안에서 확인했다. 관계 연결 24개를 점검했다. 실제 대면 장면이 없는 편지 본문은 서신의 발화로 유지했다. 다음은 에베소서다.",
     "partialBookAudit": {
-      "book": "2co",
-      "chaptersScanned": 13,
-      "chaptersWithAuthoredDialogueReviewed": 13,
-      "authoredUtteranceGroupsReviewed": 13,
-      "utteranceReferencesCorrected": 26,
-      "chapterDialogueAudit": 13,
+      "book": "gal",
+      "chaptersScanned": 6,
+      "chaptersWithAuthoredDialogueReviewed": 6,
+      "authoredUtteranceGroupsReviewed": 6,
+      "utteranceReferencesCorrected": 12,
+      "chapterDialogueAudit": 6,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 42,
+      "relationshipEdgesAudited": 24,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 42,
-      "relationshipLinksFound": 42,
+      "relationshipBasedPairLines": 24,
+      "relationshipLinksFound": 24,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 42,
+      "generatedLinksRemaining": 24,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -383,16 +384,9 @@
         3,
         4,
         5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
+        6
       ],
-      "statusNote": "고린도후서 13장 전체에서 바울의 위로·화해·새 언약·연약함과 사도적 권면을 담은 발화 13묶음·26문장에 개별 구절 참조를 연결했다. 마게도냐의 연보와 바울의 고난을 본문 서술과 혼동하지 않도록 구절 범위를 대조했고, 관계 연결 42개를 확인했다. 실제 대면 장면이 아닌 서신 내용을 현장 대화로 만들지 않았다. 다음은 갈라디아서다."
+      "statusNote": "갈라디아서 6장을 대조해 바울의 복음 변증과 자유·성령·공동체 권면 6묶음·12문장에 문장별 구절 참조를 붙였다. 다른 복음에 대한 경고, 믿음으로 의롭다 함, 약속의 자녀, 성령의 열매, 서로 짐을 지는 권면을 해당 장 범위 안에서 확인했다. 관계 연결 24개를 점검했다. 실제 대면 장면이 없는 편지 본문은 서신의 발화로 유지했다. 다음은 에베소서다."
     },
     "currentBookStatus": "complete"
   }
