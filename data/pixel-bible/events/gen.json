@@ -323,6 +323,7 @@
       "chapter": 12,
       "title": "사래를 지키신 하나님",
       "actors": [
+        "바로",
         "아브람",
         "사래"
       ],
@@ -342,7 +343,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"return","lead":"아브람","target":"사래","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"house","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"},{"action":"extend","duration":1.5,"actor":"아브람"},{"action":"receive","duration":1.8,"actor":"아브람"},{"action":"bow","duration":1.5,"actor":"아브람"},{"action":"stand","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 12:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"return","lead":"바로","target":"아브람","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"house","beats":[{"action":"speak","actor":"바로","duration":1},{"action":"point","actor":"바로","duration":1.2},{"action":"listen","actor":"아브람","duration":1.5},{"action":"signal","actor":"바로","duration":1.8},{"action":"walk","actor":"사래","duration":1.5},{"action":"walk","actor":"아브람","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 12:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-13-0",
@@ -395,7 +396,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"blessing","lead":"아브람","target":null,"mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"lift","duration":1.2,"actor":"아브람"},{"action":"bless","duration":1.5,"actor":"아브람"},{"action":"bless","duration":1.8,"actor":"아브람"},{"action":"lower","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 13:14-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"blessing","lead":"아브람","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"altar","beats":[{"action":"listen","actor":"아브람","duration":1},{"action":"look","actor":"아브람","duration":1.2},{"action":"turn","actor":"아브람","duration":1.5},{"action":"walk","actor":"아브람","duration":1.8},{"action":"place","actor":"아브람","duration":1.5},{"action":"pray","actor":"아브람","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 13:14-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-14-2",
@@ -403,8 +404,8 @@
       "chapter": 14,
       "title": "멜기세덱의 축복",
       "actors": [
-        "아브람",
-        "멜기세덱"
+        "멜기세덱",
+        "아브람"
       ],
       "object": "wine",
       "ref": "창세기 14:17-20",
@@ -422,7 +423,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"blessing","lead":"아브람","target":"멜기세덱","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"wine","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"lift","duration":1.2,"actor":"아브람"},{"action":"bless","duration":1.5,"actor":"아브람"},{"action":"bless","duration":1.8,"actor":"아브람"},{"action":"lower","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 14:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"blessing","lead":"멜기세덱","target":"아브람","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"wine","beats":[{"action":"carry","actor":"멜기세덱","duration":1},{"action":"extend","actor":"멜기세덱","duration":1.2},{"action":"bless","actor":"멜기세덱","duration":1.5},{"action":"bow","actor":"아브람","duration":1.8},{"action":"extend","actor":"아브람","duration":1.5},{"action":"receive","actor":"멜기세덱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 14:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-17-3",
@@ -2412,8 +2413,7 @@
       "chapter": 15,
       "title": "아브람과 맺은 언약을 표징으로 보이다",
       "actors": [
-        "아브람",
-        "엘리에셀"
+        "아브람"
       ],
       "object": "scene-marker",
       "ref": "창세기 15:1-21",
@@ -2448,7 +2448,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"covenant","lead":"아브람","target":"엘리에셀","mode":"illustration","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"},{"action":"extend","duration":1.5,"actor":"아브람"},{"action":"pledge","duration":1.8,"actor":"아브람"},{"action":"read","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 15:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"covenant","lead":"아브람","target":null,"mode":"symbolic","setting":"courtyard","effect":"none","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","actor":"아브람","duration":1},{"action":"look","actor":"아브람","duration":1.2},{"action":"place","actor":"아브람","duration":1.5},{"action":"signal","actor":"아브람","duration":1.8},{"action":"sleep","actor":"아브람","duration":1.5},{"action":"hold","actor":"아브람","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 15:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-16-0",
@@ -2489,7 +2489,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"하갈","target":"사래","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하갈"},{"action":"lift","duration":1.2,"actor":"하갈"},{"action":"speak","duration":1.5,"actor":"하갈"},{"action":"bless","duration":1.8,"actor":"하갈"},{"action":"lower","duration":1.5,"actor":"하갈"},{"action":"bow","duration":1.2,"actor":"하갈"}],"duration":8.2,"support":null,"ref":"창세기 16:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"promise","lead":"하갈","target":"여호와의 사자","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"retreat","actor":"하갈","duration":1},{"action":"run","actor":"하갈","duration":1.2},{"action":"listen","actor":"하갈","duration":1.5},{"action":"speak","actor":"여호와의 사자","duration":1.8},{"action":"look","actor":"하갈","duration":1.5},{"action":"cradle","actor":"하갈","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 16:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-31-0",

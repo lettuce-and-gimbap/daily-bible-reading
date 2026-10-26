@@ -859,6 +859,117 @@
         }
       ]
     },
+    "11": {
+      "lead": "바로",
+      "target": "아브람",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "바로",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "바로",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "바로",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "사래",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "아브람",
+          "duration": 1.2
+        }
+      ]
+    },
+    "13": {
+      "lead": "아브람",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "아브람",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "아브람",
+          "duration": 1.2
+        },
+        {
+          "action": "turn",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "아브람",
+          "duration": 1.8
+        },
+        {
+          "action": "place",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "아브람",
+          "duration": 1.2
+        }
+      ]
+    },
+    "14": {
+      "lead": "멜기세덱",
+      "target": "아브람",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "carry",
+          "actor": "멜기세덱",
+          "duration": 1
+        },
+        {
+          "action": "extend",
+          "actor": "멜기세덱",
+          "duration": 1.2
+        },
+        {
+          "action": "bless",
+          "actor": "멜기세덱",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "아브람",
+          "duration": 1.8
+        },
+        {
+          "action": "extend",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "receive",
+          "actor": "멜기세덱",
+          "duration": 1.2
+        }
+      ]
+    },
     "28": {
       "lead": "아브라함의 종",
       "target": "아브라함",
@@ -1311,10 +1422,80 @@
       "ref": "창세기 6:13-22"
     },
     "78": {
-      "mode": "illustration"
+      "mode": "symbolic",
+      "lead": "아브람",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "아브람",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "아브람",
+          "duration": 1.2
+        },
+        {
+          "action": "place",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "아브람",
+          "duration": 1.8
+        },
+        {
+          "action": "sleep",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "아브람",
+          "duration": 1.2
+        }
+      ]
     },
     "79": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "lead": "하갈",
+      "target": "여호와의 사자",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "retreat",
+          "actor": "하갈",
+          "duration": 1
+        },
+        {
+          "action": "run",
+          "actor": "하갈",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "하갈",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "여호와의 사자",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "하갈",
+          "duration": 1.5
+        },
+        {
+          "action": "cradle",
+          "actor": "하갈",
+          "duration": 1.2
+        }
+      ]
     },
     "80": {
       "mode": "reconstruction",
