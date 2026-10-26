@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 5,
-  "currentBook": "jos",
+  "booksCompleted": 6,
+  "currentBook": "jdg",
   "currentBookStatus": "in-progress",
-  "nextBook": "jos",
+  "nextBook": "jdg",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -65,7 +65,6 @@
       "utteranceReferencesCorrected": 56,
       "pairedEntriesReviewed": 15,
       "newTwoWayEntries": 15,
-      "chapterDialogueAudit": 36,
       "status": "complete",
       "eventVerseSpanAudit": {
         "versesExpected": 1288,
@@ -91,6 +90,25 @@
         "duplicate": 0
       },
       "statusNote": "신명기 34장 전체의 인물·사건 대화 후보를 검토했고, 발화 23묶음의 46개 문장을 개별 절 범위에 연결했다. 기존 모세·여호수아 대화를 확인하고 시혼과 모세의 통행 협상, 하나님 음성을 두려워한 백성과 모세, 레위인의 저주 선포와 백성의 아멘 등 대화 3개를 추가했다. 20장 제사장의 발화에서 관리들의 귀가 명령을 분리하고 34장 모세의 마지막 발화를 모세 시점으로 고쳤다. 23장 발람과 25장 아말렉의 잘못 붙은 독백을 제거했으며 26장 첫 열매 고백의 화자를 조상 야곱이 아닌 예배하는 이스라엘 자손으로 수정했다. 사건 범위 959절은 누락·중복 없이 통과했다."
+    },
+    "jos": {
+      "chaptersScanned": 24,
+      "chaptersWithAuthoredDialogueReviewed": 24,
+      "authoredUtteranceGroupsReviewed": 25,
+      "utteranceReferencesCorrected": 50,
+      "chapterDialogueAudit": 24,
+      "pairedEntriesReviewed": 10,
+      "newTwoWayEntries": 8,
+      "relationshipEdgesAudited": 62,
+      "relationshipTargetsAudited": 50,
+      "status": "complete",
+      "eventVerseSpanAudit": {
+        "versesExpected": 658,
+        "versesCovered": 658,
+        "missing": 0,
+        "duplicate": 0
+      },
+      "statusNote": "여호수아 24장 전체의 장면·관계 후보 62개를 대조하고, 하나님을 제외한 인간 인물 관계 연결 대상 50개가 관계망에서 유지되는지 확인했다. 독백 25묶음의 50개 문장에 개별 절 참조를 달고 화자 시점을 바로잡았다. 직접 대화와 사건상 응답이 확인되는 라합·정탐꾼, 여호수아·요단 동편 지파, 여호수아·군대 장관, 아간, 기브온 사람들, 요셉 자손, 비느하스·르우벤 지파, 여호수아·백성의 양방향 대화 8개를 추가했다. 관계가 있다는 사실만으로 본문에 없는 발언을 만들어내지는 않았으며, 미기록 관계의 자동 어색한 인사는 생성하지 않는 기존 동작을 확인했다. 아이 왕은 직접 발화가 없어 인물 대사에서 제외했다. 사건 범위 658절은 누락·중복 없이 통과했다."
     }
   }
 }
