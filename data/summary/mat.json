@@ -18,17 +18,12 @@
         {"name":"예수","role":"죄에서 구원하실 그리스도","weight":3},
         {"name":"요셉","role":"의로운 다윗의 자손","weight":3},
         {"name":"마리아","role":"성령으로 잉태한 여인","weight":3},
-        {"name":"주의 사자","role":"꿈에 나타난 천사","weight":2},
-        {"name":"아브라함","role":"족보의 시작","weight":1},
-        {"name":"다윗","role":"족보 속 왕","weight":1},
-        {"name":"다말·라합·룻","role":"족보 속 여인들","weight":1}
+        {"name":"주의 사자","role":"꿈에 나타난 천사","weight":2}
       ],
       "rels": [
         {"from":"마리아","to":"요셉","label":"약혼한 사이","kind":"family","directed":false,"weight":3,"verses":"18-19","note":"당시 약혼은 거의 결혼과 같아서 끊으려면 이혼 절차가 필요했어요. 요셉은 마리아가 돌에 맞지 않도록 조용히 끊으려 했어요."},
         {"from":"주의 사자","to":"요셉","label":"알려 준 천사","kind":"ally","directed":true,"weight":2,"verses":"20-21","note":"천사는 요셉에게 두려워 말고 마리아를 아내로 맞으라고 했어요."},
-        {"from":"예수","to":"다윗","label":"자손","kind":"family","directed":true,"weight":2,"verses":"1","note":"마태는 예수님이 다윗의 왕위를 잇는 메시아라는 점을 먼저 밝혀요. 첫 구절부터 다윗과 아브라함의 자손이라 불러요."},
-        {"from":"예수","to":"마리아","label":"아들","kind":"family","directed":true,"weight":3,"verses":"16, 25","note":"족보에서 '낳고'로 이어지다가 끝에서만 '마리아에게서 나시니'라고 해요. 요셉이 아버지가 아니라는 뜻이에요."},
-        {"from":"예수","to":"아브라함","label":"자손","kind":"family","directed":true,"weight":1,"verses":"1-2, 17","note":"아브라함에게 모든 민족이 복을 받는다는 약속이 있었어요. 예수님이 그 약속을 이루실 분이라는 뜻으로 족보가 시작돼요."}
+        {"from":"예수","to":"마리아","label":"아들","kind":"family","directed":true,"weight":3,"verses":"16, 25","note":"족보에서 '낳고'로 이어지다가 끝에서만 '마리아에게서 나시니'라고 해요. 요셉이 아버지가 아니라는 뜻이에요."}
       ],
       "places": [
         {"name":"바벨론","where":"포로로 끌려간 곳","what":"족보를 나누는 기준","weight":1}
@@ -51,8 +46,7 @@
         {"name":"요셉","role":"가족을 지킨 아버지","weight":2},
         {"name":"마리아","role":"아기의 어머니","weight":2},
         {"name":"주의 사자","role":"꿈에 지시한 천사","weight":2},
-        {"name":"대제사장과 서기관","role":"베들레헴을 알려 준 이들","weight":1},
-        {"name":"아켈라오","role":"헤롯의 아들","weight":1}
+        {"name":"대제사장과 서기관","role":"베들레헴을 알려 준 이들","weight":1}
       ],
       "rels": [
         {"from":"동방 박사들","to":"예수","label":"경배한 이들","kind":"ally","directed":true,"weight":3,"verses":"11","note":"박사들은 이방인인데도 엎드려 경배했어요. 헤롯이 겉으로만 경배하겠다고 한 것과 크게 달랐어요."},
@@ -320,12 +314,10 @@
         {"name":"세례 요한","role":"옥에 갇힌 선지자","weight":3},
         {"name":"요한의 제자들","role":"질문을 전한 이들","weight":1},
         {"name":"무리","role":"요한에 대해 들은 사람들","weight":1},
-        {"name":"하나님","role":"어린아이에게 나타내신 아버지","weight":2},
-        {"name":"엘리야","role":"오리라 한 선지자","weight":1}
+        {"name":"하나님","role":"어린아이에게 나타내신 아버지","weight":2}
       ],
       "rels": [
         {"from":"세례 요한","to":"예수","label":"물어본 선지자","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"옥에 갇힌 요한은 기대와 다른 예수님의 모습에 제자들을 보내 물었어요. 예수님은 행하신 일로 답하셨어요."},
-        {"from":"세례 요한","to":"엘리야","label":"오리라 한 이","kind":"other","directed":true,"weight":2,"verses":"14","note":"말라기가 말한 오기로 한 엘리야가 바로 요한이라고 예수님이 밝히셨어요. 받아들일 수 있는 사람이라면 알아들으라고 하셨어요."},
         {"from":"예수","to":"무리","label":"쉬게 하시는 분","kind":"ally","directed":true,"weight":2,"verses":"28-29","note":"예수님의 멍에는 가볍고 쉬워요. 율법의 무거운 짐에 지친 사람들을 오라고 부르시는 초대예요."},
         {"from":"하나님","to":"예수","label":"아들에게 맡김","kind":"family","directed":true,"weight":2,"verses":"27","note":"아버지와 아들은 서로를 아세요. 아들이 보여 주려 하는 사람만 아버지를 알 수 있어요."}
       ],
@@ -354,14 +346,12 @@
         {"name":"귀신 들린 자","role":"눈멀고 말 못하던 이","weight":1},
         {"name":"마리아","role":"찾아온 어머니","weight":1},
         {"name":"예수의 동생들","role":"밖에 선 가족","weight":1},
-        {"name":"요나","role":"표적의 선지자","weight":1},
         {"name":"성령","role":"귀신을 쫓는 능력","weight":2}
       ],
       "rels": [
         {"from":"바리새인","to":"예수","label":"죽이려 한 이들","kind":"conflict","directed":true,"weight":3,"verses":"14","note":"손 마른 사람을 안식일에 고치시자 바리새인들은 예수님을 어떻게 죽일까 의논했어요."},
         {"from":"예수","to":"제자들","label":"편드신 스승","kind":"ally","directed":true,"weight":2,"verses":"1-8","note":"제자들이 배고파 이삭을 잘라 먹자 예수님은 다윗과 제사장의 예를 들어 제자들을 변호하셨어요."},
         {"from":"예수","to":"마리아","label":"아들","kind":"family","directed":true,"weight":1,"verses":"46-50","note":"어머니와 동생들이 말하러 찾아왔어요. 예수님은 가족을 뜻하지 않고 하나님 뜻을 행하는 사람이 가족이라 하셨어요."},
-        {"from":"예수","to":"요나","label":"더 큰 이","kind":"other","directed":true,"weight":1,"verses":"40-41","note":"요나는 사흘 동안 물고기 뱃속에 있었어요. 예수님은 자신이 땅속에 있다 살아나는 일을 표적으로 말씀하시며 요나보다 큰 이라 하셨어요."},
         {"from":"성령","to":"예수","label":"힘 주신 영","kind":"ally","directed":true,"weight":2,"verses":"18, 28","note":"이사야는 하나님이 종에게 영을 주신다고 했어요. 예수님은 성령으로 귀신을 쫓으며 하나님 나라가 왔다고 하셨어요."}
       ],
       "places": [
@@ -481,8 +471,7 @@
         {"name":"베드로","role":"고백한 제자","weight":3},
         {"name":"제자들","role":"누구냐 질문받은 이들","weight":2},
         {"name":"바리새인과 사두개인","role":"표적을 구한 이들","weight":2},
-        {"name":"하나님","role":"알게 하신 아버지","weight":2},
-        {"name":"사탄","role":"하나님의 일을 막는 자","weight":1}
+        {"name":"하나님","role":"알게 하신 아버지","weight":2}
       ],
       "renames": [
         {"from":"시몬","to":"베드로","verses":"18","why":"예수께서 이름을 주심","note":"예수께서 시몬에게 너는 베드로라 하시며 반석이라는 뜻의 이름을 주셨어요."}
@@ -580,8 +569,7 @@
         {"name":"부자 청년","role":"근심하며 떠난 이","weight":3},
         {"name":"어린아이들","role":"안수받은 아이들","weight":2},
         {"name":"제자들","role":"놀라 물은 이들","weight":2},
-        {"name":"베드로","role":"버리고 따른 것을 물은 제자","weight":2},
-        {"name":"모세","role":"이혼 증서를 허락한 이","weight":1}
+        {"name":"베드로","role":"버리고 따른 것을 물은 제자","weight":2}
       ],
       "rels": [
         {"from":"바리새인","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"바리새인들은 이혼 문제로 예수님을 곤란하게 하려고 시험했어요. 예수님은 모세의 허락이 아니라 창조의 뜻을 말씀하셨어요."},
@@ -645,8 +633,7 @@
         {"name":"매매하는 자들","role":"성전에서 쫓겨난 이들","weight":2},
         {"name":"대제사장과 장로들","role":"권위를 따진 이들","weight":3},
         {"name":"바리새인","role":"잡으려 한 이들","weight":2},
-        {"name":"악한 농부들","role":"아들을 죽인 소작인","weight":2},
-        {"name":"스가랴","role":"나귀 탄 왕을 예언한 선지자","weight":1}
+        {"name":"악한 농부들","role":"아들을 죽인 소작인","weight":2}
       ],
       "rels": [
         {"from":"무리","to":"예수","label":"호산나 외침","kind":"ally","directed":true,"weight":3,"verses":"8-9","note":"무리는 다윗의 자손에게 호산나를 외쳤어요. 그러나 왕이 나귀를 타고 오는 뜻은 몰랐고 곧 십자가로 이어져요."},
@@ -679,16 +666,13 @@
         {"name":"바리새인","role":"세금으로 시험한 이들","weight":3},
         {"name":"헤롯 당원","role":"함께 온 이들","weight":1},
         {"name":"사두개인","role":"부활을 부인한 이들","weight":2},
-        {"name":"율법사","role":"큰 계명을 물은 이","weight":2},
-        {"name":"가이사","role":"로마 황제","weight":1},
-        {"name":"다윗","role":"그리스도를 주라 부른 왕","weight":1}
+        {"name":"율법사","role":"큰 계명을 물은 이","weight":2}
       ],
       "rels": [
         {"from":"바리새인","to":"예수","label":"책잡으려 함","kind":"conflict","directed":true,"weight":3,"verses":"15-17","note":"바리새인들은 말을 잡아 고발하려고 칭찬하며 세금 문제를 물었어요. 예수님은 그들의 속셈을 아셨어요."},
         {"from":"사두개인","to":"예수","label":"부활로 시험","kind":"conflict","directed":true,"weight":2,"verses":"23-28","note":"사두개인은 율법책만 인정하고 부활을 부인했어요. 예수님은 율법의 출애굽기 말씀으로 부활을 가르치셨어요."},
         {"from":"율법사","to":"예수","label":"계명을 물음","kind":"other","directed":true,"weight":2,"verses":"35-36","note":"율법사는 예수님을 시험하려고 가장 큰 계명을 물었어요. 예수님은 신명기와 레위기의 말씀으로 답하셨어요."},
-        {"from":"바리새인","to":"헤롯 당원","label":"손잡은 이들","kind":"ally","directed":false,"weight":1,"verses":"16","note":"평소 서로 사이가 나쁜 두 무리가 예수님을 함정에 빠뜨리려고 손을 잡았어요. 세금 문제는 어느 쪽 대답도 위험했어요."},
-        {"from":"다윗","to":"예수","label":"주라 부름","kind":"other","directed":true,"weight":1,"verses":"43-45","note":"다윗은 시편 110편에서 그리스도를 내 주라 불렀어요. 예수님은 다윗의 자손이면서 다윗의 주이신 분이에요."}
+        {"from":"바리새인","to":"헤롯 당원","label":"손잡은 이들","kind":"ally","directed":false,"weight":1,"verses":"16","note":"평소 서로 사이가 나쁜 두 무리가 예수님을 함정에 빠뜨리려고 손을 잡았어요. 세금 문제는 어느 쪽 대답도 위험했어요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 성전 뜰","what":"논쟁이 오간 곳","weight":2}
@@ -708,14 +692,11 @@
         {"name":"예수","role":"외식을 책망하신 분","weight":3},
         {"name":"서기관과 바리새인","role":"외식하는 자들","weight":3},
         {"name":"무리","role":"말씀을 들은 이들","weight":1},
-        {"name":"제자들","role":"섬기라 들은 이들","weight":2},
-        {"name":"선지자들","role":"돌에 맞아 죽은 이들","weight":1},
-        {"name":"사가랴","role":"성전에서 죽은 선지자","weight":1}
+        {"name":"제자들","role":"섬기라 들은 이들","weight":2}
       ],
       "rels": [
         {"from":"예수","to":"서기관과 바리새인","label":"화를 선언함","kind":"conflict","directed":true,"weight":3,"verses":"13-29","note":"예수님은 율법을 가르치는 지도자들의 겉과 속이 다른 모습을 일곱 번 화로 꾸짖으셨어요. 그 가르침은 옳아도 행실은 달랐어요."},
-        {"from":"예수","to":"제자들","label":"가르치신 분","kind":"ally","directed":true,"weight":2,"verses":"8-12","note":"제자들에게는 선생이나 아버지 같은 칭호를 탐하지 말라 하셨어요. 서로 형제이고 가장 큰 사람은 섬기는 사람이에요."},
-        {"from":"서기관과 바리새인","to":"선지자들","label":"죽인 자의 자손","kind":"conflict","directed":true,"weight":2,"verses":"29-31","note":"선지자의 무덤을 꾸미면서도 같은 마음으로 새 선지자들을 해칠 사람들이라고 예수님이 지적하셨어요."}
+        {"from":"예수","to":"제자들","label":"가르치신 분","kind":"ally","directed":true,"weight":2,"verses":"8-12","note":"제자들에게는 선생이나 아버지 같은 칭호를 탐하지 말라 하셨어요. 서로 형제이고 가장 큰 사람은 섬기는 사람이에요."}
       ],
       "places": [
         {"name":"예루살렘","where":"유대의 중심 도시","what":"예수님이 선지자들을 죽인 성이라 탄식하신 곳이에요.","weight":3},
@@ -737,7 +718,6 @@
         {"name":"예수","role":"마지막 때를 가르치신 분","weight":3},
         {"name":"제자들","role":"징조를 물은 이들","weight":2},
         {"name":"거짓 그리스도","role":"미혹하는 자들","weight":2},
-        {"name":"노아","role":"홍수 때의 사람","weight":1},
         {"name":"충성된 종","role":"맡긴 일을 한 종","weight":2},
         {"name":"악한 종","role":"주인이 더디 온다 한 종","weight":1},
         {"name":"하나님","role":"그날을 아시는 아버지","weight":2}

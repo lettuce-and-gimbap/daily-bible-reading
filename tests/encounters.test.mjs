@@ -304,7 +304,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3803);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3797);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -339,12 +339,14 @@ test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 
  for(const entry of PAIR_DIALOGUE){
   const reverse=PAIR_DIALOGUE.find(other=>other.chapter===entry.chapter&&other.speaker===entry.target&&other.target===entry.speaker);
   assert.ok(reverse||entry.replyLines?.length>0,`${entry.id} (${entry.speaker} → ${entry.target})에 응답이 없음`);
-  for(const index of [0,1]){
+  const variants=Math.max(entry.lines?.length||0,entry.replyLines?.length||0,reverse?.lines?.length||0,reverse?.replyLines?.length||0);
+  for(let index=0;index<variants;index++){
    const relation={from:{code:entry.chapter.split('.')[0],chap:Number(entry.chapter.split('.')[1])},to:{},text:'같은 장면의 두 인물',ref:entry.ref};
-   const lines=relationshipLines({name:entry.speaker},{name:entry.target},relation,new Map(),{random:()=>index?0.99:0});
+   const lines=relationshipLines({name:entry.speaker},{name:entry.target},relation,new Map(),{random:()=>Math.min(.999,(index+.01)/variants)});
    assert.equal(lines.length,2,`${entry.id} 대사가 독백으로 분리됨`);
-   assert.equal(lines[0].text,entry.lines[index],`${entry.id} 첫 발화 후보가 맞지 않음`);
-   assert.equal(lines[1].text,reverse?.lines[index]||entry.replyLines?.[index]||entry.replyLines?.[0],`${entry.id} 응답 후보가 맞지 않음`);
+   assert.equal(lines[0].text,entry.lines[index]||entry.lines[0],`${entry.id} 첫 발화 후보가 맞지 않음`);
+   const expectedReply=reverse?(reverse.lines[index]||reverse.lines[0]):(entry.replyLines?.[index]||entry.replyLines?.[0]);
+   assert.equal(lines[1].text,expectedReply,`${entry.id} 응답 후보가 맞지 않음`);
    assert.ok(lines.every(line=>line.pairIndex===index));
   }
  }
