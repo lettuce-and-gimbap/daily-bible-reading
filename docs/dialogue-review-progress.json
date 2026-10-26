@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "col",
-    "nextBook": "1th",
-    "booksCompleted": 51,
+    "currentBook": "1th",
+    "nextBook": "2th",
+    "booksCompleted": 52,
     "completedBooks": [
       "gen",
       "exo",
@@ -348,10 +348,11 @@
       "gal",
       "eph",
       "php",
-      "col"
+      "col",
+      "1th"
     ],
-    "chaptersReviewed": 1115,
-    "relationshipLinksReviewed": 3691,
+    "chaptersReviewed": 1120,
+    "relationshipLinksReviewed": 3708,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -362,14 +363,14 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "골로새서 4장을 검토해 바울의 감사와 그리스도의 우월성, 새 사람의 삶, 기도와 동역자 인사를 담은 4묶음·8문장에 절별 참조를 붙였다. 철학에 대한 경계, 가정과 일터의 권면, 두기고·오네시모의 편지 전달을 확인하고 관계 연결 17개를 점검했다. 다음은 데살로니가전서다.",
+    "statusNote": "데살로니가전서 5장 전체의 바울 발화 5묶음·10문장을 개별 절 참조에 연결했다. 복음 전파와 동역, 디모데의 소식, 거룩한 삶, 주의 날을 기다리는 소망, 공동체를 향한 권면을 문맥에 맞게 정리하고 관계 연결 17개를 확인했다. 다음은 데살로니가후서다.",
     "partialBookAudit": {
-      "book": "col",
-      "chaptersScanned": 4,
-      "chaptersWithAuthoredDialogueReviewed": 4,
-      "authoredUtteranceGroupsReviewed": 4,
-      "utteranceReferencesCorrected": 8,
-      "chapterDialogueAudit": 4,
+      "book": "1th",
+      "chaptersScanned": 5,
+      "chaptersWithAuthoredDialogueReviewed": 5,
+      "authoredUtteranceGroupsReviewed": 5,
+      "utteranceReferencesCorrected": 10,
+      "chapterDialogueAudit": 5,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
       "relationshipEdgesAudited": 17,
@@ -385,9 +386,10 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
-      "statusNote": "골로새서 4장을 검토해 바울의 감사와 그리스도의 우월성, 새 사람의 삶, 기도와 동역자 인사를 담은 4묶음·8문장에 절별 참조를 붙였다. 철학에 대한 경계, 가정과 일터의 권면, 두기고·오네시모의 편지 전달을 확인하고 관계 연결 17개를 점검했다. 다음은 데살로니가전서다."
+      "statusNote": "데살로니가전서 5장 전체의 바울 발화 5묶음·10문장을 개별 절 참조에 연결했다. 복음 전파와 동역, 디모데의 소식, 거룩한 삶, 주의 날을 기다리는 소망, 공동체를 향한 권면을 문맥에 맞게 정리하고 관계 연결 17개를 확인했다. 다음은 데살로니가후서다."
     },
     "currentBookStatus": "complete"
   }
