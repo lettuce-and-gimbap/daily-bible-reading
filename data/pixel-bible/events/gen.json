@@ -2355,13 +2355,13 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"ascend","lead":"에녹","target":"므두셀라","mode":"illustration","setting":"water","effect":"whirlwind","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"에녹"},{"action":"lift","duration":1.2,"actor":"에녹"},{"action":"look","duration":1.5,"actor":"에녹"},{"action":"recoil","duration":1.8,"actor":"에녹"},{"action":"look","duration":1.5,"actor":"에녹"},{"action":"bow","duration":1.2,"actor":"에녹"}],"duration":8.2,"support":null,"ref":"창세기 5:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"에녹","target":"므두셀라","mode":"illustration","setting":"road","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"walk","actor":"에녹","duration":1},{"action":"look","actor":"에녹","duration":1.2},{"action":"walk","actor":"에녹","duration":1.5},{"action":"hold","actor":"에녹","duration":1.8},{"action":"look","actor":"에녹","duration":1.5},{"action":"stand","actor":"에녹","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 5:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-6-0",
       "code": "gen",
       "chapter": 6,
-      "title": "폭력으로 가득한 세상에서 노아가 은혜를 입다",
+      "title": "노아가 방주와 생명 보존의 지시를 받다",
       "actors": [
         "노아",
         "셈",
@@ -2369,16 +2369,8 @@
         "야벳"
       ],
       "object": "scene-marker",
-      "ref": "창세기 6:5-22",
+      "ref": "창세기 6:13-22",
       "verseNumbers": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
         13,
         14,
         15,
@@ -2392,13 +2384,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 세상의 폭력 가운데 노아가 은혜를 입고 가족과 생물을 위한 방주를 지으라는 지시를 받아요."
+        "해설: 노아는 방주의 재료와 구조, 가족과 생물의 보존과 양식 비축에 관한 지시를 받아요. 그는 명령받은 대로 따르며 홍수를 준비해요."
       ],
-      "study": "세상의 폭력 가운데 노아가 은혜를 입고 가족과 생물을 위한 방주를 지으라는 지시를 받아요.",
+      "study": "노아는 방주의 재료와 구조, 가족과 생물의 보존과 양식 비축에 관한 지시를 받아요. 그는 명령받은 대로 따르며 홍수를 준비해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"build","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"lift","duration":1.5,"actor":"노아"},{"action":"place","duration":1.8,"actor":"노아"},{"action":"hammer","duration":1.5,"actor":"노아"},{"action":"inspect","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:5-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"lift","duration":1.5,"actor":"노아"},{"action":"place","duration":1.8,"actor":"노아"},{"action":"hammer","duration":1.5,"actor":"노아"},{"action":"inspect","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:13-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-15-0",
@@ -3108,6 +3100,166 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"birth","lead":"하와","target":"아담","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"하와"},{"action":"listen","duration":1.2,"actor":"하와"},{"action":"cradle","duration":1.5,"actor":"하와"},{"action":"smile","duration":1.8,"actor":"하와"},{"action":"bless","duration":1.5,"actor":"하와"},{"action":"bow","duration":1.2,"actor":"하와"}],"duration":8.2,"support":null,"ref":"창세기 4:25-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-5-1",
+      "code": "gen",
+      "chapter": 5,
+      "title": "아담에서 야렛까지 이어지는 계보",
+      "actors": [
+        "아담",
+        "셋",
+        "에노스",
+        "야렛"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 5:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사람의 창조와 복을 되짚은 뒤 아담에서 셋의 후손들로 이어지는 계보를 전해요. 출생과 삶과 죽음이 반복되는 기록을 세대의 연결로 설명해요."
+      ],
+      "study": "사람의 창조와 복을 되짚은 뒤 아담에서 셋의 후손들로 이어지는 계보를 전해요. 출생과 삶과 죽음이 반복되는 기록을 세대의 연결로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"아담","target":"셋","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"아담"},{"action":"listen","duration":1.2,"actor":"아담"},{"action":"cradle","duration":1.5,"actor":"아담"},{"action":"smile","duration":1.8,"actor":"아담"},{"action":"bless","duration":1.5,"actor":"아담"},{"action":"bow","duration":1.2,"actor":"아담"}],"duration":8.2,"support":null,"ref":"창세기 5:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-5-2",
+      "code": "gen",
+      "chapter": 5,
+      "title": "므두셀라에서 라멕으로 이어지는 세대",
+      "actors": [
+        "므두셀라",
+        "라멕"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 5:25-27",
+      "verseNumbers": [
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 므두셀라의 생애와 라멕의 출생이 계보에 기록돼요. 긴 수명을 일상 행동으로 압축해 재현하지 않고 세대가 이어지는 설명으로 다뤄요."
+      ],
+      "study": "므두셀라의 생애와 라멕의 출생이 계보에 기록돼요. 긴 수명을 일상 행동으로 압축해 재현하지 않고 세대가 이어지는 설명으로 다뤄요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"므두셀라","target":"라멕","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"므두셀라"},{"action":"listen","duration":1.2,"actor":"므두셀라"},{"action":"cradle","duration":1.5,"actor":"므두셀라"},{"action":"smile","duration":1.8,"actor":"므두셀라"},{"action":"bless","duration":1.5,"actor":"므두셀라"},{"action":"bow","duration":1.2,"actor":"므두셀라"}],"duration":8.2,"support":null,"ref":"창세기 5:25-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-5-3",
+      "code": "gen",
+      "chapter": 5,
+      "title": "노아의 이름에 위로를 기대하다",
+      "actors": [
+        "라멕",
+        "노아",
+        "셈",
+        "함"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 5:28-32",
+      "verseNumbers": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 라멕은 땅에서 수고하는 이들에게 위로를 기대하며 아들의 이름을 노아라고 지어요. 계보는 노아와 그의 아들들의 등장으로 이어져요."
+      ],
+      "study": "라멕은 땅에서 수고하는 이들에게 위로를 기대하며 아들의 이름을 노아라고 지어요. 계보는 노아와 그의 아들들의 등장으로 이어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"birth","lead":"라멕","target":"노아","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"라멕"},{"action":"listen","duration":1.2,"actor":"라멕"},{"action":"cradle","duration":1.5,"actor":"라멕"},{"action":"smile","duration":1.8,"actor":"라멕"},{"action":"bless","duration":1.5,"actor":"라멕"},{"action":"bow","duration":1.2,"actor":"라멕"}],"duration":8.2,"support":null,"ref":"창세기 5:28-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-6-1",
+      "code": "gen",
+      "chapter": 6,
+      "title": "사람의 번성과 네피림에 관한 기록",
+      "actors": [
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 6:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사람이 번성하고 혼인과 네피림에 관한 기록이 이어져요. 하나님의 아들들의 정체와 120년의 의미에는 해석 차이가 있어, 특정 존재의 외형이나 혼인 장면을 단정해 재현하지 않아요."
+      ],
+      "study": "사람이 번성하고 혼인과 네피림에 관한 기록이 이어져요. 하나님의 아들들의 정체와 120년의 의미에는 해석 차이가 있어, 특정 존재의 외형이나 혼인 장면을 단정해 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"하나님","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"read","duration":1.2,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 6:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-6-2",
+      "code": "gen",
+      "chapter": 6,
+      "title": "폭력의 세상에서 노아가 은혜를 입다",
+      "actors": [
+        "노아",
+        "셈",
+        "함",
+        "야벳"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 6:5-12",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사람의 악과 폭력이 가득한 현실이 기록되는 가운데 노아는 은혜를 입어요. 하나님과 동행한 노아와 세 아들이 소개되고 세상의 부패가 거듭 지적돼요."
+      ],
+      "study": "사람의 악과 폭력이 가득한 현실이 기록되는 가운데 노아는 은혜를 입어요. 하나님과 동행한 노아와 세 아들이 소개되고 세상의 부패가 거듭 지적돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"셈","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:5-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

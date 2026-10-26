@@ -825,10 +825,45 @@
       "mode": "illustration"
     },
     "76": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "setting": "road",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "에녹",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "에녹",
+          "duration": 1.2
+        },
+        {
+          "action": "walk",
+          "actor": "에녹",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "에녹",
+          "duration": 1.8
+        },
+        {
+          "action": "look",
+          "actor": "에녹",
+          "duration": 1.5
+        },
+        {
+          "action": "stand",
+          "actor": "에녹",
+          "duration": 1.2
+        }
+      ]
     },
     "77": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "ref": "창세기 6:13-22"
     },
     "78": {
       "mode": "illustration"
@@ -1222,6 +1257,21 @@
       "mode": "illustration"
     },
     "98": {
+      "mode": "illustration"
+    },
+    "99": {
+      "mode": "illustration"
+    },
+    "100": {
+      "mode": "illustration"
+    },
+    "101": {
+      "mode": "illustration"
+    },
+    "102": {
+      "mode": "illustration"
+    },
+    "103": {
       "mode": "illustration"
     }
   },
