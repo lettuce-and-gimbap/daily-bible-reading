@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1923,
+    "scenesInFiles": 1925,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 1208
+    "curatedSupplementalScenes": 1210
   },
   "books": [
     {
@@ -146,10 +146,10 @@
     {
       "code": "ezr",
       "chapters": 10,
-      "scenes": 26,
+      "scenes": 28,
       "sourceMatchedSceneCandidates": 13,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 13
+      "curatedSupplementalScenes": 15
     },
     {
       "code": "neh",
@@ -12345,7 +12345,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "source-confirmed-actor-and-object": 2,
         "source-confirmed-object-only": 2
@@ -12477,7 +12477,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "no-source-confirmed-actor-or-object": 2,
         "source-confirmed-actor-and-object": 1,
@@ -28606,6 +28606,10 @@
       {
         "book": "2ch",
         "scenesAdded": 15
+      },
+      {
+        "book": "ezr",
+        "scenesAdded": 2
       }
     ]
   }

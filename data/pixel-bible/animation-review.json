@@ -368,17 +368,28 @@
     },
     {
       "code": "ezr",
-      "payloadSha256": "9b67d71532061b6672710561948f021c1e54d1cebfa144bd2d28c5489e80cf00",
-      "scenes": 26,
-      "existing": 26,
+      "payloadSha256": "9bd83da1f7601aea55637f62fb38692ab11a491b8a14f2b9829eb8e3d9c08519",
+      "scenes": 28,
+      "existing": 28,
       "restored": 0,
       "corrected": 4,
-      "planned": 26,
+      "planned": 28,
       "modes": {
-        "reconstruction": 25,
-        "illustration": 1
+        "reconstruction": 26,
+        "illustration": 2
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 28,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "neh",

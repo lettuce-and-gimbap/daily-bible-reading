@@ -884,6 +884,69 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"warning","lead":"다리오","target":"닷드내","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다리오"},{"action":"turn","duration":1.2,"actor":"다리오"},{"action":"speak","duration":1.5,"actor":"다리오"},{"action":"point","duration":1.8,"actor":"다리오"},{"action":"listen","duration":1.5,"actor":"다리오"},{"action":"lower","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezr-review-01",
+      "code": "ezr",
+      "chapter": 3,
+      "title": "성전 일꾼과 자재를 마련하다",
+      "actors": [
+        "스룹바벨",
+        "예수아",
+        "레위인들"
+      ],
+      "object": "stone",
+      "ref": "에스라 3:7-9",
+      "verseNumbers": [
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 돌과 나무를 다룰 일꾼을 세우고, 스룹바벨과 예수아가 레위 사람들에게 성전 건축의 일을 맡겨요."
+      ],
+      "study": "돌과 나무를 다룰 일꾼을 세우고, 스룹바벨과 예수아가 레위 사람들에게 성전 건축의 일을 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "계보는 상징적으로, 성전 준비는 본문에 적힌 역할 분담으로 표현해요. 구체적인 자세와 시간은 연출이에요.",
+      "animation": {"version":2,"motif":"build","lead":"스룹바벨","target":"예수아","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"stone","beats":[{"action":"inspect","duration":1,"actor":"스룹바벨"},{"action":"gather","duration":1.2,"actor":"스룹바벨"},{"action":"lift","duration":1.5,"actor":"스룹바벨"},{"action":"place","duration":1.8,"actor":"스룹바벨"},{"action":"hammer","duration":1.5,"actor":"스룹바벨"},{"action":"inspect","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"에스라 3:7-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezr-review-02",
+      "code": "ezr",
+      "chapter": 8,
+      "title": "에스라와 함께 돌아온 집안의 계보",
+      "actors": [
+        "에스라"
+      ],
+      "object": "book",
+      "ref": "에스라 8:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에스라와 함께 바빌론에서 돌아온 집안별 지도자와 동행 인원을 계보 순서로 기록해요."
+      ],
+      "study": "에스라와 함께 바빌론에서 돌아온 집안별 지도자와 동행 인원을 계보 순서로 기록해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "계보는 상징적으로, 성전 준비는 본문에 적힌 역할 분담으로 표현해요. 구체적인 자세와 시간은 연출이에요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"에스라","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"book","beats":[{"action":"look","duration":1,"actor":"에스라"},{"action":"listen","duration":1.2,"actor":"에스라"},{"action":"cradle","duration":1.5,"actor":"에스라"},{"action":"smile","duration":1.8,"actor":"에스라"},{"action":"bless","duration":1.5,"actor":"에스라"},{"action":"bow","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 8:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
