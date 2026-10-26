@@ -7912,6 +7912,240 @@
     },
     "45": {
       "mode": "reconstruction"
+    },
+    "46": {
+      "mode": "instruction"
+    },
+    "47": {
+      "mode": "instruction"
+    },
+    "48": {
+      "mode": "instruction"
+    },
+    "49": {
+      "mode": "instruction"
+    },
+    "50": {
+      "mode": "instruction"
+    },
+    "51": {
+      "mode": "instruction"
+    },
+    "52": {
+      "mode": "instruction"
+    },
+    "53": {
+      "mode": "instruction"
+    },
+    "54": {
+      "mode": "instruction"
+    },
+    "55": {
+      "mode": "instruction"
+    },
+    "56": {
+      "mode": "instruction"
+    },
+    "57": {
+      "mode": "instruction"
+    },
+    "58": {
+      "mode": "instruction"
+    },
+    "59": {
+      "mode": "instruction"
+    },
+    "60": {
+      "mode": "instruction"
+    },
+    "61": {
+      "mode": "instruction"
+    },
+    "62": {
+      "mode": "instruction"
+    },
+    "63": {
+      "mode": "instruction"
+    },
+    "64": {
+      "mode": "instruction"
+    },
+    "65": {
+      "mode": "instruction"
+    },
+    "66": {
+      "mode": "instruction"
+    },
+    "67": {
+      "mode": "instruction"
+    },
+    "68": {
+      "mode": "instruction"
+    },
+    "69": {
+      "mode": "instruction"
+    },
+    "70": {
+      "mode": "instruction"
+    },
+    "71": {
+      "mode": "reconstruction"
+    },
+    "72": {
+      "mode": "reconstruction"
+    },
+    "73": {
+      "mode": "reconstruction"
+    },
+    "74": {
+      "mode": "reconstruction"
+    },
+    "75": {
+      "mode": "reconstruction"
+    },
+    "76": {
+      "mode": "reconstruction"
+    },
+    "77": {
+      "mode": "reconstruction"
+    },
+    "78": {
+      "mode": "instruction"
+    },
+    "79": {
+      "mode": "instruction"
+    },
+    "80": {
+      "mode": "instruction"
+    },
+    "81": {
+      "mode": "reconstruction"
+    },
+    "82": {
+      "mode": "instruction"
+    },
+    "83": {
+      "mode": "instruction"
+    },
+    "84": {
+      "mode": "instruction"
+    },
+    "85": {
+      "mode": "instruction"
+    },
+    "86": {
+      "mode": "instruction"
+    },
+    "87": {
+      "mode": "instruction"
+    },
+    "88": {
+      "mode": "reconstruction"
+    },
+    "89": {
+      "mode": "reconstruction"
+    },
+    "90": {
+      "mode": "reconstruction"
+    },
+    "91": {
+      "mode": "reconstruction"
+    },
+    "92": {
+      "mode": "reconstruction"
+    },
+    "93": {
+      "mode": "reconstruction"
+    },
+    "94": {
+      "mode": "reconstruction"
+    },
+    "95": {
+      "mode": "reconstruction"
+    },
+    "96": {
+      "mode": "reconstruction"
+    },
+    "97": {
+      "mode": "reconstruction"
+    },
+    "98": {
+      "mode": "reconstruction"
+    },
+    "99": {
+      "mode": "reconstruction"
+    },
+    "100": {
+      "mode": "reconstruction"
+    },
+    "101": {
+      "mode": "reconstruction"
+    },
+    "102": {
+      "mode": "instruction"
+    },
+    "103": {
+      "mode": "instruction"
+    },
+    "104": {
+      "mode": "instruction"
+    },
+    "105": {
+      "mode": "instruction"
+    },
+    "106": {
+      "mode": "instruction"
+    },
+    "107": {
+      "mode": "instruction"
+    },
+    "108": {
+      "mode": "instruction"
+    },
+    "109": {
+      "mode": "instruction"
+    },
+    "110": {
+      "mode": "instruction"
+    },
+    "111": {
+      "mode": "instruction"
+    },
+    "112": {
+      "mode": "instruction"
+    },
+    "113": {
+      "mode": "instruction"
+    },
+    "114": {
+      "mode": "instruction"
+    },
+    "115": {
+      "mode": "instruction"
+    },
+    "116": {
+      "mode": "reconstruction"
+    },
+    "117": {
+      "mode": "reconstruction"
+    },
+    "118": {
+      "mode": "reconstruction"
+    },
+    "119": {
+      "mode": "instruction"
+    },
+    "120": {
+      "mode": "instruction"
+    },
+    "121": {
+      "mode": "instruction"
+    },
+    "122": {
+      "mode": "instruction"
+    },
+    "123": {
+      "mode": "reconstruction"
     }
   },
   "2sa": {

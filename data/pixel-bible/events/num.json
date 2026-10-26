@@ -1655,6 +1655,2438 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"lament","lead":"이스라엘 자손","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"},{"action":"kneel","duration":1.5,"actor":"이스라엘 자손"},{"action":"cover-mouth","duration":1.8,"actor":"이스라엘 자손"},{"action":"mourn","duration":1.5,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 14:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-1-01",
+      "code": "num",
+      "chapter": 1,
+      "title": "인구를 세라",
+      "actors": [
+        "모세",
+        "아론"
+      ],
+      "object": "scroll",
+      "ref": "민수기 1:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 애굽을 떠난 지 둘째 해에 하나님이 싸움에 나갈 스무 살 이상 남자를 세라 하세요. 지파마다 족장 한 사람씩 세워 모세와 아론을 돕게 해요."
+      ],
+      "study": "애굽을 떠난 지 둘째 해에 하나님이 싸움에 나갈 스무 살 이상 남자를 세라 하세요. 지파마다 족장 한 사람씩 세워 모세와 아론을 돕게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"weigh","lead":"모세","target":"아론","mode":"instruction","setting":"court","effect":"coins","emotion":"neutral","prop":"scroll","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"weigh","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"receive","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 1:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-1-02",
+      "code": "num",
+      "chapter": 1,
+      "title": "지파별 숫자",
+      "actors": [
+        "모세"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 1:17-46",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열두 지파를 차례로 세니 유다 지파가 가장 많았고 모두 육십만 삼천오백오십 명이었어요."
+      ],
+      "study": "열두 지파를 차례로 세니 유다 지파가 가장 많았고 모두 육십만 삼천오백오십 명이었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"weigh","lead":"모세","target":null,"mode":"instruction","setting":"court","effect":"coins","emotion":"neutral","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"weigh","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"receive","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 1:17-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-2-01",
+      "code": "num",
+      "chapter": 2,
+      "title": "동쪽과 남쪽 진영",
+      "actors": [
+        "모세"
+      ],
+      "object": "tent",
+      "ref": "민수기 2:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 동쪽에는 유다·잇사갈·스불론, 남쪽에는 르우벤·시므온·갓이 깃발 아래 진을 쳐요. 길을 떠날 때 유다 진영이 맨 먼저 나가요. 유다 진영은 186,400명으로 가장 컸어요."
+      ],
+      "study": "동쪽에는 유다·잇사갈·스불론, 남쪽에는 르우벤·시므온·갓이 깃발 아래 진을 쳐요. 길을 떠날 때 유다 진영이 맨 먼저 나가요. 유다 진영은 186,400명으로 가장 컸어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 2:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-2-02",
+      "code": "num",
+      "chapter": 2,
+      "title": "가운데의 성막",
+      "actors": [
+        "모세"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 2:17",
+      "verseNumbers": [
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인과 회막은 모든 진영의 한가운데서 함께 움직여요. 백성 가운데 계신 하나님의 자리를 나타내는 것으로 읽어요. 레위인이 회막을 메고 진영 사이에서 행진했어요."
+      ],
+      "study": "레위인과 회막은 모든 진영의 한가운데서 함께 움직여요. 백성 가운데 계신 하나님의 자리를 나타내는 것으로 읽어요. 레위인이 회막을 메고 진영 사이에서 행진했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"arrange","lead":"모세","target":null,"mode":"instruction","setting":"altar","effect":"arrange","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"inspect","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 2:17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-2-03",
+      "code": "num",
+      "chapter": 2,
+      "title": "서쪽과 북쪽 진영",
+      "actors": [
+        "모세"
+      ],
+      "object": "tent",
+      "ref": "민수기 2:18-34",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 서쪽에는 에브라임·므낫세·베냐민, 북쪽에는 단·아셀·납달리가 진을 쳐요. 이스라엘은 명령하신 그대로 진을 치고 행진했어요. 단 진영이 맨 뒤에 따라가요."
+      ],
+      "study": "서쪽에는 에브라임·므낫세·베냐민, 북쪽에는 단·아셀·납달리가 진을 쳐요. 이스라엘은 명령하신 그대로 진을 치고 행진했어요. 단 진영이 맨 뒤에 따라가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 2:18-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-3-01",
+      "code": "num",
+      "chapter": 3,
+      "title": "아론을 돕는 레위인",
+      "actors": [
+        "아론",
+        "레위 지파"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 3:5-13",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인이 제사장을 돕고 회막을 맡아요. 애굽에서 살려 두신 맏아들은 하나님의 것인데, 레위인이 그들을 대신해 하나님께 바쳐져요."
+      ],
+      "study": "레위인이 제사장을 돕고 회막을 맡아요. 애굽에서 살려 두신 맏아들은 하나님의 것인데, 레위인이 그들을 대신해 하나님께 바쳐져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"serve","lead":"아론","target":"레위 지파","mode":"instruction","setting":"altar","effect":"arrange","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"아론"},{"action":"grasp","duration":1.2,"actor":"아론"},{"action":"carry","duration":1.5,"actor":"아론"},{"action":"place","duration":1.8,"actor":"아론"},{"action":"inspect","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"민수기 3:5-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-3-02",
+      "code": "num",
+      "chapter": 3,
+      "title": "레위 가문별 계수",
+      "actors": [
+        "레위 지파"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 3:14-39",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 게르손·고핫·므라리 가문의 남자를 세고 진 칠 곳과 맡을 일을 정해요. 고핫 자손은 법궤처럼 가장 거룩한 기구를 맡아요. 게르손은 서쪽, 므라리는 북쪽에 진을 쳐요."
+      ],
+      "study": "게르손·고핫·므라리 가문의 남자를 세고 진 칠 곳과 맡을 일을 정해요. 고핫 자손은 법궤처럼 가장 거룩한 기구를 맡아요. 게르손은 서쪽, 므라리는 북쪽에 진을 쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"inventory","lead":"레위 지파","target":null,"mode":"instruction","setting":"store","effect":"stack","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"레위 지파"},{"action":"gather","duration":1.2,"actor":"레위 지파"},{"action":"carry","duration":1.5,"actor":"레위 지파"},{"action":"place","duration":1.8,"actor":"레위 지파"},{"action":"count","duration":1.5,"actor":"레위 지파"},{"action":"stand","duration":1.2,"actor":"레위 지파"}],"duration":8.2,"support":null,"ref":"민수기 3:14-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-3-03",
+      "code": "num",
+      "chapter": 3,
+      "title": "처음 난 자의 속전",
+      "actors": [
+        "모세",
+        "아론"
+      ],
+      "object": "silver",
+      "ref": "민수기 3:40-51",
+      "verseNumbers": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이스라엘의 맏아들이 레위인보다 이백칠십삼 명 많아서 한 사람에 다섯 세겔씩 값을 내고 무르게 해요. 그 돈은 아론과 그의 아들들에게 주었어요."
+      ],
+      "study": "이스라엘의 맏아들이 레위인보다 이백칠십삼 명 많아서 한 사람에 다섯 세겔씩 값을 내고 무르게 해요. 그 돈은 아론과 그의 아들들에게 주었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"weigh","lead":"모세","target":"아론","mode":"instruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"weigh","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"receive","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 3:40-51","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-4-01",
+      "code": "num",
+      "chapter": 4,
+      "title": "고핫 자손의 일",
+      "actors": [
+        "고핫 자손",
+        "엘르아살"
+      ],
+      "object": "ark-covenant",
+      "ref": "민수기 4:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제사장들이 먼저 법궤와 거룩한 기구들을 덮개로 싸면 고핫 자손이 메고 가요. 거룩한 것을 만지거나 들여다보면 죽으니 조심해야 했어요."
+      ],
+      "study": "제사장들이 먼저 법궤와 거룩한 기구들을 덮개로 싸면 고핫 자손이 메고 가요. 거룩한 것을 만지거나 들여다보면 죽으니 조심해야 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"carry","lead":"고핫 자손","target":"엘르아살","mode":"instruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"grasp","duration":1,"actor":"고핫 자손"},{"action":"lift","duration":1.2,"actor":"고핫 자손"},{"action":"brace","duration":1.5,"actor":"고핫 자손"},{"action":"carry","duration":1.8,"actor":"고핫 자손"},{"action":"walk","duration":1.5,"actor":"고핫 자손"},{"action":"lower","duration":1.2,"actor":"고핫 자손"}],"duration":8.2,"support":null,"ref":"민수기 4:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-4-02",
+      "code": "num",
+      "chapter": 4,
+      "title": "일할 사람의 수",
+      "actors": [
+        "모세"
+      ],
+      "object": "ark-covenant",
+      "ref": "민수기 4:34-49",
+      "verseNumbers": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 서른 살부터 쉰 살까지 일할 사람을 세니 고핫 자손 2,750명, 게르손 자손 2,630명, 므라리 자손 3,200명, 모두 8,580명이에요."
+      ],
+      "study": "서른 살부터 쉰 살까지 일할 사람을 세니 고핫 자손 2,750명, 게르손 자손 2,630명, 므라리 자손 3,200명, 모두 8,580명이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"inventory","lead":"모세","target":null,"mode":"instruction","setting":"store","effect":"stack","emotion":"determined","prop":"ark-covenant","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"count","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 4:34-49","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-5-01",
+      "code": "num",
+      "chapter": 5,
+      "title": "진을 정결하게",
+      "actors": [
+        "모세"
+      ],
+      "object": "water-supply",
+      "ref": "민수기 5:1-4",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 악성 피부병 환자, 유출병 있는 사람, 시신에 닿은 사람을 진 밖에 두어요. 거룩하신 하나님이 함께 계시는 진을 더럽히지 않으려는 거예요. 남자든 여자든 똑같았어요."
+      ],
+      "study": "악성 피부병 환자, 유출병 있는 사람, 시신에 닿은 사람을 진 밖에 두어요. 거룩하신 하나님이 함께 계시는 진을 더럽히지 않으려는 거예요. 남자든 여자든 똑같았어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cleanse","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"touch","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 5:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-5-02",
+      "code": "num",
+      "chapter": 5,
+      "title": "갚아야 할 손해",
+      "actors": [
+        "제사장"
+      ],
+      "object": "silver",
+      "ref": "민수기 5:5-10",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이웃에게 손해를 끼친 사람은 잘못을 인정하고 오분의 일을 더해 갚아요. 갚을 친척이 없으면 그 몫은 제사장에게 돌아가요. 이웃에게 지은 죄는 하나님께 지은 죄이기도 했어요."
+      ],
+      "study": "이웃에게 손해를 끼친 사람은 잘못을 인정하고 오분의 일을 더해 갚아요. 갚을 친척이 없으면 그 몫은 제사장에게 돌아가요. 이웃에게 지은 죄는 하나님께 지은 죄이기도 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"weigh","lead":"제사장","target":null,"mode":"instruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"제사장"},{"action":"grasp","duration":1.2,"actor":"제사장"},{"action":"weigh","duration":1.5,"actor":"제사장"},{"action":"place","duration":1.8,"actor":"제사장"},{"action":"extend","duration":1.5,"actor":"제사장"},{"action":"receive","duration":1.2,"actor":"제사장"}],"duration":8.2,"support":null,"ref":"민수기 5:5-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-6-01",
+      "code": "num",
+      "chapter": 6,
+      "title": "나실인의 서원",
+      "actors": [
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 6:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나실인은 서원한 동안 포도로 만든 건 아무것도 먹지 않고, 머리를 깎지 않으며, 가족이 죽어도 시신에 가까이 가지 않아요. 하나님께 온전히 바쳐진 표시예요."
+      ],
+      "study": "나실인은 서원한 동안 포도로 만든 건 아무것도 먹지 않고, 머리를 깎지 않으며, 가족이 죽어도 시신에 가까이 가지 않아요. 하나님께 온전히 바쳐진 표시예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-6-02",
+      "code": "num",
+      "chapter": 6,
+      "title": "부정해졌을 때",
+      "actors": [
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 6:9-12",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 곁에서 누가 갑자기 죽어 몸이 부정해지면 머리를 밀고 제물을 드려요. 그동안 지킨 날은 없어지고 서원 기간을 처음부터 다시 해요."
+      ],
+      "study": "곁에서 누가 갑자기 죽어 몸이 부정해지면 머리를 밀고 제물을 드려요. 그동안 지킨 날은 없어지고 서원 기간을 처음부터 다시 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cleanse","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"touch","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 6:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-6-03",
+      "code": "num",
+      "chapter": 6,
+      "title": "서원을 마칠 때",
+      "actors": [
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 6:13-21",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 서원 기간이 차면 여러 제물을 드리고 길렀던 머리털을 밀어 화목제물 아래 불에 태워요. 자기 자신을 하나님께 온전히 드린다는 뜻이에요."
+      ],
+      "study": "서원 기간이 차면 여러 제물을 드리고 길렀던 머리털을 밀어 화목제물 아래 불에 태워요. 자기 자신을 하나님께 온전히 드린다는 뜻이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"dedicate","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"release","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 6:13-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-7-01",
+      "code": "num",
+      "chapter": 7,
+      "title": "수레와 소",
+      "actors": [
+        "모세"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 7:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 족장들이 수레 여섯 대와 소 열두 마리를 드려 게르손·므라리 자손이 성막을 옮기게 해요. 고핫 자손은 거룩한 기구를 어깨에 메야 해서 받지 않아요."
+      ],
+      "study": "족장들이 수레 여섯 대와 소 열두 마리를 드려 게르손·므라리 자손이 성막을 옮기게 해요. 고핫 자손은 거룩한 기구를 어깨에 메야 해서 받지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"carry","lead":"모세","target":null,"mode":"instruction","setting":"road","effect":"journey","emotion":"determined","prop":"tabernacle","beats":[{"action":"grasp","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"brace","duration":1.5,"actor":"모세"},{"action":"carry","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 7:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-7-02",
+      "code": "num",
+      "chapter": 7,
+      "title": "예물의 합계",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 7:84-88",
+      "verseNumbers": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열두 지파가 드린 은 쟁반과 은 대접, 금 그릇과 제물로 바친 짐승들을 모두 합해요."
+      ],
+      "study": "열두 지파가 드린 은 쟁반과 은 대접, 금 그릇과 제물로 바친 짐승들을 모두 합해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"inventory","lead":"모세","target":null,"mode":"instruction","setting":"store","effect":"stack","emotion":"determined","prop":"altar","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"count","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 7:84-88","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-7-03",
+      "code": "num",
+      "chapter": 7,
+      "title": "속죄소 위의 음성",
+      "actors": [
+        "모세"
+      ],
+      "object": "ark-covenant",
+      "ref": "민수기 7:89",
+      "verseNumbers": [
+        89
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 하나님과 말하려고 회막에 들어가자 증거궤 위 속죄소의 두 그룹 사이에서 말씀하시는 음성이 들려요. 하나님이 응답하셨어요."
+      ],
+      "study": "모세가 하나님과 말하려고 회막에 들어가자 증거궤 위 속죄소의 두 그룹 사이에서 말씀하시는 음성이 들려요. 하나님이 응답하셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"listen","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"ark-covenant","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 7:89","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-8-01",
+      "code": "num",
+      "chapter": 8,
+      "title": "레위인의 정결",
+      "actors": [
+        "모세"
+      ],
+      "object": "water-supply",
+      "ref": "민수기 8:5-14",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 죄를 씻는 물을 뿌리고 온몸의 털을 밀고 옷을 빨아 레위인을 깨끗하게 해요. 온 회중이 레위인에게 손을 얹어 자기들을 대신하게 해요."
+      ],
+      "study": "죄를 씻는 물을 뿌리고 온몸의 털을 밀고 옷을 빨아 레위인을 깨끗하게 해요. 온 회중이 레위인에게 손을 얹어 자기들을 대신하게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cleanse","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"touch","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 8:5-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-8-02",
+      "code": "num",
+      "chapter": 8,
+      "title": "처음 난 자 대신",
+      "actors": [
+        "아론",
+        "레위 지파"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 8:15-22",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아론이 레위인을 흔들어 바치는 제물처럼 드려요. 맏아들 대신 하나님의 것이 된 레위인은 백성이 재앙을 당하지 않게 회막을 지켜요."
+      ],
+      "study": "아론이 레위인을 흔들어 바치는 제물처럼 드려요. 맏아들 대신 하나님의 것이 된 레위인은 백성이 재앙을 당하지 않게 회막을 지켜요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"dedicate","lead":"아론","target":"레위 지파","mode":"instruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"아론"},{"action":"gather","duration":1.2,"actor":"아론"},{"action":"lift","duration":1.5,"actor":"아론"},{"action":"extend","duration":1.8,"actor":"아론"},{"action":"release","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"민수기 8:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-8-03",
+      "code": "num",
+      "chapter": 8,
+      "title": "섬기는 나이",
+      "actors": [
+        "모세"
+      ],
+      "object": "tabernacle",
+      "ref": "민수기 8:23-26",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인은 스물다섯 살부터 쉰 살까지 회막에서 일해요. 그 뒤에는 무거운 일에서 물러나 다른 레위인이 일하는 걸 도와요."
+      ],
+      "study": "레위인은 스물다섯 살부터 쉰 살까지 회막에서 일해요. 그 뒤에는 무거운 일에서 물러나 다른 레위인이 일하는 걸 도와요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tabernacle","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 8:23-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-9-01",
+      "code": "num",
+      "chapter": 9,
+      "title": "구름을 따라",
+      "actors": [
+        "모세"
+      ],
+      "object": "cloud",
+      "ref": "민수기 9:15-23",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 구름이 떠오르면 행진하고, 머물면 이틀이든 한 달이든 일 년이든 머물러요. 밤에는 구름이 불처럼 보였고 모든 걸음이 하나님 명령을 따랐어요."
+      ],
+      "study": "구름이 떠오르면 행진하고, 머물면 이틀이든 한 달이든 일 년이든 머물러요. 밤에는 구름이 불처럼 보였고 모든 걸음이 하나님 명령을 따랐어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cloud","lead":"모세","target":null,"mode":"instruction","setting":"hills","effect":"cloud","emotion":"surprised","prop":"cloud","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 9:15-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-10-01",
+      "code": "num",
+      "chapter": 10,
+      "title": "은 나팔",
+      "actors": [
+        "모세"
+      ],
+      "object": "trumpet",
+      "ref": "민수기 10:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 은 나팔 두 개로 회중이나 족장들을 모으고 진영의 출발을 알려요. 싸우러 나갈 때와 절기에도 불어 하나님이 백성을 기억하시게 했어요."
+      ],
+      "study": "은 나팔 두 개로 회중이나 족장들을 모으고 진영의 출발을 알려요. 싸우러 나갈 때와 절기에도 불어 하나님이 백성을 기억하시게 했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"trumpet","lead":"모세","target":null,"mode":"instruction","setting":"wall","effect":"music","emotion":"determined","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"blow","duration":1.5,"actor":"모세"},{"action":"hold","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 10:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-10-02",
+      "code": "num",
+      "chapter": 10,
+      "title": "시내 광야를 떠남",
+      "actors": [
+        "모세"
+      ],
+      "object": "ark-covenant",
+      "ref": "민수기 10:11-28",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 둘째 해 둘째 달 이십 일, 구름이 떠오르자 처음으로 시내 광야를 떠나요. 유다 진영부터 정한 순서대로 바란 광야를 향해 행진해요."
+      ],
+      "study": "둘째 해 둘째 달 이십 일, 구름이 떠오르자 처음으로 시내 광야를 떠나요. 유다 진영부터 정한 순서대로 바란 광야를 향해 행진해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":null,"mode":"instruction","setting":"road","effect":"journey","emotion":"determined","prop":"ark-covenant","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 10:11-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-10-03",
+      "code": "num",
+      "chapter": 10,
+      "title": "호밥에게 부탁",
+      "actors": [
+        "모세",
+        "호밥"
+      ],
+      "object": "tent",
+      "ref": "민수기 10:29-32",
+      "verseNumbers": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 처남 호밥에게 광야 길을 잘 아니 함께 가서 눈이 되어 달라고 부탁해요. 하나님이 주시는 복을 함께 나누겠다고 약속해요."
+      ],
+      "study": "모세가 처남 호밥에게 광야 길을 잘 아니 함께 가서 눈이 되어 달라고 부탁해요. 하나님이 주시는 복을 함께 나누겠다고 약속해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"welcome","lead":"모세","target":"호밥","mode":"instruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"bow","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"sit","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 10:29-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-11-01",
+      "code": "num",
+      "chapter": 11,
+      "title": "칠십 장로",
+      "actors": [
+        "모세",
+        "여호수아"
+      ],
+      "object": "staff",
+      "ref": "민수기 11:16-30",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 장로 칠십 명에게 모세의 영을 나누어 함께 짐을 지게 하세요. 그들이 예언했고 진에 남아 있던 엘닷과 메닷도 예언했어요."
+      ],
+      "study": "하나님이 장로 칠십 명에게 모세의 영을 나누어 함께 짐을 지게 하세요. 그들이 예언했고 진에 남아 있던 엘닷과 메닷도 예언했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"모세","target":"여호수아","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"staff","beats":[{"action":"bow","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"receive","duration":1.5,"actor":"모세"},{"action":"wear","duration":1.8,"actor":"모세"},{"action":"rise","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 11:16-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-11-02",
+      "code": "num",
+      "chapter": 11,
+      "title": "메추라기와 재앙",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "quail",
+      "ref": "민수기 11:31-35",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바람이 메추라기를 몰아와 진 둘레에 가득 내려요. 고기가 씹히기도 전에 재앙이 내렸고, 그곳은 '탐욕의 무덤'이 되었어요."
+      ],
+      "study": "바람이 메추라기를 몰아와 진 둘레에 가득 내려요. 고기가 씹히기도 전에 재앙이 내렸고, 그곳은 '탐욕의 무덤'이 되었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"feed-many","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"pasture","effect":"feed-many","emotion":"joy","prop":"quail","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"bless","duration":1.5,"actor":"모세"},{"action":"cut","duration":1.8,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 11:31-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-12-01",
+      "code": "num",
+      "chapter": 12,
+      "title": "모세를 비방함",
+      "actors": [
+        "미리암",
+        "아론",
+        "모세"
+      ],
+      "object": "cloud",
+      "ref": "민수기 12:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 구스 여인 문제를 꼬투리 삼아 모세를 비방해요. 지도자 자리를 시샘한 것으로 읽는 견해가 많아요."
+      ],
+      "study": "구스 여인 문제를 꼬투리 삼아 모세를 비방해요. 지도자 자리를 시샘한 것으로 읽는 견해가 많아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"미리암","target":"아론","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"cloud","beats":[{"action":"listen","duration":1,"actor":"미리암"},{"action":"turn","duration":1.2,"actor":"미리암"},{"action":"point","duration":1.5,"actor":"미리암"},{"action":"point","duration":1.8,"actor":"미리암"},{"action":"listen","duration":1.5,"actor":"미리암"},{"action":"lower","duration":1.2,"actor":"미리암"}],"duration":8.2,"support":null,"ref":"민수기 12:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-12-02",
+      "code": "num",
+      "chapter": 12,
+      "title": "모세를 변호하심",
+      "actors": [
+        "모세",
+        "아론"
+      ],
+      "object": "cloud",
+      "ref": "민수기 12:4-9",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 세 사람을 회막으로 부르시고, 다른 선지자와 달리 충성된 종 모세와는 얼굴을 마주하듯 말한다며 왜 그를 비방하냐고 꾸짖으세요."
+      ],
+      "study": "하나님이 세 사람을 회막으로 부르시고, 다른 선지자와 달리 충성된 종 모세와는 얼굴을 마주하듯 말한다며 왜 그를 비방하냐고 꾸짖으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"counsel","lead":"모세","target":"아론","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"cloud","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 12:4-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-12-03",
+      "code": "num",
+      "chapter": 12,
+      "title": "모세의 기도",
+      "actors": [
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 12:13-16",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 그를 고쳐 달라고 부르짖어요. 미리암은 칠 일 동안 진 밖에 있었고, 백성은 그가 돌아올 때까지 떠나지 않고 기다렸어요."
+      ],
+      "study": "모세가 그를 고쳐 달라고 부르짖어요. 미리암은 칠 일 동안 진 밖에 있었고, 백성은 그가 돌아올 때까지 떠나지 않고 기다렸어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 12:13-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-13-01",
+      "code": "num",
+      "chapter": 13,
+      "title": "열두 정탐꾼",
+      "actors": [
+        "모세",
+        "다른 정탐꾼들"
+      ],
+      "object": "grapes",
+      "ref": "민수기 13:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 지파마다 지도자 한 사람씩 열두 명을 뽑아 가나안을 살피게 해요. 땅이 기름진지, 사람들이 강한지, 성이 튼튼한지 보고 열매도 가져오라 해요."
+      ],
+      "study": "모세가 지파마다 지도자 한 사람씩 열두 명을 뽑아 가나안을 살피게 해요. 땅이 기름진지, 사람들이 강한지, 성이 튼튼한지 보고 열매도 가져오라 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"scout","lead":"모세","target":"다른 정탐꾼들","mode":"reconstruction","setting":"road","effect":"journey","emotion":"neutral","prop":"grapes","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"hide","duration":1.5,"actor":"모세"},{"action":"peek","duration":1.8,"actor":"모세"},{"action":"inspect","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 13:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-14-01",
+      "code": "num",
+      "chapter": 14,
+      "title": "사십 년 광야",
+      "actors": [
+        "이스라엘 자손",
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 14:26-45",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 정탐한 사십 일 하루를 한 해로 쳐서 사십 년 동안 광야에서 지내다 죽으리라 하세요. 뒤늦게 명령 없이 올라간 백성은 아말렉과 가나안 사람에게 호르마까지 쫓겨요."
+      ],
+      "study": "정탐한 사십 일 하루를 한 해로 쳐서 사십 년 동안 광야에서 지내다 죽으리라 하세요. 뒤늦게 명령 없이 올라간 백성은 아말렉과 가나안 사람에게 호르마까지 쫓겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"이스라엘 자손","target":"모세","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"이스라엘 자손"},{"action":"gather","duration":1.2,"actor":"이스라엘 자손"},{"action":"carry","duration":1.5,"actor":"이스라엘 자손"},{"action":"walk","duration":1.8,"actor":"이스라엘 자손"},{"action":"walk","duration":1.5,"actor":"이스라엘 자손"},{"action":"look","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 14:26-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-15-01",
+      "code": "num",
+      "chapter": 15,
+      "title": "들어갈 땅의 제사",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 15:1-21",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 들어갈 땅에서 제물을 드릴 때 곁들일 고운 가루와 기름과 포도주의 양을 정하세요. 반역 뒤에도 약속의 땅에 들어간다는 소망을 주신 거예요."
+      ],
+      "study": "들어갈 땅에서 제물을 드릴 때 곁들일 고운 가루와 기름과 포도주의 양을 정하세요. 반역 뒤에도 약속의 땅에 들어간다는 소망을 주신 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"모세","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"carry","duration":1.2,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"kneel","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 15:1-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-15-02",
+      "code": "num",
+      "chapter": 15,
+      "title": "실수와 고의의 죄",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 15:22-31",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 실수로 지은 죄는 죄를 씻는 제물로 용서받아요. 하지만 일부러 하나님을 업신여기며 지은 죄는 그 사람을 백성에게서 끊어지게 해요."
+      ],
+      "study": "실수로 지은 죄는 죄를 씻는 제물로 용서받아요. 하지만 일부러 하나님을 업신여기며 지은 죄는 그 사람을 백성에게서 끊어지게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"confess","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"},{"action":"kneel","duration":1.5,"actor":"모세"},{"action":"speak","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 15:22-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-15-03",
+      "code": "num",
+      "chapter": 15,
+      "title": "옷단의 술",
+      "actors": [
+        "모세"
+      ],
+      "object": "robe",
+      "ref": "민수기 15:37-41",
+      "verseNumbers": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 옷자락 끝에 파란 끈을 단 술을 만들라 하세요. 그것을 볼 때마다 계명을 기억하고, 마음과 눈이 끌리는 대로 따라가지 말라는 뜻이에요."
+      ],
+      "study": "옷자락 끝에 파란 끈을 단 술을 만들라 하세요. 그것을 볼 때마다 계명을 기억하고, 마음과 눈이 끌리는 대로 따라가지 말라는 뜻이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"wear","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"garment","emotion":"gentle","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"wear","duration":1.8,"actor":"모세"},{"action":"smooth","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 15:37-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-16-01",
+      "code": "num",
+      "chapter": 16,
+      "title": "고라의 무리",
+      "actors": [
+        "고라",
+        "모세"
+      ],
+      "object": "censer",
+      "ref": "민수기 16:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인 고라가 르우벤 자손 다단과 아비람, 족장 이백오십 명과 함께 왜 너희만 높이느냐며 모세와 아론에게 대들어요. 제사장 자리까지 탐낸 거예요."
+      ],
+      "study": "레위인 고라가 르우벤 자손 다단과 아비람, 족장 이백오십 명과 함께 왜 너희만 높이느냐며 모세와 아론에게 대들어요. 제사장 자리까지 탐낸 거예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"고라","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"censer","beats":[{"action":"listen","duration":1,"actor":"고라"},{"action":"turn","duration":1.2,"actor":"고라"},{"action":"speak","duration":1.5,"actor":"고라"},{"action":"point","duration":1.8,"actor":"고라"},{"action":"listen","duration":1.5,"actor":"고라"},{"action":"lower","duration":1.2,"actor":"고라"}],"duration":8.2,"support":null,"ref":"민수기 16:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-18-01",
+      "code": "num",
+      "chapter": 18,
+      "title": "제사장과 레위인의 일",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 18:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제사장은 성소와 제단을, 레위인은 회막을 지키며 역할을 나눠요. 이렇게 해야 백성이 거룩한 곳에 함부로 다가가다 죽지 않게 돼요."
+      ],
+      "study": "제사장은 성소와 제단을, 레위인은 회막을 지키며 역할을 나눠요. 이렇게 해야 백성이 거룩한 곳에 함부로 다가가다 죽지 않게 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"모세","target":null,"mode":"instruction","setting":"court","effect":"crown","emotion":"joy","prop":"altar","beats":[{"action":"bow","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"receive","duration":1.5,"actor":"모세"},{"action":"wear","duration":1.8,"actor":"모세"},{"action":"rise","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 18:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-18-02",
+      "code": "num",
+      "chapter": 18,
+      "title": "제사장의 몫",
+      "actors": [
+        "아론"
+      ],
+      "object": "altar",
+      "ref": "민수기 18:8-20",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거룩한 예물과 처음 거둔 것과 처음 난 것이 제사장의 몫이에요. 하나님은 아론에게 땅 대신 내가 네 몫이요 유산이라고 하세요."
+      ],
+      "study": "거룩한 예물과 처음 거둔 것과 처음 난 것이 제사장의 몫이에요. 하나님은 아론에게 땅 대신 내가 네 몫이요 유산이라고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"distribute","lead":"아론","target":null,"mode":"instruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"altar","beats":[{"action":"inspect","duration":1,"actor":"아론"},{"action":"gather","duration":1.2,"actor":"아론"},{"action":"lift","duration":1.5,"actor":"아론"},{"action":"extend","duration":1.8,"actor":"아론"},{"action":"release","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"민수기 18:8-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-18-03",
+      "code": "num",
+      "chapter": 18,
+      "title": "레위인의 몫",
+      "actors": [
+        "모세"
+      ],
+      "object": "grain",
+      "ref": "민수기 18:21-24",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인은 땅을 받지 않는 대신 백성이 드리는 십일조를 받아요. 회막에서 일하며 백성이 진노를 받지 않도록 지키는 일의 대가예요."
+      ],
+      "study": "레위인은 땅을 받지 않는 대신 백성이 드리는 십일조를 받아요. 회막에서 일하며 백성이 진노를 받지 않도록 지키는 일의 대가예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"distribute","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"release","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 18:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-18-04",
+      "code": "num",
+      "chapter": 18,
+      "title": "십일조의 십일조",
+      "actors": [
+        "모세"
+      ],
+      "object": "grain",
+      "ref": "민수기 18:25-32",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 레위인도 받은 십일조 가운데 가장 좋은 것으로 십분의 일을 떼어 제사장에게 드려요."
+      ],
+      "study": "레위인도 받은 십일조 가운데 가장 좋은 것으로 십분의 일을 떼어 제사장에게 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"tribute","lead":"모세","target":null,"mode":"instruction","setting":"court","effect":"coins","emotion":"neutral","prop":"grain","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"weigh","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"receive","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 18:25-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-19-01",
+      "code": "num",
+      "chapter": 19,
+      "title": "시신으로 인한 부정",
+      "actors": [
+        "모세"
+      ],
+      "object": "tomb",
+      "ref": "민수기 19:11-16",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 시신에 닿거나 사람이 죽은 장막에 들어가거나 뼈나 무덤을 만진 사람은 칠 일 동안 부정해요."
+      ],
+      "study": "시신에 닿거나 사람이 죽은 장막에 들어가거나 뼈나 무덤을 만진 사람은 칠 일 동안 부정해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cleanse","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"tomb","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"touch","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 19:11-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-19-02",
+      "code": "num",
+      "chapter": 19,
+      "title": "정결의 물",
+      "actors": [
+        "모세"
+      ],
+      "object": "water-supply",
+      "ref": "민수기 19:17-22",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 셋째 날과 일곱째 날에 재를 탄 물을 우슬초로 뿌리면 깨끗해져요. 이 물로 씻지 않는 사람은 성소를 더럽힌 것이라 백성에게서 끊어져요."
+      ],
+      "study": "셋째 날과 일곱째 날에 재를 탄 물을 우슬초로 뿌리면 깨끗해져요. 이 물로 씻지 않는 사람은 성소를 더럽힌 것이라 백성에게서 끊어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"cleanse","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"touch","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 19:17-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-20-01",
+      "code": "num",
+      "chapter": 20,
+      "title": "미리암의 죽음",
+      "actors": [
+        "모세"
+      ],
+      "object": "tomb",
+      "ref": "민수기 20:1",
+      "verseNumbers": [
+        1
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 광야 생활 마흔째 해 첫째 달, 백성이 신 광야 가데스에 머물 때 모세의 누나 미리암이 죽어 그곳에 묻혀요."
+      ],
+      "study": "광야 생활 마흔째 해 첫째 달, 백성이 신 광야 가데스에 머물 때 모세의 누나 미리암이 죽어 그곳에 묻혀요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"tomb","beats":[{"action":"startle","duration":1,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"},{"action":"kneel","duration":1.5,"actor":"모세"},{"action":"cover-mouth","duration":1.8,"actor":"모세"},{"action":"mourn","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 20:1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-20-02",
+      "code": "num",
+      "chapter": 20,
+      "title": "길을 막은 에돔",
+      "actors": [
+        "모세",
+        "에돔 왕"
+      ],
+      "object": "staff",
+      "ref": "민수기 20:14-21",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 형제 나라 에돔에 왕의 큰길로만 지나가게 해 달라고 부탁해요. 하지만 에돔 왕은 거절하고 군대를 이끌고 나와 길을 막아요."
+      ],
+      "study": "모세가 형제 나라 에돔에 왕의 큰길로만 지나가게 해 달라고 부탁해요. 하지만 에돔 왕은 거절하고 군대를 이끌고 나와 길을 막아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":"에돔 왕","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 20:14-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-21-01",
+      "code": "num",
+      "chapter": 21,
+      "title": "호르마의 승리",
+      "actors": [
+        "이스라엘 자손",
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 21:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아랏 왕이 쳐들어와 몇 사람을 잡아가자 이스라엘이 하나님께 서원하며 도움을 구해요. 하나님이 이기게 하셨고, 그곳을 호르마라고 불러요."
+      ],
+      "study": "아랏 왕이 쳐들어와 몇 사람을 잡아가자 이스라엘이 하나님께 서원하며 도움을 구해요. 하나님이 이기게 하셨고, 그곳을 호르마라고 불러요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"이스라엘 자손","target":"모세","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"이스라엘 자손"},{"action":"signal","duration":1.2,"actor":"이스라엘 자손"},{"action":"brace","duration":1.5,"actor":"이스라엘 자손"},{"action":"run","duration":1.8,"actor":"이스라엘 자손"},{"action":"halt","duration":1.5,"actor":"이스라엘 자손"},{"action":"lift","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 21:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-21-02",
+      "code": "num",
+      "chapter": 21,
+      "title": "불뱀과 놋뱀",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "bronze-snake",
+      "ref": "민수기 21:4-7",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에돔을 돌아가는 길에 백성이 만나를 업신여기며 원망하자 불뱀이 들어와요. 장대 위에 단 놋뱀을 쳐다본 사람은 모두 살아요."
+      ],
+      "study": "에돔을 돌아가는 길에 백성이 만나를 업신여기며 원망하자 불뱀이 들어와요. 장대 위에 단 놋뱀을 쳐다본 사람은 모두 살아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sign-staff","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"desert","effect":"snake","emotion":"surprised","prop":"bronze-snake","beats":[{"action":"grasp","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"drop","duration":1.5,"actor":"모세"},{"action":"retreat","duration":1.8,"actor":"모세"},{"action":"reach","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 21:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-21-03",
+      "code": "num",
+      "chapter": 21,
+      "title": "모압 평지로 가는 길",
+      "actors": [
+        "이스라엘 자손"
+      ],
+      "object": "well",
+      "ref": "민수기 21:10-20",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아르논 강을 건너 여러 곳을 지나 모압 들판으로 가요. 브엘에서는 하나님이 주신 우물을 두고 지도자들과 함께 노래를 불러요. 하나님이 물을 주셨어요."
+      ],
+      "study": "아르논 강을 건너 여러 곳을 지나 모압 들판으로 가요. 브엘에서는 하나님이 주신 우물을 두고 지도자들과 함께 노래를 불러요. 하나님이 물을 주셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"이스라엘 자손","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"well","beats":[{"action":"listen","duration":1,"actor":"이스라엘 자손"},{"action":"gather","duration":1.2,"actor":"이스라엘 자손"},{"action":"carry","duration":1.5,"actor":"이스라엘 자손"},{"action":"walk","duration":1.8,"actor":"이스라엘 자손"},{"action":"walk","duration":1.5,"actor":"이스라엘 자손"},{"action":"look","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 21:10-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-21-04",
+      "code": "num",
+      "chapter": 21,
+      "title": "시혼과 옥을 이김",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 21:21-35",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 길을 내주지 않고 싸우러 나온 아모리 왕 시혼과 바산 왕 옥을 물리쳐요. 헤스본과 바산 땅까지 요단 동쪽 땅을 차지해요. 하나님이 넘겨주셨어요."
+      ],
+      "study": "길을 내주지 않고 싸우러 나온 아모리 왕 시혼과 바산 왕 옥을 물리쳐요. 헤스본과 바산 땅까지 요단 동쪽 땅을 차지해요. 하나님이 넘겨주셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"},{"action":"brace","duration":1.5,"actor":"모세"},{"action":"run","duration":1.8,"actor":"모세"},{"action":"halt","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 21:21-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-22-01",
+      "code": "num",
+      "chapter": 22,
+      "title": "발락의 두려움",
+      "actors": [
+        "발락"
+      ],
+      "object": "donkey",
+      "ref": "민수기 22:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이스라엘이 모압 평지에 진을 치자 발락이 이 백성이 우리를 다 삼킬 거라며 두려워해요. 유브라데 강가의 점술가 발람에게 저주해 달라고 사람을 보내요."
+      ],
+      "study": "이스라엘이 모압 평지에 진을 치자 발락이 이 백성이 우리를 다 삼킬 거라며 두려워해요. 유브라데 강가의 점술가 발람에게 저주해 달라고 사람을 보내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"tremble","lead":"발락","target":null,"mode":"reconstruction","setting":"hills","effect":"cloud","emotion":"worried","prop":"donkey","beats":[{"action":"look","duration":1,"actor":"발락"},{"action":"startle","duration":1.2,"actor":"발락"},{"action":"brace","duration":1.5,"actor":"발락"},{"action":"retreat","duration":1.8,"actor":"발락"},{"action":"listen","duration":1.5,"actor":"발락"},{"action":"bow","duration":1.2,"actor":"발락"}],"duration":8.2,"support":null,"ref":"민수기 22:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-22-02",
+      "code": "num",
+      "chapter": 22,
+      "title": "저주하지 말라",
+      "actors": [
+        "발람",
+        "모압 고관들"
+      ],
+      "object": "donkey",
+      "ref": "민수기 22:7-21",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 복 받은 백성이니 저주하지 말라고 하세요. 발락이 더 높은 지도자와 큰 상을 약속하자, 발람이 길을 떠나요."
+      ],
+      "study": "하나님은 복 받은 백성이니 저주하지 말라고 하세요. 발락이 더 높은 지도자와 큰 상을 약속하자, 발람이 길을 떠나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"refuse","lead":"발람","target":"모압 고관들","mode":"reconstruction","setting":"courtyard","effect":"refuse","emotion":"determined","prop":"donkey","beats":[{"action":"listen","duration":1,"actor":"발람"},{"action":"turn","duration":1.2,"actor":"발람"},{"action":"halt","duration":1.5,"actor":"발람"},{"action":"retreat","duration":1.8,"actor":"발람"},{"action":"lower","duration":1.5,"actor":"발람"},{"action":"stand","duration":1.2,"actor":"발람"}],"duration":8.2,"support":null,"ref":"민수기 22:7-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-23-01",
+      "code": "num",
+      "chapter": 23,
+      "title": "둘째 예언",
+      "actors": [
+        "발람",
+        "발락"
+      ],
+      "object": "altar",
+      "ref": "민수기 23:13-26",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 발락이 비스가 산꼭대기로 자리를 옮겨요. 발람은 하나님은 사람과 달리 거짓말하거나 마음을 바꾸지 않으신다며 또 축복해요. 장소를 바꿔도 소용없었어요."
+      ],
+      "study": "발락이 비스가 산꼭대기로 자리를 옮겨요. 발람은 하나님은 사람과 달리 거짓말하거나 마음을 바꾸지 않으신다며 또 축복해요. 장소를 바꿔도 소용없었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"발람","target":"발락","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"altar","beats":[{"action":"listen","duration":1,"actor":"발람"},{"action":"lift","duration":1.2,"actor":"발람"},{"action":"speak","duration":1.5,"actor":"발람"},{"action":"sway","duration":1.8,"actor":"발람"},{"action":"lower","duration":1.5,"actor":"발람"},{"action":"bow","duration":1.2,"actor":"발람"}],"duration":8.2,"support":null,"ref":"민수기 23:13-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-24-01",
+      "code": "num",
+      "chapter": 24,
+      "title": "야곱에게서 나온 별",
+      "actors": [
+        "발람",
+        "발락"
+      ],
+      "object": "star",
+      "ref": "민수기 24:15-19",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 먼 훗날 야곱에게서 한 별이, 이스라엘에게서 왕의 지팡이가 나와 모압과 에돔을 치리라 예언해요. 다윗과 예수님을 가리키는 말씀이에요."
+      ],
+      "study": "먼 훗날 야곱에게서 한 별이, 이스라엘에게서 왕의 지팡이가 나와 모압과 에돔을 치리라 예언해요. 다윗과 예수님을 가리키는 말씀이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"발람","target":"발락","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"star","beats":[{"action":"listen","duration":1,"actor":"발람"},{"action":"lift","duration":1.2,"actor":"발람"},{"action":"speak","duration":1.5,"actor":"발람"},{"action":"sway","duration":1.8,"actor":"발람"},{"action":"lower","duration":1.5,"actor":"발람"},{"action":"bow","duration":1.2,"actor":"발람"}],"duration":8.2,"support":null,"ref":"민수기 24:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-24-02",
+      "code": "num",
+      "chapter": 24,
+      "title": "민족들에 대한 예언",
+      "actors": [
+        "발람",
+        "발락"
+      ],
+      "object": "star",
+      "ref": "민수기 24:20-25",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아말렉과 겐 족속, 앗수르와 바다 건너올 배들의 앞날까지 말해요. 그 뒤 발람은 자기 고향으로 돌아가고 발락도 자기 길로 가요."
+      ],
+      "study": "아말렉과 겐 족속, 앗수르와 바다 건너올 배들의 앞날까지 말해요. 그 뒤 발람은 자기 고향으로 돌아가고 발락도 자기 길로 가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"발람","target":"발락","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"star","beats":[{"action":"listen","duration":1,"actor":"발람"},{"action":"lift","duration":1.2,"actor":"발람"},{"action":"speak","duration":1.5,"actor":"발람"},{"action":"sway","duration":1.8,"actor":"발람"},{"action":"lower","duration":1.5,"actor":"발람"},{"action":"bow","duration":1.2,"actor":"발람"}],"duration":8.2,"support":null,"ref":"민수기 24:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-25-01",
+      "code": "num",
+      "chapter": 25,
+      "title": "바알브올",
+      "actors": [
+        "이스라엘 자손",
+        "모세"
+      ],
+      "object": "tent",
+      "ref": "민수기 25:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 싯딤에서 이스라엘 남자들이 모압 여자들과 음행하고 그들의 신 바알브올에게 절해요. 하나님이 진노하셔서 우상을 섬긴 자들을 죽이라 하세요."
+      ],
+      "study": "싯딤에서 이스라엘 남자들이 모압 여자들과 음행하고 그들의 신 바알브올에게 절해요. 하나님이 진노하셔서 우상을 섬긴 자들을 죽이라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"이스라엘 자손","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"tent","beats":[{"action":"listen","duration":1,"actor":"이스라엘 자손"},{"action":"turn","duration":1.2,"actor":"이스라엘 자손"},{"action":"speak","duration":1.5,"actor":"이스라엘 자손"},{"action":"point","duration":1.8,"actor":"이스라엘 자손"},{"action":"listen","duration":1.5,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"민수기 25:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-25-02",
+      "code": "num",
+      "chapter": 25,
+      "title": "평화의 언약",
+      "actors": [
+        "비느하스",
+        "모세"
+      ],
+      "object": "spear",
+      "ref": "민수기 25:10-15",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 비느하스가 나의 질투로 질투하여 죄를 덮었다며, 그와 자손에게 영원한 제사장 직분을 약속하는 평화의 언약을 주세요."
+      ],
+      "study": "하나님은 비느하스가 나의 질투로 질투하여 죄를 덮었다며, 그와 자손에게 영원한 제사장 직분을 약속하는 평화의 언약을 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"비느하스","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"spear","beats":[{"action":"listen","duration":1,"actor":"비느하스"},{"action":"bow","duration":1.2,"actor":"비느하스"},{"action":"extend","duration":1.5,"actor":"비느하스"},{"action":"pledge","duration":1.8,"actor":"비느하스"},{"action":"read","duration":1.5,"actor":"비느하스"},{"action":"bow","duration":1.2,"actor":"비느하스"}],"duration":8.2,"support":null,"ref":"민수기 25:10-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-25-03",
+      "code": "num",
+      "chapter": 25,
+      "title": "미디안을 치라",
+      "actors": [
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 25:16-18",
+      "verseNumbers": [
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 죽은 사람은 시므온 족장의 아들 시므리와 미디안 족장의 딸 고스비였어요. 미디안이 꾀로 백성을 유혹했으니 그들을 치라 하세요."
+      ],
+      "study": "죽은 사람은 시므온 족장의 아들 시므리와 미디안 족장의 딸 고스비였어요. 미디안이 꾀로 백성을 유혹했으니 그들을 치라 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 25:16-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-27-01",
+      "code": "num",
+      "chapter": 27,
+      "title": "여호수아를 세움",
+      "actors": [
+        "여호수아",
+        "모세"
+      ],
+      "object": "staff",
+      "ref": "민수기 27:18-23",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 엘르아살과 온 회중 앞에서 영이 머무는 여호수아에게 손을 얹어 뒤를 이을 지도자로 세워요. 자기 권위도 나눠 주었어요."
+      ],
+      "study": "모세가 엘르아살과 온 회중 앞에서 영이 머무는 여호수아에게 손을 얹어 뒤를 이을 지도자로 세워요. 자기 권위도 나눠 주었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"appoint","lead":"여호수아","target":"모세","mode":"instruction","setting":"court","effect":"crown","emotion":"joy","prop":"staff","beats":[{"action":"bow","duration":1,"actor":"여호수아"},{"action":"kneel","duration":1.2,"actor":"여호수아"},{"action":"receive","duration":1.5,"actor":"여호수아"},{"action":"wear","duration":1.8,"actor":"여호수아"},{"action":"rise","duration":1.5,"actor":"여호수아"},{"action":"bow","duration":1.2,"actor":"여호수아"}],"duration":8.2,"support":null,"ref":"민수기 27:18-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-28-01",
+      "code": "num",
+      "chapter": 28,
+      "title": "날마다의 번제",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 28:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 날마다 아침과 저녁에 일 년 된 어린양을 한 마리씩 통째로 태워 드려요. 기름 섞은 가루와 포도주를 곁들인 이 제물을 늘 드리는 번제라고 해요."
+      ],
+      "study": "날마다 아침과 저녁에 일 년 된 어린양을 한 마리씩 통째로 태워 드려요. 기름 섞은 가루와 포도주를 곁들인 이 제물을 늘 드리는 번제라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"모세","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"carry","duration":1.2,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"kneel","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 28:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-28-02",
+      "code": "num",
+      "chapter": 28,
+      "title": "안식일과 월삭",
+      "actors": [
+        "모세"
+      ],
+      "object": "bread",
+      "ref": "민수기 28:9-15",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 안식일에는 숫양 두 마리를 더 드려요. 매달 초하루에는 수송아지 둘, 숫양 하나, 어린양 일곱을 드리고 숫염소로 죄를 씻는 제물을 드려요."
+      ],
+      "study": "안식일에는 숫양 두 마리를 더 드려요. 매달 초하루에는 수송아지 둘, 숫양 하나, 어린양 일곱을 드리고 숫염소로 죄를 씻는 제물을 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"모세","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"bread","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"carry","duration":1.2,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"kneel","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 28:9-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-28-03",
+      "code": "num",
+      "chapter": 28,
+      "title": "유월절과 무교절",
+      "actors": [
+        "모세"
+      ],
+      "object": "bread",
+      "ref": "민수기 28:16-25",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 첫째 달 열나흗날은 유월절이에요. 이어지는 칠 일 무교절에는 날마다 제물을 드리고, 첫날과 일곱째 날엔 거룩한 모임을 열고 쉬어요."
+      ],
+      "study": "첫째 달 열나흗날은 유월절이에요. 이어지는 칠 일 무교절에는 날마다 제물을 드리고, 첫날과 일곱째 날엔 거룩한 모임을 열고 쉬어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"bread","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"bow","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"sit","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 28:16-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-28-04",
+      "code": "num",
+      "chapter": 28,
+      "title": "칠칠절",
+      "actors": [
+        "모세"
+      ],
+      "object": "grain",
+      "ref": "민수기 28:26-31",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 첫 열매를 드리는 칠칠절에도 거룩한 모임을 열고 일을 하지 않아요. 수송아지와 숫양과 어린양을 드리고, 숫염소로 죄를 씻는 제물을 드려요."
+      ],
+      "study": "첫 열매를 드리는 칠칠절에도 거룩한 모임을 열고 일을 하지 않아요. 수송아지와 숫양과 어린양을 드리고, 숫염소로 죄를 씻는 제물을 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"grain","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"bow","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"sit","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 28:26-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-29-01",
+      "code": "num",
+      "chapter": 29,
+      "title": "나팔절",
+      "actors": [
+        "모세"
+      ],
+      "object": "trumpet",
+      "ref": "민수기 29:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 일곱째 달 첫날은 나팔을 불어 알리는 날이에요. 거룩한 모임을 열고 일을 쉬며, 매달 드리는 제물에 더해 수송아지와 숫양과 어린양을 드려요."
+      ],
+      "study": "일곱째 달 첫날은 나팔을 불어 알리는 날이에요. 거룩한 모임을 열고 일을 쉬며, 매달 드리는 제물에 더해 수송아지와 숫양과 어린양을 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"trumpet","lead":"모세","target":null,"mode":"instruction","setting":"wall","effect":"music","emotion":"determined","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"blow","duration":1.5,"actor":"모세"},{"action":"hold","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"signal","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 29:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-29-02",
+      "code": "num",
+      "chapter": 29,
+      "title": "속죄일",
+      "actors": [
+        "모세"
+      ],
+      "object": "altar",
+      "ref": "민수기 29:7-11",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열흘째 날은 죄를 씻는 속죄일이에요. 음식을 먹지 않고 스스로를 낮추며, 아무 일도 하지 않고 정해진 제물을 드려요. 대제사장이 지성소에 들어가는 날이에요."
+      ],
+      "study": "열흘째 날은 죄를 씻는 속죄일이에요. 음식을 먹지 않고 스스로를 낮추며, 아무 일도 하지 않고 정해진 제물을 드려요. 대제사장이 지성소에 들어가는 날이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"모세","target":null,"mode":"instruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"carry","duration":1.2,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"kneel","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 29:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-29-03",
+      "code": "num",
+      "chapter": 29,
+      "title": "초막절",
+      "actors": [
+        "모세"
+      ],
+      "object": "tent",
+      "ref": "민수기 29:12-34",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열닷새부터 칠 일 동안 초막절을 지켜요. 첫날 수송아지 열세 마리로 시작해 날마다 한 마리씩 줄여, 칠 일 동안 모두 일흔 마리를 드려요."
+      ],
+      "study": "열닷새부터 칠 일 동안 초막절을 지켜요. 첫날 수송아지 열세 마리로 시작해 날마다 한 마리씩 줄여, 칠 일 동안 모두 일흔 마리를 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"bow","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"sit","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 29:12-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-29-04",
+      "code": "num",
+      "chapter": 29,
+      "title": "여덟째 날 대회",
+      "actors": [
+        "모세"
+      ],
+      "object": "tent",
+      "ref": "민수기 29:35-40",
+      "verseNumbers": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여덟째 날 다시 거룩한 모임으로 모여 수송아지 한 마리를 드리며 절기를 마쳐요. 이 제물은 서원이나 자원해서 드리는 예물과는 따로였어요."
+      ],
+      "study": "여덟째 날 다시 거룩한 모임으로 모여 수송아지 한 마리를 드리며 절기를 마쳐요. 이 제물은 서원이나 자원해서 드리는 예물과는 따로였어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"feast","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"tent","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"bow","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"place","duration":1.5,"actor":"모세"},{"action":"sit","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 29:35-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-30-01",
+      "code": "num",
+      "chapter": 30,
+      "title": "서원은 지키라",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 30:1-2",
+      "verseNumbers": [
+        1,
+        2
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 남자가 하나님께 서원하거나 무엇을 끊겠다고 맹세했으면 그 말을 깨뜨리지 말고 입으로 한 대로 다 지켜야 해요. 하나님 앞에서 한 말은 무거워요."
+      ],
+      "study": "남자가 하나님께 서원하거나 무엇을 끊겠다고 맹세했으면 그 말을 깨뜨리지 말고 입으로 한 대로 다 지켜야 해요. 하나님 앞에서 한 말은 무거워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 30:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-30-02",
+      "code": "num",
+      "chapter": 30,
+      "title": "아버지 집의 딸",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 30:3-5",
+      "verseNumbers": [
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아버지 집에 있는 딸의 서원은 아버지가 들은 날 반대하면 무효가 돼요. 아버지가 막았으니 하나님이 딸을 용서해 주세요."
+      ],
+      "study": "아버지 집에 있는 딸의 서원은 아버지가 들은 날 반대하면 무효가 돼요. 아버지가 막았으니 하나님이 딸을 용서해 주세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 30:3-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-30-03",
+      "code": "num",
+      "chapter": 30,
+      "title": "남편이 있는 아내",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 30:6-8",
+      "verseNumbers": [
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아내의 서원은 남편이 들은 날 무를 수 있어요. 하지만 그날 가만히 있다가 나중에 무르게 하면 그 잘못의 책임은 남편이 져요. 이 규정은 가정의 질서와 평화를 지키려는 것이고, 권위를 받은 남편에게는 그만큼 책임이 따라요."
+      ],
+      "study": "아내의 서원은 남편이 들은 날 무를 수 있어요. 하지만 그날 가만히 있다가 나중에 무르게 하면 그 잘못의 책임은 남편이 져요. 이 규정은 가정의 질서와 평화를 지키려는 것이고, 권위를 받은 남편에게는 그만큼 책임이 따라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 30:6-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-30-04",
+      "code": "num",
+      "chapter": 30,
+      "title": "과부의 서원",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 30:9",
+      "verseNumbers": [
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 남편을 잃은 과부나 이혼한 여자는 자기가 한 서원을 그대로 지켜야 해요."
+      ],
+      "study": "남편을 잃은 과부나 이혼한 여자는 자기가 한 서원을 그대로 지켜야 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 30:9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-30-05",
+      "code": "num",
+      "chapter": 30,
+      "title": "남편이 있는 아내",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 30:10-16",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아내의 서원은 남편이 들은 날 무를 수 있어요. 하지만 그날 가만히 있다가 나중에 무르게 하면 그 잘못의 책임은 남편이 져요. 이 규정은 가정의 질서와 평화를 지키려는 것이고, 권위를 받은 남편에게는 그만큼 책임이 따라요."
+      ],
+      "study": "아내의 서원은 남편이 들은 날 무를 수 있어요. 하지만 그날 가만히 있다가 나중에 무르게 하면 그 잘못의 책임은 남편이 져요. 이 규정은 가정의 질서와 평화를 지키려는 것이고, 권위를 받은 남편에게는 그만큼 책임이 따라요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"oath","lead":"모세","target":null,"mode":"instruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 30:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-31-01",
+      "code": "num",
+      "chapter": 31,
+      "title": "전리품을 나눔",
+      "actors": [
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 31:25-47",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 빼앗은 것을 싸운 군인과 회중이 반씩 나눠요. 군인 몫의 오백분의 일은 제사장에게, 회중 몫의 오십분의 일은 레위인에게 드려요."
+      ],
+      "study": "빼앗은 것을 싸운 군인과 회중이 반씩 나눠요. 군인 몫의 오백분의 일은 제사장에게, 회중 몫의 오십분의 일은 레위인에게 드려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"distribute","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"release","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 31:25-47","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-31-02",
+      "code": "num",
+      "chapter": 31,
+      "title": "감사의 예물",
+      "actors": [
+        "모세"
+      ],
+      "object": "silver",
+      "ref": "민수기 31:48-54",
+      "verseNumbers": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 싸움에 나간 군인이 한 사람도 죽지 않았어요. 지휘관들이 금붙이를 속죄의 예물로 드리자, 모세와 엘르아살이 회막에 두어 기념으로 삼아요."
+      ],
+      "study": "싸움에 나간 군인이 한 사람도 죽지 않았어요. 지휘관들이 금붙이를 속죄의 예물로 드리자, 모세와 엘르아살이 회막에 두어 기념으로 삼아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"offer","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"extend","duration":1.8,"actor":"모세"},{"action":"release","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 31:48-54","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-33-01",
+      "code": "num",
+      "chapter": 33,
+      "title": "우상을 깨뜨리라",
+      "actors": [
+        "모세"
+      ],
+      "object": "scene-marker",
+      "ref": "민수기 33:50-56",
+      "verseNumbers": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 가나안 사람들을 쫓아내고 우상과 산당을 모두 부수라 하세요. 그러지 않으면 남은 사람들이 눈의 가시와 옆구리의 가시처럼 괴롭힐 거래요."
+      ],
+      "study": "가나안 사람들을 쫓아내고 우상과 산당을 모두 부수라 하세요. 그러지 않으면 남은 사람들이 눈의 가시와 옆구리의 가시처럼 괴롭힐 거래요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"demolish","lead":"모세","target":null,"mode":"reconstruction","setting":"altar","effect":"fragments","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"strike","duration":1.8,"actor":"모세"},{"action":"recoil","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 33:50-56","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-34-01",
+      "code": "num",
+      "chapter": 34,
+      "title": "남쪽 경계",
+      "actors": [
+        "엘르아살",
+        "여호수아"
+      ],
+      "object": "scroll",
+      "ref": "민수기 34:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 남쪽 경계는 신 광야와 사해 남쪽 끝에서 가데스바네아를 지나 애굽 시내에 이르러 바다로 끝나요. 아브라함에게 약속하신 땅이에요."
+      ],
+      "study": "남쪽 경계는 신 광야와 사해 남쪽 끝에서 가데스바네아를 지나 애굽 시내에 이르러 바다로 끝나요. 아브라함에게 약속하신 땅이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"엘르아살","target":"여호수아","mode":"instruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scroll","beats":[{"action":"read","duration":1,"actor":"엘르아살"},{"action":"grasp","duration":1.2,"actor":"엘르아살"},{"action":"shake","duration":1.5,"actor":"엘르아살"},{"action":"release","duration":1.8,"actor":"엘르아살"},{"action":"inspect","duration":1.5,"actor":"엘르아살"},{"action":"point","duration":1.2,"actor":"엘르아살"}],"duration":8.2,"support":null,"ref":"민수기 34:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-34-02",
+      "code": "num",
+      "chapter": 34,
+      "title": "서쪽과 북쪽 경계",
+      "actors": [
+        "엘르아살",
+        "여호수아"
+      ],
+      "object": "scroll",
+      "ref": "민수기 34:6-9",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 서쪽 경계는 큰 바다인 지중해예요. 북쪽 경계는 바다에서 호르 산과 하맛 어귀를 거쳐 하살에난까지 이어져요."
+      ],
+      "study": "서쪽 경계는 큰 바다인 지중해예요. 북쪽 경계는 바다에서 호르 산과 하맛 어귀를 거쳐 하살에난까지 이어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"엘르아살","target":"여호수아","mode":"instruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scroll","beats":[{"action":"read","duration":1,"actor":"엘르아살"},{"action":"grasp","duration":1.2,"actor":"엘르아살"},{"action":"shake","duration":1.5,"actor":"엘르아살"},{"action":"release","duration":1.8,"actor":"엘르아살"},{"action":"inspect","duration":1.5,"actor":"엘르아살"},{"action":"point","duration":1.2,"actor":"엘르아살"}],"duration":8.2,"support":null,"ref":"민수기 34:6-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-34-03",
+      "code": "num",
+      "chapter": 34,
+      "title": "동쪽 경계",
+      "actors": [
+        "엘르아살",
+        "여호수아"
+      ],
+      "object": "scroll",
+      "ref": "민수기 34:10-15",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 동쪽 경계는 하살에난에서 갈릴리 바다 동쪽을 따라 요단 강을 지나 염해까지예요. 요단 동쪽은 이미 두 지파 반이 받았어요. 그래서 아홉 지파 반이 나눠요."
+      ],
+      "study": "동쪽 경계는 하살에난에서 갈릴리 바다 동쪽을 따라 요단 강을 지나 염해까지예요. 요단 동쪽은 이미 두 지파 반이 받았어요. 그래서 아홉 지파 반이 나눠요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"lots","lead":"엘르아살","target":"여호수아","mode":"instruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"scroll","beats":[{"action":"read","duration":1,"actor":"엘르아살"},{"action":"grasp","duration":1.2,"actor":"엘르아살"},{"action":"shake","duration":1.5,"actor":"엘르아살"},{"action":"release","duration":1.8,"actor":"엘르아살"},{"action":"inspect","duration":1.5,"actor":"엘르아살"},{"action":"point","duration":1.2,"actor":"엘르아살"}],"duration":8.2,"support":null,"ref":"민수기 34:10-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-35-01",
+      "code": "num",
+      "chapter": 35,
+      "title": "레위인의 성읍",
+      "actors": [
+        "모세"
+      ],
+      "object": "house",
+      "ref": "민수기 35:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 각 지파가 자기 몫에서 성읍을 떼어 레위인에게 마흔여덟 성읍과 목초지를 주어요."
+      ],
+      "study": "각 지파가 자기 몫에서 성읍을 떼어 레위인에게 마흔여덟 성읍과 목초지를 주어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"shelter","lead":"모세","target":null,"mode":"instruction","setting":"chamber","effect":"shelter","emotion":"worried","prop":"house","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"startle","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"guard","duration":1.8,"actor":"모세"},{"action":"turn","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 35:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-num-review-36-01",
+      "code": "num",
+      "chapter": 36,
+      "title": "말씀대로 한 딸들",
+      "actors": [
+        "모세"
+      ],
+      "object": "scroll",
+      "ref": "민수기 36:13",
+      "verseNumbers": [
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다섯 딸이 명령대로 아버지 형제들의 아들, 곧 사촌들과 결혼해 땅이 므낫세 지파에 남아요. 민수기는 모압 평지에서 주신 명령으로 끝나요."
+      ],
+      "study": "다섯 딸이 명령대로 아버지 형제들의 아들, 곧 사촌들과 결혼해 땅이 므낫세 지파에 남아요. 민수기는 모압 평지에서 주신 명령으로 끝나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 이동·규례를 알아보기 쉽게 요약한 장면이에요. 전투·죽음·형벌은 직접적이거나 그래픽하게 재현하지 않고 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"pledge","duration":1.8,"actor":"모세"},{"action":"read","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"민수기 36:13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
@@ -1669,16 +4101,6 @@
       }
     ],
     "2": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          33,
-          34
-        ]
-      },
       {
         "name": "아론",
         "weight": 1,
@@ -1698,25 +4120,6 @@
     ],
     "3": [
       {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          5,
-          11,
-          14,
-          16,
-          38,
-          39,
-          40,
-          42,
-          44,
-          49,
-          51
-        ]
-      },
-      {
         "name": "엘리",
         "weight": 1,
         "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
@@ -1726,22 +4129,6 @@
       }
     ],
     "4": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          17,
-          21,
-          34,
-          37,
-          41,
-          45,
-          46,
-          49
-        ]
-      },
       {
         "name": "아론",
         "weight": 1,
@@ -1764,30 +4151,6 @@
         ]
       }
     ],
-    "5": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          4,
-          5,
-          11
-        ]
-      }
-    ],
-    "6": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          22
-        ]
-      }
-    ],
     "7": [
       {
         "name": "아론",
@@ -1804,22 +4167,6 @@
         "mentionVerses": [
           42,
           47
-        ]
-      }
-    ],
-    "8": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          3,
-          4,
-          5,
-          20,
-          22,
-          23
         ]
       }
     ],
@@ -1889,25 +4236,7 @@
         ]
       }
     ],
-    "18": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          25
-        ]
-      }
-    ],
     "19": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1
-        ]
-      },
       {
         "name": "아론",
         "weight": 1,
@@ -2001,37 +4330,6 @@
         ]
       }
     ],
-    "28": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1
-        ]
-      }
-    ],
-    "29": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          40
-        ]
-      }
-    ],
-    "30": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          16
-        ]
-      }
-    ],
     "32": [
       {
         "name": "갈렙",
@@ -2081,29 +4379,6 @@
         "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
         "mentionVerses": [
           11
-        ]
-      }
-    ],
-    "34": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          13,
-          16
-        ]
-      }
-    ],
-    "35": [
-      {
-        "name": "모세",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          1,
-          9
         ]
       }
     ],

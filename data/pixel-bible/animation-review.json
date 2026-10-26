@@ -83,17 +83,29 @@
     },
     {
       "code": "num",
-      "payloadSha256": "8ca2e6b48997a4de0c30cacd5dee5d8dfb8ad223d380934fe25967753d8ddbb5",
-      "scenes": 46,
-      "existing": 46,
+      "payloadSha256": "4bb46a31be47223c16887b72453f3cda0ab508a7d14612921e832c3bd7933285",
+      "scenes": 124,
+      "existing": 124,
       "restored": 0,
       "corrected": 6,
-      "planned": 46,
+      "planned": 124,
       "modes": {
-        "reconstruction": 37,
-        "illustration": 9
+        "reconstruction": 63,
+        "illustration": 9,
+        "instruction": 52
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 124,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "deu",
