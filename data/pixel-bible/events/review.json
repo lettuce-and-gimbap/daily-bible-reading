@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 2732,
+    "scenesInFiles": 2748,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 2017
+    "curatedSupplementalScenes": 2033
   },
   "books": [
     {
@@ -242,10 +242,10 @@
     {
       "code": "dan",
       "chapters": 12,
-      "scenes": 22,
+      "scenes": 38,
       "sourceMatchedSceneCandidates": 14,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 8
+      "curatedSupplementalScenes": 24
     },
     {
       "code": "hos",
@@ -25583,7 +25583,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 2,
         "source-confirmed-actor-and-object": 1
@@ -25608,7 +25608,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 4,
       "classification": {
         "no-source-confirmed-actor-or-object": 1,
         "source-confirmed-actor-only": 1,
@@ -25634,7 +25634,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-and-object": 1,
         "source-confirmed-actor-only": 1,
@@ -25665,7 +25665,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 3,
       "classification": {
         "source-confirmed-object-only": 2,
         "no-source-confirmed-actor-or-object": 2
@@ -25698,7 +25698,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 2,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-and-object": 2,
         "no-source-confirmed-actor-or-object": 1,
@@ -25801,7 +25801,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 1,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-and-object": 1,
         "no-source-confirmed-actor-or-object": 2,
@@ -25864,7 +25864,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 4,
-      "scenes": 0,
+      "scenes": 4,
       "classification": {
         "no-source-confirmed-actor-or-object": 4
       },
@@ -25896,7 +25896,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 3,
-      "scenes": 1,
+      "scenes": 3,
       "classification": {
         "source-confirmed-actor-and-object": 1,
         "no-source-confirmed-actor-or-object": 1,
@@ -28654,6 +28654,10 @@
       {
         "book": "ezk",
         "scenesAdded": 124
+      },
+      {
+        "book": "dan",
+        "scenesAdded": 16
       }
     ]
   }
