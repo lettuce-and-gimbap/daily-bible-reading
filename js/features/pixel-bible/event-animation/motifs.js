@@ -21,6 +21,7 @@ add('shelter guard','look startle extend guard turn stand','shelter','chamber','
 add('destruction burn','look startle retreat brace mourn lower','fire','ruins','sad');
 add('pray request plead petition','listen kneel lift pray pray bow','prayer','courtyard','worried');
 add('well dig','look bend dig dig rise inspect','well','desert','determined');
+add('woodcut','walk grasp windup strike scoop carry','woodcut','pasture','determined');
 add('listen explain report encourage instruct counsel summon accuse judgment dispute warn warning','listen turn speak point listen lower','speech','courtyard','determined');
 add('rescue','look startle halt release kneel bow','release','altar','surprised');
 add('weigh trade purchase tribute','inspect grasp weigh place extend receive','coins','court','neutral');

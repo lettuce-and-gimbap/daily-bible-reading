@@ -30,6 +30,12 @@ test('아골 골짜기 장면은 돌을 던지는 백성과 쓰러지는 아간�
  const cast=scene.actors.map(name=>({name,refs:[scene.ref]}));
  assert.equal(sampleEvent(scene,cast,4).states[0].action,'windup');assert.equal(sampleEvent(scene,cast,6).states[1].pose.lie,true);
 });
+test('기브온 사람들의 노동 장면은 상징 대사가 아니라 나무 패기와 물 긷는 동작을 보인다',()=>{
+ const scene=books.find(([code])=>code==='jos')[1].scenes.find(s=>s.id==='ot-jos-9-3');
+ assert.equal(scene.animation.motif,'woodcut');assert.equal(scene.animation.effect,'woodcut');
+ assert.deepEqual(scene.animation.beats.map(b=>b.action),['walk','grasp','windup','strike','scoop','carry']);
+ assert.equal(scene.actors[0],'기브온 사람들');
+});
 test('성경 본문의 행동 주체와 비유·예언의 상징 모드를 구분한다',()=>{
  const gen=books.find(([b])=>b==='gen')[1].scenes;assert.deepEqual(gen.find(s=>s.title==='속은 아버지').actors,['야곱']);assert.equal(gen.find(s=>s.title==='베냐민의 자루 속 은잔').object,'cup');
  for(const b of ['psa','pro','ecc','sng','oba','nam','zep'])for(const s of books.find(([code])=>code===b)[1].scenes)assert.equal(s.animation.mode,'illustration');

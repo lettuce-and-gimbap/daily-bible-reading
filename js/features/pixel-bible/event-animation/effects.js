@@ -1,5 +1,5 @@
 import {drawWorldObject} from '../art.js';
-export const EFFECTS=new Set('transfiguration ascension baptism feed-many roof-lower pentecost vision-eat vision-harvest vision-water vision-door vision-swarm vision-bowls vision-bind fall-rise anoint-feet storm-calm swine-rush net-catch water-wine wash-feet rise resurrection garment-touch anoint bread-share veil-dark empty-tomb water-rescue capture pour-water five-stones float-basket two-offerings flock bars crown arrow none shadow transfer receive build flood recede bird altar-flame rainbow cover journey light covenant feast shelter fire prayer release coins water tears family refuse vision oil roll speech bury pit stack reveal symbol bush-fire snake water-strike divide restore cloud lamp garment smoke cloth fragments veil arrange powder blossom sign clash rope lots collapse jar-break grain shoe food music sling projectile cloth-cut letter boat whirlwind axe treasure touch water-strike burial potsherd clay cloth-decay sink city joined storm wither scroll idol well signal snare boat-break scepter horse heal tear transfer light'.split(' '));
+export const EFFECTS=new Set('transfiguration ascension baptism feed-many roof-lower pentecost vision-eat vision-harvest vision-water vision-door vision-swarm vision-bowls vision-bind fall-rise anoint-feet storm-calm swine-rush net-catch water-wine wash-feet rise resurrection garment-touch anoint bread-share veil-dark empty-tomb water-rescue capture pour-water five-stones float-basket two-offerings flock bars crown arrow none shadow transfer receive build flood recede bird altar-flame rainbow cover journey light covenant feast shelter fire prayer release coins water tears family refuse vision oil roll speech bury pit stack reveal symbol bush-fire snake water-strike divide restore cloud lamp garment smoke cloth fragments veil arrange powder blossom sign clash rope lots collapse jar-break grain shoe food music sling projectile cloth-cut letter boat whirlwind axe treasure touch water-strike burial potsherd clay cloth-decay sink city joined storm wither scroll idol well signal snare boat-break scepter horse heal tear transfer light woodcut'.split(' '));
 export function drawEffects(c,sample,layout){
  const {plan,index,progress,effectProgress:p,elapsed}=sample,effect=plan.effect;
  const r=(x,y,w,h,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.max(0,Math.round(w)),Math.max(0,Math.round(h)));};
@@ -64,6 +64,12 @@ export function drawEffects(c,sample,layout){
  case 'food':case 'feast':if(index>=3){prop('bread',x,y);prop('cup',x+28,y);}break;
  case 'music':if(index>=2&&index<=4){c.fillStyle='#f0d38a';c.font='16px DungGeunMo,monospace';c.fillText('♪',x+30,115-Math.floor(elapsed*6)%25);c.fillText('♫',x-35,125-Math.floor(elapsed*6)%30);}break;
  case 'sling':case 'projectile':case 'arrow':if(index>=(effect==='projectile'?2:4)){const flight=index===4?progress:index>4?1:0;const tx=layout.lead.x+30+flight*140,ty=layout.lead.y-57;prop(effect==='arrow'?'arrow':'stone',Math.min(650,tx),ty);}break;
+ case 'woodcut':{
+  if(index>=1)prop('axe',layout.lead.x+22,layout.lead.y-26);
+  if(index===3)for(let i=0;i<7;i++)r(x-12+(i*17)%34,y-10+(i%3)*5,3,2,'#d6b879');
+  if(index>=4){prop('water-supply',x+62,y+4);if(index===4)for(let i=0;i<4;i++)r(x+50+i*8,y-11+(i%2)*3,3,3,'#b6dfe0');}
+  break;
+ }
  case 'letter':case 'scroll':case 'covenant':if(index>=3){prop('scroll',x,y);}break;
  case 'boat':if(index>=2)prop('boat',x,y+20);break;
  case 'whirlwind':if(index>=2)for(let i=0;i<9;i++)r(x-28+i%3*12,y-30-i*12,60-i*4,2,'#e2d9b7');break;

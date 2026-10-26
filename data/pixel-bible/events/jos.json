@@ -349,7 +349,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"기브온 사람들","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tree","beats":[{"action":"listen","duration":1,"actor":"기브온 사람들"},{"action":"read","duration":1.2,"actor":"기브온 사람들"},{"action":"look","duration":1.5,"actor":"기브온 사람들"},{"action":"point","duration":1.8,"actor":"기브온 사람들"},{"action":"listen","duration":1.5,"actor":"기브온 사람들"},{"action":"bow","duration":1.2,"actor":"기브온 사람들"}],"duration":8.2,"support":null,"ref":"여호수아 9:22-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"woodcut","lead":"기브온 사람들","target":null,"mode":"reconstruction","setting":"pasture","effect":"woodcut","emotion":"determined","prop":"tree","beats":[{"action":"walk","duration":1,"actor":"기브온 사람들"},{"action":"grasp","duration":1.2,"actor":"기브온 사람들"},{"action":"windup","duration":1.5,"actor":"기브온 사람들"},{"action":"strike","duration":1.8,"actor":"기브온 사람들"},{"action":"scoop","duration":1.5,"actor":"기브온 사람들"},{"action":"carry","duration":1.2,"actor":"기브온 사람들"}],"duration":8.2,"support":null,"ref":"여호수아 9:22-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-jos-18-2",
