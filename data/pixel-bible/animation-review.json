@@ -612,18 +612,27 @@
     },
     {
       "code": "ezk",
-      "payloadSha256": "33a8c491f7077cf098a87aac43f6686cb220017dbca9373eed7f27e683b5fca5",
-      "scenes": 35,
-      "existing": 35,
+      "payloadSha256": "58b7e74904880b2050ca6226a331e6f7ea501c2b5004b8c8e7fa153dd3cd99b1",
+      "scenes": 159,
+      "existing": 159,
       "restored": 0,
       "corrected": 0,
-      "planned": 35,
+      "planned": 159,
       "modes": {
-        "vision": 2,
-        "illustration": 31,
-        "reconstruction": 2
+        "illustration": 158
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 159,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "dan",
