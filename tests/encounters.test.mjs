@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3849);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3841);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -592,6 +592,32 @@ test('이사야 36–39장의 히스기야 위기 대화는 위협·전달·기�
  assert.match(letter.detail,/직접 주고받은 말로 기록된 것은 아닙니다/);
  const rebuke=passageEntries.find(entry=>entry.id==='pair-isa-39-isaiah-hezekiah');
  assert.match(rebuke.replyLines[0],/모든 것을 보았습니다/);
+});
+
+test('이사야 1–66장의 관계 대화는 해당 장의 인물과 본문 관계선에 붙어 있다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/isa.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'isa',name:'이사야',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);
+ const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('isa.'));
+ assert.equal(entries.length,80);
+ assert.equal(context.relations.length,81);
+ for(const relation of context.relations){
+  assert.ok(entries.some(entry=>entry.chapter===`isa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ }
+ for(const entry of entries){
+  const chapter=Number(entry.chapter.slice(4));
+  const names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);
+  assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
+  assert.match(entry.ref,/이사야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))<=10).length,16);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=11&&Number(entry.chapter.slice(4))<=20).length,15);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=21&&Number(entry.chapter.slice(4))<=35).length,9);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=36&&Number(entry.chapter.slice(4))<=39).length,11);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=40&&Number(entry.chapter.slice(4))<=55).length,18);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=56).length,11);
+ assert.equal(entries.some(entry=>entry.speaker==='하나님'||entry.target==='하나님'),false,'인물 상호작용에서 제외된 하나님 단독 관계선은 짝 대사로 넣지 않는다');
+ for(const chapter of [4,7,8,9])assert.equal(summary.chapters[chapter].rels.some(relation=>['여호와의 싹','르말리야','마헬살랄하스바스','한 아기'].includes(relation.from)||['여호와의 싹','르말리야','마헬살랄하스바스','한 아기'].includes(relation.to)),false);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{
