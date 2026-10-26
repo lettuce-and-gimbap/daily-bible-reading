@@ -826,6 +826,64 @@
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
       "animation": {"version":2,"motif":"write","lead":"에스라","target":"제사장들","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"book","beats":[{"action":"inspect","duration":1,"actor":"에스라"},{"action":"grasp","duration":1.2,"actor":"에스라"},{"action":"open","duration":1.5,"actor":"에스라"},{"action":"read","duration":1.8,"actor":"에스라"},{"action":"write","duration":1.5,"actor":"에스라"},{"action":"place","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 10:18-44","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezr-extra-1-0",
+      "code": "ezr",
+      "chapter": 1,
+      "title": "귀환을 준비하는 족장과 성전 봉사자들",
+      "actors": [
+        "유다와 베냐민 족장들",
+        "제사장과 레위인",
+        "이웃들"
+      ],
+      "object": "scene-marker",
+      "ref": "에스라 1:5-6",
+      "verseNumbers": [
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님의 마음을 움직이신 고레스의 조서에 응답해 유다와 베냐민의 족장, 제사장과 레위인이 일어나 예루살렘으로 돌아갈 준비를 해요. 이웃들은 은과 물품을 보태며 그들을 도와요."
+      ],
+      "study": "하나님의 마음을 움직이신 고레스의 조서에 응답해 유다와 베냐민의 족장, 제사장과 레위인이 일어나 예루살렘으로 돌아갈 준비를 해요. 이웃들은 은과 물품을 보태며 그들을 도와요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"유다와 베냐민 족장들","target":"제사장과 레위인","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"유다와 베냐민 족장들"},{"action":"bend","duration":1.2,"actor":"유다와 베냐민 족장들"},{"action":"grasp","duration":1.5,"actor":"유다와 베냐민 족장들"},{"action":"lift","duration":1.8,"actor":"유다와 베냐민 족장들"},{"action":"bundle","duration":1.5,"actor":"유다와 베냐민 족장들"},{"action":"carry","duration":1.2,"actor":"유다와 베냐민 족장들"}],"duration":8.2,"support":null,"ref":"에스라 1:5-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-ezr-extra-6-0",
+      "code": "ezr",
+      "chapter": 6,
+      "title": "다리오가 성전 공사를 보호하다",
+      "actors": [
+        "다리오",
+        "닷드내",
+        "유다 장로들",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "에스라 6:6-12",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다리오는 닷드내와 관리들에게 성전 공사를 막지 말고 유다 장로들이 일을 계속하게 하라고 명해요. 왕의 세금에서 비용을 대고 제사 제물을 공급하며, 조서를 바꾸거나 성전을 해치는 자는 엄히 벌하겠다고 경고해요."
+      ],
+      "study": "다리오는 닷드내와 관리들에게 성전 공사를 막지 말고 유다 장로들이 일을 계속하게 하라고 명해요. 왕의 세금에서 비용을 대고 제사 제물을 공급하며, 조서를 바꾸거나 성전을 해치는 자는 엄히 벌하겠다고 경고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"다리오","target":"닷드내","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다리오"},{"action":"turn","duration":1.2,"actor":"다리오"},{"action":"speak","duration":1.5,"actor":"다리오"},{"action":"point","duration":1.8,"actor":"다리오"},{"action":"listen","duration":1.5,"actor":"다리오"},{"action":"lower","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
