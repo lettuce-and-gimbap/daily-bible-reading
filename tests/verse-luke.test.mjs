@@ -16,3 +16,9 @@ test('누가복음 3장은 38절을 연결하고 족보의 역본 차이를 보�
  const scenes=data.scenes.filter(s=>s.chapter===3);assert.deepEqual(scenes.map(s=>s.verseNumbers[0]),Array.from({length:38},(_,i)=>i+1));
  assert.equal(scenes[21].animation.effect,'dove-descend');assert.equal(scenes[32].editionVariant,true);assert.match(scenes[32].study,/아드민/);
 });
+test('누가복음에서 인용된 황제·선지자와 과거 심판 인물은 현장 출연자로 만들지 않는다',()=>{
+ const get=(chapter,verse)=>data.scenes.find(scene=>scene.chapter===chapter&&scene.verseNumbers[0]===verse);
+ assert.equal(get(2,1).actors.includes('가이사 아구스도'),false);
+ for(const verse of [18,19,26,27,28,29,30,33])assert.equal(get(7,verse).actors.includes('세례 요한'),false);
+ for(const verse of [27,29,32,33,35])for(const name of ['노아','롯','롯의 처'])assert.equal(get(17,verse).actors.includes(name),false);
+});

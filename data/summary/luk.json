@@ -24,7 +24,6 @@
         {"name":"요셉","role":"마리아의 약혼자","weight":1},
         {"name":"요한","role":"길을 준비할 아이","weight":2},
         {"name":"예수","role":"잉태되실 아들","weight":2},
-        {"name":"데오빌로","role":"책을 받는 이","weight":1},
         {"name":"성령","role":"잉태와 충만의 영","weight":2}
       ],
       "rels": [
@@ -60,7 +59,6 @@
         {"name":"주의 사자","role":"기쁜 소식을 전한 천사","weight":2},
         {"name":"시므온","role":"아기를 안은 의인","weight":2},
         {"name":"안나","role":"감사한 여선지자","weight":2},
-        {"name":"가이사 아구스도","role":"호적령을 내린 황제","weight":1},
         {"name":"선생들","role":"성전의 율법 교사","weight":1}
       ],
       "rels": [
@@ -98,7 +96,6 @@
         {"name":"헤롯","role":"요한을 가둔 분봉 왕","weight":2},
         {"name":"헤로디아","role":"헤롯이 취한 여인","weight":1},
         {"name":"빌라도","role":"유대 총독","weight":1},
-        {"name":"아담","role":"족보의 처음 사람","weight":1},
         {"name":"성령","role":"비둘기 같이 내려오신 영","weight":2},
         {"name":"하나님","role":"사랑하는 아들이라 하신 분","weight":3}
       ],
@@ -107,8 +104,7 @@
         {"from":"세례 요한","to":"무리","label":"가르친 선지자","kind":"ally","directed":true,"weight":2,"verses":"10-14","note":"무리가 어떻게 해야 하냐고 묻자 요한은 옷이 둘이면 나누고, 먹을 것도 나누라고 가르쳤어요."},
         {"from":"헤롯","to":"세례 요한","label":"옥에 가둠","kind":"conflict","directed":true,"weight":2,"verses":"19-20","note":"헤롯은 요한에게 책망받은 뒤 여러 악행에 하나를 더해 요한을 옥에 가뒀어요."},
         {"from":"세례 요한","to":"헤롯","label":"책망한 이","kind":"conflict","directed":true,"weight":2,"verses":"19","note":"요한은 헤로디아의 일과 헤롯이 저지른 여러 악한 일을 책망했어요."},
-        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"22","note":"세례 때 하늘 음성은 너는 내가 사랑하는 아들이니 내가 너를 기뻐한다고 하셨어요. 족보에서 예수님은 하나님의 아들로 이어져요."},
-        {"from":"예수","to":"아담","label":"자손","kind":"family","directed":true,"weight":1,"verses":"23, 38","note":"누가는 족보를 아담, 하나님의 아들까지 올려요. 새 사람의 시작으로 예수님을 소개하는 뜻이에요."}
+        {"from":"하나님","to":"예수","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"22","note":"세례 때 하늘 음성은 너는 내가 사랑하는 아들이니 내가 너를 기뻐한다고 하셨어요. 족보에서 예수님은 하나님의 아들로 이어져요."}
       ],
       "places": [
         {"name":"빈 들","where":"유대 광야","what":"말씀이 요한에게 임한 곳","weight":2},
@@ -131,8 +127,6 @@
         {"name":"나사렛 사람들","role":"분노한 고향 사람","weight":3},
         {"name":"귀신 들린 사람","role":"가버나움 회당의 사람","weight":1},
         {"name":"시몬의 장모","role":"열병이 나은 여인","weight":1},
-        {"name":"엘리야","role":"사르밧 과부에게 간 선지자","weight":1},
-        {"name":"엘리사","role":"나아만을 고친 선지자","weight":1},
         {"name":"성령","role":"예수께 임하신 영","weight":2}
       ],
       "rels": [
@@ -230,7 +224,6 @@
         {"name":"유대인 장로들","role":"백부장을 위해 간구한 이들","weight":1},
         {"name":"나인성 과부","role":"외아들을 잃은 여인","weight":2},
         {"name":"과부의 아들","role":"살아난 청년","weight":2},
-        {"name":"세례 요한","role":"옥에서 물은 선지자","weight":2},
         {"name":"시몬","role":"예수를 초대한 바리새인","weight":2},
         {"name":"죄 있는 여자","role":"발에 향유를 부은 여인","weight":3}
       ],
@@ -238,7 +231,6 @@
         {"from":"백부장","to":"예수","label":"믿고 구한 이","kind":"ally","directed":true,"weight":3,"verses":"6-9","note":"백부장은 자기를 낮추어 집에 모실 자격도 없다고 했어요. 말씀의 권위를 믿고 친구들을 보내 부탁했어요."},
         {"from":"예수","to":"나인성 과부","label":"불쌍히 여김","kind":"ally","directed":true,"weight":2,"verses":"13","note":"예수님은 부탁받지 않았는데도 우는 과부를 보고 불쌍히 여겨 다가가셨어요. 외아들을 잃어 의지할 데 없는 사람이었어요."},
         {"from":"과부의 아들","to":"나인성 과부","label":"외아들","kind":"family","directed":true,"weight":2,"verses":"12, 14-15","note":"일어난 청년을 예수님이 어머니에게 주셨어요. 하나님이 자기 백성을 찾아오셨다고 사람들이 찬양했어요."},
-        {"from":"세례 요한","to":"예수","label":"물어본 선지자","kind":"ally","directed":true,"weight":2,"verses":"18-20","note":"옥에 갇힌 요한은 제자들을 보내 오실 분이 누구인지 물었어요. 예수님은 행하신 일을 보고 전하라고 답하셨어요."},
         {"from":"죄 있는 여자","to":"예수","label":"향유를 부음","kind":"ally","directed":true,"weight":3,"verses":"37-38","note":"동네에서 죄인으로 알려진 여인이 눈물로 발을 적시고 머리털로 닦으며 향유를 부었어요. 감사와 사랑의 표현이에요."},
         {"from":"시몬","to":"죄 있는 여자","label":"속으로 비난","kind":"conflict","directed":true,"weight":2,"verses":"39","note":"바리새인 시몬은 선지자라면 이 여자가 누군지 알았을 거라고 속으로 비난했어요. 예수님은 시몬에게 빚진 두 사람 비유를 들려주셨어요."},
         {"from":"유대인 장로들","to":"백부장","label":"대신 간구","kind":"ally","directed":true,"weight":1,"verses":"3-5","note":"장로들은 백부장이 우리 민족을 사랑하고 회당을 지어 준 사람이라며 간절히 도와 달라 청했어요."}
@@ -376,7 +368,6 @@
         {"name":"한 여자","role":"예수의 어머니를 칭송한 이","weight":1},
         {"name":"바리새인","role":"예수를 초대한 이","weight":2},
         {"name":"율법교사","role":"책망받은 이들","weight":2},
-        {"name":"요나","role":"표적의 선지자","weight":1},
         {"name":"성령","role":"구하는 자에게 주시는 선물","weight":2},
         {"name":"하나님","role":"좋은 것을 주시는 아버지","weight":3}
       ],
@@ -436,20 +427,16 @@
       ],
       "people": [
         {"name":"예수","role":"회개를 촉구하신 분","weight":3},
-        {"name":"빌라도","role":"갈릴리인의 피를 섞은 총독","weight":1},
         {"name":"포도원지기","role":"한 해 더 기다리자 한 이","weight":2},
         {"name":"포도원 주인","role":"찍어 버리라 한 이","weight":1},
         {"name":"꼬부라진 여자","role":"열여덟 해 만에 펴진 여인","weight":3},
         {"name":"회당장","role":"분낸 이","weight":2},
-        {"name":"헤롯","role":"예수를 죽이려 한 여우","weight":2},
         {"name":"바리새인","role":"헤롯의 뜻을 전한 이","weight":1}
       ],
       "rels": [
         {"from":"예수","to":"꼬부라진 여자","label":"아브라함의 딸","kind":"ally","directed":true,"weight":3,"verses":"12-13, 16","note":"열여덟 해 동안 몸을 펴지 못한 여인을 예수님이 먼저 불러 병에서 놓였다 하시고 안수하셨어요. 아브라함의 딸이라 부르셨어요."},
         {"from":"회당장","to":"예수","label":"분낸 이","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"회당장은 안식일에 병을 고쳤다고 화를 내며 일할 날이 엿새나 있다고 말했어요. 예수님은 그를 외식하는 자라 부르셨어요."},
-        {"from":"헤롯","to":"예수","label":"죽이려 함","kind":"conflict","directed":true,"weight":2,"verses":"31-32","note":"바리새인들이 헤롯이 죽이려 한다고 경고했어요. 예수님은 그를 여우라 하시고 내 길을 계속 간다고 답하셨어요."},
-        {"from":"포도원지기","to":"포도원 주인","label":"간청한 이","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"열매 없는 나무를 베자는 주인에게 지기는 올해만 두고 거름을 주겠다고 간청했어요. 하나님의 인내를 닮은 중보 모습이에요."},
-        {"from":"빌라도","to":"예수","label":"언급된 총독","kind":"other","directed":true,"weight":1,"verses":"1","note":"빌라도가 제물을 드리던 갈릴리 사람들을 죽였다는 소식이 전해졌어요. 예수님은 그 사건을 회개의 교훈으로 말씀하셨어요."}
+        {"from":"포도원지기","to":"포도원 주인","label":"간청한 이","kind":"other","directed":true,"weight":2,"verses":"8-9","note":"열매 없는 나무를 베자는 주인에게 지기는 올해만 두고 거름을 주겠다고 간청했어요. 하나님의 인내를 닮은 중보 모습이에요."}
       ],
       "places": [
         {"name":"실로암 망대","where":"예루살렘 남쪽","what":"무너져 열여덟이 죽은 곳","weight":1},
@@ -533,8 +520,7 @@
         {"name":"바리새인","role":"돈을 좋아해 비웃은 이들","weight":2},
         {"name":"부자","role":"음부에서 고통받는 이","weight":3},
         {"name":"나사로","role":"아브라함의 품에 간 거지","weight":3},
-        {"name":"아브라함","role":"나사로를 품은 조상","weight":2},
-        {"name":"모세","role":"들어야 할 율법","weight":1}
+        {"name":"아브라함","role":"나사로를 품은 조상","weight":2}
       ],
       "rels": [
         {"from":"주인","to":"옳지 않은 청지기","label":"해고하려다 칭찬","kind":"other","directed":true,"weight":2,"verses":"1-2, 8","note":"주인은 재산을 낭비한 청지기를 해고하려 했어요. 그런데 위기 앞에서 영리하게 길을 찾은 점은 인정했어요."},
@@ -564,16 +550,12 @@
         {"name":"사도들","role":"믿음을 구한 이들","weight":2},
         {"name":"열 명의 나병환자","role":"깨끗함 받은 이들","weight":2},
         {"name":"사마리아 사람","role":"돌아와 감사한 이","weight":3},
-        {"name":"바리새인","role":"나라가 언제 오냐 물은 이","weight":1},
-        {"name":"노아","role":"홍수 때의 사람","weight":1},
-        {"name":"롯","role":"소돔에서 나온 사람","weight":1},
-        {"name":"롯의 처","role":"뒤돌아본 아내","weight":1}
+        {"name":"바리새인","role":"나라가 언제 오냐 물은 이","weight":1}
       ],
       "rels": [
         {"from":"사마리아 사람","to":"예수","label":"돌아와 감사함","kind":"ally","directed":true,"weight":3,"verses":"15-16","note":"열 사람 중 사마리아 사람 한 명만 돌아와 큰 소리로 하나님께 영광을 돌리고 예수님 발 앞에 엎드려 감사했어요."},
         {"from":"예수","to":"열 명의 나병환자","label":"깨끗하게 하심","kind":"ally","directed":true,"weight":2,"verses":"12-14","note":"나병 환자 열 명이 멀리 서서 불쌍히 여겨 달라고 소리쳤어요. 예수님은 제사장에게 몸을 보이라 하시고 가는 길에 낫게 하셨어요."},
-        {"from":"사도들","to":"예수","label":"믿음을 구함","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"사도들은 하루 일곱 번이라도 용서하라는 말씀이 어려워 믿음을 더해 달라 했어요. 예수님은 겨자씨만 한 믿음이면 충분하다 하셨어요."},
-        {"from":"롯의 처","to":"롯","label":"부부","kind":"family","directed":false,"weight":1,"verses":"28-32","note":"예수님은 롯의 아내를 기억하라고만 하셨어요. 소유에 매이지 말라는 경고로 읽는 견해가 많아요."}
+        {"from":"사도들","to":"예수","label":"믿음을 구함","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"사도들은 하루 일곱 번이라도 용서하라는 말씀이 어려워 믿음을 더해 달라 했어요. 예수님은 겨자씨만 한 믿음이면 충분하다 하셨어요."}
       ],
       "places": [
         {"name":"사마리아와 갈릴리 사이","where":"두 지방의 경계","what":"나병환자들을 만나신 곳","weight":2}
@@ -665,16 +647,13 @@
         {"name":"악한 농부들","role":"아들을 죽인 소작인","weight":2},
         {"name":"정탐들","role":"세금으로 시험한 이들","weight":2},
         {"name":"사두개인","role":"부활을 부인한 이들","weight":2},
-        {"name":"가이사","role":"로마 황제","weight":1},
-        {"name":"세례 요한","role":"하늘의 세례를 준 이","weight":1},
-        {"name":"다윗","role":"그리스도를 주라 한 왕","weight":1}
+        {"name":"가이사","role":"로마 황제","weight":1}
       ],
       "rels": [
         {"from":"대제사장과 서기관","to":"예수","label":"책잡으려 함","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 19","note":"성전 지도자들이 무슨 권위로 이러느냐 묻고, 비유를 듣고는 자기들을 가리킨다고 느껴 잡으려 했어요."},
         {"from":"대제사장과 서기관","to":"정탐들","label":"보낸 이들","kind":"other","directed":true,"weight":2,"verses":"20","note":"지도자들은 예수님을 총독의 권세에 넘기려고 의인인 척하는 정탐들을 보냈어요. 말 꼬투리를 잡으려는 계획이에요."},
         {"from":"정탐들","to":"예수","label":"시험한 이들","kind":"conflict","directed":true,"weight":2,"verses":"21-26","note":"정탐들은 선생님이 편벽되지 않고 진리로 가르치신다고 칭찬하며 가이사에게 세금을 내는 것이 옳으냐고 물었어요."},
-        {"from":"사두개인","to":"예수","label":"부활로 시험","kind":"conflict","directed":true,"weight":2,"verses":"27-33","note":"사두개인들은 부활이 없다고 믿어서 일곱 형제의 아내 이야기로 부활이 이치에 안 맞는다고 시험했어요."},
-        {"from":"다윗","to":"예수","label":"주라 부름","kind":"other","directed":true,"weight":1,"verses":"41-44","note":"다윗은 시편 110편에서 그리스도를 내 주라 불렀어요. 예수님은 다윗의 자손이면서 다윗의 주이신 분이에요."}
+        {"from":"사두개인","to":"예수","label":"부활로 시험","kind":"conflict","directed":true,"weight":2,"verses":"27-33","note":"사두개인들은 부활이 없다고 믿어서 일곱 형제의 아내 이야기로 부활이 이치에 안 맞는다고 시험했어요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 성전","what":"논쟁하신 곳","weight":3}
@@ -724,7 +703,6 @@
         {"name":"예수","role":"새 언약을 세우신 분","weight":3},
         {"name":"가룟 유다","role":"예수를 판 제자","weight":3},
         {"name":"베드로","role":"세 번 부인한 제자","weight":3},
-        {"name":"사탄","role":"유다에게 들어간 자","weight":2},
         {"name":"대제사장들","role":"예수를 잡은 이들","weight":2},
         {"name":"천사","role":"힘을 도운 이","weight":1},
         {"name":"대제사장의 종","role":"귀가 나은 이","weight":1},
@@ -732,7 +710,6 @@
         {"name":"하나님","role":"원대로 하시는 아버지","weight":2}
       ],
       "rels": [
-        {"from":"사탄","to":"가룟 유다","label":"들어간 자","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"사탄이 열둘 중 하나인 유다 속에 들어가 배반을 부추겼어요. 유다는 대제사장들과 은을 받기로 약속했어요."},
         {"from":"가룟 유다","to":"예수","label":"입맞춤으로 팖","kind":"conflict","directed":true,"weight":3,"verses":"47-48","note":"유다가 입을 맞추려 하자 예수님은 유다야 네가 입맞춤으로 인자를 파느냐고 하셨어요. 배반의 신호를 짚으신 거예요."},
         {"from":"예수","to":"베드로","label":"위해 기도함","kind":"ally","directed":true,"weight":3,"verses":"31-32","note":"사탄이 밀 까부르듯 하려 했지만 예수님이 믿음이 떨어지지 않게 기도하셨어요. 돌이킨 후에 형제들을 굳게 하라 하셨어요."},
         {"from":"베드로","to":"예수","label":"세 번 부인","kind":"conflict","directed":true,"weight":3,"verses":"56-62","note":"베드로는 마당에서 세 번 모른다 했어요. 닭이 울 때 주께서 돌이켜 보시자 말씀이 생각나 통곡했어요."},
