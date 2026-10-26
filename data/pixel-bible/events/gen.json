@@ -3260,6 +3260,212 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"symbolic","lead":"노아","target":"셈","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"read","duration":1.2,"actor":"노아"},{"action":"look","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 6:5-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-7-0",
+      "code": "gen",
+      "chapter": 7,
+      "title": "가족과 생물이 방주에 들어가다",
+      "actors": [
+        "노아",
+        "셈",
+        "함",
+        "야벳"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 7:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노아는 가족과 생물을 데리고 방주에 들어가고 하나님이 문을 닫으세요. 정결한 생물과 부정한 생물을 구분하는 지시가 있으며, 모든 종류를 단순히 한 쌍으로만 설명하지 않아요."
+      ],
+      "study": "노아는 가족과 생물을 데리고 방주에 들어가고 하나님이 문을 닫으세요. 정결한 생물과 부정한 생물을 구분하는 지시가 있으며, 모든 종류를 단순히 한 쌍으로만 설명하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"노아","target":"셈","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"노아"},{"action":"bend","duration":1.2,"actor":"노아"},{"action":"grasp","duration":1.5,"actor":"노아"},{"action":"lift","duration":1.8,"actor":"노아"},{"action":"bundle","duration":1.5,"actor":"노아"},{"action":"carry","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 7:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-8-0",
+      "code": "gen",
+      "chapter": 8,
+      "title": "마른 땅을 확인하고 방주에서 나오다",
+      "actors": [
+        "노아"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 8:13-19",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노아는 덮개를 열어 지면을 확인하고 땅이 마른 뒤 나오라는 말씀을 들어요. 가족과 생물들이 방주를 나와 땅에서 번성할 새 삶을 시작해요."
+      ],
+      "study": "노아는 덮개를 열어 지면을 확인하고 땅이 마른 뒤 나오라는 말씀을 들어요. 가족과 생물들이 방주를 나와 땅에서 번성할 새 삶을 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"depart","lead":"노아","target":null,"mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"gather","duration":1.2,"actor":"노아"},{"action":"carry","duration":1.5,"actor":"노아"},{"action":"walk","duration":1.8,"actor":"노아"},{"action":"walk","duration":1.5,"actor":"노아"},{"action":"look","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 8:13-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-9-0",
+      "code": "gen",
+      "chapter": 9,
+      "title": "생명의 존엄과 번성의 책임을 듣다",
+      "actors": [
+        "노아",
+        "셈",
+        "함",
+        "야벳"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 9:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노아와 아들들은 번성의 복과 함께 피와 생명을 함부로 다루지 말라는 명령을 들어요. 사람의 생명이 하나님의 형상과 연결된 존엄을 지닌다는 점을 설명해요."
+      ],
+      "study": "노아와 아들들은 번성의 복과 함께 피와 생명을 함부로 다루지 말라는 명령을 들어요. 사람의 생명이 하나님의 형상과 연결된 존엄을 지닌다는 점을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"instruct","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"turn","duration":1.2,"actor":"노아"},{"action":"speak","duration":1.5,"actor":"노아"},{"action":"point","duration":1.8,"actor":"노아"},{"action":"listen","duration":1.5,"actor":"노아"},{"action":"lower","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-9-1",
+      "code": "gen",
+      "chapter": 9,
+      "title": "노아가 아들들에 관한 말을 남기다",
+      "actors": [
+        "노아",
+        "셈",
+        "야벳",
+        "가나안"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 9:24-29",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노아는 깨어난 뒤 가나안과 셈과 야벳에 관한 말을 남겨요. 저주의 대상은 본문대로 가나안으로 구분하며, 이를 특정 인종의 운명으로 일반화하지 않아요. 본문은 노아의 죽음으로 마무리돼요."
+      ],
+      "study": "노아는 깨어난 뒤 가나안과 셈과 야벳에 관한 말을 남겨요. 저주의 대상은 본문대로 가나안으로 구분하며, 이를 특정 인종의 운명으로 일반화하지 않아요. 본문은 노아의 죽음으로 마무리돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"prophecy","lead":"노아","target":"셈","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"surprised","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"노아"},{"action":"lift","duration":1.2,"actor":"노아"},{"action":"speak","duration":1.5,"actor":"노아"},{"action":"sway","duration":1.8,"actor":"노아"},{"action":"lower","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 9:24-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-33-0",
+      "code": "gen",
+      "chapter": 33,
+      "title": "에서가 야곱을 달려와 끌어안다",
+      "actors": [
+        "야곱",
+        "에서"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 33:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱은 형에게 다가가며 거듭 절하고 에서는 달려와 동생을 끌어안아요. 두 사람은 함께 울고 가족을 소개하며, 야곱의 권유 끝에 에서가 예물을 받아요."
+      ],
+      "study": "야곱은 형에게 다가가며 거듭 절하고 에서는 달려와 동생을 끌어안아요. 두 사람은 함께 울고 가족을 소개하며, 야곱의 권유 끝에 에서가 예물을 받아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"},{"action":"extend","duration":1.5,"actor":"야곱"},{"action":"receive","duration":1.8,"actor":"야곱"},{"action":"bow","duration":1.5,"actor":"야곱"},{"action":"stand","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 33:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-45-0",
+      "code": "gen",
+      "chapter": 45,
+      "title": "요셉이 정체를 밝히고 형들을 끌어안다",
+      "actors": [
+        "요셉",
+        "유다",
+        "베냐민"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 45:1-15",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉은 시종을 물리고 형들에게 자신을 밝히며 울어요. 생명을 보존하기 위한 하나님의 섭리를 말하고 아버지를 데려오라고 부탁한 뒤 베냐민과 형들을 안아요. 형들은 그제야 말하기 시작해요."
+      ],
+      "study": "요셉은 시종을 물리고 형들에게 자신을 밝히며 울어요. 생명을 보존하기 위한 하나님의 섭리를 말하고 아버지를 데려오라고 부탁한 뒤 베냐민과 형들을 안아요. 형들은 그제야 말하기 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"유다","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.8,"actor":"요셉"},{"action":"bow","duration":1.5,"actor":"요셉"},{"action":"stand","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 45:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
