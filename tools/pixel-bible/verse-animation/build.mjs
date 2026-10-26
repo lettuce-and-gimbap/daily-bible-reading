@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 const code=process.argv[2]||'mat';
-const authors={mat:['matthew','마태복음'],mrk:['mark','마가복음'],luk:['luke','누가복음'],jhn:['john','요한복음']};
+const authors={mat:['matthew','마태복음'],mrk:['mark','마가복음'],luk:['luke','누가복음'],jhn:['john','요한복음'],act:['acts','사도행전']};
 if(!authors[code])throw Error('No authored verse book '+code);
 const [author,bookName]=authors[code],{chapters,additionalPeople}=await import('./'+author+'.mjs');
 import {ANIMATION_MOTIFS} from '../../../js/features/pixel-bible/event-animation/motifs.js';
