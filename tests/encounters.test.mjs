@@ -214,6 +214,9 @@ test('약한 가족 관계 대사는 기존보다 5배 많은 변형을 쓰고 �
  const cainAbel=relationshipLines(cain,abel,hostileSibling,null,{random:()=>0});
  assert.match(cainAbel[0].text,/동생아/,'관계 설명에서 연령 순서와 호칭을 읽는다');
  assert.match(cainAbel[1].text,/형/);
+ const olderSister={name:'누나',role:'언니'},youngerSister={name:'동생',role:'여동생'};
+ const sisters=relationshipLines(youngerSister,olderSister,{from:{...olderSister,code:'gen',chap:1},to:{...youngerSister,code:'gen',chap:1},kind:'family',label:'자매',text:'언니가 동생을 도왔습니다.',ref:'창세기 1:1'},null,{random:()=>0});
+ assert.match(sisters[0].text,/언니/,'자매 관계에서는 형 대신 언니 호칭을 쓴다');
 });
 
 test('약한 적대 관계 대사도 열 가지 사건 중심 응답을 고르고 서로 질문과 반박을 주고받는다',()=>{

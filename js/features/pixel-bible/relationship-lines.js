@@ -161,7 +161,7 @@ function relationshipFallback(a,b,relation,index){
  }
  if(category==='parent')return kinshipText(pair[0]);
  if(category==='child')return kinshipText(EXCHANGES.parent[index%EXCHANGES.parent.length][1]);
- if(category==='siblingOlder'||category==='siblingYounger')return pair[0];
+ if(category==='siblingOlder'||category==='siblingYounger')return kinshipText(pair[0]);
  if(category==='conflict'||category==='sibling'||category==='couple'||category==='ally'||category==='other')return isFrom?pair[0]:pair[1];
  return isFrom?pair[0]:pair[1];
 }
