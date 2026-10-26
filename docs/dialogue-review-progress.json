@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "php",
-    "nextBook": "col",
-    "booksCompleted": 50,
+    "currentBook": "col",
+    "nextBook": "1th",
+    "booksCompleted": 51,
     "completedBooks": [
       "gen",
       "exo",
@@ -347,10 +347,11 @@
       "2co",
       "gal",
       "eph",
-      "php"
+      "php",
+      "col"
     ],
-    "chaptersReviewed": 1111,
-    "relationshipLinksReviewed": 3674,
+    "chaptersReviewed": 1115,
+    "relationshipLinksReviewed": 3691,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -361,9 +362,9 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "빌립보서 4장을 살펴 바울의 감사와 복음 동역, 겸손한 섬김, 그리스도를 아는 기쁨, 염려와 자족에 관한 권면 4묶음·8문장에 절별 근거를 연결했다. 감옥 상황의 소망과 서신의 공동체 권면을 구별하고 관계선 16개를 확인했다. 다음은 골로새서다.",
+    "statusNote": "골로새서 4장을 검토해 바울의 감사와 그리스도의 우월성, 새 사람의 삶, 기도와 동역자 인사를 담은 4묶음·8문장에 절별 참조를 붙였다. 철학에 대한 경계, 가정과 일터의 권면, 두기고·오네시모의 편지 전달을 확인하고 관계 연결 17개를 점검했다. 다음은 데살로니가전서다.",
     "partialBookAudit": {
-      "book": "php",
+      "book": "col",
       "chaptersScanned": 4,
       "chaptersWithAuthoredDialogueReviewed": 4,
       "authoredUtteranceGroupsReviewed": 4,
@@ -371,12 +372,12 @@
       "chapterDialogueAudit": 4,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 16,
+      "relationshipEdgesAudited": 17,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 16,
-      "relationshipLinksFound": 16,
+      "relationshipBasedPairLines": 17,
+      "relationshipLinksFound": 17,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 16,
+      "generatedLinksRemaining": 17,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -386,7 +387,7 @@
         3,
         4
       ],
-      "statusNote": "빌립보서 4장을 살펴 바울의 감사와 복음 동역, 겸손한 섬김, 그리스도를 아는 기쁨, 염려와 자족에 관한 권면 4묶음·8문장에 절별 근거를 연결했다. 감옥 상황의 소망과 서신의 공동체 권면을 구별하고 관계선 16개를 확인했다. 다음은 골로새서다."
+      "statusNote": "골로새서 4장을 검토해 바울의 감사와 그리스도의 우월성, 새 사람의 삶, 기도와 동역자 인사를 담은 4묶음·8문장에 절별 참조를 붙였다. 철학에 대한 경계, 가정과 일터의 권면, 두기고·오네시모의 편지 전달을 확인하고 관계 연결 17개를 점검했다. 다음은 데살로니가전서다."
     },
     "currentBookStatus": "complete"
   }
