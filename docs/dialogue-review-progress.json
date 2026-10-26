@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "est",
-    "nextBook": "est",
-    "booksCompleted": 16,
+    "currentBook": "job",
+    "nextBook": "job",
+    "booksCompleted": 17,
     "completedBooks": [
       "gen",
       "exo",
@@ -313,11 +313,12 @@
       "1ch",
       "2ch",
       "ezr",
-      "neh"
+      "neh",
+      "est"
     ],
-    "chaptersReviewed": 426,
-    "relationshipLinksReviewed": 1967,
-    "authoredPairEntriesReviewed": 254,
+    "chaptersReviewed": 436,
+    "relationshipLinksReviewed": 2014,
+    "authoredPairEntriesReviewed": 256,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
@@ -327,6 +328,6 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "창세기부터 느헤미야까지 16권의 관계·사건 대사 품질 재검토를 마쳤다. 426장, 관계선 1,967개, 등록 대화 254개를 확인했다. 에스라·느헤미야에서는 편지·사절·공동 권면과 실제 대면을 구분하고 본문에 답이 없는 장면은 재구성으로 표시했다. 느헤미야의 형 하나니가 전한 소식 뒤의 기도는 하나님께 드린 기도로 구분했고, 가난한 이들의 호소에 대한 느헤미야의 대응은 귀족을 향한 책망임을 밝혔다. 수문 앞 율법 낭독은 에스라의 발화와 느헤미야의 기쁨 권면을 나눴으며, 공동 언약·공사·성문 수비처럼 본문이 행동만 기록한 경우는 직접 대화로 오해하지 않도록 설명을 보강했다. 도비야와 엘리아십, 스마야와 느헤미야의 관계 발화도 본문에 없는 대화임을 표시했다. 느헤미야 13장 전체와 관계선 52개, 사건 대화 15개를 대조했으며, 다음은 에스더다. 전체 구조 검사는 통과 상태이며 권별 품질 검토를 계속한다."
+    "statusNote": "창세기부터 에스더까지 17권의 관계·사건 대사 품질 재검토를 마쳤다. 436장, 관계선 2,014개, 등록 대화 256개를 확인했다. 에스더서에서는 모르드개와 에스더의 대화를 하닥이 전한 문답으로 구분했다. 에스더의 왕 앞에 나아가는 두려움, 모르드개의 민족 위기와 왕후의 사명에 대한 권면, 에스더의 금식 요청과 결단이 서로 이어지도록 문장을 고쳤다. 두 사람은 직접 만난 것이 아니므로 이를 자세히 보기에 명시했다. 에스더 10장 전체와 관계 연결 47개, 사건 대화 2개를 대조했으며 다음은 욥기다. 전체 구조 검사는 통과 상태이며 권별 품질 검토를 계속한다."
   }
 }

@@ -517,6 +517,16 @@ test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지�
  const elders=PAIR_DIALOGUE.find(entry=>entry.id==='pair-265');assert.match(elders.detail,/두 사람이 나눈 대화를 싣지 않으므로/);
 });
 
+test('에스더와 모르드개는 하닥을 통한 두려움·결단의 문답으로 이어진다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/est.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'est',name:'에스더',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters);assert.equal(context.relations.length,47);
+ for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref));}
+ const esther=PAIR_DIALOGUE.find(entry=>entry.id==='pair-41'),mordecai=PAIR_DIALOGUE.find(entry=>entry.id==='pair-42');
+ assert.match(esther.lines[0],/부름 없이 왕께 나아가면 죽을 수 있어/);assert.match(esther.lines[1],/죽으면 죽으리라/);
+ assert.match(mordecai.lines[1],/이때를 위해 왕후/);assert.match(esther.detail,/하닥을 통해/);assert.match(mordecai.detail,/직접 대면이 아니라 전령을 통한 대화/);
+});
+
 test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵한 피해자에게 대사를 붙이지 않는다',()=>{
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='jdg');
  assert.equal(rows.length,23);
