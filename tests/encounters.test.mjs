@@ -40,6 +40,43 @@ test('TV 부스는 관계선이 있는 두 인물에게 관계 유형에 맞는 
  const unrelated=loveBoothExchange(a,b,[]);assert.equal(unrelated.mode,'awkward');assert.equal(unrelated.lines.length,2);
 });
 
+test('창세기부터 여호수아까지 관계도 연결 466개가 모두 양방향 대화 대상이다',()=>{
+ let audited=0;
+ for(const code of ['gen','exo','lev','num','deu','jos']){
+  const data=JSON.parse(fs.readFileSync(`data/summary/${code}.json`));
+  const chapters=Object.entries(data.chapters).map(([chap,chapter])=>({code,name:code,chap:Number(chap),data:chapter}));
+  const context=buildChapterDialogue(chapters);
+  for(const relation of context.relations){
+   const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+   assert.equal(lines.length,2,`${code}.${relation.from.chap} ${relation.from.name} ↔ ${relation.to.name}`);
+   assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)),'연결 관계가 어색한 인사로 대체되지 않음');
+   audited++;
+  }
+ }
+ assert.equal(audited,466);
+});
+
+test('사무엘상 관계도 377개가 모두 대화되며 핵심 사건에는 구절에 맞춘 응답을 제공한다',()=>{
+ const data=JSON.parse(fs.readFileSync('data/summary/1sa.json'));
+ const chapters=Object.entries(data.chapters).map(([chap,chapter])=>({code:'1sa',name:'사무엘상',chap:Number(chap),data:chapter}));
+ const context=buildChapterDialogue(chapters);assert.equal(context.people.length>0,true);
+ let audited=0;
+ for(const relation of context.relations){
+  const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+  assert.equal(lines.length,2,`${relation.from.chap}장 관계선 양방향 대화`);
+  assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));
+  audited++;
+ }
+ assert.equal(audited,377);
+ const cases=[['1sa.1','한나','엘가나',/젖을 뗄|서원/,/당신이 좋다고|기다립시다/],['1sa.3','사무엘','엘리',/부르시면|숨기지/,/말씀하옵소서|알려 다오/],['1sa.14','요나단','사울',/꿀/,/맹세/],['1sa.17','다윗','골리앗',/여호와의 이름/,/막대기|새와 들짐승/],['1sa.20','요나단','다윗',/화살|떠나/,/약속|집안/],['1sa.21','다윗','아히멜렉',/빵|무기/,/거룩한 빵|골리앗의 칼/],['1sa.24','다윗','사울',/해치지 않았/,/다윗아|의롭구나/],['1sa.25','아비가일','다윗',/나발의 죄/,/보복하지/],['1sa.22','아비아달','다윗',/에봇|피했습니다/,/내 책임|머물러라/]];
+ for(const [chapter,speaker,target,first,reply]of cases){
+  const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
+  assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} ${speaker} 발화`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} ${target} 응답`);
+ }
+ const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='1sa');
+ assert.equal(rows.length,32);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length),'각 발화마다 구절 연결');
+});
+
 test('동시 조우는 한 쌍만 진행해 자동 말풍선 슬롯과 합쳐 대화 세트를 두 개로 제한한다',()=>{
  const people=['아합','나봇','엘리야','엘리사','모세','아론'];
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:people.map(name=>({name,role:'본문 인물'})),rels:[

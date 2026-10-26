@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 8,
-  "currentBook": "1sa",
+  "booksCompleted": 9,
+  "currentBook": "2sa",
   "currentBookStatus": "in-progress",
-  "nextBook": "1sa",
+  "nextBook": "2sa",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -99,7 +99,7 @@
       "chapterDialogueAudit": 24,
       "pairedEntriesReviewed": 10,
       "newTwoWayEntries": 8,
-      "relationshipEdgesAudited": 62,
+      "relationshipEdgesAudited": 52,
       "relationshipTargetsAudited": 50,
       "status": "complete",
       "eventVerseSpanAudit": {
@@ -108,7 +108,9 @@
         "missing": 0,
         "duplicate": 0
       },
-      "statusNote": "여호수아 24장 전체의 장면·관계 후보 62개를 대조하고, 하나님을 제외한 인간 인물 관계 연결 대상 50개가 관계망에서 유지되는지 확인했다. 독백 25묶음의 50개 문장에 개별 절 참조를 달고 화자 시점을 바로잡았다. 직접 대화와 사건상 응답이 확인되는 라합·정탐꾼, 여호수아·요단 동편 지파, 여호수아·군대 장관, 아간, 기브온 사람들, 요셉 자손, 비느하스·르우벤 지파, 여호수아·백성의 양방향 대화 8개를 추가했다. 관계가 있다는 사실만으로 본문에 없는 발언을 만들어내지는 않았으며, 미기록 관계의 자동 어색한 인사는 생성하지 않는 기존 동작을 확인했다. 아이 왕은 직접 발화가 없어 인물 대사에서 제외했다. 사건 범위 658절은 누락·중복 없이 통과했다."
+      "statusNote": "여호수아 24장 전체의 인물·사건·관계 후보를 다시 대조했다. 요단 동편 지파, 라합과 정탐꾼, 여호수아와 백성, 아간, 기브온 사람들, 요셉 자손, 비느하스와 르우벤 지파 등 관계선 52개를 모두 양방향 대화 대상으로 확인했다. 그중 본문 장면에 맞춘 대화가 15개이며, 나머지 37개도 관계 설명을 바탕으로 짧은 양방향 특수 대화를 제공한다. 어색한 인사로만 끝나는 연결은 없고, 사건 범위 658절도 누락·중복 없이 통과했다.",
+      "authoredPairLinks": 15,
+      "relationshipBasedPairLines": 37
     },
     "jdg": {
       "chaptersScanned": 21,
@@ -149,6 +151,19 @@
         "duplicate": 0
       },
       "statusNote": "룻기 4장 전체를 읽고 사건·관계 연결 21개를 대조했다. 나오미의 중복 발화 행을 하나로 합치고 보아스의 중복 행을 정리했으며, 직접 말하지 않은 오르바의 행동을 독백처럼 쓰던 행은 제거했다. 남은 발화 5묶음의 10문장에 각각 절 참조를 달고 룻과 나오미의 타작마당 계획, 보아스와 더 가까운 기업 무를 자의 협상을 양방향 대화로 추가했다. 관계도 연결은 기존·유형별 대화를 포함해 모두 대화 후보가 된다. 사건 범위 85절은 누락·중복 없이 통과했다."
+    },
+    "1sa": {
+      "chaptersScanned": 31,
+      "chapterDialogueAudit": 31,
+      "authoredUtteranceGroupsReviewed": 32,
+      "utteranceReferencesCorrected": 64,
+      "pairedEntriesReviewed": 15,
+      "newTwoWayEntries": 8,
+      "relationshipEdgesAudited": 377,
+      "authoredPairLinks": 35,
+      "relationshipBasedPairLines": 342,
+      "status": "complete",
+      "statusNote": "사무엘상 31장 전체의 장별 인물·사건 인덱스와 관계선 377개를 대조했다. 관계선은 모두 양방향 대화로 연결되며 미연결은 0개다. 한나와 엘가나, 사무엘과 엘리, 요나단과 사울, 다윗과 골리앗·요나단·사울, 다윗과 아히멜렉, 아비가일과 다윗, 아비아달과 다윗 등 핵심 장면에 관계 기반 대화 8개를 추가했다. 기존 독백 32묶음의 64개 발화에 각 문장별 절 범위를 연결하고 장 범위와 대조했다. 관계도에 연결된 인물은 어색한 인사로 대체되지 않는다."
     }
   },
   "relationshipDialogueCoverage": {
@@ -160,11 +175,12 @@
       "deu",
       "jos",
       "jdg",
-      "rut"
+      "rut",
+      "1sa"
     ],
-    "relationshipLinks": 555,
-    "authoredPairLinks": 127,
-    "relationshipBasedPairLines": 428,
+    "relationshipLinks": 932,
+    "authoredPairLinks": 162,
+    "relationshipBasedPairLines": 770,
     "unpairedLinks": 0,
     "rule": "관계도 연결은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 짧은 창작 대사를 쓰고, 관계 설명과 구절은 자세히 보기에서 확인한다."
   }
