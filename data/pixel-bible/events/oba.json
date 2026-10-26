@@ -23,7 +23,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 설명을 위한 픽셀 장면이며 세부 자세와 시간은 창작이에요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"tower","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:3-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "오바댜",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "tower",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "오바댜"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "오바댜"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "오바댜"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "오바댜"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:3-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-oba-extra-1-0",
@@ -51,7 +97,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":"에돔(에서)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:5-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "오바댜",
+        "target": "에돔(에서)",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "오바댜"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "오바댜"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "오바댜"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "오바댜"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:5-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-oba-extra-1-1",
@@ -80,7 +172,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"에돔(에서)","target":"야곱 족속","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에돔(에서)"},{"action":"turn","duration":1.2,"actor":"에돔(에서)"},{"action":"speak","duration":1.5,"actor":"에돔(에서)"},{"action":"point","duration":1.8,"actor":"에돔(에서)"},{"action":"listen","duration":1.5,"actor":"에돔(에서)"},{"action":"lower","duration":1.2,"actor":"에돔(에서)"}],"duration":8.2,"support":null,"ref":"오바댜 1:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "에돔(에서)",
+        "target": "야곱 족속",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에돔(에서)"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:10-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-oba-extra-1-2",
@@ -108,7 +246,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"judgment","lead":"에돔(에서)","target":"이방인","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에돔(에서)"},{"action":"turn","duration":1.2,"actor":"에돔(에서)"},{"action":"speak","duration":1.5,"actor":"에돔(에서)"},{"action":"point","duration":1.8,"actor":"에돔(에서)"},{"action":"listen","duration":1.5,"actor":"에돔(에서)"},{"action":"lower","duration":1.2,"actor":"에돔(에서)"}],"duration":8.2,"support":null,"ref":"오바댜 1:15-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "judgment",
+        "lead": "에돔(에서)",
+        "target": "이방인",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "에돔(에서)"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에돔(에서)"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:15-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-oba-extra-1-3",
@@ -135,7 +319,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"promise","lead":"구원자들","target":"야곱 족속","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"구원자들"},{"action":"lift","duration":1.2,"actor":"구원자들"},{"action":"speak","duration":1.5,"actor":"구원자들"},{"action":"bless","duration":1.8,"actor":"구원자들"},{"action":"lower","duration":1.5,"actor":"구원자들"},{"action":"bow","duration":1.2,"actor":"구원자들"}],"duration":8.2,"support":null,"ref":"오바댜 1:19-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "promise",
+        "lead": "구원자들",
+        "target": "야곱 족속",
+        "mode": "illustration",
+        "setting": "courtyard",
+        "effect": "light",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "구원자들"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "구원자들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "구원자들"
+          },
+          {
+            "action": "bless",
+            "duration": 1.8,
+            "actor": "구원자들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "구원자들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "구원자들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:19-21",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-oba-extra-1-4",
@@ -160,7 +390,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"오바댜","target":"에돔(에서)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"오바댜"},{"action":"read","duration":1.2,"actor":"오바댜"},{"action":"look","duration":1.5,"actor":"오바댜"},{"action":"point","duration":1.8,"actor":"오바댜"},{"action":"listen","duration":1.5,"actor":"오바댜"},{"action":"bow","duration":1.2,"actor":"오바댜"}],"duration":8.2,"support":null,"ref":"오바댜 1:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "symbolic",
+        "lead": "오바댜",
+        "target": "에돔(에서)",
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "오바댜"
+          },
+          {
+            "action": "read",
+            "duration": 1.2,
+            "actor": "오바댜"
+          },
+          {
+            "action": "look",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "오바댜"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "오바댜"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "오바댜"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "오바댜 1:1-2",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
