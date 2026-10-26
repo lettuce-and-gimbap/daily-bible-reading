@@ -4,10 +4,10 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabelCount": 2258,
-    "characterOccurrences": 5955,
+    "sourceLabelCount": 2254,
+    "characterOccurrences": 5951,
     "authoredSoloOccurrences": 2039,
-    "chapterRoleOccurrences": 3916,
+    "chapterRoleOccurrences": 3912,
     "ordinaryOnlyOccurrences": 0,
     "chapterRelationRecords": 3825,
     "majorSets": 100,
@@ -305,9 +305,9 @@
     {
       "code": "mic",
       "chapters": 7,
-      "characterOccurrences": 32,
+      "characterOccurrences": 28,
       "authoredSoloOccurrences": 4,
-      "chapterRoleOccurrences": 28,
+      "chapterRoleOccurrences": 24,
       "ordinaryOnlyOccurrences": 0,
       "chapterRelationRecords": 14
     },

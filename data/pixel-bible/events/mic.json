@@ -7,8 +7,7 @@
       "chapter": 1,
       "title": "강림하시는 여호와",
       "actors": [
-        "사마리아",
-        "예루살렘"
+        "미가"
       ],
       "object": "temple",
       "ref": "미가 1:1-4",
@@ -29,8 +28,8 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "사마리아",
-        "target": "예루살렘",
+        "lead": "미가",
+        "target": null,
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -40,32 +39,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "사마리아"
+            "actor": "미가"
           }
         ],
         "duration": 8.2,
@@ -80,7 +79,7 @@
       "chapter": 1,
       "title": "맨발로 애곡함",
       "actors": [
-        "예루살렘"
+        "미가"
       ],
       "object": "gate",
       "ref": "미가 1:8-9",
@@ -99,7 +98,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "예루살렘",
+        "lead": "미가",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -110,32 +109,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "예루살렘"
+            "actor": "미가"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "예루살렘"
+            "actor": "미가"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "예루살렘"
+            "actor": "미가"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "예루살렘"
+            "actor": "미가"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "예루살렘"
+            "actor": "미가"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "예루살렘"
+            "actor": "미가"
           }
         ],
         "duration": 8.2,
@@ -385,7 +384,7 @@
       "title": "시온으로 모여드는 민족과 돌아오는 사람들",
       "actors": [
         "민족들",
-        "딸 시온",
+        "시온의 백성",
         "저는 자와 쫓겨난 자"
       ],
       "object": "scene-marker",
@@ -412,7 +411,7 @@
         "version": 2,
         "motif": "gather",
         "lead": "민족들",
-        "target": "딸 시온",
+        "target": "시온의 백성",
         "mode": "illustration",
         "setting": "pasture",
         "effect": "grain",
@@ -542,7 +541,6 @@
       "title": "하나님이 베푸신 일을 기억하며 대답하다",
       "actors": [
         "이스라엘 백성",
-        "모세와 아론과 미리암",
         "발락",
         "발람"
       ],
@@ -570,7 +568,7 @@
         "version": 2,
         "motif": "dispute",
         "lead": "이스라엘 백성",
-        "target": "모세와 아론과 미리암",
+        "target": null,
         "mode": "illustration",
         "setting": "court",
         "effect": "speech",
@@ -700,8 +698,7 @@
       "chapter": 7,
       "title": "죄를 용서하고 다시 세우시는 하나님을 노래하다",
       "actors": [
-        "미가",
-        "아브라함과 야곱"
+        "미가"
       ],
       "object": "scene-marker",
       "ref": "미가 7:18-20",
@@ -722,7 +719,7 @@
         "version": 2,
         "motif": "promise",
         "lead": "미가",
-        "target": "아브라함과 야곱",
+        "target": null,
         "mode": "illustration",
         "setting": "courtyard",
         "effect": "light",
@@ -772,7 +769,7 @@
       "chapter": 1,
       "title": "사마리아의 무더기",
       "actors": [
-        "사마리아"
+        "미가"
       ],
       "object": "scroll",
       "ref": "미가 1:5-7",
@@ -792,7 +789,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "사마리아",
+        "lead": "미가",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -803,32 +800,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "사마리아"
+            "actor": "미가"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "사마리아"
+            "actor": "미가"
           }
         ],
         "duration": 8.2,
@@ -843,7 +840,8 @@
       "chapter": 1,
       "title": "유다 성읍들의 애가",
       "actors": [
-        "유다 성읍들"
+        "미가",
+        "유다 성읍 사람들"
       ],
       "object": "house",
       "ref": "미가 1:10-16",
@@ -867,7 +865,7 @@
       "animation": {
         "version": 2,
         "motif": "warning",
-        "lead": "유다 성읍들",
+        "lead": "미가",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -878,32 +876,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           },
           {
             "action": "look",
             "duration": 1.2,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           },
           {
             "action": "point",
             "duration": 1.5,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           },
           {
             "action": "turn",
             "duration": 1.8,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           },
           {
             "action": "speak",
             "duration": 1.5,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "유다 성읍들"
+            "actor": "미가"
           }
         ],
         "duration": 8.2,
@@ -988,7 +986,7 @@
       "chapter": 4,
       "title": "타작마당의 곡식단",
       "actors": [
-        "딸 시온"
+        "시온의 백성"
       ],
       "object": "scroll",
       "ref": "미가 4:11-13",
@@ -1008,7 +1006,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "딸 시온",
+        "lead": "시온의 백성",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -1019,32 +1017,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "딸 시온"
+            "actor": "시온의 백성"
           }
         ],
         "duration": 8.2,

@@ -841,6 +841,21 @@ test('요나서 네 장의 다섯 인간 관계선은 폭풍·경고·회개·�
  assert.equal(catalog.entries.find(person=>person.name==='큰 물고기').identities[0].kind,'animal');
 });
 
+
+test('미가서 일곱 장의 인간 관계선 14개는 본문에 맞는 양방향 대화를 갖고 장소·부재 인물을 NPC로 만들지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/mic.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'mic',name:'미가',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('mic.'));
+ assert.equal(chapters.length,7);assert.equal(context.relations.length,14);assert.equal(entries.length,14);
+ for(const relation of context.relations){
+  const entry=entries.find(item=>item.chapter===`mic.${relation.from.chap}`&&((item.speaker===relation.from.name&&item.target===relation.to.name)||(item.speaker===relation.to.name&&item.target===relation.from.name)));
+  assert.ok(entry,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
+ }
+ const names=context.people.map(person=>person.name);
+ for(const absent of ['사마리아','예루살렘','요담·아하스·히스기야','아브라함과 야곱'])assert.equal(names.includes(absent),false,`${absent}는 미가 본문 시점의 인물이 아니다`);
+ assert.ok(names.includes('유다 성읍 사람들'));assert.ok(names.includes('시온의 백성'));
+});
+
 test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/amo.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'amo',name:'아모스',chap:Number(chap),data}));

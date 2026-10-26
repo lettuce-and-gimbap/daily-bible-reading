@@ -4,12 +4,12 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2264,
+    "sourceLabels": 2260,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
-      "unresolved": 2572,
-      "group": 245,
+      "unresolved": 2566,
+      "group": 247,
       "person": 109,
       "animal": 8,
       "spiritual": 6,
@@ -12717,7 +12717,6 @@
       "refs": [
         "jer.4",
         "lam.2",
-        "mic.4",
         "zec.2",
         "zep.3"
       ],
@@ -12742,14 +12741,6 @@
         },
         {
           "kind": "unresolved",
-          "id": "unresolved:딸 시온:mic",
-          "status": "needs-review",
-          "refs": [
-            "mic.4"
-          ]
-        },
-        {
-          "kind": "unresolved",
           "id": "unresolved:딸 시온:zec",
           "status": "needs-review",
           "refs": [
@@ -12762,6 +12753,27 @@
           "status": "needs-review",
           "refs": [
             "zep.3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "시온의 백성",
+      "roles": [
+        "포로의 고통을 겪고 구원받을 시온의 주민들"
+      ],
+      "refs": [
+        "mic.4"
+      ],
+      "appearance": "generic",
+      "review": "reviewed-rule",
+      "identities": [
+        {
+          "kind": "group",
+          "id": "group:시온의 백성",
+          "status": "reviewed-rule",
+          "refs": [
+            "mic.4"
           ]
         }
       ]
@@ -25942,8 +25954,7 @@
       "refs": [
         "ezk.16",
         "hos.7",
-        "hos.13",
-        "mic.1"
+        "hos.13"
       ],
       "appearance": "generic",
       "review": "unreviewed-label",
@@ -25963,14 +25974,6 @@
           "refs": [
             "hos.7",
             "hos.13"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:사마리아:mic",
-          "status": "needs-review",
-          "refs": [
-            "mic.1"
           ]
         }
       ]
@@ -35240,27 +35243,6 @@
             "psa.105",
             "rom.4",
             "rom.9"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "아브라함과 야곱",
-      "roles": [
-        "맹세를 받은 조상"
-      ],
-      "refs": [
-        "mic.7"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:아브라함과 야곱:mic",
-          "status": "needs-review",
-          "refs": [
-            "mic.7"
           ]
         }
       ]
@@ -45453,7 +45435,6 @@
         "ezk.24",
         "ezk.26",
         "isa.40",
-        "mic.1",
         "zep.3"
       ],
       "appearance": "generic",
@@ -45477,14 +45458,6 @@
           "status": "needs-review",
           "refs": [
             "isa.40"
-          ]
-        },
-        {
-          "kind": "unresolved",
-          "id": "unresolved:예루살렘:mic",
-          "status": "needs-review",
-          "refs": [
-            "mic.1"
           ]
         },
         {
@@ -48383,27 +48356,6 @@
       ]
     },
     {
-      "name": "요담·아하스·히스기야",
-      "roles": [
-        "당시 유다 왕들"
-      ],
-      "refs": [
-        "mic.1"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:요담·아하스·히스기야:mic",
-          "status": "needs-review",
-          "refs": [
-            "mic.1"
-          ]
-        }
-      ]
-    },
-    {
       "name": "요람",
       "roles": [
         "도이의 아들"
@@ -50721,20 +50673,20 @@
       ]
     },
     {
-      "name": "유다 성읍들",
+      "name": "유다 성읍 사람들",
       "roles": [
-        "재앙을 맞을 마을들"
+        "앗수르의 침략으로 재앙을 맞을 주민들"
       ],
       "refs": [
         "mic.1"
       ],
       "appearance": "generic",
-      "review": "unreviewed-label",
+      "review": "reviewed-rule",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:유다 성읍들:mic",
-          "status": "needs-review",
+          "kind": "group",
+          "id": "group:유다 성읍 사람들",
+          "status": "reviewed-rule",
           "refs": [
             "mic.1"
           ]

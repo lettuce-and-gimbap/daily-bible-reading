@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "jnh",
-    "nextBook": "mic",
-    "booksCompleted": 32,
+    "currentBook": "mic",
+    "nextBook": "nam",
+    "booksCompleted": 33,
     "completedBooks": [
       "gen",
       "exo",
@@ -329,38 +329,42 @@
       "jol",
       "amo",
       "oba",
-      "jnh"
+      "jnh",
+      "mic"
     ],
-    "chaptersReviewed": 897,
-    "relationshipLinksReviewed": 2794,
-    "authoredPairEntriesReviewed": 867,
+    "chaptersReviewed": 904,
+    "relationshipLinksReviewed": 2808,
+    "authoredPairEntriesReviewed": 881,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
       "interactionLinks": 3805,
-      "authoredLinks": 911,
-      "relationshipGeneratedLinks": 2894,
+      "authoredLinks": 925,
+      "relationshipGeneratedLinks": 2880,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "오바댜에 이어 요나서 1–4장 전체를 검토했다. 선장·사공들과 요나의 폭풍 속 문답, 니느웨의 경고와 회개, 왕의 금식 조서를 장면별로 주고받는 대화 5개로 구성했다. 4장의 요나와 니느웨 관계도는 심판을 기다린 선지자와 자비를 입은 성읍의 대비를 살렸다. 2장의 우상 숭배자라는 일반 집단은 장면 밖 추상 표현이라 인물 목록에서 제외했고, 큰 물고기와 박넝쿨은 각각 동물·식물로 유지했다. 요나의 중복 발화 묶음은 4:1–4와 4:6–11로 구분하고 모두 1인칭 관점과 절 참조를 다듬었다. 다음 권은 미가다.",
+    "statusNote": "요나서에 이어 미가서 1–7장 전체의 관계선을 전수 대조했다. 압제당한 여성과 아이, 거짓 예언, 착취 지도자와 백성, 시온의 위협, 앗수르 침공, 발락과 발람, 부패한 재판관과 미가 등 본문별 관계 14개를 서로 응답하는 대사로 작성했다. 도시 자체는 인물에서 빼고 유다 성읍의 주민 집단으로 바꾸었으며, 시온의 의인화도 주민 집단으로 구분했다. 표제의 유다 왕들과 7장의 조상 아브라함·야곱은 해당 장면에 없는 NPC 목록과 무대 행위자에서 제외했다. 미가의 독백은 1인칭으로 다듬고 문장마다 절 범위를 분리했다. 다음 권은 나훔이다.",
     "partialBookAudit": {
-      "book": "jnh",
-      "chaptersScanned": 4,
-      "relationshipLinksFound": 5,
-      "authoredPairEntriesAddedAndChecked": 5,
-      "authoredLinksCovered": 5,
+      "book": "mic",
+      "chaptersScanned": 7,
+      "relationshipLinksFound": 14,
+      "authoredPairEntriesAddedAndChecked": 14,
+      "authoredLinksCovered": 14,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 1,
+      "nonDialogueLinksRemoved": 2,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
         2,
         3,
-        4
+        4,
+        5,
+        6,
+        7
       ],
-      "statusNote": "요나서 1–4장을 전부 살폈다. 선장·사공, 니느웨의 백성·왕, 요나 사이에서 본문 상황에 맞는 왕복 대화 5개를 작성했다. 추상적인 우상 숭배자 집단은 NPC에서 빼고, 큰 물고기는 동물, 박넝쿨은 식물로 분류했다."
+      "statusNote": "미가 1–7장 전체를 훑어 남아 있는 인간 관계선 14개에 각 사건에 맞는 왕복 대사를 작성했다. 비인격적 도시는 인물에서 제외하고 유다 성읍과 시온은 주민 집단으로 표현했다. 본문 시점에 없는 유다 왕과 조상은 NPC 명단에서 제외했다."
     },
     "currentBookStatus": "complete"
   }
