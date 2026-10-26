@@ -91,7 +91,7 @@
     },
     {
       "code": "jdg",
-      "payloadSha256": "8f9fe8056f981ca2df2860fc02c4031c514f6f67e84e45be9e6e8f0302b43ddf",
+      "payloadSha256": "a9b488384719edf5b0d378eb32bb8c4aba1ff1d801d2bded3ea17d9e20142e7d",
       "scenes": 50,
       "existing": 50,
       "restored": 0,
@@ -312,16 +312,16 @@
     },
     {
       "code": "isa",
-      "payloadSha256": "c44fb6137137119b69c6ec36a6975a1aa155dc32222ee97f0da994e4c7901b72",
+      "payloadSha256": "2ec54a9392f552097ba349ede218c78c372f4bcf4c0d97906733c37ca00906f5",
       "scenes": 33,
       "existing": 33,
       "restored": 0,
       "corrected": 5,
       "planned": 33,
       "modes": {
-        "vision": 2,
+        "vision": 3,
         "reconstruction": 16,
-        "illustration": 15
+        "illustration": 14
       },
       "status": "authored-awaiting-browser-review"
     },
@@ -342,7 +342,7 @@
     },
     {
       "code": "lam",
-      "payloadSha256": "03f897ce0d1f7803d847fa60bcf82d095e780ddc398ee7db30e5fc535b64f6c8",
+      "payloadSha256": "ae67a950657ae2b7b0327fec55a2272904ff5f80e205207d0635a864710b99da",
       "scenes": 11,
       "existing": 11,
       "restored": 0,
@@ -413,7 +413,7 @@
     },
     {
       "code": "amo",
-      "payloadSha256": "14fdd65cde9d11d3ccb0179ffcb8a301bf3cc4a31323eafea4e907716468f1dd",
+      "payloadSha256": "57b7da9cca56f6b4e8702bdbfdb279fdb60ff8e19ca0fd953679356205b6835f",
       "scenes": 16,
       "existing": 16,
       "restored": 0,
@@ -467,7 +467,7 @@
     },
     {
       "code": "nam",
-      "payloadSha256": "5ddd1723025b6bff7dcfb09b62b5ab50fcd1f5a074f1b1cf0ad6a5ada3f4bf62",
+      "payloadSha256": "8ee8ce371ffa67d873def64c9c3a764ffdd9274e2419a26306f0115c58028a09",
       "scenes": 6,
       "existing": 6,
       "restored": 0,
@@ -480,7 +480,7 @@
     },
     {
       "code": "hab",
-      "payloadSha256": "a09e84a1da1baed228882e1db5a18bcc70dedb6a1301763b443cc067e65529dd",
+      "payloadSha256": "7e2e142cb8b8c5e8084079906bcd68f0a5157d3bafc6f894fe54d44d1356e7ae",
       "scenes": 7,
       "existing": 7,
       "restored": 0,

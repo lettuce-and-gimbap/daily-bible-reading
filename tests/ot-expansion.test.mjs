@@ -10,7 +10,7 @@ test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{co
 test('사사기 누락 사건을 보강하고 양털 표징을 전용 오브젝트로 연결한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'jdg.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-jdg-extra-'));
  assert.equal(added.length,24);
- for(const title of ['보김의 울음','옷니엘의 구원','드보라와 바락의 출전','적진에서 들은 꿈','기드온이 구한 양털의 표징','들릴라의 배신과 삼손의 실명','기브아의 밤과 아침','베냐민 지파와의 내전'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['보김의 울음','옷니엘의 구원','드보라와 바락의 출전','적진에서 들은 꿈','기드온이 구한 양털의 표징','들릴라의 압박과 삼손의 비밀 노출','기브아의 밤과 아침','베냐민 지파와의 내전'])assert(added.some(s=>s.title===title),title);
  const fleece=added.find(s=>s.object==='fleece');assert.equal(fleece.animation.motif,'fleece-sign');assert(OBJECT_CATALOG.fleece);
  const indexed=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jdg.json'));assert(indexed.chapters['6'].some(o=>o.id==='fleece'&&o.refs.includes(fleece.ref)));
 });
@@ -148,7 +148,7 @@ test('jol 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('amo 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'amo.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-amo-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/amo.json'));assert.equal(added.length,11);
- for(const title of ["다메섹과 가사에 대한 심판 선언","사자의 포효처럼 임박한 말씀을 전하다","거듭된 재앙에도 돌아오지 않은 백성","악을 버리고 성문에서 정의를 세우라","정의를 물처럼 흐르게 하라고 외치다","상아 침상에 누운 지도자들을 꾸짖다","메뚜기와 불의 환상 뒤에 긍휼을 구하다","다림줄 환상과 벧엘의 제사장 아마샤","저울을 속이는 상인과 말씀의 기근","무너지는 제단의 환상과 흩어짐","다윗의 무너진 장막을 다시 세우다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["다메섹과 가사에 대한 심판 선언","사자의 포효처럼 임박한 말씀을 전하다","거듭된 재앙에도 돌아오지 않은 백성","악을 버리고 성문에서 정의를 세우라","정의를 물처럼 흐르게 하라고 외치다","상아 침상에 누운 지도자들을 꾸짖다","메뚜기와 불의 환상 뒤에 긍휼을 구하다","다림줄 환상과 벧엘의 제사장 아마샤","저울을 속이는 상인과 말씀의 기근","제단 곁에서 본 피할 수 없는 심판","다윗의 무너진 장막을 다시 세우다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -176,14 +176,14 @@ test('oba 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('nam 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'nam.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-nam-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/nam.json'));assert.equal(added.length,5);
- for(const title of ["니느웨의 요새가 무너지리라 경고하다","유다의 멍에를 꺾고 평화를 알리다","니느웨 성을 향해 진군하는 군대","사자의 굴이 비게 되리라","피의 성 니느웨의 몰락을 애도하다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["니느웨를 향한 경고와 심판의 권능","유다의 멍에를 꺾고 평화를 알리다","니느웨 성을 향해 진군하는 군대","사자의 굴이 비게 되리라","피의 성 니느웨의 몰락을 애도하다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
 
 test('hab 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'hab.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-hab-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/hab.json'));assert.equal(added.length,6);
- for(const title of ["폭력이 그치지 않는 현실을 묻다","갈대아의 위협을 이해할 수 없어 묻다","성루에서 답을 기다리다","탐욕과 폭력에 대한 다섯 경고","진노 중에도 긍휼을 구하는 기도","그럴지라도 주 안에서 기뻐하다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["폭력이 그치지 않는 현실을 묻다","갈대아의 위협을 이해할 수 없어 묻다","교만한 탐욕과 믿음의 삶","탐욕과 폭력에 대한 다섯 경고","진노 중에도 긍휼을 구하는 기도","그럴지라도 주 안에서 기뻐하다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -507,4 +507,11 @@ test('2ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
  const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
  for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('사사기·이사야·아모스의 복합 장면은 인접 범위를 침범하지 않는다',()=>{
+ const groups=[['jdg','ot-jdg-extra-14','ot-jdg-extra-15'],['isa','ot-isa-extra-22-0','ot-isa-22-2'],['amo','ot-amo-8-0','ot-amo-extra-8-0'],['amo','ot-amo-extra-9-0','ot-amo-9-1'],['hab','ot-animation-hab-1','ot-hab-extra-2-0'],['nam','ot-nam-extra-1-0','ot-animation-nam-1'],['lam','ot-lam-extra-4-1','ot-lam-4-3']];
+ for(const [code,left,right]of groups){const scenes=JSON.parse(fs.readFileSync(root+code+'.json')).scenes,a=scenes.find(s=>s.id===left),b=scenes.find(s=>s.id===right);assert(a);assert(b);assert.equal(a.verseNumbers.at(-1)+1,b.verseNumbers[0]);assert.equal(a.animation.ref,a.ref);assert.equal(b.animation.ref,b.ref);}
+ const scene=JSON.parse(fs.readFileSync(root+'jdg.json')).scenes.find(s=>s.id==='ot-jdg-extra-14');assert.equal(scene.animation.lead,'들릴라');
 });

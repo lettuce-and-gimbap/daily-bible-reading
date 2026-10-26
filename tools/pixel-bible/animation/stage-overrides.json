@@ -193,7 +193,10 @@
       "mode": "illustration"
     },
     "24": {
-      "mode": "illustration"
+      "mode": "vision",
+      "ref": "이사야 22:15-19",
+      "lead": "셉나",
+      "target": "엘리아김"
     },
     "25": {
       "mode": "reconstruction"
@@ -293,7 +296,10 @@
       "mode": "illustration"
     },
     "8": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "예레미야애가 4:11-20",
+      "lead": "시온의 아들들",
+      "target": "에돔"
     },
     "9": {
       "mode": "illustration"
@@ -444,10 +450,16 @@
       "mode": "reconstruction"
     },
     "13": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "아모스 8:4-14",
+      "lead": "아모스",
+      "target": "탐욕스러운 상인들"
     },
     "14": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "아모스 9:1-6",
+      "lead": "아모스",
+      "target": "이스라엘"
     },
     "15": {
       "mode": "illustration"
@@ -515,7 +527,10 @@
   },
   "nam": {
     "1": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "나훔 1:1-6",
+      "lead": "나훔",
+      "target": "니느웨"
     },
     "2": {
       "mode": "illustration"
@@ -538,7 +553,10 @@
       "mode": "illustration"
     },
     "3": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "하박국 2:4-5",
+      "lead": "하박국",
+      "target": "교만한 자(갈대아)"
     },
     "4": {
       "mode": "illustration"
