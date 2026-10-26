@@ -736,5 +736,58 @@
     "83": {
       "mode": "reconstruction"
     }
+  },
+  "exo": {
+    "38": {
+      "mode": "reconstruction"
+    },
+    "39": {
+      "mode": "reconstruction"
+    },
+    "40": {
+      "mode": "reconstruction"
+    },
+    "41": {
+      "mode": "illustration"
+    },
+    "42": {
+      "mode": "illustration"
+    },
+    "43": {
+      "mode": "illustration"
+    },
+    "44": {
+      "mode": "illustration"
+    },
+    "45": {
+      "mode": "illustration"
+    },
+    "46": {
+      "mode": "illustration"
+    },
+    "47": {
+      "mode": "illustration"
+    },
+    "48": {
+      "mode": "illustration"
+    },
+    "49": {
+      "mode": "illustration"
+    },
+    "50": {
+      "mode": "reconstruction"
+    },
+    "51": {
+      "mode": "reconstruction"
+    },
+    "52": {
+      "mode": "reconstruction"
+    },
+    "53": {
+      "mode": "reconstruction"
+    },
+    "54": {
+      "mode": "illustration"
+    }
   }
 }
