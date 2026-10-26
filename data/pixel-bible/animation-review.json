@@ -264,18 +264,30 @@
     },
     {
       "code": "1ki",
-      "payloadSha256": "8d70e7549546a62a567ca44308cc3c541eb22d99936bf4749a0e7cc270b4dcd8",
-      "scenes": 75,
-      "existing": 75,
+      "payloadSha256": "5606c6e892c5ac9bc69f06ce3565636338d48ff01f847fbe7bcb0c941ecf4e21",
+      "scenes": 76,
+      "existing": 76,
       "restored": 0,
       "corrected": 9,
-      "planned": 75,
+      "planned": 76,
       "modes": {
         "reconstruction": 67,
         "vision": 1,
-        "illustration": 7
+        "illustration": 7,
+        "instruction": 1
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 76,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "2ki",

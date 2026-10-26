@@ -2537,6 +2537,34 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"build","lead":"솔로몬","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"gather","duration":1.2,"actor":"솔로몬"},{"action":"lift","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.8,"actor":"솔로몬"},{"action":"hammer","duration":1.5,"actor":"솔로몬"},{"action":"inspect","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 6:15-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-1ki-review-4-01",
+      "code": "1ki",
+      "chapter": 4,
+      "title": "솔로몬의 지혜와 노래",
+      "actors": [
+        "솔로몬"
+      ],
+      "object": "ink",
+      "ref": "열왕기상 4:29-34",
+      "verseNumbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 주신 넓은 지혜로 솔로몬은 잠언 삼천 개와 노래 천다섯 편을 지어요. 여러 민족의 왕들이 그의 지혜를 들으려고 사람을 보내요."
+      ],
+      "study": "하나님이 주신 넓은 지혜로 솔로몬은 잠언 삼천 개와 노래 천다섯 편을 지어요. 여러 민족의 왕들이 그의 지혜를 들으려고 사람을 보내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "저술과 지혜를 상징하는 먹과 글쓰기 장면으로 표현해요.",
+      "animation": {"version":2,"motif":"write","lead":"솔로몬","target":null,"mode":"instruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"ink","beats":[{"action":"inspect","duration":1,"actor":"솔로몬"},{"action":"grasp","duration":1.2,"actor":"솔로몬"},{"action":"open","duration":1.5,"actor":"솔로몬"},{"action":"read","duration":1.8,"actor":"솔로몬"},{"action":"write","duration":1.5,"actor":"솔로몬"},{"action":"place","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"열왕기상 4:29-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
