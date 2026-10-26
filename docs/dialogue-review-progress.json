@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "zep",
-    "nextBook": "hag",
-    "booksCompleted": 36,
+    "currentBook": "hag",
+    "nextBook": "zec",
+    "booksCompleted": 37,
     "completedBooks": [
       "gen",
       "exo",
@@ -333,37 +333,37 @@
       "mic",
       "nam",
       "hab",
-      "zep"
+      "zep",
+      "hag"
     ],
-    "chaptersReviewed": 913,
-    "relationshipLinksReviewed": 2820,
-    "authoredPairEntriesReviewed": 895,
+    "chaptersReviewed": 915,
+    "relationshipLinksReviewed": 2827,
+    "authoredPairEntriesReviewed": 902,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
-      "interactionLinks": 3804,
+      "interactionLinks": 3807,
       "authoredLinks": 931,
-      "relationshipGeneratedLinks": 2873,
+      "relationshipGeneratedLinks": 2876,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "나훔·하박국에 이어 스바냐 1–3장을 본문과 주석에 대조했다. 요시야는 표제의 시대 정보로 남기고 장면 NPC에서는 뺐으며, 니느웨·예루살렘은 장소로 분리했다. 모압과 암몬·블레셋·남은 유다 백성과 예루살렘 주민·지도층을 집단으로 구분하고 세 관계에 왕복 대사를 마련했다. 시온의 딸은 시온의 백성이라는 집단적 표현으로 처리했다. 다음은 학개서다.",
+    "statusNote": "나훔·하박국·스바냐에 이어 학개 1–2장을 본문과 주석에 대조했다. 다리오는 표제의 연대 정보로만 남기고 장면 인물에서 뺐다. 학개와 스룹바벨·여호수아·남은 백성의 재건 협력, 여호수아와 스룹바벨의 공동 지도, 학개와 제사장들의 율법 문답 등 사람 관계 7개를 본문 절에 맞춰 왕복 대사로 보강했다. 다음은 스가랴서다.",
     "partialBookAudit": {
-      "book": "zep",
-      "chaptersScanned": 3,
-      "relationshipLinksFound": 3,
-      "authoredPairEntriesAddedAndChecked": 3,
-      "authoredLinksCovered": 3,
+      "book": "hag",
+      "chaptersScanned": 2,
+      "relationshipLinksFound": 7,
+      "authoredPairEntriesAddedAndChecked": 7,
+      "authoredLinksCovered": 7,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 2,
+      "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
-        2,
-        3
+        2
       ],
-      "statusNote": "스바냐 1–3장 전부를 확인했다. 시대 표지와 도시를 인물에서 제외하고, 사람 관계선 3개에 본문 문답·예언을 바탕으로 한 상호 대사를 연결했다. 니느웨는 장소이며 시온의 딸은 백성의 집단적 호칭으로 정리했다."
+      "statusNote": "학개 두 장을 모두 확인했다. 날짜의 다리오는 NPC에서 제외하고, 재건 협력자 네 관계와 제사장 문답·격려·인장 약속을 포함한 사람 관계 7개에 사건별 왕복 대사를 연결했다."
     },
     "currentBookStatus": "complete"
   }

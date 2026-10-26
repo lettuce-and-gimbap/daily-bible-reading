@@ -6,10 +6,10 @@
     "chapters": 1189,
     "sourceLabelCount": 2288,
     "characterOccurrences": 5963,
-    "authoredSoloOccurrences": 2044,
-    "chapterRoleOccurrences": 3881,
-    "ordinaryOnlyOccurrences": 38,
-    "chapterRelationRecords": 3824,
+    "authoredSoloOccurrences": 2046,
+    "chapterRoleOccurrences": 3877,
+    "ordinaryOnlyOccurrences": 40,
+    "chapterRelationRecords": 3827,
     "majorSets": 100,
     "majorSetsWithMatches": 100
   },
@@ -342,10 +342,10 @@
       "code": "hag",
       "chapters": 2,
       "characterOccurrences": 10,
-      "authoredSoloOccurrences": 6,
-      "chapterRoleOccurrences": 4,
-      "ordinaryOnlyOccurrences": 0,
-      "chapterRelationRecords": 4
+      "authoredSoloOccurrences": 8,
+      "chapterRoleOccurrences": 0,
+      "ordinaryOnlyOccurrences": 2,
+      "chapterRelationRecords": 7
     },
     {
       "code": "zec",

@@ -1516,7 +1516,7 @@
 {"id":"group:하나님의 백성","name":"하나님의 백성","kind":"group","occurrences":["hab.3","heb.4","isa.47"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:스룹바벨:hag","name":"스룹바벨","kind":"unresolved","occurrences":["hag.1","hag.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:남은 백성","name":"남은 백성","kind":"group","occurrences":["hag.1","jer.42","zec.8"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:다리오:hag","name":"다리오","kind":"unresolved","occurrences":["hag.1"],"traits":[],"status":"group-or-unresolved"},
+{"id":"unresolved:다리오:hag","name":"다리오","kind":"unresolved","occurrences":[],"traits":[],"status":"group-or-unresolved"},
 {"id":"group:이 땅 모든 백성","name":"이 땅 모든 백성","kind":"group","occurrences":["hag.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:선지자들:heb","name":"선지자들","kind":"unresolved","occurrences":["heb.1"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:천사들:heb","name":"천사들","kind":"unresolved","occurrences":["heb.1","heb.2","heb.13"],"traits":[],"status":"group-or-unresolved"},

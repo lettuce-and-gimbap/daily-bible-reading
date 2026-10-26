@@ -304,7 +304,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3804);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3807);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -891,6 +891,19 @@ test('하박국 세 장의 사람 관계와 선지자·하나님의 문답을 �
  assert.equal(summary.chapters['3'].people.some(x=>x.name==='선택받은 사람들'),false,'기름 부음 받은 자를 근거 없이 별도 인물로 특정하지 않는다');
  assert.equal(summary.chapters['3'].rels.filter(x=>(x.from==='하박국'&&x.to==='하나님')||(x.from==='하나님'&&x.to==='하박국')).length,1,'같은 관계의 왕복 중복을 한 기록으로 합친다');
  const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='hab');assert.equal(rows.length,4);
+ for(const row of rows){assert.equal(row[4].length,row[7].length);assert.ok(row[4].every(x=>x.length>8));}
+});
+
+test('학개 두 장의 재건 협력과 제사장 문답을 왕의 날짜 표기와 구분해 왕복 대사로 연결한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/hag.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'hag',name:'학개',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^hag\.\d+$/.test(entry.chapter));
+ const human=context.relations.filter(r=>!r.from.creature&&!r.to.creature);
+ assert.equal(chapters.length,2);assert.equal(human.length,7);assert.equal(entries.length,7);
+ for(const relation of human)assert.ok(entries.some(entry=>entry.chapter==='hag.'+relation.from.chap&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),relation.ref+' '+relation.from.name+' ↔ '+relation.to.name);
+ assert.equal(context.people.some(x=>x.name==='다리오'),false,'다리오는 표제의 날짜 정보이지 장면 속 인물이 아니다');
+ assert.ok(entries.some(x=>x.id==='pair-hag-2-haggai-priests'),'학개와 제사장의 질문·답변을 보존한다');
+ const rows=MINOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='hag');assert.equal(rows.length,7);
  for(const row of rows){assert.equal(row[4].length,row[7].length);assert.ok(row[4].every(x=>x.length>8));}
 });
 
