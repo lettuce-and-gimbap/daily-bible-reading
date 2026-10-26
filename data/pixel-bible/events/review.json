@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1269,
+    "scenesInFiles": 1270,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 555
+    "curatedSupplementalScenes": 556
   },
   "books": [
     {
@@ -74,10 +74,10 @@
     {
       "code": "deu",
       "chapters": 34,
-      "scenes": 17,
+      "scenes": 18,
       "sourceMatchedSceneCandidates": 2,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 15
+      "curatedSupplementalScenes": 1
     },
     {
       "code": "jos",
@@ -28381,6 +28381,10 @@
       },
       {
         "book": "num",
+        "scenesAdded": 1
+      },
+      {
+        "book": "deu",
         "scenesAdded": 1
       }
     ]

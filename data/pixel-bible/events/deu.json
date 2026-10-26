@@ -577,6 +577,60 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"lament","lead":"모세","target":"여호수아","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"},{"action":"kneel","duration":1.5,"actor":"모세"},{"action":"cover-mouth","duration":1.8,"actor":"모세"},{"action":"mourn","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 34:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-deu-extra-33-0",
+      "code": "deu",
+      "chapter": 33,
+      "title": "모세가 죽기 전에 이스라엘 지파들을 축복하다",
+      "actors": [
+        "모세",
+        "레위 지파",
+        "유다 지파",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "신명기 33:1-29",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세는 죽기 전에 각 지파를 축복하며 하나님이 백성과 함께하신 일을 노래해요. 시적 표현은 인물들의 행동으로 그대로 오해되지 않도록 축복과 공동체의 표상으로 연출해요."
+      ],
+      "study": "모세는 죽기 전에 각 지파를 축복하며 하나님이 백성과 함께하신 일을 노래해요. 시적 표현은 인물들의 행동으로 그대로 오해되지 않도록 축복과 공동체의 표상으로 연출해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"blessing","lead":"모세","target":"레위 지파","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"bless","duration":1.5,"actor":"모세"},{"action":"bless","duration":1.8,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"신명기 33:1-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
