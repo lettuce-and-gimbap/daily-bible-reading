@@ -967,6 +967,43 @@
     }
   },
   "2sa": {
+    "5": {
+      "lead": "유다 사람들",
+      "target": "다윗",
+      "prop": "oil-vessel",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "유다 사람들"
+        },
+        {
+          "action": "grasp",
+          "duration": 1.2,
+          "actor": "유다 사람들"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "유다 사람들"
+        },
+        {
+          "action": "pour",
+          "duration": 1.8,
+          "actor": "유다 사람들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "유다 사람들"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "유다 사람들"
+        }
+      ]
+    },
     "90": {},
     "91": {},
     "92": {},
@@ -2309,7 +2346,43 @@
     }
   },
   "est": {
-    "19": {},
+    "19": {
+      "lead": "아하수에로",
+      "target": null,
+      "prop": "scroll",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "아하수에로"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "아하수에로"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "아하수에로"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "아하수에로"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "아하수에로"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "아하수에로"
+        }
+      ]
+    },
     "20": {}
   },
   "neh": {
@@ -2319,6 +2392,80 @@
     "30": {}
   },
   "1ch": {
+    "18": {
+      "lead": "아삽",
+      "target": "다윗",
+      "prop": "cymbal",
+      "beats": [
+        {
+          "action": "grasp",
+          "duration": 1,
+          "actor": "아삽"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "아삽"
+        },
+        {
+          "action": "strike",
+          "duration": 1.5,
+          "actor": "아삽"
+        },
+        {
+          "action": "strike",
+          "duration": 1.8,
+          "actor": "아삽"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "아삽"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "아삽"
+        }
+      ]
+    },
+    "53": {
+      "lead": "아삽",
+      "target": "다윗",
+      "prop": "cymbal",
+      "beats": [
+        {
+          "action": "grasp",
+          "duration": 1,
+          "actor": "아삽"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "아삽"
+        },
+        {
+          "action": "strike",
+          "duration": 1.5,
+          "actor": "아삽"
+        },
+        {
+          "action": "strike",
+          "duration": 1.8,
+          "actor": "아삽"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "아삽"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "아삽"
+        }
+      ]
+    },
     "65": {
       "lead": "솔로몬",
       "target": "다윗",

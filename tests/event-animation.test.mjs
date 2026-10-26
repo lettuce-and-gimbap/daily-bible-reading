@@ -60,3 +60,11 @@ test('구약 장면의 공유 절은 찬양과 구름이 동시 발생하는 성
  const overlaps=[];for(const [code,data]of books)for(let ch=1;ch<=150;ch++){const scenes=data.scenes.filter(s=>s.chapter===ch&&!s.id.startsWith('ot-voice-'));for(let i=0;i<scenes.length;i++)for(let j=i+1;j<scenes.length;j++){const a=scenes[i],b=scenes[j];if(a.verseNumbers.some(v=>b.verseNumbers.includes(v)))overlaps.push([code,...[a.id,b.id].sort()]);}}
  assert.deepEqual(overlaps,[['2ch','ot-2ch-5-2','ot-2ch-5-3']]);
 });
+
+test('찬양을 맡기는 다윗과 연주하는 아삽의 동작을 구분한다',()=>{
+ const scenes=books.find(([c])=>c==='1ch')[1].scenes;for(const id of ['ot-1ch-16-1','ot-1ch-extra-17']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'아삽');assert.equal(a.prop,'cymbal');assert(a.beats.some(b=>b.action==='strike'));assert(!a.beats.some(b=>b.action==='strum'));}
+});
+test('왕후 선발 명령은 왕의 재대관을 연출하지 않고 유다의 기름 부음은 다윗을 향한다',()=>{
+ const a=books.find(([c])=>c==='est')[1].scenes.find(s=>s.id==='ot-est-extra-2-0').animation;assert.equal(a.motif,'decree');assert(!a.beats.some(b=>b.action==='wear'));assert(a.beats.some(b=>b.action==='signal'));
+ const b=books.find(([c])=>c==='2sa')[1].scenes.find(s=>s.id==='ot-2sa-2-1').animation;assert.equal(b.lead,'유다 사람들');assert.equal(b.target,'다윗');assert(b.beats.every(x=>x.actor==='유다 사람들'));
+});
