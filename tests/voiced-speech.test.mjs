@@ -148,3 +148,13 @@ test('민수기 인물 발화 28묶음은 문장별 구절 범위에 연결되�
  }
  assert(!rows.some(row=>row[2]==='안식일에 나무한 사람'));
 });
+
+test('신명기에서 확인한 인물 발화 23묶음은 각각 문장별 절 참조를 갖는다',()=>{
+ const rows=PENTATEUCH_DIALOGUE_ROWS.filter(row=>row[0]==='deu');assert.equal(rows.length,23);
+ for(const row of rows){
+  const [low,high]=row[3].split('-').map(Number);
+  assert.equal(row[7]?.length,row[4].length,`${row[1]}장 ${row[2]} 줄 참조`);
+  for(const ref of row[7]){const [start,end=start]=ref.split('-').map(Number);assert(start>=low&&end<=high,`${row[1]}장 ${row[2]} ${ref} 범위 밖`);}
+ }
+ assert(!rows.some(row=>['발람','아말렉'].includes(row[2])),'본문에서 직접 발화하지 않는 인물의 회고 문장을 제거함');
+});

@@ -174,6 +174,16 @@ test('민수기 정탐·반역·에돔·놋뱀·발람·기업·요단 동편 �
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
+test('신명기 27장에서 레위인의 저주 선포에 이스라엘 백성이 아멘으로 응답한다',()=>{
+ const entry=PAIR_DIALOGUE.find(item=>item.chapter==='deu.27'&&item.speaker==='레위 지파'&&item.target==='이스라엘 자손');
+ assert.ok(entry);assert.match(entry.ref,/27:14–26/);assert.match(entry.lines[0],/저주/);assert.match(entry.replyLines[0],/아멘/);
+});
+
+test('신명기의 시혼 통행 거부와 계명 전달 요청은 상대 발화와 연결된다',()=>{
+ const cases=[['deu.2','모세','시혼',/지나가게 해 주십시오/,/지나가지 못한다/],['deu.5','이스라엘 자손','모세',/말씀을 들은 뒤/,/사이에 서서/]];
+ for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
  ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
