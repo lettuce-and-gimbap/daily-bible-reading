@@ -29,32 +29,30 @@
       "id": "ot-nam-extra-1-0",
       "code": "nam",
       "chapter": 1,
-      "title": "니느웨의 요새가 무너지리라 경고하다",
+      "title": "니느웨를 향한 경고와 심판의 권능",
       "actors": [
         "나훔",
         "니느웨"
       ],
       "object": "scene-marker",
-      "ref": "나훔 1:1-8",
+      "ref": "나훔 1:1-6",
       "verseNumbers": [
         1,
         2,
         3,
         4,
         5,
-        6,
-        7,
-        8
+        6
       ],
       "actions": {},
       "lines": [
-        "해설: 나훔은 니느웨를 향한 심판과 환난 날에 의지할 피난처를 함께 선포해요."
+        "해설: 나훔은 니느웨를 향한 경고를 시작해요. 쉽게 노하지 않으시면서도 죄를 심판하시는 하나님의 권능을 폭풍과 흔들리는 산의 시적 이미지로 전해요."
       ],
-      "study": "나훔은 니느웨를 향한 심판과 환난 날에 의지할 피난처를 함께 선포해요.",
+      "study": "나훔은 니느웨를 향한 경고를 시작해요. 쉽게 노하지 않으시면서도 죄를 심판하시는 하나님의 권능을 폭풍과 흔들리는 산의 시적 이미지로 전해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"나훔","target":"니느웨","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"turn","duration":1.2,"actor":"나훔"},{"action":"speak","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"lower","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"나훔","target":"니느웨","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"나훔"},{"action":"read","duration":1.2,"actor":"나훔"},{"action":"look","duration":1.5,"actor":"나훔"},{"action":"point","duration":1.8,"actor":"나훔"},{"action":"listen","duration":1.5,"actor":"나훔"},{"action":"bow","duration":1.2,"actor":"나훔"}],"duration":8.2,"support":null,"ref":"나훔 1:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-nam-extra-1-1",
