@@ -299,5 +299,19 @@
     "21": {
       "mode": "illustration"
     }
+  },
+  "hos": {
+    "12": {
+      "mode": "illustration"
+    },
+    "13": {
+      "mode": "illustration"
+    },
+    "14": {
+      "mode": "reconstruction"
+    },
+    "15": {
+      "mode": "illustration"
+    }
   }
 }

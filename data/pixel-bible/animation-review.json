@@ -379,15 +379,15 @@
     },
     {
       "code": "hos",
-      "payloadSha256": "b6e5cfa9edc4847c97981ee4b9314ac718d8dfb9106c7b267ad42dc7e5be1d3b",
-      "scenes": 12,
-      "existing": 12,
+      "payloadSha256": "581006c742784c4ccdc3e6ee6aa135c95420505c92feaf3751662e3df4ed8722",
+      "scenes": 16,
+      "existing": 16,
       "restored": 0,
       "corrected": 0,
-      "planned": 12,
+      "planned": 16,
       "modes": {
-        "illustration": 11,
-        "reconstruction": 1
+        "illustration": 14,
+        "reconstruction": 2
       },
       "status": "authored-awaiting-browser-review"
     },

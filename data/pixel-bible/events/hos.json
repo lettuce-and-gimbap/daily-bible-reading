@@ -326,6 +326,124 @@
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
       "animation": {"version":2,"motif":"purchase","lead":"호세아","target":null,"mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"moneybag","beats":[{"action":"inspect","duration":1,"actor":"호세아"},{"action":"grasp","duration":1.2,"actor":"호세아"},{"action":"weigh","duration":1.5,"actor":"호세아"},{"action":"place","duration":1.8,"actor":"호세아"},{"action":"extend","duration":1.5,"actor":"호세아"},{"action":"receive","duration":1.2,"actor":"호세아"}],"duration":8.2,"support":null,"ref":"호세아 3:2-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hos-extra-1-0",
+      "code": "hos",
+      "chapter": 1,
+      "title": "호세아가 고멜과 혼인하라는 부름을 받다",
+      "actors": [
+        "호세아",
+        "고멜"
+      ],
+      "object": "scene-marker",
+      "ref": "호세아 1:2-3",
+      "verseNumbers": [
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 호세아의 혼인이 이스라엘의 신실하지 못함을 보여 주는 표징으로 주어져요."
+      ],
+      "study": "호세아의 혼인이 이스라엘의 신실하지 못함을 보여 주는 표징으로 주어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"호세아","target":"고멜","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"호세아"},{"action":"read","duration":1.2,"actor":"호세아"},{"action":"look","duration":1.5,"actor":"호세아"},{"action":"point","duration":1.8,"actor":"호세아"},{"action":"listen","duration":1.5,"actor":"호세아"},{"action":"bow","duration":1.2,"actor":"호세아"}],"duration":8.2,"support":null,"ref":"호세아 1:2-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hos-extra-1-1",
+      "code": "hos",
+      "chapter": 1,
+      "title": "자녀들의 이름이 심판의 표징이 되다",
+      "actors": [
+        "호세아",
+        "고멜",
+        "로루하마",
+        "로암미"
+      ],
+      "object": "scene-marker",
+      "ref": "호세아 1:4-9",
+      "verseNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 세 자녀의 이름이 이스라엘에 대한 심판과 관계 단절을 상징해요. 가족의 정체성과 본문 속 표징을 혼동하지 않게 보여 줘요."
+      ],
+      "study": "세 자녀의 이름이 이스라엘에 대한 심판과 관계 단절을 상징해요. 가족의 정체성과 본문 속 표징을 혼동하지 않게 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"호세아","target":"고멜","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"호세아"},{"action":"read","duration":1.2,"actor":"호세아"},{"action":"look","duration":1.5,"actor":"호세아"},{"action":"point","duration":1.8,"actor":"호세아"},{"action":"listen","duration":1.5,"actor":"호세아"},{"action":"bow","duration":1.2,"actor":"호세아"}],"duration":8.2,"support":null,"ref":"호세아 1:4-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hos-extra-3-0",
+      "code": "hos",
+      "chapter": 3,
+      "title": "호세아가 고멜을 다시 데려오다",
+      "actors": [
+        "호세아",
+        "고멜",
+        "이스라엘 자손"
+      ],
+      "object": "scene-marker",
+      "ref": "호세아 3:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 호세아가 값을 치르고 고멜을 다시 데려와 기다림의 기간을 말해요. 이 행동은 이스라엘을 향한 사랑의 표징이에요."
+      ],
+      "study": "호세아가 값을 치르고 고멜을 다시 데려와 기다림의 기간을 말해요. 이 행동은 이스라엘을 향한 사랑의 표징이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"reconcile","lead":"호세아","target":"고멜","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"호세아"},{"action":"bow","duration":1.2,"actor":"호세아"},{"action":"extend","duration":1.5,"actor":"호세아"},{"action":"receive","duration":1.8,"actor":"호세아"},{"action":"bow","duration":1.5,"actor":"호세아"},{"action":"stand","duration":1.2,"actor":"호세아"}],"duration":8.2,"support":null,"ref":"호세아 3:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-hos-extra-14-0",
+      "code": "hos",
+      "chapter": 14,
+      "title": "돌아오라는 마지막 부름과 치유의 약속",
+      "actors": [
+        "이스라엘",
+        "에브라임",
+        "고아"
+      ],
+      "object": "scene-marker",
+      "ref": "호세아 14:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 호세아가 이스라엘에게 돌아오라고 부르고, 하나님이 배역을 고치고 기꺼이 사랑하겠다는 약속으로 끝맺어요."
+      ],
+      "study": "호세아가 이스라엘에게 돌아오라고 부르고, 하나님이 배역을 고치고 기꺼이 사랑하겠다는 약속으로 끝맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"이스라엘","target":"에브라임","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘"},{"action":"lift","duration":1.2,"actor":"이스라엘"},{"action":"speak","duration":1.5,"actor":"이스라엘"},{"action":"bless","duration":1.8,"actor":"이스라엘"},{"action":"lower","duration":1.5,"actor":"이스라엘"},{"action":"bow","duration":1.2,"actor":"이스라엘"}],"duration":8.2,"support":null,"ref":"호세아 14:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
