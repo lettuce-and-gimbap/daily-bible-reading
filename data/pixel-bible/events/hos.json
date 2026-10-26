@@ -7,7 +7,7 @@
       "chapter": 2,
       "title": "거두시는 하나님",
       "actors": [
-        "바알"
+        "이스라엘"
       ],
       "object": "grain",
       "ref": "호세아 2:9-13",
@@ -29,8 +29,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "바알",
-        "target": null,
+        "lead": "이스라엘",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -40,32 +39,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "바알"
+            "actor": "이스라엘"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "바알"
+            "actor": "이스라엘"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "바알"
+            "actor": "이스라엘"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "바알"
+            "actor": "이스라엘"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "바알"
+            "actor": "이스라엘"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "바알"
+            "actor": "이스라엘"
           }
         ],
         "duration": 8.2,
@@ -229,7 +228,7 @@
       "chapter": 8,
       "title": "사마리아의 송아지",
       "actors": [
-        "사마리아의 송아지"
+        "에브라임"
       ],
       "object": "calf",
       "ref": "호세아 8:4-7",
@@ -250,8 +249,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "사마리아의 송아지",
-        "target": null,
+        "lead": "에브라임",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -261,32 +259,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "사마리아의 송아지"
+            "actor": "에브라임"
           }
         ],
         "duration": 8.2,
@@ -375,8 +373,7 @@
       "chapter": 9,
       "title": "광야의 포도",
       "actors": [
-        "이스라엘",
-        "바알"
+        "이스라엘"
       ],
       "object": "grapes",
       "ref": "호세아 9:10-14",
@@ -399,7 +396,6 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "이스라엘",
-        "target": "바알",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -664,7 +660,7 @@
       "chapter": 12,
       "title": "거짓 저울의 상인",
       "actors": [
-        "에서"
+        "에브라임"
       ],
       "object": "scale",
       "ref": "호세아 12:7-11",
@@ -686,8 +682,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "에서",
-        "target": null,
+        "lead": "에브라임",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -697,32 +692,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "에서"
+            "actor": "에브라임"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "에서"
+            "actor": "에브라임"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "에서"
+            "actor": "에브라임"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "에서"
+            "actor": "에브라임"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "에서"
+            "actor": "에브라임"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "에서"
+            "actor": "에브라임"
           }
         ],
         "duration": 8.2,
@@ -1326,8 +1321,7 @@
       "chapter": 2,
       "title": "사랑하는 자들을 따름",
       "actors": [
-        "이스라엘",
-        "바알"
+        "이스라엘"
       ],
       "object": "scroll",
       "ref": "호세아 2:1-8",
@@ -1353,7 +1347,6 @@
         "version": 2,
         "motif": "symbolic",
         "lead": "이스라엘",
-        "target": "바알",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -3061,8 +3054,7 @@
       "chapter": 12,
       "title": "야곱을 기억하라",
       "actors": [
-        "야곱",
-        "천사"
+        "에브라임"
       ],
       "object": "scroll",
       "ref": "호세아 12:3-6",
@@ -3083,8 +3075,7 @@
       "animation": {
         "version": 2,
         "motif": "vision",
-        "lead": "야곱",
-        "target": "천사",
+        "lead": "에브라임",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",
@@ -3094,32 +3085,32 @@
           {
             "action": "look",
             "duration": 1,
-            "actor": "야곱"
+            "actor": "에브라임"
           },
           {
             "action": "listen",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "에브라임"
           },
           {
             "action": "point",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "에브라임"
           },
           {
             "action": "look",
             "duration": 1.8,
-            "actor": "야곱"
+            "actor": "에브라임"
           },
           {
             "action": "bow",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "에브라임"
           },
           {
             "action": "wait",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "에브라임"
           }
         ],
         "duration": 8.2,
@@ -3134,8 +3125,7 @@
       "chapter": 12,
       "title": "선지자로 인도하심",
       "actors": [
-        "에브라임",
-        "에서"
+        "에브라임"
       ],
       "object": "scroll",
       "ref": "호세아 12:12-14",
@@ -3156,7 +3146,6 @@
         "version": 2,
         "motif": "prophecy",
         "lead": "에브라임",
-        "target": "에서",
         "mode": "illustration",
         "setting": "vision",
         "effect": "symbol",

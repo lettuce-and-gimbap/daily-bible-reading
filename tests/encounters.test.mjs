@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3821);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3810);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -787,6 +787,19 @@ test('다니엘 1–12장의 유효한 관계 35개는 포로 궁정·풀무불�
  assert.equal(summary.chapters[7].rels.some(relation=>['옛적부터 항상 계신 이','작은 뿔'].includes(relation.from)||relation.to==='네 짐승'),false,'환상의 상징 동물과 표상은 NPC 조우선에서 제외');
  assert.match(entries.find(entry=>entry.id==='pair-dan-3-nebuchadnezzar-shadrach').replyLines[0],/답할 필요/);
  assert.match(entries.find(entry=>entry.id==='pair-dan-6-darius-daniel').replyLines[0],/천사/);
+});
+
+test('호세아의 가족·정치 관계 9개는 표징 결혼·경고·돌아옴을 구분하고 우상은 인물 조우에서 뺀다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/hos.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'hos',name:'호세아',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^hos\.\d+$/.test(entry.chapter));
+ assert.equal(chapters.length,14);assert.equal(context.relations.length,9);assert.equal(entries.length,9);
+ for(const relation of context.relations){assert.ok(entries.some(entry=>entry.chapter===`hos.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);}
+ for(const entry of entries){const chapter=Number(entry.chapter.slice(4)),names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/호세아 \d+/);}
+ for(const chapter of [2,8,9,10,11])assert.ok(summary.chapters[chapter].people.every(person=>!['바알','사마리아의 송아지','벧아웬의 송아지'].includes(person.name)),'우상과 송아지 형상은 사람 NPC가 아님');
+ assert.equal(summary.chapters[1].rels.some(relation=>['이스르엘','로루하마','로암미'].includes(relation.from)),false,'어린 자녀가 성인 대사를 말하지 않게 함');
+ assert.equal(summary.chapters[12].people.some(person=>['야곱','에서','천사'].includes(person.name)),false,'과거 조상과 천사의 회상을 현재 조우로 만들지 않음');
+ assert.match(entries.find(entry=>entry.id==='pair-hos-3-israel-david').detail,/실제 동시대 조우가 아닌/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

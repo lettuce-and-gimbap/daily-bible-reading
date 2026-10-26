@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "dan",
-    "nextBook": "hos",
-    "booksCompleted": 27,
+    "currentBook": "hos",
+    "nextBook": "jol",
+    "booksCompleted": 28,
     "completedBooks": [
       "gen",
       "exo",
@@ -324,29 +324,30 @@
       "jer",
       "lam",
       "ezk",
-      "dan"
+      "dan",
+      "hos"
     ],
-    "chaptersReviewed": 866,
-    "relationshipLinksReviewed": 2765,
-    "authoredPairEntriesReviewed": 838,
+    "chaptersReviewed": 880,
+    "relationshipLinksReviewed": 2774,
+    "authoredPairEntriesReviewed": 847,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
-      "interactionLinks": 3821,
-      "authoredLinks": 879,
-      "relationshipGeneratedLinks": 2942,
+      "interactionLinks": 3810,
+      "authoredLinks": 888,
+      "relationshipGeneratedLinks": 2922,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "에스겔 48장과 다니엘 12장까지 전수 검토를 마쳤다. 전체 누계 866장, 관계 후보 2,765개, 확인한 왕복 대사 묶음 838개다. 에스겔은 인간 관계선 63개, 다니엘은 35개를 장면에 맞는 왕복 대사로 채웠다. 다니엘서에는 12개 장면별 인물 독백 묶음도 보강했다. 장면 밖 과거 인물과 비유·환상 속 동물 및 상징은 NPC 조우 관계에서 제외했다. 전체 상호작용 후보는 3,821개이며 879개 작성 대사와 2,942개 관계 기반 대사로 연결되어 있다. 다음 권은 호세아다.",
+    "statusNote": "다니엘 12장과 호세아 14장까지 전수 검토했다. 누계 880장, 유효 관계 대화 2,774개, 확인한 대화 묶음 847개다. 호세아서의 성인 인간 관계선 9개를 사건별 왕복 대사로 보강하고, 우상·송아지 형상·회상 속 조상·천사 및 발화 능력이 없는 어린 자녀 관계는 NPC 대화에서 제외했다. 호세아와 고멜의 표징 결혼·회복 장면 독백도 추가했다. 전체 상호작용 후보는 3,810개이며 888개 작성 대사와 2,922개 관계 기반 대사로 연결되어 있다. 다음 권은 요엘이다.",
     "partialBookAudit": {
-      "book": "dan",
-      "chaptersScanned": 12,
-      "relationshipLinksFound": 35,
-      "authoredPairEntriesAddedAndChecked": 35,
-      "authoredLinksCovered": 35,
+      "book": "hos",
+      "chaptersScanned": 14,
+      "relationshipLinksFound": 9,
+      "authoredPairEntriesAddedAndChecked": 9,
+      "authoredLinksCovered": 9,
       "generatedLinksRemaining": 0,
-      "nonDialogueLinksRemoved": 7,
+      "nonDialogueLinksRemoved": 11,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
@@ -361,9 +362,11 @@
         9,
         10,
         11,
-        12
+        12,
+        13,
+        14
       ],
-      "statusNote": "다니엘 1–12장 전부를 검토했다. 현장에 없는 왕, 환상 속 상징과 동물은 조우선에서 뺐고, 유효한 인간·천사 관계 35개는 각 사건과 발화가 이어지는 왕복 대사로 작성했다. 다니엘과 사드락의 장면별 1인칭 독백도 해당 장 구절에 맞춰 보강했다."
+      "statusNote": "호세아 1–14장 전체를 검토했다. 성인 인간 관계 9개에 표징 결혼, 책망, 회복 약속에 맞춘 왕복 대사를 넣었다. 바알과 송아지 형상은 우상·오브젝트로 분리했고, 과거 조상과 환상·표징의 부재 인물 및 말하지 않는 영유아는 현재의 NPC 대화선에서 제외했다. 호세아와 고멜의 장면별 1인칭 독백을 추가했다."
     },
     "currentBookStatus": "complete"
   }
