@@ -25,7 +25,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"decree","lead":"고레스","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"read","duration":1,"actor":"고레스"},{"action":"lift","duration":1.2,"actor":"고레스"},{"action":"speak","duration":1.5,"actor":"고레스"},{"action":"point","duration":1.8,"actor":"고레스"},{"action":"lower","duration":1.5,"actor":"고레스"},{"action":"write","duration":1.2,"actor":"고레스"}],"duration":8.2,"support":null,"ref":"에스라 1:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "decree",
+        "lead": "고레스",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "read",
+            "duration": 1,
+            "actor": "고레스"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "고레스"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "고레스"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "고레스"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "고레스"
+          },
+          {
+            "action": "write",
+            "duration": 1.2,
+            "actor": "고레스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 1:1-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-1-2",
@@ -53,7 +99,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"inventory","lead":"고레스","target":"미드르닷","mode":"reconstruction","setting":"store","effect":"stack","emotion":"determined","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"고레스"},{"action":"gather","duration":1.2,"actor":"고레스"},{"action":"carry","duration":1.5,"actor":"고레스"},{"action":"place","duration":1.8,"actor":"고레스"},{"action":"count","duration":1.5,"actor":"고레스"},{"action":"stand","duration":1.2,"actor":"고레스"}],"duration":8.2,"support":null,"ref":"에스라 1:7-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "inventory",
+        "lead": "고레스",
+        "target": "미드르닷",
+        "mode": "reconstruction",
+        "setting": "store",
+        "effect": "stack",
+        "emotion": "determined",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "고레스"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "고레스"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "고레스"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "고레스"
+          },
+          {
+            "action": "count",
+            "duration": 1.5,
+            "actor": "고레스"
+          },
+          {
+            "action": "stand",
+            "duration": 1.2,
+            "actor": "고레스"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 1:7-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-3-0",
@@ -81,7 +173,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"sacrifice","lead":"백성","target":null,"mode":"reconstruction","setting":"altar","effect":"altar-flame","emotion":"determined","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"백성"},{"action":"carry","duration":1.2,"actor":"백성"},{"action":"place","duration":1.5,"actor":"백성"},{"action":"kneel","duration":1.8,"actor":"백성"},{"action":"pray","duration":1.5,"actor":"백성"},{"action":"bow","duration":1.2,"actor":"백성"}],"duration":8.2,"support":null,"ref":"에스라 3:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "sacrifice",
+        "lead": "백성",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "altar",
+        "effect": "altar-flame",
+        "emotion": "determined",
+        "prop": "altar",
+        "beats": [
+          {
+            "action": "gather",
+            "duration": 1,
+            "actor": "백성"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "백성"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "백성"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.8,
+            "actor": "백성"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "백성"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "백성"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 3:1-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-3-2",
@@ -105,7 +243,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"praise","lead":"제사장들","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"temple","beats":[{"action":"lift","duration":1,"actor":"제사장들"},{"action":"sway","duration":1.2,"actor":"제사장들"},{"action":"step","duration":1.5,"actor":"제사장들"},{"action":"sway","duration":1.8,"actor":"제사장들"},{"action":"step","duration":1.5,"actor":"제사장들"},{"action":"bow","duration":1.2,"actor":"제사장들"}],"duration":8.2,"support":null,"ref":"에스라 3:10-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "praise",
+        "lead": "제사장들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "music",
+        "emotion": "joy",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "lift",
+            "duration": 1,
+            "actor": "제사장들"
+          },
+          {
+            "action": "sway",
+            "duration": 1.2,
+            "actor": "제사장들"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "sway",
+            "duration": 1.8,
+            "actor": "제사장들"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "제사장들"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "제사장들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 3:10-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-4-3",
@@ -135,7 +319,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"halt","lead":"아닥사스다","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"temple","beats":[{"action":"walk","duration":1,"actor":"아닥사스다"},{"action":"look","duration":1.2,"actor":"아닥사스다"},{"action":"halt","duration":1.5,"actor":"아닥사스다"},{"action":"lower","duration":1.8,"actor":"아닥사스다"},{"action":"stand","duration":1.5,"actor":"아닥사스다"},{"action":"listen","duration":1.2,"actor":"아닥사스다"}],"duration":8.2,"support":null,"ref":"에스라 4:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "halt",
+        "lead": "아닥사스다",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "none",
+        "emotion": "worried",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "halt",
+            "duration": 1.5,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "lower",
+            "duration": 1.8,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "stand",
+            "duration": 1.5,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "아닥사스다"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 4:17-24",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-5-0",
@@ -160,7 +390,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"encourage","lead":"학개","target":"스룹바벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"학개"},{"action":"turn","duration":1.2,"actor":"학개"},{"action":"speak","duration":1.5,"actor":"학개"},{"action":"point","duration":1.8,"actor":"학개"},{"action":"listen","duration":1.5,"actor":"학개"},{"action":"lower","duration":1.2,"actor":"학개"}],"duration":8.2,"support":null,"ref":"에스라 5:1-2","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "encourage",
+        "lead": "학개",
+        "target": "스룹바벨",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "학개"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "학개"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "학개"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "학개"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "학개"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 5:1-2",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-5-2",
@@ -195,7 +471,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"send-letter","lead":"닷드내","target":"다리오","mode":"reconstruction","setting":"chamber","effect":"letter","emotion":"determined","prop":"letter","beats":[{"action":"read","duration":1,"actor":"닷드내"},{"action":"write","duration":1.2,"actor":"닷드내"},{"action":"fold","duration":1.5,"actor":"닷드내"},{"action":"extend","duration":1.8,"actor":"닷드내"},{"action":"release","duration":1.5,"actor":"닷드내"},{"action":"look","duration":1.2,"actor":"닷드내"}],"duration":8.2,"support":null,"ref":"에스라 5:6-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "send-letter",
+        "lead": "닷드내",
+        "target": "다리오",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "letter",
+        "emotion": "determined",
+        "prop": "letter",
+        "beats": [
+          {
+            "action": "read",
+            "duration": 1,
+            "actor": "닷드내"
+          },
+          {
+            "action": "write",
+            "duration": 1.2,
+            "actor": "닷드내"
+          },
+          {
+            "action": "fold",
+            "duration": 1.5,
+            "actor": "닷드내"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "닷드내"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "닷드내"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "닷드내"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 5:6-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-6-0",
@@ -223,7 +545,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"read","lead":"다리오","target":"고레스","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"inspect","duration":1,"actor":"다리오"},{"action":"grasp","duration":1.2,"actor":"다리오"},{"action":"open","duration":1.5,"actor":"다리오"},{"action":"read","duration":1.8,"actor":"다리오"},{"action":"write","duration":1.5,"actor":"다리오"},{"action":"place","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "read",
+        "lead": "다리오",
+        "target": "고레스",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "다리오"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "다리오"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "다리오"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "다리오"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 6:1-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-6-2",
@@ -252,7 +620,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dedicate","lead":"다리오","target":"학개","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"다리오"},{"action":"gather","duration":1.2,"actor":"다리오"},{"action":"lift","duration":1.5,"actor":"다리오"},{"action":"extend","duration":1.8,"actor":"다리오"},{"action":"release","duration":1.5,"actor":"다리오"},{"action":"bow","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:13-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dedicate",
+        "lead": "다리오",
+        "target": "학개",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "transfer",
+        "emotion": "gentle",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "다리오"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "다리오"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "다리오"
+          },
+          {
+            "action": "release",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "다리오"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 6:13-18",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-7-2",
@@ -290,7 +704,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"decree","lead":"아닥사스다","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"read","duration":1,"actor":"아닥사스다"},{"action":"lift","duration":1.2,"actor":"아닥사스다"},{"action":"speak","duration":1.5,"actor":"아닥사스다"},{"action":"point","duration":1.8,"actor":"아닥사스다"},{"action":"lower","duration":1.5,"actor":"아닥사스다"},{"action":"write","duration":1.2,"actor":"아닥사스다"}],"duration":8.2,"support":null,"ref":"에스라 7:11-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "decree",
+        "lead": "아닥사스다",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "read",
+            "duration": 1,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "lift",
+            "duration": 1.2,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "아닥사스다"
+          },
+          {
+            "action": "write",
+            "duration": 1.2,
+            "actor": "아닥사스다"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 7:11-26",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-8-1",
@@ -318,7 +778,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"summon","lead":"잇도","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"잇도"},{"action":"turn","duration":1.2,"actor":"잇도"},{"action":"speak","duration":1.5,"actor":"잇도"},{"action":"point","duration":1.8,"actor":"잇도"},{"action":"listen","duration":1.5,"actor":"잇도"},{"action":"lower","duration":1.2,"actor":"잇도"}],"duration":8.2,"support":null,"ref":"에스라 8:15-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "summon",
+        "lead": "잇도",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "잇도"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "잇도"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "잇도"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "잇도"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "잇도"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "잇도"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 8:15-20",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-29",
@@ -347,7 +853,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"praise","lead":"예수아","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"temple","beats":[{"action":"lift","duration":1,"actor":"예수아"},{"action":"sway","duration":1.2,"actor":"예수아"},{"action":"step","duration":1.5,"actor":"예수아"},{"action":"sway","duration":1.8,"actor":"예수아"},{"action":"step","duration":1.5,"actor":"예수아"},{"action":"bow","duration":1.2,"actor":"예수아"}],"duration":8.2,"support":null,"ref":"에스라 3:10-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "praise",
+        "lead": "예수아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "music",
+        "emotion": "joy",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "lift",
+            "duration": 1,
+            "actor": "예수아"
+          },
+          {
+            "action": "sway",
+            "duration": 1.2,
+            "actor": "예수아"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "예수아"
+          },
+          {
+            "action": "sway",
+            "duration": 1.8,
+            "actor": "예수아"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "예수아"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "예수아"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 3:10-11",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-voice-30",
@@ -385,7 +937,53 @@
       },
       "narrationOnly": false,
       "objectNote": "본문을 근거로 직접 쓴 창작 발화예요. 도구는 장면의 상징 배치일 수 있으며, 모든 동작을 전용 애니메이션으로 재현한 것은 아니에요.",
-      "animation": {"version":2,"motif":"repent","lead":"에스라","target":null,"mode":"reconstruction","setting":"courtyard","effect":"tear","emotion":"sad","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"startle","duration":1.2,"actor":"에스라"},{"action":"grasp","duration":1.5,"actor":"에스라"},{"action":"tear","duration":1.8,"actor":"에스라"},{"action":"kneel","duration":1.5,"actor":"에스라"},{"action":"pray","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 9:5-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "repent",
+        "lead": "에스라",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tear",
+        "emotion": "sad",
+        "prop": "cloak",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "startle",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "tear",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "pray",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 9:5-15",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-01",
@@ -480,7 +1078,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"스룹바벨","target":"예수아","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"book","beats":[{"action":"look","duration":1,"actor":"스룹바벨"},{"action":"listen","duration":1.2,"actor":"스룹바벨"},{"action":"cradle","duration":1.5,"actor":"스룹바벨"},{"action":"smile","duration":1.8,"actor":"스룹바벨"},{"action":"bless","duration":1.5,"actor":"스룹바벨"},{"action":"bow","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"에스라 2:1-70","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "genealogy",
+        "lead": "스룹바벨",
+        "target": "예수아",
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "family",
+        "emotion": "gentle",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "cradle",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "smile",
+            "duration": 1.8,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 2:1-70",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-02",
@@ -506,7 +1150,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"lament","lead":"노인들","target":"백성","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"temple","beats":[{"action":"startle","duration":1,"actor":"노인들"},{"action":"lower","duration":1.2,"actor":"노인들"},{"action":"kneel","duration":1.5,"actor":"노인들"},{"action":"cover-mouth","duration":1.8,"actor":"노인들"},{"action":"mourn","duration":1.5,"actor":"노인들"},{"action":"lower","duration":1.2,"actor":"노인들"}],"duration":8.2,"support":null,"ref":"에스라 3:12-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "lament",
+        "lead": "노인들",
+        "target": "백성",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "tears",
+        "emotion": "sad",
+        "prop": "temple",
+        "beats": [
+          {
+            "action": "startle",
+            "duration": 1,
+            "actor": "노인들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "노인들"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "노인들"
+          },
+          {
+            "action": "cover-mouth",
+            "duration": 1.8,
+            "actor": "노인들"
+          },
+          {
+            "action": "mourn",
+            "duration": 1.5,
+            "actor": "노인들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "노인들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 3:12-13",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-03",
@@ -547,7 +1237,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"accuse","lead":"대적들","target":"스룹바벨","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"letter","beats":[{"action":"listen","duration":1,"actor":"대적들"},{"action":"turn","duration":1.2,"actor":"대적들"},{"action":"speak","duration":1.5,"actor":"대적들"},{"action":"point","duration":1.8,"actor":"대적들"},{"action":"listen","duration":1.5,"actor":"대적들"},{"action":"lower","duration":1.2,"actor":"대적들"}],"duration":8.2,"support":null,"ref":"에스라 4:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "accuse",
+        "lead": "대적들",
+        "target": "스룹바벨",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "letter",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "대적들"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "대적들"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "대적들"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "대적들"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "대적들"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "대적들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 4:1-16",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-04",
@@ -575,7 +1311,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"dispute","lead":"닷드내","target":"스룹바벨","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"닷드내"},{"action":"turn","duration":1.2,"actor":"닷드내"},{"action":"point","duration":1.5,"actor":"닷드내"},{"action":"point","duration":1.8,"actor":"닷드내"},{"action":"listen","duration":1.5,"actor":"닷드내"},{"action":"lower","duration":1.2,"actor":"닷드내"}],"duration":8.2,"support":null,"ref":"에스라 5:3-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "dispute",
+        "lead": "닷드내",
+        "target": "스룹바벨",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "angry",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "닷드내"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "닷드내"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "닷드내"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "닷드내"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "닷드내"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "닷드내"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 5:3-5",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-05",
@@ -603,7 +1385,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"feast","lead":"다리오","target":"제사장과 레위인","mode":"reconstruction","setting":"chamber","effect":"feast","emotion":"joy","prop":"table","beats":[{"action":"look","duration":1,"actor":"다리오"},{"action":"walk","duration":1.2,"actor":"다리오"},{"action":"bow","duration":1.5,"actor":"다리오"},{"action":"extend","duration":1.8,"actor":"다리오"},{"action":"place","duration":1.5,"actor":"다리오"},{"action":"sit","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:19-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "feast",
+        "lead": "다리오",
+        "target": "제사장과 레위인",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "feast",
+        "emotion": "joy",
+        "prop": "table",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "다리오"
+          },
+          {
+            "action": "walk",
+            "duration": 1.2,
+            "actor": "다리오"
+          },
+          {
+            "action": "bow",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "extend",
+            "duration": 1.8,
+            "actor": "다리오"
+          },
+          {
+            "action": "place",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "sit",
+            "duration": 1.2,
+            "actor": "다리오"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 6:19-22",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-06",
@@ -636,7 +1464,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"instruct","lead":"에스라","target":"함께 올라온 사람들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"book","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"turn","duration":1.2,"actor":"에스라"},{"action":"speak","duration":1.5,"actor":"에스라"},{"action":"point","duration":1.8,"actor":"에스라"},{"action":"listen","duration":1.5,"actor":"에스라"},{"action":"lower","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 7:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "instruct",
+        "lead": "에스라",
+        "target": "함께 올라온 사람들",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 7:1-10",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-07",
@@ -662,7 +1536,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"praise","lead":"에스라","target":"아닥사스다","mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"scroll","beats":[{"action":"lift","duration":1,"actor":"에스라"},{"action":"sway","duration":1.2,"actor":"에스라"},{"action":"step","duration":1.5,"actor":"에스라"},{"action":"sway","duration":1.8,"actor":"에스라"},{"action":"step","duration":1.5,"actor":"에스라"},{"action":"bow","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 7:27-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "praise",
+        "lead": "에스라",
+        "target": "아닥사스다",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "music",
+        "emotion": "joy",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "lift",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "sway",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "sway",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "step",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 7:27-28",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-08",
@@ -703,7 +1623,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"journey","lead":"에스라","target":"세레뱌","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"treasure-chest","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"gather","duration":1.2,"actor":"에스라"},{"action":"carry","duration":1.5,"actor":"에스라"},{"action":"walk","duration":1.8,"actor":"에스라"},{"action":"walk","duration":1.5,"actor":"에스라"},{"action":"look","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 8:21-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "journey",
+        "lead": "에스라",
+        "target": "세레뱌",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "journey",
+        "emotion": "determined",
+        "prop": "treasure-chest",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "carry",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "walk",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "walk",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "look",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 8:21-36",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-09",
@@ -732,7 +1698,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"report","lead":"에스라","target":"지도자들","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"speak","duration":1.2,"actor":"에스라"},{"action":"point","duration":1.5,"actor":"에스라"},{"action":"listen","duration":1.8,"actor":"에스라"},{"action":"lower","duration":1.5,"actor":"에스라"},{"action":"bow","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 9:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "에스라",
+        "target": "지도자들",
+        "mode": "reconstruction",
+        "setting": "court",
+        "effect": "speech",
+        "emotion": "neutral",
+        "prop": "cloak",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "speak",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "point",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "listen",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 9:1-4",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-10",
@@ -774,7 +1786,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"confess","lead":"에스라","target":"스가냐","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"sad","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"에스라"},{"action":"lower","duration":1.2,"actor":"에스라"},{"action":"kneel","duration":1.5,"actor":"에스라"},{"action":"speak","duration":1.8,"actor":"에스라"},{"action":"pray","duration":1.5,"actor":"에스라"},{"action":"bow","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 10:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "confess",
+        "lead": "에스라",
+        "target": "스가냐",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "prayer",
+        "emotion": "sad",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "speak",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 10:1-17",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-11",
@@ -825,7 +1883,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"write","lead":"에스라","target":"제사장들","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"book","beats":[{"action":"inspect","duration":1,"actor":"에스라"},{"action":"grasp","duration":1.2,"actor":"에스라"},{"action":"open","duration":1.5,"actor":"에스라"},{"action":"read","duration":1.8,"actor":"에스라"},{"action":"write","duration":1.5,"actor":"에스라"},{"action":"place","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 10:18-44","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "write",
+        "lead": "에스라",
+        "target": "제사장들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "scroll",
+        "emotion": "determined",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "open",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "read",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "write",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "place",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 10:18-44",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-1-0",
@@ -851,7 +1955,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"gather","lead":"유다와 베냐민 족장들","target":"제사장과 레위인","mode":"reconstruction","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"유다와 베냐민 족장들"},{"action":"bend","duration":1.2,"actor":"유다와 베냐민 족장들"},{"action":"grasp","duration":1.5,"actor":"유다와 베냐민 족장들"},{"action":"lift","duration":1.8,"actor":"유다와 베냐민 족장들"},{"action":"bundle","duration":1.5,"actor":"유다와 베냐민 족장들"},{"action":"carry","duration":1.2,"actor":"유다와 베냐민 족장들"}],"duration":8.2,"support":null,"ref":"에스라 1:5-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "gather",
+        "lead": "유다와 베냐민 족장들",
+        "target": "제사장과 레위인",
+        "mode": "reconstruction",
+        "setting": "pasture",
+        "effect": "grain",
+        "emotion": "gentle",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "walk",
+            "duration": 1,
+            "actor": "유다와 베냐민 족장들"
+          },
+          {
+            "action": "bend",
+            "duration": 1.2,
+            "actor": "유다와 베냐민 족장들"
+          },
+          {
+            "action": "grasp",
+            "duration": 1.5,
+            "actor": "유다와 베냐민 족장들"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "유다와 베냐민 족장들"
+          },
+          {
+            "action": "bundle",
+            "duration": 1.5,
+            "actor": "유다와 베냐민 족장들"
+          },
+          {
+            "action": "carry",
+            "duration": 1.2,
+            "actor": "유다와 베냐민 족장들"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 1:5-6",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-extra-6-0",
@@ -883,7 +2033,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"warning","lead":"다리오","target":"닷드내","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다리오"},{"action":"turn","duration":1.2,"actor":"다리오"},{"action":"speak","duration":1.5,"actor":"다리오"},{"action":"point","duration":1.8,"actor":"다리오"},{"action":"listen","duration":1.5,"actor":"다리오"},{"action":"lower","duration":1.2,"actor":"다리오"}],"duration":8.2,"support":null,"ref":"에스라 6:6-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "warning",
+        "lead": "다리오",
+        "target": "닷드내",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "speech",
+        "emotion": "determined",
+        "prop": "scene-marker",
+        "beats": [
+          {
+            "action": "listen",
+            "duration": 1,
+            "actor": "다리오"
+          },
+          {
+            "action": "turn",
+            "duration": 1.2,
+            "actor": "다리오"
+          },
+          {
+            "action": "speak",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "point",
+            "duration": 1.8,
+            "actor": "다리오"
+          },
+          {
+            "action": "listen",
+            "duration": 1.5,
+            "actor": "다리오"
+          },
+          {
+            "action": "lower",
+            "duration": 1.2,
+            "actor": "다리오"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 6:6-12",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-review-01",
@@ -910,7 +2106,53 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "계보는 상징적으로, 성전 준비는 본문에 적힌 역할 분담으로 표현해요. 구체적인 자세와 시간은 연출이에요.",
-      "animation": {"version":2,"motif":"build","lead":"스룹바벨","target":"예수아","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"stone","beats":[{"action":"inspect","duration":1,"actor":"스룹바벨"},{"action":"gather","duration":1.2,"actor":"스룹바벨"},{"action":"lift","duration":1.5,"actor":"스룹바벨"},{"action":"place","duration":1.8,"actor":"스룹바벨"},{"action":"hammer","duration":1.5,"actor":"스룹바벨"},{"action":"inspect","duration":1.2,"actor":"스룹바벨"}],"duration":8.2,"support":null,"ref":"에스라 3:7-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "build",
+        "lead": "스룹바벨",
+        "target": "예수아",
+        "mode": "reconstruction",
+        "setting": "courtyard",
+        "effect": "build",
+        "emotion": "determined",
+        "prop": "stone",
+        "beats": [
+          {
+            "action": "inspect",
+            "duration": 1,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "gather",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "lift",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "place",
+            "duration": 1.8,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "hammer",
+            "duration": 1.5,
+            "actor": "스룹바벨"
+          },
+          {
+            "action": "inspect",
+            "duration": 1.2,
+            "actor": "스룹바벨"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 3:7-9",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
     },
     {
       "id": "ot-ezr-review-02",
@@ -946,7 +2188,132 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "계보는 상징적으로, 성전 준비는 본문에 적힌 역할 분담으로 표현해요. 구체적인 자세와 시간은 연출이에요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"에스라","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"book","beats":[{"action":"look","duration":1,"actor":"에스라"},{"action":"listen","duration":1.2,"actor":"에스라"},{"action":"cradle","duration":1.5,"actor":"에스라"},{"action":"smile","duration":1.8,"actor":"에스라"},{"action":"bless","duration":1.5,"actor":"에스라"},{"action":"bow","duration":1.2,"actor":"에스라"}],"duration":8.2,"support":null,"ref":"에스라 8:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {
+        "version": 2,
+        "motif": "genealogy",
+        "lead": "에스라",
+        "target": null,
+        "mode": "illustration",
+        "setting": "chamber",
+        "effect": "family",
+        "emotion": "gentle",
+        "prop": "book",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "listen",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "cradle",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "smile",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "bless",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 8:1-14",
+        "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
+      }
+    },
+    {
+      "id": "ot-ezr-review-09-05",
+      "code": "ezr",
+      "chapter": 9,
+      "title": "부끄러움의 기도",
+      "actors": [
+        "에스라"
+      ],
+      "object": "scroll",
+      "ref": "에스라 9:5-15",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 저녁 제사 때 에스라가 무릎 꿇고 손을 들어, 부끄러워 얼굴을 들 수 없다며 남은 자를 두신 은혜를 저버린 백성의 죄를 고백해요."
+      ],
+      "study": "저녁 제사 때 에스라가 무릎 꿇고 손을 들어, 부끄러워 얼굴을 들 수 없다며 남은 자를 두신 은혜를 저버린 백성의 죄를 고백해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 사건과 인물을 설명하는 장면이에요. 화면의 세부 동작은 연출이며 원문에 없는 사실을 덧붙이지 않아요.",
+      "animation": {
+        "version": 2,
+        "motif": "pray",
+        "lead": "에스라",
+        "target": null,
+        "mode": "illustration",
+        "setting": "vision",
+        "effect": "symbol",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "beats": [
+          {
+            "action": "look",
+            "duration": 1,
+            "actor": "에스라"
+          },
+          {
+            "action": "kneel",
+            "duration": 1.2,
+            "actor": "에스라"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "lift",
+            "duration": 1.8,
+            "actor": "에스라"
+          },
+          {
+            "action": "pray",
+            "duration": 1.5,
+            "actor": "에스라"
+          },
+          {
+            "action": "bow",
+            "duration": 1.2,
+            "actor": "에스라"
+          }
+        ],
+        "duration": 8.2,
+        "support": null,
+        "ref": "에스라 9:5-15",
+        "source": "장별 요약 사건 단락 기반 연출 · 세부 자세와 시간은 창작"
+      }
     }
   ],
   "additionalPeople": {
