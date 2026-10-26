@@ -1637,6 +1637,117 @@
         }
       ]
     },
+    "43": {
+      "lead": "라헬",
+      "target": "야곱",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "라헬",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "라헬",
+          "duration": 1.8
+        },
+        {
+          "action": "cradle",
+          "actor": "빌하",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "레아",
+          "duration": 1.2
+        }
+      ]
+    },
+    "44": {
+      "lead": "야곱",
+      "target": "라반",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "라반",
+          "duration": 1.2
+        },
+        {
+          "action": "grasp",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "cut",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "place",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "45": {
+      "lead": "야곱",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "kneel",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "pray",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "lift",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "pray",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
     "47": {
       "lead": "야곱",
       "target": "에서",
@@ -3008,6 +3119,80 @@
     },
     "135": {
       "mode": "illustration"
+    },
+    "140": {
+      "lead": "레아",
+      "target": "라헬",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "extend",
+          "actor": "르우벤",
+          "duration": 1
+        },
+        {
+          "action": "receive",
+          "actor": "레아",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "라헬",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "레아",
+          "duration": 1.8
+        },
+        {
+          "action": "extend",
+          "actor": "레아",
+          "duration": 1.5
+        },
+        {
+          "action": "pray",
+          "actor": "라헬",
+          "duration": 1.2
+        }
+      ]
+    },
+    "142": {
+      "lead": "야곱",
+      "target": null,
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "signal",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "startle",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "gather",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
     },
     "143": {
       "mode": "symbolic",

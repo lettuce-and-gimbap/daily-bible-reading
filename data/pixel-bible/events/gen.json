@@ -1331,7 +1331,9 @@
       "title": "여종을 통한 아들들",
       "actors": [
         "라헬",
-        "레아"
+        "레아",
+        "야곱",
+        "빌하"
       ],
       "object": "house",
       "ref": "창세기 30:1-13",
@@ -1358,7 +1360,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"rivalry","lead":"라헬","target":"레아","mode":"reconstruction","setting":"tent","effect":"speech","emotion":"worried","prop":"house","beats":[{"action":"listen","duration":1,"actor":"라헬"},{"action":"turn","duration":1.2,"actor":"라헬"},{"action":"point","duration":1.5,"actor":"라헬"},{"action":"lower","duration":1.8,"actor":"라헬"},{"action":"turn","duration":1.5,"actor":"라헬"},{"action":"stand","duration":1.2,"actor":"라헬"}],"duration":8.2,"support":null,"ref":"창세기 30:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"rivalry","lead":"라헬","target":"야곱","mode":"reconstruction","setting":"tent","effect":"none","emotion":"worried","prop":"house","beats":[{"action":"speak","actor":"라헬","duration":1},{"action":"listen","actor":"야곱","duration":1.2},{"action":"speak","actor":"야곱","duration":1.5},{"action":"signal","actor":"라헬","duration":1.8},{"action":"cradle","actor":"빌하","duration":1.5},{"action":"speak","actor":"레아","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 30:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-30-3",
@@ -1400,7 +1402,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"tend","lead":"야곱","target":"라반","mode":"reconstruction","setting":"pasture","effect":"flock","emotion":"gentle","prop":"sheep","beats":[{"action":"look","duration":1,"actor":"야곱"},{"action":"walk","duration":1.2,"actor":"야곱"},{"action":"reach","duration":1.5,"actor":"야곱"},{"action":"inspect","duration":1.8,"actor":"야곱"},{"action":"gather","duration":1.5,"actor":"야곱"},{"action":"stand","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 30:25-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"tend","lead":"야곱","target":"라반","mode":"reconstruction","setting":"pasture","effect":"none","emotion":"gentle","prop":"sheep","beats":[{"action":"speak","actor":"야곱","duration":1},{"action":"listen","actor":"라반","duration":1.2},{"action":"grasp","actor":"야곱","duration":1.5},{"action":"cut","actor":"야곱","duration":1.8},{"action":"place","actor":"야곱","duration":1.5},{"action":"gather","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 30:25-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-32-1",
@@ -1408,8 +1410,7 @@
       "chapter": 32,
       "title": "야곱의 기도",
       "actors": [
-        "야곱",
-        "에서"
+        "야곱"
       ],
       "object": "staff",
       "ref": "창세기 32:9-12",
@@ -1427,7 +1428,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"야곱","target":"에서","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"kneel","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pray","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 32:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"야곱","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"worried","prop":"staff","beats":[{"action":"stand","actor":"야곱","duration":1},{"action":"kneel","actor":"야곱","duration":1.2},{"action":"pray","actor":"야곱","duration":1.5},{"action":"lift","actor":"야곱","duration":1.8},{"action":"pray","actor":"야곱","duration":1.5},{"action":"bow","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 32:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-32-2",
@@ -4555,7 +4556,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"trade","lead":"레아","target":"라헬","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"레아"},{"action":"grasp","duration":1.2,"actor":"레아"},{"action":"weigh","duration":1.5,"actor":"레아"},{"action":"place","duration":1.8,"actor":"레아"},{"action":"extend","duration":1.5,"actor":"레아"},{"action":"receive","duration":1.2,"actor":"레아"}],"duration":8.2,"support":null,"ref":"창세기 30:14-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"trade","lead":"레아","target":"라헬","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"extend","actor":"르우벤","duration":1},{"action":"receive","actor":"레아","duration":1.2},{"action":"speak","actor":"라헬","duration":1.5},{"action":"speak","actor":"레아","duration":1.8},{"action":"extend","actor":"레아","duration":1.5},{"action":"pray","actor":"라헬","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 30:14-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-31-1",
@@ -4604,8 +4605,7 @@
       "chapter": 32,
       "title": "야곱이 에서의 귀환 소식을 듣고 두려워하다",
       "actors": [
-        "야곱",
-        "에서"
+        "야곱"
       ],
       "object": "scene-marker",
       "ref": "창세기 32:1-8",
@@ -4627,7 +4627,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"야곱","target":"에서","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"speak","duration":1.2,"actor":"야곱"},{"action":"point","duration":1.5,"actor":"야곱"},{"action":"listen","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 32:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"야곱","target":null,"mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"walk","actor":"야곱","duration":1},{"action":"look","actor":"야곱","duration":1.2},{"action":"signal","actor":"야곱","duration":1.5},{"action":"listen","actor":"야곱","duration":1.8},{"action":"startle","actor":"야곱","duration":1.5},{"action":"gather","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 32:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-32-1",
