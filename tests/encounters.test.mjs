@@ -303,7 +303,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3808);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3806);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -810,6 +810,19 @@ test('요엘의 3장면은 재앙의 호출·회개 권면·열국 심판을 구
  for(const relation of context.relations)assert.ok(entries.some(entry=>entry.chapter===`jol.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  for(const chapter of [1,2])assert.ok(summary.chapters[chapter].people.every(person=>!['메뚜기 떼','큰 군대'].includes(person.name)),'재앙과 상징 군대는 NPC가 아님');
  for(const entry of entries)assert.ok(entry.detail&&entry.lines.length===2&&entry.replyLines.length===2);
+});
+
+test('아모스의 사회 책망·예언자 대면·열국 심판 관계 11개를 대화로 잇고 비유 동물을 사람과 구분한다',()=>{
+ const summary=JSON.parse(fs.readFileSync('data/summary/amo.json'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'amo',name:'아모스',chap:Number(chap),data}));
+ const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^amo\.\d+$/.test(entry.chapter));
+ assert.equal(chapters.length,9);assert.equal(context.relations.length,11);assert.equal(entries.length,11);
+ for(const relation of context.relations)assert.ok(entries.some(entry=>entry.chapter===`amo.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+ for(const entry of entries){assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/아모스 \d+/);}
+ assert.ok(summary.chapters[4].people.some(person=>person.name==='사마리아의 부유한 여인들'));
+ assert.equal(summary.chapters[4].people.some(person=>person.name==='바산의 암소들'),false,'비유 표현을 동물 NPC 이름으로 쓰지 않는다');
+ assert.equal(summary.chapters[7].rels.some(relation=>relation.to==='여로보암'),false,'왕에게 전달된 보고를 현장 조우로 만들지 않는다');
+ assert.match(entries.find(entry=>entry.id==='pair-amo-7-amaziah-amos').ref,/7:10–17/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

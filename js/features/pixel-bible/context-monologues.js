@@ -102,6 +102,9 @@ const scenes=[
  ['jol',2,'요엘','요엘 2:1–17',[
   ['나는 시온에서 나팔을 불어 다가오는 여호와의 날을 알려야 해.','worried'],
   ['나는 백성에게 옷만 찢지 말고 마음을 찢어 주님께 돌아오라고 외치겠어.','determined']]],
+ ['amo',7,'아모스','아모스 7:7–17',[
+  ['나는 다림줄 환상을 보았고 이스라엘의 굽은 담을 더는 감출 수 없었어.','determined'],
+  ['나는 목자였지만 주님이 나를 부르셔서 이 백성에게 말씀을 전하게 하셨어.','determined']]],
 ];
 export function chapterMonologues(n,occurrences){
  const out=[],sceneKeys=new Set();

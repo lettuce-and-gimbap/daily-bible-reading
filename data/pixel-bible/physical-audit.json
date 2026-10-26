@@ -1074,7 +1074,7 @@
 {"id":"group:이스라엘 족속","name":"이스라엘 족속","kind":"group","occurrences":["amo.3","amo.5","ezk.3","ezk.4","ezk.6","ezk.18","ezk.20","ezk.29","ezk.33","ezk.36","ezk.39","ezk.40","ezk.43","ezk.45","isa.5","jer.18"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:사마리아의 부자들:amo","name":"사마리아의 부자들","kind":"unresolved","occurrences":["amo.3"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:아스돗과 애굽:amo","name":"아스돗과 애굽","kind":"unresolved","occurrences":["amo.3"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:바산의 암소들:amo","name":"바산의 암소들","kind":"unresolved","occurrences":["amo.4"],"traits":[],"status":"group-or-unresolved"},
+{"id":"unresolved:사마리아의 부유한 여인들:amo","name":"바산의 암소들","kind":"unresolved","occurrences":["amo.4"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:성문에서 책망하는 자:amo","name":"성문에서 책망하는 자","kind":"unresolved","occurrences":["amo.5"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:시온과 사마리아의 지도자:amo","name":"시온과 사마리아의 지도자","kind":"unresolved","occurrences":["amo.6"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:요셉(이스라엘):amo","name":"요셉(이스라엘)","kind":"unresolved","occurrences":["amo.6"],"traits":[],"status":"group-or-unresolved"},

@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "jol",
-    "nextBook": "amo",
-    "booksCompleted": 29,
+    "currentBook": "amo",
+    "nextBook": "oba",
+    "booksCompleted": 30,
     "completedBooks": [
       "gen",
       "exo",
@@ -326,27 +326,28 @@
       "ezk",
       "dan",
       "hos",
-      "jol"
+      "jol",
+      "amo"
     ],
-    "chaptersReviewed": 883,
-    "relationshipLinksReviewed": 2777,
-    "authoredPairEntriesReviewed": 850,
+    "chaptersReviewed": 892,
+    "relationshipLinksReviewed": 2788,
+    "authoredPairEntriesReviewed": 861,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
-      "interactionLinks": 3808,
-      "authoredLinks": 894,
-      "relationshipGeneratedLinks": 2914,
+      "interactionLinks": 3806,
+      "authoredLinks": 905,
+      "relationshipGeneratedLinks": 2901,
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "호세아 14장에 이어 요엘 3장까지 검토했다. 누계 883장, 유효 관계 대화 후보 2,777개, 작성·점검한 대화 묶음 850개다. 요엘의 인간 관계 3개는 제사장에게 성회를 요청하는 장면과 열국의 약탈에 대한 심판을 각각 왕복 대사로 구성했다. 메뚜기 재앙과 상징 군대는 인물에서 분리하고 요엘의 장별 독백을 보강했다. 전체 관계 후보는 3,808개이며 894개 작성 대사와 2,914개 관계 기반 대사로 연결되어 있다. 다음 권은 아모스다.",
+    "statusNote": "요엘 3장에 이어 아모스 9장까지 검토했다. 누계 892장, 유효 관계 대화 2,788개, 작성·점검 대화 묶음 861개다. 아모스의 인간 관계 11개를 압제·예언·심판 맥락에 맞춰 보강했다. ‘바산의 암소들’은 본문 비유를 보존하면서 사람인 사마리아 부유층으로 분류했고, 여로보암에게 전달된 보고는 현장 조우에서 제외했다. 아모스의 벧엘 대면 독백도 추가했다. 전체 상호작용 후보는 3,806개이며 905개 작성 대사와 2,901개 관계 기반 대사로 연결되어 있다. 다음 권은 오바댜다.",
     "partialBookAudit": {
-      "book": "jol",
-      "chaptersScanned": 3,
-      "relationshipLinksFound": 3,
-      "authoredPairEntriesAddedAndChecked": 3,
-      "authoredLinksCovered": 3,
+      "book": "amo",
+      "chaptersScanned": 9,
+      "relationshipLinksFound": 11,
+      "authoredPairEntriesAddedAndChecked": 11,
+      "authoredLinksCovered": 11,
       "generatedLinksRemaining": 0,
       "nonDialogueLinksRemoved": 2,
       "status": "complete",
@@ -354,9 +355,15 @@
       "chaptersReviewedList": [
         1,
         2,
-        3
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
       ],
-      "statusNote": "요엘 1–3장 전체를 검토했다. 성회 소집 요청, 열국의 약탈과 심판을 사건에 맞는 양방향 대사로 연결했고, 재앙의 메뚜기 떼와 상징 군대는 대화 인물에서 제외했다. 요엘의 1·2장 독백을 본문 참조와 함께 보강했다."
+      "statusNote": "아모스 1–9장 전체를 훑었다. 가난한 이를 사고판 죄, 성문에서 정의를 막은 일, 벧엘 제사장 아마샤와 아모스의 대면, 열국 심판을 사건별 왕복 대사 11개로 구성했다. 중복된 대면 관계선은 하나로 합치고 왕에게 전달된 간접 보고는 조우에서 제외했다. 동물 비유의 ‘바산의 암소들’은 사마리아의 부유한 여인들로 분류했다."
     },
     "currentBookStatus": "complete"
   }

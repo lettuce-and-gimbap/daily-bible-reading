@@ -20291,7 +20291,7 @@
       ]
     },
     {
-      "name": "바산의 암소들",
+      "name": "사마리아의 부유한 여인들",
       "roles": [
         "가난한 자를 학대한 사마리아 여인"
       ],
@@ -20303,7 +20303,7 @@
       "identities": [
         {
           "kind": "unresolved",
-          "id": "unresolved:바산의 암소들:amo",
+          "id": "unresolved:사마리아의 부유한 여인들:amo",
           "status": "needs-review",
           "refs": [
             "amo.4"
