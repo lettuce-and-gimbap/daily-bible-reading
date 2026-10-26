@@ -145,3 +145,27 @@ test('여호수아 사건 범위는 기준 658절을 누락·중복 없이 덮�
  assert.deepEqual(duplicates,[]);
  assert.equal(covered,658);
 });
+
+test('사사기 사건 범위는 기준 618절을 누락·중복 없이 덮는다',()=>{
+ const data=JSON.parse(readFileSync('data/summary/jdg.json','utf8'));
+ const verseCounts=[36,23,31,24,31,40,25,35,57,18,40,15,25,20,20,31,13,31,30,48,25];
+ assert.equal(Object.keys(data.chapters).length,21);
+ assert.equal(verseCounts.reduce((sum,count)=>sum+count,0),618);
+ let covered=0;const missing=[],duplicates=[];
+ verseCounts.forEach((count,index)=>{
+  const chapter=index+1,seen=new Uint8Array(count+1);
+  for(const event of data.chapters[String(chapter)].events||[]){
+   const numbers=event.verses.match(/\d+/g)?.map(Number)||[];
+   const from=numbers[0],to=numbers[1]||from;
+   for(let verse=from;verse<=to;verse++)if(verse>0&&verse<=count)seen[verse]++;
+  }
+  for(let verse=1;verse<=count;verse++){
+   if(!seen[verse])missing.push(`${chapter}:${verse}`);
+   else covered++;
+   if(seen[verse]>1)duplicates.push(`${chapter}:${verse}`);
+  }
+ });
+ assert.deepEqual(missing,[]);
+ assert.deepEqual(duplicates,[]);
+ assert.equal(covered,618);
+});

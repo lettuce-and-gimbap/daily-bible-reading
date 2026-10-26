@@ -34,9 +34,9 @@ test('옆 칸 조우 즉시 서로 마주보고 각자 사건에 맞는 대사�
  assert.equal(director.tick(5902,npcs).length,1,'떠났다가 다시 만나면 시작');
 });
 
-test('TV 부스는 연결 관계의 대사 공백을 어색한 인사로 가리지 않는다',()=>{
+test('TV 부스는 관계선이 있는 두 인물에게 관계 유형에 맞는 특수 대화를 제공한다',()=>{
  const a={name:'가상인물A'},b={name:'가상인물B'},relations=[{from:{name:'가상인물A',code:'gen',chap:1},to:{name:'가상인물B'},ref:'창세기 1:1',text:'두 인물이 연결되어 있다.'}];
- const result=loveBoothExchange(a,b,relations);assert.equal(result.mode,'pending');assert.equal(result.lines.length,0);
+ const result=loveBoothExchange(a,b,relations);assert.equal(result.mode,'special');assert.equal(result.lines.length,2);assert.ok(result.lines.every(line=>line.origin==='chapter-relation'));
  const unrelated=loveBoothExchange(a,b,[]);assert.equal(unrelated.mode,'awkward');assert.equal(unrelated.lines.length,2);
 });
 
@@ -76,6 +76,33 @@ test('모든 관계 대사는 짧게 말하고 관계 설명은 자세히 보기
   assert.equal(line.detailText,`${relation.text} (${relation.ref})`);
   assert.equal(line.ref,relation.ref);
   assert.ok(!line.text.includes(relation.text));
+ }
+});
+
+test('명시 대사가 없는 가족·협력·갈등 관계도 관계 성격에 맞는 양방향 창작 특수 대화를 갖는다',()=>{
+ const a={name:'아버지'},b={name:'딸'};
+ for(const [kind,label,expected]of [['family','아버지와 딸',/가족|정/],['ally','함께 지킨 동료',/함께|곁/],['conflict','맞선 원수',/가볍게|선택/]]){
+  const relation={from:{code:'gen',chap:1},to:{code:'gen',chap:1},kind,label,text:'이 장면에서 두 인물의 관계가 드러납니다.',ref:'창세기 1:1'};
+  const lines=relationshipLines(a,b,relation,new Map(),{random:()=>0});
+  assert.equal(lines.length,2);assert.ok(lines.every(line=>line.origin==='chapter-relation'));
+  assert.match(lines[0].text,expected);assert.match(lines[1].detailText,/창작 상호작용/);
+ }
+});
+
+test('창세기부터 여호수아까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
+ const names={gen:'창세기',exo:'출애굽기',lev:'레위기',num:'민수기',deu:'신명기',jos:'여호수아'};
+ for(const code of Object.keys(names)){
+  const summary=JSON.parse(fs.readFileSync(`data/summary/${code}.json`,'utf8'));
+  for(const [chapter,data]of Object.entries(summary.chapters)){
+   const context=buildChapterDialogue([{code,name:names[code],chap:Number(chapter),data}]);
+   for(const relation of context.relations){
+    const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+    assert.equal(lines.length,2,`${code}.${chapter} ${relation.from.name} ↔ ${relation.to.name}`);
+    assert.equal(lines[0].target,relation.to);assert.equal(lines[1].target,relation.from);
+    assert.ok(lines[0].ref);
+    if(lines[0].origin==='chapter-relation')assert.equal(lines[0].ref,relation.ref);
+   }
+  }
  }
 });
 
@@ -197,6 +224,23 @@ test('여호수아의 발화 행은 인물 시점을 유지하고 각 문장에 
  assert.ok(!rows.some(row=>row[1]===8&&row[2]==='아이 왕'), '말하지 않은 아이 왕에게 독백을 붙이지 않음');
 });
 
+test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵한 피해자에게 대사를 붙이지 않는다',()=>{
+ const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='jdg');
+ assert.equal(rows.length,23);
+ assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
+ assert.ok(!rows.some(row=>row[1]===19&&row[2]==='레위인의 첩'));
+ const verseCounts=[36,23,31,24,31,40,25,35,57,18,40,15,25,20,20,31,13,31,30,48,25];
+ for(const row of rows){
+  const chapter=row[1],base=row[3].match(/\d+/g).map(Number),max=verseCounts[chapter-1];
+  for(const ref of row[7]){const range=ref.match(/\d+/g).map(Number),start=range[0],end=range[1]||start;assert.ok(start>=base[0]&&end<=(base[1]||base[0]),`${chapter} ${ref} lies inside authored scope`);assert.ok(start>0&&end<=max,`${chapter} ${ref} exists in the chapter`);}
+ }
+});
+
+test('사사기 핵심 관계 장면은 직접 만남의 요청·응답이 이어진다',()=>{
+ const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 주시오/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/수수께끼의 답/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/따르지 않겠다/]];
+ for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
+});
+
 test('상호작용 대화 중에는 관계 여부와 상관없이 독백 슬롯을 멈춘다',()=>{
  const {director,npcs}=fixture(),ambient=new SpeechDirector();
  ambient.interrupt({id:'ambient',text:'랜덤 대사',speaker:{}},0);
@@ -236,11 +280,12 @@ test('본문 근거가 없는 인물 간 자동 인사는 만들지 않는다',(
  assert.deepEqual(director.tick(800,[a,b,c]),[]);
  assert.equal(director.active.length,0);
 });
-test('관계선만 있고 사건별 대화 기록이 없는 두 인물은 자동 발화하지 않는다',()=>{
+test('관계선만 있어도 그 관계를 반영한 양방향 특수 대화를 한다',()=>{
  const chapters=[{code:'gen',name:'창세기',chap:1,data:{people:[{name:'아담',role:'첫 사람'},{name:'하와',role:'첫 여자'}],rels:[{from:'아담',to:'하와',label:'함께 있음',verses:'1-2',note:'함께 있는 두 사람.'}]}}];
  const context=buildChapterDialogue(chapters),npcs=context.people.map((p,i)=>({...p,refs:[p.ref],x:10+i,y:10,path:[]}));
  const lines=new EncounterDirector(chapters,context,{random:()=>0}).tick(0,npcs);
- assert.deepEqual(lines,[]);
+ assert.equal(lines.length,1);assert.equal(lines[0].origin,'chapter-relation');
+ assert.equal(lines[0].pairLines.length,2);assert.match(lines[0].pairLines[0].text,/이어져|연결/);
 });
 test('기록된 인물 간 상호대사는 확률 제한 없이 실제 조우 때 시작한다',()=>{
  const {director,npcs}=fixture();director.random=()=>.99;

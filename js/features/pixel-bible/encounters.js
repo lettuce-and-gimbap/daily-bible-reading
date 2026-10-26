@@ -47,9 +47,9 @@ export class EncounterDirector {
    [a,b].forEach((n,i)=>{n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;n.direction=directions[i];busy.add(n);});
    const session={id,people:[a,b],lines,started:now,until:now+5800};this.active.push(session);
   }
-  // Unscripted proximity never invents a greeting. The relationship stage is
-  // reserved for documented pair dialogue; unpaired characters stay in ambient motion.
-  // Return one timed exchange; the view positions each speaker's line separately.
+  // Relationships always have a paired exchange: use authored lines when present,
+  // then a relationship-kind line grounded in the chapter relation note.
+  // Unrelated characters still receive no invented greeting.
   return this.active.filter(s=>now>=s.started&&now<s.until).map(s=>({
    ...s.lines[0],session:s.id,slot:0,started:s.started,until:s.until,pairLines:s.lines,
   }));
