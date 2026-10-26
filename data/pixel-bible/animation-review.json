@@ -135,17 +135,29 @@
     },
     {
       "code": "jos",
-      "payloadSha256": "698aee280256f9d034814b2da6a484f21017d9220afddd97fcb768d78b3aaffc",
-      "scenes": 31,
-      "existing": 31,
+      "payloadSha256": "2c9c9259fa88744e9c432f3fb3e2612102c7f29e43fa7571d2d021cdfef4187b",
+      "scenes": 79,
+      "existing": 79,
       "restored": 0,
       "corrected": 2,
-      "planned": 31,
+      "planned": 79,
       "modes": {
-        "reconstruction": 28,
-        "illustration": 3
+        "reconstruction": 50,
+        "illustration": 10,
+        "instruction": 19
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 79,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "jdg",
