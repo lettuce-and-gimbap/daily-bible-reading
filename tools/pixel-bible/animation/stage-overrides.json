@@ -789,5 +789,34 @@
     "54": {
       "mode": "illustration"
     }
+  },
+  "num": {
+    "31": {
+      "mode": "illustration"
+    },
+    "32": {
+      "mode": "reconstruction"
+    },
+    "33": {
+      "mode": "reconstruction"
+    },
+    "34": {
+      "mode": "illustration"
+    },
+    "35": {
+      "mode": "illustration"
+    },
+    "36": {
+      "mode": "illustration"
+    },
+    "37": {
+      "mode": "reconstruction"
+    },
+    "38": {
+      "mode": "reconstruction"
+    },
+    "39": {
+      "mode": "illustration"
+    }
   }
 }
