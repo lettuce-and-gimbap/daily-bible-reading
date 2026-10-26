@@ -64,9 +64,11 @@
       "id": "ot-exo-4-3",
       "code": "exo",
       "chapter": 4,
-      "title": "믿은 백성",
+      "title": "형 아론과 함께 장로들에게 표징을 보이다",
       "actors": [
-        "아론"
+        "모세",
+        "아론",
+        "이스라엘 장로들"
       ],
       "object": "staff",
       "ref": "출애굽기 4:27-31",
@@ -79,21 +81,22 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 하나님의 산에서 형 아론을 만나 함께 애굽에 가요. 장로들 앞에서 표적을 보이자 백성이 믿고 엎드려 경배해요."
+        "해설: 호렙 산에서 만난 아론은 모세와 입을 맞추고, 두 형제는 장로들을 모아 여호와의 말씀과 표징을 전해요. 백성은 고난을 살피셨다는 소식을 듣고 경배해요."
       ],
-      "study": "하나님의 산에서 형 아론을 만나 함께 애굽에 가요. 장로들 앞에서 표적을 보이자 백성이 믿고 엎드려 경배해요.",
+      "study": "호렙 산에서 만난 아론은 모세와 입을 맞추고, 두 형제는 장로들을 모아 여호와의 말씀과 표징을 전해요. 백성은 고난을 살피셨다는 소식을 듣고 경배해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"bow","lead":"아론","target":null,"mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"아론"},{"action":"lower","duration":1.2,"actor":"아론"},{"action":"bow","duration":1.5,"actor":"아론"},{"action":"listen","duration":1.8,"actor":"아론"},{"action":"lower","duration":1.5,"actor":"아론"},{"action":"stand","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 4:27-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"bow","lead":"모세","target":"아론","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"hopeful","prop":"staff","beats":[{"action":"walk","duration":1,"actor":"모세"},{"action":"extend","duration":1.2,"actor":"아론"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"아론"},{"action":"bow","duration":1.5,"actor":"이스라엘 장로들"},{"action":"bow","duration":1.2,"actor":"이스라엘 장로들"}],"duration":8.2,"support":null,"ref":"출애굽기 4:27-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-5-1",
       "code": "exo",
       "chapter": 5,
-      "title": "짚 없이 벽돌을",
+      "title": "짚을 주지 않고 벽돌 수량을 그대로 요구하다",
       "actors": [
-        "바로"
+        "바로",
+        "이스라엘 감독들"
       ],
       "object": "brick",
       "ref": "출애굽기 5:6-14",
@@ -110,21 +113,24 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 바로가 벽돌에 섞을 짚을 주지 말고 벽돌 수는 그대로 채우라고 명령해요. 수를 못 채운 이스라엘 반장들이 매를 맞아요."
+        "해설: 바로가 짚을 끊고도 벽돌 할당량은 낮추지 않아요. 감독들은 백성에게 짚을 모으게 하고, 할당량이 모자란 이스라엘 작업 책임자들을 때려요. 폭행은 상징적으로만 표현해요."
       ],
-      "study": "바로가 벽돌에 섞을 짚을 주지 말고 벽돌 수는 그대로 채우라고 명령해요. 수를 못 채운 이스라엘 반장들이 매를 맞아요.",
+      "study": "바로가 짚을 끊고도 벽돌 할당량은 낮추지 않아요. 감독들은 백성에게 짚을 모으게 하고, 할당량이 모자란 이스라엘 작업 책임자들을 때려요. 폭행은 상징적으로만 표현해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"command","lead":"바로","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"brick","beats":[{"action":"read","duration":1,"actor":"바로"},{"action":"lift","duration":1.2,"actor":"바로"},{"action":"speak","duration":1.5,"actor":"바로"},{"action":"point","duration":1.8,"actor":"바로"},{"action":"lower","duration":1.5,"actor":"바로"},{"action":"write","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"출애굽기 5:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"command","lead":"바로","target":"이스라엘 감독들","mode":"reconstruction","setting":"worksite","effect":"build","emotion":"strained","prop":"brick","beats":[{"action":"read","duration":1,"actor":"바로"},{"action":"point","duration":1.2,"actor":"바로"},{"action":"signal","duration":1.5,"actor":"이스라엘 감독들"},{"action":"gather","duration":1.8,"actor":"이스라엘 감독들"},{"action":"hammer","duration":1.5,"actor":"이스라엘 감독들"},{"action":"lower","duration":1.2,"actor":"이스라엘 감독들"}],"duration":8.2,"support":null,"ref":"출애굽기 5:6-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-7-1",
       "code": "exo",
       "chapter": 7,
-      "title": "뱀을 삼킨 지팡이",
+      "title": "바로 앞에서 지팡이가 뱀이 되다",
       "actors": [
-        "아론"
+        "모세",
+        "아론",
+        "바로",
+        "애굽 술객들"
       ],
       "object": "staff",
       "ref": "출애굽기 7:8-13",
@@ -144,15 +150,18 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"sign-staff","lead":"아론","target":null,"mode":"reconstruction","setting":"desert","effect":"snake","emotion":"surprised","prop":"staff","beats":[{"action":"grasp","duration":1,"actor":"아론"},{"action":"lift","duration":1.2,"actor":"아론"},{"action":"drop","duration":1.5,"actor":"아론"},{"action":"retreat","duration":1.8,"actor":"아론"},{"action":"reach","duration":1.5,"actor":"아론"},{"action":"lift","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 7:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"sign-staff","lead":"모세","target":"아론","mode":"reconstruction","setting":"court","effect":"snake","emotion":"tense","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"아론"},{"action":"drop","duration":1.5,"actor":"아론"},{"action":"startle","duration":1.8,"actor":"바로"},{"action":"lift","duration":1.5,"actor":"애굽 술객들"},{"action":"lower","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"출애굽기 7:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-7-2",
       "code": "exo",
       "chapter": 7,
-      "title": "피가 된 나일 강",
+      "title": "나일 강물이 피로 변하다",
       "actors": [
-        "아론"
+        "모세",
+        "아론",
+        "바로",
+        "애굽 술객들"
       ],
       "object": "staff",
       "ref": "출애굽기 7:14-25",
@@ -172,21 +181,24 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 아론이 지팡이로 나일 강을 치자 온 애굽의 물이 피가 되고 물고기가 죽어요. 마술사들도 흉내 내자 바로는 마음을 돌이키지 않아요."
+        "해설: 모세와 아론이 하나님의 명령대로 지팡이를 들어 나일 강과 여러 물을 치자 물이 피로 변하고 물고기가 죽어요. 술객들도 흉내 내지만 바로는 듣지 않아요."
       ],
-      "study": "아론이 지팡이로 나일 강을 치자 온 애굽의 물이 피가 되고 물고기가 죽어요. 마술사들도 흉내 내자 바로는 마음을 돌이키지 않아요.",
+      "study": "모세와 아론이 하나님의 명령대로 지팡이를 들어 나일 강과 여러 물을 치자 물이 피로 변하고 물고기가 죽어요. 술객들도 흉내 내지만 바로는 듣지 않아요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"strike-water","lead":"아론","target":null,"mode":"reconstruction","setting":"water","effect":"water-strike","emotion":"determined","prop":"staff","beats":[{"action":"grasp","duration":1,"actor":"아론"},{"action":"lift","duration":1.2,"actor":"아론"},{"action":"windup","duration":1.5,"actor":"아론"},{"action":"strike","duration":1.8,"actor":"아론"},{"action":"recoil","duration":1.5,"actor":"아론"},{"action":"lower","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 7:14-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"strike-water","lead":"모세","target":"아론","mode":"reconstruction","setting":"river","effect":"water","emotion":"grave","prop":"staff","beats":[{"action":"speak","duration":1,"actor":"모세"},{"action":"extend","duration":1.2,"actor":"아론"},{"action":"strike","duration":1.5,"actor":"모세"},{"action":"look","duration":1.8,"actor":"바로"},{"action":"startle","duration":1.5,"actor":"애굽 술객들"},{"action":"turn","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"출애굽기 7:14-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-14-2",
       "code": "exo",
       "chapter": 14,
-      "title": "갈라진 바다",
+      "title": "구름 기둥이 진 뒤로 옮겨가고 바다가 갈라지다",
       "actors": [
-        "모세"
+        "모세",
+        "이스라엘 자손",
+        "하나님의 사자",
+        "하나님"
       ],
       "object": "water-supply",
       "ref": "출애굽기 14:15-22",
@@ -208,15 +220,18 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"divide","lead":"모세","target":null,"mode":"reconstruction","setting":"water","effect":"divide","emotion":"surprised","prop":"water-supply","beats":[{"action":"grasp","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"windup","duration":1.5,"actor":"모세"},{"action":"strike","duration":1.8,"actor":"모세"},{"action":"recoil","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 14:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"divide","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"shore","effect":"divide","emotion":"resolute","prop":"water-supply","beats":[{"action":"signal","duration":1,"actor":"하나님의 사자"},{"action":"turn","duration":1.2,"actor":"하나님"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"이스라엘 자손"},{"action":"walk","duration":1.5,"actor":"이스라엘 자손"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 14:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-14-3",
       "code": "exo",
       "chapter": 14,
-      "title": "잠긴 애굽 군대",
+      "title": "병거가 멈추고 바닷물이 돌아오다",
       "actors": [
-        "모세"
+        "모세",
+        "이스라엘 자손",
+        "애굽 군대",
+        "하나님"
       ],
       "object": "water-supply",
       "ref": "출애굽기 14:23-31",
@@ -239,7 +254,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"restore-water","lead":"모세","target":null,"mode":"reconstruction","setting":"water","effect":"restore","emotion":"determined","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.8,"actor":"모세"},{"action":"look","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 14:23-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"restore-water","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"shore","effect":"restore","emotion":"solemn","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"애굽 군대"},{"action":"halt","duration":1.2,"actor":"애굽 군대"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.8,"actor":"하나님"},{"action":"look","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 14:23-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-15-1",
@@ -580,6 +595,7 @@
       "chapter": 31,
       "title": "브살렐을 부르심",
       "actors": [
+        "하나님",
         "브살렐"
       ],
       "object": "gold",
@@ -599,7 +615,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"craft","lead":"브살렐","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"gold","beats":[{"action":"inspect","duration":1,"actor":"브살렐"},{"action":"gather","duration":1.2,"actor":"브살렐"},{"action":"lift","duration":1.5,"actor":"브살렐"},{"action":"place","duration":1.8,"actor":"브살렐"},{"action":"hammer","duration":1.5,"actor":"브살렐"},{"action":"inspect","duration":1.2,"actor":"브살렐"}],"duration":8.2,"support":null,"ref":"출애굽기 31:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"craft","lead":"하나님","target":"브살렐","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"gold","beats":[{"action":"inspect","duration":1,"actor":"하나님"},{"action":"gather","duration":1.2,"actor":"하나님"},{"action":"lift","duration":1.5,"actor":"하나님"},{"action":"place","duration":1.8,"actor":"하나님"},{"action":"hammer","duration":1.5,"actor":"하나님"},{"action":"inspect","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 31:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-31-1",
@@ -607,7 +623,9 @@
       "chapter": 31,
       "title": "오홀리압과 일꾼들",
       "actors": [
-        "오홀리압"
+        "하나님",
+        "오홀리압",
+        "브살렐"
       ],
       "object": "robe",
       "ref": "출애굽기 31:6-11",
@@ -627,7 +645,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"weave","lead":"오홀리압","target":null,"mode":"reconstruction","setting":"chamber","effect":"cloth","emotion":"determined","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"오홀리압"},{"action":"gather","duration":1.2,"actor":"오홀리압"},{"action":"reach","duration":1.5,"actor":"오홀리압"},{"action":"weave","duration":1.8,"actor":"오홀리압"},{"action":"weave","duration":1.5,"actor":"오홀리압"},{"action":"inspect","duration":1.2,"actor":"오홀리압"}],"duration":8.2,"support":null,"ref":"출애굽기 31:6-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"weave","lead":"하나님","target":"오홀리압","mode":"reconstruction","setting":"chamber","effect":"cloth","emotion":"determined","prop":"robe","beats":[{"action":"inspect","duration":1,"actor":"하나님"},{"action":"gather","duration":1.2,"actor":"하나님"},{"action":"reach","duration":1.5,"actor":"하나님"},{"action":"weave","duration":1.8,"actor":"하나님"},{"action":"weave","duration":1.5,"actor":"하나님"},{"action":"inspect","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 31:6-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-31-3",
@@ -635,6 +653,7 @@
       "chapter": 31,
       "title": "두 돌판",
       "actors": [
+        "하나님",
         "모세"
       ],
       "object": "tablet",
@@ -650,7 +669,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"receive","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"tablet","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"reach","duration":1.2,"actor":"모세"},{"action":"grasp","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.8,"actor":"모세"},{"action":"inspect","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 31:18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"receive","lead":"하나님","target":"모세","mode":"reconstruction","setting":"courtyard","effect":"receive","emotion":"surprised","prop":"tablet","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"reach","duration":1.2,"actor":"하나님"},{"action":"grasp","duration":1.5,"actor":"하나님"},{"action":"lift","duration":1.8,"actor":"하나님"},{"action":"inspect","duration":1.5,"actor":"하나님"},{"action":"lower","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 31:18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-32-0",
@@ -658,8 +677,8 @@
       "chapter": 32,
       "title": "금송아지",
       "actors": [
-        "모세",
-        "아론"
+        "아론",
+        "이스라엘 자손"
       ],
       "object": "gold",
       "ref": "출애굽기 32:1-6",
@@ -679,73 +698,64 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"idol","lead":"모세","target":"아론","mode":"reconstruction","setting":"altar","effect":"idol","emotion":"worried","prop":"gold","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"point","duration":1.2,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.8,"actor":"모세"},{"action":"turn","duration":1.5,"actor":"모세"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 32:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"idol","lead":"아론","target":"이스라엘 자손","mode":"reconstruction","setting":"altar","effect":"idol","emotion":"worried","prop":"gold","beats":[{"action":"look","duration":1,"actor":"아론"},{"action":"point","duration":1.2,"actor":"아론"},{"action":"listen","duration":1.5,"actor":"아론"},{"action":"lower","duration":1.8,"actor":"아론"},{"action":"turn","duration":1.5,"actor":"아론"},{"action":"stand","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 32:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-32-2",
       "code": "exo",
       "chapter": 32,
-      "title": "깨진 돌판",
+      "title": "모세가 돌판을 깨뜨리고 송아지를 없애다",
       "actors": [
         "모세",
-        "아론"
+        "이스라엘 자손"
       ],
       "object": "tablet",
-      "ref": "출애굽기 32:15-24",
+      "ref": "출애굽기 32:15-20",
       "verseNumbers": [
         15,
         16,
         17,
         18,
         19,
-        20,
-        21,
-        22,
-        23,
-        24
+        20
       ],
       "actions": {},
       "lines": [
-        "해설: 내려온 모세가 춤추는 백성을 보고 돌판을 산기슭에 던지고, 송아지를 가루 내 물에 타 마시게 해요. 아론은 금을 불에 던졌더니 송아지가 나왔다고 변명해요."
+        "해설: 모세가 금송아지 앞에서 춤추는 모습을 보고 돌판을 내려놓고, 송아지를 불사른 뒤 가루로 만들어 물에 흩뿌려요."
       ],
-      "study": "내려온 모세가 춤추는 백성을 보고 돌판을 산기슭에 던지고, 송아지를 가루 내 물에 타 마시게 해요. 아론은 금을 불에 던졌더니 송아지가 나왔다고 변명해요.",
+      "study": "모세가 금송아지 앞에서 춤추는 모습을 보고 돌판을 내려놓고, 송아지를 불사른 뒤 가루로 만들어 물에 흩뿌려요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"break","lead":"모세","target":"아론","mode":"reconstruction","setting":"altar","effect":"fragments","emotion":"determined","prop":"tablet","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"strike","duration":1.8,"actor":"모세"},{"action":"recoil","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 32:15-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"break","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"altar","effect":"fragments","emotion":"determined","prop":"tablet","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"grasp","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"strike","duration":1.8,"actor":"모세"},{"action":"recoil","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 32:15-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-32-3",
       "code": "exo",
       "chapter": 32,
-      "title": "내 이름을 지우소서",
+      "title": "모세가 진의 혼란을 보고 사람들을 불러 모으다",
       "actors": [
-        "모세"
+        "모세",
+        "레위 자손"
       ],
       "object": "scroll",
-      "ref": "출애굽기 32:25-35",
+      "ref": "출애굽기 32:25-29",
       "verseNumbers": [
         25,
         26,
         27,
         28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
+        29
       ],
       "actions": {},
       "lines": [
-        "해설: 여호와 편에 선 레위 자손이 칼을 들어 삼천 명쯤이 죽어요. 모세는 다시 올라가 용서가 안 되면 내 이름을 지워 달라며 중보해요."
+        "해설: 모세가 어지러운 진영을 보고 여호와 편에 설 사람을 부르자 레위 자손이 모여요. 본문에 기록된 죽음은 직접 재현하지 않고 비어 있는 진영과 무거운 침묵으로만 표현해요."
       ],
-      "study": "여호와 편에 선 레위 자손이 칼을 들어 삼천 명쯤이 죽어요. 모세는 다시 올라가 용서가 안 되면 내 이름을 지워 달라며 중보해요.",
+      "study": "모세가 어지러운 진영을 보고 여호와 편에 설 사람을 부르자 레위 자손이 모여요. 본문에 기록된 죽음은 직접 재현하지 않고 비어 있는 진영과 무거운 침묵으로만 표현해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 32:25-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"모세","target":"레위 자손","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"pray","duration":1.8,"actor":"모세"},{"action":"pray","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 32:25-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-33-1",
@@ -936,7 +946,7 @@
         "모세"
       ],
       "object": "tabernacle",
-      "ref": "출애굽기 39:32-41",
+      "ref": "출애굽기 39:32-43",
       "verseNumbers": [
         32,
         33,
@@ -947,25 +957,28 @@
         38,
         39,
         40,
-        41
+        41,
+        42,
+        43
       ],
       "actions": {},
       "lines": [
-        "해설: 성막과 회막의 모든 일이 끝나자 백성이 장막과 기구, 제사장의 옷까지 만든 것을 하나하나 모세에게 가져와요."
+        "해설: 성막과 기구와 제사장 옷이 모두 완성되어 모세에게 전달돼요. 모세가 명령대로 되었음을 확인하고 백성에게 복을 빌어요."
       ],
-      "study": "성막과 회막의 모든 일이 끝나자 백성이 장막과 기구, 제사장의 옷까지 만든 것을 하나하나 모세에게 가져와요.",
+      "study": "성막과 기구와 제사장 옷이 모두 완성되어 모세에게 전달돼요. 모세가 명령대로 되었음을 확인하고 백성에게 복을 빌어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"build","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"hammer","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 39:32-41","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"모세","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"hammer","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 39:32-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-40-0",
       "code": "exo",
       "chapter": 40,
-      "title": "성막을 세우라",
+      "title": "성막을 세우고 제사장을 구별하라는 명령",
       "actors": [
-        "아론"
+        "모세",
+        "하나님"
       ],
       "object": "tabernacle",
       "ref": "출애굽기 40:1-15",
@@ -988,13 +1001,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 하나님이 첫째 달 초하루에 성막을 세우고 기구를 제자리에 놓으며, 기름을 발라 구별하고 아론과 아들들을 제사장으로 세우라 하세요."
+        "해설: 하나님이 모세에게 성막과 기구를 세우고 기름을 발라 구별하며, 아론과 아들들을 제사장으로 세우라고 명하세요."
       ],
-      "study": "하나님이 첫째 달 초하루에 성막을 세우고 기구를 제자리에 놓으며, 기름을 발라 구별하고 아론과 아들들을 제사장으로 세우라 하세요.",
+      "study": "하나님이 모세에게 성막과 기구를 세우고 기름을 발라 구별하며, 아론과 아들들을 제사장으로 세우라고 명하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"build","lead":"아론","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"아론"},{"action":"gather","duration":1.2,"actor":"아론"},{"action":"lift","duration":1.5,"actor":"아론"},{"action":"place","duration":1.8,"actor":"아론"},{"action":"hammer","duration":1.5,"actor":"아론"},{"action":"inspect","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 40:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"모세","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tabernacle","beats":[{"action":"inspect","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"place","duration":1.8,"actor":"모세"},{"action":"hammer","duration":1.5,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 40:1-15","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-40-1",
@@ -1561,32 +1574,20 @@
         "이스라엘 자손"
       ],
       "object": "scene-marker",
-      "ref": "출애굽기 12:29-42",
+      "ref": "출애굽기 12:29-30",
       "verseNumbers": [
         29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
+        30
       ],
       "actions": {},
       "lines": [
-        "해설: 밤중에 애굽의 처음 난 자가 죽고 바로가 백성을 보내요. 이스라엘 자손이 급히 출발해 애굽을 떠나요."
+        "해설: 밤중에 애굽 전역에서 통곡이 일어나자 바로가 모세와 아론을 부르도록 해요. 죽음의 장면은 직접 묘사하지 않고 애도와 빈자리로 표현해요."
       ],
-      "study": "밤중에 애굽의 처음 난 자가 죽고 바로가 백성을 보내요. 이스라엘 자손이 급히 출발해 애굽을 떠나요.",
+      "study": "밤중에 애굽 전역에서 통곡이 일어나자 바로가 모세와 아론을 부르도록 해요. 죽음의 장면은 직접 묘사하지 않고 애도와 빈자리로 표현해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"journey","lead":"모세","target":"아론","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 12:29-42","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":"아론","mode":"reconstruction","setting":"night-courtyard","effect":"tears","emotion":"grief","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"바로"},{"action":"startle","duration":1.2,"actor":"바로"},{"action":"lower","duration":1.5,"actor":"바로"},{"action":"kneel","duration":1.8,"actor":"이스라엘 자손"},{"action":"mourn","duration":1.5,"actor":"이스라엘 자손"},{"action":"turn","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"출애굽기 12:29-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-extra-13-0",
@@ -1595,10 +1596,10 @@
       "title": "요셉의 뼈를 들고 구름과 불의 인도를 받다",
       "actors": [
         "모세",
-        "요셉",
-        "이스라엘 자손"
+        "이스라엘 자손",
+        "하나님"
       ],
-      "object": "scene-marker",
+      "object": "cloud",
       "ref": "출애굽기 13:17-22",
       "verseNumbers": [
         17,
@@ -1610,13 +1611,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 모세가 요셉의 유골을 가져가고, 구름 기둥과 불 기둥이 백성을 인도해요."
+        "해설: 모세가 요셉의 맹세를 지켜 유골을 가지고 나와요. 백성은 가까운 블레셋 길이 아니라 광야 길로 가고, 낮의 구름 기둥과 밤의 불 기둥이 앞서요."
       ],
-      "study": "모세가 요셉의 유골을 가져가고, 구름 기둥과 불 기둥이 백성을 인도해요.",
+      "study": "모세가 요셉의 맹세를 지켜 유골을 가지고 나와요. 백성은 가까운 블레셋 길이 아니라 광야 길로 가고, 낮의 구름 기둥과 밤의 불 기둥이 앞서요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"journey","lead":"모세","target":"요셉","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"carry","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"모세"},{"action":"walk","duration":1.5,"actor":"모세"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 13:17-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"desert-road","effect":"journey","emotion":"hopeful","prop":"cloud","beats":[{"action":"carry","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"모세"},{"action":"signal","duration":1.5,"actor":"하나님"},{"action":"walk","duration":1.8,"actor":"이스라엘 자손"},{"action":"look","duration":1.5,"actor":"이스라엘 자손"},{"action":"walk","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 13:17-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-exo-extra-16-0",
@@ -1872,6 +1873,1599 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"craft","lead":"브살렐","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"브살렐"},{"action":"gather","duration":1.2,"actor":"브살렐"},{"action":"lift","duration":1.5,"actor":"브살렐"},{"action":"place","duration":1.8,"actor":"브살렐"},{"action":"hammer","duration":1.5,"actor":"브살렐"},{"action":"inspect","duration":1.2,"actor":"브살렐"}],"duration":8.2,"support":null,"ref":"출애굽기 37:1-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-1-7-14",
+      "code": "exo",
+      "chapter": 1,
+      "title": "늘어나는 백성과 강제 노동",
+      "actors": [
+        "이스라엘 자손",
+        "바로"
+      ],
+      "object": "brick",
+      "ref": "출애굽기 1:7-14",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이스라엘 자손은 억압 속에서도 늘어나요. 새 왕은 비돔과 라암셋을 세우게 하고, 벽돌과 밭일을 강요해요."
+      ],
+      "study": "이스라엘 자손은 억압 속에서도 늘어나요. 새 왕은 비돔과 라암셋을 세우게 하고, 벽돌과 밭일을 강요해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"이스라엘 자손","target":"바로","mode":"reconstruction","setting":"worksite","effect":"build","emotion":"strained","prop":"brick","beats":[{"action":"gather","duration":1,"actor":"이스라엘 자손"},{"action":"carry","duration":1.2,"actor":"이스라엘 자손"},{"action":"hammer","duration":1.5,"actor":"이스라엘 자손"},{"action":"point","duration":1.8,"actor":"바로"},{"action":"signal","duration":1.5,"actor":"바로"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 1:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-3-7-22",
+      "code": "exo",
+      "chapter": 3,
+      "title": "모세에게 백성을 이끌 사명을 맡기다",
+      "actors": [
+        "모세",
+        "하나님"
+      ],
+      "object": "bush",
+      "ref": "출애굽기 3:7-22",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 백성의 고통을 보고 들으셨다고 밝히고, 모세에게 바로와 장로들을 찾아가 해방을 전하라고 맡겨요. 모세는 주저하지만 동행의 약속을 받고 표징과 출발 준비를 들어요."
+      ],
+      "study": "하나님은 백성의 고통을 보고 들으셨다고 밝히고, 모세에게 바로와 장로들을 찾아가 해방을 전하라고 맡겨요. 모세는 주저하지만 동행의 약속을 받고 표징과 출발 준비를 들어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"모세","target":"하나님","mode":"reconstruction","setting":"desert","effect":"speech","emotion":"awe","prop":"bush","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"하나님"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"signal","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"이스라엘 장로들"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 3:7-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-4-10-17",
+      "code": "exo",
+      "chapter": 4,
+      "title": "말을 주저하는 모세와 함께할 아론",
+      "actors": [
+        "모세",
+        "하나님",
+        "아론"
+      ],
+      "object": "staff",
+      "ref": "출애굽기 4:10-17",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 말하기 어렵다고 주저하자 하나님은 그의 입과 함께하겠다고 하세요. 형 아론을 대변자로 세우고 지팡이를 표징의 도구로 맡겨요."
+      ],
+      "study": "모세가 말하기 어렵다고 주저하자 하나님은 그의 입과 함께하겠다고 하세요. 형 아론을 대변자로 세우고 지팡이를 표징의 도구로 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"listen","lead":"모세","target":"하나님","mode":"reconstruction","setting":"desert","effect":"speech","emotion":"hesitant","prop":"staff","beats":[{"action":"lower","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"하나님"},{"action":"turn","duration":1.5,"actor":"모세"},{"action":"walk","duration":1.8,"actor":"아론"},{"action":"extend","duration":1.5,"actor":"모세"},{"action":"lift","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 4:10-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-4-18-26",
+      "code": "exo",
+      "chapter": 4,
+      "title": "모세가 가족과 애굽으로 길을 떠나다",
+      "actors": [
+        "모세",
+        "십보라",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "출애굽기 4:18-26",
+      "verseNumbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세는 이드로의 허락을 받고 가족과 애굽으로 향해요. 길의 숙소에서 일어난 할례 사건은 신체를 그리지 않고, 십보라의 단호한 의식 동작과 모세의 회복으로 절제해 표현해요."
+      ],
+      "study": "모세는 이드로의 허락을 받고 가족과 애굽으로 향해요. 길의 숙소에서 일어난 할례 사건은 신체를 그리지 않고, 십보라의 단호한 의식 동작과 모세의 회복으로 절제해 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":"십보라","mode":"reconstruction","setting":"desert-road","effect":"journey","emotion":"somber","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"모세"},{"action":"halt","duration":1.2,"actor":"모세"},{"action":"signal","duration":1.5,"actor":"하나님"},{"action":"kneel","duration":1.8,"actor":"십보라"},{"action":"cover","duration":1.5,"actor":"십보라"},{"action":"stand","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 4:18-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-5-1-5",
+      "code": "exo",
+      "chapter": 5,
+      "title": "모세와 아론이 바로에게 처음 해방을 요구하다",
+      "actors": [
+        "모세",
+        "아론",
+        "바로"
+      ],
+      "object": "palace",
+      "ref": "출애굽기 5:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세와 아론은 광야에서 예배하도록 백성을 보내 달라고 요구해요. 바로는 여호와를 모른다며 거절하고 노동을 멈추지 말라고 해요."
+      ],
+      "study": "모세와 아론은 광야에서 예배하도록 백성을 보내 달라고 요구해요. 바로는 여호와를 모른다며 거절하고 노동을 멈추지 말라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"warn","lead":"모세","target":"아론","mode":"reconstruction","setting":"court","effect":"speech","emotion":"tense","prop":"palace","beats":[{"action":"walk","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"아론"},{"action":"listen","duration":1.5,"actor":"바로"},{"action":"turn","duration":1.8,"actor":"바로"},{"action":"point","duration":1.5,"actor":"바로"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 5:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-5-15-23",
+      "code": "exo",
+      "chapter": 5,
+      "title": "이스라엘 감독들이 바로와 모세에게 항의하다",
+      "actors": [
+        "이스라엘 감독들",
+        "바로",
+        "모세",
+        "아론"
+      ],
+      "object": "brick",
+      "ref": "출애굽기 5:15-23",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 작업 책임자들이 짚도 주지 않고 할당량을 유지한 처사를 바로에게 호소해요. 돌아오는 길에는 모세와 아론을 원망하고, 모세는 하나님께 다시 부르짖어요."
+      ],
+      "study": "작업 책임자들이 짚도 주지 않고 할당량을 유지한 처사를 바로에게 호소해요. 돌아오는 길에는 모세와 아론을 원망하고, 모세는 하나님께 다시 부르짖어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"이스라엘 감독들","target":"바로","mode":"reconstruction","setting":"court","effect":"clash","emotion":"distressed","prop":"brick","beats":[{"action":"walk","duration":1,"actor":"이스라엘 감독들"},{"action":"speak","duration":1.2,"actor":"이스라엘 감독들"},{"action":"turn","duration":1.5,"actor":"바로"},{"action":"lower","duration":1.8,"actor":"이스라엘 감독들"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 5:15-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-6-1-13",
+      "code": "exo",
+      "chapter": 6,
+      "title": "듣지 못한 백성에게 언약의 약속을 전하다",
+      "actors": [
+        "모세",
+        "하나님",
+        "아론"
+      ],
+      "object": "scene-marker",
+      "ref": "출애굽기 6:1-13",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님은 조상들과 맺은 언약을 기억하고 구원과 땅의 약속을 거듭 전해요. 백성은 고된 노동과 낙심 때문에 듣지 못하고, 모세도 바로 앞에 서기를 주저해요."
+      ],
+      "study": "하나님은 조상들과 맺은 언약을 기억하고 구원과 땅의 약속을 거듭 전해요. 백성은 고된 노동과 낙심 때문에 듣지 못하고, 모세도 바로 앞에 서기를 주저해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"모세","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"weary","prop":"scene-marker","beats":[{"action":"speak","duration":1,"actor":"하나님"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"speak","duration":1.5,"actor":"모세"},{"action":"lower","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 6:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-9-8-12",
+      "code": "exo",
+      "chapter": 9,
+      "title": "화덕의 재가 종기의 재앙이 되다",
+      "actors": [
+        "모세",
+        "바로",
+        "애굽 술객들"
+      ],
+      "object": "oven",
+      "ref": "출애굽기 9:8-12",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 화덕의 재를 하늘로 날리자 사람과 짐승에게 종기가 생겨요. 술객들은 앞으로 나서지 못하고, 바로는 여전히 듣지 않아요. 상처를 자세히 그리지 않아요."
+      ],
+      "study": "모세가 화덕의 재를 하늘로 날리자 사람과 짐승에게 종기가 생겨요. 술객들은 앞으로 나서지 못하고, 바로는 여전히 듣지 않아요. 상처를 자세히 그리지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"fire","lead":"모세","target":"바로","mode":"reconstruction","setting":"court","effect":"fire","emotion":"distressed","prop":"oven","beats":[{"action":"lift","duration":1,"actor":"모세"},{"action":"scatter","duration":1.2,"actor":"모세"},{"action":"lower","duration":1.5,"actor":"모세"},{"action":"retreat","duration":1.8,"actor":"애굽 술객들"},{"action":"look","duration":1.5,"actor":"바로"},{"action":"turn","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"출애굽기 9:8-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-14-5-14",
+      "code": "exo",
+      "chapter": 14,
+      "title": "뒤쫓는 병거를 본 백성이 두려워하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손",
+        "바로",
+        "애굽 군대"
+      ],
+      "object": "chariot",
+      "ref": "출애굽기 14:5-14",
+      "verseNumbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바로가 병거를 몰고 뒤쫓자 백성은 두려워 모세를 원망해요. 모세는 겁내지 말고 구원을 기다리라고 백성을 진정시켜요."
+      ],
+      "study": "바로가 병거를 몰고 뒤쫓자 백성은 두려워 모세를 원망해요. 모세는 겁내지 말고 구원을 기다리라고 백성을 진정시켜요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"flee","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"shore","effect":"speech","emotion":"afraid","prop":"chariot","beats":[{"action":"look","duration":1,"actor":"이스라엘 자손"},{"action":"startle","duration":1.2,"actor":"이스라엘 자손"},{"action":"signal","duration":1.5,"actor":"모세"},{"action":"turn","duration":1.8,"actor":"애굽 군대"},{"action":"listen","duration":1.5,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 14:5-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-15-22-27",
+      "code": "exo",
+      "chapter": 15,
+      "title": "마라의 쓴 물이 마실 수 있는 물이 되다",
+      "actors": [
+        "모세",
+        "이스라엘 자손",
+        "하나님"
+      ],
+      "object": "water",
+      "ref": "출애굽기 15:22-27",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 마실 물을 찾지 못한 백성이 쓴 물 앞에서 원망해요. 모세가 부르짖고, 하나님이 가리키신 나뭇가지를 물에 넣자 물이 달게 돼요. 이어 엘림의 샘과 종려나무 곁에 진을 쳐요."
+      ],
+      "study": "마실 물을 찾지 못한 백성이 쓴 물 앞에서 원망해요. 모세가 부르짖고, 하나님이 가리키신 나뭇가지를 물에 넣자 물이 달게 돼요. 이어 엘림의 샘과 종려나무 곁에 진을 쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"water","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"wilderness","effect":"water","emotion":"relieved","prop":"water","beats":[{"action":"look","duration":1,"actor":"이스라엘 자손"},{"action":"pray","duration":1.2,"actor":"모세"},{"action":"point","duration":1.5,"actor":"하나님"},{"action":"throw","duration":1.8,"actor":"모세"},{"action":"scoop","duration":1.5,"actor":"이스라엘 자손"},{"action":"lower","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 15:22-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-17-8-16",
+      "code": "exo",
+      "chapter": 17,
+      "title": "모세의 팔을 함께 받치며 여호수아가 싸우다",
+      "actors": [
+        "모세",
+        "여호수아",
+        "아론",
+        "훌"
+      ],
+      "object": "staff",
+      "ref": "출애굽기 17:8-13",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 여호수아는 전열을 이끌고, 모세는 언덕에서 손을 들며 지켜봐요. 팔이 지치자 아론과 훌이 양쪽에서 받쳐 주고, 해 질 때까지 함께 버텨요."
+      ],
+      "study": "여호수아는 전열을 이끌고, 모세는 언덕에서 손을 들며 지켜봐요. 팔이 지치자 아론과 훌이 양쪽에서 받쳐 주고, 해 질 때까지 함께 버텨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"victory","lead":"모세","target":"여호수아","mode":"reconstruction","setting":"battlefield","effect":"clash","emotion":"steadfast","prop":"staff","beats":[{"action":"signal","duration":1,"actor":"모세"},{"action":"march","duration":1.2,"actor":"여호수아"},{"action":"lift","duration":1.5,"actor":"모세"},{"action":"brace","duration":1.8,"actor":"아론"},{"action":"brace","duration":1.5,"actor":"훌"},{"action":"lower","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 17:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-18-1-12",
+      "code": "exo",
+      "chapter": 18,
+      "title": "이드로가 가족과 재회하고 함께 기뻐하다",
+      "actors": [
+        "이드로",
+        "모세",
+        "십보라",
+        "아론"
+      ],
+      "object": "tent",
+      "ref": "출애굽기 18:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 이드로가 십보라와 두 아들을 데려오자 모세가 달려 나와 맞이해요. 모세는 구원의 일을 들려주고, 이드로는 기뻐하며 하나님을 찬양한 뒤 장로들과 식탁을 나눠요."
+      ],
+      "study": "이드로가 십보라와 두 아들을 데려오자 모세가 달려 나와 맞이해요. 모세는 구원의 일을 들려주고, 이드로는 기뻐하며 하나님을 찬양한 뒤 장로들과 식탁을 나눠요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"welcome","lead":"이드로","target":"모세","mode":"reconstruction","setting":"desert-camp","effect":"family","emotion":"joy","prop":"tent","beats":[{"action":"walk","duration":1,"actor":"이드로"},{"action":"extend","duration":1.2,"actor":"모세"},{"action":"extend","duration":1.5,"actor":"십보라"},{"action":"listen","duration":1.8,"actor":"이드로"},{"action":"bow","duration":1.5,"actor":"아론"},{"action":"receive","duration":1.2,"actor":"이드로"}],"duration":8.2,"support":null,"ref":"출애굽기 18:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-12-31-42",
+      "code": "exo",
+      "chapter": 12,
+      "title": "이스라엘이 서둘러 애굽을 떠나다",
+      "actors": [
+        "모세",
+        "아론",
+        "바로",
+        "이스라엘 자손"
+      ],
+      "object": "dough",
+      "ref": "출애굽기 12:31-42",
+      "verseNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 바로와 애굽 사람들이 떠나라고 재촉해요. 백성은 부풀지 않은 반죽과 소유를 챙겨 가족과 가축을 데리고 숙곳으로 출발해요."
+      ],
+      "study": "바로와 애굽 사람들이 떠나라고 재촉해요. 백성은 부풀지 않은 반죽과 소유를 챙겨 가족과 가축을 데리고 숙곳으로 출발해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 장면이에요. 폭력·신체 손상·죽음은 직접 재현하지 않고 절제된 상징 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"모세","target":"아론","mode":"reconstruction","setting":"desert-road","effect":"journey","emotion":"urgent","prop":"dough","beats":[{"action":"gather","duration":1,"actor":"이스라엘 자손"},{"action":"carry","duration":1.2,"actor":"이스라엘 자손"},{"action":"carry","duration":1.5,"actor":"이스라엘 자손"},{"action":"speak","duration":1.8,"actor":"바로"},{"action":"walk","duration":1.5,"actor":"이스라엘 자손"},{"action":"look","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"출애굽기 12:31-42","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-21-1-11",
+      "code": "exo",
+      "chapter": 21,
+      "title": "모세가 종의 놓임과 가족에 대한 책임을 전하다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "book",
+      "ref": "출애굽기 21:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 본문은 종의 놓임과 가족에 대한 책임을 법으로 정해요. 모세가 규정을 읽고 백성이 귀 기울여요."
+      ],
+      "study": "본문은 종의 놓임과 가족에 대한 책임을 법으로 정해요. 모세가 규정을 읽고 백성이 귀 기울여요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"thoughtful","prop":"book","beats":[{"action":"read","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"이스라엘 자손"},{"action":"listen","duration":1.5,"actor":"이스라엘 자손"},{"action":"write","duration":1.8,"actor":"이스라엘 자손"},{"action":"point","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 21:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-21-12-36",
+      "code": "exo",
+      "chapter": 21,
+      "title": "사고의 책임과 배상 원칙을 세우다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "book",
+      "ref": "출애굽기 21:12-36",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 의도와 결과를 살피고, 사고 책임과 배상 기준을 두어 이웃의 생명과 재산을 보호해요. 폭력이나 상해는 상징적인 재판 장면으로만 나타내요."
+      ],
+      "study": "의도와 결과를 살피고, 사고 책임과 배상 기준을 두어 이웃의 생명과 재산을 보호해요. 폭력이나 상해는 상징적인 재판 장면으로만 나타내요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"trade","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"measured","prop":"book","beats":[{"action":"write","duration":1,"actor":"모세"},{"action":"read","duration":1.2,"actor":"이스라엘 자손"},{"action":"weigh","duration":1.5,"actor":"이스라엘 자손"},{"action":"listen","duration":1.8,"actor":"이스라엘 자손"},{"action":"point","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 21:12-36","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-22-1-20",
+      "code": "exo",
+      "chapter": 22,
+      "title": "잃은 재산과 맡긴 것을 정직하게 갚다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "grain",
+      "ref": "출애굽기 22:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 도둑질과 맡기거나 빌린 재산에 대한 책임을 가르쳐요. 저울과 곡식 자루를 놓고 공정한 배상을 설명해요."
+      ],
+      "study": "도둑질과 맡기거나 빌린 재산에 대한 책임을 가르쳐요. 저울과 곡식 자루를 놓고 공정한 배상을 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"counsel","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"coins","emotion":"fair","prop":"grain","beats":[{"action":"weigh","duration":1,"actor":"모세"},{"action":"inspect","duration":1.2,"actor":"이스라엘 자손"},{"action":"speak","duration":1.5,"actor":"이스라엘 자손"},{"action":"listen","duration":1.8,"actor":"이스라엘 자손"},{"action":"receive","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 22:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-22-21-31",
+      "code": "exo",
+      "chapter": 22,
+      "title": "나그네와 약한 이웃을 보호하다",
+      "actors": [
+        "하나님",
+        "이스라엘 자손"
+      ],
+      "object": "cloak",
+      "ref": "출애굽기 22:21-31",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 나그네와 과부와 고아를 억누르지 말고, 가난한 이웃의 겉옷을 해 지기 전에 돌려주라고 하세요."
+      ],
+      "study": "나그네와 과부와 고아를 억누르지 말고, 가난한 이웃의 겉옷을 해 지기 전에 돌려주라고 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"하나님","target":"이스라엘 자손","mode":"reconstruction","setting":"courtyard","effect":"covenant","emotion":"compassionate","prop":"cloak","beats":[{"action":"speak","duration":1,"actor":"하나님"},{"action":"extend","duration":1.2,"actor":"이스라엘 자손"},{"action":"receive","duration":1.5,"actor":"이스라엘 자손"},{"action":"cover","duration":1.8,"actor":"이스라엘 자손"},{"action":"listen","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 22:21-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-23-1-9",
+      "code": "exo",
+      "chapter": 23,
+      "title": "원수의 나귀도 일으켜 돕다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "donkey",
+      "ref": "출애굽기 23:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거짓 증언과 뇌물을 멀리하고 공정하게 판단해요. 미워하는 이의 나귀가 쓰러졌을 때에도 짐을 함께 내려 도우라고 가르쳐요."
+      ],
+      "study": "거짓 증언과 뇌물을 멀리하고 공정하게 판단해요. 미워하는 이의 나귀가 쓰러졌을 때에도 짐을 함께 내려 도우라고 가르쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"covenant","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"village-road","effect":"family","emotion":"compassionate","prop":"donkey","beats":[{"action":"look","duration":1,"actor":"모세"},{"action":"walk","duration":1.2,"actor":"이스라엘 자손"},{"action":"reach","duration":1.5,"actor":"이스라엘 자손"},{"action":"lift","duration":1.8,"actor":"이스라엘 자손"},{"action":"hold","duration":1.5,"actor":"이스라엘 자손"},{"action":"walk","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 23:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-23-10-19",
+      "code": "exo",
+      "chapter": 23,
+      "title": "안식년과 절기를 지키다",
+      "actors": [
+        "하나님",
+        "이스라엘 자손"
+      ],
+      "object": "grain",
+      "ref": "출애굽기 23:10-19",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 땅을 쉬게 하고 가난한 이와 들짐승도 거두어 먹도록 하며, 안식일과 절기를 지키고 첫 열매를 드리라고 해요."
+      ],
+      "study": "땅을 쉬게 하고 가난한 이와 들짐승도 거두어 먹도록 하며, 안식일과 절기를 지키고 첫 열매를 드리라고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"하나님","target":"이스라엘 자손","mode":"reconstruction","setting":"field","effect":"covenant","emotion":"peaceful","prop":"grain","beats":[{"action":"gather","duration":1,"actor":"하나님"},{"action":"release","duration":1.2,"actor":"이스라엘 자손"},{"action":"wait","duration":1.5,"actor":"이스라엘 자손"},{"action":"wait","duration":1.8,"actor":"이스라엘 자손"},{"action":"place","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 23:10-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-23-20-33",
+      "code": "exo",
+      "chapter": 23,
+      "title": "사자가 백성 앞서 길을 인도하다",
+      "actors": [
+        "하나님의 사자",
+        "이스라엘 자손"
+      ],
+      "object": "cloud",
+      "ref": "출애굽기 23:20-33",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님의 사자가 앞서 길을 지키고 백성을 약속한 땅으로 인도한다는 약속을 전해요. 정복은 상징적인 길 안내로 표현해요."
+      ],
+      "study": "하나님의 사자가 앞서 길을 지키고 백성을 약속한 땅으로 인도한다는 약속을 전해요. 정복은 상징적인 길 안내로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"vision","lead":"하나님의 사자","target":"이스라엘 자손","mode":"reconstruction","setting":"desert-road","effect":"journey","emotion":"hopeful","prop":"cloud","beats":[{"action":"signal","duration":1,"actor":"하나님의 사자"},{"action":"listen","duration":1.2,"actor":"이스라엘 자손"},{"action":"march","duration":1.5,"actor":"이스라엘 자손"},{"action":"walk","duration":1.8,"actor":"이스라엘 자손"},{"action":"halt","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 23:20-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-24-9-11",
+      "code": "exo",
+      "chapter": 24,
+      "title": "장로들이 함께 먹고 하나님의 임재를 보다",
+      "actors": [
+        "모세",
+        "아론",
+        "나답",
+        "아비후"
+      ],
+      "object": "cloud",
+      "ref": "출애굽기 24:9-11",
+      "verseNumbers": [
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세와 아론, 나답과 아비후와 장로들이 산에 올라 하나님을 뵙고 먹고 마셔요. 임재는 청옥빛 바닥과 구름으로 상징해요."
+      ],
+      "study": "모세와 아론, 나답과 아비후와 장로들이 산에 올라 하나님을 뵙고 먹고 마셔요. 임재는 청옥빛 바닥과 구름으로 상징해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"offer","lead":"모세","target":"아론","mode":"reconstruction","setting":"mountain","effect":"vision","emotion":"awe","prop":"cloud","beats":[{"action":"walk","duration":1,"actor":"모세"},{"action":"look","duration":1.2,"actor":"아론"},{"action":"bow","duration":1.5,"actor":"나답"},{"action":"sit","duration":1.8,"actor":"아비후"},{"action":"eat","duration":1.5,"actor":"아비후"},{"action":"wait","duration":1.2,"actor":"아비후"}],"duration":8.2,"support":null,"ref":"출애굽기 24:9-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-25-1-22",
+      "code": "exo",
+      "chapter": 25,
+      "title": "기쁜 마음으로 예물을 모아 성소를 준비하다",
+      "actors": [
+        "하나님",
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "ark-covenant",
+      "ref": "출애굽기 25:1-22",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기쁜 마음으로 가져온 예물로 성소와 언약궤를 준비하도록 말씀하세요. 궤와 속죄소는 설계도처럼 차분히 조립해 보여요."
+      ],
+      "study": "기쁜 마음으로 가져온 예물로 성소와 언약궤를 준비하도록 말씀하세요. 궤와 속죄소는 설계도처럼 차분히 조립해 보여요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"craft","lead":"하나님","target":"모세","mode":"reconstruction","setting":"tabernacle","effect":"covenant","emotion":"reverent","prop":"ark-covenant","beats":[{"action":"speak","duration":1,"actor":"하나님"},{"action":"gather","duration":1.2,"actor":"모세"},{"action":"place","duration":1.5,"actor":"이스라엘 자손"},{"action":"join","duration":1.8,"actor":"이스라엘 자손"},{"action":"cover","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 25:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-25-23-40",
+      "code": "exo",
+      "chapter": 25,
+      "title": "진설병 상과 일곱 등잔대를 만들다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "lampstand",
+      "ref": "출애굽기 25:23-40",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 상을 만들고 늘 진설병을 놓으며, 꽃 모양의 가지와 일곱 등잔을 가진 등잔대를 만들어요."
+      ],
+      "study": "상을 만들고 늘 진설병을 놓으며, 꽃 모양의 가지와 일곱 등잔을 가진 등잔대를 만들어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"tent","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"tabernacle","effect":"lamp","emotion":"careful","prop":"lampstand","beats":[{"action":"weigh","duration":1,"actor":"모세"},{"action":"weave","duration":1.2,"actor":"이스라엘 자손"},{"action":"join","duration":1.5,"actor":"이스라엘 자손"},{"action":"place","duration":1.8,"actor":"이스라엘 자손"},{"action":"light","duration":1.5,"actor":"이스라엘 자손"},{"action":"inspect","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 25:23-40","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-26-1-37",
+      "code": "exo",
+      "chapter": 26,
+      "title": "휘장과 널판을 이어 성막을 세우다",
+      "actors": [
+        "하나님",
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "tent",
+      "ref": "출애굽기 26:1-37",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 휘장과 덮개, 널판과 띠를 서로 잇고 성소와 지성소를 나누는 휘장을 달아 성막을 세우도록 해요."
+      ],
+      "study": "휘장과 덮개, 널판과 띠를 서로 잇고 성소와 지성소를 나누는 휘장을 달아 성막을 세우도록 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"build","lead":"하나님","target":"모세","mode":"reconstruction","setting":"tabernacle","effect":"build","emotion":"focused","prop":"tent","beats":[{"action":"weave","duration":1,"actor":"하나님"},{"action":"join","duration":1.2,"actor":"모세"},{"action":"lift","duration":1.5,"actor":"이스라엘 자손"},{"action":"align","duration":1.8,"actor":"이스라엘 자손"},{"action":"cover","duration":1.5,"actor":"이스라엘 자손"},{"action":"inspect","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 26:1-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-27-1-19",
+      "code": "exo",
+      "chapter": 27,
+      "title": "제단과 뜰의 경계를 세우다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "altar",
+      "ref": "출애굽기 27:1-19",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 제단과 뜰의 기둥과 휘장을 세워 예배 공간의 경계를 마련해요. 제물은 직접 재현하지 않고 제단의 모양과 도구를 보여줘요."
+      ],
+      "study": "제단과 뜰의 기둥과 휘장을 세워 예배 공간의 경계를 마련해요. 제물은 직접 재현하지 않고 제단의 모양과 도구를 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"wear","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"tabernacle-courtyard","effect":"build","emotion":"solemn","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"place","duration":1.2,"actor":"이스라엘 자손"},{"action":"join","duration":1.5,"actor":"이스라엘 자손"},{"action":"align","duration":1.8,"actor":"이스라엘 자손"},{"action":"join","duration":1.5,"actor":"이스라엘 자손"},{"action":"inspect","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 27:1-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-28-15-43",
+      "code": "exo",
+      "chapter": 28,
+      "title": "열두 지파의 이름을 흉패에 새기다",
+      "actors": [
+        "아론",
+        "나답",
+        "아비후",
+        "엘르아살"
+      ],
+      "object": "breastplate",
+      "ref": "출애굽기 28:15-43",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 열두 지파의 이름을 보석에 새긴 흉패를 가슴에 달고, 옷자락의 방울을 갖춘 제사장 옷을 마련해요."
+      ],
+      "study": "열두 지파의 이름을 보석에 새긴 흉패를 가슴에 달고, 옷자락의 방울을 갖춘 제사장 옷을 마련해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"anoint","lead":"아론","target":"나답","mode":"reconstruction","setting":"tabernacle","effect":"covenant","emotion":"reverent","prop":"breastplate","beats":[{"action":"inspect","duration":1,"actor":"아론"},{"action":"mark","duration":1.2,"actor":"나답"},{"action":"join","duration":1.5,"actor":"아비후"},{"action":"wear","duration":1.8,"actor":"엘르아살"},{"action":"touch","duration":1.5,"actor":"엘르아살"},{"action":"bow","duration":1.2,"actor":"엘르아살"}],"duration":8.2,"support":null,"ref":"출애굽기 28:15-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-29-10-37",
+      "code": "exo",
+      "chapter": 29,
+      "title": "위임 제사와 제단 봉헌을 행하다",
+      "actors": [
+        "모세",
+        "아론",
+        "하나님"
+      ],
+      "object": "altar",
+      "ref": "출애굽기 29:10-37",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 위임 제사의 절차와 제단을 거룩하게 구별하는 규정을 전해요. 피와 희생은 장면에서 직접 묘사하지 않고 제단과 손의 상징으로 절제해요."
+      ],
+      "study": "위임 제사의 절차와 제단을 거룩하게 구별하는 규정을 전해요. 피와 희생은 장면에서 직접 묘사하지 않고 제단과 손의 상징으로 절제해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"two-offerings","lead":"모세","target":"아론","mode":"reconstruction","setting":"tabernacle-courtyard","effect":"altar-flame","emotion":"solemn","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"아론"},{"action":"place","duration":1.5,"actor":"하나님"},{"action":"pour","duration":1.8,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":{"actor":"아론","actions":["inspect","gather","lift","place","bow","wait"]},"ref":"출애굽기 29:10-37","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-29-38-46",
+      "code": "exo",
+      "chapter": 29,
+      "title": "아침저녁으로 날마다 제물을 드리다",
+      "actors": [
+        "아론",
+        "이스라엘 자손",
+        "하나님"
+      ],
+      "object": "altar",
+      "ref": "출애굽기 29:38-46",
+      "verseNumbers": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아침과 저녁에 드리는 제물과 하나님이 회막에서 백성을 만나 함께하시겠다는 약속을 보여줘요."
+      ],
+      "study": "아침과 저녁에 드리는 제물과 하나님이 회막에서 백성을 만나 함께하시겠다는 약속을 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"sacrifice","lead":"아론","target":"이스라엘 자손","mode":"reconstruction","setting":"tabernacle-courtyard","effect":"altar-flame","emotion":"steady","prop":"altar","beats":[{"action":"gather","duration":1,"actor":"아론"},{"action":"place","duration":1.2,"actor":"이스라엘 자손"},{"action":"pour","duration":1.5,"actor":"하나님"},{"action":"wait","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 29:38-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-30-11-21",
+      "code": "exo",
+      "chapter": 30,
+      "title": "모든 사람이 같은 생명의 속전을 내다",
+      "actors": [
+        "하나님",
+        "아론",
+        "이스라엘 자손"
+      ],
+      "object": "coin",
+      "ref": "출애굽기 30:11-21",
+      "verseNumbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 인구 조사 때 부자와 가난한 이가 차별 없이 같은 반 세겔을 내고, 씻는 물두멍을 마련하도록 해요."
+      ],
+      "study": "인구 조사 때 부자와 가난한 이가 차별 없이 같은 반 세겔을 내고, 씻는 물두멍을 마련하도록 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"coins","lead":"하나님","target":"아론","mode":"reconstruction","setting":"tabernacle-courtyard","effect":"coins","emotion":"fair","prop":"coin","beats":[{"action":"count","duration":1,"actor":"하나님"},{"action":"weigh","duration":1.2,"actor":"아론"},{"action":"receive","duration":1.5,"actor":"이스라엘 자손"},{"action":"place","duration":1.8,"actor":"이스라엘 자손"},{"action":"touch","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 30:11-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-30-22-38",
+      "code": "exo",
+      "chapter": 30,
+      "title": "관유와 향을 만들어 거룩히 구별하다",
+      "actors": [
+        "하나님",
+        "아론"
+      ],
+      "object": "myrrh",
+      "ref": "출애굽기 30:22-38",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 향품과 기름을 정해진 방식으로 만들고 성막 기구와 제사장을 거룩히 구별해요. 사적인 용도와 구분되는 향을 상징적으로 피워요."
+      ],
+      "study": "향품과 기름을 정해진 방식으로 만들고 성막 기구와 제사장을 거룩히 구별해요. 사적인 용도와 구분되는 향을 상징적으로 피워요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문의 규정과 사건을 설명으로 살펴보는 장면이에요. 폭력·피·신체 손상은 직접 재현하지 않고 상징적인 동작으로 표현해요.",
+      "animation": {"version":2,"motif":"incense","lead":"하나님","target":"아론","mode":"reconstruction","setting":"tabernacle","effect":"oil","emotion":"reverent","prop":"myrrh","beats":[{"action":"weigh","duration":1,"actor":"하나님"},{"action":"gather","duration":1.2,"actor":"아론"},{"action":"join","duration":1.5,"actor":"아론"},{"action":"pour","duration":1.8,"actor":"아론"},{"action":"light","duration":1.5,"actor":"아론"},{"action":"bow","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 30:22-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-31-12-17",
+      "code": "exo",
+      "chapter": 31,
+      "title": "안식일을 언약의 표징으로 지키다",
+      "actors": [
+        "하나님",
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "tablet",
+      "ref": "출애굽기 31:12-17",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 엿새 동안 일하고 일곱째 날 쉬라는 안식일을 언약의 표징으로 주시며, 모세에게 두 돌판을 맡기세요."
+      ],
+      "study": "하나님이 엿새 동안 일하고 일곱째 날 쉬라는 안식일을 언약의 표징으로 주시며, 모세에게 두 돌판을 맡기세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"covenant","lead":"하나님","target":"모세","mode":"reconstruction","setting":"mountain","effect":"covenant","emotion":"reverent","prop":"tablet","beats":[{"action":"speak","duration":1,"actor":"하나님"},{"action":"listen","duration":1.2,"actor":"모세"},{"action":"read","duration":1.5,"actor":"이스라엘 자손"},{"action":"wait","duration":1.8,"actor":"이스라엘 자손"},{"action":"receive","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 31:12-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-32-7-14",
+      "code": "exo",
+      "chapter": 32,
+      "title": "모세가 백성을 위해 진노를 거두어 달라 간구하다",
+      "actors": [
+        "모세",
+        "하나님"
+      ],
+      "object": "tablet",
+      "ref": "출애굽기 32:7-14",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 백성의 죄를 알리시자 모세가 출애굽과 조상에게 하신 약속을 기억해 달라며 간구하고, 백성에게 내리려던 재앙이 거두어져요."
+      ],
+      "study": "하나님이 백성의 죄를 알리시자 모세가 출애굽과 조상에게 하신 약속을 기억해 달라며 간구하고, 백성에게 내리려던 재앙이 거두어져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"plead","lead":"모세","target":"하나님","mode":"reconstruction","setting":"mountain","effect":"prayer","emotion":"urgent","prop":"tablet","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"wait","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 32:7-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-32-21-24",
+      "code": "exo",
+      "chapter": 32,
+      "title": "모세가 아론에게 책임을 묻다",
+      "actors": [
+        "모세",
+        "아론"
+      ],
+      "object": "gold",
+      "ref": "출애굽기 32:21-24",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 아론에게 백성을 죄에 빠뜨린 까닭을 묻고, 아론은 백성이 금을 가져와 불에 던졌더니 송아지가 나왔다고 변명해요."
+      ],
+      "study": "모세가 아론에게 백성을 죄에 빠뜨린 까닭을 묻고, 아론은 백성이 금을 가져와 불에 던졌더니 송아지가 나왔다고 변명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"dispute","lead":"모세","target":"아론","mode":"reconstruction","setting":"camp","effect":"speech","emotion":"tense","prop":"gold","beats":[{"action":"turn","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"아론"},{"action":"listen","duration":1.5,"actor":"아론"},{"action":"point","duration":1.8,"actor":"아론"},{"action":"speak","duration":1.5,"actor":"아론"},{"action":"lower","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 32:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-32-30-35",
+      "code": "exo",
+      "chapter": 32,
+      "title": "모세가 다시 올라가 백성의 용서를 간구하다",
+      "actors": [
+        "모세",
+        "하나님"
+      ],
+      "object": "book",
+      "ref": "출애굽기 32:30-35",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 백성을 위해 다시 산에 올라 죄를 용서해 달라고 간구해요. 장면은 중보와 하나님의 응답에 집중하고 재앙은 비그래픽한 빛과 침묵으로만 표시해요."
+      ],
+      "study": "모세가 백성을 위해 다시 산에 올라 죄를 용서해 달라고 간구해요. 장면은 중보와 하나님의 응답에 집중하고 재앙은 비그래픽한 빛과 침묵으로만 표시해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"pray","lead":"모세","target":"하나님","mode":"reconstruction","setting":"mountain","effect":"prayer","emotion":"sorrowful","prop":"book","beats":[{"action":"walk","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.8,"actor":"하나님"},{"action":"bow","duration":1.5,"actor":"하나님"},{"action":"wait","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 32:30-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-33-1-6",
+      "code": "exo",
+      "chapter": 33,
+      "title": "백성이 슬퍼하며 장식을 내려놓다",
+      "actors": [
+        "하나님",
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "jewel",
+      "ref": "출애굽기 33:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 사자를 보내 인도하시겠다고 하시지만 함께 올라가지는 않겠다고 하시자 백성이 슬퍼하고 몸의 장식물을 내려놓아요."
+      ],
+      "study": "하나님이 사자를 보내 인도하시겠다고 하시지만 함께 올라가지는 않겠다고 하시자 백성이 슬퍼하고 몸의 장식물을 내려놓아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"lament","lead":"하나님","target":"모세","mode":"reconstruction","setting":"camp","effect":"tears","emotion":"sorrowful","prop":"jewel","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"turn","duration":1.2,"actor":"모세"},{"action":"mourn","duration":1.5,"actor":"이스라엘 자손"},{"action":"remove-shoe","duration":1.8,"actor":"이스라엘 자손"},{"action":"lower","duration":1.5,"actor":"이스라엘 자손"},{"action":"wait","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 33:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-33-12-23",
+      "code": "exo",
+      "chapter": 33,
+      "title": "모세가 하나님의 임재와 영광을 간구하다",
+      "actors": [
+        "모세",
+        "하나님"
+      ],
+      "object": "cloud",
+      "ref": "출애굽기 33:12-23",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 주께서 친히 함께 가시기를 간구하고 영광을 보여 달라 해요. 하나님은 반석 틈에 모세를 두고 지나가시며 손으로 가리신다고 말씀하세요."
+      ],
+      "study": "모세가 주께서 친히 함께 가시기를 간구하고 영광을 보여 달라 해요. 하나님은 반석 틈에 모세를 두고 지나가시며 손으로 가리신다고 말씀하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"petition","lead":"모세","target":"하나님","mode":"reconstruction","setting":"mountain","effect":"vision","emotion":"awe","prop":"cloud","beats":[{"action":"speak","duration":1,"actor":"모세"},{"action":"kneel","duration":1.2,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"stand","duration":1.8,"actor":"하나님"},{"action":"cover","duration":1.5,"actor":"하나님"},{"action":"look","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"출애굽기 33:12-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-34-10-28",
+      "code": "exo",
+      "chapter": 34,
+      "title": "돌판과 언약을 새롭게 하다",
+      "actors": [
+        "모세",
+        "하나님",
+        "이스라엘 자손"
+      ],
+      "object": "tablet",
+      "ref": "출애굽기 34:10-28",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 언약을 새롭게 하시고 절기와 안식일을 지키도록 말씀하세요. 모세는 언약의 말씀을 기록하며 사십 일 동안 산에 머물러요."
+      ],
+      "study": "하나님이 언약을 새롭게 하시고 절기와 안식일을 지키도록 말씀하세요. 모세는 언약의 말씀을 기록하며 사십 일 동안 산에 머물러요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"covenant","lead":"모세","target":"하나님","mode":"reconstruction","setting":"mountain","effect":"covenant","emotion":"solemn","prop":"tablet","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"write","duration":1.2,"actor":"하나님"},{"action":"read","duration":1.5,"actor":"이스라엘 자손"},{"action":"pledge","duration":1.8,"actor":"이스라엘 자손"},{"action":"wait","duration":1.5,"actor":"이스라엘 자손"},{"action":"bow","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 34:10-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-35-1-3",
+      "code": "exo",
+      "chapter": 35,
+      "title": "안식일을 기억하고 쉬다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "tablet",
+      "ref": "출애굽기 35:1-3",
+      "verseNumbers": [
+        1,
+        2,
+        3
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 온 회중에게 엿새 동안 일하고 일곱째 날 쉬라는 안식일 규정을 다시 전해요."
+      ],
+      "study": "모세가 온 회중에게 엿새 동안 일하고 일곱째 날 쉬라는 안식일 규정을 다시 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"covenant","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"camp","effect":"covenant","emotion":"peaceful","prop":"tablet","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"speak","duration":1.2,"actor":"이스라엘 자손"},{"action":"listen","duration":1.5,"actor":"이스라엘 자손"},{"action":"wait","duration":1.8,"actor":"이스라엘 자손"},{"action":"bow","duration":1.5,"actor":"이스라엘 자손"},{"action":"wait","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 35:1-3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-35-20-29",
+      "code": "exo",
+      "chapter": 35,
+      "title": "백성이 자원하여 성막 예물을 가져오다",
+      "actors": [
+        "모세",
+        "이스라엘 자손"
+      ],
+      "object": "gold",
+      "ref": "출애굽기 35:20-29",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 마음이 감동된 남녀가 자원하여 금속과 실과 가죽과 나무와 향품을 가져와요. 손재주 있는 여인들도 실을 만들고 지도자들은 보석을 보태요."
+      ],
+      "study": "마음이 감동된 남녀가 자원하여 금속과 실과 가죽과 나무와 향품을 가져와요. 손재주 있는 여인들도 실을 만들고 지도자들은 보석을 보태요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"offer","lead":"모세","target":"이스라엘 자손","mode":"reconstruction","setting":"camp","effect":"coins","emotion":"joyful","prop":"gold","beats":[{"action":"gather","duration":1,"actor":"모세"},{"action":"carry","duration":1.2,"actor":"이스라엘 자손"},{"action":"place","duration":1.5,"actor":"이스라엘 자손"},{"action":"weigh","duration":1.8,"actor":"이스라엘 자손"},{"action":"receive","duration":1.5,"actor":"이스라엘 자손"},{"action":"place","duration":1.2,"actor":"이스라엘 자손"}],"duration":8.2,"support":null,"ref":"출애굽기 35:20-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-35-30-35",
+      "code": "exo",
+      "chapter": 35,
+      "title": "브살렐과 오홀리압에게 기술과 지혜를 주시다",
+      "actors": [
+        "모세",
+        "브살렐",
+        "오홀리압"
+      ],
+      "object": "robe",
+      "ref": "출애굽기 35:30-35",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 모세가 브살렐과 오홀리압을 소개해요. 두 장인은 세공과 조각, 수놓기와 짜기를 비롯한 일을 할 뿐 아니라 다른 이들을 가르쳐요."
+      ],
+      "study": "모세가 브살렐과 오홀리압을 소개해요. 두 장인은 세공과 조각, 수놓기와 짜기를 비롯한 일을 할 뿐 아니라 다른 이들을 가르쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"craft","lead":"모세","target":"브살렐","mode":"reconstruction","setting":"camp","effect":"build","emotion":"confident","prop":"robe","beats":[{"action":"speak","duration":1,"actor":"모세"},{"action":"show","duration":1.2,"actor":"브살렐"},{"action":"inspect","duration":1.5,"actor":"오홀리압"},{"action":"weave","duration":1.8,"actor":"오홀리압"},{"action":"hammer","duration":1.5,"actor":"오홀리압"},{"action":"show","duration":1.2,"actor":"오홀리압"}],"duration":8.2,"support":null,"ref":"출애굽기 35:30-35","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-36-8-38",
+      "code": "exo",
+      "chapter": 36,
+      "title": "넘치는 예물로 성막의 휘장과 널판을 만들다",
+      "actors": [
+        "브살렐",
+        "오홀리압"
+      ],
+      "object": "tabernacle",
+      "ref": "출애굽기 36:8-38",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 필요한 것보다 예물이 더 들어오자 모세가 더 가져오지 말라고 해요. 장인들은 천을 잇고 널판과 기둥을 세워 성막을 조립해요."
+      ],
+      "study": "필요한 것보다 예물이 더 들어오자 모세가 더 가져오지 말라고 해요. 장인들은 천을 잇고 널판과 기둥을 세워 성막을 조립해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"build","lead":"브살렐","target":"오홀리압","mode":"reconstruction","setting":"tabernacle","effect":"build","emotion":"focused","prop":"tabernacle","beats":[{"action":"weave","duration":1,"actor":"브살렐"},{"action":"join","duration":1.2,"actor":"오홀리압"},{"action":"lift","duration":1.5,"actor":"오홀리압"},{"action":"align","duration":1.8,"actor":"오홀리압"},{"action":"cover","duration":1.5,"actor":"오홀리압"},{"action":"inspect","duration":1.2,"actor":"오홀리압"}],"duration":8.2,"support":null,"ref":"출애굽기 36:8-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-38-1-20",
+      "code": "exo",
+      "chapter": 38,
+      "title": "번제단과 물두멍과 뜰을 만들다",
+      "actors": [
+        "브살렐",
+        "오홀리압"
+      ],
+      "object": "altar",
+      "ref": "출애굽기 38:1-20",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 놋으로 제단과 물두멍을 만들고 세마포 휘장과 기둥으로 뜰을 둘러요. 불이나 제물은 직접 묘사하지 않고 제단 구조와 기구를 보여줘요."
+      ],
+      "study": "놋으로 제단과 물두멍을 만들고 세마포 휘장과 기둥으로 뜰을 둘러요. 불이나 제물은 직접 묘사하지 않고 제단 구조와 기구를 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"build","lead":"브살렐","target":"오홀리압","mode":"reconstruction","setting":"tabernacle-courtyard","effect":"build","emotion":"careful","prop":"altar","beats":[{"action":"hammer","duration":1,"actor":"브살렐"},{"action":"join","duration":1.2,"actor":"오홀리압"},{"action":"carry","duration":1.5,"actor":"오홀리압"},{"action":"place","duration":1.8,"actor":"오홀리압"},{"action":"align","duration":1.5,"actor":"오홀리압"},{"action":"inspect","duration":1.2,"actor":"오홀리압"}],"duration":8.2,"support":null,"ref":"출애굽기 38:1-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-exo-review-39-1-31",
+      "code": "exo",
+      "chapter": 39,
+      "title": "에봇과 흉패와 제사장 옷을 완성하다",
+      "actors": [
+        "브살렐",
+        "오홀리압",
+        "아론"
+      ],
+      "object": "ephod",
+      "ref": "출애굽기 39:1-31",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 장인들이 에봇과 열두 지파의 이름을 새긴 흉패, 방울과 석류 장식이 있는 옷을 만들고 금패에 \"여호와께 성결\"을 새겨요."
+      ],
+      "study": "장인들이 에봇과 열두 지파의 이름을 새긴 흉패, 방울과 석류 장식이 있는 옷을 만들고 금패에 \"여호와께 성결\"을 새겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문을 설명하는 상징 장면이에요. 사람의 죽음이나 신체 손상은 직접 재현하지 않아요.",
+      "animation": {"version":2,"motif":"weave","lead":"브살렐","target":"오홀리압","mode":"reconstruction","setting":"tabernacle","effect":"cloth","emotion":"careful","prop":"ephod","beats":[{"action":"weave","duration":1,"actor":"브살렐"},{"action":"mark","duration":1.2,"actor":"오홀리압"},{"action":"join","duration":1.5,"actor":"아론"},{"action":"wear","duration":1.8,"actor":"아론"},{"action":"inspect","duration":1.5,"actor":"아론"},{"action":"receive","duration":1.2,"actor":"아론"}],"duration":8.2,"support":null,"ref":"출애굽기 39:1-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
@@ -2041,16 +3635,6 @@
         "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
         "mentionVerses": [
           10
-        ]
-      }
-    ],
-    "18": [
-      {
-        "name": "아론",
-        "weight": 1,
-        "role": "본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.",
-        "mentionVerses": [
-          12
         ]
       }
     ],

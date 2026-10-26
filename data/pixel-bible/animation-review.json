@@ -32,17 +32,28 @@
     },
     {
       "code": "exo",
-      "payloadSha256": "c067b98204648cdedb33127a13a9012cce811c4f62ff86b7e1082f15c99bfef8",
-      "scenes": 57,
-      "existing": 57,
+      "payloadSha256": "baa1fa40ef693d0564ed18241bd24b44638b6ce63334e0439e7db54b8bb0bfe9",
+      "scenes": 100,
+      "existing": 100,
       "restored": 0,
-      "corrected": 8,
-      "planned": 57,
+      "corrected": 19,
+      "planned": 100,
       "modes": {
-        "reconstruction": 50,
+        "reconstruction": 93,
         "illustration": 7
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 100,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "lev",

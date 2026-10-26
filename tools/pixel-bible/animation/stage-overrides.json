@@ -5564,6 +5564,234 @@
     }
   },
   "exo": {
+    "2": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "hopeful",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "extend",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "이스라엘 장로들"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 장로들"
+        }
+      ]
+    },
+    "3": {
+      "mode": "reconstruction",
+      "setting": "worksite",
+      "effect": "build",
+      "emotion": "strained",
+      "beats": [
+        {
+          "action": "read",
+          "duration": 1,
+          "actor": "바로"
+        },
+        {
+          "action": "point",
+          "duration": 1.2,
+          "actor": "바로"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "gather",
+          "duration": 1.8,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "이스라엘 감독들"
+        }
+      ]
+    },
+    "4": {
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "snake",
+      "emotion": "tense",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "drop",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "startle",
+          "duration": 1.8,
+          "actor": "바로"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "애굽 술객들"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "바로"
+        }
+      ]
+    },
+    "5": {
+      "mode": "reconstruction",
+      "setting": "river",
+      "effect": "water",
+      "emotion": "grave",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "extend",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "strike",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "look",
+          "duration": 1.8,
+          "actor": "바로"
+        },
+        {
+          "action": "startle",
+          "duration": 1.5,
+          "actor": "애굽 술객들"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "바로"
+        }
+      ]
+    },
+    "6": {
+      "mode": "reconstruction",
+      "setting": "shore",
+      "effect": "divide",
+      "emotion": "resolute",
+      "beats": [
+        {
+          "action": "signal",
+          "duration": 1,
+          "actor": "하나님의 사자"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "walk",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "walk",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "7": {
+      "mode": "reconstruction",
+      "setting": "shore",
+      "effect": "restore",
+      "emotion": "solemn",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "애굽 군대"
+        },
+        {
+          "action": "halt",
+          "duration": 1.2,
+          "actor": "애굽 군대"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "lower",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
     "38": {
       "mode": "reconstruction"
     },
@@ -5598,10 +5826,80 @@
       "mode": "reconstruction"
     },
     "49": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "setting": "night-courtyard",
+      "effect": "tears",
+      "emotion": "grief",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "바로"
+        },
+        {
+          "action": "startle",
+          "duration": 1.2,
+          "actor": "바로"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "mourn",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "바로"
+        }
+      ]
     },
     "50": {
-      "mode": "reconstruction"
+      "mode": "reconstruction",
+      "setting": "desert-road",
+      "effect": "journey",
+      "emotion": "hopeful",
+      "beats": [
+        {
+          "action": "carry",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "walk",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "walk",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "walk",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
     },
     "51": {
       "mode": "reconstruction"
@@ -5620,6 +5918,1640 @@
     },
     "56": {
       "mode": "reconstruction"
+    },
+    "57": {
+      "mode": "reconstruction",
+      "setting": "worksite",
+      "effect": "build",
+      "emotion": "strained",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "carry",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "바로"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "58": {
+      "mode": "reconstruction",
+      "setting": "desert",
+      "effect": "speech",
+      "emotion": "awe",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "signal",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "이스라엘 장로들"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "59": {
+      "mode": "reconstruction",
+      "setting": "desert",
+      "effect": "speech",
+      "emotion": "hesitant",
+      "beats": [
+        {
+          "action": "lower",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "turn",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "walk",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "extend",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "lift",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "60": {
+      "mode": "reconstruction",
+      "setting": "desert-road",
+      "effect": "journey",
+      "emotion": "somber",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "halt",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.8,
+          "actor": "십보라"
+        },
+        {
+          "action": "cover",
+          "duration": 1.5,
+          "actor": "십보라"
+        },
+        {
+          "action": "stand",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "61": {
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "speech",
+      "emotion": "tense",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "turn",
+          "duration": 1.8,
+          "actor": "바로"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "62": {
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "clash",
+      "emotion": "distressed",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "turn",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "lower",
+          "duration": 1.8,
+          "actor": "이스라엘 감독들"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "63": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "weary",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "lower",
+          "duration": 1.8,
+          "actor": "모세"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "64": {
+      "mode": "reconstruction",
+      "setting": "court",
+      "effect": "fire",
+      "emotion": "distressed",
+      "beats": [
+        {
+          "action": "lift",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "scatter",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "retreat",
+          "duration": 1.8,
+          "actor": "애굽 술객들"
+        },
+        {
+          "action": "look",
+          "duration": 1.5,
+          "actor": "바로"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "바로"
+        }
+      ]
+    },
+    "65": {
+      "mode": "reconstruction",
+      "setting": "shore",
+      "effect": "speech",
+      "emotion": "afraid",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "startle",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "signal",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "turn",
+          "duration": 1.8,
+          "actor": "애굽 군대"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "66": {
+      "mode": "reconstruction",
+      "setting": "wilderness",
+      "effect": "water",
+      "emotion": "relieved",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "pray",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "throw",
+          "duration": 1.8,
+          "actor": "모세"
+        },
+        {
+          "action": "scoop",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "67": {
+      "mode": "reconstruction",
+      "setting": "battlefield",
+      "effect": "clash",
+      "emotion": "steadfast",
+      "beats": [
+        {
+          "action": "signal",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "march",
+          "duration": 1.2,
+          "actor": "여호수아"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "모세"
+        },
+        {
+          "action": "brace",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "brace",
+          "duration": 1.5,
+          "actor": "훌"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "68": {
+      "mode": "reconstruction",
+      "setting": "desert-camp",
+      "effect": "family",
+      "emotion": "joy",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "이드로"
+        },
+        {
+          "action": "extend",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "extend",
+          "duration": 1.5,
+          "actor": "십보라"
+        },
+        {
+          "action": "listen",
+          "duration": 1.8,
+          "actor": "이드로"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "receive",
+          "duration": 1.2,
+          "actor": "이드로"
+        }
+      ]
+    },
+    "69": {
+      "mode": "reconstruction",
+      "setting": "desert-road",
+      "effect": "journey",
+      "emotion": "urgent",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "carry",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "carry",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "speak",
+          "duration": 1.8,
+          "actor": "바로"
+        },
+        {
+          "action": "walk",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "모세"
+        }
+      ]
+    },
+    "70": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "thoughtful",
+      "beats": [
+        {
+          "action": "read",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "write",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "71": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "speech",
+      "emotion": "measured",
+      "beats": [
+        {
+          "action": "write",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "read",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "weigh",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "listen",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "point",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "72": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "coins",
+      "emotion": "fair",
+      "beats": [
+        {
+          "action": "weigh",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "listen",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "73": {
+      "mode": "reconstruction",
+      "setting": "courtyard",
+      "effect": "covenant",
+      "emotion": "compassionate",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "extend",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "cover",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "74": {
+      "mode": "reconstruction",
+      "setting": "village-road",
+      "effect": "family",
+      "emotion": "compassionate",
+      "beats": [
+        {
+          "action": "look",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "walk",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "reach",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "lift",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "hold",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "walk",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "75": {
+      "mode": "reconstruction",
+      "setting": "field",
+      "effect": "covenant",
+      "emotion": "peaceful",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "release",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "place",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "76": {
+      "mode": "reconstruction",
+      "setting": "desert-road",
+      "effect": "journey",
+      "emotion": "hopeful",
+      "beats": [
+        {
+          "action": "signal",
+          "duration": 1,
+          "actor": "하나님의 사자"
+        },
+        {
+          "action": "listen",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "march",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "walk",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "halt",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "77": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "vision",
+      "emotion": "awe",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "나답"
+        },
+        {
+          "action": "sit",
+          "duration": 1.8,
+          "actor": "아비후"
+        },
+        {
+          "action": "eat",
+          "duration": 1.5,
+          "actor": "아비후"
+        },
+        {
+          "action": "wait",
+          "duration": 1.2,
+          "actor": "아비후"
+        }
+      ]
+    },
+    "78": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "covenant",
+      "emotion": "reverent",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "gather",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "place",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "join",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "cover",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "79": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "lamp",
+      "emotion": "careful",
+      "beats": [
+        {
+          "action": "weigh",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "weave",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "light",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "80": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "build",
+      "emotion": "focused",
+      "beats": [
+        {
+          "action": "weave",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "join",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "align",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "cover",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "81": {
+      "mode": "reconstruction",
+      "setting": "tabernacle-courtyard",
+      "effect": "build",
+      "emotion": "solemn",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "place",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "align",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "82": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "covenant",
+      "emotion": "reverent",
+      "beats": [
+        {
+          "action": "inspect",
+          "duration": 1,
+          "actor": "아론"
+        },
+        {
+          "action": "mark",
+          "duration": 1.2,
+          "actor": "나답"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "아비후"
+        },
+        {
+          "action": "wear",
+          "duration": 1.8,
+          "actor": "엘르아살"
+        },
+        {
+          "action": "touch",
+          "duration": 1.5,
+          "actor": "엘르아살"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "엘르아살"
+        }
+      ]
+    },
+    "83": {
+      "mode": "reconstruction",
+      "setting": "tabernacle-courtyard",
+      "effect": "altar-flame",
+      "emotion": "solemn",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "place",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "pour",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "pray",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "84": {
+      "mode": "reconstruction",
+      "setting": "tabernacle-courtyard",
+      "effect": "altar-flame",
+      "emotion": "steady",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "아론"
+        },
+        {
+          "action": "place",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "pour",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "wait",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "85": {
+      "mode": "reconstruction",
+      "setting": "tabernacle-courtyard",
+      "effect": "coins",
+      "emotion": "fair",
+      "beats": [
+        {
+          "action": "count",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "weigh",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "touch",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "86": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "oil",
+      "emotion": "reverent",
+      "beats": [
+        {
+          "action": "weigh",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "gather",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "pour",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "light",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "아론"
+        }
+      ]
+    },
+    "87": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "covenant",
+      "emotion": "reverent",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "listen",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "read",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "88": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "prayer",
+      "emotion": "urgent",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "pray",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "wait",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "89": {
+      "mode": "reconstruction",
+      "setting": "camp",
+      "effect": "speech",
+      "emotion": "tense",
+      "beats": [
+        {
+          "action": "turn",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "아론"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "point",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "speak",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "lower",
+          "duration": 1.2,
+          "actor": "아론"
+        }
+      ]
+    },
+    "90": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "prayer",
+      "emotion": "sorrowful",
+      "beats": [
+        {
+          "action": "walk",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "pray",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "listen",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "wait",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "91": {
+      "mode": "reconstruction",
+      "setting": "camp",
+      "effect": "tears",
+      "emotion": "sorrowful",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "하나님"
+        },
+        {
+          "action": "turn",
+          "duration": 1.2,
+          "actor": "모세"
+        },
+        {
+          "action": "mourn",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "remove-shoe",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "lower",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "92": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "vision",
+      "emotion": "awe",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "kneel",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "pray",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "stand",
+          "duration": 1.8,
+          "actor": "하나님"
+        },
+        {
+          "action": "cover",
+          "duration": 1.5,
+          "actor": "하나님"
+        },
+        {
+          "action": "look",
+          "duration": 1.2,
+          "actor": "하나님"
+        }
+      ]
+    },
+    "93": {
+      "mode": "reconstruction",
+      "setting": "mountain",
+      "effect": "covenant",
+      "emotion": "solemn",
+      "beats": [
+        {
+          "action": "listen",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "write",
+          "duration": 1.2,
+          "actor": "하나님"
+        },
+        {
+          "action": "read",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "pledge",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "94": {
+      "mode": "reconstruction",
+      "setting": "camp",
+      "effect": "covenant",
+      "emotion": "peaceful",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "speak",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "listen",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "bow",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "wait",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "95": {
+      "mode": "reconstruction",
+      "setting": "camp",
+      "effect": "coins",
+      "emotion": "joyful",
+      "beats": [
+        {
+          "action": "gather",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "carry",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "place",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "weigh",
+          "duration": 1.8,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "receive",
+          "duration": 1.5,
+          "actor": "이스라엘 자손"
+        },
+        {
+          "action": "place",
+          "duration": 1.2,
+          "actor": "이스라엘 자손"
+        }
+      ]
+    },
+    "96": {
+      "mode": "reconstruction",
+      "setting": "camp",
+      "effect": "build",
+      "emotion": "confident",
+      "beats": [
+        {
+          "action": "speak",
+          "duration": 1,
+          "actor": "모세"
+        },
+        {
+          "action": "show",
+          "duration": 1.2,
+          "actor": "브살렐"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "weave",
+          "duration": 1.8,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "hammer",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "show",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        }
+      ]
+    },
+    "97": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "build",
+      "emotion": "focused",
+      "beats": [
+        {
+          "action": "weave",
+          "duration": 1,
+          "actor": "브살렐"
+        },
+        {
+          "action": "join",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "lift",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "align",
+          "duration": 1.8,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "cover",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        }
+      ]
+    },
+    "98": {
+      "mode": "reconstruction",
+      "setting": "tabernacle-courtyard",
+      "effect": "build",
+      "emotion": "careful",
+      "beats": [
+        {
+          "action": "hammer",
+          "duration": 1,
+          "actor": "브살렐"
+        },
+        {
+          "action": "join",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "carry",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "place",
+          "duration": 1.8,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "align",
+          "duration": 1.5,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        }
+      ]
+    },
+    "99": {
+      "mode": "reconstruction",
+      "setting": "tabernacle",
+      "effect": "cloth",
+      "emotion": "careful",
+      "beats": [
+        {
+          "action": "weave",
+          "duration": 1,
+          "actor": "브살렐"
+        },
+        {
+          "action": "mark",
+          "duration": 1.2,
+          "actor": "오홀리압"
+        },
+        {
+          "action": "join",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "wear",
+          "duration": 1.8,
+          "actor": "아론"
+        },
+        {
+          "action": "inspect",
+          "duration": 1.5,
+          "actor": "아론"
+        },
+        {
+          "action": "receive",
+          "duration": 1.2,
+          "actor": "아론"
+        }
+      ]
     }
   },
   "num": {
