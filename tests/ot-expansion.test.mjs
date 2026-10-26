@@ -483,3 +483,8 @@ test('job 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
  for(const title of titles)assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
+
+test('요나 1장의 바다에 던짐과 큰 물고기 장면은 서로 다른 절 범위로 나뉜다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'jnh.json')),sailors=data.scenes.find(s=>s.ref==='요나 1:13-16'),fish=data.scenes.find(s=>s.ref==='요나 1:17'),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jnh.json'));
+ assert(sailors);assert(fish);assert.deepEqual(fish.actors,['요나']);assert.equal(fish.object,'fish');assert.equal(fish.animation.motif,'fish-swallow');assert(objects.chapters['1'].some(o=>o.id==='fish'&&o.refs.includes(fish.ref)));
+});

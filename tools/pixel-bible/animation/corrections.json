@@ -745,9 +745,14 @@
   "jnh": {
     "2": {
       "actors": [
-        "사공들"
+        "요나"
       ],
-      "object": "boat"
+      "object": "fish",
+      "title": "큰 물고기가 요나를 삼키다",
+      "ref": "요나 1:17",
+      "verseNumbers": [
+        17
+      ]
     }
   },
   "sng": {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "rendererSha256": "23460f931ff08620f36aa777b9514c7a01478bfd10de427b9ad235f1c4ad37da",
+  "rendererSha256": "be591b7c542b3eea61d9f444d50ff4855824b7d8e331ed44f7343cd28b045843",
   "scope": "현재 등록된 구약 사건. 모든 성경 사건을 망라한다는 뜻이 아님.",
   "books": [
     {
@@ -440,7 +440,7 @@
     },
     {
       "code": "jnh",
-      "payloadSha256": "86890f521a50f140d2f333dfb99df81519dce3732ce32b281377e0dc186615a0",
+      "payloadSha256": "838f345409375a4873823c03cdf3c51514cae87858071f17d29dc52b1a6fbef4",
       "scenes": 10,
       "existing": 10,
       "restored": 0,

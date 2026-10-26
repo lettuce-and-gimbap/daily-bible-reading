@@ -137,6 +137,7 @@ add('gather-stones','inspect bend grasp bundle carry look','five-stones','water'
 add('reed-float','grasp carry bend place release look','float-basket','water','gentle');
 add('pour-water','inspect grasp lift pour lower bow','pour-water','courtyard','determined');
 add('calm-sea','sleep startle rise lift halt look','storm-calm','water','determined');
+add('fish-swallow','startle fall retreat brace lie sleep','sink','water','surprised');
 add('net-catch','grasp load windup throw pull lift','net-catch','water','joy');
 add('water-wine','inspect grasp lift pour inspect bow','water-wine','chamber','surprised');
 add('wash-feet','look kneel reach pour touch lower','wash-feet','chamber','gentle');
