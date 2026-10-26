@@ -1785,6 +1785,43 @@
         }
       ]
     },
+    "49": {
+      "lead": "하몰",
+      "target": "세겜",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "하몰",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "하몰",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "하몰",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "세겜",
+          "duration": 1.8
+        },
+        {
+          "action": "signal",
+          "actor": "하몰",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "세겜",
+          "duration": 1.2
+        }
+      ]
+    },
     "52": {
       "lead": "야곱",
       "target": "에서",
@@ -1855,6 +1892,43 @@
         {
           "action": "release",
           "actor": "유다",
+          "duration": 1.2
+        }
+      ]
+    },
+    "57": {
+      "lead": "유다",
+      "target": "다말",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "cover",
+          "actor": "다말",
+          "duration": 1
+        },
+        {
+          "action": "sit",
+          "actor": "다말",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "extend",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "receive",
+          "actor": "다말",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "히라",
           "duration": 1.2
         }
       ]
@@ -3272,6 +3346,43 @@
         }
       ]
     },
+    "145": {
+      "lead": "야곱",
+      "target": "시므온",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "walk",
+          "actor": "시므온",
+          "duration": 1
+        },
+        {
+          "action": "reach",
+          "actor": "레위",
+          "duration": 1.2
+        },
+        {
+          "action": "retreat",
+          "actor": "디나",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "시므온",
+          "duration": 1.5
+        },
+        {
+          "action": "speak",
+          "actor": "레위",
+          "duration": 1.2
+        }
+      ]
+    },
     "146": {
       "lead": "야곱",
       "target": "라헬",
@@ -3459,6 +3570,81 @@
         {
           "action": "walk",
           "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "158": {
+      "lead": "유다",
+      "target": "다말",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "유다",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "유다",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "다말",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "다말",
+          "duration": 1.2
+        }
+      ],
+      "mode": "illustration"
+    },
+    "159": {
+      "lead": "다말",
+      "target": "유다",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "show",
+          "actor": "다말",
+          "duration": 1
+        },
+        {
+          "action": "inspect",
+          "actor": "유다",
+          "duration": 1.2
+        },
+        {
+          "action": "startle",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "lower",
+          "actor": "유다",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "유다",
+          "duration": 1.5
+        },
+        {
+          "action": "cradle",
+          "actor": "다말",
           "duration": 1.2
         }
       ]

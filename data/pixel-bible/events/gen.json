@@ -1543,7 +1543,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dispute","lead":"세겜","target":"하몰","mode":"reconstruction","setting":"court","effect":"speech","emotion":"angry","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"세겜"},{"action":"turn","duration":1.2,"actor":"세겜"},{"action":"point","duration":1.5,"actor":"세겜"},{"action":"point","duration":1.8,"actor":"세겜"},{"action":"listen","duration":1.5,"actor":"세겜"},{"action":"lower","duration":1.2,"actor":"세겜"}],"duration":8.2,"support":null,"ref":"창세기 34:18-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"dispute","lead":"하몰","target":"세겜","mode":"reconstruction","setting":"court","effect":"none","emotion":"angry","prop":"gate","beats":[{"action":"walk","actor":"하몰","duration":1},{"action":"point","actor":"하몰","duration":1.2},{"action":"speak","actor":"하몰","duration":1.5},{"action":"speak","actor":"세겜","duration":1.8},{"action":"signal","actor":"하몰","duration":1.5},{"action":"hold","actor":"세겜","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 34:18-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-35-0",
@@ -1771,7 +1771,8 @@
       "title": "다말의 변장",
       "actors": [
         "유다",
-        "다말"
+        "다말",
+        "히라"
       ],
       "object": "staff",
       "ref": "창세기 38:12-23",
@@ -1797,7 +1798,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pledge","lead":"유다","target":"다말","mode":"reconstruction","setting":"road","effect":"transfer","emotion":"neutral","prop":"staff","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"inspect","duration":1.2,"actor":"유다"},{"action":"grasp","duration":1.5,"actor":"유다"},{"action":"extend","duration":1.8,"actor":"유다"},{"action":"release","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:12-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pledge","lead":"유다","target":"다말","mode":"reconstruction","setting":"road","effect":"none","emotion":"neutral","prop":"staff","beats":[{"action":"cover","actor":"다말","duration":1},{"action":"sit","actor":"다말","duration":1.2},{"action":"speak","actor":"유다","duration":1.5},{"action":"extend","actor":"유다","duration":1.8},{"action":"receive","actor":"다말","duration":1.5},{"action":"look","actor":"히라","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 38:12-23","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-39-0",
@@ -4735,7 +4736,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"lament","lead":"야곱","target":"시므온","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"},{"action":"kneel","duration":1.5,"actor":"야곱"},{"action":"cover-mouth","duration":1.8,"actor":"야곱"},{"action":"mourn","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 34:25-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"lament","lead":"야곱","target":"시므온","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"sad","prop":"scene-marker","beats":[{"action":"walk","actor":"시므온","duration":1},{"action":"reach","actor":"레위","duration":1.2},{"action":"retreat","actor":"디나","duration":1.5},{"action":"speak","actor":"야곱","duration":1.8},{"action":"speak","actor":"시므온","duration":1.5},{"action":"speak","actor":"레위","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 34:25-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-35-0",
@@ -5179,7 +5180,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"genealogy","lead":"유다","target":"다말","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"유다"},{"action":"listen","duration":1.2,"actor":"유다"},{"action":"cradle","duration":1.5,"actor":"유다"},{"action":"smile","duration":1.8,"actor":"유다"},{"action":"bless","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"genealogy","lead":"유다","target":"다말","mode":"illustration","setting":"chamber","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"stand","actor":"유다","duration":1},{"action":"look","actor":"유다","duration":1.2},{"action":"listen","actor":"다말","duration":1.5},{"action":"lower","actor":"유다","duration":1.8},{"action":"speak","actor":"유다","duration":1.5},{"action":"walk","actor":"다말","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 38:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-38-1",
@@ -5211,7 +5212,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"report","lead":"유다","target":"다말","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"speak","duration":1.2,"actor":"유다"},{"action":"point","duration":1.5,"actor":"유다"},{"action":"listen","duration":1.8,"actor":"유다"},{"action":"lower","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:24-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"report","lead":"다말","target":"유다","mode":"reconstruction","setting":"court","effect":"none","emotion":"neutral","prop":"scene-marker","beats":[{"action":"show","actor":"다말","duration":1},{"action":"inspect","actor":"유다","duration":1.2},{"action":"startle","actor":"유다","duration":1.5},{"action":"lower","actor":"유다","duration":1.8},{"action":"speak","actor":"유다","duration":1.5},{"action":"cradle","actor":"다말","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 38:24-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-46-2",
