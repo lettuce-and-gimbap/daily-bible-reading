@@ -891,7 +891,10 @@
       "mode": "reconstruction"
     },
     "34": {
-      "mode": "illustration"
+      "mode": "illustration",
+      "ref": "민수기 14:11-25",
+      "lead": "모세",
+      "target": "이스라엘 자손"
     },
     "35": {
       "mode": "illustration"
@@ -922,6 +925,9 @@
     },
     "44": {
       "mode": "illustration"
+    },
+    "45": {
+      "mode": "reconstruction"
     }
   },
   "2sa": {
@@ -2076,41 +2082,9 @@
       "effect": "build",
       "emotion": "determined",
       "prop": "lampstand",
-      "beats": [
-        {
-          "action": "inspect",
-          "duration": 1,
-          "actor": "후람(장인)"
-        },
-        {
-          "action": "gather",
-          "duration": 1.2,
-          "actor": "후람(장인)"
-        },
-        {
-          "action": "lift",
-          "duration": 1.5,
-          "actor": "후람(장인)"
-        },
-        {
-          "action": "place",
-          "duration": 1.8,
-          "actor": "후람(장인)"
-        },
-        {
-          "action": "hammer",
-          "duration": 1.5,
-          "actor": "후람(장인)"
-        },
-        {
-          "action": "inspect",
-          "duration": 1.2,
-          "actor": "후람(장인)"
-        }
-      ],
       "duration": 8.2,
       "support": null,
-      "ref": "역대하 4:1-22",
+      "ref": "역대하 4:1-10",
       "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
     },
     "48": {
@@ -2170,41 +2144,9 @@
       "effect": "speech",
       "emotion": "determined",
       "prop": "scene-marker",
-      "beats": [
-        {
-          "action": "listen",
-          "duration": 1,
-          "actor": "야하시엘"
-        },
-        {
-          "action": "turn",
-          "duration": 1.2,
-          "actor": "야하시엘"
-        },
-        {
-          "action": "speak",
-          "duration": 1.5,
-          "actor": "야하시엘"
-        },
-        {
-          "action": "point",
-          "duration": 1.8,
-          "actor": "야하시엘"
-        },
-        {
-          "action": "listen",
-          "duration": 1.5,
-          "actor": "야하시엘"
-        },
-        {
-          "action": "lower",
-          "duration": 1.2,
-          "actor": "야하시엘"
-        }
-      ],
       "duration": 8.2,
       "support": null,
-      "ref": "역대하 20:1-20",
+      "ref": "역대하 20:14-20",
       "source": "본문 기반 재구성 · 세부 자세와 시간은 창작"
     },
     "82": {
@@ -2248,6 +2190,12 @@
     },
     "95": {
       "mode": "illustration"
+    },
+    "96": {
+      "mode": "reconstruction"
+    },
+    "97": {
+      "mode": "reconstruction"
     }
   },
   "est": {
