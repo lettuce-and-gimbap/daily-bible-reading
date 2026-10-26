@@ -1327,6 +1327,390 @@
     },
     "121": {
       "mode": "reconstruction"
+    },
+    "122": {
+      "mode": "illustration"
+    },
+    "123": {
+      "mode": "illustration"
+    },
+    "124": {
+      "mode": "reconstruction"
+    },
+    "125": {
+      "mode": "reconstruction",
+      "lead": "아브람",
+      "target": "롯",
+      "setting": "road",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "아브람",
+          "duration": 1
+        },
+        {
+          "action": "signal",
+          "actor": "아브람",
+          "duration": 1.2
+        },
+        {
+          "action": "run",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "strike",
+          "actor": "아브람",
+          "duration": 1.8
+        },
+        {
+          "action": "gather",
+          "actor": "아브람",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "아브람",
+          "duration": 1.2
+        }
+      ]
+    },
+    "126": {
+      "mode": "reconstruction"
+    },
+    "127": {
+      "mode": "symbolic",
+      "lead": "하나님",
+      "target": "아브라함",
+      "setting": "vision",
+      "effect": "light",
+      "beats": [
+        {
+          "action": "stand",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "speak",
+          "actor": "하나님",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "receive",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
+    },
+    "128": {
+      "mode": "symbolic",
+      "lead": "하나님",
+      "target": "아브라함",
+      "setting": "tent",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "point",
+          "actor": "하나님",
+          "duration": 1
+        },
+        {
+          "action": "listen",
+          "actor": "아브라함",
+          "duration": 1.2
+        },
+        {
+          "action": "show",
+          "actor": "하나님",
+          "duration": 1.5
+        },
+        {
+          "action": "bow",
+          "actor": "아브라함",
+          "duration": 1.8
+        },
+        {
+          "action": "hold",
+          "actor": "아브라함",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "아브라함",
+          "duration": 1.2
+        }
+      ]
+    },
+    "129": {
+      "mode": "symbolic"
+    },
+    "130": {
+      "mode": "reconstruction"
+    },
+    "131": {
+      "mode": "illustration"
+    },
+    "132": {
+      "mode": "reconstruction",
+      "lead": "롯",
+      "target": "두 천사",
+      "setting": "road",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "startle",
+          "actor": "롯",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "롯",
+          "duration": 1.2
+        },
+        {
+          "action": "hold",
+          "actor": "롯의 아내",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "롯의 딸들",
+          "duration": 1.8
+        },
+        {
+          "action": "point",
+          "actor": "두 천사",
+          "duration": 1.5
+        },
+        {
+          "action": "run",
+          "actor": "롯",
+          "duration": 1.2
+        }
+      ]
+    },
+    "133": {
+      "mode": "illustration"
+    },
+    "134": {
+      "mode": "reconstruction"
+    },
+    "135": {
+      "mode": "illustration"
+    },
+    "161": {
+      "mode": "reconstruction"
+    },
+    "143": {
+      "mode": "symbolic",
+      "lead": "야곱",
+      "target": "하나님",
+      "setting": "river",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "carry",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "brace",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "하나님",
+          "duration": 1.8
+        },
+        {
+          "action": "kneel",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
+    },
+    "144": {
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "target": "디나",
+      "setting": "home",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "turn",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "speak",
+          "actor": "하몰",
+          "duration": 1.5
+        },
+        {
+          "action": "hold",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "speak",
+          "actor": "시므온",
+          "duration": 1.5
+        },
+        {
+          "action": "look",
+          "actor": "레위",
+          "duration": 1.2
+        }
+      ]
+    },
+    "147": {
+      "mode": "reconstruction",
+      "lead": "요셉",
+      "target": "르우벤",
+      "setting": "egypt",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "look",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "point",
+          "actor": "요셉",
+          "duration": 1.2
+        },
+        {
+          "action": "listen",
+          "actor": "르우벤",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "mourn",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "signal",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
+    },
+    "150": {
+      "mode": "reconstruction",
+      "lead": "요셉",
+      "target": "베냐민",
+      "setting": "meal",
+      "effect": "none",
+      "beats": [
+        {
+          "action": "signal",
+          "actor": "요셉",
+          "duration": 1
+        },
+        {
+          "action": "look",
+          "actor": "요셉",
+          "duration": 1.2
+        },
+        {
+          "action": "receive",
+          "actor": "베냐민",
+          "duration": 1.5
+        },
+        {
+          "action": "turn",
+          "actor": "요셉",
+          "duration": 1.8
+        },
+        {
+          "action": "walk",
+          "actor": "요셉",
+          "duration": 1.5
+        },
+        {
+          "action": "place",
+          "actor": "요셉",
+          "duration": 1.2
+        }
+      ]
+    },
+    "151": {
+      "mode": "reconstruction",
+      "lead": "야곱",
+      "target": "요셉",
+      "setting": "home",
+      "effect": "symbol",
+      "beats": [
+        {
+          "action": "listen",
+          "actor": "야곱",
+          "duration": 1
+        },
+        {
+          "action": "startle",
+          "actor": "야곱",
+          "duration": 1.2
+        },
+        {
+          "action": "inspect",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "smile",
+          "actor": "야곱",
+          "duration": 1.8
+        },
+        {
+          "action": "rise",
+          "actor": "야곱",
+          "duration": 1.5
+        },
+        {
+          "action": "walk",
+          "actor": "야곱",
+          "duration": 1.2
+        }
+      ]
     }
   },
   "exo": {

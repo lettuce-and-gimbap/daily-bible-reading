@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1383);assert.equal(c.curatedSupplementalScenes,669);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),669);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1423);assert.equal(c.curatedSupplementalScenes,709);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),709);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -244,7 +244,7 @@ test('시편 표제의 역사적 배경과 포로·회복 노래의 사건을 �
 
 
 test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-gen-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,47);
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-gen-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,87);
  for(const title of ["동산에서 쫓겨나 생명나무 길이 막히다","하나님과 동행한 에녹이 사라지다","노아가 방주와 생명 보존의 지시를 받다","아브람과 맺은 언약을 표징으로 보이다","광야의 샘에서 하갈을 만나 약속하다","라헬이 드라빔을 숨기고 야곱이 라반과 언약하다","애굽에서 다시 만난 야곱과 요셉","야곱이 에브라임과 므낫세를 축복하다","요셉이 형들을 용서하고 야곱을 장사하다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
@@ -638,3 +638,45 @@ test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 
 test('요셉의 꿈 해석과 유다의 간청이 기존 장면 사이에 누락 없이 이어진다',()=>{const d=JSON.parse(fs.readFileSync(root+'gen.json'));for(const [chapter,end]of [[40,23],[41,57],[44,34]])for(let v=1;v<=end;v++)assert.equal(d.scenes.filter(s=>s.chapter===chapter&&!s.id.startsWith('ot-voice-')&&s.verseNumbers.includes(v)).length,1,'gen '+chapter+':'+v);const a=d.scenes.find(s=>s.ref==='창세기 44:18-34');assert.equal(a.animation.lead,'유다');assert.equal(a.animation.target,'요셉');});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>["노아의 아들들에게서 여러 민족이 퍼지다", "셈의 계보가 데라와 아브람에게 이어지다", "기근 속에 사래를 누이라고 말하다", "전쟁 중 롯이 사로잡히고 아브람이 뒤쫓다", "아브람이 소돔 왕의 재물을 사양하다", "아브람이 아브라함으로 불리고 언약을 듣다", "언약의 표로 할례를 명하시다", "사라의 아들과 이스마엘의 복을 약속하다", "아브라함이 소돔을 위해 거듭 간구하다", "에서의 후손과 에돔의 족장들을 기록하다"].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,10);
+ for(const title of ["노아의 아들들에게서 여러 민족이 퍼지다","셈의 계보가 데라와 아브람에게 이어지다","기근 속에 사래를 누이라고 말하다","전쟁 중 롯이 사로잡히고 아브람이 뒤쫓다","아브람이 소돔 왕의 재물을 사양하다","아브람이 아브라함으로 불리고 언약을 듣다","언약의 표로 할례를 명하시다","사라의 아들과 이스마엘의 복을 약속하다","아브라함이 소돔을 위해 거듭 간구하다","에서의 후손과 에돔의 족장들을 기록하다"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>["롯과 가족이 소돔을 떠나 소알로 피하다", "롯의 딸들이 모압과 암몬의 조상이 되다", "아비멜렉이 꿈에서 경고를 듣고 사라를 돌려보내다",  "약속의 아들 이삭이 태어나 사라가 웃다", "약속을 다시 듣고 나홀의 집안 소식을 받다", "사라를 막벨라에 장사하고 매장지를 확정하다"].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,6);
+ for(const title of ["롯과 가족이 소돔을 떠나 소알로 피하다","롯의 딸들이 모압과 암몬의 조상이 되다","아비멜렉이 꿈에서 경고를 듣고 사라를 돌려보내다","약속의 아들 이삭이 태어나 사라가 웃다","약속을 다시 듣고 나홀의 집안 소식을 받다","사라를 막벨라에 장사하고 매장지를 확정하다"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>["이스마엘의 열두 지도자와 계보", "흉년 속 이삭이 그랄에 머물라는 약속을 듣다", "야곱이 길을 지켜 주시면 섬기겠다고 서원하다", "합환채를 두고 레아와 라헬이 흥정하다", "야곱이 라헬과 레아의 동의를 얻어 고향으로 떠나다", "야곱이 에서의 귀환 소식을 듣고 두려워하다", "야곱이 밤새 씨름하고 이스라엘이라는 이름을 받다", "디나의 피해 뒤 하몰과 세겜이 혼인을 요구하다", "시므온과 레위의 보복 뒤 야곱이 아들들을 책망하다", "라헬이 베냐민을 낳고 죽어 야곱이 묘비를 세우다"].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,10);
+ for(const title of ["이스마엘의 열두 지도자와 계보","흉년 속 이삭이 그랄에 머물라는 약속을 듣다","야곱이 길을 지켜 주시면 섬기겠다고 서원하다","합환채를 두고 레아와 라헬이 흥정하다","야곱이 라헬과 레아의 동의를 얻어 고향으로 떠나다","야곱이 에서의 귀환 소식을 듣고 두려워하다","야곱이 밤새 씨름하고 이스라엘이라는 이름을 받다","디나의 피해 뒤 하몰과 세겜이 혼인을 요구하다","시므온과 레위의 보복 뒤 야곱이 아들들을 책망하다","라헬이 베냐민을 낳고 죽어 야곱이 묘비를 세우다"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>["요셉이 형들을 시험하고 시므온을 남기다", "돌아온 형들이 자루의 돈과 야곱의 걱정을 전하다", "유다가 베냐민의 안전을 책임지고 출발을 설득하다", "요셉이 형제들을 맞아 베냐민과 식탁을 나누다", "야곱이 요셉의 생존 소식에 기운을 되찾다", "야곱의 가족이 바로에게 인사하고 고센에 정착하다", "요셉이 기근 중 종자와 세금 규정을 세우다", "야곱이 요셉에게 조상 묘지에 묻히겠다는 맹세를 받다", "야곱이 르우벤·시므온·레위와 유다의 앞날을 말하다", "야곱이 아들들을 축복하고 조상 묘지에 묻히길 부탁하다"].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,10);
+ for(const title of ["요셉이 형들을 시험하고 시므온을 남기다","돌아온 형들이 자루의 돈과 야곱의 걱정을 전하다","유다가 베냐민의 안전을 책임지고 출발을 설득하다","요셉이 형제들을 맞아 베냐민과 식탁을 나누다","야곱이 요셉의 생존 소식에 기운을 되찾다","야곱의 가족이 바로에게 인사하고 고센에 정착하다","요셉이 기근 중 종자와 세금 규정을 세우다","야곱이 요셉에게 조상 묘지에 묻히겠다는 맹세를 받다","야곱이 르우벤·시므온·레위와 유다의 앞날을 말하다","야곱이 아들들을 축복하고 조상 묘지에 묻히길 부탁하다"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>["세 방문객이 소돔을 향하고 아브라함이 배웅하다", "유다의 집안에 아들들이 태어나고 다말이 기다리다", "다말이 증거를 내보이고 쌍둥이를 낳다", "야곱의 아들들과 손자들이 애굽으로 내려간 명단"].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,4);
+ for(const title of ["세 방문객이 소돔을 향하고 아브라함이 배웅하다","유다의 집안에 아들들이 태어나고 다말이 기다리다","다말이 증거를 내보이고 쌍둥이를 낳다","야곱의 아들들과 손자들이 애굽으로 내려간 명단"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('gen 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'gen.json')),added=data.scenes.filter(s=>['사라를 막벨라에 장사하고 매장지를 확정하다'].includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/gen.json'));assert.equal(added.length,1);
+ for(const title of ["사라를 막벨라에 장사하고 매장지를 확정하다"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});

@@ -3882,6 +3882,1437 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"journey","lead":"야곱","target":"유다","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-10-0",
+      "code": "gen",
+      "chapter": 10,
+      "title": "노아의 아들들에게서 여러 민족이 퍼지다",
+      "actors": [
+        "노아",
+        "셈",
+        "함",
+        "야벳"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 10:1-32",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 노아의 아들들의 계보와 여러 민족·땅·언어가 펼쳐지는 족보 장면이에요."
+      ],
+      "study": "노아의 아들들의 계보와 여러 민족·땅·언어가 펼쳐지는 족보 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"노아","target":"셈","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"노아"},{"action":"listen","duration":1.2,"actor":"노아"},{"action":"cradle","duration":1.5,"actor":"노아"},{"action":"smile","duration":1.8,"actor":"노아"},{"action":"bless","duration":1.5,"actor":"노아"},{"action":"bow","duration":1.2,"actor":"노아"}],"duration":8.2,"support":null,"ref":"창세기 10:1-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-11-2",
+      "code": "gen",
+      "chapter": 11,
+      "title": "셈의 계보가 데라와 아브람에게 이어지다",
+      "actors": [
+        "셈",
+        "데라",
+        "아브람",
+        "롯"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 11:10-32",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 셈에서 데라와 아브람으로 이어지는 계보를 이름과 세대의 흐름으로 보여줘요. 사래에게 자녀가 없다는 서술과 데라 일행의 하란 정착도 포함해요."
+      ],
+      "study": "셈에서 데라와 아브람으로 이어지는 계보를 이름과 세대의 흐름으로 보여줘요. 사래에게 자녀가 없다는 서술과 데라 일행의 하란 정착도 포함해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"셈","target":"데라","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"셈"},{"action":"listen","duration":1.2,"actor":"셈"},{"action":"cradle","duration":1.5,"actor":"셈"},{"action":"smile","duration":1.8,"actor":"셈"},{"action":"bless","duration":1.5,"actor":"셈"},{"action":"bow","duration":1.2,"actor":"셈"}],"duration":8.2,"support":null,"ref":"창세기 11:10-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-12-0",
+      "code": "gen",
+      "chapter": 12,
+      "title": "기근 속에 사래를 누이라고 말하다",
+      "actors": [
+        "아브람",
+        "사래",
+        "바로"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 12:10-16",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기근을 피해 애굽으로 간 아브람이 두려움에 사래를 누이라고 말하고, 사래가 궁으로 불려가며 아브람은 재물을 받는 장면이에요."
+      ],
+      "study": "기근을 피해 애굽으로 간 아브람이 두려움에 사래를 누이라고 말하고, 사래가 궁으로 불려가며 아브람은 재물을 받는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"아브람","target":"사래","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"speak","duration":1.2,"actor":"아브람"},{"action":"point","duration":1.5,"actor":"아브람"},{"action":"listen","duration":1.8,"actor":"아브람"},{"action":"lower","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 12:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-14-0",
+      "code": "gen",
+      "chapter": 14,
+      "title": "전쟁 중 롯이 사로잡히고 아브람이 뒤쫓다",
+      "actors": [
+        "아브람",
+        "롯",
+        "그돌라오멜",
+        "마므레"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 14:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 왕들의 전쟁과 롯의 포로 소식을 듣고 동맹자들과 함께 추격해 사람과 재물을 되찾는 장면이에요. 전투는 비유혈의 이동·대치로 표현해요."
+      ],
+      "study": "왕들의 전쟁과 롯의 포로 소식을 듣고 동맹자들과 함께 추격해 사람과 재물을 되찾는 장면이에요. 전투는 비유혈의 이동·대치로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"아브람","target":"롯","mode":"reconstruction","setting":"road","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","actor":"아브람","duration":1},{"action":"signal","actor":"아브람","duration":1.2},{"action":"run","actor":"아브람","duration":1.5},{"action":"strike","actor":"아브람","duration":1.8},{"action":"gather","actor":"아브람","duration":1.5},{"action":"walk","actor":"아브람","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 14:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-14-1",
+      "code": "gen",
+      "chapter": 14,
+      "title": "아브람이 소돔 왕의 재물을 사양하다",
+      "actors": [
+        "아브람",
+        "소돔 왕",
+        "아넬",
+        "마므레"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 14:21-24",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아브람이 되찾은 사람들은 돌려주되 동맹자들의 몫과 젊은이들의 식량은 구분하고, 자신은 소돔 왕의 재물을 받지 않겠다고 맹세해요."
+      ],
+      "study": "아브람이 되찾은 사람들은 돌려주되 동맹자들의 몫과 젊은이들의 식량은 구분하고, 자신은 소돔 왕의 재물을 받지 않겠다고 맹세해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"아브람","target":"소돔 왕","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브람"},{"action":"kneel","duration":1.2,"actor":"아브람"},{"action":"lift","duration":1.5,"actor":"아브람"},{"action":"pray","duration":1.8,"actor":"아브람"},{"action":"pray","duration":1.5,"actor":"아브람"},{"action":"bow","duration":1.2,"actor":"아브람"}],"duration":8.2,"support":null,"ref":"창세기 14:21-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-17-0",
+      "code": "gen",
+      "chapter": 17,
+      "title": "아브람이 아브라함으로 불리고 언약을 듣다",
+      "actors": [
+        "하나님",
+        "아브라함"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 17:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 언약과 후손을 말씀하시며 아브람의 이름을 아브라함으로 바꾸고 땅의 약속을 되풀이해요."
+      ],
+      "study": "하나님이 언약과 후손을 말씀하시며 아브람의 이름을 아브라함으로 바꾸고 땅의 약속을 되풀이해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"하나님","target":"아브라함","mode":"symbolic","setting":"vision","effect":"light","emotion":"determined","prop":"scene-marker","beats":[{"action":"stand","actor":"하나님","duration":1},{"action":"speak","actor":"하나님","duration":1.2},{"action":"listen","actor":"아브라함","duration":1.5},{"action":"bow","actor":"아브라함","duration":1.8},{"action":"receive","actor":"아브라함","duration":1.5},{"action":"look","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 17:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-17-1",
+      "code": "gen",
+      "chapter": 17,
+      "title": "언약의 표로 할례를 명하시다",
+      "actors": [
+        "하나님",
+        "아브라함",
+        "이스마엘"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 17:9-14",
+      "verseNumbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 언약의 표로 할례를 명하는 대목이에요. 상처나 수술은 직접 그리지 않고, 말씀을 듣고 표징을 확인하는 상징 동작으로 표현해요."
+      ],
+      "study": "언약의 표로 할례를 명하는 대목이에요. 상처나 수술은 직접 그리지 않고, 말씀을 듣고 표징을 확인하는 상징 동작으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"하나님","target":"아브라함","mode":"symbolic","setting":"tent","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"point","actor":"하나님","duration":1},{"action":"listen","actor":"아브라함","duration":1.2},{"action":"show","actor":"하나님","duration":1.5},{"action":"bow","actor":"아브라함","duration":1.8},{"action":"hold","actor":"아브라함","duration":1.5},{"action":"look","actor":"아브라함","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 17:9-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-17-2",
+      "code": "gen",
+      "chapter": 17,
+      "title": "사라의 아들과 이스마엘의 복을 약속하다",
+      "actors": [
+        "하나님",
+        "아브라함",
+        "사라",
+        "이스마엘"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 17:15-22",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사래의 이름이 사라로 바뀌고 이삭의 출생과 언약이 약속돼요. 아브라함은 웃고 이스마엘을 위해 간구하며, 이스마엘에게도 복이 약속돼요."
+      ],
+      "study": "사래의 이름이 사라로 바뀌고 이삭의 출생과 언약이 약속돼요. 아브라함은 웃고 이스마엘을 위해 간구하며, 이스마엘에게도 복이 약속돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"하나님","target":"아브라함","mode":"symbolic","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"turn","duration":1.2,"actor":"하나님"},{"action":"speak","duration":1.5,"actor":"하나님"},{"action":"point","duration":1.8,"actor":"하나님"},{"action":"listen","duration":1.5,"actor":"하나님"},{"action":"lower","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 17:15-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-18-0",
+      "code": "gen",
+      "chapter": 18,
+      "title": "아브라함이 소돔을 위해 거듭 간구하다",
+      "actors": [
+        "하나님",
+        "아브라함"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 18:20-33",
+      "verseNumbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아브라함이 의인과 악인을 함께 멸하지 말아 달라고 묻고, 오십에서 열까지 수를 낮추어 간구해요. 하나님의 응답을 한 차례씩 듣는 협상형 기도 장면이에요."
+      ],
+      "study": "아브라함이 의인과 악인을 함께 멸하지 말아 달라고 묻고, 오십에서 열까지 수를 낮추어 간구해요. 하나님의 응답을 한 차례씩 듣는 협상형 기도 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"하나님","target":"아브라함","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"kneel","duration":1.2,"actor":"하나님"},{"action":"lift","duration":1.5,"actor":"하나님"},{"action":"pray","duration":1.8,"actor":"하나님"},{"action":"pray","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 18:20-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-36-0",
+      "code": "gen",
+      "chapter": 36,
+      "title": "에서의 후손과 에돔의 족장들을 기록하다",
+      "actors": [
+        "에서"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 36:1-43",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 에서와 에돔의 계보, 족장과 왕들의 목록을 족보 두루마리와 지역 표식으로 설명하는 장면이에요. 구체적인 전쟁·대면 행동을 덧붙이지 않아요."
+      ],
+      "study": "에서와 에돔의 계보, 족장과 왕들의 목록을 족보 두루마리와 지역 표식으로 설명하는 장면이에요. 구체적인 전쟁·대면 행동을 덧붙이지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"에서","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"에서"},{"action":"listen","duration":1.2,"actor":"에서"},{"action":"cradle","duration":1.5,"actor":"에서"},{"action":"smile","duration":1.8,"actor":"에서"},{"action":"bless","duration":1.5,"actor":"에서"},{"action":"bow","duration":1.2,"actor":"에서"}],"duration":8.2,"support":null,"ref":"창세기 36:1-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-19-0",
+      "code": "gen",
+      "chapter": 19,
+      "title": "롯과 가족이 소돔을 떠나 소알로 피하다",
+      "actors": [
+        "롯",
+        "롯의 아내",
+        "롯의 딸들",
+        "두 천사"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 19:12-22",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 두 천사의 경고와 재촉, 망설이는 롯 가족의 대화, 가까운 소알로 피하게 해 달라는 요청을 담아요. 재난 묘사는 상징적 빛과 연기로 제한해요."
+      ],
+      "study": "두 천사의 경고와 재촉, 망설이는 롯 가족의 대화, 가까운 소알로 피하게 해 달라는 요청을 담아요. 재난 묘사는 상징적 빛과 연기로 제한해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"depart","lead":"롯","target":"두 천사","mode":"reconstruction","setting":"road","effect":"symbol","emotion":"determined","prop":"scene-marker","beats":[{"action":"startle","actor":"롯","duration":1},{"action":"turn","actor":"롯","duration":1.2},{"action":"hold","actor":"롯의 아내","duration":1.5},{"action":"walk","actor":"롯의 딸들","duration":1.8},{"action":"point","actor":"두 천사","duration":1.5},{"action":"run","actor":"롯","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 19:12-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-19-1",
+      "code": "gen",
+      "chapter": 19,
+      "title": "롯의 딸들이 모압과 암몬의 조상이 되다",
+      "actors": [
+        "롯",
+        "롯의 아내",
+        "롯의 딸들",
+        "아브라함"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 19:30-38",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 산으로 옮긴 롯 가족과 모압·벤암미의 계보를 절제된 서술 장면으로 보여줘요. 성폭력과 근친 장면은 재현하지 않고 본문의 비극적 결과만 서술해요."
+      ],
+      "study": "산으로 옮긴 롯 가족과 모압·벤암미의 계보를 절제된 서술 장면으로 보여줘요. 성폭력과 근친 장면은 재현하지 않고 본문의 비극적 결과만 서술해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"롯","target":"롯의 아내","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"롯"},{"action":"listen","duration":1.2,"actor":"롯"},{"action":"cradle","duration":1.5,"actor":"롯"},{"action":"smile","duration":1.8,"actor":"롯"},{"action":"bless","duration":1.5,"actor":"롯"},{"action":"bow","duration":1.2,"actor":"롯"}],"duration":8.2,"support":null,"ref":"창세기 19:30-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-20-0",
+      "code": "gen",
+      "chapter": 20,
+      "title": "아비멜렉이 꿈에서 경고를 듣고 사라를 돌려보내다",
+      "actors": [
+        "하나님",
+        "아비멜렉",
+        "아브라함",
+        "사라"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 20:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 사라를 데려간 아비멜렉이 꿈의 경고를 듣고 아브라함을 책망하며 사라를 돌려보내요. 인물의 해명과 공개적인 책임 추궁을 중심으로 보여줘요."
+      ],
+      "study": "사라를 데려간 아비멜렉이 꿈의 경고를 듣고 아브라함을 책망하며 사라를 돌려보내요. 인물의 해명과 공개적인 책임 추궁을 중심으로 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"하나님","target":"아비멜렉","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"하나님"},{"action":"speak","duration":1.2,"actor":"하나님"},{"action":"point","duration":1.5,"actor":"하나님"},{"action":"listen","duration":1.8,"actor":"하나님"},{"action":"lower","duration":1.5,"actor":"하나님"},{"action":"bow","duration":1.2,"actor":"하나님"}],"duration":8.2,"support":null,"ref":"창세기 20:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-21-0",
+      "code": "gen",
+      "chapter": 21,
+      "title": "약속의 아들 이삭이 태어나 사라가 웃다",
+      "actors": [
+        "아브라함",
+        "사라",
+        "이삭"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 21:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 약속된 때에 이삭이 태어나고 이름을 얻으며, 사라가 기쁨의 웃음을 말해요. 할례는 수술 모습 없이 언약 표지를 확인하는 상징 표현으로 처리해요."
+      ],
+      "study": "약속된 때에 이삭이 태어나고 이름을 얻으며, 사라가 기쁨의 웃음을 말해요. 할례는 수술 모습 없이 언약 표지를 확인하는 상징 표현으로 처리해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"birth","lead":"아브라함","target":"사라","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"아브라함"},{"action":"listen","duration":1.2,"actor":"아브라함"},{"action":"cradle","duration":1.5,"actor":"아브라함"},{"action":"smile","duration":1.8,"actor":"아브라함"},{"action":"bless","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 21:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-22-0",
+      "code": "gen",
+      "chapter": 22,
+      "title": "약속을 다시 듣고 나홀의 집안 소식을 받다",
+      "actors": [
+        "아브라함",
+        "하나님",
+        "나홀",
+        "리브가"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 22:15-24",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아브라함에게 후손과 복의 약속이 다시 주어지고, 브엘세바로 돌아온 뒤 나홀의 자손과 리브가의 출생 소식을 듣는 장면이에요."
+      ],
+      "study": "아브라함에게 후손과 복의 약속이 다시 주어지고, 브엘세바로 돌아온 뒤 나홀의 자손과 리브가의 출생 소식을 듣는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"아브라함","target":"하나님","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"아브라함"},{"action":"listen","duration":1.2,"actor":"아브라함"},{"action":"cradle","duration":1.5,"actor":"아브라함"},{"action":"smile","duration":1.8,"actor":"아브라함"},{"action":"bless","duration":1.5,"actor":"아브라함"},{"action":"bow","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 22:15-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-25-1",
+      "code": "gen",
+      "chapter": 25,
+      "title": "이스마엘의 열두 지도자와 계보",
+      "actors": [
+        "이스마엘"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 25:12-18",
+      "verseNumbers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하갈의 아들 이스마엘의 열두 아들과 그들의 거주 지역, 이스마엘의 죽음을 기록하는 계보 장면이에요."
+      ],
+      "study": "하갈의 아들 이스마엘의 열두 아들과 그들의 거주 지역, 이스마엘의 죽음을 기록하는 계보 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"이스마엘","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"이스마엘"},{"action":"listen","duration":1.2,"actor":"이스마엘"},{"action":"cradle","duration":1.5,"actor":"이스마엘"},{"action":"smile","duration":1.8,"actor":"이스마엘"},{"action":"bless","duration":1.5,"actor":"이스마엘"},{"action":"bow","duration":1.2,"actor":"이스마엘"}],"duration":8.2,"support":null,"ref":"창세기 25:12-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-26-0",
+      "code": "gen",
+      "chapter": 26,
+      "title": "흉년 속 이삭이 그랄에 머물라는 약속을 듣다",
+      "actors": [
+        "이삭",
+        "하나님",
+        "아비멜렉"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 26:1-6",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기근에 그랄로 간 이삭에게 하나님이 애굽으로 가지 말고 머물라고 하시며 아브라함에게 하신 언약을 되풀이해요."
+      ],
+      "study": "기근에 그랄로 간 이삭에게 하나님이 애굽으로 가지 말고 머물라고 하시며 아브라함에게 하신 언약을 되풀이해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"이삭","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이삭"},{"action":"turn","duration":1.2,"actor":"이삭"},{"action":"speak","duration":1.5,"actor":"이삭"},{"action":"point","duration":1.8,"actor":"이삭"},{"action":"listen","duration":1.5,"actor":"이삭"},{"action":"lower","duration":1.2,"actor":"이삭"}],"duration":8.2,"support":null,"ref":"창세기 26:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-28-0",
+      "code": "gen",
+      "chapter": 28,
+      "title": "야곱이 길을 지켜 주시면 섬기겠다고 서원하다",
+      "actors": [
+        "야곱",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 28:20-22",
+      "verseNumbers": [
+        20,
+        21,
+        22
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱이 동행과 보호, 귀환을 구하며 돌기둥 앞에서 하나님께 서원해요."
+      ],
+      "study": "야곱이 동행과 보호, 귀환을 구하며 돌기둥 앞에서 하나님께 서원해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"야곱","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"kneel","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pray","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 28:20-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-30-0",
+      "code": "gen",
+      "chapter": 30,
+      "title": "합환채를 두고 레아와 라헬이 흥정하다",
+      "actors": [
+        "레아",
+        "라헬",
+        "야곱",
+        "르우벤"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 30:14-24",
+      "verseNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 르우벤이 가져온 합환채를 두고 자매가 다투고, 레아의 출산과 라헬의 요셉 출산으로 이어져요. 합환채가 임신을 일으킨다고 단정하지 않아요."
+      ],
+      "study": "르우벤이 가져온 합환채를 두고 자매가 다투고, 레아의 출산과 라헬의 요셉 출산으로 이어져요. 합환채가 임신을 일으킨다고 단정하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"trade","lead":"레아","target":"라헬","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"scene-marker","beats":[{"action":"inspect","duration":1,"actor":"레아"},{"action":"grasp","duration":1.2,"actor":"레아"},{"action":"weigh","duration":1.5,"actor":"레아"},{"action":"place","duration":1.8,"actor":"레아"},{"action":"extend","duration":1.5,"actor":"레아"},{"action":"receive","duration":1.2,"actor":"레아"}],"duration":8.2,"support":null,"ref":"창세기 30:14-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-31-1",
+      "code": "gen",
+      "chapter": 31,
+      "title": "야곱이 라헬과 레아의 동의를 얻어 고향으로 떠나다",
+      "actors": [
+        "야곱",
+        "라헬",
+        "레아",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 31:1-16",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 라반 집안의 불편한 기색과 하나님의 귀향 명령을 들은 야곱이 아내들을 부르고, 두 자매가 떠나는 데 동의해요."
+      ],
+      "study": "라반 집안의 불편한 기색과 하나님의 귀향 명령을 들은 야곱이 아내들을 부르고, 두 자매가 떠나는 데 동의해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"depart","lead":"야곱","target":"라헬","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"gather","duration":1.2,"actor":"야곱"},{"action":"carry","duration":1.5,"actor":"야곱"},{"action":"walk","duration":1.8,"actor":"야곱"},{"action":"walk","duration":1.5,"actor":"야곱"},{"action":"look","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 31:1-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-32-0",
+      "code": "gen",
+      "chapter": 32,
+      "title": "야곱이 에서의 귀환 소식을 듣고 두려워하다",
+      "actors": [
+        "야곱",
+        "에서"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 32:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 마하나임의 경험 뒤 야곱이 에서에게 사자를 보내고, 사백 명이 온다는 소식에 가족과 가축을 두 무리로 나누어요."
+      ],
+      "study": "마하나임의 경험 뒤 야곱이 에서에게 사자를 보내고, 사백 명이 온다는 소식에 가족과 가축을 두 무리로 나누어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"야곱","target":"에서","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"speak","duration":1.2,"actor":"야곱"},{"action":"point","duration":1.5,"actor":"야곱"},{"action":"listen","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 32:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-32-1",
+      "code": "gen",
+      "chapter": 32,
+      "title": "야곱이 밤새 씨름하고 이스라엘이라는 이름을 받다",
+      "actors": [
+        "야곱",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 32:22-32",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 가족을 건넨 뒤 홀로 남은 야곱이 밤새 씨름하고 이스라엘이라는 이름과 축복을 받아 절뚝이며 떠나요. 상대의 정체는 본문처럼 신비에 남겨요."
+      ],
+      "study": "가족을 건넨 뒤 홀로 남은 야곱이 밤새 씨름하고 이스라엘이라는 이름과 축복을 받아 절뚝이며 떠나요. 상대의 정체는 본문처럼 신비에 남겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"야곱","target":"하나님","mode":"symbolic","setting":"river","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"carry","actor":"야곱","duration":1},{"action":"walk","actor":"야곱","duration":1.2},{"action":"brace","actor":"야곱","duration":1.5},{"action":"hold","actor":"하나님","duration":1.8},{"action":"kneel","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 32:22-32","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-34-0",
+      "code": "gen",
+      "chapter": 34,
+      "title": "디나의 피해 뒤 하몰과 세겜이 혼인을 요구하다",
+      "actors": [
+        "디나",
+        "세겜",
+        "하몰",
+        "야곱"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 34:1-17",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 디나에게 가해진 폭력을 묘사하거나 낭만화하지 않고, 피해 사실을 들은 가족의 침묵과 분노, 하몰·세겜의 요구, 형제들의 기만적 조건을 결과 중심으로 설명해요."
+      ],
+      "study": "디나에게 가해진 폭력을 묘사하거나 낭만화하지 않고, 피해 사실을 들은 가족의 침묵과 분노, 하몰·세겜의 요구, 형제들의 기만적 조건을 결과 중심으로 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"디나","mode":"reconstruction","setting":"home","effect":"symbol","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"turn","actor":"야곱","duration":1.2},{"action":"speak","actor":"하몰","duration":1.5},{"action":"hold","actor":"야곱","duration":1.8},{"action":"speak","actor":"시므온","duration":1.5},{"action":"look","actor":"레위","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 34:1-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-34-1",
+      "code": "gen",
+      "chapter": 34,
+      "title": "시므온과 레위의 보복 뒤 야곱이 아들들을 책망하다",
+      "actors": [
+        "야곱",
+        "시므온",
+        "레위",
+        "디나"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 34:25-31",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 시므온과 레위의 기습과 노략을 영웅적으로 재현하지 않고 절제된 상징으로 나타내요. 야곱의 두려움과 형제들의 항변을 함께 담아요."
+      ],
+      "study": "시므온과 레위의 기습과 노략을 영웅적으로 재현하지 않고 절제된 상징으로 나타내요. 야곱의 두려움과 형제들의 항변을 함께 담아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"야곱","target":"시므온","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"},{"action":"kneel","duration":1.5,"actor":"야곱"},{"action":"cover-mouth","duration":1.8,"actor":"야곱"},{"action":"mourn","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 34:25-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-35-0",
+      "code": "gen",
+      "chapter": 35,
+      "title": "라헬이 베냐민을 낳고 죽어 야곱이 묘비를 세우다",
+      "actors": [
+        "라헬",
+        "야곱",
+        "베냐민"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 35:16-21",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 라헬의 난산과 죽음은 비그래픽하게 처리하고, 베냐민의 출생·이름과 야곱이 무덤 표지를 세운 뒤 다시 길을 떠나는 장면을 담아요."
+      ],
+      "study": "라헬의 난산과 죽음은 비그래픽하게 처리하고, 베냐민의 출생·이름과 야곱이 무덤 표지를 세운 뒤 다시 길을 떠나는 장면을 담아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"birth","lead":"라헬","target":"야곱","mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"라헬"},{"action":"listen","duration":1.2,"actor":"라헬"},{"action":"cradle","duration":1.5,"actor":"라헬"},{"action":"smile","duration":1.8,"actor":"라헬"},{"action":"bless","duration":1.5,"actor":"라헬"},{"action":"bow","duration":1.2,"actor":"라헬"}],"duration":8.2,"support":null,"ref":"창세기 35:16-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-42-0",
+      "code": "gen",
+      "chapter": 42,
+      "title": "요셉이 형들을 시험하고 시므온을 남기다",
+      "actors": [
+        "요셉",
+        "르우벤",
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 42:7-25",
+      "verseNumbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉은 형들을 알아보고 정탐꾼이라 몰아세우며 막내를 데려오라 요구해요. 형들은 과거의 죄를 돌아보고, 요셉은 울음을 감춘 뒤 시므온을 남겨요."
+      ],
+      "study": "요셉은 형들을 알아보고 정탐꾼이라 몰아세우며 막내를 데려오라 요구해요. 형들은 과거의 죄를 돌아보고, 요셉은 울음을 감춘 뒤 시므온을 남겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"요셉","target":"르우벤","mode":"reconstruction","setting":"egypt","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"look","actor":"요셉","duration":1},{"action":"point","actor":"요셉","duration":1.2},{"action":"listen","actor":"르우벤","duration":1.5},{"action":"turn","actor":"요셉","duration":1.8},{"action":"mourn","actor":"요셉","duration":1.5},{"action":"signal","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 42:7-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-42-1",
+      "code": "gen",
+      "chapter": 42,
+      "title": "돌아온 형들이 자루의 돈과 야곱의 걱정을 전하다",
+      "actors": [
+        "르우벤",
+        "야곱",
+        "베냐민",
+        "시므온"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 42:26-38",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 형들이 자루에서 돈을 발견하고 야곱에게 애굽 총리의 요구를 전해요. 르우벤이 책임지겠다고 하지만 야곱은 베냐민을 보내지 않겠다고 해요."
+      ],
+      "study": "형들이 자루에서 돈을 발견하고 야곱에게 애굽 총리의 요구를 전해요. 르우벤이 책임지겠다고 하지만 야곱은 베냐민을 보내지 않겠다고 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"르우벤","target":"야곱","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"르우벤"},{"action":"speak","duration":1.2,"actor":"르우벤"},{"action":"point","duration":1.5,"actor":"르우벤"},{"action":"listen","duration":1.8,"actor":"르우벤"},{"action":"lower","duration":1.5,"actor":"르우벤"},{"action":"bow","duration":1.2,"actor":"르우벤"}],"duration":8.2,"support":null,"ref":"창세기 42:26-38","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-43-0",
+      "code": "gen",
+      "chapter": 43,
+      "title": "유다가 베냐민의 안전을 책임지고 출발을 설득하다",
+      "actors": [
+        "유다",
+        "야곱",
+        "베냐민",
+        "르우벤"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 43:1-14",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 기근이 깊어지자 유다가 베냐민의 안전을 담보하겠다고 약속하고, 야곱은 선물과 되돌아온 돈을 챙겨 베냐민과 함께 다시 길을 떠나게 해요."
+      ],
+      "study": "기근이 깊어지자 유다가 베냐민의 안전을 담보하겠다고 약속하고, 야곱은 선물과 되돌아온 돈을 챙겨 베냐민과 함께 다시 길을 떠나게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"유다","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"kneel","duration":1.2,"actor":"유다"},{"action":"lift","duration":1.5,"actor":"유다"},{"action":"pray","duration":1.8,"actor":"유다"},{"action":"pray","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 43:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-43-1",
+      "code": "gen",
+      "chapter": 43,
+      "title": "요셉이 형제들을 맞아 베냐민과 식탁을 나누다",
+      "actors": [
+        "요셉",
+        "베냐민",
+        "유다",
+        "청지기"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 43:26-34",
+      "verseNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉 앞에서 형제들이 절하고 베냐민을 소개해요. 요셉은 감정을 감추기 어려워 자리를 잠시 비운 뒤 돌아와 함께 식사해요."
+      ],
+      "study": "요셉 앞에서 형제들이 절하고 베냐민을 소개해요. 요셉은 감정을 감추기 어려워 자리를 잠시 비운 뒤 돌아와 함께 식사해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"요셉","target":"베냐민","mode":"reconstruction","setting":"meal","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"signal","actor":"요셉","duration":1},{"action":"look","actor":"요셉","duration":1.2},{"action":"receive","actor":"베냐민","duration":1.5},{"action":"turn","actor":"요셉","duration":1.8},{"action":"walk","actor":"요셉","duration":1.5},{"action":"place","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 43:26-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-45-1",
+      "code": "gen",
+      "chapter": 45,
+      "title": "야곱이 요셉의 생존 소식에 기운을 되찾다",
+      "actors": [
+        "야곱",
+        "요셉",
+        "바로"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 45:25-28",
+      "verseNumbers": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 형들이 가나안에 돌아와 요셉이 살아 있다는 소식을 전하고, 야곱은 처음엔 믿지 못하다가 수레를 보고 마음을 회복해요."
+      ],
+      "study": "형들이 가나안에 돌아와 요셉이 살아 있다는 소식을 전하고, 야곱은 처음엔 믿지 못하다가 수레를 보고 마음을 회복해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"reconcile","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"home","effect":"symbol","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","actor":"야곱","duration":1},{"action":"startle","actor":"야곱","duration":1.2},{"action":"inspect","actor":"야곱","duration":1.5},{"action":"smile","actor":"야곱","duration":1.8},{"action":"rise","actor":"야곱","duration":1.5},{"action":"walk","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 45:25-28","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-47-0",
+      "code": "gen",
+      "chapter": 47,
+      "title": "야곱의 가족이 바로에게 인사하고 고센에 정착하다",
+      "actors": [
+        "요셉",
+        "야곱",
+        "바로",
+        "요셉의 형제 다섯"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 47:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉이 형제와 아버지를 바로에게 소개하고, 목축을 생업으로 밝힌 가족은 고센에 정착해요. 야곱은 바로의 질문에 자신의 나그네 세월을 말하고 복을 빌어요."
+      ],
+      "study": "요셉이 형제와 아버지를 바로에게 소개하고, 목축을 생업으로 밝힌 가족은 고센에 정착해요. 야곱은 바로의 질문에 자신의 나그네 세월을 말하고 복을 빌어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"gather","duration":1.2,"actor":"요셉"},{"action":"carry","duration":1.5,"actor":"요셉"},{"action":"walk","duration":1.8,"actor":"요셉"},{"action":"walk","duration":1.5,"actor":"요셉"},{"action":"look","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-47-1",
+      "code": "gen",
+      "chapter": 47,
+      "title": "요셉이 기근 중 종자와 세금 규정을 세우다",
+      "actors": [
+        "요셉",
+        "애굽 백성"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 47:23-27",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요셉이 씨앗을 나누고 수확의 오분의 일을 왕에게 바치도록 정해요. 백성을 살린 정책과 이후 고센에서 번성한 이스라엘 가족을 함께 설명해요."
+      ],
+      "study": "요셉이 씨앗을 나누고 수확의 오분의 일을 왕에게 바치도록 정해요. 백성을 살린 정책과 이후 고센에서 번성한 이스라엘 가족을 함께 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"요셉","target":"애굽 백성","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"turn","duration":1.2,"actor":"요셉"},{"action":"speak","duration":1.5,"actor":"요셉"},{"action":"point","duration":1.8,"actor":"요셉"},{"action":"listen","duration":1.5,"actor":"요셉"},{"action":"lower","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 47:23-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-47-2",
+      "code": "gen",
+      "chapter": 47,
+      "title": "야곱이 요셉에게 조상 묘지에 묻히겠다는 맹세를 받다",
+      "actors": [
+        "야곱",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 47:28-31",
+      "verseNumbers": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 죽음이 가까워진 야곱이 애굽이 아닌 조상의 묘지에 묻어 달라고 부탁하고 요셉은 맹세해요. 야곱은 침상 머리에서 하나님께 경배해요."
+      ],
+      "study": "죽음이 가까워진 야곱이 애굽이 아닌 조상의 묘지에 묻어 달라고 부탁하고 요셉은 맹세해요. 야곱은 침상 머리에서 하나님께 경배해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"petition","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"kneel","duration":1.2,"actor":"야곱"},{"action":"lift","duration":1.5,"actor":"야곱"},{"action":"pray","duration":1.8,"actor":"야곱"},{"action":"pray","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 47:28-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-49-0",
+      "code": "gen",
+      "chapter": 49,
+      "title": "야곱이 르우벤·시므온·레위와 유다의 앞날을 말하다",
+      "actors": [
+        "야곱",
+        "르우벤",
+        "시므온",
+        "유다"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 49:1-7",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱이 아들들을 모아 르우벤의 장자권 상실과 시므온·레위의 폭력을 돌아보고, 지파의 미래를 말하기 시작해요."
+      ],
+      "study": "야곱이 아들들을 모아 르우벤의 장자권 상실과 시므온·레위의 폭력을 돌아보고, 지파의 미래를 말하기 시작해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"르우벤","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"turn","duration":1.2,"actor":"야곱"},{"action":"speak","duration":1.5,"actor":"야곱"},{"action":"point","duration":1.8,"actor":"야곱"},{"action":"listen","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 49:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-49-1",
+      "code": "gen",
+      "chapter": 49,
+      "title": "야곱이 아들들을 축복하고 조상 묘지에 묻히길 부탁하다",
+      "actors": [
+        "야곱",
+        "유다",
+        "요셉",
+        "베냐민"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 49:13-33",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 야곱이 열두 아들에게 각기 말하고, 조상의 묘지에 자신을 묻어 달라고 당부한 뒤 생을 마쳐요. 동물 비유와 미래 묘사는 상징적으로 표현해요."
+      ],
+      "study": "야곱이 열두 아들에게 각기 말하고, 조상의 묘지에 자신을 묻어 달라고 당부한 뒤 생을 마쳐요. 동물 비유와 미래 묘사는 상징적으로 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"explain","lead":"야곱","target":"유다","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"turn","duration":1.2,"actor":"야곱"},{"action":"speak","duration":1.5,"actor":"야곱"},{"action":"point","duration":1.8,"actor":"야곱"},{"action":"listen","duration":1.5,"actor":"야곱"},{"action":"lower","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 49:13-33","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-18-1",
+      "code": "gen",
+      "chapter": 18,
+      "title": "세 방문객이 소돔을 향하고 아브라함이 배웅하다",
+      "actors": [
+        "아브라함",
+        "하나님"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 18:16-19",
+      "verseNumbers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 방문객들이 소돔으로 향하고 아브라함이 배웅해요. 하나님이 아브라함의 부르심과 후손에게 정의와 의의 길을 가르칠 책임을 말씀하시는 장면이에요."
+      ],
+      "study": "방문객들이 소돔으로 향하고 아브라함이 배웅해요. 하나님이 아브라함의 부르심과 후손에게 정의와 의의 길을 가르칠 책임을 말씀하시는 장면이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"journey","lead":"아브라함","target":"하나님","mode":"reconstruction","setting":"road","effect":"journey","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"아브라함"},{"action":"gather","duration":1.2,"actor":"아브라함"},{"action":"carry","duration":1.5,"actor":"아브라함"},{"action":"walk","duration":1.8,"actor":"아브라함"},{"action":"walk","duration":1.5,"actor":"아브라함"},{"action":"look","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 18:16-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-38-0",
+      "code": "gen",
+      "chapter": 38,
+      "title": "유다의 집안에 아들들이 태어나고 다말이 기다리다",
+      "actors": [
+        "유다",
+        "다말",
+        "엘",
+        "오난"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 38:1-11",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다의 혼인과 아들들의 출생, 다말과 엘의 혼인, 두 아들의 죽음 뒤 셀라가 자랄 때까지 기다리라는 약속을 요약해요. 성적 행위나 죽음의 장면은 재현하지 않아요."
+      ],
+      "study": "유다의 혼인과 아들들의 출생, 다말과 엘의 혼인, 두 아들의 죽음 뒤 셀라가 자랄 때까지 기다리라는 약속을 요약해요. 성적 행위나 죽음의 장면은 재현하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"유다","target":"다말","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"유다"},{"action":"listen","duration":1.2,"actor":"유다"},{"action":"cradle","duration":1.5,"actor":"유다"},{"action":"smile","duration":1.8,"actor":"유다"},{"action":"bless","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:1-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-38-1",
+      "code": "gen",
+      "chapter": 38,
+      "title": "다말이 증거를 내보이고 쌍둥이를 낳다",
+      "actors": [
+        "유다",
+        "다말",
+        "베레스",
+        "세라"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 38:24-30",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 유다가 다말을 처벌하려 하자 다말이 물건으로 책임을 드러내고, 유다가 자신의 잘못을 인정해요. 뒤이어 쌍둥이 베레스와 세라의 출생을 절제된 방식으로 보여줘요."
+      ],
+      "study": "유다가 다말을 처벌하려 하자 다말이 물건으로 책임을 드러내고, 유다가 자신의 잘못을 인정해요. 뒤이어 쌍둥이 베레스와 세라의 출생을 절제된 방식으로 보여줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"report","lead":"유다","target":"다말","mode":"reconstruction","setting":"court","effect":"speech","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"유다"},{"action":"speak","duration":1.2,"actor":"유다"},{"action":"point","duration":1.5,"actor":"유다"},{"action":"listen","duration":1.8,"actor":"유다"},{"action":"lower","duration":1.5,"actor":"유다"},{"action":"bow","duration":1.2,"actor":"유다"}],"duration":8.2,"support":null,"ref":"창세기 38:24-30","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-46-2",
+      "code": "gen",
+      "chapter": 46,
+      "title": "야곱의 아들들과 손자들이 애굽으로 내려간 명단",
+      "actors": [
+        "야곱",
+        "요셉",
+        "르우벤",
+        "유다"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 46:8-27",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 애굽으로 옮겨가는 야곱 집안의 자손 명단을 지파별 계보로 펼쳐 보여줘요. 본문에 적힌 인원 집계가 서로 다른 방식으로 표현되는 점은 별도 설명 없이 단정적으로 합산하지 않아요."
+      ],
+      "study": "애굽으로 옮겨가는 야곱 집안의 자손 명단을 지파별 계보로 펼쳐 보여줘요. 본문에 적힌 인원 집계가 서로 다른 방식으로 표현되는 점은 별도 설명 없이 단정적으로 합산하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"genealogy","lead":"야곱","target":"요셉","mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"야곱"},{"action":"listen","duration":1.2,"actor":"야곱"},{"action":"cradle","duration":1.5,"actor":"야곱"},{"action":"smile","duration":1.8,"actor":"야곱"},{"action":"bless","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 46:8-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-gen-extra-23-0",
+      "code": "gen",
+      "chapter": 23,
+      "title": "사라를 막벨라에 장사하고 매장지를 확정하다",
+      "actors": [
+        "아브라함",
+        "사라",
+        "에브론",
+        "헷 족속"
+      ],
+      "object": "scene-marker",
+      "ref": "창세기 23:17-20",
+      "verseNumbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 막벨라 밭과 굴의 소유가 공적으로 확정되고 아브라함이 사라를 그곳에 장사해요. 매장 절차는 경건하고 비그래픽하게 표현해요."
+      ],
+      "study": "막벨라 밭과 굴의 소유가 공적으로 확정되고 아브라함이 사라를 그곳에 장사해요. 매장 절차는 경건하고 비그래픽하게 표현해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"lament","lead":"아브라함","target":"사라","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"},{"action":"kneel","duration":1.5,"actor":"아브라함"},{"action":"cover-mouth","duration":1.8,"actor":"아브라함"},{"action":"mourn","duration":1.5,"actor":"아브라함"},{"action":"lower","duration":1.2,"actor":"아브라함"}],"duration":8.2,"support":null,"ref":"창세기 23:17-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
