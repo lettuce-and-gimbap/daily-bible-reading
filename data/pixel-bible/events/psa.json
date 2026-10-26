@@ -360,7 +360,7 @@
       "id": "ot-psa-105-2",
       "code": "psa",
       "chapter": 105,
-      "title": "모세와 열 재앙",
+      "title": "모세와 아론을 보내 재앙을 보이시다",
       "actors": [
         "모세",
         "아론"
@@ -382,9 +382,9 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 애굽이 이스라엘을 미워하자 하나님이 모세와 아론을 보내 재앙들을 내리셨어요. 결국 백성을 은과 금과 함께 이끌어 내셨어요."
+        "해설: 하나님은 모세와 아론을 보내 애굽에서 표적을 보이세요. 시인은 어둠과 물의 변화, 벌레와 우박과 메뚜기, 장자의 죽음을 회고하며 하나님의 능력을 노래해요."
       ],
-      "study": "애굽이 이스라엘을 미워하자 하나님이 모세와 아론을 보내 재앙들을 내리셨어요. 결국 백성을 은과 금과 함께 이끌어 내셨어요.",
+      "study": "하나님은 모세와 아론을 보내 애굽에서 표적을 보이세요. 시인은 어둠과 물의 변화, 벌레와 우박과 메뚜기, 장자의 죽음을 회고하며 하나님의 능력을 노래해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
@@ -821,28 +821,15 @@
       "id": "ot-psa-extra-09",
       "code": "psa",
       "chapter": 105,
-      "title": "모세와 아론을 통한 출애굽과 광야의 돌보심",
+      "title": "출애굽 뒤 광야의 돌보심과 땅의 선물",
       "actors": [
         "모세",
         "아론",
         "바로"
       ],
       "object": "water-supply",
-      "ref": "시편 105:24-45",
+      "ref": "시편 105:37-45",
       "verseNumbers": [
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
         37,
         38,
         39,
@@ -855,13 +842,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 시인은 애굽의 재앙, 출애굽, 광야에서의 돌보심과 땅에 이른 일을 찬양의 언어로 되짚어요."
+        "해설: 시인은 은과 금을 가지고 나온 출애굽과 구름과 불, 양식과 물로 이어진 광야의 돌보심을 찬양해요. 약속하신 땅의 선물이 율법을 따르는 삶으로 이어짐을 회고해요."
       ],
-      "study": "시인은 애굽의 재앙, 출애굽, 광야에서의 돌보심과 땅에 이른 일을 찬양의 언어로 되짚어요.",
+      "study": "시인은 은과 금을 가지고 나온 출애굽과 구름과 불, 양식과 물로 이어진 광야의 돌보심을 찬양해요. 약속하신 땅의 선물이 율법을 따르는 삶으로 이어짐을 회고해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "시가 묘사하는 역사적 회고와 비유를 구분하고, 표현은 상징 애니메이션으로 보여 줘요. 세부 동작은 연출이에요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"모세","target":"아론","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"read","duration":1.2,"actor":"모세"},{"action":"look","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"시편 105:24-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"symbolic","lead":"모세","target":"아론","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"water-supply","beats":[{"action":"listen","duration":1,"actor":"모세"},{"action":"read","duration":1.2,"actor":"모세"},{"action":"look","duration":1.5,"actor":"모세"},{"action":"point","duration":1.8,"actor":"모세"},{"action":"listen","duration":1.5,"actor":"모세"},{"action":"bow","duration":1.2,"actor":"모세"}],"duration":8.2,"support":null,"ref":"시편 105:37-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-psa-extra-10",
@@ -1537,6 +1524,30 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"lament","lead":"포로들","target":"사로잡은 자들","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"포로들"},{"action":"lower","duration":1.2,"actor":"포로들"},{"action":"kneel","duration":1.5,"actor":"포로들"},{"action":"cover-mouth","duration":1.8,"actor":"포로들"},{"action":"mourn","duration":1.5,"actor":"포로들"},{"action":"lower","duration":1.2,"actor":"포로들"}],"duration":8.2,"support":null,"ref":"시편 137:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-psa-extra-105-0",
+      "code": "psa",
+      "chapter": 105,
+      "title": "애굽에서 번성한 백성이 미움을 받다",
+      "actors": [
+        "바로"
+      ],
+      "object": "scene-marker",
+      "ref": "시편 105:24-25",
+      "verseNumbers": [
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 백성이 번성하고 강해지지만 애굽의 대적들은 그들을 미워하고 교활하게 대해요. 시인의 역사 회고로 표현하며 특정 인물의 직접 발화로 옮기지 않아요."
+      ],
+      "study": "백성이 번성하고 강해지지만 애굽의 대적들은 그들을 미워하고 교활하게 대해요. 시인의 역사 회고로 표현하며 특정 인물의 직접 발화로 옮기지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"바로","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"바로"},{"action":"read","duration":1.2,"actor":"바로"},{"action":"look","duration":1.5,"actor":"바로"},{"action":"point","duration":1.8,"actor":"바로"},{"action":"listen","duration":1.5,"actor":"바로"},{"action":"bow","duration":1.2,"actor":"바로"}],"duration":8.2,"support":null,"ref":"시편 105:24-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
