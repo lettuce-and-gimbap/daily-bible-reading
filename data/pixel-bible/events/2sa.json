@@ -1590,7 +1590,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"praise","lead":"다윗","target":null,"mode":"reconstruction","setting":"courtyard","effect":"music","emotion":"joy","prop":"shield","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"praise","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"shield","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-23-1",
@@ -2892,6 +2892,436 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"mourn","lead":"리스바","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"리스바"},{"action":"lower","duration":1.2,"actor":"리스바"},{"action":"kneel","duration":1.5,"actor":"리스바"},{"action":"cover-mouth","duration":1.8,"actor":"리스바"},{"action":"mourn","duration":1.5,"actor":"리스바"},{"action":"lower","duration":1.2,"actor":"리스바"}],"duration":8.2,"support":null,"ref":"사무엘하 21:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-1-01",
+      "code": "2sa",
+      "chapter": 1,
+      "title": "사울과 요나단을 애도하는 다윗의 노래",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 1:19-27",
+      "verseNumbers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 블레셋이 즐거워하지 못하게 이 소식을 숨기자 하고, 길보아 산을 향해 비도 이슬도 내리지 말라고 탄식해요. 사울과 요나단의 용맹을 기리고, 요나단을 향한 사랑을 고백해요. 처음과 끝에 '두 용사가 엎드러졌도다'가 되풀이돼요."
+      ],
+      "study": "블레셋이 즐거워하지 못하게 이 소식을 숨기자 하고, 길보아 산을 향해 비도 이슬도 내리지 말라고 탄식해요. 사울과 요나단의 용맹을 기리고, 요나단을 향한 사랑을 고백해요. 처음과 끝에 '두 용사가 엎드러졌도다'가 되풀이돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁과 폭력의 결과를 직접적·그래픽하게 그리지 않고 인물의 반응과 상징적 배치로 나타내요.",
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 1:19-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-3-01",
+      "code": "2sa",
+      "chapter": 3,
+      "title": "다윗의 금식과 백성의 이해",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 3:35-39",
+      "verseNumbers": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 해 지기 전에는 먹지 않겠다고 맹세하자 백성은 아브넬의 죽음이 왕의 뜻이 아님을 알고 기뻐해요. 다윗은 스루야의 아들들을 다루기 어려운 약함을 털어놓고 갚으시는 일은 여호와께 맡겨요."
+      ],
+      "study": "다윗이 해 지기 전에는 먹지 않겠다고 맹세하자 백성은 아브넬의 죽음이 왕의 뜻이 아님을 알고 기뻐해요. 다윗은 스루야의 아들들을 다루기 어려운 약함을 털어놓고 갚으시는 일은 여호와께 맡겨요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁과 폭력의 결과를 직접적·그래픽하게 그리지 않고 인물의 반응과 상징적 배치로 나타내요.",
+      "animation": {"version":2,"motif":"birth","lead":"다윗","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"listen","duration":1.2,"actor":"다윗"},{"action":"cradle","duration":1.5,"actor":"다윗"},{"action":"smile","duration":1.8,"actor":"다윗"},{"action":"bless","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 3:35-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-4-01",
+      "code": "2sa",
+      "chapter": 4,
+      "title": "머리를 바친 두 형제",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 4:8",
+      "verseNumbers": [
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 두 사람은 헤브론에서 다윗에게 이스보셋의 머리를 바치며 여호와께서 왕의 원수를 갚으셨다고 말해요. 상을 기대한 말이에요."
+      ],
+      "study": "두 사람은 헤브론에서 다윗에게 이스보셋의 머리를 바치며 여호와께서 왕의 원수를 갚으셨다고 말해요. 상을 기대한 말이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁과 폭력의 결과를 직접적·그래픽하게 그리지 않고 인물의 반응과 상징적 배치로 나타내요.",
+      "animation": {"version":2,"motif":"invest","lead":"다윗","target":null,"mode":"illustration","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 4:8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-5-01",
+      "code": "2sa",
+      "chapter": 5,
+      "title": "예루살렘에서 태어난 자녀들",
+      "actors": [
+        "다윗"
+      ],
+      "object": "house",
+      "ref": "사무엘하 5:13-16",
+      "verseNumbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 예루살렘에서 아내와 첩을 더 두어 삼무아, 소밥, 나단, 솔로몬 등 열한 아들이 태어나요."
+      ],
+      "study": "다윗이 예루살렘에서 아내와 첩을 더 두어 삼무아, 소밥, 나단, 솔로몬 등 열한 아들이 태어나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 인물과 사건의 흐름을 설명하는 장면이에요.",
+      "animation": {"version":2,"motif":"birth","lead":"다윗","target":null,"mode":"reconstruction","setting":"chamber","effect":"family","emotion":"gentle","prop":"house","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"listen","duration":1.2,"actor":"다윗"},{"action":"cradle","duration":1.5,"actor":"다윗"},{"action":"smile","duration":1.8,"actor":"다윗"},{"action":"bless","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:13-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-5-02",
+      "code": "2sa",
+      "chapter": 5,
+      "title": "뽕나무 숲 뒤의 승리",
+      "actors": [
+        "다윗"
+      ],
+      "object": "tree",
+      "ref": "사무엘하 5:22-25",
+      "verseNumbers": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 블레셋이 다시 올라오자 다윗이 또 묻고, 이번에는 뒤로 돌아 뽕나무 숲 맞은편에서 행군 소리가 들리면 치라는 말씀대로 해요. 게바에서 게셀까지 블레셋을 쳐요."
+      ],
+      "study": "블레셋이 다시 올라오자 다윗이 또 묻고, 이번에는 뒤로 돌아 뽕나무 숲 맞은편에서 행군 소리가 들리면 치라는 말씀대로 해요. 게바에서 게셀까지 블레셋을 쳐요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 인물과 사건의 흐름을 설명하는 장면이에요.",
+      "animation": {"version":2,"motif":"victory","lead":"다윗","target":null,"mode":"reconstruction","setting":"hills","effect":"signal","emotion":"determined","prop":"tree","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"signal","duration":1.2,"actor":"다윗"},{"action":"brace","duration":1.5,"actor":"다윗"},{"action":"run","duration":1.8,"actor":"다윗"},{"action":"halt","duration":1.5,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 5:22-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-13-01",
+      "code": "2sa",
+      "chapter": 13,
+      "title": "미움과 쫓겨남",
+      "actors": [
+        "다말",
+        "암논"
+      ],
+      "object": "robe",
+      "ref": "사무엘하 13:15-19",
+      "verseNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 암논이 전보다 더 큰 미움으로 다말을 내쫓고 문을 걸어 잠가요. 다말은 공주의 채색옷을 찢고 머리에 흙을 뒤집어쓴 채 울부짖으며 걸어가요."
+      ],
+      "study": "암논이 전보다 더 큰 미움으로 다말을 내쫓고 문을 걸어 잠가요. 다말은 공주의 채색옷을 찢고 머리에 흙을 뒤집어쓴 채 울부짖으며 걸어가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁과 폭력의 결과를 직접적·그래픽하게 그리지 않고 인물의 반응과 상징적 배치로 나타내요.",
+      "animation": {"version":2,"motif":"mourn","lead":"다말","target":"암논","mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"robe","beats":[{"action":"startle","duration":1,"actor":"다말"},{"action":"lower","duration":1.2,"actor":"다말"},{"action":"kneel","duration":1.5,"actor":"다말"},{"action":"cover-mouth","duration":1.8,"actor":"다말"},{"action":"mourn","duration":1.5,"actor":"다말"},{"action":"lower","duration":1.2,"actor":"다말"}],"duration":8.2,"support":null,"ref":"사무엘하 13:15-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-14-01",
+      "code": "2sa",
+      "chapter": 14,
+      "title": "압살롬의 외모와 가족",
+      "actors": [
+        "압살롬"
+      ],
+      "object": "house",
+      "ref": "사무엘하 14:25-27",
+      "verseNumbers": [
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 압살롬은 온 이스라엘에서 가장 칭찬받는 외모였고, 해마다 깎는 머리털이 매우 무거웠어요. 아들 셋과 딸 다말이 있었어요."
+      ],
+      "study": "압살롬은 온 이스라엘에서 가장 칭찬받는 외모였고, 해마다 깎는 머리털이 매우 무거웠어요. 아들 셋과 딸 다말이 있었어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "전쟁과 폭력의 결과를 직접적·그래픽하게 그리지 않고 인물의 반응과 상징적 배치로 나타내요.",
+      "animation": {"version":2,"motif":"birth","lead":"압살롬","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"house","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"listen","duration":1.2,"actor":"압살롬"},{"action":"cradle","duration":1.5,"actor":"압살롬"},{"action":"smile","duration":1.8,"actor":"압살롬"},{"action":"bless","duration":1.5,"actor":"압살롬"},{"action":"bow","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 14:25-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-20-01",
+      "code": "2sa",
+      "chapter": 20,
+      "title": "다윗의 신하 목록",
+      "actors": [
+        "다윗",
+        "요압"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 20:23-26",
+      "verseNumbers": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요압은 군대, 브나야는 그렛과 블렛 사람, 아도니람은 노동 감독, 여호사밧은 사관, 스와는 서기관, 사독과 아비아달은 제사장, 이라는 다윗의 대신이 돼요."
+      ],
+      "study": "요압은 군대, 브나야는 그렛과 블렛 사람, 아도니람은 노동 감독, 여호사밧은 사관, 스와는 서기관, 사독과 아비아달은 제사장, 이라는 다윗의 대신이 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문에 기록된 인물과 사건의 흐름을 설명하는 장면이에요.",
+      "animation": {"version":2,"motif":"instruct","lead":"다윗","target":"요압","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 20:23-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-01",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "부르짖음을 들으신 하나님",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:5-7",
+      "verseNumbers": [
+        5,
+        6,
+        7
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 죽음의 물결과 올무가 에워싸자 다윗이 부르짖었고, 하나님이 성전에서 소리를 들으셨어요."
+      ],
+      "study": "죽음의 물결과 올무가 에워싸자 다윗이 부르짖었고, 하나님이 성전에서 소리를 들으셨어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:5-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-02",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "폭풍처럼 내려오신 하나님",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:8-20",
+      "verseNumbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 땅이 흔들리고 불과 연기, 어둠과 우렛소리 가운데 하나님이 내려오셔서 많은 물에서 다윗을 건져 넓은 곳으로 이끄세요. 다윗을 기뻐하셨기 때문이에요."
+      ],
+      "study": "땅이 흔들리고 불과 연기, 어둠과 우렛소리 가운데 하나님이 내려오셔서 많은 물에서 다윗을 건져 넓은 곳으로 이끄세요. 다윗을 기뻐하셨기 때문이에요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"cloud","lead":"다윗","target":null,"mode":"illustration","setting":"hills","effect":"cloud","emotion":"surprised","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.8,"actor":"다윗"},{"action":"lower","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:8-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-03",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "신실한 이에게 신실하신 분",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:21-31",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 다윗이 하나님의 길을 지켰다고 고백하고, 하나님이 자비로운 이에게 자비롭고 교만한 자를 낮추신다고 노래해요. 하나님은 어둠을 밝히시고 그분의 말씀은 흠 없는 방패예요."
+      ],
+      "study": "다윗이 하나님의 길을 지켰다고 고백하고, 하나님이 자비로운 이에게 자비롭고 교만한 자를 낮추신다고 노래해요. 하나님은 어둠을 밝히시고 그분의 말씀은 흠 없는 방패예요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:21-31","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-04",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "싸우게 하시는 하나님",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:32-43",
+      "verseNumbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 하나님이 다윗의 발을 사슴처럼 하고 손을 가르쳐 싸우게 하셔서 원수를 이겨요. 원수들은 부르짖어도 구원받지 못했어요."
+      ],
+      "study": "하나님이 다윗의 발을 사슴처럼 하고 손을 가르쳐 싸우게 하셔서 원수를 이겨요. 원수들은 부르짖어도 구원받지 못했어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:32-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-05",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "으뜸으로 삼으심",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:44-46",
+      "verseNumbers": [
+        44,
+        45,
+        46
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 내 백성의 다툼에서 건지시고 여러 나라의 으뜸으로 삼으셔서 알지 못하던 이방 백성도 다윗을 섬기게 하세요."
+      ],
+      "study": "내 백성의 다툼에서 건지시고 여러 나라의 으뜸으로 삼으셔서 알지 못하던 이방 백성도 다윗을 섬기게 하세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"crown","lead":"다윗","target":null,"mode":"illustration","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:44-46","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-22-06",
+      "code": "2sa",
+      "chapter": 22,
+      "title": "찬양과 영원한 인자",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 22:47-51",
+      "verseNumbers": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 살아 계신 하나님을 높이고 이방 가운데서 감사하겠다고 다짐해요. 하나님은 다윗과 그 자손에게 영원히 인자를 베푸세요."
+      ],
+      "study": "살아 계신 하나님을 높이고 이방 가운데서 감사하겠다고 다짐해요. 하나님은 다윗과 그 자손에게 영원히 인자를 베푸세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"praise","lead":"다윗","target":null,"mode":"illustration","setting":"courtyard","effect":"music","emotion":"joy","prop":"scene-marker","beats":[{"action":"lift","duration":1,"actor":"다윗"},{"action":"sway","duration":1.2,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"sway","duration":1.8,"actor":"다윗"},{"action":"step","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 22:47-51","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-review-23-01",
+      "code": "2sa",
+      "chapter": 23,
+      "title": "삼십 용사 명단",
+      "actors": [
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 23:24-39",
+      "verseNumbers": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요압의 동생 아사헬부터 헷 사람 우리아까지, 여러 마을과 이방 출신 용사 이름이 기록되고 총수 서른일곱 명으로 끝나요."
+      ],
+      "study": "요압의 동생 아사헬부터 헷 사람 우리아까지, 여러 마을과 이방 출신 용사 이름이 기록되고 총수 서른일곱 명으로 끝나요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "시·계보의 비유와 사건 서술을 구분해 상징적으로 표현해요. 몸짓과 시간은 연출입니다.",
+      "animation": {"version":2,"motif":"genealogy","lead":"다윗","target":null,"mode":"illustration","setting":"chamber","effect":"family","emotion":"gentle","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"다윗"},{"action":"listen","duration":1.2,"actor":"다윗"},{"action":"cradle","duration":1.5,"actor":"다윗"},{"action":"smile","duration":1.8,"actor":"다윗"},{"action":"bless","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 23:24-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
