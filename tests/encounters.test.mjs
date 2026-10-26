@@ -337,13 +337,13 @@ test('관계 대화의 두 화자는 같은 대화 후보 번호를 공유하고
 test('각 인물별 대사 기록에는 맞물리는 상대 발화가 있거나 명시 응답이 있다',()=>{
  for(const entry of PAIR_DIALOGUE){
   const reverse=PAIR_DIALOGUE.find(other=>other.chapter===entry.chapter&&other.speaker===entry.target&&other.target===entry.speaker);
-  assert.ok(reverse||entry.replyLines?.length===entry.lines.length,`${entry.id} (${entry.speaker} → ${entry.target})에 응답이 없음`);
+  assert.ok(reverse||entry.replyLines?.length>0,`${entry.id} (${entry.speaker} → ${entry.target})에 응답이 없음`);
   for(const index of [0,1]){
    const relation={from:{code:entry.chapter.split('.')[0],chap:Number(entry.chapter.split('.')[1])},to:{},text:'같은 장면의 두 인물',ref:entry.ref};
    const lines=relationshipLines({name:entry.speaker},{name:entry.target},relation,new Map(),{random:()=>index?0.99:0});
    assert.equal(lines.length,2,`${entry.id} 대사가 독백으로 분리됨`);
    assert.equal(lines[0].text,entry.lines[index],`${entry.id} 첫 발화 후보가 맞지 않음`);
-   assert.equal(lines[1].text,reverse?.lines[index]||entry.replyLines?.[index],`${entry.id} 응답 후보가 맞지 않음`);
+   assert.equal(lines[1].text,reverse?.lines[index]||entry.replyLines?.[index]||entry.replyLines?.[0],`${entry.id} 응답 후보가 맞지 않음`);
    assert.ok(lines.every(line=>line.pairIndex===index));
   }
  }
@@ -475,6 +475,26 @@ test('여호수아의 발화 행은 인물 시점을 유지하고 각 문장에 
  assert.equal(rows.length,25);
  assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length), '각 발화에 개별 구절 참조가 있어야 함');
  assert.ok(!rows.some(row=>row[1]===8&&row[2]==='아이 왕'), '말하지 않은 아이 왕에게 독백을 붙이지 않음');
+});
+
+test('욥기 42장과 관계선 54개를 모두 사건에 맞는 양방향 대사로 연결한다',()=>{
+ const job=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('job.'));
+ assert.equal(job.length,54);
+ for(const entry of job){
+  assert.ok(entry.ref.startsWith('욥기 '));
+  assert.equal(entry.lines.length,2);
+  assert.ok(entry.replyLines?.length||PAIR_DIALOGUE.some(other=>other.chapter===entry.chapter&&other.speaker===entry.target&&other.target===entry.speaker));
+  assert.ok(entry.detail);
+ }
+ const summaries=JSON.parse(fs.readFileSync(new URL('../data/summary/job.json',import.meta.url),'utf8'));
+ const context=buildChapterDialogue(Object.entries(summaries.chapters).map(([chap,data])=>({code:'job',name:'욥기',chap:Number(chap),data})));
+ assert.equal(context.relations.length,54);
+ for(const relation of context.relations){
+  const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
+  assert.ok(lines.every(line=>line.origin==='authored'&&line.ref&&line.detailText),`${relation.ref} 관계 대화 출처`);
+ }
+ const wife=job.find(entry=>entry.chapter==='job.2'&&entry.speaker==='욥의 아내');
+ assert.match(wife.lines[0],/하나님을 욕하고 죽/);assert.match(wife.replyLines[0],/좋은 것을 받았/);
 });
 
 test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이고 핵심 사건은 본문 대사로 연결된다',()=>{

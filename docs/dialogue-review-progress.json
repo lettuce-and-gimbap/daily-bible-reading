@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "job",
-    "nextBook": "job",
-    "booksCompleted": 17,
+    "currentBook": "psa",
+    "nextBook": "psa",
+    "booksCompleted": 18,
     "completedBooks": [
       "gen",
       "exo",
@@ -314,11 +314,12 @@
       "2ch",
       "ezr",
       "neh",
-      "est"
+      "est",
+      "job"
     ],
-    "chaptersReviewed": 436,
-    "relationshipLinksReviewed": 2014,
-    "authoredPairEntriesReviewed": 256,
+    "chaptersReviewed": 478,
+    "relationshipLinksReviewed": 2068,
+    "authoredPairEntriesReviewed": 310,
     "allBooksStructuralAudit": {
       "books": 66,
       "chapters": 1189,
@@ -328,6 +329,6 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "창세기부터 에스더까지 17권의 관계·사건 대사 품질 재검토를 마쳤다. 436장, 관계선 2,014개, 등록 대화 256개를 확인했다. 에스더서에서는 모르드개와 에스더의 대화를 하닥이 전한 문답으로 구분했다. 에스더의 왕 앞에 나아가는 두려움, 모르드개의 민족 위기와 왕후의 사명에 대한 권면, 에스더의 금식 요청과 결단이 서로 이어지도록 문장을 고쳤다. 두 사람은 직접 만난 것이 아니므로 이를 자세히 보기에 명시했다. 에스더 10장 전체와 관계 연결 47개, 사건 대화 2개를 대조했으며 다음은 욥기다. 전체 구조 검사는 통과 상태이며 권별 품질 검토를 계속한다."
+    "statusNote": "창세기부터 에스더까지 완료한 17권에 이어 욥기 42장과 관계 후보 54개를 전수 검토했다. 욥의 아내와 욥의 실제 응답, 세 친구의 책망과 욥의 반박, 엘리후의 변론, 약자를 대하는 욥의 회고 등 관계선 54개 모두에 사건 맥락이 있는 양방향 대화를 연결했다. 본문에 직접 발화가 없는 방문·전언·가정적 비유는 실제 인용이 아니라는 점을 자세히 보기에서 분명히 밝혔다. 엘리바스와 빌닷의 인물 독백도 실제 상대에게 건네는 말로 고쳤다. 욥기 42장, 관계선 54개, 새로 작성한 대화 54개를 확인했으며 다음은 시편이다."
   }
 }
