@@ -585,7 +585,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"play","lead":"다윗","target":"아삽","mode":"reconstruction","setting":"chamber","effect":"music","emotion":"gentle","prop":"trumpet","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"strum","duration":1.5,"actor":"다윗"},{"action":"strum","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 16:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"play","lead":"아삽","target":"다윗","mode":"reconstruction","setting":"chamber","effect":"music","emotion":"gentle","prop":"cymbal","beats":[{"action":"grasp","duration":1,"actor":"아삽"},{"action":"lift","duration":1.2,"actor":"아삽"},{"action":"strike","duration":1.5,"actor":"아삽"},{"action":"strike","duration":1.8,"actor":"아삽"},{"action":"hold","duration":1.5,"actor":"아삽"},{"action":"lower","duration":1.2,"actor":"아삽"}],"duration":8.2,"support":null,"ref":"역대상 16:4-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ch-17-0",
@@ -1600,7 +1600,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"play","lead":"다윗","target":"아삽","mode":"reconstruction","setting":"chamber","effect":"music","emotion":"gentle","prop":"lyre","beats":[{"action":"grasp","duration":1,"actor":"다윗"},{"action":"lift","duration":1.2,"actor":"다윗"},{"action":"strum","duration":1.5,"actor":"다윗"},{"action":"strum","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 16:37-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"play","lead":"아삽","target":"다윗","mode":"reconstruction","setting":"chamber","effect":"music","emotion":"gentle","prop":"cymbal","beats":[{"action":"grasp","duration":1,"actor":"아삽"},{"action":"lift","duration":1.2,"actor":"아삽"},{"action":"strike","duration":1.5,"actor":"아삽"},{"action":"strike","duration":1.8,"actor":"아삽"},{"action":"hold","duration":1.5,"actor":"아삽"},{"action":"lower","duration":1.2,"actor":"아삽"}],"duration":8.2,"support":null,"ref":"역대상 16:37-43","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ch-extra-18",
