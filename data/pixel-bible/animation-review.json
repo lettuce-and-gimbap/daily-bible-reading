@@ -185,7 +185,7 @@
     },
     {
       "code": "2ch",
-      "payloadSha256": "bcfa1b9b83dba021a4062fdcf24d87f3d069cf6a0f465c74a5f18c0930ef7420",
+      "payloadSha256": "5f9f85604b312bdf2a110c75b54108c6b7a67bc437021e192893a5fb7d060cf3",
       "scenes": 82,
       "existing": 82,
       "restored": 0,
@@ -198,14 +198,15 @@
     },
     {
       "code": "ezr",
-      "payloadSha256": "c1c0a54967090d9fa33a1fd10cd7643b8e5af99abe6650a0019f71ac0b48e0f7",
-      "scenes": 13,
-      "existing": 13,
+      "payloadSha256": "8493d040efeaef06a63620e0ce70bf5319996381c77c10a403b72053402be64e",
+      "scenes": 24,
+      "existing": 24,
       "restored": 0,
       "corrected": 4,
-      "planned": 13,
+      "planned": 24,
       "modes": {
-        "reconstruction": 13
+        "reconstruction": 23,
+        "illustration": 1
       },
       "status": "authored-awaiting-browser-review"
     },
