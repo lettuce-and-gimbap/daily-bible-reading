@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "jas",
-    "nextBook": "1pe",
-    "booksCompleted": 59,
+    "currentBook": "1pe",
+    "nextBook": "2pe",
+    "booksCompleted": 60,
     "completedBooks": [
       "gen",
       "exo",
@@ -356,10 +356,11 @@
       "tit",
       "phm",
       "heb",
-      "jas"
+      "jas",
+      "1pe"
     ],
-    "chaptersReviewed": 1151,
-    "relationshipLinksReviewed": 3607,
+    "chaptersReviewed": 1156,
+    "relationshipLinksReviewed": 3625,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -370,9 +371,9 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "야고보서 5장 전체에서 시험과 인내, 행함이 있는 믿음, 혀와 지혜, 겸손, 부자에 대한 경고와 인내의 권면 5묶음·10문장에 절별 근거를 연결했다. 비유와 공동체 권면을 실제 인물 간 대화로 오인하지 않고 관계 연결 14개를 대조했다. 다음은 베드로전서다.",
+    "statusNote": "베드로전서 5장 전체에서 산 소망과 거룩한 삶, 그리스도의 본, 고난 중의 소망, 공동체 돌봄과 겸손에 관한 5묶음·10문장을 각 절에 연결했다. 편지의 수신자 권면과 베드로의 변화산 회고를 구분하고 관계선 18개를 살폈다. 다음은 베드로후서다.",
     "partialBookAudit": {
-      "book": "jas",
+      "book": "1pe",
       "chaptersScanned": 5,
       "chaptersWithAuthoredDialogueReviewed": 5,
       "authoredUtteranceGroupsReviewed": 5,
@@ -380,12 +381,12 @@
       "chapterDialogueAudit": 5,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 14,
+      "relationshipEdgesAudited": 18,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 14,
-      "relationshipLinksFound": 14,
+      "relationshipBasedPairLines": 18,
+      "relationshipLinksFound": 18,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 14,
+      "generatedLinksRemaining": 18,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
@@ -396,7 +397,7 @@
         4,
         5
       ],
-      "statusNote": "야고보서 5장 전체에서 시험과 인내, 행함이 있는 믿음, 혀와 지혜, 겸손, 부자에 대한 경고와 인내의 권면 5묶음·10문장에 절별 근거를 연결했다. 비유와 공동체 권면을 실제 인물 간 대화로 오인하지 않고 관계 연결 14개를 대조했다. 다음은 베드로전서다."
+      "statusNote": "베드로전서 5장 전체에서 산 소망과 거룩한 삶, 그리스도의 본, 고난 중의 소망, 공동체 돌봄과 겸손에 관한 5묶음·10문장을 각 절에 연결했다. 편지의 수신자 권면과 베드로의 변화산 회고를 구분하고 관계선 18개를 살폈다. 다음은 베드로후서다."
     },
     "currentBookStatus": "complete"
   }
