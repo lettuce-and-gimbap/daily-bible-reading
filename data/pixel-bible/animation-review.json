@@ -588,16 +588,27 @@
     },
     {
       "code": "lam",
-      "payloadSha256": "ae67a950657ae2b7b0327fec55a2272904ff5f80e205207d0635a864710b99da",
-      "scenes": 11,
-      "existing": 11,
+      "payloadSha256": "c5bfb68221dbf34c44888ee9837fef52d130d76f5cbb4a74bcb8d2edb5f1293c",
+      "scenes": 15,
+      "existing": 15,
       "restored": 0,
       "corrected": 0,
-      "planned": 11,
+      "planned": 15,
       "modes": {
-        "illustration": 11
+        "illustration": 15
       },
-      "status": "authored-awaiting-browser-review"
+      "status": "browser-verified",
+      "browser": {
+        "scenes": 15,
+        "sampledStatesPerScene": 7,
+        "renderPasses": [
+          "start",
+          "action",
+          "end",
+          "portrait"
+        ],
+        "errors": 0
+      }
     },
     {
       "code": "ezk",
