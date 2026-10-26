@@ -1955,7 +1955,7 @@
         "백성"
       ],
       "object": "scene-marker",
-      "ref": "역대상 29:10-20",
+      "ref": "역대상 29:10-19",
       "verseNumbers": [
         10,
         11,
@@ -1966,18 +1966,17 @@
         16,
         17,
         18,
-        19,
-        20
+        19
       ],
       "actions": {},
       "lines": [
-        "해설: 다윗과 회중은 예물과 나라의 모든 것이 하나님께 속했음을 고백하며 감사해요."
+        "해설: 다윗은 부와 권세와 성전 예물이 모두 하나님에게서 왔다고 감사해요. 회중의 마음을 지켜 주시고 솔로몬이 온전한 마음으로 성전을 세우게 해 달라고 기도해요."
       ],
-      "study": "다윗과 회중은 예물과 나라의 모든 것이 하나님께 속했음을 고백하며 감사해요.",
+      "study": "다윗은 부와 권세와 성전 예물이 모두 하나님에게서 왔다고 감사해요. 회중의 마음을 지켜 주시고 솔로몬이 온전한 마음으로 성전을 세우게 해 달라고 기도해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"이스라엘 지도자들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:10-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"pray","lead":"다윗","target":"이스라엘 지도자들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:10-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ch-extra-29",
@@ -2007,7 +2006,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"appoint","lead":"다윗","target":"솔로몬","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"crown","lead":"다윗","target":"솔로몬","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ch-extra-30",

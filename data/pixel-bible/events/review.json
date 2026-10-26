@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1333,
+    "scenesInFiles": 1340,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,16 +28,16 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 619
+    "curatedSupplementalScenes": 626
   },
   "books": [
     {
       "code": "2ki",
       "chapters": 25,
-      "scenes": 101,
+      "scenes": 106,
       "sourceMatchedSceneCandidates": 65,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 19
+      "curatedSupplementalScenes": 41
     },
     {
       "code": "gen",
@@ -45,7 +45,7 @@
       "scenes": 88,
       "sourceMatchedSceneCandidates": 75,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 13
     },
     {
       "code": "exo",
@@ -53,7 +53,7 @@
       "scenes": 57,
       "sourceMatchedSceneCandidates": 38,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 19
     },
     {
       "code": "lev",
@@ -61,7 +61,7 @@
       "scenes": 16,
       "sourceMatchedSceneCandidates": 10,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 6
     },
     {
       "code": "num",
@@ -69,7 +69,7 @@
       "scenes": 45,
       "sourceMatchedSceneCandidates": 31,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 14
     },
     {
       "code": "deu",
@@ -77,7 +77,7 @@
       "scenes": 18,
       "sourceMatchedSceneCandidates": 2,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 16
     },
     {
       "code": "jos",
@@ -85,7 +85,7 @@
       "scenes": 31,
       "sourceMatchedSceneCandidates": 18,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 6
+      "curatedSupplementalScenes": 13
     },
     {
       "code": "jdg",
@@ -109,15 +109,15 @@
       "scenes": 110,
       "sourceMatchedSceneCandidates": 69,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 6
+      "curatedSupplementalScenes": 41
     },
     {
       "code": "2sa",
       "chapters": 24,
-      "scenes": 97,
+      "scenes": 99,
       "sourceMatchedSceneCandidates": 64,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 7
+      "curatedSupplementalScenes": 35
     },
     {
       "code": "1ki",
@@ -125,7 +125,7 @@
       "scenes": 75,
       "sourceMatchedSceneCandidates": 36,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 39
     },
     {
       "code": "1ch",
@@ -133,7 +133,7 @@
       "scenes": 75,
       "sourceMatchedSceneCandidates": 37,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 3
+      "curatedSupplementalScenes": 38
     },
     {
       "code": "2ch",
@@ -141,7 +141,7 @@
       "scenes": 96,
       "sourceMatchedSceneCandidates": 45,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 14
+      "curatedSupplementalScenes": 51
     },
     {
       "code": "ezr",
@@ -149,7 +149,7 @@
       "scenes": 26,
       "sourceMatchedSceneCandidates": 13,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 13
     },
     {
       "code": "neh",
@@ -157,7 +157,7 @@
       "scenes": 31,
       "sourceMatchedSceneCandidates": 12,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 19
     },
     {
       "code": "est",
@@ -165,7 +165,7 @@
       "scenes": 21,
       "sourceMatchedSceneCandidates": 5,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 2
+      "curatedSupplementalScenes": 16
     },
     {
       "code": "job",
@@ -173,7 +173,7 @@
       "scenes": 35,
       "sourceMatchedSceneCandidates": 6,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 1
+      "curatedSupplementalScenes": 29
     },
     {
       "code": "psa",
@@ -181,7 +181,7 @@
       "scenes": 45,
       "sourceMatchedSceneCandidates": 18,
       "retainedLegacyScenes": 0,
-      "curatedSupplementalScenes": 15
+      "curatedSupplementalScenes": 27
     },
     {
       "code": "pro",
@@ -392,7 +392,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 7,
-      "scenes": 7,
+      "scenes": 8,
       "classification": {
         "source-confirmed-actor-only": 1,
         "source-confirmed-actor-and-object": 6
@@ -413,7 +413,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 6,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "source-confirmed-actor-only": 1,
         "source-confirmed-actor-and-object": 3,
@@ -490,7 +490,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 7,
-      "scenes": 4,
+      "scenes": 5,
       "classification": {
         "source-confirmed-actor-and-object": 3,
         "source-confirmed-actor-only": 4
@@ -738,7 +738,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 6,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 3,
         "source-confirmed-actor-and-object": 2,
@@ -802,7 +802,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 7,
-      "scenes": 5,
+      "scenes": 6,
       "classification": {
         "source-confirmed-actor-only": 4,
         "source-confirmed-actor-and-object": 3
@@ -9452,7 +9452,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 7,
-      "scenes": 5,
+      "scenes": 6,
       "classification": {
         "source-confirmed-actor-only": 4,
         "source-confirmed-actor-and-object": 3
@@ -9702,7 +9702,7 @@
       },
       "commentaryAvailable": true,
       "eventsReviewed": 5,
-      "scenes": 3,
+      "scenes": 4,
       "classification": {
         "source-confirmed-actor-only": 3,
         "source-confirmed-actor-and-object": 2
@@ -28466,6 +28466,14 @@
       {
         "book": "job",
         "scenesAdded": 1
+      },
+      {
+        "book": "2sa",
+        "scenesAdded": 2
+      },
+      {
+        "book": "2ki",
+        "scenesAdded": 5
       }
     ]
   }

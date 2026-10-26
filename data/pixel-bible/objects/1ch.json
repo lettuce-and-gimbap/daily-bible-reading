@@ -5814,7 +5814,7 @@
         "action": "scroll",
         "family": "symbol",
         "refs": [
-          "역대상 29:10-20"
+          "역대상 29:10-19"
         ],
         "actors": [
           "다윗",
@@ -5823,7 +5823,7 @@
         ],
         "evidence": [
           {
-            "ref": "역대상 29:10-20",
+            "ref": "역대상 29:10-19",
             "source": "curated-event",
             "actors": [
               "다윗",

@@ -1245,20 +1245,19 @@
         "사울"
       ],
       "object": "cloak",
-      "ref": "사무엘상 24:3-4",
+      "ref": "사무엘상 24:3",
       "verseNumbers": [
-        3,
-        4
+        3
       ],
       "actions": {},
       "lines": [
-        "해설: 사울이 길가 양 우리 곁의 굴에 볼일을 보려고 들어가고, 그 굴 깊은 곳에 숨어 있던 다윗의 부하들이 지금이 하나님이 주신 때라고 속삭여요."
+        "해설: 사울은 다윗이 숨은 굴에 들어와요. 굴 안쪽에 있던 다윗과 부하들은 그를 알아보고 상황을 지켜봐요."
       ],
-      "study": "사울이 길가 양 우리 곁의 굴에 볼일을 보려고 들어가고, 그 굴 깊은 곳에 숨어 있던 다윗의 부하들이 지금이 하나님이 주신 때라고 속삭여요.",
+      "study": "사울은 다윗이 숨은 굴에 들어와요. 굴 안쪽에 있던 다윗과 부하들은 그를 알아보고 상황을 지켜봐요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"hide","lead":"다윗","target":"사울","mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"retreat","duration":1.5,"actor":"다윗"},{"action":"hide","duration":1.8,"actor":"다윗"},{"action":"peek","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 24:3-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"hide","lead":"다윗","target":"사울","mode":"reconstruction","setting":"garden","effect":"shadow","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"startle","duration":1.2,"actor":"다윗"},{"action":"retreat","duration":1.5,"actor":"다윗"},{"action":"hide","duration":1.8,"actor":"다윗"},{"action":"peek","duration":1.5,"actor":"다윗"},{"action":"stand","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 24:3","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1sa-24-2",
@@ -2240,14 +2239,14 @@
       "id": "ot-1sa-extra-11",
       "code": "1sa",
       "chapter": 10,
-      "title": "미스바에서 왕으로 뽑힌 사울",
+      "title": "미스바에서 사울을 왕으로 세우다",
       "actors": [
         "사울",
         "사무엘",
         "이스라엘 자손"
       ],
       "object": "crown",
-      "ref": "사무엘상 10:17-27",
+      "ref": "사무엘상 10:17-24",
       "verseNumbers": [
         17,
         18,
@@ -2256,20 +2255,17 @@
         21,
         22,
         23,
-        24,
-        25,
-        26,
-        27
+        24
       ],
       "actions": {},
       "lines": [
-        "해설: 제비로 사울이 왕으로 뽑히지만 그는 짐짝 사이에 숨어 있어요. 일부는 그를 업신여기고, 사울은 침묵해요."
+        "해설: 사무엘이 미스바에 백성을 모으고 왕을 뽑아요. 사울이 짐 사이에 숨어 있다가 찾아져 백성 앞에 서고, 사무엘은 왕권의 규례를 기록해요. 일부가 그를 멸시하지만 사울은 잠잠히 집으로 돌아가요."
       ],
-      "study": "제비로 사울이 왕으로 뽑히지만 그는 짐짝 사이에 숨어 있어요. 일부는 그를 업신여기고, 사울은 침묵해요.",
+      "study": "사무엘이 미스바에 백성을 모으고 왕을 뽑아요. 사울이 짐 사이에 숨어 있다가 찾아져 백성 앞에 서고, 사무엘은 왕권의 규례를 기록해요. 일부가 그를 멸시하지만 사울은 잠잠히 집으로 돌아가요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "왕관은 선택을 나타내는 상징이며, 사울의 숨음과 공동체의 엇갈린 반응을 함께 보여줘요.",
-      "animation": {"version":2,"motif":"lots","lead":"사울","target":"사무엘","mode":"reconstruction","setting":"courtyard","effect":"lots","emotion":"neutral","prop":"crown","beats":[{"action":"read","duration":1,"actor":"사울"},{"action":"grasp","duration":1.2,"actor":"사울"},{"action":"shake","duration":1.5,"actor":"사울"},{"action":"release","duration":1.8,"actor":"사울"},{"action":"inspect","duration":1.5,"actor":"사울"},{"action":"point","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 10:17-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"crown","lead":"사울","target":"사무엘","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"사울"},{"action":"kneel","duration":1.2,"actor":"사울"},{"action":"receive","duration":1.5,"actor":"사울"},{"action":"wear","duration":1.8,"actor":"사울"},{"action":"rise","duration":1.5,"actor":"사울"},{"action":"bow","duration":1.2,"actor":"사울"}],"duration":8.2,"support":null,"ref":"사무엘상 10:17-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1sa-extra-12",
@@ -3018,24 +3014,23 @@
         "다윗의 사람들"
       ],
       "object": "fire",
-      "ref": "사무엘상 30:1-6",
+      "ref": "사무엘상 30:1-5",
       "verseNumbers": [
         1,
         2,
         3,
         4,
-        5,
-        6
+        5
       ],
       "actions": {},
       "lines": [
-        "해설: 아말렉이 시글락을 불태우고 가족들을 데려가자 다윗과 부하들이 크게 울어요. 사람들은 다윗을 원망하지만 그는 하나님께서 힘을 얻어요."
+        "해설: 다윗과 부하들이 돌아와 보니 시글락은 불타고 가족들이 끌려갔어요. 그들은 목이 쉬도록 울고, 다윗도 가족을 잃은 슬픔을 함께 겪어요."
       ],
-      "study": "아말렉이 시글락을 불태우고 가족들을 데려가자 다윗과 부하들이 크게 울어요. 사람들은 다윗을 원망하지만 그는 하나님께서 힘을 얻어요.",
+      "study": "다윗과 부하들이 돌아와 보니 시글락은 불타고 가족들이 끌려갔어요. 그들은 목이 쉬도록 울고, 다윗도 가족을 잃은 슬픔을 함께 겪어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "불과 슬픔을 절제된 시각 효과로 표현하고 가족의 피해를 자극적으로 묘사하지 않아요.",
-      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"다윗의 사람들","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"fire","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 30:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"mourn","lead":"다윗","target":"다윗의 사람들","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"fire","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘상 30:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1sa-extra-35",

@@ -3,7 +3,7 @@ import {OBJECT_CATALOG} from '../js/features/pixel-bible/object-catalog.js';impo
 const root='data/pixel-bible/events/',review=JSON.parse(fs.readFileSync(root+'review.json'));
 test('구약 39권 929장의 대조 기록과 권별 장면·추가 언급이 유효하다',()=>{assert.equal(review.books.length,39);assert.equal(review.chapters.length,929);assert.equal(review.books.find(b=>b.code==='jdg').scenes,50);const ids=new Set();let scenes=0;for(const book of review.books){const data=JSON.parse(fs.readFileSync(root+book.code+'.json'));const summary=JSON.parse(fs.readFileSync('data/summary/'+book.code+'.json'));for(const s of data.scenes){assert(!ids.has(s.id));ids.add(s.id);scenes++;assert(OBJECT_CATALOG[s.object],s.object);assert(s.actors.length>0&&s.actors.length<=4);assert(s.verseNumbers.length>0);const people=summary.chapters[s.chapter].people;for(const actor of s.actors)assert(people.some(p=>p.name===actor),s.id+actor);if(s.narrationOnly)assert.equal(Object.keys(s.actorLines).length,0);else for(const [actor,lines]of Object.entries(s.actorLines)){assert.deepEqual(objectLinesFor(s,actor),lines);assert(lines.every(l=>l.length<=100));}}for(const [ch,people]of Object.entries(data.additionalPeople)){assert(summary.chapters[ch]);for(const p of people){assert(p.mentionVerses.length);assert(!summary.chapters[ch].people.some(x=>x.name===p.name));}}}assert(scenes>=600);});
 test('구약 사건 검수는 배우·소품 근거를 분리하고 원문 절 누락을 다른 역본과 구분한다',()=>{
- const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1333);assert.equal(c.curatedSupplementalScenes,619);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),619);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
+ const c=review.coverageSummary;assert.equal(c.eventsReviewed,3533);assert.equal(c.sourceMatchedSceneCandidates,710);assert.equal(c.scenesInFiles,1340);assert.equal(c.curatedSupplementalScenes,626);assert.equal(review.curatedSceneReview.books.reduce((n,b)=>n+b.scenesAdded,0),626);assert.equal(c.classification['source-confirmed-actor-and-object'],667);assert.equal(c.classification['source-confirmed-actor-only'],1000);assert.equal(c.classification['source-confirmed-object-only'],629);assert.equal(c.classification['no-source-confirmed-actor-or-object'],1227);assert.equal(c.classification['source-edition-gap'],9);assert.equal(c.classification['referenced-person-not-scene-actor'],1);assert(!JSON.parse(fs.readFileSync(root+'deu.json')).scenes.some(s=>s.id==='ot-deu-23-0'));const omitted=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='referenced-person-not-scene-actor'));assert.equal(omitted.length,1);assert.equal(omitted[0].actor,'발람');
  const gaps=review.chapters.flatMap(ch=>ch.skipped.filter(s=>s.reason==='source-edition-gap').map(s=>({code:ch.code,chapter:ch.chapter,...s})));assert.equal(gaps.length,9);for(const gap of gaps){assert.deepEqual(gap.supportedByEditions,['easy','han','hyun','saenew']);assert.ok(gap.missingVerseNumbers.gae.length>0);assert.deepEqual(Object.keys(gap.missingVerseNumbers),['gae']);}
 });
 test('권별 새 장면은 현재 장·QT 절 범위에서만 열린다',()=>{const code='gen',book=JSON.parse(fs.readFileSync('data/summary/gen.json')),extras=JSON.parse(fs.readFileSync(root+'gen.json'));const scene=extras.scenes.find(s=>s.id.startsWith('ot-voice'));const c={code,name:'창세기',chap:scene.chapter,data:{...book.chapters[scene.chapter],eventScenes:extras.scenes.filter(s=>s.chapter===scene.chapter)}};assert(buildWorldModel([c]).scenes.some(s=>s.id===scene.id));const excluded={...c,verses:[999],data:scopeChapterSummary(c.data,[999])};assert(!buildWorldModel([excluded]).scenes.some(s=>s.id===scene.id));});
@@ -29,8 +29,8 @@ test('사무엘상의 빠진 서사 장면과 양방향 이별·중재 대화를
 });
 
 test('사무엘하의 언약·반란·화해 흐름과 므비보셋 양방향 장면을 보강한다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'2sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-2sa-extra-'));assert.equal(added.length,33);
- for(const title of ['시온 산성을 차지한 다윗','다윗의 왕위를 잇는 약속','왕의 권력 아래 놓인 밧세바','압살롬의 반역과 다윗의 피신','압살롬의 죽음을 듣고 우는 다윗','기브온의 요구와 리스바의 애곡'])assert(added.some(s=>s.title===title),title);
+ const data=JSON.parse(fs.readFileSync(root+'2sa.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-2sa-extra-'));assert.equal(added.length,35);
+ for(const title of ['시온 산성을 차지한 다윗','다윗의 왕위를 잇는 약속','왕의 권력 아래 놓인 밧세바','압살롬의 반역과 다윗의 피신','압살롬의 죽음을 듣고 우는 다윗','기브온 사람들의 보응 요구','리스바의 애도와 사울 집안의 장례'])assert(added.some(s=>s.title===title),title);
  const scene=data.scenes.find(s=>s.id==='ot-voice-20');assert.equal(scene.ref,'사무엘하 9:1-13');assert.deepEqual(scene.actors,['다윗','므비보셋']);assert.equal(Object.keys(scene.actorLines).length,2);
 });
 
@@ -487,4 +487,24 @@ test('job 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 test('요나 1장의 바다에 던짐과 큰 물고기 장면은 서로 다른 절 범위로 나뉜다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'jnh.json')),sailors=data.scenes.find(s=>s.ref==='요나 1:13-16'),fish=data.scenes.find(s=>s.ref==='요나 1:17'),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jnh.json'));
  assert(sailors);assert(fish);assert.deepEqual(fish.actors,['요나']);assert.equal(fish.object,'fish');assert.equal(fish.animation.motif,'fish-swallow');assert(objects.chapters['1'].some(o=>o.id==='fish'&&o.refs.includes(fish.ref)));
+});
+
+
+test('2sa 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'2sa.json')),titles=["그술로 달아난 압살롬과 다윗의 그리움","리스바의 애도와 사울 집안의 장례"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2sa.json'));assert.equal(added.length,2);
+ for(const title of titles)assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
+});
+
+
+test('겹쳐 있던 구약 사건 범위를 인접한 장면으로 나누고 원문 절을 보존한다',()=>{
+ const groups=[['1sa',[['사무엘상 10:17-24','사무엘상 10:25-27'],['사무엘상 24:3','사무엘상 24:4-7'],['사무엘상 30:1-5','사무엘상 30:6']]],['1ch',[['역대상 29:10-19','역대상 29:20-25']]],['2sa',[['사무엘하 13:23-29','사무엘하 13:30-36','사무엘하 13:37-39'],['사무엘하 21:1-6','사무엘하 21:7-9','사무엘하 21:10-14']]],['2ki',[['열왕기하 2:7-8','열왕기하 2:9-10','열왕기하 2:11-12','열왕기하 2:13-14','열왕기하 2:15-18','열왕기하 2:19-22','열왕기하 2:23-25'],['열왕기하 3:13-14','열왕기하 3:15-17','열왕기하 3:18-20'],['열왕기하 5:20-21','열왕기하 5:22-25','열왕기하 5:26-27'],['열왕기하 6:1-4','열왕기하 6:5-7'],['열왕기하 9:1-6','열왕기하 9:7-10','열왕기하 9:11-13'],['열왕기하 11:4-11','열왕기하 11:12'],['열왕기하 12:4-8','열왕기하 12:9-16'],['열왕기하 13:10-14','열왕기하 13:15-17','열왕기하 13:18-19'],['열왕기하 14:8-10','열왕기하 14:11-14'],['열왕기하 15:17-18','열왕기하 15:19-20','열왕기하 15:21-26'],['열왕기하 16:10-11','열왕기하 16:12-13','열왕기하 16:14-16'],['열왕기하 19:8-13','열왕기하 19:14-19'],['열왕기하 22:8-9','열왕기하 22:10','열왕기하 22:11-20'],['열왕기하 25:8-10','열왕기하 25:11-17']]]];
+ for(const [code,sets] of groups){const scenes=JSON.parse(fs.readFileSync(root+code+'.json')).scenes;for(const refs of sets){const ranges=refs.map(ref=>{const s=scenes.find(x=>x.ref===ref);assert(s,code+' '+ref);const m=ref.match(/:(\d+)(?:-(\d+))?/);return [+m[1],+(m[2]||m[1])];}).sort((a,b)=>a[0]-b[0]);for(let i=1;i<ranges.length;i++)assert(ranges[i][0]>ranges[i-1][1],code+' overlap '+refs.join(' / '));}}
+});
+
+
+test('2ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
+ const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
+ for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
+ for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });

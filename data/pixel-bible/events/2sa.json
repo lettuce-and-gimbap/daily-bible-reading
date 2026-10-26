@@ -2187,14 +2187,14 @@
       "id": "ot-2sa-extra-14",
       "code": "2sa",
       "chapter": 13,
-      "title": "압살롬의 복수와 그술 도피",
+      "title": "압살롬이 암논을 죽이고 그술로 달아나다",
       "actors": [
         "압살롬",
         "암논",
         "다윗"
       ],
       "object": "sword",
-      "ref": "사무엘하 13:23-39",
+      "ref": "사무엘하 13:23-29",
       "verseNumbers": [
         23,
         24,
@@ -2202,27 +2202,17 @@
         26,
         27,
         28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39
+        29
       ],
       "actions": {},
       "lines": [
-        "해설: 압살롬은 양털 깎는 잔치에서 암논을 죽이고 그술로 도망해요. 다윗의 집안에는 오랫동안 슬픔과 분열이 남아요."
+        "해설: 압살롬은 양털 깎는 잔치에 왕자들을 초대하고, 종들에게 신호를 주어 암논을 죽이게 해요. 다른 왕자들은 노새를 타고 달아나요."
       ],
-      "study": "압살롬은 양털 깎는 잔치에서 암논을 죽이고 그술로 도망해요. 다윗의 집안에는 오랫동안 슬픔과 분열이 남아요.",
+      "study": "압살롬은 양털 깎는 잔치에 왕자들을 초대하고, 종들에게 신호를 주어 암논을 죽이게 해요. 다른 왕자들은 노새를 타고 달아나요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "살해를 직접 묘사하지 않고, 사건 뒤의 애도와 도피를 중심으로 표현해요.",
-      "animation": {"version":2,"motif":"flee","lead":"압살롬","target":"암논","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"sword","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"turn","duration":1.5,"actor":"압살롬"},{"action":"run","duration":1.8,"actor":"압살롬"},{"action":"run","duration":1.5,"actor":"압살롬"},{"action":"look","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:23-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"flee","lead":"압살롬","target":"암논","mode":"reconstruction","setting":"road","effect":"journey","emotion":"worried","prop":"sword","beats":[{"action":"look","duration":1,"actor":"압살롬"},{"action":"startle","duration":1.2,"actor":"압살롬"},{"action":"turn","duration":1.5,"actor":"압살롬"},{"action":"run","duration":1.8,"actor":"압살롬"},{"action":"run","duration":1.5,"actor":"압살롬"},{"action":"look","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:23-29","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-15",
@@ -2519,39 +2509,30 @@
       "id": "ot-2sa-extra-23",
       "code": "2sa",
       "chapter": 21,
-      "title": "기브온의 요구와 리스바의 애곡",
+      "title": "기브온 사람들의 보응 요구",
       "actors": [
         "다윗",
-        "기브온 사람들",
-        "리스바"
+        "기브온 사람들"
       ],
-      "object": "sackcloth",
-      "ref": "사무엘하 21:1-14",
+      "object": "scene-marker",
+      "ref": "사무엘하 21:1-6",
       "verseNumbers": [
         1,
         2,
         3,
         4,
         5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
+        6
       ],
       "actions": {},
       "lines": [
-        "해설: 기근의 원인을 묻자 기브온 사람들은 사울 집안에 대한 보상을 요구해요. 리스바는 죽은 이들의 시신을 지키며 오랜 시간 애곡해요."
+        "해설: 기근의 이유를 묻자 하나님은 사울이 기브온 사람들을 죽인 일과 연결해 답하세요. 다윗은 기브온 사람들을 불러 무엇으로 속죄할지 묻고, 그들은 사울 집안의 책임을 요구해요."
       ],
-      "study": "기근의 원인을 묻자 기브온 사람들은 사울 집안에 대한 보상을 요구해요. 리스바는 죽은 이들의 시신을 지키며 오랜 시간 애곡해요.",
+      "study": "기근의 이유를 묻자 하나님은 사울이 기브온 사람들을 죽인 일과 연결해 답하세요. 다윗은 기브온 사람들을 불러 무엇으로 속죄할지 묻고, 그들은 사울 집안의 책임을 요구해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "처형과 시신은 직접 묘사하지 않고 리스바의 애도와 기근 해결의 복잡한 윤리만 다뤄요.",
-      "animation": {"version":2,"motif":"lament","lead":"다윗","target":"기브온 사람들","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"sackcloth","beats":[{"action":"startle","duration":1,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"},{"action":"kneel","duration":1.5,"actor":"다윗"},{"action":"cover-mouth","duration":1.8,"actor":"다윗"},{"action":"mourn","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:1-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"petition","lead":"다윗","target":"기브온 사람들","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"lift","duration":1.5,"actor":"다윗"},{"action":"pray","duration":1.8,"actor":"다윗"},{"action":"pray","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 21:1-6","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2sa-extra-24",
@@ -2856,6 +2837,61 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"warning","lead":"다윗","target":"하나님","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다윗"},{"action":"turn","duration":1.2,"actor":"다윗"},{"action":"speak","duration":1.5,"actor":"다윗"},{"action":"point","duration":1.8,"actor":"다윗"},{"action":"listen","duration":1.5,"actor":"다윗"},{"action":"lower","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"사무엘하 23:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-13-0",
+      "code": "2sa",
+      "chapter": 13,
+      "title": "그술로 달아난 압살롬과 다윗의 그리움",
+      "actors": [
+        "압살롬",
+        "다윗"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 13:37-39",
+      "verseNumbers": [
+        37,
+        38,
+        39
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 압살롬은 그술로 달아나 그곳에 머물고, 다윗은 암논의 죽음을 슬퍼해요. 압살롬을 향한 분노와 그리움이 함께 남아 화해가 미뤄져요."
+      ],
+      "study": "압살롬은 그술로 달아나 그곳에 머물고, 다윗은 암논의 죽음을 슬퍼해요. 압살롬을 향한 분노와 그리움이 함께 남아 화해가 미뤄져요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"압살롬","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"},{"action":"kneel","duration":1.5,"actor":"압살롬"},{"action":"cover-mouth","duration":1.8,"actor":"압살롬"},{"action":"mourn","duration":1.5,"actor":"압살롬"},{"action":"lower","duration":1.2,"actor":"압살롬"}],"duration":8.2,"support":null,"ref":"사무엘하 13:37-39","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2sa-extra-21-0",
+      "code": "2sa",
+      "chapter": 21,
+      "title": "리스바의 애도와 사울 집안의 장례",
+      "actors": [
+        "리스바",
+        "다윗",
+        "사울의 자손 일곱 명"
+      ],
+      "object": "scene-marker",
+      "ref": "사무엘하 21:10-14",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 리스바는 비가 내릴 때까지 죽은 자들의 시신을 낮에는 새로부터, 밤에는 들짐승으로부터 지켜요. 다윗은 이를 듣고 사울과 요나단의 뼈와 함께 그들을 장사하고, 그 뒤 하나님이 땅을 위한 기도를 들으세요."
+      ],
+      "study": "리스바는 비가 내릴 때까지 죽은 자들의 시신을 낮에는 새로부터, 밤에는 들짐승으로부터 지켜요. 다윗은 이를 듣고 사울과 요나단의 뼈와 함께 그들을 장사하고, 그 뒤 하나님이 땅을 위한 기도를 들으세요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"mourn","lead":"리스바","target":"다윗","mode":"reconstruction","setting":"courtyard","effect":"tears","emotion":"sad","prop":"scene-marker","beats":[{"action":"startle","duration":1,"actor":"리스바"},{"action":"lower","duration":1.2,"actor":"리스바"},{"action":"kneel","duration":1.5,"actor":"리스바"},{"action":"cover-mouth","duration":1.8,"actor":"리스바"},{"action":"mourn","duration":1.5,"actor":"리스바"},{"action":"lower","duration":1.2,"actor":"리스바"}],"duration":8.2,"support":null,"ref":"사무엘하 21:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

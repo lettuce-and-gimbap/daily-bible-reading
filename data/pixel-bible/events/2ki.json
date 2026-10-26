@@ -31,28 +31,26 @@
       "id": "ot-2ki-2-1",
       "code": "2ki",
       "chapter": 2,
-      "title": "갑절의 영감",
+      "title": "엘리사가 갑절의 몫을 구하다",
       "actors": [
         "엘리야",
         "엘리사"
       ],
       "object": "cloak",
-      "ref": "열왕기하 2:7-10",
+      "ref": "열왕기하 2:9-10",
       "verseNumbers": [
-        7,
-        8,
         9,
         10
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리야가 겉옷으로 요단을 쳐 갈라 건넌 뒤, 엘리사가 엘리야에게 있는 영을 맏아들처럼 두 몫으로 달라고 구해요. 참된 후계자가 되고 싶었어요."
+        "해설: 요단을 건넌 뒤 엘리사는 엘리야에게 작별의 때를 알고 자신에게 갑절의 몫을 달라고 구해요. 엘리야는 어려운 요청이라며, 자신이 떠나는 모습을 보면 이루어질 것이라고 답해요."
       ],
-      "study": "엘리야가 겉옷으로 요단을 쳐 갈라 건넌 뒤, 엘리사가 엘리야에게 있는 영을 맏아들처럼 두 몫으로 달라고 구해요. 참된 후계자가 되고 싶었어요.",
+      "study": "요단을 건넌 뒤 엘리사는 엘리야에게 작별의 때를 알고 자신에게 갑절의 몫을 달라고 구해요. 엘리야는 어려운 요청이라며, 자신이 떠나는 모습을 보면 이루어질 것이라고 답해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"request","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"엘리야"},{"action":"kneel","duration":1.2,"actor":"엘리야"},{"action":"lift","duration":1.5,"actor":"엘리야"},{"action":"pray","duration":1.8,"actor":"엘리야"},{"action":"pray","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기하 2:7-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"request","lead":"엘리사","target":"엘리야","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"cloak","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"lift","duration":1.8,"actor":"엘리사"},{"action":"wait","duration":1.5,"actor":"엘리사"},{"action":"bow","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:9-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-2-2",
@@ -64,78 +62,72 @@
         "엘리사"
       ],
       "object": "water-supply",
-      "ref": "열왕기하 2:11-14",
+      "ref": "열왕기하 2:11-12",
       "verseNumbers": [
         11,
-        12,
-        13,
-        14
+        12
       ],
       "actions": {},
       "lines": [
-        "해설: 불 수레와 불 말이 둘을 갈라놓고 엘리야가 회오리바람을 타고 하늘로 올라가요. 엘리사가 떨어진 겉옷으로 요단을 치자 물이 다시 갈라져요."
+        "해설: 두 사람이 함께 걸을 때 불수레와 불말이 나타나 그들을 갈라놓고, 엘리야가 회오리바람을 타고 올라가요. 엘리사는 스승을 부르며 자기 옷을 찢어요."
       ],
-      "study": "불 수레와 불 말이 둘을 갈라놓고 엘리야가 회오리바람을 타고 하늘로 올라가요. 엘리사가 떨어진 겉옷으로 요단을 치자 물이 다시 갈라져요.",
+      "study": "두 사람이 함께 걸을 때 불수레와 불말이 나타나 그들을 갈라놓고, 엘리야가 회오리바람을 타고 올라가요. 엘리사는 스승을 부르며 자기 옷을 찢어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"ascend","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"water","effect":"whirlwind","emotion":"surprised","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"look","duration":1.5,"actor":"엘리야"},{"action":"recoil","duration":1.8,"actor":"엘리야"},{"action":"look","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기하 2:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"ascend","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"water","effect":"whirlwind","emotion":"surprised","prop":"water-supply","beats":[{"action":"walk","duration":1,"actor":"엘리야"},{"action":"look","duration":1.2,"actor":"엘리야"},{"action":"startle","duration":1.5,"actor":"엘리야"},{"action":"rise","duration":1.8,"actor":"엘리야"},{"action":"rise","duration":1.5,"actor":"엘리야"},{"action":"bow","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기하 2:11-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-2-3",
       "code": "2ki",
       "chapter": 2,
-      "title": "고쳐진 물과 곰",
+      "title": "선지자들이 엘리사를 후계자로 인정하다",
       "actors": [
-        "엘리사"
+        "엘리사",
+        "선지자의 제자들"
       ],
-      "object": "salt",
-      "ref": "열왕기하 2:15-25",
+      "object": "scene-marker",
+      "ref": "열왕기하 2:15-18",
       "verseNumbers": [
         15,
         16,
         17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25
+        18
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리사가 여리고의 나쁜 물에 소금을 넣어 고쳐요. 벧엘로 가는 길에 선지자를 업신여기며 조롱한 아이들은 곰 두 마리에게 당해요."
+        "해설: 여리고의 선지자들은 엘리사에게 엘리야에게 임한 영이 머물렀다고 인정해요. 엘리사는 만류하지만, 그들이 거듭 청하자 사람들을 보내 엘리야를 찾게 하고 헛수고였음을 확인해요."
       ],
-      "study": "엘리사가 여리고의 나쁜 물에 소금을 넣어 고쳐요. 벧엘로 가는 길에 선지자를 업신여기며 조롱한 아이들은 곰 두 마리에게 당해요.",
+      "study": "여리고의 선지자들은 엘리사에게 엘리야에게 임한 영이 머물렀다고 인정해요. 엘리사는 만류하지만, 그들이 거듭 청하자 사람들을 보내 엘리야를 찾게 하고 헛수고였음을 확인해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"heal","lead":"엘리사","target":null,"mode":"reconstruction","setting":"chamber","effect":"heal","emotion":"gentle","prop":"salt","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"reach","duration":1.2,"actor":"엘리사"},{"action":"lift","duration":1.5,"actor":"엘리사"},{"action":"touch","duration":1.8,"actor":"엘리사"},{"action":"lower","duration":1.5,"actor":"엘리사"},{"action":"inspect","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:15-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"welcome","lead":"엘리사","target":"선지자의 제자들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"relieved","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"wait","duration":1.8,"actor":"엘리사"},{"action":"walk","duration":1.5,"actor":"엘리사"},{"action":"bow","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:15-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-2-4",
       "code": "2ki",
       "chapter": 2,
-      "title": "겉옷으로 요단을 치다",
+      "title": "엘리야가 겉옷으로 요단을 치다",
       "actors": [
-        "엘리야"
+        "엘리야",
+        "엘리사"
       ],
       "object": "water-supply",
-      "ref": "열왕기하 2:8",
+      "ref": "열왕기하 2:7-8",
       "verseNumbers": [
+        7,
         8
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리야가 겉옷을 말아 물을 치자 강이 갈라지고 두 사람이 건너요."
+        "해설: 선지자의 제자들이 멀리서 지켜보는 가운데 엘리야가 겉옷을 말아 요단을 쳐요. 물이 양쪽으로 갈라지고 두 사람은 마른 땅으로 건너가요."
       ],
-      "study": "엘리야가 겉옷을 말아 물을 치자 강이 갈라지고 두 사람이 건너요.",
+      "study": "선지자의 제자들이 멀리서 지켜보는 가운데 엘리야가 겉옷을 말아 요단을 쳐요. 물이 양쪽으로 갈라지고 두 사람은 마른 땅으로 건너가요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"divide","lead":"엘리야","target":null,"mode":"reconstruction","setting":"water","effect":"divide","emotion":"surprised","prop":"water-supply","beats":[{"action":"grasp","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"windup","duration":1.5,"actor":"엘리야"},{"action":"strike","duration":1.8,"actor":"엘리야"},{"action":"recoil","duration":1.5,"actor":"엘리야"},{"action":"look","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기하 2:8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"divide","lead":"엘리야","target":"엘리사","mode":"reconstruction","setting":"water","effect":"divide","emotion":"determined","prop":"water-supply","beats":[{"action":"grasp","duration":1,"actor":"엘리야"},{"action":"lift","duration":1.2,"actor":"엘리야"},{"action":"windup","duration":1.5,"actor":"엘리야"},{"action":"strike","duration":1.8,"actor":"엘리야"},{"action":"walk","duration":1.5,"actor":"엘리야"},{"action":"look","duration":1.2,"actor":"엘리야"}],"duration":8.2,"support":null,"ref":"열왕기하 2:7-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-2-5",
@@ -223,26 +215,20 @@
         "여호사밧"
       ],
       "object": "water-supply",
-      "ref": "열왕기하 3:13-20",
+      "ref": "열왕기하 3:13-14",
       "verseNumbers": [
         13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
+        14
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리사가 여호사밧을 봐서 말씀을 구해요. 골짜기에 개천을 파라 했고, 다음 날 아침 비 한 방울 없이 에돔 쪽에서 물이 흘러와 가득해요."
+        "해설: 엘리사는 여호람에게 이전의 우상 숭배를 꾸짖고, 여호사밧을 존중해 여호와의 말씀을 전하기로 해요. 그는 악기 연주자를 부르라고 요청해요."
       ],
-      "study": "엘리사가 여호사밧을 봐서 말씀을 구해요. 골짜기에 개천을 파라 했고, 다음 날 아침 비 한 방울 없이 에돔 쪽에서 물이 흘러와 가득해요.",
+      "study": "엘리사는 여호람에게 이전의 우상 숭배를 꾸짖고, 여호사밧을 존중해 여호와의 말씀을 전하기로 해요. 그는 악기 연주자를 부르라고 요청해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"dig","lead":"엘리사","target":"여호사밧","mode":"reconstruction","setting":"desert","effect":"well","emotion":"determined","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"bend","duration":1.2,"actor":"엘리사"},{"action":"dig","duration":1.5,"actor":"엘리사"},{"action":"dig","duration":1.8,"actor":"엘리사"},{"action":"rise","duration":1.5,"actor":"엘리사"},{"action":"inspect","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:13-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"엘리사","target":"여호람(아합의 아들)","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"stern","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-3-4",
@@ -381,32 +367,25 @@
       "id": "ot-2ki-5-3",
       "code": "2ki",
       "chapter": 5,
-      "title": "게하시의 욕심",
+      "title": "게하시가 나아만의 예물을 탐내다",
       "actors": [
-        "엘리사",
         "게하시"
       ],
       "object": "robe",
-      "ref": "열왕기하 5:20-27",
+      "ref": "열왕기하 5:20-21",
       "verseNumbers": [
         20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27
+        21
       ],
       "actions": {},
       "lines": [
-        "해설: 게하시가 몰래 뒤쫓아 가 거짓말로 은과 옷을 받아 숨겨요. 엘리사가 이를 알고 꾸짖자 나아만의 나병이 게하시에게 옮아요."
+        "해설: 게하시는 나아만이 가져온 예물을 받지 않은 엘리사의 태도를 못마땅해하고, 뒤쫓아가 무엇인가 받아내기로 마음먹어요. 그는 나아만의 병거를 따라가 그를 불러 세워요."
       ],
-      "study": "게하시가 몰래 뒤쫓아 가 거짓말로 은과 옷을 받아 숨겨요. 엘리사가 이를 알고 꾸짖자 나아만의 나병이 게하시에게 옮아요. 욕심의 대가였어요.",
+      "study": "게하시는 나아만이 가져온 예물을 받지 않은 엘리사의 태도를 못마땅해하고, 뒤쫓아가 무엇인가 받아내기로 마음먹어요. 그는 나아만의 병거를 따라가 그를 불러 세워요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"accuse","lead":"엘리사","target":"게하시","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"robe","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 5:20-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"seek","lead":"게하시","target":null,"mode":"reconstruction","setting":"courtyard","effect":"journey","emotion":"greedy","prop":"robe","beats":[{"action":"look","duration":1,"actor":"게하시"},{"action":"look","duration":1.2,"actor":"게하시"},{"action":"turn","duration":1.5,"actor":"게하시"},{"action":"run","duration":1.8,"actor":"게하시"},{"action":"run","duration":1.5,"actor":"게하시"},{"action":"hide","duration":1.2,"actor":"게하시"}],"duration":8.2,"support":null,"ref":"열왕기하 5:20-21","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-5-6",
@@ -438,30 +417,27 @@
       "id": "ot-2ki-6-0",
       "code": "2ki",
       "chapter": 6,
-      "title": "떠오른 쇠도끼",
+      "title": "요단가에서 새 처소를 세우다",
       "actors": [
         "엘리사"
       ],
       "object": "tree",
-      "ref": "열왕기하 6:1-7",
+      "ref": "열왕기하 6:1-4",
       "verseNumbers": [
         1,
         2,
         3,
-        4,
-        5,
-        6,
-        7
+        4
       ],
       "actions": {},
       "lines": [
-        "해설: 선지자 제자들이 요단 가에서 나무를 베다 빌려 온 쇠도끼를 물에 빠뜨려요. 엘리사가 나뭇가지를 던지자 쇠도끼가 떠올라요."
+        "해설: 선지자 무리가 처소가 비좁다며 요단으로 가 나무를 베어 새 거처를 짓자고 해요. 엘리사는 함께 가 달라는 요청을 받아들여요."
       ],
-      "study": "선지자 제자들이 요단 가에서 나무를 베다 빌려 온 쇠도끼를 물에 빠뜨려요. 엘리사가 나뭇가지를 던지자 쇠도끼가 떠올라요.",
+      "study": "선지자 무리가 처소가 비좁다며 요단으로 가 나무를 베어 새 거처를 짓자고 해요. 엘리사는 함께 가 달라는 요청을 받아들여요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"float","lead":"엘리사","target":null,"mode":"reconstruction","setting":"water","effect":"axe","emotion":"surprised","prop":"tree","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"reach","duration":1.2,"actor":"엘리사"},{"action":"grasp","duration":1.5,"actor":"엘리사"},{"action":"throw","duration":1.8,"actor":"엘리사"},{"action":"reach","duration":1.5,"actor":"엘리사"},{"action":"retrieve","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 6:1-7","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"build","lead":"엘리사","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"tree","beats":[{"action":"inspect","duration":1,"actor":"엘리사"},{"action":"gather","duration":1.2,"actor":"엘리사"},{"action":"lift","duration":1.5,"actor":"엘리사"},{"action":"place","duration":1.8,"actor":"엘리사"},{"action":"hammer","duration":1.5,"actor":"엘리사"},{"action":"inspect","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 6:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-6-1",
@@ -610,37 +586,28 @@
       "id": "ot-2ki-9-0",
       "code": "2ki",
       "chapter": 9,
-      "title": "기름 부음 받은 예후",
+      "title": "예후에게 전해진 아합 집안의 심판",
       "actors": [
         "선지자의 제자",
         "예후"
       ],
       "object": "oil",
-      "ref": "열왕기하 9:1-13",
+      "ref": "열왕기하 9:7-10",
       "verseNumbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
         7,
         8,
         9,
-        10,
-        11,
-        12,
-        13
+        10
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리사가 보낸 청년이 길르앗 라못에서 예후에게 기름을 붓고 아합 집을 치라 전해요. 동료 장관들이 옷을 깔고 예후는 왕이라고 외쳐요."
+        "해설: 기름 부음을 받은 예후는 아합의 집을 심판하라는 명령과 이세벨의 죽음에 관한 예언을 들어요. 청년 선지자는 말을 마치자 문을 열고 도망쳐요."
       ],
-      "study": "엘리사가 보낸 청년이 길르앗 라못에서 예후에게 기름을 붓고 아합 집을 치라 전해요. 동료 장관들이 옷을 깔고 예후는 왕이라고 외쳐요.",
+      "study": "기름 부음을 받은 예후는 아합의 집을 심판하라는 명령과 이세벨의 죽음에 관한 예언을 들어요. 청년 선지자는 말을 마치자 문을 열고 도망쳐요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"anoint","lead":"선지자의 제자","target":"예후","mode":"reconstruction","setting":"court","effect":"oil","emotion":"determined","prop":"oil","beats":[{"action":"inspect","duration":1,"actor":"선지자의 제자"},{"action":"grasp","duration":1.2,"actor":"선지자의 제자"},{"action":"lift","duration":1.5,"actor":"선지자의 제자"},{"action":"pour","duration":1.8,"actor":"선지자의 제자"},{"action":"lower","duration":1.5,"actor":"선지자의 제자"},{"action":"bow","duration":1.2,"actor":"선지자의 제자"}],"duration":8.2,"support":null,"ref":"열왕기하 9:1-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"anoint","lead":"선지자의 제자","target":"예후","mode":"reconstruction","setting":"courtyard","effect":"oil","emotion":"determined","prop":"oil","beats":[{"action":"walk","duration":1,"actor":"선지자의 제자"},{"action":"look","duration":1.2,"actor":"선지자의 제자"},{"action":"pour","duration":1.5,"actor":"선지자의 제자"},{"action":"speak","duration":1.8,"actor":"선지자의 제자"},{"action":"turn","duration":1.5,"actor":"선지자의 제자"},{"action":"run","duration":1.2,"actor":"선지자의 제자"}],"duration":8.2,"support":null,"ref":"열왕기하 9:7-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-9-1",
@@ -795,13 +762,13 @@
       "id": "ot-2ki-11-1",
       "code": "2ki",
       "chapter": 11,
-      "title": "여호야다의 준비",
+      "title": "여호야다가 요아스를 왕으로 세우다",
       "actors": [
         "여호야다",
         "백부장들"
       ],
       "object": "temple",
-      "ref": "열왕기하 11:4-12",
+      "ref": "열왕기하 11:4-11",
       "verseNumbers": [
         4,
         5,
@@ -810,18 +777,17 @@
         8,
         9,
         10,
-        11,
-        12
+        11
       ],
       "actions": {},
       "lines": [
-        "해설: 칠 년째에 제사장 여호야다가 백부장들에게 맹세를 받고 성전과 왕궁을 지키게 해요. 요아스에게 왕관을 씌우고 기름 부어 왕으로 세워요."
+        "해설: 여호야다는 백부장들과 언약을 맺고 안식일 교대조를 나누어 성전과 왕궁을 지키게 해요. 그는 다윗 왕가의 무기를 나누어 주고, 요아스 왕자 주위에 경호대를 세워요."
       ],
-      "study": "칠 년째에 제사장 여호야다가 백부장들에게 맹세를 받고 성전과 왕궁을 지키게 해요. 요아스에게 왕관을 씌우고 기름 부어 왕으로 세워요.",
+      "study": "여호야다는 백부장들과 언약을 맺고 안식일 교대조를 나누어 성전과 왕궁을 지키게 해요. 그는 다윗 왕가의 무기를 나누어 주고, 요아스 왕자 주위에 경호대를 세워요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"marshal","lead":"여호야다","target":"백부장들","mode":"reconstruction","setting":"courtyard","effect":"signal","emotion":"determined","prop":"temple","beats":[{"action":"listen","duration":1,"actor":"여호야다"},{"action":"lift","duration":1.2,"actor":"여호야다"},{"action":"signal","duration":1.5,"actor":"여호야다"},{"action":"point","duration":1.8,"actor":"여호야다"},{"action":"march","duration":1.5,"actor":"여호야다"},{"action":"stand","duration":1.2,"actor":"여호야다"}],"duration":8.2,"support":null,"ref":"열왕기하 11:4-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"guard","lead":"여호야다","target":"백부장들","mode":"reconstruction","setting":"court","effect":"speech","emotion":"determined","prop":"temple","beats":[{"action":"walk","duration":1,"actor":"여호야다"},{"action":"speak","duration":1.2,"actor":"여호야다"},{"action":"extend","duration":1.5,"actor":"여호야다"},{"action":"guard","duration":1.8,"actor":"여호야다"},{"action":"guard","duration":1.5,"actor":"여호야다"},{"action":"look","duration":1.2,"actor":"여호야다"}],"duration":8.2,"support":null,"ref":"열왕기하 11:4-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-11-2",
@@ -878,37 +844,29 @@
       "id": "ot-2ki-12-1",
       "code": "2ki",
       "chapter": 12,
-      "title": "헌금 궤와 성전 수리",
+      "title": "성전 수리를 위한 헌금 궤를 마련하다",
       "actors": [
         "요아스",
         "여호야다"
       ],
       "object": "temple",
-      "ref": "열왕기하 12:4-16",
+      "ref": "열왕기하 12:4-8",
       "verseNumbers": [
         4,
         5,
         6,
         7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
+        8
       ],
       "actions": {},
       "lines": [
-        "해설: 이십삼 년이 되도록 수리가 안 되자 요아스가 제사장들을 꾸짖어요. 여호야다가 구멍 뚫은 궤로 헌금을 모아 정직한 일꾼들에게 맡겨 성전을 고쳐요."
+        "해설: 요아스는 성전 수리에 쓰일 헌금을 모으라고 명하지만, 오래도록 수리가 시작되지 않아요. 왕은 제사장들을 불러 헌금 수납 방식을 바꾸고, 제사장들은 더는 돈을 받지 않기로 해요."
       ],
-      "study": "이십삼 년이 되도록 수리가 안 되자 요아스가 제사장들을 꾸짖어요. 여호야다가 구멍 뚫은 궤로 헌금을 모아 정직한 일꾼들에게 맡겨 성전을 고쳐요.",
+      "study": "요아스는 성전 수리에 쓰일 헌금을 모으라고 명하지만, 오래도록 수리가 시작되지 않아요. 왕은 제사장들을 불러 헌금 수납 방식을 바꾸고, 제사장들은 더는 돈을 받지 않기로 해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"repair","lead":"요아스","target":"여호야다","mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"determined","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"요아스"},{"action":"gather","duration":1.2,"actor":"요아스"},{"action":"lift","duration":1.5,"actor":"요아스"},{"action":"place","duration":1.8,"actor":"요아스"},{"action":"hammer","duration":1.5,"actor":"요아스"},{"action":"inspect","duration":1.2,"actor":"요아스"}],"duration":8.2,"support":null,"ref":"열왕기하 12:4-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"요아스","target":"여호야다","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"stern","prop":"temple","beats":[{"action":"look","duration":1,"actor":"요아스"},{"action":"turn","duration":1.2,"actor":"요아스"},{"action":"speak","duration":1.5,"actor":"요아스"},{"action":"point","duration":1.8,"actor":"요아스"},{"action":"listen","duration":1.5,"actor":"요아스"},{"action":"lower","duration":1.2,"actor":"요아스"}],"duration":8.2,"support":null,"ref":"열왕기하 12:4-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-12-2",
@@ -965,60 +923,59 @@
       "id": "ot-2ki-12-4",
       "code": "2ki",
       "chapter": 12,
-      "title": "구멍 뚫은 헌금 궤",
+      "title": "헌금 궤의 돈으로 성전을 수리하다",
       "actors": [
         "여호야다"
       ],
       "object": "temple",
-      "ref": "열왕기하 12:9-12",
+      "ref": "열왕기하 12:9-16",
       "verseNumbers": [
         9,
-        10,
-        11,
-        12
-      ],
-      "actions": {},
-      "lines": [
-        "해설: 궤에 모인 돈을 세어 성전 공사를 맡은 사람들에게 전달해요."
-      ],
-      "study": "궤에 모인 돈을 세어 성전 공사를 맡은 사람들에게 전달해요.",
-      "actorLines": {},
-      "narrationOnly": true,
-      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"coins","lead":"여호야다","target":null,"mode":"reconstruction","setting":"temple","effect":"coins","emotion":"determined","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"여호야다"},{"action":"grasp","duration":1.2,"actor":"여호야다"},{"action":"lift","duration":1.5,"actor":"여호야다"},{"action":"drop","duration":1.8,"actor":"여호야다"},{"action":"count","duration":1.5,"actor":"여호야다"},{"action":"lower","duration":1.2,"actor":"여호야다"}],"duration":8.2,"support":null,"ref":"열왕기하 12:9-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
-    },
-    {
-      "id": "ot-2ki-13-1",
-      "code": "2ki",
-      "chapter": 13,
-      "title": "구원의 화살",
-      "actors": [
-        "요아스(여호아하스의 아들)",
-        "엘리사"
-      ],
-      "object": "arrow",
-      "ref": "열왕기하 13:10-19",
-      "verseNumbers": [
         10,
         11,
         12,
         13,
         14,
         15,
-        16,
-        17,
-        18,
-        19
+        16
       ],
       "actions": {},
       "lines": [
-        "해설: 엘리사가 손을 얹고 왕에게 구원의 화살을 쏘게 해요. 화살로 땅을 세 번만 친 요아스에게 대여섯 번 쳤어야 했다며 화를 내요."
+        "해설: 여호야다는 성전 문 곁에 궤를 두고 헌금을 모아요. 돈을 세어 공사 책임자에게 건네고, 목수와 석공과 재료 구입에 써요. 일꾼들은 정직하게 일했고, 성전 기구를 만드는 데는 쓰지 않았어요."
       ],
-      "study": "엘리사가 손을 얹고 왕에게 구원의 화살을 쏘게 해요. 화살로 땅을 세 번만 친 요아스에게 대여섯 번 쳤어야 했다며 화를 내요.",
+      "study": "여호야다는 성전 문 곁에 궤를 두고 헌금을 모아요. 돈을 세어 공사 책임자에게 건네고, 목수와 석공과 재료 구입에 써요. 일꾼들은 정직하게 일했고, 성전 기구를 만드는 데는 쓰지 않았어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"shoot","lead":"요아스(여호아하스의 아들)","target":"엘리사","mode":"reconstruction","setting":"courtyard","effect":"arrow","emotion":"determined","prop":"arrow","beats":[{"action":"grasp","duration":1,"actor":"요아스(여호아하스의 아들)"},{"action":"load","duration":1.2,"actor":"요아스(여호아하스의 아들)"},{"action":"aim","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"draw-bow","duration":1.8,"actor":"요아스(여호아하스의 아들)"},{"action":"release","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"look","duration":1.2,"actor":"요아스(여호아하스의 아들)"}],"duration":8.2,"support":null,"ref":"열왕기하 13:10-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"repair","lead":"여호야다","target":null,"mode":"reconstruction","setting":"courtyard","effect":"build","emotion":"focused","prop":"temple","beats":[{"action":"open","duration":1,"actor":"여호야다"},{"action":"count","duration":1.2,"actor":"여호야다"},{"action":"extend","duration":1.5,"actor":"여호야다"},{"action":"receive","duration":1.8,"actor":"여호야다"},{"action":"hammer","duration":1.5,"actor":"여호야다"},{"action":"inspect","duration":1.2,"actor":"여호야다"}],"duration":8.2,"support":null,"ref":"열왕기하 12:9-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-13-1",
+      "code": "2ki",
+      "chapter": 13,
+      "title": "요아스가 엘리사를 찾아가다",
+      "actors": [
+        "요아스(여호아하스의 아들)",
+        "엘리사"
+      ],
+      "object": "arrow",
+      "ref": "열왕기하 13:10-14",
+      "verseNumbers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 요아스는 엘리사가 병들어 죽게 되자 찾아가 이스라엘의 병거와 마병이라 부르며 눈물 흘려요. 엘리사는 왕에게 활과 화살을 준비하게 해요."
+      ],
+      "study": "요아스는 엘리사가 병들어 죽게 되자 찾아가 이스라엘의 병거와 마병이라 부르며 눈물 흘려요. 엘리사는 왕에게 활과 화살을 준비하게 해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
+      "animation": {"version":2,"motif":"mourn","lead":"요아스(여호아하스의 아들)","target":"엘리사","mode":"reconstruction","setting":"chamber","effect":"tears","emotion":"sad","prop":"arrow","beats":[{"action":"walk","duration":1,"actor":"요아스(여호아하스의 아들)"},{"action":"kneel","duration":1.2,"actor":"요아스(여호아하스의 아들)"},{"action":"mourn","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"reach","duration":1.8,"actor":"요아스(여호아하스의 아들)"},{"action":"listen","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"lower","duration":1.2,"actor":"요아스(여호아하스의 아들)"}],"duration":8.2,"support":null,"ref":"열왕기하 13:10-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-13-4",
@@ -1079,16 +1036,14 @@
       "id": "ot-2ki-14-1",
       "code": "2ki",
       "chapter": 14,
-      "title": "가시나무와 백향목",
+      "title": "벧세메스에서 패하고 예루살렘 성벽이 무너지다",
       "actors": [
-        "아마샤"
+        "아마샤",
+        "요아스(여호아하스의 아들)"
       ],
       "object": "wall",
-      "ref": "열왕기하 14:8-14",
+      "ref": "열왕기하 14:11-14",
       "verseNumbers": [
-        8,
-        9,
-        10,
         11,
         12,
         13,
@@ -1096,13 +1051,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 교만해진 아마샤가 요아스에게 싸움을 걸어요. 가시나무와 백향목 비유로 말렸지만 듣지 않다가 벧세메스에서 지고 예루살렘 성벽이 헐려요."
+        "해설: 아마샤가 경고를 듣지 않고 싸우러 나오자 두 왕은 벧세메스에서 맞붙어요. 유다는 패하고 아마샤는 붙잡히며, 예루살렘 성벽 일부가 헐리고 성전과 왕궁의 보물이 약탈돼요."
       ],
-      "study": "교만해진 아마샤가 요아스에게 싸움을 걸어요. 가시나무와 백향목 비유로 말렸지만 듣지 않다가 벧세메스에서 지고 예루살렘 성벽이 헐려요.",
+      "study": "아마샤가 경고를 듣지 않고 싸우러 나오자 두 왕은 벧세메스에서 맞붙어요. 유다는 패하고 아마샤는 붙잡히며, 예루살렘 성벽 일부가 헐리고 성전과 왕궁의 보물이 약탈돼요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"parable","lead":"아마샤","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"wall","beats":[{"action":"listen","duration":1,"actor":"아마샤"},{"action":"read","duration":1.2,"actor":"아마샤"},{"action":"look","duration":1.5,"actor":"아마샤"},{"action":"point","duration":1.8,"actor":"아마샤"},{"action":"listen","duration":1.5,"actor":"아마샤"},{"action":"bow","duration":1.2,"actor":"아마샤"}],"duration":8.2,"support":null,"ref":"열왕기하 14:8-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"siege","lead":"아마샤","target":"요아스(여호아하스의 아들)","mode":"reconstruction","setting":"wall","effect":"collapse","emotion":"worried","prop":"wall","beats":[{"action":"march","duration":1,"actor":"아마샤"},{"action":"strike","duration":1.2,"actor":"아마샤"},{"action":"recoil","duration":1.5,"actor":"아마샤"},{"action":"retreat","duration":1.8,"actor":"아마샤"},{"action":"fall","duration":1.5,"actor":"아마샤"},{"action":"mourn","duration":1.2,"actor":"아마샤"}],"duration":8.2,"support":null,"ref":"열왕기하 14:11-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-14-5",
@@ -1114,53 +1069,46 @@
         "요아스(여호아하스의 아들)"
       ],
       "object": "cedar",
-      "ref": "열왕기하 14:9-10",
+      "ref": "열왕기하 14:8-10",
       "verseNumbers": [
+        8,
         9,
         10
       ],
       "actions": {},
       "lines": [
-        "해설: 이스라엘 왕은 아마샤에게 비유로 경고해요. 가시나무와 백향목은 비유 속 대상이에요."
+        "해설: 아마샤는 이스라엘 왕 요아스에게 맞서자고 도전해요. 요아스는 가시나무와 백향목의 비유로 교만을 경고하지만, 아마샤는 듣지 않아요."
       ],
-      "study": "이스라엘 왕은 아마샤에게 비유로 경고해요. 가시나무와 백향목은 비유 속 대상이에요.",
+      "study": "아마샤는 이스라엘 왕 요아스에게 맞서자고 도전해요. 요아스는 가시나무와 백향목의 비유로 교만을 경고하지만, 아마샤는 듣지 않아요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"parable","lead":"아마샤","target":"요아스(여호아하스의 아들)","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"cedar","beats":[{"action":"listen","duration":1,"actor":"아마샤"},{"action":"read","duration":1.2,"actor":"아마샤"},{"action":"look","duration":1.5,"actor":"아마샤"},{"action":"point","duration":1.8,"actor":"아마샤"},{"action":"listen","duration":1.5,"actor":"아마샤"},{"action":"bow","duration":1.2,"actor":"아마샤"}],"duration":8.2,"support":null,"ref":"열왕기하 14:9-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"요아스(여호아하스의 아들)","target":"아마샤","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"stern","prop":"cedar","beats":[{"action":"listen","duration":1,"actor":"요아스(여호아하스의 아들)"},{"action":"turn","duration":1.2,"actor":"요아스(여호아하스의 아들)"},{"action":"speak","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"point","duration":1.8,"actor":"요아스(여호아하스의 아들)"},{"action":"listen","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"lower","duration":1.2,"actor":"요아스(여호아하스의 아들)"}],"duration":8.2,"support":null,"ref":"열왕기하 14:8-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-15-2",
       "code": "2ki",
       "chapter": 15,
-      "title": "앗수르에 바친 은",
+      "title": "므나헴이 앗수르에 은을 바치다",
       "actors": [
         "므나헴",
         "브가히야"
       ],
       "object": "silver",
-      "ref": "열왕기하 15:17-26",
+      "ref": "열왕기하 15:17-18",
       "verseNumbers": [
         17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26
+        18
       ],
       "actions": {},
       "lines": [
-        "해설: 앗수르 왕 불이 오자 므나헴이 부자들에게 거둔 은 천 달란트를 바쳐 왕위를 지켜요. 그 아들 브가히야는 장관 베가에게 죽어요."
+        "해설: 므나헴은 사마리아에서 열 해 동안 다스리며 여호와 보시기에 악을 행해요. 본문은 그가 왕권을 굳힌 일을 전한 뒤, 그의 악한 통치를 평가해요."
       ],
-      "study": "앗수르 왕 불이 오자 므나헴이 부자들에게 거둔 은 천 달란트를 바쳐 왕위를 지켜요. 그 아들 브가히야는 장관 베가에게 죽어요.",
+      "study": "므나헴은 사마리아에서 열 해 동안 다스리며 여호와 보시기에 악을 행해요. 본문은 그가 왕권을 굳힌 일을 전한 뒤, 그의 악한 통치를 평가해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"tribute","lead":"므나헴","target":"브가히야","mode":"reconstruction","setting":"court","effect":"coins","emotion":"neutral","prop":"silver","beats":[{"action":"inspect","duration":1,"actor":"므나헴"},{"action":"grasp","duration":1.2,"actor":"므나헴"},{"action":"weigh","duration":1.5,"actor":"므나헴"},{"action":"place","duration":1.8,"actor":"므나헴"},{"action":"extend","duration":1.5,"actor":"므나헴"},{"action":"receive","duration":1.2,"actor":"므나헴"}],"duration":8.2,"support":null,"ref":"열왕기하 15:17-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"crown","lead":"므나헴","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"stern","prop":"silver","beats":[{"action":"rise","duration":1,"actor":"므나헴"},{"action":"inspect","duration":1.2,"actor":"므나헴"},{"action":"signal","duration":1.5,"actor":"므나헴"},{"action":"walk","duration":1.8,"actor":"므나헴"},{"action":"sit","duration":1.5,"actor":"므나헴"},{"action":"lower","duration":1.2,"actor":"므나헴"}],"duration":8.2,"support":null,"ref":"열왕기하 15:17-18","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-15-4",
@@ -1246,30 +1194,26 @@
       "id": "ot-2ki-16-2",
       "code": "2ki",
       "chapter": 16,
-      "title": "다메섹의 제단",
+      "title": "아하스가 다메섹 제단을 본뜨게 하다",
       "actors": [
+        "아하스",
         "우리야"
       ],
       "object": "altar",
-      "ref": "열왕기하 16:10-16",
+      "ref": "열왕기하 16:12-13",
       "verseNumbers": [
-        10,
-        11,
         12,
-        13,
-        14,
-        15,
-        16
+        13
       ],
       "actions": {},
       "lines": [
-        "해설: 다메섹에서 본 제단 모양을 보내 제사장 우리야에게 똑같이 만들게 해요. 여호와 앞의 놋 제단은 옆으로 밀어내고, 여쭐 때만 쓰겠다고 해요."
+        "해설: 아하스는 다메섹에서 본 제단을 예루살렘 성전 앞에 세워요. 그 위에 제물을 바치며 자신이 본 이방 제단의 형식을 성전 예배에 들여와요."
       ],
-      "study": "다메섹에서 본 제단 모양을 보내 제사장 우리야에게 똑같이 만들게 해요. 여호와 앞의 놋 제단은 옆으로 밀어내고, 여쭐 때만 쓰겠다고 해요.",
+      "study": "아하스는 다메섹에서 본 제단을 예루살렘 성전 앞에 세워요. 그 위에 제물을 바치며 자신이 본 이방 제단의 형식을 성전 예배에 들여와요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"plan","lead":"우리야","target":null,"mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"altar","beats":[{"action":"inspect","duration":1,"actor":"우리야"},{"action":"open","duration":1.2,"actor":"우리야"},{"action":"read","duration":1.5,"actor":"우리야"},{"action":"point","duration":1.8,"actor":"우리야"},{"action":"write","duration":1.5,"actor":"우리야"},{"action":"fold","duration":1.2,"actor":"우리야"}],"duration":8.2,"support":null,"ref":"열왕기하 16:10-16","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"offer","lead":"아하스","target":"우리야","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"determined","prop":"altar","beats":[{"action":"walk","duration":1,"actor":"아하스"},{"action":"inspect","duration":1.2,"actor":"아하스"},{"action":"point","duration":1.5,"actor":"아하스"},{"action":"pour","duration":1.8,"actor":"아하스"},{"action":"bow","duration":1.5,"actor":"아하스"},{"action":"turn","duration":1.2,"actor":"아하스"}],"duration":8.2,"support":null,"ref":"열왕기하 16:12-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-16-3",
@@ -1406,35 +1350,29 @@
       "id": "ot-2ki-19-1",
       "code": "2ki",
       "chapter": 19,
-      "title": "편지를 펴고 기도",
+      "title": "산헤립의 사신들이 협박을 전하다",
       "actors": [
         "히스기야"
       ],
       "object": "scroll",
-      "ref": "열왕기하 19:8-19",
+      "ref": "열왕기하 19:8-13",
       "verseNumbers": [
         8,
         9,
         10,
         11,
         12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19
+        13
       ],
       "actions": {},
       "lines": [
-        "해설: 산헤립이 다시 협박 편지를 보내자, 히스기야가 성전에서 편지를 펴 놓고 천하 만국이 주만 하나님이신 줄 알게 해 달라고 기도해요."
+        "해설: 산헤립은 구스 왕의 진군 소식을 듣고도 히스기야에게 사신을 보내 항복을 재촉해요. 그는 다른 나라의 신들이 앗수르를 막지 못했다며 예루살렘도 구원받지 못할 것이라고 위협해요."
       ],
-      "study": "산헤립이 다시 협박 편지를 보내자, 히스기야가 성전에서 편지를 펴 놓고 천하 만국이 주만 하나님이신 줄 알게 해 달라고 기도해요.",
+      "study": "산헤립은 구스 왕의 진군 소식을 듣고도 히스기야에게 사신을 보내 항복을 재촉해요. 그는 다른 나라의 신들이 앗수르를 막지 못했다며 예루살렘도 구원받지 못할 것이라고 위협해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"pray","lead":"히스기야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"히스기야"},{"action":"kneel","duration":1.2,"actor":"히스기야"},{"action":"lift","duration":1.5,"actor":"히스기야"},{"action":"pray","duration":1.8,"actor":"히스기야"},{"action":"pray","duration":1.5,"actor":"히스기야"},{"action":"bow","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"열왕기하 19:8-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"히스기야","target":null,"mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"worried","prop":"scroll","beats":[{"action":"receive","duration":1,"actor":"히스기야"},{"action":"read","duration":1.2,"actor":"히스기야"},{"action":"look","duration":1.5,"actor":"히스기야"},{"action":"turn","duration":1.8,"actor":"히스기야"},{"action":"speak","duration":1.5,"actor":"히스기야"},{"action":"lower","duration":1.2,"actor":"히스기야"}],"duration":8.2,"support":null,"ref":"열왕기하 19:8-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-19-3",
@@ -1633,53 +1571,50 @@
       "id": "ot-2ki-22-1",
       "code": "2ki",
       "chapter": 22,
-      "title": "발견된 율법책",
+      "title": "성전에서 발견된 율법책",
       "actors": [
         "힐기야",
         "사반"
       ],
       "object": "temple",
-      "ref": "열왕기하 22:8-10",
+      "ref": "열왕기하 22:8-9",
       "verseNumbers": [
         8,
-        9,
-        10
+        9
       ],
       "actions": {},
       "lines": [
-        "해설: 대제사장 힐기야가 성전에서 오래 잊혔던 율법책을 찾아 사반에게 건네요. 사반이 공사 상황을 보고한 뒤 왕 앞에서 그 책을 읽어요."
+        "해설: 대제사장 힐기야가 성전에서 율법책을 찾아 서기관 사반에게 건네요. 사반은 헌금으로 진행된 수리를 왕에게 보고하고 책의 발견도 알립니다."
       ],
-      "study": "대제사장 힐기야가 성전에서 오래 잊혔던 율법책을 찾아 사반에게 건네요. 사반이 공사 상황을 보고한 뒤 왕 앞에서 그 책을 읽어요.",
+      "study": "대제사장 힐기야가 성전에서 율법책을 찾아 서기관 사반에게 건네요. 사반은 헌금으로 진행된 수리를 왕에게 보고하고 책의 발견도 알립니다.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"discover","lead":"힐기야","target":"사반","mode":"reconstruction","setting":"chamber","effect":"reveal","emotion":"surprised","prop":"temple","beats":[{"action":"bend","duration":1,"actor":"힐기야"},{"action":"open","duration":1.2,"actor":"힐기야"},{"action":"inspect","duration":1.5,"actor":"힐기야"},{"action":"grasp","duration":1.8,"actor":"힐기야"},{"action":"lift","duration":1.5,"actor":"힐기야"},{"action":"startle","duration":1.2,"actor":"힐기야"}],"duration":8.2,"support":null,"ref":"열왕기하 22:8-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"discover","lead":"힐기야","target":"사반","mode":"reconstruction","setting":"chamber","effect":"reveal","emotion":"surprised","prop":"temple","beats":[{"action":"inspect","duration":1,"actor":"힐기야"},{"action":"bend","duration":1.2,"actor":"힐기야"},{"action":"grasp","duration":1.5,"actor":"힐기야"},{"action":"lift","duration":1.8,"actor":"힐기야"},{"action":"show","duration":1.5,"actor":"힐기야"},{"action":"extend","duration":1.2,"actor":"힐기야"}],"duration":8.2,"support":null,"ref":"열왕기하 22:8-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-22-4",
       "code": "2ki",
       "chapter": 22,
-      "title": "발견된 율법책을 읽다",
+      "title": "사반이 왕 앞에서 율법책을 읽다",
       "actors": [
-        "힐기야",
-        "사반"
+        "사반",
+        "요시야"
       ],
       "object": "book",
-      "ref": "열왕기하 22:8-10",
+      "ref": "열왕기하 22:10",
       "verseNumbers": [
-        8,
-        9,
         10
       ],
       "actions": {},
       "lines": [
-        "해설: 힐기야가 발견한 책을 사반에게 주고 사반이 왕 앞에서 읽어요."
+        "해설: 사반은 힐기야에게 받은 율법책을 요시야 왕 앞에서 읽어요. 말씀을 들은 왕은 곧 옷을 찢으며 반응해요."
       ],
-      "study": "힐기야가 발견한 책을 사반에게 주고 사반이 왕 앞에서 읽어요.",
+      "study": "사반은 힐기야에게 받은 율법책을 요시야 왕 앞에서 읽어요. 말씀을 들은 왕은 곧 옷을 찢으며 반응해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"read","lead":"힐기야","target":"사반","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"determined","prop":"book","beats":[{"action":"inspect","duration":1,"actor":"힐기야"},{"action":"grasp","duration":1.2,"actor":"힐기야"},{"action":"open","duration":1.5,"actor":"힐기야"},{"action":"read","duration":1.8,"actor":"힐기야"},{"action":"write","duration":1.5,"actor":"힐기야"},{"action":"place","duration":1.2,"actor":"힐기야"}],"duration":8.2,"support":null,"ref":"열왕기하 22:8-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"read","lead":"사반","target":"요시야","mode":"reconstruction","setting":"chamber","effect":"scroll","emotion":"focused","prop":"book","beats":[{"action":"open","duration":1,"actor":"사반"},{"action":"open","duration":1.2,"actor":"사반"},{"action":"read","duration":1.5,"actor":"사반"},{"action":"read","duration":1.8,"actor":"사반"},{"action":"look","duration":1.5,"actor":"사반"},{"action":"fold","duration":1.2,"actor":"사반"}],"duration":8.2,"support":null,"ref":"열왕기하 22:10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-25-0",
@@ -1715,16 +1650,13 @@
       "id": "ot-2ki-25-1",
       "code": "2ki",
       "chapter": 25,
-      "title": "불타는 성전",
+      "title": "성전 기구를 약탈하다",
       "actors": [
         "느부사라단"
       ],
       "object": "temple",
-      "ref": "열왕기하 25:8-17",
+      "ref": "열왕기하 25:11-17",
       "verseNumbers": [
-        8,
-        9,
-        10,
         11,
         12,
         13,
@@ -1735,13 +1667,13 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 시위대장 느부사라단이 성전과 왕궁과 큰 집들을 불사르고 성벽을 헐어요. 성전의 놋 기둥과 놋 바다를 깨뜨려 놋과 금은 그릇을 가져가요."
+        "해설: 바벨론 군대는 남은 백성을 끌고 가고 포도원지기와 농부 일부를 남겨요. 놋 기둥과 바다, 여러 성전 기구를 깨뜨리고 금은 그릇과 기둥 장식도 가져가요."
       ],
-      "study": "시위대장 느부사라단이 성전과 왕궁과 큰 집들을 불사르고 성벽을 헐어요. 성전의 놋 기둥과 놋 바다를 깨뜨려 놋과 금은 그릇을 가져가요.",
+      "study": "바벨론 군대는 남은 백성을 끌고 가고 포도원지기와 농부 일부를 남겨요. 놋 기둥과 바다, 여러 성전 기구를 깨뜨리고 금은 그릇과 기둥 장식도 가져가요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"burn","lead":"느부사라단","target":null,"mode":"reconstruction","setting":"ruins","effect":"fire","emotion":"sad","prop":"temple","beats":[{"action":"look","duration":1,"actor":"느부사라단"},{"action":"startle","duration":1.2,"actor":"느부사라단"},{"action":"retreat","duration":1.5,"actor":"느부사라단"},{"action":"brace","duration":1.8,"actor":"느부사라단"},{"action":"mourn","duration":1.5,"actor":"느부사라단"},{"action":"lower","duration":1.2,"actor":"느부사라단"}],"duration":8.2,"support":null,"ref":"열왕기하 25:8-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"store","lead":"느부사라단","target":null,"mode":"reconstruction","setting":"store","effect":"stack","emotion":"stern","prop":"temple","beats":[{"action":"walk","duration":1,"actor":"느부사라단"},{"action":"inspect","duration":1.2,"actor":"느부사라단"},{"action":"gather","duration":1.5,"actor":"느부사라단"},{"action":"strike","duration":1.8,"actor":"느부사라단"},{"action":"carry","duration":1.5,"actor":"느부사라단"},{"action":"count","duration":1.2,"actor":"느부사라단"}],"duration":8.2,"support":null,"ref":"열왕기하 25:11-17","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-25-4",
@@ -3032,6 +2964,140 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
       "animation": {"version":2,"motif":"escape","lead":"그달리야","target":"이스마엘","mode":"illustration","setting":"road","effect":"journey","emotion":"worried","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"그달리야"},{"action":"startle","duration":1.2,"actor":"그달리야"},{"action":"turn","duration":1.5,"actor":"그달리야"},{"action":"run","duration":1.8,"actor":"그달리야"},{"action":"run","duration":1.5,"actor":"그달리야"},{"action":"look","duration":1.2,"actor":"그달리야"}],"duration":8.2,"support":null,"ref":"열왕기하 25:18-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-2-0",
+      "code": "2ki",
+      "chapter": 2,
+      "title": "엘리사를 조롱한 벧엘의 아이들",
+      "actors": [
+        "엘리사",
+        "벧엘의 아이들"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 2:23-25",
+      "verseNumbers": [
+        23,
+        24,
+        25
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리사가 벧엘로 올라가는 길에 아이들이 그를 조롱해요. 엘리사가 하나님의 이름으로 말한 뒤 곰 두 마리가 숲에서 나와 아이들을 해쳐요. 이 대목은 가벼운 장난이 아니라 예언자를 향한 공개적 모욕의 결과를 다뤄요."
+      ],
+      "study": "엘리사가 벧엘로 올라가는 길에 아이들이 그를 조롱해요. 엘리사가 하나님의 이름으로 말한 뒤 곰 두 마리가 숲에서 나와 아이들을 해쳐요. 이 대목은 가벼운 장난이 아니라 예언자를 향한 공개적 모욕의 결과를 다뤄요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"엘리사","target":"벧엘의 아이들","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 2:23-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-3-1",
+      "code": "2ki",
+      "chapter": 3,
+      "title": "아침에 골짜기에 가득 찬 물",
+      "actors": [
+        "엘리사",
+        "여호람(아합의 아들)",
+        "여호사밧",
+        "에돔 왕"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 3:18-20",
+      "verseNumbers": [
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리사는 물이 차는 일이 하나님께 쉬운 일이라고 전하고, 성읍을 무너뜨리라는 말씀도 함께 전해요. 이튿날 아침 에돔 쪽에서 물이 흘러와 골짜기에 가득 차요."
+      ],
+      "study": "엘리사는 물이 차는 일이 하나님께 쉬운 일이라고 전하고, 성읍을 무너뜨리라는 말씀도 함께 전해요. 이튿날 아침 에돔 쪽에서 물이 흘러와 골짜기에 가득 차요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"recede","lead":"엘리사","target":"여호람(아합의 아들)","mode":"reconstruction","setting":"water","effect":"recede","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"listen","duration":1.2,"actor":"엘리사"},{"action":"point","duration":1.5,"actor":"엘리사"},{"action":"look","duration":1.8,"actor":"엘리사"},{"action":"bow","duration":1.5,"actor":"엘리사"},{"action":"stand","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-5-1",
+      "code": "2ki",
+      "chapter": 5,
+      "title": "게하시에게 임한 나병",
+      "actors": [
+        "엘리사",
+        "게하시"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 5:26-27",
+      "verseNumbers": [
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리사는 게하시가 예물을 숨긴 일을 알고 책망해요. 나아만의 나병이 게하시와 그의 후손에게 옮겨 붙고, 게하시는 나병 환자가 되어 엘리사 앞에서 나가요."
+      ],
+      "study": "엘리사는 게하시가 예물을 숨긴 일을 알고 책망해요. 나아만의 나병이 게하시와 그의 후손에게 옮겨 붙고, 게하시는 나병 환자가 되어 엘리사 앞에서 나가요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"엘리사","target":"게하시","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 5:26-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-13-1",
+      "code": "2ki",
+      "chapter": 13,
+      "title": "세 번만 친 왕에게 남은 승리",
+      "actors": [
+        "요아스(여호아하스의 아들)",
+        "엘리사"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 13:18-19",
+      "verseNumbers": [
+        18,
+        19
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 엘리사는 왕에게 화살로 땅을 치라고 하지만 요아스는 세 번만 치고 멈춰요. 엘리사는 더 많이 쳤다면 아람을 완전히 무너뜨렸을 것이라며 왕의 열의가 부족했음을 꾸짖어요."
+      ],
+      "study": "엘리사는 왕에게 화살로 땅을 치라고 하지만 요아스는 세 번만 치고 멈춰요. 엘리사는 더 많이 쳤다면 아람을 완전히 무너뜨렸을 것이라며 왕의 열의가 부족했음을 꾸짖어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"strike","lead":"요아스(여호아하스의 아들)","target":"엘리사","mode":"reconstruction","setting":"water","effect":"water-strike","emotion":"determined","prop":"scene-marker","beats":[{"action":"grasp","duration":1,"actor":"요아스(여호아하스의 아들)"},{"action":"lift","duration":1.2,"actor":"요아스(여호아하스의 아들)"},{"action":"windup","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"strike","duration":1.8,"actor":"요아스(여호아하스의 아들)"},{"action":"recoil","duration":1.5,"actor":"요아스(여호아하스의 아들)"},{"action":"lower","duration":1.2,"actor":"요아스(여호아하스의 아들)"}],"duration":8.2,"support":null,"ref":"열왕기하 13:18-19","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-2ki-extra-15-2",
+      "code": "2ki",
+      "chapter": 15,
+      "title": "베가의 반란과 브가히야의 죽음",
+      "actors": [
+        "므나헴",
+        "브가히야",
+        "베가"
+      ],
+      "object": "scene-marker",
+      "ref": "열왕기하 15:21-26",
+      "verseNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 므나헴이 죽고 아들 브가히야가 왕위를 잇지만, 군 지휘관 베가가 반역해 그와 신하들을 죽여요. 베가가 뒤를 이어 이스라엘 왕이 돼요."
+      ],
+      "study": "므나헴이 죽고 아들 브가히야가 왕위를 잇지만, 군 지휘관 베가가 반역해 그와 신하들을 죽여요. 베가가 뒤를 이어 이스라엘 왕이 돼요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"crown","lead":"므나헴","target":"브가히야","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"므나헴"},{"action":"kneel","duration":1.2,"actor":"므나헴"},{"action":"receive","duration":1.5,"actor":"므나헴"},{"action":"wear","duration":1.8,"actor":"므나헴"},{"action":"rise","duration":1.5,"actor":"므나헴"},{"action":"bow","duration":1.2,"actor":"므나헴"}],"duration":8.2,"support":null,"ref":"열왕기하 15:21-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
