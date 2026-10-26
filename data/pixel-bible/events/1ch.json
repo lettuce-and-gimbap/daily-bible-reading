@@ -2006,7 +2006,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "사건의 핵심 행동과 반응을 본문 범위 안에서 설명형 애니메이션으로 재구성해요. 세부 동작은 연출이며 폭력 장면은 비그래픽하게 표현해요.",
-      "animation": {"version":2,"motif":"crown","lead":"다윗","target":"솔로몬","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"다윗"},{"action":"kneel","duration":1.2,"actor":"다윗"},{"action":"receive","duration":1.5,"actor":"다윗"},{"action":"wear","duration":1.8,"actor":"다윗"},{"action":"rise","duration":1.5,"actor":"다윗"},{"action":"bow","duration":1.2,"actor":"다윗"}],"duration":8.2,"support":null,"ref":"역대상 29:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"crown","lead":"솔로몬","target":"다윗","mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"crown","beats":[{"action":"bow","duration":1,"actor":"솔로몬"},{"action":"kneel","duration":1.2,"actor":"솔로몬"},{"action":"receive","duration":1.5,"actor":"솔로몬"},{"action":"wear","duration":1.8,"actor":"솔로몬"},{"action":"rise","duration":1.5,"actor":"솔로몬"},{"action":"sit","duration":1.2,"actor":"솔로몬"}],"duration":8.2,"support":null,"ref":"역대상 29:20-25","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-1ch-extra-30",
