@@ -1,10 +1,10 @@
 {
   "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
   "expected": 7957,
-  "authored": 7553,
-  "contentClips": 7541,
+  "authored": 7957,
+  "contentClips": 7945,
   "textualNotices": 12,
-  "pending": 404,
+  "pending": 0,
   "chapters": [
     {
       "code": "mat",
@@ -1676,155 +1676,155 @@
       "code": "rev",
       "chapter": 1,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 2,
       "expected": 29,
-      "authored": 0,
-      "pending": 29
+      "authored": 29,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 3,
       "expected": 22,
-      "authored": 0,
-      "pending": 22
+      "authored": 22,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 4,
       "expected": 11,
-      "authored": 0,
-      "pending": 11
+      "authored": 11,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 5,
       "expected": 14,
-      "authored": 0,
-      "pending": 14
+      "authored": 14,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 6,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 7,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 8,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 9,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 10,
       "expected": 11,
-      "authored": 0,
-      "pending": 11
+      "authored": 11,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 11,
       "expected": 19,
-      "authored": 0,
-      "pending": 19
+      "authored": 19,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 12,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 13,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 14,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 15,
       "expected": 8,
-      "authored": 0,
-      "pending": 8
+      "authored": 8,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 16,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 17,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 18,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 19,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 20,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 21,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "rev",
       "chapter": 22,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     }
   ]
 }
