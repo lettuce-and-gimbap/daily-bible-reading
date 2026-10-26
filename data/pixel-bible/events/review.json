@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 1021,
+    "scenesInFiles": 1031,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 307
+    "curatedSupplementalScenes": 317
   },
   "books": [
     {
@@ -218,9 +218,10 @@
     {
       "code": "lam",
       "chapters": 5,
-      "scenes": 1,
+      "scenes": 11,
       "sourceMatchedSceneCandidates": 1,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 10
     },
     {
       "code": "ezk",
@@ -28231,6 +28232,10 @@
       {
         "book": "jer",
         "scenesAdded": 16
+      },
+      {
+        "book": "lam",
+        "scenesAdded": 10
       }
     ]
   }

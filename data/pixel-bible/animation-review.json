@@ -336,14 +336,14 @@
     },
     {
       "code": "lam",
-      "payloadSha256": "2ffc3f7f3d07ee4892799047e4b6390b98e6c3f9a0e06f55ae5e2b51c7826686",
-      "scenes": 1,
-      "existing": 1,
+      "payloadSha256": "03f897ce0d1f7803d847fa60bcf82d095e780ddc398ee7db30e5fc535b64f6c8",
+      "scenes": 11,
+      "existing": 11,
       "restored": 0,
       "corrected": 0,
-      "planned": 1,
+      "planned": 11,
       "modes": {
-        "illustration": 1
+        "illustration": 11
       },
       "status": "authored-awaiting-browser-review"
     },
