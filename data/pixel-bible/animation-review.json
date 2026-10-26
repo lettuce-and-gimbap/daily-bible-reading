@@ -448,14 +448,14 @@
     },
     {
       "code": "mic",
-      "payloadSha256": "818eb52e688078fc6550f3ca7d4d955953bbef050adfbe9154b0b91f0b891706",
-      "scenes": 2,
-      "existing": 2,
+      "payloadSha256": "0deda2fad8d8a7a3ab34af2f607b6c5189866cca5d92a9cdb8727def4c25384c",
+      "scenes": 10,
+      "existing": 10,
       "restored": 0,
       "corrected": 0,
-      "planned": 2,
+      "planned": 10,
       "modes": {
-        "illustration": 2
+        "illustration": 10
       },
       "status": "authored-awaiting-browser-review"
     },

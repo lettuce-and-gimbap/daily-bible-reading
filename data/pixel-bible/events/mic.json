@@ -51,6 +51,260 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"예루살렘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"gate","beats":[{"action":"listen","duration":1,"actor":"예루살렘"},{"action":"read","duration":1.2,"actor":"예루살렘"},{"action":"look","duration":1.5,"actor":"예루살렘"},{"action":"point","duration":1.8,"actor":"예루살렘"},{"action":"listen","duration":1.5,"actor":"예루살렘"},{"action":"bow","duration":1.2,"actor":"예루살렘"}],"duration":8.2,"support":null,"ref":"미가 1:8-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-2-0",
+      "code": "mic",
+      "chapter": 2,
+      "title": "탐욕스러운 이들이 밭과 집을 빼앗다",
+      "actors": [
+        "탐욕스러운 자들",
+        "부녀와 어린 자녀"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 2:1-5",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 권세 있는 이들이 밤에 악을 꾀하고 아침에 밭과 집을 빼앗는 일을 고발해요."
+      ],
+      "study": "권세 있는 이들이 밤에 악을 꾀하고 아침에 밭과 집을 빼앗는 일을 고발해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"judgment","lead":"탐욕스러운 자들","target":"부녀와 어린 자녀","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"탐욕스러운 자들"},{"action":"turn","duration":1.2,"actor":"탐욕스러운 자들"},{"action":"speak","duration":1.5,"actor":"탐욕스러운 자들"},{"action":"point","duration":1.8,"actor":"탐욕스러운 자들"},{"action":"listen","duration":1.5,"actor":"탐욕스러운 자들"},{"action":"lower","duration":1.2,"actor":"탐욕스러운 자들"}],"duration":8.2,"support":null,"ref":"미가 2:1-5","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-2-1",
+      "code": "mic",
+      "chapter": 2,
+      "title": "남은 자를 모아 한 떼로 세우다",
+      "actors": [
+        "야곱의 남은 자",
+        "거짓 선지자"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 2:6-13",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 거짓된 평안을 말하는 이들과 달리, 흩어진 남은 자를 모아 인도하겠다는 회복을 전해요."
+      ],
+      "study": "거짓된 평안을 말하는 이들과 달리, 흩어진 남은 자를 모아 인도하겠다는 회복을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"야곱의 남은 자","target":"거짓 선지자","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"야곱의 남은 자"},{"action":"bend","duration":1.2,"actor":"야곱의 남은 자"},{"action":"grasp","duration":1.5,"actor":"야곱의 남은 자"},{"action":"lift","duration":1.8,"actor":"야곱의 남은 자"},{"action":"bundle","duration":1.5,"actor":"야곱의 남은 자"},{"action":"carry","duration":1.2,"actor":"야곱의 남은 자"}],"duration":8.2,"support":null,"ref":"미가 2:6-13","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-3-0",
+      "code": "mic",
+      "chapter": 3,
+      "title": "백성의 살을 뜯는 지도자들을 꾸짖다",
+      "actors": [
+        "야곱의 우두머리들",
+        "백성",
+        "제사장들",
+        "거짓 선지자들"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 3:1-12",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 미가는 정의를 미워하고 뇌물로 판단하는 지도자·제사장·예언자들을 꾸짖고 시온의 심판을 경고해요."
+      ],
+      "study": "미가는 정의를 미워하고 뇌물로 판단하는 지도자·제사장·예언자들을 꾸짖고 시온의 심판을 경고해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"야곱의 우두머리들","target":"백성","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱의 우두머리들"},{"action":"turn","duration":1.2,"actor":"야곱의 우두머리들"},{"action":"speak","duration":1.5,"actor":"야곱의 우두머리들"},{"action":"point","duration":1.8,"actor":"야곱의 우두머리들"},{"action":"listen","duration":1.5,"actor":"야곱의 우두머리들"},{"action":"lower","duration":1.2,"actor":"야곱의 우두머리들"}],"duration":8.2,"support":null,"ref":"미가 3:1-12","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-4-0",
+      "code": "mic",
+      "chapter": 4,
+      "title": "시온으로 모여드는 민족과 돌아오는 사람들",
+      "actors": [
+        "민족들",
+        "딸 시온",
+        "저는 자와 쫓겨난 자"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 4:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 민족들이 여호와의 산으로 오고, 저는 자와 쫓겨난 이들이 모여 회복되는 환상을 그려요."
+      ],
+      "study": "민족들이 여호와의 산으로 오고, 저는 자와 쫓겨난 이들이 모여 회복되는 환상을 그려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"gather","lead":"민족들","target":"딸 시온","mode":"illustration","setting":"pasture","effect":"grain","emotion":"gentle","prop":"scene-marker","beats":[{"action":"walk","duration":1,"actor":"민족들"},{"action":"bend","duration":1.2,"actor":"민족들"},{"action":"grasp","duration":1.5,"actor":"민족들"},{"action":"lift","duration":1.8,"actor":"민족들"},{"action":"bundle","duration":1.5,"actor":"민족들"},{"action":"carry","duration":1.2,"actor":"민족들"}],"duration":8.2,"support":null,"ref":"미가 4:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-5-0",
+      "code": "mic",
+      "chapter": 5,
+      "title": "베들레헴에서 나올 다스릴 이를 약속하다",
+      "actors": [
+        "다스릴 자",
+        "야곱의 남은 자",
+        "앗수르"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 5:1-9",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 작은 베들레헴에서 다스릴 이가 나오고 남은 자가 회복되리라는 약속을 전해요."
+      ],
+      "study": "작은 베들레헴에서 다스릴 이가 나오고 남은 자가 회복되리라는 약속을 전해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"다스릴 자","target":"야곱의 남은 자","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"다스릴 자"},{"action":"lift","duration":1.2,"actor":"다스릴 자"},{"action":"speak","duration":1.5,"actor":"다스릴 자"},{"action":"bless","duration":1.8,"actor":"다스릴 자"},{"action":"lower","duration":1.5,"actor":"다스릴 자"},{"action":"bow","duration":1.2,"actor":"다스릴 자"}],"duration":8.2,"support":null,"ref":"미가 5:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-6-0",
+      "code": "mic",
+      "chapter": 6,
+      "title": "하나님이 베푸신 일을 기억하며 대답하다",
+      "actors": [
+        "이스라엘 백성",
+        "모세와 아론과 미리암",
+        "발락",
+        "발람"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 6:1-8",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 산들이 증인처럼 불리고, 하나님이 출애굽과 발락·발람 사건을 되짚으시며 정의와 인애와 겸손을 요구해요."
+      ],
+      "study": "산들이 증인처럼 불리고, 하나님이 출애굽과 발락·발람 사건을 되짚으시며 정의와 인애와 겸손을 요구해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"dispute","lead":"이스라엘 백성","target":"모세와 아론과 미리암","mode":"illustration","setting":"court","effect":"speech","emotion":"angry","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"이스라엘 백성"},{"action":"turn","duration":1.2,"actor":"이스라엘 백성"},{"action":"point","duration":1.5,"actor":"이스라엘 백성"},{"action":"point","duration":1.8,"actor":"이스라엘 백성"},{"action":"listen","duration":1.5,"actor":"이스라엘 백성"},{"action":"lower","duration":1.2,"actor":"이스라엘 백성"}],"duration":8.2,"support":null,"ref":"미가 6:1-8","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-7-0",
+      "code": "mic",
+      "chapter": 7,
+      "title": "원수 앞에서도 구원을 기다리다",
+      "actors": [
+        "미가",
+        "지도자와 재판관",
+        "원수"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 7:1-10",
+      "verseNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 미가는 믿을 사람을 찾기 어려운 사회를 탄식하면서도 하나님을 바라보고 구원을 기다려요."
+      ],
+      "study": "미가는 믿을 사람을 찾기 어려운 사회를 탄식하면서도 하나님을 바라보고 구원을 기다려요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"pray","lead":"미가","target":"지도자와 재판관","mode":"illustration","setting":"courtyard","effect":"prayer","emotion":"worried","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"미가"},{"action":"kneel","duration":1.2,"actor":"미가"},{"action":"lift","duration":1.5,"actor":"미가"},{"action":"pray","duration":1.8,"actor":"미가"},{"action":"pray","duration":1.5,"actor":"미가"},{"action":"bow","duration":1.2,"actor":"미가"}],"duration":8.2,"support":null,"ref":"미가 7:1-10","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-mic-extra-7-1",
+      "code": "mic",
+      "chapter": 7,
+      "title": "죄를 용서하고 다시 세우시는 하나님을 노래하다",
+      "actors": [
+        "미가",
+        "아브라함과 야곱"
+      ],
+      "object": "scene-marker",
+      "ref": "미가 7:18-20",
+      "verseNumbers": [
+        18,
+        19,
+        20
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 미가는 죄를 용서하고 조상에게 하신 약속을 지키시는 하나님을 찬양하며 예언서를 맺어요."
+      ],
+      "study": "미가는 죄를 용서하고 조상에게 하신 약속을 지키시는 하나님을 찬양하며 예언서를 맺어요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
+      "animation": {"version":2,"motif":"promise","lead":"미가","target":"아브라함과 야곱","mode":"illustration","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"미가"},{"action":"lift","duration":1.2,"actor":"미가"},{"action":"speak","duration":1.5,"actor":"미가"},{"action":"bless","duration":1.8,"actor":"미가"},{"action":"lower","duration":1.5,"actor":"미가"},{"action":"bow","duration":1.2,"actor":"미가"}],"duration":8.2,"support":null,"ref":"미가 7:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {
