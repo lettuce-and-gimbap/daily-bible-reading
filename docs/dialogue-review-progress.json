@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "3jn",
-    "nextBook": "jud",
-    "booksCompleted": 64,
+    "currentBook": "jud",
+    "nextBook": "rev",
+    "booksCompleted": 65,
     "completedBooks": [
       "gen",
       "exo",
@@ -361,10 +361,11 @@
       "2pe",
       "1jn",
       "2jn",
-      "3jn"
+      "3jn",
+      "jud"
     ],
-    "chaptersReviewed": 1166,
-    "relationshipLinksReviewed": 3651,
+    "chaptersReviewed": 1167,
+    "relationshipLinksReviewed": 3656,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -375,9 +376,9 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요한삼서 한 장에서 가이오의 진실한 행실과 나그네 형제 환대를 칭찬하고 디오드레베의 권력욕을 경계하는 발화 2문장에 각각 구절 근거를 연결했다. 수신자 간 실제 만남으로 꾸미지 않고 관계 연결 5개를 확인했다. 다음은 유다서다.",
+    "statusNote": "유다서 한 장에서 믿음을 위해 힘써 싸우라는 권면과 넘어지지 않게 지키시는 하나님께 드리는 찬양을 각각의 절에 연결했다. 과거 인용 인물에게 현장 발화를 맡기지 않고 서신의 수신자 대상 발화로 유지했으며 관계 연결 5개를 확인했다. 다음은 요한계시록이다.",
     "partialBookAudit": {
-      "book": "3jn",
+      "book": "jud",
       "chaptersScanned": 1,
       "chaptersWithAuthoredDialogueReviewed": 1,
       "authoredUtteranceGroupsReviewed": 1,
@@ -397,7 +398,7 @@
       "chaptersReviewedList": [
         1
       ],
-      "statusNote": "요한삼서 한 장에서 가이오의 진실한 행실과 나그네 형제 환대를 칭찬하고 디오드레베의 권력욕을 경계하는 발화 2문장에 각각 구절 근거를 연결했다. 수신자 간 실제 만남으로 꾸미지 않고 관계 연결 5개를 확인했다. 다음은 유다서다."
+      "statusNote": "유다서 한 장에서 믿음을 위해 힘써 싸우라는 권면과 넘어지지 않게 지키시는 하나님께 드리는 찬양을 각각의 절에 연결했다. 과거 인용 인물에게 현장 발화를 맡기지 않고 서신의 수신자 대상 발화로 유지했으며 관계 연결 5개를 확인했다. 다음은 요한계시록이다."
     },
     "currentBookStatus": "complete"
   }
