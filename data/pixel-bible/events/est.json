@@ -634,7 +634,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"crown","lead":"아하수에로","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"scene-marker","beats":[{"action":"bow","duration":1,"actor":"아하수에로"},{"action":"kneel","duration":1.2,"actor":"아하수에로"},{"action":"receive","duration":1.5,"actor":"아하수에로"},{"action":"wear","duration":1.8,"actor":"아하수에로"},{"action":"rise","duration":1.5,"actor":"아하수에로"},{"action":"bow","duration":1.2,"actor":"아하수에로"}],"duration":8.2,"support":null,"ref":"에스더 2:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"decree","lead":"아하수에로","target":null,"mode":"reconstruction","setting":"court","effect":"scroll","emotion":"determined","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"아하수에로"},{"action":"look","duration":1.2,"actor":"아하수에로"},{"action":"speak","duration":1.5,"actor":"아하수에로"},{"action":"point","duration":1.8,"actor":"아하수에로"},{"action":"signal","duration":1.5,"actor":"아하수에로"},{"action":"stand","duration":1.2,"actor":"아하수에로"}],"duration":8.2,"support":null,"ref":"에스더 2:1-4","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-est-extra-4-0",
