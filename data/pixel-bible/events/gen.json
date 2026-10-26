@@ -1946,7 +1946,8 @@
       "chapter": 41,
       "title": "총리가 된 요셉",
       "actors": [
-        "요셉"
+        "요셉",
+        "바로"
       ],
       "object": "signet",
       "ref": "창세기 41:37-45",
@@ -1969,7 +1970,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"invest","lead":"요셉","target":null,"mode":"reconstruction","setting":"court","effect":"crown","emotion":"joy","prop":"signet","beats":[{"action":"bow","duration":1,"actor":"요셉"},{"action":"kneel","duration":1.2,"actor":"요셉"},{"action":"receive","duration":1.5,"actor":"요셉"},{"action":"wear","duration":1.8,"actor":"요셉"},{"action":"rise","duration":1.5,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 41:37-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"invest","lead":"바로","target":"요셉","mode":"reconstruction","setting":"court","effect":"none","emotion":"joy","prop":"signet","beats":[{"action":"speak","actor":"바로","duration":1},{"action":"extend","actor":"바로","duration":1.2},{"action":"receive","actor":"요셉","duration":1.5},{"action":"wear","actor":"요셉","duration":1.8},{"action":"rise","actor":"요셉","duration":1.5},{"action":"walk","actor":"요셉","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 41:37-45","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-41-3",
@@ -2630,7 +2631,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"blessing","lead":"야곱","target":"요셉","mode":"reconstruction","setting":"courtyard","effect":"light","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"야곱"},{"action":"lift","duration":1.2,"actor":"야곱"},{"action":"bless","duration":1.5,"actor":"야곱"},{"action":"bless","duration":1.8,"actor":"야곱"},{"action":"lower","duration":1.5,"actor":"야곱"},{"action":"bow","duration":1.2,"actor":"야곱"}],"duration":8.2,"support":null,"ref":"창세기 48:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"blessing","lead":"야곱","target":"에브라임","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"sit","actor":"야곱","duration":1},{"action":"reach","actor":"요셉","duration":1.2},{"action":"bless","actor":"야곱","duration":1.5},{"action":"touch","actor":"요셉","duration":1.8},{"action":"speak","actor":"야곱","duration":1.5},{"action":"bless","actor":"야곱","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 48:1-22","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-50-0",
@@ -2681,7 +2682,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"야곱","mode":"reconstruction","setting":"courtyard","effect":"transfer","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"요셉"},{"action":"bow","duration":1.2,"actor":"요셉"},{"action":"extend","duration":1.5,"actor":"요셉"},{"action":"receive","duration":1.8,"actor":"요셉"},{"action":"bow","duration":1.5,"actor":"요셉"},{"action":"stand","duration":1.2,"actor":"요셉"}],"duration":8.2,"support":null,"ref":"창세기 50:1-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"reconcile","lead":"요셉","target":"형들","mode":"reconstruction","setting":"courtyard","effect":"none","emotion":"gentle","prop":"scene-marker","beats":[{"action":"mourn","actor":"요셉","duration":1},{"action":"carry","actor":"애굽 사람들","duration":1.2},{"action":"walk","actor":"요셉","duration":1.5},{"action":"bow","actor":"형들","duration":1.8},{"action":"speak","actor":"요셉","duration":1.5},{"action":"pledge","actor":"형들","duration":1.2}],"duration":8.2,"support":null,"ref":"창세기 50:1-26","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-gen-extra-1-0",
