@@ -294,9 +294,9 @@
   "relationshipQualityReaudit": {
     "status": "in-progress",
     "startingBook": "gen",
-    "currentBook": "1jn",
-    "nextBook": "2jn",
-    "booksCompleted": 62,
+    "currentBook": "2jn",
+    "nextBook": "3jn",
+    "booksCompleted": 63,
     "completedBooks": [
       "gen",
       "exo",
@@ -359,10 +359,11 @@
       "jas",
       "1pe",
       "2pe",
-      "1jn"
+      "1jn",
+      "2jn"
     ],
-    "chaptersReviewed": 1164,
-    "relationshipLinksReviewed": 3642,
+    "chaptersReviewed": 1165,
+    "relationshipLinksReviewed": 3646,
     "authoredPairEntriesReviewed": 944,
     "allBooksStructuralAudit": {
       "books": 66,
@@ -373,33 +374,29 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요한일서 5장 전체에서 생명의 말씀에 대한 증언, 죄와 대언자, 하나님의 자녀와 행함 있는 사랑, 영 분별과 형제 사랑, 아들 안의 영생을 다룬 5묶음·10문장을 개별 절 근거에 연결했다. 관계 연결 11개를 확인했다. 다음은 요한이서다.",
+    "statusNote": "요한이서 한 장의 발화를 살펴 진리와 사랑 안에서 행하라는 권면, 그리스도의 성육신을 부인하는 이들에 대한 경고를 2문장·절별 참조로 연결했다. 편지의 수신 공동체와 실제 현장 대화를 혼동하지 않고 관계 연결 4개를 확인했다. 다음은 요한삼서다.",
     "partialBookAudit": {
-      "book": "1jn",
-      "chaptersScanned": 5,
-      "chaptersWithAuthoredDialogueReviewed": 5,
-      "authoredUtteranceGroupsReviewed": 5,
-      "utteranceReferencesCorrected": 10,
-      "chapterDialogueAudit": 5,
+      "book": "2jn",
+      "chaptersScanned": 1,
+      "chaptersWithAuthoredDialogueReviewed": 1,
+      "authoredUtteranceGroupsReviewed": 1,
+      "utteranceReferencesCorrected": 2,
+      "chapterDialogueAudit": 1,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
-      "relationshipEdgesAudited": 11,
+      "relationshipEdgesAudited": 4,
       "authoredPairLinks": 0,
-      "relationshipBasedPairLines": 11,
-      "relationshipLinksFound": 11,
+      "relationshipBasedPairLines": 4,
+      "relationshipLinksFound": 4,
       "authoredLinksCovered": 0,
-      "generatedLinksRemaining": 11,
+      "generatedLinksRemaining": 4,
       "nonDialogueLinksRemoved": 0,
       "status": "complete",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
-        1,
-        2,
-        3,
-        4,
-        5
+        1
       ],
-      "statusNote": "요한일서 5장 전체에서 생명의 말씀에 대한 증언, 죄와 대언자, 하나님의 자녀와 행함 있는 사랑, 영 분별과 형제 사랑, 아들 안의 영생을 다룬 5묶음·10문장을 개별 절 근거에 연결했다. 관계 연결 11개를 확인했다. 다음은 요한이서다."
+      "statusNote": "요한이서 한 장의 발화를 살펴 진리와 사랑 안에서 행하라는 권면, 그리스도의 성육신을 부인하는 이들에 대한 경고를 2문장·절별 참조로 연결했다. 편지의 수신 공동체와 실제 현장 대화를 혼동하지 않고 관계 연결 4개를 확인했다. 다음은 요한삼서다."
     },
     "currentBookStatus": "complete"
   }
