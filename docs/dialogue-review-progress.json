@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "scope": "창세기부터 요한계시록까지 권별 관계·사건 기반 양방향 대사 검토",
   "booksTotal": 66,
-  "booksCompleted": 10,
-  "currentBook": "1ki",
+  "booksCompleted": 11,
+  "currentBook": "2ki",
   "currentBookStatus": "in-progress",
-  "nextBook": "1ki",
+  "nextBook": "2ki",
   "books": {
     "gen": {
       "chaptersScanned": 50,
@@ -177,6 +177,19 @@
       "relationshipBasedPairLines": 363,
       "status": "complete",
       "statusNote": "사무엘하 24장 전체의 장별 인물·사건 인덱스와 인간 관계선 385개를 대조했다. 모든 연결이 양방향 대화 후보로 이어지며 미연결은 0개다. 다윗과 아말렉 청년, 야베스 길르앗 사람들, 아브넬·요압, 이스라엘 지파들, 나단, 므비보셋, 우리아, 압살롬·후새, 시므이, 바르실래, 아라우나 등 사건 접점 13개를 특수 대화로 추가했다. 기존 발화 25묶음의 50문장에 각각 절 범위를 붙이고 해당 장의 구절 범위 안에 있는지 검사했다."
+    },
+    "1ki": {
+      "chaptersScanned": 22,
+      "chapterDialogueAudit": 22,
+      "authoredUtteranceGroupsReviewed": 27,
+      "utteranceReferencesCorrected": 54,
+      "pairedEntriesReviewed": 36,
+      "newTwoWayEntries": 15,
+      "relationshipEdgesAudited": 115,
+      "authoredPairLinks": 26,
+      "relationshipBasedPairLines": 89,
+      "status": "complete",
+      "statusNote": "열왕기상 22장 전체의 장면·인물·관계선을 살펴 인간 관계선 115개를 대조했다. 모든 관계 연결에 양방향 대화가 있으며 누락은 0개다. 다윗 왕위 계승과 솔로몬의 재판, 히람과 성전 협력, 스바 여왕, 아히야와 여로보암, 르호보암과 장로들, 하나님의 사람과 늙은 선지자, 엘리야와 사르밧 과부·오바댜·아합 등 사건 대화 15개를 보강했다. 기존 발화 27묶음의 54문장에 각각 절 범위를 달고 장 범위와 대조했다. 부록성·침묵 장면을 임의 발언으로 만들지 않고, 관계 설명 기반 상호대화로 연결했다."
     }
   },
   "relationshipDialogueCoverage": {
@@ -190,11 +203,12 @@
       "jdg",
       "rut",
       "1sa",
-      "2sa"
+      "2sa",
+      "1ki"
     ],
-    "relationshipLinks": 1317,
-    "authoredPairLinks": 184,
-    "relationshipBasedPairLines": 1133,
+    "relationshipLinks": 1432,
+    "authoredPairLinks": 210,
+    "relationshipBasedPairLines": 1222,
     "unpairedLinks": 0,
     "rule": "관계도 연결은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 짧은 창작 대사를 쓰고, 관계 설명과 구절은 자세히 보기에서 확인한다."
   }
