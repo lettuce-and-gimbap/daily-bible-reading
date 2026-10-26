@@ -302,6 +302,131 @@
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
       "animation": {"version":2,"motif":"symbolic","lead":"르무엘","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"르무엘"},{"action":"read","duration":1.2,"actor":"르무엘"},{"action":"look","duration":1.5,"actor":"르무엘"},{"action":"point","duration":1.8,"actor":"르무엘"},{"action":"listen","duration":1.5,"actor":"르무엘"},{"action":"bow","duration":1.2,"actor":"르무엘"}],"duration":8.2,"support":null,"ref":"잠언 31:1-9","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-pro-extra-01",
+      "code": "pro",
+      "chapter": 6,
+      "title": "개미에게서 배우는 부지런함",
+      "actors": [
+        "게으른 자",
+        "개미"
+      ],
+      "object": "scene-marker",
+      "ref": "잠언 6:6-11",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 아버지는 게으른 아들에게 개미를 살피라고 권하며 미루는 삶의 결과를 비유로 보여 줘요."
+      ],
+      "study": "아버지는 게으른 아들에게 개미를 살피라고 권하며 미루는 삶의 결과를 비유로 보여 줘요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "지혜 문학의 비유와 권면을 실제 사건으로 단정하지 않고 상징 애니메이션으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"게으른 자","target":"개미","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"게으른 자"},{"action":"read","duration":1.2,"actor":"게으른 자"},{"action":"look","duration":1.5,"actor":"게으른 자"},{"action":"point","duration":1.8,"actor":"게으른 자"},{"action":"listen","duration":1.5,"actor":"게으른 자"},{"action":"bow","duration":1.2,"actor":"게으른 자"}],"duration":8.2,"support":null,"ref":"잠언 6:6-11","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-pro-extra-02",
+      "code": "pro",
+      "chapter": 7,
+      "title": "해 질 녘에 덫에 걸린 젊은이",
+      "actors": [
+        "어리석은 젊은이",
+        "음녀"
+      ],
+      "object": "scene-marker",
+      "ref": "잠언 7:6-27",
+      "verseNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 창문에서 바라본 화자는 젊은이가 유혹에 끌려가는 모습을 경고의 비유로 들려줘요. 선정적으로 묘사하지 않아요."
+      ],
+      "study": "창문에서 바라본 화자는 젊은이가 유혹에 끌려가는 모습을 경고의 비유로 들려줘요. 선정적으로 묘사하지 않아요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "지혜 문학의 비유와 권면을 실제 사건으로 단정하지 않고 상징 애니메이션으로 표현해요.",
+      "animation": {"version":2,"motif":"warning","lead":"어리석은 젊은이","target":"음녀","mode":"illustration","setting":"courtyard","effect":"speech","emotion":"determined","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"어리석은 젊은이"},{"action":"turn","duration":1.2,"actor":"어리석은 젊은이"},{"action":"speak","duration":1.5,"actor":"어리석은 젊은이"},{"action":"point","duration":1.8,"actor":"어리석은 젊은이"},{"action":"listen","duration":1.5,"actor":"어리석은 젊은이"},{"action":"lower","duration":1.2,"actor":"어리석은 젊은이"}],"duration":8.2,"support":null,"ref":"잠언 7:6-27","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-pro-extra-03",
+      "code": "pro",
+      "chapter": 24,
+      "title": "게으른 이의 밭에 자란 가시와 잡초",
+      "actors": [
+        "게으른 자"
+      ],
+      "object": "field",
+      "ref": "잠언 24:30-34",
+      "verseNumbers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 지혜자는 게으른 이의 밭에 가시와 잡초가 덮인 모습을 보고 태만의 결과를 설명해요."
+      ],
+      "study": "지혜자는 게으른 이의 밭에 가시와 잡초가 덮인 모습을 보고 태만의 결과를 설명해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "지혜 문학의 비유와 권면을 실제 사건으로 단정하지 않고 상징 애니메이션으로 표현해요.",
+      "animation": {"version":2,"motif":"symbolic","lead":"게으른 자","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"field","beats":[{"action":"listen","duration":1,"actor":"게으른 자"},{"action":"read","duration":1.2,"actor":"게으른 자"},{"action":"look","duration":1.5,"actor":"게으른 자"},{"action":"point","duration":1.8,"actor":"게으른 자"},{"action":"listen","duration":1.5,"actor":"게으른 자"},{"action":"bow","duration":1.2,"actor":"게으른 자"}],"duration":8.2,"support":null,"ref":"잠언 24:30-34","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+    },
+    {
+      "id": "ot-pro-extra-04",
+      "code": "pro",
+      "chapter": 25,
+      "title": "히스기야의 신하들이 솔로몬의 잠언을 모으다",
+      "actors": [
+        "히스기야의 신하들",
+        "솔로몬"
+      ],
+      "object": "book",
+      "ref": "잠언 25:1-1",
+      "verseNumbers": [
+        1
+      ],
+      "actions": {},
+      "lines": [
+        "해설: 히스기야의 신하들이 솔로몬의 잠언을 모아 기록으로 정리해요."
+      ],
+      "study": "히스기야의 신하들이 솔로몬의 잠언을 모아 기록으로 정리해요.",
+      "actorLines": {},
+      "narrationOnly": true,
+      "objectNote": "지혜 문학의 비유와 권면을 실제 사건으로 단정하지 않고 상징 애니메이션으로 표현해요.",
+      "animation": {"version":2,"motif":"write","lead":"히스기야의 신하들","target":"솔로몬","mode":"illustration","setting":"chamber","effect":"scroll","emotion":"determined","prop":"book","beats":[{"action":"inspect","duration":1,"actor":"히스기야의 신하들"},{"action":"grasp","duration":1.2,"actor":"히스기야의 신하들"},{"action":"open","duration":1.5,"actor":"히스기야의 신하들"},{"action":"read","duration":1.8,"actor":"히스기야의 신하들"},{"action":"write","duration":1.5,"actor":"히스기야의 신하들"},{"action":"place","duration":1.2,"actor":"히스기야의 신하들"}],"duration":8.2,"support":null,"ref":"잠언 25:1-1","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     }
   ],
   "additionalPeople": {

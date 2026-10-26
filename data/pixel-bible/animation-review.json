@@ -267,14 +267,14 @@
     },
     {
       "code": "pro",
-      "payloadSha256": "45f975bd0a1b67e34cb11c57969248e14604b4828bc94ace0dab1f11bef4ef0d",
-      "scenes": 10,
-      "existing": 10,
+      "payloadSha256": "704aa1f91e08c801e59e5f1a15ff0e383fa90d81f28b5b0987fb1be10a9df07b",
+      "scenes": 14,
+      "existing": 14,
       "restored": 0,
       "corrected": 1,
-      "planned": 10,
+      "planned": 14,
       "modes": {
-        "illustration": 10
+        "illustration": 14
       },
       "status": "authored-awaiting-browser-review"
     },
