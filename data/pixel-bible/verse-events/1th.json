@@ -1,0 +1,6909 @@
+{
+  "version": 1,
+  "code": "1th",
+  "scope": "데살로니가전서 1–5장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "바울",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "실루아노",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "데살로니가 교회",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "마게도냐와 아가야 신자들",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "데살로니가전서 1장 서신의 인물",
+        "refs": [
+          "데살로니가전서 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "바울",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      },
+      {
+        "name": "데살로니가 성도들",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      },
+      {
+        "name": "유대인들",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      },
+      {
+        "name": "사탄",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "데살로니가전서 2장 서신의 인물",
+        "refs": [
+          "데살로니가전서 2장"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "바울",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      },
+      {
+        "name": "데살로니가 성도들",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      },
+      {
+        "name": "시험하는 자",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "데살로니가전서 3장 서신의 인물",
+        "refs": [
+          "데살로니가전서 3장"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "바울",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "데살로니가 성도들",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "자는 자들",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "천사장",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "데살로니가전서 4장 서신의 인물",
+        "refs": [
+          "데살로니가전서 4장"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "name": "바울",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "데살로니가 성도들",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "다스리는 자들",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "게으른 자들",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "데살로니가전서 5장 서신의 인물",
+        "refs": [
+          "데살로니가전서 5장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-1th-1-1",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "바울과 실루아노와 디모데 · 하나님 아버지와 주 예수 안에",
+      "ref": "데살로니가전서 1:1",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울과 실루아노와 디모데가 데살로니가 교회에 편지를 보내요. 교회는 하나님 아버지와 주 예수 그리스도 안에 있어요."
+      ],
+      "study": "바울과 실루아노와 디모데가 데살로니가 교회에 편지를 보내요. 교회는 하나님 아버지와 주 예수 그리스도 안에 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-2",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "은혜와 평강을 빎 · 믿음의 역사와 사랑의 수고",
+      "ref": "데살로니가전서 1:2",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "세 사람은 성도들에게 은혜와 평강을 빌어요. 바울은 성도들의 믿음의 역사와 사랑의 수고를 기억해요."
+      ],
+      "study": "세 사람은 성도들에게 은혜와 평강을 빌어요. 바울은 성도들의 믿음의 역사와 사랑의 수고를 기억해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-3",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "소망의 인내 · 하나님께 사랑받는 형제들",
+      "ref": "데살로니가전서 1:3",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 주 예수 그리스도께 둔 소망으로 인내해요. 바울은 성도들이 하나님께 사랑받고 택함받은 것을 알아요."
+      ],
+      "study": "성도들은 주 예수 그리스도께 둔 소망으로 인내해요. 바울은 성도들이 하나님께 사랑받고 택함받은 것을 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-4",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "복음은 말뿐 아니라 능력으로 · 복음을 전한 이들의 삶",
+      "ref": "데살로니가전서 1:4",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "복음은 말로만이 아니라 능력과 성령과 큰 확신으로 전해졌어요. 성도들은 바울과 동역자들이 그들 가운데서 어떻게 살았는지 보았어요."
+      ],
+      "study": "복음은 말로만이 아니라 능력과 성령과 큰 확신으로 전해졌어요. 성도들은 바울과 동역자들이 그들 가운데서 어떻게 살았는지 보았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-5",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "환난 중에도 말씀을 받음 · 마게도냐와 아가야의 본",
+      "ref": "데살로니가전서 1:5",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 많은 환난 가운데 성령의 기쁨으로 말씀을 받아들였어요. 성도들은 마게도냐와 아가야의 믿는 이들에게 본이 되었어요."
+      ],
+      "study": "성도들은 많은 환난 가운데 성령의 기쁨으로 말씀을 받아들였어요. 성도들은 마게도냐와 아가야의 믿는 이들에게 본이 되었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-6",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "주님의 말씀이 여러 곳에 울림",
+      "ref": "데살로니가전서 1:6",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들의 믿음에 대한 소문이 여러 곳에 퍼졌어요."
+      ],
+      "study": "성도들의 믿음에 대한 소문이 여러 곳에 퍼졌어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-7",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "우상을 버리고 하나님께 돌아옴",
+      "ref": "데살로니가전서 1:7",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사람들은 성도들이 우상을 버리고 하나님께 돌아온 일을 전해요."
+      ],
+      "study": "사람들은 성도들이 우상을 버리고 하나님께 돌아온 일을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-8",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "살아 계신 하나님을 섬김",
+      "ref": "데살로니가전서 1:8",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 살아 계시고 참되신 하나님을 섬겨요."
+      ],
+      "study": "성도들은 살아 계시고 참되신 하나님을 섬겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-9",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "하늘에서 오실 아들을 기다림",
+      "ref": "데살로니가전서 1:9",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 죽은 이들 가운데서 살아나신 하나님의 아들이 하늘에서 오시기를 기다려요."
+      ],
+      "study": "성도들은 죽은 이들 가운데서 살아나신 하나님의 아들이 하늘에서 오시기를 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-1-10",
+      "code": "1th",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "진노에서 건지시는 예수",
+      "ref": "데살로니가전서 1:10",
+      "actors": [
+        "바울",
+        "실루아노",
+        "디모데",
+        "데살로니가 교회",
+        "마게도냐와 아가야 신자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수는 장차 올 진노에서 성도들을 건지세요."
+      ],
+      "study": "예수는 장차 올 진노에서 성도들을 건지세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "실루아노",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "signal",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-1",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "복음 전한 수고를 기억 · 빌립보에서 겪은 고난",
+      "ref": "데살로니가전서 2:1",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "형제들은 바울 일행이 수고하고 애쓴 일을 기억해요. 바울은 빌립보에서 고난과 모욕을 당한 뒤에도 복음을 전했어요."
+      ],
+      "study": "형제들은 바울 일행이 수고하고 애쓴 일을 기억해요. 바울은 빌립보에서 고난과 모욕을 당한 뒤에도 복음을 전했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-2",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "하나님을 힘입어 담대히 전함",
+      "ref": "데살로니가전서 2:2",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "많은 반대 속에서도 하나님을 힘입어 복음을 담대히 전했어요."
+      ],
+      "study": "많은 반대 속에서도 하나님을 힘입어 복음을 담대히 전했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-3",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "간사함이나 부정함 없이",
+      "ref": "데살로니가전서 2:3",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울의 권면은 오류나 부정한 동기에서 나오지 않았어요."
+      ],
+      "study": "바울의 권면은 오류나 부정한 동기에서 나오지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-4",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "하나님께 검증받아 맡은 복음",
+      "ref": "데살로니가전서 2:4",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 바울 일행을 검증해 복음을 맡기셨어요."
+      ],
+      "study": "하나님은 바울 일행을 검증해 복음을 맡기셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-5",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "사람을 기쁘게 하지 않음",
+      "ref": "데살로니가전서 2:5",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 사람을 기쁘게 하려 하지 않고 마음을 살피시는 하나님을 기쁘시게 해요."
+      ],
+      "study": "그들은 사람을 기쁘게 하려 하지 않고 마음을 살피시는 하나님을 기쁘시게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-6",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "아첨이나 탐심의 구실이 없음",
+      "ref": "데살로니가전서 2:6",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 아첨하는 말이나 탐심의 구실을 쓰지 않았어요."
+      ],
+      "study": "바울은 아첨하는 말이나 탐심의 구실을 쓰지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-7",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "사람의 영광을 구하지 않음",
+      "ref": "데살로니가전서 2:7",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "사도들은 사람에게서 영광을 구하지 않았어요."
+      ],
+      "study": "사도들은 사람에게서 영광을 구하지 않았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-8",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "유모처럼 돌봄",
+      "ref": "데살로니가전서 2:8",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울 일행은 유모가 자기 자녀를 돌보듯 성도들을 대했어요."
+      ],
+      "study": "바울 일행은 유모가 자기 자녀를 돌보듯 성도들을 대했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-9",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "성도들을 사랑해 복음과 생명도 나눔",
+      "ref": "데살로니가전서 2:9",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들을 사랑했기에 하나님의 복음뿐 아니라 자기 생명까지 나누려 했어요."
+      ],
+      "study": "성도들을 사랑했기에 하나님의 복음뿐 아니라 자기 생명까지 나누려 했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-10",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "밤낮으로 일하며 복음을 전함",
+      "ref": "데살로니가전서 2:10",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "아무에게도 짐이 되지 않으려고 밤낮으로 일했어요."
+      ],
+      "study": "아무에게도 짐이 되지 않으려고 밤낮으로 일했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-11",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "거룩하고 의롭게 행함",
+      "ref": "데살로니가전서 2:11",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들 앞에서 거룩하고 의롭고 흠 없이 행한 것을 증언해요."
+      ],
+      "study": "성도들 앞에서 거룩하고 의롭고 흠 없이 행한 것을 증언해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-12",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "아버지처럼 권면하고 위로",
+      "ref": "데살로니가전서 2:12",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "아버지가 자녀를 대하듯 성도들을 권면하고 위로했어요."
+      ],
+      "study": "아버지가 자녀를 대하듯 성도들을 권면하고 위로했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-13",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "하나님께 합당하게 살라",
+      "ref": "데살로니가전서 2:13",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 나라와 영광으로 부르신 하나님께 합당하게 살도록 격려했어요."
+      ],
+      "study": "하나님 나라와 영광으로 부르신 하나님께 합당하게 살도록 격려했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-14",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "말씀을 하나님의 말씀으로 받음",
+      "ref": "데살로니가전서 2:14",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 바울의 말을 사람의 말이 아니라 하나님의 말씀으로 받아들였어요."
+      ],
+      "study": "성도들은 바울의 말을 사람의 말이 아니라 하나님의 말씀으로 받아들였어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-15",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "믿는 이들 안에서 역사하는 말씀",
+      "ref": "데살로니가전서 2:15",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 말씀은 믿는 성도들 안에서 일해요."
+      ],
+      "study": "하나님의 말씀은 믿는 성도들 안에서 일해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-16",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "유대 교회처럼 박해를 받음",
+      "ref": "데살로니가전서 2:16",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 유대의 교회들처럼 동족에게 고난을 받았어요."
+      ],
+      "study": "성도들은 유대의 교회들처럼 동족에게 고난을 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-17",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "주 예수와 선지자를 죽인 이들",
+      "ref": "데살로니가전서 2:17",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "유대인들은 주 예수와 선지자들을 죽이고 사도들을 박해했어요."
+      ],
+      "study": "유대인들은 주 예수와 선지자들을 죽이고 사도들을 박해했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-18",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "모든 사람에게 적대하는 행실",
+      "ref": "데살로니가전서 2:18",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 이방인에게 복음이 전해지는 것을 막아 죄를 더했어요."
+      ],
+      "study": "그들은 이방인에게 복음이 전해지는 것을 막아 죄를 더했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-19",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "바울의 재방문이 막힘",
+      "ref": "데살로니가전서 2:19",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들을 다시 만나려 했지만 사탄이 길을 막았어요."
+      ],
+      "study": "바울은 성도들을 다시 만나려 했지만 사탄이 길을 막았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-2-20",
+      "code": "1th",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "성도들은 바울의 소망과 기쁨",
+      "ref": "데살로니가전서 2:20",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "유대인들",
+        "사탄",
+        "예수",
+        "하나님"
+      ],
+      "object": "scroll",
+      "narrationOnly": true,
+      "lines": [
+        "주 예수께서 오실 때 성도들은 바울의 소망과 기쁨과 자랑의 면류관이에요."
+      ],
+      "study": "주 예수께서 오실 때 성도들은 바울의 소망과 기쁨과 자랑의 면류관이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scroll",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "place",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 2:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-1",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        1
+      ],
+      "title": "바울은 아테네에 홀로 남음",
+      "ref": "데살로니가전서 3:1",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 더 견딜 수 없어 아테네에 홀로 남기로 했어요."
+      ],
+      "study": "바울은 더 견딜 수 없어 아테네에 홀로 남기로 했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-2",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        2
+      ],
+      "title": "디모데를 보내 믿음을 굳게 함",
+      "ref": "데살로니가전서 3:2",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 형제 디모데를 보내 성도들을 굳게 하고 위로하게 했어요."
+      ],
+      "study": "바울은 형제 디모데를 보내 성도들을 굳게 하고 위로하게 했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-3",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        3
+      ],
+      "title": "환난에 흔들리지 말라",
+      "ref": "데살로니가전서 3:3",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 환난 가운데 흔들리지 말아야 해요."
+      ],
+      "study": "성도들은 환난 가운데 흔들리지 말아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-4",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        4
+      ],
+      "title": "환난을 위해 세움받음",
+      "ref": "데살로니가전서 3:4",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "우리가 환난을 당하게 될 것을 미리 말했어요."
+      ],
+      "study": "우리가 환난을 당하게 될 것을 미리 말했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-5",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        5
+      ],
+      "title": "시험자의 유혹을 염려",
+      "ref": "데살로니가전서 3:5",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 시험하는 자가 유혹해 수고가 헛될까 염려했어요."
+      ],
+      "study": "바울은 시험하는 자가 유혹해 수고가 헛될까 염려했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-6",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        6
+      ],
+      "title": "디모데가 기쁜 소식을 가져옴",
+      "ref": "데살로니가전서 3:6",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "디모데는 믿음과 사랑의 기쁜 소식을 전했어요."
+      ],
+      "study": "디모데는 믿음과 사랑의 기쁜 소식을 전했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-7",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        7
+      ],
+      "title": "성도들의 기억과 바람",
+      "ref": "데살로니가전서 3:7",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 바울 일행을 좋게 기억하고 다시 만나길 바랐어요."
+      ],
+      "study": "성도들은 바울 일행을 좋게 기억하고 다시 만나길 바랐어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-8",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        8
+      ],
+      "title": "믿음으로 위로받음",
+      "ref": "데살로니가전서 3:8",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 믿음으로 큰 위로를 받았어요."
+      ],
+      "study": "바울은 성도들의 믿음으로 큰 위로를 받았어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-9",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        9
+      ],
+      "title": "성도들로 인해 하나님께 감사",
+      "ref": "데살로니가전서 3:9",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들로 인해 하나님께 감사하며 기뻐해요."
+      ],
+      "study": "바울은 성도들로 인해 하나님께 감사하며 기뻐해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-10",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        10
+      ],
+      "title": "부족한 믿음을 보충하려 함",
+      "ref": "데살로니가전서 3:10",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 믿음에 부족한 것을 보충하려고 밤낮 기도해요."
+      ],
+      "study": "바울은 성도들의 믿음에 부족한 것을 보충하려고 밤낮 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-11",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        11
+      ],
+      "title": "하나님이 길을 열어 주시길",
+      "ref": "데살로니가전서 3:11",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 하나님 아버지와 예수께서 길을 열어 주시기를 구해요."
+      ],
+      "study": "바울은 하나님 아버지와 예수께서 길을 열어 주시기를 구해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-12",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        12
+      ],
+      "title": "사랑이 넘치도록 기도",
+      "ref": "데살로니가전서 3:12",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "주께서 성도들의 사랑을 서로와 모든 사람에게 넘치게 하시길 기도해요."
+      ],
+      "study": "주께서 성도들의 사랑을 서로와 모든 사람에게 넘치게 하시길 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-3-13",
+      "code": "1th",
+      "chapter": 3,
+      "verseNumbers": [
+        13
+      ],
+      "title": "마음을 굳게 세우시길",
+      "ref": "데살로니가전서 3:13",
+      "actors": [
+        "바울",
+        "디모데",
+        "데살로니가 성도들",
+        "시험하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "staff",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 오실 때 하나님 앞에서 성도들의 마음을 흠 없이 굳게 세우시길 바라요."
+      ],
+      "study": "예수께서 오실 때 하나님 앞에서 성도들의 마음을 흠 없이 굳게 세우시길 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "디모데",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "staff",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "release",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 3:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-1",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        1
+      ],
+      "title": "하나님을 기쁘시게 하는 삶 · 주 예수의 권면과 명령",
+      "ref": "데살로니가전서 4:1",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 어떻게 살아 하나님을 기쁘시게 할지 배웠으니 더욱 힘써야 해요. 바울은 주 예수의 이름으로 성도들에게 권하고 명해요."
+      ],
+      "study": "성도들은 어떻게 살아 하나님을 기쁘시게 할지 배웠으니 더욱 힘써야 해요. 바울은 주 예수의 이름으로 성도들에게 권하고 명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-2",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        2
+      ],
+      "title": "하나님의 뜻은 거룩함 · 음행을 멀리하라",
+      "ref": "데살로니가전서 4:2",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 뜻은 성도들이 거룩하게 되는 거예요. 성도들은 음행을 멀리해야 해요."
+      ],
+      "study": "하나님의 뜻은 성도들이 거룩하게 되는 거예요. 성도들은 음행을 멀리해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-3",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        3
+      ],
+      "title": "각자 거룩함과 존귀함으로 몸을 다스림 · 정욕을 따르지 말라",
+      "ref": "데살로니가전서 4:3",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "각 사람은 거룩함과 존귀함으로 자기 몸을 다스려야 해요. 하나님을 모르는 이방인처럼 정욕을 따르지 말아요."
+      ],
+      "study": "각 사람은 거룩함과 존귀함으로 자기 몸을 다스려야 해요. 하나님을 모르는 이방인처럼 정욕을 따르지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-4",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        4
+      ],
+      "title": "형제를 해치거나 속이지 말라 · 주께서 이런 일을 심판하심",
+      "ref": "데살로니가전서 4:4",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "이 일에서 형제를 해치거나 속이지 말아요. 주님은 이런 모든 일에 보응하시는 분이에요."
+      ],
+      "study": "이 일에서 형제를 해치거나 속이지 말아요. 주님은 이런 모든 일에 보응하시는 분이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-5",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        5
+      ],
+      "title": "부르심은 더러움이 아니라 거룩함 · 이 권면을 거부하는 것은 하나님을 거부함",
+      "ref": "데살로니가전서 4:5",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 더러움이 아니라 거룩함으로 우리를 부르셨어요. 이것을 저버리는 이는 사람을 거부하는 게 아니라 성령을 주시는 하나님을 거부해요."
+      ],
+      "study": "하나님은 더러움이 아니라 거룩함으로 우리를 부르셨어요. 이것을 저버리는 이는 사람을 거부하는 게 아니라 성령을 주시는 하나님을 거부해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-6",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        6
+      ],
+      "title": "형제 사랑은 하나님께 배움 · 마게도냐의 형제들을 사랑함",
+      "ref": "데살로니가전서 4:6",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "형제 사랑에 대해서는 하나님께 직접 배웠어요. 성도들은 온 마게도냐에 있는 형제들을 사랑해요."
+      ],
+      "study": "형제 사랑에 대해서는 하나님께 직접 배웠어요. 성도들은 온 마게도냐에 있는 형제들을 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-7",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        7
+      ],
+      "title": "더욱 풍성히 사랑하라 · 조용히 자기 일을 하라",
+      "ref": "데살로니가전서 4:7",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 더 많이 사랑하기를 권해요. 조용히 살며 자기 일을 하고 손으로 일하기를 힘써요."
+      ],
+      "study": "바울은 더 많이 사랑하기를 권해요. 조용히 살며 자기 일을 하고 손으로 일하기를 힘써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-8",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        8
+      ],
+      "title": "바깥사람에게 단정히 행함",
+      "ref": "데살로니가전서 4:8",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "바깥사람에게 단정히 행하고 아무에게도 의존하지 않아요."
+      ],
+      "study": "바깥사람에게 단정히 행하고 아무에게도 의존하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-9",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        9
+      ],
+      "title": "자는 이들을 소망 없이 슬퍼하지 말라",
+      "ref": "데살로니가전서 4:9",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자는 이들 때문에 소망 없는 사람처럼 슬퍼하지 않길 바라요."
+      ],
+      "study": "바울은 자는 이들 때문에 소망 없는 사람처럼 슬퍼하지 않길 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-10",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        10
+      ],
+      "title": "예수의 죽음과 부활을 믿음",
+      "ref": "데살로니가전서 4:10",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 죽고 다시 살아나신 것을 믿어요."
+      ],
+      "study": "예수께서 죽고 다시 살아나신 것을 믿어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-11",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        11
+      ],
+      "title": "자는 이들도 하나님이 데리고 오심",
+      "ref": "데살로니가전서 4:11",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 예수 안에서 잠든 이들도 예수와 함께 데리고 오실 거예요."
+      ],
+      "study": "하나님은 예수 안에서 잠든 이들도 예수와 함께 데리고 오실 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-12",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        12
+      ],
+      "title": "주님의 말씀으로 알림",
+      "ref": "데살로니가전서 4:12",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 주님의 말씀으로 성도들에게 알려요."
+      ],
+      "study": "바울은 주님의 말씀으로 성도들에게 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-13",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        13
+      ],
+      "title": "살아 있는 이가 먼저 되지 않음",
+      "ref": "데살로니가전서 4:13",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "주님이 오실 때 살아 남은 이들이 먼저 되는 것은 아니에요."
+      ],
+      "study": "주님이 오실 때 살아 남은 이들이 먼저 되는 것은 아니에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-14",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        14
+      ],
+      "title": "주님이 하늘에서 내려오심",
+      "ref": "데살로니가전서 4:14",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "주님은 호령과 천사장의 소리와 하나님의 나팔로 하늘에서 내려오세요."
+      ],
+      "study": "주님은 호령과 천사장의 소리와 하나님의 나팔로 하늘에서 내려오세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-15",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        15
+      ],
+      "title": "그리스도 안에서 죽은 이들이 먼저 일어남",
+      "ref": "데살로니가전서 4:15",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도 안에서 죽은 이들이 먼저 일어나요."
+      ],
+      "study": "그리스도 안에서 죽은 이들이 먼저 일어나요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-16",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        16
+      ],
+      "title": "살아 있는 이들도 함께 들림",
+      "ref": "데살로니가전서 4:16",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "그 후 살아 남은 이들도 구름 속으로 들려 주님을 맞이해요."
+      ],
+      "study": "그 후 살아 남은 이들도 구름 속으로 들려 주님을 맞이해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-17",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        17
+      ],
+      "title": "영원히 주와 함께 있음",
+      "ref": "데살로니가전서 4:17",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "그리하여 성도들은 항상 주님과 함께 있게 돼요."
+      ],
+      "study": "그리하여 성도들은 항상 주님과 함께 있게 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-4-18",
+      "code": "1th",
+      "chapter": 4,
+      "verseNumbers": [
+        18
+      ],
+      "title": "이 말로 서로 위로하라",
+      "ref": "데살로니가전서 4:18",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "자는 자들",
+        "천사장",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "trumpet",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 이 말로 서로 위로해야 해요."
+      ],
+      "study": "성도들은 이 말로 서로 위로해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "open-field",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "trumpet",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "walk",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "rise",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "lift",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 4:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-1",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        1
+      ],
+      "title": "주의 날은 밤의 도둑처럼 · 평안하다 안전하다 할 때",
+      "ref": "데살로니가전서 5:1",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "주의 날은 밤의 도둑처럼 갑자기 와요. 사람들이 평안하고 안전하다고 말할 때 갑작스러운 멸망이 닥쳐요."
+      ],
+      "study": "주의 날은 밤의 도둑처럼 갑자기 와요. 사람들이 평안하고 안전하다고 말할 때 갑작스러운 멸망이 닥쳐요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-2",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        2
+      ],
+      "title": "해산의 고통처럼 피하지 못함 · 성도들은 어둠에 있지 않음",
+      "ref": "데살로니가전서 5:2",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "해산의 고통이 임하는 여인처럼 아무도 피하지 못해요. 형제들은 어둠에 있지 않아 그 날이 도둑처럼 덮치지 않아요."
+      ],
+      "study": "해산의 고통이 임하는 여인처럼 아무도 피하지 못해요. 형제들은 어둠에 있지 않아 그 날이 도둑처럼 덮치지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-3",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        3
+      ],
+      "title": "빛의 자녀와 낮의 자녀 · 밤이나 어둠에 속하지 않음",
+      "ref": "데살로니가전서 5:3",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 모두 빛의 자녀요 낮의 자녀예요. 우리는 밤이나 어둠에 속하지 않아요."
+      ],
+      "study": "성도들은 모두 빛의 자녀요 낮의 자녀예요. 우리는 밤이나 어둠에 속하지 않아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-4",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        4
+      ],
+      "title": "깨어 정신 차리라 · 자는 자는 밤에 자고",
+      "ref": "데살로니가전서 5:4",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "그러므로 다른 이들처럼 자지 말고 깨어 정신을 차려요. 자는 이들은 밤에 자고 취하는 이들도 밤에 취해요."
+      ],
+      "study": "그러므로 다른 이들처럼 자지 말고 깨어 정신을 차려요. 자는 이들은 밤에 자고 취하는 이들도 밤에 취해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-5",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        5
+      ],
+      "title": "낮에 속한 우리는 정신 차림 · 믿음과 사랑의 흉배",
+      "ref": "데살로니가전서 5:5",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "낮에 속한 우리는 정신을 차려야 해요. 믿음과 사랑을 흉배로 입어요."
+      ],
+      "study": "낮에 속한 우리는 정신을 차려야 해요. 믿음과 사랑을 흉배로 입어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-6",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        6
+      ],
+      "title": "구원의 소망의 투구 · 진노가 아니라 구원을 위해 세우심",
+      "ref": "데살로니가전서 5:6",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "구원의 소망을 투구로 써요. 하나님은 진노를 받게 하신 것이 아니라 구원을 얻게 하시려고 세우셨어요."
+      ],
+      "study": "구원의 소망을 투구로 써요. 하나님은 진노를 받게 하신 것이 아니라 구원을 얻게 하시려고 세우셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-7",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        7
+      ],
+      "title": "예수와 함께 살게 하심 · 서로 권하고 세우라",
+      "ref": "데살로니가전서 5:7",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "예수께서 우리를 위해 죽으신 것은 깨어 있든 자든 함께 살게 하시려는 거예요. 성도들은 서로 권하고 서로 세워야 해요."
+      ],
+      "study": "예수께서 우리를 위해 죽으신 것은 깨어 있든 자든 함께 살게 하시려는 거예요. 성도들은 서로 권하고 서로 세워야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-8",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        8
+      ],
+      "title": "수고하는 지도자들을 알아주라 · 사랑으로 귀히 여기라",
+      "ref": "데살로니가전서 5:8",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들 가운데 수고하며 주 안에서 다스리고 권하는 이들을 알아주어요. 그들의 일을 생각해 사랑으로 더욱 귀히 여겨요."
+      ],
+      "study": "성도들 가운데 수고하며 주 안에서 다스리고 권하는 이들을 알아주어요. 그들의 일을 생각해 사랑으로 더욱 귀히 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-9",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        9
+      ],
+      "title": "서로 화목하라",
+      "ref": "데살로니가전서 5:9",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 서로 화목하게 지내야 해요."
+      ],
+      "study": "성도들은 서로 화목하게 지내야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-10",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        10
+      ],
+      "title": "게으른 자를 권면",
+      "ref": "데살로니가전서 5:10",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "게으른 자들을 권면해요."
+      ],
+      "study": "게으른 자들을 권면해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-11",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        11
+      ],
+      "title": "낙심한 자를 위로",
+      "ref": "데살로니가전서 5:11",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "마음이 약한 이들을 위로해요."
+      ],
+      "study": "마음이 약한 이들을 위로해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-12",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        12
+      ],
+      "title": "힘없는 자를 붙들어 줌",
+      "ref": "데살로니가전서 5:12",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "힘이 없는 이들을 붙들어 주어요."
+      ],
+      "study": "힘이 없는 이들을 붙들어 주어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-13",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        13
+      ],
+      "title": "모든 사람에게 오래 참음",
+      "ref": "데살로니가전서 5:13",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "모든 사람에게 오래 참아야 해요."
+      ],
+      "study": "모든 사람에게 오래 참아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-14",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        14
+      ],
+      "title": "악을 악으로 갚지 말라",
+      "ref": "데살로니가전서 5:14",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "누구에게도 악을 악으로 갚지 말고 서로와 모든 이에게 선을 따라요."
+      ],
+      "study": "누구에게도 악을 악으로 갚지 말고 서로와 모든 이에게 선을 따라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-15",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        15
+      ],
+      "title": "항상 기뻐하라",
+      "ref": "데살로니가전서 5:15",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "항상 기뻐해야 해요."
+      ],
+      "study": "항상 기뻐해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-16",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        16
+      ],
+      "title": "쉬지 말고 기도하라",
+      "ref": "데살로니가전서 5:16",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "쉬지 말고 기도해야 해요."
+      ],
+      "study": "쉬지 말고 기도해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-17",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        17
+      ],
+      "title": "모든 일에 감사하라",
+      "ref": "데살로니가전서 5:17",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "모든 일에 감사하는 것이 그리스도 예수 안에서 하나님의 뜻이에요."
+      ],
+      "study": "모든 일에 감사하는 것이 그리스도 예수 안에서 하나님의 뜻이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-18",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        18
+      ],
+      "title": "성령을 소멸하지 말라",
+      "ref": "데살로니가전서 5:18",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성령의 불을 끄지 말아요."
+      ],
+      "study": "성령의 불을 끄지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-19",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        19
+      ],
+      "title": "예언을 멸시하지 말라",
+      "ref": "데살로니가전서 5:19",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "예언을 멸시하지 말아요."
+      ],
+      "study": "예언을 멸시하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-20",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        20
+      ],
+      "title": "모든 것을 분별하고 선을 붙들라",
+      "ref": "데살로니가전서 5:20",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "모든 것을 분별하고 선한 것을 굳게 붙들어요."
+      ],
+      "study": "모든 것을 분별하고 선한 것을 굳게 붙들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-21",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        21
+      ],
+      "title": "악은 어떤 모양이라도 피하라",
+      "ref": "데살로니가전서 5:21",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "모든 악의 모양을 피해야 해요."
+      ],
+      "study": "모든 악의 모양을 피해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-22",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        22
+      ],
+      "title": "평강의 하나님이 온전히 거룩하게",
+      "ref": "데살로니가전서 5:22",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "평강의 하나님이 친히 성도들을 온전히 거룩하게 하시길 바라요."
+      ],
+      "study": "평강의 하나님이 친히 성도들을 온전히 거룩하게 하시길 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-23",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        23
+      ],
+      "title": "영과 혼과 몸을 흠 없이 지키심",
+      "ref": "데살로니가전서 5:23",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "주 예수께서 오실 때 영과 혼과 몸이 흠 없이 보전되기를 기도해요."
+      ],
+      "study": "주 예수께서 오실 때 영과 혼과 몸이 흠 없이 보전되기를 기도해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-24",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        24
+      ],
+      "title": "부르신 이는 신실하심",
+      "ref": "데살로니가전서 5:24",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "성도들을 부르시는 하나님은 신실하시니 이루실 거예요."
+      ],
+      "study": "성도들을 부르시는 하나님은 신실하시니 이루실 거예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-25",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        25
+      ],
+      "title": "우리를 위해 기도해 달라",
+      "ref": "데살로니가전서 5:25",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 형제들에게 자신들을 위해 기도해 달라고 부탁해요."
+      ],
+      "study": "바울은 형제들에게 자신들을 위해 기도해 달라고 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-26",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        26
+      ],
+      "title": "거룩한 입맞춤으로 문안",
+      "ref": "데살로니가전서 5:26",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "모든 형제에게 거룩한 입맞춤으로 문안해요."
+      ],
+      "study": "모든 형제에게 거룩한 입맞춤으로 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:26",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-27",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        27
+      ],
+      "title": "주님의 명령으로 편지를 읽으라",
+      "ref": "데살로니가전서 5:27",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 이 편지를 모든 형제에게 읽어 주라고 주님의 이름으로 명해요."
+      ],
+      "study": "바울은 이 편지를 모든 형제에게 읽어 주라고 주님의 이름으로 명해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:27",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-1th-5-28",
+      "code": "1th",
+      "chapter": 5,
+      "verseNumbers": [
+        28
+      ],
+      "title": "은혜가 함께하기를",
+      "ref": "데살로니가전서 5:28",
+      "actors": [
+        "바울",
+        "데살로니가 성도들",
+        "다스리는 자들",
+        "게으른 자들",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "lamp",
+      "narrationOnly": true,
+      "lines": [
+        "주 예수 그리스도의 은혜가 성도들과 함께하기를 바라요."
+      ],
+      "study": "주 예수 그리스도의 은혜가 성도들과 함께하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "데살로니가 성도들",
+        "mode": "reconstruction",
+        "setting": "house-church",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "lamp",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "stand",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "wear",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "데살로니가전서 5:28",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import {OBJECT_MONOLOGUES,objectMonologue} from './object-monologues.js';
-export const WORLD_OBJECTS={field:'보리밭',water:'물항아리',bench:'쉬는 자리',tree:'나무',well:'우물',stone:'돌',bush:'떨기나무',boat:'배',scroll:'두루마리',oil:'기름병'};
+export const WORLD_OBJECTS={field:'보리밭',water:'물항아리',bench:'쉬는 자리',tree:'나무',well:'우물',stone:'돌',bush:'떨기나무',boat:'배',scroll:'두루마리',oil:'기름병','love-booth':'TV는 사랑을 싣고'};
 export const OBJECT_SCENES=[
  {id:'jacob-stone',code:'gen',chapter:28,title:'베개 삼은 돌',actors:['야곱'],object:'stone',ref:'창세기 28:11–18',lines:['야곱은 돌을 베개 삼아 누웠다가 꿈을 꿉니다.','아침에 그 돌을 기둥으로 세우고 기름을 붓습니다.']},
  {id:'rebekah-well',code:'gen',chapter:24,title:'물을 길어 주는 리브가',actors:['리브가'],object:'well',ref:'창세기 24:18–20',lines:['리브가는 물동이를 내려 물을 마시게 합니다.','낙타들을 위해서도 우물에서 물을 길어 줍니다.']},

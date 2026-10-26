@@ -1,0 +1,1935 @@
+{
+  "version": 1,
+  "code": "phm",
+  "scope": "빌레몬서 1–1장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "바울",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "빌레몬",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "오네시모",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "압비아",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "아킵보",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "디모데",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "빌레몬서 1장 서신의 인물",
+        "refs": [
+          "빌레몬서 1장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-phm-1-1",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "갇힌 바울과 디모데",
+      "ref": "빌레몬서 1:1",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도 예수 때문에 갇힌 바울과 디모데가 편지를 보내요."
+      ],
+      "study": "그리스도 예수 때문에 갇힌 바울과 디모데가 편지를 보내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-2",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "사랑받는 동역자 빌레몬",
+      "ref": "빌레몬서 1:2",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 사랑받는 동역자 빌레몬에게 문안해요."
+      ],
+      "study": "바울은 사랑받는 동역자 빌레몬에게 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-3",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "압비아와 아킵보에게도",
+      "ref": "빌레몬서 1:3",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "압비아와 함께 싸우는 아킵보에게도 문안해요."
+      ],
+      "study": "압비아와 함께 싸우는 아킵보에게도 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-4",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "집에 모이는 교회",
+      "ref": "빌레몬서 1:4",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "빌레몬의 집에 모이는 교회에도 편지가 전해져요."
+      ],
+      "study": "빌레몬의 집에 모이는 교회에도 편지가 전해져요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-5",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "은혜와 평강의 인사",
+      "ref": "빌레몬서 1:5",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님 아버지와 주 예수에게서 은혜와 평강이 있기를 바라요."
+      ],
+      "study": "하나님 아버지와 주 예수에게서 은혜와 평강이 있기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-6",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "빌레몬의 사랑과 믿음",
+      "ref": "빌레몬서 1:6",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 빌레몬의 사랑과 주 예수에 대한 믿음을 듣고 감사해요."
+      ],
+      "study": "바울은 빌레몬의 사랑과 주 예수에 대한 믿음을 듣고 감사해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-7",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "성도들의 마음이 쉼을 얻음",
+      "ref": "빌레몬서 1:7",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "빌레몬의 사랑으로 성도들의 마음이 쉼을 얻었어요."
+      ],
+      "study": "빌레몬의 사랑으로 성도들의 마음이 쉼을 얻었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-8",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "사랑으로 간청하는 바울",
+      "ref": "빌레몬서 1:8",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 명령할 수도 있지만 사랑으로 간청하기로 해요."
+      ],
+      "study": "바울은 명령할 수도 있지만 사랑으로 간청하기로 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-9",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "늙고 갇힌 바울의 부탁",
+      "ref": "빌레몬서 1:9",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "나이 든 바울은 그리스도 예수 때문에 갇힌 몸으로 부탁해요."
+      ],
+      "study": "나이 든 바울은 그리스도 예수 때문에 갇힌 몸으로 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-10",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "아들 오네시모를 위해",
+      "ref": "빌레몬서 1:10",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 갇힌 동안 낳은 아들 오네시모를 위해 간청해요."
+      ],
+      "study": "바울은 갇힌 동안 낳은 아들 오네시모를 위해 간청해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-11",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "전에는 쓸모없고 이제는 유익",
+      "ref": "빌레몬서 1:11",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "오네시모는 전에는 빌레몬에게 쓸모없었으나 이제는 바울과 빌레몬 모두에게 유익해요."
+      ],
+      "study": "오네시모는 전에는 빌레몬에게 쓸모없었으나 이제는 바울과 빌레몬 모두에게 유익해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-12",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "오네시모를 돌려보냄",
+      "ref": "빌레몬서 1:12",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자기 심장과 같은 오네시모를 빌레몬에게 돌려보내요."
+      ],
+      "study": "바울은 자기 심장과 같은 오네시모를 빌레몬에게 돌려보내요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-13",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "곁에 두고 싶었던 바울",
+      "ref": "빌레몬서 1:13",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 복음을 위해 오네시모를 곁에 두고 싶었어요."
+      ],
+      "study": "바울은 복음을 위해 오네시모를 곁에 두고 싶었어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-14",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "빌레몬의 자발적 동의",
+      "ref": "빌레몬서 1:14",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그러나 빌레몬의 선행이 억지로 되지 않고 자발적이길 바랐어요."
+      ],
+      "study": "그러나 빌레몬의 선행이 억지로 되지 않고 자발적이길 바랐어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-15",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "잠시 헤어진 것은 영원히 함께하기 위해",
+      "ref": "빌레몬서 1:15",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "오네시모가 잠시 떠난 것은 빌레몬이 그를 영원히 맞이하게 하려는 일이었을 수 있어요."
+      ],
+      "study": "오네시모가 잠시 떠난 것은 빌레몬이 그를 영원히 맞이하게 하려는 일이었을 수 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-16",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "종이 아니라 사랑받는 형제로",
+      "ref": "빌레몬서 1:16",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이제 오네시모는 종으로서가 아니라 사랑받는 형제로 맞이할 사람이에요."
+      ],
+      "study": "이제 오네시모는 종으로서가 아니라 사랑받는 형제로 맞이할 사람이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-17",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "바울처럼 오네시모를 맞이하라",
+      "ref": "빌레몬서 1:17",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "빌레몬은 오네시모를 바울처럼 맞아야 해요."
+      ],
+      "study": "빌레몬은 오네시모를 바울처럼 맞아야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-18",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "손해와 빚은 바울에게",
+      "ref": "빌레몬서 1:18",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "오네시모가 빌레몬에게 손해를 입혔거나 빚진 것이 있으면 바울이 갚겠다고 써요."
+      ],
+      "study": "오네시모가 빌레몬에게 손해를 입혔거나 빚진 것이 있으면 바울이 갚겠다고 써요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-19",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "바울의 친필 약속",
+      "ref": "빌레몬서 1:19",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 자신이 직접 손으로 기록하며 갚겠다고 약속해요."
+      ],
+      "study": "바울은 자신이 직접 손으로 기록하며 갚겠다고 약속해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-20",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "빌레몬에게 빚진 바울",
+      "ref": "빌레몬서 1:20",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 빌레몬이 자기에게 빚진 것까지 말하지 않겠다고 덧붙여요."
+      ],
+      "study": "바울은 빌레몬이 자기에게 빚진 것까지 말하지 않겠다고 덧붙여요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-21",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "성도들의 마음을 기쁘게 하라",
+      "ref": "빌레몬서 1:21",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "빌레몬이 성도들의 마음을 기쁘게 해 주기를 바울이 부탁해요."
+      ],
+      "study": "빌레몬이 성도들의 마음을 기쁘게 해 주기를 바울이 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-22",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        22
+      ],
+      "title": "바울의 확신",
+      "ref": "빌레몬서 1:22",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 빌레몬이 순종할 것을 믿고 부탁보다 더 행할 줄도 알아요."
+      ],
+      "study": "바울은 빌레몬이 순종할 것을 믿고 부탁보다 더 행할 줄도 알아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-23",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        23
+      ],
+      "title": "숙소를 마련해 달라",
+      "ref": "빌레몬서 1:23",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "바울은 성도들의 기도로 빌레몬에게 가게 되길 바라며 숙소를 부탁해요."
+      ],
+      "study": "바울은 성도들의 기도로 빌레몬에게 가게 되길 바라며 숙소를 부탁해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-24",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        24
+      ],
+      "title": "동역자들의 문안",
+      "ref": "빌레몬서 1:24",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "에바브라와 마가와 아리스다고와 데마와 누가가 문안해요."
+      ],
+      "study": "에바브라와 마가와 아리스다고와 데마와 누가가 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-phm-1-25",
+      "code": "phm",
+      "chapter": 1,
+      "verseNumbers": [
+        25
+      ],
+      "title": "주 예수의 은혜",
+      "ref": "빌레몬서 1:25",
+      "actors": [
+        "바울",
+        "빌레몬",
+        "오네시모",
+        "압비아",
+        "아킵보",
+        "디모데",
+        "예수"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주 예수 그리스도의 은혜가 빌레몬의 영과 함께하기를 바라요."
+      ],
+      "study": "주 예수 그리스도의 은혜가 빌레몬의 영과 함께하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "바울",
+        "target": "빌레몬",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "바울",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "바울",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "바울",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "바울",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "바울",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "빌레몬서 1:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

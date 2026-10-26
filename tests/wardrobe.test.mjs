@@ -27,3 +27,8 @@ test('기록된 특수 복식은 동명이인에게 전파되지 않으며 흉�
  const dots=[];drawWardrobe((x,y,w,h,color)=>dots.push(color),appearanceFor('아론'),'up');
  assert.ok(!dots.includes('#a75d53'));
 });
+test('의복 디자인 자료를 기존 대비 두 배 이상으로 확장하고 새 실루엣을 이름에 따라 배정한다',()=>{
+ assert.ok(Object.keys(WARDROBES).length>=28);
+ const a=appearanceFor('무명 인물 가'),b=appearanceFor('무명 인물 나');
+ assert.notEqual(a.wardrobe,b.wardrobe);assert.notEqual(a.coat,b.coat);
+});

@@ -18,7 +18,9 @@ for code in codes:
    notices+=bool(scene.get('textualNotice'));records={}
    for edition in ['gae','easy']:
     rows=source.execute('SELECT verse,text FROM verses WHERE edition=? AND code=? AND chapter=? AND verse=?',(edition,code,chapter,scene['verseNumbers'][0])).fetchall()
-    assert rows,(scene['id'],edition)
+    if not rows and edition=='gae' and scene.get('editionVariant'):
+     assert source.execute("SELECT 1 FROM verses WHERE edition=? AND code=? AND chapter=? AND verse=?",('easy',code,chapter,scene['verseNumbers'][0])).fetchone(),(scene['id'],edition)
+    else: assert rows,(scene['id'],edition)
     records[edition]=hashlib.sha256(json.dumps(rows,ensure_ascii=False).encode()).hexdigest()
    assert hokma.execute('SELECT 1 FROM chapters WHERE code=? AND chapter=?',(code,chapter)).fetchone()
    private.append({'id':scene['id'],'sourceHashes':records})

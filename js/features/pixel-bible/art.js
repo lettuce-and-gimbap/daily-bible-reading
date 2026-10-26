@@ -223,7 +223,7 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
   const descriptor=OBJECT_CATALOG[o.kind];
   const family=descriptor?.family;
   const originalKind=o.kind;
-  if(descriptor&&!['field','water','bench','tree','well','stone','bush','boat','scroll','oil'].includes(o.kind))o={...o,kind:['plant','crop'].includes(family)?(family==='crop'?'field':'tree'):['vessel'].includes(family)?descriptor.action:['book'].includes(family)?'scroll':family==='boat'?'boat':family==='stone'?'stone':family==='seat'?'bench':'catalog'};
+  if(descriptor&&!['field','water','bench','tree','well','stone','bush','boat','scroll','oil','love-booth'].includes(o.kind))o={...o,kind:['plant','crop'].includes(family)?(family==='crop'?'field':'tree'):['vessel'].includes(family)?descriptor.action:['book'].includes(family)?'scroll':family==='boat'?'boat':family==='stone'?'stone':family==='seat'?'bench':'catalog'};
   const x=o.x*tile,y=o.y*tile;
   c.save();c.translate(Math.round(x+(frame?.dx||0)),Math.round(y+(frame?.dy||0)));c.rotate(frame?.tilt||0);const size=frame?.scale||objectPresentation(originalKind).scale;c.scale(size*(1+(frame?.open||0)),size*(1-(frame?.squash||0)));
   if(frame?.bite){c.beginPath();c.rect(-30,-40,60,40);c.clip();}
@@ -239,6 +239,11 @@ export function drawWorldObject(c,o,tile=24,frame=null) {
    else c.fillRect(x,y-(frame?.lid&&y<=-10?6:0),w,h);
   };const O="#393e3c";
   if(!frame?.held)r(-7,4,15,2,"#193b3533");
+  if(originalKind==='love-booth'){
+    r(-20,1,40,5,O);r(-18,1,36,3,'#77553e');r(-15,4,4,7,O);r(11,4,4,7,O);r(-13,4,26,2,'#c6a06a');
+    r(-11,-20,22,18,O);r(-9,-18,18,14,'#305665');r(-7,-16,14,10,'#f1d891');r(-5,-14,10,2,'#b86c58');r(-4,-10,8,2,'#6f8e7b');
+    r(-2,-24,4,4,'#d7b966');r(-1,-23,2,2,'#fff0b3');c.restore();return;
+  }
   if(descriptor&&drawCatalogDetail(r,originalKind,family,O,frame)){c.restore();return;}
   if(o.kind==="field") {
     r(-12,-3,25,10,O);r(-11,-2,23,8,"#a68258");

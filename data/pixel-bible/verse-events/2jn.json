@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "code": "2jn",
+  "scope": "요한이서 1–1장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "장로",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      },
+      {
+        "name": "택하심을 받은 부녀",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      },
+      {
+        "name": "부녀의 자녀들",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      },
+      {
+        "name": "미혹하는 자",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "요한이서 1장 서신의 인물",
+        "refs": [
+          "요한이서 1장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-2jn-1-1",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "장로가 택하심을 받은 부녀에게 · 진리를 아는 모든 이의 사랑",
+      "ref": "요한이서 1:1",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "장로는 택하심을 받은 부녀와 그 자녀들에게 편지해요. 진리를 아는 모든 이도 그들을 사랑해요."
+      ],
+      "study": "장로는 택하심을 받은 부녀와 그 자녀들에게 편지해요. 진리를 아는 모든 이도 그들을 사랑해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-2",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "우리 안에 머무는 진리 · 은혜와 긍휼과 평강",
+      "ref": "요한이서 1:2",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "진리는 우리 안에 머물며 영원히 함께할 거예요. 하나님 아버지와 예수 그리스도에게서 은혜와 긍휼과 평강이 진리와 사랑 가운데 있어요."
+      ],
+      "study": "진리는 우리 안에 머물며 영원히 함께할 거예요. 하나님 아버지와 예수 그리스도에게서 은혜와 긍휼과 평강이 진리와 사랑 가운데 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-3",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "진리 안에서 걷는 자녀들 · 서로 사랑하라는 계명",
+      "ref": "요한이서 1:3",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "장로는 자녀들 가운데 진리 안에서 걷는 이들을 보고 기뻐해요. 서로 사랑하라는 것은 처음부터 받은 계명이에요."
+      ],
+      "study": "장로는 자녀들 가운데 진리 안에서 걷는 이들을 보고 기뻐해요. 서로 사랑하라는 것은 처음부터 받은 계명이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-4",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "사랑은 계명을 따라 걷는 것",
+      "ref": "요한이서 1:4",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑은 하나님의 계명을 따라 걷는 것이에요."
+      ],
+      "study": "사랑은 하나님의 계명을 따라 걷는 것이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-5",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "미혹하는 자가 세상에 나옴",
+      "ref": "요한이서 1:5",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "예수 그리스도께서 육체로 오심을 고백하지 않는 미혹하는 자들이 세상에 나왔어요."
+      ],
+      "study": "예수 그리스도께서 육체로 오심을 고백하지 않는 미혹하는 자들이 세상에 나왔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-6",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "미혹하는 자와 적그리스도",
+      "ref": "요한이서 1:6",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그런 사람이 미혹하는 자이며 적그리스도예요."
+      ],
+      "study": "그런 사람이 미혹하는 자이며 적그리스도예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-7",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "배운 것을 지켜 상을 잃지 말라",
+      "ref": "요한이서 1:7",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들은 일한 것을 잃지 않고 온전한 상을 받도록 조심해야 해요."
+      ],
+      "study": "성도들은 일한 것을 잃지 않고 온전한 상을 받도록 조심해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-8",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "그리스도의 가르침에 머물라",
+      "ref": "요한이서 1:8",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도의 가르침 안에 머물지 않는 이는 하나님을 모시지 못해요."
+      ],
+      "study": "그리스도의 가르침 안에 머물지 않는 이는 하나님을 모시지 못해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-9",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "가르침 안에 거하는 이",
+      "ref": "요한이서 1:9",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "가르침 안에 거하는 이는 아버지와 아들을 모셔요."
+      ],
+      "study": "가르침 안에 거하는 이는 아버지와 아들을 모셔요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-10",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "다른 가르침을 들고 오면",
+      "ref": "요한이서 1:10",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이 가르침을 지니지 않고 오는 이를 집에 들이거나 환영하지 말아요."
+      ],
+      "study": "이 가르침을 지니지 않고 오는 이를 집에 들이거나 환영하지 말아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-11",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "악한 일에 참여하지 않도록",
+      "ref": "요한이서 1:11",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그를 환영하면 그의 악한 일에 참여하게 돼요."
+      ],
+      "study": "그를 환영하면 그의 악한 일에 참여하게 돼요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-12",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "얼굴을 맞대고 나눌 말",
+      "ref": "요한이서 1:12",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "장로는 종이와 먹으로 더 쓰지 않고 직접 만나 기쁨이 충만하기를 바라요."
+      ],
+      "study": "장로는 종이와 먹으로 더 쓰지 않고 직접 만나 기쁨이 충만하기를 바라요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-2jn-1-13",
+      "code": "2jn",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "택하심을 받은 자매의 자녀들이 문안",
+      "ref": "요한이서 1:13",
+      "actors": [
+        "장로",
+        "택하심을 받은 부녀",
+        "부녀의 자녀들",
+        "미혹하는 자",
+        "예수",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "택하심을 받은 자매의 자녀들이 문안해요."
+      ],
+      "study": "택하심을 받은 자매의 자녀들이 문안해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "장로",
+        "target": "택하심을 받은 부녀",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "장로",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "장로",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "장로",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "장로",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "장로",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "요한이서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

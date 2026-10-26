@@ -2,6 +2,7 @@
 import {OBJECT_NOTES} from './object-notes.js';
 const rows=[
  ['scene-marker','본문 장면','symbol','scroll','본문장면표지'],
+ ['love-booth','TV는 사랑을 싣고 부스','building','bench','TV는 사랑을 싣고|사랑을 싣고'],
  ['salt-bowl','소금 담은 새 그릇','vessel','water','소금을 담아|소금을 담은|새 그릇'],
  ['flour-bowl','가루 그릇','vessel','oil','가루를 가져|가루 그릇'],
  ['fig-poultice','무화과 반죽 찜질','food','field','무화과 반죽|무화과로 만든 연고'],

@@ -1,0 +1,2063 @@
+{
+  "version": 1,
+  "code": "jud",
+  "scope": "유다서 1–1장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "additionalPeople": {
+    "1": [
+      {
+        "name": "유다",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "부르심을 받은 자들",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "가만히 들어온 자들",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "미가엘",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "마귀",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "가인·발람·고라",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "에녹",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "야고보",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "예수",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "성령",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      },
+      {
+        "name": "하나님",
+        "role": "유다서 1장 서신의 인물",
+        "refs": [
+          "유다서 1장"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "verse-jud-1-1",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        1
+      ],
+      "title": "예수 그리스도의 종 유다 · 부르심을 받은 이들에게",
+      "ref": "유다서 1:1",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "유다는 예수 그리스도의 종이며 야고보의 형제예요. 유다는 하나님 아버지의 사랑을 받고 예수 그리스도를 위해 지키심을 받는 이들에게 편지해요."
+      ],
+      "study": "유다는 예수 그리스도의 종이며 야고보의 형제예요. 유다는 하나님 아버지의 사랑을 받고 예수 그리스도를 위해 지키심을 받는 이들에게 편지해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-2",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        2
+      ],
+      "title": "긍휼과 평강과 사랑이 더해지기를 · 구원에 관해 쓰려던 편지",
+      "ref": "유다서 1:2",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "긍휼과 평강과 사랑이 성도들에게 더해지기를 바라요. 유다는 함께 받은 구원에 관해 쓰려 했어요."
+      ],
+      "study": "긍휼과 평강과 사랑이 성도들에게 더해지기를 바라요. 유다는 함께 받은 구원에 관해 쓰려 했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-3",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        3
+      ],
+      "title": "믿음을 위해 힘써 싸우라 · 가만히 들어온 경건하지 않은 자들",
+      "ref": "유다서 1:3",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성도들에게 단번에 맡겨진 믿음을 위해 힘써 싸우라고 권해요. 심판받기로 기록된 경건하지 않은 자들이 몰래 들어왔어요."
+      ],
+      "study": "성도들에게 단번에 맡겨진 믿음을 위해 힘써 싸우라고 권해요. 심판받기로 기록된 경건하지 않은 자들이 몰래 들어왔어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-4",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        4
+      ],
+      "title": "은혜를 방탕으로 바꿈 · 전에 알던 사실을 기억하라",
+      "ref": "유다서 1:4",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 하나님의 은혜를 방탕한 것으로 바꾸고 유일한 주권자 예수를 부인해요. 유다는 성도들이 이미 알고 있는 사실을 기억하게 해요."
+      ],
+      "study": "그들은 하나님의 은혜를 방탕한 것으로 바꾸고 유일한 주권자 예수를 부인해요. 유다는 성도들이 이미 알고 있는 사실을 기억하게 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-5",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        5
+      ],
+      "title": "믿지 않은 백성을 멸하심 · 자기 자리를 떠난 천사들",
+      "ref": "유다서 1:5",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주께서 이집트에서 백성을 구원하신 뒤 믿지 않은 이들을 멸하셨어요. 자기 지위를 지키지 않고 처소를 떠난 천사들을 큰 날의 심판까지 어둠에 가두셨어요."
+      ],
+      "study": "주께서 이집트에서 백성을 구원하신 뒤 믿지 않은 이들을 멸하셨어요. 자기 지위를 지키지 않고 처소를 떠난 천사들을 큰 날의 심판까지 어둠에 가두셨어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-6",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        6
+      ],
+      "title": "소돔과 고모라의 심판 · 꿈꾸는 자들의 더러움",
+      "ref": "유다서 1:6",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "소돔과 고모라는 음행과 다른 육체를 따라가 영원한 불의 본보기가 되었어요. 이 사람들은 육체를 더럽히고 권위를 업신여기며 영광스러운 존재를 비방해요."
+      ],
+      "study": "소돔과 고모라는 음행과 다른 육체를 따라가 영원한 불의 본보기가 되었어요. 이 사람들은 육체를 더럽히고 권위를 업신여기며 영광스러운 존재를 비방해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-7",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        7
+      ],
+      "title": "미가엘도 모욕 판결하지 않음 · 주께서 너를 꾸짖으시길",
+      "ref": "유다서 1:7",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "천사장 미가엘은 모세의 시체를 두고 마귀와 다툴 때 모욕으로 판결하지 않았어요. 미가엘은 주께서 마귀를 꾸짖으시기를 바랐어요."
+      ],
+      "study": "천사장 미가엘은 모세의 시체를 두고 마귀와 다툴 때 모욕으로 판결하지 않았어요. 미가엘은 주께서 마귀를 꾸짖으시기를 바랐어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-8",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        8
+      ],
+      "title": "알지 못하는 것을 비방 · 가인의 길과 발람의 삯",
+      "ref": "유다서 1:8",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이들은 알지 못하는 것을 비방하고 본능으로 아는 것 때문에 멸망해요. 그들은 가인의 길을 가고 발람의 삯을 위해 달려들며 고라의 반역으로 멸망해요."
+      ],
+      "study": "이들은 알지 못하는 것을 비방하고 본능으로 아는 것 때문에 멸망해요. 그들은 가인의 길을 가고 발람의 삯을 위해 달려들며 고라의 반역으로 멸망해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-9",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        9
+      ],
+      "title": "사랑의 잔치에 숨은 암초 · 바람에 밀리는 물 없는 구름",
+      "ref": "유다서 1:9",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 두려움 없이 자기만 먹이는 사랑의 잔치에 숨은 암초예요. 그들은 바람에 밀려가는 물 없는 구름 같아요."
+      ],
+      "study": "그들은 두려움 없이 자기만 먹이는 사랑의 잔치에 숨은 암초예요. 그들은 바람에 밀려가는 물 없는 구름 같아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-10",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        10
+      ],
+      "title": "열매 없는 가을 나무",
+      "ref": "유다서 1:10",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 열매 없이 죽고 뿌리째 뽑힌 두 번 죽은 나무예요."
+      ],
+      "study": "그들은 열매 없이 죽고 뿌리째 뽑힌 두 번 죽은 나무예요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-11",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        11
+      ],
+      "title": "자기 수치를 거품 내는 바다 물결",
+      "ref": "유다서 1:11",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 자기 수치를 거품 내는 거친 바다 물결이에요."
+      ],
+      "study": "그들은 자기 수치를 거품 내는 거친 바다 물결이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-12",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        12
+      ],
+      "title": "길 잃은 별",
+      "ref": "유다서 1:12",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 영원한 어둠이 예비된 길 잃은 별이에요."
+      ],
+      "study": "그들은 영원한 어둠이 예비된 길 잃은 별이에요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-13",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        13
+      ],
+      "title": "에녹의 예언",
+      "ref": "유다서 1:13",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "아담의 칠 대손 에녹도 주께서 거룩한 무리와 오신다고 예언했어요."
+      ],
+      "study": "아담의 칠 대손 에녹도 주께서 거룩한 무리와 오신다고 예언했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-14",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        14
+      ],
+      "title": "경건하지 않은 행위에 심판",
+      "ref": "유다서 1:14",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "주께서는 경건하지 않은 자들의 모든 행위와 거친 말을 심판하세요."
+      ],
+      "study": "주께서는 경건하지 않은 자들의 모든 행위와 거친 말을 심판하세요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-15",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        15
+      ],
+      "title": "불평하고 정욕을 따르는 자들",
+      "ref": "유다서 1:15",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "이들은 불평하고 원망하며 정욕대로 살고 이익을 위해 아첨해요."
+      ],
+      "study": "이들은 불평하고 원망하며 정욕대로 살고 이익을 위해 아첨해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-16",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        16
+      ],
+      "title": "사도들의 경고를 기억하라",
+      "ref": "유다서 1:16",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사도들이 마지막 때에 조롱하는 자들이 일어날 것을 미리 말했어요."
+      ],
+      "study": "사도들이 마지막 때에 조롱하는 자들이 일어날 것을 미리 말했어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-17",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        17
+      ],
+      "title": "성령 없는 분열을 일으키는 자",
+      "ref": "유다서 1:17",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "그들은 육에 속해 분열을 일으키고 성령이 없어요."
+      ],
+      "study": "그들은 육에 속해 분열을 일으키고 성령이 없어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-18",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        18
+      ],
+      "title": "지극히 거룩한 믿음 위에 세우라",
+      "ref": "유다서 1:18",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "사랑하는 이들은 지극히 거룩한 믿음 위에 자신을 세워야 해요."
+      ],
+      "study": "사랑하는 이들은 지극히 거룩한 믿음 위에 자신을 세워야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-19",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        19
+      ],
+      "title": "성령으로 기도하라",
+      "ref": "유다서 1:19",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "성령 안에서 기도해야 해요."
+      ],
+      "study": "성령 안에서 기도해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-20",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        20
+      ],
+      "title": "하나님의 사랑 안에 자신을 지키라",
+      "ref": "유다서 1:20",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님의 사랑 안에서 자신을 지키며 영생에 이르게 할 예수의 긍휼을 기다려요."
+      ],
+      "study": "하나님의 사랑 안에서 자신을 지키며 영생에 이르게 할 예수의 긍휼을 기다려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:20",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-21",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        21
+      ],
+      "title": "의심하는 이를 긍휼히 여기라",
+      "ref": "유다서 1:21",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "의심하는 이들을 긍휼히 여겨요."
+      ],
+      "study": "의심하는 이들을 긍휼히 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:21",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-22",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        22
+      ],
+      "title": "불에서 끌어내어 구하라",
+      "ref": "유다서 1:22",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "어떤 이들은 불에서 끌어내어 구해야 해요."
+      ],
+      "study": "어떤 이들은 불에서 끌어내어 구해야 해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:22",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-23",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        23
+      ],
+      "title": "두려움으로 긍휼히 여기라",
+      "ref": "유다서 1:23",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "육체로 더럽혀진 옷까지 미워하며 두려움으로 긍휼히 여겨요."
+      ],
+      "study": "육체로 더럽혀진 옷까지 미워하며 두려움으로 긍휼히 여겨요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:23",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-24",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        24
+      ],
+      "title": "넘어지지 않게 지키시는 하나님",
+      "ref": "유다서 1:24",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "하나님은 성도들을 넘어지지 않게 지키시고 흠 없이 기쁨으로 서게 하실 수 있어요."
+      ],
+      "study": "하나님은 성도들을 넘어지지 않게 지키시고 흠 없이 기쁨으로 서게 하실 수 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:24",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-jud-1-25",
+      "code": "jud",
+      "chapter": 1,
+      "verseNumbers": [
+        25
+      ],
+      "title": "유일한 하나님께 영광",
+      "ref": "유다서 1:25",
+      "actors": [
+        "유다",
+        "부르심을 받은 자들",
+        "가만히 들어온 자들",
+        "미가엘",
+        "마귀",
+        "가인·발람·고라",
+        "에녹",
+        "야고보",
+        "예수",
+        "성령",
+        "하나님"
+      ],
+      "object": "letter",
+      "narrationOnly": true,
+      "lines": [
+        "유일하신 구주 하나님께 영광과 위엄과 권세가 영원 전부터 이제와 영원토록 있어요."
+      ],
+      "study": "유일하신 구주 하나님께 영광과 위엄과 권세가 영원 전부터 이제와 영원토록 있어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "유다",
+        "target": "부르심을 받은 자들",
+        "mode": "reconstruction",
+        "setting": "letter-room",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "letter",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "write",
+            "actor": "유다",
+            "duration": 1
+          },
+          {
+            "action": "read",
+            "actor": "유다",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "유다",
+            "duration": 1.8
+          },
+          {
+            "action": "pray",
+            "actor": "유다",
+            "duration": 1.5
+          },
+          {
+            "action": "bless",
+            "actor": "유다",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "유다서 1:25",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    }
+  ]
+}

@@ -94,6 +94,8 @@
 .pb-speech p{margin:0;font-size:13px;font-weight:600;line-height:1.35;word-break:keep-all;overflow-wrap:anywhere;}
 .pb-encounter{width:min(300px,calc(100% - 16px));max-width:min(300px,calc(100% - 16px));}
 .pb-encounter-related{border:3px solid #d2ad58;background:#fff0c4;box-shadow:3px 3px 0 #604b2855;}
+.pb-encounter-booth{border:3px solid #e4bd5a;background:#fff0c4;box-shadow:0 0 0 3px #8e6528,0 5px 0 #604b2855;}
+.pb-encounter-booth .pb-speech-speaker{background:#72511f;color:#fff4cd;}
 .pb-encounter-related .pb-speech-speaker{background:#6e5726;color:#fff3ca;}
 .pb-encounter-general{border-color:#8d8067;}
 .pb-encounter p{display:block;-webkit-line-clamp:unset;max-height:none;overflow:visible;}

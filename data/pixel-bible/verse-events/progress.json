@@ -1,10 +1,10 @@
 {
   "scope": "신약 개역개정 절 번호 기준. 계 12:18 등 역본별 별도 절 구분은 추가 검토 대상. 작성된 절만 집계하며 브라우저 검수 완료와 구별함.",
   "expected": 7957,
-  "authored": 4115,
-  "contentClips": 4106,
-  "textualNotices": 9,
-  "pending": 3842,
+  "authored": 6886,
+  "contentClips": 6874,
+  "textualNotices": 12,
+  "pending": 1071,
   "chapters": [
     {
       "code": "mat",
@@ -696,358 +696,358 @@
       "code": "act",
       "chapter": 10,
       "expected": 48,
-      "authored": 0,
-      "pending": 48
+      "authored": 48,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 11,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 12,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 13,
       "expected": 52,
-      "authored": 0,
-      "pending": 52
+      "authored": 52,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 14,
       "expected": 28,
-      "authored": 0,
-      "pending": 28
+      "authored": 28,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 15,
       "expected": 41,
-      "authored": 0,
-      "pending": 41
+      "authored": 41,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 16,
       "expected": 40,
-      "authored": 0,
-      "pending": 40
+      "authored": 40,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 17,
       "expected": 34,
-      "authored": 0,
-      "pending": 34
+      "authored": 34,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 18,
       "expected": 28,
-      "authored": 0,
-      "pending": 28
+      "authored": 28,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 19,
       "expected": 41,
-      "authored": 0,
-      "pending": 41
+      "authored": 41,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 20,
       "expected": 38,
-      "authored": 0,
-      "pending": 38
+      "authored": 38,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 21,
       "expected": 40,
-      "authored": 0,
-      "pending": 40
+      "authored": 40,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 22,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 23,
       "expected": 35,
-      "authored": 0,
-      "pending": 35
+      "authored": 35,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 24,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 25,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 26,
       "expected": 32,
-      "authored": 0,
-      "pending": 32
+      "authored": 32,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 27,
       "expected": 44,
-      "authored": 0,
-      "pending": 44
+      "authored": 44,
+      "pending": 0
     },
     {
       "code": "act",
       "chapter": 28,
       "expected": 31,
-      "authored": 0,
-      "pending": 31
+      "authored": 31,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 1,
       "expected": 32,
-      "authored": 0,
-      "pending": 32
+      "authored": 32,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 2,
       "expected": 29,
-      "authored": 0,
-      "pending": 29
+      "authored": 29,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 3,
       "expected": 31,
-      "authored": 0,
-      "pending": 31
+      "authored": 31,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 4,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 5,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 6,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 7,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 8,
       "expected": 39,
-      "authored": 0,
-      "pending": 39
+      "authored": 39,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 9,
       "expected": 33,
-      "authored": 0,
-      "pending": 33
+      "authored": 33,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 10,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 11,
       "expected": 36,
-      "authored": 0,
-      "pending": 36
+      "authored": 36,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 12,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 13,
       "expected": 14,
-      "authored": 0,
-      "pending": 14
+      "authored": 14,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 14,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 15,
       "expected": 33,
-      "authored": 0,
-      "pending": 33
+      "authored": 33,
+      "pending": 0
     },
     {
       "code": "rom",
       "chapter": 16,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 1,
       "expected": 31,
-      "authored": 0,
-      "pending": 31
+      "authored": 31,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 2,
       "expected": 16,
-      "authored": 0,
-      "pending": 16
+      "authored": 16,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 3,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 4,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 5,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 6,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 7,
       "expected": 40,
-      "authored": 0,
-      "pending": 40
+      "authored": 40,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 8,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 9,
       "expected": 27,
-      "authored": 0,
-      "pending": 27
+      "authored": 27,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 10,
       "expected": 33,
-      "authored": 0,
-      "pending": 33
+      "authored": 33,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 11,
       "expected": 34,
-      "authored": 0,
-      "pending": 34
+      "authored": 34,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 12,
       "expected": 31,
-      "authored": 0,
-      "pending": 31
+      "authored": 31,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 13,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 14,
       "expected": 40,
-      "authored": 0,
-      "pending": 40
+      "authored": 40,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 15,
       "expected": 58,
-      "authored": 0,
-      "pending": 58
+      "authored": 58,
+      "pending": 0
     },
     {
       "code": "1co",
       "chapter": 16,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "2co",
@@ -1144,295 +1144,295 @@
       "code": "gal",
       "chapter": 1,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "gal",
       "chapter": 2,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "gal",
       "chapter": 3,
       "expected": 29,
-      "authored": 0,
-      "pending": 29
+      "authored": 29,
+      "pending": 0
     },
     {
       "code": "gal",
       "chapter": 4,
       "expected": 31,
-      "authored": 0,
-      "pending": 31
+      "authored": 31,
+      "pending": 0
     },
     {
       "code": "gal",
       "chapter": 5,
       "expected": 26,
-      "authored": 0,
-      "pending": 26
+      "authored": 26,
+      "pending": 0
     },
     {
       "code": "gal",
       "chapter": 6,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 1,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 2,
       "expected": 22,
-      "authored": 0,
-      "pending": 22
+      "authored": 22,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 3,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 4,
       "expected": 32,
-      "authored": 0,
-      "pending": 32
+      "authored": 32,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 5,
       "expected": 33,
-      "authored": 0,
-      "pending": 33
+      "authored": 33,
+      "pending": 0
     },
     {
       "code": "eph",
       "chapter": 6,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "php",
       "chapter": 1,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "php",
       "chapter": 2,
       "expected": 30,
-      "authored": 0,
-      "pending": 30
+      "authored": 30,
+      "pending": 0
     },
     {
       "code": "php",
       "chapter": 3,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "php",
       "chapter": 4,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "col",
       "chapter": 1,
       "expected": 29,
-      "authored": 0,
-      "pending": 29
+      "authored": 29,
+      "pending": 0
     },
     {
       "code": "col",
       "chapter": 2,
       "expected": 23,
-      "authored": 0,
-      "pending": 23
+      "authored": 23,
+      "pending": 0
     },
     {
       "code": "col",
       "chapter": 3,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "col",
       "chapter": 4,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "1th",
       "chapter": 1,
       "expected": 10,
-      "authored": 0,
-      "pending": 10
+      "authored": 10,
+      "pending": 0
     },
     {
       "code": "1th",
       "chapter": 2,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "1th",
       "chapter": 3,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "1th",
       "chapter": 4,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "1th",
       "chapter": 5,
       "expected": 28,
-      "authored": 0,
-      "pending": 28
+      "authored": 28,
+      "pending": 0
     },
     {
       "code": "2th",
       "chapter": 1,
       "expected": 12,
-      "authored": 0,
-      "pending": 12
+      "authored": 12,
+      "pending": 0
     },
     {
       "code": "2th",
       "chapter": 2,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "2th",
       "chapter": 3,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 1,
       "expected": 20,
-      "authored": 0,
-      "pending": 20
+      "authored": 20,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 2,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 3,
       "expected": 16,
-      "authored": 0,
-      "pending": 16
+      "authored": 16,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 4,
       "expected": 16,
-      "authored": 0,
-      "pending": 16
+      "authored": 16,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 5,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "1ti",
       "chapter": 6,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "2ti",
       "chapter": 1,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "2ti",
       "chapter": 2,
       "expected": 26,
-      "authored": 0,
-      "pending": 26
+      "authored": 26,
+      "pending": 0
     },
     {
       "code": "2ti",
       "chapter": 3,
       "expected": 17,
-      "authored": 0,
-      "pending": 17
+      "authored": 17,
+      "pending": 0
     },
     {
       "code": "2ti",
       "chapter": 4,
       "expected": 22,
-      "authored": 0,
-      "pending": 22
+      "authored": 22,
+      "pending": 0
     },
     {
       "code": "tit",
       "chapter": 1,
       "expected": 16,
-      "authored": 0,
-      "pending": 16
+      "authored": 16,
+      "pending": 0
     },
     {
       "code": "tit",
       "chapter": 2,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "tit",
       "chapter": 3,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "phm",
       "chapter": 1,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "heb",
@@ -1564,113 +1564,113 @@
       "code": "1pe",
       "chapter": 1,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "1pe",
       "chapter": 2,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "1pe",
       "chapter": 3,
       "expected": 22,
-      "authored": 0,
-      "pending": 22
+      "authored": 22,
+      "pending": 0
     },
     {
       "code": "1pe",
       "chapter": 4,
       "expected": 19,
-      "authored": 0,
-      "pending": 19
+      "authored": 19,
+      "pending": 0
     },
     {
       "code": "1pe",
       "chapter": 5,
       "expected": 14,
-      "authored": 0,
-      "pending": 14
+      "authored": 14,
+      "pending": 0
     },
     {
       "code": "2pe",
       "chapter": 1,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "2pe",
       "chapter": 2,
       "expected": 22,
-      "authored": 0,
-      "pending": 22
+      "authored": 22,
+      "pending": 0
     },
     {
       "code": "2pe",
       "chapter": 3,
       "expected": 18,
-      "authored": 0,
-      "pending": 18
+      "authored": 18,
+      "pending": 0
     },
     {
       "code": "1jn",
       "chapter": 1,
       "expected": 10,
-      "authored": 0,
-      "pending": 10
+      "authored": 10,
+      "pending": 0
     },
     {
       "code": "1jn",
       "chapter": 2,
       "expected": 29,
-      "authored": 0,
-      "pending": 29
+      "authored": 29,
+      "pending": 0
     },
     {
       "code": "1jn",
       "chapter": 3,
       "expected": 24,
-      "authored": 0,
-      "pending": 24
+      "authored": 24,
+      "pending": 0
     },
     {
       "code": "1jn",
       "chapter": 4,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "1jn",
       "chapter": 5,
       "expected": 21,
-      "authored": 0,
-      "pending": 21
+      "authored": 21,
+      "pending": 0
     },
     {
       "code": "2jn",
       "chapter": 1,
       "expected": 13,
-      "authored": 0,
-      "pending": 13
+      "authored": 13,
+      "pending": 0
     },
     {
       "code": "3jn",
       "chapter": 1,
       "expected": 15,
-      "authored": 0,
-      "pending": 15
+      "authored": 15,
+      "pending": 0
     },
     {
       "code": "jud",
       "chapter": 1,
       "expected": 25,
-      "authored": 0,
-      "pending": 25
+      "authored": 25,
+      "pending": 0
     },
     {
       "code": "rev",
