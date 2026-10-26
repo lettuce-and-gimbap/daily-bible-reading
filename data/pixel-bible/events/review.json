@@ -11,7 +11,7 @@
   "coverageSummary": {
     "eventsReviewed": 3533,
     "sourceMatchedSceneCandidates": 710,
-    "scenesInFiles": 969,
+    "scenesInFiles": 981,
     "retainedLegacyScenes": 4,
     "classification": {
       "no-source-confirmed-actor-or-object": 1227,
@@ -28,7 +28,7 @@
       "source-edition-gap": 9,
       "referenced-person-not-scene-actor": 1
     },
-    "curatedSupplementalScenes": 255
+    "curatedSupplementalScenes": 267
   },
   "books": [
     {
@@ -171,9 +171,10 @@
     {
       "code": "psa",
       "chapters": 150,
-      "scenes": 18,
+      "scenes": 30,
       "sourceMatchedSceneCandidates": 18,
-      "retainedLegacyScenes": 0
+      "retainedLegacyScenes": 0,
+      "curatedSupplementalScenes": 12
     },
     {
       "code": "pro",
@@ -28206,6 +28207,10 @@
       {
         "book": "job",
         "scenesAdded": 28
+      },
+      {
+        "book": "psa",
+        "scenesAdded": 12
       }
     ]
   }

@@ -19,5 +19,43 @@
       "setting": "pasture",
       "effect": "woodcut"
     }
+  },
+  "psa": {
+    "18": {
+      "mode": "illustration"
+    },
+    "19": {
+      "mode": "illustration"
+    },
+    "20": {
+      "mode": "illustration"
+    },
+    "21": {
+      "mode": "illustration"
+    },
+    "22": {
+      "mode": "illustration"
+    },
+    "23": {
+      "mode": "illustration"
+    },
+    "24": {
+      "mode": "illustration"
+    },
+    "25": {
+      "mode": "illustration"
+    },
+    "26": {
+      "mode": "illustration"
+    },
+    "27": {
+      "mode": "illustration"
+    },
+    "28": {
+      "mode": "illustration"
+    },
+    "29": {
+      "mode": "illustration"
+    }
   }
 }
