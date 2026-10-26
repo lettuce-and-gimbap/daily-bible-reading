@@ -1,7 +1,7 @@
 {
   "version": 1,
   "code": "luk",
-  "scope": "누가복음 1–1장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
+  "scope": "누가복음 1–2장 절별 직접 작성. 다른 절을 완료 처리하지 않음.",
   "additionalPeople": {
     "1": [
       {
@@ -65,6 +65,29 @@
         "role": "누가복음 1장 본문 관련 인물",
         "refs": [
           "누가복음 1장"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "구레뇨",
+        "role": "누가복음 2장 관련 인물",
+        "refs": [
+          "누가복음 2장"
+        ]
+      },
+      {
+        "name": "사람들",
+        "role": "누가복음 2장 관련 인물",
+        "refs": [
+          "누가복음 2장"
+        ]
+      },
+      {
+        "name": "천군",
+        "role": "누가복음 2장 관련 인물",
+        "refs": [
+          "누가복음 2장"
         ]
       }
     ]
@@ -5643,6 +5666,1424 @@
         ],
         "duration": 8.2,
         "ref": "누가복음 1:80",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-1",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        1
+      ],
+      "title": "호적 등록 명령",
+      "ref": "누가복음 2:1",
+      "actors": [
+        "가이사 아구스도"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "아구스도가 호적 등록 명령을 내려요."
+      ],
+      "study": "아구스도가 호적 등록 명령을 내려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "가이사 아구스도",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "가이사 아구스도",
+            "duration": 1
+          },
+          {
+            "action": "write",
+            "actor": "가이사 아구스도",
+            "duration": 1.2
+          },
+          {
+            "action": "signal",
+            "actor": "가이사 아구스도",
+            "duration": 1.5
+          },
+          {
+            "action": "extend",
+            "actor": "가이사 아구스도",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "가이사 아구스도",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "가이사 아구스도",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:1",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-2",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        2
+      ],
+      "title": "구레뇨 때의 등록",
+      "ref": "누가복음 2:2",
+      "actors": [
+        "구레뇨"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "구레뇨가 수리아 총독일 때의 첫 등록이라는 시간 배경을 소개해요."
+      ],
+      "study": "구레뇨가 수리아 총독일 때의 첫 등록이라는 시간 배경을 소개해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "구레뇨",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "read",
+            "actor": "구레뇨",
+            "duration": 1
+          },
+          {
+            "action": "inspect",
+            "actor": "구레뇨",
+            "duration": 1.2
+          },
+          {
+            "action": "write",
+            "actor": "구레뇨",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "구레뇨",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "구레뇨",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "구레뇨",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:2",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-3",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        3
+      ],
+      "title": "고향으로 향하는 사람들",
+      "ref": "누가복음 2:3",
+      "actors": [
+        "사람들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사람들이 등록을 위해 각자 고향으로 이동해요."
+      ],
+      "study": "사람들이 등록을 위해 각자 고향으로 이동해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "halt",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:3",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-4",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        4
+      ],
+      "title": "베들레헴으로 가는 요셉",
+      "ref": "누가복음 2:4",
+      "actors": [
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "다윗 가문의 요셉이 나사렛에서 베들레헴으로 길을 나서요."
+      ],
+      "study": "다윗 가문의 요셉이 나사렛에서 베들레헴으로 길을 나서요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "turn",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:4",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-5",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        5
+      ],
+      "title": "마리아와 함께 등록하러 감",
+      "ref": "누가복음 2:5",
+      "actors": [
+        "요셉",
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "임신 중인 마리아가 요셉과 함께 길을 가요."
+      ],
+      "study": "임신 중인 마리아가 요셉과 함께 길을 가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "요셉",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "요셉",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "reach",
+            "actor": "요셉",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "요셉",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "요셉",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:5",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-6",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        6
+      ],
+      "title": "해산할 때가 이름",
+      "ref": "누가복음 2:6",
+      "actors": [
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "베들레헴에 머무는 동안 마리아의 출산 때가 이르러요."
+      ],
+      "study": "베들레헴에 머무는 동안 마리아의 출산 때가 이르러요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "sit",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "reach",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:6",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-7",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        7
+      ],
+      "title": "강보에 싸여 구유에 누운 아기",
+      "ref": "누가복음 2:7",
+      "actors": [
+        "마리아",
+        "요셉",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 첫아들을 낳아 강보로 싸고 구유에 눕혀요. 숙소에 자리가 없었다는 본문 배경을 담아요."
+      ],
+      "study": "마리아가 첫아들을 낳아 강보로 싸고 구유에 눕혀요. 숙소에 자리가 없었다는 본문 배경을 담아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": "요셉",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "cradle",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "fold",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "place",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:7",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-8",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        8
+      ],
+      "title": "밤에 양을 지키는 목자들",
+      "ref": "누가복음 2:8",
+      "actors": [
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "목자들이 들판에서 밤새 양 떼를 지켜요."
+      ],
+      "study": "목자들이 들판에서 밤새 양 떼를 지켜요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "목자들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "목자들",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "목자들",
+            "duration": 1.2
+          },
+          {
+            "action": "inspect",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "guard",
+            "actor": "목자들",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "목자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:8",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-9",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        9
+      ],
+      "title": "목자들을 비춘 영광",
+      "ref": "누가복음 2:9",
+      "actors": [
+        "주의 사자",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "주의 사자가 나타나고 빛이 둘러 비추자 목자들이 두려워해요."
+      ],
+      "study": "주의 사자가 나타나고 빛이 둘러 비추자 목자들이 두려워해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "주의 사자",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "spirit-light",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "주의 사자",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "주의 사자",
+            "duration": 1.2
+          },
+          {
+            "action": "recoil",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "signal",
+            "actor": "주의 사자",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "주의 사자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:9",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-10",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        10
+      ],
+      "title": "큰 기쁨의 소식",
+      "ref": "누가복음 2:10",
+      "actors": [
+        "주의 사자",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "사자가 목자들을 안심시키며 모든 백성을 위한 기쁜 소식을 전해요."
+      ],
+      "study": "사자가 목자들을 안심시키며 모든 백성을 위한 기쁜 소식을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "주의 사자",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "signal",
+            "actor": "주의 사자",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "주의 사자",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "주의 사자",
+            "duration": 1.8
+          },
+          {
+            "action": "lower",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "주의 사자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:10",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-11",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        11
+      ],
+      "title": "다윗의 동네에서 나신 구주",
+      "ref": "누가복음 2:11",
+      "actors": [
+        "주의 사자",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "그리스도 주이신 구주가 태어나셨다고 사자가 알려요."
+      ],
+      "study": "그리스도 주이신 구주가 태어나셨다고 사자가 알려요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "주의 사자",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "주의 사자",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "주의 사자",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "주의 사자",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "주의 사자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:11",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-12",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        12
+      ],
+      "title": "구유의 아기를 표적으로 알려줌",
+      "ref": "누가복음 2:12",
+      "actors": [
+        "주의 사자",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "강보에 싸여 구유에 누운 아기가 표적이라는 설명을 들어요."
+      ],
+      "study": "강보에 싸여 구유에 누운 아기가 표적이라는 설명을 들어요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "주의 사자",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "주의 사자",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "주의 사자",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "주의 사자",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "주의 사자",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "주의 사자",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:12",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-13",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        13
+      ],
+      "title": "천군의 찬송",
+      "ref": "누가복음 2:13",
+      "actors": [
+        "천군",
+        "주의 사자",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "많은 천군이 사자와 함께 하나님을 찬송해요."
+      ],
+      "study": "많은 천군이 사자와 함께 하나님을 찬송해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "천군",
+        "target": "주의 사자",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "gather",
+            "actor": "천군",
+            "duration": 1
+          },
+          {
+            "action": "lift",
+            "actor": "천군",
+            "duration": 1.2
+          },
+          {
+            "action": "speak",
+            "actor": "천군",
+            "duration": 1.5
+          },
+          {
+            "action": "bow",
+            "actor": "천군",
+            "duration": 1.8
+          },
+          {
+            "action": "listen",
+            "actor": "천군",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "천군",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:13",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-14",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        14
+      ],
+      "title": "영광과 평화를 노래함",
+      "ref": "누가복음 2:14",
+      "actors": [
+        "천군",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "하늘의 영광과 땅의 평화를 찬송해요."
+      ],
+      "study": "하늘의 영광과 땅의 평화를 찬송해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "천군",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "lift",
+            "actor": "천군",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "천군",
+            "duration": 1.2
+          },
+          {
+            "action": "extend",
+            "actor": "천군",
+            "duration": 1.5
+          },
+          {
+            "action": "listen",
+            "actor": "천군",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "천군",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "천군",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:14",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "night": true
+      }
+    },
+    {
+      "id": "verse-luk-2-15",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        15
+      ],
+      "title": "베들레헴으로 가자고 의논함",
+      "ref": "누가복음 2:15",
+      "actors": [
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "천사들이 떠난 뒤 목자들이 베들레헴으로 가서 확인하자고 말해요."
+      ],
+      "study": "천사들이 떠난 뒤 목자들이 베들레헴으로 가서 확인하자고 말해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "목자들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "wilderness",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "look",
+            "actor": "목자들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "목자들",
+            "duration": 1.2
+          },
+          {
+            "action": "point",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "gather",
+            "actor": "목자들",
+            "duration": 1.8
+          },
+          {
+            "action": "turn",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "목자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:15",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-16",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        16
+      ],
+      "title": "아기를 찾아간 목자들",
+      "ref": "누가복음 2:16",
+      "actors": [
+        "목자들",
+        "마리아",
+        "요셉",
+        "예수"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "목자들이 서둘러 마리아와 요셉과 구유의 아기를 찾아요."
+      ],
+      "study": "목자들이 서둘러 마리아와 요셉과 구유의 아기를 찾아요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "목자들",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "walk",
+            "actor": "목자들",
+            "duration": 1
+          },
+          {
+            "action": "halt",
+            "actor": "목자들",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "kneel",
+            "actor": "목자들",
+            "duration": 1.8
+          },
+          {
+            "action": "bow",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "목자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:16",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작",
+        "portrayals": {
+          "예수": {
+            "scale": 0.5,
+            "hideBeard": true,
+            "lie": true
+          }
+        }
+      }
+    },
+    {
+      "id": "verse-luk-2-17",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        17
+      ],
+      "title": "들었던 소식을 전함",
+      "ref": "누가복음 2:17",
+      "actors": [
+        "목자들",
+        "마리아",
+        "요셉"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "목자들이 아기에 관해 천사에게 들은 소식을 전해요."
+      ],
+      "study": "목자들이 아기에 관해 천사에게 들은 소식을 전해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "목자들",
+        "target": "마리아",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "speak",
+            "actor": "목자들",
+            "duration": 1
+          },
+          {
+            "action": "point",
+            "actor": "목자들",
+            "duration": 1.2
+          },
+          {
+            "action": "listen",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "look",
+            "actor": "목자들",
+            "duration": 1.8
+          },
+          {
+            "action": "smile",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "목자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:17",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-18",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        18
+      ],
+      "title": "듣는 이들의 놀라움",
+      "ref": "누가복음 2:18",
+      "actors": [
+        "사람들",
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "목자들의 이야기를 들은 사람들이 놀라워해요."
+      ],
+      "study": "목자들의 이야기를 들은 사람들이 놀라워해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "사람들",
+        "target": "목자들",
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "사람들",
+            "duration": 1
+          },
+          {
+            "action": "startle",
+            "actor": "사람들",
+            "duration": 1.2
+          },
+          {
+            "action": "look",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "사람들",
+            "duration": 1.8
+          },
+          {
+            "action": "speak",
+            "actor": "사람들",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "사람들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:18",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-19",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        19
+      ],
+      "title": "마음에 새기는 마리아",
+      "ref": "누가복음 2:19",
+      "actors": [
+        "마리아"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "마리아가 들은 모든 말을 마음에 간직하고 깊이 생각해요."
+      ],
+      "study": "마리아가 들은 모든 말을 마음에 간직하고 깊이 생각해요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "마리아",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "chamber",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "listen",
+            "actor": "마리아",
+            "duration": 1
+          },
+          {
+            "action": "look",
+            "actor": "마리아",
+            "duration": 1.2
+          },
+          {
+            "action": "lower",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "hold",
+            "actor": "마리아",
+            "duration": 1.8
+          },
+          {
+            "action": "wait",
+            "actor": "마리아",
+            "duration": 1.5
+          },
+          {
+            "action": "stand",
+            "actor": "마리아",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:19",
+        "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
+      }
+    },
+    {
+      "id": "verse-luk-2-20",
+      "code": "luk",
+      "chapter": 2,
+      "verseNumbers": [
+        20
+      ],
+      "title": "찬양하며 돌아가는 목자들",
+      "ref": "누가복음 2:20",
+      "actors": [
+        "목자들"
+      ],
+      "object": "scene-marker",
+      "narrationOnly": true,
+      "lines": [
+        "목자들이 듣고 본 일을 두고 하나님을 찬양하며 돌아가요."
+      ],
+      "study": "목자들이 듣고 본 일을 두고 하나님을 찬양하며 돌아가요.",
+      "actorLines": {},
+      "actions": {},
+      "objectNote": "해당 절을 바탕으로 새로 구성한 픽셀 연출이에요. 실제 원문과 세부 동작의 창작을 구별해요.",
+      "animation": {
+        "version": 2,
+        "motif": "report",
+        "lead": "목자들",
+        "target": null,
+        "mode": "reconstruction",
+        "setting": "road",
+        "effect": "none",
+        "emotion": "neutral",
+        "prop": "scene-marker",
+        "propFixed": false,
+        "beats": [
+          {
+            "action": "bow",
+            "actor": "목자들",
+            "duration": 1
+          },
+          {
+            "action": "speak",
+            "actor": "목자들",
+            "duration": 1.2
+          },
+          {
+            "action": "lift",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "turn",
+            "actor": "목자들",
+            "duration": 1.8
+          },
+          {
+            "action": "walk",
+            "actor": "목자들",
+            "duration": 1.5
+          },
+          {
+            "action": "walk",
+            "actor": "목자들",
+            "duration": 1.2
+          }
+        ],
+        "duration": 8.2,
+        "ref": "누가복음 2:20",
         "source": "절별 직접 작성 · 두 역본 대조 및 주석 참고 · 세부 동작은 창작"
       }
     }

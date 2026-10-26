@@ -81,3 +81,26 @@ chapters[1].push({"verse": 77, "title": "죄 사함의 구원을 알릴 사명",
 chapters[1].push({"verse": 78, "title": "긍휼로 떠오르는 빛", "study": "하나님의 긍휼로 돋는 해가 위로부터 임한다고 노래해요.", "actors": ["사가랴"], "actions": ["speak", "lift", "look", "listen", "wait", "stand"], "setting": "house"});
 chapters[1].push({"verse": 79, "title": "어둠에 비치는 빛과 평화의 길", "study": "어둠과 죽음의 그늘에 빛이 비치고 발걸음이 평화의 길로 향하는 상징 장면이에요.", "actors": ["사가랴"], "actions": ["look", "point", "walk", "walk", "lift", "stand"], "setting": "house"});
 chapters[1].push({"verse": 80, "title": "자라 광야에 머무는 요한", "study": "아이가 자라 심령이 강해지고 이스라엘 앞에 나타날 때까지 빈 들에 머물러요.", "actors": ["세례 요한"], "actions": ["stand", "walk", "look", "wait", "stand", "turn"], "setting": "wilderness"});
+
+chapters[2]=[];
+additionalPeople[2]=["구레뇨","사람들","천군"].map(name=>({name,role:"누가복음 2장 관련 인물",refs:["누가복음 2장"]}));
+chapters[2].push({"verse": 1, "title": "호적 등록 명령", "study": "아구스도가 호적 등록 명령을 내려요.", "actors": ["가이사 아구스도"], "actions": ["read", "write", "signal", "extend", "listen", "stand"], "setting": "road"});
+chapters[2].push({"verse": 2, "title": "구레뇨 때의 등록", "study": "구레뇨가 수리아 총독일 때의 첫 등록이라는 시간 배경을 소개해요.", "actors": ["구레뇨"], "actions": ["read", "inspect", "write", "place", "look", "stand"], "setting": "road"});
+chapters[2].push({"verse": 3, "title": "고향으로 향하는 사람들", "study": "사람들이 등록을 위해 각자 고향으로 이동해요.", "actors": ["사람들"], "actions": ["gather", "turn", "walk", "walk", "halt", "stand"], "setting": "road"});
+chapters[2].push({"verse": 4, "title": "베들레헴으로 가는 요셉", "study": "다윗 가문의 요셉이 나사렛에서 베들레헴으로 길을 나서요.", "actors": ["요셉"], "actions": ["gather", "turn", "walk", "walk", "look", "stand"], "setting": "road"});
+chapters[2].push({"verse": 5, "title": "마리아와 함께 등록하러 감", "study": "임신 중인 마리아가 요셉과 함께 길을 가요.", "actors": ["요셉", "마리아"], "actions": ["walk", "halt", "look", "reach", "walk", "stand"], "setting": "road"});
+chapters[2].push({"verse": 6, "title": "해산할 때가 이름", "study": "베들레헴에 머무는 동안 마리아의 출산 때가 이르러요.", "actors": ["마리아", "요셉"], "actions": ["sit", "look", "reach", "lower", "wait", "stand"], "setting": "chamber"});
+chapters[2].push({"verse": 7, "title": "강보에 싸여 구유에 누운 아기", "study": "마리아가 첫아들을 낳아 강보로 싸고 구유에 눕혀요. 숙소에 자리가 없었다는 본문 배경을 담아요.", "actors": ["마리아", "요셉", "예수"], "actions": ["cradle", "fold", "lower", "place", "look", "stand"], "setting": "chamber", "portrayals": {"예수": {"scale": 0.5, "hideBeard": true, "lie": true}}});
+chapters[2].push({"verse": 8, "title": "밤에 양을 지키는 목자들", "study": "목자들이 들판에서 밤새 양 떼를 지켜요.", "actors": ["목자들"], "actions": ["gather", "look", "inspect", "guard", "wait", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 9, "title": "목자들을 비춘 영광", "study": "주의 사자가 나타나고 빛이 둘러 비추자 목자들이 두려워해요.", "actors": ["주의 사자", "목자들"], "actions": ["look", "startle", "recoil", "signal", "listen", "stand"], "setting": "wilderness", "night": true, "effect": "spirit-light"});
+chapters[2].push({"verse": 10, "title": "큰 기쁨의 소식", "study": "사자가 목자들을 안심시키며 모든 백성을 위한 기쁜 소식을 전해요.", "actors": ["주의 사자", "목자들"], "actions": ["signal", "speak", "extend", "listen", "lower", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 11, "title": "다윗의 동네에서 나신 구주", "study": "그리스도 주이신 구주가 태어나셨다고 사자가 알려요.", "actors": ["주의 사자", "목자들"], "actions": ["speak", "point", "listen", "look", "bow", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 12, "title": "구유의 아기를 표적으로 알려줌", "study": "강보에 싸여 구유에 누운 아기가 표적이라는 설명을 들어요.", "actors": ["주의 사자", "목자들"], "actions": ["speak", "point", "listen", "look", "wait", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 13, "title": "천군의 찬송", "study": "많은 천군이 사자와 함께 하나님을 찬송해요.", "actors": ["천군", "주의 사자", "목자들"], "actions": ["gather", "lift", "speak", "bow", "listen", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 14, "title": "영광과 평화를 노래함", "study": "하늘의 영광과 땅의 평화를 찬송해요.", "actors": ["천군", "목자들"], "actions": ["lift", "speak", "extend", "listen", "bow", "stand"], "setting": "wilderness", "night": true});
+chapters[2].push({"verse": 15, "title": "베들레헴으로 가자고 의논함", "study": "천사들이 떠난 뒤 목자들이 베들레헴으로 가서 확인하자고 말해요.", "actors": ["목자들"], "actions": ["look", "speak", "point", "gather", "turn", "walk"], "setting": "wilderness"});
+chapters[2].push({"verse": 16, "title": "아기를 찾아간 목자들", "study": "목자들이 서둘러 마리아와 요셉과 구유의 아기를 찾아요.", "actors": ["목자들", "마리아", "요셉", "예수"], "actions": ["walk", "halt", "look", "kneel", "bow", "stand"], "setting": "chamber", "portrayals": {"예수": {"scale": 0.5, "hideBeard": true, "lie": true}}});
+chapters[2].push({"verse": 17, "title": "들었던 소식을 전함", "study": "목자들이 아기에 관해 천사에게 들은 소식을 전해요.", "actors": ["목자들", "마리아", "요셉"], "actions": ["speak", "point", "listen", "look", "smile", "stand"], "setting": "chamber"});
+chapters[2].push({"verse": 18, "title": "듣는 이들의 놀라움", "study": "목자들의 이야기를 들은 사람들이 놀라워해요.", "actors": ["사람들", "목자들"], "actions": ["listen", "startle", "look", "turn", "speak", "stand"], "setting": "chamber"});
+chapters[2].push({"verse": 19, "title": "마음에 새기는 마리아", "study": "마리아가 들은 모든 말을 마음에 간직하고 깊이 생각해요.", "actors": ["마리아"], "actions": ["listen", "look", "lower", "hold", "wait", "stand"], "setting": "chamber"});
+chapters[2].push({"verse": 20, "title": "찬양하며 돌아가는 목자들", "study": "목자들이 듣고 본 일을 두고 하나님을 찬양하며 돌아가요.", "actors": ["목자들"], "actions": ["bow", "speak", "lift", "turn", "walk", "walk"], "setting": "road"});
