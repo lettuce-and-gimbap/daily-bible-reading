@@ -22,14 +22,15 @@ test('비공개 저장소는 선택한 한 장의 세 역본만 응답한다',as
  assert.equal(body.rows.length,6);
 });
 
-test('원문 역본의 띄어쓰기와 숫자 표기를 바꾸지 않고 그대로 제공한다',async()=>{
+test('원문 역본의 띄어쓰기·숫자·동음이의어 표기를 바꾸지 않고 그대로 제공한다',async()=>{
  const source='내가 잘못했습니다. 이 곳에서 떠나 주십시오. 은 삼백 달란트 가량과 금 삼십 달란트 가량을 드리겠습니다.';
- const sourceBook={editions:{easy:[null,[[14,source]]]}};
+ const numberedSource='여로보암 2세는 41년 동안 이스라엘을 다스렸습니다.';
+ const sourceBook={editions:{easy:[null,[[14,source],[15,numberedSource]]]}};
  const sourceEnv={SUBS:{get:async()=>sourceBook}};
  const res=await scriptureChapter(new Request('https://worker.test/scripture?book=2ki&chapter=1&ver=easy'),sourceEnv,json,cors);
  assert.equal(res.status,200);
  const body=await res.json();
- assert.equal(body.rows[0].text,source);
+ assert.deepEqual(body.rows.map(row=>row.text),[source,numberedSource]);
 });
 
 test('권 전체나 잘못된 역본은 응답하지 않는다',async()=>{
