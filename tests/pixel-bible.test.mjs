@@ -168,6 +168,11 @@ test('가족 갈등 대화에서 자녀는 부모에게 존댓말로 답한다',
  assert.match(lines[0].text,/아버지, 저는/);
  assert.match(lines[0].text,/말씀드리겠습니다|들어 주십시오/);
  assert.doesNotMatch(lines[0].text,/말해라|들어라|네가 막으면/);
+ const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
+ const sonToFather=PAIR_DIALOGUE.find(entry=>entry.id==='pair-jer-22-shallum-josiah');
+ const violentSon=PAIR_DIALOGUE.find(entry=>entry.id==='pair-ezk-18-violent-son-righteous-father');
+ assert.match(sonToFather.lines.join(' '),/아버지, 제가/);
+ assert.match(violentSon.lines.join(' '),/아버지께서.*저는.*겠습니다/);
 });
 
 test('도감 인물은 쉬운 역할 설명을 보여 주고 열자마자 걷는다',async()=>{
