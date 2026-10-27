@@ -169,3 +169,7 @@
 .pb-toggle-left { top: calc(64px + var(--pb-safe-top)); }
 .pb-side { box-sizing: border-box; max-width: calc(100% - 32px); }
 .pb-shell .pb-encounter p { font-size: 13px; line-height: 1.35; }
+.pb-mystery-person{color:#73808a;background:#63717b;border-color:#8d9aa1;filter:drop-shadow(0 0 2px #d8c988);font-size:27px;line-height:1}
+.pb-mystery-object{color:#73808a;background:#63717b;border-color:#8d9aa1;filter:drop-shadow(0 0 2px #d8c988)}
+.pb-trash-drop{position:absolute;z-index:30;left:50%;bottom:max(18px,var(--pb-safe-bottom));transform:translateX(-50%);width:72px;height:64px;border:2px solid #e5b9aa;border-radius:14px;background:#622f35eF;color:#fff;font-size:30px;box-shadow:0 4px 16px #0008;pointer-events:none}
+.pb-trash-drop[hidden]{display:none}
