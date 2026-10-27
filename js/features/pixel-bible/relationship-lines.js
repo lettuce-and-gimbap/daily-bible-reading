@@ -1,6 +1,18 @@
 import {PAIR_DIALOGUE} from './pair-dialogue.js';
 
 const sameName=(a,b)=>a===b||['예수','예수님'].includes(a)&&['예수','예수님'].includes(b);
+const CHILD_CONFLICT=[
+ '아버지, 저는 이 결정에 동의할 수 없습니다. 백성이 입을 피해를 먼저 살펴 주십시오. 제 뜻의 근거를 말씀드리겠습니다.',
+ '제 선택이 아버지께 걱정을 끼친 것은 압니다. 그래도 제가 왜 이렇게 판단했는지 먼저 들어 주십시오. 결과는 제가 책임지겠습니다.',
+ '아버지, 저는 백성을 더는 다치게 해서는 안 된다고 생각합니다. 제가 본 위험을 말씀드리겠습니다.',
+ '어머니, 저는 어머니의 뜻을 가볍게 여기지 않습니다. 하지만 이 결정으로 생길 피해를 다시 생각해 주십시오.',
+ '아버지, 저는 물러서지 않겠습니다. 다만 아버지께서 염려하시는 이유도 듣고, 제 판단을 차분히 설명드리겠습니다.',
+ '아버지, 제 행동이 잘못이었다면 바로잡겠습니다. 먼저 제가 책임져야 할 일이 무엇인지 말씀해 주십시오.',
+ '어머니, 저는 이 일을 덮고 지나갈 수 없습니다. 누구에게 어떤 피해가 생겼는지 함께 확인해 주십시오.',
+ '아버지, 저는 아버지와 맞서려는 것이 아닙니다. 백성을 지킬 방법을 찾으려는 것이니 제 말을 끝까지 들어 주십시오.',
+ '어머니, 제 생각과 어머니의 판단이 다르다는 것을 압니다. 제가 본 사실을 말씀드린 뒤 함께 결정해 주십시오.',
+ '아버지, 제 뜻을 꺾으라고만 하지 말고 제가 본 근거를 살펴 주십시오. 선택에 따른 책임은 제가 지겠습니다.',
+];
 function contextualLine(speaker,relation){
  if(relation.from.code==='neh'&&relation.from.chap===3){
   if(speaker.name==='하눈')return '골짜기 문은 세웠어. 샘문 쪽은 어떻게 됐어?';
@@ -143,7 +155,10 @@ function kinshipKind(a,b,relation){
 }
 function relationshipFallback(a,b,relation,index){
  const basis=`${relation.label||''} ${relation.text||''} ${relation.from.role||''} ${relation.to.role||''}`;
- const family=relation.kind==='family'||/형제|자매|아들|딸|아버지|어머니|아내|남편|부부|족보|후손|자손|친척|배필|손자|할아버지|형|누이|동생|삼촌|숙부|조카|고모|이모/.test(basis);
+ const familyBasis=`${relation.label||''} ${relation.from.role||''} ${relation.to.role||''}`;
+ const targetName=String(relation.to?.name||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+ const explicitKinshipInNote=!!targetName&&new RegExp(`(?:형|오빠|누나|언니|동생|아우|조카|삼촌|숙부|고모|이모|아버지|어머니)\\s*${targetName}`).test(relation.text||'');
+ const family=relation.kind==='family'||/형제|자매|아들|딸|아버지|어머니|아내|남편|부부|족보|후손|자손|친척|배필|손자|할아버지|형|누이|동생|삼촌|숙부|조카|고모|이모/.test(familyBasis)||explicitKinshipInNote;
  const conflict=relation.kind==='conflict'||/대적|원수|죽였|죽이|위협|배신|싸우|억압|속였|빼앗|저주|모욕/.test(basis);
  const kinship=family?kinshipKind(a,b,relation):'';
  let category='other';
@@ -160,6 +175,12 @@ function relationshipFallback(a,b,relation,index){
  if(category==='nephew')return EXCHANGES.parent[index%EXCHANGES.parent.length][1].replaceAll('아버지','삼촌').replaceAll('아들아','조카').replaceAll('딸아','조카');
  if(category==='conflict'&&family){
   const address=kinship==='parent'?childAddress:kinship==='child'?parentAddress:kinship==='siblingOlder'?'동생아':kinship==='siblingYounger'?olderSiblingAddress:kinship==='uncle'?'조카야':kinship==='nephew'?'삼촌':kinship==='couple'?'여보':b.name;
+  if(kinship==='child'){
+   const parentIsMother=/어머니|모친|엄마/.test(kinshipBasis);
+   const parent=parentIsMother?'어머니':'아버지';
+   const line=CHILD_CONFLICT[index%CHILD_CONFLICT.length];
+   return parentIsMother?line.replaceAll('아버지',parent):line.replaceAll('어머니',parent);
+  }
   const line=isFrom?pair[0]:pair[1];
   return `${address}, ${kinshipText(line)}`;
  }

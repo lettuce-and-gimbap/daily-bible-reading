@@ -151,6 +151,36 @@ test('인물 독백은 화자 이름을 1인칭 주어로 바꾼다',async()=>{
  assert.equal(firstPersonMonologue('예후','예후가 왕이 되었다.'),'내가 왕이 되었어.');
  assert.equal(firstPersonMonologue('동방 박사들','꿈에서 경고를 받은 박사들은 헤롯의 궁을 다시 찾지 않고 귀향길을 바꾸었다.'),'꿈에서 경고를 받은 우리는 헤롯의 궁을 다시 찾지 않고 귀향길을 바꾸었어.');
  assert.equal(firstPersonMonologue('이스라엘 자손','이스라엘 자손은 길을 떠났고 그들은 약속을 기억했다.'),'우리는 길을 떠났고 우리는 약속을 기억했어.');
+ assert.equal(firstPersonMonologue('요한','천사가 사탄을 결박하고 순교자들이 다스리는 환상을 보았다.'),'나는 천사가 사탄을 결박하고 순교자들이 다스리는 환상을 보았어.');
+ assert.equal(firstPersonMonologue('다르단','군대가 예루살렘 성벽으로 올라간다.'),'나는 군대가 예루살렘 성벽으로 올라가.');
+ assert.equal(firstPersonMonologue('다르단','산헤립이 군대를 예루살렘으로 보냈다.'),'나는 산헤립이 군대를 예루살렘으로 보냈어.');
+ const {TWO_KINGS_DIALOGUE_ROWS}=await import('../js/features/pixel-bible/2ki-dialogue.js');
+ const tartan=TWO_KINGS_DIALOGUE_ROWS.find(row=>row[0]===18&&row[1]==='다르단');
+ assert.match(tartan[3][0],/우리를/);assert.match(tartan[3][1],/나는 성벽 앞에서/);
+});
+
+test('가족 갈등 대화에서 자녀는 부모에게 존댓말로 답한다',async()=>{
+ const {relationshipLines}=await import('../js/features/pixel-bible/relationship-lines.js');
+ const father={name:'아버지',role:'아버지'},son={name:'아들',role:'아들'};
+ const relation={kind:'family',label:'아버지와 아들',text:'아버지가 아들을 위협하며 다투었다.',ref:'창세기 4:8',from:father,to:son};
+ const lines=relationshipLines(son,father,relation,null,{random:()=>0});
+ assert.equal(lines[0].speaker,son);
+ assert.match(lines[0].text,/아버지, 저는/);
+ assert.match(lines[0].text,/말씀드리겠습니다|들어 주십시오/);
+ assert.doesNotMatch(lines[0].text,/말해라|들어라|네가 막으면/);
+});
+
+test('도감 인물은 쉬운 역할 설명을 보여 주고 열자마자 걷는다',async()=>{
+ const {renderPersonPreview,easyPersonDescription}=await import('../js/features/pixel-bible/collection-preview.js?rev=turntable-motion-walk-start-2');
+ assert.match(easyPersonDescription('다르단','앗수르의 장수'),/왕의 명령을 받아 군대를 이끌/);
+ assert.match(easyPersonDescription('이사야','선지자'),/하나님의 말씀을 전하고/);
+ assert.match(renderPersonPreview({name:'다르단'}),/data-model-motion[^>]*>걷기</);
+});
+
+test('발화 근거 강조는 구·절 단위의 맥락 표현을 포함한다',async()=>{
+ const {contextTerms}=await import('../js/features/pixel-bible/context-emphasis.js');
+ const terms=contextTerms({text:'나는 예루살렘 성벽 앞에서 항복을 요구했다.',detailText:'앗수르 군대가 예루살렘으로 올라와 성벽을 둘러쌌다.'});
+ assert.ok(terms.some(term=>term.includes('예루살렘')&&term.split(' ').length>1));
 });
 
 test('물·나무·밧줄·작업 동작은 각자 다른 8박 핵심 자세를 사용한다',async()=>{

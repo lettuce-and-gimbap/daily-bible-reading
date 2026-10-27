@@ -36,7 +36,17 @@ export function firstPersonMonologue(name,text){
   const kingship=line.match(/^(.*?)(?:(이스라엘|유다)\s+)?왕이 되(?:었|었어|었구나|었다)([.!?]?)$/u);
   if(kingship)line=`${kingship[1]}내가 ${kingship[2]?kingship[2]+' ':''}왕이 되었어${kingship[3]}`;
  }
- if(/(?:나는|내가|우리는|우리가|내 |우리의)/u.test(line))line=line.replace(/되었다(?=([.!?]|$))/gu,'되었어').replace(/하였다(?=([.!?]|$))/gu,'했어').replace(/했다(?=([.!?]|$))/gu,'했어').replace(/갔다(?=([.!?]|$))/gu,'갔어').replace(/왔다(?=([.!?]|$))/gu,'왔어').replace(/보냈다(?=([.!?]|$))/gu,'보냈어').replace(/떠났다(?=([.!?]|$))/gu,'떠났어').replace(/돌아왔다(?=([.!?]|$))/gu,'돌아왔어').replace(/죽었다(?=([.!?]|$))/gu,'죽었어').replace(/답했다(?=([.!?]|$))/gu,'답했어').replace(/말했다(?=([.!?]|$))/gu,'말했어').replace(/외쳤다(?=([.!?]|$))/gu,'외쳤어').replace(/울었다(?=([.!?]|$))/gu,'울었어').replace(/붙들었다(?=([.!?]|$))/gu,'붙들었어').replace(/었다(?=([.!?]|$))/gu,'었어');
+ // Character-authored declaratives sometimes omit the observing speaker and
+ // read like a narrator's report. Frame those sentences as the character's
+ // own account; leave questions, commands, and lines addressed to another
+ // person alone.
+ if(!/(?:나는|내가|저는|제가|우리는|우리가|내가|내\s|우리의)/u.test(line)&&! /^(?:너|당신|그대|아들아|딸아|형|동생|주님|하나님|여호와)[,\s]/u.test(line)&&/다(?:[.!?…]?)$/u.test(line)){
+  const subject=group?'우리는':'나는',topic=line.match(/^(.{1,10}?)(은|는)(?=\s)/u);
+  if(topic){const last=topic[1].at(-1)?.charCodeAt(0)-0xac00,batchim=Number.isFinite(last)&&last>=0&&last<=11171&&last%28!==0,subjectParticle=batchim?'이':'가';line=`${subject} ${topic[1]}${subjectParticle}${line.slice(topic[0].length)}`;}
+  else line=`${subject} ${line}`;
+ }
+ if(/(?:나는|내가|저는|제가|우리는|우리가)/u.test(line))line=line.replace(/간다(?=([.!?…]|$))/gu,'가').replace(/온다(?=([.!?…]|$))/gu,'와').replace(/한다(?=([.!?…]|$))/gu,'해').replace(/된다(?=([.!?…]|$))/gu,'돼').replace(/있다(?=([.!?…]|$))/gu,'있어').replace(/없다(?=([.!?…]|$))/gu,'없어').replace(/보인다(?=([.!?…]|$))/gu,'보여').replace(/요구한다(?=([.!?…]|$))/gu,'요구해').replace(/말한다(?=([.!?…]|$))/gu,'말해').replace(/부른다(?=([.!?…]|$))/gu,'불러').replace(/전한다(?=([.!?…]|$))/gu,'전해');
+ if(/(?:나는|내가|우리는|우리가|내 |우리의)/u.test(line))line=line.replace(/되었다(?=([.!?]|$))/gu,'되었어').replace(/하였다(?=([.!?]|$))/gu,'했어').replace(/했다(?=([.!?]|$))/gu,'했어').replace(/갔다(?=([.!?]|$))/gu,'갔어').replace(/왔다(?=([.!?]|$))/gu,'왔어').replace(/보냈다(?=([.!?]|$))/gu,'보냈어').replace(/떠났다(?=([.!?]|$))/gu,'떠났어').replace(/돌아왔다(?=([.!?]|$))/gu,'돌아왔어').replace(/죽었다(?=([.!?]|$))/gu,'죽었어').replace(/답했다(?=([.!?]|$))/gu,'답했어').replace(/말했다(?=([.!?]|$))/gu,'말했어').replace(/외쳤다(?=([.!?]|$))/gu,'외쳤어').replace(/울었다(?=([.!?]|$))/gu,'울었어').replace(/붙들었다(?=([.!?]|$))/gu,'붙들었어').replace(/았다(?=([.!?]|$))/gu,'았어').replace(/였다(?=([.!?]|$))/gu,'였어').replace(/었다(?=([.!?]|$))/gu,'었어');
  return line;
 }
 export function personalLines(n,chapters,context){
