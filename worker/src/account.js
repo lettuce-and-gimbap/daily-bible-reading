@@ -6,7 +6,7 @@
 import { feedback } from './feedback.js';
 
 const ID_RE = /^[a-z0-9_]{3,20}$/;
-const MAX_DATA_BYTES = 1_800_000; // UTF-8 JSON 1.8MB; room above current backups ×8 with D1 row headroom
+const MAX_DATA_BYTES = 3_000_000; // UTF-8 JSON 3MB per account
 const LINK_MS = 10 * 60 * 1000;
 const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
