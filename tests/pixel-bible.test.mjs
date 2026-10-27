@@ -253,6 +253,8 @@ test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물
  assert.equal(waterAt('pasture',18,31),true);assert.equal(waterAt('pasture',25,14),false);
  const safe=dryLanding('river',{x:58,y:20},(x,y)=>x<4||x>75||y<8||y>38||waterAt('river',x,y));
  assert.ok(safe);assert.equal(waterAt('river',safe.x,safe.y),false);assert.ok(Math.hypot(safe.x-58,safe.y-20)<=Math.SQRT2);
+ assert.equal(waterAt('river',55,22),false,'강을 가로지르는 길은 물에 빠지지 않는 다리로 취급한다');
+ assert.equal(waterAt('river',55,24),true,'길을 벗어난 강물은 계속 물로 취급한다');
 });
 
 test('물가 탈출은 테두리까지의 유클리드 거리가 가장 짧은 마른 칸을 고른다',async()=>{
@@ -766,8 +768,16 @@ test('큰 나무는 뒤쪽 접근을 막고 수관 밖에서 상호작용한다'
  const o={kind:'tree',x:10,y:10};
  assert.deepEqual(interactionApproaches(o),[{x:9,y:10},{x:11,y:10},{x:10,y:11}]);
  const n={x:9,y:10,usingObject:o,interaction:{category:'tree'}};
- const left=interactionAnchor(n);assert.ok(left.x<o.x*24-60);assert.ok(left.y>o.y*24);
- n.x=10;n.y=11;assert.ok(interactionAnchor(n).y>=o.y*24+24);
+ const left=interactionAnchor(n);assert.ok(left.x<o.x*24-60);assert.equal(left.y,n.y*24,'나무 사용 중에도 발 위치는 접근 타일에 유지한다');
+ n.x=10;n.y=11;assert.equal(interactionAnchor(n).y,n.y*24,'큰 오브젝트 정면에서도 인물을 들어 올리지 않는다');
+});
+
+test('일반 오브젝트 상호작용의 발 위치는 언제나 접근 타일에 고정한다',async()=>{
+ const {interactionAnchor}=await import('../js/features/pixel-bible/object-response.js');
+ for(const kind of ['well','tree','field','altar','basket','water']){
+  const o={kind,x:10,y:10},n={x:9,y:10,usingObject:o,interaction:{category:'tool',gesture:'inspect'}};
+  assert.equal(interactionAnchor(n).y,n.y*24,`${kind} 상호작용의 수직 위치`);
+ }
 });
 
 test('물항아리는 제자리에 두고 잔을 입으로 올려 마신다',async()=>{

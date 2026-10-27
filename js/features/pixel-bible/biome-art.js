@@ -1,11 +1,12 @@
 // Original pixel terrain: different landforms and routes, not palette swaps.
+import {riverLeftAt} from './terrain-response.js';
 export function drawBiomeGround(c,p,w,h){
  const r=(x,y,a,b,color)=>{c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),Math.round(a),Math.round(b));};
  const m=p.motif;
  const pool=(cx,cy,rx,ry)=>{for(let y=-ry;y<ry;y+=8){const half=Math.sqrt(Math.max(0,1-y*y/(ry*ry)))*rx;r(cx-half-12,cy+y,half*2+24,10,p.bank);r(cx-half,cy+y,half*2,8,p.water);}for(let y=cy-ry/2;y<cy+ry/2;y+=24)r(cx-rx/2,y,rx,2,p.wave);};
  const terrace=(x,y,width,levels)=>{for(let i=0;i<levels;i++){r(x+i*12,y+i*15,width-i*20,18,p.hill);r(x+i*12,y+i*15,width-i*20,4,p.bank);for(let xx=x+20+i*12;xx<x+width-i*8;xx+=36)r(xx,y+i*15+7,18,2,p.roof);}};
  if(['lake','galilee'].includes(m)){pool(m==='lake'?w*.2:w*.83,h*.7,w*.22,h*.25);for(let i=0;i<5;i++){const x=(m==='lake'?w*.32:w*.65)+i*5;r(x,h*.7+i*5,80,4,p.roof);}}
- if(['river','garden','newcity'].includes(m))for(let y=150;y<h-80;y+=8){const x=w*(m==='garden'?.24:m==='newcity'?.68:.72)+Math.sin(y/140)*w*.065;r(x-14,y,110,8,p.bank);r(x,y,82,8,p.water);if(y%32===22)r(x+16,y,30,2,p.wave);}
+ if(['river','garden','newcity'].includes(m))for(let y=150;y<h-80;y+=8){const x=riverLeftAt(m,y);r(x-14,y,110,8,p.bank);r(x,y,82,8,p.water);if(y%32===22)r(x+16,y,30,2,p.wave);}
  if(['mountains','sinai','ruins'].includes(m)){terrace(80,220,w*.23,6);terrace(w*.7,h*.63,w*.24,5);}
  if(['dunes','camp'].includes(m))for(let i=0;i<7;i++){const x=(i%2?w*.7:w*.06),y=190+i*h*.09;for(let k=0;k<6;k++)r(x+k*12,y+k*5,200-k*24,5,k%2?p.tile[0]:p.bank);}
  if(['harvest','vineyard'].includes(m))for(const [x,y]of [[w*.08,h*.3],[w*.6,h*.66]]){r(x-8,y-8,w*.29,h*.18,p.bank);r(x,y,w*.28,h*.16,p.path);for(let yy=y+12;yy<y+h*.16;yy+=18)for(let xx=x+10;xx<x+w*.28;xx+=18){r(xx,yy,2,9,p.roof);r(xx-2,yy,6,4,m==='harvest'?'#d7bd70':p.hill);if(m==='vineyard')r(xx,yy+5,3,4,'#80618a');}}

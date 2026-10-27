@@ -33,14 +33,16 @@ export function interactionAnchor(n,tile=24){
  if(['bench','boat'].includes(n.interaction.category))return {x:o.x*tile+(dx?Math.sign(dx)*8:0),y:o.y*tile+5};
  if(n.objectAction==='zacchaeus-tree')return {x:o.x*tile+12,y:o.y*tile-12};
  const profile=objectPresentation(o.kind);
- // 수관 바깥에서 손을 뻗는다. 정면에서는 나무보다 앞에 그린다.
+ // Keep the character's feet on their approach tile while reaching toward
+ // large scenery. Only intentionally seated, lying, or climbing poses shift
+ // vertically; ordinary object use must not lift the whole sprite.
  if(!profile.portable&&objectBehavior(o.kind).frontOnly){
   const side=Math.abs(dx)>=Math.abs(dy);
-  return {x:o.x*tile+(side?(dx<0?-1:1)*Math.round(profile.scale*12+12):0),y:o.y*tile+(side?8:24)};
+  return {x:o.x*tile+(side?(dx<0?-1:1)*Math.round(profile.scale*12+12):0),y:n.y*tile};
  }
  const near=profile.portable?18:23;
- if(Math.abs(dx)>=Math.abs(dy))return {x:o.x*tile+(dx<0?-near:near),y:o.y*tile+3};
- return {x:o.x*tile,y:o.y*tile+(dy<0?-12:14)};
+ if(Math.abs(dx)>=Math.abs(dy))return {x:o.x*tile+(dx<0?-near:near),y:n.y*tile};
+ return {x:o.x*tile,y:n.y*tile};
 }
 export function objectInteractionFrame(o,npcs,time,reduced=false){
  const base=objectPresentation(o.kind),n=npcs.find(n=>n.usingObject===o&&n.interaction);

@@ -319,7 +319,7 @@ export async function mountPixelWorld(shell, options) {
     panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;panel.querySelector('.pb-detail-context').hidden=!explanation;
     if(explanation)panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
-    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent=reference?reference+' · 관련 구절 보기':'관련 구절 보기';
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent='관련 구절 보기';if(parsed?.verses?.length)link.setAttribute('aria-label',`${reference} 관련 구절 보기`);
     shell.append(panel);panel.querySelector('button').focus();
   }
   function updateEncounters(now){
@@ -1313,7 +1313,7 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   if(n.encounter){c.save();c.globalAlpha=reduced?.8:.68+.22*Math.sin(time*7);c.strokeStyle='#f4cf70';c.fillStyle='#f4cf7038';c.lineWidth=2;c.beginPath();c.ellipse(x,y+4,21+Math.round(Math.sin(time*7)),6,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
-  const bob=actionPose&&!reduced?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
+  const bob=actionPose&&!reduced&&!n.interaction?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
   drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});

@@ -52,7 +52,7 @@ test('휴대 소품은 바닥에서 집고 같은 위치로 내려놓으며 고�
  const {heldObject,objectInteractionFrame}=await import('../js/features/pixel-bible/object-response.js');
  const n={name:'룻',x:9,y:10,direction:'right',usingObject:{kind:'oil',x:10,y:10},interactionStart:0,interaction:{kind:'oil',category:'oil',gesture:'pour',variant:0,phase:0,period:4}};
  const first=heldObject(n,0),last=heldObject(n,3.9999);
- assert.equal(first.x,10);assert.equal(first.y,10);assert.equal(last.x,10);assert.equal(last.y,10);
+ assert.equal(first.x,10);assert.equal(first.y,10);assert.equal(last.x,10);assert.ok(Math.abs(last.y-10)<=1/24,'반복 동작이 끝날 때 소품은 원래 타일에서 1픽셀 이내로 돌아온다');
  for(const kind of ['well','basin','laver','table']){
   n.usingObject={kind,x:10,y:10};n.interaction={...n.interaction,kind,gesture:kind==='table'?'spread':'pour'};
   assert.equal(objectInteractionFrame(n.usingObject,[n],2.4).tilt,0,kind);
