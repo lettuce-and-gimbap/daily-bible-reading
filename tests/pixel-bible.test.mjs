@@ -359,7 +359,7 @@ test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되�
  assert.match(source,/const rescued=advanceWaterEscapes\(npcs,dt\);[\s\S]{0,400}if\(!paused/);
  assert.match(source,/const cssLandscape = \(\) => !!shell\.closest\('dialog'\)\?\.classList\.contains\('pb-css-landscape'\)/);
  assert.match(source,/canvas\.height,cssLandscape\(\)/);
- assert.match(entry,/fullscreenTarget\.requestFullscreen\(\)/);
+ assert.match(entry,/fullscreenTarget\.requestFullscreen\(\{ navigationUI: "hide" \}\)/);
  assert.match(entry,/screen\.orientation\.lock\("landscape"\)/);
  assert.match(entry,/Promise\.race\(\[result, new Promise/);
  assert.doesNotMatch(entry,/await landscapeReady/,'가로 잠금 대기가 월드 로딩을 막으면 안 된다');

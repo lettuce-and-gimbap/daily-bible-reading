@@ -37,7 +37,7 @@
 .pb-side-toggle { position: absolute; top: calc(54px + var(--pb-safe-top)); z-index: 12; padding: 7px 10px; background: #142d37ed; box-shadow: 0 2px 8px #0004; }
 .pb-toggle-left { left: max(8px, var(--pb-safe-left)); }
 .pb-toggle-right { right: max(8px, var(--pb-safe-right)); }
-.pb-side { position: absolute; z-index: 10; top: calc(94px + var(--pb-safe-top)); bottom: max(12px, var(--pb-safe-bottom)); width: min(300px, 41vw); overflow: auto; overscroll-behavior: contain; padding: 12px; border: 1px solid #b69c64; background: #142e38f2; box-shadow: 0 8px 30px #0005; border-radius: 5px; font-size: 12px; line-height: 1.6; }
+.pb-side { position: absolute; z-index: 10; top: calc(94px + var(--pb-safe-top)); bottom: max(12px, var(--pb-safe-bottom)); width: min(360px, 44%); overflow: auto; overscroll-behavior: contain; padding: 12px; border: 1px solid #b69c64; background: #142e38f2; box-shadow: 0 8px 30px #0005; border-radius: 5px; font-size: 12px; line-height: 1.6; }
 .pb-side-left { left: max(8px, var(--pb-safe-left)); }
 .pb-side-right { right: max(8px, var(--pb-safe-right)); }
 .pb-side h3 { margin: 10px 0 6px; font-size: 14px; color: #ffe3a3; }
@@ -167,5 +167,5 @@
 .pb-world-head button { left: max(8px, var(--pb-safe-left)); right: auto; }
 .pb-toggle-right { top: max(8px, var(--pb-safe-top)); }
 .pb-toggle-left { top: calc(64px + var(--pb-safe-top)); }
-.pb-side { box-sizing: border-box; max-width: calc(50% - 16px); }
+.pb-side { box-sizing: border-box; max-width: calc(100% - 32px); }
 .pb-shell .pb-encounter p { font-size: 13px; line-height: 1.35; }
