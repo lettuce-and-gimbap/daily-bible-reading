@@ -163,6 +163,27 @@ test('벧세메스 밭 주인 여호수아는 눈의 아들 여호수아와 다�
  assert.notEqual(resolveIdentity('여호수아(벧세메스 사람)',{code:'1sa',chapter:6}).id,resolveIdentity('여호수아',{code:'jos',chapter:1}).id);
 });
 
+test('사무엘·열왕기 인물의 겹치는 이름은 가족과 본문 표기로 분리한다',async()=>{
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.notEqual(resolveIdentity('아히멜렉',{code:'1sa',chapter:22}).id,resolveIdentity('아히멜렉',{code:'2sa',chapter:8}).id);
+ assert.equal(resolveIdentity('아히멜렉',{code:'2sa',chapter:8}).id,resolveIdentity('아히멜렉',{code:'1ch',chapter:24}).id);
+ assert.notEqual(resolveIdentity('엘하난',{code:'2sa',chapter:21}).id,resolveIdentity('엘하난(도도의 아들)',{code:'2sa',chapter:23}).id);
+ assert.equal(resolveIdentity('요나단',{code:'1sa',chapter:20}).id,resolveIdentity('요나단',{code:'2sa',chapter:1}).id);
+ assert.notEqual(resolveIdentity('요나단',{code:'2sa',chapter:21}).id,resolveIdentity('요나단(아비아달의 아들)',{code:'2sa',chapter:17}).id);
+ assert.notEqual(resolveIdentity('요나단(시므아의 아들)',{code:'2sa',chapter:21}).id,resolveIdentity('요나단(야센의 아들)',{code:'2sa',chapter:23}).id);
+ assert.equal(resolveIdentity('그룹',{code:'2sa',chapter:22}).kind,'spiritual');
+});
+
+test('솔로몬과 여디디야는 한 인물이며 사무엘하의 과거 인물은 현재 캐스트에서 빠진다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/2sa.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'2sa',name:'사무엘하',chap:12,data:summary.chapters[12]}]);
+ assert.equal(model.cast.filter(p=>p.identity?.id==='person:solomon').length,1);
+ assert.equal(model.cast.find(p=>p.identity?.id==='person:solomon').name,'솔로몬');
+ assert.ok(!model.cast.some(p=>['우리아','비유 속 부자','비유 속 가난한 사람'].includes(p.name)));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('솔로몬',{code:'2sa',chapter:12}).id,resolveIdentity('여디디야',{code:'2sa',chapter:12}).id);
+});
+
 test('사사기의 여룹바알과 기드온은 한 인물이며 룻 족보 인물은 현장 배우가 아니다',async()=>{
  const jdg=JSON.parse(fs.readFileSync(new URL('../data/summary/jdg.json',import.meta.url),'utf8'));
  const samuel=JSON.parse(fs.readFileSync(new URL('../data/summary/1sa.json',import.meta.url),'utf8'));
@@ -178,7 +199,7 @@ test('사사기의 여룹바알과 기드온은 한 인물이며 룻 족보 인�
 });
 
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
- const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['jos',12,'모세'],['jos',14,'모세'],['jdg',8,'아비멜렉'],['jdg',9,'기드온'],['rut',1,'엘리멜렉'],['rut',1,'말론'],['rut',1,'기룐'],['rut',2,'엘리멜렉'],['rut',4,'베레스'],['rut',4,'이새'],['rut',4,'다윗'],['1sa',5,'다곤'],['1sa',5,'다곤의 제사장들'],['1sa',7,'아모리 사람들'],['1sa',12,'모세'],['1sa',12,'아론'],['1sa',12,'시스라'],['1sa',12,'여룹바알'],['1sa',12,'베단'],['1sa',12,'입다'],['1sa',12,'나하스'],['1sa',14,'기스'],['1sa',14,'아히노암'],['1sa',14,'메랍'],['1sa',14,'미갈'],['1sa',21,'골리앗'],['1sa',21,'사울'],['1sa',21,'다윗의 소년들'],['1sa',25,'사무엘'],['1sa',25,'미갈'],['1sa',25,'발디'],['1sa',27,'사울'],['1sa',29,'사울'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
+ const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['jos',12,'모세'],['jos',14,'모세'],['jdg',8,'아비멜렉'],['jdg',9,'기드온'],['rut',1,'엘리멜렉'],['rut',1,'말론'],['rut',1,'기룐'],['rut',2,'엘리멜렉'],['rut',4,'베레스'],['rut',4,'이새'],['rut',4,'다윗'],['1sa',5,'다곤'],['1sa',5,'다곤의 제사장들'],['1sa',7,'아모리 사람들'],['1sa',12,'모세'],['1sa',12,'아론'],['1sa',12,'시스라'],['1sa',12,'여룹바알'],['1sa',12,'베단'],['1sa',12,'입다'],['1sa',12,'나하스'],['1sa',14,'기스'],['1sa',14,'아히노암'],['1sa',14,'메랍'],['1sa',14,'미갈'],['1sa',21,'골리앗'],['1sa',21,'사울'],['1sa',21,'다윗의 소년들'],['1sa',25,'사무엘'],['1sa',25,'미갈'],['1sa',25,'발디'],['1sa',27,'사울'],['1sa',29,'사울'],['2sa',1,'사울'],['2sa',1,'요나단'],['2sa',3,'암논'],['2sa',3,'압살롬'],['2sa',3,'아도니야'],['2sa',4,'므비보셋'],['2sa',4,'아브넬'],['2sa',5,'솔로몬'],['2sa',6,'사울'],['2sa',7,'다윗의 후손'],['2sa',8,'아비아달'],['2sa',8,'아히둡'],['2sa',8,'아힐룻'],['2sa',9,'요나단'],['2sa',10,'나하스'],['2sa',11,'엘리암'],['2sa',12,'우리아'],['2sa',12,'비유 속 부자'],['2sa',12,'비유 속 가난한 사람'],['2sa',13,'시므아'],['2sa',13,'달매'],['2sa',14,'압살롬의 딸'],['2sa',14,'비유 속 두 아들'],['2sa',14,'여인의 친족들'],['2sa',16,'게라'],['2sa',19,'압살롬'],['2sa',20,'압살롬'],['2sa',20,'다윗의 후궁 열 명'],['2sa',22,'사울'],['2sa',22,'다윗의 후손'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){
   assert.equal(isMentionOnlyPerson({name},{code,chapter}),true,`${code} ${chapter} ${name}`);
   const summary=JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));

@@ -1,7 +1,7 @@
 import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
-const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|여호와의 군대 장관|사탄|마귀|어린 양)$/;
+const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|어린 양)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='아브람')return '아브라함';
@@ -15,6 +15,10 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return '바로(모세의 출생 시대)';
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return '바로(출애굽 시대)';
   if(code==='act'&&name==='사울')return '바울';
+  if(code==='2sa'&&Number(chapter)===12&&name==='여디디야')return '솔로몬';
+  if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return '아히멜렉(아비아달의 아들)';
+  if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return '아히멜렉(아비아달의 아버지)';
+  if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return '엘하난(야레오르김의 아들)';
   if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return '여호수아(벧세메스 사람)';
   return name;
 }
@@ -35,6 +39,15 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return {...id('person','pharaoh-joseph-era'),canonicalName:'바로(요셉 시대)'};
   if(code==='exo'&&['르우엘','이드로'].includes(name))return {...id('person','midianite-priest-jethro'),canonicalName:'이드로'};
   if(['기드온','여룹바알'].includes(name))return {...id('person','gideon-jerubbaal'),canonicalName:'기드온'};
+  if(code==='2sa'&&Number(chapter)===12&&['솔로몬','여디디야'].includes(name))return {...id('person','solomon'),canonicalName:'솔로몬'};
+  if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return {...id('person','ahimelech-son-of-abiathar'),canonicalName:'아히멜렉(아비아달의 아들)'};
+  if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return {...id('person','ahimelech-priest-of-nob'),canonicalName:'아히멜렉(아비아달의 아버지)'};
+  if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return {...id('person','elhanan-son-of-jaare-oregim'),canonicalName:'엘하난(야레오르김의 아들)'};
+  if(code==='2sa'&&Number(chapter)===23&&name==='엘하난(도도의 아들)')return {...id('person','elhanan-son-of-dodo'),canonicalName:'엘하난(도도의 아들)'};
+  if(name==='요나단'&&['1sa','2sa'].includes(code))return {...id('person','jonathan-son-of-saul'),canonicalName:'요나단'};
+  if(code==='2sa'&&name==='요나단(아비아달의 아들)')return id('person','jonathan-son-of-abiathar');
+  if(code==='2sa'&&name==='요나단(시므아의 아들)')return id('person','jonathan-son-of-shimea');
+  if(code==='2sa'&&name==='요나단(야센의 아들)')return id('person','jonathan-son-of-jashen');
   if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return {...id('person','joshua-bethshemesh'),canonicalName:'여호수아(벧세메스 사람)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return {...id('person','exodus-pharaoh-moses-birth'),canonicalName:'바로(모세의 출생 시대)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return {...id('person','exodus-pharaoh-deliverance'),canonicalName:'바로(출애굽 시대)'};
