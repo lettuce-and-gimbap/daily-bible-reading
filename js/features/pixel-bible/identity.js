@@ -16,6 +16,18 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return '바로(출애굽 시대)';
   if(code==='act'&&name==='사울')return '바울';
   if(code==='2sa'&&Number(chapter)===12&&name==='여디디야')return '솔로몬';
+  // The Chronicler's Micaiah is the Maacah named in the family list; the
+  // uploaded commentary identifies her as Uriel and Tamar's daughter.
+  if(code==='2ch'&&Number(chapter)===13&&name==='미가야(우리엘의 딸)')return '마아가';
+  if(code==='2ch'&&Number(chapter)===21&&name==='아합의 딸')return '아달랴';
+  if(code==='2ch'&&Number(chapter)===34&&name==='압돈')return '악볼(미가야의 아들)';
+  if(code==='2ch'&&Number(chapter)===22&&name==='예후(님시의 아들)')return '예후';
+  if(code==='2ch'&&Number(chapter)===22&&name==='여호사브앗')return '여호세바';
+  if(code==='2ch'&&Number(chapter)===35&&name==='느고')return '바로 느고';
+  if(code==='2ki'&&Number(chapter)===15&&name==='아사랴')return '웃시야';
+  if(code==='2ch'&&Number(chapter)===36&&name==='시드기야'||code==='2ki'&&[24,25].includes(Number(chapter))&&name==='시드기야')return '시드기야(유다 왕)';
+  if(code==='2ch'&&Number(chapter)===11&&name==='마할랏')return '마할랏(르호보암의 아내)';
+  if(code==='gen'&&Number(chapter)===28&&name==='마할랏')return '마할랏(이스마엘의 딸)';
   if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return '아히멜렉(아비아달의 아들)';
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return '아히멜렉(아비아달의 아버지)';
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return '엘하난(야레오르김의 아들)';
@@ -43,6 +55,20 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='exo'&&['르우엘','이드로'].includes(name))return {...id('person','midianite-priest-jethro'),canonicalName:'이드로'};
   if(['기드온','여룹바알'].includes(name))return {...id('person','gideon-jerubbaal'),canonicalName:'기드온'};
   if(code==='2sa'&&Number(chapter)===12&&['솔로몬','여디디야'].includes(name))return {...id('person','solomon'),canonicalName:'솔로몬'};
+  if(code==='2ch'&&Number(chapter)===13&&name==='미가야(우리엘의 딸)')return {...id('person','maacah-daughter-of-uriel'),canonicalName:'마아가'};
+  if(code==='2ch'&&Number(chapter)===11&&name==='마아가')return {...id('person','maacah-daughter-of-uriel'),canonicalName:'마아가'};
+  if(code==='1ki'&&Number(chapter)===15&&name==='마아가')return {...id('person','maacah-daughter-of-uriel'),canonicalName:'마아가'};
+  if((code==='2ch'&&Number(chapter)===21&&name==='아합의 딸')||(['2ch','2ki'].includes(code)&&[8,11].includes(Number(chapter))&&name==='아달랴')||(code==='2ch'&&Number(chapter)===22&&name==='아달랴'))return {...id('person','athaliah-daughter-of-omri'),canonicalName:'아달랴'};
+  if(code==='2ch'&&Number(chapter)===34&&name==='압돈'||code==='2ki'&&Number(chapter)===22&&name==='악볼')return {...id('person','achbor-son-of-micaiah'),canonicalName:'악볼(미가야의 아들)'};
+  if(code==='2ch'&&Number(chapter)===18&&name==='시드기야(그나아나의 아들)'||code==='1ki'&&Number(chapter)===22&&name==='시드기야(그나아나의 아들)')return {...id('person','zedekiah-son-of-chenaanah'),canonicalName:'시드기야(그나아나의 아들)'};
+  if(code==='2ch'&&Number(chapter)===36&&name==='시드기야'||code==='2ki'&&[24,25].includes(Number(chapter))&&name==='시드기야')return {...id('person','zedekiah-king-of-judah'),canonicalName:'시드기야(유다 왕)'};
+  if((code==='2ch'&&Number(chapter)===22&&name==='예후(님시의 아들)')||(code==='2ki'&&Number(chapter)===9&&name==='예후')||(code==='1ki'&&Number(chapter)===19&&name==='예후'))return {...id('person','jehu-king-of-israel'),canonicalName:'예후'};
+  if((code==='2ch'&&Number(chapter)===22&&name==='여호사브앗')||(code==='2ki'&&Number(chapter)===11&&name==='여호세바'))return {...id('person','jehosheba-daughter-of-jehoram'),canonicalName:'여호세바'};
+  if((code==='2ch'&&[26,27].includes(Number(chapter))&&name==='웃시야')||(code==='2ki'&&Number(chapter)===15&&name==='아사랴'))return {...id('person','uzziah-azariah-king-of-judah'),canonicalName:'웃시야'};
+  if((code==='2ch'&&Number(chapter)===3&&name==='오르난')||(code==='1ch'&&Number(chapter)===21&&name==='오르난')||(code==='2sa'&&Number(chapter)===24&&name==='아라우나'))return {...id('person','jebusite-threshing-floor-owner'),canonicalName:'아라우나(오르난)'};
+  if((code==='2ch'&&Number(chapter)===35&&name==='느고')||(code==='2ki'&&Number(chapter)===23&&name==='바로 느고'))return {...id('person','pharaoh-necho-ii'),canonicalName:'느고'};
+  if(code==='2ch'&&Number(chapter)===11&&name==='마할랏')return {...id('person','mahalath-wife-of-rehoboam'),canonicalName:'마할랏(르호보암의 아내)'};
+  if(code==='gen'&&Number(chapter)===28&&name==='마할랏')return {...id('person','mahalath-daughter-of-ishmael'),canonicalName:'마할랏(이스마엘의 딸)'};
   if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return {...id('person','ahimelech-son-of-abiathar'),canonicalName:'아히멜렉(아비아달의 아들)'};
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return {...id('person','ahimelech-priest-of-nob'),canonicalName:'아히멜렉(아비아달의 아버지)'};
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return {...id('person','elhanan-son-of-jaare-oregim'),canonicalName:'엘하난(야레오르김의 아들)'};

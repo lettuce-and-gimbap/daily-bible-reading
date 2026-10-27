@@ -95,6 +95,36 @@ test('창세기에서 이름만 언급된 엘리에셀·롯·하몰은 해당 �
  assert.ok(!ch22.cast.some(p=>p.name==='나홀'));
 });
 
+test('역대하의 과거·계보 언급 인물을 현장 캐스트에서 빼고 관계 근거는 보존한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/2ch.json',import.meta.url),'utf8'));
+ const cases={1:['다윗'],3:['다윗','오르난'],6:['다윗','이방인'],10:['아히야'],11:['마아가','마할랏'],13:['미가야(우리엘의 딸)'],21:['아합의 딸'],26:['이사야'],27:['웃시야'],29:['다윗'],36:['예레미야','요시야']};
+ for(const [chapter,names] of Object.entries(cases)){
+  const model=buildWorldModel([{code:'2ch',name:'역대하',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`역대하 ${chapter}장 ${name}은 장면 현장 인물이 아니다`);
+ }
+ const ch3=buildWorldModel([{code:'2ch',name:'역대하',chap:3,data:summary.chapters[3]}]);
+ assert.ok(ch3.relations.some(r=>r.from==='솔로몬'&&r.to==='다윗'),'과거 관계 기록은 현장 출연 여부와 별도로 유지한다');
+});
+
+test('역대하 인물의 동명이인·별칭을 통합하고 군사 연합의 구성원을 정확히 표기한다',async()=>{
+ const {resolveIdentity,canonicalPersonName}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('마아가',{code:'2ch',chapter:11}).id,resolveIdentity('미가야(우리엘의 딸)',{code:'2ch',chapter:13}).id);
+ assert.equal(resolveIdentity('마아가',{code:'1ki',chapter:15}).id,resolveIdentity('마아가',{code:'2ch',chapter:11}).id);
+ assert.equal(resolveIdentity('아합의 딸',{code:'2ch',chapter:21}).id,resolveIdentity('아달랴',{code:'2ch',chapter:22}).id);
+ assert.equal(resolveIdentity('압돈',{code:'2ch',chapter:34}).id,resolveIdentity('악볼',{code:'2ki',chapter:22}).id);
+ assert.notEqual(resolveIdentity('시드기야(그나아나의 아들)',{code:'2ch',chapter:18}).id,resolveIdentity('시드기야',{code:'2ch',chapter:36}).id);
+ assert.equal(resolveIdentity('예후(님시의 아들)',{code:'2ch',chapter:22}).id,resolveIdentity('예후',{code:'2ki',chapter:9}).id);
+ assert.equal(resolveIdentity('여호사브앗',{code:'2ch',chapter:22}).id,resolveIdentity('여호세바',{code:'2ki',chapter:11}).id);
+ assert.equal(resolveIdentity('웃시야',{code:'2ch',chapter:26}).id,resolveIdentity('아사랴',{code:'2ki',chapter:15}).id);
+ assert.equal(resolveIdentity('느고',{code:'2ch',chapter:35}).id,resolveIdentity('바로 느고',{code:'2ki',chapter:23}).id);
+ assert.notEqual(resolveIdentity('마할랏',{code:'2ch',chapter:11}).id,resolveIdentity('마할랏',{code:'gen',chapter:28}).id);
+ assert.equal(canonicalPersonName('미가야(우리엘의 딸)',{code:'2ch',chapter:13}),'마아가');
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/2ch.json',import.meta.url),'utf8'));
+ const ch20=buildWorldModel([{code:'2ch',name:'역대하',chap:20,data:summary.chapters[20]}]);
+ assert.ok(ch20.cast.some(person=>person.name==='모압과 암몬 연합군'&&/마온/.test(person.role)));
+ assert.ok(ch20.relations.some(r=>r.from==='모압과 암몬 연합군'&&r.to==='여호사밧'&&/마온 사람들/.test(r.note)));
+});
+
 test('출애굽기에서 르우엘과 이드로는 같은 장인이고 두 시대의 바로는 각각 분리한다',async()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/exo.json',import.meta.url),'utf8'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'exo',name:'출애굽기',chap:Number(chap),data}));
