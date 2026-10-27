@@ -378,6 +378,91 @@ test('마태복음 28장의 두 여인 모두 천사의 소식을 듣고 부활�
  }
 });
 
+test('마가복음 1·3장의 시몬은 베드로와 같은 제자이며 안드레의 나이는 본문에 없는 정보로 남긴다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/mrk.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([1,3].map(chap=>({code:'mrk',name:'마가복음',chap,data:summary.chapters[chap]})));
+ const peter=model.cast.filter(person=>person.identity?.id==='person:베드로');
+ assert.equal(peter.length,1);
+ assert.ok(peter[0].refs.includes('마가복음 1장'));
+ assert.ok(peter[0].refs.includes('마가복음 3장'));
+ assert.match(summary.chapters['1'].rels.find(relation=>relation.from==='시몬'&&relation.to==='안드레').note,/본문은 둘 가운데 누가 형인지 말하지 않아요/);
+ assert.ok(summary.chapters['1'].rels.some(relation=>relation.from==='야고보'&&relation.to==='요한'&&relation.label==='형제'));
+ assert.ok(summary.chapters['3'].rels.some(relation=>relation.from==='마리아'&&relation.to==='예수'&&relation.label==='어머니'));
+});
+
+test('마가복음 2장의 레위는 마태와 같은 제자이고 4장의 씨 뿌리는 자는 현장 인물이 아니다',()=>{
+ const mark=JSON.parse(fs.readFileSync(new URL('../data/summary/mrk.json',import.meta.url),'utf8'));
+ const matthew=JSON.parse(fs.readFileSync(new URL('../data/summary/mat.json',import.meta.url),'utf8'));
+ const combined=buildWorldModel([
+  {code:'mrk',name:'마가복음',chap:2,data:mark.chapters['2']},
+  {code:'mat',name:'마태복음',chap:9,data:matthew.chapters['9']}
+ ]);
+ const levy=combined.cast.filter(person=>person.identity?.id==='person:마태');
+ assert.equal(levy.length,1);
+ assert.ok(levy[0].refs.includes('마가복음 2장'));
+ assert.ok(levy[0].refs.includes('마태복음 9장'));
+ const sower=mark.chapters['4'].people.find(person=>person.name==='씨 뿌리는 자');
+ assert.ok(sower);
+ assert.ok(isMentionOnlyPerson(sower,{code:'mrk',chapter:4}));
+ assert.ok(!buildWorldModel([{code:'mrk',name:'마가복음',chap:4,data:mark.chapters['4']}]).cast.some(person=>person.name==='씨 뿌리는 자'));
+ for(const chapter of Object.values(mark.chapters).slice(0,5)){
+  assert.doesNotMatch(chapter.story,/\d/,'일반 서술의 수량은 한글로 적는다');
+  for(const relation of chapter.rels)assert.doesNotMatch(relation.note,/\d/,'관계 설명의 수량은 한글로 적는다');
+ }
+});
+
+test('마가복음 12장의 악한 농부들은 포도원 비유의 인물이라 현장 출연에서 제외한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/mrk.json',import.meta.url),'utf8'));
+ const farmers=summary.chapters['12'].people.find(person=>person.name==='악한 농부들');
+ assert.ok(farmers);
+ assert.ok(isMentionOnlyPerson(farmers,{code:'mrk',chapter:12}));
+ assert.ok(!buildWorldModel([{code:'mrk',name:'마가복음',chap:12,data:summary.chapters['12']}]).cast.some(person=>person.name==='악한 농부들'));
+});
+
+test('마가복음 15–16장의 야고보와 요세의 어머니 마리아를 한 인물로 이어 주고 현장 여인 관계를 보존한다',async()=>{
+ const mark=JSON.parse(fs.readFileSync('data/summary/mrk.json','utf8'));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('야고보와 요세의 어머니 마리아',{code:'mrk',chapter:15}).id,resolveIdentity('야고보의 어머니 마리아',{code:'mrk',chapter:16}).id);
+ const ch15=mark.chapters['15'];
+ assert.ok(ch15.people.some(person=>person.name==='살로메'));
+ assert.ok(ch15.rels.some(relation=>relation.from==='살로메'&&relation.to==='예수'&&relation.verses==='40-41'));
+ assert.match(ch15.rels.find(relation=>relation.from==='구레네 사람 시몬').note,/본문이 설명하지는 않아요/);
+ assert.doesNotMatch(ch15.rels.find(relation=>relation.from==='막달라 마리아').note,/부활의 첫 증인/);
+});
+
+test('누가복음 1장의 요셉은 약혼 관계로만 언급되므로 월드 캐스트에 세우지 않는다',()=>{
+ const luke=JSON.parse(fs.readFileSync('data/summary/luk.json','utf8'));
+ const model=buildWorldModel([{code:'luk',name:'누가복음',chap:1,data:luke.chapters['1']}]);
+ assert.ok(!model.cast.some(person=>person.name==='요셉'));
+ assert.ok(luke.chapters['1'].rels.some(relation=>relation.from==='마리아'&&relation.to==='요셉'&&relation.label==='약혼한 사이'),'관계 출처는 해설 DB에 보존한다');
+});
+
+test('누가복음 2장은 마리아와 요셉을 약혼 관계로 표기하고 확인되지 않은 황제 선전 설명을 덧붙이지 않는다',()=>{
+ const luke=JSON.parse(fs.readFileSync('data/summary/luk.json','utf8'));
+ const ch2=luke.chapters['2'];
+ const engagement=ch2.rels.find(relation=>relation.from==='마리아'&&relation.to==='요셉');
+ assert.equal(engagement.label,'약혼한 사이');
+ assert.match(engagement.note,/약혼한 마리아/);
+ assert.doesNotMatch(ch2.story,/로마는 황제를 구주라 부르며/);
+});
+
+test('누가복음 3장의 연대 표기 인물은 월드에서 제외하고 요한의 옥행에 참여한 헤롯은 남긴다',()=>{
+ const luke=JSON.parse(fs.readFileSync('data/summary/luk.json','utf8'));
+ const model=buildWorldModel([{code:'luk',name:'누가복음',chap:3,data:luke.chapters['3']}]);
+ assert.ok(!model.cast.some(person=>person.name==='빌라도'));
+ assert.ok(!model.cast.some(person=>person.name==='헤로디아'));
+ assert.ok(model.cast.some(person=>person.name==='헤롯'));
+});
+
+test('누가복음 5–6장의 시몬 베드로와 레위는 앞선 복음서의 동일 인물로 잇고 열심당원 시몬과 구분한다',async()=>{
+ const luke=JSON.parse(fs.readFileSync('data/summary/luk.json','utf8'));
+ const {canonicalPersonName,resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(canonicalPersonName('시몬',{code:'luk',chapter:5}),'베드로');
+ assert.equal(resolveIdentity('시몬',{code:'luk',chapter:5}).id,resolveIdentity('베드로',{code:'mrk',chapter:1}).id);
+ assert.equal(resolveIdentity('레위',{code:'luk',chapter:5}).id,resolveIdentity('마태',{code:'mat',chapter:10}).id);
+ assert.notEqual(resolveIdentity('시몬(열심당원)',{code:'luk',chapter:6}).id,resolveIdentity('시몬 베드로',{code:'luk',chapter:6}).id);
+});
+
 test('예레미야 21–30장의 시대 표기·과거 왕·미래 메시아 인물은 장면 배우에서 분리한다',()=>{
  const chapters=[
   [21,['느부갓네살']],[22,['살룸','요시야','고니야']],[23,['의로운 가지']],

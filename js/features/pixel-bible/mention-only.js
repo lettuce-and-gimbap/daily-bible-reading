@@ -3,6 +3,10 @@
 // words such as "조상" also describe characters who are present in genealogies
 // or active narratives, so a broad role-text filter would remove real actors.
 const CHAPTERS = {
+  'luk.1': ['요셉'],
+  'luk.3': ['빌라도', '헤로디아'],
+  'mrk.4': ['씨 뿌리는 자'],
+  'mrk.12': ['악한 농부들'],
   // Teaching illustrations/comparisons are not people physically present in
   // the Sermon on the Mount scene.
   'mat.5': ['서기관과 바리새인'],
