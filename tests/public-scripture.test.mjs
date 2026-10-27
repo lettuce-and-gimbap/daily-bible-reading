@@ -22,6 +22,16 @@ test('비공개 저장소는 선택한 한 장의 세 역본만 응답한다',as
  assert.equal(body.rows.length,6);
 });
 
+test('원문 역본의 띄어쓰기와 숫자 표기를 바꾸지 않고 그대로 제공한다',async()=>{
+ const source='내가 잘못했습니다. 이 곳에서 떠나 주십시오. 은 삼백 달란트 가량과 금 삼십 달란트 가량을 드리겠습니다.';
+ const sourceBook={editions:{easy:[null,[[14,source]]]}};
+ const sourceEnv={SUBS:{get:async()=>sourceBook}};
+ const res=await scriptureChapter(new Request('https://worker.test/scripture?book=2ki&chapter=1&ver=easy'),sourceEnv,json,cors);
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.rows[0].text,source);
+});
+
 test('권 전체나 잘못된 역본은 응답하지 않는다',async()=>{
  for(const query of ['book=gen&chapter=0&ver=gae','book=gen&chapter=1&ver=unknown','book=gen&chapter=1&ver=gae&ver2=easy&ver3=niv&ver4=han']){
   const res=await scriptureChapter(new Request('https://worker.test/scripture?'+query),env,json,cors);

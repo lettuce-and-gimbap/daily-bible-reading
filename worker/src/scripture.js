@@ -14,6 +14,8 @@ export async function scriptureChapter(request, env, json, cors) {
   }
   const stored = await env.SUBS.get(`scripture:v1:${book}`, 'json');
   if (!stored?.editions) return json({ error: 'scripture data unavailable' }, 503);
+  // Translation text is immutable source data: preserve each stored string
+  // exactly, including its original spelling and number style.
   const rows = editions.flatMap(edition => (stored.editions[edition]?.[chapter] || []).map(([verse, text]) => ({
     ver: edition, label: String(verse), text,
   })));

@@ -14,5 +14,6 @@ fi
 cd "$repo_root/worker"
 for path in "${files[@]}"; do
   book="$(basename "$path" .json)"
+  # Upload the archived source JSON verbatim; do not normalize translation text.
   npm_config_cache=/tmp/codex-wrangler-cache npx --yes wrangler kv key put "scripture:v1:$book" --binding SUBS --path "$path" --remote
 done
