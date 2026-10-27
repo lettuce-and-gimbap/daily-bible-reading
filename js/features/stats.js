@@ -9,6 +9,7 @@ let statsSubpage = ""; // 관리의 색상 / 계정·설정 / 픽셀 자료실 �
 let pixelReferenceCategory = "all";
 let pixelReferenceQuery = "";
 const qtCoverMap = {}; // QT 날짜 → { ref: 본문 범위, idx: 다룬 장 번호들 } (한 번 받으면 다시 받지 않음)
+const isAdminUser = () => window.isAdminAccount?.() === true;
 
 function ring(pct) {
   const r = 34, c = 2 * Math.PI * r;
@@ -19,6 +20,7 @@ function ring(pct) {
 }
 
 function renderStats() {
+  if (statsSubpage === "pixel-library" && !isAdminUser()) statsSubpage = "";
   const today = todayStr();
   const byDate = readDates();
   const qtDates = qtCountDates();
@@ -93,7 +95,7 @@ function renderStats() {
     <div class="stats-page-links" aria-label="관리 설정">
       <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
       <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
-      <button type="button" class="stats-page-link" data-stats-page="pixel-library"><span aria-hidden="true">🧩</span><b>픽셀 자료실</b></button>
+      ${isAdminUser() ? `<button type="button" class="stats-page-link" data-stats-page="pixel-library"><span aria-hidden="true">🧩</span><b>픽셀 자료실</b></button>` : ""}
     </div>
     `;
 
@@ -115,6 +117,7 @@ function renderStats() {
 }
 
 function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
+  if (page === "pixel-library" && !isAdminUser()) { statsSubpage = ""; renderStats(); return; }
   const title = page === "colors" ? "색상" : page === "pixel-library" ? "픽셀 자료실" : "계정·설정";
   const header = `<header class="stats-subpage-head"><button type="button" id="stats-subpage-back" aria-label="관리 화면으로 돌아가기">←</button><h1>${title}</h1></header>`;
   if (page === "pixel-library") {

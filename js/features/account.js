@@ -127,6 +127,8 @@ const ADMIN_IDS = ["buucksoo"];
 function isAdmin() {
   return !!account && ADMIN_IDS.includes(String(account.id).toLowerCase());
 }
+// 관리 화면에서 관리자 전용 자료실 표시 여부를 확인한다.
+window.isAdminAccount = isAdmin;
 // 관리자 표시: 좌상단 빈 공간에 성경과 펜을 합친 작은 그림
 function updateAdminBadge() {
   const el = document.getElementById("admin-badge");
