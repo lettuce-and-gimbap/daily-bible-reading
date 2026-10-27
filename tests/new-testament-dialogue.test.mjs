@@ -21,9 +21,11 @@ test('신약 27권의 모든 장에 본문 인물 색인과 연결된 개별 발
   if(lineRefs){
    assert.equal(lineRefs.length,lines.length,`${code}.${chapter} gives each line its own reference`);
    for(const ref of lineRefs){
-    assert.match(ref,/^\d+(?:-\d+)?$/);
-    const [lineStart,lineEnd= lineStart]=ref.split('-').map(Number);
-    assert.ok(ranges.some(range=>{const [start,end=start]=range.split('-').map(Number);return lineStart>=start&&lineEnd<=end;}),`${code}.${chapter} line reference stays inside its chapter range`);
+    for(const part of ref.split(',').map(value=>value.trim())){
+     assert.match(part,/^\d+(?:-\d+)?$/);
+     const [lineStart,lineEnd= lineStart]=part.split('-').map(Number);
+     assert.ok(ranges.some(range=>{const [start,end=start]=range.split('-').map(Number);return lineStart>=start&&lineEnd<=end;}),`${code}.${chapter} line reference stays inside its chapter range`);
+    }
    }
   }
   assert.ok(lines.every(line=>line.length<=110),`${code}.${chapter} has bubble-sized lines`);
@@ -36,14 +38,14 @@ test('신약 27권의 모든 장에 본문 인물 색인과 연결된 개별 발
 });
 
 test('신약 발화는 중복 없이 해당 인물과 장에만 나온다',()=>{
- const lines=NEW_TESTAMENT_DIALOGUE_ROWS.flatMap(row=>row[4]);
- assert.equal(new Set(lines).size,lines.length,'dialogue lines should be distinct');
+ const lines=NEW_TESTAMENT_DIALOGUE_ROWS.flatMap(row=>row[4].map(line=>`${row[0]}.${row[1]}:${row[2]}:${line}`));
+ assert.equal(new Set(lines).size,lines.length,'the same speaker should not have duplicate lines in the same chapter');
  const linesForJesus=newTestamentMonologues({name:'예수'},[{code:'mat',chap:5}]);
- assert.equal(linesForJesus.length,3);
+ assert.equal(linesForJesus.length,5);
  assert.ok(linesForJesus.every(line=>line.ref.startsWith('마태복음 5:')));
- assert.deepEqual(newTestamentMonologues({name:'예수'},[{code:'luk',chap:5}]).map(line=>line.ref),['누가복음 5:4','누가복음 5:10']);
+ assert.deepEqual(newTestamentMonologues({name:'예수'},[{code:'luk',chap:5}]).map(line=>line.ref),['누가복음 5:4,10','누가복음 5:13-14','누가복음 5:20,24','누가복음 5:31-32']);
  const integrated=chapterMonologues({name:'예수'},[{code:'mat',chap:5}]);
- assert.equal(integrated.length,3,'chapter-specific lines are exposed through the existing dialogue path');
+ assert.equal(integrated.length,5,'chapter-specific lines are exposed through the existing dialogue path');
 });
 
 test('마태복음의 발화별 근거가 개별 구절로 유지된다',()=>{
@@ -133,14 +135,16 @@ test('요한계시록 1–5장의 증언·환상·찬양을 실제 화자에게 
  assert.deepEqual(row(4,'네 생물')[6],['8']);
  assert.deepEqual(row(4,'이십사 장로')[6],['10-11']);
  assert.deepEqual(row(5,'장로 중 한 사람')[6],['5']);
+ assert.deepEqual(row(5,'힘 있는 천사')[6],['2']);
  assert.deepEqual(row(5,'수많은 천사')[6],['11-12']);
+ assert.deepEqual(row(5,'네 생물')[6],['14']);
  assert.deepEqual(row(5,'모든 피조물')[6],['13']);
 });
 
 test('요한계시록 6–22장의 직접 발화와 목격 서술을 화자별로 나눈다',()=>{
  const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='rev');
  const row=(chapter,name)=>rows.find(item=>item[1]===chapter&&item[2]===name);
- assert.deepEqual(row(6,'순교한 영혼들')[6],['10']);
+ assert.deepEqual(row(6,'순교한 영혼들')[6],['9-10']);
  assert.deepEqual(row(6,'땅의 임금들')[6],['16-17']);
  assert.deepEqual(row(7,'큰 무리')[6],['10']);
  assert.deepEqual(row(7,'모든 천사')[6],['12']);
@@ -148,13 +152,17 @@ test('요한계시록 6–22장의 직접 발화와 목격 서술을 화자별�
  assert.deepEqual(row(9,'제단의 음성')[6],['14']);
  assert.deepEqual(row(10,'하늘의 음성')[6],['4','8']);
  assert.equal(row(11,'두 증인'),undefined,'행동 서술을 증인들의 직접 대사로 만들지 않는다');
- assert.deepEqual(row(12,'하늘의 큰 음성')[6],['10-11','12']);
+ assert.deepEqual(row(12,'하늘의 큰 음성')[6],['10','11-12']);
  assert.deepEqual(row(13,'땅에 사는 자들')[6],['4']);
  assert.deepEqual(row(14,'셋째 천사')[6],['9-11']);
  assert.deepEqual(row(14,'성령')[6],['13']);
  assert.deepEqual(row(15,'짐승을 이긴 자들')[6],['3-4']);
  assert.deepEqual(row(16,'물을 차지한 천사')[6],['5-6']);
- assert.deepEqual(row(17,'대접을 가진 천사')[6],['1-2','7-8','15-18']);
+ assert.deepEqual(row(17,'대접을 가진 천사')[6],['1','2','7-8','9-14','15-18']);
+ assert.deepEqual(row(18,'하늘의 음성')[6],['4','6','7-8','20']);
+ assert.deepEqual(row(18,'바벨론')[6],['7']);
+ assert.deepEqual(row(18,'힘센 천사')[6],['21','22-24']);
+ assert.deepEqual(row(19,'천사')[6],['9','10','17-18']);
  assert.deepEqual(row(18,'땅의 왕들')[6],['9-10']);
  assert.deepEqual(row(18,'선장과 선원들')[6],['18-19']);
  assert.deepEqual(row(19,'이십사 장로와 네 생물')[6],['4']);
@@ -163,7 +171,7 @@ test('요한계시록 6–22장의 직접 발화와 목격 서술을 화자별�
  assert.deepEqual(row(22,'성령')[6],['17']);
  assert.deepEqual(row(22,'신부')[6],['17']);
  assert.equal(row(22,'목마른 자'),undefined,'초대받는 이를 발화자로 만들지 않는다');
- assert.deepEqual(row(22,'예수')[6],['7','12-13','16','20']);
+ assert.deepEqual(row(22,'예수')[6],['7','12-13','14-15','16','20']);
 });
 
 test('마태·마가·누가복음의 주요 대면 문답은 장면의 두 화자와 구절에 맞게 연결된다',()=>{

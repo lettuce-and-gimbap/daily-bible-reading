@@ -70,5 +70,5 @@ export function personalLines(n,chapters,context){
  if(ENABLE_GENERIC_ROLE_MONOLOGUES&&!lines.length&&!includesTwoKings)for(const line of roleMonologues(n,occurrences,relation))add(line.text,line.ref,line.origin,line.emotion);
  const authoredLines=lines.filter(line=>line.origin==='authored');
  // 여러 장을 읽는 범위에서는 뒤쪽 사건의 인물별 발화도 후보에 남긴다.
- return (authoredLines.length?authoredLines:lines).map((line,i)=>({...line,text:firstPersonMonologue(n.name,line.text),detailText:line.detailText|| (line.origin==='authored'?'':[relation?.text,...occurrences.map(p=>p.role)].filter(Boolean).join(' ')),id:`personal:${n.identity?.id||n.name}:${line.ref||ref}:${i}`,speaker:n,kind:'solo'}));
+ return (authoredLines.length?authoredLines:lines).map((line,i)=>({...line,text:firstPersonMonologue(n.name,line.text),lineDetail:line.origin==='authored'?line.detailText:'',detailText:line.detailText|| (line.origin==='authored'?'':[relation?.text,...occurrences.map(p=>p.role)].filter(Boolean).join(' ')),id:`personal:${n.identity?.id||n.name}:${line.ref||ref}:${i}`,speaker:n,kind:'solo'}));
 }

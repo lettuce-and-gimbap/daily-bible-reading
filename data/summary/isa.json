@@ -99,8 +99,8 @@
         {"name":"여호와의 싹","role":"아름답고 영화롭게 될 이","weight":2},
         {"name":"남은 자","role":"거룩하다 일컬음받을 이들","weight":3},
         {"name":"시온의 딸들","role":"씻김을 받을 여인들","weight":1},
-        {"name":"하나님","role":"피난처를 두시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"피난처를 두시는 분","weight":3},
+        {"name":"이사야","role":"시온의 회복 환상을 전한 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"남은 자","label":"씻기시고 덮으심","kind":"ally","directed":true,"weight":3,"verses":"3-5","note":"하나님이 더러움을 씻으신 뒤, 시온에 남은 사람을 거룩하다고 부르세요."}
       ],
@@ -261,8 +261,8 @@
         {"name":"불의한 재판관","role":"약자를 약탈한 자","weight":2},
         {"name":"이스라엘의 남은 자","role":"하나님께 돌아올 이들","weight":3},
         {"name":"시온 백성","role":"두려워 말라 들은 백성","weight":1},
-        {"name":"하나님","role":"막대기를 쓰시고 꺾으시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"막대기를 쓰시고 꺾으시는 분","weight":3},
+        {"name":"이사야","role":"앗수르를 향한 심판과 남은 자의 소망을 전함","weight":2}],
       "rels": [
         {"from":"하나님","to":"앗수르 왕","label":"막대기로 쓰신 분","kind":"other","directed":true,"weight":3,"verses":"5-6","note":"하나님이 앗수르를 진노의 막대기로 쓰시려고 보내셨어요. 경건하지 않은 나라를 치기 위해서예요."},
         {"from":"하나님","to":"앗수르 왕","label":"교만을 벌하심","kind":"conflict","directed":true,"weight":3,"verses":"12-15","note":"앗수르 왕은 자기 힘으로 이겼다고 자랑해요. 도끼가 찍는 사람 앞에서 자랑할 수 없듯이, 하나님은 그 교만을 벌하세요."},
@@ -290,8 +290,8 @@
         {"name":"가난한 자와 겸손한 자","role":"공의로 심판받을 이들","weight":2},
         {"name":"흩어진 백성","role":"다시 모일 이스라엘과 유다","weight":2},
         {"name":"열방","role":"기치에 돌아올 민족","weight":1},
-        {"name":"하나님","role":"영을 부으시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"영을 부으시는 분","weight":3},
+        {"name":"이사야","role":"다윗 왕조의 회복과 열방의 평화를 선포함","weight":3}],
       "rels": [
         {"from":"하나님","to":"이새의 싹","label":"영을 부으심","kind":"ally","directed":true,"weight":3,"verses":"2","note":"여호와의 영이 그 싹 위에 머물러요. 지혜와 총명, 모략과 재능, 지식과 경외의 영이에요."},
         {"from":"이새의 싹","to":"가난한 자와 겸손한 자","label":"공의로 판단함","kind":"ally","directed":true,"weight":3,"verses":"4","note":"그분은 눈에 보이는 대로 재판하지 않고 가난하고 겸손한 사람을 공정하게 재판하세요."},
@@ -368,8 +368,8 @@
         {"name":"앗수르","role":"하나님 땅에서 꺾일 나라","weight":2},
         {"name":"블레셋","role":"기뻐하지 말라 경고받은 나라","weight":1},
         {"name":"아하스","role":"죽던 해의 유다 왕","weight":1},
-        {"name":"하나님","role":"경영을 이루시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"경영을 이루시는 분","weight":3},
+        {"name":"죽은 왕들","role":"스올에서 바벨론 왕의 몰락을 맞는 왕들","weight":1}],
       "rels": [
         {"from":"바벨론 왕","to":"하나님","label":"높아지려던 왕","kind":"conflict","directed":true,"weight":3,"verses":"12-15","note":"바벨론 왕은 하늘에 올라 가장 높으신 이와 같아지겠다고 했지만 스올의 맨 밑으로 떨어졌어요. 교만의 끝이에요."},
         {"from":"하나님","to":"야곱","label":"긍휼히 여기심","kind":"ally","directed":true,"weight":2,"verses":"1","note":"하나님이 야곱을 긍휼히 여기시고 다시 이스라엘을 택하세요."},
@@ -502,8 +502,8 @@
         {"name":"앗수르","role":"함께 경배할 나라","weight":2},
         {"name":"이스라엘","role":"세계 중의 복이 될 기업","weight":2},
         {"name":"구원자","role":"애굽에 보내실 이","weight":1},
-        {"name":"하나님","role":"치시고 고치시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"치시고 고치시는 분","weight":3},
+        {"name":"이사야","role":"애굽 심판과 회복을 선포하는 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"애굽","label":"치시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1-4","note":"하나님이 빠른 구름을 타고 오셔서 애굽의 우상을 떨게 하세요. 애굽 사람들의 마음이 녹아요."},
         {"from":"하나님","to":"애굽","label":"고치시는 분","kind":"ally","directed":true,"weight":3,"verses":"22","note":"하나님은 애굽을 치신 뒤 고쳐 주시고, 그들이 여호와께 돌아오게 하세요."},
@@ -617,8 +617,8 @@
         {"name":"두로","role":"바다의 상인 도시","weight":3},
         {"name":"시돈 상인","role":"두로를 부요하게 한 이들","weight":2},
         {"name":"다시스 배들","role":"슬피 울 무역선","weight":1},
-        {"name":"하나님","role":"교만을 낮추시는 분","weight":3}
-      ],
+        {"name":"하나님","role":"교만을 낮추시는 분","weight":3},
+        {"name":"이사야","role":"두로 심판과 회복을 전한 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"두로","label":"낮추시는 분","kind":"conflict","directed":true,"weight":3,"verses":"8-9","note":"하나님이 두로를 치신 것은 영광을 자랑하는 교만을 낮추시려는 계획 때문이에요. 두로의 지혜나 힘도 소용없었어요."},
         {"from":"시돈 상인","to":"두로","label":"부요케 한 상인","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"시돈은 두로의 모도시예요. 시돈 상인들이 바다를 건너다니며 두로를 부유하게 했어요."},
@@ -721,8 +721,8 @@
         {"name":"이스라엘","role":"아름다운 포도원","weight":3},
         {"name":"야곱","role":"뿌리 박을 백성","weight":2},
         {"name":"흩어진 자들","role":"나팔 소리에 돌아올 이들","weight":2},
-        {"name":"하나님","role":"포도원지기","weight":3}
-      ],
+        {"name":"하나님","role":"포도원지기","weight":3},
+        {"name":"이사야","role":"야곱의 회복과 귀환을 선포하는 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"리워야단","label":"벌하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"리워야단은 바다의 괴물이에요. 하나님이 단단한 칼로 이 용을 벌하신다고 해요. 악을 상징하는 존재로 읽는 견해가 많아요."},
         {"from":"하나님","to":"이스라엘","label":"지키시는 포도원지기","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"하나님은 이스라엘을 포도원에 빗대어, 포도원지기로서 때마다 물을 주고 밤낮으로 해로운 것에서 지키신대요."},
@@ -856,8 +856,8 @@
         {"name":"방백들","role":"정의로 다스릴 이들","weight":1},
         {"name":"안일한 여인들","role":"경고받은 예루살렘 여인","weight":2},
         {"name":"어리석은 자","role":"드러날 악한 자","weight":1},
-        {"name":"하나님","role":"영을 부으실 분","weight":3}
-      ],
+        {"name":"하나님","role":"영을 부으실 분","weight":3},
+        {"name":"이사야","role":"안일한 여인들과 백성에게 심판·회복을 선포하는 선지자","weight":2}],
       "rels": [
         {"from":"공의로운 왕","to":"하나님","label":"공의를 행할 왕","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"장차 오실 왕은 폭풍을 피하는 곳, 메마른 땅의 시냇물 같은 분이에요. 메시아를 가리킨다고 보는 견해가 많아요."},
         {"from":"하나님","to":"안일한 여인들","label":"경고하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"9-11","note":"걱정 없다며 마음 놓은 여인들에게 일 년쯤 뒤면 놀라 떨 테니 귀를 기울이라 경고하세요."},
@@ -930,8 +930,8 @@
         {"name":"겁내는 자들","role":"굳세어라 위로받는 이","weight":2},
         {"name":"맹인과 못 듣는 자","role":"치유받을 이들","weight":2},
         {"name":"속량받은 자들","role":"노래하며 돌아올 이들","weight":3},
-        {"name":"하나님","role":"오셔서 구원하실 분","weight":3}
-      ],
+        {"name":"하나님","role":"오셔서 구원하실 분","weight":3},
+        {"name":"이사야","role":"약한 이들에게 귀환의 소망을 전하는 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"겁내는 자들","label":"오셔서 구하실 분","kind":"ally","directed":true,"weight":3,"verses":"4","note":"마음이 불안한 사람들에게 힘을 내고 두려워 말라, 하나님이 오셔서 구원하신다고 전하라고 하세요."},
         {"from":"하나님","to":"맹인과 못 듣는 자","label":"고치실 분","kind":"ally","directed":true,"weight":2,"verses":"5-6","note":"하나님이 오시는 날 눈먼 자와 귀먹은 자와 저는 자가 고쳐져요."},
@@ -1205,8 +1205,8 @@
         {"name":"야곱","role":"하나님이 위하시는 백성","weight":2},
         {"name":"애굽과 구스와 스바","role":"고백하러 올 민족","weight":1},
         {"name":"땅끝의 모든 백성","role":"구원으로 부르시는 이들","weight":2},
-        {"name":"하나님","role":"유일하신 창조주","weight":3}
-      ],
+        {"name":"하나님","role":"유일하신 창조주","weight":3},
+        {"name":"이사야","role":"하나님의 숨은 구원을 고백하는 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"고레스","label":"오른손 붙드신 분","kind":"other","directed":true,"weight":3,"verses":"1-4","note":"하나님은 고레스의 오른손을 붙들어 나라들이 항복하게 하셨어요. 고레스가 하나님을 알기 전부터 이름을 부르셨어요."},
         {"from":"고레스","to":"야곱","label":"놓아 줄 왕","kind":"ally","directed":true,"weight":2,"verses":"13","note":"고레스는 하나님의 뜻대로 예루살렘을 다시 짓고 포로들을 값이나 선물 없이 놓아줄 거예요."},

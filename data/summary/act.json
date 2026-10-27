@@ -639,6 +639,7 @@
         {"name":"디모데","role":"내려온 동역자","weight":1},
         {"name":"그리스보","role":"믿은 회당장","weight":2},
         {"name":"디도 유스도","role":"집을 내준 이","weight":1},
+        {"name":"유대인들","role":"바울을 총독에게 고발한 이들","weight":1},
         {"name":"갈리오","role":"아가야 총독","weight":2},
         {"name":"소스데네","role":"매 맞은 회당장","weight":1},
         {"name":"아볼로","role":"성경에 능통한 이","weight":3},
