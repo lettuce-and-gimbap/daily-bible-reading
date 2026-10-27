@@ -8,7 +8,7 @@ import {characterMotion} from '../js/features/pixel-bible/motion.js';
 import {interactionPose} from '../js/features/pixel-bible/interaction-motion.js';
 import {heldObject} from '../js/features/pixel-bible/object-response.js';
 
-test('현재 장의 동식물은 생물 신원으로 명단에 포함하고 일반 인물·상징을 보존한다',()=>{
+test('현재 장의 동식물은 생물 신원으로 명단에 포함하고 일반 인물·상징을 보존한다',async()=>{
  const c={code:'gen',name:'창세기',chap:24,data:{people:[{name:'리브가',role:'이삭의 아내'},{name:'낙타',role:'물을 마시는 동물'}],events:[{title:'우물',text:'리브가가 낙타에게 물을 주고, 감람나무 곁에 섰다.',verses:'19-20'}]}};
  const model=buildWorldModel([c]);const camel=model.cast.find(n=>n.name==='낙타'),tree=model.cast.find(n=>n.name==='감람나무');
  assert.equal(camel.identity.kind,'animal');assert.equal(tree.identity.kind,'plant');assert.equal(model.cast.filter(n=>n.name==='낙타').length,1);
@@ -18,6 +18,9 @@ test('현재 장의 동식물은 생물 신원으로 명단에 포함하고 일�
  assert.equal(creatureForName('모세'),null);
  assert.equal(creatureForName('사자','왕이 보낸 사신'),null);
  assert.equal(creatureForName('말','하나님의 말씀'),null);
+ assert.equal(creatureForName('소','호세아가 사신을 보낸 애굽 왕'),null);
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('소',{code:'2ki',chapter:17,role:'호세아가 사신을 보낸 애굽 왕'}).id,'person:egyptian-king-so');
 });
 
 test('말이 없는 생물은 클릭·자동·관계 대사를 만들지 않으며 발화는 기록된 장에서만 허용한다',()=>{

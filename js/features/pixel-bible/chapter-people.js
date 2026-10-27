@@ -1,4 +1,4 @@
-import {chapterCreatures,creatureForName} from './creatures.js';
+import {chapterCreatures,creatureForName} from './creatures.js?rev=so-king-identity-1';
 // 관계도의 끝점도 빠뜨리지 않는다. 이름만 있는 대상은 관계 설명으로 보강한다.
 export const isDivine=name=>/^(하나님|여호와|성령|주님)$/.test(name);
 export function chapterPeople(data={},context={}) {

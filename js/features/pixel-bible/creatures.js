@@ -10,6 +10,8 @@ const rows=[
 export const CREATURES=Object.fromEntries(rows.map(([id,name,kind,body,color])=>[id,{id,name,kind,body,color}]));
 const aliases={'발람의 나귀':'donkey','암나귀':'donkey','어린 나귀':'donkey','양 떼':'sheep','암양':'sheep','수양':'sheep','어린 양':'sheep','암소':'ox','수소':'ox','숫염소':'goat','어린 염소':'goat','수탉':'rooster','닭':'rooster','암탉':'rooster','늑대':'wolf','박넝쿨':'gourd'};
 export function creatureForName(name,role='',code=''){
+ // 열왕기하 17장의 소(So)는 호세아가 사신을 보낸 애굽 왕이지 황소가 아니다.
+ if(name==='소'&&/왕|애굽|바로/.test(role))return null;
  if(name==='사자'&&/천사|사신|전령|보낸|보냄|전하러|전하는/.test(role))return null;
  if(name==='말'&&/말씀|발언|이야기|언어/.test(role))return null;
  if(/상징|표상|그리스도|보좌|일곱.*뿔/.test(role)||code==='rev'&&name==='어린 양')return null;

@@ -16,7 +16,7 @@ import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasi
 const displayPersonName=name=>(name==='불'?'불 왕':name).replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
 import {captureBubblePlacement,pinnedBubblePlacement} from './bubble-position.js';
-import {creatureCanUse} from './creatures.js';
+import {creatureCanUse} from './creatures.js?rev=pharaoh-so-classification-1';
 import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
 import {objectContextSpeech} from './speech-view.js';
@@ -40,7 +40,7 @@ import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
 import { relationshipLinks, relationshipFocus, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js';
-import { chapterPeople } from './chapter-people.js';
+import { chapterPeople } from './chapter-people.js?rev=so-king-identity-1';
 import { isMentionOnlyPerson, withoutMentionOnlyActors } from './mention-only.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
@@ -48,7 +48,7 @@ import { scopeChapterSummary } from './qt-scope.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
-import { resolveIdentity } from './identity.js';
+import { resolveIdentity } from './identity.js?rev=so-king-identity-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
 import { renderPersonPreview, easyPersonDescription } from "./collection-preview.js?v=turntable-motion-walk-start-2";
@@ -210,7 +210,7 @@ export async function mountPixelWorld(shell, options) {
   const commonObjectButtons=Object.entries(WORLD_OBJECTS).filter(([key])=>!chapterProps.some(item=>item.id===key)).map(([key,name])=>objectChoice(key,name)).join('');
   shell.insertAdjacentHTML("beforeend", `<div class="pb-world-stage"><button class="pb-trash-drop" type="button" hidden aria-label="오브젝트 버리기">🗑️</button><canvas width="960" height="480" tabindex="0" aria-label="픽셀 월드. 인물을 누르면 대사와 선택 표시, 빈 땅을 누르면 선택 해제. 캐릭터를 끌어 옮기거나 선택 후 방향키로 걸어갈 수 있어요."></canvas><div class="pb-speech" role="status" aria-live="polite" aria-atomic="true" hidden><b class="pb-speech-speaker"></b><p></p><button type="button" class="pb-speech-reference" data-action="speech-details">자세히 보기</button></div><div class="pb-event" hidden><div class="pb-event-card" role="status"></div></div></div>
     <button class="pb-button pb-side-toggle pb-toggle-left" data-action="toggle-left" aria-controls="pb-left-panel" aria-expanded="false">인물 ▸</button>
-    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><button class="pb-button" data-action="collection">발견 도감 · 알아가기</button><p class="pb-help">인물을 누르면 도감에 기록돼요. 은은한 발밑 빛은 현재 분량의 주요 인물이에요.</p><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">주요·전체 인물을 고르거나 개별 표시를 바꿀 수 있어요. 이름을 누르면 해당 인물을 찾아가요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" data-person="${visibleCast.indexOf(p)}" aria-pressed="${p===visibleCast[0]}">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
+    <aside class="pb-side pb-side-left" id="pb-left-panel" hidden aria-label="인물·생물 선택과 외형 근거"><button class="pb-button" data-action="collection">발견 도감 · 알아가기</button><p class="pb-help">은은한 발밑 빛은 현재 분량의 주요 인물이에요.</p><h3>분량 전체 인물·생물 · ${model.cast.length}명/집단</h3><p class="pb-help">이름 버튼은 함께 표시할 추천 인물 목록을 열고 닫아요. 표시 중/숨김은 옆 버튼으로 따로 바꿔요.</p><div class="pb-world-toolbar"><button class="pb-button" data-cast-mode="major">주요 인물</button><button class="pb-button" data-cast-mode="all">전체 인물</button><button class="pb-button" data-cast-mode="animals">동물만</button><button class="pb-button" data-cast-mode="plants">식물만</button><button class="pb-button" data-cast-mode="none">모두 숨기기</button></div><p class="pb-cast-count"></p><div class="pb-recommendations" hidden></div><div class="pb-roster">${model.cast.map((p,i)=>`<div class="pb-roster-row"><button class="pb-button" data-cast-person="${i}" aria-expanded="false">${esc(displayPersonName(p.name))}${p.creature?` <small>· ${p.creature.kind==='plant'?'식물':'동물'}</small>`:''}</button><button class="pb-button pb-person-toggle" data-toggle-person="${i}" aria-pressed="true" aria-label="${esc(displayPersonName(p.name))} 표시 전환">표시 중</button></div>`).join('')}</div><div class="pb-person-details"></div></aside>
     <button class="pb-button pb-side-toggle pb-toggle-right" data-action="toggle-right" aria-controls="pb-right-panel" aria-expanded="false">◂ 도구 · 조합</button>
     <aside class="pb-side pb-side-right" id="pb-right-panel" hidden aria-label="도구와 조합식"><p class="pb-scene-name">${noPlan?'체험 본문 · ':`${esc(options.scopeLabel||'통독 분량')} 월드 · `}${esc(model.title)}</p>${rangeForm}<div class="pb-world-toolbar"><button class="pb-button" data-action="relationships" aria-pressed="false">관계선 꺼짐</button><button class="pb-button" data-action="pause" aria-pressed="false">일시정지</button><button class="pb-button" data-action="bgm" aria-pressed="false" aria-label="배경음악 켜기">♫ 음악 OFF</button></div>
     <h3>배경 바꾸기</h3><p class="pb-help">상상 지형이에요. 실제 사건 장소를 뜻하지 않아요.</p><p class="pb-background-note pb-help"></p><div class="pb-world-toolbar pb-backgrounds">${Object.entries(BACKGROUNDS).map(([key,p])=>`<button class="pb-button" data-background="${key}" aria-pressed="false">${esc(displayPersonName(p.name))}</button>`).join('')}</div>
@@ -518,8 +518,8 @@ export async function mountPixelWorld(shell, options) {
   function syncExposure(){
     shell.querySelector('.pb-cast-count').textContent=`표시 중 ${npcs.length} / 전체 ${model.cast.length}명·집단`;
     shell.querySelectorAll('[data-cast-person]').forEach(b=>{
-      const person=model.cast[Number(b.dataset.castPerson)],i=npcs.findIndex(n=>castKey(n)===castKey(person));
-      b.dataset.person=String(i);b.setAttribute('aria-pressed',i>=0&&i===selected);
+      const person=model.cast[Number(b.dataset.castPerson)];
+      b.setAttribute('aria-expanded',expandedCast===castKey(person)&&recommendationPerson===person);
     });
     shell.querySelectorAll('[data-toggle-person]').forEach(b=>{const on=exposed.has(castKey(model.cast[Number(b.dataset.togglePerson)]));b.setAttribute('aria-pressed',on);b.textContent=on?'표시 중':'숨김';});
     for(const b of shell.querySelectorAll('[data-cast-mode]')){
@@ -1036,22 +1036,27 @@ export async function mountPixelWorld(shell, options) {
     }
     if(b.dataset.castMode){
       if(drag||objectHold)return;
-      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[]).map(castKey));for(const p of model.cast.filter(p=>p.mascotId==='김밥'))exposed.add(castKey(p));applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
+      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[]).map(castKey));for(const p of model.cast.filter(p=>p.mascotId==='김밥'))exposed.add(castKey(p));recommendationPerson=null;expandedCast=null;applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
     }
-    if(b.dataset.togglePerson!==undefined||b.dataset.addPerson!==undefined){
+    if(b.dataset.addPerson!==undefined){
       if(drag||objectHold)return;
-      const person=model.cast[Number(b.dataset.togglePerson??b.dataset.addPerson)],key=castKey(person);
+      const person=model.cast[Number(b.dataset.addPerson)],key=castKey(person);
       if(person?.mascotId==='김밥'){say('김밥은, 사라지지, 않아요!');return;}
       if(exposed.has(key))exposed.delete(key);else exposed.add(key);
-      applyExposure();renderRecommendations(b.dataset.addPerson!==undefined&&recommendationPerson?recommendationPerson:person);togglePanel('left',true);return;
+      applyExposure();if(recommendationPerson)renderRecommendations(recommendationPerson);togglePanel('left',true);return;
+    }
+    if(b.dataset.togglePerson!==undefined){
+      if(drag||objectHold)return;
+      const person=model.cast[Number(b.dataset.togglePerson)],key=castKey(person);
+      if(person?.mascotId==='김밥'){say('김밥은, 사라지지, 않아요!');return;}
+      if(exposed.has(key))exposed.delete(key);else exposed.add(key);
+      applyExposure();return;
     }
     if (b.dataset.castPerson!==undefined) {
-      const person=model.cast[Number(b.dataset.castPerson)],key=castKey(person);
-      if(expandedCast===key){collapsePersonDetails();return;}
-      if(!exposed.has(key)){exposed.add(key);applyExposure();}
-      const index=npcs.findIndex(n=>castKey(n)===key);
-      expandedCast=key;shell.querySelectorAll('[data-cast-person]').forEach(el=>el.setAttribute('aria-expanded',el===b));
-      shell.querySelector('.pb-person-details').hidden=false;if(index>=0)select(index,true);renderRecommendations(person);togglePanel('left',true);return;
+      const person=model.cast[Number(b.dataset.castPerson)],key=castKey(person),panel=shell.querySelector('.pb-recommendations');
+      if(recommendationPerson&&castKey(recommendationPerson)===key&&!panel.hidden){panel.hidden=true;recommendationPerson=null;expandedCast=null;}
+      else {expandedCast=key;shell.querySelector('.pb-person-details').hidden=true;renderRecommendations(person);}
+      syncExposure();togglePanel('left',true);return;
     }
     if (b.dataset.place) {
       if(longPressClick?.button===b&&performance.now()<longPressClick.until){longPressClick=null;return;}

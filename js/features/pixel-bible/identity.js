@@ -1,4 +1,4 @@
-import {creatureForName} from './creatures.js';
+import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
 const spiritual=/^(하나님|여호와|성령|주님|천사|사탄|마귀|어린 양)$/;
@@ -17,6 +17,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   }
   // 열왕기하 15장의 불은 불꽃이 아니라 은을 받은 앗수르 왕 풀(Pul)이에요.
   if(name==='불'&&code==='2ki'&&/왕|앗수르/.test(role))return id('person','assyria-king-pul','verse-reviewed');
+  // 열왕기하 17장의 소(So)는 애굽 왕이다. 동물 이름과 구별해 한 인물로 유지한다.
+  if(name==='소'&&code==='2ki'&&/왕|애굽|바로/.test(role))return id('person','egyptian-king-so','verse-reviewed');
   if(name==='바울')return id('person','paul');
   if(name==='요셉') {
     if(code==='gen')return id('person','joseph-patriarch');
