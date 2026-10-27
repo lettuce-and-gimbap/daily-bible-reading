@@ -35,6 +35,7 @@ import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { characterWalkFrame } from './character-motion.js';
 import { loveBoothExchange } from './relationship-lines.js';
+import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
 import { relationshipLinks, relationshipFocus, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js';
@@ -228,7 +229,6 @@ export async function mountPixelWorld(shell, options) {
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';manualSpeechUntil=0;cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function dismissAllBubbles(){hideSpeech();encounters.clear();encounterLines=[];for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}encounterBubbles.clear();}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
-  function faceAcrossBooth(a,b){const [left,right]=[a,b].sort((x,y)=>x.x-y.x);left.direction='right';right.direction='left';left.idle=right.idle=6;}
   function startLoveBooth(){
     if(loveBoothSession)return;
     const stage=loveBooth(),pair=boothPair();if(!stage||pair.length!==2)return;
@@ -237,7 +237,7 @@ export async function mountPixelWorld(shell, options) {
     const special=mode==='special';
     const lines=exchange.map(line=>({...line,origin:'booth',kind:'pair',ref:line.ref||relation?.ref}));
     for(const n of pair){n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;}
-    faceAcrossBooth(a,b);cancelTalk();hideSpeech();encounters.clear();
+    faceBoothFront(pair);cancelTalk();hideSpeech();encounters.clear();
     loveBoothSession={stage,pair,lines,mode:special?'special':'awkward',started:performance.now(),until:performance.now()+5800,home:{...camera}};
     camera.x=((a.x+b.x)/2)*TILE;camera.y=((a.y+b.y)/2)*TILE-28;camera.zoom=Math.max(camera.zoom,1.75);constrainCamera(camera,canvas.width,canvas.height);syncCamera();
     say(special?'두 사람이 무대에서 특별한 이야기를 나눠요.':'두 사람이 잠시 인사한 뒤 무대에서 내려와요.');
@@ -849,7 +849,7 @@ export async function mountPixelWorld(shell, options) {
     if(stage&&Math.hypot(stage.x-landing.x,stage.y-landing.y)<2.4){
       const occupied=boothPair(),slot=boothSlots(stage).find(s=>!occupied.some(other=>Math.hypot(other.x-s.x,other.y-s.y)<.2));
       if(!slot){n.x=held.from.x;n.y=held.from.y;n.loveBooth=null;say('무대에는 두 사람까지 올라갈 수 있어요.');draw();return;}
-      else{Object.assign(n,slot);n.loveBooth=stage;n.path=[];n.task=null;n.usingObject=null;n.interaction=null;n.idle=8;keepInView(n);startLoveBooth();updateEncounters(performance.now());draw();return;}
+      else{Object.assign(n,slot);n.loveBooth=stage;n.path=[];n.task=null;n.usingObject=null;n.interaction=null;faceBoothFront([n]);keepInView(n);startLoveBooth();updateEncounters(performance.now());draw();return;}
     }
     const boat=[...objects,...terrain].find(o=>isBoat(o)&&waterAt(backgroundKey,o.x,o.y)&&(Math.hypot(o.x-landing.x,o.y-landing.y)<2||Math.hypot(o.x-p.x,o.y-p.y)<1.5));
     n.boatRide=null;

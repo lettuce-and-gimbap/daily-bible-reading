@@ -580,9 +580,14 @@ test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다�
  assert.deepEqual([...relationshipFocus([objectRelation],[a,b,c],a)],[a,b],'사람 객체 형태로 저장된 관계도 연결 인물을 찾는다');
 });
 
-test('TV 부스에서는 왼쪽 사람이 오른쪽을, 오른쪽 사람이 왼쪽을 본다',()=>{
+test('TV 부스에 들어온 한두 인물은 기존 방향과 무관하게 정면을 본다',async()=>{
  const source=fs.readFileSync('js/features/pixel-bible/world.js','utf8');
- assert.match(source,/function faceAcrossBooth\(a,b\).*left\.direction='right';right\.direction='left'/);
+ const {faceBoothFront}=await import('../js/features/pixel-bible/love-booth.js');
+ const left={direction:'up',idle:0},right={direction:'left',idle:0};
+ faceBoothFront([left]);assert.equal(left.direction,'down');
+ faceBoothFront([left,right]);assert.equal(left.direction,'down');assert.equal(right.direction,'down');
+ assert.match(source,/faceBoothFront\(\[n\]\);keepInView\(n\);startLoveBooth\(\)/);
+ assert.match(source,/faceBoothFront\(pair\);cancelTalk\(\);hideSpeech\(\);encounters\.clear\(\)/);
  assert.match(source,/const boothPair=\(\)=>npcs\.filter\(n=>n\.loveBooth===loveBooth\(\)&&!n\.creature\)\.sort\(\(a,b\)=>a\.x-b\.x\)/);
 });
 
