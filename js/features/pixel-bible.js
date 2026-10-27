@@ -132,7 +132,7 @@ async function openPixelBible(scope = {}) {
   landscapeReady.catch(() => {});
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=three-second-tread-huff-mark-1");
+    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=gimbap-world-chapter-mascot-1");
     if (!modal.dialog.isConnected) return;
     let disposeWorld = () => {};
     const worldOptions = {
