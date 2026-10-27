@@ -161,3 +161,11 @@
 .pb-verse-playback-controls button:disabled{opacity:.45}
 
 .pb-event-card .pb-event-actions{position:sticky;bottom:-10px;background:#112b34;z-index:2;padding:8px 0}
+
+/* Keep mobile Safari text sizing and world controls in the same layout space. */
+.pb-shell { -webkit-text-size-adjust: none; text-size-adjust: none; }
+.pb-world-head button { left: max(8px, var(--pb-safe-left)); right: auto; }
+.pb-toggle-right { top: max(8px, var(--pb-safe-top)); }
+.pb-toggle-left { top: calc(64px + var(--pb-safe-top)); }
+.pb-side { box-sizing: border-box; max-width: calc(50% - 16px); }
+.pb-shell .pb-encounter p { font-size: 13px; line-height: 1.35; }
