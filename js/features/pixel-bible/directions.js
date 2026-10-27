@@ -8,6 +8,22 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  if(direction==='left'){c.translate(24,0);c.scale(-1,1);}
  const r=(x,y,w,h,color)=>{c.fillStyle=color;const head=pose&&y<19,torso=pose&&y>=19&&y<31;c.fillRect(x+(head?(pose.headX||0):torso?(pose.bodyX||0):0),y+(head?(pose.headY||0):torso?(pose.bodyY||0):0),w,h);};
  const O='#302f35',skin='#f2d5af',hair=s.hood?s.coat:s.hair;
+ if(direction==='top'){
+  // A real overhead sprite for the collection turntable: crown and shoulders
+  // are visible from above, while facial features are intentionally hidden.
+  const bob=step?1:0;
+  r(5,37,14,1,'#183a3933');
+  const stride=step>0?1:step<0?-1:0;
+  r(7+stride,30,4,5,O);r(8+stride,31,2,3,skin);r(14-stride,30,4,5,O);r(15-stride,31,2,3,skin);
+  r(5,17+bob,14,15,O);r(6,18+bob,12,12,s.coat);r(8,20+bob,8,2,s.trim||'#b7a779');
+  r(3,19+bob-stride,4,8,O);r(4,20+bob-stride,2,6,s.coat);r(17,19+bob+stride,4,8,O);r(18,20+bob+stride,2,6,s.coat);
+  r(5,5,14,13,O);r(6,6,12,11,hair);r(8,8,8,7,skin);r(7,7,10,2,hair);r(7,14,10,3,hair);
+  if(s.halo){r(8,3,8,1,'#f4c65c');r(6,4,2,1,'#f4c65c');r(16,4,2,1,'#f4c65c');}
+  if(s.crown){r(7,4,10,2,O);r(8,4,8,1,s.trim||'#d9b568');for(const x of [7,11,15])r(x,2,2,2,'#d9b568');}
+  if(s.helmet){r(7,6,10,4,'#9bacae');r(8,7,8,2,'#d4dbca');}
+  drawPhysicalDetails(r,s,{side:false,back:true});
+  c.restore();return;
+ }
  const side=direction!=='up',bob=step?1:0;
  r(5,37,14,1,'#183a3933');
  const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};

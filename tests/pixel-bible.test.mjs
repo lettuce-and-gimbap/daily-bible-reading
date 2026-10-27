@@ -466,15 +466,22 @@ test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
  assert.equal(d(0,-1),'up');assert.equal(d(0,1),'down');assert.equal(d(-1,0),'left');assert.equal(d(1,0),'right');assert.equal(d(0,0,'up'),'up');
 });
 
-test('도감 캐릭터는 좌우 쓸기에 반시계·시계 방향으로 시점을 돌리고 위아래 쓸기로 앞뒤를 본다',async()=>{
- const {previewDirectionAfterSwipe:turn,previewDirectionFromControl,renderPersonPreview}=await import('../js/features/pixel-bible/collection-preview.js');
+test('도감 캐릭터는 버튼 없이 밀어서 앞·측면·뒷면·위 시점을 보고 탭으로 동작을 바꾼다',async()=>{
+ const {previewDirectionAfterSwipe:turn,previewDirectionFromControl,previewMotionAfterTap,renderPersonPreview}=await import('../js/features/pixel-bible/collection-preview.js');
  assert.equal(turn('down',40,0),'right');assert.equal(turn('right',40,0),'up');
  assert.equal(turn('down',-40,0),'left');assert.equal(turn('left',-40,0),'up');
- assert.equal(turn('down',0,-40),'up');assert.equal(turn('up',0,40),'down');
+ assert.equal(turn('down',0,-40),'top');assert.equal(turn('top',0,40),'down');
+ assert.equal(turn('down',150,0),'left','긴 가로 쓸기는 여러 시점을 넘긴다');
  assert.equal(turn('left',2,1),'left');
- for(const face of ['up','down','left','right'])assert.equal(previewDirectionFromControl(face),face);
+ for(const face of ['up','down','left','right','top'])assert.equal(previewDirectionFromControl(face),face);
  assert.equal(previewDirectionFromControl('invalid'),'down');
- assert.match(renderPersonPreview({name:'인물'}),/<canvas data-model-canvas/,'회전 화면은 이미지 재로딩 대신 캔버스에 즉시 그린다');
+ assert.deepEqual([previewMotionAfterTap('stand'),previewMotionAfterTap('walk'),previewMotionAfterTap('run')],['walk','run','stand']);
+ const markup=renderPersonPreview({name:'인물'});
+ assert.match(markup,/<canvas data-model-canvas/,'시점은 픽셀 스프라이트를 캔버스에서 다시 그린다');
+ assert.match(markup,/data-model-motion/,'현재 서기·걷기·달리기 동작을 표시한다');
+ assert.doesNotMatch(markup,/data-model-face|pb-person-model-controls/,'방향 선택 버튼을 렌더링하지 않는다');
+ const {readFile}=await import('node:fs/promises');const directions=await readFile(new URL('../js/features/pixel-bible/directions.js',import.meta.url),'utf8');
+ assert.match(directions,/direction==='top'/,'위에서 내려다보는 픽셀 스프라이트를 별도로 그린다');
 });
 
 test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한다',async()=>{

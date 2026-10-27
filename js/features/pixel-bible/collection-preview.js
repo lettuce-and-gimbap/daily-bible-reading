@@ -1,69 +1,95 @@
 import {drawPixelCharacter,characterStyle} from './art.js';
 import {wardrobeDetails} from './wardrobe.js';
 
-const LABELS={down:'정면',left:'왼쪽',up:'후면',right:'오른쪽'};
+const LABELS={down:'정면',left:'왼쪽 측면',up:'뒷면',right:'오른쪽 측면',top:'위에서 보기'};
 const TURN_ORDER=['down','right','up','left'];
+const MOTIONS=['stand','walk','run'];
+const MOTION_LABELS={stand:'서 있기',walk:'걷기',run:'달리기'};
+const EXPRESSIONS=['neutral','joy','gentle','worried','surprised','determined','sad'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
 export function previewDirectionAfterSwipe(direction,dx,dy,minDistance=8){
  if(Math.hypot(dx,dy)<minDistance)return direction;
  if(Math.abs(dx)>=Math.abs(dy)){
-  const index=Math.max(0,TURN_ORDER.indexOf(direction));
-  // A rightward swipe turns one quarter counterclockwise; a leftward swipe
-  // turns clockwise. The four rendered poses are the turntable's viewpoints.
-  return TURN_ORDER[(index+(dx>0?1:3))%TURN_ORDER.length];
+  const index=Math.max(0,TURN_ORDER.indexOf(direction==='top'?'down':direction));
+  const turns=Math.max(1,Math.floor(Math.abs(dx)/48));
+  return TURN_ORDER[(index+(dx>0?turns:-turns)+TURN_ORDER.length*2)%TURN_ORDER.length];
  }
- return dy<0?'up':'down';
+ // A vertical swipe deliberately selects a stable elevated or front view;
+ // it no longer moves the sprite out of its frame.
+ return dy<0?'top':'down';
 }
 export function previewDirectionFromControl(direction){return Object.hasOwn(LABELS,direction)?direction:'down';}
+export function previewMotionAfterTap(motion){return MOTIONS[(MOTIONS.indexOf(motion)+1)%MOTIONS.length];}
+
 export function renderPersonPreview(person){
- return `<section class="pb-person-model" data-person-model data-name="${esc(person.name)}" data-role="${esc(person.role||'')}" data-refs="${esc(JSON.stringify(person.refs||[]))}" data-creature="${person.creature?'true':'false'}" aria-label="${esc(person.name)} 캐릭터 방향 보기"><div class="pb-person-model-stage" tabindex="0" role="group" aria-label="캐릭터 또는 주변 빈 곳을 상하좌우로 끌어 시점을 돌려 보세요"><canvas data-model-canvas width="224" height="224" role="img" aria-label="${esc(person.name)} 픽셀 캐릭터 정면"></canvas><button class="pb-person-garment" type="button" data-garment-info aria-label="의복 특징 설명 보기" hidden>의복 특징</button><span class="pb-person-model-name">${esc(person.name)}</span></div><p class="pb-person-model-hint" data-model-status aria-live="polite">캐릭터나 주변 빈 곳을 좌우로 밀어 옆면을, 위아래로 밀어 뒤·앞면을 살펴보세요.</p><div class="pb-person-model-controls" role="group" aria-label="캐릭터 방향"><button class="pb-button" type="button" data-model-face="up" aria-label="뒤쪽 보기">↑<small>뒤</small></button><button class="pb-button" type="button" data-model-face="left" aria-label="왼쪽 보기">←<small>왼쪽</small></button><button class="pb-button" type="button" data-model-center>앞</button><button class="pb-button" type="button" data-model-face="right" aria-label="오른쪽 보기">→<small>오른쪽</small></button><button class="pb-button" type="button" data-model-face="down" aria-label="정면 보기">↓<small>앞</small></button></div><p class="pb-person-garment-note" data-garment-note hidden></p></section>`;
+ return `<section class="pb-person-model" data-person-model data-name="${esc(person.name)}" data-role="${esc(person.role||'')}" data-refs="${esc(JSON.stringify(person.refs||[]))}" data-creature="${person.creature?'true':'false'}" aria-label="${esc(person.name)} 캐릭터 동작과 시점 보기"><div class="pb-person-model-stage" tabindex="0" role="group" aria-label="캐릭터를 좌우로 밀어 회전하고 위아래로 밀어 위·정면 시점을 보세요. 짧게 누르면 서기·걷기·달리기를 바꿉니다."><canvas data-model-canvas width="288" height="288" role="img" aria-label="${esc(person.name)} 픽셀 캐릭터 정면"></canvas><button class="pb-person-garment" type="button" data-garment-info aria-label="의복 특징 설명 보기" hidden>의복 특징</button><span class="pb-person-model-name">${esc(person.name)}</span><span class="pb-person-model-motion" data-model-motion aria-live="polite">서 있기</span></div><p class="pb-person-model-hint" data-model-status aria-live="polite">좌우로 밀어 한 바퀴 보기 · 위로 밀어 내려다보기 · 짧게 눌러 서기/걷기/달리기 바꾸기</p><p class="pb-person-garment-note" data-garment-note hidden></p></section>`;
 }
-function drawPreview(character,person,position={x:0,y:0},direction='down',walkFrame=0){
- const c=character.getContext('2d');c.clearRect(0,0,character.width,character.height);c.imageSmoothingEnabled=false;
+
+function drawPreview(canvas,person,direction,walkFrame,expression,time){
+ const c=canvas.getContext('2d');if(!c)return;
+ c.clearRect(0,0,canvas.width,canvas.height);c.imageSmoothingEnabled=false;
  const style=characterStyle(person.name,0,person.role||'',person.refs||[],person.creature||false);
- drawPixelCharacter(c,style,112+position.x,184+position.y,{scale:3,direction,walkFrame,time:0});
+ drawPixelCharacter(c,style,canvas.width/2,canvas.height-36,{scale:3.5,direction,walkFrame,expression,time});
 }
+
 export function bindPersonPreview(root){
+ const disposers=[];
  for(const box of root.querySelectorAll('[data-person-model]')){
-  const stage=box.querySelector('.pb-person-model-stage'),canvas=box.querySelector('[data-model-canvas]'),garment=box.querySelector('[data-garment-info]'),note=box.querySelector('[data-garment-note]'),status=box.querySelector('[data-model-status]');
+  const stage=box.querySelector('.pb-person-model-stage'),canvas=box.querySelector('[data-model-canvas]'),garment=box.querySelector('[data-garment-info]'),note=box.querySelector('[data-garment-note]'),status=box.querySelector('[data-model-status]'),motionLabel=box.querySelector('[data-model-motion]');
+  if(!stage||!canvas||!status||!motionLabel)continue;
   const refs=JSON.parse(box.dataset.refs||'[]'),person={name:box.dataset.name,role:box.dataset.role,refs,creature:box.dataset.creature==='true'};
-  let position={x:0,y:0},direction='down',drag=null;
-  const update=(walkFrame=0)=>{
-   const style=characterStyle(person.name,0,person.role,person.refs,person.creature),details=wardrobeDetails(style,person.name,person.refs);
-   drawPreview(canvas,person,position,direction,walkFrame);canvas.setAttribute('aria-label',`${person.name} 픽셀 캐릭터 ${LABELS[direction]}`);
-   status.textContent=`현재 방향: ${LABELS[direction]} · 화살표를 누르거나 캐릭터를 밀어 방향을 바꿔 보세요.`;
-   box.querySelectorAll('[data-model-face]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.modelFace===direction)));
-   garment.hidden=!details.length;garment.textContent=details.length?`${details[0].label} · 자세히`:'';
-   box._garmentDetails=details;
+  let direction='down',motion='stand',drag=null,frame=0,expressionIndex=0,lastStep=0,lastExpression=0,raf=0,disposed=false;
+  const startTime=performance.now();
+  const garmentDetails=(()=>{const style=characterStyle(person.name,0,person.role,person.refs,person.creature);return wardrobeDetails(style,person.name,person.refs);})();
+  let lastStatus='',lastCanvasLabel='';
+  const render=()=>{
+   const now=performance.now();
+   drawPreview(canvas,person,direction,motion==='stand'?0:frame,EXPRESSIONS[expressionIndex],(now-startTime)/1000);
+   const canvasLabel=`${person.name} 픽셀 캐릭터 ${LABELS[direction]} · ${MOTION_LABELS[motion]} · 표정 ${EXPRESSIONS[expressionIndex]}`;
+   if(canvasLabel!==lastCanvasLabel){canvas.setAttribute('aria-label',canvasLabel);lastCanvasLabel=canvasLabel;}
+   if(motionLabel.textContent!==MOTION_LABELS[motion])motionLabel.textContent=MOTION_LABELS[motion];
+   const statusText=`${LABELS[direction]} · ${MOTION_LABELS[motion]} · 표정 ${EXPRESSIONS[expressionIndex]} · 좌우 밀기: 회전, 위 밀기: 위에서 보기, 짧게 누르기: 동작 변경`;
+   if(statusText!==lastStatus){status.textContent=statusText;lastStatus=statusText;}
+   garment.hidden=!garmentDetails.length;garment.textContent=garmentDetails.length?`${garmentDetails[0].label} · 자세히`:'';box._garmentDetails=garmentDetails;
+  };
+  const cycleMotion=()=>{motion=previewMotionAfterTap(motion);frame=0;render();};
+  const animate=now=>{
+   if(disposed||!box.isConnected){if(raf)cancelAnimationFrame(raf);return;}
+   const interval=motion==='run'?95:motion==='walk'?230:500;
+   if(now-lastStep>=interval){lastStep=now;if(motion!=='stand')frame=(frame+1)%4;}
+   if(now-lastExpression>=1550){lastExpression=now;expressionIndex=(expressionIndex+1)%EXPRESSIONS.length;}
+   render();raf=requestAnimationFrame(animate);
   };
   stage.addEventListener('pointerdown',e=>{
-   // On touch screens a pixel-exact alpha hit can miss due to fractional CSS
-   // scaling. The preview stage itself is a forgiving drag surface.
    if(e.target.closest('button'))return;
-   drag={id:e.pointerId,x:e.clientX,y:e.clientY,origin:{...position},direction,distance:0};
+   drag={id:e.pointerId,x:e.clientX,y:e.clientY,direction,distance:0};
    try{stage.setPointerCapture?.(e.pointerId);}catch(_){}e.preventDefault();
   });
   stage.addEventListener('pointermove',e=>{
    if(!drag||drag.id!==e.pointerId)return;
-   const rect=canvas.getBoundingClientRect(),factor=224/Math.max(1,rect.width),dx=(e.clientX-drag.x)*factor,dy=(e.clientY-drag.y)*factor;
-   position={x:Math.max(-58,Math.min(58,drag.origin.x+dx)),y:Math.max(-28,Math.min(28,drag.origin.y+dy))};
-   drag.distance=Math.hypot(dx,dy);direction=previewDirectionAfterSwipe(drag.direction,dx,dy);
-   update(Math.floor(drag.distance/7)%4||1);
+   const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
+   drag.distance=Math.max(drag.distance,Math.hypot(dx,dy));
+   direction=previewDirectionAfterSwipe(drag.direction,dx,dy,32);render();
   });
-  const finish=e=>{if(!drag||e.pointerId!==drag.id)return;drag=null;update();};
+  const finish=e=>{
+   if(!drag||e.pointerId!==drag.id)return;
+   const tapped=drag.distance<12;drag=null;if(tapped)cycleMotion();else render();
+  };
   stage.addEventListener('pointerup',finish);stage.addEventListener('pointercancel',finish);
   stage.addEventListener('keydown',e=>{
-   const delta={ArrowLeft:[-12,0],ArrowRight:[12,0],ArrowUp:[0,-10],ArrowDown:[0,10]}[e.key];if(!delta)return;
-   e.preventDefault();position={x:Math.max(-58,Math.min(58,position.x+delta[0])),y:Math.max(-28,Math.min(28,position.y+delta[1]))};direction=previewDirectionAfterSwipe(direction,...delta,1);update(1);
+   if(e.key===' '||e.key==='Enter'){e.preventDefault();cycleMotion();return;}
+   if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;
+   e.preventDefault();
+   const delta={ArrowLeft:[-40,0],ArrowRight:[40,0],ArrowUp:[0,-40],ArrowDown:[0,40]}[e.key];
+   direction=previewDirectionAfterSwipe(direction,...delta,8);render();
   });
   box.addEventListener('click',e=>{
-   const face=e.target.closest('[data-model-face]');
-   if(face&&box.contains(face)){e.preventDefault();e.stopPropagation();direction=previewDirectionFromControl(face.dataset.modelFace);update();return;}
-   const center=e.target.closest('[data-model-center]');
-   if(center&&box.contains(center)){e.preventDefault();e.stopPropagation();position={x:0,y:0};direction='down';update();}
+   if(e.target.closest('[data-garment-info]')){const detail=box._garmentDetails?.[0];if(!detail)return;note.hidden=false;note.innerHTML=`<b>${esc(detail.label)}</b><br>${esc(detail.text)}<small>${esc(detail.ref)}</small>`;}
   });
-  const center=box.querySelector('[data-model-center]');center.setAttribute('aria-label','캐릭터를 가운데로 옮기고 정면 보기');
-  garment.onclick=()=>{const detail=box._garmentDetails?.[0];if(!detail)return;note.hidden=false;note.innerHTML=`<b>${esc(detail.label)}</b><br>${esc(detail.text)}<small>${esc(detail.ref)}</small>`;};
-  update();
+  render();raf=requestAnimationFrame(animate);
+  const dispose=()=>{disposed=true;if(raf)cancelAnimationFrame(raf);stage.removeEventListener('pointerup',finish);stage.removeEventListener('pointercancel',finish);};
+  box._disposePersonPreview=dispose;disposers.push(dispose);
  }
+ return ()=>disposers.forEach(dispose=>dispose());
 }

@@ -132,7 +132,7 @@ async function openPixelBible(scope = {}) {
   landscapeReady.catch(() => {});
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=mention-only-cast-1");
+    const world = await import("./pixel-bible/world.js?v=10.9.1&rev=collection-turntable-motions-1");
     if (!modal.dialog.isConnected) return;
     let disposeWorld = () => {};
     const worldOptions = {

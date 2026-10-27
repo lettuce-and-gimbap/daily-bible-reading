@@ -50,7 +50,7 @@ import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity } from './identity.js';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
-import { renderPersonPreview } from "./collection-preview.js";
+import { renderPersonPreview } from "./collection-preview.js?v=turntable-motion-1";
 import { RUTH_SCENES, ELIJAH_SCENES, ALL_SCENES as REVIEWED_SCENES, scenesForChapters } from './scenes.js';
 export { RUTH_SCENES, ELIJAH_SCENES } from './scenes.js';
 // 공개 픽셀 월드: 엔진/외부 이미지 없이 재사용하는 경량 Canvas 월드.
