@@ -40,6 +40,9 @@ const CHAPTERS = {
   // their ancestors or descendants into the scene.
   'exo.6': ['아므람', '요게벳', '엘르아살', '비느하스', '고라'],
   'lev.24': ['슬로밋'],
+  'num.10': ['르우엘'],
+  'num.12': ['구스 여인'],
+  'deu.9': ['아론'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],

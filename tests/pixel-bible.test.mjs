@@ -132,6 +132,24 @@ test('레위기 24장에서 이름만 언급된 모독자의 어머니는 현장
  assert.ok(model.cast.some(p=>p.name==='모세'));
 });
 
+test('민수기 10·12장에서 관계 설명에만 나오는 르우엘과 구스 여인은 장면 인물로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/num.json',import.meta.url),'utf8'));
+ const ch10=buildWorldModel([{code:'num',name:'민수기',chap:10,data:summary.chapters[10]}]);
+ const ch12=buildWorldModel([{code:'num',name:'민수기',chap:12,data:summary.chapters[12]}]);
+ assert.ok(!ch10.cast.some(p=>p.name==='르우엘'));
+ assert.ok(ch10.relations.some(r=>r.to==='르우엘'));
+ assert.ok(!ch12.cast.some(p=>p.name==='구스 여인'));
+ assert.ok(ch12.cast.some(p=>p.name==='모세'));
+});
+
+test('신명기 9장에서 금송아지 사건을 회고할 뿐인 아론은 현장 캐릭터로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/deu.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'deu',name:'신명기',chap:9,data:summary.chapters[9]}]);
+ assert.ok(!model.cast.some(p=>p.name==='아론'));
+ assert.ok(model.relations.some(r=>r.from==='아론'&&r.to==='모세'),'역사적 가족 관계 설명은 보존한다');
+ assert.ok(model.cast.some(p=>p.name==='모세'));
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
  const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){
