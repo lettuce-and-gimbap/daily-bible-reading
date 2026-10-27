@@ -179,6 +179,8 @@ test('도감 인물은 쉬운 역할 설명을 보여 주고 열자마자 걷는
  const {renderPersonPreview,easyPersonDescription}=await import('../js/features/pixel-bible/collection-preview.js?rev=turntable-motion-walk-start-2');
  assert.match(easyPersonDescription('다르단','앗수르의 장수'),/왕의 명령을 받아 군대를 이끌/);
  assert.match(easyPersonDescription('이사야','선지자'),/하나님의 말씀을 전하고/);
+ assert.match(easyPersonDescription('요시야','유다 왕'),/나라를 다스리며/);
+ assert.match(easyPersonDescription('사신','왕에게 보고한 사신'),/왕에게 보고한 사신으로 나와요/);
  assert.match(renderPersonPreview({name:'다르단'}),/data-model-motion[^>]*>걷기</);
 });
 
