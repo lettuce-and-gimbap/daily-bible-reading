@@ -40,6 +40,7 @@ import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
 import { relationshipLinks, relationshipFocus, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
+import { isMentionOnlyPerson, withoutMentionOnlyActors } from './mention-only.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
 import { scopeChapterSummary } from './qt-scope.js';
@@ -123,8 +124,9 @@ export function buildWorldModel(chapters) {
     for (const person of chapterPeople(data,{name,code,chap})) {
       // 하나님/성령을 무작위 인간 NPC로 그리지 않는다.
       if (/^(하나님|여호와|성령|주님)$/.test(person.name)) continue;
-      // 인물 색인에 이름만 등장한 역사 인물은 배경 설명에 남기되 장면 캐릭터로 세우지 않는다.
-      if (/본문에 이름이 언급/.test(person.role||'')) continue;
+      // 본문 인물 색인이나 명시 검토 목록에서 현재 장면에 없다고 확인된 인물은
+      // 설명·관계 자료에는 남아도 월드 캐릭터로 세우지 않는다.
+      if (isMentionOnlyPerson(person,{code,chapter:chap})) continue;
       const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
       const personKey=`${person.name}:${identity.id}`;
       if (!people.has(personKey)) people.set(personKey, { ...person, identity, refs: [], roles: [] });
@@ -143,10 +145,15 @@ export function buildWorldModel(chapters) {
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
   const sourceScenes=chapters.flatMap(c=>c.data?.eventScenes||[]);
+  const mentionOnlyNamesFor=scene=>{
+    const chapter=chapters.find(c=>c.code===scene.code&&c.chap===scene.chapter);
+    return chapter?chapterPeople(chapter.data,{name:chapter.name,code:chapter.code,chap:chapter.chap}).filter(person=>isMentionOnlyPerson(person,{code:chapter.code,chapter:chapter.chap})).map(person=>person.name):[];
+  };
   // A hand-authored scene may replace an identical restored range without losing its index link.
-  const dedicated=scenesForChapters(chapters).map(scene=>({...scene,sourceUnits:[...new Set([...(scene.sourceUnits||[]),...sourceScenes.filter(s=>s.code===scene.code&&s.chapter===scene.chapter&&s.ref===scene.ref).flatMap(s=>s.sourceUnits||[])])]}));
-  const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&s.actors.every(name=>cast.some(p=>p.name===name))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)));
-  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>({...enhanceScene(s,cast),verseClips:chapters.filter(c=>c.code===s.code&&c.chap===s.chapter).flatMap(c=>verseClipsForScene(s,c.data?.verseClips||[],c.verses||[]))})), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
+  const filterMentionActors=scene=>withoutMentionOnlyActors(scene,mentionOnlyNamesFor(scene));
+  const dedicated=scenesForChapters(chapters).map(scene=>filterMentionActors({...scene,sourceUnits:[...new Set([...(scene.sourceUnits||[]),...sourceScenes.filter(s=>s.code===scene.code&&s.chapter===scene.chapter&&s.ref===scene.ref).flatMap(s=>s.sourceUnits||[])])]}));
+  const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)).map(filterMentionActors).filter(s=>s.actors.every(name=>cast.some(p=>p.name===name))));
+  return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>({...enhanceScene(s,cast),verseClips:chapters.filter(c=>c.code===s.code&&c.chap===s.chapter).flatMap(c=>verseClipsForScene(s,c.data?.verseClips||[],c.verses||[]).map(filterMentionActors))})), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };
 }
 
 // 명단을 교체하지 않고 통독 분량의 모든 인물을 함께 유지한다.

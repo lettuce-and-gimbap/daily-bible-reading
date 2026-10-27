@@ -5,6 +5,7 @@ import { buildWorldModel, findPath, clientToCanvasPoint, touchSlopPixels, initia
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
 import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
+import {isMentionOnlyPerson,mentionOnlyChapterNames} from '../js/features/pixel-bible/mention-only.js';
 
 test('픽셀바이블의 표기 범위는 현재 월드 장을 기본값으로 보여준다',()=>{
  assert.deepEqual(initialWorldRange([{code:'2ki',chap:18}]),{code:'2ki',start:18,end:18});
@@ -26,6 +27,46 @@ test('열왕기하 17–21장의 언급 인물 모세는 현장 캐릭터로 나
  assert.equal(model.cast.filter(p=>p.name==='김밥').length,1);
  assert.equal(model.cast.filter(p=>p.name==='엘리아김(힐기야의 아들)').length,1,'반복 출현하는 엘리아김도 월드에 한 명만 둔다');
  assert.match(summary.chapters[18].story,/모세/,'역사적 언급은 본문 설명에서 유지한다');
+});
+
+test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
+ const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
+ for(const [code,chapter,name] of examples){
+  assert.equal(isMentionOnlyPerson({name},{code,chapter}),true,`${code} ${chapter} ${name}`);
+  const summary=JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));
+  const source=JSON.parse(fs.readFileSync(new URL(`../data/pixel-bible/events/${code}.json`,import.meta.url),'utf8'));
+  const base=summary.chapters[chapter];
+  const people=[...(base.people||[]),...(source.additionalPeople?.[chapter]||[])];
+  assert.ok(people.some(p=>p.name===name),`검토 목록의 인물 기록이 ${code} ${chapter}에 존재해야 함`);
+  const eventScenes=[...(source.scenes||[]),...(source.restoredScenes||[])].filter(s=>s.chapter===chapter);
+  const model=buildWorldModel([{code,name:code,chap:chapter,data:{...base,people,eventScenes}}]);
+  assert.ok(!model.cast.some(p=>p.name===name),`${code} ${chapter} ${name}은 월드 출연자가 아님`);
+  assert.ok(model.scenes.every(s=>!s.actors.includes(name)),`${code} ${chapter} ${name}은 장면 배우가 아님`);
+  assert.ok(model.scenes.every(s=>(s.verseClips||[]).every(clip=>!clip.actors.includes(name))),`${code} ${chapter} ${name}은 절별 재생에서도 배우가 아님`);
+ }
+});
+
+test('언급 전용 검토 목록은 존재하는 인물 기록만 가리킨다',()=>{
+ for(const [key,names] of Object.entries(mentionOnlyChapterNames)){
+  const [code,chapter]=key.split('.');
+  const summary=JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));
+  const recorded=summary.chapters[chapter]?.people||[];
+  assert.ok(recorded.length,`${key} 검토 장이 원본 인물 DB에 있어야 함`);
+  if(names.includes('*')){
+   const model=buildWorldModel([{code,name:code,chap:Number(chapter),data:summary.chapters[chapter]}]);
+   for(const person of recorded)assert.ok(!model.cast.some(p=>p.name===person.name),`${key} 족보 인물 ${person.name}이 현재 장면 배우로 나오면 안 됨`);
+   continue;
+  }
+  for(const name of names)assert.ok(recorded.some(p=>p.name===name),`${key} ${name} 검토 항목이 원본 인물 DB에 있어야 함`);
+ }
+});
+
+test('본문 인물 색인의 언급 표시는 별도 사건 장면 배우 목록에도 적용한다',()=>{
+ const mention={name:'언급된 조상',role:'본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.'};
+ const scene={id:'mention-check',code:'test',chapter:1,title:'과거 이야기',actors:[mention.name],object:'scroll',ref:'시험 1:1',verseNumbers:[1],lines:[],study:'설명',animation:{version:2,mode:'illustration',motif:'symbolic',lead:null,target:null,setting:'vision',effect:'symbol',emotion:'neutral',prop:'scroll',beats:[],duration:1}};
+ const model=buildWorldModel([{code:'test',name:'시험',chap:1,data:{people:[mention],eventScenes:[scene]}}]);
+ assert.ok(!model.cast.some(person=>person.name===mention.name));
+ assert.deepEqual(model.scenes.find(item=>item.id===scene.id).actors,[]);
 });
 
 test('김밥 캐릭터는 64×64 원본 픽셀을 90도씩 돌려 구른다',async()=>{
@@ -699,7 +740,8 @@ test('보강 장면의 배우는 해당 장에 있고 인사·청취자는 잘�
  for(const scene of [...ALL_SCENES,...OBJECT_SCENES]){
   const book=JSON.parse(await fs.readFile(new URL(`../data/summary/${scene.code}.json`,import.meta.url)));
   const model=buildWorldModel([{code:scene.code,name:scene.code,chap:scene.chapter,data:book.chapters[scene.chapter]}]);
-  for(const name of scene.actors)assert.ok(model.cast.some(p=>p.name===name),`${scene.id}: ${name}`);
+  const rendered=model.scenes.find(s=>s.id===scene.id);assert.ok(rendered,`${scene.id} remains a scene`);
+  for(const name of rendered.actors)assert.ok(model.cast.some(p=>p.name===name),`${scene.id}: rendered actor ${name}`);
   assert.ok(scene.lines.length>=2&&scene.ref);
   assert.ok(model.scenes.some(s=>s.id===scene.id));
  }
