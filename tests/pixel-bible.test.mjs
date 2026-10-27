@@ -150,8 +150,29 @@ test('신명기 9장에서 금송아지 사건을 회고할 뿐인 아론은 현
  assert.ok(model.cast.some(p=>p.name==='모세'));
 });
 
+test('여호수아의 군대 장관은 영적 존재이며 과거 모세는 현장 배우가 아니다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/jos.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([12,14].map(chap=>({code:'jos',name:'여호수아',chap,data:summary.chapters[chap]})));
+ assert.ok(!model.cast.some(p=>p.name==='모세'));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('여호와의 군대 장관',{code:'jos',chapter:5}).kind,'spiritual');
+});
+
+test('사사기의 여룹바알과 기드온은 한 인물이며 룻 족보 인물은 현장 배우가 아니다',async()=>{
+ const jdg=JSON.parse(fs.readFileSync(new URL('../data/summary/jdg.json',import.meta.url),'utf8'));
+ const model=buildWorldModel(Object.entries(jdg.chapters).map(([chap,data])=>({code:'jdg',name:'사사기',chap:Number(chap),data})));
+ assert.equal(model.cast.filter(p=>p.name==='기드온').length,1);
+ assert.ok(model.cast.find(p=>p.name==='기드온').refs.some(ref=>ref==='사사기 6장'));
+ assert.ok(model.cast.find(p=>p.name==='기드온').refs.some(ref=>ref==='사사기 8장'));
+ const rut=JSON.parse(fs.readFileSync(new URL('../data/summary/rut.json',import.meta.url),'utf8'));
+ const ch4=buildWorldModel([{code:'rut',name:'룻기',chap:4,data:rut.chapters[4]}]);
+ for(const name of ['베레스','이새','다윗'])assert.ok(!ch4.cast.some(p=>p.name===name));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('여룹바알',{code:'jdg',chapter:8}).id,resolveIdentity('기드온',{code:'jdg',chapter:6}).id);
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
- const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
+ const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['jos',12,'모세'],['jos',14,'모세'],['jdg',8,'아비멜렉'],['jdg',9,'기드온'],['rut',1,'엘리멜렉'],['rut',1,'말론'],['rut',1,'기룐'],['rut',2,'엘리멜렉'],['rut',4,'베레스'],['rut',4,'이새'],['rut',4,'다윗'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){
   assert.equal(isMentionOnlyPerson({name},{code,chapter}),true,`${code} ${chapter} ${name}`);
   const summary=JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));

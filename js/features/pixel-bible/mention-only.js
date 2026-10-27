@@ -43,6 +43,18 @@ const CHAPTERS = {
   'num.10': ['르우엘'],
   'num.12': ['구스 여인'],
   'deu.9': ['아론'],
+  // Joshua recounts Moses' completed conquest and oath; he is not present in
+  // either the summary of the campaigns or Caleb's later land request.
+  'jos.12': ['모세'],
+  'jos.14': ['모세'],
+  // Gideon is recounted as deceased in Judges 8–9. Abimelech's father in
+  // chapter 8, Naomi's dead family in Ruth 1–2, and Ruth 4's genealogy are
+  // not present-day actors in those scenes.
+  'jdg.8': ['아비멜렉'],
+  'jdg.9': ['기드온'],
+  'rut.1': ['엘리멜렉', '말론', '기룐'],
+  'rut.2': ['엘리멜렉'],
+  'rut.4': ['베레스', '이새', '다윗'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],
