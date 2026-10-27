@@ -228,7 +228,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"warning","lead":"엘리사","target":"여호람(아합의 아들)","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"stern","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"warning","lead":"엘리사","target":"요람(아합의 아들)","mode":"reconstruction","setting":"courtyard","effect":"speech","emotion":"stern","prop":"water-supply","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"turn","duration":1.2,"actor":"엘리사"},{"action":"speak","duration":1.5,"actor":"엘리사"},{"action":"point","duration":1.8,"actor":"엘리사"},{"action":"listen","duration":1.5,"actor":"엘리사"},{"action":"lower","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:13-14","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-3-4",
@@ -2361,7 +2361,7 @@
       "actors": [
         "메사",
         "모압 왕의 맏아들",
-        "여호람(아합의 아들)",
+        "요람(아합의 아들)",
         "여호사밧"
       ],
       "object": "scene-marker",
@@ -2998,7 +2998,7 @@
       "title": "아침에 골짜기에 가득 찬 물",
       "actors": [
         "엘리사",
-        "여호람(아합의 아들)",
+        "요람(아합의 아들)",
         "여호사밧",
         "에돔 왕"
       ],
@@ -3017,7 +3017,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명하는 공통 장면 표지예요. 상징·비유·환상은 실제 행동으로 오해하지 않도록 상징적으로 표현해요.",
-      "animation": {"version":2,"motif":"recede","lead":"엘리사","target":"여호람(아합의 아들)","mode":"reconstruction","setting":"water","effect":"recede","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"listen","duration":1.2,"actor":"엘리사"},{"action":"point","duration":1.5,"actor":"엘리사"},{"action":"look","duration":1.8,"actor":"엘리사"},{"action":"bow","duration":1.5,"actor":"엘리사"},{"action":"stand","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
+      "animation": {"version":2,"motif":"recede","lead":"엘리사","target":"요람(아합의 아들)","mode":"reconstruction","setting":"water","effect":"recede","emotion":"joy","prop":"scene-marker","beats":[{"action":"look","duration":1,"actor":"엘리사"},{"action":"listen","duration":1.2,"actor":"엘리사"},{"action":"point","duration":1.5,"actor":"엘리사"},{"action":"look","duration":1.8,"actor":"엘리사"},{"action":"bow","duration":1.5,"actor":"엘리사"},{"action":"stand","duration":1.2,"actor":"엘리사"}],"duration":8.2,"support":null,"ref":"열왕기하 3:18-20","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"}
     },
     {
       "id": "ot-2ki-extra-5-1",

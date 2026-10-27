@@ -4,14 +4,14 @@
   "stats": {
     "books": 66,
     "chapters": 1189,
-    "sourceLabels": 2249,
+    "sourceLabels": 2263,
     "dedicatedProfiles": 100,
     "labelsWithProfile": 100,
     "identityRecordsByKind": {
       "unresolved": 2553,
       "group": 253,
-      "person": 109,
-      "animal": 8,
+      "person": 110,
+      "animal": 7,
       "spiritual": 6,
       "plant": 1
     }
@@ -29206,7 +29206,7 @@
     {
       "name": "소",
       "roles": [
-        "호세아가 의지한 애굽 왕"
+        "호세아가 사신을 보낸 애굽 왕"
       ],
       "refs": [
         "2ki.17"
@@ -29215,9 +29215,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "animal",
-          "id": "animal:ox",
-          "status": "reviewed-rule",
+          "kind": "person",
+          "id": "person:egyptian-king-so",
+          "status": "verse-reviewed",
           "refs": [
             "2ki.17"
           ]
@@ -43306,30 +43306,6 @@
       ]
     },
     {
-      "name": "여호람(아합의 아들)",
-      "roles": [
-        "모압을 치러 간 이스라엘 왕",
-        "형제를 이어 왕이 된 사람"
-      ],
-      "refs": [
-        "2ki.1",
-        "2ki.3"
-      ],
-      "appearance": "generic",
-      "review": "unreviewed-label",
-      "identities": [
-        {
-          "kind": "unresolved",
-          "id": "unresolved:여호람(아합의 아들):2ki",
-          "status": "needs-review",
-          "refs": [
-            "2ki.1",
-            "2ki.3"
-          ]
-        }
-      ]
-    },
-    {
       "name": "여호람(여호사밧의 아들)",
       "roles": [
         "아합 집을 닮은 유다 왕",
@@ -48008,11 +47984,15 @@
       "name": "요람(아합의 아들)",
       "roles": [
         "나봇의 밭에서 죽은 이스라엘 왕",
+        "모압을 치러 간 이스라엘 왕",
         "싸움에서 다친 이스라엘 왕",
-        "함께 싸운 이스라엘 왕"
+        "함께 싸운 이스라엘 왕",
+        "형제를 이어 왕이 된 사람"
       ],
       "refs": [
         "2ch.22",
+        "2ki.1",
+        "2ki.3",
         "2ki.8",
         "2ki.9"
       ],
@@ -48032,6 +48012,8 @@
           "id": "unresolved:요람(아합의 아들):2ki",
           "status": "needs-review",
           "refs": [
+            "2ki.1",
+            "2ki.3",
             "2ki.8",
             "2ki.9"
           ]

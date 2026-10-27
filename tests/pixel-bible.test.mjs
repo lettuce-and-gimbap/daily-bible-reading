@@ -32,6 +32,17 @@ test('열왕기하 17–21장의 언급 인물 모세는 현장 캐릭터로 나
  assert.match(summary.chapters[18].story,/모세/,'역사적 언급은 본문 설명에서 유지한다');
 });
 
+test('열왕기하에서 요람 표기를 통합하고 그달리야를 찾아온 지휘관은 현장에 둔다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/2ki.json',import.meta.url),'utf8'));
+ const chapters=[1,3,8,9].map(chap=>({code:'2ki',name:'열왕기하',chap,data:summary.chapters[chap]}));
+ const model=buildWorldModel(chapters);
+ assert.equal(model.cast.filter(p=>p.name==='요람(아합의 아들)').length,1);
+ assert.equal(model.cast.some(p=>p.name==='여호람(아합의 아들)'),false);
+ const end=buildWorldModel([{code:'2ki',name:'열왕기하',chap:25,data:summary.chapters[25]}]);
+ assert.ok(end.cast.some(p=>p.name==='요하난'));
+ assert.ok(end.cast.some(p=>p.name==='야아사니야'));
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
  const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){
