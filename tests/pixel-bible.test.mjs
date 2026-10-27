@@ -73,12 +73,13 @@ test('본문 인물 색인의 언급 표시는 별도 사건 장면 배우 목�
 });
 
 test('김밥은 16프레임으로 선명하게 구르고 음식 친구들은 고유 도안을 쓴다',async()=>{
- const {GIMBAP_FRAME_SIZE,GIMBAP_ROLL_FRAMES,gimbapRollAngle,gimbapRollSign,advanceGimbapRoll,rotateGimbapPixels}=await import('../js/features/pixel-bible/gimbap-art.js');
+ const {GIMBAP_FRAME_SIZE,GIMBAP_ROLL_FRAMES,gimbapRollAngle,gimbapRollSign,gimbapRollAxis,advanceGimbapRoll,rotateGimbapPixels}=await import('../js/features/pixel-bible/gimbap-art.js');
  assert.equal(GIMBAP_FRAME_SIZE,64);
  assert.equal(GIMBAP_ROLL_FRAMES,16);
  assert.ok(Math.abs(gimbapRollAngle(1)-Math.PI/8)<1e-10);
  assert.ok(Math.abs(gimbapRollAngle(8)-Math.PI)<1e-10);
  assert.deepEqual(['left','right','up','down'].map(gimbapRollSign),[-1,1,-1,1]);
+ assert.deepEqual(['left','right','up','down'].map(gimbapRollAxis),['plane','plane','vertical','vertical']);
  assert.deepEqual(['left','right','up','down'].map(direction=>advanceGimbapRoll(0,.25,direction)),[-2,2,-2,2]);
  const pixels=new Uint8ClampedArray(5*5*4);pixels.set([18,52,86,255],(2*5+3)*4);
  const turned=rotateGimbapPixels({width:5,height:5,data:pixels},Math.PI/2);
@@ -87,6 +88,11 @@ test('김밥은 16프레임으로 선명하게 구르고 음식 친구들은 고
  const centerPixels=new Uint8ClampedArray(64*64*4);centerPixels.set([180,90,30,255],(36*64+32)*4);
  const centered=rotateGimbapPixels({width:64,height:64,data:centerPixels},Math.PI/4,32,36);
  assert.deepEqual([...centered.data.slice((36*64+32)*4,(36*64+32)*4+4)],[180,90,30,255],'회전 중심을 김밥의 실제 중심으로 둬 바닥 기준이 출렁이지 않게 한다');
+ const mark=new Uint8ClampedArray(64*64*4);mark.set([7,111,203,255],(26*64+44)*4);
+ const findMark=image=>{const points=[];for(let y=0;y<64;y++)for(let x=0;x<64;x++)if(image.data[(y*64+x)*4]===7&&image.data[(y*64+x)*4+3]===255)points.push({x,y});return points;};
+ const upTumble=findMark(rotateGimbapPixels({width:64,height:64,data:mark},-Math.PI/4,32,36,'vertical'));
+ const downTumble=findMark(rotateGimbapPixels({width:64,height:64,data:mark},Math.PI/4,32,36,'vertical'));
+ assert.notDeepEqual(upTumble,downTumble,'위쪽·아래쪽 굴림은 서로 반대 방향의 깊이 이동을 보여야 한다');
  const {characterStyle}=await import('../js/features/pixel-bible/art.js');
  assert.equal(characterStyle('김밥',0,'월드의 창작 길동무',[]).gimbap,true);
  assert.equal(characterStyle('상추',0,'월드의 창작 길동무',[]).foodMascot,'상추');
