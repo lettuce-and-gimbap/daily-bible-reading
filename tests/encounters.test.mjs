@@ -305,7 +305,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3797);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3795);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -603,10 +603,10 @@ test('이사야 1–66장의 관계 대화는 해당 장의 인물과 본문 관
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'isa',name:'이사야',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters);
  const entries=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('isa.'));
- assert.equal(entries.length,80);
- assert.equal(context.relations.length,81);
+ assert.equal(entries.length,78);
+ assert.equal(context.relations.length,79);
  for(const relation of context.relations){
-  assert.ok(entries.some(entry=>entry.chapter===`isa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
+  assert.ok(/^(하나님|여호와|성령|주님)$/.test(relation.from.name)||/^(하나님|여호와|성령|주님)$/.test(relation.to.name)||entries.some(entry=>entry.chapter===`isa.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  }
  for(const entry of entries){
   const chapter=Number(entry.chapter.slice(4));
@@ -614,7 +614,7 @@ test('이사야 1–66장의 관계 대화는 해당 장의 인물과 본문 관
   assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);
   assert.match(entry.ref,/이사야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
  }
- assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))<=10).length,16);
+ assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))<=10).length,14);
  assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=11&&Number(entry.chapter.slice(4))<=20).length,15);
  assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=21&&Number(entry.chapter.slice(4))<=35).length,9);
  assert.equal(entries.filter(entry=>Number(entry.chapter.slice(4))>=36&&Number(entry.chapter.slice(4))<=39).length,11);

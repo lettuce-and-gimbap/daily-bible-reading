@@ -119,17 +119,15 @@
       ],
       "people": [
         {"name":"이사야","role":"포도원 노래를 부른 선지자","weight":3},
-        {"name":"포도원 주인","role":"정성껏 가꾼 사랑하는 자","weight":3},
         {"name":"이스라엘 족속","role":"들포도를 맺은 포도원","weight":3},
         {"name":"탐욕스러운 자들","role":"가옥과 밭을 독차지한 자","weight":2},
         {"name":"먼 나라의 군대","role":"휘파람에 달려올 민족","weight":2},
         {"name":"하나님","role":"포도원의 주인","weight":3}
       ],
       "rels": [
-        {"from":"포도원 주인","to":"이스라엘 족속","label":"가꾼 주인","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"주인은 기름진 땅을 고르고 돌을 골라내고 좋은 나무를 심고 망대까지 세워 모든 정성을 쏟았어요. 하나님이 이스라엘에게 해 주신 일을 보여 줘요."},
+        {"from":"하나님","to":"이스라엘 족속","label":"포도원을 가꾸신 분","kind":"ally","directed":true,"weight":3,"verses":"1-7","note":"이사야의 노래에서 포도원 주인은 하나님을 가리켜요. 7절이 만군의 여호와의 포도원은 이스라엘 족속이라고 밝혀, 하나님이 백성에게 베푸신 돌봄과 정의의 열매를 요구하신 일을 비유해요."},
         {"from":"이스라엘 족속","to":"하나님","label":"들포도 맺은 백성","kind":"conflict","directed":true,"weight":3,"verses":"4, 7","note":"좋은 포도를 기대했지만 들포도가 열렸어요. 하나님은 정의를 바랐는데 포학이, 공의를 바랐는데 부르짖음이 있었어요."},
-        {"from":"하나님","to":"먼 나라의 군대","label":"불러오실 분","kind":"other","directed":true,"weight":2,"verses":"26","note":"하나님이 깃발을 세우고 먼 나라를 부르세요. 이 나라들을 심판의 도구로 읽는 견해가 많아요."},
-        {"from":"이사야","to":"포도원 주인","label":"노래한 친구","kind":"ally","directed":true,"weight":1,"verses":"1","note":"이사야는 사랑하는 이의 포도원을 노래하는 것처럼 시작해요. 듣는 사람에게 스스로 판단해 보라고 하세요."}
+        {"from":"하나님","to":"먼 나라의 군대","label":"불러오실 분","kind":"other","directed":true,"weight":2,"verses":"26","note":"하나님이 깃발을 세우고 먼 나라를 부르세요. 이 나라들을 심판의 도구로 읽는 견해가 많아요."}
       ],
       "places": [
         {"name":"포도원","where":"기름진 산의 포도원","what":"하나님이 이스라엘을 심으신 기름진 언덕의 포도원","weight":3}
@@ -473,12 +471,12 @@
       "people": [
         {"name":"구스","role":"나일 상류의 강성한 백성","weight":3},
         {"name":"구스의 사신들","role":"갈대배로 온 사람들","weight":2},
-        {"name":"이사야","role":"돌아가라 전한 선지자","weight":1},
+        {"name":"이사야","role":"사신들에게 주님의 말씀을 전한 선지자","weight":1},
         {"name":"하나님","role":"처소에서 조용히 보시는 분","weight":3}
       ],
       "rels": [
         {"from":"구스의 사신들","to":"구스","label":"보냄받은 사신","kind":"ally","directed":true,"weight":2,"verses":"2","note":"갈대 배를 물에 띄워 민첩한 사신을 보내는 모습이에요."},
-        {"from":"이사야","to":"구스의 사신들","label":"돌려보낸 선지자","kind":"other","directed":true,"weight":1,"verses":"2","note":"이사야는 민첩한 사절들에게 강들이 나누인 나라로 가라고 해요."},
+        {"from":"이사야","to":"구스의 사신들","label":"사신에게 갈 길을 전함","kind":"other","directed":true,"weight":1,"verses":"2","note":"이사야 18장 2절은 민첩한 사절들에게 강들이 나누인 나라로 가라고 전해요. 본문에는 사신을 본국으로 돌려보냈다는 설명이 없어요."},
         {"from":"구스","to":"하나님","label":"예물을 가져올 백성","kind":"ally","directed":true,"weight":2,"verses":"7","note":"그때 장대하고 준수한 백성이 시온 산에 와서 여호와께 예물을 드려요."}
       ],
       "places": [
