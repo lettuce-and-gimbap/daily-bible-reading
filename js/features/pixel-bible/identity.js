@@ -2,8 +2,21 @@ import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
 const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|어린 양)$/;
-const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|자들/;
+const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return '여호야긴(여고냐)';
+  if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return '시드기야(유다 왕)';
+  if(code==='jer'&&[40,41].includes(Number(chapter))&&name==='이스마엘')return '이스마엘(느다냐의 아들)';
+  if(code==='jer'&&Number(chapter)===51&&name==='스라야')return '스라야(네리야의 아들)';
+  if(code==='jer'&&Number(chapter)===52&&name==='스라야')return '스라야(대제사장)';
+  if(code==='lam'&&[1,2].includes(Number(chapter))&&['예루살렘(시온)','딸 시온'].includes(name)||code==='ezk'&&Number(chapter)===16&&name==='예루살렘')return '예루살렘(시온)';
+  if(code==='lam'&&[4,5].includes(Number(chapter))&&['시온의 아들들','유다 백성'].includes(name))return '유다 백성';
+  if(code==='lam'&&Number(chapter)===4&&name==='기름 부음 받은 왕')return '시드기야(유다 왕)';
+  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 칠십 명'].includes(name))return '에스겔 앞에 모인 장로들';
+  if(code==='ezk'&&[9,10].includes(Number(chapter))&&['베옷 입은 서기관','베옷 입은 사람'].includes(name))return '세마포 입은 사람';
+  if(code==='ezk'&&Number(chapter)>=40&&Number(chapter)<=48&&['놋 같은 사람','측량하는 사람'].includes(name))return '성전 환상의 안내자';
+  if(code==='dan'&&['다니엘','벨드사살','다니엘(벨드사살)'].includes(name))return '다니엘';
+  if(code==='dan'&&name==='가브리엘')return '가브리엘';
   if(code==='gen'&&name==='아브람')return '아브라함';
   if(code==='gen'&&name==='사래')return '사라';
   if(code==='gen'&&name==='라멕'&&Number(chapter)===4)return '라멕(가인 계열)';
@@ -45,8 +58,27 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(spiritual.test(name))return id('spiritual',name);
+  if(name==='미가엘')return id('spiritual','michael');
+  if(name==='가브리엘')return id('spiritual','gabriel');
+  if(code==='dan'&&['거룩한 순찰자','넷째 사람','바사 왕국의 군주','헬라 군주','세마포 입은 이','한 천사','인자 같은 이'].includes(name))return id('spiritual',`daniel-vision:${name}`);
+  if(code==='dan'&&['다니엘','벨드사살','다니엘(벨드사살)'].includes(name))return {...id('person','daniel'),canonicalName:'다니엘'};
+  if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return {...id('person','jehoiachin-king-of-judah'),canonicalName:'여호야긴(여고냐)'};
+  if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return {...id('person','zedekiah-king-of-judah'),canonicalName:'시드기야(유다 왕)'};
+  if(code==='lam'&&[1,2].includes(Number(chapter))&&['예루살렘(시온)','딸 시온'].includes(name)||code==='ezk'&&Number(chapter)===16&&name==='예루살렘')return {...id('group','jerusalem-personified-community'),canonicalName:'예루살렘(시온)',mergeAliases:true};
+  if(code==='lam'&&[4,5].includes(Number(chapter))&&['시온의 아들들','유다 백성'].includes(name))return {...id('group','lamentations-judah-survivors'),canonicalName:'유다 백성',mergeAliases:true};
+  if(code==='lam'&&Number(chapter)===4&&name==='에돔')return id('group','edom');
+  if(code==='lam'&&Number(chapter)===4&&name==='기름 부음 받은 왕')return {...id('person','zedekiah-king-of-judah'),canonicalName:'시드기야(유다 왕)'};
+  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 칠십 명'].includes(name))return {...id('group','ezekiel-elders-in-vision'),canonicalName:'에스겔 앞에 모인 장로들',mergeAliases:true};
+  if(code==='ezk'&&[9,10].includes(Number(chapter))&&['베옷 입은 서기관','베옷 입은 사람'].includes(name))return {...id('spiritual','ezekiel-linen-clad-executioner'),canonicalName:'세마포 입은 사람',mergeAliases:true};
+  if(code==='ezk'&&Number(chapter)>=40&&Number(chapter)<=48&&['놋 같은 사람','측량하는 사람'].includes(name))return {...id('spiritual','ezekiel-temple-vision-guide'),canonicalName:'성전 환상의 안내자',mergeAliases:true};
+  if(code==='ezk'&&Number(chapter)===19&&name==='첫째 사자 새끼')return {...id('person','jehoahaz-king-of-judah'),canonicalName:'여호아하스'};
+  if(code==='ezk'&&Number(chapter)===19&&name==='둘째 사자 새끼')return {...id('person','jehoiachin-king-of-judah'),canonicalName:'여호야긴(여고냐)'};
+  // Jeremiah 40–41's royal Ishmael is Nethaniah's son, not Abraham's son.
+  if(code==='jer'&&[40,41].includes(Number(chapter))&&name==='이스마엘')return {...id('person','ishmael-son-of-nethaniah'),canonicalName:'이스마엘(느다냐의 아들)'};
+  if(code==='jer'&&Number(chapter)===51&&name==='스라야')return {...id('person','seraiah-son-of-neriah'),canonicalName:'스라야(네리야의 아들)'};
+  if(code==='jer'&&Number(chapter)===52&&name==='스라야')return {...id('person','seraiah-high-priest-jer52'),canonicalName:'스라야(대제사장)'};
   if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
-  if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role))return id('group',name);
+  if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
   // 캐릭터로 합치되 본문·발화의 시대별 표기는 그대로 둔다.

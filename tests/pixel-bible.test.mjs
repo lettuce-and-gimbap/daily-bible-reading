@@ -319,6 +319,220 @@ test('이사야 48장의 회고·일반 범주는 배우에서 빠지고 이사�
  assert.equal(couple.directed,false,'부부 관계선을 한쪽 방향으로 표시하지 않음');
 });
 
+test('예레미야 1–4장의 계보·연대·예언 비유는 현장 배우에서 빠지고 4장 애곡 관계는 본문 대상을 가리킨다',()=>{
+ for(const [chapter,names] of [[1,['힐기야','요시야']],[2,['애굽과 앗수르']],[3,['요시야','마음에 합한 목자']],[4,['북방의 사자','딸 시온']]]){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'jer',chapter}),`${chapter}장 ${name}은 현장 배우가 아님`);
+ }
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/jer.json',import.meta.url),'utf8'));
+ const lament=summary.chapters['4'].rels.find(r=>r.from==='예레미야');
+ assert.equal(lament,undefined,'예레미야 4:19은 애곡이지 백성과 주고받는 상호작용이 아님');
+ assert.ok(!buildWorldModel([{code:'jer',name:'예레미야',chap:4,data:summary.chapters['4']}]).cast.some(person=>person.name==='딸 시온'));
+});
+
+test('예레미야의 과거 중보자·죄의 원인으로만 나온 인물은 11·15·19장 장면에 세우지 않는다',()=>{
+ for(const [chapter,names] of [[11,['조상들']],[15,['모세와 사무엘','므낫세']],[19,['유다 왕들']]]){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'jer',chapter}),`${chapter}장 ${name}은 회고·원인으로만 언급됨`);
+ }
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/jer.json',import.meta.url),'utf8'));
+ const kings=summary.chapters['19'].people.find(p=>p.name==='유다 왕들');
+ assert.match(kings.role,/책임이 있는 통치자/);
+ assert.match(summary.chapters['19'].rels.find(r=>r.from==='유다 왕들').note,/모든 왕이 직접 저질렀다고 단정하지 않아요/);
+});
+
+test('마태복음 1장의 족보 인물은 요셉의 꿈 장면에 등장시키지 않고 본문 근거를 과장하지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/mat.json',import.meta.url),'utf8'));
+ const chapter=summary.chapters['1'];
+ const model=buildWorldModel([{code:'mat',name:'마태복음',chap:1,data:chapter}]);
+ for(const name of ['아브라함','다윗','솔로몬','요시야','여고냐','이사야'])assert.ok(!model.cast.some(person=>person.name===name),`${name}은 족보·예언 인용으로만 언급됨`);
+ assert.match(chapter.story,/마리아를 드러내지 않으려고/);
+ assert.doesNotMatch(chapter.story,/돌에 맞지/);
+ assert.match(chapter.rels.find(relation=>relation.from==='마리아'&&relation.to==='요셉').note,/본문은.*직접 말하지 않아요/);
+});
+
+test('예레미야 21–30장의 시대 표기·과거 왕·미래 메시아 인물은 장면 배우에서 분리한다',()=>{
+ const chapters=[
+  [21,['느부갓네살']],[22,['살룸','요시야','고니야']],[23,['의로운 가지']],
+  [24,['시드기야','여고냐','느부갓네살']],[25,['느부갓네살']],[26,['미가','우리야']],
+  [27,['느부갓네살']],[28,['시드기야','여고냐']],[30,['다윗 왕','백성의 통치자']],
+ ];
+ for(const [chapter,names] of chapters){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'jer',chapter}),`${chapter}장 ${name}은 현장 배우가 아님`);
+ }
+});
+
+test('예레미야 31–40장의 상징·선조·장소 소유자는 빼고 두 이스마엘은 분리한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/jer.json',import.meta.url),'utf8'));
+ for(const [chapter,names] of [[31,['라헬','에브라임']],[33,['다윗의 의로운 가지','레위인 제사장']],[35,['요나답']],[36,['사반']],[38,['말기야']]]){
+  for(const name of names){
+   assert.ok(isMentionOnlyPerson({name},{code:'jer',chapter}),`${chapter}장 ${name}은 실제 장면 배우가 아님`);
+   const model=buildWorldModel([{code:'jer',name:'예레미야',chap:chapter,data:summary.chapters[String(chapter)]}]);
+   assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 월드 캐스트에서 제외됨`);
+  }
+ }
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ const AbrahamIshmael=resolveIdentity('이스마엘',{code:'gen',chapter:21,role:'아브라함의 아들'});
+ const JeremiahIshmael=resolveIdentity('이스마엘',{code:'jer',chapter:40,role:'느다냐의 아들'});
+ assert.notEqual(AbrahamIshmael.id,JeremiahIshmael.id,'그달리야를 노린 왕족은 아브라함의 아들과 다른 인물');
+ assert.equal(JeremiahIshmael.canonicalName,'이스마엘(느다냐의 아들)');
+ assert.equal(JeremiahIshmael.id,resolveIdentity('이스마엘',{code:'jer',chapter:41,role:'느다냐의 아들'}).id,'예레미야 40–41장의 인물은 한 명으로 이어짐');
+});
+
+test('예레미야의 열방 예언·표제 인물은 장면 캐스트에서 빼고 두 스라야를 구분한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/jer.json',import.meta.url),'utf8'));
+ const cases={43:['느부갓네살'],44:['바로 호브라'],45:['여호야김'],46:['바로 느고','느부갓네살','애굽 군대','야곱'],47:['블레셋','바로','북쪽 군대'],48:['모압','모압의 제사장과 고관'],49:['암몬','에돔','다메섹','게달과 하솔','엘람','느부갓네살'],50:['바벨론','벨과 므로닥','이스라엘과 유다','북쪽 나라','느부갓네살'],51:['바벨론','메대 왕들','이스라엘','시드기야']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'jer',chapter}),`${chapter}장 ${name}은 예언의 대상·표제 인물이지 발화 장면 현장 인물이 아님`);
+  const model=buildWorldModel([{code:'jer',name:'예레미야',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 월드 캐스트에서 제외됨`);
+ }
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ const envoy=resolveIdentity('스라야',{code:'jer',chapter:51,role:'네리야의 아들 병참감'});
+ const highPriest=resolveIdentity('스라야',{code:'jer',chapter:52,role:'대제사장'});
+ assert.notEqual(envoy.id,highPriest.id,'바벨론에 두루마리를 전한 스라야와 예루살렘 함락 때 죽임당한 대제사장 스라야는 동명이인');
+ assert.equal(envoy.canonicalName,'스라야(네리야의 아들)');
+ assert.equal(highPriest.canonicalName,'스라야(대제사장)');
+ assert.equal(summary.chapters['50'].rels.length,4,'현장 캐스트를 줄여도 예언의 관계 근거는 보존한다');
+});
+
+test('예레미야애가의 시온·유다 의인화는 장별 중복 없이 공동체로 합치고 사로잡힌 왕은 시드기야다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/lam.json',import.meta.url),'utf8'));
+ const chapters=[1,2,4,5].map(chap=>({code:'lam',name:'예레미야애가',chap,data:summary.chapters[String(chap)]}));
+ const model=buildWorldModel(chapters);
+ assert.equal(model.cast.filter(person=>person.identity?.id==='group:jerusalem-personified-community').length,1,'1–2장의 시온 의인화는 한 공동체');
+ assert.equal(model.cast.find(person=>person.identity?.id==='group:jerusalem-personified-community').name,'예루살렘(시온)');
+ assert.equal(model.cast.filter(person=>person.identity?.id==='group:lamentations-judah-survivors').length,1,'4–5장의 생존 공동체는 한 집단');
+ assert.ok(!model.cast.some(person=>person.name==='기름 부음 받은 왕'),'함정에 빠진 왕은 회고되는 인물이지 장면 배우가 아님');
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('기름 부음 받은 왕',{code:'lam',chapter:4}).id,resolveIdentity('시드기야',{code:'2ki',chapter:25,role:'유다 왕'}).id);
+});
+
+test('에스겔 1–7장의 표제·예언 대상은 현장 배우에서 빼고 환상 속 존재는 동정체를 유지한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/ezk.json',import.meta.url),'utf8'));
+ const cases={1:['여호야긴'],2:['이스라엘 자손'],3:['이스라엘 족속','악인과 의인'],4:['이스라엘 족속','유다 족속','예루살렘 주민'],5:['예루살렘','열방'],6:['이스라엘 족속','남은 자'],7:['이스라엘 땅의 백성','선지자와 제사장과 장로','왕과 고관']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'ezk',chapter}),`에스겔 ${chapter}장 ${name}은 장면 밖의 대상`);
+  const model=buildWorldModel([{code:'ezk',name:'에스겔',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('베옷 입은 서기관',{code:'ezk',chapter:9}).id,resolveIdentity('베옷 입은 사람',{code:'ezk',chapter:10}).id,'심판 표를 기록하고 숯불을 흩는 환상 인물은 이어진 장에서 같은 존재');
+ assert.equal(resolveIdentity('유다 장로들',{code:'ezk',chapter:8}).id,resolveIdentity('장로 칠십 명',{code:'ezk',chapter:8}).id,'환상에서 나온 장로 묘사는 한 집단으로 묶는다');
+ assert.equal(resolveIdentity('시드기야',{code:'ezk',chapter:17}).id,resolveIdentity('기름 부음 받은 왕',{code:'lam',chapter:4}).id,'두루마리·애가의 시드기야는 같은 유다 왕');
+ assert.equal(resolveIdentity('여고냐',{code:'jer',chapter:22}).id,resolveIdentity('여호야긴',{code:'ezk',chapter:1}).id,'여고냐와 여호야긴은 같은 포로기 유다 왕');
+ assert.equal(resolveIdentity('둘째 사자 새끼',{code:'ezk',chapter:19}).id,resolveIdentity('여호야긴',{code:'ezk',chapter:1}).id,'에스겔 19장의 둘째 사자 비유는 여호야긴을 가리킨다');
+});
+
+test('에스겔 11–20장의 예언 대상·비유 인물은 현장 배우에서 분리한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/ezk.json',import.meta.url),'utf8'));
+ const cases={11:['예루살렘 주민','포로 된 형제들'],12:['예루살렘의 왕(시드기야)','반역하는 족속'],13:['거짓 선지자들','거짓 여선지자들','이스라엘 백성','의인'],14:['노아','다니엘','욥','남은 아들딸'],15:['예루살렘 주민'],16:['사마리아','소돔','애굽과 앗수르와 갈대아'],17:['바벨론 왕','여호야긴','시드기야','애굽 왕','연한 가지'],18:['이스라엘 족속','의로운 사람','강포한 아들','의로운 손자'],19:['암사자 어머니','첫째 사자 새끼','둘째 사자 새끼','이스라엘 고관들'],20:['조상들','이스라엘 족속']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'ezk',chapter}),`에스겔 ${chapter}장 ${name}은 말씀의 대상·회고·비유 인물`);
+  const model=buildWorldModel([{code:'ezk',name:'에스겔',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const sixteenth=buildWorldModel([{code:'ezk',name:'에스겔',chap:16,data:summary.chapters['16']}]);
+ assert.ok(sixteenth.cast.some(person=>person.identity?.id==='group:jerusalem-personified-community'),'예루살렘 의인화는 인간 개인이 아니라 공동체로 표현한다');
+});
+
+test('에스겔 21–30장의 국가 심판 예언은 대상 국가·과거 인물을 현장 배우로 만들지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/ezk.json',import.meta.url),'utf8'));
+ const cases={21:['바벨론 왕','시드기야','마땅히 얻을 자','암몬'],22:['예루살렘','고관들','선지자들','제사장들','나그네와 고아와 과부'],23:['오홀라(사마리아)','오홀리바(예루살렘)','앗수르 사람들','갈대아 사람들','애굽'],24:['바벨론 왕','예루살렘','포로 백성'],25:['암몬','모압과 세일','에돔','블레셋','유다 족속'],26:['두로','느부갓네살','바다의 왕들'],27:['두로','무역하는 나라들','뱃사람들'],28:['두로 왕','다니엘','시돈','이스라엘'],29:['바로','애굽','이스라엘 족속','느부갓네살'],30:['애굽','바로','구스와 붓과 룻','느부갓네살']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'ezk',chapter}),`에스겔 ${chapter}장 ${name}은 심판 예언의 대상·비유 인물`);
+  const model=buildWorldModel([{code:'ezk',name:'에스겔',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+});
+
+test('에스겔 31–48장의 상징·회복 예언 인물은 분리하고 실제 전령·성전 안내자는 이어 붙인다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/ezk.json',import.meta.url),'utf8'));
+ const cases={31:['바로','앗수르','능한 자'],32:['바로','바벨론 왕','앗수르와 엘람','메섹과 두발과 에돔'],34:['이스라엘 목자들','내 종 다윗'],35:['세일산(에돔)','이스라엘'],36:['이스라엘 족속','원수 나라들','이스라엘 산들'],37:['유다와 요셉','내 종 다윗'],38:['곡','연합한 나라들','이스라엘','스바·드단·다시스 상인들'],39:['곡','이스라엘 족속','사나운 새와 짐승','이방인들'],40:['사독 자손 제사장','이스라엘 족속'],41:['그룹'],42:['제사장들','백성'],43:['이스라엘 족속','사독 자손 제사장'],44:['왕','우상을 따른 레위인','사독 자손 제사장','이방인'],45:['이스라엘의 통치자들','제사장','레위인','이스라엘 족속'],46:['왕(군주)','백성','제사장들'],47:['어부들','타국인','열두 지파'],48:['열두 지파','사독 자손 제사장','레위인','왕(군주)']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'ezk',chapter}),`에스겔 ${chapter}장 ${name}은 비유·예언의 대상이지 현장 배우가 아님`);
+  const model=buildWorldModel([{code:'ezk',name:'에스겔',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const chapter33=buildWorldModel([{code:'ezk',name:'에스겔',chap:33,data:summary.chapters['33']}]);
+ assert.ok(chapter33.cast.some(person=>person.name==='도망한 자'),'예루살렘 함락을 알린 실제 전령은 유지한다');
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('놋 같은 사람',{code:'ezk',chapter:40}).id,resolveIdentity('측량하는 사람',{code:'ezk',chapter:48}).id,'성전 환상 안내자는 아홉 장 동안 한 존재');
+});
+
+test('다니엘서의 바벨론식 이름은 본명과 통합하고 환상 속 상징·인용 인물은 현장 캐스트에서 분리한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/dan.json',import.meta.url),'utf8'));
+ const cases={1:['느부갓네살','여호야김'],3:['사드락·메삭·아벳느고'],5:['느부갓네살','다리오'],7:['네 짐승','작은 뿔','옛적부터 항상 계신 이','성도들'],8:['숫양','숫염소','작은 뿔'],9:['예레미야','이스라엘 백성','기름 부음 받은 자','다리오'],10:['고레스'],11:['남방 왕','북방 왕','비천한 왕','하나님을 아는 백성','지혜로운 자'],12:['지혜 있는 자','책에 기록된 백성']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'dan',chapter}),`다니엘 ${chapter}장 ${name}은 현장 인물이 아니라 표제·예언·회고의 대상`);
+  const model=buildWorldModel([{code:'dan',name:'다니엘',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const chapters=[1,4].map(chap=>({code:'dan',name:'다니엘',chap,data:summary.chapters[String(chap)]}));
+ const model=buildWorldModel(chapters);
+ assert.equal(model.cast.filter(person=>person.identity?.id==='person:daniel').length,1,'다니엘과 벨드사살은 같은 인물');
+ assert.ok(!model.cast.some(person=>person.name==='벨드사살'));
+ const ch3=buildWorldModel([{code:'dan',name:'다니엘',chap:3,data:summary.chapters['3']}]);
+ assert.equal(ch3.cast.filter(person=>['사드락','메삭','아벳느고'].includes(person.name)).length,3,'바벨론식 이름을 받은 세 유다 사람은 각각 한 번씩 표시');
+ assert.ok(!ch3.cast.some(person=>person.name==='사드락·메삭·아벳느고'),'세 친구 묶음은 개별 인물과 중복되지 않음');
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('가브리엘',{code:'dan',chapter:8}).id,resolveIdentity('가브리엘',{code:'dan',chapter:9}).id);
+ assert.equal(resolveIdentity('세마포 입은 이',{code:'dan',chapter:10}).id,resolveIdentity('세마포 입은 이',{code:'dan',chapter:12}).id);
+ assert.equal(resolveIdentity('바사 왕국의 군주',{code:'dan',chapter:10}).kind,'spiritual');
+ assert.equal(resolveIdentity('헬라 군주',{code:'dan',chapter:10}).kind,'spiritual');
+});
+
+test('호세아서의 표징 자녀는 실제 인물로 남기고 오라클 속 왕국·미래 왕은 NPC로 만들지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/hos.json',import.meta.url),'utf8'));
+ const ch1=buildWorldModel([{code:'hos',name:'호세아',chap:1,data:summary.chapters['1']}]);
+ for(const name of ['고멜','이스르엘','로루하마','로암미'])assert.ok(ch1.cast.some(person=>person.name===name),`호세아 1장의 실제 가족 ${name}을 유지`);
+ const cases={2:['이스라엘','암미','루하마'],3:['이스라엘 자손','다윗'],4:['이스라엘 백성','제사장','에브라임'],5:['에브라임','유다','제사장과 왕족','야렙 왕'],6:['이스라엘 백성','에브라임','유다','제사장 무리'],7:['에브라임','사마리아','애굽과 앗수르','왕들'],8:['이스라엘','에브라임','유다'],9:['이스라엘','에브라임','선지자'],10:['이스라엘','에브라임','사마리아 주민','야렙 왕'],11:['이스라엘','에브라임','앗수르'],12:['에브라임','유다'],13:['에브라임','사마리아','왕'],14:['이스라엘','에브라임','고아','앗수르']};
+ for(const [chapter,names] of Object.entries(cases)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'hos',chapter}));
+  const model=buildWorldModel([{code:'hos',name:'호세아',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`호세아 ${chapter}장 ${name}은 예언의 대상이지 현장 인물이 아님`);
+ }
+ const ch14=buildWorldModel([{code:'hos',name:'호세아',chap:14,data:summary.chapters['14']}]);
+ assert.ok(ch14.cast.some(person=>person.name==='호세아'),'회개를 직접 권하는 선지자는 유지');
+ assert.ok(summary.chapters['14'].rels.length===4,'관계 근거 자료는 현장 출연 여부와 별도로 보존');
+});
+
+test('요엘·아모스의 표제 왕과 예언의 미래 청중은 빼고 아모스 7장의 실제 대립 인물은 남긴다',()=>{
+ const joel=JSON.parse(fs.readFileSync(new URL('../data/summary/jol.json',import.meta.url),'utf8'));
+ const amos=JSON.parse(fs.readFileSync(new URL('../data/summary/amo.json',import.meta.url),'utf8'));
+ for(const [chapter,names] of [[2,['만민']],[3,['열국','두로와 시돈과 블레셋','유다와 예루살렘']]]){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'jol',chapter}));
+  const model=buildWorldModel([{code:'jol',name:'요엘',chap:chapter,data:joel.chapters[String(chapter)]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ for(const [chapter,names] of [[1,['웃시야와 여로보암']],[3,['아스돗과 애굽']],[6,['일으키실 나라']],[9,['다윗의 장막','구스와 블레셋과 아람']]]){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'amo',chapter}));
+  const model=buildWorldModel([{code:'amo',name:'아모스',chap:chapter,data:amos.chapters[String(chapter)]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const ch7=buildWorldModel([{code:'amo',name:'아모스',chap:7,data:amos.chapters['7']}]);
+ for(const name of ['아모스','아마샤','여로보암'])assert.ok(ch7.cast.some(person=>person.name===name),`아모스 7장의 실제 대립 인물 ${name}은 남긴다`);
+});
+
+test('소선지서의 회고·미래 예언 인물은 걸러내고 요나·학개·스가랴 환상 장면은 보존한다',async()=>{
+ const summary=Object.fromEntries(['oba','jnh','mic','nam','hag','zec'].map(code=>[code,JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'))]));
+ const cases={oba:{1:['에돔','야곱 족속','이방인','구원자들']},mic:{1:['유다 성읍 사람들'],2:['탐욕스러운 자들','부녀와 어린 자녀','거짓 선지자','야곱의 남은 자'],3:['야곱의 우두머리들','거짓 선지자들','제사장들','백성'],4:['민족들','시온의 백성','저는 자와 쫓겨난 자','많은 이방'],5:['다스릴 자','야곱의 남은 자','이스라엘 재판자','앗수르'],6:['이스라엘 백성','모세와 아론과 미리암','발락','발람','부자들'],7:['지도자와 재판관','원수']},nam:{1:['니느웨 사람들','유다 백성','좋은 소식을 전하는 자'],2:['니느웨 사람들','침공군대','니느웨 여성들','이스라엘 백성','니느웨 왕후'],3:['니느웨 사람들','앗수르 왕','피해를 입은 나라들']},zec:{1:['조상들'],3:['내 종 싹'],7:['조상들','과부와 고아와 나그네'],8:['노인과 아이들','남은 백성','이방 백성 열 명'],9:['시온 주민','겸손한 왕','두로와 시돈과 블레셋','갇힌 자들','헬라 자손'],12:['예루살렘 주민','다윗의 족속','찔린 이','모든 민족','나단과 레위와 시므이 족속'],13:['다윗의 족속과 예루살렘 주민','거짓 선지자','내 목자, 내 짝 된 자','흩어질 양','남은 3분의 1'],14:['예루살렘 백성','열국','거룩한 자들','남은 자들']}};
+ for(const [code,chapters] of Object.entries(cases))for(const [chapter,names] of Object.entries(chapters)){
+  for(const name of names)assert.ok(isMentionOnlyPerson({name},{code,chapter}),`${code} ${chapter}장 ${name}은 과거·미래/상징 대상`);
+  const model=buildWorldModel([{code,name:code,chap:Number(chapter),data:summary[code].chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name));
+ }
+ const jonah=buildWorldModel([{code:'jnh',name:'요나',chap:4,data:summary.jnh.chapters['4']}]);
+ assert.ok(jonah.cast.some(person=>person.name==='요나'));
+ assert.equal(jonah.cast.find(person=>person.name==='박넝쿨')?.identity?.kind,'plant','박넝쿨은 사람 DB가 아니라 식물로 분류');
+ const fish=buildWorldModel([{code:'jnh',name:'요나',chap:2,data:summary.jnh.chapters['2']}]).cast.find(person=>person.name==='큰 물고기');
+ assert.equal(fish?.identity?.kind,'animal','큰 물고기는 사람 DB가 아니라 동물로 분류');
+ const hag=buildWorldModel([{code:'hag',name:'학개',chap:1,data:summary.hag.chapters['1']}]);
+ for(const name of ['학개','스룹바벨','예수아','남은 백성'])assert.ok(hag.cast.some(person=>person.name===name),`학개 ${name}은 실제 성전 재건 장면에 참여`);
+ const zech=buildWorldModel([{code:'zec',name:'스가랴',chap:1,data:summary.zec.chapters['1']}]);
+ assert.ok(zech.cast.some(person=>person.name==='대장장이 4명'),'환상에서 뿔을 흩는 장면 존재자는 유지');
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('에돔',{code:'oba',chapter:1,role:'배신한 나라'}).kind,'group','나라 표상은 한 인간처럼 분류하지 않는다');
+});
+
 test('욥기의 회상 인물·가정 예시는 월드 배우에서 빠지고 관계 발화자는 본문 화자와 일치한다',()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/job.json',import.meta.url),'utf8'));
  const events=JSON.parse(fs.readFileSync(new URL('../data/pixel-bible/events/job.json',import.meta.url),'utf8'));
@@ -855,7 +1069,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,941);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
+ assert.equal(PAIR_DIALOGUE.length,940);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
  const josiah=PAIR_DIALOGUE.find(p=>p.id==='pair-2ki-21-people-josiah');
  assert.equal(josiah.lines.length,3);assert.equal(josiah.replyLines.length,3);assert.equal(josiah.lineDetails.length,3);
  const {speechContext}=await import('../js/features/pixel-bible/speech-context.js');

@@ -305,7 +305,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3793);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3792);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -629,8 +629,8 @@ test('예레미야 1–12장의 인간 관계선은 본문 상황에 맞는 왕�
  const chapters=Object.entries(summary.chapters).slice(0,12).map(([chap,data])=>({code:'jer',name:'예레미야',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters);
  const entries=PAIR_DIALOGUE.filter(entry=>/^jer\.(?:[1-9]|1[01]|12)$/.test(entry.chapter));
- assert.equal(context.relations.length,17);
- assert.equal(entries.length,17);
+ assert.equal(context.relations.length,16);
+ assert.equal(entries.length,16);
  for(const relation of context.relations){
   assert.ok(entries.some(entry=>entry.chapter===`jer.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  }
