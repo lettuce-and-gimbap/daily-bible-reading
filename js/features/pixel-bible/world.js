@@ -140,8 +140,9 @@ export function buildWorldModel(chapters) {
   }
   const ruth = chapters.some((c) => c.code === "rut" && c.chap === 2 && c.data);
   if (ruth && ![...people.values()].some(p=>p.name==="일꾼")) people.set("일꾼", { name: "일꾼", role: "보아스의 밭에서 추수하는 일꾼", weight: 1, refs: ["룻기 2:4"] });
-  // 김밥은 본문 인물과 섞이지 않는 창작 길동무로, 월드마다 한 명만 둔다.
-  if(![...people.values()].some(p=>p.name==='김밥'))people.set('김밥',{name:'김밥',role:'월드의 창작 길동무 · 이동할 때 김밥처럼 굴러가요',weight:1,refs:[],identity:{kind:'person',id:'person:gimbap-mascot',status:'creative-mascot'},worldMascot:true});
+  // 음식 친구들은 성경 본문 인물과 분리된 고유 ID의 월드 마스코트다.
+  const mascots=[['김밥','굴러 다니는 김밥 친구'],['상추','싱그러운 상추 친구'],['카라멜팝콘','달콤한 카라멜팝콘 친구']];
+  for(const [name,role] of mascots)if(![...people.values()].some(p=>p.name===name))people.set(name,{name,role:`월드의 창작 길동무 · ${role}`,weight:1,refs:[],identity:{kind:'person',id:`person:mascot-${name}`,status:'creative-mascot'},worldMascot:true,mascotId:name});
   const cast = [...people.values()].sort((a, b) => (b.weight || 1) - (a.weight || 1));
   if (!cast.length) cast.push({ name: "읽는 사람", role: "본문을 함께 살펴보는 안내 캐릭터 (창작)", refs: [], weight: 1 });
   const sourceScenes=chapters.flatMap(c=>c.data?.eventScenes||[]);
@@ -458,6 +459,7 @@ export async function mountPixelWorld(shell, options) {
       localStorage.setItem(exposureStorageKey(model.key),JSON.stringify([...exposed]));
     }
   }catch(_){}
+  const gimbapPerson=model.cast.find(p=>p.mascotId==='김밥');if(gimbapPerson)exposed.add(castKey(gimbapPerson));
   reconcileCast(npcs,model.cast.filter(p=>exposed.has(castKey(p))),castCache,()=>null);
   let drag=null, objectHold=null, suppressClick=false, toastTimer=null;
   let showRelationships=!!options.showRelationships;
@@ -525,6 +527,8 @@ export async function mountPixelWorld(shell, options) {
   }
   function applyExposure(){
     const old=npcs[selected];
+    const permanent=model.cast.filter(p=>p.mascotId==='김밥');
+    for(const p of permanent)exposed.add(castKey(p));
     reconcileCast(npcs,model.cast.filter(p=>exposed.has(castKey(p))),castCache,()=>null);
     clearTerrainOverlap();
     if((speech.current&&[speech.current.speaker,speech.current.target].filter(Boolean).some(n=>!npcs.includes(n)))||
@@ -1007,11 +1011,12 @@ export async function mountPixelWorld(shell, options) {
     }
     if(b.dataset.castMode){
       if(drag||objectHold)return;
-      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[]).map(castKey));applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
+      exposed=new Set((b.dataset.castMode==='all'?model.cast:b.dataset.castMode==='major'?majorCast(model):b.dataset.castMode==='animals'?model.cast.filter(p=>p.creature?.kind==='animal'):b.dataset.castMode==='plants'?model.cast.filter(p=>p.creature?.kind==='plant'):[]).map(castKey));for(const p of model.cast.filter(p=>p.mascotId==='김밥'))exposed.add(castKey(p));applyExposure();shell.querySelector('.pb-recommendations').hidden=true;return;
     }
     if(b.dataset.togglePerson!==undefined||b.dataset.addPerson!==undefined){
       if(drag||objectHold)return;
       const person=model.cast[Number(b.dataset.togglePerson??b.dataset.addPerson)],key=castKey(person);
+      if(person?.mascotId==='김밥'){say('김밥은, 사라지지, 않아요!');return;}
       if(exposed.has(key))exposed.delete(key);else exposed.add(key);
       applyExposure();renderRecommendations(b.dataset.addPerson!==undefined&&recommendationPerson?recommendationPerson:person);return;
     }
@@ -1333,7 +1338,8 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
   const bob=actionPose&&!reduced&&!n.interaction?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
-  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),rolling:!!style.gimbap&&!!n.path.length&&!actionPose,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
+  const rolling=!!style.gimbap&&!!n.path.length&&!actionPose;
+  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),rolling,rollFrame:n.stride*8,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
   }

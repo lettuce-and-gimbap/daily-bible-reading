@@ -25,6 +25,9 @@ test('열왕기하 17–21장의 언급 인물 모세는 현장 캐릭터로 나
  const model=buildWorldModel(chapters);
  assert.equal(model.cast.filter(p=>p.name==='모세').length,0,'모세는 왕하 18:4, 6, 12와 21:8에서 언급될 뿐 해당 장면의 현장 인물이 아니다');
  assert.equal(model.cast.filter(p=>p.name==='김밥').length,1);
+ assert.equal(model.cast.filter(p=>p.name==='상추').length,1);
+ assert.equal(model.cast.filter(p=>p.name==='카라멜팝콘').length,1);
+ assert.ok(model.cast.filter(p=>['김밥','상추','카라멜팝콘'].includes(p.name)).every(p=>p.worldMascot&&p.identity.status==='creative-mascot'));
  assert.equal(model.cast.filter(p=>p.name==='엘리아김(힐기야의 아들)').length,1,'반복 출현하는 엘리아김도 월드에 한 명만 둔다');
  assert.match(summary.chapters[18].story,/모세/,'역사적 언급은 본문 설명에서 유지한다');
 });
@@ -69,12 +72,19 @@ test('본문 인물 색인의 언급 표시는 별도 사건 장면 배우 목�
  assert.deepEqual(model.scenes.find(item=>item.id===scene.id).actors,[]);
 });
 
-test('김밥 캐릭터는 64×64 원본 픽셀을 90도씩 돌려 구른다',async()=>{
- const {GIMBAP_FRAME_SIZE,gimbapRollAngle}=await import('../js/features/pixel-bible/gimbap-art.js');
+test('김밥은 16프레임으로 부드럽게 구르고 음식 친구들은 고유 도안을 쓴다',async()=>{
+ const {GIMBAP_FRAME_SIZE,GIMBAP_ROLL_FRAMES,gimbapRollAngle}=await import('../js/features/pixel-bible/gimbap-art.js');
  assert.equal(GIMBAP_FRAME_SIZE,64);
- assert.deepEqual([0,1,2,3].map(gimbapRollAngle),[0,Math.PI/2,Math.PI,Math.PI*1.5]);
+ assert.equal(GIMBAP_ROLL_FRAMES,16);
+ assert.ok(Math.abs(gimbapRollAngle(1)-Math.PI/8)<1e-10);
+ assert.ok(Math.abs(gimbapRollAngle(8)-Math.PI)<1e-10);
  const {characterStyle}=await import('../js/features/pixel-bible/art.js');
  assert.equal(characterStyle('김밥',0,'월드의 창작 길동무',[]).gimbap,true);
+ assert.equal(characterStyle('상추',0,'월드의 창작 길동무',[]).foodMascot,'상추');
+ assert.equal(characterStyle('카라멜팝콘',0,'월드의 창작 길동무',[]).foodMascot,'카라멜팝콘');
+ const {drawFoodMascot}=await import('../js/features/pixel-bible/food-mascots.js');
+ const ctx={fillStyle:'',save(){},restore(){},fillRect(){}};
+ for(const name of ['상추','카라멜팝콘'])for(const direction of ['down','up','left','right'])drawFoodMascot(ctx,name,2,direction);
 });
 
 test('QT 절 범위에 맞춰 픽셀 월드의 사건·관계·인물·장면을 좁힌다',()=>{
