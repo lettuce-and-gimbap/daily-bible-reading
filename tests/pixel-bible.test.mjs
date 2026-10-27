@@ -309,6 +309,16 @@ test('언급 전용 검토 목록은 존재하는 인물 기록만 가리킨다'
  }
 });
 
+test('이사야 48장의 회고·일반 범주는 배우에서 빠지고 이사야 51장 조상 부부선은 양방향이다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/isa.json',import.meta.url),'utf8'));
+ for(const name of ['갈대아인','악인']){
+  assert.ok(isMentionOnlyPerson({name},{code:'isa',chapter:48}),`${name}은 이사야 48장의 현장 배우가 아님`);
+ }
+ const couple=summary.chapters['51'].rels.find(r=>r.from==='사라'&&r.to==='아브라함');
+ assert.ok(couple,'이사야 51장은 아브라함과 사라를 함께 조상으로 제시함');
+ assert.equal(couple.directed,false,'부부 관계선을 한쪽 방향으로 표시하지 않음');
+});
+
 test('욥기의 회상 인물·가정 예시는 월드 배우에서 빠지고 관계 발화자는 본문 화자와 일치한다',()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/job.json',import.meta.url),'utf8'));
  const events=JSON.parse(fs.readFileSync(new URL('../data/pixel-bible/events/job.json',import.meta.url),'utf8'));
