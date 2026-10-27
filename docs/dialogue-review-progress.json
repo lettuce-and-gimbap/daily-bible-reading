@@ -381,7 +381,7 @@
       "book": "rev",
       "chaptersScanned": 22,
       "chaptersWithAuthoredDialogueReviewed": 22,
-      "authoredUtteranceGroupsReviewed": 55,
+      "authoredUtteranceGroupsReviewed": 54,
       "utteranceReferencesCorrected": 89,
       "chapterDialogueAudit": 22,
       "pairedEntriesReviewed": 0,
@@ -419,7 +419,7 @@
         21,
         22
       ],
-      "statusNote": "요한계시록 22장 전체를 개역개정과 쉬운성경의 절별 화자·문맥으로 대조했다. 실제 발화와 요한의 환상 목격 서술을 구분하고, 행동 요약을 잘못 화자에게 붙인 항목을 교체했다. 55묶음 89문장의 개별 절 근거와 장별 화자 색인을 테스트했다. 인간 관계 연결 134개는 구조상 모두 대상에 포함됨을 확인했으나, 이 연결의 관계별 대사 자체는 별도 검토가 남아 있다."
+      "statusNote": "요한계시록 22장 전체를 개역개정과 쉬운성경의 절별 화자·문맥으로 대조했다. 실제 발화와 요한의 환상 목격 서술을 구분하고, 행동 요약을 잘못 화자에게 붙인 항목을 교체했다. 54묶음 89문장의 개별 절 근거와 장별 화자 색인을 테스트했다. 인간 관계 연결 134개는 구조상 모두 대상에 포함됨을 확인했으나, 이 연결의 관계별 대사 자체는 별도 검토가 남아 있다."
     },
     "currentBookStatus": "chapter-dialogue-review-complete-pair-dialogue-audit-pending"
   }
