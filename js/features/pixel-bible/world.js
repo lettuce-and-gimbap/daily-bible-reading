@@ -677,7 +677,27 @@ export async function mountPixelWorld(shell, options) {
   }
   function endEvent() {shell.classList.remove('pb-event-playing');if(activeEvent?.home){Object.assign(camera,activeEvent.home);constrainCamera(camera,canvas.width,canvas.height);syncCamera();}closeCinematic?.();closeCinematic=null; if(activeEvent)sceneActors(activeEvent.scene).filter(Boolean).forEach(n=>{n.action="";n.usingObject=null;n.interaction=null;n.objectAction=null;n.eventRoutine=null;n.eventObjects=null;n.eventPartner=null;n.idle=5;}); activeEvent = null; pendingEvent = null; overlay.hidden = true; if (sound) speechSynthesis.cancel(); }
   function discoverPlacedRecipe(object){
-    if(activeEvent||pendingEvent)return;for(const scene of model.scenes){if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));if(center){offerEvent(scene,center,true);return;}}
+    if(activeEvent||pendingEvent)return;
+    for(const scene of model.scenes){
+      if(!isRecipeLocked(scene)||![scene.object,...(scene.requiresObjects||[])].includes(object.kind))continue;
+      const center=objects.find(o=>o.kind===scene.object&&recipeAssembled(scene,npcs,o,objects));
+      if(center){offerEvent(scene,center,true);return;}
+    }
+  }
+  // 각 프레임에 확인해, 인물이 걸어 들어와 조합이 완성되는 경우도 놓치지 않는다.
+  function checkAssembledRecipes(){
+    if(activeEvent||pendingEvent)return new Set();
+    const waiting=new Set();
+    for(const scene of model.scenes){
+      if(!isRecipeLocked(scene))continue;
+      const center=objects.find(o=>o.kind===scene.object&&requiredObjectsNearby(scene,o,objects));
+      if(!center)continue;
+      const actors=scene.actors.map(name=>npcs.find(n=>n.name===name));
+      if(actors.some(n=>!n||n.waterEscape||n.waterHuff))continue;
+      for(const n of actors)if(Math.hypot(n.x-center.x,n.y-center.y)<=3.5)waiting.add(n);
+      if(recipeAssembled(scene,npcs,center,objects)){offerEvent(scene,center,true);return new Set(actors);}
+    }
+    return waiting;
   }
   function offerEventReady(){const pending=pendingEvent;pendingEvent=null;offerEvent(pending.scene,pending.o);}
   function sceneActors(scene) { return scene.actors.map((name) => npcs.find((n) => n.name === name)); }
@@ -704,6 +724,7 @@ export async function mountPixelWorld(shell, options) {
     const candidates=model.scenes.filter(s=>s.object===o.kind&&s.actors.includes(n.name)&&sceneActors(s).every(Boolean));
     const scene=candidates.find(s=>isRecipeLocked(s)&&recipeAssembled(s,npcs,o,objects))||candidates.find(s=>!isRecipeLocked(s));
     if (scene) return offerEvent(scene,o);
+    checkAssembledRecipes();if(eventOffer)return;
     if(npcs.some(other=>other!==n&&(other.usingObject===o||other.task===o))){say('다른 인물이 사용 중이에요. 잠시 기다려 주세요.');return;}
     clearInfo();
     if (!toObject(n,o)) say("가는 길이 막혀 있어요. 다른 오브젝트나 빈 곳을 선택해 주세요.");
@@ -1146,6 +1167,8 @@ export async function mountPixelWorld(shell, options) {
   function update(dt) {
     time+=dt;
     syncBoatFloat();
+    const waitingForScene=checkAssembledRecipes();
+    for(const n of waitingForScene)if(n.path.length&&!n.task){n.path=[];n.running=false;n.idle=6;}
     if(time>=nextMeet&&!activeEvent&&!pendingEvent&&!pendingTalk&&!drag&&!placing){
       nextMeet=time+12;
       for(const relation of dialogueContext.relations){
@@ -1207,7 +1230,7 @@ export async function mountPixelWorld(shell, options) {
           objectSpeech={id:`object:${scene.id}:${n.name}`,speaker:n,text:objectLinesFor(scene,n.name)[Math.floor(Math.random()*objectLinesFor(scene,n.name).length)],ref:scene.ref,detailText:scene.study||scene.lines.join(' '),kind:'solo',object:target};
         }
         if(['bench','throne','footstool'].includes(target.kind)) { n.x=target.x;n.y=target.y;n.direction="down"; }
-      } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n)) {
+      } else if((n.idle-=dt)<=0 && !pendingEvent?.actors.includes(n) && !waitingForScene.has(n)) {
         n.action="";n.usingObject=null;n.interaction=null;n.idle=3+Math.random()*5;
         if(!reduced&&!pendingTalk&&n.creature?.body!=='fish') {const far=Math.random()<.2;const p={x:far?BOUNDS.minX+Math.floor(Math.random()*(BOUNDS.maxX-BOUNDS.minX+1)):Math.max(BOUNDS.minX,Math.min(BOUNDS.maxX,Math.round(n.x+(Math.random()-.5)*16))),y:far?BOUNDS.minY+Math.floor(Math.random()*(BOUNDS.maxY-BOUNDS.minY+1)):Math.max(BOUNDS.minY,Math.min(BOUNDS.maxY,Math.round(n.y+(Math.random()-.5)*12)))};if(!blocked(p.x,p.y))move(n,p,null,{running:shouldRun()});}
       }
