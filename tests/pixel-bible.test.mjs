@@ -152,6 +152,20 @@ test('에스라의 중복 집단·동명이인을 정리하고 혼인 관계와 
  assert.notEqual(resolveIdentity('모르드개(귀환자)',{code:'ezr',chapter:2}).id,resolveIdentity('모르드개',{code:'est',chapter:2}).id);
 });
 
+test('느헤미야에서 과거 조상·언급 인물은 현장 캐스트에서 빼되 근거 관계를 남긴다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/neh.json',import.meta.url),'utf8'));
+ const cases={1:['모세'],5:['이전 총독들'],7:['스룹바벨'],9:['아브라함','모세','조상들','선지자들'],11:['아삽'],12:['예수아','스룹바벨'],13:['산발랏']};
+ for(const [chapter,names] of Object.entries(cases)){
+  const model=buildWorldModel([{code:'neh',name:'느헤미야',chap:Number(chapter),data:summary.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`느헤미야 ${chapter}장 ${name}은 그 장면에 없는 인물이다`);
+ }
+ const ch9=buildWorldModel([{code:'neh',name:'느헤미야',chap:9,data:summary.chapters[9]}]);
+ assert.ok(ch9.relations.some(r=>r.from==='하나님'&&r.to==='아브라함'),'과거 언약 관계는 유지한다');
+ const ch13=buildWorldModel([{code:'neh',name:'느헤미야',chap:13,data:summary.chapters[13]}]);
+ assert.ok(ch13.relations.some(r=>r.from==='엘리아십의 손자(요야다의 아들)'&&r.to==='산발랏'&&r.label==='사위'),'산발랏과의 혼인 관계는 실제 사위 인물에 연결한다');
+ assert.ok(ch13.relations.some(r=>r.from==='느헤미야'&&r.to==='엘리아십의 손자(요야다의 아들)'),'쫓겨난 당사자와 느헤미야의 갈등은 직접 연결한다');
+});
+
 test('출애굽기에서 르우엘과 이드로는 같은 장인이고 두 시대의 바로는 각각 분리한다',async()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/exo.json',import.meta.url),'utf8'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'exo',name:'출애굽기',chap:Number(chap),data}));

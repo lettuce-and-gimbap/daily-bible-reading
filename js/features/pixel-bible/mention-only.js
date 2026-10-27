@@ -122,6 +122,13 @@ const CHAPTERS = {
   // In Ezra 6 the kings are cited as sources of earlier decrees, not as
   // participants at the dedication and Passover in Jerusalem.
   'ezr.6': ['고레스'],
+  'neh.1': ['모세'],
+  'neh.5': ['이전 총독들'],
+  'neh.7': ['스룹바벨'],
+  'neh.9': ['아브라함', '모세', '조상들', '선지자들'],
+  'neh.11': ['아삽'],
+  'neh.12': ['예수아', '스룹바벨'],
+  'neh.13': ['산발랏'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],
@@ -138,7 +145,6 @@ const CHAPTERS = {
   'jhn.8': ['아브라함'],
   'jos.24': ['요셉'],
   'luk.16': ['아브라함'],
-  'neh.9': ['아브라함', '조상들', '선지자들'],
   'psa.22': ['조상들'],
   'psa.44': ['조상들'],
   'psa.47': ['아브라함'],
