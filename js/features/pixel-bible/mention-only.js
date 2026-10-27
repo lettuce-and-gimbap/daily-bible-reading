@@ -55,6 +55,22 @@ const CHAPTERS = {
   'rut.1': ['엘리멜렉', '말론', '기룐'],
   'rut.2': ['엘리멜렉'],
   'rut.4': ['베레스', '이새', '다윗'],
+  // Samuel's history survey names earlier leaders, and chapter 7 only says
+  // the Amorites lived peacefully with Israel. They are not in those scenes.
+  '1sa.7': ['아모리 사람들'],
+  // Chapter 14's closing family register is not an extension of the battle
+  // scene; chapter 21 recalls Goliath's sword and Saul while David is away.
+  '1sa.14': ['기스', '아히노암', '메랍', '미갈'],
+  '1sa.21': ['골리앗', '사울', '다윗의 소년들'],
+  // Dagon is an idol statue rather than a human actor; its scene prop remains
+  // an object, and the priests are a narrated custom rather than named actors.
+  '1sa.5': ['다곤', '다곤의 제사장들'],
+  '1sa.12': ['모세', '아론', '시스라', '여룹바알', '베단', '입다', '나하스'],
+  // Samuel is reported dead; the later marriage-status note does not put
+  // Ahinoam, Michal, or Paltiel in Abigail and David's meeting.
+  '1sa.25': ['사무엘', '아히노암', '미갈', '발디'],
+  '1sa.27': ['사울'],
+  '1sa.29': ['사울'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],

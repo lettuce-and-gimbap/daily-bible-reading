@@ -11,10 +11,11 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='바로'&&Number(chapter)===12)return '바로(아브라함 시대)';
   if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return '바로(요셉 시대)';
   if(code==='exo'&&['르우엘','이드로'].includes(name))return '이드로';
-  if(code==='jdg'&&name==='여룹바알')return '기드온';
+  if(name==='여룹바알')return '기드온';
   if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return '바로(모세의 출생 시대)';
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return '바로(출애굽 시대)';
   if(code==='act'&&name==='사울')return '바울';
+  if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return '여호수아(벧세메스 사람)';
   return name;
 }
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
@@ -33,7 +34,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='gen'&&name==='바로'&&Number(chapter)===12)return {...id('person','pharaoh-abraham-era'),canonicalName:'바로(아브라함 시대)'};
   if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return {...id('person','pharaoh-joseph-era'),canonicalName:'바로(요셉 시대)'};
   if(code==='exo'&&['르우엘','이드로'].includes(name))return {...id('person','midianite-priest-jethro'),canonicalName:'이드로'};
-  if(code==='jdg'&&['기드온','여룹바알'].includes(name))return {...id('person','gideon-jerubbaal'),canonicalName:'기드온'};
+  if(['기드온','여룹바알'].includes(name))return {...id('person','gideon-jerubbaal'),canonicalName:'기드온'};
+  if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return {...id('person','joshua-bethshemesh'),canonicalName:'여호수아(벧세메스 사람)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return {...id('person','exodus-pharaoh-moses-birth'),canonicalName:'바로(모세의 출생 시대)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return {...id('person','exodus-pharaoh-deliverance'),canonicalName:'바로(출애굽 시대)'};
   if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return id('group','amalekites');
