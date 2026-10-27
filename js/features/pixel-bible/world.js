@@ -780,7 +780,7 @@ export async function mountPixelWorld(shell, options) {
     if(!held.active){if(cancel)suppressClick=true;return;}
     suppressClick=true;
     const under=document.elementFromPoint(e.clientX,e.clientY),p=objectLanding(held),trash=shell.querySelector('.pb-trash-drop'),trashRect=trash.getBoundingClientRect();
-    if(!cancel&&options.allowed()&&held.active&&e.clientX>=trashRect.left&&e.clientX<=trashRect.right&&e.clientY>=trashRect.top&&e.clientY<=trashRect.bottom){removeObjects([held.o],[...castCache.values()],()=>true);if(pendingEvent?.o===held.o)pendingEvent=null;if(objectSpeech?.object===held.o)objectSpeech=null;save();renderRecipes();say('오브젝트를 버렸어요.');draw();return;}
+    if(!cancel&&options.allowed()&&held.active&&e.clientX>=trashRect.left&&e.clientX<=trashRect.right&&e.clientY>=trashRect.top&&e.clientY<=trashRect.bottom){const result=removeObjects(objects,[...castCache.values()],candidate=>candidate===held.o);objects=result.remaining;if(pendingEvent?.o===held.o)pendingEvent=null;if(objectSpeech?.object===held.o)objectSpeech=null;objectCooldown.delete(held.o);save();renderRecipes();say(result.removed.length?'오브젝트를 버렸어요.':'오브젝트를 찾지 못했어요.');draw();return;}
     if(!cancel&&options.allowed()&&under===canvas&&canMoveObject(held.o,p,[...objects,...terrain],npcs,{waterAt:(x,y)=>waterAt(backgroundKey,x,y)})){
       Object.assign(held.o,p);save();renderRecipes();clearInfo();discoverPlacedRecipe(held.o);
     }else if(!cancel)say('다른 물건·인물·이동 경로와 겹치지 않는 빈 땅에 놓아 주세요.');
@@ -930,6 +930,7 @@ export async function mountPixelWorld(shell, options) {
       if ((!boat&&wet)||blockedCells.has(`${x},${y}`)||objects.some((o) => Math.hypot(o.x-x,o.y-y)<1.1) || npcs.some((n) => Math.hypot(n.x-x,n.y-y)<1)) return say(boat?'배는 물 위의 빈 곳에 놓아 주세요.':'나무·인물과 겹치지 않는 빈 땅을 골라 주세요.');
     const addedObject={kind:placing,x,y};objects.push(addedObject); save(); renderRecipes(); placing = null; autoObjectAt=Math.min(autoObjectAt,time+.5);syncPlacement();discoverPlacedRecipe(addedObject); say("오브젝트를 놓았어요. 0.4초 꾹 누르면 위치를 옮길 수 있어요."); return;
     }
+    shell.querySelector('.pb-trash-drop').hidden=true;
     const hit=hitPerson(p,e.pointerType==='touch');
     if (hit >= 0) {
       if (hit !== selected) {
