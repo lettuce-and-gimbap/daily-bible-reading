@@ -32,7 +32,16 @@ function pixelBibleModal(contents, world = false) {
   const orientationState = { locked: false };
   const syncOrientationFallback = () => {
     if (!world || !dialog.isConnected) return;
-    const fallback = window.innerHeight >= window.innerWidth && !orientationState.locked;
+    const viewport = window.visualViewport;
+    const viewportWidth = Math.max(1, Math.round(viewport?.width || window.innerWidth));
+    const viewportHeight = Math.max(1, Math.round(viewport?.height || window.innerHeight));
+    const viewportLeft = Math.max(0, Math.round(viewport?.offsetLeft || 0));
+    const viewportTop = Math.max(0, Math.round(viewport?.offsetTop || 0));
+    dialog.style.setProperty('--pb-viewport-width', `${viewportWidth}px`);
+    dialog.style.setProperty('--pb-viewport-height', `${viewportHeight}px`);
+    dialog.style.setProperty('--pb-viewport-offset-left', `${viewportLeft}px`);
+    dialog.style.setProperty('--pb-viewport-offset-top', `${viewportTop}px`);
+    const fallback = viewportHeight >= viewportWidth && !orientationState.locked;
     dialog.classList.toggle("pb-css-landscape", fallback);
     const hint = dialog.querySelector(".pb-rotate");
     if (hint) hint.hidden = !fallback;
@@ -105,18 +114,41 @@ async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState =
   const fullscreenTarget = dialog?.querySelector(".pb-shell");
   let fullscreen = !!document.fullscreenElement, locked = false;
   if (orientationState) orientationState.locked = false;
-  const fallback = window.innerHeight >= window.innerWidth;
+  const viewport = window.visualViewport;
+  const viewportWidth = Math.max(1, Math.round(viewport?.width || window.innerWidth));
+  const viewportHeight = Math.max(1, Math.round(viewport?.height || window.innerHeight));
+  const viewportLeft = Math.max(0, Math.round(viewport?.offsetLeft || 0));
+  const viewportTop = Math.max(0, Math.round(viewport?.offsetTop || 0));
+  dialog?.style.setProperty('--pb-viewport-width', `${viewportWidth}px`);
+  dialog?.style.setProperty('--pb-viewport-height', `${viewportHeight}px`);
+  dialog?.style.setProperty('--pb-viewport-offset-left', `${viewportLeft}px`);
+  dialog?.style.setProperty('--pb-viewport-offset-top', `${viewportTop}px`);
+  const fallback = viewportHeight >= viewportWidth;
   dialog?.classList.toggle("pb-css-landscape", fallback);
   const hint = dialog?.querySelector(".pb-rotate");
   if (hint) hint.hidden = !fallback;
-  if (mobile && fullscreenTarget && !fullscreen && typeof fullscreenTarget.requestFullscreen === "function") {
-    fullscreen = await completesWithin(() => fullscreenTarget.requestFullscreen()) || fullscreen;
-  }
-  if (mobile && screen.orientation?.lock) {
-    locked = await completesWithin(() => screen.orientation.lock("landscape"));
+  const canRequestOrientationLock=mobile&&typeof screen.orientation?.lock==='function';
+  // Invoke both APIs during the original tap, before awaiting either promise;
+  // iOS/Safari can otherwise consume transient activation on the first await.
+  const lockAttempt=canRequestOrientationLock?completesWithin(()=>screen.orientation.lock("landscape")):Promise.resolve(false);
+  const fullscreenAttempt=canRequestOrientationLock&&fullscreenTarget&&!fullscreen&&typeof fullscreenTarget.requestFullscreen==='function'
+    ?completesWithin(()=>fullscreenTarget.requestFullscreen()):Promise.resolve(false);
+  [locked,fullscreen]=await Promise.all([lockAttempt,fullscreenAttempt.then(value=>value||fullscreen)]);
+  if(!locked&&fullscreenTarget&&document.fullscreenElement===fullscreenTarget){
+    try{await document.exitFullscreen?.();}catch(_){}
+    fullscreen=!!document.fullscreenElement;
   }
   if (orientationState) orientationState.locked = locked;
-  const useFallback = window.innerHeight >= window.innerWidth && !locked;
+  const latestViewport = window.visualViewport;
+  const latestWidth = Math.max(1, Math.round(latestViewport?.width || window.innerWidth));
+  const latestHeight = Math.max(1, Math.round(latestViewport?.height || window.innerHeight));
+  const latestLeft = Math.max(0, Math.round(latestViewport?.offsetLeft || 0));
+  const latestTop = Math.max(0, Math.round(latestViewport?.offsetTop || 0));
+  dialog?.style.setProperty('--pb-viewport-width', `${latestWidth}px`);
+  dialog?.style.setProperty('--pb-viewport-height', `${latestHeight}px`);
+  dialog?.style.setProperty('--pb-viewport-offset-left', `${latestLeft}px`);
+  dialog?.style.setProperty('--pb-viewport-offset-top', `${latestTop}px`);
+  const useFallback = latestHeight >= latestWidth && !locked;
   dialog?.classList.toggle("pb-css-landscape", useFallback);
   if (hint) hint.hidden = !useFallback;
   syncFallback?.();

@@ -354,6 +354,8 @@ test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되�
  const {readFile}=await import('node:fs/promises');
  const source=await readFile(new URL('../js/features/pixel-bible/world.js',import.meta.url),'utf8');
  const entry=await readFile(new URL('../js/features/pixel-bible.js',import.meta.url),'utf8');
+ const css=await readFile(new URL('../css/pixel-bible.css',import.meta.url),'utf8');
+ const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
  assert.match(source,/const rescued=advanceWaterEscapes\(npcs,dt\);[\s\S]{0,400}if\(!paused/);
  assert.match(source,/const cssLandscape = \(\) => !!shell\.closest\('dialog'\)\?\.classList\.contains\('pb-css-landscape'\)/);
  assert.match(source,/canvas\.height,cssLandscape\(\)/);
@@ -363,6 +365,13 @@ test('물 구조 타이머는 일반 이동·장면 재생 분기와 분리되�
  assert.doesNotMatch(entry,/await landscapeReady/,'가로 잠금 대기가 월드 로딩을 막으면 안 된다');
  assert.match(entry,/화면을 가로로 돌려 주세요\. 자동 회전이 안 되어도 월드는 입장할 수 있어요/);
  assert.match(entry,/pb-css-landscape/);
+ assert.match(entry,/window\.visualViewport/,'iPhone 주소창 크기 변화에 visual viewport 치수를 사용한다');
+ assert.match(html,/name="viewport"[^>]*viewport-fit=cover/,'노치 화면의 safe area를 사용한다');
+ assert.match(css,/\.pb-world-dialog\.pb-css-landscape[^}]*transform: none/,'대화상자는 회전하지 않아 터치 기준 좌표를 유지한다');
+ assert.match(css,/\.pb-world-dialog\.pb-css-landscape > \.pb-shell[^}]*transform: rotate\(90deg\)/,'월드 내부만 회전한다');
+ assert.match(css,/\.pb-world-head button[^}]*min-width: 48px; min-height: 48px/,'나가기 버튼의 터치 영역은 최소 48px이다');
+ assert.match(css,/\.pb-side-toggle\{min-height:48px/,'도구·인물 토글은 최소 48px 높이이다');
+ assert.match(css,/\.pb-side\{top:calc\(106px \+ var\(--pb-safe-top\)\)/,'도구 패널은 상단 안전 여백 아래에 배치한다');
 });
 
 test('세로 화면에서도 CSS 회전 월드 애니메이션은 계속 돌고 숨김·종료 때만 멈춘다',async()=>{
