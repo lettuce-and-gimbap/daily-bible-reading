@@ -136,7 +136,7 @@ export function buildWorldModel(chapters) {
       if(person.role&&!p.roles.includes(person.role))p.roles.push(person.role);
       p.weight = Math.max(p.weight || 1, person.weight || 1);
     }
-    for (const r of data.rels || []) relations.push({ ...r, from:canonicalPersonName(r.from,{code}), to:canonicalPersonName(r.to,{code}), sourceRef: reference, ref: `${name} ${chap}:${r.verses || ""}` });
+    for (const r of data.rels || []) relations.push({ ...r, from:canonicalPersonName(r.from,{code,chapter:chap}), to:canonicalPersonName(r.to,{code,chapter:chap}), sourceRef: reference, ref: `${name} ${chap}:${r.verses || ""}` });
     for (const e of data.events || []) events.push({ ...e, ref: `${name} ${chap}:${e.verses || ""}` });
   }
   const ruth = chapters.some((c) => c.code === "rut" && c.chap === 2 && c.data);
@@ -153,7 +153,7 @@ export function buildWorldModel(chapters) {
   };
   // A hand-authored scene may replace an identical restored range without losing its index link.
   const filterMentionActors=scene=>withoutMentionOnlyActors(scene,mentionOnlyNamesFor(scene));
-  const normalizeScene=scene=>({...scene,actors:scene.actors.map(name=>canonicalPersonName(name,{code:scene.code}))});
+  const normalizeScene=scene=>({...scene,actors:scene.actors.map(name=>canonicalPersonName(name,{code:scene.code,chapter:scene.chapter}))});
   const dedicated=scenesForChapters(chapters).map(scene=>filterMentionActors(normalizeScene({...scene,sourceUnits:[...new Set([...(scene.sourceUnits||[]),...sourceScenes.filter(s=>s.code===scene.code&&s.chapter===scene.chapter&&s.ref===scene.ref).flatMap(s=>s.sourceUnits||[])])]})));
   const extraScenes=chapters.flatMap(c=>(c.data?.eventScenes||[]).filter(s=>(!c.verses?.length||c.verses.some(v=>s.verseNumbers.includes(v)))&&!dedicated.some(d=>d.code===s.code&&d.chapter===s.chapter&&d.ref===s.ref)).map(normalizeScene).map(filterMentionActors).filter(s=>s.actors.every(name=>cast.some(p=>p.name===name))));
   return { cast, relations, events, scenes: [...OBJECT_SCENES.filter(s=>chapters.some(c=>c.code===s.code&&c.chap===s.chapter&&c.data)), ...dedicated,...extraScenes].map(s=>({...enhanceScene(s,cast),verseClips:chapters.filter(c=>c.code===s.code&&c.chap===s.chapter).flatMap(c=>verseClipsForScene(s,c.data?.verseClips||[],c.verses||[]).map(filterMentionActors))})), title: chapters.map((c) => `${c.name} ${c.chap}`).join(" · "), key: chapters.map((c) => `${c.code}.${c.chap}`).join("-") };

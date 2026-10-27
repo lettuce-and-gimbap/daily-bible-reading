@@ -59,6 +59,12 @@ test('창세기에서 개명 전후의 아브람·아브라함과 사래·사라
  assert.equal(sarah[0].name,'사라');
  assert.ok(model.relations.some(r=>r.from==='사라'&&r.to==='아브라함'&&r.label==='아내'),'개명 전 부부 관계도 통합 인물 이름으로 이어진다');
  assert.ok(model.relations.some(r=>r.from==='하나님'&&r.to==='아브라함'&&r.sourceRef==='창세기 12장'),'개명 뒤에도 부르심 관계는 한 인물에 이어진다');
+ assert.equal(model.cast.filter(p=>p.name.startsWith('라멕(')).length,1,'족보에만 언급된 셋 계열 라멕은 NPC로 세우지 않는다');
+ assert.equal(model.cast.find(p=>p.name.startsWith('라멕(')).name,'라멕(가인 계열)');
+ assert.equal(model.cast.filter(p=>p.name.startsWith('바로(')).length,2,'아브라함 시대와 요셉 시대의 서로 다른 바로를 분리한다');
+ assert.ok(model.relations.some(r=>r.from==='라멕(가인 계열)'&&r.to==='가인'));
+ assert.ok(model.relations.some(r=>r.from==='라멕(셋 계열)'&&r.to==='므두셀라'));
+ assert.ok(model.relations.some(r=>r.from==='바로(아브라함 시대)'&&r.to==='아브라함'));
 });
 
 test('사도행전에서 박해자 사울이 된 바울은 같은 한 인물로 관계 끝점도 연결한다',()=>{
@@ -70,6 +76,23 @@ test('사도행전에서 박해자 사울이 된 바울은 같은 한 인물로 
  assert.ok(paul[0].refs.some(ref=>ref==='사도행전 9장'));
  assert.ok(paul[0].refs.some(ref=>ref==='사도행전 13장'));
  assert.ok(model.relations.some(r=>r.from==='바울'||r.to==='바울'));
+});
+
+test('창세기에서 이름만 언급된 엘리에셀·롯·하몰은 해당 장면의 인물로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/gen.json',import.meta.url),'utf8'));
+ const ch15=buildWorldModel([{code:'gen',name:'창세기',chap:15,data:summary.chapters[15]}]);
+ const ch18=buildWorldModel([{code:'gen',name:'창세기',chap:18,data:summary.chapters[18]}]);
+ const ch33=buildWorldModel([{code:'gen',name:'창세기',chap:33,data:summary.chapters[33]}]);
+ const ch19=buildWorldModel([{code:'gen',name:'창세기',chap:19,data:summary.chapters[19]}]);
+ assert.ok(!ch15.cast.some(p=>p.name==='엘리에셀'));
+ assert.ok(ch15.relations.some(r=>r.from==='엘리에셀'),'관계 설명은 보존한다');
+ assert.ok(!ch18.cast.some(p=>p.name==='롯'));
+ assert.ok(!ch33.cast.some(p=>p.name==='하몰'));
+ assert.ok(ch19.cast.some(p=>p.name==='아브라함'),'19:27에서 실제로 소돔을 바라보므로 등장시킨다');
+ const ch11=buildWorldModel([{code:'gen',name:'창세기',chap:11,data:summary.chapters[11]}]);
+ const ch22=buildWorldModel([{code:'gen',name:'창세기',chap:22,data:summary.chapters[22]}]);
+ assert.ok(!ch11.cast.some(p=>['나홀','하란'].includes(p.name)));
+ assert.ok(!ch22.cast.some(p=>p.name==='나홀'));
 });
 
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{

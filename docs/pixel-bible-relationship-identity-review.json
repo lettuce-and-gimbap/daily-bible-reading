@@ -21,13 +21,18 @@
   },
   "manualReview": {
     "status": "in-progress",
-    "currentBook": "gen",
+    "currentBook": "exo",
     "currentChapter": 1,
-    "completedBooks": [],
+    "completedBooks": [
+      "gen"
+    ],
     "notes": [
       "Genesis alias integrations: Abram/Abraham and Sarai/Sarah.",
       "Acts alias integration: Saul/Paul, scoped to Acts so Saul the king stays distinct.",
-      "Kings I-II omitted per user request; an earlier 47-chapter audit and 289 summary relationship records review was completed in commit 5c9b062."
+      "Kings I-II omitted per user request; an earlier 47-chapter audit and 289 summary relationship records review was completed in commit 5c9b062.",
+      "창세기 1–50장 관계 기록 233건을 1차 전수검토 완료. 두 역본으로 신원 혼동 및 장면 출연 여부가 문제된 본문을 대조함.",
+      "창세기: 아브람/아브라함·사래/사라 통합; 가인 계열/셋 계열 라멕 및 아브라함/요셉 시대 바로 구분.",
+      "창세기 11장 나홀·하란, 15장 엘리에셀, 18장 롯, 22장 나홀, 33장 하몰은 해당 절에서 회상·족보로 언급될 뿐 현장 인물이 아니므로 월드 출연에서 제외. 19장 아브라함은 27절에 실제로 소돔을 바라보므로 유지."
     ]
   },
   "books": [
@@ -35,13 +40,13 @@
       "code": "gen",
       "name": "창세기",
       "chapters": 50,
-      "status": "in-progress"
+      "status": "complete"
     },
     {
       "code": "exo",
       "name": "출애굽기",
       "chapters": 40,
-      "status": "not-started"
+      "status": "in-progress"
     },
     {
       "code": "lev",

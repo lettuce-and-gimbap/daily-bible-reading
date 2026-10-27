@@ -11,6 +11,14 @@ const CHAPTERS = {
   'gen.5': ['*'],
   'gen.10': ['*'],
   'gen.36': ['*'],
+  // These are only referenced in the chapter's relationship note: the text
+  // explicitly places Eliezer in Abraham's concern and Lot in Sodom, not in
+  // the visitors' meeting at Mamre.
+  'gen.15': ['엘리에셀'],
+  'gen.18': ['롯'],
+  'gen.33': ['하몰'],
+  'gen.11': ['나홀', '하란'],
+  'gen.22': ['나홀'],
   '1ch.6': ['레위', '아론'],
   '1ch.9': ['사울', '요나단', '므립바알'],
   '1ch.24': ['엘르아살', '이다말'],

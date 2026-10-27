@@ -3,9 +3,13 @@ import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
 const spiritual=/^(하나님|여호와|성령|주님|천사|사탄|마귀|어린 양)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|자들/;
-export function canonicalPersonName(name,{code=''}={}) {
+export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='아브람')return '아브라함';
   if(code==='gen'&&name==='사래')return '사라';
+  if(code==='gen'&&name==='라멕'&&Number(chapter)===4)return '라멕(가인 계열)';
+  if(code==='gen'&&name==='라멕'&&Number(chapter)===5)return '라멕(셋 계열)';
+  if(code==='gen'&&name==='바로'&&Number(chapter)===12)return '바로(아브라함 시대)';
+  if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return '바로(요셉 시대)';
   if(code==='act'&&name==='사울')return '바울';
   return name;
 }
@@ -20,6 +24,10 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   // 캐릭터로 합치되 본문·발화의 시대별 표기는 그대로 둔다.
   if(code==='gen'&&['아브람','아브라함'].includes(name))return {...id('person','아브라함'),canonicalName:'아브라함'};
   if(code==='gen'&&['사래','사라'].includes(name))return {...id('person','사라'),canonicalName:'사라'};
+  if(code==='gen'&&name==='라멕'&&Number(chapter)===4)return {...id('person','lamech-cainite'),canonicalName:'라멕(가인 계열)'};
+  if(code==='gen'&&name==='라멕'&&Number(chapter)===5)return {...id('person','lamech-sethite'),canonicalName:'라멕(셋 계열)'};
+  if(code==='gen'&&name==='바로'&&Number(chapter)===12)return {...id('person','pharaoh-abraham-era'),canonicalName:'바로(아브라함 시대)'};
+  if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return {...id('person','pharaoh-joseph-era'),canonicalName:'바로(요셉 시대)'};
   if(name==='사울') {
     if(code==='act'||/바울/.test(role))return {...id('person','paul'),canonicalName:'바울'};
     if(['1sa','2sa','1ch'].includes(code)||/이스라엘.*왕|다윗.*왕/.test(role))return id('person','saul-king');
