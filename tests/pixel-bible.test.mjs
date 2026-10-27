@@ -1755,3 +1755,72 @@ test('성경 전용 동작은 화자 신원과 해당 장의 물건에만 적용
  assert.equal(uniqueInteraction({...n,name:'다윗'},'arrow'),null);
  assert.equal(uniqueInteraction({name:'요셉',readingChapters:[{code:'mat',chap:1}]},'cloak'),null);
 });
+
+
+test('요한복음 1장의 파견 질문과 바리새인 재질문을 구분하고 실제 관계선을 보존한다',async()=>{
+ const summary=JSON.parse(await (await import('node:fs/promises')).readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));
+ const chapter=summary.chapters['1'];
+ assert.ok(chapter.people.some(p=>p.name==='바리새인'));
+ assert.ok(chapter.rels.some(r=>r.from==='제사장과 레위인'&&r.to==='요한'&&r.verses==='19-22'));
+ assert.ok(chapter.rels.some(r=>r.from==='바리새인'&&r.to==='요한'&&r.verses==='24-28'));
+ assert.ok(chapter.rels.some(r=>r.from==='요한'&&r.to==='안드레'&&r.verses==='35-37'));
+ const {NEW_TESTAMENT_DIALOGUE_ROWS}=await import('../js/features/pixel-bible/nt-dialogue.js');
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(r=>r[0]==='jhn'&&r[1]===1);
+ assert.ok(rows.some(r=>r[2]==='바리새인'&&r[6].includes('25')));
+ const delegation=rows.find(r=>r[2]==='제사장과 레위인');
+ assert.ok(delegation&&delegation[6].every(ref=>ref!=='25'));
+});
+
+
+test('요한복음 2장은 실제 가나 잔치와 성전 논쟁의 행위자 응답을 구체적으로 연결한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));const chapter=summary.chapters['2'];
+ assert.ok(chapter.rels.some(r=>r.from==='예수'&&r.to==='하인들'&&r.verses==='7-8'));
+ assert.ok(chapter.rels.some(r=>r.from==='연회장'&&r.to==='신랑'&&r.verses==='9-10'));
+ assert.ok(chapter.rels.some(r=>r.from==='유대인들'&&r.to==='예수'&&r.verses==='18-20'));
+ assert.ok(!chapter.story.includes('큰 망신'));
+});
+
+
+test('요한복음 3장은 회상 속 모세를 현장 캐스트에서 빼고 니고데모 문답 근거를 정확히 둔다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));const chapter=summary.chapters['3'];
+ assert.ok(chapter.people.some(p=>p.name==='모세'),'회상된 인물은 색인에는 보존한다');
+ assert.ok(chapter.rels.some(r=>r.from==='니고데모'&&r.to==='예수'&&r.verses==='1-10'&&r.note.includes('어떻게 다시 날 수 있느냐')));
+ assert.ok(chapter.story.includes('밤에 예수님을 찾아와요.'));assert.ok(!chapter.story.includes('눈을 피하려'));
+ const model=buildWorldModel([{code:'jhn',name:'요한복음',chap:3,data:chapter}]);
+ assert.ok(!model.cast.some(p=>p.name==='모세'));
+});
+
+
+test('요한복음 4–5장의 역사적 언급 인물은 월드에 세우지 않고 본문 사실을 과장하지 않는다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));
+ for(const [chap,name]of [[4,'야곱'],[5,'요한'],[5,'모세']]){const model=buildWorldModel([{code:'jhn',name:'요한복음',chap,data:summary.chapters[String(chap)]}]);assert.ok(!model.cast.some(p=>p.name===name),`jhn.${chap} ${name} is a cited figure`);}
+ assert.ok(!summary.chapters['4'].story.includes('사람들 눈을 피'));
+ assert.ok(summary.chapters['4'].rels.some(r=>r.from==='왕의 신하'&&r.to==='예수'&&r.verses==='46-50'));
+ assert.equal(summary.chapters['5'].rels.filter(r=>['요한','모세'].includes(r.from)&&r.to==='예수').length,0);
+});
+
+
+test('요한복음 8·10장의 회상·비유 인물은 실제 관계 대화 대상으로 만들지 않는다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));
+ for(const [chap,names]of [[8,['아브라함','마귀']],[10,['요한','양들','삯꾼','도둑']]]){const model=buildWorldModel([{code:'jhn',name:'요한복음',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`jhn.${chap} ${name} only cited / figurative`);}
+ assert.ok(!summary.chapters['8'].rels.some(r=>r.from==='유대인들'&&r.to==='아브라함'));
+ assert.ok(!summary.chapters['10'].rels.some(r=>['양들','삯꾼','도둑'].includes(r.from)||['양들','삯꾼','도둑'].includes(r.to)));
+});
+
+
+test('요한복음 11–15장의 관계는 실제 자매 대화·요청 전달을 담고 언급 인물은 분리한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));
+ const c11=summary.chapters['11'];assert.ok(c11.rels.some(r=>r.from==='예수'&&r.to==='마르다'&&r.verses==='21-27'));assert.ok(c11.rels.some(r=>r.from==='예수'&&r.to==='마리아'&&r.verses==='32-35'));
+ const c12=summary.chapters['12'];assert.ok(c12.rels.some(r=>r.from==='빌립'&&r.to==='안드레'&&r.verses==='20-22'));assert.ok(c12.rels.some(r=>r.from==='안드레'&&r.to==='예수'&&r.verses==='21-22'));assert.ok(!c12.rels.find(r=>r.from==='무리'&&r.to==='예수').note.includes('로마를 몰아낼'));
+ for(const [chap,names]of [[13,['가룟 시몬','사탄']],[15,['세상']]]){const model=buildWorldModel([{code:'jhn',name:'요한복음',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`jhn.${chap} ${name} is not a scene character`);}
+ assert.ok(!summary.chapters['13'].rels.some(r=>r.to==='가룟 시몬'||r.from==='사탄'));assert.ok(!summary.chapters['15'].rels.some(r=>r.from==='세상'));
+});
+
+
+test('요한복음 16–21장은 추상 집단·회상 인물과 실제 수난·부활 대면을 구분한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/jhn.json',import.meta.url),'utf8'));
+ for(const [chap,names]of [[16,['세상']],[17,['세상','믿을 사람들','멸망의 자식']]]){const model=buildWorldModel([{code:'jhn',name:'요한복음',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`jhn.${chap} ${name} is discourse/reference only`);}
+ assert.ok(!summary.chapters['16'].rels.some(r=>r.from==='세상'||r.to==='세상'));assert.ok(!summary.chapters['17'].rels.some(r=>r.from==='믿을 사람들'||r.to==='믿을 사람들'));
+ assert.ok(summary.chapters['19'].story.includes('히브리어, 라틴어, 그리스어'));assert.ok(summary.chapters['19'].story.includes('아리마대 요셉과 니고데모'));
+ const c20=summary.chapters['20'];assert.ok(c20.rels.some(r=>r.from==='막달라 마리아'&&r.to==='예수의 사랑하시는 제자'&&r.verses==='1-2'));assert.ok(c20.rels.some(r=>r.from==='도마'&&r.to==='예수'&&r.verses==='26-29'));
+});

@@ -3,6 +3,14 @@
 // words such as "조상" also describe characters who are present in genealogies
 // or active narratives, so a broad role-text filter would remove real actors.
 const CHAPTERS = {
+  'jhn.3': ['모세'],
+  'jhn.4': ['야곱'],
+  'jhn.5': ['요한', '모세'],
+  'jhn.10': ['요한', '양들', '삯꾼', '도둑'],
+  'jhn.13': ['가룟 시몬', '사탄'],
+  'jhn.15': ['세상'],
+  'jhn.16': ['세상'],
+  'jhn.17': ['믿을 사람들', '멸망의 자식', '세상'],
   'luk.1': ['요셉'],
   'luk.3': ['빌라도', '헤로디아'],
   'luk.8': ['구사'],
@@ -216,8 +224,7 @@ const CHAPTERS = {
   'jer.11': ['조상들'],
   'jer.15': ['모세와 사무엘', '므낫세'],
   'jer.35': ['요나답'],
-  'jhn.4': ['야곱'],
-  'jhn.8': ['아브라함'],
+  'jhn.8': ['아브라함', '마귀'],
   'jos.24': ['요셉'],
   'psa.22': ['조상들'],
   'psa.44': ['조상들'],
@@ -420,7 +427,7 @@ const CHAPTERS = {
 export function isMentionOnlyPerson(person, { code = '', chapter = '' } = {}) {
   if (/본문에 이름이 언급/.test(person?.role || '')) return true;
   const reviewed = CHAPTERS[`${code}.${chapter}`] || [];
-  return reviewed.includes('*') || reviewed.includes(person?.name);
+  return reviewed.includes('*') || reviewed.includes(person?.name) || code === 'jhn' && Number(chapter) === 10 && person?.name === '양';
 }
 
 export function withoutMentionOnlyActors(scene, mentionOnlyNames = []) {
