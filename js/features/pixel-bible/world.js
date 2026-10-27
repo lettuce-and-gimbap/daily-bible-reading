@@ -37,7 +37,7 @@ import { characterWalkFrame } from './character-motion.js';
 import { loveBoothExchange } from './relationship-lines.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
-import { relationshipLinks, relationshipFocus, drawRelationshipLinks } from './relationship-overlay.js';
+import { relationshipLinks, relationshipFocus, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
@@ -317,10 +317,10 @@ export async function mountPixelWorld(shell, options) {
     const explanation=speechContext(choice,chapterData);if(!explanation&&!parsed?.verses?.length)return;
     hideSpeech();shell.querySelector('.pb-scripture')?.remove();
     const panel=document.createElement('section');panel.className='pb-scripture';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','대사 쉽게 이해하기');
-    panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 구절 보기</button></div>';
+    panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 성경 본문 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;panel.querySelector('.pb-detail-context').hidden=!explanation;
     if(explanation)panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
-    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent='관련 구절 보기';if(parsed?.verses?.length)link.setAttribute('aria-label',`${reference} 관련 구절 보기`);
+    const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent='관련 성경 본문 보기';if(parsed?.verses?.length)link.setAttribute('aria-label',`${reference} 관련 성경 본문 보기`);
     shell.append(panel);panel.querySelector('button').focus();
   }
   function updateEncounters(now){
@@ -565,7 +565,7 @@ export async function mountPixelWorld(shell, options) {
     selected = i;
     shell.querySelectorAll("[data-person]").forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.person) >= 0 && Number(b.dataset.person) === i));
     const n=npcs[i];
-    if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();return;}
+    if(!n){shell.querySelector('.pb-person-details').innerHTML='<p>인물을 선택하면 특징과 관계를 볼 수 있어요.</p>';renderRecipes();draw();return;}
     if(speakOnSelect){
       discover(n);
       const v=view(),anchor=interactionAnchor(n,TILE),sx=anchor.x*v.scale+v.x,sy=anchor.y*v.scale+v.y;
@@ -575,7 +575,7 @@ export async function mountPixelWorld(shell, options) {
     renderRecommendations(n);
     const style=characterStyle(n.name,i,n.role,n.refs,n.creature||false);
     shell.querySelector('.pb-person-details').innerHTML=`<h3>${esc(displayPersonName(n.name))}</h3><button class="pb-button" data-action="person-collection">발견 도감에서 보기</button><p class="pb-help">현재 분량: 연결 ${importanceFor(model,n).connections}명 · 관련 사건 ${importanceFor(model,n).events}개</p><p>${esc(n.role||'본문 속 인물')}</p><p>${esc(n.refs.join(', '))}</p><p class="pb-help">${esc(n.motion.evidence)}</p><p class="pb-help">${n.creature?(n.creature.kind==='plant'?'본문 속 식물':'본문 속 동물'):n.identity?.kind==='group'?'집단을 대표하는 상징 캐릭터':n.identity?.kind==='unresolved'?'인물 신원 추가 검토 중':n.identity?.kind==='spiritual'?'본문 속 존재의 상징 표현':'본문 인물'} · ${esc(n.identity?.id||'체험용 인물')}</p><h4>외형 근거</h4><p>${esc(style.physicalEvidence||'현재 본문에서 확정하지 않은 외모는 창작으로 표현해요.')}</p><p>${esc(style.physique?.evidence||'생물 고유 체형')}</p><p>${esc(style.wardrobeLabel||'생물 고유 외형')}</p><p>${esc(style.evidence)}</p><p class="pb-help">${esc(style.design)}</p><small>확인된 본문 특징과 창작 디자인을 구분해 표시해요.</small><p class="pb-help">캐릭터를 누른 채 끌면 집어 들 수 있어요. 빈 땅을 누르면 선택을 해제하고 자유롭게 거닐어요. 방향키로 직접 걸어갈 수도 있어요.</p>`;
-    renderRecipes();if(!speakOnSelect)clearInfo();
+    renderRecipes();if(!speakOnSelect)clearInfo();draw();
   }
   let discoveryIndex=null;
   function saveDiscoveries(){try{localStorage.setItem(DISCOVERY_KEY,JSON.stringify(discoveries));return true;}catch(_){say('도감은 이번 입장 동안 유지돼요. 기기 저장 공간을 확인해 주세요.');return false;}}
@@ -1203,7 +1203,7 @@ export async function mountPixelWorld(shell, options) {
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
     const waterPalette=BACKGROUNDS[backgroundKey];
     const relationshipHighlight=showRelationships&&selected>=0?relationshipFocus(model.relations,npcs,npcs[selected]):null;
-    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>{const dim=relationshipHighlight&&!relationshipHighlight.has(n);if(dim){ctx.save();ctx.globalAlpha=.24;}drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced,waterPalette.water,waterPalette.wave);if(dim)ctx.restore();}}))].sort((a,b)=>a.y-b.y);
+    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,focus:relationshipHighlight?.has(n)||npcs.indexOf(n)===selected,draw:()=>{const alpha=relationshipOpacity(relationshipHighlight,n);ctx.save();ctx.globalAlpha*=alpha;drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected||!!relationshipHighlight?.has(n),activeEvent?.scene.actors.includes(n.name),reduced,waterPalette.water,waterPalette.wave);ctx.restore();}}))].sort((a,b)=>a.y-b.y||Number(a.focus)-Number(b.focus));
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,reduced);
     if(objectHold?.active){

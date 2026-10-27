@@ -2,8 +2,11 @@ import {physiqueFor} from './physique.js';
 import {grabbedOrigin} from './grab.js';
 import { interactionAnchor } from './object-response.js';
 function endpoints(r,npcs){
- const a=npcs.find(n=>n.name===r.from&&(!r.sourceRef||n.refs.includes(r.sourceRef)));
- const b=npcs.find(n=>n.name===r.to&&(!r.sourceRef||n.refs.includes(r.sourceRef)));
+ const resolve=endpoint=>{
+  const name=typeof endpoint==='string'?endpoint:endpoint?.name,ref=typeof endpoint==='object'?endpoint?.ref:r.sourceRef,identity=typeof endpoint==='object'?endpoint?.identity?.id:null;
+  return npcs.find(n=>n.name===name&&(!ref||(n.refs||[]).includes(ref))&&(!identity||n.identity?.id===identity));
+ };
+ const a=resolve(r.from),b=resolve(r.to);
  return a&&b&&a!==b?[a,b]:null;
 }
 export function relationshipFocus(relations,npcs,selected){
@@ -12,6 +15,7 @@ export function relationshipFocus(relations,npcs,selected){
  for(const r of relations){const pair=endpoints(r,npcs);if(pair?.includes(selected))for(const person of pair)focus.add(person);}
  return focus;
 }
+export function relationshipOpacity(focus,person){return focus&&!focus.has(person)?0.16:1;}
 // 매 프레임 현재 위치로 머리 위 연결점을 계산한다. 드래그 좌표도 동일하게 반영한다.
 export function relationshipLinks(relations,npcs,drag=null,focusPerson=null) {
  const links=[],seen=new Set();

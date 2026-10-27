@@ -1100,7 +1100,8 @@ test('말풍선에는 구절 줄을 빼고 자세히 보기에는 해설과 관�
  assert.match(source,/data-action="detail-passage"/);
  assert.match(source,/data-action="speech-details">자세히 보기/);
  assert.match(source,/data-action="encounter-details">자세히 보기/);
- assert.match(source,/관련 구절 보기/);assert.doesNotMatch(source,/관련\s*\$\{?\w*verse\w*\}?\s*절/);
+ assert.match(source,/관련 성경 본문 보기/);assert.doesNotMatch(source,/관련\s*\$\{?\w*verse\w*\}?\s*절/);
+ assert.match(source,/renderRecipes\(\);if\(!speakOnSelect\)clearInfo\(\);draw\(\)/,'인물을 선택하면 관계 강조를 즉시 다시 그린다');
 });
 
 test('수사 숫자와 지시어 이 일을 구별해 관계 대사의 조사를 지킨다',()=>{
