@@ -210,7 +210,7 @@ export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random
   {speaker:b,target:a,text:textB,entry:reverse||forward,ref:(reverse||forward)?.ref||relation.ref},
  ].map(({speaker,target,text,entry,ref})=>({
   id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,
-  ref,detailText:[relation.text,entry?.detail,generated?'관계와 사건 설명을 바탕으로 구성한 짧은 창작 상호작용입니다.':null].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair',origin:generated?'chapter-relation':'authored',pairIndex:index,
+  ref,lineDetail:entry?.lineDetails?.[index]||'',detailText:[entry?.detail,relation.text,generated?'관계와 사건 설명을 바탕으로 구성한 짧은 창작 상호작용입니다.':null].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair',origin:generated?'chapter-relation':'authored',pairIndex:index,
  }));
 }
 

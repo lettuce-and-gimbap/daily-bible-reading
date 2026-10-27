@@ -2,6 +2,7 @@ import {parseReference} from './references.js';
 // Explain only this exchange. A chapter summary is never a substitute for context.
 export function speechContext(choice,chapters=[]){
  if(!choice||['object-daily','daily','general'].includes(choice.origin))return '';
+ if(choice.lineDetail)return String(choice.lineDetail).trim();
  const ref=parseReference(choice.ref),chapter=chapters.find(c=>c.code===ref?.code&&Number(c.chap)===ref?.chapter);
  const names=[choice.speaker?.name,choice.target?.name].filter(Boolean);
  const sentences=t=>String(t||'').split(/(?<=[.!?。]|다\.|요\.)\s+/u).map(s=>s.trim()).filter(s=>s&&s.length<=180);
