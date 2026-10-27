@@ -42,7 +42,7 @@ function pixelBibleModal(contents, world = false) {
     dialog.style.setProperty('--pb-viewport-height', `${viewportHeight}px`);
     dialog.style.setProperty('--pb-viewport-offset-left', `${viewportLeft}px`);
     dialog.style.setProperty('--pb-viewport-offset-top', `${viewportTop}px`);
-    const fallback = viewportHeight >= viewportWidth && !orientationState.locked;
+    const fallback = viewportHeight >= viewportWidth;
     dialog.classList.toggle("pb-css-landscape", fallback);
     const hint = dialog.querySelector(".pb-rotate");
     if (hint) hint.hidden = !fallback || !!orientationState?.hintExpired;
@@ -51,6 +51,7 @@ function pixelBibleModal(contents, world = false) {
     window.addEventListener("resize", syncOrientationFallback, { signal: abort.signal });
     window.addEventListener("orientationchange", syncOrientationFallback, { signal: abort.signal });
     window.visualViewport?.addEventListener("resize", syncOrientationFallback, { signal: abort.signal });
+    document.addEventListener("fullscreenchange", syncOrientationFallback, { signal: abort.signal });
   }
   dialog.addEventListener("close", () => {
     clearTimeout(hintTimer); abort.abort(); dispose();
@@ -135,6 +136,10 @@ async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState =
   const fullscreenAttempt=mobile&&fullscreenTarget&&!fullscreen&&typeof fullscreenTarget.requestFullscreen==='function'
     ?completesWithin(()=>fullscreenTarget.requestFullscreen({ navigationUI: "hide" })):Promise.resolve(false);
   [locked,fullscreen]=await Promise.all([lockAttempt,fullscreenAttempt.then(value=>value||fullscreen)]);
+  // Some browsers require fullscreen before accepting orientation lock.
+  if (!locked && fullscreen && canRequestOrientationLock && dialog?.isConnected) {
+    locked = await completesWithin(() => screen.orientation.lock("landscape"));
+  }
   if (orientationState) orientationState.locked = locked;
   const latestViewport = window.visualViewport;
   const latestWidth = Math.max(1, Math.round(latestViewport?.width || window.innerWidth));
@@ -145,7 +150,7 @@ async function pixelBibleLandscape(dialog = pixelBibleDialog, orientationState =
   dialog?.style.setProperty('--pb-viewport-height', `${latestHeight}px`);
   dialog?.style.setProperty('--pb-viewport-offset-left', `${latestLeft}px`);
   dialog?.style.setProperty('--pb-viewport-offset-top', `${latestTop}px`);
-  const useFallback = latestHeight >= latestWidth && !locked;
+  const useFallback = latestHeight >= latestWidth;
   dialog?.classList.toggle("pb-css-landscape", useFallback);
   if (hint) hint.hidden = !useFallback || !!orientationState?.hintExpired;
   syncFallback?.();
