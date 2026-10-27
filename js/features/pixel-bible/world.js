@@ -129,7 +129,7 @@ export function buildWorldModel(chapters) {
       // 설명·관계 자료에는 남아도 월드 캐릭터로 세우지 않는다.
       if (isMentionOnlyPerson(person,{code,chapter:chap})) continue;
       const identity=resolveIdentity(person.name,{code,chapter:chap,role:person.role||''});
-      const personKey=identity.kind==='person'?identity.id:`${person.name}:${identity.id}`;
+      const personKey=identity.kind==='person'||identity.mergeAliases?identity.id:`${person.name}:${identity.id}`;
       if (!people.has(personKey)) people.set(personKey, { ...person, name:identity.canonicalName||person.name, identity, refs: [], roles: [] });
       const p = people.get(personKey);
       p.refs.push(reference);

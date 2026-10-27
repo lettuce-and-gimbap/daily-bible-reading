@@ -304,7 +304,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3790);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3791);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -958,7 +958,7 @@ test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이�
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'ezr',name:'에스라',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters);
  const humanRelations=context.relations.filter(r=>r.from.name!=='하나님'&&r.to.name!=='하나님');
- assert.equal(humanRelations.length,44,'본문 관계선과 대사 데이터가 추가로 보장하는 인간 관계선 수');
+ assert.equal(humanRelations.length,45,'본문 관계선과 대사 데이터가 추가로 보장하는 인간 관계선 수');
  for(const relation of humanRelations){
   const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});
   assert.equal(lines.length,2,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);

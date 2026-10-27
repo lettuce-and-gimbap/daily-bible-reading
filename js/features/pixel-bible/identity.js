@@ -28,6 +28,9 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='2ch'&&Number(chapter)===36&&name==='시드기야'||code==='2ki'&&[24,25].includes(Number(chapter))&&name==='시드기야')return '시드기야(유다 왕)';
   if(code==='2ch'&&Number(chapter)===11&&name==='마할랏')return '마할랏(르호보암의 아내)';
   if(code==='gen'&&Number(chapter)===28&&name==='마할랏')return '마할랏(이스마엘의 딸)';
+  if(code==='ezr'&&[5,6].includes(Number(chapter))&&name.startsWith('스가랴(잇도'))return '스가랴(잇도의 계열)';
+  if(code==='ezr'&&Number(chapter)===4&&name==='그 땅 사람들')return '대적들';
+  if((code==='ezr'&&[2,3,4,5,6].includes(Number(chapter))&&name==='예수아')||(code==='hag'&&[1,2].includes(Number(chapter))&&name==='여호수아')||(code==='zec'&&[3,6].includes(Number(chapter))&&name==='여호수아')||(code==='neh'&&Number(chapter)===12&&name==='예수아'))return '예수아';
   if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return '아히멜렉(아비아달의 아들)';
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return '아히멜렉(아비아달의 아버지)';
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return '엘하난(야레오르김의 아들)';
@@ -42,6 +45,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(spiritual.test(name))return id('spiritual',name);
+  if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
@@ -69,6 +73,11 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if((code==='2ch'&&Number(chapter)===35&&name==='느고')||(code==='2ki'&&Number(chapter)===23&&name==='바로 느고'))return {...id('person','pharaoh-necho-ii'),canonicalName:'느고'};
   if(code==='2ch'&&Number(chapter)===11&&name==='마할랏')return {...id('person','mahalath-wife-of-rehoboam'),canonicalName:'마할랏(르호보암의 아내)'};
   if(code==='gen'&&Number(chapter)===28&&name==='마할랏')return {...id('person','mahalath-daughter-of-ishmael'),canonicalName:'마할랏(이스마엘의 딸)'};
+  if(code==='ezr'&&Number(chapter)===2&&name==='느헤미야(귀환자)')return {...id('person','nehemiah-returnee-ezra2'),canonicalName:'느헤미야(귀환자)'};
+  if(code==='ezr'&&Number(chapter)===2&&name==='모르드개(귀환자)')return {...id('person','mordecai-returnee-ezra2'),canonicalName:'모르드개(귀환자)'};
+  if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
+  if(code==='ezr'&&[5,6].includes(Number(chapter))&&name.startsWith('스가랴(잇도'))return {...id('person','zechariah-prophet-grandson-of-iddo'),canonicalName:'스가랴(잇도의 계열)'};
+  if((code==='ezr'&&[2,3,4,5,6].includes(Number(chapter))&&name==='예수아')||(code==='hag'&&[1,2].includes(Number(chapter))&&name==='여호수아')||(code==='zec'&&[3,6].includes(Number(chapter))&&name==='여호수아')||(code==='neh'&&Number(chapter)===12&&name==='예수아'))return {...id('person','jeshua-son-of-jehozadak'),canonicalName:'예수아'};
   if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return {...id('person','ahimelech-son-of-abiathar'),canonicalName:'아히멜렉(아비아달의 아들)'};
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return {...id('person','ahimelech-priest-of-nob'),canonicalName:'아히멜렉(아비아달의 아버지)'};
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return {...id('person','elhanan-son-of-jaare-oregim'),canonicalName:'엘하난(야레오르김의 아들)'};

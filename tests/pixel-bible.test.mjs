@@ -125,6 +125,33 @@ test('역대하 인물의 동명이인·별칭을 통합하고 군사 연합의 
  assert.ok(ch20.relations.some(r=>r.from==='모압과 암몬 연합군'&&r.to==='여호사밧'&&/마온 사람들/.test(r.note)));
 });
 
+test('에스라의 중복 집단·동명이인을 정리하고 혼인 관계와 귀환 인물을 구분한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/ezr.json',import.meta.url),'utf8'));
+ const ch3=buildWorldModel([{code:'ezr',name:'에스라',chap:3,data:summary.chapters[3]}]);
+ assert.ok(!ch3.cast.some(person=>person.name==='이웃 민족'));
+ const ch4=buildWorldModel([{code:'ezr',name:'에스라',chap:4,data:summary.chapters[4]}]);
+ assert.ok(ch4.cast.some(person=>person.name==='대적들'));
+ assert.ok(!ch4.cast.some(person=>person.name==='그 땅 사람들'));
+ assert.ok(summary.chapters[4].people.some(person=>person.name==='그 땅 사람들'),'본문 인물 색인의 원래 표기는 보존한다');
+ assert.equal(ch4.cast.filter(person=>person.name==='대적들').length,1,'같은 이웃 집단의 제안자·방해자를 한 캐릭터로 병합한다');
+ const ch6=buildWorldModel([{code:'ezr',name:'에스라',chap:6,data:summary.chapters[6]}]);
+ assert.ok(!ch6.cast.some(person=>['고레스','아닥사스다'].includes(person.name)));
+ assert.ok(ch6.cast.some(person=>person.name==='다리오'));
+ const ch9=buildWorldModel([{code:'ezr',name:'에스라',chap:9,data:summary.chapters[9]}]);
+ assert.ok(!ch9.cast.some(person=>person.name==='백성과 제사장'));
+ assert.ok(ch9.relations.some(r=>r.to==='백성과 제사장'),'고발된 집단과 관계 근거는 유지한다');
+ const ch10=buildWorldModel([{code:'ezr',name:'에스라',chap:10,data:summary.chapters[10]}]);
+ assert.ok(ch10.cast.some(person=>person.name==='이방 아내와 자녀들'));
+ assert.ok(ch10.relations.some(r=>r.from==='백성'&&r.to==='이방 아내와 자녀들'&&r.kind==='family'));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('스가랴(잇도의 아들)',{code:'ezr',chapter:5}).id,resolveIdentity('스가랴(잇도의 손자)',{code:'ezr',chapter:6}).id);
+ assert.equal(resolveIdentity('예수아',{code:'ezr',chapter:3}).id,resolveIdentity('여호수아',{code:'hag',chapter:1}).id);
+ assert.equal(resolveIdentity('여호수아',{code:'hag',chapter:1}).id,resolveIdentity('예수아',{code:'neh',chapter:12}).id);
+ assert.notEqual(resolveIdentity('예수아',{code:'ezr',chapter:3}).id,resolveIdentity('여호수아',{code:'jos',chapter:1}).id);
+ assert.notEqual(resolveIdentity('느헤미야(귀환자)',{code:'ezr',chapter:2}).id,resolveIdentity('느헤미야',{code:'neh',chapter:1}).id);
+ assert.notEqual(resolveIdentity('모르드개(귀환자)',{code:'ezr',chapter:2}).id,resolveIdentity('모르드개',{code:'est',chapter:2}).id);
+});
+
 test('출애굽기에서 르우엘과 이드로는 같은 장인이고 두 시대의 바로는 각각 분리한다',async()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/exo.json',import.meta.url),'utf8'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'exo',name:'출애굽기',chap:Number(chap),data}));

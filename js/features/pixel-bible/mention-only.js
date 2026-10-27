@@ -117,6 +117,11 @@ const CHAPTERS = {
   '2ch.27': ['웃시야'],
   '2ch.29': ['다윗'],
   '2ch.36': ['예레미야', '요시야'],
+  'ezr.3': ['이웃 민족'],
+  'ezr.9': ['백성과 제사장'],
+  // In Ezra 6 the kings are cited as sources of earlier decrees, not as
+  // participants at the dedication and Passover in Jerusalem.
+  'ezr.6': ['고레스'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],
