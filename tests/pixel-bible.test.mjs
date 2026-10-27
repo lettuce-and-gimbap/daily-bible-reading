@@ -1904,3 +1904,16 @@ test('사도행전 21–28장은 장면 별칭과 실제 동행자, 회고 속 �
  for(const [index,name]of [[4,'예수'],[4,'가이사'],[5,'사탄'],[7,'이사야']])assert.ok(!models[index].cast.some(p=>p.name===name),`${chapters[index].chap}장 ${name}은 해당 장면의 현장 인물이 아니다`);
  assert.ok(models[6].cast.some(p=>p.name==='누가')&&models[7].cast.some(p=>p.name==='누가'),'1인칭 복수 항해 기록의 동행자를 반영한다');
 });
+
+test('로마서는 편지의 수신자·인용 인물·비유를 현장 캐릭터와 구분한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/rom.json',import.meta.url),'utf8'));
+ for(let chap=1;chap<=16;chap++){
+  const model=buildWorldModel([{code:'rom',name:'로마서',chap,data:summary.chapters[String(chap)]}]);
+  assert.ok(model.cast.some(p=>p.name==='바울'),`rom.${chap} 저자 바울`);
+  assert.ok(!model.cast.some(p=>['예수','하나님','성령','죄','나','우리'].includes(p.name)),`rom.${chap} 인용·개념 인물 제외`);
+ }
+ const final=buildWorldModel([{code:'rom',name:'로마서',chap:16,data:summary.chapters['16']}]);
+ for(const name of ['디모데','누기오','야손','소시바더','더디오','가이오','에라스도','구아도'])assert.ok(final.cast.some(p=>p.name===name),`rom.16 편지 작성·전달 맥락 ${name}`);
+ for(const name of ['뵈뵈','브리스가','아굴라','에배네도','안드로니고와 유니아','루포'])assert.ok(!final.cast.some(p=>p.name===name),`rom.16 문안 대상 ${name}은 편지 장면에 부재`);
+ const {resolveIdentity,canonicalPersonName}=await import('../js/features/pixel-bible/identity.js');assert.equal(resolveIdentity('브리스가',{code:'rom',chapter:16}).id,resolveIdentity('브리스길라',{code:'act',chapter:18}).id);assert.equal(canonicalPersonName('브리스가',{code:'rom',chapter:16}),'브리스길라');
+});

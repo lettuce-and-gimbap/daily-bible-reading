@@ -4,6 +4,7 @@ const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>![
 const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|어린 양)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(name==='브리스가')return '브리스길라';
   if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return '글라우디오 루시아';
   if(code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return '베드로';
   if(code==='mrk'&&Number(chapter)===2&&name==='레위')return '마태';
@@ -66,6 +67,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
+  if(['브리스가','브리스길라'].includes(name))return {...id('person','priscilla'),canonicalName:'브리스길라'};
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
   if(name==='마태'||code==='mrk'&&Number(chapter)===2&&name==='레위')return {...id('person','마태'),canonicalName:'마태'};
   if(code==='luk'&&Number(chapter)===5&&name==='레위')return {...id('person','마태'),canonicalName:'마태'};

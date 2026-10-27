@@ -463,9 +463,13 @@
         {"name":"루포","role":"주 안에서 택함받은 이","weight":1},
         {"name":"분쟁을 일으키는 자들","role":"살펴 떠날 이들","weight":2},
         {"name":"디모데","role":"바울의 동역자","weight":2},
+        {"name":"누기오","role":"바울과 함께 문안한 동역자","weight":1},
+        {"name":"야손","role":"바울과 함께 문안한 동역자","weight":1},
+        {"name":"소시바더","role":"바울과 함께 문안한 친척","weight":1},
         {"name":"더디오","role":"편지를 대필한 이","weight":2},
         {"name":"가이오","role":"교회를 돌본 이","weight":1},
         {"name":"에라스도","role":"성의 재무관","weight":1},
+        {"name":"구아도","role":"형제","weight":1},
         {"name":"사탄","role":"발아래 상할 자","weight":1},
         {"name":"하나님","role":"견고하게 하시는 분","weight":3}
       ],
