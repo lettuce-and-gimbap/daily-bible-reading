@@ -37,7 +37,7 @@ import { characterWalkFrame } from './character-motion.js';
 import { loveBoothExchange } from './relationship-lines.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
-import { relationshipLinks, drawRelationshipLinks } from './relationship-overlay.js';
+import { relationshipLinks, relationshipFocus, drawRelationshipLinks } from './relationship-overlay.js';
 import { chapterPeople } from './chapter-people.js';
 import { opposedDirections, planConversation } from './conversation.js';
 import { parseReference } from './references.js';
@@ -222,12 +222,13 @@ export async function mountPixelWorld(shell, options) {
   let loveBoothSession=null;
   const loveBooth=()=>objects.find(o=>o.kind==='love-booth');
   const boothSlots=o=>[{x:o.x-1,y:o.y},{x:o.x+1,y:o.y}];
-  const boothPair=()=>npcs.filter(n=>n.loveBooth===loveBooth()&&!n.creature).slice(0,2);
+  const boothPair=()=>npcs.filter(n=>n.loveBooth===loveBooth()&&!n.creature).sort((a,b)=>a.x-b.x).slice(0,2);
   const restoreBoothCamera=()=>{if(loveBoothSession?.home){Object.assign(camera,loveBoothSession.home);constrainCamera(camera,canvas.width,canvas.height);syncCamera();}};
   function cancelTalk(){if(pendingTalk){pendingTalk.plan.mover.path=[];pendingTalk=null;}}
   function hideSpeech(){if(shownSpeech?.speaker)shownSpeech.speaker.expression='neutral';manualSpeechUntil=0;cancelTalk();speech.dismiss(performance.now());speechElement.hidden=true;shownSpeech=null;}
   function dismissAllBubbles(){hideSpeech();encounters.clear();encounterLines=[];for(const el of encounterBubbles.values()){el._closePortrait?.();el.remove();}encounterBubbles.clear();}
   function faceEachOther(a,b){const directions=opposedDirections(a,b);if(!directions)return false;[a.direction,b.direction]=directions;a.idle=b.idle=6;return true;}
+  function faceAcrossBooth(a,b){const [left,right]=[a,b].sort((x,y)=>x.x-y.x);left.direction='right';right.direction='left';left.idle=right.idle=6;}
   function startLoveBooth(){
     if(loveBoothSession)return;
     const stage=loveBooth(),pair=boothPair();if(!stage||pair.length!==2)return;
@@ -236,7 +237,7 @@ export async function mountPixelWorld(shell, options) {
     const special=mode==='special';
     const lines=exchange.map(line=>({...line,origin:'booth',kind:'pair',ref:line.ref||relation?.ref}));
     for(const n of pair){n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;}
-    faceEachOther(a,b);cancelTalk();hideSpeech();encounters.clear();
+    faceAcrossBooth(a,b);cancelTalk();hideSpeech();encounters.clear();
     loveBoothSession={stage,pair,lines,mode:special?'special':'awkward',started:performance.now(),until:performance.now()+5800,home:{...camera}};
     camera.x=((a.x+b.x)/2)*TILE;camera.y=((a.y+b.y)/2)*TILE-28;camera.zoom=Math.max(camera.zoom,1.75);constrainCamera(camera,canvas.width,canvas.height);syncCamera();
     say(special?'두 사람이 무대에서 특별한 이야기를 나눠요.':'두 사람이 잠시 인사한 뒤 무대에서 내려와요.');
@@ -1201,7 +1202,8 @@ export async function mountPixelWorld(shell, options) {
     const light=globalThis.KstLight.at();
     const visible=(x,y)=>x*TILE>-v.x/v.scale-140&&x*TILE<(canvas.width-v.x)/v.scale+140&&y*TILE>-v.y/v.scale-140&&y*TILE<(canvas.height-v.y)/v.scale+140;
     const waterPalette=BACKGROUNDS[backgroundKey];
-    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced,waterPalette.water,waterPalette.wave)}))].sort((a,b)=>a.y-b.y);
+    const relationshipHighlight=showRelationships&&selected>=0?relationshipFocus(model.relations,npcs,npcs[selected]):null;
+    const items=[...terrain.filter(o=>visible(o.x,o.y)).map(o=>({y:o.y,draw:()=>drawWorldObject(ctx,o,TILE,isBoat(o)?{dy:boatFloat(o,time)}:null)})),...objects.filter(o=>(!objectHold?.active||objectHold.o!==o)&&!npcs.some(n=>n.eventRoutine?.gesture==='axe-float'&&n.eventObjects?.includes(o)&&o.kind==='axe')&&visible(o.x,o.y)).map((o)=>({y:o.y,draw:()=>drawObject(ctx,o,{...objectInteractionFrame(o,npcs,time+cinematicTime,reduced),dy:(objectInteractionFrame(o,npcs,time+cinematicTime,reduced)?.dy||0)+boatFloat(o,time)} )})),...npcs.filter(n=>(!drag?.active||drag.n!==n)&&visible(n.x,n.y)).map((n)=>({y:interactionAnchor(n,TILE).y/TILE,draw:()=>{const dim=relationshipHighlight&&!relationshipHighlight.has(n);if(dim){ctx.save();ctx.globalAlpha=.24;}drawNpc(ctx,n,npcs.indexOf(n),time+cinematicTime,npcs.indexOf(n)===selected,activeEvent?.scene.actors.includes(n.name),reduced,waterPalette.water,waterPalette.wave);if(dim)ctx.restore();}}))].sort((a,b)=>a.y-b.y);
     items.forEach((item)=>item.draw());
     if(drag?.active)drawLifted(ctx,drag,time,reduced);
     if(objectHold?.active){
@@ -1211,7 +1213,7 @@ export async function mountPixelWorld(shell, options) {
     }
     if(light.alpha){ctx.save();ctx.globalAlpha=light.alpha;ctx.fillStyle=light.shade;ctx.fillRect(0,0,WORLD.width,WORLD.height);ctx.restore();}
     const talkingRelations=model.relations.filter(r=>encounterLines.some(l=>l.origin!=='general'&&l.target&&((l.speaker.name===r.from&&l.target.name===r.to)||(l.speaker.name===r.to&&l.target.name===r.from))));
-    if(showRelationships||talkingRelations.length)drawRelationshipLinks(ctx,relationshipLinks(showRelationships?model.relations:talkingRelations,npcs,drag));
+    if(showRelationships||talkingRelations.length)drawRelationshipLinks(ctx,relationshipLinks(showRelationships?model.relations:talkingRelations,npcs,drag,showRelationships?npcs[selected]||null:null));
     ctx.restore();
     if(placing) {ctx.setTransform(1,0,0,1,0,0);const dpr=canvas.width/(canvas.offsetWidth||canvas.getBoundingClientRect().width);ctx.fillStyle='#102e38ed';const w=Math.min(400*dpr,canvas.width-20*dpr);ctx.fillRect((canvas.width-w)/2,canvas.height-104*dpr,w,30*dpr);ctx.fillStyle='#ffe5a2';ctx.font=`${14*dpr}px "DungGeunMo", monospace`;ctx.textAlign='center';ctx.fillText(`${OBJECTS[placing]} · 빈 땅을 눌러 배치`,canvas.width/2,canvas.height-84*dpr);}
     ctx.restore();positionSpeech();positionEncounters();

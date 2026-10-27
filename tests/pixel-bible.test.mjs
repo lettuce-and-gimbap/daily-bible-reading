@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { buildWorldModel, findPath, clientToCanvasPoint, touchSlopPixels } from '../js/features/pixel-bible/world.js';
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
@@ -562,13 +563,21 @@ test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',a
 });
 
 test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다른 본문의 동명이인을 연결하지 않는다',async()=>{
- const {relationshipLinks}=await import('../js/features/pixel-bible/relationship-overlay.js');
+ const {relationshipLinks,relationshipFocus}=await import('../js/features/pixel-bible/relationship-overlay.js');
  const a={name:'갑',x:10,y:8,refs:['창세기 1장']},b={name:'을',x:20,y:9,refs:['창세기 1장']};
  const relations=[{from:'갑',to:'을',label:'가족',sourceRef:'창세기 1장'},{from:'갑',to:'을',label:'다른 사람',sourceRef:'창세기 2장'}];
  let links=relationshipLinks(relations,[a,b]);assert.equal(links.length,1);assert.deepEqual(links[0].a,{x:240,y:112});
  a.x=11;links=relationshipLinks(relations,[a,b]);assert.equal(links[0].a.x,264);
  links=relationshipLinks(relations,[a,b],{active:true,n:a,p:{x:15,y:7}});assert.deepEqual(links[0].a,{x:360,y:88});
  assert.equal(relationshipLinks(relations,[a]).length,0);
+ const c={name:'병',x:25,y:9,refs:['창세기 1장']},focus=relationshipFocus([...relations,{from:'을',to:'병',label:'친구'}],[a,b,c],a);
+ assert.deepEqual([...focus],[a,b]);assert.equal(relationshipLinks([...relations,{from:'을',to:'병',label:'친구'}],[a,b,c],null,a).length,1);
+});
+
+test('TV 부스에서는 왼쪽 사람이 오른쪽을, 오른쪽 사람이 왼쪽을 본다',()=>{
+ const source=fs.readFileSync('js/features/pixel-bible/world.js','utf8');
+ assert.match(source,/function faceAcrossBooth\(a,b\).*left\.direction='right';right\.direction='left'/);
+ assert.match(source,/const boothPair=\(\)=>npcs\.filter\(n=>n\.loveBooth===loveBooth\(\)&&!n\.creature\)\.sort\(\(a,b\)=>a\.x-b\.x\)/);
 });
 
 
