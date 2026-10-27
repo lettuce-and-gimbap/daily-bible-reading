@@ -463,6 +463,50 @@ test('누가복음 5–6장의 시몬 베드로와 레위는 앞선 복음서의
  assert.notEqual(resolveIdentity('시몬(열심당원)',{code:'luk',chapter:6}).id,resolveIdentity('시몬 베드로',{code:'luk',chapter:6}).id);
 });
 
+test('누가복음 7–12장의 서술·비유 인물을 현장 배우에서 분리하고 실제 질문 대화는 관계로 남긴다',async()=>{
+ const luke=JSON.parse(fs.readFileSync(new URL('../data/summary/luk.json',import.meta.url),'utf8'));
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ for(const [chapter,names] of [[8,['구사']],[9,['헤롯']],[10,['강도 만난 사람','제사장','레위인','사마리아 사람']],[11,['한밤중의 친구']],[12,['어리석은 부자','충성된 청지기']]]){
+  const model=buildWorldModel([{code:'luk',name:'누가복음',chap:chapter,data:luke.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 현장 출연자가 아님`);
+ }
+ assert.ok(luke.chapters['7'].people.some(person=>person.name==='요한의 제자들'));
+ assert.ok(luke.chapters['7'].rels.some(relation=>relation.from==='예수'&&relation.to==='요한의 제자들'&&relation.verses==='18-23'));
+ assert.ok(luke.chapters['7'].rels.some(relation=>relation.from==='예수'&&relation.to==='시몬'&&relation.verses==='40-47'));
+ assert.equal(resolveIdentity('막달라 마리아',{code:'luk',chapter:8}).id,resolveIdentity('막달라 마리아',{code:'mrk',chapter:16}).id);
+ assert.doesNotMatch(luke.chapters['8'].story, /\d/,'일반 해설의 수량은 한글로 표기한다');
+});
+
+test('누가복음 13–18장의 비유 인물은 제외하고 실제로 예수를 만난 이들의 관계는 보존한다',()=>{
+ const luke=JSON.parse(fs.readFileSync(new URL('../data/summary/luk.json',import.meta.url),'utf8'));
+ const excluded={13:['포도원지기','포도원 주인'],14:['잔치 주인','핑계한 자들','가난한 자들'],15:['아버지','둘째 아들','맏아들'],16:['옳지 않은 청지기','주인','부자','나사로','아브라함'],18:['과부','불의한 재판장','바리새인','세리']};
+ for(const [chapter,names] of Object.entries(excluded)){
+  const model=buildWorldModel([{code:'luk',name:'누가복음',chap:Number(chapter),data:luke.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 비유 속 인물`);
+ }
+ assert.ok(luke.chapters['13'].rels.some(relation=>relation.from==='바리새인'&&relation.verses==='31-33'));
+ assert.ok(luke.chapters['17'].rels.some(relation=>relation.to==='바리새인'&&relation.verses==='20-21'));
+ assert.ok(luke.chapters['18'].rels.some(relation=>relation.to==='어린아이들'&&relation.verses==='15-17'));
+});
+
+test('누가복음 19–24장의 비유·예언 대상은 분리하고 부활 장면의 인물 신원과 천사 분류를 바로잡는다',async()=>{
+ const luke=JSON.parse(fs.readFileSync(new URL('../data/summary/luk.json',import.meta.url),'utf8'));
+ const mark=JSON.parse(fs.readFileSync(new URL('../data/summary/mrk.json',import.meta.url),'utf8'));
+ for(const [chapter,names] of [[19,['귀인','충성된 종','악한 종']],[20,['악한 농부들','가이사']],[21,['이방인']]]){
+  const model=buildWorldModel([{code:'luk',name:'누가복음',chap:Number(chapter),data:luke.chapters[chapter]}]);
+  for(const name of names)assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 예언·비유 대상`);
+ }
+ const combined=buildWorldModel([
+  {code:'luk',name:'누가복음',chap:24,data:luke.chapters['24']},
+  {code:'mrk',name:'마가복음',chap:16,data:mark.chapters['16']}
+ ]);
+ assert.equal(combined.cast.filter(person=>person.identity?.id==='person:mary-mother-of-james-and-joses').length,1);
+ assert.equal(combined.cast.find(person=>person.name==='천사들')?.identity?.kind,'spiritual');
+ for(const name of ['막달라 마리아','요안나','야고보의 어머니 마리아']){
+  assert.ok(luke.chapters['24'].rels.some(relation=>relation.from===name&&relation.to==='열한 제자'));
+ }
+});
+
 test('예레미야 21–30장의 시대 표기·과거 왕·미래 메시아 인물은 장면 배우에서 분리한다',()=>{
  const chapters=[
   [21,['느부갓네살']],[22,['살룸','요시야','고니야']],[23,['의로운 가지']],

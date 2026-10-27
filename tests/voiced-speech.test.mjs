@@ -1225,7 +1225,7 @@ test('누가복음 21–24장의 성전 예언·수난·십자가·부활 증언
  assert.ok(rows.some(row=>row[1]===21&&row[2]==='제자들'&&row[6].includes('7')),'성전 무너짐의 때와 징조를 묻는 제자들');
  assert.ok(rows.some(row=>row[1]===22&&row[2]==='베드로'&&row[6].includes('57-60')),'예수를 세 번 부인한 베드로');
  assert.ok(rows.some(row=>row[1]===23&&row[2]==='빌라도'&&row[6].includes('22')),'예수에게서 죽일 죄를 찾지 못한 빌라도');
- assert.ok(rows.some(row=>row[1]===24&&row[2]==='찬란한 옷의 두 사람'&&row[6].includes('5-7')),'부활을 전한 두 사람');
+ assert.ok(rows.some(row=>row[1]===24&&row[2]==='천사들'&&row[6].includes('5-7')),'부활을 전한 두 천사');
 });
 
 test('요한복음 1–4장의 세례 요한 증언·가나 표적·니고데모·사마리아 대화를 실제 화자에 연결한다',()=>{

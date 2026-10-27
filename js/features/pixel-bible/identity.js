@@ -8,7 +8,9 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='mrk'&&Number(chapter)===2&&name==='레위')return '마태';
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return '베드로';
   if(code==='luk'&&Number(chapter)===5&&name==='레위')return '마태';
+  if(name==='막달라인 마리아')return '막달라 마리아';
   if(code==='mrk'&&Number(chapter)===15&&name==='야고보와 요세의 어머니 마리아')return '야고보의 어머니 마리아';
+  if(code==='luk'&&Number(chapter)===24&&name==='야고보의 어머니 마리아')return '야고보의 어머니 마리아';
   if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return '여호야긴(여고냐)';
   if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return '시드기야(유다 왕)';
   if(code==='jer'&&[40,41].includes(Number(chapter))&&name==='이스마엘')return '이스마엘(느다냐의 아들)';
@@ -66,7 +68,9 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
   if(name==='마태'||code==='mrk'&&Number(chapter)===2&&name==='레위')return {...id('person','마태'),canonicalName:'마태'};
   if(code==='luk'&&Number(chapter)===5&&name==='레위')return {...id('person','마태'),canonicalName:'마태'};
-  if(code==='mrk'&&[15,16].includes(Number(chapter))&&['야고보와 요세의 어머니 마리아','야고보의 어머니 마리아'].includes(name))return {...id('person','mary-mother-of-james-and-joses'),canonicalName:'야고보의 어머니 마리아'};
+  if(['막달라인 마리아','막달라 마리아'].includes(name)||name==='마리아'&&/막달라/.test(role))return {...id('person','mary-magdalene'),canonicalName:'막달라 마리아'};
+  if(code==='luk'&&Number(chapter)===24&&name==='야고보의 어머니 마리아'||code==='mrk'&&[15,16].includes(Number(chapter))&&['야고보와 요세의 어머니 마리아','야고보의 어머니 마리아'].includes(name))return {...id('person','mary-mother-of-james-and-joses'),canonicalName:'야고보의 어머니 마리아'};
+  if(code==='luk'&&Number(chapter)===24&&name==='천사들')return id('spiritual','luk24-resurrection-angels');
   if(spiritual.test(name))return id('spiritual',name);
   if(name==='미가엘')return id('spiritual','michael');
   if(name==='가브리엘')return id('spiritual','gabriel');
