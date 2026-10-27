@@ -48,7 +48,7 @@ import { scopeChapterSummary } from './qt-scope.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
-import { resolveIdentity, canonicalPersonName } from './identity.js?rev=so-king-identity-1';
+import { resolveIdentity, canonicalPersonName } from './identity.js?rev=person-identity-audit-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
 import { renderPersonPreview, easyPersonDescription } from "./collection-preview.js?v=turntable-motion-walk-start-2";

@@ -34,6 +34,12 @@ const CHAPTERS = {
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],
   'act.13': ['다윗'],
   'exo.13': ['요셉'],
+  'exo.3': ['이드로', '바로'],
+  'exo.4': ['바로'],
+  // This chapter's genealogy identifies the living leaders but does not bring
+  // their ancestors or descendants into the scene.
+  'exo.6': ['아므람', '요게벳', '엘르아살', '비느하스', '고라'],
+  'lev.24': ['슬로밋'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],

@@ -21,10 +21,12 @@
   },
   "manualReview": {
     "status": "in-progress",
-    "currentBook": "exo",
+    "currentBook": "num",
     "currentChapter": 1,
     "completedBooks": [
-      "gen"
+      "gen",
+      "exo",
+      "lev"
     ],
     "notes": [
       "Genesis alias integrations: Abram/Abraham and Sarai/Sarah.",
@@ -32,7 +34,9 @@
       "Kings I-II omitted per user request; an earlier 47-chapter audit and 289 summary relationship records review was completed in commit 5c9b062.",
       "창세기 1–50장 관계 기록 233건을 1차 전수검토 완료. 두 역본으로 신원 혼동 및 장면 출연 여부가 문제된 본문을 대조함.",
       "창세기: 아브람/아브라함·사래/사라 통합; 가인 계열/셋 계열 라멕 및 아브라함/요셉 시대 바로 구분.",
-      "창세기 11장 나홀·하란, 15장 엘리에셀, 18장 롯, 22장 나홀, 33장 하몰은 해당 절에서 회상·족보로 언급될 뿐 현장 인물이 아니므로 월드 출연에서 제외. 19장 아브라함은 27절에 실제로 소돔을 바라보므로 유지."
+      "창세기 11장 나홀·하란, 15장 엘리에셀, 18장 롯, 22장 나홀, 33장 하몰은 해당 절에서 회상·족보로 언급될 뿐 현장 인물이 아니므로 월드 출연에서 제외. 19장 아브라함은 27절에 실제로 소돔을 바라보므로 유지.",
+      "출애굽기 1–40장 관계 기록 123건 검토 완료. 르우엘/이드로 통합, 모세의 출생 시대 바로와 출애굽 바로 구분, 출연하지 않는 장의 인물 제외, 집단·영적 존재 분류를 보강.",
+      "레위기 1–27장 관계 기록 19건 검토 완료. 레위기 24장의 슬로밋은 사건 현장에 나오지 않고 아들의 혈통 정보로만 언급되므로 월드 출연에서 제외."
     ]
   },
   "books": [
@@ -46,19 +50,19 @@
       "code": "exo",
       "name": "출애굽기",
       "chapters": 40,
-      "status": "in-progress"
+      "status": "complete"
     },
     {
       "code": "lev",
       "name": "레위기",
       "chapters": 27,
-      "status": "not-started"
+      "status": "complete"
     },
     {
       "code": "num",
       "name": "민수기",
       "chapters": 36,
-      "status": "not-started"
+      "status": "in-progress"
     },
     {
       "code": "deu",

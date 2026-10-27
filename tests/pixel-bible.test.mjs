@@ -95,6 +95,43 @@ test('창세기에서 이름만 언급된 엘리에셀·롯·하몰은 해당 �
  assert.ok(!ch22.cast.some(p=>p.name==='나홀'));
 });
 
+test('출애굽기에서 르우엘과 이드로는 같은 장인이고 두 시대의 바로는 각각 분리한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/exo.json',import.meta.url),'utf8'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'exo',name:'출애굽기',chap:Number(chap),data}));
+ const model=buildWorldModel(chapters);
+ assert.equal(model.cast.filter(p=>p.identity?.id==='person:midianite-priest-jethro').length,1);
+ assert.equal(model.cast.find(p=>p.identity?.id==='person:midianite-priest-jethro').name,'이드로');
+ assert.ok(model.cast.find(p=>p.identity?.id==='person:midianite-priest-jethro').refs.includes('출애굽기 2장'));
+ assert.ok(model.cast.find(p=>p.identity?.id==='person:midianite-priest-jethro').refs.includes('출애굽기 18장'));
+ assert.equal(model.cast.filter(p=>p.name.startsWith('바로(')).length,2);
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.notEqual(resolveIdentity('바로',{code:'exo',chapter:1}).id,resolveIdentity('바로',{code:'exo',chapter:3}).id);
+ assert.equal(resolveIdentity('아말렉',{code:'exo',chapter:17}).kind,'group');
+ assert.equal(resolveIdentity('하나님의 사자',{code:'exo',chapter:14}).kind,'spiritual');
+ assert.ok(model.relations.some(r=>r.from==='바로(출애굽 시대)'||r.to==='바로(출애굽 시대)'));
+ const ch3=buildWorldModel([{code:'exo',name:'출애굽기',chap:3,data:summary.chapters[3]}]);
+ const ch4=buildWorldModel([{code:'exo',name:'출애굽기',chap:4,data:summary.chapters[4]}]);
+ assert.ok(!ch3.cast.some(p=>['이드로','바로(출애굽 시대)'].includes(p.name)));
+ assert.ok(!ch4.cast.some(p=>p.name==='바로(출애굽 시대)'));
+ assert.ok(ch4.cast.some(p=>p.name==='이드로'),'4:18에서 모세와 대화하므로 장인 이드로는 등장한다');
+});
+
+test('출애굽기 6장의 족보에만 나온 조상과 후손은 별도 장면 인물로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/exo.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'exo',name:'출애굽기',chap:6,data:summary.chapters[6]}]);
+ for(const name of ['아므람','요게벳','엘르아살','비느하스','고라'])assert.ok(!model.cast.some(p=>p.name===name),`${name}은 족보의 인물이다`);
+ assert.ok(model.cast.some(p=>p.name==='모세'));
+ assert.ok(model.cast.some(p=>p.name==='아론'));
+});
+
+test('레위기 24장에서 이름만 언급된 모독자의 어머니는 현장 인물로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/lev.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'lev',name:'레위기',chap:24,data:summary.chapters[24]}]);
+ assert.ok(!model.cast.some(p=>p.name==='슬로밋'));
+ assert.ok(model.relations.some(r=>r.to==='슬로밋'),'가족 관계 설명은 남긴다');
+ assert.ok(model.cast.some(p=>p.name==='모세'));
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
  const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){

@@ -1,8 +1,8 @@
 import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
-const spiritual=/^(하나님|여호와|성령|주님|천사|사탄|마귀|어린 양)$/;
-const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|자들/;
+const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|사탄|마귀|어린 양)$/;
+const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='아브람')return '아브라함';
   if(code==='gen'&&name==='사래')return '사라';
@@ -10,6 +10,9 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='라멕'&&Number(chapter)===5)return '라멕(셋 계열)';
   if(code==='gen'&&name==='바로'&&Number(chapter)===12)return '바로(아브라함 시대)';
   if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return '바로(요셉 시대)';
+  if(code==='exo'&&['르우엘','이드로'].includes(name))return '이드로';
+  if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return '바로(모세의 출생 시대)';
+  if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return '바로(출애굽 시대)';
   if(code==='act'&&name==='사울')return '바울';
   return name;
 }
@@ -28,6 +31,10 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='gen'&&name==='라멕'&&Number(chapter)===5)return {...id('person','lamech-sethite'),canonicalName:'라멕(셋 계열)'};
   if(code==='gen'&&name==='바로'&&Number(chapter)===12)return {...id('person','pharaoh-abraham-era'),canonicalName:'바로(아브라함 시대)'};
   if(code==='gen'&&name==='바로'&&Number(chapter)>=40)return {...id('person','pharaoh-joseph-era'),canonicalName:'바로(요셉 시대)'};
+  if(code==='exo'&&['르우엘','이드로'].includes(name))return {...id('person','midianite-priest-jethro'),canonicalName:'이드로'};
+  if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return {...id('person','exodus-pharaoh-moses-birth'),canonicalName:'바로(모세의 출생 시대)'};
+  if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return {...id('person','exodus-pharaoh-deliverance'),canonicalName:'바로(출애굽 시대)'};
+  if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return id('group','amalekites');
   if(name==='사울') {
     if(code==='act'||/바울/.test(role))return {...id('person','paul'),canonicalName:'바울'};
     if(['1sa','2sa','1ch'].includes(code)||/이스라엘.*왕|다윗.*왕/.test(role))return id('person','saul-king');
