@@ -43,6 +43,24 @@ test('열왕기하에서 요람 표기를 통합하고 그달리야를 찾아온
  assert.ok(end.cast.some(p=>p.name==='야아사니야'));
 });
 
+test('창세기에서 개명 전후의 아브람·아브라함과 사래·사라는 각각 한 인물로 통합한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/gen.json',import.meta.url),'utf8'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'gen',name:'창세기',chap:Number(chap),data}));
+ const model=buildWorldModel(chapters);
+ const abraham=model.cast.filter(p=>p.identity?.id==='person:아브라함');
+ const sarah=model.cast.filter(p=>p.identity?.id==='person:사라');
+ assert.equal(abraham.length,1);
+ assert.equal(sarah.length,1);
+ assert.ok(abraham[0].refs.some(ref=>ref==='창세기 12장'));
+ assert.ok(abraham[0].refs.some(ref=>ref==='창세기 17장'));
+ assert.ok(sarah[0].refs.some(ref=>ref==='창세기 16장'));
+ assert.ok(sarah[0].refs.some(ref=>ref==='창세기 18장'));
+ assert.equal(abraham[0].name,'아브라함');
+ assert.equal(sarah[0].name,'사라');
+ assert.ok(model.relations.some(r=>r.from==='사라'&&r.to==='아브라함'&&r.label==='아내'),'개명 전 부부 관계도 통합 인물 이름으로 이어진다');
+ assert.ok(model.relations.some(r=>r.from==='하나님'&&r.to==='아브라함'&&r.sourceRef==='창세기 12장'),'개명 뒤에도 부르심 관계는 한 인물에 이어진다');
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
  const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){

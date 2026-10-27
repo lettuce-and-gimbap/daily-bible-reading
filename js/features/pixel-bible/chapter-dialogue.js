@@ -35,10 +35,10 @@ export function buildChapterDialogue(chapters) {
  return {people,relations};
 }
 export function occurrenceMatches(n,p) {
- return n.name===p.name&&(!n.identity||n.identity.id===p.identity.id);
+ return (n.name===p.name||n.identity?.kind==='person'&&n.identity.id===p.identity?.id)&&(!n.identity||n.identity.id===p.identity.id);
 }
 export function majorFor(n,contexts) {
  const occurrences=contexts.people.filter(p=>occurrenceMatches(n,p));
- for(const p of occurrences){const entry=MAJOR_DIALOGUE.find(e=>matchesMajor(e,n.name,p.code,p.role,p.chap));if(entry)return entry;}
+ for(const p of occurrences){const entry=MAJOR_DIALOGUE.find(e=>(e.name===n.name||resolveIdentity(e.name,{code:p.code,chapter:p.chap,role:p.role}).id===n.identity?.id)&&e.books.includes(p.code)&&(!e.chapterRules?.[p.code]||e.chapterRules[p.code].includes(Number(p.chap)))&&(!e.chapters||e.chapters.includes(`${p.code}.${p.chap}`))&&(e.rolePattern==='*'||new RegExp(e.rolePattern).test(p.role)));if(entry)return entry;}
  return null;
 }

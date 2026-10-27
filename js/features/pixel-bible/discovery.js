@@ -31,7 +31,10 @@ export function learningStage(record,records){
  return read>=2&&record.days.length>=2&&neighbor?4:read>=1&&neighbor?3:read>=1?2:1;
 }
 export function markStoryRead(record,story){const id=storyKey(story);if(!record.stories.some(s=>storyKey(s)===id))return record;return {...record,read:[...new Set([...record.read,id])]};}
-export function loadDiscoveries(storage){try{const raw=JSON.parse(storage.getItem(DISCOVERY_KEY)||'{}');return raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};}catch(_){return {};}}
+export function loadDiscoveries(storage){try{const raw=JSON.parse(storage.getItem(DISCOVERY_KEY)||'{}');if(!raw||typeof raw!=='object'||Array.isArray(raw))return {};
+ const moved=[['unresolved:아브람','person:아브라함'],['unresolved:사래','person:사라']];
+ for(const [oldKey,key]of moved)if(raw[oldKey]){const old=raw[oldKey],current=raw[key]||{};raw[key]={...old,...current,key,name:key==='person:아브라함'?'아브라함':'사라',roles:[...new Set([...(old.roles||[]),...(current.roles||[])])],refs:[...new Set([...(old.refs||[]),...(current.refs||[])])],relations:[...new Map([...(old.relations||[]),...(current.relations||[])].map(x=>[x.key+'|'+x.label+'|'+x.ref,x])).values()],stories:[...new Map([...(old.stories||[]),...(current.stories||[])].map(x=>[x.ref+'|'+x.text,x])).values()],days:[...new Set([...(old.days||[]),...(current.days||[])])],read:[...new Set([...(old.read||[]),...(current.read||[])])],favorite:!!(old.favorite||current.favorite),firstSeen:[old.firstSeen,current.firstSeen].filter(Boolean).sort()[0]};delete raw[oldKey];}
+ return raw;}catch(_){return {};}}
 
 export function learningNext(record,records){
  if(!record)return '월드에서 인물을 눌러 첫 만남을 기록해요.';

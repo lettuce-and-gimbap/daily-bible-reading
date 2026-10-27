@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {discoveryKey,discoverySnapshot,mergeDiscovery,learningStage,markStoryRead,importanceFor,prominentKeys,kstDate} from '../js/features/pixel-bible/discovery.js';
+import {discoveryKey,discoverySnapshot,mergeDiscovery,learningStage,markStoryRead,importanceFor,prominentKeys,kstDate,loadDiscoveries,DISCOVERY_KEY} from '../js/features/pixel-bible/discovery.js';
 const ruth={name:'룻',identity:{kind:'person',id:'person:ruth'},role:'이삭을 줍는 며느리',refs:['룻기 2장']};
 const boaz={name:'보아스',identity:{kind:'person',id:'person:boaz'},role:'밭 주인',refs:['룻기 2장']};
 const model={cast:[ruth,boaz],relations:[{from:'룻',to:'보아스',label:'보호받음',kind:'other',sourceRef:'룻기 2장',ref:'룻기 2:8–9',note:'보아스는 룻이 밭에서 안전하게 이삭을 줍도록 도와주었어요.'}],events:[{text:'룻이 이삭을 주워 나오미에게 가져가요.',ref:'룻기 2:17–18'}]};
@@ -25,4 +25,10 @@ test('중요도는 중복 관계를 한 명으로 세고 랜덤 발화량을 사
 });
 test('다른 날에 만나도 주변 인물 단계는 건너뛰지 않는다',()=>{
  let r=mergeDiscovery(null,discoverySnapshot(ruth,model),'2026-10-24');for(const story of r.stories)r=markStoryRead(r,story);r=mergeDiscovery(r,discoverySnapshot(ruth,model),'2026-10-25');assert.equal(learningStage(r,{}),2);assert.equal(learningStage(r,{[discoveryKey(boaz)]:{}}),4);
+});
+test('개명 전 아브람·사래의 기존 도감 기록은 통합 인물 기록으로 옮긴다',()=>{
+ const storage={getItem:key=>key===DISCOVERY_KEY?JSON.stringify({'unresolved:아브람':{name:'아브람',roles:['부르심'],refs:['창세기 12장'],days:['2026-01-01'],stories:[{ref:'창세기 12:1',text:'떠나라'}],read:['창세기 12:1|떠나라'],favorite:true},'unresolved:사래':{name:'사래',refs:['창세기 16장']}}):null};
+ const records=loadDiscoveries(storage);
+ assert.equal(records['unresolved:아브람'],undefined);assert.equal(records['person:아브라함'].name,'아브라함');assert.equal(records['person:아브라함'].favorite,true);assert.equal(records['person:아브라함'].read.length,1);
+ assert.equal(records['unresolved:사래'],undefined);assert.equal(records['person:사라'].name,'사라');assert.ok(records['person:사라'].refs.includes('창세기 16장'));
 });
