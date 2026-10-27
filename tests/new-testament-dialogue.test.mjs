@@ -125,6 +125,47 @@ test('요한계시록 22장 모두의 발화는 문장별 환상·선포 구절�
  }
 });
 
+test('요한계시록 1–5장의 증언·환상·찬양을 실제 화자에게 나눈다',()=>{
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='rev'&&row[1]<=5);
+ const row=(chapter,name)=>rows.find(item=>item[1]===chapter&&item[2]===name);
+ assert.deepEqual(row(1,'요한')[6],['9-10','11']);
+ assert.deepEqual(row(1,'예수')[6],['17-18','19']);
+ assert.deepEqual(row(4,'네 생물')[6],['8']);
+ assert.deepEqual(row(4,'이십사 장로')[6],['10-11']);
+ assert.deepEqual(row(5,'장로 중 한 사람')[6],['5']);
+ assert.deepEqual(row(5,'수많은 천사')[6],['11-12']);
+ assert.deepEqual(row(5,'모든 피조물')[6],['13']);
+});
+
+test('요한계시록 6–22장의 직접 발화와 목격 서술을 화자별로 나눈다',()=>{
+ const rows=NEW_TESTAMENT_DIALOGUE_ROWS.filter(row=>row[0]==='rev');
+ const row=(chapter,name)=>rows.find(item=>item[1]===chapter&&item[2]===name);
+ assert.deepEqual(row(6,'순교한 영혼들')[6],['10']);
+ assert.deepEqual(row(6,'땅의 임금들')[6],['16-17']);
+ assert.deepEqual(row(7,'큰 무리')[6],['10']);
+ assert.deepEqual(row(7,'모든 천사')[6],['12']);
+ assert.deepEqual(row(8,'독수리')[6],['13']);
+ assert.deepEqual(row(9,'제단의 음성')[6],['14']);
+ assert.deepEqual(row(10,'하늘의 음성')[6],['4','8']);
+ assert.equal(row(11,'두 증인'),undefined,'행동 서술을 증인들의 직접 대사로 만들지 않는다');
+ assert.deepEqual(row(12,'하늘의 큰 음성')[6],['10-11','12']);
+ assert.deepEqual(row(13,'땅에 사는 자들')[6],['4']);
+ assert.deepEqual(row(14,'셋째 천사')[6],['9-11']);
+ assert.deepEqual(row(14,'성령')[6],['13']);
+ assert.deepEqual(row(15,'짐승을 이긴 자들')[6],['3-4']);
+ assert.deepEqual(row(16,'물을 차지한 천사')[6],['5-6']);
+ assert.deepEqual(row(17,'대접을 가진 천사')[6],['1-2','7-8','15-18']);
+ assert.deepEqual(row(18,'땅의 왕들')[6],['9-10']);
+ assert.deepEqual(row(18,'선장과 선원들')[6],['18-19']);
+ assert.deepEqual(row(19,'이십사 장로와 네 생물')[6],['4']);
+ assert.deepEqual(row(20,'요한')[6],['1-4','11-15']);
+ assert.deepEqual(row(21,'천사')[6],['9']);
+ assert.deepEqual(row(22,'성령')[6],['17']);
+ assert.deepEqual(row(22,'신부')[6],['17']);
+ assert.equal(row(22,'목마른 자'),undefined,'초대받는 이를 발화자로 만들지 않는다');
+ assert.deepEqual(row(22,'예수')[6],['7','12-13','16','20']);
+});
+
 test('마태·마가·누가복음의 주요 대면 문답은 장면의 두 화자와 구절에 맞게 연결된다',()=>{
  const cases=[
   ['mat.3','세례 요한','예수'],['mat.4','예수','마귀'],['mat.14','베드로','예수'],

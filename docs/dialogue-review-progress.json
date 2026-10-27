@@ -292,11 +292,11 @@
     "rule": "관계도 연결과 본문 대화 색인이 더한 상호작용 대상은 모두 양방향 특수 대화 후보가 된다. 명시 대사가 없는 연결은 관계 유형과 장별 관계 설명에 근거한 대사를 생성하고, 설명과 구절은 자세히 보기에서 확인한다."
   },
   "relationshipQualityReaudit": {
-    "status": "complete",
+    "status": "in-progress",
     "startingBook": "gen",
     "currentBook": "rev",
-    "nextBook": null,
-    "booksCompleted": 66,
+    "nextBook": "rev",
+    "booksCompleted": 65,
     "completedBooks": [
       "gen",
       "exo",
@@ -362,8 +362,7 @@
       "1jn",
       "2jn",
       "3jn",
-      "jud",
-      "rev"
+      "jud"
     ],
     "chaptersReviewed": 1189,
     "relationshipLinksReviewed": 3790,
@@ -377,13 +376,13 @@
       "generatedVariantsPerLink": 10,
       "status": "passed"
     },
-    "statusNote": "요한계시록 22장 전체에서 요한의 환상 기록과 교회·천사·어린 양의 선포를 대조해 발화 22묶음·44문장에 개별 절 참조를 연결했다. 상징적 환상을 실제 역사 장면처럼 섞지 않고, 장별 관계 연결 134개를 확인했다. 창세기부터 요한계시록까지 66권·1,189장 검토를 마쳤고, 완료 권의 관계 연결을 다시 합산한 누계 3,790개가 전체 구조 검사와 일치한다.",
+    "statusNote": "요한계시록 22장 전 장의 장면 발화를 재검토했다. 1,189장 발화 인덱스 점검과 관계 연결 3,790개 구조 점검은 계상되어 있으며, 현재 계시록의 직접 발화·환상 서술 정리는 끝났다. 관계별 대사 134개는 현재 자동 생성 경로이므로 전부 사람이 쓴 맞춤 대사로 보강하는 후속 작업이 남아 있다.",
     "partialBookAudit": {
       "book": "rev",
       "chaptersScanned": 22,
       "chaptersWithAuthoredDialogueReviewed": 22,
-      "authoredUtteranceGroupsReviewed": 22,
-      "utteranceReferencesCorrected": 44,
+      "authoredUtteranceGroupsReviewed": 55,
+      "utteranceReferencesCorrected": 89,
       "chapterDialogueAudit": 22,
       "pairedEntriesReviewed": 0,
       "newTwoWayEntries": 0,
@@ -394,7 +393,7 @@
       "authoredLinksCovered": 0,
       "generatedLinksRemaining": 134,
       "nonDialogueLinksRemoved": 0,
-      "status": "complete",
+      "status": "chapter-dialogue-pass-complete-pair-audit-pending",
       "nextChapterToReview": null,
       "chaptersReviewedList": [
         1,
@@ -420,8 +419,8 @@
         21,
         22
       ],
-      "statusNote": "요한계시록 22장 전체에서 요한의 환상 기록과 교회·천사·어린 양의 선포를 대조해 발화 22묶음·44문장에 개별 절 참조를 연결했다. 상징적 환상을 실제 역사 장면처럼 섞지 않고, 장별 관계 연결 134개를 확인했다. 창세기부터 요한계시록까지 66권·1,189장 검토를 마쳤고, 완료 권의 관계 연결을 다시 합산한 누계 3,790개가 전체 구조 검사와 일치한다."
+      "statusNote": "요한계시록 22장 전체를 개역개정과 쉬운성경의 절별 화자·문맥으로 대조했다. 실제 발화와 요한의 환상 목격 서술을 구분하고, 행동 요약을 잘못 화자에게 붙인 항목을 교체했다. 55묶음 89문장의 개별 절 근거와 장별 화자 색인을 테스트했다. 인간 관계 연결 134개는 구조상 모두 대상에 포함됨을 확인했으나, 이 연결의 관계별 대사 자체는 별도 검토가 남아 있다."
     },
-    "currentBookStatus": "complete"
+    "currentBookStatus": "chapter-dialogue-review-complete-pair-dialogue-audit-pending"
   }
 }
