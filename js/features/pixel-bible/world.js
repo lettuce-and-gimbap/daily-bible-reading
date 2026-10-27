@@ -34,6 +34,7 @@ import { OBJECT_CATALOG, objectsForChapters } from './object-catalog.js';
 import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { characterWalkFrame } from './character-motion.js';
+import { advanceGimbapRoll } from './gimbap-art.js?rev=gimbap-round-crisp-1';
 import { loveBoothExchange } from './relationship-lines.js';
 import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
@@ -1175,7 +1176,9 @@ export async function mountPixelWorld(shell, options) {
       if(n.path.length) {
         const p=n.path[0],dx=p.x-n.x,dy=p.y-n.y,d=Math.hypot(dx,dy),step=dt*n.motion.speed*motionPose(n.motion,n.stride,true,time).speed*(n.running?RUN_SPEED:1);
         n.direction=movementDirection(dx,dy,n.direction);
-        n.stride+=(Math.min(d,step));
+        const travel=Math.min(d,step);
+        if(n.mascotId==='김밥')n.rollPhase=advanceGimbapRoll(n.rollPhase||0,travel,n.direction);
+        n.stride+=travel;
         if(blocked(p.x,p.y)) {
           if(n.running&&!waterAt(backgroundKey,p.x,p.y)&&blockedCells.has(`${p.x},${p.y}`)){n.collisionStun={elapsed:0,kind:'object'};n.expression='surprised';}
           n.path=[];n.task=null;n.running=false;continue;
@@ -1325,7 +1328,7 @@ function drawObject(c,o,response) {
   }
 }
 function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',foam='#a7d4d0') {
-  const pose=motionPose(n.motion,n.stride,!!n.path.length,time);
+  const pose=n.mascotId==='김밥'?{x:0,y:0,tilt:0,speed:1}:motionPose(n.motion,n.stride,!!n.path.length,time);
   let actionPose=n.collisionStun?impactPose(n.collisionStun.elapsed,reduced):n.waterEscape?swimPose(n.waterEscape.elapsed,reduced):n.boatRide?{sit:true,phase:Math.floor(time*3)%4,legSwing:Math.floor(time*3)%2}:n.usingObject&&n.interaction?interactionPose(n.interaction,time-(n.interactionStart||0),reduced):null;
   if(n.creature?.kind==='plant'&&!actionPose)actionPose={phase:reduced?0:Math.floor(time*1.5)%4,bodyX:0,bodyY:0,hand:0,creatureAction:'sway'};
   const held=heldObject(n,time,reduced,TILE);
@@ -1337,9 +1340,9 @@ function drawNpc(c,n,index,time,selected,acting,reduced=false,water='#528ca0',fo
   if(n.encounter){c.save();c.globalAlpha=reduced?.8:.68+.22*Math.sin(time*7);c.strokeStyle='#f4cf70';c.fillStyle='#f4cf7038';c.lineWidth=2;c.beginPath();c.ellipse(x,y+4,21+Math.round(Math.sin(time*7)),6,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
   c.save();
   const style=characterStyle(n.name,index,n.role,n.refs,n.creature||false);
-  const bob=actionPose&&!reduced&&!n.interaction?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
+  const bob=n.mascotId==='김밥'?0:actionPose&&!reduced&&!n.interaction?Math.round(Math.sin(time*4)*1):n.waterHuff&&!reduced?Math.round(Math.sin(time*9)*1):0;
   const rolling=!!style.gimbap&&!!n.path.length&&!actionPose;
-  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),rolling,rollFrame:n.stride*8,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
+  drawPixelCharacter(c,style,x,y+bob,{scale:2,walkFrame:n.creature?.body==='fish'&&!reduced?Math.floor(time*3)%4:characterWalkFrame({stride:n.stride,moving:!!n.path.length,actionPose}),rolling,rollFrame:n.rollPhase||0,action:n.action,interaction:actionPose,time:reduced?0:time,direction:n.direction||"down",expression:n.expression||"neutral",baseExpression:n.expression||"neutral",motionOnly:!n.creature,selected:selected||!!n.encounter});
   if(n.waterEscape){
     drawWaterRescue(c,{x,y,style,pose:actionPose,time,water,foam,progress:n.waterEscape.progress||0,reduced});
   }

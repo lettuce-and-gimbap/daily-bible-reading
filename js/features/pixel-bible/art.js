@@ -37,7 +37,7 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
    crown:kind==='helmet'?false:kind==='crown'||activeStyle.crown,turban:['helmet','crown'].includes(kind)?false:activeStyle.turban,helmet:kind==='helmet',belt:kind==='belt'||activeStyle.belt,apron:kind==='ephod'||activeStyle.apron,plate:['armor','breastplate'].includes(kind),fur:kind==='sackcloth'||activeStyle.fur,sandal:kind==='sandal'};
  }
  const expression=spriteFrame.expression||'neutral';
- const rollFrame=options.rolling===true?((Math.floor(options.rollFrame??frame*4)%16)+16)%16:frame;
+ const rollFrame=options.rolling===true?((Math.round(options.rollFrame??frame*4)%16)+16)%16:frame;
  const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose?{...pose,within:0}:null,expression,activeStyle.gimbap&&options.rolling===true?rollFrame:null]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;

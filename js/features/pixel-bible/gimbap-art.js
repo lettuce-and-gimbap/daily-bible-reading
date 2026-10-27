@@ -1,6 +1,8 @@
 export const GIMBAP_FRAME_SIZE=64;
 export const GIMBAP_ROLL_FRAMES=16;
 export const gimbapRollAngle=frame=>((frame%GIMBAP_ROLL_FRAMES)+GIMBAP_ROLL_FRAMES)%GIMBAP_ROLL_FRAMES*Math.PI*2/GIMBAP_ROLL_FRAMES;
+export const gimbapRollSign=direction=>direction==='left'||direction==='up'?-1:1;
+export const advanceGimbapRoll=(phase,distance,direction)=>phase+Math.max(0,distance)*GIMBAP_ROLL_FRAMES/2*gimbapRollSign(direction);
 const rect=(c,x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};
 
 function disk(c,cx,cy,rx,ry,color){
@@ -11,10 +13,10 @@ function disk(c,cx,cy,rx,ry,color){
  }
 }
 
-export function rotateGimbapPixels(source,angle){
+export function rotateGimbapPixels(source,angle,pivotX=(source.width-1)/2,pivotY=(source.height-1)/2){
  const {width,height,data}=source;
  const out=typeof ImageData==='function'?new ImageData(width,height):{width,height,data:new Uint8ClampedArray(width*height*4)};
- const cx=(width-1)/2,cy=(height-1)/2;
+ const cx=pivotX,cy=pivotY;
  const cos=Math.cos(angle),sin=Math.sin(angle);
  for(let y=0;y<height;y++)for(let x=0;x<width;x++){
   const dx=x-cx,dy=y-cy;
@@ -34,8 +36,8 @@ export function rotateGimbapPixels(source,angle){
 export function drawGimbap(c,frame=0,{rolling=false}={}){
  c.save();c.imageSmoothingEnabled=false;
  // Seaweed silhouette and its lighter inner edge.
- disk(c,32,36,22,20,'#20252a');disk(c,32,36,20,18,'#153f37');
- disk(c,31,35,18,17,'#f0e9d8');disk(c,31,34,16,15,'#fff9e9');
+ disk(c,32,36,21,21,'#20252a');disk(c,32,36,19,19,'#153f37');
+ disk(c,31,35,17,17,'#f0e9d8');disk(c,31,34,15,15,'#fff9e9');
  // Rice grains and a few nori highlights add texture without muddy gradients.
  for(const [x,y,w,h,color] of [[21,29,2,1,'#d6d0bd'],[39,27,2,1,'#e2ddcb'],[20,39,2,2,'#e1dccb'],[40,41,2,1,'#d6d0bd'],[26,22,2,1,'#fffef4'],[35,24,2,1,'#fffef4'],[19,34,1,2,'#e4decc'],[42,35,1,2,'#ddd7c6']])rect(c,x,y,w,h,color);
  rect(c,15,28,2,4,'#2d6951');rect(c,47,39,2,4,'#2d6951');rect(c,44,26,2,3,'#387552');
@@ -51,10 +53,10 @@ export function drawGimbap(c,frame=0,{rolling=false}={}){
  rect(c,29,17,6,1,'#315d4a');rect(c,18,30,1,5,'#e2dcc9');rect(c,45,45,2,4,'#163d35');
  if(rolling){
   const angle=gimbapRollAngle(Math.trunc(frame));
-  const pixels=rotateGimbapPixels(c.getImageData(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE),angle);
+  const pixels=rotateGimbapPixels(c.getImageData(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE),angle,32,36);
   c.clearRect(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE);c.putImageData(pixels,0,0);
  }
- // Keep the soft ground shadow horizontal; never rotate or filter the sprite.
- rect(c,17,58,30,2,'#263b3670');rect(c,21,57,22,1,'#40504466');
+ // Keep the shadow horizontal and at a constant baseline; never rotate it.
+ rect(c,17,59,30,2,'#263b3670');rect(c,21,58,22,1,'#40504466');
  c.restore();
 }
