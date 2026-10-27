@@ -1,0 +1,431 @@
+{
+  "task": "book-by-book relationship/name correctness audit (cross-canon)",
+  "started": "2026-10-27",
+  "sequence": "canonical",
+  "skip": [
+    "1ki",
+    "2ki"
+  ],
+  "scope": [
+    "same-person aliases across chapters",
+    "person vs creature/group/spiritual entity classification",
+    "relationship endpoint identity matches the cast",
+    "whether the cited chapter supports the named relation"
+  ],
+  "structuralSweep": {
+    "status": "completed",
+    "books": 64,
+    "chapters": 1142,
+    "method": "Load each summary chapter, build the world cast, and verify every relationship endpoint resolves to a cast name after explicit alias normalization; exempt reviewed mention-only figures and divine names.",
+    "result": "No unresolved human relationship endpoints after the Genesis and Acts alias normalizations. This is a structural check, not a substitute for contextual reading of each relationship."
+  },
+  "manualReview": {
+    "status": "in-progress",
+    "currentBook": "gen",
+    "currentChapter": 1,
+    "completedBooks": [],
+    "notes": [
+      "Genesis alias integrations: Abram/Abraham and Sarai/Sarah.",
+      "Acts alias integration: Saul/Paul, scoped to Acts so Saul the king stays distinct.",
+      "Kings I-II omitted per user request; an earlier 47-chapter audit and 289 summary relationship records review was completed in commit 5c9b062."
+    ]
+  },
+  "books": [
+    {
+      "code": "gen",
+      "name": "창세기",
+      "chapters": 50,
+      "status": "in-progress"
+    },
+    {
+      "code": "exo",
+      "name": "출애굽기",
+      "chapters": 40,
+      "status": "not-started"
+    },
+    {
+      "code": "lev",
+      "name": "레위기",
+      "chapters": 27,
+      "status": "not-started"
+    },
+    {
+      "code": "num",
+      "name": "민수기",
+      "chapters": 36,
+      "status": "not-started"
+    },
+    {
+      "code": "deu",
+      "name": "신명기",
+      "chapters": 34,
+      "status": "not-started"
+    },
+    {
+      "code": "jos",
+      "name": "여호수아",
+      "chapters": 24,
+      "status": "not-started"
+    },
+    {
+      "code": "jdg",
+      "name": "사사기",
+      "chapters": 21,
+      "status": "not-started"
+    },
+    {
+      "code": "rut",
+      "name": "룻기",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "1sa",
+      "name": "사무엘상",
+      "chapters": 31,
+      "status": "not-started"
+    },
+    {
+      "code": "2sa",
+      "name": "사무엘하",
+      "chapters": 24,
+      "status": "not-started"
+    },
+    {
+      "code": "1ki",
+      "name": "열왕기상",
+      "chapters": 22,
+      "status": "previously-reviewed-skipped"
+    },
+    {
+      "code": "2ki",
+      "name": "열왕기하",
+      "chapters": 25,
+      "status": "previously-reviewed-skipped"
+    },
+    {
+      "code": "1ch",
+      "name": "역대상",
+      "chapters": 29,
+      "status": "not-started"
+    },
+    {
+      "code": "2ch",
+      "name": "역대하",
+      "chapters": 36,
+      "status": "not-started"
+    },
+    {
+      "code": "ezr",
+      "name": "에스라",
+      "chapters": 10,
+      "status": "not-started"
+    },
+    {
+      "code": "neh",
+      "name": "느헤미야",
+      "chapters": 13,
+      "status": "not-started"
+    },
+    {
+      "code": "est",
+      "name": "에스더",
+      "chapters": 10,
+      "status": "not-started"
+    },
+    {
+      "code": "job",
+      "name": "욥기",
+      "chapters": 42,
+      "status": "not-started"
+    },
+    {
+      "code": "psa",
+      "name": "시편",
+      "chapters": 150,
+      "status": "not-started"
+    },
+    {
+      "code": "pro",
+      "name": "잠언",
+      "chapters": 31,
+      "status": "not-started"
+    },
+    {
+      "code": "ecc",
+      "name": "전도서",
+      "chapters": 12,
+      "status": "not-started"
+    },
+    {
+      "code": "sng",
+      "name": "아가",
+      "chapters": 8,
+      "status": "not-started"
+    },
+    {
+      "code": "isa",
+      "name": "이사야",
+      "chapters": 66,
+      "status": "not-started"
+    },
+    {
+      "code": "jer",
+      "name": "예레미야",
+      "chapters": 52,
+      "status": "not-started"
+    },
+    {
+      "code": "lam",
+      "name": "예레미야애가",
+      "chapters": 5,
+      "status": "not-started"
+    },
+    {
+      "code": "ezk",
+      "name": "에스겔",
+      "chapters": 48,
+      "status": "not-started"
+    },
+    {
+      "code": "dan",
+      "name": "다니엘",
+      "chapters": 12,
+      "status": "not-started"
+    },
+    {
+      "code": "hos",
+      "name": "호세아",
+      "chapters": 14,
+      "status": "not-started"
+    },
+    {
+      "code": "jol",
+      "name": "요엘",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "amo",
+      "name": "아모스",
+      "chapters": 9,
+      "status": "not-started"
+    },
+    {
+      "code": "oba",
+      "name": "오바댜",
+      "chapters": 1,
+      "status": "not-started"
+    },
+    {
+      "code": "jnh",
+      "name": "요나",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "mic",
+      "name": "미가",
+      "chapters": 7,
+      "status": "not-started"
+    },
+    {
+      "code": "nam",
+      "name": "나훔",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "hab",
+      "name": "하박국",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "zep",
+      "name": "스바냐",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "hag",
+      "name": "학개",
+      "chapters": 2,
+      "status": "not-started"
+    },
+    {
+      "code": "zec",
+      "name": "스가랴",
+      "chapters": 14,
+      "status": "not-started"
+    },
+    {
+      "code": "mal",
+      "name": "말라기",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "mat",
+      "name": "마태복음",
+      "chapters": 28,
+      "status": "not-started"
+    },
+    {
+      "code": "mrk",
+      "name": "마가복음",
+      "chapters": 16,
+      "status": "not-started"
+    },
+    {
+      "code": "luk",
+      "name": "누가복음",
+      "chapters": 24,
+      "status": "not-started"
+    },
+    {
+      "code": "jhn",
+      "name": "요한복음",
+      "chapters": 21,
+      "status": "not-started"
+    },
+    {
+      "code": "act",
+      "name": "사도행전",
+      "chapters": 28,
+      "status": "not-started"
+    },
+    {
+      "code": "rom",
+      "name": "로마서",
+      "chapters": 16,
+      "status": "not-started"
+    },
+    {
+      "code": "1co",
+      "name": "고린도전서",
+      "chapters": 16,
+      "status": "not-started"
+    },
+    {
+      "code": "2co",
+      "name": "고린도후서",
+      "chapters": 13,
+      "status": "not-started"
+    },
+    {
+      "code": "gal",
+      "name": "갈라디아서",
+      "chapters": 6,
+      "status": "not-started"
+    },
+    {
+      "code": "eph",
+      "name": "에베소서",
+      "chapters": 6,
+      "status": "not-started"
+    },
+    {
+      "code": "php",
+      "name": "빌립보서",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "col",
+      "name": "골로새서",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "1th",
+      "name": "데살로니가전서",
+      "chapters": 5,
+      "status": "not-started"
+    },
+    {
+      "code": "2th",
+      "name": "데살로니가후서",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "1ti",
+      "name": "디모데전서",
+      "chapters": 6,
+      "status": "not-started"
+    },
+    {
+      "code": "2ti",
+      "name": "디모데후서",
+      "chapters": 4,
+      "status": "not-started"
+    },
+    {
+      "code": "tit",
+      "name": "디도서",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "phm",
+      "name": "빌레몬서",
+      "chapters": 1,
+      "status": "not-started"
+    },
+    {
+      "code": "heb",
+      "name": "히브리서",
+      "chapters": 13,
+      "status": "not-started"
+    },
+    {
+      "code": "jas",
+      "name": "야고보서",
+      "chapters": 5,
+      "status": "not-started"
+    },
+    {
+      "code": "1pe",
+      "name": "베드로전서",
+      "chapters": 5,
+      "status": "not-started"
+    },
+    {
+      "code": "2pe",
+      "name": "베드로후서",
+      "chapters": 3,
+      "status": "not-started"
+    },
+    {
+      "code": "1jn",
+      "name": "요한일서",
+      "chapters": 5,
+      "status": "not-started"
+    },
+    {
+      "code": "2jn",
+      "name": "요한이서",
+      "chapters": 1,
+      "status": "not-started"
+    },
+    {
+      "code": "3jn",
+      "name": "요한삼서",
+      "chapters": 1,
+      "status": "not-started"
+    },
+    {
+      "code": "jud",
+      "name": "유다서",
+      "chapters": 1,
+      "status": "not-started"
+    },
+    {
+      "code": "rev",
+      "name": "요한계시록",
+      "chapters": 22,
+      "status": "not-started"
+    }
+  ]
+}

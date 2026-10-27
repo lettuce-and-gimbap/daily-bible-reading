@@ -61,6 +61,17 @@ test('창세기에서 개명 전후의 아브람·아브라함과 사래·사라
  assert.ok(model.relations.some(r=>r.from==='하나님'&&r.to==='아브라함'&&r.sourceRef==='창세기 12장'),'개명 뒤에도 부르심 관계는 한 인물에 이어진다');
 });
 
+test('사도행전에서 박해자 사울이 된 바울은 같은 한 인물로 관계 끝점도 연결한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'act',name:'사도행전',chap:Number(chap),data}));
+ const model=buildWorldModel(chapters),paul=model.cast.filter(p=>p.identity?.id==='person:paul');
+ assert.equal(paul.length,1);
+ assert.equal(paul[0].name,'바울');
+ assert.ok(paul[0].refs.some(ref=>ref==='사도행전 9장'));
+ assert.ok(paul[0].refs.some(ref=>ref==='사도행전 13장'));
+ assert.ok(model.relations.some(r=>r.from==='바울'||r.to==='바울'));
+});
+
 test('회상·비유에서만 언급된 인물은 월드 명단과 사건 장면 배우에서 제외한다',()=>{
  const examples=[['1co',10,'모세'],['2co',3,'모세'],['exo',13,'요셉'],['jhn',4,'야곱'],['jos',24,'요셉'],['psa',105,'아브라함'],['rom',9,'아브라함'],['luk',16,'아브라함']];
  for(const [code,chapter,name] of examples){

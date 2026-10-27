@@ -6,6 +6,7 @@ const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자
 export function canonicalPersonName(name,{code=''}={}) {
   if(code==='gen'&&name==='아브람')return '아브라함';
   if(code==='gen'&&name==='사래')return '사라';
+  if(code==='act'&&name==='사울')return '바울';
   return name;
 }
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
@@ -20,7 +21,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='gen'&&['아브람','아브라함'].includes(name))return {...id('person','아브라함'),canonicalName:'아브라함'};
   if(code==='gen'&&['사래','사라'].includes(name))return {...id('person','사라'),canonicalName:'사라'};
   if(name==='사울') {
-    if(code==='act'||/바울/.test(role))return id('person','paul');
+    if(code==='act'||/바울/.test(role))return {...id('person','paul'),canonicalName:'바울'};
     if(['1sa','2sa','1ch'].includes(code)||/이스라엘.*왕|다윗.*왕/.test(role))return id('person','saul-king');
     return id('unresolved',`${name}:${code}`,'ambiguous');
   }
