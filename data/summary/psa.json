@@ -2066,11 +2066,11 @@
       ],
       "people": [
         {"name":"고라 자손","role":"회복을 구한 시인","weight":3},
-        {"name":"야곱","role":"포로에서 돌아온 백성","weight":2},
+        {"name":"이스라엘","role":"포로에서 돌아온 백성","weight":2},
         {"name":"하나님","role":"화평을 말씀하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱","label":"돌아오게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"주님이 은혜를 베푸셔서 야곱의 자손을 다시 번영케 하셨대요."},
+        {"from":"하나님","to":"이스라엘","label":"돌아오게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"주님이 은혜를 베푸셔서 포로로 끌려갔던 이스라엘 백성의 형편을 다시 돌이키셨어요."},
         {"from":"고라 자손","to":"하나님","label":"회복을 구한 이","kind":"ally","directed":true,"weight":2,"verses":"4, 10","note":"우리를 다시 돌이키소서 하며, 인애와 진리가 만나고 의와 화평이 입 맞추기를 노래해요."}
       ],
       "places": [
@@ -3250,7 +3250,7 @@
       ],
       "people": [
         {"name":"여호와의 종들","role":"찬송하라 부름받은 이","weight":2},
-        {"name":"야곱","role":"택함받은 백성","weight":2},
+        {"name":"이스라엘","role":"택함받은 백성","weight":2},
         {"name":"바로","role":"표적을 본 애굽 왕","weight":1},
         {"name":"시혼","role":"아모리 왕","weight":1},
         {"name":"옥","role":"바산 왕","weight":1},
@@ -3258,7 +3258,7 @@
         {"name":"하나님","role":"선하신 주","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"4","note":"하나님은 야곱, 곧 이스라엘을 자기의 특별한 소유로 택하셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"4","note":"하나님은 야곱, 곧 이스라엘 공동체를 자기의 특별한 소유로 택하셨어요."},
         {"from":"하나님","to":"바로","label":"표적 보이신 분","kind":"conflict","directed":true,"weight":1,"verses":"9","note":"하나님은 애굽의 바로와 신하들에게 표적과 징조를 보내셨고 맏아들을 치셨어요."},
         {"from":"하나님","to":"시혼","label":"치신 분","kind":"conflict","directed":true,"weight":1,"verses":"10-11","note":"하나님은 아모리 왕 시혼과 바산 왕 옥과 가나안 왕들을 치셔서 그 땅을 이스라엘에게 유산으로 주셨어요."},
         {"from":"레위 족속","to":"하나님","label":"송축할 이","kind":"ally","directed":true,"weight":1,"verses":"20","note":"레위 집안에게도 하나님을 찬양하라고 불러요."}

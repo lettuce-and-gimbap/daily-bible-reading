@@ -327,6 +327,28 @@ test('욥기의 회상 인물·가정 예시는 월드 배우에서 빠지고 �
  for(const chapter of ['10','23'])assert.ok(!summary.chapters[chapter].rels.some(edge=>edge.from==='하나님'&&edge.to==='욥'));
 });
 
+test('시편 1–120편의 표제 인물과 회고 인물은 현장 캐스트에서 제외하고 집단 표현을 구분한다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/psa.json',import.meta.url),'utf8'));
+ const events=JSON.parse(fs.readFileSync(new URL('../data/pixel-bible/events/psa.json',import.meta.url),'utf8'));
+ const cases=[['3','압살롬'],['7','구시'],['18','사울'],['34','아비멜렉'],['39','여두둔'],['45','왕의 아들들'],['51','나단'],['51','밧세바'],['52','도엑'],['52','아히멜렉'],['54','십 사람들'],['57','사울'],['59','사울'],['60','요압'],['77','야곱과 요셉의 자손'],['78','에브라임 자손'],['83','시스라'],['88','친구와 사랑하는 자'],['91','천사들'],['103','모세'],['110','멜기세덱'],['114','이스라엘'],['118','건축자들'],['132','다윗'],['132','다윗의 자손'],['133','아론'],['135','바로'],['135','시혼'],['135','옥'],['136','바로'],['136','시혼과 옥'],['137','에돔 자손'],['137','바벨론']];
+ for(const [chapter,name] of cases){
+  assert.ok(isMentionOnlyPerson({name},{code:'psa',chapter}),`시편 ${chapter}편 ${name}의 범위 표시`);
+  const data=summary.chapters[chapter],eventScenes=[...(events.scenes||[]),...(events.restoredScenes||[])].filter(scene=>scene.chapter===Number(chapter));
+  const model=buildWorldModel([{code:'psa',name:'시편',chap:Number(chapter),data:{...data,eventScenes}}]);
+  assert.ok(!model.cast.some(person=>person.name===name),`시편 ${chapter}편 ${name}은 현장 배우가 아님`);
+  assert.ok(model.scenes.every(scene=>!scene.actors.includes(name)),`시편 ${chapter}편 ${name}은 장면 배우가 아님`);
+ }
+ const reviewed=Object.entries(summary.chapters);
+ assert.equal(reviewed.length,150);
+ assert.equal(reviewed.reduce((total,[,chapter])=>total+chapter.rels.length,0),432);
+ assert.ok(summary.chapters['85'].people.some(person=>person.name==='이스라엘'));
+ assert.ok(!summary.chapters['85'].people.some(person=>person.name==='야곱'));
+ assert.ok(summary.chapters['85'].rels.some(edge=>edge.from==='하나님'&&edge.to==='이스라엘'));
+ assert.ok(summary.chapters['135'].people.some(person=>person.name==='이스라엘'));
+ assert.ok(!summary.chapters['135'].people.some(person=>person.name==='야곱'));
+ assert.ok(summary.chapters['135'].rels.some(edge=>edge.from==='하나님'&&edge.to==='이스라엘'));
+});
+
 test('본문 인물 색인의 언급 표시는 별도 사건 장면 배우 목록에도 적용한다',()=>{
  const mention={name:'언급된 조상',role:'본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.'};
  const scene={id:'mention-check',code:'test',chapter:1,title:'과거 이야기',actors:[mention.name],object:'scroll',ref:'시험 1:1',verseNumbers:[1],lines:[],study:'설명',animation:{version:2,mode:'illustration',motif:'symbolic',lead:null,target:null,setting:'vision',effect:'symbol',emotion:'neutral',prop:'scroll',beats:[],duration:1}};
