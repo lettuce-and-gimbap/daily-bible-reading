@@ -6906,7 +6906,7 @@
       "chapter": 21,
       "title": "밤이 어떻게 되었느냐",
       "actors": [
-        "두마"
+        "세일의 질문자"
       ],
       "object": "scroll",
       "ref": "이사야 21:11-12",
@@ -6916,16 +6916,16 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 두마에서 밤이 언제 가느냐고 묻자 아침이 오지만 밤도 다시 온다고 답해요. 기다림이 더 남았다고 읽는 견해가 많아요."
+        "해설: 세일의 질문자가 파수꾼에게 밤이 언제 가느냐고 묻자 아침이 오지만 밤도 다시 온다고 답해요. 기다림이 더 남았다고 읽는 견해가 많아요."
       ],
-      "study": "두마에서 밤이 언제 가느냐고 묻자 아침이 오지만 밤도 다시 온다고 답해요. 기다림이 더 남았다고 읽는 견해가 많아요.",
+      "study": "세일의 질문자가 파수꾼에게 밤이 언제 가느냐고 묻자 아침이 오지만 밤도 다시 온다고 답해요. 기다림이 더 남았다고 읽는 견해가 많아요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "예언과 환상은 본문이 제시하는 상징을 설명하는 장면이에요. 화면의 동작은 예언이 실제로 일어난 사건이라고 단정하지 않아요.",
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "두마",
+        "lead": "세일의 질문자",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -6936,32 +6936,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "두마"
+            "actor": "세일의 질문자"
           }
         ],
         "duration": 8.2,
@@ -11055,7 +11055,7 @@
       "chapter": 43,
       "title": "너는 내 것이라",
       "actors": [
-        "야곱"
+        "이스라엘"
       ],
       "object": "water-supply",
       "ref": "이사야 43:1-7",
@@ -11079,7 +11079,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "야곱",
+        "lead": "이스라엘",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -11090,32 +11090,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           }
         ],
         "duration": 8.2,
@@ -11204,7 +11204,7 @@
       "chapter": 43,
       "title": "새 일을 행하리니",
       "actors": [
-        "야곱"
+        "이스라엘"
       ],
       "object": "gate",
       "ref": "이사야 43:14-21",
@@ -11229,7 +11229,7 @@
       "animation": {
         "version": 2,
         "motif": "pray",
-        "lead": "야곱",
+        "lead": "이스라엘",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -11240,32 +11240,32 @@
           {
             "action": "look",
             "duration": 1,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "kneel",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "pray",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "lift",
             "duration": 1.8,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "pray",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           }
         ],
         "duration": 8.2,
@@ -11280,7 +11280,7 @@
       "chapter": 43,
       "title": "허물을 도말하심",
       "actors": [
-        "야곱"
+        "이스라엘"
       ],
       "object": "scroll",
       "ref": "이사야 43:22-28",
@@ -11304,7 +11304,7 @@
       "animation": {
         "version": 2,
         "motif": "prophecy",
-        "lead": "야곱",
+        "lead": "이스라엘",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -11315,32 +11315,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "lift",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "speak",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "lower",
             "duration": 1.5,
-            "actor": "야곱"
+            "actor": "이스라엘"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "야곱"
+            "actor": "이스라엘"
           }
         ],
         "duration": 8.2,

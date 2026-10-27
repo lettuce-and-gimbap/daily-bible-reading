@@ -16,19 +16,19 @@
         {"title":"의의 성읍으로","verses":"21-31","text":"충성스럽던 성이 창녀처럼 되었어요. 하나님이 잿물로 씻어 내듯 허물을 씻어 내셔서 다시 '의로운 성'이라 불리게 하세요."}
       ],
       "people": [
-        {"name":"이사야","role":"묵시를 본 아모스의 아들","weight":3},
+        {"name":"이사야","role":"묵시를 본 아모츠의 아들","weight":3},
         {"name":"유다 백성","role":"하나님을 거역한 자식","weight":3},
         {"name":"예루살렘의 관원들","role":"뇌물을 사랑하는 지도자","weight":2},
         {"name":"고아와 과부","role":"변호받아야 할 약자","weight":1},
         {"name":"하나님","role":"거역한 자녀를 부르시는 분","weight":3},
-        {"name":"아모스","role":"이사야의 아버지","weight":1}
+        {"name":"아모츠","role":"이사야의 아버지","weight":1}
       ],
       "rels": [
         {"from":"유다 백성","to":"하나님","label":"거역한 자식","kind":"conflict","directed":true,"weight":3,"verses":"2-4","note":"하나님이 자식처럼 기르셨는데 백성이 등을 돌렸어요. 소도 주인을 아는데 이스라엘은 하나님을 몰라요."},
         {"from":"하나님","to":"유다 백성","label":"변론하자 초청","kind":"ally","directed":true,"weight":3,"verses":"18","note":"하나님이 와서 서로 따져 보자고 부르세요. 죄가 진홍처럼 붉어도 양털처럼 희게 해 주시겠다는 초대예요."},
         {"from":"예루살렘의 관원들","to":"고아와 과부","label":"외면한 지도자","kind":"conflict","directed":true,"weight":2,"verses":"23","note":"지도자들이 뇌물을 좋아하고 고아와 과부의 송사를 맡아 주지 않아요."},
         {"from":"이사야","to":"하나님","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"1","note":"이 책은 아모스의 아들 이사야가 유다와 예루살렘에 대해 본 환상이에요. 이사야는 하나님의 말씀을 전하는 선지자예요."},
-        {"from":"이사야","to":"아모스","label":"아들","kind":"family","directed":false,"weight":2,"verses":"표제","note":"이사야는 아모스의 아들이에요. 책의 첫머리에서 이사야의 아버지와 활동 시기를 함께 밝혀요.","adminOnly":true}
+        {"from":"이사야","to":"아모츠","label":"아들","kind":"family","directed":false,"weight":2,"verses":"표제","note":"표제의 아버지는 아모츠예요. 선지자 아모스와는 다른 사람입니다.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"원두막처럼 홀로 남게 될 유다의 도성 예루살렘","weight":3},
@@ -536,7 +536,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"이사야","label":"징조로 쓰신 분","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"하나님이 이사야에게 베옷과 신을 벗고 삼 년을 다니라고 하세요. 이사야는 말씀대로 그렇게 했어요."},
-        {"from":"다르단","to":"사르곤","label":"보냄받은 장군","kind":"ally","directed":true,"weight":1,"verses":"1","note":"앗수르 왕 사르곤이 다르단을 보내 아스돗을 쳤어요."},
+        {"from":"사르곤","to":"다르단","label":"보낸 사령관","kind":"ally","directed":true,"weight":1,"verses":"1","note":"앗수르 왕 사르곤이 군대 장관 다르단을 아스돗으로 보내 공격하게 했어요."},
         {"from":"사르곤","to":"애굽과 구스","label":"끌고 갈 왕","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"앗수르 왕이 애굽과 구스의 포로를 벗은 몸과 맨발로 끌고 가요."},
         {"from":"해변 주민들","to":"애굽과 구스","label":"의지한 이들","kind":"other","directed":true,"weight":2,"verses":"6","note":"해변 사람들은 애굽과 구스를 믿고 도움을 바랐다가 부끄러움을 당해요. 애굽과 구스를 의지하는 일이 헛되다고 읽는 견해가 많아요."}
       ],
@@ -559,14 +559,14 @@
         {"name":"파수꾼","role":"바벨론 함락을 외친 이","weight":3},
         {"name":"바벨론","role":"함락될 나라","weight":2},
         {"name":"엘람과 메대","role":"에워쌀 군대","weight":2},
-        {"name":"두마","role":"밤을 묻는 자","weight":1},
+        {"name":"세일의 질문자","role":"파수꾼에게 밤이 언제 끝나는지 묻는 사람","weight":1},
         {"name":"게달","role":"영광이 쇠할 아라비아 족속","weight":1},
         {"name":"하나님","role":"파수꾼을 세우신 분","weight":2}
       ],
       "rels": [
         {"from":"하나님","to":"파수꾼","label":"세우신 분","kind":"ally","directed":true,"weight":2,"verses":"6","note":"주님은 망루에 파수꾼을 세워 보이는 것을 그대로 알리게 하셨어요. 예언자는 하나님이 보여 주신 것을 전하는 파수꾼이에요."},
         {"from":"엘람과 메대","to":"바벨론","label":"에워쌀 군대","kind":"conflict","directed":true,"weight":3,"verses":"2, 9","note":"엘람과 메대는 바벨론을 에워쌀 군대로 나와요. 하나님이 미리 알리신 일이에요."},
-        {"from":"두마","to":"파수꾼","label":"밤을 물은 이","kind":"other","directed":true,"weight":1,"verses":"11-12","note":"두마에서 밤이 언제 끝나느냐고 묻자 파수꾼은 아침이 오되 밤도 다시 온다고 답했어요. 두마를 에돔으로 보는 견해가 많아요."},
+        {"from":"세일의 질문자","to":"파수꾼","label":"밤을 묻는 이","kind":"other","directed":true,"weight":1,"verses":"11-12","note":"두마에 관한 경고의 표제 아래 세일에서 온 질문자가 파수꾼에게 밤이 언제 끝나느냐고 물어요. 파수꾼은 아침이 오지만 밤도 다시 온다고 답해요."},
         {"from":"하나님","to":"게달","label":"쇠하게 하실 분","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"게달 자손의 활 가진 용사들도 일 년 안에 줄어든다고 해요."}
       ],
       "places": [
@@ -1067,13 +1067,13 @@
         {"name":"이사야","role":"위로를 전한 선지자","weight":2},
         {"name":"외치는 자의 소리","role":"광야에 길을 예비할 이","weight":2},
         {"name":"예루살렘","role":"위로받을 백성","weight":3},
-        {"name":"야곱","role":"하나님이 길을 모르신다 한 백성","weight":2},
+        {"name":"이스라엘","role":"하나님이 길을 모르신다 한 백성","weight":2},
         {"name":"하나님","role":"목자처럼 양을 품으시는 분","weight":3}
       ],
       "rels": [
         {"from":"하나님","to":"예루살렘","label":"위로하시는 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님은 예루살렘에게 다정하게 말하라 하세요. 고된 일은 끝났고 죄도 용서받았다는 위로예요."},
         {"from":"외치는 자의 소리","to":"하나님","label":"길을 예비하는 이","kind":"ally","directed":true,"weight":2,"verses":"3","note":"광야에서 하나님이 오실 길을 닦으라고 외치는 소리예요."},
-        {"from":"하나님","to":"야곱","label":"새 힘을 주실 분","kind":"ally","directed":true,"weight":3,"verses":"29-31","note":"하나님은 지치지도 곤비하지도 않으시며, 기다리는 사람에게 독수리 같은 새 힘을 주세요."}
+        {"from":"하나님","to":"이스라엘","label":"새 힘을 주실 분","kind":"ally","directed":true,"weight":3,"verses":"29-31","note":"하나님은 지치지도 곤비하지도 않으시며, 기다리는 사람에게 독수리 같은 새 힘을 주세요."}
       ],
       "places": [
         {"name":"광야","where":"예루살렘으로 돌아오는 길","what":"하나님이 오실 길을 닦으라고 외치는 광야의 길이에요.","weight":3},
@@ -1147,14 +1147,13 @@
         {"title":"허물을 도말하심","verses":"22-28","text":"백성은 하나님을 부르지도 제물을 드리지도 않고, 죄로 하나님을 수고롭게 했어요. 그래도 하나님은 자기 이름을 위해 허물을 지우세요."}
       ],
       "people": [
-        {"name":"야곱","role":"지명하여 부르신 백성","weight":3},
-        {"name":"이스라엘","role":"하나님의 증인","weight":2},
+        {"name":"이스라엘","role":"야곱이라는 이름으로도 불리는 하나님의 증인 백성","weight":3},
         {"name":"바벨론","role":"치실 나라","weight":1},
         {"name":"애굽과 구스와 스바","role":"대속물로 주실 나라","weight":1},
         {"name":"하나님","role":"유일한 구원자","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱","label":"구속하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님은 야곱을 지으시고 건지시고 이름을 불러 내 것이라 하세요. 물과 불을 지날 때도 함께하겠다고 하세요."},
+        {"from":"하나님","to":"이스라엘","label":"구속하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님은 야곱 곧 이스라엘을 지으시고 건지시며 이름을 불러 자기 백성이라 하세요. 물과 불을 지날 때도 함께하겠다고 약속하세요."},
         {"from":"이스라엘","to":"하나님","label":"증인 된 백성","kind":"ally","directed":true,"weight":2,"verses":"10, 12","note":"이스라엘은 하나님이 유일한 구원자임을 알고 믿도록 세운 증인이에요. 우상들은 증인을 세우지 못해요."},
         {"from":"하나님","to":"바벨론","label":"치실 분","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"하나님이 이스라엘을 위해 바벨론에 군대를 보내 성문 빗장을 부수세요."},
         {"from":"이스라엘","to":"하나님","label":"수고롭게 한 백성","kind":"conflict","directed":true,"weight":2,"verses":"22-24","note":"이스라엘은 하나님을 부르지도 않았고 정성껏 섬기지도 않으면서 오히려 죄로 하나님을 수고롭게 했어요."}
