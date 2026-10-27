@@ -1,10 +1,40 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildWorldModel, findPath, clientToCanvasPoint, touchSlopPixels } from '../js/features/pixel-bible/world.js';
+import { buildWorldModel, findPath, clientToCanvasPoint, touchSlopPixels, initialWorldRange } from '../js/features/pixel-bible/world.js';
 import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-bible/speech-view.js';
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
 import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
+
+test('픽셀바이블의 표기 범위는 현재 월드 장을 기본값으로 보여준다',()=>{
+ assert.deepEqual(initialWorldRange([{code:'2ki',chap:18}]),{code:'2ki',start:18,end:18});
+ assert.deepEqual(initialWorldRange([{code:'psa',chap:47},{code:'psa',chap:48},{code:'psa',chap:49}]),{code:'psa',start:47,end:49});
+ assert.deepEqual(initialWorldRange([{code:'2ki',chap:18}],{code:'psa',start:57,end:61}),{code:'psa',start:57,end:61});
+});
+
+test('열왕기하 17–21장의 언급 인물 모세는 현장 캐릭터로 나오지 않고 김밥은 한 명만 합류한다',async()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/2ki.json',import.meta.url),'utf8'));
+ const eventBook=JSON.parse(fs.readFileSync(new URL('../data/pixel-bible/events/2ki.json',import.meta.url),'utf8'));
+ const chapters=[];
+ for(let chap=17;chap<=21;chap++){
+  const base=summary.chapters[chap],extra=eventBook.additionalPeople?.[String(chap)]||[];
+  const names=new Set((base.people||[]).map(p=>p.name));
+  chapters.push({code:'2ki',name:'열왕기하',chap,data:{...base,people:[...(base.people||[]),...extra.filter(p=>!names.has(p.name))]}});
+ }
+ const model=buildWorldModel(chapters);
+ assert.equal(model.cast.filter(p=>p.name==='모세').length,0,'모세는 왕하 18:4, 6, 12와 21:8에서 언급될 뿐 해당 장면의 현장 인물이 아니다');
+ assert.equal(model.cast.filter(p=>p.name==='김밥').length,1);
+ assert.equal(model.cast.filter(p=>p.name==='엘리아김(힐기야의 아들)').length,1,'반복 출현하는 엘리아김도 월드에 한 명만 둔다');
+ assert.match(summary.chapters[18].story,/모세/,'역사적 언급은 본문 설명에서 유지한다');
+});
+
+test('김밥 캐릭터는 64×64 원본 픽셀을 90도씩 돌려 구른다',async()=>{
+ const {GIMBAP_FRAME_SIZE,gimbapRollAngle}=await import('../js/features/pixel-bible/gimbap-art.js');
+ assert.equal(GIMBAP_FRAME_SIZE,64);
+ assert.deepEqual([0,1,2,3].map(gimbapRollAngle),[0,Math.PI/2,Math.PI,Math.PI*1.5]);
+ const {characterStyle}=await import('../js/features/pixel-bible/art.js');
+ assert.equal(characterStyle('김밥',0,'월드의 창작 길동무',[]).gimbap,true);
+});
 
 test('QT 절 범위에 맞춰 픽셀 월드의 사건·관계·인물·장면을 좁힌다',()=>{
  const data={people:[{name:'엘리야'},{name:'천사'},{name:'이세벨'}],events:[{title:'위협',verses:'1-4',text:'이세벨이 엘리야를 위협함'},{title:'돌봄',verses:'5-8',text:'천사가 엘리야에게 떡과 물을 줌'}],rels:[{from:'천사',to:'엘리야',verses:'5-8',note:'지친 엘리야를 먹임'}],story:'전체 장 이야기'};
@@ -119,8 +149,9 @@ test('인물을 함께 모아도 본문 출처를 보존하고 하나님은 인�
     { ...base, chap: 1, data: { people: [{ name: '하나님', weight: 3 }, { name: '아담', weight: 1 }] } },
     { ...base, chap: 2, data: { people: [{ name: '아담', weight: 3 }], rels: [{ from: '하나님', to: '아담', verses: '7', label: '지으심' }] } },
   ]);
-  assert.equal(model.cast.length, 1);
-  assert.deepEqual(model.cast[0].refs, ['창세기 1장', '창세기 2장']);
+  assert.equal(model.cast.filter(p=>p.name==='아담').length, 1);
+  assert.deepEqual(model.cast.find(p=>p.name==='아담').refs, ['창세기 1장', '창세기 2장']);
+  assert.equal(model.cast.filter(p=>p.name==='김밥').length,1);
   assert.equal(model.relations[0].ref, '창세기 2:7');
   assert.equal(model.scenes.length, 0);
 });
@@ -366,7 +397,7 @@ test('오브젝트 명칭 불과 사람 이름인 앗수르 왕 불을 혼동하
 
 test('같은 이름의 다른 신원을 한 월드 인물로 합치지 않는다',()=>{
  const model=buildWorldModel([{code:'gen',name:'창세기',chap:37,data:{people:[{name:'요셉',role:'야곱의 아들'}]}},{code:'mat',name:'마태복음',chap:1,data:{people:[{name:'요셉',role:'마리아의 남편'}]}}]);
- assert.equal(model.cast.length,2);assert.notEqual(model.cast[0].identity.id,model.cast[1].identity.id);
+ const josephs=model.cast.filter(p=>p.name==='요셉');assert.equal(josephs.length,2);assert.notEqual(josephs[0].identity.id,josephs[1].identity.id);
 });
 
 test('역할명이 달라도 미확정 인물 이름은 월드에서 한 명으로 합치고 등장 장을 모은다',()=>{
@@ -553,16 +584,16 @@ test('10명을 넘는 통독 명단도 모두 동시에 월드에 보존한다',
  const {visibleWorldCast}=await import('../js/features/pixel-bible/world.js');
  const data={people:Array.from({length:25},(_,i)=>({name:`인물${i}`,role:'본문 인물',weight:25-i})),rels:[{from:'인물24',to:'인물23',label:'도움',verses:'1'}]};
  const model=buildWorldModel([{code:'gen',name:'창세기',chap:1,data}]);
- assert.equal(model.cast.length,25);
+ assert.equal(model.cast.filter(p=>!p.worldMascot).length,25);
  const visible=visibleWorldCast(model,24);
- assert.equal(visible.length,25);assert.deepEqual(new Set(visible.map(p=>p.name)),new Set(model.cast.map(p=>p.name)));
+ assert.equal(visible.filter(p=>!p.worldMascot).length,25);assert.deepEqual(new Set(visible.map(p=>p.name)),new Set(model.cast.map(p=>p.name)));
 });
 
 test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',async()=>{
  const {buildChapterDialogue}=await import('../js/features/pixel-bible/chapter-dialogue.js');
  const chapters=[{code:'gen',name:'창세기',chap:1,data:{people:[{name:'갑',role:'돕는 이'}],rels:[{from:'갑',to:'을',label:'도움',note:'갑이 을을 돕는다.',verses:'1'}]}}];
  const model=buildWorldModel(chapters),context=buildChapterDialogue(chapters);
- assert.deepEqual(model.cast.map(p=>p.name),['갑','을']);assert.equal(context.relations.length,1);
+ assert.deepEqual(model.cast.filter(p=>!p.worldMascot).map(p=>p.name),['갑','을']);assert.equal(context.relations.length,1);
 });
 
 test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다른 본문의 동명이인을 연결하지 않는다',async()=>{

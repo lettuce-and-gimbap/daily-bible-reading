@@ -13,8 +13,9 @@ import { backgroundFor } from './backgrounds.js';
 import { characterSpriteFrame } from './character-motion.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
+import {drawGimbap} from './gimbap-art.js';
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
-export const characterStyle = (name,index,role,refs,creature=null)=>{const d=creature===false?null:creature||creatureForName(name,role);return d?{...appearanceFor(name,index,role,refs),creature:d,evidence:'현재 본문에 언급된 '+d.name,design:'생물의 신체 특징에 맞춘 창작 픽셀 도안'}:appearanceFor(name,index,role,refs);};
+export const characterStyle = (name,index,role,refs,creature=null)=>{if(name==='김밥')return {...appearanceFor(name,index,role,refs),gimbap:true,evidence:'PIXEL BIBLE 창작 길동무',design:'64×64 도트로 그린 김밥 머리와 작업 앞치마'};const d=creature===false?null:creature||creatureForName(name,role);return d?{...appearanceFor(name,index,role,refs),creature:d,evidence:'현재 본문에 언급된 '+d.name,design:'생물의 신체 특징에 맞춘 창작 픽셀 도안'}:appearanceFor(name,index,role,refs);};
 // 네 방향·네 걷기 프레임을 원본 도트로 캐시한다. 실루엣 테두리도 같은 알파에서 만든다.
 const spriteCache=new Map();
 export function drawPixelCharacter(ctx,style,x,y,options={}) {
@@ -35,14 +36,15 @@ export function drawPixelCharacter(ctx,style,x,y,options={}) {
    crown:kind==='helmet'?false:kind==='crown'||activeStyle.crown,turban:['helmet','crown'].includes(kind)?false:activeStyle.turban,helmet:kind==='helmet',belt:kind==='belt'||activeStyle.belt,apron:kind==='ephod'||activeStyle.apron,plate:['armor','breastplate'].includes(kind),fur:kind==='sackcloth'||activeStyle.fur,sandal:kind==='sandal'};
  }
  const expression=spriteFrame.expression||'neutral';
- const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose?{...pose,within:0}:null,expression]);let sprite=spriteCache.get(key);
+ const key=JSON.stringify([activeStyle,direction,pose?0:frame,renderAction,pose?{...pose,within:0}:null,expression,activeStyle.gimbap&&options.rolling===true]);let sprite=spriteCache.get(key);
  if(!sprite){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const c=canvas.getContext('2d');
-  if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2*(pose.recline??1));c.translate(-32,-37);}
-  if(activeStyle.creature)drawCreature(c,activeStyle.creature,32,52,{frame:pose?.dangling?Math.abs((pose.leftLeg||0)+(pose.rightArm||0))%4:frame,direction,pose,time,hanging:hanging||pose?.dangling});
-  else if(direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
-  else drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
+  if(activeStyle.gimbap){drawGimbap(c,frame,{rolling:options.rolling===true&&!pose});}
+  else if(pose?.lie){c.translate(32,37);c.rotate(-Math.PI/2*(pose.recline??1));c.translate(-32,-37);}
+  if(!activeStyle.gimbap&&activeStyle.creature)drawCreature(c,activeStyle.creature,32,52,{frame:pose?.dangling?Math.abs((pose.leftLeg||0)+(pose.rightArm||0))%4:frame,direction,pose,time,hanging:hanging||pose?.dangling});
+  else if(!activeStyle.gimbap&&direction==='down')drawFrontCharacter(c,activeStyle,32,52,{scale:1,walk:pose?0:step,action:renderAction,facing:1,pose,expression});
+  else if(!activeStyle.gimbap)drawDirectionalCharacter(c,activeStyle,32,52,{scale:1,step:pose?0:step,action:renderAction,direction,pose,expression});
   sprite={canvas};if(spriteCache.size>=4096)spriteCache.delete(spriteCache.keys().next().value);spriteCache.set(key,sprite);
  }
  if(options.hitTest){
