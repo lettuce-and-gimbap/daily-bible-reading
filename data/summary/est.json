@@ -59,7 +59,8 @@
         {"from":"아하수에로","to":"에스더","label":"남편","kind":"family","directed":true,"weight":3,"verses":"17","note":"왕은 누구보다 에스더를 아껴 왕관을 씌우고 와스디 대신 왕비로 삼았어요."},
         {"from":"헤개","to":"에스더","label":"돌본 내시","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"궁녀를 맡은 내시 헤개가 에스더를 좋게 여겨 몸단장할 물품과 시녀를 주었어요."},
         {"from":"빅단","to":"아하수에로","label":"해하려 한 내시","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"문을 지키던 내시 빅단과 데레스가 원한을 품고 왕을 죽이려 꾀했어요."},
-        {"from":"모르드개","to":"빅단","label":"음모를 알린 이","kind":"conflict","directed":true,"weight":2,"verses":"22-23","note":"모르드개가 그 음모를 알고 에스더에게 알려 왕에게 전하게 했고, 그 일이 궁중 일기에 기록되었어요."},
+        {"from":"모르드개","to":"아하수에로","label":"왕의 목숨을 구한 이","kind":"ally","directed":true,"weight":2,"verses":"21-23","note":"모르드개가 빅단과 데레스의 암살 음모를 알아차려 에스더에게 알렸고, 에스더가 왕에게 보고해 조사와 처벌이 이루어졌어요."},
+        {"from":"에스더","to":"아하수에로","label":"음모를 보고한 왕후","kind":"ally","directed":true,"weight":2,"verses":"22-23","note":"에스더는 모르드개가 전한 암살 음모를 왕에게 알렸어요. 왕은 조사 뒤 두 내시를 처벌하고 그 일을 궁중 일기에 기록하게 했어요."},
         {"from":"데레스","to":"빅단","label":"함께 꾀함","kind":"ally","directed":false,"weight":1,"verses":"21","note":"데레스는 빅단과 함께 왕을 해하려 했어요."}
       ],
       "places": [
@@ -115,6 +116,7 @@
       "rels": [
         {"from":"모르드개","to":"에스더","label":"일깨운 사촌","kind":"family","directed":true,"weight":3,"verses":"13-14","note":"모르드개가 네가 왕궁에 있다고 홀로 살 줄 생각하지 말라, 이때를 위해 왕후가 된 것이 아니냐며 일깨웠어요."},
         {"from":"하닥","to":"에스더","label":"말을 전한 내시","kind":"ally","directed":true,"weight":2,"verses":"5-10","note":"왕후의 내시 하닥이 에스더와 모르드개 사이를 오가며 말을 전했어요."},
+        {"from":"하닥","to":"모르드개","label":"왕후의 말을 전한 내시","kind":"ally","directed":true,"weight":2,"verses":"6-10","note":"하닥은 에스더의 상황과 질문을 모르드개에게 전하고, 모르드개의 답과 조언을 다시 에스더에게 전달했어요."},
         {"from":"유다인","to":"에스더","label":"함께 금식한 민족","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"에스더가 수산의 유다인을 모아 나를 위해 사흘 금식하라 하고 죽으면 죽으리라며 왕에게 나아가기로 했어요."},
         {"from":"시녀들","to":"에스더","label":"함께 금식","kind":"ally","directed":true,"weight":1,"verses":"16","note":"에스더와 시녀들도 함께 금식했어요."}
       ],

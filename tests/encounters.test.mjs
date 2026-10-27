@@ -9,6 +9,7 @@ import {relationshipLines,loveBoothExchange} from '../js/features/pixel-bible/re
 import {PAIR_DIALOGUE} from '../js/features/pixel-bible/pair-dialogue.js';
 import {HISTORY_DIALOGUE_ROWS} from '../js/features/pixel-bible/old-testament/history.js';
 import {MINOR_PROPHETS_DIALOGUE_ROWS} from '../js/features/pixel-bible/old-testament/minor-prophets.js';
+import {isMentionOnlyPerson} from '../js/features/pixel-bible/mention-only.js';
 
 function fixture(){
  const chapters=[{code:'1ki',name:'열왕기상',chap:21,data:{people:[{name:'아합',role:'포도원을 원한 왕'},{name:'나봇',role:'유산을 지킨 포도원 주인'}],rels:[{from:'아합',to:'나봇',label:'포도원 요구',verses:'1-4',note:'아합이 포도원을 원했지만 나봇은 조상의 유산을 넘기지 않았어요.'}]}}];
@@ -304,7 +305,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3794);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3796);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -996,11 +997,15 @@ test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지�
 test('에스더와 모르드개는 하닥을 통한 두려움·결단의 문답으로 이어진다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/est.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'est',name:'에스더',chap:Number(chap),data}));
- const context=buildChapterDialogue(chapters);assert.equal(context.relations.length,47);
+ const context=buildChapterDialogue(chapters);assert.equal(context.relations.length,49);
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref));}
  const esther=PAIR_DIALOGUE.find(entry=>entry.id==='pair-41'),mordecai=PAIR_DIALOGUE.find(entry=>entry.id==='pair-42');
  assert.match(esther.lines[0],/부름 없이 왕께 나아가면 죽을 수 있어/);assert.match(esther.lines[1],/죽으면 죽으리라/);
  assert.match(mordecai.lines[1],/이때를 위해 왕후/);assert.match(esther.detail,/하닥을 통해/);assert.match(mordecai.detail,/직접 대면이 아니라 전령을 통한 대화/);
+ assert.ok(summary.chapters['2'].rels.some(edge=>edge.from==='모르드개'&&edge.to==='아하수에로'&&edge.verses==='21-23'));
+ assert.ok(!summary.chapters['2'].rels.some(edge=>edge.from==='모르드개'&&edge.to==='빅단'));
+ assert.ok(summary.chapters['4'].rels.some(edge=>edge.from==='하닥'&&edge.to==='모르드개'&&edge.verses==='6-10'));
+ assert.ok(isMentionOnlyPerson({name:'하만'},{code:'est',chapter:9}));
 });
 
 test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵한 피해자에게 대사를 붙이지 않는다',()=>{

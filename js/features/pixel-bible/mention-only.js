@@ -129,6 +129,26 @@ const CHAPTERS = {
   'neh.11': ['아삽'],
   'neh.12': ['예수아', '스룹바벨'],
   'neh.13': ['산발랏'],
+  // Haman is already dead by chapter 9; his ten sons are killed in the scene,
+  // but he is identified only as their father and the Jews' former enemy.
+  'est.9': ['하만'],
+  // Job's friends refer to people in past events, hypotheticals, and poetic
+  // examples. Keep their relationship evidence without placing them in the
+  // present scene. The spirit is recounted from Eliphaz's remembered vision;
+  // Elihu's father and the proposed mediator are also not scene participants.
+  'job.4': ['영'],
+  'job.8': ['욥의 자녀들'],
+  'job.19': ['욥의 아내', '형제와 친척', '대속자'],
+  'job.21': ['악인'],
+  'job.24': ['악인', '가난한 자들'],
+  'job.27': ['악인'],
+  'job.29': ['가난한 자와 고아', '성문의 사람들'],
+  'job.30': ['조롱하는 젊은이들'],
+  'job.31': ['종들', '가난한 자와 과부'],
+  'job.32': ['바라겔'],
+  'job.33': ['중보자'],
+  'job.34': ['지혜 있는 자들'],
+  'job.35': ['압제받는 사람들'],
   'ezk.20': ['조상들'],
   'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],
