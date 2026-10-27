@@ -349,7 +349,8 @@ test('이사야 61–66장의 복음 선포·공동체 탄원·새 창조를 화
  const isaiah=JSON.parse(readFileSync(new URL('../data/summary/isa.json',import.meta.url),'utf8'));
  const rows=MAJOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='isa'&&row[1]>=61&&row[1]<=66);
  assert.ok(rows.some(row=>row[1]===61&&row[2]==='기름 부음받은 이'));
- assert.ok(rows.some(row=>row[1]===63&&row[2]==='붉은 옷의 용사'));
+ assert.ok(!rows.some(row=>row[1]===63&&row[2]==='붉은 옷의 용사'),'여호와 자신을 묘사하는 환상 칭호를 별도 인물의 독백으로 중복 등록하지 않는다');
+ assert.ok(isaiah.chapters['63'].rels.some(relation=>relation.from==='하나님'&&relation.to==='에돔'&&relation.verses==='1-3'));
  assert.ok(rows.some(row=>row[1]===63&&row[2]==='이스라엘'));
  assert.ok(rows.some(row=>row[1]===64&&row[2]==='이스라엘'));
  assert.ok(rows.some(row=>row[1]===65&&row[2]==='하나님'));
