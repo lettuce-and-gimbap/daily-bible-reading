@@ -19,6 +19,9 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if((code==='2sa'&&Number(chapter)===8&&name==='아히멜렉')||(code==='1ch'&&Number(chapter)===18&&name==='아비멜렉')||(code==='1ch'&&Number(chapter)===24&&name==='아히멜렉'))return '아히멜렉(아비아달의 아들)';
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return '아히멜렉(아비아달의 아버지)';
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return '엘하난(야레오르김의 아들)';
+  if(code==='1ch'&&Number(chapter)===8&&name==='에스바알')return '이스보셋';
+  if(['므립바알','므비보셋'].includes(name))return '므비보셋';
+  if((code==='2sa'&&Number(chapter)===24&&name==='아라우나')||(code==='1ch'&&Number(chapter)===21&&name==='오르난'))return '아라우나(오르난)';
   if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return '여호수아(벧세메스 사람)';
   return name;
 }
@@ -44,6 +47,9 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='1sa'&&[21,22].includes(Number(chapter))&&name==='아히멜렉')return {...id('person','ahimelech-priest-of-nob'),canonicalName:'아히멜렉(아비아달의 아버지)'};
   if(code==='2sa'&&Number(chapter)===21&&name==='엘하난')return {...id('person','elhanan-son-of-jaare-oregim'),canonicalName:'엘하난(야레오르김의 아들)'};
   if(code==='2sa'&&Number(chapter)===23&&name==='엘하난(도도의 아들)')return {...id('person','elhanan-son-of-dodo'),canonicalName:'엘하난(도도의 아들)'};
+  if((name==='므립바알'||name==='므비보셋')&&!(code==='2sa'&&Number(chapter)===21&&/리스바/.test(role)))return {...id('person','mephibosheth-son-of-jonathan'),canonicalName:'므비보셋'};
+  if((code==='1ch'&&Number(chapter)===8&&name==='에스바알')||name==='이스보셋')return {...id('person','ishbosheth-son-of-saul'),canonicalName:'이스보셋'};
+  if((code==='2sa'&&Number(chapter)===24&&name==='아라우나')||(code==='1ch'&&Number(chapter)===21&&name==='오르난'))return {...id('person','jebusite-threshing-floor-owner'),canonicalName:'아라우나(오르난)'};
   if(name==='요나단'&&['1sa','2sa'].includes(code))return {...id('person','jonathan-son-of-saul'),canonicalName:'요나단'};
   if(code==='2sa'&&name==='요나단(아비아달의 아들)')return id('person','jonathan-son-of-abiathar');
   if(code==='2sa'&&name==='요나단(시므아의 아들)')return id('person','jonathan-son-of-shimea');
