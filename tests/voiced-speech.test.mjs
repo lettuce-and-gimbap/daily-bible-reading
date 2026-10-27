@@ -1326,7 +1326,7 @@ test('사도행전 1–4장의 승천·성령 강림·치유·공회 심문을 �
   for(const ref of row[6])for(const part of ref.split(',')){const [start,end=start]=part.trim().split('-').map(Number);assert.ok(start>=1&&end<=maxVerse[row[1]],`사도행전 ${row[1]}장 ${ref} 범위`);}
  }
  assert.ok(rows.some(row=>row[1]===1&&row[2]==='예수'&&row[6].includes('7-8')),'땅끝까지 증인이 되라는 예수의 명령');
- assert.ok(rows.some(row=>row[1]===1&&row[2]==='흰옷 입은 두 사람'&&row[6].includes('10-11')),'예수의 다시 오심을 알린 두 사람');
+ assert.ok(rows.some(row=>row[1]===1&&row[2]==='천사들'&&row[6].includes('10-11')),'예수의 다시 오심을 알린 두 사람');
  assert.ok(rows.some(row=>row[1]===2&&row[2]==='베드로'&&row[6].includes('38-40')),'회개와 세례를 권한 베드로');
  assert.ok(rows.some(row=>row[1]===3&&row[2]==='베드로'&&row[6].includes('17-26')),'치유 뒤 회개를 촉구한 베드로');
  assert.ok(rows.some(row=>row[1]===4&&row[2]==='공회'&&row[6].includes('15-18')),'복음 전파를 금한 공회');
@@ -1414,7 +1414,7 @@ test('사도행전 17–20장의 아테네 설교·고린도 재판·에베소 �
  assert.ok(rows.some(row=>row[1]===19&&row[2]==='데메드리오'&&row[6].includes('25-27')),'생업과 아데미 신전을 내세운 데메드리오');
  assert.ok(rows.some(row=>row[1]===19&&row[2]==='서기장'&&row[6].includes('35-40')),'에베소 소요를 진정시킨 서기장');
  assert.ok(rows.some(row=>row[1]===20&&row[2]==='바울'&&row[6].includes('22-24')),'환난을 알면서 예루살렘으로 가는 바울');
- assert.ok(rows.some(row=>row[1]===20&&row[2]==='예수'&&row[6].includes('35')),'주는 것이 복되다는 예수의 말씀');
+ assert.ok(rows.some(row=>row[1]===20&&row[2]==='바울'&&row[6].includes('32-35')&&row[4].some(line=>line.includes('주는 것이 받는 것보다 복되다'))),'예수의 말씀을 인용하는 바울');assert.ok(!rows.some(row=>row[1]===20&&row[2]==='예수'),'인용된 예수는 현장 화자가 아님');
  assert.ok(!rows.some(row=>row[1]===20&&row[2]==='유두고'),'떨어진 뒤 회복된 유두고는 직접 말하지 않아 제외');
 });
 

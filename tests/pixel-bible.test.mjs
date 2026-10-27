@@ -1824,3 +1824,83 @@ test('요한복음 16–21장은 추상 집단·회상 인물과 실제 수난·
  assert.ok(summary.chapters['19'].story.includes('히브리어, 라틴어, 그리스어'));assert.ok(summary.chapters['19'].story.includes('아리마대 요셉과 니고데모'));
  const c20=summary.chapters['20'];assert.ok(c20.rels.some(r=>r.from==='막달라 마리아'&&r.to==='예수의 사랑하시는 제자'&&r.verses==='1-2'));assert.ok(c20.rels.some(r=>r.from==='도마'&&r.to==='예수'&&r.verses==='26-29'));
 });
+
+
+test('사도행전 1장은 승천 천사·바사바 후보를 구분하고 수신자와 사망한 유다는 출연시키지 않는다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));const chapter=summary.chapters['1'];
+ const model=buildWorldModel([{code:'act',name:'사도행전',chap:1,data:chapter}]);
+ assert.ok(!model.cast.some(p=>['데오빌로','유다'].includes(p.name)));
+ const angel=model.cast.find(p=>p.name==='천사들');assert.equal(angel?.identity?.kind,'spiritual');
+ const joseph=model.cast.find(p=>p.name==='요셉 바사바');assert.equal(joseph?.identity?.id,'person:joseph-barsabbas');
+ assert.ok(!chapter.rels.some(r=>r.to==='유다'||r.from==='요셉 바사바'&&r.to==='맛디아'));
+});
+
+
+test('사도행전 2–3장은 설교에서 인용된 인물과 승천 뒤의 부재 인물을 월드 캐스트에서 제외한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ for(const [chap,names]of [[2,['요엘','다윗','예수']],[3,['예수','모세','아브라함']]]){const model=buildWorldModel([{code:'act',name:'사도행전',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`act.${chap} ${name} cited, not present`);}
+ assert.ok(summary.chapters['2'].rels.some(r=>r.from==='베드로'&&r.to==='열한 사도'&&r.verses==='14'));assert.ok(summary.chapters['3'].rels.some(r=>r.from==='베드로'&&r.to==='못 걷는 사람'&&r.verses==='6-7'));
+ assert.ok(!summary.chapters['2'].rels.some(r=>['요엘','다윗','예수'].includes(r.from)||['요엘','다윗','예수'].includes(r.to)));assert.ok(!summary.chapters['3'].rels.some(r=>r.from==='베드로'&&r.to==='예수'));
+});
+
+
+test('사도행전 4장의 같은 이름 요한은 공회 고위 가문 인물과 사도 요한으로 분리한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));const c=summary.chapters['4'];
+ const model=buildWorldModel([{code:'act',name:'사도행전',chap:4,data:c}]);
+ assert.ok(!model.cast.some(p=>p.name==='예수'),'증언의 대상인 예수님은 승천 후 현장에 없음');
+ const highJohn=model.cast.find(p=>p.name==='요한(대제사장 가문)');assert.equal(highJohn?.identity?.id,'person:john-high-priestly-family-act4');
+ const apostle=model.cast.find(p=>p.name==='요한');assert.equal(apostle?.identity?.id,'person:john-apostle');
+ assert.ok(c.people.some(p=>p.name==='알렉산더(대제사장 가문)'));
+});
+
+
+test('사도행전 6–8장은 일곱 사람을 빠짐없이 색인하고 설교·신하 배경의 역사 인물을 제외한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ const seven=['스데반','빌립','브로고로','니가노르','디몬','바메나','니골라'];for(const name of seven)assert.ok(summary.chapters['6'].people.some(p=>p.name===name),`act.6 ${name}`);
+ for(const [chap,names]of [[7,['아브라함','요셉','모세','솔로몬']],[8,['간다게']]]){const model=buildWorldModel([{code:'act',name:'사도행전',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`act.${chap} ${name} is recounted, not present`);}
+ assert.ok(!summary.chapters['7'].rels.some(r=>r.to==='아브라함'||r.to==='모세'));assert.ok(!summary.chapters['8'].rels.some(r=>r.to==='간다게'));assert.ok(summary.chapters['8'].rels.some(r=>r.from==='빌립'&&r.to==='에디오피아 내시'&&r.verses==='35-38'));
+});
+
+
+test('사도행전 9–12장은 사울의 다메섹 장면과 베드로 탈옥의 출연자를 정확히 나눈다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ for(const [chap,names]of [[9,['대제사장','유다']],[10,['예수']]]){const model=buildWorldModel([{code:'act',name:'사도행전',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`act.${chap} ${name} not physically present`);}
+ assert.ok(!summary.chapters['9'].rels.some(r=>r.from==='대제사장'&&r.to==='사울'));
+ assert.ok(summary.chapters['12'].rels.some(r=>r.from==='헤롯'&&r.to==='베드로를 지킨 군인들'&&r.verses==='19'));
+});
+
+
+test('사도행전 13–16장은 안디옥의 실제 인물을 보강하고 요한 마가를 통합한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ const c13=summary.chapters['13'];for(const name of ['시므온 니게르','루기오','마나엔','요한 마가'])assert.ok(c13.people.some(p=>p.name===name),`act.13 ${name}`);
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');const ids=[['act',12,'마가'],['act',13,'요한 마가'],['act',15,'마가']].map(([code,chapter,name])=>resolveIdentity(name,{code,chapter}));assert.equal(new Set(ids.map(x=>x.id)).size,1);
+ const cast16=buildWorldModel([{code:'act',name:'사도행전',chap:16,data:summary.chapters['16']}]).cast;assert.ok(!cast16.some(p=>p.name==='마게도냐 사람'));assert.ok(!summary.chapters['16'].rels.some(r=>r.from==='마게도냐 사람'));
+ const cast13=buildWorldModel([{code:'act',name:'사도행전',chap:13,data:c13}]).cast;assert.ok(!cast13.some(p=>p.name==='다윗'));
+});
+
+
+test('사도행전 17–20장의 출연 목록은 아테네 토론과 드로아·밀레도 동행자를 정확히 반영한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ for(const name of ['소바더','아리스다고','세군도','가이오','디모데','두기고','드로비모'])assert.ok(summary.chapters['20'].people.some(p=>p.name===name),`act.20 ${name}`);
+ const model=buildWorldModel([{code:'act',name:'사도행전',chap:20,data:summary.chapters['20']}]);assert.ok(!model.cast.some(p=>p.name==='예수'));assert.ok(!summary.chapters['20'].rels.some(r=>r.from==='예수'));
+ assert.ok(summary.chapters['17'].rels.some(r=>r.from==='바울'&&r.to==='아테네 철학자들'&&r.verses==='18, 22-31'));
+});
+
+
+test('사도행전 21–24장은 인용 인물을 제외하고 천부장 클라우디우스 루시아를 하나로 통합한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ for(const [chap,names]of [[22,['가말리엘','스데반']],[24,['루시아','베스도']]]){const model=buildWorldModel([{code:'act',name:'사도행전',chap,data:summary.chapters[String(chap)]}]);for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`act.${chap} ${name} is only mentioned`);}
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');const a=resolveIdentity('천부장',{code:'act',chapter:21}),b=resolveIdentity('글라우디오 루시아',{code:'act',chapter:23});assert.equal(a.id,b.id);
+ assert.ok(!summary.chapters['22'].rels.some(r=>r.to==='가말리엘'));assert.ok(!summary.chapters['24'].rels.some(r=>r.from==='베스도'||r.from==='루시아'));
+});
+
+test('사도행전 21–28장은 장면 별칭과 실제 동행자, 회고 속 인물을 구분한다',async()=>{
+ const fs=await import('node:fs/promises');const summary=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await fs.readFile(new URL('../data/pixel-bible/events/act.json',import.meta.url),'utf8'));
+ const chapters=Array.from({length:8},(_,i)=>{const chap=21+i;return{code:'act',name:'사도행전',chap,data:{...summary.chapters[String(chap)],eventScenes:[...events.scenes,...events.restoredScenes].filter(s=>s.chapter===chap)}};});
+ const models=chapters.map(chapter=>buildWorldModel([chapter]));
+ assert.ok(models[0].cast.some(p=>p.name==='글라우디오 루시아'));
+ assert.ok(models[0].scenes.some(s=>s.sourceUnits?.includes('act.21.3')&&s.actors.includes('글라우디오 루시아')),'천부장 별칭 때문에 성전 체포 장면이 빠지지 않는다');
+ for(const [index,name]of [[4,'예수'],[4,'가이사'],[5,'사탄'],[7,'이사야']])assert.ok(!models[index].cast.some(p=>p.name===name),`${chapters[index].chap}장 ${name}은 해당 장면의 현장 인물이 아니다`);
+ assert.ok(models[6].cast.some(p=>p.name==='누가')&&models[7].cast.some(p=>p.name==='누가'),'1인칭 복수 항해 기록의 동행자를 반영한다');
+});

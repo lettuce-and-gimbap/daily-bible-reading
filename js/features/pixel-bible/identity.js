@@ -4,6 +4,7 @@ const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>![
 const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|어린 양)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return '글라우디오 루시아';
   if(code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return '베드로';
   if(code==='mrk'&&Number(chapter)===2&&name==='레위')return '마태';
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return '베드로';
@@ -71,6 +72,11 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(['막달라인 마리아','막달라 마리아'].includes(name)||name==='마리아'&&/막달라/.test(role))return {...id('person','mary-magdalene'),canonicalName:'막달라 마리아'};
   if(code==='luk'&&Number(chapter)===24&&name==='야고보의 어머니 마리아'||code==='mrk'&&[15,16].includes(Number(chapter))&&['야고보와 요세의 어머니 마리아','야고보의 어머니 마리아'].includes(name))return {...id('person','mary-mother-of-james-and-joses'),canonicalName:'야고보의 어머니 마리아'};
   if(code==='luk'&&Number(chapter)===24&&name==='천사들')return id('spiritual','luk24-resurrection-angels');
+  if(code==='act'&&Number(chapter)===1&&name==='천사들')return id('spiritual','act1-ascension-angels');
+  if(code==='act'&&Number(chapter)===1&&['요셉','요셉 바사바'].includes(name))return {...id('person','joseph-barsabbas'),canonicalName:'요셉 바사바'};
+  if(code==='act'&&Number(chapter)===4&&name==='요한(대제사장 가문)')return {...id('person','john-high-priestly-family-act4'),canonicalName:'요한(대제사장 가문)'};
+  if(code==='act'&&[12,13,15].includes(Number(chapter))&&['마가','요한','요한 마가'].includes(name))return {...id('person','john-mark'),canonicalName:'요한 마가'};
+  if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return {...id('person','claudius-lysias'),canonicalName:'글라우디오 루시아'};
   if(spiritual.test(name))return id('spiritual',name);
   if(name==='미가엘')return id('spiritual','michael');
   if(name==='가브리엘')return id('spiritual','gabriel');
