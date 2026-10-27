@@ -6,7 +6,7 @@
 import { feedback } from './feedback.js';
 
 const ID_RE = /^[a-z0-9_]{3,20}$/;
-const MAX_DATA = 1_000_000; // 기록 JSON 최대 1MB (보통 수십 KB)
+const MAX_DATA_BYTES = 1_800_000; // UTF-8 JSON 1.8MB; room above current backups ×8 with D1 row headroom
 const LINK_MS = 10 * 60 * 1000;
 const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
@@ -61,7 +61,7 @@ export async function account(pathname, request, env, json) {
   }
   if (pathname === "/account/data") {
     const text = JSON.stringify(body.data || null);
-    if (!body.data || text.length > MAX_DATA) return json({ error: "기록이 비었거나 너무 커요" }, 400);
+    if (!body.data || new TextEncoder().encode(text).byteLength > MAX_DATA_BYTES) return json({ error: "기록이 비었거나 너무 커요" }, 400);
     await db.prepare("INSERT OR REPLACE INTO user_data (user_id, json, updated) VALUES (?, ?, ?)").bind(uid, text, now).run();
     return json({ ok: true, updated: now });
   }
