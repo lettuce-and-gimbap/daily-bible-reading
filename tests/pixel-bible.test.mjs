@@ -845,7 +845,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,942);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
+ assert.equal(PAIR_DIALOGUE.length,945);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
  const josiah=PAIR_DIALOGUE.find(p=>p.id==='pair-2ki-21-people-josiah');
  assert.equal(josiah.lines.length,3);assert.equal(josiah.replyLines.length,3);assert.equal(josiah.lineDetails.length,3);
  const {speechContext}=await import('../js/features/pixel-bible/speech-context.js');

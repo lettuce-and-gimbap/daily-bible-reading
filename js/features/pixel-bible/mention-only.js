@@ -198,6 +198,13 @@ const CHAPTERS = {
   'psa.78': ['조상들', '모세', '다윗', '에브라임 자손'],
   'psa.95': ['광야의 조상들'],
   'psa.99': ['모세', '아론', '사무엘'],
+  // Proverbs headings and remembered teaching identify sources/ancestors;
+  // they are not co-present actors in the proverbial scene.
+  'pro.1': ['솔로몬'],
+  'pro.4': ['할아버지'],
+  'pro.10': ['솔로몬'],
+  'pro.25': ['솔로몬', '히스기야의 신하들'],
+  'pro.30': ['야게'],
   'psa.105': ['아브라함', '이삭', '야곱', '요셉', '모세', '아론', '바로'],
   'psa.106': ['조상들', '모세', '아론', '다단과 아비람', '비느하스'],
   'rom.1': ['다윗'],

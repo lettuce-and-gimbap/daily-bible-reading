@@ -305,7 +305,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3796);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3797);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -533,7 +533,7 @@ test('잠언의 31장 관계 후보는 모두 본문 맥락의 양방향 대화�
  const proverbs=PAIR_DIALOGUE.filter(entry=>entry.chapter.startsWith('pro.'));
  const summary=JSON.parse(fs.readFileSync('data/summary/pro.json'));
  const context=buildChapterDialogue(Object.entries(summary.chapters).map(([chap,data])=>({code:'pro',name:'잠언',chap:Number(chap),data})));
- assert.equal(proverbs.length,56);assert.equal(context.relations.length,56);
+ assert.equal(proverbs.length,59);assert.equal(context.relations.length,57);
  for(const entry of proverbs){
   const names=summary.chapters[Number(entry.chapter.split('.')[1])].people.map(person=>person.name);
   assert.ok(names.includes(entry.speaker),`${entry.id} 화자가 장 인물 색인에 있음`);
