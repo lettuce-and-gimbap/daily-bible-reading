@@ -349,6 +349,35 @@ test('마태복음 1장의 족보 인물은 요셉의 꿈 장면에 등장시키
  assert.match(chapter.rels.find(relation=>relation.from==='마리아'&&relation.to==='요셉').note,/본문은.*직접 말하지 않아요/);
 });
 
+test('산상설교의 예화 인물과 비교 대상 집단은 실제 장면 배우로 세우지 않는다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/mat.json',import.meta.url),'utf8'));
+ for(const [chapter,names] of [[5,['서기관과 바리새인']],[6,['외식하는 자']],[7,['거짓 선지자','지혜로운 사람','어리석은 사람']],[13,['원수','씨 뿌리는 자','마리아']],[18,['왕','무자비한 종','동료 종']],[21,['악한 농부들']],[22,['왕']],[23,['서기관과 바리새인']],[24,['거짓 그리스도','충성된 종','악한 종']],[25,['슬기 있는 처녀들','미련한 처녀들','신랑','주인','충성된 종들','게으른 종']]]){
+  const data=summary.chapters[chapter];
+  const model=buildWorldModel([{code:'mat',name:'마태복음',chap:chapter,data}]);
+  for(const name of names){
+   assert.ok(data.people.some(person=>person.name===name),`${chapter}장 설명에 사용된 ${name} 기록은 보존`);
+   assert.ok(isMentionOnlyPerson({name},{code:'mat',chapter}),`${chapter}장 ${name}은 실제 참석자가 아님`);
+   assert.ok(!model.cast.some(person=>person.name===name),`${chapter}장 ${name}은 장면 배우가 아님`);
+  }
+ }
+ const chapter9=summary.chapters['9'];
+ assert.match(chapter9.rels.find(relation=>relation.from==='관리'&&relation.to==='예수').note,/마태복음 본문에는 이름이나 회당장 직함이 나오지 않아요/);
+ assert.doesNotMatch(chapter9.story,/회당장의 딸/);
+ const chapter20=summary.chapters['20'];
+ assert.equal(isMentionOnlyPerson({name:'세베대의 아들들의 어머니'},{code:'mat',chapter:20}),false,'야고보와 요한의 어머니는 실제로 예수께 청함');
+ assert.match(summary.chapters['19'].rels.find(relation=>relation.to==='부자 청년').note,/직접 기록하지 않아요/);
+ assert.match(chapter20.rels.find(relation=>relation.from==='야고보'&&relation.to==='요한').note,/마태복음은 이때 이후 두 사람의 생애를 기록하지 않아요/);
+});
+
+test('마태복음 28장의 두 여인 모두 천사의 소식을 듣고 부활하신 예수를 만난다',()=>{
+ const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/mat.json',import.meta.url),'utf8'));
+ const relations=summary.chapters['28'].rels;
+ for(const name of ['막달라 마리아','다른 마리아']){
+  assert.ok(relations.some(relation=>relation.from==='주의 천사'&&relation.to===name&&(relation.verses.includes('5-7')||relation.verses.includes('5-8'))));
+  assert.ok(relations.some(relation=>relation.from==='예수'&&relation.to===name&&relation.verses==='9-10'));
+ }
+});
+
 test('예레미야 21–30장의 시대 표기·과거 왕·미래 메시아 인물은 장면 배우에서 분리한다',()=>{
  const chapters=[
   [21,['느부갓네살']],[22,['살룸','요시야','고니야']],[23,['의로운 가지']],

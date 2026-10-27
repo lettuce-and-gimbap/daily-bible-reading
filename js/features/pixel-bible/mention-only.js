@@ -3,6 +3,18 @@
 // words such as "조상" also describe characters who are present in genealogies
 // or active narratives, so a broad role-text filter would remove real actors.
 const CHAPTERS = {
+  // Teaching illustrations/comparisons are not people physically present in
+  // the Sermon on the Mount scene.
+  'mat.5': ['서기관과 바리새인'],
+  'mat.6': ['외식하는 자'],
+  'mat.7': ['거짓 선지자', '지혜로운 사람', '어리석은 사람'],
+  'mat.13': ['원수', '씨 뿌리는 자', '마리아'],
+  'mat.18': ['왕', '무자비한 종', '동료 종'],
+  'mat.21': ['악한 농부들'],
+  'mat.22': ['왕'],
+  'mat.23': ['서기관과 바리새인'],
+  'mat.24': ['거짓 그리스도', '충성된 종', '악한 종'],
+  'mat.25': ['슬기 있는 처녀들', '미련한 처녀들', '신랑', '주인', '충성된 종들', '게으른 종'],
   // These chapters are exclusively ancestral name lists. Their records remain
   // searchable in the Bible text, but they do not place generations together.
   '1ch.1': ['*'],
