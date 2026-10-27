@@ -395,11 +395,14 @@ test('수평·수직 이동 방향과 정지 방향을 보존한다',async()=>{
 });
 
 test('도감 캐릭터는 좌우 쓸기에 반시계·시계 방향으로 시점을 돌리고 위아래 쓸기로 앞뒤를 본다',async()=>{
- const {previewDirectionAfterSwipe:turn}=await import('../js/features/pixel-bible/collection-preview.js');
+ const {previewDirectionAfterSwipe:turn,previewDirectionFromControl,renderPersonPreview}=await import('../js/features/pixel-bible/collection-preview.js');
  assert.equal(turn('down',40,0),'right');assert.equal(turn('right',40,0),'up');
  assert.equal(turn('down',-40,0),'left');assert.equal(turn('left',-40,0),'up');
  assert.equal(turn('down',0,-40),'up');assert.equal(turn('up',0,40),'down');
  assert.equal(turn('left',2,1),'left');
+ for(const face of ['up','down','left','right'])assert.equal(previewDirectionFromControl(face),face);
+ assert.equal(previewDirectionFromControl('invalid'),'down');
+ assert.match(renderPersonPreview({name:'인물'}),/<canvas data-model-canvas/,'회전 화면은 이미지 재로딩 대신 캔버스에 즉시 그린다');
 });
 
 test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한다',async()=>{
