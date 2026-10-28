@@ -1,9 +1,17 @@
 export const GIMBAP_FRAME_SIZE=64;
 export const GIMBAP_ROLL_FRAMES=16;
+// World coordinates are measured in 24 px tiles and the mascot is drawn at
+// 2× scale. Advance one 16-frame turn per circumference so the sprite sheet's
+// frames track the distance travelled instead of spinning several times per
+// body length.
+const GIMBAP_BODY_RADIUS=21;
+const GIMBAP_WORLD_TILE=24;
+const GIMBAP_WORLD_DRAW_SCALE=2;
+const GIMBAP_FRAMES_PER_WORLD_UNIT=GIMBAP_ROLL_FRAMES/(2*Math.PI*GIMBAP_BODY_RADIUS*GIMBAP_WORLD_DRAW_SCALE/GIMBAP_WORLD_TILE);
 export const gimbapRollAngle=frame=>((frame%GIMBAP_ROLL_FRAMES)+GIMBAP_ROLL_FRAMES)%GIMBAP_ROLL_FRAMES*Math.PI*2/GIMBAP_ROLL_FRAMES;
 export const gimbapRollSign=direction=>direction==='left'||direction==='up'?-1:1;
 export const gimbapRollAxis=direction=>direction==='up'||direction==='down'?'vertical':'plane';
-export const advanceGimbapRoll=(phase,distance,direction)=>phase+Math.max(0,distance)*GIMBAP_ROLL_FRAMES/2*gimbapRollSign(direction);
+export const advanceGimbapRoll=(phase,distance,direction)=>phase+Math.max(0,distance)*GIMBAP_FRAMES_PER_WORLD_UNIT*gimbapRollSign(direction);
 const rect=(c,x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};
 
 function disk(c,cx,cy,rx,ry,color){
