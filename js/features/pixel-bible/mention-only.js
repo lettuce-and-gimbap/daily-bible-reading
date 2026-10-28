@@ -137,6 +137,9 @@ const CHAPTERS = {
   // Chapter 4 distinguishes the coworkers with Paul from people he asks
   // Timothy to fetch, sends away, or only greets from elsewhere.
   '2ti.4': ['데마', '마가', '두기고', '알렉산더', '브리스가', '아굴라', '오네시보로의 집', '예수'],
+  'tit.1': ['장로', '감독', '할례파', '그레데인들'],
+  'tit.2': ['늙은 남자와 여자', '젊은이들', '종들', '예수'],
+  'tit.3': ['통치자들', '이단에 속한 사람', '아데마', '두기고', '예수'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],

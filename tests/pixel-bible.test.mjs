@@ -2067,3 +2067,14 @@ test('디모데후서의 기억·전언·요청을 현재 동행 인물과 구�
  assert.equal(resolveIdentity('브리스가',{code:'2ti',chapter:4}).id,resolveIdentity('브리스길라',{code:'rom',chapter:16}).id);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),20);
 });
+
+test('디도서는 실제 목회 대상 디도와 파송을 도울 선교 동역자를 남기고 일반 직분·미래 파견자를 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/tit.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'tit',name:'디도서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ assert.ok(cast(1).includes('바울'));assert.ok(cast(1).includes('디도'));
+ for(const name of ['장로','감독','할례파','그레데인들'])assert.ok(!cast(1).includes(name));
+ for(const name of ['늙은 남자와 여자','젊은이들','종들','예수'])assert.ok(!cast(2).includes(name));
+ for(const name of ['통치자들','이단에 속한 사람','아데마','두기고','예수'])assert.ok(!cast(3).includes(name));
+ for(const name of ['세나','아볼로','바울','디도'])assert.ok(cast(3).includes(name),`디도서 3장 선교 문맥 ${name}`);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),15);
+});
