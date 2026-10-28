@@ -9,6 +9,13 @@ const GIMBAP_WORLD_TILE=24;
 const GIMBAP_WORLD_DRAW_SCALE=2;
 const GIMBAP_FRAMES_PER_WORLD_UNIT=GIMBAP_ROLL_FRAMES/(2*Math.PI*GIMBAP_BODY_RADIUS*GIMBAP_WORLD_DRAW_SCALE/GIMBAP_WORLD_TILE);
 export const gimbapRollAngle=frame=>((frame%GIMBAP_ROLL_FRAMES)+GIMBAP_ROLL_FRAMES)%GIMBAP_ROLL_FRAMES*Math.PI*2/GIMBAP_ROLL_FRAMES;
+export const gimbapRollFaceVisible=frame=>{
+ const phase=((Math.trunc(frame)%GIMBAP_ROLL_FRAMES)+GIMBAP_ROLL_FRAMES)%GIMBAP_ROLL_FRAMES;
+ // The supplied sheet turns the cut face away during the back half of a roll.
+ // Frames 4 and 12 are edge-on; frames 5–11 show the plain back, without eyes,
+ // mouth, or cheek blush appearing on the rear of the roll.
+ return phase<4||phase>12;
+};
 export const gimbapRollSign=direction=>direction==='left'||direction==='up'?-1:1;
 export const gimbapRollAxis=direction=>direction==='up'||direction==='down'?'vertical':'plane';
 export const advanceGimbapRoll=(phase,distance,direction)=>phase+Math.max(0,distance)*GIMBAP_FRAMES_PER_WORLD_UNIT*gimbapRollSign(direction);
@@ -68,8 +75,12 @@ export function drawGimbap(c,frame=0,{rolling=false,direction='right'}={}){
  // Rice grains and a few nori highlights add texture without muddy gradients.
  for(const [x,y,w,h,color] of [[21,29,2,1,'#d6d0bd'],[39,27,2,1,'#e2ddcb'],[20,39,2,2,'#e1dccb'],[40,41,2,1,'#d6d0bd'],[26,22,2,1,'#fffef4'],[35,24,2,1,'#fffef4'],[19,34,1,2,'#e4decc'],[42,35,1,2,'#ddd7c6']])rect(c,x,y,w,h,color);
  rect(c,15,28,2,4,'#2d6951');rect(c,47,39,2,4,'#2d6951');rect(c,44,26,2,3,'#387552');
- // Tiny eyes and smile sit on the rice just above the colorful filling.
- rect(c,25,44,3,4,'#20252a');rect(c,37,44,3,4,'#20252a');rect(c,22,48,4,2,'#ed9996');rect(c,40,48,4,2,'#ed9996');rect(c,30,49,6,1,'#965b50');
+ // The face belongs to the cut front. Hide it while the back of the roll faces
+ // the viewer so cheek blush and facial marks never show on the rear frames.
+ if(!rolling||gimbapRollFaceVisible(frame)){
+  rect(c,25,44,3,4,'#20252a');rect(c,37,44,3,4,'#20252a');
+  rect(c,22,48,4,2,'#ed9996');rect(c,40,48,4,2,'#ed9996');rect(c,30,49,6,1,'#965b50');
+ }
  // Rolled fillings: seasoned burdock, spinach, egg, carrot, cucumber and radish.
  disk(c,28,29,6,5,'#ef883c');disk(c,35,28,5,5,'#ffdb55');disk(c,31,23,4,3,'#65a94b');disk(c,33,35,5,3,'#e8ba4d');
  rect(c,11,42,5,3,'#20252a');rect(c,48,42,5,3,'#20252a');rect(c,23,55,4,5,'#20252a');rect(c,37,55,4,5,'#20252a');
