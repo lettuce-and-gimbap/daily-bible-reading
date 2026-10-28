@@ -2228,3 +2228,22 @@ test('유다서는 저자와 세 역사적 본보기를 분리하고 인용 인�
  assert.equal(chapter.rels.length,8);
 });
 
+test('추상 지시어 재점검: 열왕기하·다니엘·호세아·이사야 발화의 대상과 결과를 직접 밝힌다',async()=>{
+ const {TWO_KINGS_DIALOGUE_ROWS}=await import('../js/features/pixel-bible/2ki-dialogue.js');
+ const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
+ const elijah=TWO_KINGS_DIALOGUE_ROWS.find(row=>row[0]===2&&row[1]==='엘리야');
+ assert.match(elijah[3][2],/영의 갑절 몫.*하늘로 들려 올라가는 모습/);
+ assert.match(elijah[6][2],/후계자의 몫/);
+ const king5=TWO_KINGS_DIALOGUE_ROWS.find(row=>row[0]===5&&row[1]==='이스라엘 왕');
+ assert.ok(king5[3].some(line=>line.includes('나아만의 나병')));
+ assert.ok(king5[3].every(line=>!line.includes('이 일을')));
+ const hazael=TWO_KINGS_DIALOGUE_ROWS.find(row=>row[0]===8&&row[1]==='하사엘');
+ assert.match(hazael[3][1],/성읍들을 불태우고 젊은이와 아이들을 죽이며 임신한 여인들의 배/);
+ const zedekiah=TWO_KINGS_DIALOGUE_ROWS.find(row=>row[0]===24&&row[1]==='시드기야');
+ assert.match(zedekiah[3][1],/예루살렘을 포위하고.*사로잡아/);
+ const pair=id=>PAIR_DIALOGUE.find(entry=>entry.id===id);
+ assert.match(pair('pair-dan-1-mishael-daniel').replyLines[1],/채소와 물.*왕의 음식을 먹은 소년들/);
+ assert.match(pair('pair-hos-9-israel-prophet').replyLines[1],/많은 죄와 선지자를 향한 적의.*형벌의 날.*심판/);
+ assert.match(pair('pair-isa-20-coast-egypt').replyLines[1],/애굽과 구스/);
+});
+
