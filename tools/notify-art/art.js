@@ -215,7 +215,6 @@ const hang = (side) => limb([[side * 52, 4], [side * 64, 22], [side * 64, 40]]);
 const hip = (side) => limb([[side * 52, 4], [side * 84, 22], [side * 54, 30]]);
 
 const POSES = {
-  // 쉿 🤫
   shush: () => shadow(0, 92) + legs() + hang(-1) + sheep({ expr: "vv,none" }) + limb([[52, 4], [44, 26], [6, -4]]),
   // 헉 😱 (눈은 여전히 ^^)
   shock: () => shadow(0, 92) + limb([[-22, 48], [-8, 70], [-26, 88]]) + limb([[22, 48], [8, 70], [26, 88]]) +
@@ -257,9 +256,6 @@ const POSES = {
     sheep({ rx: 92, ry: 42, fx: -62, fy: -8, frot: 6, expr: "^^,glow" }) + phone(-66, 44, -10) +
     limb([[-40, 40], [-60, 56], [-76, 50]]) + limb([[-86, 30], [-98, 50], [-82, 56]]),
   // 기름 떨어진 등불
-  lamp: () => shadow(0, 92) + legs() + sheep({ expr: "^^,o,sweat" }) + limb([[-52, 4], [-76, -30], [-38, -38]]) +
-    limb([[52, 4], [76, 16], [88, 14]]) + g("translate(116,10) scale(0.8)", lamp(0, 0, "tiny")),
-  // 피켓 시위 (말풍선 대신 피켓에 글씨)
   sign: (say) => shadow(0, 92) + legs() + sheep({ expr: "^^" }) +
     limb([[-52, 4], [-78, 0], [-90, -14]], { tip: false }) + limb([[52, 4], [78, 0], [90, -14]], { tip: false }) +
     signBoard(say, 0, 22, 196, 90) + hoofAt(-90, -18) + hoofAt(88, -24),
@@ -267,28 +263,6 @@ const POSES = {
   cheer: () => shadow(0, 92) + legs() + hang(-1) + sheep({ expr: "^^,blush", frot: 3 }) +
     limb([[52, 4], [66, 18], [72, 0]]),
   // 찻잔 홀짝 ☕
-  sip: () => shadow(0, 92) + legs() + limb([[-52, 4], [-40, 30], [-14, 26]]) + sheep({ expr: "vv,none" }) +
-    limb([[52, 4], [58, 20], [22, 8]]) + cup(10, 0, 0.8, -14),
-  // 확성기 📣
-  megaphone: () => shadow(0, 92) + legs() + hip(1) + sheep({ expr: "^^,none" }) +
-    g("translate(-26,-2) scale(-0.8,0.8) rotate(-6)", megaphone(0, 0, 0)) + limb([[-52, 4], [-50, 26], [-30, 6]]),
-  // 발라당 기절 (막대 다리 넷이 하늘로)
-  faint: () => shadow(0, 76, 120, 9) +
-    limb([[-44, 0], [-50, -60]]) + limb([[-18, -6], [-16, -66]]) + limb([[20, -6], [24, -66]]) + limb([[46, 0], [54, -58]]) +
-    sheep({ rx: 90, ry: 44, fx: -66, fy: 18, frot: -24, expr: "^^,tears,o", flip: true }) + orbit(-70, -30),
-  // 이불 속에서 빼꼼
-  hide: () => shadow(20, 100, 150, 11) + ell(-110, 40, 56, 22, "#fff", `stroke="${C.ol}" stroke-width="${OW}"`) +
-    face(-100, 16, { expr: "^^,blush", rot: -8, s: 1.2 }) + blanket() + hoofAt(-74, 36) + hoofAt(-56, 32),
-  // 기지개 하아암
-  stretch: () => shadow(0, 92) + legs() + limb([[-52, 0], [-56, -40], [-44, -84]]) + limb([[52, 0], [56, -40], [44, -84]]) +
-    sheep({ expr: "vv,o", frot: -6 }) + ell(-18, -16, 2, 3, C.tear),
-  // 쭈글쭈글 울상 😭 (뒤로가기로 나가려 할 때)
-  sob: () => shadow(0, 92) + legs() + limb([[-52, 4], [-62, 26], [-40, 30]]) + limb([[52, 4], [62, 26], [40, 30]]) +
-    sheep({ expr: "vv,tears,blush" }),
-  // 볼이 붉어진 채 앞발로 뺨을 감싸는 양.
-  blush: () => shadow(0, 92) + legs() + sheep({ expr: "vv,blush", frot: -5 }) +
-    limb([[-52, 4], [-44, -10], [-27, -8]]) + limb([[52, 4], [44, -10], [27, -8]]),
-  // 눈만 옆으로 굴리고 팔짱 낀 채 발을 까딱이는 킹받는 눈치.
   sideeye: () => shadow(0, 92) + legs() + sheep({ expr: "side,flat" }) +
     limb([[-52, 4], [-20, 32], [34, 18]]) + limb([[52, 4], [18, 34], [-34, 20]]) + tapMarks(42, 88) +
     line("M-91,-26 L-76,-34 M-96,-12 L-78,-15", "#E56B62", 3),
@@ -302,17 +276,6 @@ const POSES = {
     sheep({ expr: "squint,brow,pout", frot: -7 }) + hip(-1) +
     limb([[52, 4], [72, 18], [70, 40]]) + line("M42,91 L31,101 M56,94 L53,108 M70,91 L80,101", "#E5A34B", 4),
   // 짝짝짝 박수는 치지만 눈은 전혀 웃지 않는다.
-  slowclap: () => shadow(0, 92) + legs() + sheep({ expr: "side,flat" }) +
-    limb([[-52, 4], [-30, 30], [-6, 8]]) + limb([[52, 4], [30, 30], [7, 8]]) +
-    hoofAt(-5, 7, 8) + hoofAt(6, 7, 8) + line("M-24,-18 L-32,-28 M0,-25 L0,-38 M24,-18 L32,-28", "#F2C14E", 3),
-  // 이마를 짚고 길게 한숨을 내쉰다.
-  ugh: () => shadow(0, 92) + legs() + sheep({ expr: "squint,flat,sweat", frot: 8 }) +
-    hang(-1) + limb([[52, 4], [66, -30], [12, -28]]) + sighCloud(72, -35),
-  // 어깨를 으쓱하며 '내가 뭘 더 해' 하는 표정.
-  shrug: () => shadow(0, 92) + legs() + sheep({ expr: "side,pout" }) +
-    limb([[-52, 4], [-80, -20], [-68, -42]]) + limb([[52, 4], [80, -20], [68, -42]]) +
-    line("M-84,-54 L-96,-62 M-68,-59 L-66,-74 M64,-59 L62,-74 M80,-54 L92,-62", "#FFFFFF", 3),
-  // 양쪽 앞발로 귀를 막고 뒤돌아 버리는 짜증 섞인 거부.
   nope: () => shadow(0, 92) + legs() + sheep({ expr: "squint,brow,flat", frot: 10, flip: true }) +
     limb([[-52, 4], [-36, -18], [-28, -18]]) + limb([[52, 4], [36, -18], [28, -18]]) +
     line("M-91,-28 L-105,-38 M-96,-12 L-112,-12 M91,-28 L105,-38 M96,-12 L112,-12", "#E56B62", 4),
@@ -320,9 +283,6 @@ const POSES = {
   condescend: () => shadow(0, 92) + legs() + sheep({ expr: "down,smirk,brow", frot: -10 }) +
     hip(-1) + limb([[52, 4], [76, 18], [88, 12]]) + line("M-99,-42 L-80,-48 M-100,-28 L-82,-31", "#D9C9B5", 3),
   // 한쪽 눈썹만 올린 채 여유롭게 미소 짓는다.
-  smirk: () => shadow(0, 92) + legs() + sheep({ expr: "side,smirk" }) +
-    limb([[-52, 4], [-24, 30], [18, 17]]) + hip(1) + sparkle(78, -50, 0.45),
-  // 성경 쪽을 콕콕 가리키며 잔소리 아닌 잔소리.
   fingerwag: () => shadow(0, 92) + legs() + sheep({ expr: "squint,brow,flat" }) + hang(-1) +
     limb([[52, 4], [66, -12], [82, -38]], { tip: false, w: 9 }) +
     line("M83,-54 L83,-40 M75,-50 L79,-42 M91,-50 L87,-42", "#F2C14E", 3),
@@ -363,18 +323,10 @@ const POSES = {
     limb([[-52, 4], [-75, 24], [-70, 42]]) + limb([[52, 4], [65, 24], [52, 42]]) +
     line("M-105,-42 Q-124,-24 -111,-9 M-116,-42 L-106,-48", "#FFFFFF", 3),
   // 양을 끌어안듯 다리를 감싸며 가지 말라고 매달린다.
-  beg: () => shadow(0, 95, 86) + limb([[-22, 48], [-35, 76], [-46, 88]]) + limb([[22, 48], [34, 75], [48, 88]]) +
-    sheep({ expr: "sad,tears,pout", frot: -9 }) + limb([[-52, 4], [-72, 25], [-48, 38]]) + limb([[52, 4], [73, 22], [52, 37]]) +
-    bubbleText("가지 마…", 86, -50),
-  // 성경을 건네며 읽어 달라고 조심스레 손을 내민다.
   offerbook: () => shadow(0, 92) + legs() + sheep({ expr: "sad,blush" }) +
     limb([[-52, 4], [-67, 24], [-76, 34]]) + limb([[52, 4], [77, 18], [86, 6]]) +
     bible(96, -4, 42, 54, 12),
   // 무릎을 끌어안고 기다리지만 눈길은 문 쪽으로 향한다.
-  wait: () => shadow(0, 100, 84) + stool(0, 66) +
-    limb([[-22, 48], [-34, 66], [-38, 90]]) + limb([[22, 48], [34, 66], [38, 90]]) +
-    sheep({ expr: "side,sad", frot: 8 }) + limb([[-52, 4], [-24, 43], [22, 38]]) +
-    limb([[52, 4], [28, 42], [-20, 43]]) + bubbleText("기다릴게…", 90, -50),
 };
 
 function bubbleText(text, x, y) {
