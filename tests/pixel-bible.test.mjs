@@ -2020,3 +2020,14 @@ test('데살로니가전서는 공동 발신자와 실제 선교 동역자를 �
  assert.equal(resolveIdentity('실루아노',{code:'2co',chapter:1}).id,resolveIdentity('실라',{code:'act',chapter:15}).id);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
 });
+
+test('데살로니가후서의 공동 발신자 외에 수신 공동체·미래 예언 인물·일반 유형은 현장 NPC에서 제외한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/2th.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'2th',name:'데살로니가후서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ for(const name of ['바울','실라','디모데'])assert.ok(cast(1).includes(name));
+ for(const name of ['환난 주는 자들','능력의 천사들','예수'])assert.ok(!cast(1).includes(name));
+ for(const name of ['불법의 사람','막는 자','멸망하는 자들','사탄','예수'])assert.ok(!cast(2).includes(name));
+ for(const name of ['게으른 자들','악한 사람들','악한 자','예수'])assert.ok(!cast(3).includes(name));
+ assert.equal(resolveIdentity('실루아노',{code:'2th',chapter:1}).id,resolveIdentity('실라',{code:'act',chapter:15}).id);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),14);
+});
