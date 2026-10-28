@@ -28,6 +28,14 @@ function reminderAdminLoadArt() {
   return reminderAdminArtScript;
 }
 
+async function reminderAdminHasArtApi() {
+  try {
+    const response = await fetch(`${PUSH_SERVER}/reminder-art/night/2147483647.jpg?v=probe`, { cache: "no-store" });
+    const data = await response.json().catch(() => ({}));
+    return response.ok || data.error === "그림을 찾을 수 없어요";
+  } catch (_) { return false; }
+}
+
 function reminderAdminSvgUrl(art, entry, pose, say) {
   const context = document.createElement("canvas").getContext("2d");
   const measure = (text, size) => {
@@ -64,9 +72,13 @@ function reminderAdminJpegData(svgUrl) {
 async function renderReminderAdmin(header) {
   app.innerHTML = `${header}<section class="card"><p>알림 DB를 불러오는 중…</p></section>`;
   let defaults, saved;
+  let artworkApiReady = false;
   try {
     defaults = await reminderAdminDefaults();
-    saved = await accountApi("admin/reminder-messages");
+    [saved, artworkApiReady] = await Promise.all([
+      accountApi("admin/reminder-messages"),
+      reminderAdminHasArtApi(),
+    ]);
   } catch (error) {
     app.innerHTML = `${header}<section class="card"><h2>알림 DB를 열지 못했어요</h2><p class="muted">${esc(error.message)}</p><p>관리자 계정으로 로그인하고 Worker를 최신 코드로 배포했는지 확인해 주세요.</p></section>`;
     return;
@@ -99,6 +111,7 @@ async function renderReminderAdmin(header) {
         <button type="button" class="btn ghost small" data-reminder-next>무작위 다음 →</button>
       </div>
     </div>
+    ${artworkApiReady ? "" : `<p class="reminder-admin-warning" role="status">현재 Worker가 말풍선 그림 저장 기능을 지원하지 않아요. Worker 최신 코드를 배포한 뒤 이 화면을 새로고침해 주세요.</p>`}
     <p class="reminder-admin-count" aria-live="polite"></p>
     <div class="reminder-admin-preview"><img alt="현재 알림에 연결된 양 그림"><p></p></div>
     <div class="reminder-admin-fields">
@@ -202,7 +215,7 @@ async function renderReminderAdmin(header) {
   body.addEventListener("input", markTextDirty);
   say.addEventListener("input", markBubbleDirty);
   imageSelect.addEventListener("change", chooseAsset);
-  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer; say.disabled = false; }).catch((error) => {
+  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer; say.disabled = !artworkApiReady; }).catch((error) => {
     status.textContent = `${error.message} 말풍선 문구를 바꿀 수 없어요.`;
     say.disabled = true;
   });

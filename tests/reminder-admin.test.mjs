@@ -97,4 +97,6 @@ test("admin reminder review has manual navigation without auto-advance controls"
   const ui = await readFile(new URL("../js/features/reminder-admin.js", import.meta.url), "utf8");
   assert.match(ui, /data-reminder-next/);
   assert.doesNotMatch(ui, /data-reminder-play|reminderAdminTimer|scheduleNext/);
+  assert.match(ui, /reminderAdminHasArtApi/);
+  assert.match(ui, /Worker가 말풍선 그림 저장 기능을 지원하지 않아요/);
 });
