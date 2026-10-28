@@ -1,0 +1,7439 @@
+{
+  "date": "2026-10-29",
+  "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
+  "total": 928,
+  "reviewed": 3,
+  "pending": 925,
+  "entries": [
+    {
+      "id": "pair-2ki-21-people-josiah",
+      "chapter": "2ki.21",
+      "speaker": "유다 백성",
+      "target": "요시야",
+      "ref": "열왕기하 21:23-24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-1-mary-gabriel",
+      "chapter": "luk.1",
+      "speaker": "마리아",
+      "target": "가브리엘",
+      "ref": "누가복음 1:34-38",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-5-simon-jesus",
+      "chapter": "luk.5",
+      "speaker": "시몬",
+      "target": "예수",
+      "ref": "누가복음 5:8-10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-8-jairus-jesus",
+      "chapter": "luk.8",
+      "speaker": "야이로",
+      "target": "예수",
+      "ref": "누가복음 8:41-42, 49-50",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-10-lawyer-jesus",
+      "chapter": "luk.10",
+      "speaker": "율법교사",
+      "target": "예수",
+      "ref": "누가복음 10:25-37",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-15-older-son-father",
+      "chapter": "luk.15",
+      "speaker": "맏아들",
+      "target": "아버지",
+      "ref": "누가복음 15:25-32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-16-rich-man-abraham",
+      "chapter": "luk.16",
+      "speaker": "부자",
+      "target": "아브라함",
+      "ref": "누가복음 16:24-31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-17-lepers-jesus",
+      "chapter": "luk.17",
+      "speaker": "10명의 나병환자",
+      "target": "예수",
+      "ref": "누가복음 17:12-14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-19-zacchaeus-jesus",
+      "chapter": "luk.19",
+      "speaker": "삭개오",
+      "target": "예수",
+      "ref": "누가복음 19:8-10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-23-penitent-criminal-jesus",
+      "chapter": "luk.23",
+      "speaker": "회개한 강도",
+      "target": "예수",
+      "ref": "누가복음 23:42-43",
+      "status": "pending"
+    },
+    {
+      "id": "pair-luk-24-jesus-cleopas-road",
+      "chapter": "luk.24",
+      "speaker": "예수",
+      "target": "글로바",
+      "ref": "누가복음 24:17-18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-5-restored-man-jesus",
+      "chapter": "mrk.5",
+      "speaker": "군대 귀신 들린 사람",
+      "target": "예수",
+      "ref": "마가복음 5:18-20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-6-herod-daughter",
+      "chapter": "mrk.6",
+      "speaker": "헤롯",
+      "target": "헤로디아의 딸",
+      "ref": "마가복음 6:22-25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-7-syrophoenician-woman-jesus",
+      "chapter": "mrk.7",
+      "speaker": "수로보니게 여인",
+      "target": "예수",
+      "ref": "마가복음 7:25-29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-8-peter-jesus-confession",
+      "chapter": "mrk.8",
+      "speaker": "예수",
+      "target": "베드로",
+      "ref": "마가복음 8:27-30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-9-boy-father-jesus",
+      "chapter": "mrk.9",
+      "speaker": "예수",
+      "target": "아이의 아버지",
+      "ref": "마가복음 9:22-24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-10-bartimaeus-jesus",
+      "chapter": "mrk.10",
+      "speaker": "바디매오",
+      "target": "예수",
+      "ref": "마가복음 10:47-52",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mrk-15-pilate-jesus",
+      "chapter": "mrk.15",
+      "speaker": "빌라도",
+      "target": "예수",
+      "ref": "마가복음 15:2-5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-3-john-jesus-baptism",
+      "chapter": "mat.3",
+      "speaker": "세례 요한",
+      "target": "예수",
+      "ref": "마태복음 3:14-15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-4-jesus-tempter",
+      "chapter": "mat.4",
+      "speaker": "예수",
+      "target": "마귀",
+      "ref": "마태복음 4:3-10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-14-peter-jesus-water",
+      "chapter": "mat.14",
+      "speaker": "베드로",
+      "target": "예수",
+      "ref": "마태복음 14:28-31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-15-canaanite-jesus",
+      "chapter": "mat.15",
+      "speaker": "가나안 여인",
+      "target": "예수",
+      "ref": "마태복음 15:22-28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-16-peter-jesus-confession",
+      "chapter": "mat.16",
+      "speaker": "베드로",
+      "target": "예수",
+      "ref": "마태복음 16:16-23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-19-rich-young-ruler-jesus",
+      "chapter": "mat.19",
+      "speaker": "부자 청년",
+      "target": "예수",
+      "ref": "마태복음 19:16-22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-26-judas-jesus-betrayal",
+      "chapter": "mat.26",
+      "speaker": "가룟 유다",
+      "target": "예수",
+      "ref": "마태복음 26:25, 47-50",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mat-27-pilate-jesus-trial",
+      "chapter": "mat.27",
+      "speaker": "빌라도",
+      "target": "예수",
+      "ref": "마태복음 27:11-14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mal-2-husbands-wife-covenant",
+      "chapter": "mal.2",
+      "speaker": "남편들",
+      "target": "어려서 맞은 아내",
+      "ref": "말라기 2:14-16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zec-1-zechariah-interpreting-angel",
+      "chapter": "zec.1",
+      "speaker": "스가랴",
+      "target": "천사",
+      "ref": "스가랴 1:9, 19-21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zec-4-zechariah-interpreting-angel",
+      "chapter": "zec.4",
+      "speaker": "스가랴",
+      "target": "천사",
+      "ref": "스가랴 4:4-6, 11-14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zec-5-zechariah-interpreting-angel",
+      "chapter": "zec.5",
+      "speaker": "스가랴",
+      "target": "천사",
+      "ref": "스가랴 5:5-11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zec-6-zechariah-interpreting-angel",
+      "chapter": "zec.6",
+      "speaker": "스가랴",
+      "target": "천사",
+      "ref": "스가랴 6:4-8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zec-7-bethel-delegates-zechariah",
+      "chapter": "zec.7",
+      "speaker": "사레셀과 레겜멜렉",
+      "target": "스가랴",
+      "ref": "스가랴 7:2-10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-3-absalom-david",
+      "chapter": "psa.3",
+      "speaker": "압살롬",
+      "target": "다윗",
+      "ref": "시편 3:1–5; 사무엘하 15:2–6",
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 자녀 존댓말·대답의 수신자·기도와 재구성 구분"
+    },
+    {
+      "id": "pair-psa-11-counsel-david",
+      "chapter": "psa.11",
+      "speaker": "도망하라는 사람들",
+      "target": "다윗",
+      "ref": "시편 11:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-18-saul-david",
+      "chapter": "psa.18",
+      "speaker": "사울",
+      "target": "다윗",
+      "ref": "시편 18:1–3, 16–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-34-achish-david",
+      "chapter": "psa.34",
+      "speaker": "아비멜렉",
+      "target": "다윗",
+      "ref": "시편 34:1–4, 6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-41-friend-david",
+      "chapter": "psa.41",
+      "speaker": "가까운 친구",
+      "target": "다윗",
+      "ref": "시편 41:5–9, 12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-52-doeg-david",
+      "chapter": "psa.52",
+      "speaker": "도엑",
+      "target": "다윗",
+      "ref": "시편 52:1–8; 사무엘상 22:9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-52-doeg-saul",
+      "chapter": "psa.52",
+      "speaker": "도엑",
+      "target": "사울",
+      "ref": "시편 52:1; 사무엘상 22:9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-52-ahimelech-david",
+      "chapter": "psa.52",
+      "speaker": "아히멜렉",
+      "target": "다윗",
+      "ref": "시편 52:1; 사무엘상 21:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-54-ziph-saul",
+      "chapter": "psa.54",
+      "speaker": "십 사람들",
+      "target": "사울",
+      "ref": "시편 54:1–3; 사무엘상 23:19–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-54-ziph-david",
+      "chapter": "psa.54",
+      "speaker": "십 사람들",
+      "target": "다윗",
+      "ref": "시편 54:1–4; 사무엘상 23:19–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-54-saul-david",
+      "chapter": "psa.54",
+      "speaker": "사울",
+      "target": "다윗",
+      "ref": "시편 54:3–7; 사무엘상 23:19–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-56-philistines-david",
+      "chapter": "psa.56",
+      "speaker": "블레셋 사람들",
+      "target": "다윗",
+      "ref": "시편 56:1–4; 사무엘상 21:10–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-57-saul-david",
+      "chapter": "psa.57",
+      "speaker": "사울",
+      "target": "다윗",
+      "ref": "시편 57:1–6; 사무엘상 24:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-59-saul-sentries-david",
+      "chapter": "psa.59",
+      "speaker": "사울이 보낸 자들",
+      "target": "다윗",
+      "ref": "시편 59:1–4, 16–17; 사무엘상 19:11–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-106-dathan-moses",
+      "chapter": "psa.106",
+      "speaker": "다단과 아비람",
+      "target": "모세",
+      "ref": "시편 106:16–18; 민수기 16:1–35",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-109-enemy-david",
+      "chapter": "psa.109",
+      "speaker": "대적",
+      "target": "다윗",
+      "ref": "시편 109:1–5, 21–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-122-david-brothers",
+      "chapter": "psa.122",
+      "speaker": "다윗",
+      "target": "형제와 친구",
+      "ref": "시편 122:6–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-7-cush-david",
+      "chapter": "psa.7",
+      "speaker": "구시",
+      "target": "다윗",
+      "ref": "시편 7:1–5, 8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-22-mockers-david",
+      "chapter": "psa.22",
+      "speaker": "비웃는 자들",
+      "target": "다윗",
+      "ref": "시편 22:7–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-31-neighbors-david",
+      "chapter": "psa.31",
+      "speaker": "이웃과 친구",
+      "target": "다윗",
+      "ref": "시편 31:11–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-38-friends-david",
+      "chapter": "psa.38",
+      "speaker": "친구들",
+      "target": "다윗",
+      "ref": "시편 38:11–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-51-nathan-david",
+      "chapter": "psa.51",
+      "speaker": "나단",
+      "target": "다윗",
+      "ref": "시편 51:1–4; 사무엘하 12:1–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-55-betraying-friend-david",
+      "chapter": "psa.55",
+      "speaker": "배신한 친구",
+      "target": "다윗",
+      "ref": "시편 55:12–14, 20–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-69-brothers-david",
+      "chapter": "psa.69",
+      "speaker": "형제들",
+      "target": "다윗",
+      "ref": "시편 69:7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-77-moses-aaron",
+      "chapter": "psa.77",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "시편 77:20; 출애굽기 4:14–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-99-moses-aaron",
+      "chapter": "psa.99",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "시편 99:6–8; 출애굽기 32:11–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-105-moses-aaron",
+      "chapter": "psa.105",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "시편 105:26–27; 출애굽기 4:14–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-134-pilgrims-servants",
+      "chapter": "psa.134",
+      "speaker": "순례자들",
+      "target": "여호와의 종들",
+      "ref": "시편 134:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-137-captors-exiles",
+      "chapter": "psa.137",
+      "speaker": "사로잡은 자들",
+      "target": "포로들",
+      "ref": "시편 137:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-141-righteous-david",
+      "chapter": "psa.141",
+      "speaker": "의인",
+      "target": "다윗",
+      "ref": "시편 141:3–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-2-kings-anointed",
+      "chapter": "psa.2",
+      "speaker": "세상 왕들",
+      "target": "기름 부음 받은 왕",
+      "ref": "시편 2:1–6, 10–12",
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 시적 대조의 가상 문답임을 설명에서 명시"
+    },
+    {
+      "id": "pair-psa-20-people-king",
+      "chapter": "psa.20",
+      "speaker": "백성",
+      "target": "기름 부음 받은 왕",
+      "ref": "시편 20:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-27-parents-david",
+      "chapter": "psa.27",
+      "speaker": "부모",
+      "target": "다윗",
+      "ref": "시편 27:10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-42-mockers-korahites",
+      "chapter": "psa.42",
+      "speaker": "조롱하는 자들",
+      "target": "고라 자손",
+      "ref": "시편 42:3, 9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-45-queen-king",
+      "chapter": "psa.45",
+      "speaker": "왕후",
+      "target": "왕",
+      "ref": "시편 45:10–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-45-sons-king",
+      "chapter": "psa.45",
+      "speaker": "왕의 아들들",
+      "target": "왕",
+      "ref": "시편 45:16–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-71-descendants-singer",
+      "chapter": "psa.71",
+      "speaker": "늙은 시인",
+      "target": "후대",
+      "ref": "시편 71:9, 17–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-72-solomon-poor",
+      "chapter": "psa.72",
+      "speaker": "솔로몬",
+      "target": "가난하고 궁핍한 자",
+      "ref": "시편 72:1–4, 12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-72-kings-solomon",
+      "chapter": "psa.72",
+      "speaker": "다시스와 섬의 왕들",
+      "target": "솔로몬",
+      "ref": "시편 72:8–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-78-asaph-ancestors",
+      "chapter": "psa.78",
+      "speaker": "아삽",
+      "target": "조상들",
+      "ref": "시편 78:1–8, 40–42",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-82-judges-vulnerable",
+      "chapter": "psa.82",
+      "speaker": "재판관들",
+      "target": "가난한 자와 고아",
+      "ref": "시편 82:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-83-sisera-jabin",
+      "chapter": "psa.83",
+      "speaker": "시스라",
+      "target": "야빈",
+      "ref": "시편 83:9–10; 사사기 4:2–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-88-friends-heman",
+      "chapter": "psa.88",
+      "speaker": "친구와 사랑하는 자",
+      "target": "헤만",
+      "ref": "시편 88:1, 8, 18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-89-descendant-david",
+      "chapter": "psa.89",
+      "speaker": "기름 부음 받은 왕",
+      "target": "다윗",
+      "ref": "시편 89:3–4, 26–29, 38–45",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-105-isaac-abraham",
+      "chapter": "psa.105",
+      "speaker": "이삭",
+      "target": "아브라함",
+      "ref": "시편 105:8–10; 창세기 21:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-105-pharaoh-joseph",
+      "chapter": "psa.105",
+      "speaker": "바로",
+      "target": "요셉",
+      "ref": "시편 105:16–22; 창세기 41:34–44",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-106-moses-ancestors",
+      "chapter": "psa.106",
+      "speaker": "모세",
+      "target": "조상들",
+      "ref": "시편 106:6–8, 19–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-128-wife-husband",
+      "chapter": "psa.128",
+      "speaker": "아내",
+      "target": "경외하는 사람",
+      "ref": "시편 128:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-128-children-parent",
+      "chapter": "psa.128",
+      "speaker": "자식들",
+      "target": "경외하는 사람",
+      "ref": "시편 128:3–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-132-david-descendant",
+      "chapter": "psa.132",
+      "speaker": "다윗의 자손",
+      "target": "다윗",
+      "ref": "시편 132:10–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-137-edom-exiles",
+      "chapter": "psa.137",
+      "speaker": "에돔 자손",
+      "target": "포로들",
+      "ref": "시편 137:7; 오바댜 1:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-142-friends-david",
+      "chapter": "psa.142",
+      "speaker": "의인들",
+      "target": "다윗",
+      "ref": "시편 142:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-44-israel-enemies",
+      "chapter": "psa.44",
+      "speaker": "이스라엘",
+      "target": "원수들",
+      "ref": "시편 44:9–16, 23–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-94-widow-orphan",
+      "chapter": "psa.94",
+      "speaker": "악인들",
+      "target": "과부와 고아",
+      "ref": "시편 94:3–7, 20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-101-david-servants",
+      "chapter": "psa.101",
+      "speaker": "다윗",
+      "target": "충성된 자",
+      "ref": "시편 101:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-116-singer-community",
+      "chapter": "psa.116",
+      "speaker": "시인",
+      "target": "여호와의 백성",
+      "ref": "시편 116:12–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-122-david-tribes",
+      "chapter": "psa.122",
+      "speaker": "다윗",
+      "target": "이스라엘 지파들",
+      "ref": "시편 122:3–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-124-israel-enemies",
+      "chapter": "psa.124",
+      "speaker": "이스라엘",
+      "target": "원수들",
+      "ref": "시편 124:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-131-david-israel",
+      "chapter": "psa.131",
+      "speaker": "다윗",
+      "target": "이스라엘",
+      "ref": "시편 131:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-133-aaron-brothers",
+      "chapter": "psa.133",
+      "speaker": "아론",
+      "target": "형제들",
+      "ref": "시편 133:1–3; 출애굽기 28:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-146-singer-nobles",
+      "chapter": "psa.146",
+      "speaker": "시인",
+      "target": "귀인들",
+      "ref": "시편 146:3–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-4-david-people",
+      "chapter": "psa.4",
+      "speaker": "다윗",
+      "target": "사람들",
+      "ref": "시편 4:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-10-wicked-vulnerable",
+      "chapter": "psa.10",
+      "speaker": "악인",
+      "target": "가난한 자와 고아",
+      "ref": "시편 10:2, 8–10, 14, 17–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-12-liars-needy",
+      "chapter": "psa.12",
+      "speaker": "거짓말하는 자들",
+      "target": "가련한 자들",
+      "ref": "시편 12:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-27-enemies-david",
+      "chapter": "psa.27",
+      "speaker": "대적들",
+      "target": "다윗",
+      "ref": "시편 27:2–3, 6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-37-wicked-righteous",
+      "chapter": "psa.37",
+      "speaker": "악인",
+      "target": "의인",
+      "ref": "시편 37:12–17, 23–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-49-wealthy-korahites",
+      "chapter": "psa.49",
+      "speaker": "재물을 의지하는 자",
+      "target": "고라 자손",
+      "ref": "시편 49:5–12, 16–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-58-david-rulers",
+      "chapter": "psa.58",
+      "speaker": "다윗",
+      "target": "불의한 통치자들",
+      "ref": "시편 58:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-60-joab-david",
+      "chapter": "psa.60",
+      "speaker": "요압",
+      "target": "다윗",
+      "ref": "시편 60 표제; 사무엘하 8:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-62-david-people",
+      "chapter": "psa.62",
+      "speaker": "다윗",
+      "target": "백성",
+      "ref": "시편 62:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-71-enemies-elder",
+      "chapter": "psa.71",
+      "speaker": "원수들",
+      "target": "늙은 시인",
+      "ref": "시편 71:9–11, 18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-95-singer-people",
+      "chapter": "psa.95",
+      "speaker": "시인",
+      "target": "주의 백성",
+      "ref": "시편 95:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-129-israel-enemies",
+      "chapter": "psa.129",
+      "speaker": "이스라엘",
+      "target": "원수들",
+      "ref": "시편 129:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-43-unjust-korahites",
+      "chapter": "psa.43",
+      "speaker": "불의한 자",
+      "target": "고라 자손",
+      "ref": "시편 43:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-45-korahites-king",
+      "chapter": "psa.45",
+      "speaker": "고라 자손",
+      "target": "왕",
+      "ref": "시편 45:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-59-saul-sentries",
+      "chapter": "psa.59",
+      "speaker": "사울",
+      "target": "사울이 보낸 자들",
+      "ref": "시편 59:1–4; 사무엘상 19:11–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-73-asaph-wicked",
+      "chapter": "psa.73",
+      "speaker": "아삽",
+      "target": "악인",
+      "ref": "시편 73:2–12, 16–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-79-nations-servants",
+      "chapter": "psa.79",
+      "speaker": "이방 나라들",
+      "target": "주의 종들",
+      "ref": "시편 79:1–4, 10–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-80-enemies-israel",
+      "chapter": "psa.80",
+      "speaker": "이스라엘",
+      "target": "원수들",
+      "ref": "시편 80:4–7, 12–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-89-enemies-anointed",
+      "chapter": "psa.89",
+      "speaker": "원수들",
+      "target": "기름 부음 받은 왕",
+      "ref": "시편 89:38–45, 50–51",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-112-righteous-poor",
+      "chapter": "psa.112",
+      "speaker": "경외하는 사람",
+      "target": "가난한 자",
+      "ref": "시편 112:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-118-nations-singer",
+      "chapter": "psa.118",
+      "speaker": "뭇 나라",
+      "target": "시인",
+      "ref": "시편 118:5–14, 18–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-140-violent-david",
+      "chapter": "psa.140",
+      "speaker": "강포한 자들",
+      "target": "다윗",
+      "ref": "시편 140:1–8, 12–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-144-foreigners-david",
+      "chapter": "psa.144",
+      "speaker": "이방인",
+      "target": "다윗",
+      "ref": "시편 144:7–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-1-wicked-blessed",
+      "chapter": "psa.1",
+      "speaker": "악인",
+      "target": "복 있는 사람",
+      "ref": "시편 1:1–6",
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 시적 대조의 가상 문답임을 설명에서 명시"
+    },
+    {
+      "id": "pair-psa-3-enemies-david",
+      "chapter": "psa.3",
+      "speaker": "대적들",
+      "target": "다윗",
+      "ref": "시편 3:1–4; 사무엘하 15:13–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-5-enemies-david",
+      "chapter": "psa.5",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 5:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-6-david-enemies",
+      "chapter": "psa.6",
+      "speaker": "다윗",
+      "target": "원수들",
+      "ref": "시편 6:6–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-11-wicked-david",
+      "chapter": "psa.11",
+      "speaker": "악인",
+      "target": "다윗",
+      "ref": "시편 11:2–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-13-enemy-david",
+      "chapter": "psa.13",
+      "speaker": "원수",
+      "target": "다윗",
+      "ref": "시편 13:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-16-david-saints",
+      "chapter": "psa.16",
+      "speaker": "다윗",
+      "target": "성도",
+      "ref": "시편 16:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-17-enemies-david",
+      "chapter": "psa.17",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 17:9–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-18-enemies-david",
+      "chapter": "psa.18",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 18:4–19, 37–45",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-20-chariots-people",
+      "chapter": "psa.20",
+      "speaker": "병거와 말을 의지하는 자",
+      "target": "백성",
+      "ref": "시편 20:6–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-21-enemies-david",
+      "chapter": "psa.21",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 21:8–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-22-enemies-david",
+      "chapter": "psa.22",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 22:12–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-25-enemies-david",
+      "chapter": "psa.25",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 25:1–3, 19–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-26-david-evildoers",
+      "chapter": "psa.26",
+      "speaker": "다윗",
+      "target": "행악자들",
+      "ref": "시편 26:4–8, 9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-28-wicked-david",
+      "chapter": "psa.28",
+      "speaker": "악인들",
+      "target": "다윗",
+      "ref": "시편 28:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-30-enemies-david",
+      "chapter": "psa.30",
+      "speaker": "원수",
+      "target": "다윗",
+      "ref": "시편 30:1–5, 11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-30-david-saints",
+      "chapter": "psa.30",
+      "speaker": "다윗",
+      "target": "성도들",
+      "ref": "시편 30:4–5, 11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-31-enemies-david",
+      "chapter": "psa.31",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 31:11–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-31-david-saints",
+      "chapter": "psa.31",
+      "speaker": "다윗",
+      "target": "성도들",
+      "ref": "시편 31:23–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-32-david-godly",
+      "chapter": "psa.32",
+      "speaker": "다윗",
+      "target": "경건한 자",
+      "ref": "시편 32:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-34-david-humble",
+      "chapter": "psa.34",
+      "speaker": "다윗",
+      "target": "겸손한 자들",
+      "ref": "시편 34:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-35-enemies-david",
+      "chapter": "psa.35",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 35:7–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-35-david-enemies",
+      "chapter": "psa.35",
+      "speaker": "다윗",
+      "target": "원수들",
+      "ref": "시편 35:11–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-35-supporters-david",
+      "chapter": "psa.35",
+      "speaker": "다윗의 의를 즐거워하는 자",
+      "target": "다윗",
+      "ref": "시편 35:27–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-36-wicked-david",
+      "chapter": "psa.36",
+      "speaker": "악인",
+      "target": "다윗",
+      "ref": "시편 36:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-37-david-righteous",
+      "chapter": "psa.37",
+      "speaker": "다윗",
+      "target": "의인",
+      "ref": "시편 37:3–11, 23–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-38-enemies-david",
+      "chapter": "psa.38",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 38:12–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-39-david-wicked",
+      "chapter": "psa.39",
+      "speaker": "다윗",
+      "target": "악인",
+      "ref": "시편 39:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-40-enemies-david",
+      "chapter": "psa.40",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 40:12–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-41-enemies-david",
+      "chapter": "psa.41",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 41:5–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-55-enemies-david",
+      "chapter": "psa.55",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 55:3–8, 15, 23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-56-enemies-david",
+      "chapter": "psa.56",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 56:1–7; 사무엘상 21:10–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-57-enemies-david",
+      "chapter": "psa.57",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 57:3–6; 사무엘상 24:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-62-enemies-david",
+      "chapter": "psa.62",
+      "speaker": "대적들",
+      "target": "다윗",
+      "ref": "시편 62:3–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-63-enemies-david",
+      "chapter": "psa.63",
+      "speaker": "원수들",
+      "target": "다윗",
+      "ref": "시편 63:9–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-64-wicked-david",
+      "chapter": "psa.64",
+      "speaker": "악인들",
+      "target": "다윗",
+      "ref": "시편 64:2–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-69-haters-david",
+      "chapter": "psa.69",
+      "speaker": "까닭 없이 미워하는 자들",
+      "target": "다윗",
+      "ref": "시편 69:4, 7–12, 20–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-70-life-seekers-david",
+      "chapter": "psa.70",
+      "speaker": "생명을 찾는 자들",
+      "target": "다윗",
+      "ref": "시편 70:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-72-sheba-kings-solomon",
+      "chapter": "psa.72",
+      "speaker": "스바와 시바 왕들",
+      "target": "솔로몬",
+      "ref": "시편 72:10–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-86-proud-david",
+      "chapter": "psa.86",
+      "speaker": "교만한 자들",
+      "target": "다윗",
+      "ref": "시편 86:14–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-91-angels-refuge",
+      "chapter": "psa.91",
+      "speaker": "천사들",
+      "target": "지존자께 거하는 자",
+      "ref": "시편 91:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-101-david-proud",
+      "chapter": "psa.101",
+      "speaker": "다윗",
+      "target": "교만하고 거짓된 자",
+      "ref": "시편 101:3–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-102-enemies-afflicted",
+      "chapter": "psa.102",
+      "speaker": "원수들",
+      "target": "고난당한 자",
+      "ref": "시편 102:8–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-110-david-lord",
+      "chapter": "psa.110",
+      "speaker": "다윗",
+      "target": "다윗의 주",
+      "ref": "시편 110:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-110-people-lord",
+      "chapter": "psa.110",
+      "speaker": "주의 백성",
+      "target": "다윗의 주",
+      "ref": "시편 110:3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-110-lord-melchizedek",
+      "chapter": "psa.110",
+      "speaker": "다윗의 주",
+      "target": "멜기세덱",
+      "ref": "시편 110:4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-112-wicked-righteous",
+      "chapter": "psa.112",
+      "speaker": "악인",
+      "target": "경외하는 사람",
+      "ref": "시편 112:6–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-120-deceitful-neighbor",
+      "chapter": "psa.120",
+      "speaker": "거짓말하는 이웃",
+      "target": "시인",
+      "ref": "시편 120:2–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-123-proud-pilgrim",
+      "chapter": "psa.123",
+      "speaker": "교만한 자들",
+      "target": "시인",
+      "ref": "시편 123:3–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-139-david-wicked",
+      "chapter": "psa.139",
+      "speaker": "다윗",
+      "target": "악인",
+      "ref": "시편 139:19–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-141-wicked-david",
+      "chapter": "psa.141",
+      "speaker": "악인들",
+      "target": "다윗",
+      "ref": "시편 141:4–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-142-persecutors-david",
+      "chapter": "psa.142",
+      "speaker": "핍박하는 자들",
+      "target": "다윗",
+      "ref": "시편 142:3–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-psa-143-enemy-david",
+      "chapter": "psa.143",
+      "speaker": "원수",
+      "target": "다윗",
+      "ref": "시편 143:3–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-1-father-son",
+      "chapter": "pro.1",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 1:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-1-gang-son",
+      "chapter": "pro.1",
+      "speaker": "악한 무리",
+      "target": "아들",
+      "ref": "잠언 1:10–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-1-wisdom-fool",
+      "chapter": "pro.1",
+      "speaker": "지혜",
+      "target": "어리석은 자",
+      "ref": "잠언 1:20–33",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-2-father-son",
+      "chapter": "pro.2",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 2:1–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-3-father-son",
+      "chapter": "pro.3",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 3:1–4, 11–12, 21–35",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-3-god-son-discipline",
+      "chapter": "pro.3",
+      "speaker": "하나님",
+      "target": "아들",
+      "ref": "잠언 3:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-3-son-god-trust",
+      "chapter": "pro.3",
+      "speaker": "아들",
+      "target": "하나님",
+      "ref": "잠언 3:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-2-seductress-son",
+      "chapter": "pro.2",
+      "speaker": "음녀",
+      "target": "아들",
+      "ref": "잠언 2:16–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-4-grandfather-father",
+      "chapter": "pro.4",
+      "speaker": "할아버지",
+      "target": "아버지",
+      "ref": "잠언 4:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-4-wisdom-son",
+      "chapter": "pro.4",
+      "speaker": "지혜",
+      "target": "아들",
+      "ref": "잠언 4:5–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-5-father-son",
+      "chapter": "pro.5",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 5:1–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-7-seductress-young-man",
+      "chapter": "pro.7",
+      "speaker": "음녀",
+      "target": "어리석은 젊은이",
+      "ref": "잠언 7:13–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-7-father-young-man",
+      "chapter": "pro.7",
+      "speaker": "아버지",
+      "target": "어리석은 젊은이",
+      "ref": "잠언 7:1–5, 24–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-8-wisdom-people",
+      "chapter": "pro.8",
+      "speaker": "지혜",
+      "target": "사람들",
+      "ref": "잠언 8:1–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-8-rulers-wisdom",
+      "chapter": "pro.8",
+      "speaker": "왕과 방백",
+      "target": "지혜",
+      "ref": "잠언 8:14–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-9-wisdom-foolish",
+      "chapter": "pro.9",
+      "speaker": "지혜",
+      "target": "어리석은 자",
+      "ref": "잠언 9:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-9-foolish-woman-young-man",
+      "chapter": "pro.9",
+      "speaker": "미련한 여인",
+      "target": "어리석은 자",
+      "ref": "잠언 9:13–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-10-righteous-wicked",
+      "chapter": "pro.10",
+      "speaker": "의인",
+      "target": "악인",
+      "ref": "잠언 10:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-13-parent-wise-son",
+      "chapter": "pro.13",
+      "speaker": "부모",
+      "target": "지혜로운 아들",
+      "ref": "잠언 13:1, 24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-13-friend-wise-son",
+      "chapter": "pro.13",
+      "speaker": "지혜로운 친구",
+      "target": "지혜로운 아들",
+      "ref": "잠언 13:20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-17-friend-brother",
+      "chapter": "pro.17",
+      "speaker": "친구",
+      "target": "형제",
+      "ref": "잠언 17:17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-23-parents-son",
+      "chapter": "pro.23",
+      "speaker": "부모",
+      "target": "아들",
+      "ref": "잠언 23:15–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-24-righteous-rescues",
+      "chapter": "pro.24",
+      "speaker": "의인",
+      "target": "끌려가는 자",
+      "ref": "잠언 24:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-27-friends",
+      "chapter": "pro.27",
+      "speaker": "친구",
+      "target": "가까운 이웃",
+      "ref": "잠언 27:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-30-agur-sons",
+      "chapter": "pro.30",
+      "speaker": "아굴",
+      "target": "이디엘과 우갈",
+      "ref": "잠언 30:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-31-mother-lemuel",
+      "chapter": "pro.31",
+      "speaker": "르무엘의 어머니",
+      "target": "르무엘",
+      "ref": "잠언 31:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-31-wife-family",
+      "chapter": "pro.31",
+      "speaker": "현숙한 여인",
+      "target": "현숙한 여인의 남편",
+      "ref": "잠언 31:10–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-1-wisdom-son",
+      "chapter": "pro.1",
+      "speaker": "지혜",
+      "target": "아들",
+      "ref": "잠언 1:8–9, 20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-2-evil-son",
+      "chapter": "pro.2",
+      "speaker": "악한 자",
+      "target": "아들",
+      "ref": "잠언 2:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-4-father-son",
+      "chapter": "pro.4",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 4:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-4-wicked-son",
+      "chapter": "pro.4",
+      "speaker": "악인",
+      "target": "아들",
+      "ref": "잠언 4:14–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-5-seductress-son",
+      "chapter": "pro.5",
+      "speaker": "음녀",
+      "target": "아들",
+      "ref": "잠언 5:3–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-5-wife-son",
+      "chapter": "pro.5",
+      "speaker": "젊어서 맞은 아내",
+      "target": "아들",
+      "ref": "잠언 5:15–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-6-father-son",
+      "chapter": "pro.6",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 6:20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-6-othermanswife-son",
+      "chapter": "pro.6",
+      "speaker": "남의 아내",
+      "target": "아들",
+      "ref": "잠언 6:24–29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-7-father-son",
+      "chapter": "pro.7",
+      "speaker": "아버지",
+      "target": "아들",
+      "ref": "잠언 7:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-9-wisdom-foolish-woman",
+      "chapter": "pro.9",
+      "speaker": "지혜",
+      "target": "미련한 여인",
+      "ref": "잠언 9:1–6, 13–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-9-scoffer-wise",
+      "chapter": "pro.9",
+      "speaker": "거만한 자",
+      "target": "지혜 있는 자",
+      "ref": "잠언 9:7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-10-wise-foolish-sons",
+      "chapter": "pro.10",
+      "speaker": "지혜로운 아들",
+      "target": "미련한 아들",
+      "ref": "잠언 10:1, 5, 8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-12-wise-fool",
+      "chapter": "pro.12",
+      "speaker": "지혜로운 자",
+      "target": "미련한 자",
+      "ref": "잠언 12:15–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-12-diligent-lazy",
+      "chapter": "pro.12",
+      "speaker": "부지런한 자",
+      "target": "게으른 자",
+      "ref": "잠언 12:11, 24, 27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-13-wise-arrogant",
+      "chapter": "pro.13",
+      "speaker": "지혜로운 아들",
+      "target": "거만한 자",
+      "ref": "잠언 13:1, 10, 20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-14-wise-foolish-women",
+      "chapter": "pro.14",
+      "speaker": "지혜로운 여인",
+      "target": "미련한 여인",
+      "ref": "잠언 14:1, 7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-14-prudent-poor",
+      "chapter": "pro.14",
+      "speaker": "슬기로운 자",
+      "target": "가난한 사람",
+      "ref": "잠언 14:21, 31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-15-wise-fool",
+      "chapter": "pro.15",
+      "speaker": "지혜로운 자",
+      "target": "미련한 자",
+      "ref": "잠언 15:1–5, 14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-20-king-faithful",
+      "chapter": "pro.20",
+      "speaker": "왕",
+      "target": "충성된 자",
+      "ref": "잠언 20:6, 28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-23-seductress-son",
+      "chapter": "pro.23",
+      "speaker": "음녀",
+      "target": "아들",
+      "ref": "잠언 23:26–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-24-righteous-wicked",
+      "chapter": "pro.24",
+      "speaker": "의인",
+      "target": "악인",
+      "ref": "잠언 24:15–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-26-lazy-fool",
+      "chapter": "pro.26",
+      "speaker": "게으른 자",
+      "target": "미련한 자",
+      "ref": "잠언 26:13–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-26-hater-tale-bearer",
+      "chapter": "pro.26",
+      "speaker": "미워하는 자",
+      "target": "말쟁이",
+      "ref": "잠언 26:20–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-27-friend-enemy",
+      "chapter": "pro.27",
+      "speaker": "친구",
+      "target": "원수",
+      "ref": "잠언 27:5–6, 14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-28-righteous-wicked",
+      "chapter": "pro.28",
+      "speaker": "의인",
+      "target": "악인",
+      "ref": "잠언 28:1, 4–5, 12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-28-righteous-poor",
+      "chapter": "pro.28",
+      "speaker": "의인",
+      "target": "가난한 자",
+      "ref": "잠언 28:3, 8, 27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-29-righteous-poor",
+      "chapter": "pro.29",
+      "speaker": "의인",
+      "target": "가난한 자",
+      "ref": "잠언 29:7, 14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-29-righteous-wicked",
+      "chapter": "pro.29",
+      "speaker": "의인",
+      "target": "악인",
+      "ref": "잠언 29:2, 6–7, 16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-30-yage-agur",
+      "chapter": "pro.30",
+      "speaker": "야게",
+      "target": "아굴",
+      "ref": "잠언 30:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-31-children-virtuous-woman",
+      "chapter": "pro.31",
+      "speaker": "자녀들",
+      "target": "현숙한 여인",
+      "ref": "잠언 31:28–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-pro-31-wife-poor",
+      "chapter": "pro.31",
+      "speaker": "현숙한 여인",
+      "target": "가난한 자",
+      "ref": "잠언 31:19–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-2-preacher-heir",
+      "chapter": "ecc.2",
+      "speaker": "전도자",
+      "target": "뒤에 올 사람",
+      "ref": "전도서 2:18–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-4-oppressor-oppressed",
+      "chapter": "ecc.4",
+      "speaker": "학대하는 자",
+      "target": "학대받는 자",
+      "ref": "전도서 4:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-4-youth-old-king",
+      "chapter": "ecc.4",
+      "speaker": "지혜로운 소년",
+      "target": "늙고 둔한 왕",
+      "ref": "전도서 4:13–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-5-preacher-fool",
+      "chapter": "ecc.5",
+      "speaker": "전도자",
+      "target": "우매한 자",
+      "ref": "전도서 5:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-5-rich-poor",
+      "chapter": "ecc.5",
+      "speaker": "부자",
+      "target": "가난한 자",
+      "ref": "전도서 5:8–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-6-stranger-rich",
+      "chapter": "ecc.6",
+      "speaker": "낯선 사람",
+      "target": "누리지 못한 부자",
+      "ref": "전도서 6:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-7-wise-fool",
+      "chapter": "ecc.7",
+      "speaker": "지혜자",
+      "target": "우매자",
+      "ref": "전도서 7:5–14, 19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-8-wicked-godfearing",
+      "chapter": "ecc.8",
+      "speaker": "악인",
+      "target": "하나님을 경외하는 자",
+      "ref": "전도서 8:10–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-8-preacher-king",
+      "chapter": "ecc.8",
+      "speaker": "전도자",
+      "target": "왕",
+      "ref": "전도서 8:2–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-9-great-king-poor-wise",
+      "chapter": "ecc.9",
+      "speaker": "큰 왕",
+      "target": "가난한 지혜자",
+      "ref": "전도서 9:13–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-9-wife-preacher",
+      "chapter": "ecc.9",
+      "speaker": "사랑하는 아내",
+      "target": "전도자",
+      "ref": "전도서 9:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-10-wise-fool",
+      "chapter": "ecc.10",
+      "speaker": "지혜자",
+      "target": "우매자",
+      "ref": "전도서 10:1–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-10-wise-ruler",
+      "chapter": "ecc.10",
+      "speaker": "지혜자",
+      "target": "주권자",
+      "ref": "전도서 10:4–7, 16–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-10-lazy-fool",
+      "chapter": "ecc.10",
+      "speaker": "게으른 자",
+      "target": "우매자",
+      "ref": "전도서 10:15, 18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-11-preacher-youth",
+      "chapter": "ecc.11",
+      "speaker": "전도자",
+      "target": "젊은이",
+      "ref": "전도서 11:9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-11-preacher-farmer",
+      "chapter": "ecc.11",
+      "speaker": "전도자",
+      "target": "농부",
+      "ref": "전도서 11:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-12-preacher-youth",
+      "chapter": "ecc.12",
+      "speaker": "전도자",
+      "target": "청년",
+      "ref": "전도서 12:1–8, 13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ecc-12-shepherd-preacher",
+      "chapter": "ecc.12",
+      "speaker": "1 목자",
+      "target": "전도자",
+      "ref": "전도서 12:9–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-1-beloved-woman",
+      "chapter": "sng.1",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 1:2–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-1-brothers-woman",
+      "chapter": "sng.1",
+      "speaker": "여인의 오빠들",
+      "target": "술람미 여인",
+      "ref": "아가 1:6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-1-daughters-woman",
+      "chapter": "sng.1",
+      "speaker": "예루살렘 딸들",
+      "target": "술람미 여인",
+      "ref": "아가 1:4, 8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-2-beloved-woman",
+      "chapter": "sng.2",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 2:8–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-2-woman-daughters",
+      "chapter": "sng.2",
+      "speaker": "술람미 여인",
+      "target": "예루살렘 딸들",
+      "ref": "아가 2:7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-3-beloved-woman",
+      "chapter": "sng.3",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 3:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-3-warriors-solomon",
+      "chapter": "sng.3",
+      "speaker": "이스라엘 용사 60명",
+      "target": "솔로몬",
+      "ref": "아가 3:6–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-3-mother-solomon",
+      "chapter": "sng.3",
+      "speaker": "솔로몬의 어머니",
+      "target": "솔로몬",
+      "ref": "아가 3:11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-3-watchmen-woman",
+      "chapter": "sng.3",
+      "speaker": "술람미 여인",
+      "target": "파수꾼들",
+      "ref": "아가 3:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-4-solomon-woman",
+      "chapter": "sng.4",
+      "speaker": "솔로몬",
+      "target": "술람미 여인",
+      "ref": "아가 4:1–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-5-solomon-woman",
+      "chapter": "sng.5",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 5:2–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-5-watchmen-woman",
+      "chapter": "sng.5",
+      "speaker": "파수꾼들",
+      "target": "술람미 여인",
+      "ref": "아가 5:6–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-5-woman-daughters",
+      "chapter": "sng.5",
+      "speaker": "예루살렘 딸들",
+      "target": "술람미 여인",
+      "ref": "아가 5:9–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-5-groom-friends-solomon",
+      "chapter": "sng.5",
+      "speaker": "신랑의 친구들",
+      "target": "솔로몬",
+      "ref": "아가 5:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-6-woman-solomon",
+      "chapter": "sng.6",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 6:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-6-queens-woman",
+      "chapter": "sng.6",
+      "speaker": "왕비와 후궁들",
+      "target": "술람미 여인",
+      "ref": "아가 6:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-6-daughters-woman",
+      "chapter": "sng.6",
+      "speaker": "예루살렘 딸들",
+      "target": "술람미 여인",
+      "ref": "아가 6:9, 13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-7-solomon-woman",
+      "chapter": "sng.7",
+      "speaker": "솔로몬",
+      "target": "술람미 여인",
+      "ref": "아가 7:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-8-woman-solomon",
+      "chapter": "sng.8",
+      "speaker": "술람미 여인",
+      "target": "솔로몬",
+      "ref": "아가 8:1–7, 14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-8-brothers-sister",
+      "chapter": "sng.8",
+      "speaker": "신부의 오빠들",
+      "target": "어린 누이",
+      "ref": "아가 8:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-sng-8-woman-daughters",
+      "chapter": "sng.8",
+      "speaker": "술람미 여인",
+      "target": "예루살렘 딸들",
+      "ref": "아가 8:4, 13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-36-rabshakeh-sennacherib",
+      "chapter": "isa.36",
+      "speaker": "랍사게",
+      "target": "산헤립",
+      "ref": "이사야 36:1–22; 37:8–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-36-eliakim-hezekiah",
+      "chapter": "isa.36",
+      "speaker": "엘리아김",
+      "target": "히스기야",
+      "ref": "이사야 36:11–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-36-wall-people-hezekiah",
+      "chapter": "isa.36",
+      "speaker": "성벽 위 백성",
+      "target": "히스기야",
+      "ref": "이사야 36:11–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-36-sennacherib-hezekiah",
+      "chapter": "isa.36",
+      "speaker": "산헤립",
+      "target": "히스기야",
+      "ref": "이사야 36:4–10; 37:9–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-37-isaiah-hezekiah",
+      "chapter": "isa.37",
+      "speaker": "이사야",
+      "target": "히스기야",
+      "ref": "이사야 37:1–7, 14–20, 33–35",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-38-isaiah-hezekiah",
+      "chapter": "isa.38",
+      "speaker": "이사야",
+      "target": "히스기야",
+      "ref": "이사야 38:1–8, 21–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-39-merodach-hezekiah",
+      "chapter": "isa.39",
+      "speaker": "므로닥발라단",
+      "target": "히스기야",
+      "ref": "이사야 39:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-39-isaiah-hezekiah",
+      "chapter": "isa.39",
+      "speaker": "이사야",
+      "target": "히스기야",
+      "ref": "이사야 39:3–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-36-rabshakeh-hezekiah",
+      "chapter": "isa.36",
+      "speaker": "랍사게",
+      "target": "히스기야",
+      "ref": "이사야 36:4–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-1-officials-orphans",
+      "chapter": "isa.1",
+      "speaker": "예루살렘의 관원들",
+      "target": "고아와 과부",
+      "ref": "이사야 1:17, 23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-1-amoz-isaiah",
+      "chapter": "isa.1",
+      "speaker": "아모츠",
+      "target": "이사야",
+      "ref": "이사야 1:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-2-isaiah-jacob",
+      "chapter": "isa.2",
+      "speaker": "이사야",
+      "target": "야곱 족속",
+      "ref": "이사야 2:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-3-leaders-poor",
+      "chapter": "isa.3",
+      "speaker": "장로와 고관들",
+      "target": "가난한 자",
+      "ref": "이사야 3:13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-6-seraph-isaiah",
+      "chapter": "isa.6",
+      "speaker": "스랍",
+      "target": "이사야",
+      "ref": "이사야 6:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-6-isaiah-judah",
+      "chapter": "isa.6",
+      "speaker": "이사야",
+      "target": "유다 백성",
+      "ref": "이사야 6:8–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-7-peka-rezin",
+      "chapter": "isa.7",
+      "speaker": "베가",
+      "target": "르신",
+      "ref": "이사야 7:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-7-isaiah-ahaz",
+      "chapter": "isa.7",
+      "speaker": "이사야",
+      "target": "아하스",
+      "ref": "이사야 7:3–9, 10–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-7-shearjashub-isaiah",
+      "chapter": "isa.7",
+      "speaker": "스알야숩",
+      "target": "이사야",
+      "ref": "이사야 7:3–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-8-wife-isaiah",
+      "chapter": "isa.8",
+      "speaker": "이사야의 아내",
+      "target": "이사야",
+      "ref": "이사야 8:1–4, 18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-8-assyria-judah",
+      "chapter": "isa.8",
+      "speaker": "앗수르 왕",
+      "target": "유다 백성",
+      "ref": "이사야 8:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-9-oppressor-naphtali",
+      "chapter": "isa.9",
+      "speaker": "압제자",
+      "target": "스불론과 납달리",
+      "ref": "이사야 9:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-10-judges-zion",
+      "chapter": "isa.10",
+      "speaker": "불의한 재판관",
+      "target": "시온 백성",
+      "ref": "이사야 10:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-1-satan-job",
+      "chapter": "job.1",
+      "speaker": "사탄",
+      "target": "욥",
+      "ref": "욥기 1:9–11, 20–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-1-job-children",
+      "chapter": "job.1",
+      "speaker": "욥",
+      "target": "욥의 자녀들",
+      "ref": "욥기 1:4–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-1-sabeans-job",
+      "chapter": "job.1",
+      "speaker": "스바 사람",
+      "target": "욥",
+      "ref": "욥기 1:14–15, 20–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-2-bildad-eliphaz",
+      "chapter": "job.2",
+      "speaker": "빌닷",
+      "target": "엘리바스",
+      "ref": "욥기 2:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-2-zophar-eliphaz",
+      "chapter": "job.2",
+      "speaker": "소발",
+      "target": "엘리바스",
+      "ref": "욥기 2:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-19-wife-job",
+      "chapter": "job.19",
+      "speaker": "욥의 아내",
+      "target": "욥",
+      "ref": "욥기 2:9–10, 19:17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-19-redeemer-job",
+      "chapter": "job.19",
+      "speaker": "대속자",
+      "target": "욥",
+      "ref": "욥기 19:25–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-19-relatives-job",
+      "chapter": "job.19",
+      "speaker": "형제와 친척",
+      "target": "욥",
+      "ref": "욥기 19:13–14, 19–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-24-wicked-poor",
+      "chapter": "job.24",
+      "speaker": "악인",
+      "target": "가난한 자들",
+      "ref": "욥기 24:2–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-29-job-poor",
+      "chapter": "job.29",
+      "speaker": "욥",
+      "target": "가난한 자와 고아",
+      "ref": "욥기 29:12–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-29-gate-elders",
+      "chapter": "job.29",
+      "speaker": "성문의 사람들",
+      "target": "욥",
+      "ref": "욥기 29:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-32-elihu-father",
+      "chapter": "job.32",
+      "speaker": "엘리후",
+      "target": "바라겔",
+      "ref": "욥기 32:2, 6–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-33-mediator-job",
+      "chapter": "job.33",
+      "speaker": "중보자",
+      "target": "욥",
+      "ref": "욥기 33:23–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-42-jobs-daughters-2",
+      "chapter": "job.42",
+      "speaker": "긋시아",
+      "target": "욥",
+      "ref": "욥기 42:14–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-42-jobs-daughters-3",
+      "chapter": "job.42",
+      "speaker": "게렌합북",
+      "target": "욥",
+      "ref": "욥기 42:14–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-1-servant-report",
+      "chapter": "job.1",
+      "speaker": "살아남은 종들",
+      "target": "욥",
+      "ref": "욥기 1:14–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-2-eliphaz-comfort",
+      "chapter": "job.2",
+      "speaker": "엘리바스",
+      "target": "욥",
+      "ref": "욥기 2:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-4-spirit-eliphaz",
+      "chapter": "job.4",
+      "speaker": "영",
+      "target": "엘리바스",
+      "ref": "욥기 4:12–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-42-prayer-friend",
+      "chapter": "job.42",
+      "speaker": "욥",
+      "target": "엘리바스",
+      "ref": "욥기 42:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-42-family-comfort",
+      "chapter": "job.42",
+      "speaker": "형제와 자매들",
+      "target": "욥",
+      "ref": "욥기 42:11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-42-jobs-daughters",
+      "chapter": "job.42",
+      "speaker": "여미마",
+      "target": "욥",
+      "ref": "욥기 42:14–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-2-wife-job",
+      "chapter": "job.2",
+      "speaker": "욥의 아내",
+      "target": "욥",
+      "ref": "욥기 2:9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-4-eliphaz-job",
+      "chapter": "job.4",
+      "speaker": "엘리바스",
+      "target": "욥",
+      "ref": "욥기 4:2–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-5-eliphaz-job",
+      "chapter": "job.5",
+      "speaker": "엘리바스",
+      "target": "욥",
+      "ref": "욥기 5:8, 17–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-6-job-eliphaz",
+      "chapter": "job.6",
+      "speaker": "욥",
+      "target": "엘리바스",
+      "ref": "욥기 6:14–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-8-bildad-job",
+      "chapter": "job.8",
+      "speaker": "빌닷",
+      "target": "욥",
+      "ref": "욥기 8:2–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-9-job-bildad",
+      "chapter": "job.9",
+      "speaker": "욥",
+      "target": "빌닷",
+      "ref": "욥기 9:1–4, 14–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-11-zophar-job",
+      "chapter": "job.11",
+      "speaker": "소발",
+      "target": "욥",
+      "ref": "욥기 11:2–6, 13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-12-job-friends",
+      "chapter": "job.12",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 12:2–3, 13–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-13-job-friends",
+      "chapter": "job.13",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 13:4–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-15-eliphaz-job",
+      "chapter": "job.15",
+      "speaker": "엘리바스",
+      "target": "욥",
+      "ref": "욥기 15:2–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-16-job-friends",
+      "chapter": "job.16",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 16:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-17-job-friends",
+      "chapter": "job.17",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 17:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-18-bildad-job",
+      "chapter": "job.18",
+      "speaker": "빌닷",
+      "target": "욥",
+      "ref": "욥기 18:2–5, 21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-19-job-friends",
+      "chapter": "job.19",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 19:21–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-20-zophar-job",
+      "chapter": "job.20",
+      "speaker": "소발",
+      "target": "욥",
+      "ref": "욥기 20:2–5, 29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-21-job-friends",
+      "chapter": "job.21",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 21:2–7, 34",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-22-eliphaz-job",
+      "chapter": "job.22",
+      "speaker": "엘리바스",
+      "target": "욥",
+      "ref": "욥기 22:2–5, 9–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-25-bildad-job",
+      "chapter": "job.25",
+      "speaker": "빌닷",
+      "target": "욥",
+      "ref": "욥기 25:2–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-26-job-bildad",
+      "chapter": "job.26",
+      "speaker": "욥",
+      "target": "빌닷",
+      "ref": "욥기 26:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-27-job-friends",
+      "chapter": "job.27",
+      "speaker": "욥",
+      "target": "3 친구",
+      "ref": "욥기 27:2–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-32-elihu-job",
+      "chapter": "job.32",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 32:6–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-32-elihu-friends",
+      "chapter": "job.32",
+      "speaker": "엘리후",
+      "target": "3 친구",
+      "ref": "욥기 32:3–5, 11–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-33-elihu-job",
+      "chapter": "job.33",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 33:1–12, 29–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-34-elihu-job",
+      "chapter": "job.34",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 34:2–12, 35–37",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-34-elihu-wise",
+      "chapter": "job.34",
+      "speaker": "엘리후",
+      "target": "지혜 있는 자들",
+      "ref": "욥기 34:2–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-35-elihu-job",
+      "chapter": "job.35",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 35:2–8, 14–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-36-elihu-job",
+      "chapter": "job.36",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 36:1–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-37-elihu-job",
+      "chapter": "job.37",
+      "speaker": "엘리후",
+      "target": "욥",
+      "ref": "욥기 37:14–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-30-youth-job",
+      "chapter": "job.30",
+      "speaker": "조롱하는 젊은이들",
+      "target": "욥",
+      "ref": "욥기 30:1, 9–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-31-job-servants",
+      "chapter": "job.31",
+      "speaker": "욥",
+      "target": "종들",
+      "ref": "욥기 31:13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-job-31-job-poor",
+      "chapter": "job.31",
+      "speaker": "욥",
+      "target": "가난한 자와 과부",
+      "ref": "욥기 31:16–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-1",
+      "chapter": "1ki.21",
+      "speaker": "이세벨",
+      "target": "아합",
+      "ref": "열왕기상 21:7–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-2",
+      "chapter": "1ki.21",
+      "speaker": "아합",
+      "target": "이세벨",
+      "ref": "열왕기상 21:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-3",
+      "chapter": "1ki.21",
+      "speaker": "이세벨",
+      "target": "나봇의 성읍 장로들",
+      "ref": "열왕기상 21:7–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-5",
+      "chapter": "1ki.21",
+      "speaker": "아합",
+      "target": "나봇",
+      "ref": "열왕기상 21:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-6",
+      "chapter": "1ki.21",
+      "speaker": "나봇",
+      "target": "아합",
+      "ref": "열왕기상 21:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-7",
+      "chapter": "1ki.21",
+      "speaker": "엘리야",
+      "target": "아합",
+      "ref": "열왕기상 21:17–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-8",
+      "chapter": "1ki.21",
+      "speaker": "아합",
+      "target": "엘리야",
+      "ref": "열왕기상 21:20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-9",
+      "chapter": "1ki.19",
+      "speaker": "이세벨",
+      "target": "엘리야",
+      "ref": "열왕기상 19:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-11",
+      "chapter": "1ki.19",
+      "speaker": "아합",
+      "target": "이세벨",
+      "ref": "열왕기상 19:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-14",
+      "chapter": "1ki.19",
+      "speaker": "엘리사",
+      "target": "엘리야",
+      "ref": "열왕기상 19:19–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-15",
+      "chapter": "1ki.19",
+      "speaker": "엘리야",
+      "target": "엘리사",
+      "ref": "열왕기상 19:19–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-16",
+      "chapter": "2ki.2",
+      "speaker": "엘리사",
+      "target": "엘리야",
+      "ref": "열왕기하 2:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-17",
+      "chapter": "1ki.20",
+      "speaker": "벤하닷",
+      "target": "아합",
+      "ref": "열왕기상 20:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-18",
+      "chapter": "1ki.20",
+      "speaker": "아합",
+      "target": "벤하닷",
+      "ref": "열왕기상 20:7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-19",
+      "chapter": "1ki.22",
+      "speaker": "여호사밧",
+      "target": "아합",
+      "ref": "열왕기상 22:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-20",
+      "chapter": "1ki.22",
+      "speaker": "아합",
+      "target": "여호사밧",
+      "ref": "열왕기상 22:7–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-21",
+      "chapter": "1ki.22",
+      "speaker": "미가야",
+      "target": "아합",
+      "ref": "열왕기상 22:14–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-22",
+      "chapter": "1ki.22",
+      "speaker": "아합",
+      "target": "미가야",
+      "ref": "열왕기상 22:16–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-23",
+      "chapter": "2ki.1",
+      "speaker": "엘리야",
+      "target": "아하시야(아합의 아들)",
+      "ref": "열왕기하 1:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-24",
+      "chapter": "rut.2",
+      "speaker": "룻",
+      "target": "보아스",
+      "ref": "룻기 2:8–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-25",
+      "chapter": "rut.2",
+      "speaker": "보아스",
+      "target": "룻",
+      "ref": "룻기 2:8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-26",
+      "chapter": "rut.2",
+      "speaker": "룻",
+      "target": "나오미",
+      "ref": "룻기 2:17–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-27",
+      "chapter": "rut.2",
+      "speaker": "나오미",
+      "target": "룻",
+      "ref": "룻기 2:19–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-28",
+      "chapter": "rut.2",
+      "speaker": "보아스",
+      "target": "일꾼",
+      "ref": "룻기 2:4, 15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-29",
+      "chapter": "rut.2",
+      "speaker": "일꾼",
+      "target": "보아스",
+      "ref": "룻기 2:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-30",
+      "chapter": "rut.1",
+      "speaker": "룻",
+      "target": "나오미",
+      "ref": "룻기 1:16–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-31",
+      "chapter": "exo.4",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "출애굽기 4:14–16, 27–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-32",
+      "chapter": "exo.4",
+      "speaker": "아론",
+      "target": "모세",
+      "ref": "출애굽기 4:27–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-33",
+      "chapter": "deu.31",
+      "speaker": "모세",
+      "target": "여호수아",
+      "ref": "신명기 31:7–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-34",
+      "chapter": "jos.14",
+      "speaker": "여호수아",
+      "target": "갈렙",
+      "ref": "여호수아 14:6–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-35",
+      "chapter": "jos.14",
+      "speaker": "갈렙",
+      "target": "여호수아",
+      "ref": "여호수아 14:6–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-36",
+      "chapter": "1sa.18",
+      "speaker": "다윗",
+      "target": "요나단",
+      "ref": "사무엘상 18:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-37",
+      "chapter": "1sa.18",
+      "speaker": "요나단",
+      "target": "다윗",
+      "ref": "사무엘상 18:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-38",
+      "chapter": "1sa.15",
+      "speaker": "사무엘",
+      "target": "사울",
+      "ref": "사무엘상 15:17–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-39",
+      "chapter": "1sa.15",
+      "speaker": "사울",
+      "target": "사무엘",
+      "ref": "사무엘상 15:20–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-40",
+      "chapter": "2sa.12",
+      "speaker": "나단",
+      "target": "다윗",
+      "ref": "사무엘하 12:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-41",
+      "chapter": "est.4",
+      "speaker": "에스더",
+      "target": "모르드개",
+      "ref": "에스더 4:10–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-42",
+      "chapter": "est.4",
+      "speaker": "모르드개",
+      "target": "에스더",
+      "ref": "에스더 4:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-43",
+      "chapter": "act.15",
+      "speaker": "바울",
+      "target": "바나바",
+      "ref": "사도행전 15:36–40",
+      "status": "pending"
+    },
+    {
+      "id": "pair-44",
+      "chapter": "act.15",
+      "speaker": "바나바",
+      "target": "마가",
+      "ref": "사도행전 15:37–39",
+      "status": "pending"
+    },
+    {
+      "id": "pair-45",
+      "chapter": "act.16",
+      "speaker": "바울",
+      "target": "실라",
+      "ref": "사도행전 16:22–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-46",
+      "chapter": "act.16",
+      "speaker": "실라",
+      "target": "바울",
+      "ref": "사도행전 16:22–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-47",
+      "chapter": "1ti.4",
+      "speaker": "바울",
+      "target": "디모데",
+      "ref": "디모데전서 4:12–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-48",
+      "chapter": "act.18",
+      "speaker": "브리스길라",
+      "target": "아굴라",
+      "ref": "사도행전 18:24–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-49",
+      "chapter": "act.18",
+      "speaker": "아굴라",
+      "target": "브리스길라",
+      "ref": "사도행전 18:24–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-50",
+      "chapter": "gen.24",
+      "speaker": "리브가",
+      "target": "이삭",
+      "ref": "창세기 24:61–67",
+      "status": "pending"
+    },
+    {
+      "id": "pair-51",
+      "chapter": "gen.39",
+      "speaker": "보디발",
+      "target": "요셉",
+      "ref": "창세기 39:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-52",
+      "chapter": "1sa.1",
+      "speaker": "엘리",
+      "target": "한나",
+      "ref": "사무엘상 1:12–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-53",
+      "chapter": "1sa.1",
+      "speaker": "한나",
+      "target": "엘리",
+      "ref": "사무엘상 1:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-1",
+      "chapter": "gen.13",
+      "speaker": "아브람",
+      "target": "롯",
+      "ref": "창세기 13:8–9",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-2",
+      "chapter": "gen.13",
+      "speaker": "롯",
+      "target": "아브람",
+      "ref": "창세기 13:10–11",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-3",
+      "chapter": "2sa.12",
+      "speaker": "다윗",
+      "target": "나단",
+      "ref": "사무엘하 12:7–13",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-4",
+      "chapter": "2ki.2",
+      "speaker": "엘리야",
+      "target": "엘리사",
+      "ref": "열왕기하 2:6–10",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-5",
+      "chapter": "luk.10",
+      "speaker": "마르다",
+      "target": "예수",
+      "ref": "누가복음 10:40–42",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-6",
+      "chapter": "luk.10",
+      "speaker": "예수",
+      "target": "마르다",
+      "ref": "누가복음 10:41–42",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-7",
+      "chapter": "jhn.11",
+      "speaker": "마르다",
+      "target": "예수",
+      "ref": "요한복음 11:21–27",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-8",
+      "chapter": "jhn.11",
+      "speaker": "예수",
+      "target": "마르다",
+      "ref": "요한복음 11:25–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-62",
+      "chapter": "gen.22",
+      "speaker": "이삭",
+      "target": "아브라함",
+      "ref": "창세기 22:7–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-78",
+      "chapter": "gen.14",
+      "speaker": "소돔 왕",
+      "target": "아브람",
+      "ref": "창세기 14:21–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-79",
+      "chapter": "gen.20",
+      "speaker": "아비멜렉",
+      "target": "아브라함",
+      "ref": "창세기 20:9–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-80",
+      "chapter": "gen.24",
+      "speaker": "아브라함의 종",
+      "target": "리브가",
+      "ref": "창세기 24:17–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-81",
+      "chapter": "gen.38",
+      "speaker": "유다",
+      "target": "다말",
+      "ref": "창세기 38:24–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-82",
+      "chapter": "gen.4",
+      "speaker": "가인",
+      "target": "아벨",
+      "ref": "창세기 4:8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-83",
+      "chapter": "gen.12",
+      "speaker": "아브람",
+      "target": "사래",
+      "ref": "창세기 12:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-84",
+      "chapter": "gen.16",
+      "speaker": "사래",
+      "target": "아브람",
+      "ref": "창세기 16:2–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-85",
+      "chapter": "gen.21",
+      "speaker": "사라",
+      "target": "아브라함",
+      "ref": "창세기 21:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-86",
+      "chapter": "gen.27",
+      "speaker": "이삭",
+      "target": "에서",
+      "ref": "창세기 27:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-87",
+      "chapter": "gen.30",
+      "speaker": "라헬",
+      "target": "레아",
+      "ref": "창세기 30:14–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-88",
+      "chapter": "gen.39",
+      "speaker": "보디발의 아내",
+      "target": "요셉",
+      "ref": "창세기 39:7–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-89",
+      "chapter": "gen.48",
+      "speaker": "요셉",
+      "target": "야곱",
+      "ref": "창세기 48:17–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-63",
+      "chapter": "gen.25",
+      "speaker": "에서",
+      "target": "야곱",
+      "ref": "창세기 25:29–34",
+      "status": "pending"
+    },
+    {
+      "id": "pair-64",
+      "chapter": "gen.27",
+      "speaker": "리브가",
+      "target": "야곱",
+      "ref": "창세기 27:6–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-65",
+      "chapter": "gen.28",
+      "speaker": "이삭",
+      "target": "야곱",
+      "ref": "창세기 28:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-66",
+      "chapter": "gen.29",
+      "speaker": "야곱",
+      "target": "라반",
+      "ref": "창세기 29:15–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-67",
+      "chapter": "gen.31",
+      "speaker": "야곱",
+      "target": "라반",
+      "ref": "창세기 31:43–50",
+      "status": "pending"
+    },
+    {
+      "id": "pair-68",
+      "chapter": "gen.33",
+      "speaker": "야곱",
+      "target": "에서",
+      "ref": "창세기 33:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-69",
+      "chapter": "gen.37",
+      "speaker": "유다",
+      "target": "요셉",
+      "ref": "창세기 37:26–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-70",
+      "chapter": "gen.40",
+      "speaker": "요셉",
+      "target": "술 맡은 관원장",
+      "ref": "창세기 40:8–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-71",
+      "chapter": "gen.41",
+      "speaker": "바로",
+      "target": "요셉",
+      "ref": "창세기 41:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-72",
+      "chapter": "gen.43",
+      "speaker": "요셉",
+      "target": "베냐민",
+      "ref": "창세기 43:29–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-73",
+      "chapter": "gen.44",
+      "speaker": "유다",
+      "target": "요셉",
+      "ref": "창세기 44:18–34",
+      "status": "pending"
+    },
+    {
+      "id": "pair-74",
+      "chapter": "gen.45",
+      "speaker": "요셉",
+      "target": "유다",
+      "ref": "창세기 45:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-75",
+      "chapter": "gen.46",
+      "speaker": "요셉",
+      "target": "야곱",
+      "ref": "창세기 46:28–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-76",
+      "chapter": "gen.47",
+      "speaker": "바로",
+      "target": "야곱",
+      "ref": "창세기 47:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-77",
+      "chapter": "gen.50",
+      "speaker": "요셉",
+      "target": "형들",
+      "ref": "창세기 50:15–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-90",
+      "chapter": "gen.23",
+      "speaker": "아브라함",
+      "target": "에브론",
+      "ref": "창세기 23:4–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-91",
+      "chapter": "gen.26",
+      "speaker": "아비멜렉",
+      "target": "이삭",
+      "ref": "창세기 26:26–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-92",
+      "chapter": "gen.43",
+      "speaker": "유다",
+      "target": "야곱",
+      "ref": "창세기 43:8–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-93",
+      "chapter": "gen.34",
+      "speaker": "야곱",
+      "target": "시므온",
+      "ref": "창세기 34:30–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-94",
+      "chapter": "gen.34",
+      "speaker": "야곱",
+      "target": "레위",
+      "ref": "창세기 34:30–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-95",
+      "chapter": "gen.19",
+      "speaker": "롯",
+      "target": "2 천사",
+      "ref": "창세기 19:15–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-96",
+      "chapter": "exo.5",
+      "speaker": "모세",
+      "target": "바로",
+      "ref": "출애굽기 5:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-97",
+      "chapter": "exo.9",
+      "speaker": "바로",
+      "target": "모세",
+      "ref": "출애굽기 9:27–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-98",
+      "chapter": "exo.10",
+      "speaker": "바로",
+      "target": "모세",
+      "ref": "출애굽기 10:8–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-99",
+      "chapter": "exo.14",
+      "speaker": "이스라엘 자손",
+      "target": "모세",
+      "ref": "출애굽기 14:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-100",
+      "chapter": "exo.32",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "출애굽기 32:21–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-101",
+      "chapter": "exo.1",
+      "speaker": "바로",
+      "target": "십브라",
+      "ref": "출애굽기 1:18–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-102",
+      "chapter": "exo.1",
+      "speaker": "바로",
+      "target": "부아",
+      "ref": "출애굽기 1:18–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-103",
+      "chapter": "exo.16",
+      "speaker": "이스라엘 자손",
+      "target": "모세",
+      "ref": "출애굽기 16:2–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-104",
+      "chapter": "exo.18",
+      "speaker": "이드로",
+      "target": "모세",
+      "ref": "출애굽기 18:17–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-105",
+      "chapter": "exo.19",
+      "speaker": "모세",
+      "target": "이스라엘 자손",
+      "ref": "출애굽기 19:3–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-106",
+      "chapter": "exo.20",
+      "speaker": "이스라엘 자손",
+      "target": "모세",
+      "ref": "출애굽기 20:18–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-107",
+      "chapter": "exo.24",
+      "speaker": "모세",
+      "target": "이스라엘 자손",
+      "ref": "출애굽기 24:3–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-108",
+      "chapter": "exo.2",
+      "speaker": "미리암",
+      "target": "바로의 딸",
+      "ref": "출애굽기 2:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-109",
+      "chapter": "exo.8",
+      "speaker": "모세",
+      "target": "바로",
+      "ref": "출애굽기 8:8–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-110",
+      "chapter": "lev.10",
+      "speaker": "모세",
+      "target": "아론",
+      "ref": "레위기 10:16–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-111",
+      "chapter": "num.11",
+      "speaker": "여호수아",
+      "target": "모세",
+      "ref": "민수기 11:26–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-112",
+      "chapter": "num.13",
+      "speaker": "갈렙",
+      "target": "다른 정탐꾼들",
+      "ref": "민수기 13:30–33",
+      "status": "pending"
+    },
+    {
+      "id": "pair-113",
+      "chapter": "num.16",
+      "speaker": "고라",
+      "target": "모세",
+      "ref": "민수기 16:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-114",
+      "chapter": "num.22",
+      "speaker": "발람의 나귀",
+      "target": "발람",
+      "ref": "민수기 22:28–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-115",
+      "chapter": "num.32",
+      "speaker": "갓 자손",
+      "target": "모세",
+      "ref": "민수기 32:1–32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-116",
+      "chapter": "num.36",
+      "speaker": "길르앗 족장들",
+      "target": "모세",
+      "ref": "민수기 36:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-117",
+      "chapter": "num.14",
+      "speaker": "이스라엘 자손",
+      "target": "여호수아",
+      "ref": "민수기 14:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-118",
+      "chapter": "num.16",
+      "speaker": "다단",
+      "target": "모세",
+      "ref": "민수기 16:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-119",
+      "chapter": "num.20",
+      "speaker": "모세",
+      "target": "에돔 왕",
+      "ref": "민수기 20:14–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-120",
+      "chapter": "num.21",
+      "speaker": "이스라엘 자손",
+      "target": "모세",
+      "ref": "민수기 21:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-121",
+      "chapter": "num.22",
+      "speaker": "발락",
+      "target": "발람",
+      "ref": "민수기 22:15–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-122",
+      "chapter": "num.23",
+      "speaker": "발락",
+      "target": "발람",
+      "ref": "민수기 23:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-123",
+      "chapter": "num.24",
+      "speaker": "발락",
+      "target": "발람",
+      "ref": "민수기 24:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-124",
+      "chapter": "num.27",
+      "speaker": "말라",
+      "target": "모세",
+      "ref": "민수기 27:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-125",
+      "chapter": "num.32",
+      "speaker": "르우벤 자손",
+      "target": "모세",
+      "ref": "민수기 32:1–32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-126",
+      "chapter": "deu.27",
+      "speaker": "레위 지파",
+      "target": "이스라엘 자손",
+      "ref": "신명기 27:14–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-127",
+      "chapter": "deu.2",
+      "speaker": "모세",
+      "target": "시혼",
+      "ref": "신명기 2:26–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-128",
+      "chapter": "deu.5",
+      "speaker": "이스라엘 자손",
+      "target": "모세",
+      "ref": "신명기 5:22–33",
+      "status": "pending"
+    },
+    {
+      "id": "pair-129",
+      "chapter": "jos.2",
+      "speaker": "라합",
+      "target": "두 정탐꾼",
+      "ref": "여호수아 2:8–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-130",
+      "chapter": "jos.7",
+      "speaker": "여호수아",
+      "target": "아간",
+      "ref": "여호수아 7:19–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-131",
+      "chapter": "jos.9",
+      "speaker": "여호수아",
+      "target": "기브온 사람들",
+      "ref": "여호수아 9:22–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-132",
+      "chapter": "jos.17",
+      "speaker": "요셉 자손",
+      "target": "여호수아",
+      "ref": "여호수아 17:14–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-133",
+      "chapter": "jos.22",
+      "speaker": "비느하스",
+      "target": "르우벤 자손",
+      "ref": "여호수아 22:13–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-134",
+      "chapter": "jos.24",
+      "speaker": "여호수아",
+      "target": "이스라엘 자손",
+      "ref": "여호수아 24:14–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-135",
+      "chapter": "jos.1",
+      "speaker": "여호수아",
+      "target": "르우벤 자손",
+      "ref": "여호수아 1:12–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-136",
+      "chapter": "jos.5",
+      "speaker": "여호수아",
+      "target": "여호와의 군대 장관",
+      "ref": "여호수아 5:13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-137",
+      "chapter": "jdg.1",
+      "speaker": "악사",
+      "target": "갈렙",
+      "ref": "사사기 1:14–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-138",
+      "chapter": "jdg.3",
+      "speaker": "에훗",
+      "target": "에글론",
+      "ref": "사사기 3:15–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-139",
+      "chapter": "jdg.4",
+      "speaker": "드보라",
+      "target": "바락",
+      "ref": "사사기 4:6–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-140",
+      "chapter": "jdg.4",
+      "speaker": "야엘",
+      "target": "시스라",
+      "ref": "사사기 4:17–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-141",
+      "chapter": "jdg.11",
+      "speaker": "입다의 딸",
+      "target": "입다",
+      "ref": "사사기 11:34–36",
+      "status": "pending"
+    },
+    {
+      "id": "pair-142",
+      "chapter": "jdg.12",
+      "speaker": "에브라임 사람들",
+      "target": "입다",
+      "ref": "사사기 12:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-143",
+      "chapter": "jdg.13",
+      "speaker": "마노아의 아내",
+      "target": "마노아",
+      "ref": "사사기 13:6–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-144",
+      "chapter": "jdg.14",
+      "speaker": "삼손",
+      "target": "딤나 여인",
+      "ref": "사사기 14:16–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-145",
+      "chapter": "jdg.15",
+      "speaker": "삼손",
+      "target": "장인",
+      "ref": "사사기 15:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-146",
+      "chapter": "jdg.16",
+      "speaker": "들릴라",
+      "target": "삼손",
+      "ref": "사사기 16:6–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-147",
+      "chapter": "jdg.16",
+      "speaker": "삼손",
+      "target": "블레셋 방백들",
+      "ref": "사사기 16:23–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-148",
+      "chapter": "jdg.17",
+      "speaker": "레위 소년",
+      "target": "미가",
+      "ref": "사사기 17:7–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-149",
+      "chapter": "jdg.18",
+      "speaker": "단 지파",
+      "target": "미가",
+      "ref": "사사기 18:22–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-150",
+      "chapter": "jdg.19",
+      "speaker": "레위인의 장인",
+      "target": "레위인",
+      "ref": "사사기 19:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-151",
+      "chapter": "jdg.19",
+      "speaker": "노인",
+      "target": "레위인",
+      "ref": "사사기 19:16–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-152",
+      "chapter": "jdg.20",
+      "speaker": "레위인",
+      "target": "이스라엘 자손",
+      "ref": "사사기 20:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-153",
+      "chapter": "jdg.20",
+      "speaker": "이스라엘 자손",
+      "target": "베냐민 지파",
+      "ref": "사사기 20:12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-154",
+      "chapter": "rut.3",
+      "speaker": "나오미",
+      "target": "룻",
+      "ref": "룻기 3:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-155",
+      "chapter": "rut.4",
+      "speaker": "보아스",
+      "target": "아무개",
+      "ref": "룻기 4:3–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-156",
+      "chapter": "1sa.1",
+      "speaker": "한나",
+      "target": "엘가나",
+      "ref": "사무엘상 1:21–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-157",
+      "chapter": "1sa.3",
+      "speaker": "사무엘",
+      "target": "엘리",
+      "ref": "사무엘상 3:8–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-158",
+      "chapter": "1sa.14",
+      "speaker": "요나단",
+      "target": "사울",
+      "ref": "사무엘상 14:24–30, 43–45",
+      "status": "pending"
+    },
+    {
+      "id": "pair-159",
+      "chapter": "1sa.17",
+      "speaker": "다윗",
+      "target": "골리앗",
+      "ref": "사무엘상 17:41–47",
+      "status": "pending"
+    },
+    {
+      "id": "pair-160",
+      "chapter": "1sa.20",
+      "speaker": "요나단",
+      "target": "다윗",
+      "ref": "사무엘상 20:35–42",
+      "status": "pending"
+    },
+    {
+      "id": "pair-161",
+      "chapter": "1sa.21",
+      "speaker": "다윗",
+      "target": "아히멜렉",
+      "ref": "사무엘상 21:1–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-162",
+      "chapter": "1sa.24",
+      "speaker": "다윗",
+      "target": "사울",
+      "ref": "사무엘상 24:8–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-163",
+      "chapter": "1sa.25",
+      "speaker": "아비가일",
+      "target": "다윗",
+      "ref": "사무엘상 25:23–35",
+      "status": "pending"
+    },
+    {
+      "id": "pair-164",
+      "chapter": "1sa.22",
+      "speaker": "아비아달",
+      "target": "다윗",
+      "ref": "사무엘상 22:20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-165",
+      "chapter": "2sa.1",
+      "speaker": "다윗",
+      "target": "아말렉 청년",
+      "ref": "사무엘하 1:6–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-166",
+      "chapter": "2sa.2",
+      "speaker": "다윗",
+      "target": "야베스 길르앗 사람들",
+      "ref": "사무엘하 2:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-167",
+      "chapter": "2sa.3",
+      "speaker": "아브넬",
+      "target": "다윗",
+      "ref": "사무엘하 3:17–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-168",
+      "chapter": "2sa.3",
+      "speaker": "요압",
+      "target": "다윗",
+      "ref": "사무엘하 3:22–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-169",
+      "chapter": "2sa.5",
+      "speaker": "이스라엘 지파들",
+      "target": "다윗",
+      "ref": "사무엘하 5:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-170",
+      "chapter": "2sa.7",
+      "speaker": "나단",
+      "target": "다윗",
+      "ref": "사무엘하 7:1–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-171",
+      "chapter": "2sa.9",
+      "speaker": "다윗",
+      "target": "므비보셋",
+      "ref": "사무엘하 9:1–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-172",
+      "chapter": "2sa.11",
+      "speaker": "다윗",
+      "target": "우리아",
+      "ref": "사무엘하 11:6–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-173",
+      "chapter": "2sa.16",
+      "speaker": "압살롬",
+      "target": "후새",
+      "ref": "사무엘하 16:15–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-174",
+      "chapter": "2sa.19",
+      "speaker": "시므이",
+      "target": "다윗",
+      "ref": "사무엘하 19:16–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-175",
+      "chapter": "2sa.19",
+      "speaker": "다윗",
+      "target": "므비보셋",
+      "ref": "사무엘하 19:24–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-176",
+      "chapter": "2sa.19",
+      "speaker": "바르실래",
+      "target": "다윗",
+      "ref": "사무엘하 17:27–29; 19:31–39",
+      "status": "pending"
+    },
+    {
+      "id": "pair-177",
+      "chapter": "2sa.24",
+      "speaker": "다윗",
+      "target": "아라우나",
+      "ref": "사무엘하 24:18–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-178",
+      "chapter": "1ki.1",
+      "speaker": "밧세바",
+      "target": "다윗",
+      "ref": "열왕기상 1:15–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-179",
+      "chapter": "1ki.1",
+      "speaker": "나단",
+      "target": "다윗",
+      "ref": "열왕기상 1:22–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-180",
+      "chapter": "1ki.2",
+      "speaker": "밧세바",
+      "target": "솔로몬",
+      "ref": "열왕기상 2:13–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-181",
+      "chapter": "1ki.3",
+      "speaker": "솔로몬",
+      "target": "2 여인",
+      "ref": "열왕기상 3:16–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-182",
+      "chapter": "1ki.5",
+      "speaker": "솔로몬",
+      "target": "히람",
+      "ref": "열왕기상 5:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-183",
+      "chapter": "1ki.10",
+      "speaker": "스바 여왕",
+      "target": "솔로몬",
+      "ref": "열왕기상 10:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-184",
+      "chapter": "1ki.11",
+      "speaker": "아히야",
+      "target": "여로보암",
+      "ref": "열왕기상 11:29–39",
+      "status": "pending"
+    },
+    {
+      "id": "pair-185",
+      "chapter": "1ki.12",
+      "speaker": "르호보암",
+      "target": "노인들",
+      "ref": "열왕기상 12:6–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-186",
+      "chapter": "1ki.13",
+      "speaker": "하나님의 사람",
+      "target": "늙은 선지자",
+      "ref": "열왕기상 13:11–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-187",
+      "chapter": "1ki.14",
+      "speaker": "아히야",
+      "target": "여로보암의 아내",
+      "ref": "열왕기상 14:1–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-188",
+      "chapter": "1ki.15",
+      "speaker": "아사",
+      "target": "벤하닷",
+      "ref": "열왕기상 15:18–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-189",
+      "chapter": "1ki.16",
+      "speaker": "예후(하나니의 아들)",
+      "target": "바아사",
+      "ref": "열왕기상 16:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-190",
+      "chapter": "1ki.17",
+      "speaker": "엘리야",
+      "target": "사르밧 과부",
+      "ref": "열왕기상 17:8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-191",
+      "chapter": "1ki.18",
+      "speaker": "엘리야",
+      "target": "오바댜",
+      "ref": "열왕기상 18:7–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-192",
+      "chapter": "1ki.18",
+      "speaker": "아합",
+      "target": "엘리야",
+      "ref": "열왕기상 18:17–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-193",
+      "chapter": "2ki.3",
+      "speaker": "여호사밧",
+      "target": "엘리사",
+      "ref": "열왕기하 3:11–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-194",
+      "chapter": "2ki.4",
+      "speaker": "수넴 여인",
+      "target": "엘리사",
+      "ref": "열왕기하 4:25–37",
+      "status": "pending"
+    },
+    {
+      "id": "pair-195",
+      "chapter": "2ki.5",
+      "speaker": "엘리사",
+      "target": "나아만",
+      "ref": "열왕기하 5:9–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-196",
+      "chapter": "2ki.5",
+      "speaker": "나아만의 종들",
+      "target": "나아만",
+      "ref": "열왕기하 5:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-197",
+      "chapter": "2ki.6",
+      "speaker": "엘리사",
+      "target": "엘리사의 사환",
+      "ref": "열왕기하 6:15–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-198",
+      "chapter": "2ki.7",
+      "speaker": "나병 환자 넷",
+      "target": "성읍 문지기",
+      "ref": "열왕기하 7:3–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-199",
+      "chapter": "2ki.8",
+      "speaker": "엘리사",
+      "target": "하사엘",
+      "ref": "열왕기하 8:7–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-200",
+      "chapter": "2ki.9",
+      "speaker": "요람(아합의 아들)",
+      "target": "예후",
+      "ref": "열왕기하 9:17–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-201",
+      "chapter": "2ki.10",
+      "speaker": "예후",
+      "target": "여호나답",
+      "ref": "열왕기하 10:15–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-202",
+      "chapter": "2ki.11",
+      "speaker": "여호야다",
+      "target": "요아스",
+      "ref": "열왕기하 11:12–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-203",
+      "chapter": "2ki.13",
+      "speaker": "엘리사",
+      "target": "요아스(여호아하스의 아들)",
+      "ref": "열왕기하 13:14–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-204",
+      "chapter": "2ki.14",
+      "speaker": "아마샤",
+      "target": "요아스(여호아하스의 아들)",
+      "ref": "열왕기하 14:8–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-205",
+      "chapter": "2ki.18",
+      "speaker": "엘리아김(힐기야의 아들)",
+      "target": "랍사게",
+      "ref": "열왕기하 18:26–37",
+      "status": "pending"
+    },
+    {
+      "id": "pair-206",
+      "chapter": "2ki.19",
+      "speaker": "히스기야",
+      "target": "이사야",
+      "ref": "열왕기하 19:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-207",
+      "chapter": "2ki.20",
+      "speaker": "히스기야",
+      "target": "바벨론 사신들",
+      "ref": "열왕기하 20:12–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-208",
+      "chapter": "2ki.22",
+      "speaker": "요시야",
+      "target": "훌다",
+      "ref": "열왕기하 22:14–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-209",
+      "chapter": "2ki.23",
+      "speaker": "바로 느고",
+      "target": "요시야",
+      "ref": "열왕기하 23:29–30; 역대하 35:20–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-210",
+      "chapter": "1ch.11",
+      "speaker": "이스라엘 장로들",
+      "target": "다윗",
+      "ref": "역대상 11:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-211",
+      "chapter": "1ch.12",
+      "speaker": "아마새",
+      "target": "다윗",
+      "ref": "역대상 12:16–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-212",
+      "chapter": "1ch.15",
+      "speaker": "다윗",
+      "target": "사독",
+      "ref": "역대상 15:11–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-213",
+      "chapter": "1ch.17",
+      "speaker": "다윗",
+      "target": "나단",
+      "ref": "역대상 17:1–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-214",
+      "chapter": "1ch.19",
+      "speaker": "다윗",
+      "target": "다윗의 사절들",
+      "ref": "역대상 19:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-215",
+      "chapter": "1ch.19",
+      "speaker": "암몬 방백들",
+      "target": "하눈",
+      "ref": "역대상 19:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-216",
+      "chapter": "1ch.19",
+      "speaker": "요압",
+      "target": "아비새",
+      "ref": "역대상 19:10–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-217",
+      "chapter": "1ch.21",
+      "speaker": "갓",
+      "target": "다윗",
+      "ref": "역대상 21:9–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-218",
+      "chapter": "1ch.21",
+      "speaker": "다윗",
+      "target": "오르난",
+      "ref": "역대상 21:18–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-219",
+      "chapter": "1ch.22",
+      "speaker": "다윗",
+      "target": "솔로몬",
+      "ref": "역대상 22:6–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-220",
+      "chapter": "1ch.28",
+      "speaker": "다윗",
+      "target": "이스라엘 지도자들",
+      "ref": "역대상 28:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-221",
+      "chapter": "1ch.29",
+      "speaker": "이스라엘 지도자들",
+      "target": "다윗",
+      "ref": "역대상 29:6–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-222",
+      "chapter": "2ch.2",
+      "speaker": "솔로몬",
+      "target": "후람",
+      "ref": "역대하 2:3–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-223",
+      "chapter": "2ch.9",
+      "speaker": "스바 여왕",
+      "target": "솔로몬",
+      "ref": "역대하 9:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-224",
+      "chapter": "2ch.10",
+      "speaker": "르호보암",
+      "target": "노인들",
+      "ref": "역대하 10:3–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-225",
+      "chapter": "2ch.10",
+      "speaker": "르호보암",
+      "target": "젊은이들",
+      "ref": "역대하 10:8–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-226",
+      "chapter": "2ch.11",
+      "speaker": "스마야",
+      "target": "르호보암",
+      "ref": "역대하 11:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-227",
+      "chapter": "2ch.13",
+      "speaker": "아비야",
+      "target": "여로보암",
+      "ref": "역대하 13:4–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-228",
+      "chapter": "2ch.15",
+      "speaker": "아사랴(오뎃의 아들)",
+      "target": "아사",
+      "ref": "역대하 15:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-229",
+      "chapter": "2ch.18",
+      "speaker": "여호사밧",
+      "target": "아합",
+      "ref": "역대하 18:3–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-230",
+      "chapter": "2ch.18",
+      "speaker": "미가야",
+      "target": "아합",
+      "ref": "역대하 18:12–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-231",
+      "chapter": "2ch.19",
+      "speaker": "여호사밧",
+      "target": "재판관들",
+      "ref": "역대하 19:5–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-232",
+      "chapter": "2ch.20",
+      "speaker": "야하시엘",
+      "target": "여호사밧",
+      "ref": "역대하 20:14–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-233",
+      "chapter": "2ch.21",
+      "speaker": "엘리야",
+      "target": "여호람(여호사밧의 아들)",
+      "ref": "역대하 21:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-234",
+      "chapter": "2ch.23",
+      "speaker": "여호야다",
+      "target": "요아스",
+      "ref": "역대하 23:1–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-235",
+      "chapter": "2ch.24",
+      "speaker": "스가랴(여호야다의 아들)",
+      "target": "요아스",
+      "ref": "역대하 24:20–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-236",
+      "chapter": "2ch.25",
+      "speaker": "아마샤",
+      "target": "요아스(여호아하스의 아들)",
+      "ref": "역대하 25:17–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-237",
+      "chapter": "2ch.28",
+      "speaker": "오뎃",
+      "target": "에브라임 지도자들",
+      "ref": "역대하 28:9–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-238",
+      "chapter": "2ch.29",
+      "speaker": "히스기야",
+      "target": "레위인들",
+      "ref": "역대하 29:4–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-239",
+      "chapter": "2ch.30",
+      "speaker": "히스기야",
+      "target": "이스라엘과 유다 백성",
+      "ref": "역대하 30:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-240",
+      "chapter": "2ch.32",
+      "speaker": "산헤립의 신하들",
+      "target": "히스기야",
+      "ref": "역대하 32:9–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-241",
+      "chapter": "2ch.34",
+      "speaker": "훌다",
+      "target": "요시야",
+      "ref": "역대하 34:22–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-242",
+      "chapter": "2ch.35",
+      "speaker": "느고",
+      "target": "요시야",
+      "ref": "역대하 35:20–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-243",
+      "chapter": "ezr.1",
+      "speaker": "고레스",
+      "target": "유다와 베냐민 족장들",
+      "ref": "에스라 1:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-244",
+      "chapter": "ezr.1",
+      "speaker": "미드르닷",
+      "target": "세스바살",
+      "ref": "에스라 1:7–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-245",
+      "chapter": "ezr.3",
+      "speaker": "예수아",
+      "target": "스룹바벨",
+      "ref": "에스라 3:1–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-246",
+      "chapter": "ezr.4",
+      "speaker": "대적들",
+      "target": "스룹바벨",
+      "ref": "에스라 4:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-247",
+      "chapter": "ezr.5",
+      "speaker": "학개",
+      "target": "스룹바벨",
+      "ref": "에스라 5:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-248",
+      "chapter": "ezr.5",
+      "speaker": "닷드내",
+      "target": "유다 장로들",
+      "ref": "에스라 5:3–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-249",
+      "chapter": "ezr.6",
+      "speaker": "다리오",
+      "target": "닷드내",
+      "ref": "에스라 6:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-250",
+      "chapter": "ezr.7",
+      "speaker": "에스라",
+      "target": "아닥사스다",
+      "ref": "에스라 7:11–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-251",
+      "chapter": "ezr.8",
+      "speaker": "에스라",
+      "target": "잇도",
+      "ref": "에스라 8:15–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-252",
+      "chapter": "ezr.10",
+      "speaker": "스가냐",
+      "target": "에스라",
+      "ref": "에스라 10:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-254",
+      "chapter": "neh.1",
+      "speaker": "하나니",
+      "target": "느헤미야",
+      "ref": "느헤미야 1:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-255",
+      "chapter": "neh.2",
+      "speaker": "느헤미야",
+      "target": "아닥사스다",
+      "ref": "느헤미야 2:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-256",
+      "chapter": "neh.2",
+      "speaker": "산발랏",
+      "target": "느헤미야",
+      "ref": "느헤미야 2:10, 19–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-257",
+      "chapter": "neh.4",
+      "speaker": "느헤미야",
+      "target": "유다 백성",
+      "ref": "느헤미야 4:10–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-258",
+      "chapter": "neh.5",
+      "speaker": "가난한 백성",
+      "target": "느헤미야",
+      "ref": "느헤미야 5:1–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-259",
+      "chapter": "neh.5",
+      "speaker": "느헤미야",
+      "target": "귀족과 민장들",
+      "ref": "느헤미야 5:6–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-260",
+      "chapter": "neh.6",
+      "speaker": "스마야(들라야의 아들)",
+      "target": "느헤미야",
+      "ref": "느헤미야 6:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-261",
+      "chapter": "neh.8",
+      "speaker": "에스라",
+      "target": "모든 백성",
+      "ref": "느헤미야 8:1–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-262",
+      "chapter": "neh.8",
+      "speaker": "느헤미야",
+      "target": "에스라",
+      "ref": "느헤미야 8:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-263",
+      "chapter": "neh.9",
+      "speaker": "레위인들",
+      "target": "이스라엘 자손",
+      "ref": "느헤미야 9:1–38",
+      "status": "pending"
+    },
+    {
+      "id": "pair-264",
+      "chapter": "neh.10",
+      "speaker": "느헤미야",
+      "target": "온 백성",
+      "ref": "느헤미야 10:1–39",
+      "status": "pending"
+    },
+    {
+      "id": "pair-265",
+      "chapter": "neh.13",
+      "speaker": "엘리아십",
+      "target": "도비야",
+      "ref": "느헤미야 13:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-266",
+      "chapter": "neh.13",
+      "speaker": "느헤미야",
+      "target": "도비야",
+      "ref": "느헤미야 13:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-267",
+      "chapter": "neh.13",
+      "speaker": "느헤미야",
+      "target": "민장들",
+      "ref": "느헤미야 13:15–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-268",
+      "chapter": "neh.13",
+      "speaker": "느헤미야",
+      "target": "유다 귀인들",
+      "ref": "느헤미야 13:23–29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-13-medes-babylon",
+      "chapter": "isa.13",
+      "speaker": "메대 사람들",
+      "target": "바벨론",
+      "ref": "이사야 13:17–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-14-babylon-jacob",
+      "chapter": "isa.14",
+      "speaker": "바벨론 왕",
+      "target": "야곱",
+      "ref": "이사야 14:3–6, 12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-15-isaiah-moab",
+      "chapter": "isa.15",
+      "speaker": "이사야",
+      "target": "모압 사람들",
+      "ref": "이사야 15:5–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-16-moab-judah",
+      "chapter": "isa.16",
+      "speaker": "모압 사람들",
+      "target": "유다",
+      "ref": "이사야 16:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-16-isaiah-moab",
+      "chapter": "isa.16",
+      "speaker": "이사야",
+      "target": "모압 사람들",
+      "ref": "이사야 16:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-17-damascus-ephraim",
+      "chapter": "isa.17",
+      "speaker": "다메섹",
+      "target": "에브라임",
+      "ref": "이사야 17:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-18-envoys-cush",
+      "chapter": "isa.18",
+      "speaker": "구스의 사신들",
+      "target": "구스",
+      "ref": "이사야 18:1–2, 7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-18-isaiah-envoys",
+      "chapter": "isa.18",
+      "speaker": "이사야",
+      "target": "구스의 사신들",
+      "ref": "이사야 18:2–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-19-advisers-egypt",
+      "chapter": "isa.19",
+      "speaker": "바로의 모사들",
+      "target": "애굽",
+      "ref": "이사야 19:11–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-19-egypt-assyria",
+      "chapter": "isa.19",
+      "speaker": "애굽",
+      "target": "앗수르",
+      "ref": "이사야 19:23–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-20-tartan-sargon",
+      "chapter": "isa.20",
+      "speaker": "다르단",
+      "target": "사르곤",
+      "ref": "이사야 20:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-20-sargon-egypt",
+      "chapter": "isa.20",
+      "speaker": "사르곤",
+      "target": "애굽과 구스",
+      "ref": "이사야 20:3–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-20-coast-egypt",
+      "chapter": "isa.20",
+      "speaker": "해변 주민들",
+      "target": "애굽과 구스",
+      "ref": "이사야 20:5–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-11-shoot-poor",
+      "chapter": "isa.11",
+      "speaker": "이새의 싹",
+      "target": "가난한 자와 겸손한 자",
+      "ref": "이사야 11:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-11-nations-shoot",
+      "chapter": "isa.11",
+      "speaker": "열방",
+      "target": "이새의 싹",
+      "ref": "이사야 11:10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-21-elam-babylon",
+      "chapter": "isa.21",
+      "speaker": "엘람과 메대",
+      "target": "바벨론",
+      "ref": "이사야 21:2, 9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-21-dumah-watchman",
+      "chapter": "isa.21",
+      "speaker": "세일의 질문자",
+      "target": "파수꾼",
+      "ref": "이사야 21:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-22-eliakim-shebna",
+      "chapter": "isa.22",
+      "speaker": "엘리아김",
+      "target": "셉나",
+      "ref": "이사야 22:15–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-22-eliakim-hilkiah",
+      "chapter": "isa.22",
+      "speaker": "엘리아김",
+      "target": "힐기야",
+      "ref": "이사야 22:20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-23-sidon-tyre",
+      "chapter": "isa.23",
+      "speaker": "시돈 상인",
+      "target": "두로",
+      "ref": "이사야 23:2–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-28-priests-leaders",
+      "chapter": "isa.28",
+      "speaker": "제사장과 선지자",
+      "target": "예루살렘 지도자들",
+      "ref": "이사야 28:7–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-30-sons-pharaoh",
+      "chapter": "isa.30",
+      "speaker": "패역한 자식들",
+      "target": "바로",
+      "ref": "이사야 30:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-31-judah-egypt",
+      "chapter": "isa.31",
+      "speaker": "애굽으로 내려가는 자들",
+      "target": "애굽",
+      "ref": "이사야 31:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-32-rulers-king",
+      "chapter": "isa.32",
+      "speaker": "방백들",
+      "target": "공의로운 왕",
+      "ref": "이사야 32:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-42-servant-nations",
+      "chapter": "isa.42",
+      "speaker": "여호와의 종",
+      "target": "이방",
+      "ref": "이사야 42:1, 6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-42-servant-captives",
+      "chapter": "isa.42",
+      "speaker": "여호와의 종",
+      "target": "맹인과 갇힌 자",
+      "ref": "이사야 42:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-45-cyrus-jacob",
+      "chapter": "isa.45",
+      "speaker": "고레스",
+      "target": "야곱",
+      "ref": "이사야 45:13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-45-nations-jacob",
+      "chapter": "isa.45",
+      "speaker": "애굽과 구스와 스바",
+      "target": "야곱",
+      "ref": "이사야 45:14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-47-babylon-israel",
+      "chapter": "isa.47",
+      "speaker": "처녀 딸 바벨론",
+      "target": "하나님의 백성",
+      "ref": "이사야 47:1, 6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-47-astrologers-babylon",
+      "chapter": "isa.47",
+      "speaker": "술사와 점성가",
+      "target": "처녀 딸 바벨론",
+      "ref": "이사야 47:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-48-chaldeans-jacob",
+      "chapter": "isa.48",
+      "speaker": "갈대아인",
+      "target": "야곱 족속",
+      "ref": "이사야 48:20–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-49-servant-children",
+      "chapter": "isa.49",
+      "speaker": "여호와의 종",
+      "target": "시온의 자녀들",
+      "ref": "이사야 49:5–6, 22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-49-rulers-servant",
+      "chapter": "isa.49",
+      "speaker": "왕들과 고관들",
+      "target": "여호와의 종",
+      "ref": "이사야 49:7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-50-tormentors-servant",
+      "chapter": "isa.50",
+      "speaker": "때리는 자들",
+      "target": "여호와의 종",
+      "ref": "이사야 50:6–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-50-servant-darkness",
+      "chapter": "isa.50",
+      "speaker": "여호와의 종",
+      "target": "흑암 중에 행하는 자",
+      "ref": "이사야 50:10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-51-sarah-abraham",
+      "chapter": "isa.51",
+      "speaker": "사라",
+      "target": "아브라함",
+      "ref": "이사야 51:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-51-persecutors-zion",
+      "chapter": "isa.51",
+      "speaker": "괴롭게 하던 자들",
+      "target": "시온",
+      "ref": "이사야 51:22–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-52-messenger-zion",
+      "chapter": "isa.52",
+      "speaker": "좋은 소식을 전하는 자",
+      "target": "시온",
+      "ref": "이사야 52:7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-52-watchmen-zion",
+      "chapter": "isa.52",
+      "speaker": "파수꾼들",
+      "target": "시온",
+      "ref": "이사야 52:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-53-servant-us",
+      "chapter": "isa.53",
+      "speaker": "여호와의 종",
+      "target": "우리",
+      "ref": "이사야 53:4–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-53-us-servant",
+      "chapter": "isa.53",
+      "speaker": "우리",
+      "target": "여호와의 종",
+      "ref": "이사야 53:3–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-54-children-zion",
+      "chapter": "isa.54",
+      "speaker": "시온의 자녀들",
+      "target": "시온",
+      "ref": "이사야 54:1, 13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-58-judah-workers",
+      "chapter": "isa.58",
+      "speaker": "유다 백성",
+      "target": "일꾼과 압제당하는 자",
+      "ref": "이사야 58:3–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-58-judah-poor",
+      "chapter": "isa.58",
+      "speaker": "유다 백성",
+      "target": "주린 자와 빈민",
+      "ref": "이사야 58:6–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-60-nations-zion",
+      "chapter": "isa.60",
+      "speaker": "나라들과 왕들",
+      "target": "시온",
+      "ref": "이사야 60:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-60-children-zion",
+      "chapter": "isa.60",
+      "speaker": "시온의 아들딸",
+      "target": "시온",
+      "ref": "이사야 60:4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-61-anointed-poor",
+      "chapter": "isa.61",
+      "speaker": "기름 부음받은 이",
+      "target": "가난한 자와 갇힌 자",
+      "ref": "이사야 61:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-61-anointed-mourners",
+      "chapter": "isa.61",
+      "speaker": "기름 부음받은 이",
+      "target": "시온의 슬픈 자",
+      "ref": "이사야 61:2–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-61-foreigners-mourners",
+      "chapter": "isa.61",
+      "speaker": "외인",
+      "target": "시온의 슬픈 자",
+      "ref": "이사야 61:5–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-62-nations-zion",
+      "chapter": "isa.62",
+      "speaker": "열방과 왕들",
+      "target": "시온",
+      "ref": "이사야 62:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-isa-66-survivors-nations",
+      "chapter": "isa.66",
+      "speaker": "살아남은 자",
+      "target": "열방",
+      "ref": "이사야 66:18–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-1-jeremiah-hilkiah",
+      "chapter": "jer.1",
+      "speaker": "예레미야",
+      "target": "힐기야",
+      "ref": "예레미야 1:1, 4–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-1-judah-jeremiah",
+      "chapter": "jer.1",
+      "speaker": "유다 백성",
+      "target": "예레미야",
+      "ref": "예레미야 1:17–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-2-israel-nations",
+      "chapter": "jer.2",
+      "speaker": "이스라엘",
+      "target": "애굽과 앗수르",
+      "ref": "예레미야 2:18, 36–37",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-3-sisters",
+      "chapter": "jer.3",
+      "speaker": "배역한 이스라엘",
+      "target": "반역한 유다",
+      "ref": "예레미야 3:6–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-4-north-judah",
+      "chapter": "jer.4",
+      "speaker": "북방의 사자",
+      "target": "유다와 예루살렘",
+      "ref": "예레미야 4:5–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-5-leaders-people",
+      "chapter": "jer.5",
+      "speaker": "거짓 선지자와 제사장",
+      "target": "예루살렘 백성",
+      "ref": "예레미야 5:30–31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-5-far-nation-people",
+      "chapter": "jer.5",
+      "speaker": "먼 나라",
+      "target": "예루살렘 백성",
+      "ref": "예레미야 5:15–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-5-jeremiah-people",
+      "chapter": "jer.5",
+      "speaker": "예레미야",
+      "target": "예루살렘 백성",
+      "ref": "예레미야 5:1–2, 12–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-6-leaders-people",
+      "chapter": "jer.6",
+      "speaker": "거짓 선지자와 제사장",
+      "target": "예루살렘 백성",
+      "ref": "예레미야 6:13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-6-north-people",
+      "chapter": "jer.6",
+      "speaker": "북방 민족",
+      "target": "예루살렘 백성",
+      "ref": "예레미야 6:22–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-7-judah-vulnerable",
+      "chapter": "jer.7",
+      "speaker": "유다 백성",
+      "target": "나그네와 고아와 과부",
+      "ref": "예레미야 7:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-8-scribe-people",
+      "chapter": "jer.8",
+      "speaker": "서기관",
+      "target": "유다 백성",
+      "ref": "예레미야 8:8–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-8-jeremiah-people",
+      "chapter": "jer.8",
+      "speaker": "예레미야",
+      "target": "유다 백성",
+      "ref": "예레미야 8:18–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-9-jeremiah-people",
+      "chapter": "jer.9",
+      "speaker": "예레미야",
+      "target": "유다 백성",
+      "ref": "예레미야 9:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-11-anathoth-jeremiah",
+      "chapter": "jer.11",
+      "speaker": "아나돗 사람들",
+      "target": "예레미야",
+      "ref": "예레미야 11:18–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-12-family-jeremiah",
+      "chapter": "jer.12",
+      "speaker": "예레미야의 형제와 아버지 집",
+      "target": "예레미야",
+      "ref": "예레미야 12:5–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-13-jeremiah-royalty",
+      "chapter": "jer.13",
+      "speaker": "예레미야",
+      "target": "왕과 왕후",
+      "ref": "예레미야 13:18–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-14-prophets-judah",
+      "chapter": "jer.14",
+      "speaker": "거짓 선지자들",
+      "target": "유다 백성",
+      "ref": "예레미야 14:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-15-judah-jeremiah",
+      "chapter": "jer.15",
+      "speaker": "유다 백성",
+      "target": "예레미야",
+      "ref": "예레미야 15:10, 20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-18-conspirators-jeremiah",
+      "chapter": "jer.18",
+      "speaker": "음모자들",
+      "target": "예레미야",
+      "ref": "예레미야 18:18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-19-jeremiah-elders",
+      "chapter": "jer.19",
+      "speaker": "예레미야",
+      "target": "백성과 제사장의 어른들",
+      "ref": "예레미야 19:1–3, 10–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-20-pashhur-jeremiah",
+      "chapter": "jer.20",
+      "speaker": "바스훌(임멜의 아들)",
+      "target": "예레미야",
+      "ref": "예레미야 20:1–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-20-friends-jeremiah",
+      "chapter": "jer.20",
+      "speaker": "친한 벗들",
+      "target": "예레미야",
+      "ref": "예레미야 20:10–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-21-zedekiah-jeremiah",
+      "chapter": "jer.21",
+      "speaker": "시드기야",
+      "target": "예레미야",
+      "ref": "예레미야 21:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-21-nebuchadnezzar-zedekiah",
+      "chapter": "jer.21",
+      "speaker": "느부갓네살",
+      "target": "시드기야",
+      "ref": "예레미야 21:2, 7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-21-pashhur-zedekiah",
+      "chapter": "jer.21",
+      "speaker": "바스훌(말기야의 아들)",
+      "target": "시드기야",
+      "ref": "예레미야 21:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-23-shepherds-flock",
+      "chapter": "jer.23",
+      "speaker": "악한 목자들",
+      "target": "남은 양 떼",
+      "ref": "예레미야 23:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-24-nebuchadnezzar-jeconiah",
+      "chapter": "jer.24",
+      "speaker": "느부갓네살",
+      "target": "여고냐",
+      "ref": "예레미야 24:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-25-jeremiah-judah",
+      "chapter": "jer.25",
+      "speaker": "예레미야",
+      "target": "유다 백성",
+      "ref": "예레미야 25:3–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-26-priests-jeremiah",
+      "chapter": "jer.26",
+      "speaker": "제사장과 선지자들",
+      "target": "예레미야",
+      "ref": "예레미야 26:8–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-26-elders-jeremiah",
+      "chapter": "jer.26",
+      "speaker": "장로들",
+      "target": "예레미야",
+      "ref": "예레미야 26:17–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-26-ahikam-jeremiah",
+      "chapter": "jer.26",
+      "speaker": "아히감",
+      "target": "예레미야",
+      "ref": "예레미야 26:24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-26-jehoiakim-uriah",
+      "chapter": "jer.26",
+      "speaker": "여호야김",
+      "target": "우리야",
+      "ref": "예레미야 26:20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-26-officials-jeremiah",
+      "chapter": "jer.26",
+      "speaker": "고관들",
+      "target": "예레미야",
+      "ref": "예레미야 26:16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-27-envoys-jeremiah",
+      "chapter": "jer.27",
+      "speaker": "예레미야",
+      "target": "이웃 나라 사신들",
+      "ref": "예레미야 27:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-27-jeremiah-zedekiah",
+      "chapter": "jer.27",
+      "speaker": "예레미야",
+      "target": "시드기야",
+      "ref": "예레미야 27:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-27-false-prophets-zedekiah",
+      "chapter": "jer.27",
+      "speaker": "거짓 선지자들",
+      "target": "시드기야",
+      "ref": "예레미야 27:14–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-28-hananiah-jeremiah",
+      "chapter": "jer.28",
+      "speaker": "하나냐",
+      "target": "예레미야",
+      "ref": "예레미야 28:10–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-28-jeremiah-hananiah",
+      "chapter": "jer.28",
+      "speaker": "예레미야",
+      "target": "하나냐",
+      "ref": "예레미야 28:15–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-29-jeremiah-exiles",
+      "chapter": "jer.29",
+      "speaker": "예레미야",
+      "target": "바벨론 포로들",
+      "ref": "예레미야 29:1, 5–7, 10–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-29-shemaiah-jeremiah",
+      "chapter": "jer.29",
+      "speaker": "스마야(느헬람 사람)",
+      "target": "예레미야",
+      "ref": "예레미야 29:24–32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-29-elasa-gemariah-jeremiah",
+      "chapter": "jer.29",
+      "speaker": "엘라사와 그마랴",
+      "target": "예레미야",
+      "ref": "예레미야 29:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-30-jacob-david",
+      "chapter": "jer.30",
+      "speaker": "야곱",
+      "target": "다윗 왕",
+      "ref": "예레미야 30:7–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-32-hanamel-jeremiah",
+      "chapter": "jer.32",
+      "speaker": "하나멜",
+      "target": "예레미야",
+      "ref": "예레미야 32:7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-32-baruch-jeremiah",
+      "chapter": "jer.32",
+      "speaker": "바룩",
+      "target": "예레미야",
+      "ref": "예레미야 32:12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-32-zedekiah-jeremiah",
+      "chapter": "jer.32",
+      "speaker": "시드기야",
+      "target": "예레미야",
+      "ref": "예레미야 32:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-34-officials-slaves",
+      "chapter": "jer.34",
+      "speaker": "예루살렘 고관과 백성",
+      "target": "히브리 종들",
+      "ref": "예레미야 34:8–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-34-jeremiah-zedekiah",
+      "chapter": "jer.34",
+      "speaker": "예레미야",
+      "target": "시드기야",
+      "ref": "예레미야 34:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-34-nebuchadnezzar-zedekiah",
+      "chapter": "jer.34",
+      "speaker": "느부갓네살",
+      "target": "시드기야",
+      "ref": "예레미야 34:3, 21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-35-rechabites-jonadab",
+      "chapter": "jer.35",
+      "speaker": "레갑 족속",
+      "target": "요나답",
+      "ref": "예레미야 35:6–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-35-jeremiah-rechabites",
+      "chapter": "jer.35",
+      "speaker": "예레미야",
+      "target": "레갑 족속",
+      "ref": "예레미야 35:2, 5–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-36-baruch-jeremiah",
+      "chapter": "jer.36",
+      "speaker": "바룩",
+      "target": "예레미야",
+      "ref": "예레미야 36:4–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-36-jehoiakim-jeremiah",
+      "chapter": "jer.36",
+      "speaker": "여호야김",
+      "target": "예레미야",
+      "ref": "예레미야 36:22–26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-36-officials-baruch",
+      "chapter": "jer.36",
+      "speaker": "고관들",
+      "target": "바룩",
+      "ref": "예레미야 36:19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-36-gemariah-jehoiakim",
+      "chapter": "jer.36",
+      "speaker": "그마랴",
+      "target": "여호야김",
+      "ref": "예레미야 36:25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-36-gemariah-shaphan",
+      "chapter": "jer.36",
+      "speaker": "그마랴",
+      "target": "사반",
+      "ref": "예레미야 36:10, 25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-37-iriya-jeremiah",
+      "chapter": "jer.37",
+      "speaker": "이리야",
+      "target": "예레미야",
+      "ref": "예레미야 37:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-37-officials-jeremiah",
+      "chapter": "jer.37",
+      "speaker": "고관들",
+      "target": "예레미야",
+      "ref": "예레미야 37:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-37-zedekiah-jeremiah",
+      "chapter": "jer.37",
+      "speaker": "시드기야",
+      "target": "예레미야",
+      "ref": "예레미야 37:17–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-38-officials-jeremiah",
+      "chapter": "jer.38",
+      "speaker": "스바댜와 고관들",
+      "target": "예레미야",
+      "ref": "예레미야 38:4–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-38-ebedmelech-jeremiah",
+      "chapter": "jer.38",
+      "speaker": "에벳멜렉",
+      "target": "예레미야",
+      "ref": "예레미야 38:7–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-38-ebedmelech-zedekiah",
+      "chapter": "jer.38",
+      "speaker": "에벳멜렉",
+      "target": "시드기야",
+      "ref": "예레미야 38:8–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-38-zedekiah-jeremiah",
+      "chapter": "jer.38",
+      "speaker": "시드기야",
+      "target": "예레미야",
+      "ref": "예레미야 38:14–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-39-nebuchadnezzar-zedekiah",
+      "chapter": "jer.39",
+      "speaker": "느부갓네살",
+      "target": "시드기야",
+      "ref": "예레미야 39:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-39-nebuchadnezzar-nebuzaradan",
+      "chapter": "jer.39",
+      "speaker": "느부갓네살",
+      "target": "느부사라단",
+      "ref": "예레미야 39:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-39-nebuchadnezzar-jeremiah",
+      "chapter": "jer.39",
+      "speaker": "느부갓네살",
+      "target": "예레미야",
+      "ref": "예레미야 39:11–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-39-gedaliah-jeremiah",
+      "chapter": "jer.39",
+      "speaker": "그달리야",
+      "target": "예레미야",
+      "ref": "예레미야 39:14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-40-nebuzaradan-jeremiah",
+      "chapter": "jer.40",
+      "speaker": "느부사라단",
+      "target": "예레미야",
+      "ref": "예레미야 40:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-40-gedaliah-jeremiah",
+      "chapter": "jer.40",
+      "speaker": "그달리야",
+      "target": "예레미야",
+      "ref": "예레미야 40:6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-40-johanan-gedaliah",
+      "chapter": "jer.40",
+      "speaker": "요하난",
+      "target": "그달리야",
+      "ref": "예레미야 40:13–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-40-baalis-ishmael",
+      "chapter": "jer.40",
+      "speaker": "바알리스",
+      "target": "이스마엘",
+      "ref": "예레미야 40:14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-41-ishmael-gedaliah",
+      "chapter": "jer.41",
+      "speaker": "이스마엘",
+      "target": "그달리야",
+      "ref": "예레미야 41:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-41-ishmael-pilgrims",
+      "chapter": "jer.41",
+      "speaker": "이스마엘",
+      "target": "순례자 80명",
+      "ref": "예레미야 41:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-41-johanan-ishmael",
+      "chapter": "jer.41",
+      "speaker": "요하난",
+      "target": "이스마엘",
+      "ref": "예레미야 41:11–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-41-johanan-royal-daughters",
+      "chapter": "jer.41",
+      "speaker": "요하난",
+      "target": "왕의 딸들",
+      "ref": "예레미야 41:10–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-42-johanan-jeremiah",
+      "chapter": "jer.42",
+      "speaker": "요하난",
+      "target": "예레미야",
+      "ref": "예레미야 42:1–6, 19–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-42-jeshaniah-johanan",
+      "chapter": "jer.42",
+      "speaker": "여사냐",
+      "target": "요하난",
+      "ref": "예레미야 42:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-43-azariah-jeremiah",
+      "chapter": "jer.43",
+      "speaker": "아사랴(호사야의 아들)",
+      "target": "예레미야",
+      "ref": "예레미야 43:2–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-43-johanan-jeremiah",
+      "chapter": "jer.43",
+      "speaker": "요하난",
+      "target": "예레미야",
+      "ref": "예레미야 43:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-43-baruch-jeremiah",
+      "chapter": "jer.43",
+      "speaker": "바룩",
+      "target": "예레미야",
+      "ref": "예레미야 43:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-44-judeans-jeremiah",
+      "chapter": "jer.44",
+      "speaker": "애굽의 유다인들",
+      "target": "예레미야",
+      "ref": "예레미야 44:15–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-45-baruch-jeremiah",
+      "chapter": "jer.45",
+      "speaker": "바룩",
+      "target": "예레미야",
+      "ref": "예레미야 45:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-46-nebuchadnezzar-necho",
+      "chapter": "jer.46",
+      "speaker": "느부갓네살",
+      "target": "바로 느고",
+      "ref": "예레미야 46:2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-47-north-army-philistia",
+      "chapter": "jer.47",
+      "speaker": "북쪽 군대",
+      "target": "블레셋",
+      "ref": "예레미야 47:2–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-48-jeremiah-moab",
+      "chapter": "jer.48",
+      "speaker": "예레미야",
+      "target": "모압",
+      "ref": "예레미야 48:29–32, 47",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-49-nebuchadnezzar-kedar",
+      "chapter": "jer.49",
+      "speaker": "느부갓네살",
+      "target": "게달과 하솔",
+      "ref": "예레미야 49:28–30",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-50-north-babylon",
+      "chapter": "jer.50",
+      "speaker": "북쪽 나라",
+      "target": "바벨론",
+      "ref": "예레미야 50:3, 9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-50-nebuchadnezzar-israel",
+      "chapter": "jer.50",
+      "speaker": "느부갓네살",
+      "target": "이스라엘과 유다",
+      "ref": "예레미야 50:17–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-51-medes-babylon",
+      "chapter": "jer.51",
+      "speaker": "메대 왕들",
+      "target": "바벨론",
+      "ref": "예레미야 51:11, 28–29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-51-jeremiah-seraiah",
+      "chapter": "jer.51",
+      "speaker": "예레미야",
+      "target": "스라야",
+      "ref": "예레미야 51:59–64",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-51-seraiah-zedekiah",
+      "chapter": "jer.51",
+      "speaker": "스라야",
+      "target": "시드기야",
+      "ref": "예레미야 51:59–61",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-52-zedekiah-nebuchadnezzar",
+      "chapter": "jer.52",
+      "speaker": "시드기야",
+      "target": "느부갓네살",
+      "ref": "예레미야 52:3, 10–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-52-nebuchadnezzar-nebuzaradan",
+      "chapter": "jer.52",
+      "speaker": "느부사라단",
+      "target": "느부갓네살",
+      "ref": "예레미야 52:12–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jer-52-evilmerodach-jehoiachin",
+      "chapter": "jer.52",
+      "speaker": "에윌므로닥",
+      "target": "여호야긴",
+      "ref": "예레미야 52:31–34",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-1-friends-zion",
+      "chapter": "lam.1",
+      "speaker": "친구들",
+      "target": "예루살렘(시온)",
+      "ref": "예레미야애가 1:2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-1-enemies-zion",
+      "chapter": "lam.1",
+      "speaker": "원수들",
+      "target": "예루살렘(시온)",
+      "ref": "예레미야애가 1:5, 10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-2-false-prophets-zion",
+      "chapter": "lam.2",
+      "speaker": "거짓 선지자들",
+      "target": "딸 시온",
+      "ref": "예레미야애가 2:14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-2-enemies-zion",
+      "chapter": "lam.2",
+      "speaker": "원수들",
+      "target": "딸 시온",
+      "ref": "예레미야애가 2:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-3-enemies-sufferer",
+      "chapter": "lam.3",
+      "speaker": "원수들",
+      "target": "고난 당한 사람",
+      "ref": "예레미야애가 3:52–57",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-4-leaders-zion-sons",
+      "chapter": "lam.4",
+      "speaker": "선지자와 제사장들",
+      "target": "시온의 아들들",
+      "ref": "예레미야애가 4:13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-4-edom-zion-sons",
+      "chapter": "lam.4",
+      "speaker": "에돔",
+      "target": "시온의 아들들",
+      "ref": "예레미야애가 4:21–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-lam-5-rulers-judah",
+      "chapter": "lam.5",
+      "speaker": "다스리는 종들",
+      "target": "유다 백성",
+      "ref": "예레미야애가 5:8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-2-ezekiel-israel",
+      "chapter": "ezk.2",
+      "speaker": "에스겔",
+      "target": "이스라엘 자손",
+      "ref": "에스겔 2:3–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-3-ezekiel-wicked-righteous",
+      "chapter": "ezk.3",
+      "speaker": "에스겔",
+      "target": "악인과 의인",
+      "ref": "에스겔 3:17–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-4-ezekiel-israel",
+      "chapter": "ezk.4",
+      "speaker": "에스겔",
+      "target": "이스라엘 족속",
+      "ref": "에스겔 4:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-7-leaders-people",
+      "chapter": "ezk.7",
+      "speaker": "선지자와 제사장과 장로",
+      "target": "이스라엘 땅의 백성",
+      "ref": "에스겔 7:26",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-8-yaazaniah-elders",
+      "chapter": "ezk.8",
+      "speaker": "야아사냐(사반의 아들)",
+      "target": "장로 70명",
+      "ref": "에스겔 8:10–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-9-scribe-mourners",
+      "chapter": "ezk.9",
+      "speaker": "베옷 입은 서기관",
+      "target": "탄식하는 자들",
+      "ref": "에스겔 9:4, 11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-9-avengers-elders",
+      "chapter": "ezk.9",
+      "speaker": "6 사람",
+      "target": "성전 앞 장로들",
+      "ref": "에스겔 9:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-11-jerusalem-exiles",
+      "chapter": "ezk.11",
+      "speaker": "예루살렘 주민",
+      "target": "포로 된 형제들",
+      "ref": "에스겔 11:15–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-13-prophets-people",
+      "chapter": "ezk.13",
+      "speaker": "거짓 선지자들",
+      "target": "이스라엘 백성",
+      "ref": "에스겔 13:10–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-13-women-people",
+      "chapter": "ezk.13",
+      "speaker": "거짓 여선지자들",
+      "target": "이스라엘 백성",
+      "ref": "에스겔 13:17–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-14-elders-ezekiel",
+      "chapter": "ezk.14",
+      "speaker": "이스라엘 장로들",
+      "target": "에스겔",
+      "ref": "에스겔 14:1–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-16-jerusalem-nations",
+      "chapter": "ezk.16",
+      "speaker": "예루살렘",
+      "target": "애굽과 앗수르와 갈대아",
+      "ref": "에스겔 16:26–29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-16-samaria-jerusalem",
+      "chapter": "ezk.16",
+      "speaker": "사마리아",
+      "target": "예루살렘",
+      "ref": "에스겔 16:46, 51–52",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-17-babylon-zedekiah",
+      "chapter": "ezk.17",
+      "speaker": "바벨론 왕",
+      "target": "시드기야",
+      "ref": "에스겔 17:12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-17-zedekiah-egypt",
+      "chapter": "ezk.17",
+      "speaker": "시드기야",
+      "target": "애굽 왕",
+      "ref": "에스겔 17:15–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-17-babylon-jehoiachin",
+      "chapter": "ezk.17",
+      "speaker": "바벨론 왕",
+      "target": "여호야긴",
+      "ref": "에스겔 17:12–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-18-violent-son-righteous-father",
+      "chapter": "ezk.18",
+      "speaker": "강포한 아들",
+      "target": "의로운 사람",
+      "ref": "에스겔 18:5–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-18-righteous-grandson-violent-father",
+      "chapter": "ezk.18",
+      "speaker": "의로운 손자",
+      "target": "강포한 아들",
+      "ref": "에스겔 18:14–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-19-ezekiel-leaders",
+      "chapter": "ezk.19",
+      "speaker": "에스겔",
+      "target": "이스라엘 고관들",
+      "ref": "에스겔 19:1–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-20-elders-ezekiel",
+      "chapter": "ezk.20",
+      "speaker": "이스라엘 장로들",
+      "target": "에스겔",
+      "ref": "에스겔 20:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-21-babylon-ammon",
+      "chapter": "ezk.21",
+      "speaker": "바벨론 왕",
+      "target": "암몬",
+      "ref": "에스겔 21:20–23, 28–32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-22-rulers-vulnerable",
+      "chapter": "ezk.22",
+      "speaker": "고관들",
+      "target": "나그네와 고아와 과부",
+      "ref": "에스겔 22:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-22-prophets-jerusalem",
+      "chapter": "ezk.22",
+      "speaker": "선지자들",
+      "target": "예루살렘",
+      "ref": "에스겔 22:25–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-23-sisters",
+      "chapter": "ezk.23",
+      "speaker": "오홀라(사마리아)",
+      "target": "오홀리바(예루살렘)",
+      "ref": "에스겔 23:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-23-samaria-assyria",
+      "chapter": "ezk.23",
+      "speaker": "오홀라(사마리아)",
+      "target": "앗수르 사람들",
+      "ref": "에스겔 23:5–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-23-jerusalem-babylon",
+      "chapter": "ezk.23",
+      "speaker": "오홀리바(예루살렘)",
+      "target": "갈대아 사람들",
+      "ref": "에스겔 23:14–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-23-babylon-jerusalem",
+      "chapter": "ezk.23",
+      "speaker": "갈대아 사람들",
+      "target": "오홀리바(예루살렘)",
+      "ref": "에스겔 23:22–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-24-babylon-jerusalem",
+      "chapter": "ezk.24",
+      "speaker": "바벨론 왕",
+      "target": "예루살렘",
+      "ref": "에스겔 24:1–2",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-24-exiles-ezekiel",
+      "chapter": "ezk.24",
+      "speaker": "포로 백성",
+      "target": "에스겔",
+      "ref": "에스겔 24:18–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-25-ammon-judah",
+      "chapter": "ezk.25",
+      "speaker": "암몬",
+      "target": "유다 족속",
+      "ref": "에스겔 25:3–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-25-edom-judah",
+      "chapter": "ezk.25",
+      "speaker": "에돔",
+      "target": "유다 족속",
+      "ref": "에스겔 25:12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-25-philistia-judah",
+      "chapter": "ezk.25",
+      "speaker": "블레셋",
+      "target": "유다 족속",
+      "ref": "에스겔 25:15–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-26-tyre-jerusalem",
+      "chapter": "ezk.26",
+      "speaker": "두로",
+      "target": "예루살렘",
+      "ref": "에스겔 26:2–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-26-nebuchadnezzar-tyre",
+      "chapter": "ezk.26",
+      "speaker": "느부갓네살",
+      "target": "두로",
+      "ref": "에스겔 26:7–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-26-sea-kings-tyre",
+      "chapter": "ezk.26",
+      "speaker": "바다의 왕들",
+      "target": "두로",
+      "ref": "에스겔 26:15–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-27-traders-tyre",
+      "chapter": "ezk.27",
+      "speaker": "무역하는 나라들",
+      "target": "두로",
+      "ref": "에스겔 27:12–24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-27-sailors-tyre",
+      "chapter": "ezk.27",
+      "speaker": "뱃사람들",
+      "target": "두로",
+      "ref": "에스겔 27:25–36",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-29-israel-egypt",
+      "chapter": "ezk.29",
+      "speaker": "이스라엘 족속",
+      "target": "애굽",
+      "ref": "에스겔 29:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-30-nebuchadnezzar-egypt",
+      "chapter": "ezk.30",
+      "speaker": "느부갓네살",
+      "target": "애굽",
+      "ref": "에스겔 30:10–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-30-allies-egypt",
+      "chapter": "ezk.30",
+      "speaker": "구스와 붓과 룻",
+      "target": "애굽",
+      "ref": "에스겔 30:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-31-mighty-assyria",
+      "chapter": "ezk.31",
+      "speaker": "능한 자",
+      "target": "앗수르",
+      "ref": "에스겔 31:11–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-32-babylon-pharaoh",
+      "chapter": "ezk.32",
+      "speaker": "바벨론 왕",
+      "target": "바로",
+      "ref": "에스겔 32:11–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-32-pharaoh-nations",
+      "chapter": "ezk.32",
+      "speaker": "바로",
+      "target": "앗수르와 엘람",
+      "ref": "에스겔 32:22–24, 31",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-32-ezekiel-pharaoh",
+      "chapter": "ezk.32",
+      "speaker": "에스겔",
+      "target": "바로",
+      "ref": "에스겔 32:2–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-33-fugitive-ezekiel",
+      "chapter": "ezk.33",
+      "speaker": "도망한 자",
+      "target": "에스겔",
+      "ref": "에스겔 33:21–22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-33-exiles-ezekiel",
+      "chapter": "ezk.33",
+      "speaker": "포로 백성",
+      "target": "에스겔",
+      "ref": "에스겔 33:30–33",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-34-shepherds-flock",
+      "chapter": "ezk.34",
+      "speaker": "이스라엘 목자들",
+      "target": "양 떼",
+      "ref": "에스겔 34:2–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-35-edom-israel",
+      "chapter": "ezk.35",
+      "speaker": "세일산(에돔)",
+      "target": "이스라엘",
+      "ref": "에스겔 35:5–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-36-enemies-israel",
+      "chapter": "ezk.36",
+      "speaker": "원수 나라들",
+      "target": "이스라엘 족속",
+      "ref": "에스겔 36:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-37-david-tribes",
+      "chapter": "ezk.37",
+      "speaker": "내 종 다윗",
+      "target": "유다와 요셉",
+      "ref": "에스겔 37:15–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-38-gog-israel",
+      "chapter": "ezk.38",
+      "speaker": "곡",
+      "target": "이스라엘",
+      "ref": "에스겔 38:8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-38-allies-gog",
+      "chapter": "ezk.38",
+      "speaker": "연합한 나라들",
+      "target": "곡",
+      "ref": "에스겔 38:5–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-39-gog-israel",
+      "chapter": "ezk.39",
+      "speaker": "곡",
+      "target": "이스라엘 족속",
+      "ref": "에스겔 39:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-40-guide-ezekiel",
+      "chapter": "ezk.40",
+      "speaker": "놋 같은 사람",
+      "target": "에스겔",
+      "ref": "에스겔 40:3–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-40-ezekiel-israel",
+      "chapter": "ezk.40",
+      "speaker": "에스겔",
+      "target": "이스라엘 족속",
+      "ref": "에스겔 40:4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-41-guide-ezekiel",
+      "chapter": "ezk.41",
+      "speaker": "측량하는 사람",
+      "target": "에스겔",
+      "ref": "에스겔 41:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-42-guide-ezekiel",
+      "chapter": "ezk.42",
+      "speaker": "측량하는 사람",
+      "target": "에스겔",
+      "ref": "에스겔 42:1–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-42-priests-people",
+      "chapter": "ezk.42",
+      "speaker": "제사장들",
+      "target": "백성",
+      "ref": "에스겔 42:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-45-israel-rulers",
+      "chapter": "ezk.45",
+      "speaker": "이스라엘 족속",
+      "target": "이스라엘의 통치자들",
+      "ref": "에스겔 45:9–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-46-ruler-people",
+      "chapter": "ezk.46",
+      "speaker": "왕(군주)",
+      "target": "백성",
+      "ref": "에스겔 46:16–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-46-priests-ruler",
+      "chapter": "ezk.46",
+      "speaker": "제사장들",
+      "target": "왕(군주)",
+      "ref": "에스겔 46:1–8",
+      "status": "pending"
+    },
+    {
+      "id": "pair-ezk-47-guide-ezekiel",
+      "chapter": "ezk.47",
+      "speaker": "측량하는 사람",
+      "target": "에스겔",
+      "ref": "에스겔 47:3–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-1-ashpenaz-daniel",
+      "chapter": "dan.1",
+      "speaker": "다니엘",
+      "target": "아스부나스",
+      "ref": "다니엘 1:8–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-1-supervisor-daniel",
+      "chapter": "dan.1",
+      "speaker": "감독자",
+      "target": "다니엘",
+      "ref": "다니엘 1:11–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-1-hananiah-daniel",
+      "chapter": "dan.1",
+      "speaker": "사드락",
+      "target": "다니엘",
+      "ref": "다니엘 1:6–7, 8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-1-mishael-daniel",
+      "chapter": "dan.1",
+      "speaker": "메삭",
+      "target": "다니엘",
+      "ref": "다니엘 1:6–7, 8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-1-azariah-daniel",
+      "chapter": "dan.1",
+      "speaker": "아벳느고",
+      "target": "다니엘",
+      "ref": "다니엘 1:6–7, 8–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-2-daniel-nebuchadnezzar",
+      "chapter": "dan.2",
+      "speaker": "다니엘",
+      "target": "느부갓네살",
+      "ref": "다니엘 2:27–47",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-2-nebuchadnezzar-wise",
+      "chapter": "dan.2",
+      "speaker": "느부갓네살",
+      "target": "바벨론 지혜자들",
+      "ref": "다니엘 2:5–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-2-arioch-daniel",
+      "chapter": "dan.2",
+      "speaker": "아리옥",
+      "target": "다니엘",
+      "ref": "다니엘 2:14–16, 24–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-2-friends-daniel",
+      "chapter": "dan.2",
+      "speaker": "사드락·메삭·아벳느고",
+      "target": "다니엘",
+      "ref": "다니엘 2:17–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-3-nebuchadnezzar-shadrach",
+      "chapter": "dan.3",
+      "speaker": "느부갓네살",
+      "target": "사드락",
+      "ref": "다니엘 3:13–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-3-shadrach-meshach",
+      "chapter": "dan.3",
+      "speaker": "사드락",
+      "target": "메삭",
+      "ref": "다니엘 3:16–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-3-meshach-abednego",
+      "chapter": "dan.3",
+      "speaker": "메삭",
+      "target": "아벳느고",
+      "ref": "다니엘 3:16–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-3-chaldeans-shadrach",
+      "chapter": "dan.3",
+      "speaker": "갈대아 사람들",
+      "target": "사드락",
+      "ref": "다니엘 3:8–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-3-fourth-abednego",
+      "chapter": "dan.3",
+      "speaker": "넷째 사람",
+      "target": "아벳느고",
+      "ref": "다니엘 3:24–25",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-4-daniel-nebuchadnezzar",
+      "chapter": "dan.4",
+      "speaker": "다니엘(벨드사살)",
+      "target": "느부갓네살",
+      "ref": "다니엘 4:19–27",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-4-watcher-nebuchadnezzar",
+      "chapter": "dan.4",
+      "speaker": "거룩한 순찰자",
+      "target": "느부갓네살",
+      "ref": "다니엘 4:13–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-5-daniel-belshazzar",
+      "chapter": "dan.5",
+      "speaker": "다니엘",
+      "target": "벨사살",
+      "ref": "다니엘 5:22–28",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-5-queen-daniel",
+      "chapter": "dan.5",
+      "speaker": "왕비",
+      "target": "다니엘",
+      "ref": "다니엘 5:10–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-6-officials-daniel",
+      "chapter": "dan.6",
+      "speaker": "총리와 고관들",
+      "target": "다니엘",
+      "ref": "다니엘 6:4–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-6-darius-daniel",
+      "chapter": "dan.6",
+      "speaker": "다리오",
+      "target": "다니엘",
+      "ref": "다니엘 6:14–20",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-6-angel-daniel",
+      "chapter": "dan.6",
+      "speaker": "천사",
+      "target": "다니엘",
+      "ref": "다니엘 6:22",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-6-darius-officials",
+      "chapter": "dan.6",
+      "speaker": "다리오",
+      "target": "총리와 고관들",
+      "ref": "다니엘 6:24",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-7-angel-daniel",
+      "chapter": "dan.7",
+      "speaker": "천사",
+      "target": "다니엘",
+      "ref": "다니엘 7:15–18",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-8-gabriel-daniel",
+      "chapter": "dan.8",
+      "speaker": "가브리엘",
+      "target": "다니엘",
+      "ref": "다니엘 8:15–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-9-gabriel-daniel",
+      "chapter": "dan.9",
+      "speaker": "가브리엘",
+      "target": "다니엘",
+      "ref": "다니엘 9:20–23",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-10-linen-daniel",
+      "chapter": "dan.10",
+      "speaker": "세마포 입은 이",
+      "target": "다니엘",
+      "ref": "다니엘 10:10–12, 18–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-10-persia-prince-linen",
+      "chapter": "dan.10",
+      "speaker": "바사 왕국의 군주",
+      "target": "세마포 입은 이",
+      "ref": "다니엘 10:12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-10-michael-linen",
+      "chapter": "dan.10",
+      "speaker": "미가엘",
+      "target": "세마포 입은 이",
+      "ref": "다니엘 10:13, 20–21",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-11-south-north",
+      "chapter": "dan.11",
+      "speaker": "남방 왕",
+      "target": "북방 왕",
+      "ref": "다니엘 11:5–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-11-wicked-king-faithful",
+      "chapter": "dan.11",
+      "speaker": "비천한 왕",
+      "target": "하나님을 아는 백성",
+      "ref": "다니엘 11:21, 31–32",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-11-wise-faithful",
+      "chapter": "dan.11",
+      "speaker": "지혜로운 자",
+      "target": "하나님을 아는 백성",
+      "ref": "다니엘 11:32–35",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-11-angel-daniel",
+      "chapter": "dan.11",
+      "speaker": "천사",
+      "target": "다니엘",
+      "ref": "다니엘 11:2–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-12-michael-people",
+      "chapter": "dan.12",
+      "speaker": "미가엘",
+      "target": "책에 기록된 백성",
+      "ref": "다니엘 12:1",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-12-wise-people",
+      "chapter": "dan.12",
+      "speaker": "지혜 있는 자",
+      "target": "책에 기록된 백성",
+      "ref": "다니엘 12:3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-dan-12-linen-daniel",
+      "chapter": "dan.12",
+      "speaker": "세마포 입은 이",
+      "target": "다니엘",
+      "ref": "다니엘 12:7–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-1-hosea-gomer",
+      "chapter": "hos.1",
+      "speaker": "고멜",
+      "target": "호세아",
+      "ref": "호세아 1:2–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-3-hosea-gomer",
+      "chapter": "hos.3",
+      "speaker": "호세아",
+      "target": "고멜",
+      "ref": "호세아 3:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-3-israel-david",
+      "chapter": "hos.3",
+      "speaker": "이스라엘 자손",
+      "target": "다윗",
+      "ref": "호세아 3:4–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-4-priest-israel",
+      "chapter": "hos.4",
+      "speaker": "제사장",
+      "target": "이스라엘 백성",
+      "ref": "호세아 4:4–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-5-leaders-ephraim",
+      "chapter": "hos.5",
+      "speaker": "제사장과 왕족",
+      "target": "에브라임",
+      "ref": "호세아 5:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-7-ephraim-nations",
+      "chapter": "hos.7",
+      "speaker": "에브라임",
+      "target": "애굽과 앗수르",
+      "ref": "호세아 7:8–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-9-israel-prophet",
+      "chapter": "hos.9",
+      "speaker": "이스라엘",
+      "target": "선지자",
+      "ref": "호세아 9:7–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hos-11-assyria-israel",
+      "chapter": "hos.11",
+      "speaker": "앗수르",
+      "target": "이스라엘",
+      "ref": "호세아 11:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jol-1-joel-priests",
+      "chapter": "jol.1",
+      "speaker": "요엘",
+      "target": "제사장들",
+      "ref": "요엘 1:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jol-3-nations-judah",
+      "chapter": "jol.3",
+      "speaker": "열국",
+      "target": "유다와 예루살렘",
+      "ref": "요엘 3:2–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jol-3-coastal-nations-judah",
+      "chapter": "jol.3",
+      "speaker": "두로와 시돈과 블레셋",
+      "target": "유다와 예루살렘",
+      "ref": "요엘 3:4–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-1-edom-israel",
+      "chapter": "amo.1",
+      "speaker": "에돔",
+      "target": "이스라엘",
+      "ref": "아모스 1:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-2-israel-poor",
+      "chapter": "amo.2",
+      "speaker": "이스라엘",
+      "target": "가난한 자",
+      "ref": "아모스 2:6–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-2-israel-nazirites",
+      "chapter": "amo.2",
+      "speaker": "이스라엘",
+      "target": "나실인과 선지자",
+      "ref": "아모스 2:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-3-rich-israel",
+      "chapter": "amo.3",
+      "speaker": "사마리아의 부자들",
+      "target": "이스라엘 족속",
+      "ref": "아모스 3:9–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-4-rich-women-poor",
+      "chapter": "amo.4",
+      "speaker": "사마리아의 부유한 여인들",
+      "target": "가난한 자",
+      "ref": "아모스 4:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-5-israel-poor",
+      "chapter": "amo.5",
+      "speaker": "이스라엘 족속",
+      "target": "가난한 자",
+      "ref": "아모스 5:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-5-israel-rebuker",
+      "chapter": "amo.5",
+      "speaker": "이스라엘 족속",
+      "target": "성문에서 책망하는 자",
+      "ref": "아모스 5:10, 13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-6-leaders-joseph",
+      "chapter": "amo.6",
+      "speaker": "시온과 사마리아의 지도자",
+      "target": "요셉(이스라엘)",
+      "ref": "아모스 6:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-6-nation-joseph",
+      "chapter": "amo.6",
+      "speaker": "아모스",
+      "target": "요셉(이스라엘)",
+      "ref": "아모스 6:13–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-7-amaziah-amos",
+      "chapter": "amo.7",
+      "speaker": "아마샤",
+      "target": "아모스",
+      "ref": "아모스 7:10–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-amo-8-merchants-poor",
+      "chapter": "amo.8",
+      "speaker": "탐욕스러운 상인들",
+      "target": "가난한 자와 궁핍한 자",
+      "ref": "아모스 8:4–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-oba-1-edom-jacob",
+      "chapter": "oba.1",
+      "speaker": "에돔",
+      "target": "야곱 족속",
+      "ref": "오바댜 1:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jnh-1-captain-jonah",
+      "chapter": "jnh.1",
+      "speaker": "선장",
+      "target": "요나",
+      "ref": "요나 1:6, 9–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jnh-1-sailors-jonah",
+      "chapter": "jnh.1",
+      "speaker": "사공들",
+      "target": "요나",
+      "ref": "요나 1:11–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jnh-3-jonah-nineveh",
+      "chapter": "jnh.3",
+      "speaker": "요나",
+      "target": "니느웨 사람들",
+      "ref": "요나 3:4–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jnh-3-king-nineveh",
+      "chapter": "jnh.3",
+      "speaker": "니느웨 왕",
+      "target": "니느웨 사람들",
+      "ref": "요나 3:6–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-jnh-4-jonah-nineveh",
+      "chapter": "jnh.4",
+      "speaker": "니느웨 사람들",
+      "target": "요나",
+      "ref": "요나 4:5, 9–11",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-1-micah-judah-towns",
+      "chapter": "mic.1",
+      "speaker": "미가",
+      "target": "유다 성읍 사람들",
+      "ref": "미가 1:8–9, 10–16",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-2-greedy-expelled-women",
+      "chapter": "mic.2",
+      "speaker": "탐욕스러운 자들",
+      "target": "부녀와 어린 자녀",
+      "ref": "미가 2:1–5, 9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-2-false-prophet-remnant",
+      "chapter": "mic.2",
+      "speaker": "거짓 선지자",
+      "target": "야곱의 남은 자",
+      "ref": "미가 2:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-3-leaders-people",
+      "chapter": "mic.3",
+      "speaker": "야곱의 우두머리들",
+      "target": "백성",
+      "ref": "미가 3:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-3-micah-leaders",
+      "chapter": "mic.3",
+      "speaker": "미가",
+      "target": "야곱의 우두머리들",
+      "ref": "미가 3:8–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-3-false-prophets-people",
+      "chapter": "mic.3",
+      "speaker": "거짓 선지자들",
+      "target": "백성",
+      "ref": "미가 3:5–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-3-priests-leaders",
+      "chapter": "mic.3",
+      "speaker": "제사장들",
+      "target": "야곱의 우두머리들",
+      "ref": "미가 3:11–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-4-nations-zion",
+      "chapter": "mic.4",
+      "speaker": "많은 이방",
+      "target": "시온의 백성",
+      "ref": "미가 4:11–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-5-ruler-remnant",
+      "chapter": "mic.5",
+      "speaker": "다스릴 자",
+      "target": "야곱의 남은 자",
+      "ref": "미가 5:2–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-5-assyria-remnant",
+      "chapter": "mic.5",
+      "speaker": "앗수르",
+      "target": "야곱의 남은 자",
+      "ref": "미가 5:5–6",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-6-balak-balaam",
+      "chapter": "mic.6",
+      "speaker": "발락",
+      "target": "발람",
+      "ref": "미가 6:5; 민수기 22:5–6, 23:7–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-6-wealthy-israel",
+      "chapter": "mic.6",
+      "speaker": "부자들",
+      "target": "이스라엘 백성",
+      "ref": "미가 6:9–12",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-7-enemy-micah",
+      "chapter": "mic.7",
+      "speaker": "원수",
+      "target": "미가",
+      "ref": "미가 7:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-mic-7-corrupt-leaders-micah",
+      "chapter": "mic.7",
+      "speaker": "지도자와 재판관",
+      "target": "미가",
+      "ref": "미가 7:1–7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-1-nineveh-judah",
+      "chapter": "nam.1",
+      "speaker": "니느웨 사람들",
+      "target": "유다 백성",
+      "ref": "나훔 1:12–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-1-messenger-judah",
+      "chapter": "nam.1",
+      "speaker": "좋은 소식을 전하는 자",
+      "target": "유다 백성",
+      "ref": "나훔 1:15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-2-invaders-nineveh",
+      "chapter": "nam.2",
+      "speaker": "침공군대",
+      "target": "니느웨 사람들",
+      "ref": "나훔 2:1–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-3-nineveh-nations",
+      "chapter": "nam.3",
+      "speaker": "니느웨 사람들",
+      "target": "피해를 입은 나라들",
+      "ref": "나훔 3:4, 19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-3-assyrian-king-nineveh",
+      "chapter": "nam.3",
+      "speaker": "앗수르 왕",
+      "target": "니느웨 사람들",
+      "ref": "나훔 3:18–19",
+      "status": "pending"
+    },
+    {
+      "id": "pair-nam-2-queen-attendants",
+      "chapter": "nam.2",
+      "speaker": "니느웨 왕후",
+      "target": "니느웨 여성들",
+      "ref": "나훔 2:7",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hab-1-habakkuk-yahweh",
+      "chapter": "hab.1",
+      "speaker": "하박국",
+      "target": "하나님",
+      "ref": "하박국 1:2–13",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hab-1-judah-oppressors-righteous",
+      "chapter": "hab.1",
+      "speaker": "유다의 악한 권력자들",
+      "target": "유다의 의인들",
+      "ref": "하박국 1:3–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hab-1-chaldeans-judah",
+      "chapter": "hab.1",
+      "speaker": "갈대아 군대",
+      "target": "유다의 의인들",
+      "ref": "하박국 1:6–11, 13–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hab-2-habakkuk-yahweh",
+      "chapter": "hab.2",
+      "speaker": "하박국",
+      "target": "하나님",
+      "ref": "하박국 2:1–4",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hab-2-nations-babylon",
+      "chapter": "hab.2",
+      "speaker": "약탈당한 나라들",
+      "target": "바빌로니아의 통치자들",
+      "ref": "하박국 2:6–17",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zep-2-moab-ammon-judah-remnant",
+      "chapter": "zep.2",
+      "speaker": "모압과 암몬 사람들",
+      "target": "유다의 남은 자",
+      "ref": "스바냐 2:8–10",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zep-3-rulers-jerusalem-residents",
+      "chapter": "zep.3",
+      "speaker": "방백과 재판관들",
+      "target": "예루살렘 주민들",
+      "ref": "스바냐 3:3–5",
+      "status": "pending"
+    },
+    {
+      "id": "pair-zep-2-prophet-humble",
+      "chapter": "zep.2",
+      "speaker": "스바냐",
+      "target": "겸손한 자들",
+      "ref": "스바냐 2:1–3",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-1-haggai-zerubbabel",
+      "chapter": "hag.1",
+      "speaker": "학개",
+      "target": "스룹바벨",
+      "ref": "학개 1:1–8, 13–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-1-haggai-joshua",
+      "chapter": "hag.1",
+      "speaker": "학개",
+      "target": "여호수아",
+      "ref": "학개 1:1, 12–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-1-haggai-remnant",
+      "chapter": "hag.1",
+      "speaker": "학개",
+      "target": "남은 백성",
+      "ref": "학개 1:4–8, 12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-1-joshua-zerubbabel",
+      "chapter": "hag.1",
+      "speaker": "여호수아",
+      "target": "스룹바벨",
+      "ref": "학개 1:12–15",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-2-haggai-priests",
+      "chapter": "hag.2",
+      "speaker": "학개",
+      "target": "제사장들",
+      "ref": "학개 2:10–14",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-2-joshua-zerubbabel",
+      "chapter": "hag.2",
+      "speaker": "여호수아",
+      "target": "스룹바벨",
+      "ref": "학개 2:2–9",
+      "status": "pending"
+    },
+    {
+      "id": "pair-hag-2-haggai-zerubbabel",
+      "chapter": "hag.2",
+      "speaker": "학개",
+      "target": "스룹바벨",
+      "ref": "학개 2:20–23",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-1",
+      "chapter": "jhn.1",
+      "speaker": "나다나엘",
+      "target": "예수",
+      "ref": "요한복음 1:46–49",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-3",
+      "chapter": "jhn.3",
+      "speaker": "니고데모",
+      "target": "예수",
+      "ref": "요한복음 3:2–8",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-4",
+      "chapter": "jhn.4",
+      "speaker": "사마리아 여자",
+      "target": "예수",
+      "ref": "요한복음 4:9–26",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-9",
+      "chapter": "jhn.9",
+      "speaker": "날 때부터 맹인 된 사람",
+      "target": "바리새인",
+      "ref": "요한복음 9:24–34",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-13",
+      "chapter": "jhn.13",
+      "speaker": "시몬 베드로",
+      "target": "예수",
+      "ref": "요한복음 13:6–10, 36–38",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-20",
+      "chapter": "jhn.20",
+      "speaker": "도마",
+      "target": "예수",
+      "ref": "요한복음 20:25–29",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-jhn-21",
+      "chapter": "jhn.21",
+      "speaker": "예수",
+      "target": "시몬 베드로",
+      "ref": "요한복음 21:15–19",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-act-9",
+      "chapter": "act.9",
+      "speaker": "아나니아",
+      "target": "사울",
+      "ref": "사도행전 9:17–18",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-act-10",
+      "chapter": "act.10",
+      "speaker": "고넬료",
+      "target": "베드로",
+      "ref": "사도행전 10:25–29",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-act-16",
+      "chapter": "act.16",
+      "speaker": "간수",
+      "target": "바울",
+      "ref": "사도행전 16:30–32",
+      "status": "pending"
+    },
+    {
+      "id": "encounter-act-26",
+      "chapter": "act.26",
+      "speaker": "아그립바",
+      "target": "바울",
+      "ref": "사도행전 26:28–29",
+      "status": "pending"
+    },
+    {
+      "id": "pair-2ki-25-nebuchadnezzar-gedaliah",
+      "chapter": "2ki.25",
+      "speaker": "느부갓네살",
+      "target": "그달리야",
+      "ref": "열왕기하 25:22–24",
+      "status": "pending"
+    }
+  ]
+}
