@@ -61,23 +61,19 @@ export function drawGimbap(c,frame=0,{rolling=false,direction='right'}={}){
  for(const [x,y,w,h,color] of [[21,29,2,1,'#d6d0bd'],[39,27,2,1,'#e2ddcb'],[20,39,2,2,'#e1dccb'],[40,41,2,1,'#d6d0bd'],[26,22,2,1,'#fffef4'],[35,24,2,1,'#fffef4'],[19,34,1,2,'#e4decc'],[42,35,1,2,'#ddd7c6']])rect(c,x,y,w,h,color);
  rect(c,15,28,2,4,'#2d6951');rect(c,47,39,2,4,'#2d6951');rect(c,44,26,2,3,'#387552');
  // Tiny eyes and smile sit on the rice just above the colorful filling.
- rect(c,27,25,2,3,'#302f35');rect(c,36,25,2,3,'#302f35');rect(c,30,30,6,1,'#965b50');
+ rect(c,25,44,3,4,'#20252a');rect(c,37,44,3,4,'#20252a');rect(c,22,48,4,2,'#ed9996');rect(c,40,48,4,2,'#ed9996');rect(c,30,49,6,1,'#965b50');
  // Rolled fillings: seasoned burdock, spinach, egg, carrot, cucumber and radish.
- rect(c,27,32,13,5,'#69482e');rect(c,29,33,9,2,'#8b6038');rect(c,30,34,2,1,'#bd8b52');rect(c,35,35,3,1,'#b9854d');
- rect(c,30,36,7,9,'#17834e');rect(c,32,37,2,7,'#36a35a');rect(c,35,38,1,5,'#0f6b43');
- rect(c,23,37,8,9,'#f1b53e');rect(c,24,38,6,6,'#ffd45c');rect(c,25,39,2,1,'#fff0a1');
- rect(c,37,36,9,12,'#e95730');rect(c,39,37,6,9,'#ff9a32');rect(c,40,39,4,2,'#ffc24a');rect(c,39,43,5,2,'#ffb13b');
- rect(c,31,43,7,5,'#edcf54');rect(c,32,44,5,3,'#ffe782');rect(c,21,44,5,4,'#cfad45');
+ disk(c,28,29,6,5,'#ef883c');disk(c,35,28,5,5,'#ffdb55');disk(c,31,23,4,3,'#65a94b');disk(c,33,35,5,3,'#e8ba4d');
+ rect(c,11,42,5,3,'#20252a');rect(c,48,42,5,3,'#20252a');rect(c,23,55,4,5,'#20252a');rect(c,37,55,4,5,'#20252a');
  // A crisp outer rim and two glints keep the circular silhouette readable.
  rect(c,29,17,6,1,'#315d4a');rect(c,18,30,1,5,'#e2dcc9');rect(c,45,45,2,4,'#163d35');
  if(rolling){
   const angle=gimbapRollAngle(Math.trunc(frame));
   const axis=gimbapRollAxis(direction);
-  if(axis==='vertical'&&Math.abs(Math.cos(angle))<.2){
-   c.clearRect(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE);drawEdgeOnGimbap(c,angle);
-  }else{
+  {
    const pixels=rotateGimbapPixels(c.getImageData(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE),angle,32,36,axis);
    c.clearRect(0,0,GIMBAP_FRAME_SIZE,GIMBAP_FRAME_SIZE);c.putImageData(pixels,0,0);
+   if(axis==='vertical'){c.globalCompositeOperation='destination-over';disk(c,32,36+Math.sin(angle)*5,21,Math.max(8,21*Math.abs(Math.cos(angle))),'#20252a');c.globalCompositeOperation='source-over';}
   }
  }
  // Keep the shadow horizontal and at a constant baseline; never rotate it.
