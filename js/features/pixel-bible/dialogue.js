@@ -32,7 +32,7 @@ export function dialogueCandidates(npcs,chapters,contexts=buildChapterDialogue(c
   const a=humans.find(n=>occurrenceMatches(n,relation.from)),b=humans.find(n=>occurrenceMatches(n,relation.to));
   if(!a||!b||a===b||Math.hypot(a.x-b.x,a.y-b.y)>8)continue;
   const lines=relationshipLines(a,b,relation,authoredLines);
-  for(const line of lines)if(!candidates.some(c=>c.kind==='pair'&&c.speaker===line.speaker&&c.target===line.target))candidates.push({...line,origin:'chapter-relation'});
+  for(const line of lines)if(line.special&&!candidates.some(c=>c.kind==='pair'&&c.speaker===line.speaker&&c.target===line.target))candidates.push({...line,origin:'chapter-relation'});
  }
  return candidates;
 

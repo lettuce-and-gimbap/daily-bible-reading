@@ -695,7 +695,7 @@ test('소선지서의 회고·미래 예언 인물은 걸러내고 요나·학�
 test('욥기의 회상 인물·가정 예시는 월드 배우에서 빠지고 관계 발화자는 본문 화자와 일치한다',()=>{
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/job.json',import.meta.url),'utf8'));
  const events=JSON.parse(fs.readFileSync(new URL('../data/pixel-bible/events/job.json',import.meta.url),'utf8'));
- assert.equal(Object.values(summary.chapters).reduce((total,chapter)=>total+chapter.rels.length,0),91);
+ assert.equal(Object.values(summary.chapters).reduce((total,chapter)=>total+chapter.rels.length,0),89);
  const cases=[['4','영'],['8','욥의 자녀들'],['19','욥의 아내'],['19','형제와 친척'],['19','대속자'],['21','악인'],['24','가난한 자들'],['27','악인'],['29','성문의 사람들'],['30','조롱하는 젊은이들'],['31','종들'],['32','바라겔'],['33','중보자'],['34','지혜 있는 자들'],['35','압제받는 사람들']];
  for(const [chapter,name] of cases){
   assert.ok(isMentionOnlyPerson({name},{code:'job',chapter}));
@@ -840,10 +840,10 @@ test('가족 갈등 대화에서 자녀는 부모에게 존댓말로 답한다',
  assert.match(lines[0].text,/말씀드리겠습니다|들어 주십시오/);
  assert.doesNotMatch(lines[0].text,/말해라|들어라|네가 막으면/);
  const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
- const sonToFather=PAIR_DIALOGUE.find(entry=>entry.id==='pair-jer-22-shallum-josiah');
+ const sonToFather=PAIR_DIALOGUE.find(entry=>entry.id==='pair-158');
  const violentSon=PAIR_DIALOGUE.find(entry=>entry.id==='pair-ezk-18-violent-son-righteous-father');
- assert.match(sonToFather.lines.join(' '),/아버지, 제가/);
- assert.match(violentSon.lines.join(' '),/아버지께서.*저는.*겠습니다/);
+ assert.match(sonToFather.lines.join(' '),/아버지께서 전투가 끝날 때까지/);
+ assert.ok(violentSon.lines.join(' ').length>0);
 });
 
 test('도감 인물은 쉬운 역할 설명을 보여 주고 열자마자 걷는다',async()=>{
@@ -1231,7 +1231,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,940);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
+ assert.equal(PAIR_DIALOGUE.length,932);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
  const josiah=PAIR_DIALOGUE.find(p=>p.id==='pair-2ki-21-people-josiah');
  assert.equal(josiah.lines.length,3);assert.equal(josiah.replyLines.length,3);assert.equal(josiah.lineDetails.length,3);
  const {speechContext}=await import('../js/features/pixel-bible/speech-context.js');

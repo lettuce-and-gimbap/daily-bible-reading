@@ -211,13 +211,16 @@ export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random
  ].map(({speaker,target,text,entry,ref})=>({
   id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,
   ref,lineDetail:entry?.lineDetails?.[index]||'',detailText:[entry?.detail,relation.text,generated?'관계와 사건 설명을 바탕으로 구성한 짧은 창작 상호작용입니다.':null].filter(Boolean).join(' ') + ` (${relation.ref})`,kind:'pair',origin:generated?'chapter-relation':'authored',pairIndex:index,
+  // Only an authored exchange or an explicitly event-specific contextual line
+  // may be presented as a special interaction. Kinship alone is not dialogue.
+  special:!!entry||!!contextualA||!!contextualB,
  }));
 }
 
 export function loveBoothExchange(a,b,relations){
  const relation=relations.find(r=>[r.from.name,r.to.name].includes(a.name)&&[r.from.name,r.to.name].includes(b.name));
  const lines=relation?relationshipLines(a,b,relation,null):[];
- if(lines.length===2)return {relation,lines,mode:'special'};
+ if(lines.length===2&&lines.every(line=>line.special))return {relation,lines,mode:'special'};
  if(relation)return {relation,lines:[],mode:'pending'};
  return {relation:null,mode:'awkward',lines:[
   {speaker:a,target:b,text:'어… 안녕하세요.',kind:'pair'},

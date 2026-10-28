@@ -642,7 +642,6 @@
         {"name":"하나님","role":"대신 갚아 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"히스기야의 신하들","to":"솔로몬","label":"잠언을 모은 이","kind":"other","directed":true,"weight":2,"verses":"1","note":"이 부분은 히스기야 왕의 신하들이 솔로몬의 잠언을 모아 엮은 거래요."},
         {"from":"하나님","to":"원수","label":"대신 갚으실 분","kind":"other","directed":true,"weight":1,"verses":"21-22","note":"원수가 배고프면 먹이라, 주님이 갚아 주실 거래요."}
       ],
       "places": [
