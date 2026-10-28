@@ -25,7 +25,7 @@ test('요한계시록은 상징적 인물·집단·영적 존재와 실제 인�
  assert.equal(resolveIdentity('안디바',{code:'rev',chapter:2}).id,'person:antipas-pergamum');
  assert.equal(resolveIdentity('니골라당',{code:'rev',chapter:2}).kind,'group');
  assert.equal(resolveIdentity('사탄의 회당',{code:'rev',chapter:3}).kind,'group');
- assert.equal(resolveIdentity('이십사 장로',{code:'rev',chapter:19}).kind,'spiritual');
+ assert.equal(resolveIdentity('24 장로',{code:'rev',chapter:19}).kind,'spiritual');
  assert.equal(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).kind,'person');
  assert.equal(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).id,resolveIdentity('백마 탄 자',{code:'rev',chapter:19}).id,'요한계시록 6장의 첫 흰 말 기사는 본문 해설의 주된 개혁주의 해석을 따라 그리스도와 통합');
  assert.ok(isMentionOnlyPerson({name:'발람'},{code:'rev',chapter:2}));

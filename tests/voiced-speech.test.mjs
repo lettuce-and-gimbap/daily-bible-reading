@@ -503,7 +503,7 @@ test('예레미야 36–40장의 두루마리·감옥 대화·성 함락 뒤 지
 test('예레미야 41–45장의 남은 자·애굽행 논쟁·바룩의 탄식을 본문 순서에 맞춘다',()=>{
  const jeremiah=JSON.parse(readFileSync(new URL('../data/summary/jer.json',import.meta.url),'utf8'));
  const rows=MAJOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='jer'&&row[1]>=41&&row[1]<=45);
- assert.ok(rows.some(row=>row[1]===41&&row[2]==='살아남은 열 명'&&row[7].includes('8')));
+ assert.ok(rows.some(row=>row[1]===41&&row[2]==='살아남은 10명'&&row[7].includes('8')));
  assert.ok(rows.some(row=>row[1]===42&&row[2]==='남은 백성'&&row[7].includes('5-6')));
  assert.ok(rows.some(row=>row[1]===42&&row[2]==='하나님'&&row[7].includes('10-12')));
  assert.ok(rows.some(row=>row[1]===43&&row[2]==='아사랴와 요하난 및 오만한 자들'));
@@ -589,7 +589,7 @@ test('에스겔 6–10장의 우상 환상·파수와 심판 장면은 말씀과
  const rows=MAJOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='ezk'&&row[1]>=6&&row[1]<=10);
  assert.ok(rows.some(row=>row[1]===6&&row[2]==='하나님'));
  assert.ok(rows.some(row=>row[1]===7&&row[2]==='하나님'));
- assert.ok(rows.some(row=>row[1]===8&&row[2]==='장로 칠십 명'&&row[7].includes('12')));
+ assert.ok(rows.some(row=>row[1]===8&&row[2]==='장로 70명'&&row[7].includes('12')));
  assert.ok(rows.some(row=>row[1]===9&&row[2]==='에스겔'&&row[7].includes('8')));
  assert.ok(rows.some(row=>row[1]===9&&row[2]==='베옷 입은 서기관'));
  assert.ok(rows.some(row=>row[1]===10&&row[2]==='하나님'));
@@ -745,7 +745,7 @@ test('에스겔 46–48장의 예배·생명수·땅 분배 환상은 발화와 
  assert.ok(rows.some(row=>row[1]===47&&row[2]==='하나님'&&row[7].includes('22-23')));
  assert.ok(!rows.some(row=>row[1]===47&&row[2]==='어부들'),'강가 어부는 환상 속 미래 장면이지 발화자가 아니다');
  assert.ok(rows.some(row=>row[1]===48&&row[2]==='하나님'&&row[7].includes('23-29')));
- assert.ok(!rows.some(row=>row[1]===48&&row[2]==='열두 지파'),'문 이름과 땅 분배의 서술을 지파들의 대사로 꾸미지 않는다');
+ assert.ok(!rows.some(row=>row[1]===48&&row[2]==='12 지파'),'문 이름과 땅 분배의 서술을 지파들의 대사로 꾸미지 않는다');
  for(const row of rows){
   assert.equal(row[7].length,row[4].length,`에스겔 ${row[1]} ${row[2]} 문장별 근거`);
   assert.equal(row[8].length,row[4].length,`에스겔 ${row[1]} ${row[2]} 상황 설명`);
@@ -789,7 +789,7 @@ test('다니엘 7–12장의 환상 문답과 예언 해석을 실제 발화자 
  assert.ok(rows.some(row=>row[1]===9&&row[2]==='가브리엘'&&row[7].includes('24-27')));
  assert.ok(rows.some(row=>row[1]===10&&row[2]==='다니엘'&&row[7].includes('16-17')));
  assert.ok(rows.some(row=>row[1]===11&&row[2]==='천사'&&row[7].includes('21-35')));
- assert.ok(rows.some(row=>row[1]===12&&row[2]==='한 천사'&&row[7].includes('6')));
+ assert.ok(rows.some(row=>row[1]===12&&row[2]==='1 천사'&&row[7].includes('6')));
  assert.ok(rows.some(row=>row[1]===12&&row[2]==='다니엘'&&row[7].includes('8')));
  assert.ok(!rows.some(row=>row[1]===12&&row[2]==='미가엘'),'미가엘의 등장은 서술이며 직접 발화가 아니다');
  for(const row of rows){
@@ -950,7 +950,7 @@ test('하박국·스바냐·학개의 질문과 예언 응답은 장별 실제 �
  assert.ok(zech.some(row=>row[1]===1&&row[2]==='여호와의 천사'&&row[7].includes('12')),'스가랴 환상 속 중보 탄원');
  assert.ok(zech.some(row=>row[1]===3&&row[2]==='하나님'&&row[7].includes('4')),'여호수아의 죄악을 제거하시는 하나님');
  assert.ok(zech.some(row=>row[1]===7&&row[2]==='사레셀과 레겜멜렉'&&row[7].includes('2-3')),'금식 질문을 실제 사절에게 연결');
- assert.ok(zech.some(row=>row[1]===8&&row[2]==='이방 백성 열 명'&&row[7].includes('23')),'열방이 함께 여호와를 찾음');
+ assert.ok(zech.some(row=>row[1]===8&&row[2]==='이방 백성 10명'&&row[7].includes('23')),'열방이 함께 여호와를 찾음');
  assert.ok(zech.some(row=>row[1]===9&&row[2]==='하나님'&&row[7].includes('9-10')),'겸손한 왕과 평화의 통치');
  assert.ok(zech.some(row=>row[1]===11&&row[2]==='스가랴'&&row[7].includes('12-13')),'은 삼십을 받은 목자 표징');
  assert.ok(zech.some(row=>row[1]===12&&row[2]==='다윗의 족속'&&row[7].includes('10-14')),'찔린 이를 바라보는 공동체의 애통');
@@ -1256,7 +1256,7 @@ test('요한복음 5–8장의 안식일 논쟁·생명의 떡·초막절 논쟁
   assert.ok(john.chapters[String(row[1])].people.some(person=>person.name===row[2]),`요한복음 ${row[1]}장 ${row[2]} 색인`);
   for(const ref of row[6])for(const part of ref.split(',')){const [start,end=start]=part.trim().split('-').map(Number);assert.ok(start>=1&&end<=maxVerse[row[1]],`요한복음 ${row[1]}장 ${ref} 범위`);}
  }
- assert.ok(rows.some(row=>row[1]===5&&row[2]==='서른여덟 해 된 병자'&&row[6].includes('7')),'도움을 청한 베데스다 병자');
+ assert.ok(rows.some(row=>row[1]===5&&row[2]==='38해 된 병자'&&row[6].includes('7')),'도움을 청한 베데스다 병자');
  assert.ok(rows.some(row=>row[1]===6&&row[2]==='시몬 베드로'&&row[6].includes('68-69')),'떠나지 않겠다고 고백한 베드로');
  assert.ok(rows.some(row=>row[1]===7&&row[2]==='니고데모'&&row[6].includes('50-52')),'공정한 심문을 요구한 니고데모');
  assert.ok(rows.some(row=>row[1]===8&&row[2]==='간음 중에 잡힌 여자'&&row[6].includes('11')),'정죄받지 않고 떠난 여자');

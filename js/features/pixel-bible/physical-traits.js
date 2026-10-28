@@ -23,8 +23,8 @@ export const PHYSICAL_TRAITS=[
  {names:['이삭'],books:['창세기'],minChapter:27,ref:'창세기 27:1',note:'늙어 시력이 약해진 시점. 어린 시절에는 적용하지 않음.',set:{hair:'#d2c6b4',beard:'#d2c6b4',softEyes:true}},
  {names:['다니엘','하나냐','미사엘','아사랴','사드락','메삭','아벳느고'],books:['다니엘'],chapters:[1],ref:'다니엘 1:4–6',note:'왕궁 교육에 선발된 용모가 준수한 소년들. 같은 이름의 제사장과 구분.',set:{hairSheen:true,eyeSpacing:0}},
  {names:['안나'],books:['누가복음'],chapters:[2],ref:'누가복음 2:36–37',note:'고령의 여선지자. 흰 머리 표현은 나이를 나타내는 창작 도안.',set:{hair:'#d2c6b4',hood:false,shawl:true}},
- {names:['바르실래'],books:['사무엘하'],chapters:[17,19],ref:'사무엘하 19:32',note:'여든 살의 노인. 머리와 수염 색은 나이를 나타내는 창작 도안.',set:{hair:'#d2c6b4',beard:'#d2c6b4'}},
- {names:['므비보셋'],books:['사무엘하'],chapters:[4,9,16,19],ref:'사무엘하 4:4; 9:13',note:'요나단의 아들로 두 발에 장애가 있음. 기존 비대칭 걸음과 함께 표시.',set:{unevenStance:true}},
+ {names:['바르실래'],books:['사무엘하'],chapters:[17,19],ref:'사무엘하 19:32',note:'80살의 노인. 머리와 수염 색은 나이를 나타내는 창작 도안.',set:{hair:'#d2c6b4',beard:'#d2c6b4'}},
+ {names:['므비보셋'],books:['사무엘하'],chapters:[4,9,16,19],ref:'사무엘하 4:4; 9:13',note:'요나단의 아들로 2발에 장애가 있음. 기존 비대칭 걸음과 함께 표시.',set:{unevenStance:true}},
  {names:['여섯 손가락 거인','가드의 거인'],books:['역대상','사무엘하'],ref:'역대상 20:6; 사무엘하 21:20',note:'큰 체격과 손발의 여섯 가락. 작은 도트에서 가락 수를 정확하게 그리지는 않음.',set:{broadHands:true}},
  {names:['느부갓네살'],books:['다니엘'],chapters:[4],minVerse:33,ref:'다니엘 4:33',note:'머리털과 손톱이 길어진 사건 시점. 장 전체 선택에는 앞뒤 시점을 구분할 수 없어 고정하지 않음.',set:{longHair:true,unkempt:true,crown:false}},
 ];

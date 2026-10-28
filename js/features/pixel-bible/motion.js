@@ -6,7 +6,7 @@ export function characterMotion(n,chapters=[]) {
  const seed=[...(n.identity?.id||n.name)].reduce((s,c)=>s+c.codePointAt(0),0);
  const profile={key:['gentle','lively','steady'][seed%3],speed:[2.6,2.9,2.7][seed%3],swing:[.1,.17,.07][seed%3],frequency:[5,7,4][seed%3],phase:(seed%13)/2,limp:false,bounce:0,evidence:'이름별 리듬과 매달림은 창작 동작'};
  if(n.name==='야곱'&&has('gen',32,50))Object.assign(profile,{key:'limp',limp:true,speed:1.8,swing:.07,evidence:'창세기 32:31 · 허벅지로 인해 절뚝거리는 걸음'});
- if(/므비보셋/.test(n.name)&&has('2sa',4,21))Object.assign(profile,{key:'limp',limp:true,speed:1.5,swing:.06,evidence:'사무엘하 4:4, 9:13 · 두 발의 장애를 반영한 느린 비대칭 걸음'});
+ if(/므비보셋/.test(n.name)&&has('2sa',4,21))Object.assign(profile,{key:'limp',limp:true,speed:1.5,swing:.06,evidence:'사무엘하 4:4, 9:13 · 2발의 장애를 반영한 느린 비대칭 걸음'});
  if(n.name==='모세')Object.assign(profile,{key:'steady',swing:.05,frequency:4,evidence:'지팡이를 든 인물의 균형을 고려한 창작 매달림'});
  if(n.name==='삭개오'&&has('luk',19))Object.assign(profile,{key:'climber',swing:.13,frequency:6,evidence:'누가복음 19:4 · 나무에 올라가는 행동을 참고한 매달림'});
  if(n.name==='엘리야'&&has('1ki',18))Object.assign(profile,{key:'runner',speed:3.6,swing:.12,evidence:'열왕기상 18:46 · 아합 앞에서 달리는 행동'});

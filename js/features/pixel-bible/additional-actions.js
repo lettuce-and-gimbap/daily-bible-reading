@@ -18,7 +18,7 @@ const rows=[
  ['basket treasure-chest moneybag','count:안의 물건 하나씩 세기|sort:내용물을 나누어 고르기|cover:내용물 위를 덮기|close:입구를 여며 닫기'],
  ['lamp lampstand torch candle oven','shield:손으로 눈앞 열기 가리기|fan:안전한 거리에서 바람 보내기|tend:긴 막대로 불 살피기|trim:심지 주변 손질하기'],
  ['censer incense','raise:향 그릇을 높이 받치기|waft:손으로 향을 가볍게 보내기|close:뚜껑 덮어 정리하기'],
- ['bread barley-bread manna fig fruit','portion:작은 몫으로 나누기|share:한 몫을 앞으로 내밀기|break:두 손으로 조각 나누기|serve:먹을 것을 앞에 놓기'],
+ ['bread barley-bread manna fig fruit','portion:작은 몫으로 나누기|share:한 몫을 앞으로 내밀기|break:2 손으로 조각 나누기|serve:먹을 것을 앞에 놓기'],
  ['seed mustard salt','portion:손바닥에 조금씩 덜기|place:고른 것 따로 놓기|share:작은 몫을 나누어 내밀기'],
  ['flour dough leaven','knead:양손 번갈아 주무르기|roll:손바닥으로 굴려 모으기|divide:반죽을 두 몫으로 가르기|sprinkle:위에 가루 흩뿌리기'],
  ['seal signet key nail','press:작업면에 맞추어 누르기|turn:손끝으로 방향 돌리기|brush:틈에 낀 먼지 털기'],

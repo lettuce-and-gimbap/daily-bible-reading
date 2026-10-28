@@ -57,7 +57,7 @@ export function creatureSpeech(n,chapters=[]){
  const has=(code,chap)=>chapters.some(c=>c.code===code&&Number(c.chap)===chap&&n.refs?.includes(`${c.name||c.code} ${chap}${code==='psa'?'편':'장'}`));
  let texts=[],ref='';
  if(n.creature?.id==='snake'&&has('gen',3)){texts=['동산의 나무 열매를 먹지 말라고 하셨느냐?','그 열매를 먹어도 죽지 않는다고 말하마.'];ref='창세기 3:1–5';}
- if(n.creature?.id==='donkey'&&has('num',22)){texts=['내가 무엇을 했기에 세 번이나 때리십니까?','내가 언제 주인님께 이렇게 한 적이 있었습니까?'];ref='민수기 22:28–30';}
+ if(n.creature?.id==='donkey'&&has('num',22)){texts=['내가 무엇을 했기에 3번이나 때리십니까?','내가 언제 주인님께 이렇게 한 적이 있었습니까?'];ref='민수기 22:28–30';}
  return texts.map((text,i)=>({id:`creature:${n.creature.id}:${i}`,speaker:n,text,ref,kind:'solo',origin:'biblical-creature-speech',detailText:'이 장에서 발화가 기록된 생물의 말을 짧게 재구성했습니다. 다른 장의 같은 종에는 이 대사를 적용하지 않습니다.'}));
 }
 const diets={grazer:new Set(['field','grain','wheat','barley','water','well','tree','vine','fig-tree']),bird:new Set(['field','grain','wheat','barley','seed','water','tree','palm','cedar','basket']),predator:new Set(['water','well','tree','stone','bench']),fish:new Set(['water','water-supply','well']),snake:new Set(['tree','stone','bush']),insect:new Set(['tree','field','lily','hyssop','reed','vine']),hopper:new Set(['water','well','reed','stone'])};

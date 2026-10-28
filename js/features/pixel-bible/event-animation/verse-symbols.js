@@ -31,7 +31,7 @@ export function drawVerseSymbols(c,kind,sample,{r,prop,text,phase}){
    if(index<2&&row*8+col>Math.floor((index+progress)*12))continue;
    r(x-5,y-12,10,10,'#d9bb91');r(x-8,y-1,16,13,'#658173');r(x-7,y+11,5,8,'#3d4d4b');r(x+2,y+11,5,8,'#3d4d4b');
   }
-  if(index>=3){r(180,230,360,3,'#d6c58f');text(sample.plan.diagram.labels.some(l=>l.includes('오천'))?'오천 명을 나타내는 무리':'백 명씩 · 오십 명씩',360,257,13,'#304b50');}
+  if(index>=3){r(180,230,360,3,'#d6c58f');text(sample.plan.diagram.labels.some(l=>l.includes('오천'))?'5000명을 나타내는 무리':'백 명씩 · 오십 명씩',360,257,13,'#304b50');}
   return true;
  }
  if(kind==='scroll-command'){

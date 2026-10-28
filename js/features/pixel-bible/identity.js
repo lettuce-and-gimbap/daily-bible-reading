@@ -29,7 +29,7 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='lam'&&[1,2].includes(Number(chapter))&&['예루살렘(시온)','딸 시온'].includes(name)||code==='ezk'&&Number(chapter)===16&&name==='예루살렘')return '예루살렘(시온)';
   if(code==='lam'&&[4,5].includes(Number(chapter))&&['시온의 아들들','유다 백성'].includes(name))return '유다 백성';
   if(code==='lam'&&Number(chapter)===4&&name==='기름 부음 받은 왕')return '시드기야(유다 왕)';
-  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 칠십 명'].includes(name))return '에스겔 앞에 모인 장로들';
+  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 70명'].includes(name))return '에스겔 앞에 모인 장로들';
   if(code==='ezk'&&[9,10].includes(Number(chapter))&&['베옷 입은 서기관','베옷 입은 사람'].includes(name))return '세마포 입은 사람';
   if(code==='ezk'&&Number(chapter)>=40&&Number(chapter)<=48&&['놋 같은 사람','측량하는 사람'].includes(name))return '성전 환상의 안내자';
   if(code==='dan'&&['다니엘','벨드사살','다니엘(벨드사살)'].includes(name))return '다니엘';
@@ -79,7 +79,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
     if(name==='모세')return {...id('person','moses'),canonicalName:'모세'};
     if(name==='안디바')return {...id('person','antipas-pergamum'),canonicalName:'안디바'};
     if(['니골라당','사탄의 회당','흰옷 입은 몇 명','순교한 영혼들','여러 형제','이억 마병대','짐승 경배자','땅의 임금들','천하 왕들','땅의 왕들','땅의 상인들','선장과 선원들','목마른 자','죽은 자들','이기는 자들'].includes(name))return id('group',`revelation:${name}`);
-    if(['이십사 장로','장로 중 한 사람','장로 중 하나'].includes(name))return id('spiritual',`revelation:${name}`);
+    if(['24 장로','장로 중 1 사람','장로 중 하나'].includes(name))return id('spiritual',`revelation:${name}`);
     if(name==='네 생물 중 하나')return id('spiritual','revelation:one-of-four-living-creatures');
     if(name==='일곱 우레')return id('spiritual','revelation:seven-thunders');
     if(name==='측량을 명하신 이')return id('spiritual','revelation:temple-measure-voice');
@@ -91,13 +91,13 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
     if(['용','붉은 용','옛 뱀','사탄','마귀','옛 뱀 마귀 사탄'].includes(name))return {...id('spiritual','satan'),canonicalName:'사탄'};
     if(['바다에서 나온 짐승','붉은빛 짐승','무저갱의 짐승','짐승'].includes(name))return {...id('spiritual','beast-from-sea'),canonicalName:'짐승'};
     if(['땅에서 올라온 짐승','거짓 선지자'].includes(name))return {...id('spiritual','beast-from-earth'),canonicalName:'거짓 선지자'};
-    if(['네 생물','네 천사','일곱 교회의 사자','일곱 천사','모든 천사','수많은 천사'].includes(name))return id('spiritual',`revelation:${name}`);
+    if(['네 생물','네 천사','7 교회의 사자','7 천사','모든 천사','수많은 천사'].includes(name))return id('spiritual',`revelation:${name}`);
     if(/천사/.test(name))return id('spiritual',`revelation:${name}`);
     if(['하늘의 음성','하늘의 큰 음성','성전의 음성','제단의 음성','보좌의 음성'].includes(name))return id('spiritual',`revelation:${name}`);
     if(['음녀','큰 음녀','바벨론'].includes(name))return {...id('group','babylon-symbolic-city'),canonicalName:'바벨론'};
     if(['새 예루살렘','어린 양의 아내','신부'].includes(name))return {...id('group','new-jerusalem-bride'),canonicalName:'새 예루살렘'};
     if(['해를 옷 입은 여자','여자의 남은 자손'].includes(name))return {...id('group','woman-and-faithful-remnant'),canonicalName:'하나님의 백성'};
-    if(['열 왕','열 뿔'].includes(name))return {...id('group','ten-kings'),canonicalName:'열 왕'};
+    if(['10 왕','열 뿔'].includes(name))return {...id('group','ten-kings'),canonicalName:'10 왕'};
     if(name==='두 증인'||name==='십사만 사천'||name==='큰 무리'||name==='모든 피조물')return id('group',`revelation:${name}`);
     if(name==='이세벨'&&Number(chapter)===2)return {...id('person','jezebel-thyatira'),canonicalName:'이세벨'};
     if(name==='발람')return {...id('person','balaam'),canonicalName:'발람'};
@@ -148,7 +148,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(spiritual.test(name))return id('spiritual',name);
   if(name==='미가엘')return id('spiritual','michael');
   if(name==='가브리엘')return id('spiritual','gabriel');
-  if(code==='dan'&&['거룩한 순찰자','넷째 사람','바사 왕국의 군주','헬라 군주','세마포 입은 이','한 천사','인자 같은 이'].includes(name))return id('spiritual',`daniel-vision:${name}`);
+  if(code==='dan'&&['거룩한 순찰자','넷째 사람','바사 왕국의 군주','헬라 군주','세마포 입은 이','1 천사','인자 같은 이'].includes(name))return id('spiritual',`daniel-vision:${name}`);
   if(code==='dan'&&['다니엘','벨드사살','다니엘(벨드사살)'].includes(name))return {...id('person','daniel'),canonicalName:'다니엘'};
   if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return {...id('person','jehoiachin-king-of-judah'),canonicalName:'여호야긴(여고냐)'};
   if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return {...id('person','zedekiah-king-of-judah'),canonicalName:'시드기야(유다 왕)'};
@@ -156,7 +156,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='lam'&&[4,5].includes(Number(chapter))&&['시온의 아들들','유다 백성'].includes(name))return {...id('group','lamentations-judah-survivors'),canonicalName:'유다 백성',mergeAliases:true};
   if(code==='lam'&&Number(chapter)===4&&name==='에돔')return id('group','edom');
   if(code==='lam'&&Number(chapter)===4&&name==='기름 부음 받은 왕')return {...id('person','zedekiah-king-of-judah'),canonicalName:'시드기야(유다 왕)'};
-  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 칠십 명'].includes(name))return {...id('group','ezekiel-elders-in-vision'),canonicalName:'에스겔 앞에 모인 장로들',mergeAliases:true};
+  if(code==='ezk'&&Number(chapter)===8&&['유다 장로들','장로 70명'].includes(name))return {...id('group','ezekiel-elders-in-vision'),canonicalName:'에스겔 앞에 모인 장로들',mergeAliases:true};
   if(code==='ezk'&&[9,10].includes(Number(chapter))&&['베옷 입은 서기관','베옷 입은 사람'].includes(name))return {...id('spiritual','ezekiel-linen-clad-executioner'),canonicalName:'세마포 입은 사람',mergeAliases:true};
   if(code==='ezk'&&Number(chapter)>=40&&Number(chapter)<=48&&['놋 같은 사람','측량하는 사람'].includes(name))return {...id('spiritual','ezekiel-temple-vision-guide'),canonicalName:'성전 환상의 안내자',mergeAliases:true};
   if(code==='ezk'&&Number(chapter)===19&&name==='첫째 사자 새끼')return {...id('person','jehoahaz-king-of-judah'),canonicalName:'여호아하스'};

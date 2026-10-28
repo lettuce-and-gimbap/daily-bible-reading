@@ -33,7 +33,7 @@ test('설교에 인용된 조상은 현장 배우가 되지 않고 병자는 치
  assert.deepEqual(find('mrk','달리다굼').actors,['예수','야이로의 딸']);
  assert.equal(find('mat','변화산').animation.motif,'transfiguration');
  assert.equal(find('luk','구유에 누인 아기').animation.portrayals.예수.scale,0.5);
- assert.equal(find('mat','사천 명을 먹이심').animation.basketCount,7);
+ assert.equal(find('mat','5000명을 먹이심').animation.basketCount,12);
  assert.equal(find('jhn','왕의 신하의 아들').animation.lead,'왕의 신하');assert.equal(find('jhn','왕의 신하의 아들').animation.target,'예수');
 });
 test('배우 없는 가르침은 거짓 배치 이스터에그로 자동 해금하지 않는다',()=>{

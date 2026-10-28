@@ -6,8 +6,8 @@ chapters[1].push({"verse": 2, "title": "목격자의 전승", "study": "목격�
 chapters[1].push({"verse": 3, "title": "데오빌로에게 보내는 기록", "study": "근원부터 살핀 일을 차례대로 정리해 데오빌로에게 보내요.", "actors": ["기록자", "목격자들"], "actions": ["inspect", "read", "write", "fold", "extend", "stand"], "setting": "chamber", "mode": "illustration", "prop": "scroll"});
 chapters[1].push({"verse": 4, "title": "배운 사실을 확신하도록", "study": "이미 배운 내용을 확인하려는 기록의 목적을 설명해요.", "actors": ["기록자", "목격자들"], "actions": ["read", "inspect", "point", "listen", "look", "stand"], "setting": "chamber", "mode": "illustration", "prop": "scroll"});
 chapters[1].push({"verse": 5, "title": "사가랴와 엘리사벳", "study": "제사장 사가랴와 아론 가문의 엘리사벳을 소개해요.", "actors": ["사가랴", "엘리사벳"], "actions": ["walk", "gather", "look", "listen", "bow", "stand"], "setting": "chamber"});
-chapters[1].push({"verse": 6, "title": "계명을 따라 살아가는 부부", "study": "두 사람이 계명과 규례를 따라 살아가는 모습을 보여요.", "actors": ["사가랴", "엘리사벳"], "actions": ["read", "listen", "bow", "walk", "reach", "stand"], "setting": "chamber"});
-chapters[1].push({"verse": 7, "title": "자녀 없이 늙어 간 부부", "study": "나이 많은 두 사람에게 자녀가 없었음을 알려요. 이를 잘못이나 불신의 결과로 그리지 않아요.", "actors": ["사가랴", "엘리사벳"], "actions": ["sit", "look", "lower", "reach", "wait", "stand"], "setting": "chamber"});
+chapters[1].push({"verse": 6, "title": "계명을 따라 살아가는 부부", "study": "2 사람이 계명과 규례를 따라 살아가는 모습을 보여요.", "actors": ["사가랴", "엘리사벳"], "actions": ["read", "listen", "bow", "walk", "reach", "stand"], "setting": "chamber"});
+chapters[1].push({"verse": 7, "title": "자녀 없이 늙어 간 부부", "study": "나이 많은 2 사람에게 자녀가 없었음을 알려요. 이를 잘못이나 불신의 결과로 그리지 않아요.", "actors": ["사가랴", "엘리사벳"], "actions": ["sit", "look", "lower", "reach", "wait", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 8, "title": "제사장 직무의 차례", "study": "사가랴가 자기 반열의 차례에 성전에서 직무를 맡아요.", "actors": ["사가랴", "백성들"], "actions": ["walk", "inspect", "receive", "bow", "stand", "wait"], "setting": "temple"});
 chapters[1].push({"verse": 9, "title": "분향하도록 뽑힘", "study": "제비로 분향 직무에 뽑힌 사가랴가 성소에 들어가요.", "actors": ["사가랴", "백성들"], "actions": ["receive", "inspect", "walk", "place", "light", "stand"], "setting": "temple"});
 chapters[1].push({"verse": 10, "title": "밖에서 기도하는 백성", "study": "분향 시간에 백성들은 성소 밖에서 기도해요.", "actors": ["백성들"], "actions": ["gather", "kneel", "pray", "pray", "rise", "wait"], "setting": "temple"});
@@ -24,7 +24,7 @@ chapters[1].push({"verse": 20, "title": "말하지 못할 기간", "study": "약
 chapters[1].push({"verse": 21, "title": "늦어지는 사가랴를 기다림", "study": "백성들이 성소 밖에서 기다리며 사가랴가 늦는 것을 의아해해요.", "actors": ["백성들"], "actions": ["gather", "wait", "look", "turn", "inspect", "wait"], "setting": "temple"});
 chapters[1].push({"verse": 22, "title": "말 대신 몸짓으로 전함", "study": "밖으로 나온 사가랴가 말하지 못하고 손짓하자 백성들이 환상을 보았음을 알아차려요.", "actors": ["사가랴", "백성들"], "actions": ["walk", "signal", "point", "cover-mouth", "listen", "wait"], "setting": "temple"});
 chapters[1].push({"verse": 23, "title": "직무를 마치고 귀가함", "study": "사가랴가 직무 기간을 마치고 집으로 돌아가요.", "actors": ["사가랴", "백성들"], "actions": ["bow", "turn", "walk", "walk", "halt", "stand"], "setting": "chamber"});
-chapters[1].push({"verse": 24, "title": "임신 뒤 다섯 달의 머묾", "study": "엘리사벳이 임신하고 5개월 동안 밖으로 나서지 않아요.", "actors": ["엘리사벳"], "actions": ["look", "sit", "lower", "reach", "wait", "stand"], "setting": "chamber"});
+chapters[1].push({"verse": 24, "title": "임신 뒤 5달의 머묾", "study": "엘리사벳이 임신하고 5개월 동안 밖으로 나서지 않아요.", "actors": ["엘리사벳"], "actions": ["look", "sit", "lower", "reach", "wait", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 25, "title": "돌보심을 감사하는 엘리사벳", "study": "엘리사벳이 자신을 돌보신 주께 감사해요. 자녀 없는 삶의 가치를 낮추는 묘사는 덧붙이지 않아요.", "actors": ["엘리사벳"], "actions": ["look", "speak", "bow", "pray", "smile", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 26, "title": "가브리엘이 나사렛에 오다", "study": "여섯째 달에 가브리엘이 하나님의 보내심을 받아 나사렛에 와요.", "actors": ["가브리엘"], "actions": ["walk", "inspect", "halt", "look", "wait", "stand"], "setting": "road"});
 chapters[1].push({"verse": 27, "title": "요셉과 약혼한 마리아", "study": "가브리엘이 다윗 가문의 요셉과 약혼한 마리아를 찾아가요.", "actors": ["가브리엘", "마리아"], "actions": ["walk", "walk", "look", "listen", "wait", "stand"], "setting": "chamber"});
@@ -36,7 +36,7 @@ chapters[1].push({"verse": 32, "title": "다윗의 왕위를 이을 아들", "st
 chapters[1].push({"verse": 33, "title": "끝이 없는 나라", "study": "야곱의 집을 영원히 다스릴 나라를 약속해요.", "actors": ["가브리엘", "마리아"], "actions": ["speak", "extend", "listen", "look", "wait", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 34, "title": "어떻게 이루어지는지 묻는 마리아", "study": "마리아가 이 일이 어떻게 이루어지는지 물어요.", "actors": ["마리아", "가브리엘"], "actions": ["look", "speak", "speak", "listen", "wait", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 35, "title": "성령의 임재와 능력을 알림", "study": "가브리엘이 성령의 임재와 지극히 높으신 이의 능력을 설명해요.", "actors": ["가브리엘", "마리아"], "actions": ["speak", "extend", "listen", "lower", "wait", "stand"], "setting": "chamber"});
-chapters[1].push({"verse": 36, "title": "엘리사벳의 임신을 증거로 들다", "study": "천사가 엘리사벳도 임신한 지 여섯 달이 되었다고 알려요.", "actors": ["가브리엘", "마리아", "엘리사벳"], "actions": ["speak", "point", "listen", "look", "listen", "stand"], "setting": "chamber"});
+chapters[1].push({"verse": 36, "title": "엘리사벳의 임신을 증거로 들다", "study": "천사가 엘리사벳도 임신한 지 6달이 되었다고 알려요.", "actors": ["가브리엘", "마리아", "엘리사벳"], "actions": ["speak", "point", "listen", "look", "listen", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 37, "title": "하나님의 말씀은 능하지 못함이 없음", "study": "하나님께 불가능한 일이 없다는 말을 전해요.", "actors": ["가브리엘", "마리아"], "actions": ["speak", "point", "listen", "bow", "wait", "stand"], "setting": "chamber"});
 chapters[1].push({"verse": 38, "title": "말씀대로 이루어지기를 답함", "study": "마리아가 말씀대로 이루어지기를 받아들이자 가브리엘이 떠나요.", "actors": ["마리아", "가브리엘"], "actions": ["speak", "bow", "listen", "turn", "walk", "turn"], "setting": "chamber"});
 chapters[1].push({"verse": 39, "title": "산골 마을로 서둘러 감", "study": "마리아가 일어나 유대 산골의 한 동네를 향해 서둘러 가요.", "actors": ["마리아"], "actions": ["rise", "gather", "walk", "walk", "run", "halt"], "setting": "road"});
@@ -59,7 +59,7 @@ chapters[1].push({"verse": 55, "title": "아브라함에게 하신 약속을 기
 chapters[1].push({"verse": 56, "title": "석 달 함께한 뒤 집으로 돌아감", "study": "마리아가 엘리사벳과 석 달쯤 지낸 뒤 집으로 돌아가요.", "actors": ["마리아", "엘리사벳"], "actions": ["gather", "reach", "turn", "walk", "walk", "turn"], "setting": "road"});
 chapters[1].push({"verse": 57, "title": "요한의 탄생", "study": "엘리사벳이 아들을 낳고 가족이 아이를 맞이해요.", "actors": ["엘리사벳", "사가랴"], "actions": ["reach", "cradle", "smile", "gather", "stand", "wait"], "setting": "house"});
 chapters[1].push({"verse": 58, "title": "함께 기뻐하는 이웃과 친족", "study": "이웃과 친족이 주께서 베푸신 긍휼을 듣고 함께 기뻐해요.", "actors": ["이웃과 친족", "엘리사벳", "사가랴"], "actions": ["gather", "listen", "smile", "speak", "reach", "stand"], "setting": "house"});
-chapters[1].push({"verse": 59, "title": "팔 일째 할례와 이름 제안", "study": "팔 일째 사람들이 할례를 위해 모여 아버지의 이름을 따르자고 제안해요.", "actors": ["이웃과 친족", "사가랴", "엘리사벳"], "actions": ["gather", "point", "speak", "listen", "wait", "stand"], "setting": "house"});
+chapters[1].push({"verse": 59, "title": "8일째 할례와 이름 제안", "study": "8일째 사람들이 할례를 위해 모여 아버지의 이름을 따르자고 제안해요.", "actors": ["이웃과 친족", "사가랴", "엘리사벳"], "actions": ["gather", "point", "speak", "listen", "wait", "stand"], "setting": "house"});
 chapters[1].push({"verse": 60, "title": "요한이라 하라는 엘리사벳", "study": "엘리사벳이 아이의 이름은 요한이라고 분명히 말해요.", "actors": ["엘리사벳", "이웃과 친족"], "actions": ["speak", "point", "listen", "look", "wait", "stand"], "setting": "house"});
 chapters[1].push({"verse": 61, "title": "가문에 없는 이름이라며 의아해함", "study": "친족들은 가문에 요한이라는 이름이 없다고 말해요.", "actors": ["이웃과 친족", "엘리사벳"], "actions": ["look", "speak", "turn", "listen", "wait", "stand"], "setting": "house"});
 chapters[1].push({"verse": 62, "title": "사가랴에게 몸짓으로 묻다", "study": "사람들이 말하지 못하는 사가랴에게 몸짓으로 이름을 물어요.", "actors": ["이웃과 친족", "사가랴"], "actions": ["turn", "signal", "point", "listen", "look", "wait"], "setting": "house"});
@@ -125,7 +125,7 @@ chapters[2].push({"verse": 38, "title": "아기에 대해 전하는 안나", "st
 chapters[2].push({"verse": 39, "title": "나사렛으로 귀가함", "study": "율법에 따른 일을 마치고 가족이 나사렛으로 돌아가요.", "actors": ["요셉", "마리아", "예수"], "actions": ["gather", "carry", "turn", "walk", "walk", "stand"], "setting": "road", "portrayals": {"예수": {"scale": 0.5, "hideBeard": true, "lie": true}}});
 chapters[2].push({"verse": 40, "title": "아이가 자라 강해짐", "study": "아이가 자라고 지혜가 충만하며 은혜가 함께해요.", "actors": ["예수"], "actions": ["sit", "rise", "look", "read", "walk", "stand"], "setting": "chamber", "portrayals": {"예수": {"scale": 0.75, "hideBeard": true}}});
 chapters[2].push({"verse": 41, "title": "해마다 유월절에 올라감", "study": "부모가 해마다 유월절에 예루살렘을 찾아가요.", "actors": ["요셉", "마리아"], "actions": ["gather", "turn", "walk", "walk", "halt", "stand"], "setting": "road"});
-chapters[2].push({"verse": 42, "title": "열두 살의 유월절", "study": "12세 예수가 부모와 절기 관례를 따라 올라가요.", "actors": ["예수", "요셉", "마리아"], "actions": ["walk", "look", "gather", "walk", "halt", "stand"], "setting": "road", "portrayals": {"예수": {"scale": 0.75, "hideBeard": true}}});
+chapters[2].push({"verse": 42, "title": "12살의 유월절", "study": "12세 예수가 부모와 절기 관례를 따라 올라가요.", "actors": ["예수", "요셉", "마리아"], "actions": ["walk", "look", "gather", "walk", "halt", "stand"], "setting": "road", "portrayals": {"예수": {"scale": 0.75, "hideBeard": true}}});
 chapters[2].push({"verse": 43, "title": "예루살렘에 남은 소년", "study": "절기가 끝난 뒤 예수는 남았으나 부모는 알지 못해요.", "actors": ["예수", "요셉", "마리아"], "actions": ["look", "turn", "wait", "walk", "halt", "stand"], "setting": "chamber", "portrayals": {"예수": {"scale": 0.75, "hideBeard": true}}});
 chapters[2].push({"verse": 44, "title": "일행에서 아이를 찾음", "study": "하루 길을 간 부모가 친족과 지인 사이에서 예수를 찾아요.", "actors": ["요셉", "마리아", "사람들"], "actions": ["walk", "halt", "inspect", "speak", "look", "wait"], "setting": "road"});
 chapters[2].push({"verse": 45, "title": "다시 예루살렘으로 돌아감", "study": "찾지 못한 부모가 예루살렘으로 돌아가며 찾아요.", "actors": ["요셉", "마리아"], "actions": ["look", "turn", "walk", "inspect", "walk", "halt"], "setting": "road"});
@@ -225,7 +225,7 @@ chapters[4].push({"verse": 44, "title": "여러 회당을 다니며 복음을 �
 
 chapters[5]=[];additionalPeople[5]=["시몬","무리","어부들","야고보","요한"].map(name=>({name,role:"누가복음 5장 관련 인물",refs:["누가복음 5장"]}));
 chapters[5].push({"verse": 1, "title": "호숫가에 모인 무리", "study": "무리가 말씀을 들으려고 예수 곁에 모여요.", "actors": ["예수", "무리"], "actions": ["stand", "gather", "speak", "listen", "look", "stand"], "setting": "shore", "prop": "boat", "propFixed": false});
-chapters[5].push({"verse": 2, "title": "그물을 씻는 어부들", "study": "배 두 척 곁에서 어부들이 그물을 씻어요.", "actors": ["어부들", "예수"], "actions": ["reach", "grasp", "scoop", "lower", "inspect", "stand"], "setting": "shore", "prop": "net", "propFixed": false});
+chapters[5].push({"verse": 2, "title": "그물을 씻는 어부들", "study": "배 2척 곁에서 어부들이 그물을 씻어요.", "actors": ["어부들", "예수"], "actions": ["reach", "grasp", "scoop", "lower", "inspect", "stand"], "setting": "shore", "prop": "net", "propFixed": false});
 chapters[5].push({"verse": 3, "title": "시몬의 배에서 가르치심", "study": "예수께서 시몬의 배를 조금 떼어 놓게 하시고 앉아서 가르치세요.", "actors": ["예수", "시몬", "무리"], "actions": ["walk", "sit", "signal", "row", "speak", "listen"], "setting": "shore", "prop": "boat", "propFixed": false});
 chapters[5].push({"verse": 4, "title": "깊은 곳에 그물을 내리라", "study": "가르침을 마치고 시몬에게 깊은 곳에서 그물을 내리라고 하세요.", "actors": ["예수", "시몬"], "actions": ["speak", "point", "listen", "row", "reach", "stand"], "setting": "shore", "prop": "net", "propFixed": false});
 chapters[5].push({"verse": 5, "title": "말씀을 의지한 시몬", "study": "시몬이 밤새 허탕쳤지만 말씀을 따라 그물을 내리겠다고 답해요.", "actors": ["시몬", "예수"], "actions": ["speak", "lower", "listen", "grasp", "lift", "throw"], "setting": "shore", "prop": "net", "propFixed": false});
@@ -263,13 +263,13 @@ addLukeScenes(5,[
 [33,"금식에 관한 질문","사람들이 요한의 제자와 바리새파는 금식하는데 예수의 제자는 먹는다고 물어요.",["요한의 제자들","예수","바리새인과 서기관"],"house","table",["speak","point","look","listen","turn","wait"]],
 [34,"신랑과 함께 있는 손님","예수께서 신랑과 함께 있는 잔치 손님에게 금식을 요구할 수 있느냐고 물으세요.",["예수","요한의 제자들","잔치 손님들"],"house","table",["speak","gesture","look","listen","smile","wait"]],
 [35,"신랑을 빼앗길 날","신랑을 빼앗길 날이 오면 그때는 제자들이 금식할 것이라고 하세요.",["예수","제자들"],"house","table",["look","speak","lower","listen","mourn","wait"]],
-[36,"새 옷과 낡은 옷의 비유","새 옷에서 조각을 떼어 낡은 옷에 붙이면 두 옷 모두 어울리지 않아요.",["예수","무리"],"house","cloth",["hold","tear","place","inspect","speak","listen"]],
+[36,"새 옷과 낡은 옷의 비유","새 옷에서 조각을 떼어 낡은 옷에 붙이면 2 옷 모두 어울리지 않아요.",["예수","무리"],"house","cloth",["hold","tear","place","inspect","speak","listen"]],
 [37,"새 포도주와 낡은 부대","새 포도주를 낡은 가죽 부대에 담으면 부대가 터지고 포도주가 쏟아져요.",["예수","무리"],"house","wineskin",["hold","pour","swell","burst","scatter","look"]],
 [38,"새 부대에 담는 새 포도주","새 포도주는 새 부대에 담아야 한다고 가르치세요.",["예수","무리"],"house","wineskin",["hold","place","pour","tie","speak","listen"]],
 [39,"묵은 포도주를 좋아하는 이","묵은 포도주에 익숙한 사람은 새것을 선뜻 찾지 않는다고 비유하세요.",["예수","무리"],"house","cup",["hold","pour","drink","look","speak","listen"]]
 ]);
 
-additionalPeople[6]=["제자들","손 마른 사람","열두 사도","병든 사람들","가난한 사람들","굶주린 사람들","우는 사람들","부요한 사람들","원수","형제","집을 짓는 사람"].map(name=>({name,role:"누가복음 6장 관련 인물",refs:["누가복음 6장"]}));
+additionalPeople[6]=["제자들","손 마른 사람","12 사도","병든 사람들","가난한 사람들","굶주린 사람들","우는 사람들","부요한 사람들","원수","형제","집을 짓는 사람"].map(name=>({name,role:"누가복음 6장 관련 인물",refs:["누가복음 6장"]}));
 chapters[6]=[];
 addLukeScenes(6,[
 [1,"밀밭 사이를 지나는 제자들","안식일에 제자들이 이삭을 잘라 손으로 비벼 먹어요.",["예수","제자들"],"grain-field","grain",["walk","reach","cut","rub","eat","walk"]],
@@ -284,49 +284,49 @@ addLukeScenes(6,[
 [10,"손을 내밀자 회복됨","예수께서 둘러보신 뒤 손을 내밀라 하시고, 마른 손이 회복돼요.",["예수","손 마른 사람","무리"],"synagogue","hand",["look","reach","extend","open","rise","bless"],"heal"],
 [11,"분노하며 의논하는 대적들","그들이 화가 나 예수를 어떻게 할지 서로 의논해요.",["바리새인과 서기관","예수"],"synagogue","scroll",["startle","turn","whisper","point","argue","retreat"]],
 [12,"밤새 기도하신 예수","예수께서 산에 올라 밤이 새도록 하나님께 기도하세요.",["예수"],"mountain","stone",["walk","kneel","pray","wait","rise","look"]],
-[13,"열두 사도를 부르심","날이 밝자 제자들을 부르시고 열둘을 사도로 세우세요.",["예수","열두 사도"],"mountain","staff",["stand","signal","gather","look","point","bless"]],
-[14,"시몬과 안드레","열두 사람 가운데 시몬 베드로와 동생 안드레, 야고보와 요한을 부르세요.",["예수","열두 사도"],"mountain","staff",["look","point","step","gather","bow","stand"]],
-[15,"빌립과 바돌로매","예수께서 빌립과 바돌로매를 사도로 세우세요.",["예수","열두 사도"],"mountain","staff",["look","point","step","gather","bow","stand"]],
-[16,"마태와 도마와 두 유다","마태와 도마, 두 야고보와 시몬, 유다와 가룟 유다가 명단에 들어요.",["예수","열두 사도","가룟 유다"],"mountain","staff",["look","count","point","step","gather","stand"]],
-[17,"산에서 내려와 평지에 서심","예수께서 사도들과 함께 내려와 평지에 서시고 많은 사람이 모여요.",["예수","열두 사도","무리"],"plain","scene-marker",["walk","descend","gather","stand","look","listen"]],
+[13,"12 사도를 부르심","날이 밝자 제자들을 부르시고 열둘을 사도로 세우세요.",["예수","12 사도"],"mountain","staff",["stand","signal","gather","look","point","bless"]],
+[14,"시몬과 안드레","12 사람 가운데 시몬 베드로와 동생 안드레, 야고보와 요한을 부르세요.",["예수","12 사도"],"mountain","staff",["look","point","step","gather","bow","stand"]],
+[15,"빌립과 바돌로매","예수께서 빌립과 바돌로매를 사도로 세우세요.",["예수","12 사도"],"mountain","staff",["look","point","step","gather","bow","stand"]],
+[16,"마태와 도마와 두 유다","마태와 도마, 두 야고보와 시몬, 유다와 가룟 유다가 명단에 들어요.",["예수","12 사도","가룟 유다"],"mountain","staff",["look","count","point","step","gather","stand"]],
+[17,"산에서 내려와 평지에 서심","예수께서 사도들과 함께 내려와 평지에 서시고 많은 사람이 모여요.",["예수","12 사도","무리"],"plain","scene-marker",["walk","descend","gather","stand","look","listen"]],
 [18,"말씀과 치유를 찾아온 무리","여러 지방에서 온 이들이 말씀을 듣고 병 고침을 바라며 모여요.",["예수","무리","병든 사람들"],"plain","scene-marker",["walk","gather","listen","reach","heal","look"],"heal"],
 [19,"예수께 손을 대려는 사람들","무리가 예수를 만지려 하고 능력이 나와 모두를 낫게 해요.",["예수","무리","병든 사람들"],"plain","scene-marker",["reach","touch","startle","heal","rise","bless"],"heal"],
-[20,"가난한 이에게 주신 복","예수께서 제자들을 보시며 가난한 이들에게 하나님 나라가 있다고 말씀하세요.",["예수","열두 사도","가난한 사람들"],"plain","scene-marker",["look","speak","point","listen","bow","wait"]],
+[20,"가난한 이에게 주신 복","예수께서 제자들을 보시며 가난한 이들에게 하나님 나라가 있다고 말씀하세요.",["예수","12 사도","가난한 사람들"],"plain","scene-marker",["look","speak","point","listen","bow","wait"]],
 [21,"굶주리고 우는 이의 소망","주린 이가 배부르고 우는 이가 웃게 될 것이라고 위로하세요.",["예수","굶주린 사람들","우는 사람들"],"plain","bread",["speak","look","reach","listen","rise","smile"]],
-[22,"미움받을 때의 복","인자 때문에 배척받고 모욕당해도 복이 있다고 가르치세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","look","point","listen","turn","stand"]],
-[23,"기뻐 뛰놀라는 말씀","그날에 기뻐 뛰놀라고 하늘의 상이 크다고 말씀하세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","smile","gesture","listen","jump","gather"]],
+[22,"미움받을 때의 복","인자 때문에 배척받고 모욕당해도 복이 있다고 가르치세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","look","point","listen","turn","stand"]],
+[23,"기뻐 뛰놀라는 말씀","그날에 기뻐 뛰놀라고 하늘의 상이 크다고 말씀하세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","smile","gesture","listen","jump","gather"]],
 [24,"부요한 이에게 주신 경고","이미 위로를 누리는 부요한 이에게 화가 있다고 경고하세요.",["예수","부요한 사람들","무리"],"plain","basket",["speak","look","point","listen","lower","wait"]],
 [25,"배부르고 웃는 이의 반전","지금 배부르고 웃는 이가 굶주리고 슬퍼할 날이 온다고 하세요.",["예수","무리","부요한 사람들"],"plain","bread",["speak","look","lower","mourn","listen","wait"]],
 [26,"칭찬만 좇는 삶의 화","모든 사람의 칭찬을 받는 이에게도 경고가 있다고 말씀하세요.",["예수","무리","바리새인과 서기관"],"plain","scene-marker",["speak","look","point","listen","turn","wait"]],
-[27,"원수를 사랑하라","예수께서 듣는 이들에게 원수를 사랑하고 미워하는 자에게 선을 베풀라고 하세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","reach","look","listen","bow","wait"]],
-[28,"저주하는 이를 축복하라","모욕하고 저주하는 사람을 위해 기도하고 축복하라고 가르치세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","pray","bless","listen","look","wait"]],
-[29,"다른 뺨과 겉옷","뺨을 맞으면 다른 뺨도 돌리고 겉옷을 빼앗겨도 거절하지 말라고 하세요.",["예수","열두 사도","무리"],"plain","cloak",["speak","turn","release","extend","listen","wait"]],
-[30,"구하는 이에게 주라","구하는 사람에게 주고 가져가는 이에게 되돌려 달라 하지 말라고 하세요.",["예수","열두 사도","무리"],"plain","bread",["speak","reach","give","release","listen","wait"]],
-[31,"대접받고 싶은 대로 대접하라","자신이 바라는 대로 다른 사람을 대하라는 황금률을 가르치세요.",["예수","열두 사도","무리"],"plain","table",["speak","look","gesture","listen","bow","wait"]],
-[32,"사랑하는 이만 사랑하는가","자기를 사랑하는 사람만 사랑하면 특별한 것이 아니라고 물으세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","look","point","listen","turn","wait"]],
-[33,"선대에 보답만 바라지 말라","선대해 주는 사람에게만 선을 베푸는 태도를 되물으세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","look","reach","listen","wait","turn"]],
-[34,"되돌려 받을 계산을 넘어서","꾸어 주고 돌려받을 생각만 하는 삶을 넘어선 사랑을 가르치세요.",["예수","열두 사도","무리"],"plain","coin",["speak","hold","give","release","listen","look"]],
-[35,"대가 없이 베푸는 사랑","원수를 사랑하고 대가 없이 꾸어 주면 상이 크다고 말씀하세요.",["예수","열두 사도","무리"],"plain","coin",["speak","reach","give","bless","listen","wait"]],
-[36,"자비로운 아버지를 닮으라","하나님 아버지처럼 자비로운 사람이 되라고 권하세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","look","reach","bless","listen","bow"]],
-[37,"정죄하지 말고 용서하라","남을 정죄하지 말고 용서하면 자신도 용서받는다고 가르치세요.",["예수","열두 사도","무리"],"plain","scene-marker",["speak","lower","reach","release","listen","wait"]],
-[38,"후히 되어 넘치는 되","주면 후히 되어 넘치도록 돌려받으며 잰 분량대로 되돌아온다고 하세요.",["예수","열두 사도","무리"],"plain","basket",["speak","scoop","pour","give","listen","look"]],
-[39,"맹인이 맹인을 이끄는가","보지 못하는 이가 다른 이를 인도하면 함께 구덩이에 빠질 수 있다고 비유하세요.",["예수","열두 사도","무리"],"plain","pit",["speak","point","walk","halt","look","listen"],null,{kind:"pit-guide"}],
-[40,"제자와 선생의 비유","제자가 선생보다 높지 않지만 온전히 배우면 선생과 같아진다고 하세요.",["예수","열두 사도","무리"],"plain","scroll",["speak","look","listen","bow","stand","wait"]],
-[41,"형제 눈의 티","남의 작은 티는 보면서 자신의 들보를 못 보는 일을 물으세요.",["예수","열두 사도","무리"],"plain","tree",["speak","point","look","inspect","listen","wait"]],
-[42,"먼저 자기 들보를 빼라","위선을 버리고 먼저 자기 눈의 들보를 빼라고 가르치세요.",["예수","열두 사도","무리"],"plain","tree",["speak","reach","remove","inspect","look","listen"]],
-[43,"좋은 나무와 나쁜 열매","좋은 나무와 나쁜 나무가 맺는 열매가 다르다고 말씀하세요.",["예수","열두 사도","무리"],"plain","tree",["speak","look","reach","inspect","listen","wait"]],
-[44,"열매로 알아보는 나무","가시나무와 찔레에서 무화과와 포도를 딸 수 없다고 비유하세요.",["예수","열두 사도","무리"],"plain","tree",["reach","pluck","inspect","speak","listen","look"]],
-[45,"마음에 쌓인 것이 말이 됨","마음에 가득 쌓인 선과 악이 입으로 나온다고 가르치세요.",["예수","열두 사도","무리"],"plain","basket",["hold","speak","point","listen","look","wait"]],
-[46,"말씀을 행하라는 부르심","주님이라 부르면서 말씀을 행하지 않는 까닭을 물으세요.",["예수","열두 사도","무리"],"plain","scroll",["speak","look","point","listen","turn","wait"]],
-[47,"듣고 행하는 사람","예수께 와서 말씀을 듣고 행하는 사람을 예로 드세요.",["예수","열두 사도","무리"],"plain","scroll",["walk","listen","look","rise","build","stand"]],
+[27,"원수를 사랑하라","예수께서 듣는 이들에게 원수를 사랑하고 미워하는 자에게 선을 베풀라고 하세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","reach","look","listen","bow","wait"]],
+[28,"저주하는 이를 축복하라","모욕하고 저주하는 사람을 위해 기도하고 축복하라고 가르치세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","pray","bless","listen","look","wait"]],
+[29,"다른 뺨과 겉옷","뺨을 맞으면 다른 뺨도 돌리고 겉옷을 빼앗겨도 거절하지 말라고 하세요.",["예수","12 사도","무리"],"plain","cloak",["speak","turn","release","extend","listen","wait"]],
+[30,"구하는 이에게 주라","구하는 사람에게 주고 가져가는 이에게 되돌려 달라 하지 말라고 하세요.",["예수","12 사도","무리"],"plain","bread",["speak","reach","give","release","listen","wait"]],
+[31,"대접받고 싶은 대로 대접하라","자신이 바라는 대로 다른 사람을 대하라는 황금률을 가르치세요.",["예수","12 사도","무리"],"plain","table",["speak","look","gesture","listen","bow","wait"]],
+[32,"사랑하는 이만 사랑하는가","자기를 사랑하는 사람만 사랑하면 특별한 것이 아니라고 물으세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","look","point","listen","turn","wait"]],
+[33,"선대에 보답만 바라지 말라","선대해 주는 사람에게만 선을 베푸는 태도를 되물으세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","look","reach","listen","wait","turn"]],
+[34,"되돌려 받을 계산을 넘어서","꾸어 주고 돌려받을 생각만 하는 삶을 넘어선 사랑을 가르치세요.",["예수","12 사도","무리"],"plain","coin",["speak","hold","give","release","listen","look"]],
+[35,"대가 없이 베푸는 사랑","원수를 사랑하고 대가 없이 꾸어 주면 상이 크다고 말씀하세요.",["예수","12 사도","무리"],"plain","coin",["speak","reach","give","bless","listen","wait"]],
+[36,"자비로운 아버지를 닮으라","하나님 아버지처럼 자비로운 사람이 되라고 권하세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","look","reach","bless","listen","bow"]],
+[37,"정죄하지 말고 용서하라","남을 정죄하지 말고 용서하면 자신도 용서받는다고 가르치세요.",["예수","12 사도","무리"],"plain","scene-marker",["speak","lower","reach","release","listen","wait"]],
+[38,"후히 되어 넘치는 되","주면 후히 되어 넘치도록 돌려받으며 잰 분량대로 되돌아온다고 하세요.",["예수","12 사도","무리"],"plain","basket",["speak","scoop","pour","give","listen","look"]],
+[39,"맹인이 맹인을 이끄는가","보지 못하는 이가 다른 이를 인도하면 함께 구덩이에 빠질 수 있다고 비유하세요.",["예수","12 사도","무리"],"plain","pit",["speak","point","walk","halt","look","listen"],null,{kind:"pit-guide"}],
+[40,"제자와 선생의 비유","제자가 선생보다 높지 않지만 온전히 배우면 선생과 같아진다고 하세요.",["예수","12 사도","무리"],"plain","scroll",["speak","look","listen","bow","stand","wait"]],
+[41,"형제 눈의 티","남의 작은 티는 보면서 자신의 들보를 못 보는 일을 물으세요.",["예수","12 사도","무리"],"plain","tree",["speak","point","look","inspect","listen","wait"]],
+[42,"먼저 자기 들보를 빼라","위선을 버리고 먼저 자기 눈의 들보를 빼라고 가르치세요.",["예수","12 사도","무리"],"plain","tree",["speak","reach","remove","inspect","look","listen"]],
+[43,"좋은 나무와 나쁜 열매","좋은 나무와 나쁜 나무가 맺는 열매가 다르다고 말씀하세요.",["예수","12 사도","무리"],"plain","tree",["speak","look","reach","inspect","listen","wait"]],
+[44,"열매로 알아보는 나무","가시나무와 찔레에서 무화과와 포도를 딸 수 없다고 비유하세요.",["예수","12 사도","무리"],"plain","tree",["reach","pluck","inspect","speak","listen","look"]],
+[45,"마음에 쌓인 것이 말이 됨","마음에 가득 쌓인 선과 악이 입으로 나온다고 가르치세요.",["예수","12 사도","무리"],"plain","basket",["hold","speak","point","listen","look","wait"]],
+[46,"말씀을 행하라는 부르심","주님이라 부르면서 말씀을 행하지 않는 까닭을 물으세요.",["예수","12 사도","무리"],"plain","scroll",["speak","look","point","listen","turn","wait"]],
+[47,"듣고 행하는 사람","예수께 와서 말씀을 듣고 행하는 사람을 예로 드세요.",["예수","12 사도","무리"],"plain","scroll",["walk","listen","look","rise","build","stand"]],
 [48,"반석 위에 세운 집","깊이 파고 반석 위에 기초를 놓은 집이 큰물에도 견뎌요.",["집을 짓는 사람","무리"],"house","stone",["dig","place","build","pour","brace","stand"]],
 [49,"기초 없는 집의 무너짐","말씀을 듣고도 행하지 않으면 기초 없는 집처럼 큰물에 무너져요.",["집을 짓는 사람","무리"],"house","stone",["build","pour","shake","crack","fall","scatter"],null,{kind:"house-fall"}]
 ]);
 
-additionalPeople[7]=["백부장의 종","백부장의 친구들","나인 성 사람들","요한의 제자들","세리들","죄 있는 여자","식탁 손님들","빚을 탕감한 사람","빚진 사람들","열두 사도","무리","병든 사람들","아이들","제자들","바리새인과 서기관"].map(name=>({name,role:"누가복음 7장 관련 인물",refs:["누가복음 7장"]}));
+additionalPeople[7]=["백부장의 종","백부장의 친구들","나인 성 사람들","요한의 제자들","세리들","죄 있는 여자","식탁 손님들","빚을 탕감한 사람","빚진 사람들","12 사도","무리","병든 사람들","아이들","제자들","바리새인과 서기관"].map(name=>({name,role:"누가복음 7장 관련 인물",refs:["누가복음 7장"]}));
 chapters[7]=[];
 addLukeScenes(7,[
-[1,"가버나움에 들어가심","말씀을 마치신 예수께서 가버나움으로 들어가세요.",["예수","열두 사도"],"road","gate",["speak","turn","walk","look","gather","stand"]],
+[1,"가버나움에 들어가심","말씀을 마치신 예수께서 가버나움으로 들어가세요.",["예수","12 사도"],"road","gate",["speak","turn","walk","look","gather","stand"]],
 [2,"죽게 된 백부장의 종","백부장이 아끼는 종이 병들어 위태로운 상태예요.",["백부장","백부장의 종"],"house","bed",["look","kneel","reach","wait","mourn","lie"]],
 [3,"장로들을 보내 간청함","예수의 소문을 들은 백부장이 유대 장로들을 보내 종을 살려 달라 해요.",["백부장","유대인 장로들","예수"],"house","scene-marker",["signal","walk","gather","speak","listen","wait"]],
 [4,"장로들의 간절한 부탁","장로들이 백부장은 이 일을 받을 만한 사람이라며 간절히 청해요.",["유대인 장로들","예수","백부장"],"road","scene-marker",["approach","bow","speak","point","listen","wait"]],
@@ -336,7 +336,7 @@ addLukeScenes(7,[
 [8,"명령의 권세를 아는 백부장","백부장이 자신도 명령 아래 있으니 말씀의 권세를 안다고 설명해요.",["백부장의 친구들","예수","백부장"],"road","sword",["speak","point","stand","listen","look","wait"]],
 [9,"믿음을 칭찬하심","예수께서 백부장의 말을 들으시고 이스라엘에서도 이런 믿음을 보지 못했다고 하세요.",["예수","무리","백부장의 친구들"],"road","scene-marker",["listen","startle","turn","speak","point","look"]],
 [10,"나은 종을 발견함","보냄받은 이들이 돌아가 보니 종이 이미 건강해졌어요.",["백부장의 친구들","백부장의 종","백부장"],"house","bed",["walk","enter","look","rise","stand","smile"],"heal"],
-[11,"나인 성으로 향하는 길","예수께서 제자들과 많은 무리와 함께 나인 성으로 가세요.",["예수","열두 사도","무리"],"road","gate",["walk","gather","look","halt","stand","wait"]],
+[11,"나인 성으로 향하는 길","예수께서 제자들과 많은 무리와 함께 나인 성으로 가세요.",["예수","12 사도","무리"],"road","gate",["walk","gather","look","halt","stand","wait"]],
 [12,"성문에서 만난 장례 행렬","성문 가까이서 과부의 외아들을 메고 나오는 장례 행렬을 만나요.",["예수","나인 성 사람들","나인성 과부","과부의 아들"],"gate","linen",["carry","walk","halt","mourn","look","wait"]],
 [13,"과부를 불쌍히 여기심","예수께서 과부를 보시고 불쌍히 여기며 울지 말라고 위로하세요.",["예수","나인성 과부"],"gate","linen",["look","approach","reach","speak","mourn","listen"]],
 [14,"관에 손을 대어 멈추심","예수께서 관에 손을 대시자 메던 이들이 걸음을 멈춰요.",["예수","나인 성 사람들","과부의 아들"],"gate","linen",["approach","touch","halt","turn","look","wait"]],
@@ -345,7 +345,7 @@ addLukeScenes(7,[
 [17,"온 지역에 퍼진 소문","예수께 관한 소문이 유대와 주변 지역으로 퍼져요.",["무리","요한의 제자들"],"road","scroll",["walk","speak","signal","gather","look","depart"]],
 [18,"요한에게 소식을 전함","요한의 제자들이 예수께서 하신 일을 요한에게 전해요.",["요한의 제자들","세례 요한"],"prison","scroll",["walk","enter","speak","listen","look","wait"]],
 [19,"오실 분인지 묻는 요한","요한이 제자 둘을 보내 예수가 오실 그분인지 물어보게 해요.",["세례 요한","요한의 제자들","예수"],"prison","scroll",["speak","signal","receive","turn","walk","depart"]],
-[20,"예수께 질문을 전함","요한의 두 제자가 예수께 와서 그 질문을 그대로 전해요.",["요한의 제자들","예수"],"courtyard","scroll",["walk","approach","bow","speak","listen","wait"]],
+[20,"예수께 질문을 전함","요한의 2 제자가 예수께 와서 그 질문을 그대로 전해요.",["요한의 제자들","예수"],"courtyard","scroll",["walk","approach","bow","speak","listen","wait"]],
 [21,"그 자리에서 이어진 치유","그때 예수께서 병과 고통을 겪는 이들을 고치고 맹인도 보게 하세요.",["예수","무리","병든 사람들"],"courtyard","scene-marker",["reach","touch","heal","rise","look","bless"],"heal"],
 [22,"보고 들은 일을 전하라","예수께서 제자들에게 보고 들은 치유와 복음의 소식을 요한에게 전하라 하세요.",["예수","요한의 제자들","병든 사람들"],"courtyard","scene-marker",["speak","point","listen","look","turn","wait"]],
 [23,"실족하지 않는 사람의 복","예수께서 자신으로 인해 걸려 넘어지지 않는 사람은 복되다고 하세요.",["예수","요한의 제자들"],"courtyard","scene-marker",["speak","look","listen","bow","wait","stand"]],
@@ -366,8 +366,8 @@ addLukeScenes(7,[
 [38,"눈물로 발을 씻긴 여인","여인이 눈물로 예수의 발을 적시고 머리털로 닦으며 향유를 부어요.",["죄 있는 여자","예수","시몬"],"house","perfume",["mourn","pour","smooth","kiss","anoint-head","kneel"],"anoint-head"],
 [39,"속으로 판단하는 시몬","시몬은 예수가 여인의 정체를 안다면 받아들이지 않았을 것이라 생각해요.",["시몬","예수","죄 있는 여자"],"house","table",["look","turn","inspect","think","cover-mouth","wait"]],
 [40,"시몬에게 말을 건네심","예수께서 시몬에게 할 말이 있다고 하시고 시몬은 말씀해 달라 답해요.",["예수","시몬"],"house","table",["turn","speak","look","listen","signal","wait"]],
-[41,"두 채무자의 빚","예수께서 큰 빚과 작은 빚을 진 두 사람의 비유를 시작하세요.",["예수","시몬","빚진 사람들"],"house","coin",["hold","count","point","speak","listen","look"]],
-[42,"모두 탕감받은 두 사람","갚지 못한 두 사람의 빚을 채권자가 모두 없애 주었다고 하세요.",["예수","시몬","빚을 탕감한 사람","빚진 사람들"],"house","coin",["look","release","receive","speak","listen","wait"]],
+[41,"두 채무자의 빚","예수께서 큰 빚과 작은 빚을 진 2 사람의 비유를 시작하세요.",["예수","시몬","빚진 사람들"],"house","coin",["hold","count","point","speak","listen","look"]],
+[42,"모두 탕감받은 2 사람","갚지 못한 2 사람의 빚을 채권자가 모두 없애 주었다고 하세요.",["예수","시몬","빚을 탕감한 사람","빚진 사람들"],"house","coin",["look","release","receive","speak","listen","wait"]],
 [43,"더 사랑할 사람을 판단함","시몬은 더 많이 탕감받은 사람이 더 사랑할 것이라고 답해요.",["시몬","예수"],"house","coin",["look","speak","point","listen","nod","wait"]],
 [44,"여인과 시몬을 돌아보심","예수께서 여인을 돌아보시고 시몬과 여인의 환대를 비교하세요.",["예수","죄 있는 여자","시몬"],"house","basin",["turn","point","speak","look","listen","wait"]],
 [45,"쉬지 않는 발의 입맞춤","시몬은 입맞추지 않았지만 여인은 예수의 발에 입맞추기를 그치지 않았어요.",["죄 있는 여자","예수","시몬"],"house","perfume",["kneel","reach","kiss","mourn","look","wait"]],
@@ -379,27 +379,27 @@ addLukeScenes(7,[
 ]);
 
 const addLukeIndexedChapter=(chapter,sourceRows)=>{const ranges=chapter===8?[
-{from:1,to:3,actors:["예수","열두 사도","여인 제자들"],setting:"road",prop:"basket",actions:["walk","speak","gather","listen","carry","bless"]},
-{from:4,to:15,actors:["예수","열두 사도","무리"],setting:"field",prop:"seed",actions:["gather","speak","scoop","scatter","step","listen"]},
-{from:16,to:18,actors:["예수","열두 사도","무리"],setting:"house",prop:"lamp",actions:["light","cover","lift","place","speak","listen"]},
+{from:1,to:3,actors:["예수","12 사도","여인 제자들"],setting:"road",prop:"basket",actions:["walk","speak","gather","listen","carry","bless"]},
+{from:4,to:15,actors:["예수","12 사도","무리"],setting:"field",prop:"seed",actions:["gather","speak","scoop","scatter","step","listen"]},
+{from:16,to:18,actors:["예수","12 사도","무리"],setting:"house",prop:"lamp",actions:["light","cover","lift","place","speak","listen"]},
 {from:19,to:21,actors:["예수","마리아","예수의 형제들","무리"],setting:"house",prop:"scene-marker",actions:["walk","gather","signal","speak","listen","look"]},
-{from:22,to:25,actors:["예수","열두 사도"],setting:"lake",prop:"boat",actions:["row","sleep","sway","reach","rise","halt"]},
+{from:22,to:25,actors:["예수","12 사도"],setting:"lake",prop:"boat",actions:["row","sleep","sway","reach","rise","halt"]},
 {from:26,to:39,actors:["예수","귀신 들린 사람","돼지 떼","돼지를 치는 사람들"],setting:"shore",prop:"chain",actions:["walk","startle","prostrate","speak","release","retreat"]},
-{from:40,to:56,actors:["예수","야이로","혈루증 앓는 여자","야이로의 딸","열두 사도","무리"],setting:"house",prop:"bed",actions:["gather","kneel","reach","touch","rise","bless"]}
+{from:40,to:56,actors:["예수","야이로","혈루증 앓는 여자","야이로의 딸","12 사도","무리"],setting:"house",prop:"bed",actions:["gather","kneel","reach","touch","rise","bless"]}
 ]:[
-{from:1,to:6,actors:["예수","열두 사도","무리"],setting:"road",prop:"staff",actions:["gather","extend","signal","walk","speak","depart"]},
+{from:1,to:6,actors:["예수","12 사도","무리"],setting:"road",prop:"staff",actions:["gather","extend","signal","walk","speak","depart"]},
 {from:7,to:9,actors:["헤롯","예수","세례 요한"],setting:"palace",prop:"scroll",actions:["listen","startle","turn","speak","look","wait"]},
-{from:10,to:17,actors:["예수","열두 사도","무리"],setting:"plain",prop:"bread",actions:["gather","sit","hold","bless","break-bread","share"]},
-{from:18,to:22,actors:["예수","베드로","열두 사도"],setting:"mountain",prop:"scene-marker",actions:["pray","look","speak","listen","turn","wait"]},
-{from:23,to:27,actors:["예수","열두 사도","무리"],setting:"road",prop:"cross",actions:["speak","look","carry","walk","turn","stand"]},
+{from:10,to:17,actors:["예수","12 사도","무리"],setting:"plain",prop:"bread",actions:["gather","sit","hold","bless","break-bread","share"]},
+{from:18,to:22,actors:["예수","베드로","12 사도"],setting:"mountain",prop:"scene-marker",actions:["pray","look","speak","listen","turn","wait"]},
+{from:23,to:27,actors:["예수","12 사도","무리"],setting:"road",prop:"cross",actions:["speak","look","carry","walk","turn","stand"]},
 {from:28,to:36,actors:["예수","베드로","야고보","요한","모세","엘리야"],setting:"mountain",prop:"cloud",actions:["walk","pray","light","look","speak","bow"]},
-{from:37,to:45,actors:["예수","병든 아이","아이의 아버지","열두 사도","무리"],setting:"plain",prop:"scene-marker",actions:["gather","kneel","reach","startle","heal","rise"]},
-{from:46,to:50,actors:["예수","열두 사도","어린이","요한"],setting:"plain",prop:"scene-marker",actions:["look","gather","receive","speak","listen","stand"]},
+{from:37,to:45,actors:["예수","병든 아이","아이의 아버지","12 사도","무리"],setting:"plain",prop:"scene-marker",actions:["gather","kneel","reach","startle","heal","rise"]},
+{from:46,to:50,actors:["예수","12 사도","어린이","요한"],setting:"plain",prop:"scene-marker",actions:["look","gather","receive","speak","listen","stand"]},
 {from:51,to:56,actors:["예수","야고보","요한","사마리아 사람들"],setting:"road",prop:"scene-marker",actions:["walk","signal","halt","speak","turn","depart"]},
 {from:57,to:62,actors:["예수","제자 후보들"],setting:"road",prop:"plow",actions:["walk","speak","listen","turn","point","depart"]}
-];const extras=chapter===8?["여인 제자들","마리아","예수의 형제들","귀신 들린 사람","돼지 떼","돼지를 치는 사람들","야이로","혈루증 앓는 여자","야이로의 딸","열두 사도","무리","병든 사람들","제자들"]:["헤롯","베드로","야고보","요한","모세","엘리야","병든 아이","아이의 아버지","어린이","사마리아 사람들","제자 후보들","열두 사도","무리","세례 요한"];additionalPeople[chapter]=extras.map(name=>({name,role:`누가복음 ${chapter}장 관련 인물`,refs:[`누가복음 ${chapter}장`]}));chapters[chapter]=[];const lines=sourceRows.trim().split('\n'),actionFix={depart:'walk',share:'extend',heal:'bless'};for(let i=0;i<lines.length;i++){const [title,study]=lines[i].split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(chapter===8&&[44,55].includes(verse))scene.effect=verse===44?'heal':'resurrection';if(chapter===8&&verse===24)scene.effect='storm-calm';if(chapter===8&&verse===33)scene.effect='swine-rush';if(chapter===9&&verse===16)scene.effect='bread-share';if(chapter===9&&verse===29)scene.effect='transfiguration';if(chapter===9&&verse===42)scene.effect='heal';chapters[chapter].push(scene)}};
+];const extras=chapter===8?["여인 제자들","마리아","예수의 형제들","귀신 들린 사람","돼지 떼","돼지를 치는 사람들","야이로","혈루증 앓는 여자","야이로의 딸","12 사도","무리","병든 사람들","제자들"]:["헤롯","베드로","야고보","요한","모세","엘리야","병든 아이","아이의 아버지","어린이","사마리아 사람들","제자 후보들","12 사도","무리","세례 요한"];additionalPeople[chapter]=extras.map(name=>({name,role:`누가복음 ${chapter}장 관련 인물`,refs:[`누가복음 ${chapter}장`]}));chapters[chapter]=[];const lines=sourceRows.trim().split('\n'),actionFix={depart:'walk',share:'extend',heal:'bless'};for(let i=0;i<lines.length;i++){const [title,study]=lines[i].split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(chapter===8&&[44,55].includes(verse))scene.effect=verse===44?'heal':'resurrection';if(chapter===8&&verse===24)scene.effect='storm-calm';if(chapter===8&&verse===33)scene.effect='swine-rush';if(chapter===9&&verse===16)scene.effect='bread-share';if(chapter===9&&verse===29)scene.effect='transfiguration';if(chapter===9&&verse===42)scene.effect='heal';chapters[chapter].push(scene)}};
 addLukeIndexedChapter(8,`
-마을을 두루 다니는 예수와 제자|예수께서 여러 성과 마을에서 하나님 나라를 전하시고 열두 제자가 동행해요.
+마을을 두루 다니는 예수와 제자|예수께서 여러 성과 마을에서 하나님 나라를 전하시고 12 제자가 동행해요.
 고침받은 여인 제자들|막달라 마리아를 비롯해 병과 악한 영에서 회복된 여인들이 함께해요.
 자기 소유로 섬긴 요안나와 수산나|요안나와 수산나 등 여러 여인이 자신들의 소유로 예수 일행을 섬겨요.
 비유를 들으러 모인 무리|여러 마을에서 사람들이 모이자 예수께서 씨 뿌리는 비유를 시작하세요.
@@ -440,8 +440,8 @@ addLukeIndexedChapter(8,`
 집으로 돌아가 큰일을 전하라|예수께서 하나님이 하신 일을 집에 돌아가 알리라고 맡기세요.
 기다리던 무리의 환영|예수께서 돌아오시자 기다리던 무리가 반겨 맞이해요.
 야이로의 간청|회당장 야이로가 예수 발 앞에 엎드려 집으로 와 달라고 청해요.
-죽어 가는 야이로의 딸|열두 살 외딸이 위독하고 예수께 가는 길에 무리가 밀려들어요.
-열두 해 앓은 여인|오래 혈루증을 앓던 여인이 치료받지 못한 채 무리 사이에 있어요.
+죽어 가는 야이로의 딸|12살 외딸이 위독하고 예수께 가는 길에 무리가 밀려들어요.
+12해 앓은 여인|오래 혈루증을 앓던 여인이 치료받지 못한 채 무리 사이에 있어요.
 옷자락에 닿은 손|여인이 예수 뒤로 다가가 옷자락에 손을 대자 병이 곧 그쳐요.
 누가 손을 대었느냐|예수께서 자신을 만진 이를 물으시고 베드로는 무리가 에워싼다고 답해요.
 능력이 나간 것을 아심|예수께서 누군가 믿음으로 손을 댔고 능력이 나간 것을 아신다고 말씀하세요.
@@ -449,7 +449,7 @@ addLukeIndexedChapter(8,`
 딸아 네 믿음이 너를 구원했다|예수께서 여인을 딸이라 부르며 믿음으로 구원받았으니 평안히 가라 하세요.
 딸의 죽음을 알리는 전령|야이로의 집에서 온 사람이 딸이 죽었으니 예수를 더 괴롭히지 말라 전해요.
 두려워하지 말고 믿으라|예수께서 야이로에게 두려워 말고 믿으라고 말씀하세요.
-집에 함께 들어간 세 제자와 부모|예수께서 베드로와 요한과 야고보, 아이의 부모만 집에 들이세요.
+집에 함께 들어간 3 제자와 부모|예수께서 베드로와 요한과 야고보, 아이의 부모만 집에 들이세요.
 울며 통곡하는 사람들|사람들이 아이를 위해 울자 예수께서 아이가 잔다고 말씀하세요.
 비웃는 사람들|사람들은 아이가 죽은 것을 안다며 예수의 말씀을 비웃어요.
 아이의 손을 잡고 부르심|예수께서 아이의 손을 잡고 일어나라고 부르세요.
@@ -457,7 +457,7 @@ addLukeIndexedChapter(8,`
 놀란 부모와 조용한 당부|부모가 놀라고 예수께서는 이 일을 알리지 말라고 당부하세요.
 `);
 addLukeIndexedChapter(9,`
-열두 제자를 불러 권능을 주심|예수께서 열두 제자를 모아 귀신을 제어하고 병을 고칠 권능을 주세요.
+12 제자를 불러 권능을 주심|예수께서 12 제자를 모아 귀신을 제어하고 병을 고칠 권능을 주세요.
 하나님 나라를 전하러 보냄|제자들을 하나님 나라를 전하고 병자를 고치도록 파송하세요.
 짐을 챙기지 말라는 당부|여행에 지팡이와 배낭과 양식과 돈과 여벌 옷을 가져가지 말라 하세요.
 머무는 집에 머물라|어느 집에 들어가든 그곳에 머물다가 떠나라고 가르치세요.
@@ -470,9 +470,9 @@ addLukeIndexedChapter(9,`
 무리를 맞아 가르치고 고치심|무리가 따라오자 예수께서 맞아 하나님 나라를 가르치고 병자를 고치세요.
 날 저물어 빈 들에 모인 무리|날이 저물자 제자들이 무리를 마을로 보내 먹을 것을 구하게 하자고 해요.
 너희가 먹을 것을 주라|예수께서 제자들에게 직접 무리를 먹이라고 하시고 제자들은 가진 음식을 살펴요.
-오천 명을 쉰 명씩 앉힘|남자만 오천 명쯤 되는 무리를 쉰 명 단위로 앉히세요.
+5000명을 쉰 명씩 앉힘|남자만 오천 명쯤 되는 무리를 50명 단위로 앉히세요.
 말씀대로 자리에 앉은 사람들|제자들이 예수의 지시대로 무리를 차례로 앉혀요.
-떡과 물고기를 축사하심|예수께서 떡 다섯 개와 물고기 두 마리를 들고 감사 기도 후 떼세요.
+떡과 물고기를 축사하심|예수께서 떡 5개와 물고기 2마리를 들고 감사 기도 후 떼세요.
 모두 먹고 남은 열두 바구니|모두 배불리 먹고 남은 조각을 모으니 열두 바구니가 돼요.
 홀로 기도하시는 예수|예수께서 홀로 기도하신 뒤 제자들에게 무리가 자신을 누구라 하는지 물으세요.
 요한과 엘리야라는 대답|제자들이 무리는 세례 요한이나 엘리야, 옛 선지자라고 한다고 답해요.
@@ -484,11 +484,11 @@ addLukeIndexedChapter(9,`
 세상을 얻고 자신을 잃는다면|온 세상을 얻어도 자신을 잃거나 해치면 무슨 유익이냐고 물으세요.
 인자와 말씀을 부끄러워하지 말라|예수와 말씀을 부끄러워하는 태도와 장차 올 영광을 말씀하세요.
 하나님 나라를 볼 이들|여기 선 사람 중 죽기 전에 하나님 나라를 보게 될 이가 있다고 하세요.
-기도하러 산에 오른 세 제자|여드레쯤 뒤 예수께서 베드로와 야고보와 요한을 데리고 산에 오르세요.
+기도하러 산에 오른 3 제자|여드레쯤 뒤 예수께서 베드로와 야고보와 요한을 데리고 산에 오르세요.
 기도 중 변한 얼굴과 빛나는 옷|예수께서 기도하시는 동안 얼굴이 변하고 옷이 빛나기 시작해요.
 모세와 엘리야가 나타남|모세와 엘리야가 영광 가운데 나타나 예수와 이야기를 나눠요.
-예루살렘에서 이루실 일을 말함|두 사람이 예수께서 예루살렘에서 이루실 일을 이야기해요.
-잠에서 깨어 영광을 본 제자들|잠을 이기지 못하던 제자들이 깨어 예수의 영광과 두 사람을 봐요.
+예루살렘에서 이루실 일을 말함|2 사람이 예수께서 예루살렘에서 이루실 일을 이야기해요.
+잠에서 깨어 영광을 본 제자들|잠을 이기지 못하던 제자들이 깨어 예수의 영광과 2 사람을 봐요.
 초막 셋을 세우겠다는 베드로|모세와 엘리야가 떠나려 하자 베드로가 초막 셋을 세우겠다고 말해요.
 구름에 덮여 두려워한 제자들|베드로가 말하는 중 구름이 덮고 제자들이 그 안에서 두려워해요.
 아들의 말을 들으라는 음성|구름에서 예수는 택함 받은 아들이니 그의 말을 들으라는 음성이 나요.
@@ -510,26 +510,26 @@ addLukeIndexedChapter(9,`
 예루살렘을 향해 굳게 나아가심|하늘로 올라가실 때가 가까워지자 예수께서 예루살렘을 향해 길을 정하세요.
 사마리아 마을에 앞서 보낸 이들|예수께서 사람들을 먼저 보내 머물 준비를 하게 하세요.
 맞아들이지 않은 마을|예루살렘으로 향하는 예수를 사마리아 마을 사람들이 환영하지 않아요.
-불을 내리자는 야고보와 요한|두 제자가 하늘에서 불을 불러 마을을 심판하자고 제안해요.
+불을 내리자는 야고보와 요한|2 제자가 하늘에서 불을 불러 마을을 심판하자고 제안해요.
 제자들을 꾸짖으심|예수께서 야고보와 요한을 꾸짖으세요.
 다른 마을로 향하는 일행|예수와 제자들이 복수하지 않고 다른 마을로 발걸음을 옮겨요.
-어디든 따르겠다는 사람|길에서 한 사람이 예수께 어디든 따르겠다고 말해요.
+어디든 따르겠다는 사람|길에서 1 사람이 예수께 어디든 따르겠다고 말해요.
 머리 둘 곳 없는 인자|예수께서 여우와 새도 보금자리가 있지만 인자는 머리 둘 곳이 없다고 하세요.
-나를 따르라는 부르심과 장례 요청|예수께서 한 사람을 부르시자 그는 먼저 아버지를 장사하게 해 달라고 청해요.
+나를 따르라는 부르심과 장례 요청|예수께서 1 사람을 부르시자 그는 먼저 아버지를 장사하게 해 달라고 청해요.
 하나님 나라를 전하라|예수께서 하나님 나라를 전하는 일을 우선하라고 답하세요.
 가족에게 작별하려는 사람|또 다른 사람이 따르기 전 가족에게 작별 인사를 하겠다고 해요.
 뒤돌아보지 않는 제자의 길|쟁기를 잡고 뒤를 돌아보는 이는 하나님 나라에 합당하지 않다고 하세요.
 `);
 const addLukeChapterTen=sourceRows=>{const ranges=[
-{from:1,to:4,actors:["예수","칠십 제자"],setting:"road",prop:"staff",actions:["gather","signal","walk","release","listen","depart"]},
-{from:5,to:16,actors:["예수","칠십 제자","무리"],setting:"village",prop:"scroll",actions:["walk","speak","bless","listen","heal","depart"]},
-{from:17,to:24,actors:["예수","칠십 제자"],setting:"road",prop:"scroll",actions:["walk","gather","speak","listen","pray","look"]},
+{from:1,to:4,actors:["예수","70 제자"],setting:"road",prop:"staff",actions:["gather","signal","walk","release","listen","depart"]},
+{from:5,to:16,actors:["예수","70 제자","무리"],setting:"village",prop:"scroll",actions:["walk","speak","bless","listen","heal","depart"]},
+{from:17,to:24,actors:["예수","70 제자"],setting:"road",prop:"scroll",actions:["walk","gather","speak","listen","pray","look"]},
 {from:25,to:29,actors:["예수","율법교사"],setting:"road",prop:"scroll",actions:["look","speak","listen","point","wait","turn"]},
 {from:30,to:37,actors:["예수","강도 만난 사람","제사장","레위인","사마리아 사람","여관 주인"],setting:"road",prop:"donkey",actions:["fall","retreat","walk","kneel","anoint-head","carry"]},
 {from:38,to:42,actors:["예수","마르다","마리아"],setting:"house",prop:"table",actions:["enter","carry","sit","speak","listen","wait"]}
-];additionalPeople[10]=["칠십 제자","무리","율법교사","강도 만난 사람","제사장","레위인","사마리아 사람","여관 주인","마르다","마리아","병든 사람들","이웃"].map(name=>({name,role:"누가복음 10장 관련 인물",refs:["누가복음 10장"]}));chapters[10]=[];const actionFix={enter:"walk",heal:"bless",depart:"walk"};for(const [i,line]of sourceRows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(verse===9)scene.effect='heal';if(verse===34)scene.effect='heal';chapters[10].push(scene)}};
+];additionalPeople[10]=["70 제자","무리","율법교사","강도 만난 사람","제사장","레위인","사마리아 사람","여관 주인","마르다","마리아","병든 사람들","이웃"].map(name=>({name,role:"누가복음 10장 관련 인물",refs:["누가복음 10장"]}));chapters[10]=[];const actionFix={enter:"walk",heal:"bless",depart:"walk"};for(const [i,line]of sourceRows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,g=ranges.find(x=>verse>=x.from&&verse<=x.to),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(verse===9)scene.effect='heal';if(verse===34)scene.effect='heal';chapters[10].push(scene)}};
 addLukeChapterTen(`
-칠십 제자를 둘씩 보내심|예수께서 칠십 제자를 세워 가시려는 마을로 둘씩 앞서 보내세요.
+70 제자를 둘씩 보내심|예수께서 70 제자를 세워 가시려는 마을로 둘씩 앞서 보내세요.
 많은 추수와 적은 일꾼|추수할 것은 많지만 일꾼이 적으니 주인께 일꾼을 보내 달라 청하라 하세요.
 이리 가운데 보낸 어린양|예수께서 제자들을 이리 가운데 보내는 어린양처럼 보낸다고 하세요.
 길에서 짐과 인사를 줄이라|전대와 배낭과 신발을 챙기지 말고 길에서 지체하지 말라고 하세요.
@@ -545,7 +545,7 @@ addLukeChapterTen(`
 두로와 시돈의 회개|두로와 시돈에서 같은 권능을 행했다면 그들이 회개했을 것이라 하세요.
 높아졌다 낮아질 가버나움|가버나움이 하늘까지 높아지지 않고 낮아질 것이라고 경고하세요.
 제자를 듣고 보내신 이를 들음|제자들의 말을 듣거나 거부하는 일이 예수와 보내신 이를 대하는 일이라 하세요.
-기뻐 돌아온 제자들|칠십 제자가 돌아와 예수 이름으로 귀신들도 굴복했다고 기뻐해요.
+기뻐 돌아온 제자들|70 제자가 돌아와 예수 이름으로 귀신들도 굴복했다고 기뻐해요.
 번개처럼 떨어지는 사탄|예수께서 사탄이 하늘에서 번개처럼 떨어지는 것을 보았다고 하세요.
 뱀과 전갈을 밟을 권세|제자들에게 원수의 능력을 제어할 권세를 주셨다고 말씀하세요.
 하늘에 이름이 기록된 기쁨|귀신이 굴복한 것보다 이름이 하늘에 기록된 것을 기뻐하라 하세요.
@@ -564,7 +564,7 @@ addLukeChapterTen(`
 불쌍히 여긴 사마리아 사람|사마리아 사람이 다친 이를 보고 가까이 와서 불쌍히 여겨요.
 기름으로 치료하고 여관으로|사마리아 사람이 기름과 포도주로 상처를 돌보고 짐승에 태워 여관으로 데려가요.
 여관 주인에게 맡긴 비용|사마리아 사람이 여관 주인에게 돈을 주고 더 들면 갚겠다고 약속해요.
-누가 이웃이 되었는가|예수께서 세 사람 중 누가 강도 만난 이의 이웃인지 물으세요.
+누가 이웃이 되었는가|예수께서 3 사람 중 누가 강도 만난 이의 이웃인지 물으세요.
 자비를 베푼 사람|율법교사가 자비를 베푼 사람이라 답하고 예수는 그렇게 행하라 하세요.
 마르다의 집에 들어가심|예수께서 한 마을에 들어가시고 마르다가 자기 집으로 맞아들여요.
 발치에 앉아 말씀을 듣는 마리아|마리아는 예수의 발치에 앉아 말씀을 귀 기울여 들어요.
@@ -574,11 +574,11 @@ addLukeChapterTen(`
 `);
 const addLukeLongChapter=(chapter,sourceRows,ranges,extras,effects={})=>{const actionFix={remove:'release',reject:'turn',accuse:'speak',die:'fall',darken:'lower',mock:'speak',heal:'touch',promise:'speak',ask:'speak',approach:'walk',climb:'step',plant:'place',send:'release',question:'speak',answer:'speak',silence:'wait',appear:'look',endure:'brace',flee:'run',give:'release',quote:'read',report:'speak',judge:'point',spread:'place',praise:'bless',lead:'walk',surround:'gather',teach:'speak',raise:'lift',invite:'reach',recognize:'look',return:'walk',warn:'point',watch:'look',follow:'walk',argue:'speak',kiss:'touch',deny:'turn',blindfold:'cover',rest:'sleep',wrap:'cover',prepare:'place',approach:'walk',enter:'walk',whisper:'speak',search:'inspect',sweep:'smooth',embrace:'reach',shout:'speak',reconcile:'bow',store:'bundle',serve:'extend',grow:'sway',knock:'touch',wash:'smooth',think:'look',build:'place',share:'extend'},propFix={'hen-gather':'scene-marker',door:'gate','donkey-pair':'donkey','grape':'vine','fig-tree':'scene-marker','burial-cloth':'linen'};additionalPeople[chapter]=extras.map(name=>({name,role:`누가복음 ${chapter}장 관련 인물`,refs:[`누가복음 ${chapter}장`]}));chapters[chapter]=[];for(const [i,line]of sourceRows.trim().split('\n').entries()){const [title,study]=line.split('|'),verse=i+1,notice=chapter===17&&verse===36,g=ranges.find(x=>verse>=x.from&&verse<=x.to)||ranges.find(x=>notice&&x.from<=35&&x.to>=37)||ranges.at(-1),base=g.actions.map(a=>actionFix[a]||a),actions=[...base.slice(verse%6),...base.slice(0,verse%6)],scene={verse,title,study,actors:g.actors,actions,setting:g.setting,prop:propFix[g.prop]||g.prop,propFixed:false};scene.tracks=Object.fromEntries(g.actors.slice(1).map((n,j)=>[n,(j%2?['look','listen','turn','reach','receive','stand']:['look','listen','bow','reach','hold','stand'])]));if(notice){scene.actors=[];scene.tracks={};scene.textualNotice=true;scene.diagram={kind:'edition-note',label:'본문 없음',note:'개역개정4판과 쉬운성경 모두 이 절에 본문을 싣지 않아요.'};}if(effects[verse])scene.effect=effects[verse];chapters[chapter].push(scene)}};
 addLukeLongChapter(11,`
-기도를 마치신 예수께 묻는 제자|제자 한 사람이 요한처럼 기도를 가르쳐 달라고 예수께 청해요.
+기도를 마치신 예수께 묻는 제자|제자 1 사람이 요한처럼 기도를 가르쳐 달라고 예수께 청해요.
 아버지의 이름과 나라를 구하는 기도|예수께서 아버지의 이름이 거룩히 여김 받고 나라가 오기를 기도하라 하세요.
 날마다 필요한 양식|제자들이 매일 필요한 양식을 구하도록 가르치세요.
 용서와 시험을 위한 간구|서로 용서하고 시험에 빠지지 않도록 기도하라 하세요.
-한밤중 찾아온 친구|한 사람이 밤중에 친구의 집 문을 두드려 빵을 빌려 달라 청해요.
+한밤중 찾아온 친구|1 사람이 밤중에 친구의 집 문을 두드려 빵을 빌려 달라 청해요.
 손님을 먹일 것이 없는 집|여행 중 찾아온 손님을 먹일 것이 없어 이웃에게 도움을 구해요.
 잠든 식구 때문에 망설이는 집주인|집주인은 문이 닫혔고 아이들과 누워 있어 일어나기 어렵다고 답해요.
 끈질긴 간청에 일어난 친구|친구의 간청이 계속되자 집주인이 일어나 필요한 것을 내어줘요.
@@ -600,7 +600,7 @@ addLukeLongChapter(11,`
 쉴 곳을 찾는 더러운 영|더러운 영이 사람에게서 나와 물 없는 곳을 헤매며 쉴 곳을 찾아요.
 청소되고 정돈된 빈 집|귀신이 돌아와 보니 집은 깨끗하지만 비어 있어요.
 더 악한 영들과 돌아옴|그 영이 더 악한 일곱 영을 데려와 그 사람의 나중 상태가 더 나빠져요.
-복되다 외치는 여인|무리 중 한 여인이 예수의 어머니가 복되다고 외쳐요.
+복되다 외치는 여인|무리 중 1 여인이 예수의 어머니가 복되다고 외쳐요.
 말씀을 듣고 지키는 복|예수께서 하나님의 말씀을 듣고 지키는 사람이 더 복되다고 답하세요.
 표적을 구하는 세대|무리가 더 모이자 예수께서 요나의 표적 외에는 표적이 없다고 하세요.
 요나처럼 표적이 될 인자|요나가 니느웨의 표적이 된 것처럼 인자도 이 세대의 표적이 된다고 하세요.
@@ -618,7 +618,7 @@ addLukeLongChapter(11,`
 십일조와 정의와 사랑|작은 채소의 십일조를 지키면서 정의와 하나님 사랑을 버린 태도를 지적하세요.
 높은 자리와 인사를 즐기는 이들|회당의 높은 자리와 시장의 인사를 좋아하는 바리새인의 명예욕을 책망하세요.
 알지 못하는 무덤 같은 외식|겉으로 드러나지 않는 무덤처럼 다른 이를 부정하게 하는 외식을 경고하세요.
-모욕이라 항의한 율법교사|율법교사 한 사람이 그 책망은 자신들까지 모욕한다고 항의해요.
+모욕이라 항의한 율법교사|율법교사 1 사람이 그 책망은 자신들까지 모욕한다고 항의해요.
 사람에게만 짐을 지우는 교사들|예수께서 율법교사들이 무거운 짐을 지우고 돕지 않는다고 책망하세요.
 선지자 무덤을 만드는 세대|조상들이 죽인 선지자의 무덤을 꾸미는 이들의 모순을 지적하세요.
 조상의 행위에 증인이 된 후손|무덤을 세우는 일이 조상들의 폭력을 인정하는 증거가 된다고 하세요.
@@ -653,7 +653,7 @@ addLukeLongChapter(12,`
 성령을 모독하는 말|인자를 거역하는 말과 성령을 모독하는 일을 구분해 경고하세요.
 회당과 권세자 앞에 선 제자|제자들이 회당과 통치자 앞에 끌려갈 수 있다고 말씀하세요.
 그때 가르치실 성령|무엇을 말할지 염려하지 말라 하시며 성령의 가르침을 약속하세요.
-유산을 나눠 달라는 요청|무리 중 한 사람이 형에게 유산을 나누라 해 달라고 예수께 부탁해요.
+유산을 나눠 달라는 요청|무리 중 1 사람이 형에게 유산을 나누라 해 달라고 예수께 부탁해요.
 재판관이 아니라고 답하심|예수께서 누가 자신을 재산 나누는 재판관으로 세웠느냐고 물으세요.
 탐심을 경계하라|생명이 재산의 많음에 달려 있지 않으니 탐심을 물리치라고 하세요.
 소출이 풍성한 부자|한 부자의 밭에서 풍성한 소출이 나오는 비유를 시작하세요.
@@ -692,7 +692,7 @@ addLukeLongChapter(12,`
 땅에 던지러 온 불|예수께서 땅에 불을 던지러 왔다고 하시며 긴장을 드러내세요.
 이루어져야 할 세례|예수께서 받아야 할 세례가 이루어질 때까지 답답하다고 하세요.
 화평만이 아닌 분열|예수께서 오심으로 진리의 선택과 분열이 생길 것을 말씀하세요.
-한 집 안의 갈라짐|한 집 다섯 사람 사이에도 서로 나뉘는 일이 생긴다고 하세요.
+한 집 안의 갈라짐|한 집 5 사람 사이에도 서로 나뉘는 일이 생긴다고 하세요.
 가족 사이의 대립|아버지와 아들, 어머니와 딸 등 가족 사이의 갈등을 말씀하세요.
 서쪽 구름으로 비를 읽음|무리가 서쪽에 구름이 일면 비가 온다고 날씨를 판단해요.
 남풍으로 더위를 읽음|남풍이 불면 더울 것을 안다고 예를 드세요.
@@ -715,26 +715,26 @@ addLukeLongChapter(13,`
 빌라도의 참혹한 사건을 전함|사람들이 빌라도가 갈릴리 사람들을 죽인 일을 예수께 전해요.
 더 죄가 많아서 당했는가|예수께서 희생자들이 다른 갈릴리인보다 더 죄가 많았느냐고 물으세요.
 너희도 회개하지 않으면|예수께서 재난을 죄의 서열로 판단하지 말고 회개하라고 하세요.
-실로암 망대 아래 죽은 열여덟 사람|실로암 망대가 무너져 죽은 이들이 다른 사람보다 더 죄인이냐고 되물으세요.
+실로암 망대 아래 죽은 18 사람|실로암 망대가 무너져 죽은 이들이 다른 사람보다 더 죄인이냐고 되물으세요.
 회개를 촉구하는 반복된 말씀|예수께서 너희도 회개하지 않으면 망한다고 다시 경고하세요.
 열매 없는 무화과나무|포도원에 심은 무화과나무에서 주인이 열매를 찾지만 얻지 못해요.
-찍어 버리라 명하는 주인|주인이 삼 년을 기다렸으나 열매 없는 나무를 베라 명해요.
-한 해 더 돌보게 해 달라는 청지기|포도원지기가 올해는 땅을 파고 거름을 주겠다며 한 해 더 청해요.
+찍어 버리라 명하는 주인|주인이 3년을 기다렸으나 열매 없는 나무를 베라 명해요.
+1해 더 돌보게 해 달라는 청지기|포도원지기가 올해는 땅을 파고 거름을 주겠다며 1해 더 청해요.
 열매를 기다리는 마지막 기회|다음에 열매를 맺으면 두고 아니면 베겠다는 말로 비유를 맺어요.
 안식일 회당의 가르침|예수께서 안식일에 회당에서 사람들을 가르치세요.
-허리를 펴지 못한 여인|열여덟 해 병에 시달려 허리를 펴지 못하는 여인이 그곳에 있어요.
+허리를 펴지 못한 여인|18해 병에 시달려 허리를 펴지 못하는 여인이 그곳에 있어요.
 병에서 놓였다고 부르심|예수께서 여인을 보고 부르며 병에서 풀려났다고 말씀하세요.
 펴져서 하나님을 찬양한 여인|예수께서 손을 얹으시자 여인이 곧 펴지고 하나님께 영광을 돌려요.
 안식일 치유에 분노한 회당장|회당장이 안식일에 고친 일을 두고 무리에게 화를 내요.
 소와 나귀도 물가로 풀어 주는가|예수께서 안식일에도 가축을 풀어 물을 먹이지 않느냐고 되물으세요.
-아브라함의 딸을 매임에서 풀라|열여덟 해 묶인 여인을 안식일에 풀어 주는 것이 마땅하다고 하세요.
+아브라함의 딸을 매임에서 풀라|18해 묶인 여인을 안식일에 풀어 주는 것이 마땅하다고 하세요.
 부끄러워한 반대자와 기뻐한 무리|반대자들은 부끄러워하고 무리는 예수의 일을 기뻐해요.
 하나님 나라의 비유를 물으심|예수께서 하나님 나라를 무엇에 비교할 수 있을지 질문하세요.
 겨자씨처럼 자라는 나라|작은 겨자씨가 자라 나무가 되고 새들이 가지에 깃드는 비유예요.
 다시 나라를 무엇에 비교할까|예수께서 하나님 나라를 또 무엇에 견줄지 물으세요.
 가루 속에 퍼지는 누룩|여인이 가루에 누룩을 넣어 온 덩이가 부푸는 비유를 말씀하세요.
 예루살렘으로 향하는 가르침의 길|예수께서 여러 성과 마을을 다니며 가르치고 예루살렘으로 향하세요.
-구원받는 이가 적은가|한 사람이 구원받을 사람이 적은지 예수께 질문해요.
+구원받는 이가 적은가|1 사람이 구원받을 사람이 적은지 예수께 질문해요.
 좁은 문으로 힘써 들어가라|예수께서 숫자를 묻기보다 좁은 문으로 힘써 들어가라 하세요.
 닫힌 문 앞에서 두드리는 이들|집주인이 문을 닫은 뒤 밖에 선 사람들이 열어 달라 두드려요.
 함께 먹고 배웠다 주장함|문밖 사람들은 주 앞에서 먹고 거리에서 가르침을 들었다고 말해요.
@@ -770,7 +770,7 @@ addLukeLongChapter(14,`
 보답을 바라지 않는 초대|초대한 이에게 친구와 부유한 이웃만 부르지 말라고 하세요.
 가난한 이들을 잔치에 부르라|가난하고 몸이 불편하고 보지 못하는 이들을 초대하라고 권하세요.
 부활 때 받을 복|갚을 수 없는 이들을 초대하면 의인들의 부활 때 보답을 받는다고 하세요.
-하나님 나라 잔치를 말한 손님|함께 먹던 한 사람이 하나님 나라에서 먹는 이는 복되다고 말해요.
+하나님 나라 잔치를 말한 손님|함께 먹던 1 사람이 하나님 나라에서 먹는 이는 복되다고 말해요.
 큰 잔치와 많은 초대|예수께서 많은 사람을 초대한 큰 잔치 비유를 시작하세요.
 준비가 끝났다는 종의 알림|잔치 시각에 종이 초대된 사람들에게 모든 것이 준비됐다고 알려요.
 밭을 핑계로 거절한 사람|첫 손님은 밭을 샀다며 가서 보아야 한다고 거절해요.
@@ -786,7 +786,7 @@ addLukeLongChapter(14,`
 망대의 비용을 먼저 계산함|망대를 세우려면 완성에 필요한 비용을 먼저 계산하라고 하세요.
 기초만 놓고 끝내지 못한 공사|기초만 놓고 공사를 마치지 못하면 보는 이들이 비웃을 거예요.
 끝내지 못한 이를 조롱함|사람들이 공사를 시작하고 완성하지 못했다고 말하는 모습을 그리세요.
-전쟁 전에 군사를 헤아리는 왕|왕이 만 명으로 이만 명의 군대를 대적할 수 있는지 살펴요.
+전쟁 전에 군사를 헤아리는 왕|왕이 10000명으로 20000명의 군대를 대적할 수 있는지 살펴요.
 화친을 청하는 사신|승산이 없으면 적이 멀리 있을 때 사신을 보내 화친을 청해요.
 소유를 내려놓는 제자도|모든 소유에 매이지 않고 내려놓지 않으면 제자가 될 수 없다고 하세요.
 맛을 잃은 소금|맛을 잃은 소금은 더는 쓸모가 없다고 비유하세요.
@@ -805,14 +805,14 @@ addLukeLongChapter(15,`
 말씀을 들으러 온 세리와 죄인|세리와 죄인들이 예수의 말씀을 들으려고 가까이 모여요.
 수군대는 바리새인과 서기관|바리새인과 서기관들이 예수가 죄인과 함께 먹는다고 수군거려요.
 세 비유를 시작하신 예수|예수께서 그들의 불평에 잃은 것에 관한 비유로 답하세요.
-잃은 양을 찾아 나선 목자|양 백 마리 중 한 마리를 잃으면 목자가 찾아 나선다고 말씀하세요.
+잃은 양을 찾아 나선 목자|양 100마리 중 1마리를 잃으면 목자가 찾아 나선다고 말씀하세요.
 어깨에 메고 기뻐 돌아옴|잃은 양을 찾은 목자가 기뻐하며 양을 어깨에 메어요.
 벗과 이웃을 부른 기쁨|목자가 집에 돌아와 친구와 이웃을 불러 함께 기뻐하자 해요.
-회개한 한 사람의 하늘 기쁨|죄인 한 사람이 회개하면 하늘에서 큰 기쁨이 있다고 가르치세요.
+회개한 1 사람의 하늘 기쁨|죄인 1 사람이 회개하면 하늘에서 큰 기쁨이 있다고 가르치세요.
 잃은 은전을 찾는 여인|은전 하나를 잃은 여인이 등불을 켜고 집을 쓸며 찾아요.
 찾은 은전을 함께 기뻐함|은전을 찾은 여인이 벗과 이웃을 불러 기뻐하자고 해요.
-회개한 죄인을 기뻐하는 천사들|죄인 한 사람이 회개하면 하나님의 천사들 앞에 기쁨이 있다고 하세요.
-두 아들을 둔 아버지|예수께서 두 아들을 둔 사람의 비유를 시작하세요.
+회개한 죄인을 기뻐하는 천사들|죄인 1 사람이 회개하면 하나님의 천사들 앞에 기쁨이 있다고 하세요.
+2 아들을 둔 아버지|예수께서 2 아들을 둔 사람의 비유를 시작하세요.
 몫을 달라는 작은아들|작은아들이 아버지에게 자기 몫의 재산을 달라고 청해요.
 먼 나라에서 재산을 탕진함|작은아들이 재산을 모아 먼 나라로 가서 방탕하게 써 버려요.
 흉년 속에 궁핍해진 아들|재산을 다 쓴 뒤 큰 흉년이 들어 아들이 궁핍해져요.
@@ -830,7 +830,7 @@ addLukeLongChapter(15,`
 종에게 잔치 까닭을 물음|맏아들이 종을 불러 무슨 일이 벌어졌는지 물어요.
 동생이 돌아왔다는 소식|종이 동생이 무사히 돌아와 살진 송아지를 잡았다고 알려요.
 화가 나 집에 들어가지 않는 맏아들|맏아들이 화가 나 잔치에 들어가지 않고 아버지가 밖으로 나와 달래요.
-자기 수고를 내세우는 맏아들|맏아들은 오래 섬겼는데 염소 한 마리도 받지 못했다고 불평해요.
+자기 수고를 내세우는 맏아들|맏아들은 오래 섬겼는데 염소 1마리도 받지 못했다고 불평해요.
 동생을 위한 잔치를 원망함|맏아들은 재산을 탕진한 동생에게 살진 송아지를 잡았다고 비난해요.
 늘 함께 있는 아들을 달래는 아버지|아버지는 맏아들에게 늘 함께 있고 가진 것이 모두 네 것이라고 말해요.
 잃었다 찾은 동생을 기뻐하라|아버지는 죽었다 살아난 동생을 함께 기뻐하는 것이 마땅하다고 해요.
@@ -854,7 +854,7 @@ addLukeLongChapter(16,`
 작은 일에 충성된 사람|작은 일에 충성된 사람이 큰일에도 충성된다고 가르치세요.
 불의한 재물과 참된 것|재물에 충성하지 않으면 누가 참된 것을 맡기겠느냐고 물으세요.
 남의 것에 충성하는 태도|남의 것에 충성하지 않으면 자기 몫도 맡기 어렵다고 하세요.
-하나님과 재물을 함께 섬길 수 없음|한 종이 두 주인을 섬길 수 없듯 하나님과 재물을 겸할 수 없어요.
+하나님과 재물을 함께 섬길 수 없음|1 종이 두 주인을 섬길 수 없듯 하나님과 재물을 겸할 수 없어요.
 비웃는 돈을 사랑하는 바리새인|돈을 좋아하는 바리새인들이 예수의 말씀을 듣고 비웃어요.
 사람의 마음을 아시는 하나님|사람 앞에서 의롭다 해도 하나님은 마음을 아시며 높은 평가를 미워하세요.
 요한 이후 전해지는 나라의 복음|율법과 선지자의 시대 뒤 하나님 나라 복음이 전파된다고 하세요.
@@ -867,9 +867,9 @@ addLukeLongChapter(16,`
 고통 중 멀리 바라본 부자|음부의 부자가 고통 가운데 눈을 들어 아브라함과 나사로를 봐요.
 물 한 방울을 부탁하는 부자|부자가 나사로에게 손가락 끝의 물을 혀에 적셔 달라 부탁해요.
 살아 있을 때의 차이를 기억하라|아브라함은 부자의 풍족함과 나사로의 고난을 기억하라고 답해요.
-건널 수 없는 큰 구렁|두 곳 사이에 큰 구렁이 있어 오갈 수 없다고 설명해요.
+건널 수 없는 큰 구렁|2곳 사이에 큰 구렁이 있어 오갈 수 없다고 설명해요.
 형제들에게 경고를 보내 달라|부자가 나사로를 아버지 집에 보내 달라고 청해요.
-다섯 형제의 미래를 염려함|부자는 형제들이 이 고통의 장소에 오지 않게 증언해 달라고 해요.
+5 형제의 미래를 염려함|부자는 형제들이 이 고통의 장소에 오지 않게 증언해 달라고 해요.
 모세와 선지자의 말을 들으라|아브라함은 형제들이 모세와 선지자들의 말을 들어야 한다고 하세요.
 죽은 사람이 가면 회개하리라|부자는 죽은 이가 찾아가면 형제들이 회개할 것이라 주장해요.
 말씀을 듣지 않으면 표적도 믿지 않음|모세와 선지자의 말을 듣지 않으면 죽은 이가 살아나도 믿지 않는다고 하세요.
@@ -882,20 +882,20 @@ addLukeLongChapter(17,`
 작은 이를 실족하게 하는 경고|예수께서 작은 이를 죄짓게 하는 사람에게 화가 있다고 제자들에게 말씀하세요.
 연자맷돌보다 무거운 책임|작은 이를 실족시키느니 무거운 맷돌을 매고 바다에 빠지는 편이 낫다고 하세요.
 죄를 경고하고 회개하면 용서|형제가 죄를 지으면 꾸짖고 회개하면 용서하라고 가르치세요.
-하루 일곱 번 돌아와도 용서|하루에 여러 번 잘못하고 돌아와 회개하면 용서하라 하세요.
+하루 7번 돌아와도 용서|하루에 여러 번 잘못하고 돌아와 회개하면 용서하라 하세요.
 믿음을 더해 달라는 사도들|사도들이 예수께 믿음을 더해 달라고 청해요.
 겨자씨 믿음과 뽕나무|겨자씨만한 믿음도 뽕나무를 옮길 수 있다고 비유하세요.
 밭에서 돌아온 종|밭을 갈거나 양을 치는 종이 하루 일을 마치고 돌아와요.
 주인을 먼저 섬기는 종|종은 주인의 식사를 준비하고 주인이 먹는 동안 시중들어요.
 명령을 행한 종에게 감사하는가|명령대로 했다고 주인이 종에게 감사를 빚지는 것은 아니라고 물으세요.
-해야 할 일을 한 종의 고백|제자들도 맡은 일을 한 뒤 무익한 종이라 고백하라고 하세요.
+해야 할 일을 1 종의 고백|제자들도 맡은 일을 한 뒤 무익한 종이라 고백하라고 하세요.
 사마리아와 갈릴리 사이로 가심|예수께서 예루살렘으로 가는 길에 사마리아와 갈릴리 사이를 지나세요.
-멀리 선 열 명의 나병환자|예수께서 마을에 들어가실 때 나병환자 열 명이 멀리 서 있어요.
-불쌍히 여겨 달라는 외침|열 사람이 예수 선생님께 자비를 베풀어 달라고 함께 외쳐요.
+멀리 선 10명의 나병환자|예수께서 마을에 들어가실 때 나병환자 10명이 멀리 서 있어요.
+불쌍히 여겨 달라는 외침|10 사람이 예수 선생님께 자비를 베풀어 달라고 함께 외쳐요.
 제사장에게 가라는 말씀|예수께서 제사장들에게 몸을 보이라고 하시고 그들이 가는 길에 깨끗해져요.
-돌아와 하나님께 영광 돌린 한 사람|열 사람 중 한 명이 나은 것을 보고 하나님께 큰 소리로 영광을 돌려요.
+돌아와 하나님께 영광 돌린 1 사람|10 사람 중 1명이 나은 것을 보고 하나님께 큰 소리로 영광을 돌려요.
 예수 발 앞에 엎드린 사마리아인|사마리아 사람이 돌아와 예수의 발 앞에 엎드려 감사해요.
-아홉 사람은 어디 있느냐|예수께서 열 명이 다 나았는데 아홉은 어디 있느냐고 물으세요.
+9 사람은 어디 있느냐|예수께서 10명이 다 나았는데 아홉은 어디 있느냐고 물으세요.
 돌아온 이방인을 보심|하나님께 영광 돌리러 돌아온 사람이 이 이방인뿐이냐고 하세요.
 믿음으로 구원받았다는 선언|예수께서 사마리아 사람에게 일어나 가라며 믿음이 구원했다고 말씀하세요.
 하나님 나라의 때를 묻는 바리새인|바리새인들이 하나님 나라가 언제 임하느냐고 예수께 물어요.
@@ -913,8 +913,8 @@ addLukeLongChapter(17,`
 세간을 가지러 돌아가지 말라|그날 지붕 위 사람은 물건을 가지러 내려가지 말고 밭에서도 돌아서지 말라 하세요.
 롯의 아내를 기억하라|예수께서 뒤를 돌아보았던 롯의 아내를 기억하라고 하세요.
 생명을 붙들려다 잃는 역설|자기 생명을 지키려는 이는 잃고 잃는 이는 살게 된다고 하세요.
-한 자리에 누운 두 사람|밤에 한 자리에 누운 두 사람 중 한 사람은 데려가고 한 사람은 남아요.
-두 역본에 본문이 없는 36절 안내|개역개정4판과 쉬운성경 모두 누가복음 17장 36절에 본문을 싣지 않아요.
+한 자리에 누운 2 사람|밤에 한 자리에 누운 2 사람 중 1 사람은 데려가고 1 사람은 남아요.
+2 역본에 본문이 없는 36절 안내|개역개정4판과 쉬운성경 모두 누가복음 17장 36절에 본문을 싣지 않아요.
 주검이 있는 곳에 모이는 독수리|제자들이 어디에서 일어날지 묻자 예수께서 주검이 있는 곳에 독수리가 모인다고 답하세요.
 `,[
 {from:1,to:4,actors:["예수","제자들","작은 자"],setting:"courtyard",prop:"millstone",actions:["look","speak","point","listen","turn","bow"]},
@@ -932,9 +932,9 @@ addLukeLongChapter(18,`
 불의한 재판관의 말을 보라|예수께서 불의한 재판관도 응답한 일을 눈여겨보라 하세요.
 밤낮 부르짖는 택한 이들|하나님께서 밤낮 부르짖는 이들을 오래 기다리게 하시겠느냐고 물으세요.
 속히 정의를 베푸시는 하나님|하나님께서 속히 원한을 풀어 주시지만 인자가 올 때 믿음을 보겠느냐 물으세요.
-기도하러 성전에 오른 두 사람|예수께서 스스로 의롭다 여기며 남을 멸시하는 이들에게 비유하시고, 바리새인과 세리가 성전에 기도하러 올라가요.
+기도하러 성전에 오른 2 사람|예수께서 스스로 의롭다 여기며 남을 멸시하는 이들에게 비유하시고, 바리새인과 세리가 성전에 기도하러 올라가요.
 자신을 내세우는 바리새인의 기도|바리새인은 다른 죄인과 같지 않다며 자기 의를 내세워요.
-금식과 십일조를 말하는 바리새인|바리새인은 일주일에 두 번 금식하고 소득의 십일조를 드린다고 해요.
+금식과 십일조를 말하는 바리새인|바리새인은 일주일에 2번 금식하고 소득의 십일조를 드린다고 해요.
 가슴 치며 자비를 구한 세리|세리는 멀리 서서 하늘을 보지 못하고 가슴을 치며 불쌍히 여겨 달라 해요.
 낮춘 세리를 의롭다 하심|예수께서 세리가 의롭다 하심을 받고 돌아갔다고 하세요.
 아기를 데려온 사람들|사람들이 예수께서 만져 주시기를 바라며 어린아이를 데려와요.
@@ -953,11 +953,11 @@ addLukeLongChapter(18,`
 하나님께 가능한 구원|사람에게 불가능해도 하나님께는 가능하다고 답하세요.
 모든 것을 버린 베드로|베드로가 모든 것을 버리고 주를 따랐다고 말해요.
 나라를 위해 버린 이의 약속|예수께서 하나님 나라를 위해 버린 이는 여러 배와 영생을 얻는다고 하세요.
-열두 제자를 따로 부르심|예수께서 열두 제자를 데리고 예루살렘으로 올라간다고 말씀하세요.
+12 제자를 따로 부르심|예수께서 12 제자를 데리고 예루살렘으로 올라간다고 말씀하세요.
 이방인에게 넘겨질 인자|예수께서 이방인에게 넘겨져 희롱과 능욕을 당할 것을 예고하세요.
 죽임당하고 살아날 예고|인자가 채찍질과 죽임을 당한 뒤 셋째 날 살아난다고 하세요.
 깨닫지 못한 제자들|제자들은 말씀이 가려져 있어 예고하신 일을 깨닫지 못해요.
-길가에 앉은 맹인|예수께서 여리고에 가까이 오실 때 한 맹인이 길가에서 구걸해요.
+길가에 앉은 맹인|예수께서 여리고에 가까이 오실 때 1 맹인이 길가에서 구걸해요.
 무리가 지나가는 소리|맹인이 많은 무리가 지나가는 소리를 듣고 무슨 일이냐고 물어요.
 나사렛 예수가 지나간다는 소식|사람들이 나사렛 예수가 지나간다고 맹인에게 알려줘요.
 다윗의 자손을 부르는 맹인|맹인이 다윗의 자손 예수께 자비를 베풀어 달라고 외쳐요.
@@ -972,9 +972,9 @@ addLukeLongChapter(18,`
 {from:9,to:14,actors:["예수","바리새인","세리"],setting:"temple",prop:"coin",actions:["walk","stand","pray","point","kneel","bow"]},
 {from:15,to:17,actors:["예수","어린이","제자들"],setting:"courtyard",prop:"scene-marker",actions:["carry","gather","signal","reach","bless","listen"]},
 {from:18,to:30,actors:["예수","부자 관리","제자들","가난한 사람들"],setting:"courtyard",prop:"coin",actions:["speak","listen","hold","release","mourn","walk"]},
-{from:31,to:34,actors:["예수","열두 사도"],setting:"road",prop:"cross",actions:["gather","walk","speak","listen","turn","wait"]},
+{from:31,to:34,actors:["예수","12 사도"],setting:"road",prop:"cross",actions:["gather","walk","speak","listen","turn","wait"]},
 {from:35,to:43,actors:["예수","맹인","무리"],setting:"road",prop:"staff",actions:["sit","listen","shout","reach","touch","rise"]}
-],["과부","재판관","바리새인","세리","어린이","제자들","부자 관리","가난한 사람들","열두 사도","맹인","무리"],{42:"heal"});
+],["과부","재판관","바리새인","세리","어린이","제자들","부자 관리","가난한 사람들","12 사도","맹인","무리"],{42:"heal"});
 addLukeLongChapter(19,`
 여리고를 지나시는 예수|예수께서 여리고에 들어가 그곳을 지나가세요.
 세리장 삭개오|삭개오는 세리장이며 부자였어요.
@@ -988,14 +988,14 @@ addLukeLongChapter(19,`
 잃은 이를 찾아오신 인자|인자가 온 것은 잃어버린 이를 찾아 구원하려는 것이라고 하세요.
 예루살렘 가까이의 비유|사람들이 하나님 나라가 곧 나타날 줄 생각하자 예수께서 비유를 더하세요.
 먼 나라로 떠나는 귀인|귀인이 왕위를 받아 돌아오려고 먼 나라로 떠나요.
-열 종에게 맡긴 은화|귀인은 종 열 명을 불러 은화 한 므나씩 맡기며 장사하라고 해요.
+10 종에게 맡긴 은화|귀인은 종 10명을 불러 은화 한 므나씩 맡기며 장사하라고 해요.
 왕위를 거부한 시민들|백성은 그 귀인이 왕 되는 것을 원하지 않는다고 사절을 보내요.
 왕이 되어 돌아온 귀인|귀인이 왕위를 받아 돌아와 돈을 맡긴 종들을 부르세요.
-열 므나를 남긴 첫 종|첫 종은 한 므나로 열 므나를 남겼다고 보고해요.
+열 므나를 남긴 1 종|1 종은 한 므나로 열 므나를 남겼다고 보고해요.
 열 고을을 맡기는 왕|왕은 충성한 종에게 열 고을을 다스리게 해요.
 다섯 므나의 보고|다른 종은 한 므나로 다섯 므나를 남겼다고 보고해요.
 다섯 고을을 맡긴 왕|왕은 그 종에게 다섯 고을을 맡겨요.
-수건에 감춘 한 므나|한 종은 한 므나를 수건에 싸 두었다고 말해요.
+수건에 감춘 한 므나|1 종은 한 므나를 수건에 싸 두었다고 말해요.
 두려움을 핑계로 내놓은 종|그 종은 주인을 엄한 사람이라 두려워했다고 말해요.
 자기 말로 심판받는 종|왕은 종의 말로 그를 심판하며 왜 돈을 은행에 맡기지 않았느냐고 물어요.
 이자와 함께 찾을 수 있었던 돈|은행에 맡겼다면 돌아와 이자와 함께 찾았을 것이라고 하세요.
@@ -1004,8 +1004,8 @@ addLukeLongChapter(19,`
 가진 이와 없는 이의 차이|가진 사람은 더 받고 없는 사람은 가진 줄 아는 것마저 빼앗긴다고 하세요.
 반대자들을 심판하라는 명령|왕은 왕 되기를 원치 않은 원수들을 데려와 심판하라고 해요.
 예루살렘을 향해 앞서가심|예수께서 이 말씀을 하시고 예루살렘으로 올라가세요.
-감람산 부근의 두 제자|예수께서 제자 둘을 맞은편 마을로 보내세요.
-아무도 타지 않은 나귀 새끼|두 제자는 매여 있는 나귀 새끼를 풀라는 지시를 받아요.
+감람산 부근의 2 제자|예수께서 제자 둘을 맞은편 마을로 보내세요.
+아무도 타지 않은 나귀 새끼|2 제자는 매여 있는 나귀 새끼를 풀라는 지시를 받아요.
 풀어 데려오라는 말씀|예수께서는 아직 아무도 타지 않은 나귀를 풀어 끌고 오라고 하세요.
 왜 푸느냐 묻는 주인들|나귀를 푸는 이들에게 주인들이 이유를 물어요.
 풀려난 나귀를 본 주인들|제자들이 나귀를 풀 때 주인들이 왜 푸느냐고 물어요.
@@ -1034,7 +1034,7 @@ addLukeLongChapter(19,`
 addLukeLongChapter(20,`
 성전에서 가르치시는 예수|예수께서 성전에서 백성을 가르치며 복음을 전하세요.
 권위를 따지는 지도자들|대제사장과 서기관과 장로들이 다가와 무슨 권위로 일하느냐고 물어요.
-되묻기로 권위를 시험하심|예수께서 먼저 한 가지 물을 테니 답하라고 하세요.
+되묻기로 권위를 시험하심|예수께서 먼저 1가지 물을 테니 답하라고 하세요.
 요한의 세례가 어디서 왔는가|예수께서 요한의 세례가 하늘에서 왔는지 사람에게서 왔는지 되물으세요.
 서로 의논하는 지도자들|지도자들은 하늘에서 왔다 하면 왜 믿지 않았느냐 들을까 염려해요.
 백성의 반응을 두려워함|사람들이 요한을 선지자로 여겨 돌을 던질까 걱정해요.
@@ -1043,7 +1043,7 @@ addLukeLongChapter(20,`
 소출을 받으러 간 종|주인은 소출을 받으려고 종 하나를 농부들에게 보내요.
 빈손으로 돌려보낸 종|농부들은 종을 때리고 아무것도 주지 않은 채 돌려보내요.
 다른 종도 모욕당함|주인이 다른 종을 보냈지만 농부들은 그도 때리고 모욕해요.
-세 번째 종의 상처|세 번째 종도 상처를 입고 쫓겨나요.
+3번째 종의 상처|3번째 종도 상처를 입고 쫓겨나요.
 사랑하는 아들을 보내는 주인|주인은 마지막으로 사랑하는 아들을 보내며 존중할 것이라 기대해요.
 상속자를 죽인 농부들|농부들은 상속자를 죽이면 유산이 자기들 것이 되리라며 아들을 포도원 밖에서 죽여요.
 농부를 심판할 주인|주인은 농부들을 멸하고 포도원을 다른 이들에게 맡길 것이라고 하세요.
@@ -1059,10 +1059,10 @@ addLukeLongChapter(20,`
 하나님의 것은 하나님께|예수께서는 하나님의 것은 하나님께 바치라고 덧붙이세요.
 책잡지 못하고 놀란 정탐꾼들|정탐꾼들은 백성 앞에서 예수를 책잡지 못하고 답에 놀라 잠잠해져요.
 부활을 부정하는 사두개인들|부활이 없다고 믿는 사두개인들이 모세의 율법을 들어 질문해요.
-첫 형제의 혼인과 죽음|맏형이 혼인했지만 자식 없이 죽었다고 사두개인들이 설명해요.
+1 형제의 혼인과 죽음|맏형이 혼인했지만 자식 없이 죽었다고 사두개인들이 설명해요.
 이어 혼인한 둘째와 셋째|둘째와 셋째도 차례로 그 여인과 혼인해요.
-차례로 혼인한 형제들|일곱 형제가 차례로 혼인했지만 자식 없이 죽어요.
-마지막에 죽은 여인|일곱 형제가 죽은 뒤 그 여인도 죽었다고 해요.
+차례로 혼인한 형제들|7 형제가 차례로 혼인했지만 자식 없이 죽어요.
+마지막에 죽은 여인|7 형제가 죽은 뒤 그 여인도 죽었다고 해요.
 부활 때 누구의 아내인가|사두개인들은 부활 때 여인이 누구의 아내가 되느냐고 물어요.
 이 세상의 혼인|예수께서는 이 세상의 자녀들은 장가들고 시집간다고 말씀하세요.
 부활에 합당한 이들의 삶|저 세상과 부활에 합당한 이들은 혼인하지 않는다고 하세요.
@@ -1088,7 +1088,7 @@ addLukeLongChapter(20,`
 ],["대제사장들","서기관들","장로들","포도원 주인","농부들","종들","아들","정탐꾼들","무리","사두개인들","제자들","백성"]);
 addLukeLongChapter(21,`
 헌금함을 바라보시는 예수|예수께서 부자들이 헌금함에 예물을 넣는 모습을 바라보세요.
-두 렙돈을 넣은 가난한 과부|가난한 과부가 작은 동전 두 개를 넣어요.
+두 렙돈을 넣은 가난한 과부|가난한 과부가 작은 동전 2개를 넣어요.
 더 많이 넣은 과부|예수께서는 이 과부가 다른 사람보다 더 많이 넣었다고 말씀하세요.
 생활비 전부를 드린 헌금|다른 이들은 넉넉한 가운데 드렸지만 과부는 생활비 전부를 드렸다고 하세요.
 아름다운 성전을 가리키는 사람|사람들이 아름다운 돌과 예물로 꾸민 성전을 말해요.
@@ -1135,12 +1135,12 @@ addLukeLongChapter(21,`
 addLukeLongChapter(22,`
 유월절을 준비하는 때|무교절이라 하는 유월절이 가까워져요.
 예수를 죽이려는 지도자들|대제사장들과 서기관들이 예수를 죽일 방법을 찾지만 백성을 두려워해요.
-유다에게 들어간 사탄|열두 제자 가운데 가룟 유다에게 사탄이 들어가요.
+유다에게 들어간 사탄|12 제자 가운데 가룟 유다에게 사탄이 들어가요.
 유다와 의논하고 값을 약속한 지도자들|유다가 대제사장들과 성전 경비대장들을 찾아가 예수를 넘길 방법을 의논해요. 그들은 기뻐하며 돈을 주기로 약속해요.
 무리 없는 기회를 찾는 유다|유다는 무리가 없을 때 예수를 넘길 기회를 살펴요.
 유월절 양을 잡는 날|유월절 양을 잡아야 하는 무교절 날이 와요.
 베드로와 요한을 보내심|예수께서 베드로와 요한을 보내 유월절 식사를 준비하게 하세요.
-어디서 준비할지 묻는 제자들|두 제자가 어디에서 준비할지 예수께 물어요.
+어디서 준비할지 묻는 제자들|2 제자가 어디에서 준비할지 예수께 물어요.
 물동이를 든 사람을 만나리라|예수께서는 물동이를 든 사람을 따라가라고 알려 주세요.
 객실을 찾고 유월절을 준비함|그 집 주인에게 객실을 물으라 하시니 제자들이 준비된 큰 다락방을 발견하고 유월절 음식을 준비해요.
 유월절 음식을 준비함|제자들이 유월절 음식을 준비해요.
@@ -1154,22 +1154,22 @@ addLukeLongChapter(22,`
 섬기는 이처럼 되라|제자들 가운데 큰 사람은 어린 사람처럼, 다스리는 이는 섬기는 이처럼 되라고 하세요.
 큰 자와 섬기는 이를 가르치심|예수께서는 큰 사람은 어린 사람처럼, 다스리는 이는 섬기는 이처럼 되라 하시며 자신도 섬기는 이로 계신다고 하세요.
 시험 중 함께한 제자들|제자들이 시험 중에도 예수와 함께했다고 말씀하세요.
-나라와 열두 지파를 맡기심|예수께서는 아버지께서 자신에게 맡기신 나라를 제자들에게 맡기고, 그들이 식탁에 앉아 이스라엘 열두 지파를 다스린다고 하세요.
+나라와 12지파를 맡기심|예수께서는 아버지께서 자신에게 맡기신 나라를 제자들에게 맡기고, 그들이 식탁에 앉아 이스라엘 12지파를 다스린다고 하세요.
 시몬을 겨눈 시험|사탄이 밀 까부르듯 제자들을 시험하려고 요구했다고 하세요.
 믿음이 끊어지지 않도록 기도함|예수께서는 시몬의 믿음이 떨어지지 않도록 기도했다고 하세요.
 돌아온 뒤 형제들을 굳게 하라|돌아온 뒤 형제들의 믿음을 굳게 하라고 베드로에게 맡기세요.
 죽음까지 따르겠다는 베드로|베드로는 주와 함께 감옥과 죽음에도 갈 준비가 됐다고 말해요.
-닭 울기 전 세 번 부인할 예고|예수께서는 베드로가 오늘 닭 울기 전에 세 번 모른다고 할 것을 예고하세요.
+닭 울기 전 3번 부인할 예고|예수께서는 베드로가 오늘 닭 울기 전에 3번 모른다고 할 것을 예고하세요.
 돈주머니와 배낭을 챙기라|예수께서는 이전에 보냄을 받을 때와 달라진 상황을 말씀하세요.
 칼이 없는 이는 겉옷을 팔라|칼이 없는 이는 겉옷을 팔아 칼을 사라는 비유적 지시를 하세요.
 불법자와 함께 헤아림|예수께서는 자신이 불법자와 함께 헤아림을 받는다는 기록이 이루어진다고 하세요.
-칼 두 자루를 보이는 제자들|제자들은 주여 여기 칼 두 자루가 있다고 말해요.
+칼 2자루를 보이는 제자들|제자들은 주여 여기 칼 2자루가 있다고 말해요.
 이것으로 족하다 하심|예수께서는 그 말에 이것으로 족하다고 답하세요.
 감람산으로 가심|예수께서 늘 하시던 대로 감람산으로 가고 제자들이 따라가요.
 익숙한 곳에 이르심|예수께서는 평소 기도하시던 곳에 이르러 제자들과 함께 머무세요.
 시험에 들지 않게 기도하라|예수께서는 제자들에게 시험에 빠지지 않도록 기도하라고 하세요.
 돌 던질 만큼 떨어져 기도함|예수께서는 제자들과 조금 떨어져 무릎을 꿇고 기도하세요.
-잔을 옮기시기를 구함|아버지께서 원하시면 이 잔을 옮겨 달라고 기도하세요.
+잔을 옮기시기를 구함|아버지께서 원하시면 2잔을 옮겨 달라고 기도하세요.
 아버지의 뜻을 따르심|자신의 뜻보다 아버지의 뜻이 이루어지기를 구하세요.
 힘을 북돋는 천사|하늘의 천사가 예수께 나타나 힘을 북돋아요.
 더욱 간절한 기도|예수께서 더욱 간절히 기도하시고 땀이 핏방울처럼 땅에 떨어져요.
@@ -1178,7 +1178,7 @@ addLukeLongChapter(22,`
 일어나 기도하라 하심|예수께서는 제자들에게 일어나 시험에 들지 않게 기도하라고 하세요.
 무리가 다가오는 순간|예수께서 말씀하실 때 유다가 앞장서 무리를 데리고 와요.
 입맞춤으로 배신하려는 유다|유다가 예수께 입맞추려 하자 예수께서 입맞춤으로 인자를 넘기느냐고 물으세요.
-무엇을 할지 묻는 제자들|제자들이 주여 우리가 칼로 칠까요 묻고 한 사람이 대제사장의 종을 쳐요.
+무엇을 할지 묻는 제자들|제자들이 주여 우리가 칼로 칠까요 묻고 1 사람이 대제사장의 종을 쳐요.
 귀를 만져 낫게 하심|예수께서 그 종의 귀를 만져 고쳐 주세요.
 칼과 몽둥이를 든 무리|예수께서 성전 경비대장과 장로들에게 칼과 몽둥이를 들고 왔느냐고 물으세요.
 성전에서 잡지 않다가 어둠의 때에|예수께서는 날마다 성전에서 가르쳤는데 잡지 않던 이들이 이제 어둠의 권세를 따라왔다고 하세요.
@@ -1190,9 +1190,9 @@ addLukeLongChapter(22,`
 다른 이의 알아봄|조금 뒤 다른 사람이 베드로도 그들 가운데 있다고 말해요.
 나는 아니라고 부인함|베드로는 그 사람에게 나는 아니라고 답해요.
 갈릴리 사람이라는 지적|한 시간쯤 지나 다른 이가 베드로의 말씨가 갈릴리 사람이라고 지적해요.
-세 번째 부인|베드로는 그가 무슨 말을 하는지 모른다고 부인해요.
+3번째 부인|베드로는 그가 무슨 말을 하는지 모른다고 부인해요.
 곧 울린 닭|베드로가 말하는 동안 닭이 울어요.
-돌아보신 예수와 기억난 말씀|주께서 돌아보시자 베드로는 닭 울기 전 세 번 부인하리란 말씀을 기억해요.
+돌아보신 예수와 기억난 말씀|주께서 돌아보시자 베드로는 닭 울기 전 3번 부인하리란 말씀을 기억해요.
 밖으로 나가 통곡한 베드로|베드로가 밖으로 나가 몹시 울어요.
 조롱하며 때리는 경비대|예수를 지키던 사람들이 예수를 조롱하고 때려요.
 눈을 가리고 맞힌 이를 대라 함|그들은 예수의 눈을 가리고 누가 때렸는지 맞혀 보라고 해요.
@@ -1207,12 +1207,12 @@ addLukeLongChapter(22,`
 `,[
 {from:1,to:6,actors:["예수","유다","대제사장들","성전 경비대"],setting:"temple",prop:"coin",actions:["gather","whisper","approach","speak","count","wait"]},
 {from:7,to:13,actors:["예수","베드로","요한","물동이를 든 사람","집주인"],setting:"house",prop:"table",actions:["signal","walk","follow","ask","lead","prepare"]},
-{from:14,to:23,actors:["예수","열두 사도"],setting:"house",prop:"bread",actions:["sit","bless","break-bread","share","hold","speak"]},
+{from:14,to:23,actors:["예수","12 사도"],setting:"house",prop:"bread",actions:["sit","bless","break-bread","share","hold","speak"]},
 {from:24,to:38,actors:["예수","제자들","베드로"],setting:"house",prop:"sword",actions:["argue","teach","serve","promise","warn","show"]},
 {from:39,to:53,actors:["예수","제자들","천사","유다","무리","대제사장의 종"],setting:"garden",prop:"sword",actions:["walk","kneel","pray","startle","kiss","heal"]},
 {from:54,to:62,actors:["예수","베드로","여종","사람들"],setting:"courtyard",prop:"fire",actions:["follow","sit","point","deny","turn","mourn"]},
 {from:63,to:71,actors:["예수","경비대","공회","대제사장들","서기관들"],setting:"courthouse",prop:"scroll",actions:["strike","blindfold","mock","gather","question","answer"]}
-],["예수","유다","대제사장들","성전 경비대","베드로","요한","물동이를 든 사람","집주인","열두 사도","제자들","천사","무리","대제사장의 종","여종","사람들","경비대","공회","서기관들"]);
+],["예수","유다","대제사장들","성전 경비대","베드로","요한","물동이를 든 사람","집주인","12 사도","제자들","천사","무리","대제사장의 종","여종","사람들","경비대","공회","서기관들"]);
 addLukeLongChapter(23,`
 빌라도에게 끌려간 예수|온 무리가 일어나 예수를 빌라도에게 끌고 가요.
 새벽에 열린 심문|예수를 새벽부터 총독의 재판 자리로 끌고 와요.
@@ -1232,7 +1232,7 @@ addLukeLongChapter(23,`
 매질 후 놓아주려는 빌라도|빌라도는 예수를 매질한 뒤 놓아주겠다고 제안해요.
 바라바를 놓으라는 함성|무리는 폭동과 살인으로 갇힌 바라바를 놓으라고 외쳐요.
 예수를 없애라는 외침|사람들이 예수를 죽이고 바라바를 놓으라고 거듭 외쳐요.
-세 번째 무죄 선언|빌라도가 무슨 악을 했느냐며 죽일 죄가 없다고 다시 말해요.
+3번째 무죄 선언|빌라도가 무슨 악을 했느냐며 죽일 죄가 없다고 다시 말해요.
 더 거세진 십자가 요구|무리는 큰 소리로 십자가에 못 박으라고 재촉해요.
 군중의 요구에 굴복함|빌라도는 무리의 요구를 들어주기로 결정해요.
 바라바를 놓고 예수를 넘김|빌라도는 폭동과 살인으로 갇힌 이를 놓고 예수를 그들의 뜻에 맡겨요.
@@ -1283,19 +1283,19 @@ addLukeLongChapter(24,`
 안식 후 첫날 새벽|여인들이 준비한 향품을 가지고 주간 첫날 이른 새벽 무덤으로 가요.
 무덤에서 굴려진 돌|여인들이 무덤에 이르니 입구의 돌이 굴려져 있어요.
 보이지 않는 주의 몸|여인들은 안으로 들어가지만 주 예수의 몸을 찾지 못해요.
-빛나는 옷을 입은 두 사람|곁에 빛나는 옷을 입은 두 사람이 서자 여인들이 두려워 엎드려요.
-살아 계신 분을 죽은 자 가운데서 찾지 말라|두 사람은 예수께서 살아나셨다고 말하며 죽은 자 가운데서 찾지 말라고 해요.
+빛나는 옷을 입은 2 사람|곁에 빛나는 옷을 입은 2 사람이 서자 여인들이 두려워 엎드려요.
+살아 계신 분을 죽은 자 가운데서 찾지 말라|2 사람은 예수께서 살아나셨다고 말하며 죽은 자 가운데서 찾지 말라고 해요.
 갈릴리에서 하신 말씀을 기억하라|예수께서 갈릴리에서 인자가 죄인의 손에 넘겨져 십자가에 못 박히고 살아날 것을 말씀하셨다고 상기시켜요.
 말씀이 기억난 여인들|여인들은 예수의 말씀을 기억해요.
-열한 제자와 다른 이들에게 전함|여인들은 무덤에서 돌아와 열한 제자와 다른 사람들에게 이 일을 전해요.
+11 제자와 다른 이들에게 전함|여인들은 무덤에서 돌아와 11 제자와 다른 사람들에게 이 일을 전해요.
 막달라 마리아와 동행한 여인들|막달라 마리아와 요안나와 야고보의 어머니 마리아와 다른 여인들이 사도들에게 말해요.
 허탄하게 여긴 사도들|사도들은 여인들의 말을 허탄한 이야기처럼 여기고 믿지 않아요.
 무덤으로 달려간 베드로|베드로는 일어나 무덤으로 달려가 몸을 굽혀 세마포만 보고 놀라 돌아가요.
-엠마오로 가는 두 제자|그날 두 제자가 예루살렘에서 육십 리쯤 떨어진 엠마오로 가요.
-일어난 일을 이야기하는 길|두 사람은 그동안 일어난 모든 일을 서로 이야기해요.
-가까이 오신 예수|예수께서 가까이 와 함께 걸으시지만 두 사람의 눈이 가려 알아보지 못해요.
+엠마오로 가는 2 제자|그날 2 제자가 예루살렘에서 육십 리쯤 떨어진 엠마오로 가요.
+일어난 일을 이야기하는 길|2 사람은 그동안 일어난 모든 일을 서로 이야기해요.
+가까이 오신 예수|예수께서 가까이 와 함께 걸으시지만 2 사람의 눈이 가려 알아보지 못해요.
 무슨 이야기를 나누느냐|예수께서 길에서 무슨 이야기를 나누느냐 물으세요.
-슬픈 얼굴로 멈춰 선 제자|두 제자는 슬픈 얼굴로 걸음을 멈춰요.
+슬픈 얼굴로 멈춰 선 제자|2 제자는 슬픈 얼굴로 걸음을 멈춰요.
 예루살렘의 일을 모르는가|글로바가 예루살렘에 머물면서 최근 일을 모르는 사람이냐고 되물어요.
 무슨 일이냐고 다시 물으심|예수께서 무슨 일이냐고 물으세요.
 나사렛 예수에 관한 이야기|그들은 예수가 하나님과 백성 앞에서 능력 있는 선지자였다고 말해요.
@@ -1307,14 +1307,14 @@ addLukeLongChapter(24,`
 미련하고 더딘 마음을 꾸짖으심|예수께서 선지자들이 말한 모든 것을 마음에 더디 믿는다고 하세요.
 그리스도의 고난과 영광|그리스도가 고난을 받고 영광에 들어가야 하지 않느냐고 물으세요.
 모세와 선지자의 글을 풀어 주심|예수께서 모세와 모든 선지자의 글에서 자신에 관한 말씀을 설명하세요.
-마을 가까이 이르심|두 제자가 가던 마을에 가까워지고 예수께서는 더 가려는 듯하세요.
-함께 묵으시기를 청함|두 제자는 날이 저물었으니 함께 머물러 달라고 예수께 간청해요.
+마을 가까이 이르심|2 제자가 가던 마을에 가까워지고 예수께서는 더 가려는 듯하세요.
+함께 묵으시기를 청함|2 제자는 날이 저물었으니 함께 머물러 달라고 예수께 간청해요.
 식탁에서 빵을 드심|예수께서 그들과 식탁에 앉아 빵을 들어 축사하고 떼어 주세요.
-열린 눈과 사라진 모습|두 제자의 눈이 열려 예수를 알아보지만 예수께서는 보이지 않게 돼요.
-길에서 뜨거웠던 마음|두 제자는 길에서 말씀을 풀어 주실 때 마음이 뜨겁지 않았느냐고 서로 말해요.
-그 밤에 예루살렘으로 돌아감|두 사람은 곧 일어나 예루살렘으로 돌아가요.
-모인 제자들과 함께한 이들|열한 제자와 함께한 이들이 모여 주께서 살아나 시몬에게 보이셨다고 말해요.
-길에서 만난 일을 전함|두 제자는 길에서 있었던 일과 빵을 떼실 때 알아본 일을 전해요.
+열린 눈과 사라진 모습|2 제자의 눈이 열려 예수를 알아보지만 예수께서는 보이지 않게 돼요.
+길에서 뜨거웠던 마음|2 제자는 길에서 말씀을 풀어 주실 때 마음이 뜨겁지 않았느냐고 서로 말해요.
+그 밤에 예루살렘으로 돌아감|2 사람은 곧 일어나 예루살렘으로 돌아가요.
+모인 제자들과 함께한 이들|11 제자와 함께한 이들이 모여 주께서 살아나 시몬에게 보이셨다고 말해요.
+길에서 만난 일을 전함|2 제자는 길에서 있었던 일과 빵을 떼실 때 알아본 일을 전해요.
 가운데 서신 예수|그들이 말하는 중 예수께서 친히 가운데 서세요.
 평강의 인사|예수께서 평강이 있으라 말씀하세요.
 놀라고 무서워하는 제자들|제자들은 영을 보는 줄 알고 놀라며 무서워해요.
@@ -1334,10 +1334,10 @@ addLukeLongChapter(24,`
 경배하고 기뻐 돌아감|제자들은 예수께 경배하고 큰 기쁨으로 예루살렘에 돌아가요.
 성전에서 하나님을 찬송함|그들은 늘 성전에 머물며 하나님을 찬송하고 찬양해요.
 `,[
-{from:1,to:12,actors:["여인들","두 천사","베드로","사도들"],setting:"tomb",prop:"tomb",actions:["walk","roll","enter","startle","speak","run"]},
-{from:13,to:27,actors:["예수","두 제자"],setting:"road",prop:"scroll",actions:["walk","approach","question","mourn","listen","read"]},
-{from:28,to:35,actors:["예수","두 제자","열한 제자"],setting:"house",prop:"bread",actions:["approach","invite","sit","break-bread","recognize","return"]},
+{from:1,to:12,actors:["여인들","2 천사","베드로","사도들"],setting:"tomb",prop:"tomb",actions:["walk","roll","enter","startle","speak","run"]},
+{from:13,to:27,actors:["예수","2 제자"],setting:"road",prop:"scroll",actions:["walk","approach","question","mourn","listen","read"]},
+{from:28,to:35,actors:["예수","2 제자","11 제자"],setting:"house",prop:"bread",actions:["approach","invite","sit","break-bread","recognize","return"]},
 {from:36,to:43,actors:["예수","제자들"],setting:"house",prop:"fish",actions:["appear","bless","startle","show","touch","eat"]},
 {from:44,to:49,actors:["예수","제자들"],setting:"house",prop:"scroll",actions:["teach","open","read","send","promise","wait"]},
 {from:50,to:53,actors:["예수","제자들"],setting:"bethany",prop:"cloud",actions:["walk","raise","bless","rise","bow","praise"]}
-],["여인들","두 천사","베드로","사도들","예수","두 제자","열한 제자","제자들"]);
+],["여인들","2 천사","베드로","사도들","예수","2 제자","11 제자","제자들"]);

@@ -2,7 +2,7 @@ export const chapters={},additionalPeople={};
 const add=(chapter,rows,actors,setting,prop,actions)=>{additionalPeople[chapter]=actors.map(name=>({name,role:`골로새서 ${chapter}장 서신의 인물`,refs:[`골로새서 ${chapter}장`]}));chapters[chapter]=rows.trim().split('\n').map((line,i)=>{const [title,study]=line.split('|');return{verse:i+1,title,study,actors,setting,prop,actions:actions.map(a=>({greet:"signal"}[a]||a))};});};
 add(1,`
 바울과 디모데의 인사|바울과 디모데는 하나님의 뜻으로 그리스도 예수의 사도가 된 바울의 이름으로 문안해요.
-골로새의 신실한 성도들|두 사람은 골로새에 있는 그리스도 안의 신실한 성도들에게 편지해요.
+골로새의 신실한 성도들|2 사람은 골로새에 있는 그리스도 안의 신실한 성도들에게 편지해요.
 은혜와 평강의 축복|하나님 아버지에게서 은혜와 평강이 있기를 바라요.
 성도들의 믿음과 사랑을 들음|바울은 그리스도 예수에 대한 믿음과 모든 성도를 향한 사랑을 듣고 감사해요.
 하늘에 쌓인 소망|성도들은 복음의 진리에서 들은 소망을 하늘에 간직하고 있어요.

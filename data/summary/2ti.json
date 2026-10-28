@@ -53,7 +53,7 @@
         {"name":"바울","role":"매인 사도","weight":3},
         {"name":"디모데","role":"좋은 병사","weight":3},
         {"name":"충성된 사람들","role":"말씀을 부탁받을 이들","weight":2},
-        {"name":"후메내오","role":"부활이 지났다 한 자","weight":2},
+        {"name":"후메내오","role":"부활이 지났다 1 자","weight":2},
         {"name":"빌레도","role":"진리에서 그릇된 자","weight":1},
         {"name":"마귀","role":"올무를 놓는 자","weight":1},
         {"name":"다윗","role":"예수의 조상","weight":1},
@@ -63,7 +63,7 @@
       "rels": [
         {"from":"바울","to":"디모데","label":"내 아들","kind":"family","directed":true,"weight":3,"verses":"1, 3","note":"바울은 디모데에게 그리스도 안의 은혜로 강해지고 좋은 병사처럼 함께 고난받으라고 해요. 곧 떠날 바울이 마지막으로 남기는 당부예요."},
         {"from":"디모데","to":"충성된 사람들","label":"부탁할 이들","kind":"ally","directed":true,"weight":2,"verses":"2","note":"바울에게 들은 것을 다른 이도 가르칠 수 있는 신실한 사람들에게 맡기라고 해요. 믿음의 가르침이 세대를 넘어 이어지도록 하려는 거예요."},
-        {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1,"verses":"17-18","note":"두 사람은 부활이 이미 지났다고 가르쳐 진리에서 벗어났어요. 그들의 말이 악성 종양처럼 번져 사람들을 해쳤어요."},
+        {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1,"verses":"17-18","note":"2 사람은 부활이 이미 지났다고 가르쳐 진리에서 벗어났어요. 그들의 말이 악성 종양처럼 번져 사람들을 해쳤어요."},
         {"from":"후메내오","to":"디모데","label":"믿음을 무너뜨림","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"그들의 말은 퍼지는 종기 같아서 일부 사람들의 믿음을 무너뜨렸어요. 그래서 디모데는 이런 헛된 말을 경계하고 피해야 해요."},
         {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1,"verses":"8","note":"예수님은 다윗의 후손으로 오셔서 죽은 자 가운데서 살아나신 메시아예요. 바울은 이것이 복음의 중심이라며 늘 기억하라고 해요."}
       ],

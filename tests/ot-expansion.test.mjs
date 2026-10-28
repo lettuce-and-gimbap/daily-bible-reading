@@ -162,7 +162,7 @@ test('에스라의 귀환·재건·율법 교육·공동체 회복에서 빠진 
 
 test('느헤미야의 성벽 재건·공동체 회복·예배 개혁에서 빠진 핵심 사건을 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'neh.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-neh-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/neh.json'));assert.equal(added.length,19);
- for(const title of ['왕이 허락한 예루살렘 재건','밤중에 무너진 성벽을 살피다','한 손으로 일하고 한 손으로 지키다','빚으로 땅과 자녀를 잃는 백성','초막절을 함께 지키는 기쁨','금식하며 죄를 고백하는 회중','안식일에 닫아 건 성문'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['왕이 허락한 예루살렘 재건','밤중에 무너진 성벽을 살피다','1 손으로 일하고 1 손으로 지키다','빚으로 땅과 자녀를 잃는 백성','초막절을 함께 지키는 기쁨','금식하며 죄를 고백하는 회중','안식일에 닫아 건 성문'])assert(added.some(s=>s.title===title),title);
  for(const s of added)assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);const prayer=data.scenes.find(s=>s.id==='ot-neh-1-2');assert.equal(prayer.ref,'느헤미야 1:5-11');
 });
 
@@ -174,7 +174,7 @@ test('에스더서의 왕후 교체·하만의 음모·중재·부림절 제정�
 
 test('욥기의 논쟁·엘리후의 답변·폭풍 속 질문과 회복을 상징 장면으로 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'job.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-job-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/job.json'));assert.equal(added.length,29);
- for(const title of ['재앙 뒤에도 하나님을 예배한 욥','일곱 날을 말없이 함께한 세 친구','엘리바스의 충고와 욥의 응답','대속자가 살아 계시리라는 욥의 희망','자신의 삶을 내놓는 욥의 맹세','폭풍 속에서 욥에게 창조 세계를 물으시다','친구들을 위해 기도한 욥','회복된 욥과 다시 이어진 가족의 삶'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['재앙 뒤에도 하나님을 예배한 욥','7일을 말없이 함께한 3 친구','엘리바스의 충고와 욥의 응답','대속자가 살아 계시리라는 욥의 희망','자신의 삶을 내놓는 욥의 맹세','폭풍 속에서 욥에게 창조 세계를 물으시다','친구들을 위해 기도한 욥','회복된 욥과 다시 이어진 가족의 삶'])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);assert(s.narrationOnly);}
  assert(added.filter(s=>[38,40].includes(s.chapter)).every(s=>!s.actors.includes('하나님')));
 });
@@ -247,7 +247,7 @@ test('에스겔의 상징 행동·포로 소식·회복 환상을 사건별로 �
 
 test('다니엘서의 왕궁 시험·불 가운데의 구원·환상 해석을 누락 사건으로 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'dan.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-dan-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/dan.json'));assert.equal(added.length,8);
- for(const title of ['왕의 음식 대신 시험을 청하다','불 가운데서 보호받은 세 친구','큰 나무의 꿈을 해석하다','숫양과 숫염소의 환상을 보다'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['왕의 음식 대신 시험을 청하다','불 가운데서 보호받은 3 친구','큰 나무의 꿈을 해석하다','숫양과 숫염소의 환상을 보다'])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert.equal(s.animation.mode,'illustration');assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -275,7 +275,7 @@ test('amo 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('jnh 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'jnh.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-jnh-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jnh.json'));assert.equal(added.length,6);
- for(const title of ["제비가 요나에게 떨어지다","선원들이 바다에 요나를 내리다","큰 물고기 뱃속에서 드린 기도","두 번째 부름을 받고 니느웨로 가다","니느웨 왕과 백성이 돌이키다","요나의 분노와 하나님의 마지막 질문"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["제비가 요나에게 떨어지다","선원들이 바다에 요나를 내리다","큰 물고기 뱃속에서 드린 기도","2번째 부름을 받고 니느웨로 가다","니느웨 왕과 백성이 돌이키다","요나의 분노와 하나님의 마지막 질문"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -338,7 +338,7 @@ test('zec 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('deu 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'deu.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-deu-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/deu.json'));assert.equal(added.length,16);
- for(const title of ["정탐꾼의 보고와 백성의 두려움을 회고하다","뒤늦은 출정이 실패하다","시혼의 땅을 지나 정복하다","옥의 바산을 차지하고 땅을 나누다","호렙에서 받은 말씀을 다음 세대에 전하다","백성이 두려워 중재를 부탁하다","금송아지 앞에서 돌판을 깨고 중보하다","새 돌판과 언약궤를 마련하다","율법을 돌에 기록하고 에발 산에 제단을 세우다","모압에서 언약을 새롭게 하다","생명과 죽음 앞에서 생명을 택하라 하다","여호수아를 후계자로 세우다","칠 년마다 율법을 낭독하라 명하다","모세가 노래를 전하고 백성에게 기억시키다","비스가 산에서 땅을 바라보고 모세가 죽다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["정탐꾼의 보고와 백성의 두려움을 회고하다","뒤늦은 출정이 실패하다","시혼의 땅을 지나 정복하다","옥의 바산을 차지하고 땅을 나누다","호렙에서 받은 말씀을 다음 세대에 전하다","백성이 두려워 중재를 부탁하다","금송아지 앞에서 돌판을 깨고 중보하다","새 돌판과 언약궤를 마련하다","율법을 돌에 기록하고 에발 산에 제단을 세우다","모압에서 언약을 새롭게 하다","생명과 죽음 앞에서 생명을 택하라 하다","여호수아를 후계자로 세우다","7년마다 율법을 낭독하라 명하다","모세가 노래를 전하고 백성에게 기억시키다","비스가 산에서 땅을 바라보고 모세가 죽다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -433,7 +433,7 @@ test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'num.json')),added=data.scenes.filter(s=>s.id==='ot-num-extra-15-0'),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/num.json'));assert.equal(added.length,1);
- for(const title of ["안식일에 나무를 한 사람이 모세 앞에 서다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["안식일에 나무를 1 사람이 모세 앞에 서다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -629,8 +629,8 @@ test('겹쳐 있던 구약 사건 범위를 인접한 장면으로 나누고 원
 
 
 test('2ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
- for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
+ const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","3번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
+ for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","3번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 

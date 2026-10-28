@@ -39,7 +39,7 @@ export function loadDiscoveries(storage){try{const raw=JSON.parse(storage.getIte
 export function learningNext(record,records){
  if(!record)return '월드에서 인물을 눌러 첫 만남을 기록해요.';
  if(!record.read.length)return record.stories.length?'이야기 하나를 읽고 관련 구절을 살펴보세요.':'다른 본문에서 다시 만나 이야기를 모아 보세요.';
- if(record.relations.length&&!record.relations.some(r=>records[r.key]))return '한 다리 주변 인물 중 한 명을 월드에서 만나 보세요.';
+ if(record.relations.length&&!record.relations.some(r=>records[r.key]))return '한 다리 주변 인물 중 1명을 월드에서 만나 보세요.';
  if(record.read.length<2)return record.stories.length<2?'다른 본문에서 다시 만나 새 이야기를 모아 보세요.':'아직 읽지 않은 이야기를 하나 더 읽어 보세요.';
  if(record.days.length<2)return '다른 날 다시 만나면 깊이 알아가기 단계가 열려요. (한국 시간 기준)';
  return '깊이 알아가기 완료! 다른 본문에서도 만나 관계와 이야기를 계속 모아 보세요.';

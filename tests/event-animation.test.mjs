@@ -53,7 +53,7 @@ test('기브온 사람들의 노동 장면은 상징 대사가 아니라 나무 
 test('성경 본문의 행동 주체와 비유·예언의 상징 모드를 구분한다',()=>{
  const gen=books.find(([b])=>b==='gen')[1].scenes;assert.deepEqual(gen.find(s=>s.title==='속은 아버지').actors,['야곱']);assert.equal(gen.find(s=>s.title==='베냐민의 자루 속 은잔').object,'cup');
  for(const b of ['psa','pro','ecc','sng','oba','nam','zep'])for(const s of books.find(([code])=>code===b)[1].scenes)assert.equal(s.animation.mode,'illustration');
- const s=gen.find(s=>s.title==='두 형제의 제물');assert.equal(s.animation.support.actor,'아벨');assert.equal(eventPlan(s).lead,'가인');
+ const s=gen.find(s=>s.title==='2 형제의 제물');assert.equal(s.animation.support.actor,'아벨');assert.equal(eventPlan(s).lead,'가인');
 });
 
 test('두 번째 배우가 행동 주체여도 두 인물이 서로를 향해 서고 소품 좌표가 방향을 따른다',()=>{
@@ -87,7 +87,7 @@ test('이다말은 게르손·므라리 운반을 감독하며 짐을 직접 메
  const scenes=books.find(([c])=>c==='num')[1].scenes;for(const id of ['ot-num-4-1','ot-num-4-2']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'이다말');assert.equal(a.motif,'instruct');assert(a.beats.some(b=>b.action==='signal'));assert(!a.beats.some(b=>b.action==='carry'));}
 });
 test('열두 돌은 열두 사람이 메고 언약궤는 다윗 대신 레위인들이 멘다',()=>{
- const a=books.find(([c])=>c==='jos')[1].scenes.find(s=>s.id==='ot-jos-4-0').animation;assert.equal(a.lead,'열두 사람');assert(a.beats.some(b=>b.action==='carry'));
+ const a=books.find(([c])=>c==='jos')[1].scenes.find(s=>s.id==='ot-jos-4-0').animation;assert.equal(a.lead,'12 사람');assert(a.beats.some(b=>b.action==='carry'));
  const scenes=books.find(([c])=>c==='1ch')[1].scenes;for(const id of ['ot-1ch-15-0','ot-voice-25']){const a=scenes.find(s=>s.id===id).animation;assert.equal(a.lead,'레위인들');assert(a.beats.filter(b=>b.action==='carry').every(b=>b.actor==='레위인들'));}
 });
 
