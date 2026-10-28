@@ -910,12 +910,12 @@
         },
         {
           "name": "아람 왕",
-          "role": "엘리사를 잡으려 1 왕",
+          "role": "엘리사를 잡으려 한 왕",
           "weight": 2
         },
         {
           "name": "이스라엘 왕",
-          "role": "엘리사를 죽이려 1 왕",
+          "role": "엘리사를 죽이려 한 왕",
           "weight": 2
         },
         {
@@ -948,7 +948,7 @@
         {
           "from": "아람 왕",
           "to": "엘리사",
-          "label": "잡으려 1 왕",
+          "label": "잡으려 한 왕",
           "kind": "conflict",
           "directed": true,
           "weight": 3,
@@ -978,7 +978,7 @@
         {
           "from": "이스라엘 왕",
           "to": "엘리사",
-          "label": "죽이려 1 왕",
+          "label": "죽이려 한 왕",
           "kind": "conflict",
           "directed": true,
           "weight": 2,

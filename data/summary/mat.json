@@ -42,7 +42,7 @@
       "people": [
         {"name":"예수","role":"베들레헴에서 나신 왕","weight":3},
         {"name":"동방 박사들","role":"별을 따라온 이들","weight":3},
-        {"name":"헤롯","role":"아기를 죽이려 1 왕","weight":3},
+        {"name":"헤롯","role":"아기를 죽이려 한 왕","weight":3},
         {"name":"요셉","role":"가족을 지킨 아버지","weight":2},
         {"name":"마리아","role":"아기의 어머니","weight":2},
         {"name":"주의 사자","role":"꿈에 지시한 천사","weight":2},
@@ -50,10 +50,10 @@
       ],
       "rels": [
         {"from":"동방 박사들","to":"예수","label":"경배한 이들","kind":"ally","directed":true,"weight":3,"verses":"11","note":"박사들은 이방인인데도 엎드려 경배했어요. 헤롯이 겉으로만 경배하겠다고 한 것과 크게 달랐어요."},
-        {"from":"헤롯","to":"예수","label":"죽이려 1 왕","kind":"conflict","directed":true,"weight":3,"verses":"16","note":"헤롯은 박사들에게 속은 걸 알고 화가 나, 베들레헴의 2살 아래 사내아이를 모두 죽였어요."},
+        {"from":"헤롯","to":"예수","label":"죽이려 한 왕","kind":"conflict","directed":true,"weight":3,"verses":"16","note":"헤롯은 박사들에게 속은 걸 알고 화가 나, 베들레헴의 2살 아래 사내아이를 모두 죽였어요."},
         {"from":"주의 사자","to":"요셉","label":"지시한 천사","kind":"ally","directed":true,"weight":2,"verses":"13, 19-20","note":"천사는 꿈에 2번 나타나 애굽으로 피하라, 헤롯이 죽었으니 돌아가라고 말했어요. 요셉은 그때마다 바로 따랐어요."},
         {"from":"요셉","to":"예수","label":"지킨 아버지","kind":"family","directed":true,"weight":2,"verses":"14, 21","note":"요셉은 아기와 어머니를 데리고 밤에 애굽으로 갔다가 돌아왔어요. 하나님이 보호하시는 길을 말씀대로 따른 아버지예요."},
-        {"from":"헤롯","to":"동방 박사들","label":"속이려 1 왕","kind":"conflict","directed":true,"weight":1,"verses":"7-8","note":"헤롯은 가만히 박사들을 불러 별이 나타난 때를 캐묻고 아기를 찾거든 알려 달라며 경배하겠다고 속였어요."}
+        {"from":"헤롯","to":"동방 박사들","label":"속이려 한 왕","kind":"conflict","directed":true,"weight":1,"verses":"7-8","note":"헤롯은 가만히 박사들을 불러 별이 나타난 때를 캐묻고 아기를 찾거든 알려 달라며 경배하겠다고 속였어요."}
       ],
       "places": [
         {"name":"베들레헴","where":"예루살렘 남쪽 다윗의 마을","what":"예수께서 나신 곳","weight":3},

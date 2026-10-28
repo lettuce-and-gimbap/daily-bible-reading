@@ -579,7 +579,7 @@
 {"id":"person:고레스","name":"고레스","kind":"person","occurrences":["2ch.36","dan.10","ezr.1","ezr.6","isa.44","isa.45"],"traits":[],"status":"existing-or-designed-appearance"},
 {"id":"unresolved:고린도 교회:2co","name":"고린도 교회","kind":"unresolved","occurrences":["2co.1"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:실루아노:2co","name":"실루아노","kind":"unresolved","occurrences":["2co.1"],"traits":[],"status":"group-or-unresolved"},
-{"id":"unresolved:근심하게 1 자:2co","name":"근심하게 1 자","kind":"unresolved","occurrences":["2co.2"],"traits":[],"status":"group-or-unresolved"},
+{"id":"unresolved:근심하게 한 자:2co","name":"근심하게 한 자","kind":"unresolved","occurrences":["2co.2"],"traits":[],"status":"group-or-unresolved"},
 {"id":"person:디도","name":"디도","kind":"person","occurrences":["2co.2","2co.7","2co.8","2co.12","gal.2","tit.1","tit.2","tit.3"],"traits":[],"status":"existing-or-designed-appearance"},
 {"id":"unresolved:믿지 않는 자들:2co","name":"믿지 않는 자들","kind":"unresolved","occurrences":["2co.4"],"traits":[],"status":"group-or-unresolved"},
 {"id":"unresolved:이 세상의 신:2co","name":"이 세상의 신","kind":"unresolved","occurrences":["2co.4"],"traits":[],"status":"group-or-unresolved"},

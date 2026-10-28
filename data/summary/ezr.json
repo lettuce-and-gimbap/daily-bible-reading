@@ -528,7 +528,7 @@
         {
           "from": "아닥사스다",
           "to": "유다 백성",
-          "label": "멈추게 1 왕",
+          "label": "멈추게 한 왕",
           "kind": "conflict",
           "directed": true,
           "weight": 2,

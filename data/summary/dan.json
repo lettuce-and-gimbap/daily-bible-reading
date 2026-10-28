@@ -267,7 +267,7 @@
         {
           "from": "느부갓네살",
           "to": "바벨론 지혜자들",
-          "label": "죽이라 1 왕",
+          "label": "죽이라 한 왕",
           "kind": "conflict",
           "directed": true,
           "weight": 2,

@@ -261,7 +261,7 @@
       "people": [
         {"name":"유다 족속","role":"준마처럼 될 백성","weight":3},
         {"name":"요셉 족속","role":"구원받아 돌아올 북쪽 지파","weight":2},
-        {"name":"악한 목자들","role":"백성을 유리하게 1 자","weight":2},
+        {"name":"악한 목자들","role":"백성을 유리하게 한 자","weight":2},
         {"name":"복술가","role":"거짓을 본 자","weight":1},
         {"name":"하나님","role":"모으시는 분","weight":3}
       ],

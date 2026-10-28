@@ -5397,7 +5397,7 @@
       ]
     },
     {
-      "name": "근심하게 1 자",
+      "name": "근심하게 한 자",
       "roles": [
         "벌을 받은 이"
       ],
@@ -5409,7 +5409,7 @@
       "identities": [
         {
           "kind": "unresolved",
-          "id": "unresolved:근심하게 1 자:2co",
+          "id": "unresolved:근심하게 한 자:2co",
           "status": "needs-review",
           "refs": [
             "2co.2"

@@ -53,7 +53,7 @@
         {"name":"바울","role":"매인 사도","weight":3},
         {"name":"디모데","role":"좋은 병사","weight":3},
         {"name":"충성된 사람들","role":"말씀을 부탁받을 이들","weight":2},
-        {"name":"후메내오","role":"부활이 지났다 1 자","weight":2},
+        {"name":"후메내오","role":"부활이 이미 일어났다고 주장한 자","weight":2},
         {"name":"빌레도","role":"진리에서 그릇된 자","weight":1},
         {"name":"마귀","role":"올무를 놓는 자","weight":1},
         {"name":"다윗","role":"예수의 조상","weight":1},

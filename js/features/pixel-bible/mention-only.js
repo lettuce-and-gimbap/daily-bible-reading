@@ -81,7 +81,7 @@ const CHAPTERS = {
   // or illustrative figures, and theological names from the staged cast while
   // retaining their source-index and relationship records for study.
   '2co.1': ['고린도 교회', '실루아노', '예수'],
-  '2co.2': ['고린도 성도', '근심하게 1 자', '디도', '사탄', '예수'],
+  '2co.2': ['고린도 성도', '근심하게 한 자', '디도', '사탄', '예수'],
   '2co.3': ['고린도 성도', '이스라엘 자손', '모세', '예수'],
   '2co.4': ['고린도 성도', '믿지 않는 자들', '이 세상의 신', '예수'],
   '2co.5': ['고린도 성도', '예수'],
