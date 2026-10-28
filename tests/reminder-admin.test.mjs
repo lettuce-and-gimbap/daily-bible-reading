@@ -86,6 +86,12 @@ test("shared reminder artwork endpoint serves the saved JPEG bytes", async () =>
   assert.deepEqual(new Uint8Array(await response.arrayBuffer()), jpg);
 });
 
+test("worker exposes the API version required for shared reminder edits", async () => {
+  const response = await reminderWorker.fetch(new Request("https://worker.test/reminder-capabilities"), {});
+  assert.equal(response.status, 200);
+  assert.deepEqual(await response.json(), { reminderMessagesApiVersion: 2, reminderArtwork: true });
+});
+
 test("editing bubble text renders that exact text into the artwork", () => {
   const phrase = "오늘은 천천히 한 장 읽고 마음에 닿는 말씀을 오래 붙들어요";
   const svg = renderCard({ tier: "night", pose: "pray", say: phrase }, (text, size) => String(text).length * size * 0.55);
@@ -97,6 +103,6 @@ test("admin reminder review has manual navigation without auto-advance controls"
   const ui = await readFile(new URL("../js/features/reminder-admin.js", import.meta.url), "utf8");
   assert.match(ui, /data-reminder-next/);
   assert.doesNotMatch(ui, /data-reminder-play|reminderAdminTimer|scheduleNext/);
-  assert.match(ui, /reminderAdminHasArtApi/);
-  assert.match(ui, /Worker가 말풍선 그림 저장 기능을 지원하지 않아요/);
+  assert.match(ui, /reminderAdminHasCurrentApi/);
+  assert.match(ui, /Worker가 최신 알림 저장 API를 제공하지 않습니다/);
 });

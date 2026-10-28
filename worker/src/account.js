@@ -12,6 +12,7 @@ const MAX_REMINDER_ART_BYTES = 512_000;
 const MAX_REMINDER_ART_TOTAL_BYTES = 3_000_000;
 const ADMIN_IDS = new Set(["buucksoo"]);
 const REMINDER_MESSAGE_KEY = "admin:reminder-messages";
+export const REMINDER_MESSAGES_API_VERSION = 2;
 const LINK_MS = 10 * 60 * 1000;
 const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
@@ -77,9 +78,12 @@ export async function account(pathname, request, env, json) {
       return json({ ok: true, messages: null, updated: Date.now() });
     }
     const text = JSON.stringify(body.messages);
-    if (new TextEncoder().encode(text).byteLength > MAX_REMINDER_DB_BYTES || !validReminderMessages(body.messages)) {
-      return json({ error: "알림 문구 DB 형식이 맞지 않거나 1MB를 넘어요" }, 400);
+    const messageBytes = new TextEncoder().encode(text).byteLength;
+    if (messageBytes > MAX_REMINDER_DB_BYTES) {
+      return json({ error: `알림 문구 DB가 1MB 제한을 넘어요 (${messageBytes}바이트)` }, 413);
     }
+    const messageIssue = reminderMessagesValidationIssue(body.messages);
+    if (messageIssue) return json({ error: `알림 문구 DB 검증 실패: ${messageIssue}` }, 400);
     const art = body.art || {};
     const artDeletes = body.artDeletes || [];
     if (!validReminderArtwork(art, body.messages) || !Array.isArray(artDeletes)
@@ -126,19 +130,30 @@ export async function account(pathname, request, env, json) {
 }
 
 export function validReminderMessages(messages) {
+  return reminderMessagesValidationIssue(messages) === null;
+}
+
+function reminderMessagesValidationIssue(messages) {
   const tiers = ["morning", "afternoon", "evening", "night", "last", "done"];
   if (!messages || typeof messages !== "object" || Array.isArray(messages)
     || tiers.some((tier) => !Array.isArray(messages[tier]))
-    || Object.keys(messages).some((key) => !tiers.includes(key))) return false;
-  return tiers.every((tier) => messages[tier].length <= 200 && messages[tier].every((row) => {
-    if (!Array.isArray(row) || row.length < 3 || row.length > 6) return false;
-    if (![0, 1, 2].every((i) => typeof row[i] === "string")) return false;
-    if (row.some((cell) => cell !== undefined && typeof cell !== "string")) return false;
-    if (row[0].length > 120 || row[1].length > 600 || row[2].length > 40
-      || (row[3] || "").length > 120 || (row[4] || "").length > 40) return false;
-    return row[5] === undefined || /^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5])
-      || /^https:\/\/daily-bible-reminder\.gimbap-lettuce\.workers\.dev\/reminder-art\/(morning|afternoon|evening|night|last|done)\/\d+\.jpg\?v=\d+$/.test(row[5]);
-  }));
+    || Object.keys(messages).some((key) => !tiers.includes(key))) return "시간대별 문구 DB 구조가 올바르지 않아요.";
+  for (const tier of tiers) {
+    if (messages[tier].length > 200) return `${tier} 항목이 200개를 넘어요.`;
+    for (const [index, row] of messages[tier].entries()) {
+      if (!Array.isArray(row) || row.length < 3 || row.length > 6) return `${tier} ${index + 1}번 항목의 배열 형식이 올바르지 않아요.`;
+      if (![0, 1, 2].every((i) => typeof row[i] === "string")) return `${tier} ${index + 1}번 항목에 제목·본문·포즈 문자열이 빠졌어요.`;
+      if (row.some((cell) => cell !== undefined && typeof cell !== "string")) return `${tier} ${index + 1}번 항목에 문자열이 아닌 값이 있어요.`;
+      if (row[0].length > 120 || row[1].length > 600 || row[2].length > 40
+        || (row[3] || "").length > 120 || (row[4] || "").length > 40) return `${tier} ${index + 1}번 항목의 글자 수 제한을 넘어요.`;
+      if (row[5] !== undefined
+        && !/^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5])
+        && !/^https:\/\/daily-bible-reminder\.gimbap-lettuce\.workers\.dev\/reminder-art\/(morning|afternoon|evening|night|last|done)\/\d+\.jpg\?v=\d+$/.test(row[5])) {
+        return `${tier} ${index + 1}번 항목의 그림 경로가 올바르지 않아요.`;
+      }
+    }
+  }
+  return null;
 }
 
 function validReminderArtwork(art, messages) {

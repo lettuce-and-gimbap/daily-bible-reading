@@ -5,7 +5,7 @@
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
 import { dailySummary } from "./summary.js";
-import { account } from "./account.js";
+import { account, REMINDER_MESSAGES_API_VERSION } from "./account.js";
 import { planNote } from "./plan.js";
 import { scriptureChapter } from "./scripture.js";
 
@@ -32,6 +32,9 @@ export default {
 
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
+      if (pathname === "/reminder-capabilities" && request.method === "GET") {
+        return json({ reminderMessagesApiVersion: REMINDER_MESSAGES_API_VERSION, reminderArtwork: true });
+      }
       const reminderArtMatch = pathname.match(/^\/reminder-art\/(morning|afternoon|evening|night|last|done)\/(\d+)\.jpg$/);
       if (reminderArtMatch && request.method === "GET") {
         const [, tier, index] = reminderArtMatch;
