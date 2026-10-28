@@ -807,8 +807,12 @@ test('에스겔 13–25장의 거짓 예언·왕실 맹세·세대 비유·열�
  const chapters=Object.entries(summary.chapters).slice(12,25).map(([chap,data])=>({code:'ezk',name:'에스겔',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters);
  const entries=PAIR_DIALOGUE.filter(entry=>/^ezk\.(?:1[3-9]|2[0-5])$/.test(entry.chapter));
- assert.equal(context.relations.length,25);assert.equal(entries.length,25);
+ assert.equal(context.relations.length,25);assert.equal(entries.length,24);
  for(const relation of context.relations){
+  if(relation.from.chap===24&&[relation.from.name,relation.to.name].includes('에스겔의 아내')){
+   assert.ok(relationshipLines(relation.from,relation.to,relation,null).every(line=>!line.special),'부부 관계는 보존하되 아내의 죽음 예고를 특수 대사로 만들지 않는다');
+   continue;
+  }
   assert.ok(entries.some(entry=>entry.chapter===`ezk.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  }
  for(const entry of entries){
@@ -816,7 +820,7 @@ test('에스겔 13–25장의 거짓 예언·왕실 맹세·세대 비유·열�
   assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.match(entry.ref,/에스겔 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
  }
  assert.match(entries.find(entry=>entry.id==='pair-ezk-23-sisters').detail,/비유/);
- assert.match(entries.find(entry=>entry.id==='pair-ezk-24-wife-ezekiel').detail,/아내의 발언이 없습니다/);
+ assert.equal(entries.some(entry=>entry.id==='pair-ezk-24-wife-ezekiel'),false,'본문에 없는 아내의 죽음 예고 대화는 제거한다');
  assert.equal(summary.chapters[19].rels.some(relation=>relation.from.includes('사자 새끼')),false,'비유 속 사자 가족은 동물 간 대화선으로 만들지 않는다');
 });
 
