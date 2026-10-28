@@ -32,6 +32,7 @@ async function renderReminderAdmin(header) {
     value: `${tier}:${index}`,
     label: `${tier} ${index + 1} · ${row[3] || row[0]}`,
     src: row[5] || `icons/notify/${tier}-${index}.jpg`,
+    say: row[3] || "",
   }));
   let position = Math.floor(Math.random() * entries.length);
   let order = [];
@@ -92,7 +93,7 @@ async function renderReminderAdmin(header) {
     const asset = assets.find((candidate) => candidate.value === imageSelect.value) || assets[0];
     image.src = asset.src;
     image.alt = `${entry.tier} 알림 ${entry.index + 1}의 양 그림`;
-    imageText.textContent = current[3] ? `그림 속 말풍선: ${current[3]}` : "그림 속 말풍선 없음";
+    imageText.textContent = asset.say ? `그림 속 말풍선: ${asset.say}` : "그림 속 말풍선 없음";
     caption.textContent = `DB 위치: ${entry.tier} ${entry.index + 1} · 포즈 ${current[2]}${current[4] ? ` · 조건 ${current[4]}` : ""}`;
     count.textContent = `${String(position + 1).padStart(3, "0")} / ${entries.length} · ${entry.tier}`;
   }
@@ -105,13 +106,15 @@ async function renderReminderAdmin(header) {
     row[0] = title.value;
     row[1] = body.value;
     const [tier, rawIndex] = imageSelect.value.split(":");
-    const original = `icons/notify/${tier}-${rawIndex}.jpg`;
-    if (tier === entries[position].tier && Number(rawIndex) === entries[position].index) delete row[5];
-    else row[5] = original;
+    const selectedAsset = assets.find((asset) => asset.value === imageSelect.value);
+    const imagePath = selectedAsset?.src || `icons/notify/${tier}-${rawIndex}.jpg`;
+    const defaultPath = `icons/notify/${entries[position].tier}-${entries[position].index}.jpg`;
+    if (imagePath === defaultPath) delete row[5];
+    else row[5] = imagePath;
     dirty = true;
     status.textContent = "수정 내용이 있어요. 저장하거나 JSON으로 내보내 주세요.";
-    const selectedAsset = assets.find((asset) => asset.value === imageSelect.value);
-    image.src = selectedAsset?.src || original;
+    image.src = imagePath;
+    imageText.textContent = selectedAsset?.say ? `그림 속 말풍선: ${selectedAsset.say}` : "그림 속 말풍선 없음";
   }
   title.addEventListener("input", markDirty);
   body.addEventListener("input", markDirty);
