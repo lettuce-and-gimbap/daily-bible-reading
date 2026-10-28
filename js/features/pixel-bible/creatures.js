@@ -45,6 +45,8 @@ export function chapterCreatures(c){
  // 1 Peter uses a lamb for Christ and a lion as an image for the devil.
  if(c.code==='1pe'&&[1,2,5].includes(Number(c.chap)))found.delete('sheep');
  if(c.code==='1pe'&&Number(c.chap)===5)found.delete('lion');
+ // 2 Peter 2 uses dogs and pigs as figures in a proverb, not as scene animals.
+ if(c.code==='2pe'&&Number(c.chap)===2){found.delete('dog');found.delete('pig');}
  // 계시록의 어린 양은 인간형 동물/양 떼로 생성하지 않는다.
  if(c.code==='rev'&&!/양 떼|양을 먹/.test(c.data?.story||''))found.delete('sheep');
  return [...found.values()];

@@ -2151,3 +2151,19 @@ test('베드로전서는 서신 수신자·구약 예시·비유 동물을 분�
  assert.equal(resolveIdentity('마가',{code:'1pe',chapter:5}).id,resolveIdentity('요한 마가',{code:'act',chapter:15}).id);
  assert.ok(summary.chapters['5'].rels.some(r=>r.from==='베드로'&&r.to==='마가'&&r.verses==='13'));
 });
+
+test('베드로후서는 편지 화자 별칭을 합치고 과거 심판 예시·미래 재림 대상을 현장 캐릭터에서 제외한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/2pe.json',import.meta.url),'utf8'));
+ const eventBook=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/2pe.json',import.meta.url),'utf8'));
+ const cast=chapter=>buildWorldModel([{code:'2pe',name:'베드로후서',chap:chapter,data:{...summary.chapters[String(chapter)],eventScenes:eventBook.scenes.filter(s=>s.chapter===chapter),additionalPeople:eventBook.additionalPeople?.[String(chapter)]||[]}}]).cast;
+ assert.equal(resolveIdentity('시몬 베드로',{code:'2pe',chapter:1}).id,resolveIdentity('베드로',{code:'2pe',chapter:2}).id);
+ assert.equal(resolveIdentity('발람',{code:'2pe',chapter:2}).id,resolveIdentity('발람',{code:'num',chapter:22}).id);
+ assert.equal(resolveIdentity('범죄한 천사들',{code:'2pe',chapter:2}).kind,'spiritual');
+ assert.equal(resolveIdentity('거짓 선생들',{code:'2pe',chapter:2}).kind,'group');
+ assert.ok(cast(1).some(p=>p.name==='베드로'));assert.ok(!cast(1).some(p=>p.name==='시몬 베드로'));
+ assert.ok(!cast(1).some(p=>p.name==='예수'));
+ for(const name of ['노아','롯','발람','범죄한 천사들','개','돼지'])assert.ok(!cast(2).some(p=>p.name===name),`베드로후서 2장의 인용·비유 ${name}은 현장에 나오지 않음`);
+ for(const name of ['바울','예수'])assert.ok(!cast(3).some(p=>p.name===name),`베드로후서 3장의 인용·예고 인물 ${name}은 현장에 나오지 않음`);
+ for(const [chapter,names]of [[1,['예수']],[2,['노아','롯','발람','범죄한 천사들']],[3,['바울','예수']]])for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'2pe',chapter}));
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),13);
+});

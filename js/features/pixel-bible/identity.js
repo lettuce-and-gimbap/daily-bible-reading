@@ -1,10 +1,11 @@
 import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
-const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양)$/;
+const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양|범죄한 천사들)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|형제들|자매들|조상들|증인들|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|아들들|딸들|자들|집/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
+  if(code==='2pe'&&name==='시몬 베드로')return '베드로';
   if(['실라','실루아노'].includes(name))return '실라';
   if(['col','2ti'].includes(code)&&Number(chapter)===4&&name==='마가'||code==='phm'&&Number(chapter)===1&&name==='마가')return '요한 마가';
   if(code==='1pe'&&Number(chapter)===5&&name==='마가')return '요한 마가';
@@ -72,6 +73,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
+  if(code==='2pe'&&['베드로','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
   if(name==='게바')return {...id('person','베드로'),canonicalName:'베드로'};
   if(['실라','실루아노'].includes(name))return {...id('person','silas'),canonicalName:'실라'};
   if(name==='후메내오'&&['1ti','2ti'].includes(code))return id('person','hymenaeus');
@@ -118,7 +120,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='jer'&&Number(chapter)===51&&name==='스라야')return {...id('person','seraiah-son-of-neriah'),canonicalName:'스라야(네리야의 아들)'};
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return {...id('person','seraiah-high-priest-jer52'),canonicalName:'스라야(대제사장)'};
   if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
-  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name))return id('group',name);
+  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name)||code==='2pe'&&name==='거짓 선생들')return id('group',name);
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
@@ -176,6 +178,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   // 열왕기하 17장의 소(So)는 애굽 왕이다. 동물 이름과 구별해 한 인물로 유지한다.
   if(name==='소'&&code==='2ki'&&/왕|애굽|바로/.test(role))return id('person','egyptian-king-so','verse-reviewed');
   if(name==='바울')return id('person','paul');
+  if(name==='발람'&&['num','2pe','rev'].includes(code))return {...id('person','balaam'),canonicalName:'발람'};
   if(code==='jas'&&name==='야고보')return {...id('person','james-epistle-author'),canonicalName:'야고보'};
   if(code==='jas'&&name==='주 예수 그리스도')return {...id('person','jesus'),canonicalName:'예수'};
   if(name==='요셉') {
