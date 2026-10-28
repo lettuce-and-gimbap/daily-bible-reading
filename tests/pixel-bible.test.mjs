@@ -1933,3 +1933,18 @@ test('고린도전서의 인용 인물은 현장 캐스트에서 빼고 동명�
  assert.equal(resolveIdentity('게바',{code:'1co',chapter:1}).id,resolveIdentity('베드로',{code:'mat',chapter:16}).id);
  assert.ok(!first.chapters['13'].people.some(p=>p.name==='예수')&&!first.chapters['13'].rels.some(r=>r.from==='예수'||r.to==='예수'),'고린도전서 13장에 없는 예수 발화를 만들지 않는다');
 });
+
+test('고린도후서 1–13장은 서신 수신자·인용 인물·비유를 현장 캐스트에서 제외한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/2co.json',import.meta.url),'utf8'));
+ const absent={1:['고린도 교회','실루아노','예수'],2:['고린도 성도','근심하게 한 자','디도','사탄','예수'],3:['모세','이스라엘 자손','예수'],4:['믿지 않는 자들','이 세상의 신','예수'],5:['고린도 성도','예수'],6:['믿지 않는 자','벨리알','예수'],7:['고린도 성도'],8:['마게도냐 교회들','고린도 성도','칭찬받는 형제','예루살렘 성도','예수'],9:['고린도 성도','마게도냐인들','형제들','예루살렘 성도'],10:['고린도 성도','어떤 사람들','자기를 칭찬하는 자','예수'],11:['고린도 성도','거짓 사도들','하와','아레다 왕의 고관','예수'],12:['셋째 하늘에 간 사람','사탄의 사자','고린도 성도','디도','예수'],13:['고린도 성도','예수']};
+ for(let chap=1;chap<=13;chap++){
+  const model=buildWorldModel([{code:'2co',name:'고린도후서',chap,data:summary.chapters[String(chap)]}]);
+  const names=model.cast.filter(p=>!p.worldMascot).map(p=>p.name);
+  for(const name of absent[chap])assert.ok(!names.includes(name),`2co.${chap} ${name} is mentioned, remote, figurative or absent`);
+  for(const scene of model.scenes)for(const actor of scene.actors)assert.ok(!absent[chap].includes(actor),`2co.${chap} scene actor ${actor} is absent`);
+ }
+ assert.ok(buildWorldModel([{code:'2co',name:'고린도후서',chap:1,data:summary.chapters['1']}]).cast.some(p=>p.name==='디모데'));
+ assert.ok(buildWorldModel([{code:'2co',name:'고린도후서',chap:7,data:summary.chapters['7']}]).cast.some(p=>p.name==='디도'));
+ assert.ok(buildWorldModel([{code:'2co',name:'고린도후서',chap:8,data:summary.chapters['8']}]).cast.some(p=>p.name==='디도'));
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),55);
+});
