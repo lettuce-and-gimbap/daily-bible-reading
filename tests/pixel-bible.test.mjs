@@ -2078,3 +2078,16 @@ test('디도서는 실제 목회 대상 디도와 파송을 도울 선교 동역
  for(const name of ['세나','아볼로','바울','디도'])assert.ok(cast(3).includes(name),`디도서 3장 선교 문맥 ${name}`);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),15);
 });
+
+test('빌레몬서는 실제 간구 관계와 집 교회 수신자를 연결하고 추정된 배우자·동역자 별칭을 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/phm.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'phm',name:'빌레몬서',chap:1,data:summary.chapters['1']}]);
+ for(const name of ['바울','디모데','빌레몬','오네시모','압비아','아킵보','요한 마가','누가','에바브라','빌레몬의 집 교회'])assert.ok(model.cast.some(p=>p.name===name),`빌레몬서의 직접 인물·수신자 ${name}`);
+ assert.ok(!model.cast.some(p=>p.name==='예수'));
+ assert.equal(resolveIdentity('마가',{code:'phm',chapter:1}).id,resolveIdentity('요한 마가',{code:'act',chapter:15}).id);
+ assert.equal(resolveIdentity('빌레몬의 집 교회',{code:'phm',chapter:1}).kind,'group');
+ const pair=summary.chapters['1'].rels.find(r=>r.from==='오네시모'&&r.to==='빌레몬');assert.equal(pair.label,'종을 넘어 사랑받는 형제');
+ const apphia=summary.chapters['1'].rels.find(r=>r.from==='빌레몬'&&r.to==='압비아');assert.equal(apphia.kind,'ally');assert.match(apphia.note,/본문은 관계를 명시하지 않아요/);
+ assert.ok(summary.chapters['1'].rels.some(r=>r.to==='빌레몬의 집 교회'&&r.verses==='2'));
+ assert.equal(summary.chapters['1'].rels.length,6);
+});
