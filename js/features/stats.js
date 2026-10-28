@@ -20,7 +20,7 @@ function ring(pct) {
 }
 
 function renderStats() {
-  if (statsSubpage === "pixel-library" && !isAdminUser()) statsSubpage = "";
+  if (["pixel-library", "reminder-admin"].includes(statsSubpage) && !isAdminUser()) statsSubpage = "";
   const today = todayStr();
   const byDate = readDates();
   const qtDates = qtCountDates();
@@ -95,7 +95,8 @@ function renderStats() {
     <div class="stats-page-links" aria-label="관리 설정">
       <button type="button" class="stats-page-link" data-stats-page="colors"><span aria-hidden="true">🎨</span><b>색상</b></button>
       <button type="button" class="stats-page-link" data-stats-page="settings"><span aria-hidden="true">⚙️</span><b>계정·설정</b></button>
-      ${isAdminUser() ? `<button type="button" class="stats-page-link" data-stats-page="pixel-library"><span aria-hidden="true">🧩</span><b>픽셀 자료실</b></button>` : ""}
+      ${isAdminUser() ? `<button type="button" class="stats-page-link" data-stats-page="pixel-library"><span aria-hidden="true">🧩</span><b>픽셀 자료실</b></button>
+      <button type="button" class="stats-page-link" data-stats-page="reminder-admin"><span aria-hidden="true">🐑</span><b>알림 관리</b></button>` : ""}
     </div>
     `;
 
@@ -117,11 +118,15 @@ function renderStats() {
 }
 
 function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
-  if (page === "pixel-library" && !isAdminUser()) { statsSubpage = ""; renderStats(); return; }
-  const title = page === "colors" ? "색상" : page === "pixel-library" ? "픽셀 자료실" : "계정·설정";
+  if (["pixel-library", "reminder-admin"].includes(page) && !isAdminUser()) { statsSubpage = ""; renderStats(); return; }
+  const title = page === "colors" ? "색상" : page === "pixel-library" ? "픽셀 자료실" : page === "reminder-admin" ? "알림 관리" : "계정·설정";
   const header = `<header class="stats-subpage-head"><button type="button" id="stats-subpage-back" aria-label="관리 화면으로 돌아가기">←</button><h1>${title}</h1></header>`;
   if (page === "pixel-library") {
     renderPixelReferenceLibrary(header);
+    return;
+  }
+  if (page === "reminder-admin") {
+    renderReminderAdmin(header);
     return;
   }
   if (page === "colors") {

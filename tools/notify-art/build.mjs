@@ -1,4 +1,4 @@
-// 리마인드 알림 그림 굽기: sw.js의 MESSAGES를 읽어 메시지마다 icons/notify/<시간대>-<순서>.jpg를 만든다.
+// 리마인드 알림 그림 굽기: sw.js의 기본 DEFAULT_MESSAGES를 읽어 메시지마다 icons/notify/<시간대>-<순서>.jpg를 만든다.
 // 헤드리스 크롬(또는 엣지)으로 art.js의 SVG를 캔버스에 그려 JPG로 뽑음. 설치할 패키지 없음.
 //   node tools/notify-art/build.mjs                  → 전부 굽기
 //   node tools/notify-art/build.mjs --sheet 파일.jpg [개수]  → 무작위 예시를 한 장에 모아 보기(굽지 않음)
@@ -15,8 +15,8 @@ const art = readFileSync(join(here, "art.js"), "utf8");
 
 export function loadMessages() {
   const src = readFileSync(join(root, "sw.js"), "utf8");
-  const m = src.match(/const MESSAGES = (\{[\s\S]*?\n\});/);
-  if (!m) throw new Error("sw.js에서 MESSAGES를 찾지 못했어요");
+  const m = src.match(/const DEFAULT_MESSAGES = (\{[\s\S]*?\n\});/);
+  if (!m) throw new Error("sw.js에서 DEFAULT_MESSAGES를 찾지 못했어요");
   return new Function(`return ${m[1]}`)();
 }
 
@@ -95,7 +95,7 @@ function writeCatalog(file = join(root, "docs/reminder-catalog.md")) {
   const lines = [
     "# 통독 리마인드 문구·양 그림 목록",
     "",
-    "이 목록은 `sw.js`의 `MESSAGES` 데이터에서 생성했습니다. 알림 제목·본문, 양의 포즈, 그림 말풍선, 조건, 연결된 이미지 파일을 한 행씩 보여 줍니다.",
+    "이 목록은 `sw.js`의 기본 `DEFAULT_MESSAGES` 데이터에서 생성했습니다. 알림 제목·본문, 양의 포즈, 그림 말풍선, 조건, 연결된 이미지 파일을 한 행씩 보여 줍니다.",
     "",
     `현재 문구 ${Object.values(msgs).reduce((n, rows) => n + rows.length, 0)}개, 생성 이미지 ${allJobs().length}장입니다. 그림 벡터 포즈 설계는 \`tools/notify-art/art.js\`의 \`POSES\`에 있습니다.`,
     "",

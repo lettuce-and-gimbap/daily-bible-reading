@@ -5,7 +5,7 @@
 // - 포즈·말풍선은 알림 그림(icons/notify/<시간대>-<순서>.jpg)용. 문구를 고치거나 늘리면
 //   `node tools/notify-art/build.mjs`로 그림을 다시 구워야 함 (포즈 목록은 tools/notify-art/art.js의 POSES)
 // - 조건 "streak": 연속 기록이 있을 때만
-const MESSAGES = {
+const DEFAULT_MESSAGES = {
   // 아침(~12시): 아침부터 슬쩍 킹받게
   morning: [
     ["아담아, 네가 어디 있느냐 👀", "하나님이 아담을 찾으시던 그 질문(창 3:9), 지금 성경책이 똑같이 묻고 있어요. 오늘 분량 {portion}.", "point", "너 어디 있니?"],
@@ -160,6 +160,21 @@ function idb(mode, fn) {
 }
 const idbGet = (key) => idb("readonly", (s) => s.get(key));
 const idbSet = (key, val) => idb("readwrite", (s) => s.put(val, key));
+const idbDelete = (key) => idb("readwrite", (s) => s.delete(key));
+const REMINDER_DB_URL = "https://daily-bible-reminder.gimbap-lettuce.workers.dev/reminder-messages";
+
+async function refreshReminderMessages() {
+  const last = await idbGet("reminder-messages-fetched") || 0;
+  if (Date.now() - last < 5 * 60_000) return;
+  try {
+    const response = await fetch(REMINDER_DB_URL, { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data.messages) await idbSet("reminder-messages", data.messages);
+    else await idbDelete("reminder-messages");
+    await idbSet("reminder-messages-fetched", Date.now());
+  } catch (_) { /* 서버가 안 되면 마지막으로 받은 DB나 기본 DB를 사용 */ }
+}
 
 function ymd(d) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -192,6 +207,8 @@ function shiftDate(date, offset) {
 async function buildMessage() {
   const now = new Date();
   const snap = (await idbGet("reminder")) || {};
+  await refreshReminderMessages();
+  const MESSAGES = (await idbGet("reminder-messages")) || DEFAULT_MESSAGES;
   const local = localParts(now, snap.timeZone);
   const today = local.date;
   const yesterday = shiftDate(today, -1);
@@ -206,7 +223,7 @@ async function buildMessage() {
 
   const streak = fresh || (snap.date === yesterday && snap.done) ? snap.streak || 0 : 0;
   // 연속 기록 문구는 기록이 있을 때만
-  const pool = MESSAGES[tier].filter((m) => m[4] !== "streak" || streak > 0);
+  const pool = (MESSAGES[tier] || DEFAULT_MESSAGES[tier]).filter((m) => m[4] !== "streak" || streak > 0);
   const lastKey = `last-${tier}`;
   const last = await idbGet(lastKey);
   let idx = Math.floor(Math.random() * pool.length);
@@ -216,7 +233,8 @@ async function buildMessage() {
   const portion = fresh && snap.portion ? snap.portion : "오늘 분량";
   const fill = (s) => s.replace(/\{portion\}/g, portion).replace(/\{streak\}/g, String(streak));
   // 메시지마다 양(🐑) 포즈 그림: icons/notify/<시간대>-<원래 순서>.jpg (안드로이드·PC 크롬/엣지에서 크게 보임, 아이폰은 표시 안 함)
-  const image = `icons/notify/${tier}-${MESSAGES[tier].indexOf(pool[idx])}.jpg?v=sheep-soft-face2-20261028`;
+  const rowIndex = MESSAGES[tier].indexOf(pool[idx]);
+  const image = pool[idx][5] || `icons/notify/${tier}-${rowIndex}.jpg?v=sheep-soft-face2-20261028`;
   return { title: fill(pool[idx][0]), body: fill(pool[idx][1]), image };
 }
 

@@ -7,12 +7,15 @@ import { feedback } from './feedback.js';
 
 const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA_BYTES = 4_000_000; // UTF-8 JSON 4MB per account
+const MAX_REMINDER_DB_BYTES = 1_000_000;
+const ADMIN_IDS = new Set(["buucksoo"]);
+const REMINDER_MESSAGE_KEY = "admin:reminder-messages";
 const LINK_MS = 10 * 60 * 1000;
 const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
 export async function account(pathname, request, env, json) {
   const db = env.DB;
-  const body = request.method === "POST" ? await request.json().catch(() => ({})) : {};
+  const body = request.method === "GET" ? {} : await request.json().catch(() => ({}));
   const now = Date.now();
 
   if (pathname === "/account/signup") {
@@ -52,9 +55,27 @@ export async function account(pathname, request, env, json) {
   const session = token && await db.prepare("SELECT user_id, last FROM sessions WHERE token_hash = ?").bind(await sha(token)).first();
   if (!session) return json({ error: "로그인이 필요해요" }, 401);
   const uid = session.user_id;
-  if (pathname === '/account/feedback' || pathname === '/account/feedback/audio' || pathname === '/account/feedback/read') return feedback(pathname, request, db, uid, body, json);
   if (now - session.last > 3600_000) await db.prepare("UPDATE sessions SET last = ? WHERE token_hash = ?").bind(now, await sha(token)).run();
-
+  if (pathname === "/account/admin/reminder-messages") {
+    if (!ADMIN_IDS.has(String(uid).toLowerCase())) return json({ error: "관리자만 수정할 수 있어요" }, 403);
+    if (request.method === "GET") {
+      const saved = await env.SUBS.get(REMINDER_MESSAGE_KEY, "json");
+      return json(saved || { messages: null, updated: 0 });
+    }
+    if (request.method !== "PUT") return json({ error: "지원하지 않는 요청" }, 405);
+    if (body.messages === null) {
+      await env.SUBS.delete(REMINDER_MESSAGE_KEY);
+      return json({ ok: true, messages: null, updated: Date.now() });
+    }
+    const text = JSON.stringify(body.messages);
+    if (new TextEncoder().encode(text).byteLength > MAX_REMINDER_DB_BYTES || !validReminderMessages(body.messages)) {
+      return json({ error: "알림 문구 DB 형식이 맞지 않거나 1MB를 넘어요" }, 400);
+    }
+    const updated = Date.now();
+    await env.SUBS.put(REMINDER_MESSAGE_KEY, JSON.stringify({ messages: body.messages, updated }));
+    return json({ ok: true, updated });
+  }
+  if (pathname === '/account/feedback' || pathname === '/account/feedback/audio' || pathname === '/account/feedback/read') return feedback(pathname, request, db, uid, body, json);
   if (pathname === "/account/data" && request.method === "GET") {
     const row = await db.prepare("SELECT json, updated FROM user_data WHERE user_id = ?").bind(uid).first();
     return json({ id: uid, data: row ? JSON.parse(row.json) : null, updated: row ? row.updated : 0 });
@@ -82,6 +103,21 @@ export async function account(pathname, request, env, json) {
     return json({ ok: true });
   }
   return json({ error: "not found" }, 404);
+}
+
+export function validReminderMessages(messages) {
+  const tiers = ["morning", "afternoon", "evening", "night", "last", "done"];
+  if (!messages || typeof messages !== "object" || Array.isArray(messages)
+    || tiers.some((tier) => !Array.isArray(messages[tier]))
+    || Object.keys(messages).some((key) => !tiers.includes(key))) return false;
+  return tiers.every((tier) => messages[tier].length <= 200 && messages[tier].every((row) => {
+    if (!Array.isArray(row) || row.length < 3 || row.length > 6) return false;
+    if (![0, 1, 2].every((i) => typeof row[i] === "string")) return false;
+    if (row.some((cell) => cell !== undefined && typeof cell !== "string")) return false;
+    if (row[0].length > 120 || row[1].length > 600 || row[2].length > 40
+      || (row[3] || "").length > 120 || (row[4] || "").length > 40) return false;
+    return row[5] === undefined || /^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5]);
+  }));
 }
 
 async function newSession(db, id, now) {

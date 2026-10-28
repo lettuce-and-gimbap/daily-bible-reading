@@ -32,6 +32,12 @@ export default {
 
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
+      if (pathname === "/reminder-messages" && request.method === "GET") {
+        const saved = await env.SUBS.get("admin:reminder-messages", "json");
+        return new Response(JSON.stringify(saved || { messages: null, updated: 0 }), {
+          headers: { ...cors, "content-type": "application/json", "cache-control": "no-store" },
+        });
+      }
       if (pathname === "/plan") return await planNote(request, env, json);
       if (pathname === "/scripture") return await scriptureChapter(request, env, json, cors);
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);

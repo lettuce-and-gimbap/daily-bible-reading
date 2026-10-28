@@ -29,7 +29,7 @@ test('픽셀 자료실 관리 화면 연결과 검색·외부 링크 안전 속�
   const serviceWorker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
   assert.match(stats, /data-stats-page="pixel-library"/);
   assert.match(stats, /isAdminUser\(\) \? `?<button type="button" class="stats-page-link" data-stats-page="pixel-library"/);
-  assert.match(stats, /page === "pixel-library" && !isAdminUser\(\)/);
+  assert.match(stats, /\["pixel-library", "reminder-admin"\]\.includes\(page\) && !isAdminUser\(\)/);
   assert.match(account, /window\.isAdminAccount = isAdmin/);
   assert.match(stats, /data\/pixel-bible\/reference-library\.json/);
   assert.match(stats, /data-reference-search/);

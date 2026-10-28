@@ -42,6 +42,34 @@ function idbPut(key, val) {
   });
 }
 
+function idbGet(key) {
+  return new Promise((resolve) => {
+    if (!("indexedDB" in window)) return resolve(undefined);
+    const req = indexedDB.open("daily5", 1);
+    req.onupgradeneeded = () => req.result.createObjectStore("kv");
+    req.onerror = () => resolve(undefined);
+    req.onsuccess = () => {
+      const tx = req.result.transaction("kv", "readonly");
+      const get = tx.objectStore("kv").get(key);
+      get.onsuccess = () => resolve(get.result);
+      get.onerror = () => resolve(undefined);
+    };
+  });
+}
+
+function idbRemove(key) {
+  return new Promise((resolve) => {
+    if (!("indexedDB" in window)) return resolve();
+    const req = indexedDB.open("daily5", 1);
+    req.onerror = () => resolve();
+    req.onsuccess = () => {
+      const tx = req.result.transaction("kv", "readwrite");
+      tx.objectStore("kv").delete(key);
+      tx.oncomplete = tx.onerror = () => resolve();
+    };
+  });
+}
+
 function b64urlToBytes(s) {
   const pad = "=".repeat((4 - (s.length % 4)) % 4);
   const bin = atob((s + pad).replace(/-/g, "+").replace(/_/g, "/"));
@@ -64,6 +92,18 @@ async function reminderTimeZone() {
   catch (_) { return "Asia/Seoul"; }
 }
 
+async function syncReminderMessages(force = false) {
+  if (!PUSH_SERVER) return;
+  const last = await idbGet("reminder-messages-fetched") || 0;
+  if (!force && Date.now() - last < 5 * 60_000) return;
+  try {
+    const data = await api("/reminder-messages");
+    if (data.messages) await idbPut("reminder-messages", data.messages);
+    else await idbRemove("reminder-messages");
+    await idbPut("reminder-messages-fetched", Date.now());
+  } catch (_) { /* 서버에 저장된 편집본이 없거나 오프라인이면 기본 DB를 계속 씀 */ }
+}
+
 // 앱 기록이 바뀔 때마다 서비스 워커용 요약을 저장하고, 서버에 완료 여부를 알림
 function queueReminderSync() {
   clearTimeout(reminderTimer);
@@ -73,6 +113,7 @@ function queueReminderSync() {
 async function syncReminder() {
   const snap = reminderSnapshot();
   snap.timeZone = await reminderTimeZone();
+  await syncReminderMessages();
   await idbPut("reminder", snap);
   const info = pushInfo();
   if (!info.id || !PUSH_SERVER) return;
