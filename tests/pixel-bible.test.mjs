@@ -2210,3 +2210,21 @@ test('요한삼서는 가이오·디오드레베·데메드리오를 각각 구�
  for(const [from,to,verse]of [['장로','가이오','1-2'],['가이오','나그네 된 형제들','5-6'],['디오드레베','장로','9-10'],['장로','데메드리오','12']])assert.ok(summary.chapters['1'].rels.some(r=>r.from===from&&r.to===to&&r.verses===verse),`${from}→${to} has text evidence ${verse}`);
  assert.equal(summary.chapters['1'].rels.length,5);
 });
+
+test('유다서는 저자와 세 역사적 본보기를 분리하고 인용 인물을 현장 캐스트에서 제외한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/jud.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/jud.json',import.meta.url),'utf8'));
+ const chapter=summary.chapters['1'];
+ const cast=buildWorldModel([{code:'jud',name:'유다서',chap:1,data:{...chapter,eventScenes:events.scenes,additionalPeople:events.additionalPeople?.['1']||[]}}]).cast.map(p=>p.name);
+ assert.equal(resolveIdentity('유다',{code:'jud',chapter:1}).id,'person:jude-letter-author');
+ assert.equal(resolveIdentity('야고보',{code:'jud',chapter:1}).id,'person:james-brother-of-jude');
+ assert.equal(resolveIdentity('발람',{code:'jud',chapter:1}).id,resolveIdentity('발람',{code:'num',chapter:22}).id);
+ assert.notEqual(resolveIdentity('가인',{code:'jud',chapter:1}).id,resolveIdentity('고라',{code:'jud',chapter:1}).id);
+ for(const name of ['가인','발람','고라','에녹','미가엘','마귀','야고보','예수'])assert.ok(!cast.includes(name),`${name}은 유다서에서 인용된 과거·신학적 대상이지 편지 장면의 동석자가 아님`);
+ assert.ok(cast.includes('유다'));
+ for(const name of ['가인','발람','고라','에녹','미가엘','마귀','야고보','예수'])assert.ok(isMentionOnlyPerson({name},{code:'jud',chapter:1}));
+ for(const target of ['가인','발람','고라'])assert.ok(chapter.rels.some(r=>r.from==='가만히 들어온 자들'&&r.to===target&&r.verses==='11'));
+ assert.ok(!chapter.people.some(p=>p.name==='가인·발람·고라'));
+ assert.equal(chapter.rels.length,8);
+});
+

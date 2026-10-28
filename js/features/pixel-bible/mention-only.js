@@ -3,6 +3,8 @@
 // words such as "조상" also describe characters who are present in genealogies
 // or active narratives, so a broad role-text filter would remove real actors.
 const CHAPTERS = {
+  // Jude cites past events and named exemplars; keep context without staging them as present.
+  'jud.1': ['야고보', '미가엘', '마귀', '가인', '발람', '고라', '에녹', '예수'],
   'jhn.3': ['모세'],
   'jhn.4': ['야곱'],
   'jhn.5': ['요한', '모세'],

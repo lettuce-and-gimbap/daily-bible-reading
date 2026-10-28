@@ -75,6 +75,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
   if(code==='2pe'&&['베드로','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
   if(code==='1jn'&&name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
+  if(code==='jud'&&name==='유다')return {...id('person','jude-letter-author'),canonicalName:'유다'};
+  if(code==='jud'&&name==='야고보')return {...id('person','james-brother-of-jude'),canonicalName:'야고보'};
   // The elder who writes 2–3 John is traditionally identified with John;
   // keep the two letter voices together without treating the title as a new person.
   if(['2jn','3jn'].includes(code)&&name==='장로')return {...id('person','john-apostle'),canonicalName:'요한'};
@@ -184,7 +186,9 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   // 열왕기하 17장의 소(So)는 애굽 왕이다. 동물 이름과 구별해 한 인물로 유지한다.
   if(name==='소'&&code==='2ki'&&/왕|애굽|바로/.test(role))return id('person','egyptian-king-so','verse-reviewed');
   if(name==='바울')return id('person','paul');
-  if(name==='발람'&&['num','2pe','rev'].includes(code))return {...id('person','balaam'),canonicalName:'발람'};
+  if(name==='발람'&&['num','2pe','rev','jud'].includes(code))return {...id('person','balaam'),canonicalName:'발람'};
+  if(name==='가인')return {...id('person','cain'),canonicalName:'가인'};
+  if(name==='고라')return {...id('person','korah'),canonicalName:'고라'};
   if(code==='jas'&&name==='야고보')return {...id('person','james-epistle-author'),canonicalName:'야고보'};
   if(code==='jas'&&name==='주 예수 그리스도')return {...id('person','jesus'),canonicalName:'예수'};
   if(name==='요셉') {
