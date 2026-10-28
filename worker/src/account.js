@@ -9,10 +9,10 @@ const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA_BYTES = 4_000_000; // UTF-8 JSON 4MB per account
 const MAX_REMINDER_DB_BYTES = 1_000_000;
 const MAX_REMINDER_ART_BYTES = 512_000;
-const MAX_REMINDER_ART_TOTAL_BYTES = 3_000_000;
+const MAX_REMINDER_ART_TOTAL_BYTES = 16_000_000;
 const ADMIN_IDS = new Set(["buucksoo"]);
 const REMINDER_MESSAGE_KEY = "admin:reminder-messages";
-export const REMINDER_MESSAGES_API_VERSION = 2;
+export const REMINDER_MESSAGES_API_VERSION = 3;
 const LINK_MS = 10 * 60 * 1000;
 const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
@@ -59,21 +59,16 @@ export async function account(pathname, request, env, json) {
   if (!session) return json({ error: "로그인이 필요해요" }, 401);
   const uid = session.user_id;
   if (now - session.last > 3600_000) await db.prepare("UPDATE sessions SET last = ? WHERE token_hash = ?").bind(now, await sha(token)).run();
-  if (pathname === "/account/admin/reminder-messages") {
+  if (["/account/admin/reminder-messages", "/account/admin/reminder-art"].includes(pathname)) {
     if (!ADMIN_IDS.has(String(uid).toLowerCase())) return json({ error: "관리자만 수정할 수 있어요" }, 403);
     if (request.method === "GET") {
       const saved = await env.SUBS.get(REMINDER_MESSAGE_KEY, "json");
       return json(saved || { messages: null, updated: 0 });
     }
     if (request.method !== "PUT") return json({ error: "지원하지 않는 요청" }, 405);
-    if (body.messages === null) {
-      const saved = await env.SUBS.get(REMINDER_MESSAGE_KEY, "json");
-      for (const rows of Object.values(saved?.messages || {})) {
-        for (const row of rows) {
-          const art = typeof row[5] === "string" && row[5].match(/\/reminder-art\/(morning|afternoon|evening|night|last|done)\/(\d+)\.jpg/);
-          if (art) await env.SUBS.delete(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${art[1]}:${art[2]}`);
-        }
-      }
+    const artOnly = pathname === "/account/admin/reminder-art";
+    if (body.messages === null && !artOnly) {
+      // Keep the bounded image slots available to already delivered/cached notifications.
       await env.SUBS.delete(REMINDER_MESSAGE_KEY);
       return json({ ok: true, messages: null, updated: Date.now() });
     }
@@ -104,11 +99,12 @@ export async function account(pathname, request, env, json) {
     }
     for (const [key, base64] of Object.entries(art)) {
       const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0));
-      await env.SUBS.put(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${key}`, bytes.buffer);
+      await putReminderValue(env, `${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${key}`, bytes.buffer);
     }
-    for (const key of artDeletes) await env.SUBS.delete(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${key}`);
+    // Images may be referenced by other rows or cached notifications; retain inactive slots.
+    if (artOnly) return json({ ok: true });
     const updated = Date.now();
-    await env.SUBS.put(REMINDER_MESSAGE_KEY, JSON.stringify({ messages: body.messages, updated }));
+    await putReminderValue(env, REMINDER_MESSAGE_KEY, JSON.stringify({ messages: body.messages, updated }));
     return json({ ok: true, updated });
   }
   if (pathname === '/account/feedback' || pathname === '/account/feedback/audio' || pathname === '/account/feedback/read') return feedback(pathname, request, db, uid, body, json);
@@ -141,6 +137,17 @@ export async function account(pathname, request, env, json) {
   return json({ error: "not found" }, 404);
 }
 
+async function putReminderValue(env, key, value) {
+  for (let attempt = 0; ; attempt++) {
+    try { return await env.SUBS.put(key, value); }
+    catch (error) {
+      const temporaryLimit = /429|too many requests|rate.?limit/i.test(String(error.message));
+      if (!temporaryLimit || attempt >= 2) throw error;
+      await new Promise(resolve => setTimeout(resolve, 1100));
+    }
+  }
+}
+
 export function validReminderMessages(messages) {
   return reminderMessagesValidationIssue(messages) === null;
 }
@@ -158,7 +165,7 @@ function reminderMessagesValidationIssue(messages) {
       if (row.some((cell) => cell !== undefined && typeof cell !== "string")) return `${tier} ${index + 1}번 항목에 문자열이 아닌 값이 있어요.`;
       if (row[0].length > 120 || row[1].length > 600 || row[2].length > 40
         || (row[3] || "").length > 120 || (row[4] || "").length > 40) return `${tier} ${index + 1}번 항목의 글자 수 제한을 넘어요.`;
-      if (row[5] !== undefined
+      if (row[5]
         && !/^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5])
         && !/^https:\/\/daily-bible-reminder\.gimbap-lettuce\.workers\.dev\/reminder-art\/(morning|afternoon|evening|night|last|done)\/\d+\.jpg\?v=\d+$/.test(row[5])) {
         return `${tier} ${index + 1}번 항목의 그림 경로가 올바르지 않아요.`;

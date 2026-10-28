@@ -262,6 +262,9 @@ const POSES = {
   // 쭈글쭈글 울상 😭 (뒤로가기로 나가려 할 때)
   sob: () => shadow(0, 92) + legs() + limb([[-52, 4], [-62, 26], [-40, 30]]) + limb([[52, 4], [62, 26], [40, 30]]) +
     sheep({ expr: "vv,tears,blush" }),
+  // 볼이 붉어진 채 앞발로 뺨을 감싸는 양.
+  blush: () => shadow(0, 92) + legs() + sheep({ expr: "vv,blush", frot: -5 }) +
+    limb([[-52, 4], [-44, -10], [-27, -8]]) + limb([[52, 4], [44, -10], [27, -8]]),
 };
 
 function stool(x, y) {
