@@ -196,7 +196,7 @@ function relationTalkLines(a,b,relation,random){
  const talk=Array.isArray(relation.talk)?relation.talk.filter(p=>Array.isArray(p)&&p.length===2):[];
  if(!talk.length)return null;
  const index=Math.min(talk.length-1,Math.floor(random()*talk.length)),[first,reply]=talk[index];
- const aFirst=sameName(a.name,relation.from.name),chapter=`${relation.from.code}.${relation.from.chap}`;
+ const aFirst=sameName(a.name,relation.from.name)||!!(a.identity?.id&&a.identity.id===relation.from.identity?.id),chapter=`${relation.from.code}.${relation.from.chap}`;
  // 관계의 출발 인물이 먼저 말하고 상대가 답한다.
  const [speaker,listener]=aFirst?[a,b]:[b,a];
  return [[speaker,listener,first],[listener,speaker,reply]].map(([speaker,target,text])=>({
@@ -235,8 +235,8 @@ export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random
 export function loveBoothExchange(a,b,relations){
  const endpointName=endpoint=>typeof endpoint==='string'?endpoint:endpoint?.name;
  const endpointMatches=(endpoint,person)=>{
-  if(!sameName(endpointName(endpoint),person.name))return false;
   const identity=typeof endpoint==='object'?endpoint.identity?.id:null;
+  if(!sameName(endpointName(endpoint),person.name)&&!(identity&&identity===person.identity?.id))return false;
   if(identity&&person.identity?.id&&identity!==person.identity.id)return false;
   const ref=typeof endpoint==='object'?endpoint.ref:null;
   return !ref||(person.refs||[]).some(personRef=>ref===personRef||ref.startsWith(`${personRef}:`));

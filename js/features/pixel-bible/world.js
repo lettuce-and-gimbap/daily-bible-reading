@@ -35,7 +35,7 @@ import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { characterWalkFrame } from './character-motion.js';
 import { advanceGimbapRoll } from './gimbap-art.js?rev=gimbap-reference-roll-2';
-import { loveBoothExchange } from './relationship-lines.js?rev=relation-talk-1';
+import { loveBoothExchange } from './relationship-lines.js?rev=relation-talk-alias-2';
 import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
