@@ -1,3 +1,4 @@
+import {resolveIdentity} from './identity.js';
 import {PAIR_DIALOGUE} from './pair-dialogue.js';
 
 const sameName=(a,b)=>a===b||['예수','예수님'].includes(a)&&['예수','예수님'].includes(b);
@@ -208,8 +209,9 @@ function relationTalkLines(a,b,relation,random){
 export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random}={}){
  const authoredTalk=relationTalkLines(a,b,relation,random);if(authoredTalk)return authoredTalk;
  const chapter=`${relation.from.code}.${relation.from.chap}`;
- const forward=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&sameName(p.speaker,a.name)&&sameName(p.target,b.name));
- const reverse=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&sameName(p.speaker,b.name)&&sameName(p.target,a.name));
+ const matches=(name,person)=>sameName(name,person.name)||!!(person.identity?.id&&resolveIdentity(name,{code:relation.from.code,chapter:relation.from.chap}).id===person.identity.id);
+ const forward=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&matches(p.speaker,a)&&matches(p.target,b));
+ const reverse=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&matches(p.speaker,b)&&matches(p.target,a));
  // Pick one shared variant for both speakers. Independent random picks made
  // otherwise related lines sound like two unrelated monologues.
  const variants=Math.max(forward?.lines?.length||0,reverse?.lines?.length||0,forward?.replyLines?.length||0,reverse?.replyLines?.length||0,forward||reverse?0:10);
