@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
+import { readFile } from "node:fs/promises";
 import { account, validReminderMessages } from "../worker/src/account.js";
 import reminderWorker from "../worker/src/index.js";
 
@@ -90,4 +91,10 @@ test("editing bubble text renders that exact text into the artwork", () => {
   const svg = renderCard({ tier: "night", pose: "pray", say: phrase }, (text, size) => String(text).length * size * 0.55);
   assert.ok(svg.replace(/<[^>]+>/g, "").includes(phrase));
   assert.ok((svg.match(/<tspan /g) || []).length > 1, "긴 문구는 말풍선 안에서 여러 줄로 표시해야 함");
+});
+
+test("admin reminder review has manual navigation without auto-advance controls", async () => {
+  const ui = await readFile(new URL("../js/features/reminder-admin.js", import.meta.url), "utf8");
+  assert.match(ui, /data-reminder-next/);
+  assert.doesNotMatch(ui, /data-reminder-play|reminderAdminTimer|scheduleNext/);
 });

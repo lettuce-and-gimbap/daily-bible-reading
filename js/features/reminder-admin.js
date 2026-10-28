@@ -1,5 +1,4 @@
 // 관리자 리마인드 DB 검토·수정 화면. 저장된 변경은 Worker KV에 공유한다.
-let reminderAdminTimer = 0;
 let reminderAdminArtScript = null;
 
 function reminderAdminClone(value) {
@@ -63,7 +62,6 @@ function reminderAdminJpegData(svgUrl) {
 }
 
 async function renderReminderAdmin(header) {
-  clearTimeout(reminderAdminTimer);
   app.innerHTML = `${header}<section class="card"><p>알림 DB를 불러오는 중…</p></section>`;
   let defaults, saved;
   try {
@@ -84,9 +82,7 @@ async function renderReminderAdmin(header) {
     pose: row[2],
   }));
   let position = Math.floor(Math.random() * entries.length);
-  let order = [];
   let history = [];
-  let playing = true;
   let dirty = false;
   let artRenderer = null;
   let previewUrl = "";
@@ -101,7 +97,6 @@ async function renderReminderAdmin(header) {
       <div class="inline wrap">
         <button type="button" class="btn ghost small" data-reminder-prev>← 이전</button>
         <button type="button" class="btn ghost small" data-reminder-next>무작위 다음 →</button>
-        <button type="button" class="btn ghost small" data-reminder-play>자동 넘김 멈춤</button>
       </div>
     </div>
     <p class="reminder-admin-count" aria-live="polite"></p>
@@ -133,9 +128,6 @@ async function renderReminderAdmin(header) {
   const status = root.querySelector(".reminder-admin-status");
   imageSelect.innerHTML = assets.map((asset) => `<option value="${esc(asset.value)}">${esc(asset.label)}</option>`).join("");
 
-  function shuffledOrder() {
-    order = entries.map((_, index) => index).filter((index) => index !== position).sort(() => Math.random() - 0.5);
-  }
   function showEntry(nextPosition) {
     if (!root.isConnected) return;
     position = (nextPosition + entries.length) % entries.length;
@@ -156,8 +148,9 @@ async function renderReminderAdmin(header) {
     count.textContent = `${String(position + 1).padStart(3, "0")} / ${entries.length} · ${entry.tier}`;
   }
   function nextRandom() {
-    if (!order.length) shuffledOrder();
-    showEntry(order.pop() ?? (position + 1) % entries.length);
+    let next = Math.floor(Math.random() * entries.length);
+    if (entries.length > 1 && next === position) next = (next + 1) % entries.length;
+    showEntry(next);
   }
   function markTextDirty() {
     const row = entries[position].row;
@@ -219,12 +212,6 @@ async function renderReminderAdmin(header) {
   root.querySelector("[data-reminder-prev]").addEventListener("click", () => {
     showEntry(history.pop() ?? position - 1);
   });
-  root.querySelector("[data-reminder-play]").addEventListener("click", (event) => {
-    playing = !playing;
-    event.currentTarget.textContent = playing ? "자동 넘김 멈춤" : "자동 넘김 시작";
-    if (playing) scheduleNext();
-    else clearTimeout(reminderAdminTimer);
-  });
   root.querySelector("[data-reminder-save]").addEventListener("click", async (event) => {
     const button = event.currentTarget;
     button.disabled = true;
@@ -254,7 +241,7 @@ async function renderReminderAdmin(header) {
       artDeletes.clear();
       artNeedsRender.clear();
       dirty = false;
-      status.textContent = `저장 완료 · ${new Date(result.updated).toLocaleString()}부터 모든 사용자의 이후 알림에 반영돼요.`;
+      status.textContent = `저장 완료 · 모든 사용자의 이후 알림은 다음 동기화 뒤(최대 약 5분)에 새 문구와 그림을 사용해요.`;
     } catch (error) {
       status.textContent = `저장하지 못했어요: ${error.message}`;
     } finally { button.disabled = false; button.textContent = "수정본 저장"; }
@@ -284,21 +271,5 @@ async function renderReminderAdmin(header) {
       renderStats();
     } catch (error) { status.textContent = `초기화하지 못했어요: ${error.message}`; }
   });
-  root.addEventListener("focusin", (event) => {
-    if (!event.target.matches("[data-reminder-title], [data-reminder-body], [data-reminder-say], [data-reminder-image]")) return;
-    if (!playing) return;
-    playing = false;
-    clearTimeout(reminderAdminTimer);
-    root.querySelector("[data-reminder-play]").textContent = "자동 넘김 시작";
-  });
-  function scheduleNext() {
-    clearTimeout(reminderAdminTimer);
-    reminderAdminTimer = setTimeout(() => {
-      if (!root.isConnected || !playing) return;
-      advance();
-      scheduleNext();
-    }, 7000);
-  }
   showEntry(position);
-  scheduleNext();
 }
