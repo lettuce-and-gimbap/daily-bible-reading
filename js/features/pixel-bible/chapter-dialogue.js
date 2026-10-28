@@ -20,7 +20,7 @@ export function buildChapterDialogue(chapters) {
   for(const r of c.data?.rels||[]){
    const from=people.find(p=>p.code===c.code&&p.chap===c.chap&&p.name===r.from),to=people.find(p=>p.code===c.code&&p.chap===c.chap&&p.name===r.to);
    if(!from||!to)continue;
-   relations.push({from,to,label:r.label||'',kind:r.kind||'other',verses:r.verses||'',text:r.note||`${r.from} → ${r.to}: ${r.label||'본문에서 관련된 인물'}.`,ref:`${c.name||c.code} ${c.chap}${r.verses?':'+r.verses:''}`});
+   relations.push({from,to,label:r.label||'',kind:r.kind||'other',verses:r.verses||'',text:r.note||`${r.from} → ${r.to}: ${r.label||'본문에서 관련된 인물'}.`,...(r.talk?{talk:r.talk}:{}),ref:`${c.name||c.code} ${c.chap}${r.verses?':'+r.verses:''}`});
   }
  }
  // A scripted, source-linked exchange itself establishes a valid interaction

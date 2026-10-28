@@ -35,7 +35,7 @@ import { interactionRoutine, interactionPose } from './interaction-motion.js';
 import { WORLD_OBJECTS, OBJECT_SCENES, objectLinesFor, removeObjects, rankObjectVisits, objectVisitKey } from './object-scenes.js';
 import { characterWalkFrame } from './character-motion.js';
 import { advanceGimbapRoll } from './gimbap-art.js?rev=gimbap-reference-roll-2';
-import { loveBoothExchange } from './relationship-lines.js?rev=booth-fallback-1';
+import { loveBoothExchange } from './relationship-lines.js?rev=relation-talk-1';
 import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
@@ -96,8 +96,15 @@ export function touchSlopPixels(canvasWidth,cssWidth,cssSlop=12) {
 }
 
 const eventBooks=new Map();
-async function enrichBook(code,data){
-
+const talkBooks=new Map();
+// 관계도마다 쓴 조우 대화(relation-talk)를 해당 관계에 붙인다. 파일이 없으면 관계만 그대로 둔다.
+async function withRelationTalk(code,data){
+ if(!talkBooks.has(code))talkBooks.set(code,fetch(new URL(`../../../data/pixel-bible/relation-talk/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
+ const talk=(await talkBooks.get(code))?.talk;if(!talk)return data;
+ return {...data,chapters:Object.fromEntries(Object.entries(data.chapters).map(([number,c])=>[number,{...c,rels:(c.rels||[]).map(r=>{const lines=talk[`${number}|${r.from}|${r.to}`];return lines?{...r,talk:lines}:r;})}]))};
+}
+async function enrichBook(code,source){
+ const data=await withRelationTalk(code,source);
  if(!eventBooks.has(code))eventBooks.set(code,fetch(new URL(`../../../data/pixel-bible/events/${code}.json`,import.meta.url)).then(r=>r.ok?r.json():null).catch(()=>null));
  const extra=await eventBooks.get(code);if(!extra)return data;
  const verseData=await loadVerseBook(code);
@@ -256,7 +263,7 @@ export async function mountPixelWorld(shell, options) {
     if(loveBoothSession)return;
     const stage=loveBooth(),pair=boothPair();if(!stage||pair.length!==2)return;
     const [a,b]=pair,{relation,lines:exchange,mode}=loveBoothExchange(a,b,dialogueContext.relations);
-    const special=mode==='special';
+    const special=mode!=='awkward';
     const lines=exchange.map(line=>({...line,origin:'booth',kind:'pair',ref:line.ref||relation?.ref}));
     for(const n of pair){n.path=[];n.task=null;n.action='';n.usingObject=null;n.interaction=null;n.objectScene=null;n.objectEvidence=null;n.encounter=true;n.idle=6;}
     faceBoothFront(pair);cancelTalk();hideSpeech();encounters.clear();

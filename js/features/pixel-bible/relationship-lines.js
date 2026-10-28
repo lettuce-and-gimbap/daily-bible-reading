@@ -191,7 +191,22 @@ function relationshipFallback(a,b,relation,index){
  return isFrom?pair[0]:pair[1];
 }
 const identityKey=n=>`${n.name}:${n.identity?.id||''}`;
+// 관계도마다 쓴 대화: [relation.from의 말, relation.to의 답]. 장에 쓴 고유 대사보다 앞선다.
+function relationTalkLines(a,b,relation,random){
+ const talk=Array.isArray(relation.talk)?relation.talk.filter(p=>Array.isArray(p)&&p.length===2):[];
+ if(!talk.length)return null;
+ const index=Math.min(talk.length-1,Math.floor(random()*talk.length)),[first,reply]=talk[index];
+ const aFirst=sameName(a.name,relation.from.name),chapter=`${relation.from.code}.${relation.from.chap}`;
+ // 관계의 출발 인물이 먼저 말하고 상대가 답한다.
+ const [speaker,listener]=aFirst?[a,b]:[b,a];
+ return [[speaker,listener,first],[listener,speaker,reply]].map(([speaker,target,text])=>({
+  id:`relationship:${identityKey(speaker)}:${chapter}`,speaker,target,text,ref:relation.ref,lineDetail:'',
+  detailText:`${relation.text||''} 관계와 본문 사건을 바탕으로 구성한 창작 대화입니다. (${relation.ref})`.trim(),
+  kind:'pair',origin:'relation-talk',pairIndex:index,special:true,
+ }));
+}
 export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random}={}){
+ const authoredTalk=relationTalkLines(a,b,relation,random);if(authoredTalk)return authoredTalk;
  const chapter=`${relation.from.code}.${relation.from.chap}`;
  const forward=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&sameName(p.speaker,a.name)&&sameName(p.target,b.name));
  const reverse=PAIR_DIALOGUE.find(p=>p.chapter===chapter&&sameName(p.speaker,b.name)&&sameName(p.target,a.name));
@@ -236,7 +251,8 @@ export function loveBoothExchange(a,b,relations){
   try{lines=relationshipLines(a,b,normalized,null);}catch(_){lines=[];}
  }
  if(lines.length===2&&lines.every(line=>line.special))return {relation,lines,mode:'special'};
- // 관계는 확인됐지만 해당 장의 대사가 미작성된 경우에도 부스가 멈추지 않게 인사를 보여 준다.
+ // 관계가 있으면 관계 종류에 맞춘 대화를 쓰고, 어색한 인사는 관계가 없는 두 사람에게만 쓴다.
+ if(relation&&lines.length===2)return {relation,lines,mode:'relation'};
  return {relation:relation||null,mode:'awkward',lines:[
   {speaker:a,target:b,text:'어… 안녕하세요.',kind:'pair'},
   {speaker:b,target:a,text:'응… 안녕하세요.',kind:'pair'},

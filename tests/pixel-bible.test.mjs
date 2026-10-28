@@ -1413,7 +1413,7 @@ test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다�
  assert.deepEqual([...relationshipFocus([objectRelation],[a,b,c],a)],[a,b],'사람 객체 형태로 저장된 관계도 연결 인물을 찾는다');
 });
 
-test('TV 부스는 준비된 관계 대화는 재생하고 미작성 대화는 인사로 안전하게 이어간다',async()=>{
+test('TV 부스는 관계가 있으면 관계 대화를, 관계가 없을 때만 어색한 인사를 보여 준다',async()=>{
  const {loveBoothExchange}=await import('../js/features/pixel-bible/relationship-lines.js');
  const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
  const entry=PAIR_DIALOGUE[0],[code,chapter]=entry.chapter.split('.');
@@ -1423,7 +1423,8 @@ test('TV 부스는 준비된 관계 대화는 재생하고 미작성 대화는 �
  const special=loveBoothExchange(a,b,[relation]);assert.equal(special.mode,'special');assert.equal(special.lines.length,2);
  const c={name:'확인되지 않은 상대',refs:[]};
  const fallback=loveBoothExchange(a,c,[{from:{name:a.name},to:{name:c.name}}]);
- assert.equal(fallback.mode,'awkward');assert.equal(fallback.lines.length,2);assert.ok(fallback.lines.every(line=>line.text));
+ assert.equal(fallback.mode,'relation');assert.equal(fallback.lines.length,2);assert.ok(fallback.lines.every(line=>line.text&&!/안녕하세요/.test(line.text)),'관계가 있으면 어색한 인사 대신 관계 대화');
+ const unrelated=loveBoothExchange(a,c,[]);assert.equal(unrelated.mode,'awkward');assert.equal(unrelated.lines.length,2);
 });
 
 test('TV 부스에 들어온 한두 인물은 기존 방향과 무관하게 정면을 본다',async()=>{

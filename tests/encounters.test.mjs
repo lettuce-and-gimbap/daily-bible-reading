@@ -86,7 +86,12 @@ test('옆 칸 조우 즉시 서로 마주보고 각자 사건에 맞는 대사�
 test('TV 부스는 구체적 대화가 작성된 관계에만 특수 대화를 제공한다',()=>{
  const a={name:'느부갓네살'},b={name:'그달리야'},relations=[{from:{name:'느부갓네살',code:'2ki',chap:25},to:{name:'그달리야'},ref:'열왕기하 25:22–24',text:'느부갓네살이 그달리야를 남은 백성의 총독으로 세웠다.'}];
  const result=loveBoothExchange(a,b,relations);assert.equal(result.mode,'special');assert.equal(result.lines.length,2);assert.ok(result.lines.every(line=>line.origin==='authored'));
- const vague=loveBoothExchange({name:'가상인물A'},{name:'가상인물B'},[{from:{name:'가상인물A',code:'gen',chap:1},to:{name:'가상인물B'},ref:'창세기 1:1',text:'두 인물이 연결되어 있다.'}]);assert.equal(vague.mode,'pending');assert.equal(vague.lines.length,0,'관계선만으로 일반 문구를 특수 대사처럼 내보내지 않음');
+ const vague=loveBoothExchange({name:'가상인물A'},{name:'가상인물B'},[{from:{name:'가상인물A',code:'gen',chap:1},to:{name:'가상인물B'},ref:'창세기 1:1',text:'두 인물이 연결되어 있다.'}]);assert.equal(vague.mode,'relation');assert.equal(vague.lines.length,2);assert.ok(vague.lines.every(line=>!/안녕하세요/.test(line.text)),'관계가 있으면 어색한 인사를 쓰지 않음');
+ const talk=[['성전에서 율법책을 찾았소. 왕께 가져가 주시오.','제가 왕 앞에서 이 책을 읽어 드리겠습니다.']];
+ for(const pair of [[{name:'힐기야'},{name:'사반'}],[{name:'사반'},{name:'힐기야'}]]){
+  const talked=loveBoothExchange(...pair,[{from:{name:'힐기야',code:'2ch',chap:34},to:{name:'사반'},ref:'역대하 34:14-15',text:'힐기야가 율법책을 사반에게 주었다.',talk}]);
+  assert.equal(talked.mode,'special');assert.deepEqual(talked.lines.map(l=>[l.speaker.name,l.text]),[['힐기야',talk[0][0]],['사반',talk[0][1]]],'관계 출발 인물이 먼저 말함');
+ }
  const unrelated=loveBoothExchange(a,b,[]);assert.equal(unrelated.mode,'awkward');assert.equal(unrelated.lines.length,2);
 });
 
