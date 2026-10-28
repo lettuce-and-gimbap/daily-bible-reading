@@ -1917,3 +1917,19 @@ test('로마서는 편지의 수신자·인용 인물·비유를 현장 캐릭�
  for(const name of ['뵈뵈','브리스가','아굴라','에배네도','안드로니고와 유니아','루포'])assert.ok(!final.cast.some(p=>p.name===name),`rom.16 문안 대상 ${name}은 편지 장면에 부재`);
  const {resolveIdentity,canonicalPersonName}=await import('../js/features/pixel-bible/identity.js');assert.equal(resolveIdentity('브리스가',{code:'rom',chapter:16}).id,resolveIdentity('브리스길라',{code:'act',chapter:18}).id);assert.equal(canonicalPersonName('브리스가',{code:'rom',chapter:16}),'브리스길라');
 });
+
+test('고린도전서의 인용 인물은 현장 캐스트에서 빼고 동명이인·합성 이름을 바로잡는다',async()=>{
+ const fs=await import('node:fs/promises');const first=JSON.parse(await fs.readFile(new URL('../data/summary/1co.json',import.meta.url),'utf8'));const acts=JSON.parse(await fs.readFile(new URL('../data/summary/act.json',import.meta.url),'utf8'));
+ const opening=buildWorldModel([{code:'1co',name:'고린도전서',chap:1,data:first.chapters['1']}]);assert.deepEqual(opening.cast.filter(p=>!p.worldMascot).map(p=>p.name).sort(),['바울','소스데네']);
+ assert.deepEqual(first.chapters['1'].people.filter(p=>['그리스보','가이오'].includes(p.name)).map(p=>p.name).sort(),['가이오','그리스보']);
+ const closing=buildWorldModel([{code:'1co',name:'고린도전서',chap:16,data:first.chapters['16']}]);for(const name of ['바울','스데바나','브드나도','아가이고'])assert.ok(closing.cast.some(p=>p.name===name),`고린도전서 16장 현재 동역자 ${name}`);
+ for(const name of ['디모데','아볼로','아굴라','브리스길라','고린도 성도','예루살렘 성도','예수'])assert.ok(!closing.cast.some(p=>p.name===name),`부재 인물 ${name}`);
+ assert.deepEqual(acts.chapters['19'].people.filter(p=>['가이오','아리스다고','가이오와 아리스다고'].includes(p.name)).map(p=>p.name).sort(),['가이오','아리스다고']);
+ const {resolveIdentity}=await import('../js/features/pixel-bible/identity.js');
+ assert.equal(resolveIdentity('그리스보',{code:'act',chapter:18}).id,resolveIdentity('그리스보',{code:'1co',chapter:1}).id);
+ assert.equal(resolveIdentity('가이오',{code:'rom',chapter:16}).id,resolveIdentity('가이오',{code:'1co',chapter:1}).id);
+ assert.notEqual(resolveIdentity('가이오',{code:'act',chapter:19}).id,resolveIdentity('가이오',{code:'act',chapter:20}).id);
+ assert.notEqual(resolveIdentity('소스데네',{code:'act',chapter:18}).id,resolveIdentity('소스데네',{code:'1co',chapter:1}).id);
+ assert.equal(resolveIdentity('게바',{code:'1co',chapter:1}).id,resolveIdentity('베드로',{code:'mat',chapter:16}).id);
+ assert.ok(!first.chapters['13'].people.some(p=>p.name==='예수')&&!first.chapters['13'].rels.some(r=>r.from==='예수'||r.to==='예수'),'고린도전서 13장에 없는 예수 발화를 만들지 않는다');
+});

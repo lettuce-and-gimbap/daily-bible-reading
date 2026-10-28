@@ -177,10 +177,9 @@
       "chapter": 16,
       "title": "마지막 문안",
       "actors": [
-        "바울",
-        "아굴라와 브리스가"
+        "바울"
       ],
-      "object": "house",
+      "object": "scroll",
       "ref": "고린도전서 16:19-24",
       "verseNumbers": [
         19,
@@ -198,7 +197,7 @@
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
-      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":"아굴라와 브리스가","mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"house","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"고린도전서 16:19-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
+      "animation": {"version":2,"motif":"symbolic","lead":"바울","target":null,"mode":"illustration","setting":"vision","effect":"symbol","emotion":"neutral","prop":"scroll","beats":[{"action":"listen","duration":1,"actor":"바울"},{"action":"read","duration":1.2,"actor":"바울"},{"action":"look","duration":1.5,"actor":"바울"},{"action":"point","duration":1.8,"actor":"바울"},{"action":"listen","duration":1.5,"actor":"바울"},{"action":"bow","duration":1.2,"actor":"바울"}],"duration":8.2,"support":null,"ref":"고린도전서 16:19-24","source":"본문 기반 재구성 · 세부 자세와 시간은 창작"},
       "sourceUnits": [
         "1co.16.3"
       ]

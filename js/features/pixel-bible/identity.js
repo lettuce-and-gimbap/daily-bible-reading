@@ -5,6 +5,7 @@ const spiritual=/^(하나님|여호와|성령|주님|천사|하나님의 사자|
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|제자들|무리|장로들|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|자들/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(name==='브리스가')return '브리스길라';
+  if(name==='게바')return '베드로';
   if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return '글라우디오 루시아';
   if(code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return '베드로';
   if(code==='mrk'&&Number(chapter)===2&&name==='레위')return '마태';
@@ -67,6 +68,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
+  if(name==='게바')return {...id('person','베드로'),canonicalName:'베드로'};
   if(['브리스가','브리스길라'].includes(name))return {...id('person','priscilla'),canonicalName:'브리스길라'};
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
   if(name==='마태'||code==='mrk'&&Number(chapter)===2&&name==='레위')return {...id('person','마태'),canonicalName:'마태'};
@@ -79,6 +81,13 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='act'&&Number(chapter)===4&&name==='요한(대제사장 가문)')return {...id('person','john-high-priestly-family-act4'),canonicalName:'요한(대제사장 가문)'};
   if(code==='act'&&[12,13,15].includes(Number(chapter))&&['마가','요한','요한 마가'].includes(name))return {...id('person','john-mark'),canonicalName:'요한 마가'};
   if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return {...id('person','claudius-lysias'),canonicalName:'글라우디오 루시아'};
+  if(name==='그리스보'&&(code==='act'&&Number(chapter)===18||code==='1co'&&Number(chapter)===1))return {...id('person','crispus-of-corinth'),canonicalName:'그리스보'};
+  if(name==='소스데네'&&code==='act'&&Number(chapter)===18)return id('person','sosthenes-synagogue-ruler-act18');
+  if(name==='소스데네'&&code==='1co'&&Number(chapter)===1)return id('person','sosthenes-letter-sender-1co1');
+  if(name==='가이오'&&code==='act'&&Number(chapter)===19)return id('person','gaius-macedonian-act19');
+  if(name==='가이오'&&code==='act'&&Number(chapter)===20)return id('person','gaius-derbe-act20');
+  if(name==='가이오'&&code==='rom'&&Number(chapter)===16||name==='가이오'&&code==='1co'&&Number(chapter)===1)return id('person','gaius-corinth-host');
+  if(name==='가이오'&&code==='3jn')return id('person','gaius-third-john');
   if(spiritual.test(name))return id('spiritual',name);
   if(name==='미가엘')return id('spiritual','michael');
   if(name==='가브리엘')return id('spiritual','gabriel');
