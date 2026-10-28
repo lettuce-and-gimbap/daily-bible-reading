@@ -36,7 +36,7 @@ function puff(rx, ry, n = 11, bump = 0.16, phase = 0.3) {
   return d + "Z";
 }
 
-// 표정: 짧은 곡선 눈 모양 + 덧붙이는 것들: blush, sweat, tears, tint, glow, bubble, brow, pout
+// 표정: 짧은 곡선 눈 모양 + 덧붙이는 것들: blush, sweat, tears, tint, glow, bubble, pout
 function faceMarks(spec) {
   const [eyes, ...extra] = spec.split(",");
   const has = (k) => extra.includes(k);
@@ -58,12 +58,6 @@ function faceMarks(spec) {
   const eyeCurves = eyesByMood[eyes] || eyesByMood["^^"];
   const eyeWidth = eyes === "squint" ? 3.5 : 2.8;
   s += line(eyeCurves[0], "#594A43", eyeWidth) + line(eyeCurves[1], "#594A43", eyeWidth);
-  if (has("brow") || eyes === "side" || eyes === "roll" || eyes === "down") {
-    const brows = eyes === "down" ? "M-18,-8 Q-12,-2 -5,-5 M5,-5 Q12,-2 18,-8" :
-      eyes === "side" || eyes === "roll" ? "M-18,-7 Q-12,-10 -6,-6 M5,-8 Q12,-4 18,-7" :
-      "M-18,-8 L-5,-4 M5,-4 L18,-8";
-    s += line(brows, C.ink, 2.6);
-  }
   if (has("blush")) s += ell(-19, 7, 6, 3.2, C.blush, 'opacity="0.6"') + ell(19, 7, 6, 3.2, C.blush, 'opacity="0.6"');
   // 무표정·삐죽 입은 평소의 작은 미소와 확실히 다르게 그린다.
   if (has("pout")) s += line("M-8,14 Q0,8 8,14", "#594A43", 3.5) + line("M-8,14 L-12,12 M8,14 L12,12", "#594A43", 2.5);
@@ -273,17 +267,17 @@ const POSES = {
     bubbleText("하…", 70, -62),
   // 꾹 참다가 한 번 발을 구르는 모습.
   stomp: () => shadow(0, 95) + limb([[-22, 48], [-22, 88]]) + limb([[22, 48], [58, 70], [60, 88]]) +
-    sheep({ expr: "squint,brow,pout", frot: -7 }) + hip(-1) +
+    sheep({ expr: "squint,pout", frot: -7 }) + hip(-1) +
     limb([[52, 4], [72, 18], [70, 40]]) + line("M42,91 L31,101 M56,94 L53,108 M70,91 L80,101", "#E5A34B", 4),
   // 짝짝짝 박수는 치지만 눈은 전혀 웃지 않는다.
-  nope: () => shadow(0, 92) + legs() + sheep({ expr: "squint,brow,flat", frot: 10, flip: true }) +
+  nope: () => shadow(0, 92) + legs() + sheep({ expr: "squint,flat", frot: 10, flip: true }) +
     limb([[-52, 4], [-36, -18], [-28, -18]]) + limb([[52, 4], [36, -18], [28, -18]]) +
     line("M-91,-28 L-105,-38 M-96,-12 L-112,-12 M91,-28 L105,-38 M96,-12 L112,-12", "#E56B62", 4),
   // 콧대를 세우고 내려다보는 듯한 '그걸 아직도 안 했어?' 표정.
-  condescend: () => shadow(0, 92) + legs() + sheep({ expr: "down,smirk,brow", frot: -10 }) +
+  condescend: () => shadow(0, 92) + legs() + sheep({ expr: "down,smirk", frot: -10 }) +
     hip(-1) + limb([[52, 4], [76, 18], [88, 12]]) + line("M-99,-42 L-80,-48 M-100,-28 L-82,-31", "#D9C9B5", 3),
   // 한쪽 눈썹만 올린 채 여유롭게 미소 짓는다.
-  fingerwag: () => shadow(0, 92) + legs() + sheep({ expr: "squint,brow,flat" }) + hang(-1) +
+  fingerwag: () => shadow(0, 92) + legs() + sheep({ expr: "squint,flat" }) + hang(-1) +
     limb([[52, 4], [66, -12], [82, -38]], { tip: false, w: 9 }) +
     line("M83,-54 L83,-40 M75,-50 L79,-42 M91,-50 L87,-42", "#F2C14E", 3),
   // 두 앞발을 모아 오늘 분량을 꼭 부탁한다.

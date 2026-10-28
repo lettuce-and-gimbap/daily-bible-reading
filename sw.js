@@ -234,7 +234,7 @@ async function buildMessage() {
   const fill = (s) => s.replace(/\{portion\}/g, portion).replace(/\{streak\}/g, String(streak));
   // 메시지마다 양(🐑) 포즈 그림: icons/notify/<시간대>-<원래 순서>.jpg (안드로이드·PC 크롬/엣지에서 크게 보임, 아이폰은 표시 안 함)
   const rowIndex = MESSAGES[tier].indexOf(pool[idx]);
-  const image = pool[idx][5] || `icons/notify/${tier}-${rowIndex}.jpg?v=sheep-thirty-poses-20261028`;
+  const image = pool[idx][5] || `icons/notify/${tier}-${rowIndex}.jpg?v=sheep-thirty-no-brows-20261028`;
   return { title: fill(pool[idx][0]), body: fill(pool[idx][1]), image };
 }
 

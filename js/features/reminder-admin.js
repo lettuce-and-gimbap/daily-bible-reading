@@ -28,7 +28,7 @@ function reminderAdminLoadArt() {
   reminderAdminArtScript = new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "tools/notify-art/art.js?v=reminder-stability-4";
+    script.src = "tools/notify-art/art.js?v=reminder-stability-5";
     script.onload = () => window.ReminderArt?.renderCard ? resolve(window.ReminderArt) : reject(new Error("양 그림 렌더러를 찾지 못했어요."));
     script.onerror = () => reject(new Error("양 그림 렌더러를 불러오지 못했어요."));
     document.head.append(script);
