@@ -114,6 +114,11 @@ const CHAPTERS = {
   // Chapter 4 identifies Paul's letter carriers and coworkers. Barnabas is
   // only identified as Mark's relative; he did not send a greeting here.
   'col.4': ['골로새 성도들', '바나바'],
+  '1th.1': ['데살로니가 교회', '마게도냐와 아가야 신자들', '예수'],
+  '1th.2': ['데살로니가 성도들', '유대인들', '사탄', '예수'],
+  '1th.3': ['데살로니가 성도들', '시험하는 자', '예수'],
+  '1th.4': ['데살로니가 성도들', '자는 자들', '천사장', '예수'],
+  '1th.5': ['데살로니가 성도들', '다스리는 자들', '게으른 자들', '예수'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],

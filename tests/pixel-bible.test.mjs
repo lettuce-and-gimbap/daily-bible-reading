@@ -2006,3 +2006,17 @@ test('골로새서는 서신 수신자와 일반 가정 역할을 분리하고 �
  assert.equal(cast(4).find(p=>p.name==='요한 마가').name,'요한 마가');
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),20);
 });
+
+test('데살로니가전서는 공동 발신자와 실제 선교 동역자를 살리고 미래·비유 집단을 구분한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/1th.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'1th',name:'데살로니가전서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ for(const name of ['바울','실라','디모데'])assert.ok(cast(1).includes(name));
+ assert.ok(!cast(1).includes('데살로니가 교회'));
+ for(const name of ['유대인들','사탄'])assert.ok(!cast(2).includes(name));
+ assert.ok(cast(3).includes('디모데'));
+ for(const name of ['자는 자들','천사장'])assert.ok(!cast(4).includes(name));
+ for(const name of ['다스리는 자들','게으른 자들'])assert.ok(!cast(5).includes(name));
+ assert.equal(resolveIdentity('실라',{code:'act',chapter:15}).id,resolveIdentity('실루아노',{code:'1th',chapter:1}).id);
+ assert.equal(resolveIdentity('실루아노',{code:'2co',chapter:1}).id,resolveIdentity('실라',{code:'act',chapter:15}).id);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
+});
