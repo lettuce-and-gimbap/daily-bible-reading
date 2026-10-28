@@ -222,7 +222,7 @@ const POSES = {
     sheep({ rx: 92, ry: 42, fx: -62, fy: -10, frot: -14, expr: "vv" }) + limb([[50, 36], [92, -14], [112, 60]]) +
     limb([[-40, 50], [-84, 64], [-92, 6]]) + tapMarks(114, 62),
   // 너. 👉
-  point: () => shadow(0, 92) + legs() + hip(-1) + sheep({ expr: "^^,anger" }) + limb([[52, 4], [60, 0]], { tip: false, w: 11 }) + bigHoof(66, -2),
+  point: () => shadow(0, 92) + legs() + hip(-1) + sheep({ expr: "^^,anger" }) + limb([[52, 4], [68, -2], [86, -5]], { w: 12 }) + px(81, -10, 10, 10, C.tip),
   // 팔짱 끼고 발 까딱
   armscross: () => shadow(0, 92) + limb([[-22, 48], [-24, 88]]) + limb([[22, 48], [42, 84]]) + sheep({ expr: "vv" }) +
     limb([[-52, 4], [-14, 40], [34, 16]]) + limb([[52, 4], [12, 44], [-34, 20]]) + tapMarks(44, 88),
@@ -319,25 +319,25 @@ const POSES = {
     limb([[-52, 4], [-67, 24], [-76, 34]]) + limb([[52, 4], [77, 18], [86, 6]]) +
     bible(96, -4, 42, 54, 12),
   // 축 처진 양, 늦은 답장과 소소한 부탁을 표현하는 추가 포즈.
-  droop: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:12}) + hang(-1) + hang(1),
-  slump: () => shadow(0,92) + legs() + g("rotate(15)", sheep({expr:"closed,flat"}) + hang(-1) + hang(1)),
-  lean: () => shadow(0,92) + legs() + sheep({expr:"side,flat",frot:-15}) + hip(-1) + hang(1),
-  sighing: () => shadow(0,92) + legs() + sheep({expr:"vv,flat"}) + hang(-1) + hang(1) + sighCloud(85,-35),
-  waiting: () => shadow(0,100,80) + stool(0,66) + legs() + sheep({expr:"side,flat"}) + hang(-1) + hang(1),
-  dozing: () => shadow(0,92) + legs() + sheep({expr:"closed,flat",frot:20}) + hang(-1) + hang(1) + zzz(60,-20),
+  droop: () => shadow(0,92,82) + limb([[-22,48],[-42,86]]) + limb([[22,48],[42,86]]) + g("rotate(12)",sheep({rx:66,ry:50,expr:"vv,flat",frot:18}) + hang(-1) + hang(1)),
+  slump: () => shadow(0,80,110) + sheep({rx:94,ry:37,fx:-55,fy:0,expr:"closed,flat",frot:20}) + limb([[-50,30],[-90,60],[-105,65]]) + limb([[50,25],[88,48],[105,56]]),
+  lean: () => shadow(0,92,80) + limb([[-22,48],[-30,88]]) + limb([[22,48],[48,86]]) + g("rotate(-20)",sheep({expr:"side,flat"}) + hip(-1) + limb([[52,4],[75,20],[86,14]])),
+  sighing: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:8}) + limb([[-52,4],[-70,24],[-48,34]]) + limb([[52,4],[70,-14],[40,-30]]) + sighCloud(90,-38),
+  waiting: () => shadow(0,100,85) + stool(0,66) + limb([[-22,48],[-35,65],[-48,88]]) + limb([[22,48],[35,65],[48,88]]) + sheep({expr:"side,flat",frot:10}) + limb([[-52,4],[-22,40],[28,24]]) + limb([[52,4],[20,42],[-30,24]]) + tapMarks(48,88),
+  dozing: () => shadow(0,100,88) + stool(0,66) + limb([[-22,48],[-34,86]]) + limb([[22,48],[40,86]]) + g("rotate(18)",sheep({expr:"closed,flat"}) + hang(-1) + hang(1)) + zzz(70,-32),
   embarrassed: () => shadow(0,92) + legs() + sheep({expr:"vv,blush,sweat"}) + limb([[-52,4],[-60,-12],[-36,-24]]) + hang(1),
   wave_small: () => shadow(0,92) + legs() + sheep({expr:"vv,blush"}) + hang(-1) + limb([[52,4],[65,0],[68,-20]]),
-  wave_tired: () => shadow(0,92) + legs() + sheep({expr:"closed,flat",frot:8}) + hang(-1) + limb([[52,4],[64,20],[76,16]]),
+  wave_tired: () => shadow(0,92) + limb([[-22,48],[-24,88]]) + limb([[22,48],[38,85]]) + sheep({expr:"closed,flat",frot:15}) + hang(-1) + limb([[52,4],[68,22],[82,24]]) + line("M82,12 Q92,20 82,30", "#fff", 3),
   arms_open: () => shadow(0,92) + legs() + sheep({expr:"^^,blush"}) + limb([[-52,4],[-75,4],[-92,-8]]) + limb([[52,4],[75,4],[92,-8]]),
   shoulders_up: () => shadow(0,92) + legs() + sheep({expr:"side,flat"}) + limb([[-52,4],[-77,-6],[-72,-24]]) + limb([[52,4],[77,-6],[72,-24]]),
-  hands_behind: () => shadow(0,92) + legs() + limb([[-52,4],[-70,20],[-55,42]]) + limb([[52,4],[70,20],[55,42]]) + sheep({expr:"vv,blush"}),
+  hands_behind: () => shadow(0,92) + limb([[-22,48],[-38,86]]) + limb([[22,48],[32,88]]) + limb([[-52,4],[-78,18],[-50,45]]) + limb([[52,4],[78,18],[50,45]]) + sheep({expr:"vv,blush",frot:-10}),
   book_overhead: () => shadow(0,92) + legs() + sheep({expr:"^^,o"}) + limb([[-52,4],[-70,-30],[-42,-64]]) + limb([[52,4],[70,-30],[42,-64]]) + bible(0,-74,56,42),
   book_on_head: () => shadow(0,92) + legs() + sheep({expr:"vv,flat"}) + hang(-1) + hang(1) + bible(0,-61,68,28,-3),
   reading_seated: () => shadow(0,100,80) + stool(0,66) + legs() + sheep({expr:"closed"}) + bible(0,50,82,54,0,true) + limb([[-52,4],[-50,30],[-35,50]]) + limb([[52,4],[50,30],[35,50]]),
   book_rest: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:8}) + hang(-1) + limb([[52,4],[70,20],[80,38]]) + bible(91,43,40,52,12),
-  head_tilt: () => shadow(0,92) + legs() + sheep({expr:"side,pout",frot:22}) + hang(-1) + hip(1),
+  head_tilt: () => shadow(0,92) + limb([[-22,48],[-40,87]]) + limb([[22,48],[25,88]]) + sheep({expr:"side,pout",frot:28}) + limb([[-52,4],[-68,-10],[-46,-29]]) + hip(1),
   foot_tap: () => shadow(0,92) + limb([[-22,48],[-24,88]]) + limb([[22,48],[45,84]]) + sheep({expr:"side,flat"}) + hip(-1) + hip(1) + tapMarks(46,88),
-  crawl: () => shadow(0,75,110) + sheep({rx:85,ry:40,fx:-55,fy:-5,expr:"sad,pout"}) + limb([[-50,30],[-80,55],[-95,54]]) + limb([[45,30],[80,54],[98,54]]),
+  crawl: () => shadow(0,75,110) + limb([[40,28],[75,5],[94,-26]]) + sheep({rx:85,ry:40,fx:-55,fy:-5,expr:"sad,pout"}) + limb([[-50,30],[-80,55],[-98,54]]) + limb([[45,30],[80,54],[98,54]]) + tapMarks(100,55),
   tiny_bow: () => shadow(0,92) + legs() + g("rotate(18)",sheep({expr:"closed,blush"}) + limb([[-52,4],[-30,30],[-5,35]]) + limb([[52,4],[30,30],[5,35]])),
 };
 
