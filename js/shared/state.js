@@ -182,7 +182,9 @@ function streak(dateSet) {
 // 알림용 오늘 요약: 서버에는 done/paused만, 서비스 워커는 분량·연속 일수로 문구를 채움
 function reminderSnapshot() {
   const date = readingDateStr();
-  if (!state.plan) return { date, done: false, paused: true, portion: "", streak: 0 };
+  // 로그인이나 통독 계획 없이도 알림을 켠 사용자는 알림을 받을 수 있다.
+  // 계획이 없는 상태는 일시정지가 아니며, 분량 문구는 서비스 워커가 기본 문구로 채운다.
+  if (!state.plan) return { date, done: false, paused: false, portion: "", streak: 0 };
   const pr = progress();
   const day = pr.days[pr.behindDays > 0 ? pr.currentDay : pr.todayDay];
   // 이미 읽은 장은 빼고 남은 분량만 알림에 씀 (예: 31~35장 중 31~32장을 읽었으면 "33–35장")

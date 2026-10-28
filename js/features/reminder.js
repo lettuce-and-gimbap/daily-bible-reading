@@ -167,16 +167,17 @@ function reminderCardHtml() {
     body = `
       <p class="remind-state on">✓ 알림이 켜져 있어요</p>
       <p class="muted small">알림 시간: 오전 7시부터 자정 전까지 (위치 설정 시 해당 지역 시간대, 미설정 시 한국 시간)</p>
-      <p class="muted small">${snap.paused ? "통독 계획이 없거나 끝나서 지금은 알림이 가지 않아요."
+      <p class="muted small">${snap.paused ? "통독 계획을 마쳐 알림이 잠시 멈춰 있어요."
         : snap.done ? "오늘 통독을 마쳐서 오늘은 더 이상 알림이 가지 않아요. 👏"
-        : "오늘 통독을 아직 마치지 않았어요. 오전 7시부터 자정 전까지, 설정된 지역 시간에 하루 최대 7번 알림이 가요."}</p>
+        : snap.portion ? "오늘 통독을 아직 마치지 않았어요. 오전 7시부터 자정 전까지, 설정된 지역 시간에 하루 최대 7번 알림이 가요."
+        : "통독 계획이 없어도 오전 7시부터 자정 전까지, 설정된 지역 시간에 하루 최대 7번 알림이 가요."}</p>
       <div class="inline wrap">
         <button class="btn ghost small" id="rm-test">테스트 알림 받기</button>
         <button class="btn text small" id="rm-off">알림 끄기</button>
       </div>`;
   } else if (status === "off") {
     body = `
-      <p class="muted small">오전 7시부터 자정 전까지 설정된 지역 시간에 하루 최대 7번 재치 있는 알림으로 챙겨 드려요. 위치를 설정했다면 해당 지역 시간대를 사용하고, 시간대 조회가 어려우면 기기 시간대를 써요. 위치가 없으면 한국 시간(Asia/Seoul)을 사용해요. 오늘 통독을 마치면 알림이 가지 않아요.</p>
+      <p class="muted small">로그인이나 통독 계획 없이도 알림을 켤 수 있어요. 오전 7시부터 자정 전까지 설정된 지역 시간에 하루 최대 7번 재치 있는 알림으로 챙겨 드려요. 위치를 설정했다면 해당 지역 시간대를 사용하고, 시간대 조회가 어려우면 기기 시간대를 써요. 위치가 없으면 한국 시간(Asia/Seoul)을 사용해요. 통독 계획을 마치면 알림이 잠시 멈춰요.</p>
       <button class="btn primary" id="rm-on">🔔 알림 켜기</button>`;
   } else if (status === "need-install") {
     body = `
