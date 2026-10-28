@@ -101,6 +101,13 @@ const CHAPTERS = {
   'eph.4': ['에베소 성도들', '사도와 선지자와 목사와 교사', '마귀', '예수'],
   'eph.5': ['에베소 성도들', '아내들', '남편들', '교회', '예수'],
   'eph.6': ['자녀들', '아비들', '종들', '상전들', '마귀'],
+  // Philippians names a few specific coworkers. Preserve Timothy and
+  // Epaphroditus as Paul's companions, and Euodia/Syntyche as the two women
+  // whose shared ministry and reconciliation Paul addresses directly.
+  'php.1': ['빌립보 성도들', '투기로 전하는 자들', '예수'],
+  'php.2': ['빌립보 성도들', '예수'],
+  'php.3': ['빌립보 성도들', '개들과 행악하는 자들', '십자가의 원수들', '예수'],
+  'php.4': ['빌립보 성도들', '멍에를 같이한 자', '예수'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],

@@ -1976,3 +1976,18 @@ test('에베소서는 수신 공동체·일반 가정 역할·영적 권세를 �
  const ending=buildWorldModel([{code:'eph',name:'에베소서',chap:6,data:summary.chapters['6']}]);assert.ok(ending.cast.some(p=>p.name==='두기고'));
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),29);
 });
+
+test('빌립보서의 실제 옥중 동역자와 유오디아·순두게 공동사역을 보존하고 추상 대상을 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/php.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'php',name:'빌립보서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ for(const name of ['바울','디모데','시위대'])assert.ok(cast(1).includes(name),`빌립보서 1장 현장 인물 ${name}`);
+ assert.ok(!cast(1).includes('투기로 전하는 자들'));
+ for(const name of ['디모데','에바브로디도'])assert.ok(cast(2).includes(name),`빌립보서 2장 동역자 ${name}`);
+ for(const name of ['유오디아','순두게','글레멘드','에바브로디도'])assert.ok(cast(4).includes(name),`빌립보서 4장 언급된 동역자 ${name}`);
+ assert.ok(!cast(3).includes('개들과 행악하는 자들'));
+ assert.ok(!cast(3).includes('십자가의 원수들'));
+ const four=summary.chapters['4'];
+ for(const name of ['유오디아','순두게'])assert.ok(four.rels.some(r=>r.from==='바울'&&r.to===name&&r.verses==='2-3'));
+ const pair=four.rels.find(r=>r.from==='유오디아'&&r.to==='순두게');assert.equal(pair.label,'복음 사역 동역자');assert.match(pair.note,/본문이 말하지 않아요/);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
+});
