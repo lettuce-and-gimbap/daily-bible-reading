@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 3,
-  "pending": 925,
+  "reviewed": 8,
+  "pending": 920,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -405,7 +405,9 @@
       "speaker": "구시",
       "target": "다윗",
       "ref": "시편 7:1–5, 8–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 발화 수신자·본문 사실과 가상 응답 구분·상대 발언에 대한 응답"
     },
     {
       "id": "pair-psa-22-mockers-david",
@@ -759,7 +761,9 @@
       "speaker": "다윗",
       "target": "사람들",
       "ref": "시편 4:2–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 발화 수신자·본문 사실과 가상 응답 구분·상대 발언에 대한 응답"
     },
     {
       "id": "pair-psa-10-wicked-vulnerable",
@@ -767,7 +771,9 @@
       "speaker": "악인",
       "target": "가난한 자와 고아",
       "ref": "시편 10:2, 8–10, 14, 17–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 발화 수신자·본문 사실과 가상 응답 구분·상대 발언에 대한 응답"
     },
     {
       "id": "pair-psa-12-liars-needy",
@@ -961,7 +967,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 5:8–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 발화 수신자·본문 사실과 가상 응답 구분·상대 발언에 대한 응답"
     },
     {
       "id": "pair-psa-6-david-enemies",
@@ -969,7 +977,9 @@
       "speaker": "다윗",
       "target": "원수들",
       "ref": "시편 6:6–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 발화 수신자·본문 사실과 가상 응답 구분·상대 발언에 대한 응답"
     },
     {
       "id": "pair-psa-11-wicked-david",
