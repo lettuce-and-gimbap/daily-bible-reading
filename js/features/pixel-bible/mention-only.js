@@ -92,6 +92,15 @@ const CHAPTERS = {
   'gal.4': ['갈라디아 사람들', '아브라함', '하갈', '사라', '이스마엘', '이삭', '예수'],
   'gal.5': ['갈라디아 사람들', '교란하는 자', '예수'],
   'gal.6': ['갈라디아 사람들', '범죄한 사람', '할례를 강요하는 자들', '예수'],
+  // Ephesians is a circular letter. Keep its bearer in the closing scene;
+  // remove the distant audience, generic household roles and spiritual
+  // powers used in the argument from the human scene cast.
+  'eph.1': ['에베소 성도들', '예수'],
+  'eph.2': ['에베소 성도들', '이방인들', '이스라엘', '공중의 권세 잡은 자', '예수'],
+  'eph.3': ['에베소 성도들', '이방인들', '통치자들과 권세들', '예수'],
+  'eph.4': ['에베소 성도들', '사도와 선지자와 목사와 교사', '마귀', '예수'],
+  'eph.5': ['에베소 성도들', '아내들', '남편들', '교회', '예수'],
+  'eph.6': ['자녀들', '아비들', '종들', '상전들', '마귀'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],

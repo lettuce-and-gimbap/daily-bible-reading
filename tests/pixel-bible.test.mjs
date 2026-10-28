@@ -1964,3 +1964,15 @@ test('갈라디아서의 예루살렘·안디옥 사건은 실제 동석 인물�
  }
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),31);
 });
+
+test('에베소서는 수신 공동체·일반 가정 역할·영적 권세를 사람 NPC로 세우지 않고 편지 전달자 두기고는 유지한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/eph.json',import.meta.url),'utf8'));
+ const absent={1:['에베소 성도들','예수'],2:['에베소 성도들','이방인들','이스라엘','공중의 권세 잡은 자','예수'],3:['에베소 성도들','이방인들','통치자들과 권세들','예수'],4:['에베소 성도들','사도와 선지자와 목사와 교사','마귀','예수'],5:['에베소 성도들','아내들','남편들','교회','예수'],6:['자녀들','아비들','종들','상전들','마귀']};
+ for(let chap=1;chap<=6;chap++){
+  const model=buildWorldModel([{code:'eph',name:'에베소서',chap,data:summary.chapters[String(chap)]}]);
+  for(const name of absent[chap])assert.ok(!model.cast.some(p=>p.name===name),`에베소서 ${chap}장 ${name}은 편지 수신자·일반 역할·영적 비유`);
+  for(const scene of model.scenes)for(const actor of scene.actors)assert.ok(!absent[chap].includes(actor),`에베소서 ${chap}장 사건 장면 ${actor} 제거`);
+ }
+ const ending=buildWorldModel([{code:'eph',name:'에베소서',chap:6,data:summary.chapters['6']}]);assert.ok(ending.cast.some(p=>p.name==='두기고'));
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),29);
+});
