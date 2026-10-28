@@ -2183,3 +2183,16 @@ test('요한일서는 사도 요한의 저자 신원을 고정하고 인용된 �
  for(const [chapter,names]of [[1,['예수']],[2,['예수']],[3,['가인','아벨','예수']],[4,['예수']],[5,['예수']]])for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'1jn',chapter}));
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),21);
 });
+
+test('요한이서는 장로 저자·교회 수신자를 구분하고 육체로 오신 예수님을 현장 캐릭터로 세우지 않는다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/2jn.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/2jn.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'2jn',name:'요한이서',chap:1,data:{...summary.chapters['1'],eventScenes:events.scenes.filter(s=>s.chapter===1)}}]);
+ assert.equal(resolveIdentity('장로',{code:'2jn',chapter:1}).id,resolveIdentity('장로',{code:'3jn',chapter:1}).id);
+ assert.equal(resolveIdentity('장로',{code:'2jn',chapter:1}).id,resolveIdentity('요한',{code:'1jn',chapter:1}).id);
+ for(const name of ['택하심을 받은 부녀','부녀의 자녀들','미혹하는 자'])assert.equal(resolveIdentity(name,{code:'2jn',chapter:1}).kind,'group');
+ assert.ok(!model.cast.some(p=>p.name==='예수'));
+ const scene=model.scenes.find(s=>s.id==='ot-2jn-1-1');assert.ok(scene);assert.deepEqual(scene.actors,[]);assert.equal(scene.animation.lead,null);
+ assert.ok(isMentionOnlyPerson({name:'예수'},{code:'2jn',chapter:1}));
+ assert.equal(summary.chapters['1'].rels.length,4);
+});
