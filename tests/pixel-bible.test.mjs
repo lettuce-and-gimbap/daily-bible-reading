@@ -2091,3 +2091,25 @@ test('빌레몬서는 실제 간구 관계와 집 교회 수신자를 연결하�
  assert.ok(summary.chapters['1'].rels.some(r=>r.to==='빌레몬의 집 교회'&&r.verses==='2'));
  assert.equal(summary.chapters['1'].rels.length,6);
 });
+
+test('히브리서는 역사적 본문 예시의 인물을 분리하고 비유·제사 표현을 현장 캐릭터와 구분한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/heb.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'heb',name:'히브리서',chap,data:summary.chapters[String(chap)]}]).cast;
+ assert.ok(!cast(1).some(p=>p.name==='개'),'일곱 개의 구약 인용에서 수량 단위가 개 NPC가 되지 않는다');
+ assert.ok(!cast(9).some(p=>['소','염소'].includes(p.name)),'속죄 제사의 짐승은 히브리서 9장 현장 동물이 아니다');
+ assert.ok(!cast(10).some(p=>['소','염소'].includes(p.name)),'반복 제사의 짐승은 히브리서 10장 현장 동물이 아니다');
+ assert.equal(resolveIdentity('천사들',{code:'heb',chapter:1}).kind,'spiritual');
+ assert.equal(resolveIdentity('천만 천사',{code:'heb',chapter:12}).kind,'spiritual');
+ assert.equal(resolveIdentity('멜기세덱',{code:'heb',chapter:7}).id,resolveIdentity('멜기세덱',{code:'gen',chapter:14}).id);
+ assert.equal(resolveIdentity('에녹',{code:'heb',chapter:11}).id,resolveIdentity('에녹',{code:'gen',chapter:5}).id);
+ assert.equal(resolveIdentity('요셉',{code:'heb',chapter:11}).id,resolveIdentity('요셉',{code:'gen',chapter:37}).id);
+ const ch7=cast(7).map(p=>p.name);assert.ok(ch7.includes('아브라함'));assert.ok(ch7.includes('멜기세덱'));
+ for(const name of ['레위','아론'])assert.ok(!ch7.includes(name),`히브리서 7장의 계보·비교 인물 ${name}은 대면 장면 배우가 아님`);
+ const ch11=cast(11).map(p=>p.name);
+ for(const name of ['기드온','바락','삼손','입다','다윗','사무엘','에서','요셉의 아들들'])assert.ok(ch11.includes(name),`히브리서 11장의 믿음 선례 인물 ${name}을 개별 색인`);
+ assert.ok(!ch11.includes('기드온과 다윗'),'한 인물 이름에 여러 사람이 합쳐져 있지 않다');
+ assert.equal(resolveIdentity('요셉의 아들들',{code:'heb',chapter:11}).kind,'group');
+ const relations=summary.chapters['11'].rels;
+ for(const [from,to,verse]of [['이삭','야곱','20'],['이삭','에서','20'],['야곱','요셉의 아들들','21']])assert.ok(relations.some(r=>r.from===from&&r.to===to&&r.verses===verse),`${from}→${to} 관계는 본문 ${verse}절 근거가 있음`);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),60);
+});

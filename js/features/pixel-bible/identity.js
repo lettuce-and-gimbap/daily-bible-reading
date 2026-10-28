@@ -1,8 +1,8 @@
 import {creatureForName} from './creatures.js?rev=so-king-identity-1';
 import { APPEARANCES } from './appearance.js';
 const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>!['천사','일꾼'].includes(n)));
-const spiritual=/^(하나님|여호와|성령|주님|천사|천사장|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양)$/;
-const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|자들/;
+const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양)$/;
+const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|형제들|자매들|조상들|증인들|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|아들들|딸들|자들|집/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(['실라','실루아노'].includes(name))return '실라';
   if(['col','2ti'].includes(code)&&Number(chapter)===4&&name==='마가'||code==='phm'&&Number(chapter)===1&&name==='마가')return '요한 마가';
@@ -173,11 +173,15 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(name==='소'&&code==='2ki'&&/왕|애굽|바로/.test(role))return id('person','egyptian-king-so','verse-reviewed');
   if(name==='바울')return id('person','paul');
   if(name==='요셉') {
-    if(code==='gen')return id('person','joseph-patriarch');
+    if(code==='gen'||code==='heb'&&Number(chapter)===11||code==='exo'&&Number(chapter)===13||code==='act'&&Number(chapter)===7||code==='jos'&&Number(chapter)===24)return {...id('person','joseph-patriarch'),canonicalName:'요셉'};
     if(/아리마대/.test(role))return id('person','joseph-arimathea');
     if(/마리아|예수.*아버지|남편/.test(role))return id('person','joseph-mary-husband');
     return id('unresolved',`${name}:${code}`,'ambiguous');
   }
+  if(name==='멜기세덱')return {...id('person','melchizedek'),canonicalName:'멜기세덱'};
+  if(name==='에녹')return {...id('person','enoch'),canonicalName:'에녹'};
+  if(name==='바락')return {...id('person','barak'),canonicalName:'바락'};
+  if(name==='입다')return {...id('person','jephthah'),canonicalName:'입다'};
   if(name==='마리아'){
     if(/막달라/.test(role))return id('person','mary-magdalene');
     if(/예수.*어머니|예수.*모친/.test(role))return id('person','mary-jesus-mother');

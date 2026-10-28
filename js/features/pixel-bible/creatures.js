@@ -18,16 +18,28 @@ export function creatureForName(name,role='',code=''){
  const id=aliases[name]||Object.keys(CREATURES).find(k=>CREATURES[k].name===name);
  return CREATURES[id]||null;
 }
-const explicit={camel:/낙타/u,ox:/(?:암소|수소|소 떼|황소)/u,goat:/염소/u,deer:/사슴/u,bear:/곰(?:이|을|은|과|에게|의|들|\s|[.,]|$)/u,wolf:/이리 (?:떼|가운데)|이리가|늑대/u,fox:/여우/u,dog:/(?<![가-힣])개(?:가|를|들은|들이|에게|의|처럼|와|$)/u,pig:/돼지/u,eagle:/독수리/u,sparrow:/참새/u,rooster:/수탉|암탉|닭(?:이|을|은|의|\s|$)/u,'great-fish':/큰 물고기/u,locust:/메뚜기/u,bee:/벌 떼|꿀벌/u,ant:/개미/u,frog:/개구리/u,gourd:/박넝쿨/u,'mustard-plant':/겨자나무|겨자.*나무/u};
+const explicit={camel:/낙타/u,ox:/(?:암소|수소|소 떼|황소)/u,goat:/염소/u,deer:/사슴/u,bear:/곰(?:이|을|은|과|에게|의|들|\s|[.,]|$)/u,wolf:/이리 (?:떼|가운데)|이리가|늑대/u,fox:/여우/u,dog:/(?<![가-힣])개(?!의치)(?:가|를|들은|들이|에게|의|처럼|와|$)/u,pig:/돼지/u,eagle:/독수리/u,sparrow:/참새/u,rooster:/수탉|암탉|닭(?:이|을|은|의|\s|$)/u,'great-fish':/큰 물고기/u,locust:/메뚜기/u,bee:/벌 떼|꿀벌/u,ant:/개미/u,frog:/개구리/u,gourd:/박넝쿨/u,'mustard-plant':/겨자나무|겨자.*나무/u};
 export function chapterCreatures(c){
  const found=new Map();
  const add=(id,refs)=>{const d=CREATURES[id];if(!d)return;found.set(id,{name:d.name,weight:1,creature:d,role:`이 본문에 언급된 ${d.kind==='animal'?'동물':'식물'} · ${d.name}`,creatureRefs:refs});};
  for(const item of chapterObjects(c))if(CREATURES[item.id]&&!(item.id==='calf'&&item.evidence.every(e=>/송아지처럼/.test(e.text))))add(item.id,item.refs);
  for(const [id,pattern]of Object.entries(explicit)){
-  const events=(c.data?.events||[]).filter(e=>pattern.test(`${e.title||''} ${e.text||''}`));
+  const events=(c.data?.events||[]).filter(e=>{
+   const text=`${e.title||''} ${e.text||''}`;
+   // 한국어 수량 표현의 '일곱 개를'이 '개' 동물로 오인되지 않게 한다.
+   const evidence=id==='dog'?text.replace(/(?:한|두|세|네|다섯|여섯|일곱|여덟|아홉|열|\d+)\s*개(?=[가를은의와에게])/gu,''):text;
+   return pattern.test(evidence);
+  });
   if(events.length)add(id,events.map(e=>`${c.name||c.code} ${c.chap}${e.verses?':'+e.verses:''}`));
-  else if(pattern.test(c.data?.story||''))add(id,[`${c.name||c.code} ${c.chap}`]);
+  else {
+   const story=c.data?.story||'';
+   const evidence=id==='dog'?story.replace(/(?:한|두|세|네|다섯|여섯|일곱|여덟|아홉|열|\d+)\s*개(?=[가를은의와에게])/gu,''):story;
+   if(pattern.test(evidence))add(id,[`${c.name||c.code} ${c.chap}`]);
+  }
  }
+ // Hebrews 9–10 discuss sacrificial oxen and goats as theological examples;
+ // they are not living animals in the depicted letter scene.
+ if(c.code==='heb'&&[9,10].includes(Number(c.chap))){found.delete('ox');found.delete('goat');}
  // 계시록의 어린 양은 인간형 동물/양 떼로 생성하지 않는다.
  if(c.code==='rev'&&!/양 떼|양을 먹/.test(c.data?.story||''))found.delete('sheep');
  return [...found.values()];
