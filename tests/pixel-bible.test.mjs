@@ -643,7 +643,7 @@ test('호세아서의 표징 자녀는 실제 인물로 남기고 오라클 속 
  const summary=JSON.parse(fs.readFileSync(new URL('../data/summary/hos.json',import.meta.url),'utf8'));
  const ch1=buildWorldModel([{code:'hos',name:'호세아',chap:1,data:summary.chapters['1']}]);
  for(const name of ['고멜','이스르엘','로루하마','로암미'])assert.ok(ch1.cast.some(person=>person.name===name),`호세아 1장의 실제 가족 ${name}을 유지`);
- const cases={2:['이스라엘','암미','루하마'],3:['이스라엘 자손','다윗'],4:['이스라엘 백성','제사장','에브라임'],5:['에브라임','유다','제사장과 왕족','야렙 왕'],6:['이스라엘 백성','에브라임','유다','제사장 무리'],7:['에브라임','사마리아','애굽과 앗수르','왕들'],8:['이스라엘','에브라임','유다'],9:['이스라엘','에브라임','선지자'],10:['이스라엘','에브라임','사마리아 주민','야렙 왕'],11:['이스라엘','에브라임','앗수르'],12:['에브라임','유다'],13:['에브라임','사마리아','왕'],14:['이스라엘','에브라임','고아','앗수르']};
+ const cases={2:['이스라엘','암미','루하마'],3:['이스라엘 자손','다윗'],4:['이스라엘 백성','제사장','에브라임'],5:['에브라임','유다','제사장과 왕족'],6:['이스라엘 백성','에브라임','유다','제사장 무리'],7:['에브라임','사마리아','애굽과 앗수르','왕들'],8:['이스라엘','에브라임','유다'],9:['이스라엘','에브라임','선지자'],10:['이스라엘','에브라임','사마리아 주민'],11:['이스라엘','에브라임','앗수르'],12:['에브라임','유다'],13:['에브라임','사마리아','왕'],14:['이스라엘','에브라임','고아','앗수르']};
  for(const [chapter,names] of Object.entries(cases)){
   for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'hos',chapter}));
   const model=buildWorldModel([{code:'hos',name:'호세아',chap:Number(chapter),data:summary.chapters[chapter]}]);
@@ -1231,7 +1231,7 @@ test('100종의 독백 200개와 확장된 관계 대사를 출처와 구분한�
  const {SOLO_DIALOGUE,PAIR_DIALOGUE,DIALOGUE_SOURCE_STATUS}=await import('../js/features/pixel-bible/dialogue.js');
  assert.equal(Object.keys(SOLO_DIALOGUE).length,100);
  for(const p of Object.values(APPEARANCES)){const solo=SOLO_DIALOGUE[p.name];assert.ok(solo?.ref);assert.equal(solo.lines.length,2);assert.ok(solo.lines.every(s=>s.length>8&&s.length<100));}
- assert.equal(PAIR_DIALOGUE.length,931);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
+ assert.equal(PAIR_DIALOGUE.length,929);for(const p of PAIR_DIALOGUE){assert.ok(p.speaker&&p.target&&p.ref&&p.chapter);assert.ok(p.lines.length>0);}
  const josiah=PAIR_DIALOGUE.find(p=>p.id==='pair-2ki-21-people-josiah');
  assert.equal(josiah.lines.length,3);assert.equal(josiah.replyLines.length,3);assert.equal(josiah.lineDetails.length,3);
  const {speechContext}=await import('../js/features/pixel-bible/speech-context.js');
