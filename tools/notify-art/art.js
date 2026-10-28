@@ -36,39 +36,34 @@ function puff(rx, ry, n = 11, bump = 0.16, phase = 0.3) {
   return d + "Z";
 }
 
-// 표정: 기본 눈 모양 + 덧붙이는 것들(쉼표로): blush, sweat, tears, tint, glow, bubble, brow, pout
+// 표정: 짧은 곡선 눈 모양 + 덧붙이는 것들: blush, sweat, tears, tint, glow, bubble, brow, pout
 function faceMarks(spec) {
   const [eyes, ...extra] = spec.split(",");
   const has = (k) => extra.includes(k);
   let s = "";
   if (has("tint")) s += ell(0, -12, 30, 12, "#8FA2F0", 'opacity="0.45"') + line("M-12,-22 L-12,-14 M0,-24 L0,-16 M12,-22 L12,-14", "#6275D0", 1.8, 'opacity="0.7"');
   if (has("glow")) s += ell(0, 14, 26, 14, "#BFEFFF", 'opacity="0.3"');
-  // 각 포즈에 맞춰 눈동자와 눈썹을 바꿔 밈처럼 읽히는 표정을 구분한다.
-  if (eyes === "side") {
-    s += line("M-16,1 Q-10,-3 -3,1 M3,1 Q10,-3 16,1", "#796A60", 3) +
-      circle(-5, 2, 2.6, C.ink) + circle(11, 2, 2.6, C.ink) +
-      line("M-17,-8 L-6,-5 M7,-7 L18,-10", C.ink, 2.5);
-  } else if (eyes === "roll") {
-    s += ell(-9, 1, 7, 4, "#FFFDF8") + ell(9, 1, 7, 4, "#FFFDF8") +
-      circle(-8, -1, 2.8, C.ink) + circle(10, -1, 2.8, C.ink) +
-      line("M-17,-6 L-5,-8 M5,-8 L17,-6", C.ink, 2.5);
-  } else if (eyes === "squint") {
-    s += line("M-17,2 Q-10,-4 -3,2 M3,2 Q10,-4 17,2", "#796A60", 4) +
-      line("M-18,-7 L-5,-3 M5,-3 L18,-7", C.ink, 3);
-  } else if (eyes === "down") {
-    s += ell(-9, 4, 7, 3.5, "#FFFDF8") + ell(9, 4, 7, 3.5, "#FFFDF8") +
-      circle(-9, 6, 2.7, C.ink) + circle(9, 6, 2.7, C.ink) +
-      line("M-18,-8 L-5,-4 M5,-4 L18,-8", C.ink, 3);
-  } else if (eyes === "sad") {
-    s += line("M-17,2 Q-10,-5 -3,2 M3,2 Q10,-5 17,2", "#796A60", 3.5) +
-      line("M-18,-9 L-6,-5 M6,-5 L18,-9", C.ink, 2.5);
-  } else if (eyes === "closed") {
-    s += line("M-17,1 Q-10,6 -3,1 M3,1 Q10,6 17,1", "#796A60", 3.5);
-  } else {
-    s += px(-15, 2, 4, 2, "#796A60") + px(-11, 0, 7, 2, "#796A60") + px(-4, 2, 3, 2, "#796A60") +
-      px(1, 2, 3, 2, "#796A60") + px(4, 0, 7, 2, "#796A60") + px(11, 2, 4, 2, "#796A60");
+  // 눈동자·흰자·점 없이 이모티콘처럼 짧은 곡선 두 개만 쓴다.
+  // 감정 차이는 곡선의 방향과 눈썹, 얼굴 기울기로 표현한다.
+  const eyesByMood = {
+    side: ["M-17,1 Q-10,-5 -3,1", "M5,0 Q11,-4 17,0"],
+    roll: ["M-17,2 Q-10,-4 -3,1", "M4,1 Q10,-5 17,2"],
+    squint: ["M-17,1 Q-10,-2 -3,1", "M3,1 Q10,-2 17,1"],
+    down: ["M-17,-1 Q-10,5 -3,0", "M3,0 Q10,5 17,-1"],
+    sad: ["M-17,2 Q-10,-5 -3,1", "M3,1 Q10,-5 17,2"],
+    closed: ["M-17,0 Q-10,6 -3,0", "M3,0 Q10,6 17,0"],
+    "^^": ["M-17,1 Q-10,-6 -3,1", "M3,1 Q10,-6 17,1"],
+    vv: ["M-17,-1 Q-10,6 -3,-1", "M3,-1 Q10,6 17,-1"],
+  };
+  const eyeCurves = eyesByMood[eyes] || eyesByMood["^^"];
+  const eyeWidth = eyes === "squint" ? 3.5 : 2.8;
+  s += line(eyeCurves[0], "#594A43", eyeWidth) + line(eyeCurves[1], "#594A43", eyeWidth);
+  if (has("brow") || eyes === "side" || eyes === "roll" || eyes === "down") {
+    const brows = eyes === "down" ? "M-18,-8 Q-12,-2 -5,-5 M5,-5 Q12,-2 18,-8" :
+      eyes === "side" || eyes === "roll" ? "M-18,-7 Q-12,-10 -6,-6 M5,-8 Q12,-4 18,-7" :
+      "M-18,-8 L-5,-4 M5,-4 L18,-8";
+    s += line(brows, C.ink, 2.6);
   }
-  if (has("brow")) s += line("M-18,-8 L-5,-4 M5,-4 L18,-8", C.ink, 3.4);
   if (has("blush")) s += ell(-19, 7, 6, 3.2, C.blush, 'opacity="0.6"') + ell(19, 7, 6, 3.2, C.blush, 'opacity="0.6"');
   // 무표정·삐죽 입은 평소의 작은 미소와 확실히 다르게 그린다.
   if (has("pout")) s += line("M-8,14 Q0,8 8,14", "#594A43", 3.5) + line("M-8,14 L-12,12 M8,14 L12,12", "#594A43", 2.5);
