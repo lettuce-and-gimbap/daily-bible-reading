@@ -32,6 +32,20 @@ export default {
 
     try {
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
+      const reminderArtMatch = pathname.match(/^\/reminder-art\/(morning|afternoon|evening|night|last|done)\/(\d+)\.jpg$/);
+      if (reminderArtMatch && request.method === "GET") {
+        const [, tier, index] = reminderArtMatch;
+        const image = await env.SUBS.get(`admin:reminder-art:${tier}:${index}`, "arrayBuffer");
+        if (!image) return json({ error: "그림을 찾을 수 없어요" }, 404);
+        return new Response(image, {
+          headers: {
+            ...cors,
+            "content-type": "image/jpeg",
+            "cache-control": "public, max-age=300",
+            "x-content-type-options": "nosniff",
+          },
+        });
+      }
       if (pathname === "/reminder-messages" && request.method === "GET") {
         const saved = await env.SUBS.get("admin:reminder-messages", "json");
         return new Response(JSON.stringify(saved || { messages: null, updated: 0 }), {

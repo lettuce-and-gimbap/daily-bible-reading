@@ -8,6 +8,8 @@ import { feedback } from './feedback.js';
 const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA_BYTES = 4_000_000; // UTF-8 JSON 4MB per account
 const MAX_REMINDER_DB_BYTES = 1_000_000;
+const MAX_REMINDER_ART_BYTES = 512_000;
+const MAX_REMINDER_ART_TOTAL_BYTES = 3_000_000;
 const ADMIN_IDS = new Set(["buucksoo"]);
 const REMINDER_MESSAGE_KEY = "admin:reminder-messages";
 const LINK_MS = 10 * 60 * 1000;
@@ -64,6 +66,13 @@ export async function account(pathname, request, env, json) {
     }
     if (request.method !== "PUT") return json({ error: "지원하지 않는 요청" }, 405);
     if (body.messages === null) {
+      const saved = await env.SUBS.get(REMINDER_MESSAGE_KEY, "json");
+      for (const rows of Object.values(saved?.messages || {})) {
+        for (const row of rows) {
+          const art = typeof row[5] === "string" && row[5].match(/\/reminder-art\/(morning|afternoon|evening|night|last|done)\/(\d+)\.jpg/);
+          if (art) await env.SUBS.delete(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${art[1]}:${art[2]}`);
+        }
+      }
       await env.SUBS.delete(REMINDER_MESSAGE_KEY);
       return json({ ok: true, messages: null, updated: Date.now() });
     }
@@ -71,6 +80,17 @@ export async function account(pathname, request, env, json) {
     if (new TextEncoder().encode(text).byteLength > MAX_REMINDER_DB_BYTES || !validReminderMessages(body.messages)) {
       return json({ error: "알림 문구 DB 형식이 맞지 않거나 1MB를 넘어요" }, 400);
     }
+    const art = body.art || {};
+    const artDeletes = body.artDeletes || [];
+    if (!validReminderArtwork(art, body.messages) || !Array.isArray(artDeletes)
+      || artDeletes.length > 200 || artDeletes.some((key) => !/^(morning|afternoon|evening|night|last|done):\d+$/.test(key))) {
+      return json({ error: "말풍선 이미지 데이터 형식이 맞지 않아요" }, 400);
+    }
+    for (const [key, base64] of Object.entries(art)) {
+      const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0));
+      await env.SUBS.put(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${key}`, bytes.buffer);
+    }
+    for (const key of artDeletes) await env.SUBS.delete(`${REMINDER_MESSAGE_KEY.replace("messages", "art")}:${key}`);
     const updated = Date.now();
     await env.SUBS.put(REMINDER_MESSAGE_KEY, JSON.stringify({ messages: body.messages, updated }));
     return json({ ok: true, updated });
@@ -116,8 +136,29 @@ export function validReminderMessages(messages) {
     if (row.some((cell) => cell !== undefined && typeof cell !== "string")) return false;
     if (row[0].length > 120 || row[1].length > 600 || row[2].length > 40
       || (row[3] || "").length > 120 || (row[4] || "").length > 40) return false;
-    return row[5] === undefined || /^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5]);
+    return row[5] === undefined || /^icons\/notify\/(morning|afternoon|evening|night|last|done)-\d+\.jpg$/.test(row[5])
+      || /^https:\/\/daily-bible-reminder\.gimbap-lettuce\.workers\.dev\/reminder-art\/(morning|afternoon|evening|night|last|done)\/\d+\.jpg\?v=\d+$/.test(row[5]);
   }));
+}
+
+function validReminderArtwork(art, messages) {
+  if (!art || typeof art !== "object" || Array.isArray(art)) return false;
+  const entries = Object.entries(art);
+  if (entries.length > 200) return false;
+  let totalBytes = 0;
+  return entries.every(([key, base64]) => {
+    const match = key.match(/^(morning|afternoon|evening|night|last|done):(\d+)$/);
+    if (!match || typeof base64 !== "string" || !/^[A-Za-z0-9+/]+={0,2}$/.test(base64) || base64.length % 4 !== 0) return false;
+    const [, tier, rawIndex] = match;
+    const row = messages[tier][Number(rawIndex)];
+    if (!row || !row[5]?.includes(`/reminder-art/${tier}/${rawIndex}.jpg`)) return false;
+    const size = Math.floor(base64.length * 3 / 4);
+    totalBytes += size;
+    if (size > MAX_REMINDER_ART_BYTES || totalBytes > MAX_REMINDER_ART_TOTAL_BYTES) return false;
+    const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0));
+    return bytes.length >= 4 && bytes[0] === 0xff && bytes[1] === 0xd8
+      && bytes[bytes.length - 2] === 0xff && bytes[bytes.length - 1] === 0xd9;
+  });
 }
 
 async function newSession(db, id, now) {

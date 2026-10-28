@@ -317,13 +317,25 @@ function backdrop(tier) {
 
 // 말풍선: 폭은 measure(글자)로 계산. tail = 꼬리 끝 좌표
 function bubble(text, x, y, tail, measure) {
-  const fs = 34;
-  const w = Math.max(116, measure(text, fs) + 60), h = 70;
+  const maxLineWidth = 400;
+  const lines = [];
+  for (const sourceLine of String(text).split("\n")) {
+    let line = "";
+    for (const character of sourceLine) {
+      const next = line + character;
+      if (line && measure(next, 30) > maxLineWidth) { lines.push(line); line = character; }
+      else line = next;
+    }
+    lines.push(line);
+  }
+  const fs = lines.length > 1 ? 30 : 34;
+  const textWidth = Math.max(...lines.map((line) => measure(line, fs)));
+  const w = Math.max(116, textWidth + 60), h = Math.max(70, lines.length * fs * 1.15 + 24);
   const bx = Math.min(x, 720 - w - 16);
   const cx = Math.max(bx + 30, Math.min(bx + w - 30, tail[0] + 28));
   return `<g filter="url(#bs)"><rect x="${bx}" y="${y}" width="${w}" height="${h}" rx="30" fill="url(#bub)"/>` +
     `<path d="M${cx - 22},${y + h - 6} Q${cx - 10},${y + h + 10} ${tail[0]},${tail[1]} Q${cx + 8},${y + h + 8} ${cx + 20},${y + h - 6}Z" fill="#F4F3F7"/></g>` +
-    `<text x="${bx + w / 2}" y="${y + h / 2 + fs * 0.36}" text-anchor="middle" font-size="${fs}" font-weight="700" fill="#3B3538" font-family="Noto Sans KR, Malgun Gothic, sans-serif">${esc(text)}</text>`;
+    `<text text-anchor="middle" font-size="${fs}" font-weight="700" fill="#3B3538" font-family="Noto Sans KR, Malgun Gothic, sans-serif">${lines.map((line, index) => `<tspan x="${bx + w / 2}" y="${y + h / 2 + (index - (lines.length - 1) / 2) * fs * 1.12 + fs * 0.36}">${esc(line)}</tspan>`).join("")}</text>`;
 }
 
 // 포즈마다 양 위치(가운데 x, 몸통 y, 크기)와 말풍선 꼬리 끝
@@ -346,3 +358,4 @@ function renderCard({ tier, pose, say }, measure) {
 }
 
 if (typeof module !== "undefined") module.exports = { renderCard, POSES };
+if (typeof window !== "undefined") window.ReminderArt = { renderCard, POSES };
