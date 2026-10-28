@@ -84,6 +84,14 @@ const CHAPTERS = {
   '2co.11': ['고린도 성도', '거짓 사도들', '사탄', '하와', '아레다 왕의 고관', '예수'],
   '2co.12': ['셋째 하늘에 간 사람', '사탄의 사자', '고린도 성도', '디도', '예수'],
   '2co.13': ['고린도 성도', '예수'],
+  // Galatians 1–2 recounts real meetings: keep Peter/James in chapter 1 and
+  // the Jerusalem and Antioch participants in chapter 2. The later chapters
+  // cite biblical history or address the distant congregations abstractly.
+  'gal.1': ['갈라디아 교회들', '다른 복음을 전하는 자들', '유대의 교회들', '예수'],
+  'gal.3': ['갈라디아 사람들', '아브라함', '예수'],
+  'gal.4': ['갈라디아 사람들', '아브라함', '하갈', '사라', '이스마엘', '이삭', '예수'],
+  'gal.5': ['갈라디아 사람들', '교란하는 자', '예수'],
+  'gal.6': ['갈라디아 사람들', '범죄한 사람', '할례를 강요하는 자들', '예수'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],
@@ -280,7 +288,6 @@ const CHAPTERS = {
   'psa.136': ['바로', '시혼과 옥'],
   'psa.137': ['에돔 자손', '바벨론'],
   'ezk.20': ['조상들'],
-  'gal.3': ['아브라함'],
   'heb.1': ['선지자들', '조상들'],
   'heb.3': ['모세', '광야의 조상들'],
   'heb.4': ['광야의 조상들', '여호수아', '다윗'],

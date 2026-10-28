@@ -1948,3 +1948,19 @@ test('고린도후서 1–13장은 서신 수신자·인용 인물·비유를 �
  assert.ok(buildWorldModel([{code:'2co',name:'고린도후서',chap:8,data:summary.chapters['8']}]).cast.some(p=>p.name==='디도'));
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),55);
 });
+
+test('갈라디아서의 예루살렘·안디옥 사건은 실제 동석 인물을 유지하고 비유·회고 인물을 가린다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/gal.json',import.meta.url),'utf8'));
+ const visit=buildWorldModel([{code:'gal',name:'갈라디아서',chap:1,data:summary.chapters['1']}]).cast.map(p=>p.name);
+ for(const name of ['바울','베드로','야고보'])assert.ok(visit.includes(name),`갈라디아서 1장 실제 방문 인물 ${name}`);
+ const conflict=buildWorldModel([{code:'gal',name:'갈라디아서',chap:2,data:summary.chapters['2']}]).cast.map(p=>p.name);
+ for(const name of ['바울','바나바','디도','베드로','야고보','요한','거짓 형제들'])assert.ok(conflict.includes(name),`갈라디아서 2장 사건 인물 ${name}`);
+ assert.ok(summary.chapters['2'].rels.some(r=>r.from==='야고보'&&r.to==='바나바'&&r.verses==='9'));
+ assert.equal(summary.chapters['2'].rels.find(r=>r.to==='게바'&&r.from==='바울').label,'공개적으로 책망한 사도');
+ for(const [chap,names] of [[3,['아브라함','예수']],[4,['하갈','사라','이스마엘','이삭','예수']],[5,['교란하는 자','예수']],[6,['범죄한 사람','예수']]]){
+  const model=buildWorldModel([{code:'gal',name:'갈라디아서',chap,data:summary.chapters[String(chap)]}]);
+  for(const name of names)assert.ok(!model.cast.some(p=>p.name===name),`갈라디아서 ${chap}장 ${name}은 인용·비유 인물`);
+  for(const scene of model.scenes)for(const actor of scene.actors)assert.ok(!names.includes(actor),`갈라디아서 ${chap}장 장면에서 ${actor} 제외`);
+ }
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),31);
+});
