@@ -20,14 +20,32 @@ export function relationshipFocus(relations,npcs,selected){
  for(const r of relations){const pair=endpoints(r,index);if(pair?.includes(selected))for(const person of pair)focus.add(person);}
  return focus;
 }
+function relationBetween(relations,npcs,a,b){
+ if(!a||!b||a===b)return false;
+ const index=personIndex(npcs);
+ return relations.some(r=>{const pair=endpoints(r,index);return pair?.includes(a)&&pair.includes(b);});
+}
+export function relationshipPairFocus(relations,npcs,a,b){
+ return relationBetween(relations,npcs,a,b)?new Set([a,b]):null;
+}
+export function advanceRelationshipSelection(relations,npcs,primary,pair,person){
+ if(!person)return {primary:null,pair:null};
+ // pointerdown and pointerup can report the same selection twice.
+ if(pair?.includes(person))return {primary,pair};
+ if(!primary)return {primary:person,pair:null};
+ if(relationshipPairFocus(relations,npcs,primary,person))return {primary,pair:[primary,person]};
+ return {primary:person,pair:null};
+}
 export function relationshipOpacity(focus,person){return focus&&!focus.has(person)?0.16:1;}
 // 매 프레임 현재 위치로 머리 위 연결점을 계산한다. 드래그 좌표도 동일하게 반영한다.
-export function relationshipLinks(relations,npcs,drag=null,focusPerson=null) {
+export function relationshipLinks(relations,npcs,drag=null,focusPerson=null,focusPair=null) {
  const links=[],seen=new Set(),index=personIndex(npcs),ids=new Map(npcs.map((n,i)=>[n,i])),heads=new Map();
  const head=n=>{if(heads.has(n))return heads.get(n);const height=n.creature?1:physiqueFor(n.name,n.role,n.refs).height;const point=drag?.active&&drag.n===n?{x:grabbedOrigin(drag).x*24,y:grabbedOrigin(drag).y*24-80*height}:{x:interactionAnchor(n).x,y:interactionAnchor(n).y-80*height};heads.set(n,point);return point;};
  for(const r of relations){
   const pair=endpoints(r,index);if(!pair)continue;
-  const [a,b]=pair;if(focusPerson&&a!==focusPerson&&b!==focusPerson)continue;
+  const [a,b]=pair;
+  if(focusPair?.length===2&&(!focusPair.includes(a)||!focusPair.includes(b)))continue;
+  if(!focusPair&&focusPerson&&a!==focusPerson&&b!==focusPerson)continue;
   const key=[ids.get(a),ids.get(b)].sort((x,y)=>x-y).join(':')+':'+r.label;
   if(seen.has(key))continue;seen.add(key);
   links.push({a:head(a),b:head(b),label:r.label||'관계',ref:r.ref});

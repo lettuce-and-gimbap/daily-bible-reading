@@ -1391,7 +1391,7 @@ test('관계도에만 있는 상대도 인물과 상호작용에 포함한다',a
 });
 
 test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다른 본문의 동명이인을 연결하지 않는다',async()=>{
- const {relationshipLinks,relationshipFocus,relationshipOpacity}=await import('../js/features/pixel-bible/relationship-overlay.js');
+ const {relationshipLinks,relationshipFocus,relationshipPairFocus,advanceRelationshipSelection,relationshipOpacity}=await import('../js/features/pixel-bible/relationship-overlay.js');
  const a={name:'갑',x:10,y:8,refs:['창세기 1장']},b={name:'을',x:20,y:9,refs:['창세기 1장']};
  const relations=[{from:'갑',to:'을',label:'가족',sourceRef:'창세기 1장'},{from:'갑',to:'을',label:'다른 사람',sourceRef:'창세기 2장'}];
  let links=relationshipLinks(relations,[a,b]);assert.equal(links.length,1);assert.deepEqual(links[0].a,{x:240,y:112});
@@ -1400,9 +1400,30 @@ test('관계선은 현재 머리 위치와 드래그 위치를 따라가고 다�
  assert.equal(relationshipLinks(relations,[a]).length,0);
  const c={name:'병',x:25,y:9,refs:['창세기 1장']},focus=relationshipFocus([...relations,{from:'을',to:'병',label:'친구'}],[a,b,c],a);
  assert.deepEqual([...focus],[a,b]);assert.equal(relationshipLinks([...relations,{from:'을',to:'병',label:'친구'}],[a,b,c],null,a).length,1);
+ const allRelations=[...relations,{from:'을',to:'병',label:'친구'}],pairFocus=relationshipPairFocus(allRelations,[a,b,c],a,b);
+ assert.deepEqual([...pairFocus],[a,b]);assert.equal(relationshipLinks(allRelations,[a,b,c],null,a,[a,b]).length,1,'두 사람만 선택하면 제3자와의 선은 감춘다');
+ assert.equal(relationshipOpacity(pairFocus,c),.16);
+ let selection=advanceRelationshipSelection(allRelations,[a,b,c],null,null,a);
+ selection=advanceRelationshipSelection(allRelations,[a,b,c],selection.primary,selection.pair,b);
+ selection=advanceRelationshipSelection(allRelations,[a,b,c],selection.primary,selection.pair,b);
+ assert.deepEqual(selection,{primary:a,pair:[a,b]},'두 번째 인물의 pointerdown/up 중복 선택도 두 사람 초점을 유지한다');
+ assert.deepEqual(advanceRelationshipSelection(allRelations,[a,b,c],selection.primary,selection.pair,null),{primary:null,pair:null},'배경 선택은 강조 초점을 해제한다');
  assert.equal(relationshipOpacity(focus,a),1);assert.equal(relationshipOpacity(focus,b),1);assert.equal(relationshipOpacity(focus,c),.16);
  const objectRelation={from:{name:'갑',ref:'창세기 1장'},to:{name:'을',ref:'창세기 1장'},label:'가족'};
  assert.deepEqual([...relationshipFocus([objectRelation],[a,b,c],a)],[a,b],'사람 객체 형태로 저장된 관계도 연결 인물을 찾는다');
+});
+
+test('TV 부스는 준비된 관계 대화는 재생하고 미작성 대화는 인사로 안전하게 이어간다',async()=>{
+ const {loveBoothExchange}=await import('../js/features/pixel-bible/relationship-lines.js');
+ const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
+ const entry=PAIR_DIALOGUE[0],[code,chapter]=entry.chapter.split('.');
+ const a={name:entry.speaker,identity:{id:`${code}:${entry.speaker}`},refs:[]};
+ const b={name:entry.target,identity:{id:`${code}:${entry.target}`},refs:[]};
+ const relation={from:{name:a.name,code,chap:Number(chapter)},to:{name:b.name,code,chap:Number(chapter)},ref:entry.ref};
+ const special=loveBoothExchange(a,b,[relation]);assert.equal(special.mode,'special');assert.equal(special.lines.length,2);
+ const c={name:'확인되지 않은 상대',refs:[]};
+ const fallback=loveBoothExchange(a,c,[{from:{name:a.name},to:{name:c.name}}]);
+ assert.equal(fallback.mode,'awkward');assert.equal(fallback.lines.length,2);assert.ok(fallback.lines.every(line=>line.text));
 });
 
 test('TV 부스에 들어온 한두 인물은 기존 방향과 무관하게 정면을 본다',async()=>{

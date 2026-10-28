@@ -218,11 +218,26 @@ export function relationshipLines(a,b,relation,_chapterLines,{random=Math.random
 }
 
 export function loveBoothExchange(a,b,relations){
- const relation=relations.find(r=>[r.from.name,r.to.name].includes(a.name)&&[r.from.name,r.to.name].includes(b.name));
- const lines=relation?relationshipLines(a,b,relation,null):[];
+ const endpointName=endpoint=>typeof endpoint==='string'?endpoint:endpoint?.name;
+ const endpointMatches=(endpoint,person)=>{
+  if(!sameName(endpointName(endpoint),person.name))return false;
+  const identity=typeof endpoint==='object'?endpoint.identity?.id:null;
+  if(identity&&person.identity?.id&&identity!==person.identity.id)return false;
+  const ref=typeof endpoint==='object'?endpoint.ref:null;
+  return !ref||(person.refs||[]).some(personRef=>ref===personRef||ref.startsWith(`${personRef}:`));
+ };
+ const relation=(Array.isArray(relations)?relations:[]).find(r=>(endpointMatches(r.from,a)&&endpointMatches(r.to,b))||(endpointMatches(r.from,b)&&endpointMatches(r.to,a)));
+ let lines=[];
+ if(relation){
+  const normalized={...relation,
+   from:typeof relation.from==='string'?{name:relation.from}:relation.from,
+   to:typeof relation.to==='string'?{name:relation.to}:relation.to,
+  };
+  try{lines=relationshipLines(a,b,normalized,null);}catch(_){lines=[];}
+ }
  if(lines.length===2&&lines.every(line=>line.special))return {relation,lines,mode:'special'};
- if(relation)return {relation,lines:[],mode:'pending'};
- return {relation:null,mode:'awkward',lines:[
+ // 관계는 확인됐지만 해당 장의 대사가 미작성된 경우에도 부스가 멈추지 않게 인사를 보여 준다.
+ return {relation:relation||null,mode:'awkward',lines:[
   {speaker:a,target:b,text:'어… 안녕하세요.',kind:'pair'},
   {speaker:b,target:a,text:'응… 안녕하세요.',kind:'pair'},
  ]};
