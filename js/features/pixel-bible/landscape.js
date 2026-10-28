@@ -2,16 +2,25 @@ import {drawBiomeGround,drawBiomePaths,drawBiomeLandmarks} from './biome-art.js'
 import {drawWorldObject} from './art.js';
 import {backgroundFor} from './backgrounds.js';
 // 지형은 전체 지도 좌표로 한 번만 구성한다. 중심은 보행 공간, 큰 경관은 가장자리다.
-export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=true}={}){
+export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=true,hour=12}={}){
  const p=backgroundFor(key),m=p.motif;
  const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h));};
  const hash=(x,y)=>(Math.imul(x+17,374761393)^Math.imul(y+31,668265263))>>>0;
- r(0,0,width,height,p.ground);
- for(let y=0;y<height;y+=24)for(let x=0;x<width;x+=24){
+ const horizon=156;
+ r(0,0,width,horizon,p.sky||p.hill);r(0,horizon,width,height-horizon,p.ground);
+ for(let y=horizon;y<height;y+=24)for(let x=0;x<width;x+=24){
   const h=hash(x/24,y/24);if((h>>>7)%7<2){c.globalAlpha=.35;r(x,y,24,24,p.tile[(h>>>9)%2]);c.globalAlpha=1;}
   if(h%5===0){r(x+4,y+14,2,4,p.speck);r(x+8,y+11,2,5,p.speck);}
   if(h%23===0){r(x+16,y+9,2,2,p.pathLight);r(x+15,y+10,4,1,p.pathLight);}
  }
+ // A compact pixel sun/moon follows the local KST hour across the sky band.
+ const h=((Math.floor(hour)%24)+24)%24,night=h<6||h>=18;
+ const progress=night?(h>=18?1-(h-18)/12:(6-h)/12):(h-6)/12;
+ const cx=width*(.04+.92*progress),cy=112-Math.sin(progress*Math.PI)*76;
+ c.save();c.globalAlpha=.18;c.fillStyle=night?'#d8e4f2':'#ffe2a1';c.fillRect(cx-20,cy-20,40,40);c.globalAlpha=.35;c.fillRect(cx-14,cy-25,28,50);c.globalAlpha=1;
+ if(night){c.fillStyle='#dbe5ef';c.beginPath();c.arc(cx,cy,11,0,Math.PI*2);c.fill();c.fillStyle=p.sky||p.hill;c.beginPath();c.arc(cx+6,cy-4,9,0,Math.PI*2);c.fill();}
+ else {c.fillStyle=h<8||h>=16?'#efb16c':'#ffe18a';c.fillRect(cx-8,cy-11,16,22);c.fillRect(cx-11,cy-8,22,16);c.fillStyle='#fff0ba';c.fillRect(cx-4,cy-6,8,12);}
+ c.restore();
  // 中央広場から分岐する道。縮小時にも一つの지형として読める輪郭。
  const roadY=height*.55,roadX=width*.5;
  drawBiomeGround(c,p,width,height);drawBiomePaths(c,p,width,height);

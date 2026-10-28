@@ -74,7 +74,7 @@ export function appearanceFor(name, index=0, role='', refs=[]) {
   const colors=['#a87373','#7396ae','#a78db9','#bc995e','#709a83','#747caa','#9c846c','#869c9e','#bd8f9b','#8d9970','#a99d80','#8c7c99'];
   const cut=seed%8;
   return withPhysicalTraits(wardrobeFor({...visualVariation(name),key:'generic',name,physique:physiqueFor(name,role,refs),coat:colors[seed%colors.length],hair:['#604b39','#433d37','#95816b'][seed%3],
-    ...(role.includes('왕')?{royal:true,crown:true}:role.includes('선지자')?{mantle:true,scroll:true}:role.includes('제사장')?{headband:true,sash:'#8b9ebc'}:[
+    ...(role.includes('왕')?{royal:true,mantle:true,trim:['#c4a768','#a9b8c2','#b78079','#d0bb8b'][seed%4]}:role.includes('선지자')?{mantle:true,scroll:true}:role.includes('제사장')?{headband:true,sash:'#8b9ebc'}:[
       {vest:true},{mantle:true},{hood:true,shawl:true},{shortSleeve:true,belt:true},{apron:true},{headband:true},{longHair:true},{updo:true,trim:'#c8ad72'},
     ][cut]),
     evidence:'외모를 확정할 본문·주석 근거를 아직 등록하지 않았어요.',design:'의복과 소품은 역할을 구별하기 위한 창작 디자인이에요.'},role),name,refs);

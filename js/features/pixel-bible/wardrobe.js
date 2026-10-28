@@ -28,6 +28,14 @@ export const WARDROBES={
  panelled:{label:'색 띠를 나눈 겹 튜닉',verticalPanels:true,crossSash:true},
  padded:{label:'어깨 덧댐과 넓은 허리띠',shoulderPads:true,belt:true},
  hemmed:{label:'가장자리에 짧은 기하 무늬를 두른 옷',hemPattern:true,trim:'#c8ad72'},
+ pleatedApron:{label:'주름 튜닉과 앞치마',pleated:true,apron:true,belt:true},
+ splitMantle:{label:'양옆이 갈라진 겉옷',mantle:true,splitHem:true},
+ woven:{label:'가로 짜임 띠를 넣은 옷',wovenBands:true},
+ cuffed:{label:'소매 끝을 접어 마감한 옷',cuffed:true},
+ panelRobe:{label:'세로 천을 덧댄 긴 겉옷',verticalPanels:true,mantle:true},
+ crossWrap:{label:'가슴을 사선으로 여민 겉옷',crossSash:true,mantle:true},
+ pocketed:{label:'허리 주머니를 단 겉옷',scribePouch:true,layered:true},
+ twoTone:{label:'몸판과 소매 색을 나눈 튜닉',twoToneSleeves:true},
 };
 const specifics={
  아론:'highPriest',엘르아살:'highPriest',사무엘:'linen',아담:'leather',하와:'leather',
@@ -62,14 +70,20 @@ export function wardrobeDetails(style,name,refs=[]){
 export function wardrobeFor(style,role=''){
  const inferred=style.royal?'royal':/제사장/.test(role)?'priest':style.fur?'fur':style.shawl||style.hood?'shawl':style.mantle?'traveler':style.vest?'worker':null;
  const seed=[...(style.name||'')].reduce((h,c)=>(Math.imul(h,31)+c.codePointAt(0))>>>0,0);
- const creative=['wrapped','pleated','fringed','dyed','apron','vest','hooded','embroidered','short','layered','scarf','mourning','guard','scribe','gathered','patched','panelled','padded','hemmed'];
+ const creative=['wrapped','pleated','fringed','dyed','apron','vest','hooded','embroidered','short','layered','scarf','mourning','guard','scribe','gathered','patched','panelled','padded','hemmed','pleatedApron','splitMantle','woven','cuffed','panelRobe','crossWrap','pocketed','twoTone'];
  const kind=specifics[style.name]||inferred||creative[seed%creative.length];
  const wardrobe=WARDROBES[kind];
  const detail=/골리앗/.test(style.name)?{plate:true,helmet:true}:style.name==='모르드개'?{mantleColor:'#87628e',underColor:'#e8e4d2'}:style.name==='다니엘'?{goldChain:true}:{};
  const colorSeed=[...(style.name||'')].reduce((h,c)=>(Math.imul(h,33)^c.codePointAt(0))>>>0,5381);
  const creativeColors=['#a96668','#547f91','#8b6f9e','#b27e4f','#648a70','#666e9d','#a07786','#758f91','#ad9861','#826a5b','#637eaa','#956b50','#6f8b5c','#8b7288','#4f789d','#aa745f','#72805f','#98784a','#5d8290','#8a6071','#74806e','#9c6955','#5f6f8e','#927b62','#607f79','#a2769a','#76769f','#9a8058'];
  const creativeColor=style.name&&!wardrobeDetails(style,style.name).length?{coat:creativeColors[colorSeed%creativeColors.length]}:{};
- return {...wardrobe,...style,...creativeColor,...detail,wardrobe:kind,wardrobeLabel:wardrobe.label,
+ const explicitCrown=String(garmentEvidence[style.name]?.text||'').match(/왕관|금관|관을 쓰|관을 씀/);
+ const regalia=['crown','headband','turban','plain'][seed%4];
+ const variedRegalia=style.royal&&style.crown&&!explicitCrown?{
+  crown:regalia==='crown',headband:regalia==='headband',turban:regalia==='turban',
+  royal:true,mantle:true,
+ }:{};
+ return {...wardrobe,...style,...creativeColor,...detail,...variedRegalia,wardrobe:kind,wardrobeLabel:wardrobe.label,
   design:style.design+' 의복의 재단·주름·테두리는 시대 복식에서 착안한 창작 도안이에요.'};
 }
 // Shared front/profile/back cloth marks stay inside the torso. Facial pixels and
@@ -104,6 +118,10 @@ export function drawWardrobe(r,s,direction='down'){
  if(s.patchwork){r(lo+1,25,3,2,accent);r(hi-4,28,3,2,accent);r(lo+5,23,2,2,'#e8d8b2');}
  if(s.shoulderPads){r(side?8:7,21,3,3,accent);r(side?14:14,21,3,3,accent);r(lo,24,hi-lo,1,'#403a35');}
  if(s.hemPattern)for(let x=lo;x<hi;x+=3){r(x,30,1,1,accent);if(x%2===0)r(x+1,29,1,1,accent);}
+ if(s.splitHem){r(lo,29,2,3,accent);r(hi-2,29,2,3,accent);}
+ if(s.wovenBands){r(lo,24,hi-lo,1,accent);r(lo,27,hi-lo,1,accent);if(!side)for(let x=lo+1;x<hi;x+=3)r(x,25,1,2,'#f2e4c566');}
+ if(s.cuffed){r(side?8:lo,30,side?3:hi-lo,2,accent);r(side?15:hi-3,21,2,2,accent);}
+ if(s.twoToneSleeves){r(side?8:6,21,side?3:4,5,accent);r(side?15:14,21,side?3:4,5,accent);}
  if(s.royal){r(lo,28,1,2,accent);r(hi-1,28,1,2,accent);}
  if(s.broadCollar){r(side?14:8,21,side?3:8,2,'#d2b06b');r(side?15:10,23,side?2:4,1,'#73999d');}
  if(s.goldChain&&!back){r(side?15:9,22,1,2,'#d5b05a');r(side?16:14,22,1,2,'#d5b05a');r(side?16:10,24,side?1:4,1,'#d5b05a');}

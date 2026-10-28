@@ -71,7 +71,17 @@ const extra={
 };
 INTERACTION_MOTIONS.rope=OBJECT_USAGE.rope;
 for(const [category,values] of Object.entries(extra))INTERACTION_MOTIONS[category].push(...values);
-export function interactionOptions(kind){return expandedActions(kind,baseInteractionOptions(kind));}
+export function interactionOptions(kind){
+ const rows=expandedActions(kind,baseInteractionOptions(kind)),seen=new Set(),curated=[];
+ // Expanded data can contain duplicates and generic gestures that do not fit
+ // a particular prop. Keep a small, usable set for each object visit.
+ for(const row of rows){
+  if(!Array.isArray(row)||!row[0]||seen.has(row[0]))continue;
+  seen.add(row[0]);curated.push(row);
+  if(curated.length===5)break;
+ }
+ return curated;
+}
 export function baseInteractionOptions(kind){
  if(OBJECT_USAGE[kind])return OBJECT_USAGE[kind];
  if(kind==='ark-covenant')return [['observe','곁에서 바라보기'],['bow','고개 숙이기'],['hands','손 모으기'],['look','멀리서 살펴보기'],['step-back','물러서기'],['kneel','곁에 무릎 굽히기']];
