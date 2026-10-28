@@ -106,13 +106,22 @@ export function drawCreature(c,d,x,y,{frame=0,direction='down',pose=null,time=0,
    if(d.id==='deer'){
     for(const xx of [-6,5]){r(xx,-42+yy,2,13,'#9a754e');r(xx-4,-39+yy,4,2,'#9a754e');r(xx+1,-36+yy,4,2,'#9a754e');}
    }
-   if(front){
+  if(front){
+    if(d.id==='sheep'){
+     // 눈동자·눈썹 없이 부드러운 졸린 눈과 한쪽이 살짝 올라간 작은 미소를 그린다.
+     const nod=frame%4===2?1:0, fy=yy+nod;
+     r(-7,-32+fy,14,12,'#d8c2a3');r(-6,-31+fy,12,9,'#e8d7bd');
+     r(-6,-28+fy,2,2,'#766960');r(-4,-29+fy,3,2,'#766960');r(-1,-28+fy,2,2,'#766960');
+     r(1,-28+fy,2,2,'#766960');r(3,-29+fy,3,2,'#766960');r(6,-28+fy,2,2,'#766960');
+     r(-4,-23+fy,2,1,'#594a43');r(-2,-21+fy,2,1,'#594a43');r(0,-20+fy,3,1,'#594a43');r(3,-21+fy,2,1,'#594a43');r(5,-23+fy,2,1,'#594a43');
+    }else{
     r(-5,-30+yy,2,2,O);r(3,-30+yy,2,2,O);
     if(d.id==='lion'||d.id==='bear'){r(-3,-24+yy,6,4,'#f0dfc0');r(-1,-25+yy,2,2,O);}
     else if(d.id==='pig'){}else if(d.id==='horse'||d.id==='donkey'){r(-2,-24+yy,4,3,'#d9c19f');r(-1,-23+yy,2,1,O);}
     else if(d.id==='wolf'||d.id==='fox'){r(-3,-25+yy,6,5,'#f0e5c8');r(-1,-26+yy,2,2,O);}
     else {r(-3,-24+yy,6,3,'#f0e5c8');r(-1,-23+yy,2,1,O);}
     if(d.id==='deer'){r(-4,-21+yy,2,2,'#b97e75');r(3,-21+yy,2,2,'#b97e75');}
+    }
    }else{
     r(-6,-33+yy,12,9,dark);r(-3,-31+yy,6,5,color);
     if(d.id==='sheep')for(const xx of [-8,-3,2,7])r(xx,-19+yy,3,3,'#fff6dd');

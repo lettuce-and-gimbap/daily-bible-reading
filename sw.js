@@ -216,7 +216,7 @@ async function buildMessage() {
   const portion = fresh && snap.portion ? snap.portion : "오늘 분량";
   const fill = (s) => s.replace(/\{portion\}/g, portion).replace(/\{streak\}/g, String(streak));
   // 메시지마다 양(🐑) 포즈 그림: icons/notify/<시간대>-<원래 순서>.jpg (안드로이드·PC 크롬/엣지에서 크게 보임, 아이폰은 표시 안 함)
-  const image = `icons/notify/${tier}-${MESSAGES[tier].indexOf(pool[idx])}.jpg`;
+  const image = `icons/notify/${tier}-${MESSAGES[tier].indexOf(pool[idx])}.jpg?v=sheep-soft-face2-20261028`;
   return { title: fill(pool[idx][0]), body: fill(pool[idx][1]), image };
 }
 

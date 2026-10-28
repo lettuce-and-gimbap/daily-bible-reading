@@ -1,10 +1,10 @@
 // 그날 분량을 다 읽으면 하찮은 양이 3초 동안 축하해 주고 사라짐
-// 그림은 알림 그림과 같은 클레이 양(tools/notify-art/art.js). 이름이 겹치지 않게 함수 안에서 따로 실행해 renderCard만 꺼내 씀
+// 그림은 알림과 같은 픽셀 양(tools/notify-art/art.js). 이름이 겹치지 않게 함수 안에서 renderCard만 꺼내 씀
 
 let sheepArt = null;
 function loadSheepArt() {
   if (!sheepArt) {
-    sheepArt = fetch("tools/notify-art/art.js").then((r) => r.text())
+    sheepArt = fetch("tools/notify-art/art.js?v=sheep-soft-face2-20261028").then((r) => r.text())
       .then((src) => new Function(`${src}\nreturn { renderCard };`)())
       .catch((e) => { sheepArt = null; throw e; });
   }

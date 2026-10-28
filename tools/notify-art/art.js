@@ -1,5 +1,5 @@
-// 리마인드 알림 그림(720×360) — 말랑한 클레이 3D 느낌의 하찮은 양이 포즈를 취하는 SVG를 만든다.
-// 양: 몽글몽글한 털 뭉치 한 덩이 + 앞에 붙은 베이지 얼굴 + 가느다란 막대 팔다리. 눈은 늘 ^^ 아니면 vv.
+// 리마인드 알림 그림(720×360) — 힘이 빠졌지만 작게 웃는 픽셀 양의 SVG를 만든다.
+// 무거운 눈꺼풀, 아래로 향한 시선, 비대칭의 작은 미소와 축 처진 몸짓으로 체념 섞인 다정함을 표현한다.
 // build.mjs가 이 파일을 헤드리스 크롬 페이지에 넣어 JPG로 굽는다. (브라우저에서 돌아가는 코드)
 
 const C = {
@@ -14,12 +14,10 @@ const circle = (x, y, r, fill, extra = "") => `<circle cx="${f(x)}" cy="${f(y)}"
 const ell = (x, y, rx, ry, fill, extra = "") => `<ellipse cx="${f(x)}" cy="${f(y)}" rx="${f(rx)}" ry="${f(ry)}" fill="${fill}" ${extra}/>`;
 const line = (d, color, w, extra = "") => `<path d="${d}" fill="none" stroke="${color}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
 const g = (tf, inner) => `<g transform="${tf}">${inner}</g>`;
+const px = (x, y, w, h, fill, extra = "") => `<rect x="${f(x)}" y="${f(y)}" width="${f(w)}" height="${f(h)}" fill="${fill}" shape-rendering="crispEdges" ${extra}/>`;
 
-// 클레이 느낌 그라데이션 (renderCard가 <defs>에 넣음)
+// 그림자 필터 (renderCard가 <defs>에 넣음)
 const SHEEP_DEFS =
-  `<radialGradient id="wool" cx="0.36" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F1EEF6"/><stop offset="1" stop-color="#CFC9DC"/></radialGradient>` +
-  `<radialGradient id="face" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#FBE3C6"/><stop offset="0.6" stop-color="#EEC79C"/><stop offset="1" stop-color="#D9A878"/></radialGradient>` +
-  `<radialGradient id="shine" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>` +
   `<filter id="soft" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#3A2A40" flood-opacity="0.18"/></filter>`;
 
 // 몽글몽글 구름 모양 외곽선 (타원 둘레에 n개 볼록)
@@ -42,49 +40,63 @@ function puff(rx, ry, n = 11, bump = 0.16, phase = 0.3) {
 function faceMarks(spec) {
   const [eyes, ...extra] = spec.split(",");
   const has = (k) => extra.includes(k);
-  const eye = (x) => eyes === "vv"
-    ? line(`M${x - 4.6},-1.5 Q${x},3.5 ${x + 4.6},-1.5`, C.ink, 2.3)
-    : line(`M${x - 4.6},1.8 Q${x},-4 ${x + 4.6},1.8`, C.ink, 2.3);
   let s = "";
   if (has("tint")) s += ell(0, -12, 30, 12, "#8FA2F0", 'opacity="0.45"') + line("M-12,-22 L-12,-14 M0,-24 L0,-16 M12,-22 L12,-14", "#6275D0", 1.8, 'opacity="0.7"');
   if (has("glow")) s += ell(0, 14, 26, 14, "#BFEFFF", 'opacity="0.3"');
-  s += eye(-10) + eye(10);
+  // 눈동자와 눈썹 없이 낮게 내려앉은 눈꺼풀만 짧고 부드러운 선으로 그린다.
+  s += px(-15, 2, 4, 2, "#796A60") + px(-11, 0, 7, 2, "#796A60") + px(-4, 2, 3, 2, "#796A60") +
+    px(1, 2, 3, 2, "#796A60") + px(4, 0, 7, 2, "#796A60") + px(11, 2, 4, 2, "#796A60");
   if (has("blush")) s += ell(-19, 7, 6, 3.2, C.blush, 'opacity="0.6"') + ell(19, 7, 6, 3.2, C.blush, 'opacity="0.6"');
-  if (has("o")) s += ell(0, 11, 3, 3.8, C.ink);
-  else if (has("open")) s += `<path d="M-5,8 Q0,16 5,8Z" fill="${C.ink}"/>`;
-  else if (!has("none")) s += line("M-3,9 Q0,11.5 3,9", C.ink, 1.8);
+  // 가운데는 낮고 양쪽 끝은 올라가며, 오른쪽 입꼬리가 조금 더 높은 작은 미소.
+  s += px(-5, 11, 2, 2, "#594A43") + px(-3, 13, 2, 2, "#594A43") +
+    px(-1, 14, 4, 2, "#594A43") + px(3, 12, 2, 2, "#594A43") + px(5, 10, 2, 2, "#594A43");
   if (has("tears")) s += line("M-10,4 Q-12,16 -10,26", C.tear, 4, 'opacity="0.85"') + line("M10,4 Q12,16 10,26", C.tear, 4, 'opacity="0.85"');
   if (has("sweat")) s += sweatDrop(28, -22, 0.7);
-  if (has("anger")) s += anger(26, -30, 0.45);
+  // 표정 효과 중 'anger' 표시는 불필요하게 화난 인상을 주므로 양 그림에는 적용하지 않는다.
   if (has("bubble")) s += circle(8, 14, 6, "#DDF2FF", 'stroke="#9CCDEE" stroke-width="1.2" opacity="0.9"');
   return s;
 }
 
 // 얼굴 한 덩어리: 귀 + 베이지 얼굴 + 이마 털 + 표정 (얼굴 가운데 = 0,0)
 function face(x, y, { rot = 0, s = 1, expr = "^^" } = {}) {
-  const ear = (side) => g(`translate(${side * 31},-4) rotate(${side * 28})`, ell(side * 9, 0, 14, 7, "url(#face)"));
-  return g(`translate(${x},${y}) rotate(${rot}) scale(${s})`,
-    ear(-1) + ear(1) + `<ellipse cx="0" cy="2" rx="31" ry="25" fill="url(#face)"/>` +
-    `<path d="${puff(28, 11, 7, 0.28, 0.2)}" transform="translate(0,-20)" fill="url(#wool)"/>` +
-    ell(-10, -6, 9, 4, "url(#shine)", 'opacity="0.6"') + faceMarks(expr));
+  const widths = [24, 38, 48, 52, 48, 38, 24], shades = ["#D8AE8B", "#E8C7A7", "#E8C7A7", "#E8C7A7", "#E8C7A7", "#DDB997", "#D8AE8B"];
+  const head = widths.map((w, i) => px(-w / 2, -18 + i * 6, w, 6, shades[i])).join("");
+  const woolFringe = px(-18, -23, 12, 6, "#F1EEF4") + px(-6, -26, 12, 9, "#F1EEF4") + px(6, -23, 12, 6, "#F1EEF4");
+  const ears = px(-34, -3, 8, 8, "#D8AE8B") + px(-31, 0, 8, 5, "#E8C7A7") +
+    px(26, -3, 8, 8, "#D8AE8B") + px(23, 0, 8, 5, "#E8C7A7");
+  return g(`translate(${x},${y}) rotate(${rot}) scale(${s})`, ears + head + woolFringe + faceMarks(expr));
 }
 
 // 양 한 마리(팔다리 뺀 몸): 털 뭉치 + 얼굴. rx/ry로 서 있는 공 모양 ↔ 엎드린 납작 모양
 function sheep({ rx = 60, ry = 56, fx = 0, fy = -14, frot = 0, expr = "^^", flip = false } = {}) {
-  const wool = `<path d="${puff(rx, ry, Math.round((rx + ry) / 10), 0.14)}" fill="url(#wool)"${flip ? ' transform="rotate(180)"' : ""}/>` +
-    ell(-rx * 0.32, -ry * 0.42, rx * 0.3, ry * 0.18, "url(#shine)", 'opacity="0.8"');
-  return wool + face(fx, fy, { rot: frot, expr });
+  const cell = 8;
+  let wool = "";
+  for (let y = -ry; y < ry; y += cell) for (let x = -rx; x < rx; x += cell) {
+    const nx = (x + cell / 2) / rx, ny = (y + cell / 2) / ry, d = nx * nx + ny * ny;
+    const edgeNoise = ((Math.floor((x + rx) / cell) * 7 + Math.floor((y + ry) / cell) * 11) % 5) * 0.025;
+    if (d > 1 + edgeNoise) continue;
+    const shade = ny > 0.48 ? "#D8D5DF" : ny > 0.05 ? "#E6E3EB" : "#F1EEF4";
+    const fleck = (Math.floor((x + rx) / cell) * 3 + Math.floor((y + ry) / cell) * 5) % 11 === 0;
+    wool += px(x, y, cell, cell, fleck && ny < 0.35 ? "#FFFFFF" : shade);
+  }
+  if (flip) wool = g("rotate(180)", wool);
+  return wool + face(fx, fy, { rot: frot + 2, expr });
 }
 
 // 막대 팔다리: 점 2~3개(가운데는 굽는 곳), 끝 6px은 진한 발굽
 function limb(pts, { w = 10, tip = true } = {}) {
   const [a, b, c] = pts;
-  const end = c || b, from = c ? b : a;
-  const d = c ? `M${a[0]},${a[1]} Q${b[0]},${b[1]} ${c[0]},${c[1]}` : `M${a[0]},${a[1]} L${b[0]},${b[1]}`;
-  const len = Math.hypot(end[0] - from[0], end[1] - from[1]) || 1;
-  const hx = end[0] - ((end[0] - from[0]) / len) * 6, hy = end[1] - ((end[1] - from[1]) / len) * 6;
-  return line(d, C.limb, w) + line(d, C.limbLt, w * 0.35, 'opacity="0.8" transform="translate(-1,-1)"') +
-    (tip ? line(`M${f(hx)},${f(hy)} L${end[0]},${end[1]}`, C.tip, w) : "");
+  const end = c || b, start = a, count = Math.max(2, Math.ceil(Math.hypot(end[0] - start[0], end[1] - start[1]) / 7));
+  let out = "";
+  for (let i = 0; i <= count; i++) {
+    const t = i / count, u = 1 - t;
+    const x = c ? u * u * a[0] + 2 * u * t * b[0] + t * t * c[0] : a[0] + t * (b[0] - a[0]);
+    const y = c ? u * u * a[1] + 2 * u * t * b[1] + t * t * c[1] : a[1] + t * (b[1] - a[1]);
+    const size = Math.max(6, w * 0.72), hoof = tip && i >= count - 1;
+    out += px(x - size / 2, y - size / 2, size, size, hoof ? C.tip : C.limb);
+    if (!hoof && i % 3 === 0) out += px(x - size * 0.22, y - size * 0.32, size * 0.38, size * 0.28, C.limbLt, 'opacity="0.72"');
+  }
+  return out;
 }
 function hoofAt(x, y, r = 7) { return circle(x, y, r, C.tip) + circle(x - r * 0.3, y - r * 0.35, r * 0.35, "#fff", 'opacity="0.3"'); }
 function bigHoof(x, y, r = 15) { return circle(x, y, r, C.tip) + line(`M${x},${y - r * 0.8} L${x},${y + r * 0.2}`, "#7A5033", 2.5) + ell(x - r * 0.35, y - r * 0.4, r * 0.3, r * 0.18, "#fff", 'opacity="0.35"'); }
@@ -228,9 +240,9 @@ const POSES = {
   sign: (say) => shadow(0, 92) + legs() + sheep({ expr: "^^" }) +
     limb([[-52, 4], [-78, 0], [-90, -14]], { tip: false }) + limb([[52, 4], [78, 0], [90, -14]], { tip: false }) +
     signBoard(say, 0, 22, 196, 90) + hoofAt(-90, -18) + hoofAt(88, -24),
-  // 만세 🙌 (폴짝)
-  cheer: () => shadow(0, 100, 44, 7) + confetti() + g("translate(0,-12)", limb([[-22, 48], [-40, 66], [-32, 86]]) +
-    limb([[22, 48], [40, 66], [32, 86]]) + sheep({ expr: "^^,open,blush" }) + limb([[-52, 0], [-72, -30], [-80, -66]]) + limb([[52, 0], [72, -30], [80, -66]])),
+  // 반가운 마음은 있지만 기운은 없어, 한쪽 손만 조심스럽게 든다.
+  cheer: () => shadow(0, 92) + legs() + hang(-1) + sheep({ expr: "^^,blush", frot: 3 }) +
+    limb([[52, 4], [66, 18], [72, 0]]),
   // 찻잔 홀짝 ☕
   sip: () => shadow(0, 92) + legs() + limb([[-52, 4], [-40, 30], [-14, 26]]) + sheep({ expr: "vv,none" }) +
     limb([[52, 4], [58, 20], [22, 8]]) + cup(10, 0, 0.8, -14),
