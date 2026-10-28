@@ -117,8 +117,9 @@
         {"name":"마가","role":"데려올 유익한 일꾼","weight":2},
         {"name":"두기고","role":"에베소로 보낸 이","weight":1},
         {"name":"알렉산더","role":"해를 입힌 세공업자","weight":2},
-        {"name":"브리스가와 아굴라","role":"문안받는 부부","weight":1},
-        {"name":"오네시보로","role":"문안받는 집","weight":1},
+        {"name":"브리스가","role":"문안받는 동역자","weight":1},
+        {"name":"아굴라","role":"문안받는 동역자","weight":1},
+        {"name":"오네시보로의 집","role":"문안받는 가정","weight":1},
         {"name":"예수","role":"의의 재판장이신 주","weight":3}
       ],
       "rels": [

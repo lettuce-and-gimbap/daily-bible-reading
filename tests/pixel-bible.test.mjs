@@ -2049,3 +2049,21 @@ test('디모데전서의 실명 반대자와 안수 관계는 보존하고 교�
  assert.equal(resolveIdentity('후메내오',{code:'1ti',chapter:1}).id,resolveIdentity('후메내오',{code:'2ti',chapter:2}).id);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),28);
 });
+
+test('디모데후서의 기억·전언·요청을 현재 동행 인물과 구분하고 마가·오네시보로의 집 신원을 나눈다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/2ti.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'2ti',name:'디모데후서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ for(const name of ['바울','디모데','부겔로','허모게네','오네시보로'])assert.ok(cast(1).includes(name));
+ for(const name of ['로이스','유니게'])assert.ok(!cast(1).includes(name));
+ for(const name of ['후메내오','빌레도'])assert.ok(cast(2).includes(name));
+ for(const name of ['다윗','예수'])assert.ok(!cast(2).includes(name));
+ for(const name of ['얀네와 얌브레','모세'])assert.ok(!cast(3).includes(name));
+ assert.ok(cast(4).includes('누가'));
+ for(const name of ['데마','요한 마가','두기고','알렉산더','브리스가','아굴라','오네시보로의 집'])assert.ok(!cast(4).includes(name),`디모데후서 4장 부재·문안 대상 ${name}`);
+ assert.ok(cast(4).includes('바울'));
+ assert.equal(resolveIdentity('마가',{code:'2ti',chapter:4}).id,resolveIdentity('요한 마가',{code:'act',chapter:15}).id);
+ assert.equal(resolveIdentity('오네시보로',{code:'2ti',chapter:1}).kind,'unresolved');
+ assert.equal(resolveIdentity('오네시보로의 집',{code:'2ti',chapter:4}).kind,'group');
+ assert.equal(resolveIdentity('브리스가',{code:'2ti',chapter:4}).id,resolveIdentity('브리스길라',{code:'rom',chapter:16}).id);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),20);
+});
