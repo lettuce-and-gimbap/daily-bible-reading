@@ -7,6 +7,7 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
   if(['실라','실루아노'].includes(name))return '실라';
   if(['col','2ti'].includes(code)&&Number(chapter)===4&&name==='마가'||code==='phm'&&Number(chapter)===1&&name==='마가')return '요한 마가';
+  if(code==='1pe'&&Number(chapter)===5&&name==='마가')return '요한 마가';
   if(name==='브리스가')return '브리스길라';
   if(name==='게바')return '베드로';
   if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return '글라우디오 루시아';
@@ -75,6 +76,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(['실라','실루아노'].includes(name))return {...id('person','silas'),canonicalName:'실라'};
   if(name==='후메내오'&&['1ti','2ti'].includes(code))return id('person','hymenaeus');
   if(['col','2ti'].includes(code)&&Number(chapter)===4&&name==='마가'||code==='phm'&&Number(chapter)===1&&name==='마가')return {...id('person','john-mark'),canonicalName:'요한 마가'};
+  if(code==='1pe'&&Number(chapter)===5&&name==='마가')return {...id('person','john-mark'),canonicalName:'요한 마가'};
   if(code==='2ti'&&Number(chapter)===4&&name==='오네시보로의 집')return {...id('group','onesiphorus-household'),canonicalName:'오네시보로의 집',mergeAliases:true};
   if(['브리스가','브리스길라'].includes(name))return {...id('person','priscilla'),canonicalName:'브리스길라'};
   if(code==='luk'&&[5,6].includes(Number(chapter))&&['시몬','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
@@ -116,7 +118,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='jer'&&Number(chapter)===51&&name==='스라야')return {...id('person','seraiah-son-of-neriah'),canonicalName:'스라야(네리야의 아들)'};
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return {...id('person','seraiah-high-priest-jer52'),canonicalName:'스라야(대제사장)'};
   if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
-  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name))return id('group',name);
+  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name))return id('group',name);
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한

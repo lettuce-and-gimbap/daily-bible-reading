@@ -2137,3 +2137,17 @@ test('야고보서는 편지 저자의 신원을 따로 두고 인용된 조상�
  assert.match(summary.chapters['2'].rels.find(r=>r.from==='아브라함'&&r.to==='이삭').note,/이삭은 죽지 않았어요/);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
 });
+
+test('베드로전서는 서신 수신자·구약 예시·비유 동물을 분리하고 실라와 요한 마가를 통합한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/1pe.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/1pe.json',import.meta.url),'utf8'));
+ const model=chap=>buildWorldModel([{code:'1pe',name:'베드로전서',chap,data:{...summary.chapters[String(chap)],eventScenes:events.scenes.filter(s=>s.chapter===chap)}}]);
+ for(let chapter=1;chapter<=5;chapter++)assert.ok(!model(chapter).cast.some(p=>p.name==='예수'),`1 Peter ${chapter}: 예수님은 서신의 현장에 계신 인물이 아니라 과거 사역·교리의 대상`);
+ for(const name of ['선지자들','흩어진 나그네들'])assert.equal(resolveIdentity(name,{code:'1pe',chapter:1}).kind,'group');
+ for(const [chapter,names]of [[1,['선지자들']],[3,['사라','아브라함','노아']],[1,['예수']],[2,['예수']],[3,['예수']],[4,['예수']],[5,['예수']]])for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'1pe',chapter}));
+ for(const [chapter,names]of [[1,['양']],[2,['양']],[5,['양','사자']]])for(const name of names)assert.ok(!model(chapter).cast.some(p=>p.name===name),`1 Peter ${chapter} 비유의 ${name}은 동물 NPC가 아님`);
+ const closing=model(5).cast.map(p=>p.name);assert.ok(closing.includes('실라'));assert.ok(closing.includes('요한 마가'));
+ assert.equal(resolveIdentity('실루아노',{code:'1pe',chapter:5}).id,resolveIdentity('실라',{code:'act',chapter:15}).id);
+ assert.equal(resolveIdentity('마가',{code:'1pe',chapter:5}).id,resolveIdentity('요한 마가',{code:'act',chapter:15}).id);
+ assert.ok(summary.chapters['5'].rels.some(r=>r.from==='베드로'&&r.to==='마가'&&r.verses==='13'));
+});
