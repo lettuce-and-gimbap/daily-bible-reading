@@ -44,7 +44,7 @@ function faceMarks(spec) {
   if (has("tint")) s += ell(0, -12, 30, 12, "#8FA2F0", 'opacity="0.45"') + line("M-12,-22 L-12,-14 M0,-24 L0,-16 M12,-22 L12,-14", "#6275D0", 1.8, 'opacity="0.7"');
   if (has("glow")) s += ell(0, 14, 26, 14, "#BFEFFF", 'opacity="0.3"');
   // 눈동자·흰자·점 없이 이모티콘처럼 짧은 곡선 두 개만 쓴다.
-  // 감정 차이는 곡선의 방향과 눈썹, 얼굴 기울기로 표현한다.
+  // 감정 차이는 곡선의 방향과 얼굴 기울기로 표현한다.
   const eyesByMood = {
     side: ["M-17,1 Q-10,-5 -3,1", "M5,0 Q11,-4 17,0"],
     roll: ["M-17,2 Q-10,-4 -3,1", "M4,1 Q10,-5 17,2"],
@@ -115,7 +115,7 @@ function limb(pts, { w = 10, tip = true } = {}) {
   return out;
 }
 function hoofAt(x, y, r = 7) { return circle(x, y, r, C.tip) + circle(x - r * 0.3, y - r * 0.35, r * 0.35, "#fff", 'opacity="0.3"'); }
-function bigHoof(x, y, r = 15) { return circle(x, y, r, C.tip) + line(`M${x},${y - r * 0.8} L${x},${y + r * 0.2}`, "#7A5033", 2.5) + ell(x - r * 0.35, y - r * 0.4, r * 0.3, r * 0.18, "#fff", 'opacity="0.35"'); }
+function bigHoof(x, y, r = 15) { return circle(x, y, r, C.tip); }
 
 // ---------- 효과 ----------
 function sweatDrop(x, y, s = 1) {
@@ -277,8 +277,7 @@ const POSES = {
     hip(-1) + limb([[52, 4], [76, 18], [88, 12]]) + line("M-99,-42 L-80,-48 M-100,-28 L-82,-31", "#D9C9B5", 3),
   // 한쪽 눈썹만 올린 채 여유롭게 미소 짓는다.
   fingerwag: () => shadow(0, 92) + legs() + sheep({ expr: "squint,flat" }) + hang(-1) +
-    limb([[52, 4], [66, -12], [82, -38]], { tip: false, w: 9 }) +
-    line("M83,-54 L83,-40 M75,-50 L79,-42 M91,-50 L87,-42", "#F2C14E", 3),
+    limb([[52, 4], [66, -12], [82, -38]], { w: 9 }),
   // 두 앞발을 모아 오늘 분량을 꼭 부탁한다.
   pleading: () => shadow(0, 92) + legs() + sheep({ expr: "sad,pout,blush" }) +
     limb([[-52, 4], [-34, 28], [0, 10]]) + limb([[52, 4], [34, 28], [0, 10]]) +
@@ -319,7 +318,27 @@ const POSES = {
   offerbook: () => shadow(0, 92) + legs() + sheep({ expr: "sad,blush" }) +
     limb([[-52, 4], [-67, 24], [-76, 34]]) + limb([[52, 4], [77, 18], [86, 6]]) +
     bible(96, -4, 42, 54, 12),
-  // 무릎을 끌어안고 기다리지만 눈길은 문 쪽으로 향한다.
+  // 축 처진 양, 늦은 답장과 소소한 부탁을 표현하는 추가 포즈.
+  droop: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:12}) + hang(-1) + hang(1),
+  slump: () => shadow(0,92) + legs() + g("rotate(15)", sheep({expr:"closed,flat"}) + hang(-1) + hang(1)),
+  lean: () => shadow(0,92) + legs() + sheep({expr:"side,flat",frot:-15}) + hip(-1) + hang(1),
+  sighing: () => shadow(0,92) + legs() + sheep({expr:"vv,flat"}) + hang(-1) + hang(1) + sighCloud(85,-35),
+  waiting: () => shadow(0,100,80) + stool(0,66) + legs() + sheep({expr:"side,flat"}) + hang(-1) + hang(1),
+  dozing: () => shadow(0,92) + legs() + sheep({expr:"closed,flat",frot:20}) + hang(-1) + hang(1) + zzz(60,-20),
+  embarrassed: () => shadow(0,92) + legs() + sheep({expr:"vv,blush,sweat"}) + limb([[-52,4],[-60,-12],[-36,-24]]) + hang(1),
+  wave_small: () => shadow(0,92) + legs() + sheep({expr:"vv,blush"}) + hang(-1) + limb([[52,4],[65,0],[68,-20]]),
+  wave_tired: () => shadow(0,92) + legs() + sheep({expr:"closed,flat",frot:8}) + hang(-1) + limb([[52,4],[64,20],[76,16]]),
+  arms_open: () => shadow(0,92) + legs() + sheep({expr:"^^,blush"}) + limb([[-52,4],[-75,4],[-92,-8]]) + limb([[52,4],[75,4],[92,-8]]),
+  shoulders_up: () => shadow(0,92) + legs() + sheep({expr:"side,flat"}) + limb([[-52,4],[-77,-6],[-72,-24]]) + limb([[52,4],[77,-6],[72,-24]]),
+  hands_behind: () => shadow(0,92) + legs() + limb([[-52,4],[-70,20],[-55,42]]) + limb([[52,4],[70,20],[55,42]]) + sheep({expr:"vv,blush"}),
+  book_overhead: () => shadow(0,92) + legs() + sheep({expr:"^^,o"}) + limb([[-52,4],[-70,-30],[-42,-64]]) + limb([[52,4],[70,-30],[42,-64]]) + bible(0,-74,56,42),
+  book_on_head: () => shadow(0,92) + legs() + sheep({expr:"vv,flat"}) + hang(-1) + hang(1) + bible(0,-61,68,28,-3),
+  reading_seated: () => shadow(0,100,80) + stool(0,66) + legs() + sheep({expr:"closed"}) + bible(0,50,82,54,0,true) + limb([[-52,4],[-50,30],[-35,50]]) + limb([[52,4],[50,30],[35,50]]),
+  book_rest: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:8}) + hang(-1) + limb([[52,4],[70,20],[80,38]]) + bible(91,43,40,52,12),
+  head_tilt: () => shadow(0,92) + legs() + sheep({expr:"side,pout",frot:22}) + hang(-1) + hip(1),
+  foot_tap: () => shadow(0,92) + limb([[-22,48],[-24,88]]) + limb([[22,48],[45,84]]) + sheep({expr:"side,flat"}) + hip(-1) + hip(1) + tapMarks(46,88),
+  crawl: () => shadow(0,75,110) + sheep({rx:85,ry:40,fx:-55,fy:-5,expr:"sad,pout"}) + limb([[-50,30],[-80,55],[-95,54]]) + limb([[45,30],[80,54],[98,54]]),
+  tiny_bow: () => shadow(0,92) + legs() + g("rotate(18)",sheep({expr:"closed,blush"}) + limb([[-52,4],[-30,30],[-5,35]]) + limb([[52,4],[30,30],[5,35]])),
 };
 
 function bubbleText(text, x, y) {
