@@ -165,7 +165,8 @@ test('요한계시록 6–22장의 직접 발화와 목격 서술을 화자별�
  assert.deepEqual(row(19,'천사')[6],['9','10','17-18']);
  assert.deepEqual(row(18,'땅의 왕들')[6],['9-10']);
  assert.deepEqual(row(18,'선장과 선원들')[6],['18-19']);
- assert.deepEqual(row(19,'이십사 장로와 네 생물')[6],['4']);
+ assert.deepEqual(row(19,'이십사 장로')[6],['4']);
+ assert.deepEqual(row(19,'네 생물')[6],['4']);
  assert.deepEqual(row(20,'요한')[6],['1-4','11-15']);
  assert.deepEqual(row(21,'천사')[6],['9']);
  assert.deepEqual(row(22,'성령')[6],['17']);

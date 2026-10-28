@@ -49,6 +49,8 @@ export function chapterCreatures(c){
  if(c.code==='2pe'&&Number(c.chap)===2){found.delete('dog');found.delete('pig');}
  // 계시록의 어린 양은 인간형 동물/양 떼로 생성하지 않는다.
  if(c.code==='rev'&&!/양 떼|양을 먹/.test(c.data?.story||''))found.delete('sheep');
+ // Revelation 16's frog-like mouths are unclean spirits in the vision, not frogs.
+ if(c.code==='rev'&&Number(c.chap)===16)found.delete('frog');
  return [...found.values()];
 }
 export function creatureSpeech(n,chapters=[]){

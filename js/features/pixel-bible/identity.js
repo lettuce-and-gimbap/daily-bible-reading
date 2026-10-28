@@ -4,6 +4,8 @@ const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>![
 const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양|범죄한 천사들)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|형제들|자매들|조상들|증인들|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|아들들|딸들|자들|집/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(code==='rev'&&['용','붉은 용','옛 뱀','마귀','옛 뱀 마귀 사탄'].includes(name))return '사탄';
+  if(code==='rev'&&['음녀','큰 음녀'].includes(name))return '바벨론';
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
   if(code==='2pe'&&name==='시몬 베드로')return '베드로';
   if(['실라','실루아노'].includes(name))return '실라';
@@ -71,6 +73,42 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
+  if(code==='rev'){
+    if(name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
+    if(name==='다윗')return {...id('person','david'),canonicalName:'다윗'};
+    if(name==='모세')return {...id('person','moses'),canonicalName:'모세'};
+    if(name==='안디바')return {...id('person','antipas-pergamum'),canonicalName:'안디바'};
+    if(['니골라당','사탄의 회당','흰옷 입은 몇 명','순교한 영혼들','여러 형제','이억 마병대','짐승 경배자','땅의 임금들','천하 왕들','땅의 왕들','땅의 상인들','선장과 선원들','목마른 자','죽은 자들','이기는 자들'].includes(name))return id('group',`revelation:${name}`);
+    if(['이십사 장로','장로 중 한 사람','장로 중 하나'].includes(name))return id('spiritual',`revelation:${name}`);
+    if(name==='네 생물 중 하나')return id('spiritual','revelation:one-of-four-living-creatures');
+    if(name==='일곱 우레')return id('spiritual','revelation:seven-thunders');
+    if(name==='측량을 명하신 이')return id('spiritual','revelation:temple-measure-voice');
+    // The chapter's own study summary follows the leading Reformed reading:
+    // the first rider is Christ going out to conquer by the gospel.
+    if(name==='흰 말 탄 자')return {...id('person','jesus'),canonicalName:'예수'};
+    if(['어린 양','백마 탄 자','인자 같은 이','사내아이'].includes(name))return {...id('person','jesus'),canonicalName:'예수'};
+    if(name==='보좌에 앉으신 이')return {...id('spiritual','하나님'),canonicalName:'하나님'};
+    if(['용','붉은 용','옛 뱀','사탄','마귀','옛 뱀 마귀 사탄'].includes(name))return {...id('spiritual','satan'),canonicalName:'사탄'};
+    if(['바다에서 나온 짐승','붉은빛 짐승','무저갱의 짐승','짐승'].includes(name))return {...id('spiritual','beast-from-sea'),canonicalName:'짐승'};
+    if(['땅에서 올라온 짐승','거짓 선지자'].includes(name))return {...id('spiritual','beast-from-earth'),canonicalName:'거짓 선지자'};
+    if(['네 생물','네 천사','일곱 교회의 사자','일곱 천사','모든 천사','수많은 천사'].includes(name))return id('spiritual',`revelation:${name}`);
+    if(/천사/.test(name))return id('spiritual',`revelation:${name}`);
+    if(['하늘의 음성','하늘의 큰 음성','성전의 음성','제단의 음성','보좌의 음성'].includes(name))return id('spiritual',`revelation:${name}`);
+    if(['음녀','큰 음녀','바벨론'].includes(name))return {...id('group','babylon-symbolic-city'),canonicalName:'바벨론'};
+    if(['새 예루살렘','어린 양의 아내','신부'].includes(name))return {...id('group','new-jerusalem-bride'),canonicalName:'새 예루살렘'};
+    if(['해를 옷 입은 여자','여자의 남은 자손'].includes(name))return {...id('group','woman-and-faithful-remnant'),canonicalName:'하나님의 백성'};
+    if(['열 왕','열 뿔'].includes(name))return {...id('group','ten-kings'),canonicalName:'열 왕'};
+    if(name==='두 증인'||name==='십사만 사천'||name==='큰 무리'||name==='모든 피조물')return id('group',`revelation:${name}`);
+    if(name==='이세벨'&&Number(chapter)===2)return {...id('person','jezebel-thyatira'),canonicalName:'이세벨'};
+    if(name==='발람')return {...id('person','balaam'),canonicalName:'발람'};
+    if(name==='미가엘')return id('spiritual','michael');
+    if(name==='아바돈'||name==='아볼루온')return {...id('spiritual','abaddon'),canonicalName:'아바돈'};
+    if(name==='더러운 세 영')return id('spiritual','revelation:three-unclean-spirits');
+    if(name==='사망'||name==='음부')return id('spiritual',name==='사망'?'death':'hades');
+    if(name==='떨어진 별')return id('spiritual','abyss-star-angel');
+    if(name==='황충')return {...id('group','abyss-locust-horde'),canonicalName:'무저갱의 황충 떼'};
+    if(['붉은 말 탄 자','검은 말 탄 자','청황색 말 탄 자'].includes(name))return id('spiritual',`revelation:${name}`);
+  }
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
   if(code==='2pe'&&['베드로','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};

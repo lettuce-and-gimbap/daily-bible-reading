@@ -299,7 +299,8 @@ test('언급 전용 검토 목록은 존재하는 인물 기록만 가리킨다'
  for(const [key,names] of Object.entries(mentionOnlyChapterNames)){
   const [code,chapter]=key.split('.');
   const summary=JSON.parse(fs.readFileSync(new URL(`../data/summary/${code}.json`,import.meta.url),'utf8'));
-  const recorded=summary.chapters[chapter]?.people||[];
+  const eventBook=JSON.parse(fs.readFileSync(new URL(`../data/pixel-bible/events/${code}.json`,import.meta.url),'utf8'));
+  const recorded=[...(summary.chapters[chapter]?.people||[]),...(summary.chapters[chapter]?.additionalPeople||[]),...(eventBook.additionalPeople?.[chapter]||[])];
   assert.ok(recorded.length,`${key} 검토 장이 원본 인물 DB에 있어야 함`);
   if(names.includes('*')){
    const model=buildWorldModel([{code,name:code,chap:Number(chapter),data:summary.chapters[chapter]}]);
