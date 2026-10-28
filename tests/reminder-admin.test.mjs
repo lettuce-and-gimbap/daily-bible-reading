@@ -127,6 +127,18 @@ test("JSON round-trip of a four-cell message preserves optional condition when a
 const defaultSource = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
 const defaultMessages = Function(`return ${defaultSource.match(/const DEFAULT_MESSAGES = (\{[\s\S]*?\n\});/)[1]}`)();
 const allEntries = Object.entries(defaultMessages).flatMap(([tier, rows]) => rows.map((row, index) => ({tier,index,row})));
+test('existing saved reminders retain edits and receive appended default entries', () => {
+  const code = defaultSource.match(/function mergeReminderMessages\(saved\) \{[\s\S]*?\n\}/)[0];
+  const merge = Function('DEFAULT_MESSAGES', `${code}; return mergeReminderMessages;`)(defaultMessages);
+  const old = Object.fromEntries(Object.entries(defaultMessages).map(([tier, rows]) => [tier, structuredClone(rows.slice(0, -10))]));
+  old.morning[0][0] = '관리자가 수정한 제목';
+  const merged = merge(old);
+  assert.equal(merged.morning[0][0], '관리자가 수정한 제목');
+  for (const tier of Object.keys(defaultMessages)) {
+    assert.equal(merged[tier].length, defaultMessages[tier].length);
+    assert.deepEqual(merged[tier].slice(old[tier].length), defaultMessages[tier].slice(old[tier].length));
+  }
+});
 const testJpeg = Buffer.from([255,216,0,255,217]).toString('base64');
 async function savePayload(env, payload, path = '/account/admin/reminder-messages') {
   return account(path, new Request(`https://worker.test${path}`, {
@@ -134,8 +146,8 @@ async function savePayload(env, payload, path = '/account/admin/reminder-message
   }), env, responseJson);
 }
 
-test('all 119 actual reminders accept title, body, bubble, empty bubble and replacement art edits', async () => {
-  assert.equal(allEntries.length,119);
+test('all 179 actual reminders accept title, body, bubble, empty bubble and replacement art edits', async () => {
+  assert.equal(allEntries.length,179);
   for (const {tier,index,row:original} of allEntries) {
     for (const variant of ['title','body','bubble','empty-bubble','replace-art']) {
       const messages = structuredClone(defaultMessages);
@@ -161,7 +173,7 @@ test('all 119 actual reminders accept title, body, bubble, empty bubble and repl
   }
 });
 
-test('all 119 artwork uploads can be batched before publishing the message DB', async () => {
+test('all 179 artwork uploads can be batched before publishing the message DB', async () => {
   const messages = structuredClone(defaultMessages);
   for (const {tier,index} of allEntries) {
     messages[tier][index][3] = '변경한 문구';
@@ -205,7 +217,7 @@ test('temporary KV write rate limits retry without losing the edited message', a
 });
 
 
-test('all 119 reminder images exist and reference supported renderer poses', async () => {
+test('all 179 reminder images exist and reference supported renderer poses', async () => {
   for(const {tier,index,row} of allEntries) {
     assert.equal(typeof POSES[row[2]],'function',`${tier}:${index} pose`);
     const image=await readFile(new URL(`../icons/notify/${tier}-${index}.jpg`,import.meta.url));

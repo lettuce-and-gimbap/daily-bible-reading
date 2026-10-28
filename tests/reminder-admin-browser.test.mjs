@@ -11,10 +11,13 @@ import reminderWorker from '../worker/src/index.js';
 
 const chrome = process.env.CHROME || '/usr/bin/chromium';
 const available = await access(chrome).then(()=>true,()=>false);
-test('real browser: all 119 reminders save individual edits, reopen, batch upload and retry', {skip: !available, timeout:180000}, async () => {
+test('real browser: all 179 reminders save individual edits, reopen, batch upload and retry', {skip: !available, timeout:180000}, async () => {
   const [editor, art, sw] = await Promise.all(['../js/features/reminder-admin.js','../tools/notify-art/art.js','../sw.js'].map(p=>readFile(new URL(p,import.meta.url),'utf8')));
   const defaults = Function(`return ${sw.match(/const DEFAULT_MESSAGES = (\{[\s\S]*?\n\});/)[1]}`)();
   const stored = new Map();
+  const legacy = Object.fromEntries(Object.entries(defaults).map(([tier, rows]) => [tier, structuredClone(rows.slice(0, -10))]));
+  legacy.morning[0][0] = '기존 관리자 제목';
+  stored.set('admin:reminder-messages', JSON.stringify({messages: legacy, updated: Date.now()}));
   let failNext = false, batches = 0;
   const env = {
     DB:{prepare(){return {bind(){return {first:async()=>({user_id:'buucksoo',last:Date.now()}),run:async()=>({})};}};}},
@@ -50,8 +53,10 @@ test('real browser: all 119 reminders save individual edits, reopen, batch uploa
   }
   window.runTests=async()=>{
     await renderReminderAdmin('');await ready();
+    select(0);check(document.querySelector('[data-reminder-title]').value==='기존 관리자 제목','legacy edit lost');
+    check(document.querySelector('[data-reminder-entry]').options.length===179,'new entries missing from existing DB');
     const entries=Object.entries(defaults).flatMap(([tier,rows])=>rows.map((row,index)=>({tier,index,row})));
-    check(entries.length===119,'119 entries expected');
+    check(entries.length===179,'179 entries expected');
     for(let i=0;i<entries.length;i++){
       const {tier,index}=entries[i];select(i);
       edit('title','수정 제목 '+i+' 🐑');await save();
@@ -79,7 +84,7 @@ test('real browser: all 119 reminders save individual edits, reopen, batch uploa
     await renderReminderAdmin('');await ready();select(0);
     check(document.querySelector('[data-reminder-title]').value==='실패 후 재시도','reopen lost saved title');
     check(!app.textContent.includes('알림 DB를 불러오는 중'),'loader remained');
-    return {entries:119,individualSaves:476,bulkPictures:119,retry:true,reopen:true};
+    return {entries:179,individualSaves:716,bulkPictures:179,retry:true,reopen:true};
   };
   </script>`;
   const server = createServer(async (req,res)=>{
@@ -114,8 +119,8 @@ test('real browser: all 119 reminders save individual edits, reopen, batch uploa
     for(let i=0;i<200;i++){if((await evaluate('typeof window.runTests')).result?.result?.value==='function')break;await new Promise(r=>setTimeout(r,20));}
     const result=await evaluate('window.runTests()');
     assert.equal(result.result?.exceptionDetails,undefined,JSON.stringify(result));
-    assert.equal(result.result.result.value.entries,119);
+    assert.equal(result.result.result.value.entries,179);
     assert.ok(batches>=12,'bulk images must be uploaded in bounded batches');
-    assert.equal([...stored.keys()].filter(k=>k.startsWith('admin:reminder-art:')).length,119);
+    assert.equal([...stored.keys()].filter(k=>k.startsWith('admin:reminder-art:')).length,179);
   } finally {socket?.close();process.kill('SIGKILL');server.closeAllConnections();await new Promise(r=>server.close(r));await rm(profile,{recursive:true,force:true,maxRetries:5});}
 });

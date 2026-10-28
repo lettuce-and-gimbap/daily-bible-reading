@@ -2,9 +2,9 @@
 
 이 목록은 `sw.js`의 기본 `DEFAULT_MESSAGES` 데이터에서 생성했습니다. 알림 제목·본문, 양의 포즈, 그림 말풍선, 조건, 연결된 이미지 파일을 한 행씩 보여 줍니다.
 
-현재 문구 119개, 생성 이미지 119장입니다. 그림 벡터 포즈 설계는 `tools/notify-art/art.js`의 `POSES`에 있습니다.
+현재 문구 179개, 생성 이미지 179장입니다. 그림 벡터 포즈 설계는 `tools/notify-art/art.js`의 `POSES`에 있습니다.
 
-## morning (30개)
+## morning (40개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -38,8 +38,18 @@
 | 28 | 좋은 아침이에요, 오늘도 함께 읽어요 ☀️ | 서두르지 않아도 괜찮아요. 오늘의 {portion}에서 마음에 닿는 한 문장을 만나 보세요. | `pray` | 천천히 한 문장 | 항상 | [그림 보기](../icons/notify/morning-27.jpg) |
 | 29 | 오늘 첫 페이지를 열 시간 📖 | 딱 한 장부터 시작해요. 작은 시작이 하루의 방향을 바꿔 줍니다. | `point` | 첫 페이지 | 항상 | [그림 보기](../icons/notify/morning-28.jpg) |
 | 30 | 아침 브리핑: 오늘의 말씀 도착 🗞️ | 하늘에서 온 오늘의 소식입니다. {portion}, 지금 확인해 보세요. | `sign` | 오늘의 말씀 | 항상 | [그림 보기](../icons/notify/morning-29.jpg) |
+| 31 | 기지개도 천천히 | 눈을 뜬 지금, {portion}에서 짧은 한 문장만 만나 봐요. | `couch_crumple` | 한 절만 | 항상 | [그림 보기](../icons/notify/morning-30.jpg) |
+| 32 | 아침 한 페이지 | 바쁜 아침이라면 {portion} 한 절부터 시작해도 좋아요. | `couch_slide` | 천천히 | 항상 | [그림 보기](../icons/notify/morning-31.jpg) |
+| 33 | 이불 밖 첫걸음 | 자리에서 일어난 뒤 {portion}을 살짝 열어 볼까요? | `couch_headrest` | 기다릴게 | 항상 | [그림 보기](../icons/notify/morning-32.jpg) |
+| 34 | 오늘의 작은 약속 | 오늘 읽을 {portion}을 확인하고 편한 순간을 정해 봐요. | `couch_scroll` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/morning-33.jpg) |
+| 35 | 눈 비비고 말씀 | 잠이 덜 깼다면 물 한 잔 마신 뒤 {portion}을 읽어요. | `couch_book` | 한 페이지 | 항상 | [그림 보기](../icons/notify/morning-34.jpg) |
+| 36 | 양이 먼저 기다림 | 양은 여기서 기다릴게요. 준비되면 {portion}을 펼쳐 주세요. | `bed_collapse` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/morning-35.jpg) |
+| 37 | 아침 빈칸 채우기 | 긴 시간을 내기 어렵다면 {portion} 한 단락이면 충분해요. | `bed_late` | 책 열기 | 항상 | [그림 보기](../icons/notify/morning-36.jpg) |
+| 38 | 일단 책부터 열기 | 읽기 시작하기가 어렵다면 {portion} 화면만 먼저 열어 봐요. | `bed_reach` | 오늘도 | 항상 | [그림 보기](../icons/notify/morning-37.jpg) |
+| 39 | 오늘도 같이 읽어요 | 서두르지 말고 {portion}에서 마음에 남는 말을 찾아봐요. | `bed_phone` | 작은 시작 | 항상 | [그림 보기](../icons/notify/morning-38.jpg) |
+| 40 | 아침의 조용한 초대 | 오늘 일정이 시작되기 전에 {portion}을 잠깐 살펴봐요. | `bed_book` | 편한 속도 | 항상 | [그림 보기](../icons/notify/morning-39.jpg) |
 
-## afternoon (21개)
+## afternoon (31개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -64,8 +74,18 @@
 | 19 | 잠깐, 마음에 쉼표를 놓아 볼까요? 🍃 | 바쁜 틈에 숨을 고르고 {portion} 한 장 읽어요. 오늘도 충분히 잘하고 있어요. | `cheer` | 마음의 쉼표 | 항상 | [그림 보기](../icons/notify/afternoon-18.jpg) |
 | 20 | 3분만 집중 모드 켜기 🎧 | 알림은 잠시 내려놓고 말씀 한 단락만 읽어 봐요. 작은 집중이 깊은 쉼이 됩니다. | `phone` | 집중 모드 | 항상 | [그림 보기](../icons/notify/afternoon-19.jpg) |
 | 21 | 속보: 오후의 내가 말씀을 기다립니다 📰 | 쇼츠 한 편 대신 {portion} 한 장이면 오늘 이야기의 주인공은 나예요. | `shoulders_up` | 속보입니다 | 항상 | [그림 보기](../icons/notify/afternoon-20.jpg) |
+| 22 | 양도 잠깐 충전 중 | 쉬어 가는 틈에 {portion} 한 절을 천천히 읽어 봐요. | `corner_fold` | 한 절만 | 항상 | [그림 보기](../icons/notify/afternoon-21.jpg) |
+| 23 | 점심 뒤 작은 쉼표 | 식사 후 여유가 생기면 {portion}에서 한 문장을 골라요. | `corner_face` | 천천히 | 항상 | [그림 보기](../icons/notify/afternoon-22.jpg) |
+| 24 | 오후 졸음과 협상 | 졸리면 잠깐 쉬고, 깨어나서 {portion}을 펼쳐요. | `floor_flat` | 기다릴게 | 항상 | [그림 보기](../icons/notify/afternoon-23.jpg) |
+| 25 | 책은 여기 있어요 | 양이 책을 챙겨 왔어요. {portion}을 같이 볼까요? | `floor_roll` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/afternoon-24.jpg) |
+| 26 | 잠깐 멈춤 버튼 | 할 일을 잠시 멈추고 {portion} 한 단락을 읽어 봐요. | `floor_reach` | 한 페이지 | 항상 | [그림 보기](../icons/notify/afternoon-25.jpg) |
+| 27 | 양의 오후 기다림 | 양이 조용히 기다리는 동안 {portion}을 확인해 주세요. | `rise_knees` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/afternoon-26.jpg) |
+| 28 | 한 절만 먼저 | 남은 분량이 많아도 {portion} 한 절부터 시작하면 돼요. | `rise_one_leg` | 책 열기 | 항상 | [그림 보기](../icons/notify/afternoon-27.jpg) |
+| 29 | 소파에서 한 페이지 | 앉아서 쉬는 동안 {portion}을 열어 볼까요? | `rise_struggle` | 오늘도 | 항상 | [그림 보기](../icons/notify/afternoon-28.jpg) |
+| 30 | 오후의 짧은 산책 | 이동하기 전 {portion}에서 짧은 문장을 만나 봐요. | `wobble_left` | 작은 시작 | 항상 | [그림 보기](../icons/notify/afternoon-29.jpg) |
+| 31 | 양의 조심스러운 부탁 | 괜찮다면 지금 {portion}을 잠깐 읽어 주세요. | `wobble_right` | 편한 속도 | 항상 | [그림 보기](../icons/notify/afternoon-30.jpg) |
 
-## evening (21개)
+## evening (31개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -90,8 +110,18 @@
 | 19 | 저녁의 평안을 한 페이지에 🌙 | 하루의 소음을 잠시 내려놓고, {portion}을 천천히 읽으며 마음을 쉬게 해요. | `pray` | 평안 한 페이지 | 항상 | [그림 보기](../icons/notify/evening-18.jpg) |
 | 20 | 퇴근 완료! 마음도 로그아웃 전에 📤 | 오늘의 마지막 업무는 나를 살리는 말씀 읽기. {portion} 확인 후 편히 쉬세요. | `reading_seated` | 마음 로그아웃 | 항상 | [그림 보기](../icons/notify/evening-19.jpg) |
 | 21 | 양심이 아니라 양이 톡 보냈어요 🐑 | 오늘 읽을 {portion}이 아직 안 읽힘 상태래요. 지금 열면 바로 해결됩니다. | `peek` | 안 읽음 1건 | 항상 | [그림 보기](../icons/notify/evening-20.jpg) |
+| 22 | 집에 온 양 | 오늘도 수고했어요. 쉬면서 {portion} 한 절 어떠세요? | `book_pillow` | 한 절만 | 항상 | [그림 보기](../icons/notify/evening-21.jpg) |
+| 23 | 저녁의 작은 시간 | 하루를 정리하며 {portion}에서 한 문장을 골라 봐요. | `phone_sleep` | 천천히 | 항상 | [그림 보기](../icons/notify/evening-22.jpg) |
+| 24 | 소파에 앉은 양 | 양과 나란히 앉아 {portion}을 잠깐 읽어요. | `book_drag` | 기다릴게 | 항상 | [그림 보기](../icons/notify/evening-23.jpg) |
+| 25 | 오늘은 여기부터 | 아직 시작하지 못했어도 {portion} 한 절부터면 좋아요. | `phone_ignored` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/evening-24.jpg) |
+| 26 | 양의 퇴근 인사 | 집에 도착했다면 숨을 고르고 {portion}을 펼쳐 봐요. | `tired_salute` | 한 페이지 | 항상 | [그림 보기](../icons/notify/evening-25.jpg) |
+| 27 | 저녁 책 한 장 | 오늘 읽을 {portion}을 편한 속도로 읽어 주세요. | `sleepy_cup` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/evening-26.jpg) |
+| 28 | 휴대전화 들고 기다림 | 양이 기다리고 있어요. {portion}을 열 준비가 됐나요? | `blanket_peek` | 책 열기 | 항상 | [그림 보기](../icons/notify/evening-27.jpg) |
+| 29 | 하루의 마지막 틈 | 저녁에 잠깐 시간이 나면 {portion} 한 단락을 읽어요. | `blanket_hide` | 오늘도 | 항상 | [그림 보기](../icons/notify/evening-28.jpg) |
+| 30 | 지친 날의 한 절 | 힘이 적은 날은 {portion}에서 한 절만 읽어도 좋아요. | `sofa_sit` | 작은 시작 | 항상 | [그림 보기](../icons/notify/evening-29.jpg) |
+| 31 | 양과 함께 쉬어 가요 | 잠시 편히 앉아 {portion}의 한 문장을 살펴봐요. | `sofa_plead` | 편한 속도 | 항상 | [그림 보기](../icons/notify/evening-30.jpg) |
 
-## night (21개)
+## night (31개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -116,8 +146,18 @@
 | 19 | 오늘 하루, 여기까지도 수고했어요 🌌 | 남은 힘이 적다면 한 절만 읽어도 좋아요. 말씀 안에서 하루를 다정하게 마무리해요. | `crawl` | 한 절도 좋아요 | 항상 | [그림 보기](../icons/notify/night-18.jpg) |
 | 20 | 마감 임박! 성경책은 야근 안 시킬게요 🕘 | 전부 끝내려 애쓰지 않아도 돼요. {portion}에서 한 장만 함께 읽어요. | `facepalm` | 한 장이면 충분 | 항상 | [그림 보기](../icons/notify/night-19.jpg) |
 | 21 | 야식 대신 말씀 한 입 🍯 | 오늘의 양식은 아직 남아 있어요. {portion} 한 장 맛보고 편히 잠들어요. | `crosslegs` | 마음 야식 | 항상 | [그림 보기](../icons/notify/night-20.jpg) |
+| 22 | 밤의 작은 부탁 | 잠들기 전 {portion}에서 한 절을 읽어 볼까요? | `couch_crumple` | 한 절만 | 항상 | [그림 보기](../icons/notify/night-21.jpg) |
+| 23 | 이불 속 양의 초대 | 편한 자리에서 {portion}을 잠깐 펼쳐 주세요. | `couch_slide` | 천천히 | 항상 | [그림 보기](../icons/notify/night-22.jpg) |
+| 24 | 양이 조용히 기다려요 | 오늘이 끝나기 전 {portion} 한 문장을 만나 봐요. | `couch_headrest` | 기다릴게 | 항상 | [그림 보기](../icons/notify/night-23.jpg) |
+| 25 | 밤에도 한 단락 | 많이 읽기 어렵다면 {portion} 한 단락으로 시작해요. | `couch_scroll` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/night-24.jpg) |
+| 26 | 휴대전화 내려놓기 전 | 잠시 {portion}을 열고 마음에 남는 한 절을 찾아요. | `couch_book` | 한 페이지 | 항상 | [그림 보기](../icons/notify/night-25.jpg) |
+| 27 | 밤의 느린 페이지 | 서두르지 않아도 괜찮아요. {portion}을 천천히 읽어요. | `bed_collapse` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/night-26.jpg) |
+| 28 | 양은 아직 깨어 있음 | 양이 졸기 전에 {portion}을 같이 볼까요? | `bed_late` | 책 열기 | 항상 | [그림 보기](../icons/notify/night-27.jpg) |
+| 29 | 오늘을 마치는 한 절 | {portion}에서 한 절을 읽고 편히 쉬어요. | `bed_reach` | 오늘도 | 항상 | [그림 보기](../icons/notify/night-28.jpg) |
+| 30 | 포근한 말씀 시간 | 이불을 덮기 전 {portion}을 잠깐 살펴봐요. | `bed_phone` | 작은 시작 | 항상 | [그림 보기](../icons/notify/night-29.jpg) |
+| 31 | 작은 시작도 좋아요 | 남은 시간이 적다면 {portion} 한 절을 골라 읽어요. | `bed_book` | 편한 속도 | 항상 | [그림 보기](../icons/notify/night-30.jpg) |
 
-## last (20개)
+## last (30개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -141,8 +181,18 @@
 | 18 | 불 끄기 전 마지막 체크 💡 | 방 불 끄기 전에 {portion} 체크하고 주무세요. 잔소리 아니고 알림입니다. | `nope` | 불 끄기 전에 | 항상 | [그림 보기](../icons/notify/last-17.jpg) |
 | 19 | 성경도 자러 가고 싶대요 🛏️ | 책도 오늘 밤 펴서 읽어 주면 좋아해요. {portion} 펴 줘요! | `phone` | 책도 잠 필요 | 항상 | [그림 보기](../icons/notify/last-18.jpg) |
 | 20 | 오늘 마지막 알림, 착한 양들 🐑🐑 | 오늘 한 장이라도 읽은 양이면 좋겠어요. {portion}, 지금이 골든타임! | `cling` | 오늘 마지막 콜 | 항상 | [그림 보기](../icons/notify/last-19.jpg) |
+| 21 | 양의 마지막 부탁 | 오늘이 지나기 전 {portion}을 한 절만 펼쳐 볼까요? | `corner_fold` | 한 절만 | 항상 | [그림 보기](../icons/notify/last-20.jpg) |
+| 22 | 조금만 더 기다릴게요 | 아직 시간이 있다면 {portion}에서 한 문장을 읽어요. | `corner_face` | 천천히 | 항상 | [그림 보기](../icons/notify/last-21.jpg) |
+| 23 | 오늘 빈칸 앞의 양 | 지금 {portion} 한 절로 오늘의 읽기를 시작해요. | `floor_flat` | 기다릴게 | 항상 | [그림 보기](../icons/notify/last-22.jpg) |
+| 24 | 늦어도 괜찮아요 | 자책하지 말고 {portion}을 편한 만큼 읽어 봐요. | `floor_roll` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/last-23.jpg) |
+| 25 | 마지막 한 페이지 | 잠들기 전 {portion} 한 장을 살펴볼까요? | `floor_reach` | 한 페이지 | 항상 | [그림 보기](../icons/notify/last-24.jpg) |
+| 26 | 양이 책을 건네요 | {portion}이 오늘의 마지막 읽기가 될 수 있어요. | `rise_knees` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/last-25.jpg) |
+| 27 | 이불 속에서도 한 절 | 편한 자세로 {portion} 한 문장을 읽어 주세요. | `rise_one_leg` | 책 열기 | 항상 | [그림 보기](../icons/notify/last-26.jpg) |
+| 28 | 작은 발걸음 하나 | 오늘 분량이 남아 있다면 {portion} 한 절부터 시작해요. | `rise_struggle` | 오늘도 | 항상 | [그림 보기](../icons/notify/last-27.jpg) |
+| 29 | 양의 조용한 응원 | 서두르지 말고 {portion}에서 마음에 남는 구절을 찾아요. | `wobble_left` | 작은 시작 | 항상 | [그림 보기](../icons/notify/last-28.jpg) |
+| 30 | 오늘을 정리하며 | {portion}을 짧게 읽고 하루를 마무리해 볼까요? | `wobble_right` | 편한 속도 | 항상 | [그림 보기](../icons/notify/last-29.jpg) |
 
-## done (6개)
+## done (16개)
 
 | # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |
 |---:|---|---|---|---|---|---|
@@ -152,3 +202,13 @@
 | 4 | 오늘치 달려갈 길 완주 🏁 | 오늘 분량 끝! 선한 싸움 오늘 라운드는 승리예요(딤후 4:7). 이제 푹 쉬어요. | `lounge` | 쉬어도 됨 | 항상 | [그림 보기](../icons/notify/done-3.jpg) |
 | 5 | 오늘의 말씀, 잘 받아 두셨어요 🌱 | 읽은 한 줄이 내일의 마음에도 싹틀 거예요. 오늘도 수고 많았어요. | `pray` | 잘 자라날 거예요 | 항상 | [그림 보기](../icons/notify/done-4.jpg) |
 | 6 | 완료 도장 쾅! 오늘의 퀘스트 끝 🏆 | 오늘 분량을 해냈어요. 마음 놓고 쉬세요. 내일 또 만나요! | `cheer` | 오늘 완료! | 항상 | [그림 보기](../icons/notify/done-5.jpg) |
+| 7 | 오늘도 읽었어요 | 오늘 만난 말씀 중 기억하고 싶은 한 문장을 떠올려 봐요. | `book_pillow` | 한 절만 | 항상 | [그림 보기](../icons/notify/done-6.jpg) |
+| 8 | 양도 안심했어요 | 오늘 분량을 읽었네요. 잠깐 쉬어 가요. | `phone_sleep` | 천천히 | 항상 | [그림 보기](../icons/notify/done-7.jpg) |
+| 9 | 한 페이지의 수고 | 오늘 읽은 내용을 천천히 돌아보는 시간도 좋아요. | `book_drag` | 기다릴게 | 항상 | [그림 보기](../icons/notify/done-8.jpg) |
+| 10 | 양의 작은 박수 | 오늘의 통독을 마쳤어요. 고생 많았어요. | `phone_ignored` | 같이 읽어요 | 항상 | [그림 보기](../icons/notify/done-9.jpg) |
+| 11 | 읽은 말씀 곁에서 | 오늘 마음에 남은 구절을 한 번 더 생각해 봐요. | `tired_salute` | 한 페이지 | 항상 | [그림 보기](../icons/notify/done-10.jpg) |
+| 12 | 오늘의 발걸음 완료 | 읽기를 마쳤다면 편하게 쉬어요. | `sleepy_cup` | 잠깐 쉬어요 | 항상 | [그림 보기](../icons/notify/done-11.jpg) |
+| 13 | 양은 이제 쉬는 중 | 오늘 읽은 한 문장을 마음에 담아 보세요. | `blanket_peek` | 책 열기 | 항상 | [그림 보기](../icons/notify/done-12.jpg) |
+| 14 | 책을 덮기 전에 | 오늘 읽으며 떠오른 생각이 있다면 간단히 적어 봐요. | `blanket_hide` | 오늘도 | 항상 | [그림 보기](../icons/notify/done-13.jpg) |
+| 15 | 오늘 읽기 성공 | 오늘 분량을 마쳤어요. 내일도 편한 속도로 만나요. | `sofa_sit` | 작은 시작 | 항상 | [그림 보기](../icons/notify/done-14.jpg) |
+| 16 | 말씀과 함께 마무리 | 오늘의 읽기를 돌아보며 하루를 차분히 마쳐요. | `sofa_plead` | 편한 속도 | 항상 | [그림 보기](../icons/notify/done-15.jpg) |

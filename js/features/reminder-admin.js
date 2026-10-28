@@ -28,7 +28,7 @@ function reminderAdminLoadArt() {
   reminderAdminArtScript = new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "tools/notify-art/art.js?v=reminder-stability-8";
+    script.src = "tools/notify-art/art.js?v=reminder-stability-9";
     script.onload = () => window.ReminderArt?.renderCard ? resolve(window.ReminderArt) : reject(new Error("양 그림 렌더러를 찾지 못했어요."));
     script.onerror = () => reject(new Error("양 그림 렌더러를 불러오지 못했어요."));
     document.head.append(script);
@@ -99,7 +99,10 @@ async function renderReminderAdmin(header) {
     return;
   }
   if (!loadingPanel?.isConnected) return;
-  let data = reminderAdminClone(saved.messages || defaults);
+  let data = reminderAdminClone(Object.fromEntries(Object.entries(defaults).map(([tier, rows]) => {
+    const savedRows = Array.isArray(saved.messages?.[tier]) ? saved.messages[tier] : [];
+    return [tier, [...savedRows, ...rows.slice(savedRows.length)]];
+  })));
   const entries = Object.entries(data).flatMap(([tier, rows]) => rows.map((row, index) => ({ tier, index, row })));
   if (!entries.length) return;
   const assets = Object.entries(defaults).flatMap(([tier, rows]) => rows.map((row, index) => ({

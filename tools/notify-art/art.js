@@ -341,6 +341,43 @@ const POSES = {
   tiny_bow: () => shadow(0,92) + legs() + g("rotate(18)",sheep({expr:"closed,blush"}) + limb([[-52,4],[-30,30],[-5,35]]) + limb([[52,4],[30,30],[5,35]])),
 };
 
+
+// 침대·소파·성경·휴대전화와 상호작용하는 지친 양의 새 장면.
+function softCouch() { return `<rect x="-100" y="28" width="200" height="58" rx="14" fill="#B98F88"/><rect x="-90" y="-5" width="180" height="55" rx="14" fill="#D6AAA0"/>`; }
+function littleBed() { return `<rect x="-115" y="28" width="230" height="60" rx="8" fill="#D8C2A7"/><rect x="-105" y="20" width="210" height="44" rx="9" fill="#AFC3DF"/><rect x="-102" y="12" width="65" height="28" rx="8" fill="#FFFDF5"/>`; }
+Object.assign(POSES, {
+ couch_crumple: () => shadow(0,100,120) + softCouch() + g("translate(0,8) rotate(-18)", sheep({rx:76,ry:42,fx:-30,expr:"closed,flat"}) + limb([[-50,15],[-80,40],[-85,55]]) + limb([[50,12],[80,44],[100,46]])),
+ couch_slide: () => shadow(0,100,120) + softCouch() + g("translate(28,22) rotate(38)", sheep({rx:75,ry:42,fx:-38,expr:"vv,flat"}) + hang(-1) + hang(1)),
+ couch_headrest: () => shadow(0,100,120) + softCouch() + g("translate(0,2)", sheep({rx:82,ry:40,fx:-57,expr:"side,flat"}) + limb([[-48,15],[-70,32],[-76,3]]) + limb([[50,20],[78,40],[88,46]])),
+ couch_scroll: () => shadow(0,100,120) + softCouch() + g("translate(5,4) rotate(-8)", sheep({rx:78,ry:42,fx:-45,expr:"closed,flat"}) + limb([[-45,10],[-60,25],[-45,30]]) + phone(-30,45,-10)),
+ couch_book: () => shadow(0,100,120) + softCouch() + g("translate(0,0)", sheep({rx:72,ry:42,fx:-36,expr:"vv"}) + bible(10,40,80,50,0,true)),
+ bed_collapse: () => shadow(0,100,130) + littleBed() + g("translate(0,-4)", sheep({rx:88,ry:36,fx:-65,expr:"closed,flat"}) + limb([[55,12],[90,10],[105,0]])),
+ bed_late: () => shadow(0,100,130) + littleBed() + g("translate(0,0)", sheep({rx:78,ry:36,fx:-52,expr:"vv,flat"}) + limb([[-45,15],[-65,34],[-70,38]])) + zzz(70,-40),
+ bed_reach: () => shadow(0,100,130) + littleBed() + g("translate(-8,-2)", sheep({rx:75,ry:36,fx:-50,expr:"sad,pout"}) + limb([[45,12],[75,-12],[100,-18]])),
+ bed_phone: () => shadow(0,100,130) + littleBed() + g("translate(0,0)", sheep({rx:75,ry:36,fx:-50,expr:"vv"}) + limb([[-40,12],[-55,30],[-35,35]]) + phone(-28,39,-10)),
+ bed_book: () => shadow(0,100,130) + littleBed() + g("translate(0,0)", sheep({rx:75,ry:36,fx:-50,expr:"closed"}) + bible(15,34,80,48,0,true)),
+ corner_fold: () => shadow(0,92,90) + px(-95,-80,7,165,"#C4B8AD") + px(-95,78,170,7,"#C4B8AD") + g("translate(-36,40) rotate(-28)",sheep({rx:50,ry:38,expr:"closed,flat"}) + hang(1)),
+ corner_face: () => shadow(0,92,90) + px(85,-80,7,165,"#C4B8AD") + px(-75,78,167,7,"#C4B8AD") + g("translate(40,35) rotate(28)",sheep({rx:56,ry:43,expr:"vv,pout"}) + hang(-1)),
+ floor_flat: () => shadow(0,84,120) + g("translate(0,20)", sheep({rx:100,ry:26,fx:-66,fy:3,expr:"closed,flat"}) + limb([[-50,20],[-100,55],[-118,59]]) + limb([[50,20],[100,55],[118,59]])),
+ floor_roll: () => shadow(0,90,90) + g("translate(0,20) rotate(78)",sheep({rx:62,ry:48,expr:"vv,flat"}) + limb([[-50,4],[-75,20]]) + limb([[50,4],[75,20]])),
+ floor_reach: () => shadow(0,84,120) + g("translate(0,22)", sheep({rx:87,ry:34,fx:-55,expr:"sad,pout"}) + limb([[-50,18],[-80,52],[-110,50]]) + limb([[50,18],[85,48],[108,48]])),
+ rise_knees: () => shadow(0,95,90) + limb([[-22,42],[-50,70],[-30,88]]) + limb([[20,42],[44,70],[64,88]]) + g("rotate(18)",sheep({expr:"closed,flat"}) + limb([[-52,4],[-70,40],[-48,68]]) + hang(1)),
+ rise_one_leg: () => shadow(0,95,90) + limb([[-22,48],[-55,72],[-40,88]]) + limb([[22,48],[48,70],[45,88]]) + g("rotate(-12)",sheep({expr:"vv,flat"}) + limb([[-52,4],[-75,35],[-70,75]]) + hip(1)),
+ rise_struggle: () => shadow(0,96,90) + limb([[-22,48],[-30,88]]) + limb([[22,48],[50,74],[63,88]]) + g("rotate(-20)",sheep({expr:"squint,pout"}) + limb([[-52,4],[-70,40],[-80,75]]) + limb([[52,4],[78,-14],[90,-25]])),
+ wobble_left: () => shadow(0,94,80) + limb([[-22,48],[-45,88]]) + limb([[22,48],[30,88]]) + g("rotate(-25)",sheep({expr:"vv,sweat"}) + limb([[-52,4],[-85,-10]]) + limb([[52,4],[85,12]])),
+ wobble_right: () => shadow(0,94,80) + limb([[-22,48],[-30,88]]) + limb([[22,48],[45,88]]) + g("rotate(25)",sheep({expr:"vv,sweat"}) + limb([[-52,4],[-85,12]]) + limb([[52,4],[85,-10]])),
+ book_pillow: () => shadow(0,88,110) + bible(-70,70,65,35,0) + g("translate(0,16)", sheep({rx:90,ry:36,fx:-65,fy:0,expr:"closed"}) + limb([[55,20],[90,42],[110,50]])),
+ phone_sleep: () => shadow(0,86,110) + g("translate(0,18)", sheep({rx:90,ry:36,fx:-65,fy:0,expr:"closed"}) + phone(-75,52,-10) + limb([[-50,15],[-70,36],[-72,46]])) + zzz(50,-32),
+ book_drag: () => shadow(0,94,90) + limb([[-22,48],[-48,80]]) + limb([[22,48],[40,88]]) + g("rotate(-18)",sheep({expr:"vv,flat"}) + hang(-1) + limb([[52,4],[78,25],[90,60]])) + bible(105,72,40,46,30),
+ phone_ignored: () => shadow(0,92) + legs() + sheep({expr:"side,flat",frot:-8}) + hip(-1) + limb([[52,4],[70,22],[80,38]]) + phone(92,48,16),
+ tired_salute: () => shadow(0,92) + legs() + sheep({expr:"vv,flat",frot:8}) + hang(-1) + limb([[52,4],[70,-15],[25,-31]]),
+ sleepy_cup: () => shadow(0,100,85) + stool(0,66) + legs() + sheep({expr:"closed,flat",frot:12}) + hang(-1) + limb([[52,4],[65,18],[64,0]]) + cup(65,-15,.7,5),
+ blanket_peek: () => shadow(0,100,120) + littleBed() + face(-60,15,{expr:"vv,blush",rot:-8}) + `<path d="M-45,18 Q10,-25 95,12 L95,72 L-55,72Z" fill="#9EB7D9"/>` + hoofAt(-40,22),
+ blanket_hide: () => shadow(0,100,120) + littleBed() + `<path d="M-90,36 Q-65,-40 15,-12 Q90,-8 100,50 L100,72 L-90,72Z" fill="#9EB7D9"/>` + face(-54,34,{expr:"closed,flat",rot:-12}),
+ sofa_sit: () => shadow(0,100,120) + softCouch() + g("translate(0,-12)",sheep({expr:"vv,flat"}) + limb([[-40,28],[-45,56],[-65,60]]) + limb([[40,28],[45,56],[65,60]])),
+ sofa_plead: () => shadow(0,100,120) + softCouch() + g("translate(0,-10)",sheep({expr:"sad,pout"}) + limb([[-52,4],[-32,28],[0,14]]) + limb([[52,4],[32,28],[0,14]])),
+});
+
 function bubbleText(text, x, y) {
   return `<text x="${x}" y="${y}" text-anchor="middle" font-size="22" font-weight="900" fill="#8C80A6" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Noto Sans KR, Malgun Gothic, sans-serif">${text}</text>`;
 }
