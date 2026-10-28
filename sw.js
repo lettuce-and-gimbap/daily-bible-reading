@@ -165,17 +165,42 @@ function ymd(d) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
+function localParts(date, timeZone) {
+  try {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: timeZone || "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }).formatToParts(date);
+    const p = Object.fromEntries(parts.map((x) => [x.type, x.value]));
+    return { date: `${p.year}-${p.month}-${p.day}`, hour: Number(p.hour), minute: Number(p.minute) };
+  } catch (_) {
+    const p = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }).formatToParts(date);
+    const v = Object.fromEntries(p.map((x) => [x.type, x.value]));
+    return { date: `${v.year}-${v.month}-${v.day}`, hour: Number(v.hour), minute: Number(v.minute) };
+  }
+}
+
+function shiftDate(date, offset) {
+  const d = new Date(`${date}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + offset);
+  return d.toISOString().slice(0, 10);
+}
+
 async function buildMessage() {
   const now = new Date();
-  const today = ymd(now);
-  const yesterday = ymd(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1));
   const snap = (await idbGet("reminder")) || {};
+  const local = localParts(now, snap.timeZone);
+  const today = local.date;
+  const yesterday = shiftDate(today, -1);
   const fresh = snap.date === today;
 
   let tier;
   if (fresh && snap.done) tier = "done";
   else {
-    const h = now.getHours();
+    const h = local.hour;
     tier = h < 12 ? "morning" : h < 18 ? "afternoon" : h < 20 ? "evening" : h < 22 ? "night" : "last";
   }
 

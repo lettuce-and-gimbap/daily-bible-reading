@@ -1,6 +1,6 @@
 // 경건생활 리마인드 알림 서버 (Cloudflare Worker)
 // - 앱이 푸시 구독과 "오늘 통독 완료 날짜"를 등록/갱신
-// - 크론이 5분마다 확인하고, 한국시간 07:00~자정 전 구독별 무작위 시각에 미완료 알림을 보냄
+// - 크론이 5분마다 확인하고, 구독별 지역 시간 07:00~자정 전 무작위 시각에 미완료 알림을 보냄
 // - 00:00~06:59에는 발송하지 않음
 //   (문구는 앱의 sw.js가 시간대에 맞게 고름 → 암호화된 본문이 필요 없어 VAPID 서명만 하면 됨)
 
@@ -46,7 +46,12 @@ export default {
         const endpoint = body.subscription && body.subscription.endpoint;
         if (typeof endpoint !== "string" || !endpoint.startsWith("https://")) return json({ error: "잘못된 구독 정보" }, 400);
         const id = await sha256hex(endpoint);
-        await saveSub(env, id, { endpoint, doneDate: str(body.doneDate), paused: !!body.paused });
+        await saveSub(env, id, {
+          endpoint,
+          doneDate: str(body.doneDate),
+          paused: !!body.paused,
+          timeZone: normalizeTimeZone(body.timeZone),
+        });
         return json({ id });
       }
 
@@ -56,7 +61,12 @@ export default {
       if (!rec) return json({ error: "구독을 찾을 수 없어요" }, 404);
 
       if (pathname === "/status") {
-        await saveSub(env, id, { ...rec, doneDate: str(body.doneDate), paused: !!body.paused });
+        await saveSub(env, id, {
+          ...rec,
+          doneDate: str(body.doneDate),
+          paused: !!body.paused,
+          timeZone: normalizeTimeZone(body.timeZone || rec.timeZone),
+        });
         return json({ ok: true });
       }
       if (pathname === "/unsubscribe") {
@@ -170,7 +180,7 @@ function qtParts(html) {
   return { title: title ? text(title) : null, sections };
 }
 
-// 하루 알림 횟수와 칸: 한국시간 07:00~24:00의 5분 칸에서 구독·날짜마다 서로 다른 7칸을 정함
+// 하루 알림 횟수와 칸: 지역 시간 07:00~24:00의 5분 칸에서 구독·날짜마다 서로 다른 7칸을 정함
 const PUSHES_PER_DAY = 7;
 const SLOTS_PER_DAY = 288;
 const QUIET_HOURS_END_SLOT = (7 * 60) / 5;
@@ -188,6 +198,31 @@ export function daySlots(id, date) {
   return out;
 }
 
+export function normalizeTimeZone(value) {
+  if (typeof value !== "string" || value.length > 64) return "Asia/Seoul";
+  try { new Intl.DateTimeFormat("en-US", { timeZone: value }); return value; }
+  catch (_) { return "Asia/Seoul"; }
+}
+
+export function localClock(date, timeZone = "Asia/Seoul") {
+  const zone = normalizeTimeZone(timeZone);
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return {
+    date: `${values.year}-${values.month}-${values.day}`,
+    hour: Number(values.hour),
+    minute: Number(values.minute),
+  };
+}
+
+export function isReminderWindowOpen(date, timeZone = "Asia/Seoul") {
+  const local = localClock(date, timeZone);
+  return local.hour >= 7 && local.hour < 24;
+}
+
 function fnv1a(text) {
   let h = 0x811c9dc5;
   for (const ch of text) h = Math.imul(h ^ ch.charCodeAt(0), 0x01000193);
@@ -196,25 +231,29 @@ function fnv1a(text) {
 
 // 5분마다 호출: 지금 칸이 그 구독의 오늘 칸에 들어 있으면 보냄
 export async function remindRandom(env, now = new Date()) {
-  const kst = new Date(now.getTime() + 9 * 3600 * 1000);
-  const slot = Math.floor((kst.getUTCHours() * 60 + kst.getUTCMinutes()) / 5);
-  const today = kstDate(now);
-  if (slot < QUIET_HOURS_END_SLOT) return { sent: 0, skipped: 0, removed: 0, failed: 0 };
-  return remindAll(env, now, (id) => daySlots(id, today).includes(slot), `slot#${slot}`);
+  return remindAll(env, now, (id, meta) => {
+    const zone = normalizeTimeZone(meta.timeZone);
+    const local = localClock(now, zone);
+    const slot = Math.floor((local.hour * 60 + local.minute) / 5);
+    return isReminderWindowOpen(now, zone) && slot >= QUIET_HOURS_END_SLOT && daySlots(id, local.date).includes(slot);
+  }, "local-time-slot");
 }
 
 export async function remindAll(env, now = new Date(), pick = () => true, label = "fixed") {
-  const today = kstDate(now);
   const result = { sent: 0, skipped: 0, removed: 0, failed: 0 };
   let cursor;
   do {
     const page = await env.SUBS.list({ prefix: "sub:", cursor });
     for (const key of page.keys) {
-      if (!pick(key.name.slice(4))) continue;
       const meta = key.metadata || {};
-      if (meta.paused || meta.doneDate === today) { result.skipped++; continue; }
+      const id = key.name.slice(4);
+      if (!pick(id, meta, now)) continue;
+      const timeZone = normalizeTimeZone(meta.timeZone);
+      const localDate = localClock(now, timeZone).date;
+      if (meta.paused || meta.doneDate === localDate) { result.skipped++; continue; }
       const rec = await env.SUBS.get(key.name, "json");
       if (!rec) continue;
+      if (!rec.timeZone) rec.timeZone = timeZone;
       try {
         const res = await sendPush(env, rec.endpoint);
         if (res.status === 404 || res.status === 410) {
@@ -237,7 +276,10 @@ export async function remindAll(env, now = new Date(), pick = () => true, label 
 
 // 목록 조회만으로 보낼지 판단할 수 있게 완료 날짜를 메타데이터에도 저장
 async function saveSub(env, id, rec) {
-  await env.SUBS.put(`sub:${id}`, JSON.stringify(rec), { metadata: { doneDate: rec.doneDate, paused: rec.paused } });
+  rec.timeZone = normalizeTimeZone(rec.timeZone);
+  await env.SUBS.put(`sub:${id}`, JSON.stringify(rec), {
+    metadata: { doneDate: rec.doneDate, paused: rec.paused, timeZone: rec.timeZone },
+  });
 }
 
 export async function sendPush(env, endpoint) {

@@ -1,4 +1,4 @@
-// 통독 리마인드 알림 (하루 7번, 24시간 중 무작위 시각 — 오늘 통독을 마치지 않았을 때만)
+// 통독 리마인드 알림 (사용자 시간대 오전 7시부터 자정 전까지 하루 최대 7회)
 // 휴대폰은 앱이 꺼져 있으면 스스로 시간 맞춰 깨어날 수 없어서, 알림 서버(worker/)가 정해진 시간에 푸시를 보낸다.
 // 앱은 서버에 "오늘 통독 완료 여부"만 알려 주고, 서비스 워커(sw.js)가 받아서 문구를 골라 보여 준다.
 
@@ -59,6 +59,11 @@ async function api(path, body) {
   return data;
 }
 
+async function reminderTimeZone() {
+  try { return await globalThis.KstLight?.reminderTimeZone?.() || "Asia/Seoul"; }
+  catch (_) { return "Asia/Seoul"; }
+}
+
 // 앱 기록이 바뀔 때마다 서비스 워커용 요약을 저장하고, 서버에 완료 여부를 알림
 function queueReminderSync() {
   clearTimeout(reminderTimer);
@@ -67,13 +72,14 @@ function queueReminderSync() {
 
 async function syncReminder() {
   const snap = reminderSnapshot();
+  snap.timeZone = await reminderTimeZone();
   await idbPut("reminder", snap);
   const info = pushInfo();
   if (!info.id || !PUSH_SERVER) return;
-  const key = `${snap.date}|${snap.done}|${snap.paused}`;
+  const key = `${snap.date}|${snap.done}|${snap.paused}|${snap.timeZone}`;
   if (info.synced === key) return;
   try {
-    await api("/status", { id: info.id, doneDate: snap.done ? snap.date : "", paused: snap.paused });
+    await api("/status", { id: info.id, doneDate: snap.done ? snap.date : "", paused: snap.paused, timeZone: snap.timeZone });
     savePushInfo({ ...info, synced: key });
   } catch (e) {
     if (e.status === 404) savePushInfo({}); // 서버에서 구독이 사라짐 → 다시 켜야 함
@@ -90,12 +96,14 @@ async function enableReminders() {
     sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64urlToBytes(publicKey) });
   }
   const snap = reminderSnapshot();
+  snap.timeZone = await reminderTimeZone();
   const { id } = await api("/subscribe", {
     subscription: sub.toJSON(),
     doneDate: snap.done ? snap.date : "",
     paused: snap.paused,
+    timeZone: snap.timeZone,
   });
-  savePushInfo({ id, synced: `${snap.date}|${snap.done}|${snap.paused}` });
+  savePushInfo({ id, synced: `${snap.date}|${snap.done}|${snap.paused}|${snap.timeZone}` });
   await idbPut("reminder", snap);
 }
 
@@ -117,16 +125,17 @@ function reminderCardHtml() {
   if (status === "on") {
     body = `
       <p class="remind-state on">✓ 알림이 켜져 있어요</p>
+      <p class="muted small">알림 시간: 오전 7시부터 자정 전까지 (위치 설정 시 해당 지역 시간대, 미설정 시 한국 시간)</p>
       <p class="muted small">${snap.paused ? "통독 계획이 없거나 끝나서 지금은 알림이 가지 않아요."
         : snap.done ? "오늘 통독을 마쳐서 오늘은 더 이상 알림이 가지 않아요. 👏"
-        : "오늘 통독을 아직 마치지 않았어요. 하루 7번, 정해지지 않은 시각에 알림이 가요."}</p>
+        : "오늘 통독을 아직 마치지 않았어요. 오전 7시부터 자정 전까지, 설정된 지역 시간에 하루 최대 7번 알림이 가요."}</p>
       <div class="inline wrap">
         <button class="btn ghost small" id="rm-test">테스트 알림 받기</button>
         <button class="btn text small" id="rm-off">알림 끄기</button>
       </div>`;
   } else if (status === "off") {
     body = `
-      <p class="muted small">하루 7번, 24시간 중 아무 때나 재치 있는 알림으로 챙겨 드려요. 오늘 통독을 마치지 않았을 때만 가요. 다 읽으면 알림이 가지 않아요.</p>
+      <p class="muted small">오전 7시부터 자정 전까지 설정된 지역 시간에 하루 최대 7번 재치 있는 알림으로 챙겨 드려요. 위치를 설정했다면 해당 지역 시간대를 사용하고, 시간대 조회가 어려우면 기기 시간대를 써요. 위치가 없으면 한국 시간(Asia/Seoul)을 사용해요. 오늘 통독을 마치면 알림이 가지 않아요.</p>
       <button class="btn primary" id="rm-on">🔔 알림 켜기</button>`;
   } else if (status === "need-install") {
     body = `

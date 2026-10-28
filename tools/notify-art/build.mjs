@@ -90,24 +90,52 @@ function allJobs() {
   return jobs;
 }
 
-const args = process.argv.slice(2);
-if (args[0] === "--sheet") {
-  const jobs = allJobs().sort(() => Math.random() - 0.5).slice(0, Number(args[2]) || 6)
-    .map((j) => ({ ...j, title: j.title.replace("{streak}", "12"), body: j.body.replace(/\{portion\}/g, "시편 23편").replace("{streak}", "12") }));
-  writeFileSync(args[1], render(jobs, { sheet: 2, label: true })[0]);
-  console.log(jobs.map((j) => `${j.file}  [${j.pose}] ${j.title}`).join("\n"));
-} else if (args[0] === "--poses") {
-  const { POSES } = await import(pathToFileURL(join(here, "art.js")).href).catch(() => ({}));
-  const all = POSES ? Object.keys(POSES) : [...art.matchAll(/^  (\w+): \(/gm)].map((m) => m[1]);
-  const names = args[2] ? args[2].split(",") : all; // 일부만: --poses 파일.jpg shush,sign
-  const tiers = ["morning", "afternoon", "evening", "night", "last", "done"];
-  writeFileSync(args[1], render(names.map((pose, i) => ({ tier: tiers[i % 6], pose, say: pose === "sign" ? "성경 읽어" : pose, title: pose })), { sheet: args[2] ? 2 : 3, label: true })[0]);
-  console.log(names.join(", "));
-} else {
-  const jobs = allJobs();
-  const outDir = join(root, "icons/notify");
-  rmSync(outDir, { recursive: true, force: true });
-  mkdirSync(outDir, { recursive: true });
-  render(jobs).forEach((buf, i) => writeFileSync(join(outDir, jobs[i].file), buf));
-  console.log(`${jobs.length}장 구움 → icons/notify/`);
+function writeCatalog(file = join(root, "docs/reminder-catalog.md")) {
+  const msgs = loadMessages();
+  const lines = [
+    "# 통독 리마인드 문구·양 그림 목록",
+    "",
+    "이 목록은 `sw.js`의 `MESSAGES` 데이터에서 생성했습니다. 알림 제목·본문, 양의 포즈, 그림 말풍선, 조건, 연결된 이미지 파일을 한 행씩 보여 줍니다.",
+    "",
+    `현재 문구 ${Object.values(msgs).reduce((n, rows) => n + rows.length, 0)}개, 생성 이미지 ${allJobs().length}장입니다. 그림 벡터 포즈 설계는 \`tools/notify-art/art.js\`의 \`POSES\`에 있습니다.`,
+    "",
+  ];
+  for (const [tier, rows] of Object.entries(msgs)) {
+    lines.push(`## ${tier} (${rows.length}개)`, "", "| # | 알림 제목 | 알림 본문 | 양 포즈 | 그림 말풍선 | 조건 | 이미지 |", "|---:|---|---|---|---|---|---|");
+    rows.forEach(([title, body, pose, say = "", condition = ""], i) => {
+      const cell = (v) => String(v).replace(/\|/g, "\\|").replace(/\r?\n/g, "<br>");
+      lines.push(`| ${i + 1} | ${cell(title)} | ${cell(body)} | \`${cell(pose)}\` | ${cell(say)} | ${cell(condition || "항상")} | [그림 보기](../icons/notify/${tier}-${i}.jpg) |`);
+    });
+    lines.push("");
+  }
+  mkdirSync(dirname(file), { recursive: true });
+  writeFileSync(file, lines.join("\n"));
+  return lines.length;
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const args = process.argv.slice(2);
+  if (args[0] === "--catalog") {
+    const count = writeCatalog(args[1] ? resolve(args[1]) : undefined);
+    console.log(`문구·양 그림 목록 생성: ${count}줄`);
+  } else if (args[0] === "--sheet") {
+    const jobs = allJobs().sort(() => Math.random() - 0.5).slice(0, Number(args[2]) || 6)
+      .map((j) => ({ ...j, title: j.title.replace("{streak}", "12"), body: j.body.replace(/\{portion\}/g, "시편 23편").replace("{streak}", "12") }));
+    writeFileSync(args[1], render(jobs, { sheet: 2, label: true })[0]);
+    console.log(jobs.map((j) => `${j.file}  [${j.pose}] ${j.title}`).join("\n"));
+  } else if (args[0] === "--poses") {
+    const { POSES } = await import(pathToFileURL(join(here, "art.js")).href).catch(() => ({}));
+    const all = POSES ? Object.keys(POSES) : [...art.matchAll(/^  (\w+): \(/gm)].map((m) => m[1]);
+    const names = args[2] ? args[2].split(",") : all; // 일부만: --poses 파일.jpg shush,sign
+    const tiers = ["morning", "afternoon", "evening", "night", "last", "done"];
+    writeFileSync(args[1], render(names.map((pose, i) => ({ tier: tiers[i % 6], pose, say: pose === "sign" ? "성경 읽어" : pose, title: pose })), { sheet: args[2] ? 2 : 3, label: true })[0]);
+    console.log(names.join(", "));
+  } else {
+    const jobs = allJobs();
+    const outDir = join(root, "icons/notify");
+    rmSync(outDir, { recursive: true, force: true });
+    mkdirSync(outDir, { recursive: true });
+    render(jobs).forEach((buf, i) => writeFileSync(join(outDir, jobs[i].file), buf));
+    console.log(`${jobs.length}장 구움 → icons/notify/`);
+  }
 }
