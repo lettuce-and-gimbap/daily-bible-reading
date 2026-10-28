@@ -59,14 +59,13 @@ function faceMarks(spec) {
   const eyeWidth = eyes === "squint" ? 3.5 : 2.8;
   s += line(eyeCurves[0], "#594A43", eyeWidth) + line(eyeCurves[1], "#594A43", eyeWidth);
   if (has("blush")) s += ell(-19, 7, 6, 3.2, C.blush, 'opacity="0.6"') + ell(19, 7, 6, 3.2, C.blush, 'opacity="0.6"');
-  // 무표정·삐죽 입은 평소의 작은 미소와 확실히 다르게 그린다.
-  if (has("pout")) s += line("M-8,14 Q0,8 8,14", "#594A43", 3.5) + line("M-8,14 L-12,12 M8,14 L12,12", "#594A43", 2.5);
-  else if (has("smirk")) s += line("M-5,13 Q2,16 8,9", "#594A43", 3.5) + px(8, 8, 2, 2, "#594A43");
-  else if (has("tremble")) s += line("M-7,13 L-3,11 L0,15 L4,11 L8,13", "#594A43", 2.8);
-  else if (has("open")) s += ell(0, 13, 4, 5, "#80566A");
+  // 입은 물결·지그재그 대신 짧은 선이나 작은 한 번의 미소 곡선으로 그린다.
+  if (has("pout")) s += line("M-5,14 L0,12 L5,14", "#594A43", 2.8);
+  else if (has("smirk")) s += line("M-4,14 L5,11", "#594A43", 2.8);
+  else if (has("tremble")) s += line("M-5,13 L5,13", "#594A43", 2.6);
+  else if (has("open") || has("o")) s += ell(0, 13, 3.5, 4.5, "#80566A");
   else if (has("flat")) s += line("M-7,13 L7,13", "#594A43", 3);
-  else s += px(-5, 11, 2, 2, "#594A43") + px(-3, 13, 2, 2, "#594A43") +
-    px(-1, 14, 4, 2, "#594A43") + px(3, 12, 2, 2, "#594A43") + px(5, 10, 2, 2, "#594A43");
+  else s += line("M-4,12 Q0,16 4,12", "#594A43", 2.8);
   if (has("tears")) s += line("M-10,4 Q-12,16 -10,26", C.tear, 4, 'opacity="0.85"') + line("M10,4 Q12,16 10,26", C.tear, 4, 'opacity="0.85"');
   if (has("sweat")) s += sweatDrop(28, -22, 0.7);
   // 표정 효과 중 'anger' 표시는 불필요하게 화난 인상을 주므로 양 그림에는 적용하지 않는다.
