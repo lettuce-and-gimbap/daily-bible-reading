@@ -29,6 +29,16 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  assert.match(get('pair-214').replyLines[0],/하눈이 우리 수염을 깎고 옷을 잘라/);
  assert.match(get('pair-218').replyLines[0],/타작마당과 번제에 쓸 소와 땔 나무와 곡식/);
  assert.match(get('pair-221').replyLines[0],/성전 건축을 위해 금과 은과 보석/);
+ assert.match(get('pair-psa-52-ahimelech-david').lines[1],/진설병과 골리앗의 칼/);
+ assert.match(get('pair-176').ref,/2사무엘하|사무엘하 17:27–29/);
+ assert.match(get('pair-176').detail,/밀·보리.*꿀·버터·양·치즈/);
+ assert.match(get('pair-222').detail,/백향목·잣나무·백단목.*밀·보리·포도주·기름/);
+ assert.match(get('pair-244').detail,/금·은 접시와 대접.*5,400개/);
+ assert.ok(get('pair-260').lines.every(line=>/느헤미야를 죽이러/.test(line)&&!/왕을 죽이러/.test(line)));
+ assert.match(get('pair-260').detail,/도비야와 산발랏.*성전에 숨어 죄를 짓게/);
+ assert.match(get('pair-hag-2-haggai-priests').lines[1],/떡·국·포도주·기름/);
+ assert.match(get('pair-hag-2-haggai-priests').replyLines[1],/시체를 만져 부정해진 사람이 닿은 음식/);
+ assert.match(get('pair-pro-1-wisdom-fool').detail,/두려움과 재앙.*응답을 얻지 못/);
  assert.match(get('pair-sng-5-woman-daughters').lines[1],/사랑하는 이가 어디로 갔는지/);
  assert.match(get('pair-66').lines[0],/라헬을 아내로 맞기 위해.*7년/);
  assert.doesNotMatch(get('pair-66').lines.join(' '),/그만큼/);
@@ -212,7 +222,7 @@ test('역대하 인간 관계선 152개와 개혁·전쟁·성전 장면의 대�
  const context=buildChapterDialogue(chapters);let audited=0;
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
  assert.equal(audited,152);
- const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목을|후람\(장인\)/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 말하겠/,/더 무겁게/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/판결하겠습니다/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/여호와께 경배|레위 사람들이/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/왕으로 세움을/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','이스라엘과 유다 백성',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/화살에 맞/]];
+ const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목|기술자 후람/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 말하겠/,/더 무겁게/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/판결하겠습니다/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/여호와께 경배|레위 사람들이/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/왕으로 세움을/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','이스라엘과 유다 백성',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/화살에 맞/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const oldMen=PAIR_DIALOGUE.find(entry=>entry.id==='pair-224');assert.doesNotMatch(oldMen.lines[1],/전갈로 다스리겠다고/);
  const youngMen=PAIR_DIALOGUE.find(entry=>entry.id==='pair-225');assert.doesNotMatch(youngMen.lines[1],/전갈로 다스리겠다고/);
