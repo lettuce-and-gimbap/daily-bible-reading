@@ -4410,16 +4410,6 @@
           "weight": 1,
           "verses": "14",
           "note": "암몬 자손의 왕 바알리스가 이스마엘을 보내 그달리야를 죽이려 했어요."
-        },
-        {
-          "from": "이스마엘",
-          "to": "그달리야",
-          "label": "노린 자",
-          "kind": "conflict",
-          "directed": true,
-          "weight": 2,
-          "verses": "14",
-          "note": "이스마엘은 왕족으로서 그달리야의 목숨을 노렸어요."
         }
       ],
       "places": [
