@@ -2031,3 +2031,21 @@ test('데살로니가후서의 공동 발신자 외에 수신 공동체·미래 
  assert.equal(resolveIdentity('실루아노',{code:'2th',chapter:1}).id,resolveIdentity('실라',{code:'act',chapter:15}).id);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),14);
 });
+
+test('디모데전서의 실명 반대자와 안수 관계는 보존하고 교회 직분·비유·과거 인물을 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/1ti.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'1ti',name:'디모데전서',chap,data:summary.chapters[String(chap)]}]).cast.map(p=>p.name);
+ for(const name of ['바울','디모데','후메내오','알렉산더'])assert.ok(cast(1).includes(name));
+ for(const name of ['다른 교훈 가르치는 자들','예수'])assert.ok(!cast(1).includes(name));
+ for(const name of ['아담','하와','임금들과 높은 사람들','예수'])assert.ok(!cast(2).includes(name));
+ for(const name of ['감독','집사','마귀','예수'])assert.ok(!cast(3).includes(name));
+ for(const name of ['귀신','미혹하는 자들'])assert.ok(!cast(4).includes(name));
+ assert.ok(cast(4).includes('장로의 회'));
+ for(const name of ['참 과부','젊은 과부','장로들','범죄한 자들'])assert.ok(!cast(5).includes(name));
+ for(const name of ['종들','부한 자들','본디오 빌라도','예수'])assert.ok(!cast(6).includes(name));
+ assert.ok(summary.chapters['1'].rels.some(r=>r.from==='바울'&&r.to==='알렉산더'&&r.verses==='20'));
+ assert.equal(resolveIdentity('장로의 회',{code:'1ti',chapter:4}).kind,'group');
+ assert.equal(resolveIdentity('귀신',{code:'1ti',chapter:4}).kind,'spiritual');
+ assert.equal(resolveIdentity('후메내오',{code:'1ti',chapter:1}).id,resolveIdentity('후메내오',{code:'2ti',chapter:2}).id);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),28);
+});
