@@ -194,6 +194,12 @@ test('열왕기하 관계선 154개가 모두 상호작용 대상이고 중요 �
  const naaman=PAIR_DIALOGUE.find(entry=>entry.id==='pair-195');assert.match(naaman.detail,/사자를 보내/);
  const lepers=PAIR_DIALOGUE.find(entry=>entry.id==='pair-198');assert.equal(lepers.target,'성읍 문지기');assert.match(lepers.detail,/문지기의 응답은 본문에 직접 기록되지 않아 재구성/);
  const elishaHazael=PAIR_DIALOGUE.find(entry=>entry.id==='pair-199');assert.equal(elishaHazael.speaker,'엘리사');assert.match(elishaHazael.lines[0],/나을 것이라고/);
+ const succession=PAIR_DIALOGUE.find(entry=>entry.id==='pair-16');
+ assert.equal(succession.replyLines.length,succession.lines.length,'엘리사의 각 요청에는 엘리야의 응답이 있어야 한다');
+ const master=context.people.find(person=>person.name==='엘리야'&&person.chap===2),disciple=context.people.find(person=>person.name==='엘리사'&&person.chap===2);
+ const successionRelation=context.relations.find(relation=>relation.from===master&&relation.to===disciple||relation.from===disciple&&relation.to===master);
+ assert.ok(successionRelation);
+ assert.ok(relationshipLines(disciple,master,successionRelation,null,{random:()=>.99}).every(line=>typeof line.text==='string'&&line.text.length>0),'마지막 변형에서도 양쪽 말풍선이 비지 않는다');
  const joash=PAIR_DIALOGUE.find(entry=>entry.id==='pair-202');assert.match(joash.detail,/요아스의 답을 기록하지 않으므로/);
  const envoys=PAIR_DIALOGUE.find(entry=>entry.id==='pair-207');assert.match(envoys.detail,/양쪽 발화는 사건을 잇는 창작 재구성/);assert.doesNotMatch(envoys.lines[1],/포로/);
  const necho=PAIR_DIALOGUE.find(entry=>entry.id==='pair-209');assert.match(necho.ref,/역대하 35:20–22/);assert.match(necho.detail,/어떻게 답했는지 직접 싣지 않아/);
