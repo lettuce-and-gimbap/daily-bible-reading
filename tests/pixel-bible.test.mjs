@@ -6,6 +6,7 @@ import {speechView,BUBBLE_LIMIT,objectContextSpeech} from '../js/features/pixel-
 import {scopeChapterSummary} from '../js/features/pixel-bible/qt-scope.js';
 import {scenesForChapters} from '../js/features/pixel-bible/scenes.js';
 import {isMentionOnlyPerson,mentionOnlyChapterNames} from '../js/features/pixel-bible/mention-only.js';
+import {resolveIdentity} from '../js/features/pixel-bible/identity.js';
 
 test('픽셀바이블의 표기 범위는 현재 월드 장을 기본값으로 보여준다',()=>{
  assert.deepEqual(initialWorldRange([{code:'2ki',chap:18}]),{code:'2ki',start:18,end:18});
@@ -1990,4 +1991,18 @@ test('빌립보서의 실제 옥중 동역자와 유오디아·순두게 공동�
  for(const name of ['유오디아','순두게'])assert.ok(four.rels.some(r=>r.from==='바울'&&r.to===name&&r.verses==='2-3'));
  const pair=four.rels.find(r=>r.from==='유오디아'&&r.to==='순두게');assert.equal(pair.label,'복음 사역 동역자');assert.match(pair.note,/본문이 말하지 않아요/);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
+});
+
+test('골로새서는 서신 수신자와 일반 가정 역할을 분리하고 마가·두기고·오네시모 등 문안 동역자를 식별한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/col.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'col',name:'골로새서',chap,data:summary.chapters[String(chap)]}]).cast;
+ for(const name of ['바울','디모데','에바브라'])assert.ok(cast(1).some(p=>p.name===name));
+ assert.ok(!cast(1).some(p=>p.name==='골로새 성도들'));
+ for(const name of ['라오디게아 성도들','거짓 교사들'])assert.ok(!cast(2).some(p=>p.name===name));
+ for(const name of ['아내들과 남편들','자녀들과 아비들','종들'])assert.ok(!cast(3).some(p=>p.name===name));
+ for(const name of ['두기고','오네시모','아리스다고','요한 마가','에바브라','누가','데마','눔바','아킵보'])assert.ok(cast(4).some(p=>p.name===name),`골로새서 4장 현재 동역자·직접 문안 대상 ${name}`);
+ assert.ok(!cast(4).some(p=>p.name==='바나바'));
+ assert.equal(resolveIdentity('마가',{code:'col',chapter:4}).id,resolveIdentity('요한 마가',{code:'act',chapter:15}).id);
+ assert.equal(cast(4).find(p=>p.name==='요한 마가').name,'요한 마가');
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),20);
 });

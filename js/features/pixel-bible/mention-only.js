@@ -108,6 +108,12 @@ const CHAPTERS = {
   'php.2': ['빌립보 성도들', '예수'],
   'php.3': ['빌립보 성도들', '개들과 행악하는 자들', '십자가의 원수들', '예수'],
   'php.4': ['빌립보 성도들', '멍에를 같이한 자', '예수'],
+  'col.1': ['골로새 성도들', '예수'],
+  'col.2': ['골로새 성도들', '라오디게아 성도들', '거짓 교사들', '예수'],
+  'col.3': ['골로새 성도들', '아내들과 남편들', '자녀들과 아비들', '종들', '예수'],
+  // Chapter 4 identifies Paul's letter carriers and coworkers. Barnabas is
+  // only identified as Mark's relative; he did not send a greeting here.
+  'col.4': ['골로새 성도들', '바나바'],
   'act.3': ['예수', '모세', '아브라함'],
   'act.4': ['예수'],
   'act.7': ['아브라함', '요셉', '모세', '솔로몬'],
