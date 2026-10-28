@@ -230,7 +230,7 @@ self.addEventListener("notificationclick", (event) => {
 
 // 화면 파일(HTML·스크립트·스타일)과 픽셀 자료실 목록은 매번 서버에 확인해서 받음. 브라우저 캐시의 예전 파일이 먼저 떠서
 // 접속 직후 버전이 바뀌는 일을 막음. 오프라인이면 마지막으로 받아 둔 파일을 씀
-const SHELL_CACHE = "app-shell-v1";
+const SHELL_CACHE = "app-shell-v2";
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;

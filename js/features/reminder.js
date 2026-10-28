@@ -194,5 +194,5 @@ function showStatsToast(msg) {
 }
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js").catch(() => { /* 로컬 파일 등 등록 불가 환경 */ });
+  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(() => { /* 로컬 파일 등 등록 불가 환경 */ });
 }

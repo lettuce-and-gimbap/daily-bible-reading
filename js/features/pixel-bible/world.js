@@ -343,7 +343,7 @@ export async function mountPixelWorld(shell, options) {
     panel.innerHTML='<header><b>대사 쉽게 이해하기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"><p class="pb-detail-line"></p><section class="pb-detail-context"><h3>이런 상황이에요</h3><p></p></section><section class="pb-detail-evidence"><h3>발화의 근거</h3><p></p></section><button class="pb-button" data-action="detail-passage">관련 성경 본문 보기</button></div>';
     panel.querySelector('.pb-detail-line').textContent=choice.text;panel.querySelector('.pb-detail-context').hidden=!explanation;
     if(explanation)panel.querySelector('.pb-detail-context p').innerHTML=emphasizedContext(explanation,contextTerms({...choice,detailText:explanation}));
-    const evidence=panel.querySelector('.pb-detail-evidence');evidence.hidden=!parsed?.verses?.length;if(parsed?.verses?.length)evidence.querySelector('p').textContent=`이 발화는 ${reference} 본문을 바탕으로 했어요. 구절 범위 전체를 열어 근거 문맥을 확인할 수 있어요.`;
+    const evidence=panel.querySelector('.pb-detail-evidence');evidence.hidden=!parsed?.verses?.length;if(parsed?.verses?.length)evidence.querySelector('p').textContent=`이 발화는 ${reference} 본문을 바탕으로 했어요. 근거가 된 구절 범위 전체를 열어 문맥을 확인할 수 있어요.`;
     const link=panel.querySelector('[data-action="detail-passage"]');link.hidden=!parsed?.verses?.length;link.dataset.reference=reference||'';link.dataset.terms=JSON.stringify(contextTerms({...choice,detailText:explanation}));link.textContent=parsed?.verses?.length?`${reference} 본문 전체 보기`:'관련 성경 본문 보기';if(parsed?.verses?.length)link.setAttribute('aria-label',`${reference} 본문 전체 보기`);
     shell.append(panel);panel.querySelector('button').focus();
   }
