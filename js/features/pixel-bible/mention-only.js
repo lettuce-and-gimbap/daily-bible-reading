@@ -350,7 +350,8 @@ const CHAPTERS = {
   'heb.12': ['허다한 증인들', '성도들', '에서', '모세', '아벨'],
   'heb.13': ['성도들', '갇힌 자들', '인도하는 자들', '천사들', '디모데'],
   'isa.51': ['아브라함'],
-  'jas.2': ['아브라함'],
+  'jas.2': ['아브라함', '이삭', '라합'],
+  'jas.5': ['욥', '엘리야'],
   'jer.11': ['조상들'],
   'jer.15': ['모세와 사무엘', '므낫세'],
   'jer.35': ['요나답'],
@@ -567,6 +568,15 @@ export function withoutMentionOnlyActors(scene, mentionOnlyNames = []) {
     actions: Object.fromEntries(Object.entries(scene.actions || {}).filter(([name]) => actors.includes(name))),
     actorLines: Object.fromEntries(Object.entries(scene.actorLines || {}).filter(([name]) => actors.includes(name))),
     passiveMotions: Object.fromEntries(Object.entries(scene.passiveMotions || {}).filter(([name]) => actors.includes(name))),
+    animation: scene.animation ? {
+      ...scene.animation,
+      lead: actors.includes(scene.animation.lead) ? scene.animation.lead : null,
+      target: actors.includes(scene.animation.target) ? scene.animation.target : null,
+      beats: (scene.animation.beats || []).map(beat => ({
+        ...beat,
+        actor: actors.includes(beat.actor) ? beat.actor : null,
+      })),
+    } : scene.animation,
   };
 }
 

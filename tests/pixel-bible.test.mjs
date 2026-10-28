@@ -734,10 +734,13 @@ test('시편 1–120편의 표제 인물과 회고 인물은 현장 캐스트에
 
 test('본문 인물 색인의 언급 표시는 별도 사건 장면 배우 목록에도 적용한다',()=>{
  const mention={name:'언급된 조상',role:'본문에 이름이 언급되는 인물 · 실제 현장 동석 여부는 구절에서 확인해요.'};
- const scene={id:'mention-check',code:'test',chapter:1,title:'과거 이야기',actors:[mention.name],object:'scroll',ref:'시험 1:1',verseNumbers:[1],lines:[],study:'설명',animation:{version:2,mode:'illustration',motif:'symbolic',lead:null,target:null,setting:'vision',effect:'symbol',emotion:'neutral',prop:'scroll',beats:[],duration:1}};
+ const scene={id:'mention-check',code:'test',chapter:1,title:'과거 이야기',actors:[mention.name],object:'scroll',ref:'시험 1:1',verseNumbers:[1],lines:[],study:'설명',animation:{version:2,mode:'illustration',motif:'symbolic',lead:mention.name,target:mention.name,setting:'vision',effect:'symbol',emotion:'neutral',prop:'scroll',beats:[{action:'look',actor:mention.name}],duration:1}};
  const model=buildWorldModel([{code:'test',name:'시험',chap:1,data:{people:[mention],eventScenes:[scene]}}]);
  assert.ok(!model.cast.some(person=>person.name===mention.name));
  assert.deepEqual(model.scenes.find(item=>item.id===scene.id).actors,[]);
+ assert.equal(model.scenes.find(item=>item.id===scene.id).animation.lead,null);
+ assert.equal(model.scenes.find(item=>item.id===scene.id).animation.target,null);
+ assert.ok(model.scenes.find(item=>item.id===scene.id).animation.beats.every(beat=>beat.actor===null));
 });
 
 test('김밥은 16프레임으로 선명하게 구르고 음식 친구들은 고유 도안을 쓴다',async()=>{
@@ -2112,4 +2115,25 @@ test('히브리서는 역사적 본문 예시의 인물을 분리하고 비유·
  const relations=summary.chapters['11'].rels;
  for(const [from,to,verse]of [['이삭','야곱','20'],['이삭','에서','20'],['야곱','요셉의 아들들','21']])assert.ok(relations.some(r=>r.from===from&&r.to===to&&r.verses===verse),`${from}→${to} 관계는 본문 ${verse}절 근거가 있음`);
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),60);
+});
+
+test('야고보서는 편지 저자의 신원을 따로 두고 인용된 조상·선지자와 비유를 실제 출연자에서 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/jas.json',import.meta.url),'utf8'));
+ const cast=chap=>buildWorldModel([{code:'jas',name:'야고보서',chap,data:summary.chapters[String(chap)]}]).cast;
+ assert.equal(resolveIdentity('야고보',{code:'jas',chapter:1}).id,'person:james-epistle-author');
+ assert.equal(resolveIdentity('주 예수 그리스도',{code:'jas',chapter:1}).id,resolveIdentity('예수',{code:'jhn',chapter:1}).id);
+ assert.equal(resolveIdentity('부자',{code:'jas',chapter:2}).kind,'group');
+ assert.equal(resolveIdentity('고아와 과부',{code:'jas',chapter:1}).kind,'group');
+ for(const name of ['아브라함','이삭','라합'])assert.ok(!cast(2).some(p=>p.name===name),`야고보서 2장의 역사적 믿음 예시 ${name}은 현장 인물이 아님`);
+ for(const name of ['욥','엘리야'])assert.ok(!cast(5).some(p=>p.name===name),`야고보서 5장의 과거 사례 ${name}은 현장 인물이 아님`);
+ assert.ok(cast(5).some(p=>p.name==='야고보'));
+ assert.equal(resolveIdentity('야고보',{code:'jas',chapter:1}).id,resolveIdentity('야고보',{code:'jas',chapter:5}).id);
+ const ch3=cast(3);assert.ok(!ch3.some(p=>p.name==='무화과나무'),'열매 비유 속 무화과나무는 월드 식물이 아니다');
+ const eventBook=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/jas.json',import.meta.url),'utf8'));
+ const scene=buildWorldModel([{code:'jas',name:'야고보서',chap:2,data:{...summary.chapters['2'],eventScenes:eventBook.scenes.filter(s=>s.chapter===2)}}]).scenes.find(s=>s.id==='ot-jas-2-2');
+ assert.deepEqual(scene.actors,[]);assert.equal(scene.animation.lead,null);assert.equal(scene.animation.target,null);assert.ok(scene.animation.beats.every(beat=>beat.actor===null));
+ assert.ok(summary.chapters['5'].people.some(p=>p.name==='엘리야'));
+ assert.ok(summary.chapters['5'].rels.some(r=>r.from==='엘리야'&&r.to==='하나님'&&r.verses==='17-18'));
+ assert.match(summary.chapters['2'].rels.find(r=>r.from==='아브라함'&&r.to==='이삭').note,/이삭은 죽지 않았어요/);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),22);
 });

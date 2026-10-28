@@ -40,6 +40,8 @@ export function chapterCreatures(c){
  // Hebrews 9–10 discuss sacrificial oxen and goats as theological examples;
  // they are not living animals in the depicted letter scene.
  if(c.code==='heb'&&[9,10].includes(Number(c.chap))){found.delete('ox');found.delete('goat');}
+ // James 3 uses the fig tree as a rhetorical example, not as a present plant.
+ if(c.code==='jas'&&Number(c.chap)===3)found.delete('fig-tree');
  // 계시록의 어린 양은 인간형 동물/양 떼로 생성하지 않는다.
  if(c.code==='rev'&&!/양 떼|양을 먹/.test(c.data?.story||''))found.delete('sheep');
  return [...found.values()];
