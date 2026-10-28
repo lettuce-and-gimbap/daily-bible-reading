@@ -2167,3 +2167,19 @@ test('베드로후서는 편지 화자 별칭을 합치고 과거 심판 예시�
  for(const [chapter,names]of [[1,['예수']],[2,['노아','롯','발람','범죄한 천사들']],[3,['바울','예수']]])for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'2pe',chapter}));
  assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),13);
 });
+
+test('요한일서는 사도 요한의 저자 신원을 고정하고 인용된 형제·그리스도를 현재 장면에서 분리한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/1jn.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await fs.promises.readFile(new URL('../data/pixel-bible/events/1jn.json',import.meta.url),'utf8'));
+ const cast=chapter=>buildWorldModel([{code:'1jn',name:'요한일서',chap:chapter,data:{...summary.chapters[String(chapter)],eventScenes:events.scenes.filter(s=>s.chapter===chapter)}}]).cast;
+ assert.equal(resolveIdentity('요한',{code:'1jn',chapter:1}).id,resolveIdentity('요한',{code:'1jn',chapter:5}).id);
+ assert.equal(resolveIdentity('요한',{code:'1jn',chapter:1}).id,resolveIdentity('요한',{code:'jhn',chapter:21,role:'예수께서 사랑하시는 제자'}).id);
+ for(let chapter=1;chapter<=5;chapter++)assert.ok(!cast(chapter).some(p=>p.name==='예수'),`요한일서 ${chapter}장의 예수님 언급은 현재 서신 장면의 동석이 아님`);
+ for(const name of ['자녀들','하나님의 자녀들','적그리스도','형제를 미워하는 자'])assert.equal(resolveIdentity(name,{code:'1jn',chapter:2}).kind,'group');
+ for(const name of ['가인','아벨'])assert.ok(!cast(3).some(p=>p.name===name),'가인과 아벨은 사랑을 설명하는 과거 예시');
+ const ch5=buildWorldModel([{code:'1jn',name:'요한일서',chap:5,data:{...summary.chapters['5'],eventScenes:events.scenes.filter(s=>s.chapter===5)}}]);
+ assert.deepEqual(ch5.scenes.find(s=>s.id==='ot-1jn-5-1').actors,[]);
+ assert.equal(ch5.scenes.find(s=>s.id==='ot-1jn-5-1').animation.lead,null);
+ for(const [chapter,names]of [[1,['예수']],[2,['예수']],[3,['가인','아벨','예수']],[4,['예수']],[5,['예수']]])for(const name of names)assert.ok(isMentionOnlyPerson({name},{code:'1jn',chapter}));
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),21);
+});

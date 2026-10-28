@@ -74,6 +74,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
   if(code==='2pe'&&['베드로','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
+  if(code==='1jn'&&name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
   if(name==='게바')return {...id('person','베드로'),canonicalName:'베드로'};
   if(['실라','실루아노'].includes(name))return {...id('person','silas'),canonicalName:'실라'};
   if(name==='후메내오'&&['1ti','2ti'].includes(code))return id('person','hymenaeus');
@@ -120,7 +121,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='jer'&&Number(chapter)===51&&name==='스라야')return {...id('person','seraiah-son-of-neriah'),canonicalName:'스라야(네리야의 아들)'};
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return {...id('person','seraiah-high-priest-jer52'),canonicalName:'스라야(대제사장)'};
   if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
-  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name)||code==='2pe'&&name==='거짓 선생들')return id('group',name);
+  if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name)||code==='2pe'&&name==='거짓 선생들'||code==='1jn'&&/^(자녀들|하나님의 자녀들|적그리스도|형제를 미워하는 자)$/.test(name))return id('group',name);
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
