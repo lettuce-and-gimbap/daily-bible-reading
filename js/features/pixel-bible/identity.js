@@ -78,6 +78,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   // The elder who writes 2–3 John is traditionally identified with John;
   // keep the two letter voices together without treating the title as a new person.
   if(['2jn','3jn'].includes(code)&&name==='장로')return {...id('person','john-apostle'),canonicalName:'요한'};
+  if(code==='3jn'&&name==='디오드레베')return {...id('person','diotrephes'),canonicalName:'디오드레베'};
+  if(code==='3jn'&&name==='데메드리오')return {...id('person','demetrius-third-john'),canonicalName:'데메드리오'};
   if(name==='게바')return {...id('person','베드로'),canonicalName:'베드로'};
   if(['실라','실루아노'].includes(name))return {...id('person','silas'),canonicalName:'실라'};
   if(name==='후메내오'&&['1ti','2ti'].includes(code))return id('person','hymenaeus');

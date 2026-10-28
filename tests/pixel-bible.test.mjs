@@ -2196,3 +2196,17 @@ test('요한이서는 장로 저자·교회 수신자를 구분하고 육체로 
  assert.ok(isMentionOnlyPerson({name:'예수'},{code:'2jn',chapter:1}));
  assert.equal(summary.chapters['1'].rels.length,4);
 });
+
+test('요한삼서는 가이오·디오드레베·데메드리오를 각각 구별하고 장로 저자를 요한으로 연결한다',async()=>{
+ const summary=JSON.parse(await fs.promises.readFile(new URL('../data/summary/3jn.json',import.meta.url),'utf8'));
+ const model=buildWorldModel([{code:'3jn',name:'요한삼서',chap:1,data:summary.chapters['1']}]);
+ const names=model.cast.map(p=>p.name);
+ for(const name of ['요한','가이오','디오드레베','데메드리오','나그네 된 형제들'])assert.ok(names.includes(name),`요한삼서에서 실제로 문안·증언·대립의 대상인 ${name}`);
+ assert.equal(resolveIdentity('장로',{code:'3jn',chapter:1}).id,resolveIdentity('요한',{code:'1jn',chapter:1}).id);
+ assert.notEqual(resolveIdentity('가이오',{code:'3jn',chapter:1}).id,resolveIdentity('가이오',{code:'act',chapter:20}).id);
+ assert.notEqual(resolveIdentity('가이오',{code:'3jn',chapter:1}).id,resolveIdentity('가이오',{code:'rom',chapter:16}).id);
+ assert.notEqual(resolveIdentity('디오드레베',{code:'3jn',chapter:1}).id,resolveIdentity('데메드리오',{code:'3jn',chapter:1}).id);
+ assert.equal(resolveIdentity('나그네 된 형제들',{code:'3jn',chapter:1}).kind,'group');
+ for(const [from,to,verse]of [['장로','가이오','1-2'],['가이오','나그네 된 형제들','5-6'],['디오드레베','장로','9-10'],['장로','데메드리오','12']])assert.ok(summary.chapters['1'].rels.some(r=>r.from===from&&r.to===to&&r.verses===verse),`${from}→${to} has text evidence ${verse}`);
+ assert.equal(summary.chapters['1'].rels.length,5);
+});
