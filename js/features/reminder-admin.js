@@ -2,7 +2,15 @@
 let reminderAdminArtScript = null;
 
 function reminderAdminClone(value) {
-  return JSON.parse(JSON.stringify(value));
+  const copy = JSON.parse(JSON.stringify(value));
+  for (const rows of Object.values(copy)) {
+    for (const row of rows) {
+      for (let index = 3; index < row.length; index++) {
+        if (row[index] == null) row[index] = "";
+      }
+    }
+  }
+  return copy;
 }
 
 async function reminderAdminDefaults() {
@@ -128,6 +136,7 @@ async function renderReminderAdmin(header) {
       <button type="button" class="btn text small" data-reminder-reset>서버 수정본 지우기</button>
     </div>
     <p class="muted small reminder-admin-status" role="status">${saved.messages ? `서버 저장본 · ${new Date(saved.updated).toLocaleString()}` : "기본 문구를 보고 있어요."}</p>`;
+  app.querySelector("section.card")?.remove();
   app.append(root);
 
   const title = root.querySelector("[data-reminder-title]");
@@ -179,6 +188,8 @@ async function renderReminderAdmin(header) {
     const key = `${entry.tier}:${entry.index}`;
     row[2] = asset.pose;
     row[3] = say.value;
+    row[3] ??= "";
+    row[4] ??= "";
     row[5] = `${PUSH_SERVER}/reminder-art/${entry.tier}/${entry.index}.jpg?v=${Date.now()}`;
     artDeletes.delete(key);
     artNeedsRender.add(key);
@@ -201,6 +212,8 @@ async function renderReminderAdmin(header) {
     row[2] = asset.pose;
     row[3] = asset.say;
     say.value = asset.say;
+    row[3] ??= "";
+    row[4] ??= "";
     row[5] = asset.src;
     artUpdates.delete(key);
     artNeedsRender.delete(key);

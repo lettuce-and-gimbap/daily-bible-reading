@@ -106,3 +106,20 @@ test("admin reminder review has manual navigation without auto-advance controls"
   assert.match(ui, /reminderAdminHasCurrentApi/);
   assert.match(ui, /Worker가 최신 알림 저장 API를 제공하지 않습니다/);
 });
+
+test("JSON round-trip of a four-cell message preserves optional condition when artwork is added", async () => {
+  const { env, saved } = mockEnv();
+  const messages = emptyMessages();
+  const row = ["제목", "본문", "lounge", "새 말풍선"];
+  row[5] = "https://daily-bible-reminder.gimbap-lettuce.workers.dev/reminder-art/evening/0.jpg?v=123";
+  messages.evening.push(row);
+  const payload = JSON.stringify({ messages, art: { "evening:0": Buffer.from([255,216,0,255,217]).toString("base64") } });
+  assert.equal(JSON.parse(payload).messages.evening[0][4], null);
+  const response = await account("/account/admin/reminder-messages", new Request("https://worker.test/account/admin/reminder-messages", {
+    method: "PUT", headers: { Authorization: "Bearer session-token" }, body: payload,
+  }), env, responseJson);
+  assert.equal(response.status, 200, JSON.stringify(await response.json()));
+  const stored = JSON.parse(saved.get("admin:reminder-messages"));
+  assert.equal(stored.messages.evening[0][4], "");
+  assert.equal(stored.messages.evening[0][3], "새 말풍선");
+});

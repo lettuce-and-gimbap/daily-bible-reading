@@ -77,6 +77,18 @@ export async function account(pathname, request, env, json) {
       await env.SUBS.delete(REMINDER_MESSAGE_KEY);
       return json({ ok: true, messages: null, updated: Date.now() });
     }
+    // JSON serializes omitted optional array slots as null. Normalize only optional slots.
+    if (body.messages && typeof body.messages === "object") {
+      for (const rows of Object.values(body.messages)) {
+        if (!Array.isArray(rows)) continue;
+        for (const row of rows) {
+          if (!Array.isArray(row)) continue;
+          for (let index = 3; index < row.length; index++) {
+            if (row[index] == null) row[index] = "";
+          }
+        }
+      }
+    }
     const text = JSON.stringify(body.messages);
     const messageBytes = new TextEncoder().encode(text).byteLength;
     if (messageBytes > MAX_REMINDER_DB_BYTES) {
