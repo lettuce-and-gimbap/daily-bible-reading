@@ -1068,6 +1068,16 @@ test('상호작용 말풍선은 첫 배치 방향을 유지하며 인물이나 �
  assert.equal(cameraShifted.side,'left');assert.deepEqual([cameraShifted.left,cameraShifted.top],[225,140]);
 });
 
+test('관계 설명 말풍선은 좌우를 우선하고 캐릭터와 이미 놓인 말풍선을 피해 배치한다',async()=>{
+ const {chooseBubblePlacement}=await import('../js/features/pixel-bible/bubble-position.js');
+ const base={anchorX:500,anchorY:300,width:180,height:100,viewportWidth:1000,viewportHeight:700,scale:1};
+ const clear=chooseBubblePlacement({...base});assert.ok(['left','right'].includes(clear.side));
+ const actor={left:470,right:530,top:220,bottom:280};
+ const separated=chooseBubblePlacement({...base,characters:[actor],placed:[{left:300,right:480,top:250,bottom:350}]});
+ assert.equal((separated.right<=actor.left||separated.left>=actor.right||separated.bottom<=actor.top||separated.top>=actor.bottom),true);
+ assert.equal((separated.right<=300||separated.left>=480||separated.bottom<=250||separated.top>=350),true);
+});
+
 test('실제 배경의 물 영역에만 인물을 내려놓을 수 있도록 물 타일 경계를 제공한다',async()=>{
  const {waterAt,dryLanding}=await import('../js/features/pixel-bible/terrain-response.js');
  assert.equal(waterAt('lake',16,31),true);assert.equal(waterAt('lake',35,10),false);

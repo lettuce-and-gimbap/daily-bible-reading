@@ -934,6 +934,7 @@ test('요나서 네 장의 다섯 인간 관계선은 폭풍·경고·회개·�
  assert.equal(summary.chapters['2'].people.some(person=>person.name==='우상을 숭상하는 자'),false,'추상 집단은 물고기 뱃속 장면의 NPC가 아니다');
  const catalog=JSON.parse(fs.readFileSync('data/pixel-bible/people-catalog.json'));
  assert.equal(catalog.entries.find(person=>person.name==='큰 물고기').identities[0].kind,'animal');
+ assert.equal(catalog.entries.find(person=>person.name==='세 용사').identities[0].id,'group:three-warriors');
 });
 
 

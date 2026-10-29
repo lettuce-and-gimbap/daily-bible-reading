@@ -28351,9 +28351,9 @@
       "review": "unreviewed-label",
       "identities": [
         {
-          "kind": "unresolved",
-          "id": "unresolved:3 용사:1ch",
-          "status": "needs-review",
+          "kind": "group",
+          "id": "group:three-warriors",
+          "status": "reviewed-rule",
           "refs": [
             "1ch.11"
           ]

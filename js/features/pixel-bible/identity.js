@@ -73,6 +73,7 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
+  if(name==='세 용사')return {...id('group','three-warriors'),canonicalName:'세 용사'};
   if(code==='rev'){
     if(name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
     if(name==='다윗')return {...id('person','david'),canonicalName:'다윗'};

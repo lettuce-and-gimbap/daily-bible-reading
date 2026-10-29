@@ -15,7 +15,7 @@ import {physiqueFor} from './physique.js';
 import {contextTerms,emphasizedContext,emphasizePassage} from './context-emphasis.js';
 const displayPersonName=name=>(name==='불'?'불 왕':name).replace(/\s*[（(][^()（）]*의\s*(?:아들|딸|아내|남편)[^()（）]*[)）]/g,'').trim();
 import {speechContext} from './speech-context.js';
-import {captureBubblePlacement,pinnedBubblePlacement} from './bubble-position.js';
+import {captureBubblePlacement,pinnedBubblePlacement,chooseBubblePlacement} from './bubble-position.js';
 import {creatureCanUse} from './creatures.js?rev=pharaoh-so-classification-1';
 import {EncounterDirector} from './encounters.js';
 import {drawInteractionEffects} from './interaction-effects.js';
@@ -399,24 +399,7 @@ export async function mountPixelWorld(shell, options) {
       const a=interactionAnchor(other,TILE),ox=(a.x*v.scale+v.x)*r.width/canvas.width,oy=(a.y*v.scale+v.y)*r.height/canvas.height,p=physiqueFor(other.name,other.role,other.refs);
       return {left:ox-22*scale*p.width,right:ox+22*scale*p.width,top:oy-76*scale*p.height,bottom:oy-24*scale*p.height};
     });
-    const candidates=[
-      {side:'top',left:x-width/2,top:sprite.top-height-gap,cost:0},
-      {side:'top',left:x-width/2-30,top:sprite.top-height-gap,cost:1},
-      {side:'top',left:x-width/2+30,top:sprite.top-height-gap,cost:1},
-      {side:'left',left:sprite.left-width-gap,top:y-height/2,cost:2},
-      {side:'right',left:sprite.right+gap,top:y-height/2,cost:2},
-      {side:'bottom',left:x-width/2,top:sprite.bottom+gap,cost:3},
-      ...placed.flatMap(box=>[{side:'left',left:box.left-width-gap,top:box.top,cost:4},{side:'right',left:box.right+gap,top:box.top,cost:4},{side:'top',left:box.left,top:box.top-height-gap,cost:4},{side:'bottom',left:box.left,top:box.bottom+gap,cost:4}]),
-    ];
-    let best=null;
-    for(const candidate of candidates){
-      const left=Math.max(margin,Math.min(r.width-width-margin,candidate.left)),top=Math.max(margin,Math.min(r.height-height-margin,candidate.top));
-      const box={left,right:left+width,top,bottom:top+height};
-      const overlapArea=(a,b)=>Math.max(0,Math.min(a.right,b.right)-Math.max(a.left,b.left))*Math.max(0,Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top));
-      const actorOverlap=characters.reduce((sum,rect)=>sum+overlapArea(box,rect),0),bubbleOverlap=placed.reduce((sum,rect)=>sum+overlapArea(box,rect),0);
-      const score=candidate.cost+actorOverlap*10+bubbleOverlap*12;
-      if(!best||score<best.score)best={...box,score,side:candidate.side};
-    }
+    const best=chooseBubblePlacement({anchorX:x,anchorY:y,width,height,viewportWidth:r.width,viewportHeight:r.height,characters,placed,scale,margin,gap});
     el.style.left=`${Math.round(best.left)}px`;el.style.top=`${Math.round(best.top)}px`;
     el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-best.left))}px`);
     el.dataset.below=best.side==='bottom'?'true':'false';if(['left','right'].includes(best.side))el.dataset.side=best.side;else delete el.dataset.side;
