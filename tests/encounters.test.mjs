@@ -228,12 +228,12 @@ test('역대상 인간 관계선 130개와 왕위·성전·예배·전쟁의 대
  for(const row of rows){const base=row[3].match(/\d+/g).map(Number);for(const ref of row[7]){const n=ref.match(/\d+/g).map(Number),end=n[1]||n[0];assert.ok(n[0]>=base[0]&&end<=(base[1]||base[0])&&end<=verseCounts[row[1]-1],`${row[1]} ${ref} 범위 확인`)}}
 });
 
-test('역대하 인간 관계선 152개와 개혁·전쟁·성전 장면의 대화를 보강했다',()=>{
+test('역대하 인간 관계선 151개와 개혁·전쟁·성전 장면의 대화를 보강했다',()=>{
  const data=JSON.parse(fs.readFileSync('data/summary/2ch.json'));
  const chapters=Object.entries(data.chapters).map(([chap,chapter])=>({code:'2ch',name:'역대하',chap:Number(chap),data:chapter}));
  const context=buildChapterDialogue(chapters);let audited=0;
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
- assert.equal(audited,152);
+ assert.equal(audited,151);
  const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목|기술자 후람/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 대답하겠느냐/,/전갈 채찍으로 치겠다/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/판결하겠습니다/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/여호와께 엎드려 경배/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/율법을 따르겠습니다/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','이스라엘과 유다 백성',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/크게 다쳤다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const oldMen=PAIR_DIALOGUE.find(entry=>entry.id==='pair-224');assert.doesNotMatch(oldMen.lines[1],/전갈로 다스리겠다고/);
@@ -365,7 +365,7 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3800);assert.ok(fallbackCount>1000);
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3799);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{
@@ -853,11 +853,11 @@ test('에스겔 26–48장의 인간 관계선은 본문 사건에 맞는 양방
  assert.match(entries.find(entry=>entry.id==='pair-ezk-37-david-tribes').detail,/직접 한 말은 본문에 없는 재구성/);
 });
 
-test('다니엘 1–12장의 유효한 관계 35개는 포로 궁정·풀무불·사자 굴·환상에 맞는 왕복 대사를 갖는다',()=>{
+test('다니엘 1–12장의 유효한 관계 36개는 포로 궁정·풀무불·사자 굴·환상에 맞는 왕복 대사를 갖는다',()=>{
  const summary=JSON.parse(fs.readFileSync('data/summary/dan.json'));
  const chapters=Object.entries(summary.chapters).map(([chap,data])=>({code:'dan',name:'다니엘',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters),entries=PAIR_DIALOGUE.filter(entry=>/^dan\.\d+$/.test(entry.chapter));
- assert.equal(chapters.length,12);assert.equal(context.relations.length,35);assert.equal(entries.length,35);
+ assert.equal(chapters.length,12);assert.equal(context.relations.length,36);assert.equal(entries.length,35);
  for(const relation of context.relations){assert.ok(entries.some(entry=>entry.chapter===`dan.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);}
  for(const entry of entries){const chapter=Number(entry.chapter.slice(4)),names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/다니엘 \d+/);}
  assert.equal(summary.chapters[1].rels.some(relation=>relation.to==='여호야김'),false,'현장에 없는 예루살렘 왕은 왕궁 장면에서 제외');

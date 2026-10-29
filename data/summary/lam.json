@@ -48,7 +48,7 @@
         {"name":"하나님","role":"정하신 일을 이루신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"딸 시온","label":"진노하신 분","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 5","note":"주님이 원수처럼 노하셔서 성막과 성벽을 허무셨다고 시인이 탄식해요."},
+        {"from":"하나님","to":"딸 시온","label":"진노하신 분","kind":"conflict","directed":true,"weight":3,"verses":"1-2, 5","note":"주님이 원수처럼 노하셔서 야곱의 거처와 견고한 성들을 허무셨다고 시인이 탄식해요."},
         {"from":"거짓 선지자들","to":"딸 시온","label":"속인 선지자","kind":"conflict","directed":true,"weight":2,"verses":"14","note":"예언자들은 헛되고 어리석은 환상만 보고 죄를 지적하지 않아 포로가 되는 것을 막지 못했어요."},
         {"from":"원수들","to":"딸 시온","label":"조롱한 원수","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"지나가는 사람들이 손뼉을 치고 원수들은 입을 벌려 이를 갈며 우리가 삼켰다고 조롱했어요."},
         {"from":"딸 시온","to":"하나님","label":"마음을 쏟을 성","kind":"ally","directed":true,"weight":2,"verses":"18-19","note":"시인은 시온에게 밤새 마음을 물처럼 주 앞에 쏟아 부르짖으라고 권해요."}

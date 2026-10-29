@@ -28,7 +28,7 @@
         {"from":"하나님","to":"유다 백성","label":"변론하자 초청","kind":"ally","directed":true,"weight":3,"verses":"18","note":"하나님이 와서 서로 따져 보자고 부르세요. 죄가 진홍처럼 붉어도 양털처럼 희게 해 주시겠다는 초대예요."},
         {"from":"예루살렘의 관원들","to":"고아와 과부","label":"외면한 지도자","kind":"conflict","directed":true,"weight":2,"verses":"23","note":"지도자들이 뇌물을 좋아하고 고아와 과부의 송사를 맡아 주지 않아요."},
         {"from":"이사야","to":"하나님","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"1","note":"이 책은 아모스의 아들 이사야가 유다와 예루살렘에 대해 본 환상이에요. 이사야는 하나님의 말씀을 전하는 선지자예요."},
-        {"from":"이사야","to":"아모츠","label":"아들","kind":"family","directed":true,"weight":2,"verses":"표제","note":"표제의 아버지는 아모츠예요. 선지자 아모스와는 다른 사람입니다.","adminOnly":true}
+        {"from":"이사야","to":"아모츠","label":"아들","kind":"family","directed":true,"weight":2,"verses":"1절","note":"1절은 이사야를 아모스(히브리어로는 아모츠)의 아들이라고 해요. 아모스서의 선지자 아모스와는 다른 사람이에요.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"원두막처럼 홀로 남게 될 유다의 도성 예루살렘","weight":3},
@@ -53,7 +53,7 @@
       ],
       "rels": [
         {"from":"만방","to":"하나님","label":"배우러 올 민족","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"마지막 날에 모든 나라가 여호와의 산으로 와서 그분의 길을 배우고 그 길로 걸어요. 칼이 쟁기 날로 바뀌는 평화가 와요."},
-        {"from":"하나님","to":"교만한 자","label":"낮추실 분","kind":"conflict","directed":true,"weight":2,"verses":"11-12","note":"여호와의 날에는 높은 산과 망대와 사람의 교만이 다 낮아지고 하나님만 높임을 받으세요."},
+        {"from":"하나님","to":"교만한 자","label":"낮추실 분","kind":"conflict","directed":true,"weight":2,"verses":"11-15절","note":"여호와의 날에는 높은 산과 망대와 사람의 교만이 다 낮아지고 하나님만 높임을 받으세요."},
         {"from":"이사야","to":"야곱 족속","label":"빛으로 부른 이","kind":"ally","directed":true,"weight":2,"verses":"5","note":"이사야는 야곱 족속을 불러 여호와의 빛 가운데 행하자고 해요."}
       ],
       "places": [
@@ -153,8 +153,8 @@
       "rels": [
         {"from":"하나님","to":"이사야","label":"부르신 분","kind":"ally","directed":true,"weight":3,"verses":"8","note":"누구를 보낼까 하시는 주님의 물음에 이사야가 스스로 나서요."},
         {"from":"스랍","to":"이사야","label":"입술을 정결케 함","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"스랍이 제단의 숯으로 이사야의 입술에 대고 죄가 사해졌다고 해요."},
-        {"from":"이사야","to":"유다 백성","label":"보냄받은 선지자","kind":"ally","directed":true,"weight":2,"verses":"9-10","note":"이사야는 듣고도 깨닫지 못하는 백성에게 가야 하는 어려운 사명을 받았어요. 13절에서 그루터기의 거룩한 씨가 남는다고 해요."},
-        {"from":"스랍","to":"하나님","label":"거룩하다 외침","kind":"ally","directed":true,"weight":2,"verses":"3","note":"스랍들이 서로 거룩하다고 3번 외치며, 그 영광이 온 땅에 가득하다고 해요."}
+        {"from":"이사야","to":"유다 백성","label":"보냄받은 선지자","kind":"ally","directed":true,"weight":2,"verses":"9-10, 13절","note":"이사야는 듣고도 깨닫지 못하는 백성에게 가야 하는 어려운 사명을 받았어요. 13절에서 그루터기의 거룩한 씨가 남는다고 해요."},
+        {"from":"스랍","to":"하나님","label":"거룩하다 외침","kind":"ally","directed":true,"weight":2,"verses":"3","note":"스랍들이 서로 거룩하다고 세 번 외치며, 그 영광이 온 땅에 가득하다고 해요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 하나님의 집","what":"하나님의 옷자락이 가득했던 예루살렘 성전","weight":3}
@@ -181,10 +181,10 @@
       ],
       "rels": [
         {"from":"르신","to":"아하스","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"아람 왕 르신이 이스라엘 왕과 함께 예루살렘을 치러 와서 아하스와 백성의 마음이 숲처럼 흔들렸어요."},
-        {"from":"베가","to":"르신","label":"동맹한 왕","kind":"ally","directed":false,"weight":2,"verses":"1","note":"이스라엘 왕 베가가 아람 왕 르신과 손을 잡고 유다를 쳤어요. 유다를 무너뜨리고 다브엘의 아들을 왕으로 세우려 했어요."},
+        {"from":"베가","to":"르신","label":"동맹한 왕","kind":"ally","directed":false,"weight":2,"verses":"1, 6절","note":"이스라엘 왕 베가가 아람 왕 르신과 손을 잡고 유다를 쳤어요. 유다를 무너뜨리고 다브엘의 아들을 왕으로 세우려 했어요."},
         {"from":"이사야","to":"아하스","label":"믿으라 한 선지자","kind":"ally","directed":true,"weight":3,"verses":"4, 9","note":"이사야는 아하스에게 조용하고 두려워하지 말라고 해요. 믿지 않으면 굳게 서지 못한다는 경고도 함께 해요."},
         {"from":"아하스","to":"하나님","label":"징조 거절한 왕","kind":"conflict","directed":true,"weight":2,"verses":"10-12","note":"징조를 구하라는 하나님의 말씀에 아하스는 여호와를 시험하지 않겠다며 거절했어요."},
-        {"from":"스알야숩","to":"이사야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"3","note":"이사야와 함께 아하스를 만나러 가라는 하나님의 명령을 받았어요. 이름을 '남은 자가 돌아온다'로 풀이하는 견해가 많아요."}
+        {"from":"스알야숩","to":"이사야","label":"아들","kind":"family","directed":true,"weight":1,"verses":"3","note":"하나님이 이사야에게 아들 스알야숩을 데리고 아하스를 만나라고 하셨어요. 이름을 '남은 자가 돌아온다'로 풀이하는 견해가 많아요."}
       ],
       "places": [
         {"name":"윗못 수도 끝","where":"세탁자의 밭 큰길","what":"이사야가 아하스를 만난 윗못 수로 곁 세탁자의 밭 큰길","weight":2},
@@ -210,7 +210,7 @@
         {"name":"하나님","role":"성소이자 걸림돌이 되시는 분","weight":3}
       ],
       "rels": [
-        {"from":"이사야의 아내","to":"이사야","label":"아내","kind":"family","directed":true,"weight":1,"verses":"3","note":"이사야의 아내가 아들을 낳아요. 18절에서 이사야와 그 자녀들을 징조와 예표라고 해요."},
+        {"from":"이사야의 아내","to":"이사야","label":"아내","kind":"family","directed":true,"weight":1,"verses":"3, 18절","note":"이사야의 아내가 아들을 낳아요. 18절에서 이사야와 그 자녀들을 징조와 예표라고 해요."},
         {"from":"앗수르 왕","to":"유다 백성","label":"넘쳐 올 군대","kind":"conflict","directed":true,"weight":2,"verses":"7-8","note":"하나님이 앗수르를 거센 강물처럼 유다까지 넘치게 하세요. 하나님의 도움을 버린 결과예요."},
         {"from":"하나님","to":"이사야","label":"두려워 말라 하심","kind":"ally","directed":true,"weight":3,"verses":"11-13","note":"하나님은 이사야에게 백성이 두려워하는 것을 두려워하지 말고 하나님만 두려워하라고 하세요."}
       ],
@@ -265,7 +265,7 @@
         {"from":"하나님","to":"앗수르 왕","label":"막대기로 쓰신 분","kind":"other","directed":true,"weight":3,"verses":"5-6","note":"하나님이 앗수르를 진노의 막대기로 쓰시려고 보내셨어요. 경건하지 않은 나라를 치기 위해서예요."},
         {"from":"하나님","to":"앗수르 왕","label":"교만을 벌하심","kind":"conflict","directed":true,"weight":3,"verses":"12-15","note":"앗수르 왕은 자기 힘으로 이겼다고 자랑해요. 도끼가 찍는 사람 앞에서 자랑할 수 없듯이, 하나님은 그 교만을 벌하세요."},
         {"from":"이스라엘의 남은 자","to":"하나님","label":"돌아올 남은 자","kind":"ally","directed":true,"weight":3,"verses":"20-21","note":"그날 남은 자들은 자기를 치던 나라가 아니라 거룩하신 하나님만 의지해요. 심판 속에서도 돌아오는 사람들이 있어요."},
-        {"from":"불의한 재판관","to":"시온 백성","label":"약탈한 자","kind":"conflict","directed":true,"weight":1,"verses":"1-2","note":"불의한 법을 만드는 사람들이 가난한 사람과 과부와 고아를 약탈했어요. 하나님은 벌하시는 날에 무엇을 하겠느냐고 물으세요."}
+        {"from":"불의한 재판관","to":"시온 백성","label":"약탈한 자","kind":"conflict","directed":true,"weight":1,"verses":"1-3절","note":"불의한 법을 만드는 사람들이 가난한 사람과 과부와 고아를 약탈했어요. 하나님은 벌하시는 날에 무엇을 하겠느냐고 물으세요."}
       ],
       "places": [
         {"name":"앗수르","where":"앗수르","what":"하나님이 진노의 막대기로 쓰시는 나라예요.","weight":2},
@@ -292,8 +292,8 @@
         {"name":"이사야","role":"다윗 왕조의 회복과 열방의 평화를 선포함","weight":3}],
       "rels": [
         {"from":"하나님","to":"이새의 싹","label":"영을 부으심","kind":"ally","directed":true,"weight":3,"verses":"2","note":"여호와의 영이 그 싹 위에 머물러요. 지혜와 총명, 모략과 재능, 지식과 경외의 영이에요."},
-        {"from":"이새의 싹","to":"가난한 자와 겸손한 자","label":"공의로 판단함","kind":"ally","directed":true,"weight":3,"verses":"4","note":"그분은 눈에 보이는 대로 재판하지 않고 가난하고 겸손한 사람을 공정하게 재판하세요."},
-        {"from":"하나님","to":"흩어진 백성","label":"다시 모으심","kind":"ally","directed":true,"weight":2,"verses":"11-12","note":"하나님이 다시 손을 펴서 앗수르와 애굽 등 사방에 흩어진 남은 백성을 모으세요. 출애굽처럼 길도 열어 주세요."},
+        {"from":"이새의 싹","to":"가난한 자와 겸손한 자","label":"공의로 판단함","kind":"ally","directed":true,"weight":3,"verses":"3-4절","note":"그분은 눈에 보이는 대로 재판하지 않고 가난하고 겸손한 사람을 공정하게 재판하세요."},
+        {"from":"하나님","to":"흩어진 백성","label":"다시 모으심","kind":"ally","directed":true,"weight":2,"verses":"11-12, 15-16절","note":"하나님이 다시 손을 펴서 앗수르와 애굽 등 사방에 흩어진 남은 백성을 모으세요. 출애굽처럼 길도 열어 주세요."},
         {"from":"열방","to":"이새의 싹","label":"돌아올 민족","kind":"ally","directed":true,"weight":1,"verses":"10","note":"그날에 이새의 뿌리가 만민의 깃발처럼 서요. 열방이 그에게로 돌아와요."}
       ],
       "places": [
@@ -421,9 +421,9 @@
         {"name":"하나님","role":"정한 때에 심판하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"모압 사람들","to":"유다","label":"숨겨 달라 함","kind":"other","directed":true,"weight":2,"verses":"3-4","note":"쫓겨난 자를 숨기고 피할 곳이 되라는 말씀이에요. 누구에게 하는 말인지는 읽는 견해가 나뉘어요."},
+        {"from":"모압 사람들","to":"유다","label":"숨겨 달라 함","kind":"other","directed":true,"weight":2,"verses":"1, 3-4절","note":"쫓겨난 자를 숨기고 피할 곳이 되라는 말씀이에요. 누구에게 하는 말인지는 읽는 견해가 나뉘어요."},
         {"from":"이사야","to":"모압 사람들","label":"울어 준 선지자","kind":"ally","directed":true,"weight":2,"verses":"9, 11","note":"이사야는 모압의 포도원이 망한 것을 보고 눈물을 흘려요. 심판을 전하는 선지자도 마음이 아파요."},
-        {"from":"하나님","to":"모압 사람들","label":"교만을 낮추심","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"모압의 교만과 거만이 헛되다고 하세요. 3년 안에 영광이 낮아진다고 하세요."},
+        {"from":"하나님","to":"모압 사람들","label":"교만을 낮추심","kind":"conflict","directed":true,"weight":2,"verses":"6, 14절","note":"모압의 교만과 거만이 헛되다고 하세요. 삼 년 안에 모압의 영광이 낮아진다고 하세요."},
         {"from":"하나님","to":"다윗 장막의 왕","label":"세우실 왕","kind":"ally","directed":true,"weight":2,"verses":"5","note":"다윗의 장막에 사랑으로 왕위가 굳게 서고 그 위에 앉는 이는 진실하게 재판해요. 메시아 왕을 가리키는 말씀으로 읽는 견해가 많아요."}
       ],
       "places": [
@@ -451,8 +451,8 @@
       "rels": [
         {"from":"다메섹","to":"에브라임","label":"동맹한 나라","kind":"ally","directed":false,"weight":2,"verses":"3","note":"7장에서 아람이 에브라임과 동맹했다는 소식이 있었어요. 여기서는 에브라임의 요새와 다메섹 나라가 함께 사라진다고 해요."},
         {"from":"에브라임","to":"하나님","label":"잊은 백성","kind":"conflict","directed":true,"weight":3,"verses":"10","note":"10절의 '너'를 에브라임으로 보는 견해가 많아요. 이스라엘 전체로 보기도 해요. 구원의 하나님을 잊어 수확이 사라져요."},
-        {"from":"남은 자","to":"하나님","label":"바라볼 이들","kind":"ally","directed":true,"weight":3,"verses":"7","note":"그날에는 남은 사람들이 우상이 아니라 자기를 지으신 거룩하신 분을 바라봐요."},
-        {"from":"하나님","to":"열방","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":2,"verses":"13","note":"바다 물결처럼 소리 지르며 몰려오는 민족들을 하나님이 꾸짖으시면 겨처럼 흩어져요. 하나님의 백성을 약탈하는 사람의 끝이에요."}
+        {"from":"남은 자","to":"하나님","label":"바라볼 이들","kind":"ally","directed":true,"weight":3,"verses":"7-8절","note":"그날에는 남은 사람들이 우상이 아니라 자기를 지으신 거룩하신 분을 바라봐요."},
+        {"from":"하나님","to":"열방","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":2,"verses":"13-14절","note":"바다 물결처럼 소리 지르며 몰려오는 민족들을 하나님이 꾸짖으시면 겨처럼 흩어져요. 하나님의 백성을 약탈하는 사람의 끝이에요."}
       ],
       "places": [
         {"name":"다메섹","where":"아람의 도성","what":"무너진 무더기가 될 아람의 도성 다메섹","weight":3},
@@ -533,7 +533,7 @@
         {"name":"하나님","role":"징조를 명하신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이사야","label":"징조로 쓰신 분","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"하나님이 이사야에게 베옷과 신을 벗고 3년을 다니라고 하세요. 이사야는 말씀대로 그렇게 했어요."},
+        {"from":"하나님","to":"이사야","label":"징조로 쓰신 분","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"하나님이 이사야에게 베옷과 신을 벗고 다니라고 하세요. 이사야는 말씀대로 삼 년 동안 그렇게 다니며 애굽과 구스에 대한 징조가 됐어요."},
         {"from":"사르곤","to":"다르단","label":"보낸 사령관","kind":"ally","directed":true,"weight":1,"verses":"1","note":"앗수르 왕 사르곤이 군대 장관 다르단을 아스돗으로 보내 공격하게 했어요."},
         {"from":"사르곤","to":"애굽과 구스","label":"끌고 갈 왕","kind":"conflict","directed":true,"weight":2,"verses":"4","note":"앗수르 왕이 애굽과 구스의 포로를 벗은 몸과 맨발로 끌고 가요."},
         {"from":"해변 주민들","to":"애굽과 구스","label":"의지한 이들","kind":"other","directed":true,"weight":2,"verses":"6","note":"해변 사람들은 애굽과 구스를 믿고 도움을 바랐다가 부끄러움을 당해요. 애굽과 구스를 의지하는 일이 헛되다고 읽는 견해가 많아요."}
@@ -565,7 +565,7 @@
         {"from":"하나님","to":"파수꾼","label":"세우신 분","kind":"ally","directed":true,"weight":2,"verses":"6","note":"주님은 망루에 파수꾼을 세워 보이는 것을 그대로 알리게 하셨어요. 예언자는 하나님이 보여 주신 것을 전하는 파수꾼이에요."},
         {"from":"엘람과 메대","to":"바벨론","label":"에워쌀 군대","kind":"conflict","directed":true,"weight":3,"verses":"2, 9","note":"엘람과 메대는 바벨론을 에워쌀 군대로 나와요. 하나님이 미리 알리신 일이에요."},
         {"from":"세일의 질문자","to":"파수꾼","label":"밤을 묻는 이","kind":"other","directed":true,"weight":1,"verses":"11-12","note":"두마에 관한 경고의 표제 아래 세일에서 온 질문자가 파수꾼에게 밤이 언제 끝나느냐고 물어요. 파수꾼은 아침이 오지만 밤도 다시 온다고 답해요."},
-        {"from":"하나님","to":"게달","label":"쇠하게 하실 분","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"게달 자손의 활 가진 용사들도 1년 안에 줄어든다고 해요."}
+        {"from":"하나님","to":"게달","label":"쇠하게 하실 분","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"게달 자손의 활 가진 용사들도 한 해 안에 줄어든다고 해요."}
       ],
       "places": [
         {"name":"해변 광야","where":"해변 광야로 불린 곳","what":"바벨론을 가리키는 것으로 읽는 견해가 많아요","weight":2},
@@ -594,7 +594,7 @@
         {"from":"예루살렘 백성","to":"하나님","label":"바라보지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"11","note":"백성은 성벽과 물 준비를 하면서도 이 일을 오래전부터 계획하신 하나님은 바라보지 않았어요."},
         {"from":"하나님","to":"셉나","label":"내던지실 분","kind":"conflict","directed":true,"weight":3,"verses":"15-19","note":"셉나는 왕궁 일을 맡고도 높은 곳에 자기를 위해 묘실을 팠어요. 하나님이 그를 관직에서 쫓아내세요."},
         {"from":"하나님","to":"엘리아김","label":"열쇠 맡기실 분","kind":"ally","directed":true,"weight":3,"verses":"20-22","note":"하나님은 힐기야의 아들 엘리아김을 '내 종'이라 부르시며 다윗 집의 열쇠를 맡기세요. 열고 닫는 권한이에요."},
-        {"from":"엘리아김","to":"셉나","label":"자리를 이을 이","kind":"other","directed":true,"weight":2,"verses":"20-21","note":"엘리아김이 셉나의 옷과 띠와 맡은 일을 이어받아요."},
+        {"from":"엘리아김","to":"셉나","label":"자리를 이을 이","kind":"other","directed":true,"weight":2,"verses":"19-21절","note":"엘리아김이 셉나의 옷과 띠와 맡은 일을 이어받아요."},
         {"from":"엘리아김","to":"힐기야","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20","note":"엘리아김은 힐기야의 아들이며 셉나를 대신해 궁내 대신으로 세워졌어요.","adminOnly":true}
       ],
       "places": [
@@ -619,7 +619,7 @@
         {"name":"이사야","role":"두로 심판과 회복을 전한 선지자","weight":2}],
       "rels": [
         {"from":"하나님","to":"두로","label":"낮추시는 분","kind":"conflict","directed":true,"weight":3,"verses":"8-9","note":"하나님이 두로를 치신 것은 영광을 자랑하는 교만을 낮추시려는 계획 때문이에요. 두로의 지혜나 힘도 소용없었어요."},
-        {"from":"시돈 상인","to":"두로","label":"부요케 한 상인","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"시돈은 두로의 모도시예요. 시돈 상인들이 바다를 건너다니며 두로를 부유하게 했어요."},
+        {"from":"시돈 상인","to":"두로","label":"부요케 한 상인","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"시돈 상인들이 바다를 오가며 해변 주민들을 부유하게 했어요. 두로는 열국의 시장이 됐어요."},
         {"from":"두로","to":"하나님","label":"소득을 드릴 성","kind":"ally","directed":true,"weight":1,"verses":"18","note":"두로는 다시 장사를 시작하지만 번 돈은 쌓이지 않고 하나님을 섬기는 이들에게 쓰여요. 이방 도시도 결국 주님 앞으로 와요."}
       ],
       "places": [
@@ -647,7 +647,7 @@
       "rels": [
         {"from":"땅의 거민","to":"하나님","label":"언약을 깨뜨린 자","kind":"conflict","directed":true,"weight":3,"verses":"5","note":"사람들은 하나님의 가르침을 어기고 영원한 언약을 깨뜨렸어요. 그래서 땅이 더러워졌다고 해요."},
         {"from":"남은 자","to":"하나님","label":"찬양하는 이들","kind":"ally","directed":true,"weight":2,"verses":"14-15","note":"심판 뒤에 살아남은 이들이 동쪽과 바다 끝에서 한목소리로 하나님의 위엄을 찬양해요."},
-        {"from":"하나님","to":"땅의 왕들","label":"벌하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"21","note":"그날에 하나님이 하늘의 세력과 땅의 왕들을 벌하세요. 그들은 옥에 모였다가 여러 날 뒤에 형벌을 받아요."}
+        {"from":"하나님","to":"땅의 왕들","label":"벌하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"21-22절","note":"그날에 하나님이 하늘의 세력과 땅의 왕들을 벌하세요. 그들은 옥에 모였다가 여러 날 뒤에 형벌을 받아요."}
       ],
       "places": [
         {"name":"시온 산","where":"예루살렘","what":"하나님이 직접 왕이 되시는 시온산과 예루살렘이에요.","weight":3}
@@ -750,9 +750,9 @@
         {"name":"하나님","role":"기묘한 경영의 주","weight":3}
       ],
       "rels": [
-        {"from":"예루살렘 지도자들","to":"하나님","label":"조롱한 자","kind":"conflict","directed":true,"weight":3,"verses":"14-15","note":"지도자들은 사망과 언약하고 스올과 맹약했으니 넘치는 재앙이 와도 미치지 못한다며 거짓을 피난처로 삼았어요. 하나님의 말씀을 비웃었어요."},
+        {"from":"예루살렘 지도자들","to":"하나님","label":"조롱한 자","kind":"conflict","directed":true,"weight":3,"verses":"14-15","note":"지도자들은 사망과 언약하고 스올과 맹약했으니 넘치는 재앙이 와도 미치지 못한다며 거짓을 피난처로 삼았어요. 하나님의 말씀을 가볍게 여기는 오만한 모습이에요."},
         {"from":"하나님","to":"모퉁잇돌","label":"시온에 두신 분","kind":"ally","directed":true,"weight":3,"verses":"16","note":"하나님이 시온에 놓으신 귀한 돌은 든든한 기초예요. 이 돌을 믿는 사람은 다급한 일을 당하지 않아요."},
-        {"from":"하나님","to":"에브라임","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"술 취한 북이스라엘 지도자들의 교만한 관은 폭풍 같은 앗수르에게 발로 짓밟힐 거예요."},
+        {"from":"하나님","to":"에브라임","label":"심판하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"1-3","note":"술 취한 북이스라엘 지도자들의 교만한 관은 주께서 보내시는 강한 자의 손에 땅에 던져져 발에 밟힐 거예요. 이 강한 자를 앗수르로 보는 견해가 많아요."},
         {"from":"제사장과 선지자","to":"예루살렘 지도자들","label":"함께 비틀거림","kind":"ally","directed":false,"weight":1,"verses":"7","note":"백성을 가르칠 제사장과 예언자까지 술에 취해 환상도 재판도 제대로 못했어요. 한 무리가 함께 무너져요."}
       ],
       "places": [
@@ -807,7 +807,7 @@
         {"from":"패역한 자식들","to":"바로","label":"의지한 자","kind":"other","directed":true,"weight":3,"verses":"1-2","note":"하나님께 묻지 않고 이집트 왕의 보호를 구하려 사절을 보냈어요. 이집트는 도움이 되지 못하는 헛된 도움이에요."},
         {"from":"패역한 자식들","to":"하나님","label":"묻지 않은 백성","kind":"conflict","directed":true,"weight":3,"verses":"9-11","note":"백성은 하나님의 가르침을 듣기 싫어하고, 선지자에게 듣기 좋은 말만 하라고 했어요."},
         {"from":"하나님","to":"패역한 자식들","label":"기다리시는 분","kind":"ally","directed":true,"weight":3,"verses":"15, 18","note":"하나님은 돌이켜 조용히 믿으라 부르시며, 그래도 은혜를 베풀려고 기다리세요."},
-        {"from":"하나님","to":"앗수르","label":"치시는 분","kind":"conflict","directed":true,"weight":1,"verses":"31","note":"하나님의 음성에 앗수르가 놀라고 하나님의 막대기에 맞아요. 왕을 위해 예비된 도벳도 이미 준비되어 있어요."}
+        {"from":"하나님","to":"앗수르","label":"치시는 분","kind":"conflict","directed":true,"weight":1,"verses":"31, 33절","note":"하나님의 음성에 앗수르가 놀라고 하나님의 막대기에 맞아요. 왕을 위해 예비된 도벳도 이미 준비되어 있어요."}
       ],
       "places": [
         {"name":"애굽","where":"나일 강의 나라","what":"유다가 도움을 구하려던 이집트예요. 오히려 수치가 될 그늘이에요.","weight":3},
@@ -832,7 +832,7 @@
       ],
       "rels": [
         {"from":"애굽으로 내려가는 자들","to":"애굽","label":"의지한 자","kind":"other","directed":true,"weight":3,"verses":"1","note":"유다 지도자들은 이집트의 말과 병거만 믿고 거룩하신 분께는 묻지 않았어요. 눈에 보이는 힘에 기댄 거예요."},
-        {"from":"하나님","to":"이스라엘 자손","label":"보호하시는 분","kind":"ally","directed":true,"weight":3,"verses":"5","note":"하나님은 사자처럼 시온산 위에서 싸우시고 어미 새처럼 예루살렘을 덮어 지켜 주세요."},
+        {"from":"하나님","to":"이스라엘 자손","label":"보호하시는 분","kind":"ally","directed":true,"weight":3,"verses":"4-5절","note":"하나님은 사자처럼 시온산 위에서 싸우시고 어미 새처럼 예루살렘을 덮어 지켜 주세요."},
         {"from":"하나님","to":"앗수르","label":"엎드러뜨리실 분","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"앗수르를 쓰러뜨리는 것은 사람의 칼이 아니에요. 앗수르는 도망치고 젊은이는 노예가 돼요."}
       ],
       "places": [
@@ -857,7 +857,6 @@
         {"name":"하나님","role":"영을 부으실 분","weight":3},
         {"name":"이사야","role":"안일한 여인들과 백성에게 심판·회복을 선포하는 선지자","weight":2}],
       "rels": [
-        {"from":"공의로운 왕","to":"하나님","label":"공의를 행할 왕","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"장차 오실 왕은 폭풍을 피하는 곳, 메마른 땅의 시냇물 같은 분이에요. 메시아를 가리킨다고 보는 견해가 많아요."},
         {"from":"하나님","to":"안일한 여인들","label":"경고하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"9-11","note":"걱정 없다며 마음 놓은 여인들에게 일 년쯤 뒤면 놀라 떨 테니 귀를 기울이라 경고하세요."},
         {"from":"방백들","to":"공의로운 왕","label":"함께 다스림","kind":"ally","directed":true,"weight":1,"verses":"1","note":"왕 아래 지도자들도 정의로 다스려요."}
       ],
@@ -965,7 +964,7 @@
         {"from":"랍사게","to":"히스기야","label":"조롱한 장관","kind":"conflict","directed":true,"weight":3,"verses":"4-7, 13-15","note":"랍사게는 히스기야를 믿지 말라고 백성에게 외치며, 이집트와 여호와를 의지하는 것을 헛되다고 조롱했어요."},
         {"from":"엘리아김","to":"히스기야","label":"궁내대신","kind":"ally","directed":true,"weight":2,"verses":"3, 22","note":"궁내대신 엘리아김은 서기관 셉나, 기록관 요아와 함께 랍사게를 만났고 옷을 찢은 채 왕에게 돌아가 보고했어요."},
         {"from":"성벽 위 백성","to":"히스기야","label":"명령 따른 백성","kind":"ally","directed":true,"weight":2,"verses":"21","note":"백성은 대답하지 말라는 왕의 명령에 따라 한마디도 하지 않았어요."},
-        {"from":"산헤립","to":"히스기야","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"산헤립은 히스기야 14년에 유다 성들을 쳐서 빼앗았어요. 이 위기를 믿음을 시험하는 사건으로 읽는 견해가 많아요."}
+        {"from":"산헤립","to":"히스기야","label":"쳐들어온 왕","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"산헤립은 히스기야 십사 년에 유다의 견고한 성들을 쳐서 빼앗았어요. 이 위기를 믿음을 시험하는 사건으로 읽는 견해가 많아요."}
       ],
       "places": [
         {"name":"라기스","where":"예루살렘 남서쪽 유다 요새","what":"산헤립이 대군을 보내 공격한 유다의 요새 라기스예요.","weight":1},
@@ -994,7 +993,7 @@
       "rels": [
         {"from":"히스기야","to":"하나님","label":"기도한 왕","kind":"ally","directed":true,"weight":3,"verses":"14-20","note":"히스기야는 협박 편지를 성전에서 펴 놓고 구원을 구했어요. 천하 만국이 주만이 여호와이신 줄 알게 해 달라고 기도했어요."},
         {"from":"이사야","to":"히스기야","label":"응답 전한 선지자","kind":"ally","directed":true,"weight":3,"verses":"6-7, 21","note":"이사야는 앗수르 왕의 말에 두려워 말라, 하나님이 응답하셨다고 전했어요. 왕이 기도하자 말씀도 이어졌어요."},
-        {"from":"산헤립","to":"하나님","label":"모욕한 왕","kind":"conflict","directed":true,"weight":3,"verses":"23-24","note":"산헤립은 하나님을 욕하며 교만했어요. 본문은 그 오만이 하나님께 들려 왔던 길로 돌려보내신 까닭이라고 해요."}
+        {"from":"산헤립","to":"하나님","label":"모욕한 왕","kind":"conflict","directed":true,"weight":3,"verses":"23-24, 29절","note":"산헤립은 하나님을 욕하며 교만했어요. 본문은 그 오만이 하나님께 들려 왔던 길로 돌려보내신 까닭이라고 해요."}
       ],
       "places": [
         {"name":"성전","where":"예루살렘 하나님의 집","what":"히스기야가 편지를 펴 놓고 기도한 예루살렘 성전이에요.","weight":3},
@@ -1018,7 +1017,7 @@
       ],
       "rels": [
         {"from":"히스기야","to":"하나님","label":"울며 기도한 왕","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"히스기야는 벽을 향해 울며, 진실과 전심으로 살아온 것을 기억해 달라고 기도했어요."},
-        {"from":"하나님","to":"히스기야","label":"생명을 더하신 분","kind":"ally","directed":true,"weight":3,"verses":"5","note":"하나님은 기도와 눈물을 보시고 15년을 더해 주셨어요. 앗수르에서 건지겠다는 약속도 함께 하셨어요."},
+        {"from":"하나님","to":"히스기야","label":"생명을 더하신 분","kind":"ally","directed":true,"weight":3,"verses":"5-6절","note":"하나님은 기도와 눈물을 보시고 수명을 십오 년 더해 주셨어요. 앗수르 왕의 손에서 건지겠다는 약속도 함께 하셨어요."},
         {"from":"이사야","to":"히스기야","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"1, 4-5, 21","note":"이사야는 처음엔 죽는다는 말을, 이어 하나님이 수명을 더하신다는 말과 무화과 반죽 처방을 전했어요."}
       ],
       "places": [
@@ -1041,7 +1040,7 @@
         {"name":"바벨론 사신들","role":"보물을 구경한 이들","weight":2}
       ],
       "rels": [
-        {"from":"이사야","to":"히스기야","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"5-7","note":"이사야는 보물을 다 보인 일을 물으며, 궁의 모든 것과 자손이 바벨론으로 끌려가리라 경고했어요."}
+        {"from":"이사야","to":"히스기야","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"3-7절","note":"이사야는 보물을 다 보인 일을 물으며, 궁의 모든 것과 자손이 바벨론으로 끌려가리라 경고했어요."}
       ],
       "places": [
         {"name":"바벨론","where":"메소보다미아 남쪽 큰 성","what":"보물과 자손이 옮겨질 큰 도성 바벨론이에요.","weight":3},
@@ -1149,7 +1148,7 @@
       "rels": [
         {"from":"하나님","to":"이스라엘","label":"구속하신 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"하나님은 야곱 곧 이스라엘을 지으시고 건지시며 이름을 불러 자기 백성이라 하세요. 물과 불을 지날 때도 함께하겠다고 약속하세요."},
         {"from":"이스라엘","to":"하나님","label":"증인 된 백성","kind":"ally","directed":true,"weight":2,"verses":"10, 12","note":"이스라엘은 하나님이 유일한 구원자임을 알고 믿도록 세운 증인이에요. 우상들은 증인을 세우지 못해요."},
-        {"from":"하나님","to":"바벨론","label":"치실 분","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"하나님이 이스라엘을 위해 바벨론에 군대를 보내 성문 빗장을 부수세요."},
+        {"from":"하나님","to":"바벨론","label":"치실 분","kind":"conflict","directed":true,"weight":1,"verses":"14","note":"하나님이 이스라엘을 위해 바벨론에 사람을 보내시고, 갈대아 사람들은 자기들이 타던 배를 타고 도망하게 되세요."},
         {"from":"이스라엘","to":"하나님","label":"수고롭게 한 백성","kind":"conflict","directed":true,"weight":2,"verses":"22-24","note":"이스라엘은 하나님을 부르지도 않았고 정성껏 섬기지도 않으면서 오히려 죄로 하나님을 수고롭게 했어요."}
       ],
       "places": [
@@ -1174,7 +1173,7 @@
         {"name":"하나님","role":"처음이요 마지막","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"야곱(여수룬)","label":"영을 부으실 분","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"하나님은 사랑하는 백성의 자손에게 목마른 땅에 물을 붓듯 영을 부어 주세요. 백성은 시냇가 버드나무처럼 자라요."},
+        {"from":"하나님","to":"야곱(여수룬)","label":"영을 부으실 분","kind":"ally","directed":true,"weight":3,"verses":"2-4절","note":"하나님은 사랑하는 백성의 자손에게 목마른 땅에 물을 붓듯 영을 부어 주세요. 백성은 시냇가 버드나무처럼 자라요."},
         {"from":"하나님","to":"우상 만드는 자","label":"어리석음 꼬집으심","kind":"conflict","directed":true,"weight":2,"verses":"15-17","note":"같은 나무로 불을 피워 떡과 고기를 굽고, 남은 반쪽으로 신을 만들어 절하는 모습의 어리석음을 꼬집으세요."},
         {"from":"하나님","to":"고레스","label":"목자로 세우실 분","kind":"other","directed":true,"weight":3,"verses":"28","note":"하나님은 고레스를 내 목자라 부르시고, 그가 나의 모든 뜻을 이룰 것이라 하셨어요."}
       ],
@@ -1253,7 +1252,7 @@
       ],
       "rels": [
         {"from":"처녀 딸 바벨론","to":"하나님의 백성","label":"멍에를 메운 나라","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"하나님이 징계로 넘겨주신 백성에게 바벨론은 긍휼 없이 대했고 노인에게까지 무거운 멍에를 씌웠어요."},
-        {"from":"하나님","to":"처녀 딸 바벨론","label":"낮추시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"하나님은 바벨론을 보좌에서 끌어내려 티끌에 앉게 하세요. 다시는 여왕이라 불리지 못해요."},
+        {"from":"하나님","to":"처녀 딸 바벨론","label":"낮추시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1, 5절","note":"하나님은 바벨론을 보좌에서 끌어내려 티끌에 앉게 하세요. 다시는 여왕이라 불리지 못해요."},
         {"from":"술사와 점성가","to":"처녀 딸 바벨론","label":"헛된 의지","kind":"other","directed":true,"weight":2,"verses":"13-14","note":"별을 보며 미래를 알려 주던 점성가들도 바벨론을 구하지 못하고 불에 타는 지푸라기처럼 돼요."}
       ],
       "places": [
@@ -1278,9 +1277,9 @@
         {"name":"하나님","role":"유익하도록 가르치시는 분","weight":3}
       ],
       "rels": [
-        {"from":"야곱 족속","to":"하나님","label":"완고한 백성","kind":"conflict","directed":true,"weight":3,"verses":"4","note":"백성은 목이 쇠 힘줄처럼 뻣뻣하고 이마가 놋 같은 고집쟁이라 하나님은 미리 말씀해 우상 탓을 못 하게 하셨어요."},
+        {"from":"야곱 족속","to":"하나님","label":"완고한 백성","kind":"conflict","directed":true,"weight":3,"verses":"4-5절","note":"백성은 목이 쇠 힘줄처럼 뻣뻣하고 이마가 놋 같은 고집쟁이라 하나님은 미리 말씀해 우상 탓을 못 하게 하셨어요."},
         {"from":"하나님","to":"야곱 족속","label":"연단하시는 분","kind":"ally","directed":true,"weight":3,"verses":"10","note":"하나님은 은처럼이 아니라 고난의 풀무에서 단련해 백성을 택하셨어요. 징계는 정결하게 하려는 사랑이에요."},
-        {"from":"하나님","to":"하나님이 사랑하는 자","label":"쓰실 분","kind":"other","directed":true,"weight":1,"verses":"14","note":"하나님이 사랑하시는 사람, 곧 고레스가 하나님의 뜻을 바벨론에게 행하게 되어요."},
+        {"from":"하나님","to":"하나님이 사랑하는 자","label":"쓰실 분","kind":"other","directed":true,"weight":1,"verses":"14","note":"하나님이 사랑하시는 사람이 하나님의 기뻐하시는 뜻을 바벨론에 행하게 돼요. 이 사람을 고레스로 보는 견해가 많아요."},
         {"from":"갈대아인","to":"야곱 족속","label":"사로잡은 자","kind":"conflict","directed":true,"weight":2,"verses":"20","note":"백성을 사로잡았던 바벨론에서 기쁨으로 나오라고 하세요. 하나님이 종 야곱을 구속하셨다는 소식을 땅끝까지 알려요."}
       ],
       "places": [
@@ -1414,7 +1413,7 @@
         {"name":"하나님","role":"종에게 우리 죄를 지우심","weight":2}
       ],
       "rels": [
-        {"from":"여호와의 종","to":"우리","label":"대신 짐 진 이","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"우리는 다 양처럼 제 길로 갔는데 하나님이 우리 죄를 종에게 지우셨어요. 우리 대신 찔리고 상했어요."},
+        {"from":"여호와의 종","to":"우리","label":"대신 짐 진 이","kind":"ally","directed":true,"weight":3,"verses":"4-6절","note":"우리는 다 양처럼 제 길로 갔는데 하나님이 우리 죄를 종에게 지우셨어요. 우리 대신 찔리고 상했어요."},
         {"from":"우리","to":"여호와의 종","label":"멸시한 사람들","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"사람들은 그를 업신여기고 얼굴을 돌렸어요. 우리가 하찮게 여긴 그가 우리를 위해 고난받았어요."},
         {"from":"하나님","to":"여호와의 종","label":"높이시는 분","kind":"ally","directed":true,"weight":2,"verses":"10-12","note":"하나님의 뜻으로 종은 고난받았지만 그로 인해 많은 사람이 의롭게 되고 종은 존귀하게 높임받아요."}
       ],
@@ -1514,9 +1513,9 @@
         {"name":"하나님","role":"높고 거룩한 곳에 계신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"우상 숭배자들","label":"고발하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"3-6","note":"우상 숭배자들은 나무 아래서 음란한 제사를 하고 골짜기에서 자녀까지 제물로 바쳤어요. 하나님은 그 우상들이 바람에 날릴 거라 하세요."},
+        {"from":"하나님","to":"우상 숭배자들","label":"고발하시는 분","kind":"conflict","directed":true,"weight":3,"verses":"3-6, 13절","note":"우상 숭배자들은 나무 아래서 음란한 제사를 하고 골짜기에서 자녀까지 제물로 바쳤어요. 하나님은 그 우상들이 바람에 날릴 거라 하세요."},
         {"from":"하나님","to":"통회하는 자","label":"함께 거하시는 분","kind":"ally","directed":true,"weight":3,"verses":"15","note":"가장 높으신 하나님이 거룩한 곳에 사시면서 마음이 부서지고 낮은 사람과 함께하며 영을 소생시키세요."},
-        {"from":"하나님","to":"의인","label":"평안에 들이심","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"의인이 죽으면 재앙을 면하고 평안에 들어가 곧은 길을 걷는 사람이 쉬는 침상에 눕는다고 하세요."}
+        {"from":"하나님","to":"의인","label":"평안에 들이심","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"의인이 죽어도 마음에 두는 사람이 없지만, 그들은 평안에 들어가고 바른 길로 간 사람들은 침상에서 편히 쉰다고 하세요."}
       ],
       "places": [
         {"name":"푸른 나무 아래와 골짜기","where":"우상 숭배하던 곳","what":"푸른 나무 아래와 골짜기에서 우상 숭배와 음행이 벌어진 곳이에요.","weight":2},
@@ -1541,9 +1540,9 @@
       ],
       "rels": [
         {"from":"유다 백성","to":"일꾼과 압제당하는 자","label":"압제한 자","kind":"conflict","directed":true,"weight":3,"verses":"3-4","note":"금식하는 날에도 오락을 찾고 일꾼을 부리며 다투고 싸우는 모습은 하나님이 기뻐하시는 금식이 아니에요."},
-        {"from":"하나님","to":"유다 백성","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"하나님은 이사야에게 나팔처럼 크게 외쳐 백성의 죄를 알리라고 하셨어요. 겉으로 경건해 보여도 마음은 멀었어요."},
+        {"from":"하나님","to":"유다 백성","label":"꾸짖으시는 분","kind":"conflict","directed":true,"weight":3,"verses":"1-2절","note":"하나님은 이사야에게 나팔처럼 크게 외쳐 백성의 죄를 알리라고 하셨어요. 겉으로 경건해 보여도 마음은 멀었어요."},
         {"from":"유다 백성","to":"주린 자와 빈민","label":"나눠야 할 이웃","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"하나님이 원하는 금식은 결박을 풀고 굶주린 사람과 음식을 나누며 떠도는 가난한 사람을 집에 들이는 일이에요."},
-        {"from":"하나님","to":"유다 백성","label":"응답하실 분","kind":"ally","directed":true,"weight":2,"verses":"9","note":"그렇게 살면 부를 때마다 하나님이 여기 있다고 응답하세요. 빛이 새벽같이 비쳐요."}
+        {"from":"하나님","to":"유다 백성","label":"응답하실 분","kind":"ally","directed":true,"weight":2,"verses":"8-9절","note":"그렇게 살면 부를 때마다 하나님이 여기 있다고 응답하세요. 빛이 새벽같이 비쳐요."}
       ],
       "places": [
         {"name":"물 댄 동산","where":"풍성한 정원","what":"물을 가득 댄 정원처럼 풍성해질 순종하는 사람의 삶이에요.","weight":2}
@@ -1567,7 +1566,7 @@
       "rels": [
         {"from":"유다 백성","to":"하나님","label":"죄로 갈라진 백성","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"하나님의 힘이 모자란 게 아니라 백성의 죄가 하나님과 그들 사이를 막고 얼굴을 가려 듣지 못하시게 했어요."},
         {"from":"하나님","to":"유다 백성","label":"친히 구속하시는 분","kind":"ally","directed":true,"weight":3,"verses":"16, 20","note":"16절에서 하나님은 중재자가 없음을 보고 자기 팔로 직접 구원을 이루세요. 20절의 구속자도 여호와께서 시온에 오신다는 뜻으로 읽어요."},
-        {"from":"하나님","to":"원수","label":"갚으실 분","kind":"conflict","directed":true,"weight":1,"verses":"18","note":"하나님은 원수들에게 행한 대로 갚으세요. 해가 뜨는 곳에서도 하나님의 이름을 두려워하게 돼요."}
+        {"from":"하나님","to":"원수","label":"갚으실 분","kind":"conflict","directed":true,"weight":1,"verses":"18-19절","note":"하나님은 원수들에게 행한 대로 갚으세요. 해가 뜨는 곳에서도 하나님의 이름을 두려워하게 돼요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘","what":"구속자가 오실 예루살렘, 곧 시온이에요.","weight":3}
@@ -1644,7 +1643,7 @@
         {"name":"하나님","role":"신랑처럼 기뻐하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"시온","label":"신랑처럼 기뻐하심","kind":"family","directed":true,"weight":3,"verses":"5","note":"신랑이 신부를 기뻐하듯 하나님이 시온을 기뻐하세요. 버림받은 백성이라는 이름이 헵시바와 쁄라라는 새 이름으로 바뀌어요."},
+        {"from":"하나님","to":"시온","label":"신랑처럼 기뻐하심","kind":"family","directed":true,"weight":3,"verses":"4-5절","note":"신랑이 신부를 기뻐하듯 하나님이 시온을 기뻐하세요. 버림받은 백성이라는 이름이 헵시바와 쁄라라는 새 이름으로 바뀌어요."},
         {"from":"파수꾼들","to":"하나님","label":"쉬지 않고 기도함","kind":"ally","directed":true,"weight":2,"verses":"6-7","note":"성벽 파수꾼들은 밤낮 잠잠하지 않고 예루살렘이 세워질 때까지 하나님께 기도하며 부르짖어요."},
         {"from":"하나님","to":"파수꾼들","label":"세우신 분","kind":"ally","directed":true,"weight":2,"verses":"6","note":"하나님이 직접 예루살렘 성벽 위에 파수꾼을 세워 쉬지 않고 기도하며 알리게 하셨어요."},
         {"from":"열방과 왕들","to":"시온","label":"영광을 볼 이","kind":"other","directed":true,"weight":1,"verses":"2","note":"나라들과 왕들이 시온의 의와 영광을 보고, 시온은 하나님이 지어 주시는 새 이름을 얻어요."}
@@ -1749,8 +1748,8 @@
       ],
       "rels": [
         {"from":"하나님","to":"떠는 자","label":"돌보시는 분","kind":"ally","directed":true,"weight":3,"verses":"2","note":"하나님이 눈여겨보시는 사람은 가난하고 마음이 상했으며 말씀을 두려워하는 사람이에요."},
-        {"from":"하나님","to":"시온","label":"어머니처럼 위로하심","kind":"ally","directed":true,"weight":3,"verses":"13","note":"어머니가 자식을 위로하듯 하나님이 예루살렘에서 백성을 위로하시고 평화를 강같이 주세요."},
-        {"from":"살아남은 자","to":"열방","label":"영광을 전할 이","kind":"ally","directed":true,"weight":2,"verses":"19","note":"살아남은 사람들이 먼 나라들로 가서 하나님의 영광을 전하고, 형제들을 예물로 여호와께 돌려보내요."},
+        {"from":"하나님","to":"시온","label":"어머니처럼 위로하심","kind":"ally","directed":true,"weight":3,"verses":"12-13절","note":"어머니가 자식을 위로하듯 하나님이 예루살렘에서 백성을 위로하시고 평화를 강같이 주세요."},
+        {"from":"살아남은 자","to":"열방","label":"영광을 전할 이","kind":"ally","directed":true,"weight":2,"verses":"19-20절","note":"살아남은 사람들이 먼 나라들로 가서 하나님의 영광을 전하고, 형제들을 예물로 여호와께 돌려보내요."},
         {"from":"하나님","to":"거역한 자들","label":"심판하시는 분","kind":"conflict","directed":true,"weight":1,"verses":"24","note":"하나님께 반역한 사람들의 끔찍한 결말을 모두가 보게 돼요. 그 벌레는 죽지 않고 불도 꺼지지 않아요."}
       ],
       "places": [

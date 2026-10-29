@@ -25,10 +25,10 @@
         {"name":"하나님","role":"참되신 하나님","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 교회","label":"감사하는 사도","kind":"ally","directed":true,"weight":3,"verses":"2-3","note":"바울은 그들의 믿음의 행동, 사랑의 수고, 소망의 인내를 기억하며 늘 감사해요. 하나님이 택하신 형제라고 확신해서예요."},
+        {"from":"바울","to":"데살로니가 교회","label":"감사하는 사도","kind":"ally","directed":true,"weight":3,"verses":"2-4절","note":"바울은 그들의 믿음의 행동, 사랑의 수고, 소망의 인내를 기억하며 늘 감사해요. 하나님이 택하신 형제라고 확신해서예요."},
         {"from":"데살로니가 교회","to":"마게도냐와 아가야 신자들","label":"본이 됨","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"고난 속에서도 기쁘게 말씀을 받은 모습이 이웃 지역 교회들의 본보기가 되었고, 믿음의 소문이 널리 퍼졌어요."},
         {"from":"바울","to":"실루아노","label":"동역자","kind":"ally","directed":false,"weight":1,"verses":"1","note":"실루아노(실라)는 바울과 2차 선교 여행을 함께한 동역자예요. 편지는 함께 이름을 적었지만 쓴 사람은 바울이에요."},
-        {"from":"성령","to":"데살로니가 교회","label":"기쁨을 주심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"성령은 복음이 능력과 확신으로 전해지게 하셨고, 박해 속에서도 기쁨으로 말씀을 받게 하셨어요."},
+        {"from":"성령","to":"데살로니가 교회","label":"기쁨을 주심","kind":"ally","directed":true,"weight":2,"verses":"5-6절","note":"성령은 복음이 능력과 확신으로 전해지게 하셨고, 박해 속에서도 기쁨으로 말씀을 받게 하셨어요."},
         {"from":"하나님","to":"예수","label":"살리신 분","kind":"ally","directed":true,"weight":2,"verses":"10","note":"하나님이 죽은 아들을 살리셨기에 믿는 이들은 그분이 하늘에서 다시 오시길 기다리고, 다가올 진노에서 건져 주실 것도 믿어요."}
       ],
       "places": [
@@ -55,7 +55,7 @@
         {"name":"하나님","role":"마음을 감찰하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"바울","to":"데살로니가 성도들","label":"유모 같이 기름","kind":"family","directed":true,"weight":3,"verses":"7-8","note":"바울은 유모처럼 부드럽게, 아버지처럼 가르치며 복음뿐 아니라 목숨까지 내주려 했어요. 사랑하는 마음 때문이었어요."},
+        {"from":"바울","to":"데살로니가 성도들","label":"유모 같이 기름","kind":"family","directed":true,"weight":3,"verses":"7-8, 11절","note":"바울은 유모처럼 부드럽게, 아버지처럼 가르치며 복음뿐 아니라 목숨까지 내주려 했어요. 사랑하는 마음 때문이었어요."},
         {"from":"유대인들","to":"바울","label":"쫓아낸 이들","kind":"conflict","directed":true,"weight":2,"verses":"15-16","note":"믿지 않는 유대인들은 이방인이 구원받지 못하게 막으려 했어요. 주님과 예언자들을 죽이고 바울도 쫓아낸 일과 한 줄기예요."},
         {"from":"사탄","to":"바울","label":"길을 막음","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"바울이 한두 번 다시 가려 했지만 사탄이 길을 막았어요. 그래서 대신 디모데를 보내게 돼요(3장)."},
         {"from":"데살로니가 성도들","to":"하나님","label":"말씀으로 받음","kind":"ally","directed":true,"weight":2,"verses":"13","note":"그들은 들은 말씀을 사람의 말이 아니라 하나님의 말씀으로 받았고, 그 말씀이 믿는 이들 속에서 일하고 있어요."}
@@ -86,7 +86,7 @@
         {"from":"바울","to":"디모데","label":"보낸 일꾼","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"바울은 믿음직한 동역자 디모데를 데살로니가로 보내요. 홀로 남는 게 외로웠지만 교회를 위해 그렇게 했어요."},
         {"from":"디모데","to":"데살로니가 성도들","label":"굳건하게 함","kind":"ally","directed":true,"weight":2,"verses":"2-3","note":"디모데는 이들을 믿음 안에서 굳게 세우고 위로해, 환난 속에서 아무도 흔들리지 않게 도왔어요."},
         {"from":"디모데","to":"바울","label":"기쁜 소식 전함","kind":"ally","directed":true,"weight":2,"verses":"6","note":"디모데가 돌아와 이들의 믿음과 사랑, 또 바울을 보고 싶어 한다는 소식을 전했고, 바울은 큰 위로를 받았어요."},
-        {"from":"시험하는 자","to":"데살로니가 성도들","label":"시험하는 자","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"바울은 사탄이 이들을 환난으로 넘어뜨려 자신의 수고가 헛될까 봐 두려워했어요."},
+        {"from":"시험하는 자","to":"데살로니가 성도들","label":"시험하여 흔듦","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"바울은 사탄이 이들을 환난으로 넘어뜨려 자신의 수고가 헛될까 봐 두려워했어요."},
         {"from":"바울","to":"데살로니가 성도들","label":"위해 간구함","kind":"ally","directed":true,"weight":3,"verses":"10-12","note":"바울은 밤낮 이들을 다시 보길 구하고, 서로와 모든 사람에 대한 사랑이 넘치게 해 달라고 기도했어요."}
       ],
       "places": [
@@ -115,7 +115,7 @@
       "rels": [
         {"from":"바울","to":"데살로니가 성도들","label":"위로한 사도","kind":"ally","directed":true,"weight":3,"verses":"13, 18","note":"먼저 죽은 이들 때문에 걱정하는 이들에게 바울은 소망 없는 사람처럼 슬퍼하지 말고 이 말로 서로 위로하라고 했어요."},
         {"from":"예수","to":"자는 자들","label":"일으키실 주","kind":"ally","directed":true,"weight":3,"verses":"14, 16","note":"예수님이 죽으셨다 다시 사셨으니, 그분 안에서 잠든 사람들도 하나님이 예수님과 함께 데려오시고 먼저 살리실 거예요."},
-        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 부르심","kind":"ally","directed":true,"weight":2,"verses":"7","note":"하나님은 더럽게 살라고가 아니라 거룩하게 살라고 부르셨어요. 성령을 주신 분을 무시하는 일이 되지 않게 하라는 거예요."},
+        {"from":"하나님","to":"데살로니가 성도들","label":"거룩하게 부르심","kind":"ally","directed":true,"weight":2,"verses":"7-8절","note":"하나님은 더럽게 살라고가 아니라 거룩하게 살라고 부르셨어요. 성령을 주신 분을 무시하는 일이 되지 않게 하라는 거예요."},
         {"from":"천사장","to":"예수","label":"강림을 알림","kind":"ally","directed":true,"weight":1,"verses":"16","note":"주님이 다시 오실 때 천사장의 외침과 하나님의 나팔 소리가 울려요. 모두가 알 수 있는 공적인 오심이에요."}
       ],
       "places": [

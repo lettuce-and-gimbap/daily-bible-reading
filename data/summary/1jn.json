@@ -23,7 +23,7 @@
       "rels": [
         {"from":"요한","to":"성도들","label":"사귐을 전함","kind":"ally","directed":true,"weight":3,"verses":"3","note":"요한은 직접 보고 들은 것을 전해 독자들도 아버지와 아들과의 사귐에 함께하게 하려 했어요. 그래야 기쁨이 충만해져요."},
         {"from":"요한","to":"예수","label":"보고 만진 증인","kind":"ally","directed":true,"weight":3,"verses":"1","note":"요한은 태초부터 계신 생명의 말씀을 듣고 보고 손으로 만진 증인이에요. 생명의 말씀이신 예수 그리스도를 증언해요."},
-        {"from":"하나님","to":"예수","label":"아들","kind":"family","directed":true,"weight":2,"verses":"3","note":"우리의 사귐은 아버지와 그 아들 예수 그리스도와 함께하는 거예요. 생명이 아버지와 함께 계시다 나타나셨어요."},
+        {"from":"하나님","to":"예수","label":"아들","kind":"family","directed":true,"weight":2,"verses":"2-3절","note":"우리의 사귐은 아버지와 그 아들 예수 그리스도와 함께하는 거예요. 생명이 아버지와 함께 계시다 나타나셨어요."},
         {"from":"예수","to":"성도들","label":"피로 깨끗하게","kind":"ally","directed":true,"weight":3,"verses":"7, 9","note":"빛 가운데 걸으면 예수님의 피가 모든 죄에서 깨끗하게 하세요. 죄를 자백하면 의로우신 하나님이 용서해 주세요."}
       ],
       "places": [
@@ -50,7 +50,7 @@
       ],
       "rels": [
         {"from":"예수","to":"자녀들","label":"대언하심","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"누가 죄를 지으면 의로우신 예수 그리스도가 아버지 앞에서 대언자로 변호하세요. 우리 죄를 위한 화목제물이시기 때문이에요."},
-        {"from":"적그리스도","to":"예수","label":"부인하는 자","kind":"conflict","directed":true,"weight":3,"verses":"22","note":"예수님이 그리스도이심을 부인하는 사람이 거짓말쟁이이고 적그리스도예요. 교회를 떠난 거짓 교사들이 그들이에요."},
+        {"from":"적그리스도","to":"예수","label":"부인하는 자","kind":"conflict","directed":true,"weight":3,"verses":"18-19, 22절","note":"예수님이 그리스도이심을 부인하는 사람이 거짓말쟁이이고 적그리스도예요. 교회를 떠난 거짓 교사들이 그들이에요."},
         {"from":"요한","to":"자녀들","label":"나의 자녀들","kind":"family","directed":true,"weight":2,"verses":"1, 12","note":"요한은 성도들을 나의 자녀들아 하고 다정하게 부르며 편지해요. 죄를 짓지 않게 하려는 마음으로 써요."},
         {"from":"하나님","to":"예수","label":"아들","kind":"family","directed":true,"weight":2,"verses":"23","note":"아들을 부인하는 사람에게는 아버지도 없고, 아들을 시인하는 사람에게는 아버지도 있어요. 둘은 따로 떼어 믿을 수 없어요."}
       ],
@@ -81,7 +81,7 @@
         {"from":"하나님","to":"하나님의 자녀들","label":"자녀라 부르심","kind":"family","directed":true,"weight":3,"verses":"1","note":"아버지가 얼마나 큰 사랑을 주셨는지 보라고 해요. 우리가 하나님의 자녀라 불리고 실제로 자녀예요."},
         {"from":"예수","to":"마귀","label":"일을 멸하심","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"하나님의 아들이 나타나신 것은 마귀의 일을 멸하려는 거예요. 마귀는 처음부터 죄를 지었어요."},
         {"from":"가인","to":"아벨","label":"아우를 죽임","kind":"conflict","directed":true,"weight":2,"verses":"12","note":"가인은 악한 자에게 속해 아우 아벨을 죽였어요. 자기 일은 악하고 아우의 일은 의로웠기 때문이에요."},
-        {"from":"예수","to":"하나님의 자녀들","label":"목숨을 버리심","kind":"ally","directed":true,"weight":3,"verses":"16","note":"예수님이 우리를 위해 목숨을 버리셨어요. 그래서 우리도 형제를 위해 목숨을 버려야 하고 말이 아닌 행함으로 사랑해요."},
+        {"from":"예수","to":"하나님의 자녀들","label":"목숨을 버리심","kind":"ally","directed":true,"weight":3,"verses":"16, 18절","note":"예수님이 우리를 위해 목숨을 버리셨어요. 그래서 우리도 형제를 위해 목숨을 버려야 하고 말이 아닌 행함으로 사랑해요."},
         {"from":"성령","to":"하나님의 자녀들","label":"거하심을 알림","kind":"ally","directed":true,"weight":1,"verses":"24","note":"하나님이 우리에게 주신 성령으로 그분이 우리 안에 계신 것을 알아요. 계명을 지키는 사람 안에 하나님이 거하세요."}
       ],
       "places": [
@@ -108,7 +108,7 @@
       "rels": [
         {"from":"하나님","to":"예수","label":"보내신 아들","kind":"family","directed":true,"weight":3,"verses":"9-10","note":"하나님은 독생자를 세상에 보내 우리가 그를 통해 살게 하셨어요. 우리 죄를 대신하는 화목제물로 보내신 사랑이에요."},
         {"from":"하나님","to":"사랑하는 자들","label":"먼저 사랑하심","kind":"ally","directed":true,"weight":3,"verses":"10, 19","note":"우리가 하나님을 먼저 사랑한 것이 아니라 하나님이 먼저 우리를 사랑하셨어요. 그 사랑이 서로 사랑하는 이유가 돼요."},
-        {"from":"거짓 선지자들","to":"사랑하는 자들","label":"미혹하는 자","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"거짓 선지자가 많이 나왔으니 모든 영을 믿지 말고 하나님께 속했는지 시험하라고 해요. 예수님이 육체로 오심을 시인하는지가 기준이에요."},
+        {"from":"거짓 선지자들","to":"사랑하는 자들","label":"미혹하는 자","kind":"conflict","directed":true,"weight":2,"verses":"1-3절","note":"거짓 선지자가 많이 나왔으니 모든 영을 믿지 말고 하나님께 속했는지 시험하라고 해요. 예수님이 육체로 오심을 시인하는지가 기준이에요."},
         {"from":"성령","to":"사랑하는 자들","label":"주신 영","kind":"ally","directed":true,"weight":2,"verses":"13","note":"하나님이 그분의 영을 주셔서 우리가 그분 안에 있고 그분이 우리 안에 계신 줄을 알 수 있어요."}
       ],
       "places": [
@@ -132,7 +132,7 @@
         {"name":"하나님","role":"영생을 주신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"자녀들","label":"영생을 주심","kind":"ally","directed":true,"weight":3,"verses":"11","note":"하나님이 우리에게 영원한 생명을 주셨고 이 생명은 그의 아들 안에 있어요. 아들이 있는 사람에게 생명이 있어요."},
+        {"from":"하나님","to":"자녀들","label":"영생을 주심","kind":"ally","directed":true,"weight":3,"verses":"11-12절","note":"하나님이 우리에게 영원한 생명을 주셨고 이 생명은 그의 아들 안에 있어요. 아들이 있는 사람에게 생명이 있어요."},
         {"from":"성령","to":"예수","label":"증언하심","kind":"ally","directed":true,"weight":2,"verses":"6","note":"예수님은 물과 피로 오신 분이에요. 이것을 증언하시는 분은 진리이신 성령이세요."},
         {"from":"하나님","to":"예수","label":"아들","kind":"family","directed":true,"weight":3,"verses":"9-10","note":"하나님이 자기 아들에 대해 증언하셨어요. 이 증언을 믿지 않으면 하나님을 거짓말쟁이로 만드는 거예요."},
         {"from":"요한","to":"자녀들","label":"나의 자녀들","kind":"family","directed":true,"weight":2,"verses":"13, 21","note":"요한은 영생이 있음을 알게 하려고 썼다며, 마지막으로 자녀들아 우상에게서 자신을 지키라고 당부해요."}

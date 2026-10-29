@@ -43,8 +43,8 @@
         {"name":"세상 왕들","role":"하나님을 대적하는 군왕","weight":2}
       ],
       "rels": [
-        {"from":"세상 왕들","to":"하나님","label":"대적하는 왕들","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"세상 왕들이 모여 주님과 그분이 세운 왕에게 맞서며 그 다스림을 밧줄처럼 끊자고 해요. 하지만 하나님은 하늘에서 그 헛된 계획을 보고 웃으세요. 반역은 결국 헛수고예요."},
-        {"from":"하나님","to":"기름 부음 받은 왕","label":"아버지","kind":"family","directed":true,"weight":3,"verses":"7","note":"하나님은 자기가 세운 왕에게 너는 내 아들이라고 하시고, 구하면 모든 나라를 유산으로 주겠다고 하셨어요."},
+        {"from":"세상 왕들","to":"하나님","label":"대적하는 왕들","kind":"conflict","directed":true,"weight":3,"verses":"1-4절","note":"세상 왕들이 모여 주님과 그분이 세운 왕에게 맞서며 그 다스림을 밧줄처럼 끊자고 해요. 하지만 하나님은 하늘에서 그 헛된 계획을 보고 웃으세요. 반역은 결국 헛수고예요."},
+        {"from":"하나님","to":"기름 부음 받은 왕","label":"아버지","kind":"family","directed":true,"weight":3,"verses":"7-8절","note":"하나님은 자기가 세운 왕에게 너는 내 아들이라고 하시고, 구하면 모든 나라를 유산으로 주겠다고 하셨어요."},
         {"from":"세상 왕들","to":"기름 부음 받은 왕","label":"대적하는 왕들","kind":"conflict","directed":true,"weight":2,"verses":"2, 10-12","note":"세상 왕들이 이 왕에게 맞섰지만, 시인은 그 아들을 정중하게 섬기라고 해요. 여호와를 의지하는 것이 참된 지혜래요."}
       ],
       "places": [
@@ -114,8 +114,8 @@
         {"name":"하나님","role":"의인을 방패로 두르시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"아침에 기도한 이","kind":"ally","directed":true,"weight":3,"verses":"3","note":"다윗은 하나님을 나의 왕이라 부르며 아침마다 기도를 올리고 기다려요. 악한 사람은 주님 앞에 설 수 없지만, 자기는 주님의 크신 사랑 덕에 성전에 나아간다고 해요."},
-        {"from":"원수들","to":"다윗","label":"거짓된 원수","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"원수들의 입에는 진실이 없고 혀로는 아첨해요. 다윗은 그들이 자기 꾀에 넘어지게 해 달라고 하나님께 구해요."}
+        {"from":"다윗","to":"하나님","label":"아침에 기도한 이","kind":"ally","directed":true,"weight":3,"verses":"2-7절","note":"다윗은 하나님을 나의 왕이라 부르며 아침마다 기도를 올리고 기다려요. 악한 사람은 주님 앞에 설 수 없지만, 자기는 주님의 크신 사랑 덕에 성전에 나아간다고 해요."},
+        {"from":"원수들","to":"다윗","label":"거짓된 원수","kind":"conflict","directed":true,"weight":2,"verses":"9-10절","note":"원수들의 입에는 진실이 없고 혀로는 아첨해요. 다윗은 그들이 자기 꾀에 넘어지게 해 달라고 하나님께 구해요."}
       ],
       "places": [
 
@@ -136,9 +136,9 @@
         {"name":"하나님","role":"울음소리를 들으신 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"울며 기도한 이","kind":"ally","directed":true,"weight":3,"verses":"2, 6","note":"다윗은 주의 분노로 벌하지 말고 불쌍히 여겨 달라며 주님의 사랑에 매달려요. 밤마다 눈물로 잠자리를 적실 만큼 지쳤다고 털어놓아요. 죽으면 주를 기억할 수 없으니 살려 달래요."},
+        {"from":"다윗","to":"하나님","label":"울며 기도한 이","kind":"ally","directed":true,"weight":3,"verses":"1-6절","note":"다윗은 주의 분노로 벌하지 말고 불쌍히 여겨 달라며 주님의 사랑에 매달려요. 밤마다 눈물로 잠자리를 적실 만큼 지쳤다고 털어놓아요. 죽으면 주를 기억할 수 없으니 살려 달래요."},
         {"from":"하나님","to":"다윗","label":"들으신 분","kind":"ally","directed":true,"weight":2,"verses":"8-9","note":"여호와께서 내 울음과 간구를 들으셨다고 다윗이 확신해요. 이 전환을 마음이 먼저 바뀐 것으로 읽는 견해가 많아요."},
-        {"from":"다윗","to":"원수들","label":"물리친 이","kind":"conflict","directed":true,"weight":1,"verses":"8, 10","note":"주님이 울음을 들으셨다고 확신한 다윗은 악한 일을 하는 자들에게 물러가라고 외쳐요. 원수들이 부끄러움을 당하고 물러갈 거래요."}
+        {"from":"다윗","to":"원수들","label":"물러가라 외침","kind":"conflict","directed":true,"weight":1,"verses":"8, 10","note":"주님이 울음을 들으셨다고 확신한 다윗은 악한 일을 하는 자들에게 물러가라고 외쳐요. 원수들이 부끄러움을 당하고 물러갈 거래요."}
       ],
       "places": [
 
@@ -160,8 +160,8 @@
         {"name":"하나님","role":"의로운 재판장","weight":3}
       ],
       "rels": [
-        {"from":"구시","to":"다윗","label":"모함한 사람","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"이 시는 베냐민 사람 구시가 한 말 때문에 지었다고 표제에 적혀 있어요. 다윗을 모함한 사람으로 보는 견해가 많아요."},
-        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"다윗은 하나님께 몸을 피하며 쫓아오는 자들에게서 건져 달라고 해요. 자기의 결백을 살펴 재판해 달라고 맡겨요."},
+        {"from":"구시","to":"다윗","label":"모함한 사람","kind":"conflict","directed":true,"weight":3,"verses":"표제절","note":"이 시는 베냐민 사람 구시가 한 말 때문에 지었다고 표제에 적혀 있어요. 다윗을 모함한 사람으로 보는 견해가 많아요."},
+        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1, 8절","note":"다윗은 하나님께 몸을 피하며 쫓아오는 자들에게서 건져 달라고 해요. 자기의 결백을 살펴 재판해 달라고 맡겨요."},
         {"from":"하나님","to":"악인","label":"심판하시는 분","kind":"conflict","directed":true,"weight":1,"verses":"11-16","note":"하나님은 회개하지 않는 악인에게 칼을 갈고 활을 당기세요. 악인이 남을 해치려고 판 웅덩이에 자기가 빠지고, 그 악이 제 머리로 돌아가게 하신대요."}
       ],
       "places": [
@@ -184,7 +184,7 @@
       ],
       "rels": [
         {"from":"다윗","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":3,"verses":"1, 9","note":"다윗은 온 땅에 가득한 주님 이름이 얼마나 위엄 있는지 감탄하며 노래를 시작하고 같은 고백으로 끝내요. 사람의 영광을 말하는 시 전체가 하나님 찬양으로 감싸여 있어요."},
-        {"from":"하나님","to":"사람","label":"영화롭게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"하나님은 작은 사람을 기억하시고 영광의 관을 씌워 짐승과 새와 물고기를 다스리게 하셨어요."}
+        {"from":"하나님","to":"사람","label":"영화롭게 하신 분","kind":"ally","directed":true,"weight":3,"verses":"4-8절","note":"하나님은 작은 사람을 기억하시고 영광의 관을 씌워 짐승과 새와 물고기를 다스리게 하셨어요."}
       ],
       "places": [
 
@@ -207,9 +207,9 @@
         {"name":"하나님","role":"공의로 심판하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"감사한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 온 마음으로 여호와께 감사하고 주님의 놀라운 일들을 전하겠다고 해요. 주님이 재판장 자리에 앉아 자기의 억울함을 바르게 판결해 주셨기 때문이에요."},
+        {"from":"다윗","to":"하나님","label":"감사한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 4절","note":"다윗은 온 마음으로 여호와께 감사하고 주님의 놀라운 일들을 전하겠다고 해요. 주님이 재판장 자리에 앉아 자기의 억울함을 바르게 판결해 주셨기 때문이에요."},
         {"from":"하나님","to":"원수들","label":"물리치신 분","kind":"conflict","directed":true,"weight":2,"verses":"3-6","note":"다윗은 원수들이 주님 앞에서 넘어져 망했다고 노래해요. 하나님이 나라들을 꾸짖으시자 그 이름과 성읍이 기억에서 지워졌대요."},
-        {"from":"하나님","to":"가난한 자","label":"요새 되신 분","kind":"ally","directed":true,"weight":2,"verses":"9, 18","note":"여호와는 눌린 사람의 피난처가 되시고, 가난한 자를 영원히 잊지 않으신대요. 고통받는 사람의 외침을 들으세요."}
+        {"from":"하나님","to":"가난한 자","label":"요새 되신 분","kind":"ally","directed":true,"weight":2,"verses":"9, 12, 18절","note":"여호와는 눌린 사람의 피난처가 되시고, 가난한 자를 영원히 잊지 않으신대요. 고통받는 사람의 외침을 들으세요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘의 거룩한 산","what":"여호와께서 계시는 곳","weight":1}
@@ -231,7 +231,7 @@
         {"name":"하나님","role":"영원한 왕","weight":3}
       ],
       "rels": [
-        {"from":"악인","to":"가난한 자와 고아","label":"압제하는 자","kind":"conflict","directed":true,"weight":3,"verses":"2, 8-9","note":"교만한 악인은 하나님이 안 보신다고 여기며 힘없는 사람을 괴롭혀요. 마을 근처에 숨어 기다리다가 그물로 죄 없는 사람을 잡아챈대요."},
+        {"from":"악인","to":"가난한 자와 고아","label":"압제하는 자","kind":"conflict","directed":true,"weight":3,"verses":"2, 8-11절","note":"교만한 악인은 하나님이 안 보신다고 여기며 힘없는 사람을 괴롭혀요. 마을 근처에 숨어 기다리다가 그물로 죄 없는 사람을 잡아챈대요."},
         {"from":"시인","to":"하나님","label":"간구한 이","kind":"ally","directed":true,"weight":2,"verses":"1, 12","note":"시인은 주님이 왜 멀리 서서 숨으시느냐고 솔직하게 물어요. 그러면서도 일어나 손을 드시고 가난한 사람을 잊지 말아 달라고 끝까지 하나님께 매달려요."},
         {"from":"하나님","to":"가난한 자와 고아","label":"돕는 왕","kind":"ally","directed":true,"weight":3,"verses":"14, 16-18","note":"여호와는 고통과 슬픔을 다 보시고 속속들이 아세요. 고아와 눌린 사람의 편을 들어 땅의 사람이 더는 그들을 겁주지 못하게 하신대요."}
       ],
@@ -254,9 +254,9 @@
         {"name":"하나님","role":"하늘에서 감찰하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"도망하라는 사람들","to":"다윗","label":"도망을 권한 이","kind":"other","directed":true,"weight":2,"verses":"1","note":"사람들은 터가 무너졌으니 새처럼 산으로 도망치라고 다윗에게 권해요. 다윗은 이미 여호와께 피했다고 답해요."},
+        {"from":"도망하라는 사람들","to":"다윗","label":"도망을 권한 이","kind":"other","directed":true,"weight":2,"verses":"1, 3절","note":"사람들은 터가 무너졌으니 새처럼 산으로 도망치라고 다윗에게 권해요. 다윗은 이미 여호와께 피했다고 답해요."},
         {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1, 4","note":"다윗은 여호와께서 성전에 계시고 보좌는 하늘에 있다고 고백해요. 주님이 사람을 살피시고 의인을 감찰하세요."},
-        {"from":"악인","to":"다윗","label":"쏘려는 자","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"악인들은 어두운 데서 활을 당겨 마음이 바른 사람을 쏘려 해요. 하지만 주님은 다른 사람을 해치려는 자를 미워하시고, 악인 위에 불과 유황을 쏟으신대요."}
+        {"from":"악인","to":"다윗","label":"쏘려는 자","kind":"conflict","directed":true,"weight":2,"verses":"2, 5-6절","note":"악인들은 어두운 데서 활을 당겨 마음이 바른 사람을 쏘려 해요. 하지만 주님은 다른 사람을 해치려는 자를 미워하시고, 악인 위에 불과 유황을 쏟으신대요."}
       ],
       "places": [
         {"name":"하늘 보좌","where":"하나님의 성전","what":"하늘 보좌에 앉아 사람들을 살피시는 곳","weight":1}
@@ -279,8 +279,8 @@
       ],
       "rels": [
         {"from":"거짓말하는 자들","to":"가련한 자들","label":"누르는 자","kind":"conflict","directed":true,"weight":2,"verses":"2-4","note":"거짓말쟁이들은 간사한 입술로 남을 속여요. 우리 혀만 있으면 이긴다며 큰소리쳐요. 가련한 사람들을 눌러요."},
-        {"from":"하나님","to":"가련한 자들","label":"일어나 지키심","kind":"ally","directed":true,"weight":3,"verses":"5","note":"하나님은 가련한 자들이 핍박받고 가난한 자들이 신음하니 일어나 보호하겠다고 하셨어요. 이 약속은 순은처럼 믿을 만해요."},
-        {"from":"다윗","to":"하나님","label":"도움을 구한 이","kind":"ally","directed":true,"weight":2,"verses":"1","note":"믿음 있는 사람이 다 사라지고 거짓말만 넘치자 다윗이 주님께 도와 달라고 외쳐요. 그리고 7번 걸러 낸 은처럼 깨끗한 주님 말씀을 붙들어요. 사람의 말과 대조돼요."}
+        {"from":"하나님","to":"가련한 자들","label":"일어나 지키심","kind":"ally","directed":true,"weight":3,"verses":"5-6절","note":"하나님은 가련한 자들이 핍박받고 가난한 자들이 신음하니 일어나 보호하겠다고 하셨어요. 이 약속은 순은처럼 믿을 만해요."},
+        {"from":"다윗","to":"하나님","label":"도움을 구한 이","kind":"ally","directed":true,"weight":2,"verses":"1, 6절","note":"믿음 있는 사람이 다 사라지고 거짓말만 넘치자 다윗이 주님께 도와 달라고 외쳐요. 그리고 일곱 번 걸러 낸 은처럼 깨끗한 주님 말씀을 붙들어요. 사람의 말과 대조돼요."}
       ],
       "places": [
 
@@ -301,7 +301,7 @@
         {"name":"하나님","role":"사랑을 베푸시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"사랑을 의지한 이","kind":"ally","directed":true,"weight":3,"verses":"1, 5","note":"다윗은 언제까지 나를 잊으시느냐고 5번이나 탄식하다가, 그래도 주님의 변함없는 사랑을 믿는다고 고백해요. 주께서 은혜를 베푸셨다고 노래해요."},
+        {"from":"다윗","to":"하나님","label":"사랑을 의지한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 5-6절","note":"다윗은 언제까지 나를 잊으시느냐며 '어느 때까지'를 네 번이나 되풀이해 탄식하다가, 그래도 주님의 변함없는 사랑을 믿는다고 고백해요. 주께서 은혜를 베푸셨다고 노래해요."},
         {"from":"원수","to":"다윗","label":"높아진 자","kind":"conflict","directed":true,"weight":1,"verses":"2, 4","note":"원수가 나를 보고 우쭐대니, 다윗은 주님께 도움을 구해요. 원수가 이겼다고 말하지 못하게 해 달라고 해요."}
       ],
       "places": [
@@ -325,7 +325,7 @@
       ],
       "rels": [
         {"from":"어리석은 자","to":"하나님","label":"부인하는 자","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"어리석은 사람은 속으로 하나님이 없다며 제멋대로 살아요. 머리가 나빠서가 아니라 하나님을 무시하는 어리석음이라, 행동까지 더럽고 썩었대요."},
-        {"from":"하나님","to":"가난한 자","label":"피난처","kind":"ally","directed":true,"weight":2,"verses":"6","note":"악인들은 가난한 사람의 계획을 방해하지만, 주님이 그의 피할 곳이 되어 주신대요. 하나님이 의인들과 함께 계시니 오히려 악인들이 큰 두려움에 빠져요."},
+        {"from":"하나님","to":"가난한 자","label":"피난처","kind":"ally","directed":true,"weight":2,"verses":"5-6절","note":"악인들은 가난한 사람의 계획을 방해하지만, 주님이 그의 피할 곳이 되어 주신대요. 하나님이 의인들과 함께 계시니 오히려 악인들이 큰 두려움에 빠져요."},
         {"from":"다윗","to":"하나님","label":"구원을 바람","kind":"ally","directed":true,"weight":2,"verses":"7","note":"다윗은 이스라엘을 건질 구원이 시온에서 오기를 간절히 바라요. 하나님이 백성의 운명을 회복시키시는 날 야곱 자손이 기뻐하고 즐거워할 거라 믿어요."}
       ],
       "places": [
@@ -369,7 +369,7 @@
         {"name":"하나님","role":"나의 산업과 잔","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 하나님께 피하며 주님 말고는 자기에게 좋은 게 없다고 고백해요. 여호와가 자기 몫이고 마실 잔이라, 다른 신은 이름조차 입에 올리지 않겠대요."},
+        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 4-5절","note":"다윗은 하나님께 피하며 주님 말고는 자기에게 좋은 게 없다고 고백해요. 여호와가 자기 몫이고 마실 잔이라, 다른 신은 이름조차 입에 올리지 않겠대요."},
         {"from":"다윗","to":"성도","label":"기뻐하는 이","kind":"ally","directed":true,"weight":1,"verses":"3","note":"다윗은 이 땅에서 하나님을 믿는 거룩한 사람들이 귀하고, 그들과 함께하는 게 큰 기쁨이라고 해요. 다른 신을 따르는 사람들과는 길이 달라요."},
         {"from":"하나님","to":"다윗","label":"생명 길 보이심","kind":"ally","directed":true,"weight":2,"verses":"10-11","note":"주님이 나를 무덤에 버려두지 않으시고 생명의 길을 보이시리라고 노래해요."}
       ],
@@ -393,8 +393,8 @@
         {"name":"하나님","role":"날개 그늘로 품으시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"보호를 구한 이","kind":"ally","directed":true,"weight":3,"verses":"1, 8","note":"다윗은 바른 사정을 들어 달라며 하나님 앞에 판결을 맡겨요. 주님은 밤에도 그 마음을 살피세요."},
-        {"from":"원수들","to":"다윗","label":"노리는 악인","kind":"conflict","directed":true,"weight":2,"verses":"9-12","note":"원수들은 마음이 기름에 잠겨 교만하게 말하며 다윗을 에워싸요. 숨어서 노리는 굶주린 사자처럼 틈을 노린대요. 이 세상 재물로 배부른 사람들이에요."},
+        {"from":"다윗","to":"하나님","label":"보호를 구한 이","kind":"ally","directed":true,"weight":3,"verses":"1-3, 8절","note":"다윗은 바른 사정을 들어 달라며 하나님 앞에 판결을 맡겨요. 주님은 밤에도 그 마음을 살피세요."},
+        {"from":"원수들","to":"다윗","label":"노리는 악인","kind":"conflict","directed":true,"weight":2,"verses":"9-14절","note":"원수들은 마음이 기름에 잠겨 교만하게 말하며 다윗을 에워싸요. 숨어서 노리는 굶주린 사자처럼 틈을 노린대요. 이 세상 재물로 배부른 사람들이에요."},
         {"from":"하나님","to":"다윗","label":"눈동자같이 지킴","kind":"ally","directed":true,"weight":2,"verses":"8","note":"다윗은 주님께 자기를 눈동자처럼 지켜 달라고 해요. 눈동자는 몸에서 가장 소중히 지키는 곳이고, 날개 그늘은 어미 새가 새끼를 품어 주는 모습이에요."}
       ],
       "places": [
@@ -419,9 +419,9 @@
       ],
       "rels": [
         {"from":"다윗","to":"하나님","label":"사랑을 고백한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 나의 힘이신 주님을 사랑한다며, 주님은 자기의 바위요 요새라고 고백해요."},
-        {"from":"하나님","to":"다윗","label":"건지신 분","kind":"ally","directed":true,"weight":3,"verses":"16-19","note":"하나님이 높은 곳에서 손을 뻗어 깊은 물에서 다윗을 건지시고 넓은 곳으로 이끄셨어요. 다윗을 기뻐하셨기 때문이고, 그 자손에게도 영원히 사랑을 베푸신대요."},
-        {"from":"사울","to":"다윗","label":"쫓던 왕","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"이 시는 여호와께서 다윗을 모든 원수와 사울의 손에서 건지신 날의 노래라고 표제에 적혀 있어요. 사울이 다윗을 쫓던 일을 가리키는 것으로 읽는 견해가 많아요."},
-        {"from":"원수들","to":"다윗","label":"에워싼 자","kind":"conflict","directed":true,"weight":1,"verses":"4-5","note":"죽음의 줄이 다윗을 옭아매고 멸망의 물결이 덮쳐 올 만큼 위험했대요. 그러나 하나님이 도우시자 원수들은 다윗 앞에 엎드리고 다시 일어나지 못했어요. 다른 나라들까지 그를 섬기게 됐어요."}
+        {"from":"하나님","to":"다윗","label":"건지신 분","kind":"ally","directed":true,"weight":3,"verses":"16-19, 50절","note":"하나님이 높은 곳에서 손을 뻗어 깊은 물에서 다윗을 건지시고 넓은 곳으로 이끄셨어요. 다윗을 기뻐하셨기 때문이고, 그 자손에게도 영원히 사랑을 베푸신대요."},
+        {"from":"사울","to":"다윗","label":"쫓던 왕","kind":"conflict","directed":true,"weight":2,"verses":"표제절","note":"이 시는 여호와께서 다윗을 모든 원수와 사울의 손에서 건지신 날의 노래라고 표제에 적혀 있어요. 사울이 다윗을 쫓던 일을 가리키는 것으로 읽는 견해가 많아요."},
+        {"from":"원수들","to":"다윗","label":"에워싼 자","kind":"conflict","directed":true,"weight":1,"verses":"4-5, 37-45절","note":"죽음의 줄이 다윗을 옭아매고 멸망의 물결이 덮쳐 올 만큼 위험했대요. 그러나 하나님이 도우시자 원수들은 다윗 앞에 엎드리고 다시 일어나지 못했어요. 다른 나라들까지 그를 섬기게 됐어요."}
       ],
       "places": [
 
@@ -467,7 +467,7 @@
       "rels": [
         {"from":"백성","to":"기름 부음 받은 왕","label":"축복한 백성","kind":"ally","directed":true,"weight":3,"verses":"1-4","note":"백성이 왕을 위해 어려운 날에 여호와께서 응답하시기를 빌어요. 왕이 드린 제물을 받으시고 마음의 소원과 계획을 이루어 주시기를 구해요."},
         {"from":"하나님","to":"기름 부음 받은 왕","label":"구원하시는 분","kind":"ally","directed":true,"weight":3,"verses":"6","note":"기도하던 사람은 주님이 기름 부으신 왕을 구해 주실 줄 이제 알겠다고 고백해요. 하나님이 하늘에서 오른손의 능력으로 응답하실 거래요."},
-        {"from":"병거와 말을 의지하는 자","to":"백성","label":"다른 의지","kind":"conflict","directed":false,"weight":1,"verses":"7","note":"어떤 이는 전차, 어떤 이는 말을 믿지만 우리는 여호와의 이름을 자랑한대요. 전차와 말을 믿는 사람은 엎드러지고 우리는 일어나 서요."}
+        {"from":"병거와 말을 의지하는 자","to":"백성","label":"다른 의지","kind":"conflict","directed":false,"weight":1,"verses":"7-8절","note":"어떤 이는 전차, 어떤 이는 말을 믿지만 우리는 여호와의 이름을 자랑한대요. 전차와 말을 믿는 사람은 엎드러지고 우리는 일어나 서요."}
       ],
       "places": [
         {"name":"시온","where":"예루살렘의 거룩한 산","what":"성소에서 도움을 보내시고 왕을 붙드시는 곳","weight":1}
@@ -488,9 +488,9 @@
         {"name":"하나님","role":"왕의 소원을 들으신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"다윗","label":"소원 들으신 분","kind":"ally","directed":true,"weight":3,"verses":"2, 4","note":"하나님이 왕의 마음의 소원을 들어주시고, 생명을 구하자 오래 살게 하셨대요. 순금 왕관도 씌워 주셨어요."},
+        {"from":"하나님","to":"다윗","label":"소원 들으신 분","kind":"ally","directed":true,"weight":3,"verses":"2-4절","note":"하나님이 왕의 마음의 소원을 들어주시고, 생명을 구하자 오래 살게 하셨대요. 순금 왕관도 씌워 주셨어요."},
         {"from":"다윗","to":"하나님","label":"의지한 왕","kind":"ally","directed":true,"weight":3,"verses":"7","note":"왕은 여호와를 믿기에 가장 높으신 분의 변함없는 사랑 안에서 흔들리지 않는대요."},
-        {"from":"원수들","to":"다윗","label":"꾀를 꾸민 자","kind":"conflict","directed":true,"weight":2,"verses":"11","note":"원수들이 주님을 거슬러 왕을 해치려고 악한 꾀를 꾸며도 끝내 이루지 못할 거래요. 주님이 활을 겨누시면 그들은 돌아서 도망치고 그 자손까지 끊어져요."}
+        {"from":"원수들","to":"다윗","label":"꾀를 꾸민 자","kind":"conflict","directed":true,"weight":2,"verses":"10-12절","note":"원수들이 주님을 거슬러 왕을 해치려고 악한 꾀를 꾸며도 끝내 이루지 못할 거래요. 주님이 활을 겨누시면 그들은 돌아서 도망치고 그 자손까지 끊어져요."}
       ],
       "places": [
 
@@ -517,7 +517,7 @@
         {"from":"다윗","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 왜 나를 버리셨냐며 밤낮 불러도 대답이 없으시다고 울부짖어요. 그래도 내 하나님이라고 부르며 매달려요."},
         {"from":"비웃는 자들","to":"다윗","label":"조롱한 이들","kind":"conflict","directed":true,"weight":2,"verses":"7-8","note":"지켜보는 사람들은 머리를 흔들며 하나님이 구해 주시겠지 하고 비웃어요."},
         {"from":"원수들","to":"다윗","label":"찌른 무리","kind":"conflict","directed":true,"weight":3,"verses":"16-18","note":"악한 무리가 개처럼 둘러싸 손발을 찌르고 옷을 나누려고 제비를 뽑는대요."},
-        {"from":"하나님","to":"다윗","label":"응답하신 분","kind":"ally","directed":true,"weight":3,"verses":"24","note":"하나님은 고통받는 사람을 멸시하지 않으시고 얼굴을 숨기지 않으시며 부르짖을 때 들으셨대요. 그래서 고난의 노래가 큰 모임에서 부르는 감사로 바뀌어요."},
+        {"from":"하나님","to":"다윗","label":"응답하신 분","kind":"ally","directed":true,"weight":3,"verses":"24-25절","note":"하나님은 고통받는 사람을 멸시하지 않으시고 얼굴을 숨기지 않으시며 부르짖을 때 들으셨대요. 그래서 고난의 노래가 큰 모임에서 부르는 감사로 바뀌어요."},
         {"from":"땅끝의 모든 족속","to":"하나님","label":"돌아올 족속","kind":"ally","directed":true,"weight":2,"verses":"27","note":"땅끝의 모든 민족이 여호와를 기억하고 돌아와 예배하리라고 해요."}
       ],
       "places": [
@@ -559,7 +559,7 @@
         {"name":"하나님","role":"영광의 왕 만군의 여호와","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"마음이 청결한 자","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"3-5","note":"손이 깨끗하고 마음이 맑으며 헛된 것을 멀리하는 사람이 여호와의 산에 올라 복을 받는대요. 그런 사람이 하나님 얼굴을 찾는 야곱의 자손이래요."},
+        {"from":"하나님","to":"마음이 청결한 자","label":"복 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"3-6절","note":"손이 깨끗하고 마음이 맑으며 헛된 것을 멀리하는 사람이 여호와의 산에 올라 복을 받는대요. 그런 사람이 하나님 얼굴을 찾는 야곱의 자손이래요."},
         {"from":"다윗","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2,"verses":"7-10","note":"다윗은 성문들아 고개를 들라, 영광의 왕이 들어가신다고 외쳐요. 전쟁에 능하신 만군의 여호와를 영광의 왕으로 맞이해요."}
       ],
       "places": [
@@ -583,8 +583,8 @@
         {"name":"하나님","role":"겸손한 자를 지도하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"가르침을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"4-5","note":"다윗은 주님의 길을 보여 주시고 진리로 가르쳐 달라고 구해요. 젊은 시절 죄는 기억하지 마시고 주님의 사랑을 기억해 달라고 해요."},
-        {"from":"원수들","to":"다윗","label":"미워하는 자","kind":"conflict","directed":true,"weight":1,"verses":"19","note":"다윗을 미워하는 원수가 많고 그 미움이 지독하대요. 다윗은 원수가 자기를 이기고 좋아하지 않도록, 그리고 덫에 걸리지 않게 막아 주시도록 주님만 바라봐요."},
+        {"from":"다윗","to":"하나님","label":"가르침을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"4-7절","note":"다윗은 주님의 길을 보여 주시고 진리로 가르쳐 달라고 구해요. 젊은 시절 죄는 기억하지 마시고 주님의 사랑을 기억해 달라고 해요."},
+        {"from":"원수들","to":"다윗","label":"미워하는 자","kind":"conflict","directed":true,"weight":1,"verses":"2, 15, 19절","note":"다윗을 미워하는 원수가 많고 그 미움이 지독하대요. 다윗은 원수가 자기를 이기고 좋아하지 않도록, 그리고 덫에 걸리지 않게 막아 주시도록 주님만 바라봐요."},
         {"from":"하나님","to":"이스라엘","label":"속량하실 분","kind":"ally","directed":true,"weight":1,"verses":"22","note":"시인은 개인의 기도를 마치며 하나님이 이스라엘 전체를 모든 어려움에서 건져 주시기를 빌어요."}
       ],
       "places": [
@@ -606,8 +606,8 @@
         {"name":"하나님","role":"마음을 단련하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"판단을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 나를 판단하시고 속마음을 단련하듯 살펴 달라고 해요. 흠 없이 살아왔다고 고백하며 주님의 사랑을 의지해요."},
-        {"from":"다윗","to":"행악자들","label":"멀리한 이","kind":"conflict","directed":true,"weight":2,"verses":"4-5","note":"다윗은 거짓된 사람들과 함께 앉지 않고 악한 무리의 모임을 싫어했다고 해요. 주님의 집을 사랑한다고 고백해요."}
+        {"from":"다윗","to":"하나님","label":"판단을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"1-3절","note":"다윗은 나를 판단하시고 속마음을 단련하듯 살펴 달라고 해요. 흠 없이 살아왔다고 고백하며 주님의 사랑을 의지해요."},
+        {"from":"다윗","to":"행악자들","label":"멀리한 이","kind":"conflict","directed":true,"weight":2,"verses":"4-5, 8절","note":"다윗은 거짓된 사람들과 함께 앉지 않고 악한 무리의 모임을 싫어했다고 해요. 주님의 집을 사랑한다고 고백해요."}
       ],
       "places": [
         {"name":"주의 집","where":"하나님의 성소","what":"다윗이 사랑한 곳, 주님 영광이 머무는 집","weight":2}
@@ -631,8 +631,8 @@
       ],
       "rels": [
         {"from":"다윗","to":"하나님","label":"기다린 이","kind":"ally","directed":true,"weight":3,"verses":"4, 14","note":"다윗이 바라는 단 한 가지는 평생 여호와의 집에 살며 그 아름다움을 바라보는 거예요. 강하고 담대하게 여호와를 기다리라고 스스로에게 말해요."},
-        {"from":"대적들","to":"다윗","label":"진 친 원수","kind":"conflict","directed":true,"weight":2,"verses":"2-3","note":"악인들과 대적들이 다윗을 집어삼키려 달려들고 군대가 진을 쳤지만 다윗은 두렵지 않대요. 덤비던 원수들이 쓰러질 거라 하고, 거짓 증인들이 일어나 다윗을 치려 한대요."},
-        {"from":"하나님","to":"다윗","label":"영접하시는 분","kind":"ally","directed":true,"weight":3,"verses":"10","note":"부모가 버려도 주님은 다윗을 받아 주실 거래요. 주님은 그를 성막에 숨기고 높은 산 위에 세우세요."},
+        {"from":"대적들","to":"다윗","label":"진 친 원수","kind":"conflict","directed":true,"weight":2,"verses":"2-3, 12절","note":"악인들과 대적들이 다윗을 집어삼키려 달려들고 군대가 진을 쳤지만 다윗은 두렵지 않대요. 덤비던 원수들이 쓰러질 거라 하고, 거짓 증인들이 일어나 다윗을 치려 한대요."},
+        {"from":"하나님","to":"다윗","label":"영접하시는 분","kind":"ally","directed":true,"weight":3,"verses":"5, 10절","note":"부모가 버려도 주님은 다윗을 받아 주실 거래요. 주님은 그를 성막에 숨기고 높은 산 위에 세우세요."},
         {"from":"부모","to":"다윗","label":"버릴지라도","kind":"family","directed":true,"weight":1,"verses":"10","note":"다윗은 아버지와 어머니가 나를 버릴지라도 여호와는 받아 주신다고 고백해요."}
       ],
       "places": [
@@ -655,8 +655,8 @@
         {"name":"하나님","role":"나의 반석과 방패","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 나의 바위이신 주님께 잠잠하지 말아 달라며, 가장 거룩한 곳을 향해 손을 들고 부르짖어요. 주님이 기도를 들으시자 여호와는 나의 힘과 방패라며 기뻐 노래해요."},
-        {"from":"악인들","to":"다윗","label":"속이는 자","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"악인들은 이웃에게 화평을 말하지만 속에는 악을 품는대요. 다윗은 그들이 한 대로 갚아 달라며 하나님께 맡겨요."},
+        {"from":"다윗","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 6-7절","note":"다윗은 나의 바위이신 주님께 잠잠하지 말아 달라며, 가장 거룩한 곳을 향해 손을 들고 부르짖어요. 주님이 기도를 들으시자 여호와는 나의 힘과 방패라며 기뻐 노래해요."},
+        {"from":"악인들","to":"다윗","label":"속이는 자","kind":"conflict","directed":true,"weight":2,"verses":"3-4절","note":"악인들은 이웃에게 화평을 말하지만 속에는 악을 품는대요. 다윗은 그들이 한 대로 갚아 달라며 하나님께 맡겨요."},
         {"from":"하나님","to":"주의 백성","label":"목자 되실 분","kind":"ally","directed":true,"weight":2,"verses":"9","note":"다윗은 주님이 백성을 구원하시고 목자가 되어 영원토록 인도해 주시기를 빌어요. 개인의 기도가 백성 전체를 위한 기도로 넓어져요."}
       ],
       "places": [
@@ -680,8 +680,8 @@
       ],
       "rels": [
         {"from":"권능 있는 자들","to":"하나님","label":"영광 돌릴 자","kind":"ally","directed":true,"weight":1,"verses":"1-2","note":"하늘의 힘 있는 존재들에게 영광과 능력을 주님께 돌리고 거룩한 옷을 입고 예배하라고 해요."},
-        {"from":"하나님","to":"주의 백성","label":"평강 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"11","note":"백향목을 꺾고 광야를 흔드는 하나님이 자기 백성에게는 힘을 주시고 평화로 복 주신대요."},
-        {"from":"다윗","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2,"verses":"3-9","note":"다윗은 바다 위에서 천둥처럼 울리며 백향목을 꺾는 여호와의 소리를 찬양해요."}
+        {"from":"하나님","to":"주의 백성","label":"평강 주시는 분","kind":"ally","directed":true,"weight":3,"verses":"5, 8, 11절","note":"백향목을 꺾고 광야를 흔드는 하나님이 자기 백성에게는 힘을 주시고 평화로 복 주신대요."},
+        {"from":"다윗","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2,"verses":"3-9","note":"다윗은 많은 물 위에서 천둥처럼 울리며 백향목을 꺾는 여호와의 소리를 찬양해요."}
       ],
       "places": [
         {"name":"레바논","where":"이스라엘 북쪽 백향목 산지","what":"여호와의 소리에 레바논 백향목이 꺾이고 산이 뛴 곳","weight":2},
@@ -705,7 +705,7 @@
         {"name":"하나님","role":"슬픔을 춤으로 바꾸신 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"다윗","label":"끌어올리신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님이 다윗을 깊은 곳에서 건져 올리시고 무덤에 내려갈 뻔한 목숨을 살리셨대요. 원수가 기뻐하지 못하게 하셨고, 그의 슬픔을 춤으로 바꾸어 주셨어요."},
+        {"from":"하나님","to":"다윗","label":"끌어올리신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3, 11절","note":"하나님이 다윗을 깊은 곳에서 건져 올리시고 무덤에 내려갈 뻔한 목숨을 살리셨대요. 원수가 기뻐하지 못하게 하셨고, 그의 슬픔을 춤으로 바꾸어 주셨어요."},
         {"from":"다윗","to":"성도들","label":"찬송을 권한 이","kind":"ally","directed":true,"weight":2,"verses":"4-5","note":"다윗은 주님의 노여움은 잠깐이고 은혜는 평생이니 성도들에게 함께 찬양하자고 해요. 밤새 울어도 아침이 오면 기쁨이 온다고 해요."},
         {"from":"원수","to":"다윗","label":"기뻐하려던 자","kind":"conflict","directed":true,"weight":1,"verses":"1","note":"원수들이 나를 비웃지 못하게 하셨대요. 다윗은 주님이 원수가 기뻐하지 못하게 하셨다고 찬양해요."}
       ],
@@ -733,7 +733,7 @@
       "rels": [
         {"from":"다윗","to":"하나님","label":"영을 맡긴 이","kind":"ally","directed":true,"weight":3,"verses":"5","note":"다윗은 자기 생명을 주님 손에 맡긴다고 고백해요."},
         {"from":"원수들","to":"다윗","label":"비방한 자","kind":"conflict","directed":true,"weight":2,"verses":"11, 13","note":"나는 대적 때문에 비방거리가 되었고 많은 사람이 나를 해하려 의논한다고 해요."},
-        {"from":"이웃과 친구","to":"다윗","label":"잊은 이들","kind":"other","directed":true,"weight":1,"verses":"11-12","note":"이웃은 나를 심히 두려워하고 아는 자들은 나를 보고 피하며 죽은 자처럼 잊었다고 해요."},
+        {"from":"이웃과 친구","to":"다윗","label":"잊은 이들","kind":"other","directed":true,"weight":1,"verses":"11-12","note":"다윗은 이웃에게서 더욱 욕을 당하고, 친구는 놀라고, 길에서 보는 사람은 자기를 피한다고 해요. 사람들이 자기를 죽은 자처럼 잊고 깨진 그릇처럼 여긴다고 탄식해요."},
         {"from":"다윗","to":"성도들","label":"권면한 이","kind":"ally","directed":true,"weight":1,"verses":"23-24","note":"다윗은 성도들에게 주님을 사랑하고 마음을 굳게 하라고 권해요."}
       ],
       "places": [
@@ -807,7 +807,7 @@
         {"name":"하나님","role":"선하심을 맛보게 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"아비멜렉","to":"다윗","label":"쫓아낸 왕","kind":"other","directed":true,"weight":2,"verses":"1","note":"다윗이 아비멜렉 앞에서 미친 체하다가 쫓겨난 뒤 지은 시예요."},
+        {"from":"아비멜렉","to":"다윗","label":"쫓아낸 왕","kind":"other","directed":true,"weight":2,"verses":"표제절","note":"다윗이 아비멜렉 앞에서 미친 체하다가 쫓겨난 뒤 지은 시예요."},
         {"from":"하나님","to":"다윗","label":"건지신 분","kind":"ally","directed":true,"weight":3,"verses":"4, 6","note":"다윗이 주님을 찾자 대답하시고 모든 두려움에서 건져 주셨대요."},
         {"from":"다윗","to":"겸손한 자들","label":"함께 찬양 권함","kind":"ally","directed":true,"weight":1,"verses":"2-3","note":"다윗은 겸손한 이들에게 함께 주님 이름을 높이자고 불러요."},
         {"from":"하나님","to":"의인","label":"건지시는 분","kind":"ally","directed":true,"weight":2,"verses":"17-19","note":"의인이 부르짖으면 주님이 들으시고 모든 어려움에서 건지신대요."}
@@ -1102,7 +1102,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"고라 자손","label":"피난처 되신 분","kind":"ally","directed":true,"weight":3,"verses":"1-3","note":"하나님이 피할 곳이요 힘이시니 땅이 뒤흔들려도 두렵지 않다고 노래해요."},
-        {"from":"나라들","to":"하나님","label":"떠드는 나라","kind":"conflict","directed":true,"weight":1,"verses":"6, 10","note":"나라들이 소란해도 하나님은 멈추고 내가 하나님임을 알라고 하셨어요."}
+        {"from":"나라들","to":"하나님","label":"떠드는 나라","kind":"conflict","directed":true,"weight":1,"verses":"6, 10","note":"나라들이 떠들고 왕국이 흔들려도 하나님이 소리를 내시면 땅이 녹아요. 그리고 하나님은 가만히 있어 내가 하나님 됨을 알라고 말씀하셨어요."}
       ],
       "places": [
         {"name":"하나님의 성","where":"하나님의 성(예루살렘으로 읽는 견해가 많아요)","what":"시내가 기쁘게 하는 흔들리지 않는 곳","weight":3}
@@ -1146,7 +1146,7 @@
         {"name":"하나님","role":"죽을 때까지 인도하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"왕들","to":"하나님","label":"두려워 도망한 자","kind":"conflict","directed":true,"weight":2,"verses":"4-6","note":"시온을 치러 모인 왕들이 그 모습을 보고 겁에 질려 떨며 달아났대요."},
+        {"from":"왕들","to":"하나님","label":"두려워 도망한 자","kind":"conflict","directed":true,"weight":2,"verses":"4-6","note":"왕들이 모여 지나가다가 하나님의 성을 보고 놀라고 두려워하며 떨었대요. 고통이 해산하는 여인의 고통 같았다고 해요."},
         {"from":"하나님","to":"고라 자손","label":"인도하시는 분","kind":"ally","directed":true,"weight":3,"verses":"14","note":"이 하나님이 영원히 우리 하나님이시고 끝까지 우리를 이끄신대요."}
       ],
       "places": [
@@ -1170,7 +1170,7 @@
         {"name":"하나님","role":"영혼을 건지시는 분","weight":3}
       ],
       "rels": [
-        {"from":"재물을 의지하는 자","to":"고라 자손","label":"둘러싼 자","kind":"conflict","directed":true,"weight":2,"verses":"5-6","note":"돈을 믿고 뽐내는 사람들이 둘러싸도 시인은 두렵지 않대요."},
+        {"from":"재물을 의지하는 자","to":"고라 자손","label":"재물을 자랑하는 자","kind":"conflict","directed":true,"weight":2,"verses":"5-7절","note":"시인은 환난의 날에도 두려워하지 않아요. 재물을 의지하고 부유함을 자랑하는 사람도 아무도 형제를 구원하지 못하고 그를 위한 속전을 하나님께 바치지도 못하기 때문이에요."},
         {"from":"하나님","to":"고라 자손","label":"건지시는 분","kind":"ally","directed":true,"weight":3,"verses":"15","note":"하나님이 시인의 영혼을 죽음의 힘에서 건져 받아 주실 거래요."}
       ],
       "places": [
@@ -1220,7 +1220,7 @@
         {"name":"하나님","role":"정한 마음을 창조하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"나단","to":"다윗","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"이 시는 다윗이 밧세바와 동침한 후 선지자 나단이 그에게 왔을 때 지은 시예요."},
+        {"from":"나단","to":"다윗","label":"책망한 선지자","kind":"conflict","directed":true,"weight":3,"verses":"표제절","note":"이 시는 다윗이 밧세바와 동침한 후 선지자 나단이 그에게 왔을 때 지은 시예요."},
         {"from":"다윗","to":"하나님","label":"회개한 왕","kind":"ally","directed":true,"weight":3,"verses":"1-4, 10","note":"다윗은 사랑으로 불쌍히 여겨 달라며 깨끗한 마음을 새로 만들어 달라고 빌어요."},
         {"from":"성령","to":"다윗","label":"함께하시는 영","kind":"ally","directed":true,"weight":2,"verses":"11","note":"다윗은 주님 앞에서 쫓아내지 말고 성령을 거두지 말아 달라고 해요."}
       ],
@@ -1247,9 +1247,9 @@
       ],
       "rels": [
         {"from":"도엑","to":"다윗","label":"고자질한 자","kind":"conflict","directed":true,"weight":3,"verses":"1-4","note":"에돔 사람 도엑에게 포악한 자여 어찌하여 악을 자랑하느냐, 네 혀가 날카로운 삭도 같다고 말해요."},
-        {"from":"도엑","to":"사울","label":"알린 신하","kind":"ally","directed":true,"weight":2,"verses":"1","note":"도엑이 사울에게 다윗이 아히멜렉의 집에 왔다고 알렸을 때 지은 시예요."},
+        {"from":"도엑","to":"사울","label":"알린 신하","kind":"ally","directed":true,"weight":2,"verses":"표제절","note":"도엑이 사울에게 다윗이 아히멜렉의 집에 왔다고 알렸을 때 지은 시예요."},
         {"from":"하나님","to":"도엑","label":"뽑으시는 분","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"하나님이 너를 영원히 멸하심이여 장막에서 뽑아 내시리라고 해요."},
-        {"from":"아히멜렉","to":"다윗","label":"도운 제사장","kind":"ally","directed":true,"weight":1,"verses":"1","note":"다윗이 제사장 아히멜렉의 집에 들러 도움을 받았던 일이 배경이에요."},
+        {"from":"아히멜렉","to":"다윗","label":"도운 제사장","kind":"ally","directed":true,"weight":1,"verses":"표제절","note":"다윗이 제사장 아히멜렉의 집에 들러 도움을 받았던 일이 배경이에요."},
         {"from":"다윗","to":"하나님","label":"의지한 이","kind":"ally","directed":true,"weight":2,"verses":"8","note":"다윗은 하나님 집에서 자라는 푸른 올리브 나무처럼 하나님 사랑을 영원히 믿겠대요."}
       ],
       "places": [
@@ -1295,10 +1295,10 @@
         {"name":"하나님","role":"다윗을 돕는 분","weight":3}
       ],
       "rels": [
-        {"from":"십 사람들","to":"사울","label":"알린 이들","kind":"ally","directed":true,"weight":2,"verses":"1","note":"십 사람들이 사울에게 와서 다윗이 우리 곳에 숨었다고 말했을 때 지은 시예요."},
-        {"from":"십 사람들","to":"다윗","label":"고자질한 이들","kind":"conflict","directed":true,"weight":3,"verses":"3","note":"낯선 자들과 사나운 자들이 다윗의 목숨을 노리고 찾아다녀요."},
+        {"from":"십 사람들","to":"사울","label":"알린 이들","kind":"ally","directed":true,"weight":2,"verses":"표제절","note":"십 사람들이 사울에게 와서 다윗이 우리 곳에 숨었다고 말했을 때 지은 시예요."},
+        {"from":"십 사람들","to":"다윗","label":"고자질한 이들","kind":"conflict","directed":true,"weight":3,"verses":"표제절, 3절","note":"낯선 자들과 사나운 자들이 다윗의 목숨을 노리고 찾아다녀요."},
         {"from":"하나님","to":"다윗","label":"돕는 분","kind":"ally","directed":true,"weight":3,"verses":"4","note":"하나님은 다윗을 돕고 그 생명을 붙들어 주시는 분이래요."},
-        {"from":"사울","to":"다윗","label":"쫓는 왕","kind":"conflict","directed":true,"weight":2,"verses":"1, 3","note":"다윗은 사울에게 쫓기며 숨어 지내던 중 이 시를 지었어요."}
+        {"from":"사울","to":"다윗","label":"쫓는 왕","kind":"conflict","directed":true,"weight":2,"verses":"1, 3","note":"표제에 따르면 십 사람이 다윗의 은신처를 사울에게 알리던 때, 쫓기던 다윗이 이 시를 지었어요."}
       ],
       "places": [
         {"name":"십","where":"십","what":"다윗이 숨었던 곳","weight":2}
@@ -1346,7 +1346,7 @@
         {"name":"하나님","role":"눈물을 기억하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"블레셋 사람들","to":"다윗","label":"잡은 이들","kind":"conflict","directed":true,"weight":2,"verses":"1","note":"블레셋 사람들이 가드에서 다윗을 잡았을 때 지은 시예요."},
+        {"from":"블레셋 사람들","to":"다윗","label":"잡은 이들","kind":"conflict","directed":true,"weight":2,"verses":"표제절","note":"블레셋 사람들이 가드에서 다윗을 잡았을 때 지은 시예요."},
         {"from":"다윗","to":"하나님","label":"의지한 이","kind":"ally","directed":true,"weight":3,"verses":"3-4","note":"두려운 날에도 다윗은 주님을 믿으니, 사람이 자기를 어쩌겠냐고 해요."},
         {"from":"원수들","to":"다윗","label":"엿보는 자","kind":"conflict","directed":true,"weight":2,"verses":"5-6","note":"원수들은 종일 다윗의 말을 비틀고 몰래 뒤를 밟는대요."}
       ],
@@ -1371,7 +1371,7 @@
       ],
       "rels": [
         {"from":"사울","to":"다윗","label":"쫓는 왕","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"다윗이 사울을 피해 굴에 있을 때 지은 시예요."},
-        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"하나님이여 나를 불쌍히 여기소서, 재앙이 지나기까지 주의 날개 그늘 아래로 피하리이다 하고 노래해요."},
+        {"from":"다윗","to":"하나님","label":"피한 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"다윗은 하나님께 은혜를 구하며 재앙이 지나가기까지 주의 날개 그늘 아래로 피하겠다고 노래해요."},
         {"from":"원수들","to":"다윗","label":"그물 친 자","kind":"conflict","directed":true,"weight":2,"verses":"6","note":"원수들이 다윗을 잡으려 그물과 함정을 팠지만 오히려 자기들이 빠졌대요."}
       ],
       "places": [
@@ -1418,7 +1418,7 @@
         {"name":"하나님","role":"나의 요새","weight":3}
       ],
       "rels": [
-        {"from":"사울","to":"사울이 보낸 자들","label":"보낸 왕","kind":"ally","directed":true,"weight":2,"verses":"1","note":"사울이 사람을 보내 다윗을 죽이려고 그 집을 지킬 때 지은 시예요."},
+        {"from":"사울","to":"사울이 보낸 자들","label":"보낸 왕","kind":"ally","directed":true,"weight":2,"verses":"표제절","note":"사울이 사람을 보내 다윗을 죽이려고 그 집을 지킬 때 지은 시예요."},
         {"from":"사울이 보낸 자들","to":"다윗","label":"노린 원수","kind":"conflict","directed":true,"weight":3,"verses":"3, 6","note":"그들이 내 생명을 엿보고 저녁에 돌아와 개처럼 짖으며 성으로 두루 다닌다고 해요."},
         {"from":"하나님","to":"다윗","label":"요새 되신 분","kind":"ally","directed":true,"weight":3,"verses":"9, 16-17","note":"하나님이 요새가 되어 주시니 다윗은 아침마다 주님의 사랑을 노래하겠대요."}
       ],
@@ -1443,7 +1443,7 @@
         {"name":"하나님","role":"땅의 주인","weight":3}
       ],
       "rels": [
-        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2,"verses":"1","note":"요압이 소금 골짜기에서 에돔을 물리쳤을 때 지은 시라고 표제에 적혀 있어요."},
+        {"from":"요압","to":"다윗","label":"군대 장관","kind":"ally","directed":true,"weight":2,"verses":"표제절","note":"다윗의 군대 장관 요압이 돌아와 소금 골짜기에서 에돔 사람 만 이천 명을 쳤을 때의 일이 표제에 적혀 있어요."},
         {"from":"다윗","to":"하나님","label":"의지한 왕","kind":"ally","directed":true,"weight":3,"verses":"11-12","note":"사람의 도움은 소용없으니 하나님을 믿고 용감히 나아가겠대요."},
         {"from":"하나님","to":"에돔","label":"밟으실 분","kind":"conflict","directed":true,"weight":1,"verses":"8, 12","note":"에돔에는 내 신발을 던지리라 하시니, 우리 대적을 밟을 자는 하나님이시라고 해요."}
       ],
@@ -1466,7 +1466,7 @@
         {"name":"하나님","role":"높은 바위와 견고한 망대","weight":3}
       ],
       "rels": [
-        {"from":"다윗","to":"하나님","label":"부르짖은 왕","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 먼지 구덩이에서도 부르짖으며 나보다 높은 바위로 이끌어 달라고 해요."},
+        {"from":"다윗","to":"하나님","label":"부르짖은 왕","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 마음이 약해질 때 땅끝에서도 하나님께 부르짖으며, 나보다 높은 바위로 이끌어 달라고 해요."},
         {"from":"하나님","to":"다윗","label":"피난처 되신 분","kind":"ally","directed":true,"weight":3,"verses":"3-4","note":"주님은 원수를 피할 튼튼한 탑이시니 영원히 주님 집에 머물겠대요."}
       ],
       "places": [
@@ -1862,7 +1862,7 @@
       ],
       "rels": [
         {"from":"아삽","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 7-9","note":"환난 날에 아삽이 주를 찾으며 주께서 영원히 버리시며 은혜를 잊으셨는가 하고 부르짖어요."},
-        {"from":"하나님","to":"모세","label":"손으로 쓰신 분","kind":"ally","directed":true,"weight":2,"verses":"20","note":"하나님은 모세와 아론을 통해 백성을 양 떼처럼 이끄셨대요."},
+        {"from":"하나님","to":"모세","label":"손으로 인도하신 분","kind":"ally","directed":true,"weight":2,"verses":"20","note":"하나님은 모세와 아론을 통해 백성을 양 떼처럼 이끄셨대요."},
         {"from":"모세","to":"아론","label":"형제","kind":"family","directed":false,"weight":1,"verses":"20","note":"모세와 아론이 함께 백성을 인도했어요."},
         {"from":"하나님","to":"야곱과 요셉의 자손","label":"속량하신 분","kind":"ally","directed":true,"weight":2,"verses":"15","note":"하나님은 강한 팔로 야곱과 요셉의 자손을 건져 내셨대요."}
       ],
@@ -1892,7 +1892,7 @@
         {"from":"조상들","to":"하나님","label":"시험한 백성","kind":"conflict","directed":true,"weight":3,"verses":"17-18, 41","note":"조상들은 계속 하나님께 범죄하고 탐욕대로 음식을 구하며 광야에서 하나님을 시험했어요."},
         {"from":"하나님","to":"조상들","label":"긍휼 베푸신 분","kind":"ally","directed":true,"weight":3,"verses":"38","note":"그래도 하나님은 불쌍히 여기셔서 죄를 덮어 주시고 몇 번이나 노여움을 참으셨어요."},
         {"from":"하나님","to":"다윗","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"70-72","note":"하나님이 양의 우리에서 다윗을 택하사 백성을 기르게 하시니 그가 마음의 완전함으로 그들을 길렀어요."},
-        {"from":"아삽","to":"조상들","label":"이야기를 전한 이","kind":"other","directed":true,"weight":1,"verses":"2-4","note":"아삽이 비유로 입을 열어 조상들이 우리에게 전한 것을 숨기지 않고 후대에 전하겠다고 해요."}
+        {"from":"조상들","to":"아삽","label":"이야기를 전해 준 이","kind":"other","directed":true,"weight":1,"verses":"2-4","note":"조상들이 들려준 하나님의 일을 아삽이 숨기지 않고 후대에 전하겠다고 해요."}
       ],
       "places": [
         {"name":"소안 들","where":"애굽 땅 소안 들","what":"하나님이 기적을 행하신 곳","weight":1},
@@ -1943,7 +1943,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"이스라엘","label":"심으신 분","kind":"ally","directed":true,"weight":3,"verses":"8-9","note":"하나님은 이스라엘을 애굽에서 옮겨 와 포도나무처럼 이 땅에 심으셨대요."},
-        {"from":"원수들","to":"이스라엘","label":"짓밟은 자","kind":"conflict","directed":true,"weight":2,"verses":"12-13","note":"담이 허물어져 지나가는 사람이 따 가고 멧돼지가 먹는 것을, 주께서 왜 담을 허셨냐고 물어요."},
+        {"from":"원수들","to":"이스라엘","label":"짓밟은 자","kind":"conflict","directed":true,"weight":2,"verses":"6, 12-13","note":"원수들이 비웃는 가운데 포도나무의 담이 허물어져 지나가는 사람이 따 가고 멧돼지와 들짐승이 해쳐요. 시인은 주께서 왜 담을 허셨냐고 물어요."},
         {"from":"아삽","to":"하나님","label":"회복을 구한 이","kind":"ally","directed":true,"weight":3,"verses":"3, 7, 19","note":"다시 돌아오게 하시고 얼굴을 비춰 주시면 우리가 살겠다고 해요."}
       ],
       "places": [
@@ -1993,7 +1993,7 @@
       "rels": [
         {"from":"하나님","to":"재판관들","label":"꾸짖으신 분","kind":"conflict","directed":true,"weight":3,"verses":"1-2","note":"하나님이 재판관들 가운데서 너희가 언제까지 불공평하게 판단하고 악인의 낯을 보겠느냐고 꾸짖으셨어요."},
         {"from":"재판관들","to":"가난한 자와 고아","label":"외면한 자","kind":"conflict","directed":true,"weight":2,"verses":"2-4","note":"재판관들은 가난한 자와 고아를 위해 판단하고 그들을 악인의 손에서 건져야 했어요."},
-        {"from":"하나님","to":"가난한 자와 고아","label":"공의 베푸실 분","kind":"ally","directed":true,"weight":2,"verses":"3, 8","note":"하나님께 일어나 세상을 바로잡아 달라, 모든 나라가 주님 것이라고 해요."}
+        {"from":"하나님","to":"가난한 자와 고아","label":"공의 베푸실 분","kind":"ally","directed":true,"weight":2,"verses":"3, 8","note":"하나님은 재판관들에게 가난한 자와 고아에게 공의를 베풀라고 하시고, 시인은 하나님께 일어나 세상을 심판해 달라고 구해요."}
       ],
       "places": [
 
@@ -2117,7 +2117,7 @@
         {"name":"하나님","role":"민족들을 등록하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"이방 민족들","label":"시민 삼으신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"이집트와 바빌론과 블레셋과 두로와 에티오피아도 시온에서 났다고 기록하시니 이방 민족도 시온의 시민이 된다고 해요."},
+        {"from":"하나님","to":"이방 민족들","label":"시민 삼으신 분","kind":"ally","directed":true,"weight":3,"verses":"4-6","note":"라합(이집트)과 바빌론과 블레셋과 두로와 구스(에티오피아)도 시온에서 났다고 하시니, 이방 민족도 시온의 시민이 된다고 해요."},
         {"from":"고라 자손","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":1,"verses":"2-3, 7","note":"하나님은 시온을 사랑하시고, 시인은 나의 모든 근원이 시온에 있다고 노래해요."}
       ],
       "places": [
@@ -2192,7 +2192,7 @@
       ],
       "rels": [
         {"from":"모세","to":"하나님","label":"기도한 종","kind":"ally","directed":true,"weight":3,"verses":"1, 12","note":"모세는 우리 날이 짧음을 깨닫고 지혜롭게 살게 해 달라고 기도해요."},
-        {"from":"하나님","to":"사람","label":"거처 되신 분","kind":"ally","directed":true,"weight":2,"verses":"1-4","note":"하나님은 대대로 우리의 집이시고, 그분께 1000년은 지나간 하루 같대요."}
+        {"from":"하나님","to":"사람","label":"거처 되신 분","kind":"ally","directed":true,"weight":2,"verses":"1-4","note":"하나님은 대대로 우리의 집이시고, 그분께 천 년은 지나간 어제 같대요."}
       ],
       "places": [
 
@@ -2492,8 +2492,8 @@
       ],
       "rels": [
         {"from":"다윗","to":"하나님","label":"송축한 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"다윗은 자기 영혼에게 하나님을 송축하고 그의 은택을 잊지 말라고 거듭 말해요."},
-        {"from":"하나님","to":"다윗","label":"죄를 사하신 분","kind":"ally","directed":true,"weight":3,"verses":"3, 12","note":"하나님은 죄를 용서하시고 동쪽이 서쪽에서 먼 만큼 허물을 멀리 치우셨어요. 하나님은 죄를 따라 갚지 않으세요."},
-        {"from":"하나님","to":"모세","label":"길을 알리신 분","kind":"ally","directed":true,"weight":1,"verses":"7","note":"하나님은 모세에게 자기 길을 알려 주셨어요."},
+        {"from":"하나님","to":"다윗","label":"죄를 사하신 분","kind":"ally","directed":true,"weight":3,"verses":"3, 10, 12","note":"하나님은 죄를 용서하시고 동쪽이 서쪽에서 먼 만큼 허물을 멀리 치우셨어요. 하나님은 죄를 따라 갚지 않으세요."},
+        {"from":"하나님","to":"모세","label":"길을 알리신 분","kind":"ally","directed":true,"weight":1,"verses":"7","note":"하나님은 모세에게 자신이 하신 일을 알려 주셨어요."},
         {"from":"천사들","to":"하나님","label":"송축할 이","kind":"ally","directed":true,"weight":1,"verses":"20","note":"말씀을 행하며 그 소리를 듣는 천사들에게도 여호와를 송축하라고 해요."}
       ],
       "places": [
@@ -2581,7 +2581,7 @@
       "rels": [
         {"from":"조상들","to":"하나님","label":"거듭 반역한 백성","kind":"conflict","directed":true,"weight":3,"verses":"7, 13, 19-21","note":"조상들은 홍해에서 하나님께 거역하고, 곧 그가 하신 일을 잊고, 호렙에서는 송아지 우상을 만들어 영광을 풀 먹는 소의 형상과 바꿨어요."},
         {"from":"모세","to":"조상들","label":"진노를 막은 종","kind":"ally","directed":true,"weight":2,"verses":"23","note":"하나님이 백성을 없애려 하실 때 택하신 모세가 가운데 서서 진노를 멈추게 했어요."},
-        {"from":"다단과 아비람","to":"모세","label":"질투한 이들","kind":"conflict","directed":true,"weight":1,"verses":"16-17","note":"두 사람은 진영에서 모세와 아론을 시기했어요. 그러자 땅이 열려 그들의 무리를 삼키고 불이 악인들을 태웠어요."},
+        {"from":"다단과 아비람","to":"모세","label":"질투한 이들","kind":"conflict","directed":true,"weight":1,"verses":"16-18","note":"두 사람은 진영에서 모세와 아론을 시기했어요. 그러자 땅이 열려 그들의 무리를 삼키고 불이 악인들을 태웠어요."},
         {"from":"비느하스","to":"하나님","label":"의로 인정받은 이","kind":"ally","directed":true,"weight":2,"verses":"30-31","note":"바알브올에서 비느하스가 나서서 죄를 막자 재앙이 그쳤어요. 이 일이 대대로 그에게 의로 여겨졌어요."},
         {"from":"하나님","to":"조상들","label":"언약 기억하신 분","kind":"ally","directed":true,"weight":3,"verses":"44-45","note":"하나님은 그들이 괴로워 부르짖을 때 들으시고, 그들을 위해 언약을 기억하며 사랑이 크신 대로 뜻을 돌이키셨어요."}
       ],
@@ -2707,7 +2707,7 @@
       ],
       "rels": [
         {"from":"시인","to":"하나님","label":"감사한 이","kind":"ally","directed":true,"weight":3,"verses":"1","note":"시인은 정직한 사람들의 모임에서 온 마음으로 하나님께 감사하겠다고 해요. 혼자만이 아니라 함께 하는 찬양이에요."},
-        {"from":"하나님","to":"정직한 자들","label":"양식 주시는 분","kind":"ally","directed":true,"weight":2,"verses":"5, 10","note":"여호와를 경외하는 것이 지혜의 시작이래요."}
+        {"from":"하나님","to":"정직한 자들","label":"양식 주시는 분","kind":"ally","directed":true,"weight":2,"verses":"5, 10","note":"하나님은 자기를 경외하는 사람들에게 양식을 주시고 언약을 영원히 기억하세요. 여호와를 경외함이 지혜의 근본이래요."}
       ],
       "places": [
 
@@ -2867,7 +2867,7 @@
       ],
       "rels": [
         {"from":"뭇 나라","to":"시인","label":"에워싼 원수","kind":"conflict","directed":true,"weight":2,"verses":"10-12","note":"나라들이 벌 떼처럼, 불붙은 가시덤불처럼 에워싸도 시인은 여호와의 이름으로 그들을 쳐서 끊겠다고 해요."},
-        {"from":"하나님","to":"시인","label":"편이 되신 분","kind":"ally","directed":true,"weight":3,"verses":"6-7","note":"여호와가 내 편이니 두렵지 않고, 사람이 나를 해치지 못한다고 해요. 사람을 믿는 것보다 하나님께 피하는 것이 나아요."}
+        {"from":"하나님","to":"시인","label":"편이 되신 분","kind":"ally","directed":true,"weight":3,"verses":"6-8","note":"여호와가 내 편이니 두렵지 않고, 사람이 나를 해치지 못한다고 해요. 사람을 믿는 것보다 하나님께 피하는 것이 나아요."}
       ],
       "places": [
         {"name":"의의 문","where":"성전의 문","what":"시인이 감사하며 들어가는 의의 문","weight":2},
@@ -2911,7 +2911,7 @@
       ],
       "rels": [
         {"from":"시인","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"시인은 괴로울 때 하나님께 부르짖었고 대답을 들었어요. 그래서 이제 거짓말하는 입술에서도 건져 달라고 구해요."},
-        {"from":"거짓말하는 이웃","to":"시인","label":"거짓으로 친 자","kind":"conflict","directed":true,"weight":2,"verses":"3-7","note":"거짓말하는 이웃은 날카로운 화살과 로뎀 나무 숯불 같은 벌을 받아요. 시인은 평화를 원하지만 말하면 그들은 싸우려고 해요."}
+        {"from":"거짓말하는 이웃","to":"시인","label":"거짓말로 대적한 자","kind":"conflict","directed":true,"weight":2,"verses":"3-7","note":"거짓말하는 이웃은 날카로운 화살과 로뎀 나무 숯불 같은 벌을 받아요. 시인은 평화를 원하지만 말하면 그들은 싸우려고 해요."}
       ],
       "places": [
         {"name":"메섹과 게달","where":"메섹과 게달","what":"시인이 오래 머문 화평을 싫어하는 이들 곁","weight":2}
@@ -3025,7 +3025,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"여호와를 의지하는 자","label":"두르시는 분","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"산들이 예루살렘을 둘러싸듯 하나님이 믿는 사람을 지금부터 영원까지 둘러싸 주세요. 믿는 사람은 산처럼 흔들리지 않아요."},
-        {"from":"하나님","to":"굽은 길로 치우치는 자","label":"떠나게 하실 분","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"굽은 길로 가는 사람을 악을 행하는 자들과 함께 내쫓아 달라고 해요."}
+        {"from":"하나님","to":"굽은 길로 치우치는 자","label":"악인과 함께 가게 하실 분","kind":"conflict","directed":true,"weight":1,"verses":"5","note":"굽은 길로 치우치는 사람은 하나님이 죄를 범하는 자들과 함께 가게 하실 거래요. 이스라엘에게는 평강이 있어요."}
       ],
       "places": [
         {"name":"시온산","where":"예루살렘","what":"산들이 둘러싼 하나님의 도시, 예루살렘","weight":3},
@@ -3070,7 +3070,7 @@
         {"name":"하나님","role":"집을 세우시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"자녀","label":"상급으로 주신 분","kind":"ally","directed":true,"weight":2,"verses":"3","note":"자녀는 하나님이 주시는 기업이고 선물이에요. 화살통에 화살이 가득한 용사처럼 든든한 복이에요."},
+        {"from":"하나님","to":"자녀","label":"상급으로 주신 분","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"자녀는 하나님이 주시는 기업이고 선물이에요. 화살통에 화살이 가득한 용사처럼 든든한 복이에요."},
         {"from":"솔로몬","to":"하나님","label":"의지한 왕","kind":"ally","directed":true,"weight":2,"verses":"1-2","note":"솔로몬은 하나님이 함께하시지 않으면 어떤 수고도 헛되다고 노래해요."}
       ],
       "places": [
@@ -3258,8 +3258,8 @@
       ],
       "rels": [
         {"from":"하나님","to":"이스라엘","label":"택하신 분","kind":"ally","directed":true,"weight":3,"verses":"4","note":"하나님은 야곱, 곧 이스라엘 공동체를 자기의 특별한 소유로 택하셨어요."},
-        {"from":"하나님","to":"바로","label":"표적 보이신 분","kind":"conflict","directed":true,"weight":1,"verses":"9","note":"하나님은 애굽의 바로와 신하들에게 표적과 징조를 보내셨고 맏아들을 치셨어요."},
-        {"from":"하나님","to":"시혼","label":"치신 분","kind":"conflict","directed":true,"weight":1,"verses":"10-11","note":"하나님은 아모리 왕 시혼과 바산 왕 옥과 가나안 왕들을 치셔서 그 땅을 이스라엘에게 유산으로 주셨어요."},
+        {"from":"하나님","to":"바로","label":"표적 보이신 분","kind":"conflict","directed":true,"weight":1,"verses":"8-9","note":"하나님은 애굽의 바로와 신하들에게 표적과 징조를 보내셨고 맏아들을 치셨어요."},
+        {"from":"하나님","to":"시혼","label":"치신 분","kind":"conflict","directed":true,"weight":1,"verses":"10-12","note":"하나님은 아모리 왕 시혼과 바산 왕 옥과 가나안 왕들을 치셔서 그 땅을 이스라엘에게 유산으로 주셨어요."},
         {"from":"레위 족속","to":"하나님","label":"송축할 이","kind":"ally","directed":true,"weight":1,"verses":"20","note":"레위 집안에게도 하나님을 찬양하라고 불러요."}
       ],
       "places": [
@@ -3362,7 +3362,7 @@
         {"name":"하나님","role":"나를 지으시고 아시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"다윗","label":"지으시고 아시는 분","kind":"ally","directed":true,"weight":3,"verses":"1-2, 13-14","note":"하나님은 다윗의 생각과 말과 길을 다 아시고 배 속에서부터 지으셨어요. 속속들이 아시는 분이 곁에 계시니 도망갈 곳이 없어요."},
+        {"from":"하나님","to":"다윗","label":"지으시고 아시는 분","kind":"ally","directed":true,"weight":3,"verses":"1-2, 7-12, 13-14","note":"하나님은 다윗의 생각과 말과 길을 다 아시고 배 속에서부터 지으셨어요. 속속들이 아시는 분이 곁에 계시니 도망갈 곳이 없어요."},
         {"from":"다윗","to":"하나님","label":"살펴 달라 한 이","kind":"ally","directed":true,"weight":3,"verses":"23-24","note":"다윗은 하나님이 자기 마음을 살펴 나쁜 길이 있는지 보시고 영원한 길로 이끌어 달라고 기도해요."},
         {"from":"다윗","to":"악인","label":"미워한 이","kind":"conflict","directed":true,"weight":1,"verses":"21-22","note":"악인들은 하나님을 대적하는 사람들이라서 다윗도 그들을 미워한다고 해요."}
       ],
@@ -3436,7 +3436,7 @@
       ],
       "rels": [
         {"from":"핍박하는 자들","to":"다윗","label":"쫓는 원수","kind":"conflict","directed":true,"weight":3,"verses":"6","note":"다윗을 쫓는 사람들은 다윗보다 더 강해요. 그래서 하나님께 건져 달라고 해요."},
-        {"from":"다윗","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 5","note":"아무도 돌봐 주지 않는 굴속에서 다윗은 하나님을 피난처이고 내 몫이라고 불러요."},
+        {"from":"다윗","to":"하나님","label":"부르짖은 이","kind":"ally","directed":true,"weight":3,"verses":"1-2, 4-5절","note":"아무도 돌봐 주지 않는 굴속에서 다윗은 하나님을 피난처이고 내 몫이라고 불러요."},
         {"from":"의인들","to":"다윗","label":"둘러쌀 이들","kind":"ally","directed":true,"weight":1,"verses":"7","note":"하나님이 다윗을 건지시면 의로운 사람들이 그 주위에 모여 함께 기뻐할 거예요."}
       ],
       "places": [
@@ -3555,7 +3555,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"상심한 자","label":"싸매시는 분","kind":"ally","directed":true,"weight":3,"verses":"3","note":"하나님은 마음이 상한 사람의 상처를 싸매 주세요."},
-        {"from":"하나님","to":"이스라엘","label":"말씀 주신 분","kind":"ally","directed":true,"weight":3,"verses":"19","note":"하나님은 이스라엘에게만 자기 말씀과 규례를 알려 주셨어요."},
+        {"from":"하나님","to":"이스라엘","label":"말씀 주신 분","kind":"ally","directed":true,"weight":3,"verses":"19-20","note":"하나님은 이스라엘에게만 자기 말씀과 규례를 알려 주셨어요."},
         {"from":"시인","to":"하나님","label":"찬양한 이","kind":"ally","directed":true,"weight":2,"verses":"1","note":"시인은 우리 하나님을 찬양하는 것이 선하고 즐겁고 아름답다고 해요. 찬양은 마땅히 해야 하는 일이에요."}
       ],
       "places": [

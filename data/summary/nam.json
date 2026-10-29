@@ -195,7 +195,7 @@
         {
           "from": "니느웨 왕후",
           "to": "니느웨 여성들",
-          "label": "끌려가는 왕후를 애곡함",
+          "label": "끌려가는 왕후",
           "kind": "other",
           "directed": true,
           "weight": 2,

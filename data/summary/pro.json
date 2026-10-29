@@ -105,7 +105,7 @@
         {"from":"아버지","to":"아들","label":"가르치는 아버지","kind":"family","directed":true,"weight":3,"verses":"1, 20-23","note":"아버지의 가르침을 들으라, 무엇보다 네 마음을 잘 지키라고 해요."},
         {"from":"할아버지","to":"아버지","label":"가르친 아버지","kind":"family","directed":true,"weight":1,"verses":"3-4","note":"아버지도 어릴 때 할아버지에게 똑같이 배웠다며 그 말을 마음에 새기라고 해요."},
         {"from":"지혜","to":"아들","label":"보호하는 지혜","kind":"ally","directed":true,"weight":2,"verses":"6-9","note":"지혜를 붙들면 지혜가 너를 지키고 높여 준대요."},
-        {"from":"악인","to":"아들","label":"피할 길","kind":"conflict","directed":true,"weight":1,"verses":"14-15","note":"악한 사람의 길엔 발도 들이지 말고 멀리 돌아서 가라고 해요."}
+        {"from":"악인","to":"아들","label":"피해야 할 길을 가는 자","kind":"conflict","directed":true,"weight":1,"verses":"14-15","note":"악한 사람의 길엔 발도 들이지 말고 멀리 돌아서 가라고 해요."}
       ],
       "places": [
 
@@ -131,7 +131,7 @@
         {"from":"아버지","to":"아들","label":"경고하는 아버지","kind":"family","directed":true,"weight":3,"verses":"1-2, 7-8","note":"내 아들아 내 지혜에 주의하라, 음녀에게서 네 길을 멀리하라고 경고해요."},
         {"from":"음녀","to":"아들","label":"유혹하는 여인","kind":"conflict","directed":true,"weight":3,"verses":"3-5","note":"낯선 여자의 말은 꿀처럼 달콤해도 끝은 쓰디쓰고 죽음으로 이어진대요."},
         {"from":"젊어서 맞은 아내","to":"아들","label":"아내","kind":"family","directed":true,"weight":2,"verses":"18-19","note":"젊을 때 맞은 아내와 함께하는 기쁨을 소중히 여기라고 해요."},
-        {"from":"하나님","to":"아들","label":"길을 보시는 분","kind":"other","directed":true,"weight":1,"verses":"21","note":"여호와께서 사람의 모든 길을 보고 검사하신대요. 악인은 자기 행실에 걸려 함정에 빠진다고 해요."}
+        {"from":"하나님","to":"아들","label":"길을 보시는 분","kind":"other","directed":true,"weight":1,"verses":"21-22","note":"사람의 길이 여호와의 눈앞에 있고 여호와께서 그 모든 길을 평탄하게 하신다고 해요. 악인은 자기 악에 걸리고 죄의 줄에 매인대요."}
       ],
       "places": [
 
@@ -389,7 +389,7 @@
         {"name":"하나님","role":"어디서든지 보시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"가난해도 경외하는 자","label":"기뻐하시는 분","kind":"ally","directed":true,"weight":3,"verses":"16","note":"가산이 적어도 여호와를 경외하는 것이 번뇌하는 많은 재산보다 낫대요."},
+        {"from":"가난해도 경외하는 자","to":"하나님","label":"경외하는 이","kind":"ally","directed":true,"weight":3,"verses":"16","note":"가산이 적어도 여호와를 경외하는 것이 번뇌하는 많은 재산보다 낫대요."},
         {"from":"지혜로운 자","to":"미련한 자","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"1-2","note":"부드러운 대답은 화를 가라앉히고, 지혜로운 사람은 지식을 잘 나눈대요."}
       ],
       "places": [
@@ -515,9 +515,7 @@
         {"name":"하나님","role":"걸음을 정하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"사람","label":"속을 살피시는 분","kind":"other","directed":true,"weight":2,"verses":"27","note":"여호와의 등불이 사람의 영을 비추어 깊은 속을 살피신다고 해요. 4절의 게으른 농부 비유는 이 관계와 무관해요."},
-        {"from":"왕","to":"충성된 자","label":"찾는 이","kind":"ally","directed":true,"weight":1,"verses":"6, 28","note":"착하다고 자랑하는 사람은 많아도 정말 신실한 사람은 찾기 어렵고, 왕은 사랑과 진실로 나라를 지킨대요."}
-      ],
+        {"from":"하나님","to":"사람","label":"속을 살피시는 분","kind":"other","directed":true,"weight":2,"verses":"27","note":"여호와의 등불이 사람의 영을 비추어 깊은 속을 살피신다고 해요. 4절의 게으른 농부 비유는 이 관계와 무관해요."}      ],
       "places": [
 
       ]
@@ -617,7 +615,7 @@
         {"name":"하나님","role":"마음을 저울질하시는 분","weight":2}
       ],
       "rels": [
-        {"from":"의인","to":"악인","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"16","note":"의인은 7번 넘어져도 다시 일어나지만 악인은 재앙에 그대로 쓰러진대요."},
+        {"from":"의인","to":"악인","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"16","note":"의인은 일곱 번 넘어져도 다시 일어나지만 악인은 재앙에 그대로 쓰러진대요."},
         {"from":"의인","to":"끌려가는 자","label":"건져야 할 이","kind":"ally","directed":true,"weight":1,"verses":"11-12","note":"죽을 위기에 끌려가는 사람을 못 본 척하지 말고 건져 주라고 해요."}
       ],
       "places": [
@@ -667,8 +665,8 @@
         {"name":"미워하는 자","role":"입술로 꾸미는 사람","weight":1}
       ],
       "rels": [
-        {"from":"게으른 자","to":"미련한 자","label":"닮은 사람","kind":"conflict","directed":false,"weight":1,"verses":"13-16","note":"게으른 사람은 밖에 사자가 있다며 핑계 대면서 사리 밝은 일곱 사람보다 자기를 더 지혜롭게 여긴대요."},
-        {"from":"미워하는 자","to":"말쟁이","label":"같은 부류","kind":"ally","directed":false,"weight":1,"verses":"24-26","note":"미워하는 자는 입술로는 꾸미고 속에는 속임을 품나니 좋은 말을 할지라도 믿지 말라고 해요."}
+        {"from":"게으른 자","to":"미련한 자","label":"닮은 사람","kind":"conflict","directed":false,"weight":1,"verses":"12-16","note":"게으른 사람은 밖에 사자가 있다며 핑계 대면서 사리 밝은 일곱 사람보다 자기를 더 지혜롭게 여긴대요."},
+        {"from":"미워하는 자","to":"말쟁이","label":"말로 속이는 사람","kind":"ally","directed":false,"weight":1,"verses":"22-26","note":"남의 말하기 좋아하는 사람의 말은 맛난 음식 같아도 속에 깊이 들어가요. 미워하는 자는 입술로는 꾸며도 속에는 속임을 품으니 좋은 말을 해도 믿지 말라고 해요."}
       ],
       "places": [
 
