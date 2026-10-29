@@ -394,12 +394,6 @@ export async function mountPixelWorld(shell, options) {
   function placeAboveHead(el,n,r,v,width,height,placed=[]){
     const anchor=interactionAnchor(n,TILE);
     const scale=v.scale*r.width/canvas.width,x=(anchor.x*v.scale+v.x)*r.width/canvas.width,y=(anchor.y*v.scale+v.y)*r.height/canvas.height;
-    if(el._layoutPin){
-      const box=pinnedBubblePlacement(el._layoutPin,x,y,width,height,r.width,r.height);
-      el.style.left=`${Math.round(box.left)}px`;el.style.top=`${Math.round(box.top)}px`;el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-box.left))}px`);
-      el.dataset.below=box.side==='bottom'?'true':'false';if(['left','right'].includes(box.side))el.dataset.side=box.side;else delete el.dataset.side;
-      el.style.visibility='';return box;
-    }
     const body=physiqueFor(n.name,n.role,n.refs),sprite={left:x-22*scale*body.width,right:x+22*scale*body.width,top:y-76*scale*body.height,bottom:y-24*scale*body.height};
     const gap=8,margin=4,characters=npcs.filter(other=>!other.creature||other.creature.kind!=='plant').map(other=>{
       const a=interactionAnchor(other,TILE),ox=(a.x*v.scale+v.x)*r.width/canvas.width,oy=(a.y*v.scale+v.y)*r.height/canvas.height,p=physiqueFor(other.name,other.role,other.refs);
@@ -412,6 +406,7 @@ export async function mountPixelWorld(shell, options) {
       {side:'left',left:sprite.left-width-gap,top:y-height/2,cost:2},
       {side:'right',left:sprite.right+gap,top:y-height/2,cost:2},
       {side:'bottom',left:x-width/2,top:sprite.bottom+gap,cost:3},
+      ...placed.flatMap(box=>[{side:'left',left:box.left-width-gap,top:box.top,cost:4},{side:'right',left:box.right+gap,top:box.top,cost:4},{side:'top',left:box.left,top:box.top-height-gap,cost:4},{side:'bottom',left:box.left,top:box.bottom+gap,cost:4}]),
     ];
     let best=null;
     for(const candidate of candidates){
@@ -425,7 +420,6 @@ export async function mountPixelWorld(shell, options) {
     el.style.left=`${Math.round(best.left)}px`;el.style.top=`${Math.round(best.top)}px`;
     el.style.setProperty('--pb-tail',`${Math.max(12,Math.min(width-12,x-best.left))}px`);
     el.dataset.below=best.side==='bottom'?'true':'false';if(['left','right'].includes(best.side))el.dataset.side=best.side;else delete el.dataset.side;
-    if(el.classList.contains('pb-encounter'))el._layoutPin=captureBubblePlacement(x,y,best.left,best.top,best.side);
     el.style.visibility='';
     return {left:best.left,right:best.right,top:best.top,bottom:best.bottom};
   }
