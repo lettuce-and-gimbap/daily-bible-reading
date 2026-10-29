@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 234,
-  "pending": 694,
+  "reviewed": 247,
+  "pending": 681,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -2679,7 +2679,9 @@
       "speaker": "예루살렘의 관원들",
       "target": "고아와 과부",
       "ref": "이사야 1:17, 23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-1-amoz-isaiah",
@@ -2687,7 +2689,9 @@
       "speaker": "아모츠",
       "target": "이사야",
       "ref": "이사야 1:1",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-2-isaiah-jacob",
@@ -2695,7 +2699,9 @@
       "speaker": "이사야",
       "target": "야곱 족속",
       "ref": "이사야 2:2–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-3-leaders-poor",
@@ -2703,7 +2709,9 @@
       "speaker": "장로와 고관들",
       "target": "가난한 자",
       "ref": "이사야 3:13–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-6-seraph-isaiah",
@@ -2711,7 +2719,9 @@
       "speaker": "스랍",
       "target": "이사야",
       "ref": "이사야 6:5–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-6-isaiah-judah",
@@ -2719,7 +2729,9 @@
       "speaker": "이사야",
       "target": "유다 백성",
       "ref": "이사야 6:8–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-7-peka-rezin",
@@ -2727,7 +2739,9 @@
       "speaker": "베가",
       "target": "르신",
       "ref": "이사야 7:1–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-7-isaiah-ahaz",
@@ -2735,7 +2749,9 @@
       "speaker": "이사야",
       "target": "아하스",
       "ref": "이사야 7:3–9, 10–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-7-shearjashub-isaiah",
@@ -2743,7 +2759,9 @@
       "speaker": "스알야숩",
       "target": "이사야",
       "ref": "이사야 7:3–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-8-wife-isaiah",
@@ -2751,7 +2769,9 @@
       "speaker": "이사야의 아내",
       "target": "이사야",
       "ref": "이사야 8:1–4, 18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-8-assyria-judah",
@@ -2759,7 +2779,9 @@
       "speaker": "앗수르 왕",
       "target": "유다 백성",
       "ref": "이사야 8:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-9-oppressor-naphtali",
@@ -2767,7 +2789,9 @@
       "speaker": "압제자",
       "target": "스불론과 납달리",
       "ref": "이사야 9:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-10-judges-zion",
@@ -2775,7 +2799,9 @@
       "speaker": "불의한 재판관",
       "target": "시온 백성",
       "ref": "이사야 10:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-job-1-satan-job",
