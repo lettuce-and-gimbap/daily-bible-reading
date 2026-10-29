@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 307,
-  "pending": 621,
+  "reviewed": 316,
+  "pending": 612,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -3395,7 +3395,9 @@
       "speaker": "룻",
       "target": "보아스",
       "ref": "룻기 2:8–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-25",
@@ -3403,7 +3405,9 @@
       "speaker": "보아스",
       "target": "룻",
       "ref": "룻기 2:8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-26",
@@ -3411,7 +3415,9 @@
       "speaker": "룻",
       "target": "나오미",
       "ref": "룻기 2:17–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-27",
@@ -3419,7 +3425,9 @@
       "speaker": "나오미",
       "target": "룻",
       "ref": "룻기 2:19–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-28",
@@ -3427,7 +3435,9 @@
       "speaker": "보아스",
       "target": "일꾼",
       "ref": "룻기 2:4, 15–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-29",
@@ -3435,7 +3445,9 @@
       "speaker": "일꾼",
       "target": "보아스",
       "ref": "룻기 2:4–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-30",
@@ -3443,7 +3455,9 @@
       "speaker": "룻",
       "target": "나오미",
       "ref": "룻기 1:16–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-31",
@@ -4435,7 +4449,9 @@
       "speaker": "나오미",
       "target": "룻",
       "ref": "룻기 3:1–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-155",
@@ -4443,7 +4459,9 @@
       "speaker": "보아스",
       "target": "아무개",
       "ref": "룻기 4:3–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-156",
