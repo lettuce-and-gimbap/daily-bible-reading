@@ -2,7 +2,7 @@ import {drawBiomeGround,drawBiomePaths,drawBiomeLandmarks} from './biome-art.js'
 import {drawWorldObject} from './art.js';
 import {backgroundFor} from './backgrounds.js';
 // 지형은 전체 지도 좌표로 한 번만 구성한다. 중심은 보행 공간, 큰 경관은 가장자리다.
-export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=true,hour=12}={}){
+export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=true,hour=12,elevation=null,cloud=0}={}){
  const p=backgroundFor(key),m=p.motif;
  const r=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h));};
  const hash=(x,y)=>(Math.imul(x+17,374761393)^Math.imul(y+31,668265263))>>>0;
@@ -14,9 +14,9 @@ export function drawWholeBackground(c,key,width=1920,height=1080,{decorations=tr
   if(h%23===0){r(x+16,y+9,2,2,p.pathLight);r(x+15,y+10,4,1,p.pathLight);}
  }
  // A compact pixel sun/moon follows the local KST hour across the sky band.
- const h=((Math.floor(hour)%24)+24)%24,night=h<6||h>=18;
+ const h=((hour%24)+24)%24,night=elevation!==null?elevation<=0:(h<6||h>=18);
  const progress=night?(h>=18?1-(h-18)/12:(6-h)/12):(h-6)/12;
- const cx=width*(.04+.92*progress),cy=112-Math.sin(progress*Math.PI)*76;
+ const cx=width*(.04+.92*progress),cy=elevation!==null?Math.max(20,Math.min(136,138-Math.max(-12,elevation)*5.5)):112-Math.sin(progress*Math.PI)*76;
  c.save();c.globalAlpha=.18;c.fillStyle=night?'#d8e4f2':'#ffe2a1';c.fillRect(cx-20,cy-20,40,40);c.globalAlpha=.35;c.fillRect(cx-14,cy-25,28,50);c.globalAlpha=1;
  if(night){c.fillStyle='#dbe5ef';c.beginPath();c.arc(cx,cy,11,0,Math.PI*2);c.fill();c.fillStyle=p.sky||p.hill;c.beginPath();c.arc(cx+6,cy-4,9,0,Math.PI*2);c.fill();}
  else {c.fillStyle=h<8||h>=16?'#efb16c':'#ffe18a';c.fillRect(cx-8,cy-11,16,22);c.fillRect(cx-11,cy-8,22,16);c.fillStyle='#fff0ba';c.fillRect(cx-4,cy-6,8,12);}

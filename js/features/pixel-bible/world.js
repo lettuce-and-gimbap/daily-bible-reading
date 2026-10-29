@@ -1278,8 +1278,8 @@ export async function mountPixelWorld(shell, options) {
   let backgroundHour=-1;
   function paintBackground(){
     const c=background.getContext('2d');
-    const hour=globalThis.KstLight.at().hour;
-    drawWholeBackground(c,backgroundKey,WORLD.width,WORLD.height,{decorations:false,hour});backgroundHour=hour;
+    const light=globalThis.KstLight.at();
+    drawWholeBackground(c,backgroundKey,WORLD.width,WORLD.height,{decorations:false,hour:light.localHour,elevation:light.elevation,cloud:Number(getComputedStyle(document.documentElement).getPropertyValue('--weather-cloud'))*100||0});backgroundHour=light.hour;
   }
   paintBackground();syncBackground();
   function draw() {
