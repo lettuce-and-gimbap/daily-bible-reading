@@ -4,9 +4,11 @@
  const periods={dawn:{label:'새벽',sky:'#b8a5c7',light:'#f1c6a8',shade:'#746f98',alpha:.12,sun:'☀'},day:{label:'낮',sky:'#cbe4e1',light:'#fff0c4',shade:'#e7d3a2',alpha:0,sun:'☀'},dusk:{label:'저녁',sky:'#b99ba8',light:'#efc29e',shade:'#895f80',alpha:.13,sun:'☀'},night:{label:'밤',sky:'#293b60',light:'#b6c9dd',shade:'#22335d',alpha:.29,sun:'☾'}};
  function placeNow(){return stored(placeKey)||{latitude:37.5665,longitude:126.978,label:'서울'};}
  function zone(){return weather?.data?.timezone||'Asia/Seoul';}
+ function localDate(date,z){return new Intl.DateTimeFormat('en-CA',{timeZone:z,year:'numeric',month:'2-digit',day:'2-digit'}).format(date);}
  function at(date=new Date()){
   const p=placeNow(),z=zone(),parts=new Intl.DateTimeFormat('en-GB',{timeZone:z,hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(date),hour=Number(parts.find(x=>x.type==='hour')?.value||0),minute=Number(parts.find(x=>x.type==='minute')?.value||0),local=hour+minute/60;
-  const rise=weather?.data?.daily?.sunrise?.[0],set=weather?.data?.daily?.sunset?.[0];
+  const daily=weather?.data?.daily||{},dateKey=localDate(date,z),dayIndex=Array.isArray(daily.time)?daily.time.indexOf(dateKey):-1;
+  const rise=dayIndex>=0?daily.sunrise?.[dayIndex]:null,set=dayIndex>=0?daily.sunset?.[dayIndex]:null;
   let sunrise=6,sunset=18;
   if(rise&&set){const tzOffset=(new Date(rise+'Z').getTime()-new Date(rise).getTime())/3600000; sunrise=Number(rise.slice(11,13))+Number(rise.slice(14,16))/60-tzOffset;sunset=Number(set.slice(11,13))+Number(set.slice(14,16))/60-tzOffset;}
   const dayLength=sunset-sunrise,solarNoon=(sunrise+sunset)/2,declination=23.44*Math.sin(2*Math.PI*(date.getUTCDate()-81)/365)*Math.PI/180,lat=p.latitude*Math.PI/180,hourAngle=(local-solarNoon)*15*Math.PI/180;
