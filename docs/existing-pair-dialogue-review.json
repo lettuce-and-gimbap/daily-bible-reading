@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 268,
-  "pending": 660,
+  "reviewed": 280,
+  "pending": 648,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -2607,7 +2607,9 @@
       "speaker": "랍사게",
       "target": "산헤립",
       "ref": "이사야 36:1–22; 37:8–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-36-eliakim-hezekiah",
@@ -2615,7 +2617,9 @@
       "speaker": "엘리아김",
       "target": "히스기야",
       "ref": "이사야 36:11–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-36-wall-people-hezekiah",
@@ -2623,7 +2627,9 @@
       "speaker": "성벽 위 백성",
       "target": "히스기야",
       "ref": "이사야 36:11–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-36-sennacherib-hezekiah",
@@ -2631,7 +2637,9 @@
       "speaker": "산헤립",
       "target": "히스기야",
       "ref": "이사야 36:4–10; 37:9–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-37-isaiah-hezekiah",
@@ -2639,7 +2647,9 @@
       "speaker": "이사야",
       "target": "히스기야",
       "ref": "이사야 37:1–7, 14–20, 33–35",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-38-isaiah-hezekiah",
@@ -2647,7 +2657,9 @@
       "speaker": "이사야",
       "target": "히스기야",
       "ref": "이사야 38:1–8, 21–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-39-merodach-hezekiah",
@@ -2655,7 +2667,9 @@
       "speaker": "므로닥발라단",
       "target": "히스기야",
       "ref": "이사야 39:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-39-isaiah-hezekiah",
@@ -2663,7 +2677,9 @@
       "speaker": "이사야",
       "target": "히스기야",
       "ref": "이사야 39:3–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-36-rabshakeh-hezekiah",
@@ -2671,7 +2687,9 @@
       "speaker": "랍사게",
       "target": "히스기야",
       "ref": "이사야 36:4–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-1-officials-orphans",
@@ -5539,7 +5557,9 @@
       "speaker": "패역한 자식들",
       "target": "바로",
       "ref": "이사야 30:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-31-judah-egypt",
@@ -5547,7 +5567,9 @@
       "speaker": "애굽으로 내려가는 자들",
       "target": "애굽",
       "ref": "이사야 31:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-32-rulers-king",
@@ -5555,7 +5577,9 @@
       "speaker": "방백들",
       "target": "공의로운 왕",
       "ref": "이사야 32:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-42-servant-nations",
