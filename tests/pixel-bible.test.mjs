@@ -723,7 +723,8 @@ test('시편 1–120편의 표제 인물과 회고 인물은 현장 캐스트에
  }
  const reviewed=Object.entries(summary.chapters);
  assert.equal(reviewed.length,150);
- assert.equal(reviewed.reduce((total,[,chapter])=>total+chapter.rels.length,0),432);
+ assert.equal(reviewed.reduce((total,[,chapter])=>total+chapter.rels.length,0),431);
+ assert.ok(!summary.chapters['115'].rels.some(edge=>edge.from==='우상을 만드는 자'&&edge.to==='하나님'));
  assert.ok(summary.chapters['85'].people.some(person=>person.name==='이스라엘'));
  assert.ok(!summary.chapters['85'].people.some(person=>person.name==='야곱'));
  assert.ok(summary.chapters['85'].rels.some(edge=>edge.from==='하나님'&&edge.to==='이스라엘'));
