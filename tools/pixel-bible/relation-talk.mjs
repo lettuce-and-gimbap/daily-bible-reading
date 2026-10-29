@@ -36,7 +36,8 @@ function verseText(code,ch,verses){
  const start=text.indexOf(`\n## ${ch}${code==='psa'?'편':'장'}`);if(start<0)return '';
  const end=text.indexOf('\n## ',start+4),body=text.slice(start,end<0?undefined:end);
  const wanted=new Set();for(const part of verses.split(/,\s*/)){const [a,b]=part.split('-').map(Number);for(let v=a;v<=(b||a)&&v<a+6;v++)wanted.add(v);}
- return body.split(/\r?\n/).filter(s=>wanted.has(parseInt(s))).join(' ').slice(0,420);
+ // "3-5 본문"처럼 여러 절이 한 줄로 합쳐진 줄은 그 범위의 어느 절이든 원하면 보여 준다.
+ return body.split(/\r?\n/).filter(s=>{const m=s.match(/^(\d+)(?:-(\d+))? /);if(!m)return false;for(let v=+m[1];v<=+(m[2]||m[1]);v++)if(wanted.has(v))return true;return false;}).join(' ').slice(0,420);
 }
 function inRange(ch,range){if(!range)return true;const [a,b]=range.split('-').map(Number);return ch>=a&&ch<=(b||a);}
 
