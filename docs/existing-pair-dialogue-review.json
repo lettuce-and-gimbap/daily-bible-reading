@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 89,
-  "pending": 839,
+  "reviewed": 100,
+  "pending": 828,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -511,7 +511,9 @@
       "speaker": "모세",
       "target": "아론",
       "ref": "시편 99:6–8; 출애굽기 32:11–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-105-moses-aaron",
@@ -671,7 +673,9 @@
       "speaker": "친구와 사랑하는 자",
       "target": "헤만",
       "ref": "시편 88:1, 8, 18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-89-descendant-david",
@@ -679,7 +683,9 @@
       "speaker": "기름 부음 받은 왕",
       "target": "다윗",
       "ref": "시편 89:3–4, 26–29, 38–45",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-105-isaac-abraham",
@@ -761,7 +767,9 @@
       "speaker": "악인들",
       "target": "과부와 고아",
       "ref": "시편 94:3–7, 20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-101-david-servants",
@@ -769,7 +777,9 @@
       "speaker": "다윗",
       "target": "충성된 자",
       "ref": "시편 101:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-116-singer-community",
@@ -925,7 +935,9 @@
       "speaker": "시인",
       "target": "주의 백성",
       "ref": "시편 95:1–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-129-israel-enemies",
@@ -1001,7 +1013,9 @@
       "speaker": "원수들",
       "target": "기름 부음 받은 왕",
       "ref": "시편 89:38–45, 50–51",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-112-righteous-poor",
@@ -1429,7 +1443,9 @@
       "speaker": "교만한 자들",
       "target": "다윗",
       "ref": "시편 86:14–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-91-angels-refuge",
@@ -1437,7 +1453,9 @@
       "speaker": "천사들",
       "target": "지존자께 거하는 자",
       "ref": "시편 91:9–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-101-david-proud",
@@ -1445,7 +1463,9 @@
       "speaker": "다윗",
       "target": "교만하고 거짓된 자",
       "ref": "시편 101:3–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-102-enemies-afflicted",
@@ -1453,7 +1473,9 @@
       "speaker": "원수들",
       "target": "고난당한 자",
       "ref": "시편 102:8–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-110-david-lord",
