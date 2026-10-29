@@ -1,0 +1,14 @@
+{
+  "relations": 5259,
+  "distinct_labels": 3704,
+  "batches": 22,
+  "batch_size": 250,
+  "missing_fields": [],
+  "self_links": [],
+  "undirected_by_kind": {
+    "family": 117,
+    "conflict": 53,
+    "ally": 175,
+    "other": 6
+  }
+}
