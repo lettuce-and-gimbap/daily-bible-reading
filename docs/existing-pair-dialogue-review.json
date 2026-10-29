@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 43,
-  "pending": 885,
+  "reviewed": 52,
+  "pending": 876,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -307,7 +307,9 @@
       "speaker": "가까운 친구",
       "target": "다윗",
       "ref": "시편 41:5–9, 12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-52-doeg-david",
@@ -553,7 +555,9 @@
       "speaker": "조롱하는 자들",
       "target": "고라 자손",
       "ref": "시편 42:3, 9–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-45-queen-king",
@@ -561,7 +565,9 @@
       "speaker": "왕후",
       "target": "왕",
       "ref": "시편 45:10–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-45-sons-king",
@@ -569,7 +575,9 @@
       "speaker": "왕의 아들들",
       "target": "왕",
       "ref": "시편 45:16–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-71-descendants-singer",
@@ -705,7 +713,9 @@
       "speaker": "이스라엘",
       "target": "원수들",
       "ref": "시편 44:9–16, 23–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-94-widow-orphan",
@@ -883,7 +893,9 @@
       "speaker": "불의한 자",
       "target": "고라 자손",
       "ref": "시편 43:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-45-korahites-king",
@@ -891,7 +903,9 @@
       "speaker": "고라 자손",
       "target": "왕",
       "ref": "시편 45:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-59-saul-sentries",
@@ -1249,7 +1263,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 40:12–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-41-enemies-david",
@@ -1257,7 +1273,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 41:5–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-55-enemies-david",
