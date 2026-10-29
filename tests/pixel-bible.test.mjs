@@ -1315,6 +1315,9 @@ test('말풍선 성경구절은 장과 절 범위를 안전하게 해석한다',
  assert.deepEqual(p('열왕기상 21:5–7'),{code:'1ki',chapter:21,verses:[5,6,7]});
  assert.deepEqual(p('요한계시록 22:1,3-5'),{code:'rev',chapter:22,verses:[1,3,4,5]});
  assert.deepEqual(p('느헤미야 3장'),{code:'neh',chapter:3,verses:null});
+ assert.deepEqual(p('시편 3:1–5; 사무엘하 15:2–6'),{code:'psa',chapter:3,verses:[1,2,3,4,5],also:['사무엘하 15:2–6']},'뒤 본문은 해석하지 않고 표기만 남김');
+ assert.deepEqual(p('시편 60 표제; 사무엘하 8:13–14'),{code:'psa',chapter:60,verses:null,also:['사무엘하 8:13–14']});
+ assert.deepEqual(p('욥기 2:9–10, 19:17'),{code:'job',chapter:2,verses:[9,10],also:['19:17']});
  assert.equal(p('열왕기상 99:1'),null);assert.equal(p('본문 없음'),null);assert.equal(p('열왕기상 21:8-3'),null);
 });
 
