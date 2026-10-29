@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 109,
-  "pending": 819,
+  "reviewed": 121,
+  "pending": 807,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -427,7 +427,9 @@
       "speaker": "다윗",
       "target": "형제와 친구",
       "ref": "시편 122:6–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-7-cush-david",
@@ -729,7 +731,9 @@
       "speaker": "아내",
       "target": "경외하는 사람",
       "ref": "시편 128:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-128-children-parent",
@@ -737,7 +741,9 @@
       "speaker": "자식들",
       "target": "경외하는 사람",
       "ref": "시편 128:3–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-132-david-descendant",
@@ -799,7 +805,9 @@
       "speaker": "시인",
       "target": "여호와의 백성",
       "ref": "시편 116:12–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-122-david-tribes",
@@ -807,7 +815,9 @@
       "speaker": "다윗",
       "target": "이스라엘 지파들",
       "ref": "시편 122:3–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-124-israel-enemies",
@@ -815,7 +825,9 @@
       "speaker": "이스라엘",
       "target": "원수들",
       "ref": "시편 124:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-131-david-israel",
@@ -957,7 +969,9 @@
       "speaker": "이스라엘",
       "target": "원수들",
       "ref": "시편 129:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-43-unjust-korahites",
@@ -1035,7 +1049,9 @@
       "speaker": "경외하는 사람",
       "target": "가난한 자",
       "ref": "시편 112:4–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-118-nations-singer",
@@ -1043,7 +1059,9 @@
       "speaker": "뭇 나라",
       "target": "시인",
       "ref": "시편 118:5–14, 18–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-140-violent-david",
@@ -1525,7 +1543,9 @@
       "speaker": "악인",
       "target": "경외하는 사람",
       "ref": "시편 112:6–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-120-deceitful-neighbor",
@@ -1533,7 +1553,9 @@
       "speaker": "거짓말하는 이웃",
       "target": "시인",
       "ref": "시편 120:2–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-123-proud-pilgrim",
@@ -1541,7 +1563,9 @@
       "speaker": "교만한 자들",
       "target": "시인",
       "ref": "시편 123:3–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-139-david-wicked",
