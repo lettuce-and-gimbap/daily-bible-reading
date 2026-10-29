@@ -586,7 +586,7 @@ test('시편 표제에 연결된 다윗의 역사적 관계는 시적 문답과 
  const pharaoh=psalms.find(entry=>entry.chapter==='psa.105'&&entry.target==='요셉');
  assert.match(pharaoh.ref,/창세기 41/);assert.match(pharaoh.detail,/재구성/);
  const exiles=psalms.find(entry=>entry.chapter==='psa.137'&&entry.speaker==='에돔 자손');
- assert.match(exiles.ref,/오바댜/);assert.match(exiles.detail,/직접 발언은 아니며/);
+ assert.match(exiles.ref,/오바댜/);assert.match(exiles.detail,/대면 문답은 창작/);
 });
 
 test('잠언의 31장 관계 후보는 모두 본문 맥락의 양방향 대화로 연결하고 동물을 인물로 노출하지 않는다',()=>{

@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 121,
-  "pending": 807,
+  "reviewed": 136,
+  "pending": 792,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -537,7 +537,9 @@
       "speaker": "순례자들",
       "target": "여호와의 종들",
       "ref": "시편 134:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-137-captors-exiles",
@@ -545,7 +547,9 @@
       "speaker": "사로잡은 자들",
       "target": "포로들",
       "ref": "시편 137:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-141-righteous-david",
@@ -553,7 +557,9 @@
       "speaker": "의인",
       "target": "다윗",
       "ref": "시편 141:3–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-2-kings-anointed",
@@ -751,7 +757,9 @@
       "speaker": "다윗의 자손",
       "target": "다윗",
       "ref": "시편 132:10–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-137-edom-exiles",
@@ -759,7 +767,9 @@
       "speaker": "에돔 자손",
       "target": "포로들",
       "ref": "시편 137:7; 오바댜 1:10–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-142-friends-david",
@@ -767,7 +777,9 @@
       "speaker": "의인들",
       "target": "다윗",
       "ref": "시편 142:4–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-44-israel-enemies",
@@ -835,7 +847,9 @@
       "speaker": "다윗",
       "target": "이스라엘",
       "ref": "시편 131:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-133-aaron-brothers",
@@ -843,7 +857,9 @@
       "speaker": "아론",
       "target": "형제들",
       "ref": "시편 133:1–3; 출애굽기 28:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-146-singer-nobles",
@@ -851,7 +867,9 @@
       "speaker": "시인",
       "target": "귀인들",
       "ref": "시편 146:3–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-4-david-people",
@@ -1069,7 +1087,9 @@
       "speaker": "강포한 자들",
       "target": "다윗",
       "ref": "시편 140:1–8, 12–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-144-foreigners-david",
@@ -1077,7 +1097,9 @@
       "speaker": "이방인",
       "target": "다윗",
       "ref": "시편 144:7–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-1-wicked-blessed",
@@ -1573,7 +1595,9 @@
       "speaker": "다윗",
       "target": "악인",
       "ref": "시편 139:19–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-141-wicked-david",
@@ -1581,7 +1605,9 @@
       "speaker": "악인들",
       "target": "다윗",
       "ref": "시편 141:4–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-142-persecutors-david",
@@ -1589,7 +1615,9 @@
       "speaker": "핍박하는 자들",
       "target": "다윗",
       "ref": "시편 142:3–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-143-enemy-david",
@@ -1597,7 +1625,9 @@
       "speaker": "원수",
       "target": "다윗",
       "ref": "시편 143:3–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-1-father-son",
